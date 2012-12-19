@@ -1,0 +1,870 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+	<title>Руководство aptosid - Wifi с wpa-supplicant</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision by RoEn 12/01/2012 0430 UTC-->
+<!--htdig_noindex--><div id="menu"> <!-- menu starts here - ru language maintained by RoEn -->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="Главная страница aptosid.com, форума и вики" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-ru.htm#search-on"><img src="../lib/logos/manual-search-22x22.png" title="Поиск в руководстве" alt="Search" /> Варианты поиска</a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Выбор языка - Choose another language CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="Переключение языка CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-ru.htm">Руководство aptosid</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-ru.htm#welcome-gen">Добро пожаловать! &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-ru.htm#cred-team">Благодарности</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-ru.htm#how-to">Об использовании &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-ru.htm#how-to">Об использовании</a></li>
+					  <li><a href="welcome-ru.htm#table-contents">Содержание</a></li>
+					</ul>
+					</li>
+		<li><a href="help-ru.htm#help-gen">Получение помощи &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-ru.htm#help-gen">Где получить помощь</a></li>
+					  <li><a href="help-ru.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-ru.htm#welcome-quick">Краткое руководство aptosid</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-ru.htm">Содержание ISO-образа, выпуски, список зеркал и запись</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-ru.htm#cd-content">Содержание ISO-образа и системные требования &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-ru.htm#rolling">Замечания к релизу</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-ru.htm#download-aptosid">Список зеркал, скачивание ISO-образа и запись &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-ru.htm#md5">Проверка ISO-образа с md5</a></li>
+					  <li><a href="cd-dl-burning-ru.htm#burn-nero">Запись ISO-образа в Windows</a></li>
+					  <li><a href="cd-dl-burning-ru.htm#burn-linux">Запись ISO-образа в Linux</a></li>
+					  <li><a href="cd-no-gui-burn-ru.htm#burning-no-gui">Скрипт burniso</a></li>
+					  <li><a href="cd-no-gui-burn-ru.htm#burn-no-gui-gen">Запись ISO-образа в консоли</a></li>
+					  <li><a href="cd-dl-burning-ru.htm#download-aptosid">Список зеркал</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-ru.htm">Режим ISO-образа</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-ru.htm#rootpw">Пароль root на ISO-образе</a></li>
+				<li><a href="live-mode-ru.htm#live-cd-installsoft">Установка ПО на ISO-образе</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-ru.htm">Терминал и оболочка</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-ru.htm#term-kon">Терминал и оболочка &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-ru.htm#term-kon">Терминал и оболочка</a></li>
+					  <li><a href="term-konsole-ru.htm#colours"> Цветная подсказка в терминале</a></li>
+					  <li><a href="term-konsole-ru.htm#cli-help">Помощь в терминале</a></li>
+					  <li><a href="help-ru.htm#init3-tools">Полезные инструменты в текстовом режиме (tty) - init 3</a></li>
+					  <li><a href="term-konsole-ru.htm#term-cmds">Команды в терминале</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-ru.htm#sux">Команда: sux/sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-ru.htm">Чит-коды</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-ru.htm#cheatcodes">Особые для ISO-образа aptosid чит-коды</a></li>
+				<li><a href="cheatcodes-ru.htm#cheatcodes-linux">Общие для параметров ядра чит-коды</a></li>
+				<li><a href="cheatcodes-vga-ru.htm#vga">Общие для видеокарты коды</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-ru.htm">Разбиение жесткого диска - по старому, GPT и LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-ru.htm#hd-ntfs3g">Запись на раздел NTFS с ntfs-3g</a></li>
+			<li><a href="part-lvm-ru.htm#part-lvm">Разметка с использованием LVM - Logical Volume Manager</a></li>
+			<li><a href="part-gparted-ru.htm#partition">Разметка диска с интерфесом &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-ru.htm#partition">Разметка диска с gparted/KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-ru.htm#ntfs">Разделы NTFS с gparted/KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-ru.htm#partition">Примеры разметки диска в консоли &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-ru.htm#partition">Разметка диска с cfdisk</a></li>
+					    <li><a href="part-cfdisk-ru.htm#formating">Форматирование разделов с cfdisk</a></li>
+					    <li><a href="part-gdisk-ru.htm#gdisk-6">Форматирование после разметки с gdisk</a></li>
+					    <li><a href="part-gdisk-ru.htm#gdisk-1">Разбиение по GPT с gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-ru.htm#part-example">Разметка диска - обзор &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-ru.htm#part-example">Примеры разметки диска</a></li>
+					  <li><a href="part-uuid-ru.htm#uuid">UUID, восстанавление fstab и создание новых точек монтирования</a></li>
+					  <li><a href="part-cfdisk-ru.htm#disknames">Имена жестких дисков</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-ru.htm">Установка aptosid на HD, USB, VM и шифрованные разделы</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-ru.htm#Inst-prep">Подготовка установки &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-ru.htm#Inst-prep">Подготовка установки</a></li>
+					  <li><a href="hd-install-ru.htm#Installation">Инсталляция на HD</a></li>
+					  <li><a href="hd-install-ru.htm#first-hd-boot">Первая загрузка</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-ru.htm#fromiso">Загрузка 'fromiso' &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-ru.htm#fromiso">Загрузка 'fromiso' - обзор</a></li>
+					  <li><a href="hd-install-opts-ru.htm#grub2-fromiso">Загрузка 'fromiso' с grub 2</a></li>
+					  <li><a href="hd-install-opts-ru.htm#fromiso-persist">Способы 'fromiso' и 'persist'</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-ru.htm#usb-hd">Инсталляция на USB &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-ru.htm#usb-hd">Инсталляция на USB-HD - способ aptosid -  aptosid-на-флешки</a></li>
+					  <li><a href="hd-ins-opts-oos-ru.htm#raw-usb">Запись aptosid на USB/SSD с помощью другого Linux, MS Windows или Mac OS</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-ru.htm#install-crypt">Установка на шифрованные разделы - cryptroot</a></li>
+		  <li><a href="nbdboot-ru.htm#nbd1">Загрузка aptosid по сети</a></li>
+		  <li><a href="hd-install-vmopts-ru.htm#vmopts">Опции инсталляций на VM (Virtual Machine)</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-ru.htm">Оборудование в Xorg и разные драйверы</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-ru.htm#mon-res">Разрешение экрана и мониторы  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-ru.htm#mon-res">Разрешение экрана и мониторы</a></li>
+					  <li><a href="hw-dev-mon-ru.htm#xrandr">Двойные экраны и xrandr</a></li>
+					  <li><a href="hw-dev-mon-ru.htm#mon-binary">Двойные экраны (используя двоичные файлы)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-ru.htm#foss-xorg">Микропрограммное обеспечение GPU &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-ru.htm#ati-3d">AMD/ATI 3D драйверы</a></li>
+					  <li><a href="gpu-ru.htm#intel">Intel 2D и 3D драйверы</a></li>
+					  <li><a href="gpu-ru.htm#nvidia">Nvidia 3D драйверы</a></li>
+					  <li><a href="gpu-ru.htm#foss-xorg">Свободные Xorg-драйверы</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-ru.htm#fw-detect">Определение несвободного микропрограммного обеспечения - non-free </a></li>
+			  <li><a href="nf-firm-ru.htm#non-free-firmware">Добавление non-free в список источников</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-ru.htm">Оконные менеджеры</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-ru.htm">Оконные менеджеры KDE и Xfce&#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-ru.htm#xfce-notes">Полезные инструменты для Xfce</a></li>
+					    <li><a href="wm-dm-ru.htm#install-add">Полезные инструменты для KDE</a></li>
+					    <li><a href="wm-dm-ru.htm#desk-freeze">Рабочий стол зависает</a></li>
+					    <li><a href="wm-dm-ru.htm#kde-login">Проблемы входа в KDE</a></li>
+					    <li><a href="wm-dm-ru.htm#ch-th">Управление темами</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-ru.htm#dm">Установква дополнительных дисплейных менеджеров</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-ru.htm">Интернет, Wifi и локальная сеть</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-ru.htm">Мета-пакет LAMP &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-ru.htm#serv-apache">Мета-пакет LAMP</a></li>
+					    <li><a href="lamp-apache-ru.htm#serv-ftp">Клиенты FTP</a></li>
+					    <li><a href="lamp-apache-ru.htm#serv-sec">Защищенные протоколы</a></li>
+					    <li><a href="lamp-apache-ru.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-ru.htm#serv-mysql">Настройка MySQL</a></li>
+					    <li><a href="lamp-ppp-ru.htm#serv-php">PHP в apache</a></li>
+					    <li><a href="ntp-server-ru.htm#ntp-server">Установка сервера времени</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-ru.htm#tor">Брандмауэры и веб-прокси &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-ru.htm#tor">Маршрутизатор tor</a></li>
+					    <li><a href="tor-privoxy-ru.htm#privoxy">Веб-прокси privoxy</a></li>
+					    <li><a href="inet-ceni-ru.htm#firewalls">Брандмауэры</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-ru.htm#ssh-x">Samba и ssh &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-ru.htm#setup">Сервер samba</a></li>
+						  <li><a href="samba-ru.htm#configure">Интеграции samba в сеть Windows</a></li>
+						  <li><a href="ssh-ru.htm#ssh-fs">Удаленное монтирование с ssh</a></li>
+						  <li><a href="ssh-ru.htm#ssh-x">Приложения X-Windows с ssh</a></li>
+						  <li><a href="ssh-ru.htm#ssh-f">Интерфейс ssh и Konqueror</a></li>
+						  <li><a href="ssh-ru.htm#ssh-w">ssh X-forwarding с Windows-компом</a></li>
+						  <li><a href="ssh-ru.htm#ssh">Безопасность с ssh</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-ru.htm#netcardconfig">Связи с WiFi &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-ru.htm#netcardconfig">Настройка сетевых карт с ceni</a></li>
+						    <li><a href="inet-wpagui-ru.htm#wpa-roaming-gui">Графическoe ппиложение wpa_gui для WiFi</a></li>
+						    <li><a href="inet-setup-ru.htm#net-set1">Роуминг с WiFi</a></li>
+						    <li><a href="inet-wpa-ru.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-ru.htm#hotswitch">Переключение сети между WiFi и проводной связью</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-ru.htm#netcardconfig">Проводная связь &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-ru.htm#dial-mod">56килобитовые модемы</a></li>
+						    <li><a href="inet-ceni-ru.htm#netcardconfig">Настройка сетевых карт с ceni</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-ru.htm#fw-detect">Определение несвободного микропрограммного обеспечения - non-free </a></li>
+		<li><a href="nf-firm-ru.htm#non-free-firmware">Добавление non-free в список источников</a></li>			
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-ru.htm">Управление пакетами и обновление системы с dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-ru.htm#apt-cook">apt и репозитории &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-ru.htm#apt-cook">apt и репозитории</a></li>
+					    <li><a href="sys-admin-apt-ru.htm#apt-install">Установка нового пакета</a></li>
+					    <li><a href="sys-admin-apt-ru.htm#apt-delete">Удаление пакета</a></li>
+					    <li><a href="sys-admin-apt-ru.htm#apt-downgrade">Понижение версии с hold</a></li>
+					    <li><a href="sys-admin-apt-ru.htm#apt-cache">Поиск пакетной иформации с apt-cache</a></li>
+					    <li><a href="sys-admin-apt-ru.htm#gui-pacsea">Графическая поисковая программа</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-ru.htm#kern-upgrade">Обновление ядра &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-ru.htm#kern-remove">Удаление ядра</a></li>
+					    <li><a href="sys-admin-kern-upg-ru.htm#kern-upgrade">Обновление ядра</a></li>
+					    <li><a href="sys-admin-kern-upg-ru.htm#dmakms">Динамическая инсталляция модулей ядра с dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-ru.htm#apt-upgrade">Обновления системы с dist-upgrade - Краткий обзор &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-ru.htm#live-cd-upgrade">Обновление с ISO-образа</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-ru.htm#approx">Обновление нескольких компьютеров в локальной сети</a></li>
+					    <li><a href="sys-admin-apt-ru.htm#apt-upgrade">Краткий обзор oбновления системы с dist-upgrade</a></li>
+					    <li><a href="sys-admin-apt-ru.htm#du-st">Шаги обновления системы с dist-upgrade</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-ru.htm">Системное администрирование</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-ru.htm#bois-prep">Обновление BIOS с FreeDOS</a></li>
+		<li><a href="vir-rkits-ru.htm#virus-rkits">Сканер безопасности</a></li>
+		<li><a href="hd-install-ru.htm#adduser">Новый пользователь и пароли &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-ru.htm#adduser">Добавление нового пользователя</a></li>
+					    <li><a href="sys-admin-gen-ru.htm#pw-lost">Восстановление root-пароля</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-ru.htm#start-services">Службы и режимы загрузки &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-ru.htm#start-services">Выбор служб</a></li>
+					    <li><a href="sys-admin-gen-ru.htm#pkill">Завершениe службы или процесса</a></li>
+					    <li><a href="sys-admin-gen-ru.htm#init">Режимы загрузки init в aptosid</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-ru.htm#rsync">Резервирование системы &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-ru.htm#rdiff">Резервирование с rdiff</a></li>
+					    <li><a href="sys-admin-rsync-ru.htm#rsync">Резервирование с rsync</a></li>
+					    <li><a href="home-ru.htm#home-bu">Перемещение /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-ru.htm#fonts">Cups, шрифты и звук &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-ru.htm#fonts">Шрифты</a></li>
+					     <li><a href="sys-admin-gen-ru.htm#cups">Сервер cups</a></li>
+					     <li><a href="sys-admin-gen-ru.htm#sound">Звуковые микшеры</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-ru.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-ru.htm#chroot">Grub2 - Восстановление grub с chroot</a></li>
+					    <li><a href="sys-admin-grub2-ru.htm#mbr-over-grub2">Grub2 - Удаление из MBR</a></li>
+					    <li><a href="sys-admin-grub2-ru.htm#multi-os">Grub2 - Двойная и мультизагрузка</a></li>
+					    <li><a href="sys-admin-grub2-ru.htm#grub1-grub2">Grub2 - Обновление с grub1</a></li>
+					    <li><a href="sys-admin-grub2-ru.htm#grub2">Grub2 - Краткий обзор</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Наш спонсор webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid размещен на сервере webtropia.com" alt="aptosid размещен на сервере webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+	<div class="divider" id="wpa-basic">
+		<h2 id="top-header" >Как заставить беспроводную сеть работать - WiFi</h2>
+
+							<p class="highlight-3">Во избежание возможных нарушений норм патентного законодательства aptosid LiveCD содержит только DFSG-совместимое программное обеспечение. Смотрите также дополнительную информацию по <a href="nf-firm-ru.htm#non-free-firmware">источникам для несвободного ПО</a></p>
+
+							<p>Для работы WiFi, Вам понадобится простое, проводное соединение с сетью, на несколько минут, чтобы скачать нужные микропрограммы для WiFi карты.</p>
+
+							<p>Если проводное соединение не возможно, то придётся скачать необходимые пакеты отдельно, сохранить их на внешний носитель и позже установить на компьютер с помощью:</p>
+<pre>
+#dpkg -i &lt;firmware.deb&gt;
+</pre>
+
+							<p>Чтобы узнать, какая микропрограмма Вам нужна, воспользуйтесь командой:</p>
+<pre>
+#fw-detect
+</pre>
+							<p>Она выдаст что-то вроде бы такое:</p>
+<pre>
+#apt-get update
+#apt-get install &lt;name of firmware&gt;
+#modprobe -r &lt;modulename&gt;
+#modprobe &lt;modulename&gt;
+</pre>
+							<p>Воспользуйтесь этой подсказкой, чтобы узнать какие пакеты установить. После установки надо набрать ещё несколько команд.</p>
+
+							<p>Загрузите модуль, необходимый для работы Вашей карты.</p>
+
+							<p>С правами root наберите в консоли:</p>
+<pre>
+modprobe -r &lt;modulename&gt;
+
+modprobe &lt;modulename&gt;
+</pre>
+							<p>&lt;modulename&gt; - это имя модуля, которое Вам дал fw-detect. Программа Konsole имеет полезную функцию - автозавершение команд: <br />
+							Если Вы напишите несколько букв названия модуля и нажмёте клавишу TAB, он завершит команду за Вас. Это защитит Вас от ошибки.</p>
+
+							<p>Если всё прошло удачно, то обе команды modprobe должны завершиться без сообщений.</p>
+
+							<p>Вы можете проверить, загрузился ли модуль:</p>
+<pre>
+#lsmod | grep &lt;module&gt;
+</pre>
+
+
+							<p>Теперь запустите Ceni из K-Menu - Internet или из консоли с правами root<a href="inet-ceni-ru.htm#netcardconfig">Getting Online - Ceni</a>. Ваше устройство должно быть в списке, готовое к настройке.</p>
+
+							<p>Для настройки Wlan WiFi через графический интерфейс читайте <a href="inet-wpagui-ru.htm">WiFi - roaming WPA-GUI</a></p>
+	</div>
+	<div class="divider" id="wpa">
+		<h2>Режимы использования wpasupplicant для Debian</h2>
+
+							<p class="highlight-3">Во избежание возможных нарушений норм патентного законодательства aptosid LiveCD содержит только DFSG-совместимое программное обеспечение. <a href="nf-firm-ru.htm#non-free-firmware">Пожалуйста, обращайтесь за информацией об использовании не свободного программного обеспечения для различных устройств по данной ссылке</a></p>
+
+							<p>Пакет wpasupplicant в Debian предоставляет два (2) режима использования, которые полностью интегрированы в системную сетевую инфраструктуру: ifupdown.</p>
+
+					<h4>Обеспечение</h4>
+
+						<h6>1.  Спецификация "backend"-ов для wpa_supplicant драйвера</h6>
+          						<p>* Таблица поддерживаемых драйверов<br />
+         						* Основные рекомендации по использованию драйвера </p>
+
+						<h6>2. Режим #1: Управляемый (Managed Mode)</h6>
+          						<p>* Пример<br />
+          						* Таблица основных опций<br />
+          						* Важные замечания, относящиеся к режиму<br />
+          						* Как это работает </p>
+
+						<h6>3. Режим #2: Роуминг (Roaming Mode)</h6>
+          						<p>* wpa_supplicant.conf<br />
+          						* /etc/network/interfaces<br />
+          						* Контроль роуминга с помощью wpa_action<br />
+          						* Тонкая настройка роуминга<br />
+          						* Файл журнала<br />
+          						* Использование внешних mapping скриптов ()<br />
+          						* /etc/network/interfaces с внешним mapping</p>
+
+						<h6>4. Проблемы</h6>
+          						<p>* Скрытый ssids</p>
+
+						<h6>5. Соображения по безопасности</h6>
+          						<p>* Права доступа конфигурационного файла</p>
+
+	 	<!--<h2>1.Спецификация "backend"-ов для wpa_supplicant драйвера </h2>
+
+							<p>Использование wext driver backend возможно для всех интерфейсов, тип которых не определен явно как 'wpa-driver'. Пользователи ядер серии 2.4 kernels, или 2.6 менее 2.6.14 должны указывать тип wpa-driver.</p>
+
+	</div>
+					<h3>Таблица поддерживаемых драйверов</h3>
+	<div>
+		<table>
+			<tbody>
+				<tr>
+					<th>Driver</th>
+					<th>Description</th>
+				</tr>
+				<tr>
+					<td>wext</td>
+					<td>Linux wireless extensions (generic)</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="spacer05"></div>
+				<h3>Основные рекомендации по конкретным драйверам</h3>
+
+							<p>Все адаптеры Intel Pro Wireless (ipw2100, ipw2200 and ipw3945) используют как backend 'wext', за исключением случаев когда используемое ядро старше 2.6.14</p>
+
+							<p>Madwifi поддерживает как 'wext' так и 'madwifi' backend-ы. 'wext' предпочтительнее, однако 'madwifi' в некоторых ситуациях может работать лучше.</p>
+
+							<p>Ndiswrapper БОЛЕЕ НЕ ПОДДЕРЖИВАЕТСЯ 'ndiswrapper' с версии 1.16. Следовательно, должен использоваться 'wext', только если Вы не используете устаревший релиз ndiswrapper.</p>
+
+							<p>Установите тип устройства в разделе interfaces(5) соответствующий Вашему случаю с помощью опций 'wpa-driver'. Например:</p>
+
+<pre>
+iface eth0 inet dhcp
+	wpa-driver wext
+	. . . . . more options
+</pre>-->
+
+			<h2>2. Режим #1: Managed Mode</h2>
+
+							<p>Этот режим предоставляет возможность устанавливать соединение с помощью wpa_supplicant с одной определенной сетью. Это аналогично работе пакета wireless-tools. Каждый элемент устанавливаемого посредством wpa_supplicant соединения предваряется префиксом 'wpa-' и получает значение, используемое для данного элемента.</p>
+
+					<h6>Пример режима #1 wpa.conf file - Пример 1.</h6>
+<pre>
+Пример режима #1 wpa.conf file - Пример 1.
+NOTE: значение 'wpa-psk' правильно только при соблюдении следующих условий:
+
+   1. Это ascii-строка длиной от 8 до 63 знаков
+   2. Это шестнадцатеричная строка из 64 элементов.
+
+# Подключение к точке доступа ssid 'NETBEER' с типом шифрования
+# WPA-PSK/WPA2-PSK. Подразумевается использование 'wext' backend-а
+#  wpa_supplicant, поскольку нет указанных опций wpa-driver .
+# Пароль записывается строкой ASCII. DHCP используется для
+# получения сетевого адреса.
+#
+iface wlan0 inet dhcp
+
+        wpa-ssid NETBEER
+        # plaintext passphrase
+        wpa-psk PlainTextSecret
+
+# Подключение к точке доступа ssid 'homezone' с типом шифрования
+# WPA-PSK/WPA2-PSK, используя 'wext' backend  wpa_supplicant.
+# Строка psk представлена шестнадцатеричной записью. DHCP используется для
+# получения сетевого адреса.
+#
+iface wlan0 inet dhcp
+        wpa-driver wext
+        wpa-ssid homezone
+        # hexadecimal psk is encoded from a plaintext passphrase
+        wpa-psk 000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f
+
+# Подключение к точке доступа ssid 'HotSpot1' и bssid of '00:1a:2b:3c:4d:5e'
+# с типом шифрования WPA-PSK/WPA2-PSK, используя backend 'madwifi'
+#wpa_supplicant. Пароль - простым текстом (ASCII).
+# Используется статический сетевой адрес.
+#
+iface ath0 inet static
+
+        wpa-driver madwifi
+        wpa-ssid HotSpot1
+        wpa-bssid 00:1a:2b:3c:4d:5e
+        # plaintext passphrase
+        wpa-psk madhotspot
+        wpa-key-mgmt WPA-PSK
+        wpa-pairwise TKIP CCMP
+        wpa-group TKIP CCMP
+        wpa-proto WPA RSN
+        # static ip settings
+        address 192.168.0.100
+        netmask 255.255.255.0
+        network 192.168.0.0
+        broadcast 192.168.0.255
+        gateway 192.168.0.1
+
+# Использование пользовательского файла wpa_supplicant.conf для eth1.
+#Вся сетевая информация о пользовательских настройках сохраняется в
+# wpa_supplicant.conf. Тип wpa-driver не указан
+# , поэтому используется 'wext'. Получение сетевого адреса по DHCP.
+#
+iface eth1 inet dhcp
+
+wpa-conf /path/to/wpa_supplicant.conf
+</pre>
+
+	</div>
+	<div class="divider" id="wpa1">
+		<h2>Таблица основных опций</h2>
+
+							<p>Обзор основных опций 'wpa-', которые могут быть использованы в разделе для беспроводных устройств файла /etc/network/interfaces. Смотри 'Важные замечания о Managed Mode' раздел о допустимых и неправильных значениях 'wpa-'.</p>
+
+							<p class="highlight-2">Замечание: все значения чувствительны к регистру</p>
+
+<pre>
+Значение	Пример значения		Описание
+=======         =============           ===========
+wpa-ssid        plaintextstring         устанавливает ssid вашей сети
+wpa-bssid       00:1a:2b:3c:4d:5e       bssid вашего AP
+wpa-psk         0123456789......        Ваш открытый wpa ключ. Используйте
+                                        wpa_passphrase(8) для генерации psk
+                                        из значений пароля и ssid
+wpa-key-mgmt    NONE, WPA-PSK, WPA-EAP, лист принятых удостоверяющих ключей
+                IEEE8021X               управляемые протоколы
+wpa-group       CCMP, TKIP, WEP104,     перечень допустимых типов group шифрования для WPA
+                WEP40
+wpa-pairwise    CCMP, TKIP, NONE        Перечень допустимых типов pairwise шифрования для
+                                        WPA
+wpa-auth-alg    OPEN, SHARED, LEAP      перечень разрешенных алгоритмов аутентификации IEEE 802.11
+
+wpa-proto       WPA, RSN                перечень допустимых протоколов
+wpa-identity    myplaintextname         предоставленное пользовательское имя 
+                (EAP аутентификация)                        
+wpa-password    myplaintextpassword     ваш пароль (EAP аутентификация)
+wpa-scan-ssid   0 or 1                  включает сканирование ssid с указанными
+                                        Probe Request фреймами
+wpa-ap-scan     0 or 1 or 2             Устанавливает логику сканирования
+                                        wpa_supplicant
+
+</pre>
+							<p>Функциональность wpa_cli(8) требует дальнейшей доработки. Все, что пропущено на данный момент, считается содержащим ошибки.Баг-репорты и патчи всегда приветствуются! </p>
+
+
+			<h2>Важные замечания о Managed Mode</h2>
+
+							<p>Для 'wpa-' опций необходимо указать хотя бы значение ssid. Только некоторые опции имеют глобальный эффект. Это: 'wpa-ap-scan' and 'wpa-preauthenticate'.</p>
+
+							<p>Любая 'wpa-' опция для конкретного устройства в файле interfaces(5) file is запуска wpa_supplicant демона.</p>
+
+							<p>Скрипт wpasupplicant ifupdown пытается определить правильный тип ввода данных для каждой опции. Так, если вводится строка простым текстом и заключается в кавычки, ввод перенапрявляется wpa_cli, который осуществляет вставку в соответствующий блок network, сформированый через wpa_supplicant ctrl_interface сокет.</p>
+
+							<p>Запуск ifup вручную с опцией '--verbose' покажет все используемые команды для создания блока network wpa_cli. Если значение параметра любой wpa-* опции, использованной Вами в файле /etc/network/interfaces, заключено в двойные кавычки. то оно будет воспринято как "plaintext" or "ascii" тип ввода.</p>
+
+							<p>Некоторые типы значений подразумевают 16ти ричный ввод (например wpa-wep-key*). Значение 'type' опции wpa-psk, однако, определяется простой проверкой на наличие более чем одного нешестнадцатеричного символа.</p>
+
+			<h2>Как это работает</h2>
+
+							<p>Как сказано ранее, каждый определенный элемент wpa_supplicant предваряется префиксом 'wpa-'. Каждый элемент соответствует спецификации описанной в wpa_supplicant.conf(5), wpa_supplicant(8) и wpa_cli(8) man-страничках.</p>
+
+							<p>Запуск осуществляется без каких-либо предопределенных значений, и wpa_cli сетевую конфигурацию непосредственно из строк ввода, содержащих 'wpa-*'. Изначально wpa_supplicant/wpa_cli не устанавливает напрямую свойства устройств (как установка essid с iwconfig, например), а указывает устройству на предпочтительную точку доступа для ассоциации с таковой. Когда устройство просканирует диапазон и установит доступность указанной точки, тогда будут установлены и указанные ранее свойства.</p>
+
+							<p>Выполняющий всю работу скрипт расположен:</p>
+
+<pre>
+ /etc/wpa_supplicant/ifupdown.sh
+/etc/wpa_supplicant/functions.sh
+</pre>
+							<p>ifupdown.sh:Он вызывается в фазах 'pre-up', 'pre-down' и 'post-down' ifupdown.</p>
+
+							<p>В 'pre-up' фазе, a wpa_supplicant запускается серией команд wpa_cli, которые устанавливают сетевую конфигурацию в соответствии со значениями 'wpa-'опций файла /etc/network/interfaces для физического устройства.</p>
+
+							<p>Если wpa-roam используется, wpa_cli запускается в фазе post-up'.</p>
+
+							<p>В фазе 'pre-down'убивается уже существующая копия процесса wpa-cli.</p>
+
+							<p>В фазе 'post-down' демон wpa_supplicant останавливается.</p>
+
+			<h2>3. Режим #2: Roaming Mode</h2>
+
+							<p>Этим пакетом предоставлен упрощенный и изолированный механизм roaming. Он представлен в форме одного из скриптов wpa_cli - /sbin/wpa_action, и будучи активированным, предполагает дальнейший контроль с помощью ifupdown. 'man' страничка wpa_action(8) содержит подробное описание технических подробностей.</p>
+
+							<p>Для активации roaming-интерфейса адаптируйте приведенный ниже фрагмент файла interfaces(5):</p>
+
+<pre>
+iface eth1 inet manual
+	wpa-driver wext
+        wpa-roam /path/to/wpa_supplicant.conf
+</pre>
+
+							<p>В данном примере стартуют два демона: wpa_supplicant и wpa_cli. Что безусловно требует специальной настройки wpa_supplicant.conf. Хорошей отправной точкой можно считать файл конфигурации, поставляемый вместе с документацией:</p>
+
+<pre>
+ # copy the template to /etc/wpa_supplicant/
+        cp /usr/share/doc/wpasupplicant/examples/wpa-roam.conf \
+                /etc/wpa_supplicant/wpa_supplicant.conf
+        # allow only root to read and write to file
+        chmod 0600 /etc/wpa_supplicant/wpa_supplicant.conf
+
+NOTE: it is critical that the used wpa_supplicant.conf defines the location of
+      the 'ctrl_interface' so that a communication socket is created for the
+      wpa_cli (wpa-roam daemon) to attach. The mentioned example configuration,
+      /usr/share/doc/wpasupplicant/examples/wpa-roam.conf, has been set to a
+      sane default.
+
+</pre>
+
+
+							<p>Конечно, данный файл потребует дополнительного редактирования  соответственно Вашей сетевой конфигурации и включения блоков для всех известных сетевых адаптеров. Если все изложенное остается для Вас непонятным, изучите внимательно 'man'-страницу wpa_supplicant.conf(5).</p>
+
+							<p>Для каждой сети возможно указать специальную опцию 'id_str'(простая текстовая строка). Текстовые строки - основа создаваемых профилей сети, так же они коррелируют с логическими интерфейсами, указанными в файле interfaces(5). Отсутствие данной опции подразумевает, что логический интерфейс 'default' будет использован как запасной. Выбрать данный интефейс возможно с помощью опции 'wpa-default-iface'.</p>
+
+							<p>Что же все это значит? Продемонстрируем с помощью маленького примера из ман странички wpa_action(8).</p>
+
+					<h6>Пример wpa_supplicant.conf</h6>
+<pre>
+wpa_supplicant.conf example:
+network={
+        ssid="foo"
+        key_mgmt=NONE
+        # this id_str will notify /sbin/wpa_action to 'ifup uni'
+        id_str="uni"
+}
+
+network={
+        ssid="bar"
+        psk=123456789...
+        # this id_str will notify /sbin/wpa_action to 'ifup home_static'
+        id_str="home_static"
+}
+
+network={
+        ssid=""
+        key_mgmt=NONE
+        # no 'id_str' parameter is given, /sbin/wpa_action will 'ifup default'
+}
+</pre>
+	</div>
+	<div class="divider" id="wpa2">
+					<h6>Пример /etc/network/interfaces</h6>
+<pre>
+/etc/network/interfaces example:
+# the roaming interface MUST use the manual inet method
+# 'allow-hotplug' or 'auto' ensures the daemon starts automatically
+allow-hotplug eth1
+iface eth1 inet manual
+
+        wpa-driver wext
+        wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf
+
+
+# no id_str, 'default' is used as the fallback mapping target
+iface default inet dhcp
+
+
+# id_str="uni"
+iface uni inet dhcp
+
+# id_str="home_static"
+iface home_static inet static
+
+        address 192.168.0.20
+        netmask 255.255.255.0
+        network 192.168.0.0
+
+        broadcast 192.168.0.255
+        gateway 192.168.0.1
+</pre>
+
+							<p>Логический интерфейс поднимается с помощью ifup и останавливается с помощью ifdown также, как wpa_supplicant устанавливает и разрывает привязки к ассоциированным с ним сетями с помощью опции 'id_str', используемой в файле конфигурации wpa_supplicant.conf .</p>
+
+							<p>Журнал событий /sbin/wpa_action создается в /var/log/wpa_action.log, пожалуйста присоединяйте его , когда сообщаете о возникших проблемах.</p>
+
+			<h2>Управление wpa_supplicant через wpa_cli или wpa_gui</h2>
+
+							<p>Процессом wpa_supplicant могут управлять члены группы "netdev", если Вы не меняли настроек (или какой угодно группой, которая указана в GROUP= crtl_interface parameter).</p>
+<pre>
+# the default ctrl_interface option used in the example file
+	# /usr/share/doc/wpasupplicant/examples/wpa-roam.conf
+        ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+
+To interact with the supplicant, the wpa_cli (command line) and wpa_gui (QT)
+have been provided. With these you may connect, disconnect, add/delete new
+network blocks, provide required interactive security information and so on.
+</pre>
+
+				<h2>Демон роуминга и wpa_action</h2>
+
+							<p>Будучи запущенным roaming daemon, в дальнейшем контролируется с помощью ifupdown. Таким образом: wpa_cli вызывает ifup, когда wpa_supplicant успешно ассоциируется с точкой доступа, и вызывает ifdown, когда соединение потеряно или разорвано. Пока roaming daemon остается активным, вместо ifupdown используйте /sbin/wpa_action для его остановки и перезагрузки. Например, чтобы остановить romaing daemon на устройстве 'eth1':</p>
+
+<pre>
+wpa_action eth1 stop
+</pre>
+
+
+							<p>Для внесения новых дополнительных деталей конфигурации нет необходимости останавливать roaming daemon . Отредактируйте  wpa_supplicant.conf для внесения необходимых дополнений и, опционально, /etc/network/interfaces для указания новой сети (с пометкой 'id_str') и просто перезапустите демона:</p>
+
+<pre>
+wpa_action eth1 reload
+</pre>
+
+							<p>Полное техническое описание может быть найдено в тексте ман страницы wpa_action(8).</p>
+
+	</div>
+	<div class="divider" id="wpa3">
+		<h2>Тонкая настройка Roaming Setup</h2>
+
+							<p>Вы можете столкнуться с ситуацией, когда несколько точек доступа находятся в непосредственной близости. Вы можете вручную указать одну из них- предпочтительную, используя wpa_cli или wpa_gui, или же вы можете выставить индивидуальные приоритеты для каждой из точек. Данную возможность предоставляет опция 'priority' файла wpa_supplicant.conf.</p>
+
+	</div>
+	<div class="divider" id="wpa4">
+		<h2>Файл журнала</h2>
+
+							<p>События roaming dameon заносятся в файл журнала /var/log/wpa_action.log. Регистрируется следующая информация:</p>
+
+							<p>*time and date<br />
+							*interface name and action event<br />
+							*values of enviromental variables (WPA_ID, WPA_ID_STR, WPA_CTRL_DIR)<br />
+							*ifupdown command executed<br />
+							*wpa_cli status (based on WPA-PSK, network may display different info)<br />
+							*bssid<br />
+							*ssid<br />
+							*id<br />
+							*id_str<br />
+							*pairwise_cipher<br />
+							*group_cipher<br />
+							*key_mgmt<br />
+							*wpa_state<br />
+							*ip_address</p>
+
+
+	</div>
+	<div class="divider" id="wpa5">
+		<h2>Использование внешних Mapping Scripts (такие как guessnet)</h2>
+
+							<p>В дополнение к возможности создания ассоциаций с логическими интерфейсами с помощью опции 'id_str', wpa_action допускает использование внешних mapping script-ов. Такой скрипт возвращает имя того логического интерфейса, который будет поднят. Любые mapping script, работающие с ifupdown (см. man interfaces), также будут работать, будучи вызванными из wpa_action.</p>
+
+							<p>Для использования добавьте строку 'wpa-mapping-script name-of-the-script' в раздел физического роуминга устройств файла interfaces. (Можно указать абсолютный путь к mapping script.)</p>
+
+
+							<p>Содержимое строки, начинающейся с wpa-map, передается на ввод mapping  script.(количество строк, по одной для каждого wpa-mapX, неограничено). Например:</p>
+
+<pre>
+iface wlan0 inet manual
+        wpa-driver wext
+        wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf
+        wpa-mapping-script guessnet-ifupdown
+        wpa-map0 home
+        wpa-map1 work
+        wpa-map2 school
+        # ... additional wpa-mapX lines as required
+</pre>
+							<p>По умолчанию mapping script используется только если не указана опция 'id_str'. Для полного отключения соответствий, задаваемых 'id_str' и использования только внешних mapping script, укажите 'wpa-mapping-script-priority 1' для изменения поведения, заданного по умолчанию.</p>
+
+							<p>Если mapping script возвращает пустую строку, wpa_action будет использовать 'default' интерфейс, если только не указана альтернатива опцией 'wpa-roam-default-iface'.</p>
+
+							<p>Ниже приведен пример с использованием guessnet-ifupdown как внешнего mapping script.</p>
+
+				<h6>Пример /etc/network/interfaces с внешних mapping</h6>
+<pre>
+/etc/network/interfaces with external mapping example:
+allow-hotplug wlan0
+iface wlan0 inet manual
+
+        wpa-driver wext
+        wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf
+        wpa-roam-default-iface default-wparoam
+        wpa-mapping-script guessnet-ifupdown
+        wpa-map default: default-guessnet
+        wpa-map0 home_static
+        wpa-map1 work_static
+
+
+# school can only be chosen via 'id_str' matching
+iface school inet dhcp
+
+        # resolvconf
+        dns-nameservers 11.22.33.44 55.66.77.88
+
+iface home_static inet static
+
+        address 192.168.0.20
+        netmask 255.255.255.0
+
+        network 192.168.0.0
+        broadcast 192.168.0.255
+        gateway 192.168.0.1
+        test peer address 192.168.0.1 mac 00:01:02:03:04:05
+
+
+iface work_static inet static
+
+        address 192.168.3.200
+        netmask 255.255.255.0
+        network 192.168.3.0
+        broadcast 192.168.3.255
+
+        gateway 192.168.3.1
+        test peer address 192.168.3.1 mac 00:01:02:03:04:05
+
+iface default-guessnet inet dhcp
+
+iface default-wparoam inet dhcp
+</pre>
+
+							<p>В примере wpa_action использует guessnet для выбора подходящего логического интерфейса только, если в файле wpa_supplicant.conf. не используется опция 'id_str' для текущего интерфейса </p>
+
+							<p>Строка 'wpa-map' представляет guessnet с тестируемым логическим интерфейсом, а также интерфейсом по умолчанию для использования в случае, когда все тесты закончатся неудачно. Строка 'test' каждого логического интерфейса используется  guessnet чтобы определить, действительно ли мы подключены к этой сети. Например, guessnet выбирает логический интерфейс 'home_static' , если в  данной сети присутствует устройство с IP адресом 192.168.0.1, MAC адресом 00:01:02:03:04:05. Ну в случае неудачи всех попыток теста, будет сконфигурировано устройство 'default-guessnet'.</p>
+
+
+							<p>Для большей информации обратитесь к руководству man guessnet (8).</p>
+
+			<h2>4. Трудности</h2>
+
+							<p>Для отладки соединения, а также в случае проблем ассоциации или аутентификации, запустите `wpa_cli -i &lt;interface&gt;` в отдельном сеансе shell, до запуска самого интерфейса. Используйте сначала команду 'level 0' для получения всей отладочной информации. Потом `ifup --verbose &lt;interface&gt;` для получения подробного вывода от скрипта, стартующего wpasupplicant.</p>
+
+	</div>
+	<div class="divider" id="wpa6">
+		<h2>Скрытые ssids</h2>
+
+							<p>Для справки ознакомьтесь с #358137. С целью иметь возможность ассоциировать со скрытыми ssids, попробуйте установить опцию 'ap_scan=1' в секции global, и 'scan_ssid=1' в секции network block файла wpa_supplicant.conf file. при использовании управляемого режима, вставьте следующие строки:</p>
+
+<pre>
+iface eth1 inet dhcp
+wpa-conf managed
+wpa-ap-scan 1
+wpa-scan-ssid 1
+# ... additional options for your setup
+</pre>
+
+							<p>В соответствии с #368770, ассоциация может потребовать очень много времени при подключении к сетям, использующим  WEP. В некоторых случаях выставление параметра 'ap_scan=2' в конфигурационном файле (или использование абзаца 'wpa-ap-scan 2' , что эквивалентно) помогает значительно ускорить этот процесс.</p>
+
+
+	</div>
+	<div class="divider" id="wpa7">
+			<h2>5. Замечания по безопасности</h2>
+				<h5>Права доступа конфигурационного файла</h5>
+				
+							<p>Является важным обеспечить сохранность PSK и другой подобной информации относительно частной настройки сети, поэтому важные конфигурационные файлы, содержащие такие данные должны быть доступны только для чтения их владельцем. Например:</p>
+
+<pre>
+chmod 0600 /etc/network/interfaces
+# substitute the path of your wpa_supplicant.conf file
+chmod 0600 /etc/wpa_supplicant/wpa_supplicant.conf
+</pre>
+							<p>По умолчанию /etc/network/interfaces доступен для чтения всем, и, следовательно непроигоден для хранения секретных ключей и паролей.</p>
+
+	</div>
+	<div id="rev">Содержание, последний раз пересмотрено 14/08/2010 0100 UTC</div>
+
+</div>
+</body>
+</html>

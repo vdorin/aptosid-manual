@@ -1,0 +1,586 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+	<title>Руководство aptosid - Замечания</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+	<style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+	<style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+	<script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision by polix 27/05/2012 0745 UTC -->
+<!--htdig_noindex--><div id="menu"> <!-- menu starts here - ru language maintained by RoEn -->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="Главная страница aptosid.com, форума и вики" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-ru.htm#search-on"><img src="../lib/logos/manual-search-22x22.png" title="Поиск в руководстве" alt="Search" /> Варианты поиска</a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Выбор языка - Choose another language CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="Переключение языка CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-ru.htm">Руководство aptosid</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-ru.htm#welcome-gen">Добро пожаловать! &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-ru.htm#cred-team">Благодарности</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-ru.htm#how-to">Об использовании &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-ru.htm#how-to">Об использовании</a></li>
+					  <li><a href="welcome-ru.htm#table-contents">Содержание</a></li>
+					</ul>
+					</li>
+		<li><a href="help-ru.htm#help-gen">Получение помощи &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-ru.htm#help-gen">Где получить помощь</a></li>
+					  <li><a href="help-ru.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-ru.htm#welcome-quick">Краткое руководство aptosid</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-ru.htm">Содержание ISO-образа, выпуски, список зеркал и запись</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-ru.htm#cd-content">Содержание ISO-образа и системные требования &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-ru.htm#rolling">Замечания к релизу</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-ru.htm#download-aptosid">Список зеркал, скачивание ISO-образа и запись &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-ru.htm#md5">Проверка ISO-образа с md5</a></li>
+					  <li><a href="cd-dl-burning-ru.htm#burn-nero">Запись ISO-образа в Windows</a></li>
+					  <li><a href="cd-dl-burning-ru.htm#burn-linux">Запись ISO-образа в Linux</a></li>
+					  <li><a href="cd-no-gui-burn-ru.htm#burning-no-gui">Скрипт burniso</a></li>
+					  <li><a href="cd-no-gui-burn-ru.htm#burn-no-gui-gen">Запись ISO-образа в консоли</a></li>
+					  <li><a href="cd-dl-burning-ru.htm#download-aptosid">Список зеркал</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-ru.htm">Режим ISO-образа</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-ru.htm#rootpw">Пароль root на ISO-образе</a></li>
+				<li><a href="live-mode-ru.htm#live-cd-installsoft">Установка ПО на ISO-образе</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-ru.htm">Терминал и оболочка</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-ru.htm#term-kon">Терминал и оболочка &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-ru.htm#term-kon">Терминал и оболочка</a></li>
+					  <li><a href="term-konsole-ru.htm#colours"> Цветная подсказка в терминале</a></li>
+					  <li><a href="term-konsole-ru.htm#cli-help">Помощь в терминале</a></li>
+					  <li><a href="help-ru.htm#init3-tools">Полезные инструменты в текстовом режиме (tty) - init 3</a></li>
+					  <li><a href="term-konsole-ru.htm#term-cmds">Команды в терминале</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-ru.htm#sux">Команда: sux/sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-ru.htm">Чит-коды</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-ru.htm#cheatcodes">Особые для ISO-образа aptosid чит-коды</a></li>
+				<li><a href="cheatcodes-ru.htm#cheatcodes-linux">Общие для параметров ядра чит-коды</a></li>
+				<li><a href="cheatcodes-vga-ru.htm#vga">Общие для видеокарты коды</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-ru.htm">Разбиение жесткого диска - по старому, GPT и LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-ru.htm#hd-ntfs3g">Запись на раздел NTFS с ntfs-3g</a></li>
+			<li><a href="part-lvm-ru.htm#part-lvm">Разметка с использованием LVM - Logical Volume Manager</a></li>
+			<li><a href="part-gparted-ru.htm#partition">Разметка диска с интерфесом &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-ru.htm#partition">Разметка диска с gparted/KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-ru.htm#ntfs">Разделы NTFS с gparted/KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-ru.htm#partition">Примеры разметки диска в консоли &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-ru.htm#partition">Разметка диска с cfdisk</a></li>
+					    <li><a href="part-cfdisk-ru.htm#formating">Форматирование разделов с cfdisk</a></li>
+					    <li><a href="part-gdisk-ru.htm#gdisk-6">Форматирование после разметки с gdisk</a></li>
+					    <li><a href="part-gdisk-ru.htm#gdisk-1">Разбиение по GPT с gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-ru.htm#part-example">Разметка диска - обзор &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-ru.htm#part-example">Примеры разметки диска</a></li>
+					  <li><a href="part-uuid-ru.htm#uuid">UUID, восстанавление fstab и создание новых точек монтирования</a></li>
+					  <li><a href="part-cfdisk-ru.htm#disknames">Имена жестких дисков</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-ru.htm">Установка aptosid на HD, USB, VM и шифрованные разделы</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-ru.htm#Inst-prep">Подготовка установки &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-ru.htm#Inst-prep">Подготовка установки</a></li>
+					  <li><a href="hd-install-ru.htm#Installation">Инсталляция на HD</a></li>
+					  <li><a href="hd-install-ru.htm#first-hd-boot">Первая загрузка</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-ru.htm#fromiso">Загрузка 'fromiso' &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-ru.htm#fromiso">Загрузка 'fromiso' - обзор</a></li>
+					  <li><a href="hd-install-opts-ru.htm#grub2-fromiso">Загрузка 'fromiso' с grub 2</a></li>
+					  <li><a href="hd-install-opts-ru.htm#fromiso-persist">Способы 'fromiso' и 'persist'</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-ru.htm#usb-hd">Инсталляция на USB &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-ru.htm#usb-hd">Инсталляция на USB-HD - способ aptosid -  aptosid-на-флешки</a></li>
+					  <li><a href="hd-ins-opts-oos-ru.htm#raw-usb">Запись aptosid на USB/SSD с помощью другого Linux, MS Windows или Mac OS</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-ru.htm#install-crypt">Установка на шифрованные разделы - cryptroot</a></li>
+		  <li><a href="nbdboot-ru.htm#nbd1">Загрузка aptosid по сети</a></li>
+		  <li><a href="hd-install-vmopts-ru.htm#vmopts">Опции инсталляций на VM (Virtual Machine)</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-ru.htm">Оборудование в Xorg и разные драйверы</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-ru.htm#mon-res">Разрешение экрана и мониторы  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-ru.htm#mon-res">Разрешение экрана и мониторы</a></li>
+					  <li><a href="hw-dev-mon-ru.htm#xrandr">Двойные экраны и xrandr</a></li>
+					  <li><a href="hw-dev-mon-ru.htm#mon-binary">Двойные экраны (используя двоичные файлы)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-ru.htm#foss-xorg">Микропрограммное обеспечение GPU &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-ru.htm#ati-3d">AMD/ATI 3D драйверы</a></li>
+					  <li><a href="gpu-ru.htm#intel">Intel 2D и 3D драйверы</a></li>
+					  <li><a href="gpu-ru.htm#nvidia">Nvidia 3D драйверы</a></li>
+					  <li><a href="gpu-ru.htm#foss-xorg">Свободные Xorg-драйверы</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-ru.htm#fw-detect">Определение несвободного микропрограммного обеспечения - non-free </a></li>
+			  <li><a href="nf-firm-ru.htm#non-free-firmware">Добавление non-free в список источников</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-ru.htm">Оконные менеджеры</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-ru.htm">Оконные менеджеры KDE и Xfce&#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-ru.htm#xfce-notes">Полезные инструменты для Xfce</a></li>
+					    <li><a href="wm-dm-ru.htm#install-add">Полезные инструменты для KDE</a></li>
+					    <li><a href="wm-dm-ru.htm#desk-freeze">Рабочий стол зависает</a></li>
+					    <li><a href="wm-dm-ru.htm#kde-login">Проблемы входа в KDE</a></li>
+					    <li><a href="wm-dm-ru.htm#ch-th">Управление темами</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-ru.htm#dm">Установква дополнительных дисплейных менеджеров</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-ru.htm">Интернет, Wifi и локальная сеть</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-ru.htm">Мета-пакет LAMP &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-ru.htm#serv-apache">Мета-пакет LAMP</a></li>
+					    <li><a href="lamp-apache-ru.htm#serv-ftp">Клиенты FTP</a></li>
+					    <li><a href="lamp-apache-ru.htm#serv-sec">Защищенные протоколы</a></li>
+					    <li><a href="lamp-apache-ru.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-ru.htm#serv-mysql">Настройка MySQL</a></li>
+					    <li><a href="lamp-ppp-ru.htm#serv-php">PHP в apache</a></li>
+					    <li><a href="ntp-server-ru.htm#ntp-server">Установка сервера времени</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-ru.htm#tor">Брандмауэры и веб-прокси &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-ru.htm#tor">Маршрутизатор tor</a></li>
+					    <li><a href="tor-privoxy-ru.htm#privoxy">Веб-прокси privoxy</a></li>
+					    <li><a href="inet-ceni-ru.htm#firewalls">Брандмауэры</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-ru.htm#ssh-x">Samba и ssh &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-ru.htm#setup">Сервер samba</a></li>
+						  <li><a href="samba-ru.htm#configure">Интеграции samba в сеть Windows</a></li>
+						  <li><a href="ssh-ru.htm#ssh-fs">Удаленное монтирование с ssh</a></li>
+						  <li><a href="ssh-ru.htm#ssh-x">Приложения X-Windows с ssh</a></li>
+						  <li><a href="ssh-ru.htm#ssh-f">Интерфейс ssh и Konqueror</a></li>
+						  <li><a href="ssh-ru.htm#ssh-w">ssh X-forwarding с Windows-компом</a></li>
+						  <li><a href="ssh-ru.htm#ssh">Безопасность с ssh</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-ru.htm#netcardconfig">Связи с WiFi &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-ru.htm#netcardconfig">Настройка сетевых карт с ceni</a></li>
+						    <li><a href="inet-wpagui-ru.htm#wpa-roaming-gui">Графическoe ппиложение wpa_gui для WiFi</a></li>
+						    <li><a href="inet-setup-ru.htm#net-set1">Роуминг с WiFi</a></li>
+						    <li><a href="inet-wpa-ru.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-ru.htm#hotswitch">Переключение сети между WiFi и проводной связью</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-ru.htm#netcardconfig">Проводная связь &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-ru.htm#dial-mod">56килобитовые модемы</a></li>
+						    <li><a href="inet-ceni-ru.htm#netcardconfig">Настройка сетевых карт с ceni</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-ru.htm#fw-detect">Определение несвободного микропрограммного обеспечения - non-free </a></li>
+		<li><a href="nf-firm-ru.htm#non-free-firmware">Добавление non-free в список источников</a></li>			
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-ru.htm">Управление пакетами и обновление системы с dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-ru.htm#apt-cook">apt и репозитории &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-ru.htm#apt-cook">apt и репозитории</a></li>
+					    <li><a href="sys-admin-apt-ru.htm#apt-install">Установка нового пакета</a></li>
+					    <li><a href="sys-admin-apt-ru.htm#apt-delete">Удаление пакета</a></li>
+					    <li><a href="sys-admin-apt-ru.htm#apt-downgrade">Понижение версии с hold</a></li>
+					    <li><a href="sys-admin-apt-ru.htm#apt-cache">Поиск пакетной иформации с apt-cache</a></li>
+					    <li><a href="sys-admin-apt-ru.htm#gui-pacsea">Графическая поисковая программа</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-ru.htm#kern-upgrade">Обновление ядра &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-ru.htm#kern-remove">Удаление ядра</a></li>
+					    <li><a href="sys-admin-kern-upg-ru.htm#kern-upgrade">Обновление ядра</a></li>
+					    <li><a href="sys-admin-kern-upg-ru.htm#dmakms">Динамическая инсталляция модулей ядра с dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-ru.htm#apt-upgrade">Обновления системы с dist-upgrade - Краткий обзор &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-ru.htm#live-cd-upgrade">Обновление с ISO-образа</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-ru.htm#approx">Обновление нескольких компьютеров в локальной сети</a></li>
+					    <li><a href="sys-admin-apt-ru.htm#apt-upgrade">Краткий обзор oбновления системы с dist-upgrade</a></li>
+					    <li><a href="sys-admin-apt-ru.htm#du-st">Шаги обновления системы с dist-upgrade</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-ru.htm">Системное администрирование</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-ru.htm#bois-prep">Обновление BIOS с FreeDOS</a></li>
+		<li><a href="vir-rkits-ru.htm#virus-rkits">Сканер безопасности</a></li>
+		<li><a href="hd-install-ru.htm#adduser">Новый пользователь и пароли &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-ru.htm#adduser">Добавление нового пользователя</a></li>
+					    <li><a href="sys-admin-gen-ru.htm#pw-lost">Восстановление root-пароля</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-ru.htm#start-services">Службы и режимы загрузки &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-ru.htm#start-services">Выбор служб</a></li>
+					    <li><a href="sys-admin-gen-ru.htm#pkill">Завершениe службы или процесса</a></li>
+					    <li><a href="sys-admin-gen-ru.htm#init">Режимы загрузки init в aptosid</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-ru.htm#rsync">Резервирование системы &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-ru.htm#rdiff">Резервирование с rdiff</a></li>
+					    <li><a href="sys-admin-rsync-ru.htm#rsync">Резервирование с rsync</a></li>
+					    <li><a href="home-ru.htm#home-bu">Перемещение /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-ru.htm#fonts">Cups, шрифты и звук &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-ru.htm#fonts">Шрифты</a></li>
+					     <li><a href="sys-admin-gen-ru.htm#cups">Сервер cups</a></li>
+					     <li><a href="sys-admin-gen-ru.htm#sound">Звуковые микшеры</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-ru.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-ru.htm#chroot">Grub2 - Восстановление grub с chroot</a></li>
+					    <li><a href="sys-admin-grub2-ru.htm#mbr-over-grub2">Grub2 - Удаление из MBR</a></li>
+					    <li><a href="sys-admin-grub2-ru.htm#multi-os">Grub2 - Двойная и мультизагрузка</a></li>
+					    <li><a href="sys-admin-grub2-ru.htm#grub1-grub2">Grub2 - Обновление с grub1</a></li>
+					    <li><a href="sys-admin-grub2-ru.htm#grub2">Grub2 - Краткий обзор</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Наш спонсор webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid размещен на сервере webtropia.com" alt="aptosid размещен на сервере webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+	<div class="divider" id="rolling">
+		<h2 id="top-header">Инструкции для обновления установленной системы</h2>
+
+						<p><span class="highlight-3">Эта страница предлагает резюме замечаний релизу и обновляется после каждой публикации. Прочитайте полное замечание релиза на <a href="http://aptosid.com">aptosid.com</a> или ISO-образе</span> или установите пакет aptosid-releasenotes.</p>
+
+		<h2>Замечания к выпуску aptosid 2011-03 Πόνος - Ponos</h2>
+
+						<p>Новые возможности в aptosid 2011-03 "Πόνος" являются, в частности ядра 3.1 и многочисленных интеграций и стабилизации исправлений. Особое внимание было обращено на совершенствование системы и ее совместимость с новыми аппаратными платформами и различные случаи. Ядро 3.1 не только улучшает, и стабилизирует аппаратную поддержку для новых устройств, но и улучшает задержки и общую производительность системы, в частности, значительно улучшен ввод /вывод расписания для lvm2/ mdadm на SSD.</p>
+
+						<p>Среди новых возможностей есть, например XEN dom0 и PCI для сквозной поддержки, а также вложенные виртуализации KVM от Intel и AMD. Новые драйверы обеспечивают улучшенную поддержку для Intel Sandy Bridge графического чипа (HD2000 / HD3000) и для AMD Llano. Улучшена также базовая поддержка графических карт GeForce 4xx / 5xx серии и возможности 3D в избранных чипсетах. Подсистема поддержки DVB-T2 устройства и первых устройств, теперь доступна.</p>
+
+						<p>Сетевая подсистема в настоящее время предлагает активировать поддержку WLAN (WoWLAN) и поддержку различных новых устройств от RealTek и Broadcom.</p>
+
+						<p>Возможности GPT и UEFI  были улучшены, что позволяет иметь жесткие диски размером более чем 2 ТВ и их использование для загрузки в новых системах с использованием UEFI вместо традиционного PC-BIOS.</p>
+
+						<p>Как обычно, большое количество отдельных улучшений функциональности и исправления были применены к полной линейке пакета и aptosid собственные пакеты для того, чтобы улучшить общую инфраструктуру распределения. Последние месяцы работы позволили нам обратить особое внимание на небольшие аспекты во многих пакетах, а это так важно для улучшения общего соблюдения всех принципах и функциональность.</p>
+
+						<p>Мы хотели бы поблагодарить наших спонсоров <a href="http://www.webtropia.com/?o_ref=aptosid">Webtropia</a> (Часть myLoc управляемой IT AG), который предоставляет 3 выделенных сервера для нашего развития и размещения инфраструктуры, и мы надеемся на длительное и успешное сотрудничество с этим прекрасным хостингом. С новыми серверами <a href="http://www.myloc.de/">myLoc управляемой IT AG</a> мы, наконец, в состоянии иметь надлежащее техническое решение для наших потребностей, например, полностью отделены аппаратные средства для быстрого ядра и ISO потенциала, а также дополнительный сервер для работы всех других наших сайтах в виртуальные машины (lab.aptosid.com, manual.aptosid.com и т.д.). Все наши серверы работают на нашей собственной версии aptosid.</p>
+
+						<p>Огромную благодарность - командам aptosid-art и aptosid-manual. Особенно благодарим нашеего провайдера <a href="http://www.webtropia.com/?o_ref=aptosid">webtropia.com</a> и всех <a href="cd-dl-burning-ru.htm#download-aptosid">хостеров зеркал</a> за их усилия по содержанию aptosid.</p>
+			</div>
+	   <div class="divider" id="whats-new">
+		<h2>Интересные факты, касаемые нового релиза aptosid 2011-03 Πόνος (Ponos):</h2>
+				<ul>
+					<li>Debian sid с последними обновлениями 2011-12-31.</li>
+					<li>Кernel 3.1.6 (smp, жесткое вытеснение).</li>
+					<li>Новая версия xserver-xorg-core 1.11.2.902.</li>
+					<li>Поддержка KMS для ATi, Intel и  на nVidia, базирующих чип-сеты.</li>
+					<li>Поддержка для DRI (3D) ATi Radeon чипсетах от и до r7xx (обратитесь к странице <a href="nf-firm-ru.htm">Определение несвободного микропрограммного обеспечения - non-free</a>).</li>
+					<li>KDE 4.6.5 (en + de).</li>
+					<li>Новый браузер Iceweasel 9.0.1</li>
+					<li>Новая, базирующуюся на SVG,тема аptosid-art, созданная командой art.</li>
+
+					<li>Смотрите <a href="file:///usr/share/aptosid-manual/index.html">Руководство офлайн</a> на <a href="file:///usr/share/aptosid-manual/en/welcome-en.htm">аглийском языке</a> + и на <a href="file:///usr/share/aptosid-manual/de/welcome-de.htm">немецком язьке</a> прямо на CD или DVD. Интерактивные руководства для других языков находятся на <a href="http://manual.aptosid.com/">http://manual.aptosid.com/</a> и готовы для скачивания с помощью команды apt; большое спасибо командам документации и команде переводчиков!<br />Обратите внимание, что руководства доступны только на компакт-диске или на установленной системе.</li>
+
+					<li>Есть множество изменений в руководстве.</li>
+					<li>ath5k поддержка для 54/ "108" MBit/s Atheros WLAN-карт (AR2425, AR5210, AR5211, AR5212, AR5213 и AR5414).</li>
+					<li>ath9k поддержка для 802.11n Atheros WLAN-карт(AR5418+AR5133, AR5416+AR5133, AR5416+AR2133, AR9160, AR9280, AR9281 и AR9285).</li>
+					<li>ath9k_htc поддержка для 802.11n Atheros USB WLAN-карт (AR7010/ AR9271).</li>
+					<li>carl9170 поддержка для 802.11n Atheros USB WLAN-карт (AR9170 &quot;otus&quot;), теперь поддерживают HT/ агрегации и AP модус.</li>
+					<li>
+
+						b43/ b43legacy поддержка для Broadcom WLAN-карт.<br />
+						<a href="http://www.ing.unibs.it/openfwwf/">OpenFWWF 5.2</a> Прошивка с отркрытым исходным кодом для следущих Broadcom AirForce 802.11b/g WLAN-карт:
+						<ul>
+							<li>BCM4306</li>
+							<li>BCM4311 пересмотр 1</li>
+							<li>BCM4318</li>
+
+							<li>BCM4320</li>
+						</ul>
+						экспериментальная поддержка для LP-PHY (BCM4312) и SSB базирующиься на  802.11n (BCM4321, BCM4322) устройств, включая несвободную прошивку.
+					</li>
+
+					<li>iwlagn поддержка для IPW 3945/ 4965 и IEEE 802.11 a/b/g/n часть от  Intel Wireless WiFi Link 1000/ 2000/ 5xxxAGN/ 6000/ 6050 семьи.</li>
+					<li>iwmc3200wifi поддержка  Intel Wireless Multicomm 802.11.</li>
+					<li>rt2x00 поддержка для RaLink rt2400, rt2500, rt2570, rt61 and rt73 802.11b/g карт.</li>
+					<li>Поддержка для RaLink rt27x0, rt28x0, rt30x0, rt33xx, rt35xx, rt53xx 802.11b/g/n PCI/ USB карт через rt2x00.</li>
+					<li>Поддержка для RealTek RTL8180L/ RTL8185 PCI/ cardbus и RTL8187/ RTL8187B USB WLAN карт.</li>
+					<li>Поддержка для RealTek RTL8188CE/ RTL8192CE, RTL8188DE/ RTL8192DE, RTL8188SE/ RTL8192SE (PCIe) и RTL8188CU/ RTL8192CU (USB) 802.11n WLAN карт.</li>
+					<li>memtest86+.</li>
+					<li>OpenJDK 6 как часть варианта КDE-full.</li>
+					<li>Поддержка kvm (Kernel-based Virtual Machine) для KDE-full; kvm зависит от аппаратной поддержки виртуализации (AMD pacifica virtualisation extensions &quot;svm&quot; или Intel IVT (vanderpool) virtualisation extensions &quot;vmx&quot;)</li>
+					<li>access point поддержка для many mac80211 based WLAN карт через nl80211 и hostapd (опционально).</li>
+					<li>Поддержка клиента  для загрузки через сеть с PXE/ NBD.</li>
+					<li>re-add usbutils.</li>
+					<li>Есть увереность, что polkit-kde-1 находится на KDE builds.</li>
+					<li>Поддержка для multi-tuner DVB карт.</li>
+					<li>Исправленная gpm (мышечная поддержка tty) для ядра 3.x.</li>
+					<li>Переход от /var/run/ до  и от /run/, /var/lock/ к /run/lock/ и /lib/init/rw/ к /run/.</li>
+					<li>Замена отдельной обработки mtab с помощью /proc/mounts напрямую.</li>
+					<li>Улучшена стабильность и совместимость улучшений для USB и установки системы.</li>
+					<li>Исправления для ext4 настойчивости.</li>
+					<li>Изпользование &quot;темы Air&quot;.</li>
+					<li>Обеспечение легкого обнаружения UEFI.</li>
+					<li>Установка iw для конфигурации mac80211/ cfg80211 базируемых WLAN карт по умолчанию.</li>
+					<li>Упрошенный и исправленный чит-код md5sum на LIVE-CD/DVD .</li>
+					<li>Cделать dmakms обработки более надежной.</li>
+					<li>Исправленная ошибка в конфигурации DHCP, которая стремилась перезаписывать настройку имени хоста.</li>
+					<li>Адаптированный nbd для базируемой загрузки/ параметры установки для изменений, сделанных разработчиком.</li>
+					<li>Добро пожаловать украинский язык в список поддерживаемых языков.</li>
+				</ul>
+			</div>
+			<div class="divider" id="faq">
+				<h2>Часто задаваемые вопросы</h2>
+					<h3>Установка</h3>
+						<p><b>Для установки pекомендуется настроить раскладки клавиатуры, мест и часового пояса до загрузки Live-системы. Они будут настроенными, выбрав их из меню загрузки с помощью клавиш [F2] и [F3].</b> Таким образом, региональные настройки распространяются на всех необходимых мест для установленной системы и не требуют громоздких изменений в нескольких местах.</p>
+
+					<h3>Kernel based Mode Setting (KMS) и intel, nvidia с radeon графическими картами</h3>
+				
+						<p>Для поддержки KMS требовался xserver-xorg-video-intel, который имел параметры ядра например как &quot;i915.modeset=0&quot; или &quot;vga=791&quot;. Они больше не действительны, и активно перепываються, начиная X на Intel-графических чипов. Учитывая, что i915 / X-сервера и Xorg--видео-Intel не требует любой прошивки, там больше не должно быть связаных с KMS по отношению к Intel графических чипов ошибок.</p>
+
+						<p>Для KMS функционирования в сочетании с ATI / AMD Radeon графических карт,нужна несвободная прошивка см. <a href="gpu-ru.htm#ati-3d"> AMD / ATI 3D-драйвeры </a>) котороя не требуется, если они не могут быть отправлены на aptosid Live-CD/DVD, в то время как X.org должен бы вернуться к VESA если Вы имеете проблематические карты. На это особое внимание может в редких случаях понадобиться. Если не удается запустить X-сервер  на ATI/ AMD Radeon видеокартах, мог бы помочь загрузочный вариант "radeon.modeset = 0" и установка необходимого пакета прошивки "<a href="gpu-ru.htm#ati-3d"> AMD / ATI 3D-драйверы </a>" на Live-CD/DVD до установки на жесткий диск. После установки несвободной прошивки, параметры ядра, "radeon.modeset = 0" или "VGA = 791", не должны больше использоваться, поскольку они могут помешать операции KMS, которая необходима должным образом для Radeon работы</p>
+
+						<p>Nouveau не требует особой прошивки и поддерживает KMS изначально. Параметры ядра framebuffer например как &quot;vga=791&quot;и более, не являются больше действительными и зависают начиная X-сервер на графических картах.</p>
+
+				<h3>grub2</h3>
+						<p>Теперешний grub2 обеспечивает повышенную гибкость при установке, например поддержка UEFI. Новые файловые системы (ext4) или дополнительные параметры установки, как программное обеспечение RAID (mdadm) были улучшены.LVM2 и улучшенные возможности обнаружения других дистрибутивов и операционных систем, ограничены дальше только текстовым меню. С новыми усилиями в настоящее время и в стадии разработки проблемы могут быть решенными в будущем. <br /> Хотя grub2 уже поддерживает простые обои, эта функция все еще хрупка и продлевает загрузку системы. <br/> Для внутренней конфигурации системы grub2 использует скрипты и фрагменты в /еtc/grub.d/ где он создает свой ​​конфигурационный файл "grub.cfg" таким образом, что позволяет самообновление функций, таких как автоматизация поддержки fromiso  с помощью "grub2 grub2-fll-fromiso" (опционально).</p>
+
+				<h3>isohybrid</h3>
+						<p>С поддержкой ISOLinux gfxboot, можно использовать isohybrid, которая позволяет записать ISO непосредственно на USB-флешку или на SD/SDHC/ MMC карт памяти, чтобы сделать эти загрузочными.<br /> isohybrid добавляет MBR, чтобы ISO и устанавливает таблицу разделов с одним активным разделом и раздел содержащий ISO. <br />Это позволяет записывать ISO-образы aptosid непосредственно к USB-устройствам и карт памяти SDHC в главе "Установка-aptosid-к-USB" (установка-USB-GUI). <br /> Эта опция особенно полезна, если нет существующей установки aptosid , и если установка должна быть создана из другого дистрибутива или операционной системы. <br/> Важно отметить, что этот метод перезаписи уничтожает все данные на  USB-устройстве и ограничивает свободное место на размер aptosid ISO; установки через USB-GUI не подпадают под эти ограничения.<br /> Дальнейшие разделы могут быть добавлены для обеспечения доступа к неиспользованную часть устройства хранения данных.</p>
+<pre>
+$cat /path/to/aptosid-*.iso &gt; /dev/USB_raw_device_node
+</pre>
+
+						<p>Дополнительную информацию о aptosid установки можно получить в <a href="http://manual.aptosid.com/">Руководстве по aptosid </a> главе <a href="http://manual.aptosid.com/ru/hd-install-ru.htm">Варианты установки</a>.</p>
+
+		<h3>Беспроводная нормативная настройка домена</h3>
+						<p>Нормативные базы домен для на cfg80211 основанных WLAN карт требуют CRDA для доступа к беспроводным каналам выше ch11 (2,4 ГГц или 5 ГГц и их эквиваленты), без CRDA работает только "world domain" на доступном канале 1-11.</p>
+<pre>
+apt-get update 
+apt-get install crda
+</pre>
+		<h3>Загрузка aptosid по сети </h3>
+						<p>Загрузка по сети через PXE aptosid (Preboot Execution Environment) и НБД (Сеть блочное устройство) поддерживается, необходимые параметры можно настроить в пределах от загрузочного меню.Нажмите для этого клавишу  F4 на клавиатуре. Инструкции по установке например PXE + НБД-сервера загрузки можно получить на <a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=9">aptosid сетевое введение </a> и в руководстве; <a href="nbdboot-ru.htm#nbd1">Загрузка через сеть</a>.</p>
+
+				<h3>Загрузка с UEFI</h3>
+						<p>Предварительная поддержка для загрузки с UEFI добавленa для amd64-процессоров. К теперешнему времени инсталлятор с графическим интерфейсом пока что не готов, поэтому загрузчиком будет программа EFI, установленная в / EFI / aptosid в Вашем "разделе системы EFI" и установлен ниже / загрузки / EFI / на установленной системе, при соблюдении следующих условий :</p>
+
+				<ul>
+					<li>x86-64/ EM64T system (amd64).</li>
+					<li>Загрузка системы UEFI, это видно из простого белого/голубого grub2 меню, вместо обычного графического меню загрузки, предоставляемые ISOLinux для загрузки BIOS.</li>
+					<li>С VFAT-системой отформатированный раздел EFI на диске GPT (тип EF00) существует на целевой системе.</li>
+					<li>Целью установки не являеться USB-флешка.</li>
+				</ul>
+
+						<p>На данный момент aptosid предлагает только UEFI-загрузки для 64-битной(amd64) системы, 32-битные системы UEFI (таких, как старые модели Applе-системы) в настоящее время не поддерживаются. Мультизагрузочный загрузчик с другими 64-битными системами должно быть возможным, но не проверен.</p>
+
+				<h3>UEFI загрузочных съемные устройства</h3>
+						<p>Для того чтобы создать UEFI загрузочные устройства, такие как например USB флэшки, содержание aptosid ISO может быть записано на отформатированный раздел флешки с системой VFAT, который помеченный как загрузочный. При желании этот съемный носитель может также быть совместим с PC-BIOS загрузкой с помощью установки традиционных загрузочных секторов в дополнение к EFI загрузчика (если / dev/sdz1 является целевым разделом на USB-флешке).</p>
+
+<pre>
+syslinux -i -d /boot/isolinux /dev/sdz1
+install-mbr /dev/sdz
+</pre>
+
+				<h3>Локализации</h3>
+						<p>Особенностью KDE-релиза  полный является возможность выбрать кроме немецкого или американского (английскиго)с меню GRUB (F4) еще другие языки, которая автоматически устанавливает локализаци для рабочего стола и многих приложений при загрузке. Это гарантирует, что они присутствуют также после установки aptosid, а только установка необходимого языка для данной системы. Объем памяти, необходимый для этой функции зависит от языка и aptosid может отказаться от установки данной языковые пакеты автоматически с недостаточной оперативной памяти и последовательность загрузки будет продолжена на английском языке, но только с нужной настройкой  даты / времени и кодировоки клавиатуры). 1 Гб памяти или более должны быть безопасными для всех поддерживаемых языков, а именно:</p>
+
+				<ul>
+					<li>Czech (Чешский)</li>
+					<li>Danish (Датский)</li>
+					<li>Dutch (Голландский)</li>
+					<li>English (AU,GB,US) (Аглийский)</li>
+					<li>French (Француский)</li>
+					<li>German (Немецкий)</li>
+					<li>Italian (Итальянский)</li>
+					<li>Japanese (Японский)</li>
+					<li>Polish (Польский)</li>
+					<li>Portuguese (BR,PT) (Португальский)</li>
+					<li>Romanian (Румынский)</li>
+					<li>Russian (Русский)</li>
+					<li>Spanish (Испанский)</li>
+					<li>Ukrainian (Украинский)</li>
+				</ul>
+
+						<p>Выбор языка зависит от наличия перевода руководства aptosid, примите участие в переводе чтобы добавить Ваш язык. Некоторые переводы не являются полностью в данный момент:</p>
+
+				<ul>
+					<li>Bulgarian (Болгарский)</li>
+					<li>Croatian (Хорватский)</li>
+					<li>Greek (Греческий)</li>
+					<li>Hungarian (Венгерский)</li>
+				</ul>
+
+						<p>Дополнительная помощь срочно необходима для этих языков,чтобы довести ихние переводы до конца.</p>
+
+
+	</div>
+	<div class="divider" id="upgrade">
+			<h2>Советы для системного обновления (dist-upgrade):</h2>
+						<p>aptosid старается обеспечить плавныe обновления для Debian и собственных пакетов, тем не менее, некоторые пакеты остаются, что может быть улучшено с простым ручным взаимодействием.</p>
+
+			<h3>nouveau</h3>
+						<p>xserver-xorg-video-nv был удален с Debian, то есть xserver-xorg-video-nouveau является его заменой. Мы рекомендуем пользователям картами Nvidia удалить полностью xserver-xorg-video-nv, и установить xserver-xorg-video-nouveau; измены конфигураций не должно быть. На некоторый поколений чипсетов возможно основное видео и 3D ускорение через X-сервер Xorg-и видео-модерн и libgl1-Меса-Dri-experimental.</p>
+<pre>
+apt-get install xserver-xorg-video-nouveau libgl1-mesa-dri-experimental
+</pre>
+
+				<h3>KDE 4.6 and XFCE 4.8</h3>
+						<p>Обновление до KDE, XFCE 4.6 или 4.8 не может тянуть все необходимые пакеты в определенных случаях, пожалуйста установите их вручную.  Без этих пакетов, powermanagement и установка съемных носителей и применения общесистемного изменения конфигурации для установок системы работают только частично.</p>
+						<p>для KDE:</p>
+<pre>
+apt-get install polkit-kde-1 udisks upower
+</pre>
+						<p>для XFCE:</p>
+<pre>
+apt-get install policykit-1 policykit-1-gnome udisks upower
+</pre>
+
+			<h3>Устаревшие пакеты</h3>
+						<p>В рамках дальнейшего развития aptosid, число пакетов были заменены на более эффективные альтернативы или становятся излишними.</p>
+
+				<ul>
+					<li>kaboom<br />
+						Переходный помощник для KDE3 &rarr; или KDE4 миграции пользовательской конфигурации,которые могут быть удалены после успешной миграции.
+					</li>
+
+					<li>modconf<br />
+						Этот пакет был удален из Debian после выхода &quot;Squeeze&quot; и не служит никакой реальной цели в эти дни.
+					</li>
+				</ul>
+
+						<p>Переходный пакет и устаревшие библиотеки часто может быть идентифицирован c помощью &quot;deborphan&quot;.Хотя этот инструмент очень удобен для текущей системной очистки, его результаты всегда должны быть проверены, прежде чем использовать его в качестве входных данных для удаления.</p>
+
+<pre>
+$ deborphan
+</pre>
+
+						<p>Следующая команда сможет найти пакеты которые не доступны из любого активного репорозитория и может намекнуть на устаревшие пакеты, будьте осторожны при вручную установленных пакетах, хотя "apt-show-versions" это отдельный пакет и не обязательно установлен. </p>
+
+<pre>
+$ apt-show-versions | awk '/No available version in archive/{print $1}'
+</pre>
+			</div>
+			<div class="divider" id="howto-involve">
+				<h2>Как оказать нам помощь</h2>
+						<p>Оказать нашему проекту помощь очень просто, Вам нужно только посетить наш главный <a href="http://aptosid.com/index.php?name=PNphpBB2">Forum</a> а еще лучше наш главный чат-канал (irc.oftc.net, port 6667, канал <a href="irc://irc.oftc.net:6667/#aptosid">#aptosid</a>) и обсудить Ваши предложения или дополнения.</p>
+
+						<p>Мы будем всегда рады обсудить любые DFSG без патчей и взносов, особенно в отношении альтернативных менеджеров окон (GNOME, LXDE), общие задачи, очистки, или переводы/локализации.</p>
+			</div>
+	
+			<div class="divider" id="roadmap">
+				<h2>Дорожная карта:</h2>
+						<p>Пожалуйста поймите что следующий план релиза является приблизительным оценкам в отношении нашего выпуска и зависит от состояния Debian Sid, основных компонентах системы, как например X.org, KDE, ядрах Linux и нашых собственных разработок которые подлежат изменениям.</p>
+	
+				<ul>
+					<li>
+						Θάνατος - Thánatos
+					</li>
+
+					<li>
+						Ἑσπερίδες - Hesperides
+					</li>
+
+					<li>
+						Νέμεσις - Nemesis
+					</li>
+
+					<li>
+						Φιλότης - Philotes
+					</li>
+				</ul>
+			</div>	
+			<div id="rev">Содержание, последний раз пересмотрено 01/01/2012 1230 UTC</div>
+
+</div>
+</body>
+</html>

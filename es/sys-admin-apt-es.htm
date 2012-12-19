@@ -1,0 +1,750 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+<head>
+	<title>Manual de aptosid - Guía de APT</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body id="sys-admin">
+<!-- Last translation revision by Richard 2009-03-18 1300hrs UTC-->
+<!--htdig_noindex--><div id="menu"> <!-- menu starts here es lang maintained by Luis_P -->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="ir a aptosid.com y Forum y Wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-es.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" />Buscar</a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Seleccione otro idioma - Choose another language CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="lang-switch CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-es.htm">Manual aptosid</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-es.htm#welcome-gen">Manual de usuario &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-es.htm#cred-team">Créditos</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-es.htm#how-to">Cómo usar este manual &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-es.htm#how-to">Cómo usar este manual</a></li>
+					  <li><a href="welcome-es.htm#table-contents">Indice de Contenido</a></li>
+					</ul>
+					</li>
+		<li><a href="help-es.htm#help-gen">Recibir ayuda &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-es.htm#help-gen">Dónde Conseguir Ayuda</a></li>
+					  <li><a href="help-es.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-es.htm#welcome-quick">Guía rápida</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-es.htm"> ISO, Versiones, Espejos y Quemado</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-es.htm#cd-content">Contenido del ISO y Requerimientos &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-es.htm#rolling">Notas del lanzamiento</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-es.htm#download-aptosid">Espejos aptosid, descargar y quemar &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-es.htm#md5">Suma de verificación, md5</a></li>
+					  <li><a href="cd-dl-burning-es.htm#burn-nero">Quemar en Windows</a></li>
+					  <li><a href="cd-dl-burning-es.htm#burn-linux">Quemar en Linux</a></li>
+					  <li><a href="cd-no-gui-burn-es.htm#burning-no-gui">Script para quemar ISO</a></li>
+					  <li><a href="cd-no-gui-burn-es.htm#burn-no-gui-gen">Quemar sin GUI</a></li>
+					  <li><a href="cd-dl-burning-es.htm#download-aptosid">Espejos de descarga aptosid</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-es.htm">LiveCD: el modo en vivo</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-es.htm#rootpw">Clave raíz del LiveCD</a></li>
+				<li><a href="live-mode-es.htm#live-cd-installsoft">Instalar Software con el LiveCD</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-es.htm">Terminal/Consola</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-es.htm#term-kon"> Terminal (consola) &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-es.htm#term-kon"> Terminal (consola)</a></li>
+					  <li><a href="term-konsole-es.htm#colours"> prompts coloreados de terminal : </a></li>
+					  <li><a href="term-konsole-es.htm#cli-help">Ayuda en línea de Comando</a></li>
+					  <li><a href="help-es.htm#init3-tools">Herramientas que hay que conocer en el modo texto (tty) - init 3</a></li>
+					  <li><a href="term-konsole-es.htm#term-cmds">Comandos del terminal de Linux</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-es.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-es.htm">Chuletas (cheatcodes)</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-es.htm#cheatcodes">Chuletas aptosid específicas para Live-ISO</a></li>
+				<li><a href="cheatcodes-es.htm#cheatcodes-linux">Chuletas genericas Linux</a></li>
+				<li><a href="cheatcodes-vga-es.htm#vga">Códigos VGA</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-es.htm">Particionar el Disco Duro; Modos tradicional, GPT y LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-es.htm#hd-ntfs3g">Escribir en Particiones NTFS con ntfs-3g</a></li>
+			<li><a href="part-lvm-es.htm#part-lvm">Particiones para usar LVM - Gestor Lógico de Volúmenes</a></li>
+			<li><a href="part-gparted-es.htm#partition">Particionar con un gestor gráfico &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-es.htm#partition">Particionar el Disco Duro usando GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-es.htm#ntfs">Redimensionar particiones NTFS con GParted/KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-es.htm#partition">Particionar el Disco Duro en línea de órdenes &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-es.htm#partition">Particionar el Disco Duro con cfdisk</a></li>
+					    <li><a href="part-cfdisk-es.htm#formating">Formatear después de particionar con cfdisk</a></li>
+					    <li><a href="part-gdisk-es.htm#gdisk-6">Formatear después de particionar con gdisk</a></li>
+					    <li><a href="part-gdisk-es.htm#gdisk-1">GPT Particionar con gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-es.htm#part-example">Particionado Básico &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-es.htm#part-example">Ejemplos de dimensiones de particiones</a></li>
+					  <li><a href="part-uuid-es.htm#uuid">UUID, Reconstruir fstab y crear nuevos puntos de montaje</a></li>
+					  <li><a href="part-cfdisk-es.htm#disknames">Nombrar discos: en breve</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-es.htm">Opciones de la Instalación - HD, USB, VM y Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-es.htm#Inst-prep">Preparar para Instalar &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-es.htm#Inst-prep">Preparar para Instalar </a></li>
+					  <li><a href="hd-install-es.htm#Installation">Instalar al disco duro</a></li>
+					  <li><a href="hd-install-es.htm#first-hd-boot">Primera inicialización</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-es.htm#fromiso">Arranque fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-es.htm#fromiso">Iniciar fromiso - Vista general</a></li>
+					  <li><a href="hd-install-opts-es.htm#grub2-fromiso">Iniciar 'fromiso' con Grub 2</a></li>
+					  <li><a href="hd-install-opts-es.htm#fromiso-persist">'fromiso' y 'persist'</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-es.htm#usb-hd">Instalar en un USB-DD - aptosid específico - aptosid-en-un-lápiz_USB &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-es.htm#usb-hd">Instalar en un USB-DD - aptosid Específico - aptosid en un lápiz USB</a></li>
+					  <li><a href="hd-ins-opts-oos-es.htm#raw-usb">Grabar aptosid en un lápiz USB/SSD con cualquier sistema Linux, MS Windows o Mac OS X</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-es.htm#install-crypt">Instalación en particiones cifradas - cryptroot</a></li>
+		  <li><a href="nbdboot-es.htm#nbd1">Arrancar aptosid en una red</a></li>
+		  <li><a href="hd-install-vmopts-es.htm#vmopts">Opciones de instalación en una máquina virtual</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-es.htm">Tarjetas Gráficas, monitores, Xorg &amp; controladores</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-es.htm#mon-res">Resolución de pantalla y monitores  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-es.htm#mon-res">Resolución de pantalla y monitores</a></li>
+					  <li><a href="hw-dev-mon-es.htm#xrandr">Monitores Duales y xrandr</a></li>
+					  <li><a href="hw-dev-mon-es.htm#mon-binary">Monitores Duales (utilizando binarios)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-es.htm#foss-xorg">Controladores GPU &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-es.htm#ati-3d">Controladores AMD/ATI 3D</a></li>
+					  <li><a href="gpu-es.htm#intel">Controladores Intel 2D y 3D</a></li>
+					  <li><a href="gpu-es.htm#nvidia">Controladores Nvidia 3D</a></li>
+					  <li><a href="gpu-es.htm#foss-xorg">Controladores código abierto Xorg</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-es.htm#fw-detect">Detección de firmware non-free</a></li>
+			  <li><a href="nf-firm-es.htm#non-free-firmware">Añadir non-free a Sources List</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-es.htm">Gestor de ventanas</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-es.htm">Gestores de Ventanas KDE y XFCE &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-es.htm#xfce-notes">Utilidades de XFCE</a></li>
+					    <li><a href="wm-dm-es.htm#install-add">Utilidades extras de KDE</a></li>
+					    <li><a href="wm-dm-es.htm#desk-freeze">El escritorio se traba</a></li>
+					    <li><a href="wm-dm-es.htm#kde-login">No puedo hacer login en KDE</a></li>
+					    <li><a href="wm-dm-es.htm#ch-th">Cambiar Temas</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm--es.htm#dm">Instalación de otros gestores de escritorio</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-es.htm">Conexión a Internet, WiFi, LAN y Redes</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-es.htm">Pila de LAMP aptosid &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-es.htm#serv-apache">Pila de LAMP aptosid </a></li>
+					    <li><a href="lamp-apache-es.htm#serv-ftp">Clientes FTP</a></li>
+					    <li><a href="lamp-apache-es.htm#serv-sec">Protocolos de Seguridad</a></li>
+					    <li><a href="lamp-apache-es.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-es.htm#serv-mysql">Configurar MySQL</a></li>
+					    <li><a href="lamp-ppp-es.htm#serv-php">PHP en Apache</a></li>
+					    <li><a href="ntp-server-es.htm#ntp-server">Configurar un servidor horario</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-es.htm#tor">Firewalls (Muros de Fuego) y privacidad &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-es.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-es.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-es.htm#firewalls">Firewalls (Muros de Fuego)</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-es.htm#ssh-x">SSH y Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-es.htm#setup">Configurar un servidor Samba</a></li>
+						  <li><a href="samba-es.htm#configure">Configurar SAMBA (Windows)</a></li>
+						  <li><a href="ssh-es.htm#ssh-fs">Montaje remoto con SSH </a></li>
+						  <li><a href="ssh-es.htm#ssh-x">Aplicaciones X Window via SSH</a></li>
+						  <li><a href="ssh-es.htm#ssh-f">SSH con Konqueror</a></li>
+						  <li><a href="ssh-es.htm#ssh-w">Seguimiento-X con SSH desde Win-PC</a></li>
+						  <li><a href="ssh-es.htm#ssh">SSH y seguridad</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-es.htm#netcardconfig">Conexiones WIFI &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-es.htm#netcardconfig">'ceni': Conectar en línea</a></li>
+						    <li><a href="inet-wpagui-es.htm#wpa-roaming-gui">WiFi - entorno gráfico WPA</a></li>
+						    <li><a href="inet-setup-es.htm#net-set1">WiFi - Configuración del WiFi Roaming</a></li>
+						    <li><a href="inet-wpa-es.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-es.htm#hotswitch">Cambio de la red entre WiFi y Cable</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-es.htm#netcardconfig">Conexiones por cable &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-es.htm#dial-mod">Modems de 56k</a></li>
+						    <li><a href="inet-ceni-es.htm#netcardconfig">'ceni': Conectar en línea</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-es.htm#fw-detect">Detección de firmware non-free</a></li>
+		<li><a href="nf-firm-es.htm#non-free-firmware">Añadir non-free a Sources List</a></li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-es.htm">Gestión de Paquetes y Actualización</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-es.htm#apt-cook">APT y 'sources.list' &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-es.htm#apt-cook">Guía de APT y 'sources list'</a></li>
+					    <li><a href="sys-admin-apt-es.htm#apt-install">Instalar un Paquete</a></li>
+					    <li><a href="sys-admin-apt-es.htm#apt-delete">Quitar un Paquete</a></li>
+					    <li><a href="sys-admin-apt-es.htm#apt-downgrade">Mantener ('Hold') un Paquete y versión anterior</a></li>
+					    <li><a href="sys-admin-apt-es.htm#apt-cache">Buscar un paquete con 'apt-cache'</a></li>
+					    <li><a href="sys-admin-apt-es.htm#gui-pacsea">Buscar un paquete en entorno gráfico</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-es.htm#kern-upgrade">Actualizar el Kernel &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-es.htm#kern-remove">Quitar kernels anteriores</a></li>
+					    <li><a href="sys-admin-kern-upg-es.htm#kern-upgrade">Actualizar el Kernel</a></li>
+					    <li><a href="sys-admin-kern-upg-es.htm#dmakms">Instalación dinámica de módulos del kernel con dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-es.htm#apt-upgrade">Actualizar el sistema instalado: 'dist-upgrade' - Vista general &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-es.htm#live-cd-upgrade">Actualización mediante un Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-es.htm#approx">Actualización de varios PCs en una red</a></li>
+					    <li><a href="sys-admin-apt-es.htm#apt-upgrade">Actualizar el sistema instalado: 'dist-upgrade' - Vista general</a></li>
+					    <li><a href="sys-admin-apt-es.htm#du-st">Actualizar el sistema instalado: 'dist-upgrade' - Los pasos</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-es.htm">Administración del Sistema</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-es.htm#bois-prep">Actualizar el BIOS con FreeDOS</a></li>
+		<li><a href="vir-rkits-es.htm#virus-rkits">Buscadores de Virus y Rootkit</a></li>
+		<li><a href="hd-install-es.htm#adduser">Agregar nuevo Usuario y claves &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-es.htm#adduser">Agregar un nuevo Usuario</a></li>
+					    <li><a href="sys-admin-gen-es.htm#pw-lost">Clave root Perdida, nuevas claves</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-es.htm#start-services">Servicios y niveles de ejecución &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-es.htm#start-services">Activar/desactivar servicios</a></li>
+					    <li><a href="sys-admin-gen-es.htm#pkill">Matar un proceso o servicio</a></li>
+					    <li><a href="sys-admin-gen-es.htm#init">niveles de ejecución en aptosid - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-es.htm#rsync">Copia de seguridad del sistema &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-es.htm#rdiff">Respaldar con 'rdiff'</a></li>
+					    <li><a href="sys-admin-rsync-es.htm#rsync">Respaldar con 'rsync'</a></li>
+					    <li><a href="home-es.htm#home-bu">Mudando el /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-es.htm#fonts">CUPS, Fuentes y Sonido &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-es.htm#fonts">Fuentes</a></li>
+					     <li><a href="sys-admin-gen-es.htm#cups">Sistema de impresión CUPS</a></li>
+					     <li><a href="sys-admin-gen-es.htm#sound">Mezcladores de sonido</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-es.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-es.htm#chroot">Grub2 - Recuperar Grub con chroot</a></li>
+					    <li><a href="sys-admin-grub2-es.htm#mbr-over-grub2">Grub2 - Sobre-escribir el MBR</a></li>
+					    <li><a href="sys-admin-grub2-es.htm#multi-os">Grub2 - Iniciación Dual y Múltiple</a></li>
+					    <li><a href="sys-admin-grub2-es.htm#grub1-grub2">Grub2 -Actualización desde Grub1</a></li>
+					    <li><a href="sys-admin-grub2-es.htm#grub2">Grub2 - Vista general</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donar" alt="Donar" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Patrocinado por webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid tiene el orgullo de estar alojado en webtropia.com" alt="aptosid tiene el orgullo de estar alojado en webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+	<div class="divider" id="apt-cook">
+		<h2 id="top-header">Pequeña Guía para APT y 'sources.list'</h2>
+
+		<h3>¿Que quiere decir APT?</h3>
+ 			<p>APT es el mnemotécnico para la Herramienta de Empaquetamiento Avanzado (Advanced Packaging Tool) y es una colección de programas y scripts que ayudan tanto al administrador del sistema (en este caso, root) con la instalación y gestión de archivos-deb, como también informa al mismo sistema para saber qué está instalado.</p>
+	</div>
+	<div class="divider" id="sources-list">
+			<h2>sources.list</h2>
+							<p>El sistema "APT" necesita un archivo de configuración que contenga información acerca de las localizaciones de paquetes instalables y actualizables que es normalmente llamado <span class="highlight-3">sources.list</span>.</p>
+
+							<p>Las fuentes están en un directorio o carpeta llamado: <br />
+							<span class="highlight-3">/etc/apt/sources.list.d/</span></p>
+
+							<p>Dentro este directorio hay 2 archivos llamados:<br />
+							<span class="highlight-3">/etc/apt/sources.list.d/debian.list</span> y<br />
+							<span class="highlight-3">/etc/apt/sources.list.d/aptosid.list  </span></p>
+
+							<p>Esto tiene la ventaja de cambiar más rápidamente los espejos (está automatizado), y lo hace más seguro para reemplazar listas.</p>
+
+							<p>También puede agregar su propios archivos <span class="highlight-3">/etc/apt/sources.list.d/*.list </span></p>
+
+ 					<h3>Todos los ISOs de aptosid tienen los siguientes repositorios preseleccionados:</h3>
+
+<pre>
+#aptosid
+# Free University Berlin/ spline (Student Project LInux NEtwork), Germany
+deb ftp://ftp.spline.de/pub/aptosid/debian/ sid main fix.main
+#deb-src ftp://ftp.spline.de/pub/aptosid/debian/ sid main fix.main
+</pre>
+
+							<p>Se pueden encontrar entradas adicionales para necesidades no-libres en nuestras páginas web, siempre actualizadas <a href="http://aptosid.com/files/misc/sources.list.d/aptosid.list">aptosid.list</a> y <a href="http://aptosid.com/files/misc/sources.list.d/debian.list">debian.list</a>:</p>
+<pre>
+#Debian
+# Unstable
+deb http://ftp.us.debian.org/debian/ unstable main contrib non-free
+#deb-src http://ftp.us.debian.org/debian/ unstable main contrib non-free
+
+# Testing
+#deb http://ftp.us.debian.org/debian/ testing main contrib non-free
+#deb-src http://ftp.us.debian.org/debian/ testing main contrib non-free
+
+# Experimental
+#deb http://ftp.us.debian.org/debian/ experimental main contrib non-free
+#deb-src http://ftp.us.debian.org/debian/ experimental main contrib non-free
+</pre>
+							<p>NOTA: En este ejemplo, el ftp.us indica que está usando repositorios desde los Estados Unidos de América. Puede editar este archivo, como raíz, para usar repositorios más cerca físicamente de usted, simplemente cambiando el país, por ejemplo, cambie ftp.us.* a ftp.es.* ó ftp.ar.*. Muchos países tienen espejos locales que ayudan a conservar el ancho de banda (bandwidth) y a mejorar las velocidades de descarga.</p>
+
+							<p><a href="http://www.debian.org/mirrors/">Lista de los servidores Debian y del estado actual de los espejos</a>.</p>
+
+							<p>Para poder conseguir información actualizada sobre los paquetes, el sistema APT utiliza una base de datos. Esta base de datos contiene el paquete pero también los demás paquetes que necesita para poder funcionar (las llamadas dependencias). El programa apt-get usa esta base de datos cuando instala los paquetes escogidos para resolver todas las dependencias, y así garantiza que el paquete escogido funcione. La actualización de esta base de datos se realiza con la orden: apt-get update.</p>
+
+<pre># apt-get update
+	(lo que retorna:)
+Get:1 http://aptosid.com sid Release.gpg [189B]
+Get:2 http://aptosid.com sid Release.gpg [189B]
+Get:3 http://aptosid.com sid Release.gpg [189B]
+Get:4 http://ftp.de.debian.org unstable Release.gpg [189B]
+Get:5 http://aptosid.com sid Release [34.1kB]
+Get:6 http://ftp.de.debian.org unstable Release [79.6kB]
+</pre>
+
+
+	</div>
+
+	<div class="divider" id="apt-install">
+ 		<h2>Instalación de un nuevo paquete</h2>
+							<p><span class="highlight-2">Tanto actualizar paquetes como instalar uno nuevo sin parar el servidor X puede originar problemas. Cualquier método en el que se instalen paquetes estando en X tiene este problema.</span></p>
+
+							<p><span class="highlight-2">En la medida en que el paquete que usted quiera instalar no actualice otros paquetes, es seguro instalarlo sin parar el servidor X. No obstante, si instalar un paquete origina la actualización de otros, se debe tener gran cuidado y si no está completamente seguro de que los programas que se vayan a actualizar no se usen en aquel momento, debería parar X antes de instalar el paquete.</span></p>
+
+							<p><span class="highlight-2">Si tiene alguna duda asegúrese de abandonar el servidor X como indican las instrucciones de dist-upgrade antes de instalar cualquier cualquier paquete. <a href="sys-admin-apt-es.htm#du-st">dist-upgrade - Pasos a realizar</a></span> .</p>
+
+							<p>Presumiendo que la base de datos de Apt está actualizada y se conoce el nombre del paquete, entonces el siguiente comando instalará un paquete llamado "qemu" y todas sus dependencias: (más adelante se explica cómo buscar y encontrar paquetes.)</p>
+
+
+<pre># apt-get install qemu
+Leyendo listas de paquetes... Listo
+Construyendo el árbol de dependencias... Listo
+Los siguientes paquetes extras serán instalados:
+  bochsbios openhackware proll vgabios
+Paquetes recomendado:
+  debootstrap vde
+Los siguientes paquetes NUEVOS serán instalados:
+  bochsbios openhackware proll qemu vgabios
+0 actualizado, 5 nuevamente instalado, 0 para quitar y 20 no actualizado.
+Necesito bajar 4152kB de archivos.
+Después de desempacar 11.9MB de espacio adicional será usado.
+Desea continuar [S/n]?
+
+</pre>
+
+
+	<div class="divider" id="apt-delete">
+		<h2>Eliminar un paquete</h2>
+							<p>De forma similar, no sorprenderá que la siguiente orden desinstale un paquete (sin embargo, no quitará las dependencias): </p>
+
+<pre>
+apt-get remove gaim
+</pre>
+<pre>
+Leyendo listas de paquetes... Listo
+Construyendo el árbol de dependencias... Listo
+Los siguientes paquetes serán REMOVIDOS:
+  gaim gaim-irchelper
+0 actualizado, 0 nuevamente instalado, 2 para quitar y 310 no actualizado.
+Necesito bajar 0B de archivos.
+Después de desempacar 4743kB de espacio será liberado.
+Desea continuar [S/n]?
+(Leyendo base de datos ... 174409 archivos y directorios actualmente instalados.)
+Removiendo gaim-irchelper ...
+Removiendo gaim ...
+</pre>
+
+			<p>En este último caso los archivos del paquete 'gaim' (básicamente los que guardan la configuración) no fueron borrados del sistema. Serán utilizados si vuelve instalar el mismo paquete de nuevo y se utilizará la misma configuración.</p>
+			<p>Si también desea quitar los archivos de configuración, ejecute este comando:</p>
+
+<pre>
+apt-get --purge remove gaim
+
+Leyendo listas de paquetes... Listo
+Construyendo el árbol de dependencias... Listo
+Los siguientes paquetes serán REMOVIDOS:
+  gaim*
+0 actualizado, 0 nuevamente instalado, 1 para quitar y 309 no actualizado.
+Necesito bajar 0B de archivos.
+Después de desempacar 4678kB de espacio será liberado.
+Desea continuar [S/n]? S
+(Leyendo base de datos ... 174405 archivos y directorios actualmente instalados.)
+Removiendo gaim ...
+Purgando archivos de configuración de gaim ...
+#
+</pre>
+
+							<p>Note el simbolo <span class="highlight-3">*</span> después del nombre del paquete en la salida de apt. El asterisco indica que los archivos de configuración también serán eliminados.</p>
+
+		</div>
+	<div class="divider" id="apt-downgrade">
+						<h2>Revertir (downgrade) o conservar (hold) un paquete</h2>
+								<p>A veces es necesario revertir a una versión previa de un paquete o hacer que no se actualice, debido a un fallo mayor en la versión que acaba de instalar.</p>
+
+					<h3>Retener (Hold) un paquete</h3>
+<pre>
+echo package hold|dpkg --set-selections
+</pre>
+							<p>Para quitar un "Hold" de un paquete</p>
+<pre>
+echo package install|dpkg --set-selections
+</pre>
+							<p>Para listar paquetes en "Hold" (conservados):</p>
+
+<pre>
+dpkg --get-selections | grep hold
+</pre>
+
+					<h3>Revertiendo paquetes</h3>
+							<p> <span class="highlight-2">Debian no soporta la reversión de paquetes. Si bien puede funcionar en algunos casos simples, puede fallar de forma estrepitosa en otros paquetes. Vea, por favor </span><a href="http://www.debian.org/doc/manuals/reference/ch02.en.html#_emergency_downgrading"> Reversión de emergencia</a>.</p>
+
+							<p>A pesar del hecho de que no está soportada, se sabe que la reversión funciona para paquetes simples. Los pasos para revertir un solo paquete (usando <span class="highlight-3">kmahjongg</span> como ejemplo) son:</p>
+
+						<ol>
+							<li>comentar las fuentes inestables en <span class="highlight-3">/etc/apt/sources.list.d/debian.list </span> con un <span class="highlight-3">#</span></li>
+
+							<li>Añadir las fuentes "testing" en <span class="highlight-3">/etc/apt/sources.list.d/debian.list </span>, por ejemplo:<br />
+<pre>
+deb http://ftp.nl.debian.org/debian/ testing main contrib non-free
+</pre>
+							</li>
+
+							<li>
+<pre>
+apt-get update
+</pre>
+							</li>
+
+							<li>
+<pre>
+apt-get install kmahjongg/testing
+</pre>
+							</li>
+
+							<li>Poner el paquete recién instalado en hold con:<br />
+<pre>
+echo kmahjongg hold|dpkg --set-selections
+</pre>
+							</li>
+						
+							<li>comentar con # las fuentes de testing en /etc/apt/sources.list.d/debian.list y quitar el <span class="highlight-3">#</span> de las fuentes inestables, y así volverá a usarlas:</li>
+
+							<li>
+<pre>
+apt-get update
+</pre>
+							</li>
+						</ol>
+
+							<p>Cuando desee actualizar a la versión más reciente, haga esto:</p>
+<pre>
+echo kmahjongg install|dpkg --set-selections
+apt-get update
+apt-get install kmahjongg
+</pre>
+
+		</div>
+	<div class="divider" id="apt-mark">
+				<h2>apt-mark</h2>
+							<p>apt-mark es una útil herramienta que muestra qué paquetes están instalados automática o manualmente y que ofrece al administrador del sistema la oportunidad de marcar y retener los paquetes que no deban ser borrados automáticamente. Vea:</p>
+
+<pre>
+man apt-mark
+</pre>
+
+		</div>
+	<div class="divider" id="apt-upgrade">
+		<h2>Actualización de todo un sistema instalado - dist-upgrade - Vista general</h2>
+
+							<p>Actualizar todo el sistema completo se hace a través de <span class="highlight-3">dist-upgrade</span>. Siempre debe revisar los Current Warnings en la página web principal de <a href="http://aptosid.com">aptosid</a>, y allí revise las advertencias acerca de los paquetes que su sistema va a actualizar con dist-upgrade. Si necesita retener <span class="highlight-3">(hold)</span> un paquete, vea la referencia en <a href="sys-admin-apt-es.htm#apt-downgrade">Revertir y mantener un paquete</a></p>
+
+							<p>El uso de 'upgrade' solamente no está recomendado en 'debian sid'.</p>
+
+					<h5>Frecuencia de dist-upgrade</h5>
+
+							<p>Realizar el dist-upgrade tan rutinamente como pueda, idealmente una vez a la semana o cada dos semanas está bien, y como mínimo una vez al mes para estar seguro. Un dist-upgrade realizado cada 2 ó 3 meses es considerado como el limite de seguridad. Para paquetes no-estándar, o autocompilados, tiene que tener más cuidado con la actualización, porque pueden causar fallos en su sistema debido a incompatibilidades.</p>
+
+			<p>Después de actualizar la base de datos puede determinar qué paquetes tienen versiones más nuevas: (primero tiene que instalar: apt-show-versions)</p>
+
+<pre>
+apt-show-versions -u
+libpam-runtime/unstable upgradeable from 0.79-1 to 0.79-3
+passwd/unstable upgradeable from 1:4.0.12-5 to 1:4.0.12-6
+teclasat/unstable upgradeable from 0.7m02-1 to 0.7n01-1
+libpam-modules/unstable upgradeable from 0.79-1 to 0.79-3.........
+</pre>
+
+			<p>La actualización de un paquete en particular con todas sus dependencias, por ejemplo, "gcc-4.0", puede ser realizado con:</p>
+
+
+
+<pre># apt-get install gcc-4.0
+Leyendo listas de paquetes... Listo
+Construyendo el árbol de dependencias... Listo.
+gcc-4.0 ya es la versión más nueva.
+0 actualizado, 0 nuevamente instalado, 0 para quitar y 295 no actualizado.
+#
+</pre>
+
+					<h4>Solamente bajar sin instalar</h4>
+
+							<p class="highlight-3">Una opción poco conocida y muy util es la bandera "-d" para revisar qué paquetes están involucrados:</p>
+
+<pre>
+apt-get update &amp;&amp; apt-get dist-upgrade -d
+</pre>
+							<p>El -d permite bajar los paquetes sin instalarlos, mientras sigue en X desde una consola. Además le permite realizar el dist-upgrade en init 3 en el momento que más le convenga. También le permite revisar las advertencias en la lista, porque, sabiamente, le da la opción de proceder o abortar el proceso. </p>
+
+<pre>
+apt-get dist-upgrade -d
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+Calculating upgrade... Done
+The following NEW packages will be installed:
+  elinks-data
+The following packages have been kept back:
+  git-core git-gui git-svn gitk icedove libmpich1.0ldbl
+The following packages will be upgraded:
+  alsa-base bsdutils ceni configure-ndiswrapper debhelper
+  discover1-data elinks file fuse-utils gnucash.........
+35 upgraded, 1 newly installed, 0 to remove and 6 not upgraded.
+Need to get 23.4MB of archives.
+After this operation, 594kB of additional disk space will be used.
+Do you want to continue [Y/n]?<span class="highlight-3">Y </span>
+</pre>
+							<p>La respuesta <span class="highlight-3">Y </span> bajará los paquetes actualizados sin tocar el sistema instalado.</p>
+
+							<p>Después de que el 'dist-upgrade -d' haya bajado los paquetes y desee completar el dist-upgrade, ya sea inmediatemente o posteriormente, por favor, siga estas instrucciones:</p>
+
+	      </div>
+	      <div class="divider" id="du-st">
+				      <h3> dist-upgrade - Pasos a realizar</h3>
+
+							<p class="highlight-2"><b>ABSOLUTAMENTE NUNCA</b> debe realizar un "upgrade" ni un "dist-upgrade" mientras esté en el ambiente gráfico X. Siempre revise la sección "Current Warnings" en la página web principal de <a href="http://aptosid.com">aptosid</a>. Estos avisos están allí por razón de la naturaleza de "Debian sid/unstable" y porque se actualiza diariamente.</p>
+
+<pre>
+Salir de KDE.
+Entre el modo texto con Ctrl+Alt+F1;
+entonces haga login como "root" y después teclee "init 3";
+apt-get update &amp;&amp; apt-get dist-upgrade;
+apt-get clean
+init 5 &amp;&amp; exit
+</pre>
+
+							<p class="highlight-2"><b>NUNCA HAGA el DIST-UPGRADE (ni UPGRADE) con ADEPT o SYNAPTIC</b></p>
+
+							<p>Si no va a "init 3", bueno, lo sentimos, "usted ha sido advertido."</p>
+
+	</div>
+	<div class="divider" id="whyno">
+
+				<h4>¿Por qué recomendamos SOLAMENTE "apt-get" para "dist-upgrade"?</h4>
+
+							<p>Los gestores de paquetes "adept", "aptitude", "synaptic" y "kpackage" no son siempre capaces de acomodarse a los muchos cambios que suceden en Sid (cambios de dependencias, de nombres, en los scripts de los mantenedores, etcétera). </p>
+
+							<p>Esto no es un fallo de los desarrolladores ni de estas herramientas, que son excelentes para la rama estable de Debian. Simplemente, no son aptas para las necesidades especiales de Debian Sid.</p>
+
+							<p>Utilice lo que más le agrade para buscar paquetes, pero recomendamos utilizar el "apt-get" para "install", "remove", "purge" y "dist-upgrade".</p>
+
+							<p>Los gestores de paquetes "adept", "aptitude", "synaptic" y "kpackage" no son determinísticos para selecciones complejas de paquetes: cuando estas se mezclan con un conjunto de paquetes tan cambiantes como hay en Sid, y aún peor, un repositorio externo de calidad cuestionable (no lo recomendamos, pero ésta es una realidad en algunos sistemas de usuarios) se estará acercando al desastre.</p>
+
+							<p>Otra cosa a notar es que todos estos gestores de paquetes necesitan ejecutarse en X, y hacer un dist-upgrade (ni siquiera upgrade) en X está desaconsejado. Puede dañar el sistema hasta un punto irreparable, quizás no hoy ni mañana, pero dentro de algún tiempo sucederá.</p>
+
+							<p>Por otro lado "apt-get" hace exactamente lo que se espera de él. Si hay alguna rotura puede encontrar el lugar del error para depurar y arreglar la causa. Si acaso "apt-get" quiere borrar la mitad del sistema (debido a transiciones de librerias) es una decisión que el administrador (probablemente usted) tendrá que tomar después de leer todos los mensajes.</p>
+
+							<p>Esta es la razón porque el sistema "Debian builds" utiliza apt-get y ninguna otra de las demás herramientas de paquetes.</p>
+
+	</div>
+	<div class="divider" id="apt-cache">
+			<h2>Buscando un paquete con el apt-cache</h2>
+
+			<p>Otro comando muy útil en el Sistema-APT es el apt-cache; lo busca en la Base de Datos de APT y muestra la información sobre paquetes; por ejemplo, una lista de todos los paquetes que contienen o están dirigidos a "aptosid" y "manual" es retornado por la siguiente orden:</p>
+
+<pre>$ apt-cache search aptosid manual
+..........
+aptosid-manual-ro - manual oficial de aptosid en rumano
+aptosid-manual-hr - manual oficial de aptosid en croata
+aptosid-manual-common - manual oficial de aptosid - comunes
+aptosid-manual-en - manual oficial de aptosid en inglés
+aptosid-manual-ru - manual oficial de aptosid en ruso
+aptosid-manual - manual oficial de aptosid en  - todos
+aptosid-manual-nl - manual oficial de aptosid en holandés
+aptosid-manual-es - manual oficial de aptosid en español</pre>
+
+		<p>Si desea más información sobre un paquete en particular, puede usar lo siguiente: </p>
+
+<pre>$richard@aptosid:[~]# apt-cache show aptosid-manual-es
+Package: aptosid-manual-es
+Priority: optional
+Section: doc
+Installed-Size: 1644
+Maintainer: Kel Modderman &lt;kel@otaku42.de&gt;
+Architecture: all
+Source: aptosid-manual
+Version: 01.12.2007.06.03-1
+Depends: aptosid-manual-common
+Filename: pool/main/s/aptosid-manual/aptosid-manual-es_01.12.2007.06.03-1_all.deb
+Size: 904836
+MD5sum: 470715455445a711e69b60f92a6e241f
+SHA1: ae0a9d8f144641561d49fb28665ecf4a4b9d811c
+SHA256: 039f92e06844899b6f49d5af7203588db85677145ec067966a80b6a6cfc7ce5f
+Description: el manual official de aptosid en Español
+ Este manual es dividido en secciones comunues, por ejemplo: una topica acerca
+ de particiones se encuentra en la sección: Particionando el Disco Duro. Topicas
+ con respecto al conexión inalámbrica están en la sección Internet y Redes.
+ Hay tópicos que requieren estar por si sólos.
+ .
+ Como en cualquier documentación nuevo, pueden occurir errores/fallas de gramática
+ y tipeo. Aunque esperamos corregirlos todos, los errores de logica son los más
+ importante a nosotros. Los de tipografia los corregimos cuando encontramos o
+ cuando estamos avisados. Esperamos su ayuda y cooperación en la depuración.
+ .
+ Mientras que el proyecto sigue creciendo, más documentación será agregada.
+ La gente de aptosid esperamos que éste resulte un recurso valioso para ustedes.
+ Gracias por formar parte de la familia de aptosid.</pre>
+
+		<p>Todos las versiones instalables de los paquetes (dependiendo de la configuración del "sources.list") pueden ser listadas con este comando:</p>
+
+<pre>$apt-cache policy aptosid-manual-es
+aptosid-manual-es:
+  Instalados: 01.12.2007.06.03-1
+  Candidato: 01.12.2007.06.03-1
+  Tabla de versión:
+ *** 01.12.2007.06.03-1 0
+        500 http://aptosid.com sid/main Packages
+        100 /var/lib/dpkg/status</pre>
+
+			<p><a href= "http://www.debian.org/doc/user-manuals#apt-howto">Una descripción completa del Sistema-APT puede encontrarse en el APT-HOWTO</a> </p>
+
+	</div>
+	<!--<div class="divider" id="gui-pacsea">
+			<h2>Aplicación GUI de Debian para Buscar Paquetes</h2>
+
+<pre>
+apt-get update
+apt-get install packagesearch
+</pre>
+
+							<p>Al iniciar 'packagesearch' de Debian necesita ajustar Packagesearch > Preferences para utilizar <span class="highlight-3">apt-get</span>.</p>
+
+							<p><span class="highlight-2"><strong>No use</strong>, por favor, Packagesearch para instalar paquetes, úselo solamente como dispositivo gráfico para buscar paquetes. Instalar nuevos paquetes o actualizarlos sin detener X puede dar problemas. Vea <a href="sys-admin-apt-es.htm#apt-install">Instalar un paquete</a>.</span></p>
+
+							<p>En el uso inicial puede que salga un mensaje diciendo que debe instalar deborphan. Por favor, úselo con ciudado.</p>
+
+							<p>Las búsquedas pueden ser iniciadas por:</p>
+						<ul>
+
+  							<li>patrón</li>
+  							<li>etiquetas (basado en el sistema 'debtags', una nueva manera de categorizar paquetes Debian)</li>
+  							<li>archivos</li>
+  							<li>estado de instalación</li>
+  							<li>paquetes huérfanos</li>
+						</ul>
+
+ 							<p>Adicionalmente se muestra mucha información acerca de los paquetes, incluyendo los archivos a que pertenece. Por favor, lea Ayuda> Contenido para una explicación completa de cómo usar el GUI de la aplicación 'packagesearch' de Debian. De momento el GUI está solamente en Inglés.</p>
+
+
+	</div>--.
+			<p><a href="http://www.debian.org/doc/manuals/apt-howto/">Una descripción completa del APT-System puede encontrarse en el APT-HOWTO</a> </p>
+
+			<div id="rev">Última modificación 10/05/2012 1330 UTC</div>
+
+</div>
+</div>
+</body>
+</html>

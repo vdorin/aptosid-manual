@@ -1,0 +1,939 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+	<title>aptosid Manuals - APT-Guide</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision by muchan 16/Sep/2010 2348 UTC -->
+<!--htdig_noindex--><div id="menu"><!-- menu starts here ja lang maintained by muchan-->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="To aptosid.com, Forum and Wiki" alt="logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-ja.htm#search-on"><img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" /> サーチ Online Offline</a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Choose another language CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="lang-switch CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-ja.htm">aptosid OS マニュアル</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-ja.htm#welcome-gen">aptosid OS マニュアル &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-ja.htm#cred-team">貢献者</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-ja.htm#how-to">このマニュアルの使い方 &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-ja.htm#how-to">このマニュアルの使い方</a></li>
+					  <li><a href="welcome-ja.htm#table-contents">内容一覧</a></li>
+					</ul>
+					</li>
+		<li><a href="help-ja.htm#help-gen">困った時は... &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-ja.htm#help-gen">困った時は...</a></li>
+					  <li><a href="help-ja.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-ja.htm#welcome-quick">aptosid クイックスタートガイド</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-ja.htm">ISO の内容、リリース、ダウンロードミラーとCDの焼き付け</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-ja.htm#cd-content">ISO の内容と最小限必要な仕様 &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-ja.htm#rolling">リリースノート</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-ja.htm#download-aptosid">aptosidのミラー, ダウンロードとCD の作成 &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-ja.htm#md5">md5 Checksum</a></li>
+					  <li><a href="cd-dl-burning-ja.htm#burn-nero">WindowsでISOを焼くには</a></li>
+					  <li><a href="cd-dl-burning-ja.htm#burn-linux">LinuxでISOを焼くには</a></li>
+					  <li><a href="cd-no-gui-burn-ja.htm#burning-no-gui">burniso script</a></li>
+					  <li><a href="cd-no-gui-burn-ja.htm#burn-no-gui-gen">GUIなしでISOを焼くには</a></li>
+					  <li><a href="cd-dl-burning-ja.htm#download-aptosid">aptosid ダウンロードミラー</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-ja.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-ja.htm#rootpw">aptosid-LiveISOのRootパスワード</a></li>
+				<li><a href="live-mode-ja.htm#live-cd-installsoft">Live-ISO作動中にソフトをインストール</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-ja.htm">ターミナル/コンソール</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-ja.htm#term-kon"> ターミナル/コンソール&#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-ja.htm#term-kon"> ターミナル/コンソール</a></li>
+					  <li><a href="term-konsole-ja.htm#colours"> Coloured terminal prompts</a></li>
+					  <li><a href="term-konsole-ja.htm#cli-help">コマンドラインヘルプ</a></li>
+					  <li><a href="help-ja.htm#init3-tools">テキストモード(tty)で便利な道具 - init 3</a></li>
+					  <li><a href="term-konsole-ja.htm#term-cmds">Linuxターミナルのコマンド一覧</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-ja.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-ja.htm">起動コード</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-ja.htm#cheatcodes">aptosidだけのLive-ISO用起動コード</a></li>
+				<li><a href="cheatcodes-ja.htm#cheatcodes-linux">Linux一般の起動コード</a></li>
+				<li><a href="cheatcodes-vga-ja.htm#vga">VGA コード</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-ja.htm">Partitioning the Hard Drive - Traditional, GPT and LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-ja.htm#hd-ntfs3g">ntfs-3gを使ってNTFSパーティションへの書き込み</a></li>
+			<li><a href="part-lvm-ja.htm#part-lvm">LVM(Logical Volume Manager)を使うパーティション</a></li>
+			<li><a href="part-gparted-ja.htm#partition"> GUI でパーティショニング&#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-ja.htm#partition">GParted / KDE Partition Manager を使ってパーティショニング</a></li>
+					  <li><a href="part-gparted-ja.htm#ntfs"> GParted / KDE Partition Manager を使って NTFS のサイズ変更</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-ja.htm#partition">コマンドラインでパーティショニング</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-ja.htm#partition"> cfdisk を使ってパーティショニング</a></li>
+					    <li><a href="part-cfdisk-ja.htm#formating">cfdiskでパーティション後のフォーマッティング</a></li>
+					    <li><a href="part-gdisk-ja.htm#gdisk-6">Formatting after partitioning with gdisk</a></li>
+					    <li><a href="part-gdiskja.htm#gdisk-1">GPT Partitioning with gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-ja.htm#part-example">パーティショニングの基本 &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-ja.htm#part-example">パーティションサイズの例</a></li>
+					  <li><a href="part-uuid-ja.htm#uuid">UUID, Rebuilding fstab and creating new mount points</a></li>
+					  <li><a href="part-cfdisk-ja.htm#disknames">ディスクの名前について</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-ja.htm">インストール・オプション - HD, USB, VM, Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-ja.htm#Inst-prep">インストールの準備 &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-ja.htm#Inst-prep">インストールの準備</a></li>
+					  <li><a href="hd-install-ja.htm#Installation">ハードディスクへのインストール</a></li>
+					  <li><a href="hd-install-ja.htm#first-hd-boot">始めての起動</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-ja.htm#fromiso">fromisoで起動&#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-ja.htm#fromiso">fromisoで起動 - 概説</a></li>
+					  <li><a href="hd-install-opts-ja.htm#grub2-fromiso">GRUB2からfromisoで起動</a></li>
+					  <li><a href="hd-install-opts-ja.htm#fromiso-persist">fromisoと持続モード</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-ja.htm#usb-hd">USBドライブへのインストール &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-ja.htm#usb-hd">USB-HDへのインストール -aptosid 独自の- aptosid-on-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-ja.htm#raw-usb">USB/SSDドライブに他のLinuxや MS Windows、Mac OS X システムから aptosid を書き込む</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-ja.htm#install-crypt">暗号化パーティションへのインストール - cryptroot</a></li>
+		  <li><a href="nbdboot-ja.htm#nbd1">aptosidをネットワークから起動</a></li>
+		  <li><a href="hd-install-vmopts-ja.htm#vmopts">仮想マシンへのインストール</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-ja.htm">グラフィックカード、モニター、XOrgその他のドライバ</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-ja.htm#mon-res">解像度とモニター &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-ja.htm#mon-res">解像度とモニター</a></li>
+					  <li><a href="hw-dev-mon-ja.htm#xrandr">デュアルモニターとxrandr</a></li>
+					  <li><a href="hw-dev-mon-ja.htm#mon-binary">デュアルモニター（バイナリードライバ）</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-ja.htm#foss-xorg">GPU drivers &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-ja.htm#ati-3d">AMD/ATI 3D ドライバ</a></li>
+					  <li><a href="gpu-ja.htm#intel">Intel 2D/3D ドライバ</a></li>
+					  <li><a href="gpu-ja.htm#nvidia">Nvidia 3D ドライバ</a></li>
+					  <li><a href="gpu-ja.htm#foss-xorg">Xorg のオープンソースドライバ</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-ja.htm#fw-detect">Firmwareの探知 - non-free </a></li>
+			  <li><a href="nf-firm-ja.htm#non-free-firmware">non-free をソースリスとに加える</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-ja.htm">ウィンドウマネージャ</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-ja.htm">KDE and XFCE ウィンドウマネージャ &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-ja.htm#xfce-notes">Xfce ノート</a></li>
+					    <li><a href="wm-dm-ja.htm#install-add">便利な KDE 追加アプリ</a></li>
+					    <li><a href="wm-dm-ja.htm#desk-freeze">デスクトップが凍結したら</a></li>
+					    <li><a href="wm-dm-ja.htm#kde-login">KDEにログインできない時</a></li>
+					    <li><a href="wm-dm-ja.htm#ch-th">テーマの変更</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-ja.htm#dm">Installing additional Display Managers</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-ja.htm">インターネット,WiFi,LAN</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-ja.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-ja.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-ja.htm#serv-ftp">FTPクライアント</a></li>
+					    <li><a href="lamp-apache-ja.htm#serv-sec">Webサーバーのセキュリティ設定</a></li>
+					    <li><a href="lamp-apache-ja.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-ja.htm#serv-mysql">MySQL の設定</a></li>
+					    <li><a href="lamp-ppp-ja.htm#serv-php">Apache2のためのPHPサポート</a></li>
+					    <li><a href="ntp-server-ja.htm#ntp-server">タイムサーバーの設定</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-ja.htm#tor">ファイアーウォールとプライバシー &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-ja.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-ja.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-ja.htm#firewalls">ファイアーウォール</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-ja.htm#ssh-x">SSH と Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-ja.htm#setup">Samba サーバーの設定</a></li>
+						  <li><a href="samba-ja.htm#configure">SAMBA の設定(Windowsとの共有)</a></li>
+						  <li><a href="ssh-ja.htm#ssh-fs">SSH Remote Mounting</a></li>
+						  <li><a href="ssh-ja.htm#ssh-x">SSHのネットワークを通してXウィンドウズのアプリケーションを使う</a></li>
+						  <li><a href="ssh-ja.htm#ssh-f">KonquerorでGUIのSSH</a></li>
+						  <li><a href="ssh-ja.htm#ssh-w">Windows-PCからSSHでXフォワーディング</a></li>
+						  <li><a href="ssh-ja.htm#ssh">SSH とセキュリティ</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-ja.htm#netcardconfig">WIFI &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-ja.htm#netcardconfig">Ceni を使ってネットワークに接続</a></li>
+						    <li><a href="inet-wpagui-ja.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-ja.htm#net-set1">WiFi - WiFi ローミング設定</a></li>
+						    <li><a href="inet-wpa-ja.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-ja.htm#hotswitch">WiFi とケーブル接続のホットスイッチ</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-ja.htm#netcardconfig">ケーブル接続のインターネット設定&#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-ja.htm#dial-mod">56k モデム</a></li>
+						    <li><a href="inet-ceni-ja.htm#netcardconfig">Ceni を使ってネットワークに接続</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-ja.htm#fw-detect">Firmwareの探知 - non-free </a></li>
+		<li><a href="nf-firm-ja.htm#non-free-firmware">non-free をソースリスとに加える</a></li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-ja.htm">パッケージマネージャとdist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-ja.htm#apt-cook">APT クックブックとソースリスト &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-ja.htm#apt-cook">APTガイド - クックブックとソースリスト</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#apt-install">新しくパッケージをインストールする</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#apt-delete">パッケージの除去</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#apt-downgrade">ダウングレードまたはパッケージの保持</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#apt-cache">apt-cacheでパッケージ検索</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#gui-pacsea">GUI パッケージ検索</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-ja.htm#kern-upgrade">カーネルのアップグレード &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-ja.htm#kern-remove">使わないカーネルの除去</a></li>
+					    <li><a href="sys-admin-kern-upg-ja.htm#kern-upgrade"> カーネルのアップグレード</a></li>
+					    <li><a href="sys-admin-kern-upg-ja.htm#dmakms">カーネルモジュールをdmakmsでダイナミックにインストールする</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-ja.htm#apt-upgrade">インストールされたシステムのアップグレード -  dist-upgrade - 概説 &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-ja.htm#live-cd-upgrade">ライブISOアップデート</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-ja.htm#approx">同一LAN上の複数のPCをdist-upgradeする</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#apt-upgrade">インストールされたシステムのアップグレード - dist-upgrade - 概説</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#du-st">インストールされたシステムのアップグレード - dist-upgrade - ステップ</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-ja.htm">システム管理</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-ja.htm#bois-prep">FreeDOSを使ってBIOSをアップグレード</a></li>
+		<li><a href="vir-rkits-ja.htm#virus-rkits">ウイルスとRootkitスキャナー</a></li>
+		<li><a href="hd-install-ja.htm#adduser">新しいユーザーとパスワード &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-ja.htm#adduser">新しいユーザーを加える</a></li>
+					    <li><a href="sys-admin-gen-ja.htm#pw-lost">root パスワードを忘れたら, 新パスワードの設定</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-ja.htm#start-services">サービスとランレベル &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-ja.htm#start-services">サービスのスタート/ストップ</a></li>
+					    <li><a href="sys-admin-gen-ja.htm#pkill">Killing a service or process</a></li>
+					    <li><a href="sys-admin-gen-ja.htm#init">aptosid のランレベル - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-ja.htm#rsync">システムのバックアップ &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-ja.htm#rdiff">rdiffを使ってバックアップ</a></li>
+					    <li><a href="sys-admin-rsync-ja.htm#rsync">rsyncを使ってバックアップ</a></li>
+					    <li><a href="home-ja.htm#home-bu">/home を移動する</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-ja.htm#fonts">CUPS、フォントと音声 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-ja.htm#fonts">フォント</a></li>
+					     <li><a href="sys-admin-gen-ja.htm#cups">CUPS - 印刷システム</a></li>
+					     <li><a href="sys-admin-gen-ja.htm#sound">サウンドミキサー</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-ja.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-ja.htm#chroot">Grub2 - Grubをchrootでリカバーする</a></li>
+					    <li><a href="sys-admin-grub2-ja.htm#mbr-over-grub2">Grub2 - MBRが上書きされてしまったら</a></li>
+					    <li><a href="sys-admin-grub2-ja.htm#multi-os">Grub2 - デュアルまたはマルチブーティング</a></li>
+					    <li><a href="sys-admin-grub2-ja.htm#grub1-grub2">Grub2 - Grub1からアップデートするには</a></li>
+					    <li><a href="sys-admin-grub2-ja.htm#grub2">Grub2 - 概説</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Sponsored by webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid is proudly hosted by webtropia.com" alt="aptosid is proudly hosted by webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+	<div class="divider" id="apt-cook">
+		<!--- ####
+		<h2 id="top-header">A small APT-Guide Cookbook</h2>
+		#### -->
+		<h2 id="top-header">APT-の手引き</h2>
+
+		<!--- ####
+		<h3>What does APT mean?</h3>
+		#### -->
+		<h3>APTとは?</h3>
+								<!--- ####
+ 							<p>APT is short for Advanced Packaging Tool and is a collection of programs and scripts that help both the sysadmin (in your case root) with the installation and management of deb-files but equally the system itself to know what is installed.</p>
+								#### -->
+ 							<p>APTとはAdvanced Packaging Toolの略でシステム管理者（つまりあなた）がDebianのパッケージ(debファイル)をインストールしたり、どのパッケージがインストールされているかなどを管理するためのいくつかのプログラムとスクリプトの総称です。</p>
+	</div>
+	<div class="divider" id="sources-list">
+			<!--- ####
+			<h2>Sources List</h2>
+			#### -->
+			<h2>ソースリスト</h2>
+							<!--- ####
+							<p>The "APT" -system needs a config-file that contains information about the locations of the installable and upgradeable packages and is commonly referred to as a <span class="highlight-3">sources.list</span>.</p>
+							#### -->
+							<p>APTシステムにはインストールまたはアップグレードできるパッケージの場所についての情報を保持する<span class="highlight-3">sources.list</span>と呼ばれるファイルが必要です。</p>
+
+							<!--- ####
+							<p> Sources are contained in a directory or folder named: <br />
+							#### -->
+							<p> ソースは次の名前のディレクトリにあります: <br />
+							<span class="highlight-3">/etc/apt/sources.list.d/</span></p>
+
+								<!--- ####
+							 <p>Inside the folder are 2 files called:<br />
+								#### -->
+							 <p>このフォルダーには２つのファイルがあります:<br />
+							<span class="highlight-3">/etc/apt/sources.list.d/debian.list</span> と<br />
+							<span class="highlight-3">/etc/apt/sources.list.d/aptosid.list  </span></p>
+
+							<!--- ####
+							<p>This has the benefit of easier (automated) mirror switching, and makes it safer to replace lists.</p>
+							#### -->
+							<p>このやり方には簡単な(自動的な)ミラー切り替えができるという利点があり、リストの交換もより安全にできます。</p>
+ 						<!-- ####
+							<p>You can also add your own <span class="highlight-3">/etc/apt/sources.list.d/*.list </span>files</p>
+							#### -->
+							<p>ここに自分のソースリストファイル <span class="highlight-3">/etc/apt/sources.list.d/*.list </span>を加えることもできます。</p>
+
+								<!--- ####
+ 					<h3>All aptosid ISOs already use the following sources as default:</h3>
+								#### -->
+ 					<h3>aptosidのISOは次のようなsources をデフォルトとして使っています:</h3>
+
+<pre>
+#aptosid
+# Free University Berlin/ spline (Student Project LInux NEtwork), Germany
+deb ftp://ftp.spline.de/pub/aptosid/debian/ sid main fix.main
+#deb-src ftp://ftp.spline.de/pub/aptosid/debian/ sid main fix.main
+</pre>
+
+				<!--- ####
+				<p>Further entries for non-free needs can be found in our always updated <a href="http://aptosid.com/files/misc/sources.list">sources.list.</a>  As at 27/02/2007 0800 hrs UTC they are:</p>
+				#### -->
+				<p>non-freeが必要な場合のための<a href="http://aptosid.com/files/misc/sources.list">sources.list</a>and <a href="http://aptosid.com/files/misc/sources.list.d/debian.list">debian.list</a>::</p>
+<pre>
+#Debian
+# Unstable
+deb http://ftp.us.debian.org/debian/ unstable main contrib non-free
+#deb-src http://ftp.us.debian.org/debian/ unstable main contrib non-free
+
+# Testing
+#deb http://ftp.us.debian.org/debian/ testing main contrib non-free
+#deb-src http://ftp.us.debian.org/debian/ testing main contrib non-free
+
+# Experimental
+#deb http://ftp.us.debian.org/debian/ experimental main contrib non-free
+#deb-src http://ftp.us.debian.org/debian/ experimental main contrib non-free
+
+</pre>
+					  <!--- ####
+							<p>NOTE: In this example ftp.us indicates its using german repositories.You may edit this file, as root, to use the repositories closest to you, simply by changing the country,ie change ftp.us to ftp.jp, or ftp.uk. Most countries have local mirrors.Bandwidth is conserved; speeds improved.</p>
+						#### -->
+							<p>ノート: この例で使われているftp.usはドイツのレポジトリーを表します。 rootとして、このファイルを変更して、近くのレポジトリーを使うように設定できます。 たとえば ftp.us を ftp.jp または ftp.uk という具合に。 大抵の国にレポジトリーがあるのでバンドウィドスの節約になりスピードも改良されます。</p>
+
+							<!--- ####
+							<p><a href="http://www.debian.org/mirrors/">List of Debian Servers and mirrors current status</a>.</p>
+							#### -->
+							<p><a href="http://www.debian.org/mirrors/"> Debian のサーバーとミラーのホームページ</a></p>
+
+					    <!--- ####
+							<p>To be able to obtain updated information on the packages APT uses a database.  This database contains the packages but also which other packages are needed for that package to work (called dependencies). The program apt-get uses this database when installing your chosen packages to resolve all the dependencies and thereby to guarantee that the chosen packages will work. The updating of this database is done by the command apt-get update.</p>
+						#### -->
+							<p>パッケージについての最新の情報を得るためにAPTはデータベースを使っています。 このデータベースにはパッケージだけでなく、そのパッケージが動くために他のどのパッケージが必要であるかの情報(依存関係と呼ばれます)も含まれています。 apt-getというプログラムはこのデータベースを見て、インストールするパッケージの依存関係をすべて解決するパッケージを選びます。 このデータベースを更新するのために apt-get update のコマンドがあります。</p>
+
+<pre># apt-get update
+	(which returns)
+Get:1 http://aptosid.com sid Release.gpg [189B]
+Get:2 http://aptosid.com sid Release.gpg [189B]
+Get:3 http://aptosid.com sid Release.gpg [189B]
+Get:4 http://ftp.de.debian.org unstable Release.gpg [189B]
+Get:5 http://aptosid.com sid Release [34.1kB]
+Get:6 http://ftp.de.debian.org unstable Release [79.6kB]
+</pre>
+
+
+	</div>
+
+	<div class="divider" id="apt-install">
+			<!--- ####
+ 		<h2>Installing a new package</h2>
+			#### -->
+ 		<h2>新しいパッケージのインストール</h2>
+							<!--- ####
+							<p><span class="highlight-2">Upgrading packages and installing new packages without stopping X can cause problems. Any method of installing packages under X has this problem.</span></p>
+							#### -->
+							<p><span class="highlight-2">パッケージのアップグレードや新しいパッケージのインストールを Xウィンドウズをストップせずに行うと、問題がおきる可能性があります。Xウィンドウズ上でのパッケージのインストールはどのような方法をつかっても同じ問題点があります。</span></p>
+
+							<!--- ####
+							<p><span class="highlight-2">As long as any package you want to install will not upgrade additional packages then it is safe to install it without stopping X. However if installing the package will cause other packages to upgrade, extreme caution should be taken and unless you are certain the packages which will be upgraded are not currently in use, you should stop X before installing the package.</span></p>
+							#### -->
+							<p><span class="highlight-2">新しくインストールされるパッケージがそれ以外のパッケージのアップデートを伴わない場合は、Xウィンドウズをストップさせずにインストールしても問題は起こりません。他のパッケージのアップデートを伴う場合には、アップデートされるパッケージが現在使われているプログラムを上書きしないことが確かな場合を除いて、細心の注意を払ってインストール前に一度Xウィンドウズをストップするべきです。</span></p>
+
+							<!--- ####
+							<p><span class="highlight-2">If you are in any doubt ensure you leave X as per the dist-upgrade instructions before installing any packages. <a href="sys-admin-apt-ja.htm#du-st">Upgrade an Installed System -  dist-upgrade - The Steps</a></span> .</p>
+							#### -->
+							<p><span class="highlight-2">少しでも疑いがあるときはまずXウィンドウズを止め、最初に dist-upgrade を行い、その後にパッケージをインストールするほうが安全でしょう。<a href="sys-admin-apt-ja.htm#du-st">インストールされているシステムのアップグレード - dist-upgrade の手順</a></span> .</p>
+
+							<!--- ####
+			<p>Presuming the Apt-database is updated and the name of the package is known, then the following command will install a package called qemu, for example, and all its dependencies: (further on you will see how to search and find packages.)</p>
+			#### -->
+			<p>APTのデータベースが更新され、インストールしたいパッケージの名がわかっていたら、次のコマンドでそのパッケージをインストールできます。 例として qemu という名のパッケージと依存関係のあるパッケージすべてをインストールするには: (パッケージの探し方は後ほど)</p>
+
+
+<pre># apt-get install qemu
+Reading package lists... Done
+Building dependency tree... Done
+The following extra packages will be installed:
+  bochsbios openhackware proll vgabios
+Recommended packages:
+  debootstrap vde
+The following NEW packages will be installed:
+  bochsbios openhackware proll qemu vgabios
+0 upgraded, 5 newly installed, 0 to remove and 20 not upgraded.
+Need to get 4152kB of archives.
+After unpacking 11.9MB of additional disk space will be used.
+Do you want to continue [Y/n]? n
+
+</pre>
+
+
+	<div class="divider" id="apt-delete">
+		<!--- ####
+		<h2>Deleting a package</h2>
+		#### -->
+		<h2>パッケージの除去</h2>
+
+							<!--- ####
+							<p>Similarly it should come as no surprise that the following will deinstall a package, however it will not remove the dependencies: </p>
+							#### -->
+							<p>同様に次のように簡単にパーケージを取り除くことができます。このパッケージの依存関係によって自動的にインストールされたパッケージは自動的には除去されません:</p>
+
+<pre>
+apt-get remove gaim
+</pre>
+<pre>
+Reading package lists... Done
+Building dependency tree... Done
+The following packages will be REMOVED:
+  gaim gaim-irchelper
+0 upgraded, 0 newly installed, 2 to remove and 310 not upgraded.
+Need to get 0B of archives.
+After unpacking 4743kB disk space will be freed.
+Do you want to continue [Y/n]?
+(Reading database ... 174409 files and directories currently installed.)
+Removing gaim-irchelper ...
+Removing gaim ...
+</pre>
+
+			<!--- ####
+			<p>In this last case the configuration files of the package 'gaim' (basically how its setup) were not deleted from the system. You could use them when installing the same package again and it would work with these settings</p>
+			#### -->
+			<p>上記の最後のコマンドでは gaim というパッケージの設定ファイルは消去されていません。 そのため後でまた同じパッケージをインストールするとこの設定が使われることになります。</p>
+			<p>設定ファイルも一緒に消してしまいたい場合は次のコマンドを使います:</p>
+
+<pre>
+apt-get --purge remove gaim
+</pre>
+<pre>
+Reading package lists... Done
+Building dependency tree... Done
+The following packages will be REMOVED:
+  gaim*
+0 upgraded, 0 newly installed, 1 to remove and 309 not upgraded.
+Need to get 0B of archives.
+After unpacking 4678kB disk space will be freed.
+Do you want to continue [Y/n]? Y
+(Reading database ... 174405 files and directories currently installed.)
+Removing gaim ...
+Purging configuration files for gaim ...
+</pre>
+
+							<!--- ####
+							<p>Note the <span class="highlight-3">*</span> after the package name in the output of apt. The asterisk in the output of apt indicates that the configuration files will also be removed.</p>
+							#### -->
+							<p>パッケージ名の後ろについている <span class="highlight-3">*</span> に注目しましょう。これはパッケージの設定ファイルも同時に削除されることを表しています。</p>
+
+
+		</div>
+	<div class="divider" id="apt-downgrade">
+						<!--- ####
+						<h2>Downgrade and/or Hold a package</h2>
+						#### -->
+						<h2>ダウングレードまたはパッケージの保持</h2>
+								<!--- ####
+								<p>Sometimes it may be necessary to rollback to a previous version of a package or put it on hold, due to a major bug with the latest version you have just installed. </p>
+								#### -->
+								<p>時にはインストールしたばかりの最新パッケージに大きなバグがあるため前のバージョンに戻したり、インストールされている最新でないパッケージを維持する必要があるかもしれません。</p>
+
+					<!--- ####
+					<h3>Hold</h3>
+					#### -->
+					<h3>ホールド(保持)</h3>
+<pre>
+echo package hold|dpkg --set-selections
+</pre>
+							<p>ホールドの終了</p>
+<pre>
+echo package install|dpkg --set-selections
+</pre>
+							<!--- ####
+							<p>To list packages on hold:</p>
+							#### -->
+							<p>ホールドになっているパッケージの表示:</p>
+
+<pre>
+dpkg --get-selections | grep hold
+</pre>
+
+					<!--- ####
+					<h3>Downgrading</h3>
+					#### -->
+					<h3>ダウングレード</h3>
+							<p> <span class="highlight-2">Debian does not support downgrading packages. While it may work in simple cases, it could fail spectacularly for other packages. Please refer to </span><a href="http://www.debian.org/doc/manuals/reference/ch02.en.html#_emergency_downgrading"> Emergency downgrading</a>.</p>
+
+							<p>Despite the fact that it is not supportable, downgrading has been known to work for simple packages. The steps for downgrading a simple package using <span class="highlight-3">kmahjongg</span> as an example are:</p>
+
+						<ol>
+							<li>comment unstable sources in <span class="highlight-3">/etc/apt/sources.list.d/debian.list </span> with a <span class="highlight-3">#</span></li>
+
+							<li>Add testing sources in <span class="highlight-3">/etc/apt/sources.list.d/debian.list </span>, for example:<br />
+<pre>
+deb http://ftp.nl.debian.org/debian/ testing main contrib non-free
+</pre>
+							</li>
+
+							<li>
+<pre>
+apt-get update
+</pre>
+							</li>
+
+							<li>
+<pre>
+apt-get install kmahjongg/testing
+</pre>
+							</li>
+
+							<li>Put the newly installed package on hold with:<br />
+<pre>
+echo kmahjongg hold|dpkg --set-selections
+</pre>
+							</li>
+
+							<li>comment &lt;#&gt;the testing sources in /etc/apt/sources.list.d/debian.list with and uncomment the unstable sources so that you get back to using unstable sources, then:</li>
+
+							<li>
+<pre>
+apt-get update
+</pre>
+							</li>
+						</ol>
+
+							<!--- ####
+							<p>When you do want to get the latest version of the package just do this:</p>
+							#### -->
+							<p>このパッケージを最新のものにしたくなったら:</p>
+<pre>
+echo kmahjongg install|dpkg --set-selections
+apt-get update
+apt-get install kmahjongg
+</pre>
+
+		</div>
+	<div class="divider" id="apt-mark">
+				<h2>apt-mark</h2>
+							<p>apt-mark is a useful tool that shows you which packages are automatically or manually installed and offers the system administrator the opportunity to mark and hold packages that are not to be removed automatically. Read:</p>
+
+<pre>
+man apt-mark
+</pre>
+
+		</div>
+	<div class="divider" id="apt-upgrade">
+					<!--- ####
+					<h2>Upgrade of an Installed System - dist-upgrade - Overview</h2>
+					#### -->
+					<h2>インストールされたシステムのアップグレード - dist-upgrade - Overview</h2>
+
+							<!--- ####
+							<p>If the whole system is to be upgraded this is achieved through a <span class="highlight-3">dist-upgrade</span>. You should always check Current Warnings on the <a href="http://aptosid.com">aptosid</a> main web site, and check the warnings against the packages that your system wants to dist-upgrade. If you need to <span class="highlight-3">hold</span> a package refer to <a href="sys-admin-apt-ja.htm#apt-downgrade">Downgrade and Hold a package</a></p>
+							#### -->
+							<p>システム全体をアップグレードしたい場合は <span class="highlight-3">dist-upgrade</span> を行います。 まず必ず <a href="http://aptosid.com">aptosid</a> のウェッブサイトに警告がないかをチェックし、とくにシステムがアップデートしようとしているパッケージに問題がないかを確認してください。 必要があれば<a href="sys-admin-apt-ja.htm#apt-downgrade">パッケージのダウングレードとホールド</a>の項目にしたがってパッケージを<span class="highlight-3">hold</span>にします</p>
+
+							<!--- ####
+							<p>An 'upgrade' only of 'debian sid' is not recommended.</p>
+							#### -->
+							<p>Debian sid で upgrade のコマンドだけでアップグレードするのは推薦できません。</p>
+					<!--- ####
+					<h5>Frequency of a dist-upgrade</h5>
+					#### -->
+					<h5>dist-upgradeの頻度について</h5>
+
+							<!--- ####
+							<p>dist-upgrade as routinely as you can, ideally once every week or two, at least 1 time per month to be safe. A dist-upgrade initiated only every 2 to 3 months should be considered the safe outer limit. For non-standard packages, or self compiled packages, you need to be much more careful with upgrading, since those may break your system at any time due to incompatibilities.</p>
+							#### -->
+							<p>dist-upgrade はなるべく定期的に行います。 理想的には一週間か二週間に一度、少なくとも一ヶ月に一度ならば安心です。 二、三カ月に一度ならまだなんとかぎりぎり大丈夫といえるかもしれません。 標準でないパッケージや自分でコンパイルしたパッケージを使っている場合はいつ互換性の問題でシステムが滅茶苦茶になってもおかしくないのでさらに注意が必要です。</p>
+
+			<!--- ####
+			<p>After the database is updated, one can find out which packages have new/newer versions: (first install apt-show-versions)</p>
+			#### -->
+			<p>データベースがアップデートされた後、新しいバージョンのあるパッケージを表示することができます。 (初めての実行前に apt-show-versions をインストールしてください)</p>
+
+<pre>
+apt-show-versions -u
+libpam-runtime/unstable upgradeable from 0.79-1 to 0.79-3
+passwd/unstable upgradeable from 1:4.0.12-5 to 1:4.0.12-6
+teclasat/unstable upgradeable from 0.7m02-1 to 0.7n01-1
+libpam-modules/unstable upgradeable from 0.79-1 to 0.79-3.........
+</pre>
+
+			<!--- ####
+			<p>The update of a single package including its dependencies can for example (for gcc-4.0) be done with:</p>
+			#### -->
+			<p>一つのパッケージを依存パッケージを含めて新しいバージョンにアップデートするには次の(gcc-4.0をアップデートする)例のようにします:</p>
+
+<pre>
+apt-get install gcc-4.0
+Reading package lists... Done
+Building dependency tree... Done
+gcc-4.0 is already the newest version.
+0 upgraded, 0 newly installed, 0 to remove and xxx not upgraded
+</pre>
+
+					<!--- ####
+					<h4>Just downloading</h4>
+					#### -->
+					<h4>ダウンロードだけする方法</h4>
+
+							<!--- ####
+							<p class="highlight-3">A little known and great option to do a check for what  packages are in a dist-upgrade is the -d flag:</p>
+							#### -->
+							<p class="highlight-3">あまり知られていないけれど、どのパッケージがdist-upgradeによって更新されるかを調べるのに非常に便利なオプションとして -d フラッグがあります:</p>
+
+<pre>
+apt-get update &amp;&amp; apt-get dist-upgrade -d
+</pre>
+							<!--- ####
+							<p>The -d allows you to download the dist-upgrade without installing it whilst in X from the konsole and allows you to do the dist-upgrade in init 3 at a later time. This also gives you the chance to check warnings against the list as it wisely gives you the option to proceed or abort like this</p>
+							#### -->
+							<p>この -d オプションは dist-upgrade のパッケージをインストールなしにただダウンロードするコマンドで、Xの上でもコンソールから安全に実行でき、あとで仕事が終わってからinit 3 でdist-upgradeを行うことができます。 このコマンドを使えば列記されたパッケージをチェックしたり、または下のように、実行を中止することもできます。</p>
+
+<pre>
+apt-get dist-upgrade -d
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+Calculating upgrade... Done
+The following NEW packages will be installed:
+  elinks-data
+The following packages have been kept back:
+  git-core git-gui git-svn gitk icedove libmpich1.0ldbl
+The following packages will be upgraded:
+  alsa-base bsdutils ceni configure-ndiswrapper debhelper
+  discover1-data elinks file fuse-utils gnucash.........
+35 upgraded, 1 newly installed, 0 to remove and 6 not upgraded.
+Need to get 23.4MB of archives.
+After this operation, 594kB of additional disk space will be used.
+Do you want to continue [Y/n]?<span class="highlight-3">Y </span>
+</pre>
+							<p><span class="highlight-3">Y </span> を選べば現行のシステムを変更することなく新しいパッケージをダウンロードします</p>
+
+							<!--- ####
+							<p>After the 'dist-upgrade -d' has downloaded, and wish to complete the dist-upgrade,  immediately or at a later time,  please follow these instructions:</p>
+							#### -->
+							<p>'dist-upgrade -d' がパッケージをダウンロードしたあとすぐ、またはしばらくたってからdist-upgradeを完了したいと思ったら、次の指示に従ってください。</p>
+	      </div>
+	      <div class="divider" id="du-st">
+				      <h3> dist-upgrade - The Steps</h3>
+
+<div class="box block">
+			<!--- ####
+			<div class="highlight-2">NEVER EVER do a dist-upgrade nor upgrade whilst in X<div class="highlight-4"> Always check Current Warnings on the <a href="http://aptosid.com">aptosid</a> main web site. These warnings are there for a reason because of the nature of unstable  (Debian sid) and updated on a daily basis.</div>
+			#### -->
+			<div class="highlight-2">決して決して、絶対にdist-upgradeやupgradeをXの上から行わないこと。<div class="highlight-4"> まず<a href="http://aptosid.com">aptosid</a> のメイン・サイトで最新の警告を読みます。 unstableのレポジトリーの性質上、日々新しいパッケージがアップデートされるため、dist-updateに付きそう危険をあらかじめ知らせるための警告です。</div>
+
+<!--- ####
+<pre>
+Log out of KDE.
+Go to Textmode by doing Ctrl+Alt+F1
+logon as root, and then in type init 3
+apt-get update
+apt-get dist-upgrade
+
+init 5 &amp;&amp; exit
+</pre>
+#### -->
+<pre>
+KDEをログアウト。
+Ctrl+Alt+F1を押してテキストモードに
+rootとしてログイン, init 3とタイプ
+apt-get update
+apt-get dist-upgrade
+apt-get clean
+init 5 &amp;&amp; exit
+</pre>
+			<!--- ####
+			<div class="highlight-2">NEVER DIST-UPGRADE [or UPGRADE] with adept, synaptic or aptitude </div>
+			#### -->
+			<div class="highlight-2">決してadeptやsynaptic,aptitudeといったツールを使ってdist-updateまたはupdateを行わないこと!:</div>
+
+	</div>
+	</div>
+<div class="spacer02"></div>
+
+			<!--- ####
+			<p class="highlight-2">If you do not go to init 3, well tough for you ,, you have been warned!!!!!!!!!!!!!</p>
+			#### -->
+			<p class="highlight-2">init 3に行かずにアップデートする癖がつくと、今にきっとひどい目にあいますよ。 警告しましたよ!</p>
+
+	</div>
+	<div class="divider" id="whyno">
+
+				<!--- ####
+				<h4>The Reasons NOT to use anything else but apt-get for a dist-upgrade</h4>
+				#### -->
+				<h4>dist-upgradeにapt-get以外の方法を使ってはいけない理由</h4>
+
+							<!--- ####
+							<p>Package managers like adept, aptitude, synaptic and kpackage  are not always able to account for the huge amount of changes which happen in Sid (depedency changes, name changes, maintainer script changes, ...).</p>
+
+							<p>That's not the fault of the developers of those tools though, they write a excellent tools and fabulous for the debian stable branch, they are simply just not suitable for the very special needs of Debian Sid.</p>
+							#### -->
+							<p>adept, aptitude, synaptic, kpackageといったパッケージマネージャはSidに起こるような大きな変化 (依存関係の変更、パッケージ名の変更、メンテ用のスクリプトの変更など)に常にうまく対処できるようには作られていません。 これは別に上記のツールの開発者の過失というわけではなく、Debianのstableのために優れた道具を開発したことを讃えるべきですが、単にDebian Sidの特殊な要求に対処するのには向いていないというだけのことです。</p>
+
+							<!--- ####
+							<p>Use whatever you like to search for packages, but stick with apt-get for actually installing/removing/dist-upgrading</p>
+							#### -->
+							<p>パッケージを探すためにはどんなツールを使っても構いませんが、実際にパッケージのインストール/除去またはdist-upgradeをするときにはあくまでapt-getを使うようにしてください。</p>
+
+							<!--- ####
+							<p>Package managers like adept, aptitude, synaptic and kpackage are at the least, non-deterministic (for complex package selection),  mix that with a quickly moving target like sid and even worse an external  repository of questionable quality (we don't use or recommend those,  but they're a reality on your user systems) and you will be courting disaster. </p>
+
+							<p>The other item to note is that all of these types of GUI  package managers need to run in in X, and in doing a dist-upgrade in X , (or even an 'upgrade' which is not recommended), you will end up damaging up your system beyond repair, maybe not today or tomorrow, in time you will.</p>
+							#### -->
+							<p>複雑な依存関係の入り組んだパッケージ選択にあたって, 少なくともadept, aptitude, synaptic, kpackageといったパッケージマネージャは決定論的に作られてはいません。 めまぐるしく変化するSidや、品質管理に疑問の残る外部レポジトリーのことも考えると, わざわざ破局を招いているようなものです。 (外部レポジトリーはaptosidに含まれていませんし、特に使用を勧めるものではありませんが、あれこれ使われているのが実際でしょう)。 もう一つ注意してほしいことはこれらGUIのパッケージマネージャはinit 5またはXウィンドウ上で実行される必要があることで、dist-upgrade (またはaptosidから推奨されていない'update')をXの上で行うのは、たとえ今日,明日は無事にすんでも、いつかきっとシステムに回復不可能なダメージを与えることになるでしょう。</p>
+
+							<!--- ####
+							<p>apt-get on the other hand strictly does what it is asked to do,  if there is any breakage you can pinpoint and debug/ fix the cause,  if apt-get wants to remove half of the system (due to library transitions) it's the admin's call (that means you) to have at least a serious look.</p>
+							#### -->
+							<p>それに比べてapt-getはやるべきことだけを厳密に行うプログラムです。 依存関係に問題があったら正確に指摘するので原因をデバッグ/修正できますし、もしapt-getが(ライブラリの移行などのため)現行システムの半分を消去しようとしていたら、何か変だぞとちょっと調べてみるのはそれこそアドミンの（つまりあなたの）仕事です。</p>
+
+							<!--- ####
+							<p>This is the reason why debian builds use apt-get, not the other package manager tools.</p>
+							#### -->
+							<p>そのためDebian自体の配布でも他のパッケージマネージャではなく、apt-getが使われているわけです。</p>
+
+	</div>
+	<div class="divider" id="apt-cache">
+			<!--- ####
+			<h2>Searching for a package with apt-cache</h2>
+			#### -->
+			<h2>apt-cacheを使ってパッケージを探す</h2>
+
+			<!--- ####
+			<p>Another very useful command in the APT-system is apt-cache; it searches the APT-Database and shows information on packages; e.g. a list of all packages, that contain or address "aptosid" and "manual" is obtained by:</p>
+			#### -->
+			<p>APTシステムのもう一つとても便利なコマンドとして apt-cacheがあります。 APTのデータベースをサーチしてパッケージについての情報を表示します。 例: 名前または説明の中に"aptosid"と"manual"の両方が現れるパッケージを探すには:</p>
+
+<pre>$ apt-cache search aptosid manual
+.......
+aptosid-manual-common - the official aptosid manual - common files
+aptosid-manual-es - the official Spanish aptosid manual
+aptosid-manual-de - the official German aptosid manual
+aptosid-manual-el - the official Greek aptosid manual
+aptosid-manual - the official aptosid manual - all languages
+aptosid-manual-pt-br - the official Brazilian Portuguese aptosid manual
+aptosid-manual-en - the official English aptosid manual
+aptosid-manual-reader - aptosid manual reader
+</pre>
+
+		<!--- ####
+		<p>If you want more information on a particular package, you can use:</p>
+		#### -->
+		<p>特定のパッケージについてもっと知りたかったら:</p>
+
+<pre>$ apt-cache show aptosid-manual-en
+Package: aptosid-manual-en
+Priority: optional
+Section: doc
+Installed-Size: 1088
+Maintainer: Kel Modderman &lt;kel@otaku42.de&gt;
+Architecture: all
+Source: aptosid-manual
+Version: 01.12.2007.06.03-1
+Depends: aptosid-manual-common
+Filename: pool/main/s/aptosid-manual/aptosid-manual-en_01.12.2007.06.03-1_all.deb
+Size: 391222
+MD5sum: 60f2175c3c5709745a4b4256ccc3c49d
+SHA1: e275a0b27628b6aa210a4ced48d3646b438e78b8
+SHA256: 2792580c7a091521301064180a1d0d8901f0a4af407b90432b9f8d8b6b3603ca
+Description: the official en aptosid manual
+ This manual is divided into common sections, for example, .......
+</pre>
+
+		<!--- ####
+		<p>All installable versions of the package (they depend on your sources.list) can be listed by typing:</p>
+		#### -->
+		<p>そのパッケージのインストールできるバージョン(sources.listの内容によって違います)を表示するには:</p>
+
+<pre>
+$ apt-cache policy aptosid-manual-en
+aptosid-manual-en:
+  Installed: (none)
+  Candidate:01.12.2007.06.03-1
+  Version table:
+     01.12.2007.06.03-1 0
+        500 http://aptosid.com sid/main Packages
+</pre>
+			<!--- ####
+			<p><a href= "http://www.debian.org/doc/user-manuals#apt-howto">A complete description of the APT-System can be found at APT-HOWTO</a> </p>
+			#### -->
+			<p>APTシステムの詳細は<a href= "http://www.debian.org/doc/user-manuals.ja.html#apt-howto">APT-HOWTO(日本語版)をご覧ください</a> <a href= "http://www.debian.org/doc/user-manuals#apt-howto">(英語版はこちらへ)</a> </p>
+
+	</div>
+	<!--<div class="divider" id="gui-pacsea">
+			<!--- ####
+			<h2>Debian Package Search GUI application</h2>
+			#### -->
+			<h2>Debian のパッケージ検索アプリケーション</h2>
+
+<pre>
+apt-get update
+apt-get install packagesearch
+</pre>
+
+							<!--- ####
+							<p>When you first start Debian Package Search you need to adjust Packagesearch>Preferences to use <span class="highlight-3">apt-get</span>.</p>
+							#### -->
+							<p>Debian のパッケージサーチを初めて使うとき Packagesearch>Preferences で <span class="highlight-3">apt-get</span> を使う設定をします。.</p>
+
+							<!--- ####
+							<p><span class="highlight-2">Please do not use Packagesearch to install packages, use it only as a GUI search engine. Upgrading packages and installing new packages without stopping X can cause problems. Please read <a href="sys-admin-apt-ja.htm#apt-install">Installing a new package</a>.</span></p>
+							#### -->
+							<p><span class="highlight-2">Packagesearch をパッケージのインストールには使わないで、検索プログラムとしてのみ使用してください。Xウィンドウズをストップせずにパッケージのアップデートや新しいパッケージのインストールを行うと問題が起きる可能性があります。<a href="sys-admin-apt-ja.htm#apt-install">新しいパッケージのインストール</a>の項目を参照。</span></p>
+
+							<!--- ####
+							<p>On initial use you may be prompted to install deborphan. Please use with care.</p>
+							#### -->
+							<p>初めて使うとき、deborphan パッケージをインストールするか聞かれますが、このプログラムを使うときには注意が必要です。</p>
+
+							<!--- ####
+							<p>Search can be done by</p>
+							#### -->
+							<p>次の項目について検索ができます</p>
+						<ul>
+
+  							<li>パターン</li>
+  							<li>タグ (Debian パッケージの分類のための debtag システムに基づく検索)</li>
+  							<li>ファイル</li>
+  							<li>インストール状況</li>
+  							<li>孤児パッケージ(依存関係のない、誰にも使われなくなったパッケージ)</li>
+						</ul>
+
+								<!--- ####
+ 							<p>Additionally, information about the packages is displayed, including the files belonging to them. Please read the Help>Contents for a full explanation on how to use the Debian Package Search GUI application. At the moment the GUI is in English only.</p>
+								#### -->
+ 							<p>パッケージに含まれるファイルなど、パッケージについて多くの情報が表示されます。Debian パッケージサーチ GUI アプリケーションについての詳しい説明はプログラムの Help>Content を読んでください。</p>
+
+
+	</div>-->
+			<!--- ####
+			<p><a href="http://www.debian.org/doc/manuals/apt-howto/">A complete description of the APT-System can be found at APT-HOWTO</a> </p>
+			#### -->
+			<p>APTシステムの詳細は<a href= "http://www.debian.org/doc/user-manuals.ja.html#apt-howto">APT-HOWTO(日本語版)をご覧ください</a></p>
+
+			<p><a href="http://www.debian.org/doc/manuals/apt-howto/">(英語版はこちらへ)</a> </p>
+
+			<div id="rev">Page last revised 10/05/2012 1330 UTC/div>
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,616 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cs" lang="cs">
+<head>
+	<title>Manuály aptosidu - RSYNC</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body id="welcome">
+<!-- Poslední revizi překladu provedl pumrel 12.2.2011 2120 CET -->
+<!--htdig_noindex--><div id="menu"> <!-- menu starts here -cz lang maintainer pumrel-->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="Na stránky aptosid.com, forum a wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-cz.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="Prohledávat manuál" alt="Search" />Hledat online - offline</a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Vyberte jiný jazyk - Choose another language CS, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="lang-switch CS, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-cz.htm">Manuál operačního systému aptosid</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-cz.htm#welcome-gen">Manuál operačního systému aptosid &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-cz.htm#cred-team">Autoři</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-cz.htm#how-to">Jak používat tento manuál &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-cz.htm#how-to">Jak používat tento manuál</a></li>
+					  <li><a href="welcome-cz.htm#table-contents">Obsah</a></li>
+					</ul>
+					</li>
+		<li><a href="help-cz.htm#help-gen">Kde hledat pomoc &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-cz.htm#help-gen">Kde a jak hledat pomoc</a></li>
+					  <li><a href="help-cz.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-cz.htm#welcome-quick">První kroky se aptosidem</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-cz.htm">Obsah ISO, Vydání, Zrcadla pro stahování a Vypalování</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-cz.htm#cd-content">Obsah ISO a nároky na systém &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-cz.htm#rolling">Poznámky k vydání</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-cz.htm#download-aptosid">Zrcadla pro stahování a vypálení &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-cz.htm#md5">Kontrolní součet md5</a></li>
+					  <li><a href="cd-dl-burning-cz.htm#burn-nero">Vypálení ve Windows</a></li>
+					  <li><a href="cd-dl-burning-cz.htm#burn-linux">Vypálení v Linuxu</a></li>
+					  <li><a href="cd-no-gui-burn-cz.htm#burning-no-gui">Skript burniso</a></li>
+					  <li><a href="cd-no-gui-burn-cz.htm#burn-no-gui-gen">Vypálení z terminálu</a></li>
+					  <li><a href="cd-dl-burning-cz.htm#download-aptosid">Zrcadla pro stažení aptosidu</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-cz.htm">Live Mód</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-cz.htm#rootpw">Root-heslo v aptosid-Live</a></li>
+				<li><a href="live-mode-cz.htm#live-cd-installsoft">Instalace programů pod aptosid-Live</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-cz.htm">Terminál / Konsole</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-cz.htm#term-kon">Terminál / Konsole &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-cz.htm#term-kon">Terminál / Konsole</a></li>
+					  <li><a href="term-konsole-cz.htm#colours">Barevné řádky terminálu</a></li>
+					  <li><a href="term-konsole-cz.htm#cli-help">Nápověda terminálu</a></li>
+					  <li><a href="help-cz.htm#init3-tools">Užitečné nástroje v textovém módu(tty) - init 3</a></li>
+					  <li><a href="term-konsole-cz.htm#term-cmds">Seznam příkazů v terminálu Linuxu</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-cz.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-cz.htm">Spouštěcí příkazy</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-cz.htm#cheatcodes">Spouštěcí příkazy pod Live-ISO specifické pro aptosid</a></li>
+				<li><a href="cheatcodes-cz.htm#cheatcodes-linux">Spouštěcí příkazy pro Linux</a></li>
+				<li><a href="cheatcodes-vga-cz.htm#vga">VGA kódy</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-cz.htm">Vytváření diskových oddílů - tradičně, s GPT a s LVM</a>
+		<ul class="sub-menu" id="sm6">
+			  <li><a href="part-gparted-cz.htm#hd-ntfs3g">Zapisování na diskový oddíl NTFS pomocí ntfs-3g</a></li>
+			  <li><a href="part-lvm-cz.htm#part-lvm">Vytvoření disk. oddílů pro použití LVM - Logical Volume Manager</a></li>
+			  <li><a href="part-gparted-cz.htm#partition">Vytvoření diskových oddílů v grafickém rozhraní &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-cz.htm#partition">Vytvoření diskových oddílů pomocí GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-cz.htm#ntfs">Změna velikosti diskového oddílu NTFS pomocí GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-cz.htm#partition">Vytvoření diskových oddílů s CLI &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-cz.htm#partition">Vytváření diskových oddílů pomocí cfdisk</a></li>
+					    <li><a href="part-cfdisk-cz.htm#formating">Formátování po vytvoření diskových oddilů pomocí cfdisk</a></li>
+					    <li><a href="part-gdisk-cz.htm#gdisk-6">Formátování po vytvoření diskových oddílů s gdiskem</a></li>
+					    <li><a href="part-gdisk-cz.htm#gdisk-1">Diskové oddíly GPT s gdiskem</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-cz.htm#part-example">Základy vytváření diskových oddílů &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-cz.htm#part-example">Příklady velikostí diskových oddílů</a></li>
+					  <li><a href="part-uuid-cz.htm#uuid">UUID, přestavění fstab a vytváření přípojných bodů</a></li>
+					  <li><a href="part-cfdisk-cz.htm#disknames">Pojmenovávání diskových oddílů a ostatní</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-cz.htm">Možnosti instalace - HD, USB, VM and Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-cz.htm#Inst-prep">Příprava instalace &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-cz.htm#Inst-prep">Příprava instalace</a></li>
+					  <li><a href="hd-install-cz.htm#Installation">Instalace na pevný disk</a></li>
+					  <li><a href="hd-install-cz.htm#first-hd-boot">První spuštění</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-cz.htm#fromiso">Načtení pomocí fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-cz.htm#fromiso">Načtení pomocí fromiso - Přehled</a></li>
+					  <li><a href="hd-install-opts-cz.htm#grub2-fromiso">Načtení 'fromiso' s Grub2</a></li>
+					  <li><a href="hd-install-opts-cz.htm#fromiso-persist">fromiso a persist</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-cz.htm#usb-hd">Instalace na USB-disk &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-cz.htm#usb-hd">Instalace na USB-disk - specifické pro aptosid - aptosid-on-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-cz.htm#raw-usb">Zapsaní aptosidu na USB/SSD-disk s jakýmkoliv systémem Linux, MS Windows nebo Mac OS X</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-cz.htm#install-crypt">Instalace na šifrovené diskové oddíly - cryptroot</a></li>
+		  <li><a href="nbdboot-cz.htm#nbd1">Načtení aptosidu přes síť</a></li>
+		  <li><a href="hd-install-vmopts-cz.htm#vm">Možnosti instalace ve Virtuálním Stroji</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-cz.htm">Grafické karty, monitory, Xorg,  &amp; ovladače</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-cz.htm#mon-res">Rozlišení obrazovky a monitory &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-cz.htm#mon-res">Rozlišení obrazovky a monitory</a></li>
+					  <li><a href="hw-dev-mon-cz.htm#xrandr">Dva monitory a xrandr</a></li>
+					  <li><a href="hw-dev-mon-cz.htm#mon-binary">Dva monitory (za použití binárních ovladačů)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-cz.htm#foss-xorg">Ovladače GPU &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-cz.htm#ati-3d">3D ovladače pro AMD/ATI</a></li>
+					  <li><a href="gpu-cz.htm#intel">2D a 3D ovladače pro Intel</a></li>
+					  <li><a href="gpu-cz.htm#nvidia">3D ovladače pro Nvidia</a></li>
+					  <li><a href="gpu-cz.htm#foss-xorg">Svobodné ovladače Xorg</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-cz.htm#fw-detect">Rozpoznání firmwaru - non-free</a></li>
+			  <li><a href="nf-firm-cz.htm#non-free-firmware">Přidání non-free do seznamu zdrojů</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-cz.htm#install-add">Správci oken</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-cz.htm">KDE and XFCE Správci oken &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-cz.htm#xfce-notes">Užitečné dodatečné aplikace pro Xfce</a></li>
+					    <li><a href="wm-dm-cz.htm#install-add">Užitečné dodatečné aplikace pro KDE</a></li>
+					    <li><a href="wm-dm-cz.htm#desk-freeze">Zamrznutí plochy</a></li>
+					    <li><a href="wm-dm-cz.htm#kde-login">Nejde se přihlásit do KDE</a></li>
+					    <li><a href="wm-dm-cz.htm#ch-th">Změna témat</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-cz.htm#dm">Instalace dodatečných správců zobrazení</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-cz.htm">Připojení k internetu, WiFi, LAN a sítím</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-cz.htm">Sestava LAMP aptosidu &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-cz.htm#serv-apache">Sestava LAMP aptosidu</a></li>
+					    <li><a href="lamp-apache-cz.htm#serv-ftp">FTP klienty</a></li>
+					    <li><a href="lamp-apache-cz.htm#serv-sec">Bezpečnostní protokoly</a></li>
+					    <li><a href="lamp-apache-cz.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-cz.htm#serv-mysql">Nastavení MySQL</a></li>
+					    <li><a href="lamp-ppp-cz.htm#serv-php">PHP v Apache</a></li>
+					    <li><a href="ntp-server-cz.htm#ntp-server">Nastavení Timeserveru</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-cz.htm#tor">Firewally and Soukromí &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-cz.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-cz.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-cz.htm#firewalls">Firewally</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-cz.htm#ssh-x">SSH a Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-cz.htm#setup">Nastavení Samba-Serveru</a></li>
+						  <li><a href="samba-cz.htm#configure">Konfigurace SAMBY (Windows)</a></li>
+						  <li><a href="ssh-cz.htm#ssh-fs">Vzdálené připojení přes SSH</a></li>
+						  <li><a href="ssh-cz.htm#ssh-x">Aplikace X přes SSH</a></li>
+						  <li><a href="ssh-cz.htm#ssh-f">Grafické rozhraní přes SSH s Konquerorem</a></li>
+						  <li><a href="ssh-cz.htm#ssh-w">Přenos rozhraní X přes SSH z Windows-PC</a></li>
+						  <li><a href="ssh-cz.htm#ssh">SSH a soukromí</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-cz.htm#netcardconfig">WIFI připojení &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-cz.htm#netcardconfig">Připojení se online - Ceni</a></li>
+						    <li><a href="inet-wpagui-cz.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-cz.htm#net-set1">WiFi - nastavení pro WiFi roaming</a></li>
+						    <li><a href="inet-wpa-cz.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-cz.htm#hotswitch">Přepínání síťového připojení mezi WiFi a Kabelovým</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-cz.htm#netcardconfig">Kabelové připojení &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-cz.htm#dial-mod">56k Modemy</a></li>
+						    <li><a href="inet-ceni-cz.htm#netcardconfig">Připojení se online- Ceni</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-cz.htm#fw-detect">Rozpoznání firmwaru - non-free</a></li>
+		<li><a href="nf-firm-cz.htm#non-free-firmware">Přidání non-free do seznamu zdrojů</a></li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-cz.htm">Správa balíčků dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-cz.htm#apt-cook">APT návod a zdroje softwaru &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-cz.htm#apt-cook">APT-návod (CookBook) a zdroje software</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#apt-install">Instalace nového balíčku</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#apt-delete">Smazání balíčku</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#apt-downgrade">Podržení balíčku nebo instalace nižší verze</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#apt-cache">Vyhledávání balíčků pomocí apt-cache</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#gui-pacsea">Vyhledávání balíčků v graf. rozhraní</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-cz.htm#kern-upgrade">Povýšení verze jádra (kernel) &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-cz.htm#kern-remove">Odstranění jádra</a></li>
+					    <li><a href="sys-admin-kern-upg-cz.htm#kern-upgrade">Povýšení verze jádra</a></li>
+					    <li><a href="sys-admin-kern-upg-cz.htm#dmakms">Dynamická instalaca modulů jádra s dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-cz.htm#apt-upgrade">Aktualizace nainstalovaného systému - dist-upgrade - Přehled &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-cz.htm#live-cd-upgrade">Aktualizace pomocí Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-cz.htm#approx">dist-upgrade vícero počítačů přes LAN</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#apt-upgrade">Aktualizace nainstalovaného systému - dist-upgrade - Přehled</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#du-st">Aktualizace nainstalovaného systému - dist-upgrade - jednotlivé kroky</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-cz.htm">Administrace systému</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-cz.htm#bois-prep">Povýšení verze BIOSu pomocí FreeDOS</a></li>
+		<li><a href="vir-rkits-cz.htm#virus-rkits">Vyhledávače virů a rootkitů</a></li>
+		<li><a href="hd-install-cz.htm#adduser">Přidání uživatelů a hesel &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-cz.htm#adduser">Přidání nového uživatele</a></li>
+					    <li><a href="sys-admin-gen-cz.htm#pw-lost">Ztracené root heslo, nové heslo</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-cz.htm#start-services">Služby a úrovně spuštění init &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-cz.htm#start-services">Spouštění/zastavení služeb</a></li>
+					    <li><a href="sys-admin-gen-cz.htm#pkill">Zabití služby nebo procesu</a></li>
+					    <li><a href="sys-admin-gen-cz.htm#init">Úrovně spuštění aptosidu - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-cz.htm#rsync">Zálohování systému &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-cz.htm#rdiff">Zálohování pomocí rdiff</a></li>
+					    <li><a href="sys-admin-rsync-cz.htm#rsync">Zálohování pomocí rsync</a></li>
+					    <li><a href="home-cz.htm#home-bu">Přesunutí /home adresáře</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-cz.htm#fonts">CUPS, fonty a zvuk &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-cz.htm#fonts">Fonty</a></li>
+					     <li><a href="sys-admin-gen-cz.htm#cups">CUPS - tiskový systém</a></li>
+					     <li><a href="sys-admin-gen-cz.htm#sound">Zvukový mixér</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-cz.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-cz.htm#chroot">Grub2 - obnova Grubu s pomocí chroot</a></li>
+					    <li><a href="sys-admin-grub2-cz.htm#mbr-over-grub2">Grub2 - přepsání zaváděcího sektoru MBR</a></li>
+					    <li><a href="sys-admin-grub2-cz.htm#multi-os">Grub2 - zavádění  více systémů</a></li>
+					    <li><a href="sys-admin-grub2-cz.htm#grub1-grub2">Grub2 - povýšení z Grub1</a></li>
+					    <li><a href="sys-admin-grub2-cz.htm#grub2">Grub2 - přehled</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Sponsored by webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid is proudly hosted by webtropia.com" alt="aptosid is proudly hosted by webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+	<div class="divider" id="rsync">
+			<h2 id="top-header">Zálohování pomocí rsynce</h2>
+<!--							<p>rsync is a tool used to backup and synchronise your files. (It can be run on a variety of *nix ports).</p>-->
+							<p>rsync je nástroj používány pro zálohu a synchronizaci souborů. (můře být spouštěn na různých *.nix portech).</p>
+<!--							 <p class="highlight-2">One limitation of rsync is that it can NOT copy from a remote system to a remote system. If you want to do that, then you will need to copy one of the remote systems to a local system and then copy it from the local system to the other remote system. This is a limitation of rsync.</p>-->
+							<p class="highlight-2">Jedno omezení rsyncu je, že NEUMÍ kopírovat z jednoho odlehlého systému na jiný odlehlý systém. Pokud to chcete udělat, budete muset jeden odlehlý systém zkopírovat na lokální počítač a pak udělat kopii na další odlehlý systém. </p>
+<!--							 <p>With aptosid you have choices how to initiate the proccess, DIY or via a deb package in Debian sid:</p>-->
+							 <p>V aptosid máte možnosti, jak celý proces zahájit. DIY nebo přes deb balíček v Debian sid:</p>
+
+				<h5>Balíček deb:</h5>
+<pre>
+apt-get install luckybackup
+</pre>
+							<p><a href="http://luckybackup.sourceforge.net/">Domovská stránka pro luckybackup.</a></p>
+
+<!--				    <h6>What follows from here is the DIY version</h6>
+							<p>The following gives you a working knowledge of what rsync can do and some sample code to use for your own backup script.</p>-->
+				    <h6>Co následuje dál je DIY verze. </h6>
+							<p>Následující řádky vám dají pracovní znalosti o tom, co rsync umí a několi příkladů kódu k použití pro váš vlastní zálohovací skript.</p>
+
+<!--							<p>rsync is a very easy to use file backup program, it can also back up files and directories quickly. This is accomplished by using a very smart routine in checking when files have changed, so that only those files are selected for copying. rsync also uses a compression utility to speed up the copy process <span class=" highlight-3">(when explicitly set with-z option)</span>. This can be explained very simply:</p>-->
+							<p>rsync je velice jednoduchý zálohovací program. Velice jednodušše může zálohovat soubory a adresáře. Je toho docíleno pomocí důmyslné kontroly, kdy se jaké soubory změnily, tak aby jenom tyto soubory byly vybrány ke kopii. rsync také používá kompresní nástroj, aby celý kopírovací proces urychlil <span class=" highlight-3">(když je explicitně nastavena volba -z)</span>. To může být vysvětleno velice jednodušše:</p>
+
+<!--				<p>The rsync program detects files and folders that need to be copied because one or more of their attributes have changed (for example date/time of last modification, or the size of the file), in either case, something is not the same as what was backed up previously. This selection process is very quick.</p>-->
+				<p>Program rsync vybírá soubory a adresáře, které musí být zkopírovány, na základě změněných atributů (například datum/čas poslední úpravy nebo velikost souboru). V každém případě není něco stejné, jako když se to zálohovalo posledně. Tento proces výběry je velice rychlý.</p>
+
+<!--				<p>When rsync has finished building the list it will use, the copy of these changed files is done a lot faster because of a compression routine performed during the copy process.  rsync does the compression before sending, and  uncompresses at the other end, “on the fly”.</p>-->
+				<p>Jakmile rsync dokončil vytváření seznamu, který použije, je zkopírování těchto souborů o dost rychlejší díky kompresní metodě prováděné během samotného kopírování. rsync používá tudo kompresi před poslání a potom je vše na konci rozbaleno, "za chodu".</p>
+
+<!--				<p>rsync can copy files from:<br />
+				* local system to local system,<br />
+ 				* local system to remote system,<br />
+				* remote system to local system.</p>-->
+				<p>rsync může kopírovat souboru z:<br />
+				* lokálního systému na lokální systém<br />
+				* lokálního systému na odlehlý systém<br />
+				* z odlehlého systému na lokální systém</p>
+
+<!--				<p>It uses either the default <a href="ssh-cz.htm#ssh">ssh</a> client, or running a rsync daemon on both the source and target systems. The man pages for rsync states that, if you can ssh to the system, then rsync will be able to ssh to it as well.</p>-->
+				<p>Používá buď výchozí klient <a href="ssh-cz.htm#ssh">ssh</a>, nebo běží démon rsync na zdrojovém i cílovém systému. Man stránky pro rsync uvádí, že pokud se můžete spojit pomocí ssh se systémem, tak se přes ssh bude moci spojit i rsync.</p>
+
+<!--				<p class="highlight-3">One limitation of rsync is that it can NOT copy from a remote system to a remote system. If you want to do that, then you will need to copy one of the remote systems to a local system and then copy it from the local system to the other remote system. This is a limitation of rsync.</p>-->
+				<p class="highlight-3">Jedno omezení rsyncu je, že NEUMÍ kopírovat z jednoho odlehlého systému na jiný odlehlý systém. Pokud to chcete udělat, budete muset jeden odlehlý systém zkopírovat na lokální počítač a pak udělat kopii na další odlehlý systém.</p>
+
+<!--				<p>To give an example of this logic, lets say we have three systems;</p>-->
+				<p>Pro příklad této logiky uvažujme tři systémy:</p>
+<pre>
+neo – lokální systém
+morpheus – odlehlý systém
+trinity – odlehlý systém
+</pre>
+<!--				<p>You want to use rsync to copy, or sync, the /home/[user]/Data folders from all the systems with each other. Each system is “owned” by a specific user, in other words, a specific user uses that system specifically, and thus, that system should be used as the “source” for the other two systems. You are also going to be running the rsync command on the “local” system only, which is neo:</p>-->
+				<p>Chcete použít rsync ke kopii nebo k synchronizaci adresářů /home/[uživatel]/Data mezi všemi systémy navzájem. Každý systém je "vlastněn" specifickým uživatelem, jinými slovy, určitý uživatel používá daný systém určitým způsobu, a tudíž by takový systém měl být použit jako "zdroj" pro oba další systémy. Také bude spouštět příkaz rsync jen na jednom "lokální" počítači, a to je neo:</p>
+<pre>
+hlavní uživatel počítače neo je cuddles,
+hlavní uživatel počítače morpheus je tartie, a
+hlavní uživatel počítače trinity je taylar.
+</pre>
+<!--				<p>So, what you would want is, backing up, or syncing, of the following:</p>-->
+				<p>Takže to, co bude chtít dělat, je zálohování, nebo synchronizace, následujícího:</p>
+<pre>
+/home/cuddles/Data na neovi na morphea a trinity,
+/home/tartie/Data na morpheovi na nea a trinity,
+/home/taylar/Data na trinity na nea a morphea.
+</pre>
+
+<!--				<p>The problem of rsync and it not being able to copy from a remote system to a remote system, in the above example, will result when we come to backing up trinity to morpheus, or morpheus to trinity (both the source and target systems are remote) i.e.</p>-->
+				<p>Problém rsyncu a je neschopnost kopírovat z odlehlého systému na odlehlý, ve výše zmíněném příkladu, se projeví, když se bude pokoušet zálohovat trinity na morpheam, nebo morphea na trinity (jak zdrojový, tak cílový systém jsou odlehlé). Příklad:</p>
+
+
+<pre>
+neo --> morpheus – v pořádku, to je lokální na odlehlý
+neo --> trinity – v pořádku, to je lokální na odlehlý
+morpheus --> neo – v pořádku, odlehlý na lokální
+trinity --> neo – v pořádku, odlehlý na lokální
+morpheus --> trinity – odlehlý na odlehlý – nebude fungovat
+trinity --> morpheus – odlehlý na odlehlý – nebude fungovat
+</pre>
+<!--				<p>To resolve this limitation, you need to change your rsync scheme a little. The following would do this;</p>-->
+				<p>K vyřešení tohoto omezení musíte schéma rsyncu trochu upravit. Následující se o to postará:</p>
+<pre>
+morpheus --> trinity – se změní v: morpheus --> neo &amp; neo --> trinity
+trinity --> morpheus – se změní v: trinity --> neo &amp; neo --> morpheus
+</pre>
+<!--				<p>This is an extra step, versus the single step, but, considering that you want to get the files over to neo as well, it's just changing where the source comes from, not the final outcome. This assumes that our backups are good and nothing is missing.</p>-->
+				<p>Jedná se sice o krok návíc, namísto jednoho kroku, ale, jelikož chceme kopírovat soubory taky na nea, jedná se jen o změnu toho, odkud zdroj pochází, ne finálního výsledku. Předpokládá se, že jsou naše zálohy v pořádku a že nechybí.</p>
+<!--				<p class="highlight-3">This limitation of rsync needs to be considered when designing your backup process.</p>-->
+				<p class="highlight-3">Toto omezení rsyncu musí být bráno v potaz, když navrhujete váš zálohovací proces.</p>
+<!--				<h5>Using hostnames with hostnames with rsync.</h5>-->
+				<h5>Použvání jmen hostitele s jmény hostitele s pomocí rsync</h5>
+<!--				<p>As described above, using neo, morpheus, or trinity in a translation of a physical IP Address, it is a clean, and easy way of making things a lot more readable. To accomplish being able to use those hostnames, is really simple.</p>-->
+				<p>Jak popsáno výše, používání neo, morpheus a trinity namísto fyzické IP adresy, je snadné a rychlé a umožňuje učinit proces čitelnější. Dosáhnout používání hostitelských názvů je velmi jednoduché.</p>
+<!--				<p>You will want to edit your /etc/hosts file, and add the hostnames and what IP Addresses they relate, or translate to. Here is a small portion of the top lines of a /etc/hosts file, showing the translations:</p>-->
+				<p>Bude zapotřebí upravit váš soubor /etc/hosts a přířadit hostitelské názvy k IP adresám. Zde je malá část horních řádků ze souboru /etc/hosts, demonstrující toto přiřazení.</p>
+<pre>
+192.168.1.15	 neo
+192.168.1.16	 morpheus
+192.168.1.17	 trinity
+</pre>
+<!--				<p>The first line above translates IP Address 192.168.1.15 to the name “neo”, the second 192.168.1.16 to the name “morpheus”, and the last line, IP Address 192.168.1.17 to the name “trinity”. After adding the above and saving the /etc/hosts file, you can then use the “name” instead of the IP Address, or you can continue to use the IP Address. What makes this really shine, is when you change a systems IP Address. To give an example of this change, lets say neo changes its IP Address from 192.168.1.15 to 192.168.1.25</p>-->
+
+<!-- 				<p>If you have all of your scripts using the IP Address, you will need to locate them all, and change them to the new address. If, on the other hand, your scripts are using the “name”, all you need to do is change the /etc/hosts file to reflect the change, and all your scripts will work. This can be very handy when you have a lot of scripts that remote connect to other systems, or vice-versa. The “name” method also makes your scripts more easy to read, and follow, because you aren't using the IP Address, but rather, a recognizable name to associate with the IP.</p> -->
+
+<!-- 				<h4>rsync, and the two ways you can use it.</h4> -->
+				<p>rsync a dva způsoby, jak ho používat</p>
+<!-- 				<p>One way is to <b>“push”</b> files to a target, and the other way, is to <b>“pull”</b> them from the source. Each has its advantages, and some disadvantages. Let's look at each one (for this explanation, let's assume one of the systems is local, and the other is a remote system. That way, you should be able to see the terminology a lot better)</p> -->
+				<p>Jeden způsobe je <b>“natlačit (push)”</b> souboru do cíle a druhý je <b>“natahat (pull)”</b> soubory do zdroje. Každý má své výhody a některé nevýhody. Pojďjmě se na každé z nich podívat (pro následné vysvětlování předpokládejme, že jeden systém je lokální a ten druhý je odlehlý. Tak bude možné mnohem jasněji vidět použitou terminologii).</p>
+<!-- 				<p><b>“push”</b> - the local system has the source files and folders on it, and the target location is a remote system. The rsync command is run on the local system, and “pushes” its files to the target system.</p> -->
+				<p><b>“natlačení (push)”</b> - lokální systém má zdrojové soubory a adresáře a cílové místo je odlehlý systém. Příkaz rsync je spouštěn na lokálním systému a "natlačí" své soubory na cílový systém.</p>
+<!--				<p>Advantages:<br />
+				* You can have more than one system backing itself up to one target system.<br />
+				* The backup process is distributed over your complete computer systems and not just one system is being taxed.<br />
+				* If one system is faster than another, it can finish before the others do, and do other things.</p>-->
+				<p>Výhody:<br />
+				* Můžete mít více než jeden systém, zálohující se na cílový systém. <br />
+				* Zálohovací proces je rozložen na všechny vaše kompletní systémy a není to jen jeden, který je využíván. <br />
+				* Jestli je jeden systém rychlejší, tak může skončit dřív než ostatní.</p>
+<!--				<p>Disadvantages:<br />
+				* If you are using a script, and scheduling them with cron, this will require updating and changing multiple crontabs on every system, as well as updating multiple versions of your script.<br />
+				* Your backup can not check if the target system has its target partition mounted, and may be backing up to nothing on the target.</p>-->
+				<p>Nevýhody:<br />
+				* Pokud používáte skript a plánujete ho s cronem, tak bude nutné aktualizovat a měnit několik crontabů na každém systému, stejně jako verze vašeho skriptu.<br />
+				* Vaše záloha nemůže zkontrolovat, jestli má cílový systém svůj cílový diskový oddíl připojen, a může zálohovat do prázdna.</p>
+<!-- 				<p><b>“pull”</b> - the remote system has the source files and folders on it, and the target location is on the local system. The rsync command is run on the local system, and “pulls” the files from the source system.</p> -->
+				<p><b>“natahání (pull)”</b> - odlehlý systém má zdrojové soubory a adresáře a cílové místo je lokální systém. Příkaz rsync je spouštěn na lokálním systému a "natahá" soubory ze zdrojového systému.</p>
+<!--				<p>Advantages:<br />
+				* One system is made to be the server, controlling all the backups for all the other systems. Centralized backups.<br />
+				* if you are using a script, it is contained only on one system, and only one script, making updating and modifications easy. It also allows you to control only one crontab file for scheduling the script.<br />
+				* Your script can check, and mount, if necessary, the target partition.</p>-->
+				<p>Výhody:<br />
+				* Jeden systém je vytvořen jako server, dohlížející na všechyn zálohy všech ostatních systémů. Centralizované zálohy.<br />
+				* Pokud používáte skript, je uchováván jen na jednom systému, a máte pouze jeden skript, což činí aktualizace a modifikace jednoduchými. Také vám to umožňuje kontrolovat jen jeden soubor crontab pro plánování sktriptu.<br />
+				* Váš skript může kontrolovat, a připojovat, pokud je to nezbytné, cílové diskové oddíly.</p>
+<!-- 				<h6>Syntax of rsync, as found from the man pages:</h6> -->
+				<p>Syntaxe rsyncu, jak uvedena v manuálových stránkách:</p>
+<pre>
+       rsync [OPTION]... SRC [SRC]... DEST
+
+       rsync [OPTION]... SRC [SRC]... [USER@]HOST:DEST
+
+       rsync [OPTION]... SRC [SRC]... [USER@]HOST::DEST
+
+       rsync [OPTION]... SRC [SRC]... rsync://[USER@]HOST[:PORT]/DEST
+
+       rsync [OPTION]... SRC
+
+       rsync [OPTION]... [USER@]HOST:SRC [DEST]
+
+       rsync [OPTION]... [USER@]HOST::SRC [DEST]
+
+       rsync [OPTION]... rsync://[USER@]HOST[:PORT]/SRC [DEST]
+</pre>
+				<h5>Pracovní příklad příkazu rsyncu:</h5>
+<pre>
+rsync -agEvz --delete-after --exclude=”*~” morpheus:/home/tartie /media/sda7/SysBackups/morpheus/home
+</pre>
+<!--				<p>Let's take a look at some of the parts of that command:</p>-->
+				<p>Podívejme se na některé části tohoto příkazu:</p>
+<pre>
+zdrojová cesta/soubor je: morpheus:/home/tartie
+a cíl je: /media/sda7/SysBackups/morpheus/home
+</pre>
+<!-- 				<p>everything from /home/tartie... will be backed up under the /media/sda7/SysBackups/morpheus/home which will look like this:</p> -->
+				<p>vše z /home/tartie... bude zálohováno pod /media/sda7/SysBackups/morpheus/home, který bude vypadat takto:</p>
+<pre>
+/media/sda7/SysBackups/morpheus/home/tartie...
+</pre>
+<!-- 				<p>It should be noted, that the only reason /tartie is under /home is because of the TARGET designation, and NOT from the SOURCE. The “source” only selects where the files are coming from, not where they are going. The “target” is what is telling rsync where to put the files it gets from the “source”. Take the following example:</p> -->
+				<p>Mělo by být poznamenáno, že jediný důvod, proč je /tartie v /home, je kvůli CÍLOVÉ destinaci, a NE kvůli ZDROJI. "Zdroj" vybírá pouze, odkud soubory pochází, ne kam směřují. "Cíl" je to, co sděluji rsyncu, kam umístit soubory, které dostane od "zdroje". Uvažujte následující příklad:</p>
+<pre>
+rsync [...] /home/user/data/files /media/sda7/SysBackups/neo
+</pre>
+<!-- 				<p>In the above command, only the source folder /files, and whats below it, will be under the target folder /neo – and not this /media/sda7/SysBackups/neo/home/user/data/files</p> -->
+				<p>Ve výše uvedeném příkazu, pouze zdrojový adresáč /files, a to, co je pod ním, bude pod cílovým adresářem /neo - a ne tenhle /media/sda7/SysBackups/neo/home/user/data/files.</p>
+<!-- 				<p>Be sure to take this into consideration when you are creating your rsync backup commands.</p> -->
+				<p>Vemte toto v uváhu, když budete vytvářet vaše zálohovací příkazy rsyncu.</p>
+				<h5>Vysvětlení voleb:</h5>
+<pre>
+-a je používán pro archivovací mód. Z manuálových stránek je to vysvětleno jako "stručně se jedná
+o způsob rekursivní zálohy a zachovává 'téměř' vše. Zmiňují, že tento formát nezachovává tvrdé
+odkazy vzhledem ke složitosti procesu. Volba -a je označována jako ekvivalentní k: -rlptgoD,
+což znamená:
+  -r = rekurzivní - zpracovává podadresáře a souboru v naší "cílové" lokaci.
+  -l = odkazy (links) - když je naraženo na symbolický odkaz, znovu je vytvoři v cílovém místě
+  -p = práva - řekně rsyncu, aby byla oprávnění nastavena stejně jako na zdroji
+  -t = časy (times) - sdělí rsyncu, aby byly časy nastaveny stejně jako na zdroji
+  -q = tichý (quiet) - stělí rsyncu, aby byl jeho výstup minimální, ačkoliv nastavujeme úroveň
+upovídanosti s volbou -v hned po téhle. Aby byl proces úplně "tichý", odstraňte ve výše uvedeném
+příkazu volbu "v"
+  -o = vlastník (owner) - sdělí rsyncu, že pokud je spuštěn jako root, ať nastaví vlastníka souborů
+stejně jako na zdroji
+  -D = je ekvivalentem ke dvěma příkazům: --devices --specials
+ --devices = způsobí, že rsync přenese znakové a blokové soubory zařízení
+na odlehlý systém, aby tyto zařízení znovu vytvořil. Bohužel, pokude není
+použito s volbou --super v příkazu, tak to nemá žádný efekt
+ --specials = způsobí, že rsync přenese speciální soubory jako pojmenované
+zásuvky (sockets) nebo fifo
+-g je používán k uchování "skupiny" zdrojového souboru do cílového
+-E je používán k uchování "spustitelný" zdrojového souboru do cílového
+-v je používán k zvýšení upovídanosti, která je zobrazována. Potom, co jsme si jisti,
+co zálohujeme, můžeme "v" odebrat. Já jsem to tam nechal, neboť pouštím proces
+z cronu a upřednostňuji "vidět", co se dělo.
+Nechávám to na jednotlivci, aby to rozhodl.
+-z je používán ke kompresi dat, které je potřeba "přenést" nebo zkopírovat, což způsobí,
+že proces zabere méně času, neboť přenesená data mají menší než skutečnou veliksot
+--delete-after = cílové soubory/adresáře, které již nejsou na zdroji jsou smazány po přenosu,
+ne před. Toto "after" (potom) je použito v pířpadě problémů nebo pádů a "delete" (smazat)
+je použito k tomu, aby byl cíl udržen čistý a bez souborů, které již neexistují používány a aby se
+jen tak nepovalovaly kolem
+--exclude = vzorec použiváný k vyloučení souborů nebo adresářů. V příkladu, --exclude="*~" by
+vyloučil VŠECHNY a KAŽDÝ soubor nebo adresář končící znakem "~" ze zálohy. Pouze jeden vzorec může
+být přidělen spolu s --exclude, takže pokud je jich potřeba nastavit více, tak je nutné přidat více
+řádků s příkazem exclude.
+</pre>
+				<p>Dodatečně jsou zde některé další užitečné příkazy:</p>
+<pre>
+-c = který přidá další úroveň kontrol pro porovnání zdroje a cíle potom, co je provedeno kopírování, ale zároveň
+to celý proces prodlouží a rsync již porovnávání zdrojových a cílových soubroů dělá během zpracovávání, takže tato
+volba nebyla zahrnuta pro jednoduchý důvod, že to celý proces zpomaluje a jedná se jen o formu přebytečnosti, která
+není nutná
+--super = jak popisují manuálové stránky, způsobí, že se přijímatel, nebo cílový systém,
+pokusí o aktivity super-usera
+--dry-run = ukáže, co by bylo přeneseno. Je to něco jako použití volby -s s apt-get install,
+nebo apt-get dist-upgrade
+</pre>
+<!-- 				<p>The remainder of our command is the source file/folder, and then our target folder location.</p> -->
+				<p>Zbytek naše příkazu je zdrojový soubor/adresář a pak naše cílové umístění.</p>
+<!-- 				<h5>Example commands:</h5> -->
+				<h5>Příklady příkaů:</h5>
+<pre>
+rsync -agEvz --delete-after --exclude=”*~” morpheus:/home/tartie /media/sda7/SysBackups/morpheus/home
+</pre>
+<!-- 				<p>This command will back up all the files and any folders below /home/tartie on the system translated with a name “morpheus”, and place them into the /media/sda7/SysBackups/morpheus/home folder – keeping the tree structure from tartie folder, out.</p> -->
+				<p>Tento příkaz bude zálohovat všechny soubory a jakékoliv adresáře pod /home/tartie na systému označeném jako "morpheus" a umístí je do adresáře /media/sda7/SysBackups/morpheus/home - zachová stromovou strukuturu z adresáře tartie.</p>
+<pre>
+rsync -agEvz --delete-after --exclude=”*~” /home/tartie neo:/media/sda7/SysBackups/morpheus/home
+</pre>
+<!-- 				<p>This command is the reverse of the command above, it will “push” the /home/tartie folder, its contents, and sub-folders over to the system named neo into the same folder – take note that a system is considered remote when it has the “:” (colon) in front of the path.</p> -->
+				<p>Tento příkaz je obráceným předchozího, "natlačí" adresář /home/tartie, jeho obsah a podsložky, do systému nazvaného neo, do stejného adresáře - všimněte si, že systém je označován jako odlehlý, když obsahuje dvojtečky ":" před označením cesty.</p>
+<pre>
+rsync -agEvz --delete-after --exclude=”*~” /home/cuddles /media/sda7/SysBackups/neo/home
+</pre>
+<!-- 				<p>This command is performing a local to local backup, note that no colon exists in either the source or the target locations. This command will backup locally the /home/cuddles area to the same systems /media/sda7/SysBackups/neo/home location.</p> -->
+				<p>Tento příkaz provádí zálohu lokální na lokální. Všimněte si, že zde nejsou žádné dvojtečky, ani v cíli, ani ve zdroji. Tento příkaz lokálně zálohuje oblast /home/cuddles na stejný systém do umístění /media/sda7/SysBackups/neo/home location.</p>
+<!-- 				<p>Lets see what a multiple exclude rsync command will look like:</p> -->
+				<p>Podívejme se na to, co udělá rsync příkaz s více exclude volbami:</p>
+<pre>
+rsync -agEvz --delete-after --exclude=”*~” --exclude=”*.c” --exclude=”*.o” "/*" /media/sda7/SysBackups/neo
+</pre>
+<!-- 				<p>The above command will back up EVERYTHING from the root of the local system, and all its files/folders, placing in the target location /media/sda7/SysBackups/neo – only now, it will exclude all files, or folders, that end with a “~”, or a “.c”, or a “.o”</p> -->
+				<p>Výše uvedený příkaz bude zálohovat VŠE z kořene lokálního systému a všechny soubory/adresáře, a umístí je to cílového umístění /media/sda7/SysBackups/neo - pouze nyní vyloučí všechny soubory a adresáře, které končí na "~", nebo ".c", nebo ".o". </p>
+<!-- 				<p class="highlight-2">Below is a sample rsync command that either one, should error, or, should be avoided whenever possible. It is an example of a remote system to a remote system rsync command:</p> -->
+				<p class="highlight-2">Níže je uveden příkaz rsyncu, který by měl způsobit chybu a měli byste se ho vyvarovat. Je to příklad zálohy rsyncu z odlehlého na odlehlý počítač.</p>
+<pre>
+rsync -agEvz --delete-after --exclude=”*~” morpheus:/home/tartie trinity:/home
+</pre>
+<!-- 				<p class="highlight-2">As mentioned earlier in this document, this is a limitation of rsync.</p> -->
+				<p class="highlight-2">Jak zmíněno dříve v tomto dokumentu, jedná se o omezení rsyncu.</p>
+<!-- 				<p>One last sample command, let's see what a remote to local rsync would look like if we replace our “system names” with the IP Address, instead.</p> -->
+				<p>Jeden poslední příkaz. Pdívejme se na to, jak by vypadal rsync z odlehlého systému na lokální, když nahradím "názvy systémů" jejich IP adresami.</p>
+<!-- 				<p>This first command is the “name” method, and the second one, is the exact same command, using the IP Address</p> -->
+				<p>První příkaz, je metoda "názvu" a druhý je úplně ten samý, ale za použití IP adresy.</p>
+<pre>
+rsync -agEvz --delete-after --exclude=”*~” morpheus:/home/tartie /media/sda7/SysBackups/morpheus/home
+</pre>
+<pre>
+rsync -agEvz --delete-after --exclude=”*~” 192.168.1.16:/home/tartie /media/sda7/SysBackups/morpheus/home
+</pre>
+<!-- 				<p>As said earlier, you don't have to use the translated “names”, but, in the first example, you can read what it is doing a lot easier than in the second.</p> -->
+				<p>Jak zmíněno dříve, nemusíte používat přenesené "názvy", ale, v prvním příkladu, si můžete daleko jednodušeji přečíst, co se děje, než ve druhém.</p>
+<!-- 				<p>You should now be able to design a simple command, either from the examples given, or by missing and matching the commands shown to get what you are looking for.</p> -->
+				<p>Nyní byste měli být schopni si navrhnout jednoduchý příkaz, buď z příkladů prezentovaných, nebo vynecháním a přidáním příkazů, které byly zmíněny, abyste docílili toho, co potřebujete.</p>
+	</div>
+			<div id="rev">Obsah naposledy revidován 14/08/2010 0100 UTC</div>
+
+
+</div>
+</body>
+</html>

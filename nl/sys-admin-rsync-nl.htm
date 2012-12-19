@@ -1,0 +1,554 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl" lang="nl">
+<head>
+	<title>aptosid Manuals - RSYNC</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body id="welcome">
+<!--htdig_noindex--><div id="menu"> <!-- menu starts here nl lang maintained by btorrem, Bram0s,eislon -->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<!-- menu last translated by eislon 2012.09.30 0933 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="Naar aptosid.com forums and wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-nl.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" />Zoeken Online Offline</a> </li>
+		<!--<li><a href="http://manual.aptosid.com/meta-manual">Gemeenschap Software Selecties</a></li>-->
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Kies een andere taal - Choose another language CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="lang-switch CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-nl.htm">aptosid OS Handleiding</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-nl.htm#welcome-gen">aptosid OS Handleiding &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-nl.htm#cred-team">Medewerkers</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-nl.htm#how-to">Gebruik van deze handleiding &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-nl.htm#how-to">Hoe deze handleiding gebruiken</a></li>
+					  <li><a href="welcome-nl.htm#table-contents">Inhoudstafel</a></li>
+					</ul>
+					</li>
+		<li><a href="help-nl.htm#help-gen">Hulp nodig &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-nl.htm#help-gen">Waar kan ik hulp vinden</a></li>
+					  <li><a href="help-nl.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-nl.htm#welcome-quick">Aptosid Snelle-startgids</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-nl.htm">ISO Inhoud, Releases, Download Vensters en Branden</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-nl.htm#cd-content">ISO Inhoud en systeembenodigdheden &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-nl.htm#rolling">Release info</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-nl.htm#download-aptosid">Aptosid Vensters , Downloaden en Branden &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-nl.htm#md5">md5 Checksum</a></li>
+					  <li><a href="cd-dl-burning-nl.htm#burn-nero">Branden in Windows</a></li>
+					  <li><a href="cd-dl-burning-nl.htm#burn-linux">Branden in Linux</a></li>
+					  <li><a href="cd-no-gui-burn-nl.htm#burning-no-gui">burniso script</a></li>
+					  <li><a href="cd-no-gui-burn-nl.htm#burn-no-gui-gen">Branden zonder een GUI (niet-grafisch)</a></li><li><a href="cd-dl-burning-nl.htm#download-aptosid">aptosid Download Mirrors</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-nl.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-nl.htm#rootpw">Root-paswoord op aptosid-Livesessie ISO</a></li>
+				<li><a href="live-mode-nl.htm#live-cd-installsoft">Installeren van software in de Livesessie</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-nl.htm">The Terminal / Konsole</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-nl.htm#term-kon"> Terminal / Konsole &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-nl.htm#term-kon"> Terminal / Konsole</a></li>
+					  <li><a href="term-konsole-nl.htm#colours"> Gekleurde terminal prompts</a></li>
+					  <li><a href="term-konsole-nl.htm#cli-help">Commando's - Help</a></li>
+					  <li><a href="help-nl.htm#init3-tools">Interessante applicaties in de tekstmode (tty) - init 3</a></li>
+					  <li><a href="term-konsole-nl.htm#term-cmds">Linux Terminal Commando Lijst</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-nl.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-nl.htm">CheatCodes</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-nl.htm#cheatcodes">aptosid specifieke Live-ISO Cheatcodes</a></li>
+				<li><a href="cheatcodes-nl.htm#cheatcodes-linux">Linux generische Cheatcodes</a></li>
+				<li><a href="cheatcodes-vga-nl.htm#vga">VGA Codes</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-nl.htm">Partitioneren van de harde schijf - Traditioneel, GPT en LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-nl.htm#hd-ntfs3g">Schrijven op een NTFS partitie met ntfs-3g</a></li>
+			<li><a href="part-lvm-nl.htm#part-lvm">Partitioneren vanwege LVM - Logical Volume Manager</a></li>
+			<li><a href="part-gparted-nl.htm#partition">Partitioneren met een GUI (grafisch) &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-nl.htm#partition">Harde schijf partitioneren gebruikmakend van GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-nl.htm#ntfs">NTFS partitie van groote veranderen gebruikmakend van GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-nl.htm#partition">Partitioneren met CLI &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-nl.htm#partition">Harde schijf partitioneren met cfdisk</a></li>
+					    <li><a href="part-cfdisk-nl.htm#formating">Formatteren (schijf leegmaken) na het partitioneren met cfdisk</a></li>
+					    <li><a href="part-gdisk-nl.htm#gdisk-6">Formatteren na het partitioneren met gdisk</a></li>
+					    <li><a href="part-gdisk-nl.htm#gdisk-1">GPT Partitioneren met gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-nl.htm#part-example">Partitioneren Basis &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-nl.htm#part-example">Partitie Grootte Voorbeelden</a></li>
+					  <li><a href="part-uuid-nl.htm#uuid">UUID, heropbouwen van fstab en creëren van nieuwe mount punten</a></li>
+					  <li><a href="part-cfdisk-nl.htm#disknames">Schijf benoemen in brief</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-nl.htm">Installatie opties - HD, USB, VM en Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-nl.htm#Inst-prep">Installatievoorbereiding &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-nl.htm#Inst-prep">Installatievoorbereiding </a></li>
+					  <li><a href="hd-install-nl.htm#Installation">Installeren op uw harde schijf</a></li>
+					  <li><a href="hd-install-nl.htm#first-hd-boot">Eerste keer opstarten</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-nl.htm#fromiso">Booten van uw iso-cd &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-nl.htm#fromiso">Booten vanaf uw iso-cd - Overzicht</a></li>
+					  <li><a href="hd-install-opts-nl.htm#grub2-fromiso">Booten vanaf uw iso-cd met Grub 2</a></li>
+					  <li><a href="hd-install-opts-nl.htm#fromiso-persist">Booten vanaf uw iso-cd en vasthouden</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-nl.htm#usb-hd">Installeren op USB &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-nl.htm#usb-hd">Installeren op USB-HD - aptosid specifiek - aptosid-on-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-nl.htm#raw-usb">Aptosid schrijven naar een USB/SSD stick met Linux, MS Windows of Mac OS X systeem</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-nl.htm#install-crypt">Installeren op encrypte partities - cryptroot</a></li>
+		  <li><a href="nbdboot-nl.htm#nbd1">Aptosid booten op een netwerk</a></li>
+		  <li><a href="hd-install-vmopts-nl.htm#vmopts">Virtuele Machine installatie opties</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-nl.htm">Graphische kaarten, Schermen, Xorg,  &amp; drivers</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-nl.htm#mon-res">Schermresolutie en Schermen  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-nl.htm#mon-res">Schermresolutie en Schermen</a></li>
+					  <li><a href="hw-dev-mon-nl.htm#xrandr">Dual-scherm en xrandr</a></li>
+					  <li><a href="hw-dev-mon-nl.htm#mon-binary">Dual-schermen (gebruikmakend van binaries)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-nl.htm#foss-xorg">GPU drivers &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-nl.htm#ati-3d">AMD/ATI 3D drivers</a></li>
+					  <li><a href="gpu-nl.htm#intel">Intel 2D en 3D drivers</a></li>
+					  <li><a href="gpu-nl.htm#nvidia">Nvidia 3D drivers</a></li>
+					  <li><a href="gpu-nl.htm#foss-xorg">Open Source Xorg drivers</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-nl.htm#fw-detect">Firmware detectie - "non-free" </a></li>
+			  <li><a href="nf-firm-nl.htm#non-free-firmware">"non-free" toevoegen aan de Sources List</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-nl.htm">Window Managers</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm--nl.htm">KDE en XFCE Window Managers &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm--nl.htm#xfce-notes">Handige Xfce extras</a></li>
+					    <li><a href="wm-dm-nl.htm#install-add">Handige extra KDE Apps</a></li>
+					    <li><a href="wm-dm-nl.htm#desk-freeze">Desktop Freezes (beweegt niet meer)</a></li>
+					    <li><a href="wm-dm-nl.htm#kde-login">Kan niet inloggen (KDE)</a></li>
+					    <li><a href="wm-dm-nl.htm#ch-th">Thema's veranderen</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-nl.htm#dm">Installie van bijkomende Display Managers</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-nl.htm">Internet verbinding, WiFi, LAN en Netwerken</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-nl.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-nl.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-nl.htm#serv-ftp">FTP Clients</a></li>
+					    <li><a href="lamp-apache-nl.htm#serv-sec">Security Protocols (beveiliging)</a></li>
+					    <li><a href="lamp-apache-nl.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-nl.htm#serv-mysql">MySQL Setup</a></li>
+					    <li><a href="lamp-ppp-nl.htm#serv-php">PHP in Apache</a></li>
+					    <li><a href="ntp-server-nl.htm#ntp-server">Timeserver Setup</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-nl.htm#tor">Firewalls en Privacy &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-nl.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-nl.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-nl.htm#firewalls">Firewalls</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-nl.htm#ssh-x">SSH en Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-nl.htm#setup">Samba-Server Setup</a></li>
+						  <li><a href="samba-nl.htm#configure">SAMBA configureren (Windows)</a></li>
+						  <li><a href="ssh-nl.htm#ssh-fs">SSH Apart Mounten</a></li>
+						  <li><a href="ssh-nl.htm#ssh-x">X Window Apps via SSH</a></li>
+						  <li><a href="ssh-nl.htm#ssh-f">GUI SSH met Konqueror</a></li>
+						  <li><a href="ssh-nl.htm#ssh-w">SSH X-Forwarding vanaf een Windows-PC</a></li>
+						  <li><a href="ssh-nl.htm#ssh">SSH en Beveiliging</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-nl.htm#netcardconfig">WIFI connecties (draadloos) &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-nl.htm#netcardconfig">Online geraken - Ceni</a></li>
+						    <li><a href="inet-wpagui-nl.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-nl.htm#net-set1">WiFi - WiFi instellen</a></li>
+						    <li><a href="inet-wpa-nl.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-nl.htm#hotswitch">Switchen tussen WiFi en Kabel</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-nl.htm#netcardconfig">Bedrade verbindingen &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-nl.htm#dial-mod">56k Modems</a></li>
+						    <li><a href="inet-ceni-nl.htm#netcardconfig">Online geraken - Ceni</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-nl.htm#fw-detect">Firmware detectie - "non-free" </a></li>
+		<li><a href="nf-firm-nl.htm#non-free-firmware">"non-free" toevoegen aan de Sources List</a></li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-nl.htm">Pakketbeheer en dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-nl.htm#apt-cook">APT Werkwijze en Bronnenlijst &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-nl.htm#apt-cook">APT-Gids Werkwijze en Bronnenlijst</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#apt-install">Nieuw pakket installeren</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#apt-delete">Pakket verwijderen</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#apt-downgrade">Pakket vasthouden (niet updaten) en afwaarderen</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#apt-cache">Pakket zoeken met apt-cache</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#gui-pacsea">GUI Pakket zoeken (grafisch)</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-nl.htm#kern-upgrade">Kernel upgraden &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-nl.htm#kern-remove">Kernels verwijderen</a></li>
+					    <li><a href="sys-admin-kern-upg-nl.htm#kern-upgrade">Kernel upgraden</a></li>
+					    <li><a href="sys-admin-kern-upg-nl.htm#dmakms">Kernelmodules dynamisch installeren met dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-nl.htm#apt-upgrade">Geïnstalleerd systeem upgraden -  dist-upgrade - Overzicht &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-nl.htm#live-cd-upgrade">Upgraden met Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-nl.htm#approx">dist-upgrade van meerdere PCs op een LAN</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#apt-upgrade">Geïnstalleerd systeem upgraden -  dist-upgrade - Overzicht</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#du-st">Geïnstalleerd systeem upgraden -  dist-upgrade - De Stappen</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-nl.htm">Systeem Administratie</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-nl.htm#bois-prep">BIOS upgraden met FreeDOS</a></li>
+		<li><a href="vir-rkits-nl.htm#virus-rkits">Virus en Rootkit Scanners</a></li>
+		<li><a href="hd-install-nl.htm#adduser">Gebruikers en Paswoorden toevoegen &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-nl.htm#adduser">Nieuwe gebruiker toevoegen</a></li>
+					    <li><a href="sys-admin-gen-nl.htm#pw-lost">verloren root-paswoorden, nieuwe paswoorden</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-nl.htm#start-services">Services en init runlevels &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-nl.htm#start-services">Services inschakelen/uitschakelen</a></li>
+					    <li><a href="sys-admin-gen-nl.htm#pkill">Een service of een process stoppen</a></li>
+					    <li><a href="sys-admin-gen-nl.htm#init">aptosid runlevels - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-nl.htm#rsync">Een systeem back-up maken &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-nl.htm#rdiff">Doe een Back-Up met rdiff</a></li>
+					    <li><a href="sys-admin-rsync-nl.htm#rsync">Doe een Back-Up met rsync</a></li>
+					    <li><a href="home-nl.htm#home-bu">Verplaatsen van /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-nl.htm#fonts">CUPS, Opmaak en Geluid &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-nl.htm#fonts">Opmaak</a></li>
+					     <li><a href="sys-admin-gen-nl.htm#cups">CUPS - Printer Systeem</a></li>
+					     <li><a href="sys-admin-gen-nl.htm#sound">Geluid Mixers</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-nl.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-nl.htm#chroot">Grub2 - Grub herstellen met chroot</a></li>
+					    <li><a href="sys-admin-grub2-nl.htm#mbr-over-grub2">Grub2 - MBR Overschrijven</a></li>
+					    <li><a href="sys-admin-grub2-nl.htm#multi-os">Grub2 - Dual en Multibooting</a></li>
+					    <li><a href="sys-admin-grub2-nl.htm#grub1-grub2">Grub2 -Upgraden vanaf Grub1</a></li>
+					    <li><a href="sys-admin-grub2-nl.htm#grub2">Grub2 - Overzicht</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Gesponsored door webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid Gesponsored door webtropia.com" alt="aptosid Gesponsored door webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+	<div class="divider" id="rsync">
+			<h2 id="top-header">Backup maken met rsync</h2>
+							<p>rsync is een tool die gebruikt wordt voor backup en synchronisatie van je bestanden. (het kan op verschillende *nix versies lopen).</p>
+
+							 <p class="highlight-2">Een beperking aan rsync is dat je NIET kunt copieren van een remote systeem naar een andere remote systeem. Als je dit wel wilt, dan moet je een copy van een remote systeem maken naar het lokale systeem en deze copy weer door copieren naar het andere remote systeem. Dit is een beperking van rsync.</p>
+
+							 <p>In aptosid heb je keuzes hoe je het proces wilt initieren, DIY of via een deb pakket in Debian sid:</p>
+
+				<h5>Voor de deb pakket:</h5>
+<pre>
+apt-get install luckybackup
+</pre>
+							<p><a href="http://luckybackup.sourceforge.net/">Homepage of luckybackup.</a></p>
+
+				    <h6>Wat vanaf hier volgt is voor de DIY versies</h6>
+							<p>Dit document geeft je enige kennis van wat je met rsync kunt doen, en de voorbeelden kun je gebruiken voor je eigen backup script.</p>
+
+				<p>rsync is een makkelijk te gebruiken bestand backup programma, het kan bestanden en directory's snel backuppen. Dit wordt bewerkstelligd door een slimme routine welke controleerd of bestanden gewijzigd zijn, zodat alleen deze bestaden worden geselecteerd voor het copieren. rsync gebruikt ook een compressie utilitie om het copieer proces te versnellen. Dit kan heel eenvoudig worden uitgelegd:</p>
+
+				<p>Het rsync programma detecteerd bestanden en folders welke gecopieerd moten worden omdat een or meerdere attributen gewijzigd zijn (bijvoorbeeld datum/tijd van laatste modificatie, of de bestandsgrootte van het bestand), in beide gevallen, is iets niet gelijk aan de vorige backup. Deze selectie proces is erg snel.</p>
+
+				<p>Wanneer rsync klaar is met het bouwen van deze lijst die het gebruikt, de copie van deze veranderingen is dan veel sneller uitgevoerd omdat de compressie routine tijdens het copieren gebruikt wordt. rsync doet de compressie voor het verzenden, en decomprimeerd ze aan de andere kant “on the fly”.</p>
+
+				<p>rsync kan bestanden copieren vanaf:<br />
+				* lokale systeem naar lokale systeem,<br />
+ 				* lokale systeem naar remote systeem,<br />
+				* remote systeem naar lokale systeem.</p>
+				<p>Het gebruikt of de standaard <a href="ssh-nl.htm">ssh</a> client, of de lopende rsync daemon op beide kanten, bron en doel systemen. De "man pages van rsync zeggen dat, als je ssh kunt gebruiken naar het systeem, dan kan rsync ook gebruik maken van ssh.</p>
+
+				<p class="highlight-3">Een beperking aan rsync is dat je NIET kunt copieren van een remote systeem naar een andere remote systeem. Als je dit wel wilt, dan moet je een copy van een remote systeem maken naar het lokale systeem en deze copy weer door copieren naar het andere remote systeem. Dit is een beperking van rsync.</p>
+
+				<p>Om een voorbeeld hiervan te geven, laten we zeggen we hebben drie systemen;</p>
+<pre>
+neo – het lokale systeem
+morpheus – een remote systeem
+trinity – een remote systeem
+</pre>
+				<p>Je wilt rsync gebruiken om te copieren, of te synchroniseren van je /home/[gebruiker]/Data folders van alle systemen met elkaar. Elk systeem heeft een specifieke gebruiker als "eigenaar” , met andere woorden, een specifieke gebruiker gebruikt dat specifieke systeem , en daarom zal dat systeem gebruikt moeten worden als het “Bron” systeem voor de andere twee systemen. Je gaat rsync ook alleen maar  gebruiken op het lokale systeem, en dit is neo:</p>
+<pre>
+de gebruiker van neo is cuddles,
+de gebruiker van morpheus is tartie, en
+de gebruiker van trinity is taylar.
+</pre>
+				<p>Dus, wat we willen is, backuppen, of synchroniseren van het volgende:</p>
+
+<pre>
+neo's /home/cuddles/Data naar morpheus en trinity,
+morpheus's /home/tartie/Data naar neo en trinity,
+trinity's /home/taylar/Data naar neo en morpheus.
+</pre>
+
+				<p>Het probleem van rsync is het niet in staat zijn om te copieren van een remote systeem naar een andere remote systeem, zoals het voorbeeld hierboven, zal leiden to het backuppen van trinity naar morpheus, of morpheus naar trinity (beide zijn bron en doel en remote systemen) bijvoorbeeld:</p>
+
+
+<pre>
+neo --> morpheus – werkt, dit is lokaal naar remote
+neo --> trinity – werkt, dit is lokaal naar remote
+morpheus --> neo – werkt, dit is remote naar lokaal
+trinity --> neo – werkt, dit is remote naar lokaal
+morpheus --> trinity – remote naar remote – werkt NIET
+trinity --> morpheus – remote naar remote - werkt NIET
+</pre>
+				<p>Om deze limiet op te lossen, moet je rsync schema een beetje wijzigen. Het volgende zal gedaan moten worden;</p>
+<pre>
+morpheus --> trinity – wordt: morpheus --> neo &amp; neo --> trinity
+trinity --> morpheus – wordt: trinity --> neo &amp; neo --> morpheus
+</pre>
+				<p>Dit is een extra stap, vergeleken met de enkele stap, maar aangezien je de bestanden ook naar new wilt hebben is het alleen maar de sources veranderen waar de bestanden vandaan komen. Dit verzekerd dat onze backups goed is en dat we niets missen.</p>
+
+				<p class="highlight-3">Deze beperking van rsync moet je goed onthouden wanneer je via rsync een backup procedure gaat maken.</p>
+
+				<h5>Gebruik van hostnamen met hostnamen mbv rsync.</h5>
+
+				<p>Zoasl hierboven beschreven is, wordt neo, morpheus, of trinity gebruikt ipv een fysiek IP Adres, dit is een goede manier om dingen beter begrijpbaar te maken. Het is erg simpel om gebruik van hostnamen tot stand te brengen.</p>
+
+				<p>Dit doe je door het bestand /etc/hosts te wijzigen, voeg de hostnamen en hun IP Adressen in dit bestand in. Hier is een kleine weergave van de bovenste regels van de /etc/hosts bestand, waar je kunt zien hoe de vertaling van IP Adres naar hostnaam gaat:</p>
+<pre>
+192.168.1.15	 neo
+192.168.1.16	 morpheus
+192.168.1.17	 trinity
+</pre>
+				<p>De eerste regel vertaal het IP Adres 192.168.1.15 naar de naam “neo”, de tweede regel 192.168.1.16 vertaald naar de naam “morpheus”, en de laaste regel, IP Adres 192.168.1.17 wordt vertaald naar de naam “trinity”. Nadat je de regels hebt toegevoegd sla je het bestand /etc/hosts op, nu kun je de naam gebruiken ipv het IP Adres, of je blijft het IP Adres gebruiken. Waarvoor dit echt goed is, is wanneer je een systeem een andere IP Adres geeft. Om een voorbeeld te geven, veranderen we neo's IP Adres van 192.168.1.15 naar 192.168.1.25</p>
+
+				<p>Als je IP Adressen gebruikt in je scripts, dan moet je deze allemaal wijzigen naar het nieuwe IP Adres. Maar gebruik je in je scripts de hostnaam, dan is het enige wat je moet wijzigen het bestand /etc/hosts , hierin moet je het ip adres van neo wijzigen , en nu werken alle scripts weer. Dit is natuurlijk erg handig als je veel scripts hebt welke verbinding maken met andere systemen en visaversa. De hostnaam methode maakt je scripts ook beter leesbaarderm zijn makkelijker te volgen omdat je geen IP Adressen gebruikt, maar de hostnaam.</p>
+
+				<h4>rsync, en de twee manieren om het te gebruiken.</h4>
+
+				<p>De eerste manier is om bestanden te <b>“push”</b>en (duwen) naar het Doel (bestemming) , en de andere manier is om de bestanden te <b>“pull”</b>en (ophalen) van de Bron. Elk heeeft zijn eigen voordelen en enkele nadelen. Laten we beiden na elkaar bekijken (voor deze uitleg, nemen we aan dat een van de systemen lokaal is, en de andere een remote systeem. Op deze manier, zou je de terminologie stukken beter begrijpen)</p>
+
+				<p><b>“push”</b> - het lokale systeem bezit de bron bestanden en folders, en de doel locatie is het remote systeem. Het rsync commando wordt gestart op het lokale systeem, en "duwt"(pushes) zijn bestanden naar het doel(remote) systeem.</p>
+
+				<p>Voordelen:<br />
+				* Je kunt meer dan 1 systeem hebben die zichzelfs backupped naar een doel systeem.<br />
+				* Het backup proces wordt verspreid over je gehele computer systemen en niet dat alleen 1 systeem wordt  belast met deze taak.<br />
+				* Indien een systeem sneller is dan de andere, dan kan het klaar zijn voordat de andere systemen klaar zijn, en kan dus voor andere dingen ingezet worden.</p>
+
+				<p>Nadelen:<br />
+				* Als je gebruikt maakt van een script, en deze scheduled met cron dan, is het bij wijzigingen van het script nodig dat je alle crontabs op de systemen moet aanpassen, en ook de scripts op deze systemen moet updaten.<br />
+				* Je backup kan niet controleren of je doel paritie op het doelsysteem aangekoppeld is, en kan dus "niets" backuppen naar het doel.</p>
+
+				<p><b>“pull”</b> - het remote systeem bezit de bron bestanden en folders,  en de doellocatis is het lokale systeem. Het rsync commando wordt gestart op het lokale systeem, en "trekt" (pull) de bestanden van het bronsysteem.</p>
+
+				<p>Voordelen:<br />
+				* Een systeem wordt server gemaakt, waarvan alle backups gecontroleerd worden voor alle andere systemen. Dit zijn gecentraliseerde backups.<br />
+				* Indien je een script gebruikt, staat deze maar op 1 systeem en is er dus maar 1 script, wat het maken en updaten van wijzigenen makkelijk maakt. Nu hoef je ook maar 1 crontab bestand te beheren om het script te schedulen.<br />
+				* Je script kan controleren , en mounten van de doelpartitie indien dit nodig is.</p>
+
+				<h6>Syntax van rsync, zoals men deze in de man pagina's kan vinden:</h6>
+<pre>
+       rsync [OPTION]... SRC [SRC]... DEST
+
+       rsync [OPTION]... SRC [SRC]... [USER@]HOST:DEST
+
+       rsync [OPTION]... SRC [SRC]... [USER@]HOST::DEST
+
+       rsync [OPTION]... SRC [SRC]... rsync://[USER@]HOST[:PORT]/DEST
+
+       rsync [OPTION]... SRC
+
+       rsync [OPTION]... [USER@]HOST:SRC [DEST]
+
+       rsync [OPTION]... [USER@]HOST::SRC [DEST]
+
+       rsync [OPTION]... rsync://[USER@]HOST[:PORT]/SRC [DEST]
+</pre>
+				<h5>Werkende voorbeelden van rsync commando's:</h5>
+<pre>
+rsync -agEvz --delete-after --exclude=”*~” morpheus:/home/tartie /media/sda7/SysBackups/morpheus/home
+</pre>
+				<p>Laten we enkele delen van dit commando nader bekijken:</p>
+<pre>
+het bron pad/bestand is: morpheus:/home/tartie
+en her doel is: /media/sda7/SysBackups/morpheus/home
+</pre>
+				<p>alles van /home/tartie... zal gebackupped worden onder /media/sda7/SysBackups/morpheus/home dit zal eruit zien als:</p>
+<pre>
+/media/sda7/SysBackups/morpheus/home/tartie...
+</pre>
+				<p>Het moet opgemerkt worden dat de enige reden is dat /tartie onder /home komt is , omdat dit door de doelverwijzing komt, en NIET door de bronverwijzing. De “bron” selecteert alleen waar de bestanden vandaan komen, maar niet waar ze geplaatst worden. Het “doel” verteld aan rsync waar deze de bestanden , die van de bron komen, geplaatst moeten worden. Bekijk het volgende voorbeeld:</p>
+<pre>
+rsync [...] /home/user/data/files” “/media/sda7/SysBackups/neo
+</pre>
+				<p>In het bovenstaande commando. wordt alleen het bron folder /files, en wat er beneden ligt geplaatst onder de doel-folder /neo – en dit is niet /media/sda7/SysBackups/neo/home/user/data/files</p>
+
+				<p>Neem dit in je op bij het creeeren van je rsync backup commando's.</p>
+
+				<h5>Uitleg van de opties:</h5>
+<pre>
+-a wordt gebruikt voor archive mode. Van de "man" pagina, wordt deze optie "in eenvoudige termen" uitgelegd als een manier om recursive te backuppen en om "bijna alles" te behouden. Het vermeld ook dat hardlinks niet behouden worden, dit door de complexiteit van deze hardlinks. De -a optie is staat gelijk aan het volgende optie reeks: -rlptgoD wat het volgende betekend:
+  -r = recursive – proces sub-folders en bestanden gevonden in onze “bron” locatie.
+  -l = links – wanneer symlinks gevonden worden, creeer deze dan ook op de doel locatie.
+  -p = permissions – verteld rsync om de doelrechten precies zo als de bronrechten te zetten.
+  -t = times – verteld rsync om doel tijden precies zoals de bron tijden te zetten.
+  -q = quiet – verteld rsync om zijn minimale weergave te behouden, toch voegen we een weergave level toe met het commando -v. Om het proces volledig "onzichtbaar" temkaen verwijder je de “v”  optie in het bovenstaande commando.
+  -o = owner – verteld rsync dat wanneer het gestart wordt als root gebruiker, dat de doel bestanden eigenaar hetzelfde gezet worden als de bron eigenaar.
+-D = Dit is gelijk aan het gebruik van deze twee commando's: --devices --specials
+ --devices = zorgt ervoor dat rsync de "character en block device" bestanden transporteert naar het remote systeem om ze daar als devices te hercreeeren. Jammer genoeg heeft dit geen effect als je niet het --super optie samen gebruikt met dit commando.
+ --specials = zorgt ervoor dat rsync de "special" bestanden ,zoals "named sockets" en "fifos", worden getransporteerd.
+-g wordt gebruikt om de “group” van de bron bestand naar de doel te behouden.
+-E wordt gebruikt om de “executable” van de bron bestand naar de doel te behouden.
+-v wordt gebruikt om de weergave die getoond wordt uit te breiden. Nadat we zeker gesteld hebben dat we backuppen wat we willen, dan kunnen we de optie “v” uit het commando halen. Ik heb de optie in het commando gelaten, omdat ik het proces vanuit een cron job start en ik "zie" graag wat het gedaan heeft. Ik laat het aan jou over of je de optie behoud of niet.
+-z wordt gebruikt om de data , welke overgezet of gecopieerd wordt, te comprimeren, dit zorgt ervoor dat het copieer proces minder tijd in beslag neemt, omdat de te copieren data kleiner is dan de werkelijke grote.
+--delete-after = doel bestanden/folders welke niet meer op de bron zijn worden na het copieren verwijderd, niet ervoor. Het “ernaar (after)” wordt gebruikt ivm eventueel problemen of een crash van het systeem, en het “delete” wordt gebruikt om doelbestanden die niet meer bestaan op het bron systeem om rondhangen en niet opschonen op onze doel systeem te voorkomen.
+--exclude = een patroon gebruikt om bestanden of folders uit te sluiten. In het voorbeeld, --exclude=“*~” wordt ELKE en ALLE bestanden uitgesloten welke eindigen met het karakter “~” voor het backuppen. Er kan maar 1 patroon gebruikt worden met de --exclude optie, indien je meer dan 1 nodig hebt moet je dus meerdere exclude regels in het commando opnemen.
+</pre>
+				<p>Verder zijn er nog andere handige commando opties:</p>
+<pre>
+-c – Dit commando voegt een level van controles toe, voor het vergelijken van de bron en doel bestanden na het copieer proces, maar hiermee duurt het copieer proces ook langer, en rsync vergelijkt de bron- en doelbestanden al tijdens het gehele process, daarom is deze optie niet meegenomen, omdat het de complete uitvoering van het commando vertraagd. Het is alleen maar een extra controle om nog meer zekerheid te bieden.
+--super – zal proberen om gebruik te maken van super-gebruiker activiteiten.
+--dry-run – laat zien wat gecopieerd zou gaan worden. Dit is een soort -s optie met apt-get install, of apt-get dist-upgrade.
+</pre>
+				<p>De rest van onze commando is het bron bestand/folder, en dan onze doel folder locatie.</p>
+
+				<h5>Voorbeeld commando's:</h5>
+<pre>
+rsync -agEvz --delete-after --exclude=”*~” morpheus:/home/tartie /media/sda7/SysBackups/morpheus/home
+</pre>
+				<p>Dit commando zal alle bestanden en alle folders onder /home/tartie backuppen op het systeem met de naam “morpheus”, en plaatst deze in de /media/sda7/SysBackups/morpheus/home folder – de directory structuur blijft bewaard van de tartie folder.</p>
+<pre>
+rsync -agEvz --delete-after --exclude=”*~” /home/tartie neo:/media/sda7/SysBackups/morpheus/home
+</pre>
+				<p>Dit commando doet precies het omgekeerd als het commando die hierboven beschreven is, het zal de /home/tartie folder "duwen (push)" , zijn inhoud, en sub-folders naar het systeem met de naam  neo in dezelfde folder – bemerk dat een systeem gezien wordt als een remote systeem doormiddel van het “:” (colon) symbool welke vooraan in het pad staat.</p>
+<pre>
+rsync -agEvz --delete-after --exclude=”*~” /home/cuddles /media/sda7/SysBackups/neo/home
+</pre>
+				<p>Dit commando voert een lokale naar lokale backup uit, bemerk dat er geen "colon" aanwezig is in zowel de bron- als doel locaties. Dit commando zal lokaal de /home/cuddles omgeving backuppen naar hetzelfde systemen /media/sda7/SysBackups/neo/home locatie.</p>
+
+				<p>Laten we nu een meervoudige "exclude" rsync commando bekijken:</p>
+<pre>
+rsync -agEvz --delete-after --exclude=”*~” --exclude=”*.c” --exclude=”*.o” "/*" /media/sda7/SysBackups/neo
+</pre>
+				<p>Het bovenstaande commando zal ALLES backuppen vanaf de root van het lokale systeem en al zijn bestanden/folders, en worden dan geplaatst op de doellocatie /media/sda7/SysBackups/neo – maar nu zal het alle bestanden of folder overslaan welke eindigen op een  “~”, of een “.c”, of een “.o”</p>
+
+				<p class="highlight-2">Hieronder is een voorbeeld van een rsync commando welke of fout zou moten gaan, of gemijd moet worden wanneer het maar kan. Het is een voorbeeld van een remote systeem naar een remote systeem rsync commando:</p>
+<pre>
+rsync -agEvz --delete-after --exclude=”*~” morpheus:/home/tartie trinity:/home
+</pre>
+				<p class="highlight-2">Zoals eerder genoemd in dit document, is dit een beperking van het rsync commando.</p>
+
+				<p>Het laatste voorbeeld commando, laten we eens kijken hoe een rsync commando eruit ziet als we de namen van onze remote en lokale systemen vervangen door IP Adressen.</p>
+
+				<p>Het eerste commando is op de “naam” methode, en bij het tweede commando, precies gelijk, wordt gebruikt gemaakt van IP Adressen.</p>
+<pre>
+rsync -agEvz --delete-after --exclude=”*~” morpheus:/home/tartie /media/sda7/SysBackups/morpheus/home
+</pre>
+<pre>
+rsync -agEvz --delete-after --exclude=”*~” 192.168.1.16:/home/tartie /media/sda7/SysBackups/morpheus/home
+</pre>
+				<p>Zoals al eerder gezegd is, hoef je niet de vertaalde namen te gebruiken, zoals in voorbeeld 1, maar je kunt het wel beter begrijp wat er uitgevoerd gaat worden dan in het 2e voorbeeld.</p>
+
+				<p>Je moet nu in staat zijn om een simpel commando te ontwerpen, vanuit de voorbeelden of het mixen van de commando's die je gezien hebt.</p>
+	</div>
+
+		<div id="rev">Inhoud het laatst gewijzigd op 14/08/2010 0100 UTC</div>
+</div>
+</body>
+</html>

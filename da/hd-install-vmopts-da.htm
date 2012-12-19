@@ -1,0 +1,590 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="da" lang="da">
+<head>
+	<title>aptosid Manuals - VM Installation Options</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision by ragupo 17/02/2011 1656hrs UTC -->
+<!--htdig_noindex--><div id="menu"> <!-- menu starts here en lang maintained by ragupo-->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="Tilbage til aptosid.com forums og wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-da.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" />Søg online - offline</a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Vælg et andet sprog - Choose another language CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="lang-switch CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-da.htm">aptosid OS Manual</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-da.htm#welcome-gen">aptosid OS Manual &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-da.htm#cred-team">Tak til</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-da.htm#how-to">Hvordan du anvender denne manual &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-da.htm#how-to">Hvordan du anvender denne manual</a></li>
+					  <li><a href="welcome-da.htm#table-contents">Inholdsfortegnelse</a></li>
+					</ul>
+					</li>
+		<li><a href="help-da.htm#help-gen">Sådan får du hjælp &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-da.htm#help-gen">Hvor og hvordan får du hjælp</a></li>
+					  <li><a href="help-da.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-da.htm#welcome-quick">aptosid Hurtig Start Guide</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-da.htm">ISO indhold, udgivelser, filspejle og cd-brænding</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-da.htm#cd-content">ISO indhold og systemkrav &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-da.htm#rolling">Bemærkninger til udgivelsen</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-da.htm#download-aptosid">aptosid filspejle, download og cd-brænding &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-da.htm#md5">md5 Checksum</a></li>
+					  <li><a href="cd-dl-burning-da.htm#burn-nero">cd-brænding i Windows</a></li>
+					  <li><a href="cd-dl-burning-da.htm#burn-linux">cd-brænding i Linux</a></li>
+					  <li><a href="cd-no-gui-burn-da.htm#burning-no-gui">burniso skript</a></li>
+					  <li><a href="cd-no-gui-burn-da.htm#burn-no-gui-gen">cd-brænding uden grafisk brugerflade</a></li>
+					  <li><a href="cd-dl-burning-da.htm#download-aptosid">aptosid download filspejle</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-da.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-da.htm#rootpw">Root-kodeord på aptosid Live ISO</a></li>
+				<li><a href="live-mode-da.htm#live-cd-installsoft">Installering af programmer under Live-ISO</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-da.htm">Terminalen</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-da.htm#term-kon"> Terminal &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-da.htm#term-kon"> Terminalen</a></li>
+					  <li><a href="term-konsole-da.htm#colours"> Farver i terminal-prompten</a></li>
+					  <li><a href="term-konsole-da.htm#cli-help">Hjælp til kommandolinien</a></li>
+					  <li><a href="help-da.htm#init3-tools">Nyttige værktøjer til text mode (tty) - init 3</a></li>
+					  <li><a href="term-konsole-da.htm#term-cmds">Linux Terminal kommando liste</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-da.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-da.htm">CheatCodes</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-da.htm#cheatcodes">aptosid specifikke Live-ISO Cheatcodes</a></li>
+				<li><a href="cheatcodes-da.htm#cheatcodes-linux">Linux generiske Cheatcodes</a></li>
+				<li><a href="cheatcodes-vga-da.htm#vga">VGA Codes</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-da.htm">Partitioning the Hard Drive - Traditional, GPT and LVM</a>
+		    <ul class="sub-menu" id="sm6">
+			  <li><a href="part-gparted-da.htm#hd-ntfs3g">Skriv til NTFS partitioner med ntfs-3g</a></li>
+			<li><a href="part-lvm-da.htm#part-lvm">Partitionering med anvendelse af LVM - Logical Volume Manager</a></li>
+			<li><a href="part-gparted-da.htm#partition">Partitionering med grafisk brugerflade &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-da.htm#partition">Partitionering af din harddisk med GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-da.htm#ntfs">Ændre størrelsen på NTFS partitioner med GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-da.htm#partition">Partitionering fra kommandolinien &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-da.htm#partition">Partitionering af harddisken med cfdisk</a></li>
+					    <li><a href="part-cfdisk-da.htm#formating">Formattering efter partitionering med cfdisk</a></li>
+					    <li><a href="part-gdisk-ca.htm#gdisk-6">Formatting after partitioning with gdisk</a></li>
+					    <li><a href="part-gdisk-da.htm#gdisk-1">GPT Partitioning with gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-da.htm#part-example">Basal partitionering &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-da.htm#part-example">Eksempler på partitionsstørrelser</a></li>
+					  <li><a href="part-uuid-da.htm#uuid">UUID, Genopbygning af fstab og oprettelse af nye monteringspunkter</a></li>
+					  <li><a href="part-cfdisk-da.htm#disknames">Nomenklatur for diske og partitionsnavngivning</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-da.htm">Installations muligheder - HD, USB, VM og Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-da.htm#Inst-prep">Forberedelser til installationen &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-da.htm#Inst-prep">Installations forberedelser</a></li>
+					  <li><a href="hd-install-da.htm#Installation">Installering til harddisken</a></li>
+					  <li><a href="hd-install-da.htm#first-hd-boot">Første opstart</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-da.htm#fromiso">Opstart fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-da.htm#fromiso">Opstart fromiso - Overblik</a></li>
+					  <li><a href="hd-install-opts-da.htm#grub2-fromiso">Opstart 'fromiso' med Grub 2</a></li>
+					  <li><a href="hd-install-opts-da.htm#fromiso-persist">Fromiso og persist</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-da.htm#usb-hd">Installering til USB drev &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-da.htm#usb-hd">Installering til en USB-HD - aptosid specific - aptosid-on-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-da.htm#raw-usb">Installering af aptosid til USB/SSD nøgle fra Linux, MS Windows eller Mac OS X systemer</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-da.htm#install-crypt">Installering på krypterede partitioner - cryptroot</a></li>
+		  <li><a href="nbdboot-da.htm#nbd1">Boote aptosid over netværketk</a></li>
+		  <li><a href="hd-install-vmopts-da.htm#vmopts">Virtual Machine installations muligheder</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-da.htm">Grafikkort, Monitors, Xorg &amp; drivere</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-da.htm#mon-res">Skærmopløsning og monitors  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-da.htm#mon-res">Skærm opløsning og monitors</a></li>
+					  <li><a href="hw-dev-mon-da.htm#xrandr">Dual Monitors og xrandr</a></li>
+					  <li><a href="hw-dev-mon-da.htm#mon-binary">Dual Monitors (med binære drivere)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-da.htm#foss-xorg">GPU drivers &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-da.htm#ati-3d">AMD/ATI 3D drivere</a></li>
+					  <li><a href="gpu-da.htm#intel">Intel 2D and 3D drivere</a></li>
+					  <li><a href="gpu-da.htm#nvidia">Nvidia 3D drivere</a></li>
+					  <li><a href="gpu-da.htm#foss-xorg">Open Source Xorg drivere</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-da.htm#fw-detect">Firmware detection - non-free </a></li>
+			  <li><a href="nf-firm-da.htm#non-free-firmware">Tilføj non-free til kildelisten </a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-da.htm#install-add">Window Managers</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-da.htm">KDE and XFCE Window Managers &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-da.htm#xfce-notes">Nyttige Xfce ekstras</a></li>
+					    <li><a href="wm-dm-da.htm#install-add">Nyttige ekstra KDE Apps</a></li>
+					    <li><a href="wm-dm-da.htm#desk-freeze">Skrivebordet fyser</a></li>
+					    <li><a href="wm-dm-da.htm#kde-login">ingen login i KDE mulig</a></li>
+					    <li><a href="wm-dm-da.htm#ch-th">Ændre Themes</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-da.htm#dm">Installing additional Display Managers</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-da.htm">Internet forbindelse, WiFi, LAN og Netwærk</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-da.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-da.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-da.htm#serv-ftp">FTP klienter</a></li>
+					    <li><a href="lamp-apache-da.htm#serv-sec">Sikkerheds protocoller</a></li>
+					    <li><a href="lamp-apache-da.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-da.htm#serv-mysql">MySQL opsætning</a></li>
+					    <li><a href="lamp-ppp-da.htm#serv-php">PHP i Apache</a></li>
+					    <li><a href="ntp-server-da.htm#ntp-server">Opsætning af timeserver</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-da.htm#privoxy">Firewalls og Privatliv &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-da.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-da.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-da.htm#firewalls">Firewalls</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-da.htm#ssh-x">SSH og Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-da.htm#setup">Samba-Server opsætning</a></li>
+						  <li><a href="samba-da.htm#configure">Konfiguration af SAMBA (Windows)</a></li>
+						  <li><a href="ssh-da.htm#ssh-fs">SSH Remote Mounting</a></li>
+						  <li><a href="ssh-da.htm#ssh-x">X Window Apps via SSH</a></li>
+						  <li><a href="ssh-da.htm#ssh-f">GUI SSH med Konqueror</a></li>
+						  <li><a href="ssh-da.htm#ssh-w">SSH X-Forwarding fra en Windows-PC</a></li>
+						  <li><a href="ssh-da.htm#ssh">SSH og sikkerhed</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-da.htm#netcardconfig">WIFI forbindelser &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-da.htm#netcardconfig">Kom online - Ceni</a></li>
+						    <li><a href="inet-wpagui-da.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-da.htm#net-set1">WiFi - opsætning af WiFi Roaming</a></li>
+						    <li><a href="inet-wpa-da.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-da.htm#hotswitch">Skift imellem kablet og trådløs forbindelse</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-da.htm#netcardconfig">Kablede forbindelser &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-da.htm#dial-mod">56k Modems</a></li>
+						    <li><a href="inet-ceni-da.htm#netcardconfig">kom online - Ceni</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-da.htm#fw-detect">Firmware detection - non-free </a></li>
+		<li><a href="nf-firm-da.htm#non-free-firmware">Tilføj non-free til kildelisten </a></li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-da.htm">Pkke administration og dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-da.htm#apt-cook">APT Cookbook og Sources list &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-da.htm#apt-cook">APT-Guide Cookbook og Sources list</a></li>
+					    <li><a href="sys-admin-apt-da.htm#apt-install">Installation af nye pakker</a></li>
+					    <li><a href="sys-admin-apt-da.htm#apt-delete">Afinstaller pakker</a></li>
+					    <li><a href="sys-admin-apt-da.htm#apt-downgrade">Pakke på Hold og nedgradering</a></li>
+					    <li><a href="sys-admin-apt-da.htm#apt-cache">Søgning efter pakker med apt-cache</a></li>
+					    <li><a href="sys-admin-apt-da.htm#gui-pacsea">Søgning after pakker i GUI</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-da.htm#kern-upgrade">Opdatering af kernel &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-da.htm#kern-remove">Fjernelse af Kernels</a></li>
+					    <li><a href="sys-admin-kern-upg-da.htm#kern-upgrade">Opdatering af kernel</a></li>
+					    <li><a href="sys-admin-kern-upg-da.htm#dmakms">Dynamisk installering af kernel moduler med dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-da.htm#apt-upgrade">Opdatering af installeret systemet -  dist-upgrade - Overblik &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-da.htm#live-cd-upgrade">Opdatering med Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-da.htm#approx">dist-upgrade af flere PCer på et LAN</a></li>
+					    <li><a href="sys-admin-apt-da.htm#apt-upgrade">opdatere et installeret system -  dist-upgrade - Overblik</a></li>
+					    <li><a href="sys-admin-apt-da.htm#du-st">Opdater et installeret system -  dist-upgrade - Trinvis guide</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-da.htm">System Administration</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-da.htm#bois-prep">Opdatering af BIOS med FreeDOS</a></li>
+		<li><a href="vir-rkits-da.htm#virus-rkits">Virus og Rootkit Skannere</a></li>
+		<li><a href="hd-install-da.htm#adduser">Tilføje brugere og kodeord &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-da.htm#adduser">Tilføj en ny bruger</a></li>
+					    <li><a href="sys-admin-gen-da.htm#pw-lost">Mistet root kodeord, nye kodeord</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-da.htm#start-services">Tjenester og init runlevels &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-da.htm#start-services">Tjenester aktiver/deaktiver</a></li>
+					    <li><a href="sys-admin-gen-da.htm#pkill">Killing a service or process</a></li>
+					    <li><a href="sys-admin-gen-da.htm#init">aptosid runlevels - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-da.htm#rsync">Sikkerhedskopi af systemet &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-da.htm#rdiff">Sikkerhedskopi med rdiff</a></li>
+					    <li><a href="sys-admin-rsync-da.htm#rsync">Sikkerhedskopi med rsync</a></li>
+					    <li><a href="home-da.htm#home-bu">Flytte /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-da.htm#fonts">CUPS, Fonte og Lyd &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-da.htm#fonts">Fonte</a></li>
+					     <li><a href="sys-admin-gen-da.htm#cups">CUPS - Print System</a></li>
+					     <li><a href="sys-admin-gen-da.htm#sound">Lyd Mixers</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-da.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-da.htm#chroot">Grub2 - Gneopret Grub med chroot</a></li>
+					    <li><a href="sys-admin-grub2-da.htm#mbr-over-grub2">Grub2 - MBR overskrevet</a></li>
+					    <li><a href="sys-admin-grub2-da.htm#multi-os">Grub2 - Dual og Multibooting</a></li>
+					    <li><a href="sys-admin-grub2-da.htm#grub1-grub2">Grub2 -Opgradering fra Grub1</a></li>
+					    <li><a href="sys-admin-grub2-da.htm#grub2">Grub2 - Overblik</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Sponsored by webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid is proudly hosted by webtropia.com" alt="aptosid is proudly hosted by webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+		<div class="divider" id="vmopts">
+				<h2 id="top-header">Virtual Machine installations muligheder</h2>
+
+						<ul>
+							<li><a href="hd-install-vmopts-da.htm#kvm">KVM til Intel VT eller AMD-V</a></li>
+							<li><a href="hd-install-vmopts-da.htm#vbox">Virtualbox</a></li>
+							<li><a href="hd-install-vmopts-da.htm#qemu">QEMU</a></li>
+							<li><a href="hd-install-vmopts-da.htm#oos">Installing other distributions to an image</a></li>
+						</ul>
+
+							<p><span class="highlight-3">The following examples use aptosid, simply substitute aptosid with the distribution of your choice.</span></p>
+	</div>
+	<div class="divider" id="oos">
+			    <h2>Installing other distributions to a VM image</h2>
+							<p>Note: If and when you wish to install to a virtual machine image, most Linux distributions will probably only need an allocation of 12G. However if you have a requirement to have MS Windows in a virtual machine, you will need to allocate about a 30G, or more, to the image. All image allocation sizes ultimately depend on your requirements. </p>
+
+							<p>Generally, an image allocation size, will not take up additional hard drive space until data is installed. Even then, it will only take space dynamically on a hard drive, contingent to the actual amount of data that expands on the image. This is due to the compression ratios of qcow2.</p>
+
+		      </div>
+		      <div class="divider" id="kvm">
+				<h2>Enabling a KVM Virtual Machine</h2>
+							<p>KVM er en fuld virtualiseringsløsning til Linux på x86 hardware der indeholder virtualiserings udvidelser (Intel VT eller AMD-V).</p>
+
+				      <h3>Systemkrav</h3>
+
+							<p>For at sikre dig at din hardware understøtter KVM skal du sikre dig at KVM er slået til i din BIOS (i nogle tilfælde på Intel VT eller AMD-V systemer er det ikke åbentlyst hvordan man slår det til eller fra, antag i så tilfælde at at det er slået til). For at kontrollere kører du følgende i en konsol:</p>
+<pre>
+cat /proc/cpuinfo | egrep --color=always 'vmx|svm'
+</pre>
+							<p>Hvis du så ser <span class="highlight-3">svm</span> eller <span class="highlight-3">vmx</span> i cpu flag feltet så understøtter dit system KVM. (I modsat tilfælde kan du gå tilbage i BIOS og lede igen efter en indstillingsmulighed, eller gå på nettet og søg efter hvor i BIOS menuen KVM 'enable' muligheden gemmer sig).</p>
+
+							<p>Understøtter din BIOS ikke KVM er der stadig muligheder, læs her <a href="hd-install-vmopts-da.htm#vbox">Virtualbox</a>
+							 eller <a href="hd-install-vmopts-da.htm#qemu">QEMU</a></p>
+
+							<p>For at installerer og afvikle KVM skal du først sikre dig at der ikke er indlæst nogen Virtualbox moduler, (--purge er det bedste for at sikre sig dette), og afhængigt af dit chipset:</p>
+
+							<p>For <span class="highlight-3">vmx</span>:</p>
+<pre>
+apt-get install qemu-kvm qemu-utils
+modprobe kvm-intel
+</pre>
+							<p>For <span class="highlight-3">svm</span>:</p>
+<pre>
+apt-get install qemu-kvm qemu-utils
+modprobe kvm-amd
+</pre>
+							 <p>When you start your system the qemu-kvm initscripts will take care of loading the modules.</p>
+
+					  <h4>Anvendelse af KVM til at starte en aptosid-*.iso</h4>
+
+							<p><span class="highlight-2">Som bruger gør du:</span></p>
+<pre>
+$ kvm -net nic,model=virtio -net user -soundhw ac97 -m 512 -monitor stdio -cdrom &lt;aptosid.iso&gt;
+</pre>
+
+				<h5>Installering af en aptosid-*.iso til et KVM image</h5>
+							<p>Først skal du oprtete et harddsik image, (det vil starte ud med at være minimalt, og så vokse efterhånden som nødvendigt pga. qcow2 kompressions ratioen):</p>
+<pre>
+$ qemu-img create -f qcow2 aptosid-2010-*-.img 12G
+</pre>
+
+							<p>Boot the aptosid-*.iso med følgende parametrefor at tillade KVM at opdage at der er QEMU harddisk image tilgængeligt:</p>
+<pre>
+$ kvm -net nic,model=virtio -net user -soundhw ac97 -m 512 -monitor stdio -cdrom &lt;/path/to/aptosid-*.iso&gt; -boot d &lt;/path/to/aptosid-VM.img&gt;
+</pre>
+
+							<p>Once the cdrom has booted up click on the aptosid installer icon to activate the installer, (or use the menu), click on the Partitioning tab and launch the partition application you prefer. For the partitioning you can follow the instructions from <a href="part-gparted-da.htm">Partitioning the Hard Drive - Traditional, GPT and LVM</a>  (do not forget to add a swap partition If you are short of memory). Please be aware that formatting will take time so be patient.</p>
+
+	<div class="screenshot"><img src="../lib/images-common/images-vm/kvm-gparted02.png" title="gparted kvm hard disk naming" alt="gparted kvm hard disk naming" /></div>
+	<div class="spacer02"></div>
+
+							<p>You now have a VM ready for use:</p>
+
+<pre>
+$ kvm -net nic,model=virtio -net user -soundhw ac97 -m 512 -monitor stdio -drive if=virtio,boot=on,file=&lt;path/to/aptosid-VM.img&gt;
+</pre>
+							<p>Some guests do not support virtio, therefore you need to use other options when launching KVM, for example:</p>
+<pre>
+$ kvm -net nic, -net user -soundhw ac97 -m 512 -monitor stdio -hda &lt;/path/to/your_guest.img&gt; -cdrom your_other.iso -boot d
+</pre>
+
+							 <p>or</p>
+<pre>
+$ kvm -net nic, -net user -soundhw ac97 -m 512 -monitor stdio -hda &lt;/path/to/your_guest.img&gt;
+</pre>
+							<p>Se desuden: <a href="http://www.linux-kvm.org/page/Main_Page"> KVM documentation</a>.</p>
+
+				<h5>Administration af dine KVM virtual machine installationer</h5>
+<pre>
+apt-get install aqemu
+</pre>
+							<p>Når du bruger AQEMU skal du sikre dig at du vælger KVM mode fra drop-down-boxen for 'Emulator Type' i fanebladet 'General'. (Dokumentation for AQEMU er så godt som ikke-eksisterende, derfor kan det kræve et par 'trials by error' for at blive fortrolig med anvendelsen af den grafiske brugerflade, men et godt sted at starte er at anvende 'VM' menuen afterfulgt af 'General' fanebladet.</p>
+
+	</div>
+	<div class="divider" id="vbox">
+		<h2>Booting and installing to a VirtualBox Virtual Machine</h2>
+							<p>Trinvis fremgangsmåde:</p>
+						<ul>
+ 							<li>1. opret et harddiskimage til VirtualBox</li>
+ 							<li>2. boot iso'en med VirtualBox</li>
+ 							<li>3. installer på harddiskimaget</li>
+						</ul>
+
+				<h4>Systemkrav</h4>
+							<p><span class="highlight-3">Anbefalet RAM: 1 gig </span>: Ideelt 512 MB til gæsteen og 512 MB til værten (det kan køre med mindre RAm men forvent ikke nogen fantastisk ydelse).</p>
+
+							<p><span class="highlight-3">Harddisk plads:</span> VirtualBox selv tager ikke meget mere end ca 30 mb, men de virtuelle maskiner kræver ret store filer til at repræsentere deres harddisk plads. For at installere for eksempel MS Windows XP (TM), får du brug for en fil der nemt kan vokse til flere GB i størrelse. For at installere aptosid i VirtualBox skal du allokere cirka 5 gb og en yderligere plads til swap.</p>
+
+				<h3>Installation:</h3>
+
+<pre>
+apt-get update
+apt-get install virtualbox-ose-qt virtualbox-source dmakms module-assistant
+</pre>
+							<p>Nu skal du forberede modulet:</p>
+<pre>
+m-a prepare
+m-a a-i virtualbox-source
+</pre>
+							<p>Dernæst aktiverer du Dynamic Module-Assistant Kernel Module Support for virtualbox, sådan at næste gang Linux kernelen bliver opdateretm så følger virtualbox modulet trop uden manuel intervention. For at opnå dette tilføjer du <span class="highlight-3">virtualbox-source</span> til <span class="highlight-3">/etc/default/dmakms </span>konfigurations-filen. </p>
+<pre>
+mcedit /etc/default/dmakms
+virtualbox-source
+</pre>
+
+							<p>Så genstarter du maskinen.</p>
+
+							<p><a href="sys-admin-kern-upg-da.htm#dmakms">Dette er essentiel læsning om dmakms</a></p>
+
+					<h3>Installering af aptosid i virtual machine</h3>
+							<p>Brug virtualbox's wizard til at oprette en ny virtuel maskine til aptosid, og følg så instruktionerne som for en regulær aptosid installetion.</p>
+
+							<p><a href="http://www.virtualbox.org/">VirtualBox har en omfattende PDF Hjælp som du kan hente.</a> </p>
+
+	</div>
+	<div class="divider" id="qemu">
+		<h2>Booting and installing a QEMU Virtual Machine</h2>
+
+		<ul>
+ 			<li>1. Opret et harddisk-image til qemu</li>
+ 			<li>2. Boot iso'en med qemu</li>
+ 			<li>3. Installer på image'et</li>
+
+		</ul>
+
+							<p>Et QT GUI værktøj er tilgængeligt for at hjælpe dig med at konfigurere QEMU:</p>
+<pre>
+apt-get install qtemu
+</pre>
+
+ 				<h4>Oprettelse af harddisk-image</h4>
+
+							<p>For at køre qemu skal du sandsynligvis bruge et harddisk image. Dette er en fil der gemmer indholdet på den emulerede harddisk.</p>
+
+				<p>Brug kommandoen:</p>
+<pre>
+qemu-img create -f qcow aptosid.qcow 3G
+</pre>
+							<p>For at oprette image filen med navnet "aptosid.qcow". "3G" parameteren definerer størrelsen af disken - i dette tilfælde 3 GB. Du kan bruge suffixet M for megabytes (for eksempel "256M"). Du bør ikke bekymre dig for meget om størrelsen af disken -qcow formatet komprimerer image'et således at den tomme plads ikke regnes med i størrelsen af filen.</p>
+
+
+			<h4>Installering af operativ systemet</h4>
+
+							<p>Dette er den første gang du skal starte emulatoren. En ting der er værd at bide mærke i er at når du klikker inde i qemu vinduet så "gribes" musens cursor. For at frigive den igen skal du trykke Ctrl+Alt.</p>
+
+							<p>Hvis du har brug for en opstarts floppy kører du Qemu med:</p>
+<pre>
+qemu -floppy aptosid.iso -net nic -net user -m 512 -boot d aptosid.qcow
+</pre>
+							<p>Hvis din CD-ROM er i stand til at boote, kør Qemu med:</p>
+<pre>
+qemu -cdrom aptosid.iso -net nic -net user -m 512 -boot d aptosid.qcow
+</pre>
+							<p>Nu installerer du aptosid som hvis du installerede til en almindelig harddisk</p>
+
+
+			<h4>Kørsel af systemet</h4>
+
+							<p>For at starte systemet skriver du blot:</p>
+<pre>
+qemu [hd_image]
+</pre>
+							<p>Det er en god ide at anvende "overlay images". Anvender du dette kan du oprette harddisk image'et én gang, og få qemu til at gemme alle ændringer i en ekstern fil. Du sikrer dig mod ustabilitet fordi det er meget nemt at gå tilbage til en tidligere system tilstand.</p>
+
+							<p>For at oprette et overlay image, skriv:</p>
+<pre>
+qemu-img create -b [[base''image]] -f qcow [[overlay''image]]
+</pre>
+							<p>Erstat harddisk image med base_image (i dette eksempel aptosid.qcow). Efter dette kan du køre qemu med:</p>
+<pre>
+qemu [overlay_image]
+</pre>
+							<p>Det originale image vil forblive urørt. En faldgrube er at base image ikke kan omdøbes eller flyttes, eftersom overlay husker base's fulde sti.</p>
+
+
+			<h4>Hvordan man anvender en rigtig partition som den primære partition i et harddisk image</h4>
+
+							<p>Det kan hænde at du ønsker at anvende enaf dine system partitioner fra inde i qemu (for eksempel hvis du vil boot både din rigtige maskine eller qemu med en given apartition som root). Du kan opnå dette ved at anvende software RAID i linear mode (du skal bruge kernel driveren linear.ko) og en loopback enhed: tricket består i at "dynamically prepend a master boot record (MBR) to the real partition you wish to embed in a qemu raw disk image."(###)</p>
+
+							<p>Antag at du har en almindelig, umonteret /dev/sdaN partition med et filsystem på, som du vil gøre til del af en qemu disk image. Først opretter du en lille fil til at indeholde MBR:</p>
+<pre>
+dd if=/dev/zero of=/sti/til/mbr count=32
+</pre>
+							<p>Her bliver en 16 KB (32 * 512 bytes) fil dannet. Det er vigtigt ikke at lave filen for lille (selv om MBR kun skal bruge en enkelt 512 bytes block), eftersom des mindre den er, jo mindre skal software raid enhedens chunk size være, og dette kan påvirke ydelsen. Dernæst opsætter du en loopback enhed til MBR filen:</p>
+<pre>
+losetup -f /path/to/mbr
+</pre>
+							<p>Lad os antage at den resulterende enhed er /dev/loop0, for vi ville ikke allerede have brugt andre loopbacks. Næste trin er at oprette det "sammensmeltede" MBR + /dev/sdaN disk image med software RAID:</p>
+<pre>
+ modprobe linear
+ mdadm --build --verbose /dev/md0 --chunk=16 --level=linear --raid-devices=2 /dev/loop0 /dev/sdaN
+</pre>
+						      <p>Det resulterende /dev/md0 er havd du anvender som qemu raw disk image (glem ikke at sætte rettighederne så emulatoren kan få adgang). Det sidste, lettere spegede trick er at sætte disk konfigurationen (disk geometry og partitions table) således at den primære partitions start point i MBR matcher det fra /dev/sdaN inde i /dev/md0 (et offset på præcist 16 * 512 = 16384 bytes i dette eksempel). Gør dette med fdisk på værtsmaskinen, ikke i emulatoren: standard raw disc detection routinen fra qemu resulterer ofte i ikke kilobyte-afrundbare offsets (såsom 31.5 KB, som i den forrige sektion) som ikke kan håndteres af software RAID programmet. Derfor, fra værten:</p>
+<pre>
+ fdisk /dev/md0
+</pre>
+						      <p>Sådan, opret en enkelt primær partition korresponderende til /dev/sdaN, og leg med 's'ector kommanden fra 'x'pert menuen indtil den første cylinder (hvor den første partition starter) matcher størrelsen af MBR. Slutteligt, 'w'rite resultatet til filen: Du er nu færdig. Du har nu en partition der kan monteres direkte på din vært og som såvel er et qemu disk image:</p>
+<pre>
+ qemu -hdc /dev/md0 [...]
+</pre>
+						      <p>Du kan selvfølgelig helt sikkert sætte en hvilken som helst bootloader på dette qemu diskimage, forudsat at den originale /boot/sdaN partition indeholder de nødvendige værktøjer.</p>
+
+			<!--<h4>Anvendelse af QEMU Accelerator Module</h4>
+
+						      <p>Udviklerne af qemu har skabt et optional kernel module til at accelerere qemu til næsten native hastighed. Dette bør indlæses med parametren</p>
+<pre>
+major=0
+</pre>
+						      <p>for at automatisere oprettelsen af den nødvendige /dev/kqemu enhed. Følgende kommando</p>
+<pre>
+echo "options kqemu major=0" >> /etc/modprobe.conf
+</pre>
+						      <p>Dette retter modprobe.conf således at parameteren tilføjes hver gang modulet bliver indlæst.</p>
+
+<pre>
+qemu [...] -kernel-kqemu
+</pre>
+						      <p>Dette aktiverer fuld virtualization og øger hastigheden betydeligt.</p>
+
+			<h4>For at aktivere qemu:</h4>
+<pre>
+qemu -cdrom /tmp/pkg/aptosid-debug.iso -net nic -net user -m 512
+</pre>-->
+						      <p><a href="http://www.nongnu.org/qemu/user-doc.html">Den officielle dokumentation for QEMU Project </a> </p>
+
+						      <p><a href="http://wiki.archlinux.org/index.php/Qemu">Noget indhold om QEMU til aptosid-manualen stammer fra denne side under GNU Free Documentation License 1.2 og er blevet modificeret til aptosid-manualen</a> </p>
+
+	</div>
+	<div id="rev">Page last revised 18/09/2011 1010 UTC</div>
+
+</div>
+</body>
+</html>

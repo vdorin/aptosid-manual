@@ -1,0 +1,580 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="da" lang="da">
+<head>
+	<title>aptosid Manuals - RSYNC</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body id="welcome">
+<!-- Last translation revision by ragupo 25/02/2011 2358hrs UTC -->
+<!--htdig_noindex--><div id="menu"> <!-- menu starts here en lang maintained by ragupo-->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="Tilbage til aptosid.com forums og wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-da.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" />Søg online - offline</a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Vælg et andet sprog - Choose another language CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="lang-switch CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-da.htm">aptosid OS Manual</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-da.htm#welcome-gen">aptosid OS Manual &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-da.htm#cred-team">Tak til</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-da.htm#how-to">Hvordan du anvender denne manual &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-da.htm#how-to">Hvordan du anvender denne manual</a></li>
+					  <li><a href="welcome-da.htm#table-contents">Inholdsfortegnelse</a></li>
+					</ul>
+					</li>
+		<li><a href="help-da.htm#help-gen">Sådan får du hjælp &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-da.htm#help-gen">Hvor og hvordan får du hjælp</a></li>
+					  <li><a href="help-da.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-da.htm#welcome-quick">aptosid Hurtig Start Guide</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-da.htm">ISO indhold, udgivelser, filspejle og cd-brænding</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-da.htm#cd-content">ISO indhold og systemkrav &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-da.htm#rolling">Bemærkninger til udgivelsen</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-da.htm#download-aptosid">aptosid filspejle, download og cd-brænding &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-da.htm#md5">md5 Checksum</a></li>
+					  <li><a href="cd-dl-burning-da.htm#burn-nero">cd-brænding i Windows</a></li>
+					  <li><a href="cd-dl-burning-da.htm#burn-linux">cd-brænding i Linux</a></li>
+					  <li><a href="cd-no-gui-burn-da.htm#burning-no-gui">burniso skript</a></li>
+					  <li><a href="cd-no-gui-burn-da.htm#burn-no-gui-gen">cd-brænding uden grafisk brugerflade</a></li>
+					  <li><a href="cd-dl-burning-da.htm#download-aptosid">aptosid download filspejle</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-da.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-da.htm#rootpw">Root-kodeord på aptosid Live ISO</a></li>
+				<li><a href="live-mode-da.htm#live-cd-installsoft">Installering af programmer under Live-ISO</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-da.htm">Terminalen</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-da.htm#term-kon"> Terminal &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-da.htm#term-kon"> Terminalen</a></li>
+					  <li><a href="term-konsole-da.htm#colours"> Farver i terminal-prompten</a></li>
+					  <li><a href="term-konsole-da.htm#cli-help">Hjælp til kommandolinien</a></li>
+					  <li><a href="help-da.htm#init3-tools">Nyttige værktøjer til text mode (tty) - init 3</a></li>
+					  <li><a href="term-konsole-da.htm#term-cmds">Linux Terminal kommando liste</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-da.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-da.htm">CheatCodes</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-da.htm#cheatcodes">aptosid specifikke Live-ISO Cheatcodes</a></li>
+				<li><a href="cheatcodes-da.htm#cheatcodes-linux">Linux generiske Cheatcodes</a></li>
+				<li><a href="cheatcodes-vga-da.htm#vga">VGA Codes</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-da.htm">Partitioning the Hard Drive - Traditional, GPT and LVM</a>
+		    <ul class="sub-menu" id="sm6">
+			  <li><a href="part-gparted-da.htm#hd-ntfs3g">Skriv til NTFS partitioner med ntfs-3g</a></li>
+			<li><a href="part-lvm-da.htm#part-lvm">Partitionering med anvendelse af LVM - Logical Volume Manager</a></li>
+			<li><a href="part-gparted-da.htm#partition">Partitionering med grafisk brugerflade &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-da.htm#partition">Partitionering af din harddisk med GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-da.htm#ntfs">Ændre størrelsen på NTFS partitioner med GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-da.htm#partition">Partitionering fra kommandolinien &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-da.htm#partition">Partitionering af harddisken med cfdisk</a></li>
+					    <li><a href="part-cfdisk-da.htm#formating">Formattering efter partitionering med cfdisk</a></li>
+					    <li><a href="part-gdisk-ca.htm#gdisk-6">Formatting after partitioning with gdisk</a></li>
+					    <li><a href="part-gdisk-da.htm#gdisk-1">GPT Partitioning with gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-da.htm#part-example">Basal partitionering &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-da.htm#part-example">Eksempler på partitionsstørrelser</a></li>
+					  <li><a href="part-uuid-da.htm#uuid">UUID, Genopbygning af fstab og oprettelse af nye monteringspunkter</a></li>
+					  <li><a href="part-cfdisk-da.htm#disknames">Nomenklatur for diske og partitionsnavngivning</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-da.htm">Installations muligheder - HD, USB, VM og Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-da.htm#Inst-prep">Forberedelser til installationen &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-da.htm#Inst-prep">Installations forberedelser</a></li>
+					  <li><a href="hd-install-da.htm#Installation">Installering til harddisken</a></li>
+					  <li><a href="hd-install-da.htm#first-hd-boot">Første opstart</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-da.htm#fromiso">Opstart fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-da.htm#fromiso">Opstart fromiso - Overblik</a></li>
+					  <li><a href="hd-install-opts-da.htm#grub2-fromiso">Opstart 'fromiso' med Grub 2</a></li>
+					  <li><a href="hd-install-opts-da.htm#fromiso-persist">Fromiso og persist</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-da.htm#usb-hd">Installering til USB drev &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-da.htm#usb-hd">Installering til en USB-HD - aptosid specific - aptosid-on-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-da.htm#raw-usb">Installering af aptosid til USB/SSD nøgle fra Linux, MS Windows eller Mac OS X systemer</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-da.htm#install-crypt">Installering på krypterede partitioner - cryptroot</a></li>
+		  <li><a href="nbdboot-da.htm#nbd1">Boote aptosid over netværketk</a></li>
+		  <li><a href="hd-install-vmopts-da.htm#vmopts">Virtual Machine installations muligheder</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-da.htm">Grafikkort, Monitors, Xorg &amp; drivere</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-da.htm#mon-res">Skærmopløsning og monitors  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-da.htm#mon-res">Skærm opløsning og monitors</a></li>
+					  <li><a href="hw-dev-mon-da.htm#xrandr">Dual Monitors og xrandr</a></li>
+					  <li><a href="hw-dev-mon-da.htm#mon-binary">Dual Monitors (med binære drivere)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-da.htm#foss-xorg">GPU drivers &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-da.htm#ati-3d">AMD/ATI 3D drivere</a></li>
+					  <li><a href="gpu-da.htm#intel">Intel 2D and 3D drivere</a></li>
+					  <li><a href="gpu-da.htm#nvidia">Nvidia 3D drivere</a></li>
+					  <li><a href="gpu-da.htm#foss-xorg">Open Source Xorg drivere</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-da.htm#fw-detect">Firmware detection - non-free </a></li>
+			  <li><a href="nf-firm-da.htm#non-free-firmware">Tilføj non-free til kildelisten </a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-da.htm#install-add">Window Managers</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-da.htm">KDE and XFCE Window Managers &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-da.htm#xfce-notes">Nyttige Xfce ekstras</a></li>
+					    <li><a href="wm-dm-da.htm#install-add">Nyttige ekstra KDE Apps</a></li>
+					    <li><a href="wm-dm-da.htm#desk-freeze">Skrivebordet fyser</a></li>
+					    <li><a href="wm-dm-da.htm#kde-login">ingen login i KDE mulig</a></li>
+					    <li><a href="wm-dm-da.htm#ch-th">Ændre Themes</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-da.htm#dm">Installing additional Display Managers</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-da.htm">Internet forbindelse, WiFi, LAN og Netwærk</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-da.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-da.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-da.htm#serv-ftp">FTP klienter</a></li>
+					    <li><a href="lamp-apache-da.htm#serv-sec">Sikkerheds protocoller</a></li>
+					    <li><a href="lamp-apache-da.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-da.htm#serv-mysql">MySQL opsætning</a></li>
+					    <li><a href="lamp-ppp-da.htm#serv-php">PHP i Apache</a></li>
+					    <li><a href="ntp-server-da.htm#ntp-server">Opsætning af timeserver</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-da.htm#privoxy">Firewalls og Privatliv &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-da.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-da.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-da.htm#firewalls">Firewalls</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-da.htm#ssh-x">SSH og Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-da.htm#setup">Samba-Server opsætning</a></li>
+						  <li><a href="samba-da.htm#configure">Konfiguration af SAMBA (Windows)</a></li>
+						  <li><a href="ssh-da.htm#ssh-fs">SSH Remote Mounting</a></li>
+						  <li><a href="ssh-da.htm#ssh-x">X Window Apps via SSH</a></li>
+						  <li><a href="ssh-da.htm#ssh-f">GUI SSH med Konqueror</a></li>
+						  <li><a href="ssh-da.htm#ssh-w">SSH X-Forwarding fra en Windows-PC</a></li>
+						  <li><a href="ssh-da.htm#ssh">SSH og sikkerhed</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-da.htm#netcardconfig">WIFI forbindelser &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-da.htm#netcardconfig">Kom online - Ceni</a></li>
+						    <li><a href="inet-wpagui-da.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-da.htm#net-set1">WiFi - opsætning af WiFi Roaming</a></li>
+						    <li><a href="inet-wpa-da.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-da.htm#hotswitch">Skift imellem kablet og trådløs forbindelse</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-da.htm#netcardconfig">Kablede forbindelser &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-da.htm#dial-mod">56k Modems</a></li>
+						    <li><a href="inet-ceni-da.htm#netcardconfig">kom online - Ceni</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-da.htm#fw-detect">Firmware detection - non-free </a></li>
+		<li><a href="nf-firm-da.htm#non-free-firmware">Tilføj non-free til kildelisten </a></li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-da.htm">Pkke administration og dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-da.htm#apt-cook">APT Cookbook og Sources list &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-da.htm#apt-cook">APT-Guide Cookbook og Sources list</a></li>
+					    <li><a href="sys-admin-apt-da.htm#apt-install">Installation af nye pakker</a></li>
+					    <li><a href="sys-admin-apt-da.htm#apt-delete">Afinstaller pakker</a></li>
+					    <li><a href="sys-admin-apt-da.htm#apt-downgrade">Pakke på Hold og nedgradering</a></li>
+					    <li><a href="sys-admin-apt-da.htm#apt-cache">Søgning efter pakker med apt-cache</a></li>
+					    <li><a href="sys-admin-apt-da.htm#gui-pacsea">Søgning after pakker i GUI</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-da.htm#kern-upgrade">Opdatering af kernel &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-da.htm#kern-remove">Fjernelse af Kernels</a></li>
+					    <li><a href="sys-admin-kern-upg-da.htm#kern-upgrade">Opdatering af kernel</a></li>
+					    <li><a href="sys-admin-kern-upg-da.htm#dmakms">Dynamisk installering af kernel moduler med dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-da.htm#apt-upgrade">Opdatering af installeret systemet -  dist-upgrade - Overblik &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-da.htm#live-cd-upgrade">Opdatering med Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-da.htm#approx">dist-upgrade af flere PCer på et LAN</a></li>
+					    <li><a href="sys-admin-apt-da.htm#apt-upgrade">opdatere et installeret system -  dist-upgrade - Overblik</a></li>
+					    <li><a href="sys-admin-apt-da.htm#du-st">Opdater et installeret system -  dist-upgrade - Trinvis guide</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-da.htm">System Administration</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-da.htm#bois-prep">Opdatering af BIOS med FreeDOS</a></li>
+		<li><a href="vir-rkits-da.htm#virus-rkits">Virus og Rootkit Skannere</a></li>
+		<li><a href="hd-install-da.htm#adduser">Tilføje brugere og kodeord &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-da.htm#adduser">Tilføj en ny bruger</a></li>
+					    <li><a href="sys-admin-gen-da.htm#pw-lost">Mistet root kodeord, nye kodeord</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-da.htm#start-services">Tjenester og init runlevels &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-da.htm#start-services">Tjenester aktiver/deaktiver</a></li>
+					    <li><a href="sys-admin-gen-da.htm#pkill">Killing a service or process</a></li>
+					    <li><a href="sys-admin-gen-da.htm#init">aptosid runlevels - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-da.htm#rsync">Sikkerhedskopi af systemet &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-da.htm#rdiff">Sikkerhedskopi med rdiff</a></li>
+					    <li><a href="sys-admin-rsync-da.htm#rsync">Sikkerhedskopi med rsync</a></li>
+					    <li><a href="home-da.htm#home-bu">Flytte /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-da.htm#fonts">CUPS, Fonte og Lyd &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-da.htm#fonts">Fonte</a></li>
+					     <li><a href="sys-admin-gen-da.htm#cups">CUPS - Print System</a></li>
+					     <li><a href="sys-admin-gen-da.htm#sound">Lyd Mixers</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-da.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-da.htm#chroot">Grub2 - Gneopret Grub med chroot</a></li>
+					    <li><a href="sys-admin-grub2-da.htm#mbr-over-grub2">Grub2 - MBR overskrevet</a></li>
+					    <li><a href="sys-admin-grub2-da.htm#multi-os">Grub2 - Dual og Multibooting</a></li>
+					    <li><a href="sys-admin-grub2-da.htm#grub1-grub2">Grub2 -Opgradering fra Grub1</a></li>
+					    <li><a href="sys-admin-grub2-da.htm#grub2">Grub2 - Overblik</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Sponsored by webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid is proudly hosted by webtropia.com" alt="aptosid is proudly hosted by webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+	<div class="divider" id="rsync">
+			<h2 id="top-header">Sikkerhedskopiering med rsync</h2>
+							<p>rsync er et værktøj til at sikkerhedskopiere og synkronisere dine filer (rsync kan køre på en vifte af *nix porte).</p>
+
+							 <p class="highlight-2">En begrænsning i rsync er at programmet ikke er i stand til at kopiere fra remote- til remote-system!. Hvis du vil gøre dette med rsync skal du kopiere et af remote-systemerne til et lokalt system, og så kopiere fra det lokale til det andet remote-system.</p>
+
+							 <p>Med aptosid har du 2 forskellige muligheder for at starte processen, Gør-det-selv eller via deb pakke i Debian sid:</p>
+
+				<h5>For deb pakken:</h5>
+<pre>
+apt-get install luckybackup
+</pre>
+							<p><a href="http://luckybackup.sourceforge.net/">Hjemmesiden for luckybackup.</a></p>
+
+				    <h6>Her følger gør-det-selv versionen</h6>
+							<p>Det følgende vil give dig noget praktisk anvendelig information om hvad rsync kan gøre, samt give dig nogle eksempler på kode som du kan bruge i dit eget sikkerhedskopierings-script.</p>
+
+				<p>rsync er et letanvendeligt sikkerhedskopierings program, det kan osse sikkerhedskopiere filer og mapper meget hurtigt. rsync opnår dette ved at anvende en meget smart rutine hvor den kontrollerer hvilke filer der er blevet ændret, således at kun filer med ændringer selekteres til kopiering. rsync anvender også et kompressions værktøj til at øge hastigheden på kopierings processen <span class=" highlight-3">(når denne mulighed er valgt eksplicit med -z parametren)</span>. Dette kan forklares meget simpelt:</p>
+
+				<p>rsync programmet detekterer filer og mapper der skal kopieres fordi en eller flere af deres attributter er blevet ændret (for eksempel dato/tid for sidste ændring, eller størrelsen af filen), i begge tilfælde en ændring siden sidste sikkerhedskopiering. Denne selektionsproces er meget hurtig at udføre.</p>
+
+				<p>Når rsync først har bygget listen over det den vil kopiere, går selve kopieringen meget hurtigt idet kompressions værktøjet anvendes herunder.  rsync komprimerer før filerne afsendes til bestemmelsesstedet, derefter afkomprimeres de “on the fly”.</p>
+
+				<p>rsync kan kopiere filer fra:<br />
+				* lokal system til lokal system,<br />
+ 				* lokal system til remote system,<br />
+				* remote system til lokal system.</p>
+				<p>Der envendes enten en standard <a href="ssh-da.htm">ssh</a> klient, eller en rsync daemon på både kilde- og mål-systemet. Man siderne for rsync slår fast at hvis du er i stand til at ssh til et system, så kan rsync også ssh til det.</p>
+
+				<p class="highlight-3">En begrænsning i rsync er at programmet ikke er i stand til at kopiere fra remote- til remote-system!. Hvis du vil gøre dette med rsync skal du kopiere et af remote-systemerne til et lokalt system, og så kopiere fra det lokale til det andet remote-system.</p>
+
+				<p>For at vise dette med et eksempel, forestiller vi os tre systemer;</p>
+<pre>
+neo – et lokalt system
+morpheus – et remote system
+trinity – et remote system
+</pre>
+				<p>Hvis du vil anvende rsync til at kopiere, eller sync, mapperne /home/[user]/Data fra lle systemer ne til hinanden. Hvert system "ejes" af en specifik bruger, med andre ord, hvert specifikke system har en specifik bruger, og derfor bør ethvert af systemerne bruges som "kilden" til de andre to systemer. Du kan udelukkende køre kommandoen rsync fra den lokale maskine (det er neo):</p>
+<pre>
+brugeren af neo hedder cuddles,
+brugeren af morpheus hedder tartie, og
+brugeren af trinity hedder taylar.
+</pre>
+				<p>Det du altså vil gøre er at sikkerhedskopiere (synkronisere) følgende:</p>
+
+<pre>
+neo's /home/cuddles/Data area til morpheus og trinity,
+morpheus's /home/tartie/Data area til neo og trinity,
+trinity's /home/taylar/Data area til neo og morpheus.
+</pre>
+
+				<p>Problemet med at rsync ikke kan kopiere fra remote til remote betyder nu at i dette eksempel støder vi ind i problemer med at kopiere fra trinity til morpheus, og fra morpheus til trinity (både kilde og mål er remote) i.e.</p>
+
+
+<pre>
+neo --> morpheus – fint, local til remote
+neo --> trinity – fint, local til remote
+morpheus --> neo – fint, remote til local
+trinity --> neo – fint, remote til local
+morpheus --> trinity – remote til remote – virker ikke
+trinity --> morpheus – remote til remote – virker ikke
+</pre>
+				<p>For at arbejde dig rundt om denne begrænsning kan du ændre din metode til det følgende;</p>
+<pre>
+morpheus --> trinity – gøres ved: morpheus --> neo &amp; neo --> trinity
+trinity --> morpheus – gøres ved: trinity --> neo &amp; neo --> morpheus
+</pre>
+				<p>Det kræver altså lidt ekstra arbejde at gøre dette, men eftersom du også ønsker at kopiere filerne til neo er det i realiteten bare en ændring af kilden du foretager, resultatet bliver det ønskede. Forudsat dine sikkerhedskopieringer er vellykkede og intet mangler.</p>
+
+				<p class="highlight-3">Denne begrænsning i rsync skal du tage med i dine overvejelser når du designer dine sikkerhedskopierings procedurer.</p>
+
+				<h5>Anvendelse af hostnames med hostnames i rsync</h5>
+
+				<p>Anvendelse af IP-adresser på neo, morpheus og trinity kan gøre kopieringsprocessen mere gennemskuelig og dermed nemmere.</p>
+
+				<p>Du skal redigere filen /etc/hosts, og tilføje dine hostnames og IP-addresserne som de skal oversættes til. Her er en lille snip af en /etc/hosts fil, så du kan se hvordan det skal se ud:</p>
+<pre>
+192.168.1.15	 neo
+192.168.1.16	 morpheus
+192.168.1.17	 trinity
+</pre>
+				<p>Den føste linie oversætter IP-adressen 192.168.1.15 til navnet “neo”, den anden 192.168.1.16 til “morpheus”, og den sidste IP-Addressen 192.168.1.17 til navnet “trinity”. Efter tilføjelse af dine skal du gemme /etc/hosts filen, og du kan så anvende navnet i stedet for IP-adressen, eller du kan fortsætte med at anvende IP-addressen. Dette er specielt nyttigt når/ hvis systemer ændrer deres IP-adresse, du skal så bare ændre din /etc/hosts fil, og ikke alle dine scripts. For eksempel hvis neo ændrer IP-addresse fra 192.168.1.15 til 192.168.1.25:</p>
+
+				<p>Hvis du har skrevet alle dine scripts med ip-adresser i skal du finde dem alle og redigere dem til den nye adresse. Men hvis du anvender hostnames, så er det eneste du skal redigere /etc/hosts filen, og så virker alle dine scripts igen. Metoden med at anvende hostnames gør også hele processen mere gennemskuelig idet genkendelige navne sikkert vil sige dig mere end ip-adresser om hvilken maskine det er du arbejder med.</p>
+
+				<h4>rsync, og de to måder du kan anvende det på.</h4>
+
+				<p>En måde er at <b>“skubbe”</b> filer til et givent mål, og den anden måde er at <b>“trække”</b> filerne fra en given kilden. Hver metode har deres fordele, og nogle ulemper. Lad os se på dem hver især (for denne del lad os antage at en af dine systemer er lokal og det andet er remote. På den måde er det nemmere at få fat i terminologien).</p>
+
+				<p><b>“skubbe”</b> - lokal systemet har kilde filerne og mapperne liggende, og målet er en remote maskine. rsync kommandoen afvikles på lokal systemet, og  “skubber” filerne til mål systemet (remote systemet).</p>
+
+				<p>Fordele:<br />
+				* Du kan have mere end et system der sikkerhedskopierer sig selv til et enkelt mål system.<br />
+				* Sikkerhedskopieringsprocessen fordeles over dit totale computer system, og tynger ikke blot en enkelt maskine.<br />
+				* Hvis et system er hurtigere end de andre kan det afslutte før de andre og bruges til andre formål.</p>
+
+				<p>Ulemper:<br />
+				* Hvis du anvender et script, og planlægger dem med cron, så kræver det opdatering og ændring af adskillige crontabs på hvert system, ligesom opdatering af adskillige versioner af dit script.<br />
+				* Din sikkerhedskopi kan ikke kontrollere om mål systemets har mål-partitionen monteret, og du kan derfor risikere at du laver en sikkerhedskopi til ingenting på mål systemet.</p>
+
+				<p><b>“trække”</b> - fjernsystemet har kilde filerne og mapperne liggende, og målet er lokal systemet. rsync kommandoen afvikles på lokal systemet, og “trækker” filerne over fra kilde systemet (remote systemet).</p>
+
+				<p>Fordele:<br />
+				* Et system er serveren der kontrollerer alle sikkerhedskopieringer for alle de andre systemer. Centraliseret sikkerhedskopiering.<br />
+				* Anvender du scripts findes disse udelukkende på et enkelt system. Og du har kun brug for et enkelt script hvad der gør opdatering og ændringer meget nemt at udføre. Det tillader dig også at have bare en crontab fil til at planlægge script'et.<br />
+				* Dit script kan kontrollere, og montere (om nødvendigt) mål partitionen.</p>
+
+				<h6>Syntaksen for rsync, som du finder den i man siderne:</h6>
+<pre>
+       rsync [OPTION]... SRC [SRC]... DEST
+
+       rsync [OPTION]... SRC [SRC]... [USER@]HOST:DEST
+
+       rsync [OPTION]... SRC [SRC]... [USER@]HOST::DEST
+
+       rsync [OPTION]... SRC [SRC]... rsync://[USER@]HOST[:PORT]/DEST
+
+       rsync [OPTION]... SRC
+
+       rsync [OPTION]... [USER@]HOST:SRC [DEST]
+
+       rsync [OPTION]... [USER@]HOST::SRC [DEST]
+
+       rsync [OPTION]... rsync://[USER@]HOST[:PORT]/SRC [DEST]
+</pre>
+				<h5>Eksempler på rsync kommandoer:</h5>
+<pre>
+rsync -agEvz --delete-after --exclude=”*~” morpheus:/home/tartie /media/sda7/SysBackups/morpheus/home
+</pre>
+				<p>Lad os kigge nærmere på dele af denne kommando:</p>
+<pre>
+kilde stien/ filen er: morpheus:/home/tartie
+og målet er: /media/sda7/SysBackups/morpheus/home
+</pre>
+				<p>alt fra /home/tartie... vil blive sikkerhedskopieret til /media/sda7/SysBackups/morpheus/home som vil se ud som følger:</p>
+<pre>
+/media/sda7/SysBackups/morpheus/home/tartie...
+</pre>
+				<p>Det skal bemærkes at den eneste grund til at /tartie er under /home er på grund af MÅL-designationen (TARGET designation), og IKKE kilden (SOURCE). Kilden (source) selekterer kun hvor filerne kommer fra, ikke hvorhen de bliver sendt. "Målet" (target) er det der fortæller rsync hvor filerne, som kommer fra kilden, skal placeres. Se det følgende eksempel:</p>
+<pre>
+rsync [...] /home/user/data/files /media/sda7/SysBackups/neo
+</pre>
+				<p>I den ovenstående kommando bliver kun kilde mappen /files, og alt hvad der ligger under dette, blive kopieret til mål mappen /neo – og altså ikke denne del /media/sda7/SysBackups/neo/home/user/data/files</p>
+
+				<p>Husk at tage dette med i dine overvejelser når du designer dine kommandoer til sikkerhedskopiering med rsync.</p>
+
+				<h5>Forklaring af parametrene:</h5>
+<pre>
+-a is used for archive mode. From the man page, it explains this option as “in simple terms,
+ a way to backup recursively, and to preserve 'almost' everything”. It does mention that t
+his format does not preserve hardlinks due to the complexity of processing.
+The -a option is stated as being equivalent to the following: -rlptgoD which means this:
+  -r = recursive – process sub-folders and files found in our “source” location.
+  -l = links – when symlinks are encountered, recreate them on the target location.
+  -p = permissions – tells rsync to set target permissions the same as source.
+  -t = times – tells rsync to set target times the same as source.
+  -q = quiet – tells rsync to keep its output minimal, though we add a level of
+verbose with the command -v right after this. To make the process complete “quiet”,
+remove the “v” in the above command.
+  -o = owner – tells rsync that if it's run as root, set the target files owner the same as source.
+-D = this is equivalent to using these two commands: --devices --specials
+ --devices = causes rsync to transfer character and block device files to
+the remote system to recreate these devices. Unfortunately, if you do not
+also include --super in the same command, this has no effect.
+ --specials = causes rsync to transfer special files such as named sockets
+and fifos.
+-g is used to preserve “group” of the source file to the target.
+-E is used to preserve “executable” of the source file to the target.
+-v is used to increase the verbosity that is displayed. After we are sure we are
+backing up what we want, the “v” can be removed. I have left it in, because I
+run this process from a cron job, and prefer to “see” what it did.
+I leave it up to the individual to decide.
+-z is used to compress the data it needs to “transfer” or copy, this makes the copy
+process take less time, because the data being transferred is smaller in size than its real size.
+--delete-after = target files/folders that are no longer on the source are
+deleted after transfer, not before. This “after” is used in case of problems
+or a crash, and the “delete” is used to keep target files that no longer
+exist on source system from hanging around and not cleaned up on our target
+location.
+--exclude = a pattern used to exclude files or folders with. In the
+example, --exclude=“*~” would exclude ANY and ALL files or folders ending
+with the “~” character from being backed up. Only one pattern can be supplied
+with the --exclude option, so if more than one is needed, you need to supply
+additional exclude lines on the command line.
+</pre>
+				<p>I tillæg findes disse parametre du kan anvende:</p>
+<pre>
+-c – which will add another level of checks into the source being compared to the target after the copy process,
+but it adds more time to the copy process, and rsync already does comparisons of the source and target files
+during its processing, so this option was not included for the simple fact it slows the complete process down,
+and is only a form of redundancy, which is not needed.
+--super – which, as the man page describes it, the receiver, or target system,
+will attempt super-user activities
+--dry-run – which will show what would have been transferred. This is kind of
+like using the -s option with apt-get install, or apt-get dist-upgrade.
+</pre>
+				<p>Resten af vores kommandoe er kilde-filen/mappen, og dernæst den mappe der er vores mål.</p>
+
+				<h5>Kommando eksempler:</h5>
+<pre>
+rsync -agEvz --delete-after --exclude=”*~” morpheus:/home/tartie /media/sda7/SysBackups/morpheus/home
+</pre>
+				<p>Denne kommando kopierer all filerne og mapperne under /home/tartie på systemet der oversættes af navnet “morpheus”, og placere dem i /media/sda7/SysBackups/morpheus/home mappen – bevarende mappestrukturen fra tartie mappen og udad.</p>
+<pre>
+rsync -agEvz --delete-after --exclude=”*~” /home/tartie neo:/media/sda7/SysBackups/morpheus/home
+</pre>
+				<p>Denne kommando er den modsatte af den forrige, den vil “skubbe” /home/tartie mappen, dets indhold og undermapper over i systemet med navnet neo ind i den samme mappe – bemærk at et system opfattes som remote når det har “:” (kolon) foran navnet.</p>
+<pre>
+rsync -agEvz --delete-after --exclude=”*~” /home/cuddles /media/sda7/SysBackups/neo/home
+</pre>
+				<p>Denne kommando laver en lokal til lokal kopiering, bemærk fraværet af kolon i både kilde og mål destinationerne. Denne kommando kopierer lokalt /home/cuddles delen til det samme systems /media/sda7/SysBackups/neo/home destination.</p>
+
+				<p>Lad os kigge på en multiple exclude rsync kommando:</p>
+<pre>
+rsync -agEvz --delete-after --exclude=”*~” --exclude=”*.c” --exclude=”*.o” "/*" /media/sda7/SysBackups/neo
+</pre>
+				<p>Ovenstående kommando vil sikkerhedskopiere ALT fra root på lokal systemet, og alle filerne og mapperne, placere dem i mål destinationen /media/sda7/SysBackups/neo – men nu vil kommandoen ekskluderer alle filer eller mapperr der ender med et “~”, eller et “.c”, eller et “.o”</p>
+
+				<p class="highlight-2">Nedenunder er et eksempel på en rsync kommando der bør undgås; En kommando der beskriver en remote-til-remote kopiering:</p>
+<pre>
+rsync -agEvz --delete-after --exclude=”*~” morpheus:/home/tartie trinity:/home
+</pre>
+				<p class="highlight-2">Som tidligere nævnt er dette en begrænsning i rsync.</p>
+
+				<p>En sidste kommando som eksempel. Lad os se på en remote til lokal rsync som den vil se ud hvis vi anvender ip-adresser istedet for hostnames.</p>
+
+				<p>Den første kommando er med navne, den næste er den samme kommando, blot med ip-adressen istedet</p>
+<pre>
+rsync -agEvz --delete-after --exclude=”*~” morpheus:/home/tartie /media/sda7/SysBackups/morpheus/home
+</pre>
+<pre>
+rsync -agEvz --delete-after --exclude=”*~” 192.168.1.16:/home/tartie /media/sda7/SysBackups/morpheus/home
+</pre>
+				<p>Som sagt skal du ikke bruge hostnames, men som du ser kan det øge dit overblik over hvad du foretager dig.</p>
+
+				<p>Du bør nu være i stand til at designe dine egne simple kommandoer, enten ud fra eksemplerne vi her har givet, eller ved at sammensætte dine helt egne ud fra de anvendelige parametre.</p>
+	</div>
+			<div id="rev">Page last revised 14/08/2010 0100 UTC</div>
+
+
+</div>
+</body>
+</html>

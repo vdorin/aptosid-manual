@@ -1,0 +1,731 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cs" lang="cs">
+<head>
+	<title>Manuály aptosidu - zaváděcí kódy</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Poslední revizi překladu provedl pumrel 1.6.2011-->
+<!--htdig_noindex--><div id="menu"> <!-- menu starts here -cz lang maintainer pumrel-->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="Na stránky aptosid.com, forum a wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-cz.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="Prohledávat manuál" alt="Search" />Hledat online - offline</a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Vyberte jiný jazyk - Choose another language CS, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="lang-switch CS, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-cz.htm">Manuál operačního systému aptosid</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-cz.htm#welcome-gen">Manuál operačního systému aptosid &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-cz.htm#cred-team">Autoři</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-cz.htm#how-to">Jak používat tento manuál &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-cz.htm#how-to">Jak používat tento manuál</a></li>
+					  <li><a href="welcome-cz.htm#table-contents">Obsah</a></li>
+					</ul>
+					</li>
+		<li><a href="help-cz.htm#help-gen">Kde hledat pomoc &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-cz.htm#help-gen">Kde a jak hledat pomoc</a></li>
+					  <li><a href="help-cz.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-cz.htm#welcome-quick">První kroky se aptosidem</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-cz.htm">Obsah ISO, Vydání, Zrcadla pro stahování a Vypalování</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-cz.htm#cd-content">Obsah ISO a nároky na systém &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-cz.htm#rolling">Poznámky k vydání</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-cz.htm#download-aptosid">Zrcadla pro stahování a vypálení &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-cz.htm#md5">Kontrolní součet md5</a></li>
+					  <li><a href="cd-dl-burning-cz.htm#burn-nero">Vypálení ve Windows</a></li>
+					  <li><a href="cd-dl-burning-cz.htm#burn-linux">Vypálení v Linuxu</a></li>
+					  <li><a href="cd-no-gui-burn-cz.htm#burning-no-gui">Skript burniso</a></li>
+					  <li><a href="cd-no-gui-burn-cz.htm#burn-no-gui-gen">Vypálení z terminálu</a></li>
+					  <li><a href="cd-dl-burning-cz.htm#download-aptosid">Zrcadla pro stažení aptosidu</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-cz.htm">Live Mód</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-cz.htm#rootpw">Root-heslo v aptosid-Live</a></li>
+				<li><a href="live-mode-cz.htm#live-cd-installsoft">Instalace programů pod aptosid-Live</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-cz.htm">Terminál / Konsole</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-cz.htm#term-kon">Terminál / Konsole &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-cz.htm#term-kon">Terminál / Konsole</a></li>
+					  <li><a href="term-konsole-cz.htm#colours">Barevné řádky terminálu</a></li>
+					  <li><a href="term-konsole-cz.htm#cli-help">Nápověda terminálu</a></li>
+					  <li><a href="help-cz.htm#init3-tools">Užitečné nástroje v textovém módu(tty) - init 3</a></li>
+					  <li><a href="term-konsole-cz.htm#term-cmds">Seznam příkazů v terminálu Linuxu</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-cz.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-cz.htm">Spouštěcí příkazy</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-cz.htm#cheatcodes">Spouštěcí příkazy pod Live-ISO specifické pro aptosid</a></li>
+				<li><a href="cheatcodes-cz.htm#cheatcodes-linux">Spouštěcí příkazy pro Linux</a></li>
+				<li><a href="cheatcodes-vga-cz.htm#vga">VGA kódy</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-cz.htm">Vytváření diskových oddílů - tradičně, s GPT a s LVM</a>
+		<ul class="sub-menu" id="sm6">
+			  <li><a href="part-gparted-cz.htm#hd-ntfs3g">Zapisování na diskový oddíl NTFS pomocí ntfs-3g</a></li>
+			  <li><a href="part-lvm-cz.htm#part-lvm">Vytvoření disk. oddílů pro použití LVM - Logical Volume Manager</a></li>
+			  <li><a href="part-gparted-cz.htm#partition">Vytvoření diskových oddílů v grafickém rozhraní &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-cz.htm#partition">Vytvoření diskových oddílů pomocí GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-cz.htm#ntfs">Změna velikosti diskového oddílu NTFS pomocí GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-cz.htm#partition">Vytvoření diskových oddílů s CLI &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-cz.htm#partition">Vytváření diskových oddílů pomocí cfdisk</a></li>
+					    <li><a href="part-cfdisk-cz.htm#formating">Formátování po vytvoření diskových oddilů pomocí cfdisk</a></li>
+					    <li><a href="part-gdisk-cz.htm#gdisk-6">Formátování po vytvoření diskových oddílů s gdiskem</a></li>
+					    <li><a href="part-gdisk-cz.htm#gdisk-1">Diskové oddíly GPT s gdiskem</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-cz.htm#part-example">Základy vytváření diskových oddílů &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-cz.htm#part-example">Příklady velikostí diskových oddílů</a></li>
+					  <li><a href="part-uuid-cz.htm#uuid">UUID, přestavění fstab a vytváření přípojných bodů</a></li>
+					  <li><a href="part-cfdisk-cz.htm#disknames">Pojmenovávání diskových oddílů a ostatní</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-cz.htm">Možnosti instalace - HD, USB, VM and Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-cz.htm#Inst-prep">Příprava instalace &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-cz.htm#Inst-prep">Příprava instalace</a></li>
+					  <li><a href="hd-install-cz.htm#Installation">Instalace na pevný disk</a></li>
+					  <li><a href="hd-install-cz.htm#first-hd-boot">První spuštění</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-cz.htm#fromiso">Načtení pomocí fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-cz.htm#fromiso">Načtení pomocí fromiso - Přehled</a></li>
+					  <li><a href="hd-install-opts-cz.htm#grub2-fromiso">Načtení 'fromiso' s Grub2</a></li>
+					  <li><a href="hd-install-opts-cz.htm#fromiso-persist">fromiso a persist</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-cz.htm#usb-hd">Instalace na USB-disk &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-cz.htm#usb-hd">Instalace na USB-disk - specifické pro aptosid - aptosid-on-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-cz.htm#raw-usb">Zapsaní aptosidu na USB/SSD-disk s jakýmkoliv systémem Linux, MS Windows nebo Mac OS X</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-cz.htm#install-crypt">Instalace na šifrovené diskové oddíly - cryptroot</a></li>
+		  <li><a href="nbdboot-cz.htm#nbd1">Načtení aptosidu přes síť</a></li>
+		  <li><a href="hd-install-vmopts-cz.htm#vm">Možnosti instalace ve Virtuálním Stroji</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-cz.htm">Grafické karty, monitory, Xorg,  &amp; ovladače</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-cz.htm#mon-res">Rozlišení obrazovky a monitory &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-cz.htm#mon-res">Rozlišení obrazovky a monitory</a></li>
+					  <li><a href="hw-dev-mon-cz.htm#xrandr">Dva monitory a xrandr</a></li>
+					  <li><a href="hw-dev-mon-cz.htm#mon-binary">Dva monitory (za použití binárních ovladačů)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-cz.htm#foss-xorg">Ovladače GPU &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-cz.htm#ati-3d">3D ovladače pro AMD/ATI</a></li>
+					  <li><a href="gpu-cz.htm#intel">2D a 3D ovladače pro Intel</a></li>
+					  <li><a href="gpu-cz.htm#nvidia">3D ovladače pro Nvidia</a></li>
+					  <li><a href="gpu-cz.htm#foss-xorg">Svobodné ovladače Xorg</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-cz.htm#fw-detect">Rozpoznání firmwaru - non-free</a></li>
+			  <li><a href="nf-firm-cz.htm#non-free-firmware">Přidání non-free do seznamu zdrojů</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-cz.htm#install-add">Správci oken</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-cz.htm">KDE and XFCE Správci oken &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-cz.htm#xfce-notes">Užitečné dodatečné aplikace pro Xfce</a></li>
+					    <li><a href="wm-dm-cz.htm#install-add">Užitečné dodatečné aplikace pro KDE</a></li>
+					    <li><a href="wm-dm-cz.htm#desk-freeze">Zamrznutí plochy</a></li>
+					    <li><a href="wm-dm-cz.htm#kde-login">Nejde se přihlásit do KDE</a></li>
+					    <li><a href="wm-dm-cz.htm#ch-th">Změna témat</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-cz.htm#dm">Instalace dodatečných správců zobrazení</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-cz.htm">Připojení k internetu, WiFi, LAN a sítím</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-cz.htm">Sestava LAMP aptosidu &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-cz.htm#serv-apache">Sestava LAMP aptosidu</a></li>
+					    <li><a href="lamp-apache-cz.htm#serv-ftp">FTP klienty</a></li>
+					    <li><a href="lamp-apache-cz.htm#serv-sec">Bezpečnostní protokoly</a></li>
+					    <li><a href="lamp-apache-cz.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-cz.htm#serv-mysql">Nastavení MySQL</a></li>
+					    <li><a href="lamp-ppp-cz.htm#serv-php">PHP v Apache</a></li>
+					    <li><a href="ntp-server-cz.htm#ntp-server">Nastavení Timeserveru</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-cz.htm#tor">Firewally and Soukromí &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-cz.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-cz.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-cz.htm#firewalls">Firewally</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-cz.htm#ssh-x">SSH a Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-cz.htm#setup">Nastavení Samba-Serveru</a></li>
+						  <li><a href="samba-cz.htm#configure">Konfigurace SAMBY (Windows)</a></li>
+						  <li><a href="ssh-cz.htm#ssh-fs">Vzdálené připojení přes SSH</a></li>
+						  <li><a href="ssh-cz.htm#ssh-x">Aplikace X přes SSH</a></li>
+						  <li><a href="ssh-cz.htm#ssh-f">Grafické rozhraní přes SSH s Konquerorem</a></li>
+						  <li><a href="ssh-cz.htm#ssh-w">Přenos rozhraní X přes SSH z Windows-PC</a></li>
+						  <li><a href="ssh-cz.htm#ssh">SSH a soukromí</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-cz.htm#netcardconfig">WIFI připojení &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-cz.htm#netcardconfig">Připojení se online - Ceni</a></li>
+						    <li><a href="inet-wpagui-cz.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-cz.htm#net-set1">WiFi - nastavení pro WiFi roaming</a></li>
+						    <li><a href="inet-wpa-cz.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-cz.htm#hotswitch">Přepínání síťového připojení mezi WiFi a Kabelovým</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-cz.htm#netcardconfig">Kabelové připojení &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-cz.htm#dial-mod">56k Modemy</a></li>
+						    <li><a href="inet-ceni-cz.htm#netcardconfig">Připojení se online- Ceni</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-cz.htm#fw-detect">Rozpoznání firmwaru - non-free</a></li>
+		<li><a href="nf-firm-cz.htm#non-free-firmware">Přidání non-free do seznamu zdrojů</a></li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-cz.htm">Správa balíčků dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-cz.htm#apt-cook">APT návod a zdroje softwaru &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-cz.htm#apt-cook">APT-návod (CookBook) a zdroje software</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#apt-install">Instalace nového balíčku</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#apt-delete">Smazání balíčku</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#apt-downgrade">Podržení balíčku nebo instalace nižší verze</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#apt-cache">Vyhledávání balíčků pomocí apt-cache</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#gui-pacsea">Vyhledávání balíčků v graf. rozhraní</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-cz.htm#kern-upgrade">Povýšení verze jádra (kernel) &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-cz.htm#kern-remove">Odstranění jádra</a></li>
+					    <li><a href="sys-admin-kern-upg-cz.htm#kern-upgrade">Povýšení verze jádra</a></li>
+					    <li><a href="sys-admin-kern-upg-cz.htm#dmakms">Dynamická instalaca modulů jádra s dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-cz.htm#apt-upgrade">Aktualizace nainstalovaného systému - dist-upgrade - Přehled &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-cz.htm#live-cd-upgrade">Aktualizace pomocí Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-cz.htm#approx">dist-upgrade vícero počítačů přes LAN</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#apt-upgrade">Aktualizace nainstalovaného systému - dist-upgrade - Přehled</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#du-st">Aktualizace nainstalovaného systému - dist-upgrade - jednotlivé kroky</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-cz.htm">Administrace systému</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-cz.htm#bois-prep">Povýšení verze BIOSu pomocí FreeDOS</a></li>
+		<li><a href="vir-rkits-cz.htm#virus-rkits">Vyhledávače virů a rootkitů</a></li>
+		<li><a href="hd-install-cz.htm#adduser">Přidání uživatelů a hesel &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-cz.htm#adduser">Přidání nového uživatele</a></li>
+					    <li><a href="sys-admin-gen-cz.htm#pw-lost">Ztracené root heslo, nové heslo</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-cz.htm#start-services">Služby a úrovně spuštění init &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-cz.htm#start-services">Spouštění/zastavení služeb</a></li>
+					    <li><a href="sys-admin-gen-cz.htm#pkill">Zabití služby nebo procesu</a></li>
+					    <li><a href="sys-admin-gen-cz.htm#init">Úrovně spuštění aptosidu - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-cz.htm#rsync">Zálohování systému &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-cz.htm#rdiff">Zálohování pomocí rdiff</a></li>
+					    <li><a href="sys-admin-rsync-cz.htm#rsync">Zálohování pomocí rsync</a></li>
+					    <li><a href="home-cz.htm#home-bu">Přesunutí /home adresáře</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-cz.htm#fonts">CUPS, fonty a zvuk &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-cz.htm#fonts">Fonty</a></li>
+					     <li><a href="sys-admin-gen-cz.htm#cups">CUPS - tiskový systém</a></li>
+					     <li><a href="sys-admin-gen-cz.htm#sound">Zvukový mixér</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-cz.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-cz.htm#chroot">Grub2 - obnova Grubu s pomocí chroot</a></li>
+					    <li><a href="sys-admin-grub2-cz.htm#mbr-over-grub2">Grub2 - přepsání zaváděcího sektoru MBR</a></li>
+					    <li><a href="sys-admin-grub2-cz.htm#multi-os">Grub2 - zavádění  více systémů</a></li>
+					    <li><a href="sys-admin-grub2-cz.htm#grub1-grub2">Grub2 - povýšení z Grub1</a></li>
+					    <li><a href="sys-admin-grub2-cz.htm#grub2">Grub2 - přehled</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Sponsored by webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid is proudly hosted by webtropia.com" alt="aptosid is proudly hosted by webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+	<div class="divider" id="cheatcodes">
+<!--		<h2 id="top-header">Cheat codes</h2>-->
+		<h2 id="top-header">Zaváděcí kódy</h2>
+<!--							<p> If the possible values are listed in the "Values" field of the table, they must be appended to the "cheatcode" with an <span class="highlight-2">=</span> sign. For example, if 1280x1024 was the desired value for the screen cheatcode, then you would type <span class="highlight-3">screen=1280x1024</span> into the grub boot prompt, or for language, <span class="highlight-3">lang=pt</span>.</p>-->
+							<p> Jestliže se možné hodnoty nachází v tabulce v poli "Hodnoty", tak musí být k  "zaváděcímu kódu" připsány se znaménkem <span class="highlight-2">=</span>. Například, jestliže bylo 1280x1024 zamýšlenou hodnotou zaváděcího kódu pro obraz, tak byste měli napsat <span class="highlight-3">screen=1280x1024</span> do řádky zavaděče grub. Pro jazyk <span class="highlight-3">lang=pt</span>.</p>
+<!-- 							<p><a href="http://www.kernel.org/pub/linux/kernel/people/gregkh/lkn/lkn_pdf/ch09.pdf"> Reference to an exhaustive list for kernel boot codes</a></p>-->
+ 							<p><a href="http://www.kernel.org/pub/linux/kernel/people/gregkh/lkn/lkn_pdf/ch09.pdf"> Odkaz na vyčerpávající seznam zaváděcích kódů jádra</a></p>
+  </div>
+  <div class="divider" id="cheatcodes-aptosid">
+<!--			<h2>aptosid specific cheatcodes (Live.iso only)</h2>-->
+			<h2>Specifické spouštěcí kódy pro aptosid (pouze live.iso)</h2>
+		<table>
+			<tbody>
+				<tr>
+<!--					<th>Cheatcode</th>
+					<th>Value</th>
+					<th>Description</th>-->
+					<th>Zaváděcí kód</th>
+					<th>Hodnota</th>
+					<th>Popis</th>
+				</tr>
+				<tr>
+					<td><b>blacklist</b></td>
+<!--					<td>modulename</td>
+					<td>to temporarily disable modules before udev</td>-->
+					<td>název modulu</td>
+					<td>k dočasnému vyřazení modulu před udev</td>
+				</tr>
+				<tr>
+					<td><b>desktop</b></td>
+					<td>kde</td>
+<!--					<td>Choose your desktop</td>-->
+					<td>Výběr vašeho správce plochy</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>fluxbox</td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td><b>fromiso</b></td>
+					<td></td>
+<!--					<td><a href="hd-install-opts-cz.htm#fromiso">Please refer to booting "fromiso"</a></td>-->
+					<td><a href="hd-install-opts-cz.htm#fromiso">Odkaže se prosím na zavádění s "fromiso"</a></td>
+				</tr>
+				<tr>
+					<td><b>hostname</b></td>
+					<td>název počítače</td>
+<!--					<td>Hostname, changes hostname of live-cd system</td>-->
+					<td>Bude změněn název počítač systému live-cd</td>
+				</tr>
+				<tr>
+					<td><b>lang</b></td>
+					<td> be, bg, cz, da, de, de_CH, el, en, en_AU, en_GB, en_IE, es, fr, fr_BE, ga, hr, hu, it, ja, nl, nl_BE, pl, pt (pt_BR), pt_PT, ro, ru, zh</td>
+<!--					<td>Sets your language. It will also set locale, keyboard layout (console and X), timezone and a debian mirror.<br />
+					When the extended form <span class="highlight-3">lang=ll_cc</span> or <span class="highlight-3">lang=ll-cc</span> is given, <span class="highlight-3">ll</span> will be used for language selection and <span class="highlight-3">cc</span> for keyboard, mirror and timezone selection (e.g. <span class="highlight-3"> lang=fr-be</span>). The defaults for English are en_US with UTC as the timezone and for German, de with Europe/Berlin as the timezone. Example: <span class="highlight-3">lang=pt_PT tz=Pacific/Auckland</span></td>-->
+					<td>Nastaví jazyk. Také nastaví 'locale', rozvržení klávesnice (v konzoli a X), časové pásmo a zrcadlo pro Debian.<br />
+					Pokud je použita prodloužená forma <span class="highlight-3">lang=ll_cc</span> nebo <span class="highlight-3">lang=ll-cc</span>, <span class="highlight-3">ll</span> bude použito pro výběr jazyka  a <span class="highlight-3">cc</span> pro klávesnici, časové pásmo a výběr zrcadla (například <span class="highlight-3"> lang=fr-be</span>). Výchozí nastavení pro angličtinu jsou en_US s UTC jako časovým pásmem a pro němčinu, de s Europe/Berlin jako časovým pásmem. Příklad: <span class="highlight-3">lang=pt_PT tz=Pacific/Auckland</span></td>
+				</tr>
+				<tr>
+					<td><b>md5sum</b></td>
+					<td></td>
+<!--					<td>Test integrity of medium</td>-->
+					<td>Zkontroluje integritu media</td>
+				</tr>
+				<tr>
+					<td><b>noaptlang</b></td>
+					<td></td>
+<!--					<td>Disable installation of localisation packages based on the selected language</td>-->
+					<td>Zruší instalaci lokalizačních balíčků založených na zvoleném jazyce</td>
+				</tr>
+				<tr>
+					<td><b>nocpufreq</b></td>
+					<td></td>
+<!--					<td>Do not activate Speedstep/Powernow</td>-->
+					<td>Nebude aktivováno Speedstep/Powernow</td>
+				</tr>
+				<tr>
+					<td><b>nodhcp</b></td>
+					<td></td>
+<!--					<td>Disable automatic use of Dynamic Host Configuration Protocol (attempts to automatically setup your ethernet connections).</td>-->
+					<td>Bude vypnuto automatické použití Dynamic Host Configuration Protocol (pokus o automatické nastavení vašeho připojení ethernet).</td>
+				</tr>
+				<tr>
+					<td><b>noeject</b></td>
+					<td></td>
+<!--					<td>Do not prompt to eject the cd on shutdown</td>-->
+					<td>Nebudete požádání o vysunutí cd při vypnutí</td>
+				</tr>
+				<tr>
+					<td><b>nofstab</b></td>
+					<td></td>
+<!--					<td>Do not write a new fstab</td>-->
+					<td>Nebude zapsán nový fstab</td>
+				</tr>
+				<tr>
+					<td><b>nointro</b></td>
+					<td></td>
+<!--					<td>Skips the display of index.html on live desktop startup</td>-->
+					<td>Bude přeskočeno zobrazení index.html při spuštění live plochy</td>
+				</tr>
+				<tr>
+					<td><b>nonetwork</b></td>
+					<td></td>
+<!--					<td>Disables the automatic configuration of network devices at boot time</td>-->
+					<td>Při zavádění bude vypnuta automatická konfigurace síťových zařízení</td>
+				</tr>
+				<tr>
+					<td><b>noswap</b></td>
+					<td></td>
+<!--					<td>Do not enable the swap partition</td>-->
+					<td>Nebude aktivován diskový oddíl swap</td>
+				</tr>
+				<tr>
+					<td><b>persist</b></td>
+					<td></td>
+<!--					<td><a href="hd-install-opts-cz.htm#fromiso-persist">Please refer to "fromiso" and persist</a></td>-->
+					<td><a href="hd-install-opts-cz.htm#fromiso-persist">Prosím odkažte se na "fromiso" a persist</a></td>
+				</tr>
+				<tr>
+					<td><b>smouse</b></td>
+					<td></td>
+<!--					<td>Probe for serial mice with hwinfo</td>-->
+					<td>Bude vypátrána seriová myš pomocí hwinfo</td>
+				</tr>
+				<tr>
+					<td><b>toram</b></td>
+					<td></td>
+<!--					<td>Copy CD to RAM and start from there</td>-->
+					<td>CD se zkopíruje do RAM a bude spuštěno odtud</td>
+				</tr>
+				<tr>
+					<td><b>tz</b></td>
+					<td>tz=Europe/Dublin</td>
+<!--					<td>Sets your timezone. If your bios/hardware clock is set to UTC, use <span class="highlight-3">utc=yes</span>. <a href="/usr/share/zoneinfo/">   List of all timezones supported.</a></td>-->
+					<td>Nastaví vaše časové pásmo. Jestliže jsou vaše bios/hardwarové hodiny nastaveny na UTC, použijte <span class="highlight-3">utc=yes</span>Seznam dostupných časových zón získáte zkopírováním a vložení následujícího do vašeho prohlížeče: <span class="highlight-3"> file:///usr/share/zoneinfo/ </span> .</td>
+				</tr>
+			</tbody>
+		</table>
+
+	<div class="spacer02"></div>
+
+				      <h6>Zaváděcí kódy související s X</h6>
+<!--							<p>Either the xrandr or xmodule cheatcode should also be used if using other X related cheatcodes with a radeon, intel or mga graphics card.</p>-->
+							<p>Měly by být použity ještě zaváděcí kódy buď xrandr, anebo xmodule, pokud používáte zaváděcí kódy související s X spoulu s grafickou kartou radeon, intel nebo mga.</p>
+
+		<table>
+			<tbody>
+				<tr>
+<!--					<th>Cheatcode</th>
+					<th>Value</th>
+					<th>Description</th>-->
+					<th>Zaváděcí kód</th>
+					<th>Hodnota</th>
+					<th>Popis</th>
+				</tr>
+				<tr>
+					<td><b>dpi</b></td>
+<!--					<td>(e.g.) auto or XXX</td>
+					<td>Set desired  Dots Per Inch for your display. You can work out your screen's dpi from the width in pixels divided by the diagonal size in inches and multiplying this by 1.25 for a 4:3 screen, 1.18 for a 16:10 screen or 1.147 for a 16:9 screen.  For a 24" 1920x1080 screen it would be 1.147*1920/24 giving dpi=92 or a 15" 1600x1200 screen would be 1.25*1600/15 giving dpi=133.</td>-->
+					<td>(např.) auto nebo XXX</td>
+					<td>Nastaví požadované Body na palec pro vaší obrazovku. Můžete odhadnout dpi vaší obrazovky ze šířky v pixelech vydělené diagonální rozměrem v palcích a vynásobením tohoto čísla faktorem 1.25 pro obrazovku 4:3, 1.18 pro obrazovku 16:10 nebo 1.147 pro obrazovku 16:9.  Pro obrazovku 24" 1920x1080 by to bylo 1.147*1920/24 giving dpi=92 nebo obrazovku 15" 1600x1200 pak 1.25*1600/15, což by dalo dpi=133.</td>
+				</tr>
+				<tr>
+					<td><b>hsync</b></td>
+<!--					<td> (e.g.) 80</td>
+					<td>Horizontal monitor refresh rate (kHz)</td>-->
+					<td> (např.) 80</td>
+					<td>Horizontální obnovovací frekvence (kHz)</td>
+				</tr>
+				<tr>
+					<td><b>noml</b></td>
+					<td></td>
+<!--					<td>Prevents X.org configuration from containing a list of Modelines and causes audodetection of the correct Mode</td>-->
+					<td>Zamezí konfiguraci X.org, aby obsahovala seznam modřádků a vynutí autodetekci správného módu</td>
+				</tr>
+				<tr>
+					<td><b>noxrandr</b></td>
+					<td></td>
+<!--					<td>Disable use of RandR 1.2 extensions by new X.org drivers and use legacy monitor probing techniques</td>-->
+					<td>Vypne použití rozšíření RandR 1.2 novými ovladači X.org a použije starší pátrací metody monitoru</td>
+				</tr>
+				<tr>
+					<td><b>screen</b></td>
+<!--					<td>(e.g.)  800x600</td>
+					<td>Sets your screen resolution, 1024x768, 1600x1200 etc</td>-->
+					<td>(např.)  800x600</td>
+					<td>Nastaví rozlišení obrazovky, 1024x768, 1600x1200 atd</td>
+				</tr>
+				<tr>
+					<td><b>vsync</b></td>
+<!--					<td>(e.g.) 60</td>
+					<td>Vertical monitor refresh rate (Hz)</td>-->
+					<td>(např.) 60</td>
+					<td>Vertikální obnovovací frekvence (Hz)</td>
+				</tr>
+				<tr>
+					<td><b>xdepth</b></td>
+<!--					<td>values: 8, 15, 16, 24</td>
+					<td>Default color depth to be used by X.org (not all drivers support 1 and 4)</td>-->
+					<td>hodnoty: 8, 15, 16, 24</td>
+					<td>Výchozí barevná hloubka použitá X.orgem (ne všechny ovladače podporují 1 a 4)</td>
+				</tr>
+
+				<tr>
+					<td><b>keytable</b></td>
+<!--					<td>(e.g.) us, de, gb</td>
+					<td>Keyboard Layout to be used by X.org</td>-->
+					<td>(např.) us, de, gb</td>
+					<td>Rozložení klávesnice použití X.orgem</td>
+				</tr>
+				<tr>
+					<td><b>xkbmodel</b></td>
+<!--					<td>(e.g.) pc105 </td>
+					<td>Keyboard model to be used by X.org</td>-->
+					<td>(např.) pc105 </td>
+					<td>Model klávisne použitý X.orgem</td>
+				</tr>
+				<tr>
+<!--					<td><b>xkboptions</b></td>
+					<td>(e.g.) grp:alt_shift_toggle</td>
+					<td>Keyboard variant to be used by X.org</td>-->
+					<td><b>xkboptions</b></td>
+					<td>(např.) grp:alt_shift_toggle</td>
+					<td>Varianta klávesnice použitá X.orgem</td>
+				</tr>
+				<tr>
+					<td><b>xkbvariant</b></td>
+<!--					<td>(e.g.) nodeadkeys, </td>
+					<td>to set a keyboard variant</td>-->
+					<td>(např.) nodeadkeys</td>
+					<td>pro nastavení varianty klávesnice</td>
+				</tr>
+				<tr>
+					<td><b>xmode </b></td>
+<!--					<td>(e.g.)  800x600</td>
+					<td>Sets your screen resolution, 1024x768, 1600x1200 etc</td>-->
+					<td>(např.)  800x600</td>
+					<td>Nastaví rozlišení obrazovky, 1024x768, 1600x1200 atd</td>
+				</tr>
+				<tr>
+<!--					<td><b>xmodule</b> or <b>xdriver</b></td>
+					<td>(e.g.) ati, fbdev, i810, intel, mga, nv, radeon, savage, vesa</td>
+					<td>use given X-module</td>-->
+					<td><b>xmodule</b> nebo <b>xdriver</b></td>
+					<td>(např.) ati, fbdev, i810, intel, mga, nv, radeon, savage, vesa</td>
+					<td>použije daný X-modul</td>
+				</tr>
+				<tr>
+					<td><b>xrandr</b></td>
+					<td></td>
+<!--					<td>Force X.org to be configured to use RandR 1.2 extensions of new X.org drivers</td>-->
+					<td>Donutí X.org, aby použil nové rozšíření RandR 1.2 nových ovladačů X.org</td>
+				</tr>
+				<tr>
+					<td><b>xrate</b></td>
+					<td>XX</td>
+<!--					<td>Force preferred refresh rate of RandR 1.2 supported X.org drivers, must be used in conjunction with xmode cheatcode <a href="http://wiki.debian.org/XStrikeForce/HowToRandR12">Comprehensive documentation is here</a></td>-->
+					<td>Nastaví upřednostňovanou obnovovací frekvenci podporovanou ovladači X.orgu RandR-u 1.2. Musí být použito spolu se zaváděím kódem xmode <a href="http://wiki.debian.org/XStrikeForce/HowToRandR12">Srozumitelná dokumentace je zde</a></td>
+				</tr>
+				<tr>
+					<td><b>xhrefresh</b></td>
+<!--					<td>(e.g.) 80 </td>
+					<td>Horizontal monitor refresh rate in X (kHz)</td>-->
+					<td>(např.) 80 </td>
+					<td>Horizontální obnovovací frekvence monitoru v X (kHz)</td>
+				</tr>
+				<tr>
+					<td><b>xvrefresh</b></td>
+<!--					<td> (e.g.) 60</td>
+					<td>Vertical monitor refresh rate in X (Hz)</td>-->
+					<td> (např.) 60</td>
+					<td>Vertikální obnovovací frekvence monitoru v X (Hz)</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="spacer02"></div>
+
+	<div class="divider" id="cheatcodes-linux">
+<!--			<h2>Common Linux kernel parameter cheatcodes</h2>-->
+			<h2>Běžné paramtery spouštěcích kódy Linuxového jádra</h2>
+		<table>
+			<tbody>
+				<tr>
+<!--					<th>Cheatcode</th>
+					<th>Value</th>
+					<th>Description</th>-->
+					<th>Zaváděcí kód</th>
+					<th>Hodnota</th>
+					<th>Popis</th>
+				</tr>
+				<tr>
+					<td><b>apm </b></td>
+					<td>off</td>
+<!--					<td>Power-off</td>-->
+					<td>Vypnutí</td>
+				</tr>
+				<tr>
+					<td><b>1, 2, 3, 4, 5</b></td>
+<!--					<td> (e.g.) 3 </td>
+					<td><b>init runlevel</b> numbers that can be manually placed on the Grub boot line <a href="sys-admin-gen-cz.htm#init">See aptosid runlevels - init</a></td>-->
+					<td> (např.) 3 </td>
+					<td>Číslo <b>spoustěcí úrovně init </b>, které může být ručně umístěno na zaváděcí řádek Grubu <a href="sys-admin-gen-cz.htm#init">Podívejte se na spouštěcí úrovně aptosidu - init</a></td>
+				</tr>
+					<td><b>console</b></td>
+					<td>For example: console=ttyS0,9600n8</td>
+					<td>If you enable a serial console with console=ttyS*,* the /etc/inittab file will be automatically updated to allow you to login on this serial port.</td>
+				</tr>
+				<tr>
+					<td><b>irqpoll</b></td>
+					<td></td>
+<!--					<td>Use IRQ poll</td>-->
+					<td>Použije IRQ poll</td>
+				</tr>
+				<tr>
+					<td><b>mem</b></td>
+<!--					<td>(e.g.) 128M, 1G</td>
+					<td>Ram size to be used</td>-->
+					<td>(např.) 128M, 1G</td>
+					<td>Velikost použité paměti</td>
+				</tr>
+				<tr>
+					<td><b>noagp</b></td>
+					<td></td>
+<!--					<td>Disable agp</td>-->
+					<td>Vypne agp</td>
+				</tr>
+				<tr>
+					<td><b>noapic</b></td>
+					<td></td>
+<!--					<td>Disable apic (Advanced Programmable Interrupt Controller)</td>-->
+					<td>Vypne apic (Advanced Programmable Interrupt Controller)</td>
+				</tr>
+				<tr>
+					<td><b>nodma</b></td>
+					<td></td>
+<!--					<td>Disable the use of Direct Memory Access for your drives</td>-->
+					<td>Vypne Direct Memory Access vašich disků</td>
+				</tr>
+				<tr>
+					<td><b>noisapnpbios</b></td>
+					<td></td>
+<!--					<td>Disable ISA Plug'n Play</td>-->
+					<td>Vypne ISA Plug'n Play</td>
+				</tr>
+				<tr>
+					<td><b>nomce</b></td>
+					<td></td>
+<!--					<td>Disable Machine Check Exception</td>-->
+					<td>Vypne Machine Check Exception</td>
+				</tr>
+				<tr>
+					<td><b>nosmp</b></td>
+					<td></td>
+<!--					<td>Disable Symetric Multi Processor support</td>-->
+					<td>Vypne podporu Symetric Multi Processor</td>
+				</tr>
+				<tr>
+					<td><b>pci</b></td>
+					<td>noacpi</td>
+<!--					<td>Do not use ACPI to route PCI interrupts</td>-->
+					<td>Nepoužije ACPI k vyhledání přerušení PCI</td>
+				</tr>
+				<tr>
+					<td><b>quiet</b></td>
+					<td></td>
+<!--					<td>Don't list everything to console</td>-->
+					<td>Nebude vypisovat vše do konzole</td>
+				</tr>
+				<tr>
+					<td><b>vga</b></td>
+					<td>normal</td>
+<!--					<td>Look here for vga codes: <a href="cheatcodes-vga-cz.htm#vga">VGA Cheatcodes</a></td>-->
+					<td>Podívejte se zde na vga kódy: <a href="cheatcodes-vga-cz.htm#vga">Zaváděcí kódy VGA </a></td>
+				</tr>
+				<tr>
+					<td><b>video</b></td>
+<!--					<td>(e.g.) DVI-0:800x600 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br /> or <br /><br /> 800x600</td>
+					<td>For KMS  enabled cards. Applies to intel and ati cards (the radeon driver), where DVI-X/LVDS-X is the video output as shown by xrandr.</td>-->
+					<td>(např.) DVI-0:800x600 <br /> nebo <br /><br /> 800x600</td>
+					<td>Pro karty se zapnutým KMS. Vztahuje se ke kartám ati (ovladač radeon) a intel, kde je DVI-X/LVDS-X video výstup zobrazený v xrandru.</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div id="rev">Obsah naposledy revidován 02/04/2012 1115 UTC</div>
+
+</div>
+</body>
+</html>

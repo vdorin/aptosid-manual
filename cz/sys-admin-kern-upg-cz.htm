@@ -1,0 +1,499 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cs" lang="cs">
+<head>
+	<title>Manuály aptosidu - Aktualizace jádra</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Poslední revizi překladu provedl pumrel 1.6.2011-->
+<!--htdig_noindex--><div id="menu"> <!-- menu starts here -cz lang maintainer pumrel-->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="Na stránky aptosid.com, forum a wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-cz.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="Prohledávat manuál" alt="Search" />Hledat online - offline</a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Vyberte jiný jazyk - Choose another language CS, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="lang-switch CS, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-cz.htm">Manuál operačního systému aptosid</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-cz.htm#welcome-gen">Manuál operačního systému aptosid &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-cz.htm#cred-team">Autoři</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-cz.htm#how-to">Jak používat tento manuál &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-cz.htm#how-to">Jak používat tento manuál</a></li>
+					  <li><a href="welcome-cz.htm#table-contents">Obsah</a></li>
+					</ul>
+					</li>
+		<li><a href="help-cz.htm#help-gen">Kde hledat pomoc &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-cz.htm#help-gen">Kde a jak hledat pomoc</a></li>
+					  <li><a href="help-cz.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-cz.htm#welcome-quick">První kroky se aptosidem</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-cz.htm">Obsah ISO, Vydání, Zrcadla pro stahování a Vypalování</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-cz.htm#cd-content">Obsah ISO a nároky na systém &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-cz.htm#rolling">Poznámky k vydání</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-cz.htm#download-aptosid">Zrcadla pro stahování a vypálení &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-cz.htm#md5">Kontrolní součet md5</a></li>
+					  <li><a href="cd-dl-burning-cz.htm#burn-nero">Vypálení ve Windows</a></li>
+					  <li><a href="cd-dl-burning-cz.htm#burn-linux">Vypálení v Linuxu</a></li>
+					  <li><a href="cd-no-gui-burn-cz.htm#burning-no-gui">Skript burniso</a></li>
+					  <li><a href="cd-no-gui-burn-cz.htm#burn-no-gui-gen">Vypálení z terminálu</a></li>
+					  <li><a href="cd-dl-burning-cz.htm#download-aptosid">Zrcadla pro stažení aptosidu</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-cz.htm">Live Mód</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-cz.htm#rootpw">Root-heslo v aptosid-Live</a></li>
+				<li><a href="live-mode-cz.htm#live-cd-installsoft">Instalace programů pod aptosid-Live</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-cz.htm">Terminál / Konsole</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-cz.htm#term-kon">Terminál / Konsole &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-cz.htm#term-kon">Terminál / Konsole</a></li>
+					  <li><a href="term-konsole-cz.htm#colours">Barevné řádky terminálu</a></li>
+					  <li><a href="term-konsole-cz.htm#cli-help">Nápověda terminálu</a></li>
+					  <li><a href="help-cz.htm#init3-tools">Užitečné nástroje v textovém módu(tty) - init 3</a></li>
+					  <li><a href="term-konsole-cz.htm#term-cmds">Seznam příkazů v terminálu Linuxu</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-cz.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-cz.htm">Spouštěcí příkazy</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-cz.htm#cheatcodes">Spouštěcí příkazy pod Live-ISO specifické pro aptosid</a></li>
+				<li><a href="cheatcodes-cz.htm#cheatcodes-linux">Spouštěcí příkazy pro Linux</a></li>
+				<li><a href="cheatcodes-vga-cz.htm#vga">VGA kódy</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-cz.htm">Vytváření diskových oddílů - tradičně, s GPT a s LVM</a>
+		<ul class="sub-menu" id="sm6">
+			  <li><a href="part-gparted-cz.htm#hd-ntfs3g">Zapisování na diskový oddíl NTFS pomocí ntfs-3g</a></li>
+			  <li><a href="part-lvm-cz.htm#part-lvm">Vytvoření disk. oddílů pro použití LVM - Logical Volume Manager</a></li>
+			  <li><a href="part-gparted-cz.htm#partition">Vytvoření diskových oddílů v grafickém rozhraní &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-cz.htm#partition">Vytvoření diskových oddílů pomocí GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-cz.htm#ntfs">Změna velikosti diskového oddílu NTFS pomocí GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-cz.htm#partition">Vytvoření diskových oddílů s CLI &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-cz.htm#partition">Vytváření diskových oddílů pomocí cfdisk</a></li>
+					    <li><a href="part-cfdisk-cz.htm#formating">Formátování po vytvoření diskových oddilů pomocí cfdisk</a></li>
+					    <li><a href="part-gdisk-cz.htm#gdisk-6">Formátování po vytvoření diskových oddílů s gdiskem</a></li>
+					    <li><a href="part-gdisk-cz.htm#gdisk-1">Diskové oddíly GPT s gdiskem</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-cz.htm#part-example">Základy vytváření diskových oddílů &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-cz.htm#part-example">Příklady velikostí diskových oddílů</a></li>
+					  <li><a href="part-uuid-cz.htm#uuid">UUID, přestavění fstab a vytváření přípojných bodů</a></li>
+					  <li><a href="part-cfdisk-cz.htm#disknames">Pojmenovávání diskových oddílů a ostatní</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-cz.htm">Možnosti instalace - HD, USB, VM and Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-cz.htm#Inst-prep">Příprava instalace &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-cz.htm#Inst-prep">Příprava instalace</a></li>
+					  <li><a href="hd-install-cz.htm#Installation">Instalace na pevný disk</a></li>
+					  <li><a href="hd-install-cz.htm#first-hd-boot">První spuštění</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-cz.htm#fromiso">Načtení pomocí fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-cz.htm#fromiso">Načtení pomocí fromiso - Přehled</a></li>
+					  <li><a href="hd-install-opts-cz.htm#grub2-fromiso">Načtení 'fromiso' s Grub2</a></li>
+					  <li><a href="hd-install-opts-cz.htm#fromiso-persist">fromiso a persist</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-cz.htm#usb-hd">Instalace na USB-disk &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-cz.htm#usb-hd">Instalace na USB-disk - specifické pro aptosid - aptosid-on-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-cz.htm#raw-usb">Zapsaní aptosidu na USB/SSD-disk s jakýmkoliv systémem Linux, MS Windows nebo Mac OS X</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-cz.htm#install-crypt">Instalace na šifrovené diskové oddíly - cryptroot</a></li>
+		  <li><a href="nbdboot-cz.htm#nbd1">Načtení aptosidu přes síť</a></li>
+		  <li><a href="hd-install-vmopts-cz.htm#vm">Možnosti instalace ve Virtuálním Stroji</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-cz.htm">Grafické karty, monitory, Xorg,  &amp; ovladače</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-cz.htm#mon-res">Rozlišení obrazovky a monitory &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-cz.htm#mon-res">Rozlišení obrazovky a monitory</a></li>
+					  <li><a href="hw-dev-mon-cz.htm#xrandr">Dva monitory a xrandr</a></li>
+					  <li><a href="hw-dev-mon-cz.htm#mon-binary">Dva monitory (za použití binárních ovladačů)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-cz.htm#foss-xorg">Ovladače GPU &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-cz.htm#ati-3d">3D ovladače pro AMD/ATI</a></li>
+					  <li><a href="gpu-cz.htm#intel">2D a 3D ovladače pro Intel</a></li>
+					  <li><a href="gpu-cz.htm#nvidia">3D ovladače pro Nvidia</a></li>
+					  <li><a href="gpu-cz.htm#foss-xorg">Svobodné ovladače Xorg</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-cz.htm#fw-detect">Rozpoznání firmwaru - non-free</a></li>
+			  <li><a href="nf-firm-cz.htm#non-free-firmware">Přidání non-free do seznamu zdrojů</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-cz.htm#install-add">Správci oken</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-cz.htm">KDE and XFCE Správci oken &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-cz.htm#xfce-notes">Užitečné dodatečné aplikace pro Xfce</a></li>
+					    <li><a href="wm-dm-cz.htm#install-add">Užitečné dodatečné aplikace pro KDE</a></li>
+					    <li><a href="wm-dm-cz.htm#desk-freeze">Zamrznutí plochy</a></li>
+					    <li><a href="wm-dm-cz.htm#kde-login">Nejde se přihlásit do KDE</a></li>
+					    <li><a href="wm-dm-cz.htm#ch-th">Změna témat</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-cz.htm#dm">Instalace dodatečných správců zobrazení</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-cz.htm">Připojení k internetu, WiFi, LAN a sítím</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-cz.htm">Sestava LAMP aptosidu &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-cz.htm#serv-apache">Sestava LAMP aptosidu</a></li>
+					    <li><a href="lamp-apache-cz.htm#serv-ftp">FTP klienty</a></li>
+					    <li><a href="lamp-apache-cz.htm#serv-sec">Bezpečnostní protokoly</a></li>
+					    <li><a href="lamp-apache-cz.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-cz.htm#serv-mysql">Nastavení MySQL</a></li>
+					    <li><a href="lamp-ppp-cz.htm#serv-php">PHP v Apache</a></li>
+					    <li><a href="ntp-server-cz.htm#ntp-server">Nastavení Timeserveru</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-cz.htm#tor">Firewally and Soukromí &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-cz.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-cz.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-cz.htm#firewalls">Firewally</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-cz.htm#ssh-x">SSH a Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-cz.htm#setup">Nastavení Samba-Serveru</a></li>
+						  <li><a href="samba-cz.htm#configure">Konfigurace SAMBY (Windows)</a></li>
+						  <li><a href="ssh-cz.htm#ssh-fs">Vzdálené připojení přes SSH</a></li>
+						  <li><a href="ssh-cz.htm#ssh-x">Aplikace X přes SSH</a></li>
+						  <li><a href="ssh-cz.htm#ssh-f">Grafické rozhraní přes SSH s Konquerorem</a></li>
+						  <li><a href="ssh-cz.htm#ssh-w">Přenos rozhraní X přes SSH z Windows-PC</a></li>
+						  <li><a href="ssh-cz.htm#ssh">SSH a soukromí</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-cz.htm#netcardconfig">WIFI připojení &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-cz.htm#netcardconfig">Připojení se online - Ceni</a></li>
+						    <li><a href="inet-wpagui-cz.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-cz.htm#net-set1">WiFi - nastavení pro WiFi roaming</a></li>
+						    <li><a href="inet-wpa-cz.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-cz.htm#hotswitch">Přepínání síťového připojení mezi WiFi a Kabelovým</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-cz.htm#netcardconfig">Kabelové připojení &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-cz.htm#dial-mod">56k Modemy</a></li>
+						    <li><a href="inet-ceni-cz.htm#netcardconfig">Připojení se online- Ceni</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-cz.htm#fw-detect">Rozpoznání firmwaru - non-free</a></li>
+		<li><a href="nf-firm-cz.htm#non-free-firmware">Přidání non-free do seznamu zdrojů</a></li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-cz.htm">Správa balíčků dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-cz.htm#apt-cook">APT návod a zdroje softwaru &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-cz.htm#apt-cook">APT-návod (CookBook) a zdroje software</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#apt-install">Instalace nového balíčku</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#apt-delete">Smazání balíčku</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#apt-downgrade">Podržení balíčku nebo instalace nižší verze</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#apt-cache">Vyhledávání balíčků pomocí apt-cache</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#gui-pacsea">Vyhledávání balíčků v graf. rozhraní</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-cz.htm#kern-upgrade">Povýšení verze jádra (kernel) &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-cz.htm#kern-remove">Odstranění jádra</a></li>
+					    <li><a href="sys-admin-kern-upg-cz.htm#kern-upgrade">Povýšení verze jádra</a></li>
+					    <li><a href="sys-admin-kern-upg-cz.htm#dmakms">Dynamická instalaca modulů jádra s dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-cz.htm#apt-upgrade">Aktualizace nainstalovaného systému - dist-upgrade - Přehled &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-cz.htm#live-cd-upgrade">Aktualizace pomocí Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-cz.htm#approx">dist-upgrade vícero počítačů přes LAN</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#apt-upgrade">Aktualizace nainstalovaného systému - dist-upgrade - Přehled</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#du-st">Aktualizace nainstalovaného systému - dist-upgrade - jednotlivé kroky</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-cz.htm">Administrace systému</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-cz.htm#bois-prep">Povýšení verze BIOSu pomocí FreeDOS</a></li>
+		<li><a href="vir-rkits-cz.htm#virus-rkits">Vyhledávače virů a rootkitů</a></li>
+		<li><a href="hd-install-cz.htm#adduser">Přidání uživatelů a hesel &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-cz.htm#adduser">Přidání nového uživatele</a></li>
+					    <li><a href="sys-admin-gen-cz.htm#pw-lost">Ztracené root heslo, nové heslo</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-cz.htm#start-services">Služby a úrovně spuštění init &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-cz.htm#start-services">Spouštění/zastavení služeb</a></li>
+					    <li><a href="sys-admin-gen-cz.htm#pkill">Zabití služby nebo procesu</a></li>
+					    <li><a href="sys-admin-gen-cz.htm#init">Úrovně spuštění aptosidu - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-cz.htm#rsync">Zálohování systému &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-cz.htm#rdiff">Zálohování pomocí rdiff</a></li>
+					    <li><a href="sys-admin-rsync-cz.htm#rsync">Zálohování pomocí rsync</a></li>
+					    <li><a href="home-cz.htm#home-bu">Přesunutí /home adresáře</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-cz.htm#fonts">CUPS, fonty a zvuk &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-cz.htm#fonts">Fonty</a></li>
+					     <li><a href="sys-admin-gen-cz.htm#cups">CUPS - tiskový systém</a></li>
+					     <li><a href="sys-admin-gen-cz.htm#sound">Zvukový mixér</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-cz.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-cz.htm#chroot">Grub2 - obnova Grubu s pomocí chroot</a></li>
+					    <li><a href="sys-admin-grub2-cz.htm#mbr-over-grub2">Grub2 - přepsání zaváděcího sektoru MBR</a></li>
+					    <li><a href="sys-admin-grub2-cz.htm#multi-os">Grub2 - zavádění  více systémů</a></li>
+					    <li><a href="sys-admin-grub2-cz.htm#grub1-grub2">Grub2 - povýšení z Grub1</a></li>
+					    <li><a href="sys-admin-grub2-cz.htm#grub2">Grub2 - přehled</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Sponsored by webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid is proudly hosted by webtropia.com" alt="aptosid is proudly hosted by webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+	<div class="divider" id="kern-upgrade">
+<!--			<h2 id="top-header">Installing new kernels</h2>-->
+			<h2 id="top-header">Instalace nových kernelů / jader</h2>
+<!--					<h5><span class="highlight-3">The aptosid kernels are in the aptosid repo as a .deb and automatically included in a dist-upgrade.</span></h5>-->
+					<h5><span class="highlight-3">Kernely aptosidu se nacházejí v repozitáři aptosidu jako balíčky .deb a jsou automaticky zahrnuty do dist-upgrade.</span></h5>
+<div class="spacer01"></div>
+<!--							<p>The kernels  are available in the following forms:</p>-->
+							<p>kernely jsou k dispozici v následujících formách:</p>
+						<ul>
+<!--  							<li><b>aptosid-686</b> aptosid-686 - kernel for the i686 Processor Family with single/dual core or more CPUs</li>-->
+  							<li><b>aptosid-686</b> aptosid-686 - kernel pro procesory z rodiny i686 s jedním/dvěma nebo více CPU</li>
+
+<!--  							<li><b>aptosid-amd64</b> kernel for 64 bit aptosid</li>-->
+  							<li><b>aptosid-amd64</b> kernel pro 64-bitový aptosid</li>
+						</ul>
+
+<!--					<h5>Steps to do it manually without dist-upgrading are:</h5>-->
+					<h5>Kroky pro ruční instalaci bez dist-upgrade jsou:</h5>
+<!--						<p><b>1.</b> In a konsole switch to root:</p>-->
+						<p><b>1.</b> V konzoli se přepněte do roota:</p>
+<pre>
+apt-get update
+</pre>
+<!--							<p><b>2.</b> To install the latest version kernel:</p>-->
+							<p><b>2.</b> Pro instalaci poslední verze kernelu:</p>
+<pre>
+apt-get install linux-image-aptosid-686 linux-headers-aptosid-686
+</pre>
+
+<!--							<p>Reboot to use the new kernel</p>-->
+							<p>Restartujte pro použití nového kernelu</p>
+<!--							<p><span class="highlight-3">Should the new kernel give you problems, you can reboot and choose an older kernel.</span></p>-->
+							<p><span class="highlight-3">Jestli bude nový kernel činit potíže, můžete restartovat systém a použít starší.</span></p>
+
+<!--					<h5>Modules</h5>-->
+					<h5>Moduly</h5>
+<!--							<p>To find which modules you need, the following command gives you the list of current available modules, copy this line to your console/terminal:</p>-->
+							<p>Abyste našli, jaké moduly potřebujete, následující příkazy vám předloží seznam dostupných modulu, zkopírujte si tuto řádku do vaší konsole/terminálu:</p>
+<pre>
+apt-cache search 2.6.*.slh.*-aptosid| awk '/modules/{print $1}'
+</pre>
+
+<!--							<p>To get a full description of each module, copy this line to your console/terminal:</p>-->
+							<p>Pro získání úplného popisu každého modulu si zkopírujte tento řádek do vaší konsole/terminálu:</p>
+<pre>
+apt-cache search 2.6.*.slh.*-aptosid
+</pre>
+
+
+<!-- 							<p>To install the required modules (for instance virtualbox-ose, and qc-usb):</p>-->
+ 							<p>Pro instalaci potřebných modulů (například pro virtualbox-ose a qc-usb):</p>
+ <pre>
+apt-get install virtualbox-ose-modules-2.6.24-2.6.24.2.slh.7-aptosid-686 (PŘÍKLAD)
+apt-get install qc-usb-modules-2.6.24-2.6.24.2.slh.7-aptosid-686 (PŘÍKLAD)
+</pre>
+
+<!--							<p>To check the modules loaded into the kernel:</p>-->
+							<p>Pro kontrolu, jestli jsou moduly načteny v jádře:</p>
+<pre>
+ls /sys/module/
+nebo
+cat /proc/modules
+</pre>
+	</div>
+		<div class="divider" id="dmakms">
+<!--			<h2>Installing modules with Dynamic Module-Assistant Kernel Module Support (dmakms)</h2>-->
+			<h2>Instalace modulů s Dynamic Module-Assistant Kernel Module Support (dmakms)</h2>
+<!--							<p>dmakms is useful to install kernel modules that are not premade for the aptosid kernel and is designed to automate the installation of kernel modules with module-assistant <span class="highlight-3">(m-a)</span> when upgrading or installing new Linux kernels.</p>-->
+							<p>dmakms je užitečný pro instalaci jaderných modulů, které nejsou předvytvořeny jádrem aptosidu, a je navržen, aby zautomatizoval instalaci takovýchto jaderných modulů s module-assistant <span class="highlight-3">(m-a)</span>, když aktualizujete nebo instalujete nový kernel Linuxu.</p>
+<pre>
+apt-get install dmakms module-assistant
+</pre>
+<!--							<p>Before activating Dynamic Module-Assistant Kernel Module Support, first use module-assistant to install the desired kernel module(s) for the currently running Linux kernel. For more information on module-assistant please read its manual page:</p>-->
+							<p>Před aktivací Dynamic Module-Assistant Kernel Module Support použijte prvně module-assistant pro instalaci zamýšlené jaderného modulu(ů) pro právě běžící kernel Linuxu. Pro více informací o module-assistant si prosím přečtěte manuálové stránky:</p>
+<pre>
+man m-a
+</pre>
+
+<!--							<p>The name of the module-assistant compatible package then needs to be added to <span class="highlight-3">/etc/default/dmakms</span>, so that the process of preparing and installing the same module(s) for each new Linux kernel can be automated.</p>-->
+							<p>Jméno balíčku kompatibilního s module-assistant poté musí být přidáno do  <span class="highlight-3">/etc/default/dmakms</span>, aby mohl být proces automatizace přípravy a instalace toho samého modulu (ů) zautomatizován pro každý nový kernel Linuxu.</p>
+<!--				<h4>Example: Installing <span class="highlight-3">speakup module</span> with module-assistant</h4>-->
+				<h4>Příklad: Instalace <span class="highlight-3">modulu speakup</span> s module-assistant</h4>
+<!--							<p>Ensure that your sources list has <span class="highlight-3">contrib non-free</span> added in your sources line in: <span class="highlight-3">/etc/apt/sources.list.d/debian.list</span> </p>-->
+							<p>Ujistěte se, že váš seznam zdrojů má <span class="highlight-3">contrib non-free</span> přidaný na řádek zdrojů v: <span class="highlight-3">/etc/apt/sources.list.d/debian.list</span> </p>
+<pre>
+apt-cache search speakup-s
+<!--speakup-source - Source of the speakup kernel modules-->
+speakup-source - Source of the speakup kernel modules
+</pre>
+
+<!--							<p>Then prepare the module:</p>-->
+							<p>Potom modul připravte:</p>
+<pre>
+m-a prepare
+m-a a-i speakup-source
+</pre>
+<!--							<p>Then activate Dynamic Module-Assistant Kernel Module Support for speakup, so that the next time the Linux kernel is updated a speakup module is prepared for it too, without manual intervention. To do that, add <span class="highlight-3">speakup-source</span> to the <span class="highlight-3">/etc/default/dmakms </span>configuration file. </p>-->
+							<p>Poté aktivujte Dynamic Module-Assistant Kernel Module Support pro speakup tak, aby příště, když je kernel linuxu aktualizován, byl speakup modul připraven a nainstalován bez ručního zásahu. Abyste tak učinili, přidejte <span class="highlight-3">speakup-source</span> do konfiguračního souboru <span class="highlight-3">/etc/default/dmakms </span>. </p>
+<pre>
+mcedit /etc/default/dmakms
+speakup-source
+</pre>
+
+<!--							<p>Repeat the same process for any other module-assistant compatible kernel module package.</p>-->
+							<p>Opakujte tento proces pro jakýkoliv další modul kompatibilní s module-assistant.</p>
+<!--							<p>A linux-headers package must be installed for every linux-image package for module-assistant to compile kernel modules.</p>-->
+							<p>Pro kompilaci jaderných modulů musí být ke každému balíčku linux-image nainstalován balíček linux-headers..</p>
+<!--					<h4>Module load failure</h4>-->
+					<h4>Chyba v načtení modulu</h4>
+<!--							<p>Should the module fail to load, for whatever reason [new xorg component, a fs problem or if X doesnt start after reboot] :</p>-->
+							<p>Pokud se modulu nezdaří načtení, ať je to z jakéhokoliv důvodu [nová komponenta xorgu, problém s fs nebo se X po restartu nespustí]:</p>
+<pre>
+modprobe &lt;modul&gt;
+</pre>
+<!--							<p>Then reboot the computer.</p>-->
+							<p>Poté restartujte počítačp>
+<!--							<p>Should the module still fail to load:</p>-->
+							<p>Pokud se modulu stále nedaří načtení:</p>
+ <pre>
+ m-a a-i -f module-source
+</pre>
+<!--							<p>This rebuilds the module <span class="highlight-3">then reboot.</span></p>-->
+							<p>To modul přestaví, <span class="highlight-3">poté restartujte.</span></p>
+<!--			 <h5> How It Works</h5>-->
+			 <h5> Jak to funguje</h5>
+<!--							<p>Dynamic Module-Assistant Kernel Module Support consists of a single initscript (/etc/init.d/dmakms) that is executed at boot time or by a script that is triggered after installation of new linux-image Debian packages.</p>-->
+							<p>Dynamic Module-Assistant Kernel Module Support sestává z jednoho initskriptu (/etc/init.d/dmakms), který je spouštěn při zavádění systému nebo skriptem, který se volán po instalaci nového balíčku linux-image Debianu.</p>
+<!--							<p>On each boot, /etc/init.d/dmakms is run to discover if each module source package listed in /etc/default/dmakms has provided a module package for the running Linux kernel, calling module-assistant to build and install a module package as required.</p>-->
+							<p>Při každém zavádění je /etc/init.d/dmakms spuštěn, aby zjistil, zda každý balíček zdroje modulu v seznamu /etc/default/dmakms dodal balíček modulu pro spuštění jádra Linuxu, a zavolá module-assistant, pokud je sestavení a instalace balíčku modulu nutná.</p>
+<!--							<p>When a new linux-image Debian package is installed, /etc/init.d/dmakms is executed via a postinst hook script with two arguments, 'start' and the 'version string' of the Linux kernel to prepare new module package(s) for. At this time, the module packages listed in the /etc/default/dmakms configuration file are processed with module-assitant, and derived module packages are scheduled for installation at shutdown time. <span class="highlight-3">The reason for installation to occur at shutdown time is because it is necessary to delay the installation until such a time that apt/dpkg are not locked by another process</span>.</p>-->
+							<p>Když je nainstalován nový balíček linux-image Debianu, /etc/init.d/dmakms je spuštěn skrz poinstalační skript s dvěma argumenty, 'start' a 'version string' jádra Linuxu pr přípravu nových balíčků modulu(ů). V této chvíli jsou balíčku zdrojů modulu vypsané v konfiguračním souboru  /etc/default/dmakms zpracovány pomocí module-assistant a vzniklé balíčky modulů jsou naplánovány k instalaci při vypnutí. <span class="highlight-3">Důvodem pro proběhnutí instalace při vypnutí systému je nutný odklad, aby bylo jisté, že nebude apt/dpkg uzamčen jiným procesem</span>.</p>
+<pre>
+$ /usr/share/doc/dmakms
+</pre>
+
+	<!--</div>
+			<div class="divider" id="other-kern-inst">
+				<h2>Other kernel installation methods</h2>
+
+					<h5>aptosidcc</h5>
+							<p>You can also install kernels with the GUI control centre<a href="aptosidcc-en.htm#aptosidcc"> aptosidcc: </a>which is located in the KDE-Start-Menu>System>aptosid Control Centre. aptosidcc also offers several other system administration GUI applications.</p>-->
+
+	</div>
+			<div class="divider" id="kern-remove">
+<!--					<h2>Removing old kernels, kernel remover</h2>-->
+					<h2>Odstraňování starých kernelů, 'kernel remover'</h2>
+<!--							<p>After successful installation of the new kernel, the old kernels can be deleted, however its recommended that you keep them for a few days in case you strike problems and therefore boot to an older kernel as listed in the grub screen</p>-->
+							<p>Po úspěšné instalaci nových kernelů je možné ty staré smazat. Nicméně je doporučeno si je ještě několik dní ponechat pro případ, že narazíte na nějáký problém. V takovém případě je pak snadné počítač restartovat a zavést starší jádro.</p>
+<!--							<p>Old kernels can be removed from the system. To do so, install <span class="highlight-3">kernel-remover</span>:</p>-->
+							<p>Stará jádra je možné ze systému odstranit. Abyste tak učinili, nainstalujte <span class="highlight-3">kernel-remover</span>:</p>
+<pre>
+apt-get update
+apt-get install kernel-remover
+</pre>
+
+	</div>
+
+<!--	<div id="rev">Content last revised 15/09/2010 1025 UTC</div>-->
+	<div id="rev">Obsah naposledy revidován 15/09/2010 1025 UTC</div>
+</div>
+</body>
+</html>

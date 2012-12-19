@@ -1,0 +1,609 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl" lang="nl">
+<head>
+	<title>aptosid handleiding - SSH</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision by HarzG 11/06/2008 2200 UTC-->
+<!--htdig_noindex--><div id="menu"> <!-- menu starts here nl lang maintained by btorrem, Bram0s,eislon -->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<!-- menu last translated by eislon 2012.09.30 0933 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="Naar aptosid.com forums and wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-nl.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" />Zoeken Online Offline</a> </li>
+		<!--<li><a href="http://manual.aptosid.com/meta-manual">Gemeenschap Software Selecties</a></li>-->
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Kies een andere taal - Choose another language CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="lang-switch CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-nl.htm">aptosid OS Handleiding</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-nl.htm#welcome-gen">aptosid OS Handleiding &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-nl.htm#cred-team">Medewerkers</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-nl.htm#how-to">Gebruik van deze handleiding &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-nl.htm#how-to">Hoe deze handleiding gebruiken</a></li>
+					  <li><a href="welcome-nl.htm#table-contents">Inhoudstafel</a></li>
+					</ul>
+					</li>
+		<li><a href="help-nl.htm#help-gen">Hulp nodig &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-nl.htm#help-gen">Waar kan ik hulp vinden</a></li>
+					  <li><a href="help-nl.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-nl.htm#welcome-quick">Aptosid Snelle-startgids</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-nl.htm">ISO Inhoud, Releases, Download Vensters en Branden</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-nl.htm#cd-content">ISO Inhoud en systeembenodigdheden &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-nl.htm#rolling">Release info</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-nl.htm#download-aptosid">Aptosid Vensters , Downloaden en Branden &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-nl.htm#md5">md5 Checksum</a></li>
+					  <li><a href="cd-dl-burning-nl.htm#burn-nero">Branden in Windows</a></li>
+					  <li><a href="cd-dl-burning-nl.htm#burn-linux">Branden in Linux</a></li>
+					  <li><a href="cd-no-gui-burn-nl.htm#burning-no-gui">burniso script</a></li>
+					  <li><a href="cd-no-gui-burn-nl.htm#burn-no-gui-gen">Branden zonder een GUI (niet-grafisch)</a></li><li><a href="cd-dl-burning-nl.htm#download-aptosid">aptosid Download Mirrors</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-nl.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-nl.htm#rootpw">Root-paswoord op aptosid-Livesessie ISO</a></li>
+				<li><a href="live-mode-nl.htm#live-cd-installsoft">Installeren van software in de Livesessie</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-nl.htm">The Terminal / Konsole</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-nl.htm#term-kon"> Terminal / Konsole &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-nl.htm#term-kon"> Terminal / Konsole</a></li>
+					  <li><a href="term-konsole-nl.htm#colours"> Gekleurde terminal prompts</a></li>
+					  <li><a href="term-konsole-nl.htm#cli-help">Commando's - Help</a></li>
+					  <li><a href="help-nl.htm#init3-tools">Interessante applicaties in de tekstmode (tty) - init 3</a></li>
+					  <li><a href="term-konsole-nl.htm#term-cmds">Linux Terminal Commando Lijst</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-nl.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-nl.htm">CheatCodes</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-nl.htm#cheatcodes">aptosid specifieke Live-ISO Cheatcodes</a></li>
+				<li><a href="cheatcodes-nl.htm#cheatcodes-linux">Linux generische Cheatcodes</a></li>
+				<li><a href="cheatcodes-vga-nl.htm#vga">VGA Codes</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-nl.htm">Partitioneren van de harde schijf - Traditioneel, GPT en LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-nl.htm#hd-ntfs3g">Schrijven op een NTFS partitie met ntfs-3g</a></li>
+			<li><a href="part-lvm-nl.htm#part-lvm">Partitioneren vanwege LVM - Logical Volume Manager</a></li>
+			<li><a href="part-gparted-nl.htm#partition">Partitioneren met een GUI (grafisch) &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-nl.htm#partition">Harde schijf partitioneren gebruikmakend van GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-nl.htm#ntfs">NTFS partitie van groote veranderen gebruikmakend van GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-nl.htm#partition">Partitioneren met CLI &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-nl.htm#partition">Harde schijf partitioneren met cfdisk</a></li>
+					    <li><a href="part-cfdisk-nl.htm#formating">Formatteren (schijf leegmaken) na het partitioneren met cfdisk</a></li>
+					    <li><a href="part-gdisk-nl.htm#gdisk-6">Formatteren na het partitioneren met gdisk</a></li>
+					    <li><a href="part-gdisk-nl.htm#gdisk-1">GPT Partitioneren met gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-nl.htm#part-example">Partitioneren Basis &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-nl.htm#part-example">Partitie Grootte Voorbeelden</a></li>
+					  <li><a href="part-uuid-nl.htm#uuid">UUID, heropbouwen van fstab en creëren van nieuwe mount punten</a></li>
+					  <li><a href="part-cfdisk-nl.htm#disknames">Schijf benoemen in brief</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-nl.htm">Installatie opties - HD, USB, VM en Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-nl.htm#Inst-prep">Installatievoorbereiding &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-nl.htm#Inst-prep">Installatievoorbereiding </a></li>
+					  <li><a href="hd-install-nl.htm#Installation">Installeren op uw harde schijf</a></li>
+					  <li><a href="hd-install-nl.htm#first-hd-boot">Eerste keer opstarten</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-nl.htm#fromiso">Booten van uw iso-cd &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-nl.htm#fromiso">Booten vanaf uw iso-cd - Overzicht</a></li>
+					  <li><a href="hd-install-opts-nl.htm#grub2-fromiso">Booten vanaf uw iso-cd met Grub 2</a></li>
+					  <li><a href="hd-install-opts-nl.htm#fromiso-persist">Booten vanaf uw iso-cd en vasthouden</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-nl.htm#usb-hd">Installeren op USB &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-nl.htm#usb-hd">Installeren op USB-HD - aptosid specifiek - aptosid-on-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-nl.htm#raw-usb">Aptosid schrijven naar een USB/SSD stick met Linux, MS Windows of Mac OS X systeem</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-nl.htm#install-crypt">Installeren op encrypte partities - cryptroot</a></li>
+		  <li><a href="nbdboot-nl.htm#nbd1">Aptosid booten op een netwerk</a></li>
+		  <li><a href="hd-install-vmopts-nl.htm#vmopts">Virtuele Machine installatie opties</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-nl.htm">Graphische kaarten, Schermen, Xorg,  &amp; drivers</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-nl.htm#mon-res">Schermresolutie en Schermen  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-nl.htm#mon-res">Schermresolutie en Schermen</a></li>
+					  <li><a href="hw-dev-mon-nl.htm#xrandr">Dual-scherm en xrandr</a></li>
+					  <li><a href="hw-dev-mon-nl.htm#mon-binary">Dual-schermen (gebruikmakend van binaries)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-nl.htm#foss-xorg">GPU drivers &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-nl.htm#ati-3d">AMD/ATI 3D drivers</a></li>
+					  <li><a href="gpu-nl.htm#intel">Intel 2D en 3D drivers</a></li>
+					  <li><a href="gpu-nl.htm#nvidia">Nvidia 3D drivers</a></li>
+					  <li><a href="gpu-nl.htm#foss-xorg">Open Source Xorg drivers</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-nl.htm#fw-detect">Firmware detectie - "non-free" </a></li>
+			  <li><a href="nf-firm-nl.htm#non-free-firmware">"non-free" toevoegen aan de Sources List</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-nl.htm">Window Managers</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm--nl.htm">KDE en XFCE Window Managers &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm--nl.htm#xfce-notes">Handige Xfce extras</a></li>
+					    <li><a href="wm-dm-nl.htm#install-add">Handige extra KDE Apps</a></li>
+					    <li><a href="wm-dm-nl.htm#desk-freeze">Desktop Freezes (beweegt niet meer)</a></li>
+					    <li><a href="wm-dm-nl.htm#kde-login">Kan niet inloggen (KDE)</a></li>
+					    <li><a href="wm-dm-nl.htm#ch-th">Thema's veranderen</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-nl.htm#dm">Installie van bijkomende Display Managers</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-nl.htm">Internet verbinding, WiFi, LAN en Netwerken</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-nl.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-nl.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-nl.htm#serv-ftp">FTP Clients</a></li>
+					    <li><a href="lamp-apache-nl.htm#serv-sec">Security Protocols (beveiliging)</a></li>
+					    <li><a href="lamp-apache-nl.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-nl.htm#serv-mysql">MySQL Setup</a></li>
+					    <li><a href="lamp-ppp-nl.htm#serv-php">PHP in Apache</a></li>
+					    <li><a href="ntp-server-nl.htm#ntp-server">Timeserver Setup</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-nl.htm#tor">Firewalls en Privacy &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-nl.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-nl.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-nl.htm#firewalls">Firewalls</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-nl.htm#ssh-x">SSH en Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-nl.htm#setup">Samba-Server Setup</a></li>
+						  <li><a href="samba-nl.htm#configure">SAMBA configureren (Windows)</a></li>
+						  <li><a href="ssh-nl.htm#ssh-fs">SSH Apart Mounten</a></li>
+						  <li><a href="ssh-nl.htm#ssh-x">X Window Apps via SSH</a></li>
+						  <li><a href="ssh-nl.htm#ssh-f">GUI SSH met Konqueror</a></li>
+						  <li><a href="ssh-nl.htm#ssh-w">SSH X-Forwarding vanaf een Windows-PC</a></li>
+						  <li><a href="ssh-nl.htm#ssh">SSH en Beveiliging</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-nl.htm#netcardconfig">WIFI connecties (draadloos) &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-nl.htm#netcardconfig">Online geraken - Ceni</a></li>
+						    <li><a href="inet-wpagui-nl.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-nl.htm#net-set1">WiFi - WiFi instellen</a></li>
+						    <li><a href="inet-wpa-nl.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-nl.htm#hotswitch">Switchen tussen WiFi en Kabel</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-nl.htm#netcardconfig">Bedrade verbindingen &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-nl.htm#dial-mod">56k Modems</a></li>
+						    <li><a href="inet-ceni-nl.htm#netcardconfig">Online geraken - Ceni</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-nl.htm#fw-detect">Firmware detectie - "non-free" </a></li>
+		<li><a href="nf-firm-nl.htm#non-free-firmware">"non-free" toevoegen aan de Sources List</a></li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-nl.htm">Pakketbeheer en dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-nl.htm#apt-cook">APT Werkwijze en Bronnenlijst &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-nl.htm#apt-cook">APT-Gids Werkwijze en Bronnenlijst</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#apt-install">Nieuw pakket installeren</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#apt-delete">Pakket verwijderen</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#apt-downgrade">Pakket vasthouden (niet updaten) en afwaarderen</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#apt-cache">Pakket zoeken met apt-cache</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#gui-pacsea">GUI Pakket zoeken (grafisch)</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-nl.htm#kern-upgrade">Kernel upgraden &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-nl.htm#kern-remove">Kernels verwijderen</a></li>
+					    <li><a href="sys-admin-kern-upg-nl.htm#kern-upgrade">Kernel upgraden</a></li>
+					    <li><a href="sys-admin-kern-upg-nl.htm#dmakms">Kernelmodules dynamisch installeren met dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-nl.htm#apt-upgrade">Geïnstalleerd systeem upgraden -  dist-upgrade - Overzicht &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-nl.htm#live-cd-upgrade">Upgraden met Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-nl.htm#approx">dist-upgrade van meerdere PCs op een LAN</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#apt-upgrade">Geïnstalleerd systeem upgraden -  dist-upgrade - Overzicht</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#du-st">Geïnstalleerd systeem upgraden -  dist-upgrade - De Stappen</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-nl.htm">Systeem Administratie</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-nl.htm#bois-prep">BIOS upgraden met FreeDOS</a></li>
+		<li><a href="vir-rkits-nl.htm#virus-rkits">Virus en Rootkit Scanners</a></li>
+		<li><a href="hd-install-nl.htm#adduser">Gebruikers en Paswoorden toevoegen &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-nl.htm#adduser">Nieuwe gebruiker toevoegen</a></li>
+					    <li><a href="sys-admin-gen-nl.htm#pw-lost">verloren root-paswoorden, nieuwe paswoorden</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-nl.htm#start-services">Services en init runlevels &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-nl.htm#start-services">Services inschakelen/uitschakelen</a></li>
+					    <li><a href="sys-admin-gen-nl.htm#pkill">Een service of een process stoppen</a></li>
+					    <li><a href="sys-admin-gen-nl.htm#init">aptosid runlevels - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-nl.htm#rsync">Een systeem back-up maken &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-nl.htm#rdiff">Doe een Back-Up met rdiff</a></li>
+					    <li><a href="sys-admin-rsync-nl.htm#rsync">Doe een Back-Up met rsync</a></li>
+					    <li><a href="home-nl.htm#home-bu">Verplaatsen van /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-nl.htm#fonts">CUPS, Opmaak en Geluid &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-nl.htm#fonts">Opmaak</a></li>
+					     <li><a href="sys-admin-gen-nl.htm#cups">CUPS - Printer Systeem</a></li>
+					     <li><a href="sys-admin-gen-nl.htm#sound">Geluid Mixers</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-nl.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-nl.htm#chroot">Grub2 - Grub herstellen met chroot</a></li>
+					    <li><a href="sys-admin-grub2-nl.htm#mbr-over-grub2">Grub2 - MBR Overschrijven</a></li>
+					    <li><a href="sys-admin-grub2-nl.htm#multi-os">Grub2 - Dual en Multibooting</a></li>
+					    <li><a href="sys-admin-grub2-nl.htm#grub1-grub2">Grub2 -Upgraden vanaf Grub1</a></li>
+					    <li><a href="sys-admin-grub2-nl.htm#grub2">Grub2 - Overzicht</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Gesponsored door webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid Gesponsored door webtropia.com" alt="aptosid Gesponsored door webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+<div class="divider" id="ssh">
+			<h2 id="top-header">SSH</h2>
+
+				<p>Secure Shell of SSH is een set van standaards en een hieraan verbonden netwerk protocol waarmee een veilige verbinding tussen de eigen pc een een andere (remote) computer op afstand. Hierbij wordt de zogenaamde public-key cryptography gebruikt om de remote computer te identificeren en om (optie) de remote computer toe te staan de gebruiker te identificeren. SSH garandeert de vertrouwelijke en correcte data-overdracht tussen de twee computers via encryptie en message authentication codes (MACs). Een bekende toepassing van SSH is een login op een remote machine en vervolgens opdrachten uit te voeren, maar er worden ook tunneling, doorgeven van TCP poorts en X11 verbindingen ondersteund. Verder kunnen bestanden uitgewisseld worden via SFTP of SCP protocollen. Standaard gaat het dataverkeer van een servervia de TCP poort 22. </p><p><a href="http://en.wikipedia.org/wiki/Secure_Shell">Bovenstaande tekst is een samenvatting/vertaling van basisinformatie uit wikipedia over SSH (Engels).</a></p>
+
+
+<div class="divider" id="ssh-s">
+			<h2>Gebruiken van veilige protocollen in SSH</h2>
+
+				<p>Een root login via ssh toestaan, is niet veilig. Het is dus niet zinvol om standaard als root user in te loggen. Debian wil standaad veilig zijn, niet onveilig. Vandaar dat een user maximaal 10 minuten heeft voor een zogenaamde dictionary password attack bij een SSH login. Maar het is uiteraard een keuze voor jezelf om de tijd en het aantal login pogingen vast te leggen!</p>
+
+ 			<p>Om de eigen SSH veiliger te maken, kan een tekstverwerker worden gebruikt.</p>
+<p> Deze moet als root gestart worden waarna het bestand</p>
+<pre>
+/etc/ssh/sshd_config
+</pre>
+<p>geopend wordt.</p>
+
+				<h6>Vervolgens gaan wij naar de volgende, te beveiligen, items en passen deze aan:</h6>
+
+ 				<p><span class="highlight-3">Poort (gewenste) &lt;desired port&gt;:</span> Hier moet de correcte poort staat waar in de router de data-overdracht wordt toegestaan. Deze instelling voor de poort moet <b>ook</b> in de router-setup vastgelegd worden. Als je niet weet hoe dat gedaan kan worden, is het misschien niet verstandig dat je SSH remote zelf installeert. Debian heeft de poort 22 als default-waarde hiervoor. Maar het is slimmer een poort buiten de standard scan range hiervoor te gebruiken. In het voorbeeld wordt poort 5874 gebruikt:</p>
+<pre>
+Port 5874
+</pre>
+ 				<p><span class="highlight-3">ListenAddress &lt;ip van de pc of van het network interface&gt;:</span> Omdat hier sprake is van forwarding van een poort van je router, moet de pc een vast (static) ip adres in het netwerk hebben. Als je een locale dns server gebruikt en je hebt deze uitleg hiervoor nodig, dan maak je waarschijnlijk een grote fout. Wij gaan dus verder met de uitleg gebaseerd op een vast ip adres: </p>
+<pre>
+ListenAddress 192.168.2.134
+</pre>
+				<p>Hierna - protocol 2 is standaard debian default, maar voor de zekerheid gaan wij even kijken wat daar staat:</p>
+
+ 				<p><span class="highlight-3">LoginGraceTime &lt;toegestane tijd om aan te loggen in seconden&gt;:</span> Hier staat een vreemde default-waarde van 600 seconden. Ook als je slechts met twee vingers kan typen, heb je nooit 10 minuten nodig om je user name en password op te geven, dus maken wij hiervan:</p>
+<pre>
+LoginGraceTime 45
+</pre>
+ 				<p>Je hebt zelf nu 45 seconden voor een login en de hackers hebben dus geen 600 seconden voor elke poging om je password te kraken.</p>
+
+				<p><span class="highlight-3">PermitRootLogin &lt;yes&gt;:</span> Waarom staat debian toe dat root mag inloggen PermitRootLogin 'yes'? Dat is onbegrijpelijk dus maken wij hiervan een 'no'.
+          </p>
+<pre>
+PermitRootLogin no
+</pre>
+
+<pre>
+StrictModes yes
+</pre>
+ 				<p><span class="highlight-3">MaxAuthTries &lt;xxx&gt;:</span> Voor het aantal pogingen voor een login, kan je 3 of 4 keer vastleggen, maar niet meer dan dat. Veiliger is:</p>
+<pre>
+MaxAuthTries 2
+</pre>
+ 				<p>Als onderstaande items niet voorkomen, kunnen deze worden toegevoegd (of aangepast):</p>
+<pre>
+AllowUsers &lt;geef gebruikersnamen op, met spaties ertussen, die via ssh mogen inloggen&gt;
+</pre>
+ 				<p><span class="highlight-3">AllowUsers &lt;xxx&gt;:</span> Maak voor de zekerheid een aparte ssh only user aan met beperkte (user, niet root)rechten. Gebruik hiervoor adduser om deze gebruiker aan te maken en plaats de naam hier, zoals:</p>
+<pre>
+AllowUsers weesvoorzichtig
+</pre>
+ 				<p><span class="highlight-3">PermitEmptyPasswords &lt;xxx&gt;:</span> Geef deze gebruiker een mooi lang password dat ook in een millioen jaren niet te raden is en sta alleen deze user toe om ssh te gebruiken. Als je een keer in de andere pc zit, kan je met su ook root worden. Sta dus nooit een leeg password toe:</p>
+<pre>
+PermitEmptyPasswords no
+</pre>
+				<p><span class="highlight-3">PasswordAuthentication &lt;xxx&gt;:</span> Uiteraard, voor een password login, geen key login, worden passwords gebruikt:</p>
+<pre>
+PasswordAuthentication yes [unless using keys]
+</pre>
+				<p>Tenslotte:</p>
+<pre>
+/etc/init.d/ssh restart
+</pre>
+ 				<p>Nu hebben wij iets dat een veiliger gebruik van SSH regelt. Het is nooit 100% waterdicht, maar wordt veel veiliger als je de ssh only user en het perfecte wachtwoord aanmaakt met adduser.</p>
+
+							<p><span class="highlight-3">Notitie:</span> Indien je een error bericht krijgt en ssh weigert je te verbinden, ga dan naar je $HOME en kijk in de verborgen folder <span class="highlight-3">.ssh</span> en verwijder het bestand <span class="highlight-3"> known_hosts</span> en probeer de verbinding opnieuw. Deze fout treedt meestal op als je gebruik maakt van dynamische IP adressen (DCHP)</p>
+
+	</div>
+		<div class="divider" id="ssh-x">
+			<h2>Gebruiken van een X-Window progamma via het netwerk en SSH</h2>
+							<p>ssh -X allows you to log into a remote computer and have its graphical user interface X displayed on your local machine. As $user (and note the X is to be a capital):</p>
+<pre>
+$ ssh -X username@xxx.xxx.xxx.xxx (or IP)
+</pre>
+							<p>Voer het wachtwoord van de gebruiker op de remote computer in en run de X-applicatie in de shell:</p>
+
+<pre>
+$ iceweasel OF oocalc OF oowriter OF kspread
+</pre>
+
+							<p>Sommige echt langzame netwerk connecties vanaf je PC kunnen mogelijk profiteren van een compressie level waardoor de transmissie snelheid omhoog kan gaan, om dit te kunnen voeg je een extra optie toe, op snelle netwerken heeft dit echter een negatief effect:</p>
+<pre>
+$  ssh -C -X username@xxx.xxx.xxx.xxx (or IP)
+</pre>
+							<p>LEES:</p>
+<pre>
+$man ssh
+</pre>
+							<p><span class="highlight-3">Notitie:</span> Indien je een error bericht krijgt en ssh weigert je te verbinden, ga dan naar je $HOME en kijk in de verborgen folder <span class="highlight-3">.ssh</span> en verwijder het bestand <span class="highlight-3"> known_hosts</span> en probeer de verbinding opnieuw. Deze fout treedt meestal op als je gebruik maakt van dynamische IP adressen (DCHP)</p>
+	</div>
+	<div class="divider" id="ssh-scp">
+			<h2>Het op afstand kopieren van bestanden en directories via SSH met scp</h2>
+
+							<p>scp wordt via de commandoregel gebruikt , (terminal/cli), om bestanden te kopieren tussens hosts over een netwerk. Het maakt gebruik van ssh authentificatie en beveiliging voor de data transfer, daarom vraagt scp om wachtwoorden of passphrases zodat de filetransfer geauthentificeerd kan worden.</p>
+
+							<p>Er vanuit gaande dat je ssh rechten hebt op de remote PC of Server, staat scp het toe om partities, directories of bestanden te kopieren, van en naar die PC, naar een specifieke locatie of doel die je gekozen hebt, zolang je daarop ook de rechten hebt. Bijvoorbeeld, een PC of server waarop je rechten hebt om deze via je LAN te benaderen en bestanden mag plaatse, maar het kan ook een pc zijn ergens op de wereld, zolang je maar de rechten hebt, of gewoon het kopieren van data naar je USB harddisk die op je pc is aangesloten.</p>
+
+							<p>Je kunt de gehele inhoud van partities of directories kopieren met het commando <span class="highlight-3">scp -r</span>.  Let op het commando scp -r volgt ook de symbolic links welke zich in de directory structuur tegenkomt.</p>
+
+					<h3>Voorbeelden:</h3>
+							 <p><span class="highlight-3"> Voorbeeld 1:</span> Kopieren van een partitie:</p>
+
+<pre>
+scp -r &lt;user&gt;@xxx.xxx.x.xxx:/media/disk1part6/ /media/diskXpartX/
+</pre>
+							 <p><span class="highlight-3"> Voorbeeld 2:</span> Kopieren van een directory op een paritie, in dit geval een directory met de naam photos in $HOME:</p>
+
+<pre>
+scp -r &lt;user&gt;@xxx.xxx.x.xxx:~/photos/ /media/diskXpartX/xx
+</pre>
+							 <p><span class="highlight-3">Voorbeeld 3:</span> Kopieren van een bestand van een directory op een partitie, in dit geval een bestand in $HOME:</p>
+<pre>
+scp &lt;user&gt;@xxx.xxx.x.xxx:~/filename.txt /media/diskXpartX/xx
+</pre>
+							<p><span class="highlight-3">Voorbeeld 4:</span> Kopieren van een bestand op een partitie:</p>
+<pre>
+scp &lt;user&gt;@xxx.xxx.x.xxx:/media/disk1part6/filename.txt /media/diskXpartX/xx
+</pre>
+
+							<p><span class="highlight-3">Voorbeeld 5:</span> Indien je al op de drive en directory staat en alles hierin wilt kopieren, gebruik je een '<span class="highlight-2"> <b>.</b> </span>' (punt) :</p>
+<pre>
+scp -r &lt;user&gt;@xxx.xxx.x.xxx:/media/disk1part6/filename.txt<span class="highlight-2"><b> .</b> </span>
+</pre>
+
+							<p><span class="highlight-3">Voorbeeld 6:</span> Voor het kopieren van bestanden van je PC naar een andere gebruik je <span class="highlight-3">scp -r</span> indien je een partitie of directory wilt kopieren):</p>
+
+<pre>
+scp /media/disk1part6/filename.txt &lt;user&gt;@xxx.xxx.x.xxx:/media/diskXpartX/xx
+</pre>
+
+							<p>Lees ook de manual pagina:</p>
+<pre>
+man scp
+</pre>
+
+	</div>
+		<div class="divider" id="ssh-w">
+			<h2>Remote access ssh met X-Forwarding van een Windows-PC:</h2>
+
+							<p>* Download en brand de <a href="http://xlivecd.indiana.edu/">Cygwin XLiveCD</a><br />
+							* Leg de CD in CD-ROM-speler van de Windows-PC en wacht op de autorun (de CD wordt geopend).<br />
+							Klik "continue" als een shell venster wordt geopend en type:</p>
+<pre>
+ssh -X username@xxx.xxx.xxx.xxx
+</pre>
+      							<p>Let op: xxx.xxx.xxx.xxx is het IP-adres van de linux remote computer of de URL hiervan (bijv. dyndns.org account) en de username is natuurlijk 1 van de user namen die voorkomen op de machine. Na een succesvol login, start "kmail" om bijvoorbeeld je mails op te vragen!</p>
+
+							<p>Belangrijk: hosts.allow moet een regel bevatten waarin wordt toegestaan dat pc's van andere netwerken toegang kunnen verkrijgen. Als je via een NAT-Firewall of een router zit, moet je hiervoor controleren dat poort 22 wordt 'forwarded' naar de Linux-pc.</p>
+
+							<p class="highlight-3">NOTITIE: Als je de ssh poort op een andere poort hebt gezet , dan de standaard poort 22, dan moet je deze poort specificeren bij het gebruik van sftp:</p>
+<pre>
+sftp://user@ip:port
+</pre>
+							<p>'user@ip:port' is de standaard sytax voor veel programmas zoals sftp and smb</p>
+
+	</div>
+		<div class="divider" id="ssh-f">
+			<h2>SSH met Konqueror</h2>
+
+							<p>Konqueror en Krusader zijn beiden in staat om remote data te benaderen, door het gebruik vang <span class="highlight-3">sftp://</span> en gebruikt het ssh protocol.</p>
+
+
+							<p>Hoe werkt het:<br />
+							1) Open een nieuwe Konqueror venster<br />
+							2) Vul het volgende in het adresveld in: <span class="highlight-3">sftp://username@ssh-server.com</span></p>
+
+
+
+							<p>Voorbeeld 1: </p>
+<pre>
+sftp://aptosid1@remote_hostname_or_ip
+ (Let op: Er komt een popup-scherm dat naar je SSH-password vraagt, dat dus intypen en hierna op OK.)
+</pre>
+							<p>Voorbeeld 2: </p>
+<pre>
+sftp://username:password@remote_hostname_or_ip
+(Hier wordt <span class="highlight-3">NIET</span> naar een password gevraagd, maar direct verbonden.)
+</pre>
+							<p>Voor een LAN-situatie:</p>
+<pre>
+sftp://username@10.x.x.x or 198.x.x.x.x
+(Notitie: Een popup opend en vraagt je om je ssh wachtwoord, vul deze in en klik op OK)
+</pre>
+							<p>De KonquerorSSH verbinding is nu gemaakt. In het Konqueror venster, kunnen bestanden op de SSH server bewerkt worden (bijv. copy/view) net alsof deze op de eigen pc zouden staan.</p>
+
+
+	</div>
+
+	<div class="divider" id="ssh-fs">
+			<h2>SSHFS - mounten/remote van een bestandssysteem</h2>
+							<p>SSFS is een eenvoudige, snelle en veilige methode die gebruik maakt van FUSE om een bestandssysteem op afstand te mounten. Het enige dat hiervoor aan de server-kant nodig is, is een ssh daemon.</p>
+
+							<p>Op de client moet je waarschijnlijk sshfs installeren: <span class="highlight-1">het installeren van fuse en groups is niet nodig bij aptosid eros forward omdat het standaard geinstalleerd is:</span></p>
+
+							<p>Aan de client-kant (pc op afstand) moet waarschijnlijk eerst sshfs geïnstalleerd worden:	</p>
+<pre>
+apt-get update &amp;&amp; apt-get install sshfs
+</pre>
+							<p class="highlight-3">Hierna moet je je afmelden en opnieuw inloggen.</p>
+
+							<p>Mounten van een remote bestandssysteem is eenvoudig:</p>
+<pre>
+sshfs username@remote_hostname:directory local_mount_point
+</pre>
+							<p>waarbij de <span class="highlight-3">username</span> de account naam is op de remote host (van de pc op afstand dus):</p>
+
+							<p>Als geen mapnaam wordt toegevoegd, dan is de home directory van de remote user de standaard map die gemounted wordt.</p><p><span class="highlight-3"> Belangrijk: De dubbele punt <span class="highlight-2"> <b>:</b></span> is belangrijk ook als er geen mapnaam wordt opgegeven! </span></p>
+
+							<p>Nadat het mounten heeft plaatsgevonden van de remote map, kan de map net als een locaal bestandssysteem gebruikt worden. Er kunnen bestanden worden bekeken, bewerkt en ook scripts worden uitgevoerd.</p>
+
+							<p>Als je de koppeling wilt verbreken, unmount de remote host door het volgende  commando:</p>
+<pre>
+fusermount -u local_mount_point
+</pre>
+							<p>Als je sshfs vaak gebruikt dan kan het zinvol zijn om in de fstab een extra regel op te nemen:</p>
+<pre>
+sshfs#username@remote_hostname://remote_directory /local_mount_point fuse user,allow_other,uid=1000,gid=1000,noauto,fsname=sshfs#username@remote_hostname://remote_directory  0 0 
+</pre>
+							<p>Daarna verwijder het commentaar <span class="highlight-3">user_allow_other</span> in <span class="highlight-3">/etc/fuse.conf</span>:</p>
+
+<pre> 
+ # Allow non-root users to specify the 'allow_other' or 'allow_root'
+ # mount options.
+ #
+ user_allow_other
+</pre>
+							<p>Hierdoor mag elke user die in de groep fuse voorkomt, een bestandssysteem mounten met het bekende mount commando:</p>
+<pre>
+mount /path/to/mount/point
+</pre>
+							<p>Met deze regel in de fstab kan je ook op elk moment het umount commando gebruiken:</p>
+<pre>
+umount /path/to/mount/point
+</pre>
+							<p>Om na te gaan of je als user lid bent van de fuse-group kan je het volgende commando gebruiken:</p>
+<pre>
+cat /etc/group | grep fuse
+</pre>
+							<p>Hierna zie je iets als:</p>
+<pre>
+fuse:x:117: &lt;username&gt;
+</pre>
+
+							<p>Als je gebruikersnaam niet voorkomt, gebruikt het adduser commando als root:</p>
+<pre>
+adduser &lt;username&gt; fuse
+</pre>
+							<p class="highlight-3">Let op: De "id" wordt in de lijst van de fuse-group niet getoond, totdat je je 1 keer hebt afgemeld en opnieuw bent ingelogd.</p>
+<!-- HarzG replaced "Note: text" because you must first adduser, then logout + login to see the result of cat /etc/group | grep fuse 03/04/2007 2215hrs UTC  -->
+							<p>Nu wordt je gebruikersnaam getoond in de lijst en ben je in staat om het volgende commando uit te voeren:</p>
+<pre>
+mount local_mount_point
+</pre>
+							<p>en</p>
+<pre>
+umount local_mount_point
+</pre>
+
+	</div>
+
+		<div id="rev">Inhoud het laatst gewijzigd op 01/11/2011 0650 UTC</div>
+</div>
+</div>
+</body>
+</html>

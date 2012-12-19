@@ -1,0 +1,526 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+<head>
+	<title>aptosid Manuals - LVM Partitioning</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision bluewater 22/10/2010 1510 UTC -->
+<!--htdig_noindex--><div id="menu"> <!-- menu starts here es lang maintained by Luis_P -->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="ir a aptosid.com y Forum y Wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-es.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" />Buscar</a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Seleccione otro idioma - Choose another language CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="lang-switch CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-es.htm">Manual aptosid</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-es.htm#welcome-gen">Manual de usuario &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-es.htm#cred-team">Créditos</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-es.htm#how-to">Cómo usar este manual &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-es.htm#how-to">Cómo usar este manual</a></li>
+					  <li><a href="welcome-es.htm#table-contents">Indice de Contenido</a></li>
+					</ul>
+					</li>
+		<li><a href="help-es.htm#help-gen">Recibir ayuda &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-es.htm#help-gen">Dónde Conseguir Ayuda</a></li>
+					  <li><a href="help-es.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-es.htm#welcome-quick">Guía rápida</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-es.htm"> ISO, Versiones, Espejos y Quemado</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-es.htm#cd-content">Contenido del ISO y Requerimientos &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-es.htm#rolling">Notas del lanzamiento</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-es.htm#download-aptosid">Espejos aptosid, descargar y quemar &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-es.htm#md5">Suma de verificación, md5</a></li>
+					  <li><a href="cd-dl-burning-es.htm#burn-nero">Quemar en Windows</a></li>
+					  <li><a href="cd-dl-burning-es.htm#burn-linux">Quemar en Linux</a></li>
+					  <li><a href="cd-no-gui-burn-es.htm#burning-no-gui">Script para quemar ISO</a></li>
+					  <li><a href="cd-no-gui-burn-es.htm#burn-no-gui-gen">Quemar sin GUI</a></li>
+					  <li><a href="cd-dl-burning-es.htm#download-aptosid">Espejos de descarga aptosid</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-es.htm">LiveCD: el modo en vivo</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-es.htm#rootpw">Clave raíz del LiveCD</a></li>
+				<li><a href="live-mode-es.htm#live-cd-installsoft">Instalar Software con el LiveCD</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-es.htm">Terminal/Consola</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-es.htm#term-kon"> Terminal (consola) &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-es.htm#term-kon"> Terminal (consola)</a></li>
+					  <li><a href="term-konsole-es.htm#colours"> prompts coloreados de terminal : </a></li>
+					  <li><a href="term-konsole-es.htm#cli-help">Ayuda en línea de Comando</a></li>
+					  <li><a href="help-es.htm#init3-tools">Herramientas que hay que conocer en el modo texto (tty) - init 3</a></li>
+					  <li><a href="term-konsole-es.htm#term-cmds">Comandos del terminal de Linux</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-es.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-es.htm">Chuletas (cheatcodes)</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-es.htm#cheatcodes">Chuletas aptosid específicas para Live-ISO</a></li>
+				<li><a href="cheatcodes-es.htm#cheatcodes-linux">Chuletas genericas Linux</a></li>
+				<li><a href="cheatcodes-vga-es.htm#vga">Códigos VGA</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-es.htm">Particionar el Disco Duro; Modos tradicional, GPT y LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-es.htm#hd-ntfs3g">Escribir en Particiones NTFS con ntfs-3g</a></li>
+			<li><a href="part-lvm-es.htm#part-lvm">Particiones para usar LVM - Gestor Lógico de Volúmenes</a></li>
+			<li><a href="part-gparted-es.htm#partition">Particionar con un gestor gráfico &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-es.htm#partition">Particionar el Disco Duro usando GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-es.htm#ntfs">Redimensionar particiones NTFS con GParted/KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-es.htm#partition">Particionar el Disco Duro en línea de órdenes &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-es.htm#partition">Particionar el Disco Duro con cfdisk</a></li>
+					    <li><a href="part-cfdisk-es.htm#formating">Formatear después de particionar con cfdisk</a></li>
+					    <li><a href="part-gdisk-es.htm#gdisk-6">Formatear después de particionar con gdisk</a></li>
+					    <li><a href="part-gdisk-es.htm#gdisk-1">GPT Particionar con gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-es.htm#part-example">Particionado Básico &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-es.htm#part-example">Ejemplos de dimensiones de particiones</a></li>
+					  <li><a href="part-uuid-es.htm#uuid">UUID, Reconstruir fstab y crear nuevos puntos de montaje</a></li>
+					  <li><a href="part-cfdisk-es.htm#disknames">Nombrar discos: en breve</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-es.htm">Opciones de la Instalación - HD, USB, VM y Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-es.htm#Inst-prep">Preparar para Instalar &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-es.htm#Inst-prep">Preparar para Instalar </a></li>
+					  <li><a href="hd-install-es.htm#Installation">Instalar al disco duro</a></li>
+					  <li><a href="hd-install-es.htm#first-hd-boot">Primera inicialización</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-es.htm#fromiso">Arranque fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-es.htm#fromiso">Iniciar fromiso - Vista general</a></li>
+					  <li><a href="hd-install-opts-es.htm#grub2-fromiso">Iniciar 'fromiso' con Grub 2</a></li>
+					  <li><a href="hd-install-opts-es.htm#fromiso-persist">'fromiso' y 'persist'</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-es.htm#usb-hd">Instalar en un USB-DD - aptosid específico - aptosid-en-un-lápiz_USB &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-es.htm#usb-hd">Instalar en un USB-DD - aptosid Específico - aptosid en un lápiz USB</a></li>
+					  <li><a href="hd-ins-opts-oos-es.htm#raw-usb">Grabar aptosid en un lápiz USB/SSD con cualquier sistema Linux, MS Windows o Mac OS X</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-es.htm#install-crypt">Instalación en particiones cifradas - cryptroot</a></li>
+		  <li><a href="nbdboot-es.htm#nbd1">Arrancar aptosid en una red</a></li>
+		  <li><a href="hd-install-vmopts-es.htm#vmopts">Opciones de instalación en una máquina virtual</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-es.htm">Tarjetas Gráficas, monitores, Xorg &amp; controladores</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-es.htm#mon-res">Resolución de pantalla y monitores  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-es.htm#mon-res">Resolución de pantalla y monitores</a></li>
+					  <li><a href="hw-dev-mon-es.htm#xrandr">Monitores Duales y xrandr</a></li>
+					  <li><a href="hw-dev-mon-es.htm#mon-binary">Monitores Duales (utilizando binarios)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-es.htm#foss-xorg">Controladores GPU &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-es.htm#ati-3d">Controladores AMD/ATI 3D</a></li>
+					  <li><a href="gpu-es.htm#intel">Controladores Intel 2D y 3D</a></li>
+					  <li><a href="gpu-es.htm#nvidia">Controladores Nvidia 3D</a></li>
+					  <li><a href="gpu-es.htm#foss-xorg">Controladores código abierto Xorg</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-es.htm#fw-detect">Detección de firmware non-free</a></li>
+			  <li><a href="nf-firm-es.htm#non-free-firmware">Añadir non-free a Sources List</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-es.htm">Gestor de ventanas</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-es.htm">Gestores de Ventanas KDE y XFCE &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-es.htm#xfce-notes">Utilidades de XFCE</a></li>
+					    <li><a href="wm-dm-es.htm#install-add">Utilidades extras de KDE</a></li>
+					    <li><a href="wm-dm-es.htm#desk-freeze">El escritorio se traba</a></li>
+					    <li><a href="wm-dm-es.htm#kde-login">No puedo hacer login en KDE</a></li>
+					    <li><a href="wm-dm-es.htm#ch-th">Cambiar Temas</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm--es.htm#dm">Instalación de otros gestores de escritorio</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-es.htm">Conexión a Internet, WiFi, LAN y Redes</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-es.htm">Pila de LAMP aptosid &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-es.htm#serv-apache">Pila de LAMP aptosid </a></li>
+					    <li><a href="lamp-apache-es.htm#serv-ftp">Clientes FTP</a></li>
+					    <li><a href="lamp-apache-es.htm#serv-sec">Protocolos de Seguridad</a></li>
+					    <li><a href="lamp-apache-es.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-es.htm#serv-mysql">Configurar MySQL</a></li>
+					    <li><a href="lamp-ppp-es.htm#serv-php">PHP en Apache</a></li>
+					    <li><a href="ntp-server-es.htm#ntp-server">Configurar un servidor horario</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-es.htm#tor">Firewalls (Muros de Fuego) y privacidad &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-es.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-es.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-es.htm#firewalls">Firewalls (Muros de Fuego)</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-es.htm#ssh-x">SSH y Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-es.htm#setup">Configurar un servidor Samba</a></li>
+						  <li><a href="samba-es.htm#configure">Configurar SAMBA (Windows)</a></li>
+						  <li><a href="ssh-es.htm#ssh-fs">Montaje remoto con SSH </a></li>
+						  <li><a href="ssh-es.htm#ssh-x">Aplicaciones X Window via SSH</a></li>
+						  <li><a href="ssh-es.htm#ssh-f">SSH con Konqueror</a></li>
+						  <li><a href="ssh-es.htm#ssh-w">Seguimiento-X con SSH desde Win-PC</a></li>
+						  <li><a href="ssh-es.htm#ssh">SSH y seguridad</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-es.htm#netcardconfig">Conexiones WIFI &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-es.htm#netcardconfig">'ceni': Conectar en línea</a></li>
+						    <li><a href="inet-wpagui-es.htm#wpa-roaming-gui">WiFi - entorno gráfico WPA</a></li>
+						    <li><a href="inet-setup-es.htm#net-set1">WiFi - Configuración del WiFi Roaming</a></li>
+						    <li><a href="inet-wpa-es.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-es.htm#hotswitch">Cambio de la red entre WiFi y Cable</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-es.htm#netcardconfig">Conexiones por cable &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-es.htm#dial-mod">Modems de 56k</a></li>
+						    <li><a href="inet-ceni-es.htm#netcardconfig">'ceni': Conectar en línea</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-es.htm#fw-detect">Detección de firmware non-free</a></li>
+		<li><a href="nf-firm-es.htm#non-free-firmware">Añadir non-free a Sources List</a></li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-es.htm">Gestión de Paquetes y Actualización</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-es.htm#apt-cook">APT y 'sources.list' &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-es.htm#apt-cook">Guía de APT y 'sources list'</a></li>
+					    <li><a href="sys-admin-apt-es.htm#apt-install">Instalar un Paquete</a></li>
+					    <li><a href="sys-admin-apt-es.htm#apt-delete">Quitar un Paquete</a></li>
+					    <li><a href="sys-admin-apt-es.htm#apt-downgrade">Mantener ('Hold') un Paquete y versión anterior</a></li>
+					    <li><a href="sys-admin-apt-es.htm#apt-cache">Buscar un paquete con 'apt-cache'</a></li>
+					    <li><a href="sys-admin-apt-es.htm#gui-pacsea">Buscar un paquete en entorno gráfico</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-es.htm#kern-upgrade">Actualizar el Kernel &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-es.htm#kern-remove">Quitar kernels anteriores</a></li>
+					    <li><a href="sys-admin-kern-upg-es.htm#kern-upgrade">Actualizar el Kernel</a></li>
+					    <li><a href="sys-admin-kern-upg-es.htm#dmakms">Instalación dinámica de módulos del kernel con dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-es.htm#apt-upgrade">Actualizar el sistema instalado: 'dist-upgrade' - Vista general &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-es.htm#live-cd-upgrade">Actualización mediante un Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-es.htm#approx">Actualización de varios PCs en una red</a></li>
+					    <li><a href="sys-admin-apt-es.htm#apt-upgrade">Actualizar el sistema instalado: 'dist-upgrade' - Vista general</a></li>
+					    <li><a href="sys-admin-apt-es.htm#du-st">Actualizar el sistema instalado: 'dist-upgrade' - Los pasos</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-es.htm">Administración del Sistema</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-es.htm#bois-prep">Actualizar el BIOS con FreeDOS</a></li>
+		<li><a href="vir-rkits-es.htm#virus-rkits">Buscadores de Virus y Rootkit</a></li>
+		<li><a href="hd-install-es.htm#adduser">Agregar nuevo Usuario y claves &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-es.htm#adduser">Agregar un nuevo Usuario</a></li>
+					    <li><a href="sys-admin-gen-es.htm#pw-lost">Clave root Perdida, nuevas claves</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-es.htm#start-services">Servicios y niveles de ejecución &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-es.htm#start-services">Activar/desactivar servicios</a></li>
+					    <li><a href="sys-admin-gen-es.htm#pkill">Matar un proceso o servicio</a></li>
+					    <li><a href="sys-admin-gen-es.htm#init">niveles de ejecución en aptosid - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-es.htm#rsync">Copia de seguridad del sistema &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-es.htm#rdiff">Respaldar con 'rdiff'</a></li>
+					    <li><a href="sys-admin-rsync-es.htm#rsync">Respaldar con 'rsync'</a></li>
+					    <li><a href="home-es.htm#home-bu">Mudando el /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-es.htm#fonts">CUPS, Fuentes y Sonido &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-es.htm#fonts">Fuentes</a></li>
+					     <li><a href="sys-admin-gen-es.htm#cups">Sistema de impresión CUPS</a></li>
+					     <li><a href="sys-admin-gen-es.htm#sound">Mezcladores de sonido</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-es.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-es.htm#chroot">Grub2 - Recuperar Grub con chroot</a></li>
+					    <li><a href="sys-admin-grub2-es.htm#mbr-over-grub2">Grub2 - Sobre-escribir el MBR</a></li>
+					    <li><a href="sys-admin-grub2-es.htm#multi-os">Grub2 - Iniciación Dual y Múltiple</a></li>
+					    <li><a href="sys-admin-grub2-es.htm#grub1-grub2">Grub2 -Actualización desde Grub1</a></li>
+					    <li><a href="sys-admin-grub2-es.htm#grub2">Grub2 - Vista general</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donar" alt="Donar" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Patrocinado por webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid tiene el orgullo de estar alojado en webtropia.com" alt="aptosid tiene el orgullo de estar alojado en webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+		<div class="divider" id="part-lvm">
+				<h2 id="top-header">Particiones en volúmenes LVM - Administrador de Volúmenes Lógicos (Logical Volume Manager)</h2>
+
+							<p><span class="highlight-2"> Esta es una guía básica para que pueda comenzar. Es responsabilidad suya aprender más sobre LVM. Hay enlaces a fuentes y recursos al final de esta página que pueden serle de ayuda, aunque la lista no es exhaustiva en absoluto.</span></p>
+
+							<p>Aplicable a partir de aptosid-2010-03-apate y posteriores.</p>
+
+							<p>Los volúmenes lógicos pueden abarcar varios discos y son escalables, a diferencia del método tradicional de dividir y hacer particiones en los discos duros. </p>
+
+							<p>Sin embargo, ya sea el método tradicional de hacer particiones o el especial de LVM, las particiones no son algo que se haga muy a menudo, por lo que deben ser hechas cuidadosamente después de pensárselo, y también usar el método de prueba y error, hasta que consiga lo que desea.</p>
+
+							<p>En la terminología hay tres términos básicos que deberá conocer:</p>
+						  <ul>
+							<li><span class="highlight-3"> Volúmenes físicos:</span> Son sus discos físicos, o particiones de disco, como /dev/sda o /dev/sdb1. Son los que está acostumbrado a usar cuando monta o desmonta cosas. Con el uso de LVM podemos combinar varios volúmenes físicos en grupos de volúmenes. </li>
+
+							<li><span class="highlight-3">Grupos de volúmenes:</span> Un grupo de volúmenes está compuesto por verdaderos volúmenes físicos, y es el modo de almacenamiento que se usa para crear volúmnes lógicos que pueden ser creados, borrados, cambiados de tamaño y usados por usted. Puede considerar un grupo de volumen como un "disco virtual" montado a partir de volúmenes físicos. Los puede dividir en "particiones virtuales" que son volúmenes lógicos.</li>
+
+
+							<li><span class="highlight-3">Volúmenes lógicos:</span> Son los volúmenes que usted terminará por montar en su sistema. Pueden ser añadidos, borrados o cambiados en su tamaño sobre la marcha. Ya que están contenidos en los grupos de volúmenes pueden ser mayores que cualquier volumen físico que usted pueda tener. (por ejemplo, 4 discos de 250GB se pueden combinar en un grupo de volumen de 1TB, y a continuación divididos en 2 volúmenes lógicos de 500GB).</li>
+						  </ul>
+
+				<h3>Se necesitan estos 6 pasos básicos</h3>
+							<p><span class="highlight-3">En el ejemplo siguiente se parte de un supuesto de unos discos sin ninguna partición o que requieren una nueva distribución en sus particiones; esto borrará cualquier dato existente en las particiones que se van a convertir a LVM.</span></p>
+
+							<p>Es necesario usar cfdisk o fdisk, puesto que hasta hoy tanto Gparted como KDE Partition Manager,(partitionmanager), no tienen soporte para LVM.</p>
+
+							<p><span class="highlight-3">Paso 1: </span> Crear la tabla de particiones:</p>
+<pre>
+cfdisk /dev/sda
+<span class="highlight-3"> n </span>para crear una nueva partición en el disco
+<span class="highlight-3"> p  </span>para hacerla partición primaria
+<span class="highlight-3"> 1  </span>para darle el número 1 como identificador
+<span class="highlight-3"> ### tamaño de asignación </span> ### Establezca el primer y último cilindro a los valores por defecto (pulse enter) para abarcar toda la unidad
+<span class="highlight-3"> t  </span>cambiar el tipo de partición que se va a crear
+<span class="highlight-3"> 8e  </span>es el código hexadecimal para LVM de Linux
+<span class="highlight-3"> W  </span>para escribir los cambios en el disco. ##Esto escribirá la tabla de particiones. Si en este momento se da cuenta de que ha cometido un error, puede volver a la anterior distribución de particiones y sus datos estarán a salvo.##
+</pre>
+
+							<p>Si desea que el volumen abarque dos o más discos, repita este proceso en cada disco.</p>
+
+							<p><span class="highlight-3">Paso 2:</span> Configure la partición como un volumen físico. Se borrará cualquier dato:</p>
+
+<pre>
+pvcreate /dev/sda1
+</pre>
+
+							<p>Repita el proceso en las particiones que precise.</p>
+
+							<p><span class="highlight-3">Paso 3:</span> Cree el grupo de volumen:</p>
+
+<pre>
+vgcreate vulcan /dev/sda1
+</pre>
+							<p>Si, por ejemplo, desea hacerlo en tres discos, incluya los otros discos en la orden vgcreate:</p>
+
+<pre>
+vgcreate vulcan /dev/sda1 /dev/sdb1 /dev/sdc1
+</pre>
+							<p>Si lo ha hecho todo correctamente, podrá ver el resultado en la salida de la orden:</p>
+<pre>
+vgscan
+</pre>
+							<p>vgdisplay le dará las propiedades de  <span class="highlight-3"> tamaño</span>:</p>
+<pre>
+vgdisplay vulcan
+</pre>
+							<p><span class="highlight-3">Paso 4:</span> Creación de un nuevo volumen lógico. Ahora es el momento de tomar la decisión sobre el tamaño inicial que quiere que tenga el volumen. Una ventaja de LVM es que puede ajustar el tamaño del volumen a su voluntad sin necesidad de volver a arrancar.</p>
+
+							<p>Vamos a suponer que usted quiere en principio un volumen de 300GB con el nombre de spock en el volumen LVM llamado vulcan:</p>
+<pre>
+lvcreate -n spock --size 300g vulcan
+</pre>
+
+							<p><span class="highlight-3">Paso 5:</span> Dé formato al volumen y tenga paciencia mientras se formatea, lo que puede tardar un buen rato:</p>
+<pre>
+mkfs.ext4 /dev/vulcan/spock
+</pre>
+							<p><span class="highlight-3">Paso 6:</span></p>
+<pre>
+mkdir /media/spock/
+</pre>
+							<p>Edite fstab con su editor favorito para que el volumen se monte en el arranque. </p>
+<pre>
+mcedit /etc/fstab
+</pre>
+							<p>Es mejor usar <span class="highlight-3">/dev/vulcan/spock </span> que usar los números UUID con LVM, puesto que puede clonar el sistema de archivos sin tener que preocuparse por posibles colisiones UUID, en especial con LVM, ya que podría acabar con varios sistemas con el mismo número UUID (los snapshots pueden ser un buen ejemplo).</p>
+
+
+<pre>
+/dev/vulcan/spock /media/spock/ ext4 auto,users,rw,exec,dev,relatime  0  2
+</pre>
+							<p><span class="highlight-3"> Opcional:</span> Cambie el propietario del volumen para que otros usuarios tengan acceso de lectura y escritura a LVM:</p>
+
+<pre>
+chown root:users /media/spock
+</pre>
+
+<pre>
+chmod 775 /media/spock
+</pre>
+							<p>Su sistema básico LVM debe crearse ahora.</p>
+
+					    <h3>Cambio del tamaño del volumen</h3>
+
+							<p><span class="highlight-3">Se recomienda encarecidamente usar un ISO <em>live</em> para cambiar los tamaños de las particiones. Si bien incrementar el tamaño de la partición "sobre la marcha" puede hacerse sin errores, no puede decirse lo mismo al reducir el volumen siendo posible que las anomalías causen la pérdida de datos, particularmente si <span class="highlight-2 "> / (root) </span> o <span class="highlight-2">/home</span> son modificados.</span></p>
+
+							<h5>Para aumentar el tamaño desde 300GB a 500GB, según este ejemplo:</h5>
+<pre>
+umount /media/spock/
+</pre>
+
+<pre>
+lvextend -L+200g /dev/vulcan/spock
+</pre>
+							<p>A continuación dé la orden para que el sistema de ficheros cambie de dimensiones:</p>
+
+<pre>
+e2fsck -f /dev/vulcan/spock
+</pre>
+
+<pre>
+resize2fs /dev/vulcan/spock
+</pre>
+
+<pre>
+mount /media/spock
+</pre>
+							<h5>Para disminuir desde 500GB hasta 280GB, según este ejemplo:</h5>
+<pre>
+umount /media/spock/
+</pre>
+							<p>A continuación dé la orden para que el sistema de ficheros cambie de dimensiones:</p>
+
+<pre>
+e2fsck -f /dev/vulcan/spock
+</pre>
+
+<pre>
+resize2fs /dev/vulcan/spock 280g
+</pre>
+
+							<p>Cambie el tamaño del volumen</p>
+<pre>
+lvreduce -L-20g /dev/vulcan/spock
+</pre>
+
+<pre>
+resize2fs /dev/vulcan/spock
+</pre>
+
+<pre>
+mount /media/spock
+</pre>
+
+					     <h5>Un GUI para LVM</h5>
+							<p><span class="highlight-3">system-config-lvm</span> proporciona un GUI que le puede ayudar a gestionar sus LVMs; se arranca desde la línea de órdenes como superusuario:</p>
+
+<pre>
+apt-get install system-config-lvm
+man system-config-lvm <span class="highlight-3"> # lectura imprescindible</span>
+</pre>
+
+				  <h5>Fuentes y recursos:</h5>
+						     <ul>
+							 <li><a href="http://www.debian-administration.org/articles/410"> Administración Debian - Una introducción sencilla a las operaciones con LVM </a></li>
+
+							 <li><a href="http://www.ibm.com/developerworks/linux/library/l-lvm2/"> Gestión de volúmenes lógicos de IBM</a></li>
+
+							  <li><a href="http://www.ibm.com/developerworks/linux/library/l-resizing-partitions-2/index.html"> IBM - Cambio de tamaño de las particiones Linux, Parte 2: cambios avanzados</a></li>
+
+
+							  <li> <a href="http://docs.google.com/viewer?a=v&amp;q=cache:1RMpacheCBcJ:www.redhat.com/docs/en-US/Red_Hat_Enterprise_Linux/5.4/pdf/Logical_Volume_Manager_Administration.pdf+%22Logical+Volume+Manager+Administration+%22&amp;hl=en&amp;pid=bl&amp;srcid=ADGEEShRiptIjzsnPNsCs4RgyUFNWkYcrDc3SkBSD6cTq39D6wye5JM3tP_ehcn37I5VWs84I_HI45rvG-n6YG4R2fE8hqDByq-KPhNEkha4zwphrR7QIUVnUz6omwY85e-ZEXX723Js&amp;sig=AHIEtbSJyxEst6Wue7_1_TeDYwB480azEw"> Guía Red Hat del administrador de LVM</a></li>
+
+							  <li> <a href="http://es.wikipedia.org/wiki/LVM"> Gestor de volúmenes lógicos (Linux)</a></li>
+
+							  <li> <a href="http://thelinuxexperiment.com/guinea-pigs/jon-f/setting-up-an-lvm-for-storage/"> Creación de un LVM para almacenamiento</a></li>
+
+							  <li> <a href="http://linuxhelp.blogspot.com/2005/04/creating-lvm-in-linux.html"> Creación de un LVM en Linux</a></li>
+
+							  <li> <a href="http://www.linuxconfig.org/Linux_lvm_-_Logical_Volume_Manager">Linux LVM - Gestor de volúmenes lógicos</a></li>
+
+						      </ul>
+
+	</div>
+	<div id="rev">Page last revised 26/07/2011 2325 UTC</div>
+
+</div>
+</body>
+</html>

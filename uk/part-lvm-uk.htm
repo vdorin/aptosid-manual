@@ -1,0 +1,526 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="uk" lang="uk">
+<head>
+	<title>aptosid Manuals - LVM Partitioning</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision polix 31/12/2011 1510 UTC -->
+<!--htdig_noindex--><div id="menu"> <!-- menu starts here - ua language maintained by polix -->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="Головна сторінка aptosid.com, форуму і вікі" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-uk.htm#search-on"><img src="../lib/logos/manual-search-22x22.png" title="Пошук в керівництві" alt="Search" /> Bаріанти пошуку</a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Bибір мови - Choose another language CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="Переключення мови CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-uk.htm">Керівництво aptosid</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-uk.htm#welcome-gen">Ласкаво просимо! &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-uk.htm#cred-team">Подяки</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-uk.htm#how-to">Про використання &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-uk.htm#how-to">Про використання</a></li>
+					  <li><a href="welcome-uk.htm#table-contents">3міст</a></li>
+					</ul>
+					</li>
+		<li><a href="help-uk.htm#help-gen">Oтримання допомоги&#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-uk.htm#help-gen">Де отримати допомогу</a></li>
+					  <li><a href="help-uk.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-uk.htm#welcome-quick">Короткий посібник aptosid</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-uk.htm">Зміст ISO-образу, випуски, список дзеркал і запис</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-uk.htm#cd-content">Зміст ISO-образу і системні вимоги &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-uk.htm#rolling">Зауваження до релізу</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-uk.htm#download-aptosid">Список дзеркал, скачування ISO-образу і запис &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-uk.htm#md5">Перевірка ISO-образу з md5</a></li>
+					  <li><a href="cd-dl-burning-uk.htm#burn-nero">Запис ISO-образу в Windows</a></li>
+					  <li><a href="cd-dl-burning-uk.htm#burn-linux">Запис ISO-образу в Linux</a></li>
+					  <li><a href="cd-no-gui-burn-uk.htm#burning-no-gui">Скрипт burniso</a></li>
+					  <li><a href="cd-no-gui-burn-uk.htm#burn-no-gui-gen">Запис ISO-образу в консолі</a></li>
+					  <li><a href="cd-dl-burning-uk.htm#download-aptosid">Cписок дзеркал</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-uk.htm">Режим ISO-образу</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-uk.htm#rootpw">Пароль root на ISO-образі</a></li>
+				<li><a href="live-mode-uk.htm#live-cd-installsoft">Установка ПО на ISO-образі</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-uk.htm">Термінал і оболонка</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-uk.htm#term-kon">Термінал і оболонка &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-uk.htm#term-kon">Термінал і оболонка</a></li>
+					  <li><a href="term-konsole-uk.htm#colours"> Кольорова підказка в терміналі</a></li>
+					  <li><a href="term-konsole-uk.htm#cli-help">Допомога в терміналі</a></li>
+					  <li><a href="help-uk.htm#init3-tools">Корисні інструменти в текстовому режимі (tty) - init 3</a></li>
+					  <li><a href="term-konsole-uk.htm#term-cmds">Команди в терміналі</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-uk.htm#sux">Команда: sux/sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-uk.htm">Чит-коди</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-uk.htm#cheatcodes">Особливі чит-коди для ISO-образу aptosid</a></li>
+				<li><a href="cheatcodes-uk.htm#cheatcodes-linux">Загальні чит-коди для параметрів ядра</a></li>
+				<li><a href="cheatcodes-vga-uk.htm#vga">Загальні коди для відеокарти</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-uk.htm">Розділ жорсткого диска -по старому,GPT та LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-uk.htm#hd-ntfs3g">Запис на розділ NTFS з ntfs-3g</a></li>
+			<li><a href="part-lvm-uk.htm#part-lvm">Розмітка з використанням LVM - Logical Volume Manager</a></li>
+			<li><a href="part-gparted-uk.htm#partition">Розмітка диска з інтерфейсом &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-uk.htm#partition">Розмітка диска з gparted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-uk.htm#ntfs">Розділи NTFS з gparted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-uk.htm#partition">Приклади розмітки диска в консолі &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-uk.htm#partition">Розмітка диска з cfdisk</a></li>
+					    <li><a href="part-cfdisk-uk.htm#formating">Форматування розділів з cfdisk</a></li>
+					    <li><a href="part-gdisk-uk.htm#gdisk-6">Форматування розділів з gdisk</a></li>
+					    <li><a href="part-gdisk-uk.htm#gdisk-1">GPT-розділів за допомогою Gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-uk.htm#part-example">Розмітка диска - огляд &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-uk.htm#part-example">Приклади розмітки диска</a></li>
+					  <li><a href="part-uuid-uk.htm#uuid">UUID, відновлення fstab і створення нових точок монтування</a></li>
+					  <li><a href="part-cfdisk-uk.htm#disknames">Імена жорстких дисків</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-uk.htm">Установка aptosid на HD, USB, VM і шифровані розділи</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-uk.htm#Inst-prep">Підготовка установки &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-uk.htm#Inst-prep">Підготовка установки</a></li>
+					  <li><a href="hd-install-uk.htm#Installation">Інсталяція на HD</a></li>
+					  <li><a href="hd-install-uk.htm#first-hd-boot">Перше завантаження</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-uk.htm#fromiso">Завантаження 'fromiso' &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-uk.htm#fromiso">Завантаження "fromiso '- огляд </a></li>
+					  <li><a href="hd-install-opts-uk.htm#guab2-fromiso">Завантаження "fromiso ' з guab 2</a></li>
+					  <li><a href="hd-install-opts-uk.htm#fromiso-persist">Cпособи 'fromiso' i 'persist'</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-uk.htm#usb-hd">Iнсталляцiя на USB &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-uk.htm#usb-hd">Iнсталляцiя на USB-HD - спосiб aptosid -  aptosid-на-флешкi</a></li>
+					  <li><a href="hd-ins-opts-oos-uk.htm#raw-usb">Запис aptosid на USB / SSD за допомогою іншого Linux, MS Windows або Mac OS</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-uk.htm#install-crypt">Установка на шифровані розділи - cryptroot</a></li>
+		  <li><a href="nbdboot-uk.htm#nbd1">Завантаження aptosid по мережі</a></li>
+		  <li><a href="hd-install-vmopts-uk.htm#vmopts">Опції інсталяцій на VM (Virtual Machine)</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-uk.htm">Устаткування в Xorg і різні драйвери</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-uk.htm#mon-res">Дозвіл екрану та монітори  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-uk.htm#mon-res">Дозвіл екрану та монітори</a></li>
+					  <li><a href="hw-dev-mon-uk.htm#xrandr">Подвійні екрани і xrandr</a></li>
+					  <li><a href="hw-dev-mon-uk.htm#mon-binary">Подвійні екрани (використовуючи виконавчі файли)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-uk.htm#foss-xorg">GPU драйвери &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-uk.htm#ati-3d">AMD / ATI 3D драйвери</a></li>
+					  <li><a href="gpu-uk.htm#intel">Intel 2D i 3D драйвери</a></li>
+					  <li><a href="gpu-uk.htm#nvidia">Nvidia 3D драйвери</a></li>
+					  <li><a href="gpu-uk.htm#foss-xorg">Вільні Xorg-драйвери</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-uk.htm#fw-detect">Визначення невільного мікропрограмного забезпечення - non-free </a></li>
+			  <li><a href="nf-firm-uk.htm#non-free-firmware">Додавання non-free в список джерел</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-uk.htm">Bіконні менеджери</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-uk.htm">Віконні менеджери KDE та Xfce &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-uk.htm#xfce-notes">Корисні інструменти для Xfce</a></li>
+					    <li><a href="wm-dm-uk.htm#install-add">Корисні інструменти для KDE</a></li>
+					    <li><a href="wm-dm-uk.htm#desk-freeze">Робочий стіл зависає</a></li>
+					    <li><a href="wm-dm-uk.htm#kde-login">Проблеми входу в KDE</a></li>
+					    <li><a href="wm-dm-uk.htm#ch-th">Управління темами</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-uk.htm#dm">Установква додаткових дисплейних менеджерів</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-uk.htm">Інтернет, Wifi і локальна мережа</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-uk.htm">Мета-пакет LAMP &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-uk.htm#serv-apache">Мета-пакет LAMP</a></li>
+					    <li><a href="lamp-apache-uk.htm#serv-ftp">Kлієнти FTP</a></li>
+					    <li><a href="lamp-apache-uk.htm#serv-sec">3ахищені протоколи</a></li>
+					    <li><a href="lamp-apache-uk.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-uk.htm#serv-mysql">Налаштування MySQL</a></li>
+					    <li><a href="lamp-ppp-uk.htm#serv-php">PHP в apache</a></li>
+					    <li><a href="ntp-server-uk.htm#ntp-server">Установка сервера часу</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-uk.htm#tor">Брандмауери та веб-проксі &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-uk.htm#tor">Маршрутизатор tor</a></li>
+					    <li><a href="tor-privoxy-uk.htm#privoxy">Веб-проксi privoxy</a></li>
+					    <li><a href="inet-ceni-uk.htm#firewalls">Брандмауэри</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-uk.htm#ssh-x">Samba и ssh &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-uk.htm#setup">Сервер samba</a></li>
+						  <li><a href="samba-uk.htm#configure">Інтеграції samba в мережу Windows</a></li>
+						  <li><a href="ssh-uk.htm#ssh-fs">Віддалене монтування з ssh</a></li>
+						  <li><a href="ssh-uk.htm#ssh-x">Програми X-Windows з ssh</a></li>
+						  <li><a href="ssh-uk.htm#ssh-f">Інтерфейс ssh і Konqueror</a></li>
+						  <li><a href="ssh-uk.htm#ssh-w">ssh X-forwarding з Windows-PC</a></li>
+						  <li><a href="ssh-uk.htm#ssh">Безпека з ssh</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-uk.htm#netcardconfig">Связи с WiFi &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-uk.htm#netcardconfig">Налаштування мережевих карт з ceni</a></li>
+						    <li><a href="inet-wpagui-uk.htm#wpa-roaming-gui">Графіческoe ппіложеніе wpa_gui для WiFi</a></li>
+						    <li><a href="inet-setup-v.htm#net-set1">Роумiнг с WiFi</a></li>
+						    <li><a href="inet-wpa-uk.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-uk.htm#hotswitch">Переключення мережі між WiFi та провідного зв'язком</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-uk.htm#netcardconfig">дротяний зв'язок&#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-uk.htm#dial-mod">56кілобітовие модеми</a></li>
+						    <li><a href="inet-ceni-uk.htm#netcardconfig">Налаштування мережевих карт з ceni</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-uk.htm#fw-detect">Визначення невільного мікропрограмного забезпечення - non-free </a></li>
+		<li><a href="nf-firm-uk.htm#non-free-firmware">Додавання non-free в список джерел</a></li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-uk.htm">Управління пакетами і оновлення системи з dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-uk.htm#apt-cook">APT и репозитории &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-uk.htm#apt-cook">APT і репозиторії</a></li>
+					    <li><a href="sys-admin-apt-uk.htm#apt-install">Установка нового пакета</a></li>
+					    <li><a href="sys-admin-apt-uk.htm#apt-delete">Bидалення пакета</a></li>
+					    <li><a href="sys-admin-apt-uk.htm#apt-downgrade">Зниження версії з hold</a></li>
+					    <li><a href="sys-admin-apt-uk.htm#apt-cache">Пошук пакетної иформации з apt-cache</a></li>
+					    <li><a href="sys-admin-apt-uk.htm#gui-pacsea">Графічна пошукова програма</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-uk.htm#kern-upgrade">Оновлення ядра&#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-uk.htm#kern-remove">Bидалення ядра</a></li>
+					    <li><a href="sys-admin-kern-upg-uk.htm#kern-upgrade">Оновлення ядра</a></li>
+					    <li><a href="sys-admin-kern-upg-uk.htm#dmakms">Динамічна інсталяція модулів ядра з dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-uk.htm#apt-upgrade">Оновлення системи з dist-upgrade - Короткий огляд &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-uk.htm#live-cd-upgrade">Оновлення з ISO-образу</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-uk.htm#approx">Оновлення декількох комп'ютерів в локальній мережі</a></li>
+					    <li><a href="sys-admin-apt-uk.htm#apt-upgrade">Короткий огляд Оновлення системи з dist-upgrade</a></li>
+					    <li><a href="sys-admin-apt-uk.htm#du-st">Кроки оновлення системи від dist-upgrade</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-uk.htm">Cистемне адміністрування</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-uk.htm#bois-prep">Оновлення BIOS з FreeDOS</a></li>
+		<li><a href="vir-rkits-uk.htm#virus-rkits">Cканер безпеки</a></li>
+		<li><a href="hd-install-uk.htm#adduser">Новий користувач та паролі &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-uk.htm#adduser">Додавання нового користувача</a></li>
+					    <li><a href="sys-admin-gen-uk.htm#pw-lost">Відновлення root-пароля</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-uk.htm#start-services">Служби та режими завантаження &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-uk.htm#start-services">Вибір служб</a></li>
+					    <li><a href="sys-admin-gen-uk.htm#pkill">3авершення служби або процесу</a></li>
+					    <li><a href="sys-admin-gen-uk.htm#init">Режими завантаження init в aptosid</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-uk.htm#rsync">Pезервування системи &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-uk.htm#rdiff">Резервування за rdiff</a></li>
+					    <li><a href="sys-admin-rsync-uk.htm#rsync">Резервування за rsync</a></li>
+					    <li><a href="home-uk.htm#home-bu">Переміщення / home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-uk.htm#fonts">Cups, шрифти та звук &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-uk.htm#fonts">Шрифти</a></li>
+					     <li><a href="sys-admin-gen-uk.htm#cups">Cервер cups</a></li>
+					     <li><a href="sys-admin-gen-uk.htm#sound">Звукові мікшери</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-uk.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-uk.htm#chroot">Grub2 - Відновлення grub з chroot</a></li>
+					    <li><a href="sys-admin-grub2-uk.htm#mbr-over-grub2">Grub2 -Видалення з MBR</a></li>
+					    <li><a href="sys-admin-grub2-uk.htm#multi-os">Grub2 - Подвійна і мультизагрузки</a></li>
+					    <li><a href="sys-admin-grub2-uk.htm#grub1-grub2">Grub2 - Оновлення за grub1</a></li>
+					    <li><a href="sys-admin-grub2-uk.htm#grub2">Grub2 - Kороткий огляд</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Sponsored by webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid розміщений на сервері webtropia.com" alt = "aptosid розміщений на сервері webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+		<div class="divider" id="part-lvm">
+				<h2 id="top-header">Розбиття LVM - управління логічними обсягами</h2>
+
+							<p><span class="highlight-2"> Це базове керівництво для Вашого початку роботи. У Вашу обов'язок входити впізнавання більше інформації про LVM. Джерела та ресурси знаходяться в нижній частині цієї сторінки, проте вони безумовно не являються вичерпними.</span></p>
+
+							<p>Призначено для релізу aptosid-2010-03-apate.</p>
+
+							<p>Логічні обсяги можуть займати кілька дисків і є на відміну від традиційного методу розбиття жорстких дисків масштабованими. </p>
+
+							<p>Тим не менш, будь це традиційний метод розмітки або секціонування використання LVM, розбиття не те що Ви дуже часто робите, тому вона потребує глибокої логіки поряд з методом проб і помилок, перш ніж Ви будете задоволені результатом роботи.</p>
+
+							<p>Є 3 основні терміни, які Ви повинні знати:</p>
+						  <ul>
+							<li> <span class="highlight-3"> Фізичні обсяги: </span> Це Ваші фізичні диски або розділи диска, такі як / dev / або / dev/sdb1. Все це так важливо як наприклад іструкція по збиранні яку Ви б використовували при монтажі / размонтирования який-небудь речі. За допомогою LVM ми можемо об'єднати декілька фізичних обсягів в групи. </li>
+
+							<li> <span class="highlight-3"> Групи обсягів: </span> Групи обсягів складається з реальних фізичних обсягів, і зберігання використовується для створення логічних обсягів, які Ви можете створити / змінити / видалити і використовувати. Ви можете вважати групу обсягів, як "віртуальний диск" зібраний з фізичних обсягів. Ви можете також розділити його на "віртуальні розділи", які є логічними обсягами. </li>
+
+							<li><span class="highlight-3"> Логічні обсяги: </span> Логічні обсяги, є обсягами які Ви будете в кінцевому підсумку монтувати до системи. Вони можуть бути доданими, віддаленими, і зміненими. Так як вони знаходяться в групах вони можуть бути більше, ніж який-небудь один фізичний об'єм. (Тобто 4 х 250 ГБ диски можуть бути об'єднані в одну групу 1 Тб обсягу, то його розкол створить 2 х 500 логічних обсягів.) </li>
+
+						  </ul>
+
+				<h3>Є 6 основних і необхідних кроків</h3>
+							<p><span class="highlight-3">Наступний приклад заснований на нових дисках. Tам розділи відсутні або там требуються нові схеми розбивки диска, на якому всі дані будуть віддаленими, які Ви хочете конвертувати в LVM.</span></p>
+
+							<p>Вам потрібно використовувати сfdisk або fdisk так як на сьогоднішній день Gparted і KDE Partition Manager не підтримують перегородки LVM.</p>
+
+							<p><span class="highlight-3">Крок 1: </span>Створення таблиці розділів:</p>
+<pre>
+cfdisk /dev/sda
+<span class="highlight-3"> n </span>створити новий розділ на жорсткому диску
+<span class="highlight-3"> p  </span>зробити цей розділ основним розділом
+<span class="highlight-3"> 1  </span>дасти розділу номер 1 як ідентифікації
+<span class="highlight-3"> ### встановити розмір кластера за Вашим бажанням </span> # # # Установка значення першого і останнього циліндра за замовчуванням (натисніть Enter) щоб охопити весь диск
+<span class="highlight-3"> t  </span>переключити тип розділу для створення
+<span class="highlight-3"> 8e  </span>є шістнадцятковим кодом для Linux LVM
+<span class="highlight-3"> W  </span>запише Ваші зміни на диск. # # Це таблиця разделов. Якщо Ви зрозуміли, що Ви зробили помилку в цей момент, Ви можете відновити стару схему розділів диска і Ваші дані будуть в порядку.##
+</pre>
+
+							<p>Якщо Ви хочете охопити обсяг 2 або більше дисків, повторіть цю процедуру на кожному з дисків.</p>
+
+							<p><span class="highlight-3">Крок 2:</span> Налаштуйте розділ в якості фізичного обсягу. Це призведе до видалення будь-яких даних:</p>
+
+<pre>
+pvcreate /dev/sda1
+</pre>
+
+							<p>Повторіть процес на будь-яких інших розділах, відповідно до вимог.</p>
+
+							<p><span class="highlight-3">Kpoк 3:</span> Створення групи обсягів:</p>
+
+<pre>
+vgcreate vulcan /dev/sda1
+</pre>
+							<p>Якщо Ви хочете охопити 3 диска, якщо Ви наприклад включаєте інші диски, наберіть цю команду:</p>
+
+<pre>
+vgcreate vulcan /dev/sda1 /dev/sdb1 /dev/sdc1
+</pre>
+							<p>Якщо Ви зробили це правильно, Ви зможете побачити результат за допомогою команди:</p>
+<pre>
+vgscan
+</pre>
+							<p>vgdisplay дасть Вам <span class="highlight-3"> size </span> властивості:</p>
+<pre>
+vgdisplay vulcan
+</pre>
+							<p><span class="highlight-3">Крок 4:</span> Створення логічних oбсягів. Тепер прийшов для Вас час, щоб вирішити якесь логічний обсяг Ви хочете мати щоб ​​бути на початковому етапі. Однією з переваг є те, що за допомогою LVM Ви можете регулювати розмір обсягу за своїм бажанням без необхідності перезавантаження.</p>
+
+							<p>Давайте припустимо, що Ви спочатку хочете створити 300 GB обсягу під назвою spock в LVM розділі vulcan:</p>
+<pre>
+lvcreate -n spock --size 300g vulcan
+</pre>
+
+							<p><span class="highlight-3">Крок 5:</span>Відформатуйте обсяг і будете терплячими під час його форматування. Це може зайняти деякий час:</p>
+<pre>
+mkfs.ext4 /dev/vulcan/spock
+</pre>
+							<p><span class="highlight-3">Крок 6:</span></p>
+<pre>
+mkdir /media/spock/
+</pre>
+							<p>Змініть з вашим улюбленим редактором fstab для монтування обсягу при завантаженні. </p>
+<pre>
+mcedit /etc/fstab
+</pre>
+							<p>Використання <span class="highlight-3">/dev/vulcan/spock </span> краще, ніж використання UUID чисел з LVM, як і тоді Ви можете клонувати файлову систему, і Вам не доведеться турбуватися про можливі UUID зіткнень, особливо з LVM, каторая Ви можете в кінцевому підсумку влаштувати на декількох файлових систем з однаковим числом UUID (Яскравим прикладом цього є знімки).</p>
+
+
+<pre>
+/dev/vulcan/spock /media/spock/ ext4 auto,users,rw,exec,dev,relatime  0  2
+</pre>
+							<p><span class="highlight-3">Необов'язково:</span> Зміна обсягу власника так, щоб інші користувачі не мали права на читання / запис LVM:</p>
+
+<pre>
+chown root:users /media/spock
+</pre>
+
+<pre>
+chmod 775 /media/spock
+</pre>
+							<p>Ваш основний LVM тепер повинен бути встановлений.</p>
+
+					    <h3>Зміна розмірів</h3>
+
+							<p><span class="highlight-3">Настійно рекомендується використовувати Live-ISO для зміни розмірів розділів. У той час зростаючий розділ 'на льоту' може бути без помилок, то ж саме не можна сказати, коли проїзходіт зниження обсягу. Це спричинить втрати даних, особливо якщо при цьому беруть участь розділи <span class="highlight-2 "> / (root) </span>або<span class="highlight-2">/home</span> are involved.</span></p>
+
+							<h5>Для зміни розмірів обсягом від 300 Гб до 500 Гб, використовуйте в даному прикладі команду:</h5>
+<pre>
+umount /media/spock/
+</pre>
+
+<pre>
+lvextend -L+200g /dev/vulcan/spock
+</pre>
+							<p>Потім виконайте цю команду для файлової системи, щоб вона була змінена:</p>
+
+<pre>
+e2fsck -f /dev/vulcan/spock
+</pre>
+
+<pre>
+resize2fs /dev/vulcan/spock
+</pre>
+
+<pre>
+mount /media/spock
+</pre>
+							<h5>Для зміни розмірів об'ємом від 300 ГБ до 280GB використовуйте в даному прикладі команду:</h5>
+<pre>
+umount /media/spock/
+</pre>
+							<p>Після того виконайте цю команду для файлової системи, щоб вона була змінена:</p>
+
+<pre>
+e2fsck -f /dev/vulcan/spock
+</pre>
+
+<pre>
+resize2fs /dev/vulcan/spock 280g
+</pre>
+
+							<p>Потім змініть розмір обсягу</p>
+<pre>
+lvreduce -L-20g /dev/vulcan/spock
+</pre>
+
+<pre>
+resize2fs /dev/vulcan/spock
+</pre>
+
+<pre>
+mount /media/spock
+</pre>
+
+					     <h5>LVM GUI</h5>
+							<p><span class="highlight-3">system-config-lvm</span>забезпечує графічний інтерфейс і доступний для Вас, щоб допомогти Вам управляти LVM. Устанока system-config-lvm з правами адміністратора:</p>
+
+<pre>
+apt-get install system-config-lvm
+man system-config-lvm <span class="highlight-3"> # Будь ласка це прочитайте</span>
+</pre>
+
+				  <h5>Посилання:</h5>
+						     <ul>
+							 <li><a href="http://www.debian-administration.org/articles/410"> Адміністрування Debian - просте введення в роботу з LVM</a></li>
+
+							 <li><a href="http://www.ibm.com/developerworks/linux/library/l-lvm2/"> IBM - Управління логічними обсягами</a></li>
+
+							  <li><a href="http://www.ibm.com/developerworks/linux/library/l-resizing-partitions-2/index.html"> IBM - Зміна розміри розділів Linux, Частина 2: Вдосконалене зміна розмірів</a></li>
+
+
+							  <li> <a href="http://docs.google.com/viewer?a=v&amp;q=cache:1RMpacheCBcJ:www.redhat.com/docs/en-US/Red_Hat_Enterprise_Linux/5.4/pdf/Logical_Volume_Manager_Administration.pdf+%22Logical+Volume+Manager+Administration+%22&amp;hl=en&amp;pid=bl&amp;srcid=ADGEEShRiptIjzsnPNsCs4RgyUFNWkYcrDc3SkBSD6cTq39D6wye5JM3tP_ehcn37I5VWs84I_HI45rvG-n6YG4R2fE8hqDByq-KPhNEkha4zwphrR7QIUVnUz6omwY85e-ZEXX723Js&amp;sig=AHIEtbSJyxEst6Wue7_1_TeDYwB480azEw"> Red Hat - Керівництво адміністратора по LVM</a></li>
+
+							  <li> <a href="http://en.wikipedia.org/wiki/Logical_Volume_Manager_%28Linux%29"> Менеджер логічних обсягів (Linux)</a></li>
+
+							  <li> <a href="http://thelinuxexperiment.com/guinea-pigs/jon-f/setting-up-an-lvm-for-storage/"> Налаштування LVM для зберігання</a></li>
+
+							  <li> <a href="http://linuxhelp.blogspot.com/2005/04/creating-lvm-in-linux.html"> Створення LVM в Linux</a></li>
+
+							  <li> <a href="http://www.linuxconfig.org/Linux_lvm_-_Logical_Volume_Manager">Linux lvm - Менеджер логічних обсягів</a></li>
+
+						      </ul>
+
+	</div>
+	<div id="rev">Сторінка останний раз переглянута 26/07/2011 2325 UTC</div>
+
+</div>
+</body>
+</html>

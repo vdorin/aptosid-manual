@@ -1,0 +1,881 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="da" lang="da">
+<head>
+	<title>aptosid Manuals - Internet/Network WiFi WPA-Supplicant</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision by ragupo 25/02/2011 1830hrs UTC -->
+<!--htdig_noindex--><div id="menu"> <!-- menu starts here en lang maintained by ragupo-->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="Tilbage til aptosid.com forums og wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-da.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" />Søg online - offline</a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Vælg et andet sprog - Choose another language CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="lang-switch CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-da.htm">aptosid OS Manual</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-da.htm#welcome-gen">aptosid OS Manual &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-da.htm#cred-team">Tak til</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-da.htm#how-to">Hvordan du anvender denne manual &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-da.htm#how-to">Hvordan du anvender denne manual</a></li>
+					  <li><a href="welcome-da.htm#table-contents">Inholdsfortegnelse</a></li>
+					</ul>
+					</li>
+		<li><a href="help-da.htm#help-gen">Sådan får du hjælp &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-da.htm#help-gen">Hvor og hvordan får du hjælp</a></li>
+					  <li><a href="help-da.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-da.htm#welcome-quick">aptosid Hurtig Start Guide</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-da.htm">ISO indhold, udgivelser, filspejle og cd-brænding</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-da.htm#cd-content">ISO indhold og systemkrav &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-da.htm#rolling">Bemærkninger til udgivelsen</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-da.htm#download-aptosid">aptosid filspejle, download og cd-brænding &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-da.htm#md5">md5 Checksum</a></li>
+					  <li><a href="cd-dl-burning-da.htm#burn-nero">cd-brænding i Windows</a></li>
+					  <li><a href="cd-dl-burning-da.htm#burn-linux">cd-brænding i Linux</a></li>
+					  <li><a href="cd-no-gui-burn-da.htm#burning-no-gui">burniso skript</a></li>
+					  <li><a href="cd-no-gui-burn-da.htm#burn-no-gui-gen">cd-brænding uden grafisk brugerflade</a></li>
+					  <li><a href="cd-dl-burning-da.htm#download-aptosid">aptosid download filspejle</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-da.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-da.htm#rootpw">Root-kodeord på aptosid Live ISO</a></li>
+				<li><a href="live-mode-da.htm#live-cd-installsoft">Installering af programmer under Live-ISO</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-da.htm">Terminalen</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-da.htm#term-kon"> Terminal &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-da.htm#term-kon"> Terminalen</a></li>
+					  <li><a href="term-konsole-da.htm#colours"> Farver i terminal-prompten</a></li>
+					  <li><a href="term-konsole-da.htm#cli-help">Hjælp til kommandolinien</a></li>
+					  <li><a href="help-da.htm#init3-tools">Nyttige værktøjer til text mode (tty) - init 3</a></li>
+					  <li><a href="term-konsole-da.htm#term-cmds">Linux Terminal kommando liste</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-da.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-da.htm">CheatCodes</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-da.htm#cheatcodes">aptosid specifikke Live-ISO Cheatcodes</a></li>
+				<li><a href="cheatcodes-da.htm#cheatcodes-linux">Linux generiske Cheatcodes</a></li>
+				<li><a href="cheatcodes-vga-da.htm#vga">VGA Codes</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-da.htm">Partitioning the Hard Drive - Traditional, GPT and LVM</a>
+		    <ul class="sub-menu" id="sm6">
+			  <li><a href="part-gparted-da.htm#hd-ntfs3g">Skriv til NTFS partitioner med ntfs-3g</a></li>
+			<li><a href="part-lvm-da.htm#part-lvm">Partitionering med anvendelse af LVM - Logical Volume Manager</a></li>
+			<li><a href="part-gparted-da.htm#partition">Partitionering med grafisk brugerflade &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-da.htm#partition">Partitionering af din harddisk med GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-da.htm#ntfs">Ændre størrelsen på NTFS partitioner med GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-da.htm#partition">Partitionering fra kommandolinien &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-da.htm#partition">Partitionering af harddisken med cfdisk</a></li>
+					    <li><a href="part-cfdisk-da.htm#formating">Formattering efter partitionering med cfdisk</a></li>
+					    <li><a href="part-gdisk-ca.htm#gdisk-6">Formatting after partitioning with gdisk</a></li>
+					    <li><a href="part-gdisk-da.htm#gdisk-1">GPT Partitioning with gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-da.htm#part-example">Basal partitionering &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-da.htm#part-example">Eksempler på partitionsstørrelser</a></li>
+					  <li><a href="part-uuid-da.htm#uuid">UUID, Genopbygning af fstab og oprettelse af nye monteringspunkter</a></li>
+					  <li><a href="part-cfdisk-da.htm#disknames">Nomenklatur for diske og partitionsnavngivning</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-da.htm">Installations muligheder - HD, USB, VM og Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-da.htm#Inst-prep">Forberedelser til installationen &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-da.htm#Inst-prep">Installations forberedelser</a></li>
+					  <li><a href="hd-install-da.htm#Installation">Installering til harddisken</a></li>
+					  <li><a href="hd-install-da.htm#first-hd-boot">Første opstart</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-da.htm#fromiso">Opstart fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-da.htm#fromiso">Opstart fromiso - Overblik</a></li>
+					  <li><a href="hd-install-opts-da.htm#grub2-fromiso">Opstart 'fromiso' med Grub 2</a></li>
+					  <li><a href="hd-install-opts-da.htm#fromiso-persist">Fromiso og persist</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-da.htm#usb-hd">Installering til USB drev &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-da.htm#usb-hd">Installering til en USB-HD - aptosid specific - aptosid-on-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-da.htm#raw-usb">Installering af aptosid til USB/SSD nøgle fra Linux, MS Windows eller Mac OS X systemer</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-da.htm#install-crypt">Installering på krypterede partitioner - cryptroot</a></li>
+		  <li><a href="nbdboot-da.htm#nbd1">Boote aptosid over netværketk</a></li>
+		  <li><a href="hd-install-vmopts-da.htm#vmopts">Virtual Machine installations muligheder</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-da.htm">Grafikkort, Monitors, Xorg &amp; drivere</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-da.htm#mon-res">Skærmopløsning og monitors  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-da.htm#mon-res">Skærm opløsning og monitors</a></li>
+					  <li><a href="hw-dev-mon-da.htm#xrandr">Dual Monitors og xrandr</a></li>
+					  <li><a href="hw-dev-mon-da.htm#mon-binary">Dual Monitors (med binære drivere)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-da.htm#foss-xorg">GPU drivers &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-da.htm#ati-3d">AMD/ATI 3D drivere</a></li>
+					  <li><a href="gpu-da.htm#intel">Intel 2D and 3D drivere</a></li>
+					  <li><a href="gpu-da.htm#nvidia">Nvidia 3D drivere</a></li>
+					  <li><a href="gpu-da.htm#foss-xorg">Open Source Xorg drivere</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-da.htm#fw-detect">Firmware detection - non-free </a></li>
+			  <li><a href="nf-firm-da.htm#non-free-firmware">Tilføj non-free til kildelisten </a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-da.htm#install-add">Window Managers</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-da.htm">KDE and XFCE Window Managers &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-da.htm#xfce-notes">Nyttige Xfce ekstras</a></li>
+					    <li><a href="wm-dm-da.htm#install-add">Nyttige ekstra KDE Apps</a></li>
+					    <li><a href="wm-dm-da.htm#desk-freeze">Skrivebordet fyser</a></li>
+					    <li><a href="wm-dm-da.htm#kde-login">ingen login i KDE mulig</a></li>
+					    <li><a href="wm-dm-da.htm#ch-th">Ændre Themes</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-da.htm#dm">Installing additional Display Managers</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-da.htm">Internet forbindelse, WiFi, LAN og Netwærk</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-da.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-da.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-da.htm#serv-ftp">FTP klienter</a></li>
+					    <li><a href="lamp-apache-da.htm#serv-sec">Sikkerheds protocoller</a></li>
+					    <li><a href="lamp-apache-da.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-da.htm#serv-mysql">MySQL opsætning</a></li>
+					    <li><a href="lamp-ppp-da.htm#serv-php">PHP i Apache</a></li>
+					    <li><a href="ntp-server-da.htm#ntp-server">Opsætning af timeserver</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-da.htm#privoxy">Firewalls og Privatliv &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-da.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-da.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-da.htm#firewalls">Firewalls</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-da.htm#ssh-x">SSH og Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-da.htm#setup">Samba-Server opsætning</a></li>
+						  <li><a href="samba-da.htm#configure">Konfiguration af SAMBA (Windows)</a></li>
+						  <li><a href="ssh-da.htm#ssh-fs">SSH Remote Mounting</a></li>
+						  <li><a href="ssh-da.htm#ssh-x">X Window Apps via SSH</a></li>
+						  <li><a href="ssh-da.htm#ssh-f">GUI SSH med Konqueror</a></li>
+						  <li><a href="ssh-da.htm#ssh-w">SSH X-Forwarding fra en Windows-PC</a></li>
+						  <li><a href="ssh-da.htm#ssh">SSH og sikkerhed</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-da.htm#netcardconfig">WIFI forbindelser &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-da.htm#netcardconfig">Kom online - Ceni</a></li>
+						    <li><a href="inet-wpagui-da.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-da.htm#net-set1">WiFi - opsætning af WiFi Roaming</a></li>
+						    <li><a href="inet-wpa-da.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-da.htm#hotswitch">Skift imellem kablet og trådløs forbindelse</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-da.htm#netcardconfig">Kablede forbindelser &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-da.htm#dial-mod">56k Modems</a></li>
+						    <li><a href="inet-ceni-da.htm#netcardconfig">kom online - Ceni</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-da.htm#fw-detect">Firmware detection - non-free </a></li>
+		<li><a href="nf-firm-da.htm#non-free-firmware">Tilføj non-free til kildelisten </a></li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-da.htm">Pkke administration og dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-da.htm#apt-cook">APT Cookbook og Sources list &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-da.htm#apt-cook">APT-Guide Cookbook og Sources list</a></li>
+					    <li><a href="sys-admin-apt-da.htm#apt-install">Installation af nye pakker</a></li>
+					    <li><a href="sys-admin-apt-da.htm#apt-delete">Afinstaller pakker</a></li>
+					    <li><a href="sys-admin-apt-da.htm#apt-downgrade">Pakke på Hold og nedgradering</a></li>
+					    <li><a href="sys-admin-apt-da.htm#apt-cache">Søgning efter pakker med apt-cache</a></li>
+					    <li><a href="sys-admin-apt-da.htm#gui-pacsea">Søgning after pakker i GUI</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-da.htm#kern-upgrade">Opdatering af kernel &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-da.htm#kern-remove">Fjernelse af Kernels</a></li>
+					    <li><a href="sys-admin-kern-upg-da.htm#kern-upgrade">Opdatering af kernel</a></li>
+					    <li><a href="sys-admin-kern-upg-da.htm#dmakms">Dynamisk installering af kernel moduler med dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-da.htm#apt-upgrade">Opdatering af installeret systemet -  dist-upgrade - Overblik &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-da.htm#live-cd-upgrade">Opdatering med Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-da.htm#approx">dist-upgrade af flere PCer på et LAN</a></li>
+					    <li><a href="sys-admin-apt-da.htm#apt-upgrade">opdatere et installeret system -  dist-upgrade - Overblik</a></li>
+					    <li><a href="sys-admin-apt-da.htm#du-st">Opdater et installeret system -  dist-upgrade - Trinvis guide</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-da.htm">System Administration</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-da.htm#bois-prep">Opdatering af BIOS med FreeDOS</a></li>
+		<li><a href="vir-rkits-da.htm#virus-rkits">Virus og Rootkit Skannere</a></li>
+		<li><a href="hd-install-da.htm#adduser">Tilføje brugere og kodeord &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-da.htm#adduser">Tilføj en ny bruger</a></li>
+					    <li><a href="sys-admin-gen-da.htm#pw-lost">Mistet root kodeord, nye kodeord</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-da.htm#start-services">Tjenester og init runlevels &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-da.htm#start-services">Tjenester aktiver/deaktiver</a></li>
+					    <li><a href="sys-admin-gen-da.htm#pkill">Killing a service or process</a></li>
+					    <li><a href="sys-admin-gen-da.htm#init">aptosid runlevels - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-da.htm#rsync">Sikkerhedskopi af systemet &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-da.htm#rdiff">Sikkerhedskopi med rdiff</a></li>
+					    <li><a href="sys-admin-rsync-da.htm#rsync">Sikkerhedskopi med rsync</a></li>
+					    <li><a href="home-da.htm#home-bu">Flytte /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-da.htm#fonts">CUPS, Fonte og Lyd &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-da.htm#fonts">Fonte</a></li>
+					     <li><a href="sys-admin-gen-da.htm#cups">CUPS - Print System</a></li>
+					     <li><a href="sys-admin-gen-da.htm#sound">Lyd Mixers</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-da.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-da.htm#chroot">Grub2 - Gneopret Grub med chroot</a></li>
+					    <li><a href="sys-admin-grub2-da.htm#mbr-over-grub2">Grub2 - MBR overskrevet</a></li>
+					    <li><a href="sys-admin-grub2-da.htm#multi-os">Grub2 - Dual og Multibooting</a></li>
+					    <li><a href="sys-admin-grub2-da.htm#grub1-grub2">Grub2 -Opgradering fra Grub1</a></li>
+					    <li><a href="sys-admin-grub2-da.htm#grub2">Grub2 - Overblik</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Sponsored by webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid is proudly hosted by webtropia.com" alt="aptosid is proudly hosted by webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+	<div class="divider" id="wpa-basic">
+		<h2 id="top-header" >WiFi - Basal opsætning af trådløse forbindelser</h2>
+
+							<p class="highlight-3">Af komplekse juridiske årsager findes der kun dfsg-free software på aptosid, <a href="nf-firm-da.htm#non-free-firmware">følg dette link for at få mere information om non-free kilder til firmware</a></p>
+
+							<p>For at få wlan WiFi til at virke skal du bruge en kablet forbindelse (eller bare en anden forbindelse der virker), bare for et par minutter så du kan hente den rette og nødvendige firmware.</p>
+
+							<p>Hvis du ikke har mulighed for at oprette andre forbindelser må du placere firmwaren på en USB-nøgle eller andet medie og installere det derfra med root rettigheder. Det gør du med følgende kommando:</p>
+<pre>
+#dpkg -i &lt;firmware.deb&gt;
+</pre>
+
+							<p>For at finde den rette firmware, uden at kende til producent og version af din trådløse chip, kan du anvende følgende kommando:</p>
+<pre>
+#fw-detect
+</pre>
+							<p>Dette giver dig følgende information:</p>
+<pre>
+#apt-get update
+#apt-get install &lt;name of firmware&gt;
+#modprobe -r &lt;modulename&gt;
+#modprobe &lt;modulename&gt;
+</pre>
+							<p>Brug apt-get install linjen som fw-detect kommandoen returnerede til dig. Herefter skal du køre nogle kommandoer i en skal/ terminal inden du kan konfigurere enheden.</p>
+
+							<p>Du skal så indlæse modulet for at være i stand til at konfigurere enheden.</p>
+
+							<p>Som root i en konsol skriver du:</p>
+<pre>
+modprobe -r &lt;modulename&gt;
+
+modprobe &lt;modulename&gt;
+</pre>
+							<p>Eftersom &lt;modulename&gt; bruger den information som fw-detect gav dig før. Her kan du anvende en nyttig funktion i konsollen: bash completion: <br />
+							Hvis du bare skriver de første få bogstaver af &lt;modulename&gt; og så taster TAB tasten, så færdiggøres modulnavnet (e.g. modprobe ipw TAB-tast). Det forhindrer også at du staver forkert.</p>
+
+							<p>Begge modprobe kommandoer skulle ikke give noget output retur, hvis de bliver udført succesfuldt, så hvis den normale prompt vender tilbage, så er modulet korrekt indlæst.</p>
+
+							<p>Du kan kontrollere det med denne kommando:</p>
+<pre>
+#lsmod | grep &lt;module&gt;
+</pre>
+
+
+							<p>Nu kan du starte Ceni fra K-Menu - Internet, eller du kan afvikle ceni fra en konsol som root. Se også <a href="inet-ceni-da.htm#netcardconfig">Kom online - Ceni</a>. Din trådløse enhed skulle nu kunne ses og er parat til at blive konfigureret.</p>
+
+							<p>For at sætte dit trådløse netværk op til at forbinde til netværk med wpagui kan du se her <a href="inet-wpagui-da.htm">WiFi - roaming WPA-GUI</a></p>
+	</div>
+	<div class="divider" id="wpa">
+		<h2>Funktionerne af wpasupplicant i Debian</h2>
+							<p class="highlight-3">Af juridiske årsager stiller aptosid udelukkende dfsg-free software til rådighed, <a href="nf-firm-da.htm#non-free-firmware">følg venligst dette link for yderligere information om non-free sources for firmware</a></p>
+
+							<p>Debian wpasupplicant pakken understøtter to metoder som begge er tæt integrerede med kernen i netværk infrastrukturen ( ifupdown).</p>
+
+
+				<h4>Indhold</h4>
+
+					<h6>1.  Specificer backend til wpa_supplicant driveren</h6>
+          						<p>* Tabel over understøttede drivere<br />
+         						* Almene driver anbefalinger </p>
+
+					<h6>2. Mode #1: Managed Mode</h6>
+          						<p>* Eksempler<br />
+          						* Tabel over almindelige valgmuligheder<br />
+          						* Vigtige noter om Managed Mode<br />
+          						* Hvordan det gøres </p>
+
+					<h6>3. Mode #2: Roaming Mode</h6>
+          						<p>* wpa_supplicant.conf<br />
+          						* /etc/network/interfaces<br />
+          						* Kontroller Roaming Daemon med wpa_action<br />
+          						* Finindstilling af Roaming opsætning<br />
+          						* Logfilen<br />
+          						* Anvendelse af eksterne Mapping Scripts (f.eks. guessnet)<br />
+          						* /etc/network/interfaces med ekstern mapping</p>
+
+					<h6>4. Fejlfinding</h6>
+          						<p>* Skjulte ssids</p>
+
+					<h6>5. Sikkerhedsovervejelser</h6>
+          						<p>* Konfiguration af fil-rettigheder</p>
+
+		<h2>1. Specificer backend til wpa_supplicant driveren</h2>
+
+							<p>Hvis der ikke eksplicit bliver valgt en en anden driver med "wpa_driver" vil wext driveren blive anvendt. Anvender man 2.4 kernel eller 2.6 kernels under 2.6.14 <b>skal</b> man definere wpa driveren under alle omstændigheder.</p>
+
+
+				<h3>Understøttede drivere</h3>
+	<div>
+		<table>
+			<tbody>
+				<tr>
+					<th>Driver</th>
+					<th>Beskrivelse</th>
+				</tr>
+				<tr>
+					<td>wext</td>
+					<td>Linux wireless extensions (generic)</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="spacer05"></div>
+				<h3>Almene driver anbefalinger</h3>
+
+							<p>Intel Pro Wireless adapters (ipw2100, ipw2200 and ipw3945) anvender allesammen 'wext' backend, medmindre din kernel er ældre end 2.6.14</p>
+
+							<p>Madwifi understøtter både 'wext' og 'madwifi' driver backends. 'wext' foretrækkes, men 'madwifi' kan i nogle tilfælde vise sig at fungerer bedre.</p>
+
+							<p>Ndiswrapper <b>UNDERSTØTTER IKKE LÆNGERE</b> 'ndiswrapper' driver backend fra og med version 1.16. Derfor skal 'wext' anvendes (medmindre du bruger en gammel version af ndiswrapper).</p>
+
+							<p>Definer drivertypen med parameteren 'wpa_driver' i /etc/network/interfaces. For eksempel:</p>
+
+<pre>
+iface eth0 inet dhcp
+	wpa-driver wext
+	. . . . . flere valg
+</pre>
+
+			<h2>2. Mode #1: Managed Mode</h2>
+
+							<p>Managed mode tillader at etablere forbindelse via wpa_supplicant til et kendt netværk. Det fungerer på samme måde som wireless-tools pakken. Ethvert element, der er nødvendig for at oprette forbindelsen via wpa_supplicant, skal have præfikset 'wpa-' og efterfølges af den værdi der skal bruges for elementet.</p>
+
+					<h6>Eksempler på Mode #1 wpa.conf fil - Eksempel 1.</h6>
+<pre>
+Eksempler på Mode #1 wpa.conf fil - Eksempel 1.
+BEMÆRK: 'wpa-psk' værdien er kun gyldig hvis:
+
+   1. Det er plaintext (ascii) streng på mellem 8 og 63 anslag, eller
+   2. Det er en hexadecimal streng på 64 anslag
+
+# Forbind til access point med ssid 'NETBEER' med kryptering af typen
+# WPA-PSK/WPA2-PSK. det antages at driveren vil anvende 'wext' driver backend for wpa_supplicant fordi
+#ingen anden wpa-driver værdi er defineret.
+# passphrase gives som ASCII (plaintext) streng.
+# DHCP anvendes til at få tildelt en netværksadresse.
+#
+iface wlan0 inet dhcp
+
+        wpa-ssid NETBEER
+        # plaintext passphrase
+        wpa-psk PlainTextSecret
+</pre>
+		<h6>Eksempler på Mode #1 wpa.conf fil - Eksempel 2.</h6>
+<pre>
+# Forbind til access point med ssid 'homezone'
+# Anvend kryptering type WPA-PSK/WPA2-PSK,
+# Anvend 'wext' driver backend for wpa_supplicant.
+# psk (personal key) indgives som hexadecimal string.
+# DHCP is used to obtain # a network address.
+#
+iface wlan0 inet dhcp
+wpa-driver wext
+wpa-ssid homezone
+# hexadecimal psk is encoded from a plaintext passphrase
+wpa-psk 000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f
+</pre>
+		<h6>Eksempler på Mode #1 wpa.conf fil - Eksempel 3.</h6>
+<pre>
+# Forbind til et access point med ssid 'HotSpot1' og bssid '00:1a:2b:3c:4d:5e'
+# anvend kryptering type WPA-PSK/WPA2-PSK,
+# anvend 'madwifi' driver backend for wpa_supplicant.
+# passphrase indgives som plaintext streng
+# Static network address assignment anvendes
+#
+iface ath0 inet static
+
+        wpa-driver madwifi
+        wpa-ssid HotSpot1
+        wpa-bssid 00:1a:2b:3c:4d:5e
+        # plaintext passphrase
+        wpa-psk madhotspot
+        wpa-key-mgmt WPA-PSK
+        wpa-pairwise TKIP CCMP
+        wpa-group TKIP CCMP
+        wpa-proto WPA RSN
+        # static ip settings
+        address 192.168.0.100
+        netmask 255.255.255.0
+        network 192.168.0.0
+        broadcast 192.168.0.255
+        gateway 192.168.0.1
+</pre>
+					<h6>Eksempler på Mode #1 wpa.conf fil - Eksempel 4.</h6>
+<pre>
+# Bruger oprettet wpa_supplicant.conf anvendes for eth1.
+# Alt netværk information finde i denne wpa_supplicant.conf.
+# Ingen wpa-driver type speciferes, hvorfor 'wext' vil blive brugt
+# DHCP anvendes til at få tildelt netværksadresse
+#
+iface eth1 inet dhcp
+
+wpa-conf /sti/til/wpa_supplicant.conf
+</pre>
+
+
+	<div class="divider" id="wpa1">
+		<h2>Tabel over almindelige valgmuligheder</h2>
+
+							<p>En kort oversigt over de mest almindelige 'wpa-' options der kan bruges i /etc/network/interfaces. De skal stå i WLAN enhedens afsnittet. Se 'Vigtige noter til Managed Mode' sektionen for information om gyldige og ugyldige 'wpa-' værdier.</p>
+
+							<p class="highlight-2">OBS: Alle værdier er CASE SeNsItIvE!</p>
+
+<pre>
+Valgmulighed	Eksempel på værdi	Beskrivelse
+=======         =============           ===========
+wpa-ssid        plaintextstring         definerer dit netværks ssid
+wpa-bssid       00:1a:2b:3c:4d:5e       dit access point bssid
+wpa-psk         0123456789......        din preshared wpa key. Anvend
+                                        wpa_passphrase(8) for at generere din psk
+                                        fra et passphrase / ssid par
+wpa-key-mgmt    NONE, WPA-PSK, WPA-EAP, liste over accepterede "authenticated key
+                IEEE8021X               management protocols"
+wpa-group       CCMP, TKIP, WEP104,     liste over "accepted group ciphers for WPA"
+                WEP40
+wpa-pairwise    CCMP, TKIP, NONE        liste over "accepted pairwise ciphers for
+                                        WPA"
+wpa-auth-alg    OPEN, SHARED, LEAP      liste over "allowed IEEE 802.11
+                                        authentication algorithms"
+wpa-proto       WPA, RSN                liste over accepterede protokoller
+wpa-identity    myplaintextname         administrator provided username
+                                        (EAP authentication)
+wpa-password    myplaintextpassword     dit password (EAP authentication)
+wpa-scan-ssid   0 or 1                  toggles scanning of ssid with specific
+                                        Probe Request frames
+wpa-ap-scan     0 or 1 or 2             adjusts the scanning logic of
+                                        wpa_supplicant
+
+</pre>
+							<p>Den komplette funktionalitet af wpa_cli(8) skulle være implementeret. En fejlende programfunktion anses for værende en bug og skal rapporteres som sådan. Patches er altid velkomne.</p>
+
+
+							<h2>Vigtige bemærkninger til Managed Mode</h2>
+
+							<p>Næsten alle 'wpa-' indstillinger kræver at de i det mindste er speciferet et ssid. Kun en lille del af indstillingerne har global effekt, disse er: 'wpa-ap-scan' og 'wpa-preauthenticate'.</p>
+
+							<p>Enhver 'wpa-' indstilling der er defineret for en enhed (i interfaces(5) filen), er tilstrækkelig til at starte wpa_supplicant daemon'en op.</p>
+
+							<p>'wpasupplicant ifupdown' script'et foretager antagelser (gætter) omkring input typen, der er gyldig for enhver indstilling. For eksempel antager den at nogle værdier er plaintext og sætter citationstegn omkring dette input før det bliver sendt videre til wpa_cli. wpa_cli føjer så dette til den 'network block' der dannes via 'wpa_supplicant ctrl_interface socket'.</p>
+
+							<p>Hvis du afvikler ifup manuelt med '--verbose' option vil du kunne se alle de kommandoer der danner 'network block' via wpa_cli. Hvis nogen af de værdier du har skrevet i wpa-* indstillingerne i /etc/network/interfaces er omgivet af dobbelt citationstegn, er det fordi det er blevet antaget at dit input var "plaintext" eller "ascii".</p>
+
+							<p>Nogle værdier antages automatisk at være hexadecimale strenge (f.eks. wpa-wep-key*). Værdi-'typen' af wpa-psk bliver dog bestemt ved at der søges efter ikke-hexadecimale tegn.</p>
+
+			<h2>Hvordan wpa_supplicant fungerer</h2>
+
+							<p>Som tidligere nævnt bliver ethvert 'wpa_supplicant'-specifikt element kaldt med præfikset 'wpa-'. Hvert element korrelerer med en 'wpa-supplicant'-egeneskab som er beskrevet i wpa_supplicant.conf(5), wpa_supplicant(8) og wpa_cli(8) manpages.</p>
+
+							<p>Supplicant'en kaldes uden nogen form for pre-konfigurering overhovedet, og wpa_cli bygger netværks-konfigurationen ud fra værdierne i 'wpa-*' linerne. Til at starte med indstiller wpa_supplicant/wpa_cli ikke direkte egenskaberne for enheder (som for eksempel hvis du sætter et essid med iwconfig), men informerer enheden om hvilket access point der er egnet til en forbindelse. Først når enheden har skannet området og fundet at det af 'supplicant' angivne access point er til rådighed sættes enheden om med egenskaberne.</p>
+
+							<p>Scriptet, der udfører alt dette, findes her:</p>
+
+<pre>
+/etc/wpa_supplicant/ifupdown.sh
+/etc/wpa_supplicant/functions.sh
+</pre>
+							<p>ifupdown.sh:Det bliver eksekveret af 'run-parts', der igen bliver 'invoked' af ifupdown i 'pre-up', 'pre-down' og 'post-down' faserne.</p>
+
+
+							<p>I 'pre-up' fasen bliver en wpa_supplicant daemon startet, fulgt af en serie af wpa_cli kommandoer, der indstiller en netværks konfiguration i henhold til værdierne i 'wpa-' parametrene som er indført i /etc/network/interfaces for den fysiske enhed.</p>
+
+							<p>Hvis der anvendes wpa-roam, startes en wpa_cli daemon i 'post-up' fasen.</p>
+
+							<p>I 'pre-down' fasen bliver wpa_cli daemon dræbt (stoppet) hvis den findes.</p>
+
+							<p>I 'post-down' fasen bliver wpa_supplicant daemon dræbt hvis den findes.</p>
+
+			<h2>3. Mode #2: Roaming Mode</h2>
+
+							<p>Pakken 'wpa_supplicant' indeholder en simpel roaming-mekanisme i sig selv; den findes i form af et wpa_cli-action-script (findes her: /sbin/wpa_action). Ved aktivering overtager dette script kontrollen med ifupdown. De tekniske detaljer omkring dette er beskrevet i wpa_action(8) manpage.</p>
+
+							<p>For at aktivere dette roaming-interface, tilpas det følgende interfaces(5)-eksempel:</p>
+
+<pre>
+iface eth1 inet manual
+	wpa-driver wext
+        wpa-roam /sti/til/wpa_supplicant.conf
+</pre>
+
+							<p>To daemons startes med ovenstående eksempel; wpa_supplicant og wpa_cli. En wpa_supplicant.conf-fil er nødvendigt hvis dette skal virke. Du kan bruge eksempel-konfigurations-filen som du kan kopiere til /etc med følgende:</p>
+
+<pre>
+ # copy the template to /etc/wpa_supplicant/
+        cp /usr/share/doc/wpasupplicant/examples/wpa-roam.conf \
+                /etc/wpa_supplicant/wpa_supplicant.conf
+        # allow only root to read and write to file
+        chmod 0600 /etc/wpa_supplicant/wpa_supplicant.conf
+
+NOTE: it is critical that the used wpa_supplicant.conf defines the location of
+      the 'ctrl_interface' so that a communication socket is created for the
+      wpa_cli (wpa-roam daemon) to attach. The mentioned example configuration,
+      /usr/share/doc/wpasupplicant/examples/wpa-roam.conf, has been set to a
+      sane default
+</pre>
+
+
+							<p>Det er nødvendigt at redigere denne konfigurationsfil, og tilføje 'network blocks' for alle kendte netværk. Hvis du ikke forstår hvad dette betyder, kan du begynde at læse manpage for wpa_supplicant.conf(5) nu.</p>
+
+							<p>For hvert netværk kan der defineres en 'id_str'. Den bør defineres som en simpel text-streng. Denne text-streng danner basis for netværksprofilen; som korrelere til en logisk interface (som defineret i interfaces(5) filen). Hvis ingen 'id_str' angives for et netværk, vil wpa_action antage at den skal anvende standard ('default') logisk interface. Denne 'default' interface kan ydermere defineres via værdien for 'wpa-default-iface'.</p>
+
+							<p>Hvad alt dette betyder kan vi kigge på med følgende eksempel, taget fra wpa_action(8) manpage.</p>
+
+		<h6>wpa_supplicant.conf eksempel</h6>
+<pre>
+wpa_supplicant.conf example:
+network={
+        ssid="foo"
+        key_mgmt=NONE
+        # this id_str will notify /sbin/wpa_action to 'ifup uni'
+        id_str="uni"
+}
+
+network={
+        ssid="bar"
+        psk=123456789...
+        # this id_str will notify /sbin/wpa_action to 'ifup home_static'
+        id_str="home_static"
+}
+
+network={
+        ssid=""
+        key_mgmt=NONE
+        # no 'id_str' parameter is given, /sbin/wpa_action will 'ifup default'
+}
+
+</pre>
+	</div>
+	<div class="divider" id="wpa2">
+					<h6>/etc/network/interfaces eksempler</h6>
+<pre>
+/etc/network/interfaces (eksempel):
+# roaming-interface SKAL bruge den manuelle inet metode
+# 'allow-hotplug' eller 'auto' sikrer at daemon'en starter automatisk
+allow-hotplug eth1
+iface eth1 inet manual
+
+        wpa-driver wext
+        wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf
+
+
+# no id_str, 'default' bruges som fallback mapping target
+iface default inet dhcp
+
+
+# id_str="uni"
+iface uni inet dhcp
+
+# id_str="home_static"
+iface home_static inet static
+
+        address 192.168.0.20
+        netmask 255.255.255.0
+        network 192.168.0.0
+
+        broadcast 192.168.0.255
+        gateway 192.168.0.1
+</pre>
+
+							<p>Et logisk interface bringes op via ifup, og stoppes via ifdown, når wpa_supplicant henholdsvis associerer og de-associerer med det netværk, der er defineret i 'id_str' i /etc/wpa_supplicant.conf.</p>
+
+							<p>En log over aktiviteterne af /sbin/wpa_action bliver oprettet i /var/log/wpa_action.log, venligst vedhæft denne hvis du rapporterer om problemer.</p>
+
+			<h2>Samspil mellem wpa_supplicant og wpa_cli og wpa_gui</h2>
+
+							<p>wpa_supplicant processen kan spille sammen med alle gruppemedlemmer fra gruppen "netdev", hvis roaming konfiguration er blevet anvendt som i eksemplet (eller med enhver anden gruppe/ gid, specificeret ved GROUP= crtl_interface parameteren).</p>
+<pre>
+# standard ctrl_interface opsætning anvendt i eksemplet
+	# /usr/share/doc/wpasupplicant/examples/wpa-roam.conf
+        ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+
+For at interagere med supplicant, findes der wpa_cli (kommando linje) og wpa_gui (QT).
+Med disse kan du forbinde, afbryde, tilføje/fjerne nye
+netværksblokke, desuden vises interaktive sikkerhedsindstillinger, og mere.
+</pre>
+
+		<h2>Kontrol over Roaming-Daemon gennem wpa_action</h2>
+
+							<p>Når først roaming daemon'en starter, overtager den kontrollen med ifupdown. Det vil sige; wpa_cli kalder ifup når wpa_supplicant har oprettet en forbindelse med et access point, og kalder ifdown når forbindelsen afbrydes eller termineres. Når  roaming daemon'en er aktiv, bør ifupdown ikke kontrolleres direkte med manuelle kommandoer, anvend i stedet /sbin/wpa_action til at stoppe og genindlæse roaming daemon'en. For eksempel; for at stoppe romaing daemon'en på enheden 'eth1':</p>
+
+<pre>
+wpa_action eth1 stop
+</pre>
+
+
+							<p>Hvis det er nødvendigt at opdatere roaming daemon'en med nye netværks detaljer, kan dette gøres uden at stoppe den. Rediger wpa_supplicant.conf filen der bliver anvendt af daemon'en med de nye detaljer, tilføj eventuelle specifikke netværk indstillinger til /etc/network/interfaces (associeret via 'id_str') og genindlæs daemon'en sådan her:</p>
+
+<pre>
+wpa_action eth1 reload
+</pre>
+
+							<p>Omfattende tekniske detaljer om wpa_action findes i wpa_action(8) manpage.</p>
+
+	</div>
+	<div class="divider" id="wpa3">
+		<h2>Fin indstilling af Roaming opsætning</h2>
+
+							<p>Du kan stå i en situation hvor flere kendte access points er aktive i dine nærmeste omgivelser. Du kan vælge hvilket du foretrækker manuelt, med enten wpa_cli eller wpa_gui, eller du kan tildele hvert netværk dets egen prioritet. Den sidste funktion anvendes via 'priority' parameteren i wpa_supplicant.conf.</p>
+
+	</div>
+	<div class="divider" id="wpa4">
+		<h2>Logfilen</h2>
+
+							<p>Aktiviteten fra roaming dameon'en logges til /var/log/wpa_action.log. Den følgende information findes i logfilen:</p>
+
+							<p>*time and date<br />
+							*interface name and action event<br />
+							*values of enviromental variables (WPA_ID, WPA_ID_STR, WPA_CTRL_DIR)<br />
+							*ifupdown command executed<br />
+							*wpa_cli status (based on WPA-PSK, network may display different info)<br />
+							*bssid<br />
+							*ssid<br />
+							*id<br />
+							*id_str<br />
+							*pairwise_cipher<br />
+							*group_cipher<br />
+							*key_mgmt<br />
+							*wpa_state<br />
+							*ip_address</p>
+
+
+	</div>
+	<div class="divider" id="wpa5">
+		<h2>Anvendelse af eksterne mapping-scripts (f.eks. guessnet)</h2>
+
+							<p>I tillæg til den interne mapping af logiske interfaces via 'id_str', kan wpa_action ogdå kalde eksterne mapping scripts. Et mapping script burde returnere navnet på det logiske interface som skal kaldes op. Ethvert mapping script der virker fra ifupdown's mapping mekanisme (se man interfaces) bør også fungere når det bliver kaldt fra wpa_action.</p>
+
+							<p>For at kalde et mapping script skal du tilføje en linie 'wpa-mapping-script name-of-the-script' til 'interfaces stanza' for den fysiske roaming-device. (Det kan være at du skal specificere den absolutte sti til mapping script.)</p>
+
+
+							<p>Indholdet i linierne der starter med wpa-map sendes videre til mapping script'ets stdin. Siden ifupdown kun tillader en wpa-map linie kan du tilføje numre til wpa-map for at få flere linier. For eksempel:</p>
+
+<pre>
+iface wlan0 inet manual
+        wpa-driver wext
+        wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf
+        wpa-mapping-script guessnet-ifupdown
+        wpa-map0 home
+        wpa-map1 work
+        wpa-map2 school
+        # ... flere wpa-mapX linier efter behov
+</pre>
+							<p>Som standard vil mapping script'et kun blive brugt når der ike er nogen 'id_str' tilgængelig for det aktuelle netværk. Hvis du vil deaktivere brugen af 'id_str' matching og kun anvende ekstern mapping script kan du bruge 'wpa-mapping-script-priority 1' muligheden for at overtrumfe standard adfærden.</p>
+
+							<p>I det tilfælde at mapping script returnerer en tom streng vil  wpa_action falde tilbage til 'default' interface, medmindre et alternativ er defineret i 'wpa-roam-default-iface' parameteren.</p>
+
+							<p>Nedenunder er et avanceret eksempel der anvender guessnet-ifupdown som ekstern mapping script.</p>
+
+					<h6>/etc/network/interfaces med ekestern mapping eksempel</h6>
+<pre>
+/etc/network/interfaces med ekestern mapping eksempe:
+allow-hotplug wlan0
+iface wlan0 inet manual
+
+        wpa-driver wext
+        wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf
+        wpa-roam-default-iface default-wparoam
+        wpa-mapping-script guessnet-ifupdown
+        wpa-map default: default-guessnet
+        wpa-map0 home_static
+        wpa-map1 work_static
+
+
+# school can only be chosen via 'id_str' matching
+iface school inet dhcp
+
+        # resolvconf
+        dns-nameservers 11.22.33.44 55.66.77.88
+
+iface home_static inet static
+
+        address 192.168.0.20
+        netmask 255.255.255.0
+
+        network 192.168.0.0
+        broadcast 192.168.0.255
+        gateway 192.168.0.1
+        test peer address 192.168.0.1 mac 00:01:02:03:04:05
+
+
+iface work_static inet static
+
+        address 192.168.3.200
+        netmask 255.255.255.0
+        network 192.168.3.0
+        broadcast 192.168.3.255
+
+        gateway 192.168.3.1
+        test peer address 192.168.3.1 mac 00:01:02:03:04:05
+
+iface default-guessnet inet dhcp
+
+iface default-wparoam inet dhcp
+</pre>
+
+							<p>I dette eksempel vil wpa_action kun bruge guessnet for at vælge et egnet logisk interface, når der ikke er defineret nogen 'id_str' for det aktuelle netværk i wpa_supplicant.conf.</p>
+
+							<p>'wpa-map' linerne giver guessnet navnene på de logiske interfaces der skal testes, såvel som standard ('default') interface der skal bruges hvis alle tests fejler.'test' linierne for hvert logisk interface bruges af guessnet til at afgøre om der aktuelt er forbindelse til dette netværk. For eksempel vil guessnet vælge det logiske interface 'home_static' hvis der er en enhed med IP addressen 192.168.0.1 og MAC adressen 00:01:02:03:04:05 på det aktuelle netværk. Hvis alle tests fejler vil 'default-guessnet' interface blive konfigureret.</p>
+
+
+							<p>Venligst læs guessnet(8) manpage for yderligere information.</p>
+
+			<h2>4. Fejlfinding</h2>
+
+							<p>For at debugge forbindelses-, associations- og "authentication"-problemer, anbefaler vi at du starter 'wpa_cli -i &lt;interface&gt;' i et andet konsolvindue før du starter interface. Brug kommandoen 'level 0' først, for at få alle debug messages. Brug så 'ifup --verbose &lt;interface&gt;' for at få verbose debug messages fra script'et der starter wpasupplicant.</p>
+
+	</div>
+	<div class="divider" id="wpa6">
+		<h2>Skjulte ssid'er</h2>
+
+							<p>For referencer, se #358137. For at oprette forbindelser til skjulte ssid'er, skal du indstille parameteren 'ap_scan=1' i global section, og  'scan_ssid=1' i din 'network block' sektion af din wpa_supplicant.conf fil. Hvis du bruger netværket i managed mode kan du gøre dette ved hjælp af følgende parametere:</p>
+
+<pre>
+iface eth1 inet dhcp
+wpa-conf managed
+wpa-ap-scan 1
+wpa-scan-ssid 1
+# ... additional options for your setup
+</pre>
+
+							<p>I følge #368770, kan oprettelsen af forbindelser der benytter WEP tage enddog meget lang tid. I nogle tilfælde kan indføjelse af parameteren 'ap_scan=2' i konfigurationsfilen hjælpe på dette (eller anvend den ekvivalente 'wpa-ap-scan 2' parameter).</p>
+
+
+	</div>
+	<div class="divider" id="wpa7">
+			<h2>5. Sikkerheds overvejelser</h2>
+				<h5>Tilladelser for konfigurationsfiler</h5>
+							<p>Det er vigtigt at holde PSK's og andet sensitivt information om dine netværk indstillinger privat, derfor skal du sikre dig at konfigurations-filer der indeholder den slags information kun er læsbare af deres ejer. For eksempel:</p>
+
+<pre>
+chmod 0600 /etc/network/interfaces
+# substituer stien med den til din egen wpa_supplicant.conf fil
+chmod 0600 /etc/wpa_supplicant/wpa_supplicant.conf
+</pre>
+							<p>I standard opsætningen er /etc/network/interfaces læsbar for alle brugere (world readable), og den er derfor uegnet til at opbevare hemmelige passwords og nøgler (keys) i.</p>
+
+
+	</div>
+	<div class="spacer05"></div>
+</div>
+			<div id="rev">Page last revised 14/08/2010 0100 UTC</div>
+
+</div>
+</body>
+</html>

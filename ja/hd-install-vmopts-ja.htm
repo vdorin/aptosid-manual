@@ -1,0 +1,813 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+	<title>aptosid Manuals - VM Installation Options</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision by muchan 09/Apr/2011 2140 UTC -->
+<!--htdig_noindex--><div id="menu"><!-- menu starts here ja lang maintained by muchan-->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="To aptosid.com, Forum and Wiki" alt="logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-ja.htm#search-on"><img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" /> サーチ Online Offline</a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Choose another language CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="lang-switch CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-ja.htm">aptosid OS マニュアル</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-ja.htm#welcome-gen">aptosid OS マニュアル &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-ja.htm#cred-team">貢献者</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-ja.htm#how-to">このマニュアルの使い方 &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-ja.htm#how-to">このマニュアルの使い方</a></li>
+					  <li><a href="welcome-ja.htm#table-contents">内容一覧</a></li>
+					</ul>
+					</li>
+		<li><a href="help-ja.htm#help-gen">困った時は... &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-ja.htm#help-gen">困った時は...</a></li>
+					  <li><a href="help-ja.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-ja.htm#welcome-quick">aptosid クイックスタートガイド</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-ja.htm">ISO の内容、リリース、ダウンロードミラーとCDの焼き付け</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-ja.htm#cd-content">ISO の内容と最小限必要な仕様 &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-ja.htm#rolling">リリースノート</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-ja.htm#download-aptosid">aptosidのミラー, ダウンロードとCD の作成 &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-ja.htm#md5">md5 Checksum</a></li>
+					  <li><a href="cd-dl-burning-ja.htm#burn-nero">WindowsでISOを焼くには</a></li>
+					  <li><a href="cd-dl-burning-ja.htm#burn-linux">LinuxでISOを焼くには</a></li>
+					  <li><a href="cd-no-gui-burn-ja.htm#burning-no-gui">burniso script</a></li>
+					  <li><a href="cd-no-gui-burn-ja.htm#burn-no-gui-gen">GUIなしでISOを焼くには</a></li>
+					  <li><a href="cd-dl-burning-ja.htm#download-aptosid">aptosid ダウンロードミラー</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-ja.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-ja.htm#rootpw">aptosid-LiveISOのRootパスワード</a></li>
+				<li><a href="live-mode-ja.htm#live-cd-installsoft">Live-ISO作動中にソフトをインストール</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-ja.htm">ターミナル/コンソール</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-ja.htm#term-kon"> ターミナル/コンソール&#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-ja.htm#term-kon"> ターミナル/コンソール</a></li>
+					  <li><a href="term-konsole-ja.htm#colours"> Coloured terminal prompts</a></li>
+					  <li><a href="term-konsole-ja.htm#cli-help">コマンドラインヘルプ</a></li>
+					  <li><a href="help-ja.htm#init3-tools">テキストモード(tty)で便利な道具 - init 3</a></li>
+					  <li><a href="term-konsole-ja.htm#term-cmds">Linuxターミナルのコマンド一覧</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-ja.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-ja.htm">起動コード</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-ja.htm#cheatcodes">aptosidだけのLive-ISO用起動コード</a></li>
+				<li><a href="cheatcodes-ja.htm#cheatcodes-linux">Linux一般の起動コード</a></li>
+				<li><a href="cheatcodes-vga-ja.htm#vga">VGA コード</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-ja.htm">Partitioning the Hard Drive - Traditional, GPT and LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-ja.htm#hd-ntfs3g">ntfs-3gを使ってNTFSパーティションへの書き込み</a></li>
+			<li><a href="part-lvm-ja.htm#part-lvm">LVM(Logical Volume Manager)を使うパーティション</a></li>
+			<li><a href="part-gparted-ja.htm#partition"> GUI でパーティショニング&#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-ja.htm#partition">GParted / KDE Partition Manager を使ってパーティショニング</a></li>
+					  <li><a href="part-gparted-ja.htm#ntfs"> GParted / KDE Partition Manager を使って NTFS のサイズ変更</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-ja.htm#partition">コマンドラインでパーティショニング</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-ja.htm#partition"> cfdisk を使ってパーティショニング</a></li>
+					    <li><a href="part-cfdisk-ja.htm#formating">cfdiskでパーティション後のフォーマッティング</a></li>
+					    <li><a href="part-gdisk-ja.htm#gdisk-6">Formatting after partitioning with gdisk</a></li>
+					    <li><a href="part-gdiskja.htm#gdisk-1">GPT Partitioning with gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-ja.htm#part-example">パーティショニングの基本 &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-ja.htm#part-example">パーティションサイズの例</a></li>
+					  <li><a href="part-uuid-ja.htm#uuid">UUID, Rebuilding fstab and creating new mount points</a></li>
+					  <li><a href="part-cfdisk-ja.htm#disknames">ディスクの名前について</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-ja.htm">インストール・オプション - HD, USB, VM, Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-ja.htm#Inst-prep">インストールの準備 &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-ja.htm#Inst-prep">インストールの準備</a></li>
+					  <li><a href="hd-install-ja.htm#Installation">ハードディスクへのインストール</a></li>
+					  <li><a href="hd-install-ja.htm#first-hd-boot">始めての起動</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-ja.htm#fromiso">fromisoで起動&#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-ja.htm#fromiso">fromisoで起動 - 概説</a></li>
+					  <li><a href="hd-install-opts-ja.htm#grub2-fromiso">GRUB2からfromisoで起動</a></li>
+					  <li><a href="hd-install-opts-ja.htm#fromiso-persist">fromisoと持続モード</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-ja.htm#usb-hd">USBドライブへのインストール &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-ja.htm#usb-hd">USB-HDへのインストール -aptosid 独自の- aptosid-on-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-ja.htm#raw-usb">USB/SSDドライブに他のLinuxや MS Windows、Mac OS X システムから aptosid を書き込む</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-ja.htm#install-crypt">暗号化パーティションへのインストール - cryptroot</a></li>
+		  <li><a href="nbdboot-ja.htm#nbd1">aptosidをネットワークから起動</a></li>
+		  <li><a href="hd-install-vmopts-ja.htm#vmopts">仮想マシンへのインストール</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-ja.htm">グラフィックカード、モニター、XOrgその他のドライバ</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-ja.htm#mon-res">解像度とモニター &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-ja.htm#mon-res">解像度とモニター</a></li>
+					  <li><a href="hw-dev-mon-ja.htm#xrandr">デュアルモニターとxrandr</a></li>
+					  <li><a href="hw-dev-mon-ja.htm#mon-binary">デュアルモニター（バイナリードライバ）</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-ja.htm#foss-xorg">GPU drivers &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-ja.htm#ati-3d">AMD/ATI 3D ドライバ</a></li>
+					  <li><a href="gpu-ja.htm#intel">Intel 2D/3D ドライバ</a></li>
+					  <li><a href="gpu-ja.htm#nvidia">Nvidia 3D ドライバ</a></li>
+					  <li><a href="gpu-ja.htm#foss-xorg">Xorg のオープンソースドライバ</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-ja.htm#fw-detect">Firmwareの探知 - non-free </a></li>
+			  <li><a href="nf-firm-ja.htm#non-free-firmware">non-free をソースリスとに加える</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-ja.htm">ウィンドウマネージャ</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-ja.htm">KDE and XFCE ウィンドウマネージャ &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-ja.htm#xfce-notes">Xfce ノート</a></li>
+					    <li><a href="wm-dm-ja.htm#install-add">便利な KDE 追加アプリ</a></li>
+					    <li><a href="wm-dm-ja.htm#desk-freeze">デスクトップが凍結したら</a></li>
+					    <li><a href="wm-dm-ja.htm#kde-login">KDEにログインできない時</a></li>
+					    <li><a href="wm-dm-ja.htm#ch-th">テーマの変更</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-ja.htm#dm">Installing additional Display Managers</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-ja.htm">インターネット,WiFi,LAN</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-ja.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-ja.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-ja.htm#serv-ftp">FTPクライアント</a></li>
+					    <li><a href="lamp-apache-ja.htm#serv-sec">Webサーバーのセキュリティ設定</a></li>
+					    <li><a href="lamp-apache-ja.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-ja.htm#serv-mysql">MySQL の設定</a></li>
+					    <li><a href="lamp-ppp-ja.htm#serv-php">Apache2のためのPHPサポート</a></li>
+					    <li><a href="ntp-server-ja.htm#ntp-server">タイムサーバーの設定</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-ja.htm#tor">ファイアーウォールとプライバシー &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-ja.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-ja.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-ja.htm#firewalls">ファイアーウォール</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-ja.htm#ssh-x">SSH と Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-ja.htm#setup">Samba サーバーの設定</a></li>
+						  <li><a href="samba-ja.htm#configure">SAMBA の設定(Windowsとの共有)</a></li>
+						  <li><a href="ssh-ja.htm#ssh-fs">SSH Remote Mounting</a></li>
+						  <li><a href="ssh-ja.htm#ssh-x">SSHのネットワークを通してXウィンドウズのアプリケーションを使う</a></li>
+						  <li><a href="ssh-ja.htm#ssh-f">KonquerorでGUIのSSH</a></li>
+						  <li><a href="ssh-ja.htm#ssh-w">Windows-PCからSSHでXフォワーディング</a></li>
+						  <li><a href="ssh-ja.htm#ssh">SSH とセキュリティ</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-ja.htm#netcardconfig">WIFI &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-ja.htm#netcardconfig">Ceni を使ってネットワークに接続</a></li>
+						    <li><a href="inet-wpagui-ja.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-ja.htm#net-set1">WiFi - WiFi ローミング設定</a></li>
+						    <li><a href="inet-wpa-ja.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-ja.htm#hotswitch">WiFi とケーブル接続のホットスイッチ</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-ja.htm#netcardconfig">ケーブル接続のインターネット設定&#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-ja.htm#dial-mod">56k モデム</a></li>
+						    <li><a href="inet-ceni-ja.htm#netcardconfig">Ceni を使ってネットワークに接続</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-ja.htm#fw-detect">Firmwareの探知 - non-free </a></li>
+		<li><a href="nf-firm-ja.htm#non-free-firmware">non-free をソースリスとに加える</a></li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-ja.htm">パッケージマネージャとdist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-ja.htm#apt-cook">APT クックブックとソースリスト &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-ja.htm#apt-cook">APTガイド - クックブックとソースリスト</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#apt-install">新しくパッケージをインストールする</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#apt-delete">パッケージの除去</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#apt-downgrade">ダウングレードまたはパッケージの保持</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#apt-cache">apt-cacheでパッケージ検索</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#gui-pacsea">GUI パッケージ検索</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-ja.htm#kern-upgrade">カーネルのアップグレード &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-ja.htm#kern-remove">使わないカーネルの除去</a></li>
+					    <li><a href="sys-admin-kern-upg-ja.htm#kern-upgrade"> カーネルのアップグレード</a></li>
+					    <li><a href="sys-admin-kern-upg-ja.htm#dmakms">カーネルモジュールをdmakmsでダイナミックにインストールする</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-ja.htm#apt-upgrade">インストールされたシステムのアップグレード -  dist-upgrade - 概説 &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-ja.htm#live-cd-upgrade">ライブISOアップデート</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-ja.htm#approx">同一LAN上の複数のPCをdist-upgradeする</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#apt-upgrade">インストールされたシステムのアップグレード - dist-upgrade - 概説</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#du-st">インストールされたシステムのアップグレード - dist-upgrade - ステップ</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-ja.htm">システム管理</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-ja.htm#bois-prep">FreeDOSを使ってBIOSをアップグレード</a></li>
+		<li><a href="vir-rkits-ja.htm#virus-rkits">ウイルスとRootkitスキャナー</a></li>
+		<li><a href="hd-install-ja.htm#adduser">新しいユーザーとパスワード &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-ja.htm#adduser">新しいユーザーを加える</a></li>
+					    <li><a href="sys-admin-gen-ja.htm#pw-lost">root パスワードを忘れたら, 新パスワードの設定</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-ja.htm#start-services">サービスとランレベル &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-ja.htm#start-services">サービスのスタート/ストップ</a></li>
+					    <li><a href="sys-admin-gen-ja.htm#pkill">Killing a service or process</a></li>
+					    <li><a href="sys-admin-gen-ja.htm#init">aptosid のランレベル - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-ja.htm#rsync">システムのバックアップ &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-ja.htm#rdiff">rdiffを使ってバックアップ</a></li>
+					    <li><a href="sys-admin-rsync-ja.htm#rsync">rsyncを使ってバックアップ</a></li>
+					    <li><a href="home-ja.htm#home-bu">/home を移動する</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-ja.htm#fonts">CUPS、フォントと音声 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-ja.htm#fonts">フォント</a></li>
+					     <li><a href="sys-admin-gen-ja.htm#cups">CUPS - 印刷システム</a></li>
+					     <li><a href="sys-admin-gen-ja.htm#sound">サウンドミキサー</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-ja.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-ja.htm#chroot">Grub2 - Grubをchrootでリカバーする</a></li>
+					    <li><a href="sys-admin-grub2-ja.htm#mbr-over-grub2">Grub2 - MBRが上書きされてしまったら</a></li>
+					    <li><a href="sys-admin-grub2-ja.htm#multi-os">Grub2 - デュアルまたはマルチブーティング</a></li>
+					    <li><a href="sys-admin-grub2-ja.htm#grub1-grub2">Grub2 - Grub1からアップデートするには</a></li>
+					    <li><a href="sys-admin-grub2-ja.htm#grub2">Grub2 - 概説</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Sponsored by webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid is proudly hosted by webtropia.com" alt="aptosid is proudly hosted by webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+		<div class="divider" id="vmopts">
+				<!--- ####
+				<h2 id="top-header">Virtual Machine options</h2>
+				#### -->
+				<h2 id="top-header">仮想マシンオプション</h2>
+
+						<ul>
+							<li><a href="hd-install-vmopts-ja.htm#kvm">KVM (Intel VT または AMD-V)</a></li>
+							<li><a href="hd-install-vmopts-ja.htm#vbox">Virtualbox</a></li>
+							<li><a href="hd-install-vmopts-ja.htm#qemu">QEMU</a></li>
+							<li><a href="hd-install-vmopts-ja.htm#oos">仮想イメージに OS をインストールする</a></li>
+						</ul>
+
+							<!--- ####
+							<p><span class="highlight-3">The following examples use aptosid, simply substitute aptosid with the distribution of your choice.</span></p>
+							#### -->
+							<p><span class="highlight-3">以下の例では aptosid をインストールしますが、その他のディストリビューションにも当てはまります。</span></p>
+	</div>
+	<div class="divider" id="oos">
+							<!--- ####
+			    <h2>Installing other distributions to a VM image</h2>
+							#### -->
+			    <h2>仮想イメージに OS (Linux ディストロ）をインストールする</h2>
+							<!--- ####
+							<p>Note: If and when you wish to install to a virtual machine image, most Linux distributions will probably only need an allocation of 12G. However if you have a requirement to have MS Windows in a virtual machine, you will need to allocate about a 30G, or more, to the image. All image allocation sizes ultimately depend on your requirements. </p>
+							#### -->
+							<p>ノート: OSを仮想イメージにインストールする際、大抵の Linux ディストリビューションは12Gbあれば十分ですが、MSウィンドウズをインストールするには 約30Gb を確保する必要があるでしょう。実際に確保が必要なイメージサイズは個々の場合にようて大きくかわります。</p>
+
+							<!--- ####
+							<p>Generally, an image allocation size, will not take up additional hard drive space until data is installed. Even then, it will only take space dynamically on a hard drive, contingent to the actual amount of data that expands on the image. This is due to the compression ratios of qcow2.</p>
+							#### -->
+							<p>Generally, an image allocation size, will not take up additional hard drive space until data is installed. Even then, it will only take space dynamically on a hard drive, contingent to the actual amount of data that expands on the image. This is due to the compression ratios of qcow2.</p>
+
+		      </div>
+		      <div class="divider" id="kvm">
+				<!--- ####
+				<h2>Enabling a KVM Virtual Machine</h2>
+				#### -->
+				<h2>KVM 仮想マシンを使えるようにする</h2>
+							<!--- ####
+							<p>KVM is a full virtualisation solution for Linux on x86 hardware containing virtualisation extensions (Intel VT or AMD-V).</p>
+							#### -->
+							<p>KVM は仮想化エクステンションを搭載する x86 ハードウェア(Intel VT または AMD-V)上の Linux のための完全な仮想化問題解決環境です。</p>
+
+										<!--- ####
+				      <h3>Prerequisites</h3>
+										#### -->
+				      <h3>作動条件</h3>
+
+							<!--- ####
+							<p>To ascertain whether your hardware supports KVM, ensure that KVM is enabled in the BIOS (in some cases on an Intel VT or AMD-V system it may not evident as to where the switch is, therefore assume that it is in a KVM state). The way to check is in a console run:</p>
+							#### -->
+							<p>お手持ちのハードウェアが KVM をサポートしているかを確かめるには、まず BIOS で KVM が有効になっていることを確認します。(Intel VT または Amd-V の中にはどこで KVM を設定するのかはっきりしない場合があります。その場合はとりあえず有効にっていると仮定して進んでください)。確認の方法は、コンソールから次のコマンドを実行します:</p>
+<pre>
+cat /proc/cpuinfo | egrep --color=always 'vmx|svm'
+</pre>
+							<!--- ####
+							<p>If you see <span class="highlight-3">svm</span> or <span class="highlight-3">vmx</span> in the cpu flags field, your system supports KVM. (Otherwise go back to the BIOS if you believe it is supported and check again, else search the internet as to where in the BIOS menus KVM 'enable' could be hiding).</p>
+							#### -->
+							<p>CPU フラグのなかに <span class="highlight-3">svm</span> または <span class="highlight-3">vmx</span> が見えたら KVM をサポートしているシステムです。（そうでなかったらもう一度 BIOS にもどってチェックしましょう。あるいはインターネットでどこに KVM を有効にする BIOS メニューが隠れているかサーチするのも良いでしょう。）</p>
+
+							<!--- ####
+							<p>Should your BIOS not support KVM refer to <a href="hd-install-vmopts-ja.htm#vbox">Virtualbox</a>
+							#### -->
+							<p> BIOS が KVM をサポートしていないことがわかったら、かわりに <a href="hd-install-vmopts-ja.htm#vbox">Virtualbox</a> または<a href="hd-install-vmopts-ja.htm#qemu">QEMU</a>を試してみましょう。</p>
+
+							<!--- ####
+							<p>To install and run KVM, firstly ensure that Virtualbox modules are not loaded, (- -purge them is the best option), then depending on your chipset:</p>
+							#### -->
+							<p>KVM をインストールし実行するには、まず virtualbox のモジュールがインストールされていないことを確認します。(なるべく --purge することが望ましい)、そして CPU の種類によって:</p>
+
+							<p>For <span class="highlight-3">vmx</span>なら:</p>
+<pre>
+apt-get install qemu-kvm qemu-utils
+modprobe kvm-intel
+</pre>
+							<p>For <span class="highlight-3">svm</span>なら:</p>
+<pre>
+apt-get install qemu-kvm qemu-utils
+modprobe kvm-amd
+</pre>
+								<!--- ####
+							 <p>When you start your system the qemu-kvm initscripts will take care of loading the modules.</p>
+								#### -->
+							 <p>When you start your system the qemu-kvm initscripts will take care of loading the modules.</p>
+
+							<!--- ####
+					  <h4>Using KVM to boot a aptosid-*.iso</h4>
+							#### -->
+					  <h4>KVM を使って aptosid-*.iso を起動する</h4>
+
+							<!--- ####
+							<p><span class="highlight-2">As user:</span></p>
+							#### -->
+							<p><span class="highlight-2">ユーザーとして:</span></p>
+<pre>
+$ kvm -net nic,model=virtio -net user -soundhw ac97 -m 512 -monitor stdio -cdrom &lt;aptosid.iso&gt;
+</pre>
+
+				<!--- ####
+				<h5>Installing a aptosid-*.iso to a KVM image</h5>
+				#### -->
+				<h5>aptosid-*.iso を KVM イメージにインストールする</h5>
+							<!--- ####
+							<p>First create a hard disk image, (this image will be minimal and only grow as required due to qcow2 compression ratios):</p>
+							#### -->
+							<p>まずはじめにハードディスクイメージを作ります。(このイメージは当初最小限のサイズで、qcow2 の圧縮比のため必要に応じて拡張します):</p>
+<pre>
+$ qemu-img create -f qcow2 aptosid-2010-*-.img 12G
+</pre>
+
+							<!--- ####
+							<p>Boot the aptosid-*.iso with the following parameters to enable KVM to recognise that there is an QEMU hard disk image available:</p>
+							#### -->
+							<p>aptosid-*.iso を、QEMU ハードディスクイメージが使えることを KVM が認識するように、次のパラメータで起動します:</p>
+<pre>
+$ kvm -net nic,model=virtio -net user -soundhw ac97 -m 512 -monitor stdio -cdrom &lt;/path/to/aptosid-*.iso&gt; -boot d &lt;/path/to/aptosid-VM.img&gt;
+</pre>
+
+							<p>Once the cdrom has booted up click on the aptosid installer icon to activate the installer, (or use the menu), click on the Partitioning tab and launch the partition application you prefer. For the partitioning you can follow the instructions from <a href="part-gparted-ja.htm">Partitioning the Hard Drive - Traditional, GPT and LVM</a>  (do not forget to add a swap partition If you are short of memory). Please be aware that formatting will take time so be patient.</p>
+
+	<div class="screenshot"><img src="../lib/images-common/images-vm/kvm-gparted02.png" title="gparted kvm hard disk naming" alt="gparted kvm hard disk naming" /></div>
+	<div class="spacer02"></div>
+
+							<p>You now have a VM ready for use:</p>
+
+<pre>
+$ kvm -net nic,model=virtio -net user -soundhw ac97 -m 512 -monitor stdio -drive if=virtio,boot=on,file=&lt;path/to/aptosid-VM.img&gt;
+</pre>
+
+							<p>Some guests do not support virtio, therefore you need to use other options when launching KVM, for example:</p>
+<pre>
+$ kvm -net nic, -net user -soundhw ac97 -m 512 -monitor stdio -hda &lt;/path/to/your_guest.img&gt; -cdrom your_other.iso -boot d
+</pre>
+
+							 <p>or</p>
+<pre>
+$ kvm -net nic, -net user -soundhw ac97 -m 512 -monitor stdio -hda &lt;/path/to/your_guest.img&gt;
+</pre>
+							<!--- ####
+							<p>See also: <a href="http://www.linux-kvm.org/page/Main_Page"> KVM documentation</a>.</p>
+							#### -->
+							<p>参考: <a href="http://www.linux-kvm.org/page/Main_Page"> KVM documentation</a>.</p>
+
+				<!--- ####
+				<h5>Managing your KVM virtual machine installations</h5>
+				#### -->
+				<h5>KVM 仮想マシンの管理</h5>
+<pre>
+apt-get install aqemu
+</pre>
+							<!--- ####
+							<p>When using AQEMU ensure that you choose the KVM mode from the drop down box for 'Emulator Type' in the 'General' tab. (Documentation for AQEMU is basically non existent, therefore a few 'trials by error' will be required to figure out the easy to use GUI, however a good start is to use first use the 'VM' menu followed by the 'General' tab.</p>
+							#### -->
+							<p>AQEMU を使うときは 'General' タブの中の 'Emulator Type' のドロップダウンリストの中から KVM モードを選びましょう。(AQEMU の使い方についての文書は皆無なので GUI を簡単に使えるようになるまで試行錯誤が必要ですが、とりあえず 'VM' メニューと次に 'General' タブを試してみるのがいいでしょう。)</p>
+
+	</div>
+	<div class="divider" id="vbox">
+		<!--- ####
+		<h2>Booting and installing to a VirtualBox Virtual Machine</h2>
+		#### -->
+		<h2>QEMU の仮想マシンを起動しOSをインストールする</h2>
+							<!--- ####
+							<p>The Steps:.</p>
+							#### -->
+							<p>手順:</p>
+						<ul>
+								<!--- ####
+ 							<li>1. create a harddiskimage for VirtualBox</li>
+								#### -->
+ 							<li>1. VirtualBox用のハードディスクイメージを作ります。</li>
+								<!--- ####
+ 							<li>2. boot the iso with VirtualBox</li>
+								#### -->
+ 							<li>2. VirtualBoxをISOファイルから起動します。</li>
+								<!--- ####
+ 							<li>3. install on the image</li>
+								#### -->
+ 							<li>3. ハードディスクイメージにインストールします。</li>
+						</ul>
+
+				<!--- ####
+				<h4>Requirements</h4>
+				#### -->
+				<h4>最低限必要な条件</h4>
+							<!--- ####
+							<p><span class="highlight-3">Recommended ram: 1 gig </span>: Ideally 512 MB for the guest and 512 MB for the host. (it can be run on less, but do not expect to have good performance).</p>
+							#### -->
+							<p><span class="highlight-3">RAMのサイズ: 1GB(推奨) </span>: 理想的にはホストに512MBとゲストに512 MB。 (それ以下のRAMでも使えますが、あまり良いパフォーマンスは期待できません)。</p>
+
+							<!--- ####
+							<p><span class="highlight-3">Hard disk space:</span> While VirtualBox itself is very lean (a typical installation will only need about 30 MB of hard disk space), the virtual machines will require fairly huge files on disk to represent their own hard disk storage. So, to install MS Windows XP (TM), for example, you will need a file that will easily grow to several GB in size. To have aptosid in VirtualBox you need to allocate a 5 gig image plus a swap allocation.</p>
+							#### -->
+							<p><span class="highlight-3">ハードディスクスペース:</span> VirtualBoxそのものはとても小さいプログラムです(普通にインストールすれば30MB程度のスペースしか使いません)が、仮想マシンはハードディスクの代わりとしてディスク上にかなり大きいファイルを必要とします。 そのため、例えばMS Windows XP(TM)をインストールするには何GBものスペースが必要になるでしょう。 aptosidをVirtualBoxのゲストOSとして使うのには５GBのイメージとスワップスペースがあればいいでしょう。</p>
+
+				<!--- ####
+				<h3>Installation:</h3>
+				#### -->
+				<h3>インストール:</h3>
+
+<!--- ####
+<pre>
+apt-get update
+apt-get install virtualbox-ose-qt virtualbox-source dmakms module-assistant
+</pre>
+#### -->
+<pre>
+apt-get update
+apt-get install virtualbox-ose-qt virtualbox-source virtualbox-ose-dkms
+</pre>
+							<!--- ####
+							<p>Then prepare the module:</p>
+				   #### -->
+							<p>モジュールの準備</p>
+<pre>
+m-a prepare
+m-a a-i virtualbox-source
+</pre>
+							<!--- ####
+							<p>Then activate Dynamic Module-Assistant Kernel Module Support for virtualbox, so that the next time the Linux kernel is updated a virtualbox module is prepared for it too, without manual intervention. To do that, add <span class="highlight-3">virtualbox-source</span> to the <span class="highlight-3">/etc/default/dmakms </span>configuration file. </p>
+				   #### -->
+							<p>次に virtualbox のための dmakms (Dynamic Module-Assistant Kernel Module Support) を有効にして、今後カーネルがアップデートされたとき、同時に virtualbox のモジュールも準備されるようにします。そのためには<span class="highlight-3">/etc/default/dmakms </span> の設定ファイルに <span class="highlight-3">virtualbox-source</span> を加えます。</p>
+<pre>
+mcedit /etc/default/dmakms
+virtualbox-source
+</pre>
+
+							<!--- ####
+							<p>Then reboot the computer.</p>
+							#### -->
+							<p>そして PC を再起動します。</p>
+
+							<!--- ####
+							<p><a href="sys-admin-kern-upg-ja.htm#dmakms">This is essential reading on dmakms</a></p>
+							<p><a href="sys-admin-kern-upg-ja.htm#dmakms">dmakms についてはここを読んでください</a></p>
+							#### -->
+
+					<!--- ####
+					<h3>Installing aptosid to the virtual machine</h3>
+					#### -->
+					<h3>aptosidを仮想マシンにインストールする</h3>
+							<!--- ####
+							<p>Use virtualbox's wizard to create a new virtual machine for aptosid. then follow the instructions for a regular aptosid-installation.</p>
+							#### -->
+							<p>VirtualBoxのウィザードを使ってaptosidが使う仮想マシンを作り、続いて通常のaptosidのインストールの手順を踏みます。</p>
+
+							<!--- ####
+							<p><a href="http://www.virtualbox.org/">VirtualBox has a comprehesive PDF Help, that you can download</a> </p>
+							#### -->
+							<p><a href="http://www.virtualbox.org/">VirtualBoxにはダウンロードできる詳しいヘルプPDFがあります</a> </p>
+
+	</div>
+	<div class="divider" id="qemu">
+		<!--- ####
+		<h2>Booting and installing a QEMU Virtual Machine</h2>
+		#### -->
+		<h2>QEMU の仮想マシンを起動しOSをインストールする</h2>
+
+		<ul>
+				<!--- ####
+ 			<li>1. create a harddiskimage for QEMU</li>
+				#### -->
+ 			<li>1. QEMUのためのハードディスクイメージを作る。</li>
+				<!--- ####
+ 			<li>2. boot the iso with QEMU</li>
+				#### -->
+ 			<li>2. QEMUをISOから起動する。</li>
+				<!--- ####
+ 			<li>3. install on the image</li>
+				#### -->
+ 			<li>3. ハードディスクイメージにインストールする。</li>
+		</ul>
+
+							<!--- ####
+							<p>A QT GUI tool is available to help you configure QEMU:</p>
+							#### -->
+							<p>QEMU の設定に便利なQTベースのGUIツールがあります:</p>
+<pre>
+apt-get install qtemu
+</pre>
+
+ 				<!--- ####
+ 			<h4>Creating the hard disk image</h4>
+				#### -->
+ 			<h4>ハードディスクイメージを作る</h4>
+
+				<!--- ####
+				<p>To run qemu you will probably need a hard disk image. This is a file which stores the contents of the emulated hard disk.</p>
+				#### -->
+				<p>QEMUを使うためにはハードディスクイメージを作る必要があります。 このファイルをハードディスクの代わりとして仮想マシンのファイルを保存するために使います。</p>
+
+				<!--- ####
+				<p>Use the command:</p>
+				#### -->
+				<p>そのためには:</p>
+<pre>
+qemu-img create -f qcow aptosid.qcow 3G
+</pre>
+				<!--- ####
+				<p>To create the image file named "aptosid.qcow". The "3G" parameter specifies the size of the disk - in this case 3 GB. You can use suffix M for megabytes (for example "256M"). You shouldn't worry too much about the size of the disk - the qcow format compresses the image so that the empty space doesn't add up to the size of the file.</p>
+				#### -->
+				<p>このコマンドで"aptosid.qcow"という名のイメージファイルtを作ります。 "3G"というパラメータはディスクのサイズ-この場合３GBを指定しています。 Mを使えばメガバイトの表示も使えます(例、"256M"とかけば256MB) あまりイメージサイズを気にすることはありません。 qcowフォーマットはイメージを圧縮するため空白のスペースのためにファイルが大きくなってしまうことはありません。</p>
+
+			<!--- ####
+			<h4>Installing the operating system</h4>
+			#### -->
+			<h4>オペレーションシステムのインストール</h4>
+
+				<!--- ####
+				<p>This is the first time you will need to start the emulator. <span class="highlight-3">One thing to keep in mind: when you click inside qemu window, the mouse pointer is grabbed. To release it press :</span></p>
+				#### -->
+				<p>初めてエミュレータを使うとき<span class="highlight-3">注意すべきこと: 一度QEMUのウィンドウの中をクリックするとマウスは仮想マシンに捕まります。 これを解放するには:</span></p>
+
+<pre>
+Ctrl+Alt
+</pre>
+
+				<!--- ####
+				<p>If you need to use a bootable floppy, run Qemu with:</p>
+				#### -->
+				<p>起動フロッピーが必要ならばQEMUを次のコマンドで起動します:</p>
+<pre>
+qemu -floppy aptosid.iso -net nic -net user -m 512 -boot d aptosid.qcow
+</pre>
+				<!--- ####
+				<p>If your CD-ROM is bootable, run Qemu with:</p>
+				#### -->
+				<p>CD-ROMから起動できる場合はQEMUを次のコマンドで起動します:</p>
+<pre>
+qemu -cdrom aptosid.iso -net nic -net user -m 512 -boot d aptosid.qcow
+</pre>
+				<!--- ####
+				<p>Now install aptosid as if you were going to install it on a real HD</p>
+				#### -->
+				<p>aptosidを本物のハードディスクへの場合と同じ用にインストールします</p>
+
+
+			<h4>システムの作動</h4>
+
+				<p>システムを作動するには単純に:</p>
+<pre>
+qemu [hd_image]
+</pre>
+				<!--- ####
+				<p>A good idea is to use overlay images. This way you can create hard disk image once and tell Qemu to store changes in external file. You get rid of all the instability, because it is so easy to revert to previous system state.</p>
+				#### -->
+				<p>オーバーレイイメージを使ってみるのもいい考えです。 この方法だと一度ハードディスクイメージを作って、その後の変化は外部のファイルに保存します。 何か問題が起こったとき簡単に以前の状態に戻せるため安定して使うことができます。</p>
+
+				<!--- ####
+				<p>To create an overlay image, type:</p>
+				#### -->
+				<p>オーバーレイイメージを作るには:</p>
+<pre>
+qemu-img create -b [[base''image]] -f qcow [[overlay''image]]
+</pre>
+				<!--- ####
+				<p>Substitute the hard disk image for base_image (in our case aptosid.qcow). After that you can run qemu with:</p>
+				#### -->
+				<p>ハードディスクイメージをベースイメージ(ここではaptosid.qcow)と取り替えます。 これから先はQEMUをスタートするのに:</p>
+<pre>
+qemu [overlay_image]
+</pre>
+				<p>のコマンドを使います。</p>
+				<!--- ####
+				<p>The original image will be left untouched. One hitch, the base image cannot be renamed or moved, the overlay remembers the base's full path.</p>
+				#### -->
+				<p>もとのイメージはそのまま手をつけずに保存されます。 このベースイメージの名前と場所はオーバーレイに記憶されるので、けっして変更してはいけません。</p>
+
+
+			<!--- ####
+			<h4>Using any real partition as the single primary partition of a hard disk image</h4>
+			#### -->
+			<h4>本当のパーティションをハードディスクイメージのプライマリパーティションとして使う</h4>
+
+				<!--- ####
+				<p>Sometimes, you may wish to use one of your system partition from within qemu (for instance, if you wish booting both your real machine or qemu using a given partition as root). You can do this using software RAID in linear mode (you need the linear.ko kernel driver) and a loopback device: the trick is to dynamically prepend a master boot record (MBR) to the real partition you wish to embed in a qemu raw disk image.</p>
+				#### -->
+				<p>時にはシステムパーティションの一つをQEMUの内部から使いたいことがあります。 (同じパーティションをルートとして実際に起動したりQEMUから起動したりしたい場合など)。 ソウトウェアRAIDをリニアモードで使い(そのためにはカーネルモジュールlinear.koが必要です)合わせてループバックデバイスを使うことで実現できます: QEMUのディスクイメージに埋め込みたい本物のパーティションの先頭にマスターブートレコード(MBR)をダイナミックに差し込むのがトリックです。</p>
+
+				<!--- ####
+				<p>Suppose you have a plain, unmounted /dev/sdaN partition with some filesystem on it you wish to make part of a qemu disk image. First, you create some small file to hold the MBR:</p>
+				#### -->
+				<p>仮にまだマウントされていないパーティション /dev/sdaN があって、何らかのファイルシステムにフォーマットされていて、これをQEMUのディスクイメージの一部に取り込みたいとします。 まず、MBRを保持する小さいファイルを作ります:</p>
+<pre>
+dd if=/dev/zero of=/path/to/mbr count=32
+</pre>
+				<!--- ####
+				<p>Here, a 16 KB (32 * 512 bytes) file is created. It is important not to make it too small (even if the MBR only needs a single 512 bytes block), since the smaller it will be, the smaller the chunk size of the software RAID device will have to be, which could have an impact on performance. Then, you setup a loopback device to the MBR file:</p>
+				#### -->
+				<p>これで16 KB(32x512バイ)のファイルが作られました。 (MBRが必要なのは512バイトブロックが一つだけではあるけれど)このファイルのサイズが小さすぎないことが大切です。 あまり小さいとソフトウェアRAIDデバイスのチャンクサイズも小さくなってしまい、パフォーマンスに影響がでます。 ではMBRファイルのループバックデバイスを設定します:</p>
+<pre>
+losetup -f /path/to/mbr
+</pre>
+				<!--- ####
+				<p>Let's assume the resulting device is /dev/loop0, because we wouldn't already have been using other loopbacks. Next step is to create the "merged" MBR + /dev/sdaN disk image using software RAID:</p>
+				#### -->
+				<p>すでにループデバイスが存在するとは限らないので仮にこれから作るループデバイスを /dev/loop0 としましょう。 次のステップはソフトウェアRAIDを使ってMBRとディスクイメージ/dev/sdaNを合併することです:</p>
+<pre>
+ modprobe linear
+ mdadm --build --verbose /dev/md0 --chunk=16 --level=linear --raid-devices=2 /dev/loop0 /dev/sdaN
+</pre>
+				<!--- ####
+				<p>The resulting /dev/md0 is what you will use as a qemu raw disk image (don't forget to set the permissions so that the emulator can access it). The last (and somewhat tricky) step is to set the disk configuration (disk geometry and partitions table) so that the primary partition start point in the MBR matches the one of /dev/sdaN inside /dev/md0 (an offset of exactly 16 * 512 = 16384 bytes in this example). Do this using fdisk on the host machine, not in the emulator: the default raw disc detection routine from qemu often results in non kilobyte-roundable offsets (such as 31.5 KB, as in the previous section) that cannot be managed by the software RAID code. Hence, from the the host:</p>
+				#### -->
+				<p>こうして作られた /dev/md0 をQEMUのディスクイメージファイルとして使います。 (エミュレータがアクセスで切るようにパーミッションを設定するのを忘れないように)。 最後の(一番トリッキーな)ステップはディスク設定(ディスクの形状とパーティションテーブル)においてMBRのプライマリパーティションのスタートポイントが /dev/md0 のなかの /dev/sdaN のポイントと一致するように(この例ではオフセットが16 x 512 = 16384バイトちょうどになるように)設定することです。 この作業はエミュレータの中では行わず、ホストマシーンの上でfdiskを使って行いましょう。 QEMUのデフォルトのロウディスク認識ルーチンはしばしばキロバイトで割り切れないオフセット(上の例だと31.5Kb)を出力するため、ソフトウェアRAIDコードでは扱えません。 だからホスト上で行います:</p>
+<pre>
+ fdisk /dev/md0
+</pre>
+				<!--- ####
+				<p>There, create a single primary partition corresponding to /dev/sdaN, and play with the 's'ector command from the 'x'pert menu until the first cylinder (where the first partition starts), matches to the size of the MBR. Finally, 'w'rite the result to the file: you are done. You know have a partition you can mount directly from your host, as well as part of a qemu disk image:</p>
+				#### -->
+				<p>このプラグラムで /dev/sdaN に対応する単一のプライマリパーティションを作成し、XpertメニューのSectorコマンドを試しながら最初のシリンダ(初めのセクターが始まるところ)ばMBRのサイズと一致する設定を探し、Writeコマンドで結果を書き込んで終わりです。 これでこのパーティションをホストからでもQEMUのディスクイメージの一部としてでも使えるようになりました:</p>
+<pre>
+ qemu -hdc /dev/md0 [...]
+</pre>
+				<!--- ####
+				<p>You can of course safely set any bootloader on this disk image using qemu, provided the original /boot/sdaN partition contains the necessary tools.</p>
+				#### -->
+				<p>もちろんこのディスクイメージにQEMUを使って(元の/boot/sdaNパーティションに必要なツールさえあれば)どんなブートローダでも設定できます。</p>
+
+
+			<!--- ####
+			<h4>Using the QEMU Accelerator Module</h4>
+			#### -->
+			<!--<h4>QEMUのアクセレータモジュールを使う</h4>-->
+
+				<!--- ####
+				<p>The developers of qemu have created an optional kernel module to accelerate qemu to sometimes near native levels. This should be loaded with the option</p>
+				#### -->
+				<!--<p>QEMUの開発者はQEMUを時にはネイティブに近い早さまで加速する追加のカーネルモジュールを作っています。 これをロードするには:</p>
+<pre>
+major=0
+</pre>-->
+				<!--- ####
+				<p>to automate the creation of the required /dev/kqemu device. The following command</p>
+				#### -->
+				<!--<p>必要な/dev/kqemuデバイスを自動的につくるには:</p>
+<pre>
+echo "options kqemu major=0" >> /etc/modprobe.conf
+</pre>-->
+				<!--- ####
+				<p>This will amend modprobe.conf to ensure that the module option is added every time the module is loaded.</p>
+				#### -->
+				<!--<p>このコマンドでmodprobe.confを修正して、モジュールがロードされる度にこのオプションが追加されるように設定されます。</p>
+
+<pre>
+qemu [...] -kernel-kqemu
+</pre>-->
+				<!--- ####
+				<p>This enables full virtualization and thus improves speed considerably.</p>
+				#### -->
+				<!--<p>これで最大限のバーチャリゼイションになりスピードがかなり早くなります。</p>-->
+
+			<!--- ####
+			<h4>To activate qemu:</h4>
+			#### -->
+			<!--<h4>qemuをアクティブにするには:</h4>
+<pre>
+qemu -cdrom /tmp/pkg/aptosid-debug.iso -net nic -net user -m 512
+</pre>-->
+		<!--- ####
+		<p><a href="http://fabrice.bellard.free.fr/qemu/qemu-doc.html">QEMU Project </a> </p>
+		#### -->
+		<p><a href="http://www.nongnu.org/qemu/user-doc.html">QEMUプロジェクトの公式ドキュメント </a> </p>
+		<!--- ####
+		<p><a href="http://wiki2.archlinux.org/index.php/Qemu">Some content for QEMU for the aptosid-manual was accessed off this site under GNU Free Documentation License 1.2 and modified for the aptosid-manual</a> </p>
+		#### -->
+		<p><a href="http://wiki.archlinux.org/index.php/Qemu">QEMUについての内容の一部はこのサイトからGNU Free Documentation License 1.2に基づいて取得されaptosid-manual用に変更されています</a> </p>
+
+
+	</div>
+	<div id="rev">Page last revised 12/09/2011 1010 UTC</div>
+
+</div>
+</body>
+</html>

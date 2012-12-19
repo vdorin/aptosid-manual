@@ -1,0 +1,743 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+	<title>aptosid Manuals - Generic-Server-Apache</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision muchan 04/Sep/2010 2252 UTC -->
+<!--htdig_noindex--><div id="menu"><!-- menu starts here ja lang maintained by muchan-->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="To aptosid.com, Forum and Wiki" alt="logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-ja.htm#search-on"><img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" /> サーチ Online Offline</a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Choose another language CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="lang-switch CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-ja.htm">aptosid OS マニュアル</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-ja.htm#welcome-gen">aptosid OS マニュアル &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-ja.htm#cred-team">貢献者</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-ja.htm#how-to">このマニュアルの使い方 &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-ja.htm#how-to">このマニュアルの使い方</a></li>
+					  <li><a href="welcome-ja.htm#table-contents">内容一覧</a></li>
+					</ul>
+					</li>
+		<li><a href="help-ja.htm#help-gen">困った時は... &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-ja.htm#help-gen">困った時は...</a></li>
+					  <li><a href="help-ja.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-ja.htm#welcome-quick">aptosid クイックスタートガイド</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-ja.htm">ISO の内容、リリース、ダウンロードミラーとCDの焼き付け</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-ja.htm#cd-content">ISO の内容と最小限必要な仕様 &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-ja.htm#rolling">リリースノート</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-ja.htm#download-aptosid">aptosidのミラー, ダウンロードとCD の作成 &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-ja.htm#md5">md5 Checksum</a></li>
+					  <li><a href="cd-dl-burning-ja.htm#burn-nero">WindowsでISOを焼くには</a></li>
+					  <li><a href="cd-dl-burning-ja.htm#burn-linux">LinuxでISOを焼くには</a></li>
+					  <li><a href="cd-no-gui-burn-ja.htm#burning-no-gui">burniso script</a></li>
+					  <li><a href="cd-no-gui-burn-ja.htm#burn-no-gui-gen">GUIなしでISOを焼くには</a></li>
+					  <li><a href="cd-dl-burning-ja.htm#download-aptosid">aptosid ダウンロードミラー</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-ja.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-ja.htm#rootpw">aptosid-LiveISOのRootパスワード</a></li>
+				<li><a href="live-mode-ja.htm#live-cd-installsoft">Live-ISO作動中にソフトをインストール</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-ja.htm">ターミナル/コンソール</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-ja.htm#term-kon"> ターミナル/コンソール&#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-ja.htm#term-kon"> ターミナル/コンソール</a></li>
+					  <li><a href="term-konsole-ja.htm#colours"> Coloured terminal prompts</a></li>
+					  <li><a href="term-konsole-ja.htm#cli-help">コマンドラインヘルプ</a></li>
+					  <li><a href="help-ja.htm#init3-tools">テキストモード(tty)で便利な道具 - init 3</a></li>
+					  <li><a href="term-konsole-ja.htm#term-cmds">Linuxターミナルのコマンド一覧</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-ja.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-ja.htm">起動コード</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-ja.htm#cheatcodes">aptosidだけのLive-ISO用起動コード</a></li>
+				<li><a href="cheatcodes-ja.htm#cheatcodes-linux">Linux一般の起動コード</a></li>
+				<li><a href="cheatcodes-vga-ja.htm#vga">VGA コード</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-ja.htm">Partitioning the Hard Drive - Traditional, GPT and LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-ja.htm#hd-ntfs3g">ntfs-3gを使ってNTFSパーティションへの書き込み</a></li>
+			<li><a href="part-lvm-ja.htm#part-lvm">LVM(Logical Volume Manager)を使うパーティション</a></li>
+			<li><a href="part-gparted-ja.htm#partition"> GUI でパーティショニング&#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-ja.htm#partition">GParted / KDE Partition Manager を使ってパーティショニング</a></li>
+					  <li><a href="part-gparted-ja.htm#ntfs"> GParted / KDE Partition Manager を使って NTFS のサイズ変更</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-ja.htm#partition">コマンドラインでパーティショニング</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-ja.htm#partition"> cfdisk を使ってパーティショニング</a></li>
+					    <li><a href="part-cfdisk-ja.htm#formating">cfdiskでパーティション後のフォーマッティング</a></li>
+					    <li><a href="part-gdisk-ja.htm#gdisk-6">Formatting after partitioning with gdisk</a></li>
+					    <li><a href="part-gdiskja.htm#gdisk-1">GPT Partitioning with gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-ja.htm#part-example">パーティショニングの基本 &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-ja.htm#part-example">パーティションサイズの例</a></li>
+					  <li><a href="part-uuid-ja.htm#uuid">UUID, Rebuilding fstab and creating new mount points</a></li>
+					  <li><a href="part-cfdisk-ja.htm#disknames">ディスクの名前について</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-ja.htm">インストール・オプション - HD, USB, VM, Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-ja.htm#Inst-prep">インストールの準備 &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-ja.htm#Inst-prep">インストールの準備</a></li>
+					  <li><a href="hd-install-ja.htm#Installation">ハードディスクへのインストール</a></li>
+					  <li><a href="hd-install-ja.htm#first-hd-boot">始めての起動</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-ja.htm#fromiso">fromisoで起動&#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-ja.htm#fromiso">fromisoで起動 - 概説</a></li>
+					  <li><a href="hd-install-opts-ja.htm#grub2-fromiso">GRUB2からfromisoで起動</a></li>
+					  <li><a href="hd-install-opts-ja.htm#fromiso-persist">fromisoと持続モード</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-ja.htm#usb-hd">USBドライブへのインストール &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-ja.htm#usb-hd">USB-HDへのインストール -aptosid 独自の- aptosid-on-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-ja.htm#raw-usb">USB/SSDドライブに他のLinuxや MS Windows、Mac OS X システムから aptosid を書き込む</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-ja.htm#install-crypt">暗号化パーティションへのインストール - cryptroot</a></li>
+		  <li><a href="nbdboot-ja.htm#nbd1">aptosidをネットワークから起動</a></li>
+		  <li><a href="hd-install-vmopts-ja.htm#vmopts">仮想マシンへのインストール</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-ja.htm">グラフィックカード、モニター、XOrgその他のドライバ</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-ja.htm#mon-res">解像度とモニター &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-ja.htm#mon-res">解像度とモニター</a></li>
+					  <li><a href="hw-dev-mon-ja.htm#xrandr">デュアルモニターとxrandr</a></li>
+					  <li><a href="hw-dev-mon-ja.htm#mon-binary">デュアルモニター（バイナリードライバ）</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-ja.htm#foss-xorg">GPU drivers &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-ja.htm#ati-3d">AMD/ATI 3D ドライバ</a></li>
+					  <li><a href="gpu-ja.htm#intel">Intel 2D/3D ドライバ</a></li>
+					  <li><a href="gpu-ja.htm#nvidia">Nvidia 3D ドライバ</a></li>
+					  <li><a href="gpu-ja.htm#foss-xorg">Xorg のオープンソースドライバ</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-ja.htm#fw-detect">Firmwareの探知 - non-free </a></li>
+			  <li><a href="nf-firm-ja.htm#non-free-firmware">non-free をソースリスとに加える</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-ja.htm">ウィンドウマネージャ</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-ja.htm">KDE and XFCE ウィンドウマネージャ &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-ja.htm#xfce-notes">Xfce ノート</a></li>
+					    <li><a href="wm-dm-ja.htm#install-add">便利な KDE 追加アプリ</a></li>
+					    <li><a href="wm-dm-ja.htm#desk-freeze">デスクトップが凍結したら</a></li>
+					    <li><a href="wm-dm-ja.htm#kde-login">KDEにログインできない時</a></li>
+					    <li><a href="wm-dm-ja.htm#ch-th">テーマの変更</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-ja.htm#dm">Installing additional Display Managers</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-ja.htm">インターネット,WiFi,LAN</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-ja.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-ja.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-ja.htm#serv-ftp">FTPクライアント</a></li>
+					    <li><a href="lamp-apache-ja.htm#serv-sec">Webサーバーのセキュリティ設定</a></li>
+					    <li><a href="lamp-apache-ja.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-ja.htm#serv-mysql">MySQL の設定</a></li>
+					    <li><a href="lamp-ppp-ja.htm#serv-php">Apache2のためのPHPサポート</a></li>
+					    <li><a href="ntp-server-ja.htm#ntp-server">タイムサーバーの設定</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-ja.htm#tor">ファイアーウォールとプライバシー &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-ja.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-ja.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-ja.htm#firewalls">ファイアーウォール</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-ja.htm#ssh-x">SSH と Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-ja.htm#setup">Samba サーバーの設定</a></li>
+						  <li><a href="samba-ja.htm#configure">SAMBA の設定(Windowsとの共有)</a></li>
+						  <li><a href="ssh-ja.htm#ssh-fs">SSH Remote Mounting</a></li>
+						  <li><a href="ssh-ja.htm#ssh-x">SSHのネットワークを通してXウィンドウズのアプリケーションを使う</a></li>
+						  <li><a href="ssh-ja.htm#ssh-f">KonquerorでGUIのSSH</a></li>
+						  <li><a href="ssh-ja.htm#ssh-w">Windows-PCからSSHでXフォワーディング</a></li>
+						  <li><a href="ssh-ja.htm#ssh">SSH とセキュリティ</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-ja.htm#netcardconfig">WIFI &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-ja.htm#netcardconfig">Ceni を使ってネットワークに接続</a></li>
+						    <li><a href="inet-wpagui-ja.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-ja.htm#net-set1">WiFi - WiFi ローミング設定</a></li>
+						    <li><a href="inet-wpa-ja.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-ja.htm#hotswitch">WiFi とケーブル接続のホットスイッチ</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-ja.htm#netcardconfig">ケーブル接続のインターネット設定&#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-ja.htm#dial-mod">56k モデム</a></li>
+						    <li><a href="inet-ceni-ja.htm#netcardconfig">Ceni を使ってネットワークに接続</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-ja.htm#fw-detect">Firmwareの探知 - non-free </a></li>
+		<li><a href="nf-firm-ja.htm#non-free-firmware">non-free をソースリスとに加える</a></li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-ja.htm">パッケージマネージャとdist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-ja.htm#apt-cook">APT クックブックとソースリスト &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-ja.htm#apt-cook">APTガイド - クックブックとソースリスト</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#apt-install">新しくパッケージをインストールする</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#apt-delete">パッケージの除去</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#apt-downgrade">ダウングレードまたはパッケージの保持</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#apt-cache">apt-cacheでパッケージ検索</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#gui-pacsea">GUI パッケージ検索</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-ja.htm#kern-upgrade">カーネルのアップグレード &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-ja.htm#kern-remove">使わないカーネルの除去</a></li>
+					    <li><a href="sys-admin-kern-upg-ja.htm#kern-upgrade"> カーネルのアップグレード</a></li>
+					    <li><a href="sys-admin-kern-upg-ja.htm#dmakms">カーネルモジュールをdmakmsでダイナミックにインストールする</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-ja.htm#apt-upgrade">インストールされたシステムのアップグレード -  dist-upgrade - 概説 &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-ja.htm#live-cd-upgrade">ライブISOアップデート</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-ja.htm#approx">同一LAN上の複数のPCをdist-upgradeする</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#apt-upgrade">インストールされたシステムのアップグレード - dist-upgrade - 概説</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#du-st">インストールされたシステムのアップグレード - dist-upgrade - ステップ</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-ja.htm">システム管理</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-ja.htm#bois-prep">FreeDOSを使ってBIOSをアップグレード</a></li>
+		<li><a href="vir-rkits-ja.htm#virus-rkits">ウイルスとRootkitスキャナー</a></li>
+		<li><a href="hd-install-ja.htm#adduser">新しいユーザーとパスワード &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-ja.htm#adduser">新しいユーザーを加える</a></li>
+					    <li><a href="sys-admin-gen-ja.htm#pw-lost">root パスワードを忘れたら, 新パスワードの設定</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-ja.htm#start-services">サービスとランレベル &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-ja.htm#start-services">サービスのスタート/ストップ</a></li>
+					    <li><a href="sys-admin-gen-ja.htm#pkill">Killing a service or process</a></li>
+					    <li><a href="sys-admin-gen-ja.htm#init">aptosid のランレベル - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-ja.htm#rsync">システムのバックアップ &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-ja.htm#rdiff">rdiffを使ってバックアップ</a></li>
+					    <li><a href="sys-admin-rsync-ja.htm#rsync">rsyncを使ってバックアップ</a></li>
+					    <li><a href="home-ja.htm#home-bu">/home を移動する</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-ja.htm#fonts">CUPS、フォントと音声 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-ja.htm#fonts">フォント</a></li>
+					     <li><a href="sys-admin-gen-ja.htm#cups">CUPS - 印刷システム</a></li>
+					     <li><a href="sys-admin-gen-ja.htm#sound">サウンドミキサー</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-ja.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-ja.htm#chroot">Grub2 - Grubをchrootでリカバーする</a></li>
+					    <li><a href="sys-admin-grub2-ja.htm#mbr-over-grub2">Grub2 - MBRが上書きされてしまったら</a></li>
+					    <li><a href="sys-admin-grub2-ja.htm#multi-os">Grub2 - デュアルまたはマルチブーティング</a></li>
+					    <li><a href="sys-admin-grub2-ja.htm#grub1-grub2">Grub2 - Grub1からアップデートするには</a></li>
+					    <li><a href="sys-admin-grub2-ja.htm#grub2">Grub2 - 概説</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Sponsored by webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid is proudly hosted by webtropia.com" alt="aptosid is proudly hosted by webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+<div class="divider" id="serv-apache">
+			<!--- ####
+			<h2 id="top-header">aptosid LAMP Stack</h2>
+			#### -->
+			<h2 id="top-header">aptosid LAMPセット</h2>
+
+				<!--- ####
+				<p>The acronym LAMP refers to a set of free software programs commonly used together to run dynamic Web sites or servers<br />
+				#### -->
+				<p>LAMPというのはダイナミックなウェッブサーバーとしてよく一緒に使われているフリーソフトウェアの頭文字からついた呼び名です<br />
+				<!--- ####
+				Linux, the operating system<br />
+				#### -->
+				Linux, オペレーションシステム<br />
+				<!--- ####
+				Apache, the Web server<br />
+				#### -->
+				Apache, ウェッブサーバー<br />
+				<!--- ####
+				MySQL, the database management system (or database server)<br />
+				#### -->
+				MySQL, データベースマネージメントシステム (データベースサーバー)<br />
+				<!--- ####
+				Perl, PHP, and/or Python, scripting languages</p>
+				#### -->
+				Perl, PHP, または Python, スクリプト言語</p>
+
+				<!--- ####
+				<h5 class="highlight-2">WARNING: Never use your day-to-day PC to act as an internet web  server! Use a dedicated PC to be an internet web server and let it do nothing else!</h5>
+				#### -->
+				<h5 class="highlight-2">警告: 毎日使っているデスクトップPCを同時にインターネット上のウェッブサーバーとして使うことは絶対に避けるべきです。 ウェッブサーバーは専用のPCを使い、それ以外のどんな役目も兼ねないようにするべきです！</h5>
+
+				<!--- ####
+				<p>Server uses:<br />
+				#### -->
+				<p>サーバーの使い方いろいろ:<br />
+				<!--- ####
+				a) <span class="highlight-3">a local test server for web designers without internet connectivity which is the scope of this topic;</span><br />
+				#### -->
+				a) <span class="highlight-3">(ネットからのアクセスを前提としない)ウェッブのデザインのためのローカルサーバー、ここで取り扱うのはこのケースです;</span><br />
+				<!--- ####
+				b) a private "closet" server connected to the net;<br />
+				#### -->
+				b) ネットから接続できる個人の"押入れ"サーバー;<br />
+				<!--- ####
+				c) a private web server fully propagated to the internet<br />
+				#### -->
+				c) ネットから接続できて一般に公表されている個人用ウェッブサーバー<br />
+				<!--- ####
+				d) a commercial web server which is beyond the scope of this manual</p>
+				#### -->
+				d) 業務用のウェッブサーバー, これについてはマニュアルの範疇に収まらないのでここでは取り上げません</p>
+
+
+			<!--- ####
+			<h5>Minimum Requirements</h5>
+			#### -->
+			<h5>最低限の必要条件</h5>
+				<!--- ####
+				<p>At least 256MB of RAM available. Anything less than this minimum ram will cause lot of problems since running a server with mysql  requires lot of RAM to run properly. Mysql will error of "cannot connect to mysql.sock" if you dont have enough memory in your server.</p>
+				#### -->
+				<p>最低でも256MBのRAMを。 mySQLのサーバーは多くのメモリを必要とするためこれ以下だといろいろな問題が起こります。 mySQLはメモリー不足になると"cannot connect to mysql.sock"(ソケットに接続できません)というエラーメッセージを表示します。</p>
+
+			<!--- ####
+			<h4>The aptosid Generic_Server Package</h4>
+			#### -->
+			<!--<h4>aptosidジェネリックサーバーパッケージ</h4>-->
+
+				<!--- ####
+				<p>The aptosid Generic_server consists of a prepackaged installation via the meta-package installer The apps that will be installed are:</p>
+				#### -->
+				<!--<p>aptosidジェネリックサーバーはメタパッケージインストーラにまとめられたパッケージで次のアプリケーションをインストールします:</p>-->
+
+							<!--- ####
+							<p>The packages you will need to install are:</p>
+							#### -->
+							<p>インストールが必要なパッケージ:</p>
+<pre>
+apache2
+apache2-utils
+apache2-mpm-prefork
+php5 php5-common
+mysql-server
+mysql-common
+libapache2-mod-php5
+php5-mysql
+phpmyadmin
+</pre>
+				<!--- ####
+				<p class="highlight-2">WARNING </p>
+				#### -->
+				<p class="highlight-2">警告 </p>
+<pre>
+apt-get remove --purge splashy
+</pre>
+				<p class="highlight-2">スプラッシーがあるとmySQLに問題が起こります</p>
+
+					<!--- ####
+					<p>The Apache configuration file is located at:<span class="highlight-3">/etc/apache2/apache2.conf</span>  and your web folder is <span class="highlight-3">/var/www</span> </p>
+					#### -->
+					<p>Apacheの設定ファイルは<span class="highlight-3">/etc/apache2/apache2.conf</span>にあります。 webフォルダは<span class="highlight-3">/var/www</span>です。 </p>
+
+					<!--- ####
+					<p>To check whether php is installed and running properly, just create a test.php in your /var/www folder with phpinfo() function exactly as shown below.</p>
+					#### -->
+					<p>phpが正しくインストールされ正常に作動しているのを確認するには /var/www/ に下記の内容の test.php というファイルを作り、phpinfo() を実行します。</p>
+<pre>
+mcedit /var/www/test.php
+
+# test.php
+&lt;?  phpinfo(); ?&gt;
+</pre>
+					<p>そしてブラウザで</p>
+<pre>
+http://localhost/test.php
+または
+http://あなたのIPアドレス:80/test.php
+</pre>
+					<p>を開きます</p>
+					<!--- ####
+					<p>This should show all your php configuration and default settings.</p>
+					#### -->
+					<p>を開くとそこにPHPの設定とデフォルト設定が表示されるはずです。</p>
+
+					<!--- ####
+					<p>You can edit necessary values or setup virtual domains using apache configuration file.</p>
+					#### -->
+					<p>Apacheの設定ファイルで設定値を変えたり仮想ドメインを設定したりできます。</p>
+
+
+					<!--- ####
+					<p>If you want to test your installation go to your browser and type the following</p>
+					#### -->
+					<p>インストールがうまくいったかテストするにはブラウザに次のようにタイプします</p>
+<!--- ####
+<pre>
+http://youripaddress/apache2-default/
+</pre>
+#### -->
+<pre>
+http://あなたのIPアドレス/apache2-default/
+</pre>
+					<!--- ####
+					<p>This should display welcome message then your installation is correct.</p>
+					#### -->
+					<p>インストールは正しく行われていれば、welcomeメッセージが表示されます。</p>
+
+					<!--- ####
+					<p>Default document root directory for apache2 is <span class="highlight-3">/var/www</span> Change this to: </p>
+					#### -->
+					<p>Apache2のドキュメントルートの場所はデフォルトで <span class="highlight-3">/var/www</span>です。 これを次のコマンド: </p>
+<pre>
+mkdir /home/myself/www
+ln -s /home/myself/www /var/www
+</pre>
+					<!--- ####
+					<p>By doing the above commands you can now edit your web site inside your home as normal user.</p>
+					#### -->
+					<p>でホームディレクトリからシンボリックリンクすると、普通のユーザーとしてウェッブサイトを編集できるようになります。</p>
+
+	</div>
+<div class="divider" id="serv-ftp">
+			<!--- ####
+			<h2>FTP Clients</h2>
+			#### -->
+			<h2>FTPクライアント</h2>
+				<!--- ####
+				<p>Use SSH and read carefully the <a href="ssh-en.htm">SSH topic</a> , also aptosid has another built in FTP client in the form of Konqueror to enable you to upload your files.</p>
+				#### -->
+				<p> まず<a href="ssh-ja.htm">SSHとセキュリティ</a> のページを注意深く読んでSSHを使いましょう。 aptosidに含まれるKonquerorをFTPクライアントとして使うこともできます。</p>
+
+
+	</div>
+<div class="divider" id="serv-sec">
+			<!--- ####
+			<h2>Enabling good security protocols for Web Servers</h2>
+			#### -->
+			<h2>ウェッブサーバーのセキュリティ設定</h2>
+
+				<h3>Firewalls</h3>
+				<!--- ####
+				<p><span class="highlight-2">Without a firewall there is absolutely no  security for your server. Remember block EVERYTHING until you need it, then reblock it!</span>.</p>
+				#### -->
+				<p><span class="highlight-2">あなたのサーバーにfirewallがないとしたら、まったくセキュリティがないのと同じです。 原則として*すべて*をブロックして、どうしても必要なものだけブロックを解除し、必要が済んだらまたブロックすることです!</span></p>
+<pre>
+21 (ftp)
+22 (SSH)
+25 110 (email)
+443 (SSL http or https)
+993 (imap ssl)
+995 (pop3 ssl)
+80 (http)
+許されるのはこれだけです! <!--- and any other port going! -->
+</pre>
+
+				<!--- ####
+				<h3>Protect Server Files by Default</h3>
+				#### -->
+				<h3>デフォルトとしてサーバーのファイルを保護する</h3>
+
+					<!--- ####
+					<p>One aspect of Apache which is occasionally misunderstood is the feature of default access. That is, unless you take steps to change it, if the server can find its way to a file through normal URL mapping rules, therefore it can serve it to clients.</p>
+					#### -->
+					<p>Apacheのデフォルトアクセスについてよく誤解があります。 ウェッブマスターが設定を変えない限り、通常のURLのマッピングルールに基づいてサーバーがアクセスできるファイルはウェッブのクライアントに送ってしまいます。</p>
+
+					<!--- ####
+					<p>For instance, consider the following example:</p>
+					#### -->
+					<p>たとえば次の例を見てみましょう:</p>
+<pre>
+ 1. # cd /; ln -s / public_html
+ 2. Accessing http://localhost/~root/
+</pre>
+					<p class="highlight-2">これでクライアントはファイルシステム全体が読めるようになってしまいました! このような事態を避けるためサーバー設定に次のようなブロックを入れます:</p>
+<pre>
+&lt;Directory /&gt;
+   Order Deny,Allow
+   Deny from all
+&lt;/Directory&gt;
+</pre>
+				<!--- ####
+				<p>This will forbid default access to filesystem locations. Add appropriate &lt;Directory&gt; blocks to allow access only in those areas you wish. For example,</p>
+				#### -->
+				<p>これでファイルシステムへのデフォルトアクセスを禁止できます。 ほかの&lt;ディレクトリ&gt;も同様にブロックしてアクセスが望まれるところだけが残るようにします。 一例:</p>
+<pre>
+&lt;Directory /usr/users/*/public_html&gt;
+    Order Deny,Allow
+    Allow from all
+&lt;/Directory&gt;
+&lt;Directory /usr/local/httpd&gt;
+    Order Deny,Allow
+    Allow from all
+ &lt;/Directory&gt;
+</pre>
+				<!--- ####
+				<p>Pay particular attention to the interactions of &lt;Location&gt; and &lt;Directory&gt; directives; for instance, even if &lt;Directory /&gt; denies access, a &lt;Location /&gt; directive might overturn it.</p>
+				#### -->
+				<p>特に&lt;Location&gt;と&lt;Directory&gt;の関係について細心の注意を払いましょう。 たとえ&lt;Directory /&gt; がアクセスを許さなくてもその後の &lt;Location /&gt; がそれを無効にしてしまうこともあります。</p>
+
+				<!--- ####
+				<p>Also be wary of playing games with the UserDir directive; setting it to something like "./" would have the same effect, for root, as the first example above. If you are using Apache 1.3 or above, we strongly recommend that you include the following line in your server configuration files:</p>
+				#### -->
+				<p>同様にUserDirで遊ぶのも避けたほうが無難です。 もし"./"のようにセットされていると最初の例と同じことになってしまいます。 もしApacheの1.3以降を使っている場合、サーバー設定ファイルに次のような一行を入れることを強く勧めます。 </p>
+<pre>
+UserDir disabled root
+</pre>
+
+	</div>
+<div class="divider" id="serv-ssl">
+			<h2>SSL</h2>
+
+					<!--- ####
+ 				<p>Run the script “apache2-ssl-certificate”</p>
+					#### -->
+ 				<p>“apache2-ssl-certificate”スクリプトを実行します</p>
+<pre>
+# apache2-ssl-certificate
+</pre>
+				<!--- ####
+				<p>The following  screen will appear or you to  enter all the required information.</p>
+				#### -->
+				<p>必要な項目を入力するため次のような画面が現れます。</p>
+<pre>
+Creating self-signed certificate
+replace it with one signed by a certification authority (CA) enter your ServerName at the Common Name prompt. If you want your certificate to expire after x days call this programm
+with -days x
+-----
+Generating a 1024 bit RSA private key
+--------
+writing new private key to '/etc/apache2/ssl/apache.pem'
+--------
+You are about to be asked to enter information that will be incorporated into your certificate request.
+-----------
+What you are about to enter is what is called a Distinguished Name or a DN. There are quite a few fields but you can leave some blank. For some fields there will be a default value,
+----------
+If you enter '.', the field will be left blank.
+</pre>
+<pre>
+Country Name (2 letter code) [GB]:                   (国名コード 2文字)
+
+State or Province Name (full name) [Some-State]:     (州または地方の名)
+
+Locality Name (eg, city) []:                         (市町村名)
+
+Organization Name (eg, company; recommended) []:     (組織名 会社名など)
+
+Organizational Unit Name (eg, section) []:           (部課名)
+
+server name (eg. ssl.domain.tld; required!!!) []:    (サーバー名)
+
+Email Address []:                                    (Eメールアドレス)
+</pre>
+
+					<!--- ####
+					<p>Run the script “a2enmod ssl”  i.e</p>
+					#### -->
+					<p>“a2enmod ssl”スクリプトを実行する</p>
+<pre>
+ # a2enmod ssl
+</pre>
+						<!--- ####
+ 					<p>This  Will automatically generates a symbolic link between mods- available and mods – enabled </p>
+						#### -->
+ 					<p>このスクリプトは自動的にmods- availableとmods – enabled の間にシンボリックリンクを作くります</p>
+
+					<!--- ####
+					<p>Make a copy of '/etc/apache2/sites-available/default' file in the /etc/apache2/sites-available/ - call it 'ssl'</p>
+					#### -->
+					<p> /etc/apache2/sites-available/ の default というファイルのコピーを作ります</p>
+<pre>
+# cp /etc/apache2/sites-available/default /etc/apache2/sites-available/ssl
+</pre>
+					<!--- ####
+					<p>Make a sym-link to this new site configuration for this use</p>
+					#### -->
+					<p>この新しい設定ファイルへのシンボリックリンクを作ります</p>
+<pre>
+#  ln -s /etc/apache2/sites-available/ssl /etc/apache2/sites-enabled/
+(または)
+#a2ensite ssl
+</pre>
+						<!--- ####
+ 					<p>If you want to change the any basic configuration settings change in /etc/apache2/apache2.conf and if you want to change the default document root change in /etc/apache2/sites-available/default file and restart the apache server.</p>
+						#### -->
+ 					<p>Apacheの基本設定を変更したい時は /etc/apache2/apache2.conf を、デフォルトのドキュメントルートを変更したいときは /etc/apache2/sites-available/default を編集してApacheサーバーを再スタートします。</p>
+
+						<!--- ####
+ 					<p>To Restart Apache server use the following command</p>
+						#### -->
+ 					<p>Apacheサーバーを再スタートするコマンドは</p>
+<pre>
+#/etc/init.d/apache2 restart
+</pre>
+						<!--- ####
+ 					<p>Now we need to change the port address in /etc/apache2/ports.conf by default it will listen port 80 and now we are installing with SSL we need to change port 443 to listen</p>
+						#### -->
+ 					<p>さて、今SSLをインストールしましたから /etc/apache2/ports.conf の中のポート番号をデフォルトの80からSSLの443に変える必要があります。</p>
+<pre>
+ Listen 443
+</pre>
+					<!--- ####
+					<p>Edit /etc/apache2/sites-available/ssl (or whatever you called your new ssl site's config) and change port 80 in the name of the site to 443.</p>
+					#### -->
+					<p>/etc/apache2/sites-available/ssl (SSLサイト設定ファイルとして上のコマンドで使った名前のファイル)を編集してサイト名のポート番号80を443に変更します。</p>
+
+					<!--- ####
+					<p>Add below two lines some where in /etc/apache2/apache2.conf file</p>
+					#### -->
+					<p>/etc/apache2/apache2.conf ファイルに次の２行を加えます。</p>
+<pre>
+  SSLEngine On
+  SSLCertificateFile /etc/apache2/ssl/apache.pem
+</pre>
+					<!--- ####
+					<p>Edit SSLCertificateFile /etc/apache2/ssl/apache.pem and enter the locations of certificate file and certificate key file .Below one is the example</p>
+					#### -->
+					<p>SSLCertificateFile /etc/apache2/ssl/apache.pemを編集しSSL電子証明書とkeyファイルの場所を入力します。 一例をあげると</p>
+
+<pre>
+SSLCertificateFile /etc/apache2/ssl/online.test.net.crt
+SSLCertificateKeyFile /etc/apache2/ssl/online.test.net.key
+</pre>
+					<!--- ####
+					<p>Set ServerSignature off, follow these steps edit the /etc/apache2/apache2.conf  file and add these two lines</p>
+					#### -->
+					<p>ServerSignatureをoffにセットします, /etc/apache2/apache2.conf を次の指示にしたがって編集します。 まず次の２行を加えます。</p>
+<pre>
+ ServerSignature Off
+ ServerTokens ProductOnly
+</pre>
+
+						<!--- ####
+ 					<p>If you want to allow the different index files types check for the following line in /etc/apache2/apache2.conf file</p>
+						#### -->
+ 					<p>indexファイルにデフォルト以外のタイプを加えたかったら /etc/apache2/apache2.conf の次の行をチェックします</p>
+<pre>
+ DirectoryIndex index.html index.cgi index.pl index.php index.xhtml index.shtml
+</pre>
+						<!--- ####
+ 					<p>Restart the apache server</p>
+						#### -->
+ 					<p>Apacheサーバーの再スタート</p>
+<pre>
+ /etc/init.d/apache2 restart
+</pre>
+
+					<!--- ####
+					<p>You should now have a test server sandbox, should you want to connect to the interent, with it, <span class="highlight-2">DONT!... Use another PC purely dedicated to being an internet  web server!</span></p>
+					#### -->
+					<p>これで練習用のテストサーバーの準備ができました。 このサーバーをネットにつなげたいと思ったら... <span class="highlight-2">ダメです!... インターネットのウェッブサーバー専用として他のPCを使うこと!</span></p>
+
+	</div>
+					<!--- ####
+					<p>Sources:</p>
+					#### -->
+					<p>出典:</p>
+
+					<p><a href="http://www.mysql-apache-php.com/"> http://www.mysql-apache-php.com</a></p>
+					<p><a href="http://httpd.apache.org/docs/1.3/misc/security_tips.html"> http://httpd.apache.org/docs/1.3/misc/security_tips.html</a></p>
+					<p><a href="http://www.debianhelp.co.uk/webserver.htm"> http://www.debianhelp.co.uk/webserver.htm</a></p>
+
+			<div id="rev">Page last revised 14/08/2010 0100 UTC</div>
+
+</div>
+</body>
+</html>

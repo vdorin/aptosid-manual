@@ -1,0 +1,527 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl" lang="nl">
+<head>
+	<title>aptosid Manuals - LVM Partitioning</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision bluewater 22/10/2010 1510 UTC -->
+<!--htdig_noindex--><div id="menu"> <!-- menu starts here nl lang maintained by btorrem, Bram0s,eislon -->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<!-- menu last translated by eislon 2012.09.30 0933 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="Naar aptosid.com forums and wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-nl.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" />Zoeken Online Offline</a> </li>
+		<!--<li><a href="http://manual.aptosid.com/meta-manual">Gemeenschap Software Selecties</a></li>-->
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Kies een andere taal - Choose another language CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="lang-switch CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-nl.htm">aptosid OS Handleiding</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-nl.htm#welcome-gen">aptosid OS Handleiding &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-nl.htm#cred-team">Medewerkers</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-nl.htm#how-to">Gebruik van deze handleiding &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-nl.htm#how-to">Hoe deze handleiding gebruiken</a></li>
+					  <li><a href="welcome-nl.htm#table-contents">Inhoudstafel</a></li>
+					</ul>
+					</li>
+		<li><a href="help-nl.htm#help-gen">Hulp nodig &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-nl.htm#help-gen">Waar kan ik hulp vinden</a></li>
+					  <li><a href="help-nl.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-nl.htm#welcome-quick">Aptosid Snelle-startgids</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-nl.htm">ISO Inhoud, Releases, Download Vensters en Branden</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-nl.htm#cd-content">ISO Inhoud en systeembenodigdheden &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-nl.htm#rolling">Release info</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-nl.htm#download-aptosid">Aptosid Vensters , Downloaden en Branden &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-nl.htm#md5">md5 Checksum</a></li>
+					  <li><a href="cd-dl-burning-nl.htm#burn-nero">Branden in Windows</a></li>
+					  <li><a href="cd-dl-burning-nl.htm#burn-linux">Branden in Linux</a></li>
+					  <li><a href="cd-no-gui-burn-nl.htm#burning-no-gui">burniso script</a></li>
+					  <li><a href="cd-no-gui-burn-nl.htm#burn-no-gui-gen">Branden zonder een GUI (niet-grafisch)</a></li><li><a href="cd-dl-burning-nl.htm#download-aptosid">aptosid Download Mirrors</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-nl.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-nl.htm#rootpw">Root-paswoord op aptosid-Livesessie ISO</a></li>
+				<li><a href="live-mode-nl.htm#live-cd-installsoft">Installeren van software in de Livesessie</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-nl.htm">The Terminal / Konsole</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-nl.htm#term-kon"> Terminal / Konsole &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-nl.htm#term-kon"> Terminal / Konsole</a></li>
+					  <li><a href="term-konsole-nl.htm#colours"> Gekleurde terminal prompts</a></li>
+					  <li><a href="term-konsole-nl.htm#cli-help">Commando's - Help</a></li>
+					  <li><a href="help-nl.htm#init3-tools">Interessante applicaties in de tekstmode (tty) - init 3</a></li>
+					  <li><a href="term-konsole-nl.htm#term-cmds">Linux Terminal Commando Lijst</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-nl.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-nl.htm">CheatCodes</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-nl.htm#cheatcodes">aptosid specifieke Live-ISO Cheatcodes</a></li>
+				<li><a href="cheatcodes-nl.htm#cheatcodes-linux">Linux generische Cheatcodes</a></li>
+				<li><a href="cheatcodes-vga-nl.htm#vga">VGA Codes</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-nl.htm">Partitioneren van de harde schijf - Traditioneel, GPT en LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-nl.htm#hd-ntfs3g">Schrijven op een NTFS partitie met ntfs-3g</a></li>
+			<li><a href="part-lvm-nl.htm#part-lvm">Partitioneren vanwege LVM - Logical Volume Manager</a></li>
+			<li><a href="part-gparted-nl.htm#partition">Partitioneren met een GUI (grafisch) &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-nl.htm#partition">Harde schijf partitioneren gebruikmakend van GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-nl.htm#ntfs">NTFS partitie van groote veranderen gebruikmakend van GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-nl.htm#partition">Partitioneren met CLI &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-nl.htm#partition">Harde schijf partitioneren met cfdisk</a></li>
+					    <li><a href="part-cfdisk-nl.htm#formating">Formatteren (schijf leegmaken) na het partitioneren met cfdisk</a></li>
+					    <li><a href="part-gdisk-nl.htm#gdisk-6">Formatteren na het partitioneren met gdisk</a></li>
+					    <li><a href="part-gdisk-nl.htm#gdisk-1">GPT Partitioneren met gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-nl.htm#part-example">Partitioneren Basis &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-nl.htm#part-example">Partitie Grootte Voorbeelden</a></li>
+					  <li><a href="part-uuid-nl.htm#uuid">UUID, heropbouwen van fstab en creëren van nieuwe mount punten</a></li>
+					  <li><a href="part-cfdisk-nl.htm#disknames">Schijf benoemen in brief</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-nl.htm">Installatie opties - HD, USB, VM en Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-nl.htm#Inst-prep">Installatievoorbereiding &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-nl.htm#Inst-prep">Installatievoorbereiding </a></li>
+					  <li><a href="hd-install-nl.htm#Installation">Installeren op uw harde schijf</a></li>
+					  <li><a href="hd-install-nl.htm#first-hd-boot">Eerste keer opstarten</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-nl.htm#fromiso">Booten van uw iso-cd &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-nl.htm#fromiso">Booten vanaf uw iso-cd - Overzicht</a></li>
+					  <li><a href="hd-install-opts-nl.htm#grub2-fromiso">Booten vanaf uw iso-cd met Grub 2</a></li>
+					  <li><a href="hd-install-opts-nl.htm#fromiso-persist">Booten vanaf uw iso-cd en vasthouden</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-nl.htm#usb-hd">Installeren op USB &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-nl.htm#usb-hd">Installeren op USB-HD - aptosid specifiek - aptosid-on-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-nl.htm#raw-usb">Aptosid schrijven naar een USB/SSD stick met Linux, MS Windows of Mac OS X systeem</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-nl.htm#install-crypt">Installeren op encrypte partities - cryptroot</a></li>
+		  <li><a href="nbdboot-nl.htm#nbd1">Aptosid booten op een netwerk</a></li>
+		  <li><a href="hd-install-vmopts-nl.htm#vmopts">Virtuele Machine installatie opties</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-nl.htm">Graphische kaarten, Schermen, Xorg,  &amp; drivers</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-nl.htm#mon-res">Schermresolutie en Schermen  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-nl.htm#mon-res">Schermresolutie en Schermen</a></li>
+					  <li><a href="hw-dev-mon-nl.htm#xrandr">Dual-scherm en xrandr</a></li>
+					  <li><a href="hw-dev-mon-nl.htm#mon-binary">Dual-schermen (gebruikmakend van binaries)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-nl.htm#foss-xorg">GPU drivers &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-nl.htm#ati-3d">AMD/ATI 3D drivers</a></li>
+					  <li><a href="gpu-nl.htm#intel">Intel 2D en 3D drivers</a></li>
+					  <li><a href="gpu-nl.htm#nvidia">Nvidia 3D drivers</a></li>
+					  <li><a href="gpu-nl.htm#foss-xorg">Open Source Xorg drivers</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-nl.htm#fw-detect">Firmware detectie - "non-free" </a></li>
+			  <li><a href="nf-firm-nl.htm#non-free-firmware">"non-free" toevoegen aan de Sources List</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-nl.htm">Window Managers</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm--nl.htm">KDE en XFCE Window Managers &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm--nl.htm#xfce-notes">Handige Xfce extras</a></li>
+					    <li><a href="wm-dm-nl.htm#install-add">Handige extra KDE Apps</a></li>
+					    <li><a href="wm-dm-nl.htm#desk-freeze">Desktop Freezes (beweegt niet meer)</a></li>
+					    <li><a href="wm-dm-nl.htm#kde-login">Kan niet inloggen (KDE)</a></li>
+					    <li><a href="wm-dm-nl.htm#ch-th">Thema's veranderen</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-nl.htm#dm">Installie van bijkomende Display Managers</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-nl.htm">Internet verbinding, WiFi, LAN en Netwerken</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-nl.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-nl.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-nl.htm#serv-ftp">FTP Clients</a></li>
+					    <li><a href="lamp-apache-nl.htm#serv-sec">Security Protocols (beveiliging)</a></li>
+					    <li><a href="lamp-apache-nl.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-nl.htm#serv-mysql">MySQL Setup</a></li>
+					    <li><a href="lamp-ppp-nl.htm#serv-php">PHP in Apache</a></li>
+					    <li><a href="ntp-server-nl.htm#ntp-server">Timeserver Setup</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-nl.htm#tor">Firewalls en Privacy &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-nl.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-nl.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-nl.htm#firewalls">Firewalls</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-nl.htm#ssh-x">SSH en Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-nl.htm#setup">Samba-Server Setup</a></li>
+						  <li><a href="samba-nl.htm#configure">SAMBA configureren (Windows)</a></li>
+						  <li><a href="ssh-nl.htm#ssh-fs">SSH Apart Mounten</a></li>
+						  <li><a href="ssh-nl.htm#ssh-x">X Window Apps via SSH</a></li>
+						  <li><a href="ssh-nl.htm#ssh-f">GUI SSH met Konqueror</a></li>
+						  <li><a href="ssh-nl.htm#ssh-w">SSH X-Forwarding vanaf een Windows-PC</a></li>
+						  <li><a href="ssh-nl.htm#ssh">SSH en Beveiliging</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-nl.htm#netcardconfig">WIFI connecties (draadloos) &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-nl.htm#netcardconfig">Online geraken - Ceni</a></li>
+						    <li><a href="inet-wpagui-nl.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-nl.htm#net-set1">WiFi - WiFi instellen</a></li>
+						    <li><a href="inet-wpa-nl.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-nl.htm#hotswitch">Switchen tussen WiFi en Kabel</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-nl.htm#netcardconfig">Bedrade verbindingen &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-nl.htm#dial-mod">56k Modems</a></li>
+						    <li><a href="inet-ceni-nl.htm#netcardconfig">Online geraken - Ceni</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-nl.htm#fw-detect">Firmware detectie - "non-free" </a></li>
+		<li><a href="nf-firm-nl.htm#non-free-firmware">"non-free" toevoegen aan de Sources List</a></li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-nl.htm">Pakketbeheer en dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-nl.htm#apt-cook">APT Werkwijze en Bronnenlijst &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-nl.htm#apt-cook">APT-Gids Werkwijze en Bronnenlijst</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#apt-install">Nieuw pakket installeren</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#apt-delete">Pakket verwijderen</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#apt-downgrade">Pakket vasthouden (niet updaten) en afwaarderen</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#apt-cache">Pakket zoeken met apt-cache</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#gui-pacsea">GUI Pakket zoeken (grafisch)</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-nl.htm#kern-upgrade">Kernel upgraden &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-nl.htm#kern-remove">Kernels verwijderen</a></li>
+					    <li><a href="sys-admin-kern-upg-nl.htm#kern-upgrade">Kernel upgraden</a></li>
+					    <li><a href="sys-admin-kern-upg-nl.htm#dmakms">Kernelmodules dynamisch installeren met dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-nl.htm#apt-upgrade">Geïnstalleerd systeem upgraden -  dist-upgrade - Overzicht &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-nl.htm#live-cd-upgrade">Upgraden met Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-nl.htm#approx">dist-upgrade van meerdere PCs op een LAN</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#apt-upgrade">Geïnstalleerd systeem upgraden -  dist-upgrade - Overzicht</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#du-st">Geïnstalleerd systeem upgraden -  dist-upgrade - De Stappen</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-nl.htm">Systeem Administratie</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-nl.htm#bois-prep">BIOS upgraden met FreeDOS</a></li>
+		<li><a href="vir-rkits-nl.htm#virus-rkits">Virus en Rootkit Scanners</a></li>
+		<li><a href="hd-install-nl.htm#adduser">Gebruikers en Paswoorden toevoegen &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-nl.htm#adduser">Nieuwe gebruiker toevoegen</a></li>
+					    <li><a href="sys-admin-gen-nl.htm#pw-lost">verloren root-paswoorden, nieuwe paswoorden</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-nl.htm#start-services">Services en init runlevels &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-nl.htm#start-services">Services inschakelen/uitschakelen</a></li>
+					    <li><a href="sys-admin-gen-nl.htm#pkill">Een service of een process stoppen</a></li>
+					    <li><a href="sys-admin-gen-nl.htm#init">aptosid runlevels - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-nl.htm#rsync">Een systeem back-up maken &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-nl.htm#rdiff">Doe een Back-Up met rdiff</a></li>
+					    <li><a href="sys-admin-rsync-nl.htm#rsync">Doe een Back-Up met rsync</a></li>
+					    <li><a href="home-nl.htm#home-bu">Verplaatsen van /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-nl.htm#fonts">CUPS, Opmaak en Geluid &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-nl.htm#fonts">Opmaak</a></li>
+					     <li><a href="sys-admin-gen-nl.htm#cups">CUPS - Printer Systeem</a></li>
+					     <li><a href="sys-admin-gen-nl.htm#sound">Geluid Mixers</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-nl.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-nl.htm#chroot">Grub2 - Grub herstellen met chroot</a></li>
+					    <li><a href="sys-admin-grub2-nl.htm#mbr-over-grub2">Grub2 - MBR Overschrijven</a></li>
+					    <li><a href="sys-admin-grub2-nl.htm#multi-os">Grub2 - Dual en Multibooting</a></li>
+					    <li><a href="sys-admin-grub2-nl.htm#grub1-grub2">Grub2 -Upgraden vanaf Grub1</a></li>
+					    <li><a href="sys-admin-grub2-nl.htm#grub2">Grub2 - Overzicht</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Gesponsored door webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid Gesponsored door webtropia.com" alt="aptosid Gesponsored door webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+		<div class="divider" id="part-lvm">
+				<h2 id="top-header">LVM partities aanmaken - Logical Volume Manager</h2>
+
+							<p><span class="highlight-2"> Dit is een basisgids die je moet toelaten om te starten. Het is jouw verantwoordelijkheid om je kennis bij te werken over LVM. Onderaan deze pagina worden Bronnen en Hulp gegeven, de lijst is zeker niet volledig.</span></p>
+
+							<p>Toepasbaar vanaf aptosid-2010-03-apate en later.</p>
+
+							<p>Logische volumes kunnen meerdere harde schijven bestrijken en zijn schaalbaar, dit in tegenstelling tot traditionele partities op een harde schijf. </p>
+
+							<p>Of het nu de traditionele partitionering of de LVM partitionering is, het aanmaken van partities is iets dat je niet vaak doet. Het vergt dus veel aandacht, uitproberen en fouten, vooraleer je tevreden zal zijn met het resultaat.</p>
+
+							<p>Er zijn 3 basistermen uit de vaktaal die je absoluut moet kennen: </p>
+						  <ul>
+							<li><span class="highlight-3">Physical Volumes:</span> Dit zijn fysische schijven of schijfpartities, zoals  /dev/sda of /dev/sdb1. Dit zijn de zaken die je zal gebruiken bij het mounten/unmounten. Door het gebruik van LVM kunnen we meerdere fysische modules combineren tot een "Volume Group". </li>
+
+							<li><span class="highlight-3">Volume Groups:</span> Een volume groep bestaat uit echte fysische volumes, het is de opslagruimte die wordt gebruikt om logische volumes te maken, dewelke je kan aanmaken/verwijderen/schalen. Je kan een volume groep beschouwen als een virtuele schijf gemaakt van fysische volumes. Je kan de volume groep opsplitsen in "virtuele partities", dewelke logische volumes zijn.</li>
+
+
+							<li><span class="highlight-3">Logical Volumes:</span> Logische volumes zijn de volumes die je uiteindelijk zal mounten op je systeem. Ze kunnen "on the fly" worden toegevoegd, worden verwijderd, of worden gewijzigd in grootte. Vermits ze in een volume groep zitten, kunnen ze groter zijn dan de fysische schijven die je hebt. (bv. 4x 250GB schijven kunnen gecombineerd worden tot één 1TB volume groep, en daarna worden gesplitst in 2x 500GB logische volumes.)</li>
+						  </ul>
+
+				<h3>Er zijn 6 basisstappen vereist</h3>
+							<p><span class="highlight-3">Het onderstaande voorbeeld verondersteld een nieuwe schijf zonder partities of een schijf waarop je een nieuwe LVM partitietabel wil maken, en dus alle bestaande gegevens zal verwijderen.</span></p>
+
+							<p>Het gebruik van cfdisk of fdisk is noodzakelijk. Tot op heden bieden Gparted of KDE Partition Manager, (partitionmanager), geen ondersteuning voor LVM partities.</p>
+
+							<p><span class="highlight-3">Stap 1: </span> Maak de partitietabel aan:</p>
+<pre>
+cfdisk /dev/sda
+<span class="highlight-3"> n </span>to create a new partition on the disk
+<span class="highlight-3"> p  </span>to make this the primary partition
+<span class="highlight-3"> 1  </span>to give the partition the number 1 as an identifier
+<span class="highlight-3"> ### size allocation </span> ### Set first and last cylinders to the default values (press enter) to span the entire drive
+<span class="highlight-3"> t  </span>toggle the type of partition to create
+<span class="highlight-3"> 8e  </span>is the hex code for a Linux LVM
+<span class="highlight-3"> W  </span>to write your changes to the disk. ##This will write the partition table. If you have realised that you made a mistake at this point, you could restore the old partition layout and your data will be fine.##
+</pre>
+
+							<p>Wil je het volume twee of meerdere schijven laten bestrijken, herhaal dan dit proces voor elke schijf. </p>
+
+							<p><span class="highlight-3">Stap 2:</span>Maak de partitie aan als een fysische volume. Dit zal alle gegevens verwijderen !</p>
+
+<pre>
+pvcreate /dev/sda1
+</pre>
+
+							<p>Indien noodzakelijk, herhaal dit proces op andere partities.</p>
+
+							<p><span class="highlight-3">Stap 3:</span> Maak de Volume Groep aan:</p>
+
+<pre>
+vgcreate vulcan /dev/sda1
+</pre>
+							<p>Wil je, bevoorbeeld, 3 schijven bestrijken, dan voeg je de andere schijven toe aan het vgcreate commando :</p>
+
+<pre>
+vgcreate vulcan /dev/sda1 /dev/sdb1 /dev/sdc1
+</pre>
+							<p>Indien je dit allemaal correct hebt uitgevoerd, kan je het resultaat zien in de output van :</p>
+<pre>
+vgscan
+</pre>
+							<p>vgdisplay toont je de <span class="highlight-3"> size </span> properties:</p>
+<pre>
+vgdisplay vulcan
+</pre>
+							<p><span class="highlight-3">Stap 4:</span> Aanmaken van het Logische Volume. Dit is het moment om te beslissen hoe groot je het Logische Volume aanvankelijk wil maken. Een voordeel van LVM is de mogelijkheid tot wijzigen van de grootte van het volume zonder een reboot.</p>
+
+							<p>Veronderstel dat je een 300GB volume, genaamd spock, wil maken in het lvm, genaamd vulcan :</p>
+<pre>
+lvcreate -n spock --size 300g vulcan
+</pre>
+
+							<p><span class="highlight-3">Stap 5:</span>Formateer het volume en wacht geduldig af, het kan een tijdje duren (koffie, biertje, ...) :</p>
+<pre>
+mkfs.ext4 /dev/vulcan/spock
+</pre>
+							<p><span class="highlight-3">Stap 6:</span></p>
+<pre>
+mkdir /media/spock/
+</pre>
+							<p>Wijzig fstab met jouw favoriete editor om het volume te mounten gedurende het booten. </p>
+<pre>
+mcedit /etc/fstab
+</pre>
+							<p>Het gebruiken van <span class="highlight-3">/dev/vulcan/spock </span> is beter dan UUID nummers met LVM, omdat je dan het bestandssysteem kan clonen zonder je om UUID botsingen te bekommeren, zeker met LVM, waar je meerdere bestandssystemen kan bekomen met hetzelfde UUID nummer (snapshots bevoorbeeld).</p>
+
+
+<pre>
+/dev/vulcan/spock /media/spock/ ext4 auto,users,rw,exec,dev,relatime  0  2
+</pre>
+							<p><span class="highlight-3"> Optioneel:</span> Wijzig de eigenaar van het volume zodanig dat andere gebruikers read/write toegang krijgen tot LVM: </p>
+
+<pre>
+chown root:users /media/spock
+</pre>
+
+<pre>
+chmod 775 /media/spock
+</pre>
+							<p>Uw basis LVM zou nu aangemaakt moeten zijn.</p>
+
+					    <h3>Wijzigen van de grootte van een volume</h3>
+
+							<p><span class="highlight-3">Het is sterk aanbevolen een Live ISO te gebruiken bij het wijzigen van de grootte van partities. Hoewel het vergroten van een partities "on the fly" zonder fouten kan gebeuren, kan men dit niet zeggen wanneer je een partitie verkleint, afwijkingen kunnen het verlies van data veroorzaken, zeker wanneer <span class="highlight-2 "> / (root) </span> of <span class="highlight-2">/home</span> er bij betrokken zijn.</span></p>
+
+							<h5>Om een volume van 300GB naar 500GB te vergroten, zie volgend voorbeeld:</h5>
+<pre>
+umount /media/spock/
+</pre>
+
+<pre>
+lvextend -L+200g /dev/vulcan/spock
+</pre>
+							<p>Daarna draai het commando om het bestandssysteem te wijzigen:</p>
+
+<pre>
+e2fsck -f /dev/vulcan/spock
+</pre>
+
+<pre>
+resize2fs /dev/vulcan/spock
+</pre>
+
+<pre>
+mount /media/spock
+</pre>
+							<h5>Om een volume van 500GB naar 280GB te verkleinen, zie volgend voorbeeld:</h5>
+<pre>
+umount /media/spock/
+</pre>
+							<p>Daarna draai het commando om het bestandssysteem te wijzigen:</p>
+
+<pre>
+e2fsck -f /dev/vulcan/spock
+</pre>
+
+<pre>
+resize2fs /dev/vulcan/spock 280g
+</pre>
+
+							<p>Daarna wijzig het volume:</p>
+<pre>
+lvreduce -L-20g /dev/vulcan/spock
+</pre>
+
+<pre>
+resize2fs /dev/vulcan/spock
+</pre>
+
+<pre>
+mount /media/spock
+</pre>
+
+					     <h5>Een LVM GUI</h5>
+							<p><span class="highlight-3">system-config-lvm</span> geeft je een GUI en helpt je bij het beheer van de LVM's. Het wordt gestart vanuit de commandline als root :</p>
+
+<pre>
+apt-get install system-config-lvm
+man system-config-lvm <span class="highlight-3"> #lezen noodzakelijk !</span>
+</pre>
+
+				  <h5>Bronnen en Hulp :</h5>
+						     <ul>
+							 <li><a href="http://www.debian-administration.org/articles/410"> Debian Administration - A simple introduction to working with LVM </a></li>
+
+							 <li><a href="http://www.ibm.com/developerworks/linux/library/l-lvm2/"> IBM - Logical volume management</a></li>
+
+							  <li><a href="http://www.ibm.com/developerworks/linux/library/l-resizing-partitions-2/index.html"> IBM - Resizing Linux partitions, Part 2: Advanced resizing</a></li>
+
+
+							  <li> <a href="http://docs.google.com/viewer?a=v&amp;q=cache:1RMpacheCBcJ:www.redhat.com/docs/en-US/Red_Hat_Enterprise_Linux/5.4/pdf/Logical_Volume_Manager_Administration.pdf+%22Logical+Volume+Manager+Administration+%22&amp;hl=en&amp;pid=bl&amp;srcid=ADGEEShRiptIjzsnPNsCs4RgyUFNWkYcrDc3SkBSD6cTq39D6wye5JM3tP_ehcn37I5VWs84I_HI45rvG-n6YG4R2fE8hqDByq-KPhNEkha4zwphrR7QIUVnUz6omwY85e-ZEXX723Js&amp;sig=AHIEtbSJyxEst6Wue7_1_TeDYwB480azEw"> Red Hat - LVM Administrator's Guide</a></li>
+
+							  <li> <a href="http://en.wikipedia.org/wiki/Logical_Volume_Manager_%28Linux%29"> Logical Volume Manager (Linux)</a></li>
+
+							  <li> <a href="http://thelinuxexperiment.com/guinea-pigs/jon-f/setting-up-an-lvm-for-storage/"> Setting up an LVM for Storage</a></li>
+
+							  <li> <a href="http://linuxhelp.blogspot.com/2005/04/creating-lvm-in-linux.html"> Creating a LVM in Linux</a></li>
+
+							  <li> <a href="http://www.linuxconfig.org/Linux_lvm_-_Logical_Volume_Manager">Linux lvm - Logical Volume Manager</a></li>
+
+						      </ul>
+
+	</div>
+	<div id="rev">Page last revised 26/07/2011 2325 UTC</div>
+
+</div>
+</body>
+</html>

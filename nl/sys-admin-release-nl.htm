@@ -1,0 +1,687 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl" lang="nl">
+<head>
+	<title>aptosid Manuals - Rolling Notes</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision by HarzG 03/01/2009 1730 UTC -->
+<!--htdig_noindex--><div id="menu"> <!-- menu starts here nl lang maintained by btorrem, Bram0s,eislon -->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<!-- menu last translated by eislon 2012.09.30 0933 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="Naar aptosid.com forums and wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-nl.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" />Zoeken Online Offline</a> </li>
+		<!--<li><a href="http://manual.aptosid.com/meta-manual">Gemeenschap Software Selecties</a></li>-->
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Kies een andere taal - Choose another language CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="lang-switch CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-nl.htm">aptosid OS Handleiding</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-nl.htm#welcome-gen">aptosid OS Handleiding &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-nl.htm#cred-team">Medewerkers</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-nl.htm#how-to">Gebruik van deze handleiding &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-nl.htm#how-to">Hoe deze handleiding gebruiken</a></li>
+					  <li><a href="welcome-nl.htm#table-contents">Inhoudstafel</a></li>
+					</ul>
+					</li>
+		<li><a href="help-nl.htm#help-gen">Hulp nodig &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-nl.htm#help-gen">Waar kan ik hulp vinden</a></li>
+					  <li><a href="help-nl.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-nl.htm#welcome-quick">Aptosid Snelle-startgids</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-nl.htm">ISO Inhoud, Releases, Download Vensters en Branden</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-nl.htm#cd-content">ISO Inhoud en systeembenodigdheden &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-nl.htm#rolling">Release info</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-nl.htm#download-aptosid">Aptosid Vensters , Downloaden en Branden &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-nl.htm#md5">md5 Checksum</a></li>
+					  <li><a href="cd-dl-burning-nl.htm#burn-nero">Branden in Windows</a></li>
+					  <li><a href="cd-dl-burning-nl.htm#burn-linux">Branden in Linux</a></li>
+					  <li><a href="cd-no-gui-burn-nl.htm#burning-no-gui">burniso script</a></li>
+					  <li><a href="cd-no-gui-burn-nl.htm#burn-no-gui-gen">Branden zonder een GUI (niet-grafisch)</a></li><li><a href="cd-dl-burning-nl.htm#download-aptosid">aptosid Download Mirrors</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-nl.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-nl.htm#rootpw">Root-paswoord op aptosid-Livesessie ISO</a></li>
+				<li><a href="live-mode-nl.htm#live-cd-installsoft">Installeren van software in de Livesessie</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-nl.htm">The Terminal / Konsole</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-nl.htm#term-kon"> Terminal / Konsole &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-nl.htm#term-kon"> Terminal / Konsole</a></li>
+					  <li><a href="term-konsole-nl.htm#colours"> Gekleurde terminal prompts</a></li>
+					  <li><a href="term-konsole-nl.htm#cli-help">Commando's - Help</a></li>
+					  <li><a href="help-nl.htm#init3-tools">Interessante applicaties in de tekstmode (tty) - init 3</a></li>
+					  <li><a href="term-konsole-nl.htm#term-cmds">Linux Terminal Commando Lijst</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-nl.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-nl.htm">CheatCodes</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-nl.htm#cheatcodes">aptosid specifieke Live-ISO Cheatcodes</a></li>
+				<li><a href="cheatcodes-nl.htm#cheatcodes-linux">Linux generische Cheatcodes</a></li>
+				<li><a href="cheatcodes-vga-nl.htm#vga">VGA Codes</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-nl.htm">Partitioneren van de harde schijf - Traditioneel, GPT en LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-nl.htm#hd-ntfs3g">Schrijven op een NTFS partitie met ntfs-3g</a></li>
+			<li><a href="part-lvm-nl.htm#part-lvm">Partitioneren vanwege LVM - Logical Volume Manager</a></li>
+			<li><a href="part-gparted-nl.htm#partition">Partitioneren met een GUI (grafisch) &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-nl.htm#partition">Harde schijf partitioneren gebruikmakend van GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-nl.htm#ntfs">NTFS partitie van groote veranderen gebruikmakend van GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-nl.htm#partition">Partitioneren met CLI &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-nl.htm#partition">Harde schijf partitioneren met cfdisk</a></li>
+					    <li><a href="part-cfdisk-nl.htm#formating">Formatteren (schijf leegmaken) na het partitioneren met cfdisk</a></li>
+					    <li><a href="part-gdisk-nl.htm#gdisk-6">Formatteren na het partitioneren met gdisk</a></li>
+					    <li><a href="part-gdisk-nl.htm#gdisk-1">GPT Partitioneren met gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-nl.htm#part-example">Partitioneren Basis &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-nl.htm#part-example">Partitie Grootte Voorbeelden</a></li>
+					  <li><a href="part-uuid-nl.htm#uuid">UUID, heropbouwen van fstab en creëren van nieuwe mount punten</a></li>
+					  <li><a href="part-cfdisk-nl.htm#disknames">Schijf benoemen in brief</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-nl.htm">Installatie opties - HD, USB, VM en Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-nl.htm#Inst-prep">Installatievoorbereiding &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-nl.htm#Inst-prep">Installatievoorbereiding </a></li>
+					  <li><a href="hd-install-nl.htm#Installation">Installeren op uw harde schijf</a></li>
+					  <li><a href="hd-install-nl.htm#first-hd-boot">Eerste keer opstarten</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-nl.htm#fromiso">Booten van uw iso-cd &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-nl.htm#fromiso">Booten vanaf uw iso-cd - Overzicht</a></li>
+					  <li><a href="hd-install-opts-nl.htm#grub2-fromiso">Booten vanaf uw iso-cd met Grub 2</a></li>
+					  <li><a href="hd-install-opts-nl.htm#fromiso-persist">Booten vanaf uw iso-cd en vasthouden</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-nl.htm#usb-hd">Installeren op USB &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-nl.htm#usb-hd">Installeren op USB-HD - aptosid specifiek - aptosid-on-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-nl.htm#raw-usb">Aptosid schrijven naar een USB/SSD stick met Linux, MS Windows of Mac OS X systeem</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-nl.htm#install-crypt">Installeren op encrypte partities - cryptroot</a></li>
+		  <li><a href="nbdboot-nl.htm#nbd1">Aptosid booten op een netwerk</a></li>
+		  <li><a href="hd-install-vmopts-nl.htm#vmopts">Virtuele Machine installatie opties</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-nl.htm">Graphische kaarten, Schermen, Xorg,  &amp; drivers</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-nl.htm#mon-res">Schermresolutie en Schermen  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-nl.htm#mon-res">Schermresolutie en Schermen</a></li>
+					  <li><a href="hw-dev-mon-nl.htm#xrandr">Dual-scherm en xrandr</a></li>
+					  <li><a href="hw-dev-mon-nl.htm#mon-binary">Dual-schermen (gebruikmakend van binaries)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-nl.htm#foss-xorg">GPU drivers &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-nl.htm#ati-3d">AMD/ATI 3D drivers</a></li>
+					  <li><a href="gpu-nl.htm#intel">Intel 2D en 3D drivers</a></li>
+					  <li><a href="gpu-nl.htm#nvidia">Nvidia 3D drivers</a></li>
+					  <li><a href="gpu-nl.htm#foss-xorg">Open Source Xorg drivers</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-nl.htm#fw-detect">Firmware detectie - "non-free" </a></li>
+			  <li><a href="nf-firm-nl.htm#non-free-firmware">"non-free" toevoegen aan de Sources List</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-nl.htm">Window Managers</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm--nl.htm">KDE en XFCE Window Managers &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm--nl.htm#xfce-notes">Handige Xfce extras</a></li>
+					    <li><a href="wm-dm-nl.htm#install-add">Handige extra KDE Apps</a></li>
+					    <li><a href="wm-dm-nl.htm#desk-freeze">Desktop Freezes (beweegt niet meer)</a></li>
+					    <li><a href="wm-dm-nl.htm#kde-login">Kan niet inloggen (KDE)</a></li>
+					    <li><a href="wm-dm-nl.htm#ch-th">Thema's veranderen</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-nl.htm#dm">Installie van bijkomende Display Managers</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-nl.htm">Internet verbinding, WiFi, LAN en Netwerken</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-nl.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-nl.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-nl.htm#serv-ftp">FTP Clients</a></li>
+					    <li><a href="lamp-apache-nl.htm#serv-sec">Security Protocols (beveiliging)</a></li>
+					    <li><a href="lamp-apache-nl.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-nl.htm#serv-mysql">MySQL Setup</a></li>
+					    <li><a href="lamp-ppp-nl.htm#serv-php">PHP in Apache</a></li>
+					    <li><a href="ntp-server-nl.htm#ntp-server">Timeserver Setup</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-nl.htm#tor">Firewalls en Privacy &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-nl.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-nl.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-nl.htm#firewalls">Firewalls</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-nl.htm#ssh-x">SSH en Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-nl.htm#setup">Samba-Server Setup</a></li>
+						  <li><a href="samba-nl.htm#configure">SAMBA configureren (Windows)</a></li>
+						  <li><a href="ssh-nl.htm#ssh-fs">SSH Apart Mounten</a></li>
+						  <li><a href="ssh-nl.htm#ssh-x">X Window Apps via SSH</a></li>
+						  <li><a href="ssh-nl.htm#ssh-f">GUI SSH met Konqueror</a></li>
+						  <li><a href="ssh-nl.htm#ssh-w">SSH X-Forwarding vanaf een Windows-PC</a></li>
+						  <li><a href="ssh-nl.htm#ssh">SSH en Beveiliging</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-nl.htm#netcardconfig">WIFI connecties (draadloos) &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-nl.htm#netcardconfig">Online geraken - Ceni</a></li>
+						    <li><a href="inet-wpagui-nl.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-nl.htm#net-set1">WiFi - WiFi instellen</a></li>
+						    <li><a href="inet-wpa-nl.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-nl.htm#hotswitch">Switchen tussen WiFi en Kabel</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-nl.htm#netcardconfig">Bedrade verbindingen &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-nl.htm#dial-mod">56k Modems</a></li>
+						    <li><a href="inet-ceni-nl.htm#netcardconfig">Online geraken - Ceni</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-nl.htm#fw-detect">Firmware detectie - "non-free" </a></li>
+		<li><a href="nf-firm-nl.htm#non-free-firmware">"non-free" toevoegen aan de Sources List</a></li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-nl.htm">Pakketbeheer en dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-nl.htm#apt-cook">APT Werkwijze en Bronnenlijst &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-nl.htm#apt-cook">APT-Gids Werkwijze en Bronnenlijst</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#apt-install">Nieuw pakket installeren</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#apt-delete">Pakket verwijderen</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#apt-downgrade">Pakket vasthouden (niet updaten) en afwaarderen</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#apt-cache">Pakket zoeken met apt-cache</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#gui-pacsea">GUI Pakket zoeken (grafisch)</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-nl.htm#kern-upgrade">Kernel upgraden &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-nl.htm#kern-remove">Kernels verwijderen</a></li>
+					    <li><a href="sys-admin-kern-upg-nl.htm#kern-upgrade">Kernel upgraden</a></li>
+					    <li><a href="sys-admin-kern-upg-nl.htm#dmakms">Kernelmodules dynamisch installeren met dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-nl.htm#apt-upgrade">Geïnstalleerd systeem upgraden -  dist-upgrade - Overzicht &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-nl.htm#live-cd-upgrade">Upgraden met Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-nl.htm#approx">dist-upgrade van meerdere PCs op een LAN</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#apt-upgrade">Geïnstalleerd systeem upgraden -  dist-upgrade - Overzicht</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#du-st">Geïnstalleerd systeem upgraden -  dist-upgrade - De Stappen</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-nl.htm">Systeem Administratie</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-nl.htm#bois-prep">BIOS upgraden met FreeDOS</a></li>
+		<li><a href="vir-rkits-nl.htm#virus-rkits">Virus en Rootkit Scanners</a></li>
+		<li><a href="hd-install-nl.htm#adduser">Gebruikers en Paswoorden toevoegen &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-nl.htm#adduser">Nieuwe gebruiker toevoegen</a></li>
+					    <li><a href="sys-admin-gen-nl.htm#pw-lost">verloren root-paswoorden, nieuwe paswoorden</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-nl.htm#start-services">Services en init runlevels &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-nl.htm#start-services">Services inschakelen/uitschakelen</a></li>
+					    <li><a href="sys-admin-gen-nl.htm#pkill">Een service of een process stoppen</a></li>
+					    <li><a href="sys-admin-gen-nl.htm#init">aptosid runlevels - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-nl.htm#rsync">Een systeem back-up maken &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-nl.htm#rdiff">Doe een Back-Up met rdiff</a></li>
+					    <li><a href="sys-admin-rsync-nl.htm#rsync">Doe een Back-Up met rsync</a></li>
+					    <li><a href="home-nl.htm#home-bu">Verplaatsen van /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-nl.htm#fonts">CUPS, Opmaak en Geluid &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-nl.htm#fonts">Opmaak</a></li>
+					     <li><a href="sys-admin-gen-nl.htm#cups">CUPS - Printer Systeem</a></li>
+					     <li><a href="sys-admin-gen-nl.htm#sound">Geluid Mixers</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-nl.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-nl.htm#chroot">Grub2 - Grub herstellen met chroot</a></li>
+					    <li><a href="sys-admin-grub2-nl.htm#mbr-over-grub2">Grub2 - MBR Overschrijven</a></li>
+					    <li><a href="sys-admin-grub2-nl.htm#multi-os">Grub2 - Dual en Multibooting</a></li>
+					    <li><a href="sys-admin-grub2-nl.htm#grub1-grub2">Grub2 -Upgraden vanaf Grub1</a></li>
+					    <li><a href="sys-admin-grub2-nl.htm#grub2">Grub2 - Overzicht</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Gesponsored door webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid Gesponsored door webtropia.com" alt="aptosid Gesponsored door webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+	<div class="divider" id="rolling">
+		<h2 id="top-header">Release Info</h2>
+
+							<p><span class="highlight-3">Deze pagina geeft een samenvatting van de Release Notes en zal alleen geupdate worden bij een nieuwe release. Lees de volledige Release Notes op <a href="http://aptosid.com">aptosid.com</a> of op de Live ISO</span> of install aptosid-releasenotes.</p>		
+
+		    <h2>Release notes voor aptosid 2011-03 Πόνος - Ponos</h2>
+
+				<p>
+					New features in aptosid 2011-03 &quot;Πόνος&quot; are in particular kernel 3.1 and numerous integration and stabilisation fixes.
+					Special focus has been cast upon improving the system compatibility with new hardware platforms and various corner cases.
+					Kernel 3.1 doesn't only improve and stabilise hardware support for newer devices, it also improves latency and general system performance, particularly vastly improved I/O scheduling for lvm2/ mdadm on SSDs.
+				</p>
+
+				<p>
+					Among the new features are inital XEN dom0 and PCI passthrough support as well as nested virtualization for kvm on intel and amd CPUs.
+					The graphics arena provides improved support for Intel sandy bridge graphics (HD2000/ HD3000) and for AMD llano graphics, just like nouveau starting to provide basic support for the GeForce 4xx/ 5xx series and bringing 3d capabilities to selected chipsets.
+					Subsystem support for DVB-T2 devices and the first devices is now available.
+				</p>
+
+				<p>
+					The networking subsystem now offers wake on wlan support (WoWLAN) and support for various new RealTek and Broadcom devices.
+				</p>
+
+				<p>
+					GPT and UEFI reliability have been improved, which allows harddisks exceeding 2 TiB and their use for booting on new systems using UEFI instead of the traditional PC-BIOS.
+				</p>
+
+				<p>
+					Zoals altijd, werden er een groot aantal individuele functionaliteitsverbeteringen en correcties toegepast op de volledige lijst van pakketten en aptosid's eigen pakketten om de algemene distributie infrastructuur te verbeteren. 
+					De laatste maanden lieten toe om specifieke aandacht te besteden aan kleine aspecten in veel paketten om de algemene policy compliance en functionaliteit te verbeteren.
+				</p>
+
+				<p>
+					We bedanken onze nieuwe sponsor <a href="http://www.webtropia.com/?o_ref=aptosid">Webtropia</a> (onderdeel van myLoc managed IT AG), die ons 3 servers ter beschikking stelt voor onze ontwikkelings&ndash; en hosting infrastructuur en we kijken uit naar een langdurige en succesvolle samenwerking met deze fijne hosting business.
+					Met de nieuwe servers van <a href="http://www.myloc.de/">myLoc managed IT AG</a> hebben we finaal onze eigen technische oplossingen voor onze noden, b.v. volledig gescheiden hardware voor snelle kernel- en ISO-building, en een extra server voor het draaien van al onze andere sites in virtuele machines (lab.aptosid.com, manual.aptosid.com, etc.).
+					Al onze servers draaien nu onze eigen server editie van aptosid.
+				</p>
+
+				<p>
+					Onze bijzondere dank gaat naar de aptosid art- en manual teams, en in het bijzonder <a href="http://www.webtropia.com/?o_ref=aptosid">webtropia.com</a> en alle <a href="cd-dl-burning-nl.htm#download-aptosid">mirror</a> hosters voor hun bijdrage aan aptosid.
+				</p>
+			</div>
+	   <div class="divider" id="whats-new">
+		<h2>Nu de interessante onderwerpen : wat staat er op het menu :</h2>
+				<ul>
+					<li>Debian sid, as of 2011-12-31.</li>
+					<li>kernel 3.1.6 (smp, hard preemption).</li>
+					<li>xserver-xorg-core 1.11.2.902.</li>
+					<li>enable KMS support for ATi, Intel and nVidia based graphics chipsets.</li>
+					<li>DRI (3d) support for ATi Radeon chipsets up to r7xx (refer to <a href="nf-firm-nl.htm">non-free sources and Drivers</a>).</li>
+					<li>KDE 4.6.5 (en + de).</li>
+					<li>Iceweasel 9.0.1</li>
+					<li>new, SVG based, art theme created by the aptosid art team.</li>
+
+					<li>nieuw, SVG gebaseerd, art theme gecreerd door het aptosid art team.</li>
+					<li><a href="file:///usr/share/aptosid-manual/index.html">offline manual</a> voor <a href="file:///usr/share/aptosid-manual/en/welcome-en.htm">en</a> + <a href="file:///usr/share/aptosid-manual/de/welcome-de.htm">de</a>  direct op de disk, online manuals voor meer talen op <a href="http://manual.aptosid.com/">http://manual.aptosid.com/</a> en beschikbaar via apt. Veel dank aan de documentatie- en vertaalteams !<br />Nota : the offline manual is enkel beschikbaar op de live CD of op een geinstalleerd systeem.</li>
+
+					<li>veel wijzigingen aan de manual.</li>
+					<li>ath5k support voor 54/ "108" MBit/s Atheros wlan cards (AR2425, AR5210, AR5211, AR5212, AR5213 and AR5414).</li>
+					<li>ath9k support voor 802.11n Atheros wlan cards (AR5418+AR5133, AR5416+AR5133, AR5416+AR2133, AR9160, AR9280, AR9281 en AR9285).</li>
+					<li>ath9k_htc support voor 802.11n Atheros USB wlan cards (AR7010/ AR9271).</li>
+					<li>carl9170 support voor 802.11n Atheros USB wlan cards (AR9170 &quot;otus&quot;), met ondersteuning voor HT/ aggregatie en AP mode.</li>
+					<li>
+
+						b43/ b43legacy support voor Broadcom wlan cards.<br />
+						<a href="http://www.ing.unibs.it/openfwwf/">OpenFWWF 5.2</a> opensource firmware voor de volgende Broadcom AirForce 802.11b/g wireless cards:
+						<ul>
+							<li>BCM4306</li>
+							<li>BCM4311 revision 1</li>
+							<li>BCM4318</li>
+
+							<li>BCM4320</li>
+						</ul>
+						experimenteel support voor LP-PHY, non-free firmware images (firmware-b43-lpphy-installer) vereist.
+					</li>
+
+					<li>iwlagn support for IPW 3945/ 4965 and the IEEE 802.11 a/b/g/n part of the Intel Wireless WiFi Link 1000/ 2000/ 5xxxAGN/ 6000/ 6050 family.</li>
+					<li>iwmc3200wifi support for Intel Wireless Multicomm 802.11.</li>
+					<li>rt2x00 support for RaLink rt2400, rt2500, rt2570, rt61 and rt73 802.11b/g cards.</li>
+					<li>support for RaLink rt27x0, rt28x0, rt30x0, rt33xx, rt35xx, rt53xx 802.11b/g/n PCI/ USB cards through rt2x00.</li>
+					<li>support for RealTek RTL8180L/ RTL8185 PCI/ cardbus and RTL8187/ RTL8187B USB wlan cards.</li>
+					<li>support for RealTek RTL8188CE/ RTL8192CE, RTL8188DE/ RTL8192DE, RTL8188SE/ RTL8192SE (PCIe) and RTL8188CU/ RTL8192CU (USB) 802.11n wlan cards.</li>
+					<li>memtest86+.</li>
+					<li>OpenJDK 6 as part of the kde-full variant.</li>
+					<li>support kvm (Kernel-based Virtual Machine) for kde-full; kvm depends on hardware virtualisation support (AMD pacifica virtualisation extensions &quot;svm&quot; or Intel IVT (vanderpool) virtualisation extensions &quot;vmx&quot;)</li>
+					<li>access point support for many mac80211 based wlan cards through nl80211 and hostapd (optional).</li>
+					<li>client support for network booting over PXE/ NBD.</li>
+					<li>re-add usbutils.</li>
+					<li>make sure that polkit-kde-1 is available on KDE builds.</li>
+					<li>support for multi-tuner DVB cards.</li>
+					<li>fix gpm (tty mouse support) for kernel 3.x.</li>
+					<li>transition from /var/run/ to /run/, /var/lock/ to /run/lock/ and /lib/init/rw/ to /run/.</li>
+					<li>replace separate mtab handling by using /proc/mounts directly.</li>
+					<li>stability and compatibility improvements for USB and system installer.</li>
+					<li>fixes for ext4 backed persistency.</li>
+					<li>employ KDE's &quot;Air theme&quot;.</li>
+					<li>provide easy UEFI detection.</li>
+					<li>install iw to configure mac80211/ cfg80211 based wlan cards on default.</li>
+					<li>simplify and fix md5sum cheatcode on the live media.</li>
+					<li>make dmakms handling more robust.</li>
+					<li>fix broken DHCP configuration, which tends to overwrite the configured hostname.</li>
+					<li>adapt nbd based booting/ installation options to upstream changes.</li>
+					<li>welcome Ukrainian to the list of supported languages.</li>
+				</ul>
+			</div>
+			<div class="divider" id="faq">
+				<h2>Vaak gestelde vragen (FAQ)</h2>
+
+				<h3>Installatie</h3>
+				<p>
+
+					<b>Het is aanbevolen om voor het booten van het te installeren Live systeem, de keymaps, de localisatie en de tijdzone in te stellen met de boot menus [F2] en [F3].</b> Zo zullen de lokale settings op al de plaatsen in het geïnstalleerde systeem worden geconfigureerd en zijn er geen omslachtige wijzigingen meer nodig achteraf.
+				</p>
+
+				<h3>Kernel based Mode Setting (KMS) en intel, nvidia and radeon graphische kaarten</h3>
+				<p>
+					KMS ondersteuning is nodig voor xserver-xorg-video-intel, dit betekent dat parameters zoals &quot;i915.modeset=0&quot; of &quot;vga=791&quot; niet langer meer geldig zijn en het actief het opstarten van X zullen verhinderen.
+					Gezien dat i915/ xserver-xorg-video-intel geen firmware meer nodig heeft, hoeven er ook geen KMS bugs meer te zijn in verband met intel graphische chips.
+				</p>
+
+				<p>
+					Om KMS te laten functioneren met ATi/ AMD radeon graphische chips is er firmware (firmware-linux-nonfree, zie <a href=gpu-nl.htm#ati-3d">non-free Drivers</a>) nodig, deze kan niet op aptosid live media worden geleverd. X.org zou terug moeten vallen op vesa voor problematische kaarten. In enkele uitzonderlijke gevallen zal er meer werk nodig zijn.
+					Wanneer X er niet in slaagt om een ATi/ AMD radeon graphische kaart op te starten, dan kan het helpen om &quot;radeon.modeset=0&quot; als boot optie te geven voor de Live CD en de firmware &quot;<a href="hw-dev-hw-dri-nl.htm#non-free">firmware-linux-nonfree</a>&quot; te installeren op het Live systeem alvorens de installatie op de harde schijf te starten.
+					Wanneer firmware-linux-nonfree is geinstalleerd, hoeven kernel parameters zoals &quot;radeon.modeset=0&quot; of &quot;vga=791&quot; niet meer worden gebruikt, vermits ze kunnen interfereren met KMS operaties, die nodig zijn om radeon correct te doen werken.
+				</p>
+
+				<p>
+					Nouveau vereist geen firmware en ondersteunt KMS. Framebuffer kernel parameters zoals &quot;vga=791&quot; zijn niet langer geldig en breken X op nVidia graphics kaarten.
+				</p>
+
+				<h3>grub2</h3>
+				<p>
+					Hoewel grub2 een grotere flexibiliteit toelaat voor de installatie, zoals ondersteuning voor nieuwe bestandssystemen (ext4) of geavanceerde installatie opties zoals LVM2 en ook een betere detectie van andere distributies en besturingssystemen, op dit ogenblik is grub 2 beperkt tot een tekstmode menu.
+
+					Een nieuw grafisch thema is momenteel in ontwikkeling en zal weldra beschikbaar zijn.
+					Gewone wallpapers worden echter reeds ondersteund door grub2, maar het is nog breekbaar en verlengt de systeem boot.
+
+					Het configuratie systeem van grub2 gebruikt scripts onder /etc/grub.d/ om het configuratie bestand &quot;grub.cfg&quot; te crëeren op een wijze die veel zelf-updating eigenschappen toelaat, zoals het automatiseren van fromiso ondersteuning met behulp van &quot;grub2-fll-fromiso&quot; (optioneel).
+				</p>
+
+		<h3>isohybrid</h3>
+				<p>
+					Nu isolinux gfxboot ondersteund, is het mogelijk om isohybrid te gebruiken. Dit laat toe om een ISO direct op USB opslag of sd/ sdhc/ mmc geheugen op te slaan en deze bootable te maken.
+					isohybrid voegt een MBR toe aan de ISO en maakt een partitietabel aan met één actieve partitie, de partitie die de ISO bevat.
+					Dit maakt het mogelijk om aptosid ISO's direct op een USB geheugen of sdhc geheugenkaart te schrijven. Tevens is er de wel bekende methode via &quot;install-aptosid-to-usb&quot; (install-usb-gui).
+					Deze optie is zeer nuttig wanneer er geen bestaande aptosid installatie beschikbaar is of wanneer het installatie medium moet worden gemaakt vanuit een andere distributie of besturingssysteem.
+					Het is belangrijk te noteren dat deze methode het gehele USB medium overschrijft en de beschikbare opslagruimt beperkt tot de grootte van de aptosid ISO. install-usb-gui heeft deze beperkingen niet en is daarom de aanbevolen optie wanneer een aptosid systeem beschikbaar is.
+					Bijkomende partities kunnen worden toegevoegd om toegang te krijgen tot vrije ruimtes op de opslagruimte.
+				</p>
+<pre>
+cat /path/to/aptosid-*.iso &gt; /dev/USB_raw_device_node
+</pre>
+
+				<p>
+					Meer informatie over de aptosid installatie is beschikbaar in de <a href="http://manual.aptosid.com/">aptosid manual</a> op <a href="http://manual.aptosid.com/nl/hd-install-nl.htm">Installatie opties</a>.
+				</p>
+
+		<h3>Wireless regulatory domain settings</h3>
+				<p>
+
+					Het "regulatory domain framework" voor cfg80211 gebaseerde wlan kaarten vereist crda om toegang te verkrijgen tot de wireless kanalen boven kanaal 11 (2.4 GHz of hun 5 GHz equivalenten). Zonder crda is enkel het "world domain" (kanaal 1-11) beschikbaar.
+				</p>
+<pre>
+apt-get update apt-get install crda
+</pre>
+		<h3>Netwerk booting van aptosid</h3>
+				<p>
+					Netwerk booting van aptosid over PXE (Preboot Execution Environment) en NBD (Network Block Device) is ondersteund. De vereiste settings kunnen worden geconfigureerd vanuit het boot menu [F4].
+					Instructies voor het opzetten van een voorbeeld PXE+NBD boot server kan worden bekomen op <a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=9">aptosid netboot introduction</a> en in de handleiding: <a href="nbdboot-nl.htm#nbd1">aptosid over het netwerk opstarten</a>.
+				</p>
+
+				<h3>UEFI booting</h3>
+				<p>
+					Een beginnende ondersteuning voor booting met UEFI werd toegevoegd aan de amd64 edities voor aptosid 2011-02 &quot;Ἡμέρα&quot;.
+					De installer GUI werd nog niet volledig afgewerkt, de bootloader zal een EFI program zijn geinstalleerd op /efi/aptosid in jouw &quot;EFI systeem partitie&quot; en wordt gemount onder /boot/efi/ op je geinstalleerd systeem, op voorwaarde dat de volgende condities worden vervuld: 
+				</p>
+
+				<ul>
+					<li>x86-64/ EM64T systeem (amd64).</li>
+					<li>boot met UEFI, dit is zichtbaar van het wit/blauwe grub2 menu, in plaatst van het grafische boot menu geleverd door isolinux voor BIOS booting, op het live medium.</li>
+					<li>een vfat geformatteerde EFI systeem partitie op een GPT disk (type EF00) bestaat op het target systeem.</li>
+					<li>het target systeem is geen USB disk.</li>
+				</ul>
+
+				<p>
+					Momenteel heeft aptosid enkel UEFI booting voor zijn 64 bit editie (amd64), 32 bit UEFI (zoals oudere Apple systemen) wordt momenteel niet ondersteunt.
+					Multiboot met andere 64 bit operating systems zou moeten mogelijk zijn, maar kon nog niet worden getest.
+				</p>
+
+				<h3>UEFI bootable removable devices</h3>
+				<p>
+					Om een UEFI bootable device te creeren, zoals een USB stick, kan de inhoud van de aptosid ISO worden uitgetrokken op een vfat geformatteerde partitie en de partitie gemarkeerd als bootable.
+					Optioneel kan dit removable medium ook compatibel met PC-BIOS booting worden gemaakt door het installeren van een traditionele bootsector toegevoegd aan de EFI bootloader (veronderstellend dat /dev/sdz1 de target partitie is op de USB stick).
+				</p>
+
+<pre>
+syslinux -i -d /boot/isolinux /dev/sdz1
+install-mbr /dev/sdz
+</pre>
+
+				 <h3>Localisatie</h3>
+				<p>
+					Een speciale eigenschap van de kde-full versie is de mogelijkheid om, buiten Duits en US-Engels, een andere taal te kiezen via het grub menu (F4), dit installeert automatisch de localisatie voor het bureaublad en vele toepassingen gedurende het boot proces.
+					Het verzekert ook dat de talen aanwezig zijn na de installatie van aptosid, en installeert enkel de gekozen talen voor het systeem.
+					De grootte van het geheugen nodig voor deze eigenschap is afhankelijk van de taal. aptosid kan de installatie van een bepaalde taal weigeren wanneer er onvoldoende RAM aanwezig is en de boot sequentie zal verdergaan in de engelse taal maar met de gevraagde localisatie settings ( geldsymbool, datum- en tijdformaat, keyboard karakters).
+					1 GB of meer is nodig voor alle ondersteunde talen, dewelke zijn :
+				</p>
+
+				<ul>
+					<li>Deens</li>
+					<li>Tsjechisch</li>
+					<li>Nederlands</li>
+					<li>Engels (AU, GB, US)</li>
+					<li>German</li>
+					<li>Frans</li>
+					<li>Italiaans</li>
+					<li>Japanees</li>
+					<li>Pools</li>
+					<li>Portugees (BR, PT)</li>
+					<li>Roemeens</li>
+					<li>Russisch</li>
+					<li>Spaans</li>
+					<li>Ukranian</li>
+				</ul>
+
+				<p>
+
+					De selectie aan talen is afhankelijk van de beschikbaarheid van aptosid-manual vertalingen. Help ons om jouw taal toe te voegen.
+					Het niveau van up-to-date vertalingen is voor de volgende talen te laag op dit moment :
+				</p>
+
+				<ul>
+					<li>Bulgaars</li>
+					<li>Croatisch</li>
+					<li>Croatisch</li>
+					<li>Greek</li>
+					<li>Hongaars</li>
+				</ul>
+
+				<p>
+					Bijkomende hulp is dringend nodig voor deze talen!
+				</p>
+
+
+	</div>
+	<div class="divider" id="upgrade">
+			<h2>Tips voor Upgraders:</h2>
+				<p>
+					aptosid tracht om voor een naadloos upgrade traject te zorgen voor debian en aptosid's eigen pakketten, maar enkele zaken kunnen verbetert worden mits manuele interventies.
+				</p>
+
+			<h3>nouveau</h3>
+
+				<p>
+					xserver-xorg-video-nv werd verwijdert uit Debian, dit betekent dat xserver-xorg-video-nouveau nu de plaats overneemt.
+					Daarvoor bevelen we nvidia graphics gebruikers aan xserver-xorg-video-nv te verwijderen, en xserver-xorg-video-nouveau te installeren; configuratie wijzigingen zouden niet nodig zijn.
+					Op beperkte chipset generaties,  is basis video- en 3D- versnelling beschikbaar via xserver-xorg-video-nouveau en libgl1-mesa-dri-experimental.
+				</p>
+<pre>
+apt-get install xserver-xorg-video-nouveau libgl1-mesa-dri-experimental
+</pre>
+
+				<h3>KDE 4.6 en XFCE 4.8</h3>
+				<p>
+					Het upgraden naar KDE 4.6 of XFCE 4.8 zou misschien niet alle pakketten kunnen binnenhalen, maak zeker dat je deze vereiste pakketten manueel installeert.
+					Zonder deze pakketten werken een aantal zaken maar gedeeltelijk zoals : powermanagement, mounting van removable media en het toepassen van systeem wijde configuratieveranderingen in systemsettings.
+				</p>
+				<p>
+					For KDE:
+				</p>
+<pre>
+apt-get install polkit-kde-1 udisks upower
+</pre>
+				 <p>
+					For XFCE:
+				 </p>
+<pre>
+apt-get install policykit-1 policykit-1-gnome udisks upower
+</pre>
+
+			<h3>Verouderde pakketten</h3>
+				<p>
+					Als onderdeel van de voortdurende ontwikkeling van aptosid werden er een aantal pakketten vervangen door betere alternatieven of werden ze overbodig.
+				</p>
+
+				<ul>
+					<li>
+						kaboom<br />
+						Transitional helper voor KDE3 &rarr; KDE4 migraties van de user configuratie, dewelke kan worden verwijdert na een succesvolle migratie.
+					</li>
+
+					<li>
+						modconf<br />
+						Dit pakket werd verwijdert uit Debian na  &quot;squeeze&quot; en heeft momenteel geen nut meer.
+					</li>
+				</ul>
+
+				<p>
+					Overgangspakketten of verouderde bibliotheken kunnen vaak worden gevonden met &quot;deborphan&quot;.
+					Hoewel deze tool zeer nuttig is voor het opkuisen van een systeem, moeten de resultaten ervan steeds met de nodige aandacht worden geverifieerd alvorens ze te verwijderen.
+				</p>
+
+<pre>
+$ deborphan
+</pre>
+							<p> Het volgende commando zoekt naar pakketten die niet meer beschikbaar zijn in een actief apt repository en kan overbodige pakketten tonen. Hierbij kunnen ook handmatig geïnstalleerde pakketten getoond worden (apt-show-versions is een pakket dat niet standaard op alle systemen geïnstalleerd is). </p>
+
+<pre>
+$ apt-show-versions | awk '/No available version in archive/{print $1}'
+</pre>
+			</div>
+			<div class="divider" id="howto-involve">
+				<h2>Hoe je te betrekken bij aptosid</h2>
+				<p>
+					Je betrekken bij aptosid is gemakkelijk, kom naar ons <a href="http://aptosid.com/index.php?name=PNphpBB2">Forum</a> of zelfs beter op IRC (irc.oftc.net, port 6667, channel <a href="irc://irc.oftc.net:6667/#aptosid">#aptosid</a>) en stel jouw patches/ voorstellen of toevoegingen voor.
+				</p>
+
+				<p>
+					We willen graag alle dfsg-free patches en toevoegingen bespreken, in het bijzonder anternatieve window managers (GNOME, LXDE), algemene saneringstaken of vertalingen/localisaties.
+				</p>
+			</div>
+			<div class="divider" id="roadmap">
+				<h2>Roadmap:</h2>
+				<p>
+					Please understand that the following roadmap is a rough estimate regarding our release schedule and is affected by the status of upstream Debian sid, major system components like X.org, KDE, the linux kernel and our own developments and is subject to changes.
+				</p>
+	
+				<ul>
+					<li>
+						Θάνατος - Thánatos
+					</li>
+
+					<li>
+						Ἑσπερίδες - Hesperides
+					</li>
+
+					<li>
+						Νέμεσις - Nemesis
+					</li>
+
+					<li>
+						Φιλότης - Philotes
+					</li>
+				</ul>
+			</div>	
+			<div id="rev">Inhoud het laatst gewijzigd op 01/01/2012 1230 UTC  </div>
+</div>
+</body>
+</html>

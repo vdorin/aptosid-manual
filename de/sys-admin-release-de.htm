@@ -1,0 +1,687 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<head>
+	<title>aptosid Manuals - Rolling Notes -de</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision by hubi Tue, 03 Jan 2012 14:11:47 +0000 -->
+<!--htdig_noindex--><div id="menu"> <!-- menu starts here de lang maintained by hubi -->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="Zu aptosid.com (Forum und Wiki)" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-de.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="Handbuch Suche" alt="Suche" />Suche online - offline</a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Wählen Sie eine andere Sprache - Choose another language CS, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="lang-switch CS, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-de.htm">aptosid-Handbuch</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-de.htm#welcome-gen">aptosid-Handbuch &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-de.htm#cred-team">Das aptosid-Team</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-de.htm#how-to">Über das Handbuch &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-de.htm#how-to">Wie das Handbuch zu verwenden ist</a></li>
+					  <li><a href="welcome-de.htm#table-contents">Inhalt</a></li>
+					</ul>
+					</li>
+		<li><a href="help-de.htm#help-gen">Wo es Hilfe gibt &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-de.htm#help-gen">Weitere Hilfe</a></li>
+					  <li><a href="help-de.htm#paste">IRC und !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-de.htm#welcome-quick">aptosid Schnellstart</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-de.htm">ISO: Inhalt, Veröffentlichungen, Download, Spiegelserver, Brennvorgang</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-de.htm#cd-content">ISO: Inhalt und Systemanforderungen &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-de.htm#rolling">Versionshinweise</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-de.htm#download-aptosid">aptosid: Spiegelserver, Download, Brennvorgang &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-de.htm#md5">md5 Checksumme</a></li>
+					  <li><a href="cd-dl-burning-de.htm#burn-nero">Brennen mit Windows</a></li>
+					  <li><a href="cd-dl-burning-de.htm#burn-linux">Brennen mit Linux</a></li>
+					  <li><a href="cd-no-gui-burn-de.htm#burning-no-gui">Das Skript burniso</a></li>
+					  <li><a href="cd-no-gui-burn-de.htm#burn-no-gui-gen">Brennen ohne graphische Oberfläche</a>
+					  </li><li><a href="cd-dl-burning-de.htm#download-aptosid">Spiegelserver zum Download</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-de.htm">Live-Modus</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-de.htm#rootpw">Root-Passwort auf der Live-ISO</a></li>
+				<li><a href="live-mode-de.htm#live-cd-installsoft">Software-Installation auf einer Live-ISO</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-de.htm">Terminal/Konsole</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-de.htm#term-kon"> Terminal/Konsole &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-de.htm#term-kon">Terminal/Konsole</a></li>
+					  <li><a href="term-konsole-de.htm#colours">Farbige Prompts im Terminal</a></li>
+					  <li><a href="term-konsole-de.htm#cli-help">Hilfe auf der Befehlszeile</a></li>
+					  <li><a href="help-de.htm#init3-tools">Tools für den Textmodus (tty) - init 3</a></li>
+					  <li><a href="term-konsole-de.htm#term-cmds">Linux-Befehlsliste am Terminal</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-de.htm#sux"> sux/sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-de.htm">Bootoptionen (Bootcodes)</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-de.htm#cheatcodes">Bootoptionen für die aptosid-Live-ISO</a></li>
+				<li><a href="cheatcodes-de.htm#cheatcodes-linux">Bootoptionen für Linux</a></li>
+				<li><a href="cheatcodes-vga-de.htm#vga">VGA-Codes</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-de.htm">Partitionierung der Festplatte - traditionell, GPT und LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-de.htm#hd-ntfs3g">Schreiben auf NTFS Partitionen mit ntfs-3g</a></li>
+			<li><a href="part-lvm-de.htm#part-lvm">Partitionierung mit LVM - Logical Volume Manager</a></li>
+			<li><a href="part-gparted-de.htm#partition">Partitionieren mit GUI-Programmen &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-de.htm#partition">Partitionieren mit GParted/KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-de.htm#ntfs">Größenänderung von NTFS-Partitionen mit GParted/KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-de.htm#partition">Partitionieren im Terminal &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-de.htm#partition">Partitionieren mit cfdisk</a></li>
+					    <li><a href="part-cfdisk-de.htm#formating">Formatieren</a></li>
+					    <li><a href="part-gdisk-de.htm#gdisk-6">Formatieren nach einer Partitionierung mit gdisk</a></li>
+					    <li><a href="part-gdisk-de.htm#gdisk-1">GPT Partitionieren mit gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-de.htm#part-example">Grundlagen für die Partitionierung &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-de.htm#part-example">Partitionierungsbeispiele</a></li>
+					  <li><a href="part-uuid-de.htm#uuid">UUID, Anpassung der fstab und Erstellung neuer Einhängepunkte</a></li>
+					  <li><a href="part-cfdisk-de.htm#disknames">Kurzanleitung zur Benennung von Partitionen</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-de.htm">Installationsoptionen - HD, USB, VM und Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-de.htm#Inst-prep">Vorbereitung einer Installation &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-de.htm#Inst-prep">Installationsvorbereitung </a></li>
+					  <li><a href="hd-install-de.htm#Installation">Installation auf einer Festplatte</a></li>
+					  <li><a href="hd-install-de.htm#first-hd-boot">Der erste Start des Systems</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-de.htm#fromiso">fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-de.htm#fromiso">fromiso - Überblick</a></li>
+					  <li><a href="hd-install-opts-de.htm#grub2-fromiso">fromiso mit Grub 2</a></li>
+					  <li><a href="hd-install-opts-de.htm#fromiso-persist">fromiso und persist</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-de.htm#usb-hd">Installation auf USB-Geräte &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-de.htm#usb-hd">Installation auf eine USB-Festplatte (Besonderheiten von aptosid, aptosid-on-stick)</a></li>
+					  <li><a href="hd-ins-opts-oos-de.htm#raw-usb">Installation auf USB-Stick/SSD von einem anderen System (Linux. MS Windows, Mac OS X)</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-de.htm#install-crypt">Installation auf verschlüsselte Partitionen - cryptroot</a></li>
+		  <li><a href="nbdboot-de.htm#nbd1">Booten über ein Netzwerk</a></li>
+		<li><a href="hd-install-vmopts-de.htm#vmopts">Installation auf virtuellen Maschinen</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-de.htm">Grafikkarten, Monitore, Xorg &amp; Treiber</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-de.htm#mon-res">Bildschirmauflösung und Monitore  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-de.htm#mon-res">Bildschirmauflösung und Monitore</a></li>
+					  <li><a href="hw-dev-mon-de.htm#xrandr">Dual-Monitore und xrandr</a></li>
+					  <li><a href="hw-dev-mon-de.htm#mon-binary">Dual-Monitore (mit proprietären Treibern)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-de.htm#foss-xorg">Grafiktreiber &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-de.htm#ati-3d">AMD/ATI 3D-Treiber</a></li>
+					  <li><a href="gpu-de.htm#intel">Intel 2D- und 3D-Treiber</a></li>
+					  <li><a href="gpu-de.htm#nvidia">Nvidia 3D-Treiber</a></li>
+					  <li><a href="gpu-de.htm#foss-xorg">Open Source Xorg-Treiber</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-de.htm#fw-detect">Ermittlung von nicht freier Firmware</a></li>
+			  <li><a href="nf-firm-de.htm#non-free-firmware">non-free der Sources List anfügen</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-de.htm">Sitzungsmanager</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-de.htm">KDE, XFCE und weitere Sitzungsmanager &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-de.htm#xfce-notes">Xfce-Extras</a></li>
+					    <li><a href="wm-dm-de.htm#install-add">Zusätzliche KDE-Programme</a></li>
+					    <li><a href="wm-dm-de.htm#kde-login">Kein Login in KDE</a></li>
+					    <li><a href="wm-dm-de.htm#ch-th">Grafik-Themen ändern</a></li>
+					    <li><a href="wm-dm-de.htm#desk-freeze">Wenn der Desktop einfriert</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-de.htm#dm">Installation weiterer Sitzungsmanager</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-de.htm">Internetverbindung: WiFi, LAN, sonstige Netzwerke </a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-de.htm">LAMP mit aptosid &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-de.htm#serv-apache">LAMP mit aptosid</a></li>
+					    <li><a href="lamp-apache-de.htm#serv-ftp">FTP-Klienten</a></li>
+					    <li><a href="lamp-apache-de.htm#serv-sec">Sicherheitsprotokolle</a></li>
+					    <li><a href="lamp-apache-de.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-de.htm#serv-mysql">MySQL</a></li>
+					    <li><a href="lamp-ppp-de.htm#serv-php">PHP und Apache</a></li>
+					    <li><a href="ntp-server-de.htm#ntp-server">Zeitserver</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-de.htm#tor">Firewalls und Datenschutz &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-de.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-de.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-de.htm#firewalls">Firewalls</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-de.htm#ssh-x">SSH und Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-de.htm#setup">Samba-Server</a></li>
+						  <li><a href="samba-de.htm#configure">Konfiguration von SAMBA (Windows)</a></li>
+						  <li><a href="ssh-de.htm#ssh-fs">SSH (Ferneinbindung)</a></li>
+						  <li><a href="ssh-de.htm#ssh-x">SSH mit grafischen Programmen</a></li>
+						  <li><a href="ssh-de.htm#ssh-f">SSH via Konqueror</a></li>
+						  <li><a href="ssh-de.htm#ssh-w">SSH: Weiterleitung von grafischen Programmen von Windows</a></li>
+						  <li><a href="ssh-de.htm#ssh">SSH und Sicherheit</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-de.htm#netcardconfig">WIFI-Verbindungen &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-de.htm#netcardconfig">Ceni (Erstellung einer Internetverbindung)</a></li>
+						    <li><a href="inet-wpagui-de.htm#wpa-roaming-gui">WiFi: WPA_GUI</a></li>
+						    <li><a href="inet-setup-de.htm#net-set1">WiFi: Roaming-Konfiguration</a></li>
+						    <li><a href="inet-wpa-de.htm#wpa">WiFi und wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-de.htm#hotswitch">Wechsel zwischen WiFi und Kabel</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-de.htm#netcardconfig">Kabelverbindungen &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-de.htm#dial-mod">56k-Modems</a></li>
+						    <li><a href="inet-ceni-de.htm#netcardconfig">Ceni (Erstellung einer Internetverbindung</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-de.htm#fw-detect">Ermittlung von nicht freier Firmware</a></li>
+		<li><a href="nf-firm-de.htm#non-free-firmware">non-free der Sources List anfügen</a></li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-de.htm">Paketmanager und Systemaktualisierung</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-de.htm#apt-cook">APT-Rezepte und APT-Quelllisten &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-de.htm#apt-cook">APT-Grundlagen, sources.list.d/*.list</a></li>
+					    <li><a href="sys-admin-apt-de.htm#apt-install">Installation von Programmpaketen</a></li>
+					    <li><a href="sys-admin-apt-de.htm#apt-delete">Löschen eines Programmpakets</a></li>
+					    <li><a href="sys-admin-apt-de.htm#apt-downgrade">Halten eines Programmpakets oder Ältere Version installieren</a></li>
+					    <li><a href="sys-admin-apt-de.htm#apt-cache">Programmpaket mit apt-cache suchen</a></li>
+					    <li><a href="sys-admin-apt-de.htm#gui-pacsea">Suchen eines Programmpakets mit grafischen Hilfsprogrammen</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-de.htm#kern-upgrade">Kernelaktualisierung &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-de.htm#kern-remove">Entfernen eines Kernels</a></li>
+					    <li><a href="sys-admin-kern-upg-de.htm#kern-upgrade">Aktualisierung eines</a></li>
+					    <li><a href="sys-admin-kern-upg-de.htm#dmakms">Automatische Installation von Kernelmodulen mit dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-de.htm#apt-upgrade">Aktualisierung eines installierten Systems &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-de.htm#live-cd-upgrade">Aktualisierung mittels einer Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-de.htm#approx">Aktualisierung mehrerer PCs via LAN</a></li>
+					    <li><a href="sys-admin-apt-de.htm#apt-upgrade">Aktualisierung eines Systems: Grundlagen</a></li>
+					    <li><a href="sys-admin-apt-de.htm#du-st">Aktualsierung eines Systems: die einzelnen Schritte</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-de.htm">Systemadministration</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-de.htm#bois-prep">Aktualisierung des BIOS mittels FreeDOS</a></li>
+		<li><a href="vir-rkits-de.htm#virus-rkits">Virus- und Rootkit-Scanner</a></li>
+		<li><a href="hd-install-de.htm#adduser">Hinzufügen von Benutzern, Passwortverwaltung &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-de.htm#adduser">Einen neuen Benutzer hinzufügen</a></li>
+					    <li><a href="sys-admin-gen-de.htm#pw-lost">Vergessene Root-Passwörter - Erstellung neuer Passwörter</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-de.htm#start-services">Dienste und Runlevel &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-de.htm#start-services">Dienste aktivieren/deaktivieren</a></li>
+					    <li><a href="sys-admin-gen-de.htm#pkill">Stoppen eines Dienstes oder Prozesses</a></li>
+					    <li><a href="sys-admin-gen-de.htm#init">Runlevel-Einstellungen von aptosid</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-de.htm#rsync">Sicherung eines Systems &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-de.htm#rdiff">Sicherung mit rdiff</a></li>
+					    <li><a href="sys-admin-rsync-de.htm#rsync">Sicherung mit rsync</a></li>
+					    <li><a href="home-de.htm#home-bu">Verschieben von /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-de.htm#fonts">CUPS, Schriften und Audio &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-de.htm#fonts">Schriften</a></li>
+					     <li><a href="sys-admin-gen-de.htm#cups">CUPS - Drucken mit aptosid</a></li>
+					     <li><a href="sys-admin-gen-de.htm#sound">Audio-Mischpulte</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-de.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-de.htm#chroot">Grub2 - Wiederherstellung von Grub durch chroot</a></li>
+					    <li><a href="sys-admin-grub2-de.htm#mbr-over-grub2">Grub2 - Falls der MBR-Bootsektor überschrieben wurde</a></li>
+					    <li><a href="sys-admin-grub2-de.htm#multi-os">Grub2 - Dual- und Multibooting</a></li>
+					    <li><a href="sys-admin-grub2-de.htm#grub1-grub2">Grub2 - Aktualisierung von Grub1</a></li>
+					    <li><a href="sys-admin-grub2-de.htm#grub2">Grub2 - Überblick</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Sponsored by webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid is proudly hosted by webtropia.com" alt="aptosid is proudly hosted by webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+	<div class="divider" id="rolling">
+		<h2 id="top-header">Hinweise für Versionaktualisierungen installierter Systeme</h2>
+
+							<p><span class="highlight-3">Diese Seite bietet eine Zusammenfassung der Release-Notes und wird nach jeder Veröffentlichung aktualisiert. Die vollständigen Release-Notes finden sich auf <a href="http://aptosid.com">aptosid.com</a> beziehungsweise der Live-ISO </span> oder man installiert aptosid-releasenotes.</p>
+
+		<h2>Release-Notes für aptosid 2011-03 Πόνος - Ponos</h2>
+
+				<p>
+					Neue Features in aptosid 2011-03 &quot;Πόνος&quot; sind insbesonders Kernel 3.1 sowie viele Verbesserungen bezüglich Integration und Stabilisierung.
+					Besondere Aufmerksamkeit wurde auf die Verbesserung der Systemkompatibilität mit neuen Hardwareplattformen wie mit spezieller Hardware gelegt.
+					Kernel 3.1 verbessert und stabilisiert nicht nur die Unterstützung neuester Geräte, sondern auch Latenz und generelle Systemleistung, ganz besonders I/O-Scheduling für lvm2/mdadm auf SSDs.
+				</p>
+
+				<p>
+					Neue Features sind XEN dom0 und Unterstützung von PCI-Passthrough wie auch Nested Virtualization für KVM mit Intel- und AMD-Prozessoren.
+					Im Grafik-Bereich gibt es nun verbesserte Unterstützung für Intel Sandy Bridge Graphics (HD2000/ HD3000) und für AMD Llano graphics. Nouveau bietet grundlegende Unterstützung für die GeForce-Serien 4xx/5xx inklusive 3D-Unterstützung.
+					Subsystem-Unterstützung für DVB-T2 ist nun gegeben.
+				</p>
+
+				<p>
+					Das Netzwerk-Subsystem bietet nun Unterstützung für "Wake on wlan" (WoWLAN) sowie viele neue RealTek- und Broadcom-Geräte.
+				</p>
+
+				<p>
+					Die Zuverlässigkeit bezüglich GPT und UEFI wurde erhöht, womit Festplatten mit mehr als 2 TiB angesprochen werden und für den Systemstart auf neuen Systemen unter Verwendung von UEFI anstelle des traditionellen PC-BIOS genutzt werden können.
+				</p>
+
+				<p>
+					Wie üblich wurde auch eine große Anzahl von Funktionalitätserweiterungen und Fehlerkorrekturen dem gesamten Paketspektrum und im Besonderen aptosid-eigenen Paketen zuteil, um die Gesamtinfrastruktur der Distribution zu verbessern.
+					In den letzten Monaten war es möglich, auf Detailaspekte vieler Pakete zu achten, um Funktionalität und die Treue zu unseren Richtlinien zu verbessern.
+				</p>
+
+				<p>
+					Wir möchten unserem neuen Sponsor <a href="http://www.webtropia.com/?o_ref=aptosid">Webtropia</a> (Teil von myLoc managed IT AG), der drei Server für unsere Entwicklungs&ndash; und Hostinginfrastruktur zur Verfügung stellt. Wir freuen uns auf eine lange und erfolgreiche Zusammenarbeit mit diesem feinen Hosting-Service.
+					Mit den neuen Servern <a href="http://www.myloc.de/">myLoc managed IT AG</a> steht uns nun eine entsprechende technische Lösung für unsere Anforderungen zur Verfügung (eigene Hardware für den schnellen Bau von Kerneln und ISOs und ein gesonderter Server, um unsere Sites in virtuellen Umgebungen laufen zu haben (lab.aptosid.com, manual.aptosid.com, etc.).
+					Auf allen Servern läuft unsere eigene Server-Version von aptosid.
+				</p>
+
+				<p>
+					Unser besonderer Dank ergeht an die Grafik- und Handbuchteams von aptosid sowie besonders an <a href="http://www.webtropia.com/?o_ref=aptosid">webtropia.com</a> wie allen Hostern von unseren <a href="cd-dl-burning-de.htm#download-aptosid">Spiegelservern</a> für ihre Bemühungen um aptosid.
+				</p>
+			 </div>
+	   <div class="divider" id="whats-new">
+		<h2>Jetzt zu den interessanten Themen! Was steht auf dem Plan:</h2>
+				<ul>
+					<li>Debian sid von 2011-12-31.</li>
+					<li>kernel 3.1.6 (smp, hard preemption).</li>
+					<li>xserver-xorg-core 1.11.2.902.</li>
+					<li>KMS-Unterstützung für Grafikkarten von ATi, Intel und nVidia</li>
+					<li>DRI-(3d)-Unterstützung für ATi Radeon-Chipsets bis r7xx (siehe <a href="nf-firm-de.htm">nicht freie Quellen und Treiber</a>).</li>
+					<li>KDE 4.6.5 (en + de).</li>
+					<li>Iceweasel 9.0.1</li>
+
+					<li>Neues, auf SVG basierendes Art-Theme, entworfen vom aptosid art team.</li>
+					<li><a href="file:///usr/share/aptosid-manual/index.html">Offline-Handbuch</a> für <a href="file:///usr/share/aptosid-manual/en/welcome-en.htm">en</a> + <a href="file:///usr/share/aptosid-manual/de/welcome-de.htm">de</a> im ISO, Online-Handbücher für mehr Sprachen auf <a href="http://manual.aptosid.com/">http://manual.aptosid.com/</a> bzw. installierbar via apt; ein großes Dankeschön geht an das Dokumentations- und Übersetzerteam!<br />Zu beachten ist, dass das Offline-Handbuch nur auf der Live-ISO oder auf einem installierten System aufrufbar ist.</li>
+
+					<li>Viele Änderungen im und am Handbuch.</li>
+					<li>ath5k - Unterstützung für 54/"108" MBit/s Atheros Wlan-Karten (AR2425, AR5210, AR5211, AR5212, AR5213 und AR5414).</li>
+					<li>ath9k - Unterstützung für 802.11n Atheros Wlan-Karten (AR5418+AR5133, AR5416+AR5133, AR5416+AR2133, AR9160, AR9280, AR9281 und AR9285).</li>
+					<li>ath9k_htc - Unterstützung für 802.11n Atheros USB Wlan-Karten (AR7010/AR9271).</li>
+					<li>carl9170 Unterstützung für 802.11n Atheros USB Wlan-Karten (AR9170 &quot;otus&quot;), Unterstützung für HT/aggregation und AP mode.</li>
+					<li>
+
+						b43/ b43legacy - Unterstützung für Broadcom Wlan-Karten.<br />
+						<a href="http://www.ing.unibs.it/openfwwf/">OpenFWWF 5.2</a> quelloffene Firmware für folgende Broadcom AirForce 802.11b/g wireless cards:
+						<ul>
+							<li>BCM4306</li>
+							<li>BCM4311 revision 1</li>
+							<li>BCM4318</li>
+
+							<li>BCM4320</li>
+						</ul>
+					    experimentelle Unterstützung für LP-PHY, nicht freie Firmware (firmware-b43-lpphy-installer) wird benötigt.
+					</li>
+
+					<li>iwlagn Unterstützung für IPW 3945/4965 sowie IEEE 802.11 a/b/g/n für die Familie von Intel Wireless WiFi Link 1000/ 2000/ 5xxxAGN/ 6000/ 6050.</li>
+					<li>iwmc3200wifi Unterstützung für Intel Wireless Multicomm 802.11.</li>
+					<li>rt2x00 Unterstützung für die RaLink-Karten rt2400, rt2500, rt2570, rt61 und rt73 802.11b/g.</li>
+					<li>Unterstützung für die RaLink-Karten rt27x0, rt28x0, rt30x0, rt33xx, rt35xx, rt53xx 802.11b/g/n PCI/USB bis rt2x00.</li>
+					<li>Unterstützung für die WLan-Karten RealTek RTL8180L/RTL8185 PCI/cardbus und RTL8187/RTL8187B USB.</li>
+					<li>Unterstützung für die WLan-Karten RealTek RTL8188CE/RTL8192CE, RTL8188DE/RTL8192DE, RTL8188SE/RTL8192SE (PCIe) und RTL8188CU/RTL8192CU (USB) 802.11n.</li>
+					<li>memtest86+.</li>
+					<li>OpenJDK 6 auf der ISO KDE-Full.</li>
+					<li>Unterstützung von kvm (Kernel-based Virtual Machine) auf KDE-Full: kvm hängt von der Virtualisierungsunterstützung der Hardware ab (AMD pacifica virtualisation extensions &quot;svm&quot; oder Intel IVT (vanderpool) virtualisation extensions &quot;vmx&quot;)</li>
+					<li>Access-Point-Unterstützung für viele auf mac80211 basierende WLan-Karten bis nl80211 bzw. hostapd (optionell).</li>
+					<li>Client-Unterstützung für einen Netzwerk-Systemstart über over PXE/NBD.</li>
+					<li>usbutils wurden wieder hinzugefügt.</li>
+					<li>polkit-kde-1 soll mit KDE vorhanden sein (bitte überprüfen!).</li>
+					<li>Unterstützung für Multi-Tuner DVB-Karten.</li>
+					<li>gpm-Unterstützung (Mausverwendung im TTY) für Kernel 3.x sichergestellt.</li>
+					<li>Transition von /var/run/ nach /run/, /var/lock/ nach /run/lock/ und /lib/init/rw/ nach /run/.</li>
+					<li>mtab wird ersetzt durch direkte Nutzung von /proc/mounts.</li>
+					<li>Erhöhung der Stabilität und Kompatibilität des System- und USB-Installers.</li>
+					<li>Verbesserung der Backend-Persistenz für ext4.</li>
+					<li>Verwendung von KDE's &quot;Air theme&quot;.</li>
+					<li>Zurverfügungstellung einer leichten UEFI-Erkennung.</li>
+					<li>Bereitstellung von iw, damit auf mac80211/cfg80211 basierende WLan-Karten erkannt werden.</li>
+					<li>simplify and fix md5sum cheatcode on the live media.</li>
+					<li>dmakms wurde stabilisiert.</li>
+					<li>DHCP-Konfiguration verbessert, damit der angegebene hostname nicht überschrieben wird.</li>
+					<li>Auf nbd basierende Boot- und Installationsoptionen wurden an Veränderungen im Upstream angepasst.</li>
+					<li>Wir heißen Ukrainisch als unterstützte Sprache Willkommen!</li>
+				</ul>
+			</div>
+			<div class="divider" id="faq">
+				<h2>Häufig gestellte Fragen</h2>
+
+				<h3>Installation</h3>
+				<p>
+
+					<b>Es empfiehlt sich Tastaturlayouts, locales und Zeitzonen vor dem booten des zu installierenden Systems mit Hilfe des Bootmenüs [F2], [F3] auszuwählen. </b>
+					Auf diese Weise werden die Lokalisierungseinstellungen direkt an allen erforderlichen Stellen gesetzt und eine aufwändige manuelle Konfiguration ist nicht erforderlich.
+				</p>
+
+				<h3>Kernel based Mode Setting (KMS) und Intel, nvidia und Radeon-Grafiktreiber</h3>
+				<p>
+					KMS-Unterstützung ist Voraussetzung für xserver-xorg-video-intel. Dies bedeutet, Kernel-Optionen wie &quot;i915.modeset=0&quot; oder &quot;vga=791&quot; sind nicht mehr gültig und können den Start von X mit Intel-Grafikkarten verhindern.
+					Da i915/xserver-xorg-video-intel keine Firmware benötigen, sollte es bei Intel-Grafikkarten keine Fehler bezüglich KMS mehr geben.
+				</p>
+
+				<p>
+					Damit KMS in Kombination mit ATi/AMD-Radeon-Grafikkarten funktioniert, wird Firmware (firmware-linux-nonfree, siehe <a href="gpu-de.htm#ati-3d">non-free Drivers</a>) benötigt, die nicht auf aptosid-Live-Medien ausgeliefert werden kann. X.org sollte bei problematischen Karten nachvollziehbar auf Vesa zurückgreifen, besondere Aufmerksamkeit wird nur in seltenen Fällen benötigt.
+					Falls X nicht auf ATi/AMD-Radeon-Grafikkarten gestartet werden kann, kann es nötig sein, &quot;radeon.modeset=0&quot; als Boot-Parameter für die Live-CD zu verwenden und die benötigte Firmware &quot;<a href="gpu-de.htm#ati-3d">firmware-linux-nonfree</a>&quot; auf dem Live-System zu installieren, bevor der Installationsvorgang auf eine Festplatte initiiert wird.
+					Sobald firmware-linux-nonfree installiert ist, sollten Kernel-Parameter wie &quot;radeon.modeset=0&quot; oder &quot;vga=791&quot; nicht mehr benutzt werden, da sie mit KMS-Operationen in Konflikt geraten können, welche benötigt werden, damit Radeon einwandfrei arbeitet.
+				</p>
+
+				<p>
+					Nouveau benötigt keinerlei Firmware und unterstützt grundsätzlich KMS. Frambuffer-Kernelparameter wie &quot;vga=791&quot; sind nicht mehr gültig und verhindern den Start von X mit nVidia-Grafikkarten.
+				</p>
+
+				<h3>grub2</h3>
+				<p>
+					grub2 bietet erhöhte Flexibilität für Installationen: optionelle UEFI-Unterstützung, neue Dateisysteme (ext4) bzw. erweiterte Installationsoptionen wie Software-RAID (mdadm), LVM2 und erhöhte Erkennungsfähigkeiten für weitere Betriebssysteme (Linux wie Nicht-Linux). Das Menü ist jedoch auf einen Textmodus beschränkt.
+
+					Im Augenblick wird jedoch nur ein Textmodus für das Menü unterstützt. An einem graphischen Hintergrund und Thema wird gearbeitet und zu gegebenem Zeitpunkt angeboten werden.<br />
+
+					Obwohl Hintergrundgrafiken bereits von grub2 unterstützt werden, ist dies noch instabil und verlängert den Boot-Prozess.<br />
+
+					Das Konfigurationssystem von grub2 nutzt intern Kleinskripte im Verzeichnis /etc/grub.d/. Mit Hilfe dieser wird die Konfigurationsdatei &quot;grub.cfg&quot; erstellt. Dadurch sind viele selbstaktualisierende Features wie z.B. die automatische fromiso-Unterstützung mit Hilfe von &quot;grub2-fll-fromiso&quot; ermöglicht.
+				</p>
+
+		<h3>isohybrid</h3>
+				<p>
+					Mittels isolinux, das gfxboot unterstützt, ist es möglch isohybrid zu nutzen. Dies ermöglicht, eine ISO direkt auf einen USB-Stick oder ein SD/SDHC/MMC-Speichergerät zu schreiben und bootbar zu machen.
+					isohybrid fügt der ISO einen MBR bei und kreiert eine Partitionstabelle mit nur einem einzigen aktiven Eintrag: der Partition, die das ISO enthält.
+					Dies ermöglicht ein direktes Schreiben einer aptosid-ISO auf USB-Speichergeräte oder SDHC-Speicherkarten zusätzlich zu der bisher bekannten Methode mittels &quot;install-aptosid-to-usb&quot; (install-usb-gui).
+					Diese Option ist besonders dann von Vorteil, wenn keine existierende aptosid-Installation vorhanden ist, aber ein Installationsmedium von einer anderen Linux-Distribution oder einem Nicht-Linux-Betriebssystem erstellt werden soll.
+					Es soll auch angemerkt sein, dass diese Methode das ganze USB-Medium überschreibt und der zur Verfügung stehende Speicherplatz auf die Größe der aptosid-ISO beschränkt ist. Die Methode mit install-usb-gui hat nicht diese Beschränkungen und ist die Methode der Wahl, falls ein aptosid-System zur Verfügung steht.
+					Weitere Partitionen können erstellt werden, um Zugriff auf den unbenutzten Teil des Speichergeräts zu erhalten.
+				</p>
+<pre>
+cat /path/to/aptosid-*.iso &gt; /dev/USB_raw_device_node
+</pre>
+
+				<p>
+					Weitere Informationen über die Installation von aptosid finden Sie unter <a href="http://manual.aptosid.com/de/hd-install-de.htm">Installationsoptionen</a>.
+				</p>
+
+		<h3>Wireless regulatory domain settings (crda)</h3>
+				<p>
+
+					Auf das neue "regulatory domain Framework" für cfg80211 basierte wlan-Karten erfordern crda, um Zugriff auf wlan-Kanäle oberhalb von ch11 (2.4 GHz oder die 5 GHz-Alternativen) zu gewähren. Ohne crda sind nur die Kanäle der "world domain" (1-11) verfügbar.
+				</p>
+<pre>
+apt-get update 
+apt-get install crda
+</pre>
+		<h3>Systemstart von aptosid über ein Netzwerk</h3>
+				<p>
+					Das Booten von aptosid via PXE (Preboot Execution Environment) und NBD (Network Block Device) wird unterstützt, die benötigten Einstellungen können im Boot-Menü [F4] vorgenommen werden.
+					Anleitungen anhand eines Beispiel-Bootservers für PXE+NBD finden sich unter <a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=9">aptosid netboot introduction</a> sowie im Handbuch: <a href="nbdboot-de.htm#nbd1">Booten von aptosid über ein Netzwerk</a>.
+				</p>
+
+				<h3>UEFI-Systemstart</h3>
+				<p>
+					Unterstützung eines Systemstarts auf UEFI ist mit den amd64-Versionen von aptosid 2011-02 &quot;Ἡμέρα&quot; gegeben.
+					Die graphische Oberfläche des Installers wurde noch nicht angepasst, aber der Bootloader wird nach /efi/aptosid innerhalb der &quot;EFI-Systempartition&quot; installiert und unterhalb von /boot/efi/ auf dem installierten System eingebunden. Voraussetzungen sind:
+				</p>
+
+				<ul>
+					<li>x86-64/EM64T-System (amd64).</li>
+					<li>Systemstart unter Nutzung von UEFI, erkennbar an dem einfachen weiß-blauen Menü von Grub2 anstelle des von isolinux angebotenen graphischen Boot-Menüs des Live-Mediums.</li>
+					<li>eine mit vfat formatierte EFI-Systempartition auf einer GPT-Festplatte (Typ EF00) auf dem Zielsystem.</li>
+					<li>das Installationsmedium ist keine USB-Festplatte.</li>
+				</ul>
+
+				<p>
+					Im Augenlick wird UEFI-Systemstart nur für die 64bit-Versionen (amd64) angeboten. 32bit-UEFI (auf älteren Apple-Systemen) wird im Augenblick nicht unterstützt.
+					Multiboot mit anderen 64bit-Betriebssystemen sollte möglich sein, konnte aber nicht getestet werden.
+				</p>
+
+				<h3>UEFI - Booten auf entfernbaren Medien</h3>
+				<p>
+					Um ein entfernbares und mit UEFI bootbares Medium (z.B. einen USB-Stick) zu erstellen, kann der Inhalt auf eine mit vfat formatierte Partition entpackt und die Partition als bootbar markiert werden.
+					Es gibt auch die Option, dieses Medium auch mit dem traditionellen Systemstart auf einem PC-BIOS kompatibel zu gestalten. In unserem Beispiel ist /dev/sdz1 die Zielpartition auf dem USB-Stick:
+				</p>
+<pre>
+syslinux -i -d /boot/isolinux /dev/sdz1
+install-mbr /dev/sdz
+</pre>
+
+				<h3>Lokalisierung</h3>
+				<p>
+					Ein besonderes Merkmal von kde-full ist die Möglichkeit, andere Sprachen als Deutsch oder US-Englisch im Grub-Menü (F4) wählen zu können, womit automatisch Lokalisierungen für den Desktop und viele weitere Anwendungen bereits während des Bootens installiert werden.
+					Dies sichert, dass diese Lokalisierungen auch nach der Installation von aptosid vorhanden sind. Auch werden nur die gewünschten Sprachen This ensures they are also present after installing aptosid, while only installing the required languages for the given system.für das System installiert.
+					Der benötigte Speicher hängt von der jeweiligen Sprache ab und aptosid könnte die Installation einer Lokalisierung nicht durchführen, wenn nicht genügend RAM vorhanden ist. Ist dies der Fall, wird die Installation in englischer Lokalisierung fortgeführt, aber mit den gewünschten Lokalisierungseinstellungen für Währung, Datum/Zeit und Tastatur).
+					1 GB memory oder mehr sollten für alle Lokalisierungen und Sprachen ausreichend sein. Folgende Sprachen und Lokalisierungen werden unterstützt:
+				</p>
+
+				<ul>
+					<li>Dänisch</li>
+					<li>Englisch (AU, GB, US)</li>
+					<li>Deutsch</li>
+					<li>Französisch</li>
+					<li>Griechisch</li>
+					<li>Holländisch</li>
+					<li>Italienisch</li>
+					<li>Japanisch</li>
+					<li>Polnisch</li>
+					<li>Portugiesisch (BR und PT)</li>
+					<li>Rumänisch</li>
+					<li>Russisch</li>
+					<li>Spanisch</li>
+					<li>Tschechisch</li>
+					<li>Ukrainisch</li>
+				</ul>
+
+				<p>
+
+					Die Auswahl der Sprachen hängt vom Stand der Übersetzungen des aptosid-Handbuchs ab. Sie sind jederzeit im Handbuchteam willkommen, um für Ihre Sprache aktiv zu werden.
+					Wegen nicht ausreichender Aktualität der Übersetzungen des Handbuchs sind im Augenblick folgende Sprachen nicht mehr unterstützt:
+				</p>
+
+				<ul>
+					<li>Bulgarisch</li>
+					<li>Kroatisch</li>
+					<li>Greek</li>
+					<li>Ungarisch</li>
+				</ul>
+
+				<p>
+					Helfen Sie mit, diese Sprachen wieder nach aptosid zu bringen!
+				</p>
+
+
+	</div>
+	<div class="divider" id="upgrade">
+			<h2>Hinweise für Upgrader</h2>
+				<p>
+					aptosid bemüht sich sehr um einen nahtlosen Aktualisierungspfad für Debian- und aptosid-eigene Pakete, dennoch verbleibt manches, was manueller Nacharbeit bedarf.
+				</p>
+
+			<h3>nouveau</h3>
+
+				<p>
+					xserver-xorg-video-nv wurde von Debian entfernt. Dies bedeutet, xserver-xorg-video-nouveau übernimmt nun dessen Stelle.
+					Deshalb empfehlen wir Nutzern von nVidia-Grafikkarten die Entfernung von xserver-xorg-video-nv und die Installation von xserver-xorg-video-nouveau; Änderungen der Konfiguration sollten nicht notwendig sein.
+					Auf ausgewählten Chipsets ist grundlegende Unterstützung von Grafik- und 3D-Beschleunigung durch xserver-xorg-video-nouveau und libgl1-mesa-dri-experimental gegeben.
+				</p>
+<pre>
+apt-get install xserver-xorg-video-nouveau libgl1-mesa-dri-experimental
+</pre>
+
+				<h3>KDE 4.6 und XFCE 4.8</h3>
+				<p>
+					Eine Aktualisierung auf KDE 4.6 oder XFCE 4.8 kann zur Folge haben, dass nicht alle notwendigen Pakete installiert werden. Diese müssen manuell nachinstalliert werden.
+					Ohne diese Pakete funktionieren das Powermanagement, das Einbinden entfernbarer Medien sowie das systemweite Veränderungen von Systemeinstellungen nur teilweise.
+				</p>
+				<p>
+					Für KDE:
+				</p>
+<pre>
+apt-get install polkit-kde-1 udisks upower
+</pre>
+				 <p>
+					Für XFCE:
+				 </p>
+<pre>
+apt-get install policykit-1 policykit-1-gnome udisks upower
+</pre>
+
+			<h3>Veraltete Pakete</h3>
+				<p>
+					Im Rahmen der Weiterentwicklung von aptosid wurden einige Pakete durch bessere Alternativen ersetzt oder überflüssig.
+				</p>
+
+				<ul>
+					<li>
+						kaboom<br />
+						Das Helferprogramm der KDE3&rarr;KDE4-Migration kann nach erfolgreicher Migration entfernt werden.
+					</li>
+
+					<li>
+						modconf<br />
+						Dieses Paket wurde nach dem Release von &quot;Squeeze&quot; seitens Debian entfernt und erfüllt nun keinen Zweck mehr.
+					</li>
+				</ul>
+
+				<p>
+					Übergangspakete und veraltete Bibliotheken können oft mit &quot;deborphan&quot; festgestellt werden.
+					Deborphan ist eine sehr hilfreiche Anwendung, um ein laufendes System zu säubern, die Ausgabe des Programms sollte aber immer überprüft werden, bevor sie als Input für Deinstallationen verwendet wird.
+				</p>
+
+<pre>
+$ deborphan
+</pre>
+							<p> Der folgende Befehl ist in der Lage Pakete zu finden, die nicht länger in einem aktiven apt-Repository verfügbar sind. In Bezug auf manuell installierte Pakete ist jedoch Vorsicht geboten. apt-show-versions ist ein eigenständiges Paket und ist nicht unbedingt vorinstalliert. </p>
+<pre>
+$ apt-show-versions | awk '/No available version in archive/{print $1}'
+</pre>
+			</div>
+			<div class="divider" id="howto-involve">
+				<h2>Wie kann man mitarbeiten?</h2>
+				<p>
+					Die Mitarbeit bei aptosid ist einfach zu initiieren, kontaktieren Sie uns in unserem Forum <a href="http://aptosid.com/index.php?name=PNphpBB2">Forum</a> or - noch einfacher - in unserem IRC (irc.oftc.net, port 6667, channel <a href="irc://irc.oftc.net:6667/#aptosid">#aptosid</a>). Dort können Sie Ihre Patches und Vorschläge diskutieren.
+				</p>
+
+				<p>
+					Wir freuen uns über alle Patches und Beiträge, die den Debian-Richtlinien für freie Software entsprechen, besonders bezüglich alternativer Desktopumgebungen (GNOME, LXDE), bezüglich einer Steigerung der Effizienz und Performanz oder bezüglich Übersetzung und Lokalisierung.
+				</p>
+			</div>
+			<div class="divider" id="roadmap">
+				<h2>Roadmap:</h2>
+				<p>
+					Wir bitten um Verständnis, dass folgende Roadmap nur einen groben Veröffentlichungsplan darstellt, der vom Status, in dem sich Debian Sid, wichtige Systemkomponenten wie X.org, KDE, der Linux-Kernel sowie Eigenentwicklungen befinden, abhängig ist und daher Veränderungen ausgesetzt sein kann.
+				</p>
+	
+				<ul>
+					<li>
+						Θάνατος - Thánatos
+					</li>
+
+					<li>
+						Ἑσπερίδες - Hesperides
+					</li>
+
+					<li>
+						Νέμεσις - Nemesis
+					</li>
+
+					<li>
+						Φιλότης - Philotes
+					</li>
+				</ul>
+			</div>	
+			<div id="rev">Content last revised 01/01/2012 1230 UTC </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,550 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="da" lang="da">
+<head>
+	<title>aptosid Manuals - Hard Disk Istallation</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision by ragupo 27/01/2011 1905 UTC -->
+<!--htdig_noindex--><div id="menu"> <!-- menu starts here en lang maintained by ragupo-->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="Tilbage til aptosid.com forums og wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-da.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" />Søg online - offline</a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Vælg et andet sprog - Choose another language CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="lang-switch CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-da.htm">aptosid OS Manual</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-da.htm#welcome-gen">aptosid OS Manual &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-da.htm#cred-team">Tak til</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-da.htm#how-to">Hvordan du anvender denne manual &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-da.htm#how-to">Hvordan du anvender denne manual</a></li>
+					  <li><a href="welcome-da.htm#table-contents">Inholdsfortegnelse</a></li>
+					</ul>
+					</li>
+		<li><a href="help-da.htm#help-gen">Sådan får du hjælp &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-da.htm#help-gen">Hvor og hvordan får du hjælp</a></li>
+					  <li><a href="help-da.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-da.htm#welcome-quick">aptosid Hurtig Start Guide</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-da.htm">ISO indhold, udgivelser, filspejle og cd-brænding</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-da.htm#cd-content">ISO indhold og systemkrav &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-da.htm#rolling">Bemærkninger til udgivelsen</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-da.htm#download-aptosid">aptosid filspejle, download og cd-brænding &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-da.htm#md5">md5 Checksum</a></li>
+					  <li><a href="cd-dl-burning-da.htm#burn-nero">cd-brænding i Windows</a></li>
+					  <li><a href="cd-dl-burning-da.htm#burn-linux">cd-brænding i Linux</a></li>
+					  <li><a href="cd-no-gui-burn-da.htm#burning-no-gui">burniso skript</a></li>
+					  <li><a href="cd-no-gui-burn-da.htm#burn-no-gui-gen">cd-brænding uden grafisk brugerflade</a></li>
+					  <li><a href="cd-dl-burning-da.htm#download-aptosid">aptosid download filspejle</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-da.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-da.htm#rootpw">Root-kodeord på aptosid Live ISO</a></li>
+				<li><a href="live-mode-da.htm#live-cd-installsoft">Installering af programmer under Live-ISO</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-da.htm">Terminalen</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-da.htm#term-kon"> Terminal &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-da.htm#term-kon"> Terminalen</a></li>
+					  <li><a href="term-konsole-da.htm#colours"> Farver i terminal-prompten</a></li>
+					  <li><a href="term-konsole-da.htm#cli-help">Hjælp til kommandolinien</a></li>
+					  <li><a href="help-da.htm#init3-tools">Nyttige værktøjer til text mode (tty) - init 3</a></li>
+					  <li><a href="term-konsole-da.htm#term-cmds">Linux Terminal kommando liste</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-da.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-da.htm">CheatCodes</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-da.htm#cheatcodes">aptosid specifikke Live-ISO Cheatcodes</a></li>
+				<li><a href="cheatcodes-da.htm#cheatcodes-linux">Linux generiske Cheatcodes</a></li>
+				<li><a href="cheatcodes-vga-da.htm#vga">VGA Codes</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-da.htm">Partitioning the Hard Drive - Traditional, GPT and LVM</a>
+		    <ul class="sub-menu" id="sm6">
+			  <li><a href="part-gparted-da.htm#hd-ntfs3g">Skriv til NTFS partitioner med ntfs-3g</a></li>
+			<li><a href="part-lvm-da.htm#part-lvm">Partitionering med anvendelse af LVM - Logical Volume Manager</a></li>
+			<li><a href="part-gparted-da.htm#partition">Partitionering med grafisk brugerflade &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-da.htm#partition">Partitionering af din harddisk med GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-da.htm#ntfs">Ændre størrelsen på NTFS partitioner med GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-da.htm#partition">Partitionering fra kommandolinien &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-da.htm#partition">Partitionering af harddisken med cfdisk</a></li>
+					    <li><a href="part-cfdisk-da.htm#formating">Formattering efter partitionering med cfdisk</a></li>
+					    <li><a href="part-gdisk-ca.htm#gdisk-6">Formatting after partitioning with gdisk</a></li>
+					    <li><a href="part-gdisk-da.htm#gdisk-1">GPT Partitioning with gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-da.htm#part-example">Basal partitionering &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-da.htm#part-example">Eksempler på partitionsstørrelser</a></li>
+					  <li><a href="part-uuid-da.htm#uuid">UUID, Genopbygning af fstab og oprettelse af nye monteringspunkter</a></li>
+					  <li><a href="part-cfdisk-da.htm#disknames">Nomenklatur for diske og partitionsnavngivning</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-da.htm">Installations muligheder - HD, USB, VM og Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-da.htm#Inst-prep">Forberedelser til installationen &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-da.htm#Inst-prep">Installations forberedelser</a></li>
+					  <li><a href="hd-install-da.htm#Installation">Installering til harddisken</a></li>
+					  <li><a href="hd-install-da.htm#first-hd-boot">Første opstart</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-da.htm#fromiso">Opstart fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-da.htm#fromiso">Opstart fromiso - Overblik</a></li>
+					  <li><a href="hd-install-opts-da.htm#grub2-fromiso">Opstart 'fromiso' med Grub 2</a></li>
+					  <li><a href="hd-install-opts-da.htm#fromiso-persist">Fromiso og persist</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-da.htm#usb-hd">Installering til USB drev &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-da.htm#usb-hd">Installering til en USB-HD - aptosid specific - aptosid-on-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-da.htm#raw-usb">Installering af aptosid til USB/SSD nøgle fra Linux, MS Windows eller Mac OS X systemer</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-da.htm#install-crypt">Installering på krypterede partitioner - cryptroot</a></li>
+		  <li><a href="nbdboot-da.htm#nbd1">Boote aptosid over netværketk</a></li>
+		  <li><a href="hd-install-vmopts-da.htm#vmopts">Virtual Machine installations muligheder</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-da.htm">Grafikkort, Monitors, Xorg &amp; drivere</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-da.htm#mon-res">Skærmopløsning og monitors  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-da.htm#mon-res">Skærm opløsning og monitors</a></li>
+					  <li><a href="hw-dev-mon-da.htm#xrandr">Dual Monitors og xrandr</a></li>
+					  <li><a href="hw-dev-mon-da.htm#mon-binary">Dual Monitors (med binære drivere)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-da.htm#foss-xorg">GPU drivers &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-da.htm#ati-3d">AMD/ATI 3D drivere</a></li>
+					  <li><a href="gpu-da.htm#intel">Intel 2D and 3D drivere</a></li>
+					  <li><a href="gpu-da.htm#nvidia">Nvidia 3D drivere</a></li>
+					  <li><a href="gpu-da.htm#foss-xorg">Open Source Xorg drivere</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-da.htm#fw-detect">Firmware detection - non-free </a></li>
+			  <li><a href="nf-firm-da.htm#non-free-firmware">Tilføj non-free til kildelisten </a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-da.htm#install-add">Window Managers</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-da.htm">KDE and XFCE Window Managers &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-da.htm#xfce-notes">Nyttige Xfce ekstras</a></li>
+					    <li><a href="wm-dm-da.htm#install-add">Nyttige ekstra KDE Apps</a></li>
+					    <li><a href="wm-dm-da.htm#desk-freeze">Skrivebordet fyser</a></li>
+					    <li><a href="wm-dm-da.htm#kde-login">ingen login i KDE mulig</a></li>
+					    <li><a href="wm-dm-da.htm#ch-th">Ændre Themes</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-da.htm#dm">Installing additional Display Managers</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-da.htm">Internet forbindelse, WiFi, LAN og Netwærk</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-da.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-da.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-da.htm#serv-ftp">FTP klienter</a></li>
+					    <li><a href="lamp-apache-da.htm#serv-sec">Sikkerheds protocoller</a></li>
+					    <li><a href="lamp-apache-da.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-da.htm#serv-mysql">MySQL opsætning</a></li>
+					    <li><a href="lamp-ppp-da.htm#serv-php">PHP i Apache</a></li>
+					    <li><a href="ntp-server-da.htm#ntp-server">Opsætning af timeserver</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-da.htm#privoxy">Firewalls og Privatliv &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-da.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-da.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-da.htm#firewalls">Firewalls</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-da.htm#ssh-x">SSH og Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-da.htm#setup">Samba-Server opsætning</a></li>
+						  <li><a href="samba-da.htm#configure">Konfiguration af SAMBA (Windows)</a></li>
+						  <li><a href="ssh-da.htm#ssh-fs">SSH Remote Mounting</a></li>
+						  <li><a href="ssh-da.htm#ssh-x">X Window Apps via SSH</a></li>
+						  <li><a href="ssh-da.htm#ssh-f">GUI SSH med Konqueror</a></li>
+						  <li><a href="ssh-da.htm#ssh-w">SSH X-Forwarding fra en Windows-PC</a></li>
+						  <li><a href="ssh-da.htm#ssh">SSH og sikkerhed</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-da.htm#netcardconfig">WIFI forbindelser &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-da.htm#netcardconfig">Kom online - Ceni</a></li>
+						    <li><a href="inet-wpagui-da.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-da.htm#net-set1">WiFi - opsætning af WiFi Roaming</a></li>
+						    <li><a href="inet-wpa-da.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-da.htm#hotswitch">Skift imellem kablet og trådløs forbindelse</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-da.htm#netcardconfig">Kablede forbindelser &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-da.htm#dial-mod">56k Modems</a></li>
+						    <li><a href="inet-ceni-da.htm#netcardconfig">kom online - Ceni</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-da.htm#fw-detect">Firmware detection - non-free </a></li>
+		<li><a href="nf-firm-da.htm#non-free-firmware">Tilføj non-free til kildelisten </a></li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-da.htm">Pkke administration og dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-da.htm#apt-cook">APT Cookbook og Sources list &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-da.htm#apt-cook">APT-Guide Cookbook og Sources list</a></li>
+					    <li><a href="sys-admin-apt-da.htm#apt-install">Installation af nye pakker</a></li>
+					    <li><a href="sys-admin-apt-da.htm#apt-delete">Afinstaller pakker</a></li>
+					    <li><a href="sys-admin-apt-da.htm#apt-downgrade">Pakke på Hold og nedgradering</a></li>
+					    <li><a href="sys-admin-apt-da.htm#apt-cache">Søgning efter pakker med apt-cache</a></li>
+					    <li><a href="sys-admin-apt-da.htm#gui-pacsea">Søgning after pakker i GUI</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-da.htm#kern-upgrade">Opdatering af kernel &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-da.htm#kern-remove">Fjernelse af Kernels</a></li>
+					    <li><a href="sys-admin-kern-upg-da.htm#kern-upgrade">Opdatering af kernel</a></li>
+					    <li><a href="sys-admin-kern-upg-da.htm#dmakms">Dynamisk installering af kernel moduler med dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-da.htm#apt-upgrade">Opdatering af installeret systemet -  dist-upgrade - Overblik &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-da.htm#live-cd-upgrade">Opdatering med Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-da.htm#approx">dist-upgrade af flere PCer på et LAN</a></li>
+					    <li><a href="sys-admin-apt-da.htm#apt-upgrade">opdatere et installeret system -  dist-upgrade - Overblik</a></li>
+					    <li><a href="sys-admin-apt-da.htm#du-st">Opdater et installeret system -  dist-upgrade - Trinvis guide</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-da.htm">System Administration</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-da.htm#bois-prep">Opdatering af BIOS med FreeDOS</a></li>
+		<li><a href="vir-rkits-da.htm#virus-rkits">Virus og Rootkit Skannere</a></li>
+		<li><a href="hd-install-da.htm#adduser">Tilføje brugere og kodeord &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-da.htm#adduser">Tilføj en ny bruger</a></li>
+					    <li><a href="sys-admin-gen-da.htm#pw-lost">Mistet root kodeord, nye kodeord</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-da.htm#start-services">Tjenester og init runlevels &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-da.htm#start-services">Tjenester aktiver/deaktiver</a></li>
+					    <li><a href="sys-admin-gen-da.htm#pkill">Killing a service or process</a></li>
+					    <li><a href="sys-admin-gen-da.htm#init">aptosid runlevels - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-da.htm#rsync">Sikkerhedskopi af systemet &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-da.htm#rdiff">Sikkerhedskopi med rdiff</a></li>
+					    <li><a href="sys-admin-rsync-da.htm#rsync">Sikkerhedskopi med rsync</a></li>
+					    <li><a href="home-da.htm#home-bu">Flytte /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-da.htm#fonts">CUPS, Fonte og Lyd &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-da.htm#fonts">Fonte</a></li>
+					     <li><a href="sys-admin-gen-da.htm#cups">CUPS - Print System</a></li>
+					     <li><a href="sys-admin-gen-da.htm#sound">Lyd Mixers</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-da.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-da.htm#chroot">Grub2 - Gneopret Grub med chroot</a></li>
+					    <li><a href="sys-admin-grub2-da.htm#mbr-over-grub2">Grub2 - MBR overskrevet</a></li>
+					    <li><a href="sys-admin-grub2-da.htm#multi-os">Grub2 - Dual og Multibooting</a></li>
+					    <li><a href="sys-admin-grub2-da.htm#grub1-grub2">Grub2 -Opgradering fra Grub1</a></li>
+					    <li><a href="sys-admin-grub2-da.htm#grub2">Grub2 - Overblik</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Sponsored by webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid is proudly hosted by webtropia.com" alt="aptosid is proudly hosted by webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+	<div class="divider" id="Inst-prep">
+			<h2 id="top-header">Harddisk installations forberedelser</h2>
+							<p  class="highlight-2">Til normal brug anbefaler vi partitionsformatet ext4, det er standard fil-systemet i aptosid, og det bliver vedligeholdt.</p>
+
+
+							<p><span class="highlight-3">Fjern venligst alle usb-nøgler, kameraer osv. inden du starter installationen</span>. <a href="hd-install-opts-da.htm">Installation på USB enheder kræver en anden fremgangsmåde.</a>  Du kan også ændre i installationsprogrammets konfigurationsfil: <span class="highlight-3">~/.sidconf</span>, og derved ændre typen af filsystem, eller dele din installation ud over flere partitioner. Du kan for eksempel oprette et separat /home.</p>
+
+					<h6>Re-installering af programmer eller duplikering af installerede programmer til anden maskine</h6>
+							<p>For at oprette en liste over de installerede programmer således at denne liste kan anvendes til at enten gen-installere disse programmer eller til at installere programmerne på en anden maskine, skriver du følgende i en konsol:</p>
+<pre>
+dpkg -l|awk '/^ii/{ print $2 }'|grep -v -e ^lib -e -dev -e $(uname -r) >/home/brugernavn/installed.txt
+</pre>
+							<p>Du kan så kopiere denne liste til en usb-nøgle eller lignende.</p>
+
+							<p>På den maskine hvor du vil installere programmerne i listen skal du nu kopiere tekst filen til $HOME (din hjemmemappe) og anvend den som reference for at installere de ønskede pakker.</p>
+
+					<h5>RAM og Swap</h5>
+
+							<p>På en PC med mindre end 512 MB ram skal du have en swap partition. Størrelsen burde ikke være mindre end 128 MB (du kan ikke bruge cfdisk til at beregne dette da  programmet anvender decimal-base). Mere end 1 GB swap er sjældent nødvendig og giver kun mening hvis det anvendes med suspend-to-disk eller på servere.</p>
+
+							<p class="highlight-1">Se også: <a href="part-gparted-da.htm">Partitionering af harddiske</a></p>
+
+							<p><span class="highlight-2">TAG ALTID EN SIKKERHEDSKOPI AF DINE VIGTIGE DATA!</span> Se <a href="sys-admin-rdiff-da.htm#rdiff">Back-Up with rdiff</a> og <a href="sys-admin-rsync-da.htm#rsync">Back-Up with rsync</a>. En anden mulighed er sbackup (kræver installation).</p>
+
+							<p>Udover at være ganske mageligt giver en harddisk installation dig den fordel at det er væsentligt hurtigere end at køre systemet fra CD.</p>
+
+							<p>Først skal du sikre dig at boot-rækkefølgen i din bios er sat op således at maksinen booter CD-ROM enheden først. På de fleste computere kommer du ind i bios ved at trykke på [del] tasten under opstartsfasen (med nogle BIOS-versioner kan du selv bestemme boot-enheden i opstartsfasen, for eksempel AMI-BIOS, -her bruges enten F11 eller F8).</p>
+
+							<p>aptosid-CD'en burde starte uden problemer herefter. Hvis ikke det er tilfældet, kan det være at der er nogle boot-parametre der skal ændres. Bootoptions (kaldes også cheatcodes) er ekstra kommandoer man kan skrive i bootmanagerens kommandolinie, disse bevirker at visse boot-parametre ændres. Nogle boot-parametre (for eksempel til skærmopløsning eller valg af sprog som lang=de, lang=dk, lang=en eller lang=es) kan tilmed spare dig tid med konfigurationen af systemet efter selve installationen. Se også <a href="cheatcodes-da.htm">Cheatcodes</a> og <a href="cheatcodes-vga-da.htm">VGA Opløsning</a></p>
+
+			<h2>Vælg sprogindstillinger for din installation</h2>
+				<h6><span class="highlight-3">Sproglige indstillinger er tilgængelige med KDE-full </span></h6>
+
+							<p>Vælg dit hovedsprog fra <span class="highlight-2">gfxboot menuen (F4)</span> i <span class="highlight-3">kde-full release</span>, for derved at installere localisations til desktopen samt til mange af programmerne. </p>
+
+							<p>Dette sikrer at det valgte sprog også er tilgængeligt efter installation af aptosid, og begrænser samtidigt udvalget af tilgængelige sprog. Mængden af hukommelse der er nødvendig for dette afhænger af det valgte sprog og aptosid kan nægte at installere givne sprogpakker ved utilstrækkelig mængde RAM og dernæst fortsætte opstartssekvensen i engelsk, dog med de ønskede locales indstillinger (møntfod, dato- og tids-format, tastatur). 1 GB RAM eller mere skulle være tilstrækkeligt for alle tilgængelige sprog, og disse er:</p>
+
+							<p>
+   							Default - Deutsch (German) <br />
+							Default - English (English-US)<br />
+							*Bulgarian (Bulgarian)<br />
+							*Dansk (Danish)<br />
+    							*Español (Spanish)<br />
+    							*English (GB)<br />
+    							*Français (French)<br />
+    							*Italiano (Italian)<br />
+							*Magyar (Hungarian)<br />
+    							*Nihongo (Japanese)<br />
+    							*Nederlands (Dutch)<br />
+    							*Polski (Polish)<br />
+    							*Português (Portuguese BR and PT)<br />
+    							*Română (Romanian)<br />
+    							*Russian (Russian)<br />
+							*Українська (Ukrainian) <br />
+							</p>
+
+   							<p>De mulige valg afhænger af tilgængeligheden af oversættelser af aptosid-manualen, involver dig hvis du vil se dit sprog på listen!</p>
+
+					<h6><span class="highlight-3">Andet sprog installation med KDE-lite </span></h6>
+						<ol>
+							<li>Vælg dit hovedsprog fra <span class="highlight-2">grub menuen (F4)</span>. (Se også <a href="cheatcodes-da.htm#cheatcodes">aptosid specifikke Live-CD Cheatcodes</a>). Sprogfilerne er ikke fysisk på Live-CDen så systemet vil falde tilbage på standarden som er engelsk. Dit valg vil dog være gemt og konfigurationer med det valgte sprog vil blive oprettet, og det eneste der herefter mangler er installationen af selve sprogpakkerne.</li>
+
+							<li> Start installationen.</li>
+
+							<li>Installer til harddisk og genstart.</li>
+
+							<li>Efter harddisk installation kan du installere sprogpakker efter dit valg og programmer med apt-get.</li>
+
+						</ol>
+
+					<h6>Første opstart fra harddisken</h6>
+							<p><span class="highlight-3">After opstarten fra harddisken vil du opdage at aptosid har glemt sine netværksindstillinger.</span> Netværket kan ganske komfortabelt konfigureres med programmet ceni, det finder du her <a href="inet-ceni-da.htm">Kmenu > Internet > Ceni</a>. For yderligere information omkring WIFI/WLAN roaming<a href="inet-wpagui-da.htm"> læs venligst videre her.</a></p>
+
+	</div>
+	<div class="divider" id="Installation">
+				<h2>aptosid installationsprogrammet</h2>
+
+							<p><b>1.</b> Installationsprogrammet startes fra <span class="highlight-3"> Skrivebordsikon, KMenuen> System>aptosid-installer</span>, eller via konsollen med følgende kommando:</p>
+<pre>
+install-gui.bash
+</pre>
+		<div class="screenshot"><img src="../lib/images-da/installer-da/installer1-da.png" title="Welcome tab - aptosid Installer" alt="aptosid-Installer1" /></div>
+	<div class="spacer02"></div>
+							<p><b>2.</b> Efter at have læst og forstået advarslen, er næste punkt valg af partition. </p>
+
+		<div class="screenshot"><img src="../lib/images-da/installer-da/installer2-da.png" title="Partitioning tab - aptosid Installer" alt="aptosid-Installer2" /></div>
+
+							<p>Vælg hvor installtionen skal placeres og etabler monteringspunkterne. Partitioner som du ikke etablerer monteringspunkter for vil blive automountede (swap partitionen vil altid automatisk blive monteret når systemet starter). </p>
+
+							<p><span class="highlight-2">BEMÆRK: Hvis du allerede har formateret din rod-partition ('/") med dit foretrukne filsystem, så kan du afkrydse boksen med "formater med", forudsat at dropboksen gengiver filsystemet du har valgt.</span></p>
+
+							<p>Nu skal der vælges en partition til installationen, og oprettes monteringspunkter. Partitioner som du ikke selv opretter monteringspunkter for vil blive tildelt monteringspunkter fra installationsprogrammet. For root-partitionen ("/") <b>skal</b> der operttes et monteringspunkt. Det er også i denne menu at du kan vælge at oprette $HOME på en separat partition. <span class="highlight-1"> Et 'venstre-klik' vil aktivere dine valg for hver partition.</span></p>
+
+			<p class="highlight-3">HAR DU TAGET EN SIKKERHEDSKOPI AF DINE VIGTIGE DATA?</p>
+
+							<p>Hvis du ikke har partitioneret din harddisk endnu, skal du klikke <span class="highlight-3">start-part-manager</span> knappen, eller læse her <a href="part-cfdisk-da.htm">Partitionering af harddiske</a> og <a href="part-gparted-da.htm">Partitionering af harddiske med Gparted</a> Du kan også starte programmerne fra et terminalvindue/ konsollen</p>
+<pre>
+sux
+gparted
+</pre>
+		<p>eller</p>
+<pre>
+su
+cfdisk
+</pre>
+	<div class="spacer02"></div>
+							<p><b>3.</b> Som bootmanager bruger aptosid GRUB, installer derfor <b>Grub til MBR</b>! Hvis du vælger noget andet end <b>GRUB til MBR</b>, så bør du være 100% sikker på at du forstår hvad det betyder.</p>
+
+							<p>GRUB genkender andre installerede operativ systemer (f.eks. Windows) og tilføjer disse til boot-menuen. </p>
+
+							<p>Du kan også indstille tidszonen i dette vindue.</p>
+
+		<div class="screenshot"><img src="../lib/images-da/installer-da/installer3-da.png" title="Grub/Timesone tab - aptosid Installer" alt="grub-to-mbr" /></div>
+	<div class="spacer02"></div>
+							<p><b>4.</b> Det næste er bruger, password og root-password (husk dem!). Vælg ikke alt for simple passwords. Hvis du gerne vil tilføje yderligere brugere så gør du det efter installationen via terminalen med kommandoen<a href="hd-install-da.htm#adduser"> adduser.</a>.</p>
+
+		<div class="screenshot"><img src="../lib/images-da/installer-da/installer4-da.png" title="User/Password tab - aptosid Installer" alt="choosing-pw" /></div>
+	<div class="spacer02"></div>
+							<p><b>5.</b> Vælg nu navnet på maskinen (hostname), -der er frit valg sålænge du kun anvender bogstaver og tal, og ikke starter med et tal.</p>
+
+							<p>Herefter kan du nu vælge om shh skal starte automatisk.</p>
+
+		<div class="screenshot"><img src="../lib/images-da/installer-da/installer5-da.png" title="Network tab - aptosid Installer" alt="hostname" /></div>
+
+	<div class="spacer02"></div>
+							<p><b>6.</b> Dette er den sidste chance for at rette de parametre du har valgt. Læs det omhyggeligt igennem inden du fortsætter ved at klikke på <span class="highlight-3">Gem Konfiguration og Næste</span>..</p>
+
+		<div class="screenshot"><img src="../lib/images-da/installer-da/installer6-da.png" title="Installation tab - aptosid Installer" alt="installation-config" /></div>
+
+							<p>Ved dette punkt er det muligt at ændre/ redigere i konfigurationsfilen og så starte installationen med den ændrede konfiguration. Installationsprogrammet foretager ingen kontrol af ændringerne, og <span class="highlight-3">du må ikke klikke på 'tilbage' da dine manuelt indtastede ændringer så vil gå tabt.</span> </p>
+
+							<p>Redigering af (<span class="highlight-3">~/.sidconf</span>) er for erfarne linux-brugere, der vil skrive deres specielle ændringer til konfigurationsfilen, eller som har specielle partition indstillinger på deres harddiske, der ellers ville blive forkastet af installationsværktøjets automatiske kontrol.</p>
+
+							<p><span class="highlight-2">Hvis installationsprogrammet opdager at du forsøger at installere oveni en gammel $HOME vil det advare dig og ikke tillade at installationen fortsætter før du har valgt et andet brugernavn.</span></p>
+
+		<div class="screenshot"><img src="../lib/images-da/installer-da/installer7-da.png" title="Begin Installation - aptosid Installer" alt="Begin Installtion" /></div>
+
+							<p>For at starte installationen, klik på <span class="highlight-3">Begynd Installation</span>  Hele processen tager, afhængigt af dit system, mellem 5 - 15 minutter, på ældre maskinen kan det tage så lang tid som 60 minutter.</p>
+
+							<p>Selv hvis bjælken der viser processens fremadskriden ikke bevæger sig en tid, skal du ikke straks afbryde installationen, det er helt normalt, bare giv det lidt tid.</p>
+
+							<p>Færdig! Tag cd'en ud af dit drev, og genstart til din harddisk installation.</p>
+
+
+
+	</div>
+
+	<div class="divider" id="first-hd-boot">
+			<h2>Første Opstart</h2>
+
+							<p class="highlight-4">Efter den første opstart vil du opdage at indstillingerne til internetforbindelsen er nulstillede. Så du skal rekonfigurere dit netværk (Wlan, Modem, ISDN,...).</p>
+
+							<p>Hvis du før automatisk fik tildelt en netværksadresse (DHCP) fra f. eks. en router, skal du reaktivere dette med følgende kommando:</p>
+<pre >
+ceni
+</pre>
+
+							<p>Værktøjerne til internetforbindelse findes stadig i <i>Kmenu>aptosid>Internet>ceni</i>. Se også: <a href="inet-ceni-da.htm">Internet og Netværk</a></p>
+
+							<p>For at tilføje en eksisterende aptosid $home partition til en ny installation skal fstab ændres, se venligst <a href="home-da.htm#home-move">Flytte /home</a>.</p>
+
+							<p> <span class="highlight-2">Brug eller del ikke er eksisterende $home med eller fra en anden distribution eftersom $home konfigurationsfilerne kan konflikte hvis du anvender det samme brugernavn i flere forskellige distributioner.</span></p>
+
+	</div>
+	<div class="divider" id="adduser">
+	<h2>For at tilføje brugere til din installation</h2>
+							<p>For at tilføje en <span class="highlight-3">ny bruger</span> med automatisk gruppe tilladelser sat op, skal du som root skrive følgende kommando: </p>
+<pre>
+adduser &lt;newuser&gt;
+</pre>
+							<p>Bare tryk retur, det skulle tage vare på kompleksiteterne. Du vil blive spurgt efter kodeordet to gange.</p>
+
+							<p>aptosid specifikke ikoner (som manualen og IRC ikonerne) skal tilføjes manuelt om ønsket. Hertil skal du <span class="highlight-3">højreklikke</span> programmerne i kmenuen for at tilføje dem til skrivebordet.</p>
+
+							<p>For at slette en bruger</p>
+<pre>
+deluser &lt;user&gt;
+</pre>
+							<p>Læs desuden</p>
+<pre>
+man adduser
+man deluser
+</pre>
+							<p>Programmet <span class="highlight-3">kuser</span> kan også anvendes til at oprette nye brugere, men hvis du anvender dette program skal du manuelt oprette gruppe tilladelserne.</p>
+
+	</div>
+	<div class="divider" id="sux">
+	<h2>Om sux</h2>
+						<p>Mange kommandoer skal afvikles med root privilegier. For at opnå root privilegier taster du:</p>
+<pre>
+sux
+</pre>
+
+							<p>Den almindelige kommando til at opnå root rettigheder er 'su', men hvis du istedet bruger <span class="highlight-3">sux</span> tillader det dig at afvikle GUI / X11 applikationer fra kommandolinien og gør root i stand til at starte grafiske programmer. <span class="highlight-3">sux</span> er en wrapper omkring standard kommandoen 'su', som overfører dine X rettigheder til målbrugeren.</p>
+
+							<p>Some KDE applications require <span class="highlight-3">dbus-launch</span> in front of the application:</p>
+<pre>
+dbus-launch &lt;Application&gt;
+</pre>
+
+							<p>Eksempler på afvikling af en X11 applikation via sux: Anvendelse af en teksteditor som kate eller kwrite til at redigere en fil der ejes af root; partitionering med gparted; eller en Xapp fil manager som konqueror. Du kan også ændre filer ejet af root ved at højre-klikke på dem og vælge Handlinger>Edit as root og så indtaste dit root password. Denne kommando virker ved at kalde kdesu i baggrunden.</p>
+
+							<p>Ulig 'sudo', betyder dette at ingen kan komme forbi din maskine, taste 'sudo' og udføre potentielt skadigelige ændringer på dit system.</p>
+
+							<p class="highlight-2">ADVARSEL: Når du er logget ind som root er der ikke noget der stopper dig i at udføre potentielt skadelige ændringer, som at slette essentielle system-filer. Su skal derfor være helt sikker på at du ved hvad det er du gør, for det er fuldt muligt at rette ubodelig skade på systemet når du er root.</p>
+
+							<p class="highlight-2">Du bør under ingen omstændigheder starte applikationer som root for at udføre trivielle ting som at sende mails, surfe på nettet, eller skrive dokumenter!</p>
+	</div>
+	<div id="rev">Page  last revised 24/07/2012 1300 UTC</div>
+
+</div>
+</body>
+</html>

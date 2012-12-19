@@ -1,0 +1,390 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+	<title>Руководство aptosid - Tor-Privoxy</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+	<style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+	<style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+	<script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision by polix 23/11/2011 1000 UTC-->
+<!--htdig_noindex--><div id="menu"> <!-- menu starts here - ru language maintained by RoEn -->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="Главная страница aptosid.com, форума и вики" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-ru.htm#search-on"><img src="../lib/logos/manual-search-22x22.png" title="Поиск в руководстве" alt="Search" /> Варианты поиска</a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Выбор языка - Choose another language CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="Переключение языка CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-ru.htm">Руководство aptosid</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-ru.htm#welcome-gen">Добро пожаловать! &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-ru.htm#cred-team">Благодарности</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-ru.htm#how-to">Об использовании &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-ru.htm#how-to">Об использовании</a></li>
+					  <li><a href="welcome-ru.htm#table-contents">Содержание</a></li>
+					</ul>
+					</li>
+		<li><a href="help-ru.htm#help-gen">Получение помощи &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-ru.htm#help-gen">Где получить помощь</a></li>
+					  <li><a href="help-ru.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-ru.htm#welcome-quick">Краткое руководство aptosid</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-ru.htm">Содержание ISO-образа, выпуски, список зеркал и запись</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-ru.htm#cd-content">Содержание ISO-образа и системные требования &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-ru.htm#rolling">Замечания к релизу</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-ru.htm#download-aptosid">Список зеркал, скачивание ISO-образа и запись &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-ru.htm#md5">Проверка ISO-образа с md5</a></li>
+					  <li><a href="cd-dl-burning-ru.htm#burn-nero">Запись ISO-образа в Windows</a></li>
+					  <li><a href="cd-dl-burning-ru.htm#burn-linux">Запись ISO-образа в Linux</a></li>
+					  <li><a href="cd-no-gui-burn-ru.htm#burning-no-gui">Скрипт burniso</a></li>
+					  <li><a href="cd-no-gui-burn-ru.htm#burn-no-gui-gen">Запись ISO-образа в консоли</a></li>
+					  <li><a href="cd-dl-burning-ru.htm#download-aptosid">Список зеркал</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-ru.htm">Режим ISO-образа</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-ru.htm#rootpw">Пароль root на ISO-образе</a></li>
+				<li><a href="live-mode-ru.htm#live-cd-installsoft">Установка ПО на ISO-образе</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-ru.htm">Терминал и оболочка</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-ru.htm#term-kon">Терминал и оболочка &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-ru.htm#term-kon">Терминал и оболочка</a></li>
+					  <li><a href="term-konsole-ru.htm#colours"> Цветная подсказка в терминале</a></li>
+					  <li><a href="term-konsole-ru.htm#cli-help">Помощь в терминале</a></li>
+					  <li><a href="help-ru.htm#init3-tools">Полезные инструменты в текстовом режиме (tty) - init 3</a></li>
+					  <li><a href="term-konsole-ru.htm#term-cmds">Команды в терминале</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-ru.htm#sux">Команда: sux/sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-ru.htm">Чит-коды</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-ru.htm#cheatcodes">Особые для ISO-образа aptosid чит-коды</a></li>
+				<li><a href="cheatcodes-ru.htm#cheatcodes-linux">Общие для параметров ядра чит-коды</a></li>
+				<li><a href="cheatcodes-vga-ru.htm#vga">Общие для видеокарты коды</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-ru.htm">Разбиение жесткого диска - по старому, GPT и LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-ru.htm#hd-ntfs3g">Запись на раздел NTFS с ntfs-3g</a></li>
+			<li><a href="part-lvm-ru.htm#part-lvm">Разметка с использованием LVM - Logical Volume Manager</a></li>
+			<li><a href="part-gparted-ru.htm#partition">Разметка диска с интерфесом &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-ru.htm#partition">Разметка диска с gparted/KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-ru.htm#ntfs">Разделы NTFS с gparted/KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-ru.htm#partition">Примеры разметки диска в консоли &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-ru.htm#partition">Разметка диска с cfdisk</a></li>
+					    <li><a href="part-cfdisk-ru.htm#formating">Форматирование разделов с cfdisk</a></li>
+					    <li><a href="part-gdisk-ru.htm#gdisk-6">Форматирование после разметки с gdisk</a></li>
+					    <li><a href="part-gdisk-ru.htm#gdisk-1">Разбиение по GPT с gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-ru.htm#part-example">Разметка диска - обзор &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-ru.htm#part-example">Примеры разметки диска</a></li>
+					  <li><a href="part-uuid-ru.htm#uuid">UUID, восстанавление fstab и создание новых точек монтирования</a></li>
+					  <li><a href="part-cfdisk-ru.htm#disknames">Имена жестких дисков</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-ru.htm">Установка aptosid на HD, USB, VM и шифрованные разделы</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-ru.htm#Inst-prep">Подготовка установки &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-ru.htm#Inst-prep">Подготовка установки</a></li>
+					  <li><a href="hd-install-ru.htm#Installation">Инсталляция на HD</a></li>
+					  <li><a href="hd-install-ru.htm#first-hd-boot">Первая загрузка</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-ru.htm#fromiso">Загрузка 'fromiso' &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-ru.htm#fromiso">Загрузка 'fromiso' - обзор</a></li>
+					  <li><a href="hd-install-opts-ru.htm#grub2-fromiso">Загрузка 'fromiso' с grub 2</a></li>
+					  <li><a href="hd-install-opts-ru.htm#fromiso-persist">Способы 'fromiso' и 'persist'</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-ru.htm#usb-hd">Инсталляция на USB &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-ru.htm#usb-hd">Инсталляция на USB-HD - способ aptosid -  aptosid-на-флешки</a></li>
+					  <li><a href="hd-ins-opts-oos-ru.htm#raw-usb">Запись aptosid на USB/SSD с помощью другого Linux, MS Windows или Mac OS</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-ru.htm#install-crypt">Установка на шифрованные разделы - cryptroot</a></li>
+		  <li><a href="nbdboot-ru.htm#nbd1">Загрузка aptosid по сети</a></li>
+		  <li><a href="hd-install-vmopts-ru.htm#vmopts">Опции инсталляций на VM (Virtual Machine)</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-ru.htm">Оборудование в Xorg и разные драйверы</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-ru.htm#mon-res">Разрешение экрана и мониторы  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-ru.htm#mon-res">Разрешение экрана и мониторы</a></li>
+					  <li><a href="hw-dev-mon-ru.htm#xrandr">Двойные экраны и xrandr</a></li>
+					  <li><a href="hw-dev-mon-ru.htm#mon-binary">Двойные экраны (используя двоичные файлы)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-ru.htm#foss-xorg">Микропрограммное обеспечение GPU &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-ru.htm#ati-3d">AMD/ATI 3D драйверы</a></li>
+					  <li><a href="gpu-ru.htm#intel">Intel 2D и 3D драйверы</a></li>
+					  <li><a href="gpu-ru.htm#nvidia">Nvidia 3D драйверы</a></li>
+					  <li><a href="gpu-ru.htm#foss-xorg">Свободные Xorg-драйверы</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-ru.htm#fw-detect">Определение несвободного микропрограммного обеспечения - non-free </a></li>
+			  <li><a href="nf-firm-ru.htm#non-free-firmware">Добавление non-free в список источников</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-ru.htm">Оконные менеджеры</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-ru.htm">Оконные менеджеры KDE и Xfce&#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-ru.htm#xfce-notes">Полезные инструменты для Xfce</a></li>
+					    <li><a href="wm-dm-ru.htm#install-add">Полезные инструменты для KDE</a></li>
+					    <li><a href="wm-dm-ru.htm#desk-freeze">Рабочий стол зависает</a></li>
+					    <li><a href="wm-dm-ru.htm#kde-login">Проблемы входа в KDE</a></li>
+					    <li><a href="wm-dm-ru.htm#ch-th">Управление темами</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-ru.htm#dm">Установква дополнительных дисплейных менеджеров</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-ru.htm">Интернет, Wifi и локальная сеть</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-ru.htm">Мета-пакет LAMP &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-ru.htm#serv-apache">Мета-пакет LAMP</a></li>
+					    <li><a href="lamp-apache-ru.htm#serv-ftp">Клиенты FTP</a></li>
+					    <li><a href="lamp-apache-ru.htm#serv-sec">Защищенные протоколы</a></li>
+					    <li><a href="lamp-apache-ru.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-ru.htm#serv-mysql">Настройка MySQL</a></li>
+					    <li><a href="lamp-ppp-ru.htm#serv-php">PHP в apache</a></li>
+					    <li><a href="ntp-server-ru.htm#ntp-server">Установка сервера времени</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-ru.htm#tor">Брандмауэры и веб-прокси &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-ru.htm#tor">Маршрутизатор tor</a></li>
+					    <li><a href="tor-privoxy-ru.htm#privoxy">Веб-прокси privoxy</a></li>
+					    <li><a href="inet-ceni-ru.htm#firewalls">Брандмауэры</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-ru.htm#ssh-x">Samba и ssh &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-ru.htm#setup">Сервер samba</a></li>
+						  <li><a href="samba-ru.htm#configure">Интеграции samba в сеть Windows</a></li>
+						  <li><a href="ssh-ru.htm#ssh-fs">Удаленное монтирование с ssh</a></li>
+						  <li><a href="ssh-ru.htm#ssh-x">Приложения X-Windows с ssh</a></li>
+						  <li><a href="ssh-ru.htm#ssh-f">Интерфейс ssh и Konqueror</a></li>
+						  <li><a href="ssh-ru.htm#ssh-w">ssh X-forwarding с Windows-компом</a></li>
+						  <li><a href="ssh-ru.htm#ssh">Безопасность с ssh</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-ru.htm#netcardconfig">Связи с WiFi &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-ru.htm#netcardconfig">Настройка сетевых карт с ceni</a></li>
+						    <li><a href="inet-wpagui-ru.htm#wpa-roaming-gui">Графическoe ппиложение wpa_gui для WiFi</a></li>
+						    <li><a href="inet-setup-ru.htm#net-set1">Роуминг с WiFi</a></li>
+						    <li><a href="inet-wpa-ru.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-ru.htm#hotswitch">Переключение сети между WiFi и проводной связью</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-ru.htm#netcardconfig">Проводная связь &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-ru.htm#dial-mod">56килобитовые модемы</a></li>
+						    <li><a href="inet-ceni-ru.htm#netcardconfig">Настройка сетевых карт с ceni</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-ru.htm#fw-detect">Определение несвободного микропрограммного обеспечения - non-free </a></li>
+		<li><a href="nf-firm-ru.htm#non-free-firmware">Добавление non-free в список источников</a></li>			
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-ru.htm">Управление пакетами и обновление системы с dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-ru.htm#apt-cook">apt и репозитории &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-ru.htm#apt-cook">apt и репозитории</a></li>
+					    <li><a href="sys-admin-apt-ru.htm#apt-install">Установка нового пакета</a></li>
+					    <li><a href="sys-admin-apt-ru.htm#apt-delete">Удаление пакета</a></li>
+					    <li><a href="sys-admin-apt-ru.htm#apt-downgrade">Понижение версии с hold</a></li>
+					    <li><a href="sys-admin-apt-ru.htm#apt-cache">Поиск пакетной иформации с apt-cache</a></li>
+					    <li><a href="sys-admin-apt-ru.htm#gui-pacsea">Графическая поисковая программа</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-ru.htm#kern-upgrade">Обновление ядра &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-ru.htm#kern-remove">Удаление ядра</a></li>
+					    <li><a href="sys-admin-kern-upg-ru.htm#kern-upgrade">Обновление ядра</a></li>
+					    <li><a href="sys-admin-kern-upg-ru.htm#dmakms">Динамическая инсталляция модулей ядра с dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-ru.htm#apt-upgrade">Обновления системы с dist-upgrade - Краткий обзор &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-ru.htm#live-cd-upgrade">Обновление с ISO-образа</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-ru.htm#approx">Обновление нескольких компьютеров в локальной сети</a></li>
+					    <li><a href="sys-admin-apt-ru.htm#apt-upgrade">Краткий обзор oбновления системы с dist-upgrade</a></li>
+					    <li><a href="sys-admin-apt-ru.htm#du-st">Шаги обновления системы с dist-upgrade</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-ru.htm">Системное администрирование</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-ru.htm#bois-prep">Обновление BIOS с FreeDOS</a></li>
+		<li><a href="vir-rkits-ru.htm#virus-rkits">Сканер безопасности</a></li>
+		<li><a href="hd-install-ru.htm#adduser">Новый пользователь и пароли &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-ru.htm#adduser">Добавление нового пользователя</a></li>
+					    <li><a href="sys-admin-gen-ru.htm#pw-lost">Восстановление root-пароля</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-ru.htm#start-services">Службы и режимы загрузки &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-ru.htm#start-services">Выбор служб</a></li>
+					    <li><a href="sys-admin-gen-ru.htm#pkill">Завершениe службы или процесса</a></li>
+					    <li><a href="sys-admin-gen-ru.htm#init">Режимы загрузки init в aptosid</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-ru.htm#rsync">Резервирование системы &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-ru.htm#rdiff">Резервирование с rdiff</a></li>
+					    <li><a href="sys-admin-rsync-ru.htm#rsync">Резервирование с rsync</a></li>
+					    <li><a href="home-ru.htm#home-bu">Перемещение /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-ru.htm#fonts">Cups, шрифты и звук &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-ru.htm#fonts">Шрифты</a></li>
+					     <li><a href="sys-admin-gen-ru.htm#cups">Сервер cups</a></li>
+					     <li><a href="sys-admin-gen-ru.htm#sound">Звуковые микшеры</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-ru.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-ru.htm#chroot">Grub2 - Восстановление grub с chroot</a></li>
+					    <li><a href="sys-admin-grub2-ru.htm#mbr-over-grub2">Grub2 - Удаление из MBR</a></li>
+					    <li><a href="sys-admin-grub2-ru.htm#multi-os">Grub2 - Двойная и мультизагрузка</a></li>
+					    <li><a href="sys-admin-grub2-ru.htm#grub1-grub2">Grub2 - Обновление с grub1</a></li>
+					    <li><a href="sys-admin-grub2-ru.htm#grub2">Grub2 - Краткий обзор</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Наш спонсор webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid размещен на сервере webtropia.com" alt="aptosid размещен на сервере webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+	<div class="divider" id="privoxy">
+				<h2 id="top-header">Privoxy</h2>
+
+							<p>Privoxy - это веб-прокси с развитыми возможностями фильтрации для защиты конфиденциальности, изменения страницы данных, управления контролем доступа и удаления объявлений, баннеров, всплывающих окон и другого нежелательного "мусора". Privoxy имеет очень гибкую конфигурацию и может быть настроен с учетом индивидуальных потребностей и вкусов. Privoxy применяется как для автономных систем, так и много-пользовательских сетей. Privoxy основан на приложении Internet Junkbuster™.</p>
+
+							<p>Инсталляция:</p>
+<pre>
+apt-get update
+apt-get install privoxy
+</pre>
+							<p>Настройки по умолчанию должны подойти большинству пользователей. Несомненно возникнут случаи, требующие внесения изменений в конфигурацию, но вносить таковые можно по мере необходимости. В большинстве случаев требуются лишь малые изменения начальной конфигурации. </p>
+
+							<!--<p>Мета пакеты aptosid и privoxy <a href="sys-admin-meta-ru.htm#meta-proxy">см.тут</a>.</p>-->
+
+							<p>В зависимости от личных предпочтений Вам необходимо активировать определенные строки в конфигурационном файле privoxy (удалить хэш в начале строки). Здесь Вам придётся решать самим, что оставлять, что убирать.</p>
+
+							<p><a href="http://www.privoxy.org/user-manual/index.html">Полное руководство пользователя с примерами конфигурации privoxy</a></p>
+
+<!--<p>needs go a little deeper in a usable default config (and hints what to set within your browser, kde and environment),</p> -->
+
+	</div>
+	<div class="divider" id="tor">
+				<h2>Tor</h2>
+							<p>Tor - это виртуальный сетевой туннель, позволяющий людям и группам улучшать их конфиденциальность и безопасность в Интернете. Он также позволяет разработчикам создавать новые средства коммуникации со встроенными функциями безопасности. Тор обеспечивает основу для целого ряда приложений, которые позволяют организациям и лицам обмениваться информацией в общедоступных сетях без ущерба для своих конфиденциальных данных.</p>
+
+							<p>Вы должны также знать, что применение несколько снижает пропускную скорость Интернета.</p>
+
+							<p>Инсталляция Tor:</p>
+<pre>
+apt-get update
+apt-get install tor
+</pre>
+							<p>Файл torrc по умолчанию должен подойти для большинства пользователей. Для использования tor в Интернете Вам необходимо настроить privoxy, смотрите:<a href="https://www.torproject.org/docs/tor-doc-unix#privoxy"> tor и интернет</a> (на английском).</p>
+
+							<p>Вы должны также знать, что tor  оказывает отрицательное влияние на скорость Интернета.</p>
+
+							<!--<p>Для веб-браузерa iceweasel имеется <a href="https://addons.mozilla.org/en-US/firefox/addon/2275">torbutton</a> как плагин.</p>-->
+
+							<p><a href="https://www.torproject.org/documentation.html.en"> Документация tor</a> дает всеобъемлющую информацию о всех аспектах применения tor.</p>
+
+							<p>Vidalia - это графический интерфейс для tor. Он позволяет запускать и останавливать tor и выдает общий обзор состояния и используемой полосы пропускания tor.</p>
+<pre>
+apt-get update
+apt-get install vidalia
+</pre>
+							<p><a href="http://www.torproject.org/projects/vidalia.html.en">Смотрите тоже веб-страницу vidalia</a> </p>
+
+
+	</div>
+			<div id="rev">Содержание, последний раз пересмотрено 17/12/2011 1455 UTC</div>
+</div>
+</body>
+</html>

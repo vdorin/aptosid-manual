@@ -1,0 +1,595 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cs" lang="cs">
+<head>
+	<title>Manuály aptosidu - Povýšení BIOSu pomocí FreeDOS </title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Poslední překlad provedl pumrel 11.3.2011 1210 CET -->
+<!--htdig_noindex--><div id="menu"> <!-- menu starts here -cz lang maintainer pumrel-->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="Na stránky aptosid.com, forum a wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-cz.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="Prohledávat manuál" alt="Search" />Hledat online - offline</a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Vyberte jiný jazyk - Choose another language CS, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="lang-switch CS, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-cz.htm">Manuál operačního systému aptosid</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-cz.htm#welcome-gen">Manuál operačního systému aptosid &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-cz.htm#cred-team">Autoři</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-cz.htm#how-to">Jak používat tento manuál &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-cz.htm#how-to">Jak používat tento manuál</a></li>
+					  <li><a href="welcome-cz.htm#table-contents">Obsah</a></li>
+					</ul>
+					</li>
+		<li><a href="help-cz.htm#help-gen">Kde hledat pomoc &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-cz.htm#help-gen">Kde a jak hledat pomoc</a></li>
+					  <li><a href="help-cz.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-cz.htm#welcome-quick">První kroky se aptosidem</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-cz.htm">Obsah ISO, Vydání, Zrcadla pro stahování a Vypalování</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-cz.htm#cd-content">Obsah ISO a nároky na systém &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-cz.htm#rolling">Poznámky k vydání</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-cz.htm#download-aptosid">Zrcadla pro stahování a vypálení &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-cz.htm#md5">Kontrolní součet md5</a></li>
+					  <li><a href="cd-dl-burning-cz.htm#burn-nero">Vypálení ve Windows</a></li>
+					  <li><a href="cd-dl-burning-cz.htm#burn-linux">Vypálení v Linuxu</a></li>
+					  <li><a href="cd-no-gui-burn-cz.htm#burning-no-gui">Skript burniso</a></li>
+					  <li><a href="cd-no-gui-burn-cz.htm#burn-no-gui-gen">Vypálení z terminálu</a></li>
+					  <li><a href="cd-dl-burning-cz.htm#download-aptosid">Zrcadla pro stažení aptosidu</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-cz.htm">Live Mód</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-cz.htm#rootpw">Root-heslo v aptosid-Live</a></li>
+				<li><a href="live-mode-cz.htm#live-cd-installsoft">Instalace programů pod aptosid-Live</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-cz.htm">Terminál / Konsole</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-cz.htm#term-kon">Terminál / Konsole &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-cz.htm#term-kon">Terminál / Konsole</a></li>
+					  <li><a href="term-konsole-cz.htm#colours">Barevné řádky terminálu</a></li>
+					  <li><a href="term-konsole-cz.htm#cli-help">Nápověda terminálu</a></li>
+					  <li><a href="help-cz.htm#init3-tools">Užitečné nástroje v textovém módu(tty) - init 3</a></li>
+					  <li><a href="term-konsole-cz.htm#term-cmds">Seznam příkazů v terminálu Linuxu</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-cz.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-cz.htm">Spouštěcí příkazy</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-cz.htm#cheatcodes">Spouštěcí příkazy pod Live-ISO specifické pro aptosid</a></li>
+				<li><a href="cheatcodes-cz.htm#cheatcodes-linux">Spouštěcí příkazy pro Linux</a></li>
+				<li><a href="cheatcodes-vga-cz.htm#vga">VGA kódy</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-cz.htm">Vytváření diskových oddílů - tradičně, s GPT a s LVM</a>
+		<ul class="sub-menu" id="sm6">
+			  <li><a href="part-gparted-cz.htm#hd-ntfs3g">Zapisování na diskový oddíl NTFS pomocí ntfs-3g</a></li>
+			  <li><a href="part-lvm-cz.htm#part-lvm">Vytvoření disk. oddílů pro použití LVM - Logical Volume Manager</a></li>
+			  <li><a href="part-gparted-cz.htm#partition">Vytvoření diskových oddílů v grafickém rozhraní &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-cz.htm#partition">Vytvoření diskových oddílů pomocí GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-cz.htm#ntfs">Změna velikosti diskového oddílu NTFS pomocí GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-cz.htm#partition">Vytvoření diskových oddílů s CLI &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-cz.htm#partition">Vytváření diskových oddílů pomocí cfdisk</a></li>
+					    <li><a href="part-cfdisk-cz.htm#formating">Formátování po vytvoření diskových oddilů pomocí cfdisk</a></li>
+					    <li><a href="part-gdisk-cz.htm#gdisk-6">Formátování po vytvoření diskových oddílů s gdiskem</a></li>
+					    <li><a href="part-gdisk-cz.htm#gdisk-1">Diskové oddíly GPT s gdiskem</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-cz.htm#part-example">Základy vytváření diskových oddílů &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-cz.htm#part-example">Příklady velikostí diskových oddílů</a></li>
+					  <li><a href="part-uuid-cz.htm#uuid">UUID, přestavění fstab a vytváření přípojných bodů</a></li>
+					  <li><a href="part-cfdisk-cz.htm#disknames">Pojmenovávání diskových oddílů a ostatní</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-cz.htm">Možnosti instalace - HD, USB, VM and Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-cz.htm#Inst-prep">Příprava instalace &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-cz.htm#Inst-prep">Příprava instalace</a></li>
+					  <li><a href="hd-install-cz.htm#Installation">Instalace na pevný disk</a></li>
+					  <li><a href="hd-install-cz.htm#first-hd-boot">První spuštění</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-cz.htm#fromiso">Načtení pomocí fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-cz.htm#fromiso">Načtení pomocí fromiso - Přehled</a></li>
+					  <li><a href="hd-install-opts-cz.htm#grub2-fromiso">Načtení 'fromiso' s Grub2</a></li>
+					  <li><a href="hd-install-opts-cz.htm#fromiso-persist">fromiso a persist</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-cz.htm#usb-hd">Instalace na USB-disk &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-cz.htm#usb-hd">Instalace na USB-disk - specifické pro aptosid - aptosid-on-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-cz.htm#raw-usb">Zapsaní aptosidu na USB/SSD-disk s jakýmkoliv systémem Linux, MS Windows nebo Mac OS X</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-cz.htm#install-crypt">Instalace na šifrovené diskové oddíly - cryptroot</a></li>
+		  <li><a href="nbdboot-cz.htm#nbd1">Načtení aptosidu přes síť</a></li>
+		  <li><a href="hd-install-vmopts-cz.htm#vm">Možnosti instalace ve Virtuálním Stroji</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-cz.htm">Grafické karty, monitory, Xorg,  &amp; ovladače</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-cz.htm#mon-res">Rozlišení obrazovky a monitory &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-cz.htm#mon-res">Rozlišení obrazovky a monitory</a></li>
+					  <li><a href="hw-dev-mon-cz.htm#xrandr">Dva monitory a xrandr</a></li>
+					  <li><a href="hw-dev-mon-cz.htm#mon-binary">Dva monitory (za použití binárních ovladačů)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-cz.htm#foss-xorg">Ovladače GPU &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-cz.htm#ati-3d">3D ovladače pro AMD/ATI</a></li>
+					  <li><a href="gpu-cz.htm#intel">2D a 3D ovladače pro Intel</a></li>
+					  <li><a href="gpu-cz.htm#nvidia">3D ovladače pro Nvidia</a></li>
+					  <li><a href="gpu-cz.htm#foss-xorg">Svobodné ovladače Xorg</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-cz.htm#fw-detect">Rozpoznání firmwaru - non-free</a></li>
+			  <li><a href="nf-firm-cz.htm#non-free-firmware">Přidání non-free do seznamu zdrojů</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-cz.htm#install-add">Správci oken</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-cz.htm">KDE and XFCE Správci oken &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-cz.htm#xfce-notes">Užitečné dodatečné aplikace pro Xfce</a></li>
+					    <li><a href="wm-dm-cz.htm#install-add">Užitečné dodatečné aplikace pro KDE</a></li>
+					    <li><a href="wm-dm-cz.htm#desk-freeze">Zamrznutí plochy</a></li>
+					    <li><a href="wm-dm-cz.htm#kde-login">Nejde se přihlásit do KDE</a></li>
+					    <li><a href="wm-dm-cz.htm#ch-th">Změna témat</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-cz.htm#dm">Instalace dodatečných správců zobrazení</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-cz.htm">Připojení k internetu, WiFi, LAN a sítím</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-cz.htm">Sestava LAMP aptosidu &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-cz.htm#serv-apache">Sestava LAMP aptosidu</a></li>
+					    <li><a href="lamp-apache-cz.htm#serv-ftp">FTP klienty</a></li>
+					    <li><a href="lamp-apache-cz.htm#serv-sec">Bezpečnostní protokoly</a></li>
+					    <li><a href="lamp-apache-cz.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-cz.htm#serv-mysql">Nastavení MySQL</a></li>
+					    <li><a href="lamp-ppp-cz.htm#serv-php">PHP v Apache</a></li>
+					    <li><a href="ntp-server-cz.htm#ntp-server">Nastavení Timeserveru</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-cz.htm#tor">Firewally and Soukromí &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-cz.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-cz.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-cz.htm#firewalls">Firewally</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-cz.htm#ssh-x">SSH a Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-cz.htm#setup">Nastavení Samba-Serveru</a></li>
+						  <li><a href="samba-cz.htm#configure">Konfigurace SAMBY (Windows)</a></li>
+						  <li><a href="ssh-cz.htm#ssh-fs">Vzdálené připojení přes SSH</a></li>
+						  <li><a href="ssh-cz.htm#ssh-x">Aplikace X přes SSH</a></li>
+						  <li><a href="ssh-cz.htm#ssh-f">Grafické rozhraní přes SSH s Konquerorem</a></li>
+						  <li><a href="ssh-cz.htm#ssh-w">Přenos rozhraní X přes SSH z Windows-PC</a></li>
+						  <li><a href="ssh-cz.htm#ssh">SSH a soukromí</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-cz.htm#netcardconfig">WIFI připojení &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-cz.htm#netcardconfig">Připojení se online - Ceni</a></li>
+						    <li><a href="inet-wpagui-cz.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-cz.htm#net-set1">WiFi - nastavení pro WiFi roaming</a></li>
+						    <li><a href="inet-wpa-cz.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-cz.htm#hotswitch">Přepínání síťového připojení mezi WiFi a Kabelovým</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-cz.htm#netcardconfig">Kabelové připojení &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-cz.htm#dial-mod">56k Modemy</a></li>
+						    <li><a href="inet-ceni-cz.htm#netcardconfig">Připojení se online- Ceni</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-cz.htm#fw-detect">Rozpoznání firmwaru - non-free</a></li>
+		<li><a href="nf-firm-cz.htm#non-free-firmware">Přidání non-free do seznamu zdrojů</a></li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-cz.htm">Správa balíčků dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-cz.htm#apt-cook">APT návod a zdroje softwaru &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-cz.htm#apt-cook">APT-návod (CookBook) a zdroje software</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#apt-install">Instalace nového balíčku</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#apt-delete">Smazání balíčku</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#apt-downgrade">Podržení balíčku nebo instalace nižší verze</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#apt-cache">Vyhledávání balíčků pomocí apt-cache</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#gui-pacsea">Vyhledávání balíčků v graf. rozhraní</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-cz.htm#kern-upgrade">Povýšení verze jádra (kernel) &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-cz.htm#kern-remove">Odstranění jádra</a></li>
+					    <li><a href="sys-admin-kern-upg-cz.htm#kern-upgrade">Povýšení verze jádra</a></li>
+					    <li><a href="sys-admin-kern-upg-cz.htm#dmakms">Dynamická instalaca modulů jádra s dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-cz.htm#apt-upgrade">Aktualizace nainstalovaného systému - dist-upgrade - Přehled &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-cz.htm#live-cd-upgrade">Aktualizace pomocí Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-cz.htm#approx">dist-upgrade vícero počítačů přes LAN</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#apt-upgrade">Aktualizace nainstalovaného systému - dist-upgrade - Přehled</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#du-st">Aktualizace nainstalovaného systému - dist-upgrade - jednotlivé kroky</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-cz.htm">Administrace systému</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-cz.htm#bois-prep">Povýšení verze BIOSu pomocí FreeDOS</a></li>
+		<li><a href="vir-rkits-cz.htm#virus-rkits">Vyhledávače virů a rootkitů</a></li>
+		<li><a href="hd-install-cz.htm#adduser">Přidání uživatelů a hesel &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-cz.htm#adduser">Přidání nového uživatele</a></li>
+					    <li><a href="sys-admin-gen-cz.htm#pw-lost">Ztracené root heslo, nové heslo</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-cz.htm#start-services">Služby a úrovně spuštění init &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-cz.htm#start-services">Spouštění/zastavení služeb</a></li>
+					    <li><a href="sys-admin-gen-cz.htm#pkill">Zabití služby nebo procesu</a></li>
+					    <li><a href="sys-admin-gen-cz.htm#init">Úrovně spuštění aptosidu - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-cz.htm#rsync">Zálohování systému &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-cz.htm#rdiff">Zálohování pomocí rdiff</a></li>
+					    <li><a href="sys-admin-rsync-cz.htm#rsync">Zálohování pomocí rsync</a></li>
+					    <li><a href="home-cz.htm#home-bu">Přesunutí /home adresáře</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-cz.htm#fonts">CUPS, fonty a zvuk &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-cz.htm#fonts">Fonty</a></li>
+					     <li><a href="sys-admin-gen-cz.htm#cups">CUPS - tiskový systém</a></li>
+					     <li><a href="sys-admin-gen-cz.htm#sound">Zvukový mixér</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-cz.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-cz.htm#chroot">Grub2 - obnova Grubu s pomocí chroot</a></li>
+					    <li><a href="sys-admin-grub2-cz.htm#mbr-over-grub2">Grub2 - přepsání zaváděcího sektoru MBR</a></li>
+					    <li><a href="sys-admin-grub2-cz.htm#multi-os">Grub2 - zavádění  více systémů</a></li>
+					    <li><a href="sys-admin-grub2-cz.htm#grub1-grub2">Grub2 - povýšení z Grub1</a></li>
+					    <li><a href="sys-admin-grub2-cz.htm#grub2">Grub2 - přehled</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Sponsored by webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid is proudly hosted by webtropia.com" alt="aptosid is proudly hosted by webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+	<div class="divider" id="bois-prep">
+
+<!--		<h2 id="top-header">Upgrading the BIOS with FreeDOS</h2>-->
+		<h2 id="top-header">Povýšení BIOSu s FreeDOS</h2>
+<!--							<p>You may want, or have a need, to update the BIOS of your PC, when the manufacturer of the motherboard announces some improvement of BIOS software. The installer program usually offered is an application to run MS-DOS.</p>-->
+							<p>Můžete potřebovat, nebo máte potřebu, aktualizovat verzi BIOSu vašeho počítač, jakmile váš výrobce oznámí nějáké vylepšení software BIOSu vaší základní desky. Obvykle nabízený instalační program je aplikace pro MS-DOS.</p>
+<!--							<p>This is a way to update BIOS from a USB in linux. This will work with USB keys, USB sticks and with micro/mini/SD cards (with a suitable adapter).</p>-->
+							<p>Zde se jedná o způsob aktualizace BIOSu z USB v Linuxu. Bude to fungovat s USB klíči a s micro/mini/SD kartami (s vhodným adaptérem).</p>
+<!--							<p>Firstly, your BIOS needs to allow booting from USB - and be compatible with USB harddisks. Some BIOSes accept USB Floppies, CD-ROMs or ZIP drives, although these might be usable, it may be more difficult to implement the upgrade, however you may have no other choice, (netbooks in particular).</p>-->
+							<p>Prvně je nutné, aby váš BIOS umožňoval zavádění z USB a byl kompatibilní s pevnými disky USB. Některé BIOSy povolují USB disketové, CD-ROM nebo zip mechaniky. Ačkoliv by takovéto mohly být použitelné, může být složitější tak provést povýšení. Nicméně nemusíte mít jinou možnost (především co se týče netbooků).</p>
+
+<!--				<h3>You need three things:</h3>-->
+				<h3>Potřebujete tři věci:</h3>
+						<ol>
+<!--							<li>A USB stick, preferably &lt;2 GB (FAT16 doesn't allow more than 2 GB), and the base FreeDOS (fdbasecd.iso) install only uses 5.8 MB. <span class="highlight-3">FAT16 is the recommended format as FAT32 is not detected as bootable by every BIOS</span>.</li>-->
+							<li>USB klíč, přednostně &lt;2 GB (FAT16 neumožňuje více jak 2 GB), základní FreeDOS (fdbasecd.iso) se instaluje na pouhých 5.8 MB. <span class="highlight-3">FAT16 je upřednostňovaný formát, jelikož není FAT32 rozeznán jako zaváděníschopný každým BIOSem</span>.</li>
+<!--							<li>A FreeDOS install medium <a href="http://www.freedos.org/freedos/files/"> fdbasecd.iso (8MB)</a>.</li>-->
+							<li>Instalační medium FreeDOSu <a href="http://www.freedos.org/freedos/files/"> fdbasecd.iso (8MB)</a>.</li>
+<!--							<li>qemu (apt-get install qemu), qemu is needed for the installer, basically the emulated qemu BIOS makes your USB stick appear to FreeDOS as an ordinary harddisk, so you can install as usual (and avoids burning the FreeDOS CD).</li>-->
+							<li>qemu (apt-get install qemu), qemu je nezbytný pro instalátor. Vlastně, v qemu emulovaný BIOS umožní, aby byl váš USB disk viditelný ve FreeDOSu jako běžný pevný disk, takže můžete instalovat jako obvykle (a není tak vyžadováno vypálení FreeDOSu na CD).</li>
+						</ol>
+
+<!--				<h5><span class="highlight-2">This is absolutly critical: at no stage is the USB stick to be mounted. Be very careful to select the correct device node, otherwise all data on the wrong disk will be erased without any redress, i.e. your main hard drive.</span></h5>-->
+				<h5><span class="highlight-2">Toto je absolutně nezbytné: v žádnou chvíli nesmí být váš USB disk připojen (mounted). Buďte velmi opatrní při výběru 'device node', jinak budou data na špatném disku nenapravitelně vymazána. To může být klidně váš hlavní pevný disk.</span></h5>
+	<div class="spacer02"></div>
+<!--							<p>Plug in your USB stick, <span class="highlight-2">remember, don't mount it</span>. Check dmesg (the last messages,if you just plugged it in), which device node got assigned to your USB stick lets assumes <span class="highlight-3">/dev/sdb</span>  .</p>-->
+							<p>Vsuňte váš USB disk, <span class="highlight-2">pamatujte - nepřipojovat</span>. Zkontrolujte dmesg (poslední zpráva, pokud jste jej zrovna vsunuli), který 'device node' byl přidělen vašemu USB disku. Předpokládejme, že <span class="highlight-3">/dev/sdb</span>  .</p>
+<!--							<p>Clear your USB stick,<span class="highlight-3">all data will be lost</span>, you could also clear all of it, instead of just the first 16 MB. </p>-->
+							<p>Vyčistěte váš USB disk. <span class="highlight-3">Všechna data budou ztracena</span>. Také můžete vymazat vše, ne jen prvních 16 MB. </p>
+
+<pre>
+$ sux
+Heslo:
+dd if=/dev/zero of=/dev/sdb bs=1M count=16
+16+0 records in
+16+0 records out
+16777216 bytes (17 MB) copied, 2.35751 s, 7.1 MB/s
+</pre>
+<!--					<h3>Partitioning the USB stick</h3>
+							<p>Partitioning and formatting your USB stick correctly is probably the hardest part.</p>-->
+					<h3>Vytvoření diskových oddílů na USB disku</h3>
+							<p>Správné vytvoření diskových oddílů a formátování USB disku je pravděpodobně ta nejtěžší část.</p>
+<!--							<p>Set the partition label to FAT16, on &lt;2 GB sticks (it offers better compatibility overall).</p>-->
+							<p>Štítek diskového oddílu nastavte na FAT16, na &lt;2 GB klíčích (všeobecně to zaručuje lepší kompatitibilitu).</p>
+<!--							<p>Next fdisk to partition:</p>-->
+							<p>Pak vstupte fdiskem na diskový oddíl:</p>
+<pre>
+# fdisk /dev/sdb
+fdisk /dev/sdb
+Device contains neither a valid DOS partition table, nor Sun, SGI or OSF disklabel
+Building a new DOS disklabel with disk identifier 0xa8993739.
+Changes will remain in memory only, until you decide to write them.
+After that, of course, the previous content won't be recoverable.
+
+Warning: invalid flag 0x0000 of partition table 4 will be corrected by w(rite)
+</pre>
+<!--							<p>Now create a partition:</p>-->
+							<p>Nyní vytvořte diskový oddíl:</p>
+<pre>
+Command (m for help): <span class="highlight-3"><b>n</b></span>
+Command action
+   e   extended
+   p   primary partition (1-4)
+<span class="highlight-3"><b>p</b></span>
+Partition number (1-4): <span class="highlight-3"><b>1</b></span>
+First cylinder (1-1018, default 1):
+Using default value 1
+Last cylinder or +size or +sizeM or +sizeK (1-1018, default 1018):
+Using default value 1018
+</pre>
+<!--							<p>Confirm the creation of the partition by printing the partition table:</p>-->
+							<p>Potvrďte vytvoření diskového oddílu vytištěním tabulky diskových oddílů:</p>
+<pre>
+Command (m for help): <span class="highlight-3"><b>p</b></span>
+
+Disk /dev/sdb: 2003 MB, 2003828736 bytes
+62 heads, 62 sectors/track, 1018 cylinders
+Units = cylinders of 3844 * 512 = 1968128 bytes
+Disk identifier: 0xa8993739
+
+   Device Boot      Start         End      Blocks   Id  System
+/dev/sdb1               1        1018     1956595+  83  Linux
+</pre>
+<!--							<p>Set the correct partition label, '6' for FAT16:</p>-->
+							<p>Nastavte správný štítek diskového oddílu , '6' pro FAT16:</p>
+<pre>
+Command (m for help): <span class="highlight-3"><b>t</b></span>
+Selected partition 1
+Hex code (type L to list codes): <span class="highlight-3"><b>l</b></span>
+
+ 0  Empty           1e  Hidden W95 FAT1 80  Old Minix       be  Solaris boot
+ 1  FAT12           24  NEC DOS         81  Minix / old Lin bf  Solaris
+ 2  XENIX root      39  Plan 9          82  Linux swap / So c1  DRDOS/sec (FAT-
+ 3  XENIX usr       3c  PartitionMagic  83  Linux           c4  DRDOS/sec (FAT-
+ 4  FAT16 &lt;32M      40  Venix 80286     84  OS/2 hidden C:  c6  DRDOS/sec (FAT-
+ 5  Extended        41  PPC PReP Boot   85  Linux extended  c7  Syrinx
+ 6  FAT16           42  SFS             86  NTFS volume set da  Non-FS data
+ 7  HPFS/NTFS       4d  QNX4.x          87  NTFS volume set db  CP/M / CTOS / .
+ 8  AIX             4e  QNX4.x 2nd part 88  Linux plaintext de  Dell Utility
+ 9  AIX bootable    4f  QNX4.x 3rd part 8e  Linux LVM       df  BootIt
+ a  OS/2 Boot Manag 50  OnTrack DM      93  Amoeba          e1  DOS access
+ b  W95 FAT32       51  OnTrack DM6 Aux 94  Amoeba BBT      e3  DOS R/O
+ c  W95 FAT32 (LBA) 52  CP/M            9f  BSD/OS          e4  SpeedStor
+ e  W95 FAT16 (LBA) 53  OnTrack DM6 Aux a0  IBM Thinkpad hi eb  BeOS fs
+ f  W95 Ext'd (LBA) 54  OnTrackDM6      a5  FreeBSD         ee  EFI GPT
+10  OPUS            55  EZ-Drive        a6  OpenBSD         ef  EFI (FAT-12/16/
+11  Hidden FAT12    56  Golden Bow      a7  NeXTSTEP        f0  Linux/PA-RISC b
+12  Compaq diagnost 5c  Priam Edisk     a8  Darwin UFS      f1  SpeedStor
+14  Hidden FAT16 &lt;3 61  SpeedStor       a9  NetBSD          f4  SpeedStor
+16  Hidden FAT16    63  GNU HURD or Sys ab  Darwin boot     f2  DOS secondary
+17  Hidden HPFS/NTF 64  Novell Netware  b7  BSDI fs         fd  Linux raid auto
+18  AST SmartSleep  65  Novell Netware  b8  BSDI swap       fe  LANstep
+1b  Hidden W95 FAT3 70  DiskSecure Mult bb  Boot Wizard hid ff  BBT
+1c  Hidden W95 FAT3 75  PC/IX
+
+Hex code (type L to list codes): <span class="highlight-3"><b>6</b></span>
+
+Changed system type of partition 1 to 6 (FAT16)
+</pre>
+<!--							<p>Activate the new and only partition:</p>-->
+							<p>Aktivujte nový a jediný diskový oddíl:</p>
+<pre>
+Command (m for help): <span class="highlight-3"><b>a</b></span>
+Partition number (1-4): <span class="highlight-3"><b>1</b></span>
+</pre>
+<!--							<p>Print out the new partition table again, reconfirm that the partition indeed got activated:</p>-->
+							<p>Vytiskněte znovu novou tabulku diskových oddílu, znovu s ověřte, že se diskový oddíl opravdu aktivoval:</p>
+<pre>
+Command (m for help): <span class="highlight-3"><b>p</b></span>
+
+Disk /dev/sdb: 2003 MB, 2003828736 bytes
+62 heads, 62 sectors/track, 1018 cylinders
+Units = cylinders of 3844 * 512 = 1968128 bytes
+Disk identifier: 0xa8993739
+
+   Device Boot      Start         End      Blocks   Id  System
+/dev/sdb1   *           1        1018     1956595+   6  FAT16
+</pre>
+<!--							<p>Write the new partition table to your USB stick and exit fdisk:</p>-->
+							<p>Zapiště novou tabulku diskových oddílu na váš USB disk a opusťte fdisk:</p>
+<pre>
+Command (m for help): <span class="highlight-3"><b>w</b></span>
+The partition table has been altered!
+
+Calling ioctl() to re-read partition table.
+
+WARNING: If you have created or modified any DOS 6.x
+partitions, please see the fdisk manual page for additional
+information.
+Syncing disks.
+# exit
+</pre>
+<!--							<p>Format your newly created USB stick:</p>-->
+							<p>Naformátujte nově vytvořený USB disk:</p>
+<pre>
+mkfs -t vfat -n FreeDOS /dev/sdb1
+exit
+</pre>
+<!--							<p>The preparatory phase is now complete.You have now partitioned and formatted the USB stick, there's nothing else left to do and you can directly go to the install process.</p>-->
+							<p>Přípravná fáze je nyní u konce. Nyní jste naformátovali USB disk a vytvořili na něm diskový oddíl. Nic jiného nezbývá udělat a můžete již přistoupit k instalačnímu procesu.</p>
+<!--					<h3>Booting up FreeDOS with qemu</h3>-->
+					<h3>Zavedení FreeDOSu s qemu</h3>
+<!--							<p>As DOS has no idea of USB stick, you need to find a way to coax the FreeDOS installer into recognizing the USB as ordinary "harddisk", on live boot, the system's BIOS does that for us - but here the need to get inventive with qemu:</p>-->
+<!--							<p>As DOS has no idea of USB stick, you need to find a way to coax the FreeDOS installer into recognizing the USB as ordinary "harddisk", on live boot, the system's BIOS does that for us - but here the need to get inventive with qemu:</p>-->
+							<p>Jelikož DOS nemá ponětí o USB discích, musíte najít způsob, jak přinutit instalátor FreeDOSu, aby rozeznal USB jako běžný "pevný disk". Při live zavádění to za nás udělá systémový BIOS - zde si ale musíme poradit s qemu:</p>
+<pre>
+jako user$:
+qemu -hda /dev/sdb -cdrom /path/to/fdbasecd.iso -boot d
+</pre>
+<!--							<p><span class="highlight-1">ctrl-alt</span> will toggle mouse and keyboard grab and allow you to switch desktops to reread any instructions at each step.</p>-->
+							<p><span class="highlight-1">ctrl-alt</span> aktivuje zachytávání myši a klávesnice a umožní vám přepínat plochy, abyste si mohli znovu přečíst při každém kroku instrukce.</p>
+		<div class="screenshot"><img src="../lib/images-common/images-qemu-freedos/qemu-boot01.jpg" title="QEMU FreeDOS" alt="QEMU FreeDOS" /></div>
+<!--							<p>This boots the FreeDOS CD and maps the USB stick raw device as primary master HD (here qemu's BIOS emulation abililty makes the USB stick appear to DOS as an ordinary harddisk).  Select the installer from the start menu of the virtualised FreeDOS boot:</p>-->
+							<p>Toto zavede CD FreeDOSu a namapuje zařízení USB jako 'primary master' pevný disk (zde umožňuje možnost emulac BIOSu v qemu, že se USB disk pro DOS objeví jako běžný pevný disk). Vyberte instalátor ze spouštěcího menu virtuálně zavedeného FreeDOSu:</p>
+<pre>
+<!--1) Continue to boot FreeDOS from CD-ROM-->
+1) Continue to boot FreeDOS from CD-ROM
+<span class="highlight-3"><b>1</b></span>
+enter
+</pre>
+	<div class="spacer02"></div>
+<!--							<p>Keep choosing the default of <span class="highlight-3">1</span> and/or choosing <span class="highlight-3">Yes</span> when asked.</p>-->
+							<p>Pokračujte volením <span class="highlight-3">1</span> a/nebo výběrem <span class="highlight-3">Yes</span>, když jste požádáni.</p>
+	<div class="spacer02"></div>
+		<div class="screenshot"><img src="../lib/images-common/images-qemu-freedos/qemu-boot02.jpg" title="Freedos Installation - 1" alt="freedos-inst1" /></div>
+
+		<div class="spacer02"></div>
+	<div class="screenshot"><img src="../lib/images-common/images-qemu-freedos/qemu-boot04.jpg" title="Freedos Installation - 2"  alt="freedos-inst2" /></div>
+
+	<div class="spacer02"></div>
+
+	<div class="spacer02"></div>
+		<div class="screenshot"><img src="../lib/images-common/images-qemu-freedos/qemu-boot09.jpg" title="Freedos Installation - 3" alt="freedos-inst3" /></div>
+
+
+	<div class="spacer02"></div>
+
+<!--							<p>The install asks you to reboot - <span class="highlight-3">don't do that yet, as there is a need to fix up two errors in the FreeDOS installer for the mbr and bootmenu</span>. Type the letter <span class="highlight-3"><b>n</b></span>.</p>-->
+							<p>Instalátor váš požádá o restart - <span class="highlight-3">ještě tak nečiňte, jelikož je potřeba opravit dvě chyby v instalátor FreeDOSu pro mbr a zaváděcí nabídku</span>. Stiskněte písmeno <span class="highlight-3"><b>n</b></span>.</p>
+	<div class="spacer02"></div>
+		<div class="screenshot"><img src="../lib/images-common/images-qemu-freedos/qemu-boot18.jpg" title="Freedos Installation - do not reboot type n" alt="freedos-do not reboot type n" /></div>
+
+	<div class="spacer02"></div>
+<!--				<h3>Writing a bootsector to your USB stick</h3>
+							<p>The first error to fix is the mbr with:</p>-->
+				<h3>Zapsání zaváděcího sektoru na váš USB disk</h3>
+							<p>První chyba k opravení je mbr s:</p>
+
+<pre>
+fdisk /mbr 1
+</pre>
+<!--							<p>The second error that needs fixing is the bootmenu in your new fdconfig.sys, run:</p>-->
+							<p>Další chyba, která potřebuje opravit se týká zaváděcí nabídky ve vámi nově vytvořeném souboru fdconfig.sys, spusťte:</p>
+<pre>
+cd \
+edit fdconfig.sys
+</pre>
+<!--							<p>and change the line starting command.com to:</p>-->
+							<p>a upravte řádek začínající command.com na:</p>
+<pre>
+1234?SHELLHIGH=C:\FDOS\command.com C:\FDOS /D /P=C:\fdauto.bat /K set
+<!--(don't actually change this command, just add "1234?" to the begin of the line (before SHELLHIGH==C:\FDOS\command.com .....-->
+(vlastní příkaz neměňte, jen přidejte na začátek řádku "1234?" (před SHELLHIGH==C:\FDOS\command.com .....
+<!--NOTE it is to read : <span class="highlight-3">1234?</span>-->
+POZNÁMKA má to tedy být: <span class="highlight-3">1234?</span>
+</pre>
+		<div class="screenshot"><img src="../lib/images-common/images-qemu-freedos/qemu-boot23.jpg" title="Edit fdconfig.sys " alt="fdconfig.sys" /></div>
+	<div class="spacer02"></div>
+<!--							<p><span class="highlight-2">Do not change anything else, as the line depends on your install setup.</span></p>-->
+							<p><span class="highlight-2">Nic jiného neměňte, jelikož tento řádek zavísí od vašeho nastavení instalace.</span></p>
+<!--							<p>Save it and exit "edit":</p>-->
+							<p>Uložte a opusťte "edit":</p>
+<pre>
+[alt]+[f]
+</pre>
+<!--							<p>Once you're back to the command prompt, you can leave qemu.</p>-->
+							<p>Jakmile se vrátíte do příkazové řádky, můžete opustit qemu.</p>
+<!-- 							<p>Test to check if qemu will boot the USB stick.</p>-->
+ 							<p>Otestujte, že je qemu schpno zavést USB disk.</p>
+<pre>
+qemu -hda /dev/sdb -boot c
+</pre>
+<!-- 							<p>Your USB stick is now bootable and contains a full FreeDOS install of 5.4 MB, for flashing. You really should boot without any drivers <span class="highlight-3">(menu option 4), loading the  himem.sys and emm386 files may otherwise interfere with your flashing programs!</span>:</p>-->
+ 							<p>Váš USB disk je nyní zaváděníschopný a obsahuje plnou instalaci FreeDOSu o velikosti 5.4 MB. Opravdu byste měli zavádět bez použití jakýchkoliv ovladačů <span class="highlight-3">(volba v menu 4), načtení souborů himem.sys a emm386 se může plést s vámi načítanými programy!</span>:</p>
+<!--				<h3>Updating the BIOS</h3>
+							<p>Assuming your PC is up and running, plug in the FreeDOS USB stick, mount it and download the BIOS files needed, as recommended by the manufacturer of your motherboard/BIOS, to the FreeDOS USB stick, then umount the stick.</p>-->
+				<h3>Aktualizace BIOSu</h3>
+							<p>Za předpokladu, že váš počítač běží, vsuňte váš FreeDOS USB disk, připojte ho a stáhněte soubory BIOSu, které potřebujete, tak, jak je doporučeno výrobce vaší základní desky, na USB disk s FreeDOSem, pak ho odpojte.</p>
+<!--							<p> Power off your PC, plug in the FreeDOS USB stick, power up, so that you boot to the FreeDOS USB stick and follow the procedures of the manufacturer of your motherboard/BIOS.</p>-->
+							<p>Vypněte váš počítač, vsuňte FreeDOS USB disk, zapněte počítač a váš USB disk bude zaveden s FreeDOSem. Následujte procedury vašeho výrobce základní desky/BIOSu.</p>
+
+
+	</div>
+
+			<div id="rev">Obsah naposledy revidován 14/08/2010 0100 UTC</div>
+</div>
+</body>
+</html>

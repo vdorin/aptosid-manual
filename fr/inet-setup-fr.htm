@@ -1,0 +1,631 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>Manuel d'aptosid - Configuration du Wifi itinérant</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision by LjanA 06/10/2010 -->
+<!--htdig_noindex--><div id="menu"> <!-- menu starts here fr lang maintained by alphad, LjanA-->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="Vers aptosid.com, forum et wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-fr.htm#search-on"><img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" /> Rechercher</a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Choisir une autre langue - Choose another language CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="lang-switch CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-fr.htm">Manuel du système aptosid</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-fr.htm#welcome-gen">Manuel du système aptosid &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-fr.htm#cred-team">Contributeurs</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-fr.htm#how-to">Guide de l'utilisateur &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-fr.htm#how-to">Guide de l'utilisateur</a></li>
+					  <li><a href="welcome-fr.htm#table-contents">Table des matières</a></li>
+					</ul>
+					</li>
+		<li><a href="help-fr.htm#help-gen">Trouver de l'aide &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-fr.htm#help-gen">Où trouver de l'aide</a></li>
+					  <li><a href="help-fr.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-fr.htm#welcome-quick">Utiliser aptosid rapidement</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-fr.htm">Contenu de l'ISO, Versions, Téléchargement, Miroirs &amp; Gravure</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-fr.htm#cd-content">Contenu de l'ISO &#8211; Matériel minimal requis  &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-fr.htm#rolling">Notes de publication</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-fr.htm#download-aptosid">Miroirs aptosid &#8211; Téléchargement &#8211; Gravure &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-fr.htm#md5">md5 (somme de contrôle)</a></li>
+					  <li><a href="cd-dl-burning-fr.htm#burn-nero">Graver sous Windows</a></li>
+					  <li><a href="cd-dl-burning-fr.htm#burn-linux">Graver sous Linux</a></li>
+					  <li><a href="cd-no-gui-burn-fr.htm#burning-no-gui">Script burniso</a></li>
+					  <li><a href="cd-no-gui-burn-fr.htm#burn-no-gui-gen">Graver depuis un terminal</a></li>
+					  <li><a href="cd-dl-burning-fr.htm#download-aptosid">Miroirs de téléchargement aptosid</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-fr.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-fr.htm#rootpw">Mot de passe root en mode Live</a></li>
+				<li><a href="live-mode-fr.htm#live-cd-installsoft">Installer des logiciels en mode Live</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-fr.htm">Terminal / Konsole</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-fr.htm#term-kon">Terminal / Konsole &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-fr.htm#term-kon">Terminal / Konsole</a></li>
+					  <li><a href="term-konsole-fr.htm#colours"> prompt coloré dans un terminal </a></li>
+					  <li><a href="term-konsole-fr.htm#cli-help">Aide sous Terminal / Konsole</a></li>
+					  <li><a href="help-fr.htm#init3-tools">Outils utiles en mode texte (tty) &#8211; init 3</a></li>
+					  <li><a href="term-konsole-fr.htm#term-cmds">Liste de commandes sous BASH</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-fr.htm#sux">sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-fr.htm">Codes de démarrage</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-fr.htm#cheatcodes">Codes spécifiques à aptosid en mode Live</a></li>
+				<li><a href="cheatcodes-fr.htm#cheatcodes-linux">Codes génériques pour Linux</a></li>
+				<li><a href="cheatcodes-vga-fr.htm#vga">Codes VGA</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-fr.htm">Partitionner le disque dur - Traditionel, GPT et LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-fr.htm#hd-ntfs3g">Utiliser une partition NTFS grâce à ntfs-3g</a></li>
+			<li><a href="part-lvm-fr.htm#part-lvm">Partitionner pour utiliser LVM - Gestionnaire de Volumes Logiques</a></li>
+			<li><a href="part-gparted-fr.htm#partition">&#8230;dans un environnement graphique &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-fr.htm#partition">&#8230;avec GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-fr.htm#ntfs">Redimensionner une partition NTFS avec GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-fr.htm#partition">&#8230;en mode texte (CLI) &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-fr.htm#partition">&#8230;avec cfdisk</a></li>
+					    <li><a href="part-cfdisk-fr.htm#formating">Formater une partition créée avec cfdisk</a></li>
+					    <li><a href="part-gdisk-fr.htm#gdisk-6">Formater après partitionnement avec gdisk</a></li>
+					    <li><a href="part-gdisk-fr.htm#gdisk-1">GPT : partitionnement avec gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-fr.htm#part-example">Partitionner  &#8211; Concepts de base &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-fr.htm#part-example">Tailles des partitions  &#8211; Exemples</a></li>
+					  <li><a href="part-uuid-fr.htm#uuid">UUID, Modifier fstab et créer de nouveaux points de montage</a></li>
+					  <li><a href="part-cfdisk-fr.htm#disknames">Noms des disques et partitions</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-fr.htm">Choix du type d'installation &#8211; HD, USB, VM and Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-fr.htm#Inst-prep">Préparer l'installation &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-fr.htm#Inst-prep">Préparer l'installation </a></li>
+					  <li><a href="hd-install-fr.htm#Installation">Installer sur le disque dur (HD)</a></li>
+					  <li><a href="hd-install-fr.htm#first-hd-boot">Au premier démarrage</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-fr.htm#fromiso">Démarrer en mode ''fromiso'' &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-fr.htm#fromiso">''fromiso'' Généralités</a></li>
+					  <li><a href="hd-install-opts-fr.htm#grub2-fromiso">Démarrer ''fromiso'' avec grub2</a></li>
+					  <li><a href="hd-install-opts-fr.htm#fromiso-persist">''fromiso'' and persistance</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-fr.htm#usb-hd">Installer sur USB-HD &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-fr.htm#usb-hd">Installer sur disque USB &#8211; aptosid sur une clé USB</a></li>
+					  <li><a href="hd-ins-opts-oos-fr.htm#raw-usb">Installer aptosid sur une clé USB/carte SSD à partir de systèmes Linux, MS-Windows ou Mac-OS-X</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-fr.htm#install-crypt">Installation sur partitions cryptées - cryptroot</a></li>
+		  <li><a href="nbdboot-fr.htm#nbd1">Démarrer aptosid à partir d'un réseau</a></li>
+		<li><a href="hd-install-vmopts-fr.htm#vmopts">Choix d'installation sur une machine virtuelle</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-fr.htm">Cartes graphiques &#8211; Moniteurs &#8211; Xorg &#8211; Pilotes divers</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-fr.htm#mon-res">Définition des écrans &#8211; Moniteurs  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-fr.htm#mon-res">Définition des écrans &#8211; Moniteurs</a></li>
+					  <li><a href="hw-dev-mon-fr.htm#xrandr">Deux moniteurs &#8211; xrandr</a></li>
+					  <li><a href="hw-dev-mon-fr.htm#mon-binary">Deux moniteurs &#8211; outils binaires</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-fr.htm#foss-xorg">Drivers cartes graphiques&#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-fr.htm#ati-3d">Drivers AMD/ATI 3D</a></li>
+					  <li><a href="gpu-fr.htm#intel">Drivers Intel 2D and 3D</a></li>
+					  <li><a href="gpu-fr.htm#nvidia">Drivers Nvidia 3D</a></li>
+					  <li><a href="gpu-fr.htm#foss-xorg">Drivers Open Source Xorg</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-fr.htm#fw-detect">Détection de Firmware non-libre</a></li>
+			  <li><a href="nf-firm-fr.htm#non-free-firmware">Ajouter non-free aux Sources List</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-fr.htm">Gestionnaire de fenêtres</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-fr.htm">KDE and XFCE Gestionnaire de fenêtres &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-fr.htm#xfce-notes">Applications supplémentaires utiles pour Xfce</a></li>
+					    <li><a href="wm-dm-fr.htm#install-add">Applications supplémentaires utiles pour KDE</a></li>
+					    <li><a href="wm-dm-fr.htm#desk-freeze">Écran gelé</a></li>
+					    <li><a href="wm-dm-fr.htm#kde-login">Ouverture de session impossible (login) dans KDE</a></li>
+					    <li><a href="wm-dm-fr.htm#ch-th">Changer les fonds d'écran</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-fr.htm#dm">Installation de gestionnaires d'affichage supplémentaires</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-fr.htm">Internet &#8211; WiFi &#8211; LAN &#8211; Réseaux</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-fr.htm">Suite LAMP aptosid &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-fr.htm#serv-apache">Suite LAMP aptosid</a></li>
+					    <li><a href="lamp-apache-fr.htm#serv-ftp">Clients FTP</a></li>
+					    <li><a href="lamp-apache-fr.htm#serv-sec">Protocoles de sécurité</a></li>
+					    <li><a href="lamp-apache-fr.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-fr.htm#serv-mysql">Configurer MySQL </a></li>
+					    <li><a href="lamp-ppp-fr.htm#serv-php">Support PHP dans Apache</a></li>
+					    <li><a href="ntp-server-fr.htm#ntp-server">Configurer le serveur d'horloge (timeserver)</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-fr.htm#tor">Pare-feu &#8211; Confidentialité &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-fr.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-fr.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-fr.htm#firewalls">Pare-feu</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-fr.htm#ssh-x">SSH &#8211; Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-fr.htm#setup">Configurer un serveur Samba</a></li>
+						  <li><a href="samba-fr.htm#configure">Configurer SAMBA (MS-Windows)</a></li>
+						  <li><a href="ssh-fr.htm#ssh-fs">Montage d'un répertoire à distance via SSH</a></li>
+						  <li><a href="ssh-fr.htm#ssh-x">Application X via SSH</a></li>
+						  <li><a href="ssh-fr.htm#ssh-f">Environnement graphique pour SSH via Dolphin</a></li>
+						  <li><a href="ssh-fr.htm#ssh-w">Transmission de X via SSH depuis un PC MS-Windows</a></li>
+						  <li><a href="ssh-fr.htm#ssh">SSH et Sécurité</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-fr.htm#netcardconfig">Connections WIFI &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-fr.htm#netcardconfig">Se connecter au réseau &#8211; Ceni</a></li>
+						    <li><a href="inet-wpagui-fr.htm#wpa-roaming-gui">WiFi &#8211; WPA_GUI</a></li>
+						    <li><a href="inet-setup-fr.htm#net-set1">WiFi &#8211; Configurer une connexion itinérante (roaming) WiFi</a></li>
+						    <li><a href="inet-wpa-fr.htm#wpa">WiFi &#8211; wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-fr.htm#hotswitch">Alterner entre les réseaux WiFi et câblés</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-fr.htm#netcardconfig">Connexions câblées &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-fr.htm#dial-mod">Modems 56k </a></li>
+						    <li><a href="inet-ceni-fr.htm#netcardconfig">Se connecter au réseau &#8211; Ceni</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-fr.htm#fw-detect">Détection de Firmware non-libre</a></li>
+		<li><a href="nf-firm-fr.htm#non-free-firmware">Ajouter non-free aux Sources List</a></li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-fr.htm">Gestion de paquets &#8211; Mise à niveau (dist-upgrade)</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-fr.htm#apt-cook">Guide APT &#8211; Liste des dépôts de paquets &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-fr.htm#apt-cook">Guide APT &#8211; Liste des dépôts de paquets</a></li>
+					    <li><a href="sys-admin-apt-fr.htm#apt-install">Installer un nouveau paquet</a></li>
+					    <li><a href="sys-admin-apt-fr.htm#apt-delete">Supprimer un paquet</a></li>
+					    <li><a href="sys-admin-apt-fr.htm#apt-downgrade">Geler un paquet &#8211; Dégradation de paquet</a></li>
+					    <li><a href="sys-admin-apt-fr.htm#apt-cache">Recherche de paquets via apt-cache</a></li>
+					    <li><a href="sys-admin-apt-fr.htm#gui-pacsea">Recherche de paquets en mode GUI</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-fr.htm#kern-upgrade">Mise à niveau du noyau &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-fr.htm#kern-remove">Supprimer des noyaux</a></li>
+					    <li><a href="sys-admin-kern-upg-fr.htm#kern-upgrade">Mise à niveau du noyau</a></li>
+					    <li><a href="sys-admin-kern-upg-fr.htm#dmakms">Installer des modules de noyau dynamiquement via dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-fr.htm#apt-upgrade">Mise à niveau d'un système (dist-upgrade) &#8211; Vue d'ensemble &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-fr.htm#live-cd-upgrade">Mise à niveau depuis un Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-fr.htm#approx">Mise à niveau de plusieurs ordinateurs connectés</a></li>
+					    <li><a href="sys-admin-apt-fr.htm#apt-upgrade">Mise à niveau d'un système (dist-upgrade) &#8211; Vue d'ensemble</a></li>
+					    <li><a href="sys-admin-apt-fr.htm#du-st">Les étapes d'une mise à niveau d'un système</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-fr.htm">Administration du système</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-fr.htm#bois-prep">Mise à niveau du BIOS via FreeDOS</a></li>
+		<li><a href="vir-rkits-fr.htm#virus-rkits">Scanneurs de virus et de rootkits</a></li>
+		<li><a href="hd-install-fr.htm#adduser">Ajouter un utilisateur &#8211; Mots de passe &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-fr.htm#adduser">Ajouter un utilisateur</a></li>
+					    <li><a href="sys-admin-gen-fr.htm#pw-lost">Perte du mot de passe root &#8211; Nouveau mot de passe</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-fr.htm#start-services">Services (démons) &#8211; init &#8211; Niveaux d'exécution &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-fr.htm#start-services">Activer / Désactiver des services (démons)</a></li>
+					    <li><a href="sys-admin-gen-fr.htm#pkill">terminer un service ou un processus</a></li>
+					    <li><a href="sys-admin-gen-fr.htm#init">Niveaux d'exécution aptosid &#8211; init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-fr.htm#rsync">Sauvegarder le système (OS) &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-fr.htm#rdiff">Sauvegarder via rdiff</a></li>
+					    <li><a href="sys-admin-rsync-fr.htm#rsync">Sauvegarder via rsync</a></li>
+					    <li><a href="home-fr.htm#home-bu">Déplacer une partition /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-fr.htm#fonts">CUPS, Polices de caractères &amp; Son &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-fr.htm#fonts">Polices de caractères </a></li>
+					     <li><a href="sys-admin-gen-fr.htm#cups">CUPS &#8211; Gestion des imprimantes</a></li>
+					     <li><a href="sys-admin-gen-fr.htm#sound">Mixeurs de son (Sound Mixers)</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-fr.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-fr.htm#chroot">Grub2 - Récupération de Grub via un chroot</a></li>
+					    <li><a href="sys-admin-grub2-fr.htm#mbr-over-grub2">Grub2 &#8211; Secteur d'amorçage (MBR) écrasé</a></li>
+					    <li><a href="sys-admin-grub2-fr.htm#multi-os">Grub2 &#8211; Démarrage de plusieurs systèmes (OS)</a></li>
+					    <li><a href="sys-admin-grub2-fr.htm#grub1-grub2">Grub2 &#8211; Mise à niveau depuis Grub1</a></li>
+					    <li><a href="sys-admin-grub2-fr.htm#grub2">Grub2 &#8211; Vue d'ensemble</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Sponsored by webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid is proudly hosted by webtropia.com" alt="aptosid is proudly hosted by webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+	<div class="divider" id="net-set1">
+
+		<h2 id="top-header">Configurer un accès Wifi itinérant avec wpa</h2>
+						      <p><span class="highlight-3">Il vous faudra dans beaucoup de cas disposer sur une clé USB du firmware propriétaire correspondant à votre carte et l'installer sur votre système. Reportez-vous pour le faire à <a href="nf-firm-fr.htm#non-free-firmware">firmwares non-libres en paquets .deb sur une clé</a>.</span></p>
+
+					  <h3>Aperçu général</h3>
+
+							<p>wpa-roaming est une méthode <span class="highlight-3">graphique ou en mode console</span> vous permettant de choisir dans une liste un réseau sans fil auquel vous connecter.</p>
+
+							 <p>Si vous utilisez cette méthode de connexion alors qu'aucun réseau cablé n'est connecté à votre machine, Wlan0 sera appelé en priorité pour vous connecter à votre réseau Wifi préféré, à un réseau ouvert public ou tout autre réseau que vous auriez pre-déterminé. Si vous vous connectez par liaison cablée alors, l'établissement de cette connexion entrainera la déconnexion instantannée du Wifi. Quanf vous débrancherez le câble le Wifi se réactivera automatiquement.</p>
+
+
+				<h3>Configuration du réseau</h3>
+
+							<p>En tant que <span class="highlight-3">root</span> vous adapterez votre fichier <span class="highlight-3">/etc/network/interfaces</span> afin qu'il ressemble à ce qui suit. (l'identifiant de l'interface est sujet à variations):</p>
+
+<pre>
+# l'interface réseau loopback
+auto lo
+iface lo inet loopback
+
+
+#Ajout par l'utilisateur
+allow-hotplug wlan0
+iface wlan0 inet manual
+  wpa-roam /etc/wpa_supplicant/wpa-roam.conf
+
+#Cette ligne doit toujours se trouver ici
+iface default inet dhcp
+</pre>
+							<p>Ensuite wpa_supplicant aura besoin d'un fichier de configuration, c'est wpa-roam.conf</p>
+
+<pre>
+cp /usr/share/doc/wpasupplicant/examples/wpa-roam.conf /etc/wpa_supplicant/wpa-roam.conf
+</pre>
+							<p>Utilisez un éditeur de texte pour ouvrir le fichier</p>
+<pre>
+&lt;editeur&gt; /etc/wpa_supplicant/wpa-roam.conf
+</pre>
+
+							<p>Décommentez la ligne 30 (en enlevant <span class="highlight-2">#</span> en début de ligne). Vous devez le faire afin que la configuration soit prise en compte:</p>
+<pre>
+update_config=1
+</pre>
+							<p>Pour connecter une machine en vue d'une connexion immédiate à un réseau sécurisé, qu'il s'agisse en fonction du contexte d'une sécurisation WEP ou WPA-WPA2PSK, décommentez les lignes  (en enlevant <span class="highlight-2">#</span>: </p>
+
+							<p>Exemple WEP:</p>
+<pre>
+network={
+	ssid="debian" #Un réseau WEP dans cet exemple
+	key_mgmt=NONE
+	wep_key0=6162636465
+	wep_tx_keyidx=0
+}
+</pre>
+							<p>Exemple WPA:</p>
+<pre>
+network={
+	ssid="aptosid_Worldwide" #Un réseau WPA dans cet exemple
+	psk="mysecretpassphrase"
+}
+</pre>
+
+							<p>La suite protège votre configuration wpa-roam.conf de tout accès extérieurs. C'est indispensable car votre clé scrète est écrite dans ce fichier. Faites:</p>
+
+<pre>
+chmod 600 /etc/wpa_supplicant/wpa-roam.conf
+</pre>
+
+							<p>Activez la connexion sans fil :</p>
+<pre>
+ifup wlan0
+</pre>
+							<p>Vérifiez ensuite que vous êtes bien connecté au réseau choisi:</p>
+
+
+<pre>
+wpa_cli status
+</pre>
+							<p>Le retour de la commande doit ressemble à ceci:</p>
+<pre>
+Selected interface 'wlan0'
+bssid=94:0c:6d:aa:f4:42
+ssid=aptosid_Melbourne
+id=3
+pairwise_cipher=CCMP
+group_cipher=CCMP
+key_mgmt=WPA2-PSK
+wpa_state=COMPLETED
+ip_address=192.168.1.102
+</pre>
+							<p>Si vous ne voyez s'afficher aucune adresse IP, c'est que la connexion ne s'est pas établie. Dans ce cas re-vérifiez votre configuration après avoir stoppé le Wifi sur wlan0:</p>
+
+<pre>
+wpa_action wlan0 stop
+</pre>
+							<p>En cas de besoins spécialisés en terme de configurations réseau reportez-vous <a href="#net-set3">ici</a></p>
+
+		</div>
+		<div class="divider" id="net-set2">
+				<h2>Pour permettre de basculer de réseaux cablés à réseaux sans fil</h2>
+							<p>Lisez d'abord <a href="inet-ifplug-fr.htm">Basculer du câble au Wifi</a> car si votre configuration est incorrecte le basculement souhaité ne pourra s'établir.</p>
+
+							<p>Après avoir activé ifplugd la configuration devra ressembler à ceci: </p>
+<pre>
+auto lo
+iface lo inet loopback
+
+# contrôlé par ifplugd ... n'utilisez ni allow-hotplug ni d'option auto
+iface eth0 inet dhcp
+
+#Ajouts par l'utilisateur
+allow-hotplug wlan0
+iface wlan0 inet manual
+  wpa-roam /etc/wpa_supplicant/wpa-roam.conf
+
+#Cette ligne doit toujours figurer ici
+iface default inet dhcp
+</pre>
+
+		</div>
+		<div class="divider" id="net-set3">
+				<h2>Utilisation de wpa-roam.conf avec spécification manuelle de la configuration des réseaux</h2>
+
+							<p>Au moyen des options <span class="highlight-3">IDString</span> et <span class="highlight-3">Priority</span> vous pouvez assigner des priorités pour la connexion utilisée par défaut au démarrage. La plus haute priorité est conférée par la valeur <span class="highlight-3">1000</span>, la plus basse à <span class="highlight-3">0</span>. Vous devrez aussi specifier l'identifiant <span class="highlight-3">id_str</span> dans <span class="highlight-3">/etc/network/interfaces</span>.</p>
+
+						<h6>La syntaxe dans votre fichier /etc/network/interfaces.</h6>
+							<p>La première strophe est pour la connexion en DHCP, la seconde option pour une connexion par IP fixe. Pour ajuster ces paramètres:</p>
+<pre>
+# id_str="home_dhcp"
+iface home_dhcp inet dhcp
+
+#Cette ligne doit toujours figurer ici
+iface default inet dhcp
+
+# id_str="home_static"
+iface home_static inet static
+
+        address 192.168.0.20
+        netmask 255.255.255.0
+        network 192.168.0.0
+
+        broadcast 192.168.0.255
+        gateway 192.168.0.1
+</pre>
+						<h6>Exemples pratiques</h6>
+							<p>Imaginon que vous vouliez vous connecter automatiquement à votre connexion domestique Wifi une fois chez vous, assignez-lui une id_string "maison" et une priorité "15". Si vous vous deplacez et voulez pouvoir vous connecter à n'importe quel réseau ouvert disponible sans mot de passe, donnez-lui une IDString 'traqueur" et une priorité "1" (très basse). Mais s'il vous plait assurez-vous que votre connexion soit légale et déconnectez-vous s'il s'agi d'un réseau manifestement ouvert par erreur et non intentionnellement.</p>
+
+							<p>Les strophes dans /etc/network/interfaces pour notre exemple:</p>
+<pre>
+# /etc/network/interfaces -- configuration file for ifup(8), ifdown(8)
+
+# L'interface loopback
+# ajouée automatiquement à la mise-à-jour
+auto lo
+iface lo inet loopback
+
+allow-hotplug eth0
+iface eth0 inet dhcp
+
+allow-hotplug wlan0
+iface wlan0 inet manual
+  wpa-roam /etc/wpa_supplicant/wpa-roam.conf
+
+#this line must always be here
+iface default inet dhcp
+
+iface maison inet dhcp
+iface traqueur inet dhcp
+</pre>
+
+
+							<p>Dans /etc/wpa_supplicant/wpa-roam.conf (SSID et mots de passe sont changés ou juste expliquées) pour notre exemple:</p>
+<pre>
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+
+network={
+        ssid="mo,_ssid"
+        scan_ssid=1
+        psk=123ABC  ##ici la phrase de passe en code hexadécimal!!
+#       psk="mot-de-passe_en_ascii"   ##vous ne devriez pas en avoir besoin
+        key_mgmt=WPA-PSK
+        pairwise=TKIP
+        group=TKIP
+        auth_alg=OPEN
+        priority=15
+        id_str="maison"
+}
+
+network={
+        ssid=""
+        scan_ssid=1
+        key_mgmt=NONE
+        auth_alg=OPEN
+        priority=1
+        disabled=1   ## pas de de connexion automatisée, celle-là recours à wpa_cli ou wpa_gui
+        id_str="traqueur"
+}
+</pre>
+
+							<p>L'option "disabled=1" fera que vous ne serez pas connecté automatiquement à un réseau ouvert déterminé, mais que vous devrez activer le démon itinérant via wpa_gui ou wpa_cli.
+							Si peu importe et que vous voulez vous connecter sans égard à l'identité du réseau, supprimez purement et simplement la ligne en question ou commentez-là en y ajoutant un # en début de ligne.</p>
+
+				<h5>Cryptage WEP</h5>
+							<p>Pour activer en permanence le cryptage WEP dans votre fichier, la syntaxe sera:</p>
+<pre>
+network={
+	ssid="réseau wep de l'exemple"
+	key_mgmt=NONE
+	wep_key0="abcde"
+	wep_key1=0102030405
+	wep_tx_keyidx=0
+}
+</pre>
+
+
+				<h3>Compléments</h3>
+
+					<h6>1. Facile à exploiter</h6>
+
+							<p>Une fois fixée, vous pouvez réutiliser votre configuration sur d'autres machines pour d'autres contrôleurs réseau. Copiez juste /etc/network/interfaces (ajustez les noms des interfaces au contexte) et /etc/wpa_supplicant/wpa-roam.conf dans l'autre machine. Nul besoin d'installer quoique ce soit d'autre.</p>
+
+					<h6>2. Sauvegarde</h6>
+
+							<p>Celà peut être une onne idée de sauvegarder /etc/network/interfaces et /etc/wpa_supplicant/wpa-roam.conf, mais mieux <span class="highlight-3">en les cryptanten, car ils continnent quand-même des informations sensibles...</span>.</p>
+
+							<p>Une bonne méthode pour faire une sauvagarde cryptée des fichiers de configurations c'est d'utiliser tar avec gpg. En tant que root:</p>
+
+<pre>
+tar -cf- /etc/network/interfaces /etc/wpa_supplicant/wpa-roam.conf  |  gpg -c > backup_name.tar.gpg
+</pre>
+							<p>A file has now been created in $ HOME:<br />
+							backup_name.tar.gpg</p>
+
+							<p>To list the contents of the backup_name.tar.gpg file:</p>
+
+<pre>
+gpg -d -o - backup_name.tar.gpg  | tar vtf -
+</pre>
+							<p>To extract and decrypt the contents of the archive backup_name.tar.gpg file:</p>
+
+<pre>
+gpg -d -o - backup_name.tar.gpg  | tar vxf -
+</pre>
+
+					<h6>3. SSIDs Cachés</h6>
+							<p>Les SSIDs cachés sont détectés quand <span class="highlight-3">scan_ssid=1</span> est configuré dans le bloc correspondant au réseau.</p>
+    </div>
+    <div class="divider" id="rousec-wifi">
+			<h2>Sécuriser sommairement les modems/routeurs wifi</h2>
+
+							<p>Si vous avez contrôle sur un modem/routeur wifi, il existe plusieurs précautions de base pour le protéger des intrusions.</p>
+
+					<h6>Choix des protocoles de base</h6>
+						<ul>
+							<li>WPA2-PSK est la meilleure option.</li>
+							<li>Pour le cryptage choisissez AES.</li>
+							<li>Votre phrase de passe a intérêt à être balaise.</li>
+						</ul>
+
+
+					  <h6>Phrases de passe / mots de passe</h6>
+							<p>Pour une phrase de passe / un mot de passe réellement résistants et pas du tout évidents à mémoriser, utilisez pwgen dans un terminal (lire également: man pwgen):</p>
+
+<pre>
+$ pwgen -s 63 1
+VltnfGmGKXovVv2rmrCFFXBZ55Mij5bA6WytVJnVoKUqRn6dfjldG6MBrRo0Cdi
+</pre>
+						  <ul>
+							<li>-s = securisé (pas de mnémotechnique)</li>
+							<li>63 = nombre de caractère</li>
+							<li>1 = ne générer qu'une unique chaine aléatoire</li>
+
+						  </ul>
+							<p>Sans -s vous obtiendrez des mots usuels. quoiqu'il arrive peu probable que vous souhaitiez ceci:</p>
+<pre>
+$ pwgen 8 3
+Sooxae2s Niew9ugh Hi7eeloo
+</pre>
+							<p>Une fois votre phrase de passe / mot de passe généré(e) stockez-la dans fichier texte sur une clé USB et appliquez-là sur vos différentes machines utilisatrices du wifi. Ne les stockez pas sur un des ordinateurs.</p>
+
+						<h6>Un exemple de configuration de routeur:</h6>
+<pre>
+Version: WPA2-PSK
+Encryption: AES
+PSK Password: VltnfGmGKXovVv2rmrCFFXBZ55Mij5bA6WytVJnVoKUqRn6dfjldG6MBrRo0Cdi
+</pre>
+
+	      </div>
+			<div id="rev">Content last revised 21/08/2012 1620 UTC</div>
+</div>
+</body>
+</html>

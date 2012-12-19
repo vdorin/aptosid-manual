@@ -1,0 +1,569 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+	<title>Руководство aptosid - Обновление BIOS</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+	<style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+	<style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+	<script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision by kostiagol 28/07/2009 0045 hrs UTC-->
+<!--htdig_noindex--><div id="menu"> <!-- menu starts here - ru language maintained by RoEn -->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="Главная страница aptosid.com, форума и вики" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-ru.htm#search-on"><img src="../lib/logos/manual-search-22x22.png" title="Поиск в руководстве" alt="Search" /> Варианты поиска</a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Выбор языка - Choose another language CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="Переключение языка CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-ru.htm">Руководство aptosid</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-ru.htm#welcome-gen">Добро пожаловать! &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-ru.htm#cred-team">Благодарности</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-ru.htm#how-to">Об использовании &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-ru.htm#how-to">Об использовании</a></li>
+					  <li><a href="welcome-ru.htm#table-contents">Содержание</a></li>
+					</ul>
+					</li>
+		<li><a href="help-ru.htm#help-gen">Получение помощи &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-ru.htm#help-gen">Где получить помощь</a></li>
+					  <li><a href="help-ru.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-ru.htm#welcome-quick">Краткое руководство aptosid</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-ru.htm">Содержание ISO-образа, выпуски, список зеркал и запись</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-ru.htm#cd-content">Содержание ISO-образа и системные требования &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-ru.htm#rolling">Замечания к релизу</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-ru.htm#download-aptosid">Список зеркал, скачивание ISO-образа и запись &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-ru.htm#md5">Проверка ISO-образа с md5</a></li>
+					  <li><a href="cd-dl-burning-ru.htm#burn-nero">Запись ISO-образа в Windows</a></li>
+					  <li><a href="cd-dl-burning-ru.htm#burn-linux">Запись ISO-образа в Linux</a></li>
+					  <li><a href="cd-no-gui-burn-ru.htm#burning-no-gui">Скрипт burniso</a></li>
+					  <li><a href="cd-no-gui-burn-ru.htm#burn-no-gui-gen">Запись ISO-образа в консоли</a></li>
+					  <li><a href="cd-dl-burning-ru.htm#download-aptosid">Список зеркал</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-ru.htm">Режим ISO-образа</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-ru.htm#rootpw">Пароль root на ISO-образе</a></li>
+				<li><a href="live-mode-ru.htm#live-cd-installsoft">Установка ПО на ISO-образе</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-ru.htm">Терминал и оболочка</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-ru.htm#term-kon">Терминал и оболочка &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-ru.htm#term-kon">Терминал и оболочка</a></li>
+					  <li><a href="term-konsole-ru.htm#colours"> Цветная подсказка в терминале</a></li>
+					  <li><a href="term-konsole-ru.htm#cli-help">Помощь в терминале</a></li>
+					  <li><a href="help-ru.htm#init3-tools">Полезные инструменты в текстовом режиме (tty) - init 3</a></li>
+					  <li><a href="term-konsole-ru.htm#term-cmds">Команды в терминале</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-ru.htm#sux">Команда: sux/sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-ru.htm">Чит-коды</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-ru.htm#cheatcodes">Особые для ISO-образа aptosid чит-коды</a></li>
+				<li><a href="cheatcodes-ru.htm#cheatcodes-linux">Общие для параметров ядра чит-коды</a></li>
+				<li><a href="cheatcodes-vga-ru.htm#vga">Общие для видеокарты коды</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-ru.htm">Разбиение жесткого диска - по старому, GPT и LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-ru.htm#hd-ntfs3g">Запись на раздел NTFS с ntfs-3g</a></li>
+			<li><a href="part-lvm-ru.htm#part-lvm">Разметка с использованием LVM - Logical Volume Manager</a></li>
+			<li><a href="part-gparted-ru.htm#partition">Разметка диска с интерфесом &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-ru.htm#partition">Разметка диска с gparted/KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-ru.htm#ntfs">Разделы NTFS с gparted/KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-ru.htm#partition">Примеры разметки диска в консоли &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-ru.htm#partition">Разметка диска с cfdisk</a></li>
+					    <li><a href="part-cfdisk-ru.htm#formating">Форматирование разделов с cfdisk</a></li>
+					    <li><a href="part-gdisk-ru.htm#gdisk-6">Форматирование после разметки с gdisk</a></li>
+					    <li><a href="part-gdisk-ru.htm#gdisk-1">Разбиение по GPT с gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-ru.htm#part-example">Разметка диска - обзор &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-ru.htm#part-example">Примеры разметки диска</a></li>
+					  <li><a href="part-uuid-ru.htm#uuid">UUID, восстанавление fstab и создание новых точек монтирования</a></li>
+					  <li><a href="part-cfdisk-ru.htm#disknames">Имена жестких дисков</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-ru.htm">Установка aptosid на HD, USB, VM и шифрованные разделы</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-ru.htm#Inst-prep">Подготовка установки &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-ru.htm#Inst-prep">Подготовка установки</a></li>
+					  <li><a href="hd-install-ru.htm#Installation">Инсталляция на HD</a></li>
+					  <li><a href="hd-install-ru.htm#first-hd-boot">Первая загрузка</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-ru.htm#fromiso">Загрузка 'fromiso' &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-ru.htm#fromiso">Загрузка 'fromiso' - обзор</a></li>
+					  <li><a href="hd-install-opts-ru.htm#grub2-fromiso">Загрузка 'fromiso' с grub 2</a></li>
+					  <li><a href="hd-install-opts-ru.htm#fromiso-persist">Способы 'fromiso' и 'persist'</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-ru.htm#usb-hd">Инсталляция на USB &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-ru.htm#usb-hd">Инсталляция на USB-HD - способ aptosid -  aptosid-на-флешки</a></li>
+					  <li><a href="hd-ins-opts-oos-ru.htm#raw-usb">Запись aptosid на USB/SSD с помощью другого Linux, MS Windows или Mac OS</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-ru.htm#install-crypt">Установка на шифрованные разделы - cryptroot</a></li>
+		  <li><a href="nbdboot-ru.htm#nbd1">Загрузка aptosid по сети</a></li>
+		  <li><a href="hd-install-vmopts-ru.htm#vmopts">Опции инсталляций на VM (Virtual Machine)</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-ru.htm">Оборудование в Xorg и разные драйверы</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-ru.htm#mon-res">Разрешение экрана и мониторы  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-ru.htm#mon-res">Разрешение экрана и мониторы</a></li>
+					  <li><a href="hw-dev-mon-ru.htm#xrandr">Двойные экраны и xrandr</a></li>
+					  <li><a href="hw-dev-mon-ru.htm#mon-binary">Двойные экраны (используя двоичные файлы)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-ru.htm#foss-xorg">Микропрограммное обеспечение GPU &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-ru.htm#ati-3d">AMD/ATI 3D драйверы</a></li>
+					  <li><a href="gpu-ru.htm#intel">Intel 2D и 3D драйверы</a></li>
+					  <li><a href="gpu-ru.htm#nvidia">Nvidia 3D драйверы</a></li>
+					  <li><a href="gpu-ru.htm#foss-xorg">Свободные Xorg-драйверы</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-ru.htm#fw-detect">Определение несвободного микропрограммного обеспечения - non-free </a></li>
+			  <li><a href="nf-firm-ru.htm#non-free-firmware">Добавление non-free в список источников</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-ru.htm">Оконные менеджеры</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-ru.htm">Оконные менеджеры KDE и Xfce&#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-ru.htm#xfce-notes">Полезные инструменты для Xfce</a></li>
+					    <li><a href="wm-dm-ru.htm#install-add">Полезные инструменты для KDE</a></li>
+					    <li><a href="wm-dm-ru.htm#desk-freeze">Рабочий стол зависает</a></li>
+					    <li><a href="wm-dm-ru.htm#kde-login">Проблемы входа в KDE</a></li>
+					    <li><a href="wm-dm-ru.htm#ch-th">Управление темами</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-ru.htm#dm">Установква дополнительных дисплейных менеджеров</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-ru.htm">Интернет, Wifi и локальная сеть</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-ru.htm">Мета-пакет LAMP &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-ru.htm#serv-apache">Мета-пакет LAMP</a></li>
+					    <li><a href="lamp-apache-ru.htm#serv-ftp">Клиенты FTP</a></li>
+					    <li><a href="lamp-apache-ru.htm#serv-sec">Защищенные протоколы</a></li>
+					    <li><a href="lamp-apache-ru.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-ru.htm#serv-mysql">Настройка MySQL</a></li>
+					    <li><a href="lamp-ppp-ru.htm#serv-php">PHP в apache</a></li>
+					    <li><a href="ntp-server-ru.htm#ntp-server">Установка сервера времени</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-ru.htm#tor">Брандмауэры и веб-прокси &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-ru.htm#tor">Маршрутизатор tor</a></li>
+					    <li><a href="tor-privoxy-ru.htm#privoxy">Веб-прокси privoxy</a></li>
+					    <li><a href="inet-ceni-ru.htm#firewalls">Брандмауэры</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-ru.htm#ssh-x">Samba и ssh &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-ru.htm#setup">Сервер samba</a></li>
+						  <li><a href="samba-ru.htm#configure">Интеграции samba в сеть Windows</a></li>
+						  <li><a href="ssh-ru.htm#ssh-fs">Удаленное монтирование с ssh</a></li>
+						  <li><a href="ssh-ru.htm#ssh-x">Приложения X-Windows с ssh</a></li>
+						  <li><a href="ssh-ru.htm#ssh-f">Интерфейс ssh и Konqueror</a></li>
+						  <li><a href="ssh-ru.htm#ssh-w">ssh X-forwarding с Windows-компом</a></li>
+						  <li><a href="ssh-ru.htm#ssh">Безопасность с ssh</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-ru.htm#netcardconfig">Связи с WiFi &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-ru.htm#netcardconfig">Настройка сетевых карт с ceni</a></li>
+						    <li><a href="inet-wpagui-ru.htm#wpa-roaming-gui">Графическoe ппиложение wpa_gui для WiFi</a></li>
+						    <li><a href="inet-setup-ru.htm#net-set1">Роуминг с WiFi</a></li>
+						    <li><a href="inet-wpa-ru.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-ru.htm#hotswitch">Переключение сети между WiFi и проводной связью</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-ru.htm#netcardconfig">Проводная связь &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-ru.htm#dial-mod">56килобитовые модемы</a></li>
+						    <li><a href="inet-ceni-ru.htm#netcardconfig">Настройка сетевых карт с ceni</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-ru.htm#fw-detect">Определение несвободного микропрограммного обеспечения - non-free </a></li>
+		<li><a href="nf-firm-ru.htm#non-free-firmware">Добавление non-free в список источников</a></li>			
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-ru.htm">Управление пакетами и обновление системы с dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-ru.htm#apt-cook">apt и репозитории &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-ru.htm#apt-cook">apt и репозитории</a></li>
+					    <li><a href="sys-admin-apt-ru.htm#apt-install">Установка нового пакета</a></li>
+					    <li><a href="sys-admin-apt-ru.htm#apt-delete">Удаление пакета</a></li>
+					    <li><a href="sys-admin-apt-ru.htm#apt-downgrade">Понижение версии с hold</a></li>
+					    <li><a href="sys-admin-apt-ru.htm#apt-cache">Поиск пакетной иформации с apt-cache</a></li>
+					    <li><a href="sys-admin-apt-ru.htm#gui-pacsea">Графическая поисковая программа</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-ru.htm#kern-upgrade">Обновление ядра &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-ru.htm#kern-remove">Удаление ядра</a></li>
+					    <li><a href="sys-admin-kern-upg-ru.htm#kern-upgrade">Обновление ядра</a></li>
+					    <li><a href="sys-admin-kern-upg-ru.htm#dmakms">Динамическая инсталляция модулей ядра с dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-ru.htm#apt-upgrade">Обновления системы с dist-upgrade - Краткий обзор &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-ru.htm#live-cd-upgrade">Обновление с ISO-образа</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-ru.htm#approx">Обновление нескольких компьютеров в локальной сети</a></li>
+					    <li><a href="sys-admin-apt-ru.htm#apt-upgrade">Краткий обзор oбновления системы с dist-upgrade</a></li>
+					    <li><a href="sys-admin-apt-ru.htm#du-st">Шаги обновления системы с dist-upgrade</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-ru.htm">Системное администрирование</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-ru.htm#bois-prep">Обновление BIOS с FreeDOS</a></li>
+		<li><a href="vir-rkits-ru.htm#virus-rkits">Сканер безопасности</a></li>
+		<li><a href="hd-install-ru.htm#adduser">Новый пользователь и пароли &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-ru.htm#adduser">Добавление нового пользователя</a></li>
+					    <li><a href="sys-admin-gen-ru.htm#pw-lost">Восстановление root-пароля</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-ru.htm#start-services">Службы и режимы загрузки &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-ru.htm#start-services">Выбор служб</a></li>
+					    <li><a href="sys-admin-gen-ru.htm#pkill">Завершениe службы или процесса</a></li>
+					    <li><a href="sys-admin-gen-ru.htm#init">Режимы загрузки init в aptosid</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-ru.htm#rsync">Резервирование системы &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-ru.htm#rdiff">Резервирование с rdiff</a></li>
+					    <li><a href="sys-admin-rsync-ru.htm#rsync">Резервирование с rsync</a></li>
+					    <li><a href="home-ru.htm#home-bu">Перемещение /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-ru.htm#fonts">Cups, шрифты и звук &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-ru.htm#fonts">Шрифты</a></li>
+					     <li><a href="sys-admin-gen-ru.htm#cups">Сервер cups</a></li>
+					     <li><a href="sys-admin-gen-ru.htm#sound">Звуковые микшеры</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-ru.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-ru.htm#chroot">Grub2 - Восстановление grub с chroot</a></li>
+					    <li><a href="sys-admin-grub2-ru.htm#mbr-over-grub2">Grub2 - Удаление из MBR</a></li>
+					    <li><a href="sys-admin-grub2-ru.htm#multi-os">Grub2 - Двойная и мультизагрузка</a></li>
+					    <li><a href="sys-admin-grub2-ru.htm#grub1-grub2">Grub2 - Обновление с grub1</a></li>
+					    <li><a href="sys-admin-grub2-ru.htm#grub2">Grub2 - Краткий обзор</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Наш спонсор webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid размещен на сервере webtropia.com" alt="aptosid размещен на сервере webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+	<div class="divider" id="bois-prep">
+
+		<h2 id="top-header">Обновление BIOS с помощью FreeDOS</h2>
+
+							<p>Иногда можно или даже нужно обновить BIOS, если изготовитель материнской платы предпринял его улучшение. Установочные программы, как правило, предназначены для запуска под MS-DOS.</p>
+
+							<p>Мы представим вариант обновления BIOS в Линуке с флешки или карты памяти micro/mini/SD (с подходящим переходником).</p>
+
+							<p>Сперва нужно в BIOS разрешить загрузку с USB и убедиться в том,  что BIOS умеет работать с USB-накопителями. Некоторые BIOS распознают USB-приводы для гибких магнитных дисков, дисководы CD-ROM или ZIP-дисководы. Большинство из них подойдёт, но обновление BIOS может оказаться посложнее. Часто бывает что это единственная возможность (в первую очередь это касается нэтбуков).</p>
+
+				<h3>Вам понадобятся:</h3>
+						<ol>
+							<li>USB-флешка, желательно до 2 ГБ (FAT16 не позволяет видеть более чем 2 ГБ), а установленная базовая FreeDOS (fdbasecd.iso) всё равно использует только 5,8 МБ. <span class="highlight-3">FAT16 является рекомендованным форматом, так как FAT32 не во всех BIOS обнаруживается как загрузочный раздел</span>.</li>
+
+							<li>ISO-образ FreeDOS <a href="http://www.freedos.org/freedos/files/"> fdbasecd.iso</a> (8MB).</li>
+
+							<li>qemu (apt-get install qemu). Qemu предназначена для установки FreeDOS на флешке. В qemu встроенный BIOS позволяет FreeDOS распознать USB-флешку как обычный жесткий диск, так что Вы можете установить и без прожигания CD с FreeDOS.</li>
+						</ol>
+
+				<h5><span class="highlight-2">Очень важное замечание:</span></h5>
+				<h5><span class="highlight-2">Нельзя монтировать USB-флешку! Будьте внимательны при выборе устройства, все данные на выбранном диске будут удалены без какой-либо возможности восстановления данных, например, на основном жестком диске.</span></h5>
+
+	<div class="spacer02"></div>
+							<p>Подключите USB-флешку. <span class="highlight-2">Помните! Ёе нельзя монтировать. </span>Проверьте dmesg (последние сообщения, после того, как Вы подключили флешку), в котором написан номер устройства, под которым флешка зарегистрирована в системе. В нашем примере <span class="highlight-3">/dev/sdb</span>.</p>
+
+							<p>Содержание флешки <span class="highlight-3">будет удалено</span>. Вы можете стереть всю флешку, а не только первые 16 МБ, как в примере.</p>
+
+
+<pre>
+$ sux
+Password:
+dd if=/dev/zero of=/dev/sdb bs=1M count=16
+16+0 records in
+16+0 records out
+16777216 bytes (17 MB) copied, 2.35751 s, 7.1 MB/s
+</pre>
+					<h3>Разметка USB-флешки</h3>
+							<p>Самое трудное, скорее всего, это правильно разметить и форматировать флешку.</p>
+
+							<p>Установите метки раздела на FAT16 и для флешки размером менее 2 Гб (для лучшей совместимости).</p>
+
+							<p>Запустите fdisk для разбивки:</p>
+
+<pre>
+# fdisk /dev/sdb
+fdisk /dev/sdb
+Device contains neither a valid DOS partition table, nor Sun, SGI or OSF disklabel
+Building a new DOS disklabel with disk identifier 0xa8993739.
+Changes will remain in memory only, until you decide to write them.
+After that, of course, the previous content won't be recoverable.
+
+Warning: invalid flag 0x0000 of partition table 4 will be corrected by w(rite)
+</pre>
+							<p>Теперь создайте новый раздел:</p>
+<pre>
+Command (m for help): <span class="highlight-3"><b>n</b></span>
+Command action
+   e   extended
+   p   primary partition (1-4)
+<span class="highlight-3"><b>p</b></span>
+Partition number (1-4): <span class="highlight-3"><b>1</b></span>
+First cylinder (1-1018, default 1):
+Using default value 1
+Last cylinder or +size or +sizeM or +sizeK (1-1018, default 1018):
+Using default value 1018
+</pre>
+							<p>Убедитесь в создании раздела, распечатав таблицу разделов:</p>
+<pre>
+Command (m for help): <span class="highlight-3"><b>p</b></span>
+
+Disk /dev/sdb: 2003 MB, 2003828736 bytes
+62 heads, 62 sectors/track, 1018 cylinders
+Units = cylinders of 3844 * 512 = 1968128 bytes
+Disk identifier: 0xa8993739
+
+   Device Boot      Start         End      Blocks   Id  System
+/dev/sdb1               1        1018     1956595+  83  Linux
+</pre>
+							<p>Установите правильный код для FAT16 '6':</p>
+<pre>
+Command (m for help): <span class="highlight-3"><b>t</b></span>
+Selected partition 1
+Hex code (type L to list codes): <span class="highlight-3"><b>l</b></span>
+
+ 0  Empty           1e  Hidden W95 FAT1 80  Old Minix       be  Solaris boot
+ 1  FAT12           24  NEC DOS         81  Minix / old Lin bf  Solaris
+ 2  XENIX root      39  Plan 9          82  Linux swap / So c1  DRDOS/sec (FAT-
+ 3  XENIX usr       3c  PartitionMagic  83  Linux           c4  DRDOS/sec (FAT-
+ 4  FAT16 &lt;32M      40  Venix 80286     84  OS/2 hidden C:  c6  DRDOS/sec (FAT-
+ 5  Extended        41  PPC PReP Boot   85  Linux extended  c7  Syrinx
+ 6  FAT16           42  SFS             86  NTFS volume set da  Non-FS data
+ 7  HPFS/NTFS       4d  QNX4.x          87  NTFS volume set db  CP/M / CTOS / .
+ 8  AIX             4e  QNX4.x 2nd part 88  Linux plaintext de  Dell Utility
+ 9  AIX bootable    4f  QNX4.x 3rd part 8e  Linux LVM       df  BootIt
+ a  OS/2 Boot Manag 50  OnTrack DM      93  Amoeba          e1  DOS access
+ b  W95 FAT32       51  OnTrack DM6 Aux 94  Amoeba BBT      e3  DOS R/O
+ c  W95 FAT32 (LBA) 52  CP/M            9f  BSD/OS          e4  SpeedStor
+ e  W95 FAT16 (LBA) 53  OnTrack DM6 Aux a0  IBM Thinkpad hi eb  BeOS fs
+ f  W95 Ext'd (LBA) 54  OnTrackDM6      a5  FreeBSD         ee  EFI GPT
+10  OPUS            55  EZ-Drive        a6  OpenBSD         ef  EFI (FAT-12/16/
+11  Hidden FAT12    56  Golden Bow      a7  NeXTSTEP        f0  Linux/PA-RISC b
+12  Compaq diagnost 5c  Priam Edisk     a8  Darwin UFS      f1  SpeedStor
+14  Hidden FAT16 &lt;3 61  SpeedStor       a9  NetBSD          f4  SpeedStor
+16  Hidden FAT16    63  GNU HURD or Sys ab  Darwin boot     f2  DOS secondary
+17  Hidden HPFS/NTF 64  Novell Netware  b7  BSDI fs         fd  Linux raid auto
+18  AST SmartSleep  65  Novell Netware  b8  BSDI swap       fe  LANstep
+1b  Hidden W95 FAT3 70  DiskSecure Mult bb  Boot Wizard hid ff  BBT
+1c  Hidden W95 FAT3 75  PC/IX
+
+Hex code (type L to list codes): <span class="highlight-3"><b>6</b></span>
+
+Changed system type of partition 1 to 6 (FAT16)
+</pre>
+							<p>Активируйте новый раздел:</p>
+<pre>
+Command (m for help): <span class="highlight-3"><b>a</b></span>
+Partition number (1-4): <span class="highlight-3"><b>1</b></span>
+</pre>
+							<p>Распечатайте новую таблицу разделов на экране и убедитесь что новый раздел активирован: </p>
+<pre>
+Command (m for help): <span class="highlight-3"><b>p</b></span>
+
+Disk /dev/sdb: 2003 MB, 2003828736 bytes
+62 heads, 62 sectors/track, 1018 cylinders
+Units = cylinders of 3844 * 512 = 1968128 bytes
+Disk identifier: 0xa8993739
+
+   Device Boot      Start         End      Blocks   Id  System
+/dev/sdb1   *           1        1018     1956595+   6  FAT16
+</pre>
+							<p>Соханите новую таблицу разделов на Вашей флешке и закончите fdisk:</p>
+<pre>
+Command (m for help): <span class="highlight-3"><b>w</b></span>
+The partition table has been altered!
+
+Calling ioctl() to re-read partition table.
+
+WARNING: If you have created or modified any DOS 6.x
+partitions, please see the fdisk manual page for additional
+information.
+Syncing disks.
+# exit
+</pre>
+							<p>Форматируйте новый раздел на флешке:</p>
+<pre>
+mkfs -t vfat -n FreeDOS /dev/sdb1
+exit
+</pre>
+							<p>Подготовка завершена, т.е. USB-флешка разделена и отформатирована. Теперь можно начинать процесс установки.</p>
+
+					<h3>Загрузка FreeDOS в qemu</h3>
+
+							<p>Так как DOS не знаком с понятием USB-накопителей, нужно найти путь, чтобы обмануть FreeDOS выдав её за обыкновенный жёсткий диск. При обычной загрузке эту функцию перенимает BIOS, в нашем же случае мы должны использовать для этой цели qemu:</p>
+<pre> как пользователь $:
+qemu -hda /dev/sdb -cdrom /полный/путь/до/fdbasecd.iso -boot d </pre>
+							<p>Комбинация клавиш <span class="highlight-1">ctrl-alt</span> переключает мышку и клавиатуру между qemu и хост-системой. Таким образом, можно переключаться с одной рабочей среды на другую и читать следующий шаг в инструкции.
+        </p>
+
+		<div class="screenshot"><img src="../lib/images-common/images-qemu-freedos/qemu-boot01.jpg" title="QEMU FreeDOS" alt="QEMU FreeDOS" /></div>
+							<p>Таким образом, диск с FreeDOS загружается, а USB-флешка распознаётся в качестве основного жёсткого диска (благодаря способности qemu к эмуляции BIOS). Теперь можно выбрать инсталятор в BOOT-меню виртуального FreeDOS:</p>
+<pre>
+1) Continue to boot FreeDOS from CD-ROM
+<span class="highlight-3"><b>1</b></span>
+enter
+</pre>
+	<div class="spacer02"></div>
+							<p>Затем выберите дефолтную установку <span class="highlight-3">1</span> или ответьте <span class="highlight-3">Yes</span> в случае, если будет задан вопрос.</p>
+
+	<div class="spacer02"></div>
+		<div class="screenshot"><img src="../lib/images-common/images-qemu-freedos/qemu-boot02.jpg" title="Freedos Installation - 1" alt="freedos-inst1" /></div>
+
+		<div class="spacer02"></div>
+	<div class="screenshot"><img src="../lib/images-common/images-qemu-freedos/qemu-boot04.jpg" title="Freedos Installation - 2"  alt="freedos-inst2" /></div>
+
+	<div class="spacer02"></div>
+
+	<div class="spacer02"></div>
+		<div class="screenshot"><img src="../lib/images-common/images-qemu-freedos/qemu-boot09.jpg" title="Freedos Installation - 3" alt="freedos-inst3" /></div>
+
+
+	<div class="spacer02"></div>
+
+							<p>Инсталятор потребует перезапуска систему, <span class="highlight-3">этого пока не надо делать, так как нужно ещё удалить 2 ошибки в FreeDOS: в Boot-меню и mbr</span>. Нажмите клавишу <span class="highlight-3"><b>n</b></span>.</p>
+	<div class="spacer02"></div>
+		<div class="screenshot"><img src="../lib/images-common/images-qemu-freedos/qemu-boot18.jpg" title="Freedos Installation - do not reboot type n" alt="freedos-do not reboot type n" /></div>
+
+	<div class="spacer02"></div>
+				<h3>Запись загрузочного сектора на USB-флешку</h3>
+							<p>Ошибочный mbr можно удалить с помощью:</p>
+
+<pre>
+fdisk /mbr 1
+</pre>
+							<p>Ошибка в меню загрузочного сектора удаляется в новой конфигурации fdconfig.sys при введении команды:</p>
+<pre>
+cd \
+edit fdconfig.sys
+</pre>
+							<p>А строчку, начиная с command.com, нужно изменить так:</p>
+<pre>
+1234?SHELLHIGH=C:\FDOS\command.com C:\FDOS /D /P=C:\fdauto.bat /K set
+(не изменяйте эту команду, а лишь добавьте "1234?"  в начало строчки (до SHELLHIGH==C:\FDOS\command.com .....
+Имейте в виду, читать это нужно как: <span class="highlight-3">1234?</span>
+</pre>
+		<div class="screenshot"><img src="../lib/images-common/images-qemu-freedos/qemu-boot23.jpg" title="Edit fdconfig.sys " alt="fdconfig.sys" /></div>
+	<div class="spacer02"></div>
+							<p><span class="highlight-2">Ничего больше менять нельзя, так как строчка зависит от настроек системы.</span></p>
+
+							<p>Сохраните и выйдите из "edit":</p>
+<pre>
+[alt]+[f]
+</pre>
+							<p>Вернувшись к командной строке, Вы можете покинуть qemu.</p>
+
+ 							<p>Теперь проводим тест - загружается ли qemu с USB-флешки.</p>
+<pre>
+qemu -hda /dev/sdb -boot c
+</pre>
+ 							<p>Флешка должна выполнить загрузку и содержит полную версию инсталляции FreeDOS (5,4 MБ), чтобы обновить BIOS. При этом не стоит загружать драйвера <span class="highlight-3">(в меню опция 4), himem.sys и emm386 могут навредить работе флеш-устройств!</span></p>
+
+				<h3>Обновление BIOS</h3>
+							<p>Вставьте флешку с FreeDOS в работающий компьютер, смонтируйте её и загрузите на неё файлы BIOS (рекомендуемые изготовителем). Затем размонтируйте флешку.</p>
+
+							<p>Выключите компьютер, вставьте FreeDOS USB-накопитель. Затем включите компьютер, настройте BIOS так, чтобы компьютер загрузился с USB-накопителя чтобы запустить FreeDOS. После этого, следуйте указаниям изготовителя, BIOS или материнской платы.</p>
+
+	</div>
+
+		<div id="rev">Содержание, последний раз пересмотрено 14/08/2010 0100 UTC </div>
+
+</div>
+</body>
+</html>

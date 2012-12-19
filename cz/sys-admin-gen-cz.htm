@@ -1,0 +1,704 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cs" lang="cs">
+<head>
+	<title>Manuály aptosidu - Administrace systému</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Poslední revizi překladu provedl pumrel 2.6.2011-->
+<!--htdig_noindex--><div id="menu"> <!-- menu starts here -cz lang maintainer pumrel-->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="Na stránky aptosid.com, forum a wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-cz.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="Prohledávat manuál" alt="Search" />Hledat online - offline</a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Vyberte jiný jazyk - Choose another language CS, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="lang-switch CS, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-cz.htm">Manuál operačního systému aptosid</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-cz.htm#welcome-gen">Manuál operačního systému aptosid &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-cz.htm#cred-team">Autoři</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-cz.htm#how-to">Jak používat tento manuál &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-cz.htm#how-to">Jak používat tento manuál</a></li>
+					  <li><a href="welcome-cz.htm#table-contents">Obsah</a></li>
+					</ul>
+					</li>
+		<li><a href="help-cz.htm#help-gen">Kde hledat pomoc &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-cz.htm#help-gen">Kde a jak hledat pomoc</a></li>
+					  <li><a href="help-cz.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-cz.htm#welcome-quick">První kroky se aptosidem</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-cz.htm">Obsah ISO, Vydání, Zrcadla pro stahování a Vypalování</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-cz.htm#cd-content">Obsah ISO a nároky na systém &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-cz.htm#rolling">Poznámky k vydání</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-cz.htm#download-aptosid">Zrcadla pro stahování a vypálení &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-cz.htm#md5">Kontrolní součet md5</a></li>
+					  <li><a href="cd-dl-burning-cz.htm#burn-nero">Vypálení ve Windows</a></li>
+					  <li><a href="cd-dl-burning-cz.htm#burn-linux">Vypálení v Linuxu</a></li>
+					  <li><a href="cd-no-gui-burn-cz.htm#burning-no-gui">Skript burniso</a></li>
+					  <li><a href="cd-no-gui-burn-cz.htm#burn-no-gui-gen">Vypálení z terminálu</a></li>
+					  <li><a href="cd-dl-burning-cz.htm#download-aptosid">Zrcadla pro stažení aptosidu</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-cz.htm">Live Mód</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-cz.htm#rootpw">Root-heslo v aptosid-Live</a></li>
+				<li><a href="live-mode-cz.htm#live-cd-installsoft">Instalace programů pod aptosid-Live</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-cz.htm">Terminál / Konsole</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-cz.htm#term-kon">Terminál / Konsole &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-cz.htm#term-kon">Terminál / Konsole</a></li>
+					  <li><a href="term-konsole-cz.htm#colours">Barevné řádky terminálu</a></li>
+					  <li><a href="term-konsole-cz.htm#cli-help">Nápověda terminálu</a></li>
+					  <li><a href="help-cz.htm#init3-tools">Užitečné nástroje v textovém módu(tty) - init 3</a></li>
+					  <li><a href="term-konsole-cz.htm#term-cmds">Seznam příkazů v terminálu Linuxu</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-cz.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-cz.htm">Spouštěcí příkazy</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-cz.htm#cheatcodes">Spouštěcí příkazy pod Live-ISO specifické pro aptosid</a></li>
+				<li><a href="cheatcodes-cz.htm#cheatcodes-linux">Spouštěcí příkazy pro Linux</a></li>
+				<li><a href="cheatcodes-vga-cz.htm#vga">VGA kódy</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-cz.htm">Vytváření diskových oddílů - tradičně, s GPT a s LVM</a>
+		<ul class="sub-menu" id="sm6">
+			  <li><a href="part-gparted-cz.htm#hd-ntfs3g">Zapisování na diskový oddíl NTFS pomocí ntfs-3g</a></li>
+			  <li><a href="part-lvm-cz.htm#part-lvm">Vytvoření disk. oddílů pro použití LVM - Logical Volume Manager</a></li>
+			  <li><a href="part-gparted-cz.htm#partition">Vytvoření diskových oddílů v grafickém rozhraní &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-cz.htm#partition">Vytvoření diskových oddílů pomocí GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-cz.htm#ntfs">Změna velikosti diskového oddílu NTFS pomocí GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-cz.htm#partition">Vytvoření diskových oddílů s CLI &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-cz.htm#partition">Vytváření diskových oddílů pomocí cfdisk</a></li>
+					    <li><a href="part-cfdisk-cz.htm#formating">Formátování po vytvoření diskových oddilů pomocí cfdisk</a></li>
+					    <li><a href="part-gdisk-cz.htm#gdisk-6">Formátování po vytvoření diskových oddílů s gdiskem</a></li>
+					    <li><a href="part-gdisk-cz.htm#gdisk-1">Diskové oddíly GPT s gdiskem</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-cz.htm#part-example">Základy vytváření diskových oddílů &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-cz.htm#part-example">Příklady velikostí diskových oddílů</a></li>
+					  <li><a href="part-uuid-cz.htm#uuid">UUID, přestavění fstab a vytváření přípojných bodů</a></li>
+					  <li><a href="part-cfdisk-cz.htm#disknames">Pojmenovávání diskových oddílů a ostatní</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-cz.htm">Možnosti instalace - HD, USB, VM and Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-cz.htm#Inst-prep">Příprava instalace &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-cz.htm#Inst-prep">Příprava instalace</a></li>
+					  <li><a href="hd-install-cz.htm#Installation">Instalace na pevný disk</a></li>
+					  <li><a href="hd-install-cz.htm#first-hd-boot">První spuštění</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-cz.htm#fromiso">Načtení pomocí fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-cz.htm#fromiso">Načtení pomocí fromiso - Přehled</a></li>
+					  <li><a href="hd-install-opts-cz.htm#grub2-fromiso">Načtení 'fromiso' s Grub2</a></li>
+					  <li><a href="hd-install-opts-cz.htm#fromiso-persist">fromiso a persist</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-cz.htm#usb-hd">Instalace na USB-disk &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-cz.htm#usb-hd">Instalace na USB-disk - specifické pro aptosid - aptosid-on-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-cz.htm#raw-usb">Zapsaní aptosidu na USB/SSD-disk s jakýmkoliv systémem Linux, MS Windows nebo Mac OS X</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-cz.htm#install-crypt">Instalace na šifrovené diskové oddíly - cryptroot</a></li>
+		  <li><a href="nbdboot-cz.htm#nbd1">Načtení aptosidu přes síť</a></li>
+		  <li><a href="hd-install-vmopts-cz.htm#vm">Možnosti instalace ve Virtuálním Stroji</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-cz.htm">Grafické karty, monitory, Xorg,  &amp; ovladače</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-cz.htm#mon-res">Rozlišení obrazovky a monitory &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-cz.htm#mon-res">Rozlišení obrazovky a monitory</a></li>
+					  <li><a href="hw-dev-mon-cz.htm#xrandr">Dva monitory a xrandr</a></li>
+					  <li><a href="hw-dev-mon-cz.htm#mon-binary">Dva monitory (za použití binárních ovladačů)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-cz.htm#foss-xorg">Ovladače GPU &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-cz.htm#ati-3d">3D ovladače pro AMD/ATI</a></li>
+					  <li><a href="gpu-cz.htm#intel">2D a 3D ovladače pro Intel</a></li>
+					  <li><a href="gpu-cz.htm#nvidia">3D ovladače pro Nvidia</a></li>
+					  <li><a href="gpu-cz.htm#foss-xorg">Svobodné ovladače Xorg</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-cz.htm#fw-detect">Rozpoznání firmwaru - non-free</a></li>
+			  <li><a href="nf-firm-cz.htm#non-free-firmware">Přidání non-free do seznamu zdrojů</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-cz.htm#install-add">Správci oken</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-cz.htm">KDE and XFCE Správci oken &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-cz.htm#xfce-notes">Užitečné dodatečné aplikace pro Xfce</a></li>
+					    <li><a href="wm-dm-cz.htm#install-add">Užitečné dodatečné aplikace pro KDE</a></li>
+					    <li><a href="wm-dm-cz.htm#desk-freeze">Zamrznutí plochy</a></li>
+					    <li><a href="wm-dm-cz.htm#kde-login">Nejde se přihlásit do KDE</a></li>
+					    <li><a href="wm-dm-cz.htm#ch-th">Změna témat</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-cz.htm#dm">Instalace dodatečných správců zobrazení</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-cz.htm">Připojení k internetu, WiFi, LAN a sítím</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-cz.htm">Sestava LAMP aptosidu &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-cz.htm#serv-apache">Sestava LAMP aptosidu</a></li>
+					    <li><a href="lamp-apache-cz.htm#serv-ftp">FTP klienty</a></li>
+					    <li><a href="lamp-apache-cz.htm#serv-sec">Bezpečnostní protokoly</a></li>
+					    <li><a href="lamp-apache-cz.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-cz.htm#serv-mysql">Nastavení MySQL</a></li>
+					    <li><a href="lamp-ppp-cz.htm#serv-php">PHP v Apache</a></li>
+					    <li><a href="ntp-server-cz.htm#ntp-server">Nastavení Timeserveru</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-cz.htm#tor">Firewally and Soukromí &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-cz.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-cz.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-cz.htm#firewalls">Firewally</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-cz.htm#ssh-x">SSH a Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-cz.htm#setup">Nastavení Samba-Serveru</a></li>
+						  <li><a href="samba-cz.htm#configure">Konfigurace SAMBY (Windows)</a></li>
+						  <li><a href="ssh-cz.htm#ssh-fs">Vzdálené připojení přes SSH</a></li>
+						  <li><a href="ssh-cz.htm#ssh-x">Aplikace X přes SSH</a></li>
+						  <li><a href="ssh-cz.htm#ssh-f">Grafické rozhraní přes SSH s Konquerorem</a></li>
+						  <li><a href="ssh-cz.htm#ssh-w">Přenos rozhraní X přes SSH z Windows-PC</a></li>
+						  <li><a href="ssh-cz.htm#ssh">SSH a soukromí</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-cz.htm#netcardconfig">WIFI připojení &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-cz.htm#netcardconfig">Připojení se online - Ceni</a></li>
+						    <li><a href="inet-wpagui-cz.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-cz.htm#net-set1">WiFi - nastavení pro WiFi roaming</a></li>
+						    <li><a href="inet-wpa-cz.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-cz.htm#hotswitch">Přepínání síťového připojení mezi WiFi a Kabelovým</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-cz.htm#netcardconfig">Kabelové připojení &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-cz.htm#dial-mod">56k Modemy</a></li>
+						    <li><a href="inet-ceni-cz.htm#netcardconfig">Připojení se online- Ceni</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-cz.htm#fw-detect">Rozpoznání firmwaru - non-free</a></li>
+		<li><a href="nf-firm-cz.htm#non-free-firmware">Přidání non-free do seznamu zdrojů</a></li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-cz.htm">Správa balíčků dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-cz.htm#apt-cook">APT návod a zdroje softwaru &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-cz.htm#apt-cook">APT-návod (CookBook) a zdroje software</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#apt-install">Instalace nového balíčku</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#apt-delete">Smazání balíčku</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#apt-downgrade">Podržení balíčku nebo instalace nižší verze</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#apt-cache">Vyhledávání balíčků pomocí apt-cache</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#gui-pacsea">Vyhledávání balíčků v graf. rozhraní</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-cz.htm#kern-upgrade">Povýšení verze jádra (kernel) &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-cz.htm#kern-remove">Odstranění jádra</a></li>
+					    <li><a href="sys-admin-kern-upg-cz.htm#kern-upgrade">Povýšení verze jádra</a></li>
+					    <li><a href="sys-admin-kern-upg-cz.htm#dmakms">Dynamická instalaca modulů jádra s dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-cz.htm#apt-upgrade">Aktualizace nainstalovaného systému - dist-upgrade - Přehled &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-cz.htm#live-cd-upgrade">Aktualizace pomocí Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-cz.htm#approx">dist-upgrade vícero počítačů přes LAN</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#apt-upgrade">Aktualizace nainstalovaného systému - dist-upgrade - Přehled</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#du-st">Aktualizace nainstalovaného systému - dist-upgrade - jednotlivé kroky</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-cz.htm">Administrace systému</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-cz.htm#bois-prep">Povýšení verze BIOSu pomocí FreeDOS</a></li>
+		<li><a href="vir-rkits-cz.htm#virus-rkits">Vyhledávače virů a rootkitů</a></li>
+		<li><a href="hd-install-cz.htm#adduser">Přidání uživatelů a hesel &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-cz.htm#adduser">Přidání nového uživatele</a></li>
+					    <li><a href="sys-admin-gen-cz.htm#pw-lost">Ztracené root heslo, nové heslo</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-cz.htm#start-services">Služby a úrovně spuštění init &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-cz.htm#start-services">Spouštění/zastavení služeb</a></li>
+					    <li><a href="sys-admin-gen-cz.htm#pkill">Zabití služby nebo procesu</a></li>
+					    <li><a href="sys-admin-gen-cz.htm#init">Úrovně spuštění aptosidu - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-cz.htm#rsync">Zálohování systému &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-cz.htm#rdiff">Zálohování pomocí rdiff</a></li>
+					    <li><a href="sys-admin-rsync-cz.htm#rsync">Zálohování pomocí rsync</a></li>
+					    <li><a href="home-cz.htm#home-bu">Přesunutí /home adresáře</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-cz.htm#fonts">CUPS, fonty a zvuk &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-cz.htm#fonts">Fonty</a></li>
+					     <li><a href="sys-admin-gen-cz.htm#cups">CUPS - tiskový systém</a></li>
+					     <li><a href="sys-admin-gen-cz.htm#sound">Zvukový mixér</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-cz.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-cz.htm#chroot">Grub2 - obnova Grubu s pomocí chroot</a></li>
+					    <li><a href="sys-admin-grub2-cz.htm#mbr-over-grub2">Grub2 - přepsání zaváděcího sektoru MBR</a></li>
+					    <li><a href="sys-admin-grub2-cz.htm#multi-os">Grub2 - zavádění  více systémů</a></li>
+					    <li><a href="sys-admin-grub2-cz.htm#grub1-grub2">Grub2 - povýšení z Grub1</a></li>
+					    <li><a href="sys-admin-grub2-cz.htm#grub2">Grub2 - přehled</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Sponsored by webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid is proudly hosted by webtropia.com" alt="aptosid is proudly hosted by webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+	<div class="divider" id="start-services">
+<!--		<h2 id="top-header">Enabling services in aptosid</h2>-->
+		<h2 id="top-header">Povolení služeb v aptosidu</h2>
+<!--				<h3>insserv (Pontos 2008-04 and forward ): To start/stop already installed services:</h3>
+							<p><span class="highlight-2">Read <span class="highlight-3">/usr/share/doc/insserv/README.Debian</span>, the release notes and the man pages carefully:</span></p>-->
+				<h3>insserv (Pontos 2008-04 a následující): Pro spuštění/zastavení již nainstalovaných služeb:</h3>
+							<p><span class="highlight-2">Přečtěte si <span class="highlight-3">/usr/share/doc/insserv/README.Debian</span>, poznámky k vydání a a manuálové stránky:</span></p>
+<pre>
+ $ man insserv
+ $ man invoke-rc.d
+ $ man update-rc.d
+ google LSB headers
+</pre>
+
+<!--							<p>For 'start':</p>-->
+							<p>Pro 'spuštění':</p>
+<pre>
+/etc/init.d/&lt;sluzba&gt; start
+</pre>
+<!--							<p>For 'stop':</p>-->
+							<p>Pro 'zastavení':</p>
+<pre>
+/etc/init.d/&lt;sluzba&gt; stop
+</pre>
+<!--							<p>For 'restart:</p>-->
+							<p>Pro 'restartování:</p>
+<pre>
+/etc/init.d/&lt;sluzba&gt; restart
+</pre>
+<!--							<p>To prevent services running at-startup</p>-->
+							<p>Zamezení spuštění služby při spuštění systému:</p>
+<pre>
+update-rc.d &lt;sluzba&gt; remove
+[odstraní všechny odkazy ke spouštění]
+</pre>
+<!--							<p>To make sure a service runs at boot [not always required]</p>-->
+							<p>K ověření, že se služba spouští při spuštění systému [ne vždy nutné]</p>
+<pre>
+update-rc.d &lt;sluzba&gt; defaults
+[vytvoří odkazy pro spouštění]
+</pre>
+
+<!--							<p>To read the list of what services are running:</p>-->
+							<p>Pro zkontrolování seznamu, které služby zrovna běží:</p>
+<pre>
+ls /etc/rc5.d
+</pre>
+
+<!--							<p><span class="highlight-3">S</span> means the service will start.<br />
+							<span class="highlight-3">K</span> means service will not start.</p>-->
+							<p><span class="highlight-3">S</span> znamená, že se služba spustí.<br />
+							<span class="highlight-3">K</span> znamená, že se služba nespustí.</p>
+<!--					<h3>Older Installs (before Pontos 2008-04)</h3>
+						<h3>insserv on installed systems before Pontos 2008-04</h3>-->
+					<h3>Starší instalace (před Pontos 2008-04)</h3>
+						<h3>insserv na systémech nainstalovaných před Pontos 2008-04</h3>
+
+<!--							<p> <span class="highlight-2">Warning: Older installs will not get insserv automatically, due to users own initscripts or symlinks. It is NOT recommended to install insserv on installations prior to Pontos. This package should be used with care, as incorrect or missing LSB dependencies of existing initscripts can lead to an unbootable system. Installing insserv on an existing install may require some manual changes. </span></p>-->
+							<p> <span class="highlight-2">Varování: Starší instalace automaticky neobdrží insserv, vzhledem k vlastním uživatelským skriptům a symbolickým odkazům. NENÍ doporučeno instalovat insserv do instalací před vydáním Pontos. S tímto balíčkem by mělo být zacházeno obezřetně, jelikož špatné nebo chybějící závislosti LSB již přítomných spouštěcích skriptů mohou zbůsobit, že nebude možné spustit systém. Instalace insserv do již existující instalace může vyžadovat dodatečné úpravy.</span></p>
+
+<!--							<p><span class="highlight-2">Read <a href="http://wiki.debian.org/LSBInitScripts/DependencyBasedBoot"> read the Debian documentation notes</a>, and release notes before installing and enabling insserv.</span></p>-->
+							<p><span class="highlight-2">Přečtěte si <a href="http://wiki.debian.org/LSBInitScripts/DependencyBasedBoot">dokumentaci Debianu</a>, a poznámky k vydání, předtím než nainstalujete insserv.</span></p>
+	</div>
+	<div class="divider" id="bum">
+<!--			<h2>Boot-Up Manager (bum) - Graphical services configuration tool</h2>-->
+			<h2>Boot-Up Manager (bum) - Grafický konfigurační nástroj pro služby</h2>
+<!--							<p>If the logic of a debian system boot up sequence is not very clear and familiar to you, you should not play with symlinks, permissions and so forth. In order to avoid messing up your system. Boot-Up Manager will help you to automate your configuration.</p>-->
+							<p>Pokud vám logika spouštěcí sekvence Debianu není příliž blízka, neměli byste si hrát se symbolickými odkazy, oprávněními a tak dále. Abyste se vyhnuli zmrvení svého systému, pro zautomatizování procesu vám pomůže Boot-Up Manager.</p>
+<!--							<p>Boot-Up Manager is a GUI runlevel configuration editor which allows  you to configure what init services are invoked when the system boots up or reboots.  It displays a list of every service which could be started at boot.  You can toggle individual services on and off.</p>-->
+							<p>Boot-Up Manager je GUI (grafické uživatelské rozhraní) editor pro konfiguraci spouštěcích úrovní (=runlevels), který vám umožnjí nastavit, které init služby budou volány, když se bude systém spouštět nebo restartovat. Zobrazuje seznam všech služeb, které mohou být spouštěny při spouštění systému. Jednotlivé služby může zapínat a vypínat.</p>
+<pre>
+apt-get install bum
+</pre>
+<!--							<p>To use the Boot-Up Manager GUI:</p>-->
+							<p>Abyste mohli Boot-Up Manager GUI použít:</p>
+<pre>
+$ sux
+password:
+bum
+</pre>
+<!--						  <p> <a href ="http://www.marzocca.net/linux/bumdocs.html"> Detailed documentation on Boot-Up Manager (bum)</a>. </p>-->
+						  <p> <a href ="http://www.marzocca.net/linux/bumdocs.html"> Detailní dokumentace k Boot-Up Manager (bum)</a>. </p>
+
+		</div>
+		<div class="divider" id="pkill">
+						<!--<h2>Killing a service or process</h2>
+						<p><span class="highlight-3">pkill</span> is very useful as its human readable and can work in both user and root mode in the terminal or at tty</p>-->
+			<h2>Zabití procesu nebo služby</h2>
+						<p><span class="highlight-3">pkill</span> je velmi užitečný a pro člověka srozumitelný. Může fungovat jak v uživatelském modu, tak v root modu, v terminálu nebo v tty</p>
+<pre>
+pkill -n sluzba
+</pre>
+<!--						<p>If you are not sure of the correct spelling of the process or service you wish to kill <span class="highlight-3">pkill &lt;tab&gt; &lt;tab&gt;</span> will provide a list </p>-->
+						<p>Jestliže si nejste jisti tím, jak se daná služba nebo proces, které chcete zabít, píšou, tak <span class="highlight-3">pkill &lt;tab&gt; &lt;tab&gt;</span> vám zprostředkuje seznam.</p>
+<!--						<p>htop is also good a alternative. (killall -9 is your last alternative).</p>-->
+						<p>htop je také dobrá alternativa. (killall -9 je vaše poslední alternativa).</p>
+	</div>
+	<div class="divider" id="init">
+<!--			<h2>aptosid runlevels - init</h2>
+							<p>This is the list for the aptosid operating system runlevels, please note that it does differ from Debian default runlevels:</p>-->
+			<h2>spouštěcí úrovně aptosidu - init</h2>
+							<p>Toto je seznam spouštěcích úrovní aptosidu. Všimněte si prosím, že se liší od výchozích spouštěcích úrovní Debianu:</p>
+		 <table>
+			<tbody>
+				<tr>
+<!--					<th>Runlevel</th>-->
+					<th>Spouštěcí úroveň</th>
+					<th>aptosid</th>
+					<th>Debian</th>
+				</tr>
+				<tr>
+					<td><b>init 0</b></td>
+<!--					<td> Powers off the PC.</td>
+					<td> Powers off the PC.</td>-->
+					<td> Vypne počítač.</td>
+					<td> Vypne počítač.</td>
+				</tr>
+				<tr>
+					<td><b>init 1</b></td>
+<!--					<td>Single user (safety or rescue mode). Dæmons like apache and sshd are stopped.
+					Do not go to this level via remote access.</td>
+					<td>Single user, stops services (safety or rescue mode). Do not go to this level via remote access.</td>-->
+					<td>Mod jednotlivého uživatele (záchranný nebo bezpečnostní). Démony jako apache nebo sshd jsou zastaveny. Nevstupujte do této úrovně vzdáleně.</td>
+					<td>Mod jednotlivého uživatele (záchranný nebo bezpečnostní). Nevstupujte do této úrovně vzdáleně.</td>
+				</tr>
+				<tr>
+					<td><b>init 2</b></td>
+<!--					<td> Multi-User mode with the network running, with the X-Window System not running, and/or to stop or not enter the X-Window System.</td>
+					<td>Debians' default runlevel for Multi-User mode with the network running the X-Window System.</td>-->
+					<td>Více-uživatelský mod se spuštěnou sítí, ale nespuštěným okenním správcem X. K zastavení nebou nevstoupení do okenního správce X.</td>
+					<td>Výchozí více-uživatelský mod Debianu se spuštěnou sítí a okenním správcem X.</td>
+				</tr>
+				<tr>
+					<td><b>init 3</b></td>
+<!--					<td> Multi-User mode with the network running, with the X-Window System not running, and/or to stop or not enter the X-Window System.  <a href="sys-admin-apt-cz.htm#apt-upgrade">This is where a dist-upgrade is actioned</a>.</td>
+					<td>Same as runlevel 2 / init 2.</td>-->
+					<td>Více-uživatelský mod se spuštěnou sítí, nespuštěným okenním správcem X. K zastavení nebou nevstoupení do okenního správce X. <a href="sys-admin-apt-cz.htm#apt-upgrade">Zde má být spuštěn dist-upgrade</a>.</td>
+					<td>Stejné jako runlevel 2 / init 2.</td>
+				</tr>
+				<tr>
+					<td><b>init 4</b></td>
+<!--					<td> Multi-User mode with the network running, with the X-Window System not running, and/or to stop or not enter the X-Window System.</td>
+					<td>Same as runlevel 2 / init 2.</td>-->
+					<td>Více-uživatelský mod se spuštěnou sítí, ale nespuštěným okenním správcem X. K zastavení nebou nevstoupení do okenního správce X.</td>
+					<td>Stejné jako runlevel 2 / init 2.</td>
+				</tr>
+				<tr>
+					<td><b>init 5</b></td>
+<!--					<td>The aptosid default for Multi-User mode with the network running the the X-Window System, and/or to start the X-Window System.</td>
+					<td>Same as runlevel 2 / init 2.</td>-->
+					<td>Výchozí více-uživatelský mod aptosidu se spuštěnou sítí a okenním správcem X. Možno jím okenního správce spustit.</td>
+					<td>Stejné jako runlevel 2 / init 2.</td>
+				</tr>
+				<tr>
+					<td><b>init 6</b></td>
+<!--					<td> Restart/reboot the system.</td>
+					<td> Restart/reboot the system.</td>-->
+					<td> Restartuje systém.</td>
+					<td> Restartuje systém.</td>
+				</tr>
+				<tr>
+					<td><b>init S</b></td>
+<!--					<td> This is where early boot time services are executed on a 'once only basis'. You cannot switch to it after it has been run.</td>
+					<td>This is where early boot time services are executed on a 'once only basis'. You cannot switch to it after it has been run.</td>-->
+					<td>Zde se spouští časné služby při spouštěný systém na základě toho, že se spustí 'jen a pouze jednou'. Sem se již nemůže přepnout, jakmile je systém spuštěn.</td>
+					<td>Zde se spouští časné služby při spouštěný systém na základě toho, že se spustí 'jen a pouze jednou'. Sem se již nemůže přepnout, jakmile je systém spuštěn.</td>
+				</tr>
+			</tbody>
+		</table>
+
+      <div class="spacer02"></div>
+
+<!--							<p>To acertain the runlevel (init) you are currently in:</p>-->
+							<p>Abyste se ujistili, v jaké spouštěcí úrovni (init) se nacházíte:</p>
+<pre>
+who -r
+</pre>
+<!--							<p>Required reading for any aptosid and Debian system administrator regarding runlevels:</p>-->
+							<p>Nezbytné čtení pro jákéhokoliv administrátora aptosidu nebo Debianu týkající se spouštěcích úrovní:</p>
+<pre>
+man init
+</pre>
+
+	</div>
+	<div class="divider" id="pw-lost">
+<!--		<h2>Lost root passwords</h2>-->
+		<h2>Ztracené heslo root</h2>
+<!--							<p>You cannot recover a lost password but you can set a new one.</p>-->
+							<p>Ztracené heslo již nezískáte, ale můžete vytvořit nové.</p>
+<!--							<p>First boot from the Live-CD.</p>-->
+							<p>Prvně spusťte Live-CD.</p>
+<!--							<p>As root mount your root partition (for example /dev/sdb2)</p>-->
+							<p>Jako root připojte svůj kořenový diskový oddíl (například /dev/sdb2)</p>
+<pre>
+mount /dev/sdb2 /media/sdb2
+</pre>
+<!--							<p>Now chroot into your old root-Partition with and set a new password:</p>-->
+							<p>Nyní spusťte chroot do vašeho starého diskové oddílu a zároveň tak nastavte nové heslo:</p>
+<pre>
+chroot /media/sdb2 passwd
+</pre>
+
+	</div>
+	<div class="divider" id="pw-new">
+<!--		<h2>Setting new passwords</h2>-->
+		<h2>Nastavení nového hesla</h2>
+<!--							<p>To change your 'user' password, as <span class="highlight-3">$ user</span>:</p>-->
+							<p>Pro změnu vašeho 'uživatelského' hesla, jako <span class="highlight-3">$ user</span>:</p>
+<pre>
+$ passwd
+</pre>
+
+<!--							<p>To change your 'root' password, as <span class="highlight-3"># root</span>:</p>-->
+							<p>Pro změnu vašeho 'root' hesla, jako <span class="highlight-3"># root</span>:</p>
+<pre>
+passwd
+</pre>
+
+<!--							<p>To change a user's password as an administrator, as <span class="highlight-3"># root</span>:</p>-->
+							<p>Pro změnu uživatelského hesla jako administrátor, jako <span class="highlight-3"># root</span>:</p>
+<pre>
+passwd &lt;uzivatel&gt;
+</pre>
+
+	</div>
+	<div class="divider" id="fonts">
+<!--			<h2>Fonts in aptosid</h2>
+				<h5>Correct dpi settings - Basic Philosophy</h5>-->
+			<h2>Fonty v aptosidu</h2>
+				<h5>Správné nastavení dpi - Základní Filosofie</h5>
+							<!--<p>DPI settings are problematic to guess, but are actually perfectly done by X.</p>-->
+							<p>Nastavení DPI je poněkud problematické k odhadnutí, ale v podstatě skvěle provedené pomocí X. </p>
+<!--				<h5>Correct resolutions and refresh rates</h5>-->
+				<h5>Spravné rozlišení a obnovovací frekvence</h5>
+<!--							<p>Every monitor has its own perfect settings combination, but unfortunately not all of them report the right DCC values, and sometimes it is in need of a manual overwride.</p>-->
+							<p>Každý monitor má svou vlastní perfektní kombinaci nastavení, ale naneštěstí ne všechny ohlašjí správné hodnoty DCC, takže je někdy nutné je vlastnoručně přepsat.</p>
+				<!--<h5>Correct graphics adapter drivers</h5>-->
+				<h5>Správné ovladače grafických adaptérů</h5>
+							<!--<p>Some newer ATI and Nvidia cards simply don't play well with the free Xorg drivers, and the only reasonable solution in such case are the commercial closed source drivers. aptosid will not  pre-install those for legal reasons, <a href="nf-firm-cz.htm#non-free-firmware"> The solutions can be found here. </a></p>-->
+							<p>Některé novější karty ATI nebo Nvidia si moc dobře nerozumí se svobonými ovladači Xorg a jediné rozumné řešení v takovém případě jsou původní komerční uzavřené ovladače. aptosid takové nepředinstalovává z právních důvodů, <a href="nf-firm-cz.htm#non-free-firmware"> Východiska naleznete zde. </a></p>
+<!--				<h5>Default Font selections, rendering and sizes</h5>-->
+				<h5>Výchozí výběr fontů, vykreslení a velikosit</h5>
+<!--							<p>aptosid uses (Debian) pre-selected free fonts which have proved to be very balanced, your own fonts selection can/may deteriorate the quality of rendering. But there are a few powerful options in Debian (apart from KDE>systemsettings ) that can help providing spotless rendering with other fonts as well. But please be aware that every font has just a few real perfect sizes, other sizes may not play well.</p>-->
+							<p>aptosid používá (Debianské) předvybrané svobodné fonty, které se osvědčily jako vyvážené. Vámi vybrané fonty můžout zhoršit kvalitu vykreslování. Ale v Debianu je pár osvědčených nastavení (krom KDE>Nstavení systému), které vám pomohou poskytnout bezchybné vykreslení i ostatních fontů. Buďte prosím ale ujištěni, že všechny fonty mají jen několik ideálních velikostí. Ne všechny mohou fungovat správně.</p>
+<!--							<p>Playing with the dpi size with the command may also be of assistance:</p>-->
+							<p>Pohrávání si s velikosti dpi v příkazové řádce by si jistě zasloužilo výpomoc:</p>
+<pre>
+fix-dpi-kdm
+</pre>
+<!--							<p>It should show the DPI for your screensize, but you can play with that as well.You will need to go to init 3 and back to init 5 to make it work or do a reboot.</p>-->
+							<p>Mělo by být zobrazeno DPI pro velikost vaší obrazovky, ale s tím si tak můžete pohrát. Bude nutné se přepnout do init 3 a pak zpět do init 5, aby to fungovalo, nebo můžete také restartovat.</p>
+<!--							<p> After having changed font type or DPI (in X or Firefox/Iceweasel), you might need some readjustments to get results to your liking, especially. after a change from Bitmap Fonts to True Type Fonts or the other way round through:</p>-->
+							<p>Potom co jste změnili DPI nebo typ fontu (v X nebo Firefoxu/Iceweaselu), budete možná muset provést nějáké ladění, abyste obdrželi výsledek, který by se vám zamlouval. Při změně z Bitmap fontů na True Type fonty nebo naopak:</p>
+<pre>
+dpkg-reconfigure fontconfig-config
+</pre>
+<!--							<p>Choose native and autohinter on automatic. Otherwise play around with it.</p>-->
+							<p>Nastavte native a autohinter na automatic. V opačném případě si s tím pohrajte.</p>
+<!--							<p>Should you need to rebuild your font cache:</p>-->
+							<p>Jestliže budete potřebat přestavět váš cache fontů:</p>
+<pre>
+fc-cache -f -vv
+</pre>
+<!--							<p>If that does not work you might need to reinstall the package with a default config file of your fonts cache by:</p>-->
+							<p>Jestli to nefunguje, tak možná bude nutno přeinstalovat balíček se základním konfiguračním souborem vašeho cache fontů pomocí:</p>
+
+<pre>
+apt-get install --reinstall --yes -o DPkg::Options::=--force-confmiss -o DPkg::Options::=--force-confnew fontconfig fontconfig-config
+</pre>
+
+<!--				<h5>GTK based applications like Firefox/Iceweasel</h5>
+							<p>GTK-based apps in general are problematic with KDE defaults. This could be solved by this:</p>-->
+				<h5>Aplikace založené na GTK jako například Firefox/Iceweasel</h5>
+							<p>Aplikace založené na GTK jsou obecně poněku problematické s výchozím nastavením KDE. To je možné vyřeši pomocí:</p>
+<pre>
+apt-get install gtk2-engines system-config-gtk-kde gtk-qt-engine gtk2-engines-qtcurve
+</pre>
+<!--							<p>In <span class="highlight-3">System Settings >Appearance </span> you will have a new menu item called <span class="highlight-3">GTK Styles and Fonts</span>. Set 'GTK Styles' to use 'Clearlooks' and have the 'GTK Fonts' set to use 'KDE fonts' <span class="highlight-3">or </span> experiment with the various options to suit your preferences.</p>-->
+							<p>V <span class="highlight-3">Nastavení systému > Vzhled</span> budete mít novou položku nazvanou <span class="highlight-3">GTK Styles and Fonts</span>. Nastavte 'GTK Styly', aby použivály 'Clearlooks' a 'GTK  písma' nastavte, aby používaly 'KDE fonty' <span class="highlight-3">nebo </span> experimentujte s nastavení, tak nenajdete takové, které vám vyhovuje.</p>
+<!--							<p>This MAY fix your font rendering in gtk apps.</p>-->
+							<p>Toto MŮŽE napravit vykreslení fontů ve vašich gtk aplikacích.</p>
+
+	</div>
+	<div class="divider" id="cups">
+			<h2>CUPS</h2>
+<!--							<p>KDE has a large section inbuilt in the KDE help, however dist-upgrades often can cause cups to misbehave, this is one known solution,:</p>-->
+							<p>CUPS má celkem velkou sekci zabudouvanou v nápovědě KDE, nicméně dist-upgrades mohou často způsobovat, že se cups nebude chovat správně. Toto je jedno ze známých řešení:</p>
+
+<pre>
+modprobe lp
+echo lp >> /etc/modules
+apt-get remove --purge cupsys cups
+apt-get install cups
+        NEBO
+apt-get install cups cups-driver-gutenprint hplip
+</pre>
+<!--							<p>Make sure CUPS is running:</p>-->
+							<p>Ujistěte se, že CUPS běží:</p>
+<pre>
+/etc/init.d/cups restart
+</pre>
+
+<!--							<p> Then in a web browser: </p>-->
+							<p>Potom ve webovém prohlížeči: </p>
+<pre>
+http://localhost:631
+</pre>
+
+<!--							<p>Another gotcha is when setting up cups via the GUI method, is that it brings up a dialog box asking for you to put in your password, however the dialog box has your user name, prefilled, so when you put in your user password, it does not work, What is really wants is for you to change the user name to <span class="highlight-2">root</span> and put in your <span class="highlight-2">root password</span>.</p>-->
+							<p>Další chyták je, že při nastavování cups pomocí GUI se zobrazí dialogové okno, které vás žádá k zadání heslo, ale již zde je předvyplněno vaše uživatelské jméno, což ale po zadání vašeho hesla nefunguje. Co je oprvadu požadováno je zadání uživatelského jméno <span class="highlight-2">root</span> a <span class="highlight-2">hesla root</span>.</p>
+<!--							<p><a href="http://www.linuxfoundation.org/collaborate/workgroups/openprinting/database/databaseintro">The OpenPrinting database</a> contains a wealth of information about specific printers, along with extensive driver information, the drivers themselves, basic specifications, and an associated set of configuration tools. </p>-->
+							<p><a href="http://www.linuxfoundation.org/collaborate/workgroups/openprinting/database/databaseintro">Databáze OpenPrinting </a> obsahuje množství informací týkajících se specifických tiskáren spolu s rozsáhlými informaci o ovladačích, samotnými ovladačemi, základními specifikacemi a s tím souvisejícími nastaveními. </p>
+
+	</div>
+	<div class="divider" id="sound">
+<!--			<h2>Sound in aptosid</h2>
+							<p><span class="highlight-3">Sound is muted by default in aptosid.</span></p>-->
+			<h2>Zvuk v aptosidu</h2>
+							<p><span class="highlight-3">Zvuk je v aptosidu v základu ztlumen.</span></p>
+<!--							<p>The KDE version uses Kmix and XFCE uses Mixer.</p>-->
+							<p>KDE verze používá Kmix a XFCE používá Mixer.</p>
+<!--							<p>Often it is only a matter of clicking on the sound icon in the taskbar and unchecking the 'Mute box'.</p>-->
+							<p>Často se jendá pouze o to kliknout na ikonku zvuku v panelu úloh a odškrtnutí políčka 'Ztlumit'.</p>
+					<h6>Kmix</h6>
+<!--							<p>In Kmix you will need to activate the options you prefer for channel options, <span class="highlight-3">Kmix>Setting>Configure Channels.</span> Or in a terminal:</p>-->
+							<p>V Kmixu budete muset aktivovat nastavení, které upřednostňujete pro nastavení kanálů, <span class="highlight-3">Kmix>Nastavení>Nastavit kanály.</span> Nebo v terminál:</p>
+<pre>
+$ kmix
+</pre>
+
+					<h6>XFCE</h6>
+
+<!--							<p>In XFCE run the mixer application and add some controls via the <span class="highlight-3"> Multimedia>Mixer</span> and click the <span class="highlight-3">Select Controls box.</span> Or in a terminal:</p>-->
+							<p>V XFCE spusťte aplikaci mixer a přidejte nějáké ovládání přes <span class="highlight-3"> Multimedia>Mixer</span> a klikněte na <span class="highlight-3">políčko Vybrat Ovládání.</span> Nebo v terminálu:</p>
+<pre>
+$ xfce4-mixer
+</pre>
+
+					<h3>Alsamixer</h3>
+
+<!--							<p>If you prefer to use Alsamixer, it is in the alsa-utils package:</p>-->
+							<p>Pokud máte raději Alsamixer, tak se nachází v balíčku alsa-utils:</p>
+<pre>
+apt-get update
+apt-get install alsa-utils
+exit
+</pre>
+<!--							 <p>Set your preferred sound settings as <span class="highlight-2">$user</span> from the terminal:</p>-->
+							 <p>Nastavte vámi preferované nastavení jako <span class="highlight-2">$user</span> z terminálu:</p>
+<pre>
+$ alsamixer
+</pre>
+							<!-- <p>Then as root:</p>
+
+<pre>
+alsactl store
+</pre>-->
+
+							  <p><a href='http://aptosid.com/index.php?module=Wikula&amp;tag=SoundMaster'> Také se podívejte na wiki aptosidu.</a></p>
+
+	</div>
+
+			<div id="rev">Obsah naposledy revidován 20/04/2011 0830 UTC </div>
+
+</div>
+</body>
+</html>

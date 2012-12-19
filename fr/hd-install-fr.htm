@@ -1,0 +1,573 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>Manuel d'aptosid - installation sur disque dur</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision par Sephi 06/05/2009 0933 UTC-->
+<!--htdig_noindex--><div id="menu"> <!-- menu starts here fr lang maintained by alphad, LjanA-->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="Vers aptosid.com, forum et wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-fr.htm#search-on"><img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" /> Rechercher</a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Choisir une autre langue - Choose another language CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="lang-switch CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-fr.htm">Manuel du système aptosid</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-fr.htm#welcome-gen">Manuel du système aptosid &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-fr.htm#cred-team">Contributeurs</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-fr.htm#how-to">Guide de l'utilisateur &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-fr.htm#how-to">Guide de l'utilisateur</a></li>
+					  <li><a href="welcome-fr.htm#table-contents">Table des matières</a></li>
+					</ul>
+					</li>
+		<li><a href="help-fr.htm#help-gen">Trouver de l'aide &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-fr.htm#help-gen">Où trouver de l'aide</a></li>
+					  <li><a href="help-fr.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-fr.htm#welcome-quick">Utiliser aptosid rapidement</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-fr.htm">Contenu de l'ISO, Versions, Téléchargement, Miroirs &amp; Gravure</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-fr.htm#cd-content">Contenu de l'ISO &#8211; Matériel minimal requis  &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-fr.htm#rolling">Notes de publication</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-fr.htm#download-aptosid">Miroirs aptosid &#8211; Téléchargement &#8211; Gravure &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-fr.htm#md5">md5 (somme de contrôle)</a></li>
+					  <li><a href="cd-dl-burning-fr.htm#burn-nero">Graver sous Windows</a></li>
+					  <li><a href="cd-dl-burning-fr.htm#burn-linux">Graver sous Linux</a></li>
+					  <li><a href="cd-no-gui-burn-fr.htm#burning-no-gui">Script burniso</a></li>
+					  <li><a href="cd-no-gui-burn-fr.htm#burn-no-gui-gen">Graver depuis un terminal</a></li>
+					  <li><a href="cd-dl-burning-fr.htm#download-aptosid">Miroirs de téléchargement aptosid</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-fr.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-fr.htm#rootpw">Mot de passe root en mode Live</a></li>
+				<li><a href="live-mode-fr.htm#live-cd-installsoft">Installer des logiciels en mode Live</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-fr.htm">Terminal / Konsole</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-fr.htm#term-kon">Terminal / Konsole &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-fr.htm#term-kon">Terminal / Konsole</a></li>
+					  <li><a href="term-konsole-fr.htm#colours"> prompt coloré dans un terminal </a></li>
+					  <li><a href="term-konsole-fr.htm#cli-help">Aide sous Terminal / Konsole</a></li>
+					  <li><a href="help-fr.htm#init3-tools">Outils utiles en mode texte (tty) &#8211; init 3</a></li>
+					  <li><a href="term-konsole-fr.htm#term-cmds">Liste de commandes sous BASH</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-fr.htm#sux">sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-fr.htm">Codes de démarrage</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-fr.htm#cheatcodes">Codes spécifiques à aptosid en mode Live</a></li>
+				<li><a href="cheatcodes-fr.htm#cheatcodes-linux">Codes génériques pour Linux</a></li>
+				<li><a href="cheatcodes-vga-fr.htm#vga">Codes VGA</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-fr.htm">Partitionner le disque dur - Traditionel, GPT et LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-fr.htm#hd-ntfs3g">Utiliser une partition NTFS grâce à ntfs-3g</a></li>
+			<li><a href="part-lvm-fr.htm#part-lvm">Partitionner pour utiliser LVM - Gestionnaire de Volumes Logiques</a></li>
+			<li><a href="part-gparted-fr.htm#partition">&#8230;dans un environnement graphique &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-fr.htm#partition">&#8230;avec GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-fr.htm#ntfs">Redimensionner une partition NTFS avec GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-fr.htm#partition">&#8230;en mode texte (CLI) &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-fr.htm#partition">&#8230;avec cfdisk</a></li>
+					    <li><a href="part-cfdisk-fr.htm#formating">Formater une partition créée avec cfdisk</a></li>
+					    <li><a href="part-gdisk-fr.htm#gdisk-6">Formater après partitionnement avec gdisk</a></li>
+					    <li><a href="part-gdisk-fr.htm#gdisk-1">GPT : partitionnement avec gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-fr.htm#part-example">Partitionner  &#8211; Concepts de base &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-fr.htm#part-example">Tailles des partitions  &#8211; Exemples</a></li>
+					  <li><a href="part-uuid-fr.htm#uuid">UUID, Modifier fstab et créer de nouveaux points de montage</a></li>
+					  <li><a href="part-cfdisk-fr.htm#disknames">Noms des disques et partitions</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-fr.htm">Choix du type d'installation &#8211; HD, USB, VM and Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-fr.htm#Inst-prep">Préparer l'installation &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-fr.htm#Inst-prep">Préparer l'installation </a></li>
+					  <li><a href="hd-install-fr.htm#Installation">Installer sur le disque dur (HD)</a></li>
+					  <li><a href="hd-install-fr.htm#first-hd-boot">Au premier démarrage</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-fr.htm#fromiso">Démarrer en mode ''fromiso'' &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-fr.htm#fromiso">''fromiso'' Généralités</a></li>
+					  <li><a href="hd-install-opts-fr.htm#grub2-fromiso">Démarrer ''fromiso'' avec grub2</a></li>
+					  <li><a href="hd-install-opts-fr.htm#fromiso-persist">''fromiso'' and persistance</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-fr.htm#usb-hd">Installer sur USB-HD &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-fr.htm#usb-hd">Installer sur disque USB &#8211; aptosid sur une clé USB</a></li>
+					  <li><a href="hd-ins-opts-oos-fr.htm#raw-usb">Installer aptosid sur une clé USB/carte SSD à partir de systèmes Linux, MS-Windows ou Mac-OS-X</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-fr.htm#install-crypt">Installation sur partitions cryptées - cryptroot</a></li>
+		  <li><a href="nbdboot-fr.htm#nbd1">Démarrer aptosid à partir d'un réseau</a></li>
+		<li><a href="hd-install-vmopts-fr.htm#vmopts">Choix d'installation sur une machine virtuelle</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-fr.htm">Cartes graphiques &#8211; Moniteurs &#8211; Xorg &#8211; Pilotes divers</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-fr.htm#mon-res">Définition des écrans &#8211; Moniteurs  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-fr.htm#mon-res">Définition des écrans &#8211; Moniteurs</a></li>
+					  <li><a href="hw-dev-mon-fr.htm#xrandr">Deux moniteurs &#8211; xrandr</a></li>
+					  <li><a href="hw-dev-mon-fr.htm#mon-binary">Deux moniteurs &#8211; outils binaires</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-fr.htm#foss-xorg">Drivers cartes graphiques&#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-fr.htm#ati-3d">Drivers AMD/ATI 3D</a></li>
+					  <li><a href="gpu-fr.htm#intel">Drivers Intel 2D and 3D</a></li>
+					  <li><a href="gpu-fr.htm#nvidia">Drivers Nvidia 3D</a></li>
+					  <li><a href="gpu-fr.htm#foss-xorg">Drivers Open Source Xorg</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-fr.htm#fw-detect">Détection de Firmware non-libre</a></li>
+			  <li><a href="nf-firm-fr.htm#non-free-firmware">Ajouter non-free aux Sources List</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-fr.htm">Gestionnaire de fenêtres</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-fr.htm">KDE and XFCE Gestionnaire de fenêtres &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-fr.htm#xfce-notes">Applications supplémentaires utiles pour Xfce</a></li>
+					    <li><a href="wm-dm-fr.htm#install-add">Applications supplémentaires utiles pour KDE</a></li>
+					    <li><a href="wm-dm-fr.htm#desk-freeze">Écran gelé</a></li>
+					    <li><a href="wm-dm-fr.htm#kde-login">Ouverture de session impossible (login) dans KDE</a></li>
+					    <li><a href="wm-dm-fr.htm#ch-th">Changer les fonds d'écran</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-fr.htm#dm">Installation de gestionnaires d'affichage supplémentaires</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-fr.htm">Internet &#8211; WiFi &#8211; LAN &#8211; Réseaux</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-fr.htm">Suite LAMP aptosid &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-fr.htm#serv-apache">Suite LAMP aptosid</a></li>
+					    <li><a href="lamp-apache-fr.htm#serv-ftp">Clients FTP</a></li>
+					    <li><a href="lamp-apache-fr.htm#serv-sec">Protocoles de sécurité</a></li>
+					    <li><a href="lamp-apache-fr.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-fr.htm#serv-mysql">Configurer MySQL </a></li>
+					    <li><a href="lamp-ppp-fr.htm#serv-php">Support PHP dans Apache</a></li>
+					    <li><a href="ntp-server-fr.htm#ntp-server">Configurer le serveur d'horloge (timeserver)</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-fr.htm#tor">Pare-feu &#8211; Confidentialité &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-fr.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-fr.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-fr.htm#firewalls">Pare-feu</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-fr.htm#ssh-x">SSH &#8211; Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-fr.htm#setup">Configurer un serveur Samba</a></li>
+						  <li><a href="samba-fr.htm#configure">Configurer SAMBA (MS-Windows)</a></li>
+						  <li><a href="ssh-fr.htm#ssh-fs">Montage d'un répertoire à distance via SSH</a></li>
+						  <li><a href="ssh-fr.htm#ssh-x">Application X via SSH</a></li>
+						  <li><a href="ssh-fr.htm#ssh-f">Environnement graphique pour SSH via Dolphin</a></li>
+						  <li><a href="ssh-fr.htm#ssh-w">Transmission de X via SSH depuis un PC MS-Windows</a></li>
+						  <li><a href="ssh-fr.htm#ssh">SSH et Sécurité</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-fr.htm#netcardconfig">Connections WIFI &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-fr.htm#netcardconfig">Se connecter au réseau &#8211; Ceni</a></li>
+						    <li><a href="inet-wpagui-fr.htm#wpa-roaming-gui">WiFi &#8211; WPA_GUI</a></li>
+						    <li><a href="inet-setup-fr.htm#net-set1">WiFi &#8211; Configurer une connexion itinérante (roaming) WiFi</a></li>
+						    <li><a href="inet-wpa-fr.htm#wpa">WiFi &#8211; wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-fr.htm#hotswitch">Alterner entre les réseaux WiFi et câblés</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-fr.htm#netcardconfig">Connexions câblées &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-fr.htm#dial-mod">Modems 56k </a></li>
+						    <li><a href="inet-ceni-fr.htm#netcardconfig">Se connecter au réseau &#8211; Ceni</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-fr.htm#fw-detect">Détection de Firmware non-libre</a></li>
+		<li><a href="nf-firm-fr.htm#non-free-firmware">Ajouter non-free aux Sources List</a></li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-fr.htm">Gestion de paquets &#8211; Mise à niveau (dist-upgrade)</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-fr.htm#apt-cook">Guide APT &#8211; Liste des dépôts de paquets &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-fr.htm#apt-cook">Guide APT &#8211; Liste des dépôts de paquets</a></li>
+					    <li><a href="sys-admin-apt-fr.htm#apt-install">Installer un nouveau paquet</a></li>
+					    <li><a href="sys-admin-apt-fr.htm#apt-delete">Supprimer un paquet</a></li>
+					    <li><a href="sys-admin-apt-fr.htm#apt-downgrade">Geler un paquet &#8211; Dégradation de paquet</a></li>
+					    <li><a href="sys-admin-apt-fr.htm#apt-cache">Recherche de paquets via apt-cache</a></li>
+					    <li><a href="sys-admin-apt-fr.htm#gui-pacsea">Recherche de paquets en mode GUI</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-fr.htm#kern-upgrade">Mise à niveau du noyau &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-fr.htm#kern-remove">Supprimer des noyaux</a></li>
+					    <li><a href="sys-admin-kern-upg-fr.htm#kern-upgrade">Mise à niveau du noyau</a></li>
+					    <li><a href="sys-admin-kern-upg-fr.htm#dmakms">Installer des modules de noyau dynamiquement via dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-fr.htm#apt-upgrade">Mise à niveau d'un système (dist-upgrade) &#8211; Vue d'ensemble &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-fr.htm#live-cd-upgrade">Mise à niveau depuis un Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-fr.htm#approx">Mise à niveau de plusieurs ordinateurs connectés</a></li>
+					    <li><a href="sys-admin-apt-fr.htm#apt-upgrade">Mise à niveau d'un système (dist-upgrade) &#8211; Vue d'ensemble</a></li>
+					    <li><a href="sys-admin-apt-fr.htm#du-st">Les étapes d'une mise à niveau d'un système</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-fr.htm">Administration du système</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-fr.htm#bois-prep">Mise à niveau du BIOS via FreeDOS</a></li>
+		<li><a href="vir-rkits-fr.htm#virus-rkits">Scanneurs de virus et de rootkits</a></li>
+		<li><a href="hd-install-fr.htm#adduser">Ajouter un utilisateur &#8211; Mots de passe &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-fr.htm#adduser">Ajouter un utilisateur</a></li>
+					    <li><a href="sys-admin-gen-fr.htm#pw-lost">Perte du mot de passe root &#8211; Nouveau mot de passe</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-fr.htm#start-services">Services (démons) &#8211; init &#8211; Niveaux d'exécution &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-fr.htm#start-services">Activer / Désactiver des services (démons)</a></li>
+					    <li><a href="sys-admin-gen-fr.htm#pkill">terminer un service ou un processus</a></li>
+					    <li><a href="sys-admin-gen-fr.htm#init">Niveaux d'exécution aptosid &#8211; init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-fr.htm#rsync">Sauvegarder le système (OS) &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-fr.htm#rdiff">Sauvegarder via rdiff</a></li>
+					    <li><a href="sys-admin-rsync-fr.htm#rsync">Sauvegarder via rsync</a></li>
+					    <li><a href="home-fr.htm#home-bu">Déplacer une partition /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-fr.htm#fonts">CUPS, Polices de caractères &amp; Son &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-fr.htm#fonts">Polices de caractères </a></li>
+					     <li><a href="sys-admin-gen-fr.htm#cups">CUPS &#8211; Gestion des imprimantes</a></li>
+					     <li><a href="sys-admin-gen-fr.htm#sound">Mixeurs de son (Sound Mixers)</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-fr.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-fr.htm#chroot">Grub2 - Récupération de Grub via un chroot</a></li>
+					    <li><a href="sys-admin-grub2-fr.htm#mbr-over-grub2">Grub2 &#8211; Secteur d'amorçage (MBR) écrasé</a></li>
+					    <li><a href="sys-admin-grub2-fr.htm#multi-os">Grub2 &#8211; Démarrage de plusieurs systèmes (OS)</a></li>
+					    <li><a href="sys-admin-grub2-fr.htm#grub1-grub2">Grub2 &#8211; Mise à niveau depuis Grub1</a></li>
+					    <li><a href="sys-admin-grub2-fr.htm#grub2">Grub2 &#8211; Vue d'ensemble</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Sponsored by webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid is proudly hosted by webtropia.com" alt="aptosid is proudly hosted by webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+	<div class="divider" id="Inst-prep">
+		<h2 id="top-header">Préparation de l'installation sur disque dur</h2>
+							<p  class="highlight-2">Pour une utilisation ordinaire, nous recommanderons le système de fichiers ext4, utilisé par défaut par aptosid et bien maintenu.</p>
+
+							<p><span class="highlight-3">Avant de procéder à l'installation, veuillez déconnecter soigneusement tout périphérique USB tel que clé, disque amovible, caméra, etc</span>. <a href="hd-install-opts-fr.htm">L'installation sur un périphérique USB nécessite des étapes particulières additionnelles.</a> Vous pouvez modifier le fichier d'installation <span class="highlight-3">~/.sidconf</span> afin de choisir un système de fichiers alternatif ou de répartir votre installation sur plusieurs partitions (par exemple pour un /home séparé).</p>
+
+							<p class="highlight-3">Vous êtes particulièrement encouragés à recourir à une partition /home séparée. L'intérêt en terme de préservation des données et de prévention des désastres en est substantiel.</p>
+
+							<p>Votre $HOME est donc un répertoire où les fichiers de configuration de base des applications sont stockés. Ou, plus simplement, c'est un espace de stockage où les applications enregistrent leurs paramètres.</p>
+
+					<!--- ####
+					<h6>Re-installing apps to rebuild or duplicate to another computer</h6>
+					#### -->
+					<h6>Réinstaller les même applications ou dupliquer sur un autre ordinateur</h6>
+							<!--- ####
+							<p>To make a list of your installed applications so you can duplicate the installed base on another machine, or perhaps you are for some reason, reinstalling on your current PC, in a konsole</p>
+							#### -->
+							<p>Pour lister vos applications installées afin de pouvoir dupliquer l'installation de base sur un autre ordinateur ou réinstaller sur le même ordinateur, entrez la commande suivante dans un terminal :</p>
+<pre>
+dpkg -l|awk '/^ii/{ print $2 }'|grep -v -e ^lib -e -dev -e $(uname -r) >/home/nom_d_utilisateur/installes.txt
+</pre>
+							<!--- ####
+							<p>Then copy the text file to a usb key or any other removable media of your choice.</p>
+							#### -->
+							<p>Copiez ensuite le fichier texte sur une clef USB ou tout autre média amovible de votre choix.</p>
+
+							<!--- ####
+							<p>On the new machine copy the text file to $HOME and use the list as a reference to install your required applications.</p>
+							#### -->
+							<p>Sur le nouvel ordinateur, copiez le fichier texte sur $HOME et utilisez le comme référence pour installer vos applications.</p>
+
+
+					<!--- ####
+					<h5>RAM and Swap</h5>
+					#### -->
+					<h5>RAM et Swap</h5>
+
+							<p>Sur un PC équipé de moins de 512 Mo de RAM, vous aurez obligatoirement besoin d'une partition de swap. Sa taille ne doit pas être inférieure à 128 Mo (celle indiquée par cfdisk n'est pas fiable, car celui-ci utilise un mode calcul en base 10). Il n'est pas très utile que la swap dépasse 1 Go, à part si vous pratiquez la copie de très gros fichiers à la volée, comme les DVD ou CD, et/ou si vous avez besoin des fonctions "suspend-to-disk/hibernate", et/ou faites fonctionner des serveurs. Dans ce dernier cas particulier, assignez 2 Go au minimum à votre partition de swap.</p>
+
+							<p class="highlight-1">Consultez avant tout : <a href="part-gparted-fr.htm">Partitionner votre disque dur</a>, svp.</p>
+
+							<p><span class="highlight-2">PROCÉDEZ TOUJOURS À UNE SAUVEGARDE INTÉGRALE PRÉALABLE DE VOS DONNÉES (y compris signets et courriels) !</span> Voir <a href="sys-admin-rdiff-fr.htm#rdiff">Sauvegarde avec rdiff</a> et <a href="sys-admin-rsync-fr.htm#rsync">Sauvegarde avec rsync</a>. Autre option: sbackup (installation requise).</p>
+
+							<p>Installer aptosid sur son disque dur donne toujours un résultat plus confortable, rapide et performant que de l'utiliser à partir du Live-CD.</p>
+
+							<p>Primo, vérifiez dans le BIOS que votre ordinateur peut démarrer en priorité à partir du CD-ROM. Sur la plupart des machines, l'appui sur la touche DEL (Suppr) au démarrage donne accès au BIOS. La combinaison de touches pour y accéder est affichée au lancement, et peut aussi être F10 ou F2 ou toute autre. Certains BIOS, notamment AMI, permettent de choisir directement son périphérique de démarrage en appuyant sur F8 ou F11 au démarrage.</p>
+
+							<p>aptosid devrait se lancer sans problème dans la plupart des cas. Si cela échoue, ne vous découragez pas. Vous pouvez utiliser de nombreux codes de démarrages, dont les options peuvent vous permettre de gagner un temps précieux (par exemple, pour fixer le résolution de votre écran ou la langue utilisée par le système. Pour ce faire, reportez-vous à <a href="cheatcodes-fr.htm">Codes de démarrage</a> ainsi qu'à <a href="cheatcodes-vga-fr.htm">résolutions VGA</a>.</p>
+	<h2>Choix de la langue d'installation</h2>
+				<h6><span class="highlight-3">Choix de langue avec KDE-full </span></h6>
+
+							<p>Selectionner la langue principale à partir du <span class="highlight-2">menu grub (F4)</span> dans la <span class="highlight-3">distribution kde-full</span> pour installer la localisation pour le bureau et plusieurs applications au démarrage. </p>
+
+							<p>Cela permet de s'assurer de leur disponibilité après l'installation de aptosid tout en n'installant que les langues requises pour votre système. La quantité de mémoire requise pour cette fonctionnalité dépend de la langue et aptosid n'installera pas automatiquement les paquets de la langue en cas de RAM insuffisante. La séquence de démarrage continuera alors en anglais mais avec les paramètres locaux voulus (monnaies, format date et heure, disposition du clavier). 1 GB de RAM et plus sont recommandés pour les langues suivantes :</p>
+
+							<p>
+   							Défaut - Deutsch (Allemand) <br />
+							Défaut - English (Anglais US)<br />
+							*Čeština (Czech)<br />
+    							*Dansk (Danish)<br />
+    							*Español (Espagnol)<br />
+    							*English (Anglais GB)<br />
+    							*Français (Français)<br />
+    							*Italiano (Italien)<br />
+    							*Nihongo (Japonais)<br />
+    							*Nederlands (Néerlandais)<br />
+							*Polski (Polish)<br />
+    							*Português (Portugais BR et PT)<br />
+    							*Română (Roumain)<br />
+    							*Russian (Russe)<br />
+							*Українська (Ukrainian) <br />
+							</p>
+
+   							<p>La sélection de la langue dépend de la disponibilité de celle-ci dans les traductions du manuel d'aptosid, alors rejoignez-nous pour y ajouter votre langue.</p>
+
+					<h6><span class="highlight-3">Installation des autres langues avec KDE-lite </span></h6>
+						<ol>
+							<li>Selectionner votre langue pricipale dans le <span class="highlight-2">menu gfxboot (F4)</span> (voir aussi <a href="cheatcodes-fr.htm#cheatcodes">codes de démarrage spécifiques au Live CD aptosid</a>). Les fichiers de la langue eux-mêmes ne sont pas inclus dans le Live-CD : le systeme ne demarrera qu'avec la langue par défaut, l'anglais. Cependant vous aurez la bonne configuration requise pour la langue choisie et vous n'aurez plus besoin d'effectuer des changement au système, à part installer les fichiers manquants pour la langue selectionnée.</li>
+
+							<li>Démarrer l'installation.</li>
+
+							<li>Installer sur le Disque dur et redémarrer.</li>
+
+							<li>Après installation, installer la langue de votre choix et les applications via apt-get.</li>
+						</ol>
+
+					<h6>Premier démarrage à partir du disque dur</h6>
+							<p><span class="highlight-3">Après démarrage, vous constaterez que la connexion réseau n'est pas configurée</span>. Elle peut aisement l'être à partir de <a href="inet-ceni-fr.htm">Kmenu > Internet > Ceni</a>. Pour le WIFI/WLAN itinérant <a href="inet-wpagui-fr.htm">veuillez lire ceci</a>.</p>
+
+	</div>
+	<div class="divider" id="Installation">
+					<h2>L'installateur de aptosid</h2>
+
+							<!--- ####
+							<p><b>1.</b> L'installeur se démarre depuis le <span class="highlight-3"> Desktop icon, the KMenu> System>aptosid-installer</span>, le bureau ou la console en y entrant :</p>
+							#### -->
+							<p><b>1.</b> L'installateur se démarre depuis l'<span class="highlight-3">icone sur le bureau, ou par KMenu &gt; Système &gt; aptosid-installer</span>, ou la console en y entrant :</p>
+<pre>
+install-gui.bash
+</pre>
+		<div class="screenshot"><img src="../lib/images-fr/installer-fr/installer1-fr.png" title="Welcome tab - aptosid Installer" alt="l'installeur de aptosid - 1" /></div>
+	<div class="spacer02"></div>
+						<p><b>2.</b> Après avoir lu et compris le texte d'avertissement, passez à la section suivante pour choisir les partitions. </p>
+
+		<div class="screenshot"><img src="../lib/images-fr/installer-fr/installer2-fr.png" title="Partitioning tab - aptosid Installer" alt="l'installeur de aptosid - 2" /></div>
+
+							<p>Dans cette section, vous pouvez choisir l'endroit où s'établira votre installation en déterminant en haut la partition racine, et en bas ses points de montage spécifiques (pour /home ou autres, notamment. Attention ! L'installateur ne formate pas d'autre partition que la racine ! Vous devrez avoir préparé vos partitions additionnelles avant de lancer l'installateur !). La partition de swap sera montée automatiquement au lancement du système.</p>
+
+							<p><span class="highlight-2">NOTE: Si la partition racine ("/") est déjà formatée avec le système de fichiers désiré, vous pouvez décocher la case "formater en" pourvu que le système de fichiers de la liste déroulante reflète votre choix.</span></p>
+
+							<p>Toutes les partitions non-système seront montées sur la partition <span class="highlight-3">/media/</span>. Vous devrez choisir ici la partition racine ("/") pour votre installation de aptosid. Cependant, <span class="highlight-3">c'est aussi à ce moment que vous pouvez choisir de créer une partition de données.</span>. <span class="highlight-1"> Un clic gauche activera vos choix pour chacune des partitions.</span></p>
+
+				<p class="highlight-3">ÊTES-VOUS SÛR D'AVOIR SAUVEGARDÉ VOS DONNÉES ?</p>
+
+							<p>Si vous n'avez encore rien préparé en terme de partitionnement de votre disque dur, vous pouvez le faire à ce stade au moyen du bouton <span class="highlight-3">Démarrer l'outil de partitionnement</span> tout en consultant la section <a href="part-gparted-fr.htm">Partitionner son disque dur avec Gparted</a> ou, si vous préférez la console, en utilisant <a href="part-cfdisk-fr.htm">Partitionner en mode console</a>.</p>
+
+							<p>Les utilitaires de partitionnement peuvent être lancés depuis une console/terminal :</p>
+<pre>
+sux
+gparted
+</pre>
+		<p>ou</p>
+<pre>su
+cfdisk
+</pre>
+	<div class="spacer02"></div>
+
+							<p><b>3.</b> aptosid utilise GRUB comme utilitaire de démarrage, et par défaut l'option <b>Grub sur le MBR</b>! Si vous désirez autre chose, vous devez savoir ce que vous faites. Vous devrez alors configurer les autres chargeurs de démarrage manuellement, afin de pouvoir les utiliser.</p>
+
+							<p>Grub identifie les autres systèmes d'exploitation déjà installés (comme Windows) et les ajoute automatiquement à son menu de démarrage.</p>
+
+							<p>Cette fenêtre vous donne aussi la possibilité de modifier le fuseau horaire qu'utilisera votre système.</p>
+
+		<div class="screenshot"><img src="../lib/images-fr/installer-fr/installer3-fr.png" title="Grub/Timesone tab - aptosid Installer" alt="grub-to-mbr" /></div>
+	<div class="spacer02"></div>
+
+							<p><b>4.</b> Dans cette prochaine étape nous allons déterminer les identités et mots de passe d'utilisateur/utilisatrice et administrateur/administratrice (il va sans dire que vous avez grand intérêt à vous en souvenir !!!). Veillez à ne pas utiliser de mots de passe trop faciles à deviner. Pour ajouter d'autres utilisateurs, passez par la console après l'installation et utilisez <a href="hd-install-fr.htm#adduser"> adduser.</a>.</p>
+
+		<div class="screenshot"><img src="../lib/images-fr/installer-fr/installer4-fr.png" title="User/Password tab - aptosid Installer" alt="choosing-pw" /></div>
+	<div class="spacer02"></div>
+
+							<p><b>5.</b> Vous allez maintenant pouvoir donner un nom d'hôte à votre ordinateur (choisissez ce que vous voulez, du moment que le mot est composé d'une chaîne ininterrompue de chiffres et de lettres sans caractère spécial ou accentué, et ne commençant pas par un chiffre).</p>
+
+							<p>Après cela vous pouvez choisir si le service ssh doit démarrer automatiquement ou non.</p>
+
+		<div class="screenshot"><img src="../lib/images-fr/installer-fr/installer5-fr.png" title="Network tab - aptosid Installer" alt="hostname" /></div>
+		<div class="spacer02"></div>
+
+							<p><b>6.</b> Cette confirmation est votre dernière chance de vérifier les choix que vous avez faits. Relisez-les une dernière fois avec circonspection, puis cliquez sur <span class="highlight-3">Sauver et Continuer</span>..</p>
+
+		<div class="screenshot"><img src="../lib/images-fr/installer-fr/installer6-fr.png" title="Installation tab - aptosid Installer" alt="installation-config" /></div>
+
+							<p>À ce stade il est possible de modifier/changer le fichier de configuration puis de démarrer l'installation avec ces modifications. L'installeur n'opère aucune vérification et vous <span class="highlight-3">ne devez pas cliquer sur "Précédent" dans l'installeur, sinon vos changements manuels seraient perdus.</span> </p>
+
+							<p>Éditer (<span class="highlight-3">~/.sidconf</span>) est réservé aux utilisateurs expérimentés de GNU/Linux, qui voudraient écrire dans ce fichier des configuration des modifications spéciales ou qui ont besoin d'un type de partitionnement particulier de leurs disques durs qui serait refusé par l'installateur.</p>
+
+							<p><span class="highlight-2">Lorsque l'installateur détecte que vous essayez de faire l'installation sur un ancien $HOME il vous avertira et ne vous permettra pas de continuer à moins de choisir un autre nom d'utilisateur.</span></p>
+
+		<div class="screenshot"><img src="../lib/images-fr/installer-fr/installer7-fr.png" title="Begin Installation - aptosid Installer" alt="Begin Installtion" /></div>
+
+							<p>Pour faire démarrer l'installation effective, cliquez sur <span class="highlight-3">Démarrer l'installation</span>. Le processus complet va prendre, en fonction de votre machine, entre 5 et 15 minutes - sur les PC les plus anciens, cela peut aller jusqu'à 60 minutes....</p>
+
+							<p>Si la barre de progression ne bouge pas un certain temps, n'abandonnez pas, mais laissez-lui le temps.</p>
+
+							<p>Une fois l'installation terminée, retirez le CD du lecteur. Redémarrez alors dans votre nouvelle installation sur disque dur.</p>
+
+
+	</div>
+
+	<div class="divider" id="first-hd-boot">
+		<h2>Premier démarrage</h2>
+
+							<p class="highlight-4">À l'issue de votre premier démarrage, vous allez constater qu'aptosid a complètement oublié vos paramètres de connexion réseau. Il vous faudra alors les paramétrer à nouveau (Wlan, Modem, ISDN,...).</p>
+
+
+							<p>Si par exemple vous utilisiez au départ des paramètres réseau automatiques fixés par DHCP pour vous connecter au travers d'une passerelle/routeur, vous pouvez les réactiver en entrant :</p>
+
+<pre >
+ceni
+</pre>
+
+							<p>Les outils appropriés sont toujours accessibles au moyen de <i>Kmenu > aptosid > Internet > ceni</i>. Reportez-vous également à : <a href="inet-ceni-fr.htm">Internet et Réseau</a></p>
+
+							<p>Pour associer une partition $home antérieure à la nouvelle installation vous devrez éditer /etc/fstab ; rapportez-vous à <a href="home-fr.htm#home-move">Déplacer /home</a>.</p>
+
+							<p> <span class="highlight-2">Ne partagez jamais le $home d'un utilisateur entre plusieurs distributions : cette pratique produit des conflits de fichiers de configuration.</span></p>
+
+	</div>
+	<div class="divider" id="adduser">
+	<h2>Ajouter des utilisateurs</h2>
+							<p>Pour ajouter un <span class="highlight-3">nouvel utilisateur</span> avec les autorisations automatiques du groupe d'utilisateur, en administrateur: </p>
+<pre>
+adduser &lt;nouvel_utilisateur&gt;
+</pre>
+							<p>Appuyez juste sur entrée, les détails par défaut sont corrects. Il vous demandera alors d'entrer 2 fois le mot de passe.</p>
+
+							<p>Les icônes spécifiques à aptosid (comme celle du manuel et d'IRC) doivent être ajoutés manuellement.</p>
+
+							<p>Effacer un utilisateur</p>
+<pre>
+deluser &lt;user&gt;
+</pre>
+							<p>Lisez</p>
+<pre>
+man adduser
+man deluser
+</pre>
+							<p><span class="highlight-3">Kuser</span> peut également créer un nouvel utilisateur, cependant vous aurez besoin d'ajuster manuellement les autorisations du nouvel utilisateur.</p>
+	</div>
+	<div class="divider" id="sux">
+	<h2>À propos de sux</h2>
+							<p>De nombreuses commandes requièrent d'être effectuées avec des privilèges d'administrateur (root). Pour ce faire entrez :</p>
+<pre>
+sux
+</pre>
+
+							<p>Alors que la commande ordinaire pour devenir root est 'su', utiliser <span class="highlight-3">sux</span> à la place vous permettra de pouvoir lancer des applications avec interfaces graphiques X/X11 depuis la console et permettre ainsi à root (l'administrateur) d'utiliser celles-ci. Car <span class="highlight-3">sux</span> est une encapsulation de la commande 'su' standard qui transfère les permissions sur X de l'utilisateur à l'administrateur.</p>
+
+							<p>Certains applications KDE requièrent que <span class="highlight-3">dbus-launch</span> soient indiqués devant le nom de l'application :</p>
+<pre>
+dbus-launch &lt;Application&gt;
+</pre>
+
+							<p>Pour des exemples d'utilisation d'applications X11 via sux, on pourra citer l'emploi d'éditeurs comme Kate ou Kwrite, de gestionnaires de partitions comme GParted ou de gestionnaires de fichiers comme Konqueror. Vous pouvez d'autre part modifier les fichiers de root en cliquant sur ceux-ci en choisissant 'éditer en tant que root', puis entrant votre mot de passe d'administrateur, ce qui appelle kdesu en tâche de fond.</p>
+
+							<p>Cette approche est très différente de 'sudo' qui suppose que quiconque qui passe simplement par là puisse taper 'sudo' et disposer alors de moyens potentiels d'endommager sévèrement votre système.</p>
+
+							<p class="highlight-2">ATTENTION ! Lorsque vous êtes connecté en tant que root, le système ne vous empêchera pas de réaliser des opérations potentiellement dangereuses comme de détruire des fichiers importants, ou autres. Vous devez impérativement savoir ce que vous faites, car vous avez la possibilité d'endommager sérieusement votre système. </p>
+
+							<p class="highlight-2">Sous aucun prétexte, vous ne devez vous trouver être root dans une console/terminal pour utiliser des applications de production ou de communication ordinairement employées par un simple utilisateur, comme pour rédiger/envoyer des courriels, créer des tableaux, surfer, etc.</p>
+	</div>
+	<div id="rev">Page  last revised 24/07/2012 1300 UTC</div>
+
+</div>
+</body>
+</html>

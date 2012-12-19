@@ -1,0 +1,507 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl" lang="nl">
+<head>
+	<title>aptosid handleiding - GPU drivers</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+	<style type="text/css" media="all">@import url("../lib/css-js/fw-nl.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision by HarzG 01/05/2009 0930 UTC -->
+<!--htdig_noindex--><div id="menu"> <!-- menu starts here nl lang maintained by btorrem, Bram0s,eislon -->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<!-- menu last translated by eislon 2012.09.30 0933 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="Naar aptosid.com forums and wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-nl.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" />Zoeken Online Offline</a> </li>
+		<!--<li><a href="http://manual.aptosid.com/meta-manual">Gemeenschap Software Selecties</a></li>-->
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Kies een andere taal - Choose another language CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="lang-switch CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-nl.htm">aptosid OS Handleiding</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-nl.htm#welcome-gen">aptosid OS Handleiding &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-nl.htm#cred-team">Medewerkers</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-nl.htm#how-to">Gebruik van deze handleiding &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-nl.htm#how-to">Hoe deze handleiding gebruiken</a></li>
+					  <li><a href="welcome-nl.htm#table-contents">Inhoudstafel</a></li>
+					</ul>
+					</li>
+		<li><a href="help-nl.htm#help-gen">Hulp nodig &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-nl.htm#help-gen">Waar kan ik hulp vinden</a></li>
+					  <li><a href="help-nl.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-nl.htm#welcome-quick">Aptosid Snelle-startgids</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-nl.htm">ISO Inhoud, Releases, Download Vensters en Branden</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-nl.htm#cd-content">ISO Inhoud en systeembenodigdheden &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-nl.htm#rolling">Release info</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-nl.htm#download-aptosid">Aptosid Vensters , Downloaden en Branden &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-nl.htm#md5">md5 Checksum</a></li>
+					  <li><a href="cd-dl-burning-nl.htm#burn-nero">Branden in Windows</a></li>
+					  <li><a href="cd-dl-burning-nl.htm#burn-linux">Branden in Linux</a></li>
+					  <li><a href="cd-no-gui-burn-nl.htm#burning-no-gui">burniso script</a></li>
+					  <li><a href="cd-no-gui-burn-nl.htm#burn-no-gui-gen">Branden zonder een GUI (niet-grafisch)</a></li><li><a href="cd-dl-burning-nl.htm#download-aptosid">aptosid Download Mirrors</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-nl.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-nl.htm#rootpw">Root-paswoord op aptosid-Livesessie ISO</a></li>
+				<li><a href="live-mode-nl.htm#live-cd-installsoft">Installeren van software in de Livesessie</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-nl.htm">The Terminal / Konsole</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-nl.htm#term-kon"> Terminal / Konsole &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-nl.htm#term-kon"> Terminal / Konsole</a></li>
+					  <li><a href="term-konsole-nl.htm#colours"> Gekleurde terminal prompts</a></li>
+					  <li><a href="term-konsole-nl.htm#cli-help">Commando's - Help</a></li>
+					  <li><a href="help-nl.htm#init3-tools">Interessante applicaties in de tekstmode (tty) - init 3</a></li>
+					  <li><a href="term-konsole-nl.htm#term-cmds">Linux Terminal Commando Lijst</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-nl.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-nl.htm">CheatCodes</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-nl.htm#cheatcodes">aptosid specifieke Live-ISO Cheatcodes</a></li>
+				<li><a href="cheatcodes-nl.htm#cheatcodes-linux">Linux generische Cheatcodes</a></li>
+				<li><a href="cheatcodes-vga-nl.htm#vga">VGA Codes</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-nl.htm">Partitioneren van de harde schijf - Traditioneel, GPT en LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-nl.htm#hd-ntfs3g">Schrijven op een NTFS partitie met ntfs-3g</a></li>
+			<li><a href="part-lvm-nl.htm#part-lvm">Partitioneren vanwege LVM - Logical Volume Manager</a></li>
+			<li><a href="part-gparted-nl.htm#partition">Partitioneren met een GUI (grafisch) &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-nl.htm#partition">Harde schijf partitioneren gebruikmakend van GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-nl.htm#ntfs">NTFS partitie van groote veranderen gebruikmakend van GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-nl.htm#partition">Partitioneren met CLI &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-nl.htm#partition">Harde schijf partitioneren met cfdisk</a></li>
+					    <li><a href="part-cfdisk-nl.htm#formating">Formatteren (schijf leegmaken) na het partitioneren met cfdisk</a></li>
+					    <li><a href="part-gdisk-nl.htm#gdisk-6">Formatteren na het partitioneren met gdisk</a></li>
+					    <li><a href="part-gdisk-nl.htm#gdisk-1">GPT Partitioneren met gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-nl.htm#part-example">Partitioneren Basis &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-nl.htm#part-example">Partitie Grootte Voorbeelden</a></li>
+					  <li><a href="part-uuid-nl.htm#uuid">UUID, heropbouwen van fstab en creëren van nieuwe mount punten</a></li>
+					  <li><a href="part-cfdisk-nl.htm#disknames">Schijf benoemen in brief</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-nl.htm">Installatie opties - HD, USB, VM en Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-nl.htm#Inst-prep">Installatievoorbereiding &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-nl.htm#Inst-prep">Installatievoorbereiding </a></li>
+					  <li><a href="hd-install-nl.htm#Installation">Installeren op uw harde schijf</a></li>
+					  <li><a href="hd-install-nl.htm#first-hd-boot">Eerste keer opstarten</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-nl.htm#fromiso">Booten van uw iso-cd &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-nl.htm#fromiso">Booten vanaf uw iso-cd - Overzicht</a></li>
+					  <li><a href="hd-install-opts-nl.htm#grub2-fromiso">Booten vanaf uw iso-cd met Grub 2</a></li>
+					  <li><a href="hd-install-opts-nl.htm#fromiso-persist">Booten vanaf uw iso-cd en vasthouden</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-nl.htm#usb-hd">Installeren op USB &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-nl.htm#usb-hd">Installeren op USB-HD - aptosid specifiek - aptosid-on-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-nl.htm#raw-usb">Aptosid schrijven naar een USB/SSD stick met Linux, MS Windows of Mac OS X systeem</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-nl.htm#install-crypt">Installeren op encrypte partities - cryptroot</a></li>
+		  <li><a href="nbdboot-nl.htm#nbd1">Aptosid booten op een netwerk</a></li>
+		  <li><a href="hd-install-vmopts-nl.htm#vmopts">Virtuele Machine installatie opties</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-nl.htm">Graphische kaarten, Schermen, Xorg,  &amp; drivers</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-nl.htm#mon-res">Schermresolutie en Schermen  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-nl.htm#mon-res">Schermresolutie en Schermen</a></li>
+					  <li><a href="hw-dev-mon-nl.htm#xrandr">Dual-scherm en xrandr</a></li>
+					  <li><a href="hw-dev-mon-nl.htm#mon-binary">Dual-schermen (gebruikmakend van binaries)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-nl.htm#foss-xorg">GPU drivers &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-nl.htm#ati-3d">AMD/ATI 3D drivers</a></li>
+					  <li><a href="gpu-nl.htm#intel">Intel 2D en 3D drivers</a></li>
+					  <li><a href="gpu-nl.htm#nvidia">Nvidia 3D drivers</a></li>
+					  <li><a href="gpu-nl.htm#foss-xorg">Open Source Xorg drivers</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-nl.htm#fw-detect">Firmware detectie - "non-free" </a></li>
+			  <li><a href="nf-firm-nl.htm#non-free-firmware">"non-free" toevoegen aan de Sources List</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-nl.htm">Window Managers</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm--nl.htm">KDE en XFCE Window Managers &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm--nl.htm#xfce-notes">Handige Xfce extras</a></li>
+					    <li><a href="wm-dm-nl.htm#install-add">Handige extra KDE Apps</a></li>
+					    <li><a href="wm-dm-nl.htm#desk-freeze">Desktop Freezes (beweegt niet meer)</a></li>
+					    <li><a href="wm-dm-nl.htm#kde-login">Kan niet inloggen (KDE)</a></li>
+					    <li><a href="wm-dm-nl.htm#ch-th">Thema's veranderen</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-nl.htm#dm">Installie van bijkomende Display Managers</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-nl.htm">Internet verbinding, WiFi, LAN en Netwerken</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-nl.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-nl.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-nl.htm#serv-ftp">FTP Clients</a></li>
+					    <li><a href="lamp-apache-nl.htm#serv-sec">Security Protocols (beveiliging)</a></li>
+					    <li><a href="lamp-apache-nl.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-nl.htm#serv-mysql">MySQL Setup</a></li>
+					    <li><a href="lamp-ppp-nl.htm#serv-php">PHP in Apache</a></li>
+					    <li><a href="ntp-server-nl.htm#ntp-server">Timeserver Setup</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-nl.htm#tor">Firewalls en Privacy &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-nl.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-nl.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-nl.htm#firewalls">Firewalls</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-nl.htm#ssh-x">SSH en Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-nl.htm#setup">Samba-Server Setup</a></li>
+						  <li><a href="samba-nl.htm#configure">SAMBA configureren (Windows)</a></li>
+						  <li><a href="ssh-nl.htm#ssh-fs">SSH Apart Mounten</a></li>
+						  <li><a href="ssh-nl.htm#ssh-x">X Window Apps via SSH</a></li>
+						  <li><a href="ssh-nl.htm#ssh-f">GUI SSH met Konqueror</a></li>
+						  <li><a href="ssh-nl.htm#ssh-w">SSH X-Forwarding vanaf een Windows-PC</a></li>
+						  <li><a href="ssh-nl.htm#ssh">SSH en Beveiliging</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-nl.htm#netcardconfig">WIFI connecties (draadloos) &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-nl.htm#netcardconfig">Online geraken - Ceni</a></li>
+						    <li><a href="inet-wpagui-nl.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-nl.htm#net-set1">WiFi - WiFi instellen</a></li>
+						    <li><a href="inet-wpa-nl.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-nl.htm#hotswitch">Switchen tussen WiFi en Kabel</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-nl.htm#netcardconfig">Bedrade verbindingen &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-nl.htm#dial-mod">56k Modems</a></li>
+						    <li><a href="inet-ceni-nl.htm#netcardconfig">Online geraken - Ceni</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-nl.htm#fw-detect">Firmware detectie - "non-free" </a></li>
+		<li><a href="nf-firm-nl.htm#non-free-firmware">"non-free" toevoegen aan de Sources List</a></li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-nl.htm">Pakketbeheer en dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-nl.htm#apt-cook">APT Werkwijze en Bronnenlijst &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-nl.htm#apt-cook">APT-Gids Werkwijze en Bronnenlijst</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#apt-install">Nieuw pakket installeren</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#apt-delete">Pakket verwijderen</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#apt-downgrade">Pakket vasthouden (niet updaten) en afwaarderen</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#apt-cache">Pakket zoeken met apt-cache</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#gui-pacsea">GUI Pakket zoeken (grafisch)</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-nl.htm#kern-upgrade">Kernel upgraden &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-nl.htm#kern-remove">Kernels verwijderen</a></li>
+					    <li><a href="sys-admin-kern-upg-nl.htm#kern-upgrade">Kernel upgraden</a></li>
+					    <li><a href="sys-admin-kern-upg-nl.htm#dmakms">Kernelmodules dynamisch installeren met dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-nl.htm#apt-upgrade">Geïnstalleerd systeem upgraden -  dist-upgrade - Overzicht &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-nl.htm#live-cd-upgrade">Upgraden met Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-nl.htm#approx">dist-upgrade van meerdere PCs op een LAN</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#apt-upgrade">Geïnstalleerd systeem upgraden -  dist-upgrade - Overzicht</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#du-st">Geïnstalleerd systeem upgraden -  dist-upgrade - De Stappen</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-nl.htm">Systeem Administratie</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-nl.htm#bois-prep">BIOS upgraden met FreeDOS</a></li>
+		<li><a href="vir-rkits-nl.htm#virus-rkits">Virus en Rootkit Scanners</a></li>
+		<li><a href="hd-install-nl.htm#adduser">Gebruikers en Paswoorden toevoegen &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-nl.htm#adduser">Nieuwe gebruiker toevoegen</a></li>
+					    <li><a href="sys-admin-gen-nl.htm#pw-lost">verloren root-paswoorden, nieuwe paswoorden</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-nl.htm#start-services">Services en init runlevels &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-nl.htm#start-services">Services inschakelen/uitschakelen</a></li>
+					    <li><a href="sys-admin-gen-nl.htm#pkill">Een service of een process stoppen</a></li>
+					    <li><a href="sys-admin-gen-nl.htm#init">aptosid runlevels - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-nl.htm#rsync">Een systeem back-up maken &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-nl.htm#rdiff">Doe een Back-Up met rdiff</a></li>
+					    <li><a href="sys-admin-rsync-nl.htm#rsync">Doe een Back-Up met rsync</a></li>
+					    <li><a href="home-nl.htm#home-bu">Verplaatsen van /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-nl.htm#fonts">CUPS, Opmaak en Geluid &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-nl.htm#fonts">Opmaak</a></li>
+					     <li><a href="sys-admin-gen-nl.htm#cups">CUPS - Printer Systeem</a></li>
+					     <li><a href="sys-admin-gen-nl.htm#sound">Geluid Mixers</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-nl.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-nl.htm#chroot">Grub2 - Grub herstellen met chroot</a></li>
+					    <li><a href="sys-admin-grub2-nl.htm#mbr-over-grub2">Grub2 - MBR Overschrijven</a></li>
+					    <li><a href="sys-admin-grub2-nl.htm#multi-os">Grub2 - Dual en Multibooting</a></li>
+					    <li><a href="sys-admin-grub2-nl.htm#grub1-grub2">Grub2 -Upgraden vanaf Grub1</a></li>
+					    <li><a href="sys-admin-grub2-nl.htm#grub2">Grub2 - Overzicht</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Gesponsored door webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid Gesponsored door webtropia.com" alt="aptosid Gesponsored door webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+	      <div class="divider" id="foss-xorg">
+			<h2 id="top-header">Open Source Xorg drivers voor ATI/AMD, Intel &amp; nVidia</h2>
+
+							<p>Open Source Xorg drivers voor nVidia (nouveau), ATI/AMD (Radeon), Intel en anderen zijn voorgeïnstalleerd bij aptosid. </p>
+
+							<p><span class="highlight-3"> Nota: Een xorg.conf is normaal niet noodzakelijk voor open source drivers.</span></p>
+
+							<p>Indien je niet-vrije drivers hebt gebruikt en wenst terug te schakelen naar vrije drivers, wijzig dan <span class="highlight-3">/etc/X11/xorg.conf.d/xx-xxxx.conf</span> met een editor onder root rechten. Zoek naar de paragraaf die begint met SECTION DEVICE en verander de display driver naar <span class="highlight-2">radeon</span> OF <span class="highlight-2">intel</span> (om er enkele op te noemen).</p>
+
+							<p>Om terug naar de <span class="highlight-2">nouveau</span> driver te schakelen, kijk naar <a href= "http://aptosid.com/index.php?module=wikula&amp;tag=GoNvidia">http://aptosid.com/index.php?module=wikula&amp;tag=GoNvidia</a>.</p>
+
+							<p class="highlight-2">Het wijzigen van de xorg.conf file is natuurlijk volledig op eigen risico !</p>
+
+							<p>Meer informatie over: <a href= "http://www.x.org/wiki/radeon"> ATI/AMD </a> &nbsp;  <a href= "http://www.x.org/wiki/RadeonFeature"> ATI/AMD Feature Matrix</a> &nbsp; <a href= "http://www.x.org/wiki/IntelGraphicsDriver"> Intel</a> &nbsp; <a href= "http://nouveau.freedesktop.org/wiki/FeatureMatrix"> nouveau</a> &nbsp; <a href= "http://xorg.freedesktop.org"> X.Org</a></p>
+	      </div>
+	      <div class="divider" id="x2d">
+			<h2>2D video drivers</h2>
+
+							<p>De drivers voor X.Org X server (zie  xserver-xorg voor meer informatie) ondersteunen in NVIDIA Riva, TNT, GeForce en Quadro kaarten en de ATI Mach, Rage, Radeon en FireGL cards van ATI met atimisc, r128 en radeon sub-drivers. Radeon en Intel ondersteunen beide 2D grafische versnelling (textured xv) voor het afspelen van video.</p>
+	      </div>
+	      <div class="divider" id="ati-3d">
+			<h2>ATI/AMD, Radeon en andere video drivers</h2>
+
+							<p>Sommige ATI kaarten ondersteunen ook 3D, (en KDE animaties), met <span class="highlight-3">xserver-xorg-video-radeon</span>. Tot nu toe worden de chipsets t/m r700 ondersteund.</p>
+
+							<p>Om automatisch de nieuwe pakketten van de niet-gratis firmware te installeren wanneer deze geupdate worden voor 2D en 3D video kaarten:</p>
+
+<pre>
+apt-get install firmware-linux
+</pre>
+							<p>Hiernaar moet je de computer herstarten.</p>
+		</div>
+	<div class="divider" id="intel">
+					  <h2>Intel 2D and 3D</h2>
+							<p>Intel drivers zouden perfect moeten werken voor 2D en 3D video versnelling vermits deze in de Intel vrije reeks van drivers werden toegevoegd.</p>
+		</div>
+	<div class="divider" id="nvidia">
+		<h2>Binary, closed source drivers voor nVidia met dmakms &amp; xorg.conf.d</h2>
+
+							<p><span class="highlight-3">You will need to add &lt;contrib non-free&gt; to your debian.list, refer to <a href="nf-firm-nl.htm#non-free-firmware">Adding non-free to sources</a></span></p>
+
+							<p>Voor de meest complete en accurate lijst van ondersteunde nvidia GPUs kijk je op de Ondersteunde produkten lijst op de nvidia website <a href="http://www.nvidia.com/object/unix.html"> NVIDIA Linux Graphics Driver download pagina</a>.</p>
+
+							<p>Je kunt ook <a href="http://www.nvnews.net/vbulletin/showthread.php?t=122606">nvnews</a> lezen voor andere opties.</p>
+
+							<p>Nieuwe en oudere installaties moet er systeemwijd het config bestand <span class="highlight-3">/etc/X11/xorg.conf.d</span> aanwezig zijn en voeg een bestand toe aan de directory <span class="highlight-3">20-nvidia.conf</span> : </p>
+<pre>
+mkdir /etc/X11/xorg.conf.d
+touch /etc/X11/xorg.conf.d/20-nvidia.conf
+</pre>
+
+							<p>Open met je favorite teksteditor, (bv. kwrite, kate, mousepad, mcedit, vi, vim) het bestand:</p>
+
+<pre>
+&lt;editor&gt; /etc/X11/xorg.conf.d/20-nvidia.conf
+</pre>
+							<p>en voeg de volgende code volledig toe aan het bestand 20-nvidia.conf:</p>
+<pre>
+#
+Section "Device"
+         Identifier      "Device 0"
+         Driver          "nvidia"
+EndSection
+# This is a trailing line, it is needed so that End Section is not the last line
+</pre>
+							<p>Indien je meer dan 1 grafische kaart heb, dan moet je ook deze kaart zijn PCI toevoegen aan de 20-nvidia.conf bestand, zoek het op via:</p>
+<pre>
+lspci | grep -i vga
+</pre>
+							<p>Dit zou het volgende terug moeten geven:</p>
+<pre>
+01:00.0 VGA compatible controller:
+</pre>
+							<p>Voeg de 01:00.0 busid als een extra regel toe onder de 'Driver' regel, let er op dat de syntax <span class="highlight-3">PCI:x:y:z:</span> is, zonder de dubbele nullen maar met :-karakter toegevoegd,  dus als volgt:</p>
+
+<pre>
+BusID		 "PCI:1:0:0"
+</pre>
+					<h4>Installeren van de nvidia drivers</h4>
+							<p><span class="highlight-3">NOTITIE: Gebruik apt-cache search nvidia en apt-cache show &lt;package&gt; om zeker te zijn dat je de correcte driver hebt. There are basically 2 types of nvidia drivers, the current Debian Sid 3D drivers  and the legacy Debian Sid 3D drivers.</span></p>
+
+					<h5>Voor de huidige 3d nvidia drivers  &ge; GeForce 6xxx :</h5>
+
+							<p>Voorbereiding:</p>
+<pre>
+apt-get install nvidia-kernel-source nvidia-kernel-common dmakms
+</pre>
+							<p>Hierna wordt de Dynamic Module-Assistant Kernel Module Support (dmakms) voor nvidia geactiveerd. De volgende keer dat een update van de Linux kernel plaatsvindt, is de nvidia module hierop voorbreid zonder handmatige aanpassingen. Dat wordt gedaan door de <span class="highlight-3">nvidia-kernel-source</span> aan de <span class="highlight-3">/etc/default/dmakms </span>configuratie  toe te voegen:</p>
+
+<pre>
+echo nvidia-kernel-source >> /etc/default/dmakms
+</pre>
+
+							<p>Dan:</p>
+<pre>
+m-a a-i nvidia-kernel-source
+</pre>
+							<p>Vervolgens:</p>
+<pre>
+apt-get install nvidia-glx
+</pre>
+							<p>Na een reboot van de pc werkt de module.</p>
+
+							<p>Wanneer xorg ge-update wordt, dan hoef je alleen nvidia-glx opnieuw te herinstalleren via:</p>
+<pre>
+apt-get install --reinstall nvidia-glx
+</pre>
+
+						      <p>Wanneer een nieuwe Debian sid nvidia driver beschikbaar komt via apt:</p>
+<pre>
+m-a a-i nvidia-kernel-source
+apt-get install --reinstall nvidia-glx
+</pre>
+						      <p>Herstart de PC zodat de installatie van de module effectief wordt.</p>
+
+					      <h4>Benaming schema voor de legacy nvidia drivers in Debian</h4>
+						  <ul>
+						      <li>nvidia-kernel-legacy-71xx is voor GeForce 2</li>
+						      <li>nvidia-kernel-legacy-96xx is voor GeForce 4</li>
+						      <li>nvidia-kernel-legacy-173xx is voor GeForce 5</li>
+						  </ul>
+
+					<h5>Voorbeeld van een legacy 3d nvidia drivers gebruikmakend van &le; GeForce 5xxx :</h5>
+
+							<p>Voor andere legacy drivers vervang je de 173xx nummer met jou driver nummer.</p>
+
+<pre>
+m-a a-i nvidia-kernel-legacy-173xx-source &amp;&amp; apt-get install nvidia-glx-legacy-173xx dmakms
+</pre>
+
+							<p>Verander dmakms:</p>
+<pre>
+echo nvidia-kernel-legacy-173xx-source >> /etc/default/dmakms
+</pre>
+
+						      <p>Wanneer xorg ge-update wordt dan hoef je alleen nvidia-glx-legacy te herinstalleren via:</p>
+<pre>
+apt-get install --reinstall nvidia-glx-legacy-173xx
+</pre>
+					<h4>Laden van de module mislukt</h4>
+
+							<p>Als het laden van de nvidia module, om welke reden dan ook, mislukt :</p>
+<pre>
+modprobe nvidia
+</pre>
+							<p>Dan reboot de computer.</p>
+
+							<p>Als de module nog steeds niet geladen wordt:</p>
+ <pre>
+ m-a a-i -f nvidia-kernel-source
+</pre>
+							<p>or</p>
+ <pre>
+ m-a a-i -f nvidia-kernel-legacy-173xx-source
+</pre>
+							<p>Hiermee wordt een rebuild van de module uitgevoerd, <span class="highlight-3">hierna rebooten.</span></p>
+
+						      <p>Lees:</p>
+<pre>
+$ /usr/share/doc/dmakms
+</pre>
+
+		</div>
+
+		<div id="rev">Inhoud het laatst gewijzigd op 21/11/2011 0815 UTC </div>
+</div>
+</body>
+</html>

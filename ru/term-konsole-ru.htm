@@ -1,0 +1,606 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+	<title>Руководство aptosid - Терминал/консоль</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision RoEn 28/12/2011 1200 UTC -->
+<!--htdig_noindex--><div id="menu"> <!-- menu starts here - ru language maintained by RoEn -->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="Главная страница aptosid.com, форума и вики" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-ru.htm#search-on"><img src="../lib/logos/manual-search-22x22.png" title="Поиск в руководстве" alt="Search" /> Варианты поиска</a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Выбор языка - Choose another language CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="Переключение языка CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-ru.htm">Руководство aptosid</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-ru.htm#welcome-gen">Добро пожаловать! &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-ru.htm#cred-team">Благодарности</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-ru.htm#how-to">Об использовании &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-ru.htm#how-to">Об использовании</a></li>
+					  <li><a href="welcome-ru.htm#table-contents">Содержание</a></li>
+					</ul>
+					</li>
+		<li><a href="help-ru.htm#help-gen">Получение помощи &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-ru.htm#help-gen">Где получить помощь</a></li>
+					  <li><a href="help-ru.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-ru.htm#welcome-quick">Краткое руководство aptosid</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-ru.htm">Содержание ISO-образа, выпуски, список зеркал и запись</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-ru.htm#cd-content">Содержание ISO-образа и системные требования &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-ru.htm#rolling">Замечания к релизу</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-ru.htm#download-aptosid">Список зеркал, скачивание ISO-образа и запись &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-ru.htm#md5">Проверка ISO-образа с md5</a></li>
+					  <li><a href="cd-dl-burning-ru.htm#burn-nero">Запись ISO-образа в Windows</a></li>
+					  <li><a href="cd-dl-burning-ru.htm#burn-linux">Запись ISO-образа в Linux</a></li>
+					  <li><a href="cd-no-gui-burn-ru.htm#burning-no-gui">Скрипт burniso</a></li>
+					  <li><a href="cd-no-gui-burn-ru.htm#burn-no-gui-gen">Запись ISO-образа в консоли</a></li>
+					  <li><a href="cd-dl-burning-ru.htm#download-aptosid">Список зеркал</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-ru.htm">Режим ISO-образа</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-ru.htm#rootpw">Пароль root на ISO-образе</a></li>
+				<li><a href="live-mode-ru.htm#live-cd-installsoft">Установка ПО на ISO-образе</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-ru.htm">Терминал и оболочка</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-ru.htm#term-kon">Терминал и оболочка &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-ru.htm#term-kon">Терминал и оболочка</a></li>
+					  <li><a href="term-konsole-ru.htm#colours"> Цветная подсказка в терминале</a></li>
+					  <li><a href="term-konsole-ru.htm#cli-help">Помощь в терминале</a></li>
+					  <li><a href="help-ru.htm#init3-tools">Полезные инструменты в текстовом режиме (tty) - init 3</a></li>
+					  <li><a href="term-konsole-ru.htm#term-cmds">Команды в терминале</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-ru.htm#sux">Команда: sux/sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-ru.htm">Чит-коды</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-ru.htm#cheatcodes">Особые для ISO-образа aptosid чит-коды</a></li>
+				<li><a href="cheatcodes-ru.htm#cheatcodes-linux">Общие для параметров ядра чит-коды</a></li>
+				<li><a href="cheatcodes-vga-ru.htm#vga">Общие для видеокарты коды</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-ru.htm">Разбиение жесткого диска - по старому, GPT и LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-ru.htm#hd-ntfs3g">Запись на раздел NTFS с ntfs-3g</a></li>
+			<li><a href="part-lvm-ru.htm#part-lvm">Разметка с использованием LVM - Logical Volume Manager</a></li>
+			<li><a href="part-gparted-ru.htm#partition">Разметка диска с интерфесом &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-ru.htm#partition">Разметка диска с gparted/KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-ru.htm#ntfs">Разделы NTFS с gparted/KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-ru.htm#partition">Примеры разметки диска в консоли &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-ru.htm#partition">Разметка диска с cfdisk</a></li>
+					    <li><a href="part-cfdisk-ru.htm#formating">Форматирование разделов с cfdisk</a></li>
+					    <li><a href="part-gdisk-ru.htm#gdisk-6">Форматирование после разметки с gdisk</a></li>
+					    <li><a href="part-gdisk-ru.htm#gdisk-1">Разбиение по GPT с gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-ru.htm#part-example">Разметка диска - обзор &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-ru.htm#part-example">Примеры разметки диска</a></li>
+					  <li><a href="part-uuid-ru.htm#uuid">UUID, восстанавление fstab и создание новых точек монтирования</a></li>
+					  <li><a href="part-cfdisk-ru.htm#disknames">Имена жестких дисков</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-ru.htm">Установка aptosid на HD, USB, VM и шифрованные разделы</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-ru.htm#Inst-prep">Подготовка установки &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-ru.htm#Inst-prep">Подготовка установки</a></li>
+					  <li><a href="hd-install-ru.htm#Installation">Инсталляция на HD</a></li>
+					  <li><a href="hd-install-ru.htm#first-hd-boot">Первая загрузка</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-ru.htm#fromiso">Загрузка 'fromiso' &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-ru.htm#fromiso">Загрузка 'fromiso' - обзор</a></li>
+					  <li><a href="hd-install-opts-ru.htm#grub2-fromiso">Загрузка 'fromiso' с grub 2</a></li>
+					  <li><a href="hd-install-opts-ru.htm#fromiso-persist">Способы 'fromiso' и 'persist'</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-ru.htm#usb-hd">Инсталляция на USB &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-ru.htm#usb-hd">Инсталляция на USB-HD - способ aptosid -  aptosid-на-флешки</a></li>
+					  <li><a href="hd-ins-opts-oos-ru.htm#raw-usb">Запись aptosid на USB/SSD с помощью другого Linux, MS Windows или Mac OS</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-ru.htm#install-crypt">Установка на шифрованные разделы - cryptroot</a></li>
+		  <li><a href="nbdboot-ru.htm#nbd1">Загрузка aptosid по сети</a></li>
+		  <li><a href="hd-install-vmopts-ru.htm#vmopts">Опции инсталляций на VM (Virtual Machine)</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-ru.htm">Оборудование в Xorg и разные драйверы</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-ru.htm#mon-res">Разрешение экрана и мониторы  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-ru.htm#mon-res">Разрешение экрана и мониторы</a></li>
+					  <li><a href="hw-dev-mon-ru.htm#xrandr">Двойные экраны и xrandr</a></li>
+					  <li><a href="hw-dev-mon-ru.htm#mon-binary">Двойные экраны (используя двоичные файлы)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-ru.htm#foss-xorg">Микропрограммное обеспечение GPU &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-ru.htm#ati-3d">AMD/ATI 3D драйверы</a></li>
+					  <li><a href="gpu-ru.htm#intel">Intel 2D и 3D драйверы</a></li>
+					  <li><a href="gpu-ru.htm#nvidia">Nvidia 3D драйверы</a></li>
+					  <li><a href="gpu-ru.htm#foss-xorg">Свободные Xorg-драйверы</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-ru.htm#fw-detect">Определение несвободного микропрограммного обеспечения - non-free </a></li>
+			  <li><a href="nf-firm-ru.htm#non-free-firmware">Добавление non-free в список источников</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-ru.htm">Оконные менеджеры</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-ru.htm">Оконные менеджеры KDE и Xfce&#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-ru.htm#xfce-notes">Полезные инструменты для Xfce</a></li>
+					    <li><a href="wm-dm-ru.htm#install-add">Полезные инструменты для KDE</a></li>
+					    <li><a href="wm-dm-ru.htm#desk-freeze">Рабочий стол зависает</a></li>
+					    <li><a href="wm-dm-ru.htm#kde-login">Проблемы входа в KDE</a></li>
+					    <li><a href="wm-dm-ru.htm#ch-th">Управление темами</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-ru.htm#dm">Установква дополнительных дисплейных менеджеров</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-ru.htm">Интернет, Wifi и локальная сеть</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-ru.htm">Мета-пакет LAMP &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-ru.htm#serv-apache">Мета-пакет LAMP</a></li>
+					    <li><a href="lamp-apache-ru.htm#serv-ftp">Клиенты FTP</a></li>
+					    <li><a href="lamp-apache-ru.htm#serv-sec">Защищенные протоколы</a></li>
+					    <li><a href="lamp-apache-ru.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-ru.htm#serv-mysql">Настройка MySQL</a></li>
+					    <li><a href="lamp-ppp-ru.htm#serv-php">PHP в apache</a></li>
+					    <li><a href="ntp-server-ru.htm#ntp-server">Установка сервера времени</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-ru.htm#tor">Брандмауэры и веб-прокси &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-ru.htm#tor">Маршрутизатор tor</a></li>
+					    <li><a href="tor-privoxy-ru.htm#privoxy">Веб-прокси privoxy</a></li>
+					    <li><a href="inet-ceni-ru.htm#firewalls">Брандмауэры</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-ru.htm#ssh-x">Samba и ssh &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-ru.htm#setup">Сервер samba</a></li>
+						  <li><a href="samba-ru.htm#configure">Интеграции samba в сеть Windows</a></li>
+						  <li><a href="ssh-ru.htm#ssh-fs">Удаленное монтирование с ssh</a></li>
+						  <li><a href="ssh-ru.htm#ssh-x">Приложения X-Windows с ssh</a></li>
+						  <li><a href="ssh-ru.htm#ssh-f">Интерфейс ssh и Konqueror</a></li>
+						  <li><a href="ssh-ru.htm#ssh-w">ssh X-forwarding с Windows-компом</a></li>
+						  <li><a href="ssh-ru.htm#ssh">Безопасность с ssh</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-ru.htm#netcardconfig">Связи с WiFi &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-ru.htm#netcardconfig">Настройка сетевых карт с ceni</a></li>
+						    <li><a href="inet-wpagui-ru.htm#wpa-roaming-gui">Графическoe ппиложение wpa_gui для WiFi</a></li>
+						    <li><a href="inet-setup-ru.htm#net-set1">Роуминг с WiFi</a></li>
+						    <li><a href="inet-wpa-ru.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-ru.htm#hotswitch">Переключение сети между WiFi и проводной связью</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-ru.htm#netcardconfig">Проводная связь &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-ru.htm#dial-mod">56килобитовые модемы</a></li>
+						    <li><a href="inet-ceni-ru.htm#netcardconfig">Настройка сетевых карт с ceni</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-ru.htm#fw-detect">Определение несвободного микропрограммного обеспечения - non-free </a></li>
+		<li><a href="nf-firm-ru.htm#non-free-firmware">Добавление non-free в список источников</a></li>			
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-ru.htm">Управление пакетами и обновление системы с dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-ru.htm#apt-cook">apt и репозитории &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-ru.htm#apt-cook">apt и репозитории</a></li>
+					    <li><a href="sys-admin-apt-ru.htm#apt-install">Установка нового пакета</a></li>
+					    <li><a href="sys-admin-apt-ru.htm#apt-delete">Удаление пакета</a></li>
+					    <li><a href="sys-admin-apt-ru.htm#apt-downgrade">Понижение версии с hold</a></li>
+					    <li><a href="sys-admin-apt-ru.htm#apt-cache">Поиск пакетной иформации с apt-cache</a></li>
+					    <li><a href="sys-admin-apt-ru.htm#gui-pacsea">Графическая поисковая программа</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-ru.htm#kern-upgrade">Обновление ядра &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-ru.htm#kern-remove">Удаление ядра</a></li>
+					    <li><a href="sys-admin-kern-upg-ru.htm#kern-upgrade">Обновление ядра</a></li>
+					    <li><a href="sys-admin-kern-upg-ru.htm#dmakms">Динамическая инсталляция модулей ядра с dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-ru.htm#apt-upgrade">Обновления системы с dist-upgrade - Краткий обзор &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-ru.htm#live-cd-upgrade">Обновление с ISO-образа</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-ru.htm#approx">Обновление нескольких компьютеров в локальной сети</a></li>
+					    <li><a href="sys-admin-apt-ru.htm#apt-upgrade">Краткий обзор oбновления системы с dist-upgrade</a></li>
+					    <li><a href="sys-admin-apt-ru.htm#du-st">Шаги обновления системы с dist-upgrade</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-ru.htm">Системное администрирование</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-ru.htm#bois-prep">Обновление BIOS с FreeDOS</a></li>
+		<li><a href="vir-rkits-ru.htm#virus-rkits">Сканер безопасности</a></li>
+		<li><a href="hd-install-ru.htm#adduser">Новый пользователь и пароли &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-ru.htm#adduser">Добавление нового пользователя</a></li>
+					    <li><a href="sys-admin-gen-ru.htm#pw-lost">Восстановление root-пароля</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-ru.htm#start-services">Службы и режимы загрузки &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-ru.htm#start-services">Выбор служб</a></li>
+					    <li><a href="sys-admin-gen-ru.htm#pkill">Завершениe службы или процесса</a></li>
+					    <li><a href="sys-admin-gen-ru.htm#init">Режимы загрузки init в aptosid</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-ru.htm#rsync">Резервирование системы &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-ru.htm#rdiff">Резервирование с rdiff</a></li>
+					    <li><a href="sys-admin-rsync-ru.htm#rsync">Резервирование с rsync</a></li>
+					    <li><a href="home-ru.htm#home-bu">Перемещение /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-ru.htm#fonts">Cups, шрифты и звук &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-ru.htm#fonts">Шрифты</a></li>
+					     <li><a href="sys-admin-gen-ru.htm#cups">Сервер cups</a></li>
+					     <li><a href="sys-admin-gen-ru.htm#sound">Звуковые микшеры</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-ru.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-ru.htm#chroot">Grub2 - Восстановление grub с chroot</a></li>
+					    <li><a href="sys-admin-grub2-ru.htm#mbr-over-grub2">Grub2 - Удаление из MBR</a></li>
+					    <li><a href="sys-admin-grub2-ru.htm#multi-os">Grub2 - Двойная и мультизагрузка</a></li>
+					    <li><a href="sys-admin-grub2-ru.htm#grub1-grub2">Grub2 - Обновление с grub1</a></li>
+					    <li><a href="sys-admin-grub2-ru.htm#grub2">Grub2 - Краткий обзор</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Наш спонсор webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid размещен на сервере webtropia.com" alt="aptosid размещен на сервере webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+	<div class="divider" id="term-kon">
+		<h2 id="top-header">Определение терминала и соответственно консоли</h2>
+
+							<p>Терминал, называемый также консолью, это программа, которая позволяет работать непосредственно с операционной системой GNU/LINUX, посылая команды, которые немедленно исполняются. Терминал, также часто называемый <span class="highlight-3">оболочкой</span> или <span class="highlight-3">командной строкой</span>, это мощный инструмент, лучше изучите его и время, потраченное на его изучение, впоследствии окупится.</p>
+
+							<p>В aptosid можно вызывать терминал/консоль, щелкнув кнопкой мыши справа от K-меню на символ монитора персонального компьютера или в K-меню :&gt; система &gt; консоль программа терминала.
+        </p>
+
+							<p>В появившемся окне терминала видно приглашение к вводу команды "prompt":</p>
+<pre>
+username@hostname:~$
+</pre>
+
+							<p>Имя пользователя в вышеупомянутом примере соответствует имени  пользователя сеанса. Знак <span class="highlight-3">~ (тильда)</span> указывает, на то, что пользователь находится в своем домашнем каталоге <span class="highlight-3">/home/username</span>, и знак доллара <span class="highlight-3">$</span> значит, что пользователь был зарегистрирован в терминале с правами пользователя. В конце мигает курсор. Это все вместе называется командной строкой. Здесь вводятся команды, которые должен запускать терминал.</p>
+
+							<p>Многие команды можно запустить только с правами root, или администратора. Права root получают так: вводят <span class="highlight-3">su</span> (или 'su-me', скрипт, который первоначально был задуман для Live-CD, но также предоставляет различные возможности) и нажимают Enter, затем вводят пароль root. Пароль не отображается во время ввода данных на дисплее.</p>
+
+							<p>Если Вы правильно введёте пароль, командная строка примет вид:</p>
+<pre>
+root@hostname:/home/username#
+</pre>
+
+							<p class="highlight-2">Внимание: Root привилегии позволяют осуществлять любые действия, вплоть до удаления файлов, без которых операционная система больше не будет функционировать и т.д. Поэтому всегда, работая с правами root, нужно знать, <b>что</b> Вы делаете. Существует возможность причинить непоправимый ущерб операционной системе.</p>
+
+							<p>Обратите внимание, что знак доллара $ сменился диезом <span class="highlight-3">#</span>. В терминале/консоли диез <span class="highlight-3">#</span> всегда значит, что Вы зарегистрированы с правами администратора (root-привилегиями). <span class="highlight-1">В этих наших руководствах и на форумах мы опускаем все перед $ или #,  например:</span></p>
+<pre>
+# apt-get install [имя пакета]
+</pre>
+
+							<p>Это значит: Откройте терминал, зарегистрируйтесь в системе как root (su) и после знака # введите указанную программу.<span class="highlight-4"> Диез # вводить дополнительно не нужно</span></p>
+
+							<p>При возникновении проблем, наберите:</p>
+<pre>
+reset
+</pre>
+							<p>и нажмите клавишу enter.</p>
+
+							<p>Если вывод терминала, по каким-то причинам не читаем, для "перерисовки" отображения используйте комбинацию клавиш <span class="highlight-3">ctrl+l</span>. В первую очередь подобные проблемы могут возникнуть при использовании программ, задействованных ncurses интерфейс, таких как irssi.</p>
+							
+							<p>Консоль или терминал иногда может показаться  зависшим, однако это не так, и все, что Вы вводите все равно будет обрабатываться. Это может быть вызвано случайным нажатием <span class="highlight-3">ctrl+s</span>. В этом случае попробуйте использовать <span class="highlight-3">ctrl+q</span> для разблокирования терминала.</p>
+
+	</div>
+	<div class="divider" id="colours">
+				    <h3><span class="highlight-4">Цветные подсказки в консоли для </span> <span class="highlight-5">user:~</span><span class="highlight-1">$ </span> и <span class="highlight-2">root:</span><span class="highlight-1"># </span> <span class="highlight-3"></span></h3>
+
+							<p>Цветные подсказки в консоли могут защитить от неприятных или катастрофических ошибок, если выполнять задачу не от учетной записи пользователя <span class="highlight-5">user~$</span>, а от <span class="highlight-2">root # </span>. Они также могут быть использованы в качестве закладки для всех 100 строк.</p>
+
+							<p>В настройках по умолчанию подсказки для user~$ и root# обладают одинаковым цветом, но цвет можно просто поменять.</p>
+
+							<p>Основные цвета:</p>
+<pre>
+(синтаксис 00;XX)
+[00;30] черный
+[00;31] красный
+[00;32] зеленый
+[00;33] желтый
+[00;34] голубой
+[00;35] пурпурный
+[00;36] голубой
+[00;37] белый
+[Чтобы получить варианты цвета, нужно заменить [00;XX] на [01;XX]].
+</pre>
+				<h6>Изменение цвета подсказок имеи пользователя ~$:</h6>
+							<p>Открывайте как $user файл ./bashrc в текстовом редакторе:</p>
+<pre>
+$ &lt;editor&gt; ~/.bashrc
+</pre>
+							<p>В строке 39 комментарий будет удален, и строка будет выглядеть следующим образом:</p>
+<pre>
+force_color_prompt=yes
+</pre>
+							<p>В строке 53, где, например, стоит 01;32m, нужно установить желаемое значение цвета.</p>
+
+							<p>В этом примере цветная подсказка для root:# будет изменена на <span class="highlight-5"> голубой </span> [01;34m\]. Это должно быть сделано [01;XXm\] в трёх местах с синтаксисом:</p>
+<pre>
+PS1='${debian_chroot:+($debian_chroot)}\[\033[01;36m\]\u@\h\[\033[01;36m\]:\[\033[01;36m\]\w\[\033[00m\]\$ '
+</pre>
+							<p>Новый цвет появится после открытия нового терминала.</p>
+
+				<h6>Изменение цвета подсказок root# :</h6>
+<pre>
+sux
+&lt;editor&gt; /root/.bashrc
+</pre>
+							<p>В строке 39 комментарий будет удален,и строка будет выглядеть следующим образом:</p>
+<pre>
+force_color_prompt=yes
+</pre>
+							<p>В строке 53, где, например, стоит 01;32m, нужно установить желаемое значение цвета.</p>
+
+							<p>В этом примере цветная подсказка для root:# будет изменена на <span class="highlight-2"> красный </span>   [01;31m\]. Это должно быть сделано [01;XXm\] в трёх местах с синтаксисом:</p>
+<pre>
+PS1='${debian_chroot:+($debian_chroot)}\[\033[01;31m\]\u@\h\[\033[01;31m\]:\[\033[01;31m\]\w\[\033[00m\]\$ '
+</pre>
+							<p>Новый цвет появится после открытия нового терминала.</p>
+
+					    <h6>Цвет фона терминала</h6>
+							<p>Чтобы изменить цвет фона и шрифта в терминале, найдите опции в меню терминала.</p>
+
+
+		<div class="screenshot"><img src="../lib/images-common/images-terminal/terminal-colour-0.1.png" title="Terminal colours" alt="Terminal colours" /></div>
+
+							<p>Есть множество настроек для цвета фона. Мы предлагаем довольно простые настройки.</p>
+	</div>
+	<div class="divider" id="sux">
+	<h2>О команде sux</h2>
+							<p>Некоторые команды требуют прав суперпользователя root для своего запуска. Именно данную возможность предоставляет команда:</p>
+<pre>
+sux
+</pre>
+
+							<p>В то время, как основной командой для получения прав root остается 'su', использование <span class="highlight-3">sux</span> позволяет запускать приложения X11 из командной строки от имени root (<span class="highlight-3">sux</span> является просто "надстройкой" над 'su').(See also <a href="#sudo"> sudo</a>).</p>
+
+							<p>Как пример можно привести: редактирование файлов (с правами доступа только для root) в редакторе kate или kwrite; редактирование разделов диска с gparted; использование файлового менеджера dolphin or thunar с правами root. <!--Конечно для редактирования файла с правами root остается и традиционный способ - после клика правой кнопкой мыши во всплывающем меню выбрать пункт 'edit-as-root', ввести пароль root в появившемся окне приглашения  а перейти к редактированию (данный метод использует kdesu).--></p>
+
+							<p>Некоторым приложениям KDE потребуется <span class="highlight-3">dbus-launch</span>, сначала запустите его:</p>
+<pre>
+dbus-launch &lt;Приложение&gt;
+</pre>
+
+				<h6>Возможности клавиатуры в KDE</h6>
+							<p>В KDE можно запустить krunner:</p>
+<pre>
+Alt+F2
+</pre>
+							<p>или правой кнопкой мышки на рабочем столе и:</p>
+<pre>
+Выполнить команду
+</pre>
+							 <p>А тогда запустить программу с правами root:</p>
+
+<pre>
+kdesu &lt;Application&gt;
+</pre>
+
+				<h6>Возможности клавиатуры в Xfce</h6>
+							<p>Чтобы запустить команду с правами root в Xfce:</p>
+<pre>
+Alt+F2
+</pre>
+							<p>или правой кнопкой мышки на рабочем столе и:</p>
+<pre>
+Run Command
+</pre>
+							 <p>И запустить программу:</p>
+
+<pre>
+gksu &lt;Application&gt;
+</pre>
+
+					<h6>Возможности в других оконных менеджерах</h6>
+							<p>Этот вариант должен работать во всех менеджерах:</p>
+<pre>
+Alt+F2
+</pre>
+							<p>и</p>
+<pre>
+su-to-root -X -c &lt;Application&gt;
+</pre>
+							<p><span class="highlight-3">Все выше упомянутые команды можно запускать прямо из терминала.</span></p>
+	</div>
+	<div class="divider" id="sudo">
+					<h2>sudo не поддерживается</h2>
+							<p>sudo не включён по умолчанию при установке системы на диск. Им можно пользоваться только на live-ISO, так как пароль root не установлен. Сделано это для того, если Ваш компьютер взломан, то атакующий не сможет сразу получить доступ администратора и навредить системе.</p>
+
+							<p>Другая проблема sudo заключается в том, что запущенная с правами root программа, пользуется настоечными файлами простого пользователя, и при изменении настроек может произойти изменение прав доступа к файлу, вследствие чего Вы уже не сможете запустить ту же программу как простой пользователь. Настойчиво рекомендуем использовать<span class="highlight-3"> <a href="#sux">sux</a>, kdesu, gksu или su-to-root -X -c</span></p>
+
+					<h2>Работа с правами root</h2>
+							<p class="highlight-2">ПРЕДУПРЕЖДЕНИЕ: Пока Вы работаете в системе с правами root, необходимо быть абсолютно уверенным в своих действиях, т.к. всегда остаётся вероятность причинения существенного ущерба (удаление важных системных файлов или что-то подобное). </p>
+
+							<p class="highlight-2">Не стоит получать права суперпользователя для решения таких задач, как работа с почтой, работа с офисом,  интернет-серфинг  и подобные каждодневно используемые пользовательские приложения.</p>
+	</div>
+	<div class="divider" id="cli-help">
+		<h2>Помощь в командной строке</h2>
+
+							<p>Для Большинства команд/программ в командной строке существует встроенная помощь, а также руководства. Руководства называются "man page" или "manual page". Синтаксис для вызова "man" такой:</p>
+<pre>
+$ man "команда"
+</pre>
+							<p>или</p>
+<pre>
+$ man -k &lt;ключевое слово&gt;
+</pre>
+
+							<p>Это вызывает страницу руководства для "команды". Навигация в "man pages" происходит с помощью  клавиш направления, а выйти из man можно нажав "q"(для quit). Пример, попробуйте:</p>
+<pre>
+$ man apt-get
+</pre>
+							<p>Чтобы покинуть "man page", введите <span class="hilight-3">q</span></p>
+
+							<p>Другой полезный инструмент - это команда "apropos" делает возможным просмотр 'man pages' на наличие определённой команды, если, например, синтаксис забыт. Пример, попробуйте:</p>
+<pre>
+$ apropos apt-
+</pre>
+
+							<p>При этом перечисляются все команды для менеджера пакетов apt. "apropos"  является мощным инструментом, но описание его выходит далеко за рамки этого руководства. Для подробных сведений об "apropos" наберите:</p>
+<pre>
+$ man apropos
+</pre>
+
+
+	</div>
+	<div class="divider" id="term-cmds">
+		<h2>Команды Linux терминала</h2>
+
+							<p>Это прекрасное введение в использование bash, взятое с сайта <a href="http://linuxcommand.org/"> linuxcommand.org</a>.</p>
+
+							<p class="highlight-3"><a href="http://www.linuxdevcenter.com/linux/cmd/#a">Здесь</a> представлен обширный список из 687 команд в алфавитной последовательности из <i>Linux in a Nutshell, 5th Edition: O'Reilly Publications</i>. (Рекомендуем поместить в закладки!)</p>
+
+							<p>Имеются бесчисленные хорошие руководства в интернете. Хорошая английская ссылка: <a href="http://linux.org.mt/article/terminal">A Beginners' Bash</a>.</p>
+
+							<p>Конечно, Вы можете использоваться также любой поисковый движок, чтобы найти больше информации.</p>
+
+	</div>
+	<div class="divider" id="shell-scripts">
+		<h2>Скрипты и как их использовать</h2>
+
+							<p>Скрипты shell (оболочки) - удобный способ собрать в группу множество команд и сохранить в файле. Введите имя скрипта и все команды выполнятся по очереди. aptosid предоставляет очень полезные скрипты, которые помогут Вам  в администрировании системы.</p>
+
+							<p>Если Вы запускаете скрипт, находящийся в текущем каталоге, добавьте к его имени ./ :</p>
+<pre>
+./имя_Вашего_shell-скрипта
+</pre>
+
+							<p class="highlight-3">Некоторые системные скрипты требуют доступа root (sux) в терминале.</p>
+
+			<h5>Инсталляция и выполнение скриптов</h5>
+   							<p>Скачав скрипт при помощи wget, поместите его в рекомендуемое место <span class="highlight-3">(например /usr/local/bin) </span>, после того как Вы запустите <span class="highlight-3">sux</span>, Вы сможете копировать имена файлов прямо в консоль</p>
+
+					<h6>Пример использования wget требует <span class="highlight-3">прав root (sux) </span></h6>
+<pre>
+sux
+cd /usr/local/bin
+wget script-name
+</pre>
+							<p>Вы должны разрешить запуск файла</p>
+<pre>
+chmod +x  script-name
+</pre>
+							<p>Вы также можете скачать скрипт Вашим любимым браузером, но после помещения его на рекомендуемое место, не забудьте разрешить его запуск.</p>
+
+					<h6>Пример использования wget как пользователь</h6>
+					
+							<p>Чтобы скачать файл в Ваш домашний каталог <span class="highlight-3">$HOME как пользователь '$'</span>:</p>
+<pre>
+$ wget http://bluewater.aptosid.com/shell-script-test/test-script.sh
+</pre>
+
+<pre>
+$ chmod +x test-script.sh
+</pre>
+							<p>Чтобы запустить скрипт, выполните в консоли:</p>
+
+<pre>
+$ ./test-script.sh
+</pre>
+							<p>Этот тестовый скрипт должен вывести на экран следующие строки:</p>
+<pre>
+Congratulations user
+You successfully downloaded and executed a bash script!
+Welcome to aptosid-manuals http://manual.aptosid.com
+</pre>
+
+	</div>
+		<div id="rev">Содержание, последний раз пересмотрено 14/08/2010 0100 UTC</div>
+
+</div>
+</body>
+</html>

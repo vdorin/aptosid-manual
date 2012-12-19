@@ -1,0 +1,542 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl" lang="nl">
+<head>
+	<title>aptosid handleiding - installatie op de harde schijf</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision by HarzG 23/05/2009 1500 UTC -->
+<!--htdig_noindex--><div id="menu"> <!-- menu starts here nl lang maintained by btorrem, Bram0s,eislon -->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<!-- menu last translated by eislon 2012.09.30 0933 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="Naar aptosid.com forums and wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-nl.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" />Zoeken Online Offline</a> </li>
+		<!--<li><a href="http://manual.aptosid.com/meta-manual">Gemeenschap Software Selecties</a></li>-->
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Kies een andere taal - Choose another language CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="lang-switch CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-nl.htm">aptosid OS Handleiding</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-nl.htm#welcome-gen">aptosid OS Handleiding &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-nl.htm#cred-team">Medewerkers</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-nl.htm#how-to">Gebruik van deze handleiding &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-nl.htm#how-to">Hoe deze handleiding gebruiken</a></li>
+					  <li><a href="welcome-nl.htm#table-contents">Inhoudstafel</a></li>
+					</ul>
+					</li>
+		<li><a href="help-nl.htm#help-gen">Hulp nodig &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-nl.htm#help-gen">Waar kan ik hulp vinden</a></li>
+					  <li><a href="help-nl.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-nl.htm#welcome-quick">Aptosid Snelle-startgids</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-nl.htm">ISO Inhoud, Releases, Download Vensters en Branden</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-nl.htm#cd-content">ISO Inhoud en systeembenodigdheden &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-nl.htm#rolling">Release info</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-nl.htm#download-aptosid">Aptosid Vensters , Downloaden en Branden &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-nl.htm#md5">md5 Checksum</a></li>
+					  <li><a href="cd-dl-burning-nl.htm#burn-nero">Branden in Windows</a></li>
+					  <li><a href="cd-dl-burning-nl.htm#burn-linux">Branden in Linux</a></li>
+					  <li><a href="cd-no-gui-burn-nl.htm#burning-no-gui">burniso script</a></li>
+					  <li><a href="cd-no-gui-burn-nl.htm#burn-no-gui-gen">Branden zonder een GUI (niet-grafisch)</a></li><li><a href="cd-dl-burning-nl.htm#download-aptosid">aptosid Download Mirrors</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-nl.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-nl.htm#rootpw">Root-paswoord op aptosid-Livesessie ISO</a></li>
+				<li><a href="live-mode-nl.htm#live-cd-installsoft">Installeren van software in de Livesessie</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-nl.htm">The Terminal / Konsole</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-nl.htm#term-kon"> Terminal / Konsole &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-nl.htm#term-kon"> Terminal / Konsole</a></li>
+					  <li><a href="term-konsole-nl.htm#colours"> Gekleurde terminal prompts</a></li>
+					  <li><a href="term-konsole-nl.htm#cli-help">Commando's - Help</a></li>
+					  <li><a href="help-nl.htm#init3-tools">Interessante applicaties in de tekstmode (tty) - init 3</a></li>
+					  <li><a href="term-konsole-nl.htm#term-cmds">Linux Terminal Commando Lijst</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-nl.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-nl.htm">CheatCodes</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-nl.htm#cheatcodes">aptosid specifieke Live-ISO Cheatcodes</a></li>
+				<li><a href="cheatcodes-nl.htm#cheatcodes-linux">Linux generische Cheatcodes</a></li>
+				<li><a href="cheatcodes-vga-nl.htm#vga">VGA Codes</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-nl.htm">Partitioneren van de harde schijf - Traditioneel, GPT en LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-nl.htm#hd-ntfs3g">Schrijven op een NTFS partitie met ntfs-3g</a></li>
+			<li><a href="part-lvm-nl.htm#part-lvm">Partitioneren vanwege LVM - Logical Volume Manager</a></li>
+			<li><a href="part-gparted-nl.htm#partition">Partitioneren met een GUI (grafisch) &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-nl.htm#partition">Harde schijf partitioneren gebruikmakend van GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-nl.htm#ntfs">NTFS partitie van groote veranderen gebruikmakend van GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-nl.htm#partition">Partitioneren met CLI &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-nl.htm#partition">Harde schijf partitioneren met cfdisk</a></li>
+					    <li><a href="part-cfdisk-nl.htm#formating">Formatteren (schijf leegmaken) na het partitioneren met cfdisk</a></li>
+					    <li><a href="part-gdisk-nl.htm#gdisk-6">Formatteren na het partitioneren met gdisk</a></li>
+					    <li><a href="part-gdisk-nl.htm#gdisk-1">GPT Partitioneren met gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-nl.htm#part-example">Partitioneren Basis &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-nl.htm#part-example">Partitie Grootte Voorbeelden</a></li>
+					  <li><a href="part-uuid-nl.htm#uuid">UUID, heropbouwen van fstab en creëren van nieuwe mount punten</a></li>
+					  <li><a href="part-cfdisk-nl.htm#disknames">Schijf benoemen in brief</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-nl.htm">Installatie opties - HD, USB, VM en Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-nl.htm#Inst-prep">Installatievoorbereiding &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-nl.htm#Inst-prep">Installatievoorbereiding </a></li>
+					  <li><a href="hd-install-nl.htm#Installation">Installeren op uw harde schijf</a></li>
+					  <li><a href="hd-install-nl.htm#first-hd-boot">Eerste keer opstarten</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-nl.htm#fromiso">Booten van uw iso-cd &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-nl.htm#fromiso">Booten vanaf uw iso-cd - Overzicht</a></li>
+					  <li><a href="hd-install-opts-nl.htm#grub2-fromiso">Booten vanaf uw iso-cd met Grub 2</a></li>
+					  <li><a href="hd-install-opts-nl.htm#fromiso-persist">Booten vanaf uw iso-cd en vasthouden</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-nl.htm#usb-hd">Installeren op USB &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-nl.htm#usb-hd">Installeren op USB-HD - aptosid specifiek - aptosid-on-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-nl.htm#raw-usb">Aptosid schrijven naar een USB/SSD stick met Linux, MS Windows of Mac OS X systeem</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-nl.htm#install-crypt">Installeren op encrypte partities - cryptroot</a></li>
+		  <li><a href="nbdboot-nl.htm#nbd1">Aptosid booten op een netwerk</a></li>
+		  <li><a href="hd-install-vmopts-nl.htm#vmopts">Virtuele Machine installatie opties</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-nl.htm">Graphische kaarten, Schermen, Xorg,  &amp; drivers</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-nl.htm#mon-res">Schermresolutie en Schermen  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-nl.htm#mon-res">Schermresolutie en Schermen</a></li>
+					  <li><a href="hw-dev-mon-nl.htm#xrandr">Dual-scherm en xrandr</a></li>
+					  <li><a href="hw-dev-mon-nl.htm#mon-binary">Dual-schermen (gebruikmakend van binaries)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-nl.htm#foss-xorg">GPU drivers &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-nl.htm#ati-3d">AMD/ATI 3D drivers</a></li>
+					  <li><a href="gpu-nl.htm#intel">Intel 2D en 3D drivers</a></li>
+					  <li><a href="gpu-nl.htm#nvidia">Nvidia 3D drivers</a></li>
+					  <li><a href="gpu-nl.htm#foss-xorg">Open Source Xorg drivers</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-nl.htm#fw-detect">Firmware detectie - "non-free" </a></li>
+			  <li><a href="nf-firm-nl.htm#non-free-firmware">"non-free" toevoegen aan de Sources List</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-nl.htm">Window Managers</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm--nl.htm">KDE en XFCE Window Managers &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm--nl.htm#xfce-notes">Handige Xfce extras</a></li>
+					    <li><a href="wm-dm-nl.htm#install-add">Handige extra KDE Apps</a></li>
+					    <li><a href="wm-dm-nl.htm#desk-freeze">Desktop Freezes (beweegt niet meer)</a></li>
+					    <li><a href="wm-dm-nl.htm#kde-login">Kan niet inloggen (KDE)</a></li>
+					    <li><a href="wm-dm-nl.htm#ch-th">Thema's veranderen</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-nl.htm#dm">Installie van bijkomende Display Managers</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-nl.htm">Internet verbinding, WiFi, LAN en Netwerken</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-nl.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-nl.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-nl.htm#serv-ftp">FTP Clients</a></li>
+					    <li><a href="lamp-apache-nl.htm#serv-sec">Security Protocols (beveiliging)</a></li>
+					    <li><a href="lamp-apache-nl.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-nl.htm#serv-mysql">MySQL Setup</a></li>
+					    <li><a href="lamp-ppp-nl.htm#serv-php">PHP in Apache</a></li>
+					    <li><a href="ntp-server-nl.htm#ntp-server">Timeserver Setup</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-nl.htm#tor">Firewalls en Privacy &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-nl.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-nl.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-nl.htm#firewalls">Firewalls</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-nl.htm#ssh-x">SSH en Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-nl.htm#setup">Samba-Server Setup</a></li>
+						  <li><a href="samba-nl.htm#configure">SAMBA configureren (Windows)</a></li>
+						  <li><a href="ssh-nl.htm#ssh-fs">SSH Apart Mounten</a></li>
+						  <li><a href="ssh-nl.htm#ssh-x">X Window Apps via SSH</a></li>
+						  <li><a href="ssh-nl.htm#ssh-f">GUI SSH met Konqueror</a></li>
+						  <li><a href="ssh-nl.htm#ssh-w">SSH X-Forwarding vanaf een Windows-PC</a></li>
+						  <li><a href="ssh-nl.htm#ssh">SSH en Beveiliging</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-nl.htm#netcardconfig">WIFI connecties (draadloos) &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-nl.htm#netcardconfig">Online geraken - Ceni</a></li>
+						    <li><a href="inet-wpagui-nl.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-nl.htm#net-set1">WiFi - WiFi instellen</a></li>
+						    <li><a href="inet-wpa-nl.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-nl.htm#hotswitch">Switchen tussen WiFi en Kabel</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-nl.htm#netcardconfig">Bedrade verbindingen &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-nl.htm#dial-mod">56k Modems</a></li>
+						    <li><a href="inet-ceni-nl.htm#netcardconfig">Online geraken - Ceni</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-nl.htm#fw-detect">Firmware detectie - "non-free" </a></li>
+		<li><a href="nf-firm-nl.htm#non-free-firmware">"non-free" toevoegen aan de Sources List</a></li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-nl.htm">Pakketbeheer en dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-nl.htm#apt-cook">APT Werkwijze en Bronnenlijst &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-nl.htm#apt-cook">APT-Gids Werkwijze en Bronnenlijst</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#apt-install">Nieuw pakket installeren</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#apt-delete">Pakket verwijderen</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#apt-downgrade">Pakket vasthouden (niet updaten) en afwaarderen</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#apt-cache">Pakket zoeken met apt-cache</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#gui-pacsea">GUI Pakket zoeken (grafisch)</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-nl.htm#kern-upgrade">Kernel upgraden &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-nl.htm#kern-remove">Kernels verwijderen</a></li>
+					    <li><a href="sys-admin-kern-upg-nl.htm#kern-upgrade">Kernel upgraden</a></li>
+					    <li><a href="sys-admin-kern-upg-nl.htm#dmakms">Kernelmodules dynamisch installeren met dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-nl.htm#apt-upgrade">Geïnstalleerd systeem upgraden -  dist-upgrade - Overzicht &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-nl.htm#live-cd-upgrade">Upgraden met Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-nl.htm#approx">dist-upgrade van meerdere PCs op een LAN</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#apt-upgrade">Geïnstalleerd systeem upgraden -  dist-upgrade - Overzicht</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#du-st">Geïnstalleerd systeem upgraden -  dist-upgrade - De Stappen</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-nl.htm">Systeem Administratie</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-nl.htm#bois-prep">BIOS upgraden met FreeDOS</a></li>
+		<li><a href="vir-rkits-nl.htm#virus-rkits">Virus en Rootkit Scanners</a></li>
+		<li><a href="hd-install-nl.htm#adduser">Gebruikers en Paswoorden toevoegen &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-nl.htm#adduser">Nieuwe gebruiker toevoegen</a></li>
+					    <li><a href="sys-admin-gen-nl.htm#pw-lost">verloren root-paswoorden, nieuwe paswoorden</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-nl.htm#start-services">Services en init runlevels &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-nl.htm#start-services">Services inschakelen/uitschakelen</a></li>
+					    <li><a href="sys-admin-gen-nl.htm#pkill">Een service of een process stoppen</a></li>
+					    <li><a href="sys-admin-gen-nl.htm#init">aptosid runlevels - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-nl.htm#rsync">Een systeem back-up maken &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-nl.htm#rdiff">Doe een Back-Up met rdiff</a></li>
+					    <li><a href="sys-admin-rsync-nl.htm#rsync">Doe een Back-Up met rsync</a></li>
+					    <li><a href="home-nl.htm#home-bu">Verplaatsen van /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-nl.htm#fonts">CUPS, Opmaak en Geluid &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-nl.htm#fonts">Opmaak</a></li>
+					     <li><a href="sys-admin-gen-nl.htm#cups">CUPS - Printer Systeem</a></li>
+					     <li><a href="sys-admin-gen-nl.htm#sound">Geluid Mixers</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-nl.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-nl.htm#chroot">Grub2 - Grub herstellen met chroot</a></li>
+					    <li><a href="sys-admin-grub2-nl.htm#mbr-over-grub2">Grub2 - MBR Overschrijven</a></li>
+					    <li><a href="sys-admin-grub2-nl.htm#multi-os">Grub2 - Dual en Multibooting</a></li>
+					    <li><a href="sys-admin-grub2-nl.htm#grub1-grub2">Grub2 -Upgraden vanaf Grub1</a></li>
+					    <li><a href="sys-admin-grub2-nl.htm#grub2">Grub2 - Overzicht</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Gesponsored door webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid Gesponsored door webtropia.com" alt="aptosid Gesponsored door webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+	<div class="divider" id="Inst-prep">
+			<h2 id="top-header">HD installatie voorbereiden</h2>
+							<p  class="highlight-2">Voor normaal gebruik heeft ext4 onze aanbeveling, het is het standaard bestandssysteem voor aptosid en wordt goed onderhouden.</p>
+
+
+							<p><span class="highlight-3">Voordat je gaat installeren verwijder a.u.b. alle USB-sticks, cameras, etc.</span><a href="hd-install-opts-nl.htm"> Een installatie naar een USB apparaat heeft aanvullende stappen nodig.</a> Je kunt het configuratie-bestand van de installer <span class="highlight-3">~/.sidconf</span> aanpassen en hierdoor een ander bestandssysteem te kiezen cq de installatie over verschillende partities te verspreiden.</p>
+
+					<h6>Her-installeren van applicaties om ze te herbouwen of te dupliceren naar een andere computer</h6>
+							<p>Om een lijst met alle geïnstalleerde applicaties te maken, zodat je deze kan dupliceren en dan deze basis op een andere machine kan installeren, of omdat je ze op je huidige PC wilt herinstalleren via de konsole, wat de reden ook zijn mag. </p>
+<pre>
+dpkg -l|awk '/^ii/{ print $2 }'|grep -v -e ^lib -e -dev -e $(uname -r) >/home/username/installed.txt
+</pre>
+							<p>Kopieer dan het tekstbestand naar een usb stick of andere verwijderbare media van je keuze.</p>
+
+							<p>Op de nieuwe PC kan je het bestand naar $HOME kopiëren en de lijst gebruiken om alle programma's opnieuw te installeren die op de oude PC gebruikt werden.</p>
+
+					<h5>RAM en Swap</h5>
+
+							<p>Op PC's met minder dan 512 MB geheugen moet je een swap-partitie aanmaken. De grote van deze swap partitie moet minstens 128 MB of meer zijn (Let op: de cfdisk-omrekening van bytes naar MB is niet correct). Meer dan 1 GB aan swap is alleen in zeer bijzondere situaties zinvol.</p>
+
+							<p class="highlight-1">Zie a.u.b. ook: <a href="part-gparted-nl.htm">Partitioneren van je HD</a></p>
+
+							<p><span class="highlight-2">MAAK ALTIJD EEN BACK-UP VAN JE DATA! ook van je bladwijzers en mails!</span> Kijk bij <a href="sys-admin-rdiff-nl.htm#rdiff">Back-Up met rdiff</a> en <a href="sys-admin-rsync-nl.htm#rsync">Back-Up met rsync</a>. Een andere mogelijkheid is sbackup (dat moet vooraf geïnstalleerd worden).</p>
+							<p>De installatie naar een harddisk is comfortabeler en veel sneller dan te werken vanaf de live-CD.</p>
+
+							<p>Het eerste wat je moet doen, is je BIOS zo in te stellen dat je vanaf CD-ROM kan booten. Bij de meeste computers kun je in de BIOS komen door het klikken op de [del] toets tijdens het opstarten van de pc (bij sommige BIOS-Versie's kun je simpel weg kiezen vanaf welke apparaat je wilt opstarten, zoals bij de AMI-BIOS, bv., met F11 of F8).</p>
+
+							<p>aptosid zal in de meeste gevallen nu opstarten. Is dit niet het geval, dan kan je bootopties gebruiken (dit noemen we cheatcodes) welke aan de bootmanager doorgegeven worden. Het gebruik van boot parameters (bv. voor schermresolutie of taal selectie bijv. lang=en-utf8 of lang=ru-utf8) kan veel tijd schelen voor de installatie-configuratie. <a href="cheatcodes-nl.htm">Bekijk ook de Cheatcodes</a> en <a href="cheatcodes-vga-nl.htm">VGA resolutie's</a>.</p>
+
+				<h6><span class="highlight-3">Talen installeren met KDE-full </span></h6>
+
+							<p>Kies je voorkeurstaal in het <span class="highlight-2">grub menu (F4)</span> van de <span class="highlight-3">kde-full release</span>. Hiermee worden de NL-localisaties voor de desktop en veel applicaties tijdens de boot geïnstalleerd. </p>
+
+							<p>Hierdoor is deze taal direct na de installatie van aptosid beschikbaar, bovendien worden alleen de noodzakelijke taalmodules voor het system geïnstalleerd. De hoeveelheid ruimte op de harde schijf is afhankelijk van de gekozen taal. Als er te weinig werkgeheugen (RAM) beschikbaar is, wordt de boot voortgezet in het Engels maar de locale voorkeuren zoals munt, datum en time formaat, toetsenbord instelling blijven vastgelegd. 1 GB RAM of meer zijn voldoende voor alle onderstaande talen:</p>
+
+							<p>
+   							Default - Deutsch (Duits) <br />
+							Default - English (Engels-US)<br />
+							*Čeština (Czech)<br />
+    							*Dansk (Danish)<br />
+    							*Español (Spaans)<br />
+    							*English (Engels GB)<br />
+    							*Français (Frans)<br />
+    							*Italiano (Italiaans)<br />
+    							*Nihongo (Japans)<br />
+    							*Nederlands<br />
+							*Polski (Polish)<br />
+    							*Português (Portuguees BR en PT)<br />
+    							*Română (Roemeens)<br />
+    							*Russian (Russisch)<br />
+							*Українська (Ukrainian) <br />
+							</p>
+
+   							<p>De beschikbare talen zijn afhankelijk van de vertalingen van de aptosid-handleiding. Nieuwe talen en vertalers zijn altijd welkom.</p>
+
+					<h6><span class="highlight-3">Installatie van talen met KDE-lite </span></h6>
+						<ol>
+							<li>Kies je voorkeurstaal in het <span class="highlight-2">gfxboot menu (F4)</span>. (Kijk ook bij  <a href="cheatcodes-nl.htm#cheatcodes">bijzondere aptosid  live-CD cheatcodes</a>). De talen zelf zijn geen onderdeel van de Live-CD, het systeem gebruikt dus de default Engels. Maar de gekozen voorkeurstaal zorgt ook voor de correcte locale instellingen voor het systeem, (tijdzone etc.) waardoor minder handmatige aanpassingen nodig zijn.</li>
+
+							<li> Start de installatie.</li>
+
+							<li>Installeer op de HD en reboot.</li>
+
+							<li>Na de HD installatie, kan je de voorkeurstaal van het systeem en de applicaties installeren via apt-get.</li>
+						</ol>
+
+					<h6>De eerste keer booten van de HD</h6>
+							<p><span class="highlight-3">Na de eerste boot is aptosid de netwerk configuratie 'vergeten'.</span> De juiste netwerkinstellingen kunnen via <a href="inet-ceni-nl.htm">Kmenu > Internet > Ceni</a> gedetecteerd worden. Voor WIFI/WLAN roaming <a href="inet-wpagui-nl.htm">staat hier meer informatie.</a></p>
+	</div>
+	<div class="divider" id="Installation">
+				<h2>De aptosid-installer</h2>
+
+							<p><b>1.</b> De installer kan op 3 manieren worden gestart: <span class="highlight-3"> met het Desktop icon, via het KMenu> System>aptosid-installer (to hd)</span> of via de konsole met:</p>
+<pre>
+sux
+install-gui.bash
+</pre>
+		<div class="screenshot"><img src="../lib/images-nl/installer-nl/installer1-nl.png" title="Welcome tab - aptosid Installer" alt="aptosid-Installer1" /></div>
+	<div class="spacer02"></div>
+							<p><b>2.</b> Na het lezen van (en het begrijpen hiervan) de waarschuwingstekst kunnen we verder met het kiezen van een partitie. </p>
+
+		<div class="screenshot"><img src="../lib/images-nl/installer-nl/installer2-nl.png" title="Partitioning tab - aptosid Installer" alt="aptosid-Installer2" /></div>
+
+							<p>Nu wordt de plaats van de installatie gekozen en worden de mount points vastgelegd. Partities waarvoor geen mount points vastgelegd worden, verkrijgen een mount point door de installer (de swap partitie wordt automatisch gemounted bij de start van het systeem). </p>
+
+							<p><span class="highlight-2">LET OP: Als je je root partitie ('/") reeds geformatteerd hebt met je voorkeurs-file system, dan kan je de optie "formatteren met" afvinken. Hierbij wordt ervan uitgegaan dat je gekozen file system ondersteund wordt.</span></p>
+
+							<p>Alle andere partities worden geplaatst onder <span class="highlight-3">/media/ </span> met een partitie-aanduiding. In het scherm moet dus de plaats van de root partitie ("/") voor de aptosid installatie vastgelegd worden. Indien gewenst kan <span class="highlight-3">ook de locatie voor een data partitie ingevoerd worden. </span> <span class="highlight-1"> Een 'links-klik' toont een keuzemenu voor elke partitie.</span></p>
+
+		<p class="highlight-3">Werd er vooraf een backup van de data gemaakt?</p>
+
+							<p>Als de harde schijf nog niet gepartitioneerd is, kan dat met <span class="highlight-3">Start de Partition manager</span> gedaan worden. Lees hiervoor <a href="part-gparted-nl.htm">Partitioneren van je HD dmv GParted</a> of, als je in de konsole wilt werken, lees <a href="part-cfdisk-nl.htm">Partitioneren van je HD dmv cfdisk.</a></p>
+
+							<p>Beiden kunnen ook met de konsole/terminal gestart worden:</p>
+<pre>
+sux
+gparted
+</pre>
+							<p>of</p>
+<pre>su
+cfdisk
+</pre>
+
+	<div class="spacer02"></div>
+							<p><b>3.</b> Als boot manager installeren we <b>Grub in de MBR</b>! Indien je hier voor een andere optie kiest, dan moet je goed weten wat je doet. Grub herkend andere geïnstalleerde besturingssystemen (zoals Windows) en voegt deze dan toe aan het boot menu. </p>
+							<p>Met de timezone knop kan je de lokale tijdzone aanpassen (dat kan na de installatie ook nog).</p>
+
+		<div class="screenshot"><img src="../lib/images-nl/installer-nl/installer3-nl.png" title="Grub/Timesone tab - aptosid Installer" alt="grub-to-mbr" /></div>
+	<div class="spacer02"></div>
+							<p><b>4.</b> We gaan verder met de gebruiker, zijn/haar wachtwoord en het root-wachtwoord (onthoudt deze!). Kies a.u.b. niet te makkelijke wachtwoorden uit. Om andere users toe te voegen na de installatie, kan je in de konsole <a href="hd-install-nl.htm#adduser"> adduser</a> gebruiken.</p>
+
+		<div class="screenshot"><img src="../lib/images-nl/installer-nl/installer4-nl.png" title="User/Password tab - aptosid Installer" alt="choosing-pw" /></div>
+	<div class="spacer02"></div>
+							<p><b>5.</b> Nu kun je een naam voor de installatie kiezen (je kunt het elke naam geven die je maar wilt, maar de hostname moet bestaan uit letters en/of cijfers en mag niet met een cijfer beginnen.</p>
+
+							<p>Hierna kun je kiezen of ssh automatisch gestart moet worden of niet.</p>
+
+		<div class="screenshot"><img src="../lib/images-nl/installer-nl/installer5-nl.png" title="Network tab - aptosid Installer" alt="hostname" /></div>
+		<div class="spacer02"></div>
+							<p><b>6.</b> Dit overzicht is de laatste kans om alle door jou gemaakte wijzigingen te controleren. Lees het aandachtig door en klik dan op <span class="highlight-3">Save Config &amp; Next</span>.</p>
+
+		<div class="screenshot"><img src="../lib/images-nl/installer-nl/installer6-nl.png" title="Installation tab - aptosid Installer" alt="installation-config" /></div>
+
+							<p>Bij deze punt is het mogelijk om de configuratie bestand te wijzigen en om dan de installatie procedure te starten met de gewijzigde configuratie. Het installatie programma doet geen enkele controle <span class="highlight-3">je moet niet op de 'terug' knop klikken, anders gaan de handmatige wijzigingen verloren.</span> </p>
+
+							<p>Het wijzigen van (<span class="highlight-3">~/.sidconf</span>) is voor ervaren linux-gebruikers, welke hun eigen speciale wijzigingen in de configbestand willen zetten of een speciale partitie indeling willen die door de automatische controle van de installatie programma geweigerd zou worden.</p>
+
+							<p><span class="highlight-2">Indien de installer 'ziet' dat geprobeerd wordt over een bestaande $HOME heen te installeren, dan verschijnt er een waarschuwing en kan de installatie alleen worden voortgezet als een andere user name gekozen wordt.</span></p>
+
+		<div class="screenshot"><img src="../lib/images-nl/installer-nl/installer7-nl.png" title="Begin Installation - aptosid Installer" alt="Begin Installtion" /></div>
+
+							<p>Om de installatie te beginnen klik je op <span class="highlight-3">Begin de installatie</span>. Het gehele installatie process duurt, afhankelijk van je systeem,  ongeveer tussen de  5 - 15 minuten, bij oudere PCs kan het zelfs 60 minuten zijn.</p>
+
+							<p>Mocht de voortgangsbalk blijken te hangen, stop de installatie dan NIET, geef het wat tijd!</p>
+
+							<p>Klaar! Haal de CD uit de speler en start nu opnieuw op van de harddisk installatie.</p>
+
+	</div>
+	<div class="divider" id="first-hd-boot">
+			<h2>Eerste start</h2>
+
+							<p class="highlight-4">Na de eerst boot zul je opmerken dat aptosid vergeten is wat zijn netwerk configuratie was. Je moet dus je netwerk herconfigureren (Wlan, Modem, ISDN,...).</p>
+
+							<p>Wie voorheen het network adres (DHCP) automatisch liet detecteren i.v.m. het gebruik van een DSL-Router moet dit heractiveren middels:</p>
+<pre >
+ceni
+</pre>
+
+							<p>De benodigde tools kun je vinden in het <i>Kmenu>Internet>ceni</i>. Kijk ook in: <a href="inet-ceni-nl.htm">Internet en Netwerken</a></p>
+
+							<p>Om een bestaande aptosid $home partitie toe tevoegen aan een nieuwe installatie moet de fstab aangepast worden, zie hiervoor <a href="home-nl.htm#home-move">Moving /home</a>.</p>
+
+							<p> <span class="highlight-2">Gebruik geen share of bestaande $home van een andere distributie omdat deze $home configuratie bestanden in een home directory conflicten op zal leveren als je dezelfde gebruikersnaam gebruikt tussen verschillende distributies.</span></p>
+
+	</div>
+	<div class="divider" id="adduser">
+	<h2>Toevoegen van gebruikers/users </h2>
+							<p>Om een <span class="highlight-3">nieuwe gebruiker/user</span> met automatische groeps rechten toe te voegen, type als root: </p>
+<pre>
+adduser &lt;newuser&gt;
+</pre>
+							<p>Gebruik enter, lees de opties voor de fijninstellingen. Je wordt twee keer gevraagd naar het password (maken+bevestigen).</p>
+
+							<p>aptosid icoontjes (zoals voor de handleiding/manual en voor de IRC chat) moeten voor deze nieuwe user handmatig aan de desktop toegevoegd worden.</p>
+
+							<p>Om een user te verwijderen voer je het volgende uit:</p>
+<pre>
+deluser &lt;user&gt;
+</pre>
+							<p>Lees ook </p>
+<pre>
+man adduser
+man deluser
+</pre>
+							<p>Met <span class="highlight-3">kuser</span> kunnen ook nieuwe gebruikers/users aangemaakt worden, maar je moet dan handmatig de rechten vastleggen voor groepen waar deze  user lid van moet worden (bijv. floppy, games, tty).</p>
+
+	</div>
+	<div class="divider" id="sux">
+	<h2>Over sux</h2>
+							<p>Talrijke commando's moeten uitgevoerd worden met root rechten. Om dit te bereiken type je:</p>
+<pre>
+sux
+</pre>
+
+							<p>Terwijl het algemene commando om root te worden 'su' is, gebruiken we <span class="highlight-3">sux</span> om GUI / X11 applicatie's als root via de command lijn op te starten (in hun grafische mode), <span class="highlight-3">sux</span> zorgt ervoor dat het commando met de X credentials van het doel wordt opgestart.</p>
+
+							<p>Sommige KDE applicaties hebben <span class="highlight-3">dbus-launch</span> nodig en kunnen op deze manier gestart worden:</p>
+<pre>
+dbus-launch &lt;Application&gt;
+</pre>
+
+							<p>Een voorbeeld van het draaien van een X11 app via sux is het gebruiken van een tekst editor om een root bestand te wijzigen via kwrite of kate, of om te partitioneren m.b.v. gparted of om een Xapp file manager zoals konqueror op te starten. Je kunt ook root bestanden wijzigigen door er met de rechtermuisknop op te klikken en dan te kiezen voor 'edit-as-root'. Er wordt dan om het root wachtwoord gevraagd. Dit je moet dan invoeren en het roept dan het programma kdesu in de achtergrond op.</p>
+
+							<p>Anders als 'sudo' voor alle users op sommige andere Linux-systemen, betekent dit dat een user niet zomaar sudo kan intypen om programma's met root-rechten uit te voeren. Hierdoor kunnen namelijk risico's onstaan die je systeem kunnen beschadigen.</p>
+
+							<p class="highlight-2">WAARSCHUWING: Terwijl je aangelogd bent als root gebruiker, weerhoudt het systeem je er niet van om eventuele gevaarlijke dingen uit te voeren. Bijvoorbeeld het verwijderen van belangrijke bestanden. Je moet je 100% zeker van zijn dat de actie die je wilt uitvoeren de gewenste resultaten zal behalen. Anders kan dat inhouden dat je systeem niet meer werkt zoals het zou moeten. </p>
+
+							<p class="highlight-2">Je moet om geen root worden in een konsole/terminal om te werken met een Internetbrowser, een mailprogramma of Office-applicaties! Deze programma's gebruik je als user en niet als root.</p>
+	</div>
+
+		<div id="rev">Inhoud het laatst gewijzigd op 24/07/2012 1300 UTC</div>
+</div>
+</body>
+</html>

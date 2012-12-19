@@ -1,0 +1,510 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+<head>
+	<title>Manual de aptosid - Gparted/KDE Partition Manager</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision by Richard 01/06/2009 2000hrs UTC -->
+<!--htdig_noindex--><div id="menu"> <!-- menu starts here es lang maintained by Luis_P -->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="ir a aptosid.com y Forum y Wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-es.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" />Buscar</a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Seleccione otro idioma - Choose another language CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="lang-switch CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-es.htm">Manual aptosid</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-es.htm#welcome-gen">Manual de usuario &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-es.htm#cred-team">Créditos</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-es.htm#how-to">Cómo usar este manual &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-es.htm#how-to">Cómo usar este manual</a></li>
+					  <li><a href="welcome-es.htm#table-contents">Indice de Contenido</a></li>
+					</ul>
+					</li>
+		<li><a href="help-es.htm#help-gen">Recibir ayuda &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-es.htm#help-gen">Dónde Conseguir Ayuda</a></li>
+					  <li><a href="help-es.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-es.htm#welcome-quick">Guía rápida</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-es.htm"> ISO, Versiones, Espejos y Quemado</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-es.htm#cd-content">Contenido del ISO y Requerimientos &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-es.htm#rolling">Notas del lanzamiento</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-es.htm#download-aptosid">Espejos aptosid, descargar y quemar &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-es.htm#md5">Suma de verificación, md5</a></li>
+					  <li><a href="cd-dl-burning-es.htm#burn-nero">Quemar en Windows</a></li>
+					  <li><a href="cd-dl-burning-es.htm#burn-linux">Quemar en Linux</a></li>
+					  <li><a href="cd-no-gui-burn-es.htm#burning-no-gui">Script para quemar ISO</a></li>
+					  <li><a href="cd-no-gui-burn-es.htm#burn-no-gui-gen">Quemar sin GUI</a></li>
+					  <li><a href="cd-dl-burning-es.htm#download-aptosid">Espejos de descarga aptosid</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-es.htm">LiveCD: el modo en vivo</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-es.htm#rootpw">Clave raíz del LiveCD</a></li>
+				<li><a href="live-mode-es.htm#live-cd-installsoft">Instalar Software con el LiveCD</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-es.htm">Terminal/Consola</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-es.htm#term-kon"> Terminal (consola) &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-es.htm#term-kon"> Terminal (consola)</a></li>
+					  <li><a href="term-konsole-es.htm#colours"> prompts coloreados de terminal : </a></li>
+					  <li><a href="term-konsole-es.htm#cli-help">Ayuda en línea de Comando</a></li>
+					  <li><a href="help-es.htm#init3-tools">Herramientas que hay que conocer en el modo texto (tty) - init 3</a></li>
+					  <li><a href="term-konsole-es.htm#term-cmds">Comandos del terminal de Linux</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-es.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-es.htm">Chuletas (cheatcodes)</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-es.htm#cheatcodes">Chuletas aptosid específicas para Live-ISO</a></li>
+				<li><a href="cheatcodes-es.htm#cheatcodes-linux">Chuletas genericas Linux</a></li>
+				<li><a href="cheatcodes-vga-es.htm#vga">Códigos VGA</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-es.htm">Particionar el Disco Duro; Modos tradicional, GPT y LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-es.htm#hd-ntfs3g">Escribir en Particiones NTFS con ntfs-3g</a></li>
+			<li><a href="part-lvm-es.htm#part-lvm">Particiones para usar LVM - Gestor Lógico de Volúmenes</a></li>
+			<li><a href="part-gparted-es.htm#partition">Particionar con un gestor gráfico &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-es.htm#partition">Particionar el Disco Duro usando GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-es.htm#ntfs">Redimensionar particiones NTFS con GParted/KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-es.htm#partition">Particionar el Disco Duro en línea de órdenes &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-es.htm#partition">Particionar el Disco Duro con cfdisk</a></li>
+					    <li><a href="part-cfdisk-es.htm#formating">Formatear después de particionar con cfdisk</a></li>
+					    <li><a href="part-gdisk-es.htm#gdisk-6">Formatear después de particionar con gdisk</a></li>
+					    <li><a href="part-gdisk-es.htm#gdisk-1">GPT Particionar con gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-es.htm#part-example">Particionado Básico &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-es.htm#part-example">Ejemplos de dimensiones de particiones</a></li>
+					  <li><a href="part-uuid-es.htm#uuid">UUID, Reconstruir fstab y crear nuevos puntos de montaje</a></li>
+					  <li><a href="part-cfdisk-es.htm#disknames">Nombrar discos: en breve</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-es.htm">Opciones de la Instalación - HD, USB, VM y Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-es.htm#Inst-prep">Preparar para Instalar &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-es.htm#Inst-prep">Preparar para Instalar </a></li>
+					  <li><a href="hd-install-es.htm#Installation">Instalar al disco duro</a></li>
+					  <li><a href="hd-install-es.htm#first-hd-boot">Primera inicialización</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-es.htm#fromiso">Arranque fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-es.htm#fromiso">Iniciar fromiso - Vista general</a></li>
+					  <li><a href="hd-install-opts-es.htm#grub2-fromiso">Iniciar 'fromiso' con Grub 2</a></li>
+					  <li><a href="hd-install-opts-es.htm#fromiso-persist">'fromiso' y 'persist'</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-es.htm#usb-hd">Instalar en un USB-DD - aptosid específico - aptosid-en-un-lápiz_USB &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-es.htm#usb-hd">Instalar en un USB-DD - aptosid Específico - aptosid en un lápiz USB</a></li>
+					  <li><a href="hd-ins-opts-oos-es.htm#raw-usb">Grabar aptosid en un lápiz USB/SSD con cualquier sistema Linux, MS Windows o Mac OS X</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-es.htm#install-crypt">Instalación en particiones cifradas - cryptroot</a></li>
+		  <li><a href="nbdboot-es.htm#nbd1">Arrancar aptosid en una red</a></li>
+		  <li><a href="hd-install-vmopts-es.htm#vmopts">Opciones de instalación en una máquina virtual</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-es.htm">Tarjetas Gráficas, monitores, Xorg &amp; controladores</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-es.htm#mon-res">Resolución de pantalla y monitores  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-es.htm#mon-res">Resolución de pantalla y monitores</a></li>
+					  <li><a href="hw-dev-mon-es.htm#xrandr">Monitores Duales y xrandr</a></li>
+					  <li><a href="hw-dev-mon-es.htm#mon-binary">Monitores Duales (utilizando binarios)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-es.htm#foss-xorg">Controladores GPU &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-es.htm#ati-3d">Controladores AMD/ATI 3D</a></li>
+					  <li><a href="gpu-es.htm#intel">Controladores Intel 2D y 3D</a></li>
+					  <li><a href="gpu-es.htm#nvidia">Controladores Nvidia 3D</a></li>
+					  <li><a href="gpu-es.htm#foss-xorg">Controladores código abierto Xorg</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-es.htm#fw-detect">Detección de firmware non-free</a></li>
+			  <li><a href="nf-firm-es.htm#non-free-firmware">Añadir non-free a Sources List</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-es.htm">Gestor de ventanas</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-es.htm">Gestores de Ventanas KDE y XFCE &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-es.htm#xfce-notes">Utilidades de XFCE</a></li>
+					    <li><a href="wm-dm-es.htm#install-add">Utilidades extras de KDE</a></li>
+					    <li><a href="wm-dm-es.htm#desk-freeze">El escritorio se traba</a></li>
+					    <li><a href="wm-dm-es.htm#kde-login">No puedo hacer login en KDE</a></li>
+					    <li><a href="wm-dm-es.htm#ch-th">Cambiar Temas</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm--es.htm#dm">Instalación de otros gestores de escritorio</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-es.htm">Conexión a Internet, WiFi, LAN y Redes</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-es.htm">Pila de LAMP aptosid &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-es.htm#serv-apache">Pila de LAMP aptosid </a></li>
+					    <li><a href="lamp-apache-es.htm#serv-ftp">Clientes FTP</a></li>
+					    <li><a href="lamp-apache-es.htm#serv-sec">Protocolos de Seguridad</a></li>
+					    <li><a href="lamp-apache-es.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-es.htm#serv-mysql">Configurar MySQL</a></li>
+					    <li><a href="lamp-ppp-es.htm#serv-php">PHP en Apache</a></li>
+					    <li><a href="ntp-server-es.htm#ntp-server">Configurar un servidor horario</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-es.htm#tor">Firewalls (Muros de Fuego) y privacidad &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-es.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-es.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-es.htm#firewalls">Firewalls (Muros de Fuego)</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-es.htm#ssh-x">SSH y Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-es.htm#setup">Configurar un servidor Samba</a></li>
+						  <li><a href="samba-es.htm#configure">Configurar SAMBA (Windows)</a></li>
+						  <li><a href="ssh-es.htm#ssh-fs">Montaje remoto con SSH </a></li>
+						  <li><a href="ssh-es.htm#ssh-x">Aplicaciones X Window via SSH</a></li>
+						  <li><a href="ssh-es.htm#ssh-f">SSH con Konqueror</a></li>
+						  <li><a href="ssh-es.htm#ssh-w">Seguimiento-X con SSH desde Win-PC</a></li>
+						  <li><a href="ssh-es.htm#ssh">SSH y seguridad</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-es.htm#netcardconfig">Conexiones WIFI &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-es.htm#netcardconfig">'ceni': Conectar en línea</a></li>
+						    <li><a href="inet-wpagui-es.htm#wpa-roaming-gui">WiFi - entorno gráfico WPA</a></li>
+						    <li><a href="inet-setup-es.htm#net-set1">WiFi - Configuración del WiFi Roaming</a></li>
+						    <li><a href="inet-wpa-es.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-es.htm#hotswitch">Cambio de la red entre WiFi y Cable</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-es.htm#netcardconfig">Conexiones por cable &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-es.htm#dial-mod">Modems de 56k</a></li>
+						    <li><a href="inet-ceni-es.htm#netcardconfig">'ceni': Conectar en línea</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-es.htm#fw-detect">Detección de firmware non-free</a></li>
+		<li><a href="nf-firm-es.htm#non-free-firmware">Añadir non-free a Sources List</a></li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-es.htm">Gestión de Paquetes y Actualización</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-es.htm#apt-cook">APT y 'sources.list' &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-es.htm#apt-cook">Guía de APT y 'sources list'</a></li>
+					    <li><a href="sys-admin-apt-es.htm#apt-install">Instalar un Paquete</a></li>
+					    <li><a href="sys-admin-apt-es.htm#apt-delete">Quitar un Paquete</a></li>
+					    <li><a href="sys-admin-apt-es.htm#apt-downgrade">Mantener ('Hold') un Paquete y versión anterior</a></li>
+					    <li><a href="sys-admin-apt-es.htm#apt-cache">Buscar un paquete con 'apt-cache'</a></li>
+					    <li><a href="sys-admin-apt-es.htm#gui-pacsea">Buscar un paquete en entorno gráfico</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-es.htm#kern-upgrade">Actualizar el Kernel &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-es.htm#kern-remove">Quitar kernels anteriores</a></li>
+					    <li><a href="sys-admin-kern-upg-es.htm#kern-upgrade">Actualizar el Kernel</a></li>
+					    <li><a href="sys-admin-kern-upg-es.htm#dmakms">Instalación dinámica de módulos del kernel con dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-es.htm#apt-upgrade">Actualizar el sistema instalado: 'dist-upgrade' - Vista general &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-es.htm#live-cd-upgrade">Actualización mediante un Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-es.htm#approx">Actualización de varios PCs en una red</a></li>
+					    <li><a href="sys-admin-apt-es.htm#apt-upgrade">Actualizar el sistema instalado: 'dist-upgrade' - Vista general</a></li>
+					    <li><a href="sys-admin-apt-es.htm#du-st">Actualizar el sistema instalado: 'dist-upgrade' - Los pasos</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-es.htm">Administración del Sistema</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-es.htm#bois-prep">Actualizar el BIOS con FreeDOS</a></li>
+		<li><a href="vir-rkits-es.htm#virus-rkits">Buscadores de Virus y Rootkit</a></li>
+		<li><a href="hd-install-es.htm#adduser">Agregar nuevo Usuario y claves &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-es.htm#adduser">Agregar un nuevo Usuario</a></li>
+					    <li><a href="sys-admin-gen-es.htm#pw-lost">Clave root Perdida, nuevas claves</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-es.htm#start-services">Servicios y niveles de ejecución &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-es.htm#start-services">Activar/desactivar servicios</a></li>
+					    <li><a href="sys-admin-gen-es.htm#pkill">Matar un proceso o servicio</a></li>
+					    <li><a href="sys-admin-gen-es.htm#init">niveles de ejecución en aptosid - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-es.htm#rsync">Copia de seguridad del sistema &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-es.htm#rdiff">Respaldar con 'rdiff'</a></li>
+					    <li><a href="sys-admin-rsync-es.htm#rsync">Respaldar con 'rsync'</a></li>
+					    <li><a href="home-es.htm#home-bu">Mudando el /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-es.htm#fonts">CUPS, Fuentes y Sonido &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-es.htm#fonts">Fuentes</a></li>
+					     <li><a href="sys-admin-gen-es.htm#cups">Sistema de impresión CUPS</a></li>
+					     <li><a href="sys-admin-gen-es.htm#sound">Mezcladores de sonido</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-es.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-es.htm#chroot">Grub2 - Recuperar Grub con chroot</a></li>
+					    <li><a href="sys-admin-grub2-es.htm#mbr-over-grub2">Grub2 - Sobre-escribir el MBR</a></li>
+					    <li><a href="sys-admin-grub2-es.htm#multi-os">Grub2 - Iniciación Dual y Múltiple</a></li>
+					    <li><a href="sys-admin-grub2-es.htm#grub1-grub2">Grub2 -Actualización desde Grub1</a></li>
+					    <li><a href="sys-admin-grub2-es.htm#grub2">Grub2 - Vista general</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donar" alt="Donar" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Patrocinado por webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid tiene el orgullo de estar alojado en webtropia.com" alt="aptosid tiene el orgullo de estar alojado en webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+	<div class="divider" id="partition">
+		<h2 id="top-header">Como particionar el DD (Disco Duro) utilizando Gparted/KDE Partition Manager</h2>
+			<h5><span class="highlight-2">AVISO: para nombramiento de discos </span><a href="part-uuid-es.htm"> Por favor referirse a UUID, etiqueta (label) de Partición y fstab, en vista de que en aptosid ahora por preselección se utiliza el UUID</a></h5>
+
+			<h5>Las herramientas de particionamiento pueden solicitar una clave de root; en una consola, teclee <span class="highlight-3">sux</span> y entre la clave de root. Ninguna clave está fijada en el Live-ISO; teclee simplemente <span class="highlight-3">sux</span> y oprima "Enter". Ver: <a href="live-mode-es.htm" >Live Mode (Modo vivo)</a></h5>
+
+	<div class="spacer02"></div>
+							<p class="warning-box">Después de redimensionar una partición NTFS, es necesario re-arrancar con MS Windows. <b>NO</b> haga otra operación en esa partición antes de arrancar o tendrá errores. <a href="part-gparted-es.htm#ntfs"> Lea esto, por favor.</a></p>
+
+							<p class="highlight-2">Siempre respalde sus datos!</p>
+
+				<h3>Prólogo</h3>
+							<p>Una partición tiene que tener un sistema de archivos. Linux sabe cómo usar varios sistemas de archivos. Ext4 es el formato recomendado por aptosid. Ext2 es útil como un formato de almacenamiento puesto que hay un intérprete (driver) disponible para MS Windows&#8482; para intercambiar datos. [Linux puede leer y escribir en sistemas FAT.] <a href="http://www.fs-driver.org/">Sistema de ficheros instalable Ext2 para MS Windows</a>.</p>
+
+							<p  class="highlight-2">Para uso normal, recomendamos el sistema de archivos ext4, que es el sistema de archivos pre-seleccionado por aptosid y es bien mantenido.</p>
+
+		<h2>Uso de KDE Partition Manager &amp; Gparted</h2>
+							<p>El crear y manipular particiones no es algo que se haga normalmente cada día. Por ello es buena idea leer esta guía al menos una vez para conocer los conceptos y algunos de los paneles  que aparecerán.</p>
+
+						  <h3>KDE Partition Manager - en una terminal:</h3>
+<pre>
+sux
+partitionmanager
+</pre>
+						  <h3>Gparted - en una terminal:</h3>
+<pre>
+sux
+gparted
+</pre>
+
+
+		<ul>
+			<li>
+							<p>Cuando GParted o KDE Partition Manager arranca, aparece una ventana y los discos son analizados.</p>
+
+							<p>En KDE Partition Manager los discos se muestran en una lista a la izquierda.</p>
+
+		<div class="screenshot"><img src="../lib/images-common/images-kpart/kpart-02.png"  title="KDE Partition Manager partition information" alt="KDE Partition Manager partition information" /></div>
+
+							<p>En Gparted, si usted hace clic en el menu (arriba de todo a la izquierda) se presenta una ventana emergente. Puede elegir recargar lo que se muestra de los discos de su sistema.</p>
+
+
+		<div class="screenshot"><img src="../lib/images-common/images-gparted/gparted02-en.png"  title="Gparted Devices View" alt="gparted" /></div>
+			</li>
+		  </ul>
+						<h6><span class="highlight-2">Las pantallas que se muestran a continuación son de Gparted. KDE Partition Manager se comporta de forma muy parecida.</span></h6>
+		  <ul>
+			<li>
+				<h3>Editar</h3>
+							<p>Se abre una ventana desde la cual puede ver los tipos de archivos soportados y algunas opciones
+							 para editar las particiones.</p>
+
+							<p>El menú es el segundo de la izquierda. Se muestra dos funciones en gris, las cuales serán muy útiles:<br />
+							<span class="highlight-3">Deshacer</span> (Undo) y <br />
+							<span class="highlight-3">Aplicar </span>(Apply) y <br />
+							<span class="highlight-3">también permite acceder/ver otras áreas. </span><br />
+							Estas opciones también puede ser vistas:</p>
+			</li>
+			<li>
+				<h3>Ver (View)</h3>
+				<ul>
+					<li>
+						<h4>Información de dispositivos</h4>
+							<p>El panel de <b>Información del Disco Duro</b> muestra detalles acerca del disco duro, tales como el modelo,
+							 tamaño, etcétera. Este panel es muy útil en un sistema con múltiples discos duros, donde esta información
+							 será utilizada para confirmar que el disco duro que está siendo examinado es el disco que desea modificar.</p>
+
+		<div class="screenshot"><img src="../lib/images-common/images-gparted/gparted03-en.png" title="Gparted Harddisk Information"  alt="operation view" /></div>
+					</li>
+					<li>
+						<h4>Operaciones pendientes</h4>
+							<p>Al pie de la ventana hay una lista de operaciones pendientes. Esta información es útil porque indica
+							 la información de la partición en la que se harán los cambios.</p>
+
+					</li>
+				</ul>
+			</li>
+			<li>
+				<h3>Dispositivo</h3>
+							<p>El dispositivo permite fijar una etiqueta al disco; si la etiqueta del disco que ya tiene no es apropiado,
+							puede cambiarla utilizando este opción.</p>
+			</li>
+			<li>
+				<h3>Menú de la partición</h3>
+							<p>Este menú es muy importante. Le permite realizar muchas operaciones, algunas de ellas son peligrosas.</p>
+
+							<p><b>Borrar (Delete)</b> es seleccionado si decide borrar una partición. Para realizar el borrado,
+							primero tiene que seleccionar la partición.</p>
+
+							<p><b>Redimensionar/Mover</b> es una función útil.</p>
+
+			</li>
+			<li>
+				<h3>Creando una nueva partición</h3>
+							<p>En la barra de herramientas, el botón <b>Nuevo (New)</b> permite crear una nueva partición si ha
+							 seleccionado una área vacía. Aparece una nueva ventana, y puede escoger el tamaño deseado y si la
+							  partición sera primaria, extendida o una particón lógica y el sistema de archivos.</p>
+
+		<div class="screenshot"><img src="../lib/images-common/images-gparted/gparted07-en.png"  title="Gparted New Partition" alt="file system" /></div>
+			</li>
+			<li>
+				<h3>¿Si comete un error?</h3>
+							<p>Si ha cometido un error, puede usar el botón de Borrar (Delete) para borrar la partición escogida,
+							o si todavía no ha pulsado seguir adelante puede usar el botón de deshacer (Undo).</p>
+
+		<div class="screenshot"><img src="../lib/images-common/images-gparted/gparted04-en.png"   title="Gparted Delete" alt="delete" /></div>
+			</li>
+			<li>
+				<h3>Redimensionar/Mover</h3>
+							<p>Cuando desea redimensionar una partición que ha seleccionado, pinchar en el botón de <b>Redimensionar/Mover
+							 (Resize/Move)</b>:  y una nueva ventana emergente aparecerá. Utilice el ratón para reducir (o aumentar) la
+							  partición o si lo desea puede usar las flechas.</p>
+
+		<div class="screenshot"><img src="../lib/images-common/images-gparted/gparted05-en.png"    title="Gparted Resize" alt="resize / move" /></div>
+
+							<p>Después de que haya dado el comando de Redimensionar, pinche en Aplicar, ya que ninguna operación
+							 afecta el disco duro hasta que pinche en Aplicar (Apply).</p>
+
+		<div class="screenshot"><img src="../lib/images-common/images-gparted/gparted09-en.png"     title="Gparted Apply"  alt="operation view" /></div>
+							<p>La duración de las operaciones depende del nuevo tamaño de la partición.</p>
+
+							<p><b>Después de modificar la tabla de particiones, por favor salga de aptosid y rearranque su sistema
+							  para que aptosid lea otra vez la nueva tabla de particiones.</b></p>
+			</li>
+		</ul>
+
+	</div>
+	<div class="divider" id="ntfs">
+		<h2>Redimensionando una partición NTFS</h2>
+
+							<p class="warning-box">Después de redimensionar una partición NTFS, es necesario rearrancar con MS Windows.
+							 <b>NO</b> haga otra operación en esa partición antes de arrancar o tendrá errores</p>
+
+						<ul>
+							<li>Después del rearranque en MS Windows&#8482;, el sistema mostrará una pantalla especial, con un
+							 mensaje preguntando acerca de la consistencia de disco duro: verificando el sistema de archivos en el disco C:
+							 </li>
+
+							<li>Deje que el AUTOCHK corra: NT necesita verificar su sistema de archivos después de
+							la operación de redimensionamiento.</li>
+
+							<li>Después de este proceso el computador rearrancará automáticamente por una segunda vez. Esto es para
+							 asegurar que todo funcione perfectamente.</li>
+
+							<li>Después del rearranque, el Windows XP estará bien, pero tiene que dejar que la sistema arranque
+							 completamente llegando hasta la pantalla de hacer login a Windows!</li>
+						</ul>
+
+							<p><b>Documentación completa de GParted:</b>:  Para leer la documentación por completo incluyendo el
+							 "How-To Copy Partitions" (como copiar particiones), por favor vaya a
+							 <a href="http://gparted.sourceforge.net">GParted</a></p>
+	</div>
+		<div class="divider" id="hd-ntfs3g">
+			<h2>Escribiendo en particiones NTFS con ntfs-3g</h2>
+
+							<p class="highlight-2"><b>Precaución</b>: Aunque el driver ntfs-3g ha sido declarado como estable, nunca lo utilice sin realizar previamente una copia de seguridad externa, y por supuesto no en sistemas de producción o de trabajo! Si lo hace, la pérdida de datos será culpa suya; úselo a su propio riesgo!</p>
+
+							<p>Abra una consola y entre los siguientes comandos:  (ver <a href="part-cfdisk-es.htm" >Particionando el DD - Nombramiento del Disco)</a></p>
+<pre>sux
+apt-get update &amp;&amp; apt-get install ntfs-3g
+umount /media/xdxx
+mount -t ntfs-3g /dev/disk/by-uuid/xxyyzz[etc] /media/xdxx
+Para salir de la consola, entrar: exit
+</pre>
+
+							<p>Ahora, el volumen de NTFS debe ser montado como <b>rw</b> (leer/escribir) y debe ser posible escribir datos en él. <br />¡Pero, una vez más, <b>Precaución! </b><span class="highlight-3">Úselo solamente para situaciones de emergencia, no está recomendado para un uso diario.</span></p>
+
+	</div>
+		<div id="rev">Contenido modificado el 14/08/2010 0100 UTC</div>
+
+</div>
+</body>
+</html>

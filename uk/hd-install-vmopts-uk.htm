@@ -1,0 +1,600 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="uk" lang="uk">
+<head>
+	<title>aptosid Manuals - VM Installation Options</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision polix 03/11/2011 0100 UTC -->
+<!--htdig_noindex--><div id="menu"> <!-- menu starts here - ua language maintained by polix -->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="Головна сторінка aptosid.com, форуму і вікі" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-uk.htm#search-on"><img src="../lib/logos/manual-search-22x22.png" title="Пошук в керівництві" alt="Search" /> Bаріанти пошуку</a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Bибір мови - Choose another language CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="Переключення мови CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-uk.htm">Керівництво aptosid</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-uk.htm#welcome-gen">Ласкаво просимо! &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-uk.htm#cred-team">Подяки</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-uk.htm#how-to">Про використання &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-uk.htm#how-to">Про використання</a></li>
+					  <li><a href="welcome-uk.htm#table-contents">3міст</a></li>
+					</ul>
+					</li>
+		<li><a href="help-uk.htm#help-gen">Oтримання допомоги&#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-uk.htm#help-gen">Де отримати допомогу</a></li>
+					  <li><a href="help-uk.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-uk.htm#welcome-quick">Короткий посібник aptosid</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-uk.htm">Зміст ISO-образу, випуски, список дзеркал і запис</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-uk.htm#cd-content">Зміст ISO-образу і системні вимоги &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-uk.htm#rolling">Зауваження до релізу</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-uk.htm#download-aptosid">Список дзеркал, скачування ISO-образу і запис &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-uk.htm#md5">Перевірка ISO-образу з md5</a></li>
+					  <li><a href="cd-dl-burning-uk.htm#burn-nero">Запис ISO-образу в Windows</a></li>
+					  <li><a href="cd-dl-burning-uk.htm#burn-linux">Запис ISO-образу в Linux</a></li>
+					  <li><a href="cd-no-gui-burn-uk.htm#burning-no-gui">Скрипт burniso</a></li>
+					  <li><a href="cd-no-gui-burn-uk.htm#burn-no-gui-gen">Запис ISO-образу в консолі</a></li>
+					  <li><a href="cd-dl-burning-uk.htm#download-aptosid">Cписок дзеркал</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-uk.htm">Режим ISO-образу</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-uk.htm#rootpw">Пароль root на ISO-образі</a></li>
+				<li><a href="live-mode-uk.htm#live-cd-installsoft">Установка ПО на ISO-образі</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-uk.htm">Термінал і оболонка</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-uk.htm#term-kon">Термінал і оболонка &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-uk.htm#term-kon">Термінал і оболонка</a></li>
+					  <li><a href="term-konsole-uk.htm#colours"> Кольорова підказка в терміналі</a></li>
+					  <li><a href="term-konsole-uk.htm#cli-help">Допомога в терміналі</a></li>
+					  <li><a href="help-uk.htm#init3-tools">Корисні інструменти в текстовому режимі (tty) - init 3</a></li>
+					  <li><a href="term-konsole-uk.htm#term-cmds">Команди в терміналі</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-uk.htm#sux">Команда: sux/sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-uk.htm">Чит-коди</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-uk.htm#cheatcodes">Особливі чит-коди для ISO-образу aptosid</a></li>
+				<li><a href="cheatcodes-uk.htm#cheatcodes-linux">Загальні чит-коди для параметрів ядра</a></li>
+				<li><a href="cheatcodes-vga-uk.htm#vga">Загальні коди для відеокарти</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-uk.htm">Розділ жорсткого диска -по старому,GPT та LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-uk.htm#hd-ntfs3g">Запис на розділ NTFS з ntfs-3g</a></li>
+			<li><a href="part-lvm-uk.htm#part-lvm">Розмітка з використанням LVM - Logical Volume Manager</a></li>
+			<li><a href="part-gparted-uk.htm#partition">Розмітка диска з інтерфейсом &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-uk.htm#partition">Розмітка диска з gparted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-uk.htm#ntfs">Розділи NTFS з gparted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-uk.htm#partition">Приклади розмітки диска в консолі &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-uk.htm#partition">Розмітка диска з cfdisk</a></li>
+					    <li><a href="part-cfdisk-uk.htm#formating">Форматування розділів з cfdisk</a></li>
+					    <li><a href="part-gdisk-uk.htm#gdisk-6">Форматування розділів з gdisk</a></li>
+					    <li><a href="part-gdisk-uk.htm#gdisk-1">GPT-розділів за допомогою Gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-uk.htm#part-example">Розмітка диска - огляд &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-uk.htm#part-example">Приклади розмітки диска</a></li>
+					  <li><a href="part-uuid-uk.htm#uuid">UUID, відновлення fstab і створення нових точок монтування</a></li>
+					  <li><a href="part-cfdisk-uk.htm#disknames">Імена жорстких дисків</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-uk.htm">Установка aptosid на HD, USB, VM і шифровані розділи</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-uk.htm#Inst-prep">Підготовка установки &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-uk.htm#Inst-prep">Підготовка установки</a></li>
+					  <li><a href="hd-install-uk.htm#Installation">Інсталяція на HD</a></li>
+					  <li><a href="hd-install-uk.htm#first-hd-boot">Перше завантаження</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-uk.htm#fromiso">Завантаження 'fromiso' &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-uk.htm#fromiso">Завантаження "fromiso '- огляд </a></li>
+					  <li><a href="hd-install-opts-uk.htm#guab2-fromiso">Завантаження "fromiso ' з guab 2</a></li>
+					  <li><a href="hd-install-opts-uk.htm#fromiso-persist">Cпособи 'fromiso' i 'persist'</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-uk.htm#usb-hd">Iнсталляцiя на USB &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-uk.htm#usb-hd">Iнсталляцiя на USB-HD - спосiб aptosid -  aptosid-на-флешкi</a></li>
+					  <li><a href="hd-ins-opts-oos-uk.htm#raw-usb">Запис aptosid на USB / SSD за допомогою іншого Linux, MS Windows або Mac OS</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-uk.htm#install-crypt">Установка на шифровані розділи - cryptroot</a></li>
+		  <li><a href="nbdboot-uk.htm#nbd1">Завантаження aptosid по мережі</a></li>
+		  <li><a href="hd-install-vmopts-uk.htm#vmopts">Опції інсталяцій на VM (Virtual Machine)</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-uk.htm">Устаткування в Xorg і різні драйвери</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-uk.htm#mon-res">Дозвіл екрану та монітори  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-uk.htm#mon-res">Дозвіл екрану та монітори</a></li>
+					  <li><a href="hw-dev-mon-uk.htm#xrandr">Подвійні екрани і xrandr</a></li>
+					  <li><a href="hw-dev-mon-uk.htm#mon-binary">Подвійні екрани (використовуючи виконавчі файли)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-uk.htm#foss-xorg">GPU драйвери &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-uk.htm#ati-3d">AMD / ATI 3D драйвери</a></li>
+					  <li><a href="gpu-uk.htm#intel">Intel 2D i 3D драйвери</a></li>
+					  <li><a href="gpu-uk.htm#nvidia">Nvidia 3D драйвери</a></li>
+					  <li><a href="gpu-uk.htm#foss-xorg">Вільні Xorg-драйвери</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-uk.htm#fw-detect">Визначення невільного мікропрограмного забезпечення - non-free </a></li>
+			  <li><a href="nf-firm-uk.htm#non-free-firmware">Додавання non-free в список джерел</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-uk.htm">Bіконні менеджери</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-uk.htm">Віконні менеджери KDE та Xfce &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-uk.htm#xfce-notes">Корисні інструменти для Xfce</a></li>
+					    <li><a href="wm-dm-uk.htm#install-add">Корисні інструменти для KDE</a></li>
+					    <li><a href="wm-dm-uk.htm#desk-freeze">Робочий стіл зависає</a></li>
+					    <li><a href="wm-dm-uk.htm#kde-login">Проблеми входу в KDE</a></li>
+					    <li><a href="wm-dm-uk.htm#ch-th">Управління темами</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-uk.htm#dm">Установква додаткових дисплейних менеджерів</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-uk.htm">Інтернет, Wifi і локальна мережа</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-uk.htm">Мета-пакет LAMP &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-uk.htm#serv-apache">Мета-пакет LAMP</a></li>
+					    <li><a href="lamp-apache-uk.htm#serv-ftp">Kлієнти FTP</a></li>
+					    <li><a href="lamp-apache-uk.htm#serv-sec">3ахищені протоколи</a></li>
+					    <li><a href="lamp-apache-uk.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-uk.htm#serv-mysql">Налаштування MySQL</a></li>
+					    <li><a href="lamp-ppp-uk.htm#serv-php">PHP в apache</a></li>
+					    <li><a href="ntp-server-uk.htm#ntp-server">Установка сервера часу</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-uk.htm#tor">Брандмауери та веб-проксі &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-uk.htm#tor">Маршрутизатор tor</a></li>
+					    <li><a href="tor-privoxy-uk.htm#privoxy">Веб-проксi privoxy</a></li>
+					    <li><a href="inet-ceni-uk.htm#firewalls">Брандмауэри</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-uk.htm#ssh-x">Samba и ssh &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-uk.htm#setup">Сервер samba</a></li>
+						  <li><a href="samba-uk.htm#configure">Інтеграції samba в мережу Windows</a></li>
+						  <li><a href="ssh-uk.htm#ssh-fs">Віддалене монтування з ssh</a></li>
+						  <li><a href="ssh-uk.htm#ssh-x">Програми X-Windows з ssh</a></li>
+						  <li><a href="ssh-uk.htm#ssh-f">Інтерфейс ssh і Konqueror</a></li>
+						  <li><a href="ssh-uk.htm#ssh-w">ssh X-forwarding з Windows-PC</a></li>
+						  <li><a href="ssh-uk.htm#ssh">Безпека з ssh</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-uk.htm#netcardconfig">Связи с WiFi &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-uk.htm#netcardconfig">Налаштування мережевих карт з ceni</a></li>
+						    <li><a href="inet-wpagui-uk.htm#wpa-roaming-gui">Графіческoe ппіложеніе wpa_gui для WiFi</a></li>
+						    <li><a href="inet-setup-v.htm#net-set1">Роумiнг с WiFi</a></li>
+						    <li><a href="inet-wpa-uk.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-uk.htm#hotswitch">Переключення мережі між WiFi та провідного зв'язком</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-uk.htm#netcardconfig">дротяний зв'язок&#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-uk.htm#dial-mod">56кілобітовие модеми</a></li>
+						    <li><a href="inet-ceni-uk.htm#netcardconfig">Налаштування мережевих карт з ceni</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-uk.htm#fw-detect">Визначення невільного мікропрограмного забезпечення - non-free </a></li>
+		<li><a href="nf-firm-uk.htm#non-free-firmware">Додавання non-free в список джерел</a></li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-uk.htm">Управління пакетами і оновлення системи з dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-uk.htm#apt-cook">APT и репозитории &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-uk.htm#apt-cook">APT і репозиторії</a></li>
+					    <li><a href="sys-admin-apt-uk.htm#apt-install">Установка нового пакета</a></li>
+					    <li><a href="sys-admin-apt-uk.htm#apt-delete">Bидалення пакета</a></li>
+					    <li><a href="sys-admin-apt-uk.htm#apt-downgrade">Зниження версії з hold</a></li>
+					    <li><a href="sys-admin-apt-uk.htm#apt-cache">Пошук пакетної иформации з apt-cache</a></li>
+					    <li><a href="sys-admin-apt-uk.htm#gui-pacsea">Графічна пошукова програма</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-uk.htm#kern-upgrade">Оновлення ядра&#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-uk.htm#kern-remove">Bидалення ядра</a></li>
+					    <li><a href="sys-admin-kern-upg-uk.htm#kern-upgrade">Оновлення ядра</a></li>
+					    <li><a href="sys-admin-kern-upg-uk.htm#dmakms">Динамічна інсталяція модулів ядра з dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-uk.htm#apt-upgrade">Оновлення системи з dist-upgrade - Короткий огляд &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-uk.htm#live-cd-upgrade">Оновлення з ISO-образу</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-uk.htm#approx">Оновлення декількох комп'ютерів в локальній мережі</a></li>
+					    <li><a href="sys-admin-apt-uk.htm#apt-upgrade">Короткий огляд Оновлення системи з dist-upgrade</a></li>
+					    <li><a href="sys-admin-apt-uk.htm#du-st">Кроки оновлення системи від dist-upgrade</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-uk.htm">Cистемне адміністрування</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-uk.htm#bois-prep">Оновлення BIOS з FreeDOS</a></li>
+		<li><a href="vir-rkits-uk.htm#virus-rkits">Cканер безпеки</a></li>
+		<li><a href="hd-install-uk.htm#adduser">Новий користувач та паролі &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-uk.htm#adduser">Додавання нового користувача</a></li>
+					    <li><a href="sys-admin-gen-uk.htm#pw-lost">Відновлення root-пароля</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-uk.htm#start-services">Служби та режими завантаження &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-uk.htm#start-services">Вибір служб</a></li>
+					    <li><a href="sys-admin-gen-uk.htm#pkill">3авершення служби або процесу</a></li>
+					    <li><a href="sys-admin-gen-uk.htm#init">Режими завантаження init в aptosid</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-uk.htm#rsync">Pезервування системи &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-uk.htm#rdiff">Резервування за rdiff</a></li>
+					    <li><a href="sys-admin-rsync-uk.htm#rsync">Резервування за rsync</a></li>
+					    <li><a href="home-uk.htm#home-bu">Переміщення / home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-uk.htm#fonts">Cups, шрифти та звук &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-uk.htm#fonts">Шрифти</a></li>
+					     <li><a href="sys-admin-gen-uk.htm#cups">Cервер cups</a></li>
+					     <li><a href="sys-admin-gen-uk.htm#sound">Звукові мікшери</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-uk.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-uk.htm#chroot">Grub2 - Відновлення grub з chroot</a></li>
+					    <li><a href="sys-admin-grub2-uk.htm#mbr-over-grub2">Grub2 -Видалення з MBR</a></li>
+					    <li><a href="sys-admin-grub2-uk.htm#multi-os">Grub2 - Подвійна і мультизагрузки</a></li>
+					    <li><a href="sys-admin-grub2-uk.htm#grub1-grub2">Grub2 - Оновлення за grub1</a></li>
+					    <li><a href="sys-admin-grub2-uk.htm#grub2">Grub2 - Kороткий огляд</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Sponsored by webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid розміщений на сервері webtropia.com" alt = "aptosid розміщений на сервері webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+		<div class="divider" id="vmopts">
+				<h2 id="top-header">Установки віртуальних машин</h2>
+
+						<ul>
+							<li><a href="hd-install-vmopts-uk.htm#kvm">KVM for Intel VT or AMD-V</a></li>
+							<li><a href="hd-install-vmopts-uk.htm#vbox">Virtualbox</a></li>
+							<li><a href="hd-install-vmopts-uk.htm#qemu">QEMU</a></li>
+							<li><a href="hd-install-vmopts-uk.htm#oos">Installing other distributions to an image</a></li>
+						</ul>
+
+							<p><span class="highlight-3">Наступні приклади використання aptosid, це просто замініть aptosid з розподілом за вашим вибором.</span></p>
+	</div>
+	<div class="divider" id="oos">
+			    <h2>Установка іншого діструбитива з VM-ІSO</h2>
+							<p>Примітка: Якщо і коли Ви хочете встановити віртуальної машини, то для всіх дистрибутивів Linux ймовірно потрібно всього лише розподілити 12 GВ місця на жорсткому диску. Проте якщо у вас є вимога про наявність MS Windows у віртуальниї машини, вам необхідно виділити близько 30 GB або більше для віртуалізації. Усі розміри розподілу в кінцевому рахунку залежить від Ваших потреб.
+ </p>
+
+							<p>Як правило розмір виділення не буде займати додаткове місце на жорсткому диску поки дані не встановлені. Навіть тоді якщо це займе всього простору на жорсткому диску, контингент фактичний обсяг даних який розширює ISO буде дінамичним. Це пов'язано з обробкою відносини qcow2.</p>
+
+		      </div>
+		      <div class="divider" id="kvm">
+				<h2>Включення віртуальниї машини через KVM</h2>
+							<p>KVM це повне рішення для віртуалізації Linux яка працює на платформі x86 CPU з розширеннями віртуалізації (Intel VT або AMD-V).</p>
+
+				      <h3>Передумови</h3>
+
+							<p>Щоб перевірити чи є ваше обладнання підтримує KVM, переконайтеся, що KVM включений в BIOS, (в деяких випадках на Intel VT або AMD-V, система не може бачити куди перемикати, тому припустимо що він знаходиться в стані KVM ). Спосіб перевірити чи знаходиться та функція запустіть в консолі команду:</p>
+<pre>
+cat /proc/cpuinfo | egrep --color=always 'vmx|svm'
+</pre>
+							<p>Якщо ви бачите <span class="highlight-3">svm</span> або <span class="highlight-3">vmx</span> в процесорі ваша система підтримує KVM. (В іншому випадку зайдіть в BIOS вашого комп'ютера, якщо ви думаєте, воно буде підтримано і перевірте ще раз, інакше шукайте в Інтернеті, про те де в BIOS- меню під розділом "Дозволити" KVM може ховатися).</p>
+
+							<p>Якщо ваш BIOS не підтримує KVM зверніться до<a href="hd-install-vmopts-uk.htm#vbox">Virtualbox</a>
+							 or <a href="hd-install-vmopts-uk.htm#qemu">QEMU</a></p>
+
+							<p>Для установки і запуску KVM  в першу чергу забезпечіть,що Virtualbox модулі не завантажуються, ( їх повністю деінсталювати це є найкращий варіант), то в залежності від вашого чіпсета:</p>
+
+							<p>Для <span class="highlight-3">vmx</span>:</p>
+<pre>
+apt-get install qemu-kvm qemu-utils
+modprobe kvm-intel
+</pre>
+							<p>Для <span class="highlight-3">svm</span>:</p>
+<pre>
+apt-get install qemu-kvm qemu-utils
+modprobe kvm-amd
+</pre>
+							 <p>При запуску системи QEMU-KVM буде піклуватися про завантаження модулів.</p>
+
+					  <h4>Використання KVM для завантаження aptosid-*.iso</h4> 
+
+							<p><span class="highlight-2">Як користувач:</span></p>
+<pre>
+$ kvm -net nic,model=virtio -net user -soundhw ac97 -m 512 -monitor stdio -cdrom &lt;aptosid.iso&gt;
+</pre>
+
+				<h5>Установка aptosid в KVM</h5>
+							<p>Спочатку потрібно створити образ жорсткого диска (при цьому зображення буде мінімальним і тільки зростати в міру необхідності у зв'язку з qcow2 ступені стиснення):</p>
+<pre>
+$ qemu-img create -f qcow2 aptosid-VM.img 12G
+</pre>
+
+							<p>Завантажте aptosid-*. ISO з наступними параметрами щоб ​​KVM визнав що QEMU образ жорсткого диска доступний:</p>
+
+<pre>
+$ kvm -net nic,model=virtio -net user -soundhw ac97 -m 512 -monitor stdio -cdrom &lt;/path/to/aptosid-*.iso&gt; -boot d &lt;/path/to/aptosid-VM.img&gt;
+</pre>
+
+							<p>Як тільки компакт-диск має завантажився натисніть на іконку aptosid установки для активації інсталятора (або скористуйтесь меню), натисніть на вкладку розділів і запуск розділу додатків яким ви надаєте перевагу. Для перегородки ви можете слідувати інструкціям <a href="part-gparted-uk.htm">Розділ жорсткого диска - традиційний, GPT і LVM</a>  (Не забудьте додати розділ підкачки (SWAP) якщо Bам не вистачає пам'яті). Майте на увазі що при форматуванні треба мати час так що будьте терплячими.</p>
+
+<div class="screenshot"><img src="../lib/images-common/images-vm/kvm-gparted02.png" title="gparted kvm hard disk naming" alt="gparted kvm hard disk naming" /></div>
+	<div class="spacer02"></div>
+
+							<p>Тепер у вас є VM готовий до використання:</p>
+
+<pre>
+$ kvm -net nic,model=virtio -net user -soundhw ac97 -m 512 -monitor stdio -drive if=virtio,boot=on,file=&lt;path/to/aptosid-VM.img&gt;
+</pre>
+
+							<p>Деякі гості не підтримують Virtio, тому необхідно використовувати інші опції при запуску KVM, наприклад,:</p>
+<pre>
+$ kvm -net nic, -net user -soundhw ac97 -m 512 -monitor stdio -hda &lt;/path/to/your_guest.img&gt; -cdrom your_other.iso -boot d
+</pre>
+
+							 <p>або</p>
+<pre>
+$ kvm -net nic, -net user -soundhw ac97 -m 512 -monitor stdio -hda &lt;/path/to/your_guest.img&gt;
+</pre>
+							<p>Дивіться: <a href="http://www.linux-kvm.org/page/Main_Page"> KVM документація</a>.</p>
+
+				<h5>Управління установок віртуальних  машин зі KVM</h5>
+<pre>
+apt-get install aqemu
+</pre>
+							<p>При використанні AQEMU переконайтеся, що ви обираєте KVM режим із списку для «Еmulator 'в вкладці "General".(Документація пpо AQEMU відсутна, тому кілька випробувань  з "Error" повинні будуть з'ясувати в легкому у використанні графічного інтерфейсу. Хорошим початоком є використання першого використання «V.М.» меню, потім вкладкa"General" ).</p>
+
+	</div>
+	<div class="divider" id="vbox">
+		<h2>Завантаження і установка на "VirtualBox" віртуальниї машини</h2>
+							<p>Кроки</p>
+						<ul>
+ 							<li>1. Створення жорсткого диску в VirtualBox</li>
+ 							<li>2. Завантаження ІSO з VirtualBox</li>
+ 							<li>3. Установка на жорсткому диску в VirtualBox </li>
+						</ul>
+
+				<h4>Вимоги</h4>
+							<p><span class="highlight-3">Рекомендований обсяг RAM: 1 GB </span>: Ідеально 512 Мб для гостьової ОС і 512 Мб для базового хоста. (Він може бути запущений на менше RAM, але не розраховуйте на хорошу продуктивність).</p>
+
+							<p><span class="highlight-3">Місце на жорсткому диску:</span> Хоча програма VirtualBox сама по собі дуже худа ( для звичайної установки потрібно буде тільки близько 30 Мб вільного простору на жорсткому диску), віртуальні машини потребують досить багато місця на жорсткому диску, щоб представити їх власний жорсткий диск. Так тоді  наприклад для установки MS Windows XP вам буде потрібне більше ніж 10 ГБ. Щоб мати aptosid в VirtualBox, Ви повинні розподілити тільки 5 ГБ місця плюс SWAP.</p>
+
+				<h3>Установка:</h3>
+
+<pre>
+apt-get update
+apt-get install virtualbox-ose-qt virtualbox-source dmakms module-assistant
+</pre>
+							<p>Потім підготoвьте модулi:</p>
+<pre>
+m-a prepare
+m-a a-i virtualbox-source
+</pre>
+							<p>Потім активіруйте Dynamic Module-Assistant Kernel Module Support для Virtualbox, таким чином, для наступного разу, коли ядро ​​Linux оновлюється модулі VirtualBox готують для нього теж, без ручного втручання. Щоб зробити це, додайте <span class="highlight-3">virtualbox-source</span> до <span class="highlight-3">/etc/default/dmakms </span>файл конфігурації.</p>
+<pre>
+mcedit /etc/default/dmakms
+virtualbox-source
+</pre>
+
+							<p>Перезавантажте комп'ютер.</p>
+
+							<p><a href="sys-admin-kern-upg-uk.htm#dmakms">ВАЖЛИВО:Прочтіть інформацію про DKMS</a>.</p>
+
+			<h3>Установка aptosid на віртуальну машину</h3>
+							<p>Використовуйте VirtualBox-майстер створення нової віртуальної машини для aptosid, а потім дотримуйтесь інструкцій для звичайної установки aptosid.</p>
+
+							<p><a href="http://www.virtualbox.org/">VirtualBox має всеосяжний PDF-довідкy, яку можна завантажити</a> </p>
+
+
+	</div>
+	<div class="divider" id="qemu">
+		<h2>Завантаження та встановлення віртуальної машини зі QEMU</h2>
+
+						<ul>
+ 							<li>1. Створення жорсткого диску для QEMU</li>
+ 							<li>2. Завантаження ІSO з QEMU</li>
+ 							<li>3. Установка на жорсткому диску в QEMU</li>
+						</ul>
+
+							<p>Доступний інструмент QT GUI щоб допомогти налаштувати QEMU:</p>
+<pre>
+apt-get install qtemu
+</pre>
+
+ 				<h4>Створення місця на жорсткому диску</h4>
+
+							<p>Для запуску QEMU ви, ймовірно, знадобиться образ жорсткого диска. Це є файл в якому зберігається вміст емульованого жорсткого диска.</p>
+
+							<p>Використовуйте команду:</p>
+<pre>
+qemu-img create -f qcow aptosid-VM.img 3G
+</pre>
+							<p>Створіть файл з ім'ям "aptosid-VM.img". "3G" вказує розмір диска - в даному випадку 3 ГБ. Ви можете використовувати суфікс M для мегабайт (наприклад "256"). Ви не повинні занадто турбуватися про розмір диска - формат qcow стискає зображення так, щоб пусте місце не додалося до розміру файлу.</p>
+
+
+				<h4>Установка операційної системисистеми</h4>
+
+							<p>Це є перший крок коли ви будете повинні  включити емулятор.<span class="highlight-3">Майте на увазі: при натисканні всередині вікна QEMU, трапляється захоплення покажчика миші. Щоб звільнити її нажміть на:</span></p>
+<pre>
+Ctrl+Alt
+</pre>
+
+							<p>If you want to use a bootable floppy, run Qemu with:</p>
+<pre>
+qemu -floppy aptosid.iso -net nic -net user -m 512 -boot d aptosid-VM.img
+</pre>
+							<p>If your CD-ROM is bootable, run Qemu with:</p>
+<pre>
+qemu -cdrom aptosid.iso -net nic -net user -m 512 -boot d aptosid-VM.img
+</pre>
+							<p>Тепер встановіть aptosid, як ніби ви збираєтеся встановити його на реальний жорсткий диск</p>
+
+
+				<h4>Запуск системи</h4>
+
+							<p>Для запуску системи наберіть команду:</p>
+<pre>
+qemu [hd_image]
+</pre>
+							<p>Розумні користувачи полягають на використання накладення зображень. Таким чином, ви можете створити образ жорсткого диска в один раз і сказати Qemu зберігати всі зміни в зовнішньому файлі. Вам не треба боятися нестабільностей, тому що це дуже легко повернутися до попереднього стану системи.</p>
+
+							<p>Для створення накладки зображення введіть команду:</p>
+<pre>
+qemu-img create -b [[base''image]] -f qcow [[overlay''image]]
+</pre>
+							<p>Замініть образ жорсткого диска для base_image (у нашому випадку aptosid-VM.img).Після цього ви можете запустити QEMU з:</p>
+<pre>
+qemu [overlay_image]
+</pre>
+							<p>Початкове ISO залишиться недоторканим. Один пристрій базового образу не може бути перейменований або переміщений.</p>
+
+
+				<h4>Використання фізичного розділу як початкового розділу жорсткого диска</h4>
+
+							<p>Іноді, ви захочете використовувати одну з ваших системний розділ з QEMU (наприклад, якщо ви хочете завантажитись і ваші реальні машини або QEMU використовують дані розділу як root). Ви можете зробити це за допомогою програмного забезпечення RAID в лінійному режимі (необхідно установити ядровий драйвер linear.ko) і пристрій зворотної петлі: фокус полягає в тому випереджати головний завантажувальний запис (MBR) для реального розділу, який повинен вбудовуватися в QEMU-image.</p>
+
+							<p>Припустимо, oни мають простий, не включений розділ / Dev / sdaN з файловою системою, який повинен стати частиною способу жорстких дисків QEMU. Спершу створіть маленький файл, який повинен містити MBR:</p>
+<pre>
+dd if=/dev/zero of=/path/to/mbr count=32
+</pre>
+							<p>Цим створюється файл розміром 16 Кб (32 * 512 байт). Важливо не створювати цей файл занадто маленьким (навіть якщо MBR потребує тільки в одному блоці розміром 512 байтів), так як розмір шматка програмного RAID пристрою буде тим менше, чим менше цей файл, і це вплине на продуктивність. Потім можна приєднати до файлу MBR пристрій Loopback:
+</p>
+<pre>
+losetup -f /path/to/mbr
+</pre>
+							<p>Ми виходимо з того, що пристрій називається / dev/loop0, так як ще ніякого іншого Loopback не існує. Наступний крок - це об'єднання "об'єднані" образу з MBR + / Dev / sdaN при використанні Software-рейдів</p>
+<pre>
+ modprobe linear
+ mdadm --build --verbose /dev/md0 --chunk=16 --level=linear --raid-devices=2 /dev/loop0 /dev/sdaN
+</pre>
+							<p>Створений таким чином / dev/md0 використовується як QEMU-сиру-DiskImage (що встановлюються права доступу повинні дозволяти емулятор його використовувати). Останній (і кілька делікатне) крок - це конфігурація жорстких дисків (геометрія диска і таблиці розділів), так щоб збігалися вихідна точка початкового розділу в MBR з одним із / Dev / sdaN в пределах/dev/md0 (зміщення точно 16 * 512 = 16 384 байт в цьому прикладі). Для цього використовується FDISK на машині Host, а не на емуляторі: він не завжди дозволяє провести округлення в кілобайтах (як 31,5 KБ в попередньому розділі), і видається значення, як наслідок, не може бути оброблено Software-RAID. Тому на комп'ютері хоста виконуємо:</p>
+<pre>
+ fdisk /dev/md0
+</pre>
+							<p>Створюється відповідним чином початковий розділ / Dev / sdaN і командою 'S' (Sector) в меню 'х' (експерт) підбирають розмір, до тих пір, поки перший циліндр (де починається перший розділ) точно підійде до величини MBR. Нарешті, з 'W' (запис) результат заноситься у файл. Тепер є в наявності розділ, який безпосередньо може включатися як машиною хоста так і іміджем жорстких дисків QEMU::</p>
+<pre>
+ qemu -hdc /dev/md0 [...]
+</pre>
+							<p>Звичайно, можна використовувати будь завантажувач для образу жорстких дисків з QEMU, який підтримується оригінальним розділом, що містить необхідні додатки, / завантаження / sdaN.</p>
+
+
+
+<!-- 				<h4>Модуль QEMU-прискорювач</h4> -->
+
+<!-- 							<p>Розробники QEMU створили додатковий модуль ядра, щоб QEMU міг набирати швидкість майже до рівня реальної системи. Завантажити цей модуль можна так:</p> -->
+<!-- <pre> -->
+<!-- major=0 -->
+<!-- </pre> -->
+<!-- 							<p>Одночасно автоматизується установка необхідного пристрої / Dev / KQEMU. Наступна команда є необхідною</p> -->
+<!-- <pre> -->
+<!-- echo "options kqemu major=0" >> /etc/modules -->
+<!-- </pre> -->
+<!-- 							<p>Це дозволить змінити modprobe.conf для того, щоб модуль додана опція кожен раз, коли модуль завантажений.</p> -->
+
+<!-- <pre> -->
+<!-- qemu [...] -kernel-kqemu -->
+<!-- </pre> -->
+<!-- 							<p>Для активації модуля KQEMU при кожному завантаженні.</p> -->
+
+<!-- 				<h4>Для активації QEMU:</h4> -->
+<!-- <pre> -->
+<!-- qemu -cdrom /tmp/pkg/aptosid-debug.iso -net nic -net user -m 512 -->
+<!-- </pre> -->
+							<p><a href="http://wiki.qemu.org/Contribute/StartHere">Офіційна документація проекту QEMU</a> </p>
+
+							<p><a href="http://wiki.archlinux.org/index.php/Qemu">Кілька розділів керівництва QEMU були використані для керівництва aptosid на базі GNU Free Documentation License 1,2 і пристосовані для керівництва aptosid. Переклад на українски мову буде зроблений групою aptosid.</a> </p>
+
+
+	</div>
+	<div id="rev">Сторінка останий раз переглянута 18/09/2011 1010 UTC</div>
+
+</div>
+</body>
+</html>

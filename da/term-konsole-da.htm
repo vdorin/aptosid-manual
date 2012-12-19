@@ -1,0 +1,607 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="da" lang="da">
+<head>
+	<title>aptosid Manuals - The Terminal or Konsole</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision by ragupo 01/02/2011 1615hrs UTC -->
+<!--htdig_noindex--><div id="menu"> <!-- menu starts here en lang maintained by ragupo-->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="Tilbage til aptosid.com forums og wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-da.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" />Søg online - offline</a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Vælg et andet sprog - Choose another language CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="lang-switch CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-da.htm">aptosid OS Manual</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-da.htm#welcome-gen">aptosid OS Manual &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-da.htm#cred-team">Tak til</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-da.htm#how-to">Hvordan du anvender denne manual &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-da.htm#how-to">Hvordan du anvender denne manual</a></li>
+					  <li><a href="welcome-da.htm#table-contents">Inholdsfortegnelse</a></li>
+					</ul>
+					</li>
+		<li><a href="help-da.htm#help-gen">Sådan får du hjælp &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-da.htm#help-gen">Hvor og hvordan får du hjælp</a></li>
+					  <li><a href="help-da.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-da.htm#welcome-quick">aptosid Hurtig Start Guide</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-da.htm">ISO indhold, udgivelser, filspejle og cd-brænding</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-da.htm#cd-content">ISO indhold og systemkrav &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-da.htm#rolling">Bemærkninger til udgivelsen</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-da.htm#download-aptosid">aptosid filspejle, download og cd-brænding &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-da.htm#md5">md5 Checksum</a></li>
+					  <li><a href="cd-dl-burning-da.htm#burn-nero">cd-brænding i Windows</a></li>
+					  <li><a href="cd-dl-burning-da.htm#burn-linux">cd-brænding i Linux</a></li>
+					  <li><a href="cd-no-gui-burn-da.htm#burning-no-gui">burniso skript</a></li>
+					  <li><a href="cd-no-gui-burn-da.htm#burn-no-gui-gen">cd-brænding uden grafisk brugerflade</a></li>
+					  <li><a href="cd-dl-burning-da.htm#download-aptosid">aptosid download filspejle</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-da.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-da.htm#rootpw">Root-kodeord på aptosid Live ISO</a></li>
+				<li><a href="live-mode-da.htm#live-cd-installsoft">Installering af programmer under Live-ISO</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-da.htm">Terminalen</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-da.htm#term-kon"> Terminal &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-da.htm#term-kon"> Terminalen</a></li>
+					  <li><a href="term-konsole-da.htm#colours"> Farver i terminal-prompten</a></li>
+					  <li><a href="term-konsole-da.htm#cli-help">Hjælp til kommandolinien</a></li>
+					  <li><a href="help-da.htm#init3-tools">Nyttige værktøjer til text mode (tty) - init 3</a></li>
+					  <li><a href="term-konsole-da.htm#term-cmds">Linux Terminal kommando liste</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-da.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-da.htm">CheatCodes</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-da.htm#cheatcodes">aptosid specifikke Live-ISO Cheatcodes</a></li>
+				<li><a href="cheatcodes-da.htm#cheatcodes-linux">Linux generiske Cheatcodes</a></li>
+				<li><a href="cheatcodes-vga-da.htm#vga">VGA Codes</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-da.htm">Partitioning the Hard Drive - Traditional, GPT and LVM</a>
+		    <ul class="sub-menu" id="sm6">
+			  <li><a href="part-gparted-da.htm#hd-ntfs3g">Skriv til NTFS partitioner med ntfs-3g</a></li>
+			<li><a href="part-lvm-da.htm#part-lvm">Partitionering med anvendelse af LVM - Logical Volume Manager</a></li>
+			<li><a href="part-gparted-da.htm#partition">Partitionering med grafisk brugerflade &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-da.htm#partition">Partitionering af din harddisk med GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-da.htm#ntfs">Ændre størrelsen på NTFS partitioner med GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-da.htm#partition">Partitionering fra kommandolinien &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-da.htm#partition">Partitionering af harddisken med cfdisk</a></li>
+					    <li><a href="part-cfdisk-da.htm#formating">Formattering efter partitionering med cfdisk</a></li>
+					    <li><a href="part-gdisk-ca.htm#gdisk-6">Formatting after partitioning with gdisk</a></li>
+					    <li><a href="part-gdisk-da.htm#gdisk-1">GPT Partitioning with gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-da.htm#part-example">Basal partitionering &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-da.htm#part-example">Eksempler på partitionsstørrelser</a></li>
+					  <li><a href="part-uuid-da.htm#uuid">UUID, Genopbygning af fstab og oprettelse af nye monteringspunkter</a></li>
+					  <li><a href="part-cfdisk-da.htm#disknames">Nomenklatur for diske og partitionsnavngivning</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-da.htm">Installations muligheder - HD, USB, VM og Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-da.htm#Inst-prep">Forberedelser til installationen &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-da.htm#Inst-prep">Installations forberedelser</a></li>
+					  <li><a href="hd-install-da.htm#Installation">Installering til harddisken</a></li>
+					  <li><a href="hd-install-da.htm#first-hd-boot">Første opstart</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-da.htm#fromiso">Opstart fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-da.htm#fromiso">Opstart fromiso - Overblik</a></li>
+					  <li><a href="hd-install-opts-da.htm#grub2-fromiso">Opstart 'fromiso' med Grub 2</a></li>
+					  <li><a href="hd-install-opts-da.htm#fromiso-persist">Fromiso og persist</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-da.htm#usb-hd">Installering til USB drev &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-da.htm#usb-hd">Installering til en USB-HD - aptosid specific - aptosid-on-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-da.htm#raw-usb">Installering af aptosid til USB/SSD nøgle fra Linux, MS Windows eller Mac OS X systemer</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-da.htm#install-crypt">Installering på krypterede partitioner - cryptroot</a></li>
+		  <li><a href="nbdboot-da.htm#nbd1">Boote aptosid over netværketk</a></li>
+		  <li><a href="hd-install-vmopts-da.htm#vmopts">Virtual Machine installations muligheder</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-da.htm">Grafikkort, Monitors, Xorg &amp; drivere</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-da.htm#mon-res">Skærmopløsning og monitors  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-da.htm#mon-res">Skærm opløsning og monitors</a></li>
+					  <li><a href="hw-dev-mon-da.htm#xrandr">Dual Monitors og xrandr</a></li>
+					  <li><a href="hw-dev-mon-da.htm#mon-binary">Dual Monitors (med binære drivere)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-da.htm#foss-xorg">GPU drivers &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-da.htm#ati-3d">AMD/ATI 3D drivere</a></li>
+					  <li><a href="gpu-da.htm#intel">Intel 2D and 3D drivere</a></li>
+					  <li><a href="gpu-da.htm#nvidia">Nvidia 3D drivere</a></li>
+					  <li><a href="gpu-da.htm#foss-xorg">Open Source Xorg drivere</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-da.htm#fw-detect">Firmware detection - non-free </a></li>
+			  <li><a href="nf-firm-da.htm#non-free-firmware">Tilføj non-free til kildelisten </a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-da.htm#install-add">Window Managers</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-da.htm">KDE and XFCE Window Managers &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-da.htm#xfce-notes">Nyttige Xfce ekstras</a></li>
+					    <li><a href="wm-dm-da.htm#install-add">Nyttige ekstra KDE Apps</a></li>
+					    <li><a href="wm-dm-da.htm#desk-freeze">Skrivebordet fyser</a></li>
+					    <li><a href="wm-dm-da.htm#kde-login">ingen login i KDE mulig</a></li>
+					    <li><a href="wm-dm-da.htm#ch-th">Ændre Themes</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-da.htm#dm">Installing additional Display Managers</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-da.htm">Internet forbindelse, WiFi, LAN og Netwærk</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-da.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-da.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-da.htm#serv-ftp">FTP klienter</a></li>
+					    <li><a href="lamp-apache-da.htm#serv-sec">Sikkerheds protocoller</a></li>
+					    <li><a href="lamp-apache-da.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-da.htm#serv-mysql">MySQL opsætning</a></li>
+					    <li><a href="lamp-ppp-da.htm#serv-php">PHP i Apache</a></li>
+					    <li><a href="ntp-server-da.htm#ntp-server">Opsætning af timeserver</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-da.htm#privoxy">Firewalls og Privatliv &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-da.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-da.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-da.htm#firewalls">Firewalls</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-da.htm#ssh-x">SSH og Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-da.htm#setup">Samba-Server opsætning</a></li>
+						  <li><a href="samba-da.htm#configure">Konfiguration af SAMBA (Windows)</a></li>
+						  <li><a href="ssh-da.htm#ssh-fs">SSH Remote Mounting</a></li>
+						  <li><a href="ssh-da.htm#ssh-x">X Window Apps via SSH</a></li>
+						  <li><a href="ssh-da.htm#ssh-f">GUI SSH med Konqueror</a></li>
+						  <li><a href="ssh-da.htm#ssh-w">SSH X-Forwarding fra en Windows-PC</a></li>
+						  <li><a href="ssh-da.htm#ssh">SSH og sikkerhed</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-da.htm#netcardconfig">WIFI forbindelser &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-da.htm#netcardconfig">Kom online - Ceni</a></li>
+						    <li><a href="inet-wpagui-da.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-da.htm#net-set1">WiFi - opsætning af WiFi Roaming</a></li>
+						    <li><a href="inet-wpa-da.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-da.htm#hotswitch">Skift imellem kablet og trådløs forbindelse</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-da.htm#netcardconfig">Kablede forbindelser &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-da.htm#dial-mod">56k Modems</a></li>
+						    <li><a href="inet-ceni-da.htm#netcardconfig">kom online - Ceni</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-da.htm#fw-detect">Firmware detection - non-free </a></li>
+		<li><a href="nf-firm-da.htm#non-free-firmware">Tilføj non-free til kildelisten </a></li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-da.htm">Pkke administration og dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-da.htm#apt-cook">APT Cookbook og Sources list &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-da.htm#apt-cook">APT-Guide Cookbook og Sources list</a></li>
+					    <li><a href="sys-admin-apt-da.htm#apt-install">Installation af nye pakker</a></li>
+					    <li><a href="sys-admin-apt-da.htm#apt-delete">Afinstaller pakker</a></li>
+					    <li><a href="sys-admin-apt-da.htm#apt-downgrade">Pakke på Hold og nedgradering</a></li>
+					    <li><a href="sys-admin-apt-da.htm#apt-cache">Søgning efter pakker med apt-cache</a></li>
+					    <li><a href="sys-admin-apt-da.htm#gui-pacsea">Søgning after pakker i GUI</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-da.htm#kern-upgrade">Opdatering af kernel &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-da.htm#kern-remove">Fjernelse af Kernels</a></li>
+					    <li><a href="sys-admin-kern-upg-da.htm#kern-upgrade">Opdatering af kernel</a></li>
+					    <li><a href="sys-admin-kern-upg-da.htm#dmakms">Dynamisk installering af kernel moduler med dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-da.htm#apt-upgrade">Opdatering af installeret systemet -  dist-upgrade - Overblik &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-da.htm#live-cd-upgrade">Opdatering med Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-da.htm#approx">dist-upgrade af flere PCer på et LAN</a></li>
+					    <li><a href="sys-admin-apt-da.htm#apt-upgrade">opdatere et installeret system -  dist-upgrade - Overblik</a></li>
+					    <li><a href="sys-admin-apt-da.htm#du-st">Opdater et installeret system -  dist-upgrade - Trinvis guide</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-da.htm">System Administration</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-da.htm#bois-prep">Opdatering af BIOS med FreeDOS</a></li>
+		<li><a href="vir-rkits-da.htm#virus-rkits">Virus og Rootkit Skannere</a></li>
+		<li><a href="hd-install-da.htm#adduser">Tilføje brugere og kodeord &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-da.htm#adduser">Tilføj en ny bruger</a></li>
+					    <li><a href="sys-admin-gen-da.htm#pw-lost">Mistet root kodeord, nye kodeord</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-da.htm#start-services">Tjenester og init runlevels &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-da.htm#start-services">Tjenester aktiver/deaktiver</a></li>
+					    <li><a href="sys-admin-gen-da.htm#pkill">Killing a service or process</a></li>
+					    <li><a href="sys-admin-gen-da.htm#init">aptosid runlevels - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-da.htm#rsync">Sikkerhedskopi af systemet &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-da.htm#rdiff">Sikkerhedskopi med rdiff</a></li>
+					    <li><a href="sys-admin-rsync-da.htm#rsync">Sikkerhedskopi med rsync</a></li>
+					    <li><a href="home-da.htm#home-bu">Flytte /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-da.htm#fonts">CUPS, Fonte og Lyd &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-da.htm#fonts">Fonte</a></li>
+					     <li><a href="sys-admin-gen-da.htm#cups">CUPS - Print System</a></li>
+					     <li><a href="sys-admin-gen-da.htm#sound">Lyd Mixers</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-da.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-da.htm#chroot">Grub2 - Gneopret Grub med chroot</a></li>
+					    <li><a href="sys-admin-grub2-da.htm#mbr-over-grub2">Grub2 - MBR overskrevet</a></li>
+					    <li><a href="sys-admin-grub2-da.htm#multi-os">Grub2 - Dual og Multibooting</a></li>
+					    <li><a href="sys-admin-grub2-da.htm#grub1-grub2">Grub2 -Opgradering fra Grub1</a></li>
+					    <li><a href="sys-admin-grub2-da.htm#grub2">Grub2 - Overblik</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Sponsored by webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid is proudly hosted by webtropia.com" alt="aptosid is proudly hosted by webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+	<div class="divider" id="term-kon">
+		<h2 id="top-header">Definition på terminal/konsol</h2>
+
+							<p>En terminal, også kaldt en console eller (i KDE) konsol, er et program der gør det muligt at interagere direkte med linux operativ systemet, ved at indtaste forskellige kommandoer der så bliver udført øjeblikkeligt. Andre anvendte navne for det samme er <span class="highlight-3">'skal' (shell) eller 'kommandolinie'</span>. Terminaler er stærke værktøjer, og det har store fordele at have et basalt kendskab til anvendelsen af dem.</p>
+
+							<p>I aptosid finder du terminalen/ konsollen tæt på K-menu'en, symboliseret ved en Pc-skærm. Afhængigt af dit skrivebords-tema kan det være at du endda kan se en prompt i ikonet. Du finder også en genvej til programmet under K-menu > System.</p>
+
+							<p>Når du åbner programmet præsenteres du af terminalens prompt, den har dette format:</p>
+
+<pre>
+brugernavn@værtsnavn:~$
+</pre>
+
+							<p>Forhåbentlig kan du genkende brugernavnet som dit log ind navn. Værtsnavnet er navnet på din maskine. <span class="highlight-3">~ (tilde)</span> indikerer at du er i din hjemmemappe (/home) og <span class="highlight-3">$</span> indikerer at du er logget ind på terminalen med bruger-rettigheder. Ved liniens slutning finder du din markør. Det er kommandolinien, og det er her du skriver de kommandoer du vil have maskinen til at udføre.</p>
+
+							<p>En hel del kommandoer kræver root-rettigheder (administrator-rettigheder) for at kunne udføres. For at opnå root-rettigheder kan du skrive <span class="highlight-3">sux</span> på kommandolinien og trykke retur. Du bliver så spurgt om dit root password. Mens du taster dit root password ind, bemærk da at du ikke kan se hvad du taster på skærmen. Afslut med retur.</p>
+
+							<p>Hvis det var det korrekte password så vil prompten nu ændres til:</p>
+
+<pre>
+root@værtsnavn:/home/brugernavn#
+</pre>
+
+							<p class="highlight-2">ADVARSEL: Når du er logget ind som root vil systemet ikke stoppe dig i at udføre potentielt skadelige ting, som at slette essentielle filer, osv. Du skal, når du er logget ind som root, være helt og aldeles fuldstændig sikker på at du er klar over hvad du foretager dig, for det er fuldt muligt at udrette seriøs og uoprettelig skade på systemet.</p>
+
+							<p>Bemærk at <span class="highlight-3">$</span> tegnet har ændret sig til et <span class="highlight-3">#</span> (hash). I en terminal betyder <span class="highlight-3">#</span> altid at du er logget ind med root-rettigheder. <span class="highlight-3">Igennem alle forklaringerne i denne manual vil vi udelade alt det der står foran $ eller #. Så en kommando som dette:</span></p>
+
+<pre>
+# apt-get installer noget
+</pre>
+
+							<p>Betyder: Åben et terminalvindue, bliv root (med sux) og skriv kommandoen ved #-prompten.  <span class="highlight-4">(Du skal ikke skrive #-tegnet)</span></p>
+
+							<p>Nogle gange bliver en konsol og/ eller en terminal korrumperet -eller hvis du bare vil rense din konsol for alt hvad der står- skriver du:</p>
+<pre>
+reset
+</pre>
+							<p>og trykker retur.</p>
+
+							<p>Hvis en konsol eller en terminals output bliver forvrænget, kan du ofte kurere dette ved at trykke <span class="highlight-3">ctrl+l,</span> som genskriver terminalvinduet.  Denne forvrængning opstår som regel oftest når man arbejder med programmer der bruger ncurses interface, for eksempel irssi</p>
+
+							<p>En konsol eller terminal kan lejlighedsvist fremstå som frossen, det er den dog ikke, og alt hvad du skriver vil stadig blive behandlet. Denne tilstand kan opstå hvis man trykker <span class="highlight-3">ctrl+s</span> ved et uheld. I dette tilfælde kan du prøve at trykke <span class="highlight-3">ctrl+q</span> for at genoplive terminalen.</p>
+
+	</div>
+	<div class="divider" id="colours">
+				    <h3><span class="highlight-4">kulørte terminaler</span> <span class="highlight-5">bruger:~</span><span class="highlight-1">$ </span> og <span class="highlight-2">root:</span><span class="highlight-1"># </span> <span class="highlight-3"> prompt:</span></h3>
+
+							<p>En kulørt terminal prompt kan måske redde dig fra at lave pinlige og potentielt katastrofiske fejl som <span class="highlight-2">root # </span> bår du i virkeligheden skulle have udført kommandoen som <span class="highlight-5">bruger~$</span>, eller farver kan anvendes til at for eksempel at markere kommandoer du udførte nogle 100 linjer tidligere.</p>
+
+							<p>Som standard er både bruger~$ og root# prompten den samme farve, men det er virkeligt nemt at ændre dem for begges vedkommende.</p>
+
+							<p>De basale farver er :</p>
+<pre>
+(the syntax is 00;XX)
+[00;30] Sortk
+[00;31] Rød
+[00;32] Grøn
+[00;33] Gul
+[00;34] Blå
+[00;35] Magenta
+[00;36] Cyan
+[00;37] Hvid
+[erstat [00;XX] med [01;XX] for at opnå en farvevariation].
+</pre>
+				<h6>For at ændre farven i bruger ~$ prompten:</h6>
+							<p>Som $ bruger, med din favorit tekst editor:</p>
+<pre>
+$ &lt;editor&gt; ~/.bashrc
+</pre>
+							<p>Gå til linie 39 og afkommenter den (fjern #), altså:</p>
+<pre>
+force_color_prompt=yes
+</pre>
+							<p>Så til linie 53 hvor du finder farvekoden 01;32m, (eksempelvis), skift den kode til den farvekode du vil bruge.</p>
+
+							<p>Som eksempel, for <span class="highlight-5"> cyan </span> farve til bruger ~:$ prompten, [01;36m\], skal du ændre koden [01;XXm\] 3 steder i linien:</p>
+<pre>
+PS1='${debian_chroot:+($debian_chroot)}\[\033[01;36m\]\u@\h\[\033[01;36m\]:\[\033[01;36m\]\w\[\033[00m\]\$ '
+</pre>
+							<p>De nye farver optræder kun i nye terminal sessioner der startes efter du har gemt ændringen.</p>
+
+				<h6>For at ændre farven i din root# prompt:</h6>
+<pre>
+sux
+&lt;editor&gt; /root/.bashrc
+</pre>
+							<p>Gå til linie 39 og afkommenter den (fjern #), altså:</p>
+<pre>
+force_color_prompt=yes
+</pre>
+							<p>Så til linie 53 hvor du finder farvekoden 01;32m, (eksempelvis), skift den kode til den farvekode du vil bruge.</p>
+
+							<p>Som eksempel, for <span class="highlight-2"> rød </span> farve til bruger ~:$ prompten, [01;31m\], skal du ændre koden [01;XXm\] 3 steder i linien:</p>
+<pre>
+PS1='${debian_chroot:+($debian_chroot)}\[\033[01;31m\]\u@\h\[\033[01;31m\]:\[\033[01;31m\]\w\[\033[00m\]\$ '
+</pre>
+							<p>De nye farver optræder kun i nye terminal sessioner der startes efter du har gemt ændringen.</p>
+
+					    <h6>Terminal baggbrunds farveer</h6>
+							<p>For at ændre farven i baggrunden samt fonten der anvendes i terminalen kan du se under menu mulighederne i terminalen. </p>
+
+
+		<div class="screenshot"><img src="../lib/images-common/images-terminal/terminal-colour-0.1.png" title="Terminal farver" alt="Terminal farver" /></div>
+
+							<p>Der er et hav af muligheder for at ændre farve her, det vigtigste er dog at forsøge at holde det simpelt og overskueligt.</p>
+	</div>
+	<div class="divider" id="sux">
+	<h2>Om sux</h2>
+							<p>Mange kommandoer skal afvikles med root privilegier. For at opnå root privilegier taster du:</p>
+<pre>
+sux
+</pre>
+
+							<p>Den almindelige kommando til at opnå root rettigheder er 'su', men hvis du istedet bruger <span class="highlight-3">sux</span> tillader det dig at afvikle GUI / X11 applikationer fra kommandolinien og gør root i stand til at starte grafiske programmer. <span class="highlight-3">sux</span> er en wrapper omkring standard kommandoen 'su', som overfører dine X rettigheder til målbrugeren.  (See also <a href="#sudo"> sudo</a>).</p>
+
+							<p>Eksempler på afvikling af en X11 applikation via sux: Anvendelse af en teksteditor som kate eller kwrite til at redigere en fil der ejes af root; partitionering med gparted; eller en Xapp fil manager som dolphin or thunar. <!--Du kan også ændre filer ejet af root ved at højre-klikke på dem og vælge Handlinger>Edit as root og så indtaste dit root password. Denne kommando virker ved at kalde kdesu i baggrunden.--></p>
+
+							<p>Nogle KDE programmer kræver <span class="highlight-3">dbus-launch</span> foran programnavnet:</p>
+<pre>
+dbus-launch &lt;Application&gt;
+</pre>
+				<h6>KDE tastatur muligheder</h6>
+							<p>For at starte krunner i KDE:</p>
+<pre>
+Alt+F2
+</pre>
+							<p>eller højreklik på skrivebordet og vælg:</p>
+<pre>
+Kør kommando
+</pre>
+							 <p>skriv:</p>
+
+<pre>
+kdesu &lt;Application&gt;
+</pre>
+
+				<h6>Xfce tastatur muligheder</h6>
+							<p>For at starte Kør kommandoen i Xfce:</p>
+<pre>
+Alt+F2
+</pre>
+							<p>eller højreklik på skrivebordet og vælg:</p>
+<pre>
+Kør kommando
+</pre>
+							 <p>skriv:</p>
+
+<pre>
+gksu &lt;Application&gt;
+</pre>
+
+					  <h6>Muligheder i andet skrivebordsmiljø (Window Manager)</h6>
+							<p>En anden tastatur mulighed der er gennemgående i alle større skrivebordsmiljøer er:</p>
+<pre>
+Alt+F2
+</pre>
+							<p>skriv så:</p>
+<pre>
+su-to-root -X -c &lt;Application&gt;
+</pre>
+							<p><span class="highlight-3">Alle de ovenstående muligheder kan også skrives i en terminal.</span></p>
+	</div>
+	<div class="divider" id="sudo">
+					<h2>sudo er ikke understøttet</h2>
+							<p>sudo er ikke aktiveret som standard på en harddisk instalation. sudo er tilgængeligt på live-ISO, eftersom der ikke er et root kodeord. Årsagen hertil er, at hvis nu en ondsindet hacker får fat i brugerens kodeord, så opnår de ikke også øjeblikkeligt fuld super-bruger privilegier og bliver i stand til at lave potentielt skadelige ændringer i dit system.</p>
+
+							<p>Et andet problem med sudo er at det fører til at et root program bliver kørt med en bruger konfiguration, hvilket kan ændre eller tilsidesætte tilladelser. I nogle tilfælde kan dette efterfølgende gøre programmer ubrugelige for brugeren. Brug <span class="highlight-3"><a href="#sux">sux</a>, kdesu, gksu eller su-to-root -X -c</span> som anbefalet!</p>
+
+					  <h2>Being in root</h2>
+							<p class="highlight-2">ADVARSEL: Når du er logget ind som root er der ikke noget der stopper dig i at udføre potentielt skadelige ændringer, som at slette essentielle system-filer. Su skal derfor være helt sikker på at du ved hvad det er du gør, for det er fuldt muligt at rette ubodelig skade på systemet når du er root.</p>
+
+							<p class="highlight-2">Du bør under ingen omstændigheder starte applikationer som root for at udføre trivielle ting som at sende mails, surfe på nettet, eller skrive dokumenter!</p>
+
+	</div>
+	<div class="divider" id="cli-help">
+		<h2>Kommandolinie Hjælp</h2>
+
+							<p>De fleste programmer har deres egen manual, de kaldes 'man page' eller 'manual page', og dem kan du læse fra kommandolinien. Syntaksen for at kalde en manpage er:</p>
+
+<pre>
+$ man "command"
+</pre>
+							<p>eller</p>
+<pre>
+$ man -k &lt;keyword&gt;
+</pre>
+
+							<p>Dette vil kalde manualen for "command" frem. Du navigerer dem med op- og ned-piletasterne. Prøv for eksempel at skrive:</p>
+
+<pre>
+$ man apt-get
+</pre>
+							<p>For at afslutte manpage taster du <span class="highlight-3">q</span></p>
+
+							<p>Et andet nyttigt værktøj er "apropos" kommandoen. Apropos tillader dig at søge i manpages efter en kommando som du ikke kan huske hele syntaksen for. Du kan for eksempel prøve:</p>
+
+<pre>
+$ apropos apt-
+</pre>
+
+							<p>Dette vil liste alle de kommandoer der findes for pakkemanageren 'apt'. 'apropos' værktøjet er meget effektivt, men at beskrive det her i detaljer går for vidt. For at finde ud af mere kan du jo læse apropos manpage.</p>
+
+
+	</div>
+
+	<div class="divider" id="term-cmds">
+		<h2>Linux Terminal kommandoliste (uddrag)</h2>
+
+							<p>Dette er en udemærket begyndelse til BASH fra <a href="http://linuxcommand.org/">linuxcommand.org</a></p>
+
+							<p class="highlight-3">En meget omfattende liste over 687 kommandoer i alfabetisk orden fra <a href="http://www.linuxdevcenter.com/linux/cmd/#a">Linux in a Nutshell, 5th Edition : O'Reilly Publications</a> kan findes her og er et 'must bookmark'</p>
+
+							<p>Der er adskillige tutorials på internettet. Denne her er god for begyndere: <a href="http://linux.org.mt/article/terminal">A Beginner's Bash</a></p>
+
+							<p>Eller brug din favorit søgemaskine til at finde andre.</p>
+	</div>
+	<div class="divider" id="shell-scripts">
+		<h2>Et script og hvordan de anvendes</h2>
+							<p>Et skal script er en nyttig måde at gruppere flere kommandoer i en enkelt fil. Ved at skrive filnavnet på scriptet eksekveres hver kommando i rækkefølge. aptosid kommer med flere meget nyttige scripts, beregnet til at gøre livet lidt lettere for brugerne.</p>
+
+							<p>Hvis skal-scriptet er i din nuværende arbejds-mappe</p>
+<pre>
+./navn_på_skal-script
+</pre>
+
+							<p class="highlight-3">Nogle scripts kræver root rettigheder (sux) i en teminal for at køre, andre gør ikke, -det afhænger alene af formålet med scriptet.</p>
+
+			<h5>Script Installation og eksekverings-procedure</h5>
+   							<p>Anvend wget til at downloade script filen, og placer den der hvor det er blevet anbefalet at placere den <span class="highlight-3">(for eksempal kan dette være /usr/local/bin) </span>, du kan bruge din mus til at kopiere og indsætte filnavne direkte ind i dit konsol vindue, efter du er logget ind som root med <span class="highlight-3">sux</span></p>
+
+					<h6>Eksempel på anvendelse af wget der kræver <span class="highlight-3">root rettigheder (sux) </span></h6>
+<pre>
+sux
+cd /usr/local/bin
+wget script-navn
+</pre>
+							<p>Du skal så gøre filen eksekverbar</p>
+<pre>
+chmod +x  script-name
+</pre>
+							<p>Du kan også anvende en browser til at downloade en script fil og så placere den der hvor det anbefales at placere den. Men du skal stadig gøre filen eksekverbar.</p>
+
+					<h6>Eksempe l på anvendelse af wget som bruger</h6>
+							<p>For at placere en fil i <span class="highlight-3">$HOME som bruger '$'</span>:</p>
+<pre>
+$ wget http://bluewater.aptosid.com/shell-script-test/test-script.sh
+</pre>
+
+<pre>
+$ chmod +x test-script.sh
+</pre>
+							<p>For at eksekvere/ køre dette script, åbner du en terminal/ konsol og skriver:</p>
+
+<pre>
+$ ./test-script.sh
+</pre>
+							<p>Du burde så se dette:</p>
+<pre>
+Congratulations user
+You successfully downloaded and executed a bash script!
+Welcome to aptosid-manuals http://manual.aptosid.com
+</pre>
+
+
+	</div>
+			<div id="rev">Content last updated 21/01/2011 2229 UTC</div>
+
+</div>
+</body>
+</html>

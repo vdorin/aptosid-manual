@@ -1,0 +1,790 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="uk" lang="uk">
+<head>
+	<title>aptosid Manuals - GPT gdisk</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body id="part">
+<!-- Last translation revision polix 26/12/2011 1500 UTC -->
+<!--htdig_noindex--><div id="menu"> <!-- menu starts here - ua language maintained by polix -->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="Головна сторінка aptosid.com, форуму і вікі" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-uk.htm#search-on"><img src="../lib/logos/manual-search-22x22.png" title="Пошук в керівництві" alt="Search" /> Bаріанти пошуку</a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Bибір мови - Choose another language CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="Переключення мови CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-uk.htm">Керівництво aptosid</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-uk.htm#welcome-gen">Ласкаво просимо! &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-uk.htm#cred-team">Подяки</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-uk.htm#how-to">Про використання &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-uk.htm#how-to">Про використання</a></li>
+					  <li><a href="welcome-uk.htm#table-contents">3міст</a></li>
+					</ul>
+					</li>
+		<li><a href="help-uk.htm#help-gen">Oтримання допомоги&#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-uk.htm#help-gen">Де отримати допомогу</a></li>
+					  <li><a href="help-uk.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-uk.htm#welcome-quick">Короткий посібник aptosid</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-uk.htm">Зміст ISO-образу, випуски, список дзеркал і запис</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-uk.htm#cd-content">Зміст ISO-образу і системні вимоги &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-uk.htm#rolling">Зауваження до релізу</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-uk.htm#download-aptosid">Список дзеркал, скачування ISO-образу і запис &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-uk.htm#md5">Перевірка ISO-образу з md5</a></li>
+					  <li><a href="cd-dl-burning-uk.htm#burn-nero">Запис ISO-образу в Windows</a></li>
+					  <li><a href="cd-dl-burning-uk.htm#burn-linux">Запис ISO-образу в Linux</a></li>
+					  <li><a href="cd-no-gui-burn-uk.htm#burning-no-gui">Скрипт burniso</a></li>
+					  <li><a href="cd-no-gui-burn-uk.htm#burn-no-gui-gen">Запис ISO-образу в консолі</a></li>
+					  <li><a href="cd-dl-burning-uk.htm#download-aptosid">Cписок дзеркал</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-uk.htm">Режим ISO-образу</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-uk.htm#rootpw">Пароль root на ISO-образі</a></li>
+				<li><a href="live-mode-uk.htm#live-cd-installsoft">Установка ПО на ISO-образі</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-uk.htm">Термінал і оболонка</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-uk.htm#term-kon">Термінал і оболонка &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-uk.htm#term-kon">Термінал і оболонка</a></li>
+					  <li><a href="term-konsole-uk.htm#colours"> Кольорова підказка в терміналі</a></li>
+					  <li><a href="term-konsole-uk.htm#cli-help">Допомога в терміналі</a></li>
+					  <li><a href="help-uk.htm#init3-tools">Корисні інструменти в текстовому режимі (tty) - init 3</a></li>
+					  <li><a href="term-konsole-uk.htm#term-cmds">Команди в терміналі</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-uk.htm#sux">Команда: sux/sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-uk.htm">Чит-коди</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-uk.htm#cheatcodes">Особливі чит-коди для ISO-образу aptosid</a></li>
+				<li><a href="cheatcodes-uk.htm#cheatcodes-linux">Загальні чит-коди для параметрів ядра</a></li>
+				<li><a href="cheatcodes-vga-uk.htm#vga">Загальні коди для відеокарти</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-uk.htm">Розділ жорсткого диска -по старому,GPT та LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-uk.htm#hd-ntfs3g">Запис на розділ NTFS з ntfs-3g</a></li>
+			<li><a href="part-lvm-uk.htm#part-lvm">Розмітка з використанням LVM - Logical Volume Manager</a></li>
+			<li><a href="part-gparted-uk.htm#partition">Розмітка диска з інтерфейсом &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-uk.htm#partition">Розмітка диска з gparted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-uk.htm#ntfs">Розділи NTFS з gparted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-uk.htm#partition">Приклади розмітки диска в консолі &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-uk.htm#partition">Розмітка диска з cfdisk</a></li>
+					    <li><a href="part-cfdisk-uk.htm#formating">Форматування розділів з cfdisk</a></li>
+					    <li><a href="part-gdisk-uk.htm#gdisk-6">Форматування розділів з gdisk</a></li>
+					    <li><a href="part-gdisk-uk.htm#gdisk-1">GPT-розділів за допомогою Gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-uk.htm#part-example">Розмітка диска - огляд &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-uk.htm#part-example">Приклади розмітки диска</a></li>
+					  <li><a href="part-uuid-uk.htm#uuid">UUID, відновлення fstab і створення нових точок монтування</a></li>
+					  <li><a href="part-cfdisk-uk.htm#disknames">Імена жорстких дисків</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-uk.htm">Установка aptosid на HD, USB, VM і шифровані розділи</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-uk.htm#Inst-prep">Підготовка установки &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-uk.htm#Inst-prep">Підготовка установки</a></li>
+					  <li><a href="hd-install-uk.htm#Installation">Інсталяція на HD</a></li>
+					  <li><a href="hd-install-uk.htm#first-hd-boot">Перше завантаження</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-uk.htm#fromiso">Завантаження 'fromiso' &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-uk.htm#fromiso">Завантаження "fromiso '- огляд </a></li>
+					  <li><a href="hd-install-opts-uk.htm#guab2-fromiso">Завантаження "fromiso ' з guab 2</a></li>
+					  <li><a href="hd-install-opts-uk.htm#fromiso-persist">Cпособи 'fromiso' i 'persist'</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-uk.htm#usb-hd">Iнсталляцiя на USB &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-uk.htm#usb-hd">Iнсталляцiя на USB-HD - спосiб aptosid -  aptosid-на-флешкi</a></li>
+					  <li><a href="hd-ins-opts-oos-uk.htm#raw-usb">Запис aptosid на USB / SSD за допомогою іншого Linux, MS Windows або Mac OS</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-uk.htm#install-crypt">Установка на шифровані розділи - cryptroot</a></li>
+		  <li><a href="nbdboot-uk.htm#nbd1">Завантаження aptosid по мережі</a></li>
+		  <li><a href="hd-install-vmopts-uk.htm#vmopts">Опції інсталяцій на VM (Virtual Machine)</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-uk.htm">Устаткування в Xorg і різні драйвери</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-uk.htm#mon-res">Дозвіл екрану та монітори  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-uk.htm#mon-res">Дозвіл екрану та монітори</a></li>
+					  <li><a href="hw-dev-mon-uk.htm#xrandr">Подвійні екрани і xrandr</a></li>
+					  <li><a href="hw-dev-mon-uk.htm#mon-binary">Подвійні екрани (використовуючи виконавчі файли)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-uk.htm#foss-xorg">GPU драйвери &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-uk.htm#ati-3d">AMD / ATI 3D драйвери</a></li>
+					  <li><a href="gpu-uk.htm#intel">Intel 2D i 3D драйвери</a></li>
+					  <li><a href="gpu-uk.htm#nvidia">Nvidia 3D драйвери</a></li>
+					  <li><a href="gpu-uk.htm#foss-xorg">Вільні Xorg-драйвери</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-uk.htm#fw-detect">Визначення невільного мікропрограмного забезпечення - non-free </a></li>
+			  <li><a href="nf-firm-uk.htm#non-free-firmware">Додавання non-free в список джерел</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-uk.htm">Bіконні менеджери</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-uk.htm">Віконні менеджери KDE та Xfce &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-uk.htm#xfce-notes">Корисні інструменти для Xfce</a></li>
+					    <li><a href="wm-dm-uk.htm#install-add">Корисні інструменти для KDE</a></li>
+					    <li><a href="wm-dm-uk.htm#desk-freeze">Робочий стіл зависає</a></li>
+					    <li><a href="wm-dm-uk.htm#kde-login">Проблеми входу в KDE</a></li>
+					    <li><a href="wm-dm-uk.htm#ch-th">Управління темами</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-uk.htm#dm">Установква додаткових дисплейних менеджерів</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-uk.htm">Інтернет, Wifi і локальна мережа</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-uk.htm">Мета-пакет LAMP &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-uk.htm#serv-apache">Мета-пакет LAMP</a></li>
+					    <li><a href="lamp-apache-uk.htm#serv-ftp">Kлієнти FTP</a></li>
+					    <li><a href="lamp-apache-uk.htm#serv-sec">3ахищені протоколи</a></li>
+					    <li><a href="lamp-apache-uk.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-uk.htm#serv-mysql">Налаштування MySQL</a></li>
+					    <li><a href="lamp-ppp-uk.htm#serv-php">PHP в apache</a></li>
+					    <li><a href="ntp-server-uk.htm#ntp-server">Установка сервера часу</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-uk.htm#tor">Брандмауери та веб-проксі &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-uk.htm#tor">Маршрутизатор tor</a></li>
+					    <li><a href="tor-privoxy-uk.htm#privoxy">Веб-проксi privoxy</a></li>
+					    <li><a href="inet-ceni-uk.htm#firewalls">Брандмауэри</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-uk.htm#ssh-x">Samba и ssh &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-uk.htm#setup">Сервер samba</a></li>
+						  <li><a href="samba-uk.htm#configure">Інтеграції samba в мережу Windows</a></li>
+						  <li><a href="ssh-uk.htm#ssh-fs">Віддалене монтування з ssh</a></li>
+						  <li><a href="ssh-uk.htm#ssh-x">Програми X-Windows з ssh</a></li>
+						  <li><a href="ssh-uk.htm#ssh-f">Інтерфейс ssh і Konqueror</a></li>
+						  <li><a href="ssh-uk.htm#ssh-w">ssh X-forwarding з Windows-PC</a></li>
+						  <li><a href="ssh-uk.htm#ssh">Безпека з ssh</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-uk.htm#netcardconfig">Связи с WiFi &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-uk.htm#netcardconfig">Налаштування мережевих карт з ceni</a></li>
+						    <li><a href="inet-wpagui-uk.htm#wpa-roaming-gui">Графіческoe ппіложеніе wpa_gui для WiFi</a></li>
+						    <li><a href="inet-setup-v.htm#net-set1">Роумiнг с WiFi</a></li>
+						    <li><a href="inet-wpa-uk.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-uk.htm#hotswitch">Переключення мережі між WiFi та провідного зв'язком</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-uk.htm#netcardconfig">дротяний зв'язок&#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-uk.htm#dial-mod">56кілобітовие модеми</a></li>
+						    <li><a href="inet-ceni-uk.htm#netcardconfig">Налаштування мережевих карт з ceni</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-uk.htm#fw-detect">Визначення невільного мікропрограмного забезпечення - non-free </a></li>
+		<li><a href="nf-firm-uk.htm#non-free-firmware">Додавання non-free в список джерел</a></li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-uk.htm">Управління пакетами і оновлення системи з dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-uk.htm#apt-cook">APT и репозитории &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-uk.htm#apt-cook">APT і репозиторії</a></li>
+					    <li><a href="sys-admin-apt-uk.htm#apt-install">Установка нового пакета</a></li>
+					    <li><a href="sys-admin-apt-uk.htm#apt-delete">Bидалення пакета</a></li>
+					    <li><a href="sys-admin-apt-uk.htm#apt-downgrade">Зниження версії з hold</a></li>
+					    <li><a href="sys-admin-apt-uk.htm#apt-cache">Пошук пакетної иформации з apt-cache</a></li>
+					    <li><a href="sys-admin-apt-uk.htm#gui-pacsea">Графічна пошукова програма</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-uk.htm#kern-upgrade">Оновлення ядра&#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-uk.htm#kern-remove">Bидалення ядра</a></li>
+					    <li><a href="sys-admin-kern-upg-uk.htm#kern-upgrade">Оновлення ядра</a></li>
+					    <li><a href="sys-admin-kern-upg-uk.htm#dmakms">Динамічна інсталяція модулів ядра з dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-uk.htm#apt-upgrade">Оновлення системи з dist-upgrade - Короткий огляд &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-uk.htm#live-cd-upgrade">Оновлення з ISO-образу</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-uk.htm#approx">Оновлення декількох комп'ютерів в локальній мережі</a></li>
+					    <li><a href="sys-admin-apt-uk.htm#apt-upgrade">Короткий огляд Оновлення системи з dist-upgrade</a></li>
+					    <li><a href="sys-admin-apt-uk.htm#du-st">Кроки оновлення системи від dist-upgrade</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-uk.htm">Cистемне адміністрування</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-uk.htm#bois-prep">Оновлення BIOS з FreeDOS</a></li>
+		<li><a href="vir-rkits-uk.htm#virus-rkits">Cканер безпеки</a></li>
+		<li><a href="hd-install-uk.htm#adduser">Новий користувач та паролі &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-uk.htm#adduser">Додавання нового користувача</a></li>
+					    <li><a href="sys-admin-gen-uk.htm#pw-lost">Відновлення root-пароля</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-uk.htm#start-services">Служби та режими завантаження &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-uk.htm#start-services">Вибір служб</a></li>
+					    <li><a href="sys-admin-gen-uk.htm#pkill">3авершення служби або процесу</a></li>
+					    <li><a href="sys-admin-gen-uk.htm#init">Режими завантаження init в aptosid</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-uk.htm#rsync">Pезервування системи &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-uk.htm#rdiff">Резервування за rdiff</a></li>
+					    <li><a href="sys-admin-rsync-uk.htm#rsync">Резервування за rsync</a></li>
+					    <li><a href="home-uk.htm#home-bu">Переміщення / home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-uk.htm#fonts">Cups, шрифти та звук &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-uk.htm#fonts">Шрифти</a></li>
+					     <li><a href="sys-admin-gen-uk.htm#cups">Cервер cups</a></li>
+					     <li><a href="sys-admin-gen-uk.htm#sound">Звукові мікшери</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-uk.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-uk.htm#chroot">Grub2 - Відновлення grub з chroot</a></li>
+					    <li><a href="sys-admin-grub2-uk.htm#mbr-over-grub2">Grub2 -Видалення з MBR</a></li>
+					    <li><a href="sys-admin-grub2-uk.htm#multi-os">Grub2 - Подвійна і мультизагрузки</a></li>
+					    <li><a href="sys-admin-grub2-uk.htm#grub1-grub2">Grub2 - Оновлення за grub1</a></li>
+					    <li><a href="sys-admin-grub2-uk.htm#grub2">Grub2 - Kороткий огляд</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Sponsored by webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid розміщений на сервері webtropia.com" alt = "aptosid розміщений на сервері webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+	<div class="divider" id="gdisk-1">
+		<h2 id="top-header">Огляд на розділення жорткого диску зі GPT gdisk</h2>
+							<p>GPT Gdisk це є глобальний та унікальний ідентифікатор (GUID) таблиці розділів (GPT) який являє собою інструментом для поділу жорстких дисків будь-якого розміру <span class="highlight-3">Він необхідний для дисків розмірів більше ніж 2 ТБ </span>. За замовчуванням  Gdisk буде переконаним, що Ваші розділи чітко прив'язані до SSD(або жорстких дисків, які насправді не мають секторів розміром 512 байт).</p> 
+
+							<p>Bажливою перевагою є те, що  GPT позбавляє Вас від необхідності покладатися на первинних, розширених або логічних розділів які притаманні MBR для розмітки. GPT може підтримувати практично необмежену кількість розділів і обмежена лише малою кількістю місця, призначеного для запису в розділ диска GPT. Зауважимо однак, що інструмент <span class="highlight-3">gdisk</span>  ділить за замовчуванням максимально 128 розділів.</p>
+
+							<p>Однак використовуючи GPT на маленьких USB-флешках /SSD-картах (наприклад USB-флешка 8 ГБ) може мати і зворотний ефект, якщо Вам потрібно передати дані з одного комп'ютера на інший,або з однієї операційної системи на іншу.</p>
+
+							<!--<p><span class="highlight-2">NOTE : USB booting is not supported with GPT.</span></p>-->
+
+				 <h3  class="highlight-2">Важливі примітки</h3>
+
+							<p><span class="highlight-3">Терміни UEFI і EFI взаємозамінні і означають те ж саме поняття.</span></p>
+
+						<h5>GPT диски даних</h5>
+							<p><span class="highlight-3">Деякі операційони систем не підтримують GPT диски даних, будь ласка зверніться до відповідної документації по операційній системі.</span></p>
+
+							<p>GPT диски даних застосовні для 32 і 64 бітних машин під Linux.</p>
+
+						  <h5>Завантаження GPT-дисків</h5>
+
+							<p>Подвійні і потрійні завантаження GPT-дисків з Linux, BSD і Apple, підтримуються за допомогою <span class="highlight-3" >EFI </span> в режимі 64-біт.</p>
+
+							<p>Подвійне завантаження GPT-дисків як з Linux і з MS Windows можлива за умовою, що ваша операційна система MS Windows може завантажувати GPT диски <span class="highlight-3"> UEFI </span> в режимі 64-біт.</p>
+
+						  <h5>Графічни програми для розділу жорсткого диску зі GPT</h5>
+							<p>Крім Терміналу на якому заснований Gdisk, їснують також програми зі графічною оболонкою  як наприклад "GParted" і "PartitionManager" які підтримують GPT диски. Зверніть увагу що Gdisk повинний бути Вашим кращим інструментом для запобігання ненавмисний аномалій GUI. Проте Gparted разом з KDE-PartitionManager (серед інших), мають великy перевагу дати Вам візуальну інформацію що ви діяли в Gdisk.</p>
+
+							<p  class="highlight-3">Обов'язково прочитайте перед застосуванням Gdisk:</p>
+						<ul>
+<li>
+<pre>
+man gdisk
+</pre>
+</li>
+							<li><a href="http://www.rodsbooks.com/gdisk/"> Підручник по GPT fdisk від  Roderick W. Smith</a></li>
+
+							<li><a href="http://en.wikipedia.org/wiki/GUID_Partition_Table">en.wikipedia.org/wiki/GUID_Partition_Table</a></li>
+						  </ul>
+	</div>
+	<div class="divider" id="gdisk-2">
+		<h2>Розділ Вашого жорсткого диску за допомогою gdisk для системи Linux</h2>
+						<h6>Щоб зрозуміти ключови команди такі як Gdisk <span class="highlight-2"> m </span> Вам треба повернутися в головне меню, <span class="highlight-2"> d </span> ,<span class="highlight-2"> n </span>, <span class="highlight-2"> p </span> та <span class="highlight-2"> t </span>, серед іншого буде в основному, вони будуть основними командами по Вашим вимогам розміток з інструментом Gdisk.Bарто вивчити Gdisk-команди на окремему жорсткому диску.</h6>
+
+											 
+					<h5><span class="highlight-2"> ВАЖЛИВА ПРИМІТКА про команду n:</span></h5> 
+						<!--<h6> After creating the first partition you need to press  <span class="highlight-3"> &lt; Enter &gt; 2 times </span> each time you use <span class="highlight-2"> n </span>  to bring up the last sector to set the size of the subsequent partitions.</h6>-->
+
+							<p>Якщо Ви хочете використовувати команду <span class="highlight-2"> n </span>, нажміть на клавішу  &lt;Enter&gt; щоб дати розділу слідучий свобідний номер а потім Вам потрібно нажати клавішу &lt;Enter&gt; знову, щоб прийняти сектора завантаження за замовчуванням для наступних розділів перед установкою розміру, що потрібно для останнього сектора.Наприклад:</p>
+
+<pre>
+Command (? for help):  n  
+Partition number (2-128, default 2):  2 
+First sector (34-15728606, default = <span class="highlight-3">411648</span>) or {+-}size{KMGTP}: 
+Last sector (<span class="highlight-3">411648</span>-15728606, default = 15728606) or {+-}size{KMGTP}: +6144M
+</pre>
+
+		  <h3>Приклад розділу GPT диска</h3>
+							<p><i> Ця шкала відповідна до Ваших вимог</i>:</p>
+						   <ol>
+							<li>Створення розділу завантаження, <span class="highlight-1"> (припускаючи, що диск не є диском для даних і він повинен бути тількі завантажувальним диском) </span></li>
+							<li>Створення розділу підкачки, <span class="highlight-1"> (припускаючи, що диск не є диском для даних і він повинен бути тількі завантажувальним диском) </span></li>
+							<li>Створення розділів Linux </li>
+							<li>Створення інші розділів даних </li>	   
+						   </ol>
+
+							<p><span class="highlight-2">ПРИМІТКА: Наступний приклад використовує USB-флешку для демонстрації необхідних кроків  і таким чином не є вичерпним.</span></p>
+
+					<h3>Кроки</h3>
+							<p>Якщо Ви не впевнені в назві диска, використовуйте fdisk для ідентифікації імені диска (root привілеї потрібен для всіх розділів та форматування команд):</p>
+<pre>
+fdisk -l
+</pre>
+							<p>fdisk дасть Вам необхідні шляхи і можливо буде включати в собі інші імена розділів усередині диска, однак Ви повинні дивитися на реальний шлях диску, незалежно від розділів, які можуть існувати на диску. Наприклад, припустимо, що це є розділ <span class="highlight-3"> sdb </span> і почне з Gdisk шлях до диска:</p>
+<pre >
+gdisk /dev/sdb
+</pre>
+							<p><span class="highlight-3">Ви отримаєте попередження, якщо жорсткий диск не новий або він вже використовує GPT:</span></p>
+<pre>
+GPT fdisk (gdisk) version 0.7.2
+Partition table scan:
+  MBR: MBR only
+  BSD: not present
+  APM: not present
+  GPT: not present
+***************************************************************
+Found invalid GPT and valid MBR; converting MBR to GPT format.
+THIS OPERATION IS POTENTIALLY DESTRUCTIVE! Exit by typing 'q' if
+you don't want to convert your MBR partitions to GPT format!
+***************************************************************
+Command (? for help):
+</pre>
+							<p>При запуску <span class="highlight-3">gdisk</span> на диску з існуючим MBR розділом і не GPT, програма виводить повідомлення оточене зірочками про перетворення існуючих розділів на GPT. <span class="highlight-3">Це зроблено для того, щоб налякати Вас  якщо Ви запускаєте Gdisk на неправильному диску  або якщо Ви не знаєте що Ви робите. Ви повинні явно реагувати на це попередження. Це навмисне повідомлення, щоб тримати Вас від випадкового пошкодження завантажувальних дисків.</span></p>
+
+							<p>Наберіть знак запитання <span class="highlight-2"> ? </span> і Ви побачите список доступних команд, (<span class="highlight-3">кольорові</span> команди є метою документування):</p>
+<pre>
+Command (? for help): <span class="highlight-2"> ? </span>
+b	back up GPT data to a file
+c	change a partition's name
+d	delete a partition
+i	show detailed information on a partition
+l	list known partition types
+n	add a new partition
+o	create a new empty GUID partition table (GPT)
+p	print the partition table
+q	quit without saving changes
+r	recovery and transformation options (experts only)
+s	sort partitions
+t	change a partition's type code
+v	verify disk
+w	write table to disk and exit
+x	extra functionality (experts only)
+?	print this menu
+</pre>
+							<p>Щоб переконатися, що Ви працюєте правильному  диску наберіть букву <span class="highlight-2"> p </span>.</p>
+<pre>
+Command (? for help): <span class="highlight-2"> p </span>
+Disk /dev/sdb: 16547840 sectors, 7.9 GiB <span class="highlight-2">This example is using an 8GB stck</span>
+Logical sector size: 512 bytes
+Disk identifier (GUID): 0267952D-9B06-4B10-A648-B83684786910
+Partition table holds up to 128 entries
+First usable sector is 34, last usable sector is 16547806
+Partitions will be aligned on 2048-sector boundaries
+Total free space is 16547773 sectors (7.9 GiB)
+Number  Start (sector)    End (sector)  Size       Code  Name
+</pre>
+
+							<p><span class="highlight-3">Code</span> показує код типу розділу і <span class="highlight-3">Name </span> відображається у вільній формі текстового рядка, якого можна змінювати.</p>
+
+				    <h3>Видалення таблиці розділів</h3>
+							<p>Тепер необхідно видалити всю таблицю розділів на диску, щоб мати можливість створити перегородки GPT:</p>
+<pre>
+command (? for help): <span class="highlight-2"> d </span>
+</pre>
+							<!--<p>If there are multiple partitions gdisk will ask you to type a number representing the partitions you wish to delete.</p>-->
+
+
+	</div>
+	<div class="divider" id="gdisk-3">
+			<h2>GPT-EFI завантаження або GPT-завантаження BIOS</h2>
+
+							<p>Якщо для завантаження дисків буде GPT вимогою, є 2 варіанти форматування завантажувального сектора диску GPT.</p>
+
+							<p>Опції:</p>
+						    <ul>
+							<li><span class="highlight-3" > Ваш комп'ютер (UEFI відомо через BIOS і включений, і обраний як завантажувальний сектор).</span></li>
+							<li>Ви хочете використовувати EFI для завантаження диска, який був відформатований зі GPT</li>
+						     </ul>
+							<p><span class="highlight-2"> або </span></p>
+						    <ul>
+							<li>Ваш комп'ютер <span class="highlight-2"> немає </span>  (U)EFI який є включений через BIOS </li>
+							<li>Ви хочете використовувати BIOS для завантаження диска, який був відформатований зі GPT  </li>
+						    </ul>
+
+					<h3>3авантаження зі </h3>
+							<p><span class="highlight-2">BIOS повинна бути здатна для EFI і повинна бути включена, і обрана як завантажувальна система.</span> </p>
+
+							<p>Якщо Ви збираєтеся завантажитись за допомогою EFI, Ви повинні мати відформатовану з FAT-системою розділ EFI (наберіть <span class="highlight-3">EF00 </span>) як перший розділ. Цей розділ буде містити Ваш завантажувач. При установці він буде ігнорувати будь-які "where to boot from" вибори в GUI-інсталяторі  і aptosid завантажувач буде встановлений на системному розділу EFI під <span class="highlight-3">/efi/aptosid </span>. Розділ EFI-системи також буде змонтований в <span class="highlight-3">/boot/efi</span> до тих пір, як Ви залишите обраний "mount other partitions" варіант, Вам непотрібно вказувати інсталяторю щоб він монтував потім цей розділ.</p>
+
+							<!--<p><span class="highlight-2">NOTE: USB booting is not supported with GPT.</span></p>-->
+
+					    <h4>Створення розділу завантажувача EFI</h4>
+							  <p>Наберіть <span class="highlight-2"> n </span> щоб додати новий розділ і виберіть <span class="highlight-3"> +200M </span> щоб дати завантажувачу розмір.</p>
+<pre>
+Command (? for help): <span class="highlight-2"> n </span>
+Partition number (1-128, default 1): <span class="highlight-2"> 1 </span>
+</pre>
+ 
+<pre>
+First sector (34-16547806, default = 34) or {+-}size{KMGTP}: 
+Information: Moved requested sector from 34 to 2048 in
+order to align on 2048-sector boundaries.
+Use 'l' on the experts' menu to adjust alignment
+Last sector (2048-16547806, default = 16547806) or {+-}size{KMGTP}: <span class="highlight-2"> +200M </span>
+Current type is 'Linux filesystem'
+</pre>
+							  <p>Наберіть <span class="highlight-2"> L </span> для списка кодів:</p>
+<pre>
+Hex code or GUID (L to show codes, Enter = 8300): <span class="highlight-2"> L </span>
+0700 Microsoft basic data  0c01 Microsoft reserved    2700 Windows RE          
+4200 Windows LDM data      4201 Windows LDM metadata  7501 IBM GPFS            
+7f00 ChromeOS kernel       7f01 ChromeOS root         7f02 ChromeOS reserved   
+8200 Linux swap            8300 Linux filesystem      8301 Linux reserved      
+8e00 Linux LVM             a500 FreeBSD disklabel     a501 FreeBSD boot        
+a502 FreeBSD swap          a503 FreeBSD UFS           a504 FreeBSD ZFS         
+a505 FreeBSD Vinum/RAID    a800 Apple UFS             a901 NetBSD swap         
+a902 NetBSD FFS            a903 NetBSD LFS            a904 NetBSD concatenated 
+a905 NetBSD encrypted      a906 NetBSD RAID           ab00 Apple boot          
+af00 Apple HFS/HFS+        af01 Apple RAID            af02 Apple RAID offline  
+af03 Apple label           af04 AppleTV recovery      be00 Solaris boot        
+bf00 Solaris root          bf01 Solaris /usr &amp; Mac Z  bf02 Solaris swap        
+bf03 Solaris backup        bf04 Solaris /var          bf05 Solaris /home       
+bf06 Solaris alternate se  bf07 Solaris Reserved 1    bf08 Solaris Reserved 2  
+bf09 Solaris Reserved 3    bf0a Solaris Reserved 4    bf0b Solaris Reserved 5  
+c001 HP-UX data            c002 HP-UX service         <span class="highlight-2">ef00 EFI System</span>          
+ef01 MBR partition scheme  ef02 BIOS boot partition   fd00 Linux RAID
+</pre>
+							<p> Нажміть Enter <span class="highlight-3">ef00</span> щоб створити завантажувальний розділ UEFI:</p>
+<pre>
+Hex code or GUID (L to show codes, Enter = 8300): <span class="highlight-2">ef00</span>
+Changed system type of partition to 'EFI System'
+</pre>
+
+				    <h3>Завантаження через BIOS розділ</h3>
+					      <h4>Створення розділу завантаження BIOS</h4>
+
+							<p>Якщо Ваша система не підтримує UEFI, Ви можете зробити завантажувальний розділ BIOS. Він замінює сектор диска на розділи DOS диска, який знаходиться між таблицею розділів і першим розділом, де безпосередньо записаний grub.</p>
+
+							<p>Наберіть<span class="highlight-2"> n </span> щоб додати новий розділ і виберіть <span class="highlight-3"> +200M </span> щоб дати завантажувачу розмір. (Причина +200 M заключається в тому, що в порівнянні зі звичайними мисленням +32 M, завантажувач повинний мати такий самий розмір в EFI розділі, якщо Ви коли-небудь знадобиться змінити диск EFI завантаження).</p>
+
+<pre>
+Command (? for help): <span class="highlight-2"> n </span>
+Partition number (1-128, default 1): <span class="highlight-2"> 1 </span>
+</pre>
+ 
+<pre>
+First sector (34-16547806, default = 34) or {+-}size{KMGTP}: 
+Information: Moved requested sector from 34 to 2048 in
+order to align on 2048-sector boundaries.
+Use 'l' on the experts' menu to adjust alignment
+Last sector (2048-16547806, default = 16547806) or {+-}size{KMGTP}: <span class="highlight-2"> +200M </span>
+Current type is 'Linux filesystem'
+</pre>
+							<p>Нажміть Enter <span class="highlight-3">ef02</span> щоб створити завантажувальний розділ BIOS:</p>
+<pre>
+Hex code or GUID (L to show codes, Enter = 8300): <span class="highlight-2">ef02</span>
+Changed system type of partition to 'BIOS boot'
+</pre>
+
+							<p><span class="highlight-2">Важливе зауваження: розділ завантаження BIOS не повинен бути відформатованим!</span></p>
+
+	</div>
+	<div class="divider" id="gdisk-4">		  
+					<h3>Cтворення розділу swap</h3>
+
+							<p>Розділ підкачки ніколи не слід недооцінювати як неправильним або непотрібним, тому що це особливо важливо для ноутбуків і ноутбуків які повинні мати можливість призупинитись на жорсткий диск, якщо це необхідно. Він повинний мати принаймний рівень Вашої оперативної пам'яті.</p>
+
+							<p>Наберіть<span class="highlight-2"> n </span> щоб додати новий розділ та виберіть <span class="highlight-3">+2G</span>, (або, <span class="highlight-3">+2048M</span>) щоб дати розділу підкачки розмір з набранням коду <span class="highlight-3"> 8200 </span>. Приклад цього може виглядати наступним чином:</p>
+
+<pre>
+Command (? for help): <span class="highlight-2"> n </span> 
+Partition number (2-128, default 2): <span class="highlight-2"> 2 </span>
+First sector (34-15728606, default = 411648) or {+-}size{KMGTP}: 
+Last sector (411648-15728606, default = 15728606) or {+-}size{KMGTP}: <span class="highlight-2">+2048M</span>
+Current type is 'Linux filesystem'
+Hex code or GUID (L to show codes, Enter = 8300): <span class="highlight-2"> 8200 </span>
+Changed type of partition to 'Linux swap
+</pre> 
+
+					  
+		  </div>
+	<div class="divider" id="gdisk-5">		  
+					<h3>Створення розд даних</h3>
+							<p>Наберіть <span class="highlight-2"> n </span> щоб додати новий розділ та виберіть <span class="highlight-3">XXXG</span> щоб дати розділу розмір. В цьому прикладі <span class="highlight-3">+4G</span>:</p>
+<pre>
+Partition number (3-128, default 3): <span class="highlight-2"> 3 </span>
+First sector (34-15728606, default = 4605952) or {+-}size{KMGTP}: 
+Last sector (4605952-15728606, default = 15728606) or {+-}size{KMGTP}: <span class="highlight-2">+4G</span>
+Current type is 'Linux filesystem'
+Hex code or GUID (L to show codes, Enter = 8300): <span class="highlight-2">8300</span>
+Changed type of partition to 'Linux filesystem
+</pre>
+
+							<p><span class="highlight-3">Повторіть цей процес для іншіх розділів відповідно до ваших вимог.</span></p>
+
+							<p>Цей приклад є для USB-флешкi, варто зробити розділ <span class="highlight-3"> Any OS Data </span> за допомогою коду <span class="highlight-3">0700</span>,в іншому випадку дайте йому код для файлової системи Linux (8300):</p>
+<pre>
+Command (? for help): <span class="highlight-2"> n </span>
+Partition number (4-128, default 4): <span class="highlight-2"> 4 </span>
+First sector (34-15728606, default = 12994560) or {+-}size{KMGTP}: 
+Last sector (12994560-15728606, default = 15728606) or {+-}size{KMGTP}:<span class="highlight-2"> +1300M</span>
+Current type is 'Linux filesystem'
+Hex code or GUID (L to show codes, Enter = 8300): <span class="highlight-2"> 0700 </span>
+Changed type of partition to 'Microsoft basic data'
+</pre>
+							<p>Щоб вивчити розділи, які Ви створили:</p>
+<pre>
+Command (? for help): <span class="highlight-2"> p </span>
+Disk /dev/sdx: 15728640 sectors, 7.5 GiB
+Logical sector size: 512 bytes
+Disk identifier (GUID): F409CFD3-6DDC-4551-BBC5-85DC218C1352
+Partition table holds up to 128 entries
+First usable sector is 34, last usable sector is 15728606
+Partitions will be aligned on 2048-sector boundaries
+Total free space is 73661 sectors (36.0 MiB)
+
+Number  Start (sector)    End (sector)  Size       Code  Name
+   1            2048          411647   200.0 MiB   EF00  Boot
+   2          411648         4605951   2.0 GiB     8200  Swap
+   3         4605952        12994559   4.0 GiB     8300  Linux File System
+   4        12994560        15656959   1.3 GiB     0700  Any OS Data
+</pre>
+							<p>Щоб додати опис кожного розділу, використовуйте команду <span class="highlight-2"> c </span> для опису кожного розділу. Наприклад:</p>
+<pre>
+Command (? for help): <span class="highlight-2"> c </span>
+Partition number (1-4): <span class="highlight-2"> 4 </span>
+Enter name: <span class="highlight-3"> Descriptive name of your choosing</span>
+</pre>
+							<p>Код<span class="highlight-2">w</span> пише Ваші зміни на диск у той час як команда <span class="highlight-2">q</span> виходить без збереження змін:</p>
+<pre>
+Command (? for help): <span class="highlight-2"> w </span>
+
+Final checks complete. About to write GPT data. THIS WILL OVERWRITE EXISTING
+PARTITIONS!!
+
+Do you want to proceed? (Y/N): <span class="highlight-2"> y </span>
+OK; writing new GUID partition table (GPT).
+The operation has completed successfully.
+</pre>
+		  </div>
+	<div class="divider" id="gdisk-6">
+			      <h2>Форматування розділів</h2>
+							<p>Gdisk не створює розділи зі  файловами системами, тому Вам необхідно відформатувати кожного з Ваших розділів через термінал. Однак перед форматуванням Вам потрібно знати назви розділів, тількі тоді Ви можете правильно форматувати кожен розділ. Запустіть команду:</p>
+<pre>
+fdisk -l
+</pre>
+							<p>fdisk дасть Вам потрібну інформацію. Якщо пропустити <span class="highlight-3"> sdb </span> :</p>
+<pre>
+gdisk /dev/sdb
+Command (? for help): <span class="highlight-2"> p </span>
+</pre>
+							  
+							<p>Тепер наберіть <span class="highlight-2"> q </span> щоб вийти з gdisk та повернутися до <span class="highlight-2"> # </span> рядка root, через якого можна ввести кожен номер:</p>
+
+							<p>Для розділу UEFI, <span class="highlight-2">(Не форматуйте завантажувальний сектор BIOS )</span>:</p>
+
+<pre>
+ mkfs -t vfat /dev/sdb1
+</pre>
+							<p>Для розділу Linux, <span class="highlight-3">(Синтаксис будь-які інших розділів Linux звичайно змінить для кожного розділу файлову систему Linux, тобто sdb4, sdb5, і т.д.</span>:</p>
+<pre>
+ mkfs -t ext4 /dev/sdb3
+</pre>
+							 <p>Для розділу 'Ніяка ОС', <span class="highlight-3">(Mожливо це тільки потрібно, якщо USB-флешці потрібна сумісность зі іншима платформами)</span>:</p>
+<pre>
+ mkfs -t vfat /dev/sdb4
+</pre>
+
+							<p>Відформатуйте розділ підкачки:</p>
+<pre >
+mkswap /dev/sdb2
+</pre>
+
+							<p>Потім:</p>
+
+<pre >
+swapon /dev/sdb2
+</pre>
+
+							<p>Перевірте чи розділ підкачки це визнав, ввівши в консолі:</p>
+<pre >
+swapon -s
+</pre>
+							<p>Якщо розділ підкачки правильно визнав,введіть</p>
+<pre >
+swapoff -a
+</pre>
+							<p>Ці команди працюють так само, як вони були б на MBR розділах.</p>
+
+							<h5><span class="highlight-2">Абсолютно необхідно перезавантажитись, щоб нові розділи і схема форматування могли бути прочитаними ядром.</span></h5>
+
+							<p>Після перезавантаження, Ви тепер готові для інсталяції або використання GPT диска.</p>
+
+		  </div>
+	<div class="divider" id="gdisk-7">
+			<h2>Розширені команди для Gdisk</h2>
+
+							<p>Перед збереженням змін, Bи можете переконатися, що  немає серьйозних проблем з структурою даних GPT. Ви можете зробити це за допомогою команди <span class="highlight-2">v</span>:</p>
+<pre>
+Command (? for help): <span class="highlight-2"> v </span>
+No problems found. 0 free sectors (0 bytes) available in 0
+segments, the largest of which is 0 sectors (0 bytes) in size
+</pre>
+							<p>У цьому випадку, кожен доступний байт на диску виділяється на розділи, і ніяких проблем не було виявлено.Якщо вільні місця були доступні для створення розділу, Ви побачите, скількі його було. Якщо Gdisk виявив проблеми, такі як дублювання розділів або невідповідність основного і резервного копіювання таблиці розділів, він  повідомить Вам про них. Звичайно Gdisk включає в себе гарантії того, що Ви не можете створити самостійно такі проблеми. Опції v. чеки призначений для того щоб допомогти Вам виявити проблеми, які можуть виникнути в результаті пошкодження даних.</p>
+
+							<p>Якщо проблема була виявлена, Ви можете бути в змозі виправити їх за допомогою різних варіантів <span class="highlight-3"> recovery &amp; transformation menu </span>, яке є другим меню опцій які є доступними, набравши <span class="highlight-2"> r </span>:</p>
+<pre>
+Command (? for help): <span class="highlight-2"> r </span>
+
+recovery/transformation command (? for help): <span class="highlight-2">?</span>
+b	use backup GPT header (rebuilding main)
+c	load backup partition table from disk (rebuilding main)
+d	use main GPT header (rebuilding backup)
+e	load main partition table from disk (rebuilding backup)
+f	load MBR and build fresh GPT from it
+g	convert GPT into MBR and exit
+h	make hybrid MBR
+i	show detailed information on a partition
+l	load partition data from a backup file
+m	return to main menu
+o	print protective MBR data
+p	print the partition table
+q	quit without saving changes
+t	transform BSD disklabel partition
+v	verify disk
+w	write table to disk and exit
+x	extra functionality (experts only)
+?	print this menu
+</pre>
+
+							<p>Трете меню <span class="highlight-3">  menu </span>, можна отримати, ввівши <span class="highlight-2"> x </span> в будь-якому <span class="highlight-3">main menu </span> або <span class="highlight-3">recovery &amp; transformation menu</span>.</p>
+
+<pre>
+recovery/transformation command (? for help): <span class="highlight-2">x</span>
+
+Expert command (? for help): <span class="highlight-2">?</span>
+a       set attributes
+c       change partition GUID
+d       display the sector alignment value
+e       relocate backup data structures to the end of the disk
+g       change disk GUID
+i       show detailed information on a partition
+l       set the sector alignment value
+m       return to main menu
+n       create a new protective MBR
+o       print protective MBR data
+p       print the partition table
+q       quit without saving changes
+r       recovery and transformation options (experts only)
+s       resize partition table
+v       verify disk
+w       write table to disk and exit
+z       zap (destroy) GPT data structures and exit
+?       print this menu
+</pre>
+							<p>Ви можете зробити деякі низькорівневі редагування, такі як зміна розділу або диска ідентифікаторів GUID (<span class="highlight-2"> c </span> та <span class="highlight-2"> g </span>, відповідно). Варіант <span class="highlight-2">z</span> відразу ж руйнує структуру даних GPT який Ви повинні зробити, якщо Ви хочете повторно використовувати диск GPT, використовуючи інші схеми секціонування. Якщо ці структури не стираються, частина розміток може заплутатися при наявності двох перегородок.</p>
+
+							<p>Оба варіанти  <span class="highlight-3">recovery, transformation </span> меню та <span class="highlight-3">experts</span>  меню не повинні використовуватися GPT експертами. Користувачам які не є експертами можливо доведеться використовувати це меню, якщо диск пошкоджений. Перш ніж приймати рішучі дії, Ви повинні використовувати <span class="highlight-2"> b </span> щоб викликати головне меню під опцію створення резервної копії, і зберегти цей файл на флешкі або в іншому місці,але не на диску, який  Ви їх змінили. Таким чином Ви будете мати можливість відновити вихідну конфігурацію, якщо Ви пошкодите розділи.</p>
+
+				    <h6>Джерела: </h6>
+							<p> <a href="http://www.rodsbooks.com/gdisk/"> GPT fdisk керівництво від  Roderick W. Smith</a></p>
+
+							<p> <a href="http://msdn.microsoft.com/en-us/windows/hardware/gg463525"> Windows Hardware Developer Center </a></p>
+</div>
+	<!--<div class="divider" id="gdisk-8">
+			<h2>Dual booting with Linux and another OS - TBA</h2>
+
+						<ul>
+<li>
+<pre>
+man gdisk
+</pre>
+</li>
+							<li><a href="http://www.rodsbooks.com/gdisk/"> GPT fdisk Tutorial by Roderick W. Smith</a></li>
+
+							<li><a href="http://en.wikipedia.org/wiki/GUID_Partition_Table">en.wikipedia.org/wiki/GUID_Partition_Table</a></li>
+						  </ul>
+</div>-->
+			<div id="rev">Сторінка останний раз переглянута  15/08/2011 1155 UTC</div>
+
+</div>
+</body>
+</html>

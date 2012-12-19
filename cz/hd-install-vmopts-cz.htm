@@ -1,0 +1,641 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cs" lang="cs">
+<head>
+	<title>Manuály aptosidu - Možnosti instalace VM</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Poslední revizi překladu provedl pumrel 13.4.2011 2300 CET -->
+<!--htdig_noindex--><div id="menu"> <!-- menu starts here -cz lang maintainer pumrel-->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="Na stránky aptosid.com, forum a wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-cz.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="Prohledávat manuál" alt="Search" />Hledat online - offline</a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Vyberte jiný jazyk - Choose another language CS, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="lang-switch CS, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-cz.htm">Manuál operačního systému aptosid</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-cz.htm#welcome-gen">Manuál operačního systému aptosid &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-cz.htm#cred-team">Autoři</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-cz.htm#how-to">Jak používat tento manuál &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-cz.htm#how-to">Jak používat tento manuál</a></li>
+					  <li><a href="welcome-cz.htm#table-contents">Obsah</a></li>
+					</ul>
+					</li>
+		<li><a href="help-cz.htm#help-gen">Kde hledat pomoc &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-cz.htm#help-gen">Kde a jak hledat pomoc</a></li>
+					  <li><a href="help-cz.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-cz.htm#welcome-quick">První kroky se aptosidem</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-cz.htm">Obsah ISO, Vydání, Zrcadla pro stahování a Vypalování</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-cz.htm#cd-content">Obsah ISO a nároky na systém &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-cz.htm#rolling">Poznámky k vydání</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-cz.htm#download-aptosid">Zrcadla pro stahování a vypálení &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-cz.htm#md5">Kontrolní součet md5</a></li>
+					  <li><a href="cd-dl-burning-cz.htm#burn-nero">Vypálení ve Windows</a></li>
+					  <li><a href="cd-dl-burning-cz.htm#burn-linux">Vypálení v Linuxu</a></li>
+					  <li><a href="cd-no-gui-burn-cz.htm#burning-no-gui">Skript burniso</a></li>
+					  <li><a href="cd-no-gui-burn-cz.htm#burn-no-gui-gen">Vypálení z terminálu</a></li>
+					  <li><a href="cd-dl-burning-cz.htm#download-aptosid">Zrcadla pro stažení aptosidu</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-cz.htm">Live Mód</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-cz.htm#rootpw">Root-heslo v aptosid-Live</a></li>
+				<li><a href="live-mode-cz.htm#live-cd-installsoft">Instalace programů pod aptosid-Live</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-cz.htm">Terminál / Konsole</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-cz.htm#term-kon">Terminál / Konsole &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-cz.htm#term-kon">Terminál / Konsole</a></li>
+					  <li><a href="term-konsole-cz.htm#colours">Barevné řádky terminálu</a></li>
+					  <li><a href="term-konsole-cz.htm#cli-help">Nápověda terminálu</a></li>
+					  <li><a href="help-cz.htm#init3-tools">Užitečné nástroje v textovém módu(tty) - init 3</a></li>
+					  <li><a href="term-konsole-cz.htm#term-cmds">Seznam příkazů v terminálu Linuxu</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-cz.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-cz.htm">Spouštěcí příkazy</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-cz.htm#cheatcodes">Spouštěcí příkazy pod Live-ISO specifické pro aptosid</a></li>
+				<li><a href="cheatcodes-cz.htm#cheatcodes-linux">Spouštěcí příkazy pro Linux</a></li>
+				<li><a href="cheatcodes-vga-cz.htm#vga">VGA kódy</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-cz.htm">Vytváření diskových oddílů - tradičně, s GPT a s LVM</a>
+		<ul class="sub-menu" id="sm6">
+			  <li><a href="part-gparted-cz.htm#hd-ntfs3g">Zapisování na diskový oddíl NTFS pomocí ntfs-3g</a></li>
+			  <li><a href="part-lvm-cz.htm#part-lvm">Vytvoření disk. oddílů pro použití LVM - Logical Volume Manager</a></li>
+			  <li><a href="part-gparted-cz.htm#partition">Vytvoření diskových oddílů v grafickém rozhraní &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-cz.htm#partition">Vytvoření diskových oddílů pomocí GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-cz.htm#ntfs">Změna velikosti diskového oddílu NTFS pomocí GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-cz.htm#partition">Vytvoření diskových oddílů s CLI &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-cz.htm#partition">Vytváření diskových oddílů pomocí cfdisk</a></li>
+					    <li><a href="part-cfdisk-cz.htm#formating">Formátování po vytvoření diskových oddilů pomocí cfdisk</a></li>
+					    <li><a href="part-gdisk-cz.htm#gdisk-6">Formátování po vytvoření diskových oddílů s gdiskem</a></li>
+					    <li><a href="part-gdisk-cz.htm#gdisk-1">Diskové oddíly GPT s gdiskem</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-cz.htm#part-example">Základy vytváření diskových oddílů &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-cz.htm#part-example">Příklady velikostí diskových oddílů</a></li>
+					  <li><a href="part-uuid-cz.htm#uuid">UUID, přestavění fstab a vytváření přípojných bodů</a></li>
+					  <li><a href="part-cfdisk-cz.htm#disknames">Pojmenovávání diskových oddílů a ostatní</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-cz.htm">Možnosti instalace - HD, USB, VM and Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-cz.htm#Inst-prep">Příprava instalace &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-cz.htm#Inst-prep">Příprava instalace</a></li>
+					  <li><a href="hd-install-cz.htm#Installation">Instalace na pevný disk</a></li>
+					  <li><a href="hd-install-cz.htm#first-hd-boot">První spuštění</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-cz.htm#fromiso">Načtení pomocí fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-cz.htm#fromiso">Načtení pomocí fromiso - Přehled</a></li>
+					  <li><a href="hd-install-opts-cz.htm#grub2-fromiso">Načtení 'fromiso' s Grub2</a></li>
+					  <li><a href="hd-install-opts-cz.htm#fromiso-persist">fromiso a persist</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-cz.htm#usb-hd">Instalace na USB-disk &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-cz.htm#usb-hd">Instalace na USB-disk - specifické pro aptosid - aptosid-on-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-cz.htm#raw-usb">Zapsaní aptosidu na USB/SSD-disk s jakýmkoliv systémem Linux, MS Windows nebo Mac OS X</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-cz.htm#install-crypt">Instalace na šifrovené diskové oddíly - cryptroot</a></li>
+		  <li><a href="nbdboot-cz.htm#nbd1">Načtení aptosidu přes síť</a></li>
+		  <li><a href="hd-install-vmopts-cz.htm#vm">Možnosti instalace ve Virtuálním Stroji</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-cz.htm">Grafické karty, monitory, Xorg,  &amp; ovladače</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-cz.htm#mon-res">Rozlišení obrazovky a monitory &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-cz.htm#mon-res">Rozlišení obrazovky a monitory</a></li>
+					  <li><a href="hw-dev-mon-cz.htm#xrandr">Dva monitory a xrandr</a></li>
+					  <li><a href="hw-dev-mon-cz.htm#mon-binary">Dva monitory (za použití binárních ovladačů)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-cz.htm#foss-xorg">Ovladače GPU &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-cz.htm#ati-3d">3D ovladače pro AMD/ATI</a></li>
+					  <li><a href="gpu-cz.htm#intel">2D a 3D ovladače pro Intel</a></li>
+					  <li><a href="gpu-cz.htm#nvidia">3D ovladače pro Nvidia</a></li>
+					  <li><a href="gpu-cz.htm#foss-xorg">Svobodné ovladače Xorg</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-cz.htm#fw-detect">Rozpoznání firmwaru - non-free</a></li>
+			  <li><a href="nf-firm-cz.htm#non-free-firmware">Přidání non-free do seznamu zdrojů</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-cz.htm#install-add">Správci oken</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-cz.htm">KDE and XFCE Správci oken &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-cz.htm#xfce-notes">Užitečné dodatečné aplikace pro Xfce</a></li>
+					    <li><a href="wm-dm-cz.htm#install-add">Užitečné dodatečné aplikace pro KDE</a></li>
+					    <li><a href="wm-dm-cz.htm#desk-freeze">Zamrznutí plochy</a></li>
+					    <li><a href="wm-dm-cz.htm#kde-login">Nejde se přihlásit do KDE</a></li>
+					    <li><a href="wm-dm-cz.htm#ch-th">Změna témat</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-cz.htm#dm">Instalace dodatečných správců zobrazení</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-cz.htm">Připojení k internetu, WiFi, LAN a sítím</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-cz.htm">Sestava LAMP aptosidu &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-cz.htm#serv-apache">Sestava LAMP aptosidu</a></li>
+					    <li><a href="lamp-apache-cz.htm#serv-ftp">FTP klienty</a></li>
+					    <li><a href="lamp-apache-cz.htm#serv-sec">Bezpečnostní protokoly</a></li>
+					    <li><a href="lamp-apache-cz.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-cz.htm#serv-mysql">Nastavení MySQL</a></li>
+					    <li><a href="lamp-ppp-cz.htm#serv-php">PHP v Apache</a></li>
+					    <li><a href="ntp-server-cz.htm#ntp-server">Nastavení Timeserveru</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-cz.htm#tor">Firewally and Soukromí &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-cz.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-cz.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-cz.htm#firewalls">Firewally</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-cz.htm#ssh-x">SSH a Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-cz.htm#setup">Nastavení Samba-Serveru</a></li>
+						  <li><a href="samba-cz.htm#configure">Konfigurace SAMBY (Windows)</a></li>
+						  <li><a href="ssh-cz.htm#ssh-fs">Vzdálené připojení přes SSH</a></li>
+						  <li><a href="ssh-cz.htm#ssh-x">Aplikace X přes SSH</a></li>
+						  <li><a href="ssh-cz.htm#ssh-f">Grafické rozhraní přes SSH s Konquerorem</a></li>
+						  <li><a href="ssh-cz.htm#ssh-w">Přenos rozhraní X přes SSH z Windows-PC</a></li>
+						  <li><a href="ssh-cz.htm#ssh">SSH a soukromí</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-cz.htm#netcardconfig">WIFI připojení &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-cz.htm#netcardconfig">Připojení se online - Ceni</a></li>
+						    <li><a href="inet-wpagui-cz.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-cz.htm#net-set1">WiFi - nastavení pro WiFi roaming</a></li>
+						    <li><a href="inet-wpa-cz.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-cz.htm#hotswitch">Přepínání síťového připojení mezi WiFi a Kabelovým</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-cz.htm#netcardconfig">Kabelové připojení &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-cz.htm#dial-mod">56k Modemy</a></li>
+						    <li><a href="inet-ceni-cz.htm#netcardconfig">Připojení se online- Ceni</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-cz.htm#fw-detect">Rozpoznání firmwaru - non-free</a></li>
+		<li><a href="nf-firm-cz.htm#non-free-firmware">Přidání non-free do seznamu zdrojů</a></li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-cz.htm">Správa balíčků dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-cz.htm#apt-cook">APT návod a zdroje softwaru &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-cz.htm#apt-cook">APT-návod (CookBook) a zdroje software</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#apt-install">Instalace nového balíčku</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#apt-delete">Smazání balíčku</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#apt-downgrade">Podržení balíčku nebo instalace nižší verze</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#apt-cache">Vyhledávání balíčků pomocí apt-cache</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#gui-pacsea">Vyhledávání balíčků v graf. rozhraní</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-cz.htm#kern-upgrade">Povýšení verze jádra (kernel) &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-cz.htm#kern-remove">Odstranění jádra</a></li>
+					    <li><a href="sys-admin-kern-upg-cz.htm#kern-upgrade">Povýšení verze jádra</a></li>
+					    <li><a href="sys-admin-kern-upg-cz.htm#dmakms">Dynamická instalaca modulů jádra s dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-cz.htm#apt-upgrade">Aktualizace nainstalovaného systému - dist-upgrade - Přehled &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-cz.htm#live-cd-upgrade">Aktualizace pomocí Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-cz.htm#approx">dist-upgrade vícero počítačů přes LAN</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#apt-upgrade">Aktualizace nainstalovaného systému - dist-upgrade - Přehled</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#du-st">Aktualizace nainstalovaného systému - dist-upgrade - jednotlivé kroky</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-cz.htm">Administrace systému</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-cz.htm#bois-prep">Povýšení verze BIOSu pomocí FreeDOS</a></li>
+		<li><a href="vir-rkits-cz.htm#virus-rkits">Vyhledávače virů a rootkitů</a></li>
+		<li><a href="hd-install-cz.htm#adduser">Přidání uživatelů a hesel &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-cz.htm#adduser">Přidání nového uživatele</a></li>
+					    <li><a href="sys-admin-gen-cz.htm#pw-lost">Ztracené root heslo, nové heslo</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-cz.htm#start-services">Služby a úrovně spuštění init &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-cz.htm#start-services">Spouštění/zastavení služeb</a></li>
+					    <li><a href="sys-admin-gen-cz.htm#pkill">Zabití služby nebo procesu</a></li>
+					    <li><a href="sys-admin-gen-cz.htm#init">Úrovně spuštění aptosidu - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-cz.htm#rsync">Zálohování systému &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-cz.htm#rdiff">Zálohování pomocí rdiff</a></li>
+					    <li><a href="sys-admin-rsync-cz.htm#rsync">Zálohování pomocí rsync</a></li>
+					    <li><a href="home-cz.htm#home-bu">Přesunutí /home adresáře</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-cz.htm#fonts">CUPS, fonty a zvuk &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-cz.htm#fonts">Fonty</a></li>
+					     <li><a href="sys-admin-gen-cz.htm#cups">CUPS - tiskový systém</a></li>
+					     <li><a href="sys-admin-gen-cz.htm#sound">Zvukový mixér</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-cz.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-cz.htm#chroot">Grub2 - obnova Grubu s pomocí chroot</a></li>
+					    <li><a href="sys-admin-grub2-cz.htm#mbr-over-grub2">Grub2 - přepsání zaváděcího sektoru MBR</a></li>
+					    <li><a href="sys-admin-grub2-cz.htm#multi-os">Grub2 - zavádění  více systémů</a></li>
+					    <li><a href="sys-admin-grub2-cz.htm#grub1-grub2">Grub2 - povýšení z Grub1</a></li>
+					    <li><a href="sys-admin-grub2-cz.htm#grub2">Grub2 - přehled</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Sponsored by webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid is proudly hosted by webtropia.com" alt="aptosid is proudly hosted by webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+		<div class="divider" id="vmopts">
+				<h2 id="top-header">Možnosti Virtual Machine</h2>
+
+						<ul>
+							<li><a href="hd-install-vmopts-cz.htm#kvm">KVM pro Intel VT neboAMD-V</a></li>
+							<li><a href="hd-install-vmopts-cz.htm#vbox">Virtualbox</a></li>
+							<li><a href="hd-install-vmopts-cz.htm#qemu">QEMU</a></li>
+							<li><a href="hd-install-vmopts-cz.htm#oos">Instalace ostatních distribucí do obrazů</a></li>
+						</ul>
+
+<!--							<p><span class="highlight-3">The following examples use aptosid, simply substitute aptosid with the distribution of your choice.</span></p>-->
+							<p><span class="highlight-3">Následující příklady jsou demonstrovány na distribuci aptosid. Jednoduše nahraďte aptosidu jinou distribucí vaší volby.</span></p>
+	</div>
+	<div class="divider" id="oos">
+<!--			    <h2>Installing other distributions to a VM image</h2>-->
+			    <h2>Instalace ostatních distribucí do obrazů virtuálního stroje</h2>
+<!--							<p>Note: If and when you wish to install to a virtual machine image, most Linux distributions will probably only need an allocation of 12G. However if you have a requirement to have MS Windows in a virtual machine, you will need to allocate about a 30G, or more, to the image. All image allocation sizes ultimately depend on your requirements. </p>-->
+							<p>Poznámka: Pokud si přejete nainstalovat distribuci do virtuálního stroje, tak většina z nich bude pravděpodobně vyžadovat volné místo 12 GB. Jestli ale potřebujete do virtuálního stroje nainstalovat MS Windows, bude nutné pro obraz alokovat alespoň 30 GB nebo více. Alokační velikost jednotlivých obrazů ale nakonec závisí na vás.</p>
+
+							<!--<p>Generally, an image allocation size, will not take up additional hard drive space until data is installed. Even then, it will only take space dynamically on a hard drive, contingent to the actual amount of data that expands on the image. This is due to the compression ratios of qcow2.</p>-->
+							<p>Obecně vzato nebude alokované místo obrazem zabírat prostor na disku, pokud na něj nebudou nainstalována data. Even then, it will only take space dynamically on a hard drive, contingent to the actual amount of data that expands on the image. To je možné díky kompresním poměrům qcow2.</p>
+		      </div>
+		      <div class="divider" id="kvm">
+<!--				<h2>Enabling a KVM Virtual Machine</h2>-->
+				<h2>Zapnutí vyrtuálního stroje KVM</h2>
+							<!--<p>KVM is a full virtualisation solution for Linux running on x86 CPU with virtualisation extensions (Intel VT or AMD-V)..</p> -->
+							<p>KVM je kompletní virtualizační řešení pro Linux na hardwaru x86 obshahující virtualizační rozšíření (Intel VT nebo AMD-V)</p>
+				      <h3>Předpoklady</h3>
+
+<!-- 							<p>To ascertain whether your hardware supports KVM, ensure that KVM is enabled in the BIOS (in some cases on an Intel VT or AMD-V system it may not evident as to where the switch is, therefore assume that it is in a KVM state). The way to check is in a console run:</p> -->
+							<p>Abyste jste se ujistili, že váš hardware podporuje KVM, zapněte jej v BIOSu (v některých případech nemusí být jasné, kde se u systémů Intel VT nebo AMD-V přepínač nachází, takže můžete předpokládat, že již je KVM zapnuto). Způsob, jak to ověřit, je v konzoli:</p>
+<pre>
+cat /proc/cpuinfo | egrep --color=always 'vmx|svm'
+</pre>
+<!--							<p>If you see <span class="highlight-3">svm</span> or <span class="highlight-3">vmx</span> in the cpu flags field, your system supports KVM. (Otherwise go back to the BIOS if you believe it is supported and check again, else search the internet as to where in the BIOS menus KVM 'enable' could be hiding).</p>-->
+							<p>Pokud spatříte <span class="highlight-3">svm</span> or <span class="highlight-3">vmx</span> v poli pro CPU flags, tak to znamená, že váš procesor KVM podporuje. (V opačném případě se vraťte do BIOSu, jestli si myslíte, že je KVM podporováno, a zkontrolujte to znovu, nebo se poohlídněte na internetu, kde by se menu pro KVM mohlo v BIOSu nacházet).</p>
+
+<!--							<p>Should your BIOS not support KVM refer to <a href="hd-install-vmopts-cz.htm#vbox">Virtualbox</a>
+							 or <a href="hd-install-vmopts-cz.htm#qemu">QEMU</a></p>-->
+							<p>Jeslti váš BIOS nepodporuje KVM, tak se odkažte na <a href="hd-install-vmopts-cz.htm#vbox">Virtualbox</a>
+							 nebo <a href="hd-install-vmopts-cz.htm#qemu">QEMU</a></p>
+
+<!--							<p>To install and run KVM, firstly ensure that Virtualbox modules are not loaded, (--purge them is the best option), then depending on your chipset:</p>-->
+							<p>Pro instalaci a spuštění KVM je napřed potřeba zkontrolovat, že nejsou načteny moduly pro Virtualbox (použít --purge je nejlepší nápad), pak v závislosti na vašem čipsetu:</p>
+
+<!--							<p>For <span class="highlight-3">vmx</span>:</p>-->
+							<p>Pro <span class="highlight-3">vmx</span>:</p>
+<pre>
+apt-get install qemu-kvm qemu-utils
+modprobe kvm-intel
+</pre>
+							<p>Pro <span class="highlight-3">svm</span>:</p>
+<pre>
+apt-get install qemu-kvm qemu-utils
+modprobe kvm-amd
+</pre>
+							<!--<p>AWhen you start your system the qemu-kvm initscripts will take care of loading the modules.</p> -->
+							<p>When you start your system the qemu-kvm initscripts will take care of loading the modules.</p>
+
+					  <h4>Použití KVM pro spuštění aptosid-*.iso</h4>
+
+							<p><span class="highlight-2">Jako uživatel:</span></p>
+<pre>
+$ kvm -net nic,model=virtio -net user -soundhw ac97 -m 512 -monitor stdio -cdrom &lt;aptosid.iso&gt;
+</pre>
+
+				<h5>Instalace aptosid-*.iso do obrazu KVM</h5>
+							<!-- <p>First create a hard disk image, (this image will be minimal and only grow as required due to qcow2 compression ratios):</p> -->
+							<p>Napřed vytvořte obraz pevného disku (tento obraz bude malý a bude narůstat, jak bude potřeba, díky kompresním poměrům qcow2):</p>
+<pre>
+$ qemu-img create -f qcow2 aptosid-20xx-*-.img 12G
+</pre>
+
+							<!-- <p>Boot the aptosid-*.iso with the following parameters to enable KVM to recognise that there is an QEMU hard disk image available:</p> -->
+							<p>Spusťtě aptosid-*.iso s následujícími parametry pro umožnění KVM, aby našlo dostupný obraz pevného disku QEMU.</p>
+<pre>
+$ kvm -net nic,model=virtio -net user -soundhw ac97 -m 512 -monitor stdio -cdrom &lt;/path/to/aptosid-*.iso&gt; -boot d &lt;/path/to/aptosid-VM.img&gt;
+</pre>
+
+							<p>Once the cdrom has booted up click on the aptosid installer icon to activate the installer, (or use the menu), click on the Partitioning tab and launch the partition application you prefer. For the partitioning you can follow the instructions from <a href="part-gparted-cz.htm">Partitioning the Hard Drive - Traditional, GPT and LVM</a>  (do not forget to add a swap partition If you are short of memory). Please be aware that formatting will take time so be patient.</p>
+
+	<div class="screenshot"><img src="../lib/images-common/images-vm/kvm-gparted02.png" title="gparted kvm hard disk naming" alt="gparted kvm hard disk naming" /></div>
+	<div class="spacer02"></div>
+
+							<p>You now have a VM ready for use:</p>
+
+<pre>
+$ kvm -net nic,model=virtio -net user -soundhw ac97 -m 512 -monitor stdio -drive if=virtio,boot=on,file=&lt;path/to/aptosid-VM.img&gt;
+</pre>
+							<p>Some guests do not support virtio, therefore you need to use other options when launching KVM, for example:</p>
+<pre>
+$ kvm -net nic, -net user -soundhw ac97 -m 512 -monitor stdio -hda &lt;/path/to/your_guest.img&gt; -cdrom your_other.iso -boot d
+</pre>
+
+							 <p>or</p>
+<pre>
+$ kvm -net nic, -net user -soundhw ac97 -m 512 -monitor stdio -hda &lt;/path/to/your_guest.img&gt;
+</pre>
+							<p>See also: <a href="http://www.linux-kvm.org/page/Main_Page"> KVM documentation</a>.</p>
+
+				<!--<h5>Managing your KVM virtual machine installations</h5>-->
+				<h5>Spravování instalace vašeho virtuálního zařízení KVM</h5>
+<pre>
+apt-get install aqemu
+</pre>
+							<!-- <p>When using AQEMU ensure that you choose the KVM mode from the drop down box for 'Emulator Type' in the 'General' tab. (Documentation for AQEMU is basically non existent, therefore a few 'trials by error' will be required to figure out the easy to use GUI, however a good start is to use first use the 'VM' menu followed by the 'General' tab.</p> -->
+							<p>Pokud používáte AQEMU, tak se ujistěte, že zvolíte v rozbalovacím seznamu pro 'Typ emulátoru' v záložce 'Obecné' mód KVM. (Dokumentace pro AQEMU prakticky neexistuje, takže bude potřeba pár 'pokus omylů', abyste si našli v GUI svoji cestu, nicméně vhodným začátkem je napřed použít menu 'VM' a pak záložku 'Obecné'.</p>
+	</div>
+	<div class="divider" id="vbox">
+	    <!--<h2>Booting and installing to a VirtualBox Virtual Machine</h2>-->
+		<h2>Zavedení a nainstalování virtuálního stroje VirtualBox</h2>
+						    <!--<p>The Steps.</p>-->
+							<p>Kroky.</p>
+						<ul>
+						    <!--<li>1. create a harddiskimage for VirtualBox</li>
+ 							<li>2. boot the iso with VirtualBox</li>
+ 							<li>3. install on the image</li>-->
+ 							<li>1. vytvořit obraz pevného disku pro VirtualBox</li>
+ 							<li>2. spuštění iso s VirtualBoxem</li>
+ 							<li>3. instalace obrazu</li>
+						</ul>
+
+				<h4>Požadavky</h4>
+							<!--<p><span class="highlight-3">Recommended ram: 1 gig </span>: Ideally 512 MB for the guest and 512 MB for the host. (it can be run on less, but do not expect to have good performance).</p>-->
+							<p><span class="highlight-3">Doporučená paměť: 1 GB. </span>: Ideálně 512 MB pro guesta a 512 MB pro hosta. (může běžet i na méně paměti, ale neočekávejte příliš dobrý výkon).</p>
+							<!--<p><span class="highlight-3">Hard disk space:</span> While VirtualBox itself is very lean (a typical installation will only need about 30 MB of hard disk space), the virtual machines will require fairly huge files on disk to represent their own hard disk storage. So, to install MS Windows XP (TM), for example, you will need a file that will easily grow to several GB in size. To have aptosid in VirtualBox you need to allocate a 5 gig image plus a swap allocation.</p>-->
+							<p><span class="highlight-3">Místo na pevném disku:</span> Kdežto VirtualBox je celkem sporý (typická instalace zabere asi jen 30 MB místa na pevném disku), virtuální přístroje vyžadují celkem velké soubory, které reprezentují jejich vlastní diskové místo. Pro nainstalovaní například Windows XP (TM) budete potřebovat soubor, který jednodušše vyroste do rozměrů několika GB. Pro aptosid ve VirtualBoxu budete potřebovat asi 5 GB obraz a také alokační místo swap.</p>
+			    <!--<h3>Installation:</h3>-->
+				<h3>Instalace:</h3>
+<pre>
+apt-get update
+apt-get install virtualbox-ose-qt virtualbox-source dmakms module-assistant
+</pre>
+							<!--<p>Then prepare the module:</p>-->
+							<p>Pak připravte modul:</p>
+<pre>
+m-a prepare
+m-a a-i virtualbox-source
+</pre>
+							<!--<p>Then activate Dynamic Module-Assistant Kernel Module Support for virtualbox, so that the next time the Linux kernel is updated a virtualbox module is prepared for it too, without manual intervention. To do that, add <span class="highlight-3">virtualbox-source</span> to the <span class="highlight-3">/etc/default/dmakms </span>configuration file. </p>-->
+							<p>Pak aktivujte Dynamic Module-Assistant Kernel Module Support pro virtualbox, aby příště když aktualizujete jádro linuxu, tak aby byl připraven aji modul pro virtualbox, aniž by bylo potřeba zasahovat manuálně. K uskutečnění přidejte <span class="highlight-3">virtualbox-source</span> do konfiguračního souboru <span class="highlight-3">/etc/default/dmakms </span>.</p>
+<pre>
+mcedit /etc/default/dmakms
+virtualbox-source
+</pre>
+
+						    <!--<p>Then reboot the computer.</p> -->
+							<p>Pak restartujte počítač.</p>
+							<!--<p><a href="sys-admin-kern-upg-cz.htm#dmakms">This is essential reading on dmakms</a></p>-->
+							<p><a href="sys-admin-kern-upg-cz.htm#dmakms">Toto je nezbytné čtení, co se týče dmakms.</a></p>
+			 <!--<h3>Installing aptosid to the virtual machine</h3>
+							<p>Use virtualbox's wizard to create a new virtual machine for aptosid, then follow the instructions for a regular aptosid-installation.</p>-->
+			<h3>Instalace aptosidu do virtuálního přístroje</h3>
+							<p>Použijte průvodce virtualboxu k vytvoření nového virtuálního přístroje pro aptosid a poté následujte instrukce jako při normální instalaci aptosidu.</p>
+
+							<!--<p><a href="http://www.virtualbox.org/">VirtualBox has a comprehesive PDF Help, that you can download</a> </p>-->
+							<p><a href="http://www.virtualbox.org/">VirtualBox má rozumnou nápovědu v PDF, kterou si můžete stáhnout.</a> </p>
+
+	</div>
+	<div class="divider" id="qemu">
+<!--		<h2>Booting and installing a QEMU Virtual Machine</h2>-->
+		<h2>Zavedení a nainstalování virtuálního stroje QEMU</h2>
+<!--						<ul>
+ 							<li>1. create a harddiskimage for QEMU</li>
+ 							<li>2. boot the iso with QEMU</li>
+ 							<li>3. install on the image</li>
+						</ul>-->
+						<ul>
+ 							<li>1. vytvoření obrazu pevného disku pro QEMU</li>
+ 							<li>2. spuštění iso v QEMU</li>
+ 							<li>3. instalace obrazu</li>
+						</ul>
+
+<!--							<p>A QT GUI tool is available to help configure QEMU:</p>-->
+							<p>K dispozici je grafický nástroj v QT pro konfiguraci QEMU:</p>
+<pre>
+apt-get install qtemu
+</pre>
+
+<!-- 				<h4>Creating the hard disk image</h4>-->
+ 				<h4>Vytvoření obrazu pevného disku</h4>
+<!-- 							<p>To run qemu you will probably need a hard disk image. This is a file which stores the contents of the emulated hard disk.</p> -->
+							<p>Pro spuštění qemu budete pravděpodobně potřebovat obraz pevného disku. To je soubor, který skladuje obsah emulovaného pevného disku.</p>
+<!-- 							<p>Use the command:</p> -->
+							<p>Použijte příkaz:</p>
+<pre>
+qemu-img create -f qcow aptosid.qcow 3G
+</pre>
+<!-- 							<p>To create the image file named "aptosid.qcow". The "3G" parameter specifies the size of the disk - in this case 3 GB. You can use suffix M for megabytes (for example "256M"). You shouldn't worry too much about the size of the disk - the qcow format compresses the image so that the empty space doesn't add up to the size of the file.</p> -->
+							<p>To vytvoří soubor obrazu s názvem "aptosid.qcow". Parametr "3G" udává velikost disku - v tomto případě 3 GB. Také můžete použít příponu M pro megabajty (napřiklad "256M"). Nemusíte se příliš obávat velikosti pevného disku, neboť qcow formát komprimuje obraz tak, že volné místo se nepřidává k celkové  velikosti disku.</p>
+
+<!--				<h4>Installing the operating system</h4>-->
+				<h4>Instalace operačního systému</h4>
+<!--							<p>This is the first time you will need to start the emulator. <span class="highlight-3">One thing to keep in mind: when you click inside qemu window, the mouse pointer is grabbed. To release it press :</span></p>-->
+							<p>Toto je poprvné, co bude nutno spustit emulátor. <span class="highlight-3">Jedna věc k zapamatování: když kliknete do okna qemu, tak je kurzor zachycen. K jeho uvolnění stiskněte:</span></p>
+<pre>
+Ctrl+Alt
+</pre>
+
+<!--							<p>If you need to use a bootable floppy, run Qemu with:</p>-->
+							<p>Jestli potřebujete použít spustitelnou diskovou mechaniku, tak spusťte Qemu s:</p>
+<pre>
+qemu -floppy aptosid.iso -net nic -net user -m 512 -boot d aptosid.qcow
+</pre>
+<!--							<p>If your CD-ROM is bootable, run Qemu with:</p>-->
+							<p>Jestli máte spustielnou CD-ROM mechaniku, spusťte qemu s:</p>
+<pre>
+qemu -cdrom aptosid.iso -net nic -net user -m 512 -boot d aptosid.qcow
+</pre>
+<!-- 							<p>Now install aptosid as if you were going to install it on a real HD</p> -->
+							<p>Nyní nainstalujte aptosid stejně, jako byste ho instalovali na opravdobý pevný disk.</p>
+
+<!--				<h4>Running the system</h4>-->
+				<h4>Spuštění systému</h4>
+<!-- 							<p>To run the system simply type:</p> -->
+							<p>Pro spuštění systému jednodušše napište:</p>
+<pre>
+qemu [hd_image]
+</pre>
+<!-- 							<p>A good idea is to use overlay images. This way you can create hard disk image once and tell Qemu to store changes in external file. You get rid of all the instability, because it is so easy to revert to previous system state.</p> -->
+							<p>Dobrý nápad je používat překryvné obrazy. Tak můžete vytvořit pevný disk jen jednou a sdělit Qemu, aby umísťoval veškeré změny do externího souboru. Tak se zbavíte nestability, neboť je velice jednoduché se vrátit k původní konfiguraci.</p>
+<!-- 							<p>To create an overlay image, type:</p> -->
+							<p>K vytvoření překryvného obrazu zadejte:</p>
+<pre>
+qemu-img create -b [[base_image]] -f qcow [[overlay_image]]
+</pre>
+<!-- 							<p>Substitute the hard disk image for base_image (in our case aptosid.qcow). After that you can run qemu with:</p> -->
+							<p>Nahraďte base_image názvem vašeho obrazu (v našem případě aptosid.qcow). Potom můžete qemu spustit s:</p>
+<pre>
+qemu [overlay_image]
+</pre>
+<!-- 							<p>The original image will be left untouched. One hitch, the base image cannot be renamed or moved, the overlay remembers the base's full path.</p> -->
+							<p>Na originální obraz nebude sáhnuto. Jeden problém je, že základový systém nelze přejmenovat ani přesunout, neboť překryvy si pamatují kompletní cestu základu.</p>
+
+<!--				<h4>Using any real partition as the single primary partition of a hard disk image</h4>-->
+				<h4>Použití jakéhokoliv reálného diskového oddílu jako primárního diskového oddílu pro obraz pevného disku</h4>
+<!-- 							<p>Sometimes, you may wish to use one of your system partition from within qemu (for instance, if you wish booting both your real machine or qemu using a given partition as root). You can do this using software RAID in linear mode (you need the linear.ko kernel driver) and a loopback device: the trick is to dynamically prepend a master boot record (MBR) to the real partition you wish to embed in a qemu raw disk image.</p> -->
+							<p>Někdy může být záhodno použít celý jeden diskový oddíl vašeho systému uvnitř qemu (například pokud chcete spouštět svůj opravdový stroje i/nebo qemu pomocí daného diskového oddílu jako root). Toho můžete docílit díky softwarovému RAID poli v lineárním módu (potřebujete jaderný ovladač linear.ko) a pomocí zařízení loopback: trik je v dynamickém předřazení master boot record (MBR) před reální diskový oddíl, který chcete použít v obrazu pevného disku v qemu.</p>
+
+<!-- 							<p>Suppose you have a plain, unmounted /dev/sdaN partition with some filesystem on it you wish to make part of a qemu disk image. First, you create some small file to hold the MBR:</p> -->
+							<p>Předpokládejme, že máte obyčejný, nepřipojený diskový oddíl /dev/sdaN se souborovým systémem, jež chcete učinit součástí vašeho diskového obrazu v qemu. Napřed je potřeba vytvořit malinký soubor, který se postará o MBR:</p>
+<pre>
+dd if=/dev/zero of=/path/to/mbr count=32
+</pre>
+<!-- 							<p>Here, a 16 KB (32 * 512 bytes) file is created. It is important not to make it too small (even if the MBR only needs a single 512 bytes block), since the smaller it will be, the smaller the chunk size of the software RAID device will have to be, which could have an impact on performance. Then, you setup a loopback device to the MBR file:</p> -->
+							<p>Takto jsme vytvořili 16 kilobajtový soubor (32 x 512 bajtů). Je důležité jej nevytvořit příliš malý (i pokud MBR udržuje jen blok 512 bajtů), neboť čím menší bude, tím menší bude velikost softwarového zařízení pole RAID, což bude mít dopad na výkon. Poté nastavíte zařízení loopback pro MBR soubor:</p>
+<pre>
+losetup -f /path/to/mbr
+</pre>
+<!-- 							<p>Let's assume the resulting device is /dev/loop0, because we wouldn't already have been using other loopbacks. Next step is to create the "merged" MBR + /dev/sdaN disk image using software RAID:</p> -->
+							<p>Předpokládejme, že výsledné zařízení je /dev/loop0, protože jsme ještě žádné zařízení loopback nepoužili. Dalším krokem je vytvoření "sloučeného" MBR + obraz disku /dev/sdaN pomocí softwarového RAID:</p>
+<pre>
+ modprobe linear
+ mdadm --build --verbose /dev/md0 --chunk=16 --level=linear --raid-devices=2 /dev/loop0 /dev/sdaN
+</pre>
+<!-- 							<p>The resulting /dev/md0 is what you will use as a qemu raw disk image (don't forget to set the permissions so that the emulator can access it). The last (and somewhat tricky) step is to set the disk configuration (disk geometry and partitions table) so that the primary partition start point in the MBR matches the one of /dev/sdaN inside /dev/md0 (an offset of exactly 16 * 512 = 16384 bytes in this example). Do this using fdisk on the host machine, not in the emulator: the default raw disc detection routine from qemu often results in non kilobyte-roundable offsets (such as 31.5 KB, as in the previous section) that cannot be managed by the software RAID code. Hence, from the the host:</p> -->
+							<p>Výsledný /dev/md0 je to, co budete používat jako surový obraz pevného disku v qemu (nezapomeňte nastavit práva, aby k němu mohl emulátor přistoupit). Poslední (a také trochu zapeklitý) krok je nastavení konfigurace souboru (geometrie disku a tabulka diskového oddílu) tak, aby počáteční bod primárního diskového oddílu v MBR odpovídal tomu od -dev/sdaN v /dev/md0 (odchýlení přesně o 16 x 512 = 16384 bajtů v tomto příkladu). Učiňte to pomocí fdisku na hostovacím počítači, ne v emulátoru: výchozí proces detekce pevného disku v qemu často vyúsťuje v hodnoty nezaokrouhlené na celé kilobajty (například 31,5 KB, jako v předchozí sekci), což nedokáze kód softwarového RAID spravovat. Tudíž je na hostovacím počítači potřeba:</p>
+<pre>
+ fdisk /dev/md0
+</pre>
+<!-- 							<p>There, create a single primary partition corresponding to /dev/sdaN, and play with the 's'ector command from the 'x'pert menu until the first cylinder (where the first partition starts), matches to the size of the MBR. Finally, 'w'rite the result to the file: you are done. You now have a partition you can mount directly from your host, as well as part of a qemu disk image:</p> -->
+							<p>Zde vytvořte jeden primární diskový oddíl odpovídající /dev/sdaN a pohrajte si s příkazem 's'ector z menu e'x'pert, dokud první cylindr (kde první diskový oddíl začíná) neodpovídá velikosti MBR. Nakonec zapište ('w'rite) výsledek do souboru: je hotovo. Nyní máte diskový oddíl, který můžete přímo připojit z vašho hosta, stejně jako součást diskového obrazu v qemu:</p>
+<pre>
+ qemu -hdc /dev/md0 [...]
+</pre>
+<!-- 							<p>You can of course safely set any bootloader on this disk image using qemu, provided the original /boot/sdaN partition contains the necessary tools.</p> -->
+							<p>Samozřejmě můžete bezpečně nastavit jakýkoliv bootloader v obrazu pevného disku v qemu, pokud originální diskový oddíl /boot/sdaN obsahuje nezbytné nástroje.</p>
+
+
+<!--				<h4>Using the QEMU Accelerator Module</h4>-->
+				<!--<h4>Použití Akceleračního Modulu QEMU</h4>-->
+<!-- 							<p>The developers of qemu have created an optional kernel module to accelerate qemu to sometimes near native levels. This should be loaded with the option</p> -->
+							<!--<p>Vývojáři qemu vytvořili volitelný jaderný modul pro urychlení qemu k jakoby přirozené úrovni. Toto by mělo být načteno pomocí volby:</p>
+<pre>
+major=0
+</pre>-->
+<!-- 							<p>to automate the creation of the required /dev/kqemu device. The following command</p> -->
+							<!--<p>Pro zautomatizování vytvoření potřebného zařízení /dev/kqemu využijte následujícího příkazu:</p>
+<pre>
+echo "options kqemu major=0" >> /etc/modules
+</pre>-->
+<!-- 							<p>This will amend modprobe.conf to ensure that the module option is added every time the module is loaded.</p> -->
+							<!--<p>To umožní modprobe.conf, aby byla volba modulu načtena pokažde, když se spustí modul sám.</p>
+<pre>
+qemu [...] -kernel-kqemu
+</pre>-->
+<!-- 							<p>This enables full virtualization and thus improves speed considerably.</p> -->
+							<!--<p>To umožní plnou virtualizaci a tak markantně vylepší rychlost.</p>-->
+<!--				<h4>To activate qemu:</h4>-->
+				<!--<h4>Pro aktivaci qemu:</h4>
+<pre>
+qemu -cdrom /tmp/pkg/aptosid-debug.iso -net nic -net user -m 512
+</pre>-->
+<!--							<p><a href="http://www.nongnu.org/qemu/user-doc.html">The official documentation of the QEMU Project </a> </p>-->
+							<p><a href="http://www.nongnu.org/qemu/user-doc.html">Oficiální dokumentace projektu QEMU</a> </p>
+<!--							<p><a href="http://wiki.archlinux.org/index.php/Qemu">Some content for QEMU for the aptosid-manual was accessed off this site under GNU Free Documentation License 1.2 and modified for the aptosid-manual</a> </p>-->
+							<p><a href="http://wiki.archlinux.org/index.php/Qemu">Některý obsah této manuálové stránky byl převzat z této stránky na zákadě Licence Volné Dokumentace GPL 1.2 a modifikovaný pro manuál aptosidu</a> </p>
+
+	</div>
+	<div id="rev">Obsah naposledy revidován 12/09/2011 1010 UTC</div>
+
+</div>
+</body>
+</html>

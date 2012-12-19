@@ -1,0 +1,625 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+	<title>aptosid Manuals - Window Managers</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision by muchan 27/Sep/2010 2114 UTC -->
+<!--htdig_noindex--><div id="menu"><!-- menu starts here ja lang maintained by muchan-->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="To aptosid.com, Forum and Wiki" alt="logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-ja.htm#search-on"><img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" /> サーチ Online Offline</a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Choose another language CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="lang-switch CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-ja.htm">aptosid OS マニュアル</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-ja.htm#welcome-gen">aptosid OS マニュアル &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-ja.htm#cred-team">貢献者</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-ja.htm#how-to">このマニュアルの使い方 &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-ja.htm#how-to">このマニュアルの使い方</a></li>
+					  <li><a href="welcome-ja.htm#table-contents">内容一覧</a></li>
+					</ul>
+					</li>
+		<li><a href="help-ja.htm#help-gen">困った時は... &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-ja.htm#help-gen">困った時は...</a></li>
+					  <li><a href="help-ja.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-ja.htm#welcome-quick">aptosid クイックスタートガイド</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-ja.htm">ISO の内容、リリース、ダウンロードミラーとCDの焼き付け</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-ja.htm#cd-content">ISO の内容と最小限必要な仕様 &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-ja.htm#rolling">リリースノート</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-ja.htm#download-aptosid">aptosidのミラー, ダウンロードとCD の作成 &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-ja.htm#md5">md5 Checksum</a></li>
+					  <li><a href="cd-dl-burning-ja.htm#burn-nero">WindowsでISOを焼くには</a></li>
+					  <li><a href="cd-dl-burning-ja.htm#burn-linux">LinuxでISOを焼くには</a></li>
+					  <li><a href="cd-no-gui-burn-ja.htm#burning-no-gui">burniso script</a></li>
+					  <li><a href="cd-no-gui-burn-ja.htm#burn-no-gui-gen">GUIなしでISOを焼くには</a></li>
+					  <li><a href="cd-dl-burning-ja.htm#download-aptosid">aptosid ダウンロードミラー</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-ja.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-ja.htm#rootpw">aptosid-LiveISOのRootパスワード</a></li>
+				<li><a href="live-mode-ja.htm#live-cd-installsoft">Live-ISO作動中にソフトをインストール</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-ja.htm">ターミナル/コンソール</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-ja.htm#term-kon"> ターミナル/コンソール&#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-ja.htm#term-kon"> ターミナル/コンソール</a></li>
+					  <li><a href="term-konsole-ja.htm#colours"> Coloured terminal prompts</a></li>
+					  <li><a href="term-konsole-ja.htm#cli-help">コマンドラインヘルプ</a></li>
+					  <li><a href="help-ja.htm#init3-tools">テキストモード(tty)で便利な道具 - init 3</a></li>
+					  <li><a href="term-konsole-ja.htm#term-cmds">Linuxターミナルのコマンド一覧</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-ja.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-ja.htm">起動コード</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-ja.htm#cheatcodes">aptosidだけのLive-ISO用起動コード</a></li>
+				<li><a href="cheatcodes-ja.htm#cheatcodes-linux">Linux一般の起動コード</a></li>
+				<li><a href="cheatcodes-vga-ja.htm#vga">VGA コード</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-ja.htm">Partitioning the Hard Drive - Traditional, GPT and LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-ja.htm#hd-ntfs3g">ntfs-3gを使ってNTFSパーティションへの書き込み</a></li>
+			<li><a href="part-lvm-ja.htm#part-lvm">LVM(Logical Volume Manager)を使うパーティション</a></li>
+			<li><a href="part-gparted-ja.htm#partition"> GUI でパーティショニング&#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-ja.htm#partition">GParted / KDE Partition Manager を使ってパーティショニング</a></li>
+					  <li><a href="part-gparted-ja.htm#ntfs"> GParted / KDE Partition Manager を使って NTFS のサイズ変更</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-ja.htm#partition">コマンドラインでパーティショニング</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-ja.htm#partition"> cfdisk を使ってパーティショニング</a></li>
+					    <li><a href="part-cfdisk-ja.htm#formating">cfdiskでパーティション後のフォーマッティング</a></li>
+					    <li><a href="part-gdisk-ja.htm#gdisk-6">Formatting after partitioning with gdisk</a></li>
+					    <li><a href="part-gdiskja.htm#gdisk-1">GPT Partitioning with gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-ja.htm#part-example">パーティショニングの基本 &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-ja.htm#part-example">パーティションサイズの例</a></li>
+					  <li><a href="part-uuid-ja.htm#uuid">UUID, Rebuilding fstab and creating new mount points</a></li>
+					  <li><a href="part-cfdisk-ja.htm#disknames">ディスクの名前について</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-ja.htm">インストール・オプション - HD, USB, VM, Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-ja.htm#Inst-prep">インストールの準備 &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-ja.htm#Inst-prep">インストールの準備</a></li>
+					  <li><a href="hd-install-ja.htm#Installation">ハードディスクへのインストール</a></li>
+					  <li><a href="hd-install-ja.htm#first-hd-boot">始めての起動</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-ja.htm#fromiso">fromisoで起動&#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-ja.htm#fromiso">fromisoで起動 - 概説</a></li>
+					  <li><a href="hd-install-opts-ja.htm#grub2-fromiso">GRUB2からfromisoで起動</a></li>
+					  <li><a href="hd-install-opts-ja.htm#fromiso-persist">fromisoと持続モード</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-ja.htm#usb-hd">USBドライブへのインストール &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-ja.htm#usb-hd">USB-HDへのインストール -aptosid 独自の- aptosid-on-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-ja.htm#raw-usb">USB/SSDドライブに他のLinuxや MS Windows、Mac OS X システムから aptosid を書き込む</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-ja.htm#install-crypt">暗号化パーティションへのインストール - cryptroot</a></li>
+		  <li><a href="nbdboot-ja.htm#nbd1">aptosidをネットワークから起動</a></li>
+		  <li><a href="hd-install-vmopts-ja.htm#vmopts">仮想マシンへのインストール</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-ja.htm">グラフィックカード、モニター、XOrgその他のドライバ</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-ja.htm#mon-res">解像度とモニター &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-ja.htm#mon-res">解像度とモニター</a></li>
+					  <li><a href="hw-dev-mon-ja.htm#xrandr">デュアルモニターとxrandr</a></li>
+					  <li><a href="hw-dev-mon-ja.htm#mon-binary">デュアルモニター（バイナリードライバ）</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-ja.htm#foss-xorg">GPU drivers &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-ja.htm#ati-3d">AMD/ATI 3D ドライバ</a></li>
+					  <li><a href="gpu-ja.htm#intel">Intel 2D/3D ドライバ</a></li>
+					  <li><a href="gpu-ja.htm#nvidia">Nvidia 3D ドライバ</a></li>
+					  <li><a href="gpu-ja.htm#foss-xorg">Xorg のオープンソースドライバ</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-ja.htm#fw-detect">Firmwareの探知 - non-free </a></li>
+			  <li><a href="nf-firm-ja.htm#non-free-firmware">non-free をソースリスとに加える</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-ja.htm">ウィンドウマネージャ</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-ja.htm">KDE and XFCE ウィンドウマネージャ &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-ja.htm#xfce-notes">Xfce ノート</a></li>
+					    <li><a href="wm-dm-ja.htm#install-add">便利な KDE 追加アプリ</a></li>
+					    <li><a href="wm-dm-ja.htm#desk-freeze">デスクトップが凍結したら</a></li>
+					    <li><a href="wm-dm-ja.htm#kde-login">KDEにログインできない時</a></li>
+					    <li><a href="wm-dm-ja.htm#ch-th">テーマの変更</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-ja.htm#dm">Installing additional Display Managers</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-ja.htm">インターネット,WiFi,LAN</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-ja.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-ja.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-ja.htm#serv-ftp">FTPクライアント</a></li>
+					    <li><a href="lamp-apache-ja.htm#serv-sec">Webサーバーのセキュリティ設定</a></li>
+					    <li><a href="lamp-apache-ja.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-ja.htm#serv-mysql">MySQL の設定</a></li>
+					    <li><a href="lamp-ppp-ja.htm#serv-php">Apache2のためのPHPサポート</a></li>
+					    <li><a href="ntp-server-ja.htm#ntp-server">タイムサーバーの設定</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-ja.htm#tor">ファイアーウォールとプライバシー &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-ja.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-ja.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-ja.htm#firewalls">ファイアーウォール</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-ja.htm#ssh-x">SSH と Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-ja.htm#setup">Samba サーバーの設定</a></li>
+						  <li><a href="samba-ja.htm#configure">SAMBA の設定(Windowsとの共有)</a></li>
+						  <li><a href="ssh-ja.htm#ssh-fs">SSH Remote Mounting</a></li>
+						  <li><a href="ssh-ja.htm#ssh-x">SSHのネットワークを通してXウィンドウズのアプリケーションを使う</a></li>
+						  <li><a href="ssh-ja.htm#ssh-f">KonquerorでGUIのSSH</a></li>
+						  <li><a href="ssh-ja.htm#ssh-w">Windows-PCからSSHでXフォワーディング</a></li>
+						  <li><a href="ssh-ja.htm#ssh">SSH とセキュリティ</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-ja.htm#netcardconfig">WIFI &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-ja.htm#netcardconfig">Ceni を使ってネットワークに接続</a></li>
+						    <li><a href="inet-wpagui-ja.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-ja.htm#net-set1">WiFi - WiFi ローミング設定</a></li>
+						    <li><a href="inet-wpa-ja.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-ja.htm#hotswitch">WiFi とケーブル接続のホットスイッチ</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-ja.htm#netcardconfig">ケーブル接続のインターネット設定&#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-ja.htm#dial-mod">56k モデム</a></li>
+						    <li><a href="inet-ceni-ja.htm#netcardconfig">Ceni を使ってネットワークに接続</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-ja.htm#fw-detect">Firmwareの探知 - non-free </a></li>
+		<li><a href="nf-firm-ja.htm#non-free-firmware">non-free をソースリスとに加える</a></li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-ja.htm">パッケージマネージャとdist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-ja.htm#apt-cook">APT クックブックとソースリスト &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-ja.htm#apt-cook">APTガイド - クックブックとソースリスト</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#apt-install">新しくパッケージをインストールする</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#apt-delete">パッケージの除去</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#apt-downgrade">ダウングレードまたはパッケージの保持</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#apt-cache">apt-cacheでパッケージ検索</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#gui-pacsea">GUI パッケージ検索</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-ja.htm#kern-upgrade">カーネルのアップグレード &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-ja.htm#kern-remove">使わないカーネルの除去</a></li>
+					    <li><a href="sys-admin-kern-upg-ja.htm#kern-upgrade"> カーネルのアップグレード</a></li>
+					    <li><a href="sys-admin-kern-upg-ja.htm#dmakms">カーネルモジュールをdmakmsでダイナミックにインストールする</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-ja.htm#apt-upgrade">インストールされたシステムのアップグレード -  dist-upgrade - 概説 &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-ja.htm#live-cd-upgrade">ライブISOアップデート</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-ja.htm#approx">同一LAN上の複数のPCをdist-upgradeする</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#apt-upgrade">インストールされたシステムのアップグレード - dist-upgrade - 概説</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#du-st">インストールされたシステムのアップグレード - dist-upgrade - ステップ</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-ja.htm">システム管理</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-ja.htm#bois-prep">FreeDOSを使ってBIOSをアップグレード</a></li>
+		<li><a href="vir-rkits-ja.htm#virus-rkits">ウイルスとRootkitスキャナー</a></li>
+		<li><a href="hd-install-ja.htm#adduser">新しいユーザーとパスワード &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-ja.htm#adduser">新しいユーザーを加える</a></li>
+					    <li><a href="sys-admin-gen-ja.htm#pw-lost">root パスワードを忘れたら, 新パスワードの設定</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-ja.htm#start-services">サービスとランレベル &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-ja.htm#start-services">サービスのスタート/ストップ</a></li>
+					    <li><a href="sys-admin-gen-ja.htm#pkill">Killing a service or process</a></li>
+					    <li><a href="sys-admin-gen-ja.htm#init">aptosid のランレベル - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-ja.htm#rsync">システムのバックアップ &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-ja.htm#rdiff">rdiffを使ってバックアップ</a></li>
+					    <li><a href="sys-admin-rsync-ja.htm#rsync">rsyncを使ってバックアップ</a></li>
+					    <li><a href="home-ja.htm#home-bu">/home を移動する</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-ja.htm#fonts">CUPS、フォントと音声 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-ja.htm#fonts">フォント</a></li>
+					     <li><a href="sys-admin-gen-ja.htm#cups">CUPS - 印刷システム</a></li>
+					     <li><a href="sys-admin-gen-ja.htm#sound">サウンドミキサー</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-ja.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-ja.htm#chroot">Grub2 - Grubをchrootでリカバーする</a></li>
+					    <li><a href="sys-admin-grub2-ja.htm#mbr-over-grub2">Grub2 - MBRが上書きされてしまったら</a></li>
+					    <li><a href="sys-admin-grub2-ja.htm#multi-os">Grub2 - デュアルまたはマルチブーティング</a></li>
+					    <li><a href="sys-admin-grub2-ja.htm#grub1-grub2">Grub2 - Grub1からアップデートするには</a></li>
+					    <li><a href="sys-admin-grub2-ja.htm#grub2">Grub2 - 概説</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Sponsored by webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid is proudly hosted by webtropia.com" alt="aptosid is proudly hosted by webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+	<div class="divider" id="install-add">
+<!--- ####
+			<h2 id="top-header">Some useful KDE applications not preinstalled on aptosid KDE Lite</h2>
+#### -->
+			<h2 id="top-header"> aptosid KDE Lite には含まれていない便利なプログラム</h2>
+
+<!--- ####
+							<p> <span class="highlight-3">You may need to have non-free enabled in /etc/apt/sources.list.d/debian.list</span></p>
+#### -->
+							<p> <span class="highlight-3"> ここに紹介するプログラムの中には /etc/apt/sources.list.d/debian.list でnon-free を有効にする必要があるものもあります。</span></p>
+
+				<h6>konq-plugins - plugins for Konqueror. </h6>
+
+<!--- ####
+							<p>This package contains a variety of useful plugins for Konqueror, the file manager, web browser and document viewer for KDE.  Many of these plugins will appear in Konqueror's Tools menu.</p>
+#### -->
+							<p>このパッケージには KDE のファイルマネージャと同時にウェッブブラウザとドキュメントビューアも兼ねる konqueror の役に立つ様々なプラグインが含まれています。プラグインの多くは Konqueror のツールメニューから起動できます。</p>
+<pre>
+apt-get install konq-plugins
+</pre>
+
+ 							<!--- ####
+ 							<p>Highlights for web browsing include web page translation, web page archiving, auto-refreshing, HTML and CSS structural analysis, a search toolbar, a sidebar news ticker, fast access to common options, bookmarklets, a crash monitor, a microformat availability indicator, a del.icio.us bookmarks sidebar, and integration with the aKregator RSS feed reader.</p>
+#### -->
+ 							<p>ウェッブブラウザのプラグインの主なものとして、ウェブページ翻訳、ページ保存、自動更新、HTMLとCSSの構造分析、サーチツールバー、サイドバーのニュース表示、よく使われる機能への素早いアクセス、ブックマーク、クラッシュモニター、ミクロフォーマットの利用可能度表示、 del.icio.us のブックマーク、Akregator のRSSフィードとの統合などなど。</p>
+
+<!--- ####
+ 							<p>Highlights for directory browsing include directory filters, image gallery creation, archive compression and extraction, quick copy/move, a sidebar media player, a file information metabar/sidebar, a media folder helper, a graphical disk usage viewer and image conversions and transformations. </p>
+#### -->
+ 							<p>ファイルブラウザのプラグインの主なものとして、ディレクトリフィルター、イメージギャラリー製作、アーカイブへの圧縮と解凍、素早いコピーと移動、サイドバーのメディアプレーヤー、メタバー/サイドバーへのファイル情報を表示メディアフォルダヘルパー、ディスク容量の表示、イメージのフォーマット変換や画像処理などなど。</p>
+
+				<h6>KDE Deskop Search - (Nepomuk and Strigi) </h6>
+							<p>KDE's Nepomuk semantic desktop search is not enabled on an aptosid-kde.iso. To enable it, do the following:</p>
+
+							<p>Install the virtuoso-minimal and strigi-client packages:</p>
+
+<pre>
+apt-get install virtuoso-minimal strigi-client
+</pre>
+
+							<p>Navigate to System Settings &gt; System Administration &gt; Startup and Shutdown &gt;Service Manager, put a check mark in the box for <span class="highlight-3">Nepomuk Search Module</span>, and then click on <span class="highlight-3">Apply</span>.</p>
+
+							<p>Navigate to System Settings > Workspace Appearance and Behavior &gt; Desktop Search &gt; Basic Settings, and put check marks in the boxes for <span class="highlight-3">Enable Nepomuk Semantic Desktop</span> and <span class="highlight-3">Enable Strigi Desktop File Indexer</span>, and then click the <span class="highlight-3">Apply</span>. Note that the amount of memory allocated to the Nepomuk database can be adjusted in the <span class="highlight-3">Advanced Settings</span> tab.</p>
+
+							<p>The KDE session must be restarted for the indexing service to become effective.  Expect the first iteration of indexing to take a long time.  <a href="http://nepomuk.kde.org/"> More information about Nepomuk </a>. </p>
+
+	</div>
+	<div class="divider" id="kde-login">
+			<!--- ####
+			<h2>Login problems to the system under KDE</h2>
+			#### -->
+			<h2>KDEのシステムのログインのトラブル</h2>
+
+							<!--- ####
+							<p>The content of the /tmp directory is normally cleaned-up on each boot, so some directories and sockets needed by the X-Server are also deleted.</p>
+							#### -->
+							<p>通常/tmpディレクトリの内容は起動の際に一掃されるため、時にはXサーバーに必要なディレクトリやソケットも消えてしまうことがあります。</p>
+
+							<!--- ####
+							<p>Normally, during the boot-process, the script x11-common for X-Org recreates these things.</p>
+							#### -->
+							<p>普通、起動プロセスの間にx11-commonというスクリプトがX-orgのためにこれを新たに用意します。</p>
+
+							<!--- ####
+							<p>Possibly these scripts are not being called during the boot process.  To recreate the needed links by calling:</p>
+							#### -->
+							<p>このスクリプトが起動の間に呼ばれずXがスタートできない時はは次のコマンドを実行します。</p>
+<pre>
+# X-ORG: # dpkg-reconfigure x11-common
+</pre>
+
+							<!--- ####
+							<p>KDE needs a 5% allocation of the partition where the directory /tmp resides for temporary files to be created upon login. If you are running with a 95% full partition you will not be able to login with KDE and will be dropped into tty.</p>
+							#### -->
+							<p>KDEはログインの際に/tmpディレクトリがあるパーティションのサイズの5%の大きさのテンポラリファイルを作ります。そのためパーティションの95%以上が使われているとKDEがスタートできずttyのスクリーンに落ちます。</p>
+
+							<!--- ####
+							<p>The same goes for kdm looping but not allowing you to log in. A solution is to log into a tty so you can delete and/or clear out some no longer needed applications or files</p>
+							#### -->
+							<p>同様にKDMのループでもログインができなくなります。この場合の解決法はまずttyにログインしていらなくなったアプリケーションやファイルを削除して十分な空き領域をつくることです。</p>
+
+							<!--- ####
+							<p>Alternatively you can use an X window manager that does not require so much space from the system ( for instance fluxbox is already present in a aptosid install), or chroot using a aptosid live-CD/DVD to clean out the partition to allow you to boot to KDE.</p>
+							#### -->
+							<p>別の方法として、それほど大きいスペースを必要としないXウィンドウマネージャを使ったり(例えばfluxboxはすでにaptosidのインストールに組み込まれています), またはaptosidのライブCD/DVDからchrootしてKDEがスタートできる程度までパーティションを整理するという手もあります。</p>
+
+							<p>パーティションの使用量として最大85%までがKDEがちゃんと/tmpのファイルにアクセスできる限度だと言えるでしょう。(15%フリー).</p>
+
+	</div>
+	<div class="divider" id="ch-th">
+			<!--- ####
+			<h2>Installing aptosid KDE Art and Themes</h2>
+			#### -->
+			<h2>aptosidのKDE用アートとテーマのインストール</h2>
+
+							<!--- ####
+							<p>To install the latest aptosid-art to an existing installation:</p>
+							#### -->
+							<p>最新のaptosid-artを既存のシステムにインストールするには:</p>
+
+<pre>
+apt-get install aptosid-art-kde-xxxx aptosid-art-wallpaper-xxxx
+(xxxxのところをリリース名に変えてください。例：aptosid-art-kde-momos)
+</pre>
+							<!--- ####
+							<p>This will install the aptosid wallpaper and themes</p>
+							#### -->
+							<p>このコマンドで背景やテーマがインストールされます。</p>
+
+					<!--- ####
+					<h4>To change the Wallpaper:</h4>
+					#### -->
+					<h4>背景を替えるには:</h4>
+							<!--- ####
+							<p><span class="highlight-3">Right click </span>on your desktop and choose <span class="highlight-3">Desktop Settings</span>. Under the heading of <span class="highlight-3">Wallpaper</span> there is a sub heading called <span class="highlight-3">Picture</span> which provides a dropdown list for you to choose which wallpaper to display.  You may also click on the Browse button next to the Picture box to use an image you may have on file elsewhere in your computer.</p>
+							#### -->
+							<p><デスクトップをspan class="highlight-3">右クリック</span>して<span class="highlight-3">Desktop Settings</span>を選びます。<span class="highlight-3">Wallpaper</span> のタブの下に<span class="highlight-3">Picture</span> の項目がありお好みの背景を選ぶドロップダウンリストがあります。Browse ボタンを押せば他の場所にあるイメージファイルを背景にえらぶこともできます。</p>
+
+					<!--- ####
+					<h4>To change the Login screen:</h4>
+					#### -->
+					<h4>ログイン画面を変更するには:</h4>
+							<!--- ####
+							<p>To change the login screen, firstly open <span class="highlight-3">systemsettings</span> with root/administration privileges:</p>
+							#### -->
+							<p>ログイン画面を変更するには、まず root として <span class="highlight-3">systemsettings</span> を開き:</p>
+<pre>
+Alt  + F2 (krunner の入力画面が開きます)
+</pre>
+<pre>
+kdesu systemsettings
+</pre>
+
+							<!--- ####
+							<p>Next click on the <span class="highlight-3">Advanced tab</span> and then click on <span class="highlight-3">Login Manager</span>, go to the <span class="highlight-3">Theme tab</span> and choose your preferred theme. <span class="highlight-3">To activate the new Login manager you need to reboot the computer</span>.</p>
+							#### -->
+							<p>次に <span class="highlight-3">Advanced tab</span> をクリックしてさらに <span class="highlight-3">Login Manager</span> をクリックし、<span class="highlight-3">Theme tab</span> に行き、お好みのテーマを選びます。<span class="highlight-3">新しく選んだログインマネージャを有効にするには一度PCを再起動する必要があります。</span>.</p>
+							<!--- ####
+							<p><a href="http://kde.org">More KDE information and links</a> </p>
+							#### -->
+							<p><a href="http://kde.org">KDEについての詳しい情報はこちらに</a> </p>
+	</div>	
+	<div class="divider" id="xfce-notes">
+<!--- ####
+			<h2>Useful Xfce extras</h2>
+#### -->
+			<h2> Xfceのシステムにあると便利な追加ソフト </h2>
+	</div>
+	<div class="divider" id="xfce-notes-1">
+<!--- ####
+			<h3>Installing aptosid Xfce Art and Themes</h3>
+#### -->
+			<h3> Xfce 用の aptosid アートとテーマ</h3>
+
+<!--- ####
+							<p>To install the latest aptosid-art to an existing installation:</p>
+#### -->
+							<p>以前からインストールされたシステムで最新のaptosidアートに更新するには:</p>
+
+<pre>
+apt-get install aptosid-art-xfce-xxxx aptosid-art-wallpaper-xxxx
+(Where xxxx is the name of the release for example aptosid-art-xfce-uranos)
+</pre>
+
+<!--- ####
+							<p>This will install the aptosid wallpaper and themes, then change your defaults in the Settings menu of Xfce.</p>
+#### -->
+							<p>このコマンドでaptosidのワールペーパーとテーマがインストールされます。その後 Xfce の設定メニューでデフォルト設定してください。</p>
+							<!--<p>This will install the aptosid wallpaper and themes, then actualise your defaults in the Settings entry point of the xfce menu.</p>-->
+
+<!--- ####
+							<p><a href="http://www.xfce.org/documentation">Xfce Documentation</a></p>
+#### -->
+							<p><a href="http://www.xfce.org/documentation">Xfce の文書</a></p>
+
+							<p><a href="http://wiki.xfce.org">Xfce wiki</a></p>
+
+	</div>
+	<div class="divider" id="dm">
+					<!--- ####
+			  <h2>Display Managers - dm </h2>
+					#### -->
+			  <h2>ディスプレイマネージャ - DM </h2>
+						<!--- ####
+				  <h6>Installing other desktop environments along with a preinstalled desktop:</h6>
+						#### -->
+				  <h6>あらかじめインストールされたデスクトップ以外のデスクトップ環境をインストールするとき:</h6>
+
+							<!--- ####
+							<p>Whenever you install another desktop environment along with your current installation, (for example you installed the aptosid-kde.iso and you now want to install the Xfce or LXDE desktop environment), a display manager (dm) will most likely be installed along with it or you may have installed it yourself, (gdm, slim or some other dm package).</p>
+							#### -->
+							<p>あらかじめインストールされたデスクトップ以外のデスクトップ環境をインストールするとき、(例えば aptosid-kde.iso からインストールしたシステムに XFCE や LXDE などをインストールしたいときなど)、多くの場合そのデスクトップに付属のディスプレイマネージャ(DM)が一緒にインストールされます。またはユーザとして違うディスプレイマネージャ(gdm、slim その他のDM）に切り替えたい場合もあるでしょう。</p>
+
+							<!--- ####
+							<p>The problem with this is you will end up with the default Debian runlevel configuration with the consequence that you will need to stop X manually in runlevel 3 before commencing a dist-upgrade..</p>
+							#### -->
+							<p>そういうとき問題になるのは、パッケージのインストールは Debian のデフォルトのランレベル設定になっているので、結果として dist-upgrade のため ランレベル 3 (init 3) に入ってから dist-upgrade をはじめる前に手作業でXウィンドウズをストップする必要があることです。</p>
+
+							<!--- ####
+							<p>The solution is:</p>
+							#### -->
+							<p>これを解決するには:</p>
+<pre>
+apt-get update
+apt-get install --reinstall distro-defaults
+update-rc.d &lt;dm&gt; remove
+update-rc.d &lt;dm&gt; defaults
+</pre>
+							<!--- ####
+							<p>Examples for <span class="highlight-3">update-rc.d &lt;dm&gt; defaults</span> and note the dot <span class="highlight-2">.</span> :</p>
+							#### -->
+							<p><span class="highlight-3">update-rc.d &lt;dm&gt; defaults</span> の例。(点 <span class="highlight-2">.</span> だけのパラメータに注意):</p>
+
+<pre>
+update-rc.d kdm start 24 5 . stop 01 0 1 2 3 4 6 .
+</pre>
+
+<pre>
+update-rc.d gdm start 24 5 . stop 01 0 1 2 3 4 6 .
+</pre>
+
+<pre>
+update-rc.d slim start 01 5 . stop 01 0 1 2 3 4 6 .
+</pre>
+	</div>
+	<div class="divider" id="desk-freeze">
+			<!--- ####
+			<h2 id="top-header">Desktop freezes</h2>
+			#### -->
+			<h2>デスクトップが反応しなくなったら</h2>
+							<!--- ####
+							<p>In such a situation you don't always need the reset button. This could damage the filesystem or lead to loss of data. In any way the filesystem wont be clean after a hard reset (filesystem not clean)</p>
+							#### -->
+							<p>そんな時でも必ずしもすぐリセットボタンを押す必要はありません。 無理にリセットするとファイルシステムに害をおよぼしたりデータを失うことがあります。 そうでなくてもハードリセットの後のファイルシステムはクリーンではありません。</p>
+
+							<!--- ####
+							<p>First try changing to a textconsole <span class="highlight-3">alt-ctl-F1</span> or restarting the X-server <span class="highlight-3">alt-ctl-backspace</span>, (If either of these two options do not work, there is still hope):</p>
+							#### -->
+							<p>まずは<span class="highlight-3">Alt-Ctrl-F1</span>でテキストコンソールに変わるか、または<span class="highlight-3">Alt-Ctrl-backspace</span>でXを再スタートできるか試しましょう。 (両方だめでもまだ望みはあります):</p>
+
+							<!--- ####
+							<p>The SYSRQ-key (print-key, on the upper right side of the keyboard) can help you to cleanly reboot a frozen system.</p>
+							#### -->
+							<p>SYSRQキー(キーボード右上のprintキー)を使って反応しなくなったシステムをクリーンに再起動できます。</p>
+
+							<!--- ####
+							<p>The following sequence of key-combinations are possible:<br />
+							#### -->
+							<p>次のコンビネーションがあります:<br />
+							<!--- ####
+    							*<span class="highlight-3"> alt+sysrq+r</span> (should give back control of the keyboard)<br />
+							#### -->
+    							*<span class="highlight-3"> alt+sysrq+r</span> (キーボードの入力待ちにもどす)<br />
+							<!--- ####
+    							*<span class="highlight-3"> alt+sysrq+s</span> (issues a sync)<br />
+							#### -->
+    							*<span class="highlight-3"> alt+sysrq+</span>s (syncメッセージを発行)<br />
+							<!--- ####
+    							*<span class="highlight-3"> alt+sysrq+e</span> (Sends term to all processes but init)<br />
+							#### -->
+    							*<span class="highlight-3"> alt+sysrq+e</span> (init以外のすべてのプロセスに終了メッセージを送る)<br />
+							<!--- ####
+    							*<span class="highlight-3"> alt+sysrq+i</span> (Sends kill to all processes but init)<br />
+							#### -->
+    							*<span class="highlight-3"> alt+sysrq+i</span> (init以外のすべてのプロセスにkillメッセージを送る)<br />
+							<!--- ####
+    							*<span class="highlight-3"> alt+sysrq+u</span> (filesystems are mounted readonly, prevents fsck at reboot)<br />
+							#### -->
+    							*<span class="highlight-3"> alt+sysrq+u</span> (ファイルシステムをリードオンリーにして、再起動後のfsckを避ける)<br />
+							<!--- ####
+    							*<span class="highlight-3"> alt+sysrq+b</span> (reboots the system, without the previous steps this is  a 'hard reset').</p>
+							#### -->
+    							*<span class="highlight-3"> alt+sysrq+b</span> (コンピュータを再起動する。上のステップなしにいきなり実行したらハードリセットと同じ)。</p>
+
+
+							<!--- ####
+							<p>Its best give every step a few seconds to complete, ending all processes for example could take a little while. The needed letters can be easily remembered with:<b> "<span class="highlight-2">R</span>eboot <span class="highlight-2">S</span>ystem <span class="highlight-2">E</span>ven <span class="highlight-2">I</span>f <span class="highlight-2">U</span>tterly <span class="highlight-2">B</span>roken" </b></p>
+							#### -->
+							<p>たとえばすべてのプロセスを終了するのにはしばらく時間がかかりますから、上のステップごとに何秒か待って作業を完了する余裕を与えましょう。 タイプする文字と順番は:<b> "<span class="highlight-2">R</span>eboot <span class="highlight-2">S</span>ystem <span class="highlight-2">E</span>ven <span class="highlight-2">I</span>f <span class="highlight-2">U</span>tterly <span class="highlight-2">B</span>roken" </b>(訳注:「かなり壊れていたとしてもシステムを再起動する」の意)</p>
+
+							<p>Another way to remember it is:<br />
+							<b> "<span class="highlight-2">R</span>aising <span class="highlight-2">S</span>kinny <span class="highlight-2">E</span>lephants <span class="highlight-2">I</span>s <span class="highlight-2">U</span>tterly <span class="highlight-2">B</span>oring" </b></p>
+</div>
+			<div id="rev">Page last revised 01/05/2011 1215 UTC </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,588 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cs" lang="cs">
+<head>
+	<title>aptosid Manuals - Šifrovaná instalace</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Poslední revizi překladu provedl pumrel 11.3.2011 1210 CET -->
+<!--htdig_noindex--><div id="menu"> <!-- menu starts here -cz lang maintainer pumrel-->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="Na stránky aptosid.com, forum a wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-cz.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="Prohledávat manuál" alt="Search" />Hledat online - offline</a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Vyberte jiný jazyk - Choose another language CS, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="lang-switch CS, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-cz.htm">Manuál operačního systému aptosid</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-cz.htm#welcome-gen">Manuál operačního systému aptosid &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-cz.htm#cred-team">Autoři</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-cz.htm#how-to">Jak používat tento manuál &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-cz.htm#how-to">Jak používat tento manuál</a></li>
+					  <li><a href="welcome-cz.htm#table-contents">Obsah</a></li>
+					</ul>
+					</li>
+		<li><a href="help-cz.htm#help-gen">Kde hledat pomoc &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-cz.htm#help-gen">Kde a jak hledat pomoc</a></li>
+					  <li><a href="help-cz.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-cz.htm#welcome-quick">První kroky se aptosidem</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-cz.htm">Obsah ISO, Vydání, Zrcadla pro stahování a Vypalování</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-cz.htm#cd-content">Obsah ISO a nároky na systém &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-cz.htm#rolling">Poznámky k vydání</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-cz.htm#download-aptosid">Zrcadla pro stahování a vypálení &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-cz.htm#md5">Kontrolní součet md5</a></li>
+					  <li><a href="cd-dl-burning-cz.htm#burn-nero">Vypálení ve Windows</a></li>
+					  <li><a href="cd-dl-burning-cz.htm#burn-linux">Vypálení v Linuxu</a></li>
+					  <li><a href="cd-no-gui-burn-cz.htm#burning-no-gui">Skript burniso</a></li>
+					  <li><a href="cd-no-gui-burn-cz.htm#burn-no-gui-gen">Vypálení z terminálu</a></li>
+					  <li><a href="cd-dl-burning-cz.htm#download-aptosid">Zrcadla pro stažení aptosidu</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-cz.htm">Live Mód</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-cz.htm#rootpw">Root-heslo v aptosid-Live</a></li>
+				<li><a href="live-mode-cz.htm#live-cd-installsoft">Instalace programů pod aptosid-Live</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-cz.htm">Terminál / Konsole</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-cz.htm#term-kon">Terminál / Konsole &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-cz.htm#term-kon">Terminál / Konsole</a></li>
+					  <li><a href="term-konsole-cz.htm#colours">Barevné řádky terminálu</a></li>
+					  <li><a href="term-konsole-cz.htm#cli-help">Nápověda terminálu</a></li>
+					  <li><a href="help-cz.htm#init3-tools">Užitečné nástroje v textovém módu(tty) - init 3</a></li>
+					  <li><a href="term-konsole-cz.htm#term-cmds">Seznam příkazů v terminálu Linuxu</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-cz.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-cz.htm">Spouštěcí příkazy</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-cz.htm#cheatcodes">Spouštěcí příkazy pod Live-ISO specifické pro aptosid</a></li>
+				<li><a href="cheatcodes-cz.htm#cheatcodes-linux">Spouštěcí příkazy pro Linux</a></li>
+				<li><a href="cheatcodes-vga-cz.htm#vga">VGA kódy</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-cz.htm">Vytváření diskových oddílů - tradičně, s GPT a s LVM</a>
+		<ul class="sub-menu" id="sm6">
+			  <li><a href="part-gparted-cz.htm#hd-ntfs3g">Zapisování na diskový oddíl NTFS pomocí ntfs-3g</a></li>
+			  <li><a href="part-lvm-cz.htm#part-lvm">Vytvoření disk. oddílů pro použití LVM - Logical Volume Manager</a></li>
+			  <li><a href="part-gparted-cz.htm#partition">Vytvoření diskových oddílů v grafickém rozhraní &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-cz.htm#partition">Vytvoření diskových oddílů pomocí GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-cz.htm#ntfs">Změna velikosti diskového oddílu NTFS pomocí GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-cz.htm#partition">Vytvoření diskových oddílů s CLI &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-cz.htm#partition">Vytváření diskových oddílů pomocí cfdisk</a></li>
+					    <li><a href="part-cfdisk-cz.htm#formating">Formátování po vytvoření diskových oddilů pomocí cfdisk</a></li>
+					    <li><a href="part-gdisk-cz.htm#gdisk-6">Formátování po vytvoření diskových oddílů s gdiskem</a></li>
+					    <li><a href="part-gdisk-cz.htm#gdisk-1">Diskové oddíly GPT s gdiskem</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-cz.htm#part-example">Základy vytváření diskových oddílů &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-cz.htm#part-example">Příklady velikostí diskových oddílů</a></li>
+					  <li><a href="part-uuid-cz.htm#uuid">UUID, přestavění fstab a vytváření přípojných bodů</a></li>
+					  <li><a href="part-cfdisk-cz.htm#disknames">Pojmenovávání diskových oddílů a ostatní</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-cz.htm">Možnosti instalace - HD, USB, VM and Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-cz.htm#Inst-prep">Příprava instalace &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-cz.htm#Inst-prep">Příprava instalace</a></li>
+					  <li><a href="hd-install-cz.htm#Installation">Instalace na pevný disk</a></li>
+					  <li><a href="hd-install-cz.htm#first-hd-boot">První spuštění</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-cz.htm#fromiso">Načtení pomocí fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-cz.htm#fromiso">Načtení pomocí fromiso - Přehled</a></li>
+					  <li><a href="hd-install-opts-cz.htm#grub2-fromiso">Načtení 'fromiso' s Grub2</a></li>
+					  <li><a href="hd-install-opts-cz.htm#fromiso-persist">fromiso a persist</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-cz.htm#usb-hd">Instalace na USB-disk &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-cz.htm#usb-hd">Instalace na USB-disk - specifické pro aptosid - aptosid-on-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-cz.htm#raw-usb">Zapsaní aptosidu na USB/SSD-disk s jakýmkoliv systémem Linux, MS Windows nebo Mac OS X</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-cz.htm#install-crypt">Instalace na šifrovené diskové oddíly - cryptroot</a></li>
+		  <li><a href="nbdboot-cz.htm#nbd1">Načtení aptosidu přes síť</a></li>
+		  <li><a href="hd-install-vmopts-cz.htm#vm">Možnosti instalace ve Virtuálním Stroji</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-cz.htm">Grafické karty, monitory, Xorg,  &amp; ovladače</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-cz.htm#mon-res">Rozlišení obrazovky a monitory &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-cz.htm#mon-res">Rozlišení obrazovky a monitory</a></li>
+					  <li><a href="hw-dev-mon-cz.htm#xrandr">Dva monitory a xrandr</a></li>
+					  <li><a href="hw-dev-mon-cz.htm#mon-binary">Dva monitory (za použití binárních ovladačů)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-cz.htm#foss-xorg">Ovladače GPU &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-cz.htm#ati-3d">3D ovladače pro AMD/ATI</a></li>
+					  <li><a href="gpu-cz.htm#intel">2D a 3D ovladače pro Intel</a></li>
+					  <li><a href="gpu-cz.htm#nvidia">3D ovladače pro Nvidia</a></li>
+					  <li><a href="gpu-cz.htm#foss-xorg">Svobodné ovladače Xorg</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-cz.htm#fw-detect">Rozpoznání firmwaru - non-free</a></li>
+			  <li><a href="nf-firm-cz.htm#non-free-firmware">Přidání non-free do seznamu zdrojů</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-cz.htm#install-add">Správci oken</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-cz.htm">KDE and XFCE Správci oken &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-cz.htm#xfce-notes">Užitečné dodatečné aplikace pro Xfce</a></li>
+					    <li><a href="wm-dm-cz.htm#install-add">Užitečné dodatečné aplikace pro KDE</a></li>
+					    <li><a href="wm-dm-cz.htm#desk-freeze">Zamrznutí plochy</a></li>
+					    <li><a href="wm-dm-cz.htm#kde-login">Nejde se přihlásit do KDE</a></li>
+					    <li><a href="wm-dm-cz.htm#ch-th">Změna témat</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-cz.htm#dm">Instalace dodatečných správců zobrazení</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-cz.htm">Připojení k internetu, WiFi, LAN a sítím</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-cz.htm">Sestava LAMP aptosidu &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-cz.htm#serv-apache">Sestava LAMP aptosidu</a></li>
+					    <li><a href="lamp-apache-cz.htm#serv-ftp">FTP klienty</a></li>
+					    <li><a href="lamp-apache-cz.htm#serv-sec">Bezpečnostní protokoly</a></li>
+					    <li><a href="lamp-apache-cz.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-cz.htm#serv-mysql">Nastavení MySQL</a></li>
+					    <li><a href="lamp-ppp-cz.htm#serv-php">PHP v Apache</a></li>
+					    <li><a href="ntp-server-cz.htm#ntp-server">Nastavení Timeserveru</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-cz.htm#tor">Firewally and Soukromí &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-cz.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-cz.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-cz.htm#firewalls">Firewally</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-cz.htm#ssh-x">SSH a Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-cz.htm#setup">Nastavení Samba-Serveru</a></li>
+						  <li><a href="samba-cz.htm#configure">Konfigurace SAMBY (Windows)</a></li>
+						  <li><a href="ssh-cz.htm#ssh-fs">Vzdálené připojení přes SSH</a></li>
+						  <li><a href="ssh-cz.htm#ssh-x">Aplikace X přes SSH</a></li>
+						  <li><a href="ssh-cz.htm#ssh-f">Grafické rozhraní přes SSH s Konquerorem</a></li>
+						  <li><a href="ssh-cz.htm#ssh-w">Přenos rozhraní X přes SSH z Windows-PC</a></li>
+						  <li><a href="ssh-cz.htm#ssh">SSH a soukromí</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-cz.htm#netcardconfig">WIFI připojení &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-cz.htm#netcardconfig">Připojení se online - Ceni</a></li>
+						    <li><a href="inet-wpagui-cz.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-cz.htm#net-set1">WiFi - nastavení pro WiFi roaming</a></li>
+						    <li><a href="inet-wpa-cz.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-cz.htm#hotswitch">Přepínání síťového připojení mezi WiFi a Kabelovým</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-cz.htm#netcardconfig">Kabelové připojení &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-cz.htm#dial-mod">56k Modemy</a></li>
+						    <li><a href="inet-ceni-cz.htm#netcardconfig">Připojení se online- Ceni</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-cz.htm#fw-detect">Rozpoznání firmwaru - non-free</a></li>
+		<li><a href="nf-firm-cz.htm#non-free-firmware">Přidání non-free do seznamu zdrojů</a></li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-cz.htm">Správa balíčků dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-cz.htm#apt-cook">APT návod a zdroje softwaru &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-cz.htm#apt-cook">APT-návod (CookBook) a zdroje software</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#apt-install">Instalace nového balíčku</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#apt-delete">Smazání balíčku</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#apt-downgrade">Podržení balíčku nebo instalace nižší verze</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#apt-cache">Vyhledávání balíčků pomocí apt-cache</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#gui-pacsea">Vyhledávání balíčků v graf. rozhraní</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-cz.htm#kern-upgrade">Povýšení verze jádra (kernel) &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-cz.htm#kern-remove">Odstranění jádra</a></li>
+					    <li><a href="sys-admin-kern-upg-cz.htm#kern-upgrade">Povýšení verze jádra</a></li>
+					    <li><a href="sys-admin-kern-upg-cz.htm#dmakms">Dynamická instalaca modulů jádra s dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-cz.htm#apt-upgrade">Aktualizace nainstalovaného systému - dist-upgrade - Přehled &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-cz.htm#live-cd-upgrade">Aktualizace pomocí Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-cz.htm#approx">dist-upgrade vícero počítačů přes LAN</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#apt-upgrade">Aktualizace nainstalovaného systému - dist-upgrade - Přehled</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#du-st">Aktualizace nainstalovaného systému - dist-upgrade - jednotlivé kroky</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-cz.htm">Administrace systému</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-cz.htm#bois-prep">Povýšení verze BIOSu pomocí FreeDOS</a></li>
+		<li><a href="vir-rkits-cz.htm#virus-rkits">Vyhledávače virů a rootkitů</a></li>
+		<li><a href="hd-install-cz.htm#adduser">Přidání uživatelů a hesel &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-cz.htm#adduser">Přidání nového uživatele</a></li>
+					    <li><a href="sys-admin-gen-cz.htm#pw-lost">Ztracené root heslo, nové heslo</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-cz.htm#start-services">Služby a úrovně spuštění init &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-cz.htm#start-services">Spouštění/zastavení služeb</a></li>
+					    <li><a href="sys-admin-gen-cz.htm#pkill">Zabití služby nebo procesu</a></li>
+					    <li><a href="sys-admin-gen-cz.htm#init">Úrovně spuštění aptosidu - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-cz.htm#rsync">Zálohování systému &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-cz.htm#rdiff">Zálohování pomocí rdiff</a></li>
+					    <li><a href="sys-admin-rsync-cz.htm#rsync">Zálohování pomocí rsync</a></li>
+					    <li><a href="home-cz.htm#home-bu">Přesunutí /home adresáře</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-cz.htm#fonts">CUPS, fonty a zvuk &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-cz.htm#fonts">Fonty</a></li>
+					     <li><a href="sys-admin-gen-cz.htm#cups">CUPS - tiskový systém</a></li>
+					     <li><a href="sys-admin-gen-cz.htm#sound">Zvukový mixér</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-cz.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-cz.htm#chroot">Grub2 - obnova Grubu s pomocí chroot</a></li>
+					    <li><a href="sys-admin-grub2-cz.htm#mbr-over-grub2">Grub2 - přepsání zaváděcího sektoru MBR</a></li>
+					    <li><a href="sys-admin-grub2-cz.htm#multi-os">Grub2 - zavádění  více systémů</a></li>
+					    <li><a href="sys-admin-grub2-cz.htm#grub1-grub2">Grub2 - povýšení z Grub1</a></li>
+					    <li><a href="sys-admin-grub2-cz.htm#grub2">Grub2 - přehled</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Sponsored by webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid is proudly hosted by webtropia.com" alt="aptosid is proudly hosted by webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+		<div class="divider" id="install-crypt">
+<!--				<h2 id="top-header">Installing to a cryptroot</h2>-->
+				<h2 id="top-header">Instalace do cryptroot</h2>
+<!--							<p><span class="highlight-2">Please note: There are some caveats using this guide for encrypting root or data partitions. These are:</span> </p>-->
+							<p><span class="highlight-2">Zaznamenejte prosím: Je tu pár výstrah při používání tohoto návodou pro zašifrování kořenového diskového oddílu a datových. Jsou to:</span> </p>
+						    <ul>
+
+<!--							<li>This is a basic guide to get you started. It is your responsibilty to learn more about LUKS, cryptsetup and encryption. Sources and Resources are linked at the bottom of this page which will be of help, however the list is definitely not exhaustive.</li>-->
+							<li>Toto je základní návod pro začátek. Je vaší zodpovědností se dozvědět více o LUKS, cryptsetup a šifrování. Prameny a zdroje jsou odkazování dole na této stránce a mohou být nápomocny. Nicméně jejich seznam není vyčerpávající.</li>
+
+<!--							<li>cryptsetup cannot encrypt an existing data partition, so you must create a new partition, set it up with cryptsetup and then move your data onto it.</li>-->
+							<li>cryptsetup nemůže zašifrovat již existující datový diskový oddíl, takže budete muset vytvořit nový, nastavit jej pomocí cryptsetup a pak na něj přesunout vaše data.</li>
+
+<!--							<li>You can also use key files and have multiple keys for the data, (up to 8,  including the removal of keys), which is outside the scope of this guide.</li>-->
+							<li>Také můžete používat soubory s klíči a mít jich pro vaše data vícero (až 8, včetně odstranění klíčů), což ale nad rámec tohoto návodu.</li>
+
+<!--							<li><span class="highlight-3">Do not forget the passphrases as you will lose access to everything! Even a chroot without knowing the passphrases will not of be of any help except for /boot.</span></li>-->
+							<li><span class="highlight-3">Nezapomeňte vaši přihlašovací frázi, neboť byste tak ke všemu ztratili přístup! I přes chroot se bez znalosti přihlašovací fráze nedá k datům dostat, až na /boot.</span></li>
+
+<!--							<li>Early in the boot process you will be asked for your passphrase for the crypt device and the system will boot up as expected.</li>-->
+							<li>V počátku zaváděcího procesu budete na příhlašovací frázi k zašifrovanému zařízení dotázání a systém se pak zavede jako obvykle.</li>
+						    </ul>
+<!--					      <h3>Encryption examples:</h3>-->
+					      <h3>Příklady šifrování:</h3>
+						    <ul>
+<!--							<li><a href="hd-install-crypt-cz.htm#lvm">Using crypt within LVM groups</a>.</li>-->
+							<li><a href="hd-install-crypt-cz.htm#lvm">Použití crypt se skupinami LVM</a>.</li>
+
+<!--							<li><a href="hd-install-crypt-cz.htm#simple">Notes for crypt with traditional partitioning methods</a>.</li>-->
+							<li><a href="hd-install-crypt-cz.htm#simple">Poznámky pro crypt se standardními metodami vytváření diskových oddílů</a>.</li>
+						    </ul>
+
+			      </div>
+
+			      <div class="divider" id="lvm">
+<!--					      <h2>Encryption within LVM groups</h2>-->
+					      <h2>Šifrování se skupinami LVM</h2>
+<!--							<p><span class= "highlight-3">This example uses crypt inside the LVM volume to enable you let you split your home from <span class= "highlight-2"> / </span> and have a swap partition without needing multiple passwords and is applicable from aptosid-2010-03-apate and later.</span></p>-->
+							<p><span class= "highlight-3">Tento příklad využívá crypt uvnitř svazku LVM a umožní vám oddělení vašeho home od <span class= "highlight-2"> / </span> a využití diskového oddílu swap bez nutnosti mít více hesel. Je možné jej použít od verze aptosid-2010-03-apate a novější.</span></p>
+
+<!--							<p>Before running the installer you must prepare the filesystems which will be used for the installation. For basic LVM partitioning  guidelines, you need to refer to <a href="part-lvm-cz.htm#part=lvm">Logical Volume Manager - LVM partitioning</a>. </p>-->
+							<p>Než spustíte vlastní instalátor, musíte připravit souborové systému, které pak budou pro instalaci použity. Pro běžné způsoby vytváření diskových oddílů LVM se odkaže na <a href="part-lvm-cz.htm#part=lvm">Logical Volume Manager - Vytváření diskových oddílů LVM</a>. </p>
+
+<!--							<p>You will need at least an unencrypted <span class= "highlight-3">/boot </span>filesystem and an encrypted <span class= "highlight-2"> / </span>filesystem and also create encrypted <span class= "highlight-3">/home and swap</span> filesystems. </p>-->
+							<p>Budete potřebovat alespoň nezašifrovaný souborový systém <span class= "highlight-3">/boot </span>, dále budou vytvořeny šifrované souborové systémy <span class= "highlight-2"> / </span> a také <span class= "highlight-3">/home a swap</span>. </p>
+						  <ol>
+<!--							<li>If you are not planning to use an existing lvm volume group then create a normal lvm volume group. This example will assume that the volume group is called <span class= "highlight-3">vg</span>  to hold your boot and encrypted data.</li>-->
+							<li>Jestli nezamýšlíte použít existující skupinu svzaků LVM, pak vytvořte další novou normální skupinu svazků. Tento příklad předpokládá, že máte skupinu svazků nazvanou <span class= "highlight-3">vg</span>, která bude obsahovat boot a vaše zašifrovaná data.</li>
+
+<!--							<li>You will need a logical volume for /boot and the encrypted data so use <span class= "highlight-3">lvcreate</span> to create the logical volumes in <span class= "highlight-3">vg</span> volume group with the sizes you want:-->
+							<li>Budete potřebovat logické svazky pro váš /boot a pak zašifrovaná data, takže použijte <span class= "highlight-3">lvcreate</span> pro vytvoření logických svazků ve skupině svazků <span class= "highlight-3">vg</span> s velikostmi, jaké si přejete:
+<pre>
+lvcreate -n boot --size 250m vg
+lvcreate -n crypt --size 300g vg
+</pre>
+<!--							Here you have named the logical volumes swap, root and home and made them 2Gb, 40Gb and 80Gb respectively.-->
+							Budeme vytvářet logické svazky swap, root a home, kterou budou mít 2 GB, 40 GB a 80 GB resp.
+							</li>
+<!--							<li>Create the filesystem for <span class= "highlight-3">/boot</span> so it will be available in the installer:-->
+							<li>Vytvořte souborový systém pro <span class= "highlight-3">/boot</span>, aby byl k dispozici pro instalátor:
+<pre>
+mkfs.ext4 /dev/mapper/vg-boot
+</pre>
+							</li>
+<!--							<li>Use <span class= "highlight-3">cryptsetup</span> to encrypt <span class= "highlight-3">vg-crypt</span> using the faster xtc option with the highest strength key length of 512bit and then open it. This will ask you for your password twice to set it and then a third time to open it. Open it here under the default boot time cryptopts target name of cryptroot:-->
+							<li>Použijte <span class= "highlight-3">cryptsetup</span> pro zašifrování <span class= "highlight-3">vg-crypt</span> s použitím rychlejší volby xts s nějvětší sílou délky klíče 512bit, poté jej otevřete. Budete dvakrát požádáni o zadání vašeho heslo a potřetí pro otevření. Otevřete jej výchozím názvem cíle času zavádění cryptopts cryptroot:
+<pre>
+cryptsetup --verify-passphrase --cipher aes-xts-plain:sha512 luksFormat /dev/mapper/vg-crypt
+</pre>
+
+<pre>
+cryptsetup luksOpen /dev/mapper/vg-crypt cryptroot
+</pre>
+							</li>
+<!--							<li>Now use lvm inside the encrypted device to create a second volume group that will be used for the <span class= "highlight-3">/swap</span> and <span class= "highlight-3">/home</span> devices. <span class= "highlight-3">pvcreate</span> cryptroot to make it a physical volume and use it with <span class= "highlight-3">vgcreate</span> to create another volume group, we call it <span class= "highlight-3">cryptvg</span>:-->
+							<li>Nyní použijte lvm uvnitř zašifrovaného zařízení  pro vytvoření druhé skupinty svazků, která bude použita pro zařízení <span class= "highlight-3">/swap</span> a <span class= "highlight-3">/home</span>. <span class= "highlight-3">pvcreate</span> cryptroot, aby se z něj stal fyzický svazek a použijte jej s <span class= "highlight-3">vgcreate</span> pro vytvoření nové skupiny svazků, kterou nazveme <span class= "highlight-3">cryptvg</span>:
+<pre>
+pvcreate /dev/mapper/cryptroot
+vgcreate cryptvg /dev/mapper/cryptroot
+</pre>
+							</li>
+<!--							<li>Next use <span class= "highlight-3">lvcreate</span> with the new encrypted <span class= "highlight-3">cryptvg</span> volume group to create the <span class= "highlight-2"> / </span>, <span class= "highlight-3">/swap</span> and <span class= "highlight-3">/home </span>logical volumes with the sizes you want:-->
+							<li>Poté použijte příkazu <span class= "highlight-3">lvcreate</span> s nově vytvořenou zašifrovanou skupinou svazků <span class= "highlight-3">cryptvg</span> pro vytvoření logických svazků <span class= "highlight-2"> / </span>, <span class= "highlight-3">/swap</span> a <span class= "highlight-3">/home </span> s velikostmi, jaké si přejete:
+
+<pre>
+lvcreate -n swap --size 2g cryptvg
+lvcreate -n root --size 40g cryptvg
+lvcreate -n home --size 80g cryptvg
+</pre>
+<!--							Here you have named the logical volumes swap, root and home and made them 2Gb, 50Gb and 250Gb respectively.-->
+							Zde jsme logické svazky pojmenovali swap, root a home a jejich velikosti jsme zvolili 2 GB, 50 GB a 250 GB resp.
+							</li>
+<!--							<li>Create the filesystems for cryptvg-swap, cryptvg-root and cryptvg-home so they are available in the installer:-->
+							<li>Vytvořte souborové systémy pro cryptvg-swap, cryptvg-root a cryptvg-home, ať je má k dispozici instalátor:
+<pre>
+mkswap /dev/mapper/cryptvg-swap
+mkfs.ext4 /dev/mapper/cryptvg-root
+mkfs.ext4 /dev/mapper/cryptvg-home
+</pre>
+							</li>
+
+<!--							<li><b>Now you are ready to run the installer where you should use:</b><br />-->
+							<li><b>Nyní můžete použít instalátor, kde byste měli použít:</b><br />
+							<span class= "highlight-3">vg-boot</span> pro <span class= "highlight-3">/boot</span>,<br />
+							<span class= "highlight-3">cryptvg-root</span> pro <span class= "highlight-2"> /</span>,<br />
+							<span class= "highlight-3">cryptvg-home</span> pro <span class= "highlight-3">/home</span>,<br />
+							and <span class= "highlight-3">cryptvg-swap</span> for <span class= "highlight-3">swap</span> should be automagically recognised.</li>
+						    </ol>
+
+<!--							<p>The installed system should end up with a kernel command line including the following options:</p>-->
+							<p>Instalovaný systém by měl získat řádku přikazu kernelu, která by měla obsahovat následující volby:</p>
+<pre>
+root=/dev/mapper/cryptvg-root cryptopts=source=/dev/mapper/vg-crypt,target=cryptroot,lvm=cryptvg-root
+</pre>
+<!--							<p>You now have the crypt and boot under the vg lvm volume group and the root, home and swap inside the vgcrypt lvm volume group which is inside your password protected encrypted device.</p>-->
+							<p>Nyní máte crypt a boot pod skupinou svazků lvm nazvanou vg a root, home a swap máte uvnitř skupiny svazků lvm nazvanou vgcypt, která je umístěna v heslem zašifrovaném zařízení.</p>
+
+							<p><span class= "highlight-3">Note:</span> If reinstalling to a previously encrypted lvm volume the installer needs to be made aware of the crypt:</p>
+<pre>
+cryptsetup luksOpen /dev/mapper/cryptvg-root cryptvg
+vgchange -a y
+</pre>
+			  </div>
+			  <div class="divider" id="simple">
+<!--					<h2>Notes for crypt with traditional partitioning methods</h2>-->
+					<h2>Poznámky pro crypt s tradičními metodami vytváření diskových oddílů</h2>
+<!--							<p>The first thing to decide is how you want to layout your disk. You will need a minimum of 2 partitions, one normal partition for your <span class="highlight-3">/boot</span> and one for the encypted data. </p>-->
+							<p>První věc, kterou musíte rozhodnout, je uspořádání vašeho disku. Budete potřebovat alespoň dva diskové oddíly, jeden normálné pro <span class="highlight-3">/boot</span> a jeden pro zašifrovaná data. </p>
+
+<!--							<p>Assuming you require swap (which should also be encrypted) you will need a third partition and will have to enter the password for swap seperately during bootup (so you will have two password prompts). </p>-->
+							<p>Jelikož také nejspíš potřebujete swap (který by měl být také zašifrován), budete potřebovat i třetí diskový oddíl a budete pro něj muset zadávat heslo odděleně při zavádění systému (takže budete dotázání na dvě hesla).</p>
+
+<!--							<p>It is possible to use keys for the swap from inside the encrypted system with traditional partitioning, however you will not be able to suspend to disk. Due to these issues, the better option in the long term is to use  LVM volumes with fully encrypted partitions and keys.</p>-->
+							<p>Je také možné použít klíč pro swap přímo ze zašifrovaného sytému s tradičním diskovým oddíl, ale v takovém případě byste nemohli uspávat na disk. Vzhledem k těmto překázkám je dlouhodobě lepší volbou použití svazků LVM s kompletně zašifrovanými diskovými oddíly a klíči.</p>
+
+							<!--<p>It is possible to use keys for the swap from inside the encrypted system with traditional partitioning, however you will not be able to suspend to disk. Due to these issues, LVM volumes with fully encrypted partitions with keys is definitely the better option in the long term.</p>-->
+
+<!--			      <h6> Essential assumptions:</h6>-->
+			      <h6>Důležité předpoklady:</h6>
+						  <ul>
+<!--							<li> There are just 3 plain partitions on this disk:<br />-->
+							<li> Na disku jsou pouze 3 diskové oddíly:<br />
+							<span class="highlight-3"> /boot</span>,  o velikosti 250 MB<br />
+							<span class="highlight-3"> swap</span>, o velikosti 2 GB<br />
+							<span class="highlight-2"> / </span> a <span class="highlight-3"> /home</span> jako jeden (pro příklad).</li>
+
+<!--							<li>2 passphrases will be required, 1 for swap the other for the <span class="highlight-2"> / </span> and <span class="highlight-3"> /home</span> combined.</li>-->
+							<li>Budou vyžadovány 2 přihlašovací fráze, 1 pro swap, druhá pro  <span class="highlight-2"> / </span> a <span class="highlight-3"> /home</span> dohromady.</li>
+						   </ul>
+
+<!--							<p>Now that you have the partitioning done, you need to prepare the encrypted partitions so that they will be recognised by the installer.</p>-->
+							<p>Nyní, když máte hotové diskové oddíly, musíte připravit zašifrované diskové oddíly, aby byly rozpoznány instalátorem.</p>
+
+<!--							<p>If you have been using a GUI partitioning application, close it and open a terminal, as the encryption  commands need to be done from the command line.</p>-->
+							<p>Pokud jste použivali aplikaci s grafickým rozhraním pro vytváření diskových oddílů, tak ji zavřete a otevřete terminál, jelikož příkazy pro šifrování musí být zadávány z příkazové řádky.</p>
+
+<!--					      <h5>The /boot partition</h5>-->
+					      <h5>Diskový oddíl /boot</h5>
+<!--							<p>Make the <span class="highlight-3">/boot </span> partition an ext4 partition, if you have not already done so:</p>-->
+							<p>Vytvořte z <span class="highlight-3">/boot </span> diskový oddíl s ext4, pokud jste tak již neučinili:</p>
+<pre>
+/sbin/mkfs.ext4 /dev/sda1
+</pre>
+
+
+
+
+<!--					      <h5>Encrypted swap partition</h5>-->
+					      <h5>Zašifrovaný diskový oddíl swap</h5>
+
+<!--							<p>For the <span class="highlight-3">encrypted swap</span> you first need to format and open the raw device, <span class="highlight-3">/dev/sda2</span>, as an encrypted device, like the vg-crypt device above but opening it under a different name, swap.</p>-->
+							<p>Pro <span class="highlight-3">zašifrovaný swap</span> musíte nejdříve naformátovat a otevřít samotné zařízení, <span class="highlight-3">/dev/sda2</span>, jako šifrované zařízení, podobně jako zařízení vg-crypt výše, ale otevřené pod jiným názvem, swap.</p>
+<ol>
+<li><pre>
+cryptsetup --verify-passphrase --cipher aes-xts-plain:sha512 luksFormat /dev/sda2
+</pre></li>
+
+<li><pre>
+cryptsetup luksOpen /dev/sda2 swap
+</pre></li>
+
+<li><pre>
+echo "swap UUID=$(blkid -o value -s UUID /dev/sda2) none luks" >> /etc/crypttab
+</pre></li>
+</ol>
+							<p>Format the created <span class="highlight-3">/dev/mapper/swap</span> so it will be recognised by the installer:</p>
+
+<pre>
+/sbin/mkswap /dev/mapper/swap
+</pre>
+
+<!--					      <h5>Encrypted / partition</h5>-->
+					      <h5>Zašifrovaný diskový oddíl /</h5>
+<!--							<p>For the <span class="highlight-3">encrypted /</span> you first need to format and open the raw device, <span class="highlight-3">/dev/sda3</span>, as an encrypted device, like the vg-crypt device above.</p>-->
+							<p>Pro <span class="highlight-3">zašifrovaný /</span> musíte nejprve naformátovat a otevřít samotné zařízení, <span class="highlight-3">/dev/sda3</span>, jako šifrované zařízení, podobně jako zařízení vg-crypt výše.</p>
+
+<pre>
+cryptsetup --verify-passphrase --cipher aes-xts-plain:sha512 luksFormat /dev/sda3
+</pre>
+
+<pre>
+cryptsetup luksOpen /dev/sda3 cryptroot
+</pre>
+
+<!--							<p>Format the created <span class="highlight-3">/dev/mapper/cryptroot</span> so it will show up in the installer:</p>-->
+							<p>Naformátuje právě vytvořený <span class="highlight-3">/dev/mapper/cryptroot</span>, aby se objevil v instalátoru:</p>
+
+<pre>
+/sbin/mkfs.ext4 /dev/mapper/cryptroot
+</pre>
+
+<!--					  <h3>Open the installer</h3>-->
+					  <h3>Otevřete instalátor</h3>
+<!--							<p><b>Now you are ready to run the installer where you should use:</b><br />-->
+							<p><b>Nyní jste připraveni spustit instalátor, kde byste měli použít:</b><br />
+							<span class= "highlight-3">sda1</span> pro  <span class= "highlight-3">/boot</span>,<br />
+							<span class= "highlight-3">cryptroot</span> for <span class= "highlight-2"> / </span> and <span class= "highlight-3"> /home</span> <br />
+							<span class= "highlight-3">swap</span> should be automagically recognised.</p>
+
+<!--							<p>The installed system should end up with a kernel command line including the following options (though your UUID will be used):</p>-->
+							<p>Instalovaný systém by měl získat řádku přikazu kernelu, která by měla zahrnovat následující volby (použito bude ale vaše UUID):</p>
+<pre>
+root=/dev/mapper/cryptroot cryptopts=source=UUID=12345678-1234-1234-1234-1234567890AB,target=cryptroot
+</pre>
+<!--							<p>You now have /boot in a plain partition, an encrypted password protected swap along with an encrypted root and /home.</p>-->
+							<p>Nyní máte /boot v běžném diskovém oddílu a heslem zašifrovaný diskový oddíl swap spolu se zašifrovaným /home a /.</p>
+
+			      </div>
+<!--				  <h3>Sources and Resources:</h3>-->
+				  <h3>Prameny a zdroje:</h3>
+<!--							<p>Required reading:</p>-->
+							<p>Vyžadované čtení:</p>
+
+<pre>
+man cryptsetup
+</pre>
+							<p><a href="http://code.google.com/p/cryptsetup/">LUKS</a>.</p>
+
+							<p><a href="http://www.redhat.com/">Redhat</a> a <a href="http://www.redhat.com/Fedora/">Fedora </a>.</p>
+
+							<p><a href="http://www.enterprisenetworkingplanet.com/netsecur/article.php/3683011"> Protect Your Stuff With Encrypted Linux Partitions</a>.</p>
+
+							<p><a href="http://blog.bodhizazen.net/linux/kvm-how-to-use-encrypted-images/">KVM how to use encrypted images</a>.</p>
+
+							<p><a href="http://aptosid.com/index.php?module=wikula&amp;tag=FullDiskEncryptionTheDebianWay">aptosid wiki</a>.</p>
+
+	<div id="rev">Obsah naposledy revidován 06/09/2011 0920 UTC</div>
+
+</div>
+</body>
+</html>

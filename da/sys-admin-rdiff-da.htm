@@ -1,0 +1,545 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="da" lang="da">
+<head>
+	<title>aptosid Manuals - rdiff</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision by ragupo 23/02/2011 2200hrs UTC -->
+<!--htdig_noindex--><div id="menu"> <!-- menu starts here en lang maintained by ragupo-->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="Tilbage til aptosid.com forums og wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-da.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" />Søg online - offline</a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Vælg et andet sprog - Choose another language CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="lang-switch CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-da.htm">aptosid OS Manual</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-da.htm#welcome-gen">aptosid OS Manual &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-da.htm#cred-team">Tak til</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-da.htm#how-to">Hvordan du anvender denne manual &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-da.htm#how-to">Hvordan du anvender denne manual</a></li>
+					  <li><a href="welcome-da.htm#table-contents">Inholdsfortegnelse</a></li>
+					</ul>
+					</li>
+		<li><a href="help-da.htm#help-gen">Sådan får du hjælp &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-da.htm#help-gen">Hvor og hvordan får du hjælp</a></li>
+					  <li><a href="help-da.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-da.htm#welcome-quick">aptosid Hurtig Start Guide</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-da.htm">ISO indhold, udgivelser, filspejle og cd-brænding</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-da.htm#cd-content">ISO indhold og systemkrav &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-da.htm#rolling">Bemærkninger til udgivelsen</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-da.htm#download-aptosid">aptosid filspejle, download og cd-brænding &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-da.htm#md5">md5 Checksum</a></li>
+					  <li><a href="cd-dl-burning-da.htm#burn-nero">cd-brænding i Windows</a></li>
+					  <li><a href="cd-dl-burning-da.htm#burn-linux">cd-brænding i Linux</a></li>
+					  <li><a href="cd-no-gui-burn-da.htm#burning-no-gui">burniso skript</a></li>
+					  <li><a href="cd-no-gui-burn-da.htm#burn-no-gui-gen">cd-brænding uden grafisk brugerflade</a></li>
+					  <li><a href="cd-dl-burning-da.htm#download-aptosid">aptosid download filspejle</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-da.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-da.htm#rootpw">Root-kodeord på aptosid Live ISO</a></li>
+				<li><a href="live-mode-da.htm#live-cd-installsoft">Installering af programmer under Live-ISO</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-da.htm">Terminalen</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-da.htm#term-kon"> Terminal &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-da.htm#term-kon"> Terminalen</a></li>
+					  <li><a href="term-konsole-da.htm#colours"> Farver i terminal-prompten</a></li>
+					  <li><a href="term-konsole-da.htm#cli-help">Hjælp til kommandolinien</a></li>
+					  <li><a href="help-da.htm#init3-tools">Nyttige værktøjer til text mode (tty) - init 3</a></li>
+					  <li><a href="term-konsole-da.htm#term-cmds">Linux Terminal kommando liste</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-da.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-da.htm">CheatCodes</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-da.htm#cheatcodes">aptosid specifikke Live-ISO Cheatcodes</a></li>
+				<li><a href="cheatcodes-da.htm#cheatcodes-linux">Linux generiske Cheatcodes</a></li>
+				<li><a href="cheatcodes-vga-da.htm#vga">VGA Codes</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-da.htm">Partitioning the Hard Drive - Traditional, GPT and LVM</a>
+		    <ul class="sub-menu" id="sm6">
+			  <li><a href="part-gparted-da.htm#hd-ntfs3g">Skriv til NTFS partitioner med ntfs-3g</a></li>
+			<li><a href="part-lvm-da.htm#part-lvm">Partitionering med anvendelse af LVM - Logical Volume Manager</a></li>
+			<li><a href="part-gparted-da.htm#partition">Partitionering med grafisk brugerflade &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-da.htm#partition">Partitionering af din harddisk med GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-da.htm#ntfs">Ændre størrelsen på NTFS partitioner med GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-da.htm#partition">Partitionering fra kommandolinien &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-da.htm#partition">Partitionering af harddisken med cfdisk</a></li>
+					    <li><a href="part-cfdisk-da.htm#formating">Formattering efter partitionering med cfdisk</a></li>
+					    <li><a href="part-gdisk-ca.htm#gdisk-6">Formatting after partitioning with gdisk</a></li>
+					    <li><a href="part-gdisk-da.htm#gdisk-1">GPT Partitioning with gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-da.htm#part-example">Basal partitionering &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-da.htm#part-example">Eksempler på partitionsstørrelser</a></li>
+					  <li><a href="part-uuid-da.htm#uuid">UUID, Genopbygning af fstab og oprettelse af nye monteringspunkter</a></li>
+					  <li><a href="part-cfdisk-da.htm#disknames">Nomenklatur for diske og partitionsnavngivning</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-da.htm">Installations muligheder - HD, USB, VM og Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-da.htm#Inst-prep">Forberedelser til installationen &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-da.htm#Inst-prep">Installations forberedelser</a></li>
+					  <li><a href="hd-install-da.htm#Installation">Installering til harddisken</a></li>
+					  <li><a href="hd-install-da.htm#first-hd-boot">Første opstart</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-da.htm#fromiso">Opstart fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-da.htm#fromiso">Opstart fromiso - Overblik</a></li>
+					  <li><a href="hd-install-opts-da.htm#grub2-fromiso">Opstart 'fromiso' med Grub 2</a></li>
+					  <li><a href="hd-install-opts-da.htm#fromiso-persist">Fromiso og persist</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-da.htm#usb-hd">Installering til USB drev &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-da.htm#usb-hd">Installering til en USB-HD - aptosid specific - aptosid-on-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-da.htm#raw-usb">Installering af aptosid til USB/SSD nøgle fra Linux, MS Windows eller Mac OS X systemer</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-da.htm#install-crypt">Installering på krypterede partitioner - cryptroot</a></li>
+		  <li><a href="nbdboot-da.htm#nbd1">Boote aptosid over netværketk</a></li>
+		  <li><a href="hd-install-vmopts-da.htm#vmopts">Virtual Machine installations muligheder</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-da.htm">Grafikkort, Monitors, Xorg &amp; drivere</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-da.htm#mon-res">Skærmopløsning og monitors  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-da.htm#mon-res">Skærm opløsning og monitors</a></li>
+					  <li><a href="hw-dev-mon-da.htm#xrandr">Dual Monitors og xrandr</a></li>
+					  <li><a href="hw-dev-mon-da.htm#mon-binary">Dual Monitors (med binære drivere)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-da.htm#foss-xorg">GPU drivers &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-da.htm#ati-3d">AMD/ATI 3D drivere</a></li>
+					  <li><a href="gpu-da.htm#intel">Intel 2D and 3D drivere</a></li>
+					  <li><a href="gpu-da.htm#nvidia">Nvidia 3D drivere</a></li>
+					  <li><a href="gpu-da.htm#foss-xorg">Open Source Xorg drivere</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-da.htm#fw-detect">Firmware detection - non-free </a></li>
+			  <li><a href="nf-firm-da.htm#non-free-firmware">Tilføj non-free til kildelisten </a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-da.htm#install-add">Window Managers</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-da.htm">KDE and XFCE Window Managers &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-da.htm#xfce-notes">Nyttige Xfce ekstras</a></li>
+					    <li><a href="wm-dm-da.htm#install-add">Nyttige ekstra KDE Apps</a></li>
+					    <li><a href="wm-dm-da.htm#desk-freeze">Skrivebordet fyser</a></li>
+					    <li><a href="wm-dm-da.htm#kde-login">ingen login i KDE mulig</a></li>
+					    <li><a href="wm-dm-da.htm#ch-th">Ændre Themes</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-da.htm#dm">Installing additional Display Managers</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-da.htm">Internet forbindelse, WiFi, LAN og Netwærk</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-da.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-da.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-da.htm#serv-ftp">FTP klienter</a></li>
+					    <li><a href="lamp-apache-da.htm#serv-sec">Sikkerheds protocoller</a></li>
+					    <li><a href="lamp-apache-da.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-da.htm#serv-mysql">MySQL opsætning</a></li>
+					    <li><a href="lamp-ppp-da.htm#serv-php">PHP i Apache</a></li>
+					    <li><a href="ntp-server-da.htm#ntp-server">Opsætning af timeserver</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-da.htm#privoxy">Firewalls og Privatliv &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-da.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-da.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-da.htm#firewalls">Firewalls</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-da.htm#ssh-x">SSH og Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-da.htm#setup">Samba-Server opsætning</a></li>
+						  <li><a href="samba-da.htm#configure">Konfiguration af SAMBA (Windows)</a></li>
+						  <li><a href="ssh-da.htm#ssh-fs">SSH Remote Mounting</a></li>
+						  <li><a href="ssh-da.htm#ssh-x">X Window Apps via SSH</a></li>
+						  <li><a href="ssh-da.htm#ssh-f">GUI SSH med Konqueror</a></li>
+						  <li><a href="ssh-da.htm#ssh-w">SSH X-Forwarding fra en Windows-PC</a></li>
+						  <li><a href="ssh-da.htm#ssh">SSH og sikkerhed</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-da.htm#netcardconfig">WIFI forbindelser &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-da.htm#netcardconfig">Kom online - Ceni</a></li>
+						    <li><a href="inet-wpagui-da.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-da.htm#net-set1">WiFi - opsætning af WiFi Roaming</a></li>
+						    <li><a href="inet-wpa-da.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-da.htm#hotswitch">Skift imellem kablet og trådløs forbindelse</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-da.htm#netcardconfig">Kablede forbindelser &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-da.htm#dial-mod">56k Modems</a></li>
+						    <li><a href="inet-ceni-da.htm#netcardconfig">kom online - Ceni</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-da.htm#fw-detect">Firmware detection - non-free </a></li>
+		<li><a href="nf-firm-da.htm#non-free-firmware">Tilføj non-free til kildelisten </a></li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-da.htm">Pkke administration og dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-da.htm#apt-cook">APT Cookbook og Sources list &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-da.htm#apt-cook">APT-Guide Cookbook og Sources list</a></li>
+					    <li><a href="sys-admin-apt-da.htm#apt-install">Installation af nye pakker</a></li>
+					    <li><a href="sys-admin-apt-da.htm#apt-delete">Afinstaller pakker</a></li>
+					    <li><a href="sys-admin-apt-da.htm#apt-downgrade">Pakke på Hold og nedgradering</a></li>
+					    <li><a href="sys-admin-apt-da.htm#apt-cache">Søgning efter pakker med apt-cache</a></li>
+					    <li><a href="sys-admin-apt-da.htm#gui-pacsea">Søgning after pakker i GUI</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-da.htm#kern-upgrade">Opdatering af kernel &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-da.htm#kern-remove">Fjernelse af Kernels</a></li>
+					    <li><a href="sys-admin-kern-upg-da.htm#kern-upgrade">Opdatering af kernel</a></li>
+					    <li><a href="sys-admin-kern-upg-da.htm#dmakms">Dynamisk installering af kernel moduler med dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-da.htm#apt-upgrade">Opdatering af installeret systemet -  dist-upgrade - Overblik &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-da.htm#live-cd-upgrade">Opdatering med Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-da.htm#approx">dist-upgrade af flere PCer på et LAN</a></li>
+					    <li><a href="sys-admin-apt-da.htm#apt-upgrade">opdatere et installeret system -  dist-upgrade - Overblik</a></li>
+					    <li><a href="sys-admin-apt-da.htm#du-st">Opdater et installeret system -  dist-upgrade - Trinvis guide</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-da.htm">System Administration</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-da.htm#bois-prep">Opdatering af BIOS med FreeDOS</a></li>
+		<li><a href="vir-rkits-da.htm#virus-rkits">Virus og Rootkit Skannere</a></li>
+		<li><a href="hd-install-da.htm#adduser">Tilføje brugere og kodeord &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-da.htm#adduser">Tilføj en ny bruger</a></li>
+					    <li><a href="sys-admin-gen-da.htm#pw-lost">Mistet root kodeord, nye kodeord</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-da.htm#start-services">Tjenester og init runlevels &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-da.htm#start-services">Tjenester aktiver/deaktiver</a></li>
+					    <li><a href="sys-admin-gen-da.htm#pkill">Killing a service or process</a></li>
+					    <li><a href="sys-admin-gen-da.htm#init">aptosid runlevels - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-da.htm#rsync">Sikkerhedskopi af systemet &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-da.htm#rdiff">Sikkerhedskopi med rdiff</a></li>
+					    <li><a href="sys-admin-rsync-da.htm#rsync">Sikkerhedskopi med rsync</a></li>
+					    <li><a href="home-da.htm#home-bu">Flytte /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-da.htm#fonts">CUPS, Fonte og Lyd &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-da.htm#fonts">Fonte</a></li>
+					     <li><a href="sys-admin-gen-da.htm#cups">CUPS - Print System</a></li>
+					     <li><a href="sys-admin-gen-da.htm#sound">Lyd Mixers</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-da.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-da.htm#chroot">Grub2 - Gneopret Grub med chroot</a></li>
+					    <li><a href="sys-admin-grub2-da.htm#mbr-over-grub2">Grub2 - MBR overskrevet</a></li>
+					    <li><a href="sys-admin-grub2-da.htm#multi-os">Grub2 - Dual og Multibooting</a></li>
+					    <li><a href="sys-admin-grub2-da.htm#grub1-grub2">Grub2 -Opgradering fra Grub1</a></li>
+					    <li><a href="sys-admin-grub2-da.htm#grub2">Grub2 - Overblik</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Sponsored by webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid is proudly hosted by webtropia.com" alt="aptosid is proudly hosted by webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+	<div class="divider" id="rdiff">
+			<h2 id="top-header">Opret sikkerhedskopier med rdiff-backup</h2>
+				<p>rdiff-backup er et værktøj til at oprette sikkerhedskopier af dine filer med. (det kan køre på flere *nix systemer).</p>
+
+				<p class="highlight-2">Du skal køre alle kommandoerne som root i konsollen/ terminalen, -medmindre andet er angivet</p>
+
+				<p>* fantastisk til at redde dist-upgrades eller kernel-upgrades, der gik grueligt galt, osv. (og kan også bruges til bare at genskabe personlige filer).<br /></p>
+				<p>* sikkerhedskopierer kun det der er ændret siden sidst, ligesom rsync gør (så hver backup går hurtig).<br /></p>
+				<p>* indeholder oversigt over ændringer (history of changes) (så du kan genskabe en fil du slettede for 3 uger siden!)<br /></p>
+				<p>* kan udføre sikre sikkerhedskopieringer over nettet (med ssh).<br /></p>
+				<p>* Sikkerhedskopierer partitioner imens de er monterede (så deter nemt at automatisere en daglig sikkerhedskopi...ingen brug for at afmontere).<br /></p>
+				<p>* kan gendanne alt hvis din harddisk står af, og du skal købe en helt ny.<br /></p>
+				<p>* scales to backup large networks (problemløst i linux netværk, Windows-netværk er mere komplekst at arbejde med) og bruges af firmaer.<br /></p>
+				<p>* kommandolinie drevet program, perfekt for dem der kan lide at udføre ting som automatiseret sikkerhedskopi på den 'stærkeste' måde (bash script der kaldes af cron).<br /></p>
+				<p>* husker og håndterer fil-ejerskab og -tilladelser, kan også håndtere symbolske links (og andet i den dur), så når du gendanner, så er tingene nøjagtigt som de var.</p>
+
+			<h6>Hvad skal du bruge</h6>
+				<p>rdiff-backup gemmer en komplet (ikke komprimeret) kopi af filerne som du sikkerhedskopierer, og den gemmer også en oversigt over ændringerne (incremental backups), dette betyder at pladsen til dine sikkerhedskopier skal være større end det du gerne vil lave sikkerhedskopierne af. Så hvis du vil sikkerhedskopiere 100 GB kan det være at du skal bruge helt op til 120 GB (på en separat harddisk, om muligt!).</p>
+
+			<h6>Opsætning</h6>
+				<p>lad os antage at din maskine har det følgende:<br />
+				* en 100 gb harddisk (sda) i anvendelse, hvor monteringspunkterne sda1 er root partitionen, sda5 bruges til at gemme musik og andre filer, og sda6 er swap partitionen.<br />
+				* en overskydende 200 gb harddisk (sdb) som du ikke bruger endnu, med et monteringspunkt sdb1 ... den vil vi bruge til vores sikkerhedskopier.<br />
+				* IP addressen 192.168.0.1</p>
+
+				<p>Det første du skal gøre er at installere rdiff-backup:</p>
+<pre>
+# apt-get install rdiff-backup
+</pre>
+				<p>Selv om du sagtens kan tage backups af enkelte mapper er denne guide møntet på at sikkerhedskopiere hele partitioner... vi vil sikkerhedskopiere sda1 og sda5 (vi vil ikke tage en backup af sda6), og derfor skal vi have oprettet nogle mapper til vores data:</p>
+<pre>
+# mkdir -p /media/sdb1/rdiff-backups/192.168.0.1/root
+# mkdir -p /media/sdb1/rdiff-backups/192.168.0.1/sda5
+</pre>
+				<p>Du skal specificere IP-adressen fordi det er denne maskine du vil oprette en sikkerhedskopi fra (og senere vil vi se på hvordan du også opretter sikkerhedskopier fra andre maskiner på netværket).</p>
+
+			<h6>Oprette sikkerhedskopier</h6>
+
+				<p>rdiff-backup bruger syntaksen <span class="highlight-3">rdiff-backup source-dir dest-dir</span>. OBS: du skal altid angive mappenavne, ikke filnavne.</p>
+
+				<p>For at sikkerhedskopiere sda5, kør:</p>
+<pre>
+# rdiff-backup /media/sda5 /media/sdb1/rdiff-backups/192.168.0.1/sda5
+</pre>
+				<p>Og for at sikkerhedskopiere root partitionen, kør:</p>
+<pre>
+# rdiff-backup --exclude '/tmp/*' --exclude '/proc/*' --exclude '/sys/*' --exclude '/media/*/*' / /media/sdb1/rdiff-backups/192.168.0.1/root
+</pre>
+				<p>Alle "AF_UNIX path too long" fejl kan ignoreres. Det kan tage lidt tid hvis det er første gang der oprettes sikkerhedskopi af denne partition, idet rdiff-backup så skal kopiere hele partitionen (ikke bare ændringerne). Bemærk at vi ikke inkluderer /tmp, eftersom dette hele tiden ændres, heller ikke /proc eller /sys eftersom de ikke indeholder rigtige filer, og vi vil heller ikke kopiere monteringer (mounts). Hvis du vælger at sikkerhedskopiere monteringer, så kopierer du sdb1 og det kan føre til en endeløs løkke (infinite loop!). En måde at omgå dette på er at sikkerhedskopiere monteringer separat.</p>
+
+				<p>Grunden til at du udelader '/proc/*' og ikke bare '/proc' er at dette på snedig vis vil tage en sikkerhedskopi af mappen /proc, men udelade alle filerne i den. Det samme gælder for /tmp, /sys, og, allermest listigt, alle monteringspunkternes navne.</p>
+
+				 <p>På denne måde vil du få genskabt dine /tmp, /proc, /sys og monteringspunkters navne hvis du skulle destruere din root partition og have brug for en fuld gendannelse. Hvis /tmp ikke findes når X starter, brokker X sig muligvis over dette. Se man page for mere omkring --exclude og --include).</p>
+
+			<h6>Genoprettelse af mapper fra sikkerhedskopier</h6>
+
+				<p>rdiff-backup bruger syntaksen:</p>
+<pre>
+rdiff-backup -r &lt;from-when&gt; &lt;source-dir&gt; &lt;dest-dir&gt;
+</pre>
+				<p>Hvis du ved en fejl er kommet til at slette mappen /media/sda7/photos, så gendanner du den med:</p>
+<pre>
+# rdiff-backup -r now /media/sdb1/rdiff-backups/192.168.0.1/sda5/photos /media/sda5/photos
+</pre>
+				<p>Her betyder"-r now" parameteren 'genskab fra sidste sikkerhedskopi'. Hvis du periodisk sikkerhedskopierer alt (via crontab, for eksempel), og du ikke havde opdaget at photos mappen manglede før nogle dage senere, så ville du skulle genskabe den fra en sikkerhedskopi der er nogle dage gammel (og ikke "now", eftersom den seneste sikkerhedskopi ikke indeholder mappen). Eller måske vil du bare gerne tilbage til en tidligere version af noget.</p>
+
+				<p>Hvis du vil genskabe systemet som for tre dage siden, så bruger du"-r 3D" ... men, som man page siger, bemærk at:</p>
+
+				<p class="highlight-1">"3D" henviser til øjeblikket 72 timer før nu. Og hvis der ikke blev taget en sikkerhedskopi på det tidspunkt, så vil rdiff-backup genskabe fra den første tidligere kopi den finder. Hvis for eksempel som ovennævnt, man anvender "3D", og der ikke findes nogen sikkerhedskopi oprettet for 3 dage siden, men der er sikkerhedskopier oprettet hhv. for 2 og for 4 dage siden, da vil rdiff-backup genskabe til tilstanden som den var for 4 dage siden. Du skal altså lige tænke over dette, inden du genskaber noget med rdiff-backup.</p>
+
+				<p>Ved at skrive følgende kommando kan du få rdiff til at skrive en liste over datoer og tidspunkter hvor der er blevet oprettet sikkerhedskopier af sda5:</p>
+<pre>
+# rdiff-backup -l /media/sdb1/rdiff-backups/192.168.0.1/sda5
+</pre>
+			<h5>Genoprettelse af partitioner</h5>
+
+				<p>Du kan også genoprette hele partitioner (mounts); når det kommer til stykket er monteringspunkter egentlig blot mapper.</p>
+
+				<p class="highlight-2">ADVARSEL: Genopret ikke root partitionen (/) mens du er bootet ind i den! Med en kommando vil du miste alle filerne på alle dine partitioner, inklusiv alle sikkerhedskopier på separate harddiske!! rdiff-backup gør nemlig det du siger den skal gøre ... hvis din sikkerhedskopi for root partitionen har tomme monteringspunkter, så vil rdiff-backup slette alt hvad der er i monteringspunkterne for at få dem genoprettet til tilstanden i sikkerhedskopien.</p>
+
+				<p>For at genoprette sda5 fra den sidste sikkerhedskopi, skriver vi:</p>
+<pre>
+# rdiff-backup -r now /media/sdb1/rdiff-backups/192.168.0.1/sda5 /media/sda5
+</pre>
+			<h5>Genoprettelse af root partitionen</h5>
+
+				<p>Dette er ikke helt simpelt. Forsøg aldrig på dette hvis partitionen er monteret (se ovenstående advarsel). Det er enormt nyttigt at kunne genoprette root partitionen, eftersom hvis noget går galt med installation/afinstallation eller kernel-upgrades, så kan du med fred i sindet bare gendanne systemet til en tidligere tilstand i løbet af kun 20 minutter.</p>
+
+				<p>En måde at genoprette en root partition på er ved at boot ind i en overskydende linux partition, hvis du har en såden på din maskine. Herfra vil du være i stand til at genskabe din root partition da den så ikke vil være monteret som root. Når du igen booter ind i den vil partitionen være præcis som da du tog en sikkerhedskopi af den. Dette er langt den nemmeste metode til at gendanne root partitionen.</p>
+
+				<p>En anden måde er genoprette root partitionen på er ved at opstarte med aptosid live-CD'en og udføre kommandoen derfra. rdiff-backup er inkluderet i aptosid. I det tilfælde at den version du har af aptosid CD'en ikke inkluderer rdiff, kan du anvende cheatcoden "unionfs" i Grubs kommandolinie, den betyder at du så kan installere yderligere software mens du kører live-CD'en. Boot Live-CD'en med denne cheatcode og udfør følgende kommandoer:</p>
+<pre>
+$ sudo su
+# wget -O /etc/apt/sources.list http://aptosid.com/files/misc/sources.list
+# apt-get update
+# apt-get install rdiff-backup
+</pre>
+				<h6>Lad os så genoprette:</h6>
+<pre>
+# mount /dev/sda1 /media/sda1
+# mount /dev/sdb1 /media/sdb1
+# rdiff-backup -r now /media/sdb1/rdiff-backups/192.168.0.1/root /media/sda1
+</pre>
+
+				<p>OBS: Hvis du ikke har en aptosid-CD kan du benytte en anden Live-CD hvis denne understøtter installation via 'klik'. Du kan så installere rdiff-backup med Klik og kalde:</p>
+<pre>
+$ sudo ~/.zAppRun ~/Desktop/rdiff-backup_0.13.4-5.cmg rdiff-backup -r now /media/sdb1/rdiff-backups/192.168.0.1/root /media/sda1
+</pre>
+
+				<p>Det anbefales alle, der opretter en sikkerhedskopi af root partitionen (med den intention at genoprette fra den), at de tester processen med genopretning fra sikkerhedskopien. Der er næsten intet der er værre, end at tro at den hellige grav er velforvaret, for så at få sig en ubehagelig overraskelse når uheldet virkelig er ude.</p>
+
+							<p>Hvis harddisken er blevet ændret eller reformatteret skal du sikre dig at UUID'erne stadig passer (eller Labels hvis du bruger dem). Det gør du ved at se i <span class="highlight-3">/boot/grub/menu.lst (grub-legacy) eller på filerne i /etc/grub.d (grub2)</span> og <span class="highlight-3">/etc/fstab</span>. Du skal tilpasse dem hvis det er nødvendigt. En nem måde at få den ønskede information til disse operationer (ændring af menu.lst og fstab filer), hvis krævet, er at køre følgende kommando som root:</p>
+
+<pre>
+blkid
+</pre>
+
+			<h5>Sikkerhedskopiering af andre maskiner</h5>
+
+				<p>Du kan sikkerhedskopiere andre maskiner til din lokal-maskine, så længe din lokale maskine kan afvikle ssh forbindelser til de andre maskiner (og så længe som du har plads på dine harddiske). ssh server'en (sshd) skal køre på fjern-maskinen. De andre maskiner skal ikke nødvendigvis være i dit LAN, -de kan være placeret hvor som helst i verden.</p>
+
+				<p>Lad os antage at fjern-maskinen har følgende:<br />
+				1) en 100 gb harddisk (sda) som er i brug, med fgl. monteringspunkter,<br />
+				2) sda1 anvendt som root partition(/),<br />
+				3) sda5 hvor vi gemmer midlertidige data, som vi ikke vil sikkerhedkopiere,<br />
+				4) og sda6 som er swap, <br />
+				5) samt IP-addressen 192.168.0.2</p>
+
+				<p>OBS: Begge 100 gb drev kan ikke normalt blive sikkerhedskopieret til en 200 gb harddisk med rdiff-backup (eftersom dette ikke ville efterlade noget plads til ændringer), men eftersom du ikke vil sikkerhedskopiere sda5 på fjern-maskinen (og siden harddiske sjældent er helt fulde, -det kan du dog ikke regne med som standard) så antager vi at du har plads nok. For hver gang rdiff-backup opretter en ny sikkerhedskopi, dannes der flere filer (incremental files), og mere og mere plads anvendes.</p>
+
+				<p>Du kan fortælle rdiff-backup at den kun skal gemme den sidste måneds sikkerhedskopier (kommandoen til dette viser vi senere), og dette vil naturligvis gøre at rdiff-backup bruger mindre plads end hvis den skal beholde sikkerhedskopierne fra et helt år.</p>
+
+				<p>Først installerer du også rdiff-backup på fjern-maskinen (enhver computer du du vil sikkerhedskopiere fra, inklusiv backup serveren, skal have rdiff-backup installeret).</p>
+
+				<p>For at sikkerhedskopiere fjern-maskinen til lokal-maskinen, kør fgl. på lokal-maskinen (ie 192.168.0.1): <span class="highlight-4">Bemærk anvendelsen af dobbelt kolon :: </span></p>
+<pre>
+# mkdir /media/sdb1/rdiff-backups/192.168.0.2/root
+# rdiff-backup --exclude '/tmp/*' --exclude '/proc/*' --exclude '/sys/*' --exclude '/media/*/*' 192.168.0.2::/ /media/sdb1/rdiff-backups/192.168.0.2/root
+</pre>
+				<p>Hvis du vil genoprette en mappe på fjern-maskinen, kan du enten starte processen fra lokal- eller fra fjern-maskinen.</p>
+
+				<p>Dette er hvordan du ville genoprette mappen /usr/local/games på fjern-maskinen, ved at initiere det fra fjern-maskinen:</p>
+<pre>
+# rdiff-backup -r now 192.168.0.1::/media/sdb1/rdiff-backups/192.168.0.1/root/usr/local/games /usr/local/games
+</pre>
+				<p>Dette er hvordan du ville genoprette mappen /usr/local/games på fjern-maskinen, ved at initiere det fra den lokale maskine:</p>
+<pre>
+# rdiff-backup -r now /media/sdb1/rdiff-backups/192.168.0.1/root/usr/local/games 192.168.0.2::/usr/local/games
+</pre>
+				<p>Brug den samme slags syntaks hvis du genopretter din root partition fra en Live-CD (hvor fjern-maskinen er booted op med Live-CD... se ovenstående).</p>
+
+			<h5>Automatisering af sikkerhedskopiering:</h5>
+
+				<p>Hvis du sikkerhedskopierer fra en anden maskine til din egen lokale maskine, så er det første du skal gøre at aktivere password-frie ssh logins med ssh keys. <span class="highlight-2">Bemærk at der menes password-frie ssh-logins som root. Dette kan indskrænkes såldes at der kun kan udføres kommandoer til rdiff-backup, men det er uden for denne sides område, se venligst <a href="ssh-da.htm#ssh-s">SSH Configuration</a>.</span> Vi antager at der er fuldstændig tillid, og viser den mest simple måde hvorpå man kan opsætte password-frie ssh logins.</p>
+
+				<p>Fra den lokale maskine gør du følgende:</p>
+<pre>
+# [ -f /root/.ssh/id_rsa ] || ssh-keygen -t rsa -f /root/.ssh/id_rsa
+</pre>
+				<p>Og tryk retur to gange for blanke passwords. Så gør du:</p>
+<pre>
+# cat /root/.ssh/id_rsa.pub | ssh 192.168.0.2 'mkdir -p /root/.ssh;\<!--dunno if this is wrong-->
+> cat - >>/root/.ssh/authorized_keys2'
+</pre>
+				<p>Der vil blive spurgt efter dit root password.</p>
+
+				<p>Nu kan du ssh til fjern-maskinen som root uden at skulle skrive et password, og rdiff-backup kan automatiseres.</p>
+
+				<p>Som det næste skal du oprette et bash script der indeholder alle rdiff-backup kommandoerne. Vores bash script kan ligne det følgende eksempel:</p>
+
+
+<pre>
+#!/bin/bash
+RDIFF=/usr/bin/rdiff-backup
+echo
+echo "=======Backing up 192.168.0.1 root======="
+${RDIFF} --ssh-no-compression --exclude '/tmp/*' --exclude '/proc/*' --exclude '/sys/*' --exclude '/media/*/*' / /media/sdb1/rdiff-backups/192.168.0.1/root
+echo "(and purge increments older than 1 month)"
+${RDIFF} --remove-older-than 1M --force /media/sdb1/rdiff-backups/192.168.0.1/root
+echo
+echo "=======Backing up 192.168.0.1 mount sda5======="
+${RDIFF} --ssh-no-compression --exclude /media/sda5/myjunk /media/sda5 /media/sdb1/rdiff-backups/192.168.0.1/sda5
+echo "(and purge increments older than 1 months)"
+${RDIFF} --remove-older-than 1M --force /media/sdb1/rdiff-backups/192.168.0.1/sda5
+echo
+echo "=======Backing up 192.168.0.2 root======="
+${RDIFF} --ssh-no-compression --exclude '/tmp/*' --exclude '/proc/*' --exclude '/sys/*' --exclude '/media/*/*' --exclude '/mnt/*/*' 192.168.0.2::/media/sdb1/rdiff-backups/192.168.0.2/root
+echo "(and purge increments older than 1 months)"
+${RDIFF} --remove-older-than 1M --force /media/sdb1/rdiff-backups/192.168.0.2/root
+</pre>
+
+
+				<p>Nu kan du ændre navnet af dette bash script til "myrdiff-backups.bash" og flytte det til /usr/local/bin på din lokale (backup server) maskine, og ændre det til at kunne køres. Kør script'et for at sikre dig at det virker.</p>
+
+				<p>Til sidst kan du få cron til at kalde det hver aften klokken 20. Den følgende linie i root's crontab vil sørge for dette, kald</p>
+<pre>
+# crontab -e
+og indsæt følgende linie
+0 20 * * * /usr/local/bin/myrdiff-backups.bash
+</pre>
+
+	<div class="spacer05"></div>
+			<div id="rev">Content last revised 14/08/2010 0100 UTC</div>
+
+</div>
+</div>
+</body>
+</html>

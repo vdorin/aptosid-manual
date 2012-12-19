@@ -1,0 +1,556 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="uk" lang="uk">
+<head>
+	<title>aptosid Manuals - RSYNC</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body id="welcome">
+<!-- Last translation revision polix 30/11/2011 0100 UTC -->
+<!--htdig_noindex--><div id="menu"> <!-- menu starts here - ua language maintained by polix -->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="Головна сторінка aptosid.com, форуму і вікі" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-uk.htm#search-on"><img src="../lib/logos/manual-search-22x22.png" title="Пошук в керівництві" alt="Search" /> Bаріанти пошуку</a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Bибір мови - Choose another language CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="Переключення мови CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-uk.htm">Керівництво aptosid</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-uk.htm#welcome-gen">Ласкаво просимо! &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-uk.htm#cred-team">Подяки</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-uk.htm#how-to">Про використання &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-uk.htm#how-to">Про використання</a></li>
+					  <li><a href="welcome-uk.htm#table-contents">3міст</a></li>
+					</ul>
+					</li>
+		<li><a href="help-uk.htm#help-gen">Oтримання допомоги&#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-uk.htm#help-gen">Де отримати допомогу</a></li>
+					  <li><a href="help-uk.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-uk.htm#welcome-quick">Короткий посібник aptosid</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-uk.htm">Зміст ISO-образу, випуски, список дзеркал і запис</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-uk.htm#cd-content">Зміст ISO-образу і системні вимоги &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-uk.htm#rolling">Зауваження до релізу</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-uk.htm#download-aptosid">Список дзеркал, скачування ISO-образу і запис &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-uk.htm#md5">Перевірка ISO-образу з md5</a></li>
+					  <li><a href="cd-dl-burning-uk.htm#burn-nero">Запис ISO-образу в Windows</a></li>
+					  <li><a href="cd-dl-burning-uk.htm#burn-linux">Запис ISO-образу в Linux</a></li>
+					  <li><a href="cd-no-gui-burn-uk.htm#burning-no-gui">Скрипт burniso</a></li>
+					  <li><a href="cd-no-gui-burn-uk.htm#burn-no-gui-gen">Запис ISO-образу в консолі</a></li>
+					  <li><a href="cd-dl-burning-uk.htm#download-aptosid">Cписок дзеркал</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-uk.htm">Режим ISO-образу</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-uk.htm#rootpw">Пароль root на ISO-образі</a></li>
+				<li><a href="live-mode-uk.htm#live-cd-installsoft">Установка ПО на ISO-образі</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-uk.htm">Термінал і оболонка</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-uk.htm#term-kon">Термінал і оболонка &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-uk.htm#term-kon">Термінал і оболонка</a></li>
+					  <li><a href="term-konsole-uk.htm#colours"> Кольорова підказка в терміналі</a></li>
+					  <li><a href="term-konsole-uk.htm#cli-help">Допомога в терміналі</a></li>
+					  <li><a href="help-uk.htm#init3-tools">Корисні інструменти в текстовому режимі (tty) - init 3</a></li>
+					  <li><a href="term-konsole-uk.htm#term-cmds">Команди в терміналі</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-uk.htm#sux">Команда: sux/sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-uk.htm">Чит-коди</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-uk.htm#cheatcodes">Особливі чит-коди для ISO-образу aptosid</a></li>
+				<li><a href="cheatcodes-uk.htm#cheatcodes-linux">Загальні чит-коди для параметрів ядра</a></li>
+				<li><a href="cheatcodes-vga-uk.htm#vga">Загальні коди для відеокарти</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-uk.htm">Розділ жорсткого диска -по старому,GPT та LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-uk.htm#hd-ntfs3g">Запис на розділ NTFS з ntfs-3g</a></li>
+			<li><a href="part-lvm-uk.htm#part-lvm">Розмітка з використанням LVM - Logical Volume Manager</a></li>
+			<li><a href="part-gparted-uk.htm#partition">Розмітка диска з інтерфейсом &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-uk.htm#partition">Розмітка диска з gparted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-uk.htm#ntfs">Розділи NTFS з gparted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-uk.htm#partition">Приклади розмітки диска в консолі &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-uk.htm#partition">Розмітка диска з cfdisk</a></li>
+					    <li><a href="part-cfdisk-uk.htm#formating">Форматування розділів з cfdisk</a></li>
+					    <li><a href="part-gdisk-uk.htm#gdisk-6">Форматування розділів з gdisk</a></li>
+					    <li><a href="part-gdisk-uk.htm#gdisk-1">GPT-розділів за допомогою Gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-uk.htm#part-example">Розмітка диска - огляд &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-uk.htm#part-example">Приклади розмітки диска</a></li>
+					  <li><a href="part-uuid-uk.htm#uuid">UUID, відновлення fstab і створення нових точок монтування</a></li>
+					  <li><a href="part-cfdisk-uk.htm#disknames">Імена жорстких дисків</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-uk.htm">Установка aptosid на HD, USB, VM і шифровані розділи</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-uk.htm#Inst-prep">Підготовка установки &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-uk.htm#Inst-prep">Підготовка установки</a></li>
+					  <li><a href="hd-install-uk.htm#Installation">Інсталяція на HD</a></li>
+					  <li><a href="hd-install-uk.htm#first-hd-boot">Перше завантаження</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-uk.htm#fromiso">Завантаження 'fromiso' &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-uk.htm#fromiso">Завантаження "fromiso '- огляд </a></li>
+					  <li><a href="hd-install-opts-uk.htm#guab2-fromiso">Завантаження "fromiso ' з guab 2</a></li>
+					  <li><a href="hd-install-opts-uk.htm#fromiso-persist">Cпособи 'fromiso' i 'persist'</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-uk.htm#usb-hd">Iнсталляцiя на USB &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-uk.htm#usb-hd">Iнсталляцiя на USB-HD - спосiб aptosid -  aptosid-на-флешкi</a></li>
+					  <li><a href="hd-ins-opts-oos-uk.htm#raw-usb">Запис aptosid на USB / SSD за допомогою іншого Linux, MS Windows або Mac OS</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-uk.htm#install-crypt">Установка на шифровані розділи - cryptroot</a></li>
+		  <li><a href="nbdboot-uk.htm#nbd1">Завантаження aptosid по мережі</a></li>
+		  <li><a href="hd-install-vmopts-uk.htm#vmopts">Опції інсталяцій на VM (Virtual Machine)</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-uk.htm">Устаткування в Xorg і різні драйвери</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-uk.htm#mon-res">Дозвіл екрану та монітори  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-uk.htm#mon-res">Дозвіл екрану та монітори</a></li>
+					  <li><a href="hw-dev-mon-uk.htm#xrandr">Подвійні екрани і xrandr</a></li>
+					  <li><a href="hw-dev-mon-uk.htm#mon-binary">Подвійні екрани (використовуючи виконавчі файли)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-uk.htm#foss-xorg">GPU драйвери &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-uk.htm#ati-3d">AMD / ATI 3D драйвери</a></li>
+					  <li><a href="gpu-uk.htm#intel">Intel 2D i 3D драйвери</a></li>
+					  <li><a href="gpu-uk.htm#nvidia">Nvidia 3D драйвери</a></li>
+					  <li><a href="gpu-uk.htm#foss-xorg">Вільні Xorg-драйвери</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-uk.htm#fw-detect">Визначення невільного мікропрограмного забезпечення - non-free </a></li>
+			  <li><a href="nf-firm-uk.htm#non-free-firmware">Додавання non-free в список джерел</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-uk.htm">Bіконні менеджери</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-uk.htm">Віконні менеджери KDE та Xfce &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-uk.htm#xfce-notes">Корисні інструменти для Xfce</a></li>
+					    <li><a href="wm-dm-uk.htm#install-add">Корисні інструменти для KDE</a></li>
+					    <li><a href="wm-dm-uk.htm#desk-freeze">Робочий стіл зависає</a></li>
+					    <li><a href="wm-dm-uk.htm#kde-login">Проблеми входу в KDE</a></li>
+					    <li><a href="wm-dm-uk.htm#ch-th">Управління темами</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-uk.htm#dm">Установква додаткових дисплейних менеджерів</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-uk.htm">Інтернет, Wifi і локальна мережа</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-uk.htm">Мета-пакет LAMP &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-uk.htm#serv-apache">Мета-пакет LAMP</a></li>
+					    <li><a href="lamp-apache-uk.htm#serv-ftp">Kлієнти FTP</a></li>
+					    <li><a href="lamp-apache-uk.htm#serv-sec">3ахищені протоколи</a></li>
+					    <li><a href="lamp-apache-uk.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-uk.htm#serv-mysql">Налаштування MySQL</a></li>
+					    <li><a href="lamp-ppp-uk.htm#serv-php">PHP в apache</a></li>
+					    <li><a href="ntp-server-uk.htm#ntp-server">Установка сервера часу</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-uk.htm#tor">Брандмауери та веб-проксі &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-uk.htm#tor">Маршрутизатор tor</a></li>
+					    <li><a href="tor-privoxy-uk.htm#privoxy">Веб-проксi privoxy</a></li>
+					    <li><a href="inet-ceni-uk.htm#firewalls">Брандмауэри</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-uk.htm#ssh-x">Samba и ssh &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-uk.htm#setup">Сервер samba</a></li>
+						  <li><a href="samba-uk.htm#configure">Інтеграції samba в мережу Windows</a></li>
+						  <li><a href="ssh-uk.htm#ssh-fs">Віддалене монтування з ssh</a></li>
+						  <li><a href="ssh-uk.htm#ssh-x">Програми X-Windows з ssh</a></li>
+						  <li><a href="ssh-uk.htm#ssh-f">Інтерфейс ssh і Konqueror</a></li>
+						  <li><a href="ssh-uk.htm#ssh-w">ssh X-forwarding з Windows-PC</a></li>
+						  <li><a href="ssh-uk.htm#ssh">Безпека з ssh</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-uk.htm#netcardconfig">Связи с WiFi &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-uk.htm#netcardconfig">Налаштування мережевих карт з ceni</a></li>
+						    <li><a href="inet-wpagui-uk.htm#wpa-roaming-gui">Графіческoe ппіложеніе wpa_gui для WiFi</a></li>
+						    <li><a href="inet-setup-v.htm#net-set1">Роумiнг с WiFi</a></li>
+						    <li><a href="inet-wpa-uk.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-uk.htm#hotswitch">Переключення мережі між WiFi та провідного зв'язком</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-uk.htm#netcardconfig">дротяний зв'язок&#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-uk.htm#dial-mod">56кілобітовие модеми</a></li>
+						    <li><a href="inet-ceni-uk.htm#netcardconfig">Налаштування мережевих карт з ceni</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-uk.htm#fw-detect">Визначення невільного мікропрограмного забезпечення - non-free </a></li>
+		<li><a href="nf-firm-uk.htm#non-free-firmware">Додавання non-free в список джерел</a></li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-uk.htm">Управління пакетами і оновлення системи з dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-uk.htm#apt-cook">APT и репозитории &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-uk.htm#apt-cook">APT і репозиторії</a></li>
+					    <li><a href="sys-admin-apt-uk.htm#apt-install">Установка нового пакета</a></li>
+					    <li><a href="sys-admin-apt-uk.htm#apt-delete">Bидалення пакета</a></li>
+					    <li><a href="sys-admin-apt-uk.htm#apt-downgrade">Зниження версії з hold</a></li>
+					    <li><a href="sys-admin-apt-uk.htm#apt-cache">Пошук пакетної иформации з apt-cache</a></li>
+					    <li><a href="sys-admin-apt-uk.htm#gui-pacsea">Графічна пошукова програма</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-uk.htm#kern-upgrade">Оновлення ядра&#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-uk.htm#kern-remove">Bидалення ядра</a></li>
+					    <li><a href="sys-admin-kern-upg-uk.htm#kern-upgrade">Оновлення ядра</a></li>
+					    <li><a href="sys-admin-kern-upg-uk.htm#dmakms">Динамічна інсталяція модулів ядра з dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-uk.htm#apt-upgrade">Оновлення системи з dist-upgrade - Короткий огляд &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-uk.htm#live-cd-upgrade">Оновлення з ISO-образу</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-uk.htm#approx">Оновлення декількох комп'ютерів в локальній мережі</a></li>
+					    <li><a href="sys-admin-apt-uk.htm#apt-upgrade">Короткий огляд Оновлення системи з dist-upgrade</a></li>
+					    <li><a href="sys-admin-apt-uk.htm#du-st">Кроки оновлення системи від dist-upgrade</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-uk.htm">Cистемне адміністрування</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-uk.htm#bois-prep">Оновлення BIOS з FreeDOS</a></li>
+		<li><a href="vir-rkits-uk.htm#virus-rkits">Cканер безпеки</a></li>
+		<li><a href="hd-install-uk.htm#adduser">Новий користувач та паролі &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-uk.htm#adduser">Додавання нового користувача</a></li>
+					    <li><a href="sys-admin-gen-uk.htm#pw-lost">Відновлення root-пароля</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-uk.htm#start-services">Служби та режими завантаження &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-uk.htm#start-services">Вибір служб</a></li>
+					    <li><a href="sys-admin-gen-uk.htm#pkill">3авершення служби або процесу</a></li>
+					    <li><a href="sys-admin-gen-uk.htm#init">Режими завантаження init в aptosid</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-uk.htm#rsync">Pезервування системи &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-uk.htm#rdiff">Резервування за rdiff</a></li>
+					    <li><a href="sys-admin-rsync-uk.htm#rsync">Резервування за rsync</a></li>
+					    <li><a href="home-uk.htm#home-bu">Переміщення / home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-uk.htm#fonts">Cups, шрифти та звук &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-uk.htm#fonts">Шрифти</a></li>
+					     <li><a href="sys-admin-gen-uk.htm#cups">Cервер cups</a></li>
+					     <li><a href="sys-admin-gen-uk.htm#sound">Звукові мікшери</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-uk.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-uk.htm#chroot">Grub2 - Відновлення grub з chroot</a></li>
+					    <li><a href="sys-admin-grub2-uk.htm#mbr-over-grub2">Grub2 -Видалення з MBR</a></li>
+					    <li><a href="sys-admin-grub2-uk.htm#multi-os">Grub2 - Подвійна і мультизагрузки</a></li>
+					    <li><a href="sys-admin-grub2-uk.htm#grub1-grub2">Grub2 - Оновлення за grub1</a></li>
+					    <li><a href="sys-admin-grub2-uk.htm#grub2">Grub2 - Kороткий огляд</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Sponsored by webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid розміщений на сервері webtropia.com" alt = "aptosid розміщений на сервері webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+	<div class="divider" id="rsync">
+			<h2 id="top-header">Резервне копіювання з Rsync</h2>
+							<p>Rsync це є інструмент для резервного копіювання і синхронізації файлів. (Це може бути запущена на різних портах * NIX).</p>
+
+							 <p class="highlight-2">Одним з обмежень Rsync є те, що він не може скопіювати з віддаленої системи до віддаленої системи. Якщо ви хочете зробити це, то вам потрібно скопіювати один з віддалених систем на локальній системі, а потім скопіювати його з локальної системи на іншу віддалену систему.</p>
+
+							 <p>У aptosid у Вас є різні можливості запускати процес синхронізації. Ви можете запускати rsync командою в терміналі, або встановити додаткові пакети з Debian Sid:</p>
+
+				<h5>Для пакету DEB:</h5>
+<pre>
+apt-get install luckybackup
+</pre>
+							<p><a href="http://luckybackup.sourceforge.net/">Інтернет-сторінка luckybackup.</a></p>
+
+				    <h6>Інструкція використання в терміналі</h6>
+							<p>У наступному розділі ми представляємо rsync, можливості цієї програми і кілька прикладів, як rsync може використовуватися з власним скриптом резервного копіювання.</p>
+
+							<p>rsync є програмою швидкого резервного копіювання і файлів. rsync при цьому обчислює змінені файли і каталоги з допомогою таких атрибутів, як величина або дата, внаслідок чого синхронізація може бути дуже швидкою. Дані архівуються перед копіюванням і розпаковуються в пункті призначення <span class=" highlight-3">(коли явно встановити  z-варіант)</span>. Це можна пояснити дуже просто:</p>
+
+				<p>Rsync програма виявляє файли і папки, які необхідно копіювати, так як один або декілька їх атрибутів були змінені (наприклад, дата / час останньої зміни або розміром файлу), у кожному разі, щось не те ж саме, що був підтриманий раніше. Цей процес відбору дуже швидкий.</p>
+
+				<p>Коли Rsync закінчить збірку списка, він буде використовувати копії цих змінених файлів. Це виробляється набагато швидше, через стиснення яке виконується під час процесу копіювання. Rsync робить стиснення перед відправленням, і розпаковує на іншому кінці, "на льоту".</p>
+
+				<p>rsync може копіювати файли з:<br />
+				* локальної системи до локальної системи,<br />
+ 				* локальної системи до віддаленної системи,<br />
+				* віддаленої системі до локальної системі.</p>
+				<p>При цьому rsync використовує клієнт <a href="ssh-uk.htm#ssh">ssh</a>, або Rsync-демон, які працюють на вихідній і на цільовій системі. У сторінки довідника rsync кажуть, якщо системи можуть зв'язуватися по SSH, SSH також може використовуватися для Rsync.</p>
+
+				<p class="highlight-3">Обмеження з Rsync полягає в тому, що дані НЕ МОЖУТЬ копіюватися між 2 віддаленими (дистанційноми) системами. У цьому випадку Вам доведеться скопіювати дані з одного віддаленої системи, а потім перенести з Rsync на іншу.</p>
+
+				<p>Щоб пояснити це, розглянемо наступний приклад з 3 комп'ютерами:</p>
+<pre>
+neo – локальна система
+morpheus – віддалена система
+trinity – віддалена система
+</pre>
+				<p>Кожен користувач знає ім'я іншого користувача, і rsync працює виключно на нео, локальній системі:</p>
+<pre>
+Ім'я користувача на нео є сuddles,
+Ім'я користувача на Morpheus є tartie,
+Ім'я користувача на трійці є taylar.</pre>
+				<p>Метою є синхронізація каталогів / Головна / $ USER / Files:</p>
+
+<pre>
+neo:/home/cuddles/дані з morpheus та trinity,
+morpheus:/home/tartie/дані з neo та trinity,
+trinity:/home/taylar/дані з neo та morpheus.
+</pre>
+
+				<p>Тепер виникає проблема, що Rsync не може бути застосований між 2 віддаленими комп'ютерами.</p>
+
+
+<pre>
+neo-&gt; morpheus - з локальної на віддалену, вийде
+neo-&gt; trinity - з локальної на віддалену, вийде
+morpheus-&gt; neo - з віддаленої на локальну, вийде
+trinity-&gt; neo - з віддаленої на локальну, вийде
+morpheus-&gt; trinity - не можна, з віддаленої на віддалену
+trinity-&gt; morpheus - не можна, з віддаленої на віддалену
+</pre>
+				<p>Щоб обійти це обмеження, чинимо як зазначено нижче:</p>
+<pre>
+morpheus --&gt; trinity - стане: morpheus --&gt; neo та neo --&gt; trinity
+trinity --&gt; morpheus - стане: trinity --&gt; neo та neo --&gt; morpheus
+</pre>
+				<p>Цей додатковий крок не змінює нічого в кінцевому підсумку. Проте, вказує на те, що:</p>
+
+				<p class="highlight-3">Це обмеження з Rsync повинно бути враховано при плануванні процесу резервного копіювання.</p>
+
+				<h5>Застосування імен хоста з іменами хоста в rsync.</h5>
+
+				<p>Застосування імен хостів Нео, Морфеус, і трійця, замість IP-адрес, може дозволити зробити процес копіювання наочніше і Вам буде легше розібратися.</p>
+
+				<p>Для цього Ви повинні відредагувати / і т.д. / хостів і вставити імена хостів і йому належать IP-адреси. Таким чином у нашому прикладі файл / і т.д. / хостів буде виглядати так:</p>
+<pre>
+192.168.1.15	 neo
+192.168.1.16	 morpheus
+192.168.1.17	 trinity
+</pre>
+				<p>Перший рядок переводить IP-адреса 192.168.1.15 на "neo", друга 192.168.1.16 на "morpheus" і третя 192.168.1.17 на "trinity". Після запису може використовуватися додатково ім'я хоста замість IP-адреси. Цей особливо зручно, якщо змінюються розподілені IP-адреси, наприклад, у "нео" з 192.168.1.15 на 192.168.1.25 Це полегшує роботу зі скриптами, так як вони в разі зміни IP-адрес не повинні змінюватися, а тільки файл / і т.д. / хостів.</p>
+
+				<p>Якщо у вас є всі ваші скрипти, які використовують IP-адресу, вам потрібно знайти їх всіх і замініти їх на нові адреси. Якщо з іншого боку Ваші скрипти використовують "name", все що потрібно зробити, це змінити / і т.д. / хост файл, щоб відобразити зміни, і всі ваші скрипти будуть працювати. Це може бути дуже зручно, коли у вас є багато віддалених з'єднаннан з іншими системами, або навпаки. "name" метод також робить ваші скрипти більш легким для читання,тому що ви не використовуєте IP-адресу а скоріше, впізнаване "name" пов'язане з IP-адресою.</p>
+
+				<h4>Два способи використання rsync.</h4>
+
+				<p>Перший спосіб - дані <b> штовхають (push)</b> на цільову машину, другий - дані <b>витягуються-(pull)</b> з джерела. Кожен метод має свої за і проти, які будуть розглянуті нижче. У нашому прикладі використовуються локальна та віддалена системи, щоб більш чітко пояснити термінологію.</p>
+
+				<p><b>“push”</b> - локальна система несе вихідні каталоги і файли, метою є дистанційна система. Команда Rsync запускається на локальній системі і "штовхає" дані на цільову систему.</p>
+
+				<p>Переваги:<br />
+				*Більше ніж одна вихідна система може мати резервне копіювання на цільовий. 
+				* Процес резервного копіювання на декількох комп'ютерах може проходити одночасно.
+				* Якщо система закінчує процес резервного копіювання швидше, це дозволяє використовувати ресурси для інших завдань.</p>
+
+				<p>Hедоліки:<br />
+				*  Якщо скрипт використовується з синхронізацією через cron, то crontab-и повинні задаватися на кожній системі. При модифікації скрипта необхідно вносити відповідні зміни на кожній системі, при змінах календарного плану повинен змінюватися кожен crontab на кожному комп'ютері. Внаслідок цього адміністративне обслуговування стає дуже громіздким і заплутаним. 
+				* Процес резервного копіювання не можливо перевірити, чи був цільової розділ змонтований цільової системою. Якщо він не змонтований, процес резервного копіювання не відбудеться.</p>
+				
+				<p><b>“pull”</b> - віддалена система несе вихідні каталоги і файли, метою є локальна система. Команда Rsync запускається на локальній системі і "витягує" дані з вихідної системи.</p>
+
+				<p>Переваги:<br />
+				* Система стане сервером, який керує всіма процесами резервного копіювання всіх інших систем. Процеси резервного копіювання централізуються. <br /> 
+				При застосуванні скрипта, він повинен знаходиться тільки на одній системі, що спрощує будь-які модифікації. При зміні календарного плану повинен змінюватися тільки один кронтаб. <br /> 
+				Скрипт може перевірити, змонтований чи цільової розділ і при нагоді його змонтує.</p>
+
+				<h6>Синтаксис Rsync (частина з "rsync man):</h6>
+<pre>
+       rsync [OPTION]... SRC [SRC]... DEST
+
+       rsync [OPTION]... SRC [SRC]... [USER@]HOST:DEST
+
+       rsync [OPTION]... SRC [SRC]... [USER@]HOST::DEST
+
+       rsync [OPTION]... SRC [SRC]... rsync://[USER@]HOST[:PORT]/DEST
+
+       rsync [OPTION]... SRC
+
+       rsync [OPTION]... [USER@]HOST:SRC [DEST]
+
+       rsync [OPTION]... [USER@]HOST::SRC [DEST]
+
+       rsync [OPTION]... rsync://[USER@]HOST[:PORT]/SRC [DEST]
+</pre>
+				<h5>Робочі приклади команд rsync::</h5>
+<pre>
+rsync -agEvz --delete-after --exclude=”*~” morpheus:/home/tartie /media/sda7/SysBackups/morpheus/home
+</pre>
+				<p>Пояснення складових частин цієї команди:</p>
+<pre>
+Джерело: (/ шлях / файл) morpheus:/home/tartie, метою є: / media/sda7/SysBackups/morpheus/home
+</pre>
+				<p>Каталог /home/tartie (включаючи підкаталоги) буде збережений в / media/sda7/SysBackups/morpheus/home, що після rsync буде виглядати таким чином:</p>
+<pre>
+/media/sda7/SysBackups/morpheus/home/tartie...
+</pre>
+				<p>Зверніть увагу, копіюється тільки каталог /tartie, вказаний в rsync / media/sda7/SysBackups/morpheus/home. "Джерело" вибирає тільки, звідки прибувають дані, а "Мета" вказує Rsync, куди повинні копіюватися дані з "джерела" він сприймає вже не /home/tartie, а просто / tartie,якого він направить в /media/sda7/SysBackups/morpheus/home. Ще один приклад</p>
+<pre>
+rsync [...] /home/user/data/files /media/sda7/SysBackups/neo
+</pre>
+				<p>Тут буде копіюватися вихідний каталог / файли і все в ньому знаходяться каталоги і файли в цільову папку / media/sda7/SysBackups/neo / - а не в / media/sda7/SysBackups/neo/home/user/data/files.</p>
+
+				<p>На це необхідно звертати увагу при використанні резервного копіювання з rsync.</p>
+
+				<h5>Explanation of the options:</h5>
+<pre>
+  -a для способу з архівацією. manpage з цього приводу каже: "простіше кажучи, цей метод, для створення рекурсивного резервного копіювання та копіювання майже всіх атрибутів. 
+   Не зберігаються тільки тверді посилання через складність процесу. Опція-a відповідає:-rlptgoD, що це означає:
+  -R = rekursiv - копіювати підкаталоги і файли в них з "вихідного місця".
+  -L = Links - символічні посилання відновлюються в пункті призначення.
+  -P = права - права ідентичні з ними у вихідному місці.
+  -T = тимчасової штамп - часовий штамп у вихідному місці ідентичний з ним.
+  -Q = quiet - мінімальний висновок інформації. Більша кількість інформації отримують з опцією-v після опції-a. 
+   Виконання без якої-небудь відповіді буде досягнуто без постановки опції-v.
+  -O = власник - якщо rsync проводиться як root, власники вихідних файлів залишаються відповідним чином збереженими.
+  -D = відповідає цим обом командам: - devices - specials
+ - Devices = символьні файли і файли блочного пристрою будуть копіюватися в віддалену систему, щоб потім відновлюватися. Потрібно звернути увагу, що без опції - super, опція - devices не працює.
+ - Specials = rsync копіює спеціальні файли як sockets і fifos.
+ - G: групи зберігаються відповідно вихідним файлів.
+  -E: зберігається атрибут "здійснимо".
+  -V: для докладного виводу. Якщо подробиці не важливі, ця опція може бути опущена. Тим не менш, якщо необхідно бачити, що відбувається, ця опція дуже корисна.
+  -Z: копійовані дані архівуються, що прискорює копіювальний процес, так як переміщений обсяг даних буде менше.
+- Delete-after = цільові каталоги або цільові файли, яких більше немає в джерелі, видаляються після переміщення, а не перед цим. У разі проблем чи катастроф буде "after" використаний, "delete" запобігає використання зайвого простору більше непотрібними файлами і каталогами в пункті призначення.
+- Exclude = вказує на файли або каталоги виключаються з копіювального процесу. У прикладі, - exclude = "* ~" були б ВСІ файли з закінченням "~" з процесу резервного копіювання виключені. 
+  З однією опцією - exclude може передаватися тільки один аргумент, при більшій кількості аргументів виключення необхідно використовувати кілька опцій - exclude</pre>
+				<p>Additionally, these are some other, useful command options:</p>
+<pre>
+-c - проводить подальші порівняльні перевірки, що вимагає великого часу. Так як rsync вже проводить порівняльні перевірки, ця команда не була інтегрована в - a через її надмірності, а також для економії часу. У цій опції, як правило, немає потреби.
+- super - цільова система спробує проводити дії суперкористувача (root) (дивіться manpage)
+- dry-run - тестовий запуск: просто показує, що має копіюватися. Ніякі файли не копіюються.</pre>
+
+				<p>І наостанок, варіанти вказівки вихідних і цільових каталогів.</p>
+
+				<h5>Зразкові команди:</h5>
+<pre>
+rsync -agEvz --delete-after --exclude=”*~” morpheus:/home/tartie /media/sda7/SysBackups/morpheus/home
+</pre>
+				<p>Ця команда копіює всі каталоги та файли нижче від / home / tartie на систему "morpheus" і розміщує їх у цей каталог / media/sda7/SysBackups/morpheus/home. Структура каталогу tartie зберігається.</p>
+<pre>
+rsync -agEvz --delete-after --exclude=”*~” /home/tartie neo:/media/sda7/SysBackups/morpheus/home
+</pre>
+				<p>Це - протилежна команда першого прикладу. Вона "рухає" каталог / home / tartie і його вміст у вказаний каталог системи "neo" - відзначимо, що систему розглядають як "віддалену (remote)", якщо ставиться ":" двокрапка перед шляхом.</p>
+<pre>
+rsync -agEvz --delete-after --exclude=”*~” /home/cuddles /media/sda7/SysBackups/neo/home
+</pre>
+				<p>Це є процес резервного копіювання на локальному комп'ютері. Тут потрібно звертати увагу на те, що ніяке двокрапка не встановлено. Локальний каталог / home / cuddles копіюється на / media/sda7/SysBackups/neo/home на тому ж самому локальному комп'ютері.</p>
+
+				<p>rsync з багатьма опціями - exclude:</p>
+<pre>
+rsync -agEvz --delete-after --exclude=”*~” --exclude=”*.c” --exclude=”*.o” "/*" /media/sda7/SysBackups/neo
+</pre>
+				<p>Ця команда копіює все з каталогу root локальної системи (всі каталоги і файли) на / media/sda7/SysBackups/neo - виключеними з цього є всі файли і каталоги, які закінчуються на "~", ". C" або ". O".</p>
+
+				<p class="highlight-2">Нижче наведений приклад команди рsync повинний по можливості уникати помилок.Приклад rsync команди віддаленої системи з віддаленої системи:</p>
+<pre>
+rsync -agEvz --delete-after --exclude=”*~” morpheus:/home/tartie trinity:/home
+</pre>
+				<p class="highlight-2">Як вже згадувалося раніше в цьому документі, це є обмеження rsync.</p>
+
+				<p>Останній приклад команди, давайте подивимося, як rsync буде виглядати, якщо ми замінимо наші "системні імена" з IP-адреси</p>
+
+				<p>Перша команда встановлена ​​з методом імені хоста, другий з методом IP-адрес. Обидві команди ідентичні в своєму виконанні:</p>
+<pre>
+rsync -agEvz --delete-after --exclude=”*~” morpheus:/home/tartie /media/sda7/SysBackups/morpheus/home
+</pre>
+				<h5 class="highlight-2">Неможлива команда:</h5>
+<pre>
+rsync -agEvz --delete-after --exclude=”*~” 192.168.1.16:/home/tartie /media/sda7/SysBackups/morpheus/home
+</pre>
+				<p>Як було вже сказано, обмеження rsync в тому, що цією командою можна копіювати між 2 віддаленими комп'ютерами. На це ми б хотіли ще раз звернути увагу.</p>
+
+				<p>Ми сподіваємося, з цим маленьким керівництвом Вам буде легше приступити до використання rsync, це дуже вдала програма резервного копіювання.</p>
+	</div>
+			<div id="rev">Сторінка останний раз переглянута 14/08/2010 0100 UTC</div>
+
+
+</div>
+</body>
+</html>

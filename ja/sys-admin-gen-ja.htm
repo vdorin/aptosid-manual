@@ -1,0 +1,810 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+	<title>aptosid Manuals - System Administration</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body id="sys-admin">
+<!-- Last translation revision muchan 02/Dec/2010 2225 UTC -->
+<!--htdig_noindex--><div id="menu"><!-- menu starts here ja lang maintained by muchan-->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="To aptosid.com, Forum and Wiki" alt="logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-ja.htm#search-on"><img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" /> サーチ Online Offline</a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Choose another language CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="lang-switch CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-ja.htm">aptosid OS マニュアル</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-ja.htm#welcome-gen">aptosid OS マニュアル &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-ja.htm#cred-team">貢献者</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-ja.htm#how-to">このマニュアルの使い方 &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-ja.htm#how-to">このマニュアルの使い方</a></li>
+					  <li><a href="welcome-ja.htm#table-contents">内容一覧</a></li>
+					</ul>
+					</li>
+		<li><a href="help-ja.htm#help-gen">困った時は... &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-ja.htm#help-gen">困った時は...</a></li>
+					  <li><a href="help-ja.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-ja.htm#welcome-quick">aptosid クイックスタートガイド</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-ja.htm">ISO の内容、リリース、ダウンロードミラーとCDの焼き付け</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-ja.htm#cd-content">ISO の内容と最小限必要な仕様 &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-ja.htm#rolling">リリースノート</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-ja.htm#download-aptosid">aptosidのミラー, ダウンロードとCD の作成 &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-ja.htm#md5">md5 Checksum</a></li>
+					  <li><a href="cd-dl-burning-ja.htm#burn-nero">WindowsでISOを焼くには</a></li>
+					  <li><a href="cd-dl-burning-ja.htm#burn-linux">LinuxでISOを焼くには</a></li>
+					  <li><a href="cd-no-gui-burn-ja.htm#burning-no-gui">burniso script</a></li>
+					  <li><a href="cd-no-gui-burn-ja.htm#burn-no-gui-gen">GUIなしでISOを焼くには</a></li>
+					  <li><a href="cd-dl-burning-ja.htm#download-aptosid">aptosid ダウンロードミラー</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-ja.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-ja.htm#rootpw">aptosid-LiveISOのRootパスワード</a></li>
+				<li><a href="live-mode-ja.htm#live-cd-installsoft">Live-ISO作動中にソフトをインストール</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-ja.htm">ターミナル/コンソール</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-ja.htm#term-kon"> ターミナル/コンソール&#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-ja.htm#term-kon"> ターミナル/コンソール</a></li>
+					  <li><a href="term-konsole-ja.htm#colours"> Coloured terminal prompts</a></li>
+					  <li><a href="term-konsole-ja.htm#cli-help">コマンドラインヘルプ</a></li>
+					  <li><a href="help-ja.htm#init3-tools">テキストモード(tty)で便利な道具 - init 3</a></li>
+					  <li><a href="term-konsole-ja.htm#term-cmds">Linuxターミナルのコマンド一覧</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-ja.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-ja.htm">起動コード</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-ja.htm#cheatcodes">aptosidだけのLive-ISO用起動コード</a></li>
+				<li><a href="cheatcodes-ja.htm#cheatcodes-linux">Linux一般の起動コード</a></li>
+				<li><a href="cheatcodes-vga-ja.htm#vga">VGA コード</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-ja.htm">Partitioning the Hard Drive - Traditional, GPT and LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-ja.htm#hd-ntfs3g">ntfs-3gを使ってNTFSパーティションへの書き込み</a></li>
+			<li><a href="part-lvm-ja.htm#part-lvm">LVM(Logical Volume Manager)を使うパーティション</a></li>
+			<li><a href="part-gparted-ja.htm#partition"> GUI でパーティショニング&#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-ja.htm#partition">GParted / KDE Partition Manager を使ってパーティショニング</a></li>
+					  <li><a href="part-gparted-ja.htm#ntfs"> GParted / KDE Partition Manager を使って NTFS のサイズ変更</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-ja.htm#partition">コマンドラインでパーティショニング</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-ja.htm#partition"> cfdisk を使ってパーティショニング</a></li>
+					    <li><a href="part-cfdisk-ja.htm#formating">cfdiskでパーティション後のフォーマッティング</a></li>
+					    <li><a href="part-gdisk-ja.htm#gdisk-6">Formatting after partitioning with gdisk</a></li>
+					    <li><a href="part-gdiskja.htm#gdisk-1">GPT Partitioning with gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-ja.htm#part-example">パーティショニングの基本 &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-ja.htm#part-example">パーティションサイズの例</a></li>
+					  <li><a href="part-uuid-ja.htm#uuid">UUID, Rebuilding fstab and creating new mount points</a></li>
+					  <li><a href="part-cfdisk-ja.htm#disknames">ディスクの名前について</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-ja.htm">インストール・オプション - HD, USB, VM, Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-ja.htm#Inst-prep">インストールの準備 &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-ja.htm#Inst-prep">インストールの準備</a></li>
+					  <li><a href="hd-install-ja.htm#Installation">ハードディスクへのインストール</a></li>
+					  <li><a href="hd-install-ja.htm#first-hd-boot">始めての起動</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-ja.htm#fromiso">fromisoで起動&#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-ja.htm#fromiso">fromisoで起動 - 概説</a></li>
+					  <li><a href="hd-install-opts-ja.htm#grub2-fromiso">GRUB2からfromisoで起動</a></li>
+					  <li><a href="hd-install-opts-ja.htm#fromiso-persist">fromisoと持続モード</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-ja.htm#usb-hd">USBドライブへのインストール &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-ja.htm#usb-hd">USB-HDへのインストール -aptosid 独自の- aptosid-on-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-ja.htm#raw-usb">USB/SSDドライブに他のLinuxや MS Windows、Mac OS X システムから aptosid を書き込む</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-ja.htm#install-crypt">暗号化パーティションへのインストール - cryptroot</a></li>
+		  <li><a href="nbdboot-ja.htm#nbd1">aptosidをネットワークから起動</a></li>
+		  <li><a href="hd-install-vmopts-ja.htm#vmopts">仮想マシンへのインストール</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-ja.htm">グラフィックカード、モニター、XOrgその他のドライバ</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-ja.htm#mon-res">解像度とモニター &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-ja.htm#mon-res">解像度とモニター</a></li>
+					  <li><a href="hw-dev-mon-ja.htm#xrandr">デュアルモニターとxrandr</a></li>
+					  <li><a href="hw-dev-mon-ja.htm#mon-binary">デュアルモニター（バイナリードライバ）</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-ja.htm#foss-xorg">GPU drivers &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-ja.htm#ati-3d">AMD/ATI 3D ドライバ</a></li>
+					  <li><a href="gpu-ja.htm#intel">Intel 2D/3D ドライバ</a></li>
+					  <li><a href="gpu-ja.htm#nvidia">Nvidia 3D ドライバ</a></li>
+					  <li><a href="gpu-ja.htm#foss-xorg">Xorg のオープンソースドライバ</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-ja.htm#fw-detect">Firmwareの探知 - non-free </a></li>
+			  <li><a href="nf-firm-ja.htm#non-free-firmware">non-free をソースリスとに加える</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-ja.htm">ウィンドウマネージャ</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-ja.htm">KDE and XFCE ウィンドウマネージャ &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-ja.htm#xfce-notes">Xfce ノート</a></li>
+					    <li><a href="wm-dm-ja.htm#install-add">便利な KDE 追加アプリ</a></li>
+					    <li><a href="wm-dm-ja.htm#desk-freeze">デスクトップが凍結したら</a></li>
+					    <li><a href="wm-dm-ja.htm#kde-login">KDEにログインできない時</a></li>
+					    <li><a href="wm-dm-ja.htm#ch-th">テーマの変更</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-ja.htm#dm">Installing additional Display Managers</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-ja.htm">インターネット,WiFi,LAN</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-ja.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-ja.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-ja.htm#serv-ftp">FTPクライアント</a></li>
+					    <li><a href="lamp-apache-ja.htm#serv-sec">Webサーバーのセキュリティ設定</a></li>
+					    <li><a href="lamp-apache-ja.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-ja.htm#serv-mysql">MySQL の設定</a></li>
+					    <li><a href="lamp-ppp-ja.htm#serv-php">Apache2のためのPHPサポート</a></li>
+					    <li><a href="ntp-server-ja.htm#ntp-server">タイムサーバーの設定</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-ja.htm#tor">ファイアーウォールとプライバシー &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-ja.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-ja.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-ja.htm#firewalls">ファイアーウォール</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-ja.htm#ssh-x">SSH と Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-ja.htm#setup">Samba サーバーの設定</a></li>
+						  <li><a href="samba-ja.htm#configure">SAMBA の設定(Windowsとの共有)</a></li>
+						  <li><a href="ssh-ja.htm#ssh-fs">SSH Remote Mounting</a></li>
+						  <li><a href="ssh-ja.htm#ssh-x">SSHのネットワークを通してXウィンドウズのアプリケーションを使う</a></li>
+						  <li><a href="ssh-ja.htm#ssh-f">KonquerorでGUIのSSH</a></li>
+						  <li><a href="ssh-ja.htm#ssh-w">Windows-PCからSSHでXフォワーディング</a></li>
+						  <li><a href="ssh-ja.htm#ssh">SSH とセキュリティ</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-ja.htm#netcardconfig">WIFI &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-ja.htm#netcardconfig">Ceni を使ってネットワークに接続</a></li>
+						    <li><a href="inet-wpagui-ja.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-ja.htm#net-set1">WiFi - WiFi ローミング設定</a></li>
+						    <li><a href="inet-wpa-ja.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-ja.htm#hotswitch">WiFi とケーブル接続のホットスイッチ</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-ja.htm#netcardconfig">ケーブル接続のインターネット設定&#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-ja.htm#dial-mod">56k モデム</a></li>
+						    <li><a href="inet-ceni-ja.htm#netcardconfig">Ceni を使ってネットワークに接続</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-ja.htm#fw-detect">Firmwareの探知 - non-free </a></li>
+		<li><a href="nf-firm-ja.htm#non-free-firmware">non-free をソースリスとに加える</a></li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-ja.htm">パッケージマネージャとdist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-ja.htm#apt-cook">APT クックブックとソースリスト &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-ja.htm#apt-cook">APTガイド - クックブックとソースリスト</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#apt-install">新しくパッケージをインストールする</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#apt-delete">パッケージの除去</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#apt-downgrade">ダウングレードまたはパッケージの保持</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#apt-cache">apt-cacheでパッケージ検索</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#gui-pacsea">GUI パッケージ検索</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-ja.htm#kern-upgrade">カーネルのアップグレード &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-ja.htm#kern-remove">使わないカーネルの除去</a></li>
+					    <li><a href="sys-admin-kern-upg-ja.htm#kern-upgrade"> カーネルのアップグレード</a></li>
+					    <li><a href="sys-admin-kern-upg-ja.htm#dmakms">カーネルモジュールをdmakmsでダイナミックにインストールする</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-ja.htm#apt-upgrade">インストールされたシステムのアップグレード -  dist-upgrade - 概説 &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-ja.htm#live-cd-upgrade">ライブISOアップデート</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-ja.htm#approx">同一LAN上の複数のPCをdist-upgradeする</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#apt-upgrade">インストールされたシステムのアップグレード - dist-upgrade - 概説</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#du-st">インストールされたシステムのアップグレード - dist-upgrade - ステップ</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-ja.htm">システム管理</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-ja.htm#bois-prep">FreeDOSを使ってBIOSをアップグレード</a></li>
+		<li><a href="vir-rkits-ja.htm#virus-rkits">ウイルスとRootkitスキャナー</a></li>
+		<li><a href="hd-install-ja.htm#adduser">新しいユーザーとパスワード &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-ja.htm#adduser">新しいユーザーを加える</a></li>
+					    <li><a href="sys-admin-gen-ja.htm#pw-lost">root パスワードを忘れたら, 新パスワードの設定</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-ja.htm#start-services">サービスとランレベル &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-ja.htm#start-services">サービスのスタート/ストップ</a></li>
+					    <li><a href="sys-admin-gen-ja.htm#pkill">Killing a service or process</a></li>
+					    <li><a href="sys-admin-gen-ja.htm#init">aptosid のランレベル - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-ja.htm#rsync">システムのバックアップ &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-ja.htm#rdiff">rdiffを使ってバックアップ</a></li>
+					    <li><a href="sys-admin-rsync-ja.htm#rsync">rsyncを使ってバックアップ</a></li>
+					    <li><a href="home-ja.htm#home-bu">/home を移動する</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-ja.htm#fonts">CUPS、フォントと音声 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-ja.htm#fonts">フォント</a></li>
+					     <li><a href="sys-admin-gen-ja.htm#cups">CUPS - 印刷システム</a></li>
+					     <li><a href="sys-admin-gen-ja.htm#sound">サウンドミキサー</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-ja.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-ja.htm#chroot">Grub2 - Grubをchrootでリカバーする</a></li>
+					    <li><a href="sys-admin-grub2-ja.htm#mbr-over-grub2">Grub2 - MBRが上書きされてしまったら</a></li>
+					    <li><a href="sys-admin-grub2-ja.htm#multi-os">Grub2 - デュアルまたはマルチブーティング</a></li>
+					    <li><a href="sys-admin-grub2-ja.htm#grub1-grub2">Grub2 - Grub1からアップデートするには</a></li>
+					    <li><a href="sys-admin-grub2-ja.htm#grub2">Grub2 - 概説</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Sponsored by webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid is proudly hosted by webtropia.com" alt="aptosid is proudly hosted by webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+	<div class="divider" id="start-services">
+<!--- ####
+		<h2 id="top-header">Enabling services in aptosid</h2>
+#### -->
+		<h2 id="top-header">aptosid システム上でサービスを使うには</h2>
+
+<!--- ####
+				<h3>insserv (Pontos 2008-04 and forward ): To start/stop already installed services:</h3>
+#### -->
+				<h3>insserv (Pontos 2008-04 以降のリリース): すでにインストールされているサービスをスタート/ストップするには:</h3>
+<!--- ####
+							<p><span class="highlight-2">Read <span class="highlight-3">/usr/share/doc/insserv/README.Debian</span>, the release notes and the man pages carefully:</span></p>
+#### -->
+							<p><span class="highlight-2"><span class="highlight-3">/usr/share/doc/insserv/README.Debian</span>と insserv の man ページを注意深く読んでください:</span></p>
+<pre>
+ $ man insserv
+ $ man invoke-rc.d
+ $ man update-rc.d
+ google LSB headers
+</pre>
+
+<!--- ####
+							<p>For 'start':</p>
+#### -->
+							<p>スタートするには:</p>
+<pre>
+/etc/init.d/&lt;service&gt; start
+</pre>
+<!--- ####
+							<p>For 'stop':</p>
+#### -->
+							<p>ストップするには:</p>
+<pre>
+/etc/init.d/&lt;service&gt; stop
+</pre>
+							<p>再スタートするには:</p>
+<pre>
+/etc/init.d/&lt;service&gt; restart
+</pre>
+<!--- ####
+							<p>To prevent services running at-startup</p>
+#### -->
+							<p>起動の際に自動的にスタートしないようにするには:</p>
+<pre>
+update-rc.d &lt;service&gt; remove
+[このサービスのスタートアップリンクがすべて削除されます]
+</pre>
+<!--- ####
+							<p>To make sure a service runs at boot [not always required]</p>
+#### -->
+							<p>起動の際に必ず自動的にスタートするようにするには [このコマンドは必要とは限りません]</p>
+<pre>
+update-rc.d &lt;service&gt; defaults
+[このサービスのスタートアップリンクが作成されます]
+</pre>
+
+							<!--- ####
+							<p>To read the list of what services are running:</p>
+							#### -->
+							<p>どのサービスが自動的にスタートするかチェックするには:</p>
+<pre>
+ls /etc/rc5.d
+</pre>
+
+							<!--- ####
+							<p><span class="highlight-3">S</span> means the service will start.<br />
+							#### -->
+							<p><span class="highlight-3">S</span> (Start) でサービスがスタートします。<br />
+							<!--- ####
+							<span class="highlight-3">K</span> means service will not start.</p>
+							#### -->
+							<span class="highlight-3">K</span> (Kill) ではサービスがストップします。</p>
+
+<!--- ####
+					<h3>Older Installs (before Pontos 2008-04)</h3>
+#### -->
+					<h3>Pontos 2008-04 以前のリリース</h3>
+						<h3>Pontos 2008-04 以前のシステムでも insserv がインストールされていたら前の項目にしたがってください</h3>
+
+
+<!--- ####
+							<p> <span class="highlight-2">Warning: Older installs will not get insserv automatically, due to users own initscripts or symlinks. It is NOT recommended to install insserv on installations prior to Pontos. This package should be used with care, as incorrect or missing LSB dependencies of existing initscripts can lead to an unbootable system. Installing insserv on an existing install may require some manual changes. </span></p>
+#### -->
+							<p> <span class="highlight-2">警告: 古いインストールには ユーザーの initscript やシンボリックリンクなどに適応できないため、insserv は自動的に設定されません。Pontos 以前にインストールされたシステムに insserv をインストールすることは推奨しません。このパッケージの使用には注意が必要で、既存の initscript に LSB 依存関係の間違いや欠如があるとシステムが起動できなくなるおそれがあります。古いシステムに insserv をインストールするにはいくつかの作業が必要です。</span></p>
+
+<!--- ####
+							<p><span class="highlight-2">Read <a href="http://wiki.debian.org/LSBInitScripts/DependencyBasedBoot"> read the Debian documentation notes</a>, and release notes before installing and enabling insserv.</span></p>
+#### -->
+							<p><span class="highlight-2"> insserv をインストールし、有効にする前に必ず<a href="http://svn.debian.org/wsvn/initscripts-ng/trunk/src/insserv/debian/README.Debian?op=file&amp;rev=0"> Debian documentation notes</a>とリリースノートを読んでください。</span></p>
+	</div>
+	<div class="divider" id="bum">
+<!--- ####
+			<h2>Boot-Up Manager (bum) - Graphical services configuration tool</h2>
+#### -->
+			<h2>ブートアップマネージャ(bum) - サービス設定用のGUIツール</h2>
+
+<!--- ####
+							<p>If the logic of a debian system boot up sequence is not very clear and familiar to you, you should not play with symlinks, permissions and so forth. In order to avoid messing up your system. Boot-Up Manager will help you to automate your configuration.</p>
+#### -->
+							<p>Debian のブートアップシーケンスの論理によく親しんでいない人はシンボリックリンクやパーミッションなどを気軽にいじったり、実験したりするべきではありません。システムが滅茶苦茶になる恐れがあります。ブートアップマネージャを使って設定を自動的に行った方が安全です。</p>
+
+<!--- ####
+							<p>Boot-Up Manager is a GUI runlevel configuration editor which allows  you to configure what init services are invoked when the system boots up or reboots.  It displays a list of every service which could be started at boot.  You can toggle individual services on and off.</p>
+#### -->
+							<p>ブートアップマネージャはランレベル設定のGUIエディタで、システムの起動の際にどのサービスをスタートするかなどの設定ができます。起動時の自動スタートが可能なサービスの一覧が表示されて、個々のサービスのOn/Off設定ができます。</p>
+
+<pre>
+apt-get install bum
+</pre>
+<!--- ####
+							<p>To use the Boot-Up Manager GUI:</p>
+#### -->
+							<p>ブートアップマネージャを使うには:</p>
+<pre>
+$ sux
+password:
+bum
+</pre>
+<!--- ####
+						  <p> <a href ="http://www.marzocca.net/linux/bumdocs.html"> Detailed documentation on Boot-Up Manager (bum)</a>. </p>
+#### -->
+						  <p> <a href ="http://www.marzocca.net/linux/bumdocs.html"> ブートアップマネージャ(bum)の詳細はこちらへ</a>. </p>
+
+		</div>
+		<div class="divider" id="pkill">
+			<!--- ####
+			<h2>Killing a service or process</h2>
+			#### -->
+			<h2>サービスまたはプロセスを強制終了(kill)するには</h2>
+						<!--- ####
+						<p><span class="highlight-3">pkill</span> is very useful as its human readable and can work in both user and root mode in the terminal or at tty</p>
+						#### -->
+						<p><span class="highlight-3">pkill</span>は読みやすい出力の便利なコマンドで、ターミナルまたはttyからユーザーとしてでもrootとしてでもどちらでも使えます。</p>
+<pre>
+pkill -n service
+</pre>
+						<!--- ####
+						<p>If you are not sure of the correct spelling of the process or service you wish to kill <span class="highlight-3">pkill &lt;tab&gt; &lt;tab&gt;</span> will provide a list </p>
+						#### -->
+						<p>強制終了したいサービスまたはプロセスの名前に自身がない場合は <span class="highlight-3">pkill &lt;tab&gt; &lt;tab&gt;</span> でリストを表示します </p>
+
+						<!--- ####
+						<p>htop is also good a alternative. (killall -9 is your last alternative).</p>
+						#### -->
+						<p>代わりにhtopを使うのもいいアイデアです。 (どうにも困ってしまったらkillall -9も使えます)。</p>
+
+	</div>
+	<div class="divider" id="init">
+			<!--- ####
+			<h2>aptosid runlevels - init</h2>
+			#### -->
+			<h2>aptosidのランレベル - init</h2>
+							<!--- ####
+							<p>This is the list for the aptosid operating system runlevels, please note that it does differ from debian stable runlevels:</p>
+							#### -->
+							<p>ここにaptosidオペレーティングシステムのランレベルの一覧を載せます。 Debian stableとは違っていることに注意してください:</p>
+		 <table>
+			<tbody>
+				<tr>
+					<th>Runlevel</th>
+					<th>aptosid</th>
+					<th>Debian</th>
+				</tr>
+				<tr>
+					<td><b>init 0</b></td>
+					<td> Powers off the PC.</td>
+					<td> Powers off the PC.</td>
+				</tr>
+				<tr>
+					<td><b>init 1</b></td>
+					<td>Single user (safety or rescue mode). Dæmons like apache and sshd are stopped.
+					Do not go to this level via remote access.</td>
+					<td>Single user, stops services (safety or rescue mode). Do not go to this level via remote access.</td>
+				</tr>
+				<tr>
+					<td><b>init 2</b></td>
+					<td> Multi-User mode with the network running, with the X-Window System not running, and/or to stop or not enter the X-Window System.</td>
+					<td>Debians' default runlevel for Multi-User mode with the network running the X-Window System.</td>
+				</tr>
+				<tr>
+					<td><b>init 3</b></td>
+					<td> Multi-User mode with the network running, with the X-Window System not running, and/or to stop or not enter the X-Window System.  <a href="sys-admin-apt-ja.htm#apt-upgrade">This is where a dist-upgrade is actioned</a>.</td>
+					<td>Same as runlevel 2 / init 2.</td>
+				</tr>
+				<tr>
+					<td><b>init 4</b></td>
+					<td> Multi-User mode with the network running, with the X-Window System not running, and/or to stop or not enter the X-Window System.</td>
+					<td>Same as runlevel 2 / init 2.</td>
+				</tr>
+				<tr>
+					<td><b>init 5</b></td>
+					<td>The aptosid default for Multi-User mode with the network running the the X-Window System, and/or to start X-windows.</td>
+					<td>Same as runlevel 2 / init 2.</td>
+				</tr>
+				<tr>
+					<td><b>init 6</b></td>
+					<td> Restart/reboot the system.</td>
+					<td> Restart/reboot the system.</td>
+				</tr>
+				<tr>
+					<td><b>init S</b></td>
+					<td> This is where early boot time services are executed on a 'once only basis'. You cannot switch to it after it has been run.</td>
+					<td>This is where early boot time services are executed on a 'once only basis'. You cannot switch to it after it has been run.</td>
+				</tr>
+			</tbody>
+		</table>
+
+      <div class="spacer02"></div>
+
+							<p>To acertain the runlevel (init) you are currently in:</p>
+<pre>
+who -r
+</pre>
+							<p>Required reading for any aptosid and Debian system administrator regarding runlevels:</p>
+<pre>
+man init
+</pre>
+
+	</div>
+	<div class="divider" id="pw-lost">
+		<!--- ####
+		<h2>Lost root passwords</h2>
+		#### -->
+		<h2>rootのパスワードを忘れてしまったら</h2>
+
+			<!--- ####
+			<p>You cannot recover a lost password but you can set a new one.</p>
+			#### -->
+			<p>失ったパスワードを回復することはできませんが、新しいパスワードを設定することはできます。</p>
+
+			<!--- ####
+			<p>First boot from the Live-CD.</p>
+			#### -->
+			<p>まずはライヴCDから起動。</p>
+
+			<!--- ####
+			<p>As root mount your root partition (for example /dev/hdb2)</p>
+			#### -->
+			<p>rootとして問題のrootパーティションをマウントする(例として /dev/sdb2)</p>
+
+<!--- ####
+<pre>
+mount /dev/sdb2
+</pre>
+							<p>Now chroot into your old root-Partition with and set a new password:</p>
+<pre>
+chroot /media/sdb2 passwd
+</pre>
+#### -->
+<pre>
+mount /dev/sdb2 /media/sdb2
+<pre>
+							<p>問題のrootパーティションにchrootします and set a new password:</p>
+<pre>
+chroot /media/sdb2 passwd
+<pre>
+
+	</div>
+	<div class="divider" id="pw-new">
+		<h2>Setting new passwords</h2>
+
+							<p>To change your 'user' password, as <span class="highlight-3">$ user</span>:</p>
+<pre>
+$ passwd
+</pre>
+
+							<p>To change your 'root' password, as <span class="highlight-3"># root</span>:</p>
+<pre>
+passwd
+</pre>
+
+							<p>To change a user's password as an administrator, as <span class="highlight-3"># root</span>:</p>
+<pre>
+passwd &lt;user&gt;
+</pre>
+
+	</div>
+	<div class="divider" id="fonts">
+			<!--- ####
+			<h2>Fonts in aptosid</h2>
+			#### -->
+			<h2>aptosidのフォント</h2>
+				<!--- ####
+				<h5>Correct dpi settings - Basic Philosophy</h5>
+				#### -->
+				<h5>正しいDPI設定のしかた - 理念</h5>
+
+				<!--- ####
+				<p>DPI settings are problematic to guess, but are actually perfectly done by X.</p>
+				#### -->
+				<p>DPI settings are problematic to guess, but are actually perfectly done by X.</p>
+
+				<!--- ####
+				<h5>Correct resolutions and refresh rates</h5>
+				#### -->
+				<h5>正しい解像度とリフレッシュレート設定</h5>
+
+				<!--- ####
+				<p>Every monitor has its own perfect settings combination, but unfortunately not all of them report the right DCC values, and sometimes it is in need of a manual overwride.</p>
+				#### -->
+				<p>個々のモニターにはそれぞれに最適の組み合わせがありますが、残念なことにすべてのモニターが正しいDCC値をリポートするわけではないため、時にはユーザーが設定する必要もあります。</p>
+
+				<!--- ####
+				<h5>Correct graphics adapter drivers</h5>
+				#### -->
+				<!--<h5>正しいグラフィックアダプタードライバ</h5>-->
+
+				<!--- ####
+				<p>Some newer ATI and Nvidia cards simply don't play well with the free Xorg drivers, and the only reasonable solution in such case are the commercial closed source drivers. aptosid will not  pre-install those for legal reasons, <a href="gpu-ja.htm"> The solutions can be found here. </a></p>
+				#### -->
+				<!--<p>新しいATIやNvidiaのカードはフリーのXorgドライバではうまく作動しないため、そいうい場合はメーカーのクローズドソースドライバを使うことが唯一の合理的な解決法です。 aptosidは法律的な理由でそういうドライバを自動的にインストールしません。 <a href="gpu-ja.htm">そういう場合の解決法はこちらをご覧ください </a></p>-->
+
+				<!--- ####
+				<h5>Default Font selections, rendering and sizes</h5>
+				#### -->
+				<h5>デフォルトのフォント、レンダリングとサイズ</h5>
+
+				<!--- ####
+				<p>aptosid uses (Debian) pre-selected free fonts which have proved to be very balanced, your own fonts selection can/may deteriorate the quality of rendering. But there are a few powerful options in Debian (apart from KDE>systemsettings ) that can help providing spotless rendering with other fonts as well. But please be aware that every font has just a few real perfect sizes, other sizes may not play well.</p>
+				#### -->
+				<p>aptosidはDebianで選ばれて非常にバランスのいいことが実証されたフリーフォントを使っています。 ユーザーの趣味で他のフォントを入れるとレンダリングの質が落ちることがあります。 そのような時のために(apart from KDE>systemsettings )いくつかの強力なオプションがDebianに用意されていて他のフォントも美しく描写することができます。 ただ、どのフォントでも完璧に表示できるサイズは限られていて、他のサイズにはうまく対応できないことを考慮してください。</p>
+
+				<!--- ####
+				<p>Playing with the dpi size with the command may also be of assistance:</p>
+				#### -->
+				<p>DPIサイズを設定するコマンドでちょっと遊んでみるのもいいかもしれません:</p>
+<pre>
+fix-dpi-kdm
+</pre>
+				<!--- ####
+				<p>It should show the DPI for your screensize, but you can play with that as well.You will need to go to init 3 and back to init 5 to make it work or do a reboot.</p>
+				#### -->
+				<p>このコマンドはあなたのスクリーンサイズのDPIを表示しますが、このコマンドでしばらく遊んでみることを勧めます。 新しい設定を見るためには一度init 3にしてまたinit 5にもどりXを再スタートする必要があります。 再起動でも同じ結果がみれます</p>
+
+				<!--- ####
+				<p> After having changed font type or DPI (in X or Firefox/Iceweasel), you might need some readjustments to get results to your liking, especially. after a change from Bitmap Fonts to True Type Fonts or the other way round through:</p>
+				#### -->
+				<p> (XまたはFirefox/Iceweaselの)フォントを変更した後で、とくにBitmapフォントとTruTypeフォントを取り替えた後など、きれいなフォントを表示するために若干の調整が必要な場合があります。 次のコマンドを実行します:</p>
+<pre>
+dpkg-reconfigure fontconfig-config
+</pre>
+					<p>Nativeとautohinter on automaticを選びましょう。 それともいろいろ試して結果をみるtのもいいアイデアです。</p>
+					<!--- ####
+					<p>If that does not work you might need to redo your fonts cache by:</p>
+					#### -->
+					<p>それでもダメなときは次のコマンドでフォントキャッシュを作り直します:</p>
+<pre>
+apt-get install --reinstall --yes -o DPkg::Options::=--force-confmiss -o DPkg::Options::=--force-confnew fontconfig fontconfig-config
+</pre>
+				<!--- ####
+				<h5>GTK based applications like Firefox/Icewasel</h5>
+				#### -->
+				<h5>Firefox/Icewaselなど、GTKを使っているアプリケーション</h5>
+				<!--- ####
+				<p>GTK-based apps in general are problematic with KDE defaults. This could be solved by this:</p>
+				#### -->
+				<p>GTKを使ってるアプリケーションは一般にKDEのデフォルトと相性がよくありません。 この問題はつぎのコマンドで解決できます:</p>
+<pre>
+apt-get install gtk2-engines system-config-gtk-kde gtk-qt-engine gtk2-engines-qtcurve
+</pre>
+<!--- ####
+							<p>In <span class="highlight-3">System Settings >Appearance </span> you will have a new menu item called <span class="highlight-3">GTK Styles and Fonts</span>. Set 'GTK Styles' to use 'Clearlooks' and have the 'GTK Fonts' set to use 'KDE fonts' <span class="highlight-3">or </span> experiment with the various options to suit your preferences.</p>
+#### -->
+							<p><span class="highlight-3">System Settings >Appearance </span> のメニューに新しく<span class="highlight-3">GTK Styles and Fonts</span>が入りました。 'GTK Styles' に 'Clearlooks' を選び、'GTK Fonts' を'KDE fonts' に設定します。<span class="highlight-3">もしくは </span> 自分で色々なオプションを試してみてください。.</p>
+
+							<!--- ####
+							<p>This MAY fix your font rendering in gtk apps</p>
+							#### -->
+							<p>上記の方法でgtkのアプリケーションのフォントを修正できる*かも*しれない、というだけです</p>
+
+	</div>
+	<div class="divider" id="cups">
+			<h2>CUPS</h2>
+							<!--- ####
+							<p>KDE has a large section inbuilt in the KDE help, however dist-upgrades often can cause cups to misbehave, this is one known solution,:</p>
+							#### -->
+							<p>KDEにはCUPSについて膨大なヘルプがありますが、dist-upgradeによってCUPSがうまく作動しなくなることがあります。 そういうときは:</p>
+
+<pre>
+modprobe lp
+echo lp >> /etc/modules
+apt-get remove --purge cupsys cups
+apt-get install cups
+	または
+apt-get install cups cups-driver-gutenprint hplip
+</pre>
+							<!--- ####
+							<p>Make sure CUPS is running :</p>
+
+							#### -->
+							<p>CUPSがスタートしているのを確認します。 :</p>
+<pre>
+/etc/init.d/cups restart
+</pre>
+							<p>その後ブラウザで:</p>
+<pre>
+http://localhost:631
+</pre>
+							<!--- ####
+							<p>Another gotcha is when setting up cups via the GUI method, is that it brings up a dialog box asking for you to put in your password, however the dialog box has your user name, prefilled, so when you put in your user password, it does not work, What is really wants is for you to change the user name to <span class="highlight-2">root</span> and put in your <span class="highlight-2">root password</span>.</p>
+							#### -->
+							<p>もう一つGUIでCUPSの設定を行う場合に小さい落とし穴があります。 ダイアログが開き、ユーザー名が表示されパスワードの入力を待ちますが、ここにユーザーのパスワードを入れてもうまくいきません。 ここではユーザー名のかわりに<span class="highlight-2">root</span>とタイプして<span class="highlight-2">rootのパスワード</span>を入力しないといけません。</p>
+
+
+							<p><a href="http://www.linuxfoundation.org/collaborate/workgroups/openprinting/database/databaseintro">The OpenPrinting database</a> contains a wealth of information about specific printers, along with extensive driver information, the drivers themselves, basic specifications, and an associated set of configuration tools. </p>
+	</div>
+	<div class="divider" id="sound">
+			<!--- ####
+			<h2>Sound in aptosid</h2>
+			#### -->
+			<h2>aptosid の音声について</h2>
+							<!--- ####
+							<p><span class="highlight-3">Sound is muted by default in aptosid.</span></p>
+							#### -->
+							<p><span class="highlight-3">aptosid ではデフォルトで音声はミュート(消音)に設定されています。</span></p>
+
+							<!--- ####
+							<p>The KDE version uses Kmix and XFCE uses Mixer.</p>
+							#### -->
+							<p>KDE バージョンは Kmix を、XFCE バージョンは Mixer を搭載しています。.</p>
+
+							<!--- ####
+							<p>Often it is only a matter of clicking on the sound icon in the taskbar and unchecking the 'Mute box'.</p>
+							#### -->
+							<p>音声が聞こえるようにするにはたいていの場合タスクバーの音声アイコンをクリックして'Mute box'のチェックを解除するだけですみます。</p>
+
+					<h6>Kmix</h6>
+							<!--- ####
+							<p>In Kmix you will need to activate the options you prefer for channel options, <span class="highlight-3">Kmix>Setting>Configure Channels.</span> Or in a terminal:</p>
+							#### -->
+							<p>Kmix ではお好みのチャンネルオプションを選ぶ必要があるでしょう。<span class="highlight-3">Kmix>Setting>Configure Channels</span> のメニューまたはコンソールから:</p>
+<pre>
+$ kmix
+</pre>
+
+					<h6>XFCE</h6>
+
+							<!--- ####
+							<p>In XFCE run the mixer application and add some controls via the <span class="highlight-3"> Multimedia>Mixer</span> and click the <span class="highlight-3">Select Controls box.</span> Or in a terminal:</p>
+							#### -->
+							<p>XFCE では mixer アプリケーションをスターとして <span class="highlight-3"> Multimedia>Mixer</span> からコントロールを加え<span class="highlight-3">Select Controls box.</span> をくりっくするか、またはコンソールから:</p>
+<pre>
+$ xfce4-mixer
+</pre>
+
+					<h3>Alsamixer</h3>
+
+							<!--- ####
+							<p>If you prefer to use Alsamixer, it is in the alsa-utils package:</p>
+							#### -->
+							<p>Alsamixer を使いたかったら、alsa-utils パッケージに入っています:</p>
+<pre>
+apt-get update
+apt-get install alsa-utils
+exit
+</pre>
+								<!--- ####
+							 <p>Set your preferred sound settings as <span class="highlight-2">$user</span> from the terminal:</p>
+								#### -->
+							 <p><span class="highlight-2">$user</span> としてお好きなように音声を設定します。コンソールから:</p>
+<pre>
+$ alsamixer
+</pre>
+
+							  <!--<p><a href='http://sidux.com/index.php?module=Wikula&amp;tag=SoundMaster'> See also the wiki.</a></p>-->
+
+	</div>
+
+			<div id="rev">Content last revised 20/04/2011 0830 UTC </div>
+
+</div>
+</body>
+</html>

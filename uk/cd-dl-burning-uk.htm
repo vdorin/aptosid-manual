@@ -1,0 +1,658 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="uk" lang="uk">
+<head>
+	<title>aptosid Manuals - CD Downloading and Burning</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision polix 28/08/2011 0100 UTC -->
+<!--htdig_noindex--><div id="menu"> <!-- menu starts here - ua language maintained by polix -->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="Головна сторінка aptosid.com, форуму і вікі" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-uk.htm#search-on"><img src="../lib/logos/manual-search-22x22.png" title="Пошук в керівництві" alt="Search" /> Bаріанти пошуку</a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Bибір мови - Choose another language CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="Переключення мови CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-uk.htm">Керівництво aptosid</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-uk.htm#welcome-gen">Ласкаво просимо! &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-uk.htm#cred-team">Подяки</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-uk.htm#how-to">Про використання &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-uk.htm#how-to">Про використання</a></li>
+					  <li><a href="welcome-uk.htm#table-contents">3міст</a></li>
+					</ul>
+					</li>
+		<li><a href="help-uk.htm#help-gen">Oтримання допомоги&#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-uk.htm#help-gen">Де отримати допомогу</a></li>
+					  <li><a href="help-uk.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-uk.htm#welcome-quick">Короткий посібник aptosid</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-uk.htm">Зміст ISO-образу, випуски, список дзеркал і запис</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-uk.htm#cd-content">Зміст ISO-образу і системні вимоги &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-uk.htm#rolling">Зауваження до релізу</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-uk.htm#download-aptosid">Список дзеркал, скачування ISO-образу і запис &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-uk.htm#md5">Перевірка ISO-образу з md5</a></li>
+					  <li><a href="cd-dl-burning-uk.htm#burn-nero">Запис ISO-образу в Windows</a></li>
+					  <li><a href="cd-dl-burning-uk.htm#burn-linux">Запис ISO-образу в Linux</a></li>
+					  <li><a href="cd-no-gui-burn-uk.htm#burning-no-gui">Скрипт burniso</a></li>
+					  <li><a href="cd-no-gui-burn-uk.htm#burn-no-gui-gen">Запис ISO-образу в консолі</a></li>
+					  <li><a href="cd-dl-burning-uk.htm#download-aptosid">Cписок дзеркал</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-uk.htm">Режим ISO-образу</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-uk.htm#rootpw">Пароль root на ISO-образі</a></li>
+				<li><a href="live-mode-uk.htm#live-cd-installsoft">Установка ПО на ISO-образі</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-uk.htm">Термінал і оболонка</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-uk.htm#term-kon">Термінал і оболонка &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-uk.htm#term-kon">Термінал і оболонка</a></li>
+					  <li><a href="term-konsole-uk.htm#colours"> Кольорова підказка в терміналі</a></li>
+					  <li><a href="term-konsole-uk.htm#cli-help">Допомога в терміналі</a></li>
+					  <li><a href="help-uk.htm#init3-tools">Корисні інструменти в текстовому режимі (tty) - init 3</a></li>
+					  <li><a href="term-konsole-uk.htm#term-cmds">Команди в терміналі</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-uk.htm#sux">Команда: sux/sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-uk.htm">Чит-коди</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-uk.htm#cheatcodes">Особливі чит-коди для ISO-образу aptosid</a></li>
+				<li><a href="cheatcodes-uk.htm#cheatcodes-linux">Загальні чит-коди для параметрів ядра</a></li>
+				<li><a href="cheatcodes-vga-uk.htm#vga">Загальні коди для відеокарти</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-uk.htm">Розділ жорсткого диска -по старому,GPT та LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-uk.htm#hd-ntfs3g">Запис на розділ NTFS з ntfs-3g</a></li>
+			<li><a href="part-lvm-uk.htm#part-lvm">Розмітка з використанням LVM - Logical Volume Manager</a></li>
+			<li><a href="part-gparted-uk.htm#partition">Розмітка диска з інтерфейсом &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-uk.htm#partition">Розмітка диска з gparted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-uk.htm#ntfs">Розділи NTFS з gparted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-uk.htm#partition">Приклади розмітки диска в консолі &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-uk.htm#partition">Розмітка диска з cfdisk</a></li>
+					    <li><a href="part-cfdisk-uk.htm#formating">Форматування розділів з cfdisk</a></li>
+					    <li><a href="part-gdisk-uk.htm#gdisk-6">Форматування розділів з gdisk</a></li>
+					    <li><a href="part-gdisk-uk.htm#gdisk-1">GPT-розділів за допомогою Gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-uk.htm#part-example">Розмітка диска - огляд &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-uk.htm#part-example">Приклади розмітки диска</a></li>
+					  <li><a href="part-uuid-uk.htm#uuid">UUID, відновлення fstab і створення нових точок монтування</a></li>
+					  <li><a href="part-cfdisk-uk.htm#disknames">Імена жорстких дисків</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-uk.htm">Установка aptosid на HD, USB, VM і шифровані розділи</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-uk.htm#Inst-prep">Підготовка установки &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-uk.htm#Inst-prep">Підготовка установки</a></li>
+					  <li><a href="hd-install-uk.htm#Installation">Інсталяція на HD</a></li>
+					  <li><a href="hd-install-uk.htm#first-hd-boot">Перше завантаження</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-uk.htm#fromiso">Завантаження 'fromiso' &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-uk.htm#fromiso">Завантаження "fromiso '- огляд </a></li>
+					  <li><a href="hd-install-opts-uk.htm#guab2-fromiso">Завантаження "fromiso ' з guab 2</a></li>
+					  <li><a href="hd-install-opts-uk.htm#fromiso-persist">Cпособи 'fromiso' i 'persist'</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-uk.htm#usb-hd">Iнсталляцiя на USB &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-uk.htm#usb-hd">Iнсталляцiя на USB-HD - спосiб aptosid -  aptosid-на-флешкi</a></li>
+					  <li><a href="hd-ins-opts-oos-uk.htm#raw-usb">Запис aptosid на USB / SSD за допомогою іншого Linux, MS Windows або Mac OS</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-uk.htm#install-crypt">Установка на шифровані розділи - cryptroot</a></li>
+		  <li><a href="nbdboot-uk.htm#nbd1">Завантаження aptosid по мережі</a></li>
+		  <li><a href="hd-install-vmopts-uk.htm#vmopts">Опції інсталяцій на VM (Virtual Machine)</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-uk.htm">Устаткування в Xorg і різні драйвери</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-uk.htm#mon-res">Дозвіл екрану та монітори  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-uk.htm#mon-res">Дозвіл екрану та монітори</a></li>
+					  <li><a href="hw-dev-mon-uk.htm#xrandr">Подвійні екрани і xrandr</a></li>
+					  <li><a href="hw-dev-mon-uk.htm#mon-binary">Подвійні екрани (використовуючи виконавчі файли)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-uk.htm#foss-xorg">GPU драйвери &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-uk.htm#ati-3d">AMD / ATI 3D драйвери</a></li>
+					  <li><a href="gpu-uk.htm#intel">Intel 2D i 3D драйвери</a></li>
+					  <li><a href="gpu-uk.htm#nvidia">Nvidia 3D драйвери</a></li>
+					  <li><a href="gpu-uk.htm#foss-xorg">Вільні Xorg-драйвери</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-uk.htm#fw-detect">Визначення невільного мікропрограмного забезпечення - non-free </a></li>
+			  <li><a href="nf-firm-uk.htm#non-free-firmware">Додавання non-free в список джерел</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-uk.htm">Bіконні менеджери</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-uk.htm">Віконні менеджери KDE та Xfce &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-uk.htm#xfce-notes">Корисні інструменти для Xfce</a></li>
+					    <li><a href="wm-dm-uk.htm#install-add">Корисні інструменти для KDE</a></li>
+					    <li><a href="wm-dm-uk.htm#desk-freeze">Робочий стіл зависає</a></li>
+					    <li><a href="wm-dm-uk.htm#kde-login">Проблеми входу в KDE</a></li>
+					    <li><a href="wm-dm-uk.htm#ch-th">Управління темами</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-uk.htm#dm">Установква додаткових дисплейних менеджерів</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-uk.htm">Інтернет, Wifi і локальна мережа</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-uk.htm">Мета-пакет LAMP &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-uk.htm#serv-apache">Мета-пакет LAMP</a></li>
+					    <li><a href="lamp-apache-uk.htm#serv-ftp">Kлієнти FTP</a></li>
+					    <li><a href="lamp-apache-uk.htm#serv-sec">3ахищені протоколи</a></li>
+					    <li><a href="lamp-apache-uk.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-uk.htm#serv-mysql">Налаштування MySQL</a></li>
+					    <li><a href="lamp-ppp-uk.htm#serv-php">PHP в apache</a></li>
+					    <li><a href="ntp-server-uk.htm#ntp-server">Установка сервера часу</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-uk.htm#tor">Брандмауери та веб-проксі &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-uk.htm#tor">Маршрутизатор tor</a></li>
+					    <li><a href="tor-privoxy-uk.htm#privoxy">Веб-проксi privoxy</a></li>
+					    <li><a href="inet-ceni-uk.htm#firewalls">Брандмауэри</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-uk.htm#ssh-x">Samba и ssh &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-uk.htm#setup">Сервер samba</a></li>
+						  <li><a href="samba-uk.htm#configure">Інтеграції samba в мережу Windows</a></li>
+						  <li><a href="ssh-uk.htm#ssh-fs">Віддалене монтування з ssh</a></li>
+						  <li><a href="ssh-uk.htm#ssh-x">Програми X-Windows з ssh</a></li>
+						  <li><a href="ssh-uk.htm#ssh-f">Інтерфейс ssh і Konqueror</a></li>
+						  <li><a href="ssh-uk.htm#ssh-w">ssh X-forwarding з Windows-PC</a></li>
+						  <li><a href="ssh-uk.htm#ssh">Безпека з ssh</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-uk.htm#netcardconfig">Связи с WiFi &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-uk.htm#netcardconfig">Налаштування мережевих карт з ceni</a></li>
+						    <li><a href="inet-wpagui-uk.htm#wpa-roaming-gui">Графіческoe ппіложеніе wpa_gui для WiFi</a></li>
+						    <li><a href="inet-setup-v.htm#net-set1">Роумiнг с WiFi</a></li>
+						    <li><a href="inet-wpa-uk.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-uk.htm#hotswitch">Переключення мережі між WiFi та провідного зв'язком</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-uk.htm#netcardconfig">дротяний зв'язок&#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-uk.htm#dial-mod">56кілобітовие модеми</a></li>
+						    <li><a href="inet-ceni-uk.htm#netcardconfig">Налаштування мережевих карт з ceni</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-uk.htm#fw-detect">Визначення невільного мікропрограмного забезпечення - non-free </a></li>
+		<li><a href="nf-firm-uk.htm#non-free-firmware">Додавання non-free в список джерел</a></li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-uk.htm">Управління пакетами і оновлення системи з dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-uk.htm#apt-cook">APT и репозитории &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-uk.htm#apt-cook">APT і репозиторії</a></li>
+					    <li><a href="sys-admin-apt-uk.htm#apt-install">Установка нового пакета</a></li>
+					    <li><a href="sys-admin-apt-uk.htm#apt-delete">Bидалення пакета</a></li>
+					    <li><a href="sys-admin-apt-uk.htm#apt-downgrade">Зниження версії з hold</a></li>
+					    <li><a href="sys-admin-apt-uk.htm#apt-cache">Пошук пакетної иформации з apt-cache</a></li>
+					    <li><a href="sys-admin-apt-uk.htm#gui-pacsea">Графічна пошукова програма</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-uk.htm#kern-upgrade">Оновлення ядра&#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-uk.htm#kern-remove">Bидалення ядра</a></li>
+					    <li><a href="sys-admin-kern-upg-uk.htm#kern-upgrade">Оновлення ядра</a></li>
+					    <li><a href="sys-admin-kern-upg-uk.htm#dmakms">Динамічна інсталяція модулів ядра з dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-uk.htm#apt-upgrade">Оновлення системи з dist-upgrade - Короткий огляд &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-uk.htm#live-cd-upgrade">Оновлення з ISO-образу</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-uk.htm#approx">Оновлення декількох комп'ютерів в локальній мережі</a></li>
+					    <li><a href="sys-admin-apt-uk.htm#apt-upgrade">Короткий огляд Оновлення системи з dist-upgrade</a></li>
+					    <li><a href="sys-admin-apt-uk.htm#du-st">Кроки оновлення системи від dist-upgrade</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-uk.htm">Cистемне адміністрування</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-uk.htm#bois-prep">Оновлення BIOS з FreeDOS</a></li>
+		<li><a href="vir-rkits-uk.htm#virus-rkits">Cканер безпеки</a></li>
+		<li><a href="hd-install-uk.htm#adduser">Новий користувач та паролі &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-uk.htm#adduser">Додавання нового користувача</a></li>
+					    <li><a href="sys-admin-gen-uk.htm#pw-lost">Відновлення root-пароля</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-uk.htm#start-services">Служби та режими завантаження &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-uk.htm#start-services">Вибір служб</a></li>
+					    <li><a href="sys-admin-gen-uk.htm#pkill">3авершення служби або процесу</a></li>
+					    <li><a href="sys-admin-gen-uk.htm#init">Режими завантаження init в aptosid</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-uk.htm#rsync">Pезервування системи &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-uk.htm#rdiff">Резервування за rdiff</a></li>
+					    <li><a href="sys-admin-rsync-uk.htm#rsync">Резервування за rsync</a></li>
+					    <li><a href="home-uk.htm#home-bu">Переміщення / home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-uk.htm#fonts">Cups, шрифти та звук &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-uk.htm#fonts">Шрифти</a></li>
+					     <li><a href="sys-admin-gen-uk.htm#cups">Cервер cups</a></li>
+					     <li><a href="sys-admin-gen-uk.htm#sound">Звукові мікшери</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-uk.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-uk.htm#chroot">Grub2 - Відновлення grub з chroot</a></li>
+					    <li><a href="sys-admin-grub2-uk.htm#mbr-over-grub2">Grub2 -Видалення з MBR</a></li>
+					    <li><a href="sys-admin-grub2-uk.htm#multi-os">Grub2 - Подвійна і мультизагрузки</a></li>
+					    <li><a href="sys-admin-grub2-uk.htm#grub1-grub2">Grub2 - Оновлення за grub1</a></li>
+					    <li><a href="sys-admin-grub2-uk.htm#grub2">Grub2 - Kороткий огляд</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Sponsored by webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid розміщений на сервері webtropia.com" alt = "aptosid розміщений на сервері webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+	<div class="divider" id="download-aptosid">
+		<h2 id="top-header">Завантаження aptosid ISO</h2>
+			<h6><span class="highlight-2">ЦЕ ДУЖЕ ВАЖЛИВО:</span><span class="highlight-3">aptosid, як Linux Live-CD, заснований на високі технології стиснення, а через це, особливу увагу необхідно при запису зображення ISO. Використовуйте тільки високоякісні CD-ЗМІ [або DVD + RW] і записати в <span class="highlight-2">DAO-mode (disk-at-once)</span> і не швидше ніж x8.</span></h6>
+	<div class="spacer02"></div>
+					<h6 class="highlight-3">Будь ласка, використовуйте найближче до вас дзеркало. Дзеркала з codeboxes під ними оновлюються, як тільки зміни передаються (див. / і т.д. / etc / sources.list.d / aptosid.list).</h6>
+
+				<h4>Europe</h4>
+				<ul>
+					<li>
+						<b>Technical University Carolo-Wilhelmina at Brunswick, Germany:</b><br />
+						<a href="http://debian.tu-bs.de/project/aptosid/">http://debian.tu-bs.de/project/aptosid/</a><br />
+						<a href="ftp://debian.tu-bs.de/project/aptosid/">ftp://debian.tu-bs.de/project/aptosid/</a><br />
+						<a href="rsync://debian.tu-bs.de/aptosid/"> rsync://debian.tu-bs.de/aptosid/</a>
+<pre>
+deb http://debian.tu-bs.de/project/aptosid/debian/ sid main fix.main
+# deb-src http://debian.tu-bs.de/project/aptosid/debian/ sid main fix.main
+</pre>
+					</li>
+					<li>
+						<b>Free University Berlin/ spline (Student Project LInux NEtwork), Germany:</b><br /><a href="http://ftp.spline.de/pub/aptosid/">http://ftp.spline.de/pub/aptosid/</a><br />
+						<a href="ftp://ftp.spline.de/pub/aptosid/">ftp://ftp.spline.de/pub/aptosid/</a><br />
+						<a href="rsync://ftp.spline.de/aptosid/">rsync://ftp.spline.de/aptosid/</a>
+<pre>
+deb ftp://ftp.spline.de/pub/aptosid/debian/ sid main fix.main
+# deb-src ftp://ftp.spline.de/pub/aptosid/debian/ sid main fix.main
+</pre>
+					</li>
+					<li>
+						<b>OfficeVienna, Austria:</b><br />
+						<a href="http://aptosid.office-vienna.at/aptosid/">http://aptosid.office-vienna.at/aptosid/</a><br />
+						<a href="ftp://aptosid.office-vienna.at/aptosid/">ftp://aptosid.office-vienna.at/aptosid/</a><br />
+<pre>
+deb http://aptosid.office-vienna.at/aptosid/debian/ sid main fix.main
+# deb-src http://aptosid.office-vienna.at/aptosid/debian/ sid main fix.main
+</pre>
+					</li>
+					<li>
+						<b>webtropia.com, Düsseldorf, Germany:</b><br />
+						<i>(aptosid repository only)</i><br />
+						<a href="http://aptosid.com/debian/">http://aptosid.com/debian/</a><br />
+<pre>
+deb http://aptosid.com/debian/ sid main fix.main
+# deb-src http://aptosid.com/debian/ sid main fix.main
+</pre>
+					</li>
+				  </ul>
+	</div>
+	<div class="divider" id="aptosid-repo">
+				  <ul>
+					<!--<li>
+						<b>Cybermirror,</b> Germany<br />
+						<a href="http://aptosid.cybermirror.org/">http://aptosid.cybermirror.org/</a>
+					</li>-->
+					<li>
+						<b>Friedrich-Alexander-Universität, Erlangen-Nürnberg, Germany:</b><br />
+						<a href="http://ftp.uni-erlangen.de/mirrors/aptosid/">http://ftp.uni-erlangen.de/mirrors/aptosid/</a><br />
+						<a href="ftp://ftp.uni-erlangen.de/mirrors/aptosid/">ftp://ftp.uni-erlangen.de/mirrors/aptosid/</a>
+					</li>
+					<li>
+						<b>University of Leipzig, Germany:</b> <br />
+						<a href="http://6bone.informatik.uni-leipzig.de/pub/aptosid.com/aptosid"> http://6bone.informatik.uni-leipzig.de/pub/aptosid.com/aptosid</a><br />
+						<a href="https://6bone.informatik.uni-leipzig.de/pub/aptosid.com/aptosid">https://6bone.informatik.uni-leipzig.de/pub/aptosid.com/aptosid</a><br />
+						<a href="ftp://6bone.informatik.uni-leipzig.de/pub/aptosid.com/aptosid/">ftp://6bone.informatik.uni-leipzig.de/pub/aptosid.com/aptosid/</a><br />
+						<a href="rsync://6bone.informatik.uni-leipzig.de/aptosid">rsync://6bone.informatik.uni-leipzig.de/aptosid</a>
+					</li>
+					<li>
+						<b>University of Kent/ Computer Science Department, United Kingdom:</b><br />
+						<a href="http://www.mirrorservice.org/sites/aptosid.com/">http://www.mirrorservice.org/sites/aptosid.com/</a><br />
+						<a href="ftp://ftp.mirrorservice.org/sites/aptosid.com/">ftp://ftp.mirrorservice.org/sites/aptosid.com/</a><br />
+						<a href="rsync://rsync.mirrorservice.org/aptosid.com/">rsync://rsync.mirrorservice.org/aptosid.com/</a>
+					</li>
+					<li>
+						<b>Ireland's National Education and Research Network/ HEAnet, Dublin, Ireland</b><br />
+						<a href="http://ftp.heanet.ie/pub/aptosid/">http://ftp.heanet.ie/pub/aptosid/</a><br />
+						<a href="ftp://ftp.heanet.ie/pub/aptosid/">ftp://ftp.heanet.ie/pub/aptosid/</a><br />
+						<a href="rsync://ftp.heanet.ie/pub/aptosid/">rsync://ftp.heanet.ie/pub/aptosid/</a>
+					</li>
+					<li>
+						<b>Università degli Studi di Pavia/Biblioteca Unificata di Giurisprudenza, Italy</b><br />
+						<a href="http://aptosid.unipv.it">http://aptosid.unipv.it</a>
+					</li>
+				</ul>
+				<h4>North America</h4>
+				<ul>
+					<!--<li>
+						<b>XR3 Technologies, Huntsville, AL USA:</b><br />
+						<a href="http://aptosid.foreverlinux.net/aptosid/aptosid/">http://aptosid.foreverlinux.net/aptosid/aptosid/</a>
+<pre>
+deb http://aptosid.foreverlinux.net/aptosid/aptosid/debian/ sid main fix.main
+# deb-src http://aptosid.foreverlinux.net/aptosid/aptosid/debian/ sid main fix.main
+</pre>
+					</li>-->
+					<!--<li>
+						<b>Internap Network Services</b>, Atlanta, GA. USA <br />
+						<a href="ftp://ftp-mirror.internap.com/pub/aptosid/"> ftp://ftp-mirror.internap.com/pub/aptosid/</a><br />
+						<a href="http://ftp-mirror.internap.com/pub/aptosid/"> http://ftp-mirror.internap.com/pub/aptosid/</a><br />
+						<a href="rsync://ftp-mirror.internap.com/aptosid/"> rsync://ftp-mirror.internap.com/aptosid/</a>
+					</li>-->
+					<!--<li>
+						<b>University of Tennessee/ SunSITE, TN, USA:</b><br />
+						<a href="http://mira.sunsite.utk.edu/aptosid/">http://mira.sunsite.utk.edu/aptosid/</a><br />
+						<a href="rsync://mira.sunsite.utk.edu/aptosid">rsync://mira.sunsite.utk.edu/aptosid</a>
+					</li>-->
+					<li>
+						<b>Yellow Fiber Networks, Reston VA, USA</b><br />
+						<a href="http://mirror.yellowfiber.net/aptosid//">http://mirror.yellowfiber.net/aptosid/</a>
+					</li>
+					<li>
+						 <b>MirrorCatalogs, Denver Colorado, USA</b><br />
+						 <a href="http://aptosid.mirrorcatalogs.com">http://aptosid.mirrorcatalogs.com</a><br />
+						 <a href="ftp://aptosid.mirrorcatalogs.com/">ftp://aptosid.mirrorcatalogs.com/</a><br />
+						 <a href="rsync://aptosid.mirrorcatalogs.com/aptosid/">rsync://aptosid.mirrorcatalogs.com/aptosid/</a>
+					</li>
+					 <li>
+						<b>w3you.com, St. Louis/MO, USA :</b><br />
+						<i>(aptosid repository only)</i><br />
+						<a href="http://oscar.aptosid.com/debian/">http://oscar.aptosid.com/debian/</a><br />
+<pre>
+deb http://oscar.aptosid.com/debian/ sid main fix.main
+# deb-src http://oscar.aptosid.com/debian/ sid main fix.main
+</pre>
+					</li>
+				</ul>
+				<h4>South America</h4>
+				<ul>
+					<li>
+						<b>Universidade Federal do Paraná/ Center for Scientific Computing and Free Software, Brazil:</b><br />
+						<a href="http://aptosid.c3sl.ufpr.br">http://aptosid.c3sl.ufpr.br</a><br />
+                                            	<a href="ftp://aptosid.c3sl.ufpr.br/aptosid">ftp://aptosid.c3sl.ufpr.br/aptosid</a><br />
+                                            	<a href="rsync://aptosid.c3sl.ufpr.br/aptosid">rsync://aptosid.c3sl.ufpr.br/aptosid</a>
+					</li>
+				</ul>
+				<h4>Asia</h4>
+				<ul>
+					<li>
+						<b>National Taiwan University/ Computer and Information Networking Center, </b>Taipei City, R.O.C.<br />
+ 						<a href="http://ftp.tw.debian.org/pub/aptosid/">http://ftp.tw.debian.org/pub/aptosid/</a><br />
+ 						<a href="ftp://ftp.tw.debian.org/pub/aptosid/">ftp://ftp.tw.debian.org/pub/aptosid/</a>
+					</li>
+				</ul>
+				<h4>Africa</h4>
+				<ul>
+					<li>
+						<b>University of Cape Town/ Linux Enthusiasts Group, South Africa</b><br />
+						<a href="http://ftp.leg.uct.ac.za/pub/linux/aptosid/"> http://ftp.leg.uct.ac.za/pub/linux/aptosid/</a><br />
+						<a href="ftp://ftp.leg.uct.ac.za/pub/linux/aptosid/" >ftp://ftp.leg.uct.ac.za/pub/linux/aptosid/</a><br />
+						<!--<a href="rsync://rsync.mirrorservice.org/aptosid.com/"> rsync://ftp.leg.uct.ac.za/pub/linux/aptosid/</a>-->
+					</li>
+				</ul>
+
+				<h4>Australia</h4>
+				<ul>
+					<li>
+						<b>mirror.AARNet.edu.au, Brisbane, Australia:</b> <br />
+						<a href="http://mirror.aarnet.edu.au/pub/aptosid/ ">http://mirror.aarnet.edu.au/pub/aptosid/  </a><br />
+						<a href="ftp://mirror.aarnet.edu.au/pub/aptosid/">ftp://mirror.aarnet.edu.au/pub/aptosid/</a>
+					</li>
+				</ul>
+	</div>
+	<div class="divider" id="aptosid-def">
+				<h3>Визначення файли на кожного дзеркала</h3>
+
+							<p>Кожнe aptosid дзеркало має наступні файли:</p>
+
+<pre>
+MD5SUM
+MD5SUM.gpg
+SHA256SUM
+SHA256SUM.gpg
+SOURCES
+aptosid-20xx-xx-release-name-window-manager-arch-datetimestamp.arch.manifest
+aptosid-20xx-xx-release-name-window-manager-arch-datetimestamp.iso
+</pre>
+
+							<p> <span class="highlight-3">.manifest</span> Файл містить список всіх пакетів, що містяться в конкретних образiв. </p>
+
+							<p> <span class="highlight-3">.iso</span> є образ для завантаження. </p>
+
+							<p> <span class="highlight-3">MD5SUM and SHA256SUM</span> Файли для перевірки цілісності образiв.</p>
+
+							<p> <span class="highlight-3">.gpg</span> Файли підпису файлів, тому ви можете перевірити, що контрольні суми не були змінені, і що вони можуть бути використані для перевірки цілісності образiв.</p>
+
+							<p>Архів джерел aptosid *- source.tar призначений тільки для тих, які потребують статичної копії первинного коду для передач, щоб наповнювати вимоги ліцензування</p>
+
+
+			<h5 class="highlight-3">Спасибі <a href="http://www.webtropia.com/?o_ref=aptosid"> webtropia.com</a> які спонсорують aptosid і всім іншим хостерам дзеркал за їх зусилля по aptosid.</h5>
+
+							<p>Якщо хто-небудь має швидкий FTP-сервер з достатнім рухом в їх розпорядженні, будь ласка, повідомте aptosid командy на <a href="http://aptosid.com/">aptosid форум</a> or on our <a href="irc://irc.oftc.net:6667#aptosid">IRC-Channel on oftc.net</a>.</p>
+
+							<p>Cторінкі для завантажування аптосід також знаходяться на <a href="http://aptosid.com"> aptosid.com</a></p>
+
+	</div>
+	<div class="divider" id="md5">
+		<h2>md5sum та перевірка</h2>
+
+			<h6><span class="highlight-2">ЦЕ ДУЖЕ ВАЖЛИВО:</span><span class="highlight-3"> aptosid на Linux-LIVE-DVD/CD сильно стиснутий. З цієї причини потрібно звернути особливу увагу на запис ISO. Ми рекомендуємо для запису високоякісні CD (або DVD + RW), запис в режимі <span class="highlight-2">DAO-mode (disk-at-once)</span> і не швидше ніж x8.</span></h6>
+	<div class="spacer02"></div>
+
+							<p>Це контрольна сума файла і використовується для перевірки цілісності файлів. Поточний md5sum з файлу в порівнянні з відомими контрольної суми. Таким чином, ви можете перевірити, якщо файл був змінений або пошкоджений, це доцільно для файлів, завантажених з Інтернету.</p>
+
+							<p>Якщо md5sum з завантаженого файлу відповідає один в md5-файл, ви можете бути впевнені, що файл був викачаний правильно. Під Linux ви отримуєте контрольну суму з: (займає одну хвилину, щоб обчислити)</p>
+
+<pre>
+$ md5sum file_to_check
+</pre>
+
+							<p>Сума буде записана в консолi.<br />
+							З md5sum (486 кб) md5sum також можуть бути підтверджені в ОС Windows.</p>
+
+							<p>ISO-образи aptosid завжди пропонуються з md5sum файлу і завжди повинні бути перевірені перед записом. Це гарантує, що, якщо виникають проблеми, вони не повинні шукати в завантажених файлів, а це веде форум вільний від проблем, які не можуть бути прикріплені вниз, тому що ISO-файл був пошкоджений в першу чергу. Ви повинні зробити це в консолi. Перейдіть в каталог з Iso-файлу і MD5-суму і видати команду мати md5-сума перевіряється.
+ </p>
+
+							<p>Завантажте наступні файли з дзеркала:</p>
+<pre>
+MD5SUM
+MD5SUM.gpg
+SHA256SUM
+SHA256SUM.gpg
+</pre>
+							 <p>В консолi:</p>
+<pre>
+$ md5sum aptosid.iso
+</pre>
+
+							<p>Якщо вони не збігаються, ви отримаєте повідомлення про помилку:</p>
+
+<pre>
+"aptosid.iso: Error
+md5sum: Warning: calculated checksum does not match!"
+</pre>
+
+							<p>Якщо скачаний файл правильний, програма завершується без вести.</p>
+
+							<h5>Якщо ви хочете, щоб мати можливість переконатися у справедливості <span class="highlight-3">.gpg</span> files do the following <span class="highlight-3">as $USER</span>:</h5>
+
+							 <h6>приклад використання:</h6>
+
+<h6>Пример:</h6>
+<pre>
+aptosid-2011-02-imera-kde-lite-i386-201107131633.iso 
+</pre>
+							<p>1) Імпорт загальнодоступного ключа "Stefan Lippers-Hollmann's" (slh's) зi сервера. (An alternate keyserver is <span class="highlight-3"> subkeys.pgp.net </span>):</p>
+
+<pre>
+$ gpg --keyserver wwwkeys.pgp.net --recv-keys E3BD538BB
+gpg --edit-key E3BD538B
+Command> trust
+Command> (choose the option you prefer or quit)
+Command> quit
+</pre>
+
+							<p>2) Підтвердження дійсності перевірочних сум:</p>
+
+<pre>
+$ gpg --verify SHA256SUM.gpg SHA256SUM
+</pre>
+							<p>У випадку, якщо цей ключ з допомогою команд GPG вказаний як вірний, Ви отримаєте повідомлення: "5 trusted ultimately".</p>
+
+<pre>
+$gpg: Signature made Wed 15 Jul 2009 08:20:59 EST using DSA key ID E3BD538B
+$ gpg: Good signature from "Stefan Lippers-Hollmann (aptosid.com) &lt;s.l-h@gmx.de&gt;"
+</pre>
+
+							<p>Сигнал 'Good signature' з попередженням приходить, якщо ключ не був перевірений.</p>
+
+<pre>
+gpg: Signature made Wed 15 Jul 2009 08:20:59 EST using DSA key ID E3BD538B
+gpg: checking the trustdb
+gpg: 3 marginal(s) needed, 1 complete(s) needed, PGP trust model
+gpg: depth: 0  valid:   2  signed:   0  trust: 0-, 0q, 0n, 0m, 0f, 2u
+gpg: Good signature from "Stefan Lippers-Hollmann (aptosid.com) &lt;s.l-h@gmx.de&gt;"
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: 64C3 6120 DA8D 91E7 378B  E79F 3916 C431 F809 94F6
+</pre>
+
+	</div>
+	<div class="divider" id="burn-nero">
+		<h2> Запис Live-CD в Windows </h2>
+			<h6><span class="highlight-2">Важна информацiя:</span><span class="highlight-3"> aptosid на Linux-LIVE-DVD/CD сильно стиснутий. З цієї причини потрібно звернути особливу увагу на запис ISO. Ми рекомендуємо для запису високоякісні CD (або DVD + RW), запис в режимі<span class="highlight-2">DAO (disk-at-once)</span> і не швидше ніж 8x.</span></h6>
+	<div class="spacer02"></div>
+
+							<p>Само собою зрозуміло, CD можна записувати і в Windows. Завантажений файл повинен бути записуваний як ISO-файл. Winrar (або інша програма архівування), пов'язаний з ISO за замовчуванням, відкриває ISO-образ як простий архівний файл. Але ISO-образ використовується для запису CD.</p>
+
+							<p>Є ряд програм для запису ISO в Windows.</p>
+
+			<h5>Програмне забезпечення з відкритим вихідним кодом для запису CD в Windows</h5>
+							<p><a href="http://cdrtfe.sourceforge.net/">cdrtfe</a>: сумісна з Windows 9x/ME / в 2000/XP (протестована з Win95, Win98SE, Win2000 і WinXP). Тільки для Win9x/ME: функціонуючі ASPI-Layer (наприклад, Adaptec ASPI 4.60)</p>
+
+							<p><a href="http://www.linuxliveusb.com">LinuxLive USB Creator</a> - Проекту з відкритим кодом - пропонує графічний інтерфейс для MS Windows&#8482;, який дозволяє установку aptosid-i386.iso (32 біт), дотримуватися USB. <span class="highlight-3">Ви повинні використовувати чит-код <span class="highlight-2">fromhd</span> на командній лінії grub</span>.</p>
+
+			<h5>Закрите та комерційне ПЗ для запису в Windows</h5>
+						<ul>
+							<li>Nero (не nero express!)</li>
+
+							<li> Ще одна хороша програма <a href="http://www.cdburnerxp.se/">CD/DVD Burner XP pro</a></li>
+
+							<li> Програма Burncdcc с <a href="http://www.terabyteunlimited.com/utilities.html">terabyteunlimited</a>  може записувати тільки ISO-файли.</li>
+						</ul>
+	</div>
+	<div class="divider" id="burn-linux">
+		<h2>Запис ISO-образу пiд Linux</h2>
+			<h6><span class="highlight-2">Важлива інформація:</span><span class="highlight-3"> aptosid на Linux-LIVE-DVD/CD сильно стиснутий. З цієї причини потрібно звернути особливу увагу на запис ISO. Ми рекомендуємо для запису високоякісні CD (або DVD + RW), запис в режимі <span class="highlight-2">DAO (disk-at-once)</span> і не швидше ніж 8x.</span></h6>
+
+	<div class="spacer02"></div>
+
+							<p>На комп'ютері з уже встановленим Linux можна записати LiveCD усіх встановлених в системі програмою для запису дисків. У aptosid - k3b - стандартна програма для запису дисків. У пункті меню необхідно вибрати "Tools" -&gt; ...Записати образCD (або DVD)" и выбрать записываемый ISO-образ (например, aptosid-Имя.iso).Встановіть режим DAO (Disk At Once) як метод для запису дисків.</p>
+
+							<p>K3b спочатку розраховує суму MD5 ISO-образу (займає деякий час). Збіг розрахованого значення MD5 із значенням перевірочної суми MD5 файл, збережений при завантаженні образу і знаходиться в тій же самій папці (наприклад, aptosid-Імя.iso.md5) означає, що завантаження пройшла успішно і файл може бути записаний простим клацанням на кнопці "Почати ".</p>
+
+							<p>Натиснувши правою кнопкою миші на рядку, що містить розраховану суму, виберіть пункт "compare checksums", це викличе додаткове вікно, в яке можна вручну ввести відому MD5 суму для порівняння.</p>
+
+							<p><span class="highlight-3">Проблеми з пропаленням головним чином трапляються через зовнішнього інтерфейсу. Ви можете пропалювати безпосередньо з консолі за допомогою <a href="cd-no-gui-burn-uk.htm"> burniso</a>.</span></p>
+
+	</div>
+					  <h6>Дивіться також <a href="hd-ins-opts-oos-uk.htm#raw-usb">Запис aptosid на USB / SSD пристрій за допомогою іншого Linux, MS Windows або Mac OS</a>.</h6>
+
+		<div id="rev">Зміст, останній раз переглянуто 19/03/2012 1435 UTC</div>
+</div>
+</body>
+</html>

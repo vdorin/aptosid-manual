@@ -1,0 +1,722 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+	<title>aptosid Manuals - Screen Resolutions and Dualhead </title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision by muchan 11/Sep/2010 2234 UTC -->
+<!--htdig_noindex--><div id="menu"><!-- menu starts here ja lang maintained by muchan-->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="To aptosid.com, Forum and Wiki" alt="logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-ja.htm#search-on"><img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" /> サーチ Online Offline</a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Choose another language CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="lang-switch CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-ja.htm">aptosid OS マニュアル</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-ja.htm#welcome-gen">aptosid OS マニュアル &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-ja.htm#cred-team">貢献者</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-ja.htm#how-to">このマニュアルの使い方 &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-ja.htm#how-to">このマニュアルの使い方</a></li>
+					  <li><a href="welcome-ja.htm#table-contents">内容一覧</a></li>
+					</ul>
+					</li>
+		<li><a href="help-ja.htm#help-gen">困った時は... &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-ja.htm#help-gen">困った時は...</a></li>
+					  <li><a href="help-ja.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-ja.htm#welcome-quick">aptosid クイックスタートガイド</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-ja.htm">ISO の内容、リリース、ダウンロードミラーとCDの焼き付け</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-ja.htm#cd-content">ISO の内容と最小限必要な仕様 &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-ja.htm#rolling">リリースノート</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-ja.htm#download-aptosid">aptosidのミラー, ダウンロードとCD の作成 &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-ja.htm#md5">md5 Checksum</a></li>
+					  <li><a href="cd-dl-burning-ja.htm#burn-nero">WindowsでISOを焼くには</a></li>
+					  <li><a href="cd-dl-burning-ja.htm#burn-linux">LinuxでISOを焼くには</a></li>
+					  <li><a href="cd-no-gui-burn-ja.htm#burning-no-gui">burniso script</a></li>
+					  <li><a href="cd-no-gui-burn-ja.htm#burn-no-gui-gen">GUIなしでISOを焼くには</a></li>
+					  <li><a href="cd-dl-burning-ja.htm#download-aptosid">aptosid ダウンロードミラー</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-ja.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-ja.htm#rootpw">aptosid-LiveISOのRootパスワード</a></li>
+				<li><a href="live-mode-ja.htm#live-cd-installsoft">Live-ISO作動中にソフトをインストール</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-ja.htm">ターミナル/コンソール</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-ja.htm#term-kon"> ターミナル/コンソール&#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-ja.htm#term-kon"> ターミナル/コンソール</a></li>
+					  <li><a href="term-konsole-ja.htm#colours"> Coloured terminal prompts</a></li>
+					  <li><a href="term-konsole-ja.htm#cli-help">コマンドラインヘルプ</a></li>
+					  <li><a href="help-ja.htm#init3-tools">テキストモード(tty)で便利な道具 - init 3</a></li>
+					  <li><a href="term-konsole-ja.htm#term-cmds">Linuxターミナルのコマンド一覧</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-ja.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-ja.htm">起動コード</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-ja.htm#cheatcodes">aptosidだけのLive-ISO用起動コード</a></li>
+				<li><a href="cheatcodes-ja.htm#cheatcodes-linux">Linux一般の起動コード</a></li>
+				<li><a href="cheatcodes-vga-ja.htm#vga">VGA コード</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-ja.htm">Partitioning the Hard Drive - Traditional, GPT and LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-ja.htm#hd-ntfs3g">ntfs-3gを使ってNTFSパーティションへの書き込み</a></li>
+			<li><a href="part-lvm-ja.htm#part-lvm">LVM(Logical Volume Manager)を使うパーティション</a></li>
+			<li><a href="part-gparted-ja.htm#partition"> GUI でパーティショニング&#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-ja.htm#partition">GParted / KDE Partition Manager を使ってパーティショニング</a></li>
+					  <li><a href="part-gparted-ja.htm#ntfs"> GParted / KDE Partition Manager を使って NTFS のサイズ変更</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-ja.htm#partition">コマンドラインでパーティショニング</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-ja.htm#partition"> cfdisk を使ってパーティショニング</a></li>
+					    <li><a href="part-cfdisk-ja.htm#formating">cfdiskでパーティション後のフォーマッティング</a></li>
+					    <li><a href="part-gdisk-ja.htm#gdisk-6">Formatting after partitioning with gdisk</a></li>
+					    <li><a href="part-gdiskja.htm#gdisk-1">GPT Partitioning with gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-ja.htm#part-example">パーティショニングの基本 &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-ja.htm#part-example">パーティションサイズの例</a></li>
+					  <li><a href="part-uuid-ja.htm#uuid">UUID, Rebuilding fstab and creating new mount points</a></li>
+					  <li><a href="part-cfdisk-ja.htm#disknames">ディスクの名前について</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-ja.htm">インストール・オプション - HD, USB, VM, Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-ja.htm#Inst-prep">インストールの準備 &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-ja.htm#Inst-prep">インストールの準備</a></li>
+					  <li><a href="hd-install-ja.htm#Installation">ハードディスクへのインストール</a></li>
+					  <li><a href="hd-install-ja.htm#first-hd-boot">始めての起動</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-ja.htm#fromiso">fromisoで起動&#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-ja.htm#fromiso">fromisoで起動 - 概説</a></li>
+					  <li><a href="hd-install-opts-ja.htm#grub2-fromiso">GRUB2からfromisoで起動</a></li>
+					  <li><a href="hd-install-opts-ja.htm#fromiso-persist">fromisoと持続モード</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-ja.htm#usb-hd">USBドライブへのインストール &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-ja.htm#usb-hd">USB-HDへのインストール -aptosid 独自の- aptosid-on-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-ja.htm#raw-usb">USB/SSDドライブに他のLinuxや MS Windows、Mac OS X システムから aptosid を書き込む</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-ja.htm#install-crypt">暗号化パーティションへのインストール - cryptroot</a></li>
+		  <li><a href="nbdboot-ja.htm#nbd1">aptosidをネットワークから起動</a></li>
+		  <li><a href="hd-install-vmopts-ja.htm#vmopts">仮想マシンへのインストール</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-ja.htm">グラフィックカード、モニター、XOrgその他のドライバ</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-ja.htm#mon-res">解像度とモニター &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-ja.htm#mon-res">解像度とモニター</a></li>
+					  <li><a href="hw-dev-mon-ja.htm#xrandr">デュアルモニターとxrandr</a></li>
+					  <li><a href="hw-dev-mon-ja.htm#mon-binary">デュアルモニター（バイナリードライバ）</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-ja.htm#foss-xorg">GPU drivers &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-ja.htm#ati-3d">AMD/ATI 3D ドライバ</a></li>
+					  <li><a href="gpu-ja.htm#intel">Intel 2D/3D ドライバ</a></li>
+					  <li><a href="gpu-ja.htm#nvidia">Nvidia 3D ドライバ</a></li>
+					  <li><a href="gpu-ja.htm#foss-xorg">Xorg のオープンソースドライバ</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-ja.htm#fw-detect">Firmwareの探知 - non-free </a></li>
+			  <li><a href="nf-firm-ja.htm#non-free-firmware">non-free をソースリスとに加える</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-ja.htm">ウィンドウマネージャ</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-ja.htm">KDE and XFCE ウィンドウマネージャ &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-ja.htm#xfce-notes">Xfce ノート</a></li>
+					    <li><a href="wm-dm-ja.htm#install-add">便利な KDE 追加アプリ</a></li>
+					    <li><a href="wm-dm-ja.htm#desk-freeze">デスクトップが凍結したら</a></li>
+					    <li><a href="wm-dm-ja.htm#kde-login">KDEにログインできない時</a></li>
+					    <li><a href="wm-dm-ja.htm#ch-th">テーマの変更</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-ja.htm#dm">Installing additional Display Managers</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-ja.htm">インターネット,WiFi,LAN</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-ja.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-ja.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-ja.htm#serv-ftp">FTPクライアント</a></li>
+					    <li><a href="lamp-apache-ja.htm#serv-sec">Webサーバーのセキュリティ設定</a></li>
+					    <li><a href="lamp-apache-ja.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-ja.htm#serv-mysql">MySQL の設定</a></li>
+					    <li><a href="lamp-ppp-ja.htm#serv-php">Apache2のためのPHPサポート</a></li>
+					    <li><a href="ntp-server-ja.htm#ntp-server">タイムサーバーの設定</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-ja.htm#tor">ファイアーウォールとプライバシー &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-ja.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-ja.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-ja.htm#firewalls">ファイアーウォール</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-ja.htm#ssh-x">SSH と Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-ja.htm#setup">Samba サーバーの設定</a></li>
+						  <li><a href="samba-ja.htm#configure">SAMBA の設定(Windowsとの共有)</a></li>
+						  <li><a href="ssh-ja.htm#ssh-fs">SSH Remote Mounting</a></li>
+						  <li><a href="ssh-ja.htm#ssh-x">SSHのネットワークを通してXウィンドウズのアプリケーションを使う</a></li>
+						  <li><a href="ssh-ja.htm#ssh-f">KonquerorでGUIのSSH</a></li>
+						  <li><a href="ssh-ja.htm#ssh-w">Windows-PCからSSHでXフォワーディング</a></li>
+						  <li><a href="ssh-ja.htm#ssh">SSH とセキュリティ</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-ja.htm#netcardconfig">WIFI &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-ja.htm#netcardconfig">Ceni を使ってネットワークに接続</a></li>
+						    <li><a href="inet-wpagui-ja.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-ja.htm#net-set1">WiFi - WiFi ローミング設定</a></li>
+						    <li><a href="inet-wpa-ja.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-ja.htm#hotswitch">WiFi とケーブル接続のホットスイッチ</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-ja.htm#netcardconfig">ケーブル接続のインターネット設定&#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-ja.htm#dial-mod">56k モデム</a></li>
+						    <li><a href="inet-ceni-ja.htm#netcardconfig">Ceni を使ってネットワークに接続</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-ja.htm#fw-detect">Firmwareの探知 - non-free </a></li>
+		<li><a href="nf-firm-ja.htm#non-free-firmware">non-free をソースリスとに加える</a></li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-ja.htm">パッケージマネージャとdist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-ja.htm#apt-cook">APT クックブックとソースリスト &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-ja.htm#apt-cook">APTガイド - クックブックとソースリスト</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#apt-install">新しくパッケージをインストールする</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#apt-delete">パッケージの除去</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#apt-downgrade">ダウングレードまたはパッケージの保持</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#apt-cache">apt-cacheでパッケージ検索</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#gui-pacsea">GUI パッケージ検索</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-ja.htm#kern-upgrade">カーネルのアップグレード &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-ja.htm#kern-remove">使わないカーネルの除去</a></li>
+					    <li><a href="sys-admin-kern-upg-ja.htm#kern-upgrade"> カーネルのアップグレード</a></li>
+					    <li><a href="sys-admin-kern-upg-ja.htm#dmakms">カーネルモジュールをdmakmsでダイナミックにインストールする</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-ja.htm#apt-upgrade">インストールされたシステムのアップグレード -  dist-upgrade - 概説 &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-ja.htm#live-cd-upgrade">ライブISOアップデート</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-ja.htm#approx">同一LAN上の複数のPCをdist-upgradeする</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#apt-upgrade">インストールされたシステムのアップグレード - dist-upgrade - 概説</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#du-st">インストールされたシステムのアップグレード - dist-upgrade - ステップ</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-ja.htm">システム管理</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-ja.htm#bois-prep">FreeDOSを使ってBIOSをアップグレード</a></li>
+		<li><a href="vir-rkits-ja.htm#virus-rkits">ウイルスとRootkitスキャナー</a></li>
+		<li><a href="hd-install-ja.htm#adduser">新しいユーザーとパスワード &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-ja.htm#adduser">新しいユーザーを加える</a></li>
+					    <li><a href="sys-admin-gen-ja.htm#pw-lost">root パスワードを忘れたら, 新パスワードの設定</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-ja.htm#start-services">サービスとランレベル &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-ja.htm#start-services">サービスのスタート/ストップ</a></li>
+					    <li><a href="sys-admin-gen-ja.htm#pkill">Killing a service or process</a></li>
+					    <li><a href="sys-admin-gen-ja.htm#init">aptosid のランレベル - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-ja.htm#rsync">システムのバックアップ &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-ja.htm#rdiff">rdiffを使ってバックアップ</a></li>
+					    <li><a href="sys-admin-rsync-ja.htm#rsync">rsyncを使ってバックアップ</a></li>
+					    <li><a href="home-ja.htm#home-bu">/home を移動する</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-ja.htm#fonts">CUPS、フォントと音声 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-ja.htm#fonts">フォント</a></li>
+					     <li><a href="sys-admin-gen-ja.htm#cups">CUPS - 印刷システム</a></li>
+					     <li><a href="sys-admin-gen-ja.htm#sound">サウンドミキサー</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-ja.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-ja.htm#chroot">Grub2 - Grubをchrootでリカバーする</a></li>
+					    <li><a href="sys-admin-grub2-ja.htm#mbr-over-grub2">Grub2 - MBRが上書きされてしまったら</a></li>
+					    <li><a href="sys-admin-grub2-ja.htm#multi-os">Grub2 - デュアルまたはマルチブーティング</a></li>
+					    <li><a href="sys-admin-grub2-ja.htm#grub1-grub2">Grub2 - Grub1からアップデートするには</a></li>
+					    <li><a href="sys-admin-grub2-ja.htm#grub2">Grub2 - 概説</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Sponsored by webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid is proudly hosted by webtropia.com" alt="aptosid is proudly hosted by webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+	<div class="divider" id="mon-res">
+		<!--- ####
+		<h2 id="top-header">Changing the Screen Resolutions</h2>
+		#### -->
+		<h2 id="top-header">スクリーン解像度の変更</h2>
+
+			<h4>xrandr</h4>
+				<!--- ####
+				<h5>Supported Card Drivers</h5>
+				#### -->
+				<h5>ドライバーがサポートされているカード</h5>
+						<ul>
+							<li> xserver-xorg-video-intel (2.0以降)</li>
+							<li>xserver-xorg-video-nouveau (<a href="http://nouveau.freedesktop.org/wiki/FeatureMatrix"> Refer to the nouveau Feature Matrix</a>)</li>
+							<li>xserver-xorg-video-ati (6.7.192以降)</li>
+						</ul>
+
+						<!--- ####
+						<p>First step is just to type xrandr to see if it is supported, if xrandr is not supported check the xorg version and driver used.</p>
+						#### -->
+						<p>まず最初に xrandr とタイプしてみて、サポートされいるか試してみましょう。サポートされていない場合は Xorg のバージョンとドライバをチェックしましょう。</p>
+
+						<!--- ####
+						<p>To change the resolution of your primary screen assuming your card can support it, for example:</p>
+						#### -->
+						<p>(メイン)スクリーンの解像度を変更するには次のコマンドを使います。サポートされている解像度の中から選んでください。</p>
+<pre>
+xrandr --output VGA --mode 1440x900
+</pre>
+
+					<!--- ####
+					<h5>If your card does not support xrandr but you want another resolution as the default one you have to change xorg.conf for a static change</h5>
+					#### -->
+					<!--<h5>使用中のカードがxrandrにサポートされていない場合は解像度のデフォルトを変更するにはxorg.confを編集する必要があります。</h5>-->
+
+					<!--- ####
+					<p>In a konsole as root</p>
+					#### -->
+					<!--<p>コンソールからrootとして</p>
+<pre>
+aptosidcc
+</pre>-->
+							<!--- ####
+							<p>and follow the prompts, or with the GUI:<span class="highlight-3">Kmenu>System>aptosid Control Centre>Display </span></p>
+							#### -->
+							<!--<p>を実行し、指示にしたがいます。もしくはGUIで:<span class="highlight-3">Kmenu>System>aptosid Control Centre>Display</span></p>-->
+
+							<!--- ####
+							<p>Should X not automatically restart, restart X by doing </p>
+							#### -->
+							<!--<p>Xが自動的に再スタートしないときは次のコマンドで再スタートできます</p>
+<pre>
+ctrl+alt+backspace
+</pre>-->
+
+		</div>
+		<div class="divider" id="xrandr">
+					<!--- ####
+					<h2>Dual Monitors and xrandr</h2>
+					#### -->
+					<h2>デュアルモニターとxrandr</h2>
+					<h2>Dual Monitors and xrandr</h2>
+
+							<p> <span class="highlight-2">xorg.conf is deprecated, if you use free drivers.</span> If you have an xorg.conf stanza under <span class= "highlight-3">/etc/X11/xorg.conf.d</span>, because you use proprietary drivers for your graphics card, you should save it now before proceeding.</p>
+
+							<p>xorg.conf, if present at all, is now modular, for example, each module contains everything referring a "device"  for instance, the display or a mouse.</p>
+
+							<!--- ####
+							<p>With xrandr you can configure your primary and secondary screen without restarting X, (hotplug).  xrandr replaces xinerama and mergedFB. With xrandr 1.2 enabled, the "old way configuration" in xorg.conf ( xinerama and mergedFB) may not work anymore.</p>
+							#### -->
+							<p>With xrandr you can configure your primary and secondary screen without restarting X, (hotplug). 。xrandrは以前のxineramaやmergedFBといったプログラムの代わりをします。xrandr1.2が作動中の時は以前のxorg.conf(やxineramaまたはmergedFB)を使った設定方法はもう使えないことがあります。</p>
+							<!-- mergedFB doesn't work anymore in a dist-upgraded aptosid install -->
+
+				<!--- ####
+				<h5>Supported Card Drivers</h5>
+				#### -->
+				<h5>ドライバーがサポートされているカード</h5>
+						<ul>
+							<li> xserver-xorg-video-intel (2.0以降)</li>
+							<li>xserver-xorg-video-nouveau (<a href="http://nouveau.freedesktop.org/wiki/FeatureMatrix"> Refer to the nouveau Feature Matrix</a>)</li>
+							<li>xserver-xorg-video-ati (6.7.192以降)</li>
+						</ul>
+
+			<!--- ####
+			<h3>Preparation for xrandr configurations of a PC with Dualhead</h3>
+			#### -->
+			<h3>Preparation for xrandr configurations of a PC with Dualhead</h3>
+							<!--- ####
+							<p><span class="highlight-2">Note:</span> Ideally, if you are running 2 monitors from a PC all the time, your <span class="highlight-3"> xorg.conf</span> should be altered to be permanently to reflect that mode.</p>
+							#### -->
+							<p><span class="highlight-2">注意:</span> 1つのPCを2つのモニターでずっと使う場合は<span class="highlight-3"> xorg.conf</span>を編集して設定を保存するほうがいいでしょう。</p>
+
+							<!--- ####
+							<p>A laptop/notebook needs to be dynamically configured (as opposed to a PC with 2 monitors) and when you reboot you will need to start over, unless you set up the dual-head with whatever parameters you use in xrandr, then you copy/paste that in a script to<span class="highlight-3"> ~/.kde/Autostart/</span>.</p>
+							#### -->
+							<p>ラップトップまたはノートブックは(上の2つのモニターの場合と違って)ダイナミックに設定を変更する必要があります。また、2つのモニターを使う場合のxrandrのパラメータをスクリプトに保存して<span class="highlight-3"> ~/.kde/Autostart/</span>に書き込んでしまわない限り、起動の際に設定をしなおす必要があるでしょう。</p>
+
+					<!--- ####
+					<h4>Getting familiar with xrandr</h4>
+					#### -->
+					<h4>xrandrに親しみましょう</h4>
+							<!--- ####
+							<p>First step is just to type xrandr in a shell as user to get familiar with the output:</p>
+							#### -->
+							<p>最初の一歩はコマンドラインにユーザーとしてただxrandrとタイプして、表示される出力に慣れておきましょう:</p>
+<pre>
+xrandr
+Screen 0: minimum 320 x 200, current 2048 x 768, maximum 2048 x 768
+VGA-0 connected 1024x768+0+0 (normal left inverted right x axis y axis) 304mm x 228mm
+   1024x768       60.0*+   75.1     70.1     60.0*    59.9
+   832x624        74.6
+   800x600        72.2     75.0     60.3     56.2
+   640x480        75.0     72.8     66.7     60.0
+   720x400        70.1
+</pre>
+
+							<!--- ####
+							<p>Here you see that only vga, for the PC  (see Appendix A for output name explanation). You see the resolutions that are supported by that screen and (which is important for dual head) the maximum screen size (here 2048x768).</p>
+							#### -->
+							<p>この例ではVGAだけが表示されています。(出力の説明は付録Aを読んでください）使用中のモニターで使える解像度が表示されていて、これを見れば(２つのモニターの設定に重要な)最大解像度(この例では2048x768)が分かります。 <a href="hw-dev-mon-ja.htm#aa">Appendix A</a></p>
+
+							<!--- ####
+							<p>Now connect your other external screen and run xrandr again:</p>
+							#### -->
+							<p>ここで外部モニターを接続して、もう一度xrandrを実行します:</p>
+<pre>
+$ xrandr
+Screen 0: minimum 320 x 200, current 2048 x 768, maximum 2048 x 768
+VGA-0 connected 1024x768+0+0 (normal left inverted right x axis y axis) 304mm x 228mm
+   1024x768       60.0*+   75.1     70.1     60.0*    59.9
+   832x624        74.6
+   800x600        72.2     75.0     60.3     56.2
+   640x480        75.0     72.8     66.7     60.0
+   720x400        70.1
+DVI-0 connected 1024x768+1024+0 (normal left inverted right x axis y axis) 310mm x 230mm
+   1024x768_85.00   85.0*+
+   1024x768       85.0 +   84.9     74.9     75.1     70.1     60.0     43.5
+   832x624        74.6
+   800x600        84.9     72.2     75.0     60.3     56.2
+   640x480        84.6     75.0     72.8     66.7     60.0
+   720x400        87.8     70.1
+S-video disconnected (normal left inverted right x axis y axis)
+</pre>
+							<!--- ####
+							<p>Here you see that a DVI screen is connected as well, and it supports resolutions from 720x400 to 1024x768 at given refresh rates.</p>
+							#### -->
+							<p>DVIスクリーンが接続されていることが表示されます。720x400から1024x768までが表示されているリフレッシュレートで使えることがわかります。</p>
+
+				<!--- ####
+				<h6>Configuration scenarios</h6>
+				#### -->
+				<h6>様々な設定シナリオ</h6>
+
+							<!--- ####
+							<p>Basic syntax</p>
+							#### -->
+							<p>基本構文</p>
+<pre>
+xrandr --output &lt;output&gt; --rate &lt;rate&gt; --mode &lt;mode&gt; --left-of|--right-of|--above|--below|--same-as &lt;output&gt;
+</pre>
+
+							<!--- ####
+							<p>Where:</p>
+							#### -->
+							<p>解説:</p>
+					<ul>
+											<!--- ####
+    							<li>&lt;output&gt; is output name (see Appendix A)</li>
+											#### -->
+    							<li>&lt;output&gt; はアウトプット名 (付録A参照) <a href="hw-dev-mon-ja.htm#aa">Appendix A</a></li>
+										<!--- ####
+   							<li>&lt;rate&gt; is refresh rate given by xrandr output (optional)</li>
+										#### -->
+   							<li>&lt;rate&gt; はxrandrが表示したリフレッシュレート(省略可)</li>
+    							<li>&lt;mode&gt; はxrandrが表示した解像度(省略可)</li>
+					</ul>
+
+
+
+						<!--- ####
+						<h5>Change resolution of primary screen</h5>
+						#### -->
+						<h5>メインスクリーンの解像度の変更</h5>
+<pre>
+xrandr --output VGA --mode 1024x768
+</pre>
+
+
+						<!--- ####
+						<h5>Change resolution of primary screen</h5>
+						#### -->
+						<h6>クローン</h6>
+								<!--- ####
+								<p>As many external screens / video projectors do not run on 1280x800 but on e.g. 1024x768,  choose this as an example:</p>
+								#### -->
+								<p>多くの外部スクリーンやビデオプロジェクターは1200x800は表示できず、例えば1280x768の解像度に設定する必要があります。その場合:</p>
+<pre>
+xrandr --output VGA --mode 1024x768 --output LVDS --mode 1024x768
+</pre>
+
+								<!--- ####
+								<p>To turn off secondary screen and get back normal resolution on primary screen just do a:</p>
+								#### -->
+								<p>外部スクリーンを消してメインスクリーンを通常の解像度にもどすには:</p>
+<pre>
+xrandr --output VGA --off --output LVDS --mode 1280x800
+</pre>
+
+						<!--- ####
+						<h5>Multiple display desktop</h5>
+						#### -->
+						<h5>複数のディスプレイモニターのデスクトップ</h5>
+							<!--- ####
+							<p>As intel GMA &lt;=945GM/GMS looses 3d support with a virtual screen &gt;2048x2048, you cannot put both screens next to each other in high resolution, both at 1024x768 work well:</p>
+							#### -->
+							<p>As intel GMA &lt;=945GM/GMS looses 3d support with a virtual screen &gt;2048x2048 までなので、両方のスクリーンを高い解像度で隣り合わせに使うことはできません。両方を1024x768に設定すればちゃんと作動します:</p>
+<pre>
+xrandr --output LVDS --mode 1024x768 --output VGA --mode 1024x768 --left-of LVDS
+</pre>
+
+							<!--- ####
+							<p>To disable multi screen just disable secondary screen and change resolution of primary screen back (if needed):</p>
+							#### -->
+							<p>マルチスクリーンをやめるにはサブスクリーンをOFFにして、メインスクリーンの解像度を(必要なら)元に戻します:</p>
+<pre>
+xrandr --output VGA --off (--output LVDS --mode 1280x800)
+</pre>
+
+							<!--- ####
+							<p>Another option is to put the secondary screen above/below the primary:</p>
+							#### -->
+							<p>他の設定として、サブスクリーンをメインスクリーンの上または下に置くこともできます:</p>
+<pre>
+xrandr --output LVDS --mode 1280x800 --output VGA --mode 1280x1024 --above LVDS
+</pre>
+
+							<!--- ####
+							<p>The result is a virtual screen resolution of 1280x1824 which is below 2048x2048 Another solution could be to rotate the screen:</p>
+							#### -->
+							<p>結果として1280x1824の解像度の仮想スクリーンになります。2048x2048以内に収まっているので作動します。他にスクリーンを横から縦に起こす設定もあります:</p>
+<pre>
+xrandr --verbose --output LVDS --mode 1280x800 --output VGA  --mode 1024x768 --rotate left --left-of LVDS
+</pre>
+
+							<!--- ####
+							<p>NOTE: This only works if you can rotate your physical screen as well</p>
+							#### -->
+							<p>ノート: この設定のためには物理的にモニターの方向が変えられることが必要です。</p>
+
+				<h6>Example of a permanently configured PC with dual monitors with xrandr with code snippet in <span class="highlight-3"> /etc/X11/xorg.conf.d/30-screen.conf</span>:</h6>
+
+<pre>
+#30-screen.conf
+Section "Monitor"
+	Identifier      "DVI-0"
+	Option          "Primary"       "true"
+EndSection
+
+Section "Monitor"
+	Identifier      "DVI-1"
+	Option          "RightOf"       "DVI-0"
+EndSection
+
+Section "Device"
+	  Identifier     "ATI Radeon HD 2600"
+	  Option         "Monitor-DVI-0" "DVI-0"
+	  Option         "Monitor-DVI-1" "DVI-1"
+EndSection
+</pre>
+
+
+							<!--- ####
+							<p>Note</p>
+							#### -->
+							<p>ノート</p>
+						<ul>
+											<!--- ####
+    							<li>Virtual screen is limited to 2048x2048 for intel, Though it's possible to set a higher virtual resolution you will loose DRI support. There does not seem to be limits for nvidia/ati. </li>
+											#### -->
+    							<li>インテルのカードでは仮想スクリーンの解像度は2048x2048までの制限があります。もっと高い解像度の設定は可能ですが、その場合DRIサポートを失います。nVidiaとATIのカードについてはそのような制限はないようです。</li>
+
+											<!--- ####
+    							<li>TV Out does not work with ATI</li>
+											#### -->
+    							<li>ATIのカードではTVアウトは使えません</li>
+
+										<!--- ####
+   							<li> if DDC probing does no work correctly with ATI (Xorg.0.log: (WW) RADEON(0): DDC2/I2C is not properly initialised), you might not be able to overide the values with modelines</li>
+										#### -->
+   							<li>ATIのカードでDDCの探査がうまくいかないと(Xorg.0.log: (WW) RADEON(0): DDC2/I2C is not properly initialised), modelinesを使っても設定値を変更できないかもしれません。</li>
+
+							<!--- ####
+							<li>When trying to setup a  big desktop (dual-head) and xrandr says the resolution you're requesting is bigger than the one xrandr can support, You should use "Virtual"  and the wanted resolution. (Look for the Screen Section in Apendix A)</li>
+							#### -->
+							<li>(2つのモニターの)大きなデスクトップ設定を試すとxrandrが<br />"the resolution you're requesting is bigger than the one xrandr can support"<br /> (指定された解像度はxrandrがサポートできる範囲を越えています)<br />というメッセージを表示することがあります。<br />そういう場合は"Virtual"のキーワードで使いたい解像度を指定ます。(付録Aのスクリーンの部を参照)</li>
+							<!--- ####
+							<li>For any video card, but intel, the virtual resolution should be big enough for both monitor's resolution. example: monitor1= 1024x768 and monitor2=1280x1024, then the virtual screen should be (1024+1280)x(1024>768) -> 2304x1024</li>
+							#### -->
+							<li>インテル以外のグラフィックカードでは仮想スクリーンの解像度は両方のモニターの最大解像度を使うのに十分なはずです。例: モニター１= 1024x768 モニター2 = 1280x1024 とすると仮想スクリーンの解像度は (1024+1280)x(1024>768) -> 2304x1024</li>
+
+						</ul>
+
+<div class="divider" id="aa">
+					<!--- ####
+					<h6>Appendix A</h6>
+					#### -->
+					<h6>付録 A</h6>
+
+						<!--- ####
+						<h6>Intel</h6>
+						#### -->
+						<h6>インテル</h6>
+<pre>
+Output names:
+* LVDS: internal laptop panel
+* TMDS-1: external DVI port
+* VGA: external VGA port
+* TV: external TV output
+</pre>
+						<h6>ATI</h6>
+<pre>
+Output names:
+* LVDS: internal laptop panel
+* DVI-0: first external DVI port
+* DVI-1: second external DVI port (if present)
+* VGA-0: first external VGA port
+* VGA-1: second external VGA port (if present)
+* S-video
+</pre>
+						<h6>Nvidia</h6>
+<pre>
+nv driver supports RandR1.2 on G80 boards
+Output names:
+* LVDS: internal laptop panel
+* DVI0: first external DVI port
+* DVI1: second external DVI port (if present)
+</pre>
+				    </div>
+
+						<!--- ####
+						<h6>Links</h6>
+						#### -->
+						<h6>リンク</h6>
+							<p><a href="http://wiki.debian.org/XStrikeForce/HowToRandR12"> http://wiki.debian.org/XStrikeForce/HowToRandR12</a></p>
+							<p><a href="http://bgoglin.livejournal.com/9846.html">http://bgoglin.livejournal.com/9846.html</a></p>
+							<p><a href="http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=420419">http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=420419</a></p>
+							<p><a href="http://www.thinkwiki.org/wiki/Xorg_RandR_1.2">http://www.thinkwiki.org/wiki/Xorg_RandR_1.2</a></p>
+
+
+	</div>
+	<div class="divider" id="mon-binary">
+				<!--- ####
+				<h2>Dual Monitors (using binaries)</h2>
+				#### -->
+				<h2>バイナリードライバーを使う２モニター設定</h2>
+<!--- ####
+							<p> <span class="highlight-3">For proprietary drivers read the documentation from your graphic card manufacturer.</span></p>
+#### -->
+							<p> <span class="highlight-3">non-freeドライバーの設定についてはグラフィックカード製造者の説明書を読んでください。</span></p>
+
+			<h3>nVidia</h3>
+				<!--- ####
+				<p>Use the nvidia xorg configurator <a href="http://www.sorgonet.com/linux/nv-online/"> http://www.sorgonet.com/linux/nv-online/</a> and alter your xorg files accordingly.</p>
+				#### -->
+				<p>Use the nvidia xorg configurator <a href="http://www.sorgonet.com/linux/nv-online/"> http://www.sorgonet.com/linux/nv-online/</a>を使ってXorgファイルを変更します。</p>
+
+			<h3>XorgのATIドライバー - 方法 radeon</h3>
+
+				<!--- ####
+				<p><a href="http://aptosid.com/index.php?name=PNphpBB2&amp;file=viewtopic&amp;p=19794#19794"> http://aptosid.com/index.php?name=PNphpBB2&amp;file=viewtopic&amp;p=19794#19794</a> has some working xorg.confs with the free radeon driver.</p>
+				<p>aptosidフォーラムの<a href="http://aptosid.com/index.php?name=PNphpBB2&amp;file=viewtopic&amp;p=19794#19794"> http://aptosid.com/index.php?name=PNphpBB2&amp;file=viewtopic&amp;p=19794#19794</a>のスレッドにフリーのRadeonドライバー用の設定があります。.</p>
+				#### -->
+
+				<!--- ####
+				<p>NOTE: You will need to get the configuration information of the second monitor. To do this, you need to unplug one monitor and boot the liveCD to generate xorg.conf, copy it, then do the same with the other one.</p>
+				#### -->
+				<p>ノート: 2つめのモニターの設定のためのデータが必要です。そのためにはまず2つめのモニターを外してライヴCDを起動し、自動的に作成されたxorg.confを保存し、次にモニターを交換して同じ作業を繰り返します。</p>
+
+
+		</div>
+	<div id="rev">Page last revised 06/03/2011 2305 UTC</div>
+
+</div>
+</body>
+</html>

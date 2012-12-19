@@ -1,0 +1,602 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+<head>
+	<title>Manual de aptosid - Samba y configuraciones SSH</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision by Richard 07/09/2008 0430 UTC-->
+<!--htdig_noindex--><div id="menu"> <!-- menu starts here es lang maintained by Luis_P -->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="ir a aptosid.com y Forum y Wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-es.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" />Buscar</a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Seleccione otro idioma - Choose another language CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="lang-switch CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-es.htm">Manual aptosid</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-es.htm#welcome-gen">Manual de usuario &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-es.htm#cred-team">Créditos</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-es.htm#how-to">Cómo usar este manual &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-es.htm#how-to">Cómo usar este manual</a></li>
+					  <li><a href="welcome-es.htm#table-contents">Indice de Contenido</a></li>
+					</ul>
+					</li>
+		<li><a href="help-es.htm#help-gen">Recibir ayuda &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-es.htm#help-gen">Dónde Conseguir Ayuda</a></li>
+					  <li><a href="help-es.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-es.htm#welcome-quick">Guía rápida</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-es.htm"> ISO, Versiones, Espejos y Quemado</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-es.htm#cd-content">Contenido del ISO y Requerimientos &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-es.htm#rolling">Notas del lanzamiento</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-es.htm#download-aptosid">Espejos aptosid, descargar y quemar &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-es.htm#md5">Suma de verificación, md5</a></li>
+					  <li><a href="cd-dl-burning-es.htm#burn-nero">Quemar en Windows</a></li>
+					  <li><a href="cd-dl-burning-es.htm#burn-linux">Quemar en Linux</a></li>
+					  <li><a href="cd-no-gui-burn-es.htm#burning-no-gui">Script para quemar ISO</a></li>
+					  <li><a href="cd-no-gui-burn-es.htm#burn-no-gui-gen">Quemar sin GUI</a></li>
+					  <li><a href="cd-dl-burning-es.htm#download-aptosid">Espejos de descarga aptosid</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-es.htm">LiveCD: el modo en vivo</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-es.htm#rootpw">Clave raíz del LiveCD</a></li>
+				<li><a href="live-mode-es.htm#live-cd-installsoft">Instalar Software con el LiveCD</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-es.htm">Terminal/Consola</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-es.htm#term-kon"> Terminal (consola) &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-es.htm#term-kon"> Terminal (consola)</a></li>
+					  <li><a href="term-konsole-es.htm#colours"> prompts coloreados de terminal : </a></li>
+					  <li><a href="term-konsole-es.htm#cli-help">Ayuda en línea de Comando</a></li>
+					  <li><a href="help-es.htm#init3-tools">Herramientas que hay que conocer en el modo texto (tty) - init 3</a></li>
+					  <li><a href="term-konsole-es.htm#term-cmds">Comandos del terminal de Linux</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-es.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-es.htm">Chuletas (cheatcodes)</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-es.htm#cheatcodes">Chuletas aptosid específicas para Live-ISO</a></li>
+				<li><a href="cheatcodes-es.htm#cheatcodes-linux">Chuletas genericas Linux</a></li>
+				<li><a href="cheatcodes-vga-es.htm#vga">Códigos VGA</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-es.htm">Particionar el Disco Duro; Modos tradicional, GPT y LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-es.htm#hd-ntfs3g">Escribir en Particiones NTFS con ntfs-3g</a></li>
+			<li><a href="part-lvm-es.htm#part-lvm">Particiones para usar LVM - Gestor Lógico de Volúmenes</a></li>
+			<li><a href="part-gparted-es.htm#partition">Particionar con un gestor gráfico &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-es.htm#partition">Particionar el Disco Duro usando GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-es.htm#ntfs">Redimensionar particiones NTFS con GParted/KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-es.htm#partition">Particionar el Disco Duro en línea de órdenes &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-es.htm#partition">Particionar el Disco Duro con cfdisk</a></li>
+					    <li><a href="part-cfdisk-es.htm#formating">Formatear después de particionar con cfdisk</a></li>
+					    <li><a href="part-gdisk-es.htm#gdisk-6">Formatear después de particionar con gdisk</a></li>
+					    <li><a href="part-gdisk-es.htm#gdisk-1">GPT Particionar con gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-es.htm#part-example">Particionado Básico &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-es.htm#part-example">Ejemplos de dimensiones de particiones</a></li>
+					  <li><a href="part-uuid-es.htm#uuid">UUID, Reconstruir fstab y crear nuevos puntos de montaje</a></li>
+					  <li><a href="part-cfdisk-es.htm#disknames">Nombrar discos: en breve</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-es.htm">Opciones de la Instalación - HD, USB, VM y Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-es.htm#Inst-prep">Preparar para Instalar &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-es.htm#Inst-prep">Preparar para Instalar </a></li>
+					  <li><a href="hd-install-es.htm#Installation">Instalar al disco duro</a></li>
+					  <li><a href="hd-install-es.htm#first-hd-boot">Primera inicialización</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-es.htm#fromiso">Arranque fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-es.htm#fromiso">Iniciar fromiso - Vista general</a></li>
+					  <li><a href="hd-install-opts-es.htm#grub2-fromiso">Iniciar 'fromiso' con Grub 2</a></li>
+					  <li><a href="hd-install-opts-es.htm#fromiso-persist">'fromiso' y 'persist'</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-es.htm#usb-hd">Instalar en un USB-DD - aptosid específico - aptosid-en-un-lápiz_USB &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-es.htm#usb-hd">Instalar en un USB-DD - aptosid Específico - aptosid en un lápiz USB</a></li>
+					  <li><a href="hd-ins-opts-oos-es.htm#raw-usb">Grabar aptosid en un lápiz USB/SSD con cualquier sistema Linux, MS Windows o Mac OS X</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-es.htm#install-crypt">Instalación en particiones cifradas - cryptroot</a></li>
+		  <li><a href="nbdboot-es.htm#nbd1">Arrancar aptosid en una red</a></li>
+		  <li><a href="hd-install-vmopts-es.htm#vmopts">Opciones de instalación en una máquina virtual</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-es.htm">Tarjetas Gráficas, monitores, Xorg &amp; controladores</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-es.htm#mon-res">Resolución de pantalla y monitores  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-es.htm#mon-res">Resolución de pantalla y monitores</a></li>
+					  <li><a href="hw-dev-mon-es.htm#xrandr">Monitores Duales y xrandr</a></li>
+					  <li><a href="hw-dev-mon-es.htm#mon-binary">Monitores Duales (utilizando binarios)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-es.htm#foss-xorg">Controladores GPU &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-es.htm#ati-3d">Controladores AMD/ATI 3D</a></li>
+					  <li><a href="gpu-es.htm#intel">Controladores Intel 2D y 3D</a></li>
+					  <li><a href="gpu-es.htm#nvidia">Controladores Nvidia 3D</a></li>
+					  <li><a href="gpu-es.htm#foss-xorg">Controladores código abierto Xorg</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-es.htm#fw-detect">Detección de firmware non-free</a></li>
+			  <li><a href="nf-firm-es.htm#non-free-firmware">Añadir non-free a Sources List</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-es.htm">Gestor de ventanas</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-es.htm">Gestores de Ventanas KDE y XFCE &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-es.htm#xfce-notes">Utilidades de XFCE</a></li>
+					    <li><a href="wm-dm-es.htm#install-add">Utilidades extras de KDE</a></li>
+					    <li><a href="wm-dm-es.htm#desk-freeze">El escritorio se traba</a></li>
+					    <li><a href="wm-dm-es.htm#kde-login">No puedo hacer login en KDE</a></li>
+					    <li><a href="wm-dm-es.htm#ch-th">Cambiar Temas</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm--es.htm#dm">Instalación de otros gestores de escritorio</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-es.htm">Conexión a Internet, WiFi, LAN y Redes</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-es.htm">Pila de LAMP aptosid &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-es.htm#serv-apache">Pila de LAMP aptosid </a></li>
+					    <li><a href="lamp-apache-es.htm#serv-ftp">Clientes FTP</a></li>
+					    <li><a href="lamp-apache-es.htm#serv-sec">Protocolos de Seguridad</a></li>
+					    <li><a href="lamp-apache-es.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-es.htm#serv-mysql">Configurar MySQL</a></li>
+					    <li><a href="lamp-ppp-es.htm#serv-php">PHP en Apache</a></li>
+					    <li><a href="ntp-server-es.htm#ntp-server">Configurar un servidor horario</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-es.htm#tor">Firewalls (Muros de Fuego) y privacidad &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-es.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-es.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-es.htm#firewalls">Firewalls (Muros de Fuego)</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-es.htm#ssh-x">SSH y Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-es.htm#setup">Configurar un servidor Samba</a></li>
+						  <li><a href="samba-es.htm#configure">Configurar SAMBA (Windows)</a></li>
+						  <li><a href="ssh-es.htm#ssh-fs">Montaje remoto con SSH </a></li>
+						  <li><a href="ssh-es.htm#ssh-x">Aplicaciones X Window via SSH</a></li>
+						  <li><a href="ssh-es.htm#ssh-f">SSH con Konqueror</a></li>
+						  <li><a href="ssh-es.htm#ssh-w">Seguimiento-X con SSH desde Win-PC</a></li>
+						  <li><a href="ssh-es.htm#ssh">SSH y seguridad</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-es.htm#netcardconfig">Conexiones WIFI &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-es.htm#netcardconfig">'ceni': Conectar en línea</a></li>
+						    <li><a href="inet-wpagui-es.htm#wpa-roaming-gui">WiFi - entorno gráfico WPA</a></li>
+						    <li><a href="inet-setup-es.htm#net-set1">WiFi - Configuración del WiFi Roaming</a></li>
+						    <li><a href="inet-wpa-es.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-es.htm#hotswitch">Cambio de la red entre WiFi y Cable</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-es.htm#netcardconfig">Conexiones por cable &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-es.htm#dial-mod">Modems de 56k</a></li>
+						    <li><a href="inet-ceni-es.htm#netcardconfig">'ceni': Conectar en línea</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-es.htm#fw-detect">Detección de firmware non-free</a></li>
+		<li><a href="nf-firm-es.htm#non-free-firmware">Añadir non-free a Sources List</a></li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-es.htm">Gestión de Paquetes y Actualización</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-es.htm#apt-cook">APT y 'sources.list' &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-es.htm#apt-cook">Guía de APT y 'sources list'</a></li>
+					    <li><a href="sys-admin-apt-es.htm#apt-install">Instalar un Paquete</a></li>
+					    <li><a href="sys-admin-apt-es.htm#apt-delete">Quitar un Paquete</a></li>
+					    <li><a href="sys-admin-apt-es.htm#apt-downgrade">Mantener ('Hold') un Paquete y versión anterior</a></li>
+					    <li><a href="sys-admin-apt-es.htm#apt-cache">Buscar un paquete con 'apt-cache'</a></li>
+					    <li><a href="sys-admin-apt-es.htm#gui-pacsea">Buscar un paquete en entorno gráfico</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-es.htm#kern-upgrade">Actualizar el Kernel &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-es.htm#kern-remove">Quitar kernels anteriores</a></li>
+					    <li><a href="sys-admin-kern-upg-es.htm#kern-upgrade">Actualizar el Kernel</a></li>
+					    <li><a href="sys-admin-kern-upg-es.htm#dmakms">Instalación dinámica de módulos del kernel con dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-es.htm#apt-upgrade">Actualizar el sistema instalado: 'dist-upgrade' - Vista general &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-es.htm#live-cd-upgrade">Actualización mediante un Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-es.htm#approx">Actualización de varios PCs en una red</a></li>
+					    <li><a href="sys-admin-apt-es.htm#apt-upgrade">Actualizar el sistema instalado: 'dist-upgrade' - Vista general</a></li>
+					    <li><a href="sys-admin-apt-es.htm#du-st">Actualizar el sistema instalado: 'dist-upgrade' - Los pasos</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-es.htm">Administración del Sistema</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-es.htm#bois-prep">Actualizar el BIOS con FreeDOS</a></li>
+		<li><a href="vir-rkits-es.htm#virus-rkits">Buscadores de Virus y Rootkit</a></li>
+		<li><a href="hd-install-es.htm#adduser">Agregar nuevo Usuario y claves &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-es.htm#adduser">Agregar un nuevo Usuario</a></li>
+					    <li><a href="sys-admin-gen-es.htm#pw-lost">Clave root Perdida, nuevas claves</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-es.htm#start-services">Servicios y niveles de ejecución &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-es.htm#start-services">Activar/desactivar servicios</a></li>
+					    <li><a href="sys-admin-gen-es.htm#pkill">Matar un proceso o servicio</a></li>
+					    <li><a href="sys-admin-gen-es.htm#init">niveles de ejecución en aptosid - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-es.htm#rsync">Copia de seguridad del sistema &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-es.htm#rdiff">Respaldar con 'rdiff'</a></li>
+					    <li><a href="sys-admin-rsync-es.htm#rsync">Respaldar con 'rsync'</a></li>
+					    <li><a href="home-es.htm#home-bu">Mudando el /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-es.htm#fonts">CUPS, Fuentes y Sonido &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-es.htm#fonts">Fuentes</a></li>
+					     <li><a href="sys-admin-gen-es.htm#cups">Sistema de impresión CUPS</a></li>
+					     <li><a href="sys-admin-gen-es.htm#sound">Mezcladores de sonido</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-es.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-es.htm#chroot">Grub2 - Recuperar Grub con chroot</a></li>
+					    <li><a href="sys-admin-grub2-es.htm#mbr-over-grub2">Grub2 - Sobre-escribir el MBR</a></li>
+					    <li><a href="sys-admin-grub2-es.htm#multi-os">Grub2 - Iniciación Dual y Múltiple</a></li>
+					    <li><a href="sys-admin-grub2-es.htm#grub1-grub2">Grub2 -Actualización desde Grub1</a></li>
+					    <li><a href="sys-admin-grub2-es.htm#grub2">Grub2 - Vista general</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donar" alt="Donar" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Patrocinado por webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid tiene el orgullo de estar alojado en webtropia.com" alt="aptosid tiene el orgullo de estar alojado en webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+	<div class="divider" id="ssh">
+			<h2 id="top-header">SSH</h2>
+
+							<p>En computación, el Secure Shell o SSH es un juego de estándares y un protocolo de red asociado que permite establecer un canal seguro entre un ordenador local y otro remoto. Se usa criptografía de clave pública para autentificar el remoto y (opcionalmente) para permitir al ordenador remoto la autenticación el usuario. SSH proporciona confidencialidad e integridad de los datos intercambiados entre ambos ordenadores utilizando encriptación y códigos de autentificación de mensajes (MACs). Se usa típicamente para conectarse a una máquina remota y ejecutar comandos, pero también permite la creación de túneles, permitiendo crear puertos arbitrarios y conexiones X11; se pueden transferir archivos utilizando los protocolos asociados, SFTP o SCP. Un servidor SSH, de forma preestablecida, se escucha en el puerto 22 del estándar de TCP. <a href="http://es.wikipedia.org/wiki/Secure_Shell"> Referencia desde Wikipedia</a></p>
+
+</div>
+<div class="divider" id="ssh-s">
+			<h2>Activar buenas medidas de seguridad para SSH</h2>
+
+							<p>No es seguro permitir una conexión via ssh para el ususario root. No es deseable un usuario root (raíz) conectado de forma preseleccionada; Debian debe ser seguro, no  inseguro, ni es prudente dar a un usuario malévolo 10 minutos para realizar un ataque "de diccionario" sobre las claves del ssh login. Así que depende de usted limitar el tiempo y los intentos de conexión!</p>
+
+ 							<p>Para hacer el ssh más seguro, simplemente abra su editor de texto favorito, como root, entonces abra este archivo:</p>
+<pre>
+/etc/ssh/sshd_config
+</pre>
+							<p>Localice los renglones que pueden causar problemas, y cámbielos.</p>
+
+				<h6>Los parámetros que tiene que localizar son los siguientes:</h6>
+
+ 							<p><span class="highlight-3">Port &lt;puerto deseado&gt;:</span> Tiene que apuntar al puerto correcto que hace <i>forwarding</i> desde su router, que también tiene que ser configurado allí. Si no sabe cómo hacerlo, quizás no deba estar utilizando el ssh remotamente. Debian fija el puerto pre-seleccionado en el puerto 22, sin embargo se recomienda usar un puerto fuera del rango que normalmente buscan los escáners. Como ejemplo, vamos a usar el puerto 5874; entonces será:</p>
+<pre>
+Port 5874
+</pre>
+ 							<p><span class="highlight-3">ListenAddress &lt;IP de la máquina o interfaz de la red&gt;:</span> Ahora, claro está, ya que está haciendo <i>forwarding</i> a un puerto desde su router necesita que la máquina tenga una dirección IP estática en la red, a no ser que esté configurando un servidor DNS localmente, (pero si está haciendo algo tan complicado como eso y necesita estas instrucciones, probablemente está cometiendo un error). Entonces, vamos a decir que es éste:</p>
+<pre>
+ListenAddress 192.168.2.134
+</pre>
+							<p>A continuación, el Protocolo 2 es el preseleccionado por Debian, pero verifíquelo para estar seguro:</p>
+
+ 							<p><span class="highlight-3">LoginGraceTime &lt;segundos de gracia para introducir el login&gt;:</span> Aquí hay un valor absurdo preseleccionado de 600 segundos. No se necesitan 10 minutos para entrar su nombre de usuario y clave, por lo que vamos a arreglar esto:</p>
+<pre>
+LoginGraceTime 45
+</pre>
+ 							<p>Ahora usted tiene 45 segundos para hacer login, y los cracker no tienen 600 segundos cada vez para intentar crackear sus claves</p>
+
+							<p><span class="highlight-3">PermitRootLogin &lt;Permitir accesar como root&gt;:</span> Por qué Debian permite aquí el valor "yes" (sí) es incomprensible, por lo que cambiamos eso a "no".</p>
+<pre>
+PermitRootLogin no
+</pre>
+
+<pre>
+StrictModes yes
+</pre>
+ 							<p><span class="highlight-3">MaxAuthTries &lt;xxx&gt;:</span> Número de intentos de login, permitamos de 2 a 4, pero no más de eso.</p>
+<pre>
+MaxAuthTries 2
+</pre>
+ 							<p>Puede que tega que agregar alguno de estos renglones, si no están presentes:</p>
+<pre>
+AllowUsers &lt;nombres de usuarios permitidos de acceso via ssh [separados con un espacio]&gt;
+</pre>
+ 							<p><span class="highlight-3">AllowUsers &lt;xxx&gt;:</span> permita, mediante la orden "adduser", un solo usuario de ssh sin ningún permiso y ponga su nombre aquí, así:</p>
+<pre>
+AllowUsers nombre-de-usuarios
+</pre>
+ 							<p><span class="highlight-3">PermitEmptyPasswords &lt;xxx&gt;:</span> dele a este usuario, el único al que se le permite entrar con ssh, una clave muy larga que sea imposible adivinar en menos de un millón de años. Una vez que haya entrado, puede usar <i>su</i> para hacerse root:</p>
+<pre>
+PermitEmptyPasswords no
+</pre>
+							<p><span class="highlight-3">PasswordAuthentication &lt;xxx&gt;:</span> evidentemente, para hacer login con un password y no con una clave, necesita que este campo sea "yes" (sí).</p>
+<pre>
+PasswordAuthentication yes [a menos que esté usando claves encriptadas]
+</pre>
+							<p>Finalmente reinicie el demonio:</p>
+<pre>
+/etc/init.d/ssh restart
+</pre>
+ 							<p>Ahora tenemos algo más seguridad, aunque no sea completamente seguro, sólo mejor, incluyendo la creación de un usuario sólo ssh con "adduser"</p>
+
+							<p><span class="highlight-3">Nota:</span> Si recibe un mensaje de error y el ssh se niega a conectarse, vaya a su $HOME, busque un directorio llamado <span class="highlight-3">.ssh</span> y borre el archivo <span class="highlight-3"> known_hosts</span> e inténtelo de nuevo. Este error normalmente occure cuando sus direcciones de IP están fijadas dinámicamente (DCHP)</p>
+
+	</div>
+		<div class="divider" id="ssh-x">
+			<h2>Utilizando aplicaciones de X Window en red a través de SSH</h2>
+
+							<p>ssh -X permite hacer login a un computador remoto y mostrar su interfaz gráfica-X en su máquina local. Entre como un usuario (y note que la X es mayúscula):</p>
+<pre>
+$ ssh -X username@xxx.xxx.xxx.xxx (or IP)
+</pre>
+							<p>Entre la clave de paso para el usuario en el ordenador remoto y ejecute una aplicación-X en la consola:</p>
+
+<pre>
+$ iceweasel [o bien] oocalc [o bien] oowriter [o bien] kspread
+</pre>
+
+							<p>Para algunas conexiones de red que son verdaderamente lentas puede ser beneficioso manejar ficheros comprimidos para ayudar en la velocidad de transmisión, por lo que es una opción a añadir, aunque en redes rápidas tiene el efecto contrario:</p>
+<pre>
+$  ssh -C -X username@xxx.xxx.xxx.xxx (or IP)
+</pre>
+							<p>Lea:</p>
+<pre>
+$man ssh
+</pre>
+							<p><span class="highlight-3">Nota:</span> Si recibe un mensaje de error y el ssh se niega a conectarse, vaya a su $HOME, busque un directorio llamado <span class="highlight-3">.ssh</span> y borre el archivo <span class="highlight-3"> known_hosts</span> e inténtelo de nuevo. Este error normalmente occure cuando sus direcciones de IP están fijadas dinámicamente (DCHP)</p>
+	</div>
+	<div class="divider" id="ssh-scp">
+			<h2>Copiar ficheros y directorios de forma remota via ssh con scp</h2>
+
+							<p>scp usa la línea de órdenes, (terminal/cli), para copiar ficheros entre ordenadores en una red. Usa autenticación y seguridad ssh para la transferencia de datos, y por lo tanto, scp preguntará la palabra o frase de paso necesarias para autenticación.</p>
+
+							<p>Dando por sentado que usted tiene derechos ssh para acceder a un PC o servidor remotos, scp le permite copiar particiones, directorios o ficheros, desde y hacia aquel PC, a una localización o destino de su elección en la que también tenga permisos. Por ejemplo, esto podría incluir un PC o servidor al que tenga permiso de acceso en su red, (o en cualquier otro lugar del mundo), para transferir datos a un lápiz USB conectado en su PC.</p>
+
+							<p>Puede copiar de forma recursiva particiones enteras y directorios con la opción <span class="highlight-3">scp -r</span>. Dese cuenta de que scp -r sigue los enlaces simbólicos que encuentre al pasar por el árbol de directorios.</p>
+
+					<h3>Ejemplos:</h3>
+							 <p><span class="highlight-3"> Ejemplo 1:</span> Copiar una partición:</p>
+
+<pre>
+scp -r &lt;user&gt;@xxx.xxx.x.xxx:/media/disk1part6/ /media/diskXpartX/
+</pre>
+							 <p><span class="highlight-3"> Ejemplo 2:</span> Copiar un directorio en una partición, es este caso un directorio llamado photos en $HOME:</p>
+
+<pre>
+scp -r &lt;user&gt;@xxx.xxx.x.xxx:~/photos/ /media/diskXpartX/xx
+</pre>
+							 <p><span class="highlight-3">Ejemplo 3:</span> Copiar un fichero de un directorio en una partición, en este caso un fichero en $HOME:</p>
+<pre>
+scp &lt;user&gt;@xxx.xxx.x.xxx:~/filename.txt /media/diskXpartX/xx
+</pre>
+							<p><span class="highlight-3">Ejemplo 4:</span> Copiar un fichero en una partición:</p>
+<pre>
+scp &lt;user&gt;@xxx.xxx.x.xxx:/media/disk1part6/filename.txt /media/diskXpartX/xx
+</pre>
+
+							<p><span class="highlight-3">Ejemplo 5:</span> Si ya está en la partición/directorio en el que quiere copiar otro directorio o ficheros, use un '<span class="highlight-2"> <b>.</b> </span>' (punto) :</p>
+<pre>
+scp -r &lt;user&gt;@xxx.xxx.x.xxx:/media/disk1part6/filename.txt<span class="highlight-2"><b> .</b> </span>
+</pre>
+
+							<p><span class="highlight-3">Ejemplo 6:</span> Para copiar ficheros desde su PC/servidor a otro, (use <span class="highlight-3">scp -r</span> si está copiando una partición o un directorio):</p>
+
+<pre>
+scp /media/disk1part6/filename.txt &lt;user&gt;@xxx.xxx.x.xxx:/media/diskXpartX/xx
+</pre>
+
+							<p>Lea:</p>
+<pre>
+man scp
+</pre>
+
+	</div>
+		<div class="divider" id="ssh-w">
+			<h2>SSH remoto con Forwarding-X desde un PC-Windows:</h2>
+
+							<p>* Descargue y queme en un CD el <a href="http://xlivecd.indiana.edu/">Cygwin XLiveCD</a><br />
+			 				* Ponga el CD en la bandeja del CD-ROM del ordenador con Windows-PC y espere que el autorun lo arranque.<br />
+							* Pinche en "Continue" hasta que salga una ventana de shell, y entre:</p>
+<pre>
+ssh -X username@xxx.xxx.xxx.xxx
+</pre>
+      							<p>Nota: xxx.xxx.xxx.xxx es el IP del computador remoto con Linux o su URL (por ejemplo una cuenta dyndns.org) y el nombre del usuario es por supuesto una cuenta que existe en la máquina remota. Después de conectar con éxito, empiece "kmail", por ejemplo, y revise su correo!</p>
+
+							<p>Importante: asegúrese de que hosts.allow tiene una entrada que permite el acceso desde PCs de otras redes. Si está detrás de un NAT-Firewall o un router, compruebe que el puerto 22 está dirigido hacia su máquina de Linux.</p>
+
+	</div>
+	<div class="divider" id="ssh-f">
+			<h2>SSH con Konqueror o Krusader</h2>
+
+							<p>Ambos, Konqueror y Krusader son capaces de acceder a datos remotamente usando el protocolo <span class="highlight-3">sftp://</span> y ambos usan el protocolo ssh.</p>
+
+
+							<p>Como funciona:<br />
+							1) Abra una nueva ventana de Konqueror<br />
+							2) Entre en la barra de dirección: <span class="highlight-3">sftp://username@ssh-server.com</span></p>
+
+
+							<p>Ejemplo 1:</p>
+<pre>
+sftp://aptosid1@remote_hostname_or_ip
+ (Nota: Una ventana emergente se abre, pide su clave ssh, entre y pinche en OK)
+</pre>
+							<p>Ejemplo 2:</p>
+<pre>
+sftp://username:password@remote_hostname_or_ip
+(En este formulario <span class="highlight-3">NO</span> se ve una ventana emergente pidiendo una clave, sino que será conectado directamente.)
+</pre>
+							<p>Para un ambiente LAN</p>
+<pre>
+sftp://username@10.x.x.x or 198.x.x.x.x
+(Nota: Un menú emergente pide la clave ssh, éntrela y haga click en OK)
+</pre>
+							<p>La conexión KonquerorSSH GUI ahora se ha iniciado. Con esta ventana de Konqueror puede trabajar con archivos (copiar/ver) que están en el servidor SSH como si fueran archivos en un directorio en su máquina local.</p>
+
+							<p class="highlight-3">NOTA: Si ha configurado el puerto ssh como otro puerto distinto al puerto 22 preseleccionado, necesitará especificar el puerto que sftp va a usar:</p>
+<pre>
+sftp://user@ip:port
+</pre>
+							<p>'user@ip:port' es la sintaxis estándar para muchos programas como: sftp y smb.</p>
+
+	</div>
+	<div class="divider" id="ssh-fs">
+			<h2>SSHFS - Montaje remoto</h2>
+							<p>SSFS es un método fácil, rápido y seguro que usa FUSE para montar un sistema remoto de archivos. El único requerimiento del lado del servidor es un deamon ejecutando ssh.</p>
+
+							<p>En el lado del cliente probablemente tendrá que instalar el sshfs: <span class="highlight-1">instalar fuse y grupos no es necesario en aptosid Eros y posteriores porque viene instalado por defecto:</span></p>
+
+							<p>En el lado del cliente, probablemente tendrá que instalar sshfs:</p>
+<pre>
+apt-get update  apt-get install sshfs
+</pre>
+							<p class="highlight-3">Ahora tiene que salir y hacer login de nuevo.</p>
+
+							<p>Montar un sistema remoto de archivos es muy sencillo:</p>
+<pre>
+sshfs username@remote_hostname:directory local_mount_point
+</pre>
+							<p>donde el <span class="highlight-3">nombre_usuario</span> es el nombre de la cuenta en el huésped remoto:</p>
+
+							<p>Si en esta orden no se da ningún directorio distinto, se montará el directorio home del usuario remoto <span class="highlight-3"> Atención: los dos puntos <span class="highlight-2"> <b>:</b></span> son imprescindibles, aunque no se dé ningún directorio!</span></p>
+
+							<p>Una vez montado, el directorio remoto se comporta como cualquier otro sistema de archivos local: puede revisar archivos, editarlos y correr scripts sobre ellos, igual como puede hacerlo en un sistema de archivos local.</p>
+
+							<p>Si desea desmontar el huésped remoto, use la orden siguiente:</p>
+<pre>
+fusermount -u local_mount_point
+</pre>
+							<p>Si usa el sshfs frecuentemente, puede ser un buena opción agregar en el /etc/fstab:</p>
+<pre>
+sshfs#username@remote_hostname://remote_directory /local_mount_point fuse user,allow_other,uid=1000,gid=1000,noauto,fsname=sshfs#username@remote_hostname://remote_directory  0 0 
+</pre>
+							<p>A continuación quite el comentario (signo #) a <span class="highlight-3">user_allow_other</span> en <span class="highlight-3">/etc/fuse.conf</span>:</p>
+
+<pre> 
+ # Allow non-root users to specify the 'allow_other' or 'allow_root'
+ # mount options.
+ #
+ user_allow_other
+</pre>
+							<p>Esto permite montar los archivos usando el bien conocido comando mount a todos los usuarios que forman parte del grupo fuse:</p>
+<pre>
+mount /path/to/mount/point
+</pre>
+							<p>Con esta línea en el fstab también puede usar el comando umount:</p>
+<pre>
+umount /path/to/mount/point
+</pre>
+							<p>Para verificar si es miembro del grupo o no, use el comando siguiente:</p>
+<pre>
+cat /etc/group | grep fuse
+</pre>
+							<p>Debe ver algo como esto:</p>
+<pre>
+fuse:x:117: &lt;username&gt;
+</pre>
+							<p>Si su nombre_usuario suyo no aparece listado, use la orden adduser como root:</p>
+<pre>
+adduser &lt;username&gt; fuse
+</pre>
+							<p>Ahora su nombre de usuario debe salir listado y debe poder ejecutar la orden:</p>
+
+							<p class="highlight-3">Nota: El "id" no será mostrado en un listado del grupo "fuse" hasta que salga y vuelva a hacer el login.</p>
+<pre>
+mount local_mount_point
+</pre>
+							<p>y, para desmontar:</p>
+<pre>
+umount local_mount_point
+</pre>
+
+	</div>
+			<div id="rev">Content last revised 01/11/2011 0650 UTC</div>
+
+</div>
+</body>
+</html>

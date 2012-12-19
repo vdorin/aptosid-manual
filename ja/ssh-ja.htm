@@ -1,0 +1,787 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+	<title>aptosid Manuals - SSH</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision by muchan  04/Sep/2010 2320 UTC -->
+<!--htdig_noindex--><div id="menu"><!-- menu starts here ja lang maintained by muchan-->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="To aptosid.com, Forum and Wiki" alt="logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-ja.htm#search-on"><img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" /> サーチ Online Offline</a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Choose another language CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="lang-switch CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-ja.htm">aptosid OS マニュアル</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-ja.htm#welcome-gen">aptosid OS マニュアル &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-ja.htm#cred-team">貢献者</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-ja.htm#how-to">このマニュアルの使い方 &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-ja.htm#how-to">このマニュアルの使い方</a></li>
+					  <li><a href="welcome-ja.htm#table-contents">内容一覧</a></li>
+					</ul>
+					</li>
+		<li><a href="help-ja.htm#help-gen">困った時は... &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-ja.htm#help-gen">困った時は...</a></li>
+					  <li><a href="help-ja.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-ja.htm#welcome-quick">aptosid クイックスタートガイド</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-ja.htm">ISO の内容、リリース、ダウンロードミラーとCDの焼き付け</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-ja.htm#cd-content">ISO の内容と最小限必要な仕様 &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-ja.htm#rolling">リリースノート</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-ja.htm#download-aptosid">aptosidのミラー, ダウンロードとCD の作成 &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-ja.htm#md5">md5 Checksum</a></li>
+					  <li><a href="cd-dl-burning-ja.htm#burn-nero">WindowsでISOを焼くには</a></li>
+					  <li><a href="cd-dl-burning-ja.htm#burn-linux">LinuxでISOを焼くには</a></li>
+					  <li><a href="cd-no-gui-burn-ja.htm#burning-no-gui">burniso script</a></li>
+					  <li><a href="cd-no-gui-burn-ja.htm#burn-no-gui-gen">GUIなしでISOを焼くには</a></li>
+					  <li><a href="cd-dl-burning-ja.htm#download-aptosid">aptosid ダウンロードミラー</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-ja.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-ja.htm#rootpw">aptosid-LiveISOのRootパスワード</a></li>
+				<li><a href="live-mode-ja.htm#live-cd-installsoft">Live-ISO作動中にソフトをインストール</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-ja.htm">ターミナル/コンソール</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-ja.htm#term-kon"> ターミナル/コンソール&#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-ja.htm#term-kon"> ターミナル/コンソール</a></li>
+					  <li><a href="term-konsole-ja.htm#colours"> Coloured terminal prompts</a></li>
+					  <li><a href="term-konsole-ja.htm#cli-help">コマンドラインヘルプ</a></li>
+					  <li><a href="help-ja.htm#init3-tools">テキストモード(tty)で便利な道具 - init 3</a></li>
+					  <li><a href="term-konsole-ja.htm#term-cmds">Linuxターミナルのコマンド一覧</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-ja.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-ja.htm">起動コード</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-ja.htm#cheatcodes">aptosidだけのLive-ISO用起動コード</a></li>
+				<li><a href="cheatcodes-ja.htm#cheatcodes-linux">Linux一般の起動コード</a></li>
+				<li><a href="cheatcodes-vga-ja.htm#vga">VGA コード</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-ja.htm">Partitioning the Hard Drive - Traditional, GPT and LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-ja.htm#hd-ntfs3g">ntfs-3gを使ってNTFSパーティションへの書き込み</a></li>
+			<li><a href="part-lvm-ja.htm#part-lvm">LVM(Logical Volume Manager)を使うパーティション</a></li>
+			<li><a href="part-gparted-ja.htm#partition"> GUI でパーティショニング&#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-ja.htm#partition">GParted / KDE Partition Manager を使ってパーティショニング</a></li>
+					  <li><a href="part-gparted-ja.htm#ntfs"> GParted / KDE Partition Manager を使って NTFS のサイズ変更</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-ja.htm#partition">コマンドラインでパーティショニング</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-ja.htm#partition"> cfdisk を使ってパーティショニング</a></li>
+					    <li><a href="part-cfdisk-ja.htm#formating">cfdiskでパーティション後のフォーマッティング</a></li>
+					    <li><a href="part-gdisk-ja.htm#gdisk-6">Formatting after partitioning with gdisk</a></li>
+					    <li><a href="part-gdiskja.htm#gdisk-1">GPT Partitioning with gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-ja.htm#part-example">パーティショニングの基本 &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-ja.htm#part-example">パーティションサイズの例</a></li>
+					  <li><a href="part-uuid-ja.htm#uuid">UUID, Rebuilding fstab and creating new mount points</a></li>
+					  <li><a href="part-cfdisk-ja.htm#disknames">ディスクの名前について</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-ja.htm">インストール・オプション - HD, USB, VM, Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-ja.htm#Inst-prep">インストールの準備 &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-ja.htm#Inst-prep">インストールの準備</a></li>
+					  <li><a href="hd-install-ja.htm#Installation">ハードディスクへのインストール</a></li>
+					  <li><a href="hd-install-ja.htm#first-hd-boot">始めての起動</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-ja.htm#fromiso">fromisoで起動&#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-ja.htm#fromiso">fromisoで起動 - 概説</a></li>
+					  <li><a href="hd-install-opts-ja.htm#grub2-fromiso">GRUB2からfromisoで起動</a></li>
+					  <li><a href="hd-install-opts-ja.htm#fromiso-persist">fromisoと持続モード</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-ja.htm#usb-hd">USBドライブへのインストール &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-ja.htm#usb-hd">USB-HDへのインストール -aptosid 独自の- aptosid-on-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-ja.htm#raw-usb">USB/SSDドライブに他のLinuxや MS Windows、Mac OS X システムから aptosid を書き込む</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-ja.htm#install-crypt">暗号化パーティションへのインストール - cryptroot</a></li>
+		  <li><a href="nbdboot-ja.htm#nbd1">aptosidをネットワークから起動</a></li>
+		  <li><a href="hd-install-vmopts-ja.htm#vmopts">仮想マシンへのインストール</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-ja.htm">グラフィックカード、モニター、XOrgその他のドライバ</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-ja.htm#mon-res">解像度とモニター &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-ja.htm#mon-res">解像度とモニター</a></li>
+					  <li><a href="hw-dev-mon-ja.htm#xrandr">デュアルモニターとxrandr</a></li>
+					  <li><a href="hw-dev-mon-ja.htm#mon-binary">デュアルモニター（バイナリードライバ）</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-ja.htm#foss-xorg">GPU drivers &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-ja.htm#ati-3d">AMD/ATI 3D ドライバ</a></li>
+					  <li><a href="gpu-ja.htm#intel">Intel 2D/3D ドライバ</a></li>
+					  <li><a href="gpu-ja.htm#nvidia">Nvidia 3D ドライバ</a></li>
+					  <li><a href="gpu-ja.htm#foss-xorg">Xorg のオープンソースドライバ</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-ja.htm#fw-detect">Firmwareの探知 - non-free </a></li>
+			  <li><a href="nf-firm-ja.htm#non-free-firmware">non-free をソースリスとに加える</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-ja.htm">ウィンドウマネージャ</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-ja.htm">KDE and XFCE ウィンドウマネージャ &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-ja.htm#xfce-notes">Xfce ノート</a></li>
+					    <li><a href="wm-dm-ja.htm#install-add">便利な KDE 追加アプリ</a></li>
+					    <li><a href="wm-dm-ja.htm#desk-freeze">デスクトップが凍結したら</a></li>
+					    <li><a href="wm-dm-ja.htm#kde-login">KDEにログインできない時</a></li>
+					    <li><a href="wm-dm-ja.htm#ch-th">テーマの変更</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-ja.htm#dm">Installing additional Display Managers</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-ja.htm">インターネット,WiFi,LAN</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-ja.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-ja.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-ja.htm#serv-ftp">FTPクライアント</a></li>
+					    <li><a href="lamp-apache-ja.htm#serv-sec">Webサーバーのセキュリティ設定</a></li>
+					    <li><a href="lamp-apache-ja.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-ja.htm#serv-mysql">MySQL の設定</a></li>
+					    <li><a href="lamp-ppp-ja.htm#serv-php">Apache2のためのPHPサポート</a></li>
+					    <li><a href="ntp-server-ja.htm#ntp-server">タイムサーバーの設定</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-ja.htm#tor">ファイアーウォールとプライバシー &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-ja.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-ja.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-ja.htm#firewalls">ファイアーウォール</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-ja.htm#ssh-x">SSH と Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-ja.htm#setup">Samba サーバーの設定</a></li>
+						  <li><a href="samba-ja.htm#configure">SAMBA の設定(Windowsとの共有)</a></li>
+						  <li><a href="ssh-ja.htm#ssh-fs">SSH Remote Mounting</a></li>
+						  <li><a href="ssh-ja.htm#ssh-x">SSHのネットワークを通してXウィンドウズのアプリケーションを使う</a></li>
+						  <li><a href="ssh-ja.htm#ssh-f">KonquerorでGUIのSSH</a></li>
+						  <li><a href="ssh-ja.htm#ssh-w">Windows-PCからSSHでXフォワーディング</a></li>
+						  <li><a href="ssh-ja.htm#ssh">SSH とセキュリティ</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-ja.htm#netcardconfig">WIFI &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-ja.htm#netcardconfig">Ceni を使ってネットワークに接続</a></li>
+						    <li><a href="inet-wpagui-ja.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-ja.htm#net-set1">WiFi - WiFi ローミング設定</a></li>
+						    <li><a href="inet-wpa-ja.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-ja.htm#hotswitch">WiFi とケーブル接続のホットスイッチ</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-ja.htm#netcardconfig">ケーブル接続のインターネット設定&#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-ja.htm#dial-mod">56k モデム</a></li>
+						    <li><a href="inet-ceni-ja.htm#netcardconfig">Ceni を使ってネットワークに接続</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-ja.htm#fw-detect">Firmwareの探知 - non-free </a></li>
+		<li><a href="nf-firm-ja.htm#non-free-firmware">non-free をソースリスとに加える</a></li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-ja.htm">パッケージマネージャとdist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-ja.htm#apt-cook">APT クックブックとソースリスト &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-ja.htm#apt-cook">APTガイド - クックブックとソースリスト</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#apt-install">新しくパッケージをインストールする</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#apt-delete">パッケージの除去</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#apt-downgrade">ダウングレードまたはパッケージの保持</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#apt-cache">apt-cacheでパッケージ検索</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#gui-pacsea">GUI パッケージ検索</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-ja.htm#kern-upgrade">カーネルのアップグレード &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-ja.htm#kern-remove">使わないカーネルの除去</a></li>
+					    <li><a href="sys-admin-kern-upg-ja.htm#kern-upgrade"> カーネルのアップグレード</a></li>
+					    <li><a href="sys-admin-kern-upg-ja.htm#dmakms">カーネルモジュールをdmakmsでダイナミックにインストールする</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-ja.htm#apt-upgrade">インストールされたシステムのアップグレード -  dist-upgrade - 概説 &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-ja.htm#live-cd-upgrade">ライブISOアップデート</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-ja.htm#approx">同一LAN上の複数のPCをdist-upgradeする</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#apt-upgrade">インストールされたシステムのアップグレード - dist-upgrade - 概説</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#du-st">インストールされたシステムのアップグレード - dist-upgrade - ステップ</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-ja.htm">システム管理</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-ja.htm#bois-prep">FreeDOSを使ってBIOSをアップグレード</a></li>
+		<li><a href="vir-rkits-ja.htm#virus-rkits">ウイルスとRootkitスキャナー</a></li>
+		<li><a href="hd-install-ja.htm#adduser">新しいユーザーとパスワード &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-ja.htm#adduser">新しいユーザーを加える</a></li>
+					    <li><a href="sys-admin-gen-ja.htm#pw-lost">root パスワードを忘れたら, 新パスワードの設定</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-ja.htm#start-services">サービスとランレベル &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-ja.htm#start-services">サービスのスタート/ストップ</a></li>
+					    <li><a href="sys-admin-gen-ja.htm#pkill">Killing a service or process</a></li>
+					    <li><a href="sys-admin-gen-ja.htm#init">aptosid のランレベル - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-ja.htm#rsync">システムのバックアップ &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-ja.htm#rdiff">rdiffを使ってバックアップ</a></li>
+					    <li><a href="sys-admin-rsync-ja.htm#rsync">rsyncを使ってバックアップ</a></li>
+					    <li><a href="home-ja.htm#home-bu">/home を移動する</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-ja.htm#fonts">CUPS、フォントと音声 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-ja.htm#fonts">フォント</a></li>
+					     <li><a href="sys-admin-gen-ja.htm#cups">CUPS - 印刷システム</a></li>
+					     <li><a href="sys-admin-gen-ja.htm#sound">サウンドミキサー</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-ja.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-ja.htm#chroot">Grub2 - Grubをchrootでリカバーする</a></li>
+					    <li><a href="sys-admin-grub2-ja.htm#mbr-over-grub2">Grub2 - MBRが上書きされてしまったら</a></li>
+					    <li><a href="sys-admin-grub2-ja.htm#multi-os">Grub2 - デュアルまたはマルチブーティング</a></li>
+					    <li><a href="sys-admin-grub2-ja.htm#grub1-grub2">Grub2 - Grub1からアップデートするには</a></li>
+					    <li><a href="sys-admin-grub2-ja.htm#grub2">Grub2 - 概説</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Sponsored by webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid is proudly hosted by webtropia.com" alt="aptosid is proudly hosted by webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+<div class="divider" id="ssh">
+			<h2 id="top-header">SSH</h2>
+							<!--- ####
+							<p>In computing, Secure Shell or SSH is a set of standards and an associated network protocol that allows establishing a secure channel between a local and a remote computer. It uses public-key cryptography to authenticate the remote computer and (optionally) to allow the remote computer to authenticate the user. SSH provides confidentiality and integrity of data exchanged between the two computers using encryption and message authentication codes (MACs). SSH is typically used to log into a remote machine and execute commands, but it also supports tunneling, forwarding arbitrary TCP ports and X11 connections; it can transfer files using the associated SFTP or SCP protocols. An SSH server, by default, listens on the standard TCP port 22. <a href="http://en.wikipedia.org/wiki/Secure_Shell"> Referenced from wikipedia</a></p>
+							#### -->
+							<p>Secure ShellまたはSSHとはローカルコンピュータとリモートコンピュータをつなぐ安全なチャンネルをつくる一連のネットワークプロトコルのセットです。 暗号化されたパブリックキーを使ってリモートコンピュータを確認し、(オプションとして)リモートコンピュータからもユーザーを確認することができます。 SSHはを暗号化とメッセージ確認コード(MACs)を使って二つのコンピュータ間の機密かつ統合されたデータ交換を可能にします。 SSHの典型的な使い方はリモートコンピュータにログインしてコマンドを実行することですが、ほかにもトンネリング、TCPポートのIPフォワーディング、X11接続などにも使えます; 関連するSFTPやSCPなどのプロトコルを使ってファイルを転送することもできます。 SSHサーバーはデフォルトでTCPのポート22を使います。<a href="http://en.wikipedia.org/wiki/Secure_Shell">ウィキペディアのSSHページ </a></p>
+
+	</div>
+	<div class="divider" id="ssh-s">
+			<!--- ####
+			<h2>Enabling good security protocols for SSH</h2>
+			#### -->
+			<h2>SSHのより安全プロトコルの設定</h2>
+
+							<!--- ####
+							<p>Allowing root login, via ssh, is not secure. we do not want root users logging in at all by default, debian should be secure, not insecure nor do we want to give users 10 minutes to do a quick dictionary password attack on our ssh login therefore, its up to you to limit the time and attempts!</p>
+							#### -->
+							<p>SSHを通じてrootとしてのログインを許可するのは安全ではありません。 SSHに限らず、rootとしてログインするのをデフォルトで許可するのはよくありません。 Debianのように10分間もrootとしてのログインを試す時間を与えては自動化されたパスワード破りの攻撃ができるようになり、決して安全とは言えません。 ログインの時間や資格を制限するのはアドミンであるあなたの役目です!</p>
+
+								<!--- ####
+ 							<p>To help make your ssh more secure, simply take your favorite text editor, and open it with root privileges, then open this file:</p>
+								#### -->
+ 							<p>sshをより安全にするため、まず好みのテキストエディタでrootとして:</p>
+<pre>
+/etc/ssh/sshd_config
+</pre>
+							<!--- ####
+							<p>Then we locate the offending items, and change them.</p>
+							#### -->
+							<p>のファイルを開き、問題の行を探して変更します。</p>
+
+						<!--- ####
+						<h6>The offending items you need to locate are the following:</h6>
+						#### -->
+						<h6>変更が必要なのは次の項目です:</h6>
+
+								<!--- ####
+ 							<p><span class="highlight-3">Port &lt;desired port&gt;:</span> This must be set to the correct port that you are forwarding from your router. Port forwarding must also be setup in your router. If you don't know how to do that, maybe you shouldn't be using ssh remotely. Debian sets the default to port 22, however its recommended that you use a port  out of the standard scan range. let's say we use port 5874 so that becomes:</p>
+								#### -->
+ 							<p><span class="highlight-3">Port &lt;desired port&gt;:</span> この項目はルータからデータが送られるポート番号にセットされていなければなりません。 ルータもこのポート番号にデータのフォワーディングをするよう設定する必要があります。 この設定の方法がわからない人は、多分SSHは使わないほうが無難でしょう。 Debianはデフォルトでポート22を使いますが、なるべく他の、標準からはずれた番号の使用を勧めます。 たとえばポート番号5845を使う場合の設定は:</p>
+<pre>
+Port 5874
+</pre>
+								<!--- ####
+ 							<p><span class="highlight-3">ListenAddress &lt;ip of machine or network interface&gt;:</span> Now, of course, since you are forwarding a port from your router, you need the machine to have a static ip address on the network, unless you are using a  dns server locally, but if you're doing something that complicated and need these directions you are probably making a huge mistake So let's say it's this: </p>
+								#### -->
+ 							<p><span class="highlight-3">ListenAddress &lt;このコンピュータの(またはネットワークインターフェースの)IPアドレス&gt;:</span> 今ルータからポートのフォワーディングを行っているわけですから当然このコンピュータは固定されたIPアドレスを持つ必要があります。 (厳密にいえばローカルなDNSサーバーなどがあれば固定IPアドレスの必要はありませんがそのような複雑な設定を使いながら同時にこのマニュアルの説明を必要とするとしたら、多分何かひどい間違いをしているに違いありません) 一例をあげると:</p>
+<pre>
+ListenAddress 192.168.2.134
+</pre>
+							<!--- ####
+							<p>Next, Protocol 2 is already a debian default, but check to make sure:</p>
+							#### -->
+							<p>プロトコル2はDebianのデフォルトなので変更の必要はありませんが、念のため確認:</p>
+
+								<!--- ####
+ 							<p><span class="highlight-3">LoginGraceTime &lt;seconds to allow for login&gt;:</span> This has an absurd default of 600 seconds. It does not take you 10 minutes to type in your user name and password, so lets make that sane:</p>
+								#### -->
+ 							<p><span class="highlight-3">LoginGraceTime &lt;ログインを許可する秒数&gt;:</span> デフォルトは不条理にも600秒にセットされていますが、ユーザー名とパスワードをタイプするのに10分もかかるわけがありません。 だからもっとまともな設定に変えます:</p>
+<pre>
+LoginGraceTime 45
+</pre>
+								<!--- ####
+ 							<p>Now you have 45 seconds to login and hackers do not have 600 seconds each attempt to crack your password</p>
+								#### -->
+ 							<p>これであなたがログインするのには45秒間のゆとりがあり、ハッカーにはパスワードをクラックするための600秒間を許さないように設定できました。</p>
+
+							<!--- ####
+							<p><span class="highlight-3">PermitRootLogin &lt;yes&gt;:</span> Why debian makes PermitRootLogin 'yes', is incomprehensible so we fix that to 'no'</p>
+							#### -->
+							<p><span class="highlight-3">PermitRootLogin &lt;yes&gt;:</span> どうしてDebianはデフォルトでPermitRootLogin(rootとしてのログイン許可)を'yes'に設定しているのでしょう、 理解できません。 ここはしっかり'no'に設定します</p>
+<pre>
+PermitRootLogin no
+</pre>
+
+<pre>
+StrictModes yes
+</pre>
+								<!--- ####
+ 							<p><span class="highlight-3">MaxAuthTries &lt;xxx&gt;:</span> Number of attempts to login, you can  make it 3 or 4 attempts but no more than that</p>
+								#### -->
+ 							<p><span class="highlight-3">MaxAuthTries &lt;xxx&gt;:</span> ログインの試みを許可する回数ですが、3回や4回まではともかくそれ以上に設定すべきではありません。</p>
+<pre>
+MaxAuthTries 2
+</pre>
+								<!--- ####
+ 							<p>You may need to add any of these items if they are not present:</p>
+								#### -->
+ 							<p>次にあげる設定がされていなかったら付け加えます:</p>
+<!--- ####
+<pre>
+AllowUsers &lt;user names with spaces allowed to access via ssh&gt;
+</pre>
+#### -->
+<pre>
+AllowUsers &lt;ログインを許可するユーザーのリスト(複数の場合は空白で区切る)&gt;
+</pre>
+								<!--- ####
+ 							<p><span class="highlight-3">AllowUsers &lt;xxx&gt;:</span> make an ssh only user with no rights use adduser to add the user, then put their name here, like:</p>
+								#### -->
+ 							<p><span class="highlight-3">AllowUsers &lt;xxx&gt;:</span> SSHでログインする権利だけのユーザーをadduserコマンドで作り、その名前をここのxxxのかわりに使います:</p>
+<!--- ####
+<pre>
+AllowUsers whomevertheuseris
+</pre>
+#### -->
+<pre>
+AllowUsers ユーザー名
+</pre>
+								<!--- ####
+ 							<p><span class="highlight-3">PermitEmptyPasswords &lt;xxx&gt;:</span> give that user a nice long password that is impossible to guess ever in a million years that is the only user allowed to ssh in. Once you are in, you can just su to root:</p>
+								#### -->
+ 							<p><span class="highlight-3">PermitEmptyPasswords &lt;xxx&gt;:</span> そしてこのユーザーに百万年かかってもクラックできない長ーいパスワードをつけてこのユーザーだけしかSSHでログインできないように設定します。 一旦ログインできたらその後suコマンドでrootになれます:</p>
+
+<pre>
+PermitEmptyPasswords no
+</pre>
+							<p><span class="highlight-3">PasswordAuthentication &lt;xxx&gt;:</span> キーログインでなく、パスワードログインを使っている限りこのパスワード確認のオプションは必要です。 キーログインの設定でない時はyesに設定します。</p>
+<pre>
+PasswordAuthentication yes [unless using keys]
+</pre>
+							<!--- ####
+							<p>Finally:</p>
+							#### -->
+							<p>最後に:</p>
+<pre>
+/etc/init.d/ssh restart
+</pre>
+								<!--- ####
+ 							<p>Now you have somewhat more secure ssh not fully secure, just better, including creating an ssh only user with adduser</p>
+								#### -->
+ 							<p>これで何とか完全にとは言えないまでも、SSH専用のユーザーなど、より安全なSSHになりました</p>
+
+							<!--- ####
+							<p><span class="highlight-3">Note:<span> If you get an error message and ssh refuses to connect you, go to your $HOME and look for a hidden folder called <span class="highlight-3">.ssh<span> and delete the file called<span class="highlight-3"> known_hosts<span> and try again. This error mainly occurs when you have  dynamically set IP addresses (DCHP)</p>
+							#### -->
+							<p><span class="highlight-3">ノート:<span> もしsshが接続を拒否するエラーメッセージを表示する場合は、まず$HOMEディレクトリにいき、<span class="highlight-3">.ssh<span> という隠れフォルダーに移動して、<span class="highlight-3"> known_hosts<span>というファイルを削除して、もう一度試してください.この問題はよく、(DHCPにより)IPアドレスがダイナミックに変わるときによく起こります。</p>
+
+	</div>
+		<div class="divider" id="ssh-x">
+			<!--- ####
+			<h2>Using X Window Applications Via Network Through SSH</h2>
+			#### -->
+			<h2>SSHのネットワークを通してXウィンドウズのアプリケーションを使う</h2>
+
+							<p>ssh -X のオプションでリモートコンピュータにログインすると、端末PCのXウィンドウのデスプレイ上でリモートPCのGUIアプリケーションを使うことができます。(オプションのXは大文字ですから注意してください。:</p>
+<pre>
+$ ssh -X username@xxx.xxx.xxx.xxx (or IP)
+</pre>
+<!--- ####
+							<p>Enter the password for the username on the remote computer and run the X-application in the shell:</p>
+#### -->
+							<p>そしてリモートPCのユーザーのパスワードを入力し、そのあとXアプリケーションをコマンドシェルから起動します。:</p>
+
+<pre>
+$ iceweasel または oocalc または oowriter または kspread などなど
+</pre>
+							<!--- ####
+							<p>Some really slow network connections from your PC may benefit from having a level of compression to help speed transfers, therefore add an extra option, on fast networks it has the opposite effect:</p>
+							#### -->
+							<p>ネットワーク接続のスピードが非常に遅い場合には何らかの圧縮を設定することでいくらかスピードを速くすることができますが、逆にスピードの速い接続では反対に圧縮によって遅くなります</p>
+<pre>
+$  ssh -C -X username@xxx.xxx.xxx.xxx (or IP)
+</pre>
+							<p>Read:</p>
+<pre>
+$man ssh
+</pre>
+
+							<!--- ####
+							<p><span class="highlight-3">Note:<span> If you get an error message and ssh refuses to connect you, go to your $HOME and look for a hidden folder called <span class="highlight-3">.ssh<span> and delete the file called<span class="highlight-3"> known_hosts<span> and try again. This error mainly occurs when you have  dynamically set IP addresses (DCHP)</p>
+							#### -->
+							<p><span class="highlight-3">ノート:<span> もしsshが接続を拒否するエラーメッセージを表示する場合は、まず$HOMEディレクトリにいき、<span class="highlight-3">.ssh<span> という隠れフォルダーに移動して、<span class="highlight-3"> known_hosts<span>というファイルを削除して、もう一度試してください.この問題はよく、(DHCPにより)IPアドレスがダイナミックに変わるときによく起こります。</p>
+	</div>
+	<div class="divider" id="ssh-scp">
+			<h2>Copying files and directories remotely via ssh with scp</h2>
+
+							<p>scp uses the command line, (terminal/cli), to copy files between hosts on a network. It uses ssh authentication and security for data transfer, therefore, scp will ask for passwords or passphrases as required for authentication.</p>
+
+							<p>Assuming you have ssh rights to a remote PC or a server, scp allows you to copy partitions, directories or file, to and from that PC, to a specified location or destination of your choosing where you also have permissions. For example, this could include a PC or server you have the permission to access on your LAN, (or anywhere else in the world), to enable a transfer of data to a USB hard Drive connected to your PC.</p>
+
+							<p>You can recursively copy entire partitions and directories with the <span class="highlight-3">scp -r</span> option.  Note that scp -r follows symbolic links encountered in the tree traversal.</p>
+
+					<h3>Examples:</h3>
+							 <p><span class="highlight-3"> Example 1:</span> Copy a partition:</p>
+
+<pre>
+scp -r &lt;user&gt;@xxx.xxx.x.xxx:/media/disk1part6/ /media/diskXpartX/
+</pre>
+							 <p><span class="highlight-3"> Example 2:</span> Copy a directory on a partition, in this case a directory called photos in $HOME:</p>
+
+<pre>
+scp -r &lt;user&gt;@xxx.xxx.x.xxx:~/photos/ /media/diskXpartX/xx
+</pre>
+							 <p><span class="highlight-3">Example 3:</span> Copy a file from a directory on a partition, in this case a file in $HOME:</p>
+<pre>
+scp &lt;user&gt;@xxx.xxx.x.xxx:~/filename.txt /media/diskXpartX/xx
+</pre>
+							<p><span class="highlight-3">Example 4:</span> Copy a file on a partition:</p>
+<pre>
+scp &lt;user&gt;@xxx.xxx.x.xxx:/media/disk1part6/filename.txt /media/diskXpartX/xx
+</pre>
+
+							<p><span class="highlight-3">Example 5:</span> If you are already in the drive/directory that you wish to copy any directory or files to, use a '<span class="highlight-2"> <b>.</b> </span>' (dot) :</p>
+<pre>
+scp -r &lt;user&gt;@xxx.xxx.x.xxx:/media/disk1part6/filename.txt<span class="highlight-2"><b> .</b> </span>
+</pre>
+
+							<p><span class="highlight-3">Example 6:</span> To copy files from your PC/server to a another, (use <span class="highlight-3">scp -r</span> if copying a partition or a directory):</p>
+
+<pre>
+scp /media/disk1part6/filename.txt &lt;user&gt;@xxx.xxx.x.xxx:/media/diskXpartX/xx
+</pre>
+
+							<p>Read:</p>
+<pre>
+man scp
+</pre>
+
+	</div>
+		<div class="divider" id="ssh-w">
+			<!--- ####
+			<h2>Remote access ssh with X-Forwarding from a Windows-PC:</h2>
+			#### -->
+			<h2>Windows-PCからSSHのリモートアクセスでXフォワーディング</h2>
+
+							<!--- ####
+							<p>* Download and burn the <a href="http://xlivecd.indiana.edu/">Cygwin XLiveCD</a><br />
+							#### -->
+							<p>* <a href="http://xlivecd.indiana.edu/">Cygwin XライブCD</a>をダウンロードしてCDを作成する<br />
+							<!--- ####
+							* Put the CD into the CD-ROM tray of the Windows-PC and wait for the autorun.<br />
+							#### -->
+							* CDをWindows-PCのトレイに入れ自動実行プログラムのスタートを待つ。<br />
+							<!--- ####
+							Click "continue" until a shell window pops up and enter:</p>
+							#### -->
+							シェルウィンドウが現れるまで"continue"を押し、現れたら:</p>
+<pre>
+ssh -X username@xxx.xxx.xxx.xxx
+</pre>
+						<p>と入力する。</p>
+													<!--- ####
+      							<p>Note: xxx.xxx.xxx.xxx is the IP of the linux remote computer or its URL (for example a dyndns.org account) and the username is of course one user account that exists on the remote machine. After successfull login, start "kmail" for example and check your mails!</p>
+													#### -->
+      							<p>ノート: xxx.xxx.xxx.xxxの部分はLinuxのリモートPCのIPアドレスまたはURL(たとえばdyndns.orgなど)で、usernameのところにはもちろん実際にリモートPCにアカウントが存在するユーザー名を使います。 ログインに成功したら、たとえば"kmail"などをスタートして届いたメールのチェックもできます!</p>
+
+							<!--- ####
+							<p>Important: make sure hosts.allow has an entry to allow access from PCs from other networks. If you are behind a NAT-Firewall or a router make sure port 22 is forwarded to your linux machine</p>
+							#### -->
+							<p>重要事項: 他のネットワークからのアクセスを許可する場合は/etr/hosts.allowの中にその項目を入れます。 もしあなたのコンピュータがルータやNAT-Firewallの後ろにある場合はポート22番があなたのコンピュータに転送される設定を確認しましょう。 </p>
+	</div>
+		<div class="divider" id="ssh-f">
+			<h2>Konqueror でGUIのSSH</h2>
+
+							<!--- ####
+							<p>Konqueror and Krusader are both able to access remote data, using <span class="highlight-3">sftp://</span> and uses the ssh protocol.</p>
+							#### -->
+							<p>KonquerorとKrusaderはどちらもSSHプロトコルを使って<span class="highlight-3">sftp://</span>でリモートデータにアクセスできます。</p>
+
+							<!--- ####
+							<p>How it works:<br />
+							#### -->
+							<p>使い方:<br />
+							<!--- ####
+							1) Open a new Konqueror window<br />
+							#### -->
+							1) 新しいKonquerorのウィンドウを開く<br />
+							<!--- ####
+							2) Enter into the address bar: <span class="highlight-3">sftp://username@ssh-server.com</span></p>
+							#### -->
+							2) アドレスバーに<span class="highlight-3">sftp://username@ssh-server.com</span>と入力します。</p>
+
+			<!--- ####
+			<p>Example 1: </p>
+			#### -->
+			<p>例 1: </p>
+<!--- ####
+<pre>
+sftp://aptosid1@my-home-server.dyndns.org
+(Note: A popup opens that asks for your ssh password, enter it and click OK)
+</pre>
+#### -->
+<pre>
+sftp://aptosid1@remote_hostname_or_ip
+(注意: SSHのパスワードを聞くポップアップが現れます、入力してOKを押します)
+</pre>
+							<p>例 2: </p>
+<!--- ####
+<pre>
+sftp://username:password@ssh-server.com
+(In this form you will <span class="highlight-3">NOT</span> get a popup asking for a password you will be directly connected.)
+</pre>
+#### -->
+<pre>
+sftp://username:password@remote_hostname_or_ip
+(このやり方だとパスワードを聞くポップアップは現れ<span class="highlight-3">ません</span>。 直接データにアクセスします。)
+</pre>
+							<!--- ####
+							<p>For a LAN environment</p>
+							#### -->
+							<p>LANの環境では</p>
+<!--- ####
+<pre>
+sftp://username@10.x.x.x or 198.x.x.x.x
+(Note: A popup opens that asks for your ssh password, enter it and click OK)
+</pre>
+#### -->
+<pre>
+sftp://username@10.x.x.x or 198.x.x.x.x
+(注意: SSHのパスワードを聞くポップアップが現れます、入力してOKを押します)
+</pre>
+							<!--- ####
+							<p>The Konqueror SSH GUI connection now is initialised. With this Konqueror window, you can work with the files (copy/view) that are on the SSH server just as if the files would be in a folder on your local machine.</p>
+							#### -->
+							<p>KonquerorのSSHのGUIコネクションは初期化されます。 このKonquerorのウィンドウではSSHサーバーのファイルをローカルPCのファルダに入っているのとまったく同じ用に取扱い(コピーや閲覧など)できます。</p>
+
+							<!--- ####
+							<p class="highlight-3">NOTE: If you have set the ssh port  to use another port, other than the default of 22, you need to specify the port that sftp/fish is to use:</p>
+							#### -->
+							<p class="highlight-3">注意: SSHのポート番号をデフォルトの22から変えた場合、ポート番号もsftp/fshが使えるように特定する必要があります:</p>
+<pre>
+sftp://user@ip:port
+</pre>
+							<!--- ####
+							<p>'user@ip:port' is standard syntax for many programs like sftp and smb.</p>
+							#### -->
+							<p>'user@ip:port'はsftp and smbなど、多くのプログラムがつかう標準いシンタックスです。</p>
+
+	</div>
+	<div class="divider" id="ssh-fs">
+			<!--- ####
+			<h2>SSHFS - Mounting Remotely</h2>
+			#### -->
+			<h2>SSHFS -  リモートマウント</h2>
+							<!--- ####
+							<p>SSFS is an easy, fast and secure method that uses FUSE to mount a remote filesystem. The only server-side requirement is a running ssh deamon.</p>
+							#### -->
+							<p>SSFSはFUSEを使ってリモートファイルシステムをマウントする、手早く簡単でかつ安全な方法です。 サーバー側に必要なのはsshデーモンが走っていることだけです。</p>
+
+							<!--- ####
+							<p>On client side you propably have to install sshfs: <span class="highlight-1">installing fuse and groups is not necessary on aptosid eros forward as it is installed by default:</span></p>
+							#### -->
+							<p>クライアント側にはsshfsをインストールする必要があるでしょう:<br />	<span class="highlight-1">Eros以降のaptosidではfuseとグループはデフォルトでインストールされているため、わざわざインストールする必要はありません</span></p>
+<pre>
+apt-get update &amp;&amp; apt-get install sshfs
+</pre>
+							<!--- ####
+							<p class="highlight-3">Now you must log out and log back in again</p>
+							#### -->
+							<p class="highlight-3">一度ログアウトして、またログインしなおさなければ使えません</p>
+
+							<!--- ####
+							<p>Mounting a remote filesystem is very easy:</p>
+							#### -->
+							<p>リモートシステムをマウントするのは簡単です:</p>
+<pre>
+sshfs username@remote_hostname:directory local_mount_point
+</pre>
+							<!--- ####
+							<p>where the <span class="highlight-3">username</span> is the account name on the remote host:</p>
+							#### -->
+							<p>ここで<span class="highlight-3">username</span> というのはリモートホスト上のアカウントです:</p>
+
+							<!--- ####
+							<p>If no directory is given the home directory of the remote user will be mounted.<span class="highlight-3"> Attention: The colon <span class="highlight-2"> <b>:</b></span> is essential even if no directory is given! </span></p>
+							#### -->
+							<p>ディレクトリ名が省略された場合、リモートユーザーのホームディレクトリがマウントされます。 <span class="highlight-3"> 注意: ディレクトリ名が省略された場合でも<span class="highlight-2"> <b>:</b></span> (コロン)は必要です! </span></p>
+
+							<!--- ####
+							<p>After mounting the remote directory behaves like any other local filesystem, you can browse files, edit them and run scripts on them, just as you can do with a local filesystem.</p>
+							#### -->
+							<p>一度マウントされたらリモートディレクトリはファイルを閲覧したり、編集したり、スクリプトを走らせたり、と普通のローカルディレクトリと同じように使えます。</p>
+
+							<!--- ####
+							<p>If you want to unmount the remote host use the following command:</p>
+							#### -->
+							<p>アンマウントするには:</p>
+<pre>
+fusermount -u local_mount_point
+</pre>
+							<!--- ####
+							<p>If you use sshfs frequently it would be a good choice to add an fstab entry:</p>
+							#### -->
+							<p>sshfsを頻繁に使う場合はfstabに加えておいたほうがいいでしょう:</p>
+<pre>
+sshfs#username@remote_hostname://remote_directory /local_mount_point fuse user,allow_other,uid=1000,gid=1000,noauto,fsname=sshfs#username@remote_hostname://remote_directory  0 0 
+</pre>
+							<p>Next uncomment <span class="highlight-3">user_allow_other</span> in <span class="highlight-3">/etc/fuse.conf</span>:</p>
+
+<pre> 
+ # Allow non-root users to specify the 'allow_other' or 'allow_root'
+ # mount options.
+ #
+ user_allow_other
+</pre>
+							<!--- ####
+							<p>This will allow every user which is part of the group fuse to mount the filesystem by using the well known mount command:</p>
+							#### -->
+							<p>これでfuseという名のグループに入っているユーザーならだれでも普通のmountコマンドでマウントできるようになります:</p>
+<pre>mount /path/to/mount/point</pre>
+							<!--- ####
+							<p>With that line in your fstab you can of course use the umount command too:</p>
+							#### -->
+							<p>fstabにこの一行を加えた場合、アンマウントも普通のunmountコマンドが使えます:</p>
+<pre>umount /path/to/mount/point</pre>
+							<!--- ####
+							<p>To check whether you are in that group or not use the following command:</p>
+							#### -->
+							<p>fuseグループに入っているかどうかを調べるには:</p>
+<pre>
+cat /etc/group | grep fuse
+</pre>
+							<!--- ####
+							<p>You should see something like:</p>
+							#### -->
+							<p>次のような表示があるはずです:</p>
+<pre>
+fuse:x:117: &lt;username&gt;
+</pre>
+							<!--- ####
+							<p>If your username is not listed use the adduser command as root:</p>
+							#### -->
+							<p>ユーザー名がなかったらrootとしてadduserコマンドで追加できます:</p>
+<pre>
+adduser &lt;username&gt; fuse
+</pre>
+							<!--- ####
+							<p>Now your username should be listed und you should be able to run the command:</p>
+							#### -->
+							<p>これでユーザー名がfuseグループに入ったはずですから、次のコマンドが使えます:</p>
+
+							<!--- ####
+							<p class="highlight-3">Note: The "id" will not list in the "fuse" group, until you have logged out and logged back in again</p>
+							#### -->
+							<p class="highlight-3">注意: ユーザーのIDは一度ログオフしてログインしなおすまでfuseグループの一員として表示されません</p>
+<pre>
+mount local_mount_point
+</pre>
+							<p>そして</p>
+<pre>
+umount local_mount_point
+</pre>
+
+	</div>
+			<div id="rev">Content last revised 01/11/2011 0650 UTC</div>
+
+</div>
+</body>
+</html>

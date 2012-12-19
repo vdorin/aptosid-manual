@@ -1,0 +1,615 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+<head>
+	<title>aptosid Manuals - Grub2</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision by bluewater 22/04/2009 1350hrs UTC -->
+<!--htdig_noindex--><div id="menu"> <!-- menu starts here es lang maintained by Luis_P -->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="ir a aptosid.com y Forum y Wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-es.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" />Buscar</a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Seleccione otro idioma - Choose another language CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="lang-switch CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-es.htm">Manual aptosid</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-es.htm#welcome-gen">Manual de usuario &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-es.htm#cred-team">Créditos</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-es.htm#how-to">Cómo usar este manual &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-es.htm#how-to">Cómo usar este manual</a></li>
+					  <li><a href="welcome-es.htm#table-contents">Indice de Contenido</a></li>
+					</ul>
+					</li>
+		<li><a href="help-es.htm#help-gen">Recibir ayuda &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-es.htm#help-gen">Dónde Conseguir Ayuda</a></li>
+					  <li><a href="help-es.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-es.htm#welcome-quick">Guía rápida</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-es.htm"> ISO, Versiones, Espejos y Quemado</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-es.htm#cd-content">Contenido del ISO y Requerimientos &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-es.htm#rolling">Notas del lanzamiento</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-es.htm#download-aptosid">Espejos aptosid, descargar y quemar &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-es.htm#md5">Suma de verificación, md5</a></li>
+					  <li><a href="cd-dl-burning-es.htm#burn-nero">Quemar en Windows</a></li>
+					  <li><a href="cd-dl-burning-es.htm#burn-linux">Quemar en Linux</a></li>
+					  <li><a href="cd-no-gui-burn-es.htm#burning-no-gui">Script para quemar ISO</a></li>
+					  <li><a href="cd-no-gui-burn-es.htm#burn-no-gui-gen">Quemar sin GUI</a></li>
+					  <li><a href="cd-dl-burning-es.htm#download-aptosid">Espejos de descarga aptosid</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-es.htm">LiveCD: el modo en vivo</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-es.htm#rootpw">Clave raíz del LiveCD</a></li>
+				<li><a href="live-mode-es.htm#live-cd-installsoft">Instalar Software con el LiveCD</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-es.htm">Terminal/Consola</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-es.htm#term-kon"> Terminal (consola) &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-es.htm#term-kon"> Terminal (consola)</a></li>
+					  <li><a href="term-konsole-es.htm#colours"> prompts coloreados de terminal : </a></li>
+					  <li><a href="term-konsole-es.htm#cli-help">Ayuda en línea de Comando</a></li>
+					  <li><a href="help-es.htm#init3-tools">Herramientas que hay que conocer en el modo texto (tty) - init 3</a></li>
+					  <li><a href="term-konsole-es.htm#term-cmds">Comandos del terminal de Linux</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-es.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-es.htm">Chuletas (cheatcodes)</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-es.htm#cheatcodes">Chuletas aptosid específicas para Live-ISO</a></li>
+				<li><a href="cheatcodes-es.htm#cheatcodes-linux">Chuletas genericas Linux</a></li>
+				<li><a href="cheatcodes-vga-es.htm#vga">Códigos VGA</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-es.htm">Particionar el Disco Duro; Modos tradicional, GPT y LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-es.htm#hd-ntfs3g">Escribir en Particiones NTFS con ntfs-3g</a></li>
+			<li><a href="part-lvm-es.htm#part-lvm">Particiones para usar LVM - Gestor Lógico de Volúmenes</a></li>
+			<li><a href="part-gparted-es.htm#partition">Particionar con un gestor gráfico &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-es.htm#partition">Particionar el Disco Duro usando GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-es.htm#ntfs">Redimensionar particiones NTFS con GParted/KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-es.htm#partition">Particionar el Disco Duro en línea de órdenes &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-es.htm#partition">Particionar el Disco Duro con cfdisk</a></li>
+					    <li><a href="part-cfdisk-es.htm#formating">Formatear después de particionar con cfdisk</a></li>
+					    <li><a href="part-gdisk-es.htm#gdisk-6">Formatear después de particionar con gdisk</a></li>
+					    <li><a href="part-gdisk-es.htm#gdisk-1">GPT Particionar con gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-es.htm#part-example">Particionado Básico &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-es.htm#part-example">Ejemplos de dimensiones de particiones</a></li>
+					  <li><a href="part-uuid-es.htm#uuid">UUID, Reconstruir fstab y crear nuevos puntos de montaje</a></li>
+					  <li><a href="part-cfdisk-es.htm#disknames">Nombrar discos: en breve</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-es.htm">Opciones de la Instalación - HD, USB, VM y Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-es.htm#Inst-prep">Preparar para Instalar &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-es.htm#Inst-prep">Preparar para Instalar </a></li>
+					  <li><a href="hd-install-es.htm#Installation">Instalar al disco duro</a></li>
+					  <li><a href="hd-install-es.htm#first-hd-boot">Primera inicialización</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-es.htm#fromiso">Arranque fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-es.htm#fromiso">Iniciar fromiso - Vista general</a></li>
+					  <li><a href="hd-install-opts-es.htm#grub2-fromiso">Iniciar 'fromiso' con Grub 2</a></li>
+					  <li><a href="hd-install-opts-es.htm#fromiso-persist">'fromiso' y 'persist'</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-es.htm#usb-hd">Instalar en un USB-DD - aptosid específico - aptosid-en-un-lápiz_USB &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-es.htm#usb-hd">Instalar en un USB-DD - aptosid Específico - aptosid en un lápiz USB</a></li>
+					  <li><a href="hd-ins-opts-oos-es.htm#raw-usb">Grabar aptosid en un lápiz USB/SSD con cualquier sistema Linux, MS Windows o Mac OS X</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-es.htm#install-crypt">Instalación en particiones cifradas - cryptroot</a></li>
+		  <li><a href="nbdboot-es.htm#nbd1">Arrancar aptosid en una red</a></li>
+		  <li><a href="hd-install-vmopts-es.htm#vmopts">Opciones de instalación en una máquina virtual</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-es.htm">Tarjetas Gráficas, monitores, Xorg &amp; controladores</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-es.htm#mon-res">Resolución de pantalla y monitores  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-es.htm#mon-res">Resolución de pantalla y monitores</a></li>
+					  <li><a href="hw-dev-mon-es.htm#xrandr">Monitores Duales y xrandr</a></li>
+					  <li><a href="hw-dev-mon-es.htm#mon-binary">Monitores Duales (utilizando binarios)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-es.htm#foss-xorg">Controladores GPU &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-es.htm#ati-3d">Controladores AMD/ATI 3D</a></li>
+					  <li><a href="gpu-es.htm#intel">Controladores Intel 2D y 3D</a></li>
+					  <li><a href="gpu-es.htm#nvidia">Controladores Nvidia 3D</a></li>
+					  <li><a href="gpu-es.htm#foss-xorg">Controladores código abierto Xorg</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-es.htm#fw-detect">Detección de firmware non-free</a></li>
+			  <li><a href="nf-firm-es.htm#non-free-firmware">Añadir non-free a Sources List</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-es.htm">Gestor de ventanas</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-es.htm">Gestores de Ventanas KDE y XFCE &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-es.htm#xfce-notes">Utilidades de XFCE</a></li>
+					    <li><a href="wm-dm-es.htm#install-add">Utilidades extras de KDE</a></li>
+					    <li><a href="wm-dm-es.htm#desk-freeze">El escritorio se traba</a></li>
+					    <li><a href="wm-dm-es.htm#kde-login">No puedo hacer login en KDE</a></li>
+					    <li><a href="wm-dm-es.htm#ch-th">Cambiar Temas</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm--es.htm#dm">Instalación de otros gestores de escritorio</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-es.htm">Conexión a Internet, WiFi, LAN y Redes</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-es.htm">Pila de LAMP aptosid &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-es.htm#serv-apache">Pila de LAMP aptosid </a></li>
+					    <li><a href="lamp-apache-es.htm#serv-ftp">Clientes FTP</a></li>
+					    <li><a href="lamp-apache-es.htm#serv-sec">Protocolos de Seguridad</a></li>
+					    <li><a href="lamp-apache-es.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-es.htm#serv-mysql">Configurar MySQL</a></li>
+					    <li><a href="lamp-ppp-es.htm#serv-php">PHP en Apache</a></li>
+					    <li><a href="ntp-server-es.htm#ntp-server">Configurar un servidor horario</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-es.htm#tor">Firewalls (Muros de Fuego) y privacidad &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-es.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-es.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-es.htm#firewalls">Firewalls (Muros de Fuego)</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-es.htm#ssh-x">SSH y Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-es.htm#setup">Configurar un servidor Samba</a></li>
+						  <li><a href="samba-es.htm#configure">Configurar SAMBA (Windows)</a></li>
+						  <li><a href="ssh-es.htm#ssh-fs">Montaje remoto con SSH </a></li>
+						  <li><a href="ssh-es.htm#ssh-x">Aplicaciones X Window via SSH</a></li>
+						  <li><a href="ssh-es.htm#ssh-f">SSH con Konqueror</a></li>
+						  <li><a href="ssh-es.htm#ssh-w">Seguimiento-X con SSH desde Win-PC</a></li>
+						  <li><a href="ssh-es.htm#ssh">SSH y seguridad</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-es.htm#netcardconfig">Conexiones WIFI &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-es.htm#netcardconfig">'ceni': Conectar en línea</a></li>
+						    <li><a href="inet-wpagui-es.htm#wpa-roaming-gui">WiFi - entorno gráfico WPA</a></li>
+						    <li><a href="inet-setup-es.htm#net-set1">WiFi - Configuración del WiFi Roaming</a></li>
+						    <li><a href="inet-wpa-es.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-es.htm#hotswitch">Cambio de la red entre WiFi y Cable</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-es.htm#netcardconfig">Conexiones por cable &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-es.htm#dial-mod">Modems de 56k</a></li>
+						    <li><a href="inet-ceni-es.htm#netcardconfig">'ceni': Conectar en línea</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-es.htm#fw-detect">Detección de firmware non-free</a></li>
+		<li><a href="nf-firm-es.htm#non-free-firmware">Añadir non-free a Sources List</a></li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-es.htm">Gestión de Paquetes y Actualización</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-es.htm#apt-cook">APT y 'sources.list' &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-es.htm#apt-cook">Guía de APT y 'sources list'</a></li>
+					    <li><a href="sys-admin-apt-es.htm#apt-install">Instalar un Paquete</a></li>
+					    <li><a href="sys-admin-apt-es.htm#apt-delete">Quitar un Paquete</a></li>
+					    <li><a href="sys-admin-apt-es.htm#apt-downgrade">Mantener ('Hold') un Paquete y versión anterior</a></li>
+					    <li><a href="sys-admin-apt-es.htm#apt-cache">Buscar un paquete con 'apt-cache'</a></li>
+					    <li><a href="sys-admin-apt-es.htm#gui-pacsea">Buscar un paquete en entorno gráfico</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-es.htm#kern-upgrade">Actualizar el Kernel &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-es.htm#kern-remove">Quitar kernels anteriores</a></li>
+					    <li><a href="sys-admin-kern-upg-es.htm#kern-upgrade">Actualizar el Kernel</a></li>
+					    <li><a href="sys-admin-kern-upg-es.htm#dmakms">Instalación dinámica de módulos del kernel con dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-es.htm#apt-upgrade">Actualizar el sistema instalado: 'dist-upgrade' - Vista general &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-es.htm#live-cd-upgrade">Actualización mediante un Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-es.htm#approx">Actualización de varios PCs en una red</a></li>
+					    <li><a href="sys-admin-apt-es.htm#apt-upgrade">Actualizar el sistema instalado: 'dist-upgrade' - Vista general</a></li>
+					    <li><a href="sys-admin-apt-es.htm#du-st">Actualizar el sistema instalado: 'dist-upgrade' - Los pasos</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-es.htm">Administración del Sistema</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-es.htm#bois-prep">Actualizar el BIOS con FreeDOS</a></li>
+		<li><a href="vir-rkits-es.htm#virus-rkits">Buscadores de Virus y Rootkit</a></li>
+		<li><a href="hd-install-es.htm#adduser">Agregar nuevo Usuario y claves &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-es.htm#adduser">Agregar un nuevo Usuario</a></li>
+					    <li><a href="sys-admin-gen-es.htm#pw-lost">Clave root Perdida, nuevas claves</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-es.htm#start-services">Servicios y niveles de ejecución &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-es.htm#start-services">Activar/desactivar servicios</a></li>
+					    <li><a href="sys-admin-gen-es.htm#pkill">Matar un proceso o servicio</a></li>
+					    <li><a href="sys-admin-gen-es.htm#init">niveles de ejecución en aptosid - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-es.htm#rsync">Copia de seguridad del sistema &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-es.htm#rdiff">Respaldar con 'rdiff'</a></li>
+					    <li><a href="sys-admin-rsync-es.htm#rsync">Respaldar con 'rsync'</a></li>
+					    <li><a href="home-es.htm#home-bu">Mudando el /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-es.htm#fonts">CUPS, Fuentes y Sonido &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-es.htm#fonts">Fuentes</a></li>
+					     <li><a href="sys-admin-gen-es.htm#cups">Sistema de impresión CUPS</a></li>
+					     <li><a href="sys-admin-gen-es.htm#sound">Mezcladores de sonido</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-es.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-es.htm#chroot">Grub2 - Recuperar Grub con chroot</a></li>
+					    <li><a href="sys-admin-grub2-es.htm#mbr-over-grub2">Grub2 - Sobre-escribir el MBR</a></li>
+					    <li><a href="sys-admin-grub2-es.htm#multi-os">Grub2 - Iniciación Dual y Múltiple</a></li>
+					    <li><a href="sys-admin-grub2-es.htm#grub1-grub2">Grub2 -Actualización desde Grub1</a></li>
+					    <li><a href="sys-admin-grub2-es.htm#grub2">Grub2 - Vista general</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donar" alt="Donar" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Patrocinado por webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid tiene el orgullo de estar alojado en webtropia.com" alt="aptosid tiene el orgullo de estar alojado en webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+		<div class="divider" id="grub2">
+			<h2 id="top-header">GRUB 2</h2>
+				<h6>Sumario básico de las diferencias más importantes entre GRUB 1 (que ahora recibe el nombre de grub-legacy) y GRUB 2:</h6>
+
+					<ul>
+						  	<li><span class="highlight-3">El menu.lst ya no existe.</span></li>
+
+							<li>Un fichero llemado <span class="highlight-3">grub.cfg</span> es ahora el que controla la pantalla de Grub.</li>
+
+							<li>grub.cfg se genera automáticamente por los scripts de <span class="highlight-3"> /etc/grub.d</span>.</li>
+
+							<li>Los números de las particiones también son diferentes. Las particiones están numeradas a partir del 1 en vez del 0 (los discos son numerados aún desde el 0):
+<pre>
+Linux      grub1     grub2
+/dev/sda1  (hd0,0)   (hd0,1)
+/dev/sda2  (hd0,1)   (hd0,2)
+/dev/sda3  (hd0,2)   (hd0,3)
+
+/dev/sdb1  (hd1,0)   (hd1,1)
+/dev/sdb2  (hd1,1)   (hd1,2)
+/dev/sdb3  (hd1,2)   (hd1,3)
+</pre>
+							</li>
+
+							<li>Las declaraciones en grub.cfg se expresan de forma ligeramente diferente en comparación con el menu.ls y no se pueden copiar directamente desde Grub 1 menu.lst a Grub 2 grub.cfg ya que el fichero grub.cfg es el 'resultado'. <span class="highlight-2"> El fichero grub.cfg no debe ser nunca alterado manualmente. </span></li>
+
+					 </ul>
+		</div>
+		<div class="divider" id="grub2-files">
+					  <h4> El fichero de configuración Grub 2 predeterminado</h4>
+							<p>El fichero <span class="highlight-3">/etc/default/grub</span> contiene la configuración de las variables de grub2. Por ejemplo, el tiempo antes de arrancar, entradas predeterminadas en el menú que se activará, parámetros del kernel, la apariencia de grub y cosas similares.</p>
+
+					 <h4> Los ficheros de script de Grub 2</h4>
+							<p>Los ficheros situados en<span class="highlight-3"> /etc/grub.d</span> controlan el fichero resultante llamado <span class="highlight-3"> grub.cfg</span> que se encuentra en <span class="highlight-3"> /boot/grub/</span>.</p>
+
+							<p><span class="highlight-2">El fichero grub.cfg nunca debe ser alterado manualmente. </span>Todos los cambios tienen que hacerse mediante uno o todos los ficheros de script que se hallan en <span class="highlight-3"> /etc/grub.d</span>. os-prober debería poder manejar el 90% de todos los casos:</p>
+<pre>
+00_header:
+05_debian_theme: Establece el entorno, colores de texto, temas
+10_hurd: Localiza los núcleos Hurd
+10_linux: Localiza los núcleos de Linux según los resultados de la orden lsb_release.
+20_memtest86+: Si el fichero /boot/memtest86+.bin existe, lo incluye en el menú de arranque.
+30_os-prober: Busca Linux y otros sistemas operativos en todas las particiones y los incluye en el menú boot.
+40_custom: Una plantilla para agregar entradas personalizadas del menú de arranque para otros sistemas operativos.
+60_fll-fromiso: Una plantilla para agregar entradas personalizadas del menú de arranque mediante fromiso a un lápiz USB o a una tarjeta SSD.
+<span class="highlight-2">60_fll-fromiso no debe ser alterado use /etc/default/grub2-fll-fromiso
+Read  <a href="hd-install-opts-es.htm#grub2-fromiso">Booting 'fromiso' with Grub 2</a></span>
+</pre>
+							<p>Después de que se haya hecho un cambio, grub.cfg necesita enterarse. En el caso de las actualizaciones del kernel de aptosid, se da automáticamente la orden de actualización. Si es una alteración manual hecha por usted como adminstrador del sistema en cualquiera de los ficheros antes mencionados, necesitará correr: </p>
+
+<pre>
+update-grub
+</pre>
+
+							<p><span class="highlight-3">El paquete deb Debian Grub2 se ha designado de manera que una alteración manual por parte de usted será necesaria muy raramente.</span></p>
+		</div>
+		<div class="divider" id="grub1-grub2">
+				<h2>Actualizar desde Grub anterior a Grub 2</h2>
+							<p><span class="highlight-2">Recomendamos actualizar a Grub 2 de forma limpia y borrar Grub 1 totalmente</span>. Usted debe ser consciente de que puede estropearlo todo, así que tenga mucho cuidado.</p>
+
+						<h6>Paso 1: </h6>
+							<p>Asegúrese de que su sistema está completamente <span class="highlight-3">actualizado desde init 3. </span></p>
+<pre>
+apt-get update
+Ctrl+alt+F1
+init 3
+apt-get dist-upgrade
+init 5 &amp;&amp; exit
+</pre>
+						<h6>Paso 2:</h6>
+							<p>Borre completamente Grub 1:</p>
+<pre>
+rm -rf /boot/grub
+apt-get purge grub-gfxboot
+</pre>
+							<p>El resultado será que <span class="highlight-3">fll-iso2usb* grub-gfxboot* install-usb-gui* </span> serán borrados. Escriba <span class="highlight-3">Y</span> para confirmarlo.</p>
+
+						<h6>Paso 3:</h6>
+
+<pre>
+apt-get install grub2 os-prober
+</pre>
+
+<div class="screenshot"><img src="../lib/images-common/images-grub2/grub2-2.png" title="Grub2" alt="Grub2" /></div>
+							<p>Use la tecla del tabulador para seleccionar OK</p>
+
+<div class="screenshot"><img src="../lib/images-common/images-grub2/grub2-3.png" title="Grub2" alt="Grub2" /></div>
+							<p>Use la tecla del tabulador para seleccionar OK</p>
+
+<div class="screenshot"><img src="../lib/images-common/images-grub2/grub2-convert-1.png" title="Grub2-conversion 1" alt="Grub2-conversion 1" /></div>
+
+							<p>Use las teclas de flechas y la barra espaciadora para poner un <span class="highlight-3">* (asterisco) </span> que seleccione en qué disco duro Grub2 escribirá el MBR. <i>(En este ejemplo se instala en una unidad USB)</i>.</p>
+
+						<h6>Paso 4:</h6>
+<pre>
+update-grub
+</pre>
+
+
+						<h6>Paso 5:</h6>
+<pre>
+apt-get install install-usb-gui fll-iso2usb
+</pre>
+
+						<h6>Paso 6:</h6>
+							<p> vuelva a arrancar su PC y menu.cfg mostrará el núcleo y los sistema operativos de una manera como esta:</p>
+<div class="screenshot"><img src="../lib/images-common/images-grub2/grub2-os-list.jpg" title="Grub2-OS list" alt="Grub2-OS list" /></div>
+
+							<p>Si se produjera una corrupción o algo fuera mal, vaya a  <a href="sys-admin-grub2-es.htm#chroot">Grub2 sobreescrito o corrupto en MBR</a> </p>
+
+				  <h3>Edición de las opciones de arranque de Grub2 mediante la edición en pantalla</h3>
+<div class="screenshot"><img src="../lib/images-common/images-grub2/grub2-e-1.JPG" title="Grub2-Edit" alt="Grub2-Edit" /></div>
+							<p>Si, por la razón que sea, necesita hacer una alteración temporal de las opciones de arranque en el kernel realtado en Grub2, presione la tecla <span class="highlight-2"> e </span> para editar las opciones del kernel y mediante las teclas de dirección, vaya hasta la línea que desea editar, y a continuación mientras esté en la pantalla de edición haga <span class="highlight-3"> Ctrl+x </span> para arrancar el ordenador con las nuevas opciones que haya cambiado.</p>
+
+							<p>Por ejemplo, para ir directamente a run level 3, añada <span class="highlight-3">3</span> al final de la línea<span class="highlight-3"> linux /boot/vmlinuz</span>.</p>
+
+							<p>Lo que haya editado mediante el editor de pantalla no queda permanentemente. Para hacer cambios que perduren necesitará editar los ficheros apropiados. Vea <a href="sys-admin-grub2-es.htm#grub2-files">los ficheros de Grub 2</a>.</p>
+
+	      </div>
+		<div class="divider" id="multi-os">
+				<h2>Arranque dual y múltiple con Grub 2</h2>
+
+							<p>Ya que Grub2 tiene una configuración modular, permite mediante un comando sencillo buscar cualquier sistema operativo recientemente instalado y si lo encuentra, trata de cambiar el fichero menu.cfg. Esta orden sencilla es:</p>
+<pre>
+update-grub
+</pre>
+							<p>Si usted tiene necesidad de añadir una entrada personalizada al menu.cfg o si 30_os-prober falla al escribir en grub.cfg un cargador de menús, use su editor de textos favorito para hacer correcciones en <span class="highlight-3"> /etc/grub.d/40_custom</span>.</p>
+
+							<p>Ejemplos del fichero 40_custom personalizado:</p>
+<pre>
+menuentry "second mbr"{
+set root=(hd1)
+chainloader +1
+}
+</pre>
+
+<pre>
+menuentry "second partition"{
+set root=(hd0,2)
+chainloader +1
+}
+</pre>
+							<p>Cuando haya hecho los cambios, dé la orden:</p>
+<pre>
+update-grub
+</pre>
+
+							<p>En caso de que avisara de que no conoce el dispositivo de arranque de un disco, ello significaría que el mapa de dispositivos debe ser vuelto a generar.</p>
+
+							<p><span class="highlight-3">Asegúrese de que usted elige una partición en la que no esté el MBR al instalar el otro sistema operativo:</span></p>
+
+<pre>
+grub-mkdevicemap --no-floppy
+update-grub
+</pre>
+							<p>Se pueden ignorar los avisos de forma segura.</p>
+
+							<p>Si cometiera un error, la actualización sobreescribiría probablemente su MBR y necesitaría arreglarlo con <a href="sys-admin-grub2-es.htm#mbr-over-grub2">Grub2 sobreescrito en MBR</a>.</p>
+</div>
+	<div class="divider" id="mbr-over-grub2">
+
+					<h2>Solo volver a escribir grub2 al MBR desde el disco duro:</h2>
+
+<pre>
+/usr/sbin/grub-install --recheck --no-floppy /dev/sda
+</pre>
+						<p>Se debe correr esta línea más de una vez, hasta que esté convencido de que ha quedado grabado.</p>
+
+		<h2>El sector de arranque del MBR ha sido sobre-escrito por Windows, se ha corrompido y/o para recobrar Grub2</h2>
+							<p><span class="highlight-2">NOTA: para restaurar un arrancador Grub2 necesita tener un aptosid.iso 2009-04 (moros) o posterior.</span> <a href="sys-admin-grub2-es.htm#chroot">Alternativamente, use chroot con cualquier live.iso</a>.</p>
+
+							<p>Para volver a escribir el grub2 al MBR y/o para recuperar en general grub 2, necesitará arrancar desde <span class="highlight-3">aptosid.iso</span>:</p>
+						<ol>
+							<li>Para identificar y confirmar sus particiones (p. ej. [h,s]d[a..]X) todas las acciones que siguen necesitan privilegios de super-usuario, así que conviértase en root (#):
+<pre>
+$ sux
+</pre>
+							</li>
+							<li>Cuando ya sea root, escriba:
+<pre>
+fdisk -l
+cat /etc/fstab
+</pre>
+							Esto es para conocer los nombres correctos.
+							</li>
+							<li>Cuando esté seguro de cuál es la partición correcta, cree el punto de montaje:
+<pre>
+mkdir -p /media/[hdxx,sdxx,diskx]
+</pre>
+							</li>
+							<li>Móntelo:
+<pre>
+mount /dev/xdxx /media/xdxx
+</pre>
+							</li>
+
+							<li>Ahora vuelva a escribir Grub en el MBR del primer disco duro (genérico):
+<pre>
+/usr/sbin/grub-install --recheck --no-floppy --root-directory=/media/xdxx /dev/sda
+</pre>
+							</li>
+						</ol>
+	      </div>
+		<div class="divider" id="chroot">
+		      <h2>Uso de chroot para recuperar un Grub corrupto o que ha sido sobreescrito en el MBR</h2>
+
+							<p>Para recuperar Grub si ha sido sobreescrito o ha quedado corrupto en el MBR, establezca un entorno <span class="highlight-3">chroot</span>. <span class="highlight-3">Cualquier disco live.iso será suficiente, ya que chroot le lleva al sistema instalado en su disco duro por lo que puede recuperar la versión de grub apropiada, ya sea grub1 (grub-legacy) o grub2.</span></p>
+
+							<p>Arranque un aptosid.iso CD-live que sea apropiado para su sistema (32 o 64 bits CD, DVD, lápiz USB o tarjeta SSD) y abra la consola. Escriba <span class="highlight-3">sux</span> y presione Intro para tener permisos de root.</p>
+
+							<p>Usando <span class="highlight-3">fdisk -l</span> o <span class="highlight-3">blkid</span>, determine qué partición es la de arranque y tome nota de los nombres correctos. Si prefiere un GUI use <span class="highlight-3">Gparted</span>.</p>
+<pre>
+blkid
+</pre>
+							<p>y para comprobar que fstab coincide con la salida de blkid:</p>
+<pre>
+cat /etc/fstab
+</pre>
+							<p>Supongamos que su sistema de fichero raíz está en <span class="highlight-3">/dev/sda2</span></p>
+<pre>
+mkdir /mnt/aptosid-chroot
+mount /dev/sda2 /mnt/aptosid-chroot
+</pre>
+
+							<p>A continuación necesita montar /proc, /run, /dev y /sys de la siguiente manera:</p>
+<pre>
+mount --bind /proc /mnt/aptosid-chroot/proc
+mount --bind /run /mnt/aptosid-chroot/run
+mount --bind /sys /mnt/aptosid-chroot/sys
+mount --bind /dev /mnt/aptosid-chroot/dev
+mount --bind /dev/pts /mnt/aptosid-chroot/dev/pts
+</pre>
+							<p>Si arranca usando un sistema de particiones EFI también necesitará montarlo. Suponiendo que sea /dev/sda1:</p>
+<pre>
+mount /dev/sda1 /mnt/aptosid-chroot/boot/efi
+</pre>
+
+							<p>Ahora su entorno chroot está establecido, acceda a él mediante:</p>
+<pre>
+chroot /mnt/aptosid-chroot /bin/bash
+</pre>
+
+							<p>Ahora ya puede usar el caché  local de apt o modificar los ficheros que se deban arreglar como si hubiera arrancado en el OS, en este caso para reparar Grub en el MBR.</p>
+
+							<p><span class="highlight-3">Para recuperar Grub 2</span></p>
+<pre>
+apt-get install --reinstall grub-pc
+</pre>
+							<p>Para comprobar que Grub se instaló en la partición o el disco correctos, haga:</p>
+<pre>
+dpkg-reconfigure grub-pc
+</pre>
+							<p><span class="highlight-3">Para recuperar Grub 2 EFI</span></p>
+<pre>
+apt-get install --reinstall grub-efi-amd64
+</pre>
+							<p><span class="highlight-3">Para recuperar Grub 1 (grub-legacy)</span></p>
+<pre>
+apt-get install --reinstall grub-legacy
+</pre>
+							<p>siga las instrucciones del instalador.</p>
+
+							<p>Para liberar el chroot:</p>
+<pre>
+Ctrl+d
+</pre>
+							<p>Vuelva a arrancar su PC.</p>
+
+
+
+
+
+	</div>
+	<div id="rev">Page last revised 21/10/2011 0330 UTC</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,521 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="da" lang="da">
+<head>
+	<title>aptosid Manuals - cfdisk</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body id="part">
+<!-- Last translation revision by ragupo 25/02/2011 1455hrs UTC -->
+<!--htdig_noindex--><div id="menu"> <!-- menu starts here en lang maintained by ragupo-->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="Tilbage til aptosid.com forums og wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-da.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" />Søg online - offline</a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Vælg et andet sprog - Choose another language CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="lang-switch CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-da.htm">aptosid OS Manual</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-da.htm#welcome-gen">aptosid OS Manual &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-da.htm#cred-team">Tak til</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-da.htm#how-to">Hvordan du anvender denne manual &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-da.htm#how-to">Hvordan du anvender denne manual</a></li>
+					  <li><a href="welcome-da.htm#table-contents">Inholdsfortegnelse</a></li>
+					</ul>
+					</li>
+		<li><a href="help-da.htm#help-gen">Sådan får du hjælp &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-da.htm#help-gen">Hvor og hvordan får du hjælp</a></li>
+					  <li><a href="help-da.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-da.htm#welcome-quick">aptosid Hurtig Start Guide</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-da.htm">ISO indhold, udgivelser, filspejle og cd-brænding</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-da.htm#cd-content">ISO indhold og systemkrav &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-da.htm#rolling">Bemærkninger til udgivelsen</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-da.htm#download-aptosid">aptosid filspejle, download og cd-brænding &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-da.htm#md5">md5 Checksum</a></li>
+					  <li><a href="cd-dl-burning-da.htm#burn-nero">cd-brænding i Windows</a></li>
+					  <li><a href="cd-dl-burning-da.htm#burn-linux">cd-brænding i Linux</a></li>
+					  <li><a href="cd-no-gui-burn-da.htm#burning-no-gui">burniso skript</a></li>
+					  <li><a href="cd-no-gui-burn-da.htm#burn-no-gui-gen">cd-brænding uden grafisk brugerflade</a></li>
+					  <li><a href="cd-dl-burning-da.htm#download-aptosid">aptosid download filspejle</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-da.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-da.htm#rootpw">Root-kodeord på aptosid Live ISO</a></li>
+				<li><a href="live-mode-da.htm#live-cd-installsoft">Installering af programmer under Live-ISO</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-da.htm">Terminalen</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-da.htm#term-kon"> Terminal &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-da.htm#term-kon"> Terminalen</a></li>
+					  <li><a href="term-konsole-da.htm#colours"> Farver i terminal-prompten</a></li>
+					  <li><a href="term-konsole-da.htm#cli-help">Hjælp til kommandolinien</a></li>
+					  <li><a href="help-da.htm#init3-tools">Nyttige værktøjer til text mode (tty) - init 3</a></li>
+					  <li><a href="term-konsole-da.htm#term-cmds">Linux Terminal kommando liste</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-da.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-da.htm">CheatCodes</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-da.htm#cheatcodes">aptosid specifikke Live-ISO Cheatcodes</a></li>
+				<li><a href="cheatcodes-da.htm#cheatcodes-linux">Linux generiske Cheatcodes</a></li>
+				<li><a href="cheatcodes-vga-da.htm#vga">VGA Codes</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-da.htm">Partitioning the Hard Drive - Traditional, GPT and LVM</a>
+		    <ul class="sub-menu" id="sm6">
+			  <li><a href="part-gparted-da.htm#hd-ntfs3g">Skriv til NTFS partitioner med ntfs-3g</a></li>
+			<li><a href="part-lvm-da.htm#part-lvm">Partitionering med anvendelse af LVM - Logical Volume Manager</a></li>
+			<li><a href="part-gparted-da.htm#partition">Partitionering med grafisk brugerflade &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-da.htm#partition">Partitionering af din harddisk med GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-da.htm#ntfs">Ændre størrelsen på NTFS partitioner med GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-da.htm#partition">Partitionering fra kommandolinien &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-da.htm#partition">Partitionering af harddisken med cfdisk</a></li>
+					    <li><a href="part-cfdisk-da.htm#formating">Formattering efter partitionering med cfdisk</a></li>
+					    <li><a href="part-gdisk-ca.htm#gdisk-6">Formatting after partitioning with gdisk</a></li>
+					    <li><a href="part-gdisk-da.htm#gdisk-1">GPT Partitioning with gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-da.htm#part-example">Basal partitionering &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-da.htm#part-example">Eksempler på partitionsstørrelser</a></li>
+					  <li><a href="part-uuid-da.htm#uuid">UUID, Genopbygning af fstab og oprettelse af nye monteringspunkter</a></li>
+					  <li><a href="part-cfdisk-da.htm#disknames">Nomenklatur for diske og partitionsnavngivning</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-da.htm">Installations muligheder - HD, USB, VM og Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-da.htm#Inst-prep">Forberedelser til installationen &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-da.htm#Inst-prep">Installations forberedelser</a></li>
+					  <li><a href="hd-install-da.htm#Installation">Installering til harddisken</a></li>
+					  <li><a href="hd-install-da.htm#first-hd-boot">Første opstart</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-da.htm#fromiso">Opstart fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-da.htm#fromiso">Opstart fromiso - Overblik</a></li>
+					  <li><a href="hd-install-opts-da.htm#grub2-fromiso">Opstart 'fromiso' med Grub 2</a></li>
+					  <li><a href="hd-install-opts-da.htm#fromiso-persist">Fromiso og persist</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-da.htm#usb-hd">Installering til USB drev &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-da.htm#usb-hd">Installering til en USB-HD - aptosid specific - aptosid-on-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-da.htm#raw-usb">Installering af aptosid til USB/SSD nøgle fra Linux, MS Windows eller Mac OS X systemer</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-da.htm#install-crypt">Installering på krypterede partitioner - cryptroot</a></li>
+		  <li><a href="nbdboot-da.htm#nbd1">Boote aptosid over netværketk</a></li>
+		  <li><a href="hd-install-vmopts-da.htm#vmopts">Virtual Machine installations muligheder</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-da.htm">Grafikkort, Monitors, Xorg &amp; drivere</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-da.htm#mon-res">Skærmopløsning og monitors  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-da.htm#mon-res">Skærm opløsning og monitors</a></li>
+					  <li><a href="hw-dev-mon-da.htm#xrandr">Dual Monitors og xrandr</a></li>
+					  <li><a href="hw-dev-mon-da.htm#mon-binary">Dual Monitors (med binære drivere)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-da.htm#foss-xorg">GPU drivers &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-da.htm#ati-3d">AMD/ATI 3D drivere</a></li>
+					  <li><a href="gpu-da.htm#intel">Intel 2D and 3D drivere</a></li>
+					  <li><a href="gpu-da.htm#nvidia">Nvidia 3D drivere</a></li>
+					  <li><a href="gpu-da.htm#foss-xorg">Open Source Xorg drivere</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-da.htm#fw-detect">Firmware detection - non-free </a></li>
+			  <li><a href="nf-firm-da.htm#non-free-firmware">Tilføj non-free til kildelisten </a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-da.htm#install-add">Window Managers</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-da.htm">KDE and XFCE Window Managers &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-da.htm#xfce-notes">Nyttige Xfce ekstras</a></li>
+					    <li><a href="wm-dm-da.htm#install-add">Nyttige ekstra KDE Apps</a></li>
+					    <li><a href="wm-dm-da.htm#desk-freeze">Skrivebordet fyser</a></li>
+					    <li><a href="wm-dm-da.htm#kde-login">ingen login i KDE mulig</a></li>
+					    <li><a href="wm-dm-da.htm#ch-th">Ændre Themes</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-da.htm#dm">Installing additional Display Managers</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-da.htm">Internet forbindelse, WiFi, LAN og Netwærk</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-da.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-da.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-da.htm#serv-ftp">FTP klienter</a></li>
+					    <li><a href="lamp-apache-da.htm#serv-sec">Sikkerheds protocoller</a></li>
+					    <li><a href="lamp-apache-da.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-da.htm#serv-mysql">MySQL opsætning</a></li>
+					    <li><a href="lamp-ppp-da.htm#serv-php">PHP i Apache</a></li>
+					    <li><a href="ntp-server-da.htm#ntp-server">Opsætning af timeserver</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-da.htm#privoxy">Firewalls og Privatliv &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-da.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-da.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-da.htm#firewalls">Firewalls</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-da.htm#ssh-x">SSH og Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-da.htm#setup">Samba-Server opsætning</a></li>
+						  <li><a href="samba-da.htm#configure">Konfiguration af SAMBA (Windows)</a></li>
+						  <li><a href="ssh-da.htm#ssh-fs">SSH Remote Mounting</a></li>
+						  <li><a href="ssh-da.htm#ssh-x">X Window Apps via SSH</a></li>
+						  <li><a href="ssh-da.htm#ssh-f">GUI SSH med Konqueror</a></li>
+						  <li><a href="ssh-da.htm#ssh-w">SSH X-Forwarding fra en Windows-PC</a></li>
+						  <li><a href="ssh-da.htm#ssh">SSH og sikkerhed</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-da.htm#netcardconfig">WIFI forbindelser &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-da.htm#netcardconfig">Kom online - Ceni</a></li>
+						    <li><a href="inet-wpagui-da.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-da.htm#net-set1">WiFi - opsætning af WiFi Roaming</a></li>
+						    <li><a href="inet-wpa-da.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-da.htm#hotswitch">Skift imellem kablet og trådløs forbindelse</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-da.htm#netcardconfig">Kablede forbindelser &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-da.htm#dial-mod">56k Modems</a></li>
+						    <li><a href="inet-ceni-da.htm#netcardconfig">kom online - Ceni</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-da.htm#fw-detect">Firmware detection - non-free </a></li>
+		<li><a href="nf-firm-da.htm#non-free-firmware">Tilføj non-free til kildelisten </a></li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-da.htm">Pkke administration og dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-da.htm#apt-cook">APT Cookbook og Sources list &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-da.htm#apt-cook">APT-Guide Cookbook og Sources list</a></li>
+					    <li><a href="sys-admin-apt-da.htm#apt-install">Installation af nye pakker</a></li>
+					    <li><a href="sys-admin-apt-da.htm#apt-delete">Afinstaller pakker</a></li>
+					    <li><a href="sys-admin-apt-da.htm#apt-downgrade">Pakke på Hold og nedgradering</a></li>
+					    <li><a href="sys-admin-apt-da.htm#apt-cache">Søgning efter pakker med apt-cache</a></li>
+					    <li><a href="sys-admin-apt-da.htm#gui-pacsea">Søgning after pakker i GUI</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-da.htm#kern-upgrade">Opdatering af kernel &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-da.htm#kern-remove">Fjernelse af Kernels</a></li>
+					    <li><a href="sys-admin-kern-upg-da.htm#kern-upgrade">Opdatering af kernel</a></li>
+					    <li><a href="sys-admin-kern-upg-da.htm#dmakms">Dynamisk installering af kernel moduler med dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-da.htm#apt-upgrade">Opdatering af installeret systemet -  dist-upgrade - Overblik &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-da.htm#live-cd-upgrade">Opdatering med Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-da.htm#approx">dist-upgrade af flere PCer på et LAN</a></li>
+					    <li><a href="sys-admin-apt-da.htm#apt-upgrade">opdatere et installeret system -  dist-upgrade - Overblik</a></li>
+					    <li><a href="sys-admin-apt-da.htm#du-st">Opdater et installeret system -  dist-upgrade - Trinvis guide</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-da.htm">System Administration</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-da.htm#bois-prep">Opdatering af BIOS med FreeDOS</a></li>
+		<li><a href="vir-rkits-da.htm#virus-rkits">Virus og Rootkit Skannere</a></li>
+		<li><a href="hd-install-da.htm#adduser">Tilføje brugere og kodeord &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-da.htm#adduser">Tilføj en ny bruger</a></li>
+					    <li><a href="sys-admin-gen-da.htm#pw-lost">Mistet root kodeord, nye kodeord</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-da.htm#start-services">Tjenester og init runlevels &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-da.htm#start-services">Tjenester aktiver/deaktiver</a></li>
+					    <li><a href="sys-admin-gen-da.htm#pkill">Killing a service or process</a></li>
+					    <li><a href="sys-admin-gen-da.htm#init">aptosid runlevels - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-da.htm#rsync">Sikkerhedskopi af systemet &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-da.htm#rdiff">Sikkerhedskopi med rdiff</a></li>
+					    <li><a href="sys-admin-rsync-da.htm#rsync">Sikkerhedskopi med rsync</a></li>
+					    <li><a href="home-da.htm#home-bu">Flytte /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-da.htm#fonts">CUPS, Fonte og Lyd &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-da.htm#fonts">Fonte</a></li>
+					     <li><a href="sys-admin-gen-da.htm#cups">CUPS - Print System</a></li>
+					     <li><a href="sys-admin-gen-da.htm#sound">Lyd Mixers</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-da.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-da.htm#chroot">Grub2 - Gneopret Grub med chroot</a></li>
+					    <li><a href="sys-admin-grub2-da.htm#mbr-over-grub2">Grub2 - MBR overskrevet</a></li>
+					    <li><a href="sys-admin-grub2-da.htm#multi-os">Grub2 - Dual og Multibooting</a></li>
+					    <li><a href="sys-admin-grub2-da.htm#grub1-grub2">Grub2 -Opgradering fra Grub1</a></li>
+					    <li><a href="sys-admin-grub2-da.htm#grub2">Grub2 - Overblik</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Sponsored by webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid is proudly hosted by webtropia.com" alt="aptosid is proudly hosted by webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+	<div class="divider" id="disknames">
+		<h2 id="top-header">Disk Navngivning</h2>
+			<h5><span class="highlight-2">ADVARSEL: for disk betegnelser</span><a href="part-uuid-da.htm"> henvises til UUID, Partitions betegnelser og fstab, da aptosid som standard nu anvender UUID</a></h5>
+
+			<h4>Nuværende navngivnings retningslinier</h4>
+
+			<h5>For Diske</h5>
+
+							<p>Siden implementeringen af udev, Universal Unique Identifier's (UUID), og ankomsten af de sidste linux kernels, bliver alle blok enheder designeret tre bogstaver og et nummer, baseret på <span class="highlight-3">sda</span> for disk enheder og <span class="highlight-3">sdaX</span> for hard disk partitioner.</p>
+
+							<p>Uanset hvilken standard de anvender; PATA (IDE), SATA (Serial ATA), eller SCSI, så er den eneste måde at differentiere mellem de forskellige diske på dit system nu ved hjælp af det tredie bogstav i enheden  <span class="highlight-3"> /dev/sda1, /dev/sdb1, /dev/sdc1, /dev/sdd1</span>:, osv.</p>
+
+							<p>Du ser dine enheder oplistet på denne måde, du ser dem også i pop-up når du bevæger musens pil henover media-ikonerne på skrivebordet i aptosid (såvel harddisk installationer som aptosid live-cd'en).</p>
+
+							<p>Du opfordres hermed på det kraftigste til at fremstille en oversigt, enten håndskrevet eller på computeren, hvor du bevarer detallierne for alle dine blok enheder der er på din computer. Selv om dette uden tvivl er trivielt kan det dog spare dig meget tid på et senere tidspunkt.</p>
+
+							<p><span class="highlight-3"> /etc/fstab</span> filen i aptosid under live-cd'en eller harddisk installationer, indeholder <span class="highlight-3"> /dev/ sdaX</span> informationen imellem klammer i den kommenterede linie over hver af enheds linierne. For eksempel (den fede skrift er udelukkende til at tydeliggøre eksemplet). </p>
+<pre>
+# added by aptosid [<b>/dev/sdd1</b>, no label]
+UUID=2ae950df-7d72-4d9b-a71a-bad1eb2d4f6a       /       ext4    defaults,errors=remount-ro,relatime      0 1
+</pre>
+				<h5>For partitioner</h5>
+
+							<p>Som du ser herover gælder der for partitioner at <span class="highlight-3">/dev/disk</span> identifikationen fuldstændiggøres af et nummer. </p>
+
+							<p>Der findes følgende typer partitioner: primære, udvidede og logiske drev, hvor et logisk drev altid er indeholdt i en udvidet partition. Der kan maksimum være 4 primære, eller 3 primære og 1 udvidet partition. Den udvidede partition kan indeholde op til 11 logiske drev. </p>
+
+							<p>Primære eller udvidede partitioner har navne mellem sda1 og sda4. Logiske drev er altid del af en udvidet partition. Du kan definere (med libata) op til 11 sådanne partitioner og deres designation starter på 5 og slutter således på 15 (sda5-sda15)</p>
+
+				<h5>Nogle eksempler</h5>
+
+							<p><span class="highlight-3">/dev/sda5</span> : kan kun være en logisk partition (og i dette tilfælde den første på den udvidede partition), sandynligvis placeret på den første SATA eller den første IDE disk på din computer (afhængigt af din BIOS indstillinger).</p>
+
+							<p><span class="highlight-3">/dev/sdb3</span> kan kun være en primær partition eller en udvidet partition; eftersom bogstavet for denne partition er forskelligt fra den i forgående eksempel kan vi kun konkludere at denne partition ikke er placeret på den samme disk enhed som partitionen i foregående eksempel.</p>
+
+				<h4>Tidligere og nu forældet designering af IDE enheder</h4>
+
+							<p>På ældre linux systemer var IDE disk enhederne (PATA) differentierede fra dem der anvender nudagens standarder ved <span class="highlight-3">hdaX </span> navne i stedet for sdaX.</p>
+
+	<div class="divider" id="partition">
+		<h2>Partitionering af harddiske med cfdisk</h2>
+							<p  class="highlight-2">Til normal brug anbefaler vi filsystemet ext4. Det er standard filsystemet i aptosid, og det er godt vedligeholdt.</p>
+
+							<p>åbn en konsol/ xterm, bliv root-bruger og start cfdisk:
+							<i>(hvis du har installeret til harddisk skal du give dit root password)</i></p>
+<pre >su
+cfdisk /dev/sda
+</pre>
+
+		<h5>Brugerfladen</h5>
+							<p>på den første skærm ser du en liste over de nuværende partitioner med navnene og nogle data for hver partition. I bunden er der nogle kommando knapper. For at skifte mellem partitioner bruger du <b>op og ned piletasterne</b>. For at ændre mellem kommandoer bruger du <b>højre og venstre piletasterne</b></p>
+
+
+		<h5>Slet en partition</h5>
+		<div class="screenshot"><img src="../lib/images-da/cfdisk-da/cfdisk0-da.png" title="Delete a partition" alt="Delete a partition" /></div>
+
+							<p>For at slette en partition, marker den med op/ ned piletasterne, vælg så</p>
+<pre >
+Delete
+</pre>
+							<p>kommandoen med venstre/ højre piletasterne og tast</p>
+<pre >
+Enter
+</pre>
+
+
+		<h5>Opret en ny partition</h5>
+		<div class="screenshot"><img src="../lib/images-da/cfdisk-da/cfdisk1-da.png" title="Create a new partition" alt="Create a new partition" /></div>
+
+							 <p>For at oprette en ny partition bruger du kommandoen:</p>
+<pre >
+New
+</pre>
+							 <p>(vælg den med højre/ venstre piletasterne) og tryk enter. Du skal nu vælge mellem en <b>primær partition</b> eller et <b>logiskd drev</b>. Hvis du vælger at oprette et logisk drev vil programmet automatisk oprette en udvidet partition (extended partition) for dig. Du skal dernæst vælge størrelsen af partitionen (i MB). Hvis ikke du kan give en værdi i MB, returner da til programmets hovedvindue med Esc tasten, og vælg så MB med kommandoen</p>
+<pre >
+Units
+</pre>
+
+
+		<h5>Partitionstyper</h5>
+		<div class="screenshot"><img src="../lib/images-da/cfdisk-da/cfdisk2-da.png" title="Type of a partition 1" alt="Type of a partition 1" /></div>
+
+							<p>For at definere partitionstypen som <b>Linux swap</b> eller <b>Linux</b>, marker partitionen og brug kommandoen:</p>
+<pre >
+Type
+</pre>
+							<p>Så får du en liste over forskellige partitionstyper. Tryk mellemrum og listen udvides. Find det du skal bruge og skriv nummeret i prompten. (<b>Linux swap</b> er type <b>82</b>, <b>Linux</b> filsystemer har typenummer <b>83</b>)</p>
+
+		<div class="screenshot"><img src="../lib/images-da/cfdisk-da/cfdisk3-da.png" title="Type of a partition 2" alt="Type of a partition 2" /></div>
+
+		<h5>Gør en partition bootable</h5>
+						      <p>Der er ikke nogen grund til at gøre en partition bootable for Linux' skyld, men andre operativ systemer kan kræve dette (f. eks. Windows). Marker partitionen og vælg kommandoen:</p>
+<pre >
+Bootable
+</pre>
+
+		<h5>Gem resultaterne til disken</h5>
+							<p>Når du er færdig kan du skrive dine ændringer til disken med 'Write'-kommandoen. Partitionstabellen vil blive gemt på harddisken (hvis du får fejlmeddelser der vedrører dos kan du bare ignorere dem). Da dette vil slette <b>alle</b> data på de partitioner du har ændret eller slettet, skal du lige sikre dig at det virkeligt er hvad du gerne vil gøre, før du faktisk trykker på tasten</p>
+<pre >
+Return
+</pre>
+		<div class="screenshot"><img src="../lib/images-da/cfdisk-da/cfdisk4-da.png" title="Write the result to disk" alt="Write the result to disk" /></div>
+
+		<h5>Afslut</h5>
+							<p>For at afslutte programmet vælger du Quit. Det er vigtigt at du umiddelbart herefter (inden du formatterer partitionerne eller begynder en harddisk installation) genstarter maskinen, således at aptosid kan læse de ændrede partitionstabeller.</p>
+	</div>
+
+	<div class="spacer05"></div>
+	<div class="divider" id="formating">
+		<h2>Formattering af partitioner (efter partitionering med cfdisk)</h2>
+
+		<h5>Alment</h5>
+							<p>En partition skal have et filsystem. Linux har flere forskellige filsystemer der kan anvendes. Der er ReiserFs, Ext4, og for erfarne brugere XFS og JFS. Ext2 formatet er nyttigt til partitioner hvor man opbevarer data (storage format), eftersom der findes en windows driver der gør det muligt at læse harddiske med Ext2 i windows. <a href="http://www.fs-driver.org/">Ext2 Installerbart Fil System til MS Windows</a>.</p>
+
+							<p  class="highlight-2">Til normal anvendelse anbefaler vi Ext4 filsystemet, det er standard filsystemet på aptosid, og det er godt vedligeholdt.</p>
+
+		<h5>Formattering</h5>
+							<p>Efter at have afsluttet <b>cfdisk</b> går vi tilbage til konsollen. For at formattere harddiskene skal du være root. I dette eksempel viser vi hvordan man formatterer / (rod- eller root-partitionen) og /home partitionen <b>hdb1</b>, vi skriver: <i>(hvis du er på en harddisk installation skal du indtaste dit root password her)</i></p>
+<pre >su
+mkfs -t ext4 /dev/hdb1
+</pre>
+
+							<p>Der kommer et spørgsmål som du besvarer med ja hvis du er helt sikker på at du har valgt den rette partition.</p>
+
+							<p>Når kommandoen er udført får du en besked om at ext4 formatteringen var vellykket. Hvis ikke du får denne besked er der sikkert noget der er gået galt med partitioneringen med cfdisk, eller hdb1 er måske ikke en linux partition. Du kan efterprøve med denne kommando</p>
+<pre >
+fdisk -l /dev/hdb
+</pre>
+
+							<p>om noget er galt og så eventuelt partitionere igen.</p>
+
+							<p>Hvis formatteringen var vellykket skal du igennem den samme procedure for en /home partition, -forudsat at du gerne vil have en separat /home partition.</p>
+
+							<p>Til sidst formatterer vi swap partitionen, i dette eksempel hdb3:</p>
+<pre >
+mkswap /dev/hdb3
+</pre>
+
+							<p>efter dette kommandoen:</p>
+
+<pre >
+swapon /dev/hdb3
+</pre>
+
+							 <p>Nu efterprøver vi om swap bliver genkendt med kommandoen:</p>
+<pre >
+swapon -s
+</pre>
+							  <p>Den nye, monterede swap burde nu genkendes, i dette tilfælde som:</p>
+
+	<table class="center">
+		<tbody>
+			<tr>
+				<th>Filename</th>
+				<th>Type</th>
+				<th>Size</th>
+				<th>Used</th>
+				<th>Priority</th>
+			</tr>
+			<tr>
+				<td>/dev/hdb3</td>
+				<td>partition</td>
+				<td>995988</td>
+				<td>248632</td>
+				<td>-1</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="spacer02"></div>
+							<p>Hvis swap blev genkendt korrekt, giver vi kommandoen</p>
+<pre >
+swapoff -a
+</pre>
+							<p>og genstarter maskinen.</p>
+
+
+							<p>Du er nu parat til at starte installationen.</p>
+
+		<div id="rev">Content last revised 14/08/2010 0100 UTC</div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,628 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>Manuel d'aptosid - rsync</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body id="welcome">
+<!-- last translation by LjanA 2010.09.28 -->
+<!--htdig_noindex--><div id="menu"> <!-- menu starts here fr lang maintained by alphad, LjanA-->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="Vers aptosid.com, forum et wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-fr.htm#search-on"><img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" /> Rechercher</a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Choisir une autre langue - Choose another language CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="lang-switch CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-fr.htm">Manuel du système aptosid</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-fr.htm#welcome-gen">Manuel du système aptosid &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-fr.htm#cred-team">Contributeurs</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-fr.htm#how-to">Guide de l'utilisateur &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-fr.htm#how-to">Guide de l'utilisateur</a></li>
+					  <li><a href="welcome-fr.htm#table-contents">Table des matières</a></li>
+					</ul>
+					</li>
+		<li><a href="help-fr.htm#help-gen">Trouver de l'aide &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-fr.htm#help-gen">Où trouver de l'aide</a></li>
+					  <li><a href="help-fr.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-fr.htm#welcome-quick">Utiliser aptosid rapidement</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-fr.htm">Contenu de l'ISO, Versions, Téléchargement, Miroirs &amp; Gravure</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-fr.htm#cd-content">Contenu de l'ISO &#8211; Matériel minimal requis  &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-fr.htm#rolling">Notes de publication</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-fr.htm#download-aptosid">Miroirs aptosid &#8211; Téléchargement &#8211; Gravure &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-fr.htm#md5">md5 (somme de contrôle)</a></li>
+					  <li><a href="cd-dl-burning-fr.htm#burn-nero">Graver sous Windows</a></li>
+					  <li><a href="cd-dl-burning-fr.htm#burn-linux">Graver sous Linux</a></li>
+					  <li><a href="cd-no-gui-burn-fr.htm#burning-no-gui">Script burniso</a></li>
+					  <li><a href="cd-no-gui-burn-fr.htm#burn-no-gui-gen">Graver depuis un terminal</a></li>
+					  <li><a href="cd-dl-burning-fr.htm#download-aptosid">Miroirs de téléchargement aptosid</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-fr.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-fr.htm#rootpw">Mot de passe root en mode Live</a></li>
+				<li><a href="live-mode-fr.htm#live-cd-installsoft">Installer des logiciels en mode Live</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-fr.htm">Terminal / Konsole</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-fr.htm#term-kon">Terminal / Konsole &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-fr.htm#term-kon">Terminal / Konsole</a></li>
+					  <li><a href="term-konsole-fr.htm#colours"> prompt coloré dans un terminal </a></li>
+					  <li><a href="term-konsole-fr.htm#cli-help">Aide sous Terminal / Konsole</a></li>
+					  <li><a href="help-fr.htm#init3-tools">Outils utiles en mode texte (tty) &#8211; init 3</a></li>
+					  <li><a href="term-konsole-fr.htm#term-cmds">Liste de commandes sous BASH</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-fr.htm#sux">sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-fr.htm">Codes de démarrage</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-fr.htm#cheatcodes">Codes spécifiques à aptosid en mode Live</a></li>
+				<li><a href="cheatcodes-fr.htm#cheatcodes-linux">Codes génériques pour Linux</a></li>
+				<li><a href="cheatcodes-vga-fr.htm#vga">Codes VGA</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-fr.htm">Partitionner le disque dur - Traditionel, GPT et LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-fr.htm#hd-ntfs3g">Utiliser une partition NTFS grâce à ntfs-3g</a></li>
+			<li><a href="part-lvm-fr.htm#part-lvm">Partitionner pour utiliser LVM - Gestionnaire de Volumes Logiques</a></li>
+			<li><a href="part-gparted-fr.htm#partition">&#8230;dans un environnement graphique &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-fr.htm#partition">&#8230;avec GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-fr.htm#ntfs">Redimensionner une partition NTFS avec GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-fr.htm#partition">&#8230;en mode texte (CLI) &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-fr.htm#partition">&#8230;avec cfdisk</a></li>
+					    <li><a href="part-cfdisk-fr.htm#formating">Formater une partition créée avec cfdisk</a></li>
+					    <li><a href="part-gdisk-fr.htm#gdisk-6">Formater après partitionnement avec gdisk</a></li>
+					    <li><a href="part-gdisk-fr.htm#gdisk-1">GPT : partitionnement avec gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-fr.htm#part-example">Partitionner  &#8211; Concepts de base &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-fr.htm#part-example">Tailles des partitions  &#8211; Exemples</a></li>
+					  <li><a href="part-uuid-fr.htm#uuid">UUID, Modifier fstab et créer de nouveaux points de montage</a></li>
+					  <li><a href="part-cfdisk-fr.htm#disknames">Noms des disques et partitions</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-fr.htm">Choix du type d'installation &#8211; HD, USB, VM and Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-fr.htm#Inst-prep">Préparer l'installation &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-fr.htm#Inst-prep">Préparer l'installation </a></li>
+					  <li><a href="hd-install-fr.htm#Installation">Installer sur le disque dur (HD)</a></li>
+					  <li><a href="hd-install-fr.htm#first-hd-boot">Au premier démarrage</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-fr.htm#fromiso">Démarrer en mode ''fromiso'' &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-fr.htm#fromiso">''fromiso'' Généralités</a></li>
+					  <li><a href="hd-install-opts-fr.htm#grub2-fromiso">Démarrer ''fromiso'' avec grub2</a></li>
+					  <li><a href="hd-install-opts-fr.htm#fromiso-persist">''fromiso'' and persistance</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-fr.htm#usb-hd">Installer sur USB-HD &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-fr.htm#usb-hd">Installer sur disque USB &#8211; aptosid sur une clé USB</a></li>
+					  <li><a href="hd-ins-opts-oos-fr.htm#raw-usb">Installer aptosid sur une clé USB/carte SSD à partir de systèmes Linux, MS-Windows ou Mac-OS-X</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-fr.htm#install-crypt">Installation sur partitions cryptées - cryptroot</a></li>
+		  <li><a href="nbdboot-fr.htm#nbd1">Démarrer aptosid à partir d'un réseau</a></li>
+		<li><a href="hd-install-vmopts-fr.htm#vmopts">Choix d'installation sur une machine virtuelle</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-fr.htm">Cartes graphiques &#8211; Moniteurs &#8211; Xorg &#8211; Pilotes divers</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-fr.htm#mon-res">Définition des écrans &#8211; Moniteurs  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-fr.htm#mon-res">Définition des écrans &#8211; Moniteurs</a></li>
+					  <li><a href="hw-dev-mon-fr.htm#xrandr">Deux moniteurs &#8211; xrandr</a></li>
+					  <li><a href="hw-dev-mon-fr.htm#mon-binary">Deux moniteurs &#8211; outils binaires</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-fr.htm#foss-xorg">Drivers cartes graphiques&#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-fr.htm#ati-3d">Drivers AMD/ATI 3D</a></li>
+					  <li><a href="gpu-fr.htm#intel">Drivers Intel 2D and 3D</a></li>
+					  <li><a href="gpu-fr.htm#nvidia">Drivers Nvidia 3D</a></li>
+					  <li><a href="gpu-fr.htm#foss-xorg">Drivers Open Source Xorg</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-fr.htm#fw-detect">Détection de Firmware non-libre</a></li>
+			  <li><a href="nf-firm-fr.htm#non-free-firmware">Ajouter non-free aux Sources List</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-fr.htm">Gestionnaire de fenêtres</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-fr.htm">KDE and XFCE Gestionnaire de fenêtres &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-fr.htm#xfce-notes">Applications supplémentaires utiles pour Xfce</a></li>
+					    <li><a href="wm-dm-fr.htm#install-add">Applications supplémentaires utiles pour KDE</a></li>
+					    <li><a href="wm-dm-fr.htm#desk-freeze">Écran gelé</a></li>
+					    <li><a href="wm-dm-fr.htm#kde-login">Ouverture de session impossible (login) dans KDE</a></li>
+					    <li><a href="wm-dm-fr.htm#ch-th">Changer les fonds d'écran</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-fr.htm#dm">Installation de gestionnaires d'affichage supplémentaires</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-fr.htm">Internet &#8211; WiFi &#8211; LAN &#8211; Réseaux</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-fr.htm">Suite LAMP aptosid &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-fr.htm#serv-apache">Suite LAMP aptosid</a></li>
+					    <li><a href="lamp-apache-fr.htm#serv-ftp">Clients FTP</a></li>
+					    <li><a href="lamp-apache-fr.htm#serv-sec">Protocoles de sécurité</a></li>
+					    <li><a href="lamp-apache-fr.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-fr.htm#serv-mysql">Configurer MySQL </a></li>
+					    <li><a href="lamp-ppp-fr.htm#serv-php">Support PHP dans Apache</a></li>
+					    <li><a href="ntp-server-fr.htm#ntp-server">Configurer le serveur d'horloge (timeserver)</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-fr.htm#tor">Pare-feu &#8211; Confidentialité &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-fr.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-fr.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-fr.htm#firewalls">Pare-feu</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-fr.htm#ssh-x">SSH &#8211; Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-fr.htm#setup">Configurer un serveur Samba</a></li>
+						  <li><a href="samba-fr.htm#configure">Configurer SAMBA (MS-Windows)</a></li>
+						  <li><a href="ssh-fr.htm#ssh-fs">Montage d'un répertoire à distance via SSH</a></li>
+						  <li><a href="ssh-fr.htm#ssh-x">Application X via SSH</a></li>
+						  <li><a href="ssh-fr.htm#ssh-f">Environnement graphique pour SSH via Dolphin</a></li>
+						  <li><a href="ssh-fr.htm#ssh-w">Transmission de X via SSH depuis un PC MS-Windows</a></li>
+						  <li><a href="ssh-fr.htm#ssh">SSH et Sécurité</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-fr.htm#netcardconfig">Connections WIFI &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-fr.htm#netcardconfig">Se connecter au réseau &#8211; Ceni</a></li>
+						    <li><a href="inet-wpagui-fr.htm#wpa-roaming-gui">WiFi &#8211; WPA_GUI</a></li>
+						    <li><a href="inet-setup-fr.htm#net-set1">WiFi &#8211; Configurer une connexion itinérante (roaming) WiFi</a></li>
+						    <li><a href="inet-wpa-fr.htm#wpa">WiFi &#8211; wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-fr.htm#hotswitch">Alterner entre les réseaux WiFi et câblés</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-fr.htm#netcardconfig">Connexions câblées &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-fr.htm#dial-mod">Modems 56k </a></li>
+						    <li><a href="inet-ceni-fr.htm#netcardconfig">Se connecter au réseau &#8211; Ceni</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-fr.htm#fw-detect">Détection de Firmware non-libre</a></li>
+		<li><a href="nf-firm-fr.htm#non-free-firmware">Ajouter non-free aux Sources List</a></li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-fr.htm">Gestion de paquets &#8211; Mise à niveau (dist-upgrade)</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-fr.htm#apt-cook">Guide APT &#8211; Liste des dépôts de paquets &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-fr.htm#apt-cook">Guide APT &#8211; Liste des dépôts de paquets</a></li>
+					    <li><a href="sys-admin-apt-fr.htm#apt-install">Installer un nouveau paquet</a></li>
+					    <li><a href="sys-admin-apt-fr.htm#apt-delete">Supprimer un paquet</a></li>
+					    <li><a href="sys-admin-apt-fr.htm#apt-downgrade">Geler un paquet &#8211; Dégradation de paquet</a></li>
+					    <li><a href="sys-admin-apt-fr.htm#apt-cache">Recherche de paquets via apt-cache</a></li>
+					    <li><a href="sys-admin-apt-fr.htm#gui-pacsea">Recherche de paquets en mode GUI</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-fr.htm#kern-upgrade">Mise à niveau du noyau &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-fr.htm#kern-remove">Supprimer des noyaux</a></li>
+					    <li><a href="sys-admin-kern-upg-fr.htm#kern-upgrade">Mise à niveau du noyau</a></li>
+					    <li><a href="sys-admin-kern-upg-fr.htm#dmakms">Installer des modules de noyau dynamiquement via dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-fr.htm#apt-upgrade">Mise à niveau d'un système (dist-upgrade) &#8211; Vue d'ensemble &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-fr.htm#live-cd-upgrade">Mise à niveau depuis un Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-fr.htm#approx">Mise à niveau de plusieurs ordinateurs connectés</a></li>
+					    <li><a href="sys-admin-apt-fr.htm#apt-upgrade">Mise à niveau d'un système (dist-upgrade) &#8211; Vue d'ensemble</a></li>
+					    <li><a href="sys-admin-apt-fr.htm#du-st">Les étapes d'une mise à niveau d'un système</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-fr.htm">Administration du système</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-fr.htm#bois-prep">Mise à niveau du BIOS via FreeDOS</a></li>
+		<li><a href="vir-rkits-fr.htm#virus-rkits">Scanneurs de virus et de rootkits</a></li>
+		<li><a href="hd-install-fr.htm#adduser">Ajouter un utilisateur &#8211; Mots de passe &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-fr.htm#adduser">Ajouter un utilisateur</a></li>
+					    <li><a href="sys-admin-gen-fr.htm#pw-lost">Perte du mot de passe root &#8211; Nouveau mot de passe</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-fr.htm#start-services">Services (démons) &#8211; init &#8211; Niveaux d'exécution &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-fr.htm#start-services">Activer / Désactiver des services (démons)</a></li>
+					    <li><a href="sys-admin-gen-fr.htm#pkill">terminer un service ou un processus</a></li>
+					    <li><a href="sys-admin-gen-fr.htm#init">Niveaux d'exécution aptosid &#8211; init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-fr.htm#rsync">Sauvegarder le système (OS) &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-fr.htm#rdiff">Sauvegarder via rdiff</a></li>
+					    <li><a href="sys-admin-rsync-fr.htm#rsync">Sauvegarder via rsync</a></li>
+					    <li><a href="home-fr.htm#home-bu">Déplacer une partition /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-fr.htm#fonts">CUPS, Polices de caractères &amp; Son &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-fr.htm#fonts">Polices de caractères </a></li>
+					     <li><a href="sys-admin-gen-fr.htm#cups">CUPS &#8211; Gestion des imprimantes</a></li>
+					     <li><a href="sys-admin-gen-fr.htm#sound">Mixeurs de son (Sound Mixers)</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-fr.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-fr.htm#chroot">Grub2 - Récupération de Grub via un chroot</a></li>
+					    <li><a href="sys-admin-grub2-fr.htm#mbr-over-grub2">Grub2 &#8211; Secteur d'amorçage (MBR) écrasé</a></li>
+					    <li><a href="sys-admin-grub2-fr.htm#multi-os">Grub2 &#8211; Démarrage de plusieurs systèmes (OS)</a></li>
+					    <li><a href="sys-admin-grub2-fr.htm#grub1-grub2">Grub2 &#8211; Mise à niveau depuis Grub1</a></li>
+					    <li><a href="sys-admin-grub2-fr.htm#grub2">Grub2 &#8211; Vue d'ensemble</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Sponsored by webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid is proudly hosted by webtropia.com" alt="aptosid is proudly hosted by webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+	<div class="divider" id="rsync">
+			<h2 id="top-header">Sauvegarder avec rsync</h2>
+<!--- ###
+							<p>rsync is a tool used to backup and synchronise your files. (It can be run on a variety of *nix ports).</p>
+
+							 <p class="highlight-2">Une limitation de Rsync réside dans son INCAPACITÉ à copier des fichiers d'une machine distante à une autre machine distante. Pour ce faire, il vous faudrait copier la source sur votre système local en préalable, pour l'adresser ensuite à la seconde machine distante.</p>
+
+							 <p>With aptosid you have choices how to initiate the proccess, DIY or via a deb package in Debian sid:</p>
+
+				<h5>For the deb package:</h5>
+<pre>
+apt-get install luckybackup
+</pre>
+							<p><a href="http://luckybackup.sourceforge.net/">Homepage of luckybackup.</a></p>
+
+### --->
+							<p>rsync est un outil utilisé pour sauvegarder et synchroniser vos fichiers. (Il peut être utilisé sur une variété de ports *nix ).</p>
+
+							 <p class="highlight-2">Une limitation de Rsync réside dans son INCAPACITÉ à copier des fichiers d'une machine distante à une autre machine distante. Pour ce faire, il vous faudrait copier la source sur votre système local en préalable, pour l'adresser ensuite à la seconde machine distante.</p>
+
+							 <p>Avec aptosid vous avez le choix sur la façon d'initier le processus, par vous-mêle ou via un paquet deb dans Debian sid: luckybackup</p>
+
+				<h5>Pour le paquet deb luckybackup:</h5>
+<pre>
+apt-get install luckybackup
+</pre>
+							<p><a href="http://luckybackup.sourceforge.net/">Page d'accueil de luckybackup.</a></p>
+
+<!--- ####
+				    <h6>What follows from here is the DIY version</h6>
+#### --->
+				    <h6>Ce qui suit concerne la manipulation par vous-même de rsync</h6>
+
+							<p>Ce qui suit vous apporte quelques connaissances pratiques sur ce que peut faire rsync et quelques exemples de codes utilisables dans vos propres scripts de sauvegarde.</p>
+
+							<p>rsync est un programme de sauvegarde de fichiers particulièrement facile à utiliser ; il permet des sauvegardes rapides des fichiers et répertoires. C'est possible grâce à l'utilisation de routines particulièrement astucieuses, vérifiant si les fichiers ont pu être modifiés, et sélectionnant pour le traitement et la copie, les seuls objets qui l'aient effectivement été. Rsync utilise aussi un outil de compression accélérant le processus de duplication <span class=" highlight-3">(lorsqu'on lui adresse explicitement l'option -z)</span>. Voici quelques détails de son fonctionnement:</p>
+
+							<p>Le programme rsync détecte les fichiers et répertoires qu'il est nécessaire de copier en vérifiant si certains de leurs attributs ont changé (par exemple leur dernière date/heure de modification, ou leur taille), et si c'est le cas en déduit qu'il s'agit de quelque chose qui n'a pas été sauvegardé auparavant. Ce processus de sélection est particulièrement rapide.</p>
+
+							<p>Lorsque rsync a achevé la création de la liste à utiliser, la copie des fichiers/répertoires modifiés est réalisée très vite parce qu'une routine de compression s'exécute durant le processus de copie, avant l'envoi, et que c'est une fois les copies reçues à leur adresse de destination, qu'elles sont décompressées "à la volée".</p>
+
+							 <p>rsync peut dupliquer des fichiers:<br />
+							* d'un système local vers lui-même,<br />
+ 							* d'un système local vers une machine distante,<br />
+							* d'une machine distante vers une machine locale.</p>
+
+							<p>Il utilise indifférament le client <a href="ssh-fr.htm">ssh</a> par défaut, ou un démon rsync activé sur chacune des machines utilisée, machine source et machine cible. Ses pages man précisent, que si vous êtes en mesure de vous connecter à un système en utilisant ssh, rsync le pourra aussi.</p>
+
+							<p class="highlight-3">Une limitation de Rsync réside dans son INCAPACITÉ à copier des fichiers d'une machine distante à une autre machine distante. Pour ce faire, il vous faudrait copier la source sur votre système local en préalable, pour l'adresser ensuite à la seconde machine distante.</p>
+
+							<p>Pour fournir un exemple de cette logique, imaginons disposer de trois ordinateurs;</p>
+
+<pre>
+neo – notre système local
+morpheus – une machine distante
+trinity – une autre machine distante
+</pre>
+
+
+							<p>Vous voulez utiliser rsync à copier, synchroniser les répertoires de données inclus dans /home/utilisateur/repertoire_de_donnees de plusieurs machines entre elles. Chaque système "appartient à" un utilisateur spécifique, en d'autres mots un utilisateur précis utilise tel ou tel système précis, qui est sensé être utilisé comme "source" pour les deux autres machines. Vous allez donc devoir lancer la commande rsync sur le système "local" de départ seulement, que nous avons appelé neo :</p>
+
+
+<pre>
+l'utilisateur principal de neo est cuddles
+l'utilisateur principal de morpheus est tartie
+l'utilisateur principal de trinity est taylar
+</pre>
+
+							<p>Récapitulons : ce que nous voulons est sauvegarder et/ou synchroniser les données suivantes :</p>
+
+<pre>
+le contenu de /home/cuddles/repertoire_de_donnees de neo
+ vers morpheus et trinity,
+le contenu de /home/tartie/repertoire_de_donnees de morpheus
+ vers neo et trinity,
+le contenu de /home/taylar/repertoire_de_donnees de trinity
+ vers neo et morpheus.
+</pre>
+
+							<p>Le problème avec rsync, du fait de son impossibilité à synchroniser d'une machine distante à une autre, va se poser au moment de sauvegarder trinity vers morpheus ou morpheus vers trinity.</p>
+
+<pre>
+neo --> morpheus – c'est bon, local vers machine distante
+neo --> trinity – c'est bon, local vers machine distante
+morpheus --> neo – c'est bon, machine distante vers locale
+trinity --> neo – c'est bon, machine distante vers locale
+morpheus --> trinity – machine distante vers machine distante
+				 – ne marchera pas
+trinity --> morpheus – machine distante vers machine distante
+				 – ne marchera pas
+</pre>
+
+							<p>Pour résoudre cette limitation, il va falloir légèrement modifier le schéma de rsync. Nous allons réaliser ceci :</p>
+
+<pre>
+morpheus --> trinity – deviendra: morpheus --> neo &amp; neo --> trinity
+trinity --> morpheus – deviendra: trinity --> neo &amp; neo --> morpheus
+</pre>
+
+							<p>Nous créerons donc une étape supplémentaire qui, considérant que toute manière, nous voulons que l'intégralité des données soit bien présente sur la machine neo, ne revient qu'à un changement de source, sans incidence sur le résultat voulu. Cela va nous garantir que toutes nos sauvegardes soient bonnes et que rien n'y manque.</p>
+
+							<p class="highlight-3">Prenez bien en compte cette limitation de rsync lorsque vous concevez vos procédures de sauvegardes et synchronisation avec cet outil.</p>
+
+	<h5>Utiliser la syntaxe nom d'hôte à nom d'hôte avec rsync.</h5>
+
+							<p>Comme il est décrit plus haut, utiliser neo, morpheus ou trinity en lieu et place de leurs adresses IP physiques, est une méthode propre et facile pour rendre les choses plus lisibles. Pouvoir utiliser la syntaxe nom d'hôte à nom d'hôte avec rsync s'obtient facilement.</p>
+
+							<p>Quand vous éditerez le fichier /etc/hosts, pour ajoûter aux adresses IP les noms d'hôtes qui y correspondent, vous écrirez dans les lignes supérieures du fichier ces traductions :</p>
+
+<pre>
+192.168.1.15	 neo
+192.168.1.16	 morpheus
+192.168.1.17	 trinity
+</pre>
+
+							<p>La première ligne traduit l'adresse IP 192.168.1.15 en "neo", la deuxième 192.168.1.16 en “morpheus”, et la troisième 192.168.1.17 en “trinity”. Après l'édition et la sauvegarde du fichier /etc/hosts, vous allez ainsi pouvoir indifférament utiliser les IP ou les noms d'hôtes. Vous en comprendrez l'intérêt quand par exemple vous changerez l'IP d'une machine. Imaginons que vous changiez celle de neo de 192.168.1.15 en 192.168.1.25 </p>
+
+							<p>Si tous vos scripts utilisent l'IP, vous devrez les localiser tous et y modifier l'adresse IP. Si vos scripts usent de noms d'hôtes, seuls les fichiers /etc/hosts nécessiteront d'être réédités, pour que tous vos scripts continuent à fonctionner. C'est particulièrement pratique lorsque vous gérez beaucoup de scripts utilisant des connexions distantes. Ceci d'autre part rend vos scripts bien plus lisibles.</p>
+
+
+
+		<h4>rsync, et les deux façons de l'utiliser.</h4>
+
+							<p>La première méthode avec rsync <b>"pousse"</b> les fichiers vers une cible, et la seconde les <b>"tire"</b> depuis une source. Chacune à ses avantages et ses inconvénients. Voyons ce qu'il en est pour chacune au travers d'une explication dans laquelle nous supposerons qu'une des machine est locale et l'autre distante, afin de rendre les choses plus explicites.</p>
+
+							<p><b>"pousser"</b> - le système de fichiers local héberge les fichiers et répertoires sources, et la cible est une machine distante. La commande rsync est lancée depuis le système local, et pousse les données vers la machine distante.</p>
+
+							<p>Les avantages:<br />
+							*Vous pouvez faire les sauvegardes de plusieurs systèmes vers une cible.<br />
+							*Le processus de sauvegarde est réparti sur chaque machine et pas sur une seule qui l'assurerait à elle seule.<br />
+							*Si un système est plus rapide qu'un autre, il peut finir rapidement et être opérationnel pour d'autres tâches.</p>
+
+							<p>Les inconvévients:<br />
+							*Si vous utilisez un script programmé avec cron, vous allez devoir mettre-à-jour et changer les crontabs de tous les systèmes en jeu, ainsi que chacune des versions locales du script.<br />
+							*Votre procédure de sauvegarde n'a aucun moyen de détecter si la partition cible du système distant est effectiment montée, et pourrait dans certains cas ne rien sauvegarder sur la cible.</p>
+
+
+							<p><b>"Tirer"</b> - Le système distant héberge les fichiers et répertoires sources et la cible est la machine locale. La commande est lancée depuis la machine locale qui "tire" les données de la machine distante.</p>
+
+							<p>Les avantages:<br />
+							*Un système unique est dédié au contrôle des sauvegardes de toutes les machines du réseau : il s'agit donc de sauvegarde dite centralisée. <br />
+							*Si vous utilisez un script, il n'existe que sur une seule machine, et sa configuration, mise-à-jour et modification en sont d'autant plus simplifiées. Dans la même logique un seul fichier crontab contrôle la programmation chronologique de l'exécution du script.<br />
+							*Le script dispose des moyens de vérifier et monter si c'est nécessaire, le système de fichiers de la partition cible.</p>
+
+
+
+	<h6>Syntaxe de rsync, telle que décrite dans ses pages man:</h6>
+<pre>
+       rsync [OPTION]... SRC [SRC]... DEST
+
+       rsync [OPTION]... SRC [SRC]... [USER@]HOST:DEST
+
+       rsync [OPTION]... SRC [SRC]... [USER@]HOST::DEST
+
+       rsync [OPTION]... SRC [SRC]... rsync://[USER@]HOST[:PORT]/DEST
+
+       rsync [OPTION]... SRC
+
+       rsync [OPTION]... [USER@]HOST:SRC [DEST]
+
+       rsync [OPTION]... [USER@]HOST::SRC [DEST]
+
+       rsync [OPTION]... rsync://[USER@]HOST[:PORT]/SRC [DEST]
+</pre>
+
+			<h5>Exemple opérationnel de commandes rsync:</h5>
+
+<pre>
+rsync -agEvz --delete-after --exclude=”*~” morpheus:/home/tartie /media/sda7/SysBackups/morpheus/home
+</pre>
+
+							<p>Voyons ensemble des parties de cette commande:</p>
+
+
+<pre>
+le chemin des fichiers sources est: morpheus:/home/tartie
+et celui de la cible: /media/sda7/SysBackups/morpheus/home
+</pre>
+
+							<p>tout le contenu de /home/tartie... va être sauvegardé dans /media/sda7/SysBackups/morpheus/home, donnant un résultat comme ceci :</p>
+
+<pre>
+/media/sda7/SysBackups/morpheus/home/tartie...
+</pre>
+
+							<p>il est à noter que la seule raison qui place /tartie dans /home provienne de la syntaxe de désignation de la CIBLE et non de celle de la SOURCE. la "source" ne sélectionne que d'où viennent les données et pas où elles vont aller. C'est la "cible" qui désigne à rsync où copier, les données qu'il récupère de la "source". Voyens cet exemple :</p>
+
+
+<pre>
+rsync [...] /home/user/data/files /media/sda7/SysBackups/neo
+</pre>
+
+
+							<p>Dans la commande ci-dessus, seul le répertoire source /files et ce qu'il contient, sera copié sous le répertoire cible /neo, et nous n'obtiendrons pas /media/sda7/SysBackups/neo/home/user/data/files </p>
+
+							<p>Soyez attentif à ces considérations lorsque vous créez vos commandes de sauvegarde avec rsync.</p>
+
+		<h5>Explications sur les options:</h5>
+
+<pre>
+-a est utilisé pour mode archive. Dans les pages man, l'option est expliquée “en termes simples, une façon de sauvegarder en mode récursif, et de préserver 'pratiquement' tout. Il est mentionné que cette option ne préserve pas les liens durs en raison de la complexité du processus.
+L'option -a est considérée comme un équivalent à : -rlptgoD qui signifie:
+-r = recursif – traite les sous-répertoires et fichiers trouvés dans la source.
+-l = liens – quand des liens symboliques sont rencontrés, les re-crée sur la cible.
+-p = permissions – commande à rsync de fixer les mêmes permissions que celles de la source.
+-t = temps – commande à rsync de régler l'heure de la cible en fonction de celle de la source.
+-q = quiet=silencieux – commande à rsync d'afficher le minimum de texte. L'option pour le mode verbeux est -v.
+-o = owner=propriétaire – commande à rsync, que bien qu'il soit lancé par root, il doive fixer aux données de la cible les mêmes propriétaires qu'à ceux de la source.
+-D = équivaut à l'addition de ces deux commandes: --devices --specials
+ --devices = fait en sorte que rsync transfère les caractères et fichiers de périphériques bloc du système distant en sorte de pouvoir recréer ces périphériques. Malheureusement, si vous n'utilisez pas également l'option  --super dans la même commande, cela sera sans effet.
+ --specials = fait en sorte que rsync transfère les fichiers spéciaux comme les noms de sockets et fifos.
+-g est utilisé pour préserver les permissions de “groupe” de la source vers la cible.
+-E est utilisé pour préserver les permissions d'"exécution" de la source vers la cible.
+-v est utilisé pour accroître la loquacité de ce qui sera affiché durant l'opération. Après s'être assuré de bien sauvegarder ce que nous voulons, on pourra enlever ce "v". Il est mentionné ici, car s'il on lance ce processus à partir d'un cron, il est souvent utile de "voir" ce qui se fait. Ce sera à vous de décider s'il faut oui ou non, utiliser cette option.
+-z est utilisé pour compresser les données à transférer ou copier, rendant le processus de copie plus rapide puisqu'influant sur le volume du transfert.
+--delete-after=effacer-après = les fichiers/répertoires qui ne seraient plus dans la source sont effacés après le transfert, et pas avant. Ce "after" est utilisé en cas de crash ou de problèmes, et "effacer" est utilisé pour prévenir que des fichiers n'existant plus sur le système source ne viennent corrompre la cible.
+--exclude = une syntaxe qui permet d'exclure certains fichiers ou répertoire du processus. par exemple, --exclude=“*~” excluerait TOUT fichier ou répertoire dont le nom se terminerait par un tilde du processus de sauvegarde. Un seul et unique schéma d'exclusion est admissible avec l'option --exclude, et donc si vous voulez en utiliser plusieurs, il vous faudra ajoûter autant de lignes --exclude que nécessaires dans votre commande.
+</pre>
+
+							<p>En complément, voici quelques autres options de commandes utiles:</p>
+
+<pre>
+-c – ajoûte un nouveau niveau de vérification des sources, au moment de leur comparaison à la copie sur la cible après l'achèvement du processus ; ceci conduit le processus de copie à prendre plus de temps, et rsync opérant systématiquement des vérifications, il s'agit d'une forme de redondance, conduisant à ne pas recourir a priori à cette option.
+--super – comme la page man le décrit, la machine receptrice tentera des opérations d'administration réservées au super-utilisateur
+--dry-run – littéralement "lancement à sec", autrement dit, vous retournera ce qui aurait été transféré en cas de commande effective, comme le font par exemple les commandes apt-get install ou apt-get dist-upgrade, quand on leur adresse l'option -s.
+</pre>
+
+							<p>Notre commande se termine systématiquement par l'adresse du répertoire source que suit celle du répertoire cible.</p>
+
+			<h5>Exemples de commandes:</h5>
+
+<pre>
+rsync -agEvz --delete-after --exclude=”*~” morpheus:/home/tartie /media/sda7/SysBackups/morpheus/home
+</pre>
+
+							<p>Cette commande va sauvegarder tous les fichiers répertoires inclus dans /home/tartie vers le système dont le nom d'hôte est "morpheus", pour les disposer dans le répertoire  /media/sda7/SysBackups/morpheus/home  – préservant la structure d'arborescence du répertoire source /tartie.</p>
+
+
+<pre>
+rsync -agEvz --delete-after --exclude=”*~” /home/tartie neo:/media/sda7/SysBackups/morpheus/home
+</pre>
+
+							<p>Cette commande est l'équivalent en mode "pousser" de la commande précédente. Elle va pousser tous les fichiers répertoires inclus dans /home/tartie vers la machine neo et dans le même répertoire. Notez qu'un système est considéré "distant" dès lors que son chemin est précédé du signe “:”.</p>
+
+<pre>
+rsync -agEvz --delete-after --exclude=”*~” /home/cuddles /media/sda7/SysBackups/neo/home
+</pre>
+
+							<p>Cette commande réalise une synchronisation de réperoire local à répertoire local puisqu'aucun chemin n'est précédé de “:”. Elle sauvegardera la zone /home/cuddles vers le répertoire /media/sda7/SysBackups/neo/home de la même machine.</p>
+
+
+							<p>Voyons maintenant ce que l'usage de multiples options d'exclusion peut donner:</p>
+
+<pre>
+rsync -agEvz --delete-after --exclude=”*~” --exclude=”*.c” --exclude=”*.o” "/*" /media/sda7/SysBackups/neo
+</pre>
+
+							<p>La commande ci-dessus va sauvegarder TOUT les fichiers et répertoires situés sous racine de la machine locale vers /media/sda7/SysBackups/neo – sauf que cette sauvegarde excluera tout fichier ou répertoire se terminant par un “~”, ou un “.c”, ou un “.o”. </p>
+
+
+
+							<p class="highlight-2">Ci-dessous figure un exemple de commande rsync à éviter et qui retournerait des erreurs. Un exemple de commande rsync forcément inopérante puisque de machine distante à machine distante:</p>
+
+<pre>
+rsync -agEvz --delete-after --exclude=”*~” morpheus:/home/tartie trinity:/home
+</pre>
+
+							<p class="highlight-2">Comme il est spécifié plus haut : ça ne marche pas avec rsync !</p>
+
+							<p>Pour finir et pour la route, voyons ce qu'une commande rsync de machine distante à locale donnerait en remplaçant les noms d'hôte par les IP.</p>
+
+							<p>La même commande est ici successivement écrite en utilisant les noms d'hôte puis les IP.</p>
+
+<pre>
+rsync -agEvz --delete-after --exclude=”*~” morpheus:/home/tartie /media/sda7/SysBackups/morpheus/home
+</pre>
+
+<pre>
+rsync -agEvz --delete-after --exclude=”*~” 192.168.1.16:/home/tartie /media/sda7/SysBackups/morpheus/home
+</pre>
+
+							<p>Certes, vous n'êtes pas obligés d'utiliser les noms d'hôtes, mais vous conviendrez que ce soit un tantinet plus simple.</p>
+
+							<p>Vous devriez à présent être en mesure de concevoir une commande simple pour rsync, en vous inspirant des exemples fournis, jusqu'à obtenir les formes qui correspondront à vos besoins.</p>
+	</div>
+			<div id="rev">Dernière Révision le 14/08/2010 0100 UTC</div>
+
+
+</div>
+</body>
+</html>

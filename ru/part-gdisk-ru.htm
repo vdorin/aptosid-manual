@@ -1,0 +1,792 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+	<title>Руководство aptosid - GPT gdisk</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body id="part">
+<!-- Last translation revision RoEn 15/04/2012 1500 UTC -->
+<!-- Большое спасибо kostiagol, polix и другим за помощь! -->
+<!--htdig_noindex--><div id="menu"> <!-- menu starts here - ru language maintained by RoEn -->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="Главная страница aptosid.com, форума и вики" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-ru.htm#search-on"><img src="../lib/logos/manual-search-22x22.png" title="Поиск в руководстве" alt="Search" /> Варианты поиска</a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Выбор языка - Choose another language CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="Переключение языка CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-ru.htm">Руководство aptosid</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-ru.htm#welcome-gen">Добро пожаловать! &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-ru.htm#cred-team">Благодарности</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-ru.htm#how-to">Об использовании &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-ru.htm#how-to">Об использовании</a></li>
+					  <li><a href="welcome-ru.htm#table-contents">Содержание</a></li>
+					</ul>
+					</li>
+		<li><a href="help-ru.htm#help-gen">Получение помощи &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-ru.htm#help-gen">Где получить помощь</a></li>
+					  <li><a href="help-ru.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-ru.htm#welcome-quick">Краткое руководство aptosid</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-ru.htm">Содержание ISO-образа, выпуски, список зеркал и запись</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-ru.htm#cd-content">Содержание ISO-образа и системные требования &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-ru.htm#rolling">Замечания к релизу</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-ru.htm#download-aptosid">Список зеркал, скачивание ISO-образа и запись &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-ru.htm#md5">Проверка ISO-образа с md5</a></li>
+					  <li><a href="cd-dl-burning-ru.htm#burn-nero">Запись ISO-образа в Windows</a></li>
+					  <li><a href="cd-dl-burning-ru.htm#burn-linux">Запись ISO-образа в Linux</a></li>
+					  <li><a href="cd-no-gui-burn-ru.htm#burning-no-gui">Скрипт burniso</a></li>
+					  <li><a href="cd-no-gui-burn-ru.htm#burn-no-gui-gen">Запись ISO-образа в консоли</a></li>
+					  <li><a href="cd-dl-burning-ru.htm#download-aptosid">Список зеркал</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-ru.htm">Режим ISO-образа</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-ru.htm#rootpw">Пароль root на ISO-образе</a></li>
+				<li><a href="live-mode-ru.htm#live-cd-installsoft">Установка ПО на ISO-образе</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-ru.htm">Терминал и оболочка</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-ru.htm#term-kon">Терминал и оболочка &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-ru.htm#term-kon">Терминал и оболочка</a></li>
+					  <li><a href="term-konsole-ru.htm#colours"> Цветная подсказка в терминале</a></li>
+					  <li><a href="term-konsole-ru.htm#cli-help">Помощь в терминале</a></li>
+					  <li><a href="help-ru.htm#init3-tools">Полезные инструменты в текстовом режиме (tty) - init 3</a></li>
+					  <li><a href="term-konsole-ru.htm#term-cmds">Команды в терминале</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-ru.htm#sux">Команда: sux/sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-ru.htm">Чит-коды</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-ru.htm#cheatcodes">Особые для ISO-образа aptosid чит-коды</a></li>
+				<li><a href="cheatcodes-ru.htm#cheatcodes-linux">Общие для параметров ядра чит-коды</a></li>
+				<li><a href="cheatcodes-vga-ru.htm#vga">Общие для видеокарты коды</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-ru.htm">Разбиение жесткого диска - по старому, GPT и LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-ru.htm#hd-ntfs3g">Запись на раздел NTFS с ntfs-3g</a></li>
+			<li><a href="part-lvm-ru.htm#part-lvm">Разметка с использованием LVM - Logical Volume Manager</a></li>
+			<li><a href="part-gparted-ru.htm#partition">Разметка диска с интерфесом &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-ru.htm#partition">Разметка диска с gparted/KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-ru.htm#ntfs">Разделы NTFS с gparted/KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-ru.htm#partition">Примеры разметки диска в консоли &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-ru.htm#partition">Разметка диска с cfdisk</a></li>
+					    <li><a href="part-cfdisk-ru.htm#formating">Форматирование разделов с cfdisk</a></li>
+					    <li><a href="part-gdisk-ru.htm#gdisk-6">Форматирование после разметки с gdisk</a></li>
+					    <li><a href="part-gdisk-ru.htm#gdisk-1">Разбиение по GPT с gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-ru.htm#part-example">Разметка диска - обзор &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-ru.htm#part-example">Примеры разметки диска</a></li>
+					  <li><a href="part-uuid-ru.htm#uuid">UUID, восстанавление fstab и создание новых точек монтирования</a></li>
+					  <li><a href="part-cfdisk-ru.htm#disknames">Имена жестких дисков</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-ru.htm">Установка aptosid на HD, USB, VM и шифрованные разделы</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-ru.htm#Inst-prep">Подготовка установки &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-ru.htm#Inst-prep">Подготовка установки</a></li>
+					  <li><a href="hd-install-ru.htm#Installation">Инсталляция на HD</a></li>
+					  <li><a href="hd-install-ru.htm#first-hd-boot">Первая загрузка</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-ru.htm#fromiso">Загрузка 'fromiso' &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-ru.htm#fromiso">Загрузка 'fromiso' - обзор</a></li>
+					  <li><a href="hd-install-opts-ru.htm#grub2-fromiso">Загрузка 'fromiso' с grub 2</a></li>
+					  <li><a href="hd-install-opts-ru.htm#fromiso-persist">Способы 'fromiso' и 'persist'</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-ru.htm#usb-hd">Инсталляция на USB &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-ru.htm#usb-hd">Инсталляция на USB-HD - способ aptosid -  aptosid-на-флешки</a></li>
+					  <li><a href="hd-ins-opts-oos-ru.htm#raw-usb">Запись aptosid на USB/SSD с помощью другого Linux, MS Windows или Mac OS</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-ru.htm#install-crypt">Установка на шифрованные разделы - cryptroot</a></li>
+		  <li><a href="nbdboot-ru.htm#nbd1">Загрузка aptosid по сети</a></li>
+		  <li><a href="hd-install-vmopts-ru.htm#vmopts">Опции инсталляций на VM (Virtual Machine)</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-ru.htm">Оборудование в Xorg и разные драйверы</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-ru.htm#mon-res">Разрешение экрана и мониторы  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-ru.htm#mon-res">Разрешение экрана и мониторы</a></li>
+					  <li><a href="hw-dev-mon-ru.htm#xrandr">Двойные экраны и xrandr</a></li>
+					  <li><a href="hw-dev-mon-ru.htm#mon-binary">Двойные экраны (используя двоичные файлы)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-ru.htm#foss-xorg">Микропрограммное обеспечение GPU &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-ru.htm#ati-3d">AMD/ATI 3D драйверы</a></li>
+					  <li><a href="gpu-ru.htm#intel">Intel 2D и 3D драйверы</a></li>
+					  <li><a href="gpu-ru.htm#nvidia">Nvidia 3D драйверы</a></li>
+					  <li><a href="gpu-ru.htm#foss-xorg">Свободные Xorg-драйверы</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-ru.htm#fw-detect">Определение несвободного микропрограммного обеспечения - non-free </a></li>
+			  <li><a href="nf-firm-ru.htm#non-free-firmware">Добавление non-free в список источников</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-ru.htm">Оконные менеджеры</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-ru.htm">Оконные менеджеры KDE и Xfce&#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-ru.htm#xfce-notes">Полезные инструменты для Xfce</a></li>
+					    <li><a href="wm-dm-ru.htm#install-add">Полезные инструменты для KDE</a></li>
+					    <li><a href="wm-dm-ru.htm#desk-freeze">Рабочий стол зависает</a></li>
+					    <li><a href="wm-dm-ru.htm#kde-login">Проблемы входа в KDE</a></li>
+					    <li><a href="wm-dm-ru.htm#ch-th">Управление темами</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-ru.htm#dm">Установква дополнительных дисплейных менеджеров</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-ru.htm">Интернет, Wifi и локальная сеть</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-ru.htm">Мета-пакет LAMP &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-ru.htm#serv-apache">Мета-пакет LAMP</a></li>
+					    <li><a href="lamp-apache-ru.htm#serv-ftp">Клиенты FTP</a></li>
+					    <li><a href="lamp-apache-ru.htm#serv-sec">Защищенные протоколы</a></li>
+					    <li><a href="lamp-apache-ru.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-ru.htm#serv-mysql">Настройка MySQL</a></li>
+					    <li><a href="lamp-ppp-ru.htm#serv-php">PHP в apache</a></li>
+					    <li><a href="ntp-server-ru.htm#ntp-server">Установка сервера времени</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-ru.htm#tor">Брандмауэры и веб-прокси &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-ru.htm#tor">Маршрутизатор tor</a></li>
+					    <li><a href="tor-privoxy-ru.htm#privoxy">Веб-прокси privoxy</a></li>
+					    <li><a href="inet-ceni-ru.htm#firewalls">Брандмауэры</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-ru.htm#ssh-x">Samba и ssh &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-ru.htm#setup">Сервер samba</a></li>
+						  <li><a href="samba-ru.htm#configure">Интеграции samba в сеть Windows</a></li>
+						  <li><a href="ssh-ru.htm#ssh-fs">Удаленное монтирование с ssh</a></li>
+						  <li><a href="ssh-ru.htm#ssh-x">Приложения X-Windows с ssh</a></li>
+						  <li><a href="ssh-ru.htm#ssh-f">Интерфейс ssh и Konqueror</a></li>
+						  <li><a href="ssh-ru.htm#ssh-w">ssh X-forwarding с Windows-компом</a></li>
+						  <li><a href="ssh-ru.htm#ssh">Безопасность с ssh</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-ru.htm#netcardconfig">Связи с WiFi &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-ru.htm#netcardconfig">Настройка сетевых карт с ceni</a></li>
+						    <li><a href="inet-wpagui-ru.htm#wpa-roaming-gui">Графическoe ппиложение wpa_gui для WiFi</a></li>
+						    <li><a href="inet-setup-ru.htm#net-set1">Роуминг с WiFi</a></li>
+						    <li><a href="inet-wpa-ru.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-ru.htm#hotswitch">Переключение сети между WiFi и проводной связью</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-ru.htm#netcardconfig">Проводная связь &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-ru.htm#dial-mod">56килобитовые модемы</a></li>
+						    <li><a href="inet-ceni-ru.htm#netcardconfig">Настройка сетевых карт с ceni</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-ru.htm#fw-detect">Определение несвободного микропрограммного обеспечения - non-free </a></li>
+		<li><a href="nf-firm-ru.htm#non-free-firmware">Добавление non-free в список источников</a></li>			
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-ru.htm">Управление пакетами и обновление системы с dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-ru.htm#apt-cook">apt и репозитории &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-ru.htm#apt-cook">apt и репозитории</a></li>
+					    <li><a href="sys-admin-apt-ru.htm#apt-install">Установка нового пакета</a></li>
+					    <li><a href="sys-admin-apt-ru.htm#apt-delete">Удаление пакета</a></li>
+					    <li><a href="sys-admin-apt-ru.htm#apt-downgrade">Понижение версии с hold</a></li>
+					    <li><a href="sys-admin-apt-ru.htm#apt-cache">Поиск пакетной иформации с apt-cache</a></li>
+					    <li><a href="sys-admin-apt-ru.htm#gui-pacsea">Графическая поисковая программа</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-ru.htm#kern-upgrade">Обновление ядра &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-ru.htm#kern-remove">Удаление ядра</a></li>
+					    <li><a href="sys-admin-kern-upg-ru.htm#kern-upgrade">Обновление ядра</a></li>
+					    <li><a href="sys-admin-kern-upg-ru.htm#dmakms">Динамическая инсталляция модулей ядра с dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-ru.htm#apt-upgrade">Обновления системы с dist-upgrade - Краткий обзор &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-ru.htm#live-cd-upgrade">Обновление с ISO-образа</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-ru.htm#approx">Обновление нескольких компьютеров в локальной сети</a></li>
+					    <li><a href="sys-admin-apt-ru.htm#apt-upgrade">Краткий обзор oбновления системы с dist-upgrade</a></li>
+					    <li><a href="sys-admin-apt-ru.htm#du-st">Шаги обновления системы с dist-upgrade</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-ru.htm">Системное администрирование</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-ru.htm#bois-prep">Обновление BIOS с FreeDOS</a></li>
+		<li><a href="vir-rkits-ru.htm#virus-rkits">Сканер безопасности</a></li>
+		<li><a href="hd-install-ru.htm#adduser">Новый пользователь и пароли &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-ru.htm#adduser">Добавление нового пользователя</a></li>
+					    <li><a href="sys-admin-gen-ru.htm#pw-lost">Восстановление root-пароля</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-ru.htm#start-services">Службы и режимы загрузки &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-ru.htm#start-services">Выбор служб</a></li>
+					    <li><a href="sys-admin-gen-ru.htm#pkill">Завершениe службы или процесса</a></li>
+					    <li><a href="sys-admin-gen-ru.htm#init">Режимы загрузки init в aptosid</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-ru.htm#rsync">Резервирование системы &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-ru.htm#rdiff">Резервирование с rdiff</a></li>
+					    <li><a href="sys-admin-rsync-ru.htm#rsync">Резервирование с rsync</a></li>
+					    <li><a href="home-ru.htm#home-bu">Перемещение /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-ru.htm#fonts">Cups, шрифты и звук &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-ru.htm#fonts">Шрифты</a></li>
+					     <li><a href="sys-admin-gen-ru.htm#cups">Сервер cups</a></li>
+					     <li><a href="sys-admin-gen-ru.htm#sound">Звуковые микшеры</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-ru.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-ru.htm#chroot">Grub2 - Восстановление grub с chroot</a></li>
+					    <li><a href="sys-admin-grub2-ru.htm#mbr-over-grub2">Grub2 - Удаление из MBR</a></li>
+					    <li><a href="sys-admin-grub2-ru.htm#multi-os">Grub2 - Двойная и мультизагрузка</a></li>
+					    <li><a href="sys-admin-grub2-ru.htm#grub1-grub2">Grub2 - Обновление с grub1</a></li>
+					    <li><a href="sys-admin-grub2-ru.htm#grub2">Grub2 - Краткий обзор</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Наш спонсор webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid размещен на сервере webtropia.com" alt="aptosid размещен на сервере webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+	<div class="divider" id="gdisk-1">
+		<h2 id="top-header">Разделение жёсткого диска с GPT gdisk - обзор</h2>
+							<p>GPT-(Globally Unique Identifier [GUID] Partition Table)- gdisk представляет собой приложение для того, чтобы разделить диски любого размера. <span class="highlight-3">Оно является абсолютно необходим для дисков размером больше 2 Тб</span>. По умолчанию, применеие gdisk обеспечивает, что Ваши разделы четко привязаны для SSD (или жестких дисков, которые на самом деле не имеют 512 секторов байт).</p> 
+
+							<p>Решающее преимущество применения GPT состоит в том, что GPT избавляет Вас от ограничения MBR, с которого зависит количество первичных и расширенных разделов. GPT может поддерживать практически неограниченное количество разделов. GPT ограничен только памятью носителя данных GPT. Обратите внимание, что приложение <span class="highlight-3">gdisk</span> установлено для 128 разделов по умолчанию.</p>
+
+							<p>Однако, используя GPT на маленьких USB/SSD-дисках (например, на SSD-диске с 8 Гб), может иметь и обратный эффект, если Вам нужно передать данные с одного компьютера на другой, или, с одной ОС на другую ОС.</p>
+
+							<!--<p><span class="highlight-2">NOTE : USB booting is not supported with GPT.</span></p>-->
+
+				 <h3  class="highlight-2">Важные примечания</h3>
+
+							<p><span class="highlight-3">Терними UEFI и EFI являются взаимозаменяемыми и означают то же самое понятие.</span></p>
+
+						<h5>GPT-диски данныех</h5>
+							<p><span class="highlight-3">Некоторые операционные системы не поддерживают GPT-диски. Пожалуйста, пожалуйста обратитесь к соответствующей документации по операционной системе.</span></p>
+
+							<p>GPT-носители данных могут применяться под Linux на 32-битовых и 64 битовых компьютерах.</p>
+
+						<h5>Загрузка GPT-дисков</h5>
+
+							<p>Двойные и тройные загрузки GPT-дисков с Linux, BSD и Apple поддерживаются с помощью <span class="highlight-3" >EFI </span> в 64-битовым режиме.</p>
+
+							<p>Двойная загрузка GPT-дисков с Linux и с MS Windows является возможной при условии, что Ваша операционная система MS Windows может загружать GPT-диски в <span class="highlight-3"> UEFI </span>-режиме с 64-бит.</p>
+
+						<h5>Графические программы для разделения жёсткого диска с GPT</h5>
+						  
+							<p>Наряду с программой командных строк gdisk графические приложения как 'gparted' и 'менеджеры раздела' поддерживают носитель данных GPT. Все же мы рекомендуем gdisk, чтобы предотвращать нежелательные аномалии. Не смотря того, gparted и partitionmanager - это, тем не менее, великолепные вспомогательные средства, чтобы дать Вам визуальной информации, как Вы действуете в gdisk.</p>
+
+							<p  class="highlight-3">Прочитайте обязательно перед применением gdisk:</p>
+						<ul>
+<li>
+<pre>
+man gdisk
+</pre>
+</li>
+							<li><a href="http://www.rodsbooks.com/gdisk/"> GPT-fdisk руководство, написанно Roderick W. Smith (на англ.)</a></li>
+
+							<li><a href="http://ru.wikipedia.org/wiki/%D0%A2%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D0%B0_%D1%80%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%D0%BE%D0%B2_GUID">Таблица разделов GUID</a></li>
+						  </ul>
+	</div>
+	<div class="divider" id="gdisk-2">
+		<h2>Разделение жёсткого Диска с помощью gdisk для системы Linux</h2>
+						<h6>Понятие ключевых команд как<span class="highlight-2"> 'm' </span> (назад к главному меню), <span class="highlight-2">d</span>, <span class="highlight-2">n</span>, <span class="highlight-2">p</span> and <span class="highlight-2">t</span> - это предпосылка для Partitionierung с gdisk. Мы рекомендуем испытывать gdisk на испытательном носителе данных, чтобы знакомить себя с программой.</h6>
+
+											 
+					<h5><span class="highlight-2">ВАЖНОЕ ПРИМЕЧАНИЕ о команде 'n':</span> </h5>
+						<!--<h6> After creating the first partition you need to press  <span class="highlight-3"> &lt; Enter &gt; 2 times </span> each time you use <span class="highlight-2"> n </span>  to bring up the last sector to set the size of the subsequent partitions.</h6>-->
+
+							<p>Используя команду <span class="highlight-2">'n'</span>, Вы нажимаете &lt;Enter&gt;, чтобы дать разделению следующий свободный номер, и тогда Вы должны нажать &lt;Enter&gt; снова, чтобы принять сектор начала по умолчанию для следующего разделения прежде, чем установить размер, в котором Вы нуждаетесь для последнего сектора. Например:</p>
+
+<pre>
+Command (? for help):  n  
+Partition number (2-128, default 2):  2 
+First sector (34-15728606, default = <span class="highlight-3">411648</span>) or {+-}size{KMGTP}: 
+Last sector (<span class="highlight-3">411648</span>-15728606, default = 15728606) or {+-}size{KMGTP}: +6144M
+</pre>
+
+		<h3>Пример разделения GPT-диска</h3>
+							<p><i>Пожалуйста, измените пример на собственные требования.</i>:</p>
+						   <ol>
+							<li>Создание раздела загрузчика (<span class="highlight-1">предполагая, что диск не является диском для данных и он должен быть загружаемым</span>);</li>
+							<li>Создание раздела swap, (<span class="highlight-1">предполагая, что диск не является диском для данных и он должен быть загружаемым</span>);</li>
+							<li>Создание разделов Linux;</li>
+							<li>Создание других разделов данных.</li>	   
+						   </ol>
+
+							<p><span class="highlight-2">Примечание: Следующий пример использует только USB-флешку, чтобы демонстрировать требуемые шаги и, таким образом, это не является исчерпывающим.</span></p>
+
+		<h3>Шаги</h3>
+							<p>Если вы не уверены в название диска, используйте fdisk дле определения имени (root привилегии требуются для всех команд разделов и форматирования):</p>
+<pre>
+fdisk -l
+</pre>
+							<p>Выдача fdisk показывает необходимый путь и, возможно, другие названия разделов перечислены. В дальнейшем, путем носителя данных не требуется (независимо от возможных существующих разделов). В примере, мы исходим из пути <span class="highlight-3">sdb</span> и пускаем gfdisk с путем этого диска:</p>
+<pre >
+gdisk /dev/sdb
+</pre>
+							<p><span class="highlight-3">Если носитель данных не нов или годится уже GPT, первая выдача является предупреждением:</span></p>
+<pre>
+GPT fdisk (gdisk) version 0.7.2
+Partition table scan:
+  MBR: MBR only
+  BSD: not present
+  APM: not present
+  GPT: not present
+***************************************************************
+Found invalid GPT and valid MBR; converting MBR to GPT format.
+THIS OPERATION IS POTENTIALLY DESTRUCTIVE! Exit by typing 'q' if
+you don't want to convert your MBR partitions to GPT format!
+***************************************************************
+Command (? for help):
+</pre>
+							<p>When starting <span class="highlight-3">gdisk</span> on a disk with existing MBR partitions and no GPT, the program displays a message surrounded by asterisks about converting the existing partitions to GPT. <span class="highlight-3">This is intended to scare you away if you launch gdisk on the wrong disk by accident or if you don't know what you're doing. You must explicitly respond to this warning before proceeding. This is a deliberate message to keep you from accidentally damaging your boot disks.</span></p>
+
+							<p>Type <span class="highlight-2"> ? </span> and you will see a list of available commands, (the <span class="highlight-3">coloured</span> commands are for documentation purposes):</p>
+<pre>
+Command (? for help): <span class="highlight-2"> ? </span>
+b	back up GPT data to a file
+c	change a partition's name
+d	delete a partition
+i	show detailed information on a partition
+l	list known partition types
+n	add a new partition
+o	create a new empty GUID partition table (GPT)
+p	print the partition table
+q	quit without saving changes
+r	recovery and transformation options (experts only)
+s	sort partitions
+t	change a partition's type code
+v	verify disk
+w	write table to disk and exit
+x	extra functionality (experts only)
+?	print this menu
+</pre>
+							<p>To verify that you're working on the disk you think you're working type <span class="highlight-2"> p </span>.</p>
+<pre>
+Command (? for help): <span class="highlight-2"> p </span>
+Disk /dev/sdb: 16547840 sectors, 7.9 GiB <span class="highlight-2">This example is using an 8GB stck</span>
+Logical sector size: 512 bytes
+Disk identifier (GUID): 0267952D-9B06-4B10-A648-B83684786910
+Partition table holds up to 128 entries
+First usable sector is 34, last usable sector is 16547806
+Partitions will be aligned on 2048-sector boundaries
+Total free space is 16547773 sectors (7.9 GiB)
+Number  Start (sector)    End (sector)  Size       Code  Name
+</pre>
+
+							<p>The <span class="highlight-3">Code </span> column of the output shows the partition type code and the <span class="highlight-3">Name </span> column displays a free-form text string that you can modify.</p>
+
+				    <h3>Удаление таблицы разделов</h3>
+							<p>You now need to delete the entire partition table on the disk to be able to set up GPT partitioning:</p>
+<pre>
+command (? for help): <span class="highlight-2"> d </span>
+</pre>
+							<!--<p>If there are multiple partitions gdisk will ask you to type a number representing the partitions you wish to delete.</p>-->
+
+
+	</div>
+	<div class="divider" id="gdisk-3">
+			<h2>Загрузки по GPT-EFI или по GPT-BIOS</h2>
+
+							<p>Should booting a GPT disk be a requirement, there are 2 options to format the boot sector of a GPT disk.</p>
+
+							<p>The options are:</p>
+						    <ul>
+							<li><span class="highlight-3" >Your machine is (U)EFI aware via the BIOS and turned on, and selected to be bootable.</span></li>
+							<li>You wish to use EFI to boot a GPT disk formatted disk</li>
+						     </ul>
+							<p><span class="highlight-2"> or </span></p>
+						    <ul>
+							<li>Your machine is <span class="highlight-2"> not </span>  (U)EFI aware via the BIOS</li>
+							<li>You wish to use the BIOS to boot a GPT formatted disk</li>
+						    </ul>
+
+					<h3>EFI-загрузка</h3>
+							<p><span class="highlight-2">The BIOS needs to be EFI capable, and turned on, and selected to be bootable.</span> </p>
+
+							<p>If you are going to boot using EFI you must have a FAT formatted EFI System Partition (type <span class="highlight-3">EF00 </span>) as the first partition. This partition will contain your bootloader(s). When you install it will ignore any "where to boot from" choices in install-gui and an aptosid bootloader will be installed on the EFI System Partition under <span class="highlight-3">/efi/aptosid </span>. The EFI System partition will also be mounted as <span class="highlight-3">/boot/efi</span> as long as you leave the "mount other partitions" option selected, you do not need to tell the installer to mount this partition.</p>
+
+							<!--<p><span class="highlight-2">NOTE: USB booting is not supported with GPT.</span></p>-->
+
+					    <h4>Создание раздела EFI-загрузчика</h4>
+							  <p>Type <span class="highlight-2"> n </span> to add a new partition and <span class="highlight-3"> +200M </span> to give the bootloader a size.</p>
+<pre>
+Command (? for help): <span class="highlight-2"> n </span>
+Partition number (1-128, default 1): <span class="highlight-2"> 1 </span>
+</pre>
+ 
+<pre>
+First sector (34-16547806, default = 34) or {+-}size{KMGTP}: 
+Information: Moved requested sector from 34 to 2048 in
+order to align on 2048-sector boundaries.
+Use 'l' on the experts' menu to adjust alignment
+Last sector (2048-16547806, default = 16547806) or {+-}size{KMGTP}: <span class="highlight-2"> +200M </span>
+Current type is 'Linux filesystem'
+</pre>
+							<p> By typing <span class="highlight-2"> L </span> a list of codes will be presented:</p>
+<pre>
+Hex code or GUID (L to show codes, Enter = 8300): <span class="highlight-2"> L </span>
+0700 Microsoft basic data  0c01 Microsoft reserved    2700 Windows RE          
+4200 Windows LDM data      4201 Windows LDM metadata  7501 IBM GPFS            
+7f00 ChromeOS kernel       7f01 ChromeOS root         7f02 ChromeOS reserved   
+8200 Linux swap            8300 Linux filesystem      8301 Linux reserved      
+8e00 Linux LVM             a500 FreeBSD disklabel     a501 FreeBSD boot        
+a502 FreeBSD swap          a503 FreeBSD UFS           a504 FreeBSD ZFS         
+a505 FreeBSD Vinum/RAID    a800 Apple UFS             a901 NetBSD swap         
+a902 NetBSD FFS            a903 NetBSD LFS            a904 NetBSD concatenated 
+a905 NetBSD encrypted      a906 NetBSD RAID           ab00 Apple boot          
+af00 Apple HFS/HFS+        af01 Apple RAID            af02 Apple RAID offline  
+af03 Apple label           af04 AppleTV recovery      be00 Solaris boot        
+bf00 Solaris root          bf01 Solaris /usr &amp; Mac Z  bf02 Solaris swap        
+bf03 Solaris backup        bf04 Solaris /var          bf05 Solaris /home       
+bf06 Solaris alternate se  bf07 Solaris Reserved 1    bf08 Solaris Reserved 2  
+bf09 Solaris Reserved 3    bf0a Solaris Reserved 4    bf0b Solaris Reserved 5  
+c001 HP-UX data            c002 HP-UX service         <span class="highlight-2">ef00 EFI System</span>          
+ef01 MBR partition scheme  ef02 BIOS boot partition   fd00 Linux RAID
+</pre>
+							<p>Enter <span class="highlight-3">ef00</span> to make it a UEFI partition:</p>
+<pre>
+Hex code or GUID (L to show codes, Enter = 8300): <span class="highlight-2">ef00</span>
+Changed system type of partition to 'EFI System'
+</pre>
+
+				    <h3>BIOS-загрузка</h3>
+					      <h4>Создание раздела BIOS-загрузчика</h4>
+
+							<p>If your system does not suppert UEFI, you can make a BIOS boot partition, as it replaces the sector of disk on a DOS partitioned drive that lives between the partition table and the first partition where grub is written directly.</p>
+
+							<p>Type <span class="highlight-2"> n </span> to add a new partition and <span class="highlight-3"> +200M </span> to give the bootloader a size. (The reason to make it +200M,compared with conventional thinking of +32M, is to have in place an EFI sized partition should you ever need to change the disk to EFI booting).</p>
+
+<pre>
+Command (? for help): <span class="highlight-2"> n </span>
+Partition number (1-128, default 1): <span class="highlight-2"> 1 </span>
+</pre>
+ 
+<pre>
+First sector (34-16547806, default = 34) or {+-}size{KMGTP}: 
+Information: Moved requested sector from 34 to 2048 in
+order to align on 2048-sector boundaries.
+Use 'l' on the experts' menu to adjust alignment
+Last sector (2048-16547806, default = 16547806) or {+-}size{KMGTP}: <span class="highlight-2"> +200M </span>
+Current type is 'Linux filesystem'
+</pre>
+							<p>Enter <span class="highlight-3">ef02</span> to make it a BIOS boot partition:</p>
+<pre>
+Hex code or GUID (L to show codes, Enter = 8300): <span class="highlight-2">ef02</span>
+Changed system type of partition to 'BIOS boot'
+</pre>
+
+							<p><span class="highlight-2">Important Note: The Boot BIOS partition is not to be formatted</span></p>
+
+	</div>
+	<div class="divider" id="gdisk-4">		  
+					<h3>Создание раздела swap</h3>
+
+							<p>The allocation of a swap partition should never be underestimated, particularly for laptops and notebooks, as laptops and notebooks need to have the ability to suspend to disk, if required. It should at least equal your RAM.</p>
+
+							<p>Type <span class="highlight-2"> n </span> to add a new partition and <span class="highlight-3">+2G</span>, (or, <span class="highlight-3">+2048M</span>) to give the swap partition a size witha type code of <span class="highlight-3"> 8200 </span>. An example of this would look like this:</p>
+
+<pre>
+Command (? for help): <span class="highlight-2"> n </span> 
+Partition number (2-128, default 2): <span class="highlight-2"> 2 </span>
+First sector (34-15728606, default = 411648) or {+-}size{KMGTP}: 
+Last sector (411648-15728606, default = 15728606) or {+-}size{KMGTP}: <span class="highlight-2">+2048M</span>
+Current type is 'Linux filesystem'
+Hex code or GUID (L to show codes, Enter = 8300): <span class="highlight-2"> 8200 </span>
+Changed type of partition to 'Linux swap
+</pre> 
+
+					  
+		  </div>
+	<div class="divider" id="gdisk-5">		  
+					<h3>Создание раздела данных</h3>
+							<p>Type <span class="highlight-2"> n </span> to add a new partition and <span class="highlight-3">XXXG</span> to give the partition a size. In this example <span class="highlight-3">+4G</span>:</p>
+<pre>
+Partition number (3-128, default 3): <span class="highlight-2"> 3 </span>
+First sector (34-15728606, default = 4605952) or {+-}size{KMGTP}: 
+Last sector (4605952-15728606, default = 15728606) or {+-}size{KMGTP}: <span class="highlight-2">+4G</span>
+Current type is 'Linux filesystem'
+Hex code or GUID (L to show codes, Enter = 8300): <span class="highlight-2">8300</span>
+Changed type of partition to 'Linux filesystem
+</pre>
+
+							<p><span class="highlight-3">Repeat the same process for the other partitions according to your requirements.</span></p>
+
+							<p>As this example is a stick it may be wise to make an <span class="highlight-3"> Any OS Data </span> partition, witha type code of <span class="highlight-3">0700</span>, otherwise give it the code for a Linux filesystem (8300):</p>
+<pre>
+Command (? for help): <span class="highlight-2"> n </span>
+Partition number (4-128, default 4): <span class="highlight-2"> 4 </span>
+First sector (34-15728606, default = 12994560) or {+-}size{KMGTP}: 
+Last sector (12994560-15728606, default = 15728606) or {+-}size{KMGTP}:<span class="highlight-2"> +1300M</span>
+Current type is 'Linux filesystem'
+Hex code or GUID (L to show codes, Enter = 8300): <span class="highlight-2"> 0700 </span>
+Changed type of partition to 'Microsoft basic data'
+</pre>
+							<p>To examine the partitions you have created:</p>
+<pre>
+Command (? for help): <span class="highlight-2"> p </span>
+Disk /dev/sdx: 15728640 sectors, 7.5 GiB
+Logical sector size: 512 bytes
+Disk identifier (GUID): F409CFD3-6DDC-4551-BBC5-85DC218C1352
+Partition table holds up to 128 entries
+First usable sector is 34, last usable sector is 15728606
+Partitions will be aligned on 2048-sector boundaries
+Total free space is 73661 sectors (36.0 MiB)
+
+Number  Start (sector)    End (sector)  Size       Code  Name
+   1            2048          411647   200.0 MiB   EF00  Boot
+   2          411648         4605951   2.0 GiB     8200  Swap
+   3         4605952        12994559   4.0 GiB     8300  Linux File System
+   4        12994560        15656959   1.3 GiB     0700  Any OS Data
+</pre>
+							<p>To add a description of each partition use the <span class="highlight-2"> c </span> command to describe each partitions purpose. For example:</p>
+<pre>
+Command (? for help): <span class="highlight-2"> c </span>
+Partition number (1-4): <span class="highlight-2"> 4 </span>
+Enter name: <span class="highlight-3"> Descriptive name of your choosing</span>
+</pre>
+							<p>The <span class="highlight-2">w</span> writes your changes to disk whilst <span class="highlight-2">q</span> command exits without saving your changes:</p>
+<pre>
+Command (? for help): <span class="highlight-2"> w </span>
+
+Final checks complete. About to write GPT data. THIS WILL OVERWRITE EXISTING
+PARTITIONS!!
+
+Do you want to proceed? (Y/N): <span class="highlight-2"> y </span>
+OK; writing new GUID partition table (GPT).
+The operation has completed successfully.
+</pre>
+		  </div>
+	<div class="divider" id="gdisk-6">
+			      <h2>Форматирование разделов</h2>
+							<p>As gdisk creates partitions not filesystems, you will need to format each of your partions via the terminal. However you will need to know the names of the partitions so you can format each one correctly, therefore run:</p>
+<pre>
+fdisk -l
+</pre>
+							<p>fdisk will give you the path required. Assuming that it is <span class="highlight-3"> sdb </span> :</p>
+<pre>
+gdisk /dev/sdb
+Command (? for help): <span class="highlight-2"> p </span>
+</pre>
+							  
+							<p>Now do <span class="highlight-2"> q </span> to exit gdisk and be back at the <span class="highlight-2"> # </span> root prompt, allowing you to enter the path for each partition number:</p>
+
+							<p>For the UEFI partition, <span class="highlight-2">(Do not format a BIOS Boot partition)</span>:</p>
+
+<pre>
+ mkfs -t vfat /dev/sdb1
+</pre>
+							<p>For the Linux partition, <span class="highlight-3">(The syntax for any other Linux partitions will of course change for each additiional Linux File System partitions, that is sdb4, sdb5, and counting</span>:</p>
+<pre>
+ mkfs -t ext4 /dev/sdb3
+</pre>
+							 <p>For the 'Any OS Partition', <span class="highlight-3">(possibly only required if a USB stick is required for cross platform interoperability)</span>:</p>
+<pre>
+ mkfs -t vfat /dev/sdb4
+</pre>
+
+							<p>Format the swap partition:</p>
+<pre >
+mkswap /dev/sdb2
+</pre>
+
+							<p>Затем:</p>
+
+<pre >
+swapon /dev/sdb2
+</pre>
+
+							<p>Проверьте, если swap-раздел признается, введя в консоли:</p>
+<pre >
+swapon -s
+</pre>
+							<p>Если swap-раздел правильно признал, введите</p>
+<pre >
+swapoff -a
+</pre>
+							<p>Эти команды работают так же, как они были бы на MBR разделах.</p>
+
+							<h5><span class="highlight-2"> It is absolutely imperative to reboot so that the new partitioning and format scheme can be read by the kernel.</span></h5>
+
+							<p>После перезагрузки Вы теперь готовы для установки или использования GPT диска.</p>
+
+		  </div>
+	<div class="divider" id="gdisk-7">
+			<h2>Расширенные команды для gdisk</h2>
+
+							<p>Before saving your changes, you may want to verify that there are no glaring problems with the GPT data structures. You can do this with the <span class="highlight-2">v</span> command:</p>
+<pre>
+Command (? for help): <span class="highlight-2"> v </span>
+No problems found. 0 free sectors (0 bytes) available in 0
+segments, the largest of which is 0 sectors (0 bytes) in size
+</pre>
+							<p>In this case, every available byte on the disk is allocated to partitions and no problems were found. If free space were available for partition creation, you'd see how much was available. If gdisk found problems, such as overlapping partitions or mismatched main and backup partition tables, it would report them here. Of course, gdisk includes safeguards to ensure that you can't create such problems yourself. The v option's sanity checks are intended to help you spot problems that might result from data corruption.</p>
+
+							<p>Если проблемы были обнаружены, существует возможность, что они устраняются с различными опциями в меню  <span class="highlight-3"> recovery &amp; transformation</span>. Это - субменю, к которому с командой <span class="highlight-2"> r </span> достигают:</p>
+<pre>
+Command (? for help): <span class="highlight-2"> r </span>
+
+recovery/transformation command (? for help): <span class="highlight-2">?</span>
+b	use backup GPT header (rebuilding main)
+c	load backup partition table from disk (rebuilding main)
+d	use main GPT header (rebuilding backup)
+e	load main partition table from disk (rebuilding backup)
+f	load MBR and build fresh GPT from it
+g	convert GPT into MBR and exit
+h	make hybrid MBR
+i	show detailed information on a partition
+l	load partition data from a backup file
+m	return to main menu
+o	print protective MBR data
+p	print the partition table
+q	quit without saving changes
+t	transform BSD disklabel partition
+v	verify disk
+w	write table to disk and exit
+x	extra functionality (experts only)
+?	print this menu
+</pre>
+
+							<p>Третьего меню '<span class="highlight-3">experts</span>' достигают с <span class="highlight-2"> x </span> либо с меню '<span class="highlight-3">main</span>' либо с меню '<span class="highlight-3">recovery &amp; transformation</span>'.</p>
+
+<pre>
+recovery/transformation command (? for help): <span class="highlight-2">x</span>
+
+Expert command (? for help): <span class="highlight-2">?</span>
+a       set attributes
+c       change partition GUID
+d       display the sector alignment value
+e       relocate backup data structures to the end of the disk
+g       change disk GUID
+i       show detailed information on a partition
+l       set the sector alignment value
+m       return to main menu
+n       create a new protective MBR
+o       print protective MBR data
+p       print the partition table
+q       quit without saving changes
+r       recovery and transformation options (experts only)
+s       resize partition table
+v       verify disk
+w       write table to disk and exit
+z       zap (destroy) GPT data structures and exit
+?       print this menu
+</pre>
+							<p>You can do some low-level editing, such as changing partition or disk GUIDs (<span class="highlight-2"> c </span> and <span class="highlight-2"> g </span>, respectively). The <span class="highlight-2"> z </span> option immediately destroys the GPT data structures, which you should do if you want to re-use a GPT disk using some other partitioning scheme. If these structures aren't erased, some partitioning tools can become confused by the apparent presence of two partitioning systems.</p>
+
+							<p>Несмотря ни на что: Опции меню <span class="highlight-3">recovery &amp; transformation</span> и <span class="highlight-3">experts</span> должны бы только использоваться, если Вы очень хорошо разбираетесь в GPT. Пользователям, которые не являются экспертами, рекомендуется использовать эти меню только тогда, когда носитель данных поврежден. Перед каждым радикальным действиям опция <span class="highlight-2"> b </span> должна бы использоваться в главном меню, чтобы размещать резервную копию в файле и сохранять ее на отдельном носителе данных. Вследствие этого, оригинальная конфигурация может восстанавливаться, если акция не работает по желанию.</p>
+
+				    <h6>Источники:</h6>
+							<p> <a href="http://www.rodsbooks.com/gdisk/"> GPT fdisk руководство с Roderick W. Smith</a></p>
+
+							<p> <a href="http://msdn.microsoft.com/en-us/windows/hardware/gg463525">Центр разработчика аппаратных средств Windows</a></p>
+</div>
+	<!--<div class="divider" id="gdisk-8">
+			<h2>Dual booting with Linux and another OS - TBA</h2>
+
+						<ul>
+<li>
+<pre>
+man gdisk
+</pre>
+</li>
+							<li><a href="http://www.rodsbooks.com/gdisk/"> GPT fdisk Tutorial by Roderick W. Smith</a></li>
+
+							<li><a href="http://en.wikipedia.org/wiki/GUID_Partition_Table">en.wikipedia.org/wiki/GUID_Partition_Table</a></li>
+						  </ul>
+</div>-->
+			<div id="rev">Содержание, последний раз пересмотрено 15/08/2011 1155 UTC</div>
+
+</div>
+</body>
+</html>

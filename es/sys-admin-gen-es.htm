@@ -1,0 +1,626 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+<head>
+	<title>Manual de aptosid - Administración de la sistema</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision by Richard 18/03/2009 1300hrs UTC-->
+<!--htdig_noindex--><div id="menu"> <!-- menu starts here es lang maintained by Luis_P -->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="ir a aptosid.com y Forum y Wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-es.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" />Buscar</a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Seleccione otro idioma - Choose another language CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="lang-switch CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-es.htm">Manual aptosid</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-es.htm#welcome-gen">Manual de usuario &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-es.htm#cred-team">Créditos</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-es.htm#how-to">Cómo usar este manual &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-es.htm#how-to">Cómo usar este manual</a></li>
+					  <li><a href="welcome-es.htm#table-contents">Indice de Contenido</a></li>
+					</ul>
+					</li>
+		<li><a href="help-es.htm#help-gen">Recibir ayuda &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-es.htm#help-gen">Dónde Conseguir Ayuda</a></li>
+					  <li><a href="help-es.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-es.htm#welcome-quick">Guía rápida</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-es.htm"> ISO, Versiones, Espejos y Quemado</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-es.htm#cd-content">Contenido del ISO y Requerimientos &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-es.htm#rolling">Notas del lanzamiento</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-es.htm#download-aptosid">Espejos aptosid, descargar y quemar &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-es.htm#md5">Suma de verificación, md5</a></li>
+					  <li><a href="cd-dl-burning-es.htm#burn-nero">Quemar en Windows</a></li>
+					  <li><a href="cd-dl-burning-es.htm#burn-linux">Quemar en Linux</a></li>
+					  <li><a href="cd-no-gui-burn-es.htm#burning-no-gui">Script para quemar ISO</a></li>
+					  <li><a href="cd-no-gui-burn-es.htm#burn-no-gui-gen">Quemar sin GUI</a></li>
+					  <li><a href="cd-dl-burning-es.htm#download-aptosid">Espejos de descarga aptosid</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-es.htm">LiveCD: el modo en vivo</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-es.htm#rootpw">Clave raíz del LiveCD</a></li>
+				<li><a href="live-mode-es.htm#live-cd-installsoft">Instalar Software con el LiveCD</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-es.htm">Terminal/Consola</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-es.htm#term-kon"> Terminal (consola) &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-es.htm#term-kon"> Terminal (consola)</a></li>
+					  <li><a href="term-konsole-es.htm#colours"> prompts coloreados de terminal : </a></li>
+					  <li><a href="term-konsole-es.htm#cli-help">Ayuda en línea de Comando</a></li>
+					  <li><a href="help-es.htm#init3-tools">Herramientas que hay que conocer en el modo texto (tty) - init 3</a></li>
+					  <li><a href="term-konsole-es.htm#term-cmds">Comandos del terminal de Linux</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-es.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-es.htm">Chuletas (cheatcodes)</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-es.htm#cheatcodes">Chuletas aptosid específicas para Live-ISO</a></li>
+				<li><a href="cheatcodes-es.htm#cheatcodes-linux">Chuletas genericas Linux</a></li>
+				<li><a href="cheatcodes-vga-es.htm#vga">Códigos VGA</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-es.htm">Particionar el Disco Duro; Modos tradicional, GPT y LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-es.htm#hd-ntfs3g">Escribir en Particiones NTFS con ntfs-3g</a></li>
+			<li><a href="part-lvm-es.htm#part-lvm">Particiones para usar LVM - Gestor Lógico de Volúmenes</a></li>
+			<li><a href="part-gparted-es.htm#partition">Particionar con un gestor gráfico &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-es.htm#partition">Particionar el Disco Duro usando GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-es.htm#ntfs">Redimensionar particiones NTFS con GParted/KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-es.htm#partition">Particionar el Disco Duro en línea de órdenes &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-es.htm#partition">Particionar el Disco Duro con cfdisk</a></li>
+					    <li><a href="part-cfdisk-es.htm#formating">Formatear después de particionar con cfdisk</a></li>
+					    <li><a href="part-gdisk-es.htm#gdisk-6">Formatear después de particionar con gdisk</a></li>
+					    <li><a href="part-gdisk-es.htm#gdisk-1">GPT Particionar con gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-es.htm#part-example">Particionado Básico &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-es.htm#part-example">Ejemplos de dimensiones de particiones</a></li>
+					  <li><a href="part-uuid-es.htm#uuid">UUID, Reconstruir fstab y crear nuevos puntos de montaje</a></li>
+					  <li><a href="part-cfdisk-es.htm#disknames">Nombrar discos: en breve</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-es.htm">Opciones de la Instalación - HD, USB, VM y Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-es.htm#Inst-prep">Preparar para Instalar &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-es.htm#Inst-prep">Preparar para Instalar </a></li>
+					  <li><a href="hd-install-es.htm#Installation">Instalar al disco duro</a></li>
+					  <li><a href="hd-install-es.htm#first-hd-boot">Primera inicialización</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-es.htm#fromiso">Arranque fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-es.htm#fromiso">Iniciar fromiso - Vista general</a></li>
+					  <li><a href="hd-install-opts-es.htm#grub2-fromiso">Iniciar 'fromiso' con Grub 2</a></li>
+					  <li><a href="hd-install-opts-es.htm#fromiso-persist">'fromiso' y 'persist'</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-es.htm#usb-hd">Instalar en un USB-DD - aptosid específico - aptosid-en-un-lápiz_USB &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-es.htm#usb-hd">Instalar en un USB-DD - aptosid Específico - aptosid en un lápiz USB</a></li>
+					  <li><a href="hd-ins-opts-oos-es.htm#raw-usb">Grabar aptosid en un lápiz USB/SSD con cualquier sistema Linux, MS Windows o Mac OS X</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-es.htm#install-crypt">Instalación en particiones cifradas - cryptroot</a></li>
+		  <li><a href="nbdboot-es.htm#nbd1">Arrancar aptosid en una red</a></li>
+		  <li><a href="hd-install-vmopts-es.htm#vmopts">Opciones de instalación en una máquina virtual</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-es.htm">Tarjetas Gráficas, monitores, Xorg &amp; controladores</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-es.htm#mon-res">Resolución de pantalla y monitores  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-es.htm#mon-res">Resolución de pantalla y monitores</a></li>
+					  <li><a href="hw-dev-mon-es.htm#xrandr">Monitores Duales y xrandr</a></li>
+					  <li><a href="hw-dev-mon-es.htm#mon-binary">Monitores Duales (utilizando binarios)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-es.htm#foss-xorg">Controladores GPU &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-es.htm#ati-3d">Controladores AMD/ATI 3D</a></li>
+					  <li><a href="gpu-es.htm#intel">Controladores Intel 2D y 3D</a></li>
+					  <li><a href="gpu-es.htm#nvidia">Controladores Nvidia 3D</a></li>
+					  <li><a href="gpu-es.htm#foss-xorg">Controladores código abierto Xorg</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-es.htm#fw-detect">Detección de firmware non-free</a></li>
+			  <li><a href="nf-firm-es.htm#non-free-firmware">Añadir non-free a Sources List</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-es.htm">Gestor de ventanas</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-es.htm">Gestores de Ventanas KDE y XFCE &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-es.htm#xfce-notes">Utilidades de XFCE</a></li>
+					    <li><a href="wm-dm-es.htm#install-add">Utilidades extras de KDE</a></li>
+					    <li><a href="wm-dm-es.htm#desk-freeze">El escritorio se traba</a></li>
+					    <li><a href="wm-dm-es.htm#kde-login">No puedo hacer login en KDE</a></li>
+					    <li><a href="wm-dm-es.htm#ch-th">Cambiar Temas</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm--es.htm#dm">Instalación de otros gestores de escritorio</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-es.htm">Conexión a Internet, WiFi, LAN y Redes</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-es.htm">Pila de LAMP aptosid &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-es.htm#serv-apache">Pila de LAMP aptosid </a></li>
+					    <li><a href="lamp-apache-es.htm#serv-ftp">Clientes FTP</a></li>
+					    <li><a href="lamp-apache-es.htm#serv-sec">Protocolos de Seguridad</a></li>
+					    <li><a href="lamp-apache-es.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-es.htm#serv-mysql">Configurar MySQL</a></li>
+					    <li><a href="lamp-ppp-es.htm#serv-php">PHP en Apache</a></li>
+					    <li><a href="ntp-server-es.htm#ntp-server">Configurar un servidor horario</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-es.htm#tor">Firewalls (Muros de Fuego) y privacidad &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-es.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-es.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-es.htm#firewalls">Firewalls (Muros de Fuego)</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-es.htm#ssh-x">SSH y Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-es.htm#setup">Configurar un servidor Samba</a></li>
+						  <li><a href="samba-es.htm#configure">Configurar SAMBA (Windows)</a></li>
+						  <li><a href="ssh-es.htm#ssh-fs">Montaje remoto con SSH </a></li>
+						  <li><a href="ssh-es.htm#ssh-x">Aplicaciones X Window via SSH</a></li>
+						  <li><a href="ssh-es.htm#ssh-f">SSH con Konqueror</a></li>
+						  <li><a href="ssh-es.htm#ssh-w">Seguimiento-X con SSH desde Win-PC</a></li>
+						  <li><a href="ssh-es.htm#ssh">SSH y seguridad</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-es.htm#netcardconfig">Conexiones WIFI &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-es.htm#netcardconfig">'ceni': Conectar en línea</a></li>
+						    <li><a href="inet-wpagui-es.htm#wpa-roaming-gui">WiFi - entorno gráfico WPA</a></li>
+						    <li><a href="inet-setup-es.htm#net-set1">WiFi - Configuración del WiFi Roaming</a></li>
+						    <li><a href="inet-wpa-es.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-es.htm#hotswitch">Cambio de la red entre WiFi y Cable</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-es.htm#netcardconfig">Conexiones por cable &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-es.htm#dial-mod">Modems de 56k</a></li>
+						    <li><a href="inet-ceni-es.htm#netcardconfig">'ceni': Conectar en línea</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-es.htm#fw-detect">Detección de firmware non-free</a></li>
+		<li><a href="nf-firm-es.htm#non-free-firmware">Añadir non-free a Sources List</a></li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-es.htm">Gestión de Paquetes y Actualización</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-es.htm#apt-cook">APT y 'sources.list' &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-es.htm#apt-cook">Guía de APT y 'sources list'</a></li>
+					    <li><a href="sys-admin-apt-es.htm#apt-install">Instalar un Paquete</a></li>
+					    <li><a href="sys-admin-apt-es.htm#apt-delete">Quitar un Paquete</a></li>
+					    <li><a href="sys-admin-apt-es.htm#apt-downgrade">Mantener ('Hold') un Paquete y versión anterior</a></li>
+					    <li><a href="sys-admin-apt-es.htm#apt-cache">Buscar un paquete con 'apt-cache'</a></li>
+					    <li><a href="sys-admin-apt-es.htm#gui-pacsea">Buscar un paquete en entorno gráfico</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-es.htm#kern-upgrade">Actualizar el Kernel &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-es.htm#kern-remove">Quitar kernels anteriores</a></li>
+					    <li><a href="sys-admin-kern-upg-es.htm#kern-upgrade">Actualizar el Kernel</a></li>
+					    <li><a href="sys-admin-kern-upg-es.htm#dmakms">Instalación dinámica de módulos del kernel con dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-es.htm#apt-upgrade">Actualizar el sistema instalado: 'dist-upgrade' - Vista general &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-es.htm#live-cd-upgrade">Actualización mediante un Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-es.htm#approx">Actualización de varios PCs en una red</a></li>
+					    <li><a href="sys-admin-apt-es.htm#apt-upgrade">Actualizar el sistema instalado: 'dist-upgrade' - Vista general</a></li>
+					    <li><a href="sys-admin-apt-es.htm#du-st">Actualizar el sistema instalado: 'dist-upgrade' - Los pasos</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-es.htm">Administración del Sistema</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-es.htm#bois-prep">Actualizar el BIOS con FreeDOS</a></li>
+		<li><a href="vir-rkits-es.htm#virus-rkits">Buscadores de Virus y Rootkit</a></li>
+		<li><a href="hd-install-es.htm#adduser">Agregar nuevo Usuario y claves &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-es.htm#adduser">Agregar un nuevo Usuario</a></li>
+					    <li><a href="sys-admin-gen-es.htm#pw-lost">Clave root Perdida, nuevas claves</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-es.htm#start-services">Servicios y niveles de ejecución &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-es.htm#start-services">Activar/desactivar servicios</a></li>
+					    <li><a href="sys-admin-gen-es.htm#pkill">Matar un proceso o servicio</a></li>
+					    <li><a href="sys-admin-gen-es.htm#init">niveles de ejecución en aptosid - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-es.htm#rsync">Copia de seguridad del sistema &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-es.htm#rdiff">Respaldar con 'rdiff'</a></li>
+					    <li><a href="sys-admin-rsync-es.htm#rsync">Respaldar con 'rsync'</a></li>
+					    <li><a href="home-es.htm#home-bu">Mudando el /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-es.htm#fonts">CUPS, Fuentes y Sonido &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-es.htm#fonts">Fuentes</a></li>
+					     <li><a href="sys-admin-gen-es.htm#cups">Sistema de impresión CUPS</a></li>
+					     <li><a href="sys-admin-gen-es.htm#sound">Mezcladores de sonido</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-es.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-es.htm#chroot">Grub2 - Recuperar Grub con chroot</a></li>
+					    <li><a href="sys-admin-grub2-es.htm#mbr-over-grub2">Grub2 - Sobre-escribir el MBR</a></li>
+					    <li><a href="sys-admin-grub2-es.htm#multi-os">Grub2 - Iniciación Dual y Múltiple</a></li>
+					    <li><a href="sys-admin-grub2-es.htm#grub1-grub2">Grub2 -Actualización desde Grub1</a></li>
+					    <li><a href="sys-admin-grub2-es.htm#grub2">Grub2 - Vista general</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donar" alt="Donar" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Patrocinado por webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid tiene el orgullo de estar alojado en webtropia.com" alt="aptosid tiene el orgullo de estar alojado en webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+	<div class="divider" id="start-services">
+		<h2 id="top-header">Activar servicios en aptosid</h2>
+				<h3>insserv (Pontos 2008-04 y versiones posteriores): Para iniciar/parar servicios ya instalados:</h3>
+							<p><span class="highlight-2">Lea cuidadosamente en <span class="highlight-3">/usr/share/doc/insserv/README.Debian</span> las notas de la versión y las páginas man:</span></p>
+<pre>
+ $ man insserv
+ $ man invoke-rc.d
+ $ man update-rc.d
+ google LSB headers
+</pre>
+
+							<p>Para 'iniciar (start)':</p>
+<pre>
+/etc/init.d/&lt;service&gt; start
+</pre>
+							<p>Para 'parar (stop)':</p>
+<pre>
+/etc/init.d/&lt;service&gt; stop
+</pre>
+							<p>Para 'reiniciar (restart)':</p>
+<pre>
+/etc/init.d/&lt;service&gt; restart
+</pre>
+							<p>Para evitar que un servicio arranque al inicio</p>
+<pre>
+update-rc.d &lt;service&gt; remove
+[quitará los enlaces de arranque]
+</pre>
+							<p>Para asegurarse de que un servicio arranque al iniciar el sistema [no siempre es requerido]</p>
+<pre>
+update-rc.d &lt;service&gt; defaults
+[crear enlaces de arranque]
+</pre>
+
+							<p>Para leer la lista de los servicios que están corriendo:</p>
+<pre>
+ls /etc/rc5.d
+</pre>
+
+							<p><span class="highlight-3">S</span> significa que el servicio arrancará.<br />
+							<span class="highlight-3">K</span> significa que el servicio no arrancará.</p>
+
+					<h3>Instalaciones Viejas (anteriores a Pontos 2008-04)</h3>
+						<h3>insserv en sistemas instalados antes de Pontos 2008-04</h3>
+
+							<p> <span class="highlight-2">Advertencia: Las instalaciones viejas no tendrán insserv automáticamente debido a enlaces simbolicos o initscripts de usuarios. <b>NO</b> es recommendable instalar insserv en instalaciones anteriores a Pontos. Este paquete debe ser utilizado con cuidado, porque si las dependencias LSB son incorectas o ya hay initscritps, pueden dar como resultado un sistema que no arranque. Instalar insserv en una instalación ya existente puede necesitar cambios manuales. </span></p>
+
+							<p><span class="highlight-2">Lea <a href="http://wiki.debian.org/LSBInitScripts/DependencyBasedBoot"> la documentación de Debian</a>, y las notas de la versión antes de instalar y activar el insserv.</span></p>
+	</div>
+	<div class="divider" id="bum">
+			<h2>Gestor de Inicio: (Boot-Up Manager - bum) - Herramienta Gráfica de Configuración de Servicios</h2>
+
+							<p>Si la lógica de la secuencia de arranque de un sistema Debian no es muy clara y familiar no debe jugar con los symlinks, permisos, etcétera. Para evitar desconfigurar el sistema, el Boot-Up Manager le ayudará a automatizar la configuración.</p>
+
+							<p>Boot-Up Manager es un Editor GUI de Configuración de Niveles de Ejecución que permite determinar qué servicios de init son llamados cuando se inicia o reinicia el sistema. Se muestra una lista de todos los servicios que pueden arrancar al inicio. Puede cambiar el estado de servicio, si o no, de servicios individuales.</p>
+
+<pre>
+apt-get install bum
+</pre>
+							<p>Para utilizar el Boot-Up Manager GUI:</p>
+<pre>
+$ sux
+password:
+bum
+</pre>
+						  <p> <a href ="http://www.marzocca.net/linux/bumdocs.html">Documentación detallada sobre el Boot-Up Manager (bum)</a>. </p>
+
+		</div>
+		<div class="divider" id="pkill">
+			<h2>Matar un servicio o proceso</h2>
+						<p><span class="highlight-3">pkill</span> es muy útil porque es legible por humanos y puede funcionar tanto como usuario normal como root en una terminal o en el ttyX.</p>
+<pre>
+pkill -n service
+</pre>
+						<p>Si no esta seguro de cómo deletrear el proceso o servicio que desea matar: <span class="highlight-3">pkill &lt;tab&gt; &lt;tab&gt;</span> da una lista </p>
+
+						<p>htop es una alternativa muy buena. (Intente: killall -1 primero; killall -9 es el último recurso).</p>
+
+	</div>
+	<div class="divider" id="init">
+			<h2>aptosid Niveles de Ejecución - init</h2>
+							<p>Esta es la lista de runlevels para el sistema operativo *aptosid*. Dese cuenta de que es diferente de los runlevels de Debian estable:</p>
+		 <table>
+			<tbody>
+				<tr>
+					<th>Runlevel</th>
+					<th>aptosid</th>
+					<th>Debian</th>
+				</tr>
+				<tr>
+					<td><b>init 0</b></td>
+					<td> Apaga el PC</td>
+					<td> Apaga el PC</td>
+				</tr>
+				<tr>
+					<td><b>init 1</b></td>
+					<td>Un solo usuario en modo seguro. Los demonios como apache y sshd paran. No vaya a este nivel a través de un acceso remoto.</td>
+					<td>Un solo usuario en modo seguro. Los demonios como apache y sshd paran. No vaya a este nivel a través de un acceso remoto.</td>
+				</tr>
+				<tr>
+					<td><b>init 2</b></td>
+					<td> Modo multi-usuario con funcionamiento de la red, sin que funcione el servidor de ventanas X, para parar o no entrar en el servidor X</td>
+					<td>Runlever predeterminado de Debian para modo multi-usuario con funcionamiento de la red y corriendo el sistema X-windows.</td>
+				</tr>
+				<tr>
+					<td><b>init 3</b></td>
+					<td> Modo multi-usuario con funcionamiento de la red, sin que funcione el servidor de ventanas X, para parar o no entrar en el servidor X   <a href="sys-admin-apt-es.htm#apt-upgrade">Aquí es donde hay que hacer dist-upgrade</a>.</td>
+					<td> Igual que runlevel 2 / init 2.</td>
+				</tr>
+				<tr>
+					<td><b>init 4</b></td>
+					<td>Modo multi-usuario con funcionamiento de la red, sin que funcione el servidor de ventanas X, para parar o no entrar en el servidor X</td>
+					<td> Igual que runlevel 2 / init 2.</td>
+				</tr>
+				<tr>
+					<td><b>init 5</b></td>
+					<td>Modo multi-usuario con funcionamiento de la red, funcionando el servidor de ventanas X, para arrancar o entrar en el servidor X.</td>
+					<td>Igual que runlevel 2 / init 2.</td>
+				</tr>
+				<tr>
+					<td><b>init 6</b></td>
+					<td> Vuelve a arrancar (reboot) el sistema.</td>
+					<td> Vuelve a arrancar (reboot) el sistema.</td>
+				</tr>
+				<tr>
+					<td><b>init S</b></td>
+					<td> Aquí los servicios de arranque se ejecutan en modo 'solo una vez'. No se puede entrar después de haber arrancado.</td>
+					<td> Aquí los servicios de arranque se ejecutan en modo 'solo una vez'. No se puede entrar después de haber arrancado.</td>
+				</tr>
+			</tbody>
+		</table>
+
+      <div class="spacer02"></div>
+
+							<p>Para comprobar el runlevel (init) en el que está ahora, haga:</p>
+<pre>
+who -r
+</pre>
+							<p>De lectura obligada para cualquier administrador de sistemas aptosid y Debian con respecto a los niveles de ejecución:</p>
+<pre>
+man init
+</pre>
+
+	</div>
+	<div class="divider" id="pw-lost">
+		<h2>Claves de root perdidas</h2>
+
+			<p>No se puede recuperar una clave perdida, pero sí se puede establecer una nueva.</p>
+
+			<p>Primero arranque desde el LiveCD.</p>
+
+			<p>Como root, monte su partición-raíz (por ejemplo: /dev/sdb2)</p>
+
+<pre>
+mount /dev/sdb2 /media/sdb2
+</pre>
+							<p>Ahora, haga chroot hacia su vieja partición-raíz y fije una nueva clave de acceso:</p>
+<pre>
+chroot /media/sdb2 passwd
+</pre>
+
+	</div>
+	<div class="divider" id="pw-new">
+		<h2>Establecer nueva claves</h2>
+
+							<p>Para cambiar su clave de usuario, como <span class="highlight-3">$ usuario</span> haga:</p>
+<pre>
+$ passwd
+</pre>
+
+							<p>Para cambiar su clave de superusuario, como <span class="highlight-3"># root</span> haga:</p>
+<pre>
+passwd
+</pre>
+
+							<p>Para cambiar una clave de usuario como administrador, como <span class="highlight-3"># root</span> haga:</p>
+<pre>
+passwd &lt;user&gt;
+</pre>
+
+	</div>
+
+	<div class="divider" id="fonts">
+			<h2>Fuentes de letras en aptosid</h2>
+				<h6>Configuración correcta de dpi - Principios Básicos</h6>
+
+							<p>Las configuraciones de dpi son problemáticas de adivinar, pero actualmente son calculadas perfectamente por X.</p>
+
+				<h6>Resoluciones Correctas y Frecuencia de actualización</h6>
+
+							<p>Cada monitor tiene una combinación perfecta para él, pero, desafortunamente, no todos reportan los valores DCC correctos y a veces es necesario hacer un control manual.</p>
+
+				<!--<h6>Controladores Correctos de Dispositivos Gráficos</h6>
+
+							<p>Algunas de las tarjetas ATI y Nvidia más nuevas simplemente no encajan bien con los controladores libres de Xorg, y la única solución razonable en estos casos son los drivers commerciales de fuente cerrada. aptosid no los instala previamente por razones legales, <a href="gpu-es.htm"> pero las soluciones pueden encontrarse aquí. </a></p>-->
+
+				<h5>Preselecciones de Fuentes de letras, Renderización y Tamaños</h5>
+
+							<p>aptosid utiliza fuentes preseleccionadas (por Debian) que se han comprobado como muy equilibradas; si hace cambios en la selección de fuentes podría deteriorar la calidad de la renderización. Pero hay unas opciones poderosas en Debian (aparte de las de KDE>systemsettings) que puede proporcionar una renderización perfecta también con otras fuentes. Sea consciente de que cada fuente tiene solamente unos pocos tamaños perfectos, y que otros tamaños pueden ocasionar conflictos.</p>
+
+				<p>Variar el tamaño del "dpi" con este comando puede ser de ayuda:</p>
+<pre>
+fix-dpi-kdm
+</pre>
+							<p>Debe mostrar el DPI para el tamaño del pantalla, pero usted también puede jugar con esto. Tendrá que cambiar a "init 3" y después a "init 5" para que funcione, o volver a arrancar.</p>
+
+							<p>Después de haber cambiado el tipo de fuente de letra o el DPI (en la configuración de X o en Firefox/Iceweasel), puede ser que necesite algunos ajustes para conseguir unos resultados que le gusten, especialmente después de un cambio de tipo Bitmap a uno de TrueType o viceversa:</p>
+<pre>
+dpkg-reconfigure fontconfig-config
+</pre>
+							 <p>Escoja nativo y autohinter en modo automático. Si no, varíelo a ver los resultados.</p>
+
+							 <p>Si eso no funciona, puede que tenga que rehacer el cache de fuentes de letras con lo siguiente:</p>
+<pre>
+apt-get install --reinstall --yes -o DPkg::Options::=--force-confmiss -o DPkg::Options::=--force-confnew fontconfig fontconfig-config
+</pre>
+				<h5>Aplicaciones basadas en GTK como el Firefox/Iceweasel</h5>
+							<p>Las aplicaciones basadas en GTK, son problemáticas en general con las fuentes de letras preseleccionadas por Kde. Esto se puede resolver con los siguientes pasos:</p>
+<pre>
+apt-get install gtk2-engines system-config-gtk-kde gtk-qt-engine gtk2-engines-qtcurve
+</pre>
+							<p>En <span class="highlight-3">System Settings >Appearance </span> tendrá una nueva entrada de menú llamada <span class="highlight-3">GTK Styles and Fonts</span>. Establezca que 'GTK Styles' use 'Clearlooks' y haga que 'GTK Fonts' utilice 'KDE fonts' <span class="highlight-3">o bien</span> experimente con las varias opciones hasta cumplir con sus preferencias.</p>
+
+							<p>Esto puede mejorar la renderización de letras en aplicaciones GTK</p>
+	</div>
+	<div class="divider" id="cups">
+			<h2>CUPS</h2>
+							<p>KDE tiene una sección incorporada en su Ayuda; sin embargo, los dist-upgrades a veces pueden causar algunos fallos en el CUPS. Aquí está una solución conocida y probada:</p>
+
+<pre>
+modprobe lp
+echo lp >> /etc/modules
+apt-get remove --purge cupsys cups
+apt-get install cups
+	ó
+apt-get install cups cups-driver-gutenprint hplip
+</pre>
+							<p>Asegúrese de que CUPS se esta ejecutando:</p>
+<pre>
+/etc/init.d/cups restart
+</pre>
+							<p>A continuación en el navegador (browser) de internet:</p>
+<pre>
+http://localhost:631
+</pre>
+							<p>Otro truco, es cuando al configurar CUPS por el GUI aparece una casilla pidiendo la clave de root pero la casilla ya contiene su nombre de usuario, entonces cuando entra su clave de usuario, no funciona!. Lo que realmente está pidiendo es que cambie su nombre de usuario a <span class="highlight-2">root</span> y entre su <span class="highlight-2">clave de root</span>.</p>
+
+							<p><a href="http://www.linuxfoundation.org/collaborate/workgroups/openprinting/database/databaseintro">La base de datos OpenPrinting</a> contiene una amplia información sobre impresoras concretas, así como extensa información sobre los controladores, los propios controladores, especificaciones básicas, y un conjunto relacionado de herramientas de configuración. </p>
+	</div>
+	<div class="divider" id="sound">
+			<h2>El sonido en aptosid</h2>
+							<p><span class="highlight-3">El sonido está anulado por defecto en aptosid.</span></p>
+
+							<p>La versión KDE usa Kmix y la XFCE usa Mixer.</p>
+
+							<p>La mayor parte de las veces se trata solo de hacer click sobre el icono de sonido en la barra de tareas y quitar la señal en 'Mute box'.</p>
+
+					<h6>Kmix</h6>
+							<p>En Kmix necesitará activar las opciones preferidas para el canal de opciones, <span class="highlight-3">Kmix>Setting>Configure Channels.</span></p>
+
+					<h6>XFCE</h6>
+
+							<p>En XFCE haga correr la aplicación del mixer y añada algunos controles mediante <span class="highlight-3"> Multimedia>Mixer</span> y haga click en la caja <span class="highlight-3">Select Controls.</span> O bien en un terminal:</p>
+<pre>
+$ xfce4-mixer
+</pre>
+
+					<h3>Alsamixer</h3>
+
+							<p>Si prefiere usar Alsamixer, está en el paquete alsa-utils:</p>
+<pre>
+apt-get update
+apt-get install alsa-utils
+exit
+</pre>
+							 <p>Establezca su configuración preferida de sonido como <span class="highlight-2">$user</span> en el terminal:</p>
+<pre>
+$ alsamixer
+</pre>
+
+							  <!--<p><a href='http://sidux.com/index.php?module=Wikula&amp;tag=SoundMaster'> Vea también el wiki.</a></p>-->
+
+	</div>
+
+			<div id="rev">Content last revised 20/04/2011 0830 UTC  </div>
+
+</div>
+</body>
+</html>

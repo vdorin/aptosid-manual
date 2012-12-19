@@ -1,0 +1,609 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+<head>
+	<title>Manual de aptosid - El terminal o Consola (Konsole)</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision Richard 01/06/2009 2000 UTC -->
+<!--htdig_noindex--><div id="menu"> <!-- menu starts here es lang maintained by Luis_P -->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="ir a aptosid.com y Forum y Wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-es.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" />Buscar</a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Seleccione otro idioma - Choose another language CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="lang-switch CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-es.htm">Manual aptosid</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-es.htm#welcome-gen">Manual de usuario &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-es.htm#cred-team">Créditos</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-es.htm#how-to">Cómo usar este manual &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-es.htm#how-to">Cómo usar este manual</a></li>
+					  <li><a href="welcome-es.htm#table-contents">Indice de Contenido</a></li>
+					</ul>
+					</li>
+		<li><a href="help-es.htm#help-gen">Recibir ayuda &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-es.htm#help-gen">Dónde Conseguir Ayuda</a></li>
+					  <li><a href="help-es.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-es.htm#welcome-quick">Guía rápida</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-es.htm"> ISO, Versiones, Espejos y Quemado</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-es.htm#cd-content">Contenido del ISO y Requerimientos &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-es.htm#rolling">Notas del lanzamiento</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-es.htm#download-aptosid">Espejos aptosid, descargar y quemar &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-es.htm#md5">Suma de verificación, md5</a></li>
+					  <li><a href="cd-dl-burning-es.htm#burn-nero">Quemar en Windows</a></li>
+					  <li><a href="cd-dl-burning-es.htm#burn-linux">Quemar en Linux</a></li>
+					  <li><a href="cd-no-gui-burn-es.htm#burning-no-gui">Script para quemar ISO</a></li>
+					  <li><a href="cd-no-gui-burn-es.htm#burn-no-gui-gen">Quemar sin GUI</a></li>
+					  <li><a href="cd-dl-burning-es.htm#download-aptosid">Espejos de descarga aptosid</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-es.htm">LiveCD: el modo en vivo</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-es.htm#rootpw">Clave raíz del LiveCD</a></li>
+				<li><a href="live-mode-es.htm#live-cd-installsoft">Instalar Software con el LiveCD</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-es.htm">Terminal/Consola</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-es.htm#term-kon"> Terminal (consola) &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-es.htm#term-kon"> Terminal (consola)</a></li>
+					  <li><a href="term-konsole-es.htm#colours"> prompts coloreados de terminal : </a></li>
+					  <li><a href="term-konsole-es.htm#cli-help">Ayuda en línea de Comando</a></li>
+					  <li><a href="help-es.htm#init3-tools">Herramientas que hay que conocer en el modo texto (tty) - init 3</a></li>
+					  <li><a href="term-konsole-es.htm#term-cmds">Comandos del terminal de Linux</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-es.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-es.htm">Chuletas (cheatcodes)</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-es.htm#cheatcodes">Chuletas aptosid específicas para Live-ISO</a></li>
+				<li><a href="cheatcodes-es.htm#cheatcodes-linux">Chuletas genericas Linux</a></li>
+				<li><a href="cheatcodes-vga-es.htm#vga">Códigos VGA</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-es.htm">Particionar el Disco Duro; Modos tradicional, GPT y LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-es.htm#hd-ntfs3g">Escribir en Particiones NTFS con ntfs-3g</a></li>
+			<li><a href="part-lvm-es.htm#part-lvm">Particiones para usar LVM - Gestor Lógico de Volúmenes</a></li>
+			<li><a href="part-gparted-es.htm#partition">Particionar con un gestor gráfico &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-es.htm#partition">Particionar el Disco Duro usando GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-es.htm#ntfs">Redimensionar particiones NTFS con GParted/KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-es.htm#partition">Particionar el Disco Duro en línea de órdenes &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-es.htm#partition">Particionar el Disco Duro con cfdisk</a></li>
+					    <li><a href="part-cfdisk-es.htm#formating">Formatear después de particionar con cfdisk</a></li>
+					    <li><a href="part-gdisk-es.htm#gdisk-6">Formatear después de particionar con gdisk</a></li>
+					    <li><a href="part-gdisk-es.htm#gdisk-1">GPT Particionar con gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-es.htm#part-example">Particionado Básico &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-es.htm#part-example">Ejemplos de dimensiones de particiones</a></li>
+					  <li><a href="part-uuid-es.htm#uuid">UUID, Reconstruir fstab y crear nuevos puntos de montaje</a></li>
+					  <li><a href="part-cfdisk-es.htm#disknames">Nombrar discos: en breve</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-es.htm">Opciones de la Instalación - HD, USB, VM y Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-es.htm#Inst-prep">Preparar para Instalar &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-es.htm#Inst-prep">Preparar para Instalar </a></li>
+					  <li><a href="hd-install-es.htm#Installation">Instalar al disco duro</a></li>
+					  <li><a href="hd-install-es.htm#first-hd-boot">Primera inicialización</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-es.htm#fromiso">Arranque fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-es.htm#fromiso">Iniciar fromiso - Vista general</a></li>
+					  <li><a href="hd-install-opts-es.htm#grub2-fromiso">Iniciar 'fromiso' con Grub 2</a></li>
+					  <li><a href="hd-install-opts-es.htm#fromiso-persist">'fromiso' y 'persist'</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-es.htm#usb-hd">Instalar en un USB-DD - aptosid específico - aptosid-en-un-lápiz_USB &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-es.htm#usb-hd">Instalar en un USB-DD - aptosid Específico - aptosid en un lápiz USB</a></li>
+					  <li><a href="hd-ins-opts-oos-es.htm#raw-usb">Grabar aptosid en un lápiz USB/SSD con cualquier sistema Linux, MS Windows o Mac OS X</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-es.htm#install-crypt">Instalación en particiones cifradas - cryptroot</a></li>
+		  <li><a href="nbdboot-es.htm#nbd1">Arrancar aptosid en una red</a></li>
+		  <li><a href="hd-install-vmopts-es.htm#vmopts">Opciones de instalación en una máquina virtual</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-es.htm">Tarjetas Gráficas, monitores, Xorg &amp; controladores</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-es.htm#mon-res">Resolución de pantalla y monitores  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-es.htm#mon-res">Resolución de pantalla y monitores</a></li>
+					  <li><a href="hw-dev-mon-es.htm#xrandr">Monitores Duales y xrandr</a></li>
+					  <li><a href="hw-dev-mon-es.htm#mon-binary">Monitores Duales (utilizando binarios)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-es.htm#foss-xorg">Controladores GPU &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-es.htm#ati-3d">Controladores AMD/ATI 3D</a></li>
+					  <li><a href="gpu-es.htm#intel">Controladores Intel 2D y 3D</a></li>
+					  <li><a href="gpu-es.htm#nvidia">Controladores Nvidia 3D</a></li>
+					  <li><a href="gpu-es.htm#foss-xorg">Controladores código abierto Xorg</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-es.htm#fw-detect">Detección de firmware non-free</a></li>
+			  <li><a href="nf-firm-es.htm#non-free-firmware">Añadir non-free a Sources List</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-es.htm">Gestor de ventanas</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-es.htm">Gestores de Ventanas KDE y XFCE &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-es.htm#xfce-notes">Utilidades de XFCE</a></li>
+					    <li><a href="wm-dm-es.htm#install-add">Utilidades extras de KDE</a></li>
+					    <li><a href="wm-dm-es.htm#desk-freeze">El escritorio se traba</a></li>
+					    <li><a href="wm-dm-es.htm#kde-login">No puedo hacer login en KDE</a></li>
+					    <li><a href="wm-dm-es.htm#ch-th">Cambiar Temas</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm--es.htm#dm">Instalación de otros gestores de escritorio</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-es.htm">Conexión a Internet, WiFi, LAN y Redes</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-es.htm">Pila de LAMP aptosid &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-es.htm#serv-apache">Pila de LAMP aptosid </a></li>
+					    <li><a href="lamp-apache-es.htm#serv-ftp">Clientes FTP</a></li>
+					    <li><a href="lamp-apache-es.htm#serv-sec">Protocolos de Seguridad</a></li>
+					    <li><a href="lamp-apache-es.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-es.htm#serv-mysql">Configurar MySQL</a></li>
+					    <li><a href="lamp-ppp-es.htm#serv-php">PHP en Apache</a></li>
+					    <li><a href="ntp-server-es.htm#ntp-server">Configurar un servidor horario</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-es.htm#tor">Firewalls (Muros de Fuego) y privacidad &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-es.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-es.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-es.htm#firewalls">Firewalls (Muros de Fuego)</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-es.htm#ssh-x">SSH y Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-es.htm#setup">Configurar un servidor Samba</a></li>
+						  <li><a href="samba-es.htm#configure">Configurar SAMBA (Windows)</a></li>
+						  <li><a href="ssh-es.htm#ssh-fs">Montaje remoto con SSH </a></li>
+						  <li><a href="ssh-es.htm#ssh-x">Aplicaciones X Window via SSH</a></li>
+						  <li><a href="ssh-es.htm#ssh-f">SSH con Konqueror</a></li>
+						  <li><a href="ssh-es.htm#ssh-w">Seguimiento-X con SSH desde Win-PC</a></li>
+						  <li><a href="ssh-es.htm#ssh">SSH y seguridad</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-es.htm#netcardconfig">Conexiones WIFI &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-es.htm#netcardconfig">'ceni': Conectar en línea</a></li>
+						    <li><a href="inet-wpagui-es.htm#wpa-roaming-gui">WiFi - entorno gráfico WPA</a></li>
+						    <li><a href="inet-setup-es.htm#net-set1">WiFi - Configuración del WiFi Roaming</a></li>
+						    <li><a href="inet-wpa-es.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-es.htm#hotswitch">Cambio de la red entre WiFi y Cable</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-es.htm#netcardconfig">Conexiones por cable &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-es.htm#dial-mod">Modems de 56k</a></li>
+						    <li><a href="inet-ceni-es.htm#netcardconfig">'ceni': Conectar en línea</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-es.htm#fw-detect">Detección de firmware non-free</a></li>
+		<li><a href="nf-firm-es.htm#non-free-firmware">Añadir non-free a Sources List</a></li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-es.htm">Gestión de Paquetes y Actualización</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-es.htm#apt-cook">APT y 'sources.list' &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-es.htm#apt-cook">Guía de APT y 'sources list'</a></li>
+					    <li><a href="sys-admin-apt-es.htm#apt-install">Instalar un Paquete</a></li>
+					    <li><a href="sys-admin-apt-es.htm#apt-delete">Quitar un Paquete</a></li>
+					    <li><a href="sys-admin-apt-es.htm#apt-downgrade">Mantener ('Hold') un Paquete y versión anterior</a></li>
+					    <li><a href="sys-admin-apt-es.htm#apt-cache">Buscar un paquete con 'apt-cache'</a></li>
+					    <li><a href="sys-admin-apt-es.htm#gui-pacsea">Buscar un paquete en entorno gráfico</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-es.htm#kern-upgrade">Actualizar el Kernel &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-es.htm#kern-remove">Quitar kernels anteriores</a></li>
+					    <li><a href="sys-admin-kern-upg-es.htm#kern-upgrade">Actualizar el Kernel</a></li>
+					    <li><a href="sys-admin-kern-upg-es.htm#dmakms">Instalación dinámica de módulos del kernel con dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-es.htm#apt-upgrade">Actualizar el sistema instalado: 'dist-upgrade' - Vista general &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-es.htm#live-cd-upgrade">Actualización mediante un Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-es.htm#approx">Actualización de varios PCs en una red</a></li>
+					    <li><a href="sys-admin-apt-es.htm#apt-upgrade">Actualizar el sistema instalado: 'dist-upgrade' - Vista general</a></li>
+					    <li><a href="sys-admin-apt-es.htm#du-st">Actualizar el sistema instalado: 'dist-upgrade' - Los pasos</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-es.htm">Administración del Sistema</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-es.htm#bois-prep">Actualizar el BIOS con FreeDOS</a></li>
+		<li><a href="vir-rkits-es.htm#virus-rkits">Buscadores de Virus y Rootkit</a></li>
+		<li><a href="hd-install-es.htm#adduser">Agregar nuevo Usuario y claves &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-es.htm#adduser">Agregar un nuevo Usuario</a></li>
+					    <li><a href="sys-admin-gen-es.htm#pw-lost">Clave root Perdida, nuevas claves</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-es.htm#start-services">Servicios y niveles de ejecución &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-es.htm#start-services">Activar/desactivar servicios</a></li>
+					    <li><a href="sys-admin-gen-es.htm#pkill">Matar un proceso o servicio</a></li>
+					    <li><a href="sys-admin-gen-es.htm#init">niveles de ejecución en aptosid - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-es.htm#rsync">Copia de seguridad del sistema &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-es.htm#rdiff">Respaldar con 'rdiff'</a></li>
+					    <li><a href="sys-admin-rsync-es.htm#rsync">Respaldar con 'rsync'</a></li>
+					    <li><a href="home-es.htm#home-bu">Mudando el /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-es.htm#fonts">CUPS, Fuentes y Sonido &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-es.htm#fonts">Fuentes</a></li>
+					     <li><a href="sys-admin-gen-es.htm#cups">Sistema de impresión CUPS</a></li>
+					     <li><a href="sys-admin-gen-es.htm#sound">Mezcladores de sonido</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-es.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-es.htm#chroot">Grub2 - Recuperar Grub con chroot</a></li>
+					    <li><a href="sys-admin-grub2-es.htm#mbr-over-grub2">Grub2 - Sobre-escribir el MBR</a></li>
+					    <li><a href="sys-admin-grub2-es.htm#multi-os">Grub2 - Iniciación Dual y Múltiple</a></li>
+					    <li><a href="sys-admin-grub2-es.htm#grub1-grub2">Grub2 -Actualización desde Grub1</a></li>
+					    <li><a href="sys-admin-grub2-es.htm#grub2">Grub2 - Vista general</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donar" alt="Donar" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Patrocinado por webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid tiene el orgullo de estar alojado en webtropia.com" alt="aptosid tiene el orgullo de estar alojado en webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+	<div class="divider" id="term-kon">
+		<h2 id="top-header">Definición de un terminal o consola</h2>
+
+							<p>Un terminal, también llamada consola, y en el ambiente KDE "konsole", hace posible interactuar directamente con el sistema operativo Linux a través de varias órdenes o comandos que se ejecutan inmediatamente. También muchas veces es llamada <span class="highlight-3">'shell' o 'línea de comandos'</span>. Un terminal es una herramienta muy poderosa y bien vale la pena tener al menos unas nociones básicas del uso de la línea de órdenes.</p>
+
+							<p>En aptosid puede encontrar el programa konsole cerca, en el menú-K, como un icono en forma de un monitor de PC. Según el tema de escritorio, puede ser también la imagen de una concha (shell). Además puede encontrar el mismo icono en el menú-K bajo "Sistema".</p>
+
+							<p>Cuando abra una ventana de terminal se le presentará con el prompt de la forma:</p>
+
+<pre>
+username@hostname:/home/usuario$
+</pre>
+
+							<p>Debe reconocer el username como su propio nombre de login. El <span class="highlight-3">~ (tilde)</span> indica que está en su directorio home (casa) y 	<span class="highlight-3">$</span> que ha entrado en el sistema con privilegios de usuario. Al final verá el cursor. Esto es la línea de comandos, donde puede entrar órdenes que desea ejecutar.</p>
+
+							<p>Muchos comandos tienen que ser ejecutados con privilegios de superusuario o root (raíz). Para hacer esto escriba <span class="highlight-3">sux</span> en el prompt y oprima Entrar. Entonces le pedirá su clave de root. Tipee la contraseña y oprima Entrar otra vez (fíjese que cuando tipea su contraseña no se muestra nada en la pantalla).</p>
+
+							<p>Si la contraseña es correcta, el prompt se cambia a:</p>
+
+<pre>
+root@hostname:/home/usuario#
+</pre>
+
+							<p class="highlight-2">AVISO: Mientras esté trabajando como root (raíz), el sistema no hará nada para evitar hacer cosas peligrosas como borrar archivos importantes, etc. Tiene que estar seguro de lo que va a hacer, porque es posible dañar seriamente el sistema.</p>
+
+							<p>Note que el signo del prompt, <span class="highlight-3">$</span>, ha cambiado a un <span class="highlight-3">#</span> (signo de numero). En una consola el <span class="highlight-3">#</span> siempre indica que ha ingresado con privilegios de root (superusuario). <span class="highlight-3">En este manual omitiremos todo lo que aparece en la pantalla antes del $ ó el #</span>. Así, un comando como:</p>
+
+<pre>
+# apt-get install algun_programa
+</pre>
+
+							<p>significa: Abra un terminal, convíertase a root (mediante la orden sux) y entre el comando a continuación del prompt, # <span class="highlight-4">(no se escribe el #)</span>.</p>
+
+							<p>A veces una consola o terminal puede corromperse; en tal caso tipee:</p>
+<pre>
+reset
+</pre>
+							<p>y oprima la tecla Entrar.</p>
+
+							<p>Si la salida de una consola o terminal aparece distorsionada, a veces puede arreglarlo oprimiendo <span class="highlight-3">ctrl+l,</span> con lo cual borra la ventana del terminal. Esta distorsión suele ocurrir cuando trabaje con programas que usen el interfaz ncurses, tales como irssi</p>
+
+							<p>Una consola/terminal a veces parece quedar congelada, y sin embargo no lo está; cualquier cosa que escriba será procesado. Esto puede suceder al oprimir sin querer el <span class="highlight-3">ctrl+s</span>. En este caso, intente <span class="highlight-3">ctrl+q</span> para quitar el bloqueo del terminal.</p>
+
+	</div>
+	<div class="divider" id="colours">
+				    <h3><span class="highlight-4">Terminal coloreado</span>  <span class="highlight-3"> prompts de </span><span class="highlight-5">usuario:~</span><span class="highlight-1">$ </span> y <span class="highlight-2">root:</span><span class="highlight-1"># </span></h3>
+
+							<p>Los prompts de un terminal en colores pueden evitar que usted cometa errores molestos o catastróficos mientras esté como <span class="highlight-2">root # </span> cuando lo que realmente quería ser era un simple <span class="highlight-5">usuario~$</span>, o utilizar los colores del sistema como un marcador para los comandos que ejecutó unas 100 líneas atrás.</p>
+
+							<p>De forma predeterminada, los prompts tanto del usuario~$ como del root# son del mismo color y es muy fácil cambiar los colores de ambos.</p>
+
+							<p>Los colores básicos son:</p>
+<pre>
+(la sintaxis es 00;XX)
+[00;30] Negro
+[00;31] Rojo
+[00;32] Verde
+[00;33] Amarillo
+[00;34] Azul
+[00;35] Magenta
+[00;36] Cyan
+[00;37] Blanco
+[Reemplace [00;XX] con [01;XX] para tener una variación del color].
+</pre>
+				<h6>Para cambiar el color de su prompt de usuario ~$:</h6>
+							<p>Como $ usuario, haga lo siguiente con su editor de texto favorito:</p>
+<pre>
+$ &lt;editor&gt; ~/.bashrc
+</pre>
+							<p>Vaya a la línea 39 y quite el comentario, quedará así:</p>
+<pre>
+force_color_prompt=yes
+</pre>
+							<p>Vaya a la línea 53 y donde pone 01;32m, (por ejemplo), cambie al código de color que prefiera.</p>
+
+							<p>Por ejemplo, para un prompt de usuario~:$ en color <span class="highlight-1">cyan</span>, [01;36m\], tendrá que cambiar el código [01;XXm\] en 3 sitios con la sintaxis:</p>
+<pre>
+PS1='${debian_chroot:+($debian_chroot)}\[\033[01;36m\]\u@\h\[\033[01;36m\]:\[\033[01;36m\]\w\[\033[00m\]\$ '
+</pre>
+							<p>El nuevo aspecto sólo aparecerá en las nuevas sesiones de terminal.</p>
+
+				<h6>Para cambiar el color de su prompt de root#:</h6>
+<pre>
+sux
+&lt;editor&gt; /root/.bashrc
+</pre>
+							<p>Vaya a la línea 39 y quite el comentario, quedará así:</p>
+<pre>
+force_color_prompt=yes
+</pre>
+							<p>Vaya a la línea 53 y donde pone 01;32m, (por ejemplo), cambie al código de color que prefiera.</p>
+
+							<p>Por ejemplo, para un prompt de  root:# de color <span class="highlight-2"> rojo </span>, [01;31m\], tendrá que cambiar el código [01;XXm\] en 3 sitios con la sintaxis:</p>
+<pre>
+PS1='${debian_chroot:+($debian_chroot)}\[\033[01;31m\]\u@\h\[\033[01;31m\]:\[\033[01;31m\]\w\[\033[00m\]\$ '
+</pre>
+							<p>El nuevo aspecto sólo aparecerá en las nuevas sesiones de terminal.</p>
+
+					    <h6>Color de fondo del terminal</h6>
+							<p>Para cambiar el color de fondo y opciones de fuente de la terminal, vea el menú de opciones del terminal. </p>
+
+
+		<div class="screenshot"><img src="../lib/images-common/images-terminal/terminal-colour-0.1.png" title="Terminal colours" alt="Terminal colours" /></div>
+
+							<p>Hay muchas opciones disponibles para el cambio de colores, sin embargo recomendamos hacerlo sencillo.</p>
+	</div>
+	<div class="divider" id="sux">
+	<h2>Acerca de sux</h2>
+							<p>Un cierto número de comandos necesitan ser ejecutado con privilegios de root. Para lograr eso, escriba:</p>
+<pre>
+sux
+</pre>
+
+							<p> El comando común para convertirse en root es "su", pero utilizando "sux" en su lugar podrá ejecutar aplicaciones gráficas de X11 desde la línea de comando. <span class="highlight-3">sux</span> es un envoltorio para el comando estándar que transfiere sus credenciales X al usuario destinatorio. (Vea también <a href="#sudo"> sudo</a>).</p>
+
+
+							<p>Un ejemplo de ejecución de una aplicación de X11 vía sux es el uso de un editor de texto como kate para editar un archivo de root, para hacer particionamiento con gparted o con un gestor de archivos como dolphin o thunar. <!--También puede alterar archivos root con un clic derecho, y escoger "editar como raíz", entra su clave de raíz, que lo llame el "kdesu" para validar la contraseña.--></p>
+
+							<p>Algunas aplicaciones de KDE requiren escribir <span class="highlight-3">dbus-launch</span> antes de la aplicación:</p>
+<pre>
+dbus-launch &lt;Aplicación&gt;
+</pre>
+
+				<h6>Opciones de teclado en el escritorio KDE</h6>
+							<p>Para lanzar krunner en KDE:</p>
+<pre>
+Alt+F2
+</pre>
+							<p>o bien haga click con el botón derecho del ratón sobre el escritorio y elija:</p>
+<pre>
+Run Command
+</pre>
+							 <p>y entonces:</p>
+
+<pre>
+kdesu &lt;Application&gt;
+</pre>
+
+				<h6>Opciones en Xfce</h6>
+							<p>Para lanzar Run Command in Xfce:</p>
+<pre>
+Alt+F2
+</pre>
+							<p>o bien haga click con el botón derecho del ratón sobre el escritorio y elija:</p>
+<pre>
+Run Command
+</pre>
+							 <p>y entonces:</p>
+
+<pre>
+gksu &lt;Application&gt;
+</pre>
+					  <h6>Opciones en otros gestores de escritorio</h6>
+							<p>La opción generica para los Gestores de Escritorios principales es:</p>
+<pre>
+Alt+F2
+</pre>
+							<p>y entonces:</p>
+<pre>
+su-to-root -X -c &lt;Aplicación&gt;
+</pre>
+							<p><span class="highlight-3">Todas las opciones de teclado mencionadas antes pueden ser ejecutadas en un terminal.</span></p>
+	</div>
+	<div class="divider" id="sudo">
+					<h2>sudo no está soportado</h2>
+							<p>sudo no está configurado por defecto en la instalación en el disco duro. Se puede usar si hemos arrancado con el CD en vivo ya que no hay, en vivo, ningún pasword de root. La razón para ello es que si un atacante consiguiera los paswords del usuario, no podría inmediatamente adquirir privilegios de super-usuario y hacer cambios potencialmente dañinos en su sistema.</p>
+
+							<p>Otro problema con sudo es que permite correr aplicaciones de root con una configuración de usuario, lo que puede saltarse o cambiar los permisos. En algunos casos esto podría hacer que una aplicación fuera inutilizable para el usuario. Use <span class="highlight-3"> <a href="#sux">sux</a>, kdesu, gksu o bien su-to-root -X -c como recomendamos!</span></p>
+
+					  <h2>Trabajando como root</h2>
+							<p class="highlight-2">AVISO: Mientras esté trabajando como super-usuario (o root, o raíz), el sistema no hará nada para inhibir el hacer cosas peligrosas como borrar archivos importantes, etc. Tiene que estar seguro de lo que va a hacer, ya que es posible dañar seriamente el sistema.</p>
+
+							<p class="highlight-2">Bajo ninguna circunstancia debe estar ejecutando como root desde una consola/terminal para correr las aplicaciones que un usuario normal utiliza para sus actividades productivas diarias, por ejemplo correo electrónico, trabajo con aplicaciones ofimáticas, navegar por internet, etcétera.</p>
+
+	</div>
+	<div class="divider" id="cli-help">
+		<h2>Ayuda en la línea de comando</h2>
+
+							<p>Sí, la hay. Muchos comandos/programas de Linux vienen con su propio manual, llamado "man page" o "manual page" [pagina de manual] accesible desde la línea de comando. La sintaxis es:</p>
+
+<pre>
+$ man "comando"
+</pre>
+							<p>o</p>
+<pre>
+$ man -k &lt;keyword&gt;
+</pre>
+
+							<p>Esto traerá las páginas man para este comando. Navegue arriba y abajo con las flechas. Como un ejemplo, pruebe con:</p>
+
+<pre>
+$ man apt-get
+</pre>
+
+							<p>Para salir de la presentación de páginas man, escriba <span class="highlight-3">q</span>.</p>
+
+							<p>Otro utilidad muy práctica es el comando "apropos". Básicamente, apropos permite buscar en las páginas man cuando no se recuerda la sintaxis completa. Por ejemplo, pruébelo con:</p>
+
+<pre>
+$ apropos apt-
+</pre>
+
+							<p>Esto listará todos las comandos para el gestor de paquetes 'apt'. La utilidad 'apropos' es una herramienta muy poderosa, pero una descripción en detalle está más allá del alcance de este manual. Para los detalles de su uso, ver su página man.</p>
+
+
+	</div>
+	<div class="divider" id="term-cmds">
+		<h2>Lista de Comandos del Terminal de Linux (incompleto)</h2>
+
+							<p>Un tutoríal excelente en el uso de BASH es el de<a href="http://linuxcommand.org/"> linuxcommand.org</a></p>
+
+							<p class="highlight-3">Una lista muy amplia de 687 comandos en orden alfabético del libro<a href="http://www.linuxdevcenter.com/linux/cmd/#a"> Linux in a Nutshell, 5th Edition: O'Reilly Publications</a> puede encontrarse aquí. Es una referencia que todos debemos tener a mano.</p>
+
+							<a>Hay muchos tutoriales disponibles en internet. Unos muy buenos para empezar son: <a href="http://linux.org.mt/article/terminal">A Beginner's Bash</a> y <a href="http://mipagina.euskaltel.es/iosus/linux/Bash-Prompt-HOWTO.html">Bash Prompt COMO</a></p>
+
+							<p>Use su buscador para encontrar otros. Entre "linux bash tutorial español" en Google sin las comillas.</p>
+
+	</div>
+	<div class="divider" id="shell-scripts">
+		<h2>Un "script" y como utilizarlos</h2>
+							<p>Un script de consola es una manera de agrupar múltiples comandos juntos en un archivo. Entrando solamente el nombre del script, los comandos incluidos serán ejecutados según su orden en el script. aptosid viene con varios scripts muy útiles para facilitar la vida de sus usuarios.</p>
+
+							<p>Si el script de consola está en el directorio corriente de trabajo (pwd): </p>
+<pre>
+./nombre_del_script
+</pre>
+
+							<p class="highlight-3">Algunos scripts requieren acceso como root en un terminal y otros no, depende completamente del propósito del script.</p>
+
+			<h5>Instalación de Scripts y procedimiento de ejecución</h5>
+   							<p>Use el wget para bajar el archivo script, ubicándolo en donde estaba recomendado <span class="highlight-3">(por ejemplo, puede pedir que lo ubique en /usr/local/bin)</span>; puede usar el copiar/pegar del ratón y pegarlo en el konsole, después entre como root, con <span class="highlight-3">sux</span>.</p>
+
+					<h6>Ejemplo del uso de wget que requiere <span class="highlight-3">acceso como root (sux) </span></h6>
+<pre>
+sux
+cd /usr/local/bin
+wget script-name
+</pre>
+							<p>Ahora tiene que hacer el archivo ejecutable</p>
+<pre>
+chmod +x  script-name
+</pre>
+							<p>Podría usar un navegador para bajar un archivo script, entonces colóquelo donde lo recomendaban ubicarlo, aunque todavía necesitará hacerlo ejecutable.</p>
+
+					<h6>Ejemplo de usar wget como usuario</h6>
+							<p>Para colocar el archivo en su <span class="highlight-3">$HOME como usuario '$'</span>:</p>
+<pre>
+$wget http://bluewater.aptosid.com/shell-script-test/test-script.sh
+</pre>
+
+<pre>
+$ chmod +x test-script.sh
+</pre>
+							<p>Para ejecutar un script, abra una consola y ejecute el script:</p>
+
+<pre>
+$ ./test-script.sh
+</pre>
+							<p>Debe ver algo como esto:</p>
+<pre>
+Congratulations user
+You successfully downloaded and executed a bash script!
+Welcome to aptosid-manuals http://manual.aptosid.com
+</pre>
+
+
+	</div>
+			<div id="rev">Contenido modificado el 14/08/2010 0100 UTC</div>
+
+</div>
+</body>
+</html>

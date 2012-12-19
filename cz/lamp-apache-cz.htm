@@ -1,0 +1,607 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cs" lang="cs">
+<head>
+	<title>Manuály aptosidu - server Apache</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Poslední revizi překladu provedl pumrel 11.3.2011 1210 CET -->
+<!--htdig_noindex--><div id="menu"> <!-- menu starts here -cz lang maintainer pumrel-->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="Na stránky aptosid.com, forum a wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-cz.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="Prohledávat manuál" alt="Search" />Hledat online - offline</a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Vyberte jiný jazyk - Choose another language CS, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="lang-switch CS, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-cz.htm">Manuál operačního systému aptosid</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-cz.htm#welcome-gen">Manuál operačního systému aptosid &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-cz.htm#cred-team">Autoři</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-cz.htm#how-to">Jak používat tento manuál &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-cz.htm#how-to">Jak používat tento manuál</a></li>
+					  <li><a href="welcome-cz.htm#table-contents">Obsah</a></li>
+					</ul>
+					</li>
+		<li><a href="help-cz.htm#help-gen">Kde hledat pomoc &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-cz.htm#help-gen">Kde a jak hledat pomoc</a></li>
+					  <li><a href="help-cz.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-cz.htm#welcome-quick">První kroky se aptosidem</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-cz.htm">Obsah ISO, Vydání, Zrcadla pro stahování a Vypalování</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-cz.htm#cd-content">Obsah ISO a nároky na systém &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-cz.htm#rolling">Poznámky k vydání</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-cz.htm#download-aptosid">Zrcadla pro stahování a vypálení &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-cz.htm#md5">Kontrolní součet md5</a></li>
+					  <li><a href="cd-dl-burning-cz.htm#burn-nero">Vypálení ve Windows</a></li>
+					  <li><a href="cd-dl-burning-cz.htm#burn-linux">Vypálení v Linuxu</a></li>
+					  <li><a href="cd-no-gui-burn-cz.htm#burning-no-gui">Skript burniso</a></li>
+					  <li><a href="cd-no-gui-burn-cz.htm#burn-no-gui-gen">Vypálení z terminálu</a></li>
+					  <li><a href="cd-dl-burning-cz.htm#download-aptosid">Zrcadla pro stažení aptosidu</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-cz.htm">Live Mód</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-cz.htm#rootpw">Root-heslo v aptosid-Live</a></li>
+				<li><a href="live-mode-cz.htm#live-cd-installsoft">Instalace programů pod aptosid-Live</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-cz.htm">Terminál / Konsole</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-cz.htm#term-kon">Terminál / Konsole &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-cz.htm#term-kon">Terminál / Konsole</a></li>
+					  <li><a href="term-konsole-cz.htm#colours">Barevné řádky terminálu</a></li>
+					  <li><a href="term-konsole-cz.htm#cli-help">Nápověda terminálu</a></li>
+					  <li><a href="help-cz.htm#init3-tools">Užitečné nástroje v textovém módu(tty) - init 3</a></li>
+					  <li><a href="term-konsole-cz.htm#term-cmds">Seznam příkazů v terminálu Linuxu</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-cz.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-cz.htm">Spouštěcí příkazy</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-cz.htm#cheatcodes">Spouštěcí příkazy pod Live-ISO specifické pro aptosid</a></li>
+				<li><a href="cheatcodes-cz.htm#cheatcodes-linux">Spouštěcí příkazy pro Linux</a></li>
+				<li><a href="cheatcodes-vga-cz.htm#vga">VGA kódy</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-cz.htm">Vytváření diskových oddílů - tradičně, s GPT a s LVM</a>
+		<ul class="sub-menu" id="sm6">
+			  <li><a href="part-gparted-cz.htm#hd-ntfs3g">Zapisování na diskový oddíl NTFS pomocí ntfs-3g</a></li>
+			  <li><a href="part-lvm-cz.htm#part-lvm">Vytvoření disk. oddílů pro použití LVM - Logical Volume Manager</a></li>
+			  <li><a href="part-gparted-cz.htm#partition">Vytvoření diskových oddílů v grafickém rozhraní &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-cz.htm#partition">Vytvoření diskových oddílů pomocí GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-cz.htm#ntfs">Změna velikosti diskového oddílu NTFS pomocí GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-cz.htm#partition">Vytvoření diskových oddílů s CLI &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-cz.htm#partition">Vytváření diskových oddílů pomocí cfdisk</a></li>
+					    <li><a href="part-cfdisk-cz.htm#formating">Formátování po vytvoření diskových oddilů pomocí cfdisk</a></li>
+					    <li><a href="part-gdisk-cz.htm#gdisk-6">Formátování po vytvoření diskových oddílů s gdiskem</a></li>
+					    <li><a href="part-gdisk-cz.htm#gdisk-1">Diskové oddíly GPT s gdiskem</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-cz.htm#part-example">Základy vytváření diskových oddílů &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-cz.htm#part-example">Příklady velikostí diskových oddílů</a></li>
+					  <li><a href="part-uuid-cz.htm#uuid">UUID, přestavění fstab a vytváření přípojných bodů</a></li>
+					  <li><a href="part-cfdisk-cz.htm#disknames">Pojmenovávání diskových oddílů a ostatní</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-cz.htm">Možnosti instalace - HD, USB, VM and Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-cz.htm#Inst-prep">Příprava instalace &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-cz.htm#Inst-prep">Příprava instalace</a></li>
+					  <li><a href="hd-install-cz.htm#Installation">Instalace na pevný disk</a></li>
+					  <li><a href="hd-install-cz.htm#first-hd-boot">První spuštění</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-cz.htm#fromiso">Načtení pomocí fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-cz.htm#fromiso">Načtení pomocí fromiso - Přehled</a></li>
+					  <li><a href="hd-install-opts-cz.htm#grub2-fromiso">Načtení 'fromiso' s Grub2</a></li>
+					  <li><a href="hd-install-opts-cz.htm#fromiso-persist">fromiso a persist</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-cz.htm#usb-hd">Instalace na USB-disk &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-cz.htm#usb-hd">Instalace na USB-disk - specifické pro aptosid - aptosid-on-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-cz.htm#raw-usb">Zapsaní aptosidu na USB/SSD-disk s jakýmkoliv systémem Linux, MS Windows nebo Mac OS X</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-cz.htm#install-crypt">Instalace na šifrovené diskové oddíly - cryptroot</a></li>
+		  <li><a href="nbdboot-cz.htm#nbd1">Načtení aptosidu přes síť</a></li>
+		  <li><a href="hd-install-vmopts-cz.htm#vm">Možnosti instalace ve Virtuálním Stroji</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-cz.htm">Grafické karty, monitory, Xorg,  &amp; ovladače</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-cz.htm#mon-res">Rozlišení obrazovky a monitory &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-cz.htm#mon-res">Rozlišení obrazovky a monitory</a></li>
+					  <li><a href="hw-dev-mon-cz.htm#xrandr">Dva monitory a xrandr</a></li>
+					  <li><a href="hw-dev-mon-cz.htm#mon-binary">Dva monitory (za použití binárních ovladačů)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-cz.htm#foss-xorg">Ovladače GPU &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-cz.htm#ati-3d">3D ovladače pro AMD/ATI</a></li>
+					  <li><a href="gpu-cz.htm#intel">2D a 3D ovladače pro Intel</a></li>
+					  <li><a href="gpu-cz.htm#nvidia">3D ovladače pro Nvidia</a></li>
+					  <li><a href="gpu-cz.htm#foss-xorg">Svobodné ovladače Xorg</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-cz.htm#fw-detect">Rozpoznání firmwaru - non-free</a></li>
+			  <li><a href="nf-firm-cz.htm#non-free-firmware">Přidání non-free do seznamu zdrojů</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-cz.htm#install-add">Správci oken</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-cz.htm">KDE and XFCE Správci oken &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-cz.htm#xfce-notes">Užitečné dodatečné aplikace pro Xfce</a></li>
+					    <li><a href="wm-dm-cz.htm#install-add">Užitečné dodatečné aplikace pro KDE</a></li>
+					    <li><a href="wm-dm-cz.htm#desk-freeze">Zamrznutí plochy</a></li>
+					    <li><a href="wm-dm-cz.htm#kde-login">Nejde se přihlásit do KDE</a></li>
+					    <li><a href="wm-dm-cz.htm#ch-th">Změna témat</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-cz.htm#dm">Instalace dodatečných správců zobrazení</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-cz.htm">Připojení k internetu, WiFi, LAN a sítím</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-cz.htm">Sestava LAMP aptosidu &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-cz.htm#serv-apache">Sestava LAMP aptosidu</a></li>
+					    <li><a href="lamp-apache-cz.htm#serv-ftp">FTP klienty</a></li>
+					    <li><a href="lamp-apache-cz.htm#serv-sec">Bezpečnostní protokoly</a></li>
+					    <li><a href="lamp-apache-cz.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-cz.htm#serv-mysql">Nastavení MySQL</a></li>
+					    <li><a href="lamp-ppp-cz.htm#serv-php">PHP v Apache</a></li>
+					    <li><a href="ntp-server-cz.htm#ntp-server">Nastavení Timeserveru</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-cz.htm#tor">Firewally and Soukromí &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-cz.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-cz.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-cz.htm#firewalls">Firewally</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-cz.htm#ssh-x">SSH a Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-cz.htm#setup">Nastavení Samba-Serveru</a></li>
+						  <li><a href="samba-cz.htm#configure">Konfigurace SAMBY (Windows)</a></li>
+						  <li><a href="ssh-cz.htm#ssh-fs">Vzdálené připojení přes SSH</a></li>
+						  <li><a href="ssh-cz.htm#ssh-x">Aplikace X přes SSH</a></li>
+						  <li><a href="ssh-cz.htm#ssh-f">Grafické rozhraní přes SSH s Konquerorem</a></li>
+						  <li><a href="ssh-cz.htm#ssh-w">Přenos rozhraní X přes SSH z Windows-PC</a></li>
+						  <li><a href="ssh-cz.htm#ssh">SSH a soukromí</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-cz.htm#netcardconfig">WIFI připojení &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-cz.htm#netcardconfig">Připojení se online - Ceni</a></li>
+						    <li><a href="inet-wpagui-cz.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-cz.htm#net-set1">WiFi - nastavení pro WiFi roaming</a></li>
+						    <li><a href="inet-wpa-cz.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-cz.htm#hotswitch">Přepínání síťového připojení mezi WiFi a Kabelovým</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-cz.htm#netcardconfig">Kabelové připojení &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-cz.htm#dial-mod">56k Modemy</a></li>
+						    <li><a href="inet-ceni-cz.htm#netcardconfig">Připojení se online- Ceni</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-cz.htm#fw-detect">Rozpoznání firmwaru - non-free</a></li>
+		<li><a href="nf-firm-cz.htm#non-free-firmware">Přidání non-free do seznamu zdrojů</a></li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-cz.htm">Správa balíčků dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-cz.htm#apt-cook">APT návod a zdroje softwaru &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-cz.htm#apt-cook">APT-návod (CookBook) a zdroje software</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#apt-install">Instalace nového balíčku</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#apt-delete">Smazání balíčku</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#apt-downgrade">Podržení balíčku nebo instalace nižší verze</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#apt-cache">Vyhledávání balíčků pomocí apt-cache</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#gui-pacsea">Vyhledávání balíčků v graf. rozhraní</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-cz.htm#kern-upgrade">Povýšení verze jádra (kernel) &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-cz.htm#kern-remove">Odstranění jádra</a></li>
+					    <li><a href="sys-admin-kern-upg-cz.htm#kern-upgrade">Povýšení verze jádra</a></li>
+					    <li><a href="sys-admin-kern-upg-cz.htm#dmakms">Dynamická instalaca modulů jádra s dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-cz.htm#apt-upgrade">Aktualizace nainstalovaného systému - dist-upgrade - Přehled &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-cz.htm#live-cd-upgrade">Aktualizace pomocí Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-cz.htm#approx">dist-upgrade vícero počítačů přes LAN</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#apt-upgrade">Aktualizace nainstalovaného systému - dist-upgrade - Přehled</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#du-st">Aktualizace nainstalovaného systému - dist-upgrade - jednotlivé kroky</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-cz.htm">Administrace systému</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-cz.htm#bois-prep">Povýšení verze BIOSu pomocí FreeDOS</a></li>
+		<li><a href="vir-rkits-cz.htm#virus-rkits">Vyhledávače virů a rootkitů</a></li>
+		<li><a href="hd-install-cz.htm#adduser">Přidání uživatelů a hesel &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-cz.htm#adduser">Přidání nového uživatele</a></li>
+					    <li><a href="sys-admin-gen-cz.htm#pw-lost">Ztracené root heslo, nové heslo</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-cz.htm#start-services">Služby a úrovně spuštění init &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-cz.htm#start-services">Spouštění/zastavení služeb</a></li>
+					    <li><a href="sys-admin-gen-cz.htm#pkill">Zabití služby nebo procesu</a></li>
+					    <li><a href="sys-admin-gen-cz.htm#init">Úrovně spuštění aptosidu - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-cz.htm#rsync">Zálohování systému &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-cz.htm#rdiff">Zálohování pomocí rdiff</a></li>
+					    <li><a href="sys-admin-rsync-cz.htm#rsync">Zálohování pomocí rsync</a></li>
+					    <li><a href="home-cz.htm#home-bu">Přesunutí /home adresáře</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-cz.htm#fonts">CUPS, fonty a zvuk &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-cz.htm#fonts">Fonty</a></li>
+					     <li><a href="sys-admin-gen-cz.htm#cups">CUPS - tiskový systém</a></li>
+					     <li><a href="sys-admin-gen-cz.htm#sound">Zvukový mixér</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-cz.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-cz.htm#chroot">Grub2 - obnova Grubu s pomocí chroot</a></li>
+					    <li><a href="sys-admin-grub2-cz.htm#mbr-over-grub2">Grub2 - přepsání zaváděcího sektoru MBR</a></li>
+					    <li><a href="sys-admin-grub2-cz.htm#multi-os">Grub2 - zavádění  více systémů</a></li>
+					    <li><a href="sys-admin-grub2-cz.htm#grub1-grub2">Grub2 - povýšení z Grub1</a></li>
+					    <li><a href="sys-admin-grub2-cz.htm#grub2">Grub2 - přehled</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Sponsored by webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid is proudly hosted by webtropia.com" alt="aptosid is proudly hosted by webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+<div class="divider" id="serv-apache">
+<!--			<h2 id="top-header">aptosid LAMP Stack</h2>-->
+			<h2 id="top-header">Soustava LAMP v aptosidu</h2>
+<!--				<p>The acronym LAMP refers to a set of free software programs commonly used together to run dynamic Web sites or servers<br />
+				Linux, the operating system<br />
+				Apache, the Web server<br />
+				MySQL, the database management system (or database server)<br />
+				Perl, PHP, and/or Python, scripting languages</p>-->
+				<p>Akronym LAMP odkazuje na sestavu svobodných programů, které se obvykle používájí dohromady pro spouštění dynamických Webových stránek nebo serveru<br />
+				Linux, operační systém<br />
+				Apache, Webový server<br />
+				MySQL, systém spravování databází (nebo databázový server)<br />
+				Perl, PHP, a/nebo Python, skriptovací jazyk</p>
+<!--				<h5 class="highlight-2">WARNING: Never use your day-to-day PC to act as an internet web  server! Use a dedicated PC to be an internet web server and let it do nothing else!</h5>-->
+				<h5 class="highlight-2">VAROVÁNÍ: Nikdy nepoužívejte váš každodenní počítač jako internetový webový server! Použijte k tomu určený počítač a ať na něm neběží nic jiného než internetový webový server!</h5>
+<!--				<p>Server uses:<br />
+				a) <span class="highlight-3">a local test server for web designers without internet connectivity which is the scope of this topic;</span><br />
+				b) a private "closet" server connected to the net;<br />
+				c) a private web server fully propagated to the internet<br />
+				d) a commercial web server which is beyond the scope of this manual</p>-->
+				<p>Server používá:<br />
+				a) <span class="highlight-3">lokální server pro testování určený webovým designerům bez internetového připojení, což je předmětem této sekce;</span><br />
+				b) privátní "skříňový" server připojený na internet;<br />
+				c) privátní webový server plně propagovaný na internet;<br />
+				d) komerční webový server, což je nad rámec tohoto povídání.</p>
+
+<!--			<h5>Minimum Requirements</h5>
+				<p>At least 256MB of RAM available. Anything less than this minimum ram will cause lot of problems since running a server with mysql  requires lot of RAM to run properly. Mysql will error of "cannot connect to mysql.sock" if you dont have enough memory in your server.</p>
+							<p>The packages you will need to install are:</p>-->
+			<h5>Minimální požadavky</h5>
+				<p>Alespoň 256MB dostupné RAM. Jakkoliv méně než je toto minimum způsobí spoustu problému, jelikož spouštění serveru s databází mysql vyžaduje hodně paměti, aby běžel tak, jak má. Mysql nahlásí chybu "cannot connect to mysql.sock", pokud nebude mít k dispozici dostatek paměti.</p>
+							<p>Balíčky, které bude nutné nainstalovat:</p>
+<pre>
+apache2
+apache2-utils
+apache2-mpm-prefork
+php5 php5-common
+mysql-server
+mysql-common
+libapache2-mod-php5
+php5-mysql
+phpmyadmin
+</pre>
+				<p class="highlight-2">VAROVÁNÍ</p>
+<pre>
+apt-get remove --purge splashy
+</pre>
+<!--				<p class="highlight-2">As splashy always breaks mysql</p>-->
+				<p class="highlight-2">Jelikož splashy vždy rozhodí mysql</p>
+<!--							<p>The Apache configuration file is located at:<span class="highlight-3">/etc/apache2/apache2.conf</span>  and your web folder is <span class="highlight-3">/var/www</span>. Do not tweak the debian default settings for 'mpm-worker/mpm-prefork' as the debian defaults are sane. <!--(i.e. MaxRequestsPerChild   0,  in apache config, as soon as you set a limit, apache does not manage it any more, and leaking apps are able to maximise the ram and send the server offline). --></p>-->
+							<p>Konfigurace Apache se nachází zde:<span class="highlight-3">/etc/apache2/apache2.conf</span> a váš webový adresář je zde: <span class="highlight-3">/var/www</span>. Neupravujte vaše výchozí nastavení debianu pro 'mpm-worker/mpm-prefork', jelikož toto nastavení je rozumné.</p>
+<!--					<p>To check whether php is installed and running properly, just create a test.php in your /var/www folder with phpinfo() function exactly as shown below.</p>-->
+					<p>Pro ověření, jestli je php nainstalováno a správně běží, tak jen vytvořte test.php ve vašem adresáři /var/www s funkcí phpinfo() přesně tak, jak je ukázáno zde:</p>
+<pre>
+mcedit /var/www/test.php
+
+# test.php
+&lt;?  phpinfo(); ?&gt;
+</pre>
+<!--					<p>Point your browser to:</p>-->
+					<p>Zaměřte sem svůj prohlížeč:</p>
+<pre>
+http://localhost/test.php
+nebo
+http://yourip:80/test.php
+</pre>
+<!--					<p>This should show all your php configuration and default settings.</p>-->
+					<p>To by mělo zobrazit vaši veškorou konfiguraci php a výchozí nastavení.</p>
+<!--					<p>You can edit necessary values or setup virtual domains using apache configuration file.</p>-->
+					<p>Nezbytné hodnoty a nastavení virtuálních domén můžete nastavit přímo v konfiguračním souboru Apache.</p>
+<!--					<p>If you want to test your installation go to your browser and type the following</p>-->
+					<p>Jestli chcete ozkoušet vaši instalaci, spusťte si váš prohlížeč a zadejte následující:</p>
+<pre>
+http://vaseipadresa/apache2-default/
+</pre>
+<!--					<p>This should display welcome message then your installation is correct.</p>-->
+					<p>Měla by být zobrazena uvítací stránka, což bude znamenat, že je vaše instalace v pořádku.</p>
+<!--					<p>Default document root directory for apache2 is <span class="highlight-3">/var/www</span> Change this to: </p>-->
+					<p>Výchozí adresář root dokumentů pro apache2 je zde: <span class="highlight-3">/var/www</span> Změňte ho na: </p>
+<pre>
+mkdir /home/moje_jmeno/www
+ln -s /home/moje_jmeno/www /var/www
+</pre>
+<!--					<p>By doing the above commands you can now edit your web site inside your home as normal user.</p>-->
+					<p>Těmito příkazy dosáhnete toho, že budete moci upravovat svoje webové stránky přimo ve vašem home jako normální uživatel.</p>
+	</div>
+<div class="divider" id="serv-ftp">
+<!--			<h2>FTP Clients</h2>
+				<p>Use SSH and read carefully the <a href="ssh-cz.htm#ssh">SSH topic</a> , also aptosid has another built in FTP client in the form of Konqueror to enable you to upload your files.</p>-->
+			<h2>FTP klienty</h2>
+				<p>Používejte SSH a pečlivě si přečtěte <a href="ssh-cz.htm#ssh">Sekci o SSH</a>. aptosid má taktéž další vestavěný klient FTP v Konqueroru, který vám umožní nahrávat vaše soubory.</p>
+
+	</div>
+<div class="divider" id="serv-sec">
+<!--			<h2>Enabling good security protocols for Web Servers</h2>-->
+			<h2>Zapnutí dobrých bezpečnostních protokolů pro Webové servery</h2>
+<!--				<h3>Firewalls</h3>
+				<p><span class="highlight-2">Without a firewall there is absolutely no  security for your server. Remember block EVERYTHING until you need it, then reblock it!</span>.</p>-->
+				<h3>Firewally</h3>
+				<p><span class="highlight-2">Bez firewallu neexistuje pro váš server naprosto žádné bezpečí. Nezapomeňte blokovat VŠE, pokud to opravdu nepotřebujete. Pak to odblokujte!</span>.</p>
+<pre>
+21 (ftp)
+22 (SSH)
+25 110 (email)
+443 (SSL http nebo https)
+993 (imap ssl)
+995 (pop3 ssl)
+80 (http)
+a jakýkoli jiný potřebný port!
+</pre>
+
+<!--				<h3>Protect Server Files by Default</h3>-->
+				<h3>Chraňte v základu vaše soubory serveru</h3>
+<!--					<p>One aspect of Apache which is occasionally misunderstood is the feature of default access. That is, unless you take steps to change it, if the server can find its way to a file through normal URL mapping rules, therefore it can serve it to clients.</p>-->
+					<p>Jeden aspekt Apache, který je čast mylně chápán, je možnost výchozího přístupu. To znamená, že pokud neprovedete kroky k jeho změnění, server se pokusí najít cestu k souborům pomocí normálních pravidel mapování URL a poskytne je klientům.</p>
+<!--					<p>For instance, consider the following example:</p>-->
+					<p>Pro příklad se podívejte na následující příklad:</p>
+<pre>
+ 1. # cd /; ln -s / public_html
+ 2. Accessing http://localhost/~root/
+</pre>
+<!--					<p class="highlight-2">This would allow clients to walk through the entire filesystem! To work around this, add the following block to your server's configuration:</p>-->
+					<p class="highlight-2">To by klientům umožnilo se procházet celým souborovým systémem! Abyste tomu předešli, přidejte následující zábrany do konfigurace vašeho serveru:</p>
+<pre>
+&lt;Directory /&gt;
+   Order Deny,Allow
+   Deny from all
+&lt;/Directory&gt;
+</pre>
+<!--				<p>This will forbid default access to filesystem locations. Add appropriate &lt;Directory&gt; blocks to allow access only in those areas you wish. For example,</p>-->
+				<p>To zakáže výchozí přístup k lokacím v soborovém systému. Přidejte příslušné zábrany &lt;Directory&gt; pro poskytnutí přístupu pouze tam, kde si to přejete. Npaříklad,</p>
+<pre>
+&lt;Directory /usr/users/*/public_html&gt;
+    Order Deny,Allow
+    Allow from all
+&lt;/Directory&gt;
+&lt;Directory /usr/local/httpd&gt;
+    Order Deny,Allow
+    Allow from all
+ &lt;/Directory&gt;
+</pre>
+<!--				<p>Pay particular attention to the interactions of &lt;Location&gt; and &lt;Directory&gt; directives; for instance, even if &lt;Directory /&gt; denies access, a &lt;Location /&gt; directive might overturn it.</p>-->
+				<p>Dbejte zvýšené pozornosti interakcím mezi instrukcemi &lt;Location&gt; a &lt;Directory&gt;; například, i když &lt;Directory /&gt; přístup zakazuje, příkaz &lt;Location /&gt; jej může zvrátit.</p>
+<!--				<p>Also be wary of playing games with the UserDir directive; setting it to something like "./" would have the same effect, for root, as the first example above. If you are using Apache 1.3 or above, we strongly recommend that you include the following line in your server configuration files:</p>-->
+				<p>Také se vyvarujte hrátkám s příkazem UserDir; jeho nastavení na něco jako "./" by mělo, pro root, stejný efekt jako výše uvedený příklad. Jestli používate Apache 1.3 neby vyšší, vřele doporučujeme, abyste zahrnuli následující řádek do vaše konfiguračního souboru server:</p>
+<pre>
+UserDir disabled root
+</pre>
+
+	</div>
+<div class="divider" id="serv-ssl">
+			<h2>SSL</h2>
+
+<!-- 				<p>Run the script “apache2-ssl-certificate”</p>-->
+ 				<p>Spusťte skript “apache2-ssl-certificate”</p>
+<pre>
+# apache2-ssl-certificate
+</pre>
+<!--				<p>The following screen will appear for you to enter all the required information.</p>-->
+				<p>Objeví se následující obrazovka, kde budete muset zadat všechny vyžadované informace.</p>
+<pre>
+Creating self-signed certificate
+replace it with one signed by a certification authority (CA) enter your ServerName at the Common Name prompt. If you want your certificate to expire after x days call this programm
+with -days x
+-----
+Generating a 1024 bit RSA private key
+--------
+writing new private key to '/etc/apache2/ssl/apache.pem'
+--------
+You are about to be asked to enter information that will be incorporated into your certificate request.
+-----------
+What you are about to enter is what is called a Distinguished Name or a DN. There are quite a few fields but you can leave some blank. For some fields there will be a default value,
+----------
+If you enter '.', the field will be left blank.
+</pre>
+<pre>
+Country Name (2 letter code) [GB]:
+
+State or Province Name (full name) [Some-State]:
+
+Locality Name (eg, city) []:
+
+Organization Name (eg, company; recommended) []:
+
+Organizational Unit Name (eg, section) []:
+
+server name (eg. ssl.domain.tld; required!!!) []:
+
+Email Address []:
+</pre>
+
+<!--					<p>Run the script “a2enmod ssl”  i.e</p>-->
+					<p>Spusťte sktipt “a2enmod ssl”</p>
+<pre>
+# a2enmod ssl
+</pre>
+<!-- 					<p>This will automatically generate a symbolic link between mods- available and mods – enabled </p>-->
+ 					<p>To automaticky vytvoří symbolický odkaz mezi módy - dostupný a módy - zapnutý</p>
+<!--					<p>Make a copy of '/etc/apache2/sites-available/default' file in the /etc/apache2/sites-available/ - call it 'ssl'</p>-->
+					<p>Vytvořte kopii souboru '/etc/apache2/sites-available/default' v adresáři the /etc/apache2/sites-available/ - nazvěte ji 'ssl'</p>
+<pre>
+# cp /etc/apache2/sites-available/default /etc/apache2/sites-available/ssl
+</pre>
+<!--					<p>Make a sym-link to this new site configuration for this use</p>-->
+					<p>Vytvořte symbolický odkaz na toto nové umístění nastavení, aby bylo použito</p>
+<pre>
+#  ln -s /etc/apache2/sites-available/ssl /etc/apache2/sites-czabled/
+(or)
+#a2ensite ssl
+</pre>
+<!-- 					<p>If you want to change the any basic configuration settings change in /etc/apache2/apache2.conf and if you want to change the default document root change in /etc/apache2/sites-available/default file and restart the apache server.</p>-->
+ 					<p>Jestli chcete pozměnit jakékoliv základní nastavení, proveďte to v /etc/apache2/apache2.conf  a pokud chcete změnit výchozí dokument, změňte rootem soubor /etc/apache2/sites-available/default a restartujte server apache.</p>
+<!-- 					<p>To Restart Apache server use the following command</p>-->
+ 					<p>Pro restartování serveru Apache použijte následujícího příkazu</p>
+<pre>
+#/etc/init.d/apache2 restart
+</pre>
+<!-- 					<p>Now we need to change the port address in /etc/apache2/ports.conf by default it will listen port 80 and now we are installing with SSL we need to change port 443 to listen</p>-->
+ 					<p>Nyní potřebujeme změni adresu portu v /etc/apache2/ports.conf. V základu je použito portu 80 a teď, když instalujeme SSL, musíme to změnit na port 443:</p>
+<pre>
+ Listen 443
+</pre>
+<!--					<p>Edit /etc/apache2/sites-available/ssl (or whatever you called your new ssl site's config) and change port 80 in the name of the site to 443.</p>-->
+					<p>Upravte /etc/apache2/sites-available/ssl (nebo jak jste nazvali vaše nové umístění nastavení ssl) a změňte port 80 v názvu umístění na 443.</p>
+<!--					<p>Add below two lines some where in /etc/apache2/apache2.conf file</p>-->
+					<p>Níže uvedené dva řádky přidejte kamkoliv do souboru /etc/apache2/apache2.conf</p>
+<pre>
+  SSLEngine On
+
+  SSLCertificateFile /etc/apache2/ssl/apache.pem
+</pre>
+<!--					<p>Edit SSLCertificateFile /etc/apache2/ssl/apache.pem and enter the locations of certificate file and certificate key file .Below one is the example</p>-->
+					<p>Upravte SSLCertificateFile /etc/apache2/ssl/apache.pem a zadejte umístění souboru souboru certifikačního klíče. Níže je nějáký příklad:</p>
+<pre>
+SSLCertificateFile /etc/apache2/ssl/online.test.net.crt
+SSLCertificateKeyFile /etc/apache2/ssl/online.test.net.key
+</pre>
+<!--					<p>Set ServerSignature off, follow these steps edit the /etc/apache2/apache2.conf  file and add these two lines</p>-->
+					<p>Nastavet ServerSignature na off - upravte soubor the /etc/apache2/apache2.conf  a přídejte následující dva řádky:</p>
+<pre>
+  ServerSignature Off
+ ServerTokens ProductOnly
+</pre>
+
+<!-- 					<p>If you want to allow the different index files types check for the following line in /etc/apache2/apache2.conf file</p>-->
+ 					<p>Jestli chcete povolit rozličné typy index souborů, zkontrolujte příslučný řádek v souboru /etc/apache2/apache2.conf</p>
+<pre>
+ DirectoryIndex index.html index.cgi index.pl index.php index.xhtml index.shtml
+</pre>
+<!-- 					<p>Restart the apache server</p>-->
+ 					<p>Restartuje server apache</p>
+<pre>
+ /etc/init.d/apache2 restart
+</pre>
+
+<!--					<p>You should now have a test server sandbox, should you want to connect to the interent, with it, <span class="highlight-2">DONT!... Use another PC purely dedicated to being an internet  web server!</span></p>-->
+					<p>Nyní byste měli mít testovací server. Pokud byste se s ním chtěli připojit k internetu, tak to <span class="highlight-2">NEDĚLEJTE!...  Použijte jiný počítač, který je určen jen k tomu, aby zastával webový internetový server!</span></p>
+
+	</div>
+<!--					<p>Sources:</p>-->
+					<p>Zdroje:</p>
+					<p><a href="http://www.mysql-apache-php.com/"> http://www.mysql-apache-php.com</a></p>
+					<p><a href="http://httpd.apache.org/docs/1.3/misc/security_tips.html"> http://httpd.apache.org/docs/1.3/misc/security_tips.html</a></p>
+					<p><a href="http://www.debianhelp.co.uk/webserver.htm"> http://www.debianhelp.co.uk/webserver.htm</a></p>
+
+<!--			<div id="rev">Content last revised 14/08/2010 0100 UTC </div>-->
+			<div id="rev">Obsah naposledy revidován 14/08/2010 0100 UTC </div>
+</div>
+</body>
+</html>

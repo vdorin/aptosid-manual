@@ -1,0 +1,594 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl" lang="nl">
+<head>
+	<title>aptosid Manuals - VM Installation Options</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision by bluewater 22/04/2009 1350hrs UTC -->
+<!--htdig_noindex--><div id="menu"> <!-- menu starts here nl lang maintained by btorrem, Bram0s,eislon -->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<!-- menu last translated by eislon 2012.09.30 0933 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="Naar aptosid.com forums and wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-nl.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" />Zoeken Online Offline</a> </li>
+		<!--<li><a href="http://manual.aptosid.com/meta-manual">Gemeenschap Software Selecties</a></li>-->
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Kies een andere taal - Choose another language CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="lang-switch CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-nl.htm">aptosid OS Handleiding</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-nl.htm#welcome-gen">aptosid OS Handleiding &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-nl.htm#cred-team">Medewerkers</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-nl.htm#how-to">Gebruik van deze handleiding &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-nl.htm#how-to">Hoe deze handleiding gebruiken</a></li>
+					  <li><a href="welcome-nl.htm#table-contents">Inhoudstafel</a></li>
+					</ul>
+					</li>
+		<li><a href="help-nl.htm#help-gen">Hulp nodig &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-nl.htm#help-gen">Waar kan ik hulp vinden</a></li>
+					  <li><a href="help-nl.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-nl.htm#welcome-quick">Aptosid Snelle-startgids</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-nl.htm">ISO Inhoud, Releases, Download Vensters en Branden</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-nl.htm#cd-content">ISO Inhoud en systeembenodigdheden &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-nl.htm#rolling">Release info</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-nl.htm#download-aptosid">Aptosid Vensters , Downloaden en Branden &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-nl.htm#md5">md5 Checksum</a></li>
+					  <li><a href="cd-dl-burning-nl.htm#burn-nero">Branden in Windows</a></li>
+					  <li><a href="cd-dl-burning-nl.htm#burn-linux">Branden in Linux</a></li>
+					  <li><a href="cd-no-gui-burn-nl.htm#burning-no-gui">burniso script</a></li>
+					  <li><a href="cd-no-gui-burn-nl.htm#burn-no-gui-gen">Branden zonder een GUI (niet-grafisch)</a></li><li><a href="cd-dl-burning-nl.htm#download-aptosid">aptosid Download Mirrors</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-nl.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-nl.htm#rootpw">Root-paswoord op aptosid-Livesessie ISO</a></li>
+				<li><a href="live-mode-nl.htm#live-cd-installsoft">Installeren van software in de Livesessie</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-nl.htm">The Terminal / Konsole</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-nl.htm#term-kon"> Terminal / Konsole &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-nl.htm#term-kon"> Terminal / Konsole</a></li>
+					  <li><a href="term-konsole-nl.htm#colours"> Gekleurde terminal prompts</a></li>
+					  <li><a href="term-konsole-nl.htm#cli-help">Commando's - Help</a></li>
+					  <li><a href="help-nl.htm#init3-tools">Interessante applicaties in de tekstmode (tty) - init 3</a></li>
+					  <li><a href="term-konsole-nl.htm#term-cmds">Linux Terminal Commando Lijst</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-nl.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-nl.htm">CheatCodes</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-nl.htm#cheatcodes">aptosid specifieke Live-ISO Cheatcodes</a></li>
+				<li><a href="cheatcodes-nl.htm#cheatcodes-linux">Linux generische Cheatcodes</a></li>
+				<li><a href="cheatcodes-vga-nl.htm#vga">VGA Codes</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-nl.htm">Partitioneren van de harde schijf - Traditioneel, GPT en LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-nl.htm#hd-ntfs3g">Schrijven op een NTFS partitie met ntfs-3g</a></li>
+			<li><a href="part-lvm-nl.htm#part-lvm">Partitioneren vanwege LVM - Logical Volume Manager</a></li>
+			<li><a href="part-gparted-nl.htm#partition">Partitioneren met een GUI (grafisch) &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-nl.htm#partition">Harde schijf partitioneren gebruikmakend van GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-nl.htm#ntfs">NTFS partitie van groote veranderen gebruikmakend van GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-nl.htm#partition">Partitioneren met CLI &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-nl.htm#partition">Harde schijf partitioneren met cfdisk</a></li>
+					    <li><a href="part-cfdisk-nl.htm#formating">Formatteren (schijf leegmaken) na het partitioneren met cfdisk</a></li>
+					    <li><a href="part-gdisk-nl.htm#gdisk-6">Formatteren na het partitioneren met gdisk</a></li>
+					    <li><a href="part-gdisk-nl.htm#gdisk-1">GPT Partitioneren met gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-nl.htm#part-example">Partitioneren Basis &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-nl.htm#part-example">Partitie Grootte Voorbeelden</a></li>
+					  <li><a href="part-uuid-nl.htm#uuid">UUID, heropbouwen van fstab en creëren van nieuwe mount punten</a></li>
+					  <li><a href="part-cfdisk-nl.htm#disknames">Schijf benoemen in brief</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-nl.htm">Installatie opties - HD, USB, VM en Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-nl.htm#Inst-prep">Installatievoorbereiding &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-nl.htm#Inst-prep">Installatievoorbereiding </a></li>
+					  <li><a href="hd-install-nl.htm#Installation">Installeren op uw harde schijf</a></li>
+					  <li><a href="hd-install-nl.htm#first-hd-boot">Eerste keer opstarten</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-nl.htm#fromiso">Booten van uw iso-cd &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-nl.htm#fromiso">Booten vanaf uw iso-cd - Overzicht</a></li>
+					  <li><a href="hd-install-opts-nl.htm#grub2-fromiso">Booten vanaf uw iso-cd met Grub 2</a></li>
+					  <li><a href="hd-install-opts-nl.htm#fromiso-persist">Booten vanaf uw iso-cd en vasthouden</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-nl.htm#usb-hd">Installeren op USB &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-nl.htm#usb-hd">Installeren op USB-HD - aptosid specifiek - aptosid-on-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-nl.htm#raw-usb">Aptosid schrijven naar een USB/SSD stick met Linux, MS Windows of Mac OS X systeem</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-nl.htm#install-crypt">Installeren op encrypte partities - cryptroot</a></li>
+		  <li><a href="nbdboot-nl.htm#nbd1">Aptosid booten op een netwerk</a></li>
+		  <li><a href="hd-install-vmopts-nl.htm#vmopts">Virtuele Machine installatie opties</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-nl.htm">Graphische kaarten, Schermen, Xorg,  &amp; drivers</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-nl.htm#mon-res">Schermresolutie en Schermen  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-nl.htm#mon-res">Schermresolutie en Schermen</a></li>
+					  <li><a href="hw-dev-mon-nl.htm#xrandr">Dual-scherm en xrandr</a></li>
+					  <li><a href="hw-dev-mon-nl.htm#mon-binary">Dual-schermen (gebruikmakend van binaries)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-nl.htm#foss-xorg">GPU drivers &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-nl.htm#ati-3d">AMD/ATI 3D drivers</a></li>
+					  <li><a href="gpu-nl.htm#intel">Intel 2D en 3D drivers</a></li>
+					  <li><a href="gpu-nl.htm#nvidia">Nvidia 3D drivers</a></li>
+					  <li><a href="gpu-nl.htm#foss-xorg">Open Source Xorg drivers</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-nl.htm#fw-detect">Firmware detectie - "non-free" </a></li>
+			  <li><a href="nf-firm-nl.htm#non-free-firmware">"non-free" toevoegen aan de Sources List</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-nl.htm">Window Managers</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm--nl.htm">KDE en XFCE Window Managers &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm--nl.htm#xfce-notes">Handige Xfce extras</a></li>
+					    <li><a href="wm-dm-nl.htm#install-add">Handige extra KDE Apps</a></li>
+					    <li><a href="wm-dm-nl.htm#desk-freeze">Desktop Freezes (beweegt niet meer)</a></li>
+					    <li><a href="wm-dm-nl.htm#kde-login">Kan niet inloggen (KDE)</a></li>
+					    <li><a href="wm-dm-nl.htm#ch-th">Thema's veranderen</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-nl.htm#dm">Installie van bijkomende Display Managers</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-nl.htm">Internet verbinding, WiFi, LAN en Netwerken</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-nl.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-nl.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-nl.htm#serv-ftp">FTP Clients</a></li>
+					    <li><a href="lamp-apache-nl.htm#serv-sec">Security Protocols (beveiliging)</a></li>
+					    <li><a href="lamp-apache-nl.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-nl.htm#serv-mysql">MySQL Setup</a></li>
+					    <li><a href="lamp-ppp-nl.htm#serv-php">PHP in Apache</a></li>
+					    <li><a href="ntp-server-nl.htm#ntp-server">Timeserver Setup</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-nl.htm#tor">Firewalls en Privacy &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-nl.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-nl.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-nl.htm#firewalls">Firewalls</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-nl.htm#ssh-x">SSH en Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-nl.htm#setup">Samba-Server Setup</a></li>
+						  <li><a href="samba-nl.htm#configure">SAMBA configureren (Windows)</a></li>
+						  <li><a href="ssh-nl.htm#ssh-fs">SSH Apart Mounten</a></li>
+						  <li><a href="ssh-nl.htm#ssh-x">X Window Apps via SSH</a></li>
+						  <li><a href="ssh-nl.htm#ssh-f">GUI SSH met Konqueror</a></li>
+						  <li><a href="ssh-nl.htm#ssh-w">SSH X-Forwarding vanaf een Windows-PC</a></li>
+						  <li><a href="ssh-nl.htm#ssh">SSH en Beveiliging</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-nl.htm#netcardconfig">WIFI connecties (draadloos) &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-nl.htm#netcardconfig">Online geraken - Ceni</a></li>
+						    <li><a href="inet-wpagui-nl.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-nl.htm#net-set1">WiFi - WiFi instellen</a></li>
+						    <li><a href="inet-wpa-nl.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-nl.htm#hotswitch">Switchen tussen WiFi en Kabel</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-nl.htm#netcardconfig">Bedrade verbindingen &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-nl.htm#dial-mod">56k Modems</a></li>
+						    <li><a href="inet-ceni-nl.htm#netcardconfig">Online geraken - Ceni</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-nl.htm#fw-detect">Firmware detectie - "non-free" </a></li>
+		<li><a href="nf-firm-nl.htm#non-free-firmware">"non-free" toevoegen aan de Sources List</a></li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-nl.htm">Pakketbeheer en dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-nl.htm#apt-cook">APT Werkwijze en Bronnenlijst &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-nl.htm#apt-cook">APT-Gids Werkwijze en Bronnenlijst</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#apt-install">Nieuw pakket installeren</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#apt-delete">Pakket verwijderen</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#apt-downgrade">Pakket vasthouden (niet updaten) en afwaarderen</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#apt-cache">Pakket zoeken met apt-cache</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#gui-pacsea">GUI Pakket zoeken (grafisch)</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-nl.htm#kern-upgrade">Kernel upgraden &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-nl.htm#kern-remove">Kernels verwijderen</a></li>
+					    <li><a href="sys-admin-kern-upg-nl.htm#kern-upgrade">Kernel upgraden</a></li>
+					    <li><a href="sys-admin-kern-upg-nl.htm#dmakms">Kernelmodules dynamisch installeren met dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-nl.htm#apt-upgrade">Geïnstalleerd systeem upgraden -  dist-upgrade - Overzicht &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-nl.htm#live-cd-upgrade">Upgraden met Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-nl.htm#approx">dist-upgrade van meerdere PCs op een LAN</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#apt-upgrade">Geïnstalleerd systeem upgraden -  dist-upgrade - Overzicht</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#du-st">Geïnstalleerd systeem upgraden -  dist-upgrade - De Stappen</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-nl.htm">Systeem Administratie</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-nl.htm#bois-prep">BIOS upgraden met FreeDOS</a></li>
+		<li><a href="vir-rkits-nl.htm#virus-rkits">Virus en Rootkit Scanners</a></li>
+		<li><a href="hd-install-nl.htm#adduser">Gebruikers en Paswoorden toevoegen &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-nl.htm#adduser">Nieuwe gebruiker toevoegen</a></li>
+					    <li><a href="sys-admin-gen-nl.htm#pw-lost">verloren root-paswoorden, nieuwe paswoorden</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-nl.htm#start-services">Services en init runlevels &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-nl.htm#start-services">Services inschakelen/uitschakelen</a></li>
+					    <li><a href="sys-admin-gen-nl.htm#pkill">Een service of een process stoppen</a></li>
+					    <li><a href="sys-admin-gen-nl.htm#init">aptosid runlevels - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-nl.htm#rsync">Een systeem back-up maken &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-nl.htm#rdiff">Doe een Back-Up met rdiff</a></li>
+					    <li><a href="sys-admin-rsync-nl.htm#rsync">Doe een Back-Up met rsync</a></li>
+					    <li><a href="home-nl.htm#home-bu">Verplaatsen van /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-nl.htm#fonts">CUPS, Opmaak en Geluid &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-nl.htm#fonts">Opmaak</a></li>
+					     <li><a href="sys-admin-gen-nl.htm#cups">CUPS - Printer Systeem</a></li>
+					     <li><a href="sys-admin-gen-nl.htm#sound">Geluid Mixers</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-nl.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-nl.htm#chroot">Grub2 - Grub herstellen met chroot</a></li>
+					    <li><a href="sys-admin-grub2-nl.htm#mbr-over-grub2">Grub2 - MBR Overschrijven</a></li>
+					    <li><a href="sys-admin-grub2-nl.htm#multi-os">Grub2 - Dual en Multibooting</a></li>
+					    <li><a href="sys-admin-grub2-nl.htm#grub1-grub2">Grub2 -Upgraden vanaf Grub1</a></li>
+					    <li><a href="sys-admin-grub2-nl.htm#grub2">Grub2 - Overzicht</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Gesponsored door webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid Gesponsored door webtropia.com" alt="aptosid Gesponsored door webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+		<div class="divider" id="vmopts">
+				<h2 id="top-header">Virtual Machine opties</h2>
+
+						<ul>
+							<li><a href="hd-install-vmopts-nl.htm#kvm">KVM voor Intel VT of AMD-V</a></li>
+							<li><a href="hd-install-vmopts-nl.htm#vbox">Virtualbox</a></li>
+							<li><a href="hd-install-vmopts-nl.htm#qemu">QEMU</a></li>
+							<li><a href="hd-install-vmopts-nl.htm#oos">Het installeren van een andere distributie naar een image</a></li>
+						</ul>
+
+							<p><span class="highlight-3">De onderstaande voorbeelden gebruiken aptosid, vervang simpelweg aptosid met de distributie naar jouw keuze.</span></p>
+	</div>
+	<div class="divider" id="oos">
+			    <h2>Het installeren van een andere distributie naar een VM image</h2>
+							<p>Nota: Wanneer je naar een VM image wil installeren, zullen de meeste Linux distributies enkel 12G nodig hebben. Wanneer je echter MS Windows in een VM will installeren, dan zul je 30G moeten voorzien. Alle VM image plaats zal uiteindelijk afhankelijk zijn van je eisen. </p>
+
+							<p>In het algemeen zal een image allocatie geen bijkomende ruimte op de harde schijf innemen tot de data word geinstalleerd. Zelfs dan zal het de ruimte dynamisch opnemen, aansluitend op de reeds gebruikte data, die uitbreidt of vermindert op het image. Dit is door de compressie ratio's van qcow2.</p>
+
+		      </div>
+		      <div class="divider" id="kvm">
+				<h2>Starten van een KVM Virtual Machine</h2>
+							<p>KVM is een volledige virtualisatie oplossing voor Linux voor x86 hardware welke beschikken over de virtualiseringstechnologie extensions (Intel VT of AMD-V).</p>
+
+				      <h3>Vereisten</h3>
+
+							<p>Om zeker te weten dat je hardware KVM ondersteund, moet je zeker weten dat KVM is aangezet in de BIOS (in sommige gevallen wordt het niet duidelijk aangegeven op een Intel VT of AMD-V systeem, daarom gaan we uit dat het in KVM mode staat). De manier om dit te controleren doen we in een console en voeren dan het volgende uit:</p>
+<pre>
+cat /proc/cpuinfo | egrep --color=always 'vmx|svm'
+</pre>
+							<p>Indien je <span class="highlight-3">svm</span> of <span class="highlight-3">vmx</span> ziet in de cpu flags veld, dan ondersteunt je systeem KVM. (anders moet je terug naar de BIOS als je zeker weet dat je systeem het ondersteunt, of doorzoek het internet naar waar de KVM 'enable' optie in de BIOS menu zou moeten staan).</p>
+
+							<p>Indien je BIOS geen KVM ondersteunt kijk dan naar <a href="hd-install-vmopts-nl.htm#vbox">Virtualbox</a>
+							 of <a href="hd-install-vmopts-nl.htm#qemu">QEMU</a></p>
+
+							<p>Om KVM te installeren en starten, moet je eerst zeker weten dat er geen Virtualbox modules geladen zijn, (--purge ze is de beste optie), en dan afhankelijk van je chipset voer je het volgende uit:</p>
+
+							<p>Voor <span class="highlight-3">vmx</span>:</p>
+<pre>
+apt-get install qemu-kvm qemu-utils
+modprobe kvm-intel
+</pre>
+							<p>Voor <span class="highlight-3">svm</span>:</p>
+<pre>
+apt-get install qemu-kvm qemu-utils
+modprobe kvm-amd
+</pre>
+							 <p>Wanneer je jouw systeem start zullen de qemu-kvm initscripts zorgen voor het laden van de modules.</p>
+
+					  <h4>Gebruik KVM om op te starten van een aptosid-*.iso</h4>
+
+							<p><span class="highlight-2">Als gebruiker:</span></p>
+<pre>
+$ kvm -net nic,model=virtio -net user -soundhw ac97 -m 512 -monitor stdio -cdrom &lt;aptosid.iso&gt;
+</pre>
+
+				<h5>Installeer een aptosid-*.iso naar een KVM image</h5>
+							<p>Creeer eerst een hard disk image, (deze image zal minimaal zijn en alleen groeien indien dit nodig is, dankzij qcow2 compressie ratios):</p>
+<pre>
+$ qemu-img create -f qcow2 aptosid-2010-*-.img 12G
+</pre>
+
+							<p>Start de aptosid-*.iso op met de volgende parameters om KVM in te schakelen en te laten herkennen dat er een QEMU hard disk image beschikbaar is:</p>
+<pre>
+$ kvm -net nic,model=virtio -net user -soundhw ac97 -m 512 -monitor stdio -cdrom &lt;/path/to/aptosid-*.iso&gt; -boot d &lt;/path/to/aptosid-VM.img&gt;
+</pre>
+
+							<p>Zodra de cdrom is opgestart klik op de aptosid installer icoon om de installer te activeren, (of gebruik het menu). Klik op de tab voor het partitioneren en start jouw voorkeur. Voor het partitioneren kan je de instructies volgen van <a href="part-gparted-nl.htm">Partitioneren van de harde schijf - Traditioneel, GPT en LVM</a>  (Vergeet geen swap partitie toe te voegen als je maar een beperkt geheugen hebt). Het formatteren zal een tijdje in beslag nemen, wees dus geduldig.</p>
+
+	<div class="screenshot"><img src="../lib/images-common/images-vm/kvm-gparted02.png" title="gparted kvm hard disk naming" alt="gparted kvm hard disk naming" /></div>
+	<div class="spacer02"></div>
+
+							<p>Je hebt nu een VM klaar voor gebruik:</p>
+
+<pre>
+$ kvm -net nic,model=virtio -net user -soundhw ac97 -m 512 -monitor stdio -drive if=virtio,boot=on,file=&lt;path/to/aptosid-VM.img&gt;
+</pre>
+
+							<p>Sommige gasten ondersteunen virtio niet, je moet daarvoor een andere optie gebruiken bij het starten van KVM, bijvoorbeeld: </p>
+<pre>
+$ kvm -net nic, -net user -soundhw ac97 -m 512 -monitor stdio -hda &lt;/path/to/your_guest.img&gt; -cdrom your_other.iso -boot d
+</pre>
+
+							 <p>of</p>
+<pre>
+$ kvm -net nic, -net user -soundhw ac97 -m 512 -monitor stdio -hda &lt;/path/to/your_guest.img&gt;
+</pre>
+							<p>Zie ook: <a href="http://www.linux-kvm.org/page/Main_Page"> KVM documentatie</a>.</p>
+
+				<h5>Beheren van je KVM virtuele machine installaties</h5>
+<pre>
+apt-get install aqemu
+</pre>
+							<p>Wanneer je AQEMU gebruikt, wees er dan zeker van om de KVM mode te kiezen uit de drop down box bij 'Emulator Type' in de 'General' tab. (Documentatie voor AQEMU is eigenlijk niet beschikbaar, daarom zullen een aantal 'trials by error' nodig zijn om deze makkelijk te gebruiken interface te doorgronden, het is echter een goede start om eerst te kijken naar het 'VM' menu gevolgd door het 'General' tab.</p>
+
+	</div>
+	<div class="divider" id="vbox">
+		<h2>Booten en installeren van een VirtualBox Virtuele Machine</h2>
+							<p>De Stappen:</p>
+						<ul>
+ 							<li>1. creeer een harddisk image voor VirtualBox</li>
+ 							<li>2. start de ISO op met VirtualBox</li>
+ 							<li>3. installeren op de harddisk image</li>
+						</ul>
+
+				<h4>Vereisten</h4>
+							<p><span class="highlight-3">Aanbevolen RAM: 1 GB </span>: Ideaal zou zijn 512 MB voor het gast os en 512 MB voor de host. (het kan op minder draaien, maar verwacht dan geen enorme performance).</p>
+
+							<p><span class="highlight-3">Hard disk ruimte:</span> VirtualBox zelf heeft niet veel nodig, bij een normale installatie ongeveer 30 MB harddisk ruimte. De virtual machines zullen echter veel grotere bestanden op de harddisk opeisen, deze ziet de virtual machine dan als zijn eigen harddisk. Dus, om bijvoorbeeld MS Windows XP (TM) te installeren, zul je een bestand nodig hebben van meerdere GBs! Voor aptosid in een VirtualBox is ca. 5 GB ruimte nodig voor je image en een swap allocation.</p>
+
+				<h3>Installatie:</h3>
+
+<pre>
+apt-get update
+apt-get install virtualbox-ose-qt virtualbox-source dmakms module-assistant
+</pre>
+							<p>Bereid de module voor:</p>
+<pre>
+m-a prepare
+m-a a-i virtualbox-source
+</pre>
+							<p>Activeer dan de Dynamic Module-Assistant Kernel Module Support voor virtualbox, zodat de volgende keer de Linux kernel geupdate wordt zodat de virtualbox module ook voorbereid wordt, zonder handmatige acties. Omdit te doen, voer je toe <span class="highlight-3">virtualbox-source</span> aan de <span class="highlight-3">/etc/default/dmakms </span>configuratie bestand. </p>
+<pre>
+mcedit /etc/default/dmakms
+virtualbox-source
+</pre>
+
+							<p>herstart hierna de computer.</p>
+
+							<p><a href="sys-admin-kern-upg-nl.htm#dmakms">Dit is een belangrijk leesstuk voor dmakms</a></p>
+
+					<h3>Het installeren van aptosid in een virtual machine</h3>
+							<p>Gebruik de virtualbox wizard om een nieuwe virtual machine voor aptosid te creëren. Volg dan de instructies voor een normale aptosid installatie.</p>
+
+							<p><a href="http://www.virtualbox.org/">VirtualBox heeft een goed gedocumenteerde PDF Help document, deze kun je vanaf hun site downloaden.</a> </p>
+
+	</div>
+	<div class="divider" id="qemu">
+		<h2>>Booten en installeren van een QEMU Virtuele Machine</h2>
+
+		<ul>
+ 			<li>1. Creeer een harddiskimage voor qemu</li>
+ 			<li>2. Start de ISO op met qemu</li>
+ 			<li>3. Installeer op de image</li>
+
+		</ul>
+
+							<p>Er is een QT GUI tool beschikbaar welke je helpt om QEMU te configureren:</p>
+<pre>
+apt-get install qtemu
+</pre>
+
+ 				<h4>Het creëren van de harddisk image</h4>
+
+				<p>Om qemu op te starten heb je een harddisk image nodig. Dit is een bestand welke de inhoud van de geëmuleerde harddisk opslaat.</p>
+
+				<p>Gebruik het volgende commando:</p>
+<pre>
+qemu-img create -f qcow aptosid.qcow 3G
+</pre>
+				<p>Om het image file genaamd "aptosid.qcow" te creëren. De "3G" parameter specificeerd de grote van de disk - in dit geval 3 GB. Je kunt de waarde M gebruiken voor megabytes (bijvoorbeeld "256M"). Je moet je geen zorgen maken over de disk grootte - het qcow formaat comprimeerd de image zo dat de lege ruimte niet aan de grootte van het bestand wordt toegevoegd.</p>
+
+
+			<h4>Installeren van het besturingssysteem</h4>
+
+				<p>Dit is de eerste keer dat je de emulator moet starten. Let op: wanneer je in het qemu venster klikt, wordt de muispointer gebruikt in dit venster. Om deze weer 'terug' te krijgen, moet je op Ctrl+Alt drukken.</p>
+
+				<p>Indien je een opstartdiskette nodig hebt, start dan Qemu als volgt op:</p>
+<pre>
+qemu -floppy aptosid.iso -net nic -net user -m 512 -boot d aptosid.qcow
+</pre>
+				<p>Indien je CD-ROM opstartbaar is, start dan Qemu als volgt op:</p>
+<pre>
+qemu -cdrom aptosid.iso -net nic -net user -m 512 -boot d aptosid.qcow
+</pre>
+				<p>Installeer nu aptosid alsof je een installatie uitvoert op een echte harddisk.</p>
+
+
+			<h4>Het systeem starten</h4>
+
+				<p>Om het systeem te starten voer je het volgende commando uit:</p>
+<pre>
+qemu [hd_image]
+</pre>
+				<p>Het is een goed idee om overlay images te gebruiken. Op deze manier hoef je maar 1 keer een harddisk image te creëren en vertel je Qemu om wijzigingen op te slaan in een extern bestand. Zo kom je van alle instabiliteit af, omdat je altijd terug kunt naar de vorige systeem status.</p>
+
+				<p>Het creëeren van een overlay image, doe je als volgt:</p>
+<pre>
+qemu-img create -b [[base''image]] -f qcow [[overlay''image]]
+</pre>
+				<p>Vervang de harddisk image = base_image door, in ons geval aptosid.qcow. Hierna start je qemu middels het commando:</p>
+<pre>
+qemu [overlay_image]
+</pre>
+				<p>De originele image wordt hierdoor niet gebruikt. Een probleem, de base image kan niet hernoemd of verplaatst worden, want de overlay onthoudt het volledige pad naar de base image.</p>
+
+
+			<h4>Gebruik maken van een echte partitie als een enkele primaire partitie voor de hard disk image</h4>
+
+				<p>Soms wil je een systeem partitie gebruiken met qemu (Bijvoorbeeld, als je wilt opstarten van je echte systeem of om qemu een speciale partitie te laten gebruiken als zijn root partitie). Je kunt dit doen door gebruik te maken van software RAID in lineaire mode (je hebt de linear.ko kernel driver nodig) en een loopback device: de truck is dat je dynamisch een master boot record (MBR) append aan een echte partitie welke je aan de qemu raw disk image wilt koppelen.</p>
+
+				<p>Stel je voor dat je een unmounted /dev/sdaN partitie met een bestandssysteem hebt welke je deel wilt maken van een qemu disk image. Als eerste moet je een klein bestand aanmaken waarin de MBR komt te staan, dit doen we met het volgende commando:</p>
+<pre>
+dd if=/dev/zero of=/path/to/mbr count=32
+</pre>
+				<p>Hier wordt een 16 KB (32 * 512 bytes) bestand aangemaakt. Het is belangrijk om het bestand niet te klein te maken (ook al heeft de MBR maar 512 bytes nodig), omdat hoe kleiner het bestand is, deze te kleiner moet de chunk size van de software RAID device zijn, wat weer invloed kan hebben op de performance. Hierna maak je een loopback device aan in de MBR bestand, middels:</p>
+<pre>
+losetup -f /path/to/mbr
+</pre>
+				<p>Laten we aannemen dat het resulterende resultaat het device /dev/loop0 is, omdat we toch nog niet van een andere loopback devices gebruik maakten. De volgende stap is om de "merged" MBR + /dev/sdaN disk image te gebruiken als software RAID:</p>
+<pre>
+ modprobe linear
+ mdadm --build --verbose /dev/md0 --chunk=16 --level=linear --raid-devices=2 /dev/loop0 /dev/sdaN
+</pre>
+				<p>De aangemaakte /dev/md0 is wat je gaat gebruiken als  qemu raw disk image (vergeet niet om de rechten goed te zetten, zodat qemu bij het bestand kan). De laatste stap (een beetje moeilijke) is het zetten van de disk configuratie (disk geometry en partitie tabellen) zo dat de primary partitie start punt in de MBR overeenkomt met de /dev/sdaN in de /dev/md0 (een offset van precies 16 * 512 = 16384 bytes in dit voorbeeld). Doe dit door gebruik te maken van fdisk op de host machine, niet in de emulator: de standaard raw disc detectie routine van qemu resulteert vaak in een niet-kilobyte afgeronde offsets (zoals 31.5 KB, zoals weer gegeven in vorige sectie) dit kan niet gemanaged worden door de software RAID code. Doe het volgende vanaf het hostsysteem:</p>
+<pre>
+ fdisk /dev/md0
+</pre>
+				<p>Hier creëren we een enkele primaire partitie welke overeenkomt met /dev/sdaN, en spelen hier met de 's'ector commando van het 'x'pert menu totdat we de eerste cylinder (waar de eerste partitie start), overeenkomt met de grote van de MBR. Daarna doen we een , 'w'rite om het geheel op te slaan en je bent klaar. Je hebt nu een partitie die je direct kunt mounten vanaf je hostsysteem, en ook als onderdeel van je qemu disk image en wel als volgt:</p>
+<pre>
+ qemu -hdc /dev/md0 [...]
+</pre>
+				<p>Je kunt natuurlijk op een veilige manier elke  bootloader op deze disk image zetten voor het gebruik met qemu, vooruitgesteld dat de originele /boot/sdaN partitie de benodigde tools bevat.</p>
+
+
+
+			<!--<h4>QEMU Acceleratie Module gebruiken</h4>
+
+				<p>De ontwikkelaars van qemu hebben een optionele kernel module gemaakt om qemu sneller te laten lopen, soms bijna op je echte pc snelheid. Deze module moet je laden met de optie:</p>
+<pre>
+major=0
+</pre>
+				<p>Om het automatisch creëren van de benodigde /dev/kqemu device uit te voeren, moet je het volgende commando gebruiken:</p>
+<pre>
+echo "options kqemu major=0" >> /etc/modprobe.conf
+</pre>
+				<p>Dit zal het bestand modprobe.conf aanpassen om ervoor te zorgen dat deze module optie elke keer wordt gebruikt bij het laden van deze module.</p>
+
+<pre>
+qemu [...] -kernel-kqemu
+</pre>
+				<p>Dit activeert de volledige virtualisatie en zal de snelheid behoorlijk verbeteren.</p>
+
+			<h4>Om qemu te activeren doen we:</h4>
+<pre>
+qemu -cdrom /tmp/pkg/aptosid-debug.iso -net nic -net user -m 512
+</pre>-->
+		<p><a href="http://www.nongnu.org/qemu/user-doc.html">De officiële documentatie van het QEMU Project </a> </p>
+		<p><a href="http://wiki.archlinux.org/index.php/Qemu">Sommige teksten voor QEMU voor het aptosid-handleiding was vanaf deze site onder GNU Free Documentation License 1.2 benaderd en veranderd voor deze aptosid-handleiding</a> </p>
+
+
+	</div>
+
+		<div id="rev">Inhoud het laatst gewijzigd op 12/09/2011 1010 UTC</div>
+</div>
+</body>
+</html>

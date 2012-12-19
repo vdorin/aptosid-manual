@@ -1,0 +1,867 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl" lang="nl">
+<head>
+	<title>aptosid handleiding - Internet/Network WiFi WPA-Supplicant</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision HarzG 22/10/2008 2000 UTC-->
+<!--htdig_noindex--><div id="menu"> <!-- menu starts here nl lang maintained by btorrem, Bram0s,eislon -->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<!-- menu last translated by eislon 2012.09.30 0933 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="Naar aptosid.com forums and wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-nl.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" />Zoeken Online Offline</a> </li>
+		<!--<li><a href="http://manual.aptosid.com/meta-manual">Gemeenschap Software Selecties</a></li>-->
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Kies een andere taal - Choose another language CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="lang-switch CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-nl.htm">aptosid OS Handleiding</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-nl.htm#welcome-gen">aptosid OS Handleiding &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-nl.htm#cred-team">Medewerkers</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-nl.htm#how-to">Gebruik van deze handleiding &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-nl.htm#how-to">Hoe deze handleiding gebruiken</a></li>
+					  <li><a href="welcome-nl.htm#table-contents">Inhoudstafel</a></li>
+					</ul>
+					</li>
+		<li><a href="help-nl.htm#help-gen">Hulp nodig &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-nl.htm#help-gen">Waar kan ik hulp vinden</a></li>
+					  <li><a href="help-nl.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-nl.htm#welcome-quick">Aptosid Snelle-startgids</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-nl.htm">ISO Inhoud, Releases, Download Vensters en Branden</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-nl.htm#cd-content">ISO Inhoud en systeembenodigdheden &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-nl.htm#rolling">Release info</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-nl.htm#download-aptosid">Aptosid Vensters , Downloaden en Branden &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-nl.htm#md5">md5 Checksum</a></li>
+					  <li><a href="cd-dl-burning-nl.htm#burn-nero">Branden in Windows</a></li>
+					  <li><a href="cd-dl-burning-nl.htm#burn-linux">Branden in Linux</a></li>
+					  <li><a href="cd-no-gui-burn-nl.htm#burning-no-gui">burniso script</a></li>
+					  <li><a href="cd-no-gui-burn-nl.htm#burn-no-gui-gen">Branden zonder een GUI (niet-grafisch)</a></li><li><a href="cd-dl-burning-nl.htm#download-aptosid">aptosid Download Mirrors</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-nl.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-nl.htm#rootpw">Root-paswoord op aptosid-Livesessie ISO</a></li>
+				<li><a href="live-mode-nl.htm#live-cd-installsoft">Installeren van software in de Livesessie</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-nl.htm">The Terminal / Konsole</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-nl.htm#term-kon"> Terminal / Konsole &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-nl.htm#term-kon"> Terminal / Konsole</a></li>
+					  <li><a href="term-konsole-nl.htm#colours"> Gekleurde terminal prompts</a></li>
+					  <li><a href="term-konsole-nl.htm#cli-help">Commando's - Help</a></li>
+					  <li><a href="help-nl.htm#init3-tools">Interessante applicaties in de tekstmode (tty) - init 3</a></li>
+					  <li><a href="term-konsole-nl.htm#term-cmds">Linux Terminal Commando Lijst</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-nl.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-nl.htm">CheatCodes</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-nl.htm#cheatcodes">aptosid specifieke Live-ISO Cheatcodes</a></li>
+				<li><a href="cheatcodes-nl.htm#cheatcodes-linux">Linux generische Cheatcodes</a></li>
+				<li><a href="cheatcodes-vga-nl.htm#vga">VGA Codes</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-nl.htm">Partitioneren van de harde schijf - Traditioneel, GPT en LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-nl.htm#hd-ntfs3g">Schrijven op een NTFS partitie met ntfs-3g</a></li>
+			<li><a href="part-lvm-nl.htm#part-lvm">Partitioneren vanwege LVM - Logical Volume Manager</a></li>
+			<li><a href="part-gparted-nl.htm#partition">Partitioneren met een GUI (grafisch) &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-nl.htm#partition">Harde schijf partitioneren gebruikmakend van GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-nl.htm#ntfs">NTFS partitie van groote veranderen gebruikmakend van GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-nl.htm#partition">Partitioneren met CLI &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-nl.htm#partition">Harde schijf partitioneren met cfdisk</a></li>
+					    <li><a href="part-cfdisk-nl.htm#formating">Formatteren (schijf leegmaken) na het partitioneren met cfdisk</a></li>
+					    <li><a href="part-gdisk-nl.htm#gdisk-6">Formatteren na het partitioneren met gdisk</a></li>
+					    <li><a href="part-gdisk-nl.htm#gdisk-1">GPT Partitioneren met gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-nl.htm#part-example">Partitioneren Basis &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-nl.htm#part-example">Partitie Grootte Voorbeelden</a></li>
+					  <li><a href="part-uuid-nl.htm#uuid">UUID, heropbouwen van fstab en creëren van nieuwe mount punten</a></li>
+					  <li><a href="part-cfdisk-nl.htm#disknames">Schijf benoemen in brief</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-nl.htm">Installatie opties - HD, USB, VM en Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-nl.htm#Inst-prep">Installatievoorbereiding &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-nl.htm#Inst-prep">Installatievoorbereiding </a></li>
+					  <li><a href="hd-install-nl.htm#Installation">Installeren op uw harde schijf</a></li>
+					  <li><a href="hd-install-nl.htm#first-hd-boot">Eerste keer opstarten</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-nl.htm#fromiso">Booten van uw iso-cd &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-nl.htm#fromiso">Booten vanaf uw iso-cd - Overzicht</a></li>
+					  <li><a href="hd-install-opts-nl.htm#grub2-fromiso">Booten vanaf uw iso-cd met Grub 2</a></li>
+					  <li><a href="hd-install-opts-nl.htm#fromiso-persist">Booten vanaf uw iso-cd en vasthouden</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-nl.htm#usb-hd">Installeren op USB &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-nl.htm#usb-hd">Installeren op USB-HD - aptosid specifiek - aptosid-on-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-nl.htm#raw-usb">Aptosid schrijven naar een USB/SSD stick met Linux, MS Windows of Mac OS X systeem</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-nl.htm#install-crypt">Installeren op encrypte partities - cryptroot</a></li>
+		  <li><a href="nbdboot-nl.htm#nbd1">Aptosid booten op een netwerk</a></li>
+		  <li><a href="hd-install-vmopts-nl.htm#vmopts">Virtuele Machine installatie opties</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-nl.htm">Graphische kaarten, Schermen, Xorg,  &amp; drivers</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-nl.htm#mon-res">Schermresolutie en Schermen  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-nl.htm#mon-res">Schermresolutie en Schermen</a></li>
+					  <li><a href="hw-dev-mon-nl.htm#xrandr">Dual-scherm en xrandr</a></li>
+					  <li><a href="hw-dev-mon-nl.htm#mon-binary">Dual-schermen (gebruikmakend van binaries)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-nl.htm#foss-xorg">GPU drivers &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-nl.htm#ati-3d">AMD/ATI 3D drivers</a></li>
+					  <li><a href="gpu-nl.htm#intel">Intel 2D en 3D drivers</a></li>
+					  <li><a href="gpu-nl.htm#nvidia">Nvidia 3D drivers</a></li>
+					  <li><a href="gpu-nl.htm#foss-xorg">Open Source Xorg drivers</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-nl.htm#fw-detect">Firmware detectie - "non-free" </a></li>
+			  <li><a href="nf-firm-nl.htm#non-free-firmware">"non-free" toevoegen aan de Sources List</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-nl.htm">Window Managers</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm--nl.htm">KDE en XFCE Window Managers &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm--nl.htm#xfce-notes">Handige Xfce extras</a></li>
+					    <li><a href="wm-dm-nl.htm#install-add">Handige extra KDE Apps</a></li>
+					    <li><a href="wm-dm-nl.htm#desk-freeze">Desktop Freezes (beweegt niet meer)</a></li>
+					    <li><a href="wm-dm-nl.htm#kde-login">Kan niet inloggen (KDE)</a></li>
+					    <li><a href="wm-dm-nl.htm#ch-th">Thema's veranderen</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-nl.htm#dm">Installie van bijkomende Display Managers</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-nl.htm">Internet verbinding, WiFi, LAN en Netwerken</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-nl.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-nl.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-nl.htm#serv-ftp">FTP Clients</a></li>
+					    <li><a href="lamp-apache-nl.htm#serv-sec">Security Protocols (beveiliging)</a></li>
+					    <li><a href="lamp-apache-nl.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-nl.htm#serv-mysql">MySQL Setup</a></li>
+					    <li><a href="lamp-ppp-nl.htm#serv-php">PHP in Apache</a></li>
+					    <li><a href="ntp-server-nl.htm#ntp-server">Timeserver Setup</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-nl.htm#tor">Firewalls en Privacy &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-nl.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-nl.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-nl.htm#firewalls">Firewalls</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-nl.htm#ssh-x">SSH en Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-nl.htm#setup">Samba-Server Setup</a></li>
+						  <li><a href="samba-nl.htm#configure">SAMBA configureren (Windows)</a></li>
+						  <li><a href="ssh-nl.htm#ssh-fs">SSH Apart Mounten</a></li>
+						  <li><a href="ssh-nl.htm#ssh-x">X Window Apps via SSH</a></li>
+						  <li><a href="ssh-nl.htm#ssh-f">GUI SSH met Konqueror</a></li>
+						  <li><a href="ssh-nl.htm#ssh-w">SSH X-Forwarding vanaf een Windows-PC</a></li>
+						  <li><a href="ssh-nl.htm#ssh">SSH en Beveiliging</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-nl.htm#netcardconfig">WIFI connecties (draadloos) &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-nl.htm#netcardconfig">Online geraken - Ceni</a></li>
+						    <li><a href="inet-wpagui-nl.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-nl.htm#net-set1">WiFi - WiFi instellen</a></li>
+						    <li><a href="inet-wpa-nl.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-nl.htm#hotswitch">Switchen tussen WiFi en Kabel</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-nl.htm#netcardconfig">Bedrade verbindingen &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-nl.htm#dial-mod">56k Modems</a></li>
+						    <li><a href="inet-ceni-nl.htm#netcardconfig">Online geraken - Ceni</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-nl.htm#fw-detect">Firmware detectie - "non-free" </a></li>
+		<li><a href="nf-firm-nl.htm#non-free-firmware">"non-free" toevoegen aan de Sources List</a></li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-nl.htm">Pakketbeheer en dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-nl.htm#apt-cook">APT Werkwijze en Bronnenlijst &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-nl.htm#apt-cook">APT-Gids Werkwijze en Bronnenlijst</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#apt-install">Nieuw pakket installeren</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#apt-delete">Pakket verwijderen</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#apt-downgrade">Pakket vasthouden (niet updaten) en afwaarderen</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#apt-cache">Pakket zoeken met apt-cache</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#gui-pacsea">GUI Pakket zoeken (grafisch)</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-nl.htm#kern-upgrade">Kernel upgraden &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-nl.htm#kern-remove">Kernels verwijderen</a></li>
+					    <li><a href="sys-admin-kern-upg-nl.htm#kern-upgrade">Kernel upgraden</a></li>
+					    <li><a href="sys-admin-kern-upg-nl.htm#dmakms">Kernelmodules dynamisch installeren met dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-nl.htm#apt-upgrade">Geïnstalleerd systeem upgraden -  dist-upgrade - Overzicht &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-nl.htm#live-cd-upgrade">Upgraden met Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-nl.htm#approx">dist-upgrade van meerdere PCs op een LAN</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#apt-upgrade">Geïnstalleerd systeem upgraden -  dist-upgrade - Overzicht</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#du-st">Geïnstalleerd systeem upgraden -  dist-upgrade - De Stappen</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-nl.htm">Systeem Administratie</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-nl.htm#bois-prep">BIOS upgraden met FreeDOS</a></li>
+		<li><a href="vir-rkits-nl.htm#virus-rkits">Virus en Rootkit Scanners</a></li>
+		<li><a href="hd-install-nl.htm#adduser">Gebruikers en Paswoorden toevoegen &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-nl.htm#adduser">Nieuwe gebruiker toevoegen</a></li>
+					    <li><a href="sys-admin-gen-nl.htm#pw-lost">verloren root-paswoorden, nieuwe paswoorden</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-nl.htm#start-services">Services en init runlevels &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-nl.htm#start-services">Services inschakelen/uitschakelen</a></li>
+					    <li><a href="sys-admin-gen-nl.htm#pkill">Een service of een process stoppen</a></li>
+					    <li><a href="sys-admin-gen-nl.htm#init">aptosid runlevels - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-nl.htm#rsync">Een systeem back-up maken &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-nl.htm#rdiff">Doe een Back-Up met rdiff</a></li>
+					    <li><a href="sys-admin-rsync-nl.htm#rsync">Doe een Back-Up met rsync</a></li>
+					    <li><a href="home-nl.htm#home-bu">Verplaatsen van /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-nl.htm#fonts">CUPS, Opmaak en Geluid &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-nl.htm#fonts">Opmaak</a></li>
+					     <li><a href="sys-admin-gen-nl.htm#cups">CUPS - Printer Systeem</a></li>
+					     <li><a href="sys-admin-gen-nl.htm#sound">Geluid Mixers</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-nl.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-nl.htm#chroot">Grub2 - Grub herstellen met chroot</a></li>
+					    <li><a href="sys-admin-grub2-nl.htm#mbr-over-grub2">Grub2 - MBR Overschrijven</a></li>
+					    <li><a href="sys-admin-grub2-nl.htm#multi-os">Grub2 - Dual en Multibooting</a></li>
+					    <li><a href="sys-admin-grub2-nl.htm#grub1-grub2">Grub2 -Upgraden vanaf Grub1</a></li>
+					    <li><a href="sys-admin-grub2-nl.htm#grub2">Grub2 - Overzicht</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Gesponsored door webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid Gesponsored door webtropia.com" alt="aptosid Gesponsored door webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+	<div class="divider" id="wpa-basic">
+		<h2 id="top-header" >Basis handleiding voor draadloze/wireless verbindingen- WiFi</h2>
+
+							<p class="highlight-3">Door de complexiteit van de wet wordt er alleen dsfg-gratis software door aptosid aangeboden. <a href="nf-firm-nl.htm#non-free-firmware">Bekijk aub deze link voor meer informatie over niet-gratis bronnen voor firmware.</a></p>
+
+							<p>Om een wlan WiFi te installeren, heb je voor een paar minuten een verbinding met netwerkkabel nodig om de firmware te downloaden.</p>
+
+							<p>Als dat met een netwerkkabel niet mogelijk is, dan moet de firmware op een removable device staan (bijv. USB-stick) en het kan als root op de volgende manier geïnstalleerd worden:</p>
+<pre>
+#dpkg -i &lt;firmware.deb&gt;
+</pre>
+
+							<p>Als je niet weet welke firmware je nodig hebt, dan kan je het volgende commando gebruiken:</p>
+<pre>
+#fw-detect
+</pre>
+							<p>Je ziet dan de volgende informatie:</p>
+<pre>
+#apt-get update
+#apt-get install &lt;name of firmware&gt;
+#modprobe -r &lt;modulename&gt;
+#modprobe &lt;modulename&gt;
+</pre>
+							<p>Use the  apt-get install gebruiken die je in het fw-detect antwoord gezien hebt. Als je de daar voorgestelde installatie hebt gedaan, moeten nog de onderstaande commando's als root in de konsole uitgevoerd worden voordat je de configuratie van het apparaat kan starten. (Hiermee wordt de benodigde module geladen.)</p>
+
+<pre>
+modprobe -r &lt;modulename&gt;
+
+modprobe &lt;modulename&gt;
+</pre>
+							<p>Als &lt;modulename&gt; wordt de informatie/naam gebruikt die fw-detect had getoond. Een handige functie in de konsole is de zogenaamde bash completion: <br />
+							Als je de eerste paar letters van de &lt;modulename&gt; hebt getypt kan je de TAB toets gebruiken. Hiermee worden de ontbrekende tekens van module naam aangevuld. Bovendien kan je hiermee typefouten voorkomen.</p>
+
+							<p>Als je van de modprobe commando's geen meldingen ziet dan is alles prima en de module werd geladen.</p>
+
+							<p>Je kan dat nog controleren met:</p>
+<pre>
+#lsmod | grep &lt;module&gt;
+</pre>
+
+
+							<p>Nu kan je Ceni starten in het K-Menu - Internet of in de konsole als root met <a href="inet-ceni-nl.htm#netcardconfig">Ceni</a>. Je draadloze WiFi apparaten worden dan getoond en kunnen worden geconfigureerd.</p>
+
+							<p>Om de installatie/configuratie in een grafisch scherm uit te voeren GUI Wlan WiFi, kijk bij <a href="inet-wpagui-nl.htm">WiFi - roaming WPA-GUI</a></p>
+	</div>
+	<div class="divider" id="wpa">
+		<h2>Modi van de wpasupplicant in Debian</h2>
+
+							<p class="highlight-3">Als gevolg van ingewikkelde wetgeving, kan aptosid alleen zogenaamde dfsg-vrije software aanbieden. <a href="nf-firm-nl.htm#non-free-firmware">Gebruik daarom deze link voor extra informatie over niet-vrije bronnen voor de zogenaamde firmware.</a></p>
+
+							<p>Het Debian 'wpasupplicant' pakket voorziet in twee (2) gebruikelijke 'modes of operation' die nauw geïntegreerd zijn in kern van de infrastructuur van netwerken; ifupdown.</p>
+
+				<h4>Wat hier ter sprake komt:</h4>
+
+					<h6>1.  Specificeren van de 'wpa_supplicant driver backend'</h6>
+          						<p>* Tabel van ondersteunde drivers
+          						<br />
+         						* Gebruikelijke aanbevelingen van drivers</p>
+
+					<h6>2. Mode #1: 'Managed Mode'</h6>
+          						<p>* Voorbeelden<br />
+          						* Tabel van normale opties<br />
+          						* Belangrijke opmerkingen over de 'Managed Mode'<br />
+          						* Hoe het werkt </p>
+
+					<h6>3. Mode #2: 'Roaming Mode'</h6>
+          						<p>* wpa_supplicant.conf<br />
+          						* /etc/network/interfaces<br />
+          						* Controle over de 'Roaming Daemon' met wpa_action<br />
+          						* Fijnregeling van de 'Roaming Setup'<br />
+          						* Het logbestand<br />
+          						* Het gebruik van Externe Mapping Scripts (bv 'guessnet')<br />
+          						* /etc/network/interfaces met 'external mapping'</p>
+
+					<h6>4. Probleemoplossingen</h6>
+         						<p>* Verborgen ssids</p>
+
+					<h6>5. Veiligheidsoverwegingen</h6>
+          						<p>* Configuratie van Bestandspermissies</p>
+
+		<h2>1. Specificatie van 'de wpa_supplicant driver backend'</h2>
+
+							<p> De wext driver backend wordt gebruikt voor alle interfaces die niet expliciet 'wpa-driver' instellen voor het soort driver dat nodig is voor dat device. Gebruikers van de linux 2.4 kernels, of de 2.6 kernels lager dan 2.6.14 dienen een wpa-driver te specificeren. </p>
+
+				<h3>Tabel van ondersteunde drivers</h3>
+
+	<div>
+		<table>
+			<tbody>
+				<tr>
+					<th>Driver</th>
+					<th>Beschrijving</th>
+				</tr>
+				<tr>
+					<td>wext</td>
+					<td>Linux draadloze extensies (algemeen)</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="spacer05"></div>
+		<h3>Gebruikelijke aanbevelingen van drivers</h3>
+
+							<p>Ee Intel Pro Wireless adapters (ipw2100, ipw2200 and ipw3945) gebruiken allemaal de 'wext' backend, behalve als je kernel ouder is dan 2.6.14</p>
+
+							<p>Madwifi ondersteunt zowel de 'wext' als de 'madwifi' driver backends. 'wext' heeft de voorkeur, hoewel 'madwifi' onder sommige omstandigheden beter zal werken.</p>
+
+							<p>Ndiswrapper ondersteunt NIET LANGER de 'ndiswrapper' driver backend, tenminste vanaf versie 1.16. Daarom moet 'wext' gebruikt worden, behalve als je een verouderde ndiswrapper versie gebruikt.</p>
+
+							<p>Stel het soort driver in in de interfaces (5) regels voor je device met de 'wpa-driver' optie. Bijvoorbeeld:</p>
+
+<pre>
+iface eth0 inet dhcp
+	wpa-driver wext
+	. . . . . more options
+</pre>
+
+			<h2>2. Mode #1: 'Managed Mode'</h2>
+
+							<p>Deze 'mode' geeft de mogelijkheid om een verbinding tot stand te brengen via wpa_supplicant naar een bekend netwerk. Het lijkt op de werking van het wireless-tools pakket. Elk onderdeel dat nodig is om een verbinding tot stand te brengen heeft 'wpa-' als voorvoegsel, en wordt gevolgd door de waarde die voor dat onderdeel gebruikt gaat worden.</p>
+
+				<h6>Voorbeelden van een Mode #1 wpa.conf bestand - Voorbeeld 1.</h6>
+<pre>
+Voorbeeld van een Mode #1 wpa.conf bestand - Voorbeeld 1.
+MERK OP: de 'wpa-psk' waarde is alleen geldig als:
+
+   1. het een plaintext (ascii) string is tussen de 8 en 63 karakters lang
+   2. het een hexadecimal string is van 64 karakters
+
+# Maak een verbinding met het access point van ssid 'NETBEER' met een encryptie type van:
+# WPA-PSK/WPA2-PSK. Daarmee ga je ervan uit dat de driver gebruik maakt van de 'wext'driver backend
+# van wpa_supplicant omdat er geen wpa-driver optie gespecificeerd is.
+# De passphrase wordt opgegeven als een ASCII (plaintext) string. DHCP wordt gebruikt om # een netwerk- of ip-adres te krijgen.
+#
+iface wlan0 inet dhcp
+
+        wpa-ssid NETBEER
+        # plaintext passphrase
+        wpa-psk PlainTextSecret
+
+# Maak een verbinding met het 'acces point' van ssid 'homezone' met een encryptie type van
+# WPA-PSK/WPA2-PSK, waarbij je gebruik maakt van de 'wext'driver backend van wpa_supplicant.
+# DE psk wordt ingevoerd als een gecodeerde hexadecimale string. DHCP wordt gebruikt om
+# een netwerk- of ip-adres te krijgen.
+#
+iface wlan0 inet dhcp
+        wpa-driver wext
+        wpa-ssid homezone
+        # hexadecimal psk wordt gecodeerd uit een plattetekst passphrase
+        wpa-psk 000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f
+
+# Maak een verbinding met het 'acces point' van ssid "HotSpot1" en bssid van '00:1a:2b:3c:4d:5e'
+# met een encryptie type van PA-PSK/WPA2-PSK, waarbij je gebruik maakt van de 'madwifi' driver
+# backend van wpa_supplicant. De 'passphrase' is given as a plaintext string.
+# Er wordt gebruik gemaakt van een statische toekenning van een netwerk- of ip-adres.
+#
+iface ath0 inet static
+
+        wpa-driver madwifi
+        wpa-ssid HotSpot1
+        wpa-bssid 00:1a:2b:3c:4d:5e
+        # plattetekst passphrase
+        wpa-psk madhotspot
+        wpa-key-mgmt WPA-PSK
+        wpa-pairwise TKIP CCMP
+        wpa-group TKIP CCMP
+        wpa-proto WPA RSN
+        # statische ip instellingen
+        address 192.168.0.100
+        netmask 255.255.255.0
+        network 192.168.0.0
+        broadcast 192.168.0.255
+        gateway 192.168.0.1
+
+# Een door de gebruiker geleverde wpa_supplicant.conf wordt gebruik voor eth1. Alle informatie over het netwerk wordt bewaard in de door de gebruiker geleverde wpa_supplicant.conf. Er wordt geen wpa-driver type
+#gespecificeerd, dus wordt 'wext' gebruikt.
+#Met DHCP wordt een netwerk- of ip-adres verkregen.
+#
+iface eth1 inet dhcp
+
+wpa-conf /path/to/wpa_supplicant.conf
+</pre>
+	</div>
+	<div class="divider" id="wpa1">
+		<h2>Tabel van normale opties</h2>
+
+							<p>Een korte samenvatting van normale 'wpa-' opties die gebruikt kunnen worden in /etc/network/interfaces regels voor een draadloos device. Zie de 'Belangrijke Opmerkingen over Managed Mode' sectie  voor informatie over geldige en ongeldige 'wpa-'waarden.</p>
+
+							<p class="highlight-2">LET WEL: Alle waarden zijn HOOFDletter GeVoElIg</p>
+
+<pre>
+Element		Voorbeeld waarden		Beschrijving
+=======         =============           	===========
+wpa-ssid        plaintextstring         	bepaalt de ssid van je netwerk
+wpa-bssid       00:1a:2b:3c:4d:5e       	de bssid van je AP
+wpa-psk         0123456789......        	je vóórgedeelde wpa key. Gebruik wpa_passphrase(8)
+						om je psk te genereren van een passphrase
+						en ssid pair
+wpa-key-mgmt    NONE, WPA-PSK, WPA-EAP, 	lijst van geaccepteerde en geautoriseerde 'key
+                IEEE8021X               	management protocols'
+wpa-group       CCMP, TKIP, WEP104,     	lijst van geaccepteerde groepscijfers voor WPA
+                WEP40
+wpa-pairwise    CCMP, TKIP, NONE        	lijst van geaccepteerde paarsgewijze cijfers voor WPA
+
+wpa-auth-alg    OPEN, SHARED, LEAP      	lijst van toegestane IEEE 802.11
+                                        	authenticatie algorithms
+wpa-proto       WPA, RSN                	lijst van geaccepteerde protocols
+wpa-identity    mijnplattetekstnaam     	een door de administrator geleverde gebruikersnaam
+                                        	(EAP authentication)
+wpa-password    mijnplattetekstwachtwoord     	je wachtwoord (EAP authentication)
+wpa-scan-ssid   0 or 1                  	zet het scannen van ssid met specifieke
+                                        	Probe Request frames aan of uit.
+wpa-ap-scan     0 or 1 or 2             	past de  scanning logica van
+                                        	wpa_supplicant
+
+</pre>
+							<p>De volledige functionaliteit van wpa_cli (8) hoort geïmplementeerd te zijn. Als er iets ontbreekt, wordt dat als 'bug' opgevat en dient als zodanig gerapporteerd te worden. Patches zijn altijd welkom.</p>
+
+
+			<h2>Belangrijke opmerkingen over 'Managed Mode'</h2>
+
+							<p>Bijna alle 'wpa'-opties vereisen dat er tenminste een ssid gespecificeerd is. Slechts een handvol opties hebben een globaal effect. Deze zijn: 'wpa-ap-scan' en 'wpa-preauthenticate'.</p>
+
+							<p>Elke 'wpa'-optie die aan een device in de interfaces (5) gegeven is, is voldoende om de wpa_supplicant daemon te activeren.</p>
+
+							<p>Het 'wpasupplicant ifupdown' script doet aannames over het soort van input dat geldig is voor elke optie. Het veronderstelt bijvoorbeeld dat bepaalde input platte tekst is. Het script voorziet die input van aanhalingstekens voordat het doorgegeven wordt aan de wpa_cli. Deze voegt vervolgens de input aan het netwerk blok toe dat gevormd wordt via de wpa_supplicant ctrl_interface socket.</p>
+
+							<p>Als je ifup handmatig uitvoert met de '--verbose' optie laat deze alle opdrachten zien, die gebruikt worden om het netwerk blok te vormen via wpa_cli. Als de waarde die je gebruikte voor welke wpa-*optie dan ook in /etc/network/interfaces voorzien is van dubbele aanhalingstekens, dan wordt er dus vanuit gegaan dat het om een "platte tekst" of "ascii" soort van input gaat.</p>
+
+							<p>Van sommige input wordt veronderstelt dat het een hexadecimale string is (bv wpa-wep-key*). Het soort van waarde van de wpa-psk optie echter, wordt bepaald door een simpele controle op meer dan één niet-hexadecimaal teken.</p>
+
+			<h2>Hoe het werkt</h2>
+
+							<p> Zoals al eerder gezegd, wordt elk wpa_supplicant specifiek element voorafgegaan door het voorvoegsel 'wpa-'. Elk element correleert met een eigenschap van wpa_supplicant, zoals beschreven in de wpa_supplicant.conf (5), wpa_supplicant (8) en wpa_cli (8) manpages. </p>
+
+							<p>De supplicant wordt opgestart zonder enige voorconfiguratie, en wpa_cli maakt een netwerkconfiguratie van de input die aangeleverd wordt door de 'wpa-*'regels. In eerste instantie stelt de  wpa_supplicant/wpa_cli niet direct de eigenschappen van het device in (zoals het instellen van een ssid met iwconfig), maar informeert het device over welk access point geschikt is om zich mee te verbinden. Als het device eenmaal de omgeving gescand heeft en vastgesteld heeft dat het beschikbare access point gebruikt kan worden, worden de instellingen vastgesteld.</p>
+
+							<p>Het script dat al het werk doet is te vinden als:</p>
+
+<pre>
+/etc/wpa_supplicant/ifupdown.sh
+/etc/wpa_supplicant/functions.sh
+</pre>
+
+							<p>ifupdown.sh: Het wordt uitgevoerd door opstartgedeeltes, die op hun beurt aangeroepen worden door ifupdown tijdens de zogenaamde 'pre-up', 'pre-down' en 'post-down' fases.</p>
+
+
+							<p>In de 'pre-up' fase, wordt een wpa_supplicant daemon opgestart, gevolgd door een serie wpa_cli opdrachten die een netwerkconfiguratie opzetten overeenkomend met de 'wpa-' opties die gebruikt werden in: /etc/network/interfaces voor het fysieke device.</p>
+
+							<p>Als wpa-roam gebruikt wordt, dan wordt een wpa_cli daemon opgestart in de 'post-up' fase.</p>
+
+							<p>In de 'pre-down' fase, wordt de wpa_cli daemon uitgeschakeld als hij al bestaat.</p>
+
+							<p>In de 'post-down' fase wordt de wpa_supplicant daemon uitgeschakeld.</p>
+
+			<h2>3. Modus #2: 'Roaming Mode'</h2>
+
+							<p>Dit pakket levert een self contained, eenvoudig roaming mechanisme. Het is er in de vorm van een wpa_cli action script, /sbin/wpa_action, en het veronderstelt de controle over ifupdown als het eenmaal geactiveerd is. The wpa_action (8) handleiding beschrijft de technische details zeer uitgebreid.</p>
+
+							<p>Om een roaming interface te activeren, moet je de volgende voorbeeld interfaces (5) regels overnemen:</p>
+
+<pre>
+iface eth1 inet manual
+	wpa-driver wext
+        wpa-roam /path/to/wpa_supplicant.conf
+</pre>
+
+							<p>Twee daemons worden opgestart in het bovenstaande voorbeeld; wpa_supplicant en wpa_cli. Je moet een wpa_supplicant.conf aanleveren. Een goed beginpunt kun je vinden in een voorbeeld configuratie bestand:</p>
+
+<pre>
+# copy the template to /etc/wpa_supplicant/
+        cp /usr/share/doc/wpasupplicant/examples/wpa-roam.conf \
+                /etc/wpa_supplicant/wpa_supplicant.conf
+        # allow only root to read and write to file
+        chmod 0600 /etc/wpa_supplicant/wpa_supplicant.conf
+
+NOTE: it is critical that the used wpa_supplicant.conf defines the location of
+      the 'ctrl_interface' so that a communication socket is created for the
+      wpa_cli (wpa-roam daemon) to attach. The mentioned example configuration,
+      /usr/share/doc/wpasupplicant/examples/wpa-roam.conf, has been set to a
+      sane default.
+
+</pre>
+							<p>Je moet deze configuratie file wel veranderen, en de netwerk blokken van alle bekende netwerken toevoegen. Als je niet begrijpt wat dit betekent, begin dan nu maar de handleiding van wpa_supplicant.conf (5) te lezen.</p>
+
+							<p>Voor een netwerk kan het nodig zijn dat je een speciale optie 'id_str' specificeert. Het dient ingesteld te worden met een eenvoudige tekst string. Deze tekst string vormt de basis voor netwerkprofilering; het correleert met een logische interface zoals gedefinieerd in het interfaces (5) bestand. Als er geen 'id_str' gegeven is voor een netwerk, gaat wpa_action ervan uit dat het de standaard logical interface kan gebruiken om op terug te vallen. Deze interface kan gekozen worden met de 'wpa-default-iface' optie.</p>
+
+							<p>Dus wat betekent dit dan allemaal? Dit laten we zien aan de hand van een klein voorbeeld uit de handleiding van wpa_action (8).</p>
+
+					<h6>wpa_supplicant.conf voorbeeld</h6>
+<pre>
+wpa_supplicant.conf voorbeeld:
+network={
+        ssid="foo"
+        key_mgmt=NONE
+        # this id_str will notify /sbin/wpa_action to 'ifup uni'
+        id_str="uni"
+}
+
+network={
+        ssid="bar"
+        psk=123456789...
+        # this id_str will notify /sbin/wpa_action to 'ifup home_static'
+        id_str="home_static"
+}
+
+network={
+        ssid=""
+        key_mgmt=NONE
+        # no 'id_str' parameter is given, /sbin/wpa_action will 'ifup default'
+}
+</pre>
+	</div>
+	<div class="divider" id="wpa2">
+					<h6>/etc/network/interfaces voorbeeld</h6>
+<pre>
+/etc/network/interfaces voorbeeld:
+# de roaming interface MOET de handmatige inet methode gebruiken
+# 'allow-hotplug' of 'auto' laat de daemon automatisch opstarten
+allow-hotplug eth1
+iface eth1 inet manual
+
+        wpa-driver wext
+        wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf
+
+
+# er wordt geen id_str, standaard gebruikt als de mapping target om op terug te vallen.
+iface default inet dhcp
+
+
+# id_str="uni"
+iface uni inet dhcp
+
+# id_str="home_static"
+iface home_static inet static
+
+        address 192.168.0.20
+        netmask 255.255.255.0
+        network 192.168.0.0
+
+        broadcast 192.168.0.255
+        gateway 192.168.0.1
+</pre>
+
+							<p>Een logische interface wordt opgezet via ifup, en uitgeschakeld via ifdown, als wpa_supplicant zich verbindt met en losmaakt van het netwerk waarmee het geassocieerd is door de 'id_str' optie die gebruikt wordt in het wpa_supplicant.conf configuratie bestand.</p>
+
+							<p>Een log van /sbin/wpa_action's acties wordt aangemaakt in /var/log/wpa_action.log, als je problemen meldt doe er dan deze log bij.</p>
+
+			<h2>Samenwerking tussen wpa_supplicant, wpa_cli en wpa_gui</h2>
+
+							<p>Het wpa_supplicant proces kan samenwerken met de leden van de "netdev" groep als de voorbeeld roaming configuratie gebruikt wordt (groep en GID kunnen worden aangepast bij de GROUP= crtl_interface parameter).</p>
+<pre>
+# the default ctrl_interface option used in the example file
+	# /usr/share/doc/wpasupplicant/examples/wpa-roam.conf
+        ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+
+To interact with the supplicant, the wpa_cli (command line) and wpa_gui (QT)
+have been provided. With these you may connect, disconnect, add/delete new
+network blocks, provide required interactive security information and so on.
+</pre>
+
+
+<h2>De 'Roaming Daemon' beheren met wpa_action</h2>
+
+							<p>Als de roaming daemon is gestart, veronderstelt die de controle over ifupdown. Dat wil zeggen: wpa_cli roept ifup aan, als wpa_supplicant zich succesvol heeft verbonden met een access point, roept ifdown aan als de verbinding verbroken of beëindigd wordt. Als de roaming daemon draait, moet ifupdown eigenlijk niet direct beheerd worden met behulp van handmatig ingevoerde instructies, aangezien /sbin/wpa_action voorziet in het beëindigen en herladen van de roaming daemon. Bijvoorbeeld om de romaing daemon op de kaart 'eth1' te stoppen:</p>
+
+<pre>
+wpa_action eth1 stop
+</pre>
+
+
+							<p>Als het nodig is om de roaming daemon met nieuwe netwerkdetails te updaten, kan dat gedaan worden zonder hem te stoppen. Voorzie het wpa_supplicant.conf bestand dat door de daemon gebruikt wordt van de nieuwe netwerk gegevens, voeg optionele instellingen aan /etc/network/interfaces toe die specifiek zijn voor het nieuwe netwerk (gelinkt door 'id_str') en herlaad daarna de daemon op deze manier:</p>
+
+<pre>
+wpa_action eth1 reload
+</pre>
+
+							<p>Alle technische details van wat je met wpa_action kan doen, lees je in de wpa_action(8) handleiding.</p>
+
+	</div>
+	<div class="divider" id="wpa3">
+		<h2>Fijnregeling van de 'Roaming Setup'</h2>
+
+							<p>Je kunt situaties tegenkomen waarin meerdere bekende access points dicht bij elkaar zitten. Je kunt handmatig kiezen aan welke je de voorkeur geeft met behulp van: wpa_cli or wpa_gui, maar je kunt ook elk netwerk zijn eigen prioriteit geven. Dit wordt geleverd door de 'priority' optie van wpa_supplicant.conf.</p>
+
+	</div>
+	<div class="divider" id="wpa4">
+		<h2>Het logbestand</h2>
+
+							<p>Alle activiteiten van de roaming daemon worden opgeslagen in /var/log/wpa_action.log. De volgende informatie wordt gelogd:</p>
+
+							<p>*tijd en datum<br />
+							*interface naam en actie gebeurtenis<br />
+							*waarden van omgevingsvariabelen (WPA_ID, WPA_ID_STR, WPA_CTRL_DIR)<br />
+							*uitgevoerd ifupdown commando<br />
+							*status van wpa_cli  (gebaseerd op WPA-PSK, kan het netwerk verschillende informatie laten zien)<br />
+							*bssid<br />
+							*ssid<br />
+							*id<br />
+							*id_str<br />
+							*pairwise_cipher<br />
+							*group_cipher<br />
+							*key_mgmt<br />
+							*wpa_state<br />
+							*ip_address</p>
+
+	</div>
+	<div class="divider" id="wpa5">
+		<h2>Het gebruik van 'External Mapping Scripts' (e.g. guessnet)</h2>
+
+							<p> Naast het intern 'mappen' van logische interfaces via 'id_str', kan wpa_action externe mapping scripts aan roepen. Een ´mapping´ script hoort de naam terug te geven van de logische interface die actief gemaakt dient te worden. Elk 'mapping' script dat van het ifupdowns 'mapping' mechanisme werkt (zie hiervoor de handleiding interfaces) hoort te werken als hij aangeroepen wordt door wpa_action. </p>
+
+							<p>Voeg om een 'mapping' script aan te roepen, een regel 'wpa-mapping-script name-of-the-script' toe aan de interfaces stanza van het fysieke roaming apparaat. (Het kan zijn  dat je het absolute pad naar het 'mapping' script moet specificeren)</p>
+
+
+							<p>De inhoud van de regels die met wpa-map beginnen worden doorgegeven aan stdin van het 'mapping' script. Omdat ifupdown alleen maar één wpa-map regel toelaat, kun je elk aantal toevoegen aan wpa-map als toegevoegde regels. Bijvoorbeeld:</p>
+
+<pre>
+iface wlan0 inet manual
+        wpa-driver wext
+        wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf
+        wpa-mapping-script guessnet-ifupdown
+        wpa-map0 home
+        wpa-map1 work
+        wpa-map2 school
+        # ... extra wpa-mapX regels zoals vereist.
+</pre>
+							<p>Standaard zal het 'mapping'script alleen gebruikt worden als er geen 'id_str' beschikbaar is voor het actuele netwerk. Als je 'id_str' matching volledig wilt uitschakelen en alleen een extern 'mapping' script wilt toepassen, gebruik dan de 'wpa-mapping-script-priority 1' optie om de standaard procedure te 'overrulen'.</p>
+
+							<p>Als het 'mapping' script een lege string teruggeeft, zal wpa_action terugvallen op de standaard interface, tenzij een alternatief gedefinieerd is door de 'wpa-roam-default-iface' optie.</p>
+
+							<p>Hieronder vind je een complexer voorbeeld, dat gebruik maakt van guessnet-ifupdown als het externe 'mapping' script.</p>
+
+					<h6>/etc/network/interfaces met extern 'mapping' voorbeeld</h6>
+<pre>
+/etc/network/interfaces met extern 'mapping' voorbeeld:
+allow-hotplug wlan0
+iface wlan0 inet manual
+
+        wpa-driver wext
+        wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf
+        wpa-roam-default-iface default-wparoam
+        wpa-mapping-script guessnet-ifupdown
+        wpa-map default: default-guessnet
+        wpa-map0 home_static
+        wpa-map1 work_static
+
+
+# school kan alleen gekozen worden via 'id_str' matching
+iface school inet dhcp
+
+        # resolvconf
+        dns-nameservers 11.22.33.44 55.66.77.88
+
+iface home_static inet static
+
+        address 192.168.0.20
+        netmask 255.255.255.0
+
+        network 192.168.0.0
+        broadcast 192.168.0.255
+        gateway 192.168.0.1
+        test peer address 192.168.0.1 mac 00:01:02:03:04:05
+
+
+iface work_static inet static
+
+        address 192.168.3.200
+        netmask 255.255.255.0
+        network 192.168.3.0
+        broadcast 192.168.3.255
+
+        gateway 192.168.3.1
+        test peer address 192.168.3.1 mac 00:01:02:03:04:05
+
+iface default-guessnet inet dhcp
+
+iface default-wparoam inet dhcp
+</pre>
+
+							<p>In dit voorbeeld zal wpa_action guessnet gebruiken voor de selectie van een geschikte logische interface, maar alleen als er niet in een 'id_str' optie voorzien is voor het huidige netwerk in het geleverde wpa_supplicant.conf.</p>
+
+							<p>De 'wpa-map' regels voorzien guessnet van de logical interfaces die dan uitgeprobeerd worden net als de standaard interface die gebruikt wordt als alle pogingen mislukken. De 'test' regels van elk logical interface worden door guessnet gebruikt om vast te stellen of we feitelijk verbonden zijn met dat netwerk. Guessnet zal bijvoorbeeld de logical interface 'home_static' uitzoeken als er een device is met een ip adres van 192.168.0.1 en een MAC van 00:01:02:03:04:05 op het huidige netwerk. Als alle testen mislukken, wordt de 'default-guessnet' interface geconfigureerd.</p>
+
+
+							<p>Lees aub de the guessnet (8) handleiding voor meer informatie.</p>
+
+			<h2>4. Probleemoplossingen</h2>
+
+							<p>Om verbindings-, associatie- en authentificatieproblemen te 'debuggen', adviseren we `wpa_cli -i &lt;interface&gt;` op te starten in een andere 'shell', voordat je de interface opstart. Gebruik eerst de instructie: 'level 0' om alle 'debug' berichten te krijgen. Gebruik daarna: `ifup --verbose &lt;interface&gt;` om alle verbale 'debug' berichten te krijgen van het script dat wpasupplicant opstart.</p>
+
+	</div>
+	<div class="divider" id="wpa6">
+		<h2>Hidden ssids</h2>
+
+							<p>Hier wordt verwezen naar #358137. Om te kunnen associëren met zogenaamde verborgen ('hidden') ssids wordt je verzocht om aan de globale sectie de optie 'ap_scan=1' toe te voegen, en 'scan_ssid=1' in je netwerk 'block' sectie van je wpa_supplicant.conf bestand. Als je gebruik maakt van de 'managed mode', kun je dit doen door de volgende stanza's:</p>
+
+<pre>
+iface eth1 inet dhcp
+wpa-conf managed
+wpa-ap-scan 1
+wpa-scan-ssid 1
+# ... additional options for your setup
+</pre>
+
+							<p>Volgens #368770, kan associatie met een door WEP beveiligd netwerk een hoop tijd in beslag nemen. In sommige gevallen kan het erg helpen als je de associatie versnelt door in het configuratiebestand 'ap_scan=2' te zetten, (of een 'wpa-ap-scan 2' stanza gebruikt, dat is vergelijkbaar).</p>
+<p>Let op: als voor ap_scan de waarde 2 wordt gebruikt, dan moet voor alle netwerken een correct werkend beveiligingsbeleid vastgelegd en geactiveerd worden voor key_mgmt, pairwise, group en proto network policy variables.</p>
+
+
+	</div>
+	<div class="divider" id="wpa7">
+			<h2>5. Veiligheidsoverwegingen</h2>
+					<h5>Configuratie van de Bestandspermissies</h5>
+							<p>Het is belangrijk om PSK's en andere gevoelige informatie betreffende je netwerkinstellingen op een veilige plaats te bewaren. Zorg er daarom voor dat dit soort belangrijke configuratiebestanden alleen voor de eigenaar leesbaar zijn. Bijvoorbeeld:</p>
+
+<pre>
+chmod 0600 /etc/network/interfaces
+# vervang het pad naar je wpa_supplicant.conf bestand
+chmod 0600 /etc/wpa_supplicant/wpa_supplicant.conf
+</pre>
+							<p>Normaal is /etc/network/interfaces leesbaar voor iedereen en daarom ongeschikt voor het bewaren van geheime sleutels en wachtwoorden.</p>
+
+
+	</div>
+
+		<div id="rev">Inhoud het laatst gewijzigd op 14/08/2010 0100 UTC</div>
+</div>
+</body>
+</html>

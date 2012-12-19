@@ -1,0 +1,790 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+<head>
+	<title>Manuale aptosid - GPT gdisk</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body id="part">
+<!-- Last translation revision by alessiog75 on 05/02/2012 15.50 UTC -->
+<!--htdig_noindex--><div id="menu"> <!-- menu starts here it lang maintained by alessiog75 -->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="Un forum e wiki di aptosid.com" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-it.htm#search-on"><img src="../lib/logos/manual-search-22x22.png" title="Ricerca nel manuale" alt="Ricerca" />Ricerca Online Offline</a></li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Scegliere un'altra lingua - Choose another language CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="lang-switch CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-it.htm">Manuale del s.o. aptosid</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-it.htm#welcome-gen">Manuale del s.o. aptosid &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-it.htm#cred-team">Crediti</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-it.htm#how-to">Come usare questo manuale &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-it.htm#how-to">Come usare questo manuale</a></li>
+					  <li><a href="welcome-it.htm#table-contents">Indice dei contenuti</a></li>
+					</ul>
+					</li>
+		<li><a href="help-it.htm#help-gen">Ottenere aiuto &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-it.htm#help-gen">Dove e come ottenere aiuto</a></li>
+					  <li><a href="help-it.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-it.htm#welcome-quick">aptosid - Guida d'avvio rapida</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-it.htm">Contenuto della ISO, Rilasci, Mirror per i download e la masterizzazione</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-it.htm#cd-content">Contenuto della ISO e requisiti di sistema &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-it.htm#rolling">Note di rilascio dinamiche</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-it.htm#download-aptosid">Mirror aptosid, download e masterizzazione &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-it.htm#md5">Somma md5</a></li>
+					  <li><a href="cd-dl-burning-it.htm#burn-nero">Masterizzare in Windows</a></li>
+					  <li><a href="cd-dl-burning-it.htm#burn-linux">Masterizzare in Linux</a></li>
+					  <li><a href="cd-no-gui-burn-it.htm#burning-no-gui">Script burniso</a></li>
+					  <li><a href="cd-no-gui-burn-it.htm#burn-no-gui-gen">Masterizzare senza interfaccia grafica</a></li>
+					  <li><a href="cd-dl-burning-it.htm#download-aptosid">Mirror per il download di aptosid</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-it.htm">Modalità Live</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-it.htm#rootpw">Password di root della ISO live</a></li>
+				<li><a href="live-mode-it.htm#live-cd-installsoft">Installare software in modalità ISO live</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-it.htm">Terminale / Konsole</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-it.htm#term-kon">Terminale / Konsole &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-it.htm#term-kon">Terminale / Konsole</a></li>
+					  <li><a href="term-konsole-it.htm#colours">Prompt di terminale colorati</a></li>
+					  <li><a href="term-konsole-it.htm#cli-help">Aiuto nella linea di comando</a></li>
+					  <li><a href="help-it.htm#init3-tools">Strumenti in modalità testo da conoscere (tty) e init 3</a></li>
+					  <li><a href="term-konsole-it.htm#term-cmds">Lista dei comandi da terminale</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-it.htm#sux">sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-it.htm">Opzioni di avvio</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-it.htm#cheatcodes">Opzioni di avvio specifiche della ISO live aptosid</a></li>
+				<li><a href="cheatcodes-it.htm#cheatcodes-linux">Opzioni di avvio generiche di linux</a></li>
+				<li><a href="cheatcodes-vga-it.htm#vga">Codici VGA</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-it.htm">Partizionare l'hard disk - tradizionale, GPT e LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-it.htm#hd-ntfs3g">Scrivere su partizioni NTFS con ntfs-3g</a></li>
+			<li><a href="part-lvm-it.htm#part-lvm">Partizionare per utilizzare LVM - Logical Volume Manager</a></li>
+			<li><a href="part-gparted-it.htm#partition">Partizionare con una GUI &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-it.htm#partition">Partizionare il disco fisso con  GParted/KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-it.htm#ntfs">Ridimensionare una partizione NTFS GParted/KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-it.htm#partition">Partizionare con una CLI &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-it.htm#partition">Partizionare il disco fisso con cfdisk</a></li>
+					    <li><a href="part-cfdisk-it.htm#formating">Formattare dopo aver partizionato con cfdisk</a></li>
+					    <li><a href="part-gdisk-it.htm#gdisk-6">Formattare dopo aver partizionato con gdisk</a></li>
+					    <li><a href="part-gdisk-it.htm#gdisk-1">Partizionamento GPT con gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-it.htm#part-example">Basi del partizionamento &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-it.htm#part-example">Esempi di dimensione partizioni</a></li>
+					  <li><a href="part-uuid-it.htm#uuid">UUID, Ricostruire fstab e creare nuovi punti di mount</a></li>
+					  <li><a href="part-cfdisk-it.htm#disknames">Assegnare nomi ai dischi</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-it.htm">Opzioni d'installazione - HD, USB, VM e Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-it.htm#Inst-prep">Preparazione all'installazione &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-it.htm#Inst-prep">Preparazione all'installazione</a></li>
+					  <li><a href="hd-install-it.htm#Installation">Installare sul disco fisso</a></li>
+					  <li><a href="hd-install-it.htm#first-hd-boot">Primo avvio</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-it.htm#fromiso">Avviare "fromiso" &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-it.htm#fromiso">Avviare "fromiso" - panoramica</a></li>
+					  <li><a href="hd-install-opts-it.htm#grub2-fromiso">Avviare "fromiso" con Grub 2</a></li>
+					  <li><a href="hd-install-opts-it.htm#fromiso-persist">"fromiso" e "persistente"</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-it.htm#usb-hd">Installare su periferiche USB &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-it.htm#usb-hd">Installare aptosid su di un dispositivo USB - specifico di aptosid - aptosid-on-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-it.htm#raw-usb">Installare aptosid su di un dispositivo USB/SSD con qualsiasi s.o. : Linux, MS Windows, Mac OS X</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-it.htm#install-crypt">Installare su partizioni criptate - cryptroot</a></li>
+		  <li><a href="nbdboot-it.htm#nbd1">Avviare aptosid attraverso una rete</a></li>
+		  <li><a href="hd-install-vmopts-it.htm#vmopts">Opzioni di installazione della Macchina Virtuale</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-it.htm">Schede grafiche, Monitor, Xorg &amp; drivers</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-it.htm#mon-res">Risoluzione dello schermo e tipi di schermi &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-it.htm#mon-res">Risoluzione dello schermo e tipi di schermi</a></li>
+					  <li><a href="hw-dev-mon-it.htm#xrandr">Doppio schermo e xrandr</a></li>
+					  <li><a href="hw-dev-mon-it.htm#mon-binary">Doppio schermo (usando i driver binari)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-it.htm#foss-xorg">GPU drivers &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-it.htm#ati-3d">Driver 3D per AMD/ATI</a></li>
+					  <li><a href="gpu-it.htm#intel">Driver 2D e 3D per Intel</a></li>
+					  <li><a href="gpu-it.htm#nvidia">Driver 3D per Nvidia</a></li>
+					  <li><a href="gpu-it.htm#foss-xorg">Driver Open Source Xorg</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-it.htm#fw-detect">Rilevamento del firmware non-free</a></li>
+			  <li><a href="nf-firm-it.htm#non-free-firmware">Aggiungere non-free al sources list</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-it.htm">Gestori di finestre</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-it.htm">KDE and XFCE Gestori di finestre &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-it.htm#xfce-notes">Aggiunte utili per Xfce</a></li>
+					    <li><a href="wm-dm-it.htm#install-add">Aggiunte utili per KDE</a></li>
+					    <li><a href="wm-dm-it.htm#desk-freeze">Blocchi del desktop</a></li>
+					    <li><a href="wm-dm-it.htm#kde-login">Impossibile entrare in KDE</a></li>
+					    <li><a href="wwm-dm-it.htm#ch-th">Cambiare i temi</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-it.htm#dm">Installare Display Manager aggiuntivi</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-it.htm">Connessione ad internet, WiFi, LAN e reti</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-it.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-it.htm#serv-apache">aptosid e LAMP</a></li>
+					    <li><a href="lamp-apache-it.htm#serv-ftp">Client FTP</a></li>
+					    <li><a href="lamp-apache-it.htm#serv-sec">Protocolli di sicurezza</a></li>
+					    <li><a href="lamp-apache-it.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-it.htm#serv-mysql">Configurazione MySQL</a></li>
+					    <li><a href="lamp-ppp-it.htm#serv-php">PHP in Apache</a></li>
+					    <li><a href="ntp-server-it.htm#ntp-server">Configurazione Timeserver</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-it.htm#tor">Firewall e Privacy &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-it.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-it.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-it.htm#firewalls">Firewall</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-it.htm#ssh-x">SSH e Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-it.htm#setup">Setup Samba-Server</a></li>
+						  <li><a href="samba-it.htm#configure">Configurare SAMBA (Windows)</a></li>
+						  <li><a href="ssh-it.htm#ssh-fs">Mount da remoto con SSH</a></li>
+						  <li><a href="ssh-it.htm#ssh-x">Applicazioni in X Window attraverso SSH</a></li>
+						  <li><a href="ssh-it.htm#ssh-f">Interfaccia grafica per SSH con Konqueror</a></li>
+						  <li><a href="ssh-it.htm#ssh-w">SSH X-Forwarding da un PC con Windows</a></li>
+						  <li><a href="ssh-it.htm#ssh">SSH e Sicurezza</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-it.htm#netcardconfig">Connessioni WiFi &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-it.htm#netcardconfig">Attivare una connessione di rete con "ceni"</a></li>
+						    <li><a href="inet-wpagui-it.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-it.htm#net-set1">WiFi - Impostare il Roaming WiFi</a></li>
+						    <li><a href="inet-wpa-it.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-it.htm#hotswitch">Scambiare la rete fra WiFi e Cavo</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-it.htm#netcardconfig">Connessioni via cavo &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-it.htm#dial-mod">Modem 56k</a></li>
+						    <li><a href="inet-ceni-it.htm#netcardconfig">Attivare una connessione di rete con "ceni"</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-it.htm#fw-detect">Rilevamento del firmware non-free</a></li>
+		<li><a href="nf-firm-it.htm#non-free-firmware">Aggiungere non-free al sources list</a></li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-it.htm">Dist-upgrade e gestione dei pacchetti</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-it.htm#apt-cook">APT - Guida rapida lista depositi del software &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-it.htm#apt-cook">APT - Guida rapida lista depositi del software</a></li>
+					    <li><a href="sys-admin-apt-it.htm#apt-install">Installare un nuovo pacchetto</a></li>
+					    <li><a href="sys-admin-apt-it.htm#apt-delete">Eliminare un pacchetto</a></li>
+					    <li><a href="sys-admin-apt-it.htm#apt-downgrade">Effettuare il downgrade o l'Hold di un pacchetto</a></li>
+					    <li><a href="sys-admin-apt-it.htm#apt-cache">Cercare un pacchetto con apt-cache</a></li>
+					    <li><a href="sys-admin-apt-it.htm#gui-pacsea">Cercare un pacchetto tramite interfaccia grafica</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-it.htm#kern-upgrade">Aggiornare il kernel &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-it.htm#kern-remove">Eliminare i kernel</a></li>
+					    <li><a href="sys-admin-kern-upg-it.htm#kern-upgrade">Aggiornare il kernel</a></li>
+					    <li><a href="sys-admin-kern-upg-it.htm#dmakms">Installare dinamicamente i moduli del kernel con dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-it.htm#apt-upgrade">Aggiornare un sistema installato - dist-upgrade - Panoramica &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-it.htm#live-cd-upgrade">Aggiornare un sistema attraverso il DVD live ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-it.htm#approx">Fare il dist-upgrade di più PC in rete</a></li>
+					    <li><a href="sys-admin-apt-it.htm#apt-upgrade">Aggiornare un sistema installato - dist-upgrade - Panoramica</a></li>
+					    <li><a href="sys-admin-apt-it.htm#du-st">Aggiornare un sistema installato - dist-upgrade - Passi da fare</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-it.htm">Amministrazione di sistema</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-it.htm#bois-prep">Aggiornare il BIOS con FreeDOS</a></li>
+		<li><a href="vir-rkits-it.htm#virus-rkits">Controllo virus e rootkit</a></li>
+		<li><a href="hd-install-it.htm#adduser">Aggiungere Utenti e Password &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-it.htm#adduser">Aggiungere un nuovo utente</a></li>
+					    <li><a href="sys-admin-gen-it.htm#pw-lost">Recupero della password di root</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-it.htm#start-services">Servizi e runlevel init &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-it.htm#start-services">Abilitare e disabilitare servizi</a></li>
+					    <li><a href="sys-admin-gen-it.htm#pkill">Eseguire il kill di un servizio o processo</a></li>
+					    <li><a href="sys-admin-gen-it.htm#init">runlevel di aptosid - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-it.htm#rsync">Backup del sistema &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-it.htm#rdiff">Backup con rdiff</a></li>
+					    <li><a href="sys-admin-rsync-it.htm#rsync">Backup con rsync</a></li>
+					    <li><a href="home-it.htm#home-bu">Spostare la directory "home"</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-it.htm#fonts">CUPS, Font e Suono &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-it.htm#fonts">Font</a></li>
+					     <li><a href="sys-admin-gen-it.htm#cups">Sistema di stampa CUPS</a></li>
+					     <li><a href="sys-admin-gen-it.htm#sound">Mixer del suono</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-it.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-it.htm#chroot">Grub2 - Ripristinare Grub tramite chroot</a></li>
+					    <li><a href="sys-admin-grub2-it.htm#mbr-over-grub2">Grub2 - MBR: sovrascrittura del settore di boot</a></li>
+					    <li><a href="sys-admin-grub2-it.htm#multi-os">Grub2 - Avvio doppio o multiplo</a></li>
+					    <li><a href="sys-admin-grub2-it.htm#grub1-grub2">Grub2 - Aggiornare da Grub1</a></li>
+					    <li><a href="sys-admin-grub2-it.htm#grub2">Grub2 - Panoramica</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Sponsorizzato da webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid è ospitato presso webtropia.com" alt="aptosid è ospitato presso webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+	<div class="divider" id="gdisk-1">
+		<h2 id="top-header">Partizionamento GPT gdisk</h2>
+							<p>GPT gdisk, Globally Unique Identifier (GUID) Partition Table (GPT), è uno strumento per partizionare hard disk di qualsiasi dimensione <span class="highlight-3">e necessario per i dischi che hanno una capacità maggiore di 2 TB</span>. Per default, gdisk si accerterà che le partizioni siano ben allineate per i dischi SSD, (o hard disk che non hanno settori da 512 byte).</p> 
+
+							<p>Il vantaggio cruciale di GPT è che non c'è più il bisogno di affidarsi a partizioni primarie, estese o logiche che riguardano MBR per il partizionamento. GPT può supportare quasi un numero illimitato di partizioni ed è limitato soltanto dalla quantità di spazio riservato per le partizioni nel disco GPT. Notare che lo strumento <span class="highlight-3">gdisk</span> ha per default 128 partizioni.</p>
+
+							<p>Tuttavia, utilizzare GPT su piccole penne USB/SSD, (per esempio 8GB), può essere controproducente se c'è il bisogno di trasferire dati da un computer all'altro o da un s.o. ad un altro.</p>
+
+							<!--<p><span class="highlight-2">NOTE : USB booting is not supported with GPT.</span></p>-->
+
+				 <h3  class="highlight-2">Note Importanti</h3>
+
+							<p><span class="highlight-3">I termini UEFI e EFI sono intercambiabili ed hanno lo stesso significato.</span></p>
+
+						<h5>dischi dati GPT</h5>
+							<p><span class="highlight-3">Alcuni sistemi operativi non supportano dischi dati GPT, fare riferimento alla documentazione propria di questi s.o.</span></p>
+
+							<p>I dischi dati GPT sono disponibili per macchine a 32 e 64 bit in Linux.</p>
+
+						  <h5>Avviare i dischi GPT</h5>
+
+							<p>Il doppio e triplo avvio dei dischi GPT con Linux, BSD e Apple sono supportati utilizzando il modo <span class="highlight-3" >EFI</span> a 64 bit.</p>
+
+							<p>Il doppio avvio di dischi GPT con Linux e MS Windows è possibile, a patto che MS Windows possa avviare i dischi GPT in modalità <span class="highlight-3">UEFI</span> 64 bit.</p>
+
+						  <h5>Strumenti di partizionamento grafici per usare GPT</h5>
+							<p>A parte gdisk basato su terminale, gli strumenti grafici come" gparted" e "partitionmanager" supportano i dischi GPT. Stabilito questo, gdisk dovrebbe essere lo strumento preferito per evitare anomalie grafiche non intenzionali. Tuttavia "Gparted - gparted" insieme a "KDE Partition Manager - partitionmanager", fra gli altri, sono validi strumenti per restituire una visuale di quello che si è fatto con gdisk.</p>
+
+							<p  class="highlight-3">Letture obbligatorie prima di procedere oltre:</p>
+						<ul>
+<li>
+<pre>
+man gdisk
+</pre>
+</li>
+							<li><a href="http://www.rodsbooks.com/gdisk/"> GPT fdisk Tutorial by Roderick W. Smith</a></li>
+
+							<li><a href="http://en.wikipedia.org/wiki/GUID_Partition_Table">en.wikipedia.org/wiki/GUID_Partition_Table</a></li>
+						  </ul>
+	</div>
+	<div class="divider" id="gdisk-2">
+		<h2>Partitionare l'hard disk utilizzando gdisk per un sistema Linux</h2>
+						<h6>Capire i comandi chiave di gdisk come <span class="highlight-2">m</span> per tornare al menu principale, <span class="highlight-2">d</span>, <span class="highlight-2">n</span>, <span class="highlight-2">p</span> e <span class="highlight-2">t</span>, fra gli altri, diventeranno principalmente i comandi richiesti riguardanti il partizionamento gdisk, e converrà esplorare gdisk su di un disco di test.</h6>
+
+											 
+					<h5><span class="highlight-2">NOTA IMPORTANTE riguardo al comando "n":</span> </h5>
+						<!--<h6> After creating the first partition you need to press  <span class="highlight-3"> &lt; Enter &gt; 2 times </span> each time you use <span class="highlight-2"> n </span>  to bring up the last sector to set the size of the subsequent partitions.</h6>-->
+
+							<p>Quando si utilizza il comando <span class="highlight-2">n</span>, si preme &lt;Enter&gt; per dare alla partizione il numero progressivo libero e quindi si deve premere nuovamente &lt;Enter&gt; per accettare il settore iniziale di default per la prossima partizione prima di impostare la dimensione di cui si ha bisogno per l'ultimo settore. Per esempio:</p>
+
+<pre>
+Command (? for help):  n  
+Partition number (2-128, default 2):  2 
+First sector (34-15728606, default = <span class="highlight-3">411648</span>) or {+-}size{KMGTP}: 
+Last sector (<span class="highlight-3">411648</span>-15728606, default = 15728606) or {+-}size{KMGTP}: +6144M
+</pre>
+
+		  <h3>Esempio di partizionamento di un disco GPT</h3>
+							<p><i>Scalare per soddisfare i propri requisiti</i>:</p>
+						   <ol>
+							<li>Creare una partizione bootloader, <span class="highlight-1">(assumendo che il disco non è un disco dati puro e deve essere avviabile)</span></li>
+							<li>Creare una partizione swap, <span class="highlight-1"> (assumendo che il disco non è un disco dati puro e deve essere avviabile) </span></li>
+							<li>Creare partizioni linux</li>
+							<li>Creare altre partizioni dati</li>
+						    </ol>
+
+							<p><span class="highlight-2">NOTA: l'esempio seguente utilizza una penna USB per dimostrare i passi richiesti e pertanto non è esaustiva.</span></p>
+
+					<h3>I passi</h3>
+							<p>Se non si è sicuri del nome del disco, utilizzare fdisk per accertarsi del nome, (sono richiesti i privilegi di root per tutti i comandi di partizionamento e formattazione):</p>
+<pre>
+fdisk -l
+</pre>
+							<p>fdisk restituirà il percorso richiesto e possibilmente include anche altri nomi di partizioni, tuttavia si deve guardare al percorso disco attuale, senza tenere conto di partizioni che possono esistere nel disco. Per esempio, facciamo conto che è <span class="highlight-3">sdb</span> ed avviamo gdisk con il percorso del disco:</p>
+<pre >
+gdisk /dev/sdb
+</pre>
+							<p><span class="highlight-3">La visualizzazione iniziale è un avvertimento se il disco non è un disco nuovo oppure un disco che già utilizza GPT:</span></p>
+<pre>
+GPT fdisk (gdisk) version 0.7.2
+Partition table scan:
+  MBR: MBR only
+  BSD: not present
+  APM: not present
+  GPT: not present
+***************************************************************
+Found invalid GPT and valid MBR; converting MBR to GPT format.
+THIS OPERATION IS POTENTIALLY DESTRUCTIVE! Exit by typing 'q' if
+you don't want to convert your MBR partitions to GPT format!
+***************************************************************
+Command (? for help):
+</pre>
+							<p>Quando si avvia <span class="highlight-3">gdisk</span> su di un disco con partizioni MBR già esistenti e non GPT, il programma visualizza un messaggio contornato da asterischi riguardo alla conversione delle partizioni esistenti a GPT. <span class="highlight-3">Questo avviene per spaventarvi se viene avviato gdisk nel disco sbagliato per caso oppure se non si ha idea di cosa si sta facendo. Si deve rispondere esplicitamente a questo avvertimento prima di procedere. Questo è un messaggio voluto per evitare il danneggiamento dei dischi di avvio.</span></p>
+
+							<p>Premere <span class="highlight-2">?</span> e si vedrà una lista di comandi disponibili, (i comandi <span class="highlight-3">colorati</span> sono per motivi di documentazione):</p>
+<pre>
+Command (? for help): <span class="highlight-2"> ? </span>
+b	back up GPT data to a file
+c	change a partition's name
+d	delete a partition
+i	show detailed information on a partition
+l	list known partition types
+n	add a new partition
+o	create a new empty GUID partition table (GPT)
+p	print the partition table
+q	quit without saving changes
+r	recovery and transformation options (experts only)
+s	sort partitions
+t	change a partition's type code
+v	verify disk
+w	write table to disk and exit
+x	extra functionality (experts only)
+?	print this menu
+</pre>
+							<p>Per verificare che si sta veramente lavorando nel disco che si crede premere <span class="highlight-2">p</span>.</p>
+<pre>
+Command (? for help): <span class="highlight-2"> p </span>
+Disk /dev/sdb: 16547840 sectors, 7.9 GiB <span class="highlight-2">Questo esempio utilizza una penna usb da 8GB</span>
+Logical sector size: 512 bytes
+Disk identifier (GUID): 0267952D-9B06-4B10-A648-B83684786910
+Partition table holds up to 128 entries
+First usable sector is 34, last usable sector is 16547806
+Partitions will be aligned on 2048-sector boundaries
+Total free space is 16547773 sectors (7.9 GiB)
+Number  Start (sector)    End (sector)  Size       Code  Name
+</pre>
+
+							<p>La colonna <span class="highlight-3">Code</span> dell'output mostra il codice del tipo di partizione ed la colonna <span class="highlight-3">Name</span> mostra una stringa di testo che si può modificare.</p>
+
+				    <h3>Cancellare la tabella delle partizioni</h3>
+							<p>Adesso c'è bisogno di cancellare per intero la tabella delle partizioni del disco per poter impostare il partizionamento GPT:</p>
+<pre>
+command (? for help): <span class="highlight-2"> d </span>
+</pre>
+							<!--<p>If there are multiple partitions gdisk will ask you to type a number representing the partitions you wish to delete.</p>-->
+
+
+	</div>
+	<div class="divider" id="gdisk-3">
+			<h2>Avvio GPT-EFI oppure avvio GPT-BIOS</h2>
+
+							<p>Se è richiesto l'avvio di un disco GPT, ci sono 2 opzioni per formattare il settore d'avvio di un disco GPT.</p>
+
+							<p>Le opzioni sono:</p>
+						    <ul>
+							<li><span class="highlight-3">Nella macchina è disponibile (U)EFI tramite il BIOS ed è abilitato, ed è selezionato come avviabile.</span></li>
+							<li>Si vuole utilizzare EFI per avviare un disco formattato come GPT</li>
+						     </ul>
+							<p><span class="highlight-2">oppure</span></p>
+						    <ul>
+							<li>Nella macchina <span class="highlight-2">non</span> è disponibile (U)EFI tramite il BIOS</li>
+							<li>Si vuole utilizzare il BIOS per avviare un disco formattato come GPT</li>
+						    </ul>
+
+					<h3>Avvio EFI</h3>
+							<p><span class="highlight-2">Il BIOS deve essere idoneo per EFI, abilitato e selezionato per essere avviabile.</span></p>
+
+							<p>Se si sta per avviare utilizzando EFI si deve disporre di una partizione di sistema EFI formattata come FAT (tipo <span class="highlight-3">EF00</span>) come prima partizione. Questa partizione contiene i bootloader. Quando si installa il programma install-gui ignorerà ogni scelta "da dove avviare" ed un bootloader aptosid verrà installato nella partizione di sistema EFI in <span class="highlight-3">/efi/aptosid</span>. La partizione di sistema EFI verrà montata come <span class="highlight-3">/boot/efi</span> purché si lasci selezionata l'opzione "monta altre partizioni", non c'è bisogno di dire al programma di installazione di fare il mount di questa partizione.</p>
+
+							<!--<p><span class="highlight-2">NOTE: USB booting is not supported with GPT.</span></p>-->
+
+					    <h4>Creare la partizione bootloader EFI</h4>
+							  <p>Scrivere <span class="highlight-2">n</span> per aggiungere una nuova partizione e <span class="highlight-3">+200M</span> per dare una dimensione al bootloader.</p>
+<pre>
+Command (? for help): <span class="highlight-2"> n </span>
+Partition number (1-128, default 1): <span class="highlight-2"> 1 </span>
+</pre>
+ 
+<pre>
+First sector (34-16547806, default = 34) or {+-}size{KMGTP}: 
+Information: Moved requested sector from 34 to 2048 in
+order to align on 2048-sector boundaries.
+Use 'l' on the experts' menu to adjust alignment
+Last sector (2048-16547806, default = 16547806) or {+-}size{KMGTP}: <span class="highlight-2"> +200M </span>
+Current type is 'Linux filesystem'
+</pre>
+							  <p>Scrivendo <span class="highlight-2">L</span> verrà restituita una lista di codici:</p>
+<pre>
+Hex code or GUID (L to show codes, Enter = 8300): <span class="highlight-2"> L </span>
+0700 Microsoft basic data  0c01 Microsoft reserved    2700 Windows RE          
+4200 Windows LDM data      4201 Windows LDM metadata  7501 IBM GPFS            
+7f00 ChromeOS kernel       7f01 ChromeOS root         7f02 ChromeOS reserved   
+8200 Linux swap            8300 Linux filesystem      8301 Linux reserved      
+8e00 Linux LVM             a500 FreeBSD disklabel     a501 FreeBSD boot        
+a502 FreeBSD swap          a503 FreeBSD UFS           a504 FreeBSD ZFS         
+a505 FreeBSD Vinum/RAID    a800 Apple UFS             a901 NetBSD swap         
+a902 NetBSD FFS            a903 NetBSD LFS            a904 NetBSD concatenated 
+a905 NetBSD encrypted      a906 NetBSD RAID           ab00 Apple boot          
+af00 Apple HFS/HFS+        af01 Apple RAID            af02 Apple RAID offline  
+af03 Apple label           af04 AppleTV recovery      be00 Solaris boot        
+bf00 Solaris root          bf01 Solaris /usr &amp; Mac Z  bf02 Solaris swap        
+bf03 Solaris backup        bf04 Solaris /var          bf05 Solaris /home       
+bf06 Solaris alternate se  bf07 Solaris Reserved 1    bf08 Solaris Reserved 2  
+bf09 Solaris Reserved 3    bf0a Solaris Reserved 4    bf0b Solaris Reserved 5  
+c001 HP-UX data            c002 HP-UX service         <span class="highlight-2">ef00 EFI System</span>          
+ef01 MBR partition scheme  ef02 BIOS boot partition   fd00 Linux RAID
+</pre>
+							<p>Scrivere <span class="highlight-3">ef00</span> per ottenere una partizione UEFI:</p>
+<pre>
+Hex code or GUID (L to show codes, Enter = 8300): <span class="highlight-2">ef00</span>
+Changed system type of partition to 'EFI System'
+</pre>
+
+				    <h3>Partizione di avvio BIOS</h3>
+					      <h4>Creare una partizione di avvio BIOS</h4>
+
+							<p>Se il sistema non supporta UEFI, si può creare una partizione di avvio BIOS, che sostituisce il settore del disco in un drive partizionato DOS che si trova tra la tabella delle partizioni e la prima partizione dove viene scritto direttamente grub.</p>
+
+							<p>Scrivere <span class="highlight-2">n</span> per aggiungere una nuova partizione e <span class="highlight-3">+200M</span> per dare una dimensione al bootloader (la ragione di crearla di +200M, confrontata con il pensiero tradizionale di +32M, è quella di avere pronta una partizione dimensionata per EFI in caso si dovesse cambiare l'avvio del disco in EFI).</p>
+
+<pre>
+Command (? for help): <span class="highlight-2"> n </span>
+Partition number (1-128, default 1): <span class="highlight-2"> 1 </span>
+</pre>
+ 
+<pre>
+First sector (34-16547806, default = 34) or {+-}size{KMGTP}: 
+Information: Moved requested sector from 34 to 2048 in
+order to align on 2048-sector boundaries.
+Use 'l' on the experts' menu to adjust alignment
+Last sector (2048-16547806, default = 16547806) or {+-}size{KMGTP}: <span class="highlight-2"> +200M </span>
+Current type is 'Linux filesystem'
+</pre>
+							<p>Scrivere <span class="highlight-3">ef02</span> per ottenere una partizione di avvio BIOS:</p>
+<pre>
+Hex code or GUID (L to show codes, Enter = 8300): <span class="highlight-2">ef02</span>
+Changed system type of partition to 'BIOS boot'
+</pre>
+
+							<p><span class="highlight-2">Nota Importante: la partizione di avvio BIOS non deve essere formattata.</span></p>
+
+	</div>
+	<div class="divider" id="gdisk-4">		  
+					<h3>Creare la partizione di swap</h3>
+
+							<p>La dimensione della partizione di swap non dovrebbe mai essere sottostimata, particolarmente per i portatili che devono avere la possibilità di fare il sospendi su disco se richiesto. Dovrebbe almeno eguagliare la dimensione della RAM.</p>
+
+							<p>Scrivere <span class="highlight-2">n</span> per aggiungere una nuova partizione e <span class="highlight-3">+2G</span>, (oppure <span class="highlight-3">+2048M</span>) per dare la dimensione alla partizione di swap con un codice di tipo <span class="highlight-3">8200</span>. Un esempio di questa procedura assomiglierà a questa:</p>
+
+<pre>
+Command (? for help): <span class="highlight-2"> n </span> 
+Partition number (2-128, default 2): <span class="highlight-2"> 2 </span>
+First sector (34-15728606, default = 411648) or {+-}size{KMGTP}: 
+Last sector (411648-15728606, default = 15728606) or {+-}size{KMGTP}: <span class="highlight-2">+2048M</span>
+Current type is 'Linux filesystem'
+Hex code or GUID (L to show codes, Enter = 8300): <span class="highlight-2">8200</span>
+Changed type of partition to 'Linux swap
+</pre> 
+
+					  
+		  </div>
+	<div class="divider" id="gdisk-5">		  
+					<h3>Creare le partizioni dati</h3>
+							<p>Scrivere <span class="highlight-2">n</span> per aggiungere una nuova partizione e <span class="highlight-3">XXXG</span> per darle una dimensione. In questo esempio <span class="highlight-3">+4G</span>:</p>
+<pre>
+Partition number (3-128, default 3): <span class="highlight-2"> 3 </span>
+First sector (34-15728606, default = 4605952) or {+-}size{KMGTP}: 
+Last sector (4605952-15728606, default = 15728606) or {+-}size{KMGTP}: <span class="highlight-2">+4G</span>
+Current type is 'Linux filesystem'
+Hex code or GUID (L to show codes, Enter = 8300): <span class="highlight-2">8300</span>
+Changed type of partition to 'Linux filesystem
+</pre>
+
+							<p><span class="highlight-3">Ripetere lo stesso procedimento per le altre partizioni a seconda delle necessità.</span></p>
+
+							<p>Dal momento che questo esempio è una penna usb può essere saggio creare una partizione <span class="highlight-3">qualsiasi tipo dati OS</span> con un codice di tipo <span class="highlight-3">0700</span>, altrimenti darle il codice per un filesystem linux (8300):</p>
+<pre>
+Command (? for help): <span class="highlight-2"> n </span>
+Partition number (4-128, default 4): <span class="highlight-2"> 4 </span>
+First sector (34-15728606, default = 12994560) or {+-}size{KMGTP}: 
+Last sector (12994560-15728606, default = 15728606) or {+-}size{KMGTP}:<span class="highlight-2"> +1300M</span>
+Current type is 'Linux filesystem'
+Hex code or GUID (L to show codes, Enter = 8300): <span class="highlight-2"> 0700 </span>
+Changed type of partition to 'Microsoft basic data'
+</pre>
+							<p>Per esaminare le partizioni che si sono create:</p>
+<pre>
+Command (? for help): <span class="highlight-2"> p </span>
+Disk /dev/sdx: 15728640 sectors, 7.5 GiB
+Logical sector size: 512 bytes
+Disk identifier (GUID): F409CFD3-6DDC-4551-BBC5-85DC218C1352
+Partition table holds up to 128 entries
+First usable sector is 34, last usable sector is 15728606
+Partitions will be aligned on 2048-sector boundaries
+Total free space is 73661 sectors (36.0 MiB)
+
+Number  Start (sector)    End (sector)  Size       Code  Name
+   1            2048          411647   200.0 MiB   EF00  Boot
+   2          411648         4605951   2.0 GiB     8200  Swap
+   3         4605952        12994559   4.0 GiB     8300  Linux File System
+   4        12994560        15656959   1.3 GiB     0700  Any OS Data
+</pre>
+							<p>Per aggiungere una descrizione ad ognuna delle partizioni utilizzare il comando <span class="highlight-2">c</span> per descrivere lo scopo di ogni partizione. Per esempio:</p>
+<pre>
+Command (? for help): <span class="highlight-2">c</span>
+Partition number (1-4): <span class="highlight-2">4</span>
+Enter name: <span class="highlight-3">Nome descrittivo a scelta</span>
+</pre>
+							<p>Il comando <span class="highlight-2">w</span> scrive i cambiamenti su disco mentre il comando <span class="highlight-2">q</span> esce dal programma senza salvare i cambiamenti:</p>
+<pre>
+Command (? for help): <span class="highlight-2">w</span>
+
+Final checks complete. About to write GPT data. THIS WILL OVERWRITE EXISTING
+PARTITIONS!!
+
+Do you want to proceed? (Y/N): <span class="highlight-2">y</span>
+OK; writing new GUID partition table (GPT).
+The operation has completed successfully.
+</pre>
+		  </div>
+	<div class="divider" id="gdisk-6">
+			      <h2>Formattare le partizioni</h2>
+							<p>Dal momento che gdisk crea partizioni e non filesystem, si dovrà formattare ogni partizione creata tramite la console testo. Tuttavia è necessario sapere i nomi delle partizioni in modo da eseguire correttamente la formattazione, perciò eseguire:</p>
+<pre>
+fdisk -l
+</pre>
+							<p>fdisk restituirà l'informazione richiesta. Supponendo che questa sia <span class="highlight-3">sdb</span>:</p>
+<pre>
+gdisk /dev/sdb
+Command (? for help): <span class="highlight-2"> p </span>
+</pre>
+							  
+							<p>Adesso premere <span class="highlight-2">q</span> per uscire da gdisk e tornare al prompt root <span class="highlight-2">#</span>, in modo da inserire il percorso per ogni numero di partizione:</p>
+
+							<p>Per le partizioni UEFI, <span class="highlight-2">(non formattare la partizione di avvio BIOS)</span>:</p>
+
+<pre>
+ mkfs -t vfat /dev/sdb1
+</pre>
+							<p>Per le partizoni Linux, <span class="highlight-3">(la sintassi cambierà per ogni partizione addizionale linux, quindi sdb4, sdb5, e così via</span>:</p>
+<pre>
+ mkfs -t ext4 /dev/sdb3
+</pre>
+							 <p>Per la partizione comune a sistemi operativi differenti, <span class="highlight-3">(possibilmente richiesta soltanto se una penna USB è necessaria per l'interoperabilità)</span>:</p>
+<pre>
+ mkfs -t vfat /dev/sdb4
+</pre>
+
+							<p>Formattare la partizione di swap:</p>
+<pre >
+mkswap /dev/sdb2
+</pre>
+
+							<p>Quindi:</p>
+
+<pre >
+swapon /dev/sdb2
+</pre>
+
+							<p>Infine controllare se swap viene riconosciuta con:</p>
+<pre >
+swapon -s
+</pre>
+							<p>In caso affermativo, eseguire:</p>
+<pre >
+swapoff -a
+</pre>
+							<p>Questi comandi funzionano come per le partizioni MBR.</p>
+
+							<h5><span class="highlight-2">È assolutamente necessario riavviare per fare in modo che il nuovo schema di partizionamento possa essere letto dal kernel.</span></h5>
+
+							<p>Dopo il riavvio si è pronti per iniziare l'installazione o utilizzare un disco GPT.</p>
+
+		  </div>
+	<div class="divider" id="gdisk-7">
+			<h2>Comandi gdisk avanzati</h2>
+
+							<p>Prima di salvare le modifiche, si potrebbe verificare che non ci siano problemi con le strutture dati GPT. Per farlo si può utilizzare il comando <span class="highlight-2">v</span> :</p>
+<pre>
+Command (? for help): <span class="highlight-2"> v </span>
+No problems found. 0 free sectors (0 bytes) available in 0
+segments, the largest of which is 0 sectors (0 bytes) in size
+</pre>
+							<p>In questo caso, ogni byte disponibile nel disco è allocato tramite partizioni e non sono stati rilevati problemi. Se ci fosse stato spazio disponibile per la creazione di partizioni avrebbe restituito la quantità. Se gdisk trova problemi, come partizioni sovrapposte oppure tabelle delle partizioni principale e di backup non corrispondenti, le avrebbe riportate. Naturalmente, gdisk include misure di sicurezza per essere certi che l'utente non possa creare problemi. L'opzione di controllo v è intesa per dare un aiuto nel rilevare problemi che possono risultare da corruzione dati.</p>
+
+							<p>Se sono stati rilevati problemi, si possono correggere tramite le varie opzioni del <span class="highlight-3">recovery &amp; transformation menu</span>, che è un secondo menu di opzioni disponibile premendo <span class="highlight-2">r</span> :</p>
+<pre>
+Command (? for help): <span class="highlight-2"> r </span>
+
+recovery/transformation command (? for help): <span class="highlight-2">?</span>
+b	use backup GPT header (rebuilding main)
+c	load backup partition table from disk (rebuilding main)
+d	use main GPT header (rebuilding backup)
+e	load main partition table from disk (rebuilding backup)
+f	load MBR and build fresh GPT from it
+g	convert GPT into MBR and exit
+h	make hybrid MBR
+i	show detailed information on a partition
+l	load partition data from a backup file
+m	return to main menu
+o	print protective MBR data
+p	print the partition table
+q	quit without saving changes
+t	transform BSD disklabel partition
+v	verify disk
+w	write table to disk and exit
+x	extra functionality (experts only)
+?	print this menu
+</pre>
+
+							<p>Un terzo menu, <span class="highlight-3">experts menu</span>, può essere visualizzato premendo <span class="highlight-2">x</span> nel <span class="highlight-3">main menu</span> oppure nel <span class="highlight-3">recovery &amp; transformation menu</span>.</p>
+
+<pre>
+recovery/transformation command (? for help): <span class="highlight-2">x</span>
+
+Expert command (? for help): <span class="highlight-2">?</span>
+a       set attributes
+c       change partition GUID
+d       display the sector alignment value
+e       relocate backup data structures to the end of the disk
+g       change disk GUID
+i       show detailed information on a partition
+l       set the sector alignment value
+m       return to main menu
+n       create a new protective MBR
+o       print protective MBR data
+p       print the partition table
+q       quit without saving changes
+r       recovery and transformation options (experts only)
+s       resize partition table
+v       verify disk
+w       write table to disk and exit
+z       zap (destroy) GPT data structures and exit
+?       print this menu
+</pre>
+							<p>Possono essere eseguite delle modifiche a basso livello, come cambiare i GUID delle partizioni o dei dischi (<span class="highlight-2">c</span> e <span class="highlight-2">g</span>, rispettivamente). L'opzione <span class="highlight-2">z</span> distrugge immediatamente le strutture dati GPT, cosa che deve essere fatta se si vuole riutilizzare un disco GPT con un altro schema di partizionamento. Se queste strutture non vengono cancellate, alcuni strumenti di partizionamento si possono confondere dalla presenza apparente di due sistemi di partizioni.</p>
+
+							<p>In generale, le opzioni nei menu <span class="highlight-3">recovery &amp; transformation</span> e <span class="highlight-3">experts</span> non dovrebbero essere utilizzate se non si è esperti. Tuttavia anche i non esperti potrebbero essere costretti ad utilizzare questi menu se un disco è danneggiato. Prima di fare azioni drastiche si dovrebbe utilizzare l'opzione <span class="highlight-2">b</span> nel menu principale per creare un backup in un file e copiarlo in un posto che non sia nel disco che si sta modificando, anche in un penna usb va bene. In questo modo si potrà recuperare la configurazione originale se si danneggiano le partizioni.</p>
+
+				    <h6>Fonti: </h6>
+							<p> <a href="http://www.rodsbooks.com/gdisk/">GPT fdisk Tutorial by Roderick W. Smith</a></p>
+
+							<p> <a href="http://msdn.microsoft.com/en-us/windows/hardware/gg463525">Windows Hardware Developer Center </a></p>
+</div>
+	<!--<div class="divider" id="gdisk-8">
+			<h2>Dual booting with Linux and another OS - TBA</h2>
+
+						<ul>
+<li>
+<pre>
+man gdisk
+</pre>
+</li>
+							<li><a href="http://www.rodsbooks.com/gdisk/"> GPT fdisk Tutorial by Roderick W. Smith</a></li>
+
+							<li><a href="http://en.wikipedia.org/wiki/GUID_Partition_Table">en.wikipedia.org/wiki/GUID_Partition_Table</a></li>
+						  </ul>
+</div>-->
+			<div id="rev">Content last revised  15/08/2011 1155 UTC</div>
+
+</div>
+</body>
+</html>

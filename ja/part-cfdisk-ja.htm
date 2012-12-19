@@ -1,0 +1,683 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+	<title>aptosid Manuals - cfdisk</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body id="part">
+<!-- Last translation revision by muchan 01/Sep/2010 2229 UTC -->
+<!--htdig_noindex--><div id="menu"><!-- menu starts here ja lang maintained by muchan-->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="To aptosid.com, Forum and Wiki" alt="logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-ja.htm#search-on"><img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" /> サーチ Online Offline</a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Choose another language CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="lang-switch CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-ja.htm">aptosid OS マニュアル</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-ja.htm#welcome-gen">aptosid OS マニュアル &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-ja.htm#cred-team">貢献者</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-ja.htm#how-to">このマニュアルの使い方 &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-ja.htm#how-to">このマニュアルの使い方</a></li>
+					  <li><a href="welcome-ja.htm#table-contents">内容一覧</a></li>
+					</ul>
+					</li>
+		<li><a href="help-ja.htm#help-gen">困った時は... &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-ja.htm#help-gen">困った時は...</a></li>
+					  <li><a href="help-ja.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-ja.htm#welcome-quick">aptosid クイックスタートガイド</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-ja.htm">ISO の内容、リリース、ダウンロードミラーとCDの焼き付け</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-ja.htm#cd-content">ISO の内容と最小限必要な仕様 &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-ja.htm#rolling">リリースノート</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-ja.htm#download-aptosid">aptosidのミラー, ダウンロードとCD の作成 &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-ja.htm#md5">md5 Checksum</a></li>
+					  <li><a href="cd-dl-burning-ja.htm#burn-nero">WindowsでISOを焼くには</a></li>
+					  <li><a href="cd-dl-burning-ja.htm#burn-linux">LinuxでISOを焼くには</a></li>
+					  <li><a href="cd-no-gui-burn-ja.htm#burning-no-gui">burniso script</a></li>
+					  <li><a href="cd-no-gui-burn-ja.htm#burn-no-gui-gen">GUIなしでISOを焼くには</a></li>
+					  <li><a href="cd-dl-burning-ja.htm#download-aptosid">aptosid ダウンロードミラー</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-ja.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-ja.htm#rootpw">aptosid-LiveISOのRootパスワード</a></li>
+				<li><a href="live-mode-ja.htm#live-cd-installsoft">Live-ISO作動中にソフトをインストール</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-ja.htm">ターミナル/コンソール</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-ja.htm#term-kon"> ターミナル/コンソール&#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-ja.htm#term-kon"> ターミナル/コンソール</a></li>
+					  <li><a href="term-konsole-ja.htm#colours"> Coloured terminal prompts</a></li>
+					  <li><a href="term-konsole-ja.htm#cli-help">コマンドラインヘルプ</a></li>
+					  <li><a href="help-ja.htm#init3-tools">テキストモード(tty)で便利な道具 - init 3</a></li>
+					  <li><a href="term-konsole-ja.htm#term-cmds">Linuxターミナルのコマンド一覧</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-ja.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-ja.htm">起動コード</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-ja.htm#cheatcodes">aptosidだけのLive-ISO用起動コード</a></li>
+				<li><a href="cheatcodes-ja.htm#cheatcodes-linux">Linux一般の起動コード</a></li>
+				<li><a href="cheatcodes-vga-ja.htm#vga">VGA コード</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-ja.htm">Partitioning the Hard Drive - Traditional, GPT and LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-ja.htm#hd-ntfs3g">ntfs-3gを使ってNTFSパーティションへの書き込み</a></li>
+			<li><a href="part-lvm-ja.htm#part-lvm">LVM(Logical Volume Manager)を使うパーティション</a></li>
+			<li><a href="part-gparted-ja.htm#partition"> GUI でパーティショニング&#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-ja.htm#partition">GParted / KDE Partition Manager を使ってパーティショニング</a></li>
+					  <li><a href="part-gparted-ja.htm#ntfs"> GParted / KDE Partition Manager を使って NTFS のサイズ変更</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-ja.htm#partition">コマンドラインでパーティショニング</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-ja.htm#partition"> cfdisk を使ってパーティショニング</a></li>
+					    <li><a href="part-cfdisk-ja.htm#formating">cfdiskでパーティション後のフォーマッティング</a></li>
+					    <li><a href="part-gdisk-ja.htm#gdisk-6">Formatting after partitioning with gdisk</a></li>
+					    <li><a href="part-gdiskja.htm#gdisk-1">GPT Partitioning with gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-ja.htm#part-example">パーティショニングの基本 &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-ja.htm#part-example">パーティションサイズの例</a></li>
+					  <li><a href="part-uuid-ja.htm#uuid">UUID, Rebuilding fstab and creating new mount points</a></li>
+					  <li><a href="part-cfdisk-ja.htm#disknames">ディスクの名前について</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-ja.htm">インストール・オプション - HD, USB, VM, Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-ja.htm#Inst-prep">インストールの準備 &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-ja.htm#Inst-prep">インストールの準備</a></li>
+					  <li><a href="hd-install-ja.htm#Installation">ハードディスクへのインストール</a></li>
+					  <li><a href="hd-install-ja.htm#first-hd-boot">始めての起動</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-ja.htm#fromiso">fromisoで起動&#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-ja.htm#fromiso">fromisoで起動 - 概説</a></li>
+					  <li><a href="hd-install-opts-ja.htm#grub2-fromiso">GRUB2からfromisoで起動</a></li>
+					  <li><a href="hd-install-opts-ja.htm#fromiso-persist">fromisoと持続モード</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-ja.htm#usb-hd">USBドライブへのインストール &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-ja.htm#usb-hd">USB-HDへのインストール -aptosid 独自の- aptosid-on-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-ja.htm#raw-usb">USB/SSDドライブに他のLinuxや MS Windows、Mac OS X システムから aptosid を書き込む</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-ja.htm#install-crypt">暗号化パーティションへのインストール - cryptroot</a></li>
+		  <li><a href="nbdboot-ja.htm#nbd1">aptosidをネットワークから起動</a></li>
+		  <li><a href="hd-install-vmopts-ja.htm#vmopts">仮想マシンへのインストール</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-ja.htm">グラフィックカード、モニター、XOrgその他のドライバ</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-ja.htm#mon-res">解像度とモニター &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-ja.htm#mon-res">解像度とモニター</a></li>
+					  <li><a href="hw-dev-mon-ja.htm#xrandr">デュアルモニターとxrandr</a></li>
+					  <li><a href="hw-dev-mon-ja.htm#mon-binary">デュアルモニター（バイナリードライバ）</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-ja.htm#foss-xorg">GPU drivers &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-ja.htm#ati-3d">AMD/ATI 3D ドライバ</a></li>
+					  <li><a href="gpu-ja.htm#intel">Intel 2D/3D ドライバ</a></li>
+					  <li><a href="gpu-ja.htm#nvidia">Nvidia 3D ドライバ</a></li>
+					  <li><a href="gpu-ja.htm#foss-xorg">Xorg のオープンソースドライバ</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-ja.htm#fw-detect">Firmwareの探知 - non-free </a></li>
+			  <li><a href="nf-firm-ja.htm#non-free-firmware">non-free をソースリスとに加える</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-ja.htm">ウィンドウマネージャ</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-ja.htm">KDE and XFCE ウィンドウマネージャ &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-ja.htm#xfce-notes">Xfce ノート</a></li>
+					    <li><a href="wm-dm-ja.htm#install-add">便利な KDE 追加アプリ</a></li>
+					    <li><a href="wm-dm-ja.htm#desk-freeze">デスクトップが凍結したら</a></li>
+					    <li><a href="wm-dm-ja.htm#kde-login">KDEにログインできない時</a></li>
+					    <li><a href="wm-dm-ja.htm#ch-th">テーマの変更</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-ja.htm#dm">Installing additional Display Managers</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-ja.htm">インターネット,WiFi,LAN</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-ja.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-ja.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-ja.htm#serv-ftp">FTPクライアント</a></li>
+					    <li><a href="lamp-apache-ja.htm#serv-sec">Webサーバーのセキュリティ設定</a></li>
+					    <li><a href="lamp-apache-ja.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-ja.htm#serv-mysql">MySQL の設定</a></li>
+					    <li><a href="lamp-ppp-ja.htm#serv-php">Apache2のためのPHPサポート</a></li>
+					    <li><a href="ntp-server-ja.htm#ntp-server">タイムサーバーの設定</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-ja.htm#tor">ファイアーウォールとプライバシー &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-ja.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-ja.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-ja.htm#firewalls">ファイアーウォール</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-ja.htm#ssh-x">SSH と Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-ja.htm#setup">Samba サーバーの設定</a></li>
+						  <li><a href="samba-ja.htm#configure">SAMBA の設定(Windowsとの共有)</a></li>
+						  <li><a href="ssh-ja.htm#ssh-fs">SSH Remote Mounting</a></li>
+						  <li><a href="ssh-ja.htm#ssh-x">SSHのネットワークを通してXウィンドウズのアプリケーションを使う</a></li>
+						  <li><a href="ssh-ja.htm#ssh-f">KonquerorでGUIのSSH</a></li>
+						  <li><a href="ssh-ja.htm#ssh-w">Windows-PCからSSHでXフォワーディング</a></li>
+						  <li><a href="ssh-ja.htm#ssh">SSH とセキュリティ</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-ja.htm#netcardconfig">WIFI &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-ja.htm#netcardconfig">Ceni を使ってネットワークに接続</a></li>
+						    <li><a href="inet-wpagui-ja.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-ja.htm#net-set1">WiFi - WiFi ローミング設定</a></li>
+						    <li><a href="inet-wpa-ja.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-ja.htm#hotswitch">WiFi とケーブル接続のホットスイッチ</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-ja.htm#netcardconfig">ケーブル接続のインターネット設定&#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-ja.htm#dial-mod">56k モデム</a></li>
+						    <li><a href="inet-ceni-ja.htm#netcardconfig">Ceni を使ってネットワークに接続</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-ja.htm#fw-detect">Firmwareの探知 - non-free </a></li>
+		<li><a href="nf-firm-ja.htm#non-free-firmware">non-free をソースリスとに加える</a></li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-ja.htm">パッケージマネージャとdist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-ja.htm#apt-cook">APT クックブックとソースリスト &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-ja.htm#apt-cook">APTガイド - クックブックとソースリスト</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#apt-install">新しくパッケージをインストールする</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#apt-delete">パッケージの除去</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#apt-downgrade">ダウングレードまたはパッケージの保持</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#apt-cache">apt-cacheでパッケージ検索</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#gui-pacsea">GUI パッケージ検索</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-ja.htm#kern-upgrade">カーネルのアップグレード &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-ja.htm#kern-remove">使わないカーネルの除去</a></li>
+					    <li><a href="sys-admin-kern-upg-ja.htm#kern-upgrade"> カーネルのアップグレード</a></li>
+					    <li><a href="sys-admin-kern-upg-ja.htm#dmakms">カーネルモジュールをdmakmsでダイナミックにインストールする</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-ja.htm#apt-upgrade">インストールされたシステムのアップグレード -  dist-upgrade - 概説 &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-ja.htm#live-cd-upgrade">ライブISOアップデート</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-ja.htm#approx">同一LAN上の複数のPCをdist-upgradeする</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#apt-upgrade">インストールされたシステムのアップグレード - dist-upgrade - 概説</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#du-st">インストールされたシステムのアップグレード - dist-upgrade - ステップ</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-ja.htm">システム管理</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-ja.htm#bois-prep">FreeDOSを使ってBIOSをアップグレード</a></li>
+		<li><a href="vir-rkits-ja.htm#virus-rkits">ウイルスとRootkitスキャナー</a></li>
+		<li><a href="hd-install-ja.htm#adduser">新しいユーザーとパスワード &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-ja.htm#adduser">新しいユーザーを加える</a></li>
+					    <li><a href="sys-admin-gen-ja.htm#pw-lost">root パスワードを忘れたら, 新パスワードの設定</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-ja.htm#start-services">サービスとランレベル &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-ja.htm#start-services">サービスのスタート/ストップ</a></li>
+					    <li><a href="sys-admin-gen-ja.htm#pkill">Killing a service or process</a></li>
+					    <li><a href="sys-admin-gen-ja.htm#init">aptosid のランレベル - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-ja.htm#rsync">システムのバックアップ &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-ja.htm#rdiff">rdiffを使ってバックアップ</a></li>
+					    <li><a href="sys-admin-rsync-ja.htm#rsync">rsyncを使ってバックアップ</a></li>
+					    <li><a href="home-ja.htm#home-bu">/home を移動する</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-ja.htm#fonts">CUPS、フォントと音声 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-ja.htm#fonts">フォント</a></li>
+					     <li><a href="sys-admin-gen-ja.htm#cups">CUPS - 印刷システム</a></li>
+					     <li><a href="sys-admin-gen-ja.htm#sound">サウンドミキサー</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-ja.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-ja.htm#chroot">Grub2 - Grubをchrootでリカバーする</a></li>
+					    <li><a href="sys-admin-grub2-ja.htm#mbr-over-grub2">Grub2 - MBRが上書きされてしまったら</a></li>
+					    <li><a href="sys-admin-grub2-ja.htm#multi-os">Grub2 - デュアルまたはマルチブーティング</a></li>
+					    <li><a href="sys-admin-grub2-ja.htm#grub1-grub2">Grub2 - Grub1からアップデートするには</a></li>
+					    <li><a href="sys-admin-grub2-ja.htm#grub2">Grub2 - 概説</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Sponsored by webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid is proudly hosted by webtropia.com" alt="aptosid is proudly hosted by webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+	<div class="divider" id="disknames">
+		<!--- ####
+		<h2 id="top-header">Disk and Partition Naming</h2>
+		#### -->
+		<h2 id="top-header">ディスクとパーティションのネーミング</h2>
+				<!--- ####
+				<h5><span class="highlight-2">WARNING: For disk and partition naming </span><a href="part-uuid-en.htm"> Please refer to UUID, Partition Labelling and fstab, as by default aptosid now uses UUID</a></h5>
+				#### -->
+				<h5><span class="highlight-2">警告: ディスクとパーティションのネーミングについては </span><a href="part-uuid-ja.htm"> UUID, パーティションラベリングとfstabのページ</a>を参照。 aptosidはデフォルトでUUIDを使います。</h5>
+
+			<!--- ####
+			<h4>Current naming practices</h4>
+			#### -->
+			<h4>デバイスネームの慣習について</h4>
+
+			<!--- ####
+			<h5>For Disks</h5>
+			#### -->
+			<h5>ディスク名</h5>
+
+							<!--- ####
+							<p>Since the adoption by udev, of Universal Unique Identifier's (UUID), and the arrival of latest linux kernels, all  block devices use a three letter designation and number scheme based on <span class="highlight-3">sda</span> for disk devices and <span class="highlight-3">sdaX</span> for hard disk partitions.</p>
+							#### -->
+							<p>udevがUniversal Unique Identifier(UUID)に対応し、最新のカーネルが導入されて、ブロックデバイスはすべて3つの文字と数字で、ディスクデバイスは<span class="highlight-3">sda</span>のように、ハードディスクパーティションは <span class="highlight-3">sdaX</span>というように表されます。</p>
+
+							<!--- ####
+							<p>Whatever standard they use, PATA (IDE), SATA (Serial ATA), or SCSI, the only way to differentiate one disk from another in your machine, is by now the third letter of the device  <span class="highlight-3"> /dev/sda1, /dev/sdb1, /dev/sdc1, /dev/sdd1</span>:, etc.</p>
+							#### -->
+							<p>PATA(IDE)、SATA(Serial ATA)、またはSCSIなど、どのようなスタンダードを使っているかにかかわらず、これからはディスクを他のディスクと区別するのは<span class="highlight-3"> /dev/sda1, /dev/sdb1, /dev/sdc1, /dev/sdd1</span>などの3つめの文字だけになります。</p>
+
+							<!--- ####
+							<p>You see your devices listed  this way, using the pop-ups shown when running your mouse above the media icons on the desktop of aptosid live-cd.and HD install.</p>
+							#### -->
+							<p>aptosidのライブCDやインストール後のデスクトップでマウスがメディアアイコン上を通ると上のようなデバイス名がポップアップに表示されます。</p>
+
+							<!--- ####
+							<p>You are strongly encouraged to build yourself a table, whether by hand or with computer tools, in which you will capture the details for all block devices available in your computer. Although certainly boring, the operation might save you lots of time and trouble in the future.</p>
+							#### -->
+							<p>手書きであれプログラムを使ってであれ、あなたのコンピュータのデバイス名と設定の一覧表を作っておくことを強く推奨します。 退屈な作業ではありますが、これによって将来問題が起こったときの時間と労力を大幅に節約できます。</p>
+
+							<!--- ####
+							<p>The <span class="highlight-3"> /etc/fstab</span> file of aptosid on live-cd or HD install, keeps  the <span class="highlight-3"> /dev/ sdaX</span> information between square brackets in the commented line above each of the devices lines. For example (bold is for example purposes only). </p>
+							#### -->
+							<p>aptosidのライブCDとHDインストールされたシステムは <span class="highlight-3"> /etc/fstab</span> のファイルに <span class="highlight-3"> /dev/ sdaX</span> などの情報を各デバイス行の上のコメント行の[ ]の間に保存します。 一例をあげます。 (ボールドで示されるのは説明のためだけです)。 </p>
+<pre>
+# added by aptosid [<b>/dev/sdd1</b>, no label]
+UUID=2ae950df-7d72-4d9b-a71a-bad1eb2d4f6a  /  ext4  defaults,errors=remount-ro,relatime 0 1
+</pre>
+				<!--- ####
+				<h5>For partitions</h5>
+				#### -->
+				<h5>パーティションの種類</h5>
+
+							<!--- ####
+							<p>As you see above, for partitions the <span class="highlight-3">/dev/disk</span> identifier is completed by a number. </p>
+							#### -->
+							<p>上の例でもわかるように、パーティション名は <span class="highlight-3">/dev/disk</span> に数字がついた形で表示されます。 </p>
+
+							<!--- ####
+							<p>There are the following partition types: primary, extended and logical where the logical are contained in the extended. There are maximum 4 primary or 3 primary and 1 extended. The extended can contain up to 11 logical partitions. </p>
+							#### -->
+							<p>パーティションのタイプにはプライマリ、拡張、とロジカルの3種類があります。 ロジカルパーティションは拡張パーティションの一部分として含まれてます。 最大でプライマリが4つか、またはプライマリ３つと拡張パーティション１つまで使えます。 拡張パーティションは最大11までのロジカルパーティションを含むことができます。 </p>
+
+							<!--- ####
+							<p>Primary or extended have a name between sda1 and sda4. Logical partitions are always contiguous and part of an extended partition. You can define (with libata) maximum 11 such partitions and their designation begins at number 5 (e.g. sda5).and ends with 15 (sda15)</p>
+							#### -->
+							<p>プライマリと拡張パーティションはsda1からsda4まで、ロジカルパーティションの数字は連続していて、拡張パーティションの一部分です。 (libataを使えば)最大11までのロジカルパーティションを定義でき、名前には5番(sda5)から15番(sda15)までが使われます。</p>
+
+				<!--- ####
+				<h5>Some examples for application</h5>
+				#### -->
+				<h5>実例</h5>
+
+							<!--- ####
+							<p><span class="highlight-3">/dev/sda5</span> : may only be a logical partition (in this case, the first one on its disk device), probably located whether on the first SATA or on the first IDE disk of your computer (it depends on how your BIOS is set).</p>
+							#### -->
+							<p><span class="highlight-3">/dev/sda5</span> : これはロジカルパーティション以外ではありえません(この場合このディスクデバイスの最初のロジカルパーティションです)、BIOSの設定にもよりますが、おそらくこのコンピュータの最初のSATAまたはIDEディスクの上にあるものでしょう。</p>
+
+							<!--- ####
+							<p><span class="highlight-3">/dev/sdb3</span> may only be a primary partition or an extended partition ; the disk letter being different than the one in the first example, we may only state that this partition might in no case be located on the same device.</p>
+							#### -->
+							<p><span class="highlight-3">/dev/sdb3</span> : これはプライマリまたは拡張パーティションです。 ディスク名の文字は最初の例とは違うので別のデバイスの上にあるものと結論できます。</p>
+
+				<!--- ####
+				<h4>Former and now obsolete designation for IDE devices</h4>
+				#### -->
+				<h4>以前のIDEデバイス用のすでに使われなくなった呼び名</h4>
+
+							<p>古いLinuxシステムではIDEディスクデバイス(PATA)は現行のスタンダードのsdaXとは違って<span class="highlight-3">hdaX </span>のように呼ばれていました</p>
+
+	<div class="divider" id="partition">
+		<!--- ####
+		<h2>Partitioning your HD using cfdisk</h2>
+		#### -->
+		<h2>cfdiskを使ってハードディスクのパーティション</h2>
+							<!--- ####
+							<p  class="highlight-2">For normal use we recommend ext4 file system, it is the default file system for aptosid and well maintained.</p>
+							#### -->
+		<p  class="highlight-2">普通の使用法のためにはext4ファイルシステムを推奨します。 しっかりメンテナンスされていて、aptosidのデフォルトのファイルシステムです。</p>
+
+							<!--- ####
+							<p>Open a konsole/xterm, get root and start cfdisk:
+							#### -->
+							<p>konsoleやxtermといったコンソールを開きrootになってcfdiskをスタートします:
+							<!--- ####
+							<i>(if you are on HD-install you'll have to enter your root password)</i></p>
+							#### -->
+							<i>(HDにインストールされたシステムではrootのパスワードをタイプする必要があります)</i></p>
+<pre >su
+cfdisk /dev/sda
+</pre>
+
+				<!--- ####
+				<h5>The user interface</h5>
+				#### -->
+				<h5>ユーザーインターフェイス</h5>
+							<!--- ####
+							<p>On the first screen cfdisk lists the current partition table with the names and some data about each partition. On the screen bottom there are some command buttons. To change between partitions, use the <b>up and down arrow keys</b>. To change between commands, use the <b>left and right arrow keys</b></p>
+							#### -->
+							<p>cfdiskの最初のスクリーンには現在のパーティションの名前とデータについての表が表示されます。 スクリーンの下の方にいくつかコマンドボタンがあります。 <b>上下のアローキー</b>でパーティションを選択し、<b>左右のアローキー</b>でコマンドボタンを選択します</p>
+
+				<!--- ####
+				<h5>Delete a partition</h5>
+				#### -->
+				<h5>パーティションの削除</h5>
+		<div class="screenshot"><img src="../lib/images-ja/cfdisk-ja/cfdisk0-ja.png" title="Delete a partition" alt="Delete a partition" /></div>
+
+							<!--- ####
+							<p>To delete a partition, highlight it with the up and down keys, select the</p>
+							#### -->
+							<p>パーティションを削除するには上下のアローキーでパーティションを選択し、左右のアローキーで</p>
+<pre >
+Delete
+</pre>
+							<!--- ####
+							<p>command with the left and right arrow keys, and press</p>
+							#### -->
+							<p>ボタンを選択して</p>
+<pre >
+Enter
+</pre>
+							<p>を押します。</p>
+
+
+
+			<!--- ####
+			<h5>Create a new partition</h5>
+			#### -->
+			<h5>新しいパーティションの作成</h5>
+	<div class="screenshot"><img src="../lib/images-ja/cfdisk-ja/cfdisk1-ja.png" title="Create a new partition" alt="Create a new partition" /></div>
+							<!--- ####
+							<p>To create a new partition, use the command:</p>
+							#### -->
+							<p>新しいパーティションをつくるにはまず左右のアローキーで</p>
+<pre >
+New
+</pre>
+								<!--- ####
+		 					<p>(select it with the left and right arrow keys), and press enter. You must decide between a <b>primary</b> and a <b>logical</b> partition. If you want a logical partition, the program will automatically make an extended partition for you. Then you must choose the size of the partition (in MB). If you can't enter a value in MB, return to the main screen with the Esc key, and select MB with the command</p>
+								#### -->
+		 					<p>を選択し、Enterを押します。 ここで<b>プライマリ</b>か<b>ロジカル</b>か、どちらの種類のパーティションが作りたいかを選びます。 ロジカルを選べばプログラムが必要な拡張パーティションも自動的に作成します。 次に新しいパーティションのサイズ(MB)を指定します。 もしちゃんとMBを単位の入力ができない場合はEscを押してメインスクリーンにもどり、</p>
+<pre >
+Units
+</pre>
+								<p>コマンドで"MB"を選びます。</p>
+
+			<!--- ####
+			<h5>Type of a partition</h5>
+			#### -->
+			<h5>パーティションのタイプ</h5>
+		<div class="screenshot"><img src="../lib/images-ja/cfdisk-ja/cfdisk2-ja.png" title="Type of a partition 1" alt="Type of a partition 1" /></div>
+
+							<!--- ####
+							<p>To set the type of a partition for <b>Linux swap</b> or <b>Linux</b>, highlight the actual partition, and use the command:</p>
+							#### -->
+							<p>パーティションのタイプを<b>Linux swap</b>か<b>Linux</b>に設定するにはまずこのパーティションを選び、:</p>
+<pre >
+Type
+</pre>
+							<p>コマンドを選びます。</p>
+							<!--- ####
+							<p>You'll get a list of different types. Press space, and you'll get even more. Find what type you need, and enter the number at the prompt. (<b>Linux swap</b> is Type <b>82</b>, <b>Linux</b> filesystems should get type <b>83</b>)</p>
+							#### -->
+							<p>選択できるタイプが表示されます。 Spaceを押せば、もっと多くの選択肢が表示されます．選んだタイプの番号を入力します。 (たとえば<b>Linux swap</b>はタイプ番号<b>82</b>です, <b>Linux</b>ファイルシステムなら<b>83</b>を選びます)</p>
+		<div class="screenshot"><img src="../lib/images-ja/cfdisk-ja/cfdisk3-ja.png" title="Type of a partition 2" alt="Type of a partition 2" /></div>
+
+			<!--- ####
+			<h5>Make a partition bootable</h5>
+			#### -->
+			<h5>パーティションを起動可能にする</h5>
+							<!--- ####
+							<p>There is no need to make an bootable partition for Linux but some other OS need to. Highlight the partition and select the command. Note: When installing on a external HD then  one partition must be bootable:</p>
+							#### -->
+							<p>Linuxではパーティションをとくに起動可能に設定する必要はありませんが、他のOSには必要なものがあります。<br /> (注意: Linuxでも外部ハードディスクにインストールする場合はパーティションを起動可能に設定する必要があります。)<br />まずパーティションを選び</p>
+<pre >
+Bootable
+</pre>
+							<p>のコマンドを選びます</p>
+
+			<!--- ####
+			<h5>Write the result to disk</h5>
+			#### -->
+			<h5>ディスクへの書き込み</h5>
+							<!--- ####
+							<p>When you are done you can write your changes using the Write command. The partition table will be written to disk. (if you get an error concerning dos, you can ignore it) As this will destroy all data on partitions you have deleted or changed, you should therefore be very sure that you want to do this before you actually press the key</p>
+							#### -->
+							<p>すべての設定が終わったらWriteコマンドでディスクに書き込みます。 パーティション表の通りディスク上のパーティションが変更されます。 (DOSに関連したエラーメッセージが表示されても気にすることはありません) 削除または変更のあったパーティション上のデータはすべて壊されますから実際に</p>
+<pre >
+Return
+</pre>
+							<p>を押すときにはすべての設定を確認してください</p>
+		<div class="screenshot"><img src="../lib/images-ja/cfdisk-ja/cfdisk4-ja.png" title="Write the result to disk" alt="Write the result to disk" /></div>
+
+			<!--- ####
+			<h5>Quit</h5>
+			#### -->
+			<h5>終了</h5>
+							<!--- ####
+							<p>To exit the program, select the Quit command. After leaving cfdisk and before starting the formatting or the installation, you should reboot your box so aptosid can reread the new partition table.</p>
+							#### -->
+							<p>プログラムを終了するにはQuitコマンドを選びます。 cfdiskを終了したあとパーティションのフォーマットやインストールを行う前に一度、aptosidが新しいパーティションテーブルを作り直すためにPCを再起動してしてください。</p>
+	</div>
+
+	<div class="spacer05"></div>
+	<div class="divider" id="formating">
+		<!--- ####
+		<h2>Formatting partitions (after partitioning with cfdisk)</h2>
+		#### -->
+		<h2>パーティションのフォーマット(cfdiskでパーティション作成後)</h2>
+
+			<!--- ####
+			<h5>Basics</h5>
+			#### -->
+			<h5>基本</h5>
+							<p>パーティションにはファイルシステムが必要です。 Linuxではいくつかの種類のファイルシステムが使えます。 ReiserFs, Ext4, 経験豊富なユーザーにはXFSやJFSなどもあります。 Ext2にはWindowsからアクセスするドライバもあるためデータの交換に向いています。 <a href="http://www.fs-driver.org/">Ext2 Installable File System For MS Windows</a>.</p>
+
+							<!--- ####
+							<p  class="highlight-2">For normal use we recommend the ext4 file system, it is the default file system for aptosid and is well maintained.</p>
+							#### -->
+		<p  class="highlight-2">普通の使用法のためにはext4ファイルシステムを推奨します。 しっかりメンテナンスされていて、aptosidのデフォルトのファイルシステムです。</p>
+
+			<!--- ####
+			<h5>Formatting</h5>
+			#### -->
+			<h5>フォーマット</h5>
+							<!--- ####
+							<p>After closing down <b>cfdisk</b> we return to console. For formatting you need to be root. For formatting the root- and/or home partition, in this example <b>sdb1</b>, we enter: <i>(if you are on HD-install you'll have to enter your root password here)</i></p>
+							#### -->
+							<p><b>cfdisk</b>を終了するとコンソールの画面に戻ります。 フォーマットをするにはrootになる必要があります。 ルートパーティション(/) または /homeパーティションをフォーマットする例をあげます。 ここでは<b>sdb1</b>をフォーマットします。<br /><i>(ハードディスクにインストールされたシステムではrootのパスワードを入力する必要があります)</i></p>
+<pre >
+su
+mkfs -t ext4 /dev/sdb1
+</pre>
+
+							<!--- ####
+							<p>There will be a question, that you answer with yes if you are sure, that you have chosen the right partition.</p>
+							#### -->
+							<p>選択したパーティションタイプが正しいかどうか、もう一度確認する質問があります。</p>
+
+							<!--- ####
+							<p>When the command is done, you will get notice, that ext4 formatting was successfully written to disk. If you don't get that, something probably went wrong with partitioning in cfdisk, or sdb1 is not a linux partition. In this case you can check with</p>
+							#### -->
+							<p>コマンドが終了するとext4フォーマットが終了したというメッセージが現れるはずです。 これがない場合は、おそらくsdb1はLinuxパーティションではないなどの理由があるでしょう。 これを確かめるには</p>
+<pre >
+fdisk -l /dev/sdb
+</pre>
+
+							<!--- ####
+							<p>If something is wrong and maybe partition again.</p>
+							#### -->
+							<p>問題があったらもう一度パーティション設定に戻ってやり直します。</p>
+
+							<!--- ####
+							<p>If formatting was a success, do the same procedure for a home partition, if you want a separate one.</p>
+							#### -->
+							<p>ルートパーティションのフォーマットがうまくいったら(別々のパーティションを使う設定の場合)同様に/homeパーティションもフォーマットします。</p>
+
+							<!--- ####
+							<p>Last we format the swap partition, in this example hdb3:</p>
+							#### -->
+							<p>最後にスワップパーティションをフォーマットします。 ここではhdb3としましょう:</p>
+<pre >
+mkswap /dev/sdb3
+</pre>
+
+							<!--- ####
+							<p>after that a:</p>
+							#### -->
+							<p>その後:</p>
+
+<pre >
+swapon /dev/sdb3
+</pre>
+
+							<!--- ####
+							<p>Then we check, if swap is recognized, by entering in console:</p>
+							#### -->
+							<p>さらに、スワップが認識されたかをコンソールから次のコマンドで確認します:</p>
+<pre >
+swapon -s
+</pre>
+							<!--- ####
+							<p>the newly mounted swap should be recognized now, in our case as:</p>
+							#### -->
+							<p>新しくマウントされたスワップがちゃんと認識されていたら次のような表示があります:</p>
+
+	<table class="center">
+		<tbody>
+			<tr>
+				<th>Filename</th>
+				<th>Type</th>
+				<th>Size</th>
+				<th>Used</th>
+				<th>Priority</th>
+			</tr>
+			<tr>
+				<td>/dev/sdb3</td>
+				<td>partition</td>
+				<td>995988</td>
+				<td>248632</td>
+				<td>-1</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="spacer02"></div>
+							<!--- ####
+							<p>If swap is recognized correctly, we enter</p>
+							#### -->
+							<p>スワップが正しく認識されているのが確認できたら</p>
+<pre >
+swapoff -a
+</pre>
+							<p>を実行してから再起動してください。</p>
+
+
+							<!--- ####
+							<p>You are now ready to start installation.</p>
+							#### -->
+							<p>これでインストールの準備ができました。</p>
+
+			<div id="rev">Content last revised  14/08/2010 0100 UTC</div>
+</div>
+</div>
+</div>
+</body>
+</html>

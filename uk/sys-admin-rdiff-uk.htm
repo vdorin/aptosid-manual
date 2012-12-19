@@ -1,0 +1,543 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="uk" lang="uk">
+<head>
+	<title>aptosid Manuals - rdiff</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision polix 01/12/2011 0100 UTC -->
+<!--htdig_noindex--><div id="menu"> <!-- menu starts here - ua language maintained by polix -->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="Головна сторінка aptosid.com, форуму і вікі" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-uk.htm#search-on"><img src="../lib/logos/manual-search-22x22.png" title="Пошук в керівництві" alt="Search" /> Bаріанти пошуку</a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Bибір мови - Choose another language CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="Переключення мови CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-uk.htm">Керівництво aptosid</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-uk.htm#welcome-gen">Ласкаво просимо! &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-uk.htm#cred-team">Подяки</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-uk.htm#how-to">Про використання &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-uk.htm#how-to">Про використання</a></li>
+					  <li><a href="welcome-uk.htm#table-contents">3міст</a></li>
+					</ul>
+					</li>
+		<li><a href="help-uk.htm#help-gen">Oтримання допомоги&#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-uk.htm#help-gen">Де отримати допомогу</a></li>
+					  <li><a href="help-uk.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-uk.htm#welcome-quick">Короткий посібник aptosid</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-uk.htm">Зміст ISO-образу, випуски, список дзеркал і запис</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-uk.htm#cd-content">Зміст ISO-образу і системні вимоги &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-uk.htm#rolling">Зауваження до релізу</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-uk.htm#download-aptosid">Список дзеркал, скачування ISO-образу і запис &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-uk.htm#md5">Перевірка ISO-образу з md5</a></li>
+					  <li><a href="cd-dl-burning-uk.htm#burn-nero">Запис ISO-образу в Windows</a></li>
+					  <li><a href="cd-dl-burning-uk.htm#burn-linux">Запис ISO-образу в Linux</a></li>
+					  <li><a href="cd-no-gui-burn-uk.htm#burning-no-gui">Скрипт burniso</a></li>
+					  <li><a href="cd-no-gui-burn-uk.htm#burn-no-gui-gen">Запис ISO-образу в консолі</a></li>
+					  <li><a href="cd-dl-burning-uk.htm#download-aptosid">Cписок дзеркал</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-uk.htm">Режим ISO-образу</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-uk.htm#rootpw">Пароль root на ISO-образі</a></li>
+				<li><a href="live-mode-uk.htm#live-cd-installsoft">Установка ПО на ISO-образі</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-uk.htm">Термінал і оболонка</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-uk.htm#term-kon">Термінал і оболонка &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-uk.htm#term-kon">Термінал і оболонка</a></li>
+					  <li><a href="term-konsole-uk.htm#colours"> Кольорова підказка в терміналі</a></li>
+					  <li><a href="term-konsole-uk.htm#cli-help">Допомога в терміналі</a></li>
+					  <li><a href="help-uk.htm#init3-tools">Корисні інструменти в текстовому режимі (tty) - init 3</a></li>
+					  <li><a href="term-konsole-uk.htm#term-cmds">Команди в терміналі</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-uk.htm#sux">Команда: sux/sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-uk.htm">Чит-коди</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-uk.htm#cheatcodes">Особливі чит-коди для ISO-образу aptosid</a></li>
+				<li><a href="cheatcodes-uk.htm#cheatcodes-linux">Загальні чит-коди для параметрів ядра</a></li>
+				<li><a href="cheatcodes-vga-uk.htm#vga">Загальні коди для відеокарти</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-uk.htm">Розділ жорсткого диска -по старому,GPT та LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-uk.htm#hd-ntfs3g">Запис на розділ NTFS з ntfs-3g</a></li>
+			<li><a href="part-lvm-uk.htm#part-lvm">Розмітка з використанням LVM - Logical Volume Manager</a></li>
+			<li><a href="part-gparted-uk.htm#partition">Розмітка диска з інтерфейсом &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-uk.htm#partition">Розмітка диска з gparted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-uk.htm#ntfs">Розділи NTFS з gparted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-uk.htm#partition">Приклади розмітки диска в консолі &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-uk.htm#partition">Розмітка диска з cfdisk</a></li>
+					    <li><a href="part-cfdisk-uk.htm#formating">Форматування розділів з cfdisk</a></li>
+					    <li><a href="part-gdisk-uk.htm#gdisk-6">Форматування розділів з gdisk</a></li>
+					    <li><a href="part-gdisk-uk.htm#gdisk-1">GPT-розділів за допомогою Gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-uk.htm#part-example">Розмітка диска - огляд &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-uk.htm#part-example">Приклади розмітки диска</a></li>
+					  <li><a href="part-uuid-uk.htm#uuid">UUID, відновлення fstab і створення нових точок монтування</a></li>
+					  <li><a href="part-cfdisk-uk.htm#disknames">Імена жорстких дисків</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-uk.htm">Установка aptosid на HD, USB, VM і шифровані розділи</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-uk.htm#Inst-prep">Підготовка установки &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-uk.htm#Inst-prep">Підготовка установки</a></li>
+					  <li><a href="hd-install-uk.htm#Installation">Інсталяція на HD</a></li>
+					  <li><a href="hd-install-uk.htm#first-hd-boot">Перше завантаження</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-uk.htm#fromiso">Завантаження 'fromiso' &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-uk.htm#fromiso">Завантаження "fromiso '- огляд </a></li>
+					  <li><a href="hd-install-opts-uk.htm#guab2-fromiso">Завантаження "fromiso ' з guab 2</a></li>
+					  <li><a href="hd-install-opts-uk.htm#fromiso-persist">Cпособи 'fromiso' i 'persist'</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-uk.htm#usb-hd">Iнсталляцiя на USB &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-uk.htm#usb-hd">Iнсталляцiя на USB-HD - спосiб aptosid -  aptosid-на-флешкi</a></li>
+					  <li><a href="hd-ins-opts-oos-uk.htm#raw-usb">Запис aptosid на USB / SSD за допомогою іншого Linux, MS Windows або Mac OS</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-uk.htm#install-crypt">Установка на шифровані розділи - cryptroot</a></li>
+		  <li><a href="nbdboot-uk.htm#nbd1">Завантаження aptosid по мережі</a></li>
+		  <li><a href="hd-install-vmopts-uk.htm#vmopts">Опції інсталяцій на VM (Virtual Machine)</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-uk.htm">Устаткування в Xorg і різні драйвери</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-uk.htm#mon-res">Дозвіл екрану та монітори  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-uk.htm#mon-res">Дозвіл екрану та монітори</a></li>
+					  <li><a href="hw-dev-mon-uk.htm#xrandr">Подвійні екрани і xrandr</a></li>
+					  <li><a href="hw-dev-mon-uk.htm#mon-binary">Подвійні екрани (використовуючи виконавчі файли)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-uk.htm#foss-xorg">GPU драйвери &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-uk.htm#ati-3d">AMD / ATI 3D драйвери</a></li>
+					  <li><a href="gpu-uk.htm#intel">Intel 2D i 3D драйвери</a></li>
+					  <li><a href="gpu-uk.htm#nvidia">Nvidia 3D драйвери</a></li>
+					  <li><a href="gpu-uk.htm#foss-xorg">Вільні Xorg-драйвери</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-uk.htm#fw-detect">Визначення невільного мікропрограмного забезпечення - non-free </a></li>
+			  <li><a href="nf-firm-uk.htm#non-free-firmware">Додавання non-free в список джерел</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-uk.htm">Bіконні менеджери</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-uk.htm">Віконні менеджери KDE та Xfce &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-uk.htm#xfce-notes">Корисні інструменти для Xfce</a></li>
+					    <li><a href="wm-dm-uk.htm#install-add">Корисні інструменти для KDE</a></li>
+					    <li><a href="wm-dm-uk.htm#desk-freeze">Робочий стіл зависає</a></li>
+					    <li><a href="wm-dm-uk.htm#kde-login">Проблеми входу в KDE</a></li>
+					    <li><a href="wm-dm-uk.htm#ch-th">Управління темами</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-uk.htm#dm">Установква додаткових дисплейних менеджерів</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-uk.htm">Інтернет, Wifi і локальна мережа</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-uk.htm">Мета-пакет LAMP &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-uk.htm#serv-apache">Мета-пакет LAMP</a></li>
+					    <li><a href="lamp-apache-uk.htm#serv-ftp">Kлієнти FTP</a></li>
+					    <li><a href="lamp-apache-uk.htm#serv-sec">3ахищені протоколи</a></li>
+					    <li><a href="lamp-apache-uk.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-uk.htm#serv-mysql">Налаштування MySQL</a></li>
+					    <li><a href="lamp-ppp-uk.htm#serv-php">PHP в apache</a></li>
+					    <li><a href="ntp-server-uk.htm#ntp-server">Установка сервера часу</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-uk.htm#tor">Брандмауери та веб-проксі &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-uk.htm#tor">Маршрутизатор tor</a></li>
+					    <li><a href="tor-privoxy-uk.htm#privoxy">Веб-проксi privoxy</a></li>
+					    <li><a href="inet-ceni-uk.htm#firewalls">Брандмауэри</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-uk.htm#ssh-x">Samba и ssh &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-uk.htm#setup">Сервер samba</a></li>
+						  <li><a href="samba-uk.htm#configure">Інтеграції samba в мережу Windows</a></li>
+						  <li><a href="ssh-uk.htm#ssh-fs">Віддалене монтування з ssh</a></li>
+						  <li><a href="ssh-uk.htm#ssh-x">Програми X-Windows з ssh</a></li>
+						  <li><a href="ssh-uk.htm#ssh-f">Інтерфейс ssh і Konqueror</a></li>
+						  <li><a href="ssh-uk.htm#ssh-w">ssh X-forwarding з Windows-PC</a></li>
+						  <li><a href="ssh-uk.htm#ssh">Безпека з ssh</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-uk.htm#netcardconfig">Связи с WiFi &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-uk.htm#netcardconfig">Налаштування мережевих карт з ceni</a></li>
+						    <li><a href="inet-wpagui-uk.htm#wpa-roaming-gui">Графіческoe ппіложеніе wpa_gui для WiFi</a></li>
+						    <li><a href="inet-setup-v.htm#net-set1">Роумiнг с WiFi</a></li>
+						    <li><a href="inet-wpa-uk.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-uk.htm#hotswitch">Переключення мережі між WiFi та провідного зв'язком</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-uk.htm#netcardconfig">дротяний зв'язок&#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-uk.htm#dial-mod">56кілобітовие модеми</a></li>
+						    <li><a href="inet-ceni-uk.htm#netcardconfig">Налаштування мережевих карт з ceni</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-uk.htm#fw-detect">Визначення невільного мікропрограмного забезпечення - non-free </a></li>
+		<li><a href="nf-firm-uk.htm#non-free-firmware">Додавання non-free в список джерел</a></li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-uk.htm">Управління пакетами і оновлення системи з dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-uk.htm#apt-cook">APT и репозитории &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-uk.htm#apt-cook">APT і репозиторії</a></li>
+					    <li><a href="sys-admin-apt-uk.htm#apt-install">Установка нового пакета</a></li>
+					    <li><a href="sys-admin-apt-uk.htm#apt-delete">Bидалення пакета</a></li>
+					    <li><a href="sys-admin-apt-uk.htm#apt-downgrade">Зниження версії з hold</a></li>
+					    <li><a href="sys-admin-apt-uk.htm#apt-cache">Пошук пакетної иформации з apt-cache</a></li>
+					    <li><a href="sys-admin-apt-uk.htm#gui-pacsea">Графічна пошукова програма</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-uk.htm#kern-upgrade">Оновлення ядра&#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-uk.htm#kern-remove">Bидалення ядра</a></li>
+					    <li><a href="sys-admin-kern-upg-uk.htm#kern-upgrade">Оновлення ядра</a></li>
+					    <li><a href="sys-admin-kern-upg-uk.htm#dmakms">Динамічна інсталяція модулів ядра з dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-uk.htm#apt-upgrade">Оновлення системи з dist-upgrade - Короткий огляд &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-uk.htm#live-cd-upgrade">Оновлення з ISO-образу</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-uk.htm#approx">Оновлення декількох комп'ютерів в локальній мережі</a></li>
+					    <li><a href="sys-admin-apt-uk.htm#apt-upgrade">Короткий огляд Оновлення системи з dist-upgrade</a></li>
+					    <li><a href="sys-admin-apt-uk.htm#du-st">Кроки оновлення системи від dist-upgrade</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-uk.htm">Cистемне адміністрування</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-uk.htm#bois-prep">Оновлення BIOS з FreeDOS</a></li>
+		<li><a href="vir-rkits-uk.htm#virus-rkits">Cканер безпеки</a></li>
+		<li><a href="hd-install-uk.htm#adduser">Новий користувач та паролі &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-uk.htm#adduser">Додавання нового користувача</a></li>
+					    <li><a href="sys-admin-gen-uk.htm#pw-lost">Відновлення root-пароля</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-uk.htm#start-services">Служби та режими завантаження &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-uk.htm#start-services">Вибір служб</a></li>
+					    <li><a href="sys-admin-gen-uk.htm#pkill">3авершення служби або процесу</a></li>
+					    <li><a href="sys-admin-gen-uk.htm#init">Режими завантаження init в aptosid</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-uk.htm#rsync">Pезервування системи &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-uk.htm#rdiff">Резервування за rdiff</a></li>
+					    <li><a href="sys-admin-rsync-uk.htm#rsync">Резервування за rsync</a></li>
+					    <li><a href="home-uk.htm#home-bu">Переміщення / home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-uk.htm#fonts">Cups, шрифти та звук &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-uk.htm#fonts">Шрифти</a></li>
+					     <li><a href="sys-admin-gen-uk.htm#cups">Cервер cups</a></li>
+					     <li><a href="sys-admin-gen-uk.htm#sound">Звукові мікшери</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-uk.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-uk.htm#chroot">Grub2 - Відновлення grub з chroot</a></li>
+					    <li><a href="sys-admin-grub2-uk.htm#mbr-over-grub2">Grub2 -Видалення з MBR</a></li>
+					    <li><a href="sys-admin-grub2-uk.htm#multi-os">Grub2 - Подвійна і мультизагрузки</a></li>
+					    <li><a href="sys-admin-grub2-uk.htm#grub1-grub2">Grub2 - Оновлення за grub1</a></li>
+					    <li><a href="sys-admin-grub2-uk.htm#grub2">Grub2 - Kороткий огляд</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Sponsored by webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid розміщений на сервері webtropia.com" alt = "aptosid розміщений на сервері webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+	<div class="divider" id="rdiff">
+			<h2 id="top-header">Система резервного копіювання файлів з rdiff-backup</h2>
+				<p>rdiff-backup дозволяє Baм створювати резервні копії ваших даних.(Працює в оточенні різних UNIX-подібних ОС).</p>
+
+				<p class="highlight-2">Всі команди необхідно виконувати в Konsole від імені суперкористувача (root), якщо не вказано інше.</p>
+
+				<p>* Ця утиліта - прекрасний інструмент для відновлення після невдалого відновлення системи або поновлення ядра.Но настільки ж чудово вона може бути застосована для відновлення окремих файлів <br />
+				   * Так само як при використанні rsinc резервуються лише змінені файли (що істотно скорочує час створення резервної копії). <br />
+				   * Історія всіх проведених змін зберігається (це дозволить відновити не тільки останні змінені файли, але і, наприклад, віддалені 3 тижні тому!) <br />
+				   * Доступно безпечне мережеве копіювання даних (використовуючи ssh). <br />
+				   * Можливе створення резервних копій змонтованих розділів цілком (що дозволяє легко налаштувати щоденне копіювання даних ... не потребує Демонтується резервується розділу). <br />
+				   * При виході з ладу старого жорсткого диска, або купівлі нового, Ви можете повністю відновити дані! <br />
+				   * Можливо промислове використання як інструменту резервного копіювання у великих мережах (що для linux не викликає анінайменших проблем, дещо складніше з резервуванням windows-машин). <br />
+				   * Будучи консольною утилітою rdiff-backup легко вбудовується в shell-сценарії, дозволяючи автоматизувати процес резервного копіювання за допомогою cron. <br />
+				   * При створенні резервної копії за допомогою rdiff-backup зберігаються як права доступу, так і символічні посилання. Т.ч. після відновлення з резервної копії Ви отримуєте все "як було"..</p>
+
+			<h6>Что Вам треба знати</h6>
+				<p>Копії резервованих файлів зберігаються цілком (у стислому вигляді). Таким же чином зберігається історії вироблених змін (покрокове резервування). Це означає, що сумарне простір для резервної копії має бути більше обсягу самих резервованих файлів! (При резервуванні файлів об'ємом 100 ГБ на диску необхідно виділити 120 Гб під резервну копію). Місце для збереження резервної копії необхідно виділяти на окремому жорсткому диску.</p>
+
+			<h6>Як це працює</h6>
+				<p>Припустимо що у Вас є:<br />
+				* Перший жорсткий диск (sda) 100ГБ використовується з наступними змонтованими розділами:, sda1 як / (кореневий), sda5 для збереження музики і інших файлів, sda6 під swap. <br />
+				* * Другий жорсткий диск (sdb) 200Гб не використовується і змонтований як sdb1 ... (буде задіяний для збереження резервних копій). <br />
+				* IP адреса 192.168.0.1 </p>
+
+				<p>Спершу встановлюємо rdiff-backup:</p>
+<pre>
+# apt-get install rdiff-backup
+</pre>
+				<p>Тепер, розглянемо приклад резервування розділу жорсткого диска цілком (хоча можна здійснити резервування будь-якої окремої директорії), нехай це будуть sda1 і sda5 (створювати бекап розділу swap - необхідності немає). Створимо необхідні директорії для файлів і файлів:</p>
+<pre>
+# mkdir -p /media/sdb1/rdiff-backups/192.168.0.1/root
+# mkdir -p /media/sdb1/rdiff-backups/192.168.0.1/sda5
+</pre>
+				<p>Необхідно вказати свій IP адреса для збереження можливості резервувати даних з інших хостів у майбутньому.</p>
+
+			<h6>Резервування</h6>
+
+				<p>Синтаксис утиліти rdiff-backup: <span class="highlight-3">rdiff-backup source-dir dest-dir</span>. (Примітка: завжди вказуйте ім'я директорії, а не файлу!).</p>
+
+				<p>Для резервування розділу sda5 виконайте в командному рядку:</p>
+<pre>
+# rdiff-backup /media/sda5 /media/sdb1/rdiff-backups/192.168.0.1/sda5
+</pre>
+				<p>Теж саме, але для кореневого розділу:</p>
+<pre>
+# rdiff-backup --exclude '/tmp/*' --exclude '/proc/*' --exclude '/sys/*' --exclude '/media/*/*' / /media/sdb1/rdiff-backups/192.168.0.1/root
+</pre>
+				<p>Помилки типу "AF_UNIX path too long" можуть бути проігноровані. Їх поява може бути пов'язано з тим, що при первинному копіюванні розділу rdiff-backup зберігає всі, а не лише змінені файли. Так само звертаємо увагу, що зі списку резервування виключені / tmp (постійно змінюються тимчасові файли); / proc та / sys, як не містять реальних файлів; а також / mount (тут міститься розділ з резервними копіями файлів; включивши його в список ми створимо нескінченний цикл "самокопірованія" цього розділу. Якщо створити копію все ж таки необхідно - доведеться зробити це окремо).</p>
+
+				<p>Причина використання в команді '/ proc / *' замість '/ proc' в тому, що в другому випадку відбудеться копіювання тільки назви директорії, без її вмісту. Це ж відноситься і до / tmp, / sys, і в цілому до використання імен точок монтування.</p>
+
+				 <p>При відновленні після збоїв або пошкоджень кореневого розділу цілком, розділи / tmp, / proc, / sys та імена точок монтування будуть створені заново (так як і повинні бути). Якщо не існує розділу / tmp, старт Х-в призведе до появи численних ошібок.Странічка man містить докладні відомості про опції - exclude and - include).</p>
+
+			<h6>Відновлення директорій з файлів резервного копіювання</h6>
+
+				<p>В даному випадку синтаксис команди rdiff-backup такий:</p>
+<pre>
+rdiff-backup -r &lt;from-when&gt; &lt;source-dir&gt; &lt;dest-dir&gt;
+</pre>
+				<p>Тепер, якщо ви випадково видалили директорію / media/sda7/photos, її можливо відновити:</p>
+<pre>
+# rdiff-backup -r now /media/sdb1/rdiff-backups/192.168.0.1/sda5/photos /media/sda5/photos
+</pre>
+				<p>Опція "-r now" означає відновлення з останнього бекапа. Якщо резервне копіювання здійснюється періодично (за допомогою crontab, наприклад) і директорія з фотографіями була видалена кілька днів тому, то для відновлення слід використовувати відповідний бекап (не "now", тому що в ньому не містяться необхідні файли). Те ж саме вірно у всіх випадках, коли необхідно відновити колишню версію чого б то не було.</p>
+
+				<p>Для відновлення з бекапа, створеного 3 дні тому використовуйте: "-r 3D" ... але не забувайте звіритися з вказівками man:</p>
+
+				<p class="highlight-1">"3D" дозволяє повернутися до стану за 72 годин до цього моменту, і якщо тоді не було створено резервної копії, відновлення автоматично відбудеться з попереднього бекапа. Наприклад, вказана опція "3D", але існують бекапи тільки дводенної і чотириденної давності; запитаний файл буде відновлений з бекапа, створеного 4 дні тому (цю обставину необхідно врахувати перед проведенням відновлення).</p>
+
+				<p>Наступна команда відображає дату і час резервних копій, створених для sda5:</p>
+<pre>
+# rdiff-backup -l /media/sdb1/rdiff-backups/192.168.0.1/sda5
+</pre>
+			<h5>Відновлення розділів</h5>
+
+				<p>Розділи жорсткого диска можна відновлювати повністю (адже точка монтування, по суті, та ж директорія).</p>
+
+				<p class="highlight-2">ПОПЕРЕДЖЕННЯ: Не намагайтеся відновити кореневий розділ, якщо Ви в нього завантажилися! Це може призвести до втрати всіх даних на всіх розділах, включаючи резервні копії на окремому жорсткому диску! ... rdiff-backup виконають в точності те, що йому вказано ... якщо в бекапе кореневий розділ порожній, то при відновленні буде віддалено весь вміст цього кореневого розділу - точнісінько як в резервної копії.</p>
+
+				<p>Для відновлення sda5 з останньої резервної копії необхідно виконати:</p>
+<pre>
+# rdiff-backup -r now /media/sdb1/rdiff-backups/192.168.0.1/sda5 /media/sda5
+</pre>
+			<h5>Відновлення коренево розділу</h5>
+
+				<p>Відновлення кореневого розділу - справа не проста. Як було сказано вище - не допускається відновлення "/", якщо він змонтований. Необхідність даної дії може виникнути в результаті невдалої інсталяції, оновлення системи або її ядра. При правильному виконанні - можливий відкат до попереднього стану системи, і він займе не більше 20 хвилин.</p>
+
+				<p>Один із способів відновлення полягає в завантаженні в паралельно встановлену Linux-систему. Далі процес відновлення аналогічний вищеописаної стандартною процедурою (тому що в завантаженою системі відновлюваний кореневий розділ не є кореневим для запущеної системи, а виступає в ролі звичайного пункту монтування). Перевантажити в систему, кореневий розділ якої був відновлений - сама система буде в точності відповідати використаної резервної копії. Цей спосіб - найлегший.</p>
+
+				<p>Іншим способом є завантаження з aptosid-live та здійснення відновлення кореневого розділу з "Live-CD" системи (утиліта rdif-backup включена до складу ПО на диску). Якщо ж утиліта не виявлена ​​в комплекті Live-CD, можна при завантаженні в командному рядку grub (Bootoptions, (Cheatcodes)) вказати "unionfs", що дозволить виробляти інсталяцію пакетів в режимі Live-CD. Після закінчення завантаження необхідно виконати в командному рядку:</p>
+<pre>
+$ sudo su
+# wget -O /etc/apt/sources.list http://aptosid.com/files/misc/sources.list
+# apt-get update
+# apt-get install rdiff-backup
+</pre>
+				<h6>А тепер здійснимо відновлення:</h6>
+<pre>
+# mount /dev/sda1 /media/sda1
+# mount /dev/sdb1 /media/sdb1
+# rdiff-backup -r now /media/sdb1/rdiff-backups/192.168.0.1/root /media/sda1
+</pre>
+
+				<p>Примітка: якщо ви не маєте диска aptosid, але маєте Live-CD з підтримкою klik, встановити rdiff-backup можливо за допомогою Klik:</p>
+<pre>
+$ sudo ~/.zAppRun ~/Desktop/rdiff-backup_0.13.4-5.cmg rdiff-backup -r now /media/sdb1/rdiff-backups/192.168.0.1/root /media/sda1
+</pre>
+
+				<p>Рекомендується кожному спробувати відновлення кореневого розділу на практиці. так як немає нічого гіршого, ніж думати, як все просто і легко, а потім зіткнутися з несподіванкою в аварійній ситуації.</p>
+
+				<p>Якщо жорсткий диск був змінений або переформатований, перевірте ще раз UUID (або міток) в <span class="highlight-3"> / boot / grub / menu.lst (при grub-legacy) або файли в / etc / grub.d (при grub2) </span> та <span class="highlight-3"> / etc / fstab </span> і змініть відповідним чином. Найпростіший спосіб отримати інформацію для зміни файлів menu.lst і fstab, якщо є необхідність як суперкористувач:</p>
+
+<pre>
+blkid
+</pre>
+
+			<h5>Резервне копіювання даних інших хостів</h5>
+
+				<p>Дані з віддаленої машини можна зберігати локально з умовою наявності ssh доступу до віддаленого хосту і достатньої кількості вільного місця на жорсткому диску. На віддаленій машині повинен бути запущений сервер ssh, де при цьому розташований сам хост - значення не має (це може бути і локальна мережа та інтернет).</p>
+
+				<p>Уявімо що віддалений хост має такі параметри: <br />
+				1) 100ГБ жорсткий диск (sda) звичайні точки монтування <br />
+				2) sda1 використовується як кореневий розділ <br />
+				3) sda5 призначений для зберігання тимчасових файлів, які ми не включаємо в резервне копіювання <br />
+				4) sda6 як swap <br />
+				5) IP адреса 192.168.0.2</p>
+
+				<p>Примітка: обидва 100 гігабайтних харда зазвичай не можуть бути зарезервовані на 200 гігабайтному вінчестері зважаючи на брак дискового простору, але оскільки ми не копіюємо sda5 віддаленого хоста, а розділи жорсткого диска зазвичай не заповнені на 100% (хоча покладатися на це не варто) можна порахувати кількість необхідного місця на жорсткому диску і переконатися в його достатності. Кожен раз, коли новий розділ зберігається за допомогою rdiff-backup, необхідно пам'ятати, що створюється нова 'структура' для вкладених файлів, що вимагає нового додаткового простору.</p>
+
+				<p>Існує можливість обмежити часовий інтервал зберігання резервних копій (наприклад одним місяцем) і відповідна команда буде розглянута нижче. Звичайно в цьому випадку буде потрібно менше місця, ніж при збереженні резервних копій за річний період. А у випадку, коли необхідно зберігати копії протягом року, також необхідно мати достатню кількість дискового простору.</p>
+
+				<p>По-перше необхідно встановити rdif-backup на віддалений хост (відноситься до кожного комп'ютера, з якого Ви маєте намір здійснювати резервування даних, включаючи бекап-сервер).</p>
+
+				<p>На локальному комп'ютері виконуємо: <span class="highlight-4"> Зверніть увагу на використання подвійного двоxкрапoк:: </span></p>
+<pre>
+# mkdir /media/sdb1/rdiff-backups/192.168.0.2/root
+# rdiff-backup --exclude '/tmp/*' --exclude '/proc/*' --exclude '/sys/*' --exclude '/media/*/*' 192.168.0.2::/ /media/sdb1/rdiff-backups/192.168.0.2/root
+</pre>
+				<p>Тепер для відновлення директорії на віддаленому комп'ютері можливо ініціювати процес відновлення як локально, так і віддалено.</p>
+
+				<p>Відновлення директорії / usr / local / games на віддаленому комп'ютері, ініціалізувавши процес відновлення на ньому ж:</p>
+<pre>
+# rdiff-backup -r now 192.168.0.1::/media/sdb1/rdiff-backups/192.168.0.1/root/usr/local/games /usr/local/games
+</pre>
+				<p>Теж саме, але локально:</p>
+<pre>
+# rdiff-backup -r now /media/sdb1/rdiff-backups/192.168.0.1/root/usr/local/games 192.168.0.2::/usr/local/games
+</pre>
+				<p>Використовується такий же синтаксис, як при відновленні кореневого розділу з Live-CD (віддалена машина завантажена з Live-CD ... приклад - дивись вище).</p>
+
+			<h5>Автоматизоване створення резервних копій::</h5>
+
+				<p>Перше, що необхідно для резервування даних з віддаленого комп'ютера, включити доступ по ключах ssh без використання пароля. <span class="highlight-2"> Йдеться про вхід без пароля з моїм обліковим записом root. Обговорення можливості обмежитися безпарольний виконанням тільки команд rdiff-backup виходить за рамки цієї статті, детальна інформація знаходиться в розділі керівництва <a href="ssh-uk.htm#ssh-s"> "SSH Configuration" </a> </span>. Тут ми розглянемо найпростіший спосіб установки безпарольного логіна, приймаючи політику "повного довіри".</p>
+
+				<p>Виконуємо локально:</p>
+<pre>
+# [ -f /root/.ssh/id_rsa ] || ssh-keygen -t rsa -f /root/.ssh/id_rsa
+</pre>
+				<p>Двічі натискаємо 'enter' для збереження порожнього пароля. після цього:</p>
+<pre>
+# cat /root/.ssh/id_rsa.pub | ssh 192.168.0.2 'mkdir -p /root/.ssh;\<!--dunno if this is wrong-->
+> cat - >>/root/.ssh/authorized_keys2'
+</pre>
+				<p>Буде запропоновано ввести пароль root.</p>
+
+				<p>Тепер ви можете увійти по ssh на віддалений хост під обліковим записом root, не вводячи пароль, і провести автоматизацію rdiff-backup.</p>
+
+				<p>Наступним кроком створимо shell-script, подібний нижче наведеному і містить всі необхідні команди rdiff-backup:</p>
+
+
+<pre>
+#!/bin/bash
+RDIFF=/usr/bin/rdiff-backup
+echo
+echo "=======Backing up 192.168.0.1 root======="
+${RDIFF} --ssh-no-compression --exclude '/tmp/*' --exclude '/proc/*' --exclude '/sys/*' --exclude '/media/*/*' / /media/sdb1/rdiff-backups/192.168.0.1/root
+echo "(and purge increments older than 1 month)"
+${RDIFF} --remove-older-than 1M --force /media/sdb1/rdiff-backups/192.168.0.1/root
+echo
+echo "=======Backing up 192.168.0.1 mount sda5======="
+${RDIFF} --ssh-no-compression --exclude /media/sda5/myjunk /media/sda5 /media/sdb1/rdiff-backups/192.168.0.1/sda5
+echo "(and purge increments older than 1 months)"
+${RDIFF} --remove-older-than 1M --force /media/sdb1/rdiff-backups/192.168.0.1/sda5
+echo
+echo "=======Backing up 192.168.0.2 root======="
+${RDIFF} --ssh-no-compression --exclude '/tmp/*' --exclude '/proc/*' --exclude '/sys/*' --exclude '/media/*/*' --exclude '/mnt/*/*' 192.168.0.2::/media/sdb1/rdiff-backups/192.168.0.2/root
+echo "(and purge increments older than 1 months)"
+${RDIFF} --remove-older-than 1M --force /media/sdb1/rdiff-backups/192.168.0.2/root
+</pre>
+
+
+				<p>Збережемо скрипт під ім'ям "myrdiff-backups.bash" в директорії / usr / local / bin локально (на бекап-сервері), не забуваємо зробити його виконуваючим. Запускаємо його щоб переконається, що скрипт працює.</p>
+
+				<p>І в останню чергу прописуємо в crontab (root-овий) виклик скрипта щоденно о 8 годині вечора. Для цього виконуємо від імені root наступне:</p>
+<pre>
+# crontab -e
+and insert the following line
+0 20 * * * /usr/local/bin/myrdiff-backups.bash
+</pre>
+
+			<div id="rev">Сторінка останний раз переглянута 14/08/2010 0100 UTC</div>
+</div>
+</div>
+</body>
+</html>

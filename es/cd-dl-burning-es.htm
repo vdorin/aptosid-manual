@@ -1,0 +1,654 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+<head>
+	<title>Manual de aptosid - Bajando y Quemando el CD</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision by Richard 01/06/2009 1200hrs UTC -->
+<!--htdig_noindex--><div id="menu"> <!-- menu starts here es lang maintained by Luis_P -->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="ir a aptosid.com y Forum y Wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-es.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" />Buscar</a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Seleccione otro idioma - Choose another language CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="lang-switch CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-es.htm">Manual aptosid</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-es.htm#welcome-gen">Manual de usuario &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-es.htm#cred-team">Créditos</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-es.htm#how-to">Cómo usar este manual &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-es.htm#how-to">Cómo usar este manual</a></li>
+					  <li><a href="welcome-es.htm#table-contents">Indice de Contenido</a></li>
+					</ul>
+					</li>
+		<li><a href="help-es.htm#help-gen">Recibir ayuda &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-es.htm#help-gen">Dónde Conseguir Ayuda</a></li>
+					  <li><a href="help-es.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-es.htm#welcome-quick">Guía rápida</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-es.htm"> ISO, Versiones, Espejos y Quemado</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-es.htm#cd-content">Contenido del ISO y Requerimientos &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-es.htm#rolling">Notas del lanzamiento</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-es.htm#download-aptosid">Espejos aptosid, descargar y quemar &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-es.htm#md5">Suma de verificación, md5</a></li>
+					  <li><a href="cd-dl-burning-es.htm#burn-nero">Quemar en Windows</a></li>
+					  <li><a href="cd-dl-burning-es.htm#burn-linux">Quemar en Linux</a></li>
+					  <li><a href="cd-no-gui-burn-es.htm#burning-no-gui">Script para quemar ISO</a></li>
+					  <li><a href="cd-no-gui-burn-es.htm#burn-no-gui-gen">Quemar sin GUI</a></li>
+					  <li><a href="cd-dl-burning-es.htm#download-aptosid">Espejos de descarga aptosid</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-es.htm">LiveCD: el modo en vivo</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-es.htm#rootpw">Clave raíz del LiveCD</a></li>
+				<li><a href="live-mode-es.htm#live-cd-installsoft">Instalar Software con el LiveCD</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-es.htm">Terminal/Consola</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-es.htm#term-kon"> Terminal (consola) &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-es.htm#term-kon"> Terminal (consola)</a></li>
+					  <li><a href="term-konsole-es.htm#colours"> prompts coloreados de terminal : </a></li>
+					  <li><a href="term-konsole-es.htm#cli-help">Ayuda en línea de Comando</a></li>
+					  <li><a href="help-es.htm#init3-tools">Herramientas que hay que conocer en el modo texto (tty) - init 3</a></li>
+					  <li><a href="term-konsole-es.htm#term-cmds">Comandos del terminal de Linux</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-es.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-es.htm">Chuletas (cheatcodes)</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-es.htm#cheatcodes">Chuletas aptosid específicas para Live-ISO</a></li>
+				<li><a href="cheatcodes-es.htm#cheatcodes-linux">Chuletas genericas Linux</a></li>
+				<li><a href="cheatcodes-vga-es.htm#vga">Códigos VGA</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-es.htm">Particionar el Disco Duro; Modos tradicional, GPT y LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-es.htm#hd-ntfs3g">Escribir en Particiones NTFS con ntfs-3g</a></li>
+			<li><a href="part-lvm-es.htm#part-lvm">Particiones para usar LVM - Gestor Lógico de Volúmenes</a></li>
+			<li><a href="part-gparted-es.htm#partition">Particionar con un gestor gráfico &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-es.htm#partition">Particionar el Disco Duro usando GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-es.htm#ntfs">Redimensionar particiones NTFS con GParted/KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-es.htm#partition">Particionar el Disco Duro en línea de órdenes &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-es.htm#partition">Particionar el Disco Duro con cfdisk</a></li>
+					    <li><a href="part-cfdisk-es.htm#formating">Formatear después de particionar con cfdisk</a></li>
+					    <li><a href="part-gdisk-es.htm#gdisk-6">Formatear después de particionar con gdisk</a></li>
+					    <li><a href="part-gdisk-es.htm#gdisk-1">GPT Particionar con gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-es.htm#part-example">Particionado Básico &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-es.htm#part-example">Ejemplos de dimensiones de particiones</a></li>
+					  <li><a href="part-uuid-es.htm#uuid">UUID, Reconstruir fstab y crear nuevos puntos de montaje</a></li>
+					  <li><a href="part-cfdisk-es.htm#disknames">Nombrar discos: en breve</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-es.htm">Opciones de la Instalación - HD, USB, VM y Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-es.htm#Inst-prep">Preparar para Instalar &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-es.htm#Inst-prep">Preparar para Instalar </a></li>
+					  <li><a href="hd-install-es.htm#Installation">Instalar al disco duro</a></li>
+					  <li><a href="hd-install-es.htm#first-hd-boot">Primera inicialización</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-es.htm#fromiso">Arranque fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-es.htm#fromiso">Iniciar fromiso - Vista general</a></li>
+					  <li><a href="hd-install-opts-es.htm#grub2-fromiso">Iniciar 'fromiso' con Grub 2</a></li>
+					  <li><a href="hd-install-opts-es.htm#fromiso-persist">'fromiso' y 'persist'</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-es.htm#usb-hd">Instalar en un USB-DD - aptosid específico - aptosid-en-un-lápiz_USB &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-es.htm#usb-hd">Instalar en un USB-DD - aptosid Específico - aptosid en un lápiz USB</a></li>
+					  <li><a href="hd-ins-opts-oos-es.htm#raw-usb">Grabar aptosid en un lápiz USB/SSD con cualquier sistema Linux, MS Windows o Mac OS X</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-es.htm#install-crypt">Instalación en particiones cifradas - cryptroot</a></li>
+		  <li><a href="nbdboot-es.htm#nbd1">Arrancar aptosid en una red</a></li>
+		  <li><a href="hd-install-vmopts-es.htm#vmopts">Opciones de instalación en una máquina virtual</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-es.htm">Tarjetas Gráficas, monitores, Xorg &amp; controladores</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-es.htm#mon-res">Resolución de pantalla y monitores  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-es.htm#mon-res">Resolución de pantalla y monitores</a></li>
+					  <li><a href="hw-dev-mon-es.htm#xrandr">Monitores Duales y xrandr</a></li>
+					  <li><a href="hw-dev-mon-es.htm#mon-binary">Monitores Duales (utilizando binarios)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-es.htm#foss-xorg">Controladores GPU &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-es.htm#ati-3d">Controladores AMD/ATI 3D</a></li>
+					  <li><a href="gpu-es.htm#intel">Controladores Intel 2D y 3D</a></li>
+					  <li><a href="gpu-es.htm#nvidia">Controladores Nvidia 3D</a></li>
+					  <li><a href="gpu-es.htm#foss-xorg">Controladores código abierto Xorg</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-es.htm#fw-detect">Detección de firmware non-free</a></li>
+			  <li><a href="nf-firm-es.htm#non-free-firmware">Añadir non-free a Sources List</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-es.htm">Gestor de ventanas</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-es.htm">Gestores de Ventanas KDE y XFCE &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-es.htm#xfce-notes">Utilidades de XFCE</a></li>
+					    <li><a href="wm-dm-es.htm#install-add">Utilidades extras de KDE</a></li>
+					    <li><a href="wm-dm-es.htm#desk-freeze">El escritorio se traba</a></li>
+					    <li><a href="wm-dm-es.htm#kde-login">No puedo hacer login en KDE</a></li>
+					    <li><a href="wm-dm-es.htm#ch-th">Cambiar Temas</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm--es.htm#dm">Instalación de otros gestores de escritorio</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-es.htm">Conexión a Internet, WiFi, LAN y Redes</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-es.htm">Pila de LAMP aptosid &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-es.htm#serv-apache">Pila de LAMP aptosid </a></li>
+					    <li><a href="lamp-apache-es.htm#serv-ftp">Clientes FTP</a></li>
+					    <li><a href="lamp-apache-es.htm#serv-sec">Protocolos de Seguridad</a></li>
+					    <li><a href="lamp-apache-es.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-es.htm#serv-mysql">Configurar MySQL</a></li>
+					    <li><a href="lamp-ppp-es.htm#serv-php">PHP en Apache</a></li>
+					    <li><a href="ntp-server-es.htm#ntp-server">Configurar un servidor horario</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-es.htm#tor">Firewalls (Muros de Fuego) y privacidad &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-es.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-es.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-es.htm#firewalls">Firewalls (Muros de Fuego)</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-es.htm#ssh-x">SSH y Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-es.htm#setup">Configurar un servidor Samba</a></li>
+						  <li><a href="samba-es.htm#configure">Configurar SAMBA (Windows)</a></li>
+						  <li><a href="ssh-es.htm#ssh-fs">Montaje remoto con SSH </a></li>
+						  <li><a href="ssh-es.htm#ssh-x">Aplicaciones X Window via SSH</a></li>
+						  <li><a href="ssh-es.htm#ssh-f">SSH con Konqueror</a></li>
+						  <li><a href="ssh-es.htm#ssh-w">Seguimiento-X con SSH desde Win-PC</a></li>
+						  <li><a href="ssh-es.htm#ssh">SSH y seguridad</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-es.htm#netcardconfig">Conexiones WIFI &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-es.htm#netcardconfig">'ceni': Conectar en línea</a></li>
+						    <li><a href="inet-wpagui-es.htm#wpa-roaming-gui">WiFi - entorno gráfico WPA</a></li>
+						    <li><a href="inet-setup-es.htm#net-set1">WiFi - Configuración del WiFi Roaming</a></li>
+						    <li><a href="inet-wpa-es.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-es.htm#hotswitch">Cambio de la red entre WiFi y Cable</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-es.htm#netcardconfig">Conexiones por cable &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-es.htm#dial-mod">Modems de 56k</a></li>
+						    <li><a href="inet-ceni-es.htm#netcardconfig">'ceni': Conectar en línea</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-es.htm#fw-detect">Detección de firmware non-free</a></li>
+		<li><a href="nf-firm-es.htm#non-free-firmware">Añadir non-free a Sources List</a></li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-es.htm">Gestión de Paquetes y Actualización</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-es.htm#apt-cook">APT y 'sources.list' &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-es.htm#apt-cook">Guía de APT y 'sources list'</a></li>
+					    <li><a href="sys-admin-apt-es.htm#apt-install">Instalar un Paquete</a></li>
+					    <li><a href="sys-admin-apt-es.htm#apt-delete">Quitar un Paquete</a></li>
+					    <li><a href="sys-admin-apt-es.htm#apt-downgrade">Mantener ('Hold') un Paquete y versión anterior</a></li>
+					    <li><a href="sys-admin-apt-es.htm#apt-cache">Buscar un paquete con 'apt-cache'</a></li>
+					    <li><a href="sys-admin-apt-es.htm#gui-pacsea">Buscar un paquete en entorno gráfico</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-es.htm#kern-upgrade">Actualizar el Kernel &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-es.htm#kern-remove">Quitar kernels anteriores</a></li>
+					    <li><a href="sys-admin-kern-upg-es.htm#kern-upgrade">Actualizar el Kernel</a></li>
+					    <li><a href="sys-admin-kern-upg-es.htm#dmakms">Instalación dinámica de módulos del kernel con dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-es.htm#apt-upgrade">Actualizar el sistema instalado: 'dist-upgrade' - Vista general &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-es.htm#live-cd-upgrade">Actualización mediante un Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-es.htm#approx">Actualización de varios PCs en una red</a></li>
+					    <li><a href="sys-admin-apt-es.htm#apt-upgrade">Actualizar el sistema instalado: 'dist-upgrade' - Vista general</a></li>
+					    <li><a href="sys-admin-apt-es.htm#du-st">Actualizar el sistema instalado: 'dist-upgrade' - Los pasos</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-es.htm">Administración del Sistema</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-es.htm#bois-prep">Actualizar el BIOS con FreeDOS</a></li>
+		<li><a href="vir-rkits-es.htm#virus-rkits">Buscadores de Virus y Rootkit</a></li>
+		<li><a href="hd-install-es.htm#adduser">Agregar nuevo Usuario y claves &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-es.htm#adduser">Agregar un nuevo Usuario</a></li>
+					    <li><a href="sys-admin-gen-es.htm#pw-lost">Clave root Perdida, nuevas claves</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-es.htm#start-services">Servicios y niveles de ejecución &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-es.htm#start-services">Activar/desactivar servicios</a></li>
+					    <li><a href="sys-admin-gen-es.htm#pkill">Matar un proceso o servicio</a></li>
+					    <li><a href="sys-admin-gen-es.htm#init">niveles de ejecución en aptosid - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-es.htm#rsync">Copia de seguridad del sistema &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-es.htm#rdiff">Respaldar con 'rdiff'</a></li>
+					    <li><a href="sys-admin-rsync-es.htm#rsync">Respaldar con 'rsync'</a></li>
+					    <li><a href="home-es.htm#home-bu">Mudando el /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-es.htm#fonts">CUPS, Fuentes y Sonido &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-es.htm#fonts">Fuentes</a></li>
+					     <li><a href="sys-admin-gen-es.htm#cups">Sistema de impresión CUPS</a></li>
+					     <li><a href="sys-admin-gen-es.htm#sound">Mezcladores de sonido</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-es.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-es.htm#chroot">Grub2 - Recuperar Grub con chroot</a></li>
+					    <li><a href="sys-admin-grub2-es.htm#mbr-over-grub2">Grub2 - Sobre-escribir el MBR</a></li>
+					    <li><a href="sys-admin-grub2-es.htm#multi-os">Grub2 - Iniciación Dual y Múltiple</a></li>
+					    <li><a href="sys-admin-grub2-es.htm#grub1-grub2">Grub2 -Actualización desde Grub1</a></li>
+					    <li><a href="sys-admin-grub2-es.htm#grub2">Grub2 - Vista general</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donar" alt="Donar" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Patrocinado por webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid tiene el orgullo de estar alojado en webtropia.com" alt="aptosid tiene el orgullo de estar alojado en webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+	<div class="divider" id="download-aptosid">
+		<h2 id="top-header">Bajando el ISO de aptosid</h2>
+			<h6><span class="highlight-2">ESTO ES MUY IMPORTANTE:</span><span class="highlight-3"> aptosid, como Live-CD de Linux, está basado en tecnología de alta compresión, y por eso se requiere un cuidado especial en el momento de quemar la imagen ISO. Sólo use un CD [o DVD+RW] de alta calidad, y quémelo en <span class="highlight-2">modo-DAO/SAO (disco/sesión-a-la-vez)</span> y a la velocidad más baja según el tipo de disco, idealmente a no más de 8x</span></h6>
+	<div class="spacer02"></div>
+		<p class="highlight-2">¡HAGA SIEMPRE UNA COPIA DE SEGURIDAD DE SUS DATOS!</p>
+
+			<h3>Espejos para descargas</h3>
+					<h6 class="highlight-3">Por favor, use el espejo más cercano geográficamente a su residencia. Aquellos espejos que tienen debajo una caja con código se actualizan tan pronto como los cambios son subidos (hace referencia a /etc/apt/sources.list.d/aptosid.list).</h6>
+
+				<h4>Europa</h4>
+				<ul>
+					<li>
+						<b>Technical University Carolo-Wilhelmina at Brunswick</b>, Alemania<br />
+						<a href="http://debian.tu-bs.de/project/aptosid/">http://debian.tu-bs.de/project/aptosid/</a><br />
+						<a href="ftp://debian.tu-bs.de/project/aptosid/">ftp://debian.tu-bs.de/project/aptosid/</a>
+<pre>
+deb http://debian.tu-bs.de/project/aptosid/debian/ sid main fix.main
+# deb-src http://debian.tu-bs.de/project/aptosid/debian/ sid main fix.main
+</pre>
+					</li>
+					<li>
+						<b>Free University Berlin/ spline (Student Project LInux NEtwork)</b>, Alemania<br />
+						<a href="ftp://ftp.spline.de/mirrors/aptosid/">ftp://ftp.spline.de/mirrors/aptosid/</a><br />
+						<a href="rsync://ftp.spline.de/aptosid/">rsync://ftp.spline.de/aptosid/</a>
+<pre>
+deb ftp://ftp.spline.de/pub/aptosid/debian/ sid main fix.main
+# deb-src ftp://ftp.spline.de/pub/aptosid/debian/ sid main fix.main
+</pre>
+					</li>
+					<li>
+						<b>OfficeVienna</b>, Austria<br />
+						<a href="http://aptosid.office-vienna.at/aptosid/">http://aptosid.office-vienna.at/aptosid/</a><br />
+						<a href="ftp://aptosid.office-vienna.at/aptosid/">ftp://aptosid.office-vienna.at/aptosid/</a><br />
+<pre>
+deb http://aptosid.office-vienna.at/aptosid/debian/ sid main fix.main
+# deb-src http://aptosid.office-vienna.at/aptosid/debian/ sid main fix.main
+</pre>
+					</li>
+					<li>
+						<b>webtropia.com, Düsseldorf,</b>, Alemania<br />
+						<i>(solo repositorios aptosid)</i><br />
+						<a href="http://aptosid.com/debian/">http://aptosid.com/debian/</a><br />
+<pre>
+deb http://aptosid.com/debian/ sid main fix.main
+# deb-src http://aptosid.com/debian/ sid main fix.main
+</pre>
+					</li>
+				  </ul>
+	</div>
+	<div class="divider" id="aptosid-repo">
+				  <ul>
+					<!--<li>
+						<b>Cybermirror,</b> Alemania<br />
+						<a href="http://aptosid.cybermirror.org/">http://aptosid.cybermirror.org/</a>
+					</li>-->
+					<li>
+						<b>Friedrich-Alexander-Universität, Erlangen-Nürnberg, Germany:</b><br />
+						<a href="http://ftp.uni-erlangen.de/mirrors/aptosid/">http://ftp.uni-erlangen.de/mirrors/aptosid/</a><br />
+						<a href="ftp://ftp.uni-erlangen.de/mirrors/aptosid/">ftp://ftp.uni-erlangen.de/mirrors/aptosid/</a>
+					</li>
+					<li>
+						<b>University of Leipzig,</b> Alemania<br />
+						<a href="http://6bone.informatik.uni-leipzig.de/pub/aptosid.com/aptosid"> http://6bone.informatik.uni-leipzig.de/pub/aptosid.com/aptosid</a><br />
+						<a href="https://6bone.informatik.uni-leipzig.de/pub/aptosid.com/aptosid">https://6bone.informatik.uni-leipzig.de/pub/aptosid.com/aptosid</a><br />
+						<a href="ftp://6bone.informatik.uni-leipzig.de/pub/aptosid.com/aptosid/">ftp://6bone.informatik.uni-leipzig.de/pub/aptosid.com/aptosid/</a><br />
+						<a href="rsync://6bone.informatik.uni-leipzig.de/aptosid">rsync://6bone.informatik.uni-leipzig.de/aptosid</a>
+					</li>
+					<li>
+						<b>University of Kent/ Computer Science Department</b>, Reino Unido<br />
+						<a href="http://www.mirrorservice.org/sites/aptosid.com/">http://www.mirrorservice.org/sites/aptosid.com/</a><br />
+						<a href="ftp://ftp.mirrorservice.org/sites/aptosid.com/">ftp://ftp.mirrorservice.org/sites/aptosid.com/</a><br />
+						<a href="rsync://rsync.mirrorservice.org/aptosid.com/aptosid/">rsync://rsync.mirrorservice.org/aptosid.com/aptosid/</a>
+					</li>
+					<li>
+						<b>Ireland's National Education and Research Network/ HEAnet</b>, Dublin, Irlanda<br />
+						<a href="http://ftp.heanet.ie/pub/aptosid/">http://ftp.heanet.ie/pub/aptosid/</a><br />
+						<a href="ftp://ftp.heanet.ie/pub/aptosid/">ftp://ftp.heanet.ie/pub/aptosid/</a><br />
+						<a href="rsync://ftp.heanet.ie/pub/aptosid/">rsync://ftp.heanet.ie/pub/aptosid/</a>
+					</li>
+					<li>
+						<b>Università degli Studi di Pavia/Biblioteca Unificata di Giurisprudenza</b>, Italia<br />
+						<a href="http://aptosid.unipv.it">http://aptosid.unipv.it</a>
+					</li>
+				</ul>
+				<h4>Norte América</h4>
+				<ul>
+					<!--<li>
+						<b>XR3 Technologies, Huntsville, AL USA:</b><br />
+						<a href="http://aptosid.foreverlinux.net/aptosid/aptosid/">http://aptosid.foreverlinux.net/aptosid/aptosid/</a>
+<pre>
+deb http://aptosid.foreverlinux.net/aptosid/aptosid/debian/ sid main fix.main
+# deb-src http://aptosid.foreverlinux.net/aptosid/aptosid/debian/ sid main fix.main
+</pre>
+					</li>-->
+					<!--<li>
+						<b>Internap Network Services</b>, Atlanta, GA. USA <br />
+						<a href="ftp://ftp-mirror.internap.com/pub/aptosid/"> ftp://ftp-mirror.internap.com/pub/aptosid/</a><br />
+						<a href="http://ftp-mirror.internap.com/pub/aptosid/"> http://ftp-mirror.internap.com/pub/aptosid/</a><br />
+						<a href="rsync://ftp-mirror.internap.com/aptosid/"> rsync://ftp-mirror.internap.com/aptosid/</a>
+					</li>-->
+					<!--<li>
+						<b>University of Tennessee/ SunSITE, TN, USA:</b><br />
+						<a href="http://mira.sunsite.utk.edu/aptosid/">http://mira.sunsite.utk.edu/aptosid/</a><br />
+						<a href="rsync://mira.sunsite.utk.edu/aptosid">rsync://mira.sunsite.utk.edu/aptosid</a>
+					</li>-->
+					<li>
+						<b>Yellow Fiber Networks, Reston VA, USA</b><br />
+						<a href="http://mirror.yellowfiber.net/aptosid//">http://mirror.yellowfiber.net/aptosid/</a>
+					</li>
+					<li>
+						 <b>MirrorCatalogs, Denver Colorado, USA</b><br />
+						 <a href="http://aptosid.mirrorcatalogs.com">http://aptosid.mirrorcatalogs.com</a><br />
+						 <a href="ftp://aptosid.mirrorcatalogs.com/">ftp://aptosid.mirrorcatalogs.com/</a><br />
+						 <a href="rsync://aptosid.mirrorcatalogs.com/aptosid/">rsync://aptosid.mirrorcatalogs.com/aptosid/</a>
+					</li>
+					 <li>
+						<b>w3you.com, St. Louis/MO, USA :</b><br />
+						<i>(solo repositorios aptosid)</i><br />
+						<a href="http://oscar.aptosid.com/debian/">http://oscar.aptosid.com/debian/</a><br />
+<pre>
+deb http://oscar.aptosid.com/debian/ sid main fix.main
+# deb-src http://oscar.aptosid.com/debian/ sid main fix.main
+</pre>
+					</li>
+				</ul>
+				<h4>América del Sur</h4>
+				<ul>
+					<li>
+						<b>Universidade Federal do Paraná/ Center for Scientific Computing and Free Software</b>, Brasil<br />
+						<a href="http://aptosid.c3sl.ufpr.br">http://aptosid.c3sl.ufpr.br</a><br />
+                                            	<a href="ftp://aptosid.c3sl.ufpr.br/aptosid">ftp://aptosid.c3sl.ufpr.br/aptosid</a><br />
+                                            	<a href="rsync://aptosid.c3sl.ufpr.br/aptosid">rsync://aptosid.c3sl.ufpr.br/aptosid</a>
+					</li>
+				</ul>
+				<h4>Asia</h4>
+				<ul>
+					<li>
+						<b>National Taiwan University/ Computer and Information Networking Center, </b>Taipei City, R.O.C.<br />
+ 						<a href="http://ftp.tw.debian.org/pub/aptosid/">http://ftp.tw.debian.org/pub/aptosid/</a><br />
+ 						<a href="ftp://ftp.tw.debian.org/pub/aptosid/">ftp://ftp.tw.debian.org/pub/aptosid/</a>
+					</li>
+				</ul>
+				<h4>África</h4>
+				<ul>
+					<li>
+						<b>University of Cape Town/ Linux Enthusiasts Group</b>, Sudáfrica<br />
+						<a href="http://ftp.leg.uct.ac.za/pub/linux/aptosid/">http://ftp.leg.uct.ac.za/pub/linux/aptosid/</a>
+					</li>
+				</ul>
+
+				<h4>Australia</h4>
+				<ul>
+					<li>
+						<b>mirror.AARNet.edu.au, Brisbane,</b> Australia<br />
+						<a href="http://mirror.aarnet.edu.au/pub/aptosid/ ">http://mirror.aarnet.edu.au/pub/aptosid/  </a><br />
+						<a href="ftp://mirror.aarnet.edu.au/pub/aptosid/">ftp://mirror.aarnet.edu.au/pub/aptosid/</a>
+					</li>
+				</ul>
+	</div>
+	<div class="divider" id="aptosid-def">
+				<h3>Definiciones de archivos en cada espejo (mirror)</h3>
+
+							<p>Cada espejo de aptosid tiene los siguientes archivos:</p>
+
+<pre>
+MD5SUM
+MD5SUM.gpg
+SHA256SUM
+SHA256SUM.gpg
+SOURCES
+aptosid-20xx-xx-release-name-window-manager-arch-datetimestamp.arch.manifest
+aptosid-20xx-xx-release-name-window-manager-arch-datetimestamp.iso
+</pre>
+
+							<p>El archivo <span class="highlight-3">.manifest</span> contiene una lista de todos los paquetes de un iso especifico. </p>
+
+							<p>El archivo  <span class="highlight-3">.iso</span> es la imagen para descargar. </p>
+
+							<p>Los archivos <span class="highlight-3"> .md5 y .sha256</span> sirven para verificar la integridad de un iso.</p>
+
+							<p>Los archivos <span class="highlight-3">.gpg</span> son firmas para comprobar que las verificaciones (.md5, .sha256, etc.) no ha sido cambiadas y pueden servir para estar seguros de la integridad del iso.</p>
+
+							<p>El archivo sources tar solamente es para quienes necesiten una copia estática del código fuente para fines de redistribución a fin de cumplir con los requisitos de la licencia. Lea el fichero SOURCES para mayor información.</p>
+
+			<h5 class="highlight-3">Nuestro agradecimiento a <a href="http://www.webtropia.com/?o_ref=aptosid"> webtropia.com</a> que patrocina aptosid y a todos los que proporcionan espejos.</h5>
+
+							<p>Los enlaces para descargas y espejos están en <a href="http://aptosid.com"> aptosid.com</a></p>
+
+							<p>Si alguien tiene un servidor FTP con suficiente trafico a su disposición, por favor informe en el <a href="http://aptosid.com/">foro de aptosid</a>. Alternativamente, entre en los <a href="http://aptosid.com/">Foros de aptosid</a> o al <a href="irc://irc.oftc.net:6667#aptosid">canal de IRC en oftc.net</a></p>
+	</div>
+
+	<div class="divider" id="md5">
+		<h2>Suma de verificación-md5sum y validación</h2>
+			<h6><span class="highlight-2">ESTO ES MUY IMPORTANTE:</span><span class="highlight-3"> aptosid, como Live-CD de Linux, está basado en tecnología de alta compresión, y por eso se requiere un cuidado especial en el momento de quemar la imagen ISO. Sólo use un CD [o DVD+RW] de alta calidad, y quémelo en <span class="highlight-2">modo-DAO/SAO (disco/sesión-a-la-vez)</span> y a la velocidad más baja según el tipo de disco, idealmente a no más de 8x</span></h6>
+	<div class="spacer02"></div>
+
+							<p>MD5 es una suma de verificación para un archivo y se usa para estar seguros de la integridad de archivos. La suma MD5 de un archivo es comparada con una suma de verificación conocida. Así puede comprobar si un archivo ha sido cambiado o dañado; esto es recomendable para todos los archivos bajados desde internet.</p>
+
+							<p>Si la suma-md5sum del archivo bajado es igual a la suma-md5 en el archivo .md5, puede estar seguro que el archivo fue bajado correctamente. En Linux se calcula la suma-md5 con: (requiere esperar unos segundos mientras hace el cálculo)</p>
+
+<pre>
+$ md5sum archivo_a_verificar
+</pre>
+
+							<p>La suma aparecerá escrita en la consola.<br /> Con md5sum (486 kb), la suma-md5 también puede ser validada en Windows.</p>
+
+							<p>Las imágenes ISO de aptosid siempre están acompañadas del archivo-md5 y siempre debe ser validado antes de quemar el CD. La verificación garantiza que si un problema ha ocurrido no es culpa del archivo que se ha bajado. Así se ayuda a mantener el foro libre de problemas que no puede ser resueltos porque el archivo-ISO estaba dañado. Debe hacer esto en una consola. Cambie al directorio donde esté el archivo ISO y el archivo.md5 y ejecute el siguiente comando para verificar la sumas-md5.</p>
+
+							<p>Descargue estos ficheros desde el espejo:</p>
+<pre>
+MD5SUM
+MD5SUM.gpg
+SHA256SUM
+SHA256SUM.gpg
+</pre>
+							 <p>En un terminal haga:</p>
+<pre>
+$ md5sum aptosid.iso
+</pre>
+
+		<p>Si no son iguales recibirá un mensaje de error:</p>
+
+<pre>
+"aptosid.iso: Error
+md5sum: Aviso: suma calculada no concuerda!"
+
+</pre>
+
+		<p>Si el archivo es correcto el programa termina sin mensaje.</p>
+
+							<p>Si desea verificar la validez de un archivo <span class="highlight-3">.gpg</span> haga lo siguiente, como <span class="highlight-3"> $USER</span>:</p>
+
+							 <h6>Ejemplo de uso:</h6>
+<pre>
+aptosid-2011-02-imera-kde-lite-i386-201107131633.iso 
+</pre>
+							<p>1) Importar la clave pública de "Stefan Lippers-Hollmann's" (slh's) desde un servidor de claves (keys). (Otro servidor de claves es <span class="highlight-3"> subkeys.pgp.net </span>):</p>
+
+<pre>
+$ gpg --keyserver wwwkeys.pgp.net --recv-keys E3BD538B
+gpg --edit-key E3BD538B
+Command> trust
+Command> (choose the option you prefer or quit)
+Command> quit
+</pre>
+
+							<p>2) Ahora, puede comprobar la integridad de la suma de verificación con:</p>
+
+<pre>
+$ gpg --verify SHA256SUM.gpg SHA256SUM
+</pre>
+							<p>Si a través de las órdenes gpg ha declarado la clave como digna de confianza, esto es lo que obtendrá en la consola con "5 trusted ultimately":</p>
+
+<pre>
+$gpg: Signature made Wed 15 Jul 2009 08:20:59 EST using DSA key ID E3BD538B
+$ gpg: Good signature from "Stefan Lippers-Hollmann (aptosid.com) &lt;s.l-h@gmx.de&gt;"
+</pre>
+
+							<p>Recibirá un mensaje 'Firma valida' con un AVISO si eligió no clasificar la clave:</p>
+
+<pre>
+gpg: Signature made Wed 15 Jul 2009 08:20:59 EST using DSA key ID E3BD538B
+gpg: checking the trustdb
+gpg: 3 marginal(s) needed, 1 complete(s) needed, PGP trust model
+gpg: depth: 0  valid:   2  signed:   0  trust: 0-, 0q, 0n, 0m, 0f, 2u
+gpg: Good signature from "Stefan Lippers-Hollmann (aptosid.com) &lt;s.l-h@gmx.de&gt;"
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: 64C3 6120 DA8D 91E7 378B  E79F 3916 C431 F809 94F6
+</pre>
+
+	</div>
+	<div class="divider" id="burn-nero">
+		<h2>Como quemar un CD en Windows?</h2>
+			<h6><span class="highlight-2">ESTO ES MUY IMPORTANTE:</span><span class="highlight-3"> aptosid, como Live-CD de Linux, está basado en tecnología de alta compresión, y por eso se requiere un cuidado especial en el momento de quemar la imagen ISO. Sólo use un CD [o DVD+RW] de alta calidad, y quémelo en <span class="highlight-2">modo-DAO/SAO (disco/sesión-a-la-vez)</span> y a la velocidad más baja según el tipo de disco, idealmente a no más de 8x</span></h6>
+
+
+
+							<p>Naturalmente, también puede quemar un CD en Windows. El archivo bajado tiene que ser quemado como un archivo ISO. Si el Winrar (o otra herramienta de compresión) es enlazado con un archivo .ISO, puede causar algún problema si se trata como un archivo normal. Desde el archivo ISO tiene que quemar el CD. </p>
+
+							<p>Tiene varias buenas opciones para quemar en Windows.</p>
+
+			<h5>Quemadores de Software Libre para Windows</h5>
+							<p><a href="http://cdrtfe.sourceforge.net/">cdrtfe</a> :compatible para Windows 9x/ME/2000/XP (probado con Win95, Win98SE, Win2000, WinXP) sólo para Win9x/ME: nivel ASPI funcional (por ejemplo, Adaptec ASPI 4.60)</p>
+
+							<p><a href="http://www.linuxliveusb.com">LinuxLive USB Creator</a>, un proyecto de código abierto, ofrece un GUI para MS Windows&#8482;, que permite una instalación de un aptosid-i386.iso (32 bit) en un lápiz USB. <span class="highlight-3"> Necesita usar la chuleta <span class="highlight-2">fromhd</span> en la línea de inicio</span>.</p>
+
+			<h6>Quemadores de Software Libre y Propietario para Windows</h6>
+						<ul>
+							<li>Nero (no el Nero Express!)</li>
+
+							<li>Otra buena herramienta libre es el <a href="http://www.cdburnerxp.se/">CD/DVD Burner XP Pro</a></li>
+
+							<li>Burncdcc desde <a href="http://www.terabyteunlimited.com/utilities.html"> terabyteunlimited </a>-que solamente puede quemar ISOs.</li>
+		</ul>
+	</div>
+
+	<div class="divider" id="burn-linux">
+		<h2>Quemando el CD con Linux</h2>
+			<h6><span class="highlight-2">ESTO ES MUY IMPORTANTE:</span><span class="highlight-3"> aptosid, como Live-CD de Linux, está basado en tecnología de alta compresión, y por eso se requiere un cuidado especial en el momento de quemar la imagen ISO. Sólo use un CD [o DVD+RW] de alta calidad, y quémelo en <span class="highlight-2">modo-DAO/SAO (disco/sesión-a-la-vez)</span> y a la velocidad más baja según el tipo de disco, idealmente a no más de 8x</span></h6>
+
+	<div class="spacer02"></div>
+
+							<p>Si ya usa Linux en su máquina puede quemar el CD en una consola o con cualquier de los programas de quemar CD instalados.</p>
+
+							<p>Con aptosid y casi todas las otras distribuciones Linux, el K3b viene como la herramienta preseleccionada. Ábralo, seleccione "Tools" -&gt; "Burn CD-Image..." y seleccione el archivo-ISO a quemar (por ejemplo,  aptosid.iso).</p>
+
+							<p>K3B calcula inicialmente la suma-md5 del archivo-ISO (lo que lleva unos momentos). Si la suma de verificación es igual a la suma en el archivo md5 (por ejemplo, aptosid.iso.md5), su descarga fue exitosa y puede quemar el ISO con sólo pinchar el "Start".</p>
+
+							<p><span class="highlight-3">Los problemas al quemar CD/DVD ocurren más frecuentemente desde GUI (interfaz gráfica). Puede quemar directamente desde la consola con <a href="cd-no-gui-burn-es.htm"> burniso</a>.</span></p>
+	</div>
+					  <h6>Ver también <a href="hd-ins-opts-oos-es.htm#raw-usb">Grabación de aptosid en un lápiz USB/SSD con cualquier Linux, MS Windows o Mac OS X system (32 y 64 bit)</a>.</h6>
+
+			<div id="rev">Content last revised 19/03/2012 1435 UTC</div>
+</div>
+</body>
+</html>

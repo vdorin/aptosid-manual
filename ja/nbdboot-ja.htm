@@ -1,0 +1,547 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+	<title>aptosid Manual - Network booting (nbd).</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+	<style type="text/css" media="all">@import url("../lib/css-js/version-date.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<!-- Last translation revision muchan 23/Sep/2010 2335 UTC-->
+<body>
+<!--htdig_noindex--><div id="menu"><!-- menu starts here ja lang maintained by muchan-->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="To aptosid.com, Forum and Wiki" alt="logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-ja.htm#search-on"><img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" /> サーチ Online Offline</a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Choose another language CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="lang-switch CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-ja.htm">aptosid OS マニュアル</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-ja.htm#welcome-gen">aptosid OS マニュアル &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-ja.htm#cred-team">貢献者</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-ja.htm#how-to">このマニュアルの使い方 &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-ja.htm#how-to">このマニュアルの使い方</a></li>
+					  <li><a href="welcome-ja.htm#table-contents">内容一覧</a></li>
+					</ul>
+					</li>
+		<li><a href="help-ja.htm#help-gen">困った時は... &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-ja.htm#help-gen">困った時は...</a></li>
+					  <li><a href="help-ja.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-ja.htm#welcome-quick">aptosid クイックスタートガイド</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-ja.htm">ISO の内容、リリース、ダウンロードミラーとCDの焼き付け</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-ja.htm#cd-content">ISO の内容と最小限必要な仕様 &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-ja.htm#rolling">リリースノート</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-ja.htm#download-aptosid">aptosidのミラー, ダウンロードとCD の作成 &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-ja.htm#md5">md5 Checksum</a></li>
+					  <li><a href="cd-dl-burning-ja.htm#burn-nero">WindowsでISOを焼くには</a></li>
+					  <li><a href="cd-dl-burning-ja.htm#burn-linux">LinuxでISOを焼くには</a></li>
+					  <li><a href="cd-no-gui-burn-ja.htm#burning-no-gui">burniso script</a></li>
+					  <li><a href="cd-no-gui-burn-ja.htm#burn-no-gui-gen">GUIなしでISOを焼くには</a></li>
+					  <li><a href="cd-dl-burning-ja.htm#download-aptosid">aptosid ダウンロードミラー</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-ja.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-ja.htm#rootpw">aptosid-LiveISOのRootパスワード</a></li>
+				<li><a href="live-mode-ja.htm#live-cd-installsoft">Live-ISO作動中にソフトをインストール</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-ja.htm">ターミナル/コンソール</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-ja.htm#term-kon"> ターミナル/コンソール&#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-ja.htm#term-kon"> ターミナル/コンソール</a></li>
+					  <li><a href="term-konsole-ja.htm#colours"> Coloured terminal prompts</a></li>
+					  <li><a href="term-konsole-ja.htm#cli-help">コマンドラインヘルプ</a></li>
+					  <li><a href="help-ja.htm#init3-tools">テキストモード(tty)で便利な道具 - init 3</a></li>
+					  <li><a href="term-konsole-ja.htm#term-cmds">Linuxターミナルのコマンド一覧</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-ja.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-ja.htm">起動コード</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-ja.htm#cheatcodes">aptosidだけのLive-ISO用起動コード</a></li>
+				<li><a href="cheatcodes-ja.htm#cheatcodes-linux">Linux一般の起動コード</a></li>
+				<li><a href="cheatcodes-vga-ja.htm#vga">VGA コード</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-ja.htm">Partitioning the Hard Drive - Traditional, GPT and LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-ja.htm#hd-ntfs3g">ntfs-3gを使ってNTFSパーティションへの書き込み</a></li>
+			<li><a href="part-lvm-ja.htm#part-lvm">LVM(Logical Volume Manager)を使うパーティション</a></li>
+			<li><a href="part-gparted-ja.htm#partition"> GUI でパーティショニング&#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-ja.htm#partition">GParted / KDE Partition Manager を使ってパーティショニング</a></li>
+					  <li><a href="part-gparted-ja.htm#ntfs"> GParted / KDE Partition Manager を使って NTFS のサイズ変更</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-ja.htm#partition">コマンドラインでパーティショニング</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-ja.htm#partition"> cfdisk を使ってパーティショニング</a></li>
+					    <li><a href="part-cfdisk-ja.htm#formating">cfdiskでパーティション後のフォーマッティング</a></li>
+					    <li><a href="part-gdisk-ja.htm#gdisk-6">Formatting after partitioning with gdisk</a></li>
+					    <li><a href="part-gdiskja.htm#gdisk-1">GPT Partitioning with gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-ja.htm#part-example">パーティショニングの基本 &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-ja.htm#part-example">パーティションサイズの例</a></li>
+					  <li><a href="part-uuid-ja.htm#uuid">UUID, Rebuilding fstab and creating new mount points</a></li>
+					  <li><a href="part-cfdisk-ja.htm#disknames">ディスクの名前について</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-ja.htm">インストール・オプション - HD, USB, VM, Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-ja.htm#Inst-prep">インストールの準備 &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-ja.htm#Inst-prep">インストールの準備</a></li>
+					  <li><a href="hd-install-ja.htm#Installation">ハードディスクへのインストール</a></li>
+					  <li><a href="hd-install-ja.htm#first-hd-boot">始めての起動</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-ja.htm#fromiso">fromisoで起動&#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-ja.htm#fromiso">fromisoで起動 - 概説</a></li>
+					  <li><a href="hd-install-opts-ja.htm#grub2-fromiso">GRUB2からfromisoで起動</a></li>
+					  <li><a href="hd-install-opts-ja.htm#fromiso-persist">fromisoと持続モード</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-ja.htm#usb-hd">USBドライブへのインストール &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-ja.htm#usb-hd">USB-HDへのインストール -aptosid 独自の- aptosid-on-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-ja.htm#raw-usb">USB/SSDドライブに他のLinuxや MS Windows、Mac OS X システムから aptosid を書き込む</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-ja.htm#install-crypt">暗号化パーティションへのインストール - cryptroot</a></li>
+		  <li><a href="nbdboot-ja.htm#nbd1">aptosidをネットワークから起動</a></li>
+		  <li><a href="hd-install-vmopts-ja.htm#vmopts">仮想マシンへのインストール</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-ja.htm">グラフィックカード、モニター、XOrgその他のドライバ</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-ja.htm#mon-res">解像度とモニター &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-ja.htm#mon-res">解像度とモニター</a></li>
+					  <li><a href="hw-dev-mon-ja.htm#xrandr">デュアルモニターとxrandr</a></li>
+					  <li><a href="hw-dev-mon-ja.htm#mon-binary">デュアルモニター（バイナリードライバ）</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-ja.htm#foss-xorg">GPU drivers &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-ja.htm#ati-3d">AMD/ATI 3D ドライバ</a></li>
+					  <li><a href="gpu-ja.htm#intel">Intel 2D/3D ドライバ</a></li>
+					  <li><a href="gpu-ja.htm#nvidia">Nvidia 3D ドライバ</a></li>
+					  <li><a href="gpu-ja.htm#foss-xorg">Xorg のオープンソースドライバ</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-ja.htm#fw-detect">Firmwareの探知 - non-free </a></li>
+			  <li><a href="nf-firm-ja.htm#non-free-firmware">non-free をソースリスとに加える</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-ja.htm">ウィンドウマネージャ</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-ja.htm">KDE and XFCE ウィンドウマネージャ &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-ja.htm#xfce-notes">Xfce ノート</a></li>
+					    <li><a href="wm-dm-ja.htm#install-add">便利な KDE 追加アプリ</a></li>
+					    <li><a href="wm-dm-ja.htm#desk-freeze">デスクトップが凍結したら</a></li>
+					    <li><a href="wm-dm-ja.htm#kde-login">KDEにログインできない時</a></li>
+					    <li><a href="wm-dm-ja.htm#ch-th">テーマの変更</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-ja.htm#dm">Installing additional Display Managers</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-ja.htm">インターネット,WiFi,LAN</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-ja.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-ja.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-ja.htm#serv-ftp">FTPクライアント</a></li>
+					    <li><a href="lamp-apache-ja.htm#serv-sec">Webサーバーのセキュリティ設定</a></li>
+					    <li><a href="lamp-apache-ja.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-ja.htm#serv-mysql">MySQL の設定</a></li>
+					    <li><a href="lamp-ppp-ja.htm#serv-php">Apache2のためのPHPサポート</a></li>
+					    <li><a href="ntp-server-ja.htm#ntp-server">タイムサーバーの設定</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-ja.htm#tor">ファイアーウォールとプライバシー &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-ja.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-ja.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-ja.htm#firewalls">ファイアーウォール</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-ja.htm#ssh-x">SSH と Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-ja.htm#setup">Samba サーバーの設定</a></li>
+						  <li><a href="samba-ja.htm#configure">SAMBA の設定(Windowsとの共有)</a></li>
+						  <li><a href="ssh-ja.htm#ssh-fs">SSH Remote Mounting</a></li>
+						  <li><a href="ssh-ja.htm#ssh-x">SSHのネットワークを通してXウィンドウズのアプリケーションを使う</a></li>
+						  <li><a href="ssh-ja.htm#ssh-f">KonquerorでGUIのSSH</a></li>
+						  <li><a href="ssh-ja.htm#ssh-w">Windows-PCからSSHでXフォワーディング</a></li>
+						  <li><a href="ssh-ja.htm#ssh">SSH とセキュリティ</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-ja.htm#netcardconfig">WIFI &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-ja.htm#netcardconfig">Ceni を使ってネットワークに接続</a></li>
+						    <li><a href="inet-wpagui-ja.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-ja.htm#net-set1">WiFi - WiFi ローミング設定</a></li>
+						    <li><a href="inet-wpa-ja.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-ja.htm#hotswitch">WiFi とケーブル接続のホットスイッチ</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-ja.htm#netcardconfig">ケーブル接続のインターネット設定&#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-ja.htm#dial-mod">56k モデム</a></li>
+						    <li><a href="inet-ceni-ja.htm#netcardconfig">Ceni を使ってネットワークに接続</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-ja.htm#fw-detect">Firmwareの探知 - non-free </a></li>
+		<li><a href="nf-firm-ja.htm#non-free-firmware">non-free をソースリスとに加える</a></li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-ja.htm">パッケージマネージャとdist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-ja.htm#apt-cook">APT クックブックとソースリスト &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-ja.htm#apt-cook">APTガイド - クックブックとソースリスト</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#apt-install">新しくパッケージをインストールする</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#apt-delete">パッケージの除去</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#apt-downgrade">ダウングレードまたはパッケージの保持</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#apt-cache">apt-cacheでパッケージ検索</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#gui-pacsea">GUI パッケージ検索</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-ja.htm#kern-upgrade">カーネルのアップグレード &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-ja.htm#kern-remove">使わないカーネルの除去</a></li>
+					    <li><a href="sys-admin-kern-upg-ja.htm#kern-upgrade"> カーネルのアップグレード</a></li>
+					    <li><a href="sys-admin-kern-upg-ja.htm#dmakms">カーネルモジュールをdmakmsでダイナミックにインストールする</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-ja.htm#apt-upgrade">インストールされたシステムのアップグレード -  dist-upgrade - 概説 &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-ja.htm#live-cd-upgrade">ライブISOアップデート</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-ja.htm#approx">同一LAN上の複数のPCをdist-upgradeする</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#apt-upgrade">インストールされたシステムのアップグレード - dist-upgrade - 概説</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#du-st">インストールされたシステムのアップグレード - dist-upgrade - ステップ</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-ja.htm">システム管理</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-ja.htm#bois-prep">FreeDOSを使ってBIOSをアップグレード</a></li>
+		<li><a href="vir-rkits-ja.htm#virus-rkits">ウイルスとRootkitスキャナー</a></li>
+		<li><a href="hd-install-ja.htm#adduser">新しいユーザーとパスワード &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-ja.htm#adduser">新しいユーザーを加える</a></li>
+					    <li><a href="sys-admin-gen-ja.htm#pw-lost">root パスワードを忘れたら, 新パスワードの設定</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-ja.htm#start-services">サービスとランレベル &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-ja.htm#start-services">サービスのスタート/ストップ</a></li>
+					    <li><a href="sys-admin-gen-ja.htm#pkill">Killing a service or process</a></li>
+					    <li><a href="sys-admin-gen-ja.htm#init">aptosid のランレベル - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-ja.htm#rsync">システムのバックアップ &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-ja.htm#rdiff">rdiffを使ってバックアップ</a></li>
+					    <li><a href="sys-admin-rsync-ja.htm#rsync">rsyncを使ってバックアップ</a></li>
+					    <li><a href="home-ja.htm#home-bu">/home を移動する</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-ja.htm#fonts">CUPS、フォントと音声 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-ja.htm#fonts">フォント</a></li>
+					     <li><a href="sys-admin-gen-ja.htm#cups">CUPS - 印刷システム</a></li>
+					     <li><a href="sys-admin-gen-ja.htm#sound">サウンドミキサー</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-ja.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-ja.htm#chroot">Grub2 - Grubをchrootでリカバーする</a></li>
+					    <li><a href="sys-admin-grub2-ja.htm#mbr-over-grub2">Grub2 - MBRが上書きされてしまったら</a></li>
+					    <li><a href="sys-admin-grub2-ja.htm#multi-os">Grub2 - デュアルまたはマルチブーティング</a></li>
+					    <li><a href="sys-admin-grub2-ja.htm#grub1-grub2">Grub2 - Grub1からアップデートするには</a></li>
+					    <li><a href="sys-admin-grub2-ja.htm#grub2">Grub2 - 概説</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Sponsored by webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid is proudly hosted by webtropia.com" alt="aptosid is proudly hosted by webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+	<div class="divider" id="nbd1">
+			<!--- ####
+			<h2 id="top-header">Booting aptosid over a network (network block device - nbd)</h2>
+			#### -->
+			<h2 id="top-header">aptosid をネットワークから起動する (NBD - Network Block Device)</h2>
+
+							<!--- ####
+							<p><span class="highlight-2">Warning: dnsmasq includes a dhcp server which can conflict with an existing dhcp server on your network (your router may provide one). </span>   <span class="highlight-3">The safest option is to only use one dhcp server on any network. This means you should disable any other dhcp servers on the same network. The dnsmasq proxy options outlined below should be able to co-exist with another dhcp server on the same network, however please do not try this unless you administer the network and are ready to deal with any unforeseen consequences which might crop up.</span></p>
+							#### -->
+						<p><span class="highlight-2">注意: dnsmasq は新しい DHCPサーバーの設定をするため、今使用中のネットワーク上にあるDHCPサーバーと衝突することがあります。(使用中のルーターがDHCPとしても機能するように設定してあるかもしれません)。</span>   <span class="highlight-3">ローカルネットワークにはDHCPサーバーが一つだけ機能しているのが最も安全です。つまり、同じネットワーク上のDHCPサーバーを無効にしておくべきです。このページのdnsmasq プロキシーオプションは同じネットワーク上の他のDHCPサーバーとも共存できるはずではありますが、そのためなにか予想外の問題が起こってもにネットワークの管理者として対処していける自信がないかぎり、軽い気持ちで試さないほうが良いでしょう。</span></p>
+
+									<!--- ####
+			      <h4>The basics</h4>
+									#### -->
+			      <h4>基本</h4>
+							<!--- ####
+							<p>Network booting first requires that you have a machine capable of network booting, which can be connected via a network you run to a machine which you can setup to offer the network booting services. </p>
+							#### -->
+							<p>ネットワークからの起動はまずネットワーク起動ができるPCを持っていること、そのPCからネットワーク起動サービスを提供できるあなたが管理するコンピュータに接続できることが条件です。</p>
+
+							<!--- ####
+							<p>You do not want to do this on your workplace network, or any other network you do not control, unless you run that network or get permission and guidance from those who do. If you are co-operating in a larger network you can investigate all the options to dnsmasq, such as limiting the interfaces it listens on or the clients it will respond to, to restrict the impact of your setup on the network.</p>
+							#### -->
+							<p>つまりこれは職場のネットワークなど、あなたが管理者ではないネットワークで試すことではありません。自分のネットワークだったり、管理者から許可またはガイダンスを受けられる場合は例外といえます。 大きなネットワークを共同で管理している場合は、ネットワーク設定が他に及ぼす影響を限定するために、dnsmsq の提供するオプションすべてを調査するべきでしょう。</p>
+
+									<!--- ####
+			      <h4>The prerequisites</h4>
+									#### -->
+			      <h4>必要条件</h4>
+							<!--- ####
+							<p>A 2009-04 (or newer) aptosid iso booted up to use as the network boot server. The instructions should be basically the same with any up to date aptosid or debian sid machine and should provide all the clues you need to use on other systems. Linux is required to serve nbd devices.</p>
+							#### -->
+							<p>ネットワーク起動サーバーとして使う<!--A 2009-04 (or newer)--> aptosid のISO イメージ。設定の方法は最新の aptosid または Debian sid システムと基本的に同じで、他のシステムを管理するときの知識がここでも役に立つでしょう。NBD デバイスを提供するには Linux が必要です。</p>
+
+							<p>起動の初期段階からすべてにわたって dnsmasq が提供するサービスが使われます。ここでも他のソフトウェアを使うときの知識が役に立つでしょう。</p>
+
+				<!--- ####
+				<h6>Installation</h6>
+				#### -->
+				<h6>インストール</h6>
+<pre>
+apt-get install nbd-server dnsmasq
+</pre>
+
+				<!--- ####
+				<h3>Setting up the nbd-server</h3>
+				#### -->
+				<h3>NBD サーバーの設定</h3>
+
+							<!--- ####
+							<p> Presuming the iso can be found at <span class="highlight-3">/dev/scd0</span>,  (which it probably can be if you booted from cd, otherwise substitute in any suitable file or device), then you can setup a nbd-server conf file called <span class="highlight-3">nbd-aptosid.conf</span> with a section called aptosid-iso to export the cd by running the following:</p>
+							#### -->
+							<p>Presuming the iso can be found at <span class="highlight-3">/dev/scd0</span>,  (which it probably can be if you booted from cd, otherwise substitute in any suitable file or device), then you can setup a nbd-server conf file called <span class="highlight-3">nbd-aptosid.conf</span> with a section called aptosid-iso to export the cd by running the following:</p>
+<pre>
+echo '[generic]' &gt; nbd-aptosid.conf
+nbd-server 0.0.0.0:10809 /dev/scd0 -o aptosid-iso &gt;&gt; nbd-aptosid.conf
+</pre>
+							<!--- ####
+							<p>The generic header is always required.   If you want to setup the nbd-server to work automatically on a real system you will probably want to setup /etc/nbd-server.conf instead. There are a lot more options to nbd-server than shown here, see <span class="highlight-3">man nbd-server.</span></p>
+							#### -->
+							<p>[generic] というヘッダーは常に必要です。一時的な設定でなく、起動時に自動的にNDBサーバーが設定されるようにするには代わりに /etc/nbd-server.conf を作ります。NBDサーバーの設定にはまだまだいろいろなオプションがあります。<span class="highlight-3">man nbd-server</span> を参照</p>
+
+							<!--- ####
+							<p>To actually start the server now, as a normal user and without bothering setting up or copying the file to <span class="highlight-3">/etc/nbd-server.conf</span>, you can just run:</p>
+							#### -->
+							<p>設定ファイルを<span class="highlight-3">/etc/nbd-server.conf</span> にコピーすることなくこのサーバーを実際にスタートするのは単に次のコマンドを実行するだけです:</p>
+<pre>
+nbd-server -C nbd-aptosid.conf
+</pre>
+							<!--- ####
+							<p>The target of the nbd-server does not have to be an iso or a cd/dvd/usb stick, it just has to contain a suitable filesystem image.</p>
+							#### -->
+							<p>NBDサーバーのターゲットは必ずしも ISO イメージや CD/DVD/フラッシュメモリでなくても構いません。起動に必要なファイルシステムを含むことが必要なだけです。</p>
+
+				  <h4>dnsmasq</h4>
+							<!--- ####
+							<p>The following example assumes you are running on a simple network where your machine has one ethernet connection which is setup by dhcp from another machine and which the network boot clients can use to setup their interfaces by dhcp.</p>
+							#### -->
+							<p>以下の例ではシンプルなネットワーク上のPCに一つだけ ethernet のLAN接続があり、他のコンピュータからの DHCP によって設定され、ネットワーク起動クライアントとして DHCP によってインターフェイス設定できる状況を想定しています。</p>
+
+							<!--- ####
+							<p>The main relevant options for dnsmasq to network boot aptosid are to setup a path for the tftp server files and a file for it to boot from there. </p>
+							#### -->
+							<p>dnsmasq を使って aptosid をネット起動するのに一番肝心なオプションは tftp サーバーファイルへのパス設定とそこから起動するためのファイルの設定です。</p>
+
+							<!--- ####
+							<p>Create a <span class="highlight-3">tftp</span> directory for booting in <span class="highlight-3">/home</span> (you can create it where you want if you prefer another place). Thus the path becomes <span class="highlight-3">/home/tftp</span>.</p>
+							#### -->
+							<p>起動のための <span class="highlight-3">tftp</span> ディレクトリを <span class="highlight-3">/home</span> に作成します。(ほかの場所にしたかったらどこでも構いません)。この場合パスは <span class="highlight-3">/home/tftp</span> になります。</p>
+
+							<!--- ####
+							<p>Next create a file called <span class="highlight-3">pxe-aptosid.conf</span> and paste in the following:</p>
+							#### -->
+							<p><span class="highlight-3">pxe-aptosid.conf</span> というファイルを作り次の内容を張り付けます:</p>
+<pre>
+dhcp-range=0.0.0.0,proxy
+pxe-service=x86PC, &quot;boot linux&quot;, pxelinux
+enable-tftp
+tftp-root=/home/tftp
+tftp-secure
+</pre>
+							<!--- ####
+							<p>When using the dhcp proxy you need to provide a pxe menu with pxelinux as the only entry which will therefore  start it automatically.  This is what the lone pxe-service item is above.</p>
+							#### -->
+							<p>DHCP プロキシーを使うときは pxeメニューを 唯一 pxelinux のエントリーだけで、そのためそこから自動的にスターとするように設定します。これが上のファイルの pxe-service の項目です。</p>
+
+								<!--- ####
+ 							<p>As root, move the newly created <span class="highlight-3">pxe-aptosid.conf</span> file to <span class="highlight-3">/etc/dnsmasq.d/</span>:</p>
+								#### -->
+ 							<p>root として今作成したばかりの <span class="highlight-3">pxe-aptosid.conf</span> ファイルを <span class="highlight-3">/etc/dnsmasq.d/</span> に移動します:</p>
+<pre>
+sux
+mv pxe-aptosid.conf /etc/dnsmasq.d/
+</pre>
+
+							<!--- ####
+							<p>Note: For a network (e.g. 192.168.0.*) with no other dhcp server you could swap the first two lines for:</p>
+							#### -->
+							<p>ノート: 他に DHCP サーバーのないネットワークでは、最初の２行を (ここでは例として 192.168.0.* のアドレスとして) 次のように換えることもできます:</p>
+<pre>
+dhcp-range=192.168.0.100,192.168.0.199,1h
+dhcp-boot=pxelinux.0
+</pre>
+
+							<!--- ####
+							<p>To give out ip addresses starting with 192.168.0.100 and ending with 192.168.0.199 with a lease time of an hour, and to provide the filename to just run pxelinux.0 as part of the dhcp request (when using the proxy you instead provide a pxe menu with only pxelinux as an entry which will therefore automatically start it). This probably won’t setup your network as you wish though unless your dnsmasq server should also be your dns server and gateway for the boot clients.</p>
+							#### -->
+							<p>これで 192.168.0.100 から 192.168.0.199 までのIPアドレスを一時間の制限で割り当て、pxelunux.0 として実行するファイル名を DHCP リクエストの一部として提供し、(プロキシーの設定では pxelinux を pxe メニューの唯一のエントリーと指定することで自動スタートする設定を使っています)。多分これでは dnsmasq サーバーが同時に起動クライアントの DNS サーバーであり、またゲートウェイでもある場合をのぞき、望み通りのネットワーク設定にはならないでしょう。</p>
+
+							<!--- ####
+							<p>To enable the new file you will need to uncomment the <span class="highlight-3">conf-dir=/etc/dnsmasq.d</span> setting at the bottom of <span class="highlight-3">/etc/dnsmasq.conf</span> and then restart dnsmasq.</p>
+							#### -->
+							<p>新しく作成されたこの設定ファイルを有効にするには <span class="highlight-3">/etc/dnsmasq.conf</span> の一番下の方の <span class="highlight-3">conf-dir=/etc/dnsmasq.d</span> のコメント行の行頭の # を消してファイルを保存し、dnsmasq を再スタートします。</p>
+
+							<!--- ####
+							<p>dnsmasq has a lot of options and can act as a dns server as well as a dhcp, pxe and tftp server. The above is simply a minimal outline of the pieces needed to use pxelinux.</p>
+							#### -->
+							<p>dnsmasq にはたくさんのオプションがあり DHCP、PXE、TFTP サーバーの他に DNS サーバーとしても設定することができます。上にあげた例は　pxelinux を使うのに必要な最低限のあらましを述べたにすぎません。</p>
+
+				  <h4>tftp</h4>
+							<!--- ####
+							<p>tftp is the network equivalent of the boot directory. Using the continuing example of  the <span class="highlight-3">/home/tftp </span> directory you need to populate it. If the cdrom is mounted on <span class="highlight-3">/fll/scd0</span>:</p>
+							#### -->
+							<p>tftp はネット起動にとって boot ディレクトリに相当するものです。先ほどからの <span class="highlight-3">/home/tftp </span> の例の続きとして、必要なファイルをこのディレクトリに揃えます。CDROMが /fll/scd0<span class="highlight-3">/fll/scd0</span> にマウントされているとして:</p>
+<pre>
+cp /fll/scd0/boot/isolinux/* /home/tftp
+mkdir /home/tftp/pxelinux.cfg
+mv /home/tftp/isolinux.cfg /home/tftp/pxelinux.cfg/default
+mkdir /home/tftp/boot
+cp /fll/scd0/boot/vmlin* /fll/scd0/boot/initr* /fll/scd0/boot/memtest* /home/tftp/boot/
+cp /usr/lib/syslinux/pxelinux.0 /home/tftp/
+# required for the tftp-secure option to dnsmasq
+chown -R dnsmasq.dnsmasq /home/tftp/*
+</pre>
+
+							<!--- ####
+							<p>Now you can edit boot options to your satisfaction in <span class="highlight-3">/home/tftp</span> on both the <span class="highlight-3">pxelinux.cfg/default</span> and the <span class="highlight-3">gfxboot.cfg</span> file.
+
+							<p>In particular it is suggested that under the <span class="highlight-3">[install]</span> section you set the <span class="highlight-3">install= </span>to <span class="highlight-3">install=nbd</span>, <span class="highlight-3">install.nbd.server</span> to the server's IP on the network and <span class="highlight-3">install.nbd.port</span> to the name of the nbd export section, for example. aptosid-iso (as nbd exports are named now rather then simply using port numbers).</p>
+							#### -->
+							<p>さあ、これで <span class="highlight-3">/home/tftp</span> ディレクトリの <span class="highlight-3">pxelinux.cfg/default</span> と <span class="highlight-3">gfxboot.cfg</span>
+
+							<p>In particular it is suggested that under the <span class="highlight-3">[install]</span> section you set the <span class="highlight-3">install= </span>to <span class="highlight-3">install=nbd</span>, <span class="highlight-3">install.nbd.server</span> to the server's IP on the network and <span class="highlight-3">install.nbd.port</span> to the name of the nbd export section, for example. aptosid-iso (as nbd exports are named now rather then simply using port numbers).</p>
+
+							<!--- ####
+							<p>Alternatively you could disable the F3 menu completely and edit the kernel command lines to use something like:</p>
+							#### -->
+							<p>別の方法として、F3 メニューを無効にしてカーネルのコマンドラインを次のようなものに変えることもできます:</p>
+<pre>
+fromhd=/dev/nbd0 root=/dev/nbd0 nbdroot=192.168.1.23,aptosid-iso nonetwork
+</pre>
+
+
+					<!--- ####
+					<h6>toram boot code</h6>
+					#### -->
+					<h6>起動オプション toram </h6>
+							<!--- ####
+							<p>If you add toram to the boot options, machines with enough ram will release the server as soon as they copy the file and machines without sufficient ram will carry on and boot normally. At least 1 gig of ram, (ideally 2 gig or more), is required for toram.</p>
+							#### -->
+							<p>起動オプションに toram を加えた場合、十分なメモリーがある機械ではファイルをコピーたらすぐにサーバーとの接続を解放しますが、メモリの少ない機械では接続したままでそのまま進行します。実際に toram オプションを有効に使うには最低 1Gb, 理想としては 2Gb 以上の RAM が必要です。</p>
+
+										<!--- ####
+				      <h4>Network booting</h4>
+										#### -->
+				      <h4> ネットワークからの起動</h4>
+
+							<!--- ####
+							<p>Ensure that the client PC's BIOS is set to use <span class="highlight-3">Boot from Network</span>. </p>
+							#### -->
+							<p>クライアントPC の BIOS設定で <span class="highlight-3">Boot from Network</span> (ネットワークからの起動)が有効になっていることを確認します。</p>
+
+							<!--- ####
+							<p>As long as your bios supports booting from the network, the machine is connected to a network with your server and the aptosid kernel and initrd.img support your network card, you should be able to boot aptosid from the network. </p>
+							#### -->
+							<p>BIOS がネットワークからの起動を可能に設定してあり、コンピュータがサーバーのあるネットワークに接続してあり、aptosid カーネルとinitrd.img がクライアントPCのネットワークカードをサポートしている限り、aptosid をネットワークから起動することができるはずです。</p>
+
+							<!--- ####
+							<p>Some network cards may require non-free firmware which will require rebuilding the initrd image to include the firmware.</p>
+							#### -->
+							<p>non-free のファームウェアが必要なネットワークカードを使うには、このファームウェアを含むように initrd.img を改めて作成する必要があります。</p>
+
+
+	</div>
+	<div id="rev">Page last revised 11/06/2011 1305 UTC </div>
+
+</div>
+</body>
+</html>

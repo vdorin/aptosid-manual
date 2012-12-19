@@ -1,0 +1,635 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+	<title>aptosid Manuals - GPU Drivers</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+	<style type="text/css" media="all">@import url("../lib/css-js/fw-ja.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision by muchan  27/Feb/2011 2331 UTC -->
+<!--htdig_noindex--><div id="menu"><!-- menu starts here ja lang maintained by muchan-->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="To aptosid.com, Forum and Wiki" alt="logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-ja.htm#search-on"><img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" /> サーチ Online Offline</a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Choose another language CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="lang-switch CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-ja.htm">aptosid OS マニュアル</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-ja.htm#welcome-gen">aptosid OS マニュアル &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-ja.htm#cred-team">貢献者</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-ja.htm#how-to">このマニュアルの使い方 &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-ja.htm#how-to">このマニュアルの使い方</a></li>
+					  <li><a href="welcome-ja.htm#table-contents">内容一覧</a></li>
+					</ul>
+					</li>
+		<li><a href="help-ja.htm#help-gen">困った時は... &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-ja.htm#help-gen">困った時は...</a></li>
+					  <li><a href="help-ja.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-ja.htm#welcome-quick">aptosid クイックスタートガイド</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-ja.htm">ISO の内容、リリース、ダウンロードミラーとCDの焼き付け</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-ja.htm#cd-content">ISO の内容と最小限必要な仕様 &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-ja.htm#rolling">リリースノート</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-ja.htm#download-aptosid">aptosidのミラー, ダウンロードとCD の作成 &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-ja.htm#md5">md5 Checksum</a></li>
+					  <li><a href="cd-dl-burning-ja.htm#burn-nero">WindowsでISOを焼くには</a></li>
+					  <li><a href="cd-dl-burning-ja.htm#burn-linux">LinuxでISOを焼くには</a></li>
+					  <li><a href="cd-no-gui-burn-ja.htm#burning-no-gui">burniso script</a></li>
+					  <li><a href="cd-no-gui-burn-ja.htm#burn-no-gui-gen">GUIなしでISOを焼くには</a></li>
+					  <li><a href="cd-dl-burning-ja.htm#download-aptosid">aptosid ダウンロードミラー</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-ja.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-ja.htm#rootpw">aptosid-LiveISOのRootパスワード</a></li>
+				<li><a href="live-mode-ja.htm#live-cd-installsoft">Live-ISO作動中にソフトをインストール</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-ja.htm">ターミナル/コンソール</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-ja.htm#term-kon"> ターミナル/コンソール&#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-ja.htm#term-kon"> ターミナル/コンソール</a></li>
+					  <li><a href="term-konsole-ja.htm#colours"> Coloured terminal prompts</a></li>
+					  <li><a href="term-konsole-ja.htm#cli-help">コマンドラインヘルプ</a></li>
+					  <li><a href="help-ja.htm#init3-tools">テキストモード(tty)で便利な道具 - init 3</a></li>
+					  <li><a href="term-konsole-ja.htm#term-cmds">Linuxターミナルのコマンド一覧</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-ja.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-ja.htm">起動コード</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-ja.htm#cheatcodes">aptosidだけのLive-ISO用起動コード</a></li>
+				<li><a href="cheatcodes-ja.htm#cheatcodes-linux">Linux一般の起動コード</a></li>
+				<li><a href="cheatcodes-vga-ja.htm#vga">VGA コード</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-ja.htm">Partitioning the Hard Drive - Traditional, GPT and LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-ja.htm#hd-ntfs3g">ntfs-3gを使ってNTFSパーティションへの書き込み</a></li>
+			<li><a href="part-lvm-ja.htm#part-lvm">LVM(Logical Volume Manager)を使うパーティション</a></li>
+			<li><a href="part-gparted-ja.htm#partition"> GUI でパーティショニング&#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-ja.htm#partition">GParted / KDE Partition Manager を使ってパーティショニング</a></li>
+					  <li><a href="part-gparted-ja.htm#ntfs"> GParted / KDE Partition Manager を使って NTFS のサイズ変更</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-ja.htm#partition">コマンドラインでパーティショニング</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-ja.htm#partition"> cfdisk を使ってパーティショニング</a></li>
+					    <li><a href="part-cfdisk-ja.htm#formating">cfdiskでパーティション後のフォーマッティング</a></li>
+					    <li><a href="part-gdisk-ja.htm#gdisk-6">Formatting after partitioning with gdisk</a></li>
+					    <li><a href="part-gdiskja.htm#gdisk-1">GPT Partitioning with gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-ja.htm#part-example">パーティショニングの基本 &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-ja.htm#part-example">パーティションサイズの例</a></li>
+					  <li><a href="part-uuid-ja.htm#uuid">UUID, Rebuilding fstab and creating new mount points</a></li>
+					  <li><a href="part-cfdisk-ja.htm#disknames">ディスクの名前について</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-ja.htm">インストール・オプション - HD, USB, VM, Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-ja.htm#Inst-prep">インストールの準備 &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-ja.htm#Inst-prep">インストールの準備</a></li>
+					  <li><a href="hd-install-ja.htm#Installation">ハードディスクへのインストール</a></li>
+					  <li><a href="hd-install-ja.htm#first-hd-boot">始めての起動</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-ja.htm#fromiso">fromisoで起動&#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-ja.htm#fromiso">fromisoで起動 - 概説</a></li>
+					  <li><a href="hd-install-opts-ja.htm#grub2-fromiso">GRUB2からfromisoで起動</a></li>
+					  <li><a href="hd-install-opts-ja.htm#fromiso-persist">fromisoと持続モード</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-ja.htm#usb-hd">USBドライブへのインストール &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-ja.htm#usb-hd">USB-HDへのインストール -aptosid 独自の- aptosid-on-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-ja.htm#raw-usb">USB/SSDドライブに他のLinuxや MS Windows、Mac OS X システムから aptosid を書き込む</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-ja.htm#install-crypt">暗号化パーティションへのインストール - cryptroot</a></li>
+		  <li><a href="nbdboot-ja.htm#nbd1">aptosidをネットワークから起動</a></li>
+		  <li><a href="hd-install-vmopts-ja.htm#vmopts">仮想マシンへのインストール</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-ja.htm">グラフィックカード、モニター、XOrgその他のドライバ</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-ja.htm#mon-res">解像度とモニター &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-ja.htm#mon-res">解像度とモニター</a></li>
+					  <li><a href="hw-dev-mon-ja.htm#xrandr">デュアルモニターとxrandr</a></li>
+					  <li><a href="hw-dev-mon-ja.htm#mon-binary">デュアルモニター（バイナリードライバ）</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-ja.htm#foss-xorg">GPU drivers &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-ja.htm#ati-3d">AMD/ATI 3D ドライバ</a></li>
+					  <li><a href="gpu-ja.htm#intel">Intel 2D/3D ドライバ</a></li>
+					  <li><a href="gpu-ja.htm#nvidia">Nvidia 3D ドライバ</a></li>
+					  <li><a href="gpu-ja.htm#foss-xorg">Xorg のオープンソースドライバ</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-ja.htm#fw-detect">Firmwareの探知 - non-free </a></li>
+			  <li><a href="nf-firm-ja.htm#non-free-firmware">non-free をソースリスとに加える</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-ja.htm">ウィンドウマネージャ</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-ja.htm">KDE and XFCE ウィンドウマネージャ &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-ja.htm#xfce-notes">Xfce ノート</a></li>
+					    <li><a href="wm-dm-ja.htm#install-add">便利な KDE 追加アプリ</a></li>
+					    <li><a href="wm-dm-ja.htm#desk-freeze">デスクトップが凍結したら</a></li>
+					    <li><a href="wm-dm-ja.htm#kde-login">KDEにログインできない時</a></li>
+					    <li><a href="wm-dm-ja.htm#ch-th">テーマの変更</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-ja.htm#dm">Installing additional Display Managers</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-ja.htm">インターネット,WiFi,LAN</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-ja.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-ja.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-ja.htm#serv-ftp">FTPクライアント</a></li>
+					    <li><a href="lamp-apache-ja.htm#serv-sec">Webサーバーのセキュリティ設定</a></li>
+					    <li><a href="lamp-apache-ja.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-ja.htm#serv-mysql">MySQL の設定</a></li>
+					    <li><a href="lamp-ppp-ja.htm#serv-php">Apache2のためのPHPサポート</a></li>
+					    <li><a href="ntp-server-ja.htm#ntp-server">タイムサーバーの設定</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-ja.htm#tor">ファイアーウォールとプライバシー &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-ja.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-ja.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-ja.htm#firewalls">ファイアーウォール</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-ja.htm#ssh-x">SSH と Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-ja.htm#setup">Samba サーバーの設定</a></li>
+						  <li><a href="samba-ja.htm#configure">SAMBA の設定(Windowsとの共有)</a></li>
+						  <li><a href="ssh-ja.htm#ssh-fs">SSH Remote Mounting</a></li>
+						  <li><a href="ssh-ja.htm#ssh-x">SSHのネットワークを通してXウィンドウズのアプリケーションを使う</a></li>
+						  <li><a href="ssh-ja.htm#ssh-f">KonquerorでGUIのSSH</a></li>
+						  <li><a href="ssh-ja.htm#ssh-w">Windows-PCからSSHでXフォワーディング</a></li>
+						  <li><a href="ssh-ja.htm#ssh">SSH とセキュリティ</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-ja.htm#netcardconfig">WIFI &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-ja.htm#netcardconfig">Ceni を使ってネットワークに接続</a></li>
+						    <li><a href="inet-wpagui-ja.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-ja.htm#net-set1">WiFi - WiFi ローミング設定</a></li>
+						    <li><a href="inet-wpa-ja.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-ja.htm#hotswitch">WiFi とケーブル接続のホットスイッチ</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-ja.htm#netcardconfig">ケーブル接続のインターネット設定&#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-ja.htm#dial-mod">56k モデム</a></li>
+						    <li><a href="inet-ceni-ja.htm#netcardconfig">Ceni を使ってネットワークに接続</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-ja.htm#fw-detect">Firmwareの探知 - non-free </a></li>
+		<li><a href="nf-firm-ja.htm#non-free-firmware">non-free をソースリスとに加える</a></li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-ja.htm">パッケージマネージャとdist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-ja.htm#apt-cook">APT クックブックとソースリスト &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-ja.htm#apt-cook">APTガイド - クックブックとソースリスト</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#apt-install">新しくパッケージをインストールする</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#apt-delete">パッケージの除去</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#apt-downgrade">ダウングレードまたはパッケージの保持</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#apt-cache">apt-cacheでパッケージ検索</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#gui-pacsea">GUI パッケージ検索</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-ja.htm#kern-upgrade">カーネルのアップグレード &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-ja.htm#kern-remove">使わないカーネルの除去</a></li>
+					    <li><a href="sys-admin-kern-upg-ja.htm#kern-upgrade"> カーネルのアップグレード</a></li>
+					    <li><a href="sys-admin-kern-upg-ja.htm#dmakms">カーネルモジュールをdmakmsでダイナミックにインストールする</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-ja.htm#apt-upgrade">インストールされたシステムのアップグレード -  dist-upgrade - 概説 &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-ja.htm#live-cd-upgrade">ライブISOアップデート</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-ja.htm#approx">同一LAN上の複数のPCをdist-upgradeする</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#apt-upgrade">インストールされたシステムのアップグレード - dist-upgrade - 概説</a></li>
+					    <li><a href="sys-admin-apt-ja.htm#du-st">インストールされたシステムのアップグレード - dist-upgrade - ステップ</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-ja.htm">システム管理</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-ja.htm#bois-prep">FreeDOSを使ってBIOSをアップグレード</a></li>
+		<li><a href="vir-rkits-ja.htm#virus-rkits">ウイルスとRootkitスキャナー</a></li>
+		<li><a href="hd-install-ja.htm#adduser">新しいユーザーとパスワード &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-ja.htm#adduser">新しいユーザーを加える</a></li>
+					    <li><a href="sys-admin-gen-ja.htm#pw-lost">root パスワードを忘れたら, 新パスワードの設定</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-ja.htm#start-services">サービスとランレベル &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-ja.htm#start-services">サービスのスタート/ストップ</a></li>
+					    <li><a href="sys-admin-gen-ja.htm#pkill">Killing a service or process</a></li>
+					    <li><a href="sys-admin-gen-ja.htm#init">aptosid のランレベル - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-ja.htm#rsync">システムのバックアップ &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-ja.htm#rdiff">rdiffを使ってバックアップ</a></li>
+					    <li><a href="sys-admin-rsync-ja.htm#rsync">rsyncを使ってバックアップ</a></li>
+					    <li><a href="home-ja.htm#home-bu">/home を移動する</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-ja.htm#fonts">CUPS、フォントと音声 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-ja.htm#fonts">フォント</a></li>
+					     <li><a href="sys-admin-gen-ja.htm#cups">CUPS - 印刷システム</a></li>
+					     <li><a href="sys-admin-gen-ja.htm#sound">サウンドミキサー</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-ja.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-ja.htm#chroot">Grub2 - Grubをchrootでリカバーする</a></li>
+					    <li><a href="sys-admin-grub2-ja.htm#mbr-over-grub2">Grub2 - MBRが上書きされてしまったら</a></li>
+					    <li><a href="sys-admin-grub2-ja.htm#multi-os">Grub2 - デュアルまたはマルチブーティング</a></li>
+					    <li><a href="sys-admin-grub2-ja.htm#grub1-grub2">Grub2 - Grub1からアップデートするには</a></li>
+					    <li><a href="sys-admin-grub2-ja.htm#grub2">Grub2 - 概説</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Sponsored by webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid is proudly hosted by webtropia.com" alt="aptosid is proudly hosted by webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+	<div class="divider" id="foss-xorg">
+			<!--- ####
+			<h2>Open Source Xorg drivers for nVidia, ATI/AMD, Radeon, Intel</h2>
+			#### -->
+			<h2 id="top-header">nVidia, ATI/AMD, Radeon, Intel用のXorgのオープンソースドライバを使う</h2>
+
+							<!--- ####
+							<p>Open Source Xorg drivers for nVidia, ATI/AMD, Radeon, Intel are pre-installed with aptosid.</p>
+							#### -->
+							<p>nVidia, ATI/AMD, Radeon, Intel用のXorgのオープンソースドライバはaptosidに標準装備されています。</p>
+
+							<!--- ####
+							<p><span class="highlight-3"> Note: an xorg.conf is not generally needed for open source drivers.</span></p>
+#### -->
+							<p><span class="highlight-3"> ノート: オープンソースのドライバを使う場合一般的に xorg.conf は必要ありません。</span></p>
+
+							<!--- ####
+							<p>If you have been running proprietary drivers and wish to revert back to opensource drivers, edit <span class="highlight-3">/etc/X11/xorg.conf.d/xx-xxxx.conf</span> with an editor with root permissions. Find the section that reads SECTION DEVICE and change the display driver to read <span class="highlight-2">nouveau</span> OR <span class="highlight-2">radeon</span> OR <span class="highlight-2">intel</span> (to name but a few).</p>
+#### -->
+							<p>ATIなどの商業ドライバを使っていて、オープンソースのドライバに戻したいというときには <span class="highlight-3">/etc/X11/xorg.conf.d/xx-xxxx.conf</span> をrootとしてテキストエディタで開いて、SECTION DEVICE のセクションを探し、ディスプレイドライバの行を実際のグラフィックカードの種類に応じて <span class="highlight-2">nouveau</span> または <span class="highlight-2">radeon</span> (などなど)のように変更します。</p>
+
+							<!--- ####
+							<p>To revert to <span class="highlight-2">nouveau</span> from the Nvidia proprietary drivers refer to <a href= "http://aptosid.com/index.php?module=wikula&amp;tag=GoNvidia">http://aptosid.com/index.php?module=wikula&amp;tag=GoNvidia</a>.</p>
+							#### -->
+							<p>nVidia の商業ドライバからオープンソースの <span class="highlight-2">nouveau</span> に切り替えたいときはウィキページの <a href= "http://aptosid.com/index.php?module=wikula&amp;tag=GoNvidia">http://aptosid.com/index.php?module=wikula&amp;tag=GoNvidia</a>を参照してください。</p>
+
+
+<!--- ####
+							<p class="highlight-2">Editing xorg.conf is entirely at your own risk!!</p>
+#### -->
+							<p class="highlight-2">Xorg.conf の編集のリスクは自分の責任で</p>
+
+							<!--- ####
+							<p>More information about <a href= "http://www.x.org/wiki/IntelGraphicsDriver"> Intel</a> &nbsp; <a href= "http://www.x.org/wiki/radeon"> ATI/AMD</a> &nbsp; <a href= "http://nouveau.freedesktop.org/wiki/FeatureMatrix"> nouveau</a> &nbsp; <a href= "http://xorg.freedesktop.org"> X.Org</a></p>
+#### -->
+							<p>詳しい情報は<a href= "http://www.x.org/wiki/IntelGraphicsDriver"> Intel</a> &nbsp; <a href= "http://www.x.org/wiki/radeon"> ATI/AMD</a> &nbsp;  <a href= "http://www.x.org/wiki/RadeonFeature"> ATI/AMD Feature Matrix</a> &nbsp; <a href= "http://nouveau.freedesktop.org/wiki/FeatureMatrix"> nouveau</a> &nbsp; <a href= "http://xorg.freedesktop.org"> X.Org</a>で調べてください。</p>
+
+
+	      </div>
+	      <div class="divider" id="x2d">
+			<h2>2D video drivers</h2>
+
+							<!--<p>The drivers for the X.Org X server (see xserver-xorg for a further description) provides support in 2D for Nvidia Riva, TNT, GeForce, and Quadro cards and the ATI Mach, Rage, Radeon, and FireGL cards along with atimisc, r128, r6xx/r7xx and radeon sub-drivers. Radeon and Intel both support 2d acceleration (textured xv) for video playback.</p>-->
+
+							<p>X.OrgのXサーバー(詳しくはxserver-xorgを見てください)はNVIDIAのRiva、TNT、GeForce、QuadroのカードとATIのMach、Rage、Radeonの２Dと、atimisc、r128やradeonといったサブドライバーを併用することによりFireGL cardsの２Dをサポートしています。 Radeon と Intel はどちらもビデオのプレイバック用に2Dアクセレーション(textured xv)をサポートしています。</p>
+	      </div>
+	      <div class="divider" id="ati-3d">
+					  <h2>ATI/AMD 3D Drivers</h2>
+					  <!--- ####
+							<p>Some ATI cards also support 3D, (and KDE animations), with <span class="highlight-3">xserver-xorg-video-radeon</span>. So far chipsets up to r700 are supported.</p>
+#### -->
+							<p>ATI のカードには<span class="highlight-3">xserver-xorg-video-radeon</span>で 3D ((とKDEアニメーション)をサポートしているものもあります。今のところ r700 のチップセットまでがサポートされています。</p>
+
+									<!--- ####
+							<p>To automatically inherit newly packaged non-free firmware when they get updated for 2D and 3D video cards:</p>
+#### -->
+							<p>2D または 3D のビデオカードなど、新しくパッケージに加えられた non-free のファームウェアを自動的にインストールするには:</p>
+
+<pre>
+apt-get install firmware-linux
+</pre>
+<!--- ####
+							<p>Then reboot the computer.</p>
+#### -->
+							<p>そして PC を再起動します。</p>
+
+		</div>
+	<div class="divider" id="intel">
+							<!--- ####
+					  <h2>Intel 2D and 3D</h2>
+							#### -->
+					  <h2>Intel 用の2Dと3Dのドライバ</h2>
+							<!--- ####
+							<p>Intel drivers should work perfectly for 2D and 3D video acceleration as the drivers are included in the Intel free series.</p>
+							#### -->
+							<p>Intelはフリーシリーズとしてドライバも提供しているため、フリーの intel ドライバーで2Dと3Dのビデオアクセレーションが完全に機能するはずです。</p>
+		</div>
+	<div class="divider" id="nvidia">
+<!--- ####
+		<h2>Binary, closed source drivers for: nVidia with dmakms &amp; Xorg</h2>
+#### -->
+		<h2>nVidiaのクローズソースバイナリードライバーをdmakmsで自動インストール &amp; xorg.conf.d</h2>
+
+							<p><span class="highlight-3">You will need to add &lt;contrib non-free&gt; to your debian.list, refer to <a href="nf-firm-ja.htm#non-free-firmware">Adding non-free to sources</a></span></p>
+
+							<!--- ####
+							<p>For the most complete and accurate listing of supported nvidia GPUs please see the Supported Products List available from the <a href="http://www.nvidia.com/object/unix.html"> NVIDIA Linux Graphics Driver download page</a>.</p>
+#### -->
+							<p>実際にサポートされている nVidia のGPUの一覧表などは <a href="http://www.nvidia.com/object/unix.html"> NVIDIA Linux Graphics Driver download page</a>を見てください。</p>
+
+							<!--- ####
+							<p>You can also read <a href="http://www.nvnews.net/vbulletin/showthread.php?t=122606">nvnews</a> for other options.</p>
+#### -->
+							<p>その他のオプションについて<a href="http://www.nvnews.net/vbulletin/showthread.php?t=122606">nvnews</a> なども参考になります。</p>
+
+							<!--- ####
+							<p>New and old installs will need to ensure that the systemwide config <span class="highlight-3">/etc/X11/xorg.conf.d</span> exists and add a file to the directory called <span class="highlight-3">20-nvidia.conf</span> : </p>
+#### -->
+							<p>新しくインストールしたシステムは <span class="highlight-3">/etc/X11/xorg.conf.d</span> のディレクトリがあることを確認して、そこに <span class="highlight-3">20-nvidia.conf</span> というファイルを加えます。以前からのインストールも次のようにして最新の設定にできます </p>
+<pre>
+mkdir /etc/X11/xorg.conf.d
+touch /etc/X11/xorg.conf.d/20-nvidia.conf
+</pre>
+
+<!--- ####
+							<p>With your favourite text editor, (e.g. kwrite, kate, mousepad, mcedit, vi, vim) open the file:</p>
+#### -->
+							<p>そしてお好みのテキストエディタ(kwrite、kate、mousepad、mcedit、vi、vimなどなど) でそのファイル 20-nvidia.conf を開いて:</p>
+
+<pre>
+&lt;editor&gt; /etc/X11/xorg.conf.d/20-nvidia.conf
+</pre>
+<!--- ####
+							<p>and add the following codebox in its entirety to 20-nvidia.conf:</p>
+#### -->
+							<p>次の内容のエントリーを加えます:</p>
+<pre>
+#
+Section "Device"
+         Identifier      "Device 0"
+         Driver          "nvidia"
+EndSection
+# This is a trailing line, it is needed so that End Section is not the last line
+</pre>
+<!--- ####
+							<p>If you have more than one graphics card you will need ascertain the PCI and to include it in the 20-nvidia.conf:</p>
+#### -->
+							<p>複数のグラフィックカードが搭載されているPCでは、PCIを確認して 20-nvidia.conf に書き込む必要があります。まず:</p>
+<pre>
+lspci | grep -i vga
+</pre>
+							<p>このコマンドはおおよそ次のような行を出力します:</p>
+<pre>
+01:00.0 VGA compatible controller:
+</pre>
+							<p>上の場合、01:00.0 のBusID を'Driver' の行の下に加えます。その際シンタックスが二つめの０を削って、コロン(':')が加えられた<span class="highlight-3">PCI:x:y:z:</span> の形になることに注意してください。つまり上の例では次のようになります:</p>
+
+<pre>
+BusID		 "PCI:1:0:0"
+</pre>
+<!--- ####
+					<h4>Installing the nvidia drivers</h4>
+#### -->
+					<h4>nVidia ドライバのインストール</h4>
+					<!--- ####
+							<p><span class="highlight-3">NOTE: Use apt-cache search nvidia and apt-cache show &lt;package&gt; to ascertain the correct driver for you. There are basically 2 types of nvidia drivers, the current Debian Sid 3D drivers  and the legacy Debian Sid 3D drivers.</span></p>
+#### -->
+							<p><span class="highlight-3">ノート: apt-cache search nvidia と apt-cache show &lt;package&gt; のコマンドを実行して、どのドライバを使うべきかを確認してください。nVidia ドライバには。現行の Debian Sid 3D ドライバーと、旧式のGPU用の旧式(legacy type) Debian Sid 3D ドライバの二つのタイプがあります。</span></p>
+
+							<!--- ####
+					<h5>For current 3d nvidia drivers  &ge; GeForce 6xxx :</h5>
+#### -->
+					<h5>現行の nVidia 3D ドライバ  &ge; GeForce 6xxx :</h5>
+
+							<!--- ####
+							<p>Prepare the module:</p>
+#### -->
+							<p>まずモジュールの準備:</p>
+<pre>
+apt-get install nvidia-kernel-source nvidia-kernel-common dmakms
+</pre>
+<!--- ####
+							<p>Then activate Dynamic Module-Assistant Kernel Module Support (dmakms) for nvidia, so that the next time the Linux kernel is updated a nvidia module is prepared for it too, without manual intervention. To do that, add <span class="highlight-3">nvidia-kernel-source</span> to the <span class="highlight-3">/etc/default/dmakms </span>configuration file.</p>
+#### -->
+							<p>次にnvidiaドライバーのためのdmakms(Dynamic Module-Assistant Kernel Module Support)を有効にして、今後カーネルが更新されたときnvidiaモジュールも自動的に準備されるようにします。そのためには<span class="highlight-3">/etc/default/dmakms </span>の設定ファイルに<span class="highlight-3">nvidia-kernel-source</span>を加えます。:</p>
+
+<pre>
+echo nvidia-kernel-source >> /etc/default/dmakms
+</pre>
+
+<!--- ####
+							<p>Then:</p>
+#### -->
+							<p>それから:</p>
+<pre>
+m-a a-i nvidia-kernel-source
+</pre>
+<!--- ####
+							<p>Followed by:</p>
+#### -->
+							<p>さらに続けて:</p>
+<pre>
+apt-get install nvidia-glx
+</pre>
+							<!--- ####
+							<p>Reboot PC for installation of the module to take effect.</p>
+							#### -->
+							<p>モジュールのインストールが有効になるようPCを再起動します。</p>
+
+							<!--- ####
+							<p>When xorg updates you only need to reinstall nvidia-glx:</p>
+#### -->
+							<p>Xorg のアップデートの際には nvidia-glx パッケージを再インストールするだけです。:</p>
+<pre>
+apt-get install --reinstall nvidia-glx
+</pre>
+
+<!--- ####
+							<p>When a new Debian sid nvidia driver becomes available thru apt:</p>
+#### -->
+							<p>Debian sid に新しいバージョンの nVidia ドライバが入って、apt コマンドでインストールできるようになったら:</p>
+<pre>
+m-a a-i nvidia-kernel-source
+apt-get install --reinstall nvidia-glx
+</pre>
+<!--- ####
+						      <p>Reboot PC for installation of the module to take effect.</p>
+#### -->
+						      <p>そのあと PC を再起動するとモジュールが有効になります。</p>
+
+						      <!--- ####
+					      <h4>Naming scheme for legacy nvidia drivers in Debian</h4>
+#### -->
+					      <h4>旧式の nVidia ドライバの名前は Debian では次のように区別しています。</h4>
+						  <ul>
+						      <li>nvidia-kernel-legacy-71xx is for GeForce 2</li>
+						      <li>nvidia-kernel-legacy-96xx is for GeForce 4</li>
+						      <li>nvidia-kernel-legacy-173xx is for GeForce 5</li>
+						  </ul>
+
+						  <!--- ####
+					<h5>Example for legacy 3d nvidia drivers using &le; GeForce 5xxx :</h5>
+#### -->
+					<h5>旧式の 3D ドライバを &le; GeForce 5xxx のGPUで使う場合の例:</h5>
+
+					<!--- ####
+							<p>For other legacy drivers just replace 173xx number with your driver number.</p>
+#### -->
+							<p>他の旧式ドライバを使うときには 173xx を他の番号に取り替えてください。</p>
+
+<pre>
+m-a a-i nvidia-kernel-legacy-173xx-source &amp;&amp; apt-get install nvidia-glx-legacy-173xx dmakms
+</pre>
+
+							<!--- ####
+							<p>Alter dmakms:</p>
+							#### -->
+							<p>dmakmsの変更:</p>
+<pre>
+echo nvidia-kernel-legacy-173xx-source >> /etc/default/dmakms
+</pre>
+
+<!--- ####
+						      <p>When xorg updates you only need to reinstall nvidia-glx-legacy:</p>
+#### -->
+						      <p>Xorg がアップデートされたときは nvidia-glx-legacy を再インストールするだけです:</p>
+<pre>
+apt-get install --reinstall nvidia-glx-legacy-173xx
+</pre>
+					<!--- ####
+					<h4>Module load failure</h4>
+#### -->
+					<h4>モジュールのロードに失敗したら</h4>
+
+<!--- ####
+							<p>Should nvidia fail to load, for whatever reason:</p>
+#### -->
+							<p>いずれかの原因で nVidia のモジュールのロードが失敗したときは:</p>
+<pre>
+modprobe nvidia
+</pre>
+<!--- ####
+							<p>Then reboot the computer.</p>
+#### -->
+							<p>そしてコンピュータを再起動します。</p>
+
+<!--- ####
+							<p>Should the module still fail to load:</p>
+#### -->
+							<p>それでもまだモジュールがロードされなければ:</p>
+ <pre>
+ m-a a-i -f nvidia-kernel-source
+</pre>
+							<!--- ####
+							<p>or</p>
+							#### -->
+							<p>または</p>
+ <pre>
+ m-a a-i -f nvidia-kernel-legacy-173xx-source
+</pre>
+							<!--- ####
+							<p>This rebuilds the module <span class="highlight-3">then reboot.</span></p>
+#### -->
+							<p>このコマンドでモジュールがもう一度構築されます。<span class="highlight-3">そして再起動.</span></p>
+
+						      <p>くわしくはこの文書を読んでください:</p>
+<pre>
+$ /usr/share/doc/dmakms
+</pre>
+
+		</div>
+
+	<div id="rev">Page last revised 21/11/2011 0815 UTC  </div>
+
+</div>
+</body>
+</html>

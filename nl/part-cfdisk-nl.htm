@@ -1,0 +1,529 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl" lang="nl">
+<head>
+	<title>aptosid handleiding - diskbenaming en partitioneren CFDISK-nl</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body id="hd">
+<!--htdig_noindex--><div id="menu"> <!-- menu starts here nl lang maintained by btorrem, Bram0s,eislon -->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<!-- menu last translated by eislon 2012.09.30 0933 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="Naar aptosid.com forums and wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-nl.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" />Zoeken Online Offline</a> </li>
+		<!--<li><a href="http://manual.aptosid.com/meta-manual">Gemeenschap Software Selecties</a></li>-->
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Kies een andere taal - Choose another language CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="lang-switch CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-nl.htm">aptosid OS Handleiding</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-nl.htm#welcome-gen">aptosid OS Handleiding &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-nl.htm#cred-team">Medewerkers</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-nl.htm#how-to">Gebruik van deze handleiding &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-nl.htm#how-to">Hoe deze handleiding gebruiken</a></li>
+					  <li><a href="welcome-nl.htm#table-contents">Inhoudstafel</a></li>
+					</ul>
+					</li>
+		<li><a href="help-nl.htm#help-gen">Hulp nodig &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-nl.htm#help-gen">Waar kan ik hulp vinden</a></li>
+					  <li><a href="help-nl.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-nl.htm#welcome-quick">Aptosid Snelle-startgids</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-nl.htm">ISO Inhoud, Releases, Download Vensters en Branden</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-nl.htm#cd-content">ISO Inhoud en systeembenodigdheden &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-nl.htm#rolling">Release info</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-nl.htm#download-aptosid">Aptosid Vensters , Downloaden en Branden &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-nl.htm#md5">md5 Checksum</a></li>
+					  <li><a href="cd-dl-burning-nl.htm#burn-nero">Branden in Windows</a></li>
+					  <li><a href="cd-dl-burning-nl.htm#burn-linux">Branden in Linux</a></li>
+					  <li><a href="cd-no-gui-burn-nl.htm#burning-no-gui">burniso script</a></li>
+					  <li><a href="cd-no-gui-burn-nl.htm#burn-no-gui-gen">Branden zonder een GUI (niet-grafisch)</a></li><li><a href="cd-dl-burning-nl.htm#download-aptosid">aptosid Download Mirrors</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-nl.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-nl.htm#rootpw">Root-paswoord op aptosid-Livesessie ISO</a></li>
+				<li><a href="live-mode-nl.htm#live-cd-installsoft">Installeren van software in de Livesessie</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-nl.htm">The Terminal / Konsole</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-nl.htm#term-kon"> Terminal / Konsole &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-nl.htm#term-kon"> Terminal / Konsole</a></li>
+					  <li><a href="term-konsole-nl.htm#colours"> Gekleurde terminal prompts</a></li>
+					  <li><a href="term-konsole-nl.htm#cli-help">Commando's - Help</a></li>
+					  <li><a href="help-nl.htm#init3-tools">Interessante applicaties in de tekstmode (tty) - init 3</a></li>
+					  <li><a href="term-konsole-nl.htm#term-cmds">Linux Terminal Commando Lijst</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-nl.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-nl.htm">CheatCodes</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-nl.htm#cheatcodes">aptosid specifieke Live-ISO Cheatcodes</a></li>
+				<li><a href="cheatcodes-nl.htm#cheatcodes-linux">Linux generische Cheatcodes</a></li>
+				<li><a href="cheatcodes-vga-nl.htm#vga">VGA Codes</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-nl.htm">Partitioneren van de harde schijf - Traditioneel, GPT en LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-nl.htm#hd-ntfs3g">Schrijven op een NTFS partitie met ntfs-3g</a></li>
+			<li><a href="part-lvm-nl.htm#part-lvm">Partitioneren vanwege LVM - Logical Volume Manager</a></li>
+			<li><a href="part-gparted-nl.htm#partition">Partitioneren met een GUI (grafisch) &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-nl.htm#partition">Harde schijf partitioneren gebruikmakend van GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-nl.htm#ntfs">NTFS partitie van groote veranderen gebruikmakend van GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-nl.htm#partition">Partitioneren met CLI &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-nl.htm#partition">Harde schijf partitioneren met cfdisk</a></li>
+					    <li><a href="part-cfdisk-nl.htm#formating">Formatteren (schijf leegmaken) na het partitioneren met cfdisk</a></li>
+					    <li><a href="part-gdisk-nl.htm#gdisk-6">Formatteren na het partitioneren met gdisk</a></li>
+					    <li><a href="part-gdisk-nl.htm#gdisk-1">GPT Partitioneren met gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-nl.htm#part-example">Partitioneren Basis &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-nl.htm#part-example">Partitie Grootte Voorbeelden</a></li>
+					  <li><a href="part-uuid-nl.htm#uuid">UUID, heropbouwen van fstab en creëren van nieuwe mount punten</a></li>
+					  <li><a href="part-cfdisk-nl.htm#disknames">Schijf benoemen in brief</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-nl.htm">Installatie opties - HD, USB, VM en Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-nl.htm#Inst-prep">Installatievoorbereiding &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-nl.htm#Inst-prep">Installatievoorbereiding </a></li>
+					  <li><a href="hd-install-nl.htm#Installation">Installeren op uw harde schijf</a></li>
+					  <li><a href="hd-install-nl.htm#first-hd-boot">Eerste keer opstarten</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-nl.htm#fromiso">Booten van uw iso-cd &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-nl.htm#fromiso">Booten vanaf uw iso-cd - Overzicht</a></li>
+					  <li><a href="hd-install-opts-nl.htm#grub2-fromiso">Booten vanaf uw iso-cd met Grub 2</a></li>
+					  <li><a href="hd-install-opts-nl.htm#fromiso-persist">Booten vanaf uw iso-cd en vasthouden</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-nl.htm#usb-hd">Installeren op USB &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-nl.htm#usb-hd">Installeren op USB-HD - aptosid specifiek - aptosid-on-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-nl.htm#raw-usb">Aptosid schrijven naar een USB/SSD stick met Linux, MS Windows of Mac OS X systeem</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-nl.htm#install-crypt">Installeren op encrypte partities - cryptroot</a></li>
+		  <li><a href="nbdboot-nl.htm#nbd1">Aptosid booten op een netwerk</a></li>
+		  <li><a href="hd-install-vmopts-nl.htm#vmopts">Virtuele Machine installatie opties</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-nl.htm">Graphische kaarten, Schermen, Xorg,  &amp; drivers</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-nl.htm#mon-res">Schermresolutie en Schermen  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-nl.htm#mon-res">Schermresolutie en Schermen</a></li>
+					  <li><a href="hw-dev-mon-nl.htm#xrandr">Dual-scherm en xrandr</a></li>
+					  <li><a href="hw-dev-mon-nl.htm#mon-binary">Dual-schermen (gebruikmakend van binaries)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-nl.htm#foss-xorg">GPU drivers &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-nl.htm#ati-3d">AMD/ATI 3D drivers</a></li>
+					  <li><a href="gpu-nl.htm#intel">Intel 2D en 3D drivers</a></li>
+					  <li><a href="gpu-nl.htm#nvidia">Nvidia 3D drivers</a></li>
+					  <li><a href="gpu-nl.htm#foss-xorg">Open Source Xorg drivers</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-nl.htm#fw-detect">Firmware detectie - "non-free" </a></li>
+			  <li><a href="nf-firm-nl.htm#non-free-firmware">"non-free" toevoegen aan de Sources List</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-nl.htm">Window Managers</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm--nl.htm">KDE en XFCE Window Managers &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm--nl.htm#xfce-notes">Handige Xfce extras</a></li>
+					    <li><a href="wm-dm-nl.htm#install-add">Handige extra KDE Apps</a></li>
+					    <li><a href="wm-dm-nl.htm#desk-freeze">Desktop Freezes (beweegt niet meer)</a></li>
+					    <li><a href="wm-dm-nl.htm#kde-login">Kan niet inloggen (KDE)</a></li>
+					    <li><a href="wm-dm-nl.htm#ch-th">Thema's veranderen</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-nl.htm#dm">Installie van bijkomende Display Managers</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-nl.htm">Internet verbinding, WiFi, LAN en Netwerken</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-nl.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-nl.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-nl.htm#serv-ftp">FTP Clients</a></li>
+					    <li><a href="lamp-apache-nl.htm#serv-sec">Security Protocols (beveiliging)</a></li>
+					    <li><a href="lamp-apache-nl.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-nl.htm#serv-mysql">MySQL Setup</a></li>
+					    <li><a href="lamp-ppp-nl.htm#serv-php">PHP in Apache</a></li>
+					    <li><a href="ntp-server-nl.htm#ntp-server">Timeserver Setup</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-nl.htm#tor">Firewalls en Privacy &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-nl.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-nl.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-nl.htm#firewalls">Firewalls</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-nl.htm#ssh-x">SSH en Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-nl.htm#setup">Samba-Server Setup</a></li>
+						  <li><a href="samba-nl.htm#configure">SAMBA configureren (Windows)</a></li>
+						  <li><a href="ssh-nl.htm#ssh-fs">SSH Apart Mounten</a></li>
+						  <li><a href="ssh-nl.htm#ssh-x">X Window Apps via SSH</a></li>
+						  <li><a href="ssh-nl.htm#ssh-f">GUI SSH met Konqueror</a></li>
+						  <li><a href="ssh-nl.htm#ssh-w">SSH X-Forwarding vanaf een Windows-PC</a></li>
+						  <li><a href="ssh-nl.htm#ssh">SSH en Beveiliging</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-nl.htm#netcardconfig">WIFI connecties (draadloos) &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-nl.htm#netcardconfig">Online geraken - Ceni</a></li>
+						    <li><a href="inet-wpagui-nl.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-nl.htm#net-set1">WiFi - WiFi instellen</a></li>
+						    <li><a href="inet-wpa-nl.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-nl.htm#hotswitch">Switchen tussen WiFi en Kabel</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-nl.htm#netcardconfig">Bedrade verbindingen &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-nl.htm#dial-mod">56k Modems</a></li>
+						    <li><a href="inet-ceni-nl.htm#netcardconfig">Online geraken - Ceni</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-nl.htm#fw-detect">Firmware detectie - "non-free" </a></li>
+		<li><a href="nf-firm-nl.htm#non-free-firmware">"non-free" toevoegen aan de Sources List</a></li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-nl.htm">Pakketbeheer en dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-nl.htm#apt-cook">APT Werkwijze en Bronnenlijst &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-nl.htm#apt-cook">APT-Gids Werkwijze en Bronnenlijst</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#apt-install">Nieuw pakket installeren</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#apt-delete">Pakket verwijderen</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#apt-downgrade">Pakket vasthouden (niet updaten) en afwaarderen</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#apt-cache">Pakket zoeken met apt-cache</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#gui-pacsea">GUI Pakket zoeken (grafisch)</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-nl.htm#kern-upgrade">Kernel upgraden &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-nl.htm#kern-remove">Kernels verwijderen</a></li>
+					    <li><a href="sys-admin-kern-upg-nl.htm#kern-upgrade">Kernel upgraden</a></li>
+					    <li><a href="sys-admin-kern-upg-nl.htm#dmakms">Kernelmodules dynamisch installeren met dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-nl.htm#apt-upgrade">Geïnstalleerd systeem upgraden -  dist-upgrade - Overzicht &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-nl.htm#live-cd-upgrade">Upgraden met Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-nl.htm#approx">dist-upgrade van meerdere PCs op een LAN</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#apt-upgrade">Geïnstalleerd systeem upgraden -  dist-upgrade - Overzicht</a></li>
+					    <li><a href="sys-admin-apt-nl.htm#du-st">Geïnstalleerd systeem upgraden -  dist-upgrade - De Stappen</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-nl.htm">Systeem Administratie</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-nl.htm#bois-prep">BIOS upgraden met FreeDOS</a></li>
+		<li><a href="vir-rkits-nl.htm#virus-rkits">Virus en Rootkit Scanners</a></li>
+		<li><a href="hd-install-nl.htm#adduser">Gebruikers en Paswoorden toevoegen &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-nl.htm#adduser">Nieuwe gebruiker toevoegen</a></li>
+					    <li><a href="sys-admin-gen-nl.htm#pw-lost">verloren root-paswoorden, nieuwe paswoorden</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-nl.htm#start-services">Services en init runlevels &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-nl.htm#start-services">Services inschakelen/uitschakelen</a></li>
+					    <li><a href="sys-admin-gen-nl.htm#pkill">Een service of een process stoppen</a></li>
+					    <li><a href="sys-admin-gen-nl.htm#init">aptosid runlevels - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-nl.htm#rsync">Een systeem back-up maken &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-nl.htm#rdiff">Doe een Back-Up met rdiff</a></li>
+					    <li><a href="sys-admin-rsync-nl.htm#rsync">Doe een Back-Up met rsync</a></li>
+					    <li><a href="home-nl.htm#home-bu">Verplaatsen van /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-nl.htm#fonts">CUPS, Opmaak en Geluid &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-nl.htm#fonts">Opmaak</a></li>
+					     <li><a href="sys-admin-gen-nl.htm#cups">CUPS - Printer Systeem</a></li>
+					     <li><a href="sys-admin-gen-nl.htm#sound">Geluid Mixers</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-nl.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-nl.htm#chroot">Grub2 - Grub herstellen met chroot</a></li>
+					    <li><a href="sys-admin-grub2-nl.htm#mbr-over-grub2">Grub2 - MBR Overschrijven</a></li>
+					    <li><a href="sys-admin-grub2-nl.htm#multi-os">Grub2 - Dual en Multibooting</a></li>
+					    <li><a href="sys-admin-grub2-nl.htm#grub1-grub2">Grub2 -Upgraden vanaf Grub1</a></li>
+					    <li><a href="sys-admin-grub2-nl.htm#grub2">Grub2 - Overzicht</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Gesponsored door webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid Gesponsored door webtropia.com" alt="aptosid Gesponsored door webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+	<div class="divider" id="disknames">
+		<h2 id="top-header">Namen van de fysieke harde schijven</h2>
+			<h5><span class="highlight-2">WAARSCHUWING: voor diskbenaming </span><a href="part-uuid-nl.htm"> AUB kijken bij Partitie Labelling en fstab, omdat aptosid nu standaard gebruik maakt van UUID</a>.</h5>
+
+			<h4>Huidige benamingsregels</h4>
+
+			<h5>Voor harde schijven</h5>
+
+							<p>Sinds door udev de Universal Unique Identifier's (UUID) worden toegepast en met de laatste linux kernels, wordt aan alle block devices een combinatie van drie letters en een nummer toegekend, bijv. <span class="highlight-3">sda</span> voor een harde schijf en <span class="highlight-3">sdaX</span> voor de partities op deze schijf.</p>
+
+							<p>Van welke soort de harde schijf ook is (PATA (IDE), SATA (Serial ATA) of SCSI) - het enige verschil tussen de schijven is nu de derde letter van een harde schijf/device  <span class="highlight-3"> /dev/sda1, /dev/sdb1, /dev/sdc1, /dev/sdd1</span> etc.</p>
+
+							<p>Als je een harde schijf als pictogram op je desktop ziet, kan je met de muisaanwijzer over het icoontje schuiven om de eigenschappen hiervan op te vragen (dat werkt op de aptosid live-cd en ook bij een geïnstalleerd systeem.</p>
+
+							<p>Het wordt zeer aanbevolen om voor jezelf een tabel te maken, handmatig of met computer tools, waarin de details voor alle block devices van je computer genoemd zijn. Dat kan je nu en in de toekomst een hoop problemen en dus ook tijd besparen .</p>
+
+							<p>Het bestand <span class="highlight-3"> /etc/fstab</span> van de  aptosid live-cd of van het geïnstalleerde systeem, bevat de  <span class="highlight-3"> /dev/ sdaX</span> informatie tussen blokhaakjes in de commentaar-regel boven de echte device regel,  bijvoorbeeld (NB: vet is slechts ter verduidelijking):</p>
+<pre>
+# added by aptosid [<b>/dev/sdd1</b>, no label]
+UUID=2ae950df-7d72-4d9b-a71a-bad1eb2d4f6a       /       ext4    defaults,errors=remount-ro,relatime      0 1
+</pre>
+				<h5>Voor partities</h5>
+
+							<p>Zoals hierboven getoond, wordt de partitie <span class="highlight-3">/dev/disk</span> als een getal achter de harde schijf/device weergegeven. </p>
+
+							<p>Er bestaan verschillende types van partities: primaire, uitgebreide/extended en logische. De logische partities zijn subpartities van de uitgebreide partitie. Maximaal zijn 4 primaire  of 3 primaire en 1 uitgebreide/extended partitie mogelijk. De uitgebreide partitie kan maximaal 11 logische partities bevatten. </p>
+
+							<p>Primaire of uitgebreide partities hebben namen tussen sda1 en  sda4. Logische partities zijn deel van de extended partitie. Ja kan met libata maximaal 11 van deze partities vastleggen en hun benamingen beginnen met 5 (bijv. sda5) stoppen bij 15 (sda15).</p>
+
+				<h5>Voorbeelden</h5>
+
+							<p><span class="highlight-3">/dev/sda5</span> kan alleen een logische partitie zijn (in dit geval de eerste logische op deze harde schijf). Zij bevindt zich in de eerste SATA of IDE schijf van je computer (dat is afhankelijk van de BIOS instellingen).</p>
+
+							<p><span class="highlight-3">/dev/sdb3</span> kan alleen een primaire of een extended partitie zijn. Aan de letter is te zien dat deze partitie zich niet op dezelfde harde schijf kan bevinden als de partitie van het eerste voorbeeld. (Daar staat nl. a in hier staat b.)</p>
+
+				<h4>Vroegere aanduidingen voor IDE schijven</h4>
+
+							<p>Op oudere linux systemen werden IDE disks devices (PATA) met <span class="highlight-3">hdaX </span> weergegeven i.p.v. de huidige sdaX.</p>
+
+	</div>
+	<div class="divider" id="partition">
+		<h2>Partitie-indeling maken met Cfdisk</h2>
+
+							<p class="highlight-2">Voor de normale systemen wordt geadviseerd ext4 als bestandssysteem te gebruiken. Ext4 is een standaard-bestandssysteem van aptosid en goed onderhouden (c.q. maintained).</p>
+
+							<p>Open een Konsole, type login en meld ja aan als root, root-passwort intypen en start cfdisk:</p>
+
+<pre>su
+password:******
+cfdisk /dev/sda
+</pre>
+
+		<h5>De gebruikersomgeving</h5>
+							<p>In het eerste scherm laat cfdisk de huidige partitietabel zien met de namen en aanvullende informatie over de partities. Aan de onderkant van het scherm zijn commando-schakelaars. Om van partitie te veranderen kunnen de pijltjes-toetsen omhoog/omlaag gebruikt worden. Om de commando's te kiezen kunnen de pijltjes-toetsen rechts/links gebruikt worden.</p>
+
+		<h5>Verwijderen van een partitie</h5>
+		<div class="screenshot"><img src="../lib/images-nl/cfdisk-nl/cfdisk0-nl.png" title="Delete a partition" alt="Delete a partition" /></div>
+
+							<p>Om een partitie te verwijderen, wordt deze eerst met de sie mit de pijltjes-toetsen omhoog/omlaag geselecteerd, als je op de partitie staat, kies </p>
+<pre>
+wissen
+</pre>
+							<p>met de pijltjes-toetsen links/rechts en bevestig met</p>
+<pre>
+Enter
+</pre>
+
+		<h5>Aanmaken van een nieuwe partitie</h5>
+		<div class="screenshot"><img src="../lib/images-nl/cfdisk-nl/cfdisk1-nl.png" title="Create a new partition" alt="Create a new partition" /></div>
+
+							<p>Voor het aanmaken van een nieuwe partitie kies </p>
+<pre>
+Nieuw
+</pre>
+							<p>(kiezen met de pijltjes-toetsen rechts/links), hierna Enter. Er moet gekozen worden tussen het aanmaken van een <b>primaire</b> of een <b>logische</b> Partitie. Als een logische partitie wordt aangemaakt, legt cfdisk automatisch een uitgebreide partitie aan, die dan de logische partition bevat. Hierna moet de grootte van de partitie worden vastgelegd (in MB). Als er geen mogelijkheid bestaat om MB op te geven, ga met ESC terug naar het hoofdscherm van cfdisk en kies MB met de commando</p>
+<pre>
+eenheden
+</pre>
+
+		<h5>Partitietype</h5>
+		<div class="screenshot"><img src="../lib/images-nl/cfdisk-nl/cfdisk2-nl.png" title="Type of a partition 1" alt="Type of a partition 1" /></div>
+
+							<p>Om een type voor een partitie vast te leggen, voor <b>Linux swap</b> of <b>Linux</b>, selecteer de partitie en gebruik het commando:</p>
+<pre>
+type
+</pre>
+
+							<p>Hierdoor verschijnt een lijst met typen. Als de spatiebalk wordt gebruikt verschijnt de rest op de tweede pagina. Zoek het type dat je nodig hebt (<b>Linux swap</b> is type <b>82</b>, <b>Linux</b> is type <b>83</b>)</p>
+
+		<div class="screenshot"><img src="../lib/images-nl/cfdisk-nl/cfdisk3-nl.png" title="Type of a partition 2" alt="Type of a partition 2" /></div>
+
+		<h5>Een partitie geschikt maken om te booten</h5>
+							<p>Voor Linux is het niet noodzakelijk, om aan een partitie het etiket 'bootable' toe te kennen, maar sommige andere bestandssytemen vereisen dit. (NB: In Linux kan dat via de bootmanager, bijv. grub, worden toegekent aan een partitie.) Selecteer de partitie en gebruik het commando: Note: When installing on a external HD then  one partition must be bootable:</p>
+<pre>
+Bootbaar
+</pre>
+
+		<h5>De veranderingen op de schijf vastleggen</h5>
+							<p>Als alles klaar is, kan het resultaat worden vastgelegd op de schijf met het commando <b>schrijven</b>. Nu pas wordt de partitietabel echt op de schijf geschreven. Een foutmelding over <b>Dos</b> kan genegeerd worden.</p>
+
+							<p><b>Omdat de data van verwijderde partities echt gewist worden (geen ongedaan maken mogelijk) a.u.b. goed nadenken voor dat de toets:</b></p>
+<pre>
+Enter
+</pre>
+
+		<div class="screenshot"><img src="../lib/images-nl/cfdisk-nl/cfdisk4-nl.png" title="Write the result to disk" alt="Write the result to disk" /></div>
+
+		<h5>Stoppen</h5>
+							<p>Om het programma te verlaten kan het commando <b>Einde</b> gebruikt worden. Na het verlaten van <b>cfdisk</b>, moet voor de Installatie, een herstart uitgevoerd worden. Hierdoor wordt de nieuwe partitionstabel correct ingelezen</p>
+	</div>
+
+	<div class="divider" id="formating">
+		<h2>Formatteren van partities met Cfdisk (na het maken van de indeling)</h2>
+
+		<h5>Basis</h5>
+							<p>Er zijn voor Linux verschillende bestandssystemen beschikbaar. Er zijn <b>ReiserFs</b>, <b>Ext2</b>, <b>Ext4</b> en voor meer ervaren gebruikers nog <b>XFS</b> en <b>JFS</b>.  <a href="http://www.fs-driver.org/">Ext2 Installable File System For MS Windows</a>.</p>
+
+							<p>Voor de meeste situaties is het bestandssysteem ext4 een goede keus. Ext4 is het standaard-bestandssysteem van aptosid en wordt goed onderhouden (c.q. maintained).</p>
+
+		<h5>Formatteren</h5>
+							<p>Als cfdisk verlaten wordt, zijn wij weer terug in de Konsole. Het formatteren vereist <b>rootrechten</b>. Als de Live-CD gebruikt wordt, dan wordt het commando <b>sudo su</b> root toegepast. Anders kan op een bestaande Linux-partitie na su het root-password gevraagd.</p>
+
+<pre>
+su
+mkfs -t ext4 /dev/sdb1
+</pre>
+
+							<p>Voor het formatteren wordt een bevestiging gevraagd antwoorden, als je zeker bent de juiste partitie te formatteren. Dus beter nog een keer goed nadenken voordat <b>ja</b> wordt getoetst.</p>
+
+							<p>Hierna komt de melding dat ext4 succesvol is aangemaakt. Is dat niet het geval, dan is bij het partitioneren iets foutgegaan of <b>hdb1</b> is geen Linux-partitie. De informatie over de schij kan worden verkregen via:</p>
+
+<pre>
+fdisk -l /dev/hdb
+</pre>
+
+							<p>Als hier iets niet correct staat, moet eventueel opniew gepartitioneerd worden.</p>
+
+							<p>Als het goed is gegaan voor de root-partitie voor het besturingssysteem, dan kunnen deze stappen ook herhaald worden om eventueel een aparte <b>Home-Partition</b> aan te leggen voor data ("Mijn documenten"). Dat is o.m. voor herinstallaties zinvol - de instellingen, eigen programma's etc. blijven zo gescheiden van het besturingssyteem.</p>
+
+							<p>Als laatste wordt de swap-Partitie aangelegd, in het voorbeeld hdb3:</p>
+
+<pre>
+mkswap /dev/hdb3
+</pre>
+
+							<p>hierna:</p>
+
+<pre>
+swapon /dev/hdb3
+</pre>
+
+							<p>Nu kan in de Konsole gecontroleerd worden of de swap-Partitie gezien wordt:</p>
+
+<pre>
+swapon -s
+</pre>
+
+							<p>De nu aangekoppelde swap-Partitie moet nu gezien worden:</p>
+
+	<table class="center">
+		<tbody>
+			<tr>
+				<th>Filename</th>
+				<th>Type</th>
+				<th>Size</th>
+				<th>Used</th>
+				<th>Priority</th>
+			</tr>
+			<tr>
+				<td>/dev/hdb3</td>
+				<td>partition</td>
+				<td>995988</td>
+				<td>248632</td>
+				<td>-1</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="spacer02"></div>
+							<p>Als de swap-Partitie correct gezien wordt dan toetsen wij </p>
+
+<pre>swapoff -a</pre>
+
+							<p>en herstarten de PC.</p>
+
+							<p>Nu kan de installatie beginnen.</p>
+
+		<div id="rev">Inhoud het laatst gewijzigd op 14/08/2010 0100 UTC</div>
+</div>
+
+</div>
+</body>
+</html>

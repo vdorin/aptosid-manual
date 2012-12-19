@@ -1,0 +1,801 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>aptosid Manuals - Upgrade BIOS FreeDOS </title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- last translation by LjanA 23/09/2010 -->
+<!--htdig_noindex--><div id="menu"> <!-- menu starts here fr lang maintained by alphad, LjanA-->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="Vers aptosid.com, forum et wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-fr.htm#search-on"><img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" /> Rechercher</a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Choisir une autre langue - Choose another language CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="lang-switch CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-fr.htm">Manuel du système aptosid</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-fr.htm#welcome-gen">Manuel du système aptosid &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-fr.htm#cred-team">Contributeurs</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-fr.htm#how-to">Guide de l'utilisateur &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-fr.htm#how-to">Guide de l'utilisateur</a></li>
+					  <li><a href="welcome-fr.htm#table-contents">Table des matières</a></li>
+					</ul>
+					</li>
+		<li><a href="help-fr.htm#help-gen">Trouver de l'aide &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-fr.htm#help-gen">Où trouver de l'aide</a></li>
+					  <li><a href="help-fr.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-fr.htm#welcome-quick">Utiliser aptosid rapidement</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-fr.htm">Contenu de l'ISO, Versions, Téléchargement, Miroirs &amp; Gravure</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-fr.htm#cd-content">Contenu de l'ISO &#8211; Matériel minimal requis  &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-fr.htm#rolling">Notes de publication</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-fr.htm#download-aptosid">Miroirs aptosid &#8211; Téléchargement &#8211; Gravure &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-fr.htm#md5">md5 (somme de contrôle)</a></li>
+					  <li><a href="cd-dl-burning-fr.htm#burn-nero">Graver sous Windows</a></li>
+					  <li><a href="cd-dl-burning-fr.htm#burn-linux">Graver sous Linux</a></li>
+					  <li><a href="cd-no-gui-burn-fr.htm#burning-no-gui">Script burniso</a></li>
+					  <li><a href="cd-no-gui-burn-fr.htm#burn-no-gui-gen">Graver depuis un terminal</a></li>
+					  <li><a href="cd-dl-burning-fr.htm#download-aptosid">Miroirs de téléchargement aptosid</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-fr.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-fr.htm#rootpw">Mot de passe root en mode Live</a></li>
+				<li><a href="live-mode-fr.htm#live-cd-installsoft">Installer des logiciels en mode Live</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-fr.htm">Terminal / Konsole</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-fr.htm#term-kon">Terminal / Konsole &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-fr.htm#term-kon">Terminal / Konsole</a></li>
+					  <li><a href="term-konsole-fr.htm#colours"> prompt coloré dans un terminal </a></li>
+					  <li><a href="term-konsole-fr.htm#cli-help">Aide sous Terminal / Konsole</a></li>
+					  <li><a href="help-fr.htm#init3-tools">Outils utiles en mode texte (tty) &#8211; init 3</a></li>
+					  <li><a href="term-konsole-fr.htm#term-cmds">Liste de commandes sous BASH</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-fr.htm#sux">sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-fr.htm">Codes de démarrage</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-fr.htm#cheatcodes">Codes spécifiques à aptosid en mode Live</a></li>
+				<li><a href="cheatcodes-fr.htm#cheatcodes-linux">Codes génériques pour Linux</a></li>
+				<li><a href="cheatcodes-vga-fr.htm#vga">Codes VGA</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-fr.htm">Partitionner le disque dur - Traditionel, GPT et LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-fr.htm#hd-ntfs3g">Utiliser une partition NTFS grâce à ntfs-3g</a></li>
+			<li><a href="part-lvm-fr.htm#part-lvm">Partitionner pour utiliser LVM - Gestionnaire de Volumes Logiques</a></li>
+			<li><a href="part-gparted-fr.htm#partition">&#8230;dans un environnement graphique &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-fr.htm#partition">&#8230;avec GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-fr.htm#ntfs">Redimensionner une partition NTFS avec GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-fr.htm#partition">&#8230;en mode texte (CLI) &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-fr.htm#partition">&#8230;avec cfdisk</a></li>
+					    <li><a href="part-cfdisk-fr.htm#formating">Formater une partition créée avec cfdisk</a></li>
+					    <li><a href="part-gdisk-fr.htm#gdisk-6">Formater après partitionnement avec gdisk</a></li>
+					    <li><a href="part-gdisk-fr.htm#gdisk-1">GPT : partitionnement avec gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-fr.htm#part-example">Partitionner  &#8211; Concepts de base &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-fr.htm#part-example">Tailles des partitions  &#8211; Exemples</a></li>
+					  <li><a href="part-uuid-fr.htm#uuid">UUID, Modifier fstab et créer de nouveaux points de montage</a></li>
+					  <li><a href="part-cfdisk-fr.htm#disknames">Noms des disques et partitions</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-fr.htm">Choix du type d'installation &#8211; HD, USB, VM and Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-fr.htm#Inst-prep">Préparer l'installation &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-fr.htm#Inst-prep">Préparer l'installation </a></li>
+					  <li><a href="hd-install-fr.htm#Installation">Installer sur le disque dur (HD)</a></li>
+					  <li><a href="hd-install-fr.htm#first-hd-boot">Au premier démarrage</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-fr.htm#fromiso">Démarrer en mode ''fromiso'' &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-fr.htm#fromiso">''fromiso'' Généralités</a></li>
+					  <li><a href="hd-install-opts-fr.htm#grub2-fromiso">Démarrer ''fromiso'' avec grub2</a></li>
+					  <li><a href="hd-install-opts-fr.htm#fromiso-persist">''fromiso'' and persistance</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-fr.htm#usb-hd">Installer sur USB-HD &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-fr.htm#usb-hd">Installer sur disque USB &#8211; aptosid sur une clé USB</a></li>
+					  <li><a href="hd-ins-opts-oos-fr.htm#raw-usb">Installer aptosid sur une clé USB/carte SSD à partir de systèmes Linux, MS-Windows ou Mac-OS-X</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-fr.htm#install-crypt">Installation sur partitions cryptées - cryptroot</a></li>
+		  <li><a href="nbdboot-fr.htm#nbd1">Démarrer aptosid à partir d'un réseau</a></li>
+		<li><a href="hd-install-vmopts-fr.htm#vmopts">Choix d'installation sur une machine virtuelle</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-fr.htm">Cartes graphiques &#8211; Moniteurs &#8211; Xorg &#8211; Pilotes divers</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-fr.htm#mon-res">Définition des écrans &#8211; Moniteurs  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-fr.htm#mon-res">Définition des écrans &#8211; Moniteurs</a></li>
+					  <li><a href="hw-dev-mon-fr.htm#xrandr">Deux moniteurs &#8211; xrandr</a></li>
+					  <li><a href="hw-dev-mon-fr.htm#mon-binary">Deux moniteurs &#8211; outils binaires</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-fr.htm#foss-xorg">Drivers cartes graphiques&#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-fr.htm#ati-3d">Drivers AMD/ATI 3D</a></li>
+					  <li><a href="gpu-fr.htm#intel">Drivers Intel 2D and 3D</a></li>
+					  <li><a href="gpu-fr.htm#nvidia">Drivers Nvidia 3D</a></li>
+					  <li><a href="gpu-fr.htm#foss-xorg">Drivers Open Source Xorg</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-fr.htm#fw-detect">Détection de Firmware non-libre</a></li>
+			  <li><a href="nf-firm-fr.htm#non-free-firmware">Ajouter non-free aux Sources List</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-fr.htm">Gestionnaire de fenêtres</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-fr.htm">KDE and XFCE Gestionnaire de fenêtres &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-fr.htm#xfce-notes">Applications supplémentaires utiles pour Xfce</a></li>
+					    <li><a href="wm-dm-fr.htm#install-add">Applications supplémentaires utiles pour KDE</a></li>
+					    <li><a href="wm-dm-fr.htm#desk-freeze">Écran gelé</a></li>
+					    <li><a href="wm-dm-fr.htm#kde-login">Ouverture de session impossible (login) dans KDE</a></li>
+					    <li><a href="wm-dm-fr.htm#ch-th">Changer les fonds d'écran</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-fr.htm#dm">Installation de gestionnaires d'affichage supplémentaires</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-fr.htm">Internet &#8211; WiFi &#8211; LAN &#8211; Réseaux</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-fr.htm">Suite LAMP aptosid &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-fr.htm#serv-apache">Suite LAMP aptosid</a></li>
+					    <li><a href="lamp-apache-fr.htm#serv-ftp">Clients FTP</a></li>
+					    <li><a href="lamp-apache-fr.htm#serv-sec">Protocoles de sécurité</a></li>
+					    <li><a href="lamp-apache-fr.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-fr.htm#serv-mysql">Configurer MySQL </a></li>
+					    <li><a href="lamp-ppp-fr.htm#serv-php">Support PHP dans Apache</a></li>
+					    <li><a href="ntp-server-fr.htm#ntp-server">Configurer le serveur d'horloge (timeserver)</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-fr.htm#tor">Pare-feu &#8211; Confidentialité &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-fr.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-fr.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-fr.htm#firewalls">Pare-feu</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-fr.htm#ssh-x">SSH &#8211; Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-fr.htm#setup">Configurer un serveur Samba</a></li>
+						  <li><a href="samba-fr.htm#configure">Configurer SAMBA (MS-Windows)</a></li>
+						  <li><a href="ssh-fr.htm#ssh-fs">Montage d'un répertoire à distance via SSH</a></li>
+						  <li><a href="ssh-fr.htm#ssh-x">Application X via SSH</a></li>
+						  <li><a href="ssh-fr.htm#ssh-f">Environnement graphique pour SSH via Dolphin</a></li>
+						  <li><a href="ssh-fr.htm#ssh-w">Transmission de X via SSH depuis un PC MS-Windows</a></li>
+						  <li><a href="ssh-fr.htm#ssh">SSH et Sécurité</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-fr.htm#netcardconfig">Connections WIFI &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-fr.htm#netcardconfig">Se connecter au réseau &#8211; Ceni</a></li>
+						    <li><a href="inet-wpagui-fr.htm#wpa-roaming-gui">WiFi &#8211; WPA_GUI</a></li>
+						    <li><a href="inet-setup-fr.htm#net-set1">WiFi &#8211; Configurer une connexion itinérante (roaming) WiFi</a></li>
+						    <li><a href="inet-wpa-fr.htm#wpa">WiFi &#8211; wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-fr.htm#hotswitch">Alterner entre les réseaux WiFi et câblés</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-fr.htm#netcardconfig">Connexions câblées &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-fr.htm#dial-mod">Modems 56k </a></li>
+						    <li><a href="inet-ceni-fr.htm#netcardconfig">Se connecter au réseau &#8211; Ceni</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-fr.htm#fw-detect">Détection de Firmware non-libre</a></li>
+		<li><a href="nf-firm-fr.htm#non-free-firmware">Ajouter non-free aux Sources List</a></li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-fr.htm">Gestion de paquets &#8211; Mise à niveau (dist-upgrade)</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-fr.htm#apt-cook">Guide APT &#8211; Liste des dépôts de paquets &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-fr.htm#apt-cook">Guide APT &#8211; Liste des dépôts de paquets</a></li>
+					    <li><a href="sys-admin-apt-fr.htm#apt-install">Installer un nouveau paquet</a></li>
+					    <li><a href="sys-admin-apt-fr.htm#apt-delete">Supprimer un paquet</a></li>
+					    <li><a href="sys-admin-apt-fr.htm#apt-downgrade">Geler un paquet &#8211; Dégradation de paquet</a></li>
+					    <li><a href="sys-admin-apt-fr.htm#apt-cache">Recherche de paquets via apt-cache</a></li>
+					    <li><a href="sys-admin-apt-fr.htm#gui-pacsea">Recherche de paquets en mode GUI</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-fr.htm#kern-upgrade">Mise à niveau du noyau &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-fr.htm#kern-remove">Supprimer des noyaux</a></li>
+					    <li><a href="sys-admin-kern-upg-fr.htm#kern-upgrade">Mise à niveau du noyau</a></li>
+					    <li><a href="sys-admin-kern-upg-fr.htm#dmakms">Installer des modules de noyau dynamiquement via dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-fr.htm#apt-upgrade">Mise à niveau d'un système (dist-upgrade) &#8211; Vue d'ensemble &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-fr.htm#live-cd-upgrade">Mise à niveau depuis un Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-fr.htm#approx">Mise à niveau de plusieurs ordinateurs connectés</a></li>
+					    <li><a href="sys-admin-apt-fr.htm#apt-upgrade">Mise à niveau d'un système (dist-upgrade) &#8211; Vue d'ensemble</a></li>
+					    <li><a href="sys-admin-apt-fr.htm#du-st">Les étapes d'une mise à niveau d'un système</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-fr.htm">Administration du système</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-fr.htm#bois-prep">Mise à niveau du BIOS via FreeDOS</a></li>
+		<li><a href="vir-rkits-fr.htm#virus-rkits">Scanneurs de virus et de rootkits</a></li>
+		<li><a href="hd-install-fr.htm#adduser">Ajouter un utilisateur &#8211; Mots de passe &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-fr.htm#adduser">Ajouter un utilisateur</a></li>
+					    <li><a href="sys-admin-gen-fr.htm#pw-lost">Perte du mot de passe root &#8211; Nouveau mot de passe</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-fr.htm#start-services">Services (démons) &#8211; init &#8211; Niveaux d'exécution &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-fr.htm#start-services">Activer / Désactiver des services (démons)</a></li>
+					    <li><a href="sys-admin-gen-fr.htm#pkill">terminer un service ou un processus</a></li>
+					    <li><a href="sys-admin-gen-fr.htm#init">Niveaux d'exécution aptosid &#8211; init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-fr.htm#rsync">Sauvegarder le système (OS) &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-fr.htm#rdiff">Sauvegarder via rdiff</a></li>
+					    <li><a href="sys-admin-rsync-fr.htm#rsync">Sauvegarder via rsync</a></li>
+					    <li><a href="home-fr.htm#home-bu">Déplacer une partition /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-fr.htm#fonts">CUPS, Polices de caractères &amp; Son &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-fr.htm#fonts">Polices de caractères </a></li>
+					     <li><a href="sys-admin-gen-fr.htm#cups">CUPS &#8211; Gestion des imprimantes</a></li>
+					     <li><a href="sys-admin-gen-fr.htm#sound">Mixeurs de son (Sound Mixers)</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-fr.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-fr.htm#chroot">Grub2 - Récupération de Grub via un chroot</a></li>
+					    <li><a href="sys-admin-grub2-fr.htm#mbr-over-grub2">Grub2 &#8211; Secteur d'amorçage (MBR) écrasé</a></li>
+					    <li><a href="sys-admin-grub2-fr.htm#multi-os">Grub2 &#8211; Démarrage de plusieurs systèmes (OS)</a></li>
+					    <li><a href="sys-admin-grub2-fr.htm#grub1-grub2">Grub2 &#8211; Mise à niveau depuis Grub1</a></li>
+					    <li><a href="sys-admin-grub2-fr.htm#grub2">Grub2 &#8211; Vue d'ensemble</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Sponsored by webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid is proudly hosted by webtropia.com" alt="aptosid is proudly hosted by webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+	<div class="divider" id="bois-prep">
+
+	<!--- ####
+		<h2 id="top-header">Upgrading the BIOS with FreeDOS</h2>
+#### -->
+		<h2 id="top-header">Mettre à jour le BIOS avec FreeDOS</h2>
+							<!--- ####
+							<p>You may want, or have a need, to update the BIOS of your PC, when the manufacturer of the motherboard announces some improvement of BIOS software. The installer program usually offered is an application to run MS-DOS.</p>
+							#### -->
+
+							<p>Vous pouvez vouloir ou avoir un besoin de mettre à jour le BIOS de votre PC, quand le fabricant de la carte mère annonce une certaine amélioration ou mise à jour du BIOS. Le programme d'installation d'habitude offert est destiné à exécuter MS-DOS.</p>
+
+							<!--- ####
+							<p>This is a way to update BIOS from a USB in linux. This will work with USB keys, USB sticks and with micro/mini/SD cards (with a suitable adapter).</p>
+							#### -->
+							<p>Voici comment mettre à jour votre BIOS à partir d'une clé USB sous Linux. Cette méthode fonctionne avec avec les clés USB et les cartes micro/mini/SD (avec un adaptateur approprié).</p>
+
+							<!--- ####
+							<p>Firstly, your BIOS needs to allow booting from USB - and be compatible with USB harddisks. Some BIOSes accept USB Floppies, CD-ROMs or ZIP drives, although these might be usable, it may be more difficult to implement the upgrade, however you may have no other choice, (netbooks in particular).</p>
+							#### -->
+							<p>Premièrement, votre BIOS doit permettre de démarrer depuis un disque USB - et être compatible avec les disques durs USB. Quelques BIOS acceptent des Disquettes USB, des CD-ROMs ou lecteurs ZIP. Bien que ceux-ci puissent être utilisables, il peut être plus difficile de mettre en oeuvre la mise à jour. Cependant il arrive que vous n'ayez pas d'autre choix (netbooks en particulier).</p>
+
+
+<!--- ####
+				<h3>You need three things:</h3>
+#### -->
+				<h3>Vous avez besoin de trois choses :</h3>
+						<ol>
+							<!--- ####
+							<li>A USB stick, preferably &lt;2 GB (FAT16 doesn't allow more than 2 GB), and the base FreeDOS (fdbasecd.iso) install only uses 5.8 MB. <span class="highlight-3">FAT16 is the recommended format as FAT32 is not detected as bootable by every BIOS</span>.</li>
+							#### -->
+							<li>Une clé USB, de préférence &lt;2 GB (FAT16 ne permettant pas plus de 2 GB), et l'installation de base FreeDOS (fdbasecd.iso) qui utilise seulement 5.8 MB. <span class="highlight-3">FAT16 est le format recommandé étant donné que FAT32 n'est pas détecté comme démarrable par tous les BIOS</span>.</li>
+
+							<!--- ####
+							<li>A FreeDOS install medium <a href="http://www.freedos.org/freedos/files/"> fdbasecd.iso (8MB)</a>.</li>
+
+							<li>qemu (apt-get install qemu), qemu is needed for the installer, basically the emulated qemu BIOS makes your USB stick appear to FreeDOS as an ordinary harddisk, so you can install as usual (and avoids burning the FreeDOS CD).</li>
+						</ol>
+
+				<h5><span class="highlight-2">This is absolutly critical: at no stage is the USB stick to be mounted. Be very careful to select the correct device node, otherwise all data on the wrong disk will be erased without any redress, i.e. your main hard drive.</span></h5>
+
+	<div class="spacer02"></div>
+							<p>Plug in your USB stick, <span class="highlight-2">remember, don't mount it</span>. Check dmesg (the last messages,if you just plugged it in), which device node got assigned to your USB stick lets assumes <span class="highlight-3">/dev/sdb</span>  .</p>
+
+							<p>Clear your USB stick,<span class="highlight-3">all data will be lost</span>, you could also clear all of it, instead of just the first 16 MB. </p>
+
+
+<pre>
+$ sux
+Password:
+dd if=/dev/zero of=/dev/sdb bs=1M count=16
+16+0 records in
+16+0 records out
+16777216 bytes (17 MB) copied, 2.35751 s, 7.1 MB/s
+</pre>
+					<h3>Partitioning the USB stick</h3>
+							<p>Partitioning and formatting your USB stick correctly is probably the hardest part.</p>
+
+							<p>Set the partition label to FAT16, on &lt;2 GB sticks (it offers better compatibility overall).</p>
+
+							<p>Next fdisk to partition:</p>
+<pre>
+# fdisk /dev/sdb
+fdisk /dev/sdb
+Device contains neither a valid DOS partition table, nor Sun, SGI or OSF disklabel
+Building a new DOS disklabel with disk identifier 0xa8993739.
+Changes will remain in memory only, until you decide to write them.
+After that, of course, the previous content won't be recoverable.
+
+Warning: invalid flag 0x0000 of partition table 4 will be corrected by w(rite)
+</pre>
+							<p>Now create a partition:</p>
+<pre>
+Command (m for help): <span class="highlight-3"><b>n</b></span>
+Command action
+   e   extended
+   p   primary partition (1-4)
+<span class="highlight-3"><b>p</b></span>
+Partition number (1-4): <span class="highlight-3"><b>1</b></span>
+First cylinder (1-1018, default 1):
+Using default value 1
+Last cylinder or +size or +sizeM or +sizeK (1-1018, default 1018):
+Using default value 1018
+</pre>
+							<p>Confirm the creation of the partition by printing the partition table:</p>
+<pre>
+Command (m for help): <span class="highlight-3"><b>p</b></span>
+
+Disk /dev/sdb: 2003 MB, 2003828736 bytes
+62 heads, 62 sectors/track, 1018 cylinders
+Units = cylinders of 3844 * 512 = 1968128 bytes
+Disk identifier: 0xa8993739
+
+   Device Boot      Start         End      Blocks   Id  System
+/dev/sdb1               1        1018     1956595+  83  Linux
+</pre>
+							<p>Set the correct partition label, '6' for FAT16:</p>
+<pre>
+Command (m for help): <span class="highlight-3"><b>t</b></span>
+Selected partition 1
+Hex code (type L to list codes): <span class="highlight-3"><b>l</b></span>
+
+ 0  Empty           1e  Hidden W95 FAT1 80  Old Minix       be  Solaris boot
+ 1  FAT12           24  NEC DOS         81  Minix / old Lin bf  Solaris
+ 2  XENIX root      39  Plan 9          82  Linux swap / So c1  DRDOS/sec (FAT-
+ 3  XENIX usr       3c  PartitionMagic  83  Linux           c4  DRDOS/sec (FAT-
+ 4  FAT16 &lt;32M      40  Venix 80286     84  OS/2 hidden C:  c6  DRDOS/sec (FAT-
+ 5  Extended        41  PPC PReP Boot   85  Linux extended  c7  Syrinx
+ 6  FAT16           42  SFS             86  NTFS volume set da  Non-FS data
+ 7  HPFS/NTFS       4d  QNX4.x          87  NTFS volume set db  CP/M / CTOS / .
+ 8  AIX             4e  QNX4.x 2nd part 88  Linux plaintext de  Dell Utility
+ 9  AIX bootable    4f  QNX4.x 3rd part 8e  Linux LVM       df  BootIt
+ a  OS/2 Boot Manag 50  OnTrack DM      93  Amoeba          e1  DOS access
+ b  W95 FAT32       51  OnTrack DM6 Aux 94  Amoeba BBT      e3  DOS R/O
+ c  W95 FAT32 (LBA) 52  CP/M            9f  BSD/OS          e4  SpeedStor
+ e  W95 FAT16 (LBA) 53  OnTrack DM6 Aux a0  IBM Thinkpad hi eb  BeOS fs
+ f  W95 Ext'd (LBA) 54  OnTrackDM6      a5  FreeBSD         ee  EFI GPT
+10  OPUS            55  EZ-Drive        a6  OpenBSD         ef  EFI (FAT-12/16/
+11  Hidden FAT12    56  Golden Bow      a7  NeXTSTEP        f0  Linux/PA-RISC b
+12  Compaq diagnost 5c  Priam Edisk     a8  Darwin UFS      f1  SpeedStor
+14  Hidden FAT16 &lt;3 61  SpeedStor       a9  NetBSD          f4  SpeedStor
+16  Hidden FAT16    63  GNU HURD or Sys ab  Darwin boot     f2  DOS secondary
+17  Hidden HPFS/NTF 64  Novell Netware  b7  BSDI fs         fd  Linux raid auto
+18  AST SmartSleep  65  Novell Netware  b8  BSDI swap       fe  LANstep
+1b  Hidden W95 FAT3 70  DiskSecure Mult bb  Boot Wizard hid ff  BBT
+1c  Hidden W95 FAT3 75  PC/IX
+
+Hex code (type L to list codes): <span class="highlight-3"><b>6</b></span>
+
+Changed system type of partition 1 to 6 (FAT16)
+</pre>
+							<p>Activate the new and only partition:</p>
+<pre>
+Command (m for help): <span class="highlight-3"><b>a</b></span>
+Partition number (1-4): <span class="highlight-3"><b>1</b></span>
+</pre>
+							<p>Print out the new partition table again, reconfirm that the partition indeed got activated:</p>
+<pre>
+Command (m for help): <span class="highlight-3"><b>p</b></span>
+
+Disk /dev/sdb: 2003 MB, 2003828736 bytes
+62 heads, 62 sectors/track, 1018 cylinders
+Units = cylinders of 3844 * 512 = 1968128 bytes
+Disk identifier: 0xa8993739
+
+   Device Boot      Start         End      Blocks   Id  System
+/dev/sdb1   *           1        1018     1956595+   6  FAT16
+</pre>
+							<p>Write the new partition table to your USB stick and exit fdisk:</p>
+<pre>
+Command (m for help): <span class="highlight-3"><b>w</b></span>
+The partition table has been altered!
+
+Calling ioctl() to re-read partition table.
+
+WARNING: If you have created or modified any DOS 6.x
+partitions, please see the fdisk manual page for additional
+information.
+Syncing disks.
+# exit
+</pre>
+							<p>Format your newly created USB stick:</p>
+<pre>
+mkfs -t vfat -n FreeDOS /dev/sdb1
+exit
+</pre>
+							<p>The preparatory phase is now complete.You have now have partitioned and formatted the USB stick, there's nothing else left to do and you can directly go to the install process.</p>
+#### -->
+							<li>Un outil d'installation pour FreeDOS <a href="http://www.freedos.org/freedos/files/"> fdbasecd.iso (8MB)</a>.</li>
+
+							<li>qemu (apt-get install qemu), qui est requis par l'installeur. Le BIOS de qemu fait apparaître votre clé USB dans FreeDOS comme un disque ordinaire. Ainsi vous pouvez l'installer comme d'habitude (et éviter de graver l'iso de FreeDOS).</li>
+						</ol>
+
+				<h5><span class="highlight-2">C'est une phase très critique: à aucun moment la clé usb ne doit être montée. Soyez très prudent en selectionnant la bonne clé, autrement toutes les données du disque selectionné seront irrémédiablement supprimées, par exemple si vous sélectionnez par erreur votre disque dur principal.</span></h5>
+
+	<div class="spacer02"></div>
+							<p>Branchez votre clé USB, <span class="highlight-2">souvenez-vous, ne la montez pas</span>. Vérifiez grâce à dmesg (le dernier message, si vous venez juste de la brancher) le nom qui a été assigné à votre clé USB (par exemple <span class="highlight-3">/dev/sdb</span>).</p>
+
+							<p>Supprimez les fichiers présents sur votre clé USB grâce à la commande suivante, <span class="highlight-3">toutes les données seront perdues</span>. La commande suivante ne supprime que les 16 premiers MB, mais vous pouvez, si vous le désirez, supprimer la totalité de son contenu. </p>
+
+
+<pre>
+$ sux
+Password:
+dd if=/dev/zero of=/dev/sdb bs=1M count=16
+16+0 records in
+16+0 records out
+16777216 bytes (17 MB) copied, 2.35751 s, 7.1 MB/s
+</pre>
+					<h3>Partitionner la clé USB</h3>
+							<p>Partitionner et formater correctement votre clé USB est probablement la partie la plus difficile.</p>
+
+							<p>Formater la clé en FAT16 si sa capacité est &lt;2 GB (offre une meilleure compatibilité).</p>
+
+							<p>Utilisez ensuite fdisk pour partitionner :</p>
+<pre>
+# fdisk /dev/sdb
+fdisk /dev/sdb
+Device contains neither a valid DOS partition table, nor Sun, SGI or OSF disklabel
+Building a new DOS disklabel with disk identifier 0xa8993739.
+Changes will remain in memory only, until you decide to write them.
+After that, of course, the previous content won't be recoverable.
+
+Warning: invalid flag 0x0000 of partition table 4 will be corrected by w(rite)
+</pre>
+							<p>Créer une partition :</p>
+<pre>
+Command (m for help): <span class="highlight-3"><b>n</b></span>
+Command action
+   e   extended
+   p   primary partition (1-4)
+<span class="highlight-3"><b>p</b></span>
+Partition number (1-4): <span class="highlight-3"><b>1</b></span>
+First cylinder (1-1018, default 1):
+Using default value 1
+Last cylinder or +size or +sizeM or +sizeK (1-1018, default 1018):
+Using default value 1018
+</pre>
+							<p>Confirmer la création de la partition en éditant la table de partition :</p>
+<pre>
+Command (m for help): <span class="highlight-3"><b>p</b></span>
+
+Disk /dev/sdb: 2003 MB, 2003828736 bytes
+62 heads, 62 sectors/track, 1018 cylinders
+Units = cylinders of 3844 * 512 = 1968128 bytes
+Disk identifier: 0xa8993739
+
+   Device Boot      Start         End      Blocks   Id  System
+/dev/sdb1               1        1018     1956595+  83  Linux
+</pre>
+							<p>Choisir le bon type de partitionnement, '6' pour FAT16 :</p>
+<pre>
+Command (m for help): <span class="highlight-3"><b>t</b></span>
+Selected partition 1
+Hex code (type L to list codes): <span class="highlight-3"><b>l</b></span>
+
+ 0  Empty           1e  Hidden W95 FAT1 80  Old Minix       be  Solaris boot
+ 1  FAT12           24  NEC DOS         81  Minix / old Lin bf  Solaris
+ 2  XENIX root      39  Plan 9          82  Linux swap / So c1  DRDOS/sec (FAT-
+ 3  XENIX usr       3c  PartitionMagic  83  Linux           c4  DRDOS/sec (FAT-
+ 4  FAT16 &lt;32M      40  Venix 80286     84  OS/2 hidden C:  c6  DRDOS/sec (FAT-
+ 5  Extended        41  PPC PReP Boot   85  Linux extended  c7  Syrinx
+ 6  FAT16           42  SFS             86  NTFS volume set da  Non-FS data
+ 7  HPFS/NTFS       4d  QNX4.x          87  NTFS volume set db  CP/M / CTOS / .
+ 8  AIX             4e  QNX4.x 2nd part 88  Linux plaintext de  Dell Utility
+ 9  AIX bootable    4f  QNX4.x 3rd part 8e  Linux LVM       df  BootIt
+ a  OS/2 Boot Manag 50  OnTrack DM      93  Amoeba          e1  DOS access
+ b  W95 FAT32       51  OnTrack DM6 Aux 94  Amoeba BBT      e3  DOS R/O
+ c  W95 FAT32 (LBA) 52  CP/M            9f  BSD/OS          e4  SpeedStor
+ e  W95 FAT16 (LBA) 53  OnTrack DM6 Aux a0  IBM Thinkpad hi eb  BeOS fs
+ f  W95 Ext'd (LBA) 54  OnTrackDM6      a5  FreeBSD         ee  EFI GPT
+10  OPUS            55  EZ-Drive        a6  OpenBSD         ef  EFI (FAT-12/16/
+11  Hidden FAT12    56  Golden Bow      a7  NeXTSTEP        f0  Linux/PA-RISC b
+12  Compaq diagnost 5c  Priam Edisk     a8  Darwin UFS      f1  SpeedStor
+14  Hidden FAT16 &lt;3 61  SpeedStor       a9  NetBSD          f4  SpeedStor
+16  Hidden FAT16    63  GNU HURD or Sys ab  Darwin boot     f2  DOS secondary
+17  Hidden HPFS/NTF 64  Novell Netware  b7  BSDI fs         fd  Linux raid auto
+18  AST SmartSleep  65  Novell Netware  b8  BSDI swap       fe  LANstep
+1b  Hidden W95 FAT3 70  DiskSecure Mult bb  Boot Wizard hid ff  BBT
+1c  Hidden W95 FAT3 75  PC/IX
+
+Hex code (type L to list codes): <span class="highlight-3"><b>6</b></span>
+
+Changed system type of partition 1 to 6 (FAT16)
+</pre>
+							<p>Activer l'unique et nouvelle partition :</p>
+<pre>
+Command (m for help): <span class="highlight-3"><b>a</b></span>
+Partition number (1-4): <span class="highlight-3"><b>1</b></span>
+</pre>
+							<p>Afficher à nouveau la table de partition et vérifier que la partition est active :</p>
+<pre>
+Command (m for help): <span class="highlight-3"><b>p</b></span>
+
+Disk /dev/sdb: 2003 MB, 2003828736 bytes
+62 heads, 62 sectors/track, 1018 cylinders
+Units = cylinders of 3844 * 512 = 1968128 bytes
+Disk identifier: 0xa8993739
+
+   Device Boot      Start         End      Blocks   Id  System
+/dev/sdb1   *           1        1018     1956595+   6  FAT16
+</pre>
+							<p>Écrire la nouvelle table de partition sur la clé USB et quitter fdisk :</p>
+<pre>
+Command (m for help): <span class="highlight-3"><b>w</b></span>
+The partition table has been altered!
+
+Calling ioctl() to re-read partition table.
+
+WARNING: If you have created or modified any DOS 6.x
+partitions, please see the fdisk manual page for additional
+information.
+Syncing disks.
+# exit
+</pre>
+							<p>Formater la clé USB :</p>
+<pre>
+mkfs -t vfat -n FreeDOS /dev/sdb1
+exit
+</pre>
+							<p>La phase préliminaire est terminée. Vous avez partitionné et formaté la clé USB, il n'y a rien d'autre à faire que de lancer directement le processus d'installation.</p>
+
+<!--- ####
+					<h3>Booting up FreeDOS with qemu</h3>
+
+							<p>As DOS has no idea of USB stick, you need to find a way to coax the FreeDOS installer into recognizing the USB as ordinary "harddisk", on live boot, the system's BIOS does that for us - but here the need to get inventive with qemu:</p>
+<pre>
+as user$:
+qemu -hda /dev/sdb -cdrom /path/to/fdbasecd.iso -boot d
+</pre>
+							<p><span class="highlight-1">ctrl-alt</span> will toggle mouse and keyboard grab and allow you to switch desktops to reread any instructions at each step.</p>
+
+		<div class="screenshot"><img src="../lib/images-common/images-qemu-freedos/qemu-boot01.jpg" alt="qemu" /></div>
+							<p>This boots the FreeDOS CD and maps the USB stick raw device as primary master HD (here qemu's BIOS emulation abililty makes the USB stick appear to DOS as an ordinary harddisk).  Select the installer from the start menu of the virtualised FreeDOS boot:</p>
+<pre>
+1) Continue to boot FreeDOS from CD-ROM
+<span class="highlight-3"><b>1</b></span>
+enter
+</pre>
+	<div class="spacer02"></div>
+							<p>Keep choosing the default of <span class="highlight-3">1</span> and/or choosing <span class="highlight-3">Yes</span> when asked.</p>
+
+	<div class="spacer02"></div>
+		<div class="screenshot"><img src="../lib/images-common/images-qemu-freedos/qemu-boot02.jpg" alt="freedos-inst1" /></div>
+
+		<div class="spacer02"></div>
+	<div class="screenshot"><img src="../lib/images-common/images-qemu-freedos/qemu-boot04.jpg" alt="freedos-inst2" /></div>
+
+	<div class="spacer02"></div>
+
+	<div class="spacer02"></div>
+		<div class="screenshot"><img src="../lib/images-common/images-qemu-freedos/qemu-boot09.jpg" alt="freedos-inst3" /></div>
+
+
+	<div class="spacer02"></div>
+
+							<p>The install asks you to reboot - <span class="highlight-3">don't do that yet, as there is a need to fix up two errors in the FreeDOS installer for the mbr and bootmenu</span>. Type the letter <span class="highlight-3"><b>n</b></span>.</p>
+	<div class="spacer02"></div>
+		<div class="screenshot"><img src="../lib/images-common/images-qemu-freedos/qemu-boot18.jpg" alt="freedos-inst4" /></div>
+
+	<div class="spacer02"></div>
+				<h3>Writing a bootsector to your USB stick</h3>
+							<p>The first error to fix is the mbr with:</p>
+
+<pre>
+fdisk /mbr 1
+</pre>
+							<p>The second error that needs fixing is the bootmenu in your new fdconfig.sys, run:</p>
+<pre>
+cd \
+edit fdconfig.sys
+</pre>
+							<p>and change the line starting command.com to:</p>
+<pre>
+1234?SHELLHIGH=C:\FDOS\command.com C:\FDOS /D /P=C:\fdauto.bat /K set
+(don't actually change this command, just add "1234?" to the begin of the line (before SHELLHIGH==C:\FDOS\command.com .....
+NOTE it is to read : <span class="highlight-3">1234?</span>
+</pre>
+		<div class="screenshot"><img src="../lib/images-common/images-qemu-freedos/qemu-boot23.jpg" alt="fdconfig.sys" /></div>
+	<div class="spacer02"></div>
+							<p><span class="highlight-2">Do not change anything else, as the line depends on your install setup.</span></p>
+
+							<p>Save it and exit "edit":</p>
+<pre>
+[alt]+[f]
+</pre>
+							<p>Once you're back to the command prompt, you can leave qemu.</p>
+
+ 							<p>Test to check if qemu will boot the USB stick.</p>
+<pre>
+qemu -hda /dev/sdb -boot c
+</pre>
+ 							<p>Your USB stick is now bootable and contains a full FreeDOS install of 5.4 MB, for flashing. You really should boot without any drivers <span class="highlight-3">(menu option 4), loading the  himem.sys and emm386 files may otherwise interfere with your flashing programs!</span>:</p>
+
+				<h3>Updating the BIOS</h3>
+							<p>Assuming your PC is up and running, plug in the FreeDOS USB stick, mount it and download the BIOS files needed, as recommended by the manufacturer of your motherboard/BIOS, to the FreeDOS USB stick, then umount the stick.</p>
+
+							<p> Power off your PC, plug in the FreeDOS USB stick, power up, so that you boot to the FreeDOS USB stick and follow the procedures of the manufacturer of your motherboard/BIOS.</p>
+#### -->
+					<h3>Lancer FreeDOS avec qemu</h3>
+
+							<p>Étant donné que DOS ne reconnaît pas les clés USB, il va falloir trouver un moyen pour que l'installeur de FreeDOS reconnaisse la clé USB comme un disque dur ordinaire. Le BIOS du système s'en charge automatiquement lors d'un démarrage ordinaire - cependant dans le cas présent il faut se montrer inventif avec qemu :</p>
+<pre>
+as user$:
+qemu -hda /dev/sdb -cdrom /path/to/fdbasecd.iso -boot d
+</pre>
+
+							<p>La combinaison de touches <span class="highlight-1">ctrl-alt</span> vous permettra de libérer le clavier et la souris afin de basculer entre les deux bureaux pour relire les instructions à chaque étape.</p>
+
+		<div class="screenshot"><img src="../lib/images-common/images-qemu-freedos/qemu-boot01.jpg" title="QEMU FreeDOS" alt="QEMU FreeDOS" /></div>
+							<p>Ceci démarre le CD FreeDOS et presente la clé USB comme disque dur primaire (là le BIOS de qemu fait apparaître la clé USB dans DOS comme un disque dur ordinaire). Sélectionner l'installateur dans le menu démarrer de la fenêtre virtuelle de démarrage de FreeDOS :</p>
+<pre>
+1) Continue to boot FreeDOS from CD-ROM
+<span class="highlight-3"><b>1</b></span>
+enter
+</pre>
+	<div class="spacer02"></div>
+							<p>Choisir par défaut <span class="highlight-3">1</span> et/ou choisir <span class="highlight-3">Yes (oui)</span> si demandé.</p>
+
+	<div class="spacer02"></div>
+		<div class="screenshot"><img src="../lib/images-common/images-qemu-freedos/qemu-boot02.jpg" title="Freedos Installation - 1" alt="freedos-inst1" /></div>
+
+		<div class="spacer02"></div>
+	<div class="screenshot"><img src="../lib/images-common/images-qemu-freedos/qemu-boot04.jpg" title="Freedos Installation - 2"  alt="freedos-inst2" /></div>
+
+	<div class="spacer02"></div>
+
+	<div class="spacer02"></div>
+		<div class="screenshot"><img src="../lib/images-common/images-qemu-freedos/qemu-boot09.jpg" title="Freedos Installation - 3" alt="freedos-inst3" /></div>
+
+
+	<div class="spacer02"></div>
+
+							<p>L'installateur vous demande alors de redémarrer - <span class="highlight-3">ne le faites surtout pas maintenant, puisqu'il est nécessaire de corriger deux erreurs de l'installateur pour le secteur de démarrage et le menu de demarrage</span>. Saisissez la lettre <span class="highlight-3"><b>n</b></span>.</p>
+	<div class="spacer02"></div>
+		<div class="screenshot"><img src="../lib/images-common/images-qemu-freedos/qemu-boot18.jpg" title="Freedos Installation - do not reboot type n" alt="freedos-do not reboot type n" /></div>
+
+	<div class="spacer02"></div>
+				<h3>Créer un secteur de boot sur la clé USB</h3>
+							<p>La première erreur à résoudre est celle du secteur de démarrage (mbr) :</p>
+
+<pre>
+fdisk /mbr 1
+</pre>
+							<p>En second lieu celle du menu de démarrage dans le nouveau fichier fdconfig.sys :</p>
+<pre>
+cd \
+edit fdconfig.sys
+</pre>
+							<p>et changer la ligne commençant par command.com en :</p>
+<pre>
+1234?SHELLHIGH=C:\FDOS\command.com C:\FDOS /D /P=C:\fdauto.bat /K set
+(ne changez pas cette commande à proprement parler, ajoutez juste "1234?" au début de la ligne (avant SHELLHIGH==C:\FDOS\command.com .....
+IMPORTANT de lire ceci: <span class="highlight-3">1234?</span>
+</pre>
+		<div class="screenshot"><img src="../lib/images-common/images-qemu-freedos/qemu-boot23.jpg" title="Edit fdconfig.sys " alt="fdconfig.sys" /></div>
+	<div class="spacer02"></div>
+							<p><span class="highlight-2">Ne rien changer d'autre, car de cette ligne dépendent des paramètres de l'installation.</span></p>
+
+							<p>Enregistrer et quitter "edit" :</p>
+<pre>
+[alt]+[f]
+</pre>
+							<p>Une fois revenu au prompt vous pouvez quitter qemu.</p>
+
+ 							<p>Tester pour vérifier que qemu démarre votre clé USB.</p>
+<pre>
+qemu -hda /dev/sdb -boot c
+</pre>
+ 							<p>Votre clé USB est maintenant bootable et contient l'installateur de FreeDOS de 5.4 MB. Vous devriez démarrer sans aucun driver <span class="highlight-3">(option 4 du menu), en effet le chargement des fichiers himem.sys et emm386 pourraient interférer avec les programmes de démarrage !</span>.</p>
+
+				<h3>Mettre à jour le BIOS</h3>
+							<p>L'ordinateur étant allumé, brancher la clé USB contenant FreeDOS, la monter et y télécharger les fichiers nécessaires au BIOS comme requis par le fabricant de la carte mère/du BIOS et démonter la clé USB.</p>
+
+							<p>Éteindre l'ordinateur, brancher la clé USB contenant FreeDOS, le remettre en marche de sorte à ce qu'il démarre sur la clé et suivre les instructions du fabricant de la carte mère/du BIOS.</p>
+
+
+
+	</div>
+
+			<div id="rev">Révisé le 23/09/2010</div>
+</div>
+</body>
+</html>

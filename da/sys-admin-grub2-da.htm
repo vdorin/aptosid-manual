@@ -1,0 +1,614 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="da" lang="da">
+<head>
+	<title>aptosid Manuals - Grub2</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision by ragupo 26/02/2011 2240hrs UTC -->
+<!--htdig_noindex--><div id="menu"> <!-- menu starts here en lang maintained by ragupo-->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="Tilbage til aptosid.com forums og wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-da.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" />Søg online - offline</a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Vælg et andet sprog - Choose another language CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="lang-switch CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-da.htm">aptosid OS Manual</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-da.htm#welcome-gen">aptosid OS Manual &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-da.htm#cred-team">Tak til</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-da.htm#how-to">Hvordan du anvender denne manual &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-da.htm#how-to">Hvordan du anvender denne manual</a></li>
+					  <li><a href="welcome-da.htm#table-contents">Inholdsfortegnelse</a></li>
+					</ul>
+					</li>
+		<li><a href="help-da.htm#help-gen">Sådan får du hjælp &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-da.htm#help-gen">Hvor og hvordan får du hjælp</a></li>
+					  <li><a href="help-da.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-da.htm#welcome-quick">aptosid Hurtig Start Guide</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-da.htm">ISO indhold, udgivelser, filspejle og cd-brænding</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-da.htm#cd-content">ISO indhold og systemkrav &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-da.htm#rolling">Bemærkninger til udgivelsen</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-da.htm#download-aptosid">aptosid filspejle, download og cd-brænding &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-da.htm#md5">md5 Checksum</a></li>
+					  <li><a href="cd-dl-burning-da.htm#burn-nero">cd-brænding i Windows</a></li>
+					  <li><a href="cd-dl-burning-da.htm#burn-linux">cd-brænding i Linux</a></li>
+					  <li><a href="cd-no-gui-burn-da.htm#burning-no-gui">burniso skript</a></li>
+					  <li><a href="cd-no-gui-burn-da.htm#burn-no-gui-gen">cd-brænding uden grafisk brugerflade</a></li>
+					  <li><a href="cd-dl-burning-da.htm#download-aptosid">aptosid download filspejle</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-da.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-da.htm#rootpw">Root-kodeord på aptosid Live ISO</a></li>
+				<li><a href="live-mode-da.htm#live-cd-installsoft">Installering af programmer under Live-ISO</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-da.htm">Terminalen</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-da.htm#term-kon"> Terminal &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-da.htm#term-kon"> Terminalen</a></li>
+					  <li><a href="term-konsole-da.htm#colours"> Farver i terminal-prompten</a></li>
+					  <li><a href="term-konsole-da.htm#cli-help">Hjælp til kommandolinien</a></li>
+					  <li><a href="help-da.htm#init3-tools">Nyttige værktøjer til text mode (tty) - init 3</a></li>
+					  <li><a href="term-konsole-da.htm#term-cmds">Linux Terminal kommando liste</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-da.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-da.htm">CheatCodes</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-da.htm#cheatcodes">aptosid specifikke Live-ISO Cheatcodes</a></li>
+				<li><a href="cheatcodes-da.htm#cheatcodes-linux">Linux generiske Cheatcodes</a></li>
+				<li><a href="cheatcodes-vga-da.htm#vga">VGA Codes</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-da.htm">Partitioning the Hard Drive - Traditional, GPT and LVM</a>
+		    <ul class="sub-menu" id="sm6">
+			  <li><a href="part-gparted-da.htm#hd-ntfs3g">Skriv til NTFS partitioner med ntfs-3g</a></li>
+			<li><a href="part-lvm-da.htm#part-lvm">Partitionering med anvendelse af LVM - Logical Volume Manager</a></li>
+			<li><a href="part-gparted-da.htm#partition">Partitionering med grafisk brugerflade &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-da.htm#partition">Partitionering af din harddisk med GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-da.htm#ntfs">Ændre størrelsen på NTFS partitioner med GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-da.htm#partition">Partitionering fra kommandolinien &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-da.htm#partition">Partitionering af harddisken med cfdisk</a></li>
+					    <li><a href="part-cfdisk-da.htm#formating">Formattering efter partitionering med cfdisk</a></li>
+					    <li><a href="part-gdisk-ca.htm#gdisk-6">Formatting after partitioning with gdisk</a></li>
+					    <li><a href="part-gdisk-da.htm#gdisk-1">GPT Partitioning with gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-da.htm#part-example">Basal partitionering &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-da.htm#part-example">Eksempler på partitionsstørrelser</a></li>
+					  <li><a href="part-uuid-da.htm#uuid">UUID, Genopbygning af fstab og oprettelse af nye monteringspunkter</a></li>
+					  <li><a href="part-cfdisk-da.htm#disknames">Nomenklatur for diske og partitionsnavngivning</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-da.htm">Installations muligheder - HD, USB, VM og Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-da.htm#Inst-prep">Forberedelser til installationen &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-da.htm#Inst-prep">Installations forberedelser</a></li>
+					  <li><a href="hd-install-da.htm#Installation">Installering til harddisken</a></li>
+					  <li><a href="hd-install-da.htm#first-hd-boot">Første opstart</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-da.htm#fromiso">Opstart fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-da.htm#fromiso">Opstart fromiso - Overblik</a></li>
+					  <li><a href="hd-install-opts-da.htm#grub2-fromiso">Opstart 'fromiso' med Grub 2</a></li>
+					  <li><a href="hd-install-opts-da.htm#fromiso-persist">Fromiso og persist</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-da.htm#usb-hd">Installering til USB drev &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-da.htm#usb-hd">Installering til en USB-HD - aptosid specific - aptosid-on-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-da.htm#raw-usb">Installering af aptosid til USB/SSD nøgle fra Linux, MS Windows eller Mac OS X systemer</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-da.htm#install-crypt">Installering på krypterede partitioner - cryptroot</a></li>
+		  <li><a href="nbdboot-da.htm#nbd1">Boote aptosid over netværketk</a></li>
+		  <li><a href="hd-install-vmopts-da.htm#vmopts">Virtual Machine installations muligheder</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-da.htm">Grafikkort, Monitors, Xorg &amp; drivere</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-da.htm#mon-res">Skærmopløsning og monitors  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-da.htm#mon-res">Skærm opløsning og monitors</a></li>
+					  <li><a href="hw-dev-mon-da.htm#xrandr">Dual Monitors og xrandr</a></li>
+					  <li><a href="hw-dev-mon-da.htm#mon-binary">Dual Monitors (med binære drivere)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-da.htm#foss-xorg">GPU drivers &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-da.htm#ati-3d">AMD/ATI 3D drivere</a></li>
+					  <li><a href="gpu-da.htm#intel">Intel 2D and 3D drivere</a></li>
+					  <li><a href="gpu-da.htm#nvidia">Nvidia 3D drivere</a></li>
+					  <li><a href="gpu-da.htm#foss-xorg">Open Source Xorg drivere</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-da.htm#fw-detect">Firmware detection - non-free </a></li>
+			  <li><a href="nf-firm-da.htm#non-free-firmware">Tilføj non-free til kildelisten </a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-da.htm#install-add">Window Managers</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-da.htm">KDE and XFCE Window Managers &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-da.htm#xfce-notes">Nyttige Xfce ekstras</a></li>
+					    <li><a href="wm-dm-da.htm#install-add">Nyttige ekstra KDE Apps</a></li>
+					    <li><a href="wm-dm-da.htm#desk-freeze">Skrivebordet fyser</a></li>
+					    <li><a href="wm-dm-da.htm#kde-login">ingen login i KDE mulig</a></li>
+					    <li><a href="wm-dm-da.htm#ch-th">Ændre Themes</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-da.htm#dm">Installing additional Display Managers</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-da.htm">Internet forbindelse, WiFi, LAN og Netwærk</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-da.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-da.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-da.htm#serv-ftp">FTP klienter</a></li>
+					    <li><a href="lamp-apache-da.htm#serv-sec">Sikkerheds protocoller</a></li>
+					    <li><a href="lamp-apache-da.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-da.htm#serv-mysql">MySQL opsætning</a></li>
+					    <li><a href="lamp-ppp-da.htm#serv-php">PHP i Apache</a></li>
+					    <li><a href="ntp-server-da.htm#ntp-server">Opsætning af timeserver</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-da.htm#privoxy">Firewalls og Privatliv &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-da.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-da.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-da.htm#firewalls">Firewalls</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-da.htm#ssh-x">SSH og Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-da.htm#setup">Samba-Server opsætning</a></li>
+						  <li><a href="samba-da.htm#configure">Konfiguration af SAMBA (Windows)</a></li>
+						  <li><a href="ssh-da.htm#ssh-fs">SSH Remote Mounting</a></li>
+						  <li><a href="ssh-da.htm#ssh-x">X Window Apps via SSH</a></li>
+						  <li><a href="ssh-da.htm#ssh-f">GUI SSH med Konqueror</a></li>
+						  <li><a href="ssh-da.htm#ssh-w">SSH X-Forwarding fra en Windows-PC</a></li>
+						  <li><a href="ssh-da.htm#ssh">SSH og sikkerhed</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-da.htm#netcardconfig">WIFI forbindelser &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-da.htm#netcardconfig">Kom online - Ceni</a></li>
+						    <li><a href="inet-wpagui-da.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-da.htm#net-set1">WiFi - opsætning af WiFi Roaming</a></li>
+						    <li><a href="inet-wpa-da.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-da.htm#hotswitch">Skift imellem kablet og trådløs forbindelse</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-da.htm#netcardconfig">Kablede forbindelser &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-da.htm#dial-mod">56k Modems</a></li>
+						    <li><a href="inet-ceni-da.htm#netcardconfig">kom online - Ceni</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-da.htm#fw-detect">Firmware detection - non-free </a></li>
+		<li><a href="nf-firm-da.htm#non-free-firmware">Tilføj non-free til kildelisten </a></li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-da.htm">Pkke administration og dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-da.htm#apt-cook">APT Cookbook og Sources list &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-da.htm#apt-cook">APT-Guide Cookbook og Sources list</a></li>
+					    <li><a href="sys-admin-apt-da.htm#apt-install">Installation af nye pakker</a></li>
+					    <li><a href="sys-admin-apt-da.htm#apt-delete">Afinstaller pakker</a></li>
+					    <li><a href="sys-admin-apt-da.htm#apt-downgrade">Pakke på Hold og nedgradering</a></li>
+					    <li><a href="sys-admin-apt-da.htm#apt-cache">Søgning efter pakker med apt-cache</a></li>
+					    <li><a href="sys-admin-apt-da.htm#gui-pacsea">Søgning after pakker i GUI</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-da.htm#kern-upgrade">Opdatering af kernel &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-da.htm#kern-remove">Fjernelse af Kernels</a></li>
+					    <li><a href="sys-admin-kern-upg-da.htm#kern-upgrade">Opdatering af kernel</a></li>
+					    <li><a href="sys-admin-kern-upg-da.htm#dmakms">Dynamisk installering af kernel moduler med dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-da.htm#apt-upgrade">Opdatering af installeret systemet -  dist-upgrade - Overblik &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-da.htm#live-cd-upgrade">Opdatering med Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-da.htm#approx">dist-upgrade af flere PCer på et LAN</a></li>
+					    <li><a href="sys-admin-apt-da.htm#apt-upgrade">opdatere et installeret system -  dist-upgrade - Overblik</a></li>
+					    <li><a href="sys-admin-apt-da.htm#du-st">Opdater et installeret system -  dist-upgrade - Trinvis guide</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-da.htm">System Administration</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-da.htm#bois-prep">Opdatering af BIOS med FreeDOS</a></li>
+		<li><a href="vir-rkits-da.htm#virus-rkits">Virus og Rootkit Skannere</a></li>
+		<li><a href="hd-install-da.htm#adduser">Tilføje brugere og kodeord &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-da.htm#adduser">Tilføj en ny bruger</a></li>
+					    <li><a href="sys-admin-gen-da.htm#pw-lost">Mistet root kodeord, nye kodeord</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-da.htm#start-services">Tjenester og init runlevels &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-da.htm#start-services">Tjenester aktiver/deaktiver</a></li>
+					    <li><a href="sys-admin-gen-da.htm#pkill">Killing a service or process</a></li>
+					    <li><a href="sys-admin-gen-da.htm#init">aptosid runlevels - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-da.htm#rsync">Sikkerhedskopi af systemet &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-da.htm#rdiff">Sikkerhedskopi med rdiff</a></li>
+					    <li><a href="sys-admin-rsync-da.htm#rsync">Sikkerhedskopi med rsync</a></li>
+					    <li><a href="home-da.htm#home-bu">Flytte /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-da.htm#fonts">CUPS, Fonte og Lyd &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-da.htm#fonts">Fonte</a></li>
+					     <li><a href="sys-admin-gen-da.htm#cups">CUPS - Print System</a></li>
+					     <li><a href="sys-admin-gen-da.htm#sound">Lyd Mixers</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-da.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-da.htm#chroot">Grub2 - Gneopret Grub med chroot</a></li>
+					    <li><a href="sys-admin-grub2-da.htm#mbr-over-grub2">Grub2 - MBR overskrevet</a></li>
+					    <li><a href="sys-admin-grub2-da.htm#multi-os">Grub2 - Dual og Multibooting</a></li>
+					    <li><a href="sys-admin-grub2-da.htm#grub1-grub2">Grub2 -Opgradering fra Grub1</a></li>
+					    <li><a href="sys-admin-grub2-da.htm#grub2">Grub2 - Overblik</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Sponsored by webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid is proudly hosted by webtropia.com" alt="aptosid is proudly hosted by webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+		<div class="divider" id="grub2">
+			<h2 id="top-header">GRUB 2</h2>
+				<h6>De grundlæggende forskelle mellem GRUB 1 (herfra kaldt grub-legacy) og GRUB 2:</h6>
+
+					<ul>
+						  	<li><span class="highlight-3">menu.lst findes ikke længere.</span></li>
+
+							<li>En fil der hedder <span class="highlight-3">grub.cfg</span> kontrollerer nu Grub Skærmen.</li>
+
+							<li>grub.cfg genereres automatisk af skripts i <span class="highlight-3"> /etc/grub.d</span>.</li>
+
+							<li>Partitions nummereringen er også forskellig. Partitioner nummereres fra 1 og ikke fra 0 (drev nummereres stadig fra 0):
+<pre>
+Linux      grub1     grub2
+/dev/sda1  (hd0,0)   (hd0,1)
+/dev/sda2  (hd0,1)   (hd0,2)
+/dev/sda3  (hd0,2)   (hd0,3)
+
+/dev/sdb1  (hd1,0)   (hd1,1)
+/dev/sdb2  (hd1,1)   (hd1,2)
+/dev/sdb3  (hd1,2)   (hd1,3)
+</pre>
+							</li>
+
+							<li>Indholdet i grub.cfg er skrevet på en lidt anderledes måde sammenlignet med menu.lst, og man kan ikke kopiere direkte fra Grub 1 menu.lst til Grub 2 grub.cfg eftersom grub.cfg er en form for resulterende fil. <span class="highlight-2">grub.cfg filen skal aldrig på nogen måde redigeres manuelt. </span></li>
+
+					 </ul>
+		</div>
+		<div class="divider" id="grub2-files">
+					  <h4> Grub 2 standard konfigurationsfilen</h4>
+							<p>Filen <span class="highlight-3">/etc/default/grub</span> indeholder grub2's variable indstillinger som for eksempel; timeout på menuen, standard indgange i menuen der er aktive; kernel parameters; anvendelsen af grub grafik, og så videre.</p>
+
+					 <h4> Grub 2 skript filerne</h4>
+							<p><span class="highlight-3"> /etc/grub.d</span> filerne kontrollerer den resulterende fil, der hedder <span class="highlight-3"> grub.cfg</span>, og som du finder i <span class="highlight-3"> /boot/grub/</span>.</p>
+
+							<p><span class="highlight-2">grub.cfg filen skal du aldrig redigere i manuelt. </span>Alle ændringer skal gøres via et eller flere af skript filerne du finder i <span class="highlight-3"> /etc/grub.d</span>. os-prober burde håndtere dette korrekt i 90% af tilfældene:</p>
+<pre>
+00_header:
+05_debian_theme: Sets background, text colors, themes
+10_hurd: Locates Hurd kernels
+10_linux: Locates Linux kernels based on results of the lsb_release command.
+20_memtest86+: If the file /boot/memtest86+.bin exists, it is included in the boot menu.
+30_os-prober: Searches for Linux and other OS's on all partitions; includes them in the boot menu.
+40_custom: A template for adding custom boot menu entries for other Operating Systems.
+60_fll-fromiso: A template for adding custom boot menu entries for fromiso to a USB-stick/SSD-card.
+<span class="highlight-2">60_fll-fromiso is not to be altered use /etc/default/grub2-fll-fromiso
+Yderligere information finder du i  <a href="hd-install-opts-da.htm#grub2-fromiso">opstart 'fromiso' med Grub 2</a></span>
+</pre>
+							<p>Efter at der er foretaget ændringer skal grub.cfg fortælles herom. i tilfælde af aptosid kernel opgraderinger sker opdateringen af grub.cfg automatisk. I tilfælde af manuelle ændringer i nogle af de ovennævnte filer, foretaget af dig som systemadministrator,skla du efterfølgende køre følgende kommando: </p>
+
+<pre>
+update-grub
+</pre>
+
+							<p><span class="highlight-3">Debian Grub2 deb pakken er designet således at manuelle ændringer foretaget af dig sjældent er nødvendige.</span></p>
+		</div>
+		<div class="divider" id="grub1-grub2">
+				<h2>opgradering fra Grub Legacy til Grub 2</h2>
+							<p><span class="highlight-2">Vi anbefaler at opgradere til Grub 2 rent, og fjerne Grub 1 helt</span>. Du skal være opmærksom på at du kan lave seriøst ged i den her, så vær forsigtig.</p>
+
+						<h6>1: </h6>
+							<p>Forsikre dig at dit systemer fuldt <span class="highlight-3">dist-upgraded i init 3. </span></p>
+<pre>
+apt-get update
+Ctrl+alt+F1
+init 3
+apt-get dist-upgrade
+init 5 &amp;&amp; exit
+</pre>
+						<h6>2:</h6>
+							<p>Fjern Grub 1 helt fra systemet:</p>
+<pre>
+rm -rf /boot/grub
+apt-get purge grub-gfxboot
+</pre>
+							<p>Resultatet er at <span class="highlight-3">fll-iso2usb* grub-gfxboot* install-usb-gui* </span> vil blive fjernet. Tast <span class="highlight-3">Y</span> for at bekræfte dette (eller J hvis dit system er dansk).</p>
+
+						<h6>3:</h6>
+
+<pre>
+apt-get install grub2 os-prober
+</pre>
+
+<div class="screenshot"><img src="../lib/images-common/images-grub2/grub2-2.png" title="Grub2" alt="Grub2" /></div>
+							<p>Brug tabulator tasten til at vælge OK</p>
+
+<div class="screenshot"><img src="../lib/images-common/images-grub2/grub2-3.png" title="Grub2" alt="Grub2" /></div>
+							<p>Brug tabulator tasten til at vælge OK</p>
+
+<div class="screenshot"><img src="../lib/images-common/images-grub2/grub2-convert-1.png" title="Grub2-conversion 1" alt="Grub2-conversion 1" /></div>
+
+							<p>Brug tastaturets piletaster og mellemrumstasten til at placere et <span class="highlight-3">* (stjerne) </span> for at vælge hvilken harddisk MBR som Grub2 skal skrives til. <i>(I dette eksempel installeres til en USB-nøgle)</i>.</p>
+
+						<h6>4:</h6>
+<pre>
+update-grub
+</pre>
+
+
+						<h6>5:</h6>
+<pre>
+apt-get install install-usb-gui fll-iso2usb
+</pre>
+
+						<h6>Step 6:</h6>
+							<p>Genstart din PC og menu.cfg viser nu din kernel og Operativ system liset som det følgende:</p>
+<div class="screenshot"><img src="../lib/images-common/images-grub2/grub2-os-list.jpg" title="Grub2-OS list" alt="Grub2-OS list" /></div>
+
+							<p>Hvis der opstaår korrupte filer eller noget andet går galt, læs da venligst <a href="sys-admin-grub2-da.htm#chroot">Overskrevet eller korrumperet Grub2 i MBR</a> </p>
+
+				  <h3>Redigering af Grub2 boot muligheder via redigerings skærmen</h3>
+<div class="screenshot"><img src="../lib/images-common/images-grub2/grub2-e-1.JPG" title="Grub2-Edit" alt="Grub2-Edit" /></div>
+							<p>Hvis du af en eller anden grund får brug for at lave midlertidige ændringer til boot mulighederne for en kernel markeret i Grub2, så kan du taste <span class="highlight-2"> e </span> for at redigere kernel mulighederne, og ved at anvende piletasterne kan du navigere til den linie der skal redigeres. Mens du stadig er i redigerings skærmen bruger du <span class="highlight-3"> Ctrl+x </span> for at opstarte med dine redigerede parametre.</p>
+
+							<p>For eksempel, for at gå direkte til init 3 tilføjer du et <span class="highlight-3">3</span> til slutningen på <span class="highlight-3"> linux /boot/vmlinuz</span> linjen.</p>
+
+							<p>De redigeringer du foretager via redigeringslinien er ike permanente, de gælder kun for denne opstart. For at foretage permanente ændringer skal du redigere de rette filer. Se <a href="sys-admin-grub2-da.htm#grub2-files">Grub 2 filerne</a>.</p>
+
+	      </div>
+		<div class="divider" id="multi-os">
+				<h2>Dual og multi booting med Grub 2</h2>
+
+							<p>Da Grub2 er modulær i sin konfiguration kan en simpel kommando få den til at søge efter nye installerede operativ systemer, og hvis nogen findes vil de ændringerne blive forsøgt skrevet ind i menu.cfg. Den kommando der skal til for at søge efter nye operativ systemer er:</p>
+<pre>
+update-grub
+</pre>
+							<p>Skulle du have brug for at tilføje en manuel indgang i grubs menu.cfg eller hvis 30_os-prober fejler ved ikke at skrive til grub.cfg med chainloader menuer, så anvend din foretrukne teksteditor til at foretage rettelser til <span class="highlight-3"> /etc/grub.d/40_custom</span>.</p>
+
+							<p>Eksempel på redigering af 40_custom filen:</p>
+<pre>
+menuentry "second mbr"{
+set root=(hd1)
+chainloader +1
+}
+</pre>
+
+<pre>
+menuentry "second partition"{
+set root=(hd0,2)
+chainloader +1
+}
+</pre>
+							<p>Når du har foretaget dine ændringer, kører du:</p>
+<pre>
+update-grub
+</pre>
+							<p>Skulle der komme brok over at den ikke kender grub enheden for en disk, så betyder det at devicemap skal regenereres.</p>
+
+							<p><span class="highlight-3">Ved installation af et nyt operativ system skal du sikre dig at Grub bliver skrevet til partitionen, og ikke til MBR:</span></p>
+
+<pre>
+grub-mkdevicemap --no-floppy
+update-grub
+</pre>
+							<p>Eventuelle advarsler kan ignoreres.</p>
+
+							<p>Skulle du lave en fejl vil opdateringen sikkert overskrive din MBR og du bliver så nødt til at fikse det med <a href="sys-admin-grub2-da.htm#mbr-over-grub2">Grub2 - MBR Overskrevet</a>.</p>
+</div>
+	<div class="divider" id="mbr-over-grub2">
+
+					<h2>For kun at genskrive Grub2 til MBR fra harddisken:</h2>
+
+<pre>
+/usr/sbin/grub-install --recheck --no-floppy /dev/sda
+</pre>
+						<p>Denne kommando kan det være nødvendigt at køre flere gange før end at det faktisk bliver udført.</p>
+
+		<h2>MBR Bootsector overskrevet af Windows, en korrumperet og/ eller for at genoprette Grub2</h2>
+							<p><span class="highlight-2">BEMÆRK: for at genoprette Grub2 bootloaderen skal du have en 2009-04 (moros) aptosid.iso eller en senere version.</span> <a href="sys-admin-grub2-da.htm#chroot">Alternativt kan du anvende chroot med en hvilken som helst live.iso</a>.</p>
+
+							<p>For at genskrive grub2 til MBR og/eller for at genoprette grub2 generelt, sal du starte maskinen op fra en <span class="highlight-3">aptosid.iso</span>:</p>
+						<ol>
+							<li>For at identificere og bekræfte dine partitioner (e.g. [h,s]d[a..]X) skal du have root rettigheder, få dem med:
+<pre>
+$ sux
+</pre>
+							</li>
+							<li>Når du er root, skriv da:
+<pre>
+fdisk -l
+cat /etc/fstab
+</pre>
+							Dette er for at få de korrekte navne.
+							</li>
+							<li>Når du har forsikret dig om de korrekte partitioner, opretter du et monteringspunkt med:
+<pre>
+mkdir -p /media/[hdxx,sdxx,diskx]
+</pre>
+							</li>
+							<li>Monter den:
+<pre>
+mount /dev/xdxx /media/xdxx
+</pre>
+							</li>
+
+							<li>Nu kan du genskrive Grub til MBR på den første harddisk (generisk):
+<pre>
+/usr/sbin/grub-install --recheck --no-floppy --root-directory=/media/xdxx /dev/sda
+</pre>
+							</li>
+						</ol>
+	      </div>
+		<div class="divider" id="chroot">
+		      <h2>Anvendelse af chroot til at genskabe en overskrevet eller korrumperet Grub i MBR</h2>
+
+							<p>For at genoprette Grub hvis den er blevet overskrevet eller korrumperet i MBR, skal du opsætte et <span class="highlight-3">chroot</span> miljø. <span class="highlight-3">Enhver live.iso er tilstrækkelig til dette formål, eftersom chroot vil give dig adgang til din harddisk installation så du kan genoprette den nødvendige grub version, hvad enten det er grub1 (grub-legacy) eller grub2.</span></p>
+
+							<p>Boot maskinen med live aptosid.iso, vælg den rette til dit system (32 eller 64 bit CD, DVD, USB-nøgle eller SSD-kort) og åben en terminal/ konsol. Skriv <span class="highlight-3">sux</span> og tast retur for at få root rettigheder.</p>
+
+							<p>Anvendelse af <span class="highlight-3">fdisk -l eller blkid</span>, sikrer dig at du ved hvilken partition der er boot partitionen, og giver dig de korrekte navne. Hvis du foretrækker en grafisk brugerflade kan du anvende <span class="highlight-3">Gparted</span>:</p>
+<pre>
+blkid
+</pre>
+							<p>og for at kontrollere at fstab's information stemmer overens med output fra blkid:</p>
+<pre>
+cat /etc/fstab
+</pre>
+							<p>Vi antager at dit root filsystem er på <span class="highlight-3">/dev/sda2</span></p>
+<pre>
+mkdir /mnt/aptosid-chroot
+mount /dev/sda2 /mnt/aptosid-chroot
+</pre>
+
+							<p>Dernæst skal du montere /proc, /run, /dev og /sys som følger:</p>
+<pre>
+mount --bind /proc /mnt/aptosid-chroot/proc
+mount --bind /run /mnt/aptosid-chroot/run
+mount --bind /sys /mnt/aptosid-chroot/sys
+mount --bind /dev /mnt/aptosid-chroot/dev
+mount --bind /dev/pts /mnt/aptosid-chroot/dev/pts
+</pre>
+							<p>If you boot using an EFI system partition you will also need to mount it. Assuming this is /dev/sda1:</p>
+<pre>
+mount /dev/sda1 /mnt/aptosid-chroot/boot/efi
+</pre>
+
+							<p>Dit chroot miljø er nu sat op og klart, tilgå det ved følgende kommando:</p>
+<pre>
+chroot /mnt/aptosid-chroot /bin/bash
+</pre>
+
+							<p>Nu er du i stand til at anvende apt's lokale cache, eller ændre filer som skal rettes, ligesom hvis du på almindelig vis var startet op i operativ systemet. i dette tilfælde skal du fikse Grub tilbage til MBR.</p>
+
+							<p><span class="highlight-3">For at genoprette Grub 2</span></p>
+<pre>
+apt-get install --reinstall grub-pc
+</pre>
+							<p>To ensure that grub was installed to the correct disk or partition, run:</p>
+<pre>
+dpkg-reconfigure grub-pc
+</pre>
+							<p><span class="highlight-3">To restore Grub 2 EFI</span></p>
+<pre>
+apt-get install --reinstall grub-efi-amd64
+</pre>
+							<p><span class="highlight-3">For at genoprette Grub 1 (grub-legacy)</span></p>
+<pre>
+apt-get install --reinstall grub-legacy
+</pre>
+							<p>Følg installationsprogrammets instruktioner.</p>
+
+							<p>For at frigive chroot:</p>
+<pre>
+Ctrl+d
+</pre>
+							<p>Genstart din PC.</p>
+
+
+
+
+
+	</div>
+	<div id="rev">Page last revised 21/10/2011 0330 UTC</div>
+
+</div>
+</body>
+</html>

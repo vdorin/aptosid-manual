@@ -1,0 +1,614 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>Manuel de aptosid - rdiff</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!--htdig_noindex--><div id="menu"> <!-- menu starts here fr lang maintained by alphad, LjanA-->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="Vers aptosid.com, forum et wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-fr.htm#search-on"><img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" /> Rechercher</a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Choisir une autre langue - Choose another language CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="lang-switch CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-fr.htm">Manuel du système aptosid</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-fr.htm#welcome-gen">Manuel du système aptosid &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-fr.htm#cred-team">Contributeurs</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-fr.htm#how-to">Guide de l'utilisateur &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-fr.htm#how-to">Guide de l'utilisateur</a></li>
+					  <li><a href="welcome-fr.htm#table-contents">Table des matières</a></li>
+					</ul>
+					</li>
+		<li><a href="help-fr.htm#help-gen">Trouver de l'aide &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-fr.htm#help-gen">Où trouver de l'aide</a></li>
+					  <li><a href="help-fr.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-fr.htm#welcome-quick">Utiliser aptosid rapidement</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-fr.htm">Contenu de l'ISO, Versions, Téléchargement, Miroirs &amp; Gravure</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-fr.htm#cd-content">Contenu de l'ISO &#8211; Matériel minimal requis  &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-fr.htm#rolling">Notes de publication</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-fr.htm#download-aptosid">Miroirs aptosid &#8211; Téléchargement &#8211; Gravure &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-fr.htm#md5">md5 (somme de contrôle)</a></li>
+					  <li><a href="cd-dl-burning-fr.htm#burn-nero">Graver sous Windows</a></li>
+					  <li><a href="cd-dl-burning-fr.htm#burn-linux">Graver sous Linux</a></li>
+					  <li><a href="cd-no-gui-burn-fr.htm#burning-no-gui">Script burniso</a></li>
+					  <li><a href="cd-no-gui-burn-fr.htm#burn-no-gui-gen">Graver depuis un terminal</a></li>
+					  <li><a href="cd-dl-burning-fr.htm#download-aptosid">Miroirs de téléchargement aptosid</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-fr.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-fr.htm#rootpw">Mot de passe root en mode Live</a></li>
+				<li><a href="live-mode-fr.htm#live-cd-installsoft">Installer des logiciels en mode Live</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-fr.htm">Terminal / Konsole</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-fr.htm#term-kon">Terminal / Konsole &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-fr.htm#term-kon">Terminal / Konsole</a></li>
+					  <li><a href="term-konsole-fr.htm#colours"> prompt coloré dans un terminal </a></li>
+					  <li><a href="term-konsole-fr.htm#cli-help">Aide sous Terminal / Konsole</a></li>
+					  <li><a href="help-fr.htm#init3-tools">Outils utiles en mode texte (tty) &#8211; init 3</a></li>
+					  <li><a href="term-konsole-fr.htm#term-cmds">Liste de commandes sous BASH</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-fr.htm#sux">sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-fr.htm">Codes de démarrage</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-fr.htm#cheatcodes">Codes spécifiques à aptosid en mode Live</a></li>
+				<li><a href="cheatcodes-fr.htm#cheatcodes-linux">Codes génériques pour Linux</a></li>
+				<li><a href="cheatcodes-vga-fr.htm#vga">Codes VGA</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-fr.htm">Partitionner le disque dur - Traditionel, GPT et LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-fr.htm#hd-ntfs3g">Utiliser une partition NTFS grâce à ntfs-3g</a></li>
+			<li><a href="part-lvm-fr.htm#part-lvm">Partitionner pour utiliser LVM - Gestionnaire de Volumes Logiques</a></li>
+			<li><a href="part-gparted-fr.htm#partition">&#8230;dans un environnement graphique &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-fr.htm#partition">&#8230;avec GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-fr.htm#ntfs">Redimensionner une partition NTFS avec GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-fr.htm#partition">&#8230;en mode texte (CLI) &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-fr.htm#partition">&#8230;avec cfdisk</a></li>
+					    <li><a href="part-cfdisk-fr.htm#formating">Formater une partition créée avec cfdisk</a></li>
+					    <li><a href="part-gdisk-fr.htm#gdisk-6">Formater après partitionnement avec gdisk</a></li>
+					    <li><a href="part-gdisk-fr.htm#gdisk-1">GPT : partitionnement avec gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-fr.htm#part-example">Partitionner  &#8211; Concepts de base &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-fr.htm#part-example">Tailles des partitions  &#8211; Exemples</a></li>
+					  <li><a href="part-uuid-fr.htm#uuid">UUID, Modifier fstab et créer de nouveaux points de montage</a></li>
+					  <li><a href="part-cfdisk-fr.htm#disknames">Noms des disques et partitions</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-fr.htm">Choix du type d'installation &#8211; HD, USB, VM and Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-fr.htm#Inst-prep">Préparer l'installation &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-fr.htm#Inst-prep">Préparer l'installation </a></li>
+					  <li><a href="hd-install-fr.htm#Installation">Installer sur le disque dur (HD)</a></li>
+					  <li><a href="hd-install-fr.htm#first-hd-boot">Au premier démarrage</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-fr.htm#fromiso">Démarrer en mode ''fromiso'' &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-fr.htm#fromiso">''fromiso'' Généralités</a></li>
+					  <li><a href="hd-install-opts-fr.htm#grub2-fromiso">Démarrer ''fromiso'' avec grub2</a></li>
+					  <li><a href="hd-install-opts-fr.htm#fromiso-persist">''fromiso'' and persistance</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-fr.htm#usb-hd">Installer sur USB-HD &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-fr.htm#usb-hd">Installer sur disque USB &#8211; aptosid sur une clé USB</a></li>
+					  <li><a href="hd-ins-opts-oos-fr.htm#raw-usb">Installer aptosid sur une clé USB/carte SSD à partir de systèmes Linux, MS-Windows ou Mac-OS-X</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-fr.htm#install-crypt">Installation sur partitions cryptées - cryptroot</a></li>
+		  <li><a href="nbdboot-fr.htm#nbd1">Démarrer aptosid à partir d'un réseau</a></li>
+		<li><a href="hd-install-vmopts-fr.htm#vmopts">Choix d'installation sur une machine virtuelle</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-fr.htm">Cartes graphiques &#8211; Moniteurs &#8211; Xorg &#8211; Pilotes divers</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-fr.htm#mon-res">Définition des écrans &#8211; Moniteurs  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-fr.htm#mon-res">Définition des écrans &#8211; Moniteurs</a></li>
+					  <li><a href="hw-dev-mon-fr.htm#xrandr">Deux moniteurs &#8211; xrandr</a></li>
+					  <li><a href="hw-dev-mon-fr.htm#mon-binary">Deux moniteurs &#8211; outils binaires</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-fr.htm#foss-xorg">Drivers cartes graphiques&#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-fr.htm#ati-3d">Drivers AMD/ATI 3D</a></li>
+					  <li><a href="gpu-fr.htm#intel">Drivers Intel 2D and 3D</a></li>
+					  <li><a href="gpu-fr.htm#nvidia">Drivers Nvidia 3D</a></li>
+					  <li><a href="gpu-fr.htm#foss-xorg">Drivers Open Source Xorg</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-fr.htm#fw-detect">Détection de Firmware non-libre</a></li>
+			  <li><a href="nf-firm-fr.htm#non-free-firmware">Ajouter non-free aux Sources List</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-fr.htm">Gestionnaire de fenêtres</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-fr.htm">KDE and XFCE Gestionnaire de fenêtres &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-fr.htm#xfce-notes">Applications supplémentaires utiles pour Xfce</a></li>
+					    <li><a href="wm-dm-fr.htm#install-add">Applications supplémentaires utiles pour KDE</a></li>
+					    <li><a href="wm-dm-fr.htm#desk-freeze">Écran gelé</a></li>
+					    <li><a href="wm-dm-fr.htm#kde-login">Ouverture de session impossible (login) dans KDE</a></li>
+					    <li><a href="wm-dm-fr.htm#ch-th">Changer les fonds d'écran</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-fr.htm#dm">Installation de gestionnaires d'affichage supplémentaires</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-fr.htm">Internet &#8211; WiFi &#8211; LAN &#8211; Réseaux</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-fr.htm">Suite LAMP aptosid &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-fr.htm#serv-apache">Suite LAMP aptosid</a></li>
+					    <li><a href="lamp-apache-fr.htm#serv-ftp">Clients FTP</a></li>
+					    <li><a href="lamp-apache-fr.htm#serv-sec">Protocoles de sécurité</a></li>
+					    <li><a href="lamp-apache-fr.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-fr.htm#serv-mysql">Configurer MySQL </a></li>
+					    <li><a href="lamp-ppp-fr.htm#serv-php">Support PHP dans Apache</a></li>
+					    <li><a href="ntp-server-fr.htm#ntp-server">Configurer le serveur d'horloge (timeserver)</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-fr.htm#tor">Pare-feu &#8211; Confidentialité &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-fr.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-fr.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-fr.htm#firewalls">Pare-feu</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-fr.htm#ssh-x">SSH &#8211; Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-fr.htm#setup">Configurer un serveur Samba</a></li>
+						  <li><a href="samba-fr.htm#configure">Configurer SAMBA (MS-Windows)</a></li>
+						  <li><a href="ssh-fr.htm#ssh-fs">Montage d'un répertoire à distance via SSH</a></li>
+						  <li><a href="ssh-fr.htm#ssh-x">Application X via SSH</a></li>
+						  <li><a href="ssh-fr.htm#ssh-f">Environnement graphique pour SSH via Dolphin</a></li>
+						  <li><a href="ssh-fr.htm#ssh-w">Transmission de X via SSH depuis un PC MS-Windows</a></li>
+						  <li><a href="ssh-fr.htm#ssh">SSH et Sécurité</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-fr.htm#netcardconfig">Connections WIFI &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-fr.htm#netcardconfig">Se connecter au réseau &#8211; Ceni</a></li>
+						    <li><a href="inet-wpagui-fr.htm#wpa-roaming-gui">WiFi &#8211; WPA_GUI</a></li>
+						    <li><a href="inet-setup-fr.htm#net-set1">WiFi &#8211; Configurer une connexion itinérante (roaming) WiFi</a></li>
+						    <li><a href="inet-wpa-fr.htm#wpa">WiFi &#8211; wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-fr.htm#hotswitch">Alterner entre les réseaux WiFi et câblés</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-fr.htm#netcardconfig">Connexions câblées &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-fr.htm#dial-mod">Modems 56k </a></li>
+						    <li><a href="inet-ceni-fr.htm#netcardconfig">Se connecter au réseau &#8211; Ceni</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-fr.htm#fw-detect">Détection de Firmware non-libre</a></li>
+		<li><a href="nf-firm-fr.htm#non-free-firmware">Ajouter non-free aux Sources List</a></li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-fr.htm">Gestion de paquets &#8211; Mise à niveau (dist-upgrade)</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-fr.htm#apt-cook">Guide APT &#8211; Liste des dépôts de paquets &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-fr.htm#apt-cook">Guide APT &#8211; Liste des dépôts de paquets</a></li>
+					    <li><a href="sys-admin-apt-fr.htm#apt-install">Installer un nouveau paquet</a></li>
+					    <li><a href="sys-admin-apt-fr.htm#apt-delete">Supprimer un paquet</a></li>
+					    <li><a href="sys-admin-apt-fr.htm#apt-downgrade">Geler un paquet &#8211; Dégradation de paquet</a></li>
+					    <li><a href="sys-admin-apt-fr.htm#apt-cache">Recherche de paquets via apt-cache</a></li>
+					    <li><a href="sys-admin-apt-fr.htm#gui-pacsea">Recherche de paquets en mode GUI</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-fr.htm#kern-upgrade">Mise à niveau du noyau &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-fr.htm#kern-remove">Supprimer des noyaux</a></li>
+					    <li><a href="sys-admin-kern-upg-fr.htm#kern-upgrade">Mise à niveau du noyau</a></li>
+					    <li><a href="sys-admin-kern-upg-fr.htm#dmakms">Installer des modules de noyau dynamiquement via dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-fr.htm#apt-upgrade">Mise à niveau d'un système (dist-upgrade) &#8211; Vue d'ensemble &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-fr.htm#live-cd-upgrade">Mise à niveau depuis un Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-fr.htm#approx">Mise à niveau de plusieurs ordinateurs connectés</a></li>
+					    <li><a href="sys-admin-apt-fr.htm#apt-upgrade">Mise à niveau d'un système (dist-upgrade) &#8211; Vue d'ensemble</a></li>
+					    <li><a href="sys-admin-apt-fr.htm#du-st">Les étapes d'une mise à niveau d'un système</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-fr.htm">Administration du système</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-fr.htm#bois-prep">Mise à niveau du BIOS via FreeDOS</a></li>
+		<li><a href="vir-rkits-fr.htm#virus-rkits">Scanneurs de virus et de rootkits</a></li>
+		<li><a href="hd-install-fr.htm#adduser">Ajouter un utilisateur &#8211; Mots de passe &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-fr.htm#adduser">Ajouter un utilisateur</a></li>
+					    <li><a href="sys-admin-gen-fr.htm#pw-lost">Perte du mot de passe root &#8211; Nouveau mot de passe</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-fr.htm#start-services">Services (démons) &#8211; init &#8211; Niveaux d'exécution &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-fr.htm#start-services">Activer / Désactiver des services (démons)</a></li>
+					    <li><a href="sys-admin-gen-fr.htm#pkill">terminer un service ou un processus</a></li>
+					    <li><a href="sys-admin-gen-fr.htm#init">Niveaux d'exécution aptosid &#8211; init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-fr.htm#rsync">Sauvegarder le système (OS) &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-fr.htm#rdiff">Sauvegarder via rdiff</a></li>
+					    <li><a href="sys-admin-rsync-fr.htm#rsync">Sauvegarder via rsync</a></li>
+					    <li><a href="home-fr.htm#home-bu">Déplacer une partition /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-fr.htm#fonts">CUPS, Polices de caractères &amp; Son &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-fr.htm#fonts">Polices de caractères </a></li>
+					     <li><a href="sys-admin-gen-fr.htm#cups">CUPS &#8211; Gestion des imprimantes</a></li>
+					     <li><a href="sys-admin-gen-fr.htm#sound">Mixeurs de son (Sound Mixers)</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-fr.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-fr.htm#chroot">Grub2 - Récupération de Grub via un chroot</a></li>
+					    <li><a href="sys-admin-grub2-fr.htm#mbr-over-grub2">Grub2 &#8211; Secteur d'amorçage (MBR) écrasé</a></li>
+					    <li><a href="sys-admin-grub2-fr.htm#multi-os">Grub2 &#8211; Démarrage de plusieurs systèmes (OS)</a></li>
+					    <li><a href="sys-admin-grub2-fr.htm#grub1-grub2">Grub2 &#8211; Mise à niveau depuis Grub1</a></li>
+					    <li><a href="sys-admin-grub2-fr.htm#grub2">Grub2 &#8211; Vue d'ensemble</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Sponsored by webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid is proudly hosted by webtropia.com" alt="aptosid is proudly hosted by webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+	<div class="divider" id="rdiff">
+			<h2 id="top-header">Sauvegarde avec Rdiff-backup</h2>
+
+							<p>Rdiff-backup est un outil servant à sauvegarder vos fichiers. Il peut utiliser une variété de ports *nix.</p>
+
+							<p class="highlight-2">Lancez systématiquement ces commandes en mode administrateur (root) depuis un terminal, à moins d'être invité à faire autrement.</p>
+
+							<p>Caractéristiques de rdiff:</p>
+
+						<ul>
+							<li>Très utile pour restaurer après un dist-upgrade, une mise-à-jour de noyau, etc. s'étant mal passé, ainsi que pour tout simplement récupérer des fichiers individuellement.</li>
+							<li>Ne sauvegarde que ce qui a changé comme le fait rsync ; donc chaque sauvegarde est économe en temps.</li>
+							<li>Garde en mémoire un historique des modifications, et peut donc permettre de restaurer un fichier que vous auriez effacé il y a trois semaines !</li>
+							<li>Fait des sauvegardes propres en réseau, en utilisant ssh.</li>
+							<li>Autorise la sauvegarde de partitions y compris lorsqu'elles sont montées ; ce qui rend facile d'automatiser quotidiennement de telles sauvegardes...pas de démontage nécessaire.</li>
+							<li>Peut restaurer tout si votre disque est saturé et vous devez en acheter un neuf.</li>
+							<li>Conçu pour sauvegarder des réseaux complets (réseaux linux, avec Windows&reg; c'est plus difficile) et est employé à cet effet par les professionnels spécialistes.</li>
+							<li>S'emploie en ligne de commande et donc pratique pour programmer des sauvegardes automatiques via les commandes Linux courantes de type cron et les scripts bash.</li>
+							<li>Mémorise et gère les propriétés et permissions de fichiers, ainsi que les liens symboliques et autres objets de cet ordre ; donc, quand vous restaurez, vous obtenez un état exactement identique à l'original.</li>
+					</ul>
+
+			<h6>Ce dont vous aurez besoin</h6>
+
+							<p>Rdiff-backup garde une copie intégrale et <span class="highlight-3">non-compressée</span> des fichiers que vous lui demandez de sauvegarder, ainsi que crée un historique incrémental. Aussi aurez-vous besoin pour votre sauvegarde d'un espace disque substantiellement plus volumineux que celui qu'occupent vos fichiers originaux. Si vous sauvegardez 100 Go, vous pourrez avoir besoin d'un espace de 120 Go (sur un disque dur différent, de préférence !)</p>
+
+			<h6>Comment configurer rdiff</h6>
+
+							<p>Imaginons que votre PC se présente comme suit :</p>
+
+						<ul>
+							<li>Un disque dur de 100 Gigas (sda) en service, avec un partition sda1 montée comme racine, et sda5 utilisée pour le stockage de musiques et autres, et sda6 comme swap.</li>
+
+							<li>Un disque additionnel (sdb) pas encore en service, avec une partition sdb1...que nous allons utiliser pour notre sauvegarde.</li>
+
+							<li>Une adresse IP 192.168.0.1</li>
+						</ul>
+
+							<p>Première chose à faire, installer rdiff-backup :</p>
+
+<pre>
+# apt-get install rdiff-backup
+</pre>
+
+							<p>Ici, même si vous pouvez sauvegarder n'importe quel répertoire, nous décrivons la sauvegarde de l'intégralité de partitions. Nous voulons sauvegarder sda1 et sda5 (et pas sda6), et donc nous créons des répertoires pour stocher leurs données :</p>
+
+<pre>
+# mkdir -p /media/sdb1/rdiff-backups/192.168.0.1/root
+# mkdir -p /media/sdb1/rdiff-backups/192.168.0.1/sda5
+</pre>
+
+							<p>Votre adresse IP distinctive est utile, car si cet ordinateur doit servir à sauvegarder le contenu d'un autre, procédure décrite plus loin, elle vous sera indispensable.</p>
+
+	<h6>Procéder à la sauvegarde</h6>
+
+							<p>rdiff-backup utilise la syntaxe <span class="highlight-3">rdiff-backup répertoire-source répertoire-cible</span>.</p>
+
+							<p class="highlight-3">Avec rdiff utilisez toujours des identités de répertoires et jamais celles de fichiers.</p>
+
+							<p>Pour sauvegarder sda5, entrez :</p>
+
+<pre>
+# rdiff-backup /media/sda5 /media/sdb1/rdiff-backups/192.168.0.1/sda5
+</pre>
+
+							<p>Et pour sauvegarder votre partition racine sda1, entrez :</p>
+
+<pre>
+# rdiff-backup --exclude '/tmp/*' --exclude '/proc/*' --exclude '/sys/*' \
+> --exclude '/media/*/*' / /media/sdb1/rdiff-backups/192.168.0.1/root
+</pre>
+
+							<p>Tout signalement de type "AF_UNIX path too long" peut être négligé. Le processus peut être lent si c'est la première fois que la partition est sauvegardée, et qu'il faut pour le faire en copier l'intégralité du contenu (et pas seulement les différences). Notez que nous n'avons aucune utilité à sauvegarder /tmp, /proc ou /sys puisque ceux-ci ne contiennent aucune donnée réelle ; de la même manière que nous ne voulons pas sauvegarder les partitions montées, puisque si nous le faisions nous demanderions la sauvegarde de sdb5, ce qui nous entrainerait dans un cycle infini ! La procédure pour sauvegarder nos partitions montées consistera bien sûr à le faire pour chacune séparément.</p>
+
+							<p>La raison d'être de l'instruction 'proc/*' et non de '/proc' tout court est de permettre une copie du seul répertoire sans procéder à celle de son contenu. La syntaxe utilisée est la même, et pour les mêmes raisons, pour /tmp, /sys et les points de montage.</p>
+
+							<p>De cette manière si vous détruisez votre partition racine et demandez ensuite sa restauration intégrale, les répertoires correspndant à /tmp, /proc, /sys et ceux ou seront montés les systèmes de fichiers de vos partitions seront re-créés. Si /tmp n'existe pas au lancement du serveur X, celui-ci peut s'en plaindre. Consultez la page man pour plus d'information sur --include et --exclude.</p>
+
+	<h6>Restaurer des répertoires depuis une sauvegarde</h6>
+
+							<p>Rdiff-backup utilise la syntaxe :</p>
+
+<pre>
+rdiff-backup -r &lt;depuis-moment&gt; &lt;répertoire-source&gt; &lt;répertoire-cible&gt;
+</pre>
+
+							<p>Donc par exemple si, par erreur, vous auriez malencontreusement effacé le répertoire /media/sda5/photos, vous pourriez le restaurer en entrant :</p>
+
+<pre>
+# rdiff-backup -r now /media/sdb1/rdiff-backups/192.168.0.1/sda5/photos\
+> /media/sda5/photos
+</pre>
+
+							<p>L'option "-r now" commande un restauration à partir de la sauvegarde la plus récente. Si vous avez tout sauvegardé à intervales réguliers (avec cron, par exemple) et n'aviez pas réalisé avant plusieurs jours que le répertoire de photos ait été effacé, vous devriez restaurer à partir d'un état datant de quelques jours (et pas avec "now", qui considèrerait le répertoire /photos soit inexistant). Ceci peut aussi être utile à rétablir l'état antérieur de tout type de donnée.</p>
+
+							<p>Pour restaurer par exemple depuis un état datant de trois jours, utilisez la syntaxe "-r 3D"...mais comme les pages man l'expliquent :</p>
+
+							<p class="highlight-1">"3D" se réfère à l'instant situé à 72 heures avant la commande, et si aucune sauvegarde n'existe correspondant à ce délai, rdiff-backup restaure l'état de la sauvegarde y étant immédiatement antérieure. Dans notre cas, si "3D" est utilisé, et que des sauvegardes disponibles n'existent que datant de 2 ou 4 jours, le répertoire sera restauré comme il se trouvait il y a quatre jours (vous devez avoir cela à l'esprit avant de procéder à vos restaurations).</p>
+
+							<p>La commande qui suit va vous permettre de visualiser la liste datée des dernière sauvegardes pour sda5:</p>
+
+<pre>
+# rdiff-backup -l /media/sdb1/rdiff-backups/192.168.0.1/sda5
+</pre>
+
+
+	<h5>Restaurer les partitions</h5>
+
+							<p>Vous pouvez restaurer des partitions entières (montages) puisque après tout, les points de montage ne sont que des répertoires.</p>
+
+							<p class="highlight-2">ATTENTION ! Ne tentez jamais la restauration d'une partition racine en cours d'utilisation ! Par cette commande vous effaceriez tous les fichiers de toutes vos partitions, y compris celles contenant les sauvegardes sur un disque séparé !! rdiff-backup exécute scrupuleusement ce que vous lui demandez...si la sauvegarde d'une partition racine a des points de montages vides, afin de restaurer la partition en l'état, il efface tout ce qui peut exister sur ces points de montage, pour faire correspondre la cible à la sauvegarde.</p>
+
+							<p>Pour restaurer sda5 depuis sa dernière sauvegarde, on entrera simplement :</p>
+
+<pre>
+# rdiff-backup -r now /media/sdb1/rdiff-backups/192.168.0.1/sda5 /media/sda5
+</pre>
+
+			<h4>Pour restaurer une partition racine</h4>
+
+							<p>Restaurer une partition racine appelle à beaucoup de précautions et de  circonspection !</p>
+
+							<p>Tout d'abord, <b>ne tentez pas l'opération si cette partition est montée</b>, comme le rappelle l'avertissement plus haut.</p>
+
+							<p>Il est vraiment utile de pouvoir y procéder, d'autant plus que la procédure ne prendra pas longtemps. Mais assurez-vous d'avoir bien lu les informations fournies dans ce manuel avant de la tenter.</p>
+
+							<p>Une manière d'y procéder consiste à démarrer sur un autre système Linux, installé sur une autre partition, si vous en disposez sur votre ordinateur. Dans ce cas, vous pourrez réinstaller la partition en question facilement, puisqu'elle sera pas votre partition racine en cours d'utilisation. Après la restauration vous pourrez à nouveau démarrer à partir de la partition restaurée, qui se présentera exactement telle qu'elle était au moment de sa sauvegarde. C'est à l'évidence, la plus simple des méthodes.</p>
+
+							<p>Une autre méthode passe par le démarrage à partir du Live-CD de aptosid, en opérant la restauration depuis celui-ci. Normalement rdiff-backup est intégré au Live-CD mais le cas où celui dont vous disposeriez n'inclurait pas rdiff, entrez dans grub au démarrage du cd , l'option "unionfs" qui vous permettra d'installer des applications avec le live-cd. Le démarrage Live effectué entrez ces commandes :</p>
+
+<pre>
+$ sudo su
+# wget -O /etc/apt/sources.list http://aptosid.com/files/misc/sources.list
+# apt-get update
+# apt-get install rdiff-backup
+</pre>
+
+							<h6>Procédure de restauration</h6>
+
+<pre>
+# mount /dev/sda1 /media/sda1
+# mount /dev/sdb1 /media/sdb1
+# rdiff-backup -r now /media/sdb1/rdiff-backups/192.168.0.1/root /media/sda1
+</pre>
+
+							<p>Si vous utilisez un autre live-cd que aptosid qui embarquerait Klik, vous pouvez installer rdiff-backup avec klic puis lancer :</p>
+
+<pre>
+$ sudo ~/.zAppRun ~/Desktop/rdiff-backup_0.13.4-5.cmg rdiff-backup \
+> -r now /media/sdb1/rdiff-backups/192.168.0.1/root /media/sda1
+</pre>
+
+							<p>Il est fortement recommandé à toute personne entendant procéder à des sauvegardes de sa partition racine (dans l'intention de pouvoir la restaurer en cas de besoin), de tester le processus de restauration. Il n'existe rien de pire qu'imaginer que tout ira bien pour s'apercevoir d'une anomalie au moment critique.</p>
+
+<!--- ###
+							<p>If the hard drive has been changed or reformatted, recheck the UUIDs, (or Labels), in <span class="highlight-3">/boot/grub/menu.lst (grub-legacy) or files in /etc/grub.d (grub2)</span> and <span class="highlight-3">/etc/fstab</span>, and alter accordingly. An easy way to get the information to alter the menu.lst and fstab files, if required, is as root:</p>
+#### --->
+							<p>Lorsque le disque dur est changé ou reformaté, revoir les UUIDs, (ou les Labels), dans le <span class="highlight-3">/boot/grub/menu.lst (grub-legacy) or files in /etc/grub.d (grub2)</span> et le <span class="highlight-3">/etc/fstab</span>, et modifier. Une façon aisée de modifier les fichiers menu.lst et fstab en cas de besoin, en tant que root:</p>
+
+<pre>
+blkid
+</pre>
+
+		<h6>Sauvegarder des PC distants </h6>
+
+							<p>Vous pouvez sauvegarder d'autres PC dans un ordinateur local, du moment où vous pouvez vous y connecter en utilsant ssh (et si bien entendu votre espace disque est suffisant). Le serveur ssh (sshd) doit se trouver actif sur la machine distante. La machine n'a pas besoin d'appartenir à votre réseau local mais peut être située à n'importe quel endroit dans le monde.</p>
+
+							<p>Admettons que cet ordinateur distant comporte :</p>
+
+						<ol>
+							<li>Un disque dur de 100 gigas (sda) en service, avec pour partitions complémentaires montées :</li>
+							<li>sda1 utilisée comme racine</li>
+							<li>sda5 utilisée pour le stockage de données qu'ici nous n'avons pas l'intention de sauvegarder</li>
+							<li>et sda6 pour le swap.</li>
+							<li>Une adresse IP 192.168.0.2</li>
+						</ol>
+
+							<p >Deux disques de 100 Gigas ne sauraient normalement être sauvegardés sur un disque de 200 Gigas en utilisant rdiff-backup (sinon il n'y aurait aucun espace pour les fichiers d'incrément) mais étant donné que vous ne sauvegardez pas la partition sda5 de l'ordinateur distant (les partitions peuvent même ne pas être saturées - mais ne vous y fiez pas !) alors vous pouvez estimer disposer de suffisamment d'espace. Mais souvenez-vous que rdiff-backup crée de plus en plus de fichiers d'incrément à mesure qu'il procède à des sauvegardes successives, et qui conduisent ces dernières à occuper de plus en plus d'espace disque.<br />
+
+							Vous pouvez demander à rdiff-backup de ne garder en mémoire qu'un maximum d'un mois de sauvegardes, comme nous l'expliquerons plus loin, et ceci prendra évidemment moins d'espace que la mémorisation des sauvegardes de toute une année.</p>
+
+
+							<p>La première chose à faire sera d'installer rdiff-backup sur l'ordinateur distant. Tout ordinateur à exploiter avec rdiff-backup doit disposer de cet outil installé.</p>
+
+							<p>Pour sauvegarder le PC distant dans le PC local, lancez dans le PC local (IP 192.168.0.1 dans notre exemple) - en notant l'utilisation en double-colonne <span class="highlight-4">:;</span></p>
+
+<pre>
+# mkdir /media/sdb1/rdiff-backups/192.168.0.2/root
+# rdiff-backup --exclude '/tmp/*' --exclude '/proc/*' --exclude '/sys/*' --exclude '/media/*/*' 192.168.0.2::/ /media/sdb1/rdiff-backups/192.168.0.2/root
+</pre>
+
+							<h6>Pour restaurer les données de l'ordinateur distant</h6>
+
+							<p>La commande de restauration peut être lancée aussi bien depuis l'ordinateur local que depuis l'ordinateur distant.</p>
+
+							<p>Pour restaurer un répertoire /usr/local/games sur ordinateur distant, en lançant la commande depuis cet ordinateur: </p>
+
+<pre>
+# rdiff-backup -r now 192.168.0.1::/media/sdb1/rdiff-backups/192.168.0.1/root/usr/local/games\
+> /usr/local/games
+</pre>
+
+							<p>Pour restaurer un répertoire /usr/local/games sur un ordinateur distant, en lançant la commande depuis l'ordinateur local: </p>
+
+<pre>
+# rdiff-backup -r now /media/sdb1/rdiff-backups/192.168.0.1/root/usr/local/games\
+> 192.168.0.2::/usr/local/games
+</pre>
+
+							<p>Utilisez les mêmes syntaxes en restaurant votre partition racine depuis un live-cd (lorsque l'ordinateur distant a été démarré à partir du CD - cf les instructions plus haut).</p>
+
+	<h6>Automatisation des sauvegardes</h6>
+
+
+							<p>Si vous sauvegardez d'autres pc sur votre pc local, la première chose à faire est d'y autoriser les connexions ssh sans mot-de-passe avec utilisation de clés ssh. <span class="highlight-2">Note: nous parlons ici de connexion distantes 'password-less' en tant tant qu'administrateur (root). Celles-ci peuvent être paramétrées afin de n'être utilisables que pour exécuter les commandes de rdiff-backup, mais ce sujet outrepasse celui qui nous occupe dans ce chapitre. Reportez-vous à <a href="ssh-fr.htm#ssh-s">Configuration de SSH</a></span>. Nous admettrons ici utiliser la méthode la plus simple et sûre pour obtenir des connexions sans mot-de-passe.</p>
+
+							<p>Depuis le pc local, faites ce qui suit :</p>
+
+<pre>
+# [ -f /root/.ssh/id_rsa ] || ssh-keygen -t rsa -f /root/.ssh/id_rsa
+</pre>
+
+							<p>et appuyez deux fois sur la touche "Entrée" pour les mots-passe-nuls. Et ensuite :</p>
+
+<pre>
+# cat /root/.ssh/id_rsa.pub | ssh 192.168.0.2 'mkdir -p /root/.ssh;\
+> cat - >>/root/.ssh/authorized_keys2'
+</pre>
+
+							<p>Vous serez invité à entrer votre mot-de-passe d'administrateur (root)</p>
+
+							<p>Dès ce moment vous pourrez vous connecter en ssh au pc distant sans devoir entrer votre mot-de-passe, et l'utilisation de rdiff-backup pourra s'automatiser.</p>
+
+							<p>L'étape suivante consiste à créer un script bash qui contienne toutes vos commandes à rdiff-backup. Notre script bash peut ressembler à ceci :</p>
+
+
+<pre>
+#!/bin/bash
+RDIFF=/usr/bin/rdiff-backup
+echo
+echo "=======Backing up 192.168.0.1 root======="
+${RDIFF} --ssh-no-compression --exclude '/tmp/*' --exclude '/proc/*'\
+ --exclude '/sys/*' --exclude '/media/*/*'\
+ / /media/sdb1/rdiff-backups/192.168.0.1/root
+echo "(purge des increments de plus de 1 mois)"
+${RDIFF} --remove-older-than 1M\
+ --force /media/sdb1/rdiff-backups/192.168.0.1/root
+echo
+echo "=======Backing up 192.168.0.1 mount sda5======="
+${RDIFF} --ssh-no-compression --exclude /media/sda5/myjunk /media/sda5\
+ /media/sdb1/rdiff-backups/192.168.0.1/sda5
+echo "(purge des increments de plus de 1 mois)"
+${RDIFF} --remove-older-than 1M\
+ --force /media/sdb1/rdiff-backups/192.168.0.1/sda5
+echo
+echo "=======Backing up 192.168.0.2 root======="
+${RDIFF} --ssh-no-compression --exclude '/tmp/*' --exclude '/proc/*'\
+ --exclude '/sys/*' --exclude '/media/*/*' --exclude '/mnt/*/*'\
+ 192.168.0.2::/ /media/sdb1/rdiff-backups/192.168.0.2/root
+echo "(et purge des increments de plus de 1 mois)"
+${RDIFF} --remove-older-than 1M\
+ --force /media/sdb1/rdiff-backups/192.168.0.2/root
+</pre>
+
+							<p>Vous pouvez nommer ce script "mes-backups-rdiff.bash" et le disposer dans le répertoire /usr/local/bin de votre ordinateur local (serveur de backups), et le convertir en exécutable. Lancez-le pour vous assurer qu'il fonctionne.</p>
+
+							<p>Pour finir vous pouvez par exemple demander à cron de le lancer tous les soirs à 20h. La ligne suivante dans le crontab de root fera l'affaire, en appelant :</p>
+
+<pre>
+# crontab -e
+et insérez la ligne suivante
+0 20 * * * /usr/local/bin/mes-backups-rdiff.bash
+</pre>
+
+			<div id="rev">Contenu révisé le 22/09/2010</div>
+</div>
+</div>
+</body>
+</html>

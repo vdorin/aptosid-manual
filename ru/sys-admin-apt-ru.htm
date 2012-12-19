@@ -1,0 +1,761 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+	<title>Руководство aptosid - Короткое руководство по apt</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+	<style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+	<style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+	<script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision by RoEn 20/12/2011 1400 UTC-->
+<!--htdig_noindex--><div id="menu"> <!-- menu starts here - ru language maintained by RoEn -->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="Главная страница aptosid.com, форума и вики" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-ru.htm#search-on"><img src="../lib/logos/manual-search-22x22.png" title="Поиск в руководстве" alt="Search" /> Варианты поиска</a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Выбор языка - Choose another language CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="Переключение языка CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-ru.htm">Руководство aptosid</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-ru.htm#welcome-gen">Добро пожаловать! &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-ru.htm#cred-team">Благодарности</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-ru.htm#how-to">Об использовании &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-ru.htm#how-to">Об использовании</a></li>
+					  <li><a href="welcome-ru.htm#table-contents">Содержание</a></li>
+					</ul>
+					</li>
+		<li><a href="help-ru.htm#help-gen">Получение помощи &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-ru.htm#help-gen">Где получить помощь</a></li>
+					  <li><a href="help-ru.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-ru.htm#welcome-quick">Краткое руководство aptosid</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-ru.htm">Содержание ISO-образа, выпуски, список зеркал и запись</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-ru.htm#cd-content">Содержание ISO-образа и системные требования &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-ru.htm#rolling">Замечания к релизу</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-ru.htm#download-aptosid">Список зеркал, скачивание ISO-образа и запись &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-ru.htm#md5">Проверка ISO-образа с md5</a></li>
+					  <li><a href="cd-dl-burning-ru.htm#burn-nero">Запись ISO-образа в Windows</a></li>
+					  <li><a href="cd-dl-burning-ru.htm#burn-linux">Запись ISO-образа в Linux</a></li>
+					  <li><a href="cd-no-gui-burn-ru.htm#burning-no-gui">Скрипт burniso</a></li>
+					  <li><a href="cd-no-gui-burn-ru.htm#burn-no-gui-gen">Запись ISO-образа в консоли</a></li>
+					  <li><a href="cd-dl-burning-ru.htm#download-aptosid">Список зеркал</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-ru.htm">Режим ISO-образа</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-ru.htm#rootpw">Пароль root на ISO-образе</a></li>
+				<li><a href="live-mode-ru.htm#live-cd-installsoft">Установка ПО на ISO-образе</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-ru.htm">Терминал и оболочка</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-ru.htm#term-kon">Терминал и оболочка &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-ru.htm#term-kon">Терминал и оболочка</a></li>
+					  <li><a href="term-konsole-ru.htm#colours"> Цветная подсказка в терминале</a></li>
+					  <li><a href="term-konsole-ru.htm#cli-help">Помощь в терминале</a></li>
+					  <li><a href="help-ru.htm#init3-tools">Полезные инструменты в текстовом режиме (tty) - init 3</a></li>
+					  <li><a href="term-konsole-ru.htm#term-cmds">Команды в терминале</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-ru.htm#sux">Команда: sux/sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-ru.htm">Чит-коды</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-ru.htm#cheatcodes">Особые для ISO-образа aptosid чит-коды</a></li>
+				<li><a href="cheatcodes-ru.htm#cheatcodes-linux">Общие для параметров ядра чит-коды</a></li>
+				<li><a href="cheatcodes-vga-ru.htm#vga">Общие для видеокарты коды</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-ru.htm">Разбиение жесткого диска - по старому, GPT и LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-ru.htm#hd-ntfs3g">Запись на раздел NTFS с ntfs-3g</a></li>
+			<li><a href="part-lvm-ru.htm#part-lvm">Разметка с использованием LVM - Logical Volume Manager</a></li>
+			<li><a href="part-gparted-ru.htm#partition">Разметка диска с интерфесом &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-ru.htm#partition">Разметка диска с gparted/KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-ru.htm#ntfs">Разделы NTFS с gparted/KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-ru.htm#partition">Примеры разметки диска в консоли &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-ru.htm#partition">Разметка диска с cfdisk</a></li>
+					    <li><a href="part-cfdisk-ru.htm#formating">Форматирование разделов с cfdisk</a></li>
+					    <li><a href="part-gdisk-ru.htm#gdisk-6">Форматирование после разметки с gdisk</a></li>
+					    <li><a href="part-gdisk-ru.htm#gdisk-1">Разбиение по GPT с gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-ru.htm#part-example">Разметка диска - обзор &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-ru.htm#part-example">Примеры разметки диска</a></li>
+					  <li><a href="part-uuid-ru.htm#uuid">UUID, восстанавление fstab и создание новых точек монтирования</a></li>
+					  <li><a href="part-cfdisk-ru.htm#disknames">Имена жестких дисков</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-ru.htm">Установка aptosid на HD, USB, VM и шифрованные разделы</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-ru.htm#Inst-prep">Подготовка установки &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-ru.htm#Inst-prep">Подготовка установки</a></li>
+					  <li><a href="hd-install-ru.htm#Installation">Инсталляция на HD</a></li>
+					  <li><a href="hd-install-ru.htm#first-hd-boot">Первая загрузка</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-ru.htm#fromiso">Загрузка 'fromiso' &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-ru.htm#fromiso">Загрузка 'fromiso' - обзор</a></li>
+					  <li><a href="hd-install-opts-ru.htm#grub2-fromiso">Загрузка 'fromiso' с grub 2</a></li>
+					  <li><a href="hd-install-opts-ru.htm#fromiso-persist">Способы 'fromiso' и 'persist'</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-ru.htm#usb-hd">Инсталляция на USB &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-ru.htm#usb-hd">Инсталляция на USB-HD - способ aptosid -  aptosid-на-флешки</a></li>
+					  <li><a href="hd-ins-opts-oos-ru.htm#raw-usb">Запись aptosid на USB/SSD с помощью другого Linux, MS Windows или Mac OS</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-ru.htm#install-crypt">Установка на шифрованные разделы - cryptroot</a></li>
+		  <li><a href="nbdboot-ru.htm#nbd1">Загрузка aptosid по сети</a></li>
+		  <li><a href="hd-install-vmopts-ru.htm#vmopts">Опции инсталляций на VM (Virtual Machine)</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-ru.htm">Оборудование в Xorg и разные драйверы</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-ru.htm#mon-res">Разрешение экрана и мониторы  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-ru.htm#mon-res">Разрешение экрана и мониторы</a></li>
+					  <li><a href="hw-dev-mon-ru.htm#xrandr">Двойные экраны и xrandr</a></li>
+					  <li><a href="hw-dev-mon-ru.htm#mon-binary">Двойные экраны (используя двоичные файлы)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-ru.htm#foss-xorg">Микропрограммное обеспечение GPU &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-ru.htm#ati-3d">AMD/ATI 3D драйверы</a></li>
+					  <li><a href="gpu-ru.htm#intel">Intel 2D и 3D драйверы</a></li>
+					  <li><a href="gpu-ru.htm#nvidia">Nvidia 3D драйверы</a></li>
+					  <li><a href="gpu-ru.htm#foss-xorg">Свободные Xorg-драйверы</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-ru.htm#fw-detect">Определение несвободного микропрограммного обеспечения - non-free </a></li>
+			  <li><a href="nf-firm-ru.htm#non-free-firmware">Добавление non-free в список источников</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-ru.htm">Оконные менеджеры</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-ru.htm">Оконные менеджеры KDE и Xfce&#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-ru.htm#xfce-notes">Полезные инструменты для Xfce</a></li>
+					    <li><a href="wm-dm-ru.htm#install-add">Полезные инструменты для KDE</a></li>
+					    <li><a href="wm-dm-ru.htm#desk-freeze">Рабочий стол зависает</a></li>
+					    <li><a href="wm-dm-ru.htm#kde-login">Проблемы входа в KDE</a></li>
+					    <li><a href="wm-dm-ru.htm#ch-th">Управление темами</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-ru.htm#dm">Установква дополнительных дисплейных менеджеров</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-ru.htm">Интернет, Wifi и локальная сеть</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-ru.htm">Мета-пакет LAMP &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-ru.htm#serv-apache">Мета-пакет LAMP</a></li>
+					    <li><a href="lamp-apache-ru.htm#serv-ftp">Клиенты FTP</a></li>
+					    <li><a href="lamp-apache-ru.htm#serv-sec">Защищенные протоколы</a></li>
+					    <li><a href="lamp-apache-ru.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-ru.htm#serv-mysql">Настройка MySQL</a></li>
+					    <li><a href="lamp-ppp-ru.htm#serv-php">PHP в apache</a></li>
+					    <li><a href="ntp-server-ru.htm#ntp-server">Установка сервера времени</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-ru.htm#tor">Брандмауэры и веб-прокси &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-ru.htm#tor">Маршрутизатор tor</a></li>
+					    <li><a href="tor-privoxy-ru.htm#privoxy">Веб-прокси privoxy</a></li>
+					    <li><a href="inet-ceni-ru.htm#firewalls">Брандмауэры</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-ru.htm#ssh-x">Samba и ssh &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-ru.htm#setup">Сервер samba</a></li>
+						  <li><a href="samba-ru.htm#configure">Интеграции samba в сеть Windows</a></li>
+						  <li><a href="ssh-ru.htm#ssh-fs">Удаленное монтирование с ssh</a></li>
+						  <li><a href="ssh-ru.htm#ssh-x">Приложения X-Windows с ssh</a></li>
+						  <li><a href="ssh-ru.htm#ssh-f">Интерфейс ssh и Konqueror</a></li>
+						  <li><a href="ssh-ru.htm#ssh-w">ssh X-forwarding с Windows-компом</a></li>
+						  <li><a href="ssh-ru.htm#ssh">Безопасность с ssh</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-ru.htm#netcardconfig">Связи с WiFi &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-ru.htm#netcardconfig">Настройка сетевых карт с ceni</a></li>
+						    <li><a href="inet-wpagui-ru.htm#wpa-roaming-gui">Графическoe ппиложение wpa_gui для WiFi</a></li>
+						    <li><a href="inet-setup-ru.htm#net-set1">Роуминг с WiFi</a></li>
+						    <li><a href="inet-wpa-ru.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-ru.htm#hotswitch">Переключение сети между WiFi и проводной связью</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-ru.htm#netcardconfig">Проводная связь &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-ru.htm#dial-mod">56килобитовые модемы</a></li>
+						    <li><a href="inet-ceni-ru.htm#netcardconfig">Настройка сетевых карт с ceni</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-ru.htm#fw-detect">Определение несвободного микропрограммного обеспечения - non-free </a></li>
+		<li><a href="nf-firm-ru.htm#non-free-firmware">Добавление non-free в список источников</a></li>			
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-ru.htm">Управление пакетами и обновление системы с dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-ru.htm#apt-cook">apt и репозитории &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-ru.htm#apt-cook">apt и репозитории</a></li>
+					    <li><a href="sys-admin-apt-ru.htm#apt-install">Установка нового пакета</a></li>
+					    <li><a href="sys-admin-apt-ru.htm#apt-delete">Удаление пакета</a></li>
+					    <li><a href="sys-admin-apt-ru.htm#apt-downgrade">Понижение версии с hold</a></li>
+					    <li><a href="sys-admin-apt-ru.htm#apt-cache">Поиск пакетной иформации с apt-cache</a></li>
+					    <li><a href="sys-admin-apt-ru.htm#gui-pacsea">Графическая поисковая программа</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-ru.htm#kern-upgrade">Обновление ядра &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-ru.htm#kern-remove">Удаление ядра</a></li>
+					    <li><a href="sys-admin-kern-upg-ru.htm#kern-upgrade">Обновление ядра</a></li>
+					    <li><a href="sys-admin-kern-upg-ru.htm#dmakms">Динамическая инсталляция модулей ядра с dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-ru.htm#apt-upgrade">Обновления системы с dist-upgrade - Краткий обзор &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-ru.htm#live-cd-upgrade">Обновление с ISO-образа</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-ru.htm#approx">Обновление нескольких компьютеров в локальной сети</a></li>
+					    <li><a href="sys-admin-apt-ru.htm#apt-upgrade">Краткий обзор oбновления системы с dist-upgrade</a></li>
+					    <li><a href="sys-admin-apt-ru.htm#du-st">Шаги обновления системы с dist-upgrade</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-ru.htm">Системное администрирование</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-ru.htm#bois-prep">Обновление BIOS с FreeDOS</a></li>
+		<li><a href="vir-rkits-ru.htm#virus-rkits">Сканер безопасности</a></li>
+		<li><a href="hd-install-ru.htm#adduser">Новый пользователь и пароли &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-ru.htm#adduser">Добавление нового пользователя</a></li>
+					    <li><a href="sys-admin-gen-ru.htm#pw-lost">Восстановление root-пароля</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-ru.htm#start-services">Службы и режимы загрузки &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-ru.htm#start-services">Выбор служб</a></li>
+					    <li><a href="sys-admin-gen-ru.htm#pkill">Завершениe службы или процесса</a></li>
+					    <li><a href="sys-admin-gen-ru.htm#init">Режимы загрузки init в aptosid</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-ru.htm#rsync">Резервирование системы &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-ru.htm#rdiff">Резервирование с rdiff</a></li>
+					    <li><a href="sys-admin-rsync-ru.htm#rsync">Резервирование с rsync</a></li>
+					    <li><a href="home-ru.htm#home-bu">Перемещение /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-ru.htm#fonts">Cups, шрифты и звук &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-ru.htm#fonts">Шрифты</a></li>
+					     <li><a href="sys-admin-gen-ru.htm#cups">Сервер cups</a></li>
+					     <li><a href="sys-admin-gen-ru.htm#sound">Звуковые микшеры</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-ru.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-ru.htm#chroot">Grub2 - Восстановление grub с chroot</a></li>
+					    <li><a href="sys-admin-grub2-ru.htm#mbr-over-grub2">Grub2 - Удаление из MBR</a></li>
+					    <li><a href="sys-admin-grub2-ru.htm#multi-os">Grub2 - Двойная и мультизагрузка</a></li>
+					    <li><a href="sys-admin-grub2-ru.htm#grub1-grub2">Grub2 - Обновление с grub1</a></li>
+					    <li><a href="sys-admin-grub2-ru.htm#grub2">Grub2 - Краткий обзор</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Наш спонсор webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid размещен на сервере webtropia.com" alt="aptosid размещен на сервере webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+	<div class="divider" id="apt-cook">
+		<h2 id="top-header">Краткое руководство по apt</h2>
+
+					<h3>Что значит APT?</h3>
+ 							<p>APT - сокращение от английского Advanced Packaging Tool и, по сути, является набором скриптов и программ, облегчающих  системному администратору (в Вашем случае это - root) установку и удаление программного обеспечения в виде пакетов Debian, автоматически регистрируя произведенные изменения в системе, а также изменения в зависимостях.</p>
+	</div>
+	<div class="divider" id="sources-list">
+			<h2>Список ресурсов (sources.list)</h2>
+							<p>APT-система, нуждающаяся в файле конфигурации, который содержит информацию о месторасположении устанавливаемых и обновляемых пакетов. В общем, этот файл называется <span class="highlight-3">sources.list</span>.</p>
+
+							<p> Источники находятся в этом каталоге: <br />
+							<span class="highlight-3">/etc/apt/sources.list.d/</span></p>
+
+							 <p>В этом каталоге находятся 2 файла:<br />
+							<span class="highlight-3">/etc/apt/sources.list.d/debian.list</span> и<br />
+							<span class="highlight-3">/etc/apt/sources.list.d/aptosid.list  </span></p>
+
+							<p>Преимущество заключается в том, что можно легче выбрать желаемое зеркало (mirror switching) и  проще добавить или заменить источник списка.</p>
+
+							<p>Вы также можете добавить свои собственные файлы списка в <span class="highlight-3">/etc/apt/sources.list.d/*.list </span></p>
+
+ 					<h3>Все aptosid ISO-образы используют следующие источники по умолчанию:</h3>
+
+<pre>
+#aptosid
+# Free University Berlin/ spline (Student Project LInux NEtwork), Germany
+deb ftp://ftp.spline.de/pub/aptosid/debian/ sid main fix.main
+#deb-src ftp://ftp.spline.de/pub/aptosid/debian/ sid main fix.main
+</pre>
+
+							<p>Сведения по включению источников несвободного ПО содержатся в нашем, регулярно обновляемом source.list по адресу: <a href="http://aptosid.com/files/misc/sources.list.d/aptosid.list">aptosid.list</a> и <a href="http://aptosid.com/files/misc/sources.list.d/debian.list">debian.list</a>:</p>
+<pre>
+#Debian
+# Unstable
+deb http://ftp.us.debian.org/debian/ unstable main contrib non-free
+#deb-src http://ftp.us.debian.org/debian/ unstable main contrib non-free
+
+# Testing
+#deb http://ftp.us.debian.org/debian/ testing main contrib non-free
+#deb-src http://ftp.us.debian.org/debian/ testing main contrib non-free
+
+# Experimental
+#deb http://ftp.us.debian.org/debian/ experimental main contrib non-free
+#deb-src http://ftp.us.debian.org/debian/ experimental main contrib non-free
+</pre>
+							<p>ПРИМЕЧАНИЕ: В этом примере используются немецкие репозитории. Вы можете отредактировать данный файл по собственному усмотрению, выбрав наиболее близкие Вам репозитории (просто заменив обозначение страны, например ftp.de на ftp.ru). Во многих странах существуют локальные репозитории. При этом ширина канала остается фиксированной, а скорость возрастает.</p>
+
+							<p><a href="http://www.debian.org/mirrors/">Список серверов Debian и  текущее состояние зеркал</a>.</p>
+
+							<p>Для поддержания информации о доступных пакетах в актуальном состоянии APT использует собственную базу данных. В ней, помимо информации о самих пакетах, содержится информация о дополнительных пакетах, необходимых для установки и работы (т.е. зависимости). При установке выбранного пакета  apt-get  использует эту базу данных для установки также и всех необходимых для удовлетворения зависимостей пакетов, гарантируя тем самым работоспособность выбранного Вами. Обновление данной БД осуществляется с помощью  'apt-get update'.</p>
+
+<pre># apt-get update
+	...
+Получено:1 http://aptosid.com sid Release.gpg [189B]
+Получено:2 http://aptosid.com sid Release.gpg [189B]
+Получено:3 http://aptosid.com sid Release.gpg [189B]
+Получено:4 http://ftp.de.debian.org unstable Release.gpg [189B]
+Получено:5 http://aptosid.com sid Release [34.1kB]
+Получено:6 http://ftp.de.debian.org unstable Release [79.6kB]
+</pre>
+
+
+	</div>
+
+	<div class="divider" id="apt-install">
+ 		<h2>Установка новых пакетов</h2>
+							<p><span class="highlight-2">Обновление пакетов и установкa новых пакетов без остановки X может вызвать проблемы. Любой метод установки пакетов в X имеет эту проблему.</span></p>
+
+							<p><span class="highlight-2">Пока какой-либо пакет, который вы хотите установить,  не будет обновлять дополнительные пакеты, то можно с уверенностью установить его без остановки X. Однако  процесс установки пакета вызовет другие пакеты обновления, их следует принимать с особой осторожностью, и, если Вы не уверены, что пакеты, которые будут модернизированы, в настоящее время не используются, Вы должны прекратить X перед установкой пакета.</span></p>
+
+							<p><span class="highlight-2">Если у Вас есть сомнения по поводу обеспечения, Вы должны оставить X, согласно расстоянию обновления инструкции, прежде чем устанавливать какие-либо пакеты. <a href="sys-admin-apt-ru.htm#du-st">Обновление установленной системы - dist-upgrade</a></span>.</p>
+
+							<p>Предполагая, что пакет выбран, а база данных APT  обновлена, следующей командой можно установить выбранный пакет (например pidgin):</p>
+
+
+<pre># apt-get install pidgin
+Чтение списков пакетов… Готово                                                                                                                 
+Построение дерева зависимостей… Готово                                                                                                         
+Будут установлены следующие дополнительные пакеты:                                                                                             
+  gconf-service gconf2 gconf2-common gstreamer0.10-gconf gstreamer0.10-nice gstreamer0.10-plugins-bad gstreamer0.10-plugins-good               
+  libavahi-glib1 libcdaudio1 libdv4 libfftw3-3 libflite1 libgconf-2-4 libgconf2-4 libgme0 libgnome-keyring-common libgnome-keyring0            
+  libgssdp-1.0-3 libgstfarsight0.10-0 libgstreamer-plugins-bad0.10-0 libgtkspell0 libgupnp-1.0-4 libgupnp-igd-1.0-4 libiec61883-0              
+  libmeanwhile1 libmimic0 libmms0 libnice10 libofa0 libopenal-data libopenal1 libpurple0 librsvg2-2 libslv2-9 libsoundtouch0
+  libsoup-gnome2.4-1 libspandsp2 libwildmidi-config libwildmidi1 libzbar0 libzephyr4 pidgin-data
+Предлагаемые пакеты:
+  gconf-defaults-service frei0r-plugins libdv-bin oss-compat libfftw3-dev gnome-keyring tcl8.5 tk8.5 librsvg2-bin slv2-jack
+  evolution-data-server
+Рекомендуемые пакеты:
+  gstreamer0.10-x ca-certificates libpurple-bin librsvg2-common freepats
+НОВЫЕ пакеты, которые будут установлены:
+  gconf-service gconf2 gconf2-common gstreamer0.10-gconf gstreamer0.10-nice gstreamer0.10-plugins-bad gstreamer0.10-plugins-good
+  libavahi-glib1 libcdaudio1 libdv4 libfftw3-3 libflite1 libgconf-2-4 libgconf2-4 libgme0 libgnome-keyring-common libgnome-keyring0
+  libgssdp-1.0-3 libgstfarsight0.10-0 libgstreamer-plugins-bad0.10-0 libgtkspell0 libgupnp-1.0-4 libgupnp-igd-1.0-4 libiec61883-0
+  libmeanwhile1 libmimic0 libmms0 libnice10 libofa0 libopenal-data libopenal1 libpurple0 librsvg2-2 libslv2-9 libsoundtouch0
+  libsoup-gnome2.4-1 libspandsp2 libwildmidi-config libwildmidi1 libzbar0 libzephyr4 pidgin pidgin-data
+обновлено 0, установлено 43 новых пакетов, для удаления отмечено 0 пакетов, и 2 пакетов не обновлено.
+Необходимо скачать 40,6 MБ архивов.
+После данной операции, объём занятого дискового пространства возрастёт на 92,3 MB.
+Хотите продолжить [Д/н]?
+</pre>
+
+
+	<div class="divider" id="apt-delete">
+		<h2>Удаление пакета</h2>
+							<p>Не удивляйтесь, что при удалении пакета, все его зависимости (пакеты, от которых он зависит) останутся:</p>
+
+<pre>
+apt-get purge pidgin
+</pre>
+<pre>
+Чтение списков пакетов… Готово
+Построение дерева зависимостей       
+Чтение информации о состоянии… Готово
+Пакеты, которые будут УДАЛЕНЫ:
+  pidgin*
+обновлено 0, установлено 0 новых пакетов, для удаления отмечено 1 пакетов, и 2 пакетов не обновлено.
+После данной операции, объём занятого дискового пространства уменьшится на 2 270 kB.
+Хотите продолжить [Д/н]? y
+(Чтение базы данных ... на данный момент установлено 92990 файлов и каталогов.)
+Удаляется пакет pidgin ...
+Вычищаются файлы настройки пакета pidgin ...
+Обрабатываются триггеры для man-db ...
+Обрабатываются триггеры для gconf2 ...
+Обрабатываются триггеры для menu ...
+</pre>
+
+							<p>В данном примере конфигурационный файл пакета 'pidgin' не удаляется из системы и будет использован для восстановления сохраненных настроек в случае повторной установки 'pidgin'. Для удаления из системы конфигурационных файлов вместе с выбранным пакетом используют следующую команду:</p>
+
+<pre>
+apt-get --purge remove pidgin
+</pre>
+<pre>
+Чтение списков пакетов… Готово
+Построение дерева зависимостей       
+Чтение информации о состоянии… Готово
+Пакеты, которые будут УДАЛЕНЫ:
+  pidgin*
+обновлено 0, установлено 0 новых пакетов, для удаления отмечено 1 пакетов, и 2 пакетов не обновлено.
+После данной операции, объём занятого дискового пространства уменьшится на 2 270 kB.
+Хотите продолжить [Д/н]? y
+(Чтение базы данных ... на данный момент установлено 92990 файлов и каталогов.)
+Удаляется пакет pidgin ...
+Вычищаются файлы настройки пакета pidgin ...
+Обрабатываются триггеры для man-db ...
+Обрабатываются триггеры для gconf2 ...
+Обрабатываются триггеры для menu ...
+</pre>
+
+							<p>Обратите внимание на знак <span class="highlight-3">*</span> в выводе apt, после имени пакета. Этот знак сообщает, что вместе с пакетом будут удалены его конфигурационные файлы.</p>
+
+
+		</div>
+	<div class="divider" id="apt-downgrade">
+						<h2>Понижение версии пакета</h2>
+								<p>Иногда в связи с ошибками, возникающими в актуальной версии того или иного пакета, возникает необходимость вернуться к его прежней, более ранней версии. Для этого необходимо выполнить следующие шаги: </p>
+
+					<h3>Удерживание пакетов</h3>
+<pre>
+echo package hold|dpkg --set-selections
+</pre>
+							<p>Пакеты удерживаются так (hold):</p>
+<pre>
+echo package install|dpkg --set-selections
+</pre>
+							<p>Поиск удерживаемых пакетов:</p>
+
+<pre>
+dpkg --get-selections | grep hold
+</pre>
+
+					<h3>Пeреход на пониженные версии пакетов</h3>
+							<p> <span class="highlight-2">Debian не поддерживает переход на пониженные версии пакетов. Хотя это понижение может работать в простых случаях, оно можеть быть не эффектным для других пакетов. Пожалуйста, обратитесь к глабе </span><a href="http://www.debian.org/doc/manuals/reference/ch02.en.html#_emergency_downgrading">'Чрезвычайный переход на пониженные версии пакетов'</a>.</p>
+
+							<p>Несмотря на то, что это понижение не поддерживаеться, это можеть работать на простых пакетах. Понижения версии простого пакета Вы можете сделать с помощью <span class="highlight-3">kmahjongg</span> например:</p>
+
+						<ol>
+							<li>Прокомментируйте нестабильни источника (unstable) <span class="highlight-3">/etc/apt/sources.list.d/debian.list </span> с помощью <span class="highlight-3">#</span></li>
+
+							<li>Добавьте источник testing в <span class="highlight-3">/etc/apt/sources.list.d/debian.list </span>, например:<br />
+<pre>
+deb http://ftp.nl.debian.org/debian/ testing main contrib non-free
+</pre>
+							</li>
+
+							<li>
+<pre>
+apt-get update
+</pre>
+							</li>
+
+							<li>
+<pre>
+apt-get install kmahjongg/testing
+</pre>
+							</li>
+
+							<li>Положите вновь установлен пакет на удерживаемость (hold):<br />
+<pre>
+echo kmahjongg hold|dpkg --set-selections
+</pre>
+							</li>
+
+							<li>comment &lt;#&gt;источники testing в / etc / apt / sources.list.d / debian.list и раскомментируйте источники unstable чтобы Вы вновь могли использовать источники unstable:</li>
+
+							<li>
+<pre>
+apt-get update
+</pre>
+							</li>
+						</ol>
+
+							<p>Для установки самой последней версии пакета достаточно выполнить:</p>
+<pre>
+echo kmahjongg install|dpkg --set-selections
+apt-get update
+apt-get install kmahjongg
+</pre>
+
+		</div>
+	<div class="divider" id="apt-mark">
+				<h2>apt-mark</h2>
+							<p>apt-mark - это полезный инструмент, который показывает, какие пакеты были автоматически или вручную установлены и предлагает системным администраторaм возможность отметить и удерживать пакеты, которые не удаляются автоматически. Прочитайте:</p>
+
+<pre>
+man apt-mark
+</pre>
+
+		</div>
+	<div class="divider" id="apt-upgrade">
+					<h2>Краткий обзор обновления установленной системы - dist-upgrade</h2>
+
+							<p>Полное обновление системы осуществляется с помощью <span class="highlight-3">dist-upgrade</span>. Пожалуйста, перед каждым обновлением знакомьтесь с существующими предупреждениями (Current Warnings) на главном сайте <a href="http://aptosid.com">aptosid</a>, а также с предупреждениями непосредственно обновляемых системой пакетов! В случае необходимости пакет нужно <span class="highlight-3">заморозить</span>. Читайте в главе <a href="sys-admin-apt-ru.htm#apt-downgrade">'Понижение версии пакета'</a></p>
+
+							<p>Замечание: Просто 'upgrade' в debian-sid использовать не рекомендуется.</p>
+
+					<h5>Частота применения 'dist-upgrade'</h5>
+
+							<p>Рекомендуется осуществлять 'dist-upgrade' хотя бы 1 раз в месяц, в идеале - раз в одну, две недели. При более редком обновлении системы (раз в 2-3 месяца) не исключено возникновение различных проблем. Особое внимание при обновлении необходимо уделять нестандартным и "самособранным" пакетам в связи с возможными нарушениями зависимостей.</p>
+
+							<p>После обновления базы данных APT следующей командой можно узнать:  какие именно пакеты доступны к обновлению &#040;для того сначала устанавливается пакет apt-show-versions &#041;:</p>
+
+<pre>
+apt-show-versions -u
+libpam-runtime/unstable upgradeable from 0.79-1 to 0.79-3
+passwd/unstable upgradeable from 1:4.0.12-5 to 1:4.0.12-6
+teclasat/unstable upgradeable from 0.7m02-1 to 0.7n01-1
+libpam-modules/unstable upgradeable from 0.79-1 to 0.79-3.........
+</pre>
+
+							  <p>Обновление единичного пакета вместе с зависимостями (например, gcc-4.0) возможно следующей командой:</p>
+
+
+
+<pre>
+apt-get install gcc-4.0
+Чтение списков пакетов...
+Построение дерева зависимостей...
+Чтение информации о состоянии...
+Уже установлена самая новая версия gcc-4.0.
+обновлено 0 , установлено 0 новых пакетов, для удаления отмечено 0 пакетов, и xxx пакетов не обновлено.
+</pre>
+
+					<h4>Загрузка без установки.</h4>
+
+							<p class="highlight-3">Хорошая, но малоизвестная возможность проверить: какие пакеты затрагивает 'dist-upgrade', состоит в использовании флага -d:</p>
+
+<pre>
+apt-get update &amp;&amp; apt-get dist-upgrade -d
+</pre>
+							<p>Данную команду можно использовать даже в Х-сессии (в любом графическом эмуляторе терминала, таком как konsole), отложив 'dist-upgrade' в текстовом режиме на "потом". А заодно появляется возможность проверить предупреждения по загруженным пакетам с тем, чтобы принять обновление или отказаться.</p>
+
+<pre>
+apt-get dist-upgrade -d
+Чтение списков пакетов...
+Построение дерева зависимостей...
+Чтение информации о состоянии...
+Расчёт обновлений... Готово
+НОВЫЕ пакеты, которые будут установлены:
+  elinks-data
+The following packages have been kept back:
+  git-core git-gui git-svn gitk icedove libmpich1.0ldbl
+Пакеты, которые будут обновлены:
+  alsa-base bsdutils ceni configure-ndiswrapper debhelper
+  discover1-data elinks file fuse-utils gnucash.........
+обновлено 35, установлено 1 новых пакетов, для удаления отмечено 0 пакетов, и 6 пакетов не обновлено.
+Необходимо скачать 23,4 MБ архивов.
+После данной операции, объём занятого дискового пространства возрастёт на 594КB.
+Хотите продолжить [Д/н]?<span class="highlight-3">Y </span>
+</pre>
+							  <p>Нажмите <span class="highlight-3">Y</span> для загрузки пакетов.</p>
+
+							  <p>После окончания выполнения 'dist-upgrade -d', собираясь  завершить dist-upgrade, сразу или когда-либо позже, следуйте приведенной ниже инструкции:</p>
+	      </div>
+	      <div class="divider" id="du-st">
+				      <h3>Шаги выполнения dist-upgrade</h3>
+
+<div class="box block">
+			<div class="highlight-2">НИКОГДА не выполняйте никакой dist-upgrade, ни upgrade, не остановив сервер Х.<div class="highlight-4"> Всегда предварительно знакомьтесь с предупреждениями по обновлениям на главном сайте <a href="http://aptosid.com">aptosid</a>. Эти предупреждения размещаются по причине нестабильности и ежедневных обновлений!</div>
+<pre>
+Log out of KDE.
+Go to Textmode by doing Ctrl+Alt+F1
+logon as root, and then in type init 3
+apt-get update
+apt-get dist-upgrade
+apt-get clean
+init 5 &amp;&amp; exit
+</pre>
+			<div class="highlight-2">НИКОГДА не выполняйте команды "DIST-UPGRADE" или "UPGRADE" в графическом интерфейсе X, а также с помощью программ adept, synaptic или aptitude.</div>
+
+	</div>
+	</div>
+<div class="spacer02"></div>
+
+							<p class="highlight-2">Если Вы не перейдёте на init-level 3 (режим текстовой консоли), чтобы что нибудь делать, мы Вас предупредили!</p>
+	</div>
+	<div class="divider" id="whyno">
+
+				<h4>Причины использования только 'apt-get' для 'dist-upgrade'</h4>
+
+							<p>Пакетные менеджеры типа adept, aptitude, synaptic и kpackage не всегда способны учесть огромное число изменений, происходящих в Sid (изменения зависимостей, названий, установочных скриптов и т.д. ...).</p> 
+
+							<p>Не стоит думать, что применение этих пакетных менеджеров происходит в результате ошибок разработчиков данных программ. Они создают прекрасный инструментарий, замечательно работающий в стабильной ветке debian, но просто не адаптированный для очень специфичных требований Debian Sid.</p>
+
+							<p>Для поиска и получения информации о пакетах  вы по-прежнему можете использовать все, что вам нравится, но операции по установке, удалению и 'dist-upgrade' осуществляйте только с использованием 'apt-get'!</p>
+
+							<p>Пакетные менеджеры, типа adept, aptitude, synaptic и kpackage (при комплексном выборе пакетов), смешивают даже такие быстро изменяющиеся ссылки как в  sid  и ссылки внешних репозиториев, весьма сомнительного качества. мы не используем и не рекомендуем таковые, но вполне вероятно, что они могут присутствовать на пользовательских системах, что почти наверняка приведет к аварийным сбоям системы в дальнейшем.</p> 
+
+							<p>Еще одна проблема состоит в том, что данный тип графических пакетных менеджеров нуждается для своей работы  в X; осуществление же 'dist-upgrade' (или даже не рекомендуемого 'upgrade') в этих режимах в комплексе с указанными выше причинами приведет, несомненно, к краху системы в будущем, может не сегодня и не завтра, но когда-нибудь, однозначно.</p>
+
+							<p>С другой стороны 'apt-get' строго выполняет указанные инструкции, сохраняя возможность для администратора вмешаться и исправить то, что необходимо (если, например, 'apt-get' собирается удалить половину системы, Вы как администратор своей системы, можете внимательно ознакомиться с причинами, прежде чем принять окончательное решение).</p>
+
+							<p>Мы предоставили  вполне достаточный перечень причин для использования 'apt-get"  вместо чего-либо иного (и не слишком большая жертва - отказ от графических пакет-менеджеров - для того, кто хочет пользоваться новым, а значит не очень стабильным, но содержащим все новейшие возможности, софтом. - прим. переводчика)</p>
+
+
+	</div>
+	<div class="divider" id="apt-cache">
+			<h2>Поиск информации о пакете</h2>
+
+							<p>Еще одна очень удобная команда из системы  APT- apt-cache; с ее помощью осуществляется поиск и отображение информации о пакете  в APT-Database; например,  перечень всех пакетов, содержащих в названии "aptosid" и "manual" можно получить таким способом:</p>
+
+<pre>$ apt-cache search aptosid manual
+.......
+aptosid-manual-common - the official aptosid manual - common files
+aptosid-manual-es - the official Spanish aptosid manual
+aptosid-manual-de - the official German aptosid manual
+aptosid-manual-el - the official Greek aptosid manual
+aptosid-manual - the official aptosid manual - all languages
+aptosid-manual-pt-br - the official Brazilian Portuguese aptosid manual
+aptosid-manual-en - the official English aptosid manual
+aptosid-manual-reader - aptosid manual reader
+aptosid-manual-ru - the official Russian aptosid manual
+</pre>
+
+							 <p>Расширенная информация о конкретном пакете доступна после выполнения:</p>
+
+<pre>$ apt-cache show aptosid-manual-ru
+Package: aptosid-manual-ru
+Priority: optional
+Section: doc
+Installed-Size: 2136
+Maintainer: Kel Modderman kel@otaku42.de
+Architecture: all
+Source: aptosid-manual
+Version: 01.78.2009.01.01-1
+Depends: aptosid-manual-common
+Pre-Depends: dpkg (>= 1.14.15)
+Filename: pool/main/s/aptosid-manual/aptosid-manual-ru_01.78.2009.01.01-1_all.deb
+Size: 818060
+MD5sum: 966e148481dc112f03baf9a3cc6fff14
+SHA1: e0216db010d8c21225ac8cb3025f76483ee8579b
+SHA256: a2390bd6899790267357e732ad092e0012cc3628da66afbf3b96f6fd74f0ab71
+Description: the official en aptosid manual
+ This manual is divided into common sections, for example, .......
+</pre>
+
+							 <p>Все доступные версии пакета (их перечень зависит от содержимого sources.list) получаем так:</p>
+
+<pre>$ apt-cache policy aptosid-manual-ru
+aptosid-manual-ru:
+  Установлено: 01.78.2008.12.22-1
+  Кандидат:01.78.2009.01.01-1 0
+  Таблица версии:
+     01.78.2009.01.01-1 0
+        500 http://aptosid.com sid/main Packages</pre>
+
+							 <p><a href= "http://www.debian.org/doc/user-manuals.ru.html">Полное описание системы APT  может быть найдено в cправочникe по Debian</a>.</p>
+
+	</div>
+	<!--<div class="divider" id="gui-pacsea">
+			<h2>Графическая поисковая программа "packagesearch" в Debian</h2>
+
+<pre>
+apt-get update
+apt-get install packagesearch
+</pre>
+
+							 <p>После первого старта этой программы нужно выбрать в меню Packagesearch > Preferences опцию <span class="highlight-3">apt-get</span>.</p>
+
+							  <p><span class="highlight-2">Внимание, не используйте пакет packagesearch для установки пакетов, используйте его только в качестве поискового интерфейса. Обновление пакетов и установки новых пакетов без остановки X может вызвать проблемы. Читайте также <a href="sys-admin-apt-ru.htm#apt-install">'Установка нового пакета'</a>.</span></p>
+
+
+							  <p>При этом может появиться окно с информацией о том, что отсутствует deborphan. Информации deborphan нужно использовать крайне осторожно.</p>
+
+							  <p>На выбор предоставлены следующие критерии поиска:</p>
+						<ul>
+
+  							<li>pattern (общий запрос)</li>
+  							<li>tags (поиск на основе debtags, новой системы, категоризирующей пакеты Debian)</li>
+  							<li>files (названия файлов)</li>
+  							<li>installed status (статус инсталляции)</li>
+  							<li>orphaned packages (одиночные пакеты)</li>
+						</ul>
+
+							  <p>Дополнительно предлагается большое количество информации к пакетам Debian, например, какие файлы находятся в одном пакете. Дальнейшую информацию по использованию packagesearch можно найти в меню Help > Contents. В настоящее время информация имеется только на английском языке.</p>
+
+
+	</div>-->
+							  <p><a href="http://www.debian.org/doc/manuals/apt-howto/">Полное описание системы APT можно найти в APT-HOWTO Debian.</a>. </p>
+
+		<div id="rev">Содержание, последний раз пересмотрено 10/05/2012 1330 UTC</div>
+</div>
+</div>
+</body>
+</html>

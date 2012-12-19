@@ -1,0 +1,904 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>Manuel d'aptosid - Internet/Réseau - WiFi WPA-Supplicant</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation by alphad 06/03/2009 0100 UTC -->
+<!--htdig_noindex--><div id="menu"> <!-- menu starts here fr lang maintained by alphad, LjanA-->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="Vers aptosid.com, forum et wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-fr.htm#search-on"><img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" /> Rechercher</a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Choisir une autre langue - Choose another language CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="lang-switch CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-fr.htm">Manuel du système aptosid</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-fr.htm#welcome-gen">Manuel du système aptosid &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-fr.htm#cred-team">Contributeurs</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-fr.htm#how-to">Guide de l'utilisateur &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-fr.htm#how-to">Guide de l'utilisateur</a></li>
+					  <li><a href="welcome-fr.htm#table-contents">Table des matières</a></li>
+					</ul>
+					</li>
+		<li><a href="help-fr.htm#help-gen">Trouver de l'aide &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-fr.htm#help-gen">Où trouver de l'aide</a></li>
+					  <li><a href="help-fr.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-fr.htm#welcome-quick">Utiliser aptosid rapidement</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-fr.htm">Contenu de l'ISO, Versions, Téléchargement, Miroirs &amp; Gravure</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-fr.htm#cd-content">Contenu de l'ISO &#8211; Matériel minimal requis  &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-fr.htm#rolling">Notes de publication</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-fr.htm#download-aptosid">Miroirs aptosid &#8211; Téléchargement &#8211; Gravure &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-fr.htm#md5">md5 (somme de contrôle)</a></li>
+					  <li><a href="cd-dl-burning-fr.htm#burn-nero">Graver sous Windows</a></li>
+					  <li><a href="cd-dl-burning-fr.htm#burn-linux">Graver sous Linux</a></li>
+					  <li><a href="cd-no-gui-burn-fr.htm#burning-no-gui">Script burniso</a></li>
+					  <li><a href="cd-no-gui-burn-fr.htm#burn-no-gui-gen">Graver depuis un terminal</a></li>
+					  <li><a href="cd-dl-burning-fr.htm#download-aptosid">Miroirs de téléchargement aptosid</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-fr.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-fr.htm#rootpw">Mot de passe root en mode Live</a></li>
+				<li><a href="live-mode-fr.htm#live-cd-installsoft">Installer des logiciels en mode Live</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-fr.htm">Terminal / Konsole</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-fr.htm#term-kon">Terminal / Konsole &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-fr.htm#term-kon">Terminal / Konsole</a></li>
+					  <li><a href="term-konsole-fr.htm#colours"> prompt coloré dans un terminal </a></li>
+					  <li><a href="term-konsole-fr.htm#cli-help">Aide sous Terminal / Konsole</a></li>
+					  <li><a href="help-fr.htm#init3-tools">Outils utiles en mode texte (tty) &#8211; init 3</a></li>
+					  <li><a href="term-konsole-fr.htm#term-cmds">Liste de commandes sous BASH</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-fr.htm#sux">sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-fr.htm">Codes de démarrage</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-fr.htm#cheatcodes">Codes spécifiques à aptosid en mode Live</a></li>
+				<li><a href="cheatcodes-fr.htm#cheatcodes-linux">Codes génériques pour Linux</a></li>
+				<li><a href="cheatcodes-vga-fr.htm#vga">Codes VGA</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-fr.htm">Partitionner le disque dur - Traditionel, GPT et LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-fr.htm#hd-ntfs3g">Utiliser une partition NTFS grâce à ntfs-3g</a></li>
+			<li><a href="part-lvm-fr.htm#part-lvm">Partitionner pour utiliser LVM - Gestionnaire de Volumes Logiques</a></li>
+			<li><a href="part-gparted-fr.htm#partition">&#8230;dans un environnement graphique &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-fr.htm#partition">&#8230;avec GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-fr.htm#ntfs">Redimensionner une partition NTFS avec GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-fr.htm#partition">&#8230;en mode texte (CLI) &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-fr.htm#partition">&#8230;avec cfdisk</a></li>
+					    <li><a href="part-cfdisk-fr.htm#formating">Formater une partition créée avec cfdisk</a></li>
+					    <li><a href="part-gdisk-fr.htm#gdisk-6">Formater après partitionnement avec gdisk</a></li>
+					    <li><a href="part-gdisk-fr.htm#gdisk-1">GPT : partitionnement avec gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-fr.htm#part-example">Partitionner  &#8211; Concepts de base &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-fr.htm#part-example">Tailles des partitions  &#8211; Exemples</a></li>
+					  <li><a href="part-uuid-fr.htm#uuid">UUID, Modifier fstab et créer de nouveaux points de montage</a></li>
+					  <li><a href="part-cfdisk-fr.htm#disknames">Noms des disques et partitions</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-fr.htm">Choix du type d'installation &#8211; HD, USB, VM and Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-fr.htm#Inst-prep">Préparer l'installation &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-fr.htm#Inst-prep">Préparer l'installation </a></li>
+					  <li><a href="hd-install-fr.htm#Installation">Installer sur le disque dur (HD)</a></li>
+					  <li><a href="hd-install-fr.htm#first-hd-boot">Au premier démarrage</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-fr.htm#fromiso">Démarrer en mode ''fromiso'' &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-fr.htm#fromiso">''fromiso'' Généralités</a></li>
+					  <li><a href="hd-install-opts-fr.htm#grub2-fromiso">Démarrer ''fromiso'' avec grub2</a></li>
+					  <li><a href="hd-install-opts-fr.htm#fromiso-persist">''fromiso'' and persistance</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-fr.htm#usb-hd">Installer sur USB-HD &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-fr.htm#usb-hd">Installer sur disque USB &#8211; aptosid sur une clé USB</a></li>
+					  <li><a href="hd-ins-opts-oos-fr.htm#raw-usb">Installer aptosid sur une clé USB/carte SSD à partir de systèmes Linux, MS-Windows ou Mac-OS-X</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-fr.htm#install-crypt">Installation sur partitions cryptées - cryptroot</a></li>
+		  <li><a href="nbdboot-fr.htm#nbd1">Démarrer aptosid à partir d'un réseau</a></li>
+		<li><a href="hd-install-vmopts-fr.htm#vmopts">Choix d'installation sur une machine virtuelle</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-fr.htm">Cartes graphiques &#8211; Moniteurs &#8211; Xorg &#8211; Pilotes divers</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-fr.htm#mon-res">Définition des écrans &#8211; Moniteurs  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-fr.htm#mon-res">Définition des écrans &#8211; Moniteurs</a></li>
+					  <li><a href="hw-dev-mon-fr.htm#xrandr">Deux moniteurs &#8211; xrandr</a></li>
+					  <li><a href="hw-dev-mon-fr.htm#mon-binary">Deux moniteurs &#8211; outils binaires</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-fr.htm#foss-xorg">Drivers cartes graphiques&#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-fr.htm#ati-3d">Drivers AMD/ATI 3D</a></li>
+					  <li><a href="gpu-fr.htm#intel">Drivers Intel 2D and 3D</a></li>
+					  <li><a href="gpu-fr.htm#nvidia">Drivers Nvidia 3D</a></li>
+					  <li><a href="gpu-fr.htm#foss-xorg">Drivers Open Source Xorg</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-fr.htm#fw-detect">Détection de Firmware non-libre</a></li>
+			  <li><a href="nf-firm-fr.htm#non-free-firmware">Ajouter non-free aux Sources List</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-fr.htm">Gestionnaire de fenêtres</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-fr.htm">KDE and XFCE Gestionnaire de fenêtres &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-fr.htm#xfce-notes">Applications supplémentaires utiles pour Xfce</a></li>
+					    <li><a href="wm-dm-fr.htm#install-add">Applications supplémentaires utiles pour KDE</a></li>
+					    <li><a href="wm-dm-fr.htm#desk-freeze">Écran gelé</a></li>
+					    <li><a href="wm-dm-fr.htm#kde-login">Ouverture de session impossible (login) dans KDE</a></li>
+					    <li><a href="wm-dm-fr.htm#ch-th">Changer les fonds d'écran</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-fr.htm#dm">Installation de gestionnaires d'affichage supplémentaires</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-fr.htm">Internet &#8211; WiFi &#8211; LAN &#8211; Réseaux</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-fr.htm">Suite LAMP aptosid &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-fr.htm#serv-apache">Suite LAMP aptosid</a></li>
+					    <li><a href="lamp-apache-fr.htm#serv-ftp">Clients FTP</a></li>
+					    <li><a href="lamp-apache-fr.htm#serv-sec">Protocoles de sécurité</a></li>
+					    <li><a href="lamp-apache-fr.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-fr.htm#serv-mysql">Configurer MySQL </a></li>
+					    <li><a href="lamp-ppp-fr.htm#serv-php">Support PHP dans Apache</a></li>
+					    <li><a href="ntp-server-fr.htm#ntp-server">Configurer le serveur d'horloge (timeserver)</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-fr.htm#tor">Pare-feu &#8211; Confidentialité &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-fr.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-fr.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-fr.htm#firewalls">Pare-feu</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-fr.htm#ssh-x">SSH &#8211; Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-fr.htm#setup">Configurer un serveur Samba</a></li>
+						  <li><a href="samba-fr.htm#configure">Configurer SAMBA (MS-Windows)</a></li>
+						  <li><a href="ssh-fr.htm#ssh-fs">Montage d'un répertoire à distance via SSH</a></li>
+						  <li><a href="ssh-fr.htm#ssh-x">Application X via SSH</a></li>
+						  <li><a href="ssh-fr.htm#ssh-f">Environnement graphique pour SSH via Dolphin</a></li>
+						  <li><a href="ssh-fr.htm#ssh-w">Transmission de X via SSH depuis un PC MS-Windows</a></li>
+						  <li><a href="ssh-fr.htm#ssh">SSH et Sécurité</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-fr.htm#netcardconfig">Connections WIFI &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-fr.htm#netcardconfig">Se connecter au réseau &#8211; Ceni</a></li>
+						    <li><a href="inet-wpagui-fr.htm#wpa-roaming-gui">WiFi &#8211; WPA_GUI</a></li>
+						    <li><a href="inet-setup-fr.htm#net-set1">WiFi &#8211; Configurer une connexion itinérante (roaming) WiFi</a></li>
+						    <li><a href="inet-wpa-fr.htm#wpa">WiFi &#8211; wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-fr.htm#hotswitch">Alterner entre les réseaux WiFi et câblés</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-fr.htm#netcardconfig">Connexions câblées &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-fr.htm#dial-mod">Modems 56k </a></li>
+						    <li><a href="inet-ceni-fr.htm#netcardconfig">Se connecter au réseau &#8211; Ceni</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-fr.htm#fw-detect">Détection de Firmware non-libre</a></li>
+		<li><a href="nf-firm-fr.htm#non-free-firmware">Ajouter non-free aux Sources List</a></li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-fr.htm">Gestion de paquets &#8211; Mise à niveau (dist-upgrade)</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-fr.htm#apt-cook">Guide APT &#8211; Liste des dépôts de paquets &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-fr.htm#apt-cook">Guide APT &#8211; Liste des dépôts de paquets</a></li>
+					    <li><a href="sys-admin-apt-fr.htm#apt-install">Installer un nouveau paquet</a></li>
+					    <li><a href="sys-admin-apt-fr.htm#apt-delete">Supprimer un paquet</a></li>
+					    <li><a href="sys-admin-apt-fr.htm#apt-downgrade">Geler un paquet &#8211; Dégradation de paquet</a></li>
+					    <li><a href="sys-admin-apt-fr.htm#apt-cache">Recherche de paquets via apt-cache</a></li>
+					    <li><a href="sys-admin-apt-fr.htm#gui-pacsea">Recherche de paquets en mode GUI</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-fr.htm#kern-upgrade">Mise à niveau du noyau &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-fr.htm#kern-remove">Supprimer des noyaux</a></li>
+					    <li><a href="sys-admin-kern-upg-fr.htm#kern-upgrade">Mise à niveau du noyau</a></li>
+					    <li><a href="sys-admin-kern-upg-fr.htm#dmakms">Installer des modules de noyau dynamiquement via dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-fr.htm#apt-upgrade">Mise à niveau d'un système (dist-upgrade) &#8211; Vue d'ensemble &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-fr.htm#live-cd-upgrade">Mise à niveau depuis un Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-fr.htm#approx">Mise à niveau de plusieurs ordinateurs connectés</a></li>
+					    <li><a href="sys-admin-apt-fr.htm#apt-upgrade">Mise à niveau d'un système (dist-upgrade) &#8211; Vue d'ensemble</a></li>
+					    <li><a href="sys-admin-apt-fr.htm#du-st">Les étapes d'une mise à niveau d'un système</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-fr.htm">Administration du système</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-fr.htm#bois-prep">Mise à niveau du BIOS via FreeDOS</a></li>
+		<li><a href="vir-rkits-fr.htm#virus-rkits">Scanneurs de virus et de rootkits</a></li>
+		<li><a href="hd-install-fr.htm#adduser">Ajouter un utilisateur &#8211; Mots de passe &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-fr.htm#adduser">Ajouter un utilisateur</a></li>
+					    <li><a href="sys-admin-gen-fr.htm#pw-lost">Perte du mot de passe root &#8211; Nouveau mot de passe</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-fr.htm#start-services">Services (démons) &#8211; init &#8211; Niveaux d'exécution &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-fr.htm#start-services">Activer / Désactiver des services (démons)</a></li>
+					    <li><a href="sys-admin-gen-fr.htm#pkill">terminer un service ou un processus</a></li>
+					    <li><a href="sys-admin-gen-fr.htm#init">Niveaux d'exécution aptosid &#8211; init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-fr.htm#rsync">Sauvegarder le système (OS) &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-fr.htm#rdiff">Sauvegarder via rdiff</a></li>
+					    <li><a href="sys-admin-rsync-fr.htm#rsync">Sauvegarder via rsync</a></li>
+					    <li><a href="home-fr.htm#home-bu">Déplacer une partition /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-fr.htm#fonts">CUPS, Polices de caractères &amp; Son &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-fr.htm#fonts">Polices de caractères </a></li>
+					     <li><a href="sys-admin-gen-fr.htm#cups">CUPS &#8211; Gestion des imprimantes</a></li>
+					     <li><a href="sys-admin-gen-fr.htm#sound">Mixeurs de son (Sound Mixers)</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-fr.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-fr.htm#chroot">Grub2 - Récupération de Grub via un chroot</a></li>
+					    <li><a href="sys-admin-grub2-fr.htm#mbr-over-grub2">Grub2 &#8211; Secteur d'amorçage (MBR) écrasé</a></li>
+					    <li><a href="sys-admin-grub2-fr.htm#multi-os">Grub2 &#8211; Démarrage de plusieurs systèmes (OS)</a></li>
+					    <li><a href="sys-admin-grub2-fr.htm#grub1-grub2">Grub2 &#8211; Mise à niveau depuis Grub1</a></li>
+					    <li><a href="sys-admin-grub2-fr.htm#grub2">Grub2 &#8211; Vue d'ensemble</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Sponsored by webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid is proudly hosted by webtropia.com" alt="aptosid is proudly hosted by webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+	<div class="divider" id="wpa-basic">
+	<h2 id="top-header" >Guide basique de fonctionnement du WiFi</h2>
+
+							<p class="highlight-3">En raison des complexités juridiques, aptosid ne fournit sur le Live CD que des logiciels strictement libres, <a href="nf-firm-fr.htm#non-free-firmware">consultez svp ce lien, pour plus d'information sur les sources de firmware non-libres.</a></p>
+
+							<p>Pour faire fonctionner le wifi, Vous avez besoin de vous connecter par cable juste quelques minutes, le temps de télécharger le firmware approprié.</p>
+
+							<p>Si une connection cablée n'est pas possible, vous aurez à copier le firmware sur une clé ou un support amovible et l'installer en root à partir du support:</p>
+<pre>
+#dpkg -i &lt;firmware.deb&gt;
+</pre>
+
+							<p>Pour trouver le firmware approprié tout en n'ayant aucune  information (marque, fabricant) sur la puce wifi, utilisez cette commande:</p>
+<pre>
+#fw-detect
+</pre>
+							<p>Vous obtiendrez les informations suivantes:</p>
+<pre>
+#apt-get update
+#apt-get install &lt;nom du firmware&gt;
+#modprobe -r &lt;nomdumodule&gt;
+#modprobe &lt;nomdumodule&gt;
+</pre>
+							<p>Utiliser la ligne apt-get install que donne la commande fw-detect. Après que ce soit fait, vous devrez saisir certaines commandes en console avant de configurer votre périphérique.</p>
+
+							<p>Il vous faudra charger le module afin de pouvoir configurer votre périphérique.</p>
+
+							<p>En tant que root dans une console, saisir:</p>
+<pre>
+modprobe -r &lt;nomdumodule&gt;
+
+modprobe &lt;nomdumodulee&gt;
+</pre>
+							<p>Comme &lt;nomdemodule&gt; utilisez les informations que fw-detect vous aura donné auparavant. Une fonction utile de la console peut vous aider: bash completion: <br />
+							Si vous n'écrivez que les premières lettres du &lt;nomdumodule&gt; et ensuite tabulez il complètera le nom du module (ex: modprobe ipw TABULATION) Cela vous évite les erreurs de saisie.</p>
+
+							<p>Les deux commandes modprobe ne vous donneront aucun message si la configuration est réussie, donc si vous retournez normalement au prompt, c'est que le module est bien chargé.</p>
+
+							<p>Vous pouvez le vérifier en faisant:</p>
+<pre>
+#lsmod | grep &lt;module&gt;
+</pre>
+
+
+							<p>Maintenant lancez Ceni à partir du Menu-K - Internet ou le lancez-le à partir d'une console en root comme expliqué dans <a href="inet-ceni-fr.htm#netcardconfig">Se connecter en réseau - Ceni</a>. Votre périphérique wifi sera maintenant reconnu et prêt à être configuré.</p>
+
+							<p>Pour configurer le WiFi à partir d'une interface graphique  voir <a href="inet-wpagui-fr.htm">WiFi - roaming WPA-GUI</a></p>
+
+							</div>
+	<div class="divider" id="wpa">
+		<h2>Modes opératoires de wpasupplicant pour Debian</h2>
+
+							<p class="highlight-3">En raison des complexités juridiques, aptosid ne fournit sur le Live CD que des logiciels strictement libres, <a href="nf-firm-fr.htm#non-free-firmware">consultez svp ce lien, pour plus d'information sur les sources de firmware non-libres.</a></p>
+
+							<p>Le paquetage Debian wpa supplicant fournit 2 modes opératoires intéressants car intégrés de près à l'infrastructure système de gestion réseau : ifupdown.</p>
+
+				<h4>Contenus de cette section :</h4>
+
+					<h6>1.  Spécifier quelle méthode on utilise avec wpa_supplicant</h6>
+							<p>* Tableau des pilotes supportés<br />
+         						* Recommandations courantes concernant les pilotes </p>
+
+					<h6>2. Mode #1: mode dirigé (Managed Mode)</h6>
+          						<p>* Exemples<br />
+          						* Tableau des options courantes<br />
+          						* Notes importantes sur le mode dirigé<br />
+          						* Comment Ça Marche ?</p>
+
+					<h6>3. Mode #2: mode vagabond (Roaming Mode)</h6>
+          						<p>* wpa_supplicant.conf<br />
+          						* /etc/network/interfaces<br />
+          						* Contrôle du démon Vagabond avec wpa_action<br />
+          						* Réglages de précision du mode vagabond<br />
+          						* Le fichier de logs<br />
+          						* Utiliser des scripts externes de mapping (ex: guessnet)<br />
+          						* /etc/network/interfaces et mapping externe</p>
+
+					<h6>4. En cas de problème</h6>
+          						<p>* ssids cachées</p>
+
+					<h6>5. Considerations sur la sécurité</h6>
+          						<p>* Permissions des fichiers de configuration</p>
+
+			<h2>1. Spécifier quelle méthode on utilise avec wpa_supplicant</h2>
+
+							<p>La méthode wext sera utilisée par défaut sur toute interface qui ne mentionnerait pas explicitement le bon type de pilote à 'wpa-driver'.  Utilisateurs des noyaux Linux 2.4 et inférieurs au 2.6.14 seront invités à spécifier un pilote de type wpa.</p>
+
+	</div>
+		<h3>Pilotes supportés</h3>
+	<div>
+		<table>
+			<tbody>
+				<tr>
+					<th>Pilote</th>
+					<th>Description</th>
+				</tr>
+				<tr>
+					<td>wext</td>
+					<td>Linux wireless extensions (generic)</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="spacer05"></div>
+				<h3>Recommandations courantes concernant les pilotes</h3>
+
+							<p>Toutes les interfaces Intel Pro Wireless (ipw2100, ipw2200 and ipw3945) utilisent la méthode "wext", à part si vous utilisez un noyau antérieur au 2.6.14.</p>
+
+							<p>Madwifi permet d'utiliser les deux méthodes 'wext' et 'madwifi', mais 'wext' est préférable. Ceci dit 'madwifi' peut se révèler plus efficace dans certaines circonstances.</p>
+
+							<p>Ndiswrapper N'ADMET PLUS l'utilisation de la méthode 'ndiswrapper' depuis sa version 1.16. A contrario il faut lui assigner la méthode 'wext' si vous n'utilisez pas une version dépassée de ndiswrapper..</p>
+
+							<p>Réglez le type de pilote dans la strophe dédiée à votre interface par l'option 'wpa-driver'. Par exemple :</p>
+
+<pre>
+iface eth0 inet dhcp
+	wpa-driver wext
+	. . . . . plus d'options
+</pre>
+
+			<h2>2. Mode #1: Mode Dirigé (Managed Mode)</h2>
+
+							<p>Ce mode fournit la possibilité de se connecter via wpa_supplicant à un réseau connu. la méthode utilisée est proche de celle du paquetage 'wireless-tools'. Chaque élément requis pour établir la connexion comporte un préfixe "wpa-" suivi par la valeur utilisée pour cet élément.</p>
+
+						<h6>Exemples de fichier wpa.conf en Mode #1 - Exemple 1.</h6>
+<pre>
+Avertissement: la valeur 'wpa-psk' n'est valide que si:
+
+
+   1. Il s'agit d'une chaîne caractères texte (ascii) comportant entre 8 et 63 caractères en tout
+   2. Il s'agit d'une chaîne hexadécimale de 64 caractères
+
+# Connexion à un point d'accès de ssid 'NETBEER' cryptée de type
+# WPA-PSK/WPA2-PSK, utilisant la méthode 'wext' de wpa_supplicant,
+# puisqu'aucune option de wpa-driver n'est spécifiée
+# La phrase de passe est entrée comme chaîne de caractères ASCII.
+# DHCP est utilisé pour obtenir une adresse IP.
+
+iface wlan0 inet dhcp
+
+        wpa-ssid NETBEER
+        # phrase de passe en mode texte
+        wpa-psk PlainTextSecret
+
+# Connexion à un point d'accès de ssid 'homezone' avec un type d'encryptage
+# WPA-PSK/WPA2-PSK, utilisant le gestionnaire de pilote 'wext' de wpa_supplicant,
+# Le psk est fourni sous forme de chaîne hexadécimale.
+#SDHCP est utilisé pour obtenir une adresse IP.
+
+iface wlan0 inet dhcp
+        wpa-driver wext
+        wpa-ssid homezone
+        # le psk hexadécimal est obtenu par encodage de phrase de passe texte
+        wpa-psk 000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f
+
+# Connexion à un point d'accès de ssid 'HotSpot1' et de bssid '00:1a:2b:3c:4d:5e'
+# avec un type d'encryptage WPA-PSK/WPA2-PSK, utilisant le gestionnaire de pilote
+# 'madwifi' de wpa_supplicant. Le phrase de passe est entrée comme chaîne
+# de caractères ASCII. Une adresse réseau statique est utilisée.
+
+iface ath0 inet static
+
+        wpa-driver madwifi
+        wpa-ssid HotSpot1
+        wpa-bssid 00:1a:2b:3c:4d:5e
+        # plaintext passphrase
+        wpa-psk madhotspot
+        wpa-key-mgmt WPA-PSK
+        wpa-pairwise TKIP CCMP
+        wpa-group TKIP CCMP
+        wpa-proto WPA RSN
+        # static ip settings
+        address 192.168.0.100
+        netmask 255.255.255.0
+        network 192.168.0.0
+        broadcast 192.168.0.255
+        gateway 192.168.0.1
+
+# Un fichier utilisateur wpa_supplicant.conf est utilisé pour eth1.
+# Toute l'information réseau est contenue dans ce fichier wpa_supplicant.conf
+# Aucun type de pilote-wpa n'est spécifié, et donc wext sera utilisé
+#DHCP est utilisé pour obtenir une adresse IP.
+
+iface eth1 inet dhcp
+wpa-conf /path/to/wpa_supplicant.conf
+</pre>
+
+	<div class="divider" id="wpa1">
+		<h2>Tableau des options les plus courantes</h2>
+
+							<p>Un bref sommaire des options 'wpa-' que vous pouvez utiliser dans la strophe dédiée aux contrôleurs réseau sans fil du fichier /etc/network/interfaces. Reportez-vous à la section "Notes importantes relatives au mode dirigé" pour une information se rapportant aux valeurs 'wpa-' valides et invalides</p>
+
+							<p class="highlight-2">Avertissement : Toutes ces valeurs SoNt SenSibLes &Agrave; lA CAssE dEs caRact&Egrave;Res !</p>
+
+<pre>
+Élément		Exemple de valeur	Description
+=======         =============           ===========
+wpa-ssid        chainedetexteplein      Fixe le ssid de votre réseau
+wpa-bssid       00:1a:2b:3c:4d:5e       Adresse Mac de votre point d'accès
+wpa-psk         0123456789......        Clé wpa de votre partage. Utilisez
+wpa_passphrase(8) pour générer	le psk d'après votre phrase de passe
+wpa-key-mgmt    NONE, WPA-PSK, WPA-EAP, Liste des protocoles utilisables pour
+                IEEE8021X               authentifier votre clé
+wpa-group       CCMP, TKIP, WEP104,     Liste des groupes de partage WPA
+                WEP40                   utilisables
+wpa-pairwise    CCMP, TKIP, NONE        Liste des partages pairwise
+                                        utilisables avec WPA
+wpa-auth-alg    OPEN, SHARED, LEAP      Liste des algorythmes d'authentification
+                                        permis avec IEEE 802.11
+wpa-proto       WPA, RSN                Liste des protocoles supportés
+wpa-identity    monnomentouteslettres   ID de l'administrateur
+                                        (Authentification EAP)
+wpa-password    monmotdepasse           Votre mot-de-passe d'administrateur
+                                        (Authentification EAP)
+wpa-scan-ssid   0 ou 1              	Alterne la détection des ssid utilisant des
+					appels à des trames de vérification spécifiques
+					(Probe Request frames)
+wpa-ap-scan     0 ou 1 ou 2             Ajuste la méthode de détection de
+					wpa_supplicant
+
+</pre>
+							<p>les fonctionnalités complètes de wpa-cli(8) doivent être implémentées. Tout élément manquant est considéré comme bug et doit être signalé comme tel. Les patches sont toujours des bienvenus.</p>
+
+			<h2>Notes importantes relatives au mode dirigé (Managed Mode)</h2>
+
+							<p>La plupart des options 'wpa-' exigent qu'au moins un ssid soit spécifié. Seulement quelques unes des options auront un effet général. Ce sont 'wpa-ap-scan' and 'wpa-preauthenticate'.</p>
+
+							<p>Toute option 'wpa-' spécifiée dans le fichier interfaces(5) est suffisante pour activer le démon wpa_supplicant.</p>
+
+							<p>La routine ifupdown de wpa_supplicant s'adapte au 'type" d'entrée qu'elle considère valide pour chaque option. Par exemple, si elle rencontre un champ en texte plein admissible pour une valeur spécifique, elle l'encadre automatiquement de guillemets avant de passer sa valeur à wpa_cli, qui à son tour ajoûte l'entrée au bloc réseau en construction via le socket wpa_supplicant ctrl_interface. </p>
+
+							<p>Lancer ifup manuellement avec l'option '--verbose' vous révèlera toutes les commandes utilisées pour créer un bloc réseau avec wpa_cli. Si la valeur utilisée pour toute option de type wpa-* dans /etc/network/interfaces est entourée de guillemets, il ne pourra s'agir que d'une entrée de type "texte" ou "ascii".</p>
+
+							<p>Certaines entrées sont formées d'une simple chaine hexadécimale (par exemple celle de la clé wpa-wep-key*).La valeur 'type' de l'option wpa-psk, est déterminée par un simple examen de toute valeur hexadécimale comportant plus d'un seul caractère.</p>
+
+			<h2>Comment ça marche</h2>
+							<p>Comme indiqué plus haut, tout élément se rapportant à wpa_supplicant est précédé d'un préfixe 'wpa-'. Chaque élément se rapporte à une propriété de wpa_supplicant décrite dans les pages de manuel ($ man) wpa_supplicant.conf(5), wpa_supplicant(8) and wpa_cli(8).</p>
+
+							<p>Le requiérant (supplicant) est lancé sans pré-configuration aucune à la base, et wpa_cli construit une configuration réseau en utilisant les paramètres que lui adressent les lignes 'wpa-*'.<br />
+							Au départ le couple wpa_supplicant/wpa_cli ne fixent pas les propriétés du contrôleur wifi (comme le ferait iwconfig avec l'essid, par exemple), il informe plutôt le contrôleur de l'existence d'un point d'accès auquel il est possible de se connecter. Et lorsque le contrôleur wifi a balayé le secteur et détecté qu'un tel point d'accès est effectivement disponible, il règle alors ses propriétés.</p>
+
+
+							<p>Le script qui lance tout ce travail est:</p>
+
+<pre>
+/etc/wpa_supplicant/ifupdown.sh
+/etc/wpa_supplicant/functions.sh
+</pre>
+							<p>ifupdown.sh: Il est exécuté par run-parts, qui à son tour est invoqué par ifupdown durant les phases 'pre-up', 'pre-down' et 'post-down'</p>
+
+							<p>Au cours de la phase 'pre-up', un démon wpa_supplicant est chargé, suivi d'une série de commandes wpa_cli configurant un réseau en fonction des options 'wpa-' utilisées dans /etc/network/interfaces pour le contrôleur physique.</p>
+
+							<p>Si wpa-roam, le mode vagabond, est utilisé, un démon wpa_cli est chargé durant la phase 'post-up'.</p>
+
+							<p>Durant la phase 'pre-down', le démon wpa_cli est tué s'il existe.</p>
+
+							<p>À la phase 'post-down', c'est le démon wpa_supplicant qui est tué.</p>
+
+			<h2>3. Mode #2: Mode Itinérant (Roaming Mode)</h2>
+
+							<p>Un mode itinérant simplifié est intégré par ce paquetage. Il se présente sous la forme d'un script de comportement pour wpa_cli, /sbin/wpa_action, et prend le contrôle d'ifupdown une fois activé. La page man de wpa_action(8) décrit avec force détails ses caractéristiques techniques.</p>
+
+							<p>Pour activer l'interfaçage vagabond, vous adapterez à votre configuration la strophe suivante dans votre fichier /etc/network/interfaces :</p>
+
+<pre>
+iface eth1 inet manual
+	wpa-driver wext
+        wpa-roam /chemin/vers/wpa_supplicant.conf
+</pre>
+							<p>Deux démons sont invoqués dans l'exemple ci-dessus : wpa_supplicant et wpa_cli. Ceci est nécessaire pour obtenir une wpa_supplicant.conf. Un bon point de départ est fourni sous la forme un fichier d'exemple de configuration :</p>
+
+
+<pre>
+ # copiez ce modèle dans /etc/wpa_supplicant/
+        cp /usr/share/doc/wpasupplicant/examples/wpa-roam.conf \
+                /etc/wpa_supplicant/wpa_supplicant.conf
+        # ne permettez qu'à root de lire et écrire ce fichier
+        chmod 0600 /etc/wpa_supplicant/wpa_supplicant.conf
+
+IMPORTANT: il est fondammental que le fichier wpa_supplicant.conf utilisé se réfère à
+      une 'ctrl_interface' afin qu'un socket de communication puisse être créé pour
+      être relié via wpa_cli (wpa-roam daemon). Dans le modèle de configuration évoqué ci-dessus,
+      /usr/share/doc/wpasupplicant/examples/wpa-roam.conf, la valeur neutre 'default' a été assignée.
+
+</pre>
+
+
+
+							<p>Vous devrez éditer ce fichier de configuration, en y ajoûtant tous vos blocs réseau connus. Si vous ne comprenez pas ce que celà veut dire, commencez par lire la page man de  wpa_supplicant.conf(5).</p>
+
+							<!--- ####
+							<p>For each network, you may specify a special option 'id_str'. It should be set to a simple text string. This text string forms the basis for network profiling; it correlates to a logical interface defined in the interfaces(5) file. When no 'id_str' is given for a network, wpa_action assumes it will use the 'default' logical interface as fallback. The fallback interface can be chosen via the 'wpa-default-iface' option.</p>
+
+							<p>So what does all this mean? Lets illustrate it with a small example taken from the wpa_action(8) manpage.</p>
+							#### -->
+							<p>Pour chaque réseau, vous devez spécifier une option specifique pour 'id_str'. Il sera spécifié dans une simple serie de texte. Cette serie de texte donne la base du profil réseau; elle synchronise avec une interface logique définie dans le fichier interfaces(5). Lorsqu'aucun 'id_str' n'est définie, wpa_action utilisera l'interface logique de base. L'interface de base peut etre definie par l'option 'wpa-default-iface'.</p>
+
+							<p>Qu'est-ce que cela signifie? Illustrons le par un extrait tiré du manuel wpa_action(8).</p>
+
+						<h6>exemple de wpa_supplicant.conf</h6>
+<pre>
+wpa_supplicant.conf example:
+network={
+        ssid="foo"
+        key_mgmt=NONE
+        # cette id_str notifiera à /sbin/wpa_action 'ifup lafac' (d'activer 'lafac')
+        id_str="lafac"
+}
+
+network={
+        ssid="bar"
+        psk=123456789...
+        # cette id_str notifiera à /sbin/wpa_action 'ifup maison_static' (d'activer 'maison_static')
+        id_str="maison_static"
+}
+
+network={
+        ssid=""
+        key_mgmt=NONE
+        # pas de paramètre 'id_str' , /sbin/wpa_action 'ifup default' (activera 'default')
+}
+</pre>
+	</div>
+	<div class="divider" id="wpa2">
+		<h6>exemple de fichier /etc/network/interfaces</h6>
+
+<pre>
+exemple de /etc/network/interfaces:
+# le démon itinérant DOIT utiliser la méthode manuelle inet
+# 'allow-hotplug' ou 'auto' garantissent que le démon démarre automatiquement
+allow-hotplug eth1
+iface eth1 inet manual
+
+        wpa-driver wext
+        wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf
+
+
+# aucun id_str spécifié, 'default' est utilisé comme cible de mapping en réserve
+iface default inet dhcp
+
+
+# id_str="lafac"
+iface uni inet dhcp
+
+# id_str="maison_static"
+iface home_static inet static
+
+        address 192.168.0.20
+        netmask 255.255.255.0
+        network 192.168.0.0
+
+        broadcast 192.168.0.255
+        gateway 192.168.0.1
+</pre>
+
+							<p>Une interface logicielle est activée par ifup et désactivée par ifdown, à mesure que wpa_supplicant s'associe ou se dissocie d'un ssid ou d'un réseau lui étant associé par l'option 'id_str' utilisée dans le fichier de configuration wpa_supplicant.conf .</p>
+
+							<p>Un log des actions réalisées par /sbin/wpa_action est créé à l'adresse  /var/log/wpa_action.log . Joignez ce log en fichier joint si vous rapportez un bug.</p>
+
+			<!--- ####
+			<h2>Interacting with wpa_supplicant with wpa_cli and wpa_gui</h2>
+
+							<p>The wpa_supplicant process can be interacted with by members of the "netdev" group if the example roaming configuration was used as is (or by whatever group or gid specified by the GROUP= crtl_interface parameter).</p>
+							#### -->
+			<h2>Configurations  avec  wpa_supplicant, wpa_cli et wpa_gui </h2>
+
+							<p>Les processus wpa_supplicant peuvent etre modifiés par les membres du groupe "netdev" si on a utilisé la configuration itinérante de l'exemple précédent (ou par les  membres specifiés par GROUP= crtl_interface).</p>
+<pre>
+# la velaur default est assignée à ctrl_interface dans le fichier de modèle
+	# /usr/share/doc/wpasupplicant/examples/wpa-roam.conf
+        ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+
+Pour interagir avec supplicant, les interfaces wpa_cli (mode console) et wpa_gui (Gui QT)
+ont été fournies. Avec ces dernières vous pourrez vous connecter, déconnecter, ajouter/supprimer des blocs réseau,
+fixer des paramètres de sécurisation, etc..
+</pre>
+
+			<h2>Contrôle du Démon itinérant avec wpa_action</h2>
+
+							<p>Une fois le Démon itinérant lancé il assure le contrôle de ifupdown. Cela implique que wpa_cli appelle ifup quand wpa_supplicant s'est correctement associé à un point d'accès, et appelle ifdown quand la connexion doit être rompue ou fermée.</p>
+
+							<p>Tant que le Démon itinérant est actif il ne faut pas tenter de contrôler manuellement ifupdown, mais au contraire utiliser les commandes fournies à cet effet par /sbin/wpa_action pour arrêter et relancer le Démon itinérant. Par exemple, pour arrêter le démon itinérant sur le contrôleur 'eth1' :</p>
+
+<pre>
+wpa_action eth1 stop
+</pre>
+
+							<p>Et quand il est nécessaire de mettre-à-jour le Démon itinérant avec de nouveaux paramètres détaillés, ceci peut s'opérer sans l'arrêter. On édite le fichier de configuration /etc/network/interfaces en y intégrant les nouveaux détails sur la configuration spécifique au réseau concerné (pointé par son 'id_str') et l'on relance simplement le démon comme ceci :</p>
+
+<pre>
+wpa_action eth1 reload
+</pre>
+
+							<p>Pour accéder à une information précise et détaillée sur tout ce que wpa_action peut faire, lisez la page man de wpa_action(8)</p>
+
+	</div>
+	<div class="divider" id="wpa3">
+		<h2>Réglages de précision de l'itinérance</h2>
+
+							<p>Vous pouvez rencontrer des situations où de multiples points d'accès sont à proximité immédiate. Vous pourrez choisir manuellement auquel d'entre eux vous préférerez vous connecter, à l'aide de wpa_cli ou wpa_gui, ou assigner à chaque réseau son propre niveau de priorité. Ceci s'opère au moyen de l'option 'priority' de wpa_supplicant.conf.</p>
+
+	</div>
+	<div class="divider" id="wpa4">
+		<h2>Le fichier de log</h2>
+
+							<p>Un journal de l'activité (log) du démon itinérant s'enregistre dans /var/log/wpa_action.log. Il logue les informations suivantes :</p>
+
+
+							<p>*date et heure<br />
+							*nom de l'interface et des événements d'activité<br />
+							*valeurs des variables d'environnement (WPA_ID, WPA_ID_STR, WPA_CTRL_DIR)<br />
+							*exécutions des commandes ifupdown<br />
+							*états de wpa_cli (basé sur WPA-PSK, le réseau peut afficher différentes informations)<br />
+							*bssid<br />
+							*ssid<br />
+							*id<br />
+							*id_str<br />
+							*pairwise_cipher<br />
+							*group_cipher<br />
+							*key_mgmt<br />
+							*wpa_state<br />
+							*ip_address</p>
+
+
+	</div>
+	<div class="divider" id="wpa5">
+		<h2>Utilisation de scripts de mapping externes (ex: guessnet)</h2>
+
+							<p>Outre ses possibilités internes pour mapper les interfaces logiques au moyen de 'id_str', wpa_action peut appeler des scripts externes. Un script de mapping doit retourner le nom de l'interface logique devant être activée. Tout script de mapping utilisant le mécanisme de mapping de ifupdown (cf man interfaces) devrait pouvoir fonctionner s'il est invoqué par wpa_action.</p>
+
+							<p>Pour appeler un script de mapping, vous ajoûterez une ligne 'wpa-mapping-script nom-du-script' dans la strophe d'interface correspondant au contrôleur itinérant (roaming device). (Il se peut que vous ayez à specifier le chemin absolu conduisant à ce script)</p>
+
+							<p>Le contenu des lignes commençant par wpa-map est adressé au script de mapping. Du fait qu'ifupdown ne tolère qu'une unique ligne wpa-map, vous pouvez rajouter un numéro à wpa-map pour entrer des lignes supplémentaires, de cette façon :</p>
+
+<pre>
+iface wlan0 inet manual
+        wpa-driver wext
+        wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf
+        wpa-mapping-script guessnet-ifupdown
+        wpa-map0 maison
+        wpa-map1 travail
+        wpa-map2 ecole
+        # ... lignes wpa-mapX additionnelles désirées
+</pre>
+
+							<p>Par défaut le script de mapping ne sera utilisé que lorsqu'aucun 'id_str' n'est disponible pour le réseau concerné. Si vous préférez désactiver complètement l''id_str' de réserve pour utiliser exclusivement le script de mapping externe, utilisez l'option 'wpa-mapping-script-priority 1' pour passer outre au comportement fixé par défaut.</p>
+
+							<p>Si le script de mapping retourne une chaîne vide wpa_action utilisera l'interface en réserve fixée par défaut, à moins qu'une alternative soit définie à l'option 'wpa-roam-default-iface'. </p>
+
+							<p>Ci-dessous, figure un exemple utilisant guessnet-ifupdown en tant que script externe de mapping.</p>
+
+
+						<h6>exemple de fichier /etc/network/interfaces avec mapping externe</h6>
+<pre>
+# exemple de fichier /etc/network/interfaces avec mapping externe :
+allow-hotplug wlan0
+iface wlan0 inet manual
+
+        wpa-driver wext
+        wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf
+        wpa-roam-default-iface default-wparoam
+        wpa-mapping-script guessnet-ifupdown
+        wpa-map default: default-guessnet
+        wpa-map0 home_static
+        wpa-map1 work_static
+
+
+# ecole ne peut être choisie que si une 'id_str' y correspond
+iface ecole inet dhcp
+
+        # resolvconf
+        dns-nameservers 11.22.33.44 55.66.77.88
+
+iface maison_static inet static
+
+        address 192.168.0.20
+        netmask 255.255.255.0
+
+        network 192.168.0.0
+        broadcast 192.168.0.255
+        gateway 192.168.0.1
+        test peer address 192.168.0.1 mac 00:01:02:03:04:05
+
+
+iface travail_static inet static
+
+        address 192.168.3.200
+        netmask 255.255.255.0
+        network 192.168.3.0
+        broadcast 192.168.3.255
+
+        gateway 192.168.3.1
+        test peer address 192.168.3.1 mac 00:01:02:03:04:05
+
+iface default-guessnet inet dhcp
+
+iface default-wparoam inet dhcp
+</pre>
+
+							<p>Dans cet exemple wpa_action n'utilisera guessnet que pour sélectionner une interface logique quand aucune option 'id_str' n'a été fournie par le réseau en cours dans  wpa_supplicant.conf.</p>
+
+							<p>Les lignes 'wpa-map' fournissent à guessnet les interfaces logiques à tester ainsi que l'interface à utiliser par défaut si tous les test échouent. Les lignes 'test' correspondant à chaque interface logique, sont utilisées par guessnet pour déterminer si la connexion à ce réseau est ou non effective. Par exemple, guessnet choisira l'interface logique 'maison_static' si un contrôleur utilisant l'IP 192.168.0.1 et l'adresse MAC 00:01:02:03:04:05 est détecté. Si aucun test ne donne de résultat alors guessnet configurera l'interface 'default-guessnet'.</p>
+
+							<p>Lisez les pages man de guessnet(8) svp, pour plus d'information.</p>
+
+			<h2>4. En cas de problème</h2>
+
+							<p>Afin d'adapter et de régler la connexion, ses associations et les problèmes d'authentification, il est suggéré de démarrer :</p>
+
+<pre>
+wpa_cli -i &lt;interface&gt;
+</pre>
+
+							<p>dans une console distincte, avant de lancer l'interface. On peut alors utiliser la commande</p>
+
+<pre>
+level 0
+</pre>
+
+							<p>la première, afin de voir tous les messages de déboguage. Utilisez ensuite</p>
+
+<pre>
+ifup --verbose &lt;interface&gt;
+</pre>
+
+							<p>pour obtenir les messages du script démarrant wpasupplicant.</p>
+
+	</div>
+	<div class="divider" id="wpa6">
+		<h2>Ssids cachées</h2>
+
+							<p>Pour référence, consultez #358137. Pour pouvoir vous associer à des ssids cachées, essayez de vous régler sur 'ap_scan=1' dans la section globale et sur 'scan_ssid=1' dans la section de bloc réseau de votre fichier de configuration  wpa_supplicant.conf. Si vous utilisez le mode Dirigé (managed mode), vous pouvez tenter de le faire en entrant ces strophes :</p>
+
+<pre>
+iface eth1 inet dhcp
+wpa-conf managed
+wpa-ap-scan 1
+wpa-scan-ssid 1
+# ... vos options additionnelles de réglage
+</pre>
+
+							<p>Si l'on en croit #368770, l'association peut prendre très longtemps à s'associer avec WEP. Dans certains cas, régler dans le fichier de configuration 'ap_scan=2' (ou utiliser la strophe 'wpa-ap-scan 2', qui revient au même) peut sensiblement aider à accélérer l'association.</p>
+	</div>
+	<div class="divider" id="wpa7">
+			<h2>5. Considerations sur la sécurité</h2>
+					<h5>Permission des fichiers de configuration</h5>
+
+
+							<p>Il est important de préserver les PSK autres informations sensibles se rapportant à la configuration de votre réseau privé, en s'assurant que les fichiers de configuration importants où figurent ces informations ne soient accessibles en lecture, que pour leur seul propriétaire. Par exemple :</p>
+
+
+
+<pre>
+chmod 0600 /etc/network/interfaces
+# substituez-y le chemin de votre fichier wpa_supplicant.conf
+chmod 0600 /etc/wpa_supplicant/wpa_supplicant.conf
+</pre>
+
+							<p>Par défaut, /etc/network/interfaces est accessible en lecture à tout le monde, et c'est donc un fichier inadapté à contenir des clés secrètes et autres mots-de-passe.</p>
+
+
+	</div>
+		<div id="rev">Dernière mise-à-jour le 14/08/2010 0100 UTC</div>
+
+</div>
+</body>
+</html>

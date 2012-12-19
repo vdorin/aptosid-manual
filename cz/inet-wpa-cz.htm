@@ -1,0 +1,937 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cs" lang="cs">
+<head>
+	<title>Manuály aptosid - Internet/Síť, WiFi- WPA-Supplicant</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Poslední revizi překladu provedl pumrel 11.3.2011 1210 CET -->
+<!--htdig_noindex--><div id="menu"> <!-- menu starts here -cz lang maintainer pumrel-->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="Na stránky aptosid.com, forum a wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-cz.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="Prohledávat manuál" alt="Search" />Hledat online - offline</a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Vyberte jiný jazyk - Choose another language CS, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="lang-switch CS, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-cz.htm">Manuál operačního systému aptosid</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-cz.htm#welcome-gen">Manuál operačního systému aptosid &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-cz.htm#cred-team">Autoři</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-cz.htm#how-to">Jak používat tento manuál &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-cz.htm#how-to">Jak používat tento manuál</a></li>
+					  <li><a href="welcome-cz.htm#table-contents">Obsah</a></li>
+					</ul>
+					</li>
+		<li><a href="help-cz.htm#help-gen">Kde hledat pomoc &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-cz.htm#help-gen">Kde a jak hledat pomoc</a></li>
+					  <li><a href="help-cz.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-cz.htm#welcome-quick">První kroky se aptosidem</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-cz.htm">Obsah ISO, Vydání, Zrcadla pro stahování a Vypalování</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-cz.htm#cd-content">Obsah ISO a nároky na systém &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-cz.htm#rolling">Poznámky k vydání</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-cz.htm#download-aptosid">Zrcadla pro stahování a vypálení &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-cz.htm#md5">Kontrolní součet md5</a></li>
+					  <li><a href="cd-dl-burning-cz.htm#burn-nero">Vypálení ve Windows</a></li>
+					  <li><a href="cd-dl-burning-cz.htm#burn-linux">Vypálení v Linuxu</a></li>
+					  <li><a href="cd-no-gui-burn-cz.htm#burning-no-gui">Skript burniso</a></li>
+					  <li><a href="cd-no-gui-burn-cz.htm#burn-no-gui-gen">Vypálení z terminálu</a></li>
+					  <li><a href="cd-dl-burning-cz.htm#download-aptosid">Zrcadla pro stažení aptosidu</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-cz.htm">Live Mód</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-cz.htm#rootpw">Root-heslo v aptosid-Live</a></li>
+				<li><a href="live-mode-cz.htm#live-cd-installsoft">Instalace programů pod aptosid-Live</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-cz.htm">Terminál / Konsole</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-cz.htm#term-kon">Terminál / Konsole &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-cz.htm#term-kon">Terminál / Konsole</a></li>
+					  <li><a href="term-konsole-cz.htm#colours">Barevné řádky terminálu</a></li>
+					  <li><a href="term-konsole-cz.htm#cli-help">Nápověda terminálu</a></li>
+					  <li><a href="help-cz.htm#init3-tools">Užitečné nástroje v textovém módu(tty) - init 3</a></li>
+					  <li><a href="term-konsole-cz.htm#term-cmds">Seznam příkazů v terminálu Linuxu</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-cz.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-cz.htm">Spouštěcí příkazy</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-cz.htm#cheatcodes">Spouštěcí příkazy pod Live-ISO specifické pro aptosid</a></li>
+				<li><a href="cheatcodes-cz.htm#cheatcodes-linux">Spouštěcí příkazy pro Linux</a></li>
+				<li><a href="cheatcodes-vga-cz.htm#vga">VGA kódy</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-cz.htm">Vytváření diskových oddílů - tradičně, s GPT a s LVM</a>
+		<ul class="sub-menu" id="sm6">
+			  <li><a href="part-gparted-cz.htm#hd-ntfs3g">Zapisování na diskový oddíl NTFS pomocí ntfs-3g</a></li>
+			  <li><a href="part-lvm-cz.htm#part-lvm">Vytvoření disk. oddílů pro použití LVM - Logical Volume Manager</a></li>
+			  <li><a href="part-gparted-cz.htm#partition">Vytvoření diskových oddílů v grafickém rozhraní &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-cz.htm#partition">Vytvoření diskových oddílů pomocí GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-cz.htm#ntfs">Změna velikosti diskového oddílu NTFS pomocí GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-cz.htm#partition">Vytvoření diskových oddílů s CLI &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-cz.htm#partition">Vytváření diskových oddílů pomocí cfdisk</a></li>
+					    <li><a href="part-cfdisk-cz.htm#formating">Formátování po vytvoření diskových oddilů pomocí cfdisk</a></li>
+					    <li><a href="part-gdisk-cz.htm#gdisk-6">Formátování po vytvoření diskových oddílů s gdiskem</a></li>
+					    <li><a href="part-gdisk-cz.htm#gdisk-1">Diskové oddíly GPT s gdiskem</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-cz.htm#part-example">Základy vytváření diskových oddílů &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-cz.htm#part-example">Příklady velikostí diskových oddílů</a></li>
+					  <li><a href="part-uuid-cz.htm#uuid">UUID, přestavění fstab a vytváření přípojných bodů</a></li>
+					  <li><a href="part-cfdisk-cz.htm#disknames">Pojmenovávání diskových oddílů a ostatní</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-cz.htm">Možnosti instalace - HD, USB, VM and Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-cz.htm#Inst-prep">Příprava instalace &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-cz.htm#Inst-prep">Příprava instalace</a></li>
+					  <li><a href="hd-install-cz.htm#Installation">Instalace na pevný disk</a></li>
+					  <li><a href="hd-install-cz.htm#first-hd-boot">První spuštění</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-cz.htm#fromiso">Načtení pomocí fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-cz.htm#fromiso">Načtení pomocí fromiso - Přehled</a></li>
+					  <li><a href="hd-install-opts-cz.htm#grub2-fromiso">Načtení 'fromiso' s Grub2</a></li>
+					  <li><a href="hd-install-opts-cz.htm#fromiso-persist">fromiso a persist</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-cz.htm#usb-hd">Instalace na USB-disk &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-cz.htm#usb-hd">Instalace na USB-disk - specifické pro aptosid - aptosid-on-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-cz.htm#raw-usb">Zapsaní aptosidu na USB/SSD-disk s jakýmkoliv systémem Linux, MS Windows nebo Mac OS X</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-cz.htm#install-crypt">Instalace na šifrovené diskové oddíly - cryptroot</a></li>
+		  <li><a href="nbdboot-cz.htm#nbd1">Načtení aptosidu přes síť</a></li>
+		  <li><a href="hd-install-vmopts-cz.htm#vm">Možnosti instalace ve Virtuálním Stroji</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-cz.htm">Grafické karty, monitory, Xorg,  &amp; ovladače</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-cz.htm#mon-res">Rozlišení obrazovky a monitory &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-cz.htm#mon-res">Rozlišení obrazovky a monitory</a></li>
+					  <li><a href="hw-dev-mon-cz.htm#xrandr">Dva monitory a xrandr</a></li>
+					  <li><a href="hw-dev-mon-cz.htm#mon-binary">Dva monitory (za použití binárních ovladačů)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-cz.htm#foss-xorg">Ovladače GPU &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-cz.htm#ati-3d">3D ovladače pro AMD/ATI</a></li>
+					  <li><a href="gpu-cz.htm#intel">2D a 3D ovladače pro Intel</a></li>
+					  <li><a href="gpu-cz.htm#nvidia">3D ovladače pro Nvidia</a></li>
+					  <li><a href="gpu-cz.htm#foss-xorg">Svobodné ovladače Xorg</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-cz.htm#fw-detect">Rozpoznání firmwaru - non-free</a></li>
+			  <li><a href="nf-firm-cz.htm#non-free-firmware">Přidání non-free do seznamu zdrojů</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-cz.htm#install-add">Správci oken</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-cz.htm">KDE and XFCE Správci oken &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-cz.htm#xfce-notes">Užitečné dodatečné aplikace pro Xfce</a></li>
+					    <li><a href="wm-dm-cz.htm#install-add">Užitečné dodatečné aplikace pro KDE</a></li>
+					    <li><a href="wm-dm-cz.htm#desk-freeze">Zamrznutí plochy</a></li>
+					    <li><a href="wm-dm-cz.htm#kde-login">Nejde se přihlásit do KDE</a></li>
+					    <li><a href="wm-dm-cz.htm#ch-th">Změna témat</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-cz.htm#dm">Instalace dodatečných správců zobrazení</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-cz.htm">Připojení k internetu, WiFi, LAN a sítím</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-cz.htm">Sestava LAMP aptosidu &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-cz.htm#serv-apache">Sestava LAMP aptosidu</a></li>
+					    <li><a href="lamp-apache-cz.htm#serv-ftp">FTP klienty</a></li>
+					    <li><a href="lamp-apache-cz.htm#serv-sec">Bezpečnostní protokoly</a></li>
+					    <li><a href="lamp-apache-cz.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-cz.htm#serv-mysql">Nastavení MySQL</a></li>
+					    <li><a href="lamp-ppp-cz.htm#serv-php">PHP v Apache</a></li>
+					    <li><a href="ntp-server-cz.htm#ntp-server">Nastavení Timeserveru</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-cz.htm#tor">Firewally and Soukromí &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-cz.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-cz.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-cz.htm#firewalls">Firewally</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-cz.htm#ssh-x">SSH a Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-cz.htm#setup">Nastavení Samba-Serveru</a></li>
+						  <li><a href="samba-cz.htm#configure">Konfigurace SAMBY (Windows)</a></li>
+						  <li><a href="ssh-cz.htm#ssh-fs">Vzdálené připojení přes SSH</a></li>
+						  <li><a href="ssh-cz.htm#ssh-x">Aplikace X přes SSH</a></li>
+						  <li><a href="ssh-cz.htm#ssh-f">Grafické rozhraní přes SSH s Konquerorem</a></li>
+						  <li><a href="ssh-cz.htm#ssh-w">Přenos rozhraní X přes SSH z Windows-PC</a></li>
+						  <li><a href="ssh-cz.htm#ssh">SSH a soukromí</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-cz.htm#netcardconfig">WIFI připojení &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-cz.htm#netcardconfig">Připojení se online - Ceni</a></li>
+						    <li><a href="inet-wpagui-cz.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-cz.htm#net-set1">WiFi - nastavení pro WiFi roaming</a></li>
+						    <li><a href="inet-wpa-cz.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-cz.htm#hotswitch">Přepínání síťového připojení mezi WiFi a Kabelovým</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-cz.htm#netcardconfig">Kabelové připojení &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-cz.htm#dial-mod">56k Modemy</a></li>
+						    <li><a href="inet-ceni-cz.htm#netcardconfig">Připojení se online- Ceni</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-cz.htm#fw-detect">Rozpoznání firmwaru - non-free</a></li>
+		<li><a href="nf-firm-cz.htm#non-free-firmware">Přidání non-free do seznamu zdrojů</a></li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-cz.htm">Správa balíčků dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-cz.htm#apt-cook">APT návod a zdroje softwaru &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-cz.htm#apt-cook">APT-návod (CookBook) a zdroje software</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#apt-install">Instalace nového balíčku</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#apt-delete">Smazání balíčku</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#apt-downgrade">Podržení balíčku nebo instalace nižší verze</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#apt-cache">Vyhledávání balíčků pomocí apt-cache</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#gui-pacsea">Vyhledávání balíčků v graf. rozhraní</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-cz.htm#kern-upgrade">Povýšení verze jádra (kernel) &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-cz.htm#kern-remove">Odstranění jádra</a></li>
+					    <li><a href="sys-admin-kern-upg-cz.htm#kern-upgrade">Povýšení verze jádra</a></li>
+					    <li><a href="sys-admin-kern-upg-cz.htm#dmakms">Dynamická instalaca modulů jádra s dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-cz.htm#apt-upgrade">Aktualizace nainstalovaného systému - dist-upgrade - Přehled &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-cz.htm#live-cd-upgrade">Aktualizace pomocí Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-cz.htm#approx">dist-upgrade vícero počítačů přes LAN</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#apt-upgrade">Aktualizace nainstalovaného systému - dist-upgrade - Přehled</a></li>
+					    <li><a href="sys-admin-apt-cz.htm#du-st">Aktualizace nainstalovaného systému - dist-upgrade - jednotlivé kroky</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-cz.htm">Administrace systému</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-cz.htm#bois-prep">Povýšení verze BIOSu pomocí FreeDOS</a></li>
+		<li><a href="vir-rkits-cz.htm#virus-rkits">Vyhledávače virů a rootkitů</a></li>
+		<li><a href="hd-install-cz.htm#adduser">Přidání uživatelů a hesel &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-cz.htm#adduser">Přidání nového uživatele</a></li>
+					    <li><a href="sys-admin-gen-cz.htm#pw-lost">Ztracené root heslo, nové heslo</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-cz.htm#start-services">Služby a úrovně spuštění init &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-cz.htm#start-services">Spouštění/zastavení služeb</a></li>
+					    <li><a href="sys-admin-gen-cz.htm#pkill">Zabití služby nebo procesu</a></li>
+					    <li><a href="sys-admin-gen-cz.htm#init">Úrovně spuštění aptosidu - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-cz.htm#rsync">Zálohování systému &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-cz.htm#rdiff">Zálohování pomocí rdiff</a></li>
+					    <li><a href="sys-admin-rsync-cz.htm#rsync">Zálohování pomocí rsync</a></li>
+					    <li><a href="home-cz.htm#home-bu">Přesunutí /home adresáře</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-cz.htm#fonts">CUPS, fonty a zvuk &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-cz.htm#fonts">Fonty</a></li>
+					     <li><a href="sys-admin-gen-cz.htm#cups">CUPS - tiskový systém</a></li>
+					     <li><a href="sys-admin-gen-cz.htm#sound">Zvukový mixér</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-cz.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-cz.htm#chroot">Grub2 - obnova Grubu s pomocí chroot</a></li>
+					    <li><a href="sys-admin-grub2-cz.htm#mbr-over-grub2">Grub2 - přepsání zaváděcího sektoru MBR</a></li>
+					    <li><a href="sys-admin-grub2-cz.htm#multi-os">Grub2 - zavádění  více systémů</a></li>
+					    <li><a href="sys-admin-grub2-cz.htm#grub1-grub2">Grub2 - povýšení z Grub1</a></li>
+					    <li><a href="sys-admin-grub2-cz.htm#grub2">Grub2 - přehled</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Sponsored by webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid is proudly hosted by webtropia.com" alt="aptosid is proudly hosted by webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+	<div class="divider" id="wpa-basic">
+		<h2 id="top-header" >Základní průvodce pro zprovoznění bezdrátu - WiFi</h2>
+
+<!--							<p class="highlight-3">Due to the complexity of law, aptosid will only provide dfsg-free software, <a href="nf-firm-cz.htm#non-free-firmware">please check this link for additional information on non-free sources for firmware</a></p>-->
+							<p class="highlight-3">Vzhledem ke komplexnosti prává dodává aptosid pouze dfsg-svobodný software. <a href="nf-firm-cz.htm#non-free-firmware">Projděte si prosím tento odkaz pro další informace týkající se nesvodobných zdrojů firmwaru.</a></p>
+<!--							<p>To get wlan WiFi working, you need a wired connection for just a few minutes to download the appropriate firmware.</p>-->
+							<p>Pro zprovoznění WiFi potřebujete jen na chvíli drátové připojení, abyste stáhli potřebný firmware.</p>
+<!--							<p>If a wired connection is not possible you will have to put the firmware on a removable device (pendrive e.g.) and install it as root from there using:</p>-->
+							<p>Jestli není možné zařídit drátové připojení, budete muset umístit firmware na přenosné zařízení (usb-klíč například) a nainstalovat jej odtud jako root pomocí:</p>
+<pre>
+#dpkg -i &lt;firmware.deb&gt;
+</pre>
+
+<!--							<p>To find the appropriate firmware without knowing the make or brand of your wireless chip, you can use the command:</p>-->
+							<p>Abyste zjistili vhodný firmware, aniž znáte výrobce nebo značku čipu vašeho beztrátu, tak použijte následující příkaz:</p>
+<pre>
+#fw-detect
+</pre>
+<!--							<p>This will give you the following information:</p>-->
+							<p>To vám poskytne následující informace:</p>
+<pre>
+#apt-get update
+#apt-get install &lt;název_firmwaru&gt;
+#modprobe -r &lt;název_modulu&gt;
+#modprobe &lt;název_modulu&gt;
+</pre>
+<!--							<p>Use the apt-get install line that fw-detect command gave you. After that is done, you need to issue some commands in konsole before configuring the device.</p>-->
+							<p>Použijte řádek s příkazem apt-get install, který vám příkaz fw-detect nabídl. Potom, co je aktualizováno, je třeba spustit další příkazy v konsoli, než bude možné nakonfigurovat zařízení.</p>
+<!--							<p>You have to load the module now in order to be able to configure your device.</p>-->
+							<p>Nyní musíte načíst modul, aby bylo možné nakonfigurovat zařízení.</p>
+							<p>Jako root napište do konsole:</p>
+<pre>
+modprobe -r &lt;název_modulu&gt;
+
+modprobe &lt;název_modulu&gt;
+</pre>
+<!--							<p>As &lt;modulename&gt; uses the info that fw-detect gave you before. A helpful function of Konsole can be used here: bash completion: <br />
+							If you just write the first few letters of &lt;modulename&gt; and then hit the TAB key, it completes the module name (e.g. modprobe ipw TAB key) That also prevents misspelling.</p>-->
+							<p>&lt;název_modulu&gt; využívá informace, které vám předložil fw-detect. Můžete zde uplatnit užitečnou funkci v konsoli: bash dokončování: <br />
+							Pokud napíšete jen prvních pár znaků od &lt;název_modulu&gt; a pak stisknete klávesu TAB, bude za vás doplněn název modulu (například: modprobe ipw TAB klávesa). Také to umožňuje se vyhnout přepisu.</p>
+<!--							<p>Both modprobe commands dont give any output if successful, so if the normal prompt returns, the module got loaded fine.</p>-->
+							<p>Oba příkazy modprobe vás neinformují výstupem o úspěchu, takže pokud se objeví opět normální řádka, modul se správně načetl.</p>
+							<p>Můžete to zkontrolovat pomocí:</p>
+<pre>
+#lsmod | grep &lt;modul&gt;
+</pre>
+
+
+<!--							<p>Now start Ceni from K-Menu - Internet or run it from konsole as root with <a href="inet-ceni-cz.htm#netcardconfig">Getting Online - Ceni</a>. Your wireless WiFi device should be shown now and is ready to be configured.</p>-->
+							<p>Nyní v K-Menu - Internet spusťte Ceni nebo jej spusťě z konsole jako root pomocí <a href="inet-ceni-cz.htm#netcardconfig">Přístup online - Ceni</a>. Vaše bezdrátové zařízení WiFi by již mělo být vidět a připravo ke konfiguraci.</p>
+<!--							<p>To set up a Wlan WiFi GUI see <a href="inet-wpagui-cz.htm">WiFi - roaming WPA-GUI</a></p>-->
+							<p>Pro nastavení Wlan WiFi GUI (grafické rozhraní) konzultujte <a href="inet-wpagui-cz.htm">WiFi - roaming WPA-GUI</a></p>
+	</div>
+	<div class="divider" id="wpa">
+		<h2>Operační módy ve wpasupplicant pro Debian</h2>
+
+<!--							<p class="highlight-3">Due to the complexity of law, aptosid will only provide dfsg-free software, <a href="nf-firm-cz.htm#non-free-firmware">please check this link for additional information on non-free sources for firmware</a></p>-->
+							<p class="highlight-3">Vzhledem ke složitosti práv dodáváme pouze dfsg-svobodný software. <a href="nf-firm-cz.htm#non-free-firmware">Projděte si prosím tento odkaz pro další informace týkající se nesvodobných zdrojů firmwaru.</a></p>
+<!--							<p>The Debian wpasupplicant package provides two (2) convenient modes of operation that are closely integrated to the core networking infrastructure; ifupdown.</p>-->
+							<p>Balíček wpasupplicant v Debianu nabízí dva (2) vhodné operatiční módy, které jsou úzce integrovány do jádra síťové infrastuktury: ifupdown.</p>
+			<h4>Co je pokryto</h4>
+
+<!--					<h6>1.  Specifying the wpa_supplicant driver backend</h6>
+          						<p>* Table of supported drivers<br />
+         						* Common Driver Recommendations </p>-->
+					<h6>1.  Upřesnění backendu pro ovladač wpa_supplicant</h6>
+          						<p>* Tabulka podporovaných ovladačů<br />
+         						* Běžná doporučení pro ovladače</p>
+
+<!--					<h6>2. Mode #1: Managed Mode</h6>
+          						<p>* Examples<br />
+          						* Table of Common Options<br />
+          						* Important Notes About Managed Mode<br />
+          						* How It Works </p>-->
+					<h6>2. Mód #1: Spravovaný mód</h6>
+          						<p>* Příklady<br />
+          						* Tabluka běžných voleb<br />
+          						* Důležité poznámky o Spravovaném módu<br />
+          						* Jak to funguje</p>
+
+<!--					<h6>3. Mode #2: Roaming Mode</h6>
+          						<p>* wpa_supplicant.conf<br />
+          						* /etc/network/interfaces<br />
+          						* Controlling the Roaming Daemon with wpa_action<br />
+          						* Fine Tuning the Roaming Setup<br />
+          						* The Logfile<br />
+          						* Using External Mapping Scripts (e.g. guessnet)<br />
+          						* /etc/network/interfaces with external mapping</p>-->
+					<h6>3. Mód #2: Roaming mód</h6>
+          						<p>* wpa_supplicant.conf<br />
+          						* /etc/network/interfaces<br />
+          						* Ovládání Roaming démona pomocí wpa_action<br />
+          						* Vyladění nastavení Roamingu<br />
+          						* Log soubor<br />
+          						* Použití externích mapovacích skriptů (např. guessnet)<br />
+          						* /etc/network/interfaces s externím mapováním</p>
+
+<!--					<h6>4. Troubleshooting</h6>
+          						<p>* Hidden ssids</p>-->
+					<h6>4. Řešení problémů</h6>
+          						<p>* Skrytý ssids</p>
+
+<!--					<h6>5. Security Considerations</h6>
+          						<p>* Configuration File Permissions</p>-->
+					<h6>5. Bezpečnostní otázky</h6>
+          						<p>* Nastavení přístupových práv pro soubory</p>
+
+<!--			<h2>1. Specifying the wpa_supplicant driver backend</h2>-->
+			<h2>1. Upřesnění backendu pro ovladač wpa_supplicant</h2>
+<!--							<p>The wext driver backend will be used for all interfaces that do not explicitly set 'wpa-driver' to the driver type required for that device. Users of linux  2.4 kernels, or 2.6 kernels less than 2.6.14 will be required to specify a wpa-driver type.</p>-->
+							<p>Backend wext ovladače bude použit pro všechna zařízení, která explicitně nenastaví 'wpa-driver' pro typ ovladače potřebný pro dané zařízení. Uživatelé linuxového jádra 2.4 nebo 2.6 nižšího než 2.6.14 budou muset upřesnit typ wpa-driver.</p>
+	</div>
+				<h3>Podporované ovladače</h3>
+	<div>
+		<table>
+			<tbody>
+				<tr>
+					<th>Ovladač</th>
+					<th>Popis</th>
+				</tr>
+				<tr>
+					<td>wext</td>
+					<td>Linux wireless extensions (generic) [Bezdrátové rozšíření Linuxu]</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="spacer05"></div>
+		<h3>Běžná doporučení pro ovladače</h3>
+
+<!--							<p>The Intel Pro Wireless adapters (ipw2100, ipw2200 and ipw3945) all use the 'wext' backend, unless your kernel is older than 2.6.14</p>-->
+							<p>Intel Pro Wireless adaptéry (ipw2100, ipw2200 and ipw3945) použivájí všech backend 'wext', pokud však vaše jádro není starší jak 2.6.14</p>
+<!--							<p>Madwifi supports both the 'wext' and 'madwifi' driver backends. 'wext' is preferred, however 'madwifi' may work better in some circumstances.</p>-->
+							<p>Madwifi podporuje jak 'wext', tak 'madwifi' backendy ovladačů. 'wext' je upřednostňován, ačkoliv 'madwifi' může v některých příadech pracovat lépe.</p>
+<!--							<p>Ndiswrapper NO LONGER SUPPORTS the 'ndiswrapper' driver backend as of version 1.16. Therefore, 'wext' must be used unless you use an antiquated ndiswrapper release.</p>-->
+							<p>Ndiswrapper JIŽ DÁLE NEPODPORUJE backend ovladače 'ndiswrapper' od verze 1.16. To znamená, že je potřeba použít 'wext', pokud ovšem nepoužíváte starodávné vydání ndiswrapperu.</p>
+<!--							<p>Set the driver type in the interfaces(5) stanza for your device with the 'wpa-driver' option. For example:</p>-->
+							<p>Nastavte typ ovladače ve strofě interfaces(5) pro vaše zařízení s volbou 'wpa-drivfe:</p>
+<pre>
+iface eth0 inet dhcp
+	wpa-driver wext
+	. . . . . další volby
+</pre>
+
+			<h2>2. Mód #1: Spravovaný mód</h2>
+
+<!--							<p>This mode provides the ability to establish a connection via wpa_supplicant to one known network. It is similar to how the wireless-tools package works. Each element required to establish the connection via wpa_supplicant is prefixed with 'wpa-' and followed by the value that will be used for that element.</p>-->
+							<p>Tento mód podporuje možnost navázat spojení přes wpa_supplicant s jednou známou sítí. Je to podobné tomu, jak funguje balíček wireless-tools. Každá součást potřebná pro navázání spojení přes wpa_supplicant má předponu 'wpa-' a následuje ji hodnota, která bude použita pro danou součást.</p>
+<!--		<h6>Examples of a Mode #1 wpa.conf file - Example 1.</h6>-->
+		<h6>Příklad wpa.conf souboru módu #1 wpa.conf - Příklad 1.</h6>
+
+<!--NOTE: the 'wpa-psk' value is only valid if:<br />
+   1. It is a plaintext (ascii) string between 8 and 63 characters in length<br />
+   2. It is a hexadecimal string of 64 characters<br />-->
+POZNÁMKA: hodnota 'wpa-psk' je platná pouze pokud:<br />
+   1. se jedná o řetězec prostého textu (ascii) o délce mezi 8 a 63 znaky<br />
+   2. se jedná o hexadecimální řetězec o délce 64 znaků<br />
+
+<pre>
+# Connect to access point of ssid 'NETBEER' with an encryption type of
+# WPA-PSK/WPA2-PSK. It assumes the driver will use the 'wext' driver backend
+# of wpa_supplicant because no wpa-driver option has been specified.
+# The passphrase is given as a ASCII (plaintext) string. DHCP is used to
+# obtain a network address.
+#
+iface wlan0 inet dhcp
+
+        wpa-ssid NETBEER
+        # plaintext passphrase
+        wpa-psk PlainTextSecret
+
+# Connect to access point of ssid 'homezone' with an encryption type of
+# WPA-PSK/WPA2-PSK, using the 'wext' driver backend of wpa_supplicant.
+# The psk is given as an encoded hexadecimal string. DHCP is used to obtain
+# a network address.
+#
+iface wlan0 inet dhcp
+wpa-driver wext
+wpa-ssid homezone
+# hexadecimal psk is encoded from a plaintext passphrase
+wpa-psk 000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f
+
+# Connect to access point of ssid 'HotSpot1' and bssid of '00:1a:2b:3c:4d:5e'
+# with an encryption type of WPA-PSK/WPA2-PSK, using the the 'madwifi' driver
+# backend of wpa_supplicant. The passphrase is given as a plaintext string.
+# A static network address assignment is used.
+#
+iface ath0 inet static
+
+        wpa-driver madwifi
+        wpa-ssid HotSpot1
+        wpa-bssid 00:1a:2b:3c:4d:5e
+        # plaintext passphrase
+        wpa-psk madhotspot
+        wpa-key-mgmt WPA-PSK
+        wpa-pairwise TKIP CCMP
+        wpa-group TKIP CCMP
+        wpa-proto WPA RSN
+        # static ip settings
+        address 192.168.0.100
+        netmask 255.255.255.0
+        network 192.168.0.0
+        broadcast 192.168.0.255
+        gateway 192.168.0.1
+
+# User supplied wpa_supplicant.conf is used for eth1. All network information
+# is contained within the user supplied wpa_supplicant.conf. No wpa-driver type
+# is specified, so wext is used. DHCP is used to obtain a network address.
+#
+iface eth1 inet dhcp
+
+wpa-conf /path/to/wpa_supplicant.conf
+</pre>
+
+	<div class="divider" id="wpa1">
+		<h2>Tabulka běžných voleb</h2>
+
+<!--							<p>A brief summary of common 'wpa-' options that may be used in the /etc/network/interfaces stanza for a wireless device. See the 'Important Notes About Managed Mode' section for information about valid and invalid 'wpa-' values.</p>-->
+							<p>Krátký souhrn běžných voleb 'wpa-', které mohou být použity ve strofě /etc/network/interface pro bezdrátové zařízení. Podívějte se na sekci 'Důležité poznámky o Spravovaném módu' pro ívce informací o správných a nesprávných hodnotách 'wpa-'.</p>
+<!--							<p class="highlight-2">NOTE: ALL values are CASE SeNsItVe</p>-->
+							<p class="highlight-2">POZNÁMKA: VŠECHNY hodnoty jsou CASE SeNsItVe</p>
+
+<pre>
+Součást		Příklad hodnoty		Popis
+=======         =============           ===========
+wpa-ssid        prostyretezectextu	nastaví ssid vaší sítě
+wpa-bssid       00:1a:2b:3c:4d:5e       bssid vašeho AP
+wpa-psk         0123456789......        váš předsdílený wpa klíč. Použijte
+                                        wpa_passphrase(8) pro vygenerování vašeho
+                                        psk z páru passphrase a ssid
+wpa-key-mgmt    NONE, WPA-PSK, WPA-EAP, seznam akceptovaných hlavních autentifikačních
+                IEEE8021X               správcovských protokolů
+wpa-group       CCMP, TKIP, WEP104,     seznam akceptovaných šifer pro WPA
+                WEP40
+wpa-pairwise    CCMP, TKIP, NONE        seznam akceptovaných párových šifer pro
+                                        WPA
+wpa-auth-alg    OPEN, SHARED, LEAP      seznam povolených autentifikačních
+                                        algoritmů IEEE 802.11
+wpa-proto       WPA, RSN                seznam akceptovaných protokolů
+wpa-identity    mojeprostejmeno         administrátorem dodané uživatelské jméno
+                                        (EAP autentifikace)
+wpa-password    mojeprostetextoveheslo	vaše heslo (EAP autentifikace)
+wpa-scan-ssid   0 or 1                  nastaví skenování ssid se specifickými
+                                        Probe Request rámečky
+wpa-ap-scan     0 or 1 or 2             upraví logiku skenování
+                                        wpa_supplicant
+
+</pre>
+<!--							<p>The complete functionality of wpa_cli(8) should be implemented. Anything missing is considered a bug and should be reported as such. Patches are always welcome.</p>-->
+							<p>Kopletní funkcionalita wpa_cli(8) by měla být implementována. Cokoliv chybějícího je považováno za bug a mělo by to tak být hned nahlášeno. Záplaty jsou vždy vítány.</p>
+
+<!--			<h2>Important Notes About Managed Mode</h2>-->
+			<h2>Důležité poznámky o Spravovaném módu</h2>
+<!--							<p>Almost all 'wpa-' options require there is at least a ssid specified. Only a handful of options have a global effect. These are: 'wpa-ap-scan' and 'wpa-preauthenticate'.</p>-->
+							<p>Téměř všechy volby 'wpa-' vyžadují, aby bylo alespoň jedno ssid specifikováno. Jenom některé volby mají globální efekt. To jsou: 'wpa-scan' a 'wpa-preauthenticate'.</p>
+
+<!--							<p>Any 'wpa-' option given for a device in the interfaces(5) file is sufficient to trigger the wpa_supplicant daemon into action.</p>-->
+							<p>Jakákoliv 'wpa-' volba vložená pro zařízení v souboru interface(5) je dostačující k tomu, aby aktivovala démona wpa_supplicant.</p>
+
+<!--							<p>The wpasupplicant ifupdown script makes assumptions about the 'type' of input that is valid for each option. For example, it assumes that some input is plaintext and wraps quotation marks around the input before passing it on to wpa_cli, which then adds the input to the network block being formed via the wpa_supplicant ctrl_interface socket.</p>-->
+							<p>Skript wpasupplicant ifupdown předpokládá určitý správný vstup pro 'typ'. Například předpokládá, že některé vstupy jsou prostý text a umístí kolem nich uvozovky, než je přepustí wpa_cli, který pak předá vstup do síťového bloku, který je vytvářen zásuvkou wpa_supplicant ctrl_interface .</p>
+
+<!--							<p>Running ifup manually with the  '--verbose' option will reveal all of the commands used to form the network block via wpa_cli. If the value you used for any wpa-* option in /etc/network/interfaces is surrounded by double quotes, then it has been assumed to be of "plaintext" or "ascii" type input.</p>-->
+							<p>Spuštění manuálně ifup s volbou '--verbose' poodhalí všechny příkazy, které jsou použity pro vytvoření síťového bloku přes wpa_cli. Jestli je jakákoliv hodnoty použitá pro wpa-* v /etc/network/interfaces obklopena dvojitými uvozovkami, tak bylo předpokládáno, že se jedná o "prostý text" nebo "ascii" jako typ hodnoty. </p>
+
+<!--							<p>Some input is assumed to be a hexadecimal string (eg. wpa-wep-key*). The value 'type' of the wpa-psk option however, is determined via a simple check for more than one non hexadecimal character.</p>-->
+							<p>Některý vstup je považován za hexadecimální řetězec (například wpa-wep-key*). Avšak hodnoa 'typu' wpa-psk volby je určena pomocí jednoduché kontroly na víc jak jeden hexadecimální znak.</p>
+
+			<h2>Jak to funguje</h2>
+
+<!--							<p>As mentioned earlier, each wpa_supplicant specific element is prefixed with 'wpa-'. Each element correlates to a property of wpa_supplicant described in the wpa_supplicant.conf(5), wpa_supplicant(8) and wpa_cli(8) manpages.</p>-->
+							<p>Jak bylo zmíněno dříve, každá specifická součást wpa_supplicant má předponu 'wpa-'. Každá součást souvisí s částí wpa_supplicant popsanou ve wpa_supplicant.conf(5), wpa_supplicant(8) a wpa_cli(8) manuálových stránkách.</p>
+
+<!--							<p>The supplicant is launched without any pre-configuration whatsoever, and wpa_cli forms a network configuration from the input provided by the 'wpa-*' lines. Initially, wpa_supplicant/wpa_cli does not directly set the properties of the device (like setting an essid with iwconfig, for example), rather it informs the device of what access point is suitable to associate with. Once the device has scanned the area, and found that the suitable access point is available for use, these properties are set.</p>-->
+							<p>Supplicant je spouštěn bez jakéhokoliv přednastavení a wpa_cli vytvoří síťovou konfiguraci ze vstupu poskytnutého ze řádek 'wpa-*'. Zpočátku wpa_supplicant/wpa_cli přímo nenastaví vlastnosti zařízení (jako je nastavení essid s iwconfig, například), spíše informuje zařízení, který přístupový bod je vhodný pro asociaci. Jakmile zařízení prozkoumalo oblast a našlo nějáký vhodný přístupový bod přístupný k použití, vlastnosti jsou nastaveny.</p>
+
+<!--							<p>The script that does all the work is located at:</p>-->
+							<p>Skript, který udělá všechnu práci, může být nalezen zde:</p>
+
+<pre>
+/etc/wpa_supplicant/ifupdown.sh
+/etc/wpa_supplicant/functions.sh
+</pre>
+
+<!--							<p>ifupdown.sh is executed by run-parts, which in turn is invoked by ifupdown during the 'pre-up', 'pre-down' and 'post-down' phases.</p>-->
+							<p>ifupdown.sh je spouštěn pomocí run-parts, který je pak vyvolán pomocí ifupdown během 'pre-up', 'pre-down' a 'post-down' fází.</p>
+
+<!--							<p>In the 'pre-up' phase, a wpa_supplicant daemon is launched followed by a series of wpa_cli commands that set up a network configuration according to what 'wpa-' options were used in /etc/network/interfaces for the physical device.</p>-->
+							<p>Během 'pre-up' fáze je démon wpa-supplicant spuštěn následován serií příkazů wpa_cli, které nastaví síťovou konfiguraci vzhledem k použitým volbám 'wpa-' v /etc/metwork/interface pro fyzická zařízení.</p>
+
+<!--							<p>If wpa-roam is used, a wpa_cli daemon is lauched in the 'post-up' phase.</p>-->
+							<p>Jeestli je použit wpa-roam, démon wpa_cli je spuštěn ve fázi 'post-up'.</p>
+
+<!--							<p>In the 'pre-down' phase, the wpa_cli daemon is killed if it exists.</p>-->
+							<p>Ve fázi 'pre-down', démon wpa_cli je zabit, pokud je aktivní.</p>
+
+<!--							<p>In the 'post-down' phase, the wpa_supplicant daemon is killed.</p>-->
+							<p>Ve fázi 'post-down' je zabit démon wpa_supplicant.</p>
+			<h2>3. Mód #2: Roaming mód</h2>
+
+<!--							<p>A self contained, simplistic roaming mechanism is provided by this package. It is in the form of a wpa_cli action script, /sbin/wpa_action, and it assumes control of ifupdown once activated. The wpa_action(8) manpage describes its technical details in great depth.</p>-->
+							<p>S balíčkem je dodáván jednoduchý roamingový mechanismus. Je ve formě akčního skriptu wpa_cli, /sbin/wpa_action, a předpokládá kontrolu ifupdown, jakmile je aktivován. Manuálové stránky wpa_action(8) popisují jeho technické detaily ve velké hloubce.</p>
+<!--							<p>To activate a roaming interface, adapt the following example interfaces(5) stanza:</p>-->
+							<p>K aktivaci rozhraní roamingu použijte následujícího příkaz strofy interfaces(5):</p>
+
+<pre>
+iface eth1 inet manual
+	wpa-driver wext
+        wpa-roam /path/to/wpa_supplicant.conf
+</pre>
+
+<!--							<p>Two daemons are spawned from the above example; wpa_supplicant and wpa_cli. It is required to provide a wpa_supplicant.conf. A good starting point is provided by an example configuration file:</p>-->
+							<p>Dva démony jsou vytvořeny výše uvedeným příkladem: wpa_supplicant a wpa_cli. Je požadováno dodat wpa_supplicant.conf. Dobrý výchozí bod je ukázán v následujícím příkladu konfiguračního souboru:</p>
+
+<pre>
+ # zkopírujte templát do /etc/wpa_supplicant/
+        cp /usr/share/doc/wpasupplicant/examples/wpa-roam.conf \
+                /etc/wpa_supplicant/wpa_supplicant.conf
+        # povolte pouze rootu číst a psát do souboru
+        chmod 0600 /etc/wpa_supplicant/wpa_supplicant.conf
+
+<!--NOTE: it is critical that the used wpa_supplicant.conf defines the location of
+      the 'ctrl_interface' so that a communication socket is created for the
+      wpa_cli (wpa-roam daemon) to attach. The mentioned example configuration,
+      /usr/share/doc/wpasupplicant/examples/wpa-roam.conf, has been set to a
+      sane default.-->
+POZNÁMKA: je nezbytně nutné, aby použitý wpa_supplicant.conf definoval umístění
+	  ctrl_interface', aby se pro připojení wpa_cli (wpa-roam démon) vytvořila
+	  komunikační zásuvka. Zmíněný příklad konfigurace
+	  /usr/share/doc/wpasupplicant/examples/wpa-roam.conf,
+	  byl nastaven jako přiměřený základ
+
+</pre>
+
+
+<!--							<p>It is required to edit this configuration file, and add the network blocks for all known networks. If you do not understand what this means, start reading the wpa_supplicant.conf(5) manpage now.</p>-->
+							<p>Je nutné upravit konfigurační soubor a přídat síťové bloky pro všechny známé sítě. Jestli nevíte, co toto obnáší, hned začněte číst manuálové stránky wpa_supplicant.conf(5).</p>
+
+<!--							<p>For each network, you may specify a special option 'id_str'. It should be set to a simple text string. This text string forms the basis for network profiling; it correlates to a logical interface defined in the interfaces(5) file. When no 'id_str' is given for a network, wpa_action assumes it will use the 'default' logical interface as fallback. The fallback interface can be chosen via the 'wpa-default-iface' option.</p>-->
+							 <p>Pro každou síť můžete upřesnit speciální volbu 'id_str'. Měla by být nastavena jako prostý textový řetězec. Tento textový řetězec tvoří základ pro profilování sítě: souvisí s logickým přostředím definovaným v souboru interface(5). Pokud není žádný 'id_str' síti určen, wpa_action předpokládá, že použije 'výchozí' logické prostředí jako nouzové. Nouzové prostředí může být zvoleno přes volbu 'wpa-default-iface'.</p>
+
+<!--							<p>So what does all this mean? Lets illustrate it with a small example taken from the wpa_action(8) manpage.</p>-->
+							<p>Takže co to všechno znamená? Pojďmě si to ilustrovat na malém příkladu převzatém z man stránek wpa_action(8):</p>
+
+		<h6>Příklad wpa_supplicant.conf</h6>
+<pre>
+wpa_supplicant.conf example:
+network={
+        ssid="foo"
+        key_mgmt=NONE
+        # this id_str will notify /sbin/wpa_action to 'ifup uni'
+        id_str="uni"
+}
+
+network={
+        ssid="bar"
+        psk=123456789...
+        # this id_str will notify /sbin/wpa_action to 'ifup home_static'
+        id_str="home_static"
+}
+
+network={
+        ssid=""
+        key_mgmt=NONE
+        # no 'id_str' parameter is given, /sbin/wpa_action will 'ifup default'
+}
+</pre>
+
+	</div>
+	<div class="divider" id="wpa2">
+		<h6>Příklad /etc/network/interfaces</h6>
+<pre>
+/etc/network/interfaces example:
+# the roaming interface MUST use the manual inet method
+# 'allow-hotplug' or 'auto' ensures the daemon starts automatically
+allow-hotplug eth1
+iface eth1 inet manual
+
+        wpa-driver wext
+        wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf
+
+
+# no id_str, 'default' is used as the fallback mapping target
+iface default inet dhcp
+
+
+# id_str="uni"
+iface uni inet dhcp
+
+# id_str="home_static"
+iface home_static inet static
+
+        address 192.168.0.20
+        netmask 255.255.255.0
+        network 192.168.0.0
+
+        broadcast 192.168.0.255
+        gateway 192.168.0.1
+</pre>
+
+<!--							<p>A logical interface is brought up via ifup, and taken down via ifdown, as wpa_supplicant associates and de-associates with the network associated to it by the 'id_str' option used in the wpa_supplicant.conf configuration file.</p>-->
+							<p>Logické rozhrají je přivozené pomocí ifup a vypnuto pomocí ifdown, jelikož wpa_supplicant se asociuje a deasociuje se sítí, která k němu byla přidělena pomocí volby 'id_str' použité v konfiguračním souboru wpa_supplicatn.conf.</p>
+
+<!--							<p>A log of /sbin/wpa_action's actions is created at /var/log/wpa_action.log, please attach the log when reporting problems.</p>-->
+							<p>Log akcí /sbin/wpa_action je vytvořen ve /var/log/wpa_action.log. Prosím, tento log připojte, pokuď budete nahlašovat problémy.</p>
+			<h2>Interakce s wpa_supplicant pomocí wpa_cli a wpa_gui</h2>
+
+<!--							<p>The wpa_supplicant process can be interacted with by members of the "netdev" group if the example roaming configuration was used as is (or by whatever group or gid specified by the GROUP= crtl_interface parameter).</p>-->
+							<p>S procesem wpa_supplicant může být zacházeno pomocí členů skupiny "netdev", jestli byla konfigurace roamingu použita podle příkladu tak jak je (nebo jakoukokoliv skupinou nebo gid specifikovaných v parametru GROUP=ctrl_interface.</p>
+<pre>
+# výchozí volba ctrl_interface použitá v souboru příkladu
+	# /usr/share/doc/wpasupplicant/examples/wpa-roam.conf
+        ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+
+<!--To interact with the supplicant, the wpa_cli (command line) and wpa_gui (QT)
+have been provided. With these you may connect, disconnect, add/delete new
+network blocks, provide required interactive security information and so on.-->
+Pro interakci se supplicantem je dodáno wpa_cli (příkazová řádka) a wpa_gui (QT).
+S těmito se můžete připojit, odpojit, přidat/vymazat nové síťové bloky, předložit
+nezbytné interaktivní bezpečnostní informace a tak dále.
+</pre>
+
+			<h2>Kontrola roaming démonu s wpa_action</h2>
+
+<!--							<p>Once the roaming daemon is started, it assumes control of ifupdown. That is; wpa_cli calls ifup when wpa_supplicant has successfully associated with an access point, and calls ifdown when the connection is lost or terminated. While the roaming daemon is active, ifupdown should not be controlled directly by manually issued commands, rather /sbin/wpa_action is supplied to stop and reload the roaming daemon. For example, to stop the romaing daemon on the device 'eth1':</p>-->
+							<p>Roaming démon předpokládá kontrolu ifupdown, jakmile je spuštěn. To znamená: wpa_cli zavolá ifup, pokud se wpa_supplicant úspěšně asocioval s přístupovým bodem, a zavolá ifdown, pokud bylo připojení ztraceno nebo ukončeno. Když je roaming démon aktivní, tak by ifupdown neměl být ovládán přímo manuálně vyvolanými příkazy, spíše pomocí dodávaného /sbin/wpa_action, který zastaví a znovunačte roaming démona. Například, pro zastavení roaming démona na zařízení 'eth1':</p>
+
+<pre>
+wpa_action eth1 stop
+</pre>
+
+
+<!--							<p>When it is required to update the roaming daemon with  a new networks details, it can be done without stopping it. Edit the wpa_supplicant.conf file that is being used by the daemon with the new networks details, add optional network settings to /etc/network/interfaces that are specific to the new network (linked by the 'id_str') and then 'reload' the daemon like so:</p>-->
+							<p>Když je nutné aktualizovat roaming démona novými síťovými detaily, může tak být učiněno, aniž by byl zastaven. Upravte soubor wpa_supplicant.conf, který démon používá, s novými síťovými detaily, přidejte volitelné síťové nastavení do /etc/network/interfaces, která jsou specifická pro novovou síť (odkaz pomocí 'id_str̈́') a pak 'znovunačtěte' démona pomocí:</p>
+
+<pre>
+wpa_action eth1 reload
+</pre>
+
+<!--							<p>For the complete technical details of what wpa_action can do, read the wpa_action(8) manpage.</p>-->
+							<p>Pro úplné technické detaily ohldně toho, co wpa_action dokáže, si přečtě man stránky wpa_action(8).</p>
+	</div>
+	<div class="divider" id="wpa3">
+		<h2>Vyladění nastavení roamingu</h2>
+
+<!--							<p>You may face situations where multiple known access points are in close proximity. You can choose which one is preferred manually, with wpa_cli or wpa_gui, or you can give each network its own priority. This is provided by the 'priority' option of wpa_supplicant.conf.</p>-->
+							<p>Můžete čelit situacím, kde je v blízkosti více přístupových bodů. Můžete zvolit manuálně, který má být preferován, s wpa_cli nebo wpa_gui, nebo můžete každé síti nastavit vlastní prioritu. To je umožněno volbou 'priority' ve wpa_supplicant.conf.</p>
+
+	</div>
+	<div class="divider" id="wpa4">
+		<h2>Log soubor</h2>
+
+<!--							<p>All activity of the roaming dameon is logged to /var/log/wpa_action.log. The following information is logged:</p>-->
+							<p>Všechna aktivita romaing démona je zaznamenána do /var/log/wpa_action.log. Je zaznamenána následující aktivita</p>
+							<p>*datum a čas<br />
+							*název rozhraní a událost<br />
+							*hodnoty proměnných prostředí (WPA_ID, WPA_ID_STR, WPA_CTRL_DIR)<br />
+							*spuštěný příkaz ifupdown<br />
+							*wpa_cli status (založeno na WPA-PSK, síť může zobrazovat jinou informaci)<br />
+							*bssid<br />
+							*ssid<br />
+							*id<br />
+							*id_str<br />
+							*párové_šifrování<br />
+							*šifrování_skupiny<br />
+							*key_mgmt<br />
+							*wpa_stav<br />
+							*ip_adresa</p>
+
+
+	</div>
+	<div class="divider" id="wpa5">
+		<h2>Použití externích mapovacích skriptů (např. guessnet)</h2>
+
+<!--							<p>In addition to the internal mapping of logical interfaces via 'id_str', wpa_action can call external mapping scripts. A mapping script should return the name of the logical interface which should be brought up. Any mapping script that works from ifupdowns mapping mechanism (see man interfaces) should also work when called from wpa_action.</p>-->
+							<p>Krom interního mapování logických rozhraní skrz 'id_str', wpa_action může volat externí mapovací skripty. Mapovací skript by měl vrátit jméno logického prostředi, které by mělo být nastaveno Jakýkoliv mapovací skript, který funguje z mapovacího mechanismu ifupdown (podívejte se na manuálové stránky), by měl být také pracovat, když ho zavolá wpa_action.</p>
+
+<!--							<p>To call a mapping script add a line 'wpa-mapping-script name-of-the-script' to  the interfaces stanza of the physical roaming device. (You may have to specify the absolute path to the mapping script.)</p>-->
+							<p>Pro zavolání mapovacího skriptu přidejte řádku 'wpa-mapovací-skript název-skriptu' do strofy rozhraní fyzíckého roaming zařízení. (možná bude nutné upřesnit absolutní cestu k mapovacímu skriptu).</p>
+
+<!--							<p>The contents of lines starting with wpa-map are passed to stdin of the mapping  script. Since ifupdown allows only one wpa-map line you can append any number to wpa-map for additional lines. For example:</p>-->
+							<p>Obsah řádek, začínající s wpa-map, je předán stdin mapovacího skriptu. Jelikož ifupdown umožňuje pouze jednu řádku wpa-map, můžete přičlenit jakékoliv množství k wpa-map pro další řádky. Například:</p>
+<pre>
+iface wlan0 inet manual
+        wpa-driver wext
+        wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf
+        wpa-mapping-script guessnet-ifupdown
+        wpa-map0 home
+        wpa-map1 work
+        wpa-map2 school
+        # ... dodatečné řádky wpa-mapX, jak je potřeba
+</pre>
+<!--							<p>By default the mapping script will only be used when no 'id_str' is available for the current network. If you want to completely disable 'id_str' matching and use only an external mapping script, use the 'wpa-mapping-script-priority 1' option to override default behaviour.</p>-->
+							<p>V základu bude mapovací skripty použit jen, když nebude přítomno žádné 'id_str' pro současnou síť. Pokud chcete úplně deaktivovat 'id_str' propojení a používát pouze mapovací skript, použijte volbu 'wpa-mapping-script-priority 1', abyste potlačili výchozí chování.</p>
+
+<!--							<p>If the mapping script returns an empty string wpa_action will fallback to using the 'default' interface, unless an alternative is defined by the 'wpa-roam-default-iface' option.</p>-->
+							<p>Jestliže mapovací skript vrátí prázdný řetězec, tak wpa_action spadne k používání 'výchozího' rozhraní, pokud však není definováná alternativa pomcí volby 'wpa-roam-default-iface'</p>
+
+<!--							<p>Below is an advanced example, using guessnet-ifupdown as the external mapping script.</p>-->
+							<p>Níže je pokročilý příklad, s použitím guessnet-ifupdown jako externího mapovacího skriptu.</p>
+					<h6>/etc/network/interfaces s externím mapovacím skriptem</h6>
+<pre>
+/etc/network/interfaces with external mapping example:
+allow-hotplug wlan0
+iface wlan0 inet manual
+
+        wpa-driver wext
+        wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf
+        wpa-roam-default-iface default-wparoam
+        wpa-mapping-script guessnet-ifupdown
+        wpa-map default: default-guessnet
+        wpa-map0 home_static
+        wpa-map1 work_static
+
+
+# school can only be chosen via 'id_str' matching
+iface school inet dhcp
+
+        # resolvconf
+        dns-nameservers 11.22.33.44 55.66.77.88
+
+iface home_static inet static
+
+        address 192.168.0.20
+        netmask 255.255.255.0
+
+        network 192.168.0.0
+        broadcast 192.168.0.255
+        gateway 192.168.0.1
+        test peer address 192.168.0.1 mac 00:01:02:03:04:05
+
+
+iface work_static inet static
+
+        address 192.168.3.200
+        netmask 255.255.255.0
+        network 192.168.3.0
+        broadcast 192.168.3.255
+
+        gateway 192.168.3.1
+        test peer address 192.168.3.1 mac 00:01:02:03:04:05
+
+iface default-guessnet inet dhcp
+
+iface default-wparoam inet dhcp
+</pre>
+
+<!--							<p>In this example wpa_action will use guessnet for the selection of a suitable logical interface only when no 'id_str' option has been provided for the current network in the provided wpa_supplicant.conf.</p>-->
+							<p>V tomto příkladu použije wpa_action guessnet pro výběr vhodného logického rozhraní, jen pokud nebyla poskytnuta žádná volba 'id_str' pro současnou síť v wpa_supplicant.conf.</p>
+
+<!--							<p>The 'wpa-map' lines provide guessnet with the logical interfaces that are to be tested as well as the default interface to be used when all tests fail. The 'test' lines of each logical interface are used by guessnet to determine if we are actually connected to that network. For instance, guessnet will choose the logical interface 'home_static' if there's a device with an IP address of 192.168.0.1 and MAC of 00:01:02:03:04:05 on the current network. If all tests fail, the 'default-guessnet' interface will be configured.</p>-->
+							<p>Řádky 'wpa-map' poskytují guessnetu logická rozhraní, která je nutno otestovat, stejně jako výchozí rozhraní, které je nutno použít, pokud všechny testy selhají. 'test' řádky každého logického rozhraní jsou použivány guessnetem k rozlišení, jestli jsme již připojeni k dané síti. Například, guessnet zvolí logické rozhraní 'home_static', pokud je na aktuální síti přítomno zařízení s IP adresou 192.168.0.1 a MAC 00:01:02:03:04:05. Jestliže všechny testy selžou, bude nakonfigurováno 'defaul-guessnet' rozhraní..</p>
+
+<!--							<p>Please, read the guessnet(8) manpage for more information.</p>-->
+							<p>Přečtěte si prosím manuálové stránky guessnet(8) pro více informací.</p>
+
+			<h2>4. Řešení problémů</h2>
+
+<!--							<p>In order to debug connection, association and authentication problems, we suggest starting `wpa_cli -i &lt;interface&gt;` in a different shell, before starting the interface. Use the command 'level 0' first, to get all debug messages. Then use `ifup --verbose &lt;interface&gt;` to get verbose debug messages from the script starting wpasupplicant.</p>-->
+							<p>Pro rozřešení problémů s připojení, asociací a autentifikací, doporučujeme začí s `wpa_cli -i &lt;rozhraní&gt;` v jiném shellu, před nastartováním rozhraní. Použijte napřed příkaz 'level 0' pro získání všech ladících (debug) zpráv. Potom použijte `ifup --verbose &lt;interface&gt;` k obdržení upovídaných (verbose) ladících zpráv ze skriptu začínajícího wpasupplicant</p>
+	</div>
+	<div class="divider" id="wpa6">
+		<h2>Skryté ssids</h2>
+
+<!--							<p>For reference, see #358137. In order to be able to associate to hidden ssids, please try to set the option 'ap_scan=1' in the global section, and  'scan_ssid=1' in your network block section of your wpa_supplicant.conf file. If you are using the managed mode, you can do so by these stanzas:</p>-->
+							<p>Pro příklad se podívejte na #358137. Za účelem možnosti asociace se skrytou ssid zkuste prosím volbu 'ap_scan=1' v globální sekci a 'scan_ssid=1' v sekci síťového bloku vašho wpa_supplicant.conf. Pokud používáte spravovaný mód, můžete tak učinit také pomocí strof:</p>
+
+<pre>
+iface eth1 inet dhcp
+wpa-conf managed
+wpa-ap-scan 1
+wpa-scan-ssid 1
+# další volby pro vaše nastavení
+</pre>
+
+<!--							<p>According to #368770, association can take a very long time to associate to WEP  secured networks. In some cases, setting the parameter 'ap_scan=2' in the config file, (or using a 'wpa-ap-scan 2' stanza, which is equivalent) can greatly help to speed up association.</p>-->
+							<p>Vzhledem #368770 může asociace trvat velmi dlouho, jestli se týká WEP zabezpečených sítí. V některých případech může k urychlení asociace pomoci nastavení parametru 'ap_scan=2' v konfiguračním souboru (nebo použití strofy 'wpa-ap-scan 2', která je ekvivalentní).</p>
+
+<!-- 							<p>Please note that setting ap_scan to the value of 2 also requires that all networks have a precisely defined security policy for for key_mgmt, pairwise, group and proto network policy variables.</p>-->
+ 							<p>Prosím zaznamenejte, že nastavení ap_scan na hodnotu 2 také vyžaduje, aby všechny sítě měly precizně nastavené pravidla bezpečnosti pro key_mgmt, párování, skupinu a proto proměnné pravidel sítě.</p>
+	</div>
+	<div class="divider" id="wpa7">
+		<h2>5. Bezpečnostní otázky</h2>
+				<h5>Nastavení přístupových práv souborů</h5>
+<!--							<p>It is important to keep PSK's and other sensitive information concerning your network settings private, therefore ensure that important configuration files containing such data are only readable by their owner. For example:</p>-->
+							<p>Je důležité uchovat PSK a další citlivé informace týkající se nastavení vaší sítě v soukromí, takže se ujistěte, že konfigurační soubory obsahující taková data je možno číst pouze uživatelem. Například:</p>
+
+<pre>
+chmod 0600 /etc/network/interfaces
+# nahraďtě cestu vaším souborem wpa_supplicant.conf
+chmod 0600 /etc/wpa_supplicant/wpa_supplicant.conf
+</pre>
+<!--							<p>By default, /etc/network/interfaces is world readable, and thus unsuitable for containing secret keys and passwords.</p>-->
+							<p>V základu je /etc/network/interfaces čitelný každým, a tudíž nevhodný pro uchovaní tajných klíčů nebo hesel.</p>
+	</div>
+			<div id="rev">Obsah naposledy revidován 14/08/2010 0100 UTC</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,644 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+	<title>Руководство aptosid - Конфигурация система</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+	<style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+	<style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+	<script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision by RoEn 19/12/2011 1730 UTC -->
+<!--htdig_noindex--><div id="menu"> <!-- menu starts here - ru language maintained by RoEn -->
+<!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
+<!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="Главная страница aptosid.com, форума и вики" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-ru.htm#search-on"><img src="../lib/logos/manual-search-22x22.png" title="Поиск в руководстве" alt="Search" /> Варианты поиска</a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Выбор языка - Choose another language CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="Переключение языка CZ, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-ru.htm">Руководство aptosid</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-ru.htm#welcome-gen">Добро пожаловать! &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-ru.htm#cred-team">Благодарности</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-ru.htm#how-to">Об использовании &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-ru.htm#how-to">Об использовании</a></li>
+					  <li><a href="welcome-ru.htm#table-contents">Содержание</a></li>
+					</ul>
+					</li>
+		<li><a href="help-ru.htm#help-gen">Получение помощи &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-ru.htm#help-gen">Где получить помощь</a></li>
+					  <li><a href="help-ru.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-ru.htm#welcome-quick">Краткое руководство aptosid</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-ru.htm">Содержание ISO-образа, выпуски, список зеркал и запись</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-ru.htm#cd-content">Содержание ISO-образа и системные требования &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-ru.htm#rolling">Замечания к релизу</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-ru.htm#download-aptosid">Список зеркал, скачивание ISO-образа и запись &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-ru.htm#md5">Проверка ISO-образа с md5</a></li>
+					  <li><a href="cd-dl-burning-ru.htm#burn-nero">Запись ISO-образа в Windows</a></li>
+					  <li><a href="cd-dl-burning-ru.htm#burn-linux">Запись ISO-образа в Linux</a></li>
+					  <li><a href="cd-no-gui-burn-ru.htm#burning-no-gui">Скрипт burniso</a></li>
+					  <li><a href="cd-no-gui-burn-ru.htm#burn-no-gui-gen">Запись ISO-образа в консоли</a></li>
+					  <li><a href="cd-dl-burning-ru.htm#download-aptosid">Список зеркал</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-ru.htm">Режим ISO-образа</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-ru.htm#rootpw">Пароль root на ISO-образе</a></li>
+				<li><a href="live-mode-ru.htm#live-cd-installsoft">Установка ПО на ISO-образе</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-ru.htm">Терминал и оболочка</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-ru.htm#term-kon">Терминал и оболочка &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-ru.htm#term-kon">Терминал и оболочка</a></li>
+					  <li><a href="term-konsole-ru.htm#colours"> Цветная подсказка в терминале</a></li>
+					  <li><a href="term-konsole-ru.htm#cli-help">Помощь в терминале</a></li>
+					  <li><a href="help-ru.htm#init3-tools">Полезные инструменты в текстовом режиме (tty) - init 3</a></li>
+					  <li><a href="term-konsole-ru.htm#term-cmds">Команды в терминале</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-ru.htm#sux">Команда: sux/sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-ru.htm">Чит-коды</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-ru.htm#cheatcodes">Особые для ISO-образа aptosid чит-коды</a></li>
+				<li><a href="cheatcodes-ru.htm#cheatcodes-linux">Общие для параметров ядра чит-коды</a></li>
+				<li><a href="cheatcodes-vga-ru.htm#vga">Общие для видеокарты коды</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-ru.htm">Разбиение жесткого диска - по старому, GPT и LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-ru.htm#hd-ntfs3g">Запись на раздел NTFS с ntfs-3g</a></li>
+			<li><a href="part-lvm-ru.htm#part-lvm">Разметка с использованием LVM - Logical Volume Manager</a></li>
+			<li><a href="part-gparted-ru.htm#partition">Разметка диска с интерфесом &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-ru.htm#partition">Разметка диска с gparted/KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-ru.htm#ntfs">Разделы NTFS с gparted/KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-ru.htm#partition">Примеры разметки диска в консоли &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-ru.htm#partition">Разметка диска с cfdisk</a></li>
+					    <li><a href="part-cfdisk-ru.htm#formating">Форматирование разделов с cfdisk</a></li>
+					    <li><a href="part-gdisk-ru.htm#gdisk-6">Форматирование после разметки с gdisk</a></li>
+					    <li><a href="part-gdisk-ru.htm#gdisk-1">Разбиение по GPT с gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-ru.htm#part-example">Разметка диска - обзор &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-ru.htm#part-example">Примеры разметки диска</a></li>
+					  <li><a href="part-uuid-ru.htm#uuid">UUID, восстанавление fstab и создание новых точек монтирования</a></li>
+					  <li><a href="part-cfdisk-ru.htm#disknames">Имена жестких дисков</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-ru.htm">Установка aptosid на HD, USB, VM и шифрованные разделы</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-ru.htm#Inst-prep">Подготовка установки &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-ru.htm#Inst-prep">Подготовка установки</a></li>
+					  <li><a href="hd-install-ru.htm#Installation">Инсталляция на HD</a></li>
+					  <li><a href="hd-install-ru.htm#first-hd-boot">Первая загрузка</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-ru.htm#fromiso">Загрузка 'fromiso' &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-ru.htm#fromiso">Загрузка 'fromiso' - обзор</a></li>
+					  <li><a href="hd-install-opts-ru.htm#grub2-fromiso">Загрузка 'fromiso' с grub 2</a></li>
+					  <li><a href="hd-install-opts-ru.htm#fromiso-persist">Способы 'fromiso' и 'persist'</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-ru.htm#usb-hd">Инсталляция на USB &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-ru.htm#usb-hd">Инсталляция на USB-HD - способ aptosid -  aptosid-на-флешки</a></li>
+					  <li><a href="hd-ins-opts-oos-ru.htm#raw-usb">Запись aptosid на USB/SSD с помощью другого Linux, MS Windows или Mac OS</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-ru.htm#install-crypt">Установка на шифрованные разделы - cryptroot</a></li>
+		  <li><a href="nbdboot-ru.htm#nbd1">Загрузка aptosid по сети</a></li>
+		  <li><a href="hd-install-vmopts-ru.htm#vmopts">Опции инсталляций на VM (Virtual Machine)</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-ru.htm">Оборудование в Xorg и разные драйверы</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-ru.htm#mon-res">Разрешение экрана и мониторы  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-ru.htm#mon-res">Разрешение экрана и мониторы</a></li>
+					  <li><a href="hw-dev-mon-ru.htm#xrandr">Двойные экраны и xrandr</a></li>
+					  <li><a href="hw-dev-mon-ru.htm#mon-binary">Двойные экраны (используя двоичные файлы)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-ru.htm#foss-xorg">Микропрограммное обеспечение GPU &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-ru.htm#ati-3d">AMD/ATI 3D драйверы</a></li>
+					  <li><a href="gpu-ru.htm#intel">Intel 2D и 3D драйверы</a></li>
+					  <li><a href="gpu-ru.htm#nvidia">Nvidia 3D драйверы</a></li>
+					  <li><a href="gpu-ru.htm#foss-xorg">Свободные Xorg-драйверы</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-ru.htm#fw-detect">Определение несвободного микропрограммного обеспечения - non-free </a></li>
+			  <li><a href="nf-firm-ru.htm#non-free-firmware">Добавление non-free в список источников</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-ru.htm">Оконные менеджеры</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-ru.htm">Оконные менеджеры KDE и Xfce&#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-ru.htm#xfce-notes">Полезные инструменты для Xfce</a></li>
+					    <li><a href="wm-dm-ru.htm#install-add">Полезные инструменты для KDE</a></li>
+					    <li><a href="wm-dm-ru.htm#desk-freeze">Рабочий стол зависает</a></li>
+					    <li><a href="wm-dm-ru.htm#kde-login">Проблемы входа в KDE</a></li>
+					    <li><a href="wm-dm-ru.htm#ch-th">Управление темами</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-ru.htm#dm">Установква дополнительных дисплейных менеджеров</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-ru.htm">Интернет, Wifi и локальная сеть</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-ru.htm">Мета-пакет LAMP &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-ru.htm#serv-apache">Мета-пакет LAMP</a></li>
+					    <li><a href="lamp-apache-ru.htm#serv-ftp">Клиенты FTP</a></li>
+					    <li><a href="lamp-apache-ru.htm#serv-sec">Защищенные протоколы</a></li>
+					    <li><a href="lamp-apache-ru.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-ru.htm#serv-mysql">Настройка MySQL</a></li>
+					    <li><a href="lamp-ppp-ru.htm#serv-php">PHP в apache</a></li>
+					    <li><a href="ntp-server-ru.htm#ntp-server">Установка сервера времени</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-ru.htm#tor">Брандмауэры и веб-прокси &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-ru.htm#tor">Маршрутизатор tor</a></li>
+					    <li><a href="tor-privoxy-ru.htm#privoxy">Веб-прокси privoxy</a></li>
+					    <li><a href="inet-ceni-ru.htm#firewalls">Брандмауэры</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-ru.htm#ssh-x">Samba и ssh &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-ru.htm#setup">Сервер samba</a></li>
+						  <li><a href="samba-ru.htm#configure">Интеграции samba в сеть Windows</a></li>
+						  <li><a href="ssh-ru.htm#ssh-fs">Удаленное монтирование с ssh</a></li>
+						  <li><a href="ssh-ru.htm#ssh-x">Приложения X-Windows с ssh</a></li>
+						  <li><a href="ssh-ru.htm#ssh-f">Интерфейс ssh и Konqueror</a></li>
+						  <li><a href="ssh-ru.htm#ssh-w">ssh X-forwarding с Windows-компом</a></li>
+						  <li><a href="ssh-ru.htm#ssh">Безопасность с ssh</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-ru.htm#netcardconfig">Связи с WiFi &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-ru.htm#netcardconfig">Настройка сетевых карт с ceni</a></li>
+						    <li><a href="inet-wpagui-ru.htm#wpa-roaming-gui">Графическoe ппиложение wpa_gui для WiFi</a></li>
+						    <li><a href="inet-setup-ru.htm#net-set1">Роуминг с WiFi</a></li>
+						    <li><a href="inet-wpa-ru.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-ru.htm#hotswitch">Переключение сети между WiFi и проводной связью</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-ru.htm#netcardconfig">Проводная связь &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-ru.htm#dial-mod">56килобитовые модемы</a></li>
+						    <li><a href="inet-ceni-ru.htm#netcardconfig">Настройка сетевых карт с ceni</a></li>
+					</ul>
+					</li>
+		<li><a href="nf-firm-ru.htm#fw-detect">Определение несвободного микропрограммного обеспечения - non-free </a></li>
+		<li><a href="nf-firm-ru.htm#non-free-firmware">Добавление non-free в список источников</a></li>			
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-ru.htm">Управление пакетами и обновление системы с dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-ru.htm#apt-cook">apt и репозитории &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-ru.htm#apt-cook">apt и репозитории</a></li>
+					    <li><a href="sys-admin-apt-ru.htm#apt-install">Установка нового пакета</a></li>
+					    <li><a href="sys-admin-apt-ru.htm#apt-delete">Удаление пакета</a></li>
+					    <li><a href="sys-admin-apt-ru.htm#apt-downgrade">Понижение версии с hold</a></li>
+					    <li><a href="sys-admin-apt-ru.htm#apt-cache">Поиск пакетной иформации с apt-cache</a></li>
+					    <li><a href="sys-admin-apt-ru.htm#gui-pacsea">Графическая поисковая программа</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-ru.htm#kern-upgrade">Обновление ядра &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-ru.htm#kern-remove">Удаление ядра</a></li>
+					    <li><a href="sys-admin-kern-upg-ru.htm#kern-upgrade">Обновление ядра</a></li>
+					    <li><a href="sys-admin-kern-upg-ru.htm#dmakms">Динамическая инсталляция модулей ядра с dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-ru.htm#apt-upgrade">Обновления системы с dist-upgrade - Краткий обзор &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-ru.htm#live-cd-upgrade">Обновление с ISO-образа</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-ru.htm#approx">Обновление нескольких компьютеров в локальной сети</a></li>
+					    <li><a href="sys-admin-apt-ru.htm#apt-upgrade">Краткий обзор oбновления системы с dist-upgrade</a></li>
+					    <li><a href="sys-admin-apt-ru.htm#du-st">Шаги обновления системы с dist-upgrade</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-ru.htm">Системное администрирование</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-ru.htm#bois-prep">Обновление BIOS с FreeDOS</a></li>
+		<li><a href="vir-rkits-ru.htm#virus-rkits">Сканер безопасности</a></li>
+		<li><a href="hd-install-ru.htm#adduser">Новый пользователь и пароли &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-ru.htm#adduser">Добавление нового пользователя</a></li>
+					    <li><a href="sys-admin-gen-ru.htm#pw-lost">Восстановление root-пароля</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-ru.htm#start-services">Службы и режимы загрузки &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-ru.htm#start-services">Выбор служб</a></li>
+					    <li><a href="sys-admin-gen-ru.htm#pkill">Завершениe службы или процесса</a></li>
+					    <li><a href="sys-admin-gen-ru.htm#init">Режимы загрузки init в aptosid</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-ru.htm#rsync">Резервирование системы &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-ru.htm#rdiff">Резервирование с rdiff</a></li>
+					    <li><a href="sys-admin-rsync-ru.htm#rsync">Резервирование с rsync</a></li>
+					    <li><a href="home-ru.htm#home-bu">Перемещение /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-ru.htm#fonts">Cups, шрифты и звук &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-ru.htm#fonts">Шрифты</a></li>
+					     <li><a href="sys-admin-gen-ru.htm#cups">Сервер cups</a></li>
+					     <li><a href="sys-admin-gen-ru.htm#sound">Звуковые микшеры</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-ru.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-ru.htm#chroot">Grub2 - Восстановление grub с chroot</a></li>
+					    <li><a href="sys-admin-grub2-ru.htm#mbr-over-grub2">Grub2 - Удаление из MBR</a></li>
+					    <li><a href="sys-admin-grub2-ru.htm#multi-os">Grub2 - Двойная и мультизагрузка</a></li>
+					    <li><a href="sys-admin-grub2-ru.htm#grub1-grub2">Grub2 - Обновление с grub1</a></li>
+					    <li><a href="sys-admin-grub2-ru.htm#grub2">Grub2 - Краткий обзор</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Наш спонсор webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="http://adfarm1.adition.com/banner?sid=399467&amp;ts=[timestamp]" title="aptosid размещен на сервере webtropia.com" alt="aptosid размещен на сервере webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div><!--/htdig_noindex-->
+<div id="main-page">
+	<div class="divider" id="start-services">
+		<h2 id="top-header">Запуск служб в aptosid</h2>
+				<h3>Применение insserv (в Pontos 2008-04 и последующих выпусков):  для запуска / остановки уже установленных услуг:</h3>
+							<p><span class="highlight-2">Прочитайте внимательно <span class="highlight-3">/usr/share/doc/insserv/README.Debian</span>, замечания по релизу и помощь по 'man pages':</span></p>
+<pre>
+ $ man insserv
+ $ man invoke-rc.d
+ $ man update-rc.d
+ google LSB headers
+</pre>
+
+							<p>Для запуска:</p>
+<pre>
+/etc/init.d/&lt;service&gt; start
+</pre>
+							<p>Для остановки:</p>
+<pre>
+/etc/init.d/&lt;service&gt; stop
+</pre>
+							<p>Для перезапуска:</p>
+<pre>
+/etc/init.d/&lt;service&gt; restart
+</pre>
+							<p>Чтобы при загрузке компьютера служба не запускалась:</p>
+<pre>
+update-rc.d &lt;service&gt; remove
+[Это позволит удалить все ссылки запуска]
+</pre>
+							<p>Чтобы при загрузке компьютера служба запускалась [редко требуется]</p>
+<pre>
+update-rc.d &lt;service&gt; defaults
+[Это создаст необходимые начальные ссылки]
+</pre>
+
+							<p>Чтобы прочитать список того, какие службы работают:</p>
+<pre>
+ls /etc/rc5.d
+</pre>
+
+							<p><span class="highlight-3">S</span> означаеть, что cлужба начнется.<br />
+							<span class="highlight-3">K</span> означаеть, что служба не начнется.</p>
+
+					<h3>Устаревшие версии (перед Pontos 2008-04)</h3>
+						<h3>Применение insserv на существующую систему перед Pontos 2008-04</h3>
+
+							<p><span class="highlight-3">Предупреждение: Из-за наличия пользовательского скрипта Init или Symlinks, insserv не устанавливается автоматически на старые инсталляции aptosid. НЕ рекомендуется устанавливать insserv на инсталляции, выпущенные перед Pontos. Этот пакет должен быть использован с большой осторожностью.</span><span class="highlight-3"></span><span class="highlight-3"> Неправильные или недостающие  LSB зависимости имеющегося в наличии скрипта Init могут приводить к не загружаемой системе. После инсталляции insserv на существующую  систему могут потребоваться некоторые изменения.</span></p>
+
+							<p><span class="highlight-3">Прочитайте <a href="http://wiki.debian.org/LSBInitScripts/DependencyBasedBoot">Debian документацию</a> и замечание о выпуске перед установкой и активацией insserv.</span></p>
+	</div>
+	<div class="divider" id="bum">
+			<h2>Boot-Up Manager (bum) - графический инструмент конфигурации служб</h2>
+
+							<p>Если Вам недостаточно известна логика загрузочной последовательности Debian, Вы не должны играть с символическими ссылками, правами и так далее. Менеджер boot-up помогает Вам в автоматизации конфигурации.</p>
+
+							<p>Менеджер boot-up  представляет собой графический редактор конфигурации уровня запуска, который позволяет настроить запрашиваемые службы, если система загружается или перезагружается. Он отображает список тех служб, которые  могут запускаться при загрузке. Вы можете индивидуально включать и выключать  услуги.</p>
+
+<pre>
+apt-get install bum
+</pre>
+							<p>Для применения графической надстройки boot-up manager, введите:</p>
+<pre>
+$ sux
+password:
+bum
+</pre>
+						  <p> <a href ="http://www.marzocca.net/linux/bumdocs.html"> Дополнительное сообщение о приложениях boot-up manager (bum)</a>. </p>
+
+		</div>
+		<div class="divider" id="pkill">
+			<h2>Окончание службы или процесса</h2>
+						<p><span class="highlight-3">pkill</span> - это утилита, с помощью которой можно найти процесс или послать сигнал процессу по имени и другим атрибутам. Она может вводиться как с правами пользователя, так и с правами Root в консоли или tty.</p>
+<pre>
+pkill -n service
+</pre>
+						<p>Если Вы не знаете точное имя службы или процесса, можно установить его таким образом: <br /><span class="highlight-3">pkill &lt;tab&gt; &lt;tab&gt;</span>. Она выдаст список процессов.</p>
+
+						<p>htop - хорошая альтернатива. (killall-9 - это последняя соломинка для спасения).</p>
+
+	</div>
+	<div class="divider" id="init">
+			<h2>Уровни запуска init в aptosid</h2>
+							<p>Здесь приведен список "уровней запуска" для операционной системы aptosid , пожалуйста, обратите внимание - эти уровни отличаются от порядка, принятого в debian stable:</p>
+		 <table>
+			<tbody>
+				  <tr>
+					<th>Уровень</th>
+					<th>aptosid</th>
+					<th>Debian</th>
+				  </tr>
+				  <tr>
+					<td> <b> init 0 </b> </td>
+					<td> Выключает компьютер. </td>
+					<td> Выключает компьютер. </td>
+				  </tr>
+				  <tr>
+				      <td> <b> init 1 </b></td>
+				      <td> Один пользователь (режим безопасности или режим восстановления). Демоны, как например Apache и SSH остановлены.
+					   Не заходите на этот уровень с помощью удаленного доступа. </td>
+				      <td> Один пользователь, останавливает службы (безопасности или режим восстановления). Не заходите на этот уровень с помощью удаленного доступа. </td>
+				  </tr>
+				  <tr>
+				      <td> <b> init 2 </b></td>
+				      <td> Многопользовательский режим с работающей сетью, с X-Window System не работает, и невозможно войти или остановить X-Window System. </td>
+				      <td> В уровне запуска Debian по умолчанию для працюечои сети работает X-Window System. </td>
+				  </tr>
+				  <tr>
+				      <td> <b> init 3 </b></td>
+				      <td> Многопользовательский режим с работающей сетью, с X-Window System не работает, и невозможно войти или остановить X-Window System. <a href="sys-admin-apt-en.htm#apt-upgrade"> В этом уровне делаеться обновление системы</a>.</td>
+				      <td> Такой же как init 2. </td>
+				  </tr>
+				  <tr>
+				      <td> <b> init 4 </b></td>
+				      <td> Многопользовательский режим с работающей сетью, с X-Window System не работает, и невозможно войти или остановить X-Window System. </td>
+				      <td> Такой же как init 2. </td>
+				   </tr>
+				   <tr>
+				      <td> <b> init 5 </b></td>
+				      <td> По умолчанию в Aptosid для многопользовательского режима с сетью работает X-Window System, или возможен запуск X-Window System. </td>
+				      <td> Такой же как init 2. </td>
+				  </tr>
+				  <tr>
+				      <td> <b> init 6 </b></td>
+				      <td> Перезагрузка системы.</td>
+				      <td> Перезагрузка системы.</td>
+				      </tr>
+				  <tr>
+				    <td> <b> init S </b></td>
+				    <td>Taм, где услуги раннего времени загрузки выполняются на основе "только один раз", Вы не можете переключиться на него после его запуска. </td>
+				    <td>Там, где услуги раннего времени загрузки выполняются на основе "только один раз", Вы не можете переключиться на него после его запуска. </td>
+				  </tr>
+				  </tbody>
+				  </table>
+
+      <div class="spacer02"></div>
+
+							<p>Для выяснения уровня запуска (инициализации), в котором находитесь Вы в настоящее время, запустите команду:</p>
+<pre>
+who -r
+</pre>
+							<p>Обязательное чтение для любого aptosid и Debian системного администратора в отношении уровней запуска:</p>
+<pre>
+man init
+</pre>
+
+	</div>
+	<div class="divider" id="pw-lost">
+		<h2>Забытый пароль root</h2>
+
+			<p>На Live-CD пароль root не установлен. Что предоставляет возможность восстановить (изменить) пароль на уже установленной системе:</p>
+
+			<p>Загрузитесь с LiveCD</p>
+
+			<p>Как root смонтируйте Ваш корневой раздел (например: /dev/sdb2)</p>
+
+<pre>
+mount /dev/sdb2 /media/sdb2
+</pre>
+							<p>Теперь перейдите на Ваш корневой раздел (chroot=changed root) и установите новый пароль:</p>
+<pre>
+chroot /media/sdb2 passwd
+</pre>
+
+	</div>
+	<div class="divider" id="pw-new">
+		<h2>Установка новых паролей</h2>
+
+							<p>Чтобы изменить Ваш 'user' пароль, введите в терминале с правами  <span class="highlight-3">$ user</span>:</p>
+<pre>
+$ passwd
+</pre>
+
+							<p>Чтобы изменить Ваш 'root' пароль, введите в терминале с правами <span class="highlight-3"># root</span>:</p>
+<pre>
+passwd
+</pre>
+
+							<p>Чтобы изменить пароль пользователя, введите в терминале с правами <span class="highlight-3"># root</span>:</p>
+<pre>
+passwd &lt;user&gt;
+</pre>
+
+	</div>
+	<div class="divider" id="fonts">
+			<h2>Шрифты в aptosid</h2>
+				<h5>Правильная установка DPI и основных параметров экрана.</h5>
+
+							<p>Правильно определить установки DPI трудно, но обычно X-сервер с этим отлично справляется.</p>
+
+				<h5>Правильные размеры и частоты дисплея</h5>
+
+							<p>Каждый монитор имеет собственную комбинацию настроек, и, к сожалению, не все мониторы передают точные данные DCC, так что без ручного вмешательства не обойтись.</p>
+
+				<!--<h5>Правильные графические драйверы.</h5>
+
+							<p>Некоторые графические карты ATI и Nvidia не полностью поддерживаются свободными драйверами Xorg. Благоразумнее было бы установить коммерческие, закрытые, драйвера в этих случаях. По причинам лицензионных соглашений, aptosid не может их предварительно включать на LiveCD. Инструкция по инсталляции этих драйверов содержится на следующей странице<a href="gpu-ru.htm"> руководства</a>.</p>-->
+
+				<h5>Базовый набор шрифтов, способ представления и величина</h5>
+
+							<p>aptosid использует те же свободные комплекты шрифтов, что и Debian, они отлично сбалансированы. Но если выбираются собственные шрифты, возможно потребуется изменить конфигурацию, чтобы получить желаемое начертание шрифта. Наряду с возможностями установки в контрольном центре KDE>systemsettings  в Debian существуют несколько продвинутых способов установки чистого изображения шрифта. Тем не менее, обратите внимание, что каждый шрифт имеет всего лишь несколько идеальных размеров, и требует подбора оптимального их значения.</p>
+
+							<p>Изменение величины DPI может также способствовать лучшему отображению шрифтов. Следующая команда используется для этого:</p>
+<pre>
+fix-dpi-kdm
+</pre>
+							<p>Она должна показать текущую величину DPI для Вашего монитора, но Вы можете изменить настройки. Чтобы изменения вступили в силу, графический сервер X должен быть перезапущен (init 3 - init 5) или перезапустите компьютер.</p>
+
+							<p>После изменения шрифта или величины DPI (в сервере X или iceweasel), необходимы еще несколько изменений, особенно если изменялся шрифт TrueType Font (или наоборот):</p>
+<pre>
+dpkg-reconfigure fontconfig-config
+</pre>
+							<p>Первые две установки лучше всего (1) "native" и (2) "autohinter" как "automatic". Возможны следующие опции: третий пункт меню позволяет выбирать тип оптимизации для шрифтов Bitmap ("yes") или шрифтов TrueType ("no").</p>
+
+							<p>Если нужно восстановить кэш шрифтов (font cache):</p>
+<pre>
+fc-cache -f -vv
+</pre>
+							<p>Если это не сработает, Bам придется переустановить пакет с файлом конфигурации по умолчанию с Вашего кэша шрифтов путем ввода в одну строку):</p>
+<pre>
+rm -rf /etc/fonts
+apt-get install --reinstall --yes -o DPkg::Options::=--force-confmiss -o DPkg::Options::=--force-confnew fontconfig fontconfig-config
+</pre>
+							<p>Стоит учитывать, что для качественного отображения на экране некоторые шрифты используют строго определенный размер.</p>
+
+				<h5>Настройки GTK приложений (Iceweasel).</h5>
+							<p>Внешний вид программ, базирующихся на GTK2, не впечатляет, если Вы используете их в среде KDE. Одна из возможностей решения проблемы:</p>
+<pre>
+apt-get install gtk2-engines system-config-gtk-kde gtk-qt-engine gtk2-engines-qtcurve
+</pre>
+							<p>В контрольном центре KDE <span class="highlight-3">Системные настройки>Внешний вид и темы</span> после инсталляции появится новый пункт меню <span class="highlight-3">Стили GTK/GTK Styles and Fonts</span>. Там можно настроить использование шрифтов KDE в приложениях GTK2, а также стиль GTK ("Clearlooks" вполне пригоден) <span class="highlight-3">или </span> экспериментируйте с различными вариантами, на Ваш вкус.</p>
+
+							<p>Так Вы решите и проблемы со шрифтами программ на GTK.</p>
+
+	</div>
+	<div class="divider" id="cups">
+			<h2>CUPS</h2>
+							<p>В центре помощи KDE имеется большой соответствующий раздел, но т.к. иногда возникают проблемы, после dist-upgrade, то ниже приводится пример возможного их решения:</p>
+
+<pre>
+modprobe lp
+echo lp >> /etc/modules
+apt-get remove --purge cupsys cups
+apt-get install cups
+или
+apt-get install cups cups-driver-gutenprint hplip
+</pre>
+							<p>Убедитесь, что сервер CUPS запущен:</p>
+<pre>
+/etc/init.d/cups restart
+</pre>
+							<p>Теперь введите в строке браузерa: </p>
+<pre>
+http://localhost:631
+</pre>
+
+
+							<p>Другой пример связан со случаем, когда настройка CUPS с помощью графического интерфейса становится невозможна, т.к. программа выводит диалог с запросом пароля и заранее выбранным Вами пользователем. В этом случае, разумеется, необходимо изменить пользователя на <span class="highlight-2">root</span> и ввести <span class="highlight-2">соответствующий пароль</span>.</p>
+
+							<p><a href="http://www.linuxfoundation.org/collaborate/workgroups/openprinting/database/databaseintro">The OpenPrinting database</a> содержит огромное количество информации о конкретных принтерах, наряду с обширной информацией про драйверы, сами драйверы, основные характеристики, а также набор инструментов настройки. </p>
+	</div>
+	<div class="divider" id="sound">
+			<h2>Звук в aptosid</h2>
+							<p><span class="highlight-3">По умолчанию звук отключен  в aptosid.</span></p>
+
+							<p>Все версии KDE используют KMix и все версии XFCE используют Mixer.</p>
+
+							<p>Часто это лишь простое решение проблемы беззвучия. Нажмите на значок звука на панели задач и снимите галочку на 'Mute box'.</p>
+
+					<h6>Kmix</h6>
+							<p>В KMix вам необходимо активировать опции, которые Вы предпочитаете для канала вариантов, <span class="highlight-3"> KMix -> Настройки -> Настройка каналов </span> или наберите просто в терминале следующую команду: </p>
+<pre>
+$ kmix
+</pre>
+
+					<h6>XFCE</h6>
+
+							<p>В XFCE можно запустить микшер приложения и добавить некоторые элементы управления с помощью <span class="highlight-3"> Мультимедиа -> Смеситель </span> и нажатия на кнопку <span class="highlight-3">Выбор управления коробки</span> или наберите просто в терминале следующую команду: </p>
+<pre>
+$ xfce4-mixer
+</pre>
+
+					<h3>Alsamixer</h3>
+
+							<p>Если Вы предпочитаете использовать Alsamixer, она находится в Alsa-утилитax:</p>
+<pre>
+apt-get update
+apt-get install alsa-utils
+exit
+</pre>
+							<p>Задайте предпочтительные настройки звука c правами <span class="highlight-2">$user</span> в терминале:</p>
+<pre>
+$ alsamixer
+</pre>
+							<!-- <p>Then as root:</p>
+
+<pre>
+alsactl store
+</pre>-->
+
+							 <!--<p><a href='http://sidux.com/index.php?module=Wikula&amp;tag=SoundMaster'> See wiki.</a></p>-->
+
+	</div>
+
+			<div id="rev">Содержание последний раз пересмотрено 20/04/2011 0830 UTC</div>
+
+</div>
+</body>
+</html>
