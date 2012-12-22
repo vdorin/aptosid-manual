@@ -1,0 +1,178 @@
+Copyright: (C) 2006 - 2007 by the sidux Foundation, Inc.
+icons: (C) 2007 cathbard <cathbard@gmail.com>
+License: GFDL Version 1.2  with no invariant sections or cover texts 
+All content is © 2006 by the sidux Foundation, Inc. and released under 
+GNU Free Documentation License. Permission is granted to copy,-distribute 
+and/or modify this document under the terms of the GNU -Free Documentation License, 
+Version 1.2 or any later version published by the Free Software Foundation; 
+with no InvariantSections, with no Front-Cover Texts, 
+and with no Back-Cover Texts.
+The Debian packaging is (C) 2007, Kel Modderman <kel@otaku42.de> 
+and is licensed under the GPL, see `/usr/share/common-licenses/GPL'.
+
+Coloured sidux Book Icons (type2)
+
+Copyright (C) 2007  by spacepenguin, cako and cathbard (http://sidux.com)
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
+
+NOTE sidux Foundation, Inc. assigned all rights to 
+sidux e.Vsidux e. V. (Amtsgericht Charlottenburg VR 27013 B)
+c/o Ferdi Thommes
+Kniprodestr. 104
+10407 Berlin
+
+
+IRC 2008-06-09 AEST: the blank lines are a result of my AWAY from the Channel highlights
+[20:29:07] <cleary> e bluewater
+[20:30:03] <bluewater> cleary: i need a copy of the art license,, whats the besy link?
+[20:30:09] <bluewater> best
+[20:30:14] <cleary> what art license?
+[20:30:53] <bluewater> the sidux book cathbard dd that I use in manuals
+[20:30:59] <bluewater> dd = did
+[20:31:18] <cleary> no idea
+[20:31:27] <cleary> you'll need to ask cathbard I think
+[20:31:34] <bluewater> hmm have to go find it then
+
+[20:32:03] <cleary> you can trawl the commit mailing list for fullstory
+[20:33:02] <bluewater> well it was inplace til the new logo for manuals  on the desktop  ( the blue one), so has to be somewhere
+
+[20:34:33] <cleary> I've only got commits in my gmail back to march 29
+
+[20:35:03] <bluewater> heh  yes otherwise 10 gig of emails,, grins
+
+[20:35:55] <etorix> shouldnt it be in the deb
+[20:36:14] <cleary> etorix: the deb provides the new icon
+[20:36:17] <cleary> not cathbard's
+[20:36:32] <cleary> the license only covers current distribution
+[20:36:46] <etorix> hmm .. old iso then
+[20:36:58] <bluewater> etorix: double checking it, before i fire off an email, as far as I am concerned it was on chaos, so its good to go
+[20:37:00] <cleary> etorix: that would do
+
+[20:37:30] <cleary> bluewater: it is distributable, but you must supply the license when you distribute it
+[20:37:48] <cleary> etorix: you got any old isos?
+[20:37:53] <bluewater> cleary: yes,, thats what I am after
+[20:38:10] <bluewater> i think I have a chaos here,, let me go rummage
+[20:38:23] <etorix> u could ask cathbard, might need a ned kelly shirt tho
+
+[20:38:58] <cleary> bluewater: check /usr/share/doc/<package>/copyright
+[20:39:03] <cleary> when you boot chaos
+[20:39:14] <cleary> where package is whatever the manual was called back then
+[20:39:16] <cleary> ...
+[20:39:25] <cleary> it was included in fll-builder wasn't it
+[20:40:12] <bluewater> damn , i think i gave away my chaos CD
+[20:40:37] <cleary> I'm on it
+[20:40:45] <bluewater> aahh just found tartaros
+[20:45:48] <cleary> revision 7000 of the sidux-manual debian/copyright
+[20:45:50] <cleary> -It was downloaded from http://bluewater.sidux.com/
+[20:46:02] <cleary> -Copyright: (C) 2006 - 2007 by the sidux Foundation, Inc.
+[20:46:06] <cleary> -    icons: (C) 2007 cathbard <cathbard@gmail.com>
+[20:46:10] <cleary> -License: GFDL Version 1.2  with no invariant sections or cover texts
+[20:46:14] <cleary> -All content is © 2006 by the sidux Foundation, Inc. and released
+[20:46:18] <cleary> -under GNU Free Documentation License. Permission is granted to copy,
+[20:46:22] <cleary> -distribute and/or modify this document under the terms of the GNU
+[20:46:22] <cleary> -Free Documentation License, Version 1.2 or any later version
+[20:46:22] <cleary> -published by the Free Software Foundation; with no Invariant
+[20:46:22] <cleary> -Sections, with no Front-Cover Texts, and with no Back-Cover Texts.
+[20:46:22] <cleary> -The Debian packaging is (C) 2007, Kel Modderman <kel@otaku42.de> and
+[20:46:23] <cleary> is licensed under the GPL, see `/usr/share/common-licenses/GPL'.
+[20:46:59] <bluewater> cleary: if you were a bloke I would kiss you
+[20:49:07] <cleary> lucky I'm a hot chick then...
+[20:49:20] <bluewater> lol
+
+[21:00:12] <bluewater> cleary: i just found this :
+[21:00:16] <bluewater> Coloured sidux Book Icons (type2)
+[21:00:16] <bluewater> Copyright (C) 2007  by spacepenguin, cako and cathbard (http://sidux.com)
+[21:00:16] <bluewater> This program is free software; you can redistribute it and/or
+[21:00:16] <bluewater> modify it under the terms of the GNU General Public License
+[21:00:16] <bluewater> as published by the Free Software Foundation; either version 2
+[21:00:16] <bluewater> of the License, or (at your option) any later version.
+[21:00:16] <bluewater> This program is distributed in the hope that it will be useful,
+[21:00:16] <bluewater> but WITHOUT ANY WARRANTY; without even the implied warranty of
+[21:00:16] <bluewater> MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+[21:00:16] <bluewater> GNU General Public License for more details.
+[21:00:16] <bluewater> You should have received a copy of the GNU General Public License
+[21:00:16] <bluewater> along with this program; if not, write to the Free Software
+[21:00:16] <bluewater> Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
+[21:01:11] <bluewater> they were the designers of the original book
+[21:05:06] <etorix> hm
+[21:05:40] <etorix> cathbard basically stole the best of spacepenguin's idea, really
+[21:06:30] <etorix> that whole episode put me off him
+[21:08:09] <bluewater> as far as I know this is the original, gawd knows how or why i kept it, talk about a squirrel
+[21:08:19] <etorix> terminally
+[21:09:21] <etorix> he seemed to be throwing his weight about and elbowing ppl out of the way
+
+[21:10:49] <cleary> that looks right to me
+[21:11:03] <cleary> that should've been in the original copyright
+[21:12:16] <bluewater> i will place the combination in the file for recoll,, that will allow him total freedom
+
+[21:18:34] --> d-s-p has joined this channel (~daniel@p5B034EBC.dip.t-dialin.net).
+[21:19:00] *** Daniel-S-P is now known as Guest2037.
+[21:19:00] *** d-s-p is now known as Daniel-S-P.
+[21:20:34] <bluewater> cleary: http://bluewater.sidux.com/icon-licenses/license
+
+[21:22:03] <bluewater> hhmm sidux foundation inc,, 
+[21:22:34] <bluewater> that is what it was back then
+[21:22:58] <-- Guest2037 has left this server (Ping timeout: 480 seconds).
+
+[21:45:15] <bluewater> http://bluewater.sidux.com/icon-licenses/license updated
+
+[21:58:49] --> cobra has joined this channel (~cobra@p4FD95669.dip.t-dialin.net).
+
+[22:09:04] <cleary> bluewater: just check what the stanza is referring to
+[22:09:06] <cleary> eg
+
+[22:09:19] <cleary> The Debian packaging is (C) 2007, Kel Modderman <kel@otaku42.de>
+[22:09:19] <cleary> and is licensed under the GPL, see `/usr/share/common-licenses/GPL'.
+[22:09:26] <cleary> that's irrelevant
+[22:10:03] <cleary> the sidux foundation bit is irrelevant too, because the icons are specifically (C) cathbard
+[22:10:30] <cleary> imo you can safely nuke:
+[22:10:33] <cleary> All content is Â© 2006 by the sidux Foundation, Inc. and released under
+[22:10:37] <cleary> GNU Free Documentation License. Permission is granted to copy,-distribute
+[22:10:41] <cleary> and/or modify this document under the terms of the GNU -Free Documentation License,
+[22:10:42] <cleary> Version 1.2 or any later version published by the Free Software Foundation;
+[22:10:42] <cleary> with no InvariantSections, with no Front-Cover Texts,
+[22:10:42] <cleary> and with no Back-Cover Texts.
+[22:10:42] <cleary> The Debian packaging is (C) 2007, Kel Modderman <kel@otaku42.de>
+[22:10:42] <cleary> and is licensed under the GPL, see `/usr/share/common-licenses/GPL'.
+[22:10:56] <cobra> hi cleary
+[22:11:02] <cleary> hi cobra
+[22:11:18] <cleary> haven't gotten into the edu art repackaging this weekend
+[22:11:24] * cleary makes a note ;)
+[22:11:34] <cobra> cleary: np ;)
+
+[22:13:22] <bluewater> cleary:  so are you saying that this is enough?:
+[22:13:24] <bluewater> Coloured sidux Book Icons (type2)
+[22:13:24] <bluewater> Copyright (C) 2007  by spacepenguin, cako and cathbard (http://sidux.com)
+[22:13:24] <bluewater> This program is free software; you can redistribute it and/or
+[22:13:24] <bluewater> modify it under the terms of the GNU General Public License
+[22:13:24] <bluewater> as published by the Free Software Foundation; either version 2
+[22:13:24] <bluewater> of the License, or (at your option) any later version.
+[22:13:24] <bluewater> This program is distributed in the hope that it will be useful,
+[22:13:24] <bluewater> but WITHOUT ANY WARRANTY; without even the implied warranty of
+[22:13:24] <bluewater> MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+[22:13:24] <bluewater> GNU General Public License for more details.
+[22:13:24] <bluewater> You should have received a copy of the GNU General Public License
+[22:13:24] <bluewater> along with this program; if not, write to the Free Software
+[22:13:24] <bluewater> Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
+[22:14:25] <cleary> bluewater: imo, yes
+[22:14:39] <cleary> that covers the authors and copyright holders
+[22:14:43] <cleary> plus the license
+[22:14:45] <bluewater> ok  ,, great Thanks
+[22:14:58] <cleary> I'm off to bed - gn8
+
+[22:15:05] <-- cleary has left this server (Remote host closed the connection).
+
+ 
