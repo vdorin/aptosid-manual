@@ -1,0 +1,754 @@
+CHANGELOG FOR aptosid-OS-MANUAL-2012
+___________________________________________
+
+*VERSION:::aptosid-manual-02.14.2012.10.18
+Thurs Oct 18, 2012 1100 UTC
+*lib/css-js/version-date.css    date alt
+*hd-install-opts-xx		codebox update and text update to line ~527 including codebox due to some users thinking lang=no meant Lang=null language
+*translation updates and validation fixes for /files
+
+-- Trevor Walkley <trevor_walkley@aptenodytes.org> Thurs Oct 18, 2012 1100 UTC
+_________________________________________________
+Wed Oct 03, 2012 1340 UTC
+*lib/css-js/version-date.css    date alt
+*nl-files			Translation update and applied to files
+sys-admin-grub2-nl		Translation update and fixed html code
+*translation updates and validation fixes for /files
+
+-- Trevor Walkley <trevor_walkley@aptenodytes.org> Wed Oct 03, 2012 1340 UTC
+_________________________________________________
+*VERSION:::aptosid-manual-02.14.2012.09.15
+Sat September 15, 2012 0830 UTC
+*lib/css-js/version-date.css    date alt
+*manual-serach-xx		added a para, and fixed outstanding validation issue that were 2 years old
+*nl-files			validation fix for menu-nl and applied to all -nl files
+*translation updates and validation fixes for /files
+
+-- Trevor Walkley <trevor_walkley@aptenodytes.org> Sat September 15, 2012 0830 UTC
+_________________________________________________
+*VERSION:::aptosid-manual-02.14.2012.09.01
+Sat September 01, 2012 0730 UTC
+*lib/css-js/version-date.css    date alt
+*credits-xx			changed polix to focus
+hd-install-xx			typo fix
+*manual-search-xx		typo fix
+*index.html			changed polix to focus
+*flag-index.htm			changed polix to focus
+*translation updates and validation fixes for /files
+
+-- Trevor Walkley <trevor_walkley@aptenodytes.org> Sat September 01, 2012 0730 UTC
+_________________________________________________
+*VERSION:::aptosid-manual-02.14.2012.06.11
+Mon June 11, 2012 1100 UTC
+*lib/css-js/version-date.css    date alt
+*cheatcodes-xx			deletion of noclear
+*pdf-cover-xx			deleted the file, this file has been archived to svn branches
+*index.html			minor alts to include version number
+*flag-index.htm			minor alts to include version number
+*translation updates and validation fixes for /files
+
+-- Trevor Walkley <trevor_walkley@aptenodytes.org> Mon June 11, 2012 1100 UTC
+_________________________________________________
+*VERSION:::aptosid-manual-02.14.2012.05.28
+Tues May 28, 2012 0900 UTC
+*lib/css-js/version-date.css    date alt
+*samba-xx			codebox alts
+*sys-admin-apt-xx		hid packagesearch topic as its borked
+*translation updates and validation fixes for /files
+
+-- Trevor Walkley <trevor_walkley@aptenodytes.org> Tues May 29, 2012 0900 UTC
+_________________________________________________
+*VERSION:::aptosid-manual-02.14.2012.05.08
+Tues May 8, 2012 1530 UTC
+*lib/css-js/version-date.css    date alt
+*aptosid-manual-coptright.txt	updated for dep-5 compatibility
+*translation updates for /files
+
+-- Trevor Walkley <trevor_walkley@aptenodytes.org> Tues May 8, 2012 1530 UTC
+_________________________________________________
+*VERSION:::aptosid-manual-02.14.2012.04.7
+Sat April 7, 2012 1300 UTC
+*lib/css-js/version-date.css    date alt
+*flag-index.html		updated 
+*index.html			updated
+*aptosid-manual-cpoyright	updated
+*cheatcodes-xx			updated
+*cd-dl-burning-xx		mirror update
+*flag-index.html		updated 
+*index.html			updated
+*translation updates for files
+
+-- Trevor Walkley <trevor_walkley@aptenodytes.org> Sat April 7, 2012 1300 UTC
+_________________________________________________
+*VERSION:::aptosid-manual-02.14.2012.03.14
+Wed 14 March, 2012 1030 UTC
+*lib/css-js/version-date.css    date alt
+*flag-index.html		updated 
+*index.html			updated
+*aptosid-manual-cpoyright	updated
+*manual-serach-xx		updated to use xapain-omega
+*credits-xx			updated
+
+-- Trevor Walkley <trevor_walkley@aptenodytes.org> Wed 14 March, 2012 1030 UTC
+_________________________________________________
+*VERSION:::aptosid-manual-02.14.2012.02.12
+Sun 12 February, 2012 0830 UTC
+*/menu/aptosid-manual-desktop	compliance update
+*menu-xx			updated mainly cosmetic and applied to all lang files
+*/files				head updated for xml:lang="xx" lang="xx"
+*lib/css-js/version-date.css    date alt
+*flag-index.html		updated 
+*index.html			updated
+
+-- Trevor Walkley <trevor_walkley@aptenodytes.org> Sun 12 February, 2012 0830 UTC
+
+_________________________________________________
+*VERSION:::aptosid-manual-02.13.2012.01.18
+Wed, 16 January 2012 0900 UTC
+*/menu/icons			updated
+*/menu/pixmaps			updated
+*flag-index.html		updated 
+*index.html			updated
+*credits-xx			updated
+
+-- Trevor Walkley <trevor_walkley@aptenodytes.org> Wed, 16 January 2012 0900 UTC
+_________________________________________________
+*VERSION:::aptosid-manual-02.13.2012.01.06
+Fri, 06 January 2012 0900 UTC
+*lib/css-js/version-date.css    date alt
+*sys-admin-releasenotes-xx 	updated to reflext 2011-03 release
+*cd-content-xx			updated to reflect 2011-03 release
+*nf-firm-xx			updated to reflect 2011-03 release
+*copyright.txt			updated for 2012
+*welcome-xx			updated for 2012
+*credits-xx			updated
+*flag-index.html		updated 
+*index.html			updated
+*coptright.txt			updated for 2012
+
+-- Trevor Walkley <trevor_walkley@aptenodytes.org> Fri, 06 January 2012 0900 UTC
+___________________________________________________________________________
+CHANGELOG FOR aptosid-OS-MANUAL-2011
+_________________________________________________
+*VERSION:::aptosid-manual-02.13.2011.12.26
+Mon, 26 December 2011 0345 UTC
+*added -uk files (Ukraine) to /files,/lib /menu
+* url fixes to other langs
+-- Trevor Walkley <trevor_walkley@aptenodytes.org> 26 December 2011 0345 UTC
+
+
+_________________________________________________
+*VERSION:::aptosid-manual-02.13.2011.12.22
+Thurs, 21 December 2011 1140 UTC
+*removed -ua files from tar including -ua file in /lib pending rename
+*see  VERSION:::aptosid-manual-02.13.2011.12.21 for changelog for other langs
+-- Trevor Walkley <trevor_walkley@aptenodytes.org> 22 December 2011 1140 UTC
+
+_________________________________________________
+*VERSION:::aptosid-manual-02.13.2011.12.21
+Wed, 21 December 2011 1210 UTC
+*lib/css-js/version-date.css    	date alt
+*lib/css-js				added fw-ua.css
+*lib/css-js				added image-ua files
+*added -ua lang to manual		54 files for Ukraine language
+*credits-xx				updated
+*validation 				fixes to files for all langs
+*tor-privoxy-xx				deleted the link to Tor button
+*sys-admin-apt-xx			added apt-mark (line 533)
+*fixed webtropia links			all langs, all files 
+-- Trevor Walkley <trevor_walkley@aptenodytes.org> 21 December 2011 1210 UTC
+_________________________________________________
+*VERSION:::aptosid-manual-02.13.2011.12.18
+Sun, 18 December 2011 1145 UTC
+*lib/css-js/version-date.css    	date alt
+*lib/css-js				added fw-ua.css
+*added -ua lang to manual		54 files for Ukraine language
+*credits-xx				updated
+*validation 				fixes to files for all langs
+*tor-privoxy-xx				deleted the link to Tor button
+*sys-admin-apt-xx			added apt-mark (line 533)
+*fixed webtropia links			all langs, all files
+VERY IMPORTANT NOTE: The online version of the aptosid manual has a link to the webtropia image, this is not to be present on the repo version as as the logo is not DFSG 
+-- Trevor Walkley <trevor_walkley@aptenodytes.org> 18 December 2011 1145 UTC
+_________________________________________________
+*VERSION:::aptosid-manual-02.13.2011.11.19
+Sun, 19 November 2011 0015 UTC
+*changed compression to xz format
+*lib/css-js/version-date.css    	date alt
+VERY IMPORTANT NOTE: The online version of the aptosid manual has a link to the webtropia image, this is not to be present on the repo version as as the logo is not DFSG 
+-- Trevor Walkley <trevor_walkley@aptenodytes.org> 18 November 2011 0015 UTC
+
+_________________________________________________
+*VERSION:::aptosid-manual-02.13.2011.11.13
+Sun, 13 November 2011 1000 UTC
+*lib/css-js/version-date.css    	date alt
+*lib/images-common/images-hotplug	1 pic changed
+*lib/images-de/ifplug-de		new pics added for ifplug-de
+*inet-ifplug-xx				text additions
+VERY IMPORTANT NOTE: The online version of the aptosid manual has a link to the webtropia image, this is not to be present on the repo version as as the logo is not DFSG 
+-- Trevor Walkley <trevor_walkley@aptenodytes.org> 13 November 2011 1000 UTC
+_________________________________________________
+*VERSION:::aptosid-manual-02.13.2011.11.05
+Sat, 05 November 2011 1050 UTC
+*lib/css-js/version-date.css    	date alt
+*lib/images-common/images-netcard	1 pic changed and 1 pic rescaled
+*inet-ifplug-xx				text additions
+*help-xx				link fixes
+*part-uuid-xx				codebox alt
+*ssh-xx					text additions
+VERY IMPORTANT NOTE: The online version of the aptosid manual has a link to the webtropia image, this is not to be present on the repo version as as the logo is not DFSG 
+-- Trevor Walkley <trevor_walkley@aptenodytes.org> 05 November 2011 1050 UTC
+_________________________________________________
+*VERSION:::aptosid-manual-02.13.2011.10.22
+*Fri, 22 October 2011 1050 UTC
+*Major change 			-el (Greek; Ελληνικά) relegated to languge in translation
+*lib/css-js/version-date.css    date alt
+hd-install-xx			updated to delete -el
+hd-install-opts-xx		updates
+sys-admin-grub2-xx		updates
+welcome-xx			TOC updated
+flag-index.htm 			deleted -el
+index.htm 			deleted -el
+VERY IMPORTANT NOTE: The online version of the aptosid manual has a link to the webtropia image, this is not to be present on the repo version as as the logo is not DFSG 
+-- Trevor Walkley <trevor_walkley@aptenodytes.org> 22 October 2011 1050 UTC
+_________________________________________________
+*VERSION:::aptosid-manual-02.13.2011.09.25
+*Sun, 25 September 2011 1345 UTC
+*lib/css-js/version-date.css    date alt
+*lib/logos/			added donate icon
+*menu-xx			additions to include donate logo to all langs and applied to all files
+*flag-index.htm			minor alts
+*index.htm			minor alts
+*hd-install-vmopts-xx		alterations to text and codeboxes
+*part-lvm-xx			codebox changes
+*VERY IMPORTANT NOTE: The online version of the aptosid manual has a link to the webtropia image, this is not to be present on the repo version as as the logo is not DFSG 
+-- Trevor Walkley <trevor_walkley@aptenodytes.org> Sun, 25 September 2011 1345 UTC
+
+_________________________________________________
+*VERSION:::aptosid-manual-02.12.2011.08.24
+*Wed, 24 August 2011 1345 UTC
+*lib/css-js/version-date.css    date alt
+*menu-xx			path correction, all langs file updated
+*VERY IMPORTANT NOTE: the online version has a link to the webtropia image with time stamp, this is not to be present on the repo version as it violates DFSG
+-- Trevor Walkley <trevor_walkley@aptenodytes.org> Wed, 24 August 2011 1345 UTC
+_________________________________________________
+*VERSION:::aptosid-manual-02.12.2011.08.22
+*Tues, 23 August 2011 1100 UTC
+*lib/css-js/version-date.css    date alt
+*part-gdisk-xx			new file
+*menu-xx			updated to include new file
+*cd-content-xx			ram requirements updated , other minor alts to text
+*cd-dl-burning-xx 		typo fix
+*credit-xx			updated 
+*gpu-xx				added non-free link to for nvidia
+*hd-install-vmopts-xx		vbox codebox update
+inet-setup-xx			text and code box alts
+*part-lvm-xx			codebox rearrangement
+
+*VERY IMPORTANT NOTE: the online version has a link to the webtropia image with time stamp, this is not to be present on the repo version as it violates DFSG
+-- Trevor Walkley <trevor_walkley@aptenodytes.org> Tues, 23 August 2011 1100 UTC
+____________________________________________________
+*VERSION:::aptosid-manual-02.11.2011.07.07
+*Thurs, 07 July 2011 1400 UTC
+*lib/css-js/version-date.css    date alt
+*sys-admin-grub2-xx		updated chroot to include EFI text and codeboxes
+*VERY IMPORTANT NOTE: the online version has a link to the webtropia image with time stamp, this is not to be present on the repo version as it violates DFSG
+-- Trevor Walkley <trevor_walkley@aptenodytes.org> Thurs, 07 July 2011 1400 UTC
+____________________________________________________
+*VERSION:::aptosid-manual-02.11.2011.06.23
+*Thurs, 23 June 2011 1400 UTC
+*lib/css-js/version-date.css    date alt
+*credits-xx			updated
+*part-lvm-xx			changed lowercase w to uppercase W
+*sys-admin-grub2-xx		updated chroot codebox and text alts
+*trans updates to -nl and -nl
+*VERY IMPORTANT NOTE: the online version has a link to the webtropia image with time stamp, this is not to be present on the repo version as it violates DFSG
+-- Trevor Walkley <trevor_walkley@aptenodytes.org> Thurs, 23 June 2011 1400 UTC
+____________________________________________________
+*VERSION:::aptosid-manual-02.11.2011.06.16
+*Thurs, 16 June 2011 1155 UTC
+*lib/css-js/version-date.css    date alt
+*credits-xx			updated
+*cd-contents-xx			updated
+*hd-install-crypt-xx		alts to codeboxes and text
+*nbdboot-xx			alts to codeboxes and text
+*VERY IMPORTANT NOTE: the online version has a link to the webtropia image with time stamp, this is not to be present on the repo version as it violates DFSG
+-- Trevor Walkley <trevor_walkley@aptenodytes.org> Thurs, 16 June 2011 1155 UTC
+____________________________________________________
+*VERSION:::aptosid-manual-02.11.2011.06.02
+*Thurs, 02 June 2011 0910 UTC
+*lib/css-js/version-date.css    date alt
+*sys-admin-kern-upg-xx 		codebox alt for kernel
+*home-xx			hid a para, the url does not exist
+*codebox alts, minor corrections and translations to all lang files
+*index.html			deleted the webtropia timestamp
+*flag-index.html		deleted the webtropia timestamp
+*menu-el 			fixed validation so that fioes load correctly
+*VERY IMPORTANT NOTE: the online version has a link to the webtropia image with time stamp, this is not to be present on the repo version as it violates DFSG
+-- Trevor Walkley <trevor_walkley@aptenodytes.org> Thurs, 1 02 June 2011 0910 UTC
+____________________________________________________
+*VERSION:::aptosid-manual-02.11.2011.05.28
+*Sat, 28 May 2011 1215 UTC
+*lib/css-js/version-date.css    date alt
+*codebox alts, minor corrections and translations to all lang files
+*VERY IMPORTANT NOTE: the online version has a link to the webtropia image, this is not to be present on the repo version as it violates DFSG
+-- Trevor Walkley <trevor_walkley@aptenodytes.org> Mon, 16 May 2011 1215 UTC
+____________________________________________________
+*VERSION:::aptosid-manual-02.11.2011.05.16.1
+*Mon, 16 May 2011 1512 UTC
+*Verion bump due to temp files left in situ
+-- Trevor Walkley <trevor_walkley@aptenodytes.org> Mon, 16 May 2011 1512 UTC
+_______________________________________________
+*Mon, 16 May 2011 0730 UTC
+*VERSION:::aptosid-manual-02.11.2011.05.16
+*lib/css-js/version-date.css    date alt
+*sys-admin-apt-xx		updated downgrade and whyno
+*hd-install-opts-oos-xx		alts to 4 paras
+wm-dm-xx			addition of mepomuk and stringi and deletion of rar stuff
+*codebox alts, minor corrections and translations to all lang files
+*VERY IMPORTANT NOTE: the online version has a link to the webtropia image, this is not to be present on the repo version as it violates DFSG
+-- Trevor Walkley <trevor_walkley@aptenodytes.org> Mon, 16 May 2011 0730 UTC
+_______________________________________________
+*Wed, 27 April 2011 1400 UTC
+*VERSION:::aptosid-manual-02.11.2011.04.27
+*menu-xx			uppgraded to 02.11 due to deleting grub-legacy, wm-kde-xx and wm-xfce-xx and adding wm-dm-xx
+*lib/css-js/version-date.css    date alt
+*hd-install-opts		deleted grub1 references
+*hd-install-vmopts-xx		updates
+*part-size-examp-xx		updated
+*wm-kde-xx			deleted
+*wm-xfce-xx 			deleted 
+*wm-dm-xx			replacement file for wm-kde-xx and wm-xfce-xx
+*welcome-xx			TOC updates
+*part-uuid-xx			subtopic deletions
+*sys-admin-gen-xx		alts
+*codebox alts, minor corrections and translations to all lang files
+*VERY IMPORTANT NOTE: the online version has a link to the webtropia image, this is not to be present on the repo version as it violates DFSG
+-- Trevor Walkley <trevor_walkley@aptenodytes.org> Wed, 27 April 2011 1400 UTC
+_______________________________________________
+*Sun, 10 April 2011 1400 UTC
+*VERSION:::aptosid-manual-02.10.2011.04.10
+*See *VERSION:::aptosid-manual-02.10.2011.03.26
+*lib/css-js/version-date.css    date alt
+*hd-install-vmopts-xx		minor addtioin to file  
+*codebox alts, minor corrections and translations to all lang files
+*VERY IMPORTANT NOTE: the online version has a link to the webtropia image, this is not to be present on the repo version as it violates DFSG
+-- Trevor Walkley <trevor_walkley@aptenodytes.org> Sun, 10 April 2011 1400 UTC UTC
+_______________________________________________
+*Sat, 26 Mar 2011 1300 UTC
+*VERSION:::aptosid-manual-02.10.2011.03.26
+*See *VERSION:::aptosid-manual-02.10.2011.03.26
+*lib/css-js/version-date.css    date alt
+*menu-ja			menu trans to files
+*menu-it			menu trans to files  
+*codebox alts, minor corrections and translations to all lang files
+*VERY IMPORTANT NOTE: the online version has a link to the webtropia image, this is not to be present on the repo version as it violates DFSG
+
+-- Trevor Walkley <trevor_walkley@aptenodytes.org> at, 226 Mar 2011 1300 UTC
+__________________________________________________
+*Wed, 23 Mar 2011 1200 UTC
+*VERSION:::aptosid-manual-02.10.2011.03.23
+*lib/css-js/version-date.css    date alt
+*cheatcode-xx			link correction  with text addition
+*menu-xx			minor alt to menu renaming uuid and creating mount points
+*part-uuid-xx			added addtional text 
+*codebox alts, minor corrections and translations to all lang files
+*VERY IMPORTANT NOTE: the online version has a link to the webtropia image, this is not to be present on the repo version as it violates DFSG
+
+-- Trevor Walkley <trevor_walkley@aptenodytes.org> Wed, 22 Mar 2011 1200 UTC
+__________________________________________________
+*Mon, 07 Mar 2011 0930 UTC
+*VERSION:::aptosid-manual-02.10.2011.03.07
+*lib/css-js/version-date.css    date alt
+*lib/css-js/menu.css     	minor alts
+*lib/css-js/fw-da.css    	translation
+*lib/images-da/			added da images
+*menu-xx			menu-version-02.10.2011.03.01-repo
+*flag-index.html		added -da lang and a text link to webpropia
+*index.html			added -da lang and a text link to webpropia
+*-da lang 			files added
+*hw-dev-mon-xx			cleaned out nv , replaced with noveau
+*samba-xx			added Example 2 
+* codebox alts, minor corrections and translations to all lang files
+*VERY IMPORTANT NOTE: the online version has a link to the webtropia image, this is not to be present on the repo version as it violates DFSG
+
+-- Trevor Walkley <trevor_walkley@aptenodytes.org> Mon, 07 Mar 2011 0930 UTC UTC
+__________________________________________________
+*Wed, 23 Feb 2011 0740 UTC
+*VERSION:::aptosid-manual-02.10.2011.02.22
+*aptosid-manual version date increaded from 02.09 to 02.10
+*lib/css-js/version-date.css     date alt
+*menu-xx 			altered to reflect new file names and ran menu-xx to files
+*hw-dev-he-dri-xx 		deleted and replaced with gpu-xx and nf-firm-xx
+*gpu-xx				added file
+*nf-firm-xx			added file
+*internet-connecting-xx  	renamed to inet-ceni-xx 
+*internet-connecting-wpa-xx 	renamed to inet-wpa-xx 
+*fixed broken links on files due to the name changes.
+*fixed broken link in flag-index.html and index.html
+-- Trevor Walkley <trevor_walkley@aptenodytes.org> Wed, 23 Feb 2011 0740 UTC
+__________________________________________________
+*Fri, 04 Feb 2011 0130 UTC
+*VERSION:::aptosid-manual-02.09.2011.02.04
+*Refer to changelog for aptosid-manual-02.09.2011.02.03
+* codebox alts, minor corrections and translations to all lang files  and lib/css-js
+-- Trevor Walkley <trevor_walkley@aptenodytes.org> Fri, 04 Feb 2011 0130 UTC
+
+__________________________________________________
+*Thurs, 03 Feb 2011 1415 UTC
+*VERSION:::aptosid-manual-02.09.2011.02.03
+*hw-dev-hw-non-xx		Alts additions and deleletions
+* codebox alts, minor corrections and translations to all lang files, flag-index,index file and lib/css-js
+-- Trevor Walkley <trevor_walkley@aptenodytes.org> Thurs, 03 Feb 2011 1415 UTC
+__________________________________________________
+*Sun, 30 Jan 2011 0425 UTC
+*VERSION:::aptosid-manual-02.09.2011.01.30
+*See aptosid-manual-02.09.2011.01.29
+* codebox alts, minor corrections and translations to all lang files
+-- Trevor Walkley <trevor_walkley@aptenodytes.org> Sat, 29 Jan 2011 0425 UTC
+
+__________________________________________________
+*Sat, 29 Jan 2011 1645 UTC
+*VERSION:::aptosid-manual-02.09.2011.01.29
+*cz lang files added
+*lib/flags		cz flag added
+*images-cz 		updated to include -cz
+*flag-index.html	updated to include -cz
+*ndex.html 		updated to include -cz
+*updated copyright.txt file
+*hd-istall-xx		updated to include -cz
+*lib/css-js		version-date updated
+*lib/css-js/fw-cz 	added
+* codebox alts, minor corrections and translations to all lang files
+-- Trevor Walkley <trevor_walkley@aptenodytes.org> Sat, 29 Jan 2011 1645 UTC
+__________________________________________________
+*Tues, 25 Jan 2011 0630 UTC
+*VERSION:::aptosid-manual-02.09.2011.01.25
+*nl lang files reintroduced
+*flag-index.html and index.html updated to include -nl
+*updated copyright.txt file
+*lib/css-js		version-date updated,
+* codebox alts, minor corrections and translations to all lang files
+-- Trevor Walkley <trevor_walkley@aptenodytes.org> Tues, 25 Jan 2011 1110 UTC
+__________________________________________________
+*Wed, 19 Jan 2011 1000 UTC
+*VERSION:::aptosid-manual-02.09.2011.01.19 RELEASED; urgency=low
+*See VERSION:::aptosid-manual-02.09.2011.01.14 changlog
+*lib/css-js		version-date updated,
+* codebox alts, minor corrections and translations to all lang files
+-- Trevor Walkley <trevor_walkley@aptenodytes.org> Wed, 19 Jan 2011 1000 UTC
+__________________________________________________
+*Fri, 14 Jan 2011 0900 UTC
+*VERSION:::aptosid-manual-02.09.2011.01.14 RELEASED; urgency=low
+*Changes made to the following files
+*copyright file		updated
+*menu dir		added polish to aptosid.manual.desktop
+*lib/css-js		version-date updated, some fw-* files updated
+* codebox alts, minor corrections and translations to all lang files
+-- Trevor Walkley <trevor_walkley@aptenodytes.org> Fri, 14 Jan 2011 0900 UTC
+__________________________________________________
+*Mon, 03 Jan 2011 0900 UTC
+*VERSION:::aptosid-manual-02.09.2011.01.03 RELEASED; urgency=low
+*Changes made to the following files
+*lib/css-js		version-date updated
+*lib/images-pl/installer	added pics
+*added -pl language
+* codebox alts, minor corrections and translations to all lang files
+-- Trevor Walkley <trevor_walkley@aptenodytes.org> Mon, 03 Jan 2011 0900 UTC
+
+__________________________________________________
+*Sun, 26 Dec 2010 1530 UTC
+*VERSION:::aptosid-manual-02.09.2010.12.26 RELEASED; urgency=low
+*Changes made to the following files
+*lib/css-js		version-date updated
+*hw-dev-mon-xx		deleted radeonhd
+* codebox alts, minor corrections and translations to all lang files
+-- Trevor Walkley <trevor_walkley@aptenodytes.org> Sun, 26 Dec 2010 1530 UTC
+
+__________________________________________________
+*Fri, 24 Dec 2010 0215 UTC
+*VERSION:::aptosid-manual-02.09.2010.12.24 RELEASED; urgency=low
+*Changes made to the following files
+*lib/css-js		version-date updated
+*lib/logo		added aptosid-book.png
+* codebox alts, minor corrections and translations to all lang files
+-- Trevor Walkley <trevor_walkley@aptenodytes.org>  Fri, 24 Dec 2010 0215 UTC
+__________________________________________________
+*Sun, 19 Dec 2010 1500 UTC
+*VERSION:::aptosid-manual-02.09.2010.12.19 RELEASED; urgency=low
+*Changes made to the following files
+*lib/css-js		version-date updated
+*-nl lang		deleted , lang has fallen below threshold
+*hd-install-xx		commented -nl lang
+* codebox alts, minor corrections and translations to all lang files
+-- Trevor Walkley <trevor_walkley@aptenodytes.org>  Sun,19 Dec 2010 1500 UTC
+__________________________________________________
+*Wed, 15 Dec 2010 0630 UTC
+*VERSION:::aptosid-manual-02.09.2010.12.15 RELEASED; urgency=low
+*Changes made to the following files
+*lib/css-js		version-date updated
+* codebox alts, minor corrections and translations to all lang files
+-- Trevor Walkley <trevor_walkley@aptenodytes.org>  Wed, 15 Dec 2010 0630 UTC
+__________________________________________________
+*Sun, 12 Dec 2010 2359 UTC
+*VERSION:::aptosid-manual-02.09.2010.12.12 RELEASED; urgency=low
+*Changes made to the following files
+*lib/css-js		version-date updated
+* codebox alts, minor corrections and translations to all lang files
+-- Trevor Walkley <trevor_walkley@aptenodytes.org>  Sun, 12 Dec 2010 2359 UTC
+__________________________________________________
+*Sat, 11 Dec 2010 1540 UTC
+*VERSION:::aptosid-manual-02.09.2010.12.11 RELEASED; urgency=low
+*Changes made to the following files
+*lib/css-js		version-date updated
+* codebox alts, minor corrections and translations to all lang files
+-- Trevor Walkley <trevor_walkley@aptenodytes.org>  Sat, 11 Dec 2010 1540 UTC
+_____________________________________________________
+*Thurs, 09 Dec 2010 0001 UTC
+*VERSION:::aptosid-manual-02.09.2010.12.09 RELEASED; urgency=low
+*deleted updateMenu.sh that inadvertently was added
+*Changes made to the following files
+*lib/css-js		version-date updated
+* codebox alts, minor corrections and translations to all lang files
+-- Trevor Walkley <trevor_walkley@aptenodytes.org>  Thurs, 09 Dec 2010 0001 UTC
+____________________________________________
+*Wed, 08 Dec 2010 1600 UTC
+*VERSION:::aptosid-manual-02.09.2010.12.08 RELEASED; urgency=low
+*Changes made to the following files
+*lib/css-js		version-date updated
+* codebox alts, minor corrections and translations to all lang files
+-- Trevor Walkley <trevor_walkley@aptenodytes.org>  Wed, 08 Dec 2010 1600 UTC
+____________________________________________
+*Tues, 07 Dec 2010 0732 UTC
+
+*VERSION:::aptosid-manual-02.09.2010.12.07 RELEASED; urgency=low
+*Changes made to the following files
+*lib/css-js		version-date updated
+* codebox alts, minor corrections and translations to all lang files
+-- Trevor Walkley <trevor_walkley@aptenodytes.org>  07 Dec 2010 0732 UTC
+_____________________________________________
+*Sun, 05 Dec 2010 1100 UTC
+
+*VERSION:::aptosid-manual-02.09.2010.12.05 RELEASED; urgency=low
+*Changes made to the following files
+*wel-quickstart-xx 	new text added
+*lib/css-js		version-date updated
+* codebox alts, minor corrections and translations to all lang files
+-- Trevor Walkley <trevor_walkley@aptenodytes.org>  Sun, 05 Dec 2010 1100 UTC
+_____________________________________________
+*Sat, 04 Dec 2010 1035 UTC
+
+*VERSION:::aptosid-manual-02.09.2010.12.04 RELEASED; urgency=low
+*Changes made to the following files
+*lib/css-js		version-date updated
+* codebox alts, minor corrections and translations to all lang files
+-- Trevor Walkley <trevor_walkley@aptenodytes.org>  Sat, 04 Dec 2010 1035 UTC
+_____________________________________________
+*Fri, 03 Dec 2010 1430 UTC
+
+*VERSION:::aptosid-manual-02.09.2010.12.03 RELEASED; urgency=low
+*Changes made to the following files
+*lib/css-js		version-date updated
+* codebox alts, minor corrections and translations to lang files
+-- Trevor Walkley <trevor_walkley@aptenodytes.org>  Fri, 03 Dec 2010 1430 UTC
+_____________________________________________
+*Thurs, 02 Dec 2010 1100 UTC
+
+*VERSION:::aptosid-manual-02.09.2010.12.02 RELEASED; urgency=low
+*Changes made to the following files
+*lib/css-js		version-date updated
+* codebox alts, minor corrections and translations to lang files
+-- Trevor Walkley <trevor_walkley@aptenodytes.org>  Thurs, 02 Dec 2010 1100 UTC
+_____________________________________________
+*Mon, 22 Nov 2010 0700 UTC
+
+*VERSION:::aptosid-manual-02.09.2010.11.22 RELEASED; urgency=low
+*Changes made to the following files
+*lib/css-js		version-date updated
+* minor corrections and translations to lang files
+-- Trevor Walkley <trevor_walkley@aptenodytes.org>  Mon, 22 Nov 2010 0700 UTC
+_____________________________________________
+*Thurs, 11 Nov 2010 1200 UTC
+
+*VERSION:::aptosid-manual-02.09.2010.11.11 RELEASED; urgency=low
+*Changes made to the following files
+*lib/css-js		version-date updated
+*menu-xx		updated to include 2 new files and applied to langs
+*hd-install-crpt-xx	new file
+*part-lvm-xx		new file
+* minor corrections and translations to lang files
+-- Trevor Walkley <trevor_walkley@aptenodytes.org>  Thurs, 11 Nov 2010 1200 UTC
+_____________________________________________
+*Sat, 09 Oct 2010 0100 UTC
+
+*VERSION:::aptosid-manual-02.08.2010.10.01 RELEASED; urgency=low
+*Changes made to the following files
+*lib/css-js		version-date updated
+*sys-admin-grub2-xx	added para line 536
+* minor corrections and translations to lang files
+-- Trevor Walkley <trevor_walkley@aptenodytes.org>  Sat, 09 Oct 2010 0100 UTC
+_____________________________________________
+*Fri, 01 Oct 2010 1520 UTC
+
+*VERSION:::aptosid-manual-02.08.2010.10.01 RELEASED; urgency=low
+*hr (Croatian)lang directory deleted after consultation with hr lang maintainer
+*Delete the hr (Croatian) language directory
+*Changes made to the following files
+*lib/css-js		version-date updated
+*lib/css-js		content.css updated
+*flag-indsex.html
+*index.html
+*welcome-xx.htm
+*cd-dl-burning-xx.htm
+*hd-install-opts-xx.htm
+*hd-ins-opts-oos-xx.htm
+*hd-install-vmopts-en.htm
+*nbdboot-xx.htm
+*inet-setup-xx.htm
+*wm-kde-xx.htm
+*part-uuid-xx.htm
+* minor corrections and translations to files/langs
+-- Trevor Walkley <trevor_walkley@aptenodytes.org>  Fri, 01 Oct 2010 1520 UTC
+_____________________________________________
+Mon 2010-09-20 0800 UTC
+
+*VERSION:::aptosid-manual-02.08.2010.09.20 UNRELEASED; urgency=low
+* NOT RELEASED YET
+*Copyright updated
+*lib/css-js		version-date updated
+*Changes made to the following files; 
+*menu-xx
+*hw-dev-hw-dri-xx
+*cd-dl-burning-xx
+*help-xx
+*part-gparted-xx
+*internet-connecting-wpa-xx
+*welcome-xx
+*manual-search-xx
+*sys-admin-apt-xx
+*sys-admin-kern-upg-xx
+*ssh-xx
+*hd-ins-opts-oos-xx
+*credits-xx
+*sys-admin-release-xx
+*cover-pdf-xx
+*sys-admin-gen-xx
+*home-xx
+*All lang files have updated menu-xx 
+-- Trevor Walkley <trevor_walkley@aptenodytes.org>  Mon, 20 Sept 2010 0800
+___________________________________________
+Sun 2010-09-12 1136 UTC
+
+*VERSION:::aptosid-manual-02.08.2010.09.12.2 UNRELEASED; urgency=low
+* NOT RELEASED YET
+*lib/css-js		version-date updated
+*menu/			desktop files added
+* minor corrections and translations to some files/langs 
+-- Trevor Walkley <trevor_walkley@aptenodytes.org>  Sun, 12 Sept 2010 1136
+
+___________________________________________
+Sun 2010-09-12 0815 UTC
+
+*VERSION:::aptosid-manual-02.08.2010.09.12.1 UNRELEASED; urgency=low
+* NOT RELEASED YET
+*lib/css-js		version-date updated
+/menu/icons		replaced missing .svg files
+* minor corrections and translations to some files/langs 
+-- Trevor Walkley <trevor_walkley@aptenodytes.org>  Sun, 12 Sept 2010 08115
+___________________________________________
+Fri 2010-09-10 1000 UTC
+
+*VERSION:::aptosid-manual-02.08.2010.09.10 UNRELEASED; urgency=low
+* NOT RELEASED YET
+*lib/css-js		version-date updated
+*logos			updated
+/menu			icon replacement by gimp. cleaned out .svg files
+* minor corrections to some files/langs 
+-- Trevor Walkley <trevor_walkley@aptenodytes.org>  Fri, 10 Sept 2010 1000
+
+___________________________________________
+Tue 2010-09-07 0500 UTC
+
+*VERSION:::aptosid-manual-02.08.2010.09.07 UNRELEASED; urgency=low
+* NOT RELEASED YET
+*lib/css-js		version-date updated
+* minor corrections to some files/langs 
+-- Trevor Walkley <trevor_walkley@aptenodytes.org>  Tue, 07 Sept 2010 0500
+
+___________________________________________
+Sun 2010-09-05 1300 UTC
+
+*VERSION:::aptosid-manual-02.08.2010.09.05 UNRELEASED; urgency=low
+* NOT RELEASED YET
+*lib/css-js		version-date updated
+* minor corrections to some files all langs 
+-- Trevor Walkley <trevor_walkley@aptenodytes.org>  Sun, 05 Sept 2010 1300
+___________________________________________
+Sat 2010-09-04 1300 UTC
+
+*VERSION:::aptosid-manual-02.08.2010.09.04 UNRELEASED; urgency=low
+* NOT RELEASED YET
+*lib/images-xx		added in new installer pics for -el, -fr, -hr, -ja, -nl, -ru
+*lib/css-js		version-date updated ,menu2.js adjusted copyright
+* minor corrections to some files 
+-- Trevor Walkley <trevor_walkley@aptenodytes.org>  Sat, 04 Sept 2010 1300
+
+___________________________________________
+Fri 2010-09-03 1400 UTC
+
+*VERSION:::aptosid-manual-02.08.2010.09.03 UNRELEASED; urgency=low
+* NOT RELEASED YET
+*lib/images-xx		added in new installer pics for -de, -es, -it, -pt-br, -ro
+*lib/css-js		version-date updated
+*-ja	menu trans update applied
+* minor corrections to some files 
+-- Trevor Walkley <trevor_walkley@aptenodytes.org>  Fri, 03 Sept 2010 1400
+
+___________________________________________
+Thurs 2010-09-02 1430 UTC
+
+*VERSION:::aptosid-manual-02.08.2010.09.02 UNRELEASED; urgency=low
+* NOT RELEASED YET
+*lib/images-common	replaced Dodgy Brothers grub2-os-list.jpg and grub2-e-1.JPG pics
+*lib/images-xx		added in new installer pics all langs	
+*lib/css-js		version-date updated
+* minor corrections to some files 
+-- Trevor Walkley <trevor_walkley@aptenodytes.org>  Thurs, 02 Sept 2010 1430
+
+___________________________________________
+Wed 2010-09-01 1400 UTC
+
+*VERSION:::aptosid-manual-02.08.2010.09.01 UNRELEASED; urgency=low
+* NOT RELEASED YET
+*lib/images-common	temporay pic replacement for grub2-os-list.jpg and grub2-e-1.JPG	
+*lib/css-js		version-date updated, change of email address on files
+* minor corrections to some files most langs
+-- Trevor Walkley <trevor_walkley@aptenodytes.org>  Wed, 01 Sept 2010 1400
+___________________________________________
+Tues 2010-08-31 1300 UTC
+
+*VERSION:::aptosid-manual-02.08.2010.08.31 UNRELEASED; urgency=low
+* NOT RELEASED YET
+*lib/logo		search icon replaced
+*lib/css-js		version-date updated
+*index			updated
+*flag-index		updated
+* minor corrections to some files most langs
+-- Trevor Walkley <trevor_walkley@aptenodytes.org>  Tues, 31 Aug 2010 1300
+___________________________________________
+Mon 2010-08-30 0400 UTC
+
+*VERSION:::aptosid-manual-02.08.2010.08.30 UNRELEASED; urgency=low
+* NOT RELEASED YET
+*lib		logo dir .png updates, css-js dir menu.css and version-date updated, image dirs added for -es and -it
+*lib 		cleanup of leftover files
+* minor corrections to some files
+-- Trevor Walkley <trevor_walkley@aptenodytes.org>  Mon, 30 Aug 2010 0400
+
+___________________________________________
+Sun 2010-08-29 2300 UTC
+
+*VERSION:::aptosid-manual-02.07.2010.08.29 UNRELEASED; urgency=low
+* NOT RELEASED YET
+*major rename from sidux to aptosid
+-- Trevor Walkley <trevor_walkley@aptenodytes.org>  Sat, 14 Aug 2010 0700
