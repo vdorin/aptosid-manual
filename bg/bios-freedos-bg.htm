@@ -1,0 +1,550 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>sidux Manuals - Обновяване на BIOS-а през FreeDOS</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- last translation by bluewater 02/11/2008 1525 UTC -->
+<div id="menu"> <!-- menu starts here bg lang maintained by manul-->
+<!--sidux-manual Operating System Manual menu-version-02.08.2010.07.09 -->
+<!-- menu last updated by bluewater 2010.07.09 1145 hrs UTC -->
+	<div id="menu-header">
+<a href="http://sidux.com/"><img src="../lib/logos/manual-sidux-logo.png" title="Главна страница на sidux.com, форуми и вики" alt="sidux.com лого" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-bg.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="Търсене в ръководството" alt="Търсене" />Търсене</a> </li>
+		<li><a href="http://manual.sidux.com/meta-manual">Community Software Selections</a></li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/sidux-lang-100x64.png" title="Избор на друг език - choose another language" alt="превключване на езика" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-bg.htm">sidux OS Manual</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-bg.htm#welcome-gen">sidux OS Manual &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-bg.htm#cred-team">Credits</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-bg.htm#how-to">How to use this manual &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-bg.htm#how-to">How to use this manual</a></li>
+					  <li><a href="welcome-bg.htm#table-contents">Table of Contents</a></li>
+					</ul>
+					</li>
+		<li><a href="help-bg.htm#help-gen">Getting Help &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-bg.htm#help-gen">Where and how to get help</a></li>
+					  <li><a href="help-bg.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-bg.htm#welcome-quick">sidux Quick Start Guide</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-bg.htm">ISO Content, Releases, Download Mirrors and Burning</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-bg.htm#cd-content">ISO Content and system requirements &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-bg.htm#rolling">Release Notes</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-bg.htm#download-sidux">sidux Mirrors, Downloading and Burning &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-bg.htm#md5">md5 Checksum</a></li>
+					  <li><a href="cd-dl-burning-bg.htm#burn-nero">Burning in Windows</a></li>
+					  <li><a href="cd-dl-burning-bg.htm#burn-linux">Burning in Linux</a></li>
+					  <li><a href="cd-no-gui-burn-bg.htm#burning-no-gui">burniso script</a></li>
+					  <li><a href="cd-no-gui-burn-bg.htm#burn-no-gui-gen">Burning without a GUI</a></li><li><a href="cd-dl-burning-bg.htm#download-sidux">sidux Download Mirrors</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-bg.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-bg.htm#rootpw">Root-password on the sidux-Live ISO</a></li>
+				<li><a href="live-mode-bg.htm#live-cd-installsoft">Installing software whilst on a Live-ISO</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-bg.htm">The Terminal / Konsole</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-bg.htm#term-kon"> Terminal / Konsole &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-bg.htm#term-kon"> Terminal / Konsole</a></li>
+					  <li><a href="term-konsole-bg.htm#cli-help">Command Line Help</a></li>
+					  <li><a href="help-bg.htm#init3-tools">Tools to know in text mode (tty) - init 3</a></li>
+					  <li><a href="term-konsole-bg.htm#term-cmds">Linux Terminal Commands List</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-bg.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-bg.htm">CheatCodes</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-bg.htm#cheatcodes">sidux specific Live-ISO Cheatcodes</a></li>
+				<li><a href="cheatcodes-bg.htm#cheatcodes-linux">Linux generic Cheatcodes</a></li>
+				<li><a href="cheatcodes-vga-bg.htm#vga">VGA Codes</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-bg.htm">Partitioning Your Hard Drive</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-bg.htm#partition">Partitioning with a GUI &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-bg.htm#partition">Partitioning your HD using GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-bg.htm#ntfs">NTFS partition Resizing using GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-bg.htm#partition">Partitioning with CLI &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-bg.htm#partition">Partitioning  your HD using cfdisk</a></li>
+					    <li><a href="part-cfdisk-bg.htm#formating">Formatting after partitioning with cfdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-bg.htm#part-example">Partitioning Basics &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-bg.htm#part-example">Partition Size Examples</a></li>
+					  <li><a href="part-uuid-bg.htm#uuid">UUID, Partition Labelling and fstab</a></li>
+					  <li><a href="part-cfdisk-bg.htm#disknames">Disk Naming in brief</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-bg.htm">Installation options - HD, USB, VM</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-bg.htm#Inst-prep">Install Preparation &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-bg.htm#Inst-prep">Install Preparation </a></li>
+					  <li><a href="hd-install-bg.htm#Installation">Installing to your HD</a></li>
+					  <li><a href="hd-install-bg.htm#first-hd-boot">First Boot Up</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-bg.htm#fromiso">Booting fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-bg.htm#fromiso">Booting fromiso - Overview</a></li>
+					  <li><a href="hd-install-opts-bg.htm#fromiso-grub-leg">Booting 'fromiso' with grub-legacy</a></li>
+					  <li><a href="hd-install-opts-bg.htm#grub2-fromiso">Booting 'fromiso' with Grub 2</a></li>
+					  <li><a href="hd-install-opts-bg.htm#fromiso-persist">fromiso and persist</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-bg.htm#usb-hd">Installing to USB drives &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-bg.htm#usb-hd">Installing on a USB-HD - sidux specific - sidux-on-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-bg.htm#raw-usb">Writing sidux to a USB/SSD stick with any Linux, MS Windows or Mac OS X system</a></li>
+					</ul>
+					</li>
+		  <li><a href="nbdboot-bg.htm#nbd1">Booting sidux over a network</a></li>
+		  <li><a href="hd-install-vmopts-bg.htm#vm">Virtual Machine installation options</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="hw-dev-hw-dri-bg.htm">Graphic Cards, Monitors, Xorg &amp; Miscellaneous Drivers</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-hw-dri-bg.htm#hd-ntfs3g">Writing on NTFS-partitions with ntfs-3g</a></li>
+		<li><a href="hw-dev-mon-bg.htm#mon-res">Screen Resolution and Monitors  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-bg.htm#mon-res">Screen Resolution and Monitors</a></li>
+					  <li><a href="hw-dev-mon-bg.htm#xrandr">Dual Monitors and xrandr</a></li>
+					  <li><a href="hw-dev-mon-bg.htm#mon-binary">Dual Monitors (using binaries)</a></li>
+					</ul>
+					</li>
+		<li><a href="hw-dev-hw-dri-bg.htm#non-free-3d">Graphic card proprietry drivers &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="hw-dev-hw-dri-bg.htm#non-free-3d">Binary, non-free drivers for Nvidia &amp; xorg.conf</a></li>
+					  <li><a href="hw-dev-hw-dri-bg.htm#non-free-3d-2">non-free drivers for ATI, Radeon and others</a></li>
+					</ul>
+					</li>
+			  <li><a href="hw-dev-hw-dri-bg.htm#non-free-firmware">Hardware needing non-free firmware drivers</a></li>
+			  <li><a href="hw-dev-hw-dri-bg.htm#non-free">Adding non-free to Sources List</a></li>
+			  <li><a href="hw-dev-hw-dri-bg.htm#native-nv-ati">FOSS xorg drivers for nVidia, ATI, Radeon, Intel &amp; xorg.conf</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-kde-bg.htm">Window Managers</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-kde-bg.htm">Window Managers &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-kde-bg.htm">Window Managers</a></li>
+					    <li><a href="wm-xfce-bg.htm#xfce-notes">Useful Xfce extras</a></li>
+					    <li><a href="wm-kde-bg.htm#install-add">Useful extra KDE Apps</a></li>
+					    <li><a href="wm-kde-bg.htm#desk-freeze">Desktop Freezes</a></li>
+					    <li><a href="wm-kde-bg.htm#kde-login">Cant login in KDE</a></li>
+					    <li><a href="wm-kde-bg.htm#ch-th">Changing Themes</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-kde-bg.htm#dm">Display Managers - dm</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="internet-connecting-bg.htm">Internet connecting, WiFi, LAN and Networks</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-bg.htm">sidux LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-bg.htm#serv-apache">sidux LAMP Stack</a></li>
+					    <li><a href="lamp-apache-bg.htm#serv-ftp">FTP Clients</a></li>
+					    <li><a href="lamp-apache-bg.htm#serv-sec">Security Protocols</a></li>
+					    <li><a href="lamp-apache-bg.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-bg.htm#serv-mysql">MySQL Setup</a></li>
+					    <li><a href="lamp-ppp-bg.htm#serv-php">PHP in Apache</a></li>
+					    <li><a href="ntp-server-bg.htm#ntp-server">Timeserver Setup</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-bg.htm#tor">Firewalls and Privacy &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-bg.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-bg.htm#privoxy">Privoxy</a></li>
+					    <li><a href="internet-connecting-bg.htm#firewalls">Firewalls</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-bg.htm#ssh-x">SSH and Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-bg.htm#setup">Samba-Server Setup</a></li>
+						  <li><a href="samba-bg.htm#configure">Configuring SAMBA (Windows)</a></li>
+						  <li><a href="ssh-bg.htm#ssh-fs">SSH Remote Mounting</a></li>
+						  <li><a href="ssh-bg.htm#ssh-x">X Window Apps via SSH</a></li>
+						  <li><a href="ssh-bg.htm#ssh-f">GUI SSH with Konqueror</a></li>
+						  <li><a href="ssh-bg.htm#ssh-w">SSH X-Forwarding from Windows-PC</a></li>
+						  <li><a href="ssh-bg.htm#ssh">SSH and Security</a></li>
+					</ul>
+					</li>
+		<li><a href="internet-connecting-bg.htm#netcardconfig">WIFI connections &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="internet-connecting-bg.htm#netcardconfig">Getting Online - Ceni</a></li>
+						    <li><a href="inet-wpagui-bg.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-bg.htm#net-set1">WiFi - Setting up for WiFi Roaming</a></li>
+						    <li><a href="internet-connecting-wpa-bg.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-bg.htm#hotswitch">Network switching between WiFi and Cable</a></li>
+					</ul>
+					</li>
+		<li><a href="internet-connecting-bg.htm#netcardconfig">Wired Connections &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="internet-connecting-bg.htm#dial-mod">56k Modems</a></li>
+						    <li><a href="internet-connecting-bg.htm#netcardconfig">Getting Online - Ceni</a></li>
+					</ul>
+					</li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-bg.htm">Package Management and dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-bg.htm#apt-cook">APT Cookbook and Sources list &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-bg.htm#apt-cook">APT-Guide Cookbook and Sources list</a></li>
+					    <li><a href="sys-admin-apt-bg.htm#apt-install">Installing a new package</a></li>
+					    <li><a href="sys-admin-apt-bg.htm#apt-delete">Deleting a package</a></li>
+					    <li><a href="sys-admin-apt-bg.htm#apt-downgrade">Package Hold and downgrading</a></li>
+					    <li><a href="sys-admin-apt-bg.htm#apt-cache">Package searching with apt-cache</a></li>
+					    <li><a href="sys-admin-apt-bg.htm#gui-pacsea">GUI Package searching</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-bg.htm#kern-upgrade">Upgrading the kernel &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-bg.htm#kern-remove">Removing Kernels</a></li>
+					    <li><a href="sys-admin-kern-upg-bg.htm#kern-upgrade">Upgrading the kernel</a></li>
+					    <li><a href="sys-admin-kern-upg-bg.htm#dmakms">Installing kernel modules dynamically with dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-bg.htm#apt-upgrade">Upgrade an Installed System -  dist-upgrade - Overview &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-bg.htm#live-cd-upgrade">Upgrading by Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-bg.htm#approx">dist-upgrade of multiple PCs on a LAN</a></li>
+					    <li><a href="sys-admin-apt-bg.htm#apt-upgrade">Upgrade an Installed System -  dist-upgrade - Overview</a></li>
+					    <li><a href="sys-admin-apt-bg.htm#du-st">Upgrade an Installed System -  dist-upgrade - The Steps</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-bg.htm">System Administration</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-bg.htm#bois-prep">Upgrading the BIOS with FreeDOS</a></li>
+		<li><a href="vir-rkits-bg.htm#virus-rkits">Virus and Rootkit Scanners</a></li>
+		<li><a href="hd-install-bg.htm#adduser">Adding Users and Passwords &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-bg.htm#adduser">Adding a new user</a></li>
+					    <li><a href="sys-admin-gen-bg.htm#pw-lost">Lost root passwords, new passwords</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-bg.htm#start-services">Services and init runlevels &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-bg.htm#start-services">Services enable/disable</a></li>
+					    <li><a href="sys-admin-gen-bg.htm#init">sidux runlevels - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-bg.htm#rsync">Backing up the system &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-bg.htm#rdiff">Back-Up with rdiff</a></li>
+					    <li><a href="sys-admin-rsync-bg.htm#rsync">Back-Up with rsync</a></li>
+					    <li><a href="home-bg.htm#home-bu">Moving /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-bg.htm#fonts">CUPS, Fonts and Sound &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-bg.htm#fonts">Fonts</a></li>
+					     <li><a href="sys-admin-gen-bg.htm#cups">CUPS - Printing System</a></li>
+					     <li><a href="sys-admin-gen-bg.htm#sound">Sound Mixers</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub-bootman2-bg.htm#mbr-grub-boot">Grub1 - grub-legacy &#8658;</a>
+					  <ul class="sub2-menu" id="sm13e">
+					    <li><a href="sys-admin-grub-bootman2-bg.htm#boot-grub-floppy">Creating a Boot-Floppy</a></li>
+					    <li><a href="sys-admin-grub-bootman2-bg.htm#mbr-grub-boot">Grub1 - MBR Overwritten bootsector</a></li>
+					    <li><a href="sys-admin-grub-bootman2-bg.htm#dual-boot">Grub1 Dual and Multibooting</a></li>
+					    <li><a href="sys-admin-grub-bootman2-bg.htm#what-is-grub">Grub the boot manager</a></li>
+					    <li><a href="sys-admin-grub-bootman2-bg.htm#remove-grub">Removing grub from MBR</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-bg.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub-bootman2-bg.htm#boot-grub-floppy">Creating a Boot-Floppy</a></li>
+					    <li><a href="sys-admin-grub2-bg.htm#chroot">Grub2 - Recovering Grub with chroot</a></li>
+					    <li><a href="sys-admin-grub2-bg.htm#mbr-over-grub2">Grub2 - MBR Overwritten</a></li>
+					    <li><a href="sys-admin-grub2-bg.htm#multi-os">Grub2 - Dual and Multibooting</a></li>
+					    <li><a href="sys-admin-grub2-bg.htm#grub1-grub2">Grub2 -Upgrading from Grub1</a></li>
+					    <li><a href="sys-admin-grub2-bg.htm#grub2">Grub2 - Overview</a></li>
+					</ul>
+					</li>
+			</ul>
+		</li>
+	</ul>
+<!-- menu ends here --> </div>
+<div id="main-page">
+	<div class="divider" id="bois-prep">
+
+		<h2 id="top-header">Обновяване на BIOS-а през FreeDOS</h2>
+
+							<p>Понякога може да се налага да обновите BIOS-а на компютъра - когато производителя пусне нова, подобрена версия на BIOS софтуера за вашия модел дънна платка. Обикновено инсталационната програма за обновяване трябва да бъде стартирана под MS-DOS.</p>
+
+							<p>Но има начин да обновите BIOS-а в Линукс, през USB. Това ще работи с USB устройства за данни (флашки) и micro/mini/SD карти (с подходящ адаптер за включването им).</p>
+
+							<p>Съществуващия BIOS трябва да може да стартира (boot) компютъра от USB (вместо от хард-диска или сиди-дивиди устройството) - и да е съвместим с USB хард-дискове. Някои BIOS-и приемат "USB флопи", "USB CD-ROM" или USB ZIP drive - макар че тези варианти може и да е възможно да бъдат използвани - при тях обновяването ще бъде по-трудно (макар че може и да нямате друг избор, например за някои netbook модели).</p>
+
+
+				<h3>Трябват ви три неща:</h3>
+						<ol>
+							<li>USB устройство за данни (флашка), за предпочитане &lt;2 GB (FAT16 не разрешава повече от 2 GB); инсталацията на FreeDOS сама по себе си (fdbasecd.iso) използва само 5.8 MB. <span class="highlight-3">FAT16 се препоръчва тъй като не всеки BIOS разпознава FAT32 като стартируема (bootable) файлова система</span>.</li>
+
+							<li>Инсталационен образ на FreeDOS <a href="http://www.freedos.org/freedos/files/"> fdbasecd.iso (8MB)</a>.</li>
+
+							<li>qemu (инсталирайте с "apt-get install qemu"), qemu е нужно за инсталатора, емулираният qemu BIOS прави така че FreeDOS да "вижда" USB флашката като обикновен хард-диск, така че да можете да инсталирате по обичайния начин (и така няма нужда да записвате специално FreeDOS CD).</li>
+						</ol>
+
+				<h5><span class="highlight-2">Това е много важно: в нито един момент USB флашката не бива да бъде монтирана. Много внимавайте да изберете правилното устройство (в примера по-долу, /dev/sdb е флашката), иначе всички данни на грешния диск ще бъдат загубени безвъзвратно!</span></h5>
+
+	<div class="spacer02"></div>
+							<p>Сложете USB флашката, <span class="highlight-2">запомнете, не я монтирайте</span>. Проверете dmesg (последните съобщения в лога, ако току-що сте я пъхнали), кое устройство е присвоено на USB флашката ви. По-нататък приемаме, че това е <span class="highlight-3">/dev/sdb</span>  .</p>
+
+							<p>Изтрийте USB флашката,<span class="highlight-3">всички данни ще бъдат загубени</span>, може да я изтриете и цялата, вместо само първите 16 MB. </p>
+
+
+<pre>
+$ sux
+Password:
+dd if=/dev/zero of=/dev/sdb bs=1M count=16
+16+0 records in
+16+0 records out
+16777216 bytes (17 MB) copied, 2.35751 s, 7.1 MB/s
+</pre> 
+					<h3>Разделяне на USB-то</h3>
+							<p>Правилното разделяне и форматиране на USB флашката, е може би най-трудната част.</p>
+
+							<p>Препоръчва се за раздела да използвате файлова система FAT16, за флашките &lt;2 GB (така ще осигурите по-добра съвместимост като цяло).</p>
+
+							<p>След това, стартирайте fdisk за да извършите разделянето (в дадения пример се започва от неформатирана флашка):</p>
+<pre>
+# fdisk /dev/sdb
+fdisk /dev/sdb
+Device contains neither a valid DOS partition table, nor Sun, SGI or OSF disklabel
+Building a new DOS disklabel with disk identifier 0xa8993739.
+Changes will remain in memory only, until you decide to write them.
+After that, of course, the previous content won't be recoverable.
+
+Warning: invalid flag 0x0000 of partition table 4 will be corrected by w(rite)
+</pre>
+							<p>Сега създайте раздел:</p>
+<pre>
+Command (m for help): <span class="highlight-3"><b>n</b></span>
+Command action
+   e   extended
+   p   primary partition (1-4)
+<span class="highlight-3"><b>p</b></span>
+Partition number (1-4): <span class="highlight-3"><b>1</b></span>
+First cylinder (1-1018, default 1):
+Using default value 1
+Last cylinder or +size or +sizeM or +sizeK (1-1018, default 1018):
+Using default value 1018
+</pre>
+							<p>Изведете таблицата с разделите, за да се уверите, че раздела ще бъде създаден правилно:</p>
+<pre>
+Command (m for help): <span class="highlight-3"><b>p</b></span>
+
+Disk /dev/sdb: 2003 MB, 2003828736 bytes
+62 heads, 62 sectors/track, 1018 cylinders
+Units = cylinders of 3844 * 512 = 1968128 bytes
+Disk identifier: 0xa8993739
+
+   Device Boot      Start         End      Blocks   Id  System
+/dev/sdb1               1        1018     1956595+  83  Linux
+</pre>
+							<p>Задайте правилния код за тип на раздела, '6' за FAT16:</p>
+<pre>
+Command (m for help): <span class="highlight-3"><b>t</b></span>
+Selected partition 1
+Hex code (type L to list codes): <span class="highlight-3"><b>l</b></span>
+
+ 0  Empty           1e  Hidden W95 FAT1 80  Old Minix       be  Solaris boot
+ 1  FAT12           24  NEC DOS         81  Minix / old Lin bf  Solaris
+ 2  XENIX root      39  Plan 9          82  Linux swap / So c1  DRDOS/sec (FAT-
+ 3  XENIX usr       3c  PartitionMagic  83  Linux           c4  DRDOS/sec (FAT-
+ 4  FAT16 &lt;32M      40  Venix 80286     84  OS/2 hidden C:  c6  DRDOS/sec (FAT-
+ 5  Extended        41  PPC PReP Boot   85  Linux extended  c7  Syrinx
+ 6  FAT16           42  SFS             86  NTFS volume set da  Non-FS data
+ 7  HPFS/NTFS       4d  QNX4.x          87  NTFS volume set db  CP/M / CTOS / .
+ 8  AIX             4e  QNX4.x 2nd part 88  Linux plaintext de  Dell Utility
+ 9  AIX bootable    4f  QNX4.x 3rd part 8e  Linux LVM       df  BootIt
+ a  OS/2 Boot Manag 50  OnTrack DM      93  Amoeba          e1  DOS access
+ b  W95 FAT32       51  OnTrack DM6 Aux 94  Amoeba BBT      e3  DOS R/O
+ c  W95 FAT32 (LBA) 52  CP/M            9f  BSD/OS          e4  SpeedStor
+ e  W95 FAT16 (LBA) 53  OnTrack DM6 Aux a0  IBM Thinkpad hi eb  BeOS fs
+ f  W95 Ext'd (LBA) 54  OnTrackDM6      a5  FreeBSD         ee  EFI GPT
+10  OPUS            55  EZ-Drive        a6  OpenBSD         ef  EFI (FAT-12/16/
+11  Hidden FAT12    56  Golden Bow      a7  NeXTSTEP        f0  Linux/PA-RISC b
+12  Compaq diagnost 5c  Priam Edisk     a8  Darwin UFS      f1  SpeedStor
+14  Hidden FAT16 &lt;3 61  SpeedStor       a9  NetBSD          f4  SpeedStor
+16  Hidden FAT16    63  GNU HURD or Sys ab  Darwin boot     f2  DOS secondary
+17  Hidden HPFS/NTF 64  Novell Netware  b7  BSDI fs         fd  Linux raid auto
+18  AST SmartSleep  65  Novell Netware  b8  BSDI swap       fe  LANstep
+1b  Hidden W95 FAT3 70  DiskSecure Mult bb  Boot Wizard hid ff  BBT
+1c  Hidden W95 FAT3 75  PC/IX
+
+Hex code (type L to list codes): <span class="highlight-3"><b>6</b></span>
+
+Changed system type of partition 1 to 6 (FAT16)
+</pre>
+							<p>Включете boot-флага за новия (и единствен) раздел:</p>
+<pre>
+Command (m for help): <span class="highlight-3"><b>a</b></span>
+Partition number (1-4): <span class="highlight-3"><b>1</b></span>
+</pre>
+							<p>Изведете таблицата с разделите отново, за да препотвърдите че boot-флага е включен (отбелязан със *):</p>
+<pre>
+Command (m for help): <span class="highlight-3"><b>p</b></span>
+
+Disk /dev/sdb: 2003 MB, 2003828736 bytes
+62 heads, 62 sectors/track, 1018 cylinders
+Units = cylinders of 3844 * 512 = 1968128 bytes
+Disk identifier: 0xa8993739
+
+   Device Boot      Start         End      Blocks   Id  System
+/dev/sdb1   *           1        1018     1956595+   6  FAT16
+</pre>
+							<p>Запишете новата таблица с разделите върху USB флашката, и излезте от fdisk:</p>
+<pre>
+Command (m for help): <span class="highlight-3"><b>w</b></span>
+The partition table has been altered!
+
+Calling ioctl() to re-read partition table.
+
+WARNING: If you have created or modified any DOS 6.x
+partitions, please see the fdisk manual page for additional
+information.
+Syncing disks.
+# exit
+</pre>
+							<p>Сега форматирайте току-що създадения раздел на USB флашката:</p>
+<pre>
+mkfs -t vfat -n FreeDOS /dev/sdb1
+exit
+</pre>
+							<p>С това подготвителната фаза е завършена. Сега имате подходящо разделена и форматирана флашка, и можете да преминете директно към инсталацията.</p>
+							
+					<h3>Стартиране на FreeDOS чрез qemu</h3>
+
+							<p>Тъй като DOS няма понятие от USB флашки, трябва да накараме FreeDOS инсталатора да "вижда" флашката като обикновен "хард-диск", при обичайно стартиране системния BIOS върши това за нас, но тъй като в дадения случай стартираме в qemu среда, трябва изрично да укажем това в параметрите на qemu:</p>
+<pre>
+като обикновен потребител въведете:
+qemu -hda /dev/sdb -cdrom /path/to/fdbasecd.iso -boot d
+</pre>
+							<p><span class="highlight-1">ctrl-alt</span> превключва прихващането на мишката и клавиатурата от виртуалната машина (например превключвайки в- и от- екрана на виртуалната машина, можете да препрочитате инструкциите на всяка стъпка).</p>
+
+		<div class="screenshot"><img src="../lib/images-common/images-qemu-freedos/qemu-boot01.jpg" title="QEMU FreeDOS" alt="QEMU FreeDOS" /></div>
+							<p>Това стартира диска с FreeDOS, и представя USB устройството като a първичен главен (primary master) хард-диск (емулацията на BIOS-функционалността от qemu дава възможността USB флашката да се "вижда" от DOS като обикновен хард-диск).  Изберете инсталатора от старт-менюто на виртуализирания FreeDOS:</p>
+<pre>
+1) Continue to boot FreeDOS from CD-ROM
+<span class="highlight-3"><b>1</b></span>
+enter
+</pre>
+	<div class="spacer02"></div>
+							<p>Продължавайте да избирате опцията по подразбиране <span class="highlight-3">1</span> и/или <span class="highlight-3">Yes</span> при запитване.</p>
+
+	<div class="spacer02"></div>
+		<div class="screenshot"><img src="../lib/images-common/images-qemu-freedos/qemu-boot02.jpg" title="Freedos Installation - 1" alt="freedos-inst1" /></div>
+
+		<div class="spacer02"></div>
+	<div class="screenshot"><img src="../lib/images-common/images-qemu-freedos/qemu-boot04.jpg" title="Freedos Installation - 2"  alt="freedos-inst2" /></div>
+
+	<div class="spacer02"></div>
+
+	<div class="spacer02"></div>
+		<div class="screenshot"><img src="../lib/images-common/images-qemu-freedos/qemu-boot09.jpg" title="Freedos Installation - 3" alt="freedos-inst3" /></div>
+
+
+	<div class="spacer02"></div>
+
+							<p>Инсталатора пита за потвърждение за рестартиране - <span class="highlight-3">не правете това все още, тъй като трябва да бъдат поправени две грешки във FreeDOS инсталатора за mbr и bootmenu</span>. Откажете с <span class="highlight-3"><b>n</b></span>.</p>
+	<div class="spacer02"></div>
+		<div class="screenshot"><img src="../lib/images-common/images-qemu-freedos/qemu-boot18.jpg" title="Freedos Installation - do not reboot type n" alt="freedos-do not reboot type n" /></div>
+
+	<div class="spacer02"></div>
+				<h3>Записване на boot-сектора върху USB флашката</h3> 
+							<p>Първото което трябва да оправите е mbr посредством:</p>
+
+<pre>
+fdisk /mbr 1
+</pre>
+							<p>Втората грешка нуждаеща се от намеса е bootmenu-то в новия ви fdconfig.sys, изпълнете:</p>
+<pre>
+cd \
+edit fdconfig.sys 
+</pre>
+							<p>и изменете реда който стартира command.com, на следния:</p>
+<pre>
+1234?SHELLHIGH=C:\FDOS\command.com C:\FDOS /D /P=C:\fdauto.bat /K set
+(не преписвайте командата, просто допишете "1234?" в началото на реда (преди SHELLHIGH==C:\FDOS\command.com .....
+Обърнете внимание трябва да започва така: <span class="highlight-3">1234?</span>
+</pre>
+		<div class="screenshot"><img src="../lib/images-common/images-qemu-freedos/qemu-boot23.jpg" title="Edit fdconfig.sys " alt="fdconfig.sys" /></div>
+	<div class="spacer02"></div>
+							<p><span class="highlight-2">Не променяйте нищо друго, тъй като реда зависи от конфигурацията за инсталиране.</span></p>
+
+							<p>Запишете промените и излезте от "edit":</p>
+<pre>
+[alt]+[f]
+</pre>
+							<p>Когато се върнете обратно в командния ред, можете да излезете и от qemu.</p>
+
+ 							<p>Проверете сега, дали qemu ще стартира от USB флашката:</p>
+<pre>
+qemu -hda /dev/sdb -boot c
+</pre>
+ 							<p>Сега флашката е стартируема (bootable) и съдържа пълна FreeDOS инсталация в размер 5.4 MB, в която да извършите презаписа на BIOS-а. Трябва наистина да стартирате от флашката, без никакви драйвери <span class="highlight-3">(опция 4 от менюто), иначе зареждането на himem.sys и emm386 файловете може да влезе в конфликт с програмата за презапис на bios-а!</span>:</p>
+
+				<h3>Презаписване на BIOS-а</h3>
+							<p>Когато PC е включено и работи, включете флашката с FreeDOS USB, монтирайте я, и свалете необходимите файлове за презапис на BIOS-а препоръчвани от производителя на дънната платка, запишете ги върху флашката с FreeDOS, и я размонтирайте.</p>
+
+							<p> Изключете компютъра, включете FreeDOS USB флашката, включете компютъра, така че да стартирате (boot-нете) системата от FreeDOS USB флашката, и следвайте процедурата за презапис на bios-а, описана от производителя на дънната платка.</p>
+
+
+
+	</div>
+
+			<div id="rev">Content last revised 11/11/2008 0800 UTC</div>
+</div>
+</body>
+</html>

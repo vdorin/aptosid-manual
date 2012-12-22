@@ -1,0 +1,575 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>aptosid Manuals - SSH</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision by bluewater 19/11/2007 1300 UTC-->
+<div id="menu"> <!-- menu starts here bg lang maintained by manul-->
+<!--aptosid-manual Operating System Manual menu-version-02.08.2010.07.09 -->
+<!-- menu last updated by bluewater 2010.07.09 1145 hrs UTC -->
+	<div id="menu-header">
+<a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="Главна страница на aptosid.com, форуми и вики" alt="aptosid.com лого" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-bg.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="Търсене в ръководството" alt="Търсене" />Търсене</a> </li>
+		<li><a href="http://manual.aptosid.com/meta-manual">Community Software Selections</a></li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Избор на друг език - choose another language" alt="превключване на езика" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-bg.htm">aptosid OS Manual</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-bg.htm#welcome-gen">aptosid OS Manual &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-bg.htm#cred-team">Credits</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-bg.htm#how-to">How to use this manual &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-bg.htm#how-to">How to use this manual</a></li>
+					  <li><a href="welcome-bg.htm#table-contents">Table of Contents</a></li>
+					</ul>
+					</li>
+		<li><a href="help-bg.htm#help-gen">Getting Help &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-bg.htm#help-gen">Where and how to get help</a></li>
+					  <li><a href="help-bg.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-bg.htm#welcome-quick">aptosid Quick Start Guide</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-bg.htm">ISO Content, Releases, Download Mirrors and Burning</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-bg.htm#cd-content">ISO Content and system requirements &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-bg.htm#rolling">Release Notes</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-bg.htm#download-aptosid">aptosid Mirrors, Downloading and Burning &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-bg.htm#md5">md5 Checksum</a></li>
+					  <li><a href="cd-dl-burning-bg.htm#burn-nero">Burning in Windows</a></li>
+					  <li><a href="cd-dl-burning-bg.htm#burn-linux">Burning in Linux</a></li>
+					  <li><a href="cd-no-gui-burn-bg.htm#burning-no-gui">burniso script</a></li>
+					  <li><a href="cd-no-gui-burn-bg.htm#burn-no-gui-gen">Burning without a GUI</a></li><li><a href="cd-dl-burning-bg.htm#download-aptosid">aptosid Download Mirrors</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-bg.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-bg.htm#rootpw">Root-password on the aptosid-Live ISO</a></li>
+				<li><a href="live-mode-bg.htm#live-cd-installsoft">Installing software whilst on a Live-ISO</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-bg.htm">The Terminal / Konsole</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-bg.htm#term-kon"> Terminal / Konsole &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-bg.htm#term-kon"> Terminal / Konsole</a></li>
+					  <li><a href="term-konsole-bg.htm#cli-help">Command Line Help</a></li>
+					  <li><a href="help-bg.htm#init3-tools">Tools to know in text mode (tty) - init 3</a></li>
+					  <li><a href="term-konsole-bg.htm#term-cmds">Linux Terminal Commands List</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-bg.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-bg.htm">CheatCodes</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-bg.htm#cheatcodes">aptosid specific Live-ISO Cheatcodes</a></li>
+				<li><a href="cheatcodes-bg.htm#cheatcodes-linux">Linux generic Cheatcodes</a></li>
+				<li><a href="cheatcodes-vga-bg.htm#vga">VGA Codes</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-bg.htm">Partitioning Your Hard Drive</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-bg.htm#partition">Partitioning with a GUI &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-bg.htm#partition">Partitioning your HD using GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-bg.htm#ntfs">NTFS partition Resizing using GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-bg.htm#partition">Partitioning with CLI &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-bg.htm#partition">Partitioning  your HD using cfdisk</a></li>
+					    <li><a href="part-cfdisk-bg.htm#formating">Formatting after partitioning with cfdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-bg.htm#part-example">Partitioning Basics &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-bg.htm#part-example">Partition Size Examples</a></li>
+					  <li><a href="part-uuid-bg.htm#uuid">UUID, Partition Labelling and fstab</a></li>
+					  <li><a href="part-cfdisk-bg.htm#disknames">Disk Naming in brief</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-bg.htm">Installation options - HD, USB, VM</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-bg.htm#Inst-prep">Install Preparation &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-bg.htm#Inst-prep">Install Preparation </a></li>
+					  <li><a href="hd-install-bg.htm#Installation">Installing to your HD</a></li>
+					  <li><a href="hd-install-bg.htm#first-hd-boot">First Boot Up</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-bg.htm#fromiso">Booting fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-bg.htm#fromiso">Booting fromiso - Overview</a></li>
+					  <li><a href="hd-install-opts-bg.htm#fromiso-grub-leg">Booting 'fromiso' with grub-legacy</a></li>
+					  <li><a href="hd-install-opts-bg.htm#grub2-fromiso">Booting 'fromiso' with Grub 2</a></li>
+					  <li><a href="hd-install-opts-bg.htm#fromiso-persist">fromiso and persist</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-bg.htm#usb-hd">Installing to USB drives &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-bg.htm#usb-hd">Installing on a USB-HD - aptosid specific - aptosid-on-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-bg.htm#raw-usb">Writing aptosid to a USB/SSD stick with any Linux, MS Windows or Mac OS X system</a></li>
+					</ul>
+					</li>
+		  <li><a href="nbdboot-bg.htm#nbd1">Booting aptosid over a network</a></li>
+		  <li><a href="hd-install-vmopts-bg.htm#vm">Virtual Machine installation options</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="hw-dev-hw-dri-bg.htm">Graphic Cards, Monitors, Xorg &amp; Miscellaneous Drivers</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-hw-dri-bg.htm#hd-ntfs3g">Writing on NTFS-partitions with ntfs-3g</a></li>
+		<li><a href="hw-dev-mon-bg.htm#mon-res">Screen Resolution and Monitors  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-bg.htm#mon-res">Screen Resolution and Monitors</a></li>
+					  <li><a href="hw-dev-mon-bg.htm#xrandr">Dual Monitors and xrandr</a></li>
+					  <li><a href="hw-dev-mon-bg.htm#mon-binary">Dual Monitors (using binaries)</a></li>
+					</ul>
+					</li>
+		<li><a href="hw-dev-hw-dri-bg.htm#non-free-3d">Graphic card proprietry drivers &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="hw-dev-hw-dri-bg.htm#non-free-3d">Binary, non-free drivers for Nvidia &amp; xorg.conf</a></li>
+					  <li><a href="hw-dev-hw-dri-bg.htm#non-free-3d-2">non-free drivers for ATI, Radeon and others</a></li>
+					</ul>
+					</li>
+			  <li><a href="hw-dev-hw-dri-bg.htm#non-free-firmware">Hardware needing non-free firmware drivers</a></li>
+			  <li><a href="hw-dev-hw-dri-bg.htm#non-free">Adding non-free to Sources List</a></li>
+			  <li><a href="hw-dev-hw-dri-bg.htm#native-nv-ati">FOSS xorg drivers for nVidia, ATI, Radeon, Intel &amp; xorg.conf</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-kde-bg.htm">Window Managers</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-kde-bg.htm">Window Managers &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-kde-bg.htm">Window Managers</a></li>
+					    <li><a href="wm-xfce-bg.htm#xfce-notes">Useful Xfce extras</a></li>
+					    <li><a href="wm-kde-bg.htm#install-add">Useful extra KDE Apps</a></li>
+					    <li><a href="wm-kde-bg.htm#desk-freeze">Desktop Freezes</a></li>
+					    <li><a href="wm-kde-bg.htm#kde-login">Cant login in KDE</a></li>
+					    <li><a href="wm-kde-bg.htm#ch-th">Changing Themes</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-kde-bg.htm#dm">Display Managers - dm</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="internet-connecting-bg.htm">Internet connecting, WiFi, LAN and Networks</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-bg.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-bg.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-bg.htm#serv-ftp">FTP Clients</a></li>
+					    <li><a href="lamp-apache-bg.htm#serv-sec">Security Protocols</a></li>
+					    <li><a href="lamp-apache-bg.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-bg.htm#serv-mysql">MySQL Setup</a></li>
+					    <li><a href="lamp-ppp-bg.htm#serv-php">PHP in Apache</a></li>
+					    <li><a href="ntp-server-bg.htm#ntp-server">Timeserver Setup</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-bg.htm#tor">Firewalls and Privacy &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-bg.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-bg.htm#privoxy">Privoxy</a></li>
+					    <li><a href="internet-connecting-bg.htm#firewalls">Firewalls</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-bg.htm#ssh-x">SSH and Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-bg.htm#setup">Samba-Server Setup</a></li>
+						  <li><a href="samba-bg.htm#configure">Configuring SAMBA (Windows)</a></li>
+						  <li><a href="ssh-bg.htm#ssh-fs">SSH Remote Mounting</a></li>
+						  <li><a href="ssh-bg.htm#ssh-x">X Window Apps via SSH</a></li>
+						  <li><a href="ssh-bg.htm#ssh-f">GUI SSH with Konqueror</a></li>
+						  <li><a href="ssh-bg.htm#ssh-w">SSH X-Forwarding from Windows-PC</a></li>
+						  <li><a href="ssh-bg.htm#ssh">SSH and Security</a></li>
+					</ul>
+					</li>
+		<li><a href="internet-connecting-bg.htm#netcardconfig">WIFI connections &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="internet-connecting-bg.htm#netcardconfig">Getting Online - Ceni</a></li>
+						    <li><a href="inet-wpagui-bg.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-bg.htm#net-set1">WiFi - Setting up for WiFi Roaming</a></li>
+						    <li><a href="internet-connecting-wpa-bg.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-bg.htm#hotswitch">Network switching between WiFi and Cable</a></li>
+					</ul>
+					</li>
+		<li><a href="internet-connecting-bg.htm#netcardconfig">Wired Connections &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="internet-connecting-bg.htm#dial-mod">56k Modems</a></li>
+						    <li><a href="internet-connecting-bg.htm#netcardconfig">Getting Online - Ceni</a></li>
+					</ul>
+					</li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-bg.htm">Package Management and dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-bg.htm#apt-cook">APT Cookbook and Sources list &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-bg.htm#apt-cook">APT-Guide Cookbook and Sources list</a></li>
+					    <li><a href="sys-admin-apt-bg.htm#apt-install">Installing a new package</a></li>
+					    <li><a href="sys-admin-apt-bg.htm#apt-delete">Deleting a package</a></li>
+					    <li><a href="sys-admin-apt-bg.htm#apt-downgrade">Package Hold and downgrading</a></li>
+					    <li><a href="sys-admin-apt-bg.htm#apt-cache">Package searching with apt-cache</a></li>
+					    <li><a href="sys-admin-apt-bg.htm#gui-pacsea">GUI Package searching</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-bg.htm#kern-upgrade">Upgrading the kernel &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-bg.htm#kern-remove">Removing Kernels</a></li>
+					    <li><a href="sys-admin-kern-upg-bg.htm#kern-upgrade">Upgrading the kernel</a></li>
+					    <li><a href="sys-admin-kern-upg-bg.htm#dmakms">Installing kernel modules dynamically with dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-bg.htm#apt-upgrade">Upgrade an Installed System -  dist-upgrade - Overview &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-bg.htm#live-cd-upgrade">Upgrading by Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-bg.htm#approx">dist-upgrade of multiple PCs on a LAN</a></li>
+					    <li><a href="sys-admin-apt-bg.htm#apt-upgrade">Upgrade an Installed System -  dist-upgrade - Overview</a></li>
+					    <li><a href="sys-admin-apt-bg.htm#du-st">Upgrade an Installed System -  dist-upgrade - The Steps</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-bg.htm">System Administration</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-bg.htm#bois-prep">Upgrading the BIOS with FreeDOS</a></li>
+		<li><a href="vir-rkits-bg.htm#virus-rkits">Virus and Rootkit Scanners</a></li>
+		<li><a href="hd-install-bg.htm#adduser">Adding Users and Passwords &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-bg.htm#adduser">Adding a new user</a></li>
+					    <li><a href="sys-admin-gen-bg.htm#pw-lost">Lost root passwords, new passwords</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-bg.htm#start-services">Services and init runlevels &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-bg.htm#start-services">Services enable/disable</a></li>
+					    <li><a href="sys-admin-gen-bg.htm#init">aptosid runlevels - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-bg.htm#rsync">Backing up the system &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-bg.htm#rdiff">Back-Up with rdiff</a></li>
+					    <li><a href="sys-admin-rsync-bg.htm#rsync">Back-Up with rsync</a></li>
+					    <li><a href="home-bg.htm#home-bu">Moving /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-bg.htm#fonts">CUPS, Fonts and Sound &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-bg.htm#fonts">Fonts</a></li>
+					     <li><a href="sys-admin-gen-bg.htm#cups">CUPS - Printing System</a></li>
+					     <li><a href="sys-admin-gen-bg.htm#sound">Sound Mixers</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub-bootman2-bg.htm#mbr-grub-boot">Grub1 - grub-legacy &#8658;</a>
+					  <ul class="sub2-menu" id="sm13e">
+					    <li><a href="sys-admin-grub-bootman2-bg.htm#boot-grub-floppy">Creating a Boot-Floppy</a></li>
+					    <li><a href="sys-admin-grub-bootman2-bg.htm#mbr-grub-boot">Grub1 - MBR Overwritten bootsector</a></li>
+					    <li><a href="sys-admin-grub-bootman2-bg.htm#dual-boot">Grub1 Dual and Multibooting</a></li>
+					    <li><a href="sys-admin-grub-bootman2-bg.htm#what-is-grub">Grub the boot manager</a></li>
+					    <li><a href="sys-admin-grub-bootman2-bg.htm#remove-grub">Removing grub from MBR</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-bg.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub-bootman2-bg.htm#boot-grub-floppy">Creating a Boot-Floppy</a></li>
+					    <li><a href="sys-admin-grub2-bg.htm#chroot">Grub2 - Recovering Grub with chroot</a></li>
+					    <li><a href="sys-admin-grub2-bg.htm#mbr-over-grub2">Grub2 - MBR Overwritten</a></li>
+					    <li><a href="sys-admin-grub2-bg.htm#multi-os">Grub2 - Dual and Multibooting</a></li>
+					    <li><a href="sys-admin-grub2-bg.htm#grub1-grub2">Grub2 -Upgrading from Grub1</a></li>
+					    <li><a href="sys-admin-grub2-bg.htm#grub2">Grub2 - Overview</a></li>
+					</ul>
+					</li>
+			</ul>
+		</li>
+	</ul>
+<!-- menu ends here --> </div>
+<div id="main-page">
+<div class="divider" id="ssh">
+			<h2 id="top-header">SSH</h2>
+
+							<p>Secure Shell или SSH, е множество от стандарти плюс съответен мрежов протокол, позволяващи създаването на защитена връзка между локалния и отдалечения компютър. За удостоверяване на самоличността/автентичността на страните по връзката, се използва криптография базирана на алгоритъма с публичен/скрит ключ.  SSH също шифрира трафика, използвайки message authentication codes (MACs). Типична употреба на протокола SSH, е да се логнем дистанционно в отдалечения компютър по мрежата и да изпълняваме команди - но също така се използва за тунелиране, пренасочване на произволни TCP портове и X11 връзки; може да се ползва за трансфер на файлове използвайки SFTP или SCP протоколите. SSH сървърът по подразбираве, "слуша" на стандартния TCP порт 22. <a href="http://en.wikipedia.org/wiki/Secure_Shell">Взето от Википедия</a></p>
+
+	</div>
+	<div class="divider" id="ssh-s">
+			<h2>Мерки за безопасност при работа с SSH</h2>
+
+							<p>По принцип, възможността за суперпотребителя root да се свързва по ssh не е безопасна. И като цяло, трябва да избягваме логването в системата като root. За да предотвратим атаки на системата по мрежата (например брут-форс атаки с помощта на речници за паролата, които могат да бъдат изпълнени за 10-тина минути) добре е да ограничим както неуспешните опити за логване, така и продължителността за  отдалечено логване в системата!</p>
+
+ 							<p>Така че, за по-безопасна работа с ssh, в текстов редактор (стартиран с правата на root) отворете файла:</p>
+<pre>
+/etc/ssh/sshd_config
+</pre>
+							<p>намерете съответните настройки, и евентуално ги променете както е описано по-долу:</p>
+
+						<h6>Настройките, които трябва да промените са следните:</h6>
+
+ 							<p><span class="highlight-3">Port &lt;избрания-от-вас-порт&gt;:</span> Тук трябва да зададете входния порт - и ако ползвате рутер, в рутера същия порт трябва да е пренасочен към компютъра. Портът по подразбиране е 22, но се препоръчва да използвате порт извън стандартния обхват за сканиране от хакерите и нет-ботовете. За да сменим порта на 5874 например, реда трябва да бъде:</p>
+<pre>
+Port 5874
+</pre>
+ 							<p><span class="highlight-3">ListenAddress &lt;ip-на-компютъра-или-мрежовия-интерфейс&gt;:</span> Тъй като пренасочвате порт от рутера, IP адреса на компютъра естествено трябва да е статичен (освен ако не ползвате локален DNS сървър - но ако правите нещо толкова сложно, едва ли се нуждаете от тези обяснения). Задаваме статичния IP адрес, на който ssh да чака за конекции: </p>
+<pre>
+ListenAddress 192.168.2.134
+</pre>
+							<p>После, Protocol 2 е настройката по подразбиране, но все пак не пречи да се уверите, че е зададена.</p>
+
+ 							<p><span class="highlight-3">LoginGraceTime &lt;секунди-за-време-за-логване&gt;:</span> По подразбиране се ползва абсурдно голямата стойност от 600 секунди. Няма нужда от 10 минути чакане за да въведете потребителското име и паролата, така че сменете с по-разумна стойност:</p>
+<pre>
+LoginGraceTime 45
+</pre>
+ 							<p>Сега времето през което системата ще ви чака за за логване е 45 секунди след което ще прекъсне връзката</p>
+
+							<p><span class="highlight-3">PermitRootLogin &lt;yes&gt;:</span>Защо debian дава по подразбиране PermitRootLogin 'yes' е необяснимо, нека да сменим това на 'no' забранявайки достъпа непосредствено като root (веднъж логнати, по-нататък винаги можем да сменим потребителя в сесията със su)</p>
+<pre>
+PermitRootLogin no
+</pre>
+
+<pre>
+StrictModes yes
+</pre>
+ 							<p><span class="highlight-3">MaxAuthTries &lt;xxx&gt;:</span> Броя неуспешни опити за логване преди да прекъсне връзката, направете го не повече от 3-4 пъти</p>
+<pre>
+MaxAuthTries 2
+</pre>
+ 							<p>Ако някои от тези опции са ви необходими, може да трябва да ги въведете:</p>
+<pre>
+AllowUsers &lt;потребителските имена за които е разрешен достъпа по мрежата чрез ssh&gt;
+</pre>
+ 							<p><span class="highlight-3">AllowUsers &lt;xxx&gt;:</span> направете потребител без права специално за достъп през ssh (с помощта на командата adduser) и го укажете тук:</p>
+<pre>
+AllowUsers новото-потребителско-име
+</pre>
+ 							<p><span class="highlight-3">PermitEmptyPasswords &lt;xxx&gt;:</span> Дайте на потребителя дълга парола която не може да бъде налучкана даже и за милиони години; и разбира се се уверете че тази опция за логин без парола е забранена:</p>
+<pre>
+PermitEmptyPasswords no
+</pre>
+							<p><span class="highlight-3">PasswordAuthentication &lt;xxx&gt;:</span> Очевидно за логване с парола това трябва да е yes (освен ако не искате да ползвате автоматично логване чрез предварително генерирани ключове)</p>
+<pre>
+PasswordAuthentication yes [освен ако не ползвате ключове]
+</pre>
+							<p>Накрая, рестартирайте услугата от конзолата:</p>
+<pre>
+/etc/init.d/ssh restart
+</pre>
+ 							<p>Сега системата има малко (макар и не съвсем) по-безопасен вход по ssh. Не забравяйте да създадете с adduser специален потребител само за ssh, и да отворите достъпа само за него и никой друг.</p>
+
+							<p><span class="highlight-3">Забележка:</span> Ако получите съобщение за грешка и ssh отказва да ви свърже, отидете в $HOME директорията си,  намерете скритата директория с име <span class="highlight-3">.ssh</span>, изтрийте файла <span class="highlight-3"> known_hosts</span>, и опитайте пак. Тази грешка се получава главно когато имате динамичен IP адрес който се сменя често (DCHP)</p>
+
+	</div>
+		<div class="divider" id="ssh-x">
+			<h2>Отдалечено използване на X Window (графични) приложения през мрежата по SSH</h2>
+							<p>ssh -X не само ви логва в отдалечения компютър, но и позволява да показвате графични приложения от него на локалния ви компютър. Като $user (забележете, че за опцията -X се използва главна буква):</p>
+<pre>
+$ ssh -X username@xxx.xxx.xxx.xxx (or IP)
+</pre>
+							<p>Въведете паролата за потребителското име на отдалечения компютър, и стартирайте графичното приложение в шела:</p>
+
+<pre>
+$ iceweasel ИЛИ oocalc ИЛИ oowriter ИЛИ kspread
+</pre>
+
+							<p>Some really slow network connections from your PC may benefit from having a level of compression to help speed transfers, therefore add an extra option, on fast networks it has the opposite effect:</p>
+<pre>
+$  ssh -C -X username@xxx.xxx.xxx.xxx (or IP)
+</pre>
+							<p>Read:</p>
+<pre>
+$man ssh
+</pre>
+							<p><span class="highlight-3">Забележка:</span> Ако получите съобщение за грешка и ssh отказва да ви свърже, отидете в $HOME директорията си,  намерете скритата директория с име <span class="highlight-3">.ssh</span>, изтрийте файла <span class="highlight-3"> known_hosts</span>, и опитайте пак. Тази грешка се получава главно когато имате динамичен IP адрес който се сменя често (DCHP)</p>
+	</div>
+	<div class="divider" id="ssh-scp">
+			<h2>Copying files and directories remotely via ssh with scp</h2>
+
+							<p>scp uses the command line, (terminal/cli), to copy files between hosts on a network. It uses ssh authentication and security for data transfer, therefore, scp will ask for passwords or passphrases as required for authentication.</p>
+
+							<p>Assuming you have ssh rights to a remote PC or a server, scp allows you to copy partitions, directories or file, to and from that PC, to a specified location or destination of your choosing where you also have permissions. For example, this could include a PC or server you have the permission to access on your LAN, (or anywhere else in the world), to enable a transfer of data to a USB hard Drive connected to your PC.</p>
+
+							<p>You can recursively copy entire partitions and directories with the <span class="highlight-3">scp -r</span> option.  Note that scp -r follows symbolic links encountered in the tree traversal.</p>
+
+					<h3>Examples:</h3>
+							 <p><span class="highlight-3"> Example 1:</span> Copy a partition:</p>
+
+<pre>
+scp -r &lt;user&gt;@xxx.xxx.x.xxx:/media/disk1part6/ /media/diskXpartX/
+</pre>
+							 <p><span class="highlight-3"> Example 2:</span> Copy a directory on a partition, in this case a directory called photos in $HOME:</p>
+
+<pre>
+scp -r &lt;user&gt;@xxx.xxx.x.xxx:~/photos/ /media/diskXpartX/xx
+</pre>
+							 <p><span class="highlight-3">Example 3:</span> Copy a file from a directory on a partition, in this case a file in $HOME:</p>
+<pre>
+scp &lt;user&gt;@xxx.xxx.x.xxx:~/filename.txt /media/diskXpartX/xx
+</pre>
+							<p><span class="highlight-3">Example 4:</span> Copy a file on a partition:</p>
+<pre>
+scp &lt;user&gt;@xxx.xxx.x.xxx:/media/disk1part6/filename.txt /media/diskXpartX/xx
+</pre>
+
+							<p><span class="highlight-3">Example 5:</span> If you are already in the drive/directory that you wish to copy any directory or files to, use a '<span class="highlight-2"> <b>.</b> </span>' (dot) :</p>
+<pre>
+scp -r &lt;user&gt;@xxx.xxx.x.xxx:/media/disk1part6/filename.txt<span class="highlight-2"><b> .</b> </span>
+</pre>
+
+							<p><span class="highlight-3">Example 6:</span> To copy files from your PC/server to a another, (use <span class="highlight-3">scp -r</span> if copying a partition or a directory):</p>
+
+<pre>
+scp /media/disk1part6/filename.txt &lt;user&gt;@xxx.xxx.x.xxx:/media/diskXpartX/xx
+</pre>
+
+							<p>Read:</p>
+<pre>
+man scp
+</pre>
+
+	</div>
+		<div class="divider" id="ssh-w">
+			<h2>Отдалечено използване на X Window (графични) приложения през мрежата по ssh от Windows-PC:</h2>
+
+							<p>* Свалете и запишете на CD <a href="http://xlivecd.indiana.edu/">Cygwin XLiveCD</a><br />
+							* Сложете CD-то в CD-ROM устройството на компютъра с Windows-PC и го изчакайте да се стартира автоматично.<br />
+							Натиснете "continue" докато се появи конзолния прозорец, където въведете:</p>
+<pre>
+ssh -X username@xxx.xxx.xxx.xxx
+</pre>
+      							<p>Забележка: xxx.xxx.xxx.xxx е IP адреса на отдалечения компютър с linux, или неговото име на хоста (например ако има акаунт в dyndns.org) и username е разбира се потребителско име което съществува на отдалечения компютър. След като се логнете, стартирайте например "kmail" за да проверите пощата си, все едно сте на отдалечения компютър!</p>
+
+							<p>Важно: Ако отдалечения linux компютър е зад NAT-защитна стена или рутер, уверете се че порт 22 в рутера е пренасочен към него</p>
+	</div>
+		<div class="divider" id="ssh-f">
+			<h2>SSH със Konqueror</h2>
+
+							<p>Както Konqueror, така и Krusader могат да се използват за отдалечен достъп до данни със <span class="highlight-3">sftp://</span>; и двете програми използват ssh протокола.</p>
+
+							<p>Как става:<br />
+							1) Отворете нов прозорец с Konqueror<br />
+							2) Въведете в адресното поле: <span class="highlight-3">sftp://username@ssh-server.com</span></p>
+
+			<p>Пример 1: </p>
+<pre>
+sftp://aptosid1@remote_hostname_or_ip
+(Забележка: Тук aptosid1 е потребителското име (username) което се използва за достъп до отдалечения компютър.
+Ще се отвори изскачащ прозорец който пита за ssh паролата - въведете я и натиснете OK)
+</pre>
+							<p>Пример 2: </p>
+<pre>
+sftp://username:password@remote_hostname_or_ip
+(В този случай <span class="highlight-3">НЯМА</span> да бъдете запитани за парола, а ще се свържете директно.)
+</pre>
+							<p>За LAN обкръжение (локална мрежа)</p>
+<pre>
+sftp://username@10.x.x.x or 198.x.x.x.x
+(Забележка: Изскачащия прозорец пита за ssh паролата ви - въведете я и натиснете OK)
+</pre>
+							<p>Връзката на Konqueror по SSH с отдалечения компютър сега е създадена. В този прозорец на Konqueror, работете с файловете (копиране, преглеждане и т.н.) които са на отдалечения ssh сървър по същия начин, като че ли се намират на вашия локален компютър.</p>
+
+							<p class="highlight-3">Забележка: Ако сте променили конфигурацията на ssh сървъра на отдалечения компютър, така че да използва порт различен от този по подразбиране (22) - трябва да укажете нестандартния порт с двоеточие след името (или IP-то) на хоста:</p>
+<pre>
+sftp://user@ip:port
+</pre>
+							<p>'user@ip:port' е стандартен синтаксис за много програми като sftp и fish</p>
+
+	</div>
+	<div class="divider" id="ssh-fs">
+			<h2>SSHFS - Монтиране на отдалечена файлова система през мрежата</h2>
+							<p>SSFS е лесен, бърз и сигурен метод, който използва FUSE за монтиране на отдалечена файлова система през мрежата. Единственото изискване от страна на сървъра за да работи, е на него да е стартиран ssh демона (услугата).</p>
+
+							<p>От страната на клиента, евентуално трябва да инсталирате sshfs: <span class="highlight-1">инсталирането на fuse and groups не е необходимо от aptosid eros нататък, тъй като те са инсталирани по подразбиране:</span></p>
+
+							<p>Инсталиране на sshfs (на клиента, т.е. на компютъра от който ще се свързвате):	</p>
+<pre>
+apt-get update &amp;&amp; apt-get install sshfs
+</pre>
+							<p class="highlight-3">Сега трябва да излезете (log off) и да се логнете (login) отново</p>
+
+							<p>Монтирането на отдалечена система през мрежата е много лесно:</p>
+<pre>
+sshfs username@remote_hostname:directory local_mount_point
+</pre>
+							<p>където <span class="highlight-3">username</span> е потребителско име от отдалечената система:</p>
+
+							<p>Ако не укажете директорията на отдалечения компютър (обозначена в примера с "directory"), домашната директория на потребителя username ще бъде монтирана върху указаната локална точка на монтиране (т.е. директорията обозначена с local_mount_point).<span class="highlight-3">Внимание: Двоеточието <span class="highlight-2"> <b>:</b></span> е задължително даже и да не зададете директорията (обозначена в примера с "directory") от отдалечения компютър! </span></p>
+
+							<p>След монтирането отдалечената директория се държи като всяка друга файлова система - можете да разглеждате, модифицирате или стартирате файловете, да ги обработвате с програми и т.н. - както с всяка локална файлова система.</p>
+
+							<p>За да размонтирате отдалечения хост, използвайте командата:</p>
+<pre>
+fusermount -u local_mount_point
+</pre>
+							<p>Ако често използвате sshfs, добра идея е да добавите ред в fstab за нея:</p>
+<pre>
+sshfs#username@remote_hostname://remote_directory /local_mount_point fuse user,allow_other,uid=1000,gid=1000,noauto,fsname=sshfs#username@remote_hostname://remote_directory  0 0 
+</pre>
+							<p>Next uncomment <span class="highlight-3">user_allow_other</span> in <span class="highlight-3">/etc/fuse.conf</span>:</p>
+
+<pre> 
+ # Allow non-root users to specify the 'allow_other' or 'allow_root'
+ # mount options.
+ #
+ user_allow_other
+</pre>
+							<p>Това ще даде възможност на всеки потребител, чийто акаунт е включен в групата fuse, да монтира файловата система, използвайки добре известната команда mount:</p>
+<pre>mount /path/to/mount/point</pre>
+							<p>С по-горния ред включен в fstab, съответно можете да използвате и umount за размонтиране:</p>
+<pre>umount /path/to/mount/point</pre>
+							<p>За да проверите дали участвате в групата fuse:</p>
+<pre>
+cat /etc/group | grep fuse
+</pre>
+							<p>Би трябвало да върне нещо от сорта:</p>
+<pre>
+fuse:x:117: &lt;username&gt;
+</pre>
+							<p>Ако не видите вашето потребителско име изведено, използвайте adduser (като root) за да го добавите:</p>
+<pre>
+adduser &lt;username&gt; fuse
+</pre>
+							<p>Сега потребителското ви име би трябвало да се покаже при командата за проверка по-горе, и би трябвало да можете да монтирате с mount:</p>
+
+							<p class="highlight-3">Забележка: Ако използвате за проверка командата "id", тя няма да изведе групата "fuse" докато не излезете и не се логнете отново (logoff/login)</p>
+<pre>
+mount local_mount_point
+</pre>
+							<p>и</p>
+<pre>
+umount local_mount_point
+</pre>
+
+	</div>
+			<div id="rev">Content last revised 01/11/2011 0650 UTC</div>
+
+</div>
+</body>
+</html>

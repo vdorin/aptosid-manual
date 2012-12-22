@@ -1,0 +1,581 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>sidux Manuals - VM Installation Options</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision by bluewater 22/04/2009 1350hrs UTC -->
+<div id="menu"> <!-- menu starts here bg lang maintained by manul-->
+<!--sidux-manual Operating System Manual menu-version-02.08.2010.07.09 -->
+<!-- menu last updated by bluewater 2010.07.09 1145 hrs UTC -->
+	<div id="menu-header">
+<a href="http://sidux.com/"><img src="../lib/logos/manual-sidux-logo.png" title="Главна страница на sidux.com, форуми и вики" alt="sidux.com лого" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-bg.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="Търсене в ръководството" alt="Търсене" />Търсене</a> </li>
+		<li><a href="http://manual.sidux.com/meta-manual">Community Software Selections</a></li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/sidux-lang-100x64.png" title="Избор на друг език - choose another language" alt="превключване на езика" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-bg.htm">sidux OS Manual</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-bg.htm#welcome-gen">sidux OS Manual &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-bg.htm#cred-team">Credits</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-bg.htm#how-to">How to use this manual &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-bg.htm#how-to">How to use this manual</a></li>
+					  <li><a href="welcome-bg.htm#table-contents">Table of Contents</a></li>
+					</ul>
+					</li>
+		<li><a href="help-bg.htm#help-gen">Getting Help &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-bg.htm#help-gen">Where and how to get help</a></li>
+					  <li><a href="help-bg.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-bg.htm#welcome-quick">sidux Quick Start Guide</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-bg.htm">ISO Content, Releases, Download Mirrors and Burning</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-bg.htm#cd-content">ISO Content and system requirements &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-bg.htm#rolling">Release Notes</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-bg.htm#download-sidux">sidux Mirrors, Downloading and Burning &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-bg.htm#md5">md5 Checksum</a></li>
+					  <li><a href="cd-dl-burning-bg.htm#burn-nero">Burning in Windows</a></li>
+					  <li><a href="cd-dl-burning-bg.htm#burn-linux">Burning in Linux</a></li>
+					  <li><a href="cd-no-gui-burn-bg.htm#burning-no-gui">burniso script</a></li>
+					  <li><a href="cd-no-gui-burn-bg.htm#burn-no-gui-gen">Burning without a GUI</a></li><li><a href="cd-dl-burning-bg.htm#download-sidux">sidux Download Mirrors</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-bg.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-bg.htm#rootpw">Root-password on the sidux-Live ISO</a></li>
+				<li><a href="live-mode-bg.htm#live-cd-installsoft">Installing software whilst on a Live-ISO</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-bg.htm">The Terminal / Konsole</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-bg.htm#term-kon"> Terminal / Konsole &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-bg.htm#term-kon"> Terminal / Konsole</a></li>
+					  <li><a href="term-konsole-bg.htm#cli-help">Command Line Help</a></li>
+					  <li><a href="help-bg.htm#init3-tools">Tools to know in text mode (tty) - init 3</a></li>
+					  <li><a href="term-konsole-bg.htm#term-cmds">Linux Terminal Commands List</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-bg.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-bg.htm">CheatCodes</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-bg.htm#cheatcodes">sidux specific Live-ISO Cheatcodes</a></li>
+				<li><a href="cheatcodes-bg.htm#cheatcodes-linux">Linux generic Cheatcodes</a></li>
+				<li><a href="cheatcodes-vga-bg.htm#vga">VGA Codes</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-bg.htm">Partitioning Your Hard Drive</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-bg.htm#partition">Partitioning with a GUI &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-bg.htm#partition">Partitioning your HD using GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-bg.htm#ntfs">NTFS partition Resizing using GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-bg.htm#partition">Partitioning with CLI &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-bg.htm#partition">Partitioning  your HD using cfdisk</a></li>
+					    <li><a href="part-cfdisk-bg.htm#formating">Formatting after partitioning with cfdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-bg.htm#part-example">Partitioning Basics &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-bg.htm#part-example">Partition Size Examples</a></li>
+					  <li><a href="part-uuid-bg.htm#uuid">UUID, Partition Labelling and fstab</a></li>
+					  <li><a href="part-cfdisk-bg.htm#disknames">Disk Naming in brief</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-bg.htm">Installation options - HD, USB, VM</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-bg.htm#Inst-prep">Install Preparation &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-bg.htm#Inst-prep">Install Preparation </a></li>
+					  <li><a href="hd-install-bg.htm#Installation">Installing to your HD</a></li>
+					  <li><a href="hd-install-bg.htm#first-hd-boot">First Boot Up</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-bg.htm#fromiso">Booting fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-bg.htm#fromiso">Booting fromiso - Overview</a></li>
+					  <li><a href="hd-install-opts-bg.htm#fromiso-grub-leg">Booting 'fromiso' with grub-legacy</a></li>
+					  <li><a href="hd-install-opts-bg.htm#grub2-fromiso">Booting 'fromiso' with Grub 2</a></li>
+					  <li><a href="hd-install-opts-bg.htm#fromiso-persist">fromiso and persist</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-bg.htm#usb-hd">Installing to USB drives &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-bg.htm#usb-hd">Installing on a USB-HD - sidux specific - sidux-on-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-bg.htm#raw-usb">Writing sidux to a USB/SSD stick with any Linux, MS Windows or Mac OS X system</a></li>
+					</ul>
+					</li>
+		  <li><a href="nbdboot-bg.htm#nbd1">Booting sidux over a network</a></li>
+		  <li><a href="hd-install-vmopts-bg.htm#vm">Virtual Machine installation options</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="hw-dev-hw-dri-bg.htm">Graphic Cards, Monitors, Xorg &amp; Miscellaneous Drivers</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-hw-dri-bg.htm#hd-ntfs3g">Writing on NTFS-partitions with ntfs-3g</a></li>
+		<li><a href="hw-dev-mon-bg.htm#mon-res">Screen Resolution and Monitors  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-bg.htm#mon-res">Screen Resolution and Monitors</a></li>
+					  <li><a href="hw-dev-mon-bg.htm#xrandr">Dual Monitors and xrandr</a></li>
+					  <li><a href="hw-dev-mon-bg.htm#mon-binary">Dual Monitors (using binaries)</a></li>
+					</ul>
+					</li>
+		<li><a href="hw-dev-hw-dri-bg.htm#non-free-3d">Graphic card proprietry drivers &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="hw-dev-hw-dri-bg.htm#non-free-3d">Binary, non-free drivers for Nvidia &amp; xorg.conf</a></li>
+					  <li><a href="hw-dev-hw-dri-bg.htm#non-free-3d-2">non-free drivers for ATI, Radeon and others</a></li>
+					</ul>
+					</li>
+			  <li><a href="hw-dev-hw-dri-bg.htm#non-free-firmware">Hardware needing non-free firmware drivers</a></li>
+			  <li><a href="hw-dev-hw-dri-bg.htm#non-free">Adding non-free to Sources List</a></li>
+			  <li><a href="hw-dev-hw-dri-bg.htm#native-nv-ati">FOSS xorg drivers for nVidia, ATI, Radeon, Intel &amp; xorg.conf</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-kde-bg.htm">Window Managers</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-kde-bg.htm">Window Managers &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-kde-bg.htm">Window Managers</a></li>
+					    <li><a href="wm-xfce-bg.htm#xfce-notes">Useful Xfce extras</a></li>
+					    <li><a href="wm-kde-bg.htm#install-add">Useful extra KDE Apps</a></li>
+					    <li><a href="wm-kde-bg.htm#desk-freeze">Desktop Freezes</a></li>
+					    <li><a href="wm-kde-bg.htm#kde-login">Cant login in KDE</a></li>
+					    <li><a href="wm-kde-bg.htm#ch-th">Changing Themes</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-kde-bg.htm#dm">Display Managers - dm</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="internet-connecting-bg.htm">Internet connecting, WiFi, LAN and Networks</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-bg.htm">sidux LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-bg.htm#serv-apache">sidux LAMP Stack</a></li>
+					    <li><a href="lamp-apache-bg.htm#serv-ftp">FTP Clients</a></li>
+					    <li><a href="lamp-apache-bg.htm#serv-sec">Security Protocols</a></li>
+					    <li><a href="lamp-apache-bg.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-bg.htm#serv-mysql">MySQL Setup</a></li>
+					    <li><a href="lamp-ppp-bg.htm#serv-php">PHP in Apache</a></li>
+					    <li><a href="ntp-server-bg.htm#ntp-server">Timeserver Setup</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-bg.htm#tor">Firewalls and Privacy &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-bg.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-bg.htm#privoxy">Privoxy</a></li>
+					    <li><a href="internet-connecting-bg.htm#firewalls">Firewalls</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-bg.htm#ssh-x">SSH and Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-bg.htm#setup">Samba-Server Setup</a></li>
+						  <li><a href="samba-bg.htm#configure">Configuring SAMBA (Windows)</a></li>
+						  <li><a href="ssh-bg.htm#ssh-fs">SSH Remote Mounting</a></li>
+						  <li><a href="ssh-bg.htm#ssh-x">X Window Apps via SSH</a></li>
+						  <li><a href="ssh-bg.htm#ssh-f">GUI SSH with Konqueror</a></li>
+						  <li><a href="ssh-bg.htm#ssh-w">SSH X-Forwarding from Windows-PC</a></li>
+						  <li><a href="ssh-bg.htm#ssh">SSH and Security</a></li>
+					</ul>
+					</li>
+		<li><a href="internet-connecting-bg.htm#netcardconfig">WIFI connections &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="internet-connecting-bg.htm#netcardconfig">Getting Online - Ceni</a></li>
+						    <li><a href="inet-wpagui-bg.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-bg.htm#net-set1">WiFi - Setting up for WiFi Roaming</a></li>
+						    <li><a href="internet-connecting-wpa-bg.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-bg.htm#hotswitch">Network switching between WiFi and Cable</a></li>
+					</ul>
+					</li>
+		<li><a href="internet-connecting-bg.htm#netcardconfig">Wired Connections &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="internet-connecting-bg.htm#dial-mod">56k Modems</a></li>
+						    <li><a href="internet-connecting-bg.htm#netcardconfig">Getting Online - Ceni</a></li>
+					</ul>
+					</li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-bg.htm">Package Management and dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-bg.htm#apt-cook">APT Cookbook and Sources list &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-bg.htm#apt-cook">APT-Guide Cookbook and Sources list</a></li>
+					    <li><a href="sys-admin-apt-bg.htm#apt-install">Installing a new package</a></li>
+					    <li><a href="sys-admin-apt-bg.htm#apt-delete">Deleting a package</a></li>
+					    <li><a href="sys-admin-apt-bg.htm#apt-downgrade">Package Hold and downgrading</a></li>
+					    <li><a href="sys-admin-apt-bg.htm#apt-cache">Package searching with apt-cache</a></li>
+					    <li><a href="sys-admin-apt-bg.htm#gui-pacsea">GUI Package searching</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-bg.htm#kern-upgrade">Upgrading the kernel &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-bg.htm#kern-remove">Removing Kernels</a></li>
+					    <li><a href="sys-admin-kern-upg-bg.htm#kern-upgrade">Upgrading the kernel</a></li>
+					    <li><a href="sys-admin-kern-upg-bg.htm#dmakms">Installing kernel modules dynamically with dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-bg.htm#apt-upgrade">Upgrade an Installed System -  dist-upgrade - Overview &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-bg.htm#live-cd-upgrade">Upgrading by Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-bg.htm#approx">dist-upgrade of multiple PCs on a LAN</a></li>
+					    <li><a href="sys-admin-apt-bg.htm#apt-upgrade">Upgrade an Installed System -  dist-upgrade - Overview</a></li>
+					    <li><a href="sys-admin-apt-bg.htm#du-st">Upgrade an Installed System -  dist-upgrade - The Steps</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-bg.htm">System Administration</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-bg.htm#bois-prep">Upgrading the BIOS with FreeDOS</a></li>
+		<li><a href="vir-rkits-bg.htm#virus-rkits">Virus and Rootkit Scanners</a></li>
+		<li><a href="hd-install-bg.htm#adduser">Adding Users and Passwords &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-bg.htm#adduser">Adding a new user</a></li>
+					    <li><a href="sys-admin-gen-bg.htm#pw-lost">Lost root passwords, new passwords</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-bg.htm#start-services">Services and init runlevels &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-bg.htm#start-services">Services enable/disable</a></li>
+					    <li><a href="sys-admin-gen-bg.htm#init">sidux runlevels - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-bg.htm#rsync">Backing up the system &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-bg.htm#rdiff">Back-Up with rdiff</a></li>
+					    <li><a href="sys-admin-rsync-bg.htm#rsync">Back-Up with rsync</a></li>
+					    <li><a href="home-bg.htm#home-bu">Moving /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-bg.htm#fonts">CUPS, Fonts and Sound &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-bg.htm#fonts">Fonts</a></li>
+					     <li><a href="sys-admin-gen-bg.htm#cups">CUPS - Printing System</a></li>
+					     <li><a href="sys-admin-gen-bg.htm#sound">Sound Mixers</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub-bootman2-bg.htm#mbr-grub-boot">Grub1 - grub-legacy &#8658;</a>
+					  <ul class="sub2-menu" id="sm13e">
+					    <li><a href="sys-admin-grub-bootman2-bg.htm#boot-grub-floppy">Creating a Boot-Floppy</a></li>
+					    <li><a href="sys-admin-grub-bootman2-bg.htm#mbr-grub-boot">Grub1 - MBR Overwritten bootsector</a></li>
+					    <li><a href="sys-admin-grub-bootman2-bg.htm#dual-boot">Grub1 Dual and Multibooting</a></li>
+					    <li><a href="sys-admin-grub-bootman2-bg.htm#what-is-grub">Grub the boot manager</a></li>
+					    <li><a href="sys-admin-grub-bootman2-bg.htm#remove-grub">Removing grub from MBR</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-bg.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub-bootman2-bg.htm#boot-grub-floppy">Creating a Boot-Floppy</a></li>
+					    <li><a href="sys-admin-grub2-bg.htm#chroot">Grub2 - Recovering Grub with chroot</a></li>
+					    <li><a href="sys-admin-grub2-bg.htm#mbr-over-grub2">Grub2 - MBR Overwritten</a></li>
+					    <li><a href="sys-admin-grub2-bg.htm#multi-os">Grub2 - Dual and Multibooting</a></li>
+					    <li><a href="sys-admin-grub2-bg.htm#grub1-grub2">Grub2 -Upgrading from Grub1</a></li>
+					    <li><a href="sys-admin-grub2-bg.htm#grub2">Grub2 - Overview</a></li>
+					</ul>
+					</li>
+			</ul>
+		</li>
+	</ul>
+<!-- menu ends here --> </div>
+<div id="main-page">
+		<div class="divider" id="vmopts">
+				<h2 id="top-header">Virtual Machine options</h2>
+
+						<ul>
+							<li><a href="hd-install-vmopts-bg.htm#kvm">KVM for Intel VT or AMD-V</a></li>
+							<li><a href="hd-install-vmopts-bg.htm#vbox">Virtualbox</a></li>
+							<li><a href="hd-install-vmopts-bg.htm#qemu">QEMU</a></li>
+							<li><a href="hd-install-vmopts-bg.htm#oos">Installing other distributions to an image</a></li>
+						</ul>
+
+							<p><span class="highlight-3">The following examples use aptosid, simply substitute aptosid with the distribution of your choice.</span></p>
+	</div>
+	<div class="divider" id="oos">
+			    <h2>Installing other distributions to a VM image</h2>
+							<p>Note: If and when you wish to install to a virtual machine image, most Linux distributions will probably only need an allocation of 12G. However if you have a requirement to have MS Windows in a virtual machine, you will need to allocate about a 30G, or more, to the image. All image allocation sizes ultimately depend on your requirements. </p>
+
+							<p>Generally, an image allocation size, will not take up additional hard drive space until data is installed. Even then, it will only take space dynamically on a hard drive, contingent to the actual amount of data that expands on the image. This is due to the compression ratios of qcow2.</p>
+
+		      </div>
+		      <div class="divider" id="kvm">
+				<h2>Enabling a KVM Virtual Machine</h2>
+							<!-- <p>KVM is a full virtualisation solution for Linux on x86 hardware containing virtualisation extensions (Intel VT or AMD-V).</p> -->
+							<p>KVM is a full virtualisation solution for Linux running on x86 CPU with virtualisation extensions (Intel VT or AMD-V).</p>
+
+				      <h3>Prerequisites</h3>
+
+							<p>To ascertain whether your hardware supports KVM, ensure that KVM is enabled in the BIOS, (in some cases on an Intel VT or AMD-V system it may not evident as to where the switch is, therefore assume that it is in a KVM state). The way to check is in a console run:</p>
+<pre>
+cat /proc/cpuinfo | egrep --color=always 'vmx|svm'
+</pre>
+							<p>If you see <span class="highlight-3">svm</span> or <span class="highlight-3">vmx</span> in the cpu flags field, your system supports KVM. (Otherwise go back to the BIOS if you believe it is supported and check again, else search the internet as to where in the BIOS menus KVM 'enable' could be hiding).</p>
+
+							<p>Should your BIOS not support KVM refer to <a href="hd-install-vmopts-bg.htm#vbox">Virtualbox</a>
+							 or <a href="hd-install-vmopts-bg.htm#qemu">QEMU</a></p>
+
+							<p>To install and run KVM, firstly ensure that Virtualbox modules are not loaded, (--purge them is the best option), then depending on your chipset:</p>
+
+							<p>For <span class="highlight-3">vmx</span>:</p>
+<pre>
+apt-get install qemu-kvm qemu-utils
+modprobe kvm-intel
+</pre>
+							<p>For <span class="highlight-3">svm</span>:</p>
+<pre>
+apt-get install qemu-kvm qemu-utils
+modprobe kvm-amd
+</pre>
+							 <!-- <p>Another option is reboot as the qemu-kvm initscripts will take care of loading the modules.</p> -->
+							 <p>When you start your system the qemu-kvm initscripts will take care of loading the modules.</p>
+
+					  <h4>Using KVM to boot an aptosid-*.iso</h4> 
+					  <!--<h4>Using KVM to boot an aptosid iso</h4>-->
+
+							<p><span class="highlight-2">As user:</span></p>
+<pre>
+$ kvm -net nic,model=virtio -net user -soundhw ac97 -m 512 -monitor stdio -cdrom &lt;aptosid.iso&gt;
+</pre>
+
+				<h5>Installing  aptosid to a KVM image</h5>
+							<p>First create a hard disk image, (this image will be minimal and only grow as required due to qcow2 compression ratios):</p>
+<pre>
+
+$ qemu-img create -f qcow2 aptosid-VM.img 12G
+</pre>
+
+							<p>Boot the aptosid-*.iso with the following parameters to enable KVM to recognise that there is an QEMU hard disk image available:</p>
+
+<pre>
+$ kvm -net nic,model=virtio -net user -soundhw ac97 -m 512 -monitor stdio -cdrom &lt;/path/to/aptosid-*.iso&gt; -boot d &lt;/path/to/aptosid-VM.img&gt;
+</pre>
+
+							<p>Once the cdrom has booted up click on the aptosid installer icon to activate the installer, (or use the menu), click on the Partitioning tab and launch the partition application you prefer. For the partitioning you can follow the instructions from <a href="part-gparted-en.htm">Partitioning the Hard Drive - Traditional, GPT and LVM</a>  (do not forget to add a swap partition If you are short of memory). Please be aware that formatting will take time so be patient.</p>
+
+<div class="screenshot"><img src="../lib/images-common/images-vm/kvm-gparted02.png" title="gparted kvm hard disk naming" alt="gparted kvm hard disk naming" /></div>
+	<div class="spacer02"></div>
+
+							<p>You now have a VM ready for use:</p>
+
+<pre>
+$ kvm -net nic,model=virtio -net user -soundhw ac97 -m 512 -monitor stdio -drive if=virtio,boot=on,file=&lt;path/to/aptosid-VM.img&gt;
+</pre>
+							<p>Some guests do not support virtio, therefore you need to use other options when launching KVM, for example:</p>
+<pre>
+$ kvm -net nic, -net user -soundhw ac97 -m 512 -monitor stdio -hda &lt;/path/to/your_guest.img&gt; -cdrom your_other.iso -boot d
+</pre>
+
+							 <p>or</p>
+<pre>
+$ kvm -net nic, -net user -soundhw ac97 -m 512 -monitor stdio -hda &lt;/path/to/your_guest.img&gt;
+</pre>
+							<p>See also: <a href="http://www.linux-kvm.org/page/Main_Page"> KVM documentation</a>.</p>
+
+				<h5>Managing your KVM virtual machine installations</h5>
+<pre>
+apt-get install aqemu
+</pre>
+							<p>When using AQEMU ensure that you choose the KVM mode from the drop down box for 'Emulator Type' in the 'General' tab. (Documentation for AQEMU is basically non existent, therefore a few 'trials by error' will be required to figure out the easy to use GUI, however a good start is to use first use the 'VM' menu followed by the 'General' tab).</p>
+
+	</div>
+	<div class="divider" id="vbox">
+		<h2>Booting and installing to a VirtualBox Virtual Machine</h2>
+							<p>The Steps:</p>
+						<ul>
+ 							<li>1. Създайте файл за образ за виртуалния хард-диск във VirtualBox</li>
+ 							<li>2. Стартирайте sidux iso-образа във VirtualBox</li>
+ 							<li>3. Инсталирайте системата върху виртуалния хард-диск</li>
+						</ul>
+
+				<h4>Изисквания</h4>
+							<p><span class="highlight-3">Препоръчвана оперативна памет (RAM): 1 gig </span>: най-добре 512 MB за операционната система на "госта" (виртуалната машина, guest), и 512 MB за операционната система на "домакина" (базовата машина във която се стартира виртуалната, host). Ще може да работи и с по-малко оперативна памет, но в такъв случай не очаквайте кой знае каква  производителност.</p>
+
+							<p><span class="highlight-3">Дисково пространство:</span> Докато самата VirtualBox е много икономична (типичната инсталация се нуждае само от 30 MB дисково пространство), за виртуалните машини ще трябват доста големи файлове, които да имитират техните хард-дискове. Така че, за да инсталирате например MS Windows XP (TM) като виртуална машина, използвания файл с лекота ще "порасне" до десетки GB. За да използвате sidux във VirtualBox, трябва да предвидите 5 gig файл плюс място за swap.</p>
+
+				<h3>Installation:</h3>
+
+<pre>
+apt-get update
+apt-get install virtualbox-ose-qt virtualbox-source dmakms module-assistant
+</pre>
+							<p>Then prepare the module:</p>
+<pre>
+m-a prepare
+m-a a-i virtualbox-source
+</pre>
+							<p>Then activate Dynamic Module-Assistant Kernel Module Support for virtualbox, so that the next time the Linux kernel is updated a virtualbox module is prepared for it too, without manual intervention. To do that, add <span class="highlight-3">virtualbox-source</span> to the <span class="highlight-3">/etc/default/dmakms </span>configuration file. </p>
+<pre>
+mcedit /etc/default/dmakms
+virtualbox-source
+</pre>
+
+							<p>Then reboot the computer.</p>
+
+							<p><a href="sys-admin-kern-upg-bg.htm#dmakms">This is essential reading on dmakms</a></p>
+
+					<h3>Инсталиране на sidux като виртуална машина</h3>
+							<p>Използвайте графичните средства на virtualbox (wizard) за създаването на нова виртуална машина за sidux. След като я стартирате от sidux iso-образ или live-CD, следвайте инструкциите за стандартна инсталация на sidux.</p>
+
+							<p><a href="http://www.virtualbox.org/">VirtualBox има изчерпателно PDF ръководство, което можете да свалите</a> </p>
+
+	</div>
+	<div class="divider" id="qemu">
+		<h2>Booting and installing a QEMU Virtual Machine</h2>
+
+		<ul>
+ 			<li>1. Създайте файл - образ за виртуалния хард-диск за QEMU</li>
+ 			<li>2. Стартирайте iso-образа с QEMU</li>
+ 			<li>3. Инсталирайте системата върху виртуалния хард-диск</li>
+
+		</ul>
+
+							<p>A QT GUI tool is available to help you configure QEMU:</p>
+<pre>
+apt-get install qtemu
+</pre>
+
+ 				<h4>Създаване на файла - образ за виртуалния хард-диск</h4>
+
+				<p>За да използвате qemu ще ви трябва файл-образ на виртуалния хард-диск. Този файл представлява хард-диска на виртуалната машина.</p>
+
+				<p>За създаването му, използвайте командата:</p>
+<pre>
+qemu-img create -f qcow sidux.qcow 3G
+</pre>
+				<p>за да създадете файл-образ с името "sidux.qcow". Параметърът "3G" задава големината на диска - в дадения случай 3 GB. Използвайте суфикса M за мегабайти (например "256M"). Не се безпокойте особено за големината на диска - qcow формата компресира образа, така че празното място на виртуалния диск, не се включва в размера на реалния файл.</p>
+
+
+			<h4>Инсталиране на виртуалната операционна система</h4>
+
+				<p>Тук за първи път стартираме самия емулатор.<span class="highlight-3">Имайте предвид че когато цъкнете с мишката в qemu прозореца където върви виртуалната машина, курсорът се "прихваща" в нея. За да го освободите:</span></p>
+<pre>
+Ctrl+Alt
+</pre>
+
+				<p>Ако искате да използвате iso образ като стартируемо флопи на виртуалната машина, пуснете Qemu съответно:</p>
+<pre>
+qemu -floppy sidux.iso -net nic -net user -m 512 -boot d sidux.qcow
+</pre>
+				<p>За да използвате iso образ като стартируем CD диск на виртуалната машина, пуснете Qemu съответно:</p>
+<pre>
+qemu -cdrom sidux.iso -net nic -net user -m 512 -boot d sidux.qcow
+</pre>
+				<p>Сега инсталирайте sidux, както ако го инсталирате на истински хард-диск</p>
+
+
+			<h4>Използване на системата</h4>
+
+				<p>За да стартирате системата, просто напишете в терминала:</p>
+<pre>
+qemu [hd_image]
+</pre>
+				<p>Не е лоша идея да използвате т.нар. "образи на пластове" (overlay images). По този начин системата на виртуалния диск се създава само веднъж, а всички по-нататъшни изменения се съхраняват от Qemu във външен файл. Така е много по-лесно да се върнете към предишно състояние на системата ако нещо се обърка -  което допринася за стабилността като цяло.</p>
+
+				<p>За да създадете "следващ пласт" (overlay image):</p>
+<pre>
+qemu-img create -b [[базов-образ]] -f qcow [[overlay-образ]]
+</pre>
+				<p>В този ред заменете "базов-образ" с името на файла на виртуалния диск (в нашия пример sidux.qcow). После можете да стартирате qemu със :</p>
+<pre>
+qemu [overlay-образ]
+</pre>
+				<p>и по-нататък, оригиналния образ ще остане недокоснат. Имайте предвид че системата все още се нуждае от базовия образ - не бива да го преименовате или местите, тъй като overlay-образа "е запомнил" пълния път и име на базовия образ.</p>
+
+
+			<h4>Използване на произволен реален раздел на домакина, като единствен първичен раздел от виртуалния диск на госта</h4>
+
+				<p>Понякога може да искате да използвате някой от вашите истински раздели във виртуалната машина в qemu (напр. ако искате да стартирате и вашия компютър, и виртуалния - с един и същ раздел монтиран в корена на файловата система). Това може да бъде направено с помощта на софтуерен RAID в "линеен режим" (linear mode; драйвера за ядрото е linear.ko) и loopback устройство. Номерът тук е  динамично да "съединим последователно" master boot record (MBR), със реалния раздел, който ще бъде включен в "директния образ на диска" (raw disk image файла за виртуален диск), подаден по-нататък на qemu.</p>
+
+				<p>Нека имаме обикновен, размонтиран раздел /dev/sdaN с някаква файлова система, който раздел ще бъде част от образа на виртуалния диск на госта. Първо, правим малък файл съдържащ само MBR:</p>
+<pre>
+dd if=/dev/zero of=/path/to/mbr count=32
+</pre>
+				<p>Така се създава 16 KB (32 * 512 байта) файл. Важно е да не е съвсем малък (макар че MBR се нуждае само от един 512 байтов блок), тъй като колкото по-малък е той, толкова по-малък ще бъде chunk-size (размера на "порциите") използван от софтуерния RAID, което ще се отрази негативно на производителността. После, създаваме loopback устройство (псевдо-дисково устройство), представено от MBR файла:</p>
+<pre>
+losetup -f /path/to/mbr
+</pre>
+				<p>Нека резултиращото устройство e /dev/loop0, понеже засега не използваме други loopback устройства. Следващата стъпка е да създадем "смесено" "над"-псевдоустройство MBR + /dev/sdaN , използвайки линеен софтуерен RAID за да "съединим" двете устройства - псевдо-устройството с реалния раздел, в едно ново устройство:</p>
+<pre>
+ modprobe linear
+ mdadm --build --verbose /dev/md0 --chunk=16 --level=linear --raid-devices=2 /dev/loop0 /dev/sdaN
+</pre>
+				<p>Резултантното /dev/md0 устройство е това, което ще използвате като qemu raw disk образ за госта (не забравяйте да конфигурирате правата така че емулатора да има достъп). Последният "хакерски фокус" е да променим конфигурацията на диска (геометрията на диска и таблицата с разделите) така, че началната точка на първичния раздел в MBR, да съвпада с тази на /dev/sdaN който е част от (вътре във) /dev/md0 (отместването е точно 16 * 512 = 16384 байта в нашия пример). Направете го използвайки fdisk на домакинската операционна система (host machine), а не във емулатора: raw disc детекцията на qemu по подразбиране често ползва незакръгляеми до килобайт отмествания (като 31.5 KB, както в предишната секция)  които не се поддържат от софтуерния RAID code. Така че, в домакина:</p>
+<pre>
+ fdisk /dev/md0
+</pre>
+				<p>Тук създайте единствен първичен раздел съответстващ на /dev/sdaN, и си поиграйте със 's'ector командата от 'x'pert менюто, докато първия цилиндър (където раздела започва), съвпадне с размера на MBR. Накрая, запишете с 'w' (write) резултата - и сте готови:) Сега имате раздел, който можете да монтирате както директно на домакинската операционна система, така и като образ на виртуален диск за qemu:</p>
+<pre>
+ qemu -hdc /dev/md0 [...]
+</pre>
+				<p>Разбира се, на така "сглобеното" устройство можете безопасно да инсталирате произволен стартиращ мениджър (bootloader, напр. grub - той ще бъде физически записан на първото псевдо-устройство от комбинацията съдържащо MBR  - което псевдо-устройство е просто файл), при условие че оригиналния раздел sdaN partition съдържа нужните за това средства.</p>
+
+
+
+			<!--<h4>Използване на модула за ускоряване на QEMU (QEMU Accelerator Module)</h4>
+
+				<p>Програмистите на qemu са създали незадължителен модул към ядрото, който ускорява виртуалните машини почти до равнището на реални системи. Модулът може да се зареди с опцията към него</p>
+<pre>
+major=0
+</pre>
+				<p>, за да се автоматизира създаването на нужното /dev/kqemu устройство. В този случай е задължителна следващата команда</p>
+<pre>
+echo "options kqemu major=0" >> /etc/modprobe.conf
+</pre>
+				<p>която фактически ще добави ред във файла modprobe.conf, за да обезпечи използването на тази опция всеки път при зареждането на модула.</p>
+
+<pre>
+qemu [...] -kernel-kqemu
+</pre>
+				<p> - стартиран с тази опция, сега qemu включва пълната виртуализация, и значително подобрява скоростта.</p>
+
+			<h4>За да стартирате виртуалната машина в qemu:</h4>
+<pre>
+qemu -cdrom /tmp/pkg/sidux-debug.iso -net nic -net user -m 512
+</pre>-->
+							<p><a href="http://www.nongnu.org/qemu/user-doc.html">Официалната документация за проекта QEMU</a> </p>
+
+							<p><a href="http://wiki.archlinux.org/index.php/Qemu">Част от съдържанието на документацията за  QEMU беше преработена и включена в ръководстото за sidux при условията на GNU Free Documentation License 1.2</a> </p>
+
+
+	</div>
+	<div id="rev">Page last revised 18/09/2011 1010 UTC</div>
+
+</div>
+</body>
+</html>
