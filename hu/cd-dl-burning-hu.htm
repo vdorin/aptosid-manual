@@ -1,0 +1,603 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>aptosid Kézikönyv - CD letöltés és kiírás</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision by mrowl 05/05/2009 2310 UTC -->
+<div id="menu"> <!-- menu starts here hu lang maintained by mrowl ruess-->
+<!--aptosid Operating System Manual menu-version-00.00.2010.08.14 -->
+<!-- menu last updated by bluewater 2010.08.14 0100 hrs UTC -->
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="To aptosid.com forums and wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-hu.htm#search-on"><img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" /> Keresés Online Offline</a> </li>
+		<!--<li><a href="http://manual.aptosid.com/meta-manual">Community Software Selections</a></li>-->
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Másik nyelv kiválasztása" alt="lang-switch" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-hu.htm">aptosid OS Manual</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-hu.htm#welcome-gen">aptosid OS Manual &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-hu.htm#cred-team">Credits</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-hu.htm#how-to">How to use this manual &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-hu.htm#how-to">How to use this manual</a></li>
+					  <li><a href="welcome-hu.htm#table-contents">Table of Contents</a></li>
+					</ul>
+					</li>
+		<li><a href="help-hu.htm#help-gen">Getting Help &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-hu.htm#help-gen">Where and how to get help</a></li>
+					  <li><a href="help-hu.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-hu.htm#welcome-quick">aptosid Quick Start Guide</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-hu.htm">ISO Content, Releases, Download Mirrors and Burning</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-hu.htm#cd-content">ISO Content and system requirements &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-hu.htm#rolling">Release Notes</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-hu.htm#download-aptosid">aptosid Mirrors, Downloading and Burning &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-hu.htm#md5">md5 Checksum</a></li>
+					  <li><a href="cd-dl-burning-hu.htm#burn-nero">Burning in Windows</a></li>
+					  <li><a href="cd-dl-burning-hu.htm#burn-linux">Burning in Linux</a></li>
+					  <li><a href="cd-no-gui-burn-hu.htm#burning-no-gui">burniso script</a></li>
+					  <li><a href="cd-no-gui-burn-hu.htm#burn-no-gui-gen">Burning without a GUI</a></li><li><a href="cd-dl-burning-hu.htm#download-aptosid">aptosid Download Mirrors</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-hu.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-hu.htm#rootpw">Root-password on the aptosid-Live ISO</a></li>
+				<li><a href="live-mode-hu.htm#live-cd-installsoft">Installing software whilst on a Live-ISO</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-hu.htm">The Terminal / Konsole</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-hu.htm#term-kon"> Terminal / Konsole &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-hu.htm#term-kon"> Terminal / Konsole</a></li>
+					  <li><a href="term-konsole-hu.htm#cli-help">Command Line Help</a></li>
+					  <li><a href="help-hu.htm#init3-tools">Tools to know in text mode (tty) - init 3</a></li>
+					  <li><a href="term-konsole-hu.htm#term-cmds">Linux Terminal Commands List</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-hu.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-hu.htm">CheatCodes</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-hu.htm#cheatcodes">aptosid specific Live-ISO Cheatcodes</a></li>
+				<li><a href="cheatcodes-hu.htm#cheatcodes-linux">Linux generic Cheatcodes</a></li>
+				<li><a href="cheatcodes-vga-hu.htm#vga">VGA Codes</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-hu.htm">Partitioning Your Hard Drive</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-hu.htm#partition">Partitioning with a GUI &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-hu.htm#partition">Partitioning your HD using GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-hu.htm#ntfs">NTFS partition Resizing using GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-hu.htm#partition">Partitioning with CLI &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-hu.htm#partition">Partitioning  your HD using cfdisk</a></li>
+					    <li><a href="part-cfdisk-hu.htm#formating">Formatting after partitioning with cfdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-hu.htm#part-example">Partitioning Basics &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-hu.htm#part-example">Partition Size Examples</a></li>
+					  <li><a href="part-uuid-hu.htm#uuid">UUID, Partition Labelling and fstab</a></li>
+					  <li><a href="part-cfdisk-hu.htm#disknames">Disk Naming in brief</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-hu.htm">Installation options - HD, USB, VM</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-hu.htm#Inst-prep">Install Preparation &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-hu.htm#Inst-prep">Install Preparation </a></li>
+					  <li><a href="hd-install-hu.htm#Installation">Installing to your HD</a></li>
+					  <li><a href="hd-install-hu.htm#first-hd-boot">First Boot Up</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-hu.htm#fromiso">Booting fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-hu.htm#fromiso">Booting fromiso - Overview</a></li>
+					  <li><a href="hd-install-opts-hu.htm#fromiso-grub-leg">Booting 'fromiso' with grub-legacy</a></li>
+					  <li><a href="hd-install-opts-hu.htm#grub2-fromiso">Booting 'fromiso' with Grub 2</a></li>
+					  <li><a href="hd-install-opts-hu.htm#fromiso-persist">fromiso and persist</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-hu.htm#usb-hd">Installing to USB drives &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-hu.htm#usb-hd">Installing on a USB-HD - aptosid specific - aptosid-on-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-hu.htm#raw-usb">Writing aptosid to a USB/SSD stick with any Linux, MS Windows or Mac OS X system</a></li>
+					</ul>
+					</li>
+		  <li><a href="nbdboot-hu.htm#nbd1">Booting aptosid over a network</a></li>
+		  <li><a href="hd-install-vmopts-hu.htm#vm">Virtual Machine installation options</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="hw-dev-hw-dri-hu.htm">Graphic Cards, Monitors, Xorg &amp; Miscellaneous Drivers</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-hw-dri-hu.htm#hd-ntfs3g">Writing on NTFS-partitions with ntfs-3g</a></li>
+		<li><a href="hw-dev-mon-hu.htm#mon-res">Screen Resolution and Monitors  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-hu.htm#mon-res">Screen Resolution and Monitors</a></li>
+					  <li><a href="hw-dev-mon-hu.htm#xrandr">Dual Monitors and xrandr</a></li>
+					  <li><a href="hw-dev-mon-hu.htm#mon-binary">Dual Monitors (using binaries)</a></li>
+					</ul>
+					</li>
+		<li><a href="hw-dev-hw-dri-hu.htm#non-free-3d">Graphic card proprietry drivers &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="hw-dev-hw-dri-hu.htm#non-free-3d">Binary, non-free drivers for Nvidia &amp; xorg.conf</a></li>
+					  <li><a href="hw-dev-hw-dri-hu.htm#non-free-3d-2">non-free drivers for ATI, Radeon and others</a></li>
+					</ul>
+					</li>
+			  <li><a href="hw-dev-hw-dri-hu.htm#non-free-firmware">Hardware needing non-free firmware drivers</a></li>
+			  <li><a href="hw-dev-hw-dri-hu.htm#non-free">Adding non-free to Sources List</a></li>
+			  <li><a href="hw-dev-hw-dri-hu.htm#native-nv-ati">FOSS xorg drivers for nVidia, ATI, Radeon, Intel &amp; xorg.conf</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-kde-hu.htm">Window Managers</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-kde-hu.htm">Window Managers &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-kde-hu.htm">Window Managers</a></li>
+					    <li><a href="wm-xfce-hu.htm#xfce-notes">Useful Xfce extras</a></li>
+					    <li><a href="wm-kde-hu.htm#install-add">Useful extra KDE Apps</a></li>
+					    <li><a href="wm-kde-hu.htm#desk-freeze">Desktop Freezes</a></li>
+					    <li><a href="wm-kde-hu.htm#kde-login">Cant login in KDE</a></li>
+					    <li><a href="wm-kde-hu.htm#ch-th">Changing Themes</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-kde-hu.htm#dm">Display Managers - dm</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="internet-connecting-hu.htm">Internet connecting, WiFi, LAN and Networks</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-hu.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-hu.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-hu.htm#serv-ftp">FTP Clients</a></li>
+					    <li><a href="lamp-apache-hu.htm#serv-sec">Security Protocols</a></li>
+					    <li><a href="lamp-apache-hu.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-hu.htm#serv-mysql">MySQL Setup</a></li>
+					    <li><a href="lamp-ppp-hu.htm#serv-php">PHP in Apache</a></li>
+					    <li><a href="ntp-server-hu.htm#ntp-server">Timeserver Setup</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-hu.htm#tor">Firewalls and Privacy &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-hu.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-hu.htm#privoxy">Privoxy</a></li>
+					    <li><a href="internet-connecting-hu.htm#firewalls">Firewalls</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-hu.htm#ssh-x">SSH and Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-hu.htm#setup">Samba-Server Setup</a></li>
+						  <li><a href="samba-hu.htm#configure">Configuring SAMBA (Windows)</a></li>
+						  <li><a href="ssh-hu.htm#ssh-fs">SSH Remote Mounting</a></li>
+						  <li><a href="ssh-hu.htm#ssh-x">X Window Apps via SSH</a></li>
+						  <li><a href="ssh-hu.htm#ssh-f">GUI SSH with Konqueror</a></li>
+						  <li><a href="ssh-hu.htm#ssh-w">SSH X-Forwarding from Windows-PC</a></li>
+						  <li><a href="ssh-hu.htm#ssh">SSH and Security</a></li>
+					</ul>
+					</li>
+		<li><a href="internet-connecting-hu.htm#netcardconfig">WIFI connections &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="internet-connecting-hu.htm#netcardconfig">Getting Online - Ceni</a></li>
+						    <li><a href="inet-wpagui-hu.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-hu.htm#net-set1">WiFi - Setting up for WiFi Roaming</a></li>
+						    <li><a href="internet-connecting-wpa-hu.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-hu.htm#hotswitch">Network switching between WiFi and Cable</a></li>
+					</ul>
+					</li>
+		<li><a href="internet-connecting-hu.htm#netcardconfig">Wired Connections &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="internet-connecting-hu.htm#dial-mod">56k Modems</a></li>
+						    <li><a href="internet-connecting-hu.htm#netcardconfig">Getting Online - Ceni</a></li>
+					</ul>
+					</li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-hu.htm">Package Management and dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-hu.htm#apt-cook">APT Cookbook and Sources list &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-hu.htm#apt-cook">APT-Guide Cookbook and Sources list</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#apt-install">Installing a new package</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#apt-delete">Deleting a package</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#apt-downgrade">Package Hold and downgrading</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#apt-cache">Package searching with apt-cache</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#gui-pacsea">GUI Package searching</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-hu.htm#kern-upgrade">Upgrading the kernel &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-hu.htm#kern-remove">Removing Kernels</a></li>
+					    <li><a href="sys-admin-kern-upg-hu.htm#kern-upgrade">Upgrading the kernel</a></li>
+					    <li><a href="sys-admin-kern-upg-hu.htm#dmakms">Installing kernel modules dynamically with dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-hu.htm#apt-upgrade">Upgrade an Installed System -  dist-upgrade - Overview &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-hu.htm#live-cd-upgrade">Upgrading by Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-hu.htm#approx">dist-upgrade of multiple PCs on a LAN</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#apt-upgrade">Upgrade an Installed System -  dist-upgrade - Overview</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#du-st">Upgrade an Installed System -  dist-upgrade - The Steps</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-hu.htm">System Administration</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-hu.htm#bois-prep">Upgrading the BIOS with FreeDOS</a></li>
+		<li><a href="vir-rkits-hu.htm#virus-rkits">Virus and Rootkit Scanners</a></li>
+		<li><a href="hd-install-hu.htm#adduser">Adding Users and Passwords &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-hu.htm#adduser">Adding a new user</a></li>
+					    <li><a href="sys-admin-gen-hu.htm#pw-lost">Lost root passwords, new passwords</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-hu.htm#start-services">Services and init runlevels &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-hu.htm#start-services">Services enable/disable</a></li>
+					    <li><a href="sys-admin-gen-hu.htm#init">aptosid runlevels - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-hu.htm#rsync">Backing up the system &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-hu.htm#rdiff">Back-Up with rdiff</a></li>
+					    <li><a href="sys-admin-rsync-hu.htm#rsync">Back-Up with rsync</a></li>
+					    <li><a href="home-hu.htm#home-bu">Moving /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-hu.htm#fonts">CUPS, Fonts and Sound &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-hu.htm#fonts">Fonts</a></li>
+					     <li><a href="sys-admin-gen-hu.htm#cups">CUPS - Printing System</a></li>
+					     <li><a href="sys-admin-gen-hu.htm#sound">Sound Mixers</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-hu.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-hu.htm#chroot">Grub2 - Recovering Grub with chroot</a></li>
+					    <li><a href="sys-admin-grub2-hu.htm#mbr-over-grub2">Grub2 - MBR Overwritten</a></li>
+					    <li><a href="sys-admin-grub2-hu.htm#multi-os">Grub2 - Dual and Multibooting</a></li>
+					    <li><a href="sys-admin-grub2-hu.htm#grub1-grub2">Grub2 -Upgrading from Grub1</a></li>
+					    <li><a href="sys-admin-grub2-hu.htm#grub2">Grub2 - Overview</a></li>
+					</ul>
+					</li>
+			</ul>
+		</li>
+	</ul>
+<!-- menu ends here --> </div>
+<div id="main-page">
+	<div class="divider" id="download-aptosid">
+		<h2 id="top-header">A aptosid-CD letöltése</h2>
+				<h6><span class="highlight-2">FONTOS MEGJEGYZÉS: </span><span class="highlight-3"> A aptosid, mint Linux LIVE-CD, erős tömörítési technológián alapul, ezért az ISO lemezképfájl lemezre írása odafigyelést igényel. Kizárólag jó minőségű CD (illetve DVD+RW) lemez használata, <span class="highlight-2">DAO (disk-at-once)</span> mód kiválasztása és legfeljebb 8x-os írási sebesség szükséges a megfelelő minőség eléréséhez.</span></h6>
+	<div class="spacer02"></div>
+			<h3>Letöltési tükörszerverek</h3>
+					<h6 class="highlight-3">Kérjük a hozzád legközelebb eső szerver használatát. Mirrors with codeboxes underneath them get updated as soon as changes are uploaded (refer to  /etc/apt/sources.list.d/aptosid.list).</h6>
+
+				<h4>Európa</h4>
+				<ul>
+					<li>
+						<b>Technical University Carolo-Wilhelmina at Brunswick</b>, Németország<br />
+						<a href="http://debian.tu-bs.de/project/aptosid/">http://debian.tu-bs.de/project/aptosid/</a><br />
+						<a href="ftp://debian.tu-bs.de/project/aptosid/">ftp://debian.tu-bs.de/project/aptosid/</a>
+<pre>
+deb http://debian.tu-bs.de/project/aptosid/debian/ sid main fix.main
+# deb-src http://debian.tu-bs.de/project/aptosid/debian/ sid main fix.main
+</pre>
+					</li>
+					<li>
+						<b>Free University Berlin/ spline (Student Project LInux NEtwork)</b>, Németország<br />
+						<a href="ftp://ftp.spline.de/mirrors/aptosid/">ftp://ftp.spline.de/mirrors/aptosid/</a><br />
+						<a href="rsync://ftp.spline.de/aptosid/">rsync://ftp.spline.de/aptosid/</a>
+<pre>
+deb ftp://ftp.spline.de/pub/aptosid/debian/ sid main fix.main
+# deb-src ftp://ftp.spline.de/pub/aptosid/debian/ sid main fix.main
+</pre>
+					</li>
+					<li>
+						<b>OfficeVienna</b>, Austria<br />
+						<a href="http://aptosid.office-vienna.at/aptosid/">http://aptosid.office-vienna.at/aptosid/</a><br />
+						<a href="ftp://aptosid.office-vienna.at/aptosid/">ftp://aptosid.office-vienna.at/aptosid/</a><br />
+<pre>
+deb http://aptosid.office-vienna.at/aptosid/debian/ sid main fix.main
+# deb-src http://aptosid.office-vienna.at/aptosid/debian/ sid main fix.main
+</pre>
+					</li>
+					<li>
+						<b>webtropia.com, Düsseldorf,</b>, Németország<br />
+						<em>(csak csomagok és kernelek)</em><br />
+						<a href="http://aptosid.com/files/">http://aptosid.com/files/</a><br />
+<pre>
+deb http://aptosid.com/debian/ sid main fix.main
+# deb-src http://aptosid.com/debian/ sid main fix.main
+</pre>
+						<b>w3you.com</b>, Germany<br />
+						<em>(csak csomagok és kernelek)</em><br />
+						<a href="http://aptosid.net/files/">http://aptosid.net/files/</a><br />
+<pre>
+deb http://aptosid.net/debian/ sid main fix.main
+# deb-src http://aptosid.net/debian/ sid main fix.main
+</pre>
+					</li>
+				  </ul>
+	</div>
+	<div class="divider" id="aptosid-repo">
+				  <ul>
+					<li>
+						<b>Cybermirror,</b> Germany<br />
+						<a href="http://aptosid.cybermirror.org/">http://aptosid.cybermirror.org/</a>
+					</li>
+					<li>
+						<b>University of Leipzig,</b> Germany<br />
+						<a href="ftp://6bone.informatik.uni-leipzig.de/pub/aptosid.de/aptosid/">ftp://6bone.informatik.uni-leipzig.de/pub/aptosid.de/aptosid/</a><br />
+						<a href="http://6bone.informatik.uni-leipzig.de/pub/aptosid.de/aptosid">http://6bone.informatik.uni-leipzig.de/pub/aptosid.de/aptosid</a><br />
+						<a href="https://6bone.informatik.uni-leipzig.de/pub/aptosid.de/aptosid">https://6bone.informatik.uni-leipzig.de/pub/aptosid.de/aptosid</a><br />
+						<a href="rsync://6bone.informatik.uni-leipzig.de/aptosid">rsync://6bone.informatik.uni-leipzig.de/aptosid</a>
+					</li>
+					<li>
+						<b>University of Kent/ Computer Science Department</b>, Egyesült Királyság<br />
+						<a href="ftp://ftp.mirrorservice.org/sites/aptosid.com/aptosid/">ftp://ftp.mirrorservice.org/sites/aptosid.com/aptosid/</a><br />
+						<a href="http://www.mirrorservice.org/sites/aptosid.com/aptosid/">http://www.mirrorservice.org/sites/aptosid.com/aptosid/</a><br />
+						<a href="rsync://rsync.mirrorservice.org/aptosid.com/aptosid/">rsync://rsync.mirrorservice.org/aptosid.com/aptosid/</a>
+					</li>
+					<li>
+						<b>Ireland's National Education and Research Network/ HEAnet</b>, Dublin, Írország<br />
+						<a href="http://ftp.heanet.ie/pub/aptosid/">http://ftp.heanet.ie/pub/aptosid/</a><br />
+						<a href="ftp://ftp.heanet.ie/pub/aptosid/">ftp://ftp.heanet.ie/pub/aptosid/</a><br />
+						<a href="rsync://ftp.heanet.ie/pub/aptosid/">rsync://ftp.heanet.ie/pub/aptosid/</a>
+					</li>
+					<li>
+						<b>Università degli Studi di Pavia</b>, Olaszország<br />
+						<a href="http://aptosid.unipv.it">http://aptosid.unipv.it</a>
+					</li>
+				</ul>
+				<h4>Észak-Amerika</h4>
+				<ul>
+					<li>
+						<b>University of Tennessee/ SunSITE</b>, TN, USA<br />
+						<a href="http://mira.sunsite.utk.edu/aptosid/">http://mira.sunsite.utk.edu/aptosid/</a><br />
+						<a href="rsync://mira.sunsite.utk.edu/aptosid">rsync://mira.sunsite.utk.edu/aptosid</a>
+					</li>
+					<li>
+						<b>Internap Network Services</b>, Atlanta, GA. USA <br />
+						<a href="ftp://ftp-mirror.internap.com/pub/aptosid/"> ftp://ftp-mirror.internap.com/pub/aptosid/</a><br />
+						<a href="http://ftp-mirror.internap.com/pub/aptosid/"> http://ftp-mirror.internap.com/pub/aptosid/</a><br />
+						<a href="rsync://ftp-mirror.internap.com/aptosid/"> rsync://ftp-mirror.internap.com/aptosid/</a>
+					</li>
+				</ul>
+				<h4>South America</h4>
+				<ul>
+					<li>
+						<b>Universidade Federal do Paraná/ Center for Scientific Computing and Free Software</b>, Brazília<br />
+						<a href="http://aptosid.c3sl.ufpr.br">http://aptosid.c3sl.ufpr.br</a><br />
+                                            	<a href="ftp://aptosid.c3sl.ufpr.br/aptosid">ftp://aptosid.c3sl.ufpr.br/aptosid</a><br />
+                                            	<a href="rsync://aptosid.c3sl.ufpr.br/aptosid">rsync://aptosid.c3sl.ufpr.br/aptosid</a>
+					</li>
+				</ul>
+				<h4>Ázsia</h4>
+				<ul>
+					<li>
+						<b>National Taiwan University/ Computer and Information Networking Center, </b>Taipei City, Kínai Népköztársaság<br />
+ 						<a href="http://ftp.tw.debian.org/pub/aptosid/">http://ftp.tw.debian.org/pub/aptosid/</a><br />
+ 						<a href="ftp://ftp.tw.debian.org/pub/aptosid/">ftp://ftp.tw.debian.org/pub/aptosid/</a>
+					</li>
+				</ul>
+				<h4>Afrika</h4>
+				<ul>
+					<li>
+						<b>University of Cape Town/ Linux Enthusiasts Group</b>, Dél-Afrika<br />
+						<a href="http://ftp.leg.uct.ac.za/pub/linux/aptosid/">http://ftp.leg.uct.ac.za/pub/linux/aptosid/</a>
+					</li>
+				</ul>
+
+				<h4>Ausztrália</h4>
+				<ul>
+					<li>
+						<b>mirror.AARNet.edu.au, Brisbane,</b> Ausztrália<br />
+						<a href="http://mirror.aarnet.edu.au/pub/aptosid/ ">http://mirror.aarnet.edu.au/pub/aptosid/  </a><br />
+						<a href="ftp://mirror.aarnet.edu.au/pub/aptosid/">ftp://mirror.aarnet.edu.au/pub/aptosid/</a>
+					</li>
+				</ul>
+	</div>
+	<div class="divider" id="aptosid-def">
+				<h3>A tükörszervereken lévő fájlok leírása</h3>
+
+							<p>Minden aptosid tükrön megtalálhatók az alábbi fájlok:</p>
+
+<pre>
+MD5SUM
+MD5SUM.gpg
+SHA256SUM
+SHA256SUM.gpg
+SOURCES
+aptosid-20xx-xx-release-name-window-manager-arch-datetimestamp.arch.manifest
+aptosid-20xx-xx-release-name-window-manager-arch-datetimestamp.iso
+</pre>
+
+							<p>A <span class="highlight-3">.manifest</span> fájl felsorolja az összes csomag nevét, amelyet az ISO tartalmaz. </p>
+
+							<p>A <span class="highlight-3">.iso</span> a képfájl, amely letöltendő. </p>
+
+							<p>Az <span class="highlight-3">.md5 és .sha256</span> az ISO fájl integritás- (sérülés)ellenőrzéséhez szükségesek.</p>
+
+							<p>Az <span class="highlight-3">.gpg</span> aláírás fájlok segítségével ellenőrizhető, hogy az integritás-fájlokat (.md5 és .sha256) nem változtatta meg rosszindulatú személy, tehát alkalmasak az ISO fájl integritásának ellenőrzésére.</p>
+
+							<p>The sources tar is only for those who require a static copy of the source code for redistribution purposes to comply with the licensing requirements. Read the SOURCES file for more information.</p>
+
+
+
+
+			<h5 class="highlight-3">Thank you to <a href="http://www.webtropia.com/?o_ref=aptosid"> webtropia.com</a> who sponsor aptosid and to all other mirror hosters for their efforts regarding aptosid.</h5>
+
+							<p>További letöltési címek és tükörszerverek a <a href="http://aptosid.com"> aptosid.com </a>címen találhatók.</p>
+
+							<p>Ha rendelkezel nagy sebességű FTP kiszolgálóval és segítenél, kérjük értesítsd a <a href="http://aptosid.com/">aptosid Forums</a>. De megtalálhatók vagyunk a <a href="http://aptosid.com/">aptosid fórumokon</a> vagy <a href="irc://irc.oftc.net:6667#aptosid">IRC-csatornánkon az oftc.net kiszolgálón</a></p>
+
+
+
+	</div>
+
+	<div class="divider" id="md5">
+		<h2>md5sum és ellenőrzés</h2>
+				<h6><span class="highlight-2">FONTOS MEGJEGYZÉS: </span><span class="highlight-3"> A aptosid, mint Linux LIVE-CD, erős tömörítési technológián alapul, ezért az ISO lemezképfájl lemezre írása odafigyelést igényel. Kizárólag jó minőségű CD (illetve DVD+RW) lemez használata, <span class="highlight-2">DAO (disk-at-once)</span> mód kiválasztása és legfeljebb 8x-os írási sebesség szükséges a megfelelő minőség eléréséhez.</span></h6>
+
+	<div class="spacer02"></div>
+
+							<p>Az md5sum egy ellenőrző összeg, melyet állományok épségének ellenőrzésére használunk. Az ellenőrzés során az aktuális md5sum értéket egy ismert értékhez hasonlítjuk. E módon leellenőrizhető, hogy egy fájl megváltozott, vagy megsérült-e. Minden esetben ajánlott elvégezni az internetről letöltött fájlok ellenőrzését.</p>
+
+							<p>Ha a letöltött fájl md5sum értéke megegyezik az md5-fájlban olvasható értékkel, akkor biztos lehetsz benne, hogy a letöltés hibamentes. Linux alatt a következőképpen állíthatod elő az ellenőrző összeget: (a művelet némi időt igényel)</p>
+
+<pre>
+$ md5sum ellenorizni_kivant_fajl_neve
+</pre>
+
+							<p>Az eredmény a konzolon fog megjelenni.<br />
+							Az md5sum program (486 kb) Windows változatban is elérhető.</p>
+
+							<p>A aptosid ISO állományai mellé mindig biztosítja az md5 fájlt is, és CD-re írás előtt mindig ajánlatos azokat leellenőrizni. Ez garantálja, hogy bármilyen probléma esetén kizárható, hogy az a hibásan letöltött fájl miatt keletkezett, ezáltal a fórumot is tehermentesíthetjük az olyan hibajelentésektől, melyek egyértelműen visszavezethetők a hibásan letöltött fájlokra. Az ellenőrzés parancssori ablakban végezhető el. Lépj be abba a könyvtárba, ahol a letöltött ISO és az md5 fájl található, majd add ki a következő parancsot:</p>
+
+							<p>Download the following files from the mirror:</p>
+<pre>
+MD5SUM
+MD5SUM.gpg
+SHA256SUM
+SHA256SUM.gpg
+</pre>
+							 <p>In a terminal:</p>
+<pre>
+$ md5sum aptosid.iso
+</pre>
+
+		<p>Ha eltérés mutatkozik, hibaüzenetet kapsz:</p>
+
+<pre>
+"aptosid.iso: Error
+md5sum: Warning: calculated checksum does not match!"
+</pre>
+
+							<p>Ha letöltött fájl hibátlan, a program nem ír ki semmilyen üzenetet.</p>
+
+							<p>Az aláírás-fájlok (<span class="highlight-3">.gpg</span>) ellenőrzéséhez <span class="highlight-3">felhasználóként</span> a következőt kell tenni:</p>
+
+							 <h6>Example using:</h6>
+<pre>
+aptosid-2011-02-imera-kde-lite-i386-201107131633.iso 
+</pre>
+							<p>1) "Stefan Lippers-Hollmann's" (slh) publikus kulcsának importálása a kulcsszerverről. (An alternate keyserver is <span class="highlight-3"> subkeys.pgp.net </span>):</p>
+
+<pre>
+$ gpg --keyserver wwwkeys.pgp.net --recv-keys E3BD538B
+gpg --edit-key E3BD538B
+Command> trust
+Command> (choose the option you prefer or quit)
+Command> quit
+</pre>
+
+							<p>2) Most már ellenőrizhetőek az integritás-ellenőrző (checksum) fájlok:</p>
+
+<pre>
+$ gpg --verify SHA256SUM.gpg SHA256SUM
+</pre>
+							<p>Ha a kulcsot 'megbízható'-ként importáltad ("5 trusted ultimately") a szükséges gpg parancsok segítségével, a következő kimenetet kell látnod:</p>
+
+<pre>
+$gpg: Signature made Wed 15 Jul 2009 08:20:59 EST using DSA key ID E3BD538B
+$ gpg: Good signature from "Stefan Lippers-Hollmann (aptosid.com) &lt;s.l-h@gmx.de&gt;"
+</pre>
+
+							<p>Amennyiben a kulcs nem megbízhatóként lett importálva, figyelmeztetést kapunk, bár az aláírás megfelelő ('Good signature'):</p>
+
+<pre>
+gpg: Signature made Wed 15 Jul 2009 08:20:59 EST using DSA key ID E3BD538B
+gpg: checking the trustdb
+gpg: 3 marginal(s) needed, 1 complete(s) needed, PGP trust model
+gpg: depth: 0  valid:   2  signed:   0  trust: 0-, 0q, 0n, 0m, 0f, 2u
+gpg: Good signature from "Stefan Lippers-Hollmann (aptosid.com) &lt;s.l-h@gmx.de&gt;"
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: 64C3 6120 DA8D 91E7 378B  E79F 3916 C431 F809 94F6
+</pre>
+
+	</div>
+	<div class="divider" id="burn-nero">
+		<h2>A CD képfájl kiírása Windows alatt</h2>
+<h6><span class="highlight-2">FONTOS MEGJEGYZÉS: </span><span class="highlight-3"> A aptosid, mint Linux LIVE-CD, erős tömörítési technológián alapul, ezért az ISO lemezképfájl lemezre írása odafigyelést igényel. Kizárólag jó minőségű CD (illetve DVD+RW) lemez használata, <span class="highlight-2">DAO (disk-at-once)</span> mód kiválasztása és legfeljebb 8x-os írási sebesség szükséges a megfelelő minőség eléréséhez.</span></h6>
+	<div class="spacer02"></div>
+
+		<p>Természetesen a CD Windows alatt is megírható. A letöltött fájlt ISO-lemezképként kell kiírni. Zavaró lehet, ha a Winrar  (vagy valamely más tömörítő alkalmazás) hozzá lett rendelve a .ISO fájlokhoz, mert a rendszer tömörített állományként kezelheti. Az ISO-fájlból CD-t kell készíteni. </p>
+
+			<p>Többféle jó megoldás létezik Windows alatt.</p>
+
+			<h5>Nyílt forrású CD-író szoftverek Windowsra</h5>
+							<p><a href="http://cdrtfe.sourceforge.net/">cdrtfe</a>  :kompatibilis  Windows 9x/ME/2000/XP rendszerekkel (Win95, Win98SE, Win2000, és WinXP alatt tesztelve) Win9x/ME esetén kell még: működő ASPI Layer (pl. Adaptec ASPI 4.60)</p>
+
+							<p><a href="http://www.linuxliveusb.com">LinuxLive USB Creator</a>, an open source project, offers a GUI for MS Windows&#8482;, which enables an install of a aptosid-i386.iso (32 bit) to a USB stick. <span class="highlight-3"> You need to use <span class="highlight-2">fromhd</span> bootline/cheatcode on the boot line</span>.</p>
+
+			<h6>Zárt forrású és kereskedelmi CD-író programok Windows-ra</h6>
+						<ul>
+							<li> Nero (nem a Nero Express!)</li>
+
+							<li>Egy másik igen jó ingyenes eszköz a <a href="http://www.cdburnerxp.se/">CD/DVD Burner XP pro</a></li>
+
+							<li>A BurnCDCC <a href="http://www.terabyteunlimited.com/utilities.html"> a TeraByte Unlimited-től, csak ISO képfájl felírására való.</a></li>
+							</ul>
+	</div>
+
+	<div class="divider" id="burn-linux">
+		<h2>CD írás Linux alatt</h2>
+<h6><span class="highlight-2">FONTOS MEGJEGYZÉS: </span><span class="highlight-3"> A aptosid, mint Linux LIVE-CD, erős tömörítési technológián alapul, ezért az ISO lemezképfájl lemezre írása odafigyelést igényel. Kizárólag jó minőségű CD (illetve DVD+RW) lemez használata, <span class="highlight-2">DAO (disk-at-once)</span> mód kiválasztása és legfeljebb 8x-os írási sebesség szükséges a megfelelő minőség eléréséhez.</span></h6>
+	<div class="spacer02"></div>
+
+							<p>Ha már Linux fut a gépen, akkor a CD-t meg lehet írni parancssori eszközzel vagy más, erre a célra telepített programmal.</p>
+
+							<p>A aptosid és más Linux disztribúciók alapértelmezésként szállítják a K3b cd-író programot. Az elindítás után a menüből kell kiválasztani az "Eszközök" -> "Írás CD képmásból...", illetve angol nyelvű rendszeren "Tools" -> "burn CD-Image...", majd ki kell választani a letöltött ISO-fájlt. (pl. aptosid.iso).</p>
+
+							<p>A K3B először kiszámolja az ISO fájl MD5-sum ellenőrző összegét (ez eltarthat egy ideig). Ha az ellenőrző összeg megegyezik az MD5-fájlban található értékkel (pl. aptosid.iso.md5) akkor a letöltés sikeres volt és az írás megkezdhető az "Indítás" gomb megnyomásával.</p>
+
+							<p><span class="highlight-3">Néha előfordulhatnak problémák a grafikus felületű programok használata során. A fájl kiírható parancssorból is a <a href="cd-no-gui-burn-hu.htm"> burniso</a> segítségével.</span></p>
+
+	</div>
+					  <h6>Also see <a href="hd-ins-opts-oos-hu.htm#raw-usb">Writing aptosid to a USB/SSD stick with any Linux, MS Windows or Mac OS X system (32 and 64 bit)</a>.</h6>
+
+			<div id="rev">Content last revised 26/08/2012 1235 UTC</div>
+</div>
+</body>
+</html>

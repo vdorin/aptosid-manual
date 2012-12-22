@@ -1,0 +1,565 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>aptosid Manuals - VM Installation Options</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision by bluewater 22/04/2009 1350hrs UTC -->
+<div id="menu"> <!-- menu starts here hu lang maintained by mrowl ruess-->
+<!--aptosid Operating System Manual menu-version-00.00.2010.08.14 -->
+<!-- menu last updated by bluewater 2010.08.14 0100 hrs UTC -->
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="To aptosid.com forums and wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-hu.htm#search-on"><img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" /> Keresés Online Offline</a> </li>
+		<!--<li><a href="http://manual.aptosid.com/meta-manual">Community Software Selections</a></li>-->
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Másik nyelv kiválasztása" alt="lang-switch" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-hu.htm">aptosid OS Manual</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-hu.htm#welcome-gen">aptosid OS Manual &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-hu.htm#cred-team">Credits</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-hu.htm#how-to">How to use this manual &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-hu.htm#how-to">How to use this manual</a></li>
+					  <li><a href="welcome-hu.htm#table-contents">Table of Contents</a></li>
+					</ul>
+					</li>
+		<li><a href="help-hu.htm#help-gen">Getting Help &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-hu.htm#help-gen">Where and how to get help</a></li>
+					  <li><a href="help-hu.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-hu.htm#welcome-quick">aptosid Quick Start Guide</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-hu.htm">ISO Content, Releases, Download Mirrors and Burning</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-hu.htm#cd-content">ISO Content and system requirements &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-hu.htm#rolling">Release Notes</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-hu.htm#download-aptosid">aptosid Mirrors, Downloading and Burning &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-hu.htm#md5">md5 Checksum</a></li>
+					  <li><a href="cd-dl-burning-hu.htm#burn-nero">Burning in Windows</a></li>
+					  <li><a href="cd-dl-burning-hu.htm#burn-linux">Burning in Linux</a></li>
+					  <li><a href="cd-no-gui-burn-hu.htm#burning-no-gui">burniso script</a></li>
+					  <li><a href="cd-no-gui-burn-hu.htm#burn-no-gui-gen">Burning without a GUI</a></li><li><a href="cd-dl-burning-hu.htm#download-aptosid">aptosid Download Mirrors</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-hu.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-hu.htm#rootpw">Root-password on the aptosid-Live ISO</a></li>
+				<li><a href="live-mode-hu.htm#live-cd-installsoft">Installing software whilst on a Live-ISO</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-hu.htm">The Terminal / Konsole</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-hu.htm#term-kon"> Terminal / Konsole &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-hu.htm#term-kon"> Terminal / Konsole</a></li>
+					  <li><a href="term-konsole-hu.htm#cli-help">Command Line Help</a></li>
+					  <li><a href="help-hu.htm#init3-tools">Tools to know in text mode (tty) - init 3</a></li>
+					  <li><a href="term-konsole-hu.htm#term-cmds">Linux Terminal Commands List</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-hu.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-hu.htm">CheatCodes</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-hu.htm#cheatcodes">aptosid specific Live-ISO Cheatcodes</a></li>
+				<li><a href="cheatcodes-hu.htm#cheatcodes-linux">Linux generic Cheatcodes</a></li>
+				<li><a href="cheatcodes-vga-hu.htm#vga">VGA Codes</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-hu.htm">Partitioning Your Hard Drive</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-hu.htm#partition">Partitioning with a GUI &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-hu.htm#partition">Partitioning your HD using GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-hu.htm#ntfs">NTFS partition Resizing using GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-hu.htm#partition">Partitioning with CLI &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-hu.htm#partition">Partitioning  your HD using cfdisk</a></li>
+					    <li><a href="part-cfdisk-hu.htm#formating">Formatting after partitioning with cfdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-hu.htm#part-example">Partitioning Basics &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-hu.htm#part-example">Partition Size Examples</a></li>
+					  <li><a href="part-uuid-hu.htm#uuid">UUID, Partition Labelling and fstab</a></li>
+					  <li><a href="part-cfdisk-hu.htm#disknames">Disk Naming in brief</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-hu.htm">Installation options - HD, USB, VM</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-hu.htm#Inst-prep">Install Preparation &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-hu.htm#Inst-prep">Install Preparation </a></li>
+					  <li><a href="hd-install-hu.htm#Installation">Installing to your HD</a></li>
+					  <li><a href="hd-install-hu.htm#first-hd-boot">First Boot Up</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-hu.htm#fromiso">Booting fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-hu.htm#fromiso">Booting fromiso - Overview</a></li>
+					  <li><a href="hd-install-opts-hu.htm#fromiso-grub-leg">Booting 'fromiso' with grub-legacy</a></li>
+					  <li><a href="hd-install-opts-hu.htm#grub2-fromiso">Booting 'fromiso' with Grub 2</a></li>
+					  <li><a href="hd-install-opts-hu.htm#fromiso-persist">fromiso and persist</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-hu.htm#usb-hd">Installing to USB drives &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-hu.htm#usb-hd">Installing on a USB-HD - aptosid specific - aptosid-on-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-hu.htm#raw-usb">Writing aptosid to a USB/SSD stick with any Linux, MS Windows or Mac OS X system</a></li>
+					</ul>
+					</li>
+		  <li><a href="nbdboot-hu.htm#nbd1">Booting aptosid over a network</a></li>
+		  <li><a href="hd-install-vmopts-hu.htm#vm">Virtual Machine installation options</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="hw-dev-hw-dri-hu.htm">Graphic Cards, Monitors, Xorg &amp; Miscellaneous Drivers</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-hw-dri-hu.htm#hd-ntfs3g">Writing on NTFS-partitions with ntfs-3g</a></li>
+		<li><a href="hw-dev-mon-hu.htm#mon-res">Screen Resolution and Monitors  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-hu.htm#mon-res">Screen Resolution and Monitors</a></li>
+					  <li><a href="hw-dev-mon-hu.htm#xrandr">Dual Monitors and xrandr</a></li>
+					  <li><a href="hw-dev-mon-hu.htm#mon-binary">Dual Monitors (using binaries)</a></li>
+					</ul>
+					</li>
+		<li><a href="hw-dev-hw-dri-hu.htm#non-free-3d">Graphic card proprietry drivers &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="hw-dev-hw-dri-hu.htm#non-free-3d">Binary, non-free drivers for Nvidia &amp; xorg.conf</a></li>
+					  <li><a href="hw-dev-hw-dri-hu.htm#non-free-3d-2">non-free drivers for ATI, Radeon and others</a></li>
+					</ul>
+					</li>
+			  <li><a href="hw-dev-hw-dri-hu.htm#non-free-firmware">Hardware needing non-free firmware drivers</a></li>
+			  <li><a href="hw-dev-hw-dri-hu.htm#non-free">Adding non-free to Sources List</a></li>
+			  <li><a href="hw-dev-hw-dri-hu.htm#native-nv-ati">FOSS xorg drivers for nVidia, ATI, Radeon, Intel &amp; xorg.conf</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-kde-hu.htm">Window Managers</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-kde-hu.htm">Window Managers &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-kde-hu.htm">Window Managers</a></li>
+					    <li><a href="wm-xfce-hu.htm#xfce-notes">Useful Xfce extras</a></li>
+					    <li><a href="wm-kde-hu.htm#install-add">Useful extra KDE Apps</a></li>
+					    <li><a href="wm-kde-hu.htm#desk-freeze">Desktop Freezes</a></li>
+					    <li><a href="wm-kde-hu.htm#kde-login">Cant login in KDE</a></li>
+					    <li><a href="wm-kde-hu.htm#ch-th">Changing Themes</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-kde-hu.htm#dm">Display Managers - dm</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="internet-connecting-hu.htm">Internet connecting, WiFi, LAN and Networks</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-hu.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-hu.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-hu.htm#serv-ftp">FTP Clients</a></li>
+					    <li><a href="lamp-apache-hu.htm#serv-sec">Security Protocols</a></li>
+					    <li><a href="lamp-apache-hu.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-hu.htm#serv-mysql">MySQL Setup</a></li>
+					    <li><a href="lamp-ppp-hu.htm#serv-php">PHP in Apache</a></li>
+					    <li><a href="ntp-server-hu.htm#ntp-server">Timeserver Setup</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-hu.htm#tor">Firewalls and Privacy &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-hu.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-hu.htm#privoxy">Privoxy</a></li>
+					    <li><a href="internet-connecting-hu.htm#firewalls">Firewalls</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-hu.htm#ssh-x">SSH and Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-hu.htm#setup">Samba-Server Setup</a></li>
+						  <li><a href="samba-hu.htm#configure">Configuring SAMBA (Windows)</a></li>
+						  <li><a href="ssh-hu.htm#ssh-fs">SSH Remote Mounting</a></li>
+						  <li><a href="ssh-hu.htm#ssh-x">X Window Apps via SSH</a></li>
+						  <li><a href="ssh-hu.htm#ssh-f">GUI SSH with Konqueror</a></li>
+						  <li><a href="ssh-hu.htm#ssh-w">SSH X-Forwarding from Windows-PC</a></li>
+						  <li><a href="ssh-hu.htm#ssh">SSH and Security</a></li>
+					</ul>
+					</li>
+		<li><a href="internet-connecting-hu.htm#netcardconfig">WIFI connections &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="internet-connecting-hu.htm#netcardconfig">Getting Online - Ceni</a></li>
+						    <li><a href="inet-wpagui-hu.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-hu.htm#net-set1">WiFi - Setting up for WiFi Roaming</a></li>
+						    <li><a href="internet-connecting-wpa-hu.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-hu.htm#hotswitch">Network switching between WiFi and Cable</a></li>
+					</ul>
+					</li>
+		<li><a href="internet-connecting-hu.htm#netcardconfig">Wired Connections &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="internet-connecting-hu.htm#dial-mod">56k Modems</a></li>
+						    <li><a href="internet-connecting-hu.htm#netcardconfig">Getting Online - Ceni</a></li>
+					</ul>
+					</li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-hu.htm">Package Management and dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-hu.htm#apt-cook">APT Cookbook and Sources list &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-hu.htm#apt-cook">APT-Guide Cookbook and Sources list</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#apt-install">Installing a new package</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#apt-delete">Deleting a package</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#apt-downgrade">Package Hold and downgrading</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#apt-cache">Package searching with apt-cache</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#gui-pacsea">GUI Package searching</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-hu.htm#kern-upgrade">Upgrading the kernel &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-hu.htm#kern-remove">Removing Kernels</a></li>
+					    <li><a href="sys-admin-kern-upg-hu.htm#kern-upgrade">Upgrading the kernel</a></li>
+					    <li><a href="sys-admin-kern-upg-hu.htm#dmakms">Installing kernel modules dynamically with dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-hu.htm#apt-upgrade">Upgrade an Installed System -  dist-upgrade - Overview &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-hu.htm#live-cd-upgrade">Upgrading by Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-hu.htm#approx">dist-upgrade of multiple PCs on a LAN</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#apt-upgrade">Upgrade an Installed System -  dist-upgrade - Overview</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#du-st">Upgrade an Installed System -  dist-upgrade - The Steps</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-hu.htm">System Administration</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-hu.htm#bois-prep">Upgrading the BIOS with FreeDOS</a></li>
+		<li><a href="vir-rkits-hu.htm#virus-rkits">Virus and Rootkit Scanners</a></li>
+		<li><a href="hd-install-hu.htm#adduser">Adding Users and Passwords &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-hu.htm#adduser">Adding a new user</a></li>
+					    <li><a href="sys-admin-gen-hu.htm#pw-lost">Lost root passwords, new passwords</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-hu.htm#start-services">Services and init runlevels &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-hu.htm#start-services">Services enable/disable</a></li>
+					    <li><a href="sys-admin-gen-hu.htm#init">aptosid runlevels - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-hu.htm#rsync">Backing up the system &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-hu.htm#rdiff">Back-Up with rdiff</a></li>
+					    <li><a href="sys-admin-rsync-hu.htm#rsync">Back-Up with rsync</a></li>
+					    <li><a href="home-hu.htm#home-bu">Moving /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-hu.htm#fonts">CUPS, Fonts and Sound &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-hu.htm#fonts">Fonts</a></li>
+					     <li><a href="sys-admin-gen-hu.htm#cups">CUPS - Printing System</a></li>
+					     <li><a href="sys-admin-gen-hu.htm#sound">Sound Mixers</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-hu.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-hu.htm#chroot">Grub2 - Recovering Grub with chroot</a></li>
+					    <li><a href="sys-admin-grub2-hu.htm#mbr-over-grub2">Grub2 - MBR Overwritten</a></li>
+					    <li><a href="sys-admin-grub2-hu.htm#multi-os">Grub2 - Dual and Multibooting</a></li>
+					    <li><a href="sys-admin-grub2-hu.htm#grub1-grub2">Grub2 -Upgrading from Grub1</a></li>
+					    <li><a href="sys-admin-grub2-hu.htm#grub2">Grub2 - Overview</a></li>
+					</ul>
+					</li>
+			</ul>
+		</li>
+	</ul>
+<!-- menu ends here --> </div>
+<div id="main-page">
+		<div class="divider" id="vmopts">
+				<h2 id="top-header">Virtual Machine options</h2>
+
+						<ul>
+							<li><a href="hd-install-vmopts-hu.htm#kvm">KVM for Intel VT or AMD-V</a></li>
+							<li><a href="hd-install-vmopts-hu.htm#vbox">Virtualbox</a></li>
+							<li><a href="hd-install-vmopts-hu.htm#qemu">QEMU</a></li>
+							<li><a href="hd-install-vmopts-hu.htm#oos">Installing other distributions to an image</a></li>
+						</ul>
+
+							<p><span class="highlight-3">The following examples use aptosid, simply substitute aptosid with the distribution of your choice.</span></p>
+	</div>
+	<div class="divider" id="oos">
+			    <h2>Installing other distributions to a VM image</h2>
+							<p>Note: If and when you wish to install to a virtual machine image, most Linux distributions will probably only need an allocation of 12G. However if you have a requirement to have MS Windows in a virtual machine, you will need to allocate about a 30G, or more, to the image. All image allocation sizes ultimately depend on your requirements. </p>
+
+							<p>Generally, an image allocation size, will not take up additional hard drive space until data is installed. Even then, it will only take space dynamically on a hard drive, contingent to the actual amount of data that expands on the image. This is due to the compression ratios of qcow2.</p>
+
+		      </div>
+		      <div class="divider" id="kvm">
+				<h2>Enabling a KVM Virtual Machine</h2>
+							<p>KVM is a full virtualisation solution for Linux running on x86 CPU with virtualisation extensions (Intel VT or AMD-V).</p>
+
+				      <h3>Prerequisites</h3>
+
+							<p>To ascertain whether your hardware supports KVM, ensure that KVM is enabled in the BIOS, (in some cases on an Intel VT or AMD-V system it may not evident as to where the switch is, therefore assume that it is in a KVM state). The way to check is in a console run:</p>
+<pre>
+cat /proc/cpuinfo | egrep --color=always 'vmx|svm'
+</pre>
+							<p>If you see <span class="highlight-3">svm</span> or <span class="highlight-3">vmx</span> in the cpu flags field, your system supports KVM. (Otherwise go back to the BIOS if you believe it is supported and check again, else search the internet as to where in the BIOS menus KVM 'enable' could be hiding).</p>
+
+							<p>Should your BIOS not support KVM refer to <a href="hd-install-vmopts-en.htm#vbox">Virtualbox</a>
+							 or <a href="hd-install-vmopts-en.htm#qemu">QEMU</a></p>
+
+							<p>To install and run KVM, firstly ensure that Virtualbox modules are not loaded, (--purge them is the best option), then depending on your chipset:</p>
+
+							<p>For <span class="highlight-3">vmx</span>:</p>
+<pre>
+apt-get install qemu-kvm qemu-utils
+modprobe kvm-intel
+</pre>
+							<p>For <span class="highlight-3">svm</span>:</p>
+<pre>
+apt-get install qemu-kvm qemu-utils
+modprobe kvm-amd
+</pre>
+							 <p>When you start your system the qemu-kvm initscripts will take care of loading the modules.</p>
+
+					  <h4>Using KVM to boot an aptosid-*.iso</h4> 
+
+							<p><span class="highlight-2">As user:</span></p>
+<pre>
+$ kvm -net nic,model=virtio -net user -soundhw ac97 -m 512 -monitor stdio -cdrom &lt;aptosid.iso&gt;
+</pre>
+
+				<h5>Installing  aptosid to a KVM image</h5>
+							<p>First create a hard disk image, (this image will be minimal and only grow as required due to qcow2 compression ratios):</p>
+<pre>
+$ qemu-img create -f qcow2 aptosid-VM.img 12G
+</pre>
+
+							<p>Boot the aptosid-*.iso with the following parameters to enable KVM to recognise that there is an QEMU hard disk image available:</p>
+
+<pre>
+$ kvm -net nic,model=virtio -net user -soundhw ac97 -m 512 -monitor stdio -cdrom &lt;/path/to/aptosid-*.iso&gt; -boot d &lt;/path/to/aptosid-VM.img&gt;
+</pre>
+
+							<p>Once the cdrom has booted up click on the aptosid installer icon to activate the installer, (or use the menu), click on the Partitioning tab and launch the partition application you prefer. For the partitioning you can follow the instructions from <a href="part-gparted-en.htm">Partitioning the Hard Drive - Traditional, GPT and LVM</a>  (do not forget to add a swap partition If you are short of memory). Please be aware that formatting will take time so be patient.</p>
+
+<div class="screenshot"><img src="../lib/images-common/images-vm/kvm-gparted02.png" title="gparted kvm hard disk naming" alt="gparted kvm hard disk naming" /></div>
+	<div class="spacer02"></div>
+
+							<p>You now have a VM ready for use:</p>
+
+<pre>
+$ kvm -net nic,model=virtio -net user -soundhw ac97 -m 512 -monitor stdio -drive if=virtio,boot=on,file=&lt;path/to/aptosid-VM.img&gt;
+</pre>
+							<p>Some guests do not support virtio, therefore you need to use other options when launching KVM, for example:</p>
+<pre>
+$ kvm -net nic, -net user -soundhw ac97 -m 512 -monitor stdio -hda &lt;/path/to/your_guest.img&gt; -cdrom your_other.iso -boot d
+</pre>
+
+							 <p>or</p>
+<pre>
+$ kvm -net nic, -net user -soundhw ac97 -m 512 -monitor stdio -hda &lt;/path/to/your_guest.img&gt;
+</pre>
+							<p>See also: <a href="http://www.linux-kvm.org/page/Main_Page"> KVM documentation</a>.</p>
+
+				<h5>Managing your KVM virtual machine installations</h5>
+<pre>
+apt-get install aqemu
+</pre>
+							<p>When using AQEMU ensure that you choose the KVM mode from the drop down box for 'Emulator Type' in the 'General' tab. (Documentation for AQEMU is basically non existent, therefore a few 'trials by error' will be required to figure out the easy to use GUI, however a good start is to use first use the 'VM' menu followed by the 'General' tab).</p>
+
+	</div>
+	<div class="divider" id="vbox">
+		<h2>Booting and installing to a VirtualBox Virtual Machine</h2>
+							<p>A szükséges lépések:</p>
+						<ul>
+ 							<li>1. Merevlemez képfájl (harddisk image) létrehozása a VirtualBox számára</li>
+ 							<li>2. A virtuális gép elindítása az ISO-ról</li>
+ 							<li>3. A rendszer telepítése a virtuális lemezre</li>
+						</ul>
+
+				<h4>Rendszer követelmények</h4>
+							<p><span class="highlight-3">Ajánlott memória: 1 GB </span>. Ideális esetben 512 Mb jut a vendég operációs rendszernek és 512 Mb a gazdagépnek (kevesebb memóriával is elindul, de a rendszer teljesítménye csökken).</p>
+
+							<p><span class="highlight-3">Lemez terület:</span> Míg maga a VirtualBox program kis helyet foglal (egy tipikus telepítés nagyjából 30 MB-ot igényel), a virtuális gépek virtuális merevlemezei igen méretes tárhelyet igényelnek - például a MS Windows XP (TM) telepítése után a helyigény sok gigabájtra is nőhet. A aptosid VirtualBoxban való használatához 5 GB lemezképfájl szükséges, plusz némi swap terület.</p>
+
+				<h3>A Virtualbox telepítése</h3>
+
+<pre>
+apt-get update
+apt-get install virtualbox-ose-qt virtualbox-source dmakms module-assistant
+</pre>
+							<p>Then prepare the module:</p>
+<pre>
+m-a prepare
+m-a a-i virtualbox-source
+</pre>
+							<p>Then activate Dynamic Module-Assistant Kernel Module Support for virtualbox, so that the next time the Linux kernel is updated a virtualbox module is prepared for it too, without manual intervention. To do that, add <span class="highlight-3">virtualbox-source</span> to the <span class="highlight-3">/etc/default/dmakms </span>configuration file. </p>
+<pre>
+mcedit /etc/default/dmakms
+virtualbox-source
+</pre>
+
+							<p>Then reboot the computer.</p>
+
+							<p><a href="sys-admin-kern-upg-hu.htm#dmakms">This is essential reading on dmakms</a></p>
+
+					<h3>A aptosid telepítése a virtuális gépre</h3>
+							<p>A VirtualBox varázslója használandó a aptosid virtuális gépének létrehozására. Ezután a aptosid normál telepítési utasításait kell követni.</p>
+
+							<p><a href="http://www.virtualbox.org/">A VirtualBox átfogó, letölthető PDF dokumentációval rendelkezik.</a> </p>
+
+	</div>
+	<div class="divider" id="qemu">
+		<h2>>Booting and installing a QEMU Virtual Machine</h2>
+
+		<ul>
+ 			<li>1. Merevlemez képfájl létrehozása a QEMU számára</li>
+ 			<li>2. Az ISO bootolása a QEMU-val</li>
+ 			<li>3. A rendszer telepítése a QEMU képfájlba</li>
+		</ul>
+
+							<p>A QT GUI tool is available to help you configure QEMU:</p>
+<pre>
+apt-get install qtemu
+</pre>
+
+ 				<h4>Merevlemez képfájl létrehozása</h4>
+
+				<p>A QEMU futtatásához szükséged lesz egy merevlemez képfájlra. Ez a fájl hordozza a virtuális merevlemez teljes tartalmát.</p>
+
+				<p>A lemez elkészítése:</p>
+<pre>
+qemu-img create -f qcow aptosid.qcow 3G
+</pre>
+				<p>A parancs hatására létrejön a "aptosid.qcow" nevű képfájl. A "3G" paraméter határozza meg a lemez méretét - jelen esetben 3 GB. Használható az M utótag, ha megabájtban kényelmesebb megadni a méretet (például "256M"). Nem kell túl sokat foglalkoznod a lemez méretével - a qcow formátum tömöríti a képfájlt, így annak üres területei nem növelik a fájl méretét.</p>
+
+
+			<h4>Az operációs rendszer telepítése</h4>
+
+				<p>Ez az első alkalom, hogy el kell indítanod az emulátort. <span class="highlight-3">Megjegyzés: amikor a QEMU ablakon belül kattintasz, az egérmutatót elkapja az emulátor. Az elengedéshez nyomd meg a következő billentyűkombinációt:</span></p>
+<pre>
+Ctrl+Alt
+</pre>
+
+				<p>Ha rendszerindító floppy lemezt kell használnod, így futtasd a QEMU-t:</p>
+<pre>
+qemu -floppy aptosid.iso -net nic -net user -m 512 -boot d aptosid.qcow
+</pre>
+				<p>Ha a CD-ROM a boot-eszköz, akkor így:</p>
+<pre>
+qemu -cdrom aptosid.iso -net nic -net user -m 512 -boot d aptosid.qcow
+</pre>
+				<p>Most telepíthető a aptosid, a valós merevlemezre való telepítéshez hasonlóan.</p>
+
+
+			<h4>A rendszer futtatása</h4>
+
+				<p>A futtatáshoz szükséges parancs:</p>
+<pre>
+qemu [lemez_képfájl]
+</pre>
+				<p>Hasznos gyakorlat lehet az úgynevezett átfedő (overlay) képfájlok használata. Ezzel a módszerrel egyszer kell létrehozni egy merevlemez képfájlt, majd utasítjuk a QEMU-t, hogy a változásokat egy külső fájlban tárolja. Így rendkívül egyszerű visszaállítani a kiinduló állapotot.</p>
+
+				<p>Az overlay képfájl létrehozásához írjuk a parancssorba:</p>
+<pre>
+qemu-img create -b [[alap_képfájl]] -f qcow [[overlay_képfájl]]
+</pre>
+				<p>Helyettesítsd be a merevlemez képfájlt az alap_képfájl helyére (a mi esetünkben  aptosid.qcow). Ezután így indítsd a quemut:</p>
+<pre>
+qemu [overlay_képfájl]
+</pre>
+				<p>Az eredeti képfájl érintetlen marad. A módszer hátránya, hogy az alap képfájlt nem szabad átnevezni, vagy elmozgatni, mert az overlay képfájl az eredeti névre és helyre hivatkozik.</p>
+
+
+			<h4>Valódi partíció, mint a merevlemez képfájl elsődleges partíciója</h4>
+
+				<p>Lehetséges a QEMU alatt a rendszer valamely valós partícióját is használni (ahogyan egy valódi számítógép elindításakor is megadható a root partíció). Ez a linux szoftveres RAID linear módjával és egy loopback eszköz kombinációjával tehető meg. (ehhez szükség lesz a linear.ko kernel modulra). A trükk abból áll, hogy a QEMU alatt használni kívánt valódi merevlemez partíció elé dinamikusan egy új master boot recordot (MBR) fűzünk.</p>
+
+				<p>Tegyük fel, hogy van egy egyszerű lecsatolt /dev/sdaXN partíciónk tetszőleges fájlrendszerrel, amelyet a QEMU lemezképfájl részévé szeretnénk tenni. Először létre kell hoznunk egy kis fájlt, amely az MBR-t fogja tartalmazni:</p>
+<pre>
+dd if=/dev/zero of=/mbr/fajl/helye count=32
+</pre>
+				<p>Ennek hatására egy 16 Kb-os (32 * 512 bájt) fájl lett létrehozva. Fontos, hogy ne legyen túl kicsi (bár az MBR csak 512 bájtos blokkot igényelne), mert a kisebb fájl kisebb blokkméretet eredményez majd a szoftveres RAID eszközön, az viszont rossz hatással lenne a teljesítményre. Adjunk hozzá egy loopback eszközt az MBR fájlhoz:</p>
+<pre>
+losetup -f /mbr/fajl/helye
+</pre>
+				<p>Tegyük fel, hogy a létrejött eszköz a /dev/loop0 lett (azaz ez az elsőnek létrejött loopback eszközünk). A következő lépés, hogy elkészítjük az "összefűzött" MBR + /dev/sdaN diszk képfájl párost, a szoftveres RAID segítségével:</p>
+<pre>
+ modprobe linear
+ mdadm --build --verbose /dev/md0 --chunk=16 --level=linear --raid-devices=2 /dev/loop0 /dev/sdaN
+</pre>
+				<p>Eredményként egy /dev/md0 eszközt kapunk, amelyet a QEMU lemezképfájlként fog tudni használni (ne felejts el megfelelő jogokat beállítani a fájlon, hogy a QEMU hozzáférhessen). Az utolsó (és szintén trükkös) lépés, hogy beállítjuk a lemez adatait (lemez geometria és partíciós tábla), úgy, hogy az MBR-ben az elsődleges partíció kezdőpontja megegyezzen az egyik /dev/sdaN eszközével a /dev/md0 tömb belsejében (példánkban a 16 * 512 = 16384 bájt eltolása). Ezt az fdisk paranccsal végezheted el a gazdagépen (nem az emulátorban! A QEMU alapértelmezett nyers lemez detektáló rutinja gyakran eredményez nem kilobájtra kerekíthető offszeteket (mint pl. 31.5 KB az előző bekezdésben), amit a szoftveres RAID nem tud lekezelni. Így tehát a gazdagépen add ki):</p>
+<pre>
+ fdisk /dev/md0
+</pre>
+				<p>Hozz létre egy elsődleges partíciót a /dev/sdaN-hez igazodva, és addig igazgasd a 's'ector parancsot az e'x'pert menüből, amíg az első cilinder (ahol az első partíció kezdődik), megegyezik az MBR méretével. Végül a 'w'rite parancs elmenti az eredményt a fájlba: készen is vagyunk. Van egy partíciód, amit a saját rendszereden is felmountolhatsz és a  QEMU is lekezeli, mint lemez képfájlt:</p>
+<pre>
+ qemu -hdc /dev/md0 [...]
+</pre>
+				<p>Természetesen bármilyen rendszerbetöltő telepíthető a QEMU-ban erre a képfájlra, mivel a az eredeti /boot/sdaN partíció tartalmazza a szükséges eszközöket.</p>
+
+
+
+			<!--<h4>A QEMU Accelerator (gyorsító) Modul használata</h4>
+
+				<p>A QEMU fejlesztői készítettek egy opcionális kernel modult, ami felgyorsítja a QEMU-t, ezáltal gyakran közel natív teljesítményt biztosítva. Ehhez a következő opcióval töltsük be a modult:</p>
+<pre>
+major=0
+</pre>
+				<p>A szükséges /dev/kqemu eszköz létrehozásának automatizálására a következő parancs szolgál:</p>
+<pre>
+echo "options kqemu major=0" >> /etc/modprobe.conf
+</pre>
+				<p>Ez kiegészíti a modprobe.conf-ot, amely biztosítja hogy a modul mindig a megfelelő opcióval töltődik be.</p>
+
+<pre>
+qemu [...] -kernel-kqemu
+</pre>
+				<p>Ezzel a teljes virtualizációt engedélyezzük, amely érezhető sebességnövekedést eredményez.</p>
+
+			<h4>A QEMU indítása:</h4>
+<pre>
+qemu -cdrom /tmp/pkg/aptosid-debug.iso -net nic -net user -m 512
+</pre>-->
+		<p><a href="http://www.nongnu.org/qemu/user-doc.html">A QEMU projekt hivatalos dokumentációja </a> </p>
+		<p><a href="http://wiki.archlinux.org/index.php/Qemu">A aptosid Kézikönyv QEMU-ra vonatkozó egyes részei külső helyekről származnak a GNU Szabad Documentációs Licensz 1.2 alatt és hozzá lettek igazítva a aptosid Kézikönyvhöz.</a> </p>
+
+
+	</div>
+	<div id="rev">Page last revised 18/09/2011 1010 UTC</div>
+
+</div>
+</body>
+</html>

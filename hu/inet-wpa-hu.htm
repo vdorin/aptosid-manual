@@ -1,0 +1,842 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>aptosid Kézikönyv - Vezeték nélküli csatlakozás - WiFi WPA-Supplicant</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision by mrowl 05/05/2009 1500 UTC -->
+<div id="menu"> <!-- menu starts here hu lang maintained by mrowl ruess-->
+<!--aptosid Operating System Manual menu-version-00.00.2010.08.14 -->
+<!-- menu last updated by bluewater 2010.08.14 0100 hrs UTC -->
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="To aptosid.com forums and wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-hu.htm#search-on"><img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" /> Keresés Online Offline</a> </li>
+		<!--<li><a href="http://manual.aptosid.com/meta-manual">Community Software Selections</a></li>-->
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Másik nyelv kiválasztása" alt="lang-switch" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-hu.htm">aptosid OS Manual</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-hu.htm#welcome-gen">aptosid OS Manual &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-hu.htm#cred-team">Credits</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-hu.htm#how-to">How to use this manual &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-hu.htm#how-to">How to use this manual</a></li>
+					  <li><a href="welcome-hu.htm#table-contents">Table of Contents</a></li>
+					</ul>
+					</li>
+		<li><a href="help-hu.htm#help-gen">Getting Help &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-hu.htm#help-gen">Where and how to get help</a></li>
+					  <li><a href="help-hu.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-hu.htm#welcome-quick">aptosid Quick Start Guide</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-hu.htm">ISO Content, Releases, Download Mirrors and Burning</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-hu.htm#cd-content">ISO Content and system requirements &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-hu.htm#rolling">Release Notes</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-hu.htm#download-aptosid">aptosid Mirrors, Downloading and Burning &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-hu.htm#md5">md5 Checksum</a></li>
+					  <li><a href="cd-dl-burning-hu.htm#burn-nero">Burning in Windows</a></li>
+					  <li><a href="cd-dl-burning-hu.htm#burn-linux">Burning in Linux</a></li>
+					  <li><a href="cd-no-gui-burn-hu.htm#burning-no-gui">burniso script</a></li>
+					  <li><a href="cd-no-gui-burn-hu.htm#burn-no-gui-gen">Burning without a GUI</a></li><li><a href="cd-dl-burning-hu.htm#download-aptosid">aptosid Download Mirrors</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-hu.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-hu.htm#rootpw">Root-password on the aptosid-Live ISO</a></li>
+				<li><a href="live-mode-hu.htm#live-cd-installsoft">Installing software whilst on a Live-ISO</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-hu.htm">The Terminal / Konsole</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-hu.htm#term-kon"> Terminal / Konsole &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-hu.htm#term-kon"> Terminal / Konsole</a></li>
+					  <li><a href="term-konsole-hu.htm#cli-help">Command Line Help</a></li>
+					  <li><a href="help-hu.htm#init3-tools">Tools to know in text mode (tty) - init 3</a></li>
+					  <li><a href="term-konsole-hu.htm#term-cmds">Linux Terminal Commands List</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-hu.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-hu.htm">CheatCodes</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-hu.htm#cheatcodes">aptosid specific Live-ISO Cheatcodes</a></li>
+				<li><a href="cheatcodes-hu.htm#cheatcodes-linux">Linux generic Cheatcodes</a></li>
+				<li><a href="cheatcodes-vga-hu.htm#vga">VGA Codes</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-hu.htm">Partitioning Your Hard Drive</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-hu.htm#partition">Partitioning with a GUI &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-hu.htm#partition">Partitioning your HD using GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-hu.htm#ntfs">NTFS partition Resizing using GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-hu.htm#partition">Partitioning with CLI &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-hu.htm#partition">Partitioning  your HD using cfdisk</a></li>
+					    <li><a href="part-cfdisk-hu.htm#formating">Formatting after partitioning with cfdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-hu.htm#part-example">Partitioning Basics &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-hu.htm#part-example">Partition Size Examples</a></li>
+					  <li><a href="part-uuid-hu.htm#uuid">UUID, Partition Labelling and fstab</a></li>
+					  <li><a href="part-cfdisk-hu.htm#disknames">Disk Naming in brief</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-hu.htm">Installation options - HD, USB, VM</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-hu.htm#Inst-prep">Install Preparation &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-hu.htm#Inst-prep">Install Preparation </a></li>
+					  <li><a href="hd-install-hu.htm#Installation">Installing to your HD</a></li>
+					  <li><a href="hd-install-hu.htm#first-hd-boot">First Boot Up</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-hu.htm#fromiso">Booting fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-hu.htm#fromiso">Booting fromiso - Overview</a></li>
+					  <li><a href="hd-install-opts-hu.htm#fromiso-grub-leg">Booting 'fromiso' with grub-legacy</a></li>
+					  <li><a href="hd-install-opts-hu.htm#grub2-fromiso">Booting 'fromiso' with Grub 2</a></li>
+					  <li><a href="hd-install-opts-hu.htm#fromiso-persist">fromiso and persist</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-hu.htm#usb-hd">Installing to USB drives &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-hu.htm#usb-hd">Installing on a USB-HD - aptosid specific - aptosid-on-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-hu.htm#raw-usb">Writing aptosid to a USB/SSD stick with any Linux, MS Windows or Mac OS X system</a></li>
+					</ul>
+					</li>
+		  <li><a href="nbdboot-hu.htm#nbd1">Booting aptosid over a network</a></li>
+		  <li><a href="hd-install-vmopts-hu.htm#vm">Virtual Machine installation options</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="hw-dev-hw-dri-hu.htm">Graphic Cards, Monitors, Xorg &amp; Miscellaneous Drivers</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-hw-dri-hu.htm#hd-ntfs3g">Writing on NTFS-partitions with ntfs-3g</a></li>
+		<li><a href="hw-dev-mon-hu.htm#mon-res">Screen Resolution and Monitors  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-hu.htm#mon-res">Screen Resolution and Monitors</a></li>
+					  <li><a href="hw-dev-mon-hu.htm#xrandr">Dual Monitors and xrandr</a></li>
+					  <li><a href="hw-dev-mon-hu.htm#mon-binary">Dual Monitors (using binaries)</a></li>
+					</ul>
+					</li>
+		<li><a href="hw-dev-hw-dri-hu.htm#non-free-3d">Graphic card proprietry drivers &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="hw-dev-hw-dri-hu.htm#non-free-3d">Binary, non-free drivers for Nvidia &amp; xorg.conf</a></li>
+					  <li><a href="hw-dev-hw-dri-hu.htm#non-free-3d-2">non-free drivers for ATI, Radeon and others</a></li>
+					</ul>
+					</li>
+			  <li><a href="hw-dev-hw-dri-hu.htm#non-free-firmware">Hardware needing non-free firmware drivers</a></li>
+			  <li><a href="hw-dev-hw-dri-hu.htm#non-free">Adding non-free to Sources List</a></li>
+			  <li><a href="hw-dev-hw-dri-hu.htm#native-nv-ati">FOSS xorg drivers for nVidia, ATI, Radeon, Intel &amp; xorg.conf</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-kde-hu.htm">Window Managers</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-kde-hu.htm">Window Managers &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-kde-hu.htm">Window Managers</a></li>
+					    <li><a href="wm-xfce-hu.htm#xfce-notes">Useful Xfce extras</a></li>
+					    <li><a href="wm-kde-hu.htm#install-add">Useful extra KDE Apps</a></li>
+					    <li><a href="wm-kde-hu.htm#desk-freeze">Desktop Freezes</a></li>
+					    <li><a href="wm-kde-hu.htm#kde-login">Cant login in KDE</a></li>
+					    <li><a href="wm-kde-hu.htm#ch-th">Changing Themes</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-kde-hu.htm#dm">Display Managers - dm</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="internet-connecting-hu.htm">Internet connecting, WiFi, LAN and Networks</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-hu.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-hu.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-hu.htm#serv-ftp">FTP Clients</a></li>
+					    <li><a href="lamp-apache-hu.htm#serv-sec">Security Protocols</a></li>
+					    <li><a href="lamp-apache-hu.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-hu.htm#serv-mysql">MySQL Setup</a></li>
+					    <li><a href="lamp-ppp-hu.htm#serv-php">PHP in Apache</a></li>
+					    <li><a href="ntp-server-hu.htm#ntp-server">Timeserver Setup</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-hu.htm#tor">Firewalls and Privacy &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-hu.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-hu.htm#privoxy">Privoxy</a></li>
+					    <li><a href="internet-connecting-hu.htm#firewalls">Firewalls</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-hu.htm#ssh-x">SSH and Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-hu.htm#setup">Samba-Server Setup</a></li>
+						  <li><a href="samba-hu.htm#configure">Configuring SAMBA (Windows)</a></li>
+						  <li><a href="ssh-hu.htm#ssh-fs">SSH Remote Mounting</a></li>
+						  <li><a href="ssh-hu.htm#ssh-x">X Window Apps via SSH</a></li>
+						  <li><a href="ssh-hu.htm#ssh-f">GUI SSH with Konqueror</a></li>
+						  <li><a href="ssh-hu.htm#ssh-w">SSH X-Forwarding from Windows-PC</a></li>
+						  <li><a href="ssh-hu.htm#ssh">SSH and Security</a></li>
+					</ul>
+					</li>
+		<li><a href="internet-connecting-hu.htm#netcardconfig">WIFI connections &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="internet-connecting-hu.htm#netcardconfig">Getting Online - Ceni</a></li>
+						    <li><a href="inet-wpagui-hu.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-hu.htm#net-set1">WiFi - Setting up for WiFi Roaming</a></li>
+						    <li><a href="internet-connecting-wpa-hu.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-hu.htm#hotswitch">Network switching between WiFi and Cable</a></li>
+					</ul>
+					</li>
+		<li><a href="internet-connecting-hu.htm#netcardconfig">Wired Connections &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="internet-connecting-hu.htm#dial-mod">56k Modems</a></li>
+						    <li><a href="internet-connecting-hu.htm#netcardconfig">Getting Online - Ceni</a></li>
+					</ul>
+					</li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-hu.htm">Package Management and dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-hu.htm#apt-cook">APT Cookbook and Sources list &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-hu.htm#apt-cook">APT-Guide Cookbook and Sources list</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#apt-install">Installing a new package</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#apt-delete">Deleting a package</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#apt-downgrade">Package Hold and downgrading</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#apt-cache">Package searching with apt-cache</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#gui-pacsea">GUI Package searching</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-hu.htm#kern-upgrade">Upgrading the kernel &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-hu.htm#kern-remove">Removing Kernels</a></li>
+					    <li><a href="sys-admin-kern-upg-hu.htm#kern-upgrade">Upgrading the kernel</a></li>
+					    <li><a href="sys-admin-kern-upg-hu.htm#dmakms">Installing kernel modules dynamically with dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-hu.htm#apt-upgrade">Upgrade an Installed System -  dist-upgrade - Overview &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-hu.htm#live-cd-upgrade">Upgrading by Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-hu.htm#approx">dist-upgrade of multiple PCs on a LAN</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#apt-upgrade">Upgrade an Installed System -  dist-upgrade - Overview</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#du-st">Upgrade an Installed System -  dist-upgrade - The Steps</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-hu.htm">System Administration</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-hu.htm#bois-prep">Upgrading the BIOS with FreeDOS</a></li>
+		<li><a href="vir-rkits-hu.htm#virus-rkits">Virus and Rootkit Scanners</a></li>
+		<li><a href="hd-install-hu.htm#adduser">Adding Users and Passwords &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-hu.htm#adduser">Adding a new user</a></li>
+					    <li><a href="sys-admin-gen-hu.htm#pw-lost">Lost root passwords, new passwords</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-hu.htm#start-services">Services and init runlevels &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-hu.htm#start-services">Services enable/disable</a></li>
+					    <li><a href="sys-admin-gen-hu.htm#init">aptosid runlevels - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-hu.htm#rsync">Backing up the system &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-hu.htm#rdiff">Back-Up with rdiff</a></li>
+					    <li><a href="sys-admin-rsync-hu.htm#rsync">Back-Up with rsync</a></li>
+					    <li><a href="home-hu.htm#home-bu">Moving /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-hu.htm#fonts">CUPS, Fonts and Sound &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-hu.htm#fonts">Fonts</a></li>
+					     <li><a href="sys-admin-gen-hu.htm#cups">CUPS - Printing System</a></li>
+					     <li><a href="sys-admin-gen-hu.htm#sound">Sound Mixers</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-hu.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-hu.htm#chroot">Grub2 - Recovering Grub with chroot</a></li>
+					    <li><a href="sys-admin-grub2-hu.htm#mbr-over-grub2">Grub2 - MBR Overwritten</a></li>
+					    <li><a href="sys-admin-grub2-hu.htm#multi-os">Grub2 - Dual and Multibooting</a></li>
+					    <li><a href="sys-admin-grub2-hu.htm#grub1-grub2">Grub2 -Upgrading from Grub1</a></li>
+					    <li><a href="sys-admin-grub2-hu.htm#grub2">Grub2 - Overview</a></li>
+					</ul>
+					</li>
+			</ul>
+		</li>
+	</ul>
+<!-- menu ends here --> </div>
+<div id="main-page">
+	<div class="divider" id="wpa-basic">
+		<h2 id="top-header" >Kezdő lépések a vezetékmentes hálózatok (WIFI) beállításához</h2>
+
+							<p class="highlight-3">A különböző országokban alkalmazott jogszabályok összetettsége miatt a aptosid live-cd csak ún. dfsg-free szoftvereket szállít.<a href="hw-dev-hw-dri-hu.htm#non-free">További információk a nem szabad forráskódú firmware-ek használatáról</a></p>
+
+							<p>A WiFi hálózat beállításához szükség van rövid időre a vezetékes hálózatra, a megfelelő firmware letöltéséhez.</p>
+
+							<p>Ha nincs elérhető vezetékes hálózat, a letöltött firmware felmásolható egy hordozható eszközre (pl. pendrive); és onnan telepíthető root felhasználóként:</p>
+<pre>
+#dpkg -i &lt;firmware.deb&gt;
+</pre>
+
+							<p>A szükséges firmware megállapítása a következő paranccsal lehetséges (ehhez nem kell ismerni sem a vezetéknélküli adapter gyártóját, sem a pontos modell megnevezést):</p>
+<pre>
+#fw-detect
+</pre>
+							<p>A program a következő információkat fogja megadni:</p>
+<pre>
+#apt-get update
+#apt-get install &lt;a firmware neve&gt;
+#modprobe -r &lt;modulnév&gt;
+#modprobe &lt;modulnév&gt;
+</pre>
+
+							<p>Use the apt-get install sor használata, amelyet az fw-detect program írt ki a parancssorba. A telepítés befejezése után további parancsok begépelésére lesz szükség a hálózat konfigurálása előtt.</p>
+
+							<p>Most már betölthető az eszköz meghajtó modulja a konfigurálás megkezdéséhez.</p>
+
+							<p>Root felhasználóként, parancssorban:</p>
+<pre>
+modprobe -r &lt;modulnév&gt;
+
+modprobe &lt;modulnév&gt;
+</pre>
+							<p>Modulnévként az fw-detect által kiírt értékek használandók. Használható a parancssor hasznos funkciója, a kiegészítés (bash completion): <br />
+							Elég mindössze az első pár betűt beírni a &lt;modulnév&gt;-ből, majd a TAB billentyű lenyomására a modul neve automatikusan kiegészítődik (példa: modprobe ipw &lt;TAB billentyű&gt;). Ez a funkció kizárja az elgépelés lehetőségét.</p>
+
+							<p>A fenti modprobe parancsok sikeres futás esetén nem adnak semmilyen visszajelzést, tehát ha visszatér a prompt, a modul rendesen betöltődött.</p>
+
+							<p>A modul betöltődésének ellenőrzése:</p>
+<pre>
+#lsmod | grep &lt;module&gt;
+</pre>
+
+
+							<p>Most már elindítható a Ceni a K menü > Internet > <a href="internet-connecting-hu.htm#netcardconfig">Getting Online - Ceni</a> menüből vagy parancssorból root-ként. A vezeték nélküli hálózati adapter megjelenik és konfigurálható.</p>
+
+							<p>A Wlan WiFi grafikus interfész használatához lásd a <a href="inet-wpagui-hu.htm">WiFi - WPA barangolás beállítása</a> fejezetet.</p>
+	</div>
+	<div class="divider" id="wpa">
+		<h2>A wpasupplicant működési módjai Debian alatt</h2>
+
+							<p class="highlight-3">A különböző országokban alkalmazott jogszabályok összetettsége miatt a aptosid live-cd csak ún. dfsg-free szoftvereket szállít. <a href="hw-dev-hw-dri-hu.htm#non-free">További információk a nem szabad forráskódú firmware-ek használatáról</a></p>
+
+							<p>A Debian wpasupplicant csomag kétféle kényelmes működési lehetőséget kínál, amelyek közvetlenül integrálva vannak a rendszer belsejében működő hálózati infrastruktúrába, az ifupdown-ba.</p>
+
+			<h4>Tartalomjegyzék</h4>
+
+					<h6>1.  A wpa_supplicant meghajtó backend-ek leírása</h6>
+          						<p>* Támogatott meghajtók<br />
+         						* Elterjedt eszközmeghajtók</p>
+
+					<h6>2. #1: Menedzselt (managed) mód</h6>
+          						<p>* Példák<br />
+          						* Szokásos beállítások<br />
+          						* Fontos megjegyzések a menedzselt módhoz<br />
+          						* Működés </p>
+
+					<h6>3. #2: Barangoló (roaming) mód</h6>
+          						<p>* wpa_supplicant.conf<br />
+          						* /etc/network/interfaces<br />
+          						* A Roaming Daemon szabályozása a wpa_action-nel<br />
+          						* A barangoló beállítások finomhangolása<br />
+          						* A naplófájl<br />
+          						* Külső összerendelő szkriptek használata (pl. guessnet)<br />
+          						* /etc/network/interfaces with external mapping</p>
+
+					<h6>4. Hibakeresés</h6>
+          						<p>* Rejtett SSID-k</p>
+
+					<h6>5. Biztonsági megfontolások</h6>
+          						<p>* Fájl jogosultságok beállítása</p>
+
+			<h2>1. A wpa_supplicant meghajtó backend-ek leírása</h2>
+
+							<p>Amennyiben a 'wpa-driver' nincs kifejezetten beállítva az adott eszköz típusának megfelelően, minden hálózati interfész a 'wext' meghajtó backend-et fogja használni. A 2.4-es, vagy a 2.6.14-es verzió előtti 2.6 kernel-szériát használók számára a wpa meghajtó megadása kötelező.</p>
+
+	</div>
+				<h3>Támogatott meghajtók</h3>
+	<div>
+		<table>
+			<tbody>
+				<tr>
+					<th>Meghajtó</th>
+					<th>Leírás</th>
+				</tr>
+				<tr>
+					<td>wext</td>
+					<td>Linux vezeték nélküli kiterjesztés (általános)</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="spacer05"></div>
+		<h3>Elterjedt eszközmeghajtók</h3>
+
+							<p>Az Intel Pro vezetéknélküli adapterek (ipw2100, ipw2200 and ipw3945) a 'wext' háttérfolyamatot használják, ha a kernel újabb a 2.6.14-es verziónál.</p>
+
+							<p>A Madwifi mind a 'wext', mind a 'madwifi' meghajtó backend-eket támogatja. A 'wext' használata preferált, azonban a 'madwifi' bizonyos körülmények között jobban teljesíthet.</p>
+
+							<p>Az Ndiswrapper az 1.16-os verzió óta NEM TÁMOGATJA az 'ndiswrapper' meghajtó backend-et. Következésképpen, a 'wext' használata kötelező a régebben használt ndiswrapper helyett.</p>
+
+							<p>A meghajtó típusa az interfaces(5) megfelelő szekciójában állítható be, a 'wpa-driver' opció használatával. Példa:</p>
+
+<pre>
+iface eth0 inet dhcp
+	wpa-driver wext
+	. . . . . more options
+</pre>
+
+			<h2>2. #1: Menedzselt mód</h2>
+
+							<p>Ez a mód egyetlen, jól ismert hálózathoz való csatlakozást tesz lehetővé a wpa_supplicant-en keresztül. Működése ebben az esetben a wireless-tools csomaghoz hasonló. A kapcsolat kialakításához szükséges mindegyik wpa_supplicant beállítás előtagja 'wpa-', majd ezt követi a beállítás értéke.</p>
+
+		<h6>Példa a menedzselt hálózatos wpa.conf fájlra - Példa 1.</h6>
+<pre>
+Példa a menedzselt hálózatos wpa.conf fájlra - Példa 1.
+Megjegyzés: a 'wpa-psk' érték csak akkor érvényes, ha:
+
+   1. nyílt szöveges karakterlánc, amely minimum 8, maximum 63 karakter hosszú
+   2. hexadecimális számsorozat 64 karakteren
+
+# A 'NETBEER' SSID azonosítójú access pointhoz való kapcsolódás
+# WPA-PSK/WPA2-PSK titkosítással. A meghajtó a wpa_supplicant 'wext'
+# backend-jét fogja alkalmazni, mivel nincs wpa_driver megadva.
+# A jelszó ASCII (nyílt szöveges) sztring. A hálózati cím DHCP-vel kerül
+# meghatározásra.
+#
+iface wlan0 inet dhcp
+
+        wpa-ssid NETBEER
+        # plaintext passphrase
+        wpa-psk PlainTextSecret
+
+# Kapcsolódás a 'homezone' access point-hoz WPA-PSK/WPA2-PSK titkosítással,
+# a wpa_supplicant 'wext' meghajtó backend-jét használva.
+# A jelszó kódolt hexadecimális sztringként van megadva. A hálózati cím
+# DHCP-vel kerül meghatározásra.
+#
+iface wlan0 inet dhcp
+wpa-driver wext
+wpa-ssid homezone
+# A hexadecimális jelszó nyílt szöveges jelszóból került elkódolásra
+wpa-psk 000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f
+
+# A 'HotSpot1' nevű és '00:1a:2b:3c:4d:5e' BSSID-jű access point használata
+# WPA-PSK/WPA2-PSK titkosítással, a 'madwifi' meghajtó backend használata.
+# A jelszó ismét nyílt szövegként van megadva, a hálózati beállítások
+# statikusan meghatározottak.
+#
+iface ath0 inet static
+
+        wpa-driver madwifi
+        wpa-ssid HotSpot1
+        wpa-bssid 00:1a:2b:3c:4d:5e
+        # plaintext passphrase
+        wpa-psk madhotspot
+        wpa-key-mgmt WPA-PSK
+        wpa-pairwise TKIP CCMP
+        wpa-group TKIP CCMP
+        wpa-proto WPA RSN
+        # static ip settings
+        address 192.168.0.100
+        netmask 255.255.255.0
+        network 192.168.0.0
+        broadcast 192.168.0.255
+        gateway 192.168.0.1
+
+# Az eth1 hálózati adapterhez a felhasználó által megadott wpa_supplicant.conf fájlt
+# fogja használni. A wpa-driver típus nincs megadva, tehát a wext-et hívjuk meg.
+# A hálózati cím DHCP-vel kerül beállításra.
+#
+iface eth1 inet dhcp
+
+wpa-conf /path/to/wpa_supplicant.conf
+</pre>
+
+	<div class="divider" id="wpa1">
+		<h2>Szokásos beállítások</h2>
+
+							<p>Az alábbiakban egy rövid összefoglaló található a 'wpa-' opciókról, amelyet a /etc/network/interfaces szekcióiban használhatunk. Lásd még a 'Fontos megjegyzések a Menedzselt móddal kapcsolatban' alfejezetet az érvényes és érvénytelen 'wpa-' értékekkel kapcsolatban.</p>
+
+							<p class="highlight-2">Megjegyzés: Az alábbi értékek megkülönböztetik a kis- és NAGYBeTűKet.</p>
+
+<pre>
+Elem		Példa érték		Leírás
+=======         =============           ===========
+wpa-ssid        szabadszoveg         A saját hálózat SSID-jének beállítása
+wpa-bssid       00:1a:2b:3c:4d:5e       A saját AP BSSID-je
+wpa-psk         0123456789......        WPA jelszó. Használd a wpa_passphrase(8)
+                                        programot, hogy a jelszó-SSID párból
+                                        legenerálja a WPA jelszót
+wpa-key-mgmt    NONE, WPA-PSK, WPA-EAP, Az érvényes autentikáció menedzsment-
+                IEEE8021X               protokoll típusok felsorolása
+wpa-group       CCMP, TKIP, WEP104,     Az érvényes group rejtjelező algoritmusok
+                WEP40                   megadása a WPA-hoz
+wpa-pairwise    CCMP, TKIP, NONE        Az érvényes pairwise rejtjelező algoritmusok
+                                        megadása a WPA-hoz
+wpa-auth-alg    OPEN, SHARED, LEAP      A megengedett IEEE 802.11
+                                        autentikációs algoritmusok
+wpa-proto       WPA, RSN                Az érvényes protokollok listája
+wpa-identity    myplaintextname         Adminisztrátor felhasználónév
+                                        (az EAP autentikációhoz)
+wpa-password    myplaintextpassword     jelszó (EAP autentikációhoz)
+wpa-scan-ssid   0 or 1                  SSID szkennelés meghatározott Probe Request
+                                        keretekkel
+wpa-ap-scan     0 or 1 or 2             A wpa_supplicant belső logikájának
+                                        beállítása
+
+</pre>
+							<p>A wpa_cli(8) teljes funkcionalitása megvalósítandó. Bármilyen hiányzó funkció hibának minősül és ilyen minőségben kell bejelenteni. Hibajavításokat mindig szívesen fogadunk.</p>
+
+
+			<h2>Fontos megjegyzések a menedzselt módhoz</h2>
+
+							<p>Majdnem mindegyik 'wpa-' opcióhoz szükséges legalább egy SSID beállítása. Csak néhány opciónak van globális hatása; ezek a 'wpa-ap-scan' és a 'wpa-preauthenticate'.</p>
+
+							<p>Ha az interfaces (5) fájlban bármelyik 'wpa-' opciót megadjuk, annak eredményeként a wpa_supplicant daemon el fog indulni.</p>
+
+							<p>A wpasupplicant ifupdown szkript nem ellenőrzi le, hogy az egyes opcióknak a megfelelő értékeket adtuk-e. Például feltételezi, hogy bizonyos mezők nyílt szövegesek, és ezeket idézőjelek közé zárja, mielőtt átadja a wpa_cli programnak, amely így fogja átadni a wpa_supplicant ctrl_interface socket-e által létrehozott hálózati konfigurációs blokknak.</p>
+
+							<p>Ha az ifup-ot kézzel, a '--verbose' parancssori kapcsolóval futtatjuk le, meg fogja jeleníteni az összes parancsot, amelyet a wpa_cli a hálózati konfigurációs blokk létrehozásához használ. Ha a /etc/network/interfaces fájl bármely wpa-* opciójának értéke idézőjelek közé van zárva, azt "nyílt szöveg" vagy "ASCII" formátumban fogja kezelni.</p>
+
+							<p>Egyes megadandó értékekről feltételezi, hogy hexadecimálisan vannak megadva (ilyenek pl. a wpa-wep-key* opciók). A wpa-psk 'típusa' egyszerűen úgy kerül meghatározásra, hogy ellenőrzi, van-e benne akár egyetlen nem hexadecimális karakter (ez esetben nyílt szövegesként kezeli).</p>
+
+			<h2>Működés</h2>
+
+							<p>Ahogyan korábban említettük, minden wpa_supplicant-ra vonatkozó elem neve 'wpa-'-val kezdődik. Minden elem megfelel a wpa_supplicant egy-egy tulajdonságának, ezeket a wpa_supplicant.conf(5), a wpa_supplicant(8) és a wpa_cli(8) man-oldalak írják le.</p>
+
+							<p>A supplicant elindítása előtt nem történik semmilyen konfigurációs lépés, a wpa_cli a hálózati konfigurációt a bekonfigurált 'wpa-*' sorokból fogja összeállítani. Kezdetben a wpa_supplicant vagy a wpa_cli közvetlenül nem állítja a hálózati eszköz tulajdonságait (eltérően attól a módszertől, ahogyan az iwconfig-gal beállíthatjuk az essid-et), ehelyett értesíti az eszközt, hogy számára mely access point-ok elérhetőek és melyekre kapcsolódhat. Ha az eszköz végigpásztázta a területet és talált egy megfelelő access pointot, a tulajdonságai beállítódnak.</p>
+
+							<p>A szkriptek, amely az összes munkát elvégzik:</p>
+
+<pre>
+/etc/wpa_supplicant/ifupdown.sh
+/etc/wpa_supplicant/functions.sh
+</pre>
+
+							<p>Az ifupdown.sh-t a run-parts indítja, amelyet pedig az ifupdown indít el a 'pre-up', 'pre-down' és 'post-down' fázisokban.</p>
+
+
+							<p>A 'pre-up' fázisban, a wpa_supplicant daemon indítását követően egy sorozat wpa_cli parancs fut le, amelyek beállítják a hálózati konfigurációt, megfelelően a 'wpa-' opcióknak, amelyek a /etc/network/interfaces fájlban vannak felsorolva a megfelelő fizikai hálózati adapternél.</p>
+
+							<p>Ha a wpa-barangolás be van kapcsolva, a wpa_cli daemon elindítja a 'post-up' fázist.</p>
+
+							<p>A 'pre-down' fázisban a wpa_cli daemon leállításra kerül, ha még futott.</p>
+
+							<p>A 'post-down' fázisban a wpa_supplicant daemon kerül leállításra.</p>
+
+			<h2>3. #2: Barangoló (roaming) mód</h2>
+
+							<p>A csomag egy beépülő, rendkívül egyszerű barangoló mechanizmust tartalmaz, amely wpa_cli action szkript (/sbin/wpa_action) formájában működik, és amely átveszi az ellenőrzést az ifupdown felett. A wpa_action(8) man-oldal írja le teljes mértékben ennek technikai részleteit.</p>
+
+							<p>A barangoló interfész aktiválásához alakítsd a következő példa blokkot az interfaces(5) fájlban saját konfigurációdhoz:</p>
+
+<pre>
+iface eth1 inet manual
+	wpa-driver wext
+        wpa-roam /path/to/wpa_supplicant.conf
+</pre>
+
+							<p>A fenti példa eredményeképpen két daemon fog elindulni, a wpa_supplicant és a wpa_cli. A wpa_supplicant.conf előzetes beállítása feltétlenül szükséges. Jó kiindulási alapot jelenthet a következő konfigurációs fájl:</p>
+
+<pre>
+ # másold a sablont a /etc/wpa_supplicant/ alá
+        cp /usr/share/doc/wpasupplicant/examples/wpa-roam.conf \
+                /etc/wpa_supplicant/wpa_supplicant.conf
+        # csak a root írhatja-olvashatja a fájlt
+        chmod 0600 /etc/wpa_supplicant/wpa_supplicant.conf
+
+Megjegyzés: Feltétlenül fontos, hogy a használatban lévő wpa_supplicant.conf
+      fájl megadja a 'ctrl_interface' helyét, így a kommunikációs socket létrejöhet a
+      wpa_cli (wpa-roam daemon) részére. Az idézett példa konfiguráció a
+      /usr/share/doc/wpasupplicant/examples/wpa-roam.conf-ban ésszerű alapértelmezéseket
+      tartalmaz.
+
+</pre>
+
+
+							<p>Szükséges a fájl megfelelő módosítása az ismert hálózatok konfigurációs blokkjainak megadásával. Ha nem vagy biztos abban, hogy ez mit jelent, most olvasd el a wpa_supplicant.conf(5) man-oldalt.</p>
+
+							<p>Minden hálózathoz megadható egy opcionális 'id_str', amely a hálózatot azonosító egyszerű szöveges érték. A hálózati profilok ezen szöveges értékek alapján jönnek létre; ez teremti meg a kapcsolatot az interfaces(5) fájlban lévő logikai interfészekkel. Ha nincs 'id_str' definiálva egy hálózathoz, az wpa_action az alapértelmezett logikai interfészt fogja használni. Az alapértelmezett interfészt a 'wpa-default-iface' opcióval állíthatjuk be.</p>
+
+							<p>Mit jelent mindez? Ezt egy, a wpa_action(8) man-oldalából kiollózott kis példával szemléltetjük.</p>
+
+		<h6>wpa_supplicant.conf példa</h6>
+<pre>
+wpa_supplicant.conf példa:
+network={
+        ssid="foo"
+        key_mgmt=NONE
+        # ez az id_str fogja értesíteni a /sbin/wpa_action-t: 'ifup uni'
+        id_str="uni"
+}
+
+network={
+        ssid="bar"
+        psk=123456789...
+        # ez az id_str fogja értesíteni a /sbin/wpa_action-t: 'ifup home_static'
+        id_str="home_static"
+}
+
+network={
+        ssid=""
+        key_mgmt=NONE
+        # Nincs 'id_str' paraméter, az /sbin/wpa_action az 'ifup default' lesz
+}
+</pre>
+
+	</div>
+	<div class="divider" id="wpa2">
+		<h6>/etc/network/interfaces példa</h6>
+<pre>
+/etc/network/interfaces példa:
+# a barangoló (romaing) interfész KÖTELEZŐEN a kézi inet módszert használja
+# Az 'allow-hotplug' vagy 'auto' biztosítja, hogy a daemon automatikusan elinduljon
+allow-hotplug eth1
+iface eth1 inet manual
+
+        wpa-driver wext
+        wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf
+
+
+# Nincs id_str, a 'default'-at fogja használni
+iface default inet dhcp
+
+
+# id_str="uni"
+iface uni inet dhcp
+
+# id_str="home_static"
+iface home_static inet static
+
+        address 192.168.0.20
+        netmask 255.255.255.0
+        network 192.168.0.0
+
+        broadcast 192.168.0.255
+        gateway 192.168.0.1
+</pre>
+
+							<p>A logikai interfészt az ifup fogja felhúzni, és az ifdown fogja lekapcsolni, ahogyan a wpa_supplicant felkapcsolódik és lekapcsolódik az adott hálózatra, amelyet az 'id_str' paraméterrel jelöltünk meg a wpa_supplicant.conf konfigurációs fájlban.</p>
+
+							<p>A /sbin/wpa_action által végrehajtott parancsok a /var/log/wpa_action.log fájlba naplózódnak, probléma esetén kérjük ezt a fájlt is csatolni.</p>
+
+			<h2>A wpa_supplicant, wpa_cli és wpa_gui működésének szabályozása</h2>
+
+							<p>A wpa_supplicant program működését a "netdev" felhasználói csoport tagjai tudják szabályozni, amennyiben a példa barangoló beállításokat használjuk egy az egyben (ellenkező esetben annak a csoportnak a tagjai, amit megadtunk a GROUP= crtl_interface paraméterben).</p>
+<pre>
+# a példa fájl az alapértelmezett ctrl_interface paramétert használja
+	# /usr/share/doc/wpasupplicant/examples/wpa-roam.conf
+        ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+
+A supplicant irányításához a the wpa_cli (parancssori) and wpa_gui (QT-s)
+program használható. Ezek segítségével lehet kapcsolódni, lekapcsolódni, új hálózati
+konfigurációs blokkokat hozzáadni és eltávolítani, megadni a szükséges biztonsági információkat stb.
+</pre>
+
+
+
+
+<h2>A Roaming Daemon szabályozása a wpa_action-nel</h2>
+
+							<p>A roaming daemon indítása után átveszi az irányítást az ifupdown felett. Ennek megfelelően a wpa_cli meghívja az ifup-ot, mihelyt a wpa_supplicant sikeresen kapcsolódott az access point-ra; illetve meghívja az ifdown parancsot, ha a kapcsolat megszakad vagy megszűnik. Amíg a roaming daemon aktív, az ifupdown nem irányítható közvetlen, kézileg kiadott parancsokkal, ehelyett a /sbin/wpa_action segítségével lehet leállítani vagy újraindítani a roaming daemon-t. Például a roaming daemon leállítása az 'eth1' interfészen:</p>
+
+<pre>
+wpa_action eth1 stop
+</pre>
+
+
+							<p>A roaming daemon adatainak új hálózattal való frissítése lehetséges annak leállítása nélkül is. A wpa_supplicant.conf fájl szerkesztését követően (amely fájlt a daemon az új hálózat részletes információinak felolvasására használ), a /etc/network/interfaces fájlhoz hozzáadhatók azok a tetszőleges paraméterek, amelyek az új hálózatra vonatkoznak (ezeket az 'id_str' paraméter kapcsolja össze), majd újraindítjuk a daemont az alábbi szerint:</p>
+
+<pre>
+wpa_action eth1 reload
+</pre>
+
+							<p>A wpa_action lehetőségeinek teljes technikai dokumentációjához lásd a the wpa_action(8) man-oldalt.</p>
+
+	</div>
+	<div class="divider" id="wpa3">
+		<h2>A barangoló beállítások finomhangolása</h2>
+
+							<p>Egyes esetekben előfordulhat, hogy több ismert access point egyszerre van megfelelő közelségben. Ekkor kézzel is kiválasztható a wpa_cli vagy wpa_gui programokban, hogy melyik legyen az elsődleges, vagy mindegyik hálózatnak adhatunk egy megfelelő prioritást. Ez a 'priority' opcióval lehetséges a wpa_supplicant.conf-ban.</p>
+
+	</div>
+	<div class="divider" id="wpa4">
+		<h2>A naplófájl</h2>
+
+							<p>A roaming daemon által végrehajtott parancsok a /var/log/wpa_action.log naplófájlban találhatók. A következő információk kerülnek naplózásra:</p>
+
+							<p>*dátum és idő<br />
+							*interfész neve és az esemény<br />
+							*környezeti változók értékei (WPA_ID, WPA_ID_STR, WPA_CTRL_DIR)<br />
+							*a futtatott ifupdown parancs<br />
+							*wpa_cli státusz (WPA-PSK alapján, a hálózat más információt mutathat)<br />
+							*bssid (hardver azonosító)<br />
+							*ssid<br />
+							*id<br />
+							*id_str<br />
+							*pairwise_cipher<br />
+							*group_cipher<br />
+							*key_mgmt<br />
+							*wpa_state<br />
+							*IP-cím</p>
+
+
+	</div>
+	<div class="divider" id="wpa5">
+		<h2>Külső összerendelő szkriptek használata (pl. guessnet)</h2>
+
+							<p>A logikai interfészek belső, 'id_str'-en keresztül történő összerendelése mellett a wpa_action meghívhat külső szkripteket is. Az összerendelő szkript a logikai interfész nevével tér vissza, amelyet fel kell húzni. Bármely szkript, amely az ifupdown-nal együttműködik (lásd interfaces (5)), szintén használható a wpa_action-nel együtt.</p>
+
+							<p>Az összerendelő szkript használatához add hozzá a 'wpa-mapping-script szkriptnév' sort az interfaces megfelelő fizikai roaming interfész szekciójába. (Érdemes a szkriptet teljes elérési úttal megadni.)</p>
+
+							<p>A wpa-map szöveggel kezdődő sorok tartalma egy az egyben átadásra kerül az összerendelő szkript bemenetére. Mivel az ifupdown csak egy wpa-map sort engedélyez, a wpa-map után írt számokkal lehetséges több ilyen sor megadása. Példa:</p>
+
+<pre>
+iface wlan0 inet manual
+        wpa-driver wext
+        wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf
+        wpa-mapping-script guessnet-ifupdown
+        wpa-map0 home
+        wpa-map1 work
+        wpa-map2 school
+        # ... újabb wpa-mapX sorok
+</pre>
+							<p>Alapértelmezésben az összerendelő szkript csak akkor működik, ha nincs 'id_str' megadva az adott hálózathoz. Ha szeretnéd az 'id_str' ellenőrzést teljesen letiltani és egy külső összerendelő szkriptet használni, használd a 'wpa-mapping-script-priority 1' beállítást az alapértelmezett viselkedés felülbírálására.</p>
+
+							<p>Ha a szkript üres sztringgel tér vissza, a wpa_action a 'default' interfészt fogja használni, amennyiben nincs megadva alternatív interfész a 'wpa-roam-default-iface' opcióban.</p>
+
+							<p>Az alábbiakban egy haladó példa található, amely a guessnet-ifupdown nevű külső összerendelő szkriptet használja.</p>
+
+					<h6>/etc/network/interfaces külső összerendelő szkripttel</h6>
+<pre>
+/etc/network/interfaces külső összerendelő szkripttel:
+allow-hotplug wlan0
+iface wlan0 inet manual
+
+        wpa-driver wext
+        wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf
+        wpa-roam-default-iface default-wparoam
+        wpa-mapping-script guessnet-ifupdown
+        wpa-map default: default-guessnet
+        wpa-map0 home_static
+        wpa-map1 work_static
+
+
+# A school csak 'id_str' egyezés alapján kerülhet kiválasztásra
+iface school inet dhcp
+
+        # resolvconf
+        dns-nameservers 11.22.33.44 55.66.77.88
+
+iface home_static inet static
+
+        address 192.168.0.20
+        netmask 255.255.255.0
+
+        network 192.168.0.0
+        broadcast 192.168.0.255
+        gateway 192.168.0.1
+        test peer address 192.168.0.1 mac 00:01:02:03:04:05
+
+
+iface work_static inet static
+
+        address 192.168.3.200
+        netmask 255.255.255.0
+        network 192.168.3.0
+        broadcast 192.168.3.255
+
+        gateway 192.168.3.1
+        test peer address 192.168.3.1 mac 00:01:02:03:04:05
+
+iface default-guessnet inet dhcp
+
+iface default-wparoam inet dhcp
+</pre>
+
+							<p>A példában a wpa_action a guessnet-et fogja a megfelelő logikai interfész kiválasztásához használni, de csak akkor ha nincs 'id_str' opció megadva az adott hálózathoz a wpa_supplicant.conf-ban.</p>
+
+							<p>A 'wpa-map' sorok határozzák meg a kitalálandó hálózatot (guessnet) a tesztelendő logikai interfészekkel, illetve a default interfésszel, amelyet akkor használ, ha minden logikai interfész tesztje sikertelen. A logikai interfészek 'test' sorait a guessnet arra használja, hogy megállapítsa, vajon arra a hálózatra létezik-e pillanatnyilag kapcsolat (azaz elérhető-e). Például a guessnet kiválasztja a 'home_static' interfészt, ha talál egy 192.168.0.1 IP-című és 00:01:02:03:04:05 MAC-című eszközt az aktuális hálózaton. Ha minden teszt sikertelen, a 'default-guessnet' interfészt fogja bekonfigurálni.</p>
+
+							<p>Kérjük, további információkhoz olvasd el a guessnet(8) man-oldalt.</p>
+
+			<h2>4. Hibakeresés</h2>
+
+							<p>Egy kapcsolat debugolásához, kapcsolódási és autentikációs problémák felderítéséhez a `wpa_cli -i &lt;interfész&gt;` indítását ajánljuk egy különálló shell-ben, még az interfész elindítása előtt. Használd a 'level 0' paramétert az összes debug üzenet megtekintéséhez. Ezután használd az `ifup --verbose &lt;interfész&gt;` parancsot a wpasupplicant-ot indító szkript részletes debug üzeneteihez.</p>
+	</div>
+	<div class="divider" id="wpa6">
+		<h2>Rejtett SSID-k</h2>
+
+							<p>Tájékoztatásként lásd a #358137 hibát. A rejtett SSID-hez való kapcsolódáshoz a wpa_supplicant.conf-ban próbáld az 'ap_scan=1' opció megadását a globális részben, és a 'scan_ssid=1' megadását a hálózat konfigurációs blokkjában. Menedzselt módban ez a következő sorokkal tehető meg:</p>
+
+<pre>
+iface eth1 inet dhcp
+wpa-conf managed
+wpa-ap-scan 1
+wpa-scan-ssid 1
+# további beállítások
+</pre>
+
+							<p>A #368770 szerint a WEP-titkosított hálózatokhoz való kapcsolódás nagyon hosszú időt is igénybe vehet. Néhány esetben az 'ap_scan=2' használata a konfigurációs fájlban (vagy a 'wpa-ap-scan 2' használata, ami az "ap_scan=2"-vel egyenértékű) nagyban gyorsítja a kapcsolódást.</p>
+
+ 							<p>Kérjük vedd figyelembe, az ap_scan paraméter "2"-re állítása megköveteli a biztonsági házirend (key_mgmt, pairwise, group és proto változók) pontos megadását minden egyes hálózatnál.</p>
+
+	</div>
+	<div class="divider" id="wpa7">
+		<h2>5. Biztonsági megfontolások</h2>
+				<h5>Fájl jogosultságok beállítása</h5>
+							<p>Fontos figyelmet fordítanunk arra, hogy a privát jelszavak (PSK-k) és egyéb érzékeny információk ne kerülhessenek illetéktelen kezekbe, ezért biztosítani kell, hogy ezeket a fájlokat csak azok tulajdonosa olvashassa. Példa:</p>
+
+<pre>
+chmod 0600 /etc/network/interfaces
+# az elérési utat írd át a saját wpa_supplicant.conf fájlodéra
+chmod 0600 /etc/wpa_supplicant/wpa_supplicant.conf
+</pre>
+							<p>Alapértelmezetten a /etc/network/interfaces mindenki számára olvasható, tehát nem felel meg titkos kulcsok és jelszavak tárolására.</p>
+
+	</div>
+			<div id="rev">Az oldal utoljára frissítve 14/08/2010 0100 UTCC</div>
+
+</div>
+</body>
+</html>

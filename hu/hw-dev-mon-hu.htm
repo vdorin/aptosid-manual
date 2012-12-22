@@ -1,0 +1,546 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>aptosid Manuals - Képernyő felbontás és Dualhead </title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision by mrowl 05/05/2009 2345 UTC -->
+<div id="menu"> <!-- menu starts here hu lang maintained by mrowl ruess-->
+<!--aptosid Operating System Manual menu-version-00.00.2010.08.14 -->
+<!-- menu last updated by bluewater 2010.08.14 0100 hrs UTC -->
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="To aptosid.com forums and wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-hu.htm#search-on"><img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" /> Keresés Online Offline</a> </li>
+		<!--<li><a href="http://manual.aptosid.com/meta-manual">Community Software Selections</a></li>-->
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Másik nyelv kiválasztása" alt="lang-switch" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-hu.htm">aptosid OS Manual</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-hu.htm#welcome-gen">aptosid OS Manual &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-hu.htm#cred-team">Credits</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-hu.htm#how-to">How to use this manual &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-hu.htm#how-to">How to use this manual</a></li>
+					  <li><a href="welcome-hu.htm#table-contents">Table of Contents</a></li>
+					</ul>
+					</li>
+		<li><a href="help-hu.htm#help-gen">Getting Help &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-hu.htm#help-gen">Where and how to get help</a></li>
+					  <li><a href="help-hu.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-hu.htm#welcome-quick">aptosid Quick Start Guide</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-hu.htm">ISO Content, Releases, Download Mirrors and Burning</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-hu.htm#cd-content">ISO Content and system requirements &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-hu.htm#rolling">Release Notes</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-hu.htm#download-aptosid">aptosid Mirrors, Downloading and Burning &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-hu.htm#md5">md5 Checksum</a></li>
+					  <li><a href="cd-dl-burning-hu.htm#burn-nero">Burning in Windows</a></li>
+					  <li><a href="cd-dl-burning-hu.htm#burn-linux">Burning in Linux</a></li>
+					  <li><a href="cd-no-gui-burn-hu.htm#burning-no-gui">burniso script</a></li>
+					  <li><a href="cd-no-gui-burn-hu.htm#burn-no-gui-gen">Burning without a GUI</a></li><li><a href="cd-dl-burning-hu.htm#download-aptosid">aptosid Download Mirrors</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-hu.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-hu.htm#rootpw">Root-password on the aptosid-Live ISO</a></li>
+				<li><a href="live-mode-hu.htm#live-cd-installsoft">Installing software whilst on a Live-ISO</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-hu.htm">The Terminal / Konsole</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-hu.htm#term-kon"> Terminal / Konsole &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-hu.htm#term-kon"> Terminal / Konsole</a></li>
+					  <li><a href="term-konsole-hu.htm#cli-help">Command Line Help</a></li>
+					  <li><a href="help-hu.htm#init3-tools">Tools to know in text mode (tty) - init 3</a></li>
+					  <li><a href="term-konsole-hu.htm#term-cmds">Linux Terminal Commands List</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-hu.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-hu.htm">CheatCodes</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-hu.htm#cheatcodes">aptosid specific Live-ISO Cheatcodes</a></li>
+				<li><a href="cheatcodes-hu.htm#cheatcodes-linux">Linux generic Cheatcodes</a></li>
+				<li><a href="cheatcodes-vga-hu.htm#vga">VGA Codes</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-hu.htm">Partitioning Your Hard Drive</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-hu.htm#partition">Partitioning with a GUI &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-hu.htm#partition">Partitioning your HD using GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-hu.htm#ntfs">NTFS partition Resizing using GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-hu.htm#partition">Partitioning with CLI &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-hu.htm#partition">Partitioning  your HD using cfdisk</a></li>
+					    <li><a href="part-cfdisk-hu.htm#formating">Formatting after partitioning with cfdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-hu.htm#part-example">Partitioning Basics &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-hu.htm#part-example">Partition Size Examples</a></li>
+					  <li><a href="part-uuid-hu.htm#uuid">UUID, Partition Labelling and fstab</a></li>
+					  <li><a href="part-cfdisk-hu.htm#disknames">Disk Naming in brief</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-hu.htm">Installation options - HD, USB, VM</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-hu.htm#Inst-prep">Install Preparation &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-hu.htm#Inst-prep">Install Preparation </a></li>
+					  <li><a href="hd-install-hu.htm#Installation">Installing to your HD</a></li>
+					  <li><a href="hd-install-hu.htm#first-hd-boot">First Boot Up</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-hu.htm#fromiso">Booting fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-hu.htm#fromiso">Booting fromiso - Overview</a></li>
+					  <li><a href="hd-install-opts-hu.htm#fromiso-grub-leg">Booting 'fromiso' with grub-legacy</a></li>
+					  <li><a href="hd-install-opts-hu.htm#grub2-fromiso">Booting 'fromiso' with Grub 2</a></li>
+					  <li><a href="hd-install-opts-hu.htm#fromiso-persist">fromiso and persist</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-hu.htm#usb-hd">Installing to USB drives &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-hu.htm#usb-hd">Installing on a USB-HD - aptosid specific - aptosid-on-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-hu.htm#raw-usb">Writing aptosid to a USB/SSD stick with any Linux, MS Windows or Mac OS X system</a></li>
+					</ul>
+					</li>
+		  <li><a href="nbdboot-hu.htm#nbd1">Booting aptosid over a network</a></li>
+		  <li><a href="hd-install-vmopts-hu.htm#vm">Virtual Machine installation options</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="hw-dev-hw-dri-hu.htm">Graphic Cards, Monitors, Xorg &amp; Miscellaneous Drivers</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-hw-dri-hu.htm#hd-ntfs3g">Writing on NTFS-partitions with ntfs-3g</a></li>
+		<li><a href="hw-dev-mon-hu.htm#mon-res">Screen Resolution and Monitors  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-hu.htm#mon-res">Screen Resolution and Monitors</a></li>
+					  <li><a href="hw-dev-mon-hu.htm#xrandr">Dual Monitors and xrandr</a></li>
+					  <li><a href="hw-dev-mon-hu.htm#mon-binary">Dual Monitors (using binaries)</a></li>
+					</ul>
+					</li>
+		<li><a href="hw-dev-hw-dri-hu.htm#non-free-3d">Graphic card proprietry drivers &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="hw-dev-hw-dri-hu.htm#non-free-3d">Binary, non-free drivers for Nvidia &amp; xorg.conf</a></li>
+					  <li><a href="hw-dev-hw-dri-hu.htm#non-free-3d-2">non-free drivers for ATI, Radeon and others</a></li>
+					</ul>
+					</li>
+			  <li><a href="hw-dev-hw-dri-hu.htm#non-free-firmware">Hardware needing non-free firmware drivers</a></li>
+			  <li><a href="hw-dev-hw-dri-hu.htm#non-free">Adding non-free to Sources List</a></li>
+			  <li><a href="hw-dev-hw-dri-hu.htm#native-nv-ati">FOSS xorg drivers for nVidia, ATI, Radeon, Intel &amp; xorg.conf</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-kde-hu.htm">Window Managers</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-kde-hu.htm">Window Managers &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-kde-hu.htm">Window Managers</a></li>
+					    <li><a href="wm-xfce-hu.htm#xfce-notes">Useful Xfce extras</a></li>
+					    <li><a href="wm-kde-hu.htm#install-add">Useful extra KDE Apps</a></li>
+					    <li><a href="wm-kde-hu.htm#desk-freeze">Desktop Freezes</a></li>
+					    <li><a href="wm-kde-hu.htm#kde-login">Cant login in KDE</a></li>
+					    <li><a href="wm-kde-hu.htm#ch-th">Changing Themes</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-kde-hu.htm#dm">Display Managers - dm</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="internet-connecting-hu.htm">Internet connecting, WiFi, LAN and Networks</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-hu.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-hu.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-hu.htm#serv-ftp">FTP Clients</a></li>
+					    <li><a href="lamp-apache-hu.htm#serv-sec">Security Protocols</a></li>
+					    <li><a href="lamp-apache-hu.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-hu.htm#serv-mysql">MySQL Setup</a></li>
+					    <li><a href="lamp-ppp-hu.htm#serv-php">PHP in Apache</a></li>
+					    <li><a href="ntp-server-hu.htm#ntp-server">Timeserver Setup</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-hu.htm#tor">Firewalls and Privacy &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-hu.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-hu.htm#privoxy">Privoxy</a></li>
+					    <li><a href="internet-connecting-hu.htm#firewalls">Firewalls</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-hu.htm#ssh-x">SSH and Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-hu.htm#setup">Samba-Server Setup</a></li>
+						  <li><a href="samba-hu.htm#configure">Configuring SAMBA (Windows)</a></li>
+						  <li><a href="ssh-hu.htm#ssh-fs">SSH Remote Mounting</a></li>
+						  <li><a href="ssh-hu.htm#ssh-x">X Window Apps via SSH</a></li>
+						  <li><a href="ssh-hu.htm#ssh-f">GUI SSH with Konqueror</a></li>
+						  <li><a href="ssh-hu.htm#ssh-w">SSH X-Forwarding from Windows-PC</a></li>
+						  <li><a href="ssh-hu.htm#ssh">SSH and Security</a></li>
+					</ul>
+					</li>
+		<li><a href="internet-connecting-hu.htm#netcardconfig">WIFI connections &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="internet-connecting-hu.htm#netcardconfig">Getting Online - Ceni</a></li>
+						    <li><a href="inet-wpagui-hu.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-hu.htm#net-set1">WiFi - Setting up for WiFi Roaming</a></li>
+						    <li><a href="internet-connecting-wpa-hu.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-hu.htm#hotswitch">Network switching between WiFi and Cable</a></li>
+					</ul>
+					</li>
+		<li><a href="internet-connecting-hu.htm#netcardconfig">Wired Connections &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="internet-connecting-hu.htm#dial-mod">56k Modems</a></li>
+						    <li><a href="internet-connecting-hu.htm#netcardconfig">Getting Online - Ceni</a></li>
+					</ul>
+					</li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-hu.htm">Package Management and dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-hu.htm#apt-cook">APT Cookbook and Sources list &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-hu.htm#apt-cook">APT-Guide Cookbook and Sources list</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#apt-install">Installing a new package</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#apt-delete">Deleting a package</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#apt-downgrade">Package Hold and downgrading</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#apt-cache">Package searching with apt-cache</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#gui-pacsea">GUI Package searching</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-hu.htm#kern-upgrade">Upgrading the kernel &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-hu.htm#kern-remove">Removing Kernels</a></li>
+					    <li><a href="sys-admin-kern-upg-hu.htm#kern-upgrade">Upgrading the kernel</a></li>
+					    <li><a href="sys-admin-kern-upg-hu.htm#dmakms">Installing kernel modules dynamically with dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-hu.htm#apt-upgrade">Upgrade an Installed System -  dist-upgrade - Overview &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-hu.htm#live-cd-upgrade">Upgrading by Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-hu.htm#approx">dist-upgrade of multiple PCs on a LAN</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#apt-upgrade">Upgrade an Installed System -  dist-upgrade - Overview</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#du-st">Upgrade an Installed System -  dist-upgrade - The Steps</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-hu.htm">System Administration</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-hu.htm#bois-prep">Upgrading the BIOS with FreeDOS</a></li>
+		<li><a href="vir-rkits-hu.htm#virus-rkits">Virus and Rootkit Scanners</a></li>
+		<li><a href="hd-install-hu.htm#adduser">Adding Users and Passwords &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-hu.htm#adduser">Adding a new user</a></li>
+					    <li><a href="sys-admin-gen-hu.htm#pw-lost">Lost root passwords, new passwords</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-hu.htm#start-services">Services and init runlevels &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-hu.htm#start-services">Services enable/disable</a></li>
+					    <li><a href="sys-admin-gen-hu.htm#init">aptosid runlevels - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-hu.htm#rsync">Backing up the system &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-hu.htm#rdiff">Back-Up with rdiff</a></li>
+					    <li><a href="sys-admin-rsync-hu.htm#rsync">Back-Up with rsync</a></li>
+					    <li><a href="home-hu.htm#home-bu">Moving /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-hu.htm#fonts">CUPS, Fonts and Sound &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-hu.htm#fonts">Fonts</a></li>
+					     <li><a href="sys-admin-gen-hu.htm#cups">CUPS - Printing System</a></li>
+					     <li><a href="sys-admin-gen-hu.htm#sound">Sound Mixers</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-hu.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-hu.htm#chroot">Grub2 - Recovering Grub with chroot</a></li>
+					    <li><a href="sys-admin-grub2-hu.htm#mbr-over-grub2">Grub2 - MBR Overwritten</a></li>
+					    <li><a href="sys-admin-grub2-hu.htm#multi-os">Grub2 - Dual and Multibooting</a></li>
+					    <li><a href="sys-admin-grub2-hu.htm#grub1-grub2">Grub2 -Upgrading from Grub1</a></li>
+					    <li><a href="sys-admin-grub2-hu.htm#grub2">Grub2 - Overview</a></li>
+					</ul>
+					</li>
+			</ul>
+		</li>
+	</ul>
+<!-- menu ends here --> </div>
+<div id="main-page">
+	<div class="divider" id="mon-res">
+		<h2 id="top-header">A képernyőfelbontás megváltoztatása</h2>
+
+			<h4>xrandr</h4>
+				<h5>Támogatott eszközmeghajtók</h5>
+						<ul>
+							<li> xserver-xorg-video-intel (2.0-s verzió vagy újabb)</li>
+							<li>xserver-xorg-video-nouveau (<a href="http://nouveau.freedesktop.org/wiki/FeatureMatrix"> Refer to the nouveau Feature Matrix</a>)</li>
+							<li>xserver-xorg-video-ati (6.7.192 verzió óta)</li>
+						</ul>
+
+						<p>First step is just to type xrandr to see if it is supported, if xrandr is not supported check the xorg version and driver used.</p>
+
+						<p>Feltételezve, hogy a grafikus kártya támogatott, az elsődleges képernyőn a felbontás megváltoztatása:</p><pre>
+xrandr --output VGA --mode 1440x900
+</pre>
+
+					<!--<h5>Ha a grafikus kártyát az xrandr nem támogatja, mégis szükség van az alapértelmezettől eltérő felbontásra, a xorg.conf szerkesztése szükséges.</h5>
+
+							<p>Parancssorban root felhasználóként</p>
+<pre>
+aptosidcc
+</pre>
+							<p>és kövesd az utasításokat, vagy grafikus felületről <span class="highlight-3">K menü > System > aptosid Control Centre > Display </span> menüpont.</p>
+
+							<p>Az X szerver automatikusan nem fog újraindulni, ezt a </p>
+<pre>
+ctrl+alt+backspace
+</pre>-->
+							<p>billentyűkombinációval, kézzel kell megtenni.</p>
+		</div>
+		<div class="divider" id="xrandr">
+					<h2>Több monitor kezelése és az xrandr</h2>
+
+							<p> <span class="highlight-2">xorg.conf is deprecated, if you use free drivers.</span> If you have an xorg.conf stanza under <span class= "highlight-3">/etc/X11/xorg.conf.d</span>, because you use proprietary drivers for your graphics card, you should save it now before proceeding.</p>
+
+							<p>xorg.conf, if present at all, is now modular, for example, each module contains everything referring a "device"  for instance, the display or a mouse.</p>
+
+							<p>With xrandr you can configure your primary and secondary screen without restarting X, (hotplug). Az xrandr felváltja a korábban használatos xinerama-t és mergedFB-t. Az xrandr 1.2-es verziójának használata mellett elképzelhető, hogy a "régimódi beállítás" az xorg.conf-ban (xinerama és mergedFB) nem is fog működni.</p>
+							<!-- mergedFB doesn't work anymore in a dist-upgraded aptosid install -->
+
+				<h5>Támogatott eszközmeghajtók</h5>
+						<ul>
+							<li> xserver-xorg-video-intel (a 2.0-s verzió óta)</li>
+							<li>xserver-xorg-video-nouveau (<a href="http://nouveau.freedesktop.org/wiki/FeatureMatrix"> Refer to the nouveau Feature Matrix</a>)</li>
+							<li>xserver-xorg-video-ati (a 6.7.192-es verzió óta)</li>
+						</ul>
+
+			<h3>A Dualhead xrandr-es konfiguráció előkészítése</h3>
+							<p><span class="highlight-2">Figyelem:</span> Abban az (ideális) esetben, ha a PC-t folyamatosan két monitorral használod, a <span class="highlight-3"> xorg.conf</span> fájlban szükséges a beállítások elmentése, hogy a változtatást megőrizzük.</p>
+
+							<p>Ellentétben a két monitorral használt PC-vel, egy laptop dinamikus konfigurációt igényel, ezért vagy mindig újra kell kezdened a gép újraindítása után az összes beállítási lépést, vagy bemásolhatod az xrandr-rel használt paramétereket egy szkriptbe a <span class="highlight-3"> ~/.kde/Autostart/</span> alá.</p>
+
+					<h4>Ismerkedés az xrandr-rel</h4>
+							<p>Első próbálkozásnak csak gépeld be felhasználóként a parancssorba, hogy 'xrandr' és nézd meg a parancs kimenetét:</p>
+<pre>
+xrandr
+Screen 0: minimum 320 x 200, current 2048 x 768, maximum 2048 x 768
+VGA-0 connected 1024x768+0+0 (normal left inverted right x axis y axis) 304mm x 228mm
+   1024x768       60.0*+   75.1     70.1     60.0*    59.9
+   832x624        74.6
+   800x600        72.2     75.0     60.3     56.2
+   640x480        75.0     72.8     66.7     60.0
+   720x400        70.1
+</pre>
+
+							<p>Most csak a PC VGA kimenete látható (lásd az <a href="hw-dev-mon-hu.htm#aa"> A függeléket </a> a kimenetek neveinek magyarázatához). Láthatóak az eszköz által támogatott felbontások és (ami a dualhead-nél igen fontos) a maximális elérhető képernyőfelbontást (itt éppen 2048x768).</p>
+
+							<p>Most csatlakoztasd a külső képernyőt és futtasd az xrandr-t újra:</p>
+<pre>
+$ xrandr
+Screen 0: minimum 320 x 200, current 2048 x 768, maximum 2048 x 768
+VGA-0 connected 1024x768+0+0 (normal left inverted right x axis y axis) 304mm x 228mm
+   1024x768       60.0*+   75.1     70.1     60.0*    59.9
+   832x624        74.6
+   800x600        72.2     75.0     60.3     56.2
+   640x480        75.0     72.8     66.7     60.0
+   720x400        70.1
+DVI-0 connected 1024x768+1024+0 (normal left inverted right x axis y axis) 310mm x 230mm
+   1024x768_85.00   85.0*+
+   1024x768       85.0 +   84.9     74.9     75.1     70.1     60.0     43.5
+   832x624        74.6
+   800x600        84.9     72.2     75.0     60.3     56.2
+   640x480        84.6     75.0     72.8     66.7     60.0
+   720x400        87.8     70.1
+S-video disconnected (normal left inverted right x axis y axis)
+</pre>
+							<p>A fentieken látható, hogy egy DVI képernyő is csatlakoztatva van, és láthatók a támogatott felbontások 720x400 és 1024x768 között a megadott frissítési frekvenciákkal.</p>
+
+				<h6>Példák különféle beállításokra</h6>
+
+							<p>Alap szintakszis</p>
+<pre>
+xrandr --output &lt;output&gt; --rate &lt;rate&gt; --mode &lt;mode&gt; --left-of|--right-of|--above|--below|--same-as &lt;output&gt;
+</pre>
+
+							<p>ahol:</p>
+					<ul>
+    							<li>&lt;output&gt; a kiment neve (lásd <a href="hw-dev-mon-hu.htm#aa"> A függeléket </a>)</li>
+   							<li>&lt;rate&gt; az xrandr kiment által megadott frissítési frekvencia (opcionális)</li>
+    							<li>&lt;mode&gt; az xrandr által megadott felbontás (opcionális)</li>
+					</ul>
+
+
+
+						<h5>Felbontás megváltoztatása az elsődleges képernyőn</h5>
+<pre>
+xrandr --output VGA --mode 1024x768
+</pre>
+
+
+						<h6>Képernyő klónozása</h6>
+								<p>Mivel a legtöbb külső képernyő, illetve kivetítő nem működik 1280x800-as felbontáson csak pl. 1024x768-on, változtassuk meg ezt:</p>
+<pre>
+xrandr --output VGA --mode 1024x768 --output LVDS --mode 1024x768
+</pre>
+
+								<p>A másodlagos képernyő kikapcsolásához és az eredeti felbontáshoz való visszatéréshez egyszerűen:</p>
+<pre>
+xrandr --output VGA --off --output LVDS --mode 1280x800
+</pre>
+
+						<h5>Munkaasztal egyszerre több kijelzőn (Multihead desktop)</h5>
+							<p>As intel GMA &lt;=945GM/GMS looses 3d support with a virtual screen &gt;2048x2048, ezért nem lehetséges mindkét képernyőt egymás mellett maximális felbontásban használni. Mindkettőt 1024x768-ra állítva jól működik:</p>
+<pre>
+xrandr --output LVDS --mode 1024x768 --output VGA --mode 1024x768 --left-of LVDS
+</pre>
+
+							<p>A multiképernyő kikapcsolásához egyszerűen kapcsoljuk ki a második képernyőt és váltsuk vissza az elsődleges képernyőt eredeti felbontásába (ha szükséges):</p>
+<pre>
+xrandr --output VGA --off (--output LVDS --mode 1280x800)
+</pre>
+
+							<p>Lehetséges a másodlagos képernyőt az elsődleges alá vagy fölé helyezni:</p>
+<pre>
+xrandr --output LVDS --mode 1280x800 --output VGA --mode 1280x1024 --above LVDS
+</pre>
+
+							<p>Az eredmény egy virtuális képernyő, amelynek felbontása 1280x1824, amely kisebb mint 2048x2048. A képernyő elforgatása is lehetséges:</p>
+<pre>
+xrandr --verbose --output LVDS --mode 1280x800 --output VGA  --mode 1024x768 --rotate left --left-of LVDS
+</pre>
+
+							<p>Megjegyzés: Ehhez a képernyőt fizikailag is el kell forgatni.</p>
+
+				<h6>Example of a permanently configured PC with dual monitors with xrandr with code snippet in <span class="highlight-3"> /etc/X11/xorg.conf.d/30-screen.conf</span>:</h6>
+
+<pre>
+#30-screen.conf
+Section "Monitor"
+	Identifier      "DVI-0"
+	Option          "Primary"       "true"
+EndSection
+
+Section "Monitor"
+	Identifier      "DVI-1"
+	Option          "RightOf"       "DVI-0"
+EndSection
+
+Section "Device"
+	  Identifier     "ATI Radeon HD 2600"
+	  Option         "Monitor-DVI-0" "DVI-0"
+	  Option         "Monitor-DVI-1" "DVI-1"
+EndSection
+</pre>
+
+
+							<p>Megjegyzések</p>
+						<ul>
+    							<li>Bár az intel korlátozza a maximális virtuális felbontást 2048x2048-ban, beállítható nagyobb felbontás is, a DRI támogatás elvesztésének árán. Az nVidia/ATI kártyák esetén nem ismert semmilyen limitáció.</li>
+
+    							<li>A TV kimenet nem működik ATi kártyák esetén</li>
+
+   							<li>Ha ATi kártyák esetén a DDC probing nem működik megfelelően (A Xorg.0.log-ban ez látható: (WW) RADEON(0): DDC2/I2C is not properly initialised), you might not be able to overide the values with modelines</li>
+
+							<li>Ha dualhead-es nagy munkaasztalt szeretnénk beállítani, és az xrandr hibaüzenetet ír, miszerint a felbontás túl nagy, használható a "Virtual" beállítás a kívánt felbontással. (Lásd még az 'A' függelék "Képernyő" (Screen) fejezetét!</li>
+							<li>Az intel videokártyák kivételével a virtuális felbontás biztosan elég lesz két monitor maximális felbontásának kihasználásához. Példa: monitor1= 1024x768 és monitor2=1280x1024, azaz a virtuális képernyő mérete (1024+1280)x(1024>768) -> 2304x1024</li>
+
+						</ul>
+<div class="divider" id="aa">
+					<h6>'A' függelék</h6>
+
+						<h6>Intel</h6>
+<pre>
+Kimenetek megnevezései:
+* LVDS: a laptop saját képernyője
+* TMDS-1: külső DVI port
+* VGA: külső VGA csatlakozó
+* TV: külső TV kimenet
+</pre>
+						<h6>ATI</h6>
+<pre>
+Kimenetek megnevezései:
+* LVDS: a laptop saját képernyője
+* DVI-0: elsődleges külső DVI csatlakozó
+* DVI-1: másodlagos külső DVI csatlkaozó (ha van)
+* VGA-0: elsődleges külső VGA csatlakozó
+* VGA-1: másodlagos külső VGA csatlakozó (ha van)
+* S-video
+</pre>
+						<h6>Nvidia</h6>
+<pre>
+A nyílt forráskódú nv meghajtó a RandR1.2-t csak G80-as kártyákon támogatja
+Kimenetek megnevezései:
+* LVDS: a laptop saját képernyője
+* DVI0: elsődleges külső DVI csatlakozó
+* DVI1: másodlagos külső DVI csatlakozó (ha van)
+</pre>
+				    </div>
+						<h6>Hivatkozások</h6>
+							<p><a href="http://wiki.debian.org/XStrikeForce/HowToRandR12"> http://wiki.debian.org/XStrikeForce/HowToRandR12</a></p>
+							<p><a href="http://bgoglin.livejournal.com/9846.html">http://bgoglin.livejournal.com/9846.html</a></p>
+							<p><a href="http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=420419">http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=420419</a></p>
+							<p><a href="http://www.thinkwiki.org/wiki/Xorg_RandR_1.2">http://www.thinkwiki.org/wiki/Xorg_RandR_1.2</a></p>
+
+
+	</div>
+	<div class="divider" id="mon-binary">
+				<h2>Két monitor használata bináris (zárt forráskódú) meghajtókkal</h2>
+
+							<p> <span class="highlight-3">A zárt forráskódú meghajtókkal kapcsolatban kövesd a gyártó/forgalmazó által kiadott dokumentáció utasításait.</span></p>
+
+				<h3>nvidia</h3>
+							<p>Use the nvidia xorg configurator  <a href="http://www.sorgonet.com/linux/nv-online/"> http://www.sorgonet.com/linux/nv-online/</a>, és annak megfelelően módosíthatóak az X.Org fájlok.</p>
+
+				<h3>Natív ATI Radeon</h3>
+
+							<!--<p>A aptosid fórumon (<a href="http://aptosid.com/index.php?name=PNphpBB2&amp;file=viewtopic&amp;p=19794#19794"> http://aptosid.com/index.php?name=PNphpBB2&amp;file=viewtopic&amp;p=19794#19794</a>) találhatók működő xorg.conf fájlok az ingyenes radeon meghajtóhoz.</p>-->
+
+							<p>Megjegyzés: A beállításhoz szükség van a másodlagos monitor konfigurációjához. Ehhez távolítsd el az egyik monitort, bootolj be Live CD-ről és másold ki a rendszer által generált xorg.conf-ot; majd ugyanezt végezd el a másikra is.</p>
+
+							<p>A teljes konfigurációs leíráshoz lásd a <a href="http://ftp.x.org/pub/X11R6.9.0/doc/html/radeon.4.html">http://ftp.x.org/pub/X11R6.9.0/doc/html/radeon.4.html</a> oldalt.</p>
+
+
+		</div>
+	<div id="rev">Az oldal utoljára frissítve 06/03/2011 2305 UTC</div>
+</div>
+</body>
+</html>

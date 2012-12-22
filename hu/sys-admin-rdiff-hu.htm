@@ -1,0 +1,512 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>aptosid Kézikönyvek - rdiff</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<div id="menu"> <!-- menu starts here hu lang maintained by mrowl ruess-->
+<!--aptosid Operating System Manual menu-version-00.00.2010.08.14 -->
+<!-- menu last updated by bluewater 2010.08.14 0100 hrs UTC -->
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="To aptosid.com forums and wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-hu.htm#search-on"><img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" /> Keresés Online Offline</a> </li>
+		<!--<li><a href="http://manual.aptosid.com/meta-manual">Community Software Selections</a></li>-->
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Másik nyelv kiválasztása" alt="lang-switch" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-hu.htm">aptosid OS Manual</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-hu.htm#welcome-gen">aptosid OS Manual &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-hu.htm#cred-team">Credits</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-hu.htm#how-to">How to use this manual &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-hu.htm#how-to">How to use this manual</a></li>
+					  <li><a href="welcome-hu.htm#table-contents">Table of Contents</a></li>
+					</ul>
+					</li>
+		<li><a href="help-hu.htm#help-gen">Getting Help &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-hu.htm#help-gen">Where and how to get help</a></li>
+					  <li><a href="help-hu.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-hu.htm#welcome-quick">aptosid Quick Start Guide</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-hu.htm">ISO Content, Releases, Download Mirrors and Burning</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-hu.htm#cd-content">ISO Content and system requirements &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-hu.htm#rolling">Release Notes</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-hu.htm#download-aptosid">aptosid Mirrors, Downloading and Burning &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-hu.htm#md5">md5 Checksum</a></li>
+					  <li><a href="cd-dl-burning-hu.htm#burn-nero">Burning in Windows</a></li>
+					  <li><a href="cd-dl-burning-hu.htm#burn-linux">Burning in Linux</a></li>
+					  <li><a href="cd-no-gui-burn-hu.htm#burning-no-gui">burniso script</a></li>
+					  <li><a href="cd-no-gui-burn-hu.htm#burn-no-gui-gen">Burning without a GUI</a></li><li><a href="cd-dl-burning-hu.htm#download-aptosid">aptosid Download Mirrors</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-hu.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-hu.htm#rootpw">Root-password on the aptosid-Live ISO</a></li>
+				<li><a href="live-mode-hu.htm#live-cd-installsoft">Installing software whilst on a Live-ISO</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-hu.htm">The Terminal / Konsole</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-hu.htm#term-kon"> Terminal / Konsole &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-hu.htm#term-kon"> Terminal / Konsole</a></li>
+					  <li><a href="term-konsole-hu.htm#cli-help">Command Line Help</a></li>
+					  <li><a href="help-hu.htm#init3-tools">Tools to know in text mode (tty) - init 3</a></li>
+					  <li><a href="term-konsole-hu.htm#term-cmds">Linux Terminal Commands List</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-hu.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-hu.htm">CheatCodes</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-hu.htm#cheatcodes">aptosid specific Live-ISO Cheatcodes</a></li>
+				<li><a href="cheatcodes-hu.htm#cheatcodes-linux">Linux generic Cheatcodes</a></li>
+				<li><a href="cheatcodes-vga-hu.htm#vga">VGA Codes</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-hu.htm">Partitioning Your Hard Drive</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-hu.htm#partition">Partitioning with a GUI &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-hu.htm#partition">Partitioning your HD using GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-hu.htm#ntfs">NTFS partition Resizing using GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-hu.htm#partition">Partitioning with CLI &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-hu.htm#partition">Partitioning  your HD using cfdisk</a></li>
+					    <li><a href="part-cfdisk-hu.htm#formating">Formatting after partitioning with cfdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-hu.htm#part-example">Partitioning Basics &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-hu.htm#part-example">Partition Size Examples</a></li>
+					  <li><a href="part-uuid-hu.htm#uuid">UUID, Partition Labelling and fstab</a></li>
+					  <li><a href="part-cfdisk-hu.htm#disknames">Disk Naming in brief</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-hu.htm">Installation options - HD, USB, VM</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-hu.htm#Inst-prep">Install Preparation &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-hu.htm#Inst-prep">Install Preparation </a></li>
+					  <li><a href="hd-install-hu.htm#Installation">Installing to your HD</a></li>
+					  <li><a href="hd-install-hu.htm#first-hd-boot">First Boot Up</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-hu.htm#fromiso">Booting fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-hu.htm#fromiso">Booting fromiso - Overview</a></li>
+					  <li><a href="hd-install-opts-hu.htm#fromiso-grub-leg">Booting 'fromiso' with grub-legacy</a></li>
+					  <li><a href="hd-install-opts-hu.htm#grub2-fromiso">Booting 'fromiso' with Grub 2</a></li>
+					  <li><a href="hd-install-opts-hu.htm#fromiso-persist">fromiso and persist</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-hu.htm#usb-hd">Installing to USB drives &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-hu.htm#usb-hd">Installing on a USB-HD - aptosid specific - aptosid-on-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-hu.htm#raw-usb">Writing aptosid to a USB/SSD stick with any Linux, MS Windows or Mac OS X system</a></li>
+					</ul>
+					</li>
+		  <li><a href="nbdboot-hu.htm#nbd1">Booting aptosid over a network</a></li>
+		  <li><a href="hd-install-vmopts-hu.htm#vm">Virtual Machine installation options</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="hw-dev-hw-dri-hu.htm">Graphic Cards, Monitors, Xorg &amp; Miscellaneous Drivers</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-hw-dri-hu.htm#hd-ntfs3g">Writing on NTFS-partitions with ntfs-3g</a></li>
+		<li><a href="hw-dev-mon-hu.htm#mon-res">Screen Resolution and Monitors  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-hu.htm#mon-res">Screen Resolution and Monitors</a></li>
+					  <li><a href="hw-dev-mon-hu.htm#xrandr">Dual Monitors and xrandr</a></li>
+					  <li><a href="hw-dev-mon-hu.htm#mon-binary">Dual Monitors (using binaries)</a></li>
+					</ul>
+					</li>
+		<li><a href="hw-dev-hw-dri-hu.htm#non-free-3d">Graphic card proprietry drivers &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="hw-dev-hw-dri-hu.htm#non-free-3d">Binary, non-free drivers for Nvidia &amp; xorg.conf</a></li>
+					  <li><a href="hw-dev-hw-dri-hu.htm#non-free-3d-2">non-free drivers for ATI, Radeon and others</a></li>
+					</ul>
+					</li>
+			  <li><a href="hw-dev-hw-dri-hu.htm#non-free-firmware">Hardware needing non-free firmware drivers</a></li>
+			  <li><a href="hw-dev-hw-dri-hu.htm#non-free">Adding non-free to Sources List</a></li>
+			  <li><a href="hw-dev-hw-dri-hu.htm#native-nv-ati">FOSS xorg drivers for nVidia, ATI, Radeon, Intel &amp; xorg.conf</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-kde-hu.htm">Window Managers</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-kde-hu.htm">Window Managers &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-kde-hu.htm">Window Managers</a></li>
+					    <li><a href="wm-xfce-hu.htm#xfce-notes">Useful Xfce extras</a></li>
+					    <li><a href="wm-kde-hu.htm#install-add">Useful extra KDE Apps</a></li>
+					    <li><a href="wm-kde-hu.htm#desk-freeze">Desktop Freezes</a></li>
+					    <li><a href="wm-kde-hu.htm#kde-login">Cant login in KDE</a></li>
+					    <li><a href="wm-kde-hu.htm#ch-th">Changing Themes</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-kde-hu.htm#dm">Display Managers - dm</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="internet-connecting-hu.htm">Internet connecting, WiFi, LAN and Networks</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-hu.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-hu.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-hu.htm#serv-ftp">FTP Clients</a></li>
+					    <li><a href="lamp-apache-hu.htm#serv-sec">Security Protocols</a></li>
+					    <li><a href="lamp-apache-hu.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-hu.htm#serv-mysql">MySQL Setup</a></li>
+					    <li><a href="lamp-ppp-hu.htm#serv-php">PHP in Apache</a></li>
+					    <li><a href="ntp-server-hu.htm#ntp-server">Timeserver Setup</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-hu.htm#tor">Firewalls and Privacy &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-hu.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-hu.htm#privoxy">Privoxy</a></li>
+					    <li><a href="internet-connecting-hu.htm#firewalls">Firewalls</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-hu.htm#ssh-x">SSH and Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-hu.htm#setup">Samba-Server Setup</a></li>
+						  <li><a href="samba-hu.htm#configure">Configuring SAMBA (Windows)</a></li>
+						  <li><a href="ssh-hu.htm#ssh-fs">SSH Remote Mounting</a></li>
+						  <li><a href="ssh-hu.htm#ssh-x">X Window Apps via SSH</a></li>
+						  <li><a href="ssh-hu.htm#ssh-f">GUI SSH with Konqueror</a></li>
+						  <li><a href="ssh-hu.htm#ssh-w">SSH X-Forwarding from Windows-PC</a></li>
+						  <li><a href="ssh-hu.htm#ssh">SSH and Security</a></li>
+					</ul>
+					</li>
+		<li><a href="internet-connecting-hu.htm#netcardconfig">WIFI connections &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="internet-connecting-hu.htm#netcardconfig">Getting Online - Ceni</a></li>
+						    <li><a href="inet-wpagui-hu.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-hu.htm#net-set1">WiFi - Setting up for WiFi Roaming</a></li>
+						    <li><a href="internet-connecting-wpa-hu.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-hu.htm#hotswitch">Network switching between WiFi and Cable</a></li>
+					</ul>
+					</li>
+		<li><a href="internet-connecting-hu.htm#netcardconfig">Wired Connections &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="internet-connecting-hu.htm#dial-mod">56k Modems</a></li>
+						    <li><a href="internet-connecting-hu.htm#netcardconfig">Getting Online - Ceni</a></li>
+					</ul>
+					</li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-hu.htm">Package Management and dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-hu.htm#apt-cook">APT Cookbook and Sources list &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-hu.htm#apt-cook">APT-Guide Cookbook and Sources list</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#apt-install">Installing a new package</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#apt-delete">Deleting a package</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#apt-downgrade">Package Hold and downgrading</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#apt-cache">Package searching with apt-cache</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#gui-pacsea">GUI Package searching</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-hu.htm#kern-upgrade">Upgrading the kernel &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-hu.htm#kern-remove">Removing Kernels</a></li>
+					    <li><a href="sys-admin-kern-upg-hu.htm#kern-upgrade">Upgrading the kernel</a></li>
+					    <li><a href="sys-admin-kern-upg-hu.htm#dmakms">Installing kernel modules dynamically with dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-hu.htm#apt-upgrade">Upgrade an Installed System -  dist-upgrade - Overview &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-hu.htm#live-cd-upgrade">Upgrading by Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-hu.htm#approx">dist-upgrade of multiple PCs on a LAN</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#apt-upgrade">Upgrade an Installed System -  dist-upgrade - Overview</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#du-st">Upgrade an Installed System -  dist-upgrade - The Steps</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-hu.htm">System Administration</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-hu.htm#bois-prep">Upgrading the BIOS with FreeDOS</a></li>
+		<li><a href="vir-rkits-hu.htm#virus-rkits">Virus and Rootkit Scanners</a></li>
+		<li><a href="hd-install-hu.htm#adduser">Adding Users and Passwords &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-hu.htm#adduser">Adding a new user</a></li>
+					    <li><a href="sys-admin-gen-hu.htm#pw-lost">Lost root passwords, new passwords</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-hu.htm#start-services">Services and init runlevels &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-hu.htm#start-services">Services enable/disable</a></li>
+					    <li><a href="sys-admin-gen-hu.htm#init">aptosid runlevels - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-hu.htm#rsync">Backing up the system &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-hu.htm#rdiff">Back-Up with rdiff</a></li>
+					    <li><a href="sys-admin-rsync-hu.htm#rsync">Back-Up with rsync</a></li>
+					    <li><a href="home-hu.htm#home-bu">Moving /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-hu.htm#fonts">CUPS, Fonts and Sound &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-hu.htm#fonts">Fonts</a></li>
+					     <li><a href="sys-admin-gen-hu.htm#cups">CUPS - Printing System</a></li>
+					     <li><a href="sys-admin-gen-hu.htm#sound">Sound Mixers</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-hu.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-hu.htm#chroot">Grub2 - Recovering Grub with chroot</a></li>
+					    <li><a href="sys-admin-grub2-hu.htm#mbr-over-grub2">Grub2 - MBR Overwritten</a></li>
+					    <li><a href="sys-admin-grub2-hu.htm#multi-os">Grub2 - Dual and Multibooting</a></li>
+					    <li><a href="sys-admin-grub2-hu.htm#grub1-grub2">Grub2 -Upgrading from Grub1</a></li>
+					    <li><a href="sys-admin-grub2-hu.htm#grub2">Grub2 - Overview</a></li>
+					</ul>
+					</li>
+			</ul>
+		</li>
+	</ul>
+<!-- menu ends here --> </div>
+<div id="main-page">
+	<div class="divider" id="rdiff">
+			<h2 id="top-header">Biztonsági mentés készítése az rdiff-backup használatával</h2>
+				<p>Az rdiff-backup egy az állományaid biztonsági mentésére szolgáló eszköz. (Különféle *nix rendszereken is működik)</p>
+
+				<p class="highlight-2">Ha másképp nem javasoljuk, a parancsokat mindig root-konzolban futtasd</p>
+
+				<p>*kiváló eszköz egy elrontott dist-upgrade, kernel frissítés, stb. helyreállításához (egyes fájlok visszaállítására is alkalmas).<br />
+				*csak azt menti, ami változott, mint az rsync (az egyes mentések nem vesznek sok időt igénybe).<br />
+				*megőrzi a változások listáját (ami azt jelenti, hogy egy három héttel ezelőtt törölt fájlt is visszaállíthatsz vele!)<br />
+				*biztonságos hálózati mentést tesz lehetővé (ssh használatával).<br />
+				*felcsatolt partíciókat is képes menteni (egyszerű automatikus napi mentéseket ütemezni... nincs szükség umount-ra).<br />
+				*mindent vissza tud állítani, még ha a merevlemezed teljesen meghalt és újat vásároltál is.<br />
+				*nagy hálózatok mentésére is méretezhető (linux esetén remek, a windows kissé bonyolultabb) és így üzleti felhasználásra is használható.<br />
+				*parancs-vezérelt alkalmazás, tehát azok számára kiváló, akik szeretnének hatékony módon automatizált mentéseket készíteni (pl. egy bash szkript által, amit a cron indít).<br />
+				*emlékszik a tulajdonosokra és jogosultságokra, helyreállítja a szimbolikus linkeket is (és minden ilyen jellegű dolgot), tehát amikor visszatöltesz, mindent pontosan úgy kapsz vissza, ahogy volt.</p>
+
+			<h6>Mire lesz szükséged</h6>
+				<p>Az rdiff-backup a mentett fájlok teljes (tömörítetlen) másolatát megőrzi, valamint eltárolja a változásokat (inkrementális mentés), ami azt jelenti, hogy a mentések tárolásához szükséges hely nagyobb, mint a mentett fájlok mérete. Ha tehát 100 GB adatot mentesz, akár 120 GB tároló-kapacitásra is szükséged lehet (javasoltan egy külön merevlemezen!).</p>
+
+			<h6>Hogyan állítsd be</h6>
+				<p>Mondjuk, a számítógéped a következőket tartalmazza:<br />
+				* egy 100 GB-os merevlemez (sda), melyen a sda1 a root partíció, a sda5 szolgál a zenék és egyéb fájlok tárolására, a sda6 pedig a swap partíció.<br />
+				* egy tartalék 200 GB-os merevlemez (sdb) használaton kívül, egy darab sdb1 jelű partícióval ... ezt fogjuk a mentésekhez használni.<br />
+				* IP cím: 192.168.0.1</p>
+
+				<p>Az első dolog, hogy telepítjük az rdiff-backup csomagot:</p>
+<pre>
+# apt-get install rdiff-backup
+</pre>
+				<p>Most annak ellenére, hogy bármely könyvtárat lementhetnénk, feltesszük, hogy egész partíciókat kell menteni ... biztonsági másolatot szeretnénk a sda1 és sda5 partíciókról (a hd6-ot nem akarjuk), így tehát készítünk néhány könyvtárat adataink tárolására:</p>
+<pre>
+# mkdir -p /media/sdb1/rdiff-backups/192.168.0.1/root
+# mkdir -p /media/sdb1/rdiff-backups/192.168.0.1/sda5
+</pre>
+				<p>Az IP cím a megkülönböztetéshez szükséges arra az esetre, ha más gépek adatait is ide szeretnéd menteni (lentebb részletezve).</p>
+
+			<h6>Mentés készítése</h6>
+
+				<p>Az rdiff-backup <span class="highlight-3">rdiff-backup forrás-könyvtár cél-könyvtár</span> szintaxist használja. Megjegyzés: mindig könyvtárneveket és nem fájlneveket kell megadni.</p>
+
+				<p>A sda5 mentése a következők szerint történik:</p>
+<pre>
+# rdiff-backup /media/sda5 /media/sdb1/rdiff-backups/192.168.0.1/sda5
+</pre>
+				<p>A root-partíció mentésére az alábbi parancs szolgál:</p>
+<pre>
+# rdiff-backup --exclude '/tmp/*' --exclude '/proc/*' --exclude '/sys/*' --exclude '/media/*/*' / /media/sdb1/rdiff-backups/192.168.0.1/root
+</pre>
+				<p>Az esetleges "AF_UNIX path too long" hibaüzeneteket figyelmen kívül hagyhatod. Némi időt igénybe vesz, amíg a partíció első mentése elkészül, mivel ez alkalommal még nem csak a változások, hanem a teljes partíció letárolásra kerül. Figyeld meg, hogy nem akarjuk menteni a  /tmp könyvtárat, mivel annak mindig változik a tartalma, sem a /proc és /sys könyvtárakat, mivel ezek nem valódi fájlokat tartalmaznak és természetesen a felmountolt egyéb eszközöket sem szeretnénk menteni. Ha ezeket megpróbálnánk mégis menteni, esetleg a sdb1-ről is biztonsági másolat készülne, ami végtelen hurokba taszítaná az egész folyamatot! Egy járható megoldás a felmountolt eszközök különálló mentése.</p>
+
+				<p>Az ok pedig, amiért '/proc/*' és nem csak '/proc' írandó a kizárandó adatok helyére, hogy ezáltal csak a /proc könyvtár neve és ne a tartalma kerüljön mentésre. Ugyanez igaz a /tmp, /sys könyvtárak, és még inkább az összes mount-pont nevére.</p>
+
+				 <p>Ezzel a módszerrel, ha tökéletesen tönkretetted a root-partíciódat és teljes helyreállítást  végzel, a /tmp, /proc, /sys könyvtárak és mount-pontok nevei is létrejönnek. (Ez szükséges, mert pl. ha a /tmp nem létezik az X indítása során, esetleg reklamálhat érte.) Lásd a man oldalakat a további --exclude és --include opciókért.</p>
+
+			<h6>Könyvtárak visszaállítása mentésből</h6>
+
+				<p>Az rdiff-backup a következő szintaxist használja:</p>
+<pre>
+rdiff-backup -r &lt;mikori mentésből&gt; &lt;forrás&gt; &lt;cél&gt;
+</pre>
+				<p>Ha véletlenül törölted a /media/sda7/fenykepek könyvtáradat, így állíthatod vissza:</p>
+<pre>
+# rdiff-backup -r now /media/sdb1/rdiff-backups/192.168.0.1/sda5/fenykepek /media/sda5/fenykepek
+</pre>
+				<p>A "-r now" opció azt jelenti, hogy a legutóbbi mentést kell használni. Ha mindent rendszeresen mentesz (pl. a crontab használatával), és csak néhány nappal később veszed észre, hogy a fényképeidet elveszítetted, néhány nappal régebbi mentésből kell visszaállítanod (így nem használható a "now" kapcsoló, mivel a 'fenykepek' könyvtár nem létezik a legutóbbi mentésben). Vagy talán csak valaminek egy régebbi verzóját szeretnéd visszaszerezni.</p>
+
+				<p>Ha egy három nappal ezelőtti mentésből szeretnél visszatölteni, használd a "-r 3D" kapcsolót ... de, ahogy a man oldal is mondja, tartsd észben:</p>
+
+				<p class="highlight-1">A "3D" a jelen időpillanatot megelőző 72 órát jelenti. Ha abban az időpontban nem készült mentés, az rdiff-backup az azt megelőzően készült mentésből fog visszaállni. Például, a fenti esetnél maradva, ha a "3D" volt a kapcsoló és csak 2, illetve 4 nappal ezelőtti mentésed van, a visszaállított könyvtár a 4 nappal ezelőtti állapotának fog megfelelni (tehát gondold át alaposan, mielőtt elindítasz egy visszaállítást).</p>
+
+				<p>A következő utasítás kilistázza a sda5-ről készült mentéseket dátum és időpont szerint:</p>
+<pre>
+# rdiff-backup -l /media/sdb1/rdiff-backups/192.168.0.1/sda5
+</pre>
+			<h5>Partíció visszaállítása</h5>
+
+				<p>Teljes partíciókat (mount) is visszaállíthatsz, miután minden mount-pont valójában csupán egy könyvtár.</p>
+
+				<p class="highlight-2">VIGYÁZAT: Soha ne állítsd vissza a root partíciót, ha arról indult a rendszered! Egyetlen parancs is végzetes adatvesztést okozhat valamennyi partíciódon, beleértve a külön meghajtón lévő mentéseidet is!! Az rdiff-backup pontosan azt teszi amire utasítást kap ... ha a root partícióról készült mentés üres könyvtárakat tartalmaz, akkor mivel a  visszaállítás a mentés szerinti állapotra történik, törölni fog mindent azokból a könyvtárakból.</p>
+
+				<p>A sda5 visszaállítása a legutóbbi mentésből egyszerűen így történik:</p>
+<pre>
+# rdiff-backup -r now /media/sdb1/rdiff-backups/192.168.0.1/sda5 /media/sda5
+</pre>
+			<h5>A root-partíció visszaállítása</h5>
+
+				<p>A root partítció visszaállítása nem egyszerű feladat. Soha ne állítsd vissza, miközben használatban van (lásd a fenti figyelmeztetést!). Valóban hasznos, hogy a root partíció is visszaállítható, ha valami elromlik egy frissítés, telepítés, vagy új kernel kipróbálása  során (stb.) és mindössze húsz percet vesz igénybe, hogy visszakapd a korábbi állapotot.</p>
+
+				<p>A root partíció visszaállításának egyik módja, hogy egy tartalék linux partíciót indítasz  el, ha rendelkezel ilyennel. Ezután bármely más partíciót visszaállíthatsz, hiszen az már nem rootként lesz felcsatolva. Miután visszaállítottad a partíciódat elindíthatod és az pontosan olyan lesz, mint amilyen a mentéskor volt! Ez a lehető legegyszerűbb mód.</p>
+
+				<p>Egy másik lehetsége eljárás szerint elindítasz egy aptosid live-cd rendszert és onnan intézed a visszatöltést. Az rdiff-backup megtalálható a aptosid live-rendszeren.  Abban az esetben, ha olyan live verzióval rendelkezel amelyik nem tartalmazza az rdiff-backupot, indítási opcióként (boot opciók, cheat-kódok) megadhatod a grubnak az "unionfs" kapcsolót, ami azt jelenti, hogy programokat telepíthetsz a live cd-re. Indítsd el a rendszert és add ki a következő parancsokat:</p>
+<pre>
+$ sudo su
+# wget -O /etc/apt/sources.list http://aptosid.com/files/misc/sources.list
+# apt-get update
+# apt-get install rdiff-backup
+</pre>
+				<h6>Most végezd el a visszaállítást:</h6>
+<pre>
+# mount /dev/sda1 /media/sda1
+# mount /dev/sdb1 /media/sdb1
+# rdiff-backup -r now /media/sdb1/rdiff-backups/192.168.0.1/root /media/sda1
+</pre>
+
+				<p>Megjegyzés: Ha nem rendelkezel aptosid CD-vel, de egy másik meglévő Live-CD klik támogatással rendelkezik, a Klik használatával telepítheted az rdiff-backupot a következők szerint:</p>
+<pre>
+$ sudo ~/.zAppRun ~/Desktop/rdiff-backup_0.13.4-5.cmg rdiff-backup -r now /media/sdb1/rdiff-backups/192.168.0.1/root /media/sda1
+</pre>
+
+				<p>Ajánlatos, hogy a root partícióról készült mentést (hogy szükség esetén visszaállítható legyen) leteszteld egy visszaállítási művelettel. Nincs annál rosszabb, mint abban a hiszemben élni, hogy minden rendben van, aztán vészhelyzetben még váratlanabb dologgal szembesülni.</p>
+
+							<p>If the hard drive has been changed or reformatted, recheck the UUIDs, (or Labels), in <span class="highlight-3">/boot/grub/menu.lst (grub-legacy) or files in /etc/grub.d (grub2)</span> and <span class="highlight-3">/etc/fstab</span>, and alter accordingly. An easy way to get the information to alter the menu.lst and fstab files, if required, is as root:</p>
+
+<pre>
+blkid
+</pre>
+
+			<h5>Más rendszerek biztonsági mentése</h5>
+
+				<p>Más számítógépekről és készülhet mentés a helyi gépedre, ha a géped ssh segítségével be tud rájuk jelentkezni (és amíg van hely a merevlemezeden). A távoli gépen futnia kell az ssh kiszolgálónak (sshd). A másik gépnek nem kell a helyi hálózatban lennie, bárhol lehet a világon.</p>
+
+				<p>Tételezzük fel, hogy a távoli PC a következőkkel rendelkezik:<br />
+				1) egy 100 GB-os, használatba lévő merevlemez (sda),<br />
+				2) a sda1 a root partíció,<br />
+				3) a sda5-ön átmeneti fájlokat tartunk és nem akarjuk menteni,<br />
+				4) és a sda6 a swap <br />
+				5) az IP címe 192.168.0.2</p>
+
+				<p>Megjegyzés: mindkét 100 GB-os meghajtót általában nem tudjuk rdiff-backuppal a 200 GB-os lemezre menteni (mivel nem marad hely az inkrementális fájloknak), de miután a a távoli gép sda5 partícióját nem mentjük (és mivel a meghajtók nincsenek 100%-ig tele), úgy számíthatjuk, hogy lesz elég helyünk. Minden rdiff-backup mentés újabb inkrementális fájlokat eredményez, melyek egyre több helyet foglalnak.</p>
+
+				<p>Utasíthatod az rdiff-backupot, hogy csak a legfeljebb a legutolsó egy hónap mentéseit őrizze meg (ez a parancs majd lejjebb megtalálható), és így máris kevesebb helyre lesz szükséged, mintha több évnyi adat megtartására utasítanád. Természetesen hosszú évek mentéseit is megőrizheted, ám az inkrementális adatok tárolásához rendelkezned kell a megfelelő méretű tároló kapacitással.</p>
+
+				<p>Az első dolog amit tenned kell, hogy a távoli gépen is telepíted az rdiff-backupot (minden gépre fel kell tenni, amelyikről mentést szeretnél).</p>
+
+				<p>A távoli PC mentéséhez a helyi gépen (a példánkban 192.168.0.1) futtasd le a parancsot: <span class="highlight-4">Figyeld meg a dupla kettőspontot :: </span></p>
+<pre>
+# mkdir /media/sdb1/rdiff-backups/192.168.0.2/root
+# rdiff-backup --exclude '/tmp/*' --exclude '/proc/*' --exclude '/sys/*' --exclude '/media/*/*' 192.168.0.2::/ /media/sdb1/rdiff-backups/192.168.0.2/root
+</pre>
+				<p>Ha a távoli gépen vissza akarsz állítani egy könyvtárat, a műveletet kezdeményezheted mind a távoli, mind a helyi gépről.</p>
+
+				<p>Így állítsd vissza a /usr/local/games könyvtárat a távoli gépen, a műveletet a távoli gépről indítva:</p>
+<pre>
+# rdiff-backup -r now 192.168.0.1::/media/sdb1/rdiff-backups/192.168.0.1/root/usr/local/games /usr/local/games
+</pre>
+				<p>Így állítsd vissza a /usr/local/games könyvtárat a távoli gépen, a műveletet a helyi gépről indítva:</p>
+<pre>
+# rdiff-backup -r now /media/sdb1/rdiff-backups/192.168.0.1/root/usr/local/games 192.168.0.2::/usr/local/games
+</pre>
+				<p>Ugyanazt a szintaxist használd, mint amikor a root partíciót állítottuk vissza egy live cd segítségével (ahol a távoli gép a live cd-ről lett indítva ... lásd feljebb).</p>
+
+			<h5>Automatikus mentések:</h5>
+
+				<p>Ha más gépeket akarsz a lokális PC-re menteni, az első beállítandó dolog a jelszó nélküli ssh bejelentkezés, ssh kulcsok használatával. <span class="highlight-2">Figyelem, most rootként történő, jelszó nélküli ssh bejelentkezésről beszélünk. Itt most csak az rdiff-backup parancsok kerülnek végrehajtásra, a többi kívül esik e fejezet témakörén. Olvasd el <a href="ssh-hu.htm#ssh-s">Az SSH beállítása</a> fejezetet.</span>  Feltételezzük egy teljesen megbízható hálózat létét, így a lehető legegyszerűbb módot használjuk a jelszó nélküli bejelentkezésre.</p>
+
+				<p>A helyi gépen tedd a következőt:</p>
+<pre>
+# [ -f /root/.ssh/id_rsa ] || ssh-keygen -t rsa -f /root/.ssh/id_rsa
+</pre>
+				<p>Nyomd meg kétszer az ENTER-t, hogy ne kelljen jelszót használni. Ezután:</p>
+<pre>
+# cat /root/.ssh/id_rsa.pub | ssh 192.168.0.2 'mkdir -p /root/.ssh;\<!--dunno if this is wrong-->
+> cat - >>/root/.ssh/authorized_keys2'
+</pre>
+				<p>Meg kell majd adnod a root jelszót.</p>
+
+				<p>Most már jelszó használata nélkül tudsz belépni ssh-val a távoli gépre, az rdiff-backup automatizálható.</p>
+
+				<p>A következő lépésként létrehozzuk a bash-szkriptet, amely tartalmazni fogja az összes szükséges rdiff-backup parancsot. A szkriptünk valahogy így nézhet ki:</p>
+
+
+<pre>
+#!/bin/bash
+RDIFF=/usr/bin/rdiff-backup
+echo
+echo "=======Backing up 192.168.0.1 root======="
+${RDIFF} --ssh-no-compression --exclude '/tmp/*' --exclude '/proc/*' --exclude '/sys/*' --exclude '/media/*/*' / /media/sdb1/rdiff-backups/192.168.0.1/root
+echo "(and purge increments older than 1 month)"
+${RDIFF} --remove-older-than 1M --force /media/sdb1/rdiff-backups/192.168.0.1/root
+echo
+echo "=======Backing up 192.168.0.1 mount sda5======="
+${RDIFF} --ssh-no-compression --exclude /media/sda5/myjunk /media/sda5 /media/sdb1/rdiff-backups/192.168.0.1/sda5
+echo "(and purge increments older than 1 months)"
+${RDIFF} --remove-older-than 1M --force /media/sdb1/rdiff-backups/192.168.0.1/sda5
+echo
+echo "=======Backing up 192.168.0.2 root======="
+${RDIFF} --ssh-no-compression --exclude '/tmp/*' --exclude '/proc/*' --exclude '/sys/*' --exclude '/media/*/*' --exclude '/mnt/*/*' 192.168.0.2::/media/sdb1/rdiff-backups/192.168.0.2/root
+echo "(and purge increments older than 1 months)"
+${RDIFF} --remove-older-than 1M --force /media/sdb1/rdiff-backups/192.168.0.2/root
+</pre>
+
+
+				<p>Elnevezheted a szkriptet például "myrdiff-backups.bash"-nak és elhelyezheted a  /usr/local/bin könyvtárban a helyi (backup szerver) gépen, azután tégy rá futtatási jogot. Futtasd le, hogy ellenőrizd a működését.</p>
+
+				<p>Végül megadhatod a cron-nak, hogy minden este 8-kor futtassa le. Az alábbi sor a root crontab-jában elvégzi ezt a trükköt. A parancs:</p>
+<pre>
+# crontab -e
+és írd be a következő sort:
+0 20 * * * /usr/local/bin/myrdiff-backups.bash
+</pre>
+
+			<div id="rev">Az oldal utoljára frissítve 14/08/2010 0100 UTC</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,540 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>aptosid Kézikönyvek - RSYNC</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body id="welcome">
+<div id="menu"> <!-- menu starts here hu lang maintained by mrowl ruess-->
+<!--aptosid Operating System Manual menu-version-00.00.2010.08.14 -->
+<!-- menu last updated by bluewater 2010.08.14 0100 hrs UTC -->
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="To aptosid.com forums and wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-hu.htm#search-on"><img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" /> Keresés Online Offline</a> </li>
+		<!--<li><a href="http://manual.aptosid.com/meta-manual">Community Software Selections</a></li>-->
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Másik nyelv kiválasztása" alt="lang-switch" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-hu.htm">aptosid OS Manual</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-hu.htm#welcome-gen">aptosid OS Manual &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-hu.htm#cred-team">Credits</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-hu.htm#how-to">How to use this manual &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-hu.htm#how-to">How to use this manual</a></li>
+					  <li><a href="welcome-hu.htm#table-contents">Table of Contents</a></li>
+					</ul>
+					</li>
+		<li><a href="help-hu.htm#help-gen">Getting Help &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-hu.htm#help-gen">Where and how to get help</a></li>
+					  <li><a href="help-hu.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-hu.htm#welcome-quick">aptosid Quick Start Guide</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-hu.htm">ISO Content, Releases, Download Mirrors and Burning</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-hu.htm#cd-content">ISO Content and system requirements &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-hu.htm#rolling">Release Notes</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-hu.htm#download-aptosid">aptosid Mirrors, Downloading and Burning &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-hu.htm#md5">md5 Checksum</a></li>
+					  <li><a href="cd-dl-burning-hu.htm#burn-nero">Burning in Windows</a></li>
+					  <li><a href="cd-dl-burning-hu.htm#burn-linux">Burning in Linux</a></li>
+					  <li><a href="cd-no-gui-burn-hu.htm#burning-no-gui">burniso script</a></li>
+					  <li><a href="cd-no-gui-burn-hu.htm#burn-no-gui-gen">Burning without a GUI</a></li><li><a href="cd-dl-burning-hu.htm#download-aptosid">aptosid Download Mirrors</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-hu.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-hu.htm#rootpw">Root-password on the aptosid-Live ISO</a></li>
+				<li><a href="live-mode-hu.htm#live-cd-installsoft">Installing software whilst on a Live-ISO</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-hu.htm">The Terminal / Konsole</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-hu.htm#term-kon"> Terminal / Konsole &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-hu.htm#term-kon"> Terminal / Konsole</a></li>
+					  <li><a href="term-konsole-hu.htm#cli-help">Command Line Help</a></li>
+					  <li><a href="help-hu.htm#init3-tools">Tools to know in text mode (tty) - init 3</a></li>
+					  <li><a href="term-konsole-hu.htm#term-cmds">Linux Terminal Commands List</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-hu.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-hu.htm">CheatCodes</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-hu.htm#cheatcodes">aptosid specific Live-ISO Cheatcodes</a></li>
+				<li><a href="cheatcodes-hu.htm#cheatcodes-linux">Linux generic Cheatcodes</a></li>
+				<li><a href="cheatcodes-vga-hu.htm#vga">VGA Codes</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-hu.htm">Partitioning Your Hard Drive</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-hu.htm#partition">Partitioning with a GUI &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-hu.htm#partition">Partitioning your HD using GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-hu.htm#ntfs">NTFS partition Resizing using GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-hu.htm#partition">Partitioning with CLI &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-hu.htm#partition">Partitioning  your HD using cfdisk</a></li>
+					    <li><a href="part-cfdisk-hu.htm#formating">Formatting after partitioning with cfdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-hu.htm#part-example">Partitioning Basics &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-hu.htm#part-example">Partition Size Examples</a></li>
+					  <li><a href="part-uuid-hu.htm#uuid">UUID, Partition Labelling and fstab</a></li>
+					  <li><a href="part-cfdisk-hu.htm#disknames">Disk Naming in brief</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-hu.htm">Installation options - HD, USB, VM</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-hu.htm#Inst-prep">Install Preparation &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-hu.htm#Inst-prep">Install Preparation </a></li>
+					  <li><a href="hd-install-hu.htm#Installation">Installing to your HD</a></li>
+					  <li><a href="hd-install-hu.htm#first-hd-boot">First Boot Up</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-hu.htm#fromiso">Booting fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-hu.htm#fromiso">Booting fromiso - Overview</a></li>
+					  <li><a href="hd-install-opts-hu.htm#fromiso-grub-leg">Booting 'fromiso' with grub-legacy</a></li>
+					  <li><a href="hd-install-opts-hu.htm#grub2-fromiso">Booting 'fromiso' with Grub 2</a></li>
+					  <li><a href="hd-install-opts-hu.htm#fromiso-persist">fromiso and persist</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-hu.htm#usb-hd">Installing to USB drives &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-hu.htm#usb-hd">Installing on a USB-HD - aptosid specific - aptosid-on-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-hu.htm#raw-usb">Writing aptosid to a USB/SSD stick with any Linux, MS Windows or Mac OS X system</a></li>
+					</ul>
+					</li>
+		  <li><a href="nbdboot-hu.htm#nbd1">Booting aptosid over a network</a></li>
+		  <li><a href="hd-install-vmopts-hu.htm#vm">Virtual Machine installation options</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="hw-dev-hw-dri-hu.htm">Graphic Cards, Monitors, Xorg &amp; Miscellaneous Drivers</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-hw-dri-hu.htm#hd-ntfs3g">Writing on NTFS-partitions with ntfs-3g</a></li>
+		<li><a href="hw-dev-mon-hu.htm#mon-res">Screen Resolution and Monitors  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-hu.htm#mon-res">Screen Resolution and Monitors</a></li>
+					  <li><a href="hw-dev-mon-hu.htm#xrandr">Dual Monitors and xrandr</a></li>
+					  <li><a href="hw-dev-mon-hu.htm#mon-binary">Dual Monitors (using binaries)</a></li>
+					</ul>
+					</li>
+		<li><a href="hw-dev-hw-dri-hu.htm#non-free-3d">Graphic card proprietry drivers &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="hw-dev-hw-dri-hu.htm#non-free-3d">Binary, non-free drivers for Nvidia &amp; xorg.conf</a></li>
+					  <li><a href="hw-dev-hw-dri-hu.htm#non-free-3d-2">non-free drivers for ATI, Radeon and others</a></li>
+					</ul>
+					</li>
+			  <li><a href="hw-dev-hw-dri-hu.htm#non-free-firmware">Hardware needing non-free firmware drivers</a></li>
+			  <li><a href="hw-dev-hw-dri-hu.htm#non-free">Adding non-free to Sources List</a></li>
+			  <li><a href="hw-dev-hw-dri-hu.htm#native-nv-ati">FOSS xorg drivers for nVidia, ATI, Radeon, Intel &amp; xorg.conf</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-kde-hu.htm">Window Managers</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-kde-hu.htm">Window Managers &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-kde-hu.htm">Window Managers</a></li>
+					    <li><a href="wm-xfce-hu.htm#xfce-notes">Useful Xfce extras</a></li>
+					    <li><a href="wm-kde-hu.htm#install-add">Useful extra KDE Apps</a></li>
+					    <li><a href="wm-kde-hu.htm#desk-freeze">Desktop Freezes</a></li>
+					    <li><a href="wm-kde-hu.htm#kde-login">Cant login in KDE</a></li>
+					    <li><a href="wm-kde-hu.htm#ch-th">Changing Themes</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-kde-hu.htm#dm">Display Managers - dm</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="internet-connecting-hu.htm">Internet connecting, WiFi, LAN and Networks</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-hu.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-hu.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-hu.htm#serv-ftp">FTP Clients</a></li>
+					    <li><a href="lamp-apache-hu.htm#serv-sec">Security Protocols</a></li>
+					    <li><a href="lamp-apache-hu.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-hu.htm#serv-mysql">MySQL Setup</a></li>
+					    <li><a href="lamp-ppp-hu.htm#serv-php">PHP in Apache</a></li>
+					    <li><a href="ntp-server-hu.htm#ntp-server">Timeserver Setup</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-hu.htm#tor">Firewalls and Privacy &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-hu.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-hu.htm#privoxy">Privoxy</a></li>
+					    <li><a href="internet-connecting-hu.htm#firewalls">Firewalls</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-hu.htm#ssh-x">SSH and Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-hu.htm#setup">Samba-Server Setup</a></li>
+						  <li><a href="samba-hu.htm#configure">Configuring SAMBA (Windows)</a></li>
+						  <li><a href="ssh-hu.htm#ssh-fs">SSH Remote Mounting</a></li>
+						  <li><a href="ssh-hu.htm#ssh-x">X Window Apps via SSH</a></li>
+						  <li><a href="ssh-hu.htm#ssh-f">GUI SSH with Konqueror</a></li>
+						  <li><a href="ssh-hu.htm#ssh-w">SSH X-Forwarding from Windows-PC</a></li>
+						  <li><a href="ssh-hu.htm#ssh">SSH and Security</a></li>
+					</ul>
+					</li>
+		<li><a href="internet-connecting-hu.htm#netcardconfig">WIFI connections &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="internet-connecting-hu.htm#netcardconfig">Getting Online - Ceni</a></li>
+						    <li><a href="inet-wpagui-hu.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-hu.htm#net-set1">WiFi - Setting up for WiFi Roaming</a></li>
+						    <li><a href="internet-connecting-wpa-hu.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-hu.htm#hotswitch">Network switching between WiFi and Cable</a></li>
+					</ul>
+					</li>
+		<li><a href="internet-connecting-hu.htm#netcardconfig">Wired Connections &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="internet-connecting-hu.htm#dial-mod">56k Modems</a></li>
+						    <li><a href="internet-connecting-hu.htm#netcardconfig">Getting Online - Ceni</a></li>
+					</ul>
+					</li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-hu.htm">Package Management and dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-hu.htm#apt-cook">APT Cookbook and Sources list &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-hu.htm#apt-cook">APT-Guide Cookbook and Sources list</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#apt-install">Installing a new package</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#apt-delete">Deleting a package</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#apt-downgrade">Package Hold and downgrading</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#apt-cache">Package searching with apt-cache</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#gui-pacsea">GUI Package searching</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-hu.htm#kern-upgrade">Upgrading the kernel &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-hu.htm#kern-remove">Removing Kernels</a></li>
+					    <li><a href="sys-admin-kern-upg-hu.htm#kern-upgrade">Upgrading the kernel</a></li>
+					    <li><a href="sys-admin-kern-upg-hu.htm#dmakms">Installing kernel modules dynamically with dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-hu.htm#apt-upgrade">Upgrade an Installed System -  dist-upgrade - Overview &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-hu.htm#live-cd-upgrade">Upgrading by Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-hu.htm#approx">dist-upgrade of multiple PCs on a LAN</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#apt-upgrade">Upgrade an Installed System -  dist-upgrade - Overview</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#du-st">Upgrade an Installed System -  dist-upgrade - The Steps</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-hu.htm">System Administration</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-hu.htm#bois-prep">Upgrading the BIOS with FreeDOS</a></li>
+		<li><a href="vir-rkits-hu.htm#virus-rkits">Virus and Rootkit Scanners</a></li>
+		<li><a href="hd-install-hu.htm#adduser">Adding Users and Passwords &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-hu.htm#adduser">Adding a new user</a></li>
+					    <li><a href="sys-admin-gen-hu.htm#pw-lost">Lost root passwords, new passwords</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-hu.htm#start-services">Services and init runlevels &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-hu.htm#start-services">Services enable/disable</a></li>
+					    <li><a href="sys-admin-gen-hu.htm#init">aptosid runlevels - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-hu.htm#rsync">Backing up the system &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-hu.htm#rdiff">Back-Up with rdiff</a></li>
+					    <li><a href="sys-admin-rsync-hu.htm#rsync">Back-Up with rsync</a></li>
+					    <li><a href="home-hu.htm#home-bu">Moving /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-hu.htm#fonts">CUPS, Fonts and Sound &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-hu.htm#fonts">Fonts</a></li>
+					     <li><a href="sys-admin-gen-hu.htm#cups">CUPS - Printing System</a></li>
+					     <li><a href="sys-admin-gen-hu.htm#sound">Sound Mixers</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-hu.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-hu.htm#chroot">Grub2 - Recovering Grub with chroot</a></li>
+					    <li><a href="sys-admin-grub2-hu.htm#mbr-over-grub2">Grub2 - MBR Overwritten</a></li>
+					    <li><a href="sys-admin-grub2-hu.htm#multi-os">Grub2 - Dual and Multibooting</a></li>
+					    <li><a href="sys-admin-grub2-hu.htm#grub1-grub2">Grub2 -Upgrading from Grub1</a></li>
+					    <li><a href="sys-admin-grub2-hu.htm#grub2">Grub2 - Overview</a></li>
+					</ul>
+					</li>
+			</ul>
+		</li>
+	</ul>
+<!-- menu ends here --> </div>
+<div id="main-page">
+	<div class="divider" id="rsync">
+			<h2 id="top-header">Biztonsági mentés rsync használatával</h2>
+							<p>rsync is a tool used to backup and synchronise your files. (It can be run on a variety of *nix ports).</p>
+
+							 <p class="highlight-2">Az rsync egyetlen korlátja, hogy NEM tud másolni távoli rendszerről távoli rendszerre. Ha ilyesmire vany szükséged, akkor kénytelen leszel az egyik távoli rendszert először lokálisan lemásolni, majd innen továbbküldeni a másik távoli rendszer felé. Ez az rsync egyik hiányossága.</p>
+
+							 <p>With aptosid you have choices how to initiate the proccess, DIY or via a deb package in Debian sid:</p>
+
+				<h5>For the deb package:</h5>
+<pre>
+apt-get install luckybackup
+</pre>
+							<p><a href="http://luckybackup.sourceforge.net/">Homepage of luckybackup.</a></p>
+
+				    <h6>What follows from here is the DIY version</h6>
+							<p>A következőkben egy használható tudást szeretnénk átadni az rsync mibenlétéről és bemutatni néhány kódmintát, amiket felhasználhatsz a saját mentő-szkriptedben.</p>
+
+				<p>Az rsync egy nagyon egyszerűen használható fájl-mentő, backup program, könyvtárakat és egyes fájlokat is gyorsan menthetünk vele. Ezt egy nagyon okos rutin teszi lehetővé, mely megkeresi a változásokat, így csak a módosított állományok kerülnek kiválasztásra. Az rsync egy tömmörítő eszközt is használ a másolás felgyorsítása érdekében <span class=" highlight-3">(amennyiben erre határozott utasítást kap a -z kapcsolóval)</span>. Mindez roppant egyszerűen értelmezhető:</p>
+
+				<p>Az rsync program megváltozott attribútumaik alapján felismeri azokat a fájlokat és könyvtárakat melyeket másolni kell (például az utolsó módosítás dátuma/időpontja, vagy fájl-méret alapján), vagyis észreveszi, hogy valami nem ugyanaz, mint a legutóbbi mentés alkalmával. Ez a kiválasztási eljárás nagyon gyorsan történik.</p>
+
+				<p>Miután az rsync elkészült a fájl-listával, a megváltozott állományok másolása már igen gyorsan megy, mivel az eljárás során egy tömörítés eljárás is végrehajtásra kerül. Az rsync a küldés előtt tömörít, majd az érkezési oldalon röptében végzi a kicsomagolást.</p>
+
+				<p>Az rsync a következő helyekről képes másolatot készíteni:<br />
+				* helyi rendszerről helyi rendszerre,<br />
+ 				* helyi rendszerről távoli rendszerre,<br />
+				* távoli rendszerről helyi rendszerre.</p>
+				<p>Használhatja egyszer az alapértelmezett <a href="ssh-hu.htm">ssh</a> kliens-programot, vagy démonként is futhat mind a forrás-, mind a célrendszeren. Az rsync kézikönyve (man rsync) kimondja, ha be tudsz ssh-val lépni egy rendszerre, akkor az rsync is képes rá.</p>
+
+				<p class="highlight-3">Az rsync egyetlen korlátja, hogy NEM tud másolni távoli rendszerről távoli rendszerre. Ha ilyesmire vany szükséged, akkor kénytelen leszel az egyik távoli rendszert először lokálisan lemásolni, majd innen továbbküldeni a másik távoli rendszer felé. Ez az rsync egyik hiányossága.</p>
+
+				<p>A működési elv szemléltetése érdekében tegyük fel, hogy van három rendszerünk;</p>
+<pre>
+neo – a helyi rendszer
+morpheus – egy távoli rendszer
+trinity – egy másik távoli rendszer
+</pre>
+				<p>Másolni, szinkronizálni akarod a három rendszer között az egyes /home/[user]/Data könyvtárakat. Minden rendszernek meg van a maga "tulajdonosa", más szavakkal, egy bizonyos felhasználó használja az adott rendszert, így az adott rendszer "forrásként" szolgálhat a másik kettő számára. Az rsync parancsot csak a lokálisnak kinevezett rendszeren fogod használni, ami jelen esetünkben neo névre hallgat:</p>
+<pre>
+a neo fő felhasználója: cuddles,
+a morpheus fő felhasználója tartie,
+végül a trinity fő felhasználója: taylar.
+</pre>
+				<p>Tehát, amire szükséged van, az a következők mentése, szinkronizálása:</p>
+
+<pre>
+A neo /home/cuddles/Data területe a morpheus-ra és a trinity-re,
+a morpheus /home/tartie/Data könyvtára a neo-ra és a trinity-re,
+illetve a trinity /home/taylar/Data könyvtára a neo-ra és a morpheus-ra.
+</pre>
+
+				<p>Az egyetlen problémánk az rsync-kel, hogy nem képes másolni az egyik távoli rendszerről a másik távoli rendszerre, ahogy fenti példában szeretnénk, vagyis menteni a trinity adatait a  morpheus-ra, vagy a morpheus-t a trinity-re (mind a forrás, mind a cél egy távoli rendszer a mi szemszögünkből): </p>
+
+
+<pre>
+neo --> morpheus – működik, helyiről távolira
+neo --> trinity – működik, helyiről távolira
+morpheus --> neo – működik, távoliról helyire
+trinity --> neo – működik, távoliról helyire
+morpheus --> trinity – távoliról távolira – nem működik
+trinity --> morpheus – távoliról távolira – nem működik
+</pre>
+				<p>E korlát megkerüléséhez kissé módosítani kell az rsync sémádat. Az alábbiak szerint jó is lesz;</p>
+<pre>
+morpheus --> trinity – helyett: morpheus --> neo &amp; neo --> trinity
+trinity --> morpheus – helyett: trinity --> neo &amp; neo --> morpheus
+</pre>
+				<p>Ez egy plusz művelet az eredeti igényhez képest, de ha figyelembe vesszük, hogy a fájlokat a neo-ra is szeretnéd másolni, akkor csak a művelet forrása változik meg, nem pedig a végeredmény. Ez feltételezi, hogy a mentéseink jók és semmi sem hiányzik.</p>
+
+				<p class="highlight-3">Az rsync ismert korlátját figyelembe kell venni a mentési eljárás megtervezése során.</p>
+
+				<h5>Hosztnevek (hostnames) használata rsync-kel.</h5>
+
+				<p>A fentebb írtak szerint a neo, morpheus, és trinity neveket használjuk az IP-címek helyett, mely eljárás tiszta és egyszerű módja a dolgok olvashatóbbá tételének. A hosztnevek használatának biztosítása nagyon egyszerű.</p>
+
+				<p>A /etc/hosts fájlt kell szerkeszteni, hozzáadni a hosztneveket és a nekik megfelelő IP-címeket. Íme egy kis részlet a /etc/hosts fájl néhány sorával, a címfordítás bemutatására:</p>
+<pre>
+192.168.1.15	 neo
+192.168.1.16	 morpheus
+192.168.1.17	 trinity
+</pre>
+				<p>A fenti első sor lefordítja a 192.168.1.15 IP-címet “neo” névre, a második 192.168.1.16 címet “morpheus” névre, és végül az utolsó sorban lévő 192.168.1.17 címet “trinity” névre.  Miután a fentiek bekerültek a /etc/hosts fájlba, máris használhatod a neveket az IP-címek helyett, de természetesen az IP-címek használhatók továbbra is. Ami ezt igazán kellemessé teszi, az egy esetleges IP-cím változás. Például mondjuk, hogy a neo IP-címe 192.168.1.15-ről 192.168.1.25-re változik.</p>
+
+				<p>Ha minden szkripted IP-címeket használ, akkor mindben meg kell keresned a régi címet és lecserélni az újra. Ha pedig a szkriptjeid "neveket" használnak, csupán a /etc/hosts fájlban kell átvezetned a módosítást és valamennyi szkripted működőképes lesz. Ez nagyon kényelmes, főleg ha sok szkriptedben használsz távoli kapcsolatokat. A “név” metódus olvashatóbbá és követhetőbbé is teszi a szkripteket.</p>
+
+				<h4>Az rsync, és annak két használati módja.</h4>
+
+				<p>Az egyik módszer, hogy a fájlokat <b>áttoljuk (“push”)</b> a célrendszerre, a másik pedig, hogy <b>áthúzzuk (“pull”)</b> őket a forrásrendszerről. Mindegyiknek megvannak a maga előnyei és némi hátránya. Vizsgáljuk meg a módszereket közelebbről (a magyarázathoz feltételezzük, hogy van egy lokális és egy távoli rendszerünk. Így jobban megérthető a terminológia.)</p>
+
+				<p><b>“push”</b> - a helyi rendszer tartalmazza a forrás-fájlokat és könyvtárakat, a cél egy távoli rendszer. Az rsync parancsot a helyi rendszeren futtatjuk és “áttoljuk” a fájlokat a célrendszerre.</p>
+
+				<p>Előnyei:<br />
+				* Több rendszered is lehet, mely automatikus mentés készít önmagáról, egy célrendszerre.<br />
+				* A mentés eljárás a gépek között elosztva működik, nem egy rendszert terhel.<br />
+				* Ha az egyik rendszer gyorsabb a másiknál, hamarabb végezhet a mentéssel így marad ideje mással foglalkozni.</p>
+
+				<p>Hátrányai:<br />
+				* Ha a cron által ütemezett szkriptet használsz, minden rendszeren külön kell ügyelni az ütemezésre, valamint minden rendszernek saját szkripttel kell rendelkeznie, melyet szintén külön-külön kell karbantartani.<br />
+				* A mentésed nem tudja ellenőrizni, hogy a célrendszerren fel van-e csatolva a cél-partíció, így sikertelen is lehet a mentés.</p>
+
+				<p><b>“pull”</b> - a távoli rendszeren vannak a mentendő fájlok és könyvtárak, míg a helyi gépen a mentési célpont található. Az rsync parancs a helyi gépen fut és “áthúzza” a fájlokat a forrásrendszerből.</p>
+
+				<p>Előnyei:<br />
+				* Egy rendszer kiszolgálóként működik, mely a többi rendszer mentéseit vezérli: központosított mentések.<br />
+				* Ha szkriptet használsz, az csak egy rendszeren található meg és egy darab szkriptet jelent, így annak frissítése, karbantartása egyszerűvé válik. Így elegendő egy darab crontab fájl is a szkript ütemezéséhez.<br />
+				* A szkript ellenőrizheti, szükség szerint felmountolhatja a célpartíciót.</p>
+
+				<h6>Az rsync szintaxisa, ahogy a man-oldalon olvasható:</h6>
+<pre>
+       rsync [OPTION]... SRC [SRC]... DEST
+
+       rsync [OPTION]... SRC [SRC]... [USER@]HOST:DEST
+
+       rsync [OPTION]... SRC [SRC]... [USER@]HOST::DEST
+
+       rsync [OPTION]... SRC [SRC]... rsync://[USER@]HOST[:PORT]/DEST
+
+       rsync [OPTION]... SRC
+
+       rsync [OPTION]... [USER@]HOST:SRC [DEST]
+
+       rsync [OPTION]... [USER@]HOST::SRC [DEST]
+
+       rsync [OPTION]... rsync://[USER@]HOST[:PORT]/SRC [DEST]
+</pre>
+				<h5>Működő példa az rsync parancs használatára:</h5>
+<pre>
+rsync -agEvz --delete-after --exclude=”*~” morpheus:/home/tartie /media/sda7/SysBackups/morpheus/home
+</pre>
+				<p>Vessünk egy-egy pillantást a parancs részeire:</p>
+<pre>
+a forrás útvonala: morpheus:/home/tartie
+míg a cél: /media/sda7/SysBackups/morpheus/home
+</pre>
+				<p>a /home/tartie... alatt minden mentésre kerül a /media/sda7/SysBackups/morpheus/home célhelyre, ami a következőképp néz ki:</p>
+<pre>
+/media/sda7/SysBackups/morpheus/home/tartie...
+</pre>
+				<p>Megjegyzendő, hogy a /tartie csak a mi döntésünk alapján került a /home alá, vagyis mert így határoztuk meg a CÉLT és nem a FORRÁSBÓL ered. A "forrás" csak azt mondja meg honnan jönnek a fájlok és nem azt, hogy hová kerülnek. A "cél" mondja meg az rsync-nek, hová tegye a "forrásból" érkező fájlokat. Vegyük a következő példát:</p>
+<pre>
+rsync [...] /home/user/data/files /media/sda7/SysBackups/neo
+</pre>
+				<p>A fenti parancsban csak a /files forráskönyvtár és az alatta levő fájlok a /neo célkönyvtárba kerülnek és nem a /media/sda7/SysBackups/neo/home/user/data/files alá.
+</p>
+
+				<p>Tartsd szem előtt a fentieket, mikor létrehozod a saját rsync mentési parancsaidat.</p>
+
+				<h5>Az opciók magyarázata:</h5>
+<pre>
+-a az arhív mód. A man oldal alapján kissé leegyszerűsítve annyit tesz, készíts rekurzív mentést,
+őrizz meg majdnem mindent. A  hardlinkek nem kerülnek megőrzésre azok komplexitása miatt.
+A -a opció megfelel a -rlptgoD kapcsolóknak, jelentésük:
+  -r = rekurzív – a forrás alatt található fájlok és alkönyvtárak feldolgozása.
+  -l = linkek – ha sysmlinket talál, létrehozza azt a cél oldalon.
+  -p = jogosultságok (permissions) – utasítja az rsync-et a jogosultságok lemásolására.
+  -t = idő (times) – utasítja az rsync-et a hozzáférési, létrehozási időtulajdonságok lemásolására.
+  -q = csendes mód (quiet) – utasítja az rsync-et a kiírt információk minimumra csökkentésére, amit ezután a -v
+kapcsolóval tudunk fokozatosan bővíteni. A teljesen csendes módhoz ne használjuk a -v kapcsolót.
+  -o = tulajdonos (owner) – utasítja az rsync-et, ha root-ként fut a célfájlokat adja az eredeti tulajdonos birtokába.
+-D = megyezik a következő két parancs használatával: --devices --specials
+ --devices = hatására az rsync átviszi a karakteres és blokk eszköz-fájlokat is a távoli rendszerre.
+Sajnos, ha nem adod meg vele együtt a --super kapcsolót, hatástalan marad.
+ --specials = eredménye, hogy az rsync speciális fájlokat is másol, mint például a socket- és fifo-fájlok.
+-g használatával őrizhetjük meg a csoportazonosítót a célfájlokon.
+-E használatával megőrizhetjük az “executable”, vagyis végrehajtási jogot a célfájlon.
+-v használatával növelhetjük az üzenetek részletességét. Ha már biztosak vagyunk abban, mit szeretnén menteni,
+a "v" elhagyható. Én bent szoktam hagyni, mivel a szkriptek cron-ból futnak és szeretem látni mit műveltek.
+Mindez személyes ízlés kérdése.
+-z használatával tömöríthetjük a "transzferálni", illetve másolni kívánt adatokat, így a másolási eljárás kevesebb
+időt vesz igénybe, mert a mozgatás alatt álló adat a valósnál kisebb méretű.
+--delete-after = azok a fájlok/könyvtárak, melyek a forrásrendszeren már nincsenek meg, az átvitel után
+kerülnek törlésre, nem előtte. Az “after” problémák, vagy összeomlások esetén használatos, a “delete” szerepe
+megtartani a célfájlokat, melyek már nem léteznek a forrásrendszeren és egy hiba miatt nem lettek kitakarítva
+a célrendszerről.
+--exclude = egy minta, amely alapján egyes könyvtárak és fájlok kizárásra kerülnek. A példában az --exclude=“*~”
+MINDEN könyvtárat és fájlt kihagy a mentésből, aminek neve “~” karakterre végződik. Csak egy minta adható meg
+az --exclude opció számára, ha több mintára is szükség van, több exclude kell a parancsba.
+</pre>
+				<p>Kiegészítésként néhány hasznos kapcsoló:</p>
+<pre>
+-c – további ellenőrzési szinteket ad a művelethez, melyek során  a másolás után a cél összevetésre kerül a forrással,
+ám ez hosszabbá teszi a mentési műveletet. Mivel az rsync alapból végez ellenőrzést, ez egyfajta redundanciát eredményez,
+ami nagy ritkán lehet csak szükséges.
+--super – melynek eredménye (a man-oldal szerint), hogy fogadó, vagy cél oldalon super-user tevékenységeket kell elvégezni.
+--dry-run – megmutatja mi kerülne másolásra, de valójában nem végzi el. Ez ahhoz hasonló, mint a -s kapcsoló egy apt-get
+install, vagy apt-get dist-upgrade esetén.
+</pre>
+				<p>A parancsunk maradék része a forrás fájl/könyvtár, illetve a célkönyvtár.</p>
+
+				<h5>Parancs példák:</h5>
+<pre>
+rsync -agEvz --delete-after --exclude=”*~” morpheus:/home/tartie /media/sda7/SysBackups/morpheus/home
+</pre>
+				<p>Ez a parancs minden fájlt és könyvtárat lement "morpheus" nevű rendszer /home/tartie könyvtárából melyek a /media/sda7/SysBackups/morpheus/home könyvtárában kerülnek tárolásra –  megtartva a tartie könyvtár eredeti fa-struktúráját.</p>
+<pre>
+rsync -agEvz --delete-after --exclude=”*~” /home/tartie neo:/media/sda7/SysBackups/morpheus/home
+</pre>
+				<p>Ez a parancs az előző ellentéte, áttolja a /home/tartie könyvtárat és tartalmát, alkönyvtárakkal együtt a "neo" rendszer ugyanazon nevű könyvtárába – figyeld meg, a távoli rendszer neve és az elérési útvonal közé  “:” (kettőspont) írandó.</p>
+<pre>
+rsync -agEvz --delete-after --exclude=”*~” /home/cuddles /media/sda7/SysBackups/neo/home
+</pre>
+				<p>Ez a parancs egy helyiről-helyire típusú mentést végez, erre utalnak a kettőspont nélküli forrás és cél elérési útvonalak is. Ez a parancs helyileg lementi /home/cuddles területet ugyanazon rendszer /media/sda7/SysBackups/neo/home útvonalára.</p>
+
+				<p>Lássunk egy többszörös kizárással megírt rsync parancsot:</p>
+<pre>
+rsync -agEvz --delete-after --exclude=”*~” --exclude=”*.c” --exclude=”*.o” "/*" /media/sda7/SysBackups/neo
+</pre>
+				<p>A fenti parancs lement MINDENT a helyi rendszer gyökér könyvtárából, minden könyvtárat és fájlt a /media/sda7/SysBackups/neo alá téve – ám kizár minden fájlt, vagy könyvtárat, melyeknek a neve “~”, vagy “.c”, illetve “.o” karakterekre végződik.</p>
+
+				<p class="highlight-2">Az alábbi példa hibás, óvakodj a használatától. Egy távoli-távoli mentést kísérelne meg:</p>
+<pre>
+rsync -agEvz --delete-after --exclude=”*~” morpheus:/home/tartie trinity:/home
+</pre>
+				<p class="highlight-2">Ahogy feljebb említettük ez az rsync egyik hiányossága.</p>
+
+				<p>Egy utolsó példaként lássuk hogyan nézne ki egy távoli-helyi mentés, ha a rendszerek neve helyett IP-címeket használnánk.</p>
+
+				<p>Az első parancs rendszernév használatával, a második IP-címmel került megírásra.</p>
+<pre>
+rsync -agEvz --delete-after --exclude=”*~” morpheus:/home/tartie /media/sda7/SysBackups/morpheus/home
+</pre>
+<pre>
+rsync -agEvz --delete-after --exclude=”*~” 192.168.1.16:/home/tartie /media/sda7/SysBackups/morpheus/home
+</pre>
+				<p>Ahogy korábba mondtuk, nem muszáj rendszerneveket használnod, de az első példán is látható, hogy jobban áttekinthető a művelet, mint a második esetben.</p>
+
+				<p>Most már képes vagy egyszerűbb parancsok tervezésére, akár a fenti példák használatával, akár az eddig nem tárgyalt, de az igényeidnek megfelelő parancsok felkutatásával.</p>
+	</div>
+			<div id="rev">Az oldal utoljára frissítve 14/08/2010 0100 UTC</div>
+
+
+</div>
+</body>
+</html>

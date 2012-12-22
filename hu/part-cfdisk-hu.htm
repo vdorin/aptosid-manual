@@ -1,0 +1,488 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>aptosid kézikönyv - cfdisk</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body id="part">
+<div id="menu"> <!-- menu starts here hu lang maintained by mrowl ruess-->
+<!--aptosid Operating System Manual menu-version-00.00.2010.08.14 -->
+<!-- menu last updated by bluewater 2010.08.14 0100 hrs UTC -->
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="To aptosid.com forums and wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-hu.htm#search-on"><img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" /> Keresés Online Offline</a> </li>
+		<!--<li><a href="http://manual.aptosid.com/meta-manual">Community Software Selections</a></li>-->
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Másik nyelv kiválasztása" alt="lang-switch" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-hu.htm">aptosid OS Manual</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-hu.htm#welcome-gen">aptosid OS Manual &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-hu.htm#cred-team">Credits</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-hu.htm#how-to">How to use this manual &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-hu.htm#how-to">How to use this manual</a></li>
+					  <li><a href="welcome-hu.htm#table-contents">Table of Contents</a></li>
+					</ul>
+					</li>
+		<li><a href="help-hu.htm#help-gen">Getting Help &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-hu.htm#help-gen">Where and how to get help</a></li>
+					  <li><a href="help-hu.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-hu.htm#welcome-quick">aptosid Quick Start Guide</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-hu.htm">ISO Content, Releases, Download Mirrors and Burning</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-hu.htm#cd-content">ISO Content and system requirements &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-hu.htm#rolling">Release Notes</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-hu.htm#download-aptosid">aptosid Mirrors, Downloading and Burning &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-hu.htm#md5">md5 Checksum</a></li>
+					  <li><a href="cd-dl-burning-hu.htm#burn-nero">Burning in Windows</a></li>
+					  <li><a href="cd-dl-burning-hu.htm#burn-linux">Burning in Linux</a></li>
+					  <li><a href="cd-no-gui-burn-hu.htm#burning-no-gui">burniso script</a></li>
+					  <li><a href="cd-no-gui-burn-hu.htm#burn-no-gui-gen">Burning without a GUI</a></li><li><a href="cd-dl-burning-hu.htm#download-aptosid">aptosid Download Mirrors</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-hu.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-hu.htm#rootpw">Root-password on the aptosid-Live ISO</a></li>
+				<li><a href="live-mode-hu.htm#live-cd-installsoft">Installing software whilst on a Live-ISO</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-hu.htm">The Terminal / Konsole</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-hu.htm#term-kon"> Terminal / Konsole &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-hu.htm#term-kon"> Terminal / Konsole</a></li>
+					  <li><a href="term-konsole-hu.htm#cli-help">Command Line Help</a></li>
+					  <li><a href="help-hu.htm#init3-tools">Tools to know in text mode (tty) - init 3</a></li>
+					  <li><a href="term-konsole-hu.htm#term-cmds">Linux Terminal Commands List</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-hu.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-hu.htm">CheatCodes</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-hu.htm#cheatcodes">aptosid specific Live-ISO Cheatcodes</a></li>
+				<li><a href="cheatcodes-hu.htm#cheatcodes-linux">Linux generic Cheatcodes</a></li>
+				<li><a href="cheatcodes-vga-hu.htm#vga">VGA Codes</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-hu.htm">Partitioning Your Hard Drive</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-hu.htm#partition">Partitioning with a GUI &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-hu.htm#partition">Partitioning your HD using GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-hu.htm#ntfs">NTFS partition Resizing using GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-hu.htm#partition">Partitioning with CLI &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-hu.htm#partition">Partitioning  your HD using cfdisk</a></li>
+					    <li><a href="part-cfdisk-hu.htm#formating">Formatting after partitioning with cfdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-hu.htm#part-example">Partitioning Basics &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-hu.htm#part-example">Partition Size Examples</a></li>
+					  <li><a href="part-uuid-hu.htm#uuid">UUID, Partition Labelling and fstab</a></li>
+					  <li><a href="part-cfdisk-hu.htm#disknames">Disk Naming in brief</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-hu.htm">Installation options - HD, USB, VM</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-hu.htm#Inst-prep">Install Preparation &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-hu.htm#Inst-prep">Install Preparation </a></li>
+					  <li><a href="hd-install-hu.htm#Installation">Installing to your HD</a></li>
+					  <li><a href="hd-install-hu.htm#first-hd-boot">First Boot Up</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-hu.htm#fromiso">Booting fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-hu.htm#fromiso">Booting fromiso - Overview</a></li>
+					  <li><a href="hd-install-opts-hu.htm#fromiso-grub-leg">Booting 'fromiso' with grub-legacy</a></li>
+					  <li><a href="hd-install-opts-hu.htm#grub2-fromiso">Booting 'fromiso' with Grub 2</a></li>
+					  <li><a href="hd-install-opts-hu.htm#fromiso-persist">fromiso and persist</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-hu.htm#usb-hd">Installing to USB drives &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-hu.htm#usb-hd">Installing on a USB-HD - aptosid specific - aptosid-on-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-hu.htm#raw-usb">Writing aptosid to a USB/SSD stick with any Linux, MS Windows or Mac OS X system</a></li>
+					</ul>
+					</li>
+		  <li><a href="nbdboot-hu.htm#nbd1">Booting aptosid over a network</a></li>
+		  <li><a href="hd-install-vmopts-hu.htm#vm">Virtual Machine installation options</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="hw-dev-hw-dri-hu.htm">Graphic Cards, Monitors, Xorg &amp; Miscellaneous Drivers</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-hw-dri-hu.htm#hd-ntfs3g">Writing on NTFS-partitions with ntfs-3g</a></li>
+		<li><a href="hw-dev-mon-hu.htm#mon-res">Screen Resolution and Monitors  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-hu.htm#mon-res">Screen Resolution and Monitors</a></li>
+					  <li><a href="hw-dev-mon-hu.htm#xrandr">Dual Monitors and xrandr</a></li>
+					  <li><a href="hw-dev-mon-hu.htm#mon-binary">Dual Monitors (using binaries)</a></li>
+					</ul>
+					</li>
+		<li><a href="hw-dev-hw-dri-hu.htm#non-free-3d">Graphic card proprietry drivers &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="hw-dev-hw-dri-hu.htm#non-free-3d">Binary, non-free drivers for Nvidia &amp; xorg.conf</a></li>
+					  <li><a href="hw-dev-hw-dri-hu.htm#non-free-3d-2">non-free drivers for ATI, Radeon and others</a></li>
+					</ul>
+					</li>
+			  <li><a href="hw-dev-hw-dri-hu.htm#non-free-firmware">Hardware needing non-free firmware drivers</a></li>
+			  <li><a href="hw-dev-hw-dri-hu.htm#non-free">Adding non-free to Sources List</a></li>
+			  <li><a href="hw-dev-hw-dri-hu.htm#native-nv-ati">FOSS xorg drivers for nVidia, ATI, Radeon, Intel &amp; xorg.conf</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-kde-hu.htm">Window Managers</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-kde-hu.htm">Window Managers &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-kde-hu.htm">Window Managers</a></li>
+					    <li><a href="wm-xfce-hu.htm#xfce-notes">Useful Xfce extras</a></li>
+					    <li><a href="wm-kde-hu.htm#install-add">Useful extra KDE Apps</a></li>
+					    <li><a href="wm-kde-hu.htm#desk-freeze">Desktop Freezes</a></li>
+					    <li><a href="wm-kde-hu.htm#kde-login">Cant login in KDE</a></li>
+					    <li><a href="wm-kde-hu.htm#ch-th">Changing Themes</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-kde-hu.htm#dm">Display Managers - dm</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="internet-connecting-hu.htm">Internet connecting, WiFi, LAN and Networks</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-hu.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-hu.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-hu.htm#serv-ftp">FTP Clients</a></li>
+					    <li><a href="lamp-apache-hu.htm#serv-sec">Security Protocols</a></li>
+					    <li><a href="lamp-apache-hu.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-hu.htm#serv-mysql">MySQL Setup</a></li>
+					    <li><a href="lamp-ppp-hu.htm#serv-php">PHP in Apache</a></li>
+					    <li><a href="ntp-server-hu.htm#ntp-server">Timeserver Setup</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-hu.htm#tor">Firewalls and Privacy &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-hu.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-hu.htm#privoxy">Privoxy</a></li>
+					    <li><a href="internet-connecting-hu.htm#firewalls">Firewalls</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-hu.htm#ssh-x">SSH and Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-hu.htm#setup">Samba-Server Setup</a></li>
+						  <li><a href="samba-hu.htm#configure">Configuring SAMBA (Windows)</a></li>
+						  <li><a href="ssh-hu.htm#ssh-fs">SSH Remote Mounting</a></li>
+						  <li><a href="ssh-hu.htm#ssh-x">X Window Apps via SSH</a></li>
+						  <li><a href="ssh-hu.htm#ssh-f">GUI SSH with Konqueror</a></li>
+						  <li><a href="ssh-hu.htm#ssh-w">SSH X-Forwarding from Windows-PC</a></li>
+						  <li><a href="ssh-hu.htm#ssh">SSH and Security</a></li>
+					</ul>
+					</li>
+		<li><a href="internet-connecting-hu.htm#netcardconfig">WIFI connections &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="internet-connecting-hu.htm#netcardconfig">Getting Online - Ceni</a></li>
+						    <li><a href="inet-wpagui-hu.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-hu.htm#net-set1">WiFi - Setting up for WiFi Roaming</a></li>
+						    <li><a href="internet-connecting-wpa-hu.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-hu.htm#hotswitch">Network switching between WiFi and Cable</a></li>
+					</ul>
+					</li>
+		<li><a href="internet-connecting-hu.htm#netcardconfig">Wired Connections &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="internet-connecting-hu.htm#dial-mod">56k Modems</a></li>
+						    <li><a href="internet-connecting-hu.htm#netcardconfig">Getting Online - Ceni</a></li>
+					</ul>
+					</li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-hu.htm">Package Management and dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-hu.htm#apt-cook">APT Cookbook and Sources list &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-hu.htm#apt-cook">APT-Guide Cookbook and Sources list</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#apt-install">Installing a new package</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#apt-delete">Deleting a package</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#apt-downgrade">Package Hold and downgrading</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#apt-cache">Package searching with apt-cache</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#gui-pacsea">GUI Package searching</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-hu.htm#kern-upgrade">Upgrading the kernel &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-hu.htm#kern-remove">Removing Kernels</a></li>
+					    <li><a href="sys-admin-kern-upg-hu.htm#kern-upgrade">Upgrading the kernel</a></li>
+					    <li><a href="sys-admin-kern-upg-hu.htm#dmakms">Installing kernel modules dynamically with dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-hu.htm#apt-upgrade">Upgrade an Installed System -  dist-upgrade - Overview &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-hu.htm#live-cd-upgrade">Upgrading by Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-hu.htm#approx">dist-upgrade of multiple PCs on a LAN</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#apt-upgrade">Upgrade an Installed System -  dist-upgrade - Overview</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#du-st">Upgrade an Installed System -  dist-upgrade - The Steps</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-hu.htm">System Administration</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-hu.htm#bois-prep">Upgrading the BIOS with FreeDOS</a></li>
+		<li><a href="vir-rkits-hu.htm#virus-rkits">Virus and Rootkit Scanners</a></li>
+		<li><a href="hd-install-hu.htm#adduser">Adding Users and Passwords &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-hu.htm#adduser">Adding a new user</a></li>
+					    <li><a href="sys-admin-gen-hu.htm#pw-lost">Lost root passwords, new passwords</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-hu.htm#start-services">Services and init runlevels &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-hu.htm#start-services">Services enable/disable</a></li>
+					    <li><a href="sys-admin-gen-hu.htm#init">aptosid runlevels - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-hu.htm#rsync">Backing up the system &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-hu.htm#rdiff">Back-Up with rdiff</a></li>
+					    <li><a href="sys-admin-rsync-hu.htm#rsync">Back-Up with rsync</a></li>
+					    <li><a href="home-hu.htm#home-bu">Moving /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-hu.htm#fonts">CUPS, Fonts and Sound &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-hu.htm#fonts">Fonts</a></li>
+					     <li><a href="sys-admin-gen-hu.htm#cups">CUPS - Printing System</a></li>
+					     <li><a href="sys-admin-gen-hu.htm#sound">Sound Mixers</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-hu.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-hu.htm#chroot">Grub2 - Recovering Grub with chroot</a></li>
+					    <li><a href="sys-admin-grub2-hu.htm#mbr-over-grub2">Grub2 - MBR Overwritten</a></li>
+					    <li><a href="sys-admin-grub2-hu.htm#multi-os">Grub2 - Dual and Multibooting</a></li>
+					    <li><a href="sys-admin-grub2-hu.htm#grub1-grub2">Grub2 -Upgrading from Grub1</a></li>
+					    <li><a href="sys-admin-grub2-hu.htm#grub2">Grub2 - Overview</a></li>
+					</ul>
+					</li>
+			</ul>
+		</li>
+	</ul>
+<!-- menu ends here --> </div>
+<div id="main-page">
+	<div class="divider" id="disknames">
+		<h2 id="top-header">Lemezek és partíció elnevezések</h2>
+				<h5><span class="highlight-2">FIGYELEM: A lemezek és partíciók elnevezéséről </span><a href="part-uuid-hu.htm"> lásd az "UUID, partíció-címkék és az fstab" fejezetet, mivel a aptosid UUID-ket használ</a>.</h5>
+
+			<h4>Általános elnevezési gyakorlat</h4>
+
+			<h5>Lemezek nevei</h5>
+
+							<p>Az udev és az Egységes Egyedi Azonosítók (Universal Unique Identifier, UUID) linux kernelbe való beolvasztásával minden blokk-szintű eszközt egy három betűből és egy számból álló számozási rendszer azonosítja, amelyben az <span class="highlight-3">sda</span> lemezes eszköz partíciói az <span class="highlight-3">sdaX</span> névre hallgatnak.</p>
+
+							<p>Legyenek bármelyik szabvány tagjai (PATA (IDE), SATA (Serial ATA) vagy SCSI), az egyetlen, ami megkülönbözteti az egyik lemezt a másiktól a rendszeredben, az az eszköz azonosítójának harmadik betűje: <span class="highlight-3"> /dev/sda1, /dev/sdb1, /dev/sdc1, /dev/sdd1</span>, stb.</p>
+
+							<p>Az eszközöket a aptosid is ilyen nevek alatt listázza a munkaasztal media ikonjai alatt a Live CD és a telepített változat alatt is.</p>
+
+							<p>Kifejezetten javasoljuk, hogy készíts egy táblázatot (akár kézzel, vagy programmal) a blokk eszközök minden elérhető tulajdonságával. Bár nagyon unalmas foglalatosság, ezzel sok-sok időt és problémát megspórolhatsz a jövőben.</p>
+
+							<p>A aptosid (Live CD változatban és telepítve is) a <span class="highlight-3"> /etc/fstab</span> fájlban tárolja a <span class="highlight-3"> /dev/ sdaX</span> információt, megjegyzésként az eszköz konfigurációs sora felett, szögletes zárójelek között. Például (és kiemelnénk, ez tényleg csak egy példa!):</p>
+<pre>
+# added by aptosid [<b>/dev/sdd1</b>, no label]
+UUID=2ae950df-7d72-4d9b-a71a-bad1eb2d4f6a       /       ext4    defaults,errors=remount-ro,relatime      0 1
+</pre>
+				<h5>Partíciók nevei</h5>
+
+							<p>Ahogyan fent láthattuk, a partíciók elnevezéséhez a <span class="highlight-3">/dev/disk</span> azonosítót egy számmal egészítjük ki. </p>
+
+							<p>A partíciók különféle típusai: elsődleges, kiterjesztett és logikai, ahol egy vagy több logikai partíciót a kiterjesztett tartalmaz. Maximum 4 elsődleges, illetve 3 elsődleges és egy kiterjesztett partíció adható meg. A kiterjesztett partíció 11 logikai partíciót tartalmazhat. </p>
+
+							<p>Az elsődleges és a kiterjesztett partíciók nevei sda1-től sda4-ig mennek. A logikai partíciók mindig folytonosak és egy kiterjesztett partíció részei. Maximum 11 logikai partíció definiálható (libata segítségével), ezek nevei az 5-ös számmal kezdődnek (pl. sda5) és 15-re végződnek (sda15).</p>
+
+				<h5>Néhány példa és alkalmazási lehetőség</h5>
+
+							<p><span class="highlight-3">/dev/sda5</span> : Logikai partíció (ez esetben, az első a merevlemezen), valószínűleg az első SATA vagy IDE merevlemezen helyezkedik el a számítógépen (BIOS beállításoktól függően).</p>
+
+							<p><span class="highlight-3">/dev/sdb3</span> csakis elsődleges vagy kiterjesztett partíció lehet; az eszköz betűjele különbözik az első példától, tehát azt kijelenthetjük, hogy ez a partíció semmiképpen sincs ugyanazon az eszközön.</p>
+
+				<h4>IDE eszközök korábbi, idejét múlt jelölései</h4>
+
+							<p>Régebbi linux rendszerek az IDE lemezes (PATA) eszközöket a jelenlegi sdaX szabványhoz képest eltérően, <span class="highlight-3">hdaX </span> néven kezelik.</p>
+
+	<div class="divider" id="partition">
+		<h2>A merevlemez partícionálása cfdisk segítségével</h2>
+							<p  class="highlight-2">Mindennapi használatra az ext4 fájlrendszert ajánljuk, mivel ez a aptosid fő fájlrendszere, ezért jól karbantartott.</p>
+
+							<p>Nyissunk meg egy parancssort (konsole vagy xterm), szerezzünk root jogot és indítsuk el a cfdisk-et:
+							<i>(merevlemezre telepített rendszer esetén szükség lesz a root jelszó megadására)</i></p>
+<pre >
+su
+cfdisk /dev/sda
+</pre>
+
+				<h5>Felhasználói felület</h5>
+							<p>Az első képernyőn a cfdisk listázza a partíciós táblát, és néhány adatot közöl a partíciókról. A képernyő alján foglalnak helyet a parancs gombok. A partíciók között a <b>le és fel nyíl billentyűkkel</b> lehet váltani. A parancsok között a <b>balra és jobbra nyíl gombokkal</b> lehet választani.</p>
+
+				<h5>Partíció törlése</h5>
+		<div class="screenshot"><img src="../lib/images-hu/cfdisk-hu/cfdisk0-hu.png" title="Delete a partition" alt="Delete a partition" /></div>
+
+							<p>A partíció törléséhez válasszuk ki a fel-le gombokkal, majd válasszuk ki a</p>
+<pre >
+Delete
+</pre>
+							<p>parancsot a jobb-bal gombokkal és nyomjuk meg az -t.</p>
+<pre >
+Enter
+</pre>
+
+			<h5>Új partíció létrehozása</h5>
+		<div class="screenshot"><img src="../lib/images-hu/cfdisk-hu/cfdisk1-hu.png" title="Create a new partition" alt="Create a new partition" /></div>
+
+							<p>Úl partíció létrehozásához használjuk a</p>
+<pre >
+New
+</pre>
+		 					<p>parancsot (kiválasztható a jobbra és balra nyilakkal), majd nyomjunk enter-t. Ekkor választani kell, hogy a partíció <b>elsődleges (primary)</b> vagy <b>logikai (logical)</b> legyen. Logikai partíció kiválasztásakor a program automatikusan létrehozza a szükséges kiterjesztett partíciót is. Ezután ki kell választani a partíció méretét (Mb-ban). Ha nem lehetséges a megabájtban megadás, akkor térj vissza a főablakba az Esc segítségével, és válaszd a következő lehetőséget:</p>
+<pre >
+Units
+</pre>
+
+			<h5>Partíció típusának megadása</h5>
+		<div class="screenshot"><img src="../lib/images-hu/cfdisk-hu/cfdisk2-hu.png" title="Type of a partition 1" alt="Type of a partition 1" /></div>
+
+							<p>A partíció típusának válasszuk a <b>Linux cserehely (swap)</b> vagy <b>Linux</b> lehetőséget; ehhez ki kell jelölni a partíciót, majd aparancs gombot: </p>
+<pre >
+Type
+</pre>
+							<p>A felbukkanó listán szóközt lenyomva még több típus közül választhatunk. A kívánt típus számát be kell gépelni. (A <b>Linux cserehely</b> típusa <b>82</b>, a <b>Linux</b> fájlrendszerhez <b>83</b>-at kell megadni).</p>
+		<div class="screenshot"><img src="../lib/images-hu/cfdisk-hu/cfdisk3-hu.png" title="Type of a partition 2" alt="Type of a partition 2" /></div>
+
+			<h5>Partíció aktiválása</h5>
+							<p>A Linux partíciót nem szükséges bootolhatóvá tenni, de egyéb operációs rendszerek igényelhetik ezt. Jelöld ki a kívánt partíciót és a szükséges parancsot. Megjegyzés: külső merevlemezre telepítéskor legalább egy partíciónak bootolhatónak kell lennie:</p>
+<pre >
+Bootable
+</pre>
+
+			<h5>A változtatások lemezre írása</h5>
+							<p>Ha készen vagyunk, a Write paranccsal el tudjuk menteni a változtatásokat. A lemez partíciós táblája meg fog változni (a dos-ra vonatkozó hibaüzenetet figyelmen kívül lehet hagyni). Mivel a törölt vagy megváltoztatott partíciókon minden adat el fog veszni, győződj meg róla, hogy a megfelelő változtatások történtek, mielőtt megnyomod a  parancsot:</p>
+<pre >
+Return
+</pre>
+		<div class="screenshot"><img src="../lib/images-hu/cfdisk-hu/cfdisk4-hu.png" title="Write the result to disk" alt="Write the result to disk" /></div>
+
+			<h5>Kilépés</h5>
+							<p>A programból való kilépéshez a Quit parancsot kell kiválasztani. A cfdisk-ből való kilépés után, még a partíció(k) formázása előtt a számítógépet újra kell indítani, hogy a aptosid újra tudja olvasni a partíciós táblát.</p>
+	</div>
+
+	<div class="spacer05"></div>
+	<div class="divider" id="formating">
+		<h2>Partíciók formázása (miután a cfdisk-kel partícionáltunk)</h2>
+
+			<h5>Az alapok</h5>
+							<p>Minden partíción kell, hogy legyen egy fájlrendszer. A Linux-szal több fájlrendszer is használható: ReiserFs, Ext4, haladó felhasználóknak az XFS vagy a JFS. Az Ext2 hasznos lehet adattárolásra, mert a Windows-hoz létezik meghajtóprogram az adatcseréhez. <a href="http://www.fs-driver.org/">Ext2 Installable File System For MS Windows</a>.</p>
+
+							<p  class="highlight-2">Mindennapi használatra az ext4 fájlrendszert ajánljuk, mivel ez a aptosid fő fájlrendszere, ezért jól karbantartott.</p>
+
+			<h5>Formázás</h5>
+							<p>Miután kiléptünk a <b>cfdisk</b>-ből, visszatérünk a parancssorba. A formázáshoz root jogok szükségesek. A root és/vagy /home partíciók formázásához (ebben a példában <b>sdb1</b>) be kell gépelni <i>(merevlemezes telepítésnél szükség lesz a root jelszó megadására)</i>:</p>
+<pre >
+su
+mkfs -t ext4 /dev/sdb1
+</pre>
+
+							<p>Győződjünk meg róla, hogy tényleg a megfelelő partíciót akarjuk formázni, majd válaszoljunk igennel a feltett kérdésre.</p>
+
+							<p>A parancs sikeres lefutásáról egy üzenet tájékoztat, miszerint az ext4 partíció kiírásra került a lemezre. Ha nincs ilyen üzenet, valószínűleg a cfdisk használata során valami hiba lépett fel, vagy az sdb1 nem linux partíció. Ezt le tudjuk ellenőrizni az paranccsal:</p>
+<pre >
+fdisk -l /dev/sdb
+</pre>
+
+							<p>Ha hibát találtunk, végezzük el újra a partícionálást.</p>
+
+							<p>Ha a formázás sikeres, és van külön /home partíció, formázzuk le azt is hasonló módon.</p>
+
+							<p>Utoljára a cserehely partíciót formázzuk, példánkban ez az sdb3:</p>
+<pre >
+mkswap /dev/sdb3
+</pre>
+
+							<p>majd ezután:</p>
+
+<pre >
+swapon /dev/sdb3
+</pre>
+
+							<p>Ellenőrizzük le, hogy a cserehelyet a linux felismerte-e, az alábbi parancs begépelésével:</p>
+<pre >
+swapon -s
+</pre>
+							<p>az újonnan felcsatolt cserehely partíciót fel kell ismernie a rendszernek, esetünkben ez így néz ki:</p>
+
+	<table class="center">
+		<tbody>
+			<tr>
+				<th>Filename</th>
+				<th>Type</th>
+				<th>Size</th>
+				<th>Used</th>
+				<th>Priority</th>
+			</tr>
+			<tr>
+				<td>/dev/sdb3</td>
+				<td>partition</td>
+				<td>995988</td>
+				<td>248632</td>
+				<td>-1</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="spacer02"></div>
+							<p>Ha a rendszer felismerte a cserehelyet, akkor kikapcsolhatjuk:</p>
+<pre >
+swapoff -a
+</pre>
+							<p>majd indítsuk újra a számítógépet.</p>
+
+
+							<p>A rendszer készen áll a telepítésre.</p>
+
+			<div id="rev">Content last revised 14/08/2010 0100 UTC</div>
+</div>
+</div>
+</div>
+</body>
+</html>

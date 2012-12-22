@@ -1,0 +1,157 @@
+AUDIT-hu-lang-control-file-list-2009-05-19-0750-UTC
+-hu Translators honershark,, mrowl,ruess, and zolix
+10 left!!!!!!!!!!!!!!!  plus all files need to be rechecked for outstanding
+alterations not translated
+						
+FILE NAME				K	STATUS	PRIORITY	WHO
+cover-pdf-hu							low
+manual-search-hu.htm			16K	Y		Medium
+part-uuid-hu.htm			23K	Y		Medium
+ssh-hu.htm				24K	Y		High
+sys-admin-kern-upg-hu.htm		17K	Y		High
+sys-admin-release-hu			18k			low
+tor-privoxy-hu.htm			22K	Y		Low
+vir-rkits-hu.htm			16K	Y		Low
+wm-kde-hu.htm				18K	50% 		Medium
+wm-xfce-hu.htm				18K	Y		Medium
+
+COMPLETED 36 +menu (37/47) can go online
+bios-freedos-hu				21k
+cd-content-hu.htm			16K	Y
+cd-dl-burning-hu.htm			8K	Y
+cd-no-gui-burn-hu.htm			15K	Y
+cheatcodes-hu.htm			22K	Y
+cheatcodes-vga-hu.htm			16K	Y
+credits-hu.htm				15K	Y
+hd-install-hu.htm			25K	Y
+hd-install-opts-hu.htm			31K	Y
+help-hu.htm				25K	Y
+home-hu					15K
+hw-dev-hw-dri-hu.htm			29K	Y
+hw-dev-mon-hu.htm			29K	Y
+internet-connecting-hu.htm		16K	Y
+internet-connecting-wpa-hu.htm		35K	Y
+internet-connecting-wpagui-hu.htm	21K	Y
+lamp-apache-hu.htm			22K	Y
+lamp-ppp-hu.htm				14K	Y
+lamp-sql-hu.htm				14K	Y
+live-mode-hu.htm			15K
+[ ]	menu-hu				12K	State of Flux
+ntp-server-hu.htm			17K
+part-cfdisk-hu.htm			22K
+part-gparted-hu.htm			20K	Y
+part-size-examp-hu.htm			21K	Y
+samba-hu.htm				18K	Y
+siduxcc-hu.htm				16K	Y
+sys-admin-apt-hu.htm			35K	Y
+sys-admin-gen-hu.htm			20K	Y
+sys-admin-grub-bootman2-hu.htm		36K	Y
+sys-admin-meta-hu.htm			16K	Y
+sys-admin-rdiff-hu.htm			29K	Y
+sys-admin-rsync-hu.htm			29K	Y
+sys-admin-upgrade-hu.htm		17K	Y
+term-konsole-hu.htm			23K	Y
+welcome-hu.htm				26K
+wel-quickstart-hu.htm			22K	Y
+
+
+FILE TRANSLATION STATUS -hu Translators honershark, ruess and zolix
+_______________________________________________________________________________________
+FILE NAME				STATUS (e.g. In Progress)	DATE/WHO
+_______________________________________________________________________________________
+
+hw-dev-mon-hu.htm			started			07.06.2008/honorshark
+internet-connecting-wpa-hu.htm		
+lamp-apache-hu.htm			started			19.07.2008/zolix	
+lamp-ppp-hu.htm
+lamp-sql-hu.htm
+live-mode-hu.htm
+ntp-server-hu.htm
+part-cfdisk-hu.htm
+part-uuid-hu.htm
+smxi-hu.htm
+ssh-hu.htm
+tor-privoxy-hu.htm
+vir-rkits-hu.htm
+welcome-hu.htm				started			24.06.2008/reuss
+
+COMPLETED
+cd-content-hu.htm			done v2			xx.04.2008/honorshark
+cd-dl-burning-hu.htm			done			21.05.2008/zolix
+cd-no-gui-burn-hu.htm			done			22.05.2008/zolix
+cheatcodes-hu.htm			done			26.05.2008/zolix
+cheatcodes-vga-hu.htm			done			27.05.2008/zolix
+credits-hu.htm				done			27.05.2008/zolix
+hd-install-hu.htm			done			31.05.2008/zolix
+hd-install-opts-hu.htm			done			01.06.2008/zolix
+help-hu.htm				done			06.06.2008/zolix
+home-hu.htm				done			13/03/2009/reuss
+hw-dev-hw-dri-hu.htm			done			07.06.2008/zolix
+internet-connecting-hu.htm		done			08.06.2008/zolix
+internet-connecting-ndis-hu.htm		done			11.06.2008/zolix
+menu-hu					modified		01.06.2008/reuss
+part-gparted-hu.htm			done v2			xx.04.2008/honorshark
+part-size-examp-hu.htm			done			24.06.2008/reuss
+samba-hu.htm				done			07.05.2008/zolix
+siduxcc-hu.htm				done v1			xx.04.2008/honorshark
+sys-admin-apt-hu.htm			done			14.06.2008/zolix
+sys-admin-gen-hu.htm			done			19.06.2008/zolix
+sys-admin-grub-bootman2-hu.htm		done			22.06.2008/zolix
+sys-admin-meta-hu.htm			done			26.06.2008/zolix
+sys-admin-rdiff-hu.htm			done			28.06.2008/zolix
+sys-admin-rsync-hu.htm			done			13.07.2008/zolix
+sys-admin-upgrade-hu.htm		done			19.07.2008/zolix
+term-konsole-hu.htm			done			22.06.2008/reuss
+wm-kde-hu.htm				done v1			19.05.2008/honorshark
+wel-quickstart-hu.htm			done			01.06.2008/reuss 
+
+
+FILE TRANSLATION STATUS -hu Translators honershark, ruess and zolix
+_______________________________________________________________________________________
+FILE NAME				STATUS (e.g. In Progress)	DATE/WHO
+_______________________________________________________________________________________
+
+hw-dev-mon-hu.htm			started			07.06.2008/honorshark
+internet-connecting-wpa-hu.htm		
+lamp-apache-hu.htm			started			19.07.2008/zolix	
+lamp-ppp-hu.htm
+lamp-sql-hu.htm
+live-mode-hu.htm
+ntp-server-hu.htm
+part-cfdisk-hu.htm
+part-uuid-hu.htm
+smxi-hu.htm
+ssh-hu.htm
+tor-privoxy-hu.htm
+vir-rkits-hu.htm
+welcome-hu.htm				started			24.06.2008/reuss
+
+COMPLETED
+cd-content-hu.htm			done v2			xx.04.2008/honorshark
+cd-dl-burning-hu.htm			done			21.05.2008/zolix
+cd-no-gui-burn-hu.htm			done			22.05.2008/zolix
+cheatcodes-hu.htm			done			26.05.2008/zolix
+cheatcodes-vga-hu.htm			done			27.05.2008/zolix
+credits-hu.htm				done			27.05.2008/zolix
+hd-install-hu.htm			done			31.05.2008/zolix
+hd-install-opts-hu.htm			done			01.06.2008/zolix
+help-hu.htm				done			06.06.2008/zolix
+hw-dev-hw-dri-hu.htm			done			07.06.2008/zolix
+internet-connecting-hu.htm		done			08.06.2008/zolix
+internet-connecting-ndis-hu.htm		done			11.06.2008/zolix
+menu-hu					modified		01.06.2008/reuss
+part-gparted-hu.htm			done v2			xx.04.2008/honorshark
+part-size-examp-hu.htm			done			24.06.2008/reuss
+samba-hu.htm				done			07.05.2008/zolix
+siduxcc-hu.htm				done v1			xx.04.2008/honorshark
+sys-admin-apt-hu.htm			done			14.06.2008/zolix
+sys-admin-gen-hu.htm			done			19.06.2008/zolix
+sys-admin-grub-bootman2-hu.htm		done			22.06.2008/zolix
+sys-admin-meta-hu.htm			done			26.06.2008/zolix
+sys-admin-rdiff-hu.htm			done			28.06.2008/zolix
+sys-admin-rsync-hu.htm			done			13.07.2008/zolix
+sys-admin-upgrade-hu.htm		done			19.07.2008/zolix
+term-konsole-hu.htm			done			22.06.2008/reuss
+wm-kde-hu.htm				done v1			19.05.2008/honorshark
+wel-quickstart-hu.htm			done			01.06.2008/reuss 
+

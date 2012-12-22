@@ -1,0 +1,714 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>aptosid Kézikönyvek - APT-Kalauz</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision by bluewater 10/01/2008 0400 UTC -->
+<div id="menu"> <!-- menu starts here hu lang maintained by mrowl ruess-->
+<!--aptosid Operating System Manual menu-version-00.00.2010.08.14 -->
+<!-- menu last updated by bluewater 2010.08.14 0100 hrs UTC -->
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="To aptosid.com forums and wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-hu.htm#search-on"><img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" /> Keresés Online Offline</a> </li>
+		<!--<li><a href="http://manual.aptosid.com/meta-manual">Community Software Selections</a></li>-->
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Másik nyelv kiválasztása" alt="lang-switch" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-hu.htm">aptosid OS Manual</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-hu.htm#welcome-gen">aptosid OS Manual &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-hu.htm#cred-team">Credits</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-hu.htm#how-to">How to use this manual &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-hu.htm#how-to">How to use this manual</a></li>
+					  <li><a href="welcome-hu.htm#table-contents">Table of Contents</a></li>
+					</ul>
+					</li>
+		<li><a href="help-hu.htm#help-gen">Getting Help &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-hu.htm#help-gen">Where and how to get help</a></li>
+					  <li><a href="help-hu.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-hu.htm#welcome-quick">aptosid Quick Start Guide</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-hu.htm">ISO Content, Releases, Download Mirrors and Burning</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-hu.htm#cd-content">ISO Content and system requirements &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-hu.htm#rolling">Release Notes</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-hu.htm#download-aptosid">aptosid Mirrors, Downloading and Burning &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-hu.htm#md5">md5 Checksum</a></li>
+					  <li><a href="cd-dl-burning-hu.htm#burn-nero">Burning in Windows</a></li>
+					  <li><a href="cd-dl-burning-hu.htm#burn-linux">Burning in Linux</a></li>
+					  <li><a href="cd-no-gui-burn-hu.htm#burning-no-gui">burniso script</a></li>
+					  <li><a href="cd-no-gui-burn-hu.htm#burn-no-gui-gen">Burning without a GUI</a></li><li><a href="cd-dl-burning-hu.htm#download-aptosid">aptosid Download Mirrors</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-hu.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-hu.htm#rootpw">Root-password on the aptosid-Live ISO</a></li>
+				<li><a href="live-mode-hu.htm#live-cd-installsoft">Installing software whilst on a Live-ISO</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-hu.htm">The Terminal / Konsole</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-hu.htm#term-kon"> Terminal / Konsole &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-hu.htm#term-kon"> Terminal / Konsole</a></li>
+					  <li><a href="term-konsole-hu.htm#cli-help">Command Line Help</a></li>
+					  <li><a href="help-hu.htm#init3-tools">Tools to know in text mode (tty) - init 3</a></li>
+					  <li><a href="term-konsole-hu.htm#term-cmds">Linux Terminal Commands List</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-hu.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-hu.htm">CheatCodes</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-hu.htm#cheatcodes">aptosid specific Live-ISO Cheatcodes</a></li>
+				<li><a href="cheatcodes-hu.htm#cheatcodes-linux">Linux generic Cheatcodes</a></li>
+				<li><a href="cheatcodes-vga-hu.htm#vga">VGA Codes</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-hu.htm">Partitioning Your Hard Drive</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-hu.htm#partition">Partitioning with a GUI &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-hu.htm#partition">Partitioning your HD using GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-hu.htm#ntfs">NTFS partition Resizing using GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-hu.htm#partition">Partitioning with CLI &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-hu.htm#partition">Partitioning  your HD using cfdisk</a></li>
+					    <li><a href="part-cfdisk-hu.htm#formating">Formatting after partitioning with cfdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-hu.htm#part-example">Partitioning Basics &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-hu.htm#part-example">Partition Size Examples</a></li>
+					  <li><a href="part-uuid-hu.htm#uuid">UUID, Partition Labelling and fstab</a></li>
+					  <li><a href="part-cfdisk-hu.htm#disknames">Disk Naming in brief</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-hu.htm">Installation options - HD, USB, VM</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-hu.htm#Inst-prep">Install Preparation &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-hu.htm#Inst-prep">Install Preparation </a></li>
+					  <li><a href="hd-install-hu.htm#Installation">Installing to your HD</a></li>
+					  <li><a href="hd-install-hu.htm#first-hd-boot">First Boot Up</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-hu.htm#fromiso">Booting fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-hu.htm#fromiso">Booting fromiso - Overview</a></li>
+					  <li><a href="hd-install-opts-hu.htm#fromiso-grub-leg">Booting 'fromiso' with grub-legacy</a></li>
+					  <li><a href="hd-install-opts-hu.htm#grub2-fromiso">Booting 'fromiso' with Grub 2</a></li>
+					  <li><a href="hd-install-opts-hu.htm#fromiso-persist">fromiso and persist</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-hu.htm#usb-hd">Installing to USB drives &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-hu.htm#usb-hd">Installing on a USB-HD - aptosid specific - aptosid-on-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-hu.htm#raw-usb">Writing aptosid to a USB/SSD stick with any Linux, MS Windows or Mac OS X system</a></li>
+					</ul>
+					</li>
+		  <li><a href="nbdboot-hu.htm#nbd1">Booting aptosid over a network</a></li>
+		  <li><a href="hd-install-vmopts-hu.htm#vm">Virtual Machine installation options</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="hw-dev-hw-dri-hu.htm">Graphic Cards, Monitors, Xorg &amp; Miscellaneous Drivers</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-hw-dri-hu.htm#hd-ntfs3g">Writing on NTFS-partitions with ntfs-3g</a></li>
+		<li><a href="hw-dev-mon-hu.htm#mon-res">Screen Resolution and Monitors  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-hu.htm#mon-res">Screen Resolution and Monitors</a></li>
+					  <li><a href="hw-dev-mon-hu.htm#xrandr">Dual Monitors and xrandr</a></li>
+					  <li><a href="hw-dev-mon-hu.htm#mon-binary">Dual Monitors (using binaries)</a></li>
+					</ul>
+					</li>
+		<li><a href="hw-dev-hw-dri-hu.htm#non-free-3d">Graphic card proprietry drivers &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="hw-dev-hw-dri-hu.htm#non-free-3d">Binary, non-free drivers for Nvidia &amp; xorg.conf</a></li>
+					  <li><a href="hw-dev-hw-dri-hu.htm#non-free-3d-2">non-free drivers for ATI, Radeon and others</a></li>
+					</ul>
+					</li>
+			  <li><a href="hw-dev-hw-dri-hu.htm#non-free-firmware">Hardware needing non-free firmware drivers</a></li>
+			  <li><a href="hw-dev-hw-dri-hu.htm#non-free">Adding non-free to Sources List</a></li>
+			  <li><a href="hw-dev-hw-dri-hu.htm#native-nv-ati">FOSS xorg drivers for nVidia, ATI, Radeon, Intel &amp; xorg.conf</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-kde-hu.htm">Window Managers</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-kde-hu.htm">Window Managers &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-kde-hu.htm">Window Managers</a></li>
+					    <li><a href="wm-xfce-hu.htm#xfce-notes">Useful Xfce extras</a></li>
+					    <li><a href="wm-kde-hu.htm#install-add">Useful extra KDE Apps</a></li>
+					    <li><a href="wm-kde-hu.htm#desk-freeze">Desktop Freezes</a></li>
+					    <li><a href="wm-kde-hu.htm#kde-login">Cant login in KDE</a></li>
+					    <li><a href="wm-kde-hu.htm#ch-th">Changing Themes</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-kde-hu.htm#dm">Display Managers - dm</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="internet-connecting-hu.htm">Internet connecting, WiFi, LAN and Networks</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-hu.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-hu.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-hu.htm#serv-ftp">FTP Clients</a></li>
+					    <li><a href="lamp-apache-hu.htm#serv-sec">Security Protocols</a></li>
+					    <li><a href="lamp-apache-hu.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-hu.htm#serv-mysql">MySQL Setup</a></li>
+					    <li><a href="lamp-ppp-hu.htm#serv-php">PHP in Apache</a></li>
+					    <li><a href="ntp-server-hu.htm#ntp-server">Timeserver Setup</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-hu.htm#tor">Firewalls and Privacy &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-hu.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-hu.htm#privoxy">Privoxy</a></li>
+					    <li><a href="internet-connecting-hu.htm#firewalls">Firewalls</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-hu.htm#ssh-x">SSH and Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-hu.htm#setup">Samba-Server Setup</a></li>
+						  <li><a href="samba-hu.htm#configure">Configuring SAMBA (Windows)</a></li>
+						  <li><a href="ssh-hu.htm#ssh-fs">SSH Remote Mounting</a></li>
+						  <li><a href="ssh-hu.htm#ssh-x">X Window Apps via SSH</a></li>
+						  <li><a href="ssh-hu.htm#ssh-f">GUI SSH with Konqueror</a></li>
+						  <li><a href="ssh-hu.htm#ssh-w">SSH X-Forwarding from Windows-PC</a></li>
+						  <li><a href="ssh-hu.htm#ssh">SSH and Security</a></li>
+					</ul>
+					</li>
+		<li><a href="internet-connecting-hu.htm#netcardconfig">WIFI connections &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="internet-connecting-hu.htm#netcardconfig">Getting Online - Ceni</a></li>
+						    <li><a href="inet-wpagui-hu.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-hu.htm#net-set1">WiFi - Setting up for WiFi Roaming</a></li>
+						    <li><a href="internet-connecting-wpa-hu.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-hu.htm#hotswitch">Network switching between WiFi and Cable</a></li>
+					</ul>
+					</li>
+		<li><a href="internet-connecting-hu.htm#netcardconfig">Wired Connections &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="internet-connecting-hu.htm#dial-mod">56k Modems</a></li>
+						    <li><a href="internet-connecting-hu.htm#netcardconfig">Getting Online - Ceni</a></li>
+					</ul>
+					</li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-hu.htm">Package Management and dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-hu.htm#apt-cook">APT Cookbook and Sources list &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-hu.htm#apt-cook">APT-Guide Cookbook and Sources list</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#apt-install">Installing a new package</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#apt-delete">Deleting a package</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#apt-downgrade">Package Hold and downgrading</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#apt-cache">Package searching with apt-cache</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#gui-pacsea">GUI Package searching</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-hu.htm#kern-upgrade">Upgrading the kernel &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-hu.htm#kern-remove">Removing Kernels</a></li>
+					    <li><a href="sys-admin-kern-upg-hu.htm#kern-upgrade">Upgrading the kernel</a></li>
+					    <li><a href="sys-admin-kern-upg-hu.htm#dmakms">Installing kernel modules dynamically with dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-hu.htm#apt-upgrade">Upgrade an Installed System -  dist-upgrade - Overview &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-hu.htm#live-cd-upgrade">Upgrading by Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-hu.htm#approx">dist-upgrade of multiple PCs on a LAN</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#apt-upgrade">Upgrade an Installed System -  dist-upgrade - Overview</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#du-st">Upgrade an Installed System -  dist-upgrade - The Steps</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-hu.htm">System Administration</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-hu.htm#bois-prep">Upgrading the BIOS with FreeDOS</a></li>
+		<li><a href="vir-rkits-hu.htm#virus-rkits">Virus and Rootkit Scanners</a></li>
+		<li><a href="hd-install-hu.htm#adduser">Adding Users and Passwords &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-hu.htm#adduser">Adding a new user</a></li>
+					    <li><a href="sys-admin-gen-hu.htm#pw-lost">Lost root passwords, new passwords</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-hu.htm#start-services">Services and init runlevels &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-hu.htm#start-services">Services enable/disable</a></li>
+					    <li><a href="sys-admin-gen-hu.htm#init">aptosid runlevels - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-hu.htm#rsync">Backing up the system &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-hu.htm#rdiff">Back-Up with rdiff</a></li>
+					    <li><a href="sys-admin-rsync-hu.htm#rsync">Back-Up with rsync</a></li>
+					    <li><a href="home-hu.htm#home-bu">Moving /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-hu.htm#fonts">CUPS, Fonts and Sound &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-hu.htm#fonts">Fonts</a></li>
+					     <li><a href="sys-admin-gen-hu.htm#cups">CUPS - Printing System</a></li>
+					     <li><a href="sys-admin-gen-hu.htm#sound">Sound Mixers</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-hu.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-hu.htm#chroot">Grub2 - Recovering Grub with chroot</a></li>
+					    <li><a href="sys-admin-grub2-hu.htm#mbr-over-grub2">Grub2 - MBR Overwritten</a></li>
+					    <li><a href="sys-admin-grub2-hu.htm#multi-os">Grub2 - Dual and Multibooting</a></li>
+					    <li><a href="sys-admin-grub2-hu.htm#grub1-grub2">Grub2 -Upgrading from Grub1</a></li>
+					    <li><a href="sys-admin-grub2-hu.htm#grub2">Grub2 - Overview</a></li>
+					</ul>
+					</li>
+			</ul>
+		</li>
+	</ul>
+<!-- menu ends here --> </div>
+<div id="main-page">
+	<div class="divider" id="apt-cook">
+		<h2 id="top-header">Kis APT-Kalauz, receptek</h2>
+
+		<h3>Mit jelent az APT?</h3>
+ 							<p>Az APT az Advanced Packaging Tool (Fejlett Csomagkezelő Eszköz) rövidítése, ami mögött olyan programok és szkriptek gyűjteménye áll, melyek segítik a rendszergazdát (esetünkben ez a root) a telepítésben és a deb-fájlok kezelésében, de ugyanennyire a magát a rendszert is segíti abban, hogy ismerje a feltelepített csomagokat.</p>
+	</div>
+	<div class="divider" id="sources-list">
+			<h2>Forráslista</h2>
+							<p>Az "APT" -rendszernek szüksége van egy beállító fájlra, amely a telepíthető és frissíthető csomagok elérési helyéről szolgáltat információt. Általában <span class="highlight-3">sources.list</span>-ként szoktunk rá hivatkozni.</p>
+
+							<p> Sources are contained in a directory or folder named: <br />
+							<span class="highlight-3">/etc/apt/sources.list.d/</span></p>
+
+							 <p>A könyvtárban két fájl található:<br />
+							<span class="highlight-3">/etc/apt/sources.list.d/debian.list</span> és<br />
+							<span class="highlight-3">/etc/apt/sources.list.d/aptosid.list  </span></p>
+
+							<p>Ennek előnye az egyszerűbb (automatikus) tükörszerver váltás és a listák biztonságosabb kezelése.</p>
+
+							<p>Adhatsz hozzá saját <span class="highlight-3">/etc/apt/sources.list.d/*.list </span>fájlokat is</p>
+
+ 			<h3>Minden aptosid változat a következő alapértelmezett forrásokat használja:</h3>
+
+<pre>
+#aptosid
+# Free University Berlin/ spline (Student Project LInux NEtwork), Germany
+deb ftp://ftp.spline.de/pub/aptosid/debian/ sid main fix.main
+#deb-src ftp://ftp.spline.de/pub/aptosid/debian/ sid main fix.main
+</pre>
+
+							<p>További, mindig friss non-free forrásokat is tartalmazó listák a <a href="http://aptosid.com/files/misc/sources.list.d/aptosid.list">aptosid.list</a> és <a href="http://aptosid.com/files/misc/sources.list.d/debian.list">debian.list</a> címeken találhatók. :</p>
+<pre>
+#Debian
+# Unstable
+deb http://ftp.us.debian.org/debian/ unstable main contrib non-free
+#deb-src http://ftp.us.debian.org/debian/ unstable main contrib non-free
+
+# Testing
+#deb http://ftp.us.debian.org/debian/ testing main contrib non-free
+#deb-src http://ftp.us.debian.org/debian/ testing main contrib non-free
+
+# Experimental
+#deb http://ftp.us.debian.org/debian/ experimental main contrib non-free
+#deb-src http://ftp.us.debian.org/debian/ experimental main contrib non-free
+</pre>
+							<p>MEGJEGYZÉS: Példánkban az ftp.us mutatja, hogy USA-ban található tárolókat használtuk. Rootként szerkesztheted ezt a fájlt, beállíthatod, hogy a hozzád legközelebb eső tárolókra hivatkozzon. Egyszerűen változtasd meg az ország jelét oly módon, hogy az ftp.us-ből legyen például ftp.hu, vagy ftp.de. A legtöbb országban található helyi tükörszerver, így jobb sávszélességet kaphatunk, a letöltés is sokkal gyorsabb lehet.</p>
+
+							<p><a href="http://www.debian.org/mirrors/">List of Debian Servers and mirrors current status</a>.</p>
+
+							<p>A csomagok frissített információinak tárolására az APT egy adatbázist használ. Ez az adatbázis tartalmazza a csomagokat és azt, hogy milyen további csomagok szükségesek egy adott csomag működéséhez (ezt hívjuk függőségnek). Azt apt-get program ezt az adatbázist használja, amikor telepíti az általad kiválasztott csomagokat, megkeresi benne a függőségeket, így biztosítva, hogy választott csomag működjék. Az adatbázis frissítése az apt-get update parancs kiadásával történik.</p>
+
+<pre># apt-get update
+	(amelynek kimenete: )
+Get:1 http://aptosid.com sid Release.gpg [189B]
+Get:2 http://aptosid.com sid Release.gpg [189B]
+Get:3 http://aptosid.com sid Release.gpg [189B]
+Get:4 http://ftp.de.debian.org unstable Release.gpg [189B]
+Get:5 http://aptosid.com sid Release [34.1kB]
+Get:6 http://ftp.de.debian.org unstable Release [79.6kB]
+</pre>
+
+
+	</div>
+
+	<div class="divider" id="apt-install">
+ 		<h2>Új csomag telepítése</h2>
+							<p><span class="highlight-2">Upgrading packages and installing new packages without stopping X can cause problems. Any method of installing packages under X has this problem.</span></p>
+
+							<p><span class="highlight-2">As long as any package you want to install will not upgrade additional packages then it is safe to install it without stopping X. However if installing the package will cause other packages to upgrade, extreme caution should be taken and unless you are certain the packages which will be upgraded are not currently in use, you should stop X before installing the package.</span></p>
+
+							<p><span class="highlight-2">If you are in any doubt ensure you leave X as per the dist-upgrade instructions before installing any packages. <a href="sys-admin-apt-hu.htm#du-st">Upgrade an Installed System -  dist-upgrade - The Steps</a></span> .</p>
+
+							<p>Tegyük fel, hogy az apt-adatbázis friss, a csomag nevét ismerjük, így a következő parancs feltelepíti például a qemu nevű csomagot és annak valamennyi függőségét: (a továbbiakban megtudhatod majd, hogyan keress és találj meg csomagokat.)</p>
+
+
+<pre># apt-get install qemu
+Reading package lists... Done
+Building dependency tree... Done
+The following extra packages will be installed:
+  bochsbios openhackware proll vgabios
+Recommended packages:
+  debootstrap vde
+The following NEW packages will be installed:
+  bochsbios openhackware proll qemu vgabios
+0 upgraded, 5 newly installed, 0 to remove and 20 not upgraded.
+Need to get 4152kB of archives.
+After unpacking 11.9MB of additional disk space will be used.
+Do you want to continue [Y/n]? n
+
+</pre>
+
+
+	<div class="divider" id="apt-delete">
+		<h2>Csomag törlése</h2>
+							<p>Similarly it should come as no surprise that the following will deinstall a package, however it will not remove the dependencies: </p>
+
+<pre>
+apt-get remove gaim
+</pre>
+<pre>
+Reading package lists... Done
+Building dependency tree... Done
+The following packages will be REMOVED:
+  gaim gaim-irchelper
+0 upgraded, 0 newly installed, 2 to remove and 310 not upgraded.
+Need to get 0B of archives.
+After unpacking 4743kB disk space will be freed.
+Do you want to continue [Y/n]?
+(Reading database ... 174409 files and directories currently installed.)
+Removing gaim-irchelper ...
+Removing gaim ...
+</pre>
+
+			<p>Ebben az esetben a "gaim" nevű csomag beállító-fájljai nem lettek törölve. Felhasználhatók ha ugyanazt a csomagot újratelepíted, így az eredeti beállításokkal fog ismét működni.</p>
+
+			<p>Ha a beállító-fájlokat is törölni akarod, így add ki a parancsot:</p>
+
+<pre>
+apt-get --purge remove gaim
+</pre>
+<pre>
+Reading package lists... Done
+Building dependency tree... Done
+The following packages will be REMOVED:
+  gaim*
+0 upgraded, 0 newly installed, 1 to remove and 309 not upgraded.
+Need to get 0B of archives.
+After unpacking 4678kB disk space will be freed.
+Do you want to continue [Y/n]? Y
+(Reading database ... 174405 files and directories currently installed.)
+Removing gaim ...
+Purging configuration files for gaim ...
+</pre>
+
+							<p>Note the <span class="highlight-3">*</span> after the package name in the output of apt. The asterisk in the output of apt indicates that the configuration files will also be removed.</p>
+
+
+		</div>
+	<div class="divider" id="apt-downgrade">
+						<h2>Csomag visszaállítása és/vagy visszatartása</h2>
+								<p>Néha szükséges lehet, hogy egy csomag előző verzióját visszakapjuk, vagy megelőzzük a frissítését a legutóbbi verziójában található súlyos hiba miatt. </p>
+
+					<h3>Visszatartás (hold):</h3>
+<pre>
+echo package hold|dpkg --set-selections
+</pre>
+							<p>A visszatartás levétele:</p>
+<pre>
+echo package install|dpkg --set-selections
+</pre>
+							<p>Visszatartott csomagok listázása:</p>
+
+<pre>
+dpkg --get-selections | grep hold
+</pre>
+					<h3>Visszaállítás</h3>
+							<p> <span class="highlight-2">Debian does not support downgrading packages. While it may work in simple cases, it could fail spectacularly for other packages. Please refer to </span><a href="http://www.debian.org/doc/manuals/reference/ch02.en.html#_emergency_downgrading"> Emergency downgrading</a>.</p>
+
+							<p>Despite the fact that it is not supportable, downgrading has been known to work for simple packages. The steps for downgrading a simple package using <span class="highlight-3">kmahjongg</span> as an example are:</p>
+
+						<ol>
+							<li>comment unstable sources in <span class="highlight-3">/etc/apt/sources.list.d/debian.list </span> with a <span class="highlight-3">#</span></li>
+
+							<li>Add testing sources in <span class="highlight-3">/etc/apt/sources.list.d/debian.list </span>, for example:<br />
+<pre>
+deb http://ftp.nl.debian.org/debian/ testing main contrib non-free
+</pre>
+							</li>
+
+							<li>
+<pre>
+apt-get update
+</pre>
+							</li>
+
+							<li>
+<pre>
+apt-get install kmahjongg/testing
+</pre>
+							</li>
+
+							<li>Put the newly installed package on hold with:<br />
+<pre>
+echo kmahjongg hold|dpkg --set-selections
+</pre>
+							</li>
+
+							<li>comment &lt;#&gt;the testing sources in /etc/apt/sources.list.d/debian.list with and uncomment the unstable sources so that you get back to using unstable sources, then:</li>
+
+							<li>
+<pre>
+apt-get update
+</pre>
+							</li>
+						</ol>
+
+							<p>Ha később a csomag legújabb verzióját szeretnéd megkapni, így teheted meg:</p>
+<pre>
+echo kmahjongg install|dpkg --set-selections
+apt-get update
+apt-get install kmahjongg
+</pre>
+
+		</div>
+	<div class="divider" id="apt-mark">
+				<h2>apt-mark</h2>
+							<p>apt-mark is a useful tool that shows you which packages are automatically or manually installed and offers the system administrator the opportunity to mark and hold packages that are not to be removed automatically. Read:</p>
+
+<pre>
+man apt-mark
+</pre>
+
+		</div>
+	<div class="divider" id="apt-upgrade">
+				<h2>Telepített rendszer frissítése - dist-upgrade - Overview</h2>
+
+							<p>Ha a teljes rendszert frissíteni akarod, megteheted a <span class="highlight-3">dist-upgrade</span> segítségével. Mindig olvasd el az érvényes figyelmeztetéseket (Current Warnings) a <a href="http://aptosid.com">aptosid</a> fő honlapján és ellenőrizd le, hogy a figyelmeztetésben foglaltak érintik-e a te rendszereden lévő, frissítendő csomagokat is. Ha szükséges, tedd <span class="highlight-3">visszatartott (hold)</span> státuszba a csomagot, a <a href="sys-admin-apt-hu.htm#apt-downgrade">Csomag visszaállítása és/vagy visszatartása</a> című fejezetben foglaltak szerint.</p>
+
+							<p>Egy sima "debian sid upgrade" nem javasolt.</p>
+
+					<h5>A dist-upgrade gyakorisága</h5>
+
+							<p>A dist-upgrade alkalmazása teljesen rád van bízva, a heti, kétheti frissítés az ideális, de a biztonság érdekében havonta legalább egy alkalommal ajánlatos. A dist-upgrade 2-3 havonkénti futtatása pedig már a biztonságos időtartam "kicentizése". Azok a csomagok, melyek nem a disztribúció részét képezik, vagy általad, forráskódból kerültek fel, több figyelmet igényelnek a frissítések során, mivel esetleges inkompatibilitásukkal működésképtelenné is tehetik a rendszeredet.</p>
+
+			<p>Az adatbázis frissítése után megkeresheted mely csomagokból van új, vagy frissített verzió: (ehhez először az apt-show-versions csomag telepítése szükséges)</p>
+
+<pre>
+apt-show-versions -u
+libpam-runtime/unstable upgradeable from 0.79-1 to 0.79-3
+passwd/unstable upgradeable from 1:4.0.12-5 to 1:4.0.12-6
+teclasat/unstable upgradeable from 0.7m02-1 to 0.7n01-1
+libpam-modules/unstable upgradeable from 0.79-1 to 0.79-3.........
+</pre>
+
+			<p>Egy csomag és annak függőségei (pl. gcc-4.0) a következők szerint frissíthető:</p>
+
+
+
+<pre>
+apt-get install gcc-4.0
+Reading package lists... Done
+Building dependency tree... Done
+gcc-4.0 is already the newest version.
+0 upgraded, 0 newly installed, 0 to remove and xxx not upgraded
+</pre>
+
+					<h4>Csak letöltés</h4>
+
+							<p class="highlight-3">Egy kevésbé ismert, de nagyszerű módszer annak megállapítására, hogy milyen csomagok frissülnek egy dist-upgrade során, a -d kapcsoló használata:</p>
+
+<pre>
+apt-get update &amp;&amp; apt-get dist-upgrade -d
+</pre>
+							<p>A -d lehetővé teszi, hogy a telepítés kihagyásával csak letöltsd a dist-upgrade tartalmát, miközben használod a grafikus felületet, majd egy későbbi időpontban 3-as futási szintre váltva telepítsd azokat. Megadja a lehetőséget, hogy a csomaglistát összehasonlítsd a figyelmeztetésekkel, majd eldönthesd hogy továbblépsz, vagy megszakítod a műveletet, ahogy ezt az alábbi példa illusztrálja:</p>
+
+<pre>
+apt-get dist-upgrade -d
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+Calculating upgrade... Done
+The following NEW packages will be installed:
+  elinks-data
+The following packages have been kept back:
+  git-core git-gui git-svn gitk icedove libmpich1.0ldbl
+The following packages will be upgraded:
+  alsa-base bsdutils ceni configure-ndiswrapper debhelper
+  discover1-data elinks file fuse-utils gnucash.........
+35 upgraded, 1 newly installed, 0 to remove and 6 not upgraded.
+Need to get 23.4MB of archives.
+After this operation, 594kB of additional disk space will be used.
+Do you want to continue [Y/n]?<span class="highlight-3">Y </span>
+</pre>
+							<p><span class="highlight-3">Y (yes) </span> válasz esetén letölti a frissített csomagokat, de a rendszeren nem végez változtatásokat.</p>
+
+							<p>Miután a "dist-upgrade -d" elkészült a letöltéssel és szeretnéd a rendszerfrissítést befejezni akár azonnal, akár később, kövesd az alábbi instrukciókat:</p>
+	      </div>
+	      <div class="divider" id="du-st">
+				      <h3> dist-upgrade - The Steps</h3>
+
+<div class="box block">
+			<div class="highlight-2">SOHA NE végezz dist-upgrade, vagy upgrade műveleteket amíg fut a grafikus felület.<div class="highlight-4"> Mindig olvasd el az Aktuális Figyelmezetéseket (Current Warnings) a  <a href="http://aptosid.com">aptosid</a> fő honlapján. E figyelmeztetések azért vannak, mert a rendszer a Debian fejlesztői ágra (sid) épül, ami naponta változik.</div>
+<pre>
+Jelentkez ki a KDE-ből.
+Lépj át szöveges módba a Ctrl+Alt+F1 megnyomásával.
+Jelentkezz be root-ként, majd add ki az "init 3" parancsot.
+apt-get update
+apt-get dist-upgrade
+apt-get clean
+init 5 &amp;&amp; exit
+</pre>
+			<div class="highlight-2">SOHA NE FUTTASS DIST-UPGRADE [vagy UPGRADE] műveletet adept, synaptic vagy aptitude használatával. </div>
+
+	</div>
+	</div>
+<div class="spacer02"></div>
+
+					<p class="highlight-2">Ha nem lépsz át 3-as futási szintre (init 3), rendben, a te dolgod... de szóltunk!</p>
+	</div>
+	<div class="divider" id="whyno">
+
+				<h4>Az Okok, hogy dist-upgrade elvégzéséhez miért NE használj mást mint az apt-get</h4>
+
+							<p>A csomagkezelők, mint az adept, aptitude, synaptic és kpackage nem mindig képesek lekezelni a Sid-ben történő nagy számú és gyakori változásokat (függőségi és névváltozások, karbantartó szkriptek módosulása...). </p>
+
+							<p>Ez nem ezen eszközök fejlesztőinek a hibája, ők kiváló programokat készítenek melyek legendásan jók a Debian stabil ágához. Egyszerűen csak nem alkalmasak azokra a nagyon speciális igényekre melyek a Debian Sid-et jellemzik.</p>
+
+							<p>Nyugodtan használd őket a csomagok nézegetésére, keresésére, de a tényleges csomagműveleteket (install/remove/dist-upgrade) az apt-get segítségével végezd.</p>
+
+							<p>A csomagkezelők, mint az adept, aptitude, synaptic és kpackage legalábbis (a komplex csomagkiválasztás szempontjából) nem-determinisztikusak, keverd ezt egy gyorsan változó célrendszerrel, mint a Sid és talán még rosszabb ha még egy megkérdőjelezhető minőségű külső csomagtároló is akad a képben (mi nem használjuk és nem ajánljuk használatukat, de a felhasználók rendszerein ezek is léteznek) és biztosan katasztrófába torkollik a kaland. </p>
+
+							<p>A másik, hogy mindezek a csomagkezelők 5-ös futási szinten működnek és/vagy grafikus felületen, és egy X alatt végzett dist-upgrade (vagy egyszerű "upgrade", ami nem javasolt) helyrehozhatatlan károkat okozhat a rendszeren, lehet, hogy nem ma, vagy holnap, de előbb-utóbb biztosan.</p>
+
+							<p>Másrészről az apt-get szigorúan azt csinálja, amire megkéred, bármilyen akadály esetén megállhatsz, megkeresheted, kijavíthatod a hibát. Ha az apt-get el akarja távolítani a fél rendszert (pl. a libek módosulása miatt), akkor az adminisztrátor (ez te vagy) feladata hogy egy komoly felülvizsgálatnak vesse alá a helyzetet.</p>
+
+							<p>Ez az oka, amiért a Debian az apt-get használatával épül fel és nem a többi csomagkezelővel.</p>
+
+
+	</div>
+	<div class="divider" id="apt-cache">
+			<h2>Csomagok keresése az apt-cache használatával</h2>
+
+			<p>Egy másik igen hasznos eszköze az APT-rendszernek az apt-cache; keresni tud az APT-adatbázisnan és információkat jelenít meg a csomagokról. Például azoknak a csomagoknak a kilistázása, amelyek tartalmazzák, vagy hivatkoznak a "aptosid" és "manual" kifejezésekre, így történik:</p>
+
+<pre>$ apt-cache search aptosid manual
+.......
+aptosid-manual-common - the official aptosid manual - common files
+aptosid-manual-es - the official Spanish aptosid manual
+aptosid-manual-de - the official German aptosid manual
+aptosid-manual-el - the official Greek aptosid manual
+aptosid-manual - the official aptosid manual - all languages
+aptosid-manual-pt-br - the official Brazilian Portuguese aptosid manual
+aptosid-manual-en - the official English aptosid manual
+aptosid-manual-reader - aptosid manual reader
+</pre>
+
+		<p>Ha bővebb információt szeretnél egy adott csomagról:</p>
+
+<pre>$ apt-cache show aptosid-manual-en
+Package: aptosid-manual-en
+Priority: optional
+Section: doc
+Installed-Size: 1088
+Maintainer: Kel Modderman &lt;kel@otaku42.de&gt;
+Architecture: all
+Source: aptosid-manual
+Version: 01.12.2007.06.03-1
+Depends: aptosid-manual-common
+Filename: pool/main/s/aptosid-manual/aptosid-manual-en_01.12.2007.06.03-1_all.deb
+Size: 391222
+MD5sum: 60f2175c3c5709745a4b4256ccc3c49d
+SHA1: e275a0b27628b6aa210a4ced48d3646b438e78b8
+SHA256: 2792580c7a091521301064180a1d0d8901f0a4af407b90432b9f8d8b6b3603ca
+Description: the official en aptosid manual
+ This manual is divided into common sections, for example, .......
+</pre>
+
+		<p>Egy csomag minden telepíthető verziója (ez függ a sources.list tartalmától) megtekinthető az alábbiak szerint:</p>
+
+<pre>
+$ apt-cache policy aptosid-manual-en
+aptosid-manual-en:
+  Installed: (none)
+  Candidate:01.12.2007.06.03-1
+  Version table:
+     01.12.2007.06.03-1 0
+        500 http://aptosid.com sid/main Packages
+</pre>
+			<p><a href= "http://www.debian.org/doc/user-manuals#apt-howto">Az APT-rendszer teljes leírása megtalálható az APT-HOWTO lapjain.</a> </p>
+
+	</div>
+	<!--<div class="divider" id="gui-pacsea">
+			<h2>Debian Package Search GUI application</h2>
+
+<pre>
+apt-get update
+apt-get install packagesearch
+</pre>
+
+							<p>When you first start Debian Package Search you need to adjust Packagesearch>Preferences to use <span class="highlight-3">apt-get</span>.</p>
+
+							<p><span class="highlight-2">Please do not use Packagesearch to install packages, use it only as a GUI search engine. Upgrading packages and installing new packages without stopping X can cause problems. Please read <a href="sys-admin-apt-hu.htm#apt-install">Installing a new package</a>.</span></p>
+
+							<p>On initial use you may be prompted to install deborphan. Please use with care.</p>
+
+							<p>Search can be done by</p>
+						<ul>
+
+  							<li>pattern</li>
+  							<li>tags (based on the debtags system, a new way of categorizing Debian packages)</li>
+  							<li>files</li>
+  							<li>installed status</li>
+  							<li>orphaned packages</li>
+						</ul>
+
+ 							<p>Additionally, information about the packages is displayed, including the files belonging to them. Please read the Help>Contents for a full explanation on how to use the Debian Package Search GUI application. At the moment the GUI is in English only.</p>
+
+
+	</div>-->
+			<p><a href="http://www.debian.org/doc/manuals/apt-howto/">Az APT-rendszer teljes leírása megtalálható az APT-HOWTO lapjain.</a> </p>
+
+			<div id="rev">Az oldal utoljára frissítve 10/05/2012 1330 UTC</div>
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,522 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>aptosid Kézikönyvek - Telepítés merevlemezre</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision by mrowl 05/05/2009 0100 UTC -->
+<div id="menu"> <!-- menu starts here hu lang maintained by mrowl ruess-->
+<!--aptosid Operating System Manual menu-version-00.00.2010.08.14 -->
+<!-- menu last updated by bluewater 2010.08.14 0100 hrs UTC -->
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="To aptosid.com forums and wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-hu.htm#search-on"><img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" /> Keresés Online Offline</a> </li>
+		<!--<li><a href="http://manual.aptosid.com/meta-manual">Community Software Selections</a></li>-->
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Másik nyelv kiválasztása" alt="lang-switch" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-hu.htm">aptosid OS Manual</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-hu.htm#welcome-gen">aptosid OS Manual &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-hu.htm#cred-team">Credits</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-hu.htm#how-to">How to use this manual &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-hu.htm#how-to">How to use this manual</a></li>
+					  <li><a href="welcome-hu.htm#table-contents">Table of Contents</a></li>
+					</ul>
+					</li>
+		<li><a href="help-hu.htm#help-gen">Getting Help &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-hu.htm#help-gen">Where and how to get help</a></li>
+					  <li><a href="help-hu.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-hu.htm#welcome-quick">aptosid Quick Start Guide</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-hu.htm">ISO Content, Releases, Download Mirrors and Burning</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-hu.htm#cd-content">ISO Content and system requirements &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-hu.htm#rolling">Release Notes</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-hu.htm#download-aptosid">aptosid Mirrors, Downloading and Burning &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-hu.htm#md5">md5 Checksum</a></li>
+					  <li><a href="cd-dl-burning-hu.htm#burn-nero">Burning in Windows</a></li>
+					  <li><a href="cd-dl-burning-hu.htm#burn-linux">Burning in Linux</a></li>
+					  <li><a href="cd-no-gui-burn-hu.htm#burning-no-gui">burniso script</a></li>
+					  <li><a href="cd-no-gui-burn-hu.htm#burn-no-gui-gen">Burning without a GUI</a></li><li><a href="cd-dl-burning-hu.htm#download-aptosid">aptosid Download Mirrors</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-hu.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-hu.htm#rootpw">Root-password on the aptosid-Live ISO</a></li>
+				<li><a href="live-mode-hu.htm#live-cd-installsoft">Installing software whilst on a Live-ISO</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-hu.htm">The Terminal / Konsole</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-hu.htm#term-kon"> Terminal / Konsole &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-hu.htm#term-kon"> Terminal / Konsole</a></li>
+					  <li><a href="term-konsole-hu.htm#cli-help">Command Line Help</a></li>
+					  <li><a href="help-hu.htm#init3-tools">Tools to know in text mode (tty) - init 3</a></li>
+					  <li><a href="term-konsole-hu.htm#term-cmds">Linux Terminal Commands List</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-hu.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-hu.htm">CheatCodes</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-hu.htm#cheatcodes">aptosid specific Live-ISO Cheatcodes</a></li>
+				<li><a href="cheatcodes-hu.htm#cheatcodes-linux">Linux generic Cheatcodes</a></li>
+				<li><a href="cheatcodes-vga-hu.htm#vga">VGA Codes</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-hu.htm">Partitioning Your Hard Drive</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-hu.htm#partition">Partitioning with a GUI &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-hu.htm#partition">Partitioning your HD using GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-hu.htm#ntfs">NTFS partition Resizing using GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-hu.htm#partition">Partitioning with CLI &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-hu.htm#partition">Partitioning  your HD using cfdisk</a></li>
+					    <li><a href="part-cfdisk-hu.htm#formating">Formatting after partitioning with cfdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-hu.htm#part-example">Partitioning Basics &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-hu.htm#part-example">Partition Size Examples</a></li>
+					  <li><a href="part-uuid-hu.htm#uuid">UUID, Partition Labelling and fstab</a></li>
+					  <li><a href="part-cfdisk-hu.htm#disknames">Disk Naming in brief</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-hu.htm">Installation options - HD, USB, VM</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-hu.htm#Inst-prep">Install Preparation &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-hu.htm#Inst-prep">Install Preparation </a></li>
+					  <li><a href="hd-install-hu.htm#Installation">Installing to your HD</a></li>
+					  <li><a href="hd-install-hu.htm#first-hd-boot">First Boot Up</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-hu.htm#fromiso">Booting fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-hu.htm#fromiso">Booting fromiso - Overview</a></li>
+					  <li><a href="hd-install-opts-hu.htm#fromiso-grub-leg">Booting 'fromiso' with grub-legacy</a></li>
+					  <li><a href="hd-install-opts-hu.htm#grub2-fromiso">Booting 'fromiso' with Grub 2</a></li>
+					  <li><a href="hd-install-opts-hu.htm#fromiso-persist">fromiso and persist</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-hu.htm#usb-hd">Installing to USB drives &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-hu.htm#usb-hd">Installing on a USB-HD - aptosid specific - aptosid-on-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-hu.htm#raw-usb">Writing aptosid to a USB/SSD stick with any Linux, MS Windows or Mac OS X system</a></li>
+					</ul>
+					</li>
+		  <li><a href="nbdboot-hu.htm#nbd1">Booting aptosid over a network</a></li>
+		  <li><a href="hd-install-vmopts-hu.htm#vm">Virtual Machine installation options</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="hw-dev-hw-dri-hu.htm">Graphic Cards, Monitors, Xorg &amp; Miscellaneous Drivers</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-hw-dri-hu.htm#hd-ntfs3g">Writing on NTFS-partitions with ntfs-3g</a></li>
+		<li><a href="hw-dev-mon-hu.htm#mon-res">Screen Resolution and Monitors  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-hu.htm#mon-res">Screen Resolution and Monitors</a></li>
+					  <li><a href="hw-dev-mon-hu.htm#xrandr">Dual Monitors and xrandr</a></li>
+					  <li><a href="hw-dev-mon-hu.htm#mon-binary">Dual Monitors (using binaries)</a></li>
+					</ul>
+					</li>
+		<li><a href="hw-dev-hw-dri-hu.htm#non-free-3d">Graphic card proprietry drivers &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="hw-dev-hw-dri-hu.htm#non-free-3d">Binary, non-free drivers for Nvidia &amp; xorg.conf</a></li>
+					  <li><a href="hw-dev-hw-dri-hu.htm#non-free-3d-2">non-free drivers for ATI, Radeon and others</a></li>
+					</ul>
+					</li>
+			  <li><a href="hw-dev-hw-dri-hu.htm#non-free-firmware">Hardware needing non-free firmware drivers</a></li>
+			  <li><a href="hw-dev-hw-dri-hu.htm#non-free">Adding non-free to Sources List</a></li>
+			  <li><a href="hw-dev-hw-dri-hu.htm#native-nv-ati">FOSS xorg drivers for nVidia, ATI, Radeon, Intel &amp; xorg.conf</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-kde-hu.htm">Window Managers</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-kde-hu.htm">Window Managers &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-kde-hu.htm">Window Managers</a></li>
+					    <li><a href="wm-xfce-hu.htm#xfce-notes">Useful Xfce extras</a></li>
+					    <li><a href="wm-kde-hu.htm#install-add">Useful extra KDE Apps</a></li>
+					    <li><a href="wm-kde-hu.htm#desk-freeze">Desktop Freezes</a></li>
+					    <li><a href="wm-kde-hu.htm#kde-login">Cant login in KDE</a></li>
+					    <li><a href="wm-kde-hu.htm#ch-th">Changing Themes</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-kde-hu.htm#dm">Display Managers - dm</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="internet-connecting-hu.htm">Internet connecting, WiFi, LAN and Networks</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-hu.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-hu.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-hu.htm#serv-ftp">FTP Clients</a></li>
+					    <li><a href="lamp-apache-hu.htm#serv-sec">Security Protocols</a></li>
+					    <li><a href="lamp-apache-hu.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-hu.htm#serv-mysql">MySQL Setup</a></li>
+					    <li><a href="lamp-ppp-hu.htm#serv-php">PHP in Apache</a></li>
+					    <li><a href="ntp-server-hu.htm#ntp-server">Timeserver Setup</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-hu.htm#tor">Firewalls and Privacy &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-hu.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-hu.htm#privoxy">Privoxy</a></li>
+					    <li><a href="internet-connecting-hu.htm#firewalls">Firewalls</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-hu.htm#ssh-x">SSH and Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-hu.htm#setup">Samba-Server Setup</a></li>
+						  <li><a href="samba-hu.htm#configure">Configuring SAMBA (Windows)</a></li>
+						  <li><a href="ssh-hu.htm#ssh-fs">SSH Remote Mounting</a></li>
+						  <li><a href="ssh-hu.htm#ssh-x">X Window Apps via SSH</a></li>
+						  <li><a href="ssh-hu.htm#ssh-f">GUI SSH with Konqueror</a></li>
+						  <li><a href="ssh-hu.htm#ssh-w">SSH X-Forwarding from Windows-PC</a></li>
+						  <li><a href="ssh-hu.htm#ssh">SSH and Security</a></li>
+					</ul>
+					</li>
+		<li><a href="internet-connecting-hu.htm#netcardconfig">WIFI connections &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="internet-connecting-hu.htm#netcardconfig">Getting Online - Ceni</a></li>
+						    <li><a href="inet-wpagui-hu.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-hu.htm#net-set1">WiFi - Setting up for WiFi Roaming</a></li>
+						    <li><a href="internet-connecting-wpa-hu.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-hu.htm#hotswitch">Network switching between WiFi and Cable</a></li>
+					</ul>
+					</li>
+		<li><a href="internet-connecting-hu.htm#netcardconfig">Wired Connections &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="internet-connecting-hu.htm#dial-mod">56k Modems</a></li>
+						    <li><a href="internet-connecting-hu.htm#netcardconfig">Getting Online - Ceni</a></li>
+					</ul>
+					</li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-hu.htm">Package Management and dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-hu.htm#apt-cook">APT Cookbook and Sources list &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-hu.htm#apt-cook">APT-Guide Cookbook and Sources list</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#apt-install">Installing a new package</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#apt-delete">Deleting a package</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#apt-downgrade">Package Hold and downgrading</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#apt-cache">Package searching with apt-cache</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#gui-pacsea">GUI Package searching</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-hu.htm#kern-upgrade">Upgrading the kernel &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-hu.htm#kern-remove">Removing Kernels</a></li>
+					    <li><a href="sys-admin-kern-upg-hu.htm#kern-upgrade">Upgrading the kernel</a></li>
+					    <li><a href="sys-admin-kern-upg-hu.htm#dmakms">Installing kernel modules dynamically with dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-hu.htm#apt-upgrade">Upgrade an Installed System -  dist-upgrade - Overview &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-hu.htm#live-cd-upgrade">Upgrading by Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-hu.htm#approx">dist-upgrade of multiple PCs on a LAN</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#apt-upgrade">Upgrade an Installed System -  dist-upgrade - Overview</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#du-st">Upgrade an Installed System -  dist-upgrade - The Steps</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-hu.htm">System Administration</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-hu.htm#bois-prep">Upgrading the BIOS with FreeDOS</a></li>
+		<li><a href="vir-rkits-hu.htm#virus-rkits">Virus and Rootkit Scanners</a></li>
+		<li><a href="hd-install-hu.htm#adduser">Adding Users and Passwords &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-hu.htm#adduser">Adding a new user</a></li>
+					    <li><a href="sys-admin-gen-hu.htm#pw-lost">Lost root passwords, new passwords</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-hu.htm#start-services">Services and init runlevels &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-hu.htm#start-services">Services enable/disable</a></li>
+					    <li><a href="sys-admin-gen-hu.htm#init">aptosid runlevels - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-hu.htm#rsync">Backing up the system &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-hu.htm#rdiff">Back-Up with rdiff</a></li>
+					    <li><a href="sys-admin-rsync-hu.htm#rsync">Back-Up with rsync</a></li>
+					    <li><a href="home-hu.htm#home-bu">Moving /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-hu.htm#fonts">CUPS, Fonts and Sound &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-hu.htm#fonts">Fonts</a></li>
+					     <li><a href="sys-admin-gen-hu.htm#cups">CUPS - Printing System</a></li>
+					     <li><a href="sys-admin-gen-hu.htm#sound">Sound Mixers</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-hu.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-hu.htm#chroot">Grub2 - Recovering Grub with chroot</a></li>
+					    <li><a href="sys-admin-grub2-hu.htm#mbr-over-grub2">Grub2 - MBR Overwritten</a></li>
+					    <li><a href="sys-admin-grub2-hu.htm#multi-os">Grub2 - Dual and Multibooting</a></li>
+					    <li><a href="sys-admin-grub2-hu.htm#grub1-grub2">Grub2 -Upgrading from Grub1</a></li>
+					    <li><a href="sys-admin-grub2-hu.htm#grub2">Grub2 - Overview</a></li>
+					</ul>
+					</li>
+			</ul>
+		</li>
+	</ul>
+<!-- menu ends here --> </div>
+<div id="main-page">
+	<div class="divider" id="Inst-prep">
+		<h2 id="top-header">A telepítés előkészítése</h2>
+							<p  class="highlight-2">Normál használat esetén az ext4 fájlrendszert javasoljuk; ez az alapértelmezett aptosid fájlrendszer, melyet folyamatosan karbantartanak.</p>
+
+							<p><span class="highlight-3">Telepítés előtt távolíts el minden usb-eszközt, pendrive-ot, kamerát, stb</span>. <a href="hd-install-opts-hu.htm">USB eszközre történő telepítés esetén további lépések szükségesek.</a>  A telepítő-fájlt szerkesztheted: <span class="highlight-3">~/.sidconf</span>, ezáltal használhatsz más fájlrendszert, vagy végezheted a telepítést több partícióra (például használhatsz különálló /home partíciót).</p>
+
+							<p class="highlight-3">Különösen ajánlott az adataid számára egy elkülönített partíció létrehozása. Ennek előnye a számodra felbecsülhetetlen értékű felhasználói adatok biztonsága, könnyebb mentése, illetve helyreállíthatósága.</p>
+
+							<p>Mivel az alkalmazások is a külön partícióként működő $HOME (saját könyvtár) alatt fogják tárolni a személyes beállításaidat és az adataikat, ezáltal ezek is könnyen menthetőek és visszaállíthatóak lesznek.</p>
+
+					<h6>Az alkalmazások újratelepítése egy rendszer újraépítése, vagy lemásolása céljából</h6>
+							<p>Első lépés egy lista elkészítése a telepített alkalmazásokról, így az alaprendszer egy másik számítógépen reprodukálható lesz, ha ez szükséges lenne. Ehhez a következőt kell írni a parancssorba:</p>
+<pre>
+dpkg -l|awk '/^ii/{ print $2 }'|grep -v -e ^lib -e -dev -e $(uname -r) >/home/username/installed.txt
+</pre>
+							<p>A keletkezett installed.txt fájlt másold át egy pendrive-ra, vagy más hordozható adattárolóra a biztonságos tároláshoz.</p>
+
+							<p>Az új számítógépen másold be a fájlt a $HOME-ba és használd referenciaként a szükséges programok telepítéséhez.</p>
+
+				<h5>Memória és cserehely (swap)</h5>
+							<p>512 Mb RAM-nál kevesebb operatív memóriával rendelkező számítógépen szükséges cserehely (swap) partíciót létrehozni. Ennek méretét legalább 128 Mb-ra állítsuk be (a cfdisk által mutatott értékek nem pontosak, mivel 10-es számrendszerben számol); 1Gb-nál nagyobb pedig csak akkor szükséges, ha nagy fájlokat másolsz (pl. CD/DVD röptében történő másolása), esetleg használod a hibernálás és felfüggesztés funkciókat, vagy szerver rendszert telepítesz. Ebben az esetben minimum 2Gb swap területet adj a rendszernek.</p>
+
+							<p class="highlight-1">További fontos információk: <a href="part-gparted-hu.htm">A merevlemez partícionálása</a></p>
+
+							<p><span class="highlight-2">MINDIG KÉSZÍTS BIZTONSÁGI MENTÉST AZ ADATAIDRÓL, beleértve a böngésző könyvjelzőket és emaileket is!</span> Lásd a <a href="sys-admin-rdiff-hu.htm#rdiff">mentés rdiff segítségével</a> és a <a href="sys-admin-rsync-hu.htm#rsync">mentés rsync-kel</a> dokumentumokat. Alternatív lehetőség az sbackup szoftver használata (amelyet külön kell telepíteni).</p>
+
+							<p>A merevlemezre telepített rendszer sokkal kényelmesebb és gyorsabb, mint a live CD-ről futtatott rendszer.</p>
+
+							<p>A Live CD elindításához először is a géped BIOS-ában a boot sorrendet kell beállítani, a CD-ROM legyen az első helyen. A legtöbb számítógépen a BIOS beállításokat a rendszerindítás során megnyomott [Del] billentyűvel lehet elérni (néhány BIOS-verzió pedig egyszerűen felajánlja a boot-eszköz kiválasztását bekapcsolás után. Más, AMI-BIOS-szal szerelt gépeken az F11, vagy F8 lehet az indítóbillentyű).</p>
+
+							<p>A aptosid az esetek legnagyobb többségében el fog indulni. Ha mégsem ez történne, akkor különböző Boot-opciók (Cheat kódok) használhatók, melyeket a rendszerindító programban adhatunk meg. A boot-paraméterek használatával (pl. képernyő felbontása, nyelv kiválasztása) sok időt megtakaríthatunk a telepítés utáni beállítás során. <a href="cheatcodes-hu.htm">Lásd a Cheat-kódok</a> és a <a href="cheatcodes-vga-hu.htm">VGA kódok</a> fejezetet.</p>
+
+			<h2>A telepítendő rendszer nyelvének kiválasztása</h2>
+				<h6><span class="highlight-3">Telepítés saját nyelven a KDE-full változatnál</span></h6>
+
+							<p>Válaszd ki a nyelvet a <span class="highlight-2">grub menüjében (F4 leütése után)</span>. A <span class="highlight-3">kde-full kiadás</span> beállítja a munkaasztal és a legtöbb alkalmazás lokalizációját a boot során. </p>
+
+							<p>Ez biztosítja azt is, hogy ezek a beállítások a aptosid telepítése után is megmaradnak, és csak a kívánt nyelvi változatok kerülnek telepítésre. Bizonyos kiválasztott nyelvek a telepítéshez több memóriát igényelnek, ezért elképzelhető, hogy a aptosid memória-gondok miatt nem tudja megjeleníteni az adott nyelvet. Ekkor angol nyelven fogja folytatni a telepítést, de a regionális beállítások (pénznem, dátum- és időformátum, billentyűzet) az eredetileg kiválasztott nyelvhez lesznek beállítva. 1 GB vagy több memória esetén mindegyik, az alábbiakban felsorolt nyelvi változat elérhető lesz:</p>
+
+							<p>
+   							Default - Deutsch (German) <br />
+							Default - English (English-US)<br />
+							*Čeština (Czech)<br />
+    							*Dansk (Danish)<br />
+    							*Español (Spanish)<br />
+    							*English (GB)<br />
+    							*Français (French)<br />
+    							*Italiano (Italian)<br />
+    							*Nihongo (Japanese)<br />
+    							*Nederlands (Dutch)<br />
+							*Polski (Polish)<br />
+    							*Português (Portuguese BR and PT)<br />
+    							*Română (Romanian)<br />
+    							*Русский (Russian)<br />
+							</p>
+
+   							<p>A kiválasztható nyelv attól függ, hogy mely nyelvekre készült el a aptosid kézikönyv fordítása. Ha nem találod a saját nyelved, tegyél érte!</p>
+
+					<h6><span class="highlight-3">Telepítés saját nyelven a KDE-lite változatnál</span></h6>
+						<ol>
+							<li>Válaszd ki a nyelvet a <span class="highlight-2">gfxboot menüjében (F4 leütése után)</span>. (Lásd még a <a href="cheatcodes-hu.htm#cheatcodes">Live-CD boot paramétereket (Cheat kódok)</a>). A nyelvi fájlok a Live CD-n nem találhatóak meg helyhiány miatt, ezért a telepítő az alapértelmezett angol nyelven fog elindulni; azonban beállít minden szükséges dolgot ahhoz, hogy a kész rendszeren mindössze a nyelvi fájlok telepítését kelljen utólagosan megtenni, minden egyéb beállítást a kiválasztott nyelvhez elvégez.</li>
+
+							<li> Indítsd el a telepítőt.</li>
+
+							<li>Telepíts a merevlemezre, majd indítsd újra a számítógépet.</li>
+
+							<li>Az újraindítást követően telepítsd az általad kívánt nyelveket és alkalmazásokat az apt-get segítségével</li>
+						</ol>
+
+					<h6>Az első futtatás merevlemezről</h6>
+							<p><span class="highlight-3">A telepítés utáni első betöltéskor tapasztalni fogod, hogy a aptosid nem őrizte meg a hálózati beállításokat</span>. A hálózat kényelmesen beállítható a <a href="internet-connecting-hu.htm">K menü > Internet > Ceni</a> indításával. A WIFI/WLAN barangolással kapcsolatban lásd<a href="inet-wpagui-hu.htm"> ezt a fejezetet.</a></p>
+
+	</div>
+	<div class="divider" id="Installation">
+					<h2>A aptosid telepítő</h2>
+
+							<p><b>1.</b> A telepítő elindítható a munkaasztalon található ikonnal, a <span class="highlight-3"> K Menü > System > aptosid-installer</span> menüponttal, vagy a következő parancssori utasítás kiadásával:</p>
+<pre>
+sux
+install-gui.bash
+</pre>
+		<div class="screenshot"><img src="../lib/images-hu/installer-hu/installer1-hu.png" title="Welcome tab - aptosid Installer" alt="aptosid-Installer1" /></div>
+	<div class="spacer02"></div>
+							<p><b>2.</b> Miután elolvastad (és megértetted) a figyelmeztetést, továbbléphetünk a partíció kiválasztásához. </p>
+
+		<div class="screenshot"><img src="../lib/images-hu/installer-hu/installer2-hu.png" title="Partitioning tab - aptosid Installer" alt="aptosid-Installer2" /></div>
+
+							<p>A következő a telepítés cél partíciójának kiválasztása és a csatolási pontok kiválasztása. Azokat a partíciókat, melyekhez nincs csatolási pont kiválasztva, a telepítő fogja felcsatolni (a swap partíció automatikusan felcsatolásra kerül a rendszer indulásakor). </p>
+
+							<p><span class="highlight-2">MEGJEGYZÉS: Ha a root partíció ("/") már formázva van a szükséges fájlrendszerrel, a "format with" választódobozt nem fontos kipipálni, amennyiben a legördülő menü a kívánt fájlrendszer típust mutatja.</span></p>
+
+							<p>Minden egyéb partíció a <span class="highlight-3">/media/ </span> alá lesz csatolva. Itt kiválasztandó a aptosid leendő root partíciója ("/").  Ugyanekkor <span class="highlight-3">választható ki az személyes adatok, azaz saját könyvtár partíciója is ($HOME).</span> <span class="highlight-1"> A kiválasztás az egérrel történik.</span></p>
+
+		<p class="highlight-3">Elmentetted már az adataidat?</p>
+
+							<p>If you haven't partitioned your hard drive yet, click on the <span class="highlight-3">Execute</span> button in the <span class="highlight-3">Start Part.-manager</span> panel, also have a look at <a href="part-gparted-hu.htm#partition">Partitioning your HD using Gparted</a> or, if you want to use the shell, read <a href="part-cfdisk-hu.htm#disknames">Partitioning your HD</a></p>
+
+							<p>A partícionáló programok konsole/parancssor alól is indíthatók:</p>
+<pre>
+sux
+gparted
+</pre>
+		<p>vagy</p>
+<pre>su
+cfdisk
+</pre>
+	<div class="spacer02"></div>
+							<p><b>3.</b> Rendszerindítóként a aptosid a GRUB-ot használja, tehát telepítsd <b>a Grub-ot az MBR-be</b>! Más lehetőséget csak haladó felhasználók válasszanak! Ha más rendszerbetöltőt használsz, esetleg kézzel kell a beállításokat szerkesztened.</p>
+
+							<p>A Grub felismeri az egyéb telepített operációs rendszereket is (pl. Windows) és automatikusan hozzáadja a rendszerindító menühöz. </p>
+
+							<p>Ugyanebben a lépésben lehet beállítani az időzónát is.</p>
+
+		<div class="screenshot"><img src="../lib/images-hu/installer-hu/installer3-hu.png" title="Grub/Timesone tab - aptosid Installer" alt="grub-to-mbr" /></div>
+	<div class="spacer02"></div>
+
+							<p><b>4.</b> A következő lépés a felhasználó, jelszó és a root (adminisztrátori) jelszó beállítása (jegyezd meg őket!). Ne használj könnyen kitalálható jelszavakat. Újabb felhasználók hozzáadása a telepítést követően, parancssorból lehetséges az <a href="hd-install-hu.htm#adduser"> adduser </a> paranccsal.</p>
+
+		<div class="screenshot"><img src="../lib/images-hu/installer-hu/installer4-hu.png" title="User/Password tab - aptosid Installer" alt="choosing-pw" /></div>
+	<div class="spacer02"></div>
+							<p><b>5.</b> Ebben a lépésben adj nevet a leendő rendszerednek (bárminek elnevezheted, amíg az megfelel a hoszt név szabályoknak: csak betűket és számokat tartalmazhat, illetve nem kezdődhet számmal).</p>
+
+							<p>Ezután kiválasztható, hogy a nyomtatáshoz szükséges cupsys, illetve az SSH szerver induljon-e automatikusan vagy sem.</p>
+
+		<div class="screenshot"><img src="../lib/images-hu/installer-hu/installer5-hu.png" title="Network tab - aptosid Installer" alt="hostname" /></div>
+
+	<div class="spacer02"></div>
+							<p><b>6.</b> Ez a lap lehetőséget nyújt a beállítások végső ellenőrzéséhez. Olvasd át őket újra figyelmesen, majd kattints a <span class="highlight-3">Save Config and Next</span> (Beállítások mentése és tovább) gombra.</p>
+
+		<div class="screenshot"><img src="../lib/images-hu/installer-hu/installer6-hu.png" title="Installation tab - aptosid Installer" alt="installation-config" /></div>
+
+							<p>Ennél a lépésnél lehetőség van szerkeszteni, módosítani a telepítési beállító-fájlt, majd a megváltoztatott paraméterekkel indítani a telepítést. A telepítő már nem végez semmilyen ellenőrzést, <span class="highlight-3">és a 'back' (vissza) gomb megnyomása után a kézzel bevitt módosítások el fognak veszni.</span> </p>
+
+							<p>A (<span class="highlight-3">~/.sidconf</span>) szerkesztése csak gyakorlott linux-felhasználóknak ajánlott, akik speciális beállításokat akarnak megtenni (ilyen például egy nagyon egyedi partíciós tábla használata, amit a telepítő automatikus ellenőrzője elutasítana).</p>
+
+							<p><span class="highlight-2">A telepítő észleli, ha a merevlemezen egy már létező $HOME könyvtár felülíródna; ilyenkor figyelmeztetést küld és a telepítést nem engedélyezi mindaddig, amíg más felhasználói nevet nem választasz.</span></p>
+
+		<div class="screenshot"><img src="../lib/images-hu/installer-hu/installer7-hu.png" title="Begin Installation - aptosid Installer" alt="Begin Installtion" /></div>
+
+							<p>A telepítés elkezdéséhez kattints a <span class="highlight-3">Begin Installation</span> gombra. Az egész eljárás a géptől függően 5 - 15 percet vesz igénybe, régebbi PC-ken akár 60 perc is lehet.</p>
+
+							<p>Ha a folyamatjelző sáv sokáig nem mozdul, ne szakítsd meg a telepítést, kérjük várj türelemmel.</p>
+
+							<p>Elkészült! Vedd ki a CD-t a meghajtóból. Indítsd újra a gépedet az új telepített rendszerrel.</p>
+
+
+
+	</div>
+
+	<div class="divider" id="first-hd-boot">
+		<h2>Az első rendszerindítás</h2>
+
+							<p class="highlight-4">A telepítés utáni első betöltéskor tapasztalni fogod, hogy a aptosid nem őrizte meg a hálózati beállításokat. Ezeket újra be kell állítanod (Wlan, Modem, ISDN,...).</p>
+
+							<p>Ha a gép automatikusan, DHCP-vel kapta a hálózati címet előzőleg (például xDSL router segítségével), újra kell aktiválnia azt. Ehhez a</p>
+
+<pre >
+ceni
+</pre>
+
+							<p>a megfelelő eszköz, amely megtalálható a <i>K menü > Internet > ceni</i> menüpontban. Lásd még az <a href="internet-connecting-hu.htm">Internet és hálózat</a> c. fejezetet is.</p>
+
+							<p>To add an existing aptosid $home partition to new installation fstab needs to be altered, refer to <a href="home-hu.htm#home-move">Moving /home</a>.</p>
+
+							<p> <span class="highlight-2">Do not use or share an existing $home from another distribution as the $home configuration files in a home directory will conflict if you share the same username between differing distributions.</span></p>
+	</div>
+	<div class="divider" id="adduser">
+	<h2>Újabb felhasználók hozzáadása</h2>
+							<p><span class="highlight-3">Új felhasználó </span>hozzáadása, automatikus csoporttagság-meghatározással, root felhasználóként:</p>
+<pre>
+adduser &lt;felhasználónév&gt;
+</pre>
+							  <p>Csak üss entert, a program elvégzi a szükséges dolgokat. A program kétszer be fogja kérni az új felhasználó jelszavát.</p>
+
+							<p>A aptosid saját ikonjait (pl. a kézikönyv és az IRC ikonok) kézzel kell hozzáadni. Ehhez kattints <span class="highlight-3">jobb egérgombbal</span> az alkalmazásra a K menüben, és add hozzá az ikont az Asztalhoz.</p>
+
+							<p>Felhasználó törlése</p>
+<pre>
+deluser &lt;felhasználónév&gt;
+</pre>
+							<p>Lásd még:</p>
+<pre>
+man adduser
+man deluser
+</pre>
+							<p>A <span class="highlight-3">kuser</span> program is használható új felhasználók felvitelére, azonban ekkor a csoport jogokat kézzel kell hozzáadnod az adott felhasználóhoz.</p>
+
+	</div>
+	<div class="divider" id="sux">
+	<h2>A sux parancs</h2>
+							<p>Számos parancs, vagy alkalmazás igényli a rendszergazdai jogokkal való futást. Ennek eléréséhez gépeld be:</p>
+<pre>
+sux
+</pre>
+
+							<p>Míg az általános rendszergazdai jogot adó parancs a 'su', a <span class="highlight-3">sux</span> egyszerűen lehetővé teszi grafikus (GUI/X11) alkalmazások futtatását is a parancssorból a root felhasználó számára. A <span class="highlight-3">sux</span> egy kiegészítő, előtét a szabványos su parancshoz, amely az X alatt is meg tudja emelni a jogosultsági szintedet.</p>
+
+							<p>Néhány KDE alkalmazásnak szüksége van a <span class="highlight-3">dbus-launch</span> futtatására a program elindulása előtt:</p>
+<pre>
+dbus-launch &lt;Alkalmazás&gt;
+</pre>
+
+							<p>Néhány példa arra, hogy egy normál X11 program mikor igényel root jogú futtatást: Ha szövegszerkesztővel (pl. a kwrite, vagy kate) egy, a root tulajdonában lévő fájlt szeretnénk szerkeszteni; a merevlemez partícionálása a gparted segítségével; illetve ha root jogokkal futó fájlkezelőt (pl. konqueror) szeretnénk indítani. A root fájljainak szerkesztésére használható az a módszer, hogy a fájlra jobb egérgombbal kattintasz, majd a helyi menüből kiválasztod az 'Edit as root' (szerkesztés root-ként) menüpontot. Ekkor a kdesu bekéri a root jelszót és a háttérben biztosítja a szükséges jogokat.</p>
+
+							<p>A 'sudo'-tól eltérően ebben az esetben nem áll fenn a veszélye annak, hogy valaki a 'sudo' begépelése után a programok figyelmetlen használatával károkat okozzon a rendszerben.</p>
+
+							<p class="highlight-2">FIGYELMEZTETÉS: Amíg root-ként vagy bejelentkezve, a rendszer nem fog megakadályozni abban, hogy potenciálisan veszélyes dolgokat művelj, mint pl. fontos rendszerállományok törlése, tehát tökéletesen biztosnak kell lenned abban amit csinálsz. Ellenkező esetben tönkreteheted a rendszeredet. </p>
+
+							<p class="highlight-2">Semmilyen körülmények között ne futtass root-ként olyan programokat, amelyeket egyszerű felhasználóként a napi munkához használsz, mint pl. a levelezés, táblázatkezelés, böngészés, és így tovább. </p>
+	</div>
+	<div id="rev">Az oldal utoljára frissítve 24/09/2010 1450 UTC</div>
+
+</div>
+</body>
+</html>

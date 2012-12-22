@@ -1,0 +1,455 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>aptosid kézikönyv - Gparted/KDE Partition Manager</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body id="part">
+<div id="menu"> <!-- menu starts here hu lang maintained by mrowl ruess-->
+<!--aptosid Operating System Manual menu-version-00.00.2010.08.14 -->
+<!-- menu last updated by bluewater 2010.08.14 0100 hrs UTC -->
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="To aptosid.com forums and wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-hu.htm#search-on"><img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" /> Keresés Online Offline</a> </li>
+		<!--<li><a href="http://manual.aptosid.com/meta-manual">Community Software Selections</a></li>-->
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Másik nyelv kiválasztása" alt="lang-switch" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-hu.htm">aptosid OS Manual</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-hu.htm#welcome-gen">aptosid OS Manual &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-hu.htm#cred-team">Credits</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-hu.htm#how-to">How to use this manual &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-hu.htm#how-to">How to use this manual</a></li>
+					  <li><a href="welcome-hu.htm#table-contents">Table of Contents</a></li>
+					</ul>
+					</li>
+		<li><a href="help-hu.htm#help-gen">Getting Help &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-hu.htm#help-gen">Where and how to get help</a></li>
+					  <li><a href="help-hu.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-hu.htm#welcome-quick">aptosid Quick Start Guide</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-hu.htm">ISO Content, Releases, Download Mirrors and Burning</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-hu.htm#cd-content">ISO Content and system requirements &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-hu.htm#rolling">Release Notes</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-hu.htm#download-aptosid">aptosid Mirrors, Downloading and Burning &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-hu.htm#md5">md5 Checksum</a></li>
+					  <li><a href="cd-dl-burning-hu.htm#burn-nero">Burning in Windows</a></li>
+					  <li><a href="cd-dl-burning-hu.htm#burn-linux">Burning in Linux</a></li>
+					  <li><a href="cd-no-gui-burn-hu.htm#burning-no-gui">burniso script</a></li>
+					  <li><a href="cd-no-gui-burn-hu.htm#burn-no-gui-gen">Burning without a GUI</a></li><li><a href="cd-dl-burning-hu.htm#download-aptosid">aptosid Download Mirrors</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-hu.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-hu.htm#rootpw">Root-password on the aptosid-Live ISO</a></li>
+				<li><a href="live-mode-hu.htm#live-cd-installsoft">Installing software whilst on a Live-ISO</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-hu.htm">The Terminal / Konsole</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-hu.htm#term-kon"> Terminal / Konsole &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-hu.htm#term-kon"> Terminal / Konsole</a></li>
+					  <li><a href="term-konsole-hu.htm#cli-help">Command Line Help</a></li>
+					  <li><a href="help-hu.htm#init3-tools">Tools to know in text mode (tty) - init 3</a></li>
+					  <li><a href="term-konsole-hu.htm#term-cmds">Linux Terminal Commands List</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-hu.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-hu.htm">CheatCodes</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-hu.htm#cheatcodes">aptosid specific Live-ISO Cheatcodes</a></li>
+				<li><a href="cheatcodes-hu.htm#cheatcodes-linux">Linux generic Cheatcodes</a></li>
+				<li><a href="cheatcodes-vga-hu.htm#vga">VGA Codes</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-hu.htm">Partitioning Your Hard Drive</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-hu.htm#partition">Partitioning with a GUI &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-hu.htm#partition">Partitioning your HD using GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-hu.htm#ntfs">NTFS partition Resizing using GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-hu.htm#partition">Partitioning with CLI &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-hu.htm#partition">Partitioning  your HD using cfdisk</a></li>
+					    <li><a href="part-cfdisk-hu.htm#formating">Formatting after partitioning with cfdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-hu.htm#part-example">Partitioning Basics &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-hu.htm#part-example">Partition Size Examples</a></li>
+					  <li><a href="part-uuid-hu.htm#uuid">UUID, Partition Labelling and fstab</a></li>
+					  <li><a href="part-cfdisk-hu.htm#disknames">Disk Naming in brief</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-hu.htm">Installation options - HD, USB, VM</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-hu.htm#Inst-prep">Install Preparation &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-hu.htm#Inst-prep">Install Preparation </a></li>
+					  <li><a href="hd-install-hu.htm#Installation">Installing to your HD</a></li>
+					  <li><a href="hd-install-hu.htm#first-hd-boot">First Boot Up</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-hu.htm#fromiso">Booting fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-hu.htm#fromiso">Booting fromiso - Overview</a></li>
+					  <li><a href="hd-install-opts-hu.htm#fromiso-grub-leg">Booting 'fromiso' with grub-legacy</a></li>
+					  <li><a href="hd-install-opts-hu.htm#grub2-fromiso">Booting 'fromiso' with Grub 2</a></li>
+					  <li><a href="hd-install-opts-hu.htm#fromiso-persist">fromiso and persist</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-hu.htm#usb-hd">Installing to USB drives &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-hu.htm#usb-hd">Installing on a USB-HD - aptosid specific - aptosid-on-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-hu.htm#raw-usb">Writing aptosid to a USB/SSD stick with any Linux, MS Windows or Mac OS X system</a></li>
+					</ul>
+					</li>
+		  <li><a href="nbdboot-hu.htm#nbd1">Booting aptosid over a network</a></li>
+		  <li><a href="hd-install-vmopts-hu.htm#vm">Virtual Machine installation options</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="hw-dev-hw-dri-hu.htm">Graphic Cards, Monitors, Xorg &amp; Miscellaneous Drivers</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-hw-dri-hu.htm#hd-ntfs3g">Writing on NTFS-partitions with ntfs-3g</a></li>
+		<li><a href="hw-dev-mon-hu.htm#mon-res">Screen Resolution and Monitors  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-hu.htm#mon-res">Screen Resolution and Monitors</a></li>
+					  <li><a href="hw-dev-mon-hu.htm#xrandr">Dual Monitors and xrandr</a></li>
+					  <li><a href="hw-dev-mon-hu.htm#mon-binary">Dual Monitors (using binaries)</a></li>
+					</ul>
+					</li>
+		<li><a href="hw-dev-hw-dri-hu.htm#non-free-3d">Graphic card proprietry drivers &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="hw-dev-hw-dri-hu.htm#non-free-3d">Binary, non-free drivers for Nvidia &amp; xorg.conf</a></li>
+					  <li><a href="hw-dev-hw-dri-hu.htm#non-free-3d-2">non-free drivers for ATI, Radeon and others</a></li>
+					</ul>
+					</li>
+			  <li><a href="hw-dev-hw-dri-hu.htm#non-free-firmware">Hardware needing non-free firmware drivers</a></li>
+			  <li><a href="hw-dev-hw-dri-hu.htm#non-free">Adding non-free to Sources List</a></li>
+			  <li><a href="hw-dev-hw-dri-hu.htm#native-nv-ati">FOSS xorg drivers for nVidia, ATI, Radeon, Intel &amp; xorg.conf</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-kde-hu.htm">Window Managers</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-kde-hu.htm">Window Managers &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-kde-hu.htm">Window Managers</a></li>
+					    <li><a href="wm-xfce-hu.htm#xfce-notes">Useful Xfce extras</a></li>
+					    <li><a href="wm-kde-hu.htm#install-add">Useful extra KDE Apps</a></li>
+					    <li><a href="wm-kde-hu.htm#desk-freeze">Desktop Freezes</a></li>
+					    <li><a href="wm-kde-hu.htm#kde-login">Cant login in KDE</a></li>
+					    <li><a href="wm-kde-hu.htm#ch-th">Changing Themes</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-kde-hu.htm#dm">Display Managers - dm</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="internet-connecting-hu.htm">Internet connecting, WiFi, LAN and Networks</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-hu.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-hu.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-hu.htm#serv-ftp">FTP Clients</a></li>
+					    <li><a href="lamp-apache-hu.htm#serv-sec">Security Protocols</a></li>
+					    <li><a href="lamp-apache-hu.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-hu.htm#serv-mysql">MySQL Setup</a></li>
+					    <li><a href="lamp-ppp-hu.htm#serv-php">PHP in Apache</a></li>
+					    <li><a href="ntp-server-hu.htm#ntp-server">Timeserver Setup</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-hu.htm#tor">Firewalls and Privacy &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-hu.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-hu.htm#privoxy">Privoxy</a></li>
+					    <li><a href="internet-connecting-hu.htm#firewalls">Firewalls</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-hu.htm#ssh-x">SSH and Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-hu.htm#setup">Samba-Server Setup</a></li>
+						  <li><a href="samba-hu.htm#configure">Configuring SAMBA (Windows)</a></li>
+						  <li><a href="ssh-hu.htm#ssh-fs">SSH Remote Mounting</a></li>
+						  <li><a href="ssh-hu.htm#ssh-x">X Window Apps via SSH</a></li>
+						  <li><a href="ssh-hu.htm#ssh-f">GUI SSH with Konqueror</a></li>
+						  <li><a href="ssh-hu.htm#ssh-w">SSH X-Forwarding from Windows-PC</a></li>
+						  <li><a href="ssh-hu.htm#ssh">SSH and Security</a></li>
+					</ul>
+					</li>
+		<li><a href="internet-connecting-hu.htm#netcardconfig">WIFI connections &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="internet-connecting-hu.htm#netcardconfig">Getting Online - Ceni</a></li>
+						    <li><a href="inet-wpagui-hu.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-hu.htm#net-set1">WiFi - Setting up for WiFi Roaming</a></li>
+						    <li><a href="internet-connecting-wpa-hu.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-hu.htm#hotswitch">Network switching between WiFi and Cable</a></li>
+					</ul>
+					</li>
+		<li><a href="internet-connecting-hu.htm#netcardconfig">Wired Connections &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="internet-connecting-hu.htm#dial-mod">56k Modems</a></li>
+						    <li><a href="internet-connecting-hu.htm#netcardconfig">Getting Online - Ceni</a></li>
+					</ul>
+					</li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-hu.htm">Package Management and dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-hu.htm#apt-cook">APT Cookbook and Sources list &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-hu.htm#apt-cook">APT-Guide Cookbook and Sources list</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#apt-install">Installing a new package</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#apt-delete">Deleting a package</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#apt-downgrade">Package Hold and downgrading</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#apt-cache">Package searching with apt-cache</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#gui-pacsea">GUI Package searching</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-hu.htm#kern-upgrade">Upgrading the kernel &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-hu.htm#kern-remove">Removing Kernels</a></li>
+					    <li><a href="sys-admin-kern-upg-hu.htm#kern-upgrade">Upgrading the kernel</a></li>
+					    <li><a href="sys-admin-kern-upg-hu.htm#dmakms">Installing kernel modules dynamically with dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-hu.htm#apt-upgrade">Upgrade an Installed System -  dist-upgrade - Overview &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-hu.htm#live-cd-upgrade">Upgrading by Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-hu.htm#approx">dist-upgrade of multiple PCs on a LAN</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#apt-upgrade">Upgrade an Installed System -  dist-upgrade - Overview</a></li>
+					    <li><a href="sys-admin-apt-hu.htm#du-st">Upgrade an Installed System -  dist-upgrade - The Steps</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-hu.htm">System Administration</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-hu.htm#bois-prep">Upgrading the BIOS with FreeDOS</a></li>
+		<li><a href="vir-rkits-hu.htm#virus-rkits">Virus and Rootkit Scanners</a></li>
+		<li><a href="hd-install-hu.htm#adduser">Adding Users and Passwords &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-hu.htm#adduser">Adding a new user</a></li>
+					    <li><a href="sys-admin-gen-hu.htm#pw-lost">Lost root passwords, new passwords</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-hu.htm#start-services">Services and init runlevels &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-hu.htm#start-services">Services enable/disable</a></li>
+					    <li><a href="sys-admin-gen-hu.htm#init">aptosid runlevels - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-hu.htm#rsync">Backing up the system &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-hu.htm#rdiff">Back-Up with rdiff</a></li>
+					    <li><a href="sys-admin-rsync-hu.htm#rsync">Back-Up with rsync</a></li>
+					    <li><a href="home-hu.htm#home-bu">Moving /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-hu.htm#fonts">CUPS, Fonts and Sound &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-hu.htm#fonts">Fonts</a></li>
+					     <li><a href="sys-admin-gen-hu.htm#cups">CUPS - Printing System</a></li>
+					     <li><a href="sys-admin-gen-hu.htm#sound">Sound Mixers</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-hu.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-hu.htm#chroot">Grub2 - Recovering Grub with chroot</a></li>
+					    <li><a href="sys-admin-grub2-hu.htm#mbr-over-grub2">Grub2 - MBR Overwritten</a></li>
+					    <li><a href="sys-admin-grub2-hu.htm#multi-os">Grub2 - Dual and Multibooting</a></li>
+					    <li><a href="sys-admin-grub2-hu.htm#grub1-grub2">Grub2 -Upgrading from Grub1</a></li>
+					    <li><a href="sys-admin-grub2-hu.htm#grub2">Grub2 - Overview</a></li>
+					</ul>
+					</li>
+			</ul>
+		</li>
+	</ul>
+<!-- menu ends here --> </div>
+<div id="main-page">
+	<div class="divider" id="partition">
+		<h2 id="top-header">A merevlemez partícionálása (Gparted/KDE Partition Manager segítségével)</h2>
+			<h5><span class="highlight-2">FIGYELEM: A lemezek és partíciók elnevezéséről </span><a href="part-uuid-hu.htm"> lásd az "UUID, partíció-címkék és az fstab" fejezetet, mivel a aptosid UUID-ket használ</a>.</h5>
+
+			<h5>A partícionáló eszközök használatához szükség van a root jelszóra, gépeld be a <span class="highlight-3">sux</span> parancsot, majd add meg a jelszót. A Live ISO-n nincs root jelszó, a <span class="highlight-3">sux</span> után nyomj egyszerűen 'enter'-t. Lásd még: <a href="live-mode-hu.htm" >Live mód</a></h5>
+
+	<div class="spacer02"></div>
+							<p class="warning-box">Az NTFS partíció átméretezése a rendszer újraindítását igényli! NE TÉGY semmiféle egyéb változtatást ezen a partíción újraindítás előtt, másképp hibákba fogsz ütközni.<a href="part-gparted-hu.htm#ntfs"> Please read this.</a></p>
+
+							<p class="highlight-2">Az adataidról készíts biztonsági másolatot!</p>
+
+				<h3>Az alapok</h3>
+							<p>A partition must have a filesystem. Linux knows different filesystems to use. Ext3 is the recommended format for aptosid. ext2 is handy as a storage format as an MS Windows&#8482; driver is available for data-swapping. <a href="http://www.fs-driver.org/">Ext2 Installable File System For MS Windows</a>.</p>
+
+							<p  class="highlight-2">Mindennapi használatra az ext4 fájlrendszert ajánljuk, mivel ez a aptosid fő fájlrendszere, ezért jól karbantartott.</p>
+
+		<h2>Using KDE Partition Manager &amp; Gparted</h2>
+							<p>Creating and managing partitions is not something that is typically done every day. Therefore, a good idea is to read this guide once, to get comfortable with the concepts and some of the panels that will appear.</p>
+
+						  <h3>KDE Partition Manager - run in a terminal:</h3>
+<pre>
+sux
+partitionmanager
+</pre>
+						  <h3>Gparted - run in a terminal:</h3>
+<pre>
+sux
+gparted
+</pre>
+
+
+		<ul>
+			<li>
+							<p>When GParted or KDE Partition Manager runs , a window is opened, and drives are scanned.</p>
+
+							<p>In KDE Partition Manager the drives are shown in a list on the left.</p>
+
+		<div class="screenshot"><img src="../lib/images-common/images-kpart/kpart-02.png"  title="KDE Partition Manager partition information" alt="KDE Partition Manager partition information" /></div>
+
+							<p>In Gparted, if you click the menu (at the top left), a pop down is presented. You can select to refresh the display of the drives on your system.</p>
+
+
+		<div class="screenshot"><img src="../lib/images-common/images-gparted/gparted02-en.png"  title="Gparted Devices View" alt="gparted" /></div>
+			</li>
+		  </ul>
+						<h6><span class="highlight-2">The following screenshots are of Gparted. KDE Partition Manager behaves in much the same manner.</span></h6>
+		  <ul>
+			<li>
+				<h3>Szerkesztés</h3>
+							<p>A Szerkesztés (Edit) menüpont három, kiszürkített menüpontot tartalmaz, amelyek döntő fontosságúak lesznek:<br />
+							<span class="highlight-3">Az utolsó művelet visszavonása (Undo last operations)</span><br />
+							<span class="highlight-3">Műveletek alkalmazása (Apply)</span><br />
+							<span class="highlight-3">Minden művelet törlése (Clear all operations)</span>.</p>
+			</li>
+			<li>
+				<h3>Nézet</h3>
+				<ul>
+					<li>
+						<h4>Merevlemez információ</h4>
+							<p>A <b>merevlemez információ</b> panelen láthatjuk a merevlemez típusát, méretét és egyéb hasznos információkat. Az itt látható információk segítségével győződhetünk meg arról, hogy valóban a kívánt merevlemezzel dolgozunk-e.</p>
+
+		<div class="screenshot"><img src="../lib/images-common/images-gparted/gparted03-en.png" title="Gparted Harddisk Information"  alt="operation view" /></div>
+					</li>
+					<li>
+						<h4>Sorbanálló műveletek</h4>
+							<p>Az alsó ablakban láthatjuk a sorban álló műveletek listáját. Ennek segítségével ellenőrizhetjük, hogy hány műveletet kell majd elvégezni.</p>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<h3>Eszközök</h3>
+							<p>Az Eszközök menüben állítható be vagy változtatható meg a kötet címkéje, amennyiben nem megfelelő.</p>
+			</li>
+			<li>
+				<h3>Partíció</h3>
+							<p>Ebben a menüben találjuk a legfontosabb funkciókat. Többféle művelet elvégzésére van lehetőség, és ezek között találunk veszélyeseket is.</p>
+
+							<p><b>Törlés (Delete)</b>, egy adott partíció végleges törléséhez. A művelet elvégzéséhez előbb ki kell választani a megfelelő partíciót.</p>
+
+							<p>Az <b>Átméretezés/Mozgatás</b> funkcióval partíciókat méretezhetünk át.</p>
+
+			</li>
+			<li>
+				<h3>Új partíció létrehozása</h3>
+							<p>Egy még nem használt terület kiválasztását követően az eszköztáron az <b>Új</b> gomb megnyomásával lehet új partíciót létrehozni. A felbukkanó ablakban kiválasztható a mérete; hogy elsődleges, kiterjesztett vagy logikai partíció legyen; illetve a fájlrendszer típusa.</p>
+
+		<div class="screenshot"><img src="../lib/images-common/images-gparted/gparted07-en.png"  title="Gparted New Partition" alt="file system" /></div>
+			</li>
+			<li>
+				<h3>Ha hibát vétettél</h3>
+							<p>Hibás partíció létrehozás esetén használható a Törlés funkció a kiválasztott partíció törlésére, illetve ha még nem hagytuk jóvá az 'Alkalmaz' gomb megnyomásával, akkor használhatjuk a 'Mégsem' (Undo) gombot is.</p>
+
+
+		<div class="screenshot"><img src="../lib/images-common/images-gparted/gparted04-en.png"   title="Gparted Delete" alt="delete törlés" /></div>
+			</li>
+			<li>
+				<h3>Átméretezés/Mozgatás</h3>
+							<p>Egy partíció átméretezéséhez válasszuk az <b>Átméretezés/Mozgatás</b> gombot; ekkor egy új ablak jelenik meg. A partíció méretének csökkentéséhez vagy növeléséhez használható az egér és a nyíl billentyűk is.</p>
+
+		<div class="screenshot"><img src="../lib/images-common/images-gparted/gparted05-en.png"     title="Gparted Resize" alt="resize / move átméretezés / mozgatás" /></div>
+							<p>A beállítások elvégzése után kattints az Alkalmaz gombra, a változtatások csak azután hajtódnak végre.</p>
+
+		<div class="screenshot"><img src="../lib/images-common/images-gparted/gparted09-en.png"     title="Gparted Apply"  alt="operation view művelet közben" /></div>
+
+							<p>A feladat végrehajtásának időtartama a partíció méretétől függ.</p>
+
+							<p><b>A partíciós tábla szerkesztését követően a számítógépet újra kell indítani, hogy a aptosid újra tudja olvasni a partíciós táblát.</b></p>
+			</li>
+		</ul>
+
+	</div>
+	<div class="divider" id="ntfs">
+		<h2>NTFS partíciók átméretezése</h2>
+
+							<p class="warning-box">Az NTFS partíció átméretezése a rendszer újraindítását igényli! NE TÉGY semmiféle egyéb változtatást ezen a partíción újraindítás előtt, másképp hibákba fogsz ütközni.</p>
+
+						<ul>
+							<li>A gép újraindítása után a MS Windows&#8482; elindulásakor egy speciális képernyő indul el, és egy üzenetet fogsz látni a lemez konzisztenciájával kapcsolatban: Fájlrendszer ellenőrzése a következőn C :</li>
+
+							<li>Hagyd az AUTOCHK -t lefutni: A fájlrendszer ellenőrzés kötelező az NT esetében egy átméretezés után.</li>
+
+							<li>Az ellenőrzés végeztével a számítógép ismét automatikusan újra fog indulni. Ez biztosítja a tökéletes működést.</li>
+
+							<li>Újraindítás után a Windows XP a megszokott módon indul, de meg kell várnod míg a rendszer végleg bebootol és betölti a login képernyőt!</li>
+						</ul>
+
+							<p><b>Teljes GParted dokumentáció: </b>A teljes körű dokumentáció az alábbi weboldalon található: <a href="http://gparted.sourceforge.net">GParted</a>.</p>
+	</div>
+		<div class="divider" id="hd-ntfs3g">
+			<h2>NTFS-partíciók írása ntfs-3g segítségével</h2>
+
+							<p class="highlight-2"><b>Figyelem</b>: Bár az ntfs-3g kernel modul stabilnak minősített, sose használd külső biztonsági mentés nélkül és természetesen ne éles rendszeren! Ha megteszed, a te hibád ha adatvesztés következik be, tehát csak saját felelősségedre használhatod!</p>
+
+							<p>Nyiss egy parancssort és add ki a következő parancsokat (Lásd <a href="part-cfdisk-hu.htm" >A merevlemez partícionálása - A lemezek elnevezése</a> fejezetet):</p>
+<pre >sux
+apt-get update &amp;&amp; apt-get install ntfs-3g
+umount /media/xdxx
+mount -t ntfs-3g /dev/disk/by-uuid/xxyyzz[etc] /media/xdxx
+Kilépés a konzolból: exit
+</pre>
+
+							<p>Az NTFS köteted fel lett csatolva <b>rw</b> és most már írni is fogod tudni. De még egyszer figyelmeztetünk! <span class="highlight-3">Csak vészhelyzetben használd, nem javasolt a napi szintű alkalmazása.</span></p>
+
+		</div>
+			<div id="rev">Tartalom utoljára ellenőrizve: 14/08/2010 0100 UTC</div>
+
+</div>
+</body>
+</html>
