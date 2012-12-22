@@ -1,0 +1,518 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="hr">
+<head>
+	<title>aptosid Priručnik - Hard Disk Instalacija</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision by cobra 16/06/2008 0415 UTC -->
+<div id="menu"> <!-- menu starts here hr lang maintainer cobra -->
+<!--aptosid Operating System Manual menu-version-00.01.2010.09.17 -->
+<!-- menu last updated by bluewater 2010.09.17 0730 hrs UTC -->
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="aptosid.com, forum and wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-hr.htm#search-on"><img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" /> Traži Online Offline</a> </li>
+		<!--<li><a href="http://manual.aptosid.com/meta-manual">Izbor softvera zajednice</a></li>-->
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Izaberite drugi jezik - Choose another language" alt="lang-switch" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-hr.htm">aptosid OS priručnik</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-hr.htm#welcome-gen">aptosid OS priručnik &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-hr.htm#cred-team">Zahvale</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-hr.htm#how-to">Kako koristiti ovaj priručnik &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-hr.htm#how-to">Kako koristiti ovaj priručnik</a></li>
+					  <li><a href="welcome-hr.htm#table-contents">Indeks</a></li>
+					</ul>
+					</li>
+		<li><a href="help-hr.htm#help-gen">Pomoč &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-hr.htm#help-gen">Gdje možete dobiti pomoć</a></li>
+					  <li><a href="help-hr.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-hr.htm#welcome-quick">aptosid Quick Start</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-hr.htm">ISO Sadržaj, Izdanje, Download Mirrors i prženje</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-hr.htm#cd-content">ISO sadržaj i sistemski zahtjevi &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-hr.htm#rolling">Release Notes</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-hr.htm#download-aptosid">aptosid Mirrors, ISO download i prženje &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-hr.htm#md5">md5 zbroj za provjeru</a></li>
+					  <li><a href="cd-dl-burning-hr.htm#burn-nero">Prženje s Windows</a></li>
+					  <li><a href="cd-dl-burning-hr.htm#burn-linux">Prženje s Linux</a></li>
+					  <li><a href="cd-no-gui-burn-hr.htm#burning-no-gui">burniso script</a></li>
+					  <li><a href="cd-no-gui-burn-hr.htm#burn-no-gui-gen">Prženje bez GUI-a</a></li>
+					  <li><a href="cd-dl-burning-hr.htm#download-aptosid">aptosid Download Mirrors</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-hr.htm">Live Modus</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-hr.htm#rootpw">Root-lozinka na aptosid-Live-ISO</a></li>
+				<li><a href="live-mode-hr.htm#live-cd-installsoft">Instalirati softver kada ste na Live-ISO</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-hr.htm">Terminal / Konzola</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-hr.htm#term-kon"> Terminal / Konzola &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-hr.htm#term-kon"> Terminal / Konzola</a></li>
+					  <li><a href="term-konsole-hr.htm#cli-help">Pomoć za naredbenu crtu</a></li>
+					  <li><a href="help-hr.htm#init3-tools">Poznati alate u tekstualnom modusu (tty) - init 3</a></li>
+					  <li><a href="term-konsole-hr.htm#term-cmds">Lista naredbi za Linux Terminal</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-hr.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-hr.htm">CheatCodes</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-hr.htm#cheatcodes">aptosid specifični Live-ISO Cheatcodes</a></li>
+				<li><a href="cheatcodes-hr.htm#cheatcodes-linux">Linux općeniti Cheatcodes</a></li>
+				<li><a href="cheatcodes-vga-hr.htm#vga">VGA Codes</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-hr.htm">Particijonirati vaš Hard-Disk</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-hr.htm#hd-ntfs3g">Pisanje na NTFS particiju sa NTFS-3g</a></li>
+			<li><a href="part-gparted-hr.htm#partition">Particijonirati sa GUI &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-hr.htm#partition">Particijonirati vaš HD koristeći GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-hr.htm#ntfs">Mijenjanje veličine NTFS particija koristeći GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-hr.htm#partition">Particijonirati sa naredbenom crtom &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-hr.htm#partition">Particijonirati vaš HD koristeći cfdisk</a></li>
+					    <li><a href="part-cfdisk-hr.htm#formating">Formatiranje particija poslije particijoniranjem sa cfdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-hr.htm#part-example">Osnove particioniranja &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-hr.htm#part-example">Primjeri veliparticije </a></li>
+					  <li><a href="part-uuid-hr.htm#uuid">UUID, označivanje particija i fstab</a></li>
+					  <li><a href="part-cfdisk-hr.htm#disknames">Namjestiti HD ime ukratko</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-hr.htm">Installation options - HD, USB, VM</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-hr.htm#Inst-prep">Instalacijske opcije &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-hr.htm#Inst-prep">Priprema za instalaciju</a></li>
+					  <li><a href="hd-install-hr.htm#Installation">Instaliranje na vaš HD</a></li>
+					  <li><a href="hd-install-hr.htm#first-hd-boot">Prvi Boot-Up</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-hr.htm#fromiso">Boot sa fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-hr.htm#fromiso">Boot sa fromiso - Pregled</a></li>
+					  <li><a href="hd-install-opts-hr.htm#fromiso-grub-leg">Boot sa fromiso sa grub-legacy</a></li>
+					  <li><a href="hd-install-opts-hr.htm#grub2-fromiso">Boot sa fromiso sa Grub 2</a></li>
+					  <li><a href="hd-install-opts-hr.htm#fromiso-persist">fromiso i persist</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-hr.htm#usb-hd">Instaliranje na USB uređaje &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-hr.htm#usb-hd">Instaliranje na USB-HD - aptosid specifično - aptosid-on-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-hr.htm#raw-usb">Pisanje aptosid na USB / SSD stick sa svim Linux, MS Windows ili Mac OS X sustavima</a></li>
+					</ul>
+					</li>
+		  <li><a href="nbdboot-hr.htm#nbd1">Dizanje aptosid preko mreže</a></li>
+		  <li><a href="hd-install-vmopts-hr.htm#vmopts">Opcije instalacije na virtualni stroj</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="hw-dev-hw-dri-hr.htm">Grafičke kartice, hardver, Xorg, sredstvo i pogonitelji</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-hr.htm#mon-res">Rezolucije Monitora  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-hr.htm#mon-res">Rezolucije Monitora i Monitori</a></li>
+					  <li><a href="hw-dev-mon-hr.htm#xrandr">Dual Monitori i xrandr</a></li>
+					  <li><a href="hw-dev-mon-hr.htm#mon-binary">Dual Monitori (koristeči binarne pogonitelje)</a></li>
+					</ul>
+					</li>
+		<li><a href="hw-dev-hw-dri-hr.htm#non-free-3d">Grafičke kartice sa vlasničkim pogoniteljima &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="hw-dev-hw-dri-hr.htm#non-free-3d">Binarni, non-free pogonitelji za: Nvidia &amp; xorg.conf</a></li>
+					  <li><a href="hw-dev-hw-dri-hr.htm#non-free-3d-2">non-free pogonitelji za ATI, Radeon i druge</a></li>
+					</ul>
+					</li>
+			  <li><a href="hw-dev-hw-dri-hr.htm#non-free-firmware">Hardver kojoj trebaju non-free firmware pogonitelji</a></li>
+			  <li><a href="hw-dev-hw-dri-hr.htm#non-free">Dodati non-free u Sources List</a></li>
+			  <li><a href="hw-dev-hw-dri-hr.htm#native-nv-ati">FOSS xorg pogonitelji za nVidia, ATI, Radeon, Intel &amp; xorg.conf</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-kde-hr.htm">Window-Menadžer</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-kde-hr.htm">Window-Menadžeri &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-xfce-hr.htm#xfce-notes">Korisni Xfce ekstra</a></li>
+					    <li><a href="wm-kde-hr.htm#install-add">Korisne ekstra KDE aplikacije</a></li>
+					    <li><a href="wm-kde-hr.htm#desk-freeze">Desktop je smrznut</a></li>
+					    <li><a href="wm-kde-hr.htm#kde-login">Ne mogu se prijaviti u KDE</a></li>
+					    <li><a href="wm-kde-hr.htm#ch-th">Promjeni temu</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-kde-hr.htm#dm">Menadžeri za Prikaz - dm</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="internet-connecting-hr.htm">Internet, WiFi, LAN i umrežavanje</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-hr.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-hr.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-hr.htm#serv-ftp">FTP klijenti</a></li>
+					    <li><a href="lamp-apache-hr.htm#serv-sec">Sigurnosne protokole</a></li>
+					    <li><a href="lamp-apache-hr.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-hr.htm#serv-mysql">MySQL Postavke</a></li>
+					    <li><a href="lamp-ppp-hr.htm#serv-php">PHP u Apache</a></li>
+					    <li><a href="ntp-server-hr.htm#ntp-server">Postavke poslužitelja za vrijeme</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-hr.htm#tor">Firewall i privatnost &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-hr.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-hr.htm#privoxy">Privoxy</a></li>
+					    <li><a href="internet-connecting-hr.htm#firewalls">Firewall</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-hr.htm#ssh-x">SSH i Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-hr.htm#setup">Postavke Samba-poslužitelja</a></li>
+						  <li><a href="samba-hr.htm#configure">Konfiguriranje SAMBA (Windows)</a></li>
+						  <li><a href="ssh-hr.htm#ssh-fs">SSH Priključivanje udaljenih računala</a></li>
+						  <li><a href="ssh-hr.htm#ssh-x">X-Window aplikacije via SSH</a></li>
+						  <li><a href="ssh-hr.htm#ssh-f">GUI SSH sa Konqueror</a></li>
+						  <li><a href="ssh-hr.htm#ssh-w">SSH X-Forwarding sa Windows-PC</a></li>
+						  <li><a href="ssh-hr.htm#ssh">SSH i sigurnost</a></li>
+					</ul>
+					</li>
+		<li><a href="internet-connecting-hr.htm#netcardconfig">WIFI &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="internet-connecting-hr.htm#netcardconfig">Ulaz u Internet - Ceni</a></li>
+						    <li><a href="inet-wpagui-hr.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-hr.htm#net-set1">WiFi - postaviti za WiFi Roaming</a></li>
+						    <li><a href="internet-connecting-wpa-hr.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-hr.htm#hotswitch">Prebacivanje između WiFi i kabela</a></li>
+					</ul>
+					</li>
+		<li><a href="internet-connecting-hr.htm#netcardconfig">Ožičene veze &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="internet-connecting-hr.htm#dial-mod">56k Modemi</a></li>
+						    <li><a href="internet-connecting-hr.htm#netcardconfig">Ulaz u internet - Ceni</a></li>
+					</ul>
+					</li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-hr.htm">Paket menadžment i dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-hr.htm#apt-cook">APT-Vodič i sources.list &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-hr.htm#apt-cook">APT-Vodič i sources.list</a></li>
+					    <li><a href="sys-admin-apt-hr.htm#apt-install">Instaliranje novih paketa</a></li>
+					    <li><a href="sys-admin-apt-hr.htm#apt-delete">Brisanje paketa</a></li>
+					    <li><a href="sys-admin-apt-hr.htm#apt-downgrade">Downgrading  / Hold jednog paketa</a></li>
+					    <li><a href="sys-admin-apt-hr.htm#apt-cache">Tražiti Paket sa apt-cache</a></li>
+					    <li><a href="sys-admin-apt-hr.htm#gui-pacsea">Tražiti Paket sa Grafičkim korisničkim sučelju</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-hr.htm#kern-upgrade">Obnoviti kernel &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-hr.htm#kern-remove">Uklanjanje kernela</a></li>
+					    <li><a href="sys-admin-kern-upg-hr.htm#kern-upgrade">Obnoviti kernel</a></li>
+					    <li><a href="sys-admin-kern-upg-hr.htm#dmakms">Instalirati kernel modula dinamički sa dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-hr.htm#apt-upgrade">Obnoviti instaliran sistem -  dist-upgrade - Pregled &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-hr.htm#live-cd-upgrade">Obnoviti sa Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-hr.htm#approx">dist-upgrade od više računala na LAN</a></li>
+					    <li><a href="sys-admin-apt-hr.htm#apt-upgrade">Obnoviti instaliran sistem -  dist-upgrade - Pregled</a></li>
+					    <li><a href="sys-admin-apt-hr.htm#du-st">Obnoviti instaliran sistem -  dist-upgrade - Koraci</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-hr.htm">Sistem Administracija</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-hr.htm#bios-prep">Obnoviti BIOS sa FreeDOS</a></li>
+		<li><a href="vir-rkits-hr.htm#virus-rkits">Virus i Rootkit skeneri</a></li>
+		<li><a href="hd-install-hr.htm#adduser">Dodati nove korisnike &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-hr.htm#adduser">Dodati nove korisnike</a></li>
+					    <li><a href="sys-admin-gen-hr.htm#pw-lost">Izgubljena root lozinka, nova lozinka</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-hr.htm#start-services">Services and init runlevels &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-hr.htm#start-services">Servise aktivirati/deaktivirati</a></li>
+					    <li><a href="sys-admin-gen-hr.htm#init">aptosid runlevels - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-hr.htm#rsync">Sigurnosne kopije sistema &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-hr.htm#rdiff">Sigurnosne kopije sa rdiff</a></li>
+					    <li><a href="sys-admin-rsync-hr.htm#rsync">Sigurnosne kopije sa rsync</a></li>
+					    <li><a href="home-hr.htm#home-bu">Premještanje /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-hr.htm#fonts">CUPS, pisma i zvuk &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-hr.htm#fonts">Pisma</a></li>
+					     <li><a href="sys-admin-gen-hr.htm#cups">CUPS - Sistem za tiskanj</a></li>
+					     <li><a href="sys-admin-gen-hr.htm#sound">Sound Mikseri</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-hr.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-hr.htm#mbr-over-grub2">Grub2 - MBR Overwritten</a></li>
+					    <li><a href="sys-admin-grub2-hr.htm#multi-os">Grub2 - Dual i Multibooting</a></li>
+					    <li><a href="sys-admin-grub2-hr.htm#grub1-grub2">Grub2 - Obnoviti iz Grub1</a></li>
+					    <li><a href="sys-admin-grub2-hr.htm#grub2">Grub2 - Pregled</a></li>
+					</ul>
+					</li>
+			</ul>
+		</li>
+	</ul>
+<!-- menu ends here --> </div>
+<div id="main-page">
+	<div class="divider" id="Inst-prep">
+			<h2 id="top-header">Priprema za HD instalaciju </h2>
+							<p  class="highlight-2">Za normalan korištaj preporučujemo ext4 file-sistem; to je glavni file-sistem za aptosid i dobro podržavan.</p>
+
+							<p><span class="highlight-3">Prije instalacije molimo vas, izvucite sve usb-stickove, kamere, itd.</span>. <a href="hd-install-opts-hr.htm">Instaliranje na USB uređaje treba više pripravka.</a>  Možete editirati instaler datoteku: <span class="highlight-3">~/.sidconf</span>, i tako koristiti druge file-sisteme ili instaliranje na više particija, na primjer separatna /home particija</p>
+
+							<p class="highlight-3">Jako preporučujemo da imate  posebnu particiju za podatke.  U slučaju nesreće, stabilnost i sigurnost vaših podataka ne možete platiti s novcem.</p>
+
+							<p>Zato je vaš $HOME mjesto gdje osnovne konfiguracije aplikacija su memorirane. Ili da kažemo da drugi način, direktorij za aplikacije da upišu postavke.</p>
+
+					<h6>Re-instaliranje aplikacija da instalirate ili duplicirate drugo računalo</h6>
+							<p>Da napravite listu vaših instaliranih programa, da duplicirate instaliranu bazu na drugo računalo, ili možda ako morate reinstalirati zbog bilo kojeg razloga, u konzoli</p>
+<pre>
+dpkg -l|awk '/^ii/{ print $2 }'|grep -v -e ^lib -e -dev -e $(uname -r) >/home/username/installed.txt
+</pre>
+							<p>Onda kopirajte text datoteku na usb stick ili drugi medij koja ja vama pri ruci.</p>
+
+							<p>Na novom računalu kopirajte datoteku u $HOME i koristite listu kao referenciju da instalirate vaše potrebne aplikacije.</p>
+
+
+					<h5>RAM i Swap</h5>
+
+							<p>Na računalima s manje nego 512 MB RAM morate imati swap-particiju. Veličina ne bi trebala biti manja nego 128 mb (cfdisk-output-u ne smijete vjerovati, zato sto računa sa bazom 10), više nego 1 GB swap je uvijek u redu.</p>
+
+							<p class="highlight-1">Pogledajte molimo vas ovdje: <a href="part-gparted-hr.htm">Particijoniranje vašeg hard-diska</a></p>
+
+							<p><span class="highlight-2">UVIJEK OSIGURAJTE SVOJE PODATKE! uključujući favorite i emajle!</span> See <a href="sys-admin-rdiff-hr.htm#rdiff">Back-Up with rdiff</a> and <a href="sys-admin-rsync-hr.htm#rsync">Back-Up with rsync</a>. Another option is sbackup (needs installing).</p>
+							<p>Instalacija na hard-disk je puno udobnija i puno brža, nego da radite s Live-CD.</p>
+
+							<p>Kao prvo, morate postaviti redoslijed za start u BIOS na CD-ROM. Na većinom računala možete uči u BIOS-setup s pritiskom na [del] pri startu (s nekim BIOS-verzijama možete izabrati boot uređaj pri startu, s AMI-BIOS, s F11 ili F8).</p>
+
+							<p>aptosid bih trebao startovati u većinom slučaja. Ako ne, možete koristiti bootopcije, (zvani cheatcodes) koje možete upisati u naredbenu crtu boot menadžera. Korištaj boot parametara (na primjer za monitor rezoluciju ili jezik selekciju možete uštedjeti puno vremena s post-install konfiguracijom).<span class="highlight-3"> (Na primjer F4 da izaberete vaš jezik kad ste pitani u boot-up stanju Live-CDa)</span> </p>
+
+							<p class="highlight-1">Pogledajte molimo vas ovdje: <a href="cheatcodes-hr.htm">Cheatcodes</a> i  <a href="cheatcodes-vga-hr.htm">VGA rezolucije</a></p>
+
+			<h2>Choosing the language for your installation</h2>
+				<h6><span class="highlight-3">Language Installs with KDE-full </span></h6>
+
+							<p>Select your main language from the <span class="highlight-2">grub menu (F4)</span> in the <span class="highlight-3">kde-full release</span>, to install the localisations for the desktop and many applications while booting. </p>
+
+							<p>This ensures they are also present after installing aptosid, while only installing the required languages for the given system. The amount of memory required for this feature depends on the language and aptosid may refuse to install the given language packs automatically with insufficient RAM and the boot sequence will be continued in English language but with the desired locales settings (currency, date and time format, keyboard charsets). 1 GB memory or more should be safe for all supported languages, which are:</p>
+
+							<p>
+   							Default - Deutsch (German) <br />
+							Default - English (English-US)<br />
+							*Čeština (Czech)<br />
+    							*Dansk (Danish)<br />
+    							*Español (Spanish)<br />
+    							*English (GB)<br />
+    							*Français (French)<br />
+    							*Italiano (Italian)<br />
+    							*Nihongo (Japanese)<br />
+    							*Nederlands (Dutch)<br />
+							*Polski (Polish)<br />
+    							*Português (Portuguese BR and PT)<br />
+    							*Română (Romanian)<br />
+    							*Русский (Russian)<br />
+							</p>
+
+   							<p>The language selection depends on the availability of aptosid-manual translations, get involved to add your language.</p>
+
+					<h6><span class="highlight-3">Other Language installs with KDE-lite </span></h6>
+						<ol>
+							<li>Select your main language from the <span class="highlight-2">gfxboot menu (F4)</span>. (See also <a href="cheatcodes-hr.htm#cheatcodes">aptosid specific Live-CD Cheatcodes</a>). The Language files themselves are not on the Live-CD so the system will fall back to default English. However, this will make the correct language configuration needed for your preferred language and therefore no need to make any changes into the system, aside from the installation of the missing language files.</li>
+
+							<li> Start the installation.</li>
+
+							<li>Install to HD and reboot.</li>
+
+							<li>After HD install, install the language of your choice and applications via apt-get.</li>
+						</ol>
+
+					<h6>First Time boot up to the HD</h6>
+							<p><span class="highlight-3">After booting up for the first time you will discover that aptosid has forgotten its network configuration</span>. The network can be comfortably set up from <a href="internet-connecting-hr.htm">Kmenu > Internet > Ceni</a>. For additional WIFI/WLAN roaming<a href="inet-wpagui-hr.htm"> please read this.</a></p>
+
+	</div>
+	<div class="divider" id="Installation">
+			<h2>aptosid-Instaler</h2>
+
+							<p><b>1.</b>Instaler možete startovati sa <span class="highlight-3"> Desktop icon, KMenu > System>aptosid-installer</span>, ili iz konzole koristeći:</p>
+<pre>
+sux
+install-gui.bash
+</pre>
+		<div class="screenshot"><img src="../lib/images-hr/installer-hr/installer1-hr.png" title="Welcome tab - aptosid Installer" alt="aptosid-Instaler1" /></div>
+	<div class="spacer02"></div>
+							<p><b>2.</b> Poslije čitanja, i najvažnije, poslije razumijevanja, pozornog teksta idemo dalje s izborom particije. </p>
+
+		<div class="screenshot"><img src="../lib/images-hr/installer-hr/installer2-hr.png" title="Partitioning tab - aptosid Installer" alt="aptosid-Instaler2" /></div>
+
+							<p>Now choose where the installation is supposed to go to and we establish the mount points. Partitions for which we do not establish mount points for are mounted by the installer (the swap partition will be automatically mounted, when the system starts). </p>
+
+							<p><span class="highlight-2">NOTE: If you have your root partition ('/") formatted with your preferred file system, you can uncheck the "format with" checkbox, provided that the drop box reflects the file system of your choice.</span></p>
+
+							<p>Sad se odlučimo gdje treba da bude instaliran i postavimo mount-points. Particije za koje ne postavite mount-point, instaler će postaviti. Ovdje možete izabrati root-particiju ("/") za vašu aptosid instalaciju. <span class="highlight-3">Sad isto možete kreirati particiju za podatke.</span> <span class="highlight-1"> A 'left-click' will activate your choices for each partition.</span></p>
+
+				<p class="highlight-3">Jeste li osigurali vaše podatke?</p>
+
+							<p>If you haven't partitioned your hard drive yet, click on the <span class="highlight-3">Execute</span> button in the <span class="highlight-3">Start Part.-manager</span> panel, also have a look at <a href="part-gparted-hr.htm#partition">Partitioning your HD using Gparted</a> or, if you want to use the shell, read <a href="part-cfdisk-hr.htm#disknames">Partitioning your HD</a></p>
+<pre>
+sux
+gparted
+</pre>
+		<p>ili</p>
+<pre>su
+cfdisk
+</pre>
+	<div class="spacer02"></div>
+							<p><b>3.</b>Kao boot-menadžera aptosid koristi Grub, zato instalirate <b>Grub na MBR</b>! Ako ovdje nešto drugo izaberete, trebate dobro znati što radite. Grub prepozna druge instalirane operativne sustave (kao Windows) i upiše ih u boot meni. </p>
+
+							<p>Grub prepozna druge instalirane oprativne sustave (na primjer Windows) i upiše ih u boot meni. </p>
+
+							<p>Također možete promjeniti vermensku zonu.</p>
+
+		<div class="screenshot"><img src="../lib/images-hr/installer-hr/installer3-hr.png" title="Grub/Timesone tab - aptosid Installer" alt="grub-to-mbr" /></div>
+	<div class="spacer02"></div>
+							<p><b>4.</b> Dalje idemo s korisnikom, s lozinkom i root-lozinkom (dobro ih zapamtite!). Molimo vas ne odaberite jednostavne lozinke. To add additional users, do so after installation via the terminal with <a href="hd-install-hr.htm#adduser"> adduser.</a>.</p>
+
+		<div class="screenshot"><img src="../lib/images-hr/installer-hr/installer4-hr.png" title="User/Password tab - aptosid Installer" alt="choosing-pw" /></div>
+	<div class="spacer02"></div>
+							<p><b>5.</b> Sad izaberite ime instalacije (možete je nazvati kako god hoćete, samo pazite da 'Hostname: hostname treba da se sastoji samo od slova (i brojki) i ne smije početi s brojem'.</p>
+
+							<p>After that you can choose whether ssh shall start automatically or not.</p>
+
+		<div class="screenshot"><img src="../lib/images-hr/installer-hr/installer5-hr.png" title="Network tab - aptosid Installer" alt="hostname" /></div>
+
+	<div class="spacer02"></div>
+							<p><b>6.</b> Ovo zadnje pitanje je vaša zadnja šansa da provjerite postavke koje ste napravili. Pročitajte ih dobro, onda kliknite na <span class="highlight-3">Spremi konfiguraciju i dalje</span>..</p>
+
+		<div class="screenshot"><img src="../lib/images-hr/installer-hr/installer6-hr.png" title="Installation tab - aptosid Installer" alt="installation-config" /></div>
+
+							<p>U ovom stanju je moguče da promjenite/editirate config datoteku i da startujete instalaciju sa promjenenom konfiguracijom. Instaler ne provjerava više promjene <span class="highlight-3">zato ne smijete kliknuti na 'back' na instaleru inače će se izbrisati manualne promjene.</span> </p>
+
+							<p>Editiranje (<span class="highlight-3">~/.sidconf</span>) ja samo za iskustvene linux-korisnike, koje hoče da upišu svoje vlastite/specijalne promjene u config-datoteku ili im je potrebna specijalnal šema za particije na hard-disku, koju bih instaler odbaciju sa automatskim provjerama procesa.</p>
+
+							<p><span class="highlight-2">Should the installer detect that you are trying to install over an old $HOME  it will warn you and will not let you proceed with the installation until you choose another user name.</span></p>
+
+		<div class="screenshot"><img src="../lib/images-hr/installer-hr/installer7-hr.png" title="Begin Installation - aptosid Installer" alt="Begin Installtion" /></div>
+
+							<p>Da započnete instalaciju kliknite na <span class="highlight-3">Startuj Instalaciju</span> Cijelome procesu treba, ovisno o vašem sistemu, oko 5 - 15 minuta, na starjim računalima može da traje do 60 minuta.</p>
+
+							<p>Ako napredna traka stoji nekoliko vremena, ne prekidajte, dajte procesu mal više vremena.</p>
+
+							<p>Gotovo! Izvadite CD. Sad restartujte u vašu novu HD instalaciju.</p>
+
+
+
+	</div>
+
+	<div class="divider" id="first-hd-boot">
+			<h2>Prvi Bootup</h2>
+
+							<p class="highlight-4">Poslije prvog starta vidjeti će te da je aptosid zaboravio konfiguraciju umrežavanja. Tako da ga morate opet postaviti (WLAN, Modem, ISDN,...).</p>
+
+							<p>Ko god je postavio adrese umrežavanja automatski sa DHCP, koristeći DSL-router, mora ga reaktivirati s:</p>
+<pre >
+ceni
+</pre>
+
+							<p>Opredijeljeni alati možete naći u <i>Kmenu>aptosid>Internet>ceni</i>. Isto odnosite se na: <a href="internet-connecting-hr.htm">Internet i umrežavanje</a></p>
+
+							<p>To add an existing aptosid $home partition to new installation fstab needs to be altered, refer to <a href="home-hr.htm#home-move">Moving /home</a>.</p>
+
+							<p> <span class="highlight-2">Do not use or share an existing $home from another distribution as the $home configuration files in a home directory will conflict if you share the same username between differing distributions.</span></p>
+
+	</div>
+	<div class="divider" id="adduser">
+	<h2>To add users to your installation</h2>
+							<p>To add a <span class="highlight-3">new user</span> with automatic group permissions granted, as root: </p>
+<pre>
+adduser &lt;newuser&gt;
+</pre>
+							<p> Just press enter, it should take care of the complexities You will get asked to type in the password twice</p>
+
+							<p>aptosid specific icons (like the manual and IRC icons) need adding manually.</p>
+
+							<p>To delete a user</p>
+<pre>
+deluser &lt;user&gt;
+</pre>
+							<p>Read</p>
+<pre>
+man adduser
+man deluser
+</pre>
+							<p><span class="highlight-3">kuser</span> can create new user as well, however you will need to manually adjust the group permissions for that user.</p>
+
+	</div>
+	<div class="divider" id="sux">
+	<h2>O sux</h2>
+							<p>Razne naredbe potrebaju root privilegije. Da to možete obaviti upišite u konzoli:</p>
+
+<pre>
+sux
+</pre>
+
+							<p>I ako je javna naredba za root privilegije 'su' koristeči <span class="highlight-3">sux</span> umijesto toga će vam omogučiti da izvodite GUI / X11 aplikacije iz naredbene crte i dopušta root korisniku da startuje grafičke aplikacije, <span class="highlight-3">sux</span> je omotač oko standardne su naredbe koji transferira vaše X vjerodajnice na namijenenog korisnika.</p>
+
+							<p>Some KDE applications require <span class="highlight-3">dbus-launch</span> in front of the application:</p>
+<pre>
+dbus-launch &lt;Application&gt;
+</pre>
+
+							<p>Primjer za izvođenje X11 aplikacije via sux je da koristite tekst editor kao kwrite ili kate editirate root datoteku, da particijonirate sa gparted ili Xapp menadžer za datoteke kao konqueror. Isto je moguče da promijenite root datoteke sa desnim klikom i izabiranjem 'edit-as-root', i upisanjem vaše root lozinke, to će pozvati kdesu za pozadinsko izvršavanje.</p>
+							<p>Unlike 'sudo', it  means that someone can't just come along and type 'sudo' and make potentially damaging changes to your system.</p>
+							<p class="highlight-2">UPOZORONJE: Dokle ste prijavljeni kao root, sistem vas neče zaustaviti kad izvršavate potencijalno opasne stvari kao brisanje važnih datoteka itd., morate biti apsolutno sigurni što radite, zato što je moguče da pokvarite cijeli sistem.</p>
+							<p class="highlight-2">Po nikavim uvijetima ne izvodite aplikacije kao root u konzoli/terminalu koje standardni korisnik koristi svaki dan, da bude produktivan, kao salnje email, kreiranje tabela ili surfanje u internetu i tako dalje.</p>
+	</div>
+	<div id="rev">Content last revised 14/08/2010 0100 UTC</div>
+</div>
+</body>
+</html>

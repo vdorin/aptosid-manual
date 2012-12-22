@@ -1,0 +1,573 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="hr">
+<head>
+	<title>aptosid Priručnik - SSH</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision damir 28/10/2007 1700 UTC -->
+<div id="menu"> <!-- menu starts here hr lang maintainer cobra -->
+<!--aptosid Operating System Manual menu-version-00.01.2010.09.17 -->
+<!-- menu last updated by bluewater 2010.09.17 0730 hrs UTC -->
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="aptosid.com, forum and wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-hr.htm#search-on"><img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" /> Traži Online Offline</a> </li>
+		<!--<li><a href="http://manual.aptosid.com/meta-manual">Izbor softvera zajednice</a></li>-->
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Izaberite drugi jezik - Choose another language" alt="lang-switch" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-hr.htm">aptosid OS priručnik</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-hr.htm#welcome-gen">aptosid OS priručnik &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-hr.htm#cred-team">Zahvale</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-hr.htm#how-to">Kako koristiti ovaj priručnik &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-hr.htm#how-to">Kako koristiti ovaj priručnik</a></li>
+					  <li><a href="welcome-hr.htm#table-contents">Indeks</a></li>
+					</ul>
+					</li>
+		<li><a href="help-hr.htm#help-gen">Pomoč &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-hr.htm#help-gen">Gdje možete dobiti pomoć</a></li>
+					  <li><a href="help-hr.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-hr.htm#welcome-quick">aptosid Quick Start</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-hr.htm">ISO Sadržaj, Izdanje, Download Mirrors i prženje</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-hr.htm#cd-content">ISO sadržaj i sistemski zahtjevi &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-hr.htm#rolling">Release Notes</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-hr.htm#download-aptosid">aptosid Mirrors, ISO download i prženje &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-hr.htm#md5">md5 zbroj za provjeru</a></li>
+					  <li><a href="cd-dl-burning-hr.htm#burn-nero">Prženje s Windows</a></li>
+					  <li><a href="cd-dl-burning-hr.htm#burn-linux">Prženje s Linux</a></li>
+					  <li><a href="cd-no-gui-burn-hr.htm#burning-no-gui">burniso script</a></li>
+					  <li><a href="cd-no-gui-burn-hr.htm#burn-no-gui-gen">Prženje bez GUI-a</a></li>
+					  <li><a href="cd-dl-burning-hr.htm#download-aptosid">aptosid Download Mirrors</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-hr.htm">Live Modus</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-hr.htm#rootpw">Root-lozinka na aptosid-Live-ISO</a></li>
+				<li><a href="live-mode-hr.htm#live-cd-installsoft">Instalirati softver kada ste na Live-ISO</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-hr.htm">Terminal / Konzola</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-hr.htm#term-kon"> Terminal / Konzola &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-hr.htm#term-kon"> Terminal / Konzola</a></li>
+					  <li><a href="term-konsole-hr.htm#cli-help">Pomoć za naredbenu crtu</a></li>
+					  <li><a href="help-hr.htm#init3-tools">Poznati alate u tekstualnom modusu (tty) - init 3</a></li>
+					  <li><a href="term-konsole-hr.htm#term-cmds">Lista naredbi za Linux Terminal</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-hr.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-hr.htm">CheatCodes</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-hr.htm#cheatcodes">aptosid specifični Live-ISO Cheatcodes</a></li>
+				<li><a href="cheatcodes-hr.htm#cheatcodes-linux">Linux općeniti Cheatcodes</a></li>
+				<li><a href="cheatcodes-vga-hr.htm#vga">VGA Codes</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-hr.htm">Particijonirati vaš Hard-Disk</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-hr.htm#hd-ntfs3g">Pisanje na NTFS particiju sa NTFS-3g</a></li>
+			<li><a href="part-gparted-hr.htm#partition">Particijonirati sa GUI &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-hr.htm#partition">Particijonirati vaš HD koristeći GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-hr.htm#ntfs">Mijenjanje veličine NTFS particija koristeći GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-hr.htm#partition">Particijonirati sa naredbenom crtom &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-hr.htm#partition">Particijonirati vaš HD koristeći cfdisk</a></li>
+					    <li><a href="part-cfdisk-hr.htm#formating">Formatiranje particija poslije particijoniranjem sa cfdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-hr.htm#part-example">Osnove particioniranja &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-hr.htm#part-example">Primjeri veliparticije </a></li>
+					  <li><a href="part-uuid-hr.htm#uuid">UUID, označivanje particija i fstab</a></li>
+					  <li><a href="part-cfdisk-hr.htm#disknames">Namjestiti HD ime ukratko</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-hr.htm">Installation options - HD, USB, VM</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-hr.htm#Inst-prep">Instalacijske opcije &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-hr.htm#Inst-prep">Priprema za instalaciju</a></li>
+					  <li><a href="hd-install-hr.htm#Installation">Instaliranje na vaš HD</a></li>
+					  <li><a href="hd-install-hr.htm#first-hd-boot">Prvi Boot-Up</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-hr.htm#fromiso">Boot sa fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-hr.htm#fromiso">Boot sa fromiso - Pregled</a></li>
+					  <li><a href="hd-install-opts-hr.htm#fromiso-grub-leg">Boot sa fromiso sa grub-legacy</a></li>
+					  <li><a href="hd-install-opts-hr.htm#grub2-fromiso">Boot sa fromiso sa Grub 2</a></li>
+					  <li><a href="hd-install-opts-hr.htm#fromiso-persist">fromiso i persist</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-hr.htm#usb-hd">Instaliranje na USB uređaje &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-hr.htm#usb-hd">Instaliranje na USB-HD - aptosid specifično - aptosid-on-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-hr.htm#raw-usb">Pisanje aptosid na USB / SSD stick sa svim Linux, MS Windows ili Mac OS X sustavima</a></li>
+					</ul>
+					</li>
+		  <li><a href="nbdboot-hr.htm#nbd1">Dizanje aptosid preko mreže</a></li>
+		  <li><a href="hd-install-vmopts-hr.htm#vmopts">Opcije instalacije na virtualni stroj</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="hw-dev-hw-dri-hr.htm">Grafičke kartice, hardver, Xorg, sredstvo i pogonitelji</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-hr.htm#mon-res">Rezolucije Monitora  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-hr.htm#mon-res">Rezolucije Monitora i Monitori</a></li>
+					  <li><a href="hw-dev-mon-hr.htm#xrandr">Dual Monitori i xrandr</a></li>
+					  <li><a href="hw-dev-mon-hr.htm#mon-binary">Dual Monitori (koristeči binarne pogonitelje)</a></li>
+					</ul>
+					</li>
+		<li><a href="hw-dev-hw-dri-hr.htm#non-free-3d">Grafičke kartice sa vlasničkim pogoniteljima &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="hw-dev-hw-dri-hr.htm#non-free-3d">Binarni, non-free pogonitelji za: Nvidia &amp; xorg.conf</a></li>
+					  <li><a href="hw-dev-hw-dri-hr.htm#non-free-3d-2">non-free pogonitelji za ATI, Radeon i druge</a></li>
+					</ul>
+					</li>
+			  <li><a href="hw-dev-hw-dri-hr.htm#non-free-firmware">Hardver kojoj trebaju non-free firmware pogonitelji</a></li>
+			  <li><a href="hw-dev-hw-dri-hr.htm#non-free">Dodati non-free u Sources List</a></li>
+			  <li><a href="hw-dev-hw-dri-hr.htm#native-nv-ati">FOSS xorg pogonitelji za nVidia, ATI, Radeon, Intel &amp; xorg.conf</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-kde-hr.htm">Window-Menadžer</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-kde-hr.htm">Window-Menadžeri &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-xfce-hr.htm#xfce-notes">Korisni Xfce ekstra</a></li>
+					    <li><a href="wm-kde-hr.htm#install-add">Korisne ekstra KDE aplikacije</a></li>
+					    <li><a href="wm-kde-hr.htm#desk-freeze">Desktop je smrznut</a></li>
+					    <li><a href="wm-kde-hr.htm#kde-login">Ne mogu se prijaviti u KDE</a></li>
+					    <li><a href="wm-kde-hr.htm#ch-th">Promjeni temu</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-kde-hr.htm#dm">Menadžeri za Prikaz - dm</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="internet-connecting-hr.htm">Internet, WiFi, LAN i umrežavanje</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-hr.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-hr.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-hr.htm#serv-ftp">FTP klijenti</a></li>
+					    <li><a href="lamp-apache-hr.htm#serv-sec">Sigurnosne protokole</a></li>
+					    <li><a href="lamp-apache-hr.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-hr.htm#serv-mysql">MySQL Postavke</a></li>
+					    <li><a href="lamp-ppp-hr.htm#serv-php">PHP u Apache</a></li>
+					    <li><a href="ntp-server-hr.htm#ntp-server">Postavke poslužitelja za vrijeme</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-hr.htm#tor">Firewall i privatnost &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-hr.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-hr.htm#privoxy">Privoxy</a></li>
+					    <li><a href="internet-connecting-hr.htm#firewalls">Firewall</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-hr.htm#ssh-x">SSH i Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-hr.htm#setup">Postavke Samba-poslužitelja</a></li>
+						  <li><a href="samba-hr.htm#configure">Konfiguriranje SAMBA (Windows)</a></li>
+						  <li><a href="ssh-hr.htm#ssh-fs">SSH Priključivanje udaljenih računala</a></li>
+						  <li><a href="ssh-hr.htm#ssh-x">X-Window aplikacije via SSH</a></li>
+						  <li><a href="ssh-hr.htm#ssh-f">GUI SSH sa Konqueror</a></li>
+						  <li><a href="ssh-hr.htm#ssh-w">SSH X-Forwarding sa Windows-PC</a></li>
+						  <li><a href="ssh-hr.htm#ssh">SSH i sigurnost</a></li>
+					</ul>
+					</li>
+		<li><a href="internet-connecting-hr.htm#netcardconfig">WIFI &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="internet-connecting-hr.htm#netcardconfig">Ulaz u Internet - Ceni</a></li>
+						    <li><a href="inet-wpagui-hr.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-hr.htm#net-set1">WiFi - postaviti za WiFi Roaming</a></li>
+						    <li><a href="internet-connecting-wpa-hr.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-hr.htm#hotswitch">Prebacivanje između WiFi i kabela</a></li>
+					</ul>
+					</li>
+		<li><a href="internet-connecting-hr.htm#netcardconfig">Ožičene veze &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="internet-connecting-hr.htm#dial-mod">56k Modemi</a></li>
+						    <li><a href="internet-connecting-hr.htm#netcardconfig">Ulaz u internet - Ceni</a></li>
+					</ul>
+					</li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-hr.htm">Paket menadžment i dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-hr.htm#apt-cook">APT-Vodič i sources.list &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-hr.htm#apt-cook">APT-Vodič i sources.list</a></li>
+					    <li><a href="sys-admin-apt-hr.htm#apt-install">Instaliranje novih paketa</a></li>
+					    <li><a href="sys-admin-apt-hr.htm#apt-delete">Brisanje paketa</a></li>
+					    <li><a href="sys-admin-apt-hr.htm#apt-downgrade">Downgrading  / Hold jednog paketa</a></li>
+					    <li><a href="sys-admin-apt-hr.htm#apt-cache">Tražiti Paket sa apt-cache</a></li>
+					    <li><a href="sys-admin-apt-hr.htm#gui-pacsea">Tražiti Paket sa Grafičkim korisničkim sučelju</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-hr.htm#kern-upgrade">Obnoviti kernel &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-hr.htm#kern-remove">Uklanjanje kernela</a></li>
+					    <li><a href="sys-admin-kern-upg-hr.htm#kern-upgrade">Obnoviti kernel</a></li>
+					    <li><a href="sys-admin-kern-upg-hr.htm#dmakms">Instalirati kernel modula dinamički sa dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-hr.htm#apt-upgrade">Obnoviti instaliran sistem -  dist-upgrade - Pregled &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-hr.htm#live-cd-upgrade">Obnoviti sa Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-hr.htm#approx">dist-upgrade od više računala na LAN</a></li>
+					    <li><a href="sys-admin-apt-hr.htm#apt-upgrade">Obnoviti instaliran sistem -  dist-upgrade - Pregled</a></li>
+					    <li><a href="sys-admin-apt-hr.htm#du-st">Obnoviti instaliran sistem -  dist-upgrade - Koraci</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-hr.htm">Sistem Administracija</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-hr.htm#bios-prep">Obnoviti BIOS sa FreeDOS</a></li>
+		<li><a href="vir-rkits-hr.htm#virus-rkits">Virus i Rootkit skeneri</a></li>
+		<li><a href="hd-install-hr.htm#adduser">Dodati nove korisnike &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-hr.htm#adduser">Dodati nove korisnike</a></li>
+					    <li><a href="sys-admin-gen-hr.htm#pw-lost">Izgubljena root lozinka, nova lozinka</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-hr.htm#start-services">Services and init runlevels &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-hr.htm#start-services">Servise aktivirati/deaktivirati</a></li>
+					    <li><a href="sys-admin-gen-hr.htm#init">aptosid runlevels - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-hr.htm#rsync">Sigurnosne kopije sistema &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-hr.htm#rdiff">Sigurnosne kopije sa rdiff</a></li>
+					    <li><a href="sys-admin-rsync-hr.htm#rsync">Sigurnosne kopije sa rsync</a></li>
+					    <li><a href="home-hr.htm#home-bu">Premještanje /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-hr.htm#fonts">CUPS, pisma i zvuk &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-hr.htm#fonts">Pisma</a></li>
+					     <li><a href="sys-admin-gen-hr.htm#cups">CUPS - Sistem za tiskanj</a></li>
+					     <li><a href="sys-admin-gen-hr.htm#sound">Sound Mikseri</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-hr.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-hr.htm#mbr-over-grub2">Grub2 - MBR Overwritten</a></li>
+					    <li><a href="sys-admin-grub2-hr.htm#multi-os">Grub2 - Dual i Multibooting</a></li>
+					    <li><a href="sys-admin-grub2-hr.htm#grub1-grub2">Grub2 - Obnoviti iz Grub1</a></li>
+					    <li><a href="sys-admin-grub2-hr.htm#grub2">Grub2 - Pregled</a></li>
+					</ul>
+					</li>
+			</ul>
+		</li>
+	</ul>
+<!-- menu ends here --> </div>
+<div id="main-page">
+	<div class="divider" id="ssh">
+			<h2 id="top-header">SSH</h2>
+
+							<p>U računarstvu, Secure Shell ili SSH je set od standarda i asociranih mrežnih protokola koji omogućavaju da možete osnivati siguran kanal između lokalnim i udaljenim računalima. Koristi public-key kriptografiju da identificirah udaljeno računalo i (opcionalno) da omogući udaljenom računalu da identificirah korisnika. SSH nudi tajnost i integritet podataka koji su mjenanji između ta dva računala koristeći enkripciju i message authentication codes (MACs). SSH je tipično korišten da se prijavite na udaljenom računalu i da izvodite naredbe, ali isto podržava tuneliranje, prosljeđivanje neosnovanih TCP porta i X11 veza; može da prijenosi datoteke koristeći povezane SFTP ili SCP protokole. SSH poslužitelj, kao standard, sluša na standard TCP port 22. <a href="http://en.wikipedia.org/wiki/Secure_Shell"> Upućen od wikipedia</a></p>
+
+	</div>
+	<div class="divider" id="ssh-s">
+			<h2>Aktiviranje dobrih sigurnosnih protokola za SSH</h2>
+
+							<p>Dopustiti root login, via ssh, nije sigurno. Mi inače nećemo da se standardno prijavite kao root korisnik, debian treba da bude siguran, i ne nesiguran niti hoćemo da damo korisnicima 10 minuta za brz dictionary password attack na našoj SSH prijavi, na vama je da ograničite vrijeme i broj pokušavanja!</p>
+
+ 							<p>Da pomognete da napravite ssh više sigurno, jednostavno otvorite vašeg omiljenog tekst editora s root privilegijama, i otvorite ovu datoteku:</p>
+<pre>
+/etc/ssh/sshd_config
+</pre>
+							<p>Onda lokalizirate uvredljive stavke, i promijenite ih.</p>
+
+				<h6>Uvredljive stavke koje trebate da lokalizirate su sljedeće:</h6>
+
+ 							<p><span class="highlight-3">Port &lt;željeni port&gt;:</span> To mora biti postavljeno na točan port na koji prosljeđivate sa vašeg routera. Port za prosljeđivanje mora isto tako biti postavljen na vašem routeru. Ako ne znate kako to trebate obaviti, možda ne bi trebali koristiti ssh udaljeno. Debian postavi standardno na port 22, kako god, preporučeno je da koristite port izvan standardnog dometa za ispitivanje. Recimo da koristimo 5874 i tako upišemo:</p>
+<pre>
+Port 5874
+</pre>
+ 							<p><span class="highlight-3">ListenAddress &lt;ip računala ili mrežnog međusklopa&gt;:</span> Sad, naravno, kad prosljeđivate port sa vašeg routera, morate da imate statičnu ip adresu na mreži, ako ne koristite lokalnog dns poslužitelja, ali ako radite nešto tako komplicirano i trebaju vam ti smjeri onda ste možda napravili veliku pogrešku. Tako da je postavimo na nešto slično kao: </p>
+<pre>
+ListenAddress 192.168.2.134
+</pre>
+							<p>Zatim, Protokol 2 je već debian standard, ali provjerite, da se osigurate:</p>
+
+ 							<p><span class="highlight-3">LoginGraceTime &lt;dopuštene sekunde za prijavu&gt;:</span> To je postavljeno na apsurdan standard od 600 sekundi. Sigurno vam ne treba 10 minuta za upisanje korisničkog imena i lozinke, tako da mi to sada popravimo:</p>
+<pre>
+LoginGraceTime 45
+</pre>
+ 							<p>Sad imate 45 sekundi da se prijavite i hackeri nemaju 600 sekundi za svaki pokušaj da pronađu vašu lozinku</p>
+
+							<p><span class="highlight-3">PermitRootLogin &lt;yes&gt;:</span> Zašto debian postavi PermitRootLogin na 'yes', je nerazumljivo i tako ćemo mi to postaviti na 'no'</p>
+<pre>
+PermitRootLogin no
+</pre>
+
+<pre>
+StrictModes yes
+</pre>
+ 							<p><span class="highlight-3">MaxAuthTries &lt;xxx&gt;:</span> Broj pokušaja prijave, možete postaviti na 3 ili 4 pokušaja ali ne više</p>
+<pre>
+MaxAuthTries 2
+</pre>
+ 							<p>Možda morate dodati jednog od ovih predmeta ako ne postoje:</p>
+<pre>
+AllowUsers &lt;korisnička imena sa prostorima su dopuštena da ulaze via ssh&gt;
+</pre>
+ 							<p><span class="highlight-3">AllowUsers &lt;xxx&gt;:</span> Napravite ssh korisnika bez ikakvih prava koristeći adduser da dodate korisnika, i onda upišite ime ovdje, kao:</p>
+<pre>
+AllowUsers whomevertheuseris
+</pre>
+ 							<p><span class="highlight-3">PermitEmptyPasswords &lt;xxx&gt;:</span> dajte tom korisniku što dužu lozinku koja je nemoguća pogoditi u milijun godina to je jedini korisnik kojemu je dopušteno da se prijavi preko ssh. Kad ste unutra, onda možete se prijaviti kao root sa su:</p>
+<pre>
+PermitEmptyPasswords no
+</pre>
+							<p><span class="highlight-3">PasswordAuthentication &lt;xxx&gt;:</span> očito, za prijavu s lozinkom, ne sa ključnom prijavom, trebaju vam lozinke koje su napunjene osim ako koristite ključeve, ovo mora biti yes</p>
+<pre>
+PasswordAuthentication yes [osim ako koristite ključeve]
+</pre>
+							<p>Napokon:</p>
+<pre>
+/etc/init.d/ssh restart
+</pre>
+ 							<p>Sad imate više siguran ssh, ne potpuno siguran samo bolje, uključujući kreiranje korisnika samo za ssh s adduser</p>
+
+							<p><span class="highlight-3">Note:<span> If you get an error message and ssh refuses to connect you, go to your $HOME and look for a hidden folder called <span class="highlight-3">.ssh<span> and delete the file called<span class="highlight-3"> known_hosts<span> and try again. This error mainly occurs when you have  dynamically set IP addresses (DCHP)</p>
+
+	</div>
+		<div class="divider" id="ssh-x">
+			<h2>Koristiti X Window aplikacije via mreže kroz SSH</h2>
+							<p>ssh -X allows you to log into a remote computer and have its graphical user interface X displayed on your local machine. As $user (and note the X is to be a capital):</p>
+<pre>
+$ ssh -X username@xxx.xxx.xxx.xxx (or IP)
+</pre>
+							<p>Enter the password for the username on the remote computer and run the X-application in the shell:</p>
+
+<pre>
+$ iceweasel OR oocalc OR oowriter OR kspread
+</pre>
+
+							<p>Some really slow network connections from your PC may benefit from having a level of compression to help speed transfers, therefore add an extra option, on fast networks it has the opposite effect:</p>
+<pre>
+$  ssh -C -X username@xxx.xxx.xxx.xxx (or IP)
+</pre>
+							<p>Read:</p>
+<pre>
+$man ssh
+</pre>
+
+							<p><span class="highlight-3">Note:<span> If you get an error message and ssh refuses to connect you, go to your $HOME and look for a hidden folder called <span class="highlight-3">.ssh<span> and delete the file called<span class="highlight-3"> known_hosts<span> and try again. This error mainly occurs when you have  dynamically set IP addresses (DCHP)</p>
+	</div>
+	<div class="divider" id="ssh-scp">
+			<h2>Copying files and directories remotely via ssh with scp</h2>
+
+							<p>scp uses the command line, (terminal/cli), to copy files between hosts on a network. It uses ssh authentication and security for data transfer, therefore, scp will ask for passwords or passphrases as required for authentication.</p>
+
+							<p>Assuming you have ssh rights to a remote PC or a server, scp allows you to copy partitions, directories or file, to and from that PC, to a specified location or destination of your choosing where you also have permissions. For example, this could include a PC or server you have the permission to access on your LAN, (or anywhere else in the world), to enable a transfer of data to a USB hard Drive connected to your PC.</p>
+
+							<p>You can recursively copy entire partitions and directories with the <span class="highlight-3">scp -r</span> option.  Note that scp -r follows symbolic links encountered in the tree traversal.</p>
+
+					<h3>Examples:</h3>
+							 <p><span class="highlight-3"> Example 1:</span> Copy a partition:</p>
+
+<pre>
+scp -r &lt;user&gt;@xxx.xxx.x.xxx:/media/disk1part6/ /media/diskXpartX/
+</pre>
+							 <p><span class="highlight-3"> Example 2:</span> Copy a directory on a partition, in this case a directory called photos in $HOME:</p>
+
+<pre>
+scp -r &lt;user&gt;@xxx.xxx.x.xxx:~/photos/ /media/diskXpartX/xx
+</pre>
+							 <p><span class="highlight-3">Example 3:</span> Copy a file from a directory on a partition, in this case a file in $HOME:</p>
+<pre>
+scp &lt;user&gt;@xxx.xxx.x.xxx:~/filename.txt /media/diskXpartX/xx
+</pre>
+							<p><span class="highlight-3">Example 4:</span> Copy a file on a partition:</p>
+<pre>
+scp &lt;user&gt;@xxx.xxx.x.xxx:/media/disk1part6/filename.txt /media/diskXpartX/xx
+</pre>
+
+							<p><span class="highlight-3">Example 5:</span> If you are already in the drive/directory that you wish to copy any directory or files to, use a '<span class="highlight-2"> <b>.</b> </span>' (dot) :</p>
+<pre>
+scp -r &lt;user&gt;@xxx.xxx.x.xxx:/media/disk1part6/filename.txt<span class="highlight-2"><b> .</b> </span>
+</pre>
+
+							<p><span class="highlight-3">Example 6:</span> To copy files from your PC/server to a another, (use <span class="highlight-3">scp -r</span> if copying a partition or a directory):</p>
+
+<pre>
+scp /media/disk1part6/filename.txt &lt;user&gt;@xxx.xxx.x.xxx:/media/diskXpartX/xx
+</pre>
+
+							<p>Read:</p>
+<pre>
+man scp
+</pre>
+
+	</div>
+		<div class="divider" id="ssh-w">
+			<h2>Udaljeni ulaz sa ssh s X-Forwarding od Windows-PC:</h2>
+
+							<p>* Povucite i pržite <a href="http://xlivecd.indiana.edu/">Cygwin XLiveCD</a><br />
+							* Ubacite CD u CD-ROM od Windows-PCa i pričekajte autorun.<br />
+							Kliknite "continue" dok se ne pokaže konzola i upišite:</p>
+<pre>
+ssh -X username@xxx.xxx.xxx.xxx
+</pre>
+      							<p>Bilješka: xxx.xxx.xxx.xxx je IP adresa od udaljenog linux računala ili njegov URL (na primjer dyndns.org account) i username je jedan korisnik koji egzistira na udaljenom računalu. Poslije uspješne prijave, izvodite "kmail" na primjer i pogledajte vaš  E-mail!</p>
+
+							<p>Važno: osigurajte sa da hosts.allow nema upis koji dopusti ulaz sa PCs iz druge mreže. Ako ste iza jedne NAT-Firewall ili routera osigurajte se da je prosljieđen port 22 na vašem linux računalu</p>
+	</div>
+		<div class="divider" id="ssh-f">
+			<h2>SSH sa Konqueror</h2>
+
+							<p>Konqueror i Krusader oboje mogu da koriste udaljene podatke, koristeći using <span class="highlight-3">sftp://</span> and uses the ssh protocol.</p>
+
+
+							<p>Kako radi:<br />
+							1) Open a new Konqueror window<br />
+							2) Enter into the address bar: <span class="highlight-3">sftp://username@ssh-server.com</span></p>
+
+
+							<p>Primjer 1: </p>
+<pre>
+sftp://aptosid1@remote_hostname_or_ip
+ (Bilješka: Jedan popup se pojavi koji vas pita za ssh lozinku, upišite je i kliknite na OK)
+</pre>
+							<p>Primjer 2: </p>
+<pre>
+sftp://username:password@remote_hostname_or_ip
+(U toj formi se <span class="highlight-3">NEĆE</span> pojaviti popup koji vas pita za lozinku, nego će te biti direktno spojeni.)
+</pre>
+							<p>Za LAN okolinu</p>
+<pre>
+sftp://username@10.x.x.x or 198.x.x.x.x
+(Bilješka: Popup će se otvoriti koji će vas pitati za vašu ssh lozinku, upišite je i kliknite OK)
+</pre>
+							<p>Ta Konqueror GUI SSH veza je sada inicijalizirana. S tim Konqueror prozorom, sad možete raditi s datotekama (kopiranje/pregledavanje) koje su na SSH poslužitelju kao da su na lokalnom direktoriju.</p>
+
+							<p class="highlight-3">NOTE: If you have set the ssh port to to use another port, other than the default of 22, you need to specify the port that sftp is to use:</p>
+<pre>
+sftp://user@ip:port
+</pre>
+							<p>'user@ip:port' is standard sytax for many programs like sftp and smb</p>
+
+
+	</div>
+	<div class="divider" id="ssh-fs">
+			<h2>SSHFS - Mountati udaljeno</h2>
+							<p>SSHFS je lagana, brza i sigurna metoda koja koristi FUSE da mounta udaljeni file-sistem. Jedina potreba na poslužitelj-strani je izvođaj ssh demona.</p>
+
+							<p>On client side you propably have to install sshfs: <span class="highlight-1">installing fuse and groups is not necessary on aptosid eros forward as it is installed by default:</span></p>
+
+							<p>Na klijent strani možda morate instalirati SSHFS:	</p>
+<pre>
+apt-get update &amp;&amp; apt-get install sshfs
+</pre>
+							<p class="highlight-3">Sad se morate odjaviti i opet prijaviti</p>
+
+							<p>Mountati udaljeni file-sistem je lagano:</p>
+<pre>
+sshfs username@remote_hostname:directory local_mount_point
+</pre>
+							<p><span class="highlight-3">username</span> je korisničko ime na udaljenom računalu:</p>
+
+							<p>Ako nije nikakav direktorij upisan automatski će home-direktorij udaljenog korisnika biti mountan.<span class="highlight-3"> POZOR: Dvotočka <span class="highlight-2"> <b>:</b></span> je bitna i ako ne upišete direktorij! </span></p>
+
+							<p>Poslije mountanja udaljeni direktorij se može koristiti kao bilo koji drugi lokalni file-sistem, možete pretraživati datoteke, editirati ih i izvoditi skripte na njima, kao na lokalnim file-sistemima.</p>
+
+							<p>Ako hoćete da unmountate udaljeni host koristite sljedeću naredbu:</p>
+<pre>
+fusermount -u local_mount_point
+</pre>
+							<p>Ako često koristite sshfs dobro bi bilo da upišete liniju u /etc/fstab:</p>
+<pre>
+sshfs#username@remote_hostname://remote_directory /local_mount_point fuse user,allow_other,uid=1000,gid=1000,noauto,fsname=sshfs#username@remote_hostname://remote_directory  0 0 
+</pre>
+							<p>Next uncomment <span class="highlight-3">user_allow_other</span> in <span class="highlight-3">/etc/fuse.conf</span>:</p>
+
+<pre> 
+ # Allow non-root users to specify the 'allow_other' or 'allow_root'
+ # mount options.
+ #
+ user_allow_other
+</pre>
+							<p>To će omogućiti svakom korisniku koji je dio grupe fuse da mounta taj file-sistem s dobro poznatom mount naredbom:</p>
+<pre>
+mount /path/to/mount/point
+</pre>
+							<p>S tom linijom u vašoj fstab datoteci naravno isto možete koristiti umount naredbu:</p>
+<pre>
+umount /path/to/mount/point
+</pre>
+							<p>Da provjerite dali ste u toj grupi ili ne, koristite sljedeću naredbu:</p>
+<pre>
+cat /etc/group | grep fuse
+</pre>
+							<p>Trebali bi vidjeti nešto slično ovome:</p>
+<pre>
+fuse:x:117: &lt;username&gt;
+</pre>
+							<p>Ako vaše korisničko ime nije navedeno, koristite adduser naredbu kao root:</p>
+<pre>
+adduser &lt;username&gt; fuse
+</pre>
+							<p>Sad bi trebalo vaše korisničko ime da bude navedeno i sad možete da izvodite naredbu:</p>
+
+							<p class="highlight-3">Bilješka: "id" neće biti navedena u "fuse" grupi, dok se ne odjavite i opet prijavite</p>
+
+
+<pre>
+mount local_mount_point
+</pre>
+							<p>i</p>
+<pre>
+umount local_mount_point
+</pre>
+
+	</div>
+			<div id="rev">Content last revised 01/11/2011 0650 UTC</div>
+
+</div>
+</body>
+</html>

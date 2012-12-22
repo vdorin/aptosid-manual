@@ -1,0 +1,634 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>aptosid Manuals - Rolling Notes</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision by bluewater 24/12/2008 0745 UTC -->
+<div id="menu"> <!-- menu starts here hr lang maintainer cobra -->
+<!--aptosid Operating System Manual menu-version-00.01.2010.09.17 -->
+<!-- menu last updated by bluewater 2010.09.17 0730 hrs UTC -->
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="aptosid.com, forum and wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-hr.htm#search-on"><img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" /> Traži Online Offline</a> </li>
+		<!--<li><a href="http://manual.aptosid.com/meta-manual">Izbor softvera zajednice</a></li>-->
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Izaberite drugi jezik - Choose another language" alt="lang-switch" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-hr.htm">aptosid OS priručnik</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-hr.htm#welcome-gen">aptosid OS priručnik &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-hr.htm#cred-team">Zahvale</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-hr.htm#how-to">Kako koristiti ovaj priručnik &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-hr.htm#how-to">Kako koristiti ovaj priručnik</a></li>
+					  <li><a href="welcome-hr.htm#table-contents">Indeks</a></li>
+					</ul>
+					</li>
+		<li><a href="help-hr.htm#help-gen">Pomoč &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-hr.htm#help-gen">Gdje možete dobiti pomoć</a></li>
+					  <li><a href="help-hr.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-hr.htm#welcome-quick">aptosid Quick Start</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-hr.htm">ISO Sadržaj, Izdanje, Download Mirrors i prženje</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-hr.htm#cd-content">ISO sadržaj i sistemski zahtjevi &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-hr.htm#rolling">Release Notes</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-hr.htm#download-aptosid">aptosid Mirrors, ISO download i prženje &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-hr.htm#md5">md5 zbroj za provjeru</a></li>
+					  <li><a href="cd-dl-burning-hr.htm#burn-nero">Prženje s Windows</a></li>
+					  <li><a href="cd-dl-burning-hr.htm#burn-linux">Prženje s Linux</a></li>
+					  <li><a href="cd-no-gui-burn-hr.htm#burning-no-gui">burniso script</a></li>
+					  <li><a href="cd-no-gui-burn-hr.htm#burn-no-gui-gen">Prženje bez GUI-a</a></li>
+					  <li><a href="cd-dl-burning-hr.htm#download-aptosid">aptosid Download Mirrors</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-hr.htm">Live Modus</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-hr.htm#rootpw">Root-lozinka na aptosid-Live-ISO</a></li>
+				<li><a href="live-mode-hr.htm#live-cd-installsoft">Instalirati softver kada ste na Live-ISO</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-hr.htm">Terminal / Konzola</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-hr.htm#term-kon"> Terminal / Konzola &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-hr.htm#term-kon"> Terminal / Konzola</a></li>
+					  <li><a href="term-konsole-hr.htm#cli-help">Pomoć za naredbenu crtu</a></li>
+					  <li><a href="help-hr.htm#init3-tools">Poznati alate u tekstualnom modusu (tty) - init 3</a></li>
+					  <li><a href="term-konsole-hr.htm#term-cmds">Lista naredbi za Linux Terminal</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-hr.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-hr.htm">CheatCodes</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-hr.htm#cheatcodes">aptosid specifični Live-ISO Cheatcodes</a></li>
+				<li><a href="cheatcodes-hr.htm#cheatcodes-linux">Linux općeniti Cheatcodes</a></li>
+				<li><a href="cheatcodes-vga-hr.htm#vga">VGA Codes</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-hr.htm">Particijonirati vaš Hard-Disk</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-hr.htm#hd-ntfs3g">Pisanje na NTFS particiju sa NTFS-3g</a></li>
+			<li><a href="part-gparted-hr.htm#partition">Particijonirati sa GUI &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-hr.htm#partition">Particijonirati vaš HD koristeći GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-hr.htm#ntfs">Mijenjanje veličine NTFS particija koristeći GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-hr.htm#partition">Particijonirati sa naredbenom crtom &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-hr.htm#partition">Particijonirati vaš HD koristeći cfdisk</a></li>
+					    <li><a href="part-cfdisk-hr.htm#formating">Formatiranje particija poslije particijoniranjem sa cfdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-hr.htm#part-example">Osnove particioniranja &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-hr.htm#part-example">Primjeri veliparticije </a></li>
+					  <li><a href="part-uuid-hr.htm#uuid">UUID, označivanje particija i fstab</a></li>
+					  <li><a href="part-cfdisk-hr.htm#disknames">Namjestiti HD ime ukratko</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-hr.htm">Installation options - HD, USB, VM</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-hr.htm#Inst-prep">Instalacijske opcije &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-hr.htm#Inst-prep">Priprema za instalaciju</a></li>
+					  <li><a href="hd-install-hr.htm#Installation">Instaliranje na vaš HD</a></li>
+					  <li><a href="hd-install-hr.htm#first-hd-boot">Prvi Boot-Up</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-hr.htm#fromiso">Boot sa fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-hr.htm#fromiso">Boot sa fromiso - Pregled</a></li>
+					  <li><a href="hd-install-opts-hr.htm#fromiso-grub-leg">Boot sa fromiso sa grub-legacy</a></li>
+					  <li><a href="hd-install-opts-hr.htm#grub2-fromiso">Boot sa fromiso sa Grub 2</a></li>
+					  <li><a href="hd-install-opts-hr.htm#fromiso-persist">fromiso i persist</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-hr.htm#usb-hd">Instaliranje na USB uređaje &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-hr.htm#usb-hd">Instaliranje na USB-HD - aptosid specifično - aptosid-on-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-hr.htm#raw-usb">Pisanje aptosid na USB / SSD stick sa svim Linux, MS Windows ili Mac OS X sustavima</a></li>
+					</ul>
+					</li>
+		  <li><a href="nbdboot-hr.htm#nbd1">Dizanje aptosid preko mreže</a></li>
+		  <li><a href="hd-install-vmopts-hr.htm#vmopts">Opcije instalacije na virtualni stroj</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="hw-dev-hw-dri-hr.htm">Grafičke kartice, hardver, Xorg, sredstvo i pogonitelji</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-hr.htm#mon-res">Rezolucije Monitora  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-hr.htm#mon-res">Rezolucije Monitora i Monitori</a></li>
+					  <li><a href="hw-dev-mon-hr.htm#xrandr">Dual Monitori i xrandr</a></li>
+					  <li><a href="hw-dev-mon-hr.htm#mon-binary">Dual Monitori (koristeči binarne pogonitelje)</a></li>
+					</ul>
+					</li>
+		<li><a href="hw-dev-hw-dri-hr.htm#non-free-3d">Grafičke kartice sa vlasničkim pogoniteljima &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="hw-dev-hw-dri-hr.htm#non-free-3d">Binarni, non-free pogonitelji za: Nvidia &amp; xorg.conf</a></li>
+					  <li><a href="hw-dev-hw-dri-hr.htm#non-free-3d-2">non-free pogonitelji za ATI, Radeon i druge</a></li>
+					</ul>
+					</li>
+			  <li><a href="hw-dev-hw-dri-hr.htm#non-free-firmware">Hardver kojoj trebaju non-free firmware pogonitelji</a></li>
+			  <li><a href="hw-dev-hw-dri-hr.htm#non-free">Dodati non-free u Sources List</a></li>
+			  <li><a href="hw-dev-hw-dri-hr.htm#native-nv-ati">FOSS xorg pogonitelji za nVidia, ATI, Radeon, Intel &amp; xorg.conf</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-kde-hr.htm">Window-Menadžer</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-kde-hr.htm">Window-Menadžeri &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-xfce-hr.htm#xfce-notes">Korisni Xfce ekstra</a></li>
+					    <li><a href="wm-kde-hr.htm#install-add">Korisne ekstra KDE aplikacije</a></li>
+					    <li><a href="wm-kde-hr.htm#desk-freeze">Desktop je smrznut</a></li>
+					    <li><a href="wm-kde-hr.htm#kde-login">Ne mogu se prijaviti u KDE</a></li>
+					    <li><a href="wm-kde-hr.htm#ch-th">Promjeni temu</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-kde-hr.htm#dm">Menadžeri za Prikaz - dm</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="internet-connecting-hr.htm">Internet, WiFi, LAN i umrežavanje</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-hr.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-hr.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-hr.htm#serv-ftp">FTP klijenti</a></li>
+					    <li><a href="lamp-apache-hr.htm#serv-sec">Sigurnosne protokole</a></li>
+					    <li><a href="lamp-apache-hr.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-hr.htm#serv-mysql">MySQL Postavke</a></li>
+					    <li><a href="lamp-ppp-hr.htm#serv-php">PHP u Apache</a></li>
+					    <li><a href="ntp-server-hr.htm#ntp-server">Postavke poslužitelja za vrijeme</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-hr.htm#tor">Firewall i privatnost &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-hr.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-hr.htm#privoxy">Privoxy</a></li>
+					    <li><a href="internet-connecting-hr.htm#firewalls">Firewall</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-hr.htm#ssh-x">SSH i Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-hr.htm#setup">Postavke Samba-poslužitelja</a></li>
+						  <li><a href="samba-hr.htm#configure">Konfiguriranje SAMBA (Windows)</a></li>
+						  <li><a href="ssh-hr.htm#ssh-fs">SSH Priključivanje udaljenih računala</a></li>
+						  <li><a href="ssh-hr.htm#ssh-x">X-Window aplikacije via SSH</a></li>
+						  <li><a href="ssh-hr.htm#ssh-f">GUI SSH sa Konqueror</a></li>
+						  <li><a href="ssh-hr.htm#ssh-w">SSH X-Forwarding sa Windows-PC</a></li>
+						  <li><a href="ssh-hr.htm#ssh">SSH i sigurnost</a></li>
+					</ul>
+					</li>
+		<li><a href="internet-connecting-hr.htm#netcardconfig">WIFI &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="internet-connecting-hr.htm#netcardconfig">Ulaz u Internet - Ceni</a></li>
+						    <li><a href="inet-wpagui-hr.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-hr.htm#net-set1">WiFi - postaviti za WiFi Roaming</a></li>
+						    <li><a href="internet-connecting-wpa-hr.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-hr.htm#hotswitch">Prebacivanje između WiFi i kabela</a></li>
+					</ul>
+					</li>
+		<li><a href="internet-connecting-hr.htm#netcardconfig">Ožičene veze &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="internet-connecting-hr.htm#dial-mod">56k Modemi</a></li>
+						    <li><a href="internet-connecting-hr.htm#netcardconfig">Ulaz u internet - Ceni</a></li>
+					</ul>
+					</li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-hr.htm">Paket menadžment i dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-hr.htm#apt-cook">APT-Vodič i sources.list &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-hr.htm#apt-cook">APT-Vodič i sources.list</a></li>
+					    <li><a href="sys-admin-apt-hr.htm#apt-install">Instaliranje novih paketa</a></li>
+					    <li><a href="sys-admin-apt-hr.htm#apt-delete">Brisanje paketa</a></li>
+					    <li><a href="sys-admin-apt-hr.htm#apt-downgrade">Downgrading  / Hold jednog paketa</a></li>
+					    <li><a href="sys-admin-apt-hr.htm#apt-cache">Tražiti Paket sa apt-cache</a></li>
+					    <li><a href="sys-admin-apt-hr.htm#gui-pacsea">Tražiti Paket sa Grafičkim korisničkim sučelju</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-hr.htm#kern-upgrade">Obnoviti kernel &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-hr.htm#kern-remove">Uklanjanje kernela</a></li>
+					    <li><a href="sys-admin-kern-upg-hr.htm#kern-upgrade">Obnoviti kernel</a></li>
+					    <li><a href="sys-admin-kern-upg-hr.htm#dmakms">Instalirati kernel modula dinamički sa dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-hr.htm#apt-upgrade">Obnoviti instaliran sistem -  dist-upgrade - Pregled &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-hr.htm#live-cd-upgrade">Obnoviti sa Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-hr.htm#approx">dist-upgrade od više računala na LAN</a></li>
+					    <li><a href="sys-admin-apt-hr.htm#apt-upgrade">Obnoviti instaliran sistem -  dist-upgrade - Pregled</a></li>
+					    <li><a href="sys-admin-apt-hr.htm#du-st">Obnoviti instaliran sistem -  dist-upgrade - Koraci</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-hr.htm">Sistem Administracija</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-hr.htm#bios-prep">Obnoviti BIOS sa FreeDOS</a></li>
+		<li><a href="vir-rkits-hr.htm#virus-rkits">Virus i Rootkit skeneri</a></li>
+		<li><a href="hd-install-hr.htm#adduser">Dodati nove korisnike &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-hr.htm#adduser">Dodati nove korisnike</a></li>
+					    <li><a href="sys-admin-gen-hr.htm#pw-lost">Izgubljena root lozinka, nova lozinka</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-hr.htm#start-services">Services and init runlevels &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-hr.htm#start-services">Servise aktivirati/deaktivirati</a></li>
+					    <li><a href="sys-admin-gen-hr.htm#init">aptosid runlevels - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-hr.htm#rsync">Sigurnosne kopije sistema &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-hr.htm#rdiff">Sigurnosne kopije sa rdiff</a></li>
+					    <li><a href="sys-admin-rsync-hr.htm#rsync">Sigurnosne kopije sa rsync</a></li>
+					    <li><a href="home-hr.htm#home-bu">Premještanje /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-hr.htm#fonts">CUPS, pisma i zvuk &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-hr.htm#fonts">Pisma</a></li>
+					     <li><a href="sys-admin-gen-hr.htm#cups">CUPS - Sistem za tiskanj</a></li>
+					     <li><a href="sys-admin-gen-hr.htm#sound">Sound Mikseri</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-hr.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-hr.htm#mbr-over-grub2">Grub2 - MBR Overwritten</a></li>
+					    <li><a href="sys-admin-grub2-hr.htm#multi-os">Grub2 - Dual i Multibooting</a></li>
+					    <li><a href="sys-admin-grub2-hr.htm#grub1-grub2">Grub2 - Obnoviti iz Grub1</a></li>
+					    <li><a href="sys-admin-grub2-hr.htm#grub2">Grub2 - Pregled</a></li>
+					</ul>
+					</li>
+			</ul>
+		</li>
+	</ul>
+<!-- menu ends here --> </div>
+<div id="main-page">
+	<div class="divider" id="rolling">
+		<h2 id="top-header">Rolling Notes</h2>
+
+							<p><span class="highlight-3">This page is a summary of the Release Notes and will only be updated after each release. Read the full Release Notes on <a href="http://aptosid.com">aptosid.com</a></span>, the <span class="highlight-3">Live ISO</span> or <span class="highlight-3">apt-get install aptosid-releasenotes</span>.</p>
+
+		<h2>Release notes for aptosid 2010-02 Κῆρες - Keres</h2>
+
+				 <p>
+					New features in aptosid 2010-02 &quot;Κῆρες&quot; are in particular kernel 2.6.35.4 and KDE 4.4.5.
+					Kernel 2.6.35 doesn't only improve and stabilise hardware support for newer devices, it also features improved powersaving support for ATi Radeon and Intel graphics cards and improved hardware video acceleration.
+					Wlan support has been consolidated, with rt2x00 now supporting RaLink rt28x0/ rt30xx officially, as well as Atheros AR9271 devices becoming officially supported through ath9k_htc; with ANI (adaptive noise immunity) becoming supported by ath5k, wireless throughput should improve for the affected chipsets.
+				</p>
+
+				<p>
+
+					As usual, a large number of individual functionality enhancements and bugfixes have been applied to the full package line up and aptosid' own packages, in order to improve the general distribution infrastructure.
+					The past months have allowed to take special care of the small aspects in many packages, to improve general policy compliance and functionality.
+				</p>
+
+				<p>
+					Although this release happens only shortly after the freeze leading towards Debian 6.0 &quot;Squeeze&quot;, it is still based on Debian sid as of this day and is not meant or suited as an alternative way to install &quot;Squeeze&quot;.
+					Many security sensitive packages in aptosid (Debian sid) already sport a higher version number than their corresponding package in "Squeeze".
+				</p>
+
+				<p>
+					While Debian testing is <a href="http://lists.debian.org/debian-devel-announce/2010/08/msg00000.html">frozen</a> in order to release Debian 6.0 &quot;Squeeze&quot;, major new upstream versions of non-leaf packages or libraries are not getting published in Debian/ sid.
+					Even though it might be tempting to pull new versions of KDE4 or iceweasel from snapshot repositories or experimental, we can neither recommend nor support doing so and suggest sticking to Debian/ sid and aptosid instead.
+					Aptosid continues to provide fixes and upgrades to aptosid specific packages as usual.
+				</p>
+	    </div>
+	   <div class="divider" id="whats-new">
+		<h2>Now to the interesting topics, like what's on the menu for now:</h2>
+				<ul>
+					<li>Debian sid, as of 2010-09-13.</li>
+					<li>kernel 2.6.35.4 (smp, hard preemption).</li>
+
+					<li>X.org 7.5 (xserver-xorg-core 1.7.7).</li>
+					<li>enable KMS support for ATi and Intel based graphics chipsets.</li>
+					<li>DRI (3d) support for ATi Radeon chipsets up to r7xx (refer to <a href="#non-free">non-free sources and Drivers</a>).</li>
+					<li>KDE 4.4.5 (en + de).</li>
+					<li>Iceweasel 3.5.12</li>
+
+					<li>new, SVG based, art theme created by the aptosid art team.</li>
+					<li><a href="file:///usr/share/aptosid-manual/index.html">offline manual</a> for <a href="file:///usr/share/aptosid-manual/en/welcome-en.htm">en</a> + <a href="file:///usr/share/aptosid-manual/de/welcome-de.htm">de</a> directly on the disc, online manuals for more languages online at <a href="http://manual.aptosid.com/">http://manual.aptosid.com/</a> and available via apt; a big thank you goes to the documentation and translation teams!<br />Please note that the offline manual is only available on the running live CD or the installed system.</li>
+
+					<li>many changes for the manual.</li>
+					<li>at76c50x-usb support for 11 MBit/s Atmel wlan cards (at76c503a, at76c505 and at76c505a).</li>
+					<li>ath5k support for 54/ &quot;108&quot; MBit/s Atheros wlan cards (AR2425, AR5210, AR5211, AR5212, AR5213 and AR5414).</li>
+					<li>ath9k support for 802.11n Atheros wlan cards (AR5418+AR5133, AR5416+AR5133, AR5416+AR2133, AR9160, AR9280, AR9281 and AR9285).</li>
+					<li>ath9k_htc support for 802.11n-lite Atheros USB wlan cards (AR9271).</li>
+
+					<li>ar9170usb support for 802.11n Atheros USB wlan cards (AR9170 &quot;otus&quot;).</li>
+					<li>
+						b43/ b43legacy support for Broadcom wlan cards.<br />
+						<a href="http://www.ing.unibs.it/openfwwf/">OpenFWWF 5.2</a> opensource firmware for the following Broadcom AirForce 802.11b/g wireless cards:
+						<ul>
+							<li>BCM4306</li>
+
+							<li>BCM4311 revision 1</li>
+							<li>BCM4318</li>
+							<li>BCM4320</li>
+						</ul>
+						highly experimental support for LP-PHY, non-free firmware images (firmware-b43-lpphy-installer) required.
+					</li>
+					<li>iwl3945 support (Intel Pro Wireless 3945 chipsets).</li>
+
+					<li>iwlagn support for IPW 4965 and the IEEE 802.11 a/b/g/n part of the Intel Wireless WiFi Link 1000/ 5xxxAGN/ 6000/ 6050 family.</li>
+					<li>iwmc3200wifi support for Intel Wireless Multicomm 802.11.</li>
+					<li>rt2x00 support for RaLink rt2400, rt2500, rt2570, rt61 and rt73 802.11b/g cards.</li>
+					<li>support for RaLink rt2770, rt2870 and rt3070 802.11b/g/n USB cards through rt2x00.</li>
+					<li>support for RealTek RTL8180L and RTL8185 PCI/ cardbus wlan cards.</li>
+					<li>support for RealTek RTL8187 and RTL8187B USB wlan cards.</li>
+
+					<li>memtest86+.</li>
+					<li>OpenJDK 6 as part of the kde-full variant.</li>
+					<li>employ &quot;insserv&quot; to reorder the bootsequence based on LSB headers.</li>
+					<li>support kvm (Kernel-based Virtual Machine) for kde-full; kvm depends on hardware virtualisation support (AMD pacifica virtualisation extensions &quot;svm&quot; or Intel IVT (vanderpool) virtualisation extensions &quot;vmx&quot;)</li>
+
+					<li>access point support for many mac80211 based wlan cards through nl80211 and hostapd (optional).</li>
+					<li>client support for network booting over PXE/ NBD.</li>
+					<li>fix the CFQ I/O scheduler regression.</li>
+					<li>fixed &quot;liveapt&quot; functionality.</li>
+					<li>many small fixes throughout the package lists.</li>
+
+				</ul>
+			</div>
+			<div class="divider" id="faq">
+				<h2>Frequently asked questions</h2>
+
+				<h3>Installation</h3>
+				<p>
+
+					It is recommended to set keymaps, locales and timezone before booting the live system to be installed, by selecting them from the boot menu [F2], [F3].
+					This way, locale settings propagate to all required places for the installed system and don't require cumbersome changes at several places.
+				</p>
+
+		<h3>grub2</h3>
+				<p>
+					While grub2 offers increased flexibility for installations, like supporting new filesystems (ext4) or advanced installation options like LVM2 and improved detection capabilities for other distributions and operating systems, right now it is limited to a textmode menu.
+					A new theming effort is currently under development and will be available in the future.
+					Even though support for plain wallpapers would be already supported by grub2, it is still fragile and prolongs the system boot.
+					Internally the configuration system for grub2 uses scripts snippets under /etc/grub.d/ to create its configuration file &quot;grub.cfg&quot; in a way that allows many self updating features, such as automating fromiso support with the help of &quot;grub2-fll-fromiso&quot; (optional).
+				</p>
+
+		<h3>isohybrid</h3>
+				<p>
+					With isolinux supporting gfxboot, it is possible to use isohybrid, which allows writing an ISO directly to USB storage or sd/ sdhc/ mmc memory sticks to make these bootable.
+					isohybrid adds an MBR to the ISO and sets up a partition table with one active entry, the partition containing the ISO.
+					This allows writing aptosid ISOs directly to USB storage devices of sdhc memory cards in addition to the well known possibility of using &quot;install-aptosid-to-usb&quot; (install-usb-gui).
+					This option is particularly useful if there is no existing aptosid installation available and if an installation medium needs to be created from another distribution or operating system.
+					It is important to note that this method overwrites the whole USB medium and restricts the available storage to the size of the aptosid ISO; install-usb-gui is not subject to these limitations and therefore the recommended option in case an existing aptosid system is available.
+					Further partitions can be added to allow access to the unused part of the storage device.
+				</p>
+<pre>
+cat /path/to/aptosid-*.iso &gt; /dev/USB_raw_device_node
+</pre>
+
+				<p>
+					Further information about the aptosid install is available from the <a href="http://manual.aptosid.com/">aptosid manual</a> at <a href="http://manual.aptosid.com/en/hd-install-en.htm">Installation options</a>.
+				</p>
+
+		<h3>Wireless regulatory domain settings</h3>
+				<p>
+
+					The regulatory domain framework for cfg80211 based wlan cards requires crda to allow access to wireless channels above ch11 (2.4 GHz or their 5 GHz equivalents), without crda only the "world domain" (channel 1-11) is available.
+					Previous hacks using module parameters (&quot;ieee80211_regdom={US,EU,JP}&quot;) are no longer available and prevent cfg80211 from loading, please remove possible module-init-tools overrides (&quot;grep -R ieee80211_regdom /etc/modprobe.d/&quot; to find them) manually.
+				</p>
+<pre>
+# apt-get update apt-get install crda
+</pre>
+
+	</div>
+	<div class="divider" id="upgrade">
+			<h2>Hints for Upgraders:</h2>
+				<p>
+					aptosid tries hard to provide seamless upgrade path for debian and aptosid' own packages, nevertheless a few things remain that could be improved with manual interaction.
+				</p>
+
+				<h3>Crossgrading from &quot;sidux&quot;</h3>
+
+				<p>
+					A seamless crossgrade path from sidux to aptosid will be provided until the end of 2010.
+					However a quick change is suggested because of potential issues outside of our influence.<br />
+				</p>
+
+				<p>
+					If the automatic crossgrades fails, due to the original mirror disappearing, the following steps allow a manual crossgrade.
+				</p>
+
+				<ul>
+					<li>drop previous &quot;sidux&quot; mirrors from &quot;/etc/apt/sources.list&quot; and delete &quot;/etc/apt/sources.list.d/sidux.list&quot;.</li>
+
+					<li>download the new aptosid-archive-keyring Debian package from <a href="http://aptosid.com/debian/pool/main/a/aptosid-keyring/">http://aptosid.com/debian/pool/main/a/aptosid-keyring/</a> and install it manually with &quot;dpkg -i aptosid-archive-keyring_*_all.deb&quot;.</li>
+					<li>Create a new &quot;/etc/apt/sources.list.d/aptosid.list&quot; by using one of the primary <a href="mirrors-en.html">mirrors</a>, example contents can be found at <a href="http://aptosid.com/files/misc/">http://aptosid.com/files/misc/</a>.</li>
+
+					<li>followed by a regular, complete, dist-upgrade.</li>
+				</ul>
+
+				<p>
+					The semi-automatic crossgrade by using legacy &quot;sidux&quot; mirrors is easier and should be preferred, if possible.
+				</p>
+
+			<h3>nouveau</h3>
+
+				<p>
+					X.org in Debian prefers xserver-xorg-video-nouveau over xserver-xorg-video-nv since xorg 1:7.5+6, which unfortunately can't be supported by aptosid until it leaves the staging section and gains a stable ABI between kernel- and userspace.
+					Therefore we recommend users of nvidia graphics cards to purge xserver-xorg-video-nouveau, so xserver-xorg-video-nv &mdash; which doesn't suffer from incompatible ABI changes &mdash; can take precedence again.
+				</p>
+				<pre># apt-get remove --purge xserver-xorg-video-nouveau</pre>
+				<p>
+					We will offer nouveau support as soon as it can be done in a responsible way.
+				</p>
+
+				<h3>system-config-printer-udev</h3>
+				<p>
+					hal-cups-utils has been replaced by system-config-printer-udev, to automatically detect and configure USB printers.
+				</p>
+<pre>
+# apt-get update
+# apt-get install --purge system-config-printer-udev
+</pre>
+				<p>
+					In order to influence the detection and pursue further configuration, it is suggested to install system-config-printer-kde (KDE desktop environment) or system-config-printer (GTK2 based desktop environments) as well.
+				</p>
+
+			<h3>Obsolete packages</h3>
+				<p>
+					As part of the continuing development of aptosid, a number of packages have been replaced by better alternatives or become redundant.
+				</p>
+
+				<ul>
+					<li>
+						grub-gfxboot<br />
+
+						Starting with aptosid, grub-gfxboot has been dropped from the distribution in favour of grub2, which provides better support for contemporary operating systems, kernels following the updated bootloader policies and filesystems.
+						Upgrading legacy systems does now pull in grub2 automatically, by keeping the existing MBR and chainloading grub2 from it.
+						After confirming that grub2 does indeed work,
+						<a href="http://manual.aptosid.com/en/sys-admin-grub2-en.htm#grub1-grub2">manual</a>
+					</li>
+
+					<li>
+						Transitional or obsolete packages when upgrading from sidux<br />
+						The preferred way to identify obsolete packages left over from crossgrading to aptosid, is by making use of deborphan and apt-show-versions as described below.
+						However at least these packages can be removed <em>after</em> dist-upgrading to aptosid:
+						<ul>
+
+							<li>configure-dsl</li>
+							<li>gfxboot-theme-sidux-2007-01-chaos</li>
+							<li>gfxboot-theme-sidux-2007-02-tartaros</li>
+							<li>gfxboot-theme-sidux-2007-03-gaia</li>
+							<li>gfxboot-theme-sidux-2007-04-eros-de</li>
+							<li>gfxboot-theme-sidux-2007-04-eros</li>
+
+							<li>gfxboot-theme-sidux-2008-01-nyx-de</li>
+							<li>gfxboot-theme-sidux-2008-01-nyx</li>
+							<li>gfxboot-theme-sidux-2008-02-erebos-de</li>
+							<li>gfxboot-theme-sidux-2008-02-erebos-ie</li>
+							<li>gfxboot-theme-sidux-2008-02-erebos</li>
+							<li>gfxboot-theme-sidux-2008-03-ourea-de</li>
+
+							<li>gfxboot-theme-sidux-2008-03-ourea-ie</li>
+							<li>gfxboot-theme-sidux-2008-03-ourea</li>
+							<li>gfxboot-theme-sidux-2008-04-pontos-de</li>
+							<li>gfxboot-theme-sidux-2008-04-pontos-ie</li>
+							<li>gfxboot-theme-sidux-2008-04-pontos</li>
+							<li>gfxboot-theme-sidux-2009-01-ouranos-de</li>
+
+							<li>gfxboot-theme-sidux-2009-01-ouranos-ie</li>
+							<li>gfxboot-theme-sidux-2009-01-ouranos</li>
+							<li>gfxboot-theme-sidux-2009-02-aether-de</li>
+							<li>gfxboot-theme-sidux-2009-02-aether</li>
+							<li>gfxboot-theme-sidux-2009-03-momos-de</li>
+							<li>gfxboot-theme-sidux-2009-03-momos</li>
+
+							<li>gfxboot-themes-sidux-2007-04-eros-core</li>
+							<li>gfxboot-themes-sidux-2007-04-eros</li>
+							<li>gfxboot-themes-sidux-2008-01-nyx-core</li>
+							<li>gfxboot-themes-sidux-2008-01-nyx</li>
+							<li>gfxboot-themes-sidux-2008-02-erebos-core</li>
+							<li>gfxboot-themes-sidux-2008-02-erebos</li>
+
+							<li>gfxboot-themes-sidux-2008-03-ourea-core</li>
+							<li>gfxboot-themes-sidux-2008-03-ourea</li>
+							<li>gfxboot-themes-sidux-2008-04-pontos-core</li>
+							<li>gfxboot-themes-sidux-2008-04-pontos</li>
+							<li>gfxboot-themes-sidux-2009-01-ouranos-core</li>
+							<li>gfxboot-themes-sidux-2009-01-ouranos</li>
+
+							<li>gfxboot-themes-sidux-2009-02-aether-core</li>
+							<li>gfxboot-themes-sidux-2009-02-aether</li>
+							<li>gfxboot-themes-sidux-2009-03-momos-core</li>
+							<li>gfxboot-themes-sidux-2009-03-momos</li>
+							<li>gfxboot-themes-sidux-2009-04-moros-core</li>
+							<li>gfxboot-themes-sidux-2009-04-moros</li>
+
+							<li>gfxboot-themes-sidux-2010-01-hypnos-core</li>
+							<li>gfxboot-themes-sidux-2010-01-hypnos</li>
+							<li>gfxboot-themes-sidux-2010-02-keres-core</li>
+							<li>gfxboot-themes-sidux-2010-02-keres</li>
+							<li>linux-headers-aptosid-686</li>
+							<li>linux-headers-aptosid-amd64</li>
+
+							<li>linux-image-aptosid-686</li>
+							<li>linux-image-aptosid-amd64</li>
+							<li>sidux-apt-qt4</li>
+							<li>sidux-art-kde</li>
+							<li>sidux-art-wallpaper</li>
+							<li>sidux-art-xfce</li>
+
+							<li>sidux-manual-bg</li>
+							<li>sidux-manual-common</li>
+							<li>sidux-manual-da</li>
+							<li>sidux-manual-de</li>
+							<li>sidux-manual-el</li>
+							<li>sidux-manual-en</li>
+
+							<li>sidux-manual-es</li>
+							<li>sidux-manual-fr</li>
+							<li>sidux-manual-hr</li>
+							<li>sidux-manual-hu</li>
+							<li>sidux-manual-it</li>
+							<li>sidux-manual-ja</li>
+
+							<li>sidux-manual-nl</li>
+							<li>sidux-manual-pl</li>
+							<li>sidux-manual-pt-br</li>
+							<li>sidux-manual-ro</li>
+							<li>sidux-manual-ru</li>
+							<li>sidux-searchplugins</li>
+
+							<li>ttf-sidux</li>
+						</ul>
+					</li>
+					<li>
+						Legacy Artwork<br />
+						Due to hardcoded artwork names within user configuration, legacy packages can not be automatically updated to aptosid.
+						Installing the following packages will pull in aptosid equivalents for the current release (Κῆρες), manualy interacting will still be needed to use them:
+						<ul>
+							<li>aptosid-art-kde (KDE releases)</li>
+
+							<li>aptosid-art-wallpaper</li>
+							<li>aptosid-art-xfce (XFCE releases)</li>
+						</ul>
+					</li>
+				</ul>
+		  </div>
+				<p>
+					Transitional packages and obsolete libraries can often be identified by &quot;deborphan&quot;.
+					While this tool is very convenient for ongoing system cleanup, its results should always be checked before using it as input for removals.
+				</p>
+
+<pre>
+$ deborphan
+</pre>
+							<p>The following command is able to find packages not available from any active apt repository and may hint at obsolete packages, be careful about manually installed packages though. apt-show-versions is a separate package and isn't necessarily preinstalled. </p>
+
+<pre>
+$ apt-show-versions | awk '/No available version in archive/{print $1}'
+</pre>
+
+
+
+
+			<div id="rev">Content last revised 14/09/2010 1140 UTC </div>
+
+</div>
+</body>
+</html>
