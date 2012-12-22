@@ -1,0 +1,550 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>aptosid Manuals - RSYNC</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body id="welcome">
+<div id="menu"> <!-- menu starts here en lang maintained by bluewater-->
+<!--aptosid Operating System Manual menu-version-02.09.2010.11.03 -->
+<!-- menu last updated by bluewater 2010.11.03 1130 hrs UTC -->
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="To aptosid.com forums and wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-sv.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" />Search online - offline</a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Choose another language DE, EN" alt="lang-switch" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-sv.htm">aptosid OS Manual</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-sv.htm#welcome-gen">aptosid OS Manual &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-sv.htm#cred-team">Credits</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-sv.htm#how-to">Hur du använder manualen&#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-sv.htm#how-to">Hur du använder manualen</a></li>
+					  <li><a href="welcome-sv.htm#table-contents">Innehållsförteckning</a></li>
+					</ul>
+					</li>
+		<li><a href="help-sv.htm#help-gen">Få hjälp &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-sv.htm#help-gen">Var och hur du kan få hjälp</a></li>
+					  <li><a href="help-sv.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-sv.htm#welcome-quick">aptosid Quick Start Guide</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-sv.htm">ISO innehåll, Releases, Nedladdningsspeglar och Bränning</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-sv.htm#cd-content">ISO innehåll och systemkrav &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-sv.htm#rolling">Release Notes</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-sv.htm#download-aptosid">aptosid Speglar, Nedladdning och Bränning &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-sv.htm#md5">md5 Checksum</a></li>
+					  <li><a href="cd-dl-burning-sv.htm#burn-nero">Bränna i Windows</a></li>
+					  <li><a href="cd-dl-burning-sv.htm#burn-linux">Bränna i Linux</a></li>
+					  <li><a href="cd-no-gui-burn-sv.htm#burning-no-gui">burniso skript</a></li>
+					  <li><a href="cd-no-gui-burn-sv.htm#burn-no-gui-gen">Bränna utan ett GUI</a></li>
+					  <li><a href="cd-dl-burning-sv.htm#download-aptosid">aptosid Nedladdningsspeglar</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-sv.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-sv.htm#rootpw">Root-lösen på aptosid-Live ISO</a></li>
+				<li><a href="live-mode-sv.htm#live-cd-installsoft">Installera program från en Live-ISO</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-sv.htm">Terminalen / Konsollen</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-sv.htm#term-kon"> Terminalen / Konsollen &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-sv.htm#term-kon"> Terminalen / Konsollen</a></li>
+					  <li><a href="term-konsole-sv.htm#cli-help">Kommando Hjälp</a></li>
+					  <li><a href="help-sv.htm#init3-tools">Verktyg att använda i textläge (tty) - init 3</a></li>
+					  <li><a href="term-konsole-sv.htm#term-cmds">Linux Terminal kommando Lista</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-sv.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-sv.htm">CheatCodes</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-sv.htm#cheatcodes">aptosid specifika Live-ISO Cheatcodes</a></li>
+				<li><a href="cheatcodes-sv.htm#cheatcodes-linux">Linux generic Cheatcodes</a></li>
+				<li><a href="cheatcodes-vga-sv.htm#vga">VGA Codes</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-sv.htm">Partitionera hårddisken - Traditionell och LVM</a>
+		    <ul class="sub-menu" id="sm6">
+			  <li><a href="part-gparted-sv.htm#ntfs-3g">Skriva på NTFS-partitioner med NTFS-3g</a></li>
+			  <li><a href="part-lvm-sv.htm#part-lvm">Partitionering för att använda LVM - Logical Volume Manager</a></li>
+			  <li><a href="part-gparted-sv.htm#partition">Partitionering med ett GUI &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-sv.htm#partition">Partitionera din HD med hjälp av GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-sv.htm#ntfs">NTFS partitionsstorleksändring med hjälp av GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-sv.htm#partition">Partitionering med CLI &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-sv.htm#partition">Partitionera din HD med cfdisk</a></li>
+					    <li><a href="part-cfdisk-sv.htm#formating">Formattering efter partitionering med cfdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-sv.htm#part-example">Partitionering Grundläggande &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-sv.htm#part-example">Partitionsstorleks Exempel</a></li>
+					  <li><a href="part-uuid-sv.htm#uuid">UUID, Partitionsmärkning och fstab</a></li>
+					  <li><a href="part-cfdisk-sv.htm#disknames">Disk Namngivning i korthet</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-sv.htm">Installations val - HD, USB, VM och Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-sv.htm#Inst-prep">Installationsförberedelser &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-sv.htm#Inst-prep">Installationsförberedelser </a></li>
+					  <li><a href="hd-install-sv.htm#Installation">Installera till din HD</a></li>
+					  <li><a href="hd-install-sv.htm#first-hd-boot">Första uppstarten</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-sv.htm#fromiso">Uppstart från iso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-sv.htm#fromiso">Uppstart från iso - Översikt</a></li>
+					  <li><a href="hd-install-opts-sv.htm#fromiso-grub-leg">Uppstart 'fråniso' med grub-legacy</a></li>
+					  <li><a href="hd-install-opts-sv.htm#grub2-fromiso">Uppstart 'fråniso' med Grub 2</a></li>
+					  <li><a href="hd-install-opts-sv.htm#fromiso-persist">fråniso och persist</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-sv.htm#usb-hd">Installera på USB-enheter &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-sv.htm#usb-hd">Installera på en USB-HD - aptosid specifik - aptosid-on-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-sv.htm#raw-usb">Skriva aptosid till en USB/SSD stick med Linux, MS Windows eller Mac OS X system</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-sv.htm#install-crypt">Installera till krypterade partitioner - cryptroot</a></li>
+		  <li><a href="nbdboot-sv.htm#nbd1">Starta aptosid över ett nätverk</a></li>
+		  <li><a href="hd-install-vmopts-sv.htm#vmopts">Virtual Machine installations val</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="hw-dev-hw-dri-sv.htm">Grafikkort, Skärmar, Xorg &amp; Blandade drivrutiner</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-sv.htm#mon-res">Skärmupplösning och Skärmar  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-sv.htm#mon-res">Skärmupplösning och Skärmar</a></li>
+					  <li><a href="hw-dev-mon-sv.htm#xrandr">Dubbla Skärmar och xrandr</a></li>
+					  <li><a href="hw-dev-mon-sv.htm#mon-binary">Dubbla Skärmar (med hjälp av binärer)</a></li>
+					</ul>
+					</li>
+		<li><a href="hw-dev-hw-dri-sv.htm#non-free-3d">Grafikkort proprietära drivrutiner &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="hw-dev-hw-dri-sv.htm#non-free-3d">Binära, ofria drivrutiner för Nvidia &amp; xorg.conf</a></li>
+					  <li><a href="hw-dev-hw-dri-sv.htm#non-free-3d-2">ofria drivrutiner för ATI, Radeon och andra</a></li>
+					</ul>
+					</li>
+			  <li><a href="hw-dev-hw-dri-sv.htm#non-free-firmware">Hårdvara som behöver icke-fria firmware drivrutiner</a></li>
+			  <li><a href="hw-dev-hw-dri-sv.htm#non-free">Lägga till ofria till Sources List</a></li>
+			  <li><a href="hw-dev-hw-dri-sv.htm#native-nv-ati">FOSS xorg drivrutiner för nVidia, ATI, Radeon, Intel &amp; xorg.conf</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-kde-sv.htm#install-add">Fönsterhanterare</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-kde-sv.htm">Fönsterhanterare&#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-xfce-sv.htm#xfce-notes">Användbara Xfce extras</a></li>
+					    <li><a href="wm-kde-sv.htm#install-add">Användbara extra KDE Apps</a></li>
+					    <li><a href="wm-kde-sv.htm#desk-freeze">Skrivbordet Fryser</a></li>
+					    <li><a href="wm-kde-sv.htm#kde-login">Kan inte logga in i KDE</a></li>
+					    <li><a href="wm-kde-sv.htm#ch-th">Ändra Teman</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-kde-sv.htm#dm">Display Managers - dm</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="internet-connecting-sv.htm">Internet anslutning, WiFi, LAN och nätverk</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-sv.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-sv.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-sv.htm#serv-ftp">FTP Klienter</a></li>
+					    <li><a href="lamp-apache-sv.htm#serv-sec">Säkerhetsprotokoll</a></li>
+					    <li><a href="lamp-apache-sv.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-sv.htm#serv-mysql">MySQL Setup</a></li>
+					    <li><a href="lamp-ppp-sv.htm#serv-php">PHP i Apache</a></li>
+					    <li><a href="ntp-server-sv.htm#ntp-server">Timeserver Installation</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-sv.htm#privoxy">Brandväggar och Anonymitet &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-sv.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-sv.htm#privoxy">Privoxy</a></li>
+					    <li><a href="internet-connecting-sv.htm#firewalls">Brandväggar</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-sv.htm#ssh-x">SSH och Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-sv.htm#setup">Samba-Server Installation</a></li>
+						  <li><a href="samba-sv.htm#configure">Konfigurera SAMBA (Windows)</a></li>
+						  <li><a href="ssh-sv.htm#ssh-fs">SSH Remote Mounting</a></li>
+						  <li><a href="ssh-sv.htm#ssh-x">X Window Apps via SSH</a></li>
+						  <li><a href="ssh-sv.htm#ssh-f">GUI SSH med Konqueror</a></li>
+						  <li><a href="ssh-sv.htm#ssh-w">SSH X-Forwarding från en Windows-PC</a></li>
+						  <li><a href="ssh-sv.htm#ssh">SSH och Säkerhet</a></li>
+					</ul>
+					</li>
+		<li><a href="internet-connecting-sv.htm#netcardconfig">WIFI anslutningar &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="internet-connecting-sv.htm#netcardconfig">Komma Online - Ceni</a></li>
+						    <li><a href="inet-wpagui-sv.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-sv.htm#net-set1">WiFi - Inställning för WiFi roaming</a></li>
+						    <li><a href="internet-connecting-wpa-sv.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-sv.htm#hotswitch">Nätverks växling mellan WiFi och kabel</a></li>
+					</ul>
+					</li>
+		<li><a href="internet-connecting-sv.htm#netcardconfig">Kabelanslutningar&#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="internet-connecting-sv.htm#dial-mod">56k Modem</a></li>
+						    <li><a href="internet-connecting-sv.htm#netcardconfig">Komma Online - Ceni</a></li>
+					</ul>
+					</li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-sv.htm">Pakethantering och dist-upgrade</a>
+	    <ul class="sub-menu" id="sm12">
+		  <li><a href="sys-admin-apt-sv.htm#apt-cook">APT Cookbook och Sources list &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-sv.htm#apt-cook">APT-Guide Cookbook och Sources list</a></li>
+					    <li><a href="sys-admin-apt-sv.htm#apt-install">Installera ett nytt paket</a></li>
+					    <li><a href="sys-admin-apt-sv.htm#apt-delete">Ta bort ett paket</a></li>
+					    <li><a href="sys-admin-apt-sv.htm#apt-downgrade">Behålla paket och nedgradering</a></li>
+					    <li><a href="sys-admin-apt-sv.htm#apt-cache">Paketsökning med apt-cache</a></li>
+					    <li><a href="sys-admin-apt-sv.htm#gui-pacsea">GUI Paketsökning</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-sv.htm#kern-upgrade">Uppgradera Kärnan &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-sv.htm#kern-remove">Ta bort Kärnor</a></li>
+					    <li><a href="sys-admin-kern-upg-sv.htm#kern-upgrade">Uppgradera Kärnan</a></li>
+					    <li><a href="sys-admin-kern-upg-sv.htm#dmakms">Installera kärnmoduler dynamiskt med dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-sv.htm#apt-upgrade">Uppgradera ett installerat system - dist-upgrade - Översikt &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-sv.htm#live-cd-upgrade">Uppgradera via Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-sv.htm#approx">dist-upgrade av flera PCs i ett LAN</a></li>
+					    <li><a href="sys-admin-apt-sv.htm#apt-upgrade">Uppgradera ett installerat system - dist-upgrade - Översikt</a></li>
+					    <li><a href="sys-admin-apt-sv.htm#du-st">Uppgradera ett installerat system - dist-upgrade - Stegen</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-sv.htm">System Administration</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-sv.htm#bois-prep">Uppgradera BIOS med FreeDOS</a></li>
+		<li><a href="vir-rkits-sv.htm#virus-rkits">Virus och Rootkit Scanners</a></li>
+		<li><a href="hd-install-sv.htm#adduser">Lägga till Användare och Lösenord &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-sv.htm#adduser">Lägga till en ny Användare</a></li>
+					    <li><a href="sys-admin-gen-sv.htm#pw-lost">Borttappat root lösenord, nya lösenord</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-sv.htm#start-services">Tjänster och init runlevels &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-sv.htm#start-services">Tjänster aktivera / avaktivera</a></li>
+					    <li><a href="sys-admin-gen-sv.htm#init">aptosid runlevels - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-sv.htm#rsync">Säkerhetskopiera systemet &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-sv.htm#rdiff">Säkerhetskopiera med rdiff</a></li>
+					    <li><a href="sys-admin-rsync-sv.htm#rsync">Säkerhetskopiera med rsync</a></li>
+					    <li><a href="home-sv.htm#home-bu">Flytta /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-sv.htm#fonts">CUPS, Fonter och Ljud &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-sv.htm#fonts">Fonts</a></li>
+					     <li><a href="sys-admin-gen-sv.htm#cups">CUPS - Utskriftssystem</a></li>
+					     <li><a href="sys-admin-gen-sv.htm#sound">Ljudmixer</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-sv.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-sv.htm#chroot">Grub2 - Återställa Grub med chroot</a></li>
+					    <li><a href="sys-admin-grub2-sv.htm#mbr-over-grub2">Grub2 - MBR Överskriven</a></li>
+					    <li><a href="sys-admin-grub2-sv.htm#multi-os">Grub2 - Dubbel och Flervalsstart</a></li>
+					    <li><a href="sys-admin-grub2-sv.htm#grub1-grub2">Grub2 -Uppgradera från Grub1</a></li>
+					    <li><a href="sys-admin-grub2-sv.htm#grub2">Grub2 - Översikt</a></li>
+					</ul>
+					</li>
+			</ul>
+		</li>
+	</ul>
+<!-- menu ends here --> </div>
+<div id="main-page">
+	<div class="divider" id="rsync">
+			<h2 id="top-header">Backing up with rsync</h2>
+							<p>rsync is a tool used to backup and synchronise your files. (It can be run on a variety of *nix ports).</p>
+
+							 <p class="highlight-2">One limitation of rsync is that it can NOT copy from a remote system to a remote system. If you want to do that, then you will need to copy one of the remote systems to a local system and then copy it from the local system to the other remote system. This is a limitation of rsync.</p>
+
+							 <p>With aptosid you have choices how to initiate the proccess, DIY or via a deb package in Debian sid:</p>
+
+				<h5>For the deb package:</h5>
+<pre>
+apt-get install luckybackup
+</pre>
+							<p><a href="http://luckybackup.sourceforge.net/">Homepage of luckybackup.</a></p>
+
+				    <h6>What follows from here is the DIY version</h6>
+							<p>The following gives you a working knowledge of what rsync can do and some sample code to use for your own backup script.</p>
+
+				<p>rsync is a very easy to use file backup program, it can also back up files and directories quickly. This is accomplished by using a very smart routine in checking when files have changed, so that only those files are selected for copying. rsync also uses a compression utility to speed up the copy process <span class=" highlight-3">(when explicitly set with-z option)</span>. This can be explained very simply:</p>
+
+				<p>The rsync program detects files and folders that need to be copied because one or more of their attributes have changed (for example date/time of last modification, or the size of the file), in either case, something is not the same as what was backed up previously. This selection process is very quick.</p>
+
+				<p>When rsync has finished building the list it will use, the copy of these changed files is done a lot faster because of a compression routine performed during the copy process.  rsync does the compression before sending, and  uncompresses at the other end, “on the fly”.</p>
+
+				<p>rsync can copy files from:<br />
+				* local system to local system,<br />
+ 				* local system to remote system,<br />
+				* remote system to local system.</p>
+				<p>It uses either the default <a href="ssh-en.htm">ssh</a> client, or running a rsync daemon on both the source and target systems. The man pages for rsync states that, if you can ssh to the system, then rsync will be able to ssh to it as well.</p>
+
+				<p class="highlight-3">One limitation of rsync is that it can NOT copy from a remote system to a remote system. If you want to do that, then you will need to copy one of the remote systems to a local system and then copy it from the local system to the other remote system. This is a limitation of rsync.</p>
+
+				<p>To give an example of this logic, lets say we have three systems;</p>
+<pre>
+neo – the local system
+morpheus – a remote system
+trinity – a remote system
+</pre>
+				<p>You want to use rsync to copy, or sync, the /home/[user]/Data folders from all the systems with each other. Each system is “owned” by a specific user, in other words, a specific user uses that system specifically, and thus, that system should be used as the “source” for the other two systems. You are also going to be running the rsync command on the “local” system only, which is neo:</p>
+<pre>
+the main user of neo is cuddles,
+the main user of morpheus is tartie, and
+the main user of trinity is taylar.
+</pre>
+				<p>So, what you would want is, backing up, or syncing, of the following:</p>
+
+<pre>
+neo's /home/cuddles/Data area to morpheus and trinity,
+morpheus's /home/tartie/Data area to neo and trinity,
+trinity's /home/taylar/Data area to neo and morpheus.
+</pre>
+
+				<p>The problem of rsync and it not being able to copy from a remote system to a remote system, in the above example, will result when we come to backing up trinity to morpheus, or morpheus to trinity (both the source and target systems are remote) i.e.</p>
+
+
+<pre>
+neo --> morpheus – fine, thats local to remote
+neo --> trinity – fine, thats local to remote
+morpheus --> neo – fine, thats remote to local
+trinity --> neo – fine, thats remote to local
+morpheus --> trinity – remote to remote – won't work
+trinity --> morpheus – remote to remote – won't work
+</pre>
+				<p>To resolve this limitation, you need to change your rsync scheme a little. The following would do this;</p>
+<pre>
+morpheus --> trinity – becomes: morpheus --> neo &amp; neo --> trinity
+trinity --> morpheus – becomes: trinity --> neo &amp; neo --> morpheus
+</pre>
+				<p>This is an extra step, versus the single step, but, considering that you want to get the files over to neo as well, it's just changing where the source comes from, not the final outcome. This assumes that our backups are good and nothing is missing.</p>
+
+				<p class="highlight-3">This limitation of rsync needs to be considered when designing your backup process.</p>
+
+				<h5>Using hostnames with hostnames with rsync.</h5>
+
+				<p>As described above, using neo, morpheus, or trinity in a translation of a physical IP Address, it is a clean, and easy way of making things a lot more readable. To accomplish being able to use those hostnames, is really simple.</p>
+
+				<p>You will want to edit your /etc/hosts file, and add the hostnames and what IP Addresses they relate, or translate to. Here is a small portion of the top lines of a /etc/hosts file, showing the translations:</p>
+<pre>
+192.168.1.15	 neo
+192.168.1.16	 morpheus
+192.168.1.17	 trinity
+</pre>
+				<p>The first line above translates IP Address 192.168.1.15 to the name “neo”, the second 192.168.1.16 to the name “morpheus”, and the last line, IP Address 192.168.1.17 to the name “trinity”. After adding the above and saving the /etc/hosts file, you can then use the “name” instead of the IP Address, or you can continue to use the IP Address. What makes this really shine, is when you change a systems IP Address. To give an example of this change, lets say neo changes its IP Address from 192.168.1.15 to 192.168.1.25</p>
+
+				<p>If you have all of your scripts using the IP Address, you will need to locate them all, and change them to the new address. If, on the other hand, your scripts are using the “name”, all you need to do is change the /etc/hosts file to reflect the change, and all your scripts will work. This can be very handy when you have a lot of scripts that remote connect to other systems, or vice-versa. The “name” method also makes your scripts more easy to read, and follow, because you aren't using the IP Address, but rather, a recognizable name to associate with the IP.</p>
+
+				<h4>rsync, and the two ways you can use it.</h4>
+
+				<p>One way is to <b>“push”</b> files to a target, and the other way, is to <b>“pull”</b> them from the source. Each has its advantages, and some disadvantages. Let's look at each one (for this explanation, let's assume one of the systems is local, and the other is a remote system. That way, you should be able to see the terminology a lot better)</p>
+
+				<p><b>“push”</b> - the local system has the source files and folders on it, and the target location is a remote system. The rsync command is run on the local system, and “pushes” its files to the target system.</p>
+
+				<p>Advantages:<br />
+				* You can have more than one system backing itself up to one target system.<br />
+				* The backup process is distributed over your complete computer systems and not just one system is being taxed.<br />
+				* If one system is faster than another, it can finish before the others do, and do other things.</p>
+
+				<p>Disadvantages:<br />
+				* If you are using a script, and scheduling them with cron, this will require updating and changing multiple crontabs on every system, as well as updating multiple versions of your script.<br />
+				* Your backup can not check if the target system has its target partition mounted, and may be backing up to nothing on the target.</p>
+
+				<p><b>“pull”</b> - the remote system has the source files and folders on it, and the target location is on the local system. The rsync command is run on the local system, and “pulls” the files from the source system.</p>
+
+				<p>Advantages:<br />
+				* One system is made to be the server, controlling all the backups for all the other systems. Centralized backups.<br />
+				* if you are using a script, it is contained only on one system, and only one script, making updating and modifications easy. It also allows you to control only one crontab file for scheduling the script.<br />
+				* Your script can check, and mount, if necessary, the target partition.</p>
+
+				<h6>Syntax of rsync, as found from the man pages:</h6>
+<pre>
+       rsync [OPTION]... SRC [SRC]... DEST
+
+       rsync [OPTION]... SRC [SRC]... [USER@]HOST:DEST
+
+       rsync [OPTION]... SRC [SRC]... [USER@]HOST::DEST
+
+       rsync [OPTION]... SRC [SRC]... rsync://[USER@]HOST[:PORT]/DEST
+
+       rsync [OPTION]... SRC
+
+       rsync [OPTION]... [USER@]HOST:SRC [DEST]
+
+       rsync [OPTION]... [USER@]HOST::SRC [DEST]
+
+       rsync [OPTION]... rsync://[USER@]HOST[:PORT]/SRC [DEST]
+</pre>
+				<h5>Working Example of rsync commands:</h5>
+<pre>
+rsync -agEvz --delete-after --exclude=”*~” morpheus:/home/tartie /media/sda7/SysBackups/morpheus/home
+</pre>
+				<p>Let's take a look at some of the parts of that command:</p>
+<pre>
+the source path/file is: morpheus:/home/tartie
+and the target is: /media/sda7/SysBackups/morpheus/home
+</pre>
+				<p>everything from /home/tartie... will be backed up under the /media/sda7/SysBackups/morpheus/home which will look like this:</p>
+<pre>
+/media/sda7/SysBackups/morpheus/home/tartie...
+</pre>
+				<p>It should be noted, that the only reason /tartie is under /home is because of the TARGET designation, and NOT from the SOURCE. The “source” only selects where the files are coming from, not where they are going. The “target” is what is telling rsync where to put the files it gets from the “source”. Take the following example:</p>
+<pre>
+rsync [...] /home/user/data/files /media/sda7/SysBackups/neo
+</pre>
+				<p>In the above command, only the source folder /files, and whats below it, will be under the target folder /neo – and not this /media/sda7/SysBackups/neo/home/user/data/files</p>
+
+				<p>Be sure to take this into consideration when you are creating your rsync backup commands.</p>
+
+				<h5>Explanation of the options:</h5>
+<pre>
+-a is used for archive mode. From the man page, it explains this option as “in simple terms,
+ a way to backup recursively, and to preserve 'almost' everything”. It does mention that t
+his format does not preserve hardlinks due to the complexity of processing.
+The -a option is stated as being equivalent to the following: -rlptgoD which means this:
+  -r = recursive – process sub-folders and files found in our “source” location.
+  -l = links – when symlinks are encountered, recreate them on the target location.
+  -p = permissions – tells rsync to set target permissions the same as source.
+  -t = times – tells rsync to set target times the same as source.
+  -q = quiet – tells rsync to keep its output minimal, though we add a level of
+verbose with the command -v right after this. To make the process complete “quiet”,
+remove the “v” in the above command.
+  -o = owner – tells rsync that if it's run as root, set the target files owner the same as source.
+-D = this is equivalent to using these two commands: --devices --specials
+ --devices = causes rsync to transfer character and block device files to
+the remote system to recreate these devices. Unfortunately, if you do not
+also include --super in the same command, this has no effect.
+ --specials = causes rsync to transfer special files such as named sockets
+and fifos.
+-g is used to preserve “group” of the source file to the target.
+-E is used to preserve “executable” of the source file to the target.
+-v is used to increase the verbosity that is displayed. After we are sure we are
+backing up what we want, the “v” can be removed. I have left it in, because I
+run this process from a cron job, and prefer to “see” what it did.
+I leave it up to the individual to decide.
+-z is used to compress the data it needs to “transfer” or copy, this makes the copy
+process take less time, because the data being transferred is smaller in size than its real size.
+--delete-after = target files/folders that are no longer on the source are
+deleted after transfer, not before. This “after” is used in case of problems
+or a crash, and the “delete” is used to keep target files that no longer
+exist on source system from hanging around and not cleaned up on our target
+location.
+--exclude = a pattern used to exclude files or folders with. In the
+example, --exclude=“*~” would exclude ANY and ALL files or folders ending
+with the “~” character from being backed up. Only one pattern can be supplied
+with the --exclude option, so if more than one is needed, you need to supply
+additional exclude lines on the command line.
+</pre>
+				<p>Additionally, these are some other, useful command options:</p>
+<pre>
+-c – which will add another level of checks into the source being compared to the target after the copy process,
+but it adds more time to the copy process, and rsync already does comparisons of the source and target files
+during its processing, so this option was not included for the simple fact it slows the complete process down,
+and is only a form of redundancy, which is not needed.
+--super – which, as the man page describes it, the receiver, or target system,
+will attempt super-user activities
+--dry-run – which will show what would have been transferred. This is kind of
+like using the -s option with apt-get install, or apt-get dist-upgrade.
+</pre>
+				<p>The remainder of our command is the source file/folder, and then our target folder location.</p>
+
+				<h5>Example commands:</h5>
+<pre>
+rsync -agEvz --delete-after --exclude=”*~” morpheus:/home/tartie /media/sda7/SysBackups/morpheus/home
+</pre>
+				<p>This command will back up all the files and any folders below /home/tartie on the system translated with a name “morpheus”, and place them into the /media/sda7/SysBackups/morpheus/home folder – keeping the tree structure from tartie folder, out.</p>
+<pre>
+rsync -agEvz --delete-after --exclude=”*~” /home/tartie neo:/media/sda7/SysBackups/morpheus/home
+</pre>
+				<p>This command is the reverse of the command above, it will “push” the /home/tartie folder, its contents, and sub-folders over to the system named neo into the same folder – take note that a system is considered remote when it has the “:” (colon) in front of the path.</p>
+<pre>
+rsync -agEvz --delete-after --exclude=”*~” /home/cuddles /media/sda7/SysBackups/neo/home
+</pre>
+				<p>This command is performing a local to local backup, note that no colon exists in either the source or the target locations. This command will backup locally the /home/cuddles area to the same systems /media/sda7/SysBackups/neo/home location.</p>
+
+				<p>Lets see what a multiple exclude rsync command will look like:</p>
+<pre>
+rsync -agEvz --delete-after --exclude=”*~” --exclude=”*.c” --exclude=”*.o” "/*" /media/sda7/SysBackups/neo
+</pre>
+				<p>The above command will back up EVERYTHING from the root of the local system, and all its files/folders, placing in the target location /media/sda7/SysBackups/neo – only now, it will exclude all files, or folders, that end with a “~”, or a “.c”, or a “.o”</p>
+
+				<p class="highlight-2">Below is a sample rsync command that either one, should error, or, should be avoided whenever possible. It is an example of a remote system to a remote system rsync command:</p>
+<pre>
+rsync -agEvz --delete-after --exclude=”*~” morpheus:/home/tartie trinity:/home
+</pre>
+				<p class="highlight-2">As mentioned earlier in this document, this is a limitation of rsync.</p>
+
+				<p>One last sample command, let's see what a remote to local rsync would look like if we replace our “system names” with the IP Address, instead.</p>
+
+				<p>This first command is the “name” method, and the second one, is the exact same command, using the IP Address</p>
+<pre>
+rsync -agEvz --delete-after --exclude=”*~” morpheus:/home/tartie /media/sda7/SysBackups/morpheus/home
+</pre>
+<pre>
+rsync -agEvz --delete-after --exclude=”*~” 192.168.1.16:/home/tartie /media/sda7/SysBackups/morpheus/home
+</pre>
+				<p>As said earlier, you don't have to use the translated “names”, but, in the first example, you can read what it is doing a lot easier than in the second.</p>
+
+				<p>You should now be able to design a simple command, either from the examples given, or by missing and matching the commands shown to get what you are looking for.</p>
+	</div>
+			<div id="rev">Page last revised 28/05/2009 0915 UTC</div>
+
+
+</div>
+</body>
+</html>
