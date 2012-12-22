@@ -1,0 +1,608 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>aptosid Manuals - rdiff</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+ <!-- Last translation revision edhunter 18/09/2010 1245 UTC-->
+<div id="menu"> <!-- menu starts here el lang maintained by  -->
+<!--aptosid Operating System Manual menu-version-02.13.2011.09.09 -->
+<!-- menu last updated by bluewater 2011.09.09 0935 hrs UTC -->
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="To aptosid.com forums and wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-el.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" />Αναζήτηση Online - Offline </a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Eπιλέξτε άλλη γλώσσα - Choose another language" alt="lang-switch" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-el.htm">Εγχειρίδιο ΛΣ aptosid</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-el.htm#welcome-gen">Εγχειρίδιο ΛΣ aptosid &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-el.htm#cred-team">Συντελεστές</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-el.htm#how-to">Πως να χρησιμοποιήσετε αυτό το εγχειρίδιο &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-el.htm#how-to">Πως να χρησιμοποιήσετε αυτό το εγχειρίδιο</a></li>
+					  <li><a href="welcome-el.htm#table-contents">Πίνακας περιεχομένων</a></li>
+					</ul>
+					</li>
+		<li><a href="help-el.htm#help-gen">Βοήθεια &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-el.htm#help-gen">Που να βρείτε βοήθεια</a></li>
+					  <li><a href="help-el.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-el.htm#welcome-quick">aptosid Οδηγός Γρήγορης Αναφοράς (Quick Start Guide)</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-el.htm">Περιεχόμενα ISO, Εκδόσεις, Κατέβασμα και Εγγραφή</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-el.htm#cd-content">Περιεχόμενα ISO και απαιτήσεις συστήματος &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-el.htm#rolling">Σημειώσεις Έκδοσης</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-el.htm#download-aptosid">aptosid Mirrors, Κατέβασμα και Εγγραφή &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-el.htm#md5">md5 Checksum</a></li>
+					  <li><a href="cd-dl-burning-el.htm#burn-nero">Γράφοντας το ISO στα Windows</a></li>
+					  <li><a href="cd-dl-burning-el.htm#burn-linux">Γράφοντας το ISO στο Linux</a></li>
+					  <li><a href="cd-no-gui-burn-el.htm#burning-no-gui">burniso script</a></li>
+					  <li><a href="cd-no-gui-burn-el.htm#burn-no-gui-gen">Εγγραφή χωρίς γραφικό περιβάλλον</a></li>
+					  <li><a href="cd-dl-burning-el.htm#download-aptosid">aptosid Mirrors Κατεβάσματος</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-el.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-el.htm#rootpw">Κωδικός υπερχρήστη (root) στο aptosid-Live ISO</a></li>
+				<li><a href="live-mode-el.htm#live-cd-installsoft">Εγκατάσταση προγραμμάτων σε περιβάλλον Live-ISO</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-el.htm">Το Τερματικό / Κονσόλα</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-el.htm#term-kon">Τερματικό / Κονσόλα &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-el.htm#term-kon">Τερματικό / Κονσόλα</a></li>
+					  <li><a href="term-konsole-el.htm#colours"> Coloured terminal prompts</a></li>
+					  <li><a href="term-konsole-el.htm#cli-help">Βοήθεια από την γραμμή εντολών</a></li>
+					  <li><a href="help-el.htm#init3-tools">Εργαλεία να ξέρετε για text mode (tty) - init 3</a></li>
+					  <li><a href="term-konsole-el.htm#term-cmds">Λίστα εντολών του Linux</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-el.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-el.htm">CheatCodes</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-el.htm#cheatcodes">Cheatcodes αποκλειστικά για το aptosid Live-ISO</a></li>
+				<li><a href="cheatcodes-el.htm#cheatcodes-linux">Cheatcodes γενικά για το Linux</a></li>
+				<li><a href="cheatcodes-vga-el.htm#vga">Κωδικοί VGA</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-el.htm">Partitioning the Hard Drive - Traditional, GPT and LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-el.htm#hd-ntfs3g">Γράφοντας σε NTFS κατάτμηση με το ntfs-3g</a></li>
+			<li><a href="part-lvm-el.htm#part-lvm">Partitioning to use LVM - Logical Volume Manager</a></li>
+			<li><a href="part-gparted-el.htm#partition">Δημιουργία κατατμήσεων με χρήση γραφικών (GUI) εργαλείων &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-el.htm#partition">Δημιουργία κατατμήσεων στον δίσκο χρησιμοποιώντας το  GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-el.htm#ntfs">Αλλαγή μεγέθους σε NTFS κατάτμηση χρησιμοποιώντας το GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-el.htm#partition">Δημιουργία κατατμήσεων με χρήση εργαλείων κονσόλας (CLI) &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-el.htm#partition">Δημιουργία κατατμήσεων στον σκληρό δίσκο χρησιμοποιώντας το cfdisk</a></li>
+					    <li><a href="part-cfdisk-el.htm#formating">Διαμόρφωση (format) μετά την δημιουργία κατάτμησης, με το cfdisk</a></li>
+					    <li><a href="part-gdisk-el.htm#gdisk-6">Formatting after partitioning with gdisk</a></li>
+					    <li><a href="part-gdisk-el.htm#gdisk-1">GPT Partitioning with gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-el.htm#part-example">Γενικά για κατατμήσεις &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-el.htm#part-example">Παραδείγματα για το μέγεθος των κατατμήσεων</a></li>
+					  <li><a href="part-uuid-el.htm#uuid">UUID, Rebuilding fstab and creating new mount points</a></li>
+					  <li><a href="part-cfdisk-el.htm#disknames">Ονομασία δίσκων εν συντομία</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-el.htm">Επιλογές εγκατάστασης - HD, USB, VM and Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-el.htm#Inst-prep">Προετοιμασία Εγκατάστασης &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-el.htm#Inst-prep">Προετοιμασία Εγκατάστασης</a></li>
+					  <li><a href="hd-install-el.htm#Installation">Εγκατάσταση στον σκληρό δίσκο</a></li>
+					  <li><a href="hd-install-el.htm#first-hd-boot">Πρώτη εκκίνηση</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-el.htm#fromiso">Εκκίνηση fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-el.htm#fromiso">Εκκίνηση fromiso - Γενικά</a></li>
+					  <li><a href="hd-install-opts-el.htm#grub2-fromiso">Εκκίνηση 'fromiso' με Grub 2</a></li>
+					  <li><a href="hd-install-opts-el.htm#fromiso-persist">fromiso και persist</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-el.htm#usb-hd">Εγκατάσταση σε USB δίσκους &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-el.htm#usb-hd">Eγκατάσταση σε USB σκληρό δίσκο - aptosid συγκεκριμένα - aptosid-σε-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-el.htm#raw-usb">Εγραφή του aptosid σε USB/SSD stick με Linux, MS Windows ή Mac OS X σύστημα</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-el.htm#install-crypt">Installing to encryted partitions - cryptroot</a></li>
+		  <li><a href="nbdboot-el.htm#nbd1">Εκκίνηση του aptosid μέσω δικτύου</a></li>
+		  <li><a href="hd-install-vmopts-el.htm#vm">Επιλογές εγκατάστασεις σε Εικονική Μηχανή (Virtual Machine)</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-el.htm">Κάρτες γραφικών, Οθόνες, Xorg &amp; Διάφοροι Οδηγοί</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-el.htm#mon-res">Ανάλυση Οθόνης (screen) και Οθόνες (monitor)  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-el.htm#mon-res">Ανάλυση Οθόνης (screen) και Οθόνες (monitor)</a></li>
+					  <li><a href="hw-dev-mon-el.htm#xrandr">Δύο Οθόνες (Dual Monitors) και xrandr</a></li>
+					  <li><a href="hw-dev-mon-el.htm#mon-binary">Δύο Οθόνες (με χρήση binaries)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-el.htm#foss-xorg">GPU drivers &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-el.htm#ati-3d">AMD/ATI 3D drivers</a></li>
+					  <li><a href="gpu-el.htm#intel">Intel 2D and 3D drivers</a></li>
+					  <li><a href="gpu-el.htm#nvidia">Nvidia 3D drivers</a></li>
+					  <li><a href="gpu-el.htm#foss-xorg">Open Source Xorg drivers</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-el.htm#fw-detect">Firmware detection - non-free </a></li>
+			  <li><a href="nf-firm-el.htm#non-free-firmware">Adding non-free to Sources List</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-el.htm">Διαχείριστες Παραθύρων</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-el.htm">KDE and XFCE Διαχείριστες Παραθύρων &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-el.htm#xfce-notes">Χρήσιμα extras για Xfce</a></li>
+					    <li><a href="wm-dm-el.htm#install-add">Χρήσιμα extras για KDE</a></li>
+					    <li><a href="wm-dm-el.htm#desk-freeze">Κόλλημα επιφάνειας εργασίας</a></li>
+					    <li><a href="wm-dm-el.htm#kde-login">Δεν μπορώ να εισέλθω στο KDE</a></li>
+					    <li><a href="wm-dm-el.htm#ch-th">Aλλάζοντας Θέματα (Themes)</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-el.htm#dm">Installing additional Display Managers</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-el.htm">Σύνδεση στο διαδίκτυο, WiFi, LAN και Δίκτυα</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-el.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-el.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-el.htm#serv-ftp">FTP Πελάτες</a></li>
+					    <li><a href="lamp-apache-el.htm#serv-sec">Πρωτόκολλα ασφαλείας</a></li>
+					    <li><a href="lamp-apache-el.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-el.htm#serv-mysql">MySQL Ρύθμιση</a></li>
+					    <li><a href="lamp-ppp-el.htm#serv-php">PHP με Apache</a></li>
+					    <li><a href="ntp-server-el.htm#ntp-server">Timeserver Ρύθμιση</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-el.htm#tor">Firewalls και Privacy &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-el.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-el.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-el.htm#firewalls">Firewalls</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-el.htm#ssh-x">SSH και Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-el.htm#setup">Samba-Server Ρύθμιση</a></li>
+						  <li><a href="samba-el.htm#configure">Ρύθμιση SAMBA (Windows)</a></li>
+						  <li><a href="ssh-el.htm#ssh-fs">SSH Απομακρυσμένη Προσάρτυση</a></li>
+						  <li><a href="ssh-el.htm#ssh-x">Παραθυρικές Eφαρμογές μέσω SSH</a></li>
+						  <li><a href="ssh-el.htm#ssh-f">GUI SSH με Konqueror</a></li>
+						  <li><a href="ssh-el.htm#ssh-w">SSH X-Forwarding από ένα Windows-PC</a></li>
+						  <li><a href="ssh-el.htm#ssh">SSH και Ασφάλεια</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-el.htm#netcardconfig">WIFI Συνδέσεις &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-el.htm#netcardconfig">Mπαίνοντας στο Δίκτυο - Ceni</a></li>
+						    <li><a href="inet-wpagui-el.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-el.htm#net-set1">WiFi - Ρύθμιση του WiFi Roaming</a></li>
+						    <li><a href="inet-wpa-el.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-el.htm#hotswitch">Εναλλαγή δικτύου μεταξύ WiFi και σύρματος</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-el.htm#netcardconfig">Wired (σύρμα) Συνδέσεις &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-el.htm#dial-mod">56k Modems</a></li>
+						    <li><a href="inet-ceni-el.htm#netcardconfig">Mπαίνοντας στο Δίκτυο - Ceni</a></li>
+					</ul>
+					</li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-el.htm">Διαχείριση Πακέτων και dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-el.htm#apt-cook">APT Cookbook and Sources list &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-el.htm#apt-cook">APT-Οδηγός και Λίστες Πηγών (Sources list)</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-install">Εγκαθιστώντας ένα νέο πακέτο</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-delete">Διαγράφοντας ένα πακέτο</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-downgrade">Υποβαθμίζοντας / Κρατώντας (Hold) ένα πακέτο</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-cache">Αναζήτηση πακέτων με apt-cache</a></li>
+					    <li><a href="sys-admin-apt-el.htm#gui-pacsea">GUI Package searching</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-el.htm#kern-upgrade">Αναβαθμίζοντας τον πυρήνα &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-el.htm#kern-remove">Διαγραφή ενός πυρήνα</a></li>
+					    <li><a href="sys-admin-kern-upg-el.htm#kern-upgrade">Αναβαθμίζοντας τον πυρήνα</a></li>
+					    <li><a href="sys-admin-kern-upg-el.htm#dmakms">Εγκατάσταση kernel modules δυναμικά με dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-el.htm#apt-upgrade">Aναβάθμιση σε ένα Εγκατεστημένο Σύστημα - dist-upgrade - Γενικά &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-el.htm#live-cd-upgrade">Αναβαθμίζοντας χρησιμοποιώντας το Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-el.htm#approx">dist-upgrade πολλαπλών PC σε ένα LAN</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-upgrade">Aναβάθμιση σε ένα Εγκατεστημένο Σύστημα - dist-upgrade - Γενικά</a></li>
+					    <li><a href="sys-admin-apt-el.htm#du-st">Aναβάθμιση σε ένα Εγκατεστημένο Σύστημα - dist-upgrade - Τα Βήματα</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-el.htm">Διαχείριση Συστήματος</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-el.htm#bois-prep">Αναβάθμιση του BIOS με το FreeDOS</a></li>
+		<li><a href="vir-rkits-el.htm#virus-rkits">Ανιχνευτές Iών και Rootkits</a></li>
+		<li><a href="hd-install-el.htm#adduser">Προσθήκη χρηστών και Passwords &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-el.htm#adduser">Προσθήκη ενός νέου χρήστη</a></li>
+					    <li><a href="sys-admin-gen-el.htm#pw-lost">Χαμένο password root, νέα passwords</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-el.htm#start-services">Υπηρεσίες και init runlevels &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-el.htm#start-services">Ενεργοποίηση / Απενεργοποίηση Υπηρεσιών (Services)</a></li>
+					    <li><a href="sys-admin-gen-el.htm#pkill">Killing a service or process</a></li>
+					    <li><a href="sys-admin-gen-el.htm#init">aptosid Επίπεδα εκτέλεσης (runlevels) - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-el.htm#rsync">Backup του συστήματος &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-el.htm#rdiff">Back-Up με rdiff</a></li>
+					    <li><a href="sys-admin-rsync-el.htm#rsync">Back-Up με rsync</a></li>
+					    <li><a href="home-el.htm#home-bu">Μεταφορά του /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-el.htm#fonts">CUPS, Γραμματοσειρές και Ήχος &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-el.htm#fonts">Γραμματοσειρές</a></li>
+					     <li><a href="sys-admin-gen-el.htm#cups">CUPS - Σύστημα Εκτύπωσης</a></li>
+					     <li><a href="sys-admin-gen-el.htm#sound">Mixers Ήχου</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-el.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-el.htm#chroot">Grub2 - Recovering Grub with chroot</a></li>
+					    <li><a href="sys-admin-grub2-el.htm#mbr-over-grub2">Grub2 - MBR Overwritten</a></li>
+					    <li><a href="sys-admin-grub2-el.htm#multi-os">Grub2 - Dual και Multibooting</a></li>
+					    <li><a href="sys-admin-grub2-el.htm#grub1-grub2">Grub2 -Αναβάθμιση α</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Sponsored by webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="../lib/sponsor-logo/webtropia-logo.png" title="aptosid is proudly hosted by webtropia.com" alt="aptosid is proudly hosted by webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div>
+<div id="main-page">
+	<div class="divider" id="rdiff">
+			<!--h2 id="top-header">Backing-Up the System with rdiff-backup</h2-->
+			<h2 id="top-header">Κάνοντας αντίγραφα ασφαλείας (Backing-Up) του συστήματος με το rdiff-backup</h2>
+				<!--p>rdiff-backup is a tool used to backup your files. (It can be run on a variety of *nix ports).</p>-->
+				<p>Το rdiff-backup είναι ένα εργαλείο που χρησιμοποιείται για να κάνετε backup τα αρχεία σας. (Μπορεί να λειτουργήσει σε διάφορα *nix περιβάλλοντα).</p>
+
+				<!--p class="highlight-2">Run the commands in  as root in konsole, unless told otherwise</p-->
+				<p class="highlight-2">Εκτελέστε τις εντολές στην κονσόλα σαν διαχειριστής (root) εκτός και αν αναφέρεται κάτι άλλο.</p>
+
+				<!--p>*great for recovering messed up dist-upgrades, kernel upgrades etc (and also just for restoring individual files).<br />
+				*only backs up what's changed like rsync does (so each backup doesn't take long).<br />
+				*keeps a history of changes (which means that you can restore a file you deleted three weeks ago!)<br />
+				*does secure backups over a network (using ssh).<br />
+				*backups up partitions while they are mounted (so it's easy to automate a daily backup ... no unmounting necessary).<br />
+				*can restore everything if your hard drive goes belly-up and you have to buy a new one.<br />
+				*scales to backup large networks (linux is fine, windows is more difficult) and is used by businesses.<br />
+				*is a command-line-driven app, so it's great for those who like to do things like automate backups in a powerful way (ie a bash script which is called by cron).<br />
+				*remembers and deals with file ownerships and permissions, and also deals with symbolic links (and all that sort of stuff) so when you restore, you get things exactly as they were.</p-->
+				<p>*Πολύ καλό για να επαναφέρετε συστήματα που έχουν πρόβλημα μετά από dist-upgrades (ενημέρωση συστήματος), ενημέρωση πυρήνα κτλ. (και επίσης για να επανακτήσετε μεμονωμένα αρχεία).<br />
+				*κάνει back-up ότι άλλαξε όπως κάνει και το rsync (έτσι το κάθε backup δεν παίρνει πολύ χρόνο).<br />
+				*κρατά ημερολόγιο με τις αλλαγές (πράγμα που σημαίνει ότι μπορείτε να επανακτήσετε ένα αρχείο που σβήσατε πριν από τρεις εβδομάδες!)<br />
+				*κάνει ασφαλή backup μέσω δικτύου (με χρήση ssh).<br />
+				*κάνει backup κατατμήσεις ενώ είναι προσαρτημένες (mounted) (οπό ταν είναι εύκολο να αυτοματοποιήσετε ένα καθημερινό backup ... δεν χρειάζεται αποπροσάρτηση).<br />
+				*μπορεί να ανακτήσει τα πάντα εάν ο δίσκος σας "πεθάνει" και πρέπει να αγοράσετε καινούργιο.<br />
+				*μπορεί να κάνει backup μεγάλα δίκτυα (linux είναι εντάξει, windows είναι πιο δύσκολο) και χρησιμοποιείται από εταιρίες.<br />
+				*είναι μια εφαρμογή της γραμμής εντολών (command-line-driven app) και γιαυτό είναι πολύ καλή για αυτούς που τους αρέσει να κάνουν πράγματα, όπως αυτοματοποιημένα backups με ένα ισχυρό τρόπο (πχ ένα bash script το οποίο καλείται από το cron).<br />
+				*Θυμάται και χειρίζεται τις ιδιοκτησίες (ownerships) και δικαιώματα (permissions) των αρχείων. Επίσης χειρίζεται συμβολικούς συνδέσμους (symbolic links) (και όλα τα παρόμοια πράγματα) έτσι όταν ανακτάτε το σύστημα, τα πράγματα είναι ακριβώς όπως ήταν.</p>
+
+			<!--h6>What you'll need</h6-->
+			<h6>Τι θα χρειαστείτε</h6>
+				<!--p>rdiff-backup keeps an entire (uncompressed) copy of the files you are backing up, and it also keeps a history (incremental backups), so this means that your backup space needs to be larger than what you're backing up. If you are backing up 100 gigs of space, you may need 120 gigs of space (on a separate hard drive preferably!).</p-->
+				<p>Το rdiff-backup κρατάει ένα ολόκληρο (ασυμπίεστο) αντίγραφο των αρχείων που κάνετε backup και κρατάει επίσης ένα ημερολόγιο (history) (incremental backups). Αυτό σημαίνει ότι ο χώρος που χρειάζεται για backup πρέπει να είναι μεγαλύτερος από αυτά που κάνετε backup. Εάν κάνετε backup 100 gigs (giga bytes), μπορεί να χρειαστείτε 120 gigs χώρο (κατά προτίμηση σε ξεχωριστό σκληρό δίσκο!).</p>
+
+			<!--h6>How to set it up</h6-->
+			<h6>Πως να το ρυθμίσετε</h6>
+				<!--p>Let's say that your pc has the following:<br />
+				* a 100 gig hard drive (sda) which is in use, with mounts sda1 used for the root partition, and sda5 used for storing music and other files, and sda6 for swap.<br />
+				* a spare 200 gig hard drive (sdb) which is not in use, with one mount sdb1 ... we'll use this one for our backups.<br />
+				* IP address 192.168.0.1</p-->
+				<p>Ας πούμε ότι ο υπολογιστής σας έχει τα πιο κάτω:<br />
+				* ένα 100 gig σκληρό δίσκο (sda), ο οποίος χρησιμοποιείται, με σημεία προσάρτησης (mounts) sda1 που είναι η root κατάτμηση, sda5 που χρησιμοποιείται για την φύλαξη μουσικών αρχείων και άλλων αρχείων και sda6 για swap.<br />
+				* ένα εξτρα 200 gig σκληρό δίσκο (sdb), ο οποίος δεν χρησιμοποιείται, με ένα σημείο προσάρτησης sdb1. θα χρησιμοποιήσουμε αυτόν για τα backup μας.<br />
+				* IP διεύθυνση 192.168.0.1</p>
+
+				<!--p>The first thing to do is to install rdiff-backup:</p-->
+				<p>Το πρώτο πράγμα που πρέπει να κάνετε είναι να εγκαταστήσετε το rdiff-backup:</p>
+<pre>
+# apt-get install rdiff-backup
+</pre>
+				<p>Τώρα, αν και μπορείτε να κάνετε backup οποιοδήποτε κατάλογο, θέλουμε να σας δείξουμε πως να κάνετε backup ολόκληρες κατατμήσεις. Θέλουμε να κάνουμε backup την sda1 και την sda5 (δεν θέλουμε να κάνουμε backup την sda6) οπό ταν κάνουμε μερικούς καταλόγους για να φυλάξουμε τα δεδομένα:</p>
+<pre>
+# mkdir -p /media/sdb1/rdiff-backups/192.168.0.1/root
+# mkdir -p /media/sdb1/rdiff-backups/192.168.0.1/sda5
+</pre>
+				<!--p>You need the IP address distinguished because if you wish to use this computer to also backup another one (covered later on).</p-->
+				<p>Χρειάζεται να διευκρινίσετε διεύθυνση IP εάν θέλετε να χρησιμοποιήσετε αυτόν τον υπολογιστή για να κάνετε backup ένα άλλο υπολογιστή (καλύπτεται πιο κάτω).</p>
+
+			<!--h6>Backing up</h6-->
+			<h6>Κάνοντας το backup</h6>
+
+				<!--p>rdiff-backup uses the syntax <span class="highlight-3">rdiff-backup source-dir dest-dir</span>. Note: always specify directory names, not file names.</p-->
+				<p>Το rdiff-backup χρησιμοποιεί την σύνταξη <span class="highlight-3">rdiff-backup πηγή προορισμός</span>. Σημείωση: πάντα να δίνετε ονόματα καταλόγων και όχι ονόματα αρχείων.</p>
+
+				<!--p>To back up sda5, run:</p-->
+				<p>Για να κάνετε backup το sda5, τρέξτε:</p>
+<pre>
+# rdiff-backup /media/sda5 /media/sdb1/rdiff-backups/192.168.0.1/sda5
+</pre>
+				<!--p>And to back up the root partition, run:</p-->
+				<p>Και για να κάνετε backup την root κατάτμηση, τρέξτε:</p>
+<pre>
+# rdiff-backup --exclude '/tmp/*' --exclude '/proc/*' --exclude '/sys/*' --exclude '/media/*/*' / /media/sdb1/rdiff-backups/192.168.0.1/root
+</pre>
+				<!--p>Any "AF_UNIX path too long" errors can be ignored. This may take a while as it's the first time the partition has been backed up, so rdiff-backup will have to back up the entire partition (not just the differences). Notice that we don't want to back up /tmp as this always changes, nor /proc or /sys as these don't contain real files, and also we don't want to back up mounts. If you did back up mounts, then you would be backing up sdb1, and could get into an infinite loop! One way around this is to backup the mounts separately.</p-->
+				<p>Οποιαδήποτε "AF_UNIX path too long" λάθη (errors) μπορούν να αγνοηθούν. Μπορεί να χρειαστεί λίγη ώρα μιας και είναι η πρώτη φορά που η κατάτμηση θα γίνει backup και το rdiff-backup θα πρέπει να κάνει backup ολόκληρη την κατάτμηση (όχι μόνο τις διαφορές). Σημειώστε ότι δεν θέλουμε να κάνουμε backup το /tmp γιατί αυτό πάντα αλλάζει, ούτε το το /proc ή το /sys γιατί δεν περιέχουν πραγματικά αρχεία και επίσης δεν θέλουμε να κάνουμε backup τα σημεία προσάρτησης. Εάν κάνετε backup σημεία προσάρτησης, τότε θα κάνατε backup το sdb1 και θα μπορούσατε να μπείτε σε άπειρο βρόχο (infinite loop)! Μια λύση γιαυτό είναι να κάνετε ξεχωριστά backup τα σημεία προσάρτησης.</p>
+
+				<!--p>Now the reason you put '/proc/*' instead of just '/proc' is that this will cunningly still backup the directory name /proc, but will ignore everything inside. The same is true to /tmp, /sys, and even more cunningly all the mount point names.</p-->
+				<p>Τώρα ο λόγος που βάζετε '/proc/*' αντί του '/proc' είναι γιατί αυτό θα κάνει backup τον κατάλογο με το όνομα /proc , αλλά θα αγνοήσει ότι υπάρχει μέσα. Το ίδιο ισχύει για το /tmp , /sys και ακόμη περισσότερο για όλα τα ονόματα των σημείων προσάρτησης.</p>
+
+				 <!--p>This way, if you destroy your root partition and do a full restore, /tmp, /proc, /sys and the mount points names will be created (just as they should). If /tmp doesn't exist when X starts up, it may complain )See the man page for more on exclude and include).</p-->
+				<p>Με αυτόν τον τρόπο, εάν καταστρέψετε την root κατάτμηση σας και κάνετε μια πλήρη επαναφορά, τα /tmp, /proc, /sys και τα ονόματα τον σημείων προσάρτησης θα δημιουργηθούν (όπως θα έπρεπε). Εάν το /tmp δεν υπάρχει όταν ξεκινάει ο X , μπορεί να παραπονεθεί. (Δέστε την σελίδα εγχειριδίου (man page) για περισσότερα για τα --exclude και --include) .</p>
+
+			<!--h6>Restoring directories from backups</h6-->
+			<h6>Επαναφορά καταλόγων από τα backup</h6>
+
+				<!--p>rdiff-backup uses the syntax:</p-->
+				<p>το rdiff-backup χρησιμοποιεί αυτή την σύνταξη:</p>
+<pre>
+rdiff-backup -r &lt;από-πότε&gt; &lt;πηγή&gt; &lt;προορισμός&gt;
+</pre>
+				<!--p>Now if you were to accidentally delete the directory /media/sda7/photos, you can restore it by doing:</p-->
+				<p>Τώρα εάν κατά λάθος σβήσατε τον κατάλογο /media/sda7/photos, μπορείτε να τον ανακτήσετε γράφοντας:</p>
+<pre>
+# rdiff-backup -r now /media/sdb1/rdiff-backups/192.168.0.1/sda5/photos /media/sda5/photos
+</pre>
+				<!--p>The "-r now" option means restore from the latest backup. If you have been backing everything up periodically (via crontab, say), and didn't realise that the photos directory were missing until a few days later, you would need to restore from a backup from a few days ago (and not "now", as the latest backup says that the photos directory doesn't exist). Or perhaps you just want to get back to a previous version of something.</p-->
+				<p>Η "-r now" επιλογή σημαίνει ανάκτησε από το πιο πρόσφατο backup. Εάν κάνατε τα πάντα backup περιοδικά (μέσω crontab, ας πούμε) και δεν συνειδητοποιήσατε ότι ο κατάλογος λείπει εδώ και μερικές μέρες, θα πρέπει να κάνετε την ανάκτηση από ένα backup μερικών ημερών (και όχι "now" γιατί το πιο πρόσφατο backup λέει ότι ο κατάλογος με τις φωτογραφίες δεν υπάρχει). Ή ίσος θέλετε απλά μια παλαιότερη έκδοση ενός αρχείου.</p>
+
+				<!--p>If you want to restore from three days ago, then use the "-r 3D" ... but, as the man page says, note:</p-->
+				<p>Εάν θέλετε να επαναφέρετε από τρεις μέρες πριν, τότε χρησιμοποιήστε το "-r 3D" αλλά, όπως λέει και η σελίδα εγχειριδίου (man page), σημειώστε:</p>
+
+				<!--p class="highlight-1">"3D" refers to the instant 72 hours before the present, and if there was no backup made at that time, rdiff-backup restores the state recorded for the previous backup. For instance, in the above case, if "3D" is used, and there are only backups from 2 days and 4 days ago, the directory would be restored as it was 4 days ago (so you have to think about it before you restore).</p-->
+				<p class="highlight-1">Το "3D" αναφέρεται στην στιγμή 72 ώρες πριν το παρόν και αν δεν έγινε backup εκείνη την ώρα, το rdiff-backup επαναφέρει την κατάσταση που καταγράφτηκε για το προηγούμενο backup. Για παράδειγμα, για την πιο πάνω περίπτωση, εάν χρησιμοποιηθεί το "3D" και υπάρχουν μόνο backup από 2 μέρες και 4 μέρες πριν, ο κατάλογος θα επαναφερθεί στην κατάσταση στην οποία βρισκόταν πριν από 4 μέρες (γιαυτό πρέπει να το σκεφτείτε πριν κάνετε ανάκτηση).</p>
+
+				<!--p>Using the following will list the date and times of when the backups were made for sda5:</p-->
+				<p>Η χρήση της παρακάτω εντολής θα σας δείξει τις μέρες και τις ώρες που έγιναν τα backup για το sda5:</p>
+<pre>
+# rdiff-backup -l /media/sdb1/rdiff-backups/192.168.0.1/sda5
+</pre>
+			<!--h5>Restoring partitions</h5-->
+			<h5>Επαναφορά κατατμήσεων</h5>
+
+				<!--p>You can also restore whole partitions (mounts), after all, a mount point is really just a directory.</p-->
+				<p>Μπορείτε να επαναφέρετε ολόκληρες κατατμήσεις (σημεία προσάρτησης), στο κάτω κάτω, ένα σημείο προσάρτησης είναι απλά ένας κατάλογος.</p>
+
+				<!--p class="highlight-2">WARNING: Don't restore the root partition while you are booted up into it! With one command you will lose all the files on all your partitions, including all the backups on a separate hard drive!! rdiff-backup does exactly what it was instructed to do ... if the the backup for the root partition has empty mount points, thus in order to restore to how the backup is, it deletes everything in the mounts to make everything like the backup.</p-->
+				<p class="highlight-2">ΠΡΟΣΟΧΗ: Μην επαναφέρετε την root κατάτμηση ενώ χρησιμοποιείται (booted into it)! Με μια εντολή θα χάσετε όλα σας τα αρχεία σε όλες σας τις κατατμήσεις καθώς και όλα τα backup που βρίσκονται σε ξεχωριστό δίσκο!! Το rdiff-backup κάνει ακριβώς αυτό που του είπατε να κάνει. Εάν το backup για την root κατάτμηση έχει άδεια σημεία προσάρτησης, για να μπορέσει να επαναφέρει το σύστημα στην κατάσταση του backup, διαγράφει τα πάντα μέσα στα σημεία προσάρτησης όπως είναι και στο backup.</p>
+
+				<!--p>To restore sda5 from the latest backup, we simply do:</p-->
+				<p>Για να επαναφέρουμε την sda5 από το πιο πρόσφατο backup, απλά γράφουμε:</p>
+<pre>
+# rdiff-backup -r now /media/sdb1/rdiff-backups/192.168.0.1/sda5 /media/sda5
+</pre>
+			<!--h5>Restoring the root partition</h5-->
+			<h5>Επαναφέροντας την root κατάτμηση</h5>
+
+				<!--p>But to restore the root partition, it's not so simple. Don't restore the root partition while it's mounted (see the above warning). It's really useful to be able to restore the root partition, as then if you mess up things when installing/upgrading, or mess up installing a new kernel (etc), you have piece of mind that you can roll things back to how you had them, and it'll only take 20 minutes.</p-->
+				<p>Η επαναφορά της root κατάτμησης δεν είναι τόσο απλή. Μην επαναφέρετε την root κατάτμηση ενώ είναι προσαρτημένη (δείτε την προειδοποίηση πιο πάνω). Είναι πολύ χρήσιμο να μπορείτε να επαναφέρετε την root κατάτμηση, γιατί έτσι εάν κάνετε κάποιο λάθος κατά την διάρκεια της εγκατάστασης/ενημέρωσης ή αν κάνετε κάποιο λάθος στην εγκατάσταση ενός νέου πυρήνα (κτλ), θα έχετε το κεφάλι σας ήσυχο γιατί θα μπορείτε να επαναφέρετε τα πράγματα όπως ακριβώς ήταν πριν και θα σας πάρει μόνο 20 λεπτά.</p>
+
+				<!--p>One way to restore the root partition is to boot into a spare linux partition if you have one on your hard disk. Then since you will be able to restore the partition you want, as it won't be mounted as root. After you restore the partition, boot up into it and it will be exactly has it was when it was backed up ... exactly! This is by far the easiest method.</p-->
+				<p>Ένας τρόπος να επαναφέρετε την root κατάτμηση, είναι να εκκινήσετε (boot) από μια άλλη linux κατάτμηση, αν έχετε μια πάνω στον σκληρό σας δίσκο. Τότε θα μπορείτε να επαναφέρετε την κατάτμηση που θέλετε μιας και δεν θα είναι προσαρτημένη σαν root. Μετά που θα επαναφέρετε την κατάτμηση, εκκινήστε από αυτή και θα είναι ακριβώς όπως ήταν όταν κάνατε το backup! Αυτή είναι με διαφορά η πιο εύκολη μέθοδος.</p>
+
+				<!--p>Another way to restore the root partition is to boot up the aptosid-live cd live cd and do the restore from there. rdiff-backup is included in aptosid.  In case the aptosid live-cd version you have doest not include rdiff, you can type in the grub (Bootoptions, (Cheatcodes)) the cheatcode "unionfs" and that will mean you can install applications on the  live cd. Just boot up and do the following commands:</p-->
+				<p>Ένας άλλος τρόπος επαναφοράς της root κατάτμησης, είναι να εκκινήσετε το aptosid-live cd και να κάνετε την επαναφορά από εκεί. Το rdiff-backup περιέχεται μέσα στο aptosid.  Σε περίπτωση που η έκδοση του aptosid live-cd που έχετε δεν περιλαμβάνει το rdiff, μπορείτε να γράψτε στον grub (Bootoptions, (Cheatcodes)) το cheatcode "unionfs" και αυτό θα σημαίνει ότι μπορείτε να εγκαταστήσετε εφαρμογές στο live cd. Απλά εκκινήστε και δώστε τις ακόλουθες εντολές:</p>
+<pre>
+$ sudo su
+# wget -O /etc/apt/sources.list http://aptosid.com/files/misc/sources.list
+# apt-get update
+# apt-get install rdiff-backup
+</pre>
+				<!--h6>Now let's do the restore:</h6-->
+				<h6>Τώρα ας κάνουμε την επαναφορά:</h6>
+<pre>
+# mount /dev/sda1 /media/sda1
+# mount /dev/sdb1 /media/sdb1
+# rdiff-backup -r now /media/sdb1/rdiff-backups/192.168.0.1/root /media/sda1
+</pre>
+
+				<!--p>Note: If you don't have a aptosid CD and your Live-CD is supported by klik you can install rdiff-backup using the Klik and calling:</p-->
+				<p>Σημείωση: Αν δεν έχετε ένα aptosid CD και το Live-CD σας υποστηρίζεται από το klik, μπορείτε να εγκαταστήσετε το rdiff-backup χρησιμοποιόντας το Klik και καλώντας:</p>
+<pre>
+$ sudo ~/.zAppRun ~/Desktop/rdiff-backup_0.13.4-5.cmg rdiff-backup -r now /media/sdb1/rdiff-backups/192.168.0.1/root /media/sda1
+</pre>
+
+				<!--p>It is recommended that anyone backing up their root partition (with the intention of restoring from it if they have to) should test the restoring process. Nothing worse than thinking everything will be fine, and then coming across something unexpected during an emergency.</p-->
+				<p>Σε οποιοσδήποτε κάνει backup την root κατάτμηση του, με πρόθεση να την επαναφέρει από το backup αν χρειαστεί, συνιστάται να δοκιμάσει την διαδικασία επαναφοράς. Δεν υπάρχει τίποτα χειρότερο από το να νομίζετε ότι όλα θα είναι εντάξει και μετά να αντιμετωπίσετε κάτι απρόσμενο κατά την διάρκεια ενός επείγον περιστατικού.</p>
+
+				<!--p>If the hard drive has been changed or reformatted, recheck the UUIDs, (or Labels), in <span class="highlight-3">/boot/grub/menu.lst (grub-legacy) or files in /etc/grub.d (grub2)</span> and <span class="highlight-3">/etc/fstab</span>, and alter accordingly. An easy way to get the information to alter the menu.lst and fstab files, if required, is as root:</p-->
+				<p>Εάν αλλάξατε τον σκληρό δίσκο ή αν τον διαμορφώσατε, ξανά ελέγξτε τα UUIDs, (ή τις Ετικέτες), στο <span class="highlight-3">/boot/grub/menu.lst (grub-legacy) or files in /etc/grub.d (grub2)/boot/grub/menu.lst (grub-legacy) or files in /etc/grub.d (grub2)</span> και <span class="highlight-3">/etc/fstab</span>, και αλλάξτε τις αναλόγως. Ένας εύκολος τρόπος απόκτησης των πληροφοριών για την αλλαγή των menu.lst και fstab αρχείων, εάν χρειαστεί, είναι σαν root:</p>
+
+<pre>
+blkid
+</pre>
+
+			<!--h5>Backing up other pc's</h5-->
+			<h5>Κάνοντας backup άλλους υπολογιστές</h5>
+
+				<!--p>You can back up other pc's onto the local pc, as long as our local pc can ssh to the other pc's (and as long as you have room on your hard drive). The ssh server (sshd) needs to be running on remote pc. The other pc's don't have to be in your local lan, they could be anywhere in the world.</p-->
+				<p>Μπορείτε να κάνετε backup άλλους υπολογιστές πάνω στον τοπικό (local) σας υπολογιστή, φτάνει ο τοπικός σας υπολογιστής να μπορεί να συνδεθεί στον άλλο υπολογιστή μέσω ssh (και φτάνει να έχετε χώρο στον σκληρό σας δίσκο). Ο ssh διακομιστής (server) (sshd) πρέπει να τρέχει στον απομακρυσμένο (remote) υπολογιστή. Οι άλλοι υπολογιστές δεν χρειάζεται να βρίσκονται στο τοπικό σας δίκτυο (lan), μπορούν να βρίσκονται οπουδήποτε στον κόσμο.</p>
+
+				<!--p>Let's assume that your remote pc has the following:<br />
+				1) a 100 gig hard drive (sda) which is in use, with only mounts,<br />
+				2) sda1 used for the root partition,<br />
+				3) sda5 that we are storing some temporary files that we don't want backed up,<br />
+				4) and sda6 for swap <br />
+				5) IP address 192.168.0.2</p-->
+				<p>Ας υποθέσουμε ότι ο απομακρυσμένος υπολογιστής σας έχει τα ακόλουθα:<br />
+				1) ένα 100 gig σκληρό δίσκο (sda) ο οποίος χρησιμοποιείται, με μοναδικά σημεία προσάρτησης:<br />
+				2) sda1 χρησιμοποιείται για την root κατάτμηση,<br />
+				3) sda5 στην οποία φυλάσσονται ορισμένα προσωρινά αρχεία τα οποία δεν θέλουμε να κάνουμε backup<br />
+				4) και sda6 για swap <br />
+				5) διεύθυνση IP 192.168.0.2</p>
+
+				<!--p>Note: both 100 gig drives cannot usually be backed up on the 200 gig drive using rdiff-backup (since there would be no room for incremental files), but since you aren't backing up sda5 on the remote pc (and since hard drives aren't usually 100% full anyway, although don't rely on this) then you may calculate that you have enough room. Every time rdiff-backup performs another backup, more incremental files are created, and this takes up more and more room.</p-->
+				<p>Σημείωση: και οι δυο 100 gig δίσκοι δεν μπορούν συνήθως να γίνουν back up πάνω στον 200 gig δίσκο χρησιμοποιώντας το rdiff-backup (γιατί δεν θα υπάρχει χώρος για επιπλέων αρχεία), αλλά αφού δεν κάνετε back up τον sda5 στον απομακρυσμένο υπολογιστή (και μιας και οι δίσκοι δεν είναι συνήθως 100% γεμάτοι, αν και δεν πρέπει να βασιστείτε σε αυτό) μπορείτε να υπολογίσετε ότι έχετε αρκετό χώρο. Κάθε φορά που τρέχει το rdiff-backup, περισσότερα αρχεία δημιουργούνται και αυτά πιάνουν όλο και περισσότερο χώρο.</p>
+
+				<!--p>You can tell rdiff-backup only to keep a max of 1 months backups (this command is shown later on), and this would take up less room than telling rdiff-backup to keep a years worth of data. And of course if you want a years worth of data backed up, then you have to have the hard drive space to store a years worth of incremental files.</p-->
+				<p>Μπορείτε να πείτε στο rdiff-backup να κρατάει τα backup μόνο για ένα μήνα (την εντολή αυτή σας την δείχνουμε αργότερα) και αυτό θα χρειάζεται πιο λίγο χώρο παρά αν του πείτε να κρατάει τα backup για ένα χρόνο. Φυσικά αν θέλετε να κρατάτε τα δεδομένα ενός χρόνου, τότε θα πρέπει να έχετε και χώρο στον σκληρό σας δίσκο για αυτά τα δεδομένα.</p>
+
+				<!--p>The first thing you have to do is to install rdiff-backup on the remote pc as well (every computer that you want to backup including the backup server must have rdiff-backup installed).</p-->
+				<p>Το πρώτο πράγμα που πρέπει να κάνετε είναι να εγκαταστήσετε το rdiff-backup και στον απομακρυσμένο υπολογιστή (ο κάθε υπολογιστής που θέλετε να κάνετε backup, συμπεριλαμβανομένου και του backup server, πρέπει να έχει εγκατεστημένο το rdiff-backup).</p>
+
+				<!--p>To back the remote pc up onto the local pc, run on the local pc (ie 192.168.0.1): <span class="highlight-4">Note the use of the double colons :: </span></p-->
+				<p>Για να κάνετε backup τον απομακρυσμένο υπολογιστή πάνω στον τοπικό υπολογιστή, τρέξτε στο τοπικό υπολογιστή (πχ 192.168.0.1): <span class="highlight-4">Προσέξτε την χρήση της διπλή άνω και κάτω τελείας :: </span></p>
+<pre>
+# mkdir /media/sdb1/rdiff-backups/192.168.0.2/root
+# rdiff-backup --exclude '/tmp/*' --exclude '/proc/*' --exclude '/sys/*' --exclude '/media/*/*' 192.168.0.2::/ /media/sdb1/rdiff-backups/192.168.0.2/root
+</pre>
+				<!--p>Now if you want to restore a directory on the remote pc, initiate the restore on either the local pc, or the remote pc.</p-->
+				<p>Τώρα εάν θέλετε να επαναφέρετε έναν κατάλογο στον απομακρυσμένο υπολογιστή, ξεκινήστε την διαδικασία επαναφοράς είτε στον τοπικό υπολογιστή ή στον απομακρυσμένο υπολογιστή.</p>
+
+				<!--p>This is how you would restore the directory /usr/local/games on the remote pc, by initiating it from the remote pc:</p-->
+				<p>Αυτός είναι ο τρόπος με τον οποίο θα επαναφέρετε τον κατάλογο /usr/local/games σε ένα απομακρυσμένο υπολογιστή, ξεκινώντας την διαδικασία από τον απομακρυσμένο υπολογιστή:</p>
+<pre>
+# rdiff-backup -r now 192.168.0.1::/media/sdb1/rdiff-backups/192.168.0.1/root/usr/local/games /usr/local/games
+</pre>
+				<!--p>This is how you would restore the directory /usr/local/games on the remote pc, by initiating it from the local pc:</p-->
+				<p>Αυτός είναι ο τρόπος με τον οποίο θα επαναφέρετε τον κατάλογο /usr/local/games σε ένα απομακρυσμένο υπολογιστή, ξεκινώντας την διαδικασία από τον τοπικό υπολογιστή:</p>
+<pre>
+# rdiff-backup -r now /media/sdb1/rdiff-backups/192.168.0.1/root/usr/local/games 192.168.0.2::/usr/local/games
+</pre>
+				<!--p>Use the same sort of syntax when restoring your root partition from a live cd (where the remote pc has been booted up via live cd ... see above).</p-->
+				<p>Η ίδια σύνταξη χρησιμοποιείται όταν επαναφέρετε την root κατάτμηση σας από ένα live cd (ο απομακρυσμένος υπολογιστής έχει εκκινηθεί μέσω live cd. Δείτε πιο πάνω).</p>
+
+			<!--h5>Automating backups:</h5-->
+			<h5>Αυτοματοποίηση των backups:</h5>
+
+				<!--p>If you are backing up other pc's onto your local pc first thing to do is enable password-less ssh logins using ssh keys. <span class="highlight-2">Note that this is talking about password-less ssh logins as root. This can be tied down so that only rdiff-backup commands are performed, but this is outside the scope of this topic Please refer to <a href="ssh-el.htm#ssh-s">SSH Configuration</a> </span>  We are going to assume complete trust, and we are going to set up the simplest way of achieving password-less logins.</p-->
+				<p>Εάν κάνετε backup άλλους υπολογιστές πάνω στον τοπικό υπολογιστή σας, το πρώτο πράγμα που πρέπει να κάνετε είναι να ενεργοποιήσετε συνδέσεις (login) χωρίς password με την χρήση ssh κλειδιών. <span class="highlight-2">Σημειώστε ότι αυτό μιλάει για συνδέσεις ssh σαν υπέρ-χρήστης χωρίς password. Αυτό μπορεί να περιοριστεί έτσι ώστε να εκτελούνται μόνο rdiff-backup εντολές αλλά αυτό είναι εκτός των σκοπών του παρόντος θέματος. Παρακαλώ αναφερθείτε στο to <a href="ssh-el.htm#ssh-s">SSH Ρύθμιση</a> </span> . Θα υποθέσουμε ότι υπάρχει απόλυτη εμπιστοσύνη και θα ρυθμίσουμε την απλούστερη μέθοδο για να επιτύχουμε συνδέσεις χωρίς password.</p>
+
+				<!--p>From the local pc, do the following:</p-->
+				<p>Από τον τοπικό υπολογιστή, κάντε τα ακόλουθα:</p>
+<pre>
+# [ -f /root/.ssh/id_rsa ] || ssh-keygen -t rsa -f /root/.ssh/id_rsa
+</pre>
+				<!--p>And press enter twice for blank passwords. Then do:</p-->
+				<p>Και πατήστε δυο φορές το enter για κενά (blank) passwords. Μετά κάντε:</p>
+<pre>
+# cat /root/.ssh/id_rsa.pub | ssh 192.168.0.2 'mkdir -p /root/.ssh;\<!--dunno if this is wrong-->
+&gt; cat - &gt;&gt; /root/.ssh/authorized_keys2'
+</pre>
+				<!--p>You will be prompted for your root password.</p-->
+				<p>Θα σας ζητηθεί το password υπέρ-χρήστη (root).</p>
+
+				<!--p>Now you can ssh to the remote pc as root without having to type a password, and rdiff-backup can be automated.</p-->
+				<p>Τώρα μπορείτε να συνδεθείτε στον απομακρυσμένο υπολογιστή σαν υπέρ-χρήστης χωρίς να χρειάζεται να πληκτρολογήσετε password και το rdiff-backup μπορεί να αυτοματοποιηθεί.</p>
+
+				<!--p>Next, create a bash script that contains all the rdiff-backup commands. Our bash script may look something like this:</p-->
+				<p>Μετά δημιουργήστε ένα bash script το οποίο περιέχει όλες τις rdiff-backup εντολές. Το bash script μας μπορεί να μοιάζει κάπως έτσι:</p>
+
+
+<pre>
+#!/bin/bash
+RDIFF=/usr/bin/rdiff-backup
+echo
+echo "=======Backing up 192.168.0.1 root======="
+${RDIFF} --ssh-no-compression --exclude '/tmp/*' --exclude '/proc/*' --exclude '/sys/*' --exclude '/media/*/*' / /media/sdb1/rdiff-backups/192.168.0.1/root
+echo "(and purge increments older than 1 month)"
+${RDIFF} --remove-older-than 1M --force /media/sdb1/rdiff-backups/192.168.0.1/root
+echo
+echo "=======Backing up 192.168.0.1 mount sda5======="
+${RDIFF} --ssh-no-compression --exclude /media/sda5/myjunk /media/sda5 /media/sdb1/rdiff-backups/192.168.0.1/sda5
+echo "(and purge increments older than 1 months)"
+${RDIFF} --remove-older-than 1M --force /media/sdb1/rdiff-backups/192.168.0.1/sda5
+echo
+echo "=======Backing up 192.168.0.2 root======="
+${RDIFF} --ssh-no-compression --exclude '/tmp/*' --exclude '/proc/*' --exclude '/sys/*' --exclude '/media/*/*' --exclude '/mnt/*/*' 192.168.0.2::/media/sdb1/rdiff-backups/192.168.0.2/root
+echo "(and purge increments older than 1 months)"
+${RDIFF} --remove-older-than 1M --force /media/sdb1/rdiff-backups/192.168.0.2/root
+</pre>
+
+
+				<!--p>Now you can name this bash script "myrdiff-backups.bash" and put it in /usr/local/bin on our local (backup server) machine, and change it to an executable. Run the bash script and make sure it works.</p-->
+				<p>Τώρα μπορείτε να ονομάσετε αυτό το bash script "myrdiff-backups.bash" και να το βάλετε μέσα στο /usr/local/bin πάνω στον τοπικό (local) σας υπολογιστή (backup server) και να το κάνετε εκτελέσιμο (executable). Τρέξτε το bash script και σιγουρευτείτε ότι δουλεύει.</p>
+
+				<!--p>And lastly you can get cron to call it every night at 8pm. The following line in root's crontab will do the trick, call</p-->
+				<p>Τέλος μπορείτε να βάλετε το cron να το καλεί κάθε νύχτα ώρα 8μμ. Η πιο κάτω γραμμή μέσα στο crontab του διαχειριστή (root) θα κάνει το κόλπο. Δώστε:</p>
+<pre>
+# crontab -e
+και προσθέστε την πιο κάτω γραμμή
+0 20 * * * /usr/local/bin/myrdiff-backups.bash
+</pre>
+
+			<div id="rev">Τελευταία αναθεώρηση περιεχομένου 14/08/2010 0100 UTC</div>
+</div>
+</div>
+</body>
+</html>

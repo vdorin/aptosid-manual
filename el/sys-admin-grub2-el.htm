@@ -1,0 +1,674 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>aptosid Manuals - Grub2</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision by edhunter 17/09/2010 0520hrs UTC -->
+<div id="menu"> <!-- menu starts here el lang maintained by  -->
+<!--aptosid Operating System Manual menu-version-02.13.2011.09.09 -->
+<!-- menu last updated by bluewater 2011.09.09 0935 hrs UTC -->
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="To aptosid.com forums and wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-el.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" />Αναζήτηση Online - Offline </a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Eπιλέξτε άλλη γλώσσα - Choose another language" alt="lang-switch" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-el.htm">Εγχειρίδιο ΛΣ aptosid</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-el.htm#welcome-gen">Εγχειρίδιο ΛΣ aptosid &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-el.htm#cred-team">Συντελεστές</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-el.htm#how-to">Πως να χρησιμοποιήσετε αυτό το εγχειρίδιο &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-el.htm#how-to">Πως να χρησιμοποιήσετε αυτό το εγχειρίδιο</a></li>
+					  <li><a href="welcome-el.htm#table-contents">Πίνακας περιεχομένων</a></li>
+					</ul>
+					</li>
+		<li><a href="help-el.htm#help-gen">Βοήθεια &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-el.htm#help-gen">Που να βρείτε βοήθεια</a></li>
+					  <li><a href="help-el.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-el.htm#welcome-quick">aptosid Οδηγός Γρήγορης Αναφοράς (Quick Start Guide)</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-el.htm">Περιεχόμενα ISO, Εκδόσεις, Κατέβασμα και Εγγραφή</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-el.htm#cd-content">Περιεχόμενα ISO και απαιτήσεις συστήματος &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-el.htm#rolling">Σημειώσεις Έκδοσης</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-el.htm#download-aptosid">aptosid Mirrors, Κατέβασμα και Εγγραφή &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-el.htm#md5">md5 Checksum</a></li>
+					  <li><a href="cd-dl-burning-el.htm#burn-nero">Γράφοντας το ISO στα Windows</a></li>
+					  <li><a href="cd-dl-burning-el.htm#burn-linux">Γράφοντας το ISO στο Linux</a></li>
+					  <li><a href="cd-no-gui-burn-el.htm#burning-no-gui">burniso script</a></li>
+					  <li><a href="cd-no-gui-burn-el.htm#burn-no-gui-gen">Εγγραφή χωρίς γραφικό περιβάλλον</a></li>
+					  <li><a href="cd-dl-burning-el.htm#download-aptosid">aptosid Mirrors Κατεβάσματος</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-el.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-el.htm#rootpw">Κωδικός υπερχρήστη (root) στο aptosid-Live ISO</a></li>
+				<li><a href="live-mode-el.htm#live-cd-installsoft">Εγκατάσταση προγραμμάτων σε περιβάλλον Live-ISO</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-el.htm">Το Τερματικό / Κονσόλα</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-el.htm#term-kon">Τερματικό / Κονσόλα &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-el.htm#term-kon">Τερματικό / Κονσόλα</a></li>
+					  <li><a href="term-konsole-el.htm#colours"> Coloured terminal prompts</a></li>
+					  <li><a href="term-konsole-el.htm#cli-help">Βοήθεια από την γραμμή εντολών</a></li>
+					  <li><a href="help-el.htm#init3-tools">Εργαλεία να ξέρετε για text mode (tty) - init 3</a></li>
+					  <li><a href="term-konsole-el.htm#term-cmds">Λίστα εντολών του Linux</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-el.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-el.htm">CheatCodes</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-el.htm#cheatcodes">Cheatcodes αποκλειστικά για το aptosid Live-ISO</a></li>
+				<li><a href="cheatcodes-el.htm#cheatcodes-linux">Cheatcodes γενικά για το Linux</a></li>
+				<li><a href="cheatcodes-vga-el.htm#vga">Κωδικοί VGA</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-el.htm">Partitioning the Hard Drive - Traditional, GPT and LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-el.htm#hd-ntfs3g">Γράφοντας σε NTFS κατάτμηση με το ntfs-3g</a></li>
+			<li><a href="part-lvm-el.htm#part-lvm">Partitioning to use LVM - Logical Volume Manager</a></li>
+			<li><a href="part-gparted-el.htm#partition">Δημιουργία κατατμήσεων με χρήση γραφικών (GUI) εργαλείων &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-el.htm#partition">Δημιουργία κατατμήσεων στον δίσκο χρησιμοποιώντας το  GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-el.htm#ntfs">Αλλαγή μεγέθους σε NTFS κατάτμηση χρησιμοποιώντας το GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-el.htm#partition">Δημιουργία κατατμήσεων με χρήση εργαλείων κονσόλας (CLI) &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-el.htm#partition">Δημιουργία κατατμήσεων στον σκληρό δίσκο χρησιμοποιώντας το cfdisk</a></li>
+					    <li><a href="part-cfdisk-el.htm#formating">Διαμόρφωση (format) μετά την δημιουργία κατάτμησης, με το cfdisk</a></li>
+					    <li><a href="part-gdisk-el.htm#gdisk-6">Formatting after partitioning with gdisk</a></li>
+					    <li><a href="part-gdisk-el.htm#gdisk-1">GPT Partitioning with gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-el.htm#part-example">Γενικά για κατατμήσεις &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-el.htm#part-example">Παραδείγματα για το μέγεθος των κατατμήσεων</a></li>
+					  <li><a href="part-uuid-el.htm#uuid">UUID, Rebuilding fstab and creating new mount points</a></li>
+					  <li><a href="part-cfdisk-el.htm#disknames">Ονομασία δίσκων εν συντομία</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-el.htm">Επιλογές εγκατάστασης - HD, USB, VM and Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-el.htm#Inst-prep">Προετοιμασία Εγκατάστασης &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-el.htm#Inst-prep">Προετοιμασία Εγκατάστασης</a></li>
+					  <li><a href="hd-install-el.htm#Installation">Εγκατάσταση στον σκληρό δίσκο</a></li>
+					  <li><a href="hd-install-el.htm#first-hd-boot">Πρώτη εκκίνηση</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-el.htm#fromiso">Εκκίνηση fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-el.htm#fromiso">Εκκίνηση fromiso - Γενικά</a></li>
+					  <li><a href="hd-install-opts-el.htm#grub2-fromiso">Εκκίνηση 'fromiso' με Grub 2</a></li>
+					  <li><a href="hd-install-opts-el.htm#fromiso-persist">fromiso και persist</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-el.htm#usb-hd">Εγκατάσταση σε USB δίσκους &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-el.htm#usb-hd">Eγκατάσταση σε USB σκληρό δίσκο - aptosid συγκεκριμένα - aptosid-σε-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-el.htm#raw-usb">Εγραφή του aptosid σε USB/SSD stick με Linux, MS Windows ή Mac OS X σύστημα</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-el.htm#install-crypt">Installing to encryted partitions - cryptroot</a></li>
+		  <li><a href="nbdboot-el.htm#nbd1">Εκκίνηση του aptosid μέσω δικτύου</a></li>
+		  <li><a href="hd-install-vmopts-el.htm#vm">Επιλογές εγκατάστασεις σε Εικονική Μηχανή (Virtual Machine)</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-el.htm">Κάρτες γραφικών, Οθόνες, Xorg &amp; Διάφοροι Οδηγοί</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-el.htm#mon-res">Ανάλυση Οθόνης (screen) και Οθόνες (monitor)  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-el.htm#mon-res">Ανάλυση Οθόνης (screen) και Οθόνες (monitor)</a></li>
+					  <li><a href="hw-dev-mon-el.htm#xrandr">Δύο Οθόνες (Dual Monitors) και xrandr</a></li>
+					  <li><a href="hw-dev-mon-el.htm#mon-binary">Δύο Οθόνες (με χρήση binaries)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-el.htm#foss-xorg">GPU drivers &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-el.htm#ati-3d">AMD/ATI 3D drivers</a></li>
+					  <li><a href="gpu-el.htm#intel">Intel 2D and 3D drivers</a></li>
+					  <li><a href="gpu-el.htm#nvidia">Nvidia 3D drivers</a></li>
+					  <li><a href="gpu-el.htm#foss-xorg">Open Source Xorg drivers</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-el.htm#fw-detect">Firmware detection - non-free </a></li>
+			  <li><a href="nf-firm-el.htm#non-free-firmware">Adding non-free to Sources List</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-el.htm">Διαχείριστες Παραθύρων</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-el.htm">KDE and XFCE Διαχείριστες Παραθύρων &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-el.htm#xfce-notes">Χρήσιμα extras για Xfce</a></li>
+					    <li><a href="wm-dm-el.htm#install-add">Χρήσιμα extras για KDE</a></li>
+					    <li><a href="wm-dm-el.htm#desk-freeze">Κόλλημα επιφάνειας εργασίας</a></li>
+					    <li><a href="wm-dm-el.htm#kde-login">Δεν μπορώ να εισέλθω στο KDE</a></li>
+					    <li><a href="wm-dm-el.htm#ch-th">Aλλάζοντας Θέματα (Themes)</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-el.htm#dm">Installing additional Display Managers</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-el.htm">Σύνδεση στο διαδίκτυο, WiFi, LAN και Δίκτυα</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-el.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-el.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-el.htm#serv-ftp">FTP Πελάτες</a></li>
+					    <li><a href="lamp-apache-el.htm#serv-sec">Πρωτόκολλα ασφαλείας</a></li>
+					    <li><a href="lamp-apache-el.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-el.htm#serv-mysql">MySQL Ρύθμιση</a></li>
+					    <li><a href="lamp-ppp-el.htm#serv-php">PHP με Apache</a></li>
+					    <li><a href="ntp-server-el.htm#ntp-server">Timeserver Ρύθμιση</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-el.htm#tor">Firewalls και Privacy &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-el.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-el.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-el.htm#firewalls">Firewalls</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-el.htm#ssh-x">SSH και Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-el.htm#setup">Samba-Server Ρύθμιση</a></li>
+						  <li><a href="samba-el.htm#configure">Ρύθμιση SAMBA (Windows)</a></li>
+						  <li><a href="ssh-el.htm#ssh-fs">SSH Απομακρυσμένη Προσάρτυση</a></li>
+						  <li><a href="ssh-el.htm#ssh-x">Παραθυρικές Eφαρμογές μέσω SSH</a></li>
+						  <li><a href="ssh-el.htm#ssh-f">GUI SSH με Konqueror</a></li>
+						  <li><a href="ssh-el.htm#ssh-w">SSH X-Forwarding από ένα Windows-PC</a></li>
+						  <li><a href="ssh-el.htm#ssh">SSH και Ασφάλεια</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-el.htm#netcardconfig">WIFI Συνδέσεις &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-el.htm#netcardconfig">Mπαίνοντας στο Δίκτυο - Ceni</a></li>
+						    <li><a href="inet-wpagui-el.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-el.htm#net-set1">WiFi - Ρύθμιση του WiFi Roaming</a></li>
+						    <li><a href="inet-wpa-el.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-el.htm#hotswitch">Εναλλαγή δικτύου μεταξύ WiFi και σύρματος</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-el.htm#netcardconfig">Wired (σύρμα) Συνδέσεις &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-el.htm#dial-mod">56k Modems</a></li>
+						    <li><a href="inet-ceni-el.htm#netcardconfig">Mπαίνοντας στο Δίκτυο - Ceni</a></li>
+					</ul>
+					</li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-el.htm">Διαχείριση Πακέτων και dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-el.htm#apt-cook">APT Cookbook and Sources list &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-el.htm#apt-cook">APT-Οδηγός και Λίστες Πηγών (Sources list)</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-install">Εγκαθιστώντας ένα νέο πακέτο</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-delete">Διαγράφοντας ένα πακέτο</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-downgrade">Υποβαθμίζοντας / Κρατώντας (Hold) ένα πακέτο</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-cache">Αναζήτηση πακέτων με apt-cache</a></li>
+					    <li><a href="sys-admin-apt-el.htm#gui-pacsea">GUI Package searching</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-el.htm#kern-upgrade">Αναβαθμίζοντας τον πυρήνα &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-el.htm#kern-remove">Διαγραφή ενός πυρήνα</a></li>
+					    <li><a href="sys-admin-kern-upg-el.htm#kern-upgrade">Αναβαθμίζοντας τον πυρήνα</a></li>
+					    <li><a href="sys-admin-kern-upg-el.htm#dmakms">Εγκατάσταση kernel modules δυναμικά με dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-el.htm#apt-upgrade">Aναβάθμιση σε ένα Εγκατεστημένο Σύστημα - dist-upgrade - Γενικά &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-el.htm#live-cd-upgrade">Αναβαθμίζοντας χρησιμοποιώντας το Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-el.htm#approx">dist-upgrade πολλαπλών PC σε ένα LAN</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-upgrade">Aναβάθμιση σε ένα Εγκατεστημένο Σύστημα - dist-upgrade - Γενικά</a></li>
+					    <li><a href="sys-admin-apt-el.htm#du-st">Aναβάθμιση σε ένα Εγκατεστημένο Σύστημα - dist-upgrade - Τα Βήματα</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-el.htm">Διαχείριση Συστήματος</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-el.htm#bois-prep">Αναβάθμιση του BIOS με το FreeDOS</a></li>
+		<li><a href="vir-rkits-el.htm#virus-rkits">Ανιχνευτές Iών και Rootkits</a></li>
+		<li><a href="hd-install-el.htm#adduser">Προσθήκη χρηστών και Passwords &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-el.htm#adduser">Προσθήκη ενός νέου χρήστη</a></li>
+					    <li><a href="sys-admin-gen-el.htm#pw-lost">Χαμένο password root, νέα passwords</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-el.htm#start-services">Υπηρεσίες και init runlevels &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-el.htm#start-services">Ενεργοποίηση / Απενεργοποίηση Υπηρεσιών (Services)</a></li>
+					    <li><a href="sys-admin-gen-el.htm#pkill">Killing a service or process</a></li>
+					    <li><a href="sys-admin-gen-el.htm#init">aptosid Επίπεδα εκτέλεσης (runlevels) - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-el.htm#rsync">Backup του συστήματος &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-el.htm#rdiff">Back-Up με rdiff</a></li>
+					    <li><a href="sys-admin-rsync-el.htm#rsync">Back-Up με rsync</a></li>
+					    <li><a href="home-el.htm#home-bu">Μεταφορά του /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-el.htm#fonts">CUPS, Γραμματοσειρές και Ήχος &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-el.htm#fonts">Γραμματοσειρές</a></li>
+					     <li><a href="sys-admin-gen-el.htm#cups">CUPS - Σύστημα Εκτύπωσης</a></li>
+					     <li><a href="sys-admin-gen-el.htm#sound">Mixers Ήχου</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-el.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-el.htm#chroot">Grub2 - Recovering Grub with chroot</a></li>
+					    <li><a href="sys-admin-grub2-el.htm#mbr-over-grub2">Grub2 - MBR Overwritten</a></li>
+					    <li><a href="sys-admin-grub2-el.htm#multi-os">Grub2 - Dual και Multibooting</a></li>
+					    <li><a href="sys-admin-grub2-el.htm#grub1-grub2">Grub2 -Αναβάθμιση α</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Sponsored by webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="../lib/sponsor-logo/webtropia-logo.png" title="aptosid is proudly hosted by webtropia.com" alt="aptosid is proudly hosted by webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div>
+<div id="main-page">
+		<div class="divider" id="grub2">
+			<h2 id="top-header">GRUB 2</h2>
+				<!--h6>Basic summary of the major differences going from GRUB 1 (now known as grub-legacy) to GRUB 2:</h6-->
+				<h6>Βασικές διαφορές μεταξύ του GRUB 1 (γνωστό και σαν grub-legacy) και του GRUB 2:</h6>
+
+
+					<ul>
+						  	<!--li><span class="highlight-3">The menu.lst no longer exists.</span></li-->
+							<li><span class="highlight-3">Το menu.lst δεν υπάρχει πλέον.</span></li>
+
+							<!--li>A file called <span class="highlight-3">grub.cfg</span> is now in control of the Grub Screen.</li-->
+							<li>Ένα αρχείο με όνομα <span class="highlight-3">grub.cfg</span> είναι τώρα υπεύθυνο για την Οθόνη του Grub.</li>
+
+							<!--li>grub.cfg is automatically generated by the scripts in <span class="highlight-3"> /etc/grub.d</span>.</li-->
+							<li>Το grub.cfg δημιουργείται αυτόματα από τα scripts μέσα στο <span class="highlight-3"> /etc/grub.d</span>.</li>
+
+							<!--li>The partition numbering is also different. Partitions are numbered from 1 instead of 0 (drives are still numbered from 0):
+<pre>
+Linux      grub1     grub2
+/dev/sda1  (hd0,0)   (hd0,1)
+/dev/sda2  (hd0,1)   (hd0,2)
+/dev/sda3  (hd0,2)   (hd0,3)
+
+/dev/sdb1  (hd1,0)   (hd1,1)
+/dev/sdb2  (hd1,1)   (hd1,2)
+/dev/sdb3  (hd1,2)   (hd1,3)
+</pre>
+							</li-->
+							<li>Διαφορετική είναι και η αρίθμηση των κατατμήσεων. Η αρίθμηση του ξεκινάει από το 1 και όχι το 0 (η αρίθμηση των οδηγών/συσκευών εξακολουθεί να αρχίζει από το 0):
+<pre>
+Linux      grub1     grub2
+/dev/sda1  (hd0,0)   (hd0,1)
+/dev/sda2  (hd0,1)   (hd0,2)
+/dev/sda3  (hd0,2)   (hd0,3)
+
+/dev/sdb1  (hd1,0)   (hd1,1)
+/dev/sdb2  (hd1,1)   (hd1,2)
+/dev/sdb3  (hd1,2)   (hd1,3)
+</pre>
+							</li>
+
+							<!--li>Stanzas in grub.cfg are phrased slightly differently compared with the menu.lst and can't be copied directly from the Grub 1 menu.lst to the Grub 2 grub.cfg as the grub.cfg file is the 'result' file. <span class="highlight-2">The grub.cfg file should never be altered manually. </span></li-->
+							<li>Οι γραμμές στο grub.cfg είναι γραμμένες λίγο διαφορετικά σε σύγκριση με αυτές στο menu.lst και δεν μπορούν να αντιγραφούν απευθείας από το Grub 1 menu.lst στο Grub 2 grub.cfg γιατί το grub.cfg αρχείο είναι το 'αποτέλεσμα'. <span class="highlight-2">Δεν πρέπει να γίνονται ποτέ χειροκίνητες αλλαγές στο αρχείο grub.cfg.</span></li>
+
+					 </ul>
+		</div>
+		<div class="divider" id="grub2-files">
+					 <!--h4> The Grub 2 default config file</h4-->
+					<h4> Το προεπιλεγμένο αρχείο ρύθμισης του Grub 2</h4>
+							<!--p>The <span class="highlight-3">/etc/default/grub</span> file contains the grub2 variable settings. For instance, timeout on menu, default entries in the menu to be activated, kernel parameters, the use of grub graphics and so forth.</p-->
+							<p>Το <span class="highlight-3">/etc/default/grub</span> αρχείο περιέχει τις ρυθμίσεις των μεταβλητών του grub2. Για παράδειγμα, timeout στο μενού, προεπιλεγμένες καταχωρίσεις στο μενού, παραμέτρους πυρήνα, χρήση γραφικών στον grub κτλ.</p>
+
+					 <!--h4> The Grub 2 script files</h4-->
+					 <h4> Τα scripts του Grub 2</h4>
+							<!--p><span class="highlight-3"> /etc/grub.d</span> files control the 'result' file called <span class="highlight-3"> grub.cfg</span>, which is found in <span class="highlight-3"> /boot/grub/</span>.</p-->
+							<p>Τα<span class="highlight-3"> /etc/grub.d</span> αρχεία ελέγχουν το αρχείο με όνομα<span class="highlight-3"> grub.cfg</span>, και το οποίο βρίσκεται στο <span class="highlight-3"> /boot/grub/</span>.</p>
+
+							<!--p><span class="highlight-2">The grub.cfg file should never be altered manually. </span>All alterations are to be done with one or all of the following script files located in <span class="highlight-3"> /etc/grub.d</span>. os-prober should handle 90% of all cases:</p-->
+							<p><span class="highlight-2">Δεν πρέπει να γίνονται ποτέ χειροκίνητες αλλαγές στο αρχείο grub.cfg. </span>Όλες οι αλλαγές θα πρέπει να γίνονται με ένα ή όλα τα scripts που ακολουθούν και που βρίσκονται στο<span class="highlight-3"> /etc/grub.d</span>. Το os-prober θα πρέπει να είναι σε θέση να χειριστή το 90% των περιπτώσεων:</p>
+<pre>
+00_header:
+05_debian_theme: Sets background, text colors, themes
+10_hurd: Locates Hurd kernels
+10_linux: Locates Linux kernels based on results of the lsb_release command.
+20_memtest86+: If the file /boot/memtest86+.bin exists, it is included in the boot menu.
+30_os-prober: Searches for Linux and other OS's on all partitions; includes them in the boot menu.
+40_custom: A template for adding custom boot menu entries for other Operating Systems.
+60_fll-fromiso: A template for adding custom boot menu entries for fromiso to a USB-stick/SSD-card.
+<span class="highlight-2">60_fll-fromiso is not to be altered use /etc/default/grub2-fll-fromiso
+Read  <a href="hd-install-opts-el.htm#grub2-fromiso">Booting 'fromiso' with Grub 2</a></span>
+</pre>
+							<!--p>After an alteration is made, grub.cfg needs to know about the changes. In the case of aptosid kernel upgrades, the update command is automatically run. In the case of a manual alteration made by you as the system administrator to any of the above files, you need to run: </p-->
+							<p>Μετά από μια αλλαγή το grub.cfg θα πρέπει να ενημερωθεί για την αλλαγή. Κατά την διάρκεια της αναβάθμισης του πυρήνα του aptosid, το αρχείο ενημερώνεται αυτόματα. Σε περίπτωση που κάνετε αλλαγές εσείς, σαν διαχειριστής του συστήματος, σε ένα από τα πιο πάνω αρχεία, θα πρέπει να τρέξετε: </p>
+
+<pre>
+update-grub
+</pre>
+
+							<!--p><span class="highlight-3">The Debian Grub2 deb package is designed so that a manual alteration by you would be rarely needed.</span></p-->
+							<p><span class="highlight-3">Το Debian Grub2 deb πακέτο είναι σχεδιασμένο έτσι ώστε μια χειροκίνητη αλλαγή να χρειάζεται σπανίως.</span></p>
+		</div>
+		<div class="divider" id="grub1-grub2">
+				<!--h2>Upgrading from Grub Legacy to Grub 2</h2-->
+				<h2>Αναβάθμιση του Grub Legacy σε Grub 2</h2>
+							<!--p><span class="highlight-2">We recommend to upgrade to Grub 2 cleanly and remove Grub 1 totally</span>. You should be aware that you can mess everything up so be very careful.</p-->
+							<p><span class="highlight-2">Συνηστούμε την "καθαρή" αναβάθμιση σε Grub 2 και την ολοκληρωτική διαγραφή του Grub 1</span>. Θα πρέπει να ξέρετε ότι μπορεί να "σπάσετε" τα πάντα γιαυτό θα πρέπει να είστε προσεκτικοί.</p>
+
+						<h6>Βήμα 1: </h6>
+							<!--p>Ensure that your system is fully <span class="highlight-3">dist-upgraded in init 3. </span></p-->
+							<p>Σιγουρευτείτε ότι το σύστημα σας είναι πλήρως ενημερωμένο, <span class="highlight-3">dist-upgrad σε init 3. </span></p>
+<pre>
+apt-get update
+Ctrl+alt+F1
+init 3
+apt-get dist-upgrade
+init 5 &amp;&amp; exit
+</pre>
+						<h6>Βήμα 2:</h6>
+							<p>Αφαιρέστε ολοκληρωτικά το Grub 1:</p>
+<pre>
+rm -rf /boot/grub
+apt-get purge grub-gfxboot
+</pre>
+							<!--p>The result will be that <span class="highlight-3">fll-iso2usb* grub-gfxboot* install-usb-gui* </span> will be removed.  Type <span class="highlight-3">Y</span> to confirm.</p-->
+							<p>Σαν αποτέλεσμα θα έχετε την αφαίρεση των <span class="highlight-3">fll-iso2usb* grub-gfxboot* install-usb-gui* </span>. <span class="highlight-3">Y</span> για επιβεβαίωση.</p>
+
+						<h6>Βήμα 3:</h6>
+
+<pre>
+apt-get install grub2 os-prober
+</pre>
+
+<div class="screenshot"><img src="../lib/images-common/images-grub2/grub2-2.png" title="Grub2" alt="Grub2" /></div>
+							<!--p>Use the tab key to select OK</p-->
+							<p>Χρησιμοποιήστε το tab για να επιλέξετε OK</p>
+
+<div class="screenshot"><img src="../lib/images-common/images-grub2/grub2-3.png" title="Grub2" alt="Grub2" /></div>
+							<!--p>Use the tab key to select OK</p-->
+							<p>Χρησιμοποιήστε το tab για να επιλέξετε OK</p>
+
+<div class="screenshot"><img src="../lib/images-common/images-grub2/grub2-convert-1.png" title="Grub2-conversion 1" alt="Grub2-conversion 1" /></div>
+
+							<!--p>Use the keyboard arrow and space bar to place an <span class="highlight-3">* (asterisk) </span> to select what hard drive MBR Grub2 is going to write to. <i>(This example to installing to a USB drive)</i>.</p-->
+							<p>Χρησιμοποιήστε τα πλήκτρα με τα βέλη και το space bar για να βάλετε ένα <span class="highlight-3">* (αστέρι) </span> για να επιλέξετε σε πιου δίσκου το MBR θα γραφτεί ο Grub2. <i>(Αυτό το παράδειγμα για εγκατάσταση σε USB δίσκο)</i>.</p>
+
+						<h6>Βήμα 4:</h6>
+<pre>
+update-grub
+</pre>
+
+
+						<h6>Βήμα 5:</h6>
+<pre>
+apt-get install install-usb-gui fll-iso2usb
+</pre>
+
+						<h6>Βήμα 6:</h6>
+							<!--p> Reboot your PC and the menu.cfg will display the kernel and Operating System list like this:</p-->
+							<p> Επανεκκινείστε τον υπολογιστή και το menu.cfg θα εμφανίση τον πυρήνα και τα λειτουργικά συστήματα όπως στην φωτογραφία:</p>
+<div class="screenshot"><img src="../lib/images-common/images-grub2/grub2-os-list.jpg" title="Grub2-OS list" alt="Grub2-OS list" /></div>
+
+							<!--p>Should there be a corruption or something go wrong refer to <a href="sys-admin-grub2-el.htm#chroot">Overwritten or corrupted Grub2 in the MBR</a> </p-->
+							<p>Σε περίπτωση που υπάρξει κάποιο πρόβλημα αναφερθείτε στο <a href="sys-admin-grub2-el.htm#chroot">Overwritten ή καταστραμένο Grub2 στο MBR</a> </p>
+
+				  <!--h3>Editing Grub2 boot options via the edit screen</h3-->
+				  <h3>Επεξεργασία των επιλογών εκκίνησης του Grub2 μέσω της οθόνης επεξεργασίας</h3>
+
+<div class="screenshot"><img src="../lib/images-common/images-grub2/grub2-e-1.JPG" title="Grub2-Edit" alt="Grub2-Edit" /></div>
+							<!--p>If, for some reason, you need to make a temporary alteration to the boot options to a kernel highlighted in Grub2, press the letter <span class="highlight-2"> e </span> to edit the kernel options and by using the using arrow keys, navigate to the line that you wish to edit, then while still in the edit screen use <span class="highlight-3"> Ctrl+x </span> to boot the computer with your edited options.</p-->
+							<p>Εάν, για κάποιο λόγο, χρειάζεται να κάνετε μη-μόνιμες αλλαγές στις επιλογές εκκίνησης ενός πυρήνα επιλεγμένος στο μενού του Grub2, πατήστε το γράμμα <span class="highlight-2">e </span> για να επεξεργαστείτε τις επιλογές εκκίνησης και χρησιμοποιώντας τα βελάκια, πηγαίνετε στην γραμμή που θέλετε να αλλάξετε. Όταν τελειώσετε με τις αλλαγές δώστε <span class="highlight-3">Ctrl+x </span> για να εκκινήσετε τον υπολογιστή με τις αλλαγές</p>
+
+							<!--p>For example, to go directly to run level 3, add <span class="highlight-3">3</span> to the end <span class="highlight-3"> linux /boot/vmlinuz</span> line.</p-->
+							<p>Για παράδειγμα, για να πάτε απευθείας στο επίπεδο εκτέλεσεις 3, προσθέστε <span class="highlight-3">3</span> στο τέλος της γραμμής <span class="highlight-3"> linux /boot/vmlinuz</span>.</p>
+
+							<!--p>The edits you make via the edit screen and are not permanent. To make  permanent changes, you need to edit the appropriate files. See <a href="sys-admin-grub2-el.htm#grub2-files">Grub 2 files</a>.</p-->
+							<p>Οι αλλαγές που κάνετε μέσω της οθόνης επεξεργασίας δεν είναι μόνιμες. Για να κάνετε μόνιμες αλλαγές, θα πρέπει να επεξεργαστείτε τα κατάλληλα αρχεία. Δείτε <a href="sys-admin-grub2-el.htm#grub2-files">Grub 2 αρχεία</a>.</p>
+
+	      </div>
+		<div class="divider" id="multi-os">
+				<h2>Dual και multi booting με Grub 2</h2>
+
+							<!--p>As Grub2 is modular in configuration, it allows a simple command to seek out any newly installed operating systems and if one is found, it tries to implement the change to update the menu.cfg. The simple command is:</p-->
+							<p>Ο Grub2 παρέχει μια απλή εντολή η οποία ψάχνει για νέο-εγκατεστημένα συστήματα και αν βρει κάποιο το καταχωρεί στο menu.cfg. Η απλή εντολή είναι:</p>
+<pre>
+update-grub
+</pre>
+							<!--p>Should you have a need to add a custom entry to menu.cfg or if the 30_os-prober fails to write to grub.cfg with chainloader menus use your favourite text editor to make the amendments to <span class="highlight-3"> /etc/grub.d/40_custom</span>.</p-->
+							<p>Αν για κάποιο λόγο χρειάζεστε να προσθέσετε εσείς μια καταχώρηση στο menu.cfg ή αν το 30_os-prober αποτύχει να γράψει στο grub.cfg με chainloader menus, χρησιμοποιείστε τον αγαπημένο σας επεξεργαστή κειμένου για να κάνετε αλλαγές στο <span class="highlight-3"> /etc/grub.d/40_custom</span>.</p>
+
+							<!--p>Examples of customising the 40_custom  file:</p-->
+							<p>Παράδειγμα ενός 40_custom  αρχείου:</p>
+<pre>
+menuentry "second mbr"{
+set root=(hd1)
+chainloader +1
+}
+</pre>
+
+<pre>
+menuentry "second partition"{
+set root=(hd0,2)
+chainloader +1
+}
+</pre>
+							<!--p>Then after you have made your changes run:</p-->
+							<p>Αφού κάνετε τις αλλαγές τρέξτε:</p>
+<pre>
+update-grub
+</pre>
+
+							<!--p>Should it complain that does not know the grub device of a disk, it means that the devicemap must be regenerated.</p-->
+							<p>Σε περίπτωση που σας πει ότι δεν ξέρει την grub συσκευή ενός δίσκου, αυτό σημαίνει ότι το devicemap πρέπει να ξανά-δημιουργηθεί.</p>
+
+							<!--p><span class="highlight-3">Ensure that you choose the partition not the MBR when installing the other operating system:</span></p-->
+							<p><span class="highlight-3">Σιγουρευτείτε ότι επιλέξατε την κατάτμηση και όχι το MBR κατά την εγκατάσταση του άλλου λειτουργικού συστήματος:</span></p>
+
+<pre>
+grub-mkdevicemap --no-floppy
+update-grub
+</pre>
+							<!--p>Warnings can be safely ignored.</p-->
+							<p>Τις προειδοποιήσεις μπορείτε να τις αγνοήσετε.</p>
+
+							<!--p>Should you make a mistake, the update will probably overwrite your MBR and you will need to fix it with <a href="sys-admin-grub2-el.htm#mbr-over-grub2">Grub2 - MBR Overwritten</a>.</p-->
+							<p>Αν κάνατε κάποιο λάθος, η ενημέρωση θα διαγράψει το MBR και θα πρέπει να το φτιάξετε με <a href="sys-admin-grub2-el.htm#mbr-over-grub2">Grub2 - MBR Overwritten</a>.</p>
+</div>
+	<div class="divider" id="mbr-over-grub2">
+
+					<!--h2>To only re-write grub2 to MBR from the hard drive:</h2-->
+					<h2>Για να γράψετε το grub2 στο MBR από τον σκληρό δίσκο:</h2>
+
+<pre>
+/usr/sbin/grub-install --recheck --no-floppy /dev/sda
+</pre>
+						<!--p>This line may need to be run more than once, until its convinced you really mean it.</p-->
+						<p>Την εντολή μπορεί να χρειαστεί να την τρέξετε περισσότερο από μια φορές μέχρι να πιστεί ότι το εννοείτε.</p>
+
+		<h2>MBR Bootsector overwritten από Windows, ένα καταστρεμένο ή/και επαναφορά του Grub2</h2>
+							<!--p><span class="highlight-2">NOTE: to restore a Grub2 bootloader you need to have a 2009-04 (moros) aptosid.iso or later.</span> <a href="sys-admin-grub2-el.htm#chroot">Alternatively use chroot with any live.iso</a>.</p-->
+							<p><span class="highlight-2">Σημείωση: για επαναφορά του Grub2 bootloader χρειάζεστε ένα 2009-04 (μόρος) aptosid.iso ή νεότερο.</span> <a href="sys-admin-grub2-el.htm#chroot">Εναλλακτικά μπορείτε να χρησιμοποιήσετε chroot με οποιοδήποτε live.iso</a>.</p>
+
+							<!--p> To rewrite the grub2 to the MBR and/or to recover grub 2 in general, you will need boot up a <span class="highlight-3">aptosid.iso</span>:</p-->
+							<p> Για να ξανά-γράψετε τον grub2 στο MBR ή/και για να επαναφέρετε τον grub 2 γενικότεερα θα χρειαστεί να εκκινήσετε ένα <span class="highlight-3">aptosid.iso</span>:</p>
+						<ol>
+							<li>Για να αναγνωρίσετε τις κατατμήσεις σας (π.χ. [h,s]d[a..]X) όλες οι ακόλουθες εντολές χρειάζονται προνόμια root. Για να γίνετε root (#):
+<pre>
+$ sux
+</pre>
+							</li>
+							<li>Σαν root:
+<pre>
+fdisk -l
+cat /etc/fstab
+</pre>
+							Αυτό είναι για να πάρετε τα σωστά ονόματα.
+							</li>
+							<li>Όταν αναγνωρίσατε την σωστή κατάτμηση, δημιουργείστε το σημείο προσάρτησης:
+<pre>
+mkdir -p /media/[hdxx,sdxx,diskx]
+</pre>
+							</li>
+							<li>Προσαρτείστε το:
+<pre>
+mount /dev/xdxx /media/xdxx
+</pre>
+							</li>
+
+							<li>Τώρα ξανά-γράψτε τον Grub στο MBR του πρώτου δίσκου (γενικό):
+<pre>
+/usr/sbin/grub-install --recheck --no-floppy --root-directory=/media/xdxx /dev/sda
+</pre>
+							</li>
+						</ol>
+	      </div>
+		<div class="divider" id="chroot">
+		      <!--h3>Using chroot to recover an overwritten or corrupted Grub in the MBR</h3-->
+		      <h2>Χρήση chroot για επαναφορά ενός overwritten ή κατεστραμένου Grub στο MBR</h2>
+
+
+							<!--p>To recover Grub , if it has been overwritten or corrupted in the MBR, set up a <span class="highlight-3">chroot</span> environment. <span class="highlight-3">Any live.iso will sufficeas the chroot takes you to your hard disk installed system so you can restore the appropriate grub version, grub1 (grub-legacy) or grub2.</p-->
+							<p>Για επαναφορά του Grub , εάν έχει διαγραφή ή καταστραφή στο MBR, ετοιμάστε ένα <span class="highlight-3">chroot</span> περιβάλλον. <span class="highlight-3">Any live.iso will suffice as the chroot takes you to your hard disk installed system so you can restore the appropriate grub version, grub1 (grub-legacy) or grub2.</span></p>
+
+							<!--p>Boot up a live aptosid.iso that is appropriate for your system (32 or 64 bit CD, DVD, USB stick or an SSD card) and open the konsole. Type in <span class="highlight-3">sux</span> and press enter to give you root permissions.</p-->
+							<p>Εκκινήστε ένα live aptosid.iso το οποίο είναι κατάλληλο για το σύστημα σας (32 ή 64 bit CD, DVD, USB stick ή μια SSD κάρτα) και ανοίξτε μια κονσόλα. Γράψτε <span class="highlight-3">sux</span> και πατήστε enter για να αποκτήσετε δικαιώματα root.</p>
+
+							<!--p>Using <span class="highlight-3">fdisk -l or blkid</span>, ascertain which partition is the boot partition and get the correct names. If you prefer a GUI use <span class="highlight-3">Gparted</span>:</p-->
+							<p>Με την χρήση του <span class="highlight-3">fdisk -l ή blkid</span>, βρείτε πια κατάτμηση είναι η boot κατάτμηση και πάρτε τα σωστά ονόματα. Αν προτιμάτε γραφικό περιβάλλον χρησιμοποιήστε <span class="highlight-3">Gparted</span>:</p>
+<pre>
+blkid
+</pre>
+							<!--p>and to check that fstab matches the output of the blkid:</p-->
+							<p>και για να ελέγξετε ότι το fstab ταιριάζει με την έξοδο του blkid:</p>
+<pre>
+cat /etc/fstab
+</pre>
+							<!--p>Let's assume your root filesystem is on <span class="highlight-3">/dev/sda2</span></p-->
+							<p>Ας υποθέσουμε ότι το root σας βρίσκεται στο <span class="highlight-3">/dev/sda2</span></p>
+<pre>
+mkdir /mnt/aptosid-chroot
+mount /dev/sda2 /mnt/aptosid-chroot
+</pre>
+
+							<!--p>Next, you need to mount /proc, /run, /dev and /sys as follows:</p-->
+							<p>Έπειτα θα πρέπει να προσαρτήσετε το /proc, /run, /dev και το /sys όπως παρακάτω:</p>
+
+<pre>
+mount --bind /proc /mnt/aptosid-chroot/proc
+mount --bind /run /mnt/aptosid-chroot/run
+mount --bind /sys /mnt/aptosid-chroot/sys
+mount --bind /dev /mnt/aptosid-chroot/dev
+mount --bind /dev/pts /mnt/aptosid-chroot/dev/pts
+</pre>
+							<p>If you boot using an EFI system partition you will also need to mount it. Assuming this is /dev/sda1:</p>
+<pre>
+mount /dev/sda1 /mnt/aptosid-chroot/boot/efi
+</pre>
+
+							<!--p>Your chroot environment is now set up, access it with:</p-->
+							<p>Το chroot περιβάλλον σας είναι τώρα έτοιμο. Μπείτε μέσα με:</p>
+
+<pre>
+chroot /mnt/aptosid-chroot /bin/bash
+</pre>
+
+							<!--p>Now you are able to use apt's local cache or alter files that you need to fix as if you were properly booted to the OS, in this case to fix Grub back onto the MBR:</p-->
+							<p>Τώρα μπορείτε να χρησιμοποιήσετε το τοπικό αποθετήριο του apt ή να τροποποιήσετε τα αρχεία που χρειάζεται να φτιάξετε όπως θα κάνατε να βρισκόσασταν κανονικά μέσα στο λειτουργικό σύστημα, σε αυτή την περίπτωση να βάλετε το Grub πίσω στο MBR:.</p>
+
+							<p><span class="highlight-3">Για να επαναφέρετε Grub 2</span></p>
+<pre>
+apt-get install --reinstall grub-pc
+</pre>
+							<p>To ensure that grub was installed to the correct disk or partition, run:</p>
+<pre>
+dpkg-reconfigure grub-pc
+</pre>
+							<p><span class="highlight-3">To restore Grub 2 EFI</span></p>
+<pre>
+apt-get install --reinstall grub-efi-amd64
+</pre>
+							<p><span class="highlight-3">Για να επαναφέρετε Grub 1 (grub-legacy)</span></p>
+<pre>
+apt-get install --reinstall grub-legacy
+</pre>
+							<!--p>Follow the installers instructions.</p-->
+							<p>Ακολουθήστε τις οδηγίες του εγκαταστάτη.</p>
+
+							<!--p>To release the chroot:</p-->
+							<p>Για να βγείτε από το chroot:</p>
+
+<pre>
+Ctrl+d
+</pre>
+							<p>Επανεκκινήστε τον υπολογιστή.</p>
+
+
+
+
+
+	</div>
+	<div id="rev">Τελευταία αναθεώρηση περιεχομένου 21/10/2011 0330 UTC</div>
+
+</div>
+</body>
+</html>

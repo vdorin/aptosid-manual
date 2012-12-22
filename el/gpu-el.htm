@@ -1,0 +1,544 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>aptosid Manuals - Graphics Drivers</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+	<style type="text/css" media="all">@import url("../lib/css-js/fw-el.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision by edhunter 17/09/2010 0500 UTC -->
+<div id="menu"> <!-- menu starts here el lang maintained by  -->
+<!--aptosid Operating System Manual menu-version-02.13.2011.09.09 -->
+<!-- menu last updated by bluewater 2011.09.09 0935 hrs UTC -->
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="To aptosid.com forums and wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-el.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" />Αναζήτηση Online - Offline </a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Eπιλέξτε άλλη γλώσσα - Choose another language" alt="lang-switch" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-el.htm">Εγχειρίδιο ΛΣ aptosid</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-el.htm#welcome-gen">Εγχειρίδιο ΛΣ aptosid &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-el.htm#cred-team">Συντελεστές</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-el.htm#how-to">Πως να χρησιμοποιήσετε αυτό το εγχειρίδιο &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-el.htm#how-to">Πως να χρησιμοποιήσετε αυτό το εγχειρίδιο</a></li>
+					  <li><a href="welcome-el.htm#table-contents">Πίνακας περιεχομένων</a></li>
+					</ul>
+					</li>
+		<li><a href="help-el.htm#help-gen">Βοήθεια &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-el.htm#help-gen">Που να βρείτε βοήθεια</a></li>
+					  <li><a href="help-el.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-el.htm#welcome-quick">aptosid Οδηγός Γρήγορης Αναφοράς (Quick Start Guide)</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-el.htm">Περιεχόμενα ISO, Εκδόσεις, Κατέβασμα και Εγγραφή</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-el.htm#cd-content">Περιεχόμενα ISO και απαιτήσεις συστήματος &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-el.htm#rolling">Σημειώσεις Έκδοσης</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-el.htm#download-aptosid">aptosid Mirrors, Κατέβασμα και Εγγραφή &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-el.htm#md5">md5 Checksum</a></li>
+					  <li><a href="cd-dl-burning-el.htm#burn-nero">Γράφοντας το ISO στα Windows</a></li>
+					  <li><a href="cd-dl-burning-el.htm#burn-linux">Γράφοντας το ISO στο Linux</a></li>
+					  <li><a href="cd-no-gui-burn-el.htm#burning-no-gui">burniso script</a></li>
+					  <li><a href="cd-no-gui-burn-el.htm#burn-no-gui-gen">Εγγραφή χωρίς γραφικό περιβάλλον</a></li>
+					  <li><a href="cd-dl-burning-el.htm#download-aptosid">aptosid Mirrors Κατεβάσματος</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-el.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-el.htm#rootpw">Κωδικός υπερχρήστη (root) στο aptosid-Live ISO</a></li>
+				<li><a href="live-mode-el.htm#live-cd-installsoft">Εγκατάσταση προγραμμάτων σε περιβάλλον Live-ISO</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-el.htm">Το Τερματικό / Κονσόλα</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-el.htm#term-kon">Τερματικό / Κονσόλα &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-el.htm#term-kon">Τερματικό / Κονσόλα</a></li>
+					  <li><a href="term-konsole-el.htm#colours"> Coloured terminal prompts</a></li>
+					  <li><a href="term-konsole-el.htm#cli-help">Βοήθεια από την γραμμή εντολών</a></li>
+					  <li><a href="help-el.htm#init3-tools">Εργαλεία να ξέρετε για text mode (tty) - init 3</a></li>
+					  <li><a href="term-konsole-el.htm#term-cmds">Λίστα εντολών του Linux</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-el.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-el.htm">CheatCodes</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-el.htm#cheatcodes">Cheatcodes αποκλειστικά για το aptosid Live-ISO</a></li>
+				<li><a href="cheatcodes-el.htm#cheatcodes-linux">Cheatcodes γενικά για το Linux</a></li>
+				<li><a href="cheatcodes-vga-el.htm#vga">Κωδικοί VGA</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-el.htm">Partitioning the Hard Drive - Traditional, GPT and LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-el.htm#hd-ntfs3g">Γράφοντας σε NTFS κατάτμηση με το ntfs-3g</a></li>
+			<li><a href="part-lvm-el.htm#part-lvm">Partitioning to use LVM - Logical Volume Manager</a></li>
+			<li><a href="part-gparted-el.htm#partition">Δημιουργία κατατμήσεων με χρήση γραφικών (GUI) εργαλείων &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-el.htm#partition">Δημιουργία κατατμήσεων στον δίσκο χρησιμοποιώντας το  GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-el.htm#ntfs">Αλλαγή μεγέθους σε NTFS κατάτμηση χρησιμοποιώντας το GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-el.htm#partition">Δημιουργία κατατμήσεων με χρήση εργαλείων κονσόλας (CLI) &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-el.htm#partition">Δημιουργία κατατμήσεων στον σκληρό δίσκο χρησιμοποιώντας το cfdisk</a></li>
+					    <li><a href="part-cfdisk-el.htm#formating">Διαμόρφωση (format) μετά την δημιουργία κατάτμησης, με το cfdisk</a></li>
+					    <li><a href="part-gdisk-el.htm#gdisk-6">Formatting after partitioning with gdisk</a></li>
+					    <li><a href="part-gdisk-el.htm#gdisk-1">GPT Partitioning with gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-el.htm#part-example">Γενικά για κατατμήσεις &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-el.htm#part-example">Παραδείγματα για το μέγεθος των κατατμήσεων</a></li>
+					  <li><a href="part-uuid-el.htm#uuid">UUID, Rebuilding fstab and creating new mount points</a></li>
+					  <li><a href="part-cfdisk-el.htm#disknames">Ονομασία δίσκων εν συντομία</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-el.htm">Επιλογές εγκατάστασης - HD, USB, VM and Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-el.htm#Inst-prep">Προετοιμασία Εγκατάστασης &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-el.htm#Inst-prep">Προετοιμασία Εγκατάστασης</a></li>
+					  <li><a href="hd-install-el.htm#Installation">Εγκατάσταση στον σκληρό δίσκο</a></li>
+					  <li><a href="hd-install-el.htm#first-hd-boot">Πρώτη εκκίνηση</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-el.htm#fromiso">Εκκίνηση fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-el.htm#fromiso">Εκκίνηση fromiso - Γενικά</a></li>
+					  <li><a href="hd-install-opts-el.htm#grub2-fromiso">Εκκίνηση 'fromiso' με Grub 2</a></li>
+					  <li><a href="hd-install-opts-el.htm#fromiso-persist">fromiso και persist</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-el.htm#usb-hd">Εγκατάσταση σε USB δίσκους &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-el.htm#usb-hd">Eγκατάσταση σε USB σκληρό δίσκο - aptosid συγκεκριμένα - aptosid-σε-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-el.htm#raw-usb">Εγραφή του aptosid σε USB/SSD stick με Linux, MS Windows ή Mac OS X σύστημα</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-el.htm#install-crypt">Installing to encryted partitions - cryptroot</a></li>
+		  <li><a href="nbdboot-el.htm#nbd1">Εκκίνηση του aptosid μέσω δικτύου</a></li>
+		  <li><a href="hd-install-vmopts-el.htm#vm">Επιλογές εγκατάστασεις σε Εικονική Μηχανή (Virtual Machine)</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-el.htm">Κάρτες γραφικών, Οθόνες, Xorg &amp; Διάφοροι Οδηγοί</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-el.htm#mon-res">Ανάλυση Οθόνης (screen) και Οθόνες (monitor)  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-el.htm#mon-res">Ανάλυση Οθόνης (screen) και Οθόνες (monitor)</a></li>
+					  <li><a href="hw-dev-mon-el.htm#xrandr">Δύο Οθόνες (Dual Monitors) και xrandr</a></li>
+					  <li><a href="hw-dev-mon-el.htm#mon-binary">Δύο Οθόνες (με χρήση binaries)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-el.htm#foss-xorg">GPU drivers &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-el.htm#ati-3d">AMD/ATI 3D drivers</a></li>
+					  <li><a href="gpu-el.htm#intel">Intel 2D and 3D drivers</a></li>
+					  <li><a href="gpu-el.htm#nvidia">Nvidia 3D drivers</a></li>
+					  <li><a href="gpu-el.htm#foss-xorg">Open Source Xorg drivers</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-el.htm#fw-detect">Firmware detection - non-free </a></li>
+			  <li><a href="nf-firm-el.htm#non-free-firmware">Adding non-free to Sources List</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-el.htm">Διαχείριστες Παραθύρων</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-el.htm">KDE and XFCE Διαχείριστες Παραθύρων &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-el.htm#xfce-notes">Χρήσιμα extras για Xfce</a></li>
+					    <li><a href="wm-dm-el.htm#install-add">Χρήσιμα extras για KDE</a></li>
+					    <li><a href="wm-dm-el.htm#desk-freeze">Κόλλημα επιφάνειας εργασίας</a></li>
+					    <li><a href="wm-dm-el.htm#kde-login">Δεν μπορώ να εισέλθω στο KDE</a></li>
+					    <li><a href="wm-dm-el.htm#ch-th">Aλλάζοντας Θέματα (Themes)</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-el.htm#dm">Installing additional Display Managers</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-el.htm">Σύνδεση στο διαδίκτυο, WiFi, LAN και Δίκτυα</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-el.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-el.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-el.htm#serv-ftp">FTP Πελάτες</a></li>
+					    <li><a href="lamp-apache-el.htm#serv-sec">Πρωτόκολλα ασφαλείας</a></li>
+					    <li><a href="lamp-apache-el.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-el.htm#serv-mysql">MySQL Ρύθμιση</a></li>
+					    <li><a href="lamp-ppp-el.htm#serv-php">PHP με Apache</a></li>
+					    <li><a href="ntp-server-el.htm#ntp-server">Timeserver Ρύθμιση</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-el.htm#tor">Firewalls και Privacy &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-el.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-el.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-el.htm#firewalls">Firewalls</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-el.htm#ssh-x">SSH και Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-el.htm#setup">Samba-Server Ρύθμιση</a></li>
+						  <li><a href="samba-el.htm#configure">Ρύθμιση SAMBA (Windows)</a></li>
+						  <li><a href="ssh-el.htm#ssh-fs">SSH Απομακρυσμένη Προσάρτυση</a></li>
+						  <li><a href="ssh-el.htm#ssh-x">Παραθυρικές Eφαρμογές μέσω SSH</a></li>
+						  <li><a href="ssh-el.htm#ssh-f">GUI SSH με Konqueror</a></li>
+						  <li><a href="ssh-el.htm#ssh-w">SSH X-Forwarding από ένα Windows-PC</a></li>
+						  <li><a href="ssh-el.htm#ssh">SSH και Ασφάλεια</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-el.htm#netcardconfig">WIFI Συνδέσεις &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-el.htm#netcardconfig">Mπαίνοντας στο Δίκτυο - Ceni</a></li>
+						    <li><a href="inet-wpagui-el.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-el.htm#net-set1">WiFi - Ρύθμιση του WiFi Roaming</a></li>
+						    <li><a href="inet-wpa-el.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-el.htm#hotswitch">Εναλλαγή δικτύου μεταξύ WiFi και σύρματος</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-el.htm#netcardconfig">Wired (σύρμα) Συνδέσεις &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-el.htm#dial-mod">56k Modems</a></li>
+						    <li><a href="inet-ceni-el.htm#netcardconfig">Mπαίνοντας στο Δίκτυο - Ceni</a></li>
+					</ul>
+					</li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-el.htm">Διαχείριση Πακέτων και dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-el.htm#apt-cook">APT Cookbook and Sources list &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-el.htm#apt-cook">APT-Οδηγός και Λίστες Πηγών (Sources list)</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-install">Εγκαθιστώντας ένα νέο πακέτο</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-delete">Διαγράφοντας ένα πακέτο</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-downgrade">Υποβαθμίζοντας / Κρατώντας (Hold) ένα πακέτο</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-cache">Αναζήτηση πακέτων με apt-cache</a></li>
+					    <li><a href="sys-admin-apt-el.htm#gui-pacsea">GUI Package searching</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-el.htm#kern-upgrade">Αναβαθμίζοντας τον πυρήνα &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-el.htm#kern-remove">Διαγραφή ενός πυρήνα</a></li>
+					    <li><a href="sys-admin-kern-upg-el.htm#kern-upgrade">Αναβαθμίζοντας τον πυρήνα</a></li>
+					    <li><a href="sys-admin-kern-upg-el.htm#dmakms">Εγκατάσταση kernel modules δυναμικά με dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-el.htm#apt-upgrade">Aναβάθμιση σε ένα Εγκατεστημένο Σύστημα - dist-upgrade - Γενικά &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-el.htm#live-cd-upgrade">Αναβαθμίζοντας χρησιμοποιώντας το Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-el.htm#approx">dist-upgrade πολλαπλών PC σε ένα LAN</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-upgrade">Aναβάθμιση σε ένα Εγκατεστημένο Σύστημα - dist-upgrade - Γενικά</a></li>
+					    <li><a href="sys-admin-apt-el.htm#du-st">Aναβάθμιση σε ένα Εγκατεστημένο Σύστημα - dist-upgrade - Τα Βήματα</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-el.htm">Διαχείριση Συστήματος</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-el.htm#bois-prep">Αναβάθμιση του BIOS με το FreeDOS</a></li>
+		<li><a href="vir-rkits-el.htm#virus-rkits">Ανιχνευτές Iών και Rootkits</a></li>
+		<li><a href="hd-install-el.htm#adduser">Προσθήκη χρηστών και Passwords &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-el.htm#adduser">Προσθήκη ενός νέου χρήστη</a></li>
+					    <li><a href="sys-admin-gen-el.htm#pw-lost">Χαμένο password root, νέα passwords</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-el.htm#start-services">Υπηρεσίες και init runlevels &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-el.htm#start-services">Ενεργοποίηση / Απενεργοποίηση Υπηρεσιών (Services)</a></li>
+					    <li><a href="sys-admin-gen-el.htm#pkill">Killing a service or process</a></li>
+					    <li><a href="sys-admin-gen-el.htm#init">aptosid Επίπεδα εκτέλεσης (runlevels) - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-el.htm#rsync">Backup του συστήματος &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-el.htm#rdiff">Back-Up με rdiff</a></li>
+					    <li><a href="sys-admin-rsync-el.htm#rsync">Back-Up με rsync</a></li>
+					    <li><a href="home-el.htm#home-bu">Μεταφορά του /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-el.htm#fonts">CUPS, Γραμματοσειρές και Ήχος &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-el.htm#fonts">Γραμματοσειρές</a></li>
+					     <li><a href="sys-admin-gen-el.htm#cups">CUPS - Σύστημα Εκτύπωσης</a></li>
+					     <li><a href="sys-admin-gen-el.htm#sound">Mixers Ήχου</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-el.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-el.htm#chroot">Grub2 - Recovering Grub with chroot</a></li>
+					    <li><a href="sys-admin-grub2-el.htm#mbr-over-grub2">Grub2 - MBR Overwritten</a></li>
+					    <li><a href="sys-admin-grub2-el.htm#multi-os">Grub2 - Dual και Multibooting</a></li>
+					    <li><a href="sys-admin-grub2-el.htm#grub1-grub2">Grub2 -Αναβάθμιση α</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Sponsored by webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="../lib/sponsor-logo/webtropia-logo.png" title="aptosid is proudly hosted by webtropia.com" alt="aptosid is proudly hosted by webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div>
+<div id="main-page">
+	<div class="divider" id="foss-xorg">
+			<!--h2>Open Source Xorg  drivers for nVidia, ATI/AMD, &amp; Intel</h2>-->
+			<h2 id="top-header">Ανοικτού κώδικα Xorg οδηγοί για nVidia, ATI/AMD, &amp; Intel</h2>
+
+							<!--p>Open Source Xorg drivers for nVidia, ATI, Radeon, Intel are pre-installed with aptosid. </p-->
+							<p>Οι ανοικτού κώδικα Xorg οδηγοί για nVidia, ATI, Radeon, Intel, είναι προ-εγκατεστημένοι στο aptosid.</p><!--p><span class="highlight-3"> Note: xorg.conf is not generally needed for open source drivers. If xorg.conf does not exist, and you require it to be present for some reason, in a terminal run:</span></p-->
+							<p><span class="highlight-3">Σημείωση: xorg.conf is not generally needed for open source drivers.</span> </p>
+
+							<!--p>If you have been running proprietary drivers and wish to revert back to opensource drivers edit <span class="highlight-3">/etc/X11/xorg.conf.d/xx-xxxx.conf </span> with an editor with root permissions. Find the section that reads SECTION DEVICE and change the display driver to read <span class="highlight-2">nouveau</span> OR <span class="highlight-2">radeon</span> OR <span class="highlight-2">intel</span> (to name but a few).</p-->
+							<p>Εάν χρησιμοποιείτε κλειστού κώδικα οδηγούς και θέλετε να επιστρέψετε στην χρήση ανοικτού κώδικα οδηγών, επεξεργαστείτε σαν root το <span class="highlight-3">/etc/X11/xorg.conf.d/xx-xxxx.conf </span>. Βρείτε το κομμάτι που λέει SECTION DEVICE και αλλάξτε τον οδηγό να γράφει <span class="highlight-2">radeon</span> Ή <span class="highlight-2">intel</span> (για να αναφέρουμε μερικούς).</p>
+
+							<p>To revert to <span class="highlight-2">nouveau</span> from the Nvidia proprietary drivers refer to <a href= "http://aptosid.com/index.php?module=wikula&amp;tag=GoNvidia">http://aptosid.com/index.php?module=wikula&amp;tag=GoNvidia</a>.</p>
+
+							<!--p class="highlight-2">Editing an xorg.conf file is entirely at your own risk!!</p-->
+							<p class="highlight-2">Επεξεργαστείτε το an xorg.conf file με δική σας ευθύνη.</p>
+
+							<p>Περισσότερες πληροφορίες για την <a href= "http://www.x.org/wiki/IntelGraphicsDriver"> Intel</a> &nbsp; <a href= "http://www.x.org/wiki/radeon"> ATI/AMD</a> &nbsp;  <a href= "http://www.x.org/wiki/RadeonFeature"> ATI/AMD Feature Matrix</a> &nbsp; <a href= "http://nouveau.freedesktop.org/wiki/FeatureMatrix"> nouveau</a> &nbsp; <a href= "http://xorg.freedesktop.org"> X.Org</a></p>
+
+
+
+	      </div>
+	      <div class="divider" id="x2d">
+			<h2>2D Οδηγοί</h2>
+
+							<!--p>The drivers for the X.Org X server (see xserver-xorg for a further description) provides support in 2D for NVIDIA Riva, TNT, GeForce, and Quadro cards and the ATI Mach, Rage, Radeon, and FireGL cards along with atimisc, r128, r6xx/r7xx and radeon sub-drivers. Radeon and Intel both support 2d acceleration (textured xv) for video playback.</p>-->
+							<p>Οι οδηγοί για τον X. Org X διακομιστή (server) (δείτε xserver-xorg για περαιτέρω περιγραφή) εξασφαλίζουν υποστήριξη σε 2D για NVIDIA Riva, TNT, GeForce και Quadro κάρτες και των  ATI Mach, Rage, Radeon και FireGL cards παράλληλα με atimisc r128, r6xx/r7xx και radeon υπό-οδηγούς. Οι Radeon και οι Intel υποστηρίζουν και οι δυο 2d επιτάχυνση (textured xv) για αναπαραγωγή video.</p>
+	      </div>
+	      <div class="divider" id="ati-3d">
+					  <h2>ATI/AMD 3D Οδηγοί</h2>
+							<!--p>Some ATI/AMD cards also support 3D, (and KDE animations), with <span class="highlight-3">xserver-xorg-video-radeon</span>. So far chipsets up to r700 are supported.</p-->
+							<p>Μερικές ATI/AMD κάρτες υποστηρίζουν 3D, (και KDE animations), με <span class="highlight-3">xserver-xorg-video-radeon</span>. Αυτή τη στιγμή υποστηρίζονται chipsets μέχρι το r700.</p>
+
+							<!--p>To automatically inherit newly packaged non-free firmware when they get updated for 2D and 3D video cards:</p-->
+							<p>Για αυτόματη εγκατάσταση μη-ελεύθερων firmware όταν ενημερώνονται. Για 2D και 3D κάρτες γραφικών:</p>
+
+<pre>
+apt-get install firmware-linux
+</pre>
+							<!--p>Then reboot the computer.</p-->
+							<p>Μετά επανεκκινήστε τον υπολογιστή.</p>
+
+		</div>
+	<div class="divider" id="intel">
+					  <h2>Intel 2D and 3D</h2>
+
+							<!--p>Intel drivers should work perfectly for 2D and 3D video acceleration as the drivers are included in the Intel free series.</p-->
+							<p>Οι Intel οδηγοί θα πρέπει να δουλεύουν τέλεια για 2D και 3D video επιτάχυνση μιας και οι οδηγοί συμπεριλαμβάνονται μέσα στην Intel free series.</p>
+
+	</div>
+	<div class="divider" id="nvidia">
+		<!--h2>Binary, closed source drivers for: nVidia with dmakms &amp; xorg.conf.d</h2-->
+		<h2>Binary, κλειστού κώδικα οδηγοί για : nVidia με dmakms &amp; xorg.conf.d</h2>
+
+							<p><span class="highlight-3">You will need to add &lt;contrib non-free&gt; to your debian.list, refer to <a href="nf-firm-el.htm#non-free-firmware">Adding non-free to sources</a></span></p>
+
+							<!--p>For the most complete and accurate listing of supported GPUs please see the Supported Products List available from the <a href="http://www.nvidia.com/object/unix.html"> NVIDIA Linux Graphics Driver download page</a>.</p-->
+							<p>Για την πιο ακριβή και σωστή λίστα με τις υποστηριζόμενες κάρτες, παρακαλώ δείτε την λίστα με τα υποστηριζόμενα προϊόντα (Supported Products List) που υπάρχει εδώ <a href="http://www.nvidia.com/object/unix.html">NVIDIA Linux Graphics Driver download page</a>.</p>
+
+							<!--p>You can also read <a href="http://www.nvnews.net/vbulletin/showthread.php?t=122606">nvnews</a> for other options.</p-->
+							<p>Μπορείτε επίσης να διαβάσετε <a href="http://www.nvnews.net/vbulletin/showthread.php?t=122606">nvnews</a> για άλλες επιλογές.</p>
+
+							<!--p>New and old installs will need to ensure that the systemwide config <span class="highlight-3">/etc/X11/xorg.conf.d</span> exists and add a file to the directory called <span class="highlight-3">20-nvidia.conf</span> : </p-->
+							<p>Σιγουρευτείτε ότι ο κατάλογος <span class="highlight-3">/etc/X11/xorg.conf.d</span> υπάρχει και προσθέστε ένα αρχείο με όνομα <span class="highlight-3">20-nvidia.conf</span>:</p>
+
+
+<pre>
+mkdir /etc/X11/xorg.conf.d
+touch /etc/X11/xorg.conf.d/20-nvidia.conf
+</pre>
+							<!--p>With your favourite text editor, (e.g. kwrite, kate, mousepad, mcedit,vi, vim) open the file:</p-->
+							<p>Με τον αγαπημένο σας επεξεργαστή κειμένου (π.χ. kwrite, kate, mousepad, mcedit, vi, vim) ανοίξτε το αρχείο:</p>
+
+<pre>
+&lt;editor&gt; /etc/X11/xorg.conf.d/20-nvidia.conf
+</pre>
+							<!--p>and add the following codebox in its entirety to 20-nvidia.conf:</p-->
+							<p>και προσθέστε τα ακόλουθα:</p>
+<pre>
+#
+Section "Device"
+         Identifier      "Device 0"
+         Driver          "nvidia"
+EndSection
+# This is a trailing line, it is needed so that End Section is not the last line
+</pre>
+							<!--p>If you have more than one graphics card you will need ascertain the PCI and to include it in the xorg.conf:</p-->
+							<p>Εάν έχετε περισσότερες από μια κάρτες, θα πρέπει να βρείτε το PCI και να το συμπεριλάβεται στο 20-nvidia.conf:</p>
+<pre>
+lspci | grep -i vga
+</pre>
+							<!--p>This should return syntax similar to this:</p-->
+							<p>Η εντολή θα πρέπει να επιστρέψει κάτι παρόμιο με το πιο κάτω:</p>
+<pre>
+01:00.0 VGA compatible controller:
+</pre>
+							<!--p>Add the 01:00.0 busid as an extra line under the 'Driver' line, however note that the syntax is <span class="highlight-3">PCI:x:y:z:</span> with zeros dropped and colons added,  therefore:</p-->
+							<p>Προσθέστε το 01:00.0 busid σε έξτρα γραμμή κάτω από την γραμμή 'Driver', προσέξτε όμως ότι η σύνταξη είναι <span class="highlight-3">PCI:x:y:z:</span> με τα μηδενικά να αφαιρούνται και με ανώ και κάτω τελείες να προσθέτονται, επομένως:</p>
+
+<pre>
+BusID		 "PCI:1:0:0"
+</pre>
+					<!--h4>Installing the nvidia drivers</h4-->
+					<h4>Εγκατάσταση των οδηγών της nvidia</h4>
+							<!--p><span class="highlight-3"> Use apt-cache search nvidia and apt-cache show &lt;package&gt; to ascertain the correct driver for you. There are basically 2 types of nvidia drivers, the current Debian Sid 3D drivers  and the legacy Debian Sid 3D drivers.</span></p>-->
+							<p><span class="highlight-3">ΣΗΜΕΙΩΣΗ: Χρησιμοποιείστε apt-cache search nvidia και apt-cache show &lt;πακέτο&gt; για να βρείτε τον σωστό οδηγό. Υπάρχουν βασικά 2 τύποι οδηγών για nvidia, οι τωρινοί Debian Sid 3D οδηγοί και οι legacy Debian Sid 3D οδηγοί.</span></p>
+
+					<!--h5>For current 3d nvidia drivers  &ge; GeForce 6xxx :</h5-->
+					<h5>Για τωρινούς 3d nvidia οδηγούς &ge; GeForce 6xxx :</h5>
+
+							<!--p>Prepare the module:</p-->
+							<p>Προετοιμασία του module:</p>
+<pre>
+apt-get install nvidia-kernel-source nvidia-kernel-common dmakms
+</pre>
+							<!--p>Then activate Dynamic Module-Assistant Kernel Module Support (dmakms) for nvidia, so that the next time the Linux kernel is updated a nvidia module is prepared for it too, without manual intervention. To do that, add 'nvidia-kernel-source' to the <span class="highlight-3">/etc/default/dmakms </span>configuration file.</p-->
+							<p>Μετά ενεργοποιήστε το Dynamic Module-Assistant Kernel Module Support (dmakms) για nvidia, έτσι ώστε την επόμενη φορά που θα ενημερωθεί ο πυρήνας του Linux, θα ετοιμαστεί ένα module για την nvidia χωρίς να χρειαστεί να κάνετε κάτι εσείς. Για να γίνει αυτό, προσθέστε <span class="highlight-3">nvidia-kernel-source</span> στο <span class="highlight-3">/etc/default/dmakms </span>αρχείο ρύθμισης:</p>
+
+<pre>
+echo nvidia-kernel-source &gt;&gt; /etc/default/dmakms
+</pre>
+							<!--<p>Then:</p>-->
+							<p>Μετά:</p>
+<pre>
+m-a a-i nvidia-kernel-source
+</pre>
+							<p>Ακολουθούμενο από:</p>
+<pre>
+apt-get install nvidia-glx
+</pre>
+							<!--p>Reboot PC for installation of the module to take effect.</p-->
+							<p>Επανεκκινήστε τον υπολογιστή για να τελειώσει η εγκατάσταση του module.</p>
+
+
+
+							<!--p>When xorg updates you only need to reinstall nvidia-glx:</p-->
+							<p>Σε περίπτωση αναβάθμισης μόνο του xorg, χρειάζεται μόνο να εγκαταστήσετε το nvidia-glx:</p>
+
+<pre>
+apt-get install --reinstall nvidia-glx
+</pre>
+
+							<!--p>When a new Debian sid nvidia driver becomes available thru apt:</p-->
+							<p>Όταν διατείθετε ένας νέος Debian sid nvidia οδηγός μέσω του apt:</p>
+
+<pre>
+m-a a-i nvidia-kernel-source
+apt-get install --reinstall nvidia-glx
+</pre>
+						      <!--p>Reboot PC for installation of the module to take effect.</p-->
+						      <p>Επανεκκινήστε το PC για να τελειώσει η εγκατάσταση.</p>
+
+					      <!--h4>Naming scheme for legacy nvidia drivers in Debian</h4-->
+						  <h4>Ονομασίες για legacy οδηγούς nvidia στο Debian</h4>
+						  <ul>
+						      <li>nvidia-kernel-legacy-71xx είναι για GeForce 2</li>
+						      <li>nvidia-kernel-legacy-96xx είναι για GeForce 4</li>
+						      <li>nvidia-kernel-legacy-173xx είναι για GeForce 5</li>
+						  </ul>
+
+					<!--h5>Example for legacy 3d nvidia drivers using &le; GeForce 5xxx :</h5-->
+					<h5>Παράδειγμα για legacy 3d nvidia οδηγούς χρησιμοποιώντας &le; GeForce 5xxx :</h5>
+
+							<!--p>For other legacy drivers just replace 173xx number with your driver number.</p-->
+							<p>Για άλλους legacy οδηγούς απλά αντικαταστήστε τον αριθμό 173xx με τον δικό σας.</p>
+
+<pre>
+m-a a-i nvidia-kernel-legacy-173xx-source &amp;&amp; apt-get install nvidia-glx-legacy-173xx dmakms
+</pre>
+
+							<!--p>Alter dmakms:</p-->
+							<p>Αλλάξτε το dmakms:</p>
+<pre>
+echo nvidia-kernel-legacy-173xx-source &gt;&gt; /etc/default/dmakms
+</pre>
+
+						      <p>Όταν ενημερωθεί ο xorg χρειάζετε μόνο να εγκαταστήσετε ξανά nvidia-glx-legacy:</p>
+<pre>
+apt-get install --reinstall nvidia-glx-legacy-173xx
+</pre>
+					<!--h4>Module load failure</h4-->
+					<h4>Αποτυχία φόρτωσης του module</h4>
+
+							<!--p>Should nvidia fail to load, for whatever reason :</p-->
+							<p>Αν για οποιοδήποτε λόγο αποτύχει η φόρτωση του nvidia module:</p>
+<pre>
+modprobe nvidia
+</pre>
+							<!--p>Then reboot the computer.</p-->
+							<p>Μετά επανεκκινήστε τον υπολογιστή.</p>
+
+							<!--p>Should the module still fail to load:</p-->
+							<p>Εάν η φόρτωση του module εξακολουθεί να αποτυχαίνει:</p>
+ <pre>
+ m-a a-i -f nvidia-kernel-source
+</pre>
+							<p>ή</p>
+ <pre>
+ m-a a-i -f nvidia-kernel-legacy-173xx-source
+</pre>
+							<!--p>This rebuilds the module <span class="highlight-3">then reboot.</span></p-->
+							<p>Αυτό ξανά κτίζει το module, <span class="highlight-3">μετά επανεκκινήστε.</span></p>
+
+						      <p>Διαβάστε:</p>
+<pre>
+$ /usr/share/doc/dmakms
+</pre>
+
+		</div>
+	      <div id="rev">Τελευταία αναθεώρηση περιεχομένου 21/11/2011 0815 UTC  </div>
+
+</div>
+</body>
+</html>

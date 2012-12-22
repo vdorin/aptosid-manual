@@ -1,0 +1,519 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>aptosid Manuals - LVM Partitioning</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision bluewater 22/10/2010 1510 UTC -->
+<div id="menu"> <!-- menu starts here el lang maintained by  -->
+<!--aptosid Operating System Manual menu-version-02.13.2011.09.09 -->
+<!-- menu last updated by bluewater 2011.09.09 0935 hrs UTC -->
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="To aptosid.com forums and wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-el.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" />Αναζήτηση Online - Offline </a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Eπιλέξτε άλλη γλώσσα - Choose another language" alt="lang-switch" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-el.htm">Εγχειρίδιο ΛΣ aptosid</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-el.htm#welcome-gen">Εγχειρίδιο ΛΣ aptosid &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-el.htm#cred-team">Συντελεστές</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-el.htm#how-to">Πως να χρησιμοποιήσετε αυτό το εγχειρίδιο &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-el.htm#how-to">Πως να χρησιμοποιήσετε αυτό το εγχειρίδιο</a></li>
+					  <li><a href="welcome-el.htm#table-contents">Πίνακας περιεχομένων</a></li>
+					</ul>
+					</li>
+		<li><a href="help-el.htm#help-gen">Βοήθεια &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-el.htm#help-gen">Που να βρείτε βοήθεια</a></li>
+					  <li><a href="help-el.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-el.htm#welcome-quick">aptosid Οδηγός Γρήγορης Αναφοράς (Quick Start Guide)</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-el.htm">Περιεχόμενα ISO, Εκδόσεις, Κατέβασμα και Εγγραφή</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-el.htm#cd-content">Περιεχόμενα ISO και απαιτήσεις συστήματος &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-el.htm#rolling">Σημειώσεις Έκδοσης</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-el.htm#download-aptosid">aptosid Mirrors, Κατέβασμα και Εγγραφή &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-el.htm#md5">md5 Checksum</a></li>
+					  <li><a href="cd-dl-burning-el.htm#burn-nero">Γράφοντας το ISO στα Windows</a></li>
+					  <li><a href="cd-dl-burning-el.htm#burn-linux">Γράφοντας το ISO στο Linux</a></li>
+					  <li><a href="cd-no-gui-burn-el.htm#burning-no-gui">burniso script</a></li>
+					  <li><a href="cd-no-gui-burn-el.htm#burn-no-gui-gen">Εγγραφή χωρίς γραφικό περιβάλλον</a></li>
+					  <li><a href="cd-dl-burning-el.htm#download-aptosid">aptosid Mirrors Κατεβάσματος</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-el.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-el.htm#rootpw">Κωδικός υπερχρήστη (root) στο aptosid-Live ISO</a></li>
+				<li><a href="live-mode-el.htm#live-cd-installsoft">Εγκατάσταση προγραμμάτων σε περιβάλλον Live-ISO</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-el.htm">Το Τερματικό / Κονσόλα</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-el.htm#term-kon">Τερματικό / Κονσόλα &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-el.htm#term-kon">Τερματικό / Κονσόλα</a></li>
+					  <li><a href="term-konsole-el.htm#colours"> Coloured terminal prompts</a></li>
+					  <li><a href="term-konsole-el.htm#cli-help">Βοήθεια από την γραμμή εντολών</a></li>
+					  <li><a href="help-el.htm#init3-tools">Εργαλεία να ξέρετε για text mode (tty) - init 3</a></li>
+					  <li><a href="term-konsole-el.htm#term-cmds">Λίστα εντολών του Linux</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-el.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-el.htm">CheatCodes</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-el.htm#cheatcodes">Cheatcodes αποκλειστικά για το aptosid Live-ISO</a></li>
+				<li><a href="cheatcodes-el.htm#cheatcodes-linux">Cheatcodes γενικά για το Linux</a></li>
+				<li><a href="cheatcodes-vga-el.htm#vga">Κωδικοί VGA</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-el.htm">Partitioning the Hard Drive - Traditional, GPT and LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-el.htm#hd-ntfs3g">Γράφοντας σε NTFS κατάτμηση με το ntfs-3g</a></li>
+			<li><a href="part-lvm-el.htm#part-lvm">Partitioning to use LVM - Logical Volume Manager</a></li>
+			<li><a href="part-gparted-el.htm#partition">Δημιουργία κατατμήσεων με χρήση γραφικών (GUI) εργαλείων &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-el.htm#partition">Δημιουργία κατατμήσεων στον δίσκο χρησιμοποιώντας το  GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-el.htm#ntfs">Αλλαγή μεγέθους σε NTFS κατάτμηση χρησιμοποιώντας το GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-el.htm#partition">Δημιουργία κατατμήσεων με χρήση εργαλείων κονσόλας (CLI) &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-el.htm#partition">Δημιουργία κατατμήσεων στον σκληρό δίσκο χρησιμοποιώντας το cfdisk</a></li>
+					    <li><a href="part-cfdisk-el.htm#formating">Διαμόρφωση (format) μετά την δημιουργία κατάτμησης, με το cfdisk</a></li>
+					    <li><a href="part-gdisk-el.htm#gdisk-6">Formatting after partitioning with gdisk</a></li>
+					    <li><a href="part-gdisk-el.htm#gdisk-1">GPT Partitioning with gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-el.htm#part-example">Γενικά για κατατμήσεις &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-el.htm#part-example">Παραδείγματα για το μέγεθος των κατατμήσεων</a></li>
+					  <li><a href="part-uuid-el.htm#uuid">UUID, Rebuilding fstab and creating new mount points</a></li>
+					  <li><a href="part-cfdisk-el.htm#disknames">Ονομασία δίσκων εν συντομία</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-el.htm">Επιλογές εγκατάστασης - HD, USB, VM and Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-el.htm#Inst-prep">Προετοιμασία Εγκατάστασης &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-el.htm#Inst-prep">Προετοιμασία Εγκατάστασης</a></li>
+					  <li><a href="hd-install-el.htm#Installation">Εγκατάσταση στον σκληρό δίσκο</a></li>
+					  <li><a href="hd-install-el.htm#first-hd-boot">Πρώτη εκκίνηση</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-el.htm#fromiso">Εκκίνηση fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-el.htm#fromiso">Εκκίνηση fromiso - Γενικά</a></li>
+					  <li><a href="hd-install-opts-el.htm#grub2-fromiso">Εκκίνηση 'fromiso' με Grub 2</a></li>
+					  <li><a href="hd-install-opts-el.htm#fromiso-persist">fromiso και persist</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-el.htm#usb-hd">Εγκατάσταση σε USB δίσκους &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-el.htm#usb-hd">Eγκατάσταση σε USB σκληρό δίσκο - aptosid συγκεκριμένα - aptosid-σε-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-el.htm#raw-usb">Εγραφή του aptosid σε USB/SSD stick με Linux, MS Windows ή Mac OS X σύστημα</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-el.htm#install-crypt">Installing to encryted partitions - cryptroot</a></li>
+		  <li><a href="nbdboot-el.htm#nbd1">Εκκίνηση του aptosid μέσω δικτύου</a></li>
+		  <li><a href="hd-install-vmopts-el.htm#vm">Επιλογές εγκατάστασεις σε Εικονική Μηχανή (Virtual Machine)</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-el.htm">Κάρτες γραφικών, Οθόνες, Xorg &amp; Διάφοροι Οδηγοί</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-el.htm#mon-res">Ανάλυση Οθόνης (screen) και Οθόνες (monitor)  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-el.htm#mon-res">Ανάλυση Οθόνης (screen) και Οθόνες (monitor)</a></li>
+					  <li><a href="hw-dev-mon-el.htm#xrandr">Δύο Οθόνες (Dual Monitors) και xrandr</a></li>
+					  <li><a href="hw-dev-mon-el.htm#mon-binary">Δύο Οθόνες (με χρήση binaries)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-el.htm#foss-xorg">GPU drivers &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-el.htm#ati-3d">AMD/ATI 3D drivers</a></li>
+					  <li><a href="gpu-el.htm#intel">Intel 2D and 3D drivers</a></li>
+					  <li><a href="gpu-el.htm#nvidia">Nvidia 3D drivers</a></li>
+					  <li><a href="gpu-el.htm#foss-xorg">Open Source Xorg drivers</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-el.htm#fw-detect">Firmware detection - non-free </a></li>
+			  <li><a href="nf-firm-el.htm#non-free-firmware">Adding non-free to Sources List</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-el.htm">Διαχείριστες Παραθύρων</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-el.htm">KDE and XFCE Διαχείριστες Παραθύρων &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-el.htm#xfce-notes">Χρήσιμα extras για Xfce</a></li>
+					    <li><a href="wm-dm-el.htm#install-add">Χρήσιμα extras για KDE</a></li>
+					    <li><a href="wm-dm-el.htm#desk-freeze">Κόλλημα επιφάνειας εργασίας</a></li>
+					    <li><a href="wm-dm-el.htm#kde-login">Δεν μπορώ να εισέλθω στο KDE</a></li>
+					    <li><a href="wm-dm-el.htm#ch-th">Aλλάζοντας Θέματα (Themes)</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-el.htm#dm">Installing additional Display Managers</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-el.htm">Σύνδεση στο διαδίκτυο, WiFi, LAN και Δίκτυα</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-el.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-el.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-el.htm#serv-ftp">FTP Πελάτες</a></li>
+					    <li><a href="lamp-apache-el.htm#serv-sec">Πρωτόκολλα ασφαλείας</a></li>
+					    <li><a href="lamp-apache-el.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-el.htm#serv-mysql">MySQL Ρύθμιση</a></li>
+					    <li><a href="lamp-ppp-el.htm#serv-php">PHP με Apache</a></li>
+					    <li><a href="ntp-server-el.htm#ntp-server">Timeserver Ρύθμιση</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-el.htm#tor">Firewalls και Privacy &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-el.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-el.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-el.htm#firewalls">Firewalls</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-el.htm#ssh-x">SSH και Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-el.htm#setup">Samba-Server Ρύθμιση</a></li>
+						  <li><a href="samba-el.htm#configure">Ρύθμιση SAMBA (Windows)</a></li>
+						  <li><a href="ssh-el.htm#ssh-fs">SSH Απομακρυσμένη Προσάρτυση</a></li>
+						  <li><a href="ssh-el.htm#ssh-x">Παραθυρικές Eφαρμογές μέσω SSH</a></li>
+						  <li><a href="ssh-el.htm#ssh-f">GUI SSH με Konqueror</a></li>
+						  <li><a href="ssh-el.htm#ssh-w">SSH X-Forwarding από ένα Windows-PC</a></li>
+						  <li><a href="ssh-el.htm#ssh">SSH και Ασφάλεια</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-el.htm#netcardconfig">WIFI Συνδέσεις &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-el.htm#netcardconfig">Mπαίνοντας στο Δίκτυο - Ceni</a></li>
+						    <li><a href="inet-wpagui-el.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-el.htm#net-set1">WiFi - Ρύθμιση του WiFi Roaming</a></li>
+						    <li><a href="inet-wpa-el.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-el.htm#hotswitch">Εναλλαγή δικτύου μεταξύ WiFi και σύρματος</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-el.htm#netcardconfig">Wired (σύρμα) Συνδέσεις &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-el.htm#dial-mod">56k Modems</a></li>
+						    <li><a href="inet-ceni-el.htm#netcardconfig">Mπαίνοντας στο Δίκτυο - Ceni</a></li>
+					</ul>
+					</li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-el.htm">Διαχείριση Πακέτων και dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-el.htm#apt-cook">APT Cookbook and Sources list &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-el.htm#apt-cook">APT-Οδηγός και Λίστες Πηγών (Sources list)</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-install">Εγκαθιστώντας ένα νέο πακέτο</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-delete">Διαγράφοντας ένα πακέτο</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-downgrade">Υποβαθμίζοντας / Κρατώντας (Hold) ένα πακέτο</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-cache">Αναζήτηση πακέτων με apt-cache</a></li>
+					    <li><a href="sys-admin-apt-el.htm#gui-pacsea">GUI Package searching</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-el.htm#kern-upgrade">Αναβαθμίζοντας τον πυρήνα &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-el.htm#kern-remove">Διαγραφή ενός πυρήνα</a></li>
+					    <li><a href="sys-admin-kern-upg-el.htm#kern-upgrade">Αναβαθμίζοντας τον πυρήνα</a></li>
+					    <li><a href="sys-admin-kern-upg-el.htm#dmakms">Εγκατάσταση kernel modules δυναμικά με dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-el.htm#apt-upgrade">Aναβάθμιση σε ένα Εγκατεστημένο Σύστημα - dist-upgrade - Γενικά &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-el.htm#live-cd-upgrade">Αναβαθμίζοντας χρησιμοποιώντας το Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-el.htm#approx">dist-upgrade πολλαπλών PC σε ένα LAN</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-upgrade">Aναβάθμιση σε ένα Εγκατεστημένο Σύστημα - dist-upgrade - Γενικά</a></li>
+					    <li><a href="sys-admin-apt-el.htm#du-st">Aναβάθμιση σε ένα Εγκατεστημένο Σύστημα - dist-upgrade - Τα Βήματα</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-el.htm">Διαχείριση Συστήματος</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-el.htm#bois-prep">Αναβάθμιση του BIOS με το FreeDOS</a></li>
+		<li><a href="vir-rkits-el.htm#virus-rkits">Ανιχνευτές Iών και Rootkits</a></li>
+		<li><a href="hd-install-el.htm#adduser">Προσθήκη χρηστών και Passwords &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-el.htm#adduser">Προσθήκη ενός νέου χρήστη</a></li>
+					    <li><a href="sys-admin-gen-el.htm#pw-lost">Χαμένο password root, νέα passwords</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-el.htm#start-services">Υπηρεσίες και init runlevels &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-el.htm#start-services">Ενεργοποίηση / Απενεργοποίηση Υπηρεσιών (Services)</a></li>
+					    <li><a href="sys-admin-gen-el.htm#pkill">Killing a service or process</a></li>
+					    <li><a href="sys-admin-gen-el.htm#init">aptosid Επίπεδα εκτέλεσης (runlevels) - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-el.htm#rsync">Backup του συστήματος &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-el.htm#rdiff">Back-Up με rdiff</a></li>
+					    <li><a href="sys-admin-rsync-el.htm#rsync">Back-Up με rsync</a></li>
+					    <li><a href="home-el.htm#home-bu">Μεταφορά του /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-el.htm#fonts">CUPS, Γραμματοσειρές και Ήχος &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-el.htm#fonts">Γραμματοσειρές</a></li>
+					     <li><a href="sys-admin-gen-el.htm#cups">CUPS - Σύστημα Εκτύπωσης</a></li>
+					     <li><a href="sys-admin-gen-el.htm#sound">Mixers Ήχου</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-el.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-el.htm#chroot">Grub2 - Recovering Grub with chroot</a></li>
+					    <li><a href="sys-admin-grub2-el.htm#mbr-over-grub2">Grub2 - MBR Overwritten</a></li>
+					    <li><a href="sys-admin-grub2-el.htm#multi-os">Grub2 - Dual και Multibooting</a></li>
+					    <li><a href="sys-admin-grub2-el.htm#grub1-grub2">Grub2 -Αναβάθμιση α</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Sponsored by webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="../lib/sponsor-logo/webtropia-logo.png" title="aptosid is proudly hosted by webtropia.com" alt="aptosid is proudly hosted by webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div>
+<div id="main-page">
+		<div class="divider" id="part-lvm">
+				<h2 id="top-header">LVM partitioning - Logical Volume Manager</h2>
+
+							<p><span class="highlight-2"> This is a basic guide to get you started. It is your responsibilty to learn more about LVM. Sources and Resources are linked at the bottom of this page which will be of help, however the list is definitely not exhaustive.</span></p>
+
+							<p>Applicable for aptosid-2010-03-apate forward.</p>
+
+							<p>Logical volumes can span multiple disks and are scalable, unlike the traditional method of partitioning hard drives. </p>
+
+							<p>However, whether it be the traditional method of partitioning or partitioning to use LVM, partitioning is not something you do very often, thus it requires deep thought, along with trial and error, before you will be happy with the outcome you desire.</p>
+
+							<p>There are 3 basic terms of of terminology you will need to know:</p>
+						  <ul>
+							<li><span class="highlight-3">Physical Volumes:</span> These are your physical disks, or disk partitions, such as /dev/sda or /dev/sdb1. These are what you would be used to using when mounting/unmounting things. Using LVM we can combine multiple physical volumes into volume groups. </li>
+
+							<li><span class="highlight-3">Volume Groups:</span> A volume group is comprised of real physical volumes, and is the storage used to create logical volumes which you can create/resize/remove and use. You can consider a volume group like a "virtual disk" assembled from physical volumes. You can slice it up into "virtual partitions" which are logical volumes.</li>
+
+
+							<li><span class="highlight-3">Logical Volumes:</span> Logical volumes are the volumes that you will ultimately end up mounting upon your system. They can be added, removed, and resized on the fly. Since these are contained in the volume groups they can be bigger than any single physical volume you might have. (i.e. 4 x 250GB drives can be combined into one 1TB volume group, then split create 2 x 500GB logical volumes.)</li>
+						  </ul>
+
+				<h3>There are 6 basic steps required</h3>
+							<p><span class="highlight-3">The assumption for the following example is based upon new unpartitioned disks or where a new partitioning scheme is required, which will delete all existing data on the partitions you wish to convert to an LVM.</span></p>
+
+							<p>Using cfdisk or fdisk is required, as to date Gparted and KDE Partition Manager, (partitionmanager), do not support LVM partitioning.</p>
+
+							<p><span class="highlight-3">Step 1: </span> Create the partition table:</p>
+<pre>
+cfdisk /dev/sda
+<span class="highlight-3"> n </span>to create a new partition on the disk
+<span class="highlight-3"> p  </span>to make this the primary partition
+<span class="highlight-3"> 1  </span>to give the partition the number 1 as an identifier
+<span class="highlight-3"> ### size allocation </span> ### Set first and last cylinders to the default values (press enter) to span the entire drive
+<span class="highlight-3"> t  </span>toggle the type of partition to create
+<span class="highlight-3"> 8e  </span>is the hex code for a Linux LVM
+<span class="highlight-3"> W </span>to write your changes to the disk. ##This will write the partition table. If you have realised that you made a mistake at this point, you could restore the old partition layout and your data will be fine.##
+</pre>
+
+							<p>Should you want the volume to span 2 or more disks, repeat this process on each of the disks.</p>
+
+							<p><span class="highlight-3">Step 2:</span> Setup the partition as a Physical Volume. This will delete any data:</p>
+
+<pre>
+pvcreate /dev/sda1
+</pre>
+
+							<p>Repeat the process on any other partitions as required.</p>
+
+							<p><span class="highlight-3">Step 3:</span> Create the Volume Group:</p>
+
+<pre>
+vgcreate vulcan /dev/sda1
+</pre>
+							<p>Should you wish to span 3 disks, for example, you include the other disks in the vgcreate command:</p>
+
+<pre>
+vgcreate vulcan /dev/sda1 /dev/sdb1 /dev/sdc1
+</pre>
+							<p>If you have done this correctly you'll be able to see the result in the output of:</p>
+<pre>
+vgscan
+</pre>
+							<p>vgdisplay will give you the <span class="highlight-3"> size </span> properties:</p>
+<pre>
+vgdisplay vulcan
+</pre>
+							<p><span class="highlight-3">Step 4:</span> Creating the Logical Volume. Now it is time for you to decide how big you want the logical volume to be initially. One advantage of LVM is that you can adjust the size of the volume on at will without needing to reboot.</p>
+
+							<p>Lets assume that you initially want a 300GB volume called spock within the lvm called vulcan:</p>
+<pre>
+lvcreate -n spock --size 300g vulcan
+</pre>
+
+							<p><span class="highlight-3">Step 5:</span> Format the volume and be patient while it is formating , it could take a while:</p>
+<pre>
+mkfs.ext4 /dev/vulcan/spock
+</pre>
+							<p><span class="highlight-3">Step 6:</span></p>
+<pre>
+mkdir /media/spock/
+</pre>
+							<p>Edit fstab with your favorite editor to mount the volume during boot up. </p>
+<pre>
+mcedit /etc/fstab
+</pre>
+							<p>Using <span class="highlight-3">/dev/vulcan/spock </span> is better than using UUID numbers with LVM, as then you can clone the filesystem and not have to worry about potential UUID collisions, especially with LVM, as you can end up with multiple filesystems with the same UUID number (snapshots being a prime example).</p>
+
+
+<pre>
+/dev/vulcan/spock /media/spock/ ext4 auto,users,rw,exec,dev,relatime  0  2
+</pre>
+							<p><span class="highlight-3"> Optional:</span> Change the owner of the volume so that other users have read/write access to the LVM:</p>
+
+<pre>
+chown root:users /media/spock
+</pre>
+
+<pre>
+chmod 775 /media/spock
+</pre>
+							<p>Your basic LVM should now be set up.</p>
+
+					    <h3>Resizing the volume</h3>
+
+							<p><span class="highlight-3">It is highly recommended that you use a live ISO to change the partition sizes. Whilst growing the partition 'on the fly' may be error free, the same can not be said when reducing the volume, as anomalies will cause data loss, particularly if <span class="highlight-2 "> / (root) </span> or <span class="highlight-2">/home</span> are involved.</span></p>
+
+							<h5>To resize the volume from 300GB to 500GB, as used in this example:</h5>
+<pre>
+umount /media/spock/
+</pre>
+
+<pre>
+lvextend -L+200g /dev/vulcan/spock
+</pre>
+							<p>Then run the command for the filesystem to be resized:</p>
+
+<pre>
+e2fsck -f /dev/vulcan/spock
+</pre>
+
+<pre>
+resize2fs /dev/vulcan/spock
+</pre>
+
+<pre>
+mount /media/spock
+</pre>
+							<h5>To resize the volume from 300GB down to 280GB, as used in this example:</h5>
+<pre>
+umount /media/spock/
+</pre>
+							<p>Then run the command for the filesystem to be resized:</p>
+
+<pre>
+e2fsck -f /dev/vulcan/spock
+</pre>
+
+<pre>
+resize2fs /dev/vulcan/spock 280g
+</pre>
+
+							<p>Then resize the volume</p>
+<pre>
+lvreduce -L-20g /dev/vulcan/spock
+</pre>
+
+<pre>
+resize2fs /dev/vulcan/spock
+</pre>
+
+<pre>
+mount /media/spock
+</pre>
+
+					     <h5>An LVM GUI</h5>
+							<p><span class="highlight-3">system-config-lvm</span> provides a GUI and is available to help you manage your LVMs which is started from the command line as root:</p>
+
+<pre>
+apt-get install system-config-lvm
+man system-config-lvm <span class="highlight-3"> # required reading</span>
+</pre>
+
+				  <h5>Sources and Resources:</h5>
+						     <ul>
+							 <li><a href="http://www.debian-administration.org/articles/410"> Debian Administration - A simple introduction to working with LVM </a></li>
+
+							 <li><a href="http://www.ibm.com/developerworks/linux/library/l-lvm2/"> IBM - Logical volume management</a></li>
+
+							  <li><a href="http://www.ibm.com/developerworks/linux/library/l-resizing-partitions-2/index.html"> IBM - Resizing Linux partitions, Part 2: Advanced resizing</a></li>
+
+
+							  <li> <a href="http://docs.google.com/viewer?a=v&amp;q=cache:1RMpacheCBcJ:www.redhat.com/docs/en-US/Red_Hat_Enterprise_Linux/5.4/pdf/Logical_Volume_Manager_Administration.pdf+%22Logical+Volume+Manager+Administration+%22&amp;hl=en&amp;pid=bl&amp;srcid=ADGEEShRiptIjzsnPNsCs4RgyUFNWkYcrDc3SkBSD6cTq39D6wye5JM3tP_ehcn37I5VWs84I_HI45rvG-n6YG4R2fE8hqDByq-KPhNEkha4zwphrR7QIUVnUz6omwY85e-ZEXX723Js&amp;sig=AHIEtbSJyxEst6Wue7_1_TeDYwB480azEw"> Red Hat - LVM Administrator's Guide</a></li>
+
+							  <li> <a href="http://en.wikipedia.org/wiki/Logical_Volume_Manager_%28Linux%29"> Logical Volume Manager (Linux)</a></li>
+
+							  <li> <a href="http://thelinuxexperiment.com/guinea-pigs/jon-f/setting-up-an-lvm-for-storage/"> Setting up an LVM for Storage</a></li>
+
+							  <li> <a href="http://linuxhelp.blogspot.com/2005/04/creating-lvm-in-linux.html"> Creating a LVM in Linux</a></li>
+
+							  <li> <a href="http://www.linuxconfig.org/Linux_lvm_-_Logical_Volume_Manager">Linux lvm - Logical Volume Manager</a></li>
+
+						      </ul>
+
+	</div>
+	<div id="rev">Page last revised 26/07/2011 2325 UTC</div>
+
+</div>
+</body>
+</html>

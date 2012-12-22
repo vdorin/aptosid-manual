@@ -1,0 +1,751 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>aptosid Manuals - SSH</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision by edhunter 17/09/2010 08:53 UTC -->
+<div id="menu"> <!-- menu starts here el lang maintained by  -->
+<!--aptosid Operating System Manual menu-version-02.13.2011.09.09 -->
+<!-- menu last updated by bluewater 2011.09.09 0935 hrs UTC -->
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="To aptosid.com forums and wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-el.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" />Αναζήτηση Online - Offline </a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Eπιλέξτε άλλη γλώσσα - Choose another language" alt="lang-switch" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-el.htm">Εγχειρίδιο ΛΣ aptosid</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-el.htm#welcome-gen">Εγχειρίδιο ΛΣ aptosid &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-el.htm#cred-team">Συντελεστές</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-el.htm#how-to">Πως να χρησιμοποιήσετε αυτό το εγχειρίδιο &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-el.htm#how-to">Πως να χρησιμοποιήσετε αυτό το εγχειρίδιο</a></li>
+					  <li><a href="welcome-el.htm#table-contents">Πίνακας περιεχομένων</a></li>
+					</ul>
+					</li>
+		<li><a href="help-el.htm#help-gen">Βοήθεια &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-el.htm#help-gen">Που να βρείτε βοήθεια</a></li>
+					  <li><a href="help-el.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-el.htm#welcome-quick">aptosid Οδηγός Γρήγορης Αναφοράς (Quick Start Guide)</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-el.htm">Περιεχόμενα ISO, Εκδόσεις, Κατέβασμα και Εγγραφή</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-el.htm#cd-content">Περιεχόμενα ISO και απαιτήσεις συστήματος &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-el.htm#rolling">Σημειώσεις Έκδοσης</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-el.htm#download-aptosid">aptosid Mirrors, Κατέβασμα και Εγγραφή &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-el.htm#md5">md5 Checksum</a></li>
+					  <li><a href="cd-dl-burning-el.htm#burn-nero">Γράφοντας το ISO στα Windows</a></li>
+					  <li><a href="cd-dl-burning-el.htm#burn-linux">Γράφοντας το ISO στο Linux</a></li>
+					  <li><a href="cd-no-gui-burn-el.htm#burning-no-gui">burniso script</a></li>
+					  <li><a href="cd-no-gui-burn-el.htm#burn-no-gui-gen">Εγγραφή χωρίς γραφικό περιβάλλον</a></li>
+					  <li><a href="cd-dl-burning-el.htm#download-aptosid">aptosid Mirrors Κατεβάσματος</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-el.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-el.htm#rootpw">Κωδικός υπερχρήστη (root) στο aptosid-Live ISO</a></li>
+				<li><a href="live-mode-el.htm#live-cd-installsoft">Εγκατάσταση προγραμμάτων σε περιβάλλον Live-ISO</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-el.htm">Το Τερματικό / Κονσόλα</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-el.htm#term-kon">Τερματικό / Κονσόλα &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-el.htm#term-kon">Τερματικό / Κονσόλα</a></li>
+					  <li><a href="term-konsole-el.htm#colours"> Coloured terminal prompts</a></li>
+					  <li><a href="term-konsole-el.htm#cli-help">Βοήθεια από την γραμμή εντολών</a></li>
+					  <li><a href="help-el.htm#init3-tools">Εργαλεία να ξέρετε για text mode (tty) - init 3</a></li>
+					  <li><a href="term-konsole-el.htm#term-cmds">Λίστα εντολών του Linux</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-el.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-el.htm">CheatCodes</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-el.htm#cheatcodes">Cheatcodes αποκλειστικά για το aptosid Live-ISO</a></li>
+				<li><a href="cheatcodes-el.htm#cheatcodes-linux">Cheatcodes γενικά για το Linux</a></li>
+				<li><a href="cheatcodes-vga-el.htm#vga">Κωδικοί VGA</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-el.htm">Partitioning the Hard Drive - Traditional, GPT and LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-el.htm#hd-ntfs3g">Γράφοντας σε NTFS κατάτμηση με το ntfs-3g</a></li>
+			<li><a href="part-lvm-el.htm#part-lvm">Partitioning to use LVM - Logical Volume Manager</a></li>
+			<li><a href="part-gparted-el.htm#partition">Δημιουργία κατατμήσεων με χρήση γραφικών (GUI) εργαλείων &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-el.htm#partition">Δημιουργία κατατμήσεων στον δίσκο χρησιμοποιώντας το  GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-el.htm#ntfs">Αλλαγή μεγέθους σε NTFS κατάτμηση χρησιμοποιώντας το GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-el.htm#partition">Δημιουργία κατατμήσεων με χρήση εργαλείων κονσόλας (CLI) &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-el.htm#partition">Δημιουργία κατατμήσεων στον σκληρό δίσκο χρησιμοποιώντας το cfdisk</a></li>
+					    <li><a href="part-cfdisk-el.htm#formating">Διαμόρφωση (format) μετά την δημιουργία κατάτμησης, με το cfdisk</a></li>
+					    <li><a href="part-gdisk-el.htm#gdisk-6">Formatting after partitioning with gdisk</a></li>
+					    <li><a href="part-gdisk-el.htm#gdisk-1">GPT Partitioning with gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-el.htm#part-example">Γενικά για κατατμήσεις &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-el.htm#part-example">Παραδείγματα για το μέγεθος των κατατμήσεων</a></li>
+					  <li><a href="part-uuid-el.htm#uuid">UUID, Rebuilding fstab and creating new mount points</a></li>
+					  <li><a href="part-cfdisk-el.htm#disknames">Ονομασία δίσκων εν συντομία</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-el.htm">Επιλογές εγκατάστασης - HD, USB, VM and Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-el.htm#Inst-prep">Προετοιμασία Εγκατάστασης &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-el.htm#Inst-prep">Προετοιμασία Εγκατάστασης</a></li>
+					  <li><a href="hd-install-el.htm#Installation">Εγκατάσταση στον σκληρό δίσκο</a></li>
+					  <li><a href="hd-install-el.htm#first-hd-boot">Πρώτη εκκίνηση</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-el.htm#fromiso">Εκκίνηση fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-el.htm#fromiso">Εκκίνηση fromiso - Γενικά</a></li>
+					  <li><a href="hd-install-opts-el.htm#grub2-fromiso">Εκκίνηση 'fromiso' με Grub 2</a></li>
+					  <li><a href="hd-install-opts-el.htm#fromiso-persist">fromiso και persist</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-el.htm#usb-hd">Εγκατάσταση σε USB δίσκους &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-el.htm#usb-hd">Eγκατάσταση σε USB σκληρό δίσκο - aptosid συγκεκριμένα - aptosid-σε-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-el.htm#raw-usb">Εγραφή του aptosid σε USB/SSD stick με Linux, MS Windows ή Mac OS X σύστημα</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-el.htm#install-crypt">Installing to encryted partitions - cryptroot</a></li>
+		  <li><a href="nbdboot-el.htm#nbd1">Εκκίνηση του aptosid μέσω δικτύου</a></li>
+		  <li><a href="hd-install-vmopts-el.htm#vm">Επιλογές εγκατάστασεις σε Εικονική Μηχανή (Virtual Machine)</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-el.htm">Κάρτες γραφικών, Οθόνες, Xorg &amp; Διάφοροι Οδηγοί</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-el.htm#mon-res">Ανάλυση Οθόνης (screen) και Οθόνες (monitor)  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-el.htm#mon-res">Ανάλυση Οθόνης (screen) και Οθόνες (monitor)</a></li>
+					  <li><a href="hw-dev-mon-el.htm#xrandr">Δύο Οθόνες (Dual Monitors) και xrandr</a></li>
+					  <li><a href="hw-dev-mon-el.htm#mon-binary">Δύο Οθόνες (με χρήση binaries)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-el.htm#foss-xorg">GPU drivers &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-el.htm#ati-3d">AMD/ATI 3D drivers</a></li>
+					  <li><a href="gpu-el.htm#intel">Intel 2D and 3D drivers</a></li>
+					  <li><a href="gpu-el.htm#nvidia">Nvidia 3D drivers</a></li>
+					  <li><a href="gpu-el.htm#foss-xorg">Open Source Xorg drivers</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-el.htm#fw-detect">Firmware detection - non-free </a></li>
+			  <li><a href="nf-firm-el.htm#non-free-firmware">Adding non-free to Sources List</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-el.htm">Διαχείριστες Παραθύρων</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-el.htm">KDE and XFCE Διαχείριστες Παραθύρων &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-el.htm#xfce-notes">Χρήσιμα extras για Xfce</a></li>
+					    <li><a href="wm-dm-el.htm#install-add">Χρήσιμα extras για KDE</a></li>
+					    <li><a href="wm-dm-el.htm#desk-freeze">Κόλλημα επιφάνειας εργασίας</a></li>
+					    <li><a href="wm-dm-el.htm#kde-login">Δεν μπορώ να εισέλθω στο KDE</a></li>
+					    <li><a href="wm-dm-el.htm#ch-th">Aλλάζοντας Θέματα (Themes)</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-el.htm#dm">Installing additional Display Managers</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-el.htm">Σύνδεση στο διαδίκτυο, WiFi, LAN και Δίκτυα</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-el.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-el.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-el.htm#serv-ftp">FTP Πελάτες</a></li>
+					    <li><a href="lamp-apache-el.htm#serv-sec">Πρωτόκολλα ασφαλείας</a></li>
+					    <li><a href="lamp-apache-el.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-el.htm#serv-mysql">MySQL Ρύθμιση</a></li>
+					    <li><a href="lamp-ppp-el.htm#serv-php">PHP με Apache</a></li>
+					    <li><a href="ntp-server-el.htm#ntp-server">Timeserver Ρύθμιση</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-el.htm#tor">Firewalls και Privacy &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-el.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-el.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-el.htm#firewalls">Firewalls</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-el.htm#ssh-x">SSH και Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-el.htm#setup">Samba-Server Ρύθμιση</a></li>
+						  <li><a href="samba-el.htm#configure">Ρύθμιση SAMBA (Windows)</a></li>
+						  <li><a href="ssh-el.htm#ssh-fs">SSH Απομακρυσμένη Προσάρτυση</a></li>
+						  <li><a href="ssh-el.htm#ssh-x">Παραθυρικές Eφαρμογές μέσω SSH</a></li>
+						  <li><a href="ssh-el.htm#ssh-f">GUI SSH με Konqueror</a></li>
+						  <li><a href="ssh-el.htm#ssh-w">SSH X-Forwarding από ένα Windows-PC</a></li>
+						  <li><a href="ssh-el.htm#ssh">SSH και Ασφάλεια</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-el.htm#netcardconfig">WIFI Συνδέσεις &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-el.htm#netcardconfig">Mπαίνοντας στο Δίκτυο - Ceni</a></li>
+						    <li><a href="inet-wpagui-el.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-el.htm#net-set1">WiFi - Ρύθμιση του WiFi Roaming</a></li>
+						    <li><a href="inet-wpa-el.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-el.htm#hotswitch">Εναλλαγή δικτύου μεταξύ WiFi και σύρματος</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-el.htm#netcardconfig">Wired (σύρμα) Συνδέσεις &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-el.htm#dial-mod">56k Modems</a></li>
+						    <li><a href="inet-ceni-el.htm#netcardconfig">Mπαίνοντας στο Δίκτυο - Ceni</a></li>
+					</ul>
+					</li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-el.htm">Διαχείριση Πακέτων και dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-el.htm#apt-cook">APT Cookbook and Sources list &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-el.htm#apt-cook">APT-Οδηγός και Λίστες Πηγών (Sources list)</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-install">Εγκαθιστώντας ένα νέο πακέτο</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-delete">Διαγράφοντας ένα πακέτο</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-downgrade">Υποβαθμίζοντας / Κρατώντας (Hold) ένα πακέτο</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-cache">Αναζήτηση πακέτων με apt-cache</a></li>
+					    <li><a href="sys-admin-apt-el.htm#gui-pacsea">GUI Package searching</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-el.htm#kern-upgrade">Αναβαθμίζοντας τον πυρήνα &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-el.htm#kern-remove">Διαγραφή ενός πυρήνα</a></li>
+					    <li><a href="sys-admin-kern-upg-el.htm#kern-upgrade">Αναβαθμίζοντας τον πυρήνα</a></li>
+					    <li><a href="sys-admin-kern-upg-el.htm#dmakms">Εγκατάσταση kernel modules δυναμικά με dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-el.htm#apt-upgrade">Aναβάθμιση σε ένα Εγκατεστημένο Σύστημα - dist-upgrade - Γενικά &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-el.htm#live-cd-upgrade">Αναβαθμίζοντας χρησιμοποιώντας το Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-el.htm#approx">dist-upgrade πολλαπλών PC σε ένα LAN</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-upgrade">Aναβάθμιση σε ένα Εγκατεστημένο Σύστημα - dist-upgrade - Γενικά</a></li>
+					    <li><a href="sys-admin-apt-el.htm#du-st">Aναβάθμιση σε ένα Εγκατεστημένο Σύστημα - dist-upgrade - Τα Βήματα</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-el.htm">Διαχείριση Συστήματος</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-el.htm#bois-prep">Αναβάθμιση του BIOS με το FreeDOS</a></li>
+		<li><a href="vir-rkits-el.htm#virus-rkits">Ανιχνευτές Iών και Rootkits</a></li>
+		<li><a href="hd-install-el.htm#adduser">Προσθήκη χρηστών και Passwords &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-el.htm#adduser">Προσθήκη ενός νέου χρήστη</a></li>
+					    <li><a href="sys-admin-gen-el.htm#pw-lost">Χαμένο password root, νέα passwords</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-el.htm#start-services">Υπηρεσίες και init runlevels &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-el.htm#start-services">Ενεργοποίηση / Απενεργοποίηση Υπηρεσιών (Services)</a></li>
+					    <li><a href="sys-admin-gen-el.htm#pkill">Killing a service or process</a></li>
+					    <li><a href="sys-admin-gen-el.htm#init">aptosid Επίπεδα εκτέλεσης (runlevels) - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-el.htm#rsync">Backup του συστήματος &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-el.htm#rdiff">Back-Up με rdiff</a></li>
+					    <li><a href="sys-admin-rsync-el.htm#rsync">Back-Up με rsync</a></li>
+					    <li><a href="home-el.htm#home-bu">Μεταφορά του /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-el.htm#fonts">CUPS, Γραμματοσειρές και Ήχος &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-el.htm#fonts">Γραμματοσειρές</a></li>
+					     <li><a href="sys-admin-gen-el.htm#cups">CUPS - Σύστημα Εκτύπωσης</a></li>
+					     <li><a href="sys-admin-gen-el.htm#sound">Mixers Ήχου</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-el.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-el.htm#chroot">Grub2 - Recovering Grub with chroot</a></li>
+					    <li><a href="sys-admin-grub2-el.htm#mbr-over-grub2">Grub2 - MBR Overwritten</a></li>
+					    <li><a href="sys-admin-grub2-el.htm#multi-os">Grub2 - Dual και Multibooting</a></li>
+					    <li><a href="sys-admin-grub2-el.htm#grub1-grub2">Grub2 -Αναβάθμιση α</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Sponsored by webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="../lib/sponsor-logo/webtropia-logo.png" title="aptosid is proudly hosted by webtropia.com" alt="aptosid is proudly hosted by webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div>
+<div id="main-page">
+<div class="divider" id="ssh">
+			<h2 id="top-header">SSH</h2>
+
+							<!--p>In computing, Secure Shell or SSH is a set of standards and an associated network protocol that allows establishing a secure channel between a local and a remote computer. It uses public-key cryptography to authenticate the remote computer and (optionally) to allow the remote computer to authenticate the user. SSHο provides confidentiality and integrity of data exchanged between the two computers using encryption and message authentication codes (MACs). SSH is typically used to log into a remote machine and execute commands, but it also supports tunneling, forwarding arbitrary TCP ports and X11 connections; it can transfer files using the associated SFTP or SCP protocols. An SSH server, by default, listens on the standard TCP port 22. <a href="http://en.wikipedia.org/wiki/Secure_Shell"> Referenced from wikipedia</a></p-->
+
+							<p>Στους ηλεκτρονικούς υπολογιστές, το Secure Shell ή SSH είναι ένα σετ από προδιαγραφές και ένα συνεργαζόμενο δικτυακό πρωτόκολλο το οποίο επιτρέπει την ίδρυση ενός ασφαλούς καναλιού μεταξύ ενός τοπικού υπολογιστή και ενός απομακρυσμένου υπολογιστή. Χρησιμοποιεί κρυπτογραφία δημόσιου κλειδιού για την εξακρίβωση της ταυτότητας του απομακρυσμένου υπολογιστή και (προαιρετικά) για να επιτρέψει στον απομακρυσμένο υπολογιστή να εξακριβώσει την ταυτότητα του χρήστη. Το SSHο παρέχει εμπιστευτικότητα και ακεραιότητα των δεδομένων που ανταλλάσσονται μεταξύ των δύο υπολογιστών, χρησιμοποιώντας κρυπτογράφηση και κωδικών εξακρίβωσης μηνυμάτων (message authentication codes ή MACs). Το SSH χρησιμοποιείται συνήθως για να συνδεθούμε σε ένα απομακρυσμένο υπολογιστή και να εκτελέσουμε εντολές. Επίσης υποστηρίζει tunneling, διαβίβαση αυθαίρετων πορτών TCP και X11 συνδέσεων. Μπορεί να μεταφέρει αρχεία χρησιμοποιώντας συνεργαζόμενα SFTP ή SCP πρωτόκολλα. Ένας διακομιστής SSH , από προεπιλογή, ακούει στο TCP port 22. <a href="http://en.wikipedia.org/wiki/Secure_Shell"> Αναφερόμενο από wikipedia(Αγγλικά)</a></p>
+
+	</div>
+	<div class="divider" id="ssh-s">
+			<!--h2>Enabling good security protocols for SSH</h2-->
+			<h2>Ενεργοποίηση καλών πρωτοκόλλων ασφαλείας για SSH </h2>
+
+							<!--p>Allowing root login, via ssh, is not secure. we do not want root users logging in at all by default, debian should be secure, not insecure nor do we want to give users 10 minutes to do a quick dictionary password attack on our ssh login therefore, its up to you to limit the time and attempts!</p-->
+
+							<p>Να επιτρέπεται το root login, μέσω ssh, δεν είναι ασφαλές. Δεν θέλουμε οι χρήστες να συνδέονται σαν root από προεπιλογή, το debian θα πρέπει να είναι ασφαλής και όχι ανασφαλής και ούτε θέλουμε να δώσουμε στους χρήστες 10 λεπτά να κάνουν μια γρήγορη επίθεση, πάνω στην ssh σύνδεση μας, με την χρήση λεξικού για να βρουν την κωδική λέξη επομένως, εξαρτάτε από εσάς να ορίσετε τον χρόνο και τις προσπάθειες.</p>
+
+ 							<!--p>To help make your ssh more secure, simply take your favorite text editor, and open it with root privileges, then open this file:</p-->
+
+							<p>Για να κάνετε το ssh σας πιο ασφαλής, απλά πάρτε τον αγαπημένο σας διαχειρηστή κειμένου, ανοίξτε τον με δικαιώματα χρηστή root και μετά ανοίξτε αυτό το αρχείο:</p>
+<pre>
+/etc/ssh/sshd_config
+</pre>
+							<!--p>Then we locate the offending items, and change them.</p-->
+
+							<p>Ακολούθως βρίσκουμε τα εμπλεκόμενa αντικείμενα και τα τροποποιούμε</p>
+
+						<!--h6>The offending items you need to locate are the following:</h6-->
+
+						<h6>Τα εμπλεκόμενα αντικείμενα που πρέπει να εντοποίσετε είναι τα εξής:</h6>
+
+ 							<!--p><span class="highlight-3">Port &lt;desired port&gt;:</span> This must be set to the correct port that you are forwarding from your router. Port forwarding must also be setup in your router. If you don't know how to do that, maybe you shouldn't be using ssh remotely. Debian sets the default to port 22, however its recommended that you use a port  out of the standard scan range. let's say we use port 5874 so that becomes:</p-->
+
+							<p><span class="highlight-3">Port &lt;επιθυμητό port&gt;:</span> Αυτό πρέπει να οριστεί στη σωστή πόρτα που διαβιβάζετε από το δρομολογητή (router) σας. Ο δρομολογητής σας πρέπει να είναι ρυθμισμένος να διαβιβάζει ports. Αν δεν ξέρετε πως να το κάνετε αυτό, τότε ίσος να μην πρέπει να χρησιμοποιήσετε το ssh απομακρυσμένα. Το debian χρησιμοποιεί ως port προεπιλογής το port 22 συνιστάται όμως να χρησιμοποιήσετε port το οποίο να βρίσκεται εκτός του συνηθισμένου εύρους σάρωσης. Ας πούμε ότι χρησιμοποιούμε το port 5874 τότε αυτό θα γίνει:</p>
+<pre>
+Port 5874
+</pre>
+ 							<!--p><span class="highlight-3">ListenAddress &lt;ip of machine or network interface&gt;:</span> Now, of course, since you are forwarding a port from your router, you need the machine to have a static ip address on the network, unless you are using a  dns server locally, but if you're doing something that complicated and need these directions you are probably making a huge mistake So let's say it's this: </p-->
+
+							<p><span class="highlight-3">ListenAddress &lt;ip του υπολογιστή ή δικτυακού interface&gt;:</span> Τώρα που διαβιβάζετε ένα port από τον δρομολογητή σας χρειάζεται το μηχάνημα σας να έχει ένα στατικό ip στο δίκτυο, εκτός και αν χρησιμοποιείτε ένα τοπικό διακομιστή dns, αλλά αν κάνετε κάτι το τόσο περίπλοκο και χρειάζεστε αυτές τις οδηγίες τότε μάλλον κάνετε ένα τεράστιο λάθος. Ας πούμε ότι το ListenAddress είναι αυτό: </p>
+<pre>
+ListenAddress 192.168.2.134
+</pre>
+							<!--p>Next, Protocol 2 is already a debian default, but check to make sure:</p-->
+
+							<p>Μετά, το Protocol 2 είναι προεπιλεγμένο στο debian, αλλά ελέγξτε το για να είστε σίγουρη</p>
+
+ 							<!--p><span class="highlight-3">LoginGraceTime &lt;seconds to allow for login&gt;:</span> This has an absurd default of 600 seconds. It does not take you 10 minutes to type in your user name and password, so lets make that sane:</p-->
+
+							<p><span class="highlight-3">LoginGraceTime &lt;επιτρεπόμενος χρόνος για να συνδεθείτε σε δευτερόλεπτα&gt;:</span> Αυτό έχει για προεπιλογή τα 600 δευτερόλεπτα, πράγμα παράλογο. Δεν χρειάζεστε 10 λεπτά για να γράψετε το όνομα χρήστη σας και το password, γι' αυτό ας κάνουμε την τιμή αυτή λογική:</p>
+<pre>
+LoginGraceTime 45
+</pre>
+ 							<!--p>Now you have 45 seconds to login and hackers do not have 600 seconds each attempt to crack your password</p-->
+
+							<p>Τώρα έχετε 45 δευτερόλεπτα για να συνδεθείτε και οι χακερς δεν έχουν σε κάθε προσπάθεια τους 600 δευτερόλεπτα για να σπάσουν το password σας</p>
+
+							<!--p><span class="highlight-3">PermitRootLogin &lt;yes&gt;:</span> Why debian makes PermitRootLogin 'yes', is incomprehensible so we fix that to 'no'</p-->
+
+							<p><span class="highlight-3">PermitRootLogin &lt;yes&gt;:</span> Ο λόγος που το debian έχει σαν προεπιλογή στο PermitRootLogin το 'yes' είναι ακατανόητος οπόταν το κάνουμε 'no'</p>
+<pre>
+PermitRootLogin no
+</pre>
+
+<pre>
+StrictModes yes
+</pre>
+ 							<!--p><span class="highlight-3">MaxAuthTries &lt;xxx&gt;:</span> Number of attempts to login, you can  make it 3 or 4 attempts but no more than that</p-->
+
+							<p><span class="highlight-3">MaxAuthTries &lt;xxx&gt;:</span> Αριθμός των προσπαθειών για σύνδεση, εδώ μπορείτε να βάλετε 3 ή 4 προσπάθειες αλλά όχι περισσότερες</p>
+<pre>
+MaxAuthTries 2
+</pre>
+ 							<!--p>You may need to add any of these items if they are not present:</p-->
+
+							<p>Μπορεί να χρειαστεί να προσθέσετε οποιαδήποτε από τα παρακάτω αντικείμενα αν δεν υπάρχουν:</p>
+<!--pre>
+AllowUsers &lt;user names with spaces allowed to access via ssh&gt;
+</pre-->
+
+<pre>
+AllowUsers &lt;Ονόματα χρηστών, στους οποίους επιτρέπετε η πρόσβαση μέσω ssh. Τα ονόματα είναι χωρισμένα με κενά &gt;
+</pre>
+ 							<!--p><span class="highlight-3">AllowUsers &lt;xxx&gt;:</span> make an ssh only user with no rights use adduser to add the user, then put their name here, like:</p-->
+
+							<p><span class="highlight-3">AllowUsers &lt;xxx&gt;:</span>Μόνο χρήστες που είναι γραμμένοι εδώ μπορούν να χρησιμοποιήσουν την πρόσβαση ssh και αυτοί μόνο με δικαιώματα απλού χρήστη. Με το adduser θα πρέπει να προσθέσουμε ένα χρήστη τον οποίο θα χρησιμοποιούμε μόνο για το ssh:</p>
+<!--pre>
+AllowUsers whomevertheuseris
+</pre-->
+
+<pre>
+AllowUsers όποιοςείναιοχρήστης
+</pre>
+ 							<!--p><span class="highlight-3">PermitEmptyPasswords &lt;xxx&gt;:</span> give that user a nice long password that is impossible to guess ever in a million years that is the only user allowed to ssh in. Once you are in, you can just su to root:</p-->
+
+							<p><span class="highlight-3">PermitEmptyPasswords &lt;xxx&gt;:</span> του πιο πάνω χρήστη θα πρέπει να του δοθεί ένα τόσο μακρύ password το οποίο θα είναι αδύνατον να βρεθεί ακόμη και σε ένα εκατομμύριο χρόνια. Μόλις συνδεθεί ο χρήστης, μπορεί να χρησιμοποιήσει την εντολή su για να γίνει root:</p>
+<pre>
+PermitEmptyPasswords no
+</pre>
+							<!--p><span class="highlight-3">PasswordAuthentication &lt;xxx&gt;:</span> obviously, for password login, not key login, you need passwords to be full unless using keys, you need this to be yes</p-->
+
+							<p><span class="highlight-3">PasswordAuthentication &lt;xxx&gt;:</span> φυσικά και πρέπει η τιμή εδώ να είναι yes εκτός και αν χρησιμοποιείτε κλειδί για να συνδεθείτε</p>
+<!--pre>
+PasswordAuthentication yes [unless using keys]
+</pre-->
+
+<pre>
+PasswordAuthentication yes [εκτός και αν χρησιμοποιείτε κλειδί]
+</pre>
+							<!--p>Finally:</p-->
+
+							<p>Τέλος:</p>
+<pre>
+/etc/init.d/ssh restart
+</pre>
+ 							<!--p>Now you have somewhat more secure ssh not fully secure, just better, including creating an ssh only user with adduser</p-->
+
+							<p>Τώρα έχετε ένα κάπως πιο ασφαλή ssh. Όχι εντελώς ασφαλή, απλά καλύτερο, ιδίως αν δημιουργήσατε ένα χρήστη τον οποίο θα χρησιμοποιείτε αποκλειστικά για την σύνδεση με ssh.</p>
+
+							<!--p><span class="highlight-3">Note:</span> If you get an error message and ssh refuses to connect you, go to your $HOME and look for a hidden folder called <span class="highlight-3">.ssh</span>span> and delete the file called<span class="highlight-3"> known_hosts</span>span> and try again. This error mainly occurs when you have  dynamically set IP addresses (DCHP)</p-->
+
+							<p><span class="highlight-3">Σημείωση:</span> Αν σας βγάλει μήνυμα λάθους και το ssh αρνείται να σας συνδέσει, πηγαίνετε στο $HOME ψάξτε για ένα κρυμμένο φάκελο με όνομα <span class="highlight-3">.ssh</span> και σβήστε από μέσα το αρχείο με όνομα<span class="highlight-3"> known_hosts</span> και δοκιμάστε ξανά. Αυτό το μήνυμα λάθους το βγάζει κυρίως αν σας δίνετε δυναμικά η διευθύνση IP (DCHP)</p>
+
+	</div>
+		<div class="divider" id="ssh-x">
+			<!--h2>Using X Window Applications Via Network Through SSH</h2-->
+
+			<h2>Χρησιμοποιώντας Χ εφαρμογές μέσω δικτύου μέσω SSH</h2>
+							<!--p>ssh -X allows you to log into a remote computer and have its graphical user interface X displayed on your local machine. As $user (and note the X is to be a capital):</p-->
+							<p>Το ssh -X σας επιτρέπει να συνδεθείτε με ένα απομακρυσμένο υπολογιστή και να έχετε το Χ γραφικό του περιβάλλον να φαίνεται στον τοπικό σας υπολογιστή. Σαν $χρήστης (προσέξτε ότι το Χ πρέπει να είναι κεφαλαίο):</p>
+<pre>
+$ ssh -X username@xxx.xxx.xxx.xxx (ή IP)
+</pre>
+							<!--p>Enter the password for the username on the remote computer and run the X-application in the shell:</p-->
+							<p>Δώστε το password για το όνομα χρήστη (username) στον απομακρυσμένο υπολογιστή και τρέξτε την X-εφαρμογή μέσα σε ένα κέλυφος (shell):</p>
+
+<pre>
+$ iceweasel Ή oocalc Ή oowriter Ή kspread
+</pre>
+
+							<!--p>Some really slow network connections from your PC may benefit from having a level of compression to help speed transfers, therefore add an extra option, on fast networks it has the opposite effect:</p-->
+							<p>Μερικές πολύ αργές δικτυακές συνδέσεις μπορεί να επωφεληθούν εάν υπάρχει κάποιος βαθμός συμπίεσης για να βοηθήσει στην αύξηση της ταχύτητας μεταφοράς. Για αυτό προσθέστε μια έξτρα επιλογή. Σε γρήγορα δίκτυα η επιλογή αυτή θα έχει το αντίθετο αποτέλεσμα:</p>
+<pre>
+$  ssh -C -X username@xxx.xxx.xxx.xxx (ή IP)
+</pre>
+							<p>Διαβάστε:</p>
+<pre>
+$man ssh
+</pre>
+
+							<p><span class="highlight-3">Σημείωση:</span> Αν σας βγάλει μήνυμα λάθους και το ssh αρνείται να σας συνδέσει, πηγαίνετε στο $HOME ψάξτε για ένα κρυμμένο φάκελο με όνομα <span class="highlight-3">.ssh</span> και σβήστε από μέσα το αρχείο με όνομα<span class="highlight-3"> known_hosts</span> και δοκιμάστε ξανά. Αυτό το μήνυμα λάθους το βγάζει κυρίως αν σας δίνετε δυναμικά η διευθύνση IP (DCHP)</p>
+	</div>
+	<div class="divider" id="ssh-scp">
+			<!--h2>Copying files and directories remotely via ssh with scp</h2-->
+			<h2>Απομακρυσμένη αντιγραφή αρχείων και καταλόγων μέσω ssh με scp</h2>
+
+							<!--p>scp uses the command line, (terminal/cli), to copy files between hosts on a network. It uses ssh authentication and security for data transfer, therefore, scp will ask for passwords or passphrases as required for authentication.</p-->
+							<p>Το scp χρησιμοποιεί την γραμμή εντολών (τερματικό/cli) για την αντιγραφή αρχείων μεταξύ υπολογιστών σε ένα δίκτυο. Χρησιμοποιεί τις μεθόδους ταυτοποιήσεις και την ασφαλή μεταφορά πληροφοριών του ssh και γιαυτό θα ζητήση password ή passphrase τα οποία απαιτούνται για την ταυτοποίηση.</p>
+
+							<!--p>Assuming you have ssh rights to a remote PC or a server, scp allows you to copy partitions, directories or file, to and from that PC, to a specified location or destination of your choosing where you also have permissions. For example, this could include a PC or server you have the permission to access on your LAN, (or anywhere else in the world), to enable a transfer of data to a USB hard Drive connected to your PC.</p-->
+							<p>Αν υποθέσουμε ότι έχετε ssh δικαιώματα σε ένα απομακρυσμένο υπολογιστή ή διακομιστή, το scp σας επιτρέπει να αντιγράψεται κατατμήσεις, καταλόγους ή αρχεία από και προς τον απομακρυσμένο υπολογιστή, σε μια συγκεκριμένη τοποθεσία ή προορισμό της επιλογής σας στον οποίο έχετε δικαιώματα. Για παράδειγμα, αυτό μπορεί να συμπεριλαμβάνει έναν υπολογηστή ή διακομιστή στο LAN σας (ή οπουδήποτε αλλού στον κόσμο) στον οποίο έχετε πρόσβαση, για να σας επιτρέψει την μεταβίβαση δεδομένων σε ένα USB δίσκο συνδεδεμένο στον υπολογιστή σας.</p>
+
+							<!--p>You can recursively copy entire partitions and directories with the <span class="highlight-3">scp -r</span> option.  Note that scp -r follows symbolic links encountered in the tree traversal.</p-->
+							<p>Μπορείτε να αντιγράψετε αναδρομικά ολόκληρες κατατμήσεις και καταλόγους με την επιλογή <span class="highlight-3">scp -r</span>. Προσέξτε ότι το scp -r ακολουθεί συμβολικούς συνδέσμους οι οποίοι βρίσκονται στους κατάλογους που αντιγράφει.</p>
+
+					<h3>Παραδείγματα:</h3>
+							 <p><span class="highlight-3"> Παράδειγμα 1:</span> Αντιγραφή μιας κατάτμησης:</p>
+
+<pre>
+scp -r &lt;user&gt;@xxx.xxx.x.xxx:/media/disk1part6/ /media/diskXpartX/
+</pre>
+							 <p><span class="highlight-3"> Παράδειγμα 2:</span> Αντιγραφή ενός καταλόγου, στην περίπτωση μας τον κατάλογο με όνομα photos μέσα στο $HOME:</p>
+
+<pre>
+scp -r &lt;user&gt;@xxx.xxx.x.xxx:~/photos/ /media/diskXpartX/xx
+</pre>
+							 <p><span class="highlight-3">Παράδειγμα 3:</span> Αντιγραφή ενός αρχείου, στην περίπτωση μας ενός αρχείου που βρίσκεται μέσα στο $HOME:</p>
+<pre>
+scp &lt;user&gt;@xxx.xxx.x.xxx:~/filename.txt /media/diskXpartX/xx
+</pre>
+							<p><span class="highlight-3">Παράδειγμα 4:</span> Αντιγραφή ενός αρχείου:</p>
+<pre>
+scp &lt;user&gt;@xxx.xxx.x.xxx:/media/disk1part6/filename.txt /media/diskXpartX/xx
+</pre>
+
+							<p><span class="highlight-3">Παράδειγμα 5:</span> Εάν βρίσκεστε ήδη μέσα στον κατάλογο στον οποίο θέλετε να αντιγράψετε το αρχείο ή τον κατάλογο, χρησημοποιήστε μια '<span class="highlight-2"> <b>.</b> </span>' (τελεία) :</p>
+<pre>
+scp -r &lt;user&gt;@xxx.xxx.x.xxx:/media/disk1part6/filename.txt<span class="highlight-2"><b> .</b> </span>
+</pre>
+
+							<p><span class="highlight-3">Παράδειγμα 6:</span> Για να αντιγράψετε αρχεία από τον υπολογιστή σας σε ένα άλλο, (χρησιμοποιείστε <span class="highlight-3">scp -r</span> εάν αντιγράφετε ένα κατάλογο ή μια κατάτμηση):</p>
+
+<pre>
+scp /media/disk1part6/filename.txt &lt;user&gt;@xxx.xxx.x.xxx:/media/diskXpartX/xx
+</pre>
+
+							<p>Διαβάστε:</p>
+<pre>
+man scp
+</pre>
+
+	</div>
+		<div class="divider" id="ssh-w">
+			<!--h2>Remote access ssh with X-Forwarding from a Windows-PC:</h2-->
+
+			<h2>Απομακρυσμένη πρόσβαση ssh με διαβίβαση X (X-Forwarding) από υπολογιστή με Windows:</h2>
+
+							<!--p>* Download and burn the <a href="http://xlivecd.indiana.edu/">Cygwin XLiveCD</a><br />
+							* Put the CD into the CD-ROM tray of the Windows-PC and wait for the autorun.<br />
+							Click "continue" until a shell window pops up and enter:</p-->
+
+							<p>* Κατεβάστε και κάψετε το<a href="http://xlivecd.indiana.edu/">Cygwin XLiveCD</a><br />
+							* Βάλτε το CD μέσα στο CD-ROM του υπολογιστή με τα Windows και περιμένετε την αυτόματη έναρξη (autorun).<br />
+							Κάνετε κλικ στο "continue" μέχρι να ανοίξει ένα παράθυρο κέλυφος (shell window) και μέσα στο παράθυρο πληκτρολογείστε τα πιο κάτω:</p>
+<pre>
+ssh -X όνομαχρήστη@xxx.xxx.xxx.xxx
+</pre>
+      							<!--p>Note: xxx.xxx.xxx.xxx is the IP of the linux remote computer or its URL (for example a dyndns.org account) and the username is of course one user account that exists on the remote machine. After successfull login, start "kmail" for example and check your mails!</p-->
+
+							<p>Σημείωση: xxx.xxx.xxx.xxx είναι το IP του απομακρυσμένου υπολογιστή με linux ή το URL του (για παράδειγμα ένας λογαριασμός dyndns.org) και το όνομα χρήστη είναι φυσικά το όνομα του λογαριασμού κάποιου χρήστη που υπάρχει στον απομακρυσμένο υπολογιστή. Αφού συνδεθείτε μπορείτε για παράδειγμα να τρέξετε το "kmail" για να δείτε τα e-mail σας.</p>
+
+							<!--p>Important: make sure hosts.allow has an entry to allow access from PCs from other networks. If you are behind a NAT-Firewall or a router make sure port 22 is forwarded to your linux machine</p-->
+
+							<p>Σημαντικό: σιγουρευτείτε ότι το hosts.allow έχει μια καταχώριση που να επιτρέπει την πρόσβαση σε υπολογιστές από άλλα δίκτυα. Αν είστε πίσω από ένα NAT-Firewall ή ένα δρομολογητή (router) σιγουρευτείτε ότι το port 22 διαβιβάζεται στον υπολογιστή σας που έχει linux</p>
+	</div>
+		<div class="divider" id="ssh-f">
+			<!--h2>SSH with Konqueror</h2-->
+
+			<h2>SSH με το Konqueror</h2>
+
+							<!--p>Konqueror and Krusader are both able to access remote data, using <span class="highlight-3">sftp://</span> and both use the ssh protocol.</p-->
+
+							<p>Και το Konqueror και το Krusader μπορούν να έχουν πρόσβαση σε απομακρυσμένα δεδομένα με την χρήση <span class="highlight-3">sftp://</span> το οποίο χρησιμοποιεί ssh.</p>
+
+							<!--p>How it works:<br />
+							1) Open a new Konqueror window<br />
+							2) Enter into the address bar: <span class="highlight-3">sftp://username@ssh-server.com</span></p-->
+
+							<p>Πώς λειτουργεί:<br />
+							1) Ανοίξετε ένα νέο παράθυρο του Konqueror<br />
+							2) Στην μπάρα διεύθυνσης (address bar) πληκτρολογείστε: <span class="highlight-3">sftp://όνομαχρήστη@διακομιστής-shh.com</span></p>
+
+			<!--p>Example 1: </p-->
+
+			<p>Παράδειγμα 1: </p>
+<!--pre>
+sftp://aptosid1@remote_hostname_or_ip
+(Note: A popup opens that asks for your ssh password, enter it and click OK)
+</pre-->
+
+<pre>
+sftp://aptosid1@remote_hostname_ή_ip
+(Σημείωση: θα ανοίξει ένα popup το οποίο θα σας ζητήσει το ssh password σας, δώστε το και πατήστε OK)
+</pre>
+							<!--p>Example 2: </p-->
+
+							<p>Παράδειγμα 2: </p>
+<!--pre>
+sftp://username:password@remote_hostname_or_ip
+(In this form you will <span class="highlight-3">NOT</span> get a popup asking for a password you will be directly connected.)
+</pre-->
+
+<pre>
+sftp://όνομαχρήστη:password@remote_hostname_ή_ip
+(Αν το γράψετε με αυτή την μορφή <span class="highlight-3">ΔΕΝ</span> θα βγει popup που να σας ζητάει password, θα συνδεθείτε απευθείας.)
+</pre>
+							<!--p>For a LAN environment</p-->
+
+							<p>Για περιβάλλον LAN</p>
+<!--pre>
+sftp://username@10.x.x.x or 198.x.x.x.x
+(Note: A popup opens that asks for your ssh password, enter it and click OK)
+</pre-->
+
+<pre>
+sftp://όνομαχρήστη@10.x.x.x ή 198.x.x.x.x
+(Σημείωση: θα ανοίξει ένα popup το οποίο θα σας ζητήσει το ssh password σας, δώστε το και πατήστε OK)
+</pre>
+							<!--p>The Konqueror SSH GUI connection now is initialised. With this Konqueror window, you can work with the files (copy/view) that are on the SSH server just as if the files would be in a folder on your local machine.</p-->
+
+							<p>Η SSH GUI σύνδεση του Konqueror έχει αναληφθεί. Με αυτό το παράθυρο του Konqueror μπορείτε να δουλέψετε με τα αρχεία (αντιγραφή/επισκόπηση) που βρίσκονται στον διακομιστή SSH ακριβώς σαν τα αρχεία να βρίσκονταν σε ένα φάκελο στον τοπικό υπολογιστή σας.</p>
+
+							<!--p class="highlight-3">NOTE: If you have set the ssh port  to use another port, other than the default of 22, you need to specify the port that sftp is to use:</p-->
+
+							<p class="highlight-3">ΣΗΜΕΙΩΣΗ: Αν έχετε ορίσει το ssh να χρησιμοποιεί άλλο port έκτος του προεπιλεγμένου port 22, τότε θα πρέπει να διευκρινίσετε στο sftp πιο port να χρησιμοποιήσει:</p>
+<!--pre>
+sftp://user@ip:port
+</pre-->
+
+<pre>
+sftp://χρήστης@ip:port
+</pre>
+							<!--p>'user@ip:port' is standard syntax for many programs like sftp and smb.</p-->
+
+							<p>'χρήστης@ip:port' είναι το πρότυπο σύνταξης για πολλά προγράμματα όπως το sftp and smb.</p>
+
+	</div>
+	<div class="divider" id="ssh-fs">
+			<!--h2>SSHFS - Mounting Remotely</h2-->
+
+			<h2>SSHFS - Mounting Απομακρυσμένα</h2>
+							<!--p>SSFS is an easy, fast and secure method that uses FUSE to mount a remote filesystem. The only server-side requirement is a running ssh deamon.</p-->
+
+							<p>Το SSFS είναι μια εύκολη, γρήγορη και ασφαλής μέθοδος η οποία χρησιμοποιεί το FUSE για να κάνει mount απομακρυσμένα ένα σύστημα αρχείων (filesystem). Η μόνη απαίτηση που έχουμε από τον διακομιστή είναι να τρέχει ένα ssh deamon.</p>
+
+							<!--p>On client side you propably have to install sshfs: <span class="highlight-1">installing fuse and groups is not necessary on aptosid eros forward as it is installed by default:</span></p-->
+
+							<!--p>On client side you propably have to install sshfs:</p-->
+
+							<!--p>Auf Seite des Clients muss vermutlich  sshfs erst installiert werden:</p-->
+
+							<p>Στον πέλατη (client) πιθανών να χρειαστεί να εγκαταστήσετε πρώτα το sshfs:</p>
+<pre>
+apt-get update &amp;&amp; apt-get install sshfs
+</pre>
+
+							<!--p><span class="highlight-1"><em>fuse</em> und <em>groups</em> sind ab aptosid eros auf der ISO und müssen nicht extra installiert werden.</span></p-->
+
+							<p><span class="highlight-1">Η εγκατάσταση του fuse και των ομάδων (groups) δεν είναι απαραίτητη με την έκδοση aptosid έρος και τις νεότερες εκδόσεις μιας και είναι προεγκατεστημένα</span></p>
+
+							<!--p class="highlight-3">Now you must log out and log back in again</p-->
+
+							<p class="highlight-3">Τώρα θα πρέπει να αποσυνδεθείτε και να συνδεθείτε ξανά</p>
+
+							<!--p>Mounting a remote filesystem is very easy:</p-->
+
+							<p>Να κάνετε mount ένα απομακρυσμένο σύστημα αρχείων είναι πολύ εύκολο:</p>
+<!--pre>
+sshfs username@remote_hostname:directory local_mount_point
+</pre-->
+
+<pre>
+sshfs όνομαχρήστη@απομακρυσμένο_hostname:φάκελος τοπικό_mount_point
+</pre>
+							<!--p>where the <span class="highlight-3">username</span> is the account name on the remote host:</p-->
+
+							<p>όπου <span class="highlight-3">όνομαχρήστη</span> είναι το όνομα του λογαριασμού που βρίσκεται πάνω στον απομακρυσμένο υπολογιστή:</p>
+
+							<!--p>If no directory is given the home directory of the remote user will be mounted.<span class="highlight-3"> Attention: The colon <span class="highlight-2"> <b>:</b></span> is essential even if no directory is given! </span></p-->
+
+							<p>Αν δεν δοθεί φάκελος τότε θα γίνει mount ο home φάκελος που βρίσκετε στον απομακρυσμένο υπολογιστή.<span class="highlight-3"> Προσοχή: Η άνω και κάτω τελεία <span class="highlight-2"> <b>:</b></span> είναι απαραίτητη ακόμη και αν δεν δοθεί φάκελος! </span></p>
+
+							<!--p>After mounting the remote directory behaves like any other local filesystem, you can browse files, edit them and run scripts on them, just as you can do with a local filesystem.</p-->
+
+							<p>Όταν ο απομακρυσμένος φάκελος γίνει mount, θα συμπεριφέρεται όπως ένα τοπικό σύστημα αρχείων. Θα μπορείτε να περιηγηθείτε μέσα στα αρχεία, να τα επεξεργαστείτε και να τρέξετε scripts όπως ακριβώς θα κάνατε και με ένα τοπικό σύστημα αρχείων.</p>
+
+							<!--p>If you want to unmount the remote host use the following command:</p-->
+
+							<p>Αν θέλετε να κάνετε unmount τον απομακρυσμένο υπολογιστή χρησιμοποιείστε την παρακάτω εντολή:</p>
+<pre>
+fusermount -u local_mount_point
+</pre>
+							<!--p>If you use sshfs frequently it would be a good choice to add an fstab entry:</p-->
+
+							<p>Αν χρησιμοποιείτε το sshfs συχνά θα ήταν καλή ιδέα να προσθέσετε μια καταχώριση στο fstab:</p>
+<!--pre>
+sshfs#username@remote_hostname://remote_directory /local_mount_point fuse user,allow_other,uid=1000,gid=1000,noauto,fsname=sshfs#username@remote_hostname://remote_directory  0 0 
+</pre-->
+
+<pre>
+sshfs#username@remote_hostname://remote_directory /local_mount_point fuse user,allow_other,uid=1000,gid=1000,noauto,fsname=sshfs#username@remote_hostname://remote_directory  0 0 
+</pre>
+							<p>Next uncomment <span class="highlight-3">user_allow_other</span> in <span class="highlight-3">/etc/fuse.conf</span>:</p>
+
+<pre> 
+ # Allow non-root users to specify the 'allow_other' or 'allow_root'
+ # mount options.
+ #
+ user_allow_other
+</pre>
+							<!--p>This will allow every user which is part of the group fuse to mount the filesystem by using the well known mount command:</p-->
+
+							<p>Αυτό θα επιτρέψει σε κάθε χρήστη που είναι μέλος της ομάδας fuse να κάνει mount το σύστημα αρχείων χρησιμοποιώντας την γνωστή εντολή mount:</p>
+<!--pre>mount /path/to/mount/point</pre-->
+
+<pre>mount /μονοπάτι/προς/mount/point</pre>
+							<!--p>With that line in your fstab you can of course use the umount command too:</p-->
+
+							<p>Με αυτή την γραμμή στο fstab σας μπορείτε φυσικά να χρησιμοποιήσετε και την εντολή umount:</p>
+<!--pre>umount /path/to/mount/point</pre-->
+
+<pre>umount /μονοπάτι/προς/mount/point</pre>
+							<!--p>To check whether you are in that group or not use the following command:</p-->
+
+							<p>Για να ελέγξετε αν είστε μέλος της ομάδας fuse χρησιμοποιείστε την παρακάτω εντολή:</p>
+<pre>
+cat /etc/group | grep fuse
+</pre>
+							<!--p>You should see something like:</p-->
+
+							<p>Θα πρέπει να δείτε κάτι τέτοιο:</p>
+<pre>
+fuse:x:117: &lt;όνομαχρήστη&gt;
+</pre>
+							<!--p>If your username is not listed use the adduser command as root:</p-->
+
+							<p>Αν δεν δείτε το όνομα χρήστη σας με την πιο πάνω εντολή χρησιμοποιήστε την εντολή adduser σαν root:</p>
+<pre>
+adduser &lt;όνομαχρήστη&gt; fuse
+</pre>
+							<!--p>Now your username should be listed und you should be able to run the command:</p-->
+
+							<p>Τώρα το όνομα χρήστη σας θα πρέπει να είναι μέλος της ομάδας fuse και θα πρέπει να μπορείτε να τρέξετε τις εντολές:</p>
+
+							<!--p class="highlight-3">Note: The "id" will not list in the "fuse" group, until you have logged out and logged back in again</p-->
+
+							<p class="highlight-3">Σημείωση: Η "ταυτότητα" δεν θα φαίνεται μέσα στην ομάδα "fuse" μέχρι να αποσυνδεθείτε και να συνδεθείτε ξανά</p>
+<pre>
+mount τοπικό_mount_point
+</pre>
+							<p>και</p>
+<pre>
+umount τοπικό_mount_point
+</pre>
+
+	</div>
+
+			<div id="rev">Τελευταία αναθεώρηση περιεχομένου 01/11/2011 0650 UTC</div>
+
+</div>
+</body>
+</html>

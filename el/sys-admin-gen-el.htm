@@ -1,0 +1,689 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>aptosid Manuals - System Administration</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision by edhunter  17/09/2010 0530 hrs UTC -->
+<div id="menu"> <!-- menu starts here el lang maintained by  -->
+<!--aptosid Operating System Manual menu-version-02.13.2011.09.09 -->
+<!-- menu last updated by bluewater 2011.09.09 0935 hrs UTC -->
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="To aptosid.com forums and wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-el.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" />Αναζήτηση Online - Offline </a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Eπιλέξτε άλλη γλώσσα - Choose another language" alt="lang-switch" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-el.htm">Εγχειρίδιο ΛΣ aptosid</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-el.htm#welcome-gen">Εγχειρίδιο ΛΣ aptosid &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-el.htm#cred-team">Συντελεστές</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-el.htm#how-to">Πως να χρησιμοποιήσετε αυτό το εγχειρίδιο &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-el.htm#how-to">Πως να χρησιμοποιήσετε αυτό το εγχειρίδιο</a></li>
+					  <li><a href="welcome-el.htm#table-contents">Πίνακας περιεχομένων</a></li>
+					</ul>
+					</li>
+		<li><a href="help-el.htm#help-gen">Βοήθεια &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-el.htm#help-gen">Που να βρείτε βοήθεια</a></li>
+					  <li><a href="help-el.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-el.htm#welcome-quick">aptosid Οδηγός Γρήγορης Αναφοράς (Quick Start Guide)</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-el.htm">Περιεχόμενα ISO, Εκδόσεις, Κατέβασμα και Εγγραφή</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-el.htm#cd-content">Περιεχόμενα ISO και απαιτήσεις συστήματος &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-el.htm#rolling">Σημειώσεις Έκδοσης</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-el.htm#download-aptosid">aptosid Mirrors, Κατέβασμα και Εγγραφή &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-el.htm#md5">md5 Checksum</a></li>
+					  <li><a href="cd-dl-burning-el.htm#burn-nero">Γράφοντας το ISO στα Windows</a></li>
+					  <li><a href="cd-dl-burning-el.htm#burn-linux">Γράφοντας το ISO στο Linux</a></li>
+					  <li><a href="cd-no-gui-burn-el.htm#burning-no-gui">burniso script</a></li>
+					  <li><a href="cd-no-gui-burn-el.htm#burn-no-gui-gen">Εγγραφή χωρίς γραφικό περιβάλλον</a></li>
+					  <li><a href="cd-dl-burning-el.htm#download-aptosid">aptosid Mirrors Κατεβάσματος</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-el.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-el.htm#rootpw">Κωδικός υπερχρήστη (root) στο aptosid-Live ISO</a></li>
+				<li><a href="live-mode-el.htm#live-cd-installsoft">Εγκατάσταση προγραμμάτων σε περιβάλλον Live-ISO</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-el.htm">Το Τερματικό / Κονσόλα</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-el.htm#term-kon">Τερματικό / Κονσόλα &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-el.htm#term-kon">Τερματικό / Κονσόλα</a></li>
+					  <li><a href="term-konsole-el.htm#colours"> Coloured terminal prompts</a></li>
+					  <li><a href="term-konsole-el.htm#cli-help">Βοήθεια από την γραμμή εντολών</a></li>
+					  <li><a href="help-el.htm#init3-tools">Εργαλεία να ξέρετε για text mode (tty) - init 3</a></li>
+					  <li><a href="term-konsole-el.htm#term-cmds">Λίστα εντολών του Linux</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-el.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-el.htm">CheatCodes</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-el.htm#cheatcodes">Cheatcodes αποκλειστικά για το aptosid Live-ISO</a></li>
+				<li><a href="cheatcodes-el.htm#cheatcodes-linux">Cheatcodes γενικά για το Linux</a></li>
+				<li><a href="cheatcodes-vga-el.htm#vga">Κωδικοί VGA</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-el.htm">Partitioning the Hard Drive - Traditional, GPT and LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-el.htm#hd-ntfs3g">Γράφοντας σε NTFS κατάτμηση με το ntfs-3g</a></li>
+			<li><a href="part-lvm-el.htm#part-lvm">Partitioning to use LVM - Logical Volume Manager</a></li>
+			<li><a href="part-gparted-el.htm#partition">Δημιουργία κατατμήσεων με χρήση γραφικών (GUI) εργαλείων &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-el.htm#partition">Δημιουργία κατατμήσεων στον δίσκο χρησιμοποιώντας το  GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-el.htm#ntfs">Αλλαγή μεγέθους σε NTFS κατάτμηση χρησιμοποιώντας το GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-el.htm#partition">Δημιουργία κατατμήσεων με χρήση εργαλείων κονσόλας (CLI) &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-el.htm#partition">Δημιουργία κατατμήσεων στον σκληρό δίσκο χρησιμοποιώντας το cfdisk</a></li>
+					    <li><a href="part-cfdisk-el.htm#formating">Διαμόρφωση (format) μετά την δημιουργία κατάτμησης, με το cfdisk</a></li>
+					    <li><a href="part-gdisk-el.htm#gdisk-6">Formatting after partitioning with gdisk</a></li>
+					    <li><a href="part-gdisk-el.htm#gdisk-1">GPT Partitioning with gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-el.htm#part-example">Γενικά για κατατμήσεις &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-el.htm#part-example">Παραδείγματα για το μέγεθος των κατατμήσεων</a></li>
+					  <li><a href="part-uuid-el.htm#uuid">UUID, Rebuilding fstab and creating new mount points</a></li>
+					  <li><a href="part-cfdisk-el.htm#disknames">Ονομασία δίσκων εν συντομία</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-el.htm">Επιλογές εγκατάστασης - HD, USB, VM and Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-el.htm#Inst-prep">Προετοιμασία Εγκατάστασης &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-el.htm#Inst-prep">Προετοιμασία Εγκατάστασης</a></li>
+					  <li><a href="hd-install-el.htm#Installation">Εγκατάσταση στον σκληρό δίσκο</a></li>
+					  <li><a href="hd-install-el.htm#first-hd-boot">Πρώτη εκκίνηση</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-el.htm#fromiso">Εκκίνηση fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-el.htm#fromiso">Εκκίνηση fromiso - Γενικά</a></li>
+					  <li><a href="hd-install-opts-el.htm#grub2-fromiso">Εκκίνηση 'fromiso' με Grub 2</a></li>
+					  <li><a href="hd-install-opts-el.htm#fromiso-persist">fromiso και persist</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-el.htm#usb-hd">Εγκατάσταση σε USB δίσκους &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-el.htm#usb-hd">Eγκατάσταση σε USB σκληρό δίσκο - aptosid συγκεκριμένα - aptosid-σε-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-el.htm#raw-usb">Εγραφή του aptosid σε USB/SSD stick με Linux, MS Windows ή Mac OS X σύστημα</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-el.htm#install-crypt">Installing to encryted partitions - cryptroot</a></li>
+		  <li><a href="nbdboot-el.htm#nbd1">Εκκίνηση του aptosid μέσω δικτύου</a></li>
+		  <li><a href="hd-install-vmopts-el.htm#vm">Επιλογές εγκατάστασεις σε Εικονική Μηχανή (Virtual Machine)</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-el.htm">Κάρτες γραφικών, Οθόνες, Xorg &amp; Διάφοροι Οδηγοί</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-el.htm#mon-res">Ανάλυση Οθόνης (screen) και Οθόνες (monitor)  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-el.htm#mon-res">Ανάλυση Οθόνης (screen) και Οθόνες (monitor)</a></li>
+					  <li><a href="hw-dev-mon-el.htm#xrandr">Δύο Οθόνες (Dual Monitors) και xrandr</a></li>
+					  <li><a href="hw-dev-mon-el.htm#mon-binary">Δύο Οθόνες (με χρήση binaries)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-el.htm#foss-xorg">GPU drivers &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-el.htm#ati-3d">AMD/ATI 3D drivers</a></li>
+					  <li><a href="gpu-el.htm#intel">Intel 2D and 3D drivers</a></li>
+					  <li><a href="gpu-el.htm#nvidia">Nvidia 3D drivers</a></li>
+					  <li><a href="gpu-el.htm#foss-xorg">Open Source Xorg drivers</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-el.htm#fw-detect">Firmware detection - non-free </a></li>
+			  <li><a href="nf-firm-el.htm#non-free-firmware">Adding non-free to Sources List</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-el.htm">Διαχείριστες Παραθύρων</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-el.htm">KDE and XFCE Διαχείριστες Παραθύρων &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-el.htm#xfce-notes">Χρήσιμα extras για Xfce</a></li>
+					    <li><a href="wm-dm-el.htm#install-add">Χρήσιμα extras για KDE</a></li>
+					    <li><a href="wm-dm-el.htm#desk-freeze">Κόλλημα επιφάνειας εργασίας</a></li>
+					    <li><a href="wm-dm-el.htm#kde-login">Δεν μπορώ να εισέλθω στο KDE</a></li>
+					    <li><a href="wm-dm-el.htm#ch-th">Aλλάζοντας Θέματα (Themes)</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-el.htm#dm">Installing additional Display Managers</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-el.htm">Σύνδεση στο διαδίκτυο, WiFi, LAN και Δίκτυα</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-el.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-el.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-el.htm#serv-ftp">FTP Πελάτες</a></li>
+					    <li><a href="lamp-apache-el.htm#serv-sec">Πρωτόκολλα ασφαλείας</a></li>
+					    <li><a href="lamp-apache-el.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-el.htm#serv-mysql">MySQL Ρύθμιση</a></li>
+					    <li><a href="lamp-ppp-el.htm#serv-php">PHP με Apache</a></li>
+					    <li><a href="ntp-server-el.htm#ntp-server">Timeserver Ρύθμιση</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-el.htm#tor">Firewalls και Privacy &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-el.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-el.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-el.htm#firewalls">Firewalls</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-el.htm#ssh-x">SSH και Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-el.htm#setup">Samba-Server Ρύθμιση</a></li>
+						  <li><a href="samba-el.htm#configure">Ρύθμιση SAMBA (Windows)</a></li>
+						  <li><a href="ssh-el.htm#ssh-fs">SSH Απομακρυσμένη Προσάρτυση</a></li>
+						  <li><a href="ssh-el.htm#ssh-x">Παραθυρικές Eφαρμογές μέσω SSH</a></li>
+						  <li><a href="ssh-el.htm#ssh-f">GUI SSH με Konqueror</a></li>
+						  <li><a href="ssh-el.htm#ssh-w">SSH X-Forwarding από ένα Windows-PC</a></li>
+						  <li><a href="ssh-el.htm#ssh">SSH και Ασφάλεια</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-el.htm#netcardconfig">WIFI Συνδέσεις &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-el.htm#netcardconfig">Mπαίνοντας στο Δίκτυο - Ceni</a></li>
+						    <li><a href="inet-wpagui-el.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-el.htm#net-set1">WiFi - Ρύθμιση του WiFi Roaming</a></li>
+						    <li><a href="inet-wpa-el.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-el.htm#hotswitch">Εναλλαγή δικτύου μεταξύ WiFi και σύρματος</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-el.htm#netcardconfig">Wired (σύρμα) Συνδέσεις &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-el.htm#dial-mod">56k Modems</a></li>
+						    <li><a href="inet-ceni-el.htm#netcardconfig">Mπαίνοντας στο Δίκτυο - Ceni</a></li>
+					</ul>
+					</li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-el.htm">Διαχείριση Πακέτων και dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-el.htm#apt-cook">APT Cookbook and Sources list &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-el.htm#apt-cook">APT-Οδηγός και Λίστες Πηγών (Sources list)</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-install">Εγκαθιστώντας ένα νέο πακέτο</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-delete">Διαγράφοντας ένα πακέτο</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-downgrade">Υποβαθμίζοντας / Κρατώντας (Hold) ένα πακέτο</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-cache">Αναζήτηση πακέτων με apt-cache</a></li>
+					    <li><a href="sys-admin-apt-el.htm#gui-pacsea">GUI Package searching</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-el.htm#kern-upgrade">Αναβαθμίζοντας τον πυρήνα &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-el.htm#kern-remove">Διαγραφή ενός πυρήνα</a></li>
+					    <li><a href="sys-admin-kern-upg-el.htm#kern-upgrade">Αναβαθμίζοντας τον πυρήνα</a></li>
+					    <li><a href="sys-admin-kern-upg-el.htm#dmakms">Εγκατάσταση kernel modules δυναμικά με dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-el.htm#apt-upgrade">Aναβάθμιση σε ένα Εγκατεστημένο Σύστημα - dist-upgrade - Γενικά &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-el.htm#live-cd-upgrade">Αναβαθμίζοντας χρησιμοποιώντας το Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-el.htm#approx">dist-upgrade πολλαπλών PC σε ένα LAN</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-upgrade">Aναβάθμιση σε ένα Εγκατεστημένο Σύστημα - dist-upgrade - Γενικά</a></li>
+					    <li><a href="sys-admin-apt-el.htm#du-st">Aναβάθμιση σε ένα Εγκατεστημένο Σύστημα - dist-upgrade - Τα Βήματα</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-el.htm">Διαχείριση Συστήματος</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-el.htm#bois-prep">Αναβάθμιση του BIOS με το FreeDOS</a></li>
+		<li><a href="vir-rkits-el.htm#virus-rkits">Ανιχνευτές Iών και Rootkits</a></li>
+		<li><a href="hd-install-el.htm#adduser">Προσθήκη χρηστών και Passwords &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-el.htm#adduser">Προσθήκη ενός νέου χρήστη</a></li>
+					    <li><a href="sys-admin-gen-el.htm#pw-lost">Χαμένο password root, νέα passwords</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-el.htm#start-services">Υπηρεσίες και init runlevels &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-el.htm#start-services">Ενεργοποίηση / Απενεργοποίηση Υπηρεσιών (Services)</a></li>
+					    <li><a href="sys-admin-gen-el.htm#pkill">Killing a service or process</a></li>
+					    <li><a href="sys-admin-gen-el.htm#init">aptosid Επίπεδα εκτέλεσης (runlevels) - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-el.htm#rsync">Backup του συστήματος &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-el.htm#rdiff">Back-Up με rdiff</a></li>
+					    <li><a href="sys-admin-rsync-el.htm#rsync">Back-Up με rsync</a></li>
+					    <li><a href="home-el.htm#home-bu">Μεταφορά του /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-el.htm#fonts">CUPS, Γραμματοσειρές και Ήχος &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-el.htm#fonts">Γραμματοσειρές</a></li>
+					     <li><a href="sys-admin-gen-el.htm#cups">CUPS - Σύστημα Εκτύπωσης</a></li>
+					     <li><a href="sys-admin-gen-el.htm#sound">Mixers Ήχου</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-el.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-el.htm#chroot">Grub2 - Recovering Grub with chroot</a></li>
+					    <li><a href="sys-admin-grub2-el.htm#mbr-over-grub2">Grub2 - MBR Overwritten</a></li>
+					    <li><a href="sys-admin-grub2-el.htm#multi-os">Grub2 - Dual και Multibooting</a></li>
+					    <li><a href="sys-admin-grub2-el.htm#grub1-grub2">Grub2 -Αναβάθμιση α</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Sponsored by webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="../lib/sponsor-logo/webtropia-logo.png" title="aptosid is proudly hosted by webtropia.com" alt="aptosid is proudly hosted by webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div>
+<div id="main-page">
+	<div class="divider" id="start-services">
+		<h2 id="top-header">Ενεργοποιώντας υπηρεσίες (services) στο aptosid</h2>
+				<h3>insserv (Πόντος 2008-04 και μετά ): Για να ξεκινήσετε/σταματήσετε υπηρεσίες που είναι ήδη εγκατεστημένες:</h3>
+							<p><span class="highlight-2">Διαβάστε το <span class="highlight-3">/usr/share/doc/insserv/README.Debian</span>, τις σημειώσεις έκδοσης (release notes) και τις man pages (σελίδες εγχειριδίου) προσεκτικά:</span></p>
+<pre>
+ $ man insserv
+ $ man invoke-rc.d
+ $ man update-rc.d
+ ψάξτε στο google για LSB headers
+</pre>
+
+							<p>Για 'ξεκίνημα' (start):</p>
+<pre>
+/etc/init.d/&lt;υπηρεσία&gt; start
+</pre>
+							<p>Για 'σταμάτημα' (stop):</p>
+<pre>
+/etc/init.d/&lt;υπηρεσία&gt; stop
+</pre>
+							<p>Για 'επανεκκίνηση' (restart):</p>
+<pre>
+/etc/init.d/&lt;υπηρεσία&gt; restart
+</pre>
+							<p>Για να μην τρέχει μια υπηρεσία κατά την εκκίνηση (startup)</p>
+<pre>
+update-rc.d &lt;υπηρεσία&gt; remove
+[θα αφαιρέσει όλους τους συνδέσμους εκκίνησης]
+</pre>
+							<p>Για να σιγουρευτείτε ότι μια υπηρεσία θα τρέχει κατά την εκκίνηση [δεν χρειάζεται πάντα].</p>
+<pre>
+update-rc.d &lt;υπηρεσία&gt; defaults
+[θα δημιουργήσει συνδέσμους εκκίνησης]
+</pre>
+
+							<!--p>To read the list of what services are running:</p-->
+							<p>Για να δείτε ποιές υπηρεσίες τρέχουν:</p>
+<pre>
+ls /etc/rc5.d
+</pre>
+
+							<p><span class="highlight-3">S</span> σημαίνει ότι η υπηρεσία θα ξεκινήσει.<br />
+							<span class="highlight-3">K</span> σημαίνει ότι η υπηρεσία δεν θα ξεκινήσει.</p>
+
+					<h3>Παλαιότερες Εγκαταστάσεις (πριν την Πόντος 2008-04)</h3>
+						<h3>insserv σε συστήματα που εγκαταστάθηκαν πριν την Πόντος 2008-04</h3>
+
+							<p> <span class="highlight-2">Προειδοποίηση: Παλαιότερες εγκαταστάσεις δεν θα πάρουν το insserv αυτόματα, λόγω των initscripts ή symlinks του χρήστη. ΔΕΝ συνιστάται η εγκατάσταση του insserv σε εγκαταστάσεις παλαιότερες της Πόντος. Το πακέτο αυτό θα πρέπει να χρησιμοποιείται με προσοχή γιατί λανθασμένες ή ανύπαρκτες LSB εξαρτήσεις υπαρχόντων initscripts μπορούν να οδηγήσουν σε σύστημα που να μην εκκινεί. Η εγκατάσταση του insserv σε ένα υπάρχον σύστημα μπορεί να χρειαστεί μερικές χειροκίνητες αλλαγές.</span></p>
+
+							<p><span class="highlight-2">Διαβάστε <a href="http://wiki.debian.org/LSBInitScripts/DependencyBasedBoot"> τις σημειώσεις τεκμηρίωσης του Debian</a>, και τις σημειώσεις έκδοσης πριν εγκαταστήσετε και ενεργοποιήσετε το insserv.</span></p>
+	</div>
+	<div class="divider" id="bum">
+			<!--h2>Boot-Up Manager (bum) - Graphical services configuration tool</h2-->
+			<h2>Boot-Up Manager (bum) - Γραφικό εργαλείο ρύθμισης υπηρεσιών</h2>
+
+							<!--p>If the logic of a debian system boot up sequence is not very clear and familiar to you, you should not play with symlinks, permissions and so forth. In order to avoid messing up your system. Boot-Up Manager will help you to automate your configuration.</p-->
+							<p>Εάν η λογική της διαδικασίας εκκίνησης ενός debian συστήματος δεν σας είναι κατανοητή, τότε δεν θα πρέπει να παίζετε με εικονικούς συνδέσμους (symlinks), δικαιώματα (permissions) κτλ. Το Boot-Up Manager (διαχειριστής εκκίνησης) θα σας βοηθήσει να αυτοματοποιήσετε τις ρυθμίσεις σας χωρίς να σπάσετε το σύστημα.</p>
+
+							<!--p>Boot-Up Manager is a GUI runlevel configuration editor which allows you to configure what init services are invoked when the system boots up or reboots. It displays a list of every service which could be started at boot.  You can toggle individual services on and off.</p-->
+							<p>Το Boot-Up Manager είναι ένας γραφικός διαχειριστής των επιπέδων εκτέλεσης (runlevel) ο οποίος σας επιτρέπει να ρυθμίσετε τις υπηρεσίες init που θα τρέχουν κατά την εκκίνηση και επανεκκίνηση. Σας παρουσιάζει μια λίστα με όλες τις υπηρεσίες που μπορούν να τρέξουν κατά την εκκίνηση και εσείς μπορείτε να τις ενεργοποιήσετε/απενεργοποιήσετε.</p>
+
+<pre>
+apt-get install bum
+</pre>
+							<p>Για να χρησιμοποιήσετε το Boot-Up Manager GUI:</p>
+<pre>
+$ sux
+password:
+bum
+</pre>
+						  <p> <a href ="http://www.marzocca.net/linux/bumdocs.html"> Λεπτομερείς τεκμηρίωση για το Boot-Up Manager (bum)</a>. </p>
+
+		</div>
+		<div class="divider" id="pkill">
+			<!--h2>Killing a service or process</h2-->
+			<h2>Τερματίζοντας μια υπηρεσία ή μια διεργασία</h2>
+						<!--p><span class="highlight-3">pkill</span> is very useful as its human readable and can work in both user and root mode in the terminal or at tty</p-->
+
+						<p>Το <span class="highlight-3">pkill</span> είναι πολύ χρήσιμο γιατί μπορεί να διαβαστεί από άνθρωπο (human readable) και λειτουργεί σε mode χρήστη και mode διαχειριστή μέσα στο τερματικό ή το tty</p>
+<!--pre>
+pkill -n service
+</pre-->
+
+<pre>
+pkill -n υπηρεσία
+</pre>
+						<!--p>If you are not sure of the correct spelling of the process or service you wish to kill <span class="highlight-3">pkill &lt;tab&gt; &lt;tab&gt;</span> will provide a list </p-->
+
+						<p>Εάν δεν είστε σίγουρη για το ακριβής όνομα μιας διεργασίας ή μιας υπηρεσίας που θέλετε να τερματίσετε το <span class="highlight-3">pkill &lt;tab&gt; &lt;tab&gt;</span> θα σας επιστρέψει μια λίστα.</p>
+
+						<!--p>htop is also good a alternative. (killall -9 is your last alternative).</p-->
+
+						<p>Μια καλή εναλλακτική είναι το htop. (το killall -9 είναι η τελευταία σας εναλλακτική).</p>
+
+	</div>
+	<div class="divider" id="init">
+			<!--h2>aptosid runlevels - init</h2-->
+
+			<h2>aptosid επίπεδα εκτέλεσης (runlevels) - init</h2>
+							<!--p>This is the list for the aptosid operating system runlevels, please note that it does differ from debian stable runlevels:</p-->
+
+							<p>Αυτή είναι η λίστα των επιπέδων εκτέλεσης του λειτουργικού συστήματος aptosid. Παρακαλώ προσέξτε ότι διαφέρουν από τα επίπεδα εκτέλεσης του debian stable:</p>
+		 <table>
+			<tbody>
+				<tr>
+					<th>Runlevel</th>
+					<th>aptosid</th>
+					<th>Debian</th>
+				</tr>
+				<tr>
+					<td><b>init 0</b></td>
+					<td> κλείσιμο (power off) του υπολογιστή</td>
+					<td> κλείσιμο (power off) του υπολογιστή</td>
+				</tr>
+				<tr>
+					<td><b>init 1</b></td>
+					<td>Single user (safety mode) (μόνο ένας χρήστης έχει πρόσβαση στο σύστημα). Daemons όπως ο apache και sshd κλείνουν. Μην μπείτε μέσα σε αυτό το επίπεδο από απομακρυσμένο σύστημα.</td>
+					<td>Single user (safety mode) (μόνο ένας χρήστης έχει πρόσβαση στο σύστημα). Daemons όπως ο apache και sshd κλείνουν. Μην μπείτε μέσα σε αυτό το επίπεδο από απομακρυσμένο σύστημα.</td>
+				</tr>
+				<tr>
+					<td><b>init 2</b></td>
+					<td> Mode πολλών χρηστών (Multi-User) με δίκτυο και χωρίς X ή/και για σταμάτημα ή μη εκκίνηση του Χ.</td>
+					<!--td>Debians' default runlevel for Multi-User mode with the network running the X-Window System.</td-->
+					<td>Το επίπεδο εκτέλεσης προεπιλογής για Πολλαπλούς χρήστες με δίκτυο και X</td>
+				</tr>
+				<tr>
+					<td><b>init 3</b></td>
+					<td> Mode πολλών χρηστών με δίκτυο και χωρίς X ή/και για σταμάτημα ή μη εκκίνηση του Χ  <a href="sys-admin-apt-el.htm#apt-upgrade">This is where a dist-upgrade is actioned</a>.</td>
+					<td>Ίδιο με runlevel 2 / init 2.</td>
+				</tr>
+				<tr>
+					<td><b>init 4</b></td>
+					<td>Mode πολλών χρηστών (Multi-User) με δίκτυο και χωρίς X ή/και για σταμάτημα ή μη εκκίνηση του Χ.</td>
+					<td>Ίδιο με runlevel 2 / init 2.</td>
+				</tr>
+				<tr>
+					<td><b>init 5</b></td>
+					<td>Η προεπιλογή του aptosid για Mode πολλών χρηστών με δίκτυο και X ή/και για εκκίνηση του Χ.</td>
+					<td>Ίδιο με runlevel 2 / init 2.</td>
+				</tr>
+				<tr>
+					<td><b>init 6</b></td>
+					<td> Επανεκκίνηση του συστήματος.</td>
+					<td> Επανεκκίνηση του συστήματος.</td>
+				</tr>
+				<tr>
+					<td><b>init S</b></td>
+					<td> όπου τρέχουν υπηρεσίες η οποίες χρειάζονται για την εκκίνηση και εκτελούνται μόνο μια φορά. Δεν μπορείτε να πάτε πίσω σε αυτό εάν έχει ήδη τρέξει.</td>
+					<td>όπου τρέχουν υπηρεσίες η οποίες χρειάζονται για την εκκίνηση και εκτελούνται μόνο μια φορά. Δεν μπορείτε να πάτε πίσω σε αυτό εάν έχει ήδη τρέξει.</td>
+				</tr>
+			</tbody>
+		</table>
+
+      <div class="spacer02"></div>
+
+							<!--p>To acertain the runlevel (init) you are currently in:</p-->
+							<p>Για να δείτε σε πιο επίπεδο εκτέλεσης βρίσκεστε:</p>
+<pre>
+who -r
+</pre>
+							<!--p>Required reading for any aptosid and Debian system administrator regarding runlevels:</p-->
+							<p>Το παρακάτω θα πρέπει να το διαβάση ο κάθε aptosid και Debian διαχειριστής όσο αφορά τα επίπεδα εκτέλεσης:</p>
+<pre>
+man init
+</pre>
+
+	</div>
+	<div class="divider" id="pw-lost">
+		<h2>Έχασα τον κωδικό υπερχρήστη</h2>
+
+			<p>Δεν μπορείτε να ανακτήσετε τον χαμένο κωδικό αλλά μπορείτε να ορίσετε έναν καινούριο.</p>
+
+			<p>Αρχικά εκκινήστε από το Live-CD.</p>
+
+			<p>Ως διαχειριστής (root) προσαρτήστε (mount) το τμήμα root (για παράδειγμα το /dev/sdb2)</p>
+
+<pre>
+mount /dev/sdb2 /media/sdb2
+</pre>
+							<p>Τώρα κάνετε chroot στο παλιό root τμήμα με και δώστε ένα νέο password:</p>
+<pre>
+chroot /media/sdb2 passwd
+</pre>
+
+	</div>
+	<div class="divider" id="pw-new">
+		<!--h2>Setting new passwords</h2-->
+		<h2>Αλλαγή κωδικού χρήστη</h2>
+
+							<!--p>To change your 'user' password, as <span class="highlight-3">$ user</span>:</p-->
+							<p>Για να αλλάξετε τον κωδικό χρήστη, σαν <span class="highlight-3">$ χρήστης</span>:</p>
+<pre>
+$ passwd
+</pre>
+
+							<!--p>To change your 'root' password, as <span class="highlight-3"># root</span>:</p-->
+							<p>Για να αλλάξετε τον κωδικό 'root', σαν <span class="highlight-3"># root</span>:</p>
+<pre>
+passwd
+</pre>
+
+							<!--p>To change a user's password as an administrator, as <span class="highlight-3"># root</span>:</p-->
+							<p>Για να αλλάξετε τον κωδικό του χρήστη όταν είστε διαχειριστής, σαν <span class="highlight-3"># root</span>:</p>
+<pre>
+passwd &lt;user&gt;
+</pre>
+
+	</div>
+	<div class="divider" id="fonts">
+			<h2>Γραμματοσειρές (Fonts) στο aptosid</h2>
+				<!--h5>Correct dpi settings - Basic Philosophy</h5-->
+
+				<h5>Σωστές ρυθμίσεις dpi - Βασική Φιλοσοφία</h5>
+
+							 <!--p>DPI settings are problematic to guess, but are actually perfectly done by X.</p-->
+
+							  <p>Είναι δύσκολο να μαντέψετε τις ρυθμίσεις DPI, αλλά ρυθμίζονται τέλεια από τον X.</p>
+
+				<!--h5>Correct resolutions and refresh rates</h5-->
+				<h5>Σωστή ανάλυση και refresh rates</h5>
+
+							  <!--p>Every monitor has its own perfect settings combination, but unfortunately not all of them report the right DCC values, and sometimes it is in need of a manual overwride.</p-->
+							  <p>Κάθε οθόνη έχει τον δικό της τέλειο συνδυασμό ρυθμίσεων, αλλά δυστηχώς όχι όλες η οθόνες δίνουν τις σωστές DCC τιμές και κάποτε πρέπει να αντικατασταθούν χειροκίνητα.</p>
+
+				<!--h5>Correct graphics adapter drivers</h5-->
+				<!--<h5>Σωστοί οδηγοί για κάρτες γραφικών</h5>-->
+
+							 <!--p>Some newer ATI and Nvidia cards simply don't play well with the free Xorg drivers, and the only reasonable solution in such case are the commercial closed source drivers. aptosid will not  pre-install those for legal reasons, <a href="gpu-el.htm"> The solutions can be found here. </a></p-->
+							<!--<p>Μερικές νεότερες κάρτες ATI και Nvidia απλά δεν παίζουν καλά με τους ανοιχτού κώδικα Xorg οδηγούς και σε αυτή την περίπτωση η μόνη λογική λύση είναι η χρήση εμπορικών οδηγών κλειστού κώδικα. Το aptosid δεν θα προεγκαταστήση τους οδηγούς αυτούς για νομικούς λόγους, <a href="gpu-el.htm"> Λύσεις μπορούν να βρεθούν εδώ. </a></p>-->
+
+				<!--h5>Default Font selections, rendering and sizes</h5-->
+				<h5>Επιλογή προεπιλεγμένων γραμματοσείρων, rendering και μεγέθη</h5>
+
+							<!--p>aptosid uses (Debian) pre-selected free fonts which have proved to be very balanced, your own fonts selection can/may deteriorate the quality of rendering. But there are a few powerful options in Debian (apart from KDE &gt; systemsettings ) that can help providing spotless rendering with other fonts as well. But please be aware that every font has just a few real perfect sizes, other sizes may not play well.</p-->
+							<p>το aptosid χρησιμοποιεί (Debian) προεπιλεγμένες δωρεάν (ανοιχτού κώδικα) γραμματοσειρές οι οποίες αποδείχτηκαν πολύ ισορροπημένες, η δικές σας επιλογές γραμματοσειρών μπορούν να μειώσουν την ποιότητα του rendering. Υπάρχουν όμως πολλές ισχυρές επιλογές στο Debian (εκτός του KDE &gt; systemsettings ) που μπορούν να βοηθήσουν στην παροχή άψογου rendering και με άλλες γραμματοσειρές. Έχετε υπόψη σας ότι κάθε γραμματοσειρά έχει μόνο μερικά πραγματικά τέλεια μεγέθη, άλλα μεγέθη μπορεί να μην παίζουν καλά.</p>
+
+							<!--p>Playing with the dpi size with the command may also be of assistance:</p-->
+							<p>Το παίξιμο με το μέγεθος dpi με την εντολή μπορεί να φανεί χρήσιμο:</p>
+<pre>
+fix-dpi-kdm
+</pre>
+							<!--p>It should show the DPI for your screensize, but you can play with that as well.You will need to go to init 3 and back to init 5 to make it work or do a reboot.</p-->
+							<p>Θα πρέπει να δείχνει το DPI για το μέγεθος της οθόνης σας αλλά μπορείτε να παίξετε και με αυτό. Θα πρέπει να πάτε στο init 3 και πίσω στο init 5 για να το κάνετε να δουλέψει ή να επανεκκινήσετε τον υπολογιστή.</p>
+
+							<!--p> After having changed font type or DPI (in X or Firefox/Iceweasel), you might need some readjustments to get results to your liking, especially. after a change from Bitmap Fonts to True Type Fonts or the other way round through:</p-->
+							<p> Μέτα από αλλαγή γραμματοσειράς ή DPI (μέσα στον X ή στον Firefox/Iceweasel), μπορεί να χρειαστούν μερικές ρυθμίσεις για να έχετε τα αποτελέσματα που θέλετε ιδίως μετά από αλλαγή από Bitmap γραμματοσειρές σε True Type γραμματοσειρές ή το αντίθετο μέσω:</p>
+<pre>
+dpkg-reconfigure fontconfig-config
+</pre>
+							<!--p>Choose native and autohinter on automatic. Otherwise play around with it.</p-->
+							<p>Επιλέξτε native και autohinter στο automatic ή παίξτε μαζί του.</p>
+
+							 <!--p>If that does not work you might need to redo your fonts cache by:</p-->
+							 <p>Εάν αυτό δεν δουλέψει μπορεί να χρειαστεί να ξανακάνετε το fonts cache σας με:</p>
+<pre>
+apt-get install --reinstall --yes -o DPkg::Options::=--force-confmiss -o DPkg::Options::=--force-confnew fontconfig fontconfig-config
+</pre>
+				<!--h5>GTK based applications like Firefox/Icewasel</h5-->
+				<h5>Εφαρμογές βασισμένες στο GTK όπως ο Firefox/Icewasel</h5>
+							<!--p>GTK-based apps in general are problematic with KDE defaults. This could be solved by this:</p-->
+							<p>Γενικά εφαρμογές που είναι βασισμένες στο GTK προβληματικές με τις προεπιλογές του KDE. Αυτό μπορεί να λυθεί με:</p>
+<pre>
+apt-get install gtk2-engines system-config-gtk-kde gtk-qt-engine gtk2-engines-qtcurve
+</pre>
+							<!--p>In <span class="highlight-3">System Settings &gt; Appearance </span> you will have a new menu item called <span class="highlight-3">GTK Styles and Fonts</span>. Set 'GTK Styles' to use 'Clearlooks' and have the 'GTK Fonts' set to use 'KDE fonts' <span class="highlight-3">or </span> experiment with the various options to suit your preferences.</p-->
+							<p>Μέσα στο <span class="highlight-3">System Settings &gt; Appearance </span> θα έχετε ένα νέο αντικείμενο μενού με όνομα <span class="highlight-3">GTK Styles and Fonts</span>. Ρυθμίστε το 'GTK Styles' να χρησιμοποιεί 'Clearlooks' και ρυθμίστε τα 'GTK Fonts' να χρησιμοποιούν τα 'KDE fonts' <span class="highlight-3">ή </span> πειραματιστείτε με τις διάφορες επιλογές όσπου να είστε ικανοποιημένος.</p>
+
+							<!--p>This MAY fix your font rendering in gtk apps</p-->
+							<p>Αυτό ΠΙΘΑΝΟΝ να φτιάξει το rendering γραμματοσειρών σε gtk εφαρμογές</p>
+	</div>
+	<div class="divider" id="cups">
+			<h2>CUPS</h2>
+							<!--p>KDE has a large section inbuilt in the KDE help, however dist-upgrades often can cause cups to misbehave, this is one known solution:</p-->
+							<p>Το KDE έχει μια μεγάλη ενότητα για το cups μέσα στην KDE βοήθεια, όμως τα dist-upgrades συχνά κάνουν το cups να συμπεριφέρεται παράξενα και αυτό είναι μια γνωστή λύση:</p>
+
+<pre>
+modprobe lp
+echo lp &gt;&gt; /etc/modules
+apt-get remove --purge cupsys cups
+apt-get install cups
+	Ή
+apt-get install cups cups-driver-gutenprint hplip
+</pre>
+							<!--p>Make sure CUPS is running:</p-->
+							<p>Σιγουρευτείτε ότι το CUPS τρέχει:</p>
+<pre>
+/etc/init.d/cups restart
+</pre>
+							<!--p> Then in a web browser: </p-->
+							<p> Μετά μέσα σε ένα web browser: </p>
+<pre>
+http://localhost:631
+</pre>
+
+							<!--p>Another gotcha is when setting up cups via the GUI method, is that it brings up a dialog box asking for you to put in your password, however the dialog box has your user name, prefilled, so when you put in your user password, it does not work, What is really wants is for you to change the user name to <span class="highlight-2">root</span> and put in your <span class="highlight-2">root password</span>.</p-->
+
+							<p>Μια άλλη παγίδα όταν ρυθμίζετε το cups μέσω της γραφικής (GUI) μεθόδου, είναι ότι φέρνει ένα κουτί διαλόγου (dialog box) που έχει το όνομα χρήστη σας και ζητά από εσάς να βάλετε το password αλλά αν βάλετε το password χρήστη σας δεν δουλεύει. Στην πραγματικότητα αυτό που θέλει να κάνετε είναι να αλλάξετε το όνομα χρήστη σε <span class="highlight-2">root</span> και να δώσετε το <span class="highlight-2">root password</span>.</p>
+
+							<p><a href="http://www.linuxfoundation.org/collaborate/workgroups/openprinting/database/databaseintro">The OpenPrinting database</a> contains a wealth of information about specific printers, along with extensive driver information, the drivers themselves, basic specifications, and an associated set of configuration tools. </p>
+	</div>
+	<div class="divider" id="sound">
+			<!--h2>Sound in aptosid</h2-->
+			<h2>Ήχος στο aptosid</h2>
+							<!--p><span class="highlight-3">Sound is muted by default in aptosid.</span></p-->
+							<p><span class="highlight-3">Εκ προεπιλογής ο ήχος είναι απενεργοποιημένος στο aptosid.</span></p>
+
+							<!--p>The KDE version uses Kmix and XFCE uses Mixer.</p-->
+							<p>Η KDE έκδοση χρησιμοποιεί Kmix και η XFCE χρησιμοποιεί Mixer.</p>
+
+							<!--p>Often it is only a matter of clicking on the sound icon in the taskbar and unchecking the 'Mute box'.</p-->
+							<p>Πολλές φορές αρκεί ένα κλικ στο εικονίδιο του ήχου και η αποεπιλογή του κουτιού 'Mute'.</p>
+
+					<h6>Kmix</h6>
+							<!--p>In Kmix you will need to activate the options you prefer for channel options, <span class="highlight-3">Kmix &gt; Setting &gt; Configure Channels.</span></p-->
+							<p>Στο Kmix θα πρέπει να ενεργοποιήσετε τις επιλογές που θέλετε για τις επιλογές καναλιών ήχου, <span class="highlight-3">Kmix &gt; Setting &gt; Configure Channels.</span>Ή σε ένα τερματικό:</p>
+<pre>
+$ kmix
+</pre>
+					<h6>XFCE</h6>
+
+							<!--p>In XFCE run the mixer application and add some controls via the <span class="highlight-3"> Multimedia &gt; Mixer</span> and click the <span class="highlight-3">Select Controls box.</span> Or in a terminal:</p-->
+							<p>Στο XFCE τρέξτε το mixer και προσθέστε ορισμένα κοντρόλ μέσω του <span class="highlight-3"> Multimedia &gt; Mixer</span> και κλικ στο <span class="highlight-3">Select Controls box.</span> Ή σε ένα τερματικό:</p>
+<pre>
+$ xfce4-mixer
+</pre>
+
+					<h3>Alsamixer</h3>
+
+							<!--p>If you prefer to use Alsamixer, it is in the alsa-utils package:</p-->
+							<p>Αν προτιμάτε να χρησιμοποιήσετε το Alsamixer, αυτό βρίσκεται στο πακέτο alsa-utils:</p>
+
+<pre>
+apt-get update
+apt-get install alsa-utils
+exit
+</pre>
+							 <!--p>Set your preferred sound settings as <span class="highlight-2">$user</span> from the terminal:</p-->
+							 <p>Ρυθμίστε τις επιλογές ήχου σαν <span class="highlight-2">$χρήστης</span> από το τερματικό:</p>
+
+<pre>
+$ alsamixer
+</pre>
+							 <!--p>Then as root:</p-->
+							<!-- <p>Μετά σαν root:</p>
+
+<pre>
+alsactl store
+</pre>-->
+
+
+							  <!--p><a href='http://sidux.com/index.php?module=Wikula&amp;tag=SoundMaster'> See also the wiki.</a></p-->
+							  <p><a href='http://asidux.com/index.php?module=Wikula&amp;tag=SoundMaster'>Δείτε επίσης το wiki.</a></p>
+
+	</div>
+
+		<div id="rev">Τελευταία αναθεώρηση περιεχομένου 20/04/2011 0830 UTC  </div>
+
+</div>
+</body>
+</html>

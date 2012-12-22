@@ -1,0 +1,610 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>aptosid Manuals - Hard Disk Installation</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision by edhunter 26/11/2009 1640 utc-->
+<div id="menu"> <!-- menu starts here el lang maintained by  -->
+<!--aptosid Operating System Manual menu-version-02.13.2011.09.09 -->
+<!-- menu last updated by bluewater 2011.09.09 0935 hrs UTC -->
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="To aptosid.com forums and wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-el.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" />Αναζήτηση Online - Offline </a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Eπιλέξτε άλλη γλώσσα - Choose another language" alt="lang-switch" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-el.htm">Εγχειρίδιο ΛΣ aptosid</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-el.htm#welcome-gen">Εγχειρίδιο ΛΣ aptosid &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-el.htm#cred-team">Συντελεστές</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-el.htm#how-to">Πως να χρησιμοποιήσετε αυτό το εγχειρίδιο &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-el.htm#how-to">Πως να χρησιμοποιήσετε αυτό το εγχειρίδιο</a></li>
+					  <li><a href="welcome-el.htm#table-contents">Πίνακας περιεχομένων</a></li>
+					</ul>
+					</li>
+		<li><a href="help-el.htm#help-gen">Βοήθεια &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-el.htm#help-gen">Που να βρείτε βοήθεια</a></li>
+					  <li><a href="help-el.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-el.htm#welcome-quick">aptosid Οδηγός Γρήγορης Αναφοράς (Quick Start Guide)</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-el.htm">Περιεχόμενα ISO, Εκδόσεις, Κατέβασμα και Εγγραφή</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-el.htm#cd-content">Περιεχόμενα ISO και απαιτήσεις συστήματος &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-el.htm#rolling">Σημειώσεις Έκδοσης</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-el.htm#download-aptosid">aptosid Mirrors, Κατέβασμα και Εγγραφή &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-el.htm#md5">md5 Checksum</a></li>
+					  <li><a href="cd-dl-burning-el.htm#burn-nero">Γράφοντας το ISO στα Windows</a></li>
+					  <li><a href="cd-dl-burning-el.htm#burn-linux">Γράφοντας το ISO στο Linux</a></li>
+					  <li><a href="cd-no-gui-burn-el.htm#burning-no-gui">burniso script</a></li>
+					  <li><a href="cd-no-gui-burn-el.htm#burn-no-gui-gen">Εγγραφή χωρίς γραφικό περιβάλλον</a></li>
+					  <li><a href="cd-dl-burning-el.htm#download-aptosid">aptosid Mirrors Κατεβάσματος</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-el.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-el.htm#rootpw">Κωδικός υπερχρήστη (root) στο aptosid-Live ISO</a></li>
+				<li><a href="live-mode-el.htm#live-cd-installsoft">Εγκατάσταση προγραμμάτων σε περιβάλλον Live-ISO</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-el.htm">Το Τερματικό / Κονσόλα</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-el.htm#term-kon">Τερματικό / Κονσόλα &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-el.htm#term-kon">Τερματικό / Κονσόλα</a></li>
+					  <li><a href="term-konsole-el.htm#colours"> Coloured terminal prompts</a></li>
+					  <li><a href="term-konsole-el.htm#cli-help">Βοήθεια από την γραμμή εντολών</a></li>
+					  <li><a href="help-el.htm#init3-tools">Εργαλεία να ξέρετε για text mode (tty) - init 3</a></li>
+					  <li><a href="term-konsole-el.htm#term-cmds">Λίστα εντολών του Linux</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-el.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-el.htm">CheatCodes</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-el.htm#cheatcodes">Cheatcodes αποκλειστικά για το aptosid Live-ISO</a></li>
+				<li><a href="cheatcodes-el.htm#cheatcodes-linux">Cheatcodes γενικά για το Linux</a></li>
+				<li><a href="cheatcodes-vga-el.htm#vga">Κωδικοί VGA</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-el.htm">Partitioning the Hard Drive - Traditional, GPT and LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-el.htm#hd-ntfs3g">Γράφοντας σε NTFS κατάτμηση με το ntfs-3g</a></li>
+			<li><a href="part-lvm-el.htm#part-lvm">Partitioning to use LVM - Logical Volume Manager</a></li>
+			<li><a href="part-gparted-el.htm#partition">Δημιουργία κατατμήσεων με χρήση γραφικών (GUI) εργαλείων &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-el.htm#partition">Δημιουργία κατατμήσεων στον δίσκο χρησιμοποιώντας το  GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-el.htm#ntfs">Αλλαγή μεγέθους σε NTFS κατάτμηση χρησιμοποιώντας το GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-el.htm#partition">Δημιουργία κατατμήσεων με χρήση εργαλείων κονσόλας (CLI) &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-el.htm#partition">Δημιουργία κατατμήσεων στον σκληρό δίσκο χρησιμοποιώντας το cfdisk</a></li>
+					    <li><a href="part-cfdisk-el.htm#formating">Διαμόρφωση (format) μετά την δημιουργία κατάτμησης, με το cfdisk</a></li>
+					    <li><a href="part-gdisk-el.htm#gdisk-6">Formatting after partitioning with gdisk</a></li>
+					    <li><a href="part-gdisk-el.htm#gdisk-1">GPT Partitioning with gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-el.htm#part-example">Γενικά για κατατμήσεις &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-el.htm#part-example">Παραδείγματα για το μέγεθος των κατατμήσεων</a></li>
+					  <li><a href="part-uuid-el.htm#uuid">UUID, Rebuilding fstab and creating new mount points</a></li>
+					  <li><a href="part-cfdisk-el.htm#disknames">Ονομασία δίσκων εν συντομία</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-el.htm">Επιλογές εγκατάστασης - HD, USB, VM and Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-el.htm#Inst-prep">Προετοιμασία Εγκατάστασης &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-el.htm#Inst-prep">Προετοιμασία Εγκατάστασης</a></li>
+					  <li><a href="hd-install-el.htm#Installation">Εγκατάσταση στον σκληρό δίσκο</a></li>
+					  <li><a href="hd-install-el.htm#first-hd-boot">Πρώτη εκκίνηση</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-el.htm#fromiso">Εκκίνηση fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-el.htm#fromiso">Εκκίνηση fromiso - Γενικά</a></li>
+					  <li><a href="hd-install-opts-el.htm#grub2-fromiso">Εκκίνηση 'fromiso' με Grub 2</a></li>
+					  <li><a href="hd-install-opts-el.htm#fromiso-persist">fromiso και persist</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-el.htm#usb-hd">Εγκατάσταση σε USB δίσκους &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-el.htm#usb-hd">Eγκατάσταση σε USB σκληρό δίσκο - aptosid συγκεκριμένα - aptosid-σε-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-el.htm#raw-usb">Εγραφή του aptosid σε USB/SSD stick με Linux, MS Windows ή Mac OS X σύστημα</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-el.htm#install-crypt">Installing to encryted partitions - cryptroot</a></li>
+		  <li><a href="nbdboot-el.htm#nbd1">Εκκίνηση του aptosid μέσω δικτύου</a></li>
+		  <li><a href="hd-install-vmopts-el.htm#vm">Επιλογές εγκατάστασεις σε Εικονική Μηχανή (Virtual Machine)</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-el.htm">Κάρτες γραφικών, Οθόνες, Xorg &amp; Διάφοροι Οδηγοί</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-el.htm#mon-res">Ανάλυση Οθόνης (screen) και Οθόνες (monitor)  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-el.htm#mon-res">Ανάλυση Οθόνης (screen) και Οθόνες (monitor)</a></li>
+					  <li><a href="hw-dev-mon-el.htm#xrandr">Δύο Οθόνες (Dual Monitors) και xrandr</a></li>
+					  <li><a href="hw-dev-mon-el.htm#mon-binary">Δύο Οθόνες (με χρήση binaries)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-el.htm#foss-xorg">GPU drivers &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-el.htm#ati-3d">AMD/ATI 3D drivers</a></li>
+					  <li><a href="gpu-el.htm#intel">Intel 2D and 3D drivers</a></li>
+					  <li><a href="gpu-el.htm#nvidia">Nvidia 3D drivers</a></li>
+					  <li><a href="gpu-el.htm#foss-xorg">Open Source Xorg drivers</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-el.htm#fw-detect">Firmware detection - non-free </a></li>
+			  <li><a href="nf-firm-el.htm#non-free-firmware">Adding non-free to Sources List</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-el.htm">Διαχείριστες Παραθύρων</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-el.htm">KDE and XFCE Διαχείριστες Παραθύρων &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-el.htm#xfce-notes">Χρήσιμα extras για Xfce</a></li>
+					    <li><a href="wm-dm-el.htm#install-add">Χρήσιμα extras για KDE</a></li>
+					    <li><a href="wm-dm-el.htm#desk-freeze">Κόλλημα επιφάνειας εργασίας</a></li>
+					    <li><a href="wm-dm-el.htm#kde-login">Δεν μπορώ να εισέλθω στο KDE</a></li>
+					    <li><a href="wm-dm-el.htm#ch-th">Aλλάζοντας Θέματα (Themes)</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-el.htm#dm">Installing additional Display Managers</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-el.htm">Σύνδεση στο διαδίκτυο, WiFi, LAN και Δίκτυα</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-el.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-el.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-el.htm#serv-ftp">FTP Πελάτες</a></li>
+					    <li><a href="lamp-apache-el.htm#serv-sec">Πρωτόκολλα ασφαλείας</a></li>
+					    <li><a href="lamp-apache-el.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-el.htm#serv-mysql">MySQL Ρύθμιση</a></li>
+					    <li><a href="lamp-ppp-el.htm#serv-php">PHP με Apache</a></li>
+					    <li><a href="ntp-server-el.htm#ntp-server">Timeserver Ρύθμιση</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-el.htm#tor">Firewalls και Privacy &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-el.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-el.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-el.htm#firewalls">Firewalls</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-el.htm#ssh-x">SSH και Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-el.htm#setup">Samba-Server Ρύθμιση</a></li>
+						  <li><a href="samba-el.htm#configure">Ρύθμιση SAMBA (Windows)</a></li>
+						  <li><a href="ssh-el.htm#ssh-fs">SSH Απομακρυσμένη Προσάρτυση</a></li>
+						  <li><a href="ssh-el.htm#ssh-x">Παραθυρικές Eφαρμογές μέσω SSH</a></li>
+						  <li><a href="ssh-el.htm#ssh-f">GUI SSH με Konqueror</a></li>
+						  <li><a href="ssh-el.htm#ssh-w">SSH X-Forwarding από ένα Windows-PC</a></li>
+						  <li><a href="ssh-el.htm#ssh">SSH και Ασφάλεια</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-el.htm#netcardconfig">WIFI Συνδέσεις &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-el.htm#netcardconfig">Mπαίνοντας στο Δίκτυο - Ceni</a></li>
+						    <li><a href="inet-wpagui-el.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-el.htm#net-set1">WiFi - Ρύθμιση του WiFi Roaming</a></li>
+						    <li><a href="inet-wpa-el.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-el.htm#hotswitch">Εναλλαγή δικτύου μεταξύ WiFi και σύρματος</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-el.htm#netcardconfig">Wired (σύρμα) Συνδέσεις &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-el.htm#dial-mod">56k Modems</a></li>
+						    <li><a href="inet-ceni-el.htm#netcardconfig">Mπαίνοντας στο Δίκτυο - Ceni</a></li>
+					</ul>
+					</li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-el.htm">Διαχείριση Πακέτων και dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-el.htm#apt-cook">APT Cookbook and Sources list &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-el.htm#apt-cook">APT-Οδηγός και Λίστες Πηγών (Sources list)</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-install">Εγκαθιστώντας ένα νέο πακέτο</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-delete">Διαγράφοντας ένα πακέτο</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-downgrade">Υποβαθμίζοντας / Κρατώντας (Hold) ένα πακέτο</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-cache">Αναζήτηση πακέτων με apt-cache</a></li>
+					    <li><a href="sys-admin-apt-el.htm#gui-pacsea">GUI Package searching</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-el.htm#kern-upgrade">Αναβαθμίζοντας τον πυρήνα &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-el.htm#kern-remove">Διαγραφή ενός πυρήνα</a></li>
+					    <li><a href="sys-admin-kern-upg-el.htm#kern-upgrade">Αναβαθμίζοντας τον πυρήνα</a></li>
+					    <li><a href="sys-admin-kern-upg-el.htm#dmakms">Εγκατάσταση kernel modules δυναμικά με dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-el.htm#apt-upgrade">Aναβάθμιση σε ένα Εγκατεστημένο Σύστημα - dist-upgrade - Γενικά &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-el.htm#live-cd-upgrade">Αναβαθμίζοντας χρησιμοποιώντας το Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-el.htm#approx">dist-upgrade πολλαπλών PC σε ένα LAN</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-upgrade">Aναβάθμιση σε ένα Εγκατεστημένο Σύστημα - dist-upgrade - Γενικά</a></li>
+					    <li><a href="sys-admin-apt-el.htm#du-st">Aναβάθμιση σε ένα Εγκατεστημένο Σύστημα - dist-upgrade - Τα Βήματα</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-el.htm">Διαχείριση Συστήματος</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-el.htm#bois-prep">Αναβάθμιση του BIOS με το FreeDOS</a></li>
+		<li><a href="vir-rkits-el.htm#virus-rkits">Ανιχνευτές Iών και Rootkits</a></li>
+		<li><a href="hd-install-el.htm#adduser">Προσθήκη χρηστών και Passwords &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-el.htm#adduser">Προσθήκη ενός νέου χρήστη</a></li>
+					    <li><a href="sys-admin-gen-el.htm#pw-lost">Χαμένο password root, νέα passwords</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-el.htm#start-services">Υπηρεσίες και init runlevels &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-el.htm#start-services">Ενεργοποίηση / Απενεργοποίηση Υπηρεσιών (Services)</a></li>
+					    <li><a href="sys-admin-gen-el.htm#pkill">Killing a service or process</a></li>
+					    <li><a href="sys-admin-gen-el.htm#init">aptosid Επίπεδα εκτέλεσης (runlevels) - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-el.htm#rsync">Backup του συστήματος &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-el.htm#rdiff">Back-Up με rdiff</a></li>
+					    <li><a href="sys-admin-rsync-el.htm#rsync">Back-Up με rsync</a></li>
+					    <li><a href="home-el.htm#home-bu">Μεταφορά του /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-el.htm#fonts">CUPS, Γραμματοσειρές και Ήχος &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-el.htm#fonts">Γραμματοσειρές</a></li>
+					     <li><a href="sys-admin-gen-el.htm#cups">CUPS - Σύστημα Εκτύπωσης</a></li>
+					     <li><a href="sys-admin-gen-el.htm#sound">Mixers Ήχου</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-el.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-el.htm#chroot">Grub2 - Recovering Grub with chroot</a></li>
+					    <li><a href="sys-admin-grub2-el.htm#mbr-over-grub2">Grub2 - MBR Overwritten</a></li>
+					    <li><a href="sys-admin-grub2-el.htm#multi-os">Grub2 - Dual και Multibooting</a></li>
+					    <li><a href="sys-admin-grub2-el.htm#grub1-grub2">Grub2 -Αναβάθμιση α</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Sponsored by webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="../lib/sponsor-logo/webtropia-logo.png" title="aptosid is proudly hosted by webtropia.com" alt="aptosid is proudly hosted by webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div>
+<div id="main-page">
+	<div class="divider" id="Inst-prep">
+		<!--<h2 id="top-header">HD Install Preparation</h2>-->
+		<h2 id="top-header">Προετοιμασία Εγκατάστασης σε σκληρό δίσκο</h2>
+							<!--<p  class="highlight-2">For normal use we recommend ext4; it is the default file system for aptosid and is well maintained.</p>-->
+							<p  class="highlight-2">Για κανονική χρήση συνιστούμε ext4; είναι το προεπιλεγμένο σύστημα αρχείων (filesystem) για το aptosid και διατηρείται καλά.</p>
+
+							<!--<p><span class="highlight-3">Before installation please remove all usb-sticks, cameras, etc</span>. <a href="hd-install-opts-el.htm">Installation to USB Devices requires additional steps.</a>  You can edit the installer file: <span class="highlight-3">~/.sidconf</span>, and thereby use a different filesystem or spread your installation over different partitions. For example a separate /home.</p>-->
+							<p><span class="highlight-3">Πριν από την εγκατάσταση παρακαλείστε να αφαιρέσετε όλα τα usb-sticks, κάμερες, κτλ</span>. <a href="hd-install-opts-el.htm">Η εγκατάσταση σε συσκευές USB απαιτεί πρόσθετα βήματα.</a>  Μπορείτε να επεξεργαστείτε το αρχείο εγκατάστασης: <span class="highlight-3">~/.sidconf</span>, και να χρησιμοποιήσετε διαφορετικό σύστημα αρχείων ή να επεκτείνετε την εγκατάστασή σας σε περισσότερες κατατμήσεις (partitions). Για παράδειγμα μια ξεχωριστή /home.</p>
+
+							<!--<p class="highlight-3">It is highly recommended that you have a separate data partition. The benefits in terms of disaster recovery, stability of your data are unmeasurable.</p>-->
+							<p class="highlight-3">Συνιστούμε θερμά να έχετε μια ξεχωριστή κατάτμηση για τα δεδομένα σας. Τα πλεονεκτήματα σε περίπτωση καταστροφής και οι πιθανότητες ανάκτησης και σταθερότητας των δεδομένων σας είναι ανεκτίμητα.</p>
+
+							<!--<p>Therefore your $HOME becomes a place where basic application configurations are kept. or to put it another way, a container for applications to store their settings.</p>-->
+							<p>Οπότε το $HOME σας γίνεται ένα μέρος όπου αποθηκεύονται οι βασικές ρυθμίσεις των εφαρμογών σας ή με άλλα λόγια, ένα σημείο όπου οι εφαρμογές αποθηκεύουν τις ρυθμίσεις τους.</p>
+
+					<!--h6>Re-installing apps to rebuild or duplicate to another computer</h6-->
+
+					<h6>Επανεγκατάσταση εφαρμογών για ανοικοδόμιση (rebuild) ή αντιγραφή (duplicate) σε ένα άλλο υπολογιστή</h6>
+							<!--<p>To make a list of your installed applications so you can duplicate the installed base on another machine, or perhaps you are for some reason, reinstalling on your current PC, in a konsole</p>-->
+							<p>Για να δημιουργήσετε μια λίστα των εγκατεστημένων εφαρμογών σας για να μπορέσετε να αντιγράψετε την εγκατεστημένη βάση σε μια άλλη μηχανή, ή ίσως για κάποιους λόγους, να επανεγκαταστήσετε τις εφαρμογές σας στο τρέχον PC σας, σε μια κονσόλα δώστε τα παρακάτω</p>
+<pre>
+dpkg -l|awk '/^ii/{ print $2 }'|grep -v -e ^lib -e -dev -e $(uname -r) &gt; /home/username/installed.txt
+</pre>
+							<!--<p>Then copy the text file to a usb key or any other removable media of your choice.</p>-->
+							<p>Μετά αντιγράψτε το αρχείο κειμένων σε ένα flash-usb ή οποιοδήποτε άλλο μετακινούμενο μέσον αποθήκευσης της επιλογής σας.</p>
+
+
+							<!--<p>On the new machine copy the text file to $HOME and use the list as a reference to install your required applications.</p>-->
+							<p>Στη νέα μηχανή αντιγράψτε το αρχείο κειμένων στο $HΟΜE και χρησιμοποιείστε τον κατάλογο ως σημείο αναφοράς για εγκατάστασης των απαιτούμενων εφαρμογών σας.</p>
+
+					<h5>RAM και Swap</h5>
+							<!--<p>On PC's with less than 512 MB RAM you must have a swap-partition. The size should not be less than 128 mb (cfdisk-output should not be trusted either as it calculates with a 10-base), more than 1 GB swap is seldom reasonable, except if you are copying large data files, like copying CD/DVD data on-the-fly, and/or you need suspend-to-disk/hibernate and server systems. If this is your case, allocate 2 GIG swap, as a minimum.</p>-->
+							<p>Σε PC με λιγότερη από 512 MB RAM πρέπει να έχετε μία swap-κατάτμηση. Το μέγεθός της δεν πρέπει να είναι λιγότερο από 128 mb (μην εμπιστεύεστε τον υπολογισμό του cfdisk καθώς υπολογίζει με βάση το 10), πάνω από 1 GB swap σπάνια έχει λόγο ύπαρξης, εκτός αν αντιγράφετε μεγάλα αρχεία, όπως η αντιγραφή CD/DVD με χρήση on-the-fly ή/και χρειάζεστε λειτουργίες όπως suspend-to-disk/hibernate και σε συστήματα διακομιστή (server). Αν εμπίπτετε σε μία από αυτές τις περιπτώσεις, παραχωρήστε τουλάχιστον 2 GIG για swap.</p>
+
+							<!--<p class="highlight-1">Please see: <a href="part-gparted-el.htm">Partitioning your HD</a></p>-->
+							<p class="highlight-1">Παρακαλούμε δείτε: <a href="part-gparted-el.htm">Διαμοιρασμός του σκληρού δίσκου σε κατατμήσεις</a></p>
+
+							<!--<p><span class="highlight-2">ALWAYS BACK-UP YOUR DATA including your bookmarks and emails!</span> See <a href="sys-admin-rdiff-el.htm#rdiff">Back-Up with rdiff</a> and <a href="sys-admin-rsync-el.htm#rsync">Back-Up with rsync</a>. Another option is sbackupk (needs installing)</p>-->
+							<p><span class="highlight-2">ΚΡΑΤΑΤΕ ΠΑΝΤΑ BACK-UP ΤΩΝ ΔΕΔΟΜΕΝΩΝ ΣΑΣ συμπεριλαμβανομένων των bookmarks και των email!</span> Δείτε <a href="sys-admin-rdiff-el.htm#rdiff">Back-Up με το rdiff</a> και <a href="sys-admin-rsync-el.htm#rsync">Back-Up με το rsync</a>. Μια άλλη επιλογή είναι το sbackup (χρειάζεται εγκατάσταση).</p>
+
+							<!--<p>Installation to the hard drive is much more comfortable and lots faster than running a system off a live-CD.</p>-->
+							<p>Η εγκατάσταση στον σκληρό δίσκο είναι πολύ πιο άνετη και γρήγορη από ένα σύστημα που τρέχει από ένα live-CD.</p>
+
+							<!--<p>First, you need to set your boot order in the BIOS to CD-ROM. With most computers you can get to the Bios-setup by pressing [del] key while booting (with some BIOS-Versions you can simply choose the boot device while booting, with AMI-BIOS, e.g., with F11 or F8).</p>-->
+							<p>Αρχικά, πρέπει να αλλάξετε την σειρά εκκίνησης (boot) στο BIOS ώστε να φορτώνει πρώτα το CD-ROM. Στους περισσότερους υπολογιστές μπορείτε να μπείτε στις ρυθμίσεις του BIOS πατώντας το πλήκτρο [del] κατά την εκκίνηση (σε μερικές εκδόσεις BIOS μπορείτε απλά να επιλέξετε την πρώτη συσκευή εκκίνησης κατά την διάρκεια της εκκίνησης, με το AMI-BIOS, π.χ., με F11 ή F8).</p>
+
+							<!--<p>aptosid should boot up now in most cases. If that's not the case, you can use Boot-options, (called cheatcodes) which can be issued in the boot manager. Using boot parameters (e.g. for screen resolution or language selection) can save a lot of time with the post-install configuration. <a href="cheatcodes-el.htm">Also see Cheatcodes</a> and <a href="cheatcodes-vga-el.htm">VGA Resolutions</a></p>-->
+							<p>Το aptosid θα πρέπει να φορτώσει τώρα κανονικά στις περισσότερες περιπτώσεις. Αν αυτό δεν συμβεί, μπορείτε να χρησιμοποιήσετε ειδικές επιλογές για την εκκίνηση, (τα λεγόμενα cheatcodes) που μπορούν να δωθούν στον διαχειριστή εκκίνησης (boot manager). Η χρήση ειδικών παραμέτρων κατά την εκκίνηση, (π.χ. για την ανάλυση της οθόνης ή την επιλογή γλώσσας) μπορεί να σας γλυτώσει αρκετό χρόνο από την ρύθμιση μετά την εγκατάσταση. <a href="cheatcodes-el.htm">Δείτε επίσης τα Cheatcodes</a> και <a href="cheatcodes-vga-el.htm">Αναλύσεις VGA</a></p>
+
+			<h2>Επιλέγοντας γλώσσα για την εγκατάσταση σας</h2>
+				<h6><span class="highlight-3">Εγκατάσταση γλώσσας και KDE-full </span></h6>
+
+							<!--p>Select your main language from the <span class="highlight-2">grub menu (F4)</span> in the <span class="highlight-3">kde-full release</span>, to install the localisations for the desktop and many applications while booting. </p-->
+							<p>Επιλέξτε την γλώσσα σας από το <span class="highlight-2">gfxboot μενού (F4)</span> στην <span class="highlight-3"> έκδοση kde-full</span>, για να εγκαταστήσετε τα πακέτα της γλώσσας σας, για την επιφάνεια εργασίας και για πολλές άλλες εφαρμογές, κατά την διάρκεια της εκκίνησης. </p>
+
+							<!--p>This ensures they are also present after installing aptosid, while only installing the required languages for the given system. The amount of memory required for this feature depends on the language and aptosid may refuse to install the given language packs automatically with insufficient RAM and the boot sequence will be continued in English language but with the desired locales settings (currency, date and time format, keyboard charsets). 512 MB memory or more should be safe for all supported languages, which are:</p-->
+							<p>Αυτό εγγυάται ότι οι ρυθμίσεις αυτές θα παραμείνουν και μετά την εγκατάσταση του aptosid το οποίο όμως θα εγκαταστήσει μόνο την γλώσσα που έχετε δηλώσει. Η μνήμη που χρειάζεται για αυτό το χαρακτηριστικό εξαρτάται από την γλώσσα και το aptosid μπορεί να αρνηθεί να εγκαταστήσει αυτόματα την γλώσσα της επιλογής σας αν δεν υπάρχει αρκετή RAM και η διαδικασία εκκίνησης θα συνεχίσει στα Αγγλικά αλλά με τις ρυθμίσεις locale που επιλέξατε (συνάλλαγμα, παρουσίαση ημερομηνίας / ώρας, keyboard charsets). Υποτίθεται ότι 1 GB μνήμη ή περισσότερα είναι αρκετά για όλες τις γλώσσες οι οποίες υποστηρίζονται και αυτές είναι:</p>
+
+							<p>
+   							Προεπιλογή - Deutsch (Γερμανικά) <br />
+							Προεπιλογή - English (Αγγλικά US)<br />
+							*Čeština (Czech)<br />
+    							*Dansk (Danish)<br />
+    							*Ελληνικά (Ελληνικά)<br />
+    							*English (Αγγλικά ΜΒ)<br />
+    							*Español (Spanish)<br />
+    							*Italiano (Ιταλικά)<br />
+    							*Nihongo (Γιαπωνέζικα)<br />
+    							*Nederlands (Ολλανδικά)<br />
+							*Polski (Polish)<br />
+    							*Português (Πορτογαλικά BR και PT)<br />
+    							*Română (Ρουμάνικα)<br />
+    							*Russian (Ρωσικά)<br />
+							</p>
+
+   							<p>το αν υπάρχει μια γλώσσα σαν επιλογή, εξαρτάται από το αν υπάρχει το aptosid-εγχειρίδιο στην γλώσσα αυτή. Ασχοληθείτε για να προστεθεί και η δική σας γλώσσα.</p>
+
+					<h6><span class="highlight-3">Εγκατάσταση άλλων γλωσσών στο KDE-lite </span></h6>
+						<ol>
+							<!--li>Select your main language from the <span class="highlight-2">grub menu (F4)</span>. (See also <a href="cheatcodes-el.htm#cheatcodes">aptosid specific Live-CD Cheatcodes</a>). The Language files themselves are not on the Live-CD so the system will fall back to default English. However, this will make the correct language configuration needed for your preferred language and therefore no need to make any changes into the system, aside from the installation of the missing language files.</li-->
+							<li>Επιλέξτε την γλώσσα σας από το <span class="highlight-2">grub μενού (F4)</span>. (Δείτε επίσης <a href="cheatcodes-el.htm#cheatcodes">Cheatcodes ειδικά για το aptosid (μόνο Live-CD)</a>). Τα πακέτα γλωσσών δεν είναι πάνω στο Live-CD και έτσι το σύστημα θα εκκινήσει με Αγγλικά, αλλά θα κάνει τις σωστές ρυθμίσεις γλώσσας που χρειάζονται για την γλώσσα της επιλογής σας και έτσι δεν θα χρειαστεί να κάνετε οποιεσδήποτε αλλαγές, εκτός από το να εγκαταστήσετε τα αρχεία γλώσσας που λείπουν.</li>
+
+							<li>Ξεκινήστε την εγκατάσταση.</li>
+
+							<li>Εγκαταστήστε στον σκληρό και επανεκκινήστε.</li>
+
+							<!--li>After HD install, install the language of your choice and applications via apt-get.</li-->
+							<li>Μετά την εγκατάσταση στον σκληρό δίσκο, εγκαταστήστε τις γλώσσες και εφαρμογές της επιλογής σας μέσω apt-get.</li>
+						</ol>
+
+					<h6>Πρώτη εκκίνηση από τον σκληρό</h6>
+							<!--p><span class="highlight-3">After booting up for the first time you will discover that aptosid has forgotten its network configuration</span>. The network can be comfortably set up from the aptosid menu <a href="inet-cenig-el.htm">with Ceni</a>. For additional WIFI/WLAN roaming<a href="inet-wpagui-el.htm"> please read this.</a></p-->
+							<p><span class="highlight-3">Αφού εκκινήσετε τον υπολογιστή για πρώτη φορά, θα ανακαλύψετε ότι το aptosid έχει ξεχάσει τις ρυθμίσεις δικτύου</span>. Το δίκτυο μπορεί να ρυθμιστεί εύκολα από το <a href="inet-ceni-el.htm">Ceni</a>. Για επιπλέον WIFI/WLAN roaming<a href="inet-wpagui-el.htm"> παρακαλώ διαβάστε αυτό.</a></p>
+	</div>
+	<div class="divider" id="Installation">
+					<!--<h2>The aptosid-Installer</h2>-->
+					<h2>Ο aptosid-Installer</h2>
+
+							<!--<p><b>1.</b> The Installer is started from the <span class="highlight-3"> Desktop icon, the KMenu &gt; System &gt; aptosid-installer</span>, or via the konsole using:</p>-->
+							<p><b>1.</b> Ο Installer εκκινείται από το <span class="highlight-3"> Desktop icon, το KMenu &gt; System &gt; aptosid-installer</span>, ή μέσω της κονσόλας δίνοντας:</p>
+<pre>
+sux
+install-gui.bash
+</pre>
+		<div class="screenshot"><img src="../lib/images-el/installer-el/installer1-el.png" title="Welcome tab - aptosid Installer" alt="aptosid-Installer1" /></div>
+	<div class="spacer02"></div>
+							<!--<p><b>2.</b> After reading (and understanding) the warning text we move on to choosing a partition. </p>-->
+							<p><b>2.</b> Αφού έχετε διαβάσει (και καταλάβει) το προειδοποιητικό κείμενο προχωράμε στην επιλογή κατάτμησης. </p>
+
+		<div class="screenshot"><img src="../lib/images-el/installer-el/installer2-el.png" title="Partitioning tab - aptosid Installer" alt="aptosid-Installer2" /></div>
+
+							<!--<p>Now choose where the installation is supposed to go to and we establish the mount points. Partitions for which we do not establish mount points for are mounted by the installer (the swap partition will be automatically mounted, when the system starts). </p>-->
+							<p>Εδώ επιλέγετε που θα γίνει η εγκατάσταση και επιλέγουμε τα mount points. Οι κατατμήσεις για τις οποίες δεν επιλέγουμε mount points γίνονται mounted αυτόματα από τον installer (η swap κατάτμηση θα γίνει αυτόματα mounted, με την εκκίνηση του συστήματος). </p>
+
+							<!--p><span class="highlight-2">NOTE: If you have your root partition ('/") formatted with your preferred file system, you can uncheck the "format with" checkbox, provided that the drop box reflects the file system of your choice.</span></p-->
+							<p><span class="highlight-2">ΣΗΜΕΙΩΣΗ: Αν έχετε ήδη διαμορφώσει την root κατάτμηση σας ('/') με το σύστημα αρχείων που επιθυμείτε, μπορείτε να φύγετε το "x" από το κουτάκι που είναι δίπλα στο "format with" (διαμόρφωση με), με δεδομένο ότι το σύστημα αρχείων που επιλέξατε υπάρχει μέσα στην λίστα που βρίσκεται δίπλα από το κουτάκι.</span></p>
+
+							<!--<p>All other partitions will be placed as a  <span class="highlight-3">/media/ </span> partition.  Here you have to select the root partition ("/") for your aptosid installation.  However,  <span class="highlight-3">it is at this moment you can also choose to create a data partition.</span> <span class="highlight-1"> A 'left-click' will activate your choices for each partition.</span></p>-->
+							<p>Όλες οι άλλες κατατμήσεις θα τοποθετηθούν ως <span class="highlight-3">/media/ </span> κατατμήσεις.  Εδώ πρέπει να επιλέξετε την root κατάτμηση ("/") για την εγκατάσταση του aptosid σας.  Παρ'όλα αυτα,  <span class="highlight-3">σε αυτό το σημείο μπορείτε επίσης να επιλέξετε να δημιουργήσετε μια κατάτμηση για τα δεδομένα σας.</span>  <span class="highlight-1"> Ένα 'αριστερό-click' θα ενεργοποιήσει τις επιλογές που έχετε για κάθε κατάτμηση.</span></p>
+
+		<!--<p class="highlight-3">Have you backed up your data?</p>-->
+		<p class="highlight-3">Πήρατε αντίγραφα ασφαλείας (backup) των δεδομένων σας;</p>
+
+							<!--<p>If you haven't partitioned your hard drive yet, do it in the <span class="highlight-3">Start Part.-manager</span>  and have a look at <a href="part-gparted-el.htm">Partitioning your HD using Gparted</a> or, if you want to use the shell, read <a href="part-cfdisk-el.htm">Partitioning your HD</a></p>-->
+							<p>Αν δεν έχετε διαμοιράσει τον δίσκο σας σε κατατμήσεις ακόμη, κάντε το στον <span class="highlight-3">Start Part.-manager</span>  και ρίχτε μιά ματιά στο <a href="part-gparted-el.htm">Δημιουργήστε κατατμήσεις στον σκληρό δίσκο με το Gparted</a> ή, αν θέλετε να χρησιμοποιήσετε το κέλυφος (shell), διαβάστε <a href="part-cfdisk-el.htm">Δημιουργήστε κατατμήσεις στον σκληρό δίσκο με το cfdisk</a></p>
+
+							<!--<p>You may also start them from the konsole/terminal</p>-->
+							<p>Mπορείτε επίσης να τα εκκινήσετε από την κονσόλα/τερματικό</p>
+<pre>
+sux
+gparted
+</pre>
+		<p>ή</p>
+<pre>su
+cfdisk
+</pre>
+	<div class="spacer02"></div>
+							<!--<p><b>3.</b> As a boot manager aptosid uses GRUB, therfore install <b>Grub to MBR</b>! If you make a different choice here, you should know what you are doing. You would have to edit other bootmanagers manually, if you want to keep them.</p>-->
+							<p><b>3.</b> Το aptosid χρησιμοποιεί ως διαχειριστή εκκίνησης τον GRUB, οπότε εγκαθιστά το <b>Grub στο MBR</b>! Αν κάνετε διαφορετική επιλογή εδώ, θα πρέπει να ξέρετε τι κάνετε. Θα πρέπει να επεξεργαστείτε άλλους διαχειριστές εκκίνησης χειροκίνητα, αν θέλετε να τους κρατήσετε.</p>
+
+							<!--<p>Grub recognizes other installed OS's (e.g. Windows) and adds them to the boot menu. </p>
+
+							<p>Moreover you are able to change the timezone in this window.</p>-->
+							<p>Το Grub αναγνωρίζει άλλα εγκατεστημένα λειτουργικά συστήματα (π.χ. Windows) και τα προσθέτει στο μενού εκκίνησης. </p>
+
+							<p>Επιπλέον σε αυτή την οθόνη μπορείτε να αλλάξετε την ζώνη ώρας.</p>
+
+		<div class="screenshot"><img src="../lib/images-el/installer-el/installer3-el.png" title="Grub/Timesone tab - aptosid Installer" alt="grub-to-mbr" /></div>
+	<div class="spacer02"></div>
+
+							<!--<p><b>4.</b> On we go with user, his/her password and the root-password (remember those!). Please don't choose too easily-guessed passwords.  To add additional users, do so after installation via the terminal with <a href="hd-install-en.htm#adduser"> adduser.</a>.</p>-->
+							<p><b>4.</b> Προχωράμε με τον χρήστη, τον κωδικό του/της, και τον κωδικό του root (φροντίστε να τα θυμάστε!). Παρακαλούμε να μην επιλέξετε κωδικούς που μπορεί εύκολα να μαντέψει κανείς. Αν θέλετε να προσθέσετε και άλλους χρήστες, κάντε το αυτό μετά την εγκατάσταση, μέσω του τερματικού με την εντολή <a href="hd-install-el.htm#adduser"> adduser</a>.</p>
+
+		<div class="screenshot"><img src="../lib/images-el/installer-el/installer4-el.png" title="User/Password tab - aptosid Installer" alt="choosing-pw" /></div>
+	<div class="spacer02"></div>
+							<!--<p><b>5.</b> Now choose the name of the Installation (you can name it anything you wish, provided that the 'Hostname: The hostname should consist of letters (and numbers) only and it must not begin with a number'.</p>-->
+							<p><b>5.</b> Tώρα επιλέξτε το όνομα της εγκατάστασης (μπορείτε να την ονομάσετε όπως θέλετε, αρκεί το όνομα οικοδεσπότη (hostname) να περιέχει αποκλειστικά γράμματα και αριθμούς και να μην ξεκινάει με αριθμό.</p>
+
+							<!--<p>After that you can choose whether ssh shall start automatically or not.</p>-->
+							<p>Μετά από αυτό μπορείτε να επιλέξετε αν το ssh θα ξεκινά αυτόματα ή όχι.</p>
+
+		<div class="screenshot"><img src="../lib/images-el/installer-el/installer5-el.png" title="Network tab - aptosid Installer" alt="hostname" /></div>
+
+	<div class="spacer02"></div>
+							<!--<p><b>6.</b> This query is the last chance to check the adjustments you made. Read through it again carefully, then click <span class="highlight-3">Save Config and Next</span>..</p>-->
+							<p>Αυτή η ερώτηση είναι η τελευταία σας ευκαιρία  να ελέγξετε τις προσαρμογές που διενεργήσετε. Διαβάστε τα πάλι προσεκτικά και αφού είστε έτοιμος επιλέξτε, <span class="highlight-3">Save Config and Next</span>.</p>
+
+		<div class="screenshot"><img src="../lib/images-el/installer-el/installer6-el.png" title="Installation tab - aptosid Installer" alt="installation-config" /></div>
+
+							<!--<p>At this point it is possible to change/edit the config file and then start the install procedure with the changed configuration. The installer does not make any checks and you <span class="highlight-3">must not click the 'back'  on the installer otherwise the changes entered manually will be  lost.</span> </p>-->
+							<p>Σε αυτό το σημείο είναι δυνατό να αλλάξετε ρύθμιση στο αρχείο config και έπειτα αρχίζει η διαδικασία εγκατάστασης με την αλλαγμένη διαμόρφωση. Το πρόγραμμα εγκατάστασής δεν κάνει καθόλου ελέγχους και εσείς <span class="highlight-3">δεν πρέπει να γυρίσετε "πίσω" το πρόγραμμα εγκατάστασής γιατί αλλιώς οι αλλαγές που εισάγατε με το χέρι θα χαθούν</span>.</p>
+
+							<!--<p>Editing (<span class="highlight-3">~/.sidconf</span>) is for experienced linux-users, who want to write their special changes to the config-file  or have a special partitioning scheme on their hard drive that would be rejected by the automatic check of the installer.</p>-->
+							<p>Η επεξεργασία του (<span class="highlight-3">~/.sidconf</span>) είναι για τους πεπειραμένους Linux-χρήστες, οι οποίοι θέλουν να γράψουν τις ειδικές αλλαγές τους στο config-file ή να έχουν μια ειδική κατάτμηση στο σκληρό δίσκο τους που θα απορριπτόταν από τον αυτόματο έλεγχο του προγράμματος εγκατάστασης.</p>
+
+							<!--p><span class="highlight-2">Should the installer detect that you are trying to install over an old $HOME  it will warn you and will not let you proceed with the installation until you choose another user name.</span></p-->
+							<p><span class="highlight-2">Αν ο εγκαταστάτης ανιχνεύσει ότι προσπαθείτε να εγκαταστήσετε πάνω από ένα παλιό $HOME , θα σας προειδοποιήσει και δεν θα σας αφήσει να συνεχίσετε την εγκατάσταση εκτός και αν αλλάξετε όνομα χρήστη (user name).</span></p>
+
+		<div class="screenshot"><img src="../lib/images-el/installer-el/installer7-el.png" title="Begin Installation - aptosid Installer" alt="Begin Installtion" /></div>
+
+							<!--<p>To commence the installation click on <span class="highlight-3">Begin Installation</span>  The whole process takes, depending on your system, between  5 - 15 minutes, on older PCs it may take as long as 60 minutes..</p>-->
+							<p>Για να αρχίσετε την εγκατάσταση επιλέξτε <span class="highlight-3">Begin Installation</span>. Ολόκληρη η διαδικασία παίρνει, ανάλογα με το σύστημά σας, μεταξύ 5 - 15 λεπτά, σε παλαιότερα PCs μπορεί να πάρει έως και 60 λεπτά..</p>
+
+							<!--<p>If the progress bar hangs in one place for a while, don't abort, just give it some time.</p>-->
+							<p>Εάν η πρόοδος σταματήσει σε μια θέση για μια στιγμή, μην απορρίψετε την διαδικασία, καλό είναι να του δώσετε κάποιο χρόνο.</p>
+
+							<!--<p>Finished! Take the CD out of the tray.  Now reboot to your new HD Install.</p>-->
+							<p>Τέλος! Πάρτε το CD από το δίσκο. Τώρα επανεκκινήστε τον Η/Υ σας με τo να πατήσετε Enter αφού σας ζητηθεί.</p>
+
+	</div>
+
+	<div class="divider" id="first-hd-boot">
+		<!--<h2>First Bootup</h2>-->
+		<h2>Πρώτο Boot</h2>
+
+							<!--<p class="highlight-4">After booting up for the first time you will discover that aptosid has forgotten its network-configuration. So you have to reconfigure your network (Wlan, Modem, ISDN,...).</p>-->
+							<p class="highlight-4">Αφού φορτώσετε το νέο σας λειτουργικό για πρώτη φορά θα ανακαλύψετε ότι το aptosid έχει ξεχάσει τις ρυθμίσεις δικτύου. Οπότε πρέπει να ξαναρυθμίσετε το δίκτυό σας (Wlan, Modem, ISDN,...) από την αρχή.</p>
+
+							<!--<p>Whomever previously had their network address automatically (DHCP) detected by using a DSL-Router must reactivate it with:</p>-->
+							<p>Όποιος είχε προηγουμένως αυτόματη ρύθμιση δικτύου (DHCP) μέσω κάποιου DSL-Router πρέπει να την ενεργοποιήσει ξανά με:</p>
+
+
+<pre >
+ceni
+</pre>
+
+							<!--<p>The appropriate tools are still to be found in the <i>Kmenu &gt; Internet &gt; Ceni</i>. Also refer to: <a href="inet-ceni-el.htm">Internet and Networking</a></p>-->
+							<p>Μπορείτε να βρείτε τα σχετικά εργαλεία ρυθμίσεων στο <i>Kmenu &gt; Internet &gt; Ceni</i>. Επίσης ανατρέξτε στο: <a href="inet-ceni-el.htm">Διαδίκτυο και Δικτύωση</a></p>
+
+							<!--p>To add an existing aptosid $HOME partition to new installation fstab needs to be altered, refer to <a href="home-el.htm#home-move">Moving /home</a>.</p-->
+							<p>Για να προσθέσετε μια υπαρκτή aptosid $HOME κατάτμιση σε μια νέα εγκατάσταση θα πρέπει να κάνετε αλλαγές στο fstab, αναφερθείτε στο <a href="home-el.htm#home-move">Μεταφέροντας το /home</a>.</p>
+
+							<!--p> <span class="highlight-2">Do not use or share an existing $HOME from another distribution as the $HOME configuration files in a home directory will conflict if you share the same username between differing distributions.</span></p-->
+							<p> <span class="highlight-2">Μην χρησιμοποιείτε ή μοιράζεστε ένα υπαρκτό $HOME από μια άλλη διανομή μιας και τα $HOME αρχεία ρυθμίσεων μέσα σε έναν home κατάλογο θα "συγκρούονται" αν χρησιμοποιείτε το ίδιο όνομα χρήστη σε δύο διαφορετικές διανομές.</span></p>
+	</div>
+	<div class="divider" id="adduser">
+	<!--h2>To add users to your installation</h2-->
+	<h2>Για να προσθέσετε χρήστες στην εγκατάσταση σας</h2>
+							<!--p>To add a <span class="highlight-3">new user</span> with automatic group permissions granted, as root: </p-->
+							<p>Για να προσθέσετε ένα <span class="highlight-3">νέο χρήστη</span> με αυτόματα χορηγηθέντα δικαιώματα ομάδας (group permissions), σαν υπέρ-χρήστης (root): </p>
+<!--pre>
+adduser &lt;newuser&gt;
+</pre-->
+<pre>
+adduser &lt;νέοςχρήστης&gt;
+</pre>
+							<p>απλά πατήστε enter, θα πρέπει να φροντίσει για τις περιπλοκότητες. Θα σας ζητηθεί να πληκτρολογήσετε το password 2 φορές.</p>
+
+							<!--p>aptosid specific icons (like the manual and IRC icons) need adding manually. To add them you will need to <span class="highlight-3">right click</span> the application in the Kmenu to add it to the desktop.</p-->
+							<p>Ειδικά aptosid εικονίδια (όπως το εγχειρίδιο και το εικονίδιο του IRC) πρέπει να προστεθούν χειροκίνητα. </p>
+
+
+							<!--p>To delete a user</p-->
+							<p>Για να διαγράψετε ένα χρήστη</p>
+<pre>
+deluser &lt;χρήστης&gt;
+</pre>
+							<p>Διαβάστε</p>
+<pre>
+man adduser
+man deluser
+</pre>
+							<!--p><span class="highlight-3">kuser</span> can create new user as well, however you will need to manually adjust the group permissions for that user.</p-->
+							<p>Και το <span class="highlight-3">kuser</span> μπορεί να δημιουργήσει νέο χρήστη αλλά θα πρέπει εσείς χειροκίνητα να ρυθμίσετε τα δικαιώματα ομάδας εκείνου του χρήστη.</p>
+
+	</div>
+	<div class="divider" id="sux">
+	<h2>Σχετικά με το sux</h2>
+							<!--<p>Numerous commands need to be run with root privileges. To achieve this you type:</p>-->
+							<p>Πολλές εντολές πρέπει να εκτελεστούν με δικαιώματα διαχειριστή (root). Για να το επιτύχετε αυτό γράφετε:</p>
+<pre>
+sux
+</pre>
+
+							<!--<p>While the common command for becoming root is 'su'  using <span class="highlight-3">sux</span> instead will allow you run GUI / X11 applications from the command line and allow root to start graphical applications, as <span class="highlight-3">sux</span> is a wrapper around the standard su command which will transfer  your X credentials to the target user.</p>-->
+							<p>Ενώ η κοινή εντολή για να γίνετε διαχειριστής είναι η 'su' , η χρήση της <span class="highlight-3">sux</span> θα σας επιτρέψει να τρέξετε και GUI / X11 εφαρμογές από την γραμμή εντολών και επιτρέπει στον διαχειριστή να τρέξει γραφικές εφαρμογές, μιας και η <span class="highlight-3">sux</span> είναι τυλιγμένη (wrapped) γύρω από την κοινή εντολή su η οποία θα μεταφέρει τις X πιστοποιήσεις σας στον  χρήστη.</p>
+
+							<!--p>Some KDE applications require <span class="highlight-3">dbus-launch</span> in front of the application:</p-->
+							<p>Μερικές KDE εφαρμογές χρειάζονται την λέξη <span class="highlight-3">dbus-launch</span> μπροστά από το όνομα της εφαρμογής:</p>
+<pre>
+dbus-launch &lt;Εφαρμογή&gt;
+</pre>
+
+							<!--<p>An example of running an X11 app via sux is to use a text editor to edit a root file like kwrite or kate, to do partitioning with gparted or an Xapp file manager like konqueror. You can also alter root files by right clicking the file and choosing 'edit-as-root', and entering your root password, this will call kdesu in the background.</p>-->
+							<p>Παραδείγματα εκτέλεσης μιας X11 εφαρμογής μέσω της sux είναι η χρήση ενός επεξεργαστή κειμένου όπως το kwrite ή το kate για την επεξεργασία ενός αρχείου διαχειριστή, να κάνετε κατατμήσεις με το gparted ή η εκτέλεση ενός Xapp διαχειριστή αρχείων όπως το konqueror. Μπορείτε επίσης να τροποποιήσετε αρχεία διαχειριστή με το να κάνετε δεξί κλικ πάνω τους και  να επιλέξετε 'edit-as-root' με το να δώσετε το password διαχειριστή, θα καλέσετε το kdesu στο φόντο.</p>
+
+							<!--<p>Unlike 'sudo', it  means that someone can't just come along and type 'sudo' and make potentially damaging changes to your system.</p>-->
+							<p>Σε αντίθεση με το 'sudo', σημαίνει ότι δεν μπορεί ο οποιοσδήποτε να έρθει και να γράψει 'sudo' και να κάνει αλλαγές που πιθανών να είναι ζημιογόνες για το σύστημα σας.</p>
+
+							<!--<p class="highlight-2">WARNING: While you are logged in as root, the system will not stop you from doing potentially dangerous things like deleting important files etc., you have to be absolutely sure about what you are doing, because it's very possible to seriously harm your system. </p>-->
+							<p class="highlight-2">ΠΡΟΣΟΧΗ: Όσο είστε συνδεδεμένος σαν διαχειριστής, το σύστημα δεν θα σας αποτρέψει από το να κάνετε πράγματα που μπορεί να προκαλέσουν ζημία όπως να σβήσετε σημαντικά αρχεία κτλ., πρέπει να είστε απόλυτα σίγουρος για το τί κάνετε γιατί είναι πολύ πιθανών να προκαλέσετε σοβαρή ζημία στο σύστημα σας. </p>
+
+							<!--<p class="highlight-2">Under no circumstances should you be as root in the console/terminal to run applications that a standard user uses to go about being productive on a day to day basis, like sending emails, creating spreadsheets or surfing the internet and so forth. </p>-->
+							<p class="highlight-2">Σε καμία περίπτωση δεν πρέπει να είστε συνδεδεμένος σαν διαχειριστής μέσα στο τερμάτικο/κονσόλα και να τρέχετε εφαρμογές που χρησιμοποιεί ένας απλός χρήστης για να κάνει τις καθημερινές του εργασίες όπως το να στέλνει email, να δημιουργεί λογιστικά φύλλα, να σερφάρει στο διαδίκτυο και ου το καθ' εξής. </p>
+	</div>
+	<div id="rev">Τελευταία αναθεώρηση περιεχομένου 29/01/2011 1120 UTC</div>
+
+</div>
+</body>
+</html>

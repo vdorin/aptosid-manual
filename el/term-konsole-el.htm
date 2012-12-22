@@ -1,0 +1,730 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>aptosid Manuals - The Terminal or Konsole</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision by edhunter 17/09/2010 0630 UTC -->
+<div id="menu"> <!-- menu starts here el lang maintained by  -->
+<!--aptosid Operating System Manual menu-version-02.13.2011.09.09 -->
+<!-- menu last updated by bluewater 2011.09.09 0935 hrs UTC -->
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="To aptosid.com forums and wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-el.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" />Αναζήτηση Online - Offline </a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Eπιλέξτε άλλη γλώσσα - Choose another language" alt="lang-switch" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-el.htm">Εγχειρίδιο ΛΣ aptosid</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-el.htm#welcome-gen">Εγχειρίδιο ΛΣ aptosid &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-el.htm#cred-team">Συντελεστές</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-el.htm#how-to">Πως να χρησιμοποιήσετε αυτό το εγχειρίδιο &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-el.htm#how-to">Πως να χρησιμοποιήσετε αυτό το εγχειρίδιο</a></li>
+					  <li><a href="welcome-el.htm#table-contents">Πίνακας περιεχομένων</a></li>
+					</ul>
+					</li>
+		<li><a href="help-el.htm#help-gen">Βοήθεια &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-el.htm#help-gen">Που να βρείτε βοήθεια</a></li>
+					  <li><a href="help-el.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-el.htm#welcome-quick">aptosid Οδηγός Γρήγορης Αναφοράς (Quick Start Guide)</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-el.htm">Περιεχόμενα ISO, Εκδόσεις, Κατέβασμα και Εγγραφή</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-el.htm#cd-content">Περιεχόμενα ISO και απαιτήσεις συστήματος &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-el.htm#rolling">Σημειώσεις Έκδοσης</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-el.htm#download-aptosid">aptosid Mirrors, Κατέβασμα και Εγγραφή &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-el.htm#md5">md5 Checksum</a></li>
+					  <li><a href="cd-dl-burning-el.htm#burn-nero">Γράφοντας το ISO στα Windows</a></li>
+					  <li><a href="cd-dl-burning-el.htm#burn-linux">Γράφοντας το ISO στο Linux</a></li>
+					  <li><a href="cd-no-gui-burn-el.htm#burning-no-gui">burniso script</a></li>
+					  <li><a href="cd-no-gui-burn-el.htm#burn-no-gui-gen">Εγγραφή χωρίς γραφικό περιβάλλον</a></li>
+					  <li><a href="cd-dl-burning-el.htm#download-aptosid">aptosid Mirrors Κατεβάσματος</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-el.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-el.htm#rootpw">Κωδικός υπερχρήστη (root) στο aptosid-Live ISO</a></li>
+				<li><a href="live-mode-el.htm#live-cd-installsoft">Εγκατάσταση προγραμμάτων σε περιβάλλον Live-ISO</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-el.htm">Το Τερματικό / Κονσόλα</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-el.htm#term-kon">Τερματικό / Κονσόλα &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-el.htm#term-kon">Τερματικό / Κονσόλα</a></li>
+					  <li><a href="term-konsole-el.htm#colours"> Coloured terminal prompts</a></li>
+					  <li><a href="term-konsole-el.htm#cli-help">Βοήθεια από την γραμμή εντολών</a></li>
+					  <li><a href="help-el.htm#init3-tools">Εργαλεία να ξέρετε για text mode (tty) - init 3</a></li>
+					  <li><a href="term-konsole-el.htm#term-cmds">Λίστα εντολών του Linux</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-el.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-el.htm">CheatCodes</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-el.htm#cheatcodes">Cheatcodes αποκλειστικά για το aptosid Live-ISO</a></li>
+				<li><a href="cheatcodes-el.htm#cheatcodes-linux">Cheatcodes γενικά για το Linux</a></li>
+				<li><a href="cheatcodes-vga-el.htm#vga">Κωδικοί VGA</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-el.htm">Partitioning the Hard Drive - Traditional, GPT and LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-el.htm#hd-ntfs3g">Γράφοντας σε NTFS κατάτμηση με το ntfs-3g</a></li>
+			<li><a href="part-lvm-el.htm#part-lvm">Partitioning to use LVM - Logical Volume Manager</a></li>
+			<li><a href="part-gparted-el.htm#partition">Δημιουργία κατατμήσεων με χρήση γραφικών (GUI) εργαλείων &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-el.htm#partition">Δημιουργία κατατμήσεων στον δίσκο χρησιμοποιώντας το  GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-el.htm#ntfs">Αλλαγή μεγέθους σε NTFS κατάτμηση χρησιμοποιώντας το GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-el.htm#partition">Δημιουργία κατατμήσεων με χρήση εργαλείων κονσόλας (CLI) &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-el.htm#partition">Δημιουργία κατατμήσεων στον σκληρό δίσκο χρησιμοποιώντας το cfdisk</a></li>
+					    <li><a href="part-cfdisk-el.htm#formating">Διαμόρφωση (format) μετά την δημιουργία κατάτμησης, με το cfdisk</a></li>
+					    <li><a href="part-gdisk-el.htm#gdisk-6">Formatting after partitioning with gdisk</a></li>
+					    <li><a href="part-gdisk-el.htm#gdisk-1">GPT Partitioning with gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-el.htm#part-example">Γενικά για κατατμήσεις &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-el.htm#part-example">Παραδείγματα για το μέγεθος των κατατμήσεων</a></li>
+					  <li><a href="part-uuid-el.htm#uuid">UUID, Rebuilding fstab and creating new mount points</a></li>
+					  <li><a href="part-cfdisk-el.htm#disknames">Ονομασία δίσκων εν συντομία</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-el.htm">Επιλογές εγκατάστασης - HD, USB, VM and Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-el.htm#Inst-prep">Προετοιμασία Εγκατάστασης &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-el.htm#Inst-prep">Προετοιμασία Εγκατάστασης</a></li>
+					  <li><a href="hd-install-el.htm#Installation">Εγκατάσταση στον σκληρό δίσκο</a></li>
+					  <li><a href="hd-install-el.htm#first-hd-boot">Πρώτη εκκίνηση</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-el.htm#fromiso">Εκκίνηση fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-el.htm#fromiso">Εκκίνηση fromiso - Γενικά</a></li>
+					  <li><a href="hd-install-opts-el.htm#grub2-fromiso">Εκκίνηση 'fromiso' με Grub 2</a></li>
+					  <li><a href="hd-install-opts-el.htm#fromiso-persist">fromiso και persist</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-el.htm#usb-hd">Εγκατάσταση σε USB δίσκους &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-el.htm#usb-hd">Eγκατάσταση σε USB σκληρό δίσκο - aptosid συγκεκριμένα - aptosid-σε-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-el.htm#raw-usb">Εγραφή του aptosid σε USB/SSD stick με Linux, MS Windows ή Mac OS X σύστημα</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-el.htm#install-crypt">Installing to encryted partitions - cryptroot</a></li>
+		  <li><a href="nbdboot-el.htm#nbd1">Εκκίνηση του aptosid μέσω δικτύου</a></li>
+		  <li><a href="hd-install-vmopts-el.htm#vm">Επιλογές εγκατάστασεις σε Εικονική Μηχανή (Virtual Machine)</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-el.htm">Κάρτες γραφικών, Οθόνες, Xorg &amp; Διάφοροι Οδηγοί</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-el.htm#mon-res">Ανάλυση Οθόνης (screen) και Οθόνες (monitor)  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-el.htm#mon-res">Ανάλυση Οθόνης (screen) και Οθόνες (monitor)</a></li>
+					  <li><a href="hw-dev-mon-el.htm#xrandr">Δύο Οθόνες (Dual Monitors) και xrandr</a></li>
+					  <li><a href="hw-dev-mon-el.htm#mon-binary">Δύο Οθόνες (με χρήση binaries)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-el.htm#foss-xorg">GPU drivers &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-el.htm#ati-3d">AMD/ATI 3D drivers</a></li>
+					  <li><a href="gpu-el.htm#intel">Intel 2D and 3D drivers</a></li>
+					  <li><a href="gpu-el.htm#nvidia">Nvidia 3D drivers</a></li>
+					  <li><a href="gpu-el.htm#foss-xorg">Open Source Xorg drivers</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-el.htm#fw-detect">Firmware detection - non-free </a></li>
+			  <li><a href="nf-firm-el.htm#non-free-firmware">Adding non-free to Sources List</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-el.htm">Διαχείριστες Παραθύρων</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-el.htm">KDE and XFCE Διαχείριστες Παραθύρων &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-el.htm#xfce-notes">Χρήσιμα extras για Xfce</a></li>
+					    <li><a href="wm-dm-el.htm#install-add">Χρήσιμα extras για KDE</a></li>
+					    <li><a href="wm-dm-el.htm#desk-freeze">Κόλλημα επιφάνειας εργασίας</a></li>
+					    <li><a href="wm-dm-el.htm#kde-login">Δεν μπορώ να εισέλθω στο KDE</a></li>
+					    <li><a href="wm-dm-el.htm#ch-th">Aλλάζοντας Θέματα (Themes)</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-el.htm#dm">Installing additional Display Managers</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-el.htm">Σύνδεση στο διαδίκτυο, WiFi, LAN και Δίκτυα</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-el.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-el.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-el.htm#serv-ftp">FTP Πελάτες</a></li>
+					    <li><a href="lamp-apache-el.htm#serv-sec">Πρωτόκολλα ασφαλείας</a></li>
+					    <li><a href="lamp-apache-el.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-el.htm#serv-mysql">MySQL Ρύθμιση</a></li>
+					    <li><a href="lamp-ppp-el.htm#serv-php">PHP με Apache</a></li>
+					    <li><a href="ntp-server-el.htm#ntp-server">Timeserver Ρύθμιση</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-el.htm#tor">Firewalls και Privacy &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-el.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-el.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-el.htm#firewalls">Firewalls</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-el.htm#ssh-x">SSH και Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-el.htm#setup">Samba-Server Ρύθμιση</a></li>
+						  <li><a href="samba-el.htm#configure">Ρύθμιση SAMBA (Windows)</a></li>
+						  <li><a href="ssh-el.htm#ssh-fs">SSH Απομακρυσμένη Προσάρτυση</a></li>
+						  <li><a href="ssh-el.htm#ssh-x">Παραθυρικές Eφαρμογές μέσω SSH</a></li>
+						  <li><a href="ssh-el.htm#ssh-f">GUI SSH με Konqueror</a></li>
+						  <li><a href="ssh-el.htm#ssh-w">SSH X-Forwarding από ένα Windows-PC</a></li>
+						  <li><a href="ssh-el.htm#ssh">SSH και Ασφάλεια</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-el.htm#netcardconfig">WIFI Συνδέσεις &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-el.htm#netcardconfig">Mπαίνοντας στο Δίκτυο - Ceni</a></li>
+						    <li><a href="inet-wpagui-el.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-el.htm#net-set1">WiFi - Ρύθμιση του WiFi Roaming</a></li>
+						    <li><a href="inet-wpa-el.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-el.htm#hotswitch">Εναλλαγή δικτύου μεταξύ WiFi και σύρματος</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-el.htm#netcardconfig">Wired (σύρμα) Συνδέσεις &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-el.htm#dial-mod">56k Modems</a></li>
+						    <li><a href="inet-ceni-el.htm#netcardconfig">Mπαίνοντας στο Δίκτυο - Ceni</a></li>
+					</ul>
+					</li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-el.htm">Διαχείριση Πακέτων και dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-el.htm#apt-cook">APT Cookbook and Sources list &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-el.htm#apt-cook">APT-Οδηγός και Λίστες Πηγών (Sources list)</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-install">Εγκαθιστώντας ένα νέο πακέτο</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-delete">Διαγράφοντας ένα πακέτο</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-downgrade">Υποβαθμίζοντας / Κρατώντας (Hold) ένα πακέτο</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-cache">Αναζήτηση πακέτων με apt-cache</a></li>
+					    <li><a href="sys-admin-apt-el.htm#gui-pacsea">GUI Package searching</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-el.htm#kern-upgrade">Αναβαθμίζοντας τον πυρήνα &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-el.htm#kern-remove">Διαγραφή ενός πυρήνα</a></li>
+					    <li><a href="sys-admin-kern-upg-el.htm#kern-upgrade">Αναβαθμίζοντας τον πυρήνα</a></li>
+					    <li><a href="sys-admin-kern-upg-el.htm#dmakms">Εγκατάσταση kernel modules δυναμικά με dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-el.htm#apt-upgrade">Aναβάθμιση σε ένα Εγκατεστημένο Σύστημα - dist-upgrade - Γενικά &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-el.htm#live-cd-upgrade">Αναβαθμίζοντας χρησιμοποιώντας το Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-el.htm#approx">dist-upgrade πολλαπλών PC σε ένα LAN</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-upgrade">Aναβάθμιση σε ένα Εγκατεστημένο Σύστημα - dist-upgrade - Γενικά</a></li>
+					    <li><a href="sys-admin-apt-el.htm#du-st">Aναβάθμιση σε ένα Εγκατεστημένο Σύστημα - dist-upgrade - Τα Βήματα</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-el.htm">Διαχείριση Συστήματος</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-el.htm#bois-prep">Αναβάθμιση του BIOS με το FreeDOS</a></li>
+		<li><a href="vir-rkits-el.htm#virus-rkits">Ανιχνευτές Iών και Rootkits</a></li>
+		<li><a href="hd-install-el.htm#adduser">Προσθήκη χρηστών και Passwords &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-el.htm#adduser">Προσθήκη ενός νέου χρήστη</a></li>
+					    <li><a href="sys-admin-gen-el.htm#pw-lost">Χαμένο password root, νέα passwords</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-el.htm#start-services">Υπηρεσίες και init runlevels &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-el.htm#start-services">Ενεργοποίηση / Απενεργοποίηση Υπηρεσιών (Services)</a></li>
+					    <li><a href="sys-admin-gen-el.htm#pkill">Killing a service or process</a></li>
+					    <li><a href="sys-admin-gen-el.htm#init">aptosid Επίπεδα εκτέλεσης (runlevels) - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-el.htm#rsync">Backup του συστήματος &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-el.htm#rdiff">Back-Up με rdiff</a></li>
+					    <li><a href="sys-admin-rsync-el.htm#rsync">Back-Up με rsync</a></li>
+					    <li><a href="home-el.htm#home-bu">Μεταφορά του /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-el.htm#fonts">CUPS, Γραμματοσειρές και Ήχος &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-el.htm#fonts">Γραμματοσειρές</a></li>
+					     <li><a href="sys-admin-gen-el.htm#cups">CUPS - Σύστημα Εκτύπωσης</a></li>
+					     <li><a href="sys-admin-gen-el.htm#sound">Mixers Ήχου</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-el.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-el.htm#chroot">Grub2 - Recovering Grub with chroot</a></li>
+					    <li><a href="sys-admin-grub2-el.htm#mbr-over-grub2">Grub2 - MBR Overwritten</a></li>
+					    <li><a href="sys-admin-grub2-el.htm#multi-os">Grub2 - Dual και Multibooting</a></li>
+					    <li><a href="sys-admin-grub2-el.htm#grub1-grub2">Grub2 -Αναβάθμιση α</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Sponsored by webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="../lib/sponsor-logo/webtropia-logo.png" title="aptosid is proudly hosted by webtropia.com" alt="aptosid is proudly hosted by webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div>
+<div id="main-page">
+	<div class="divider" id="term-kon">
+		<h2 id="top-header">Oρισμός του τερματικού/κονσόλα</h2>
+
+							<p>Ένα τερματικό, επίσης αποκαλούμενο κονσόλα και στο KDE konsole, είναι ένα πρόγραμμα το οποίο καθιστά δυνατή την απευθείας αλληλεπίδραση με το λειτουργικό σύστημα Linux με την έκδοση διαφόρων εντολών οι οποίες στη συνέχεια εκτελούνται άμεσα. Επίσης συχνά γίνεται αναφορά σε αυτό ως <span class="highlight-3">'κέλυφος' ή 'γραμμή εντολών'</span>. Το τερματικό είναι ένα πολύ δυνατό εργαλείο και η απόκτηση βασικής κατανόησης της χρήσης του αξίζει την προσπάθεια.</p>
+
+							<p>Στο aptosid μπορείτε να βρείτε το τερματικό/konsole κοντά στο K-menu με σύμβολο μια οθόνη ηλεκτρονικού υπολογιστή. Εξαρτώμενο από το θέμα (theme) σας ενδέχεται ή όχι να περιλαμβάνει την φωτογραφία ενός κελύφους. Θα βρείτε επίσης το ίδιο εικονίδιο στο K-menu και στην κατηγορία "System".</p>
+
+							<p>Όταν ανοίγετε ένα παράθυρο τερματικού θα παρουσιαστεί μπροστά σας το terminal prompt το οποίο θα έχει την παρακάτω μορφή:</p>
+
+<!--pre>
+username@hostname:~$
+</pre-->
+
+<pre>
+όνομαχρήστη@όνομαοικοδεσπότη(hostname):~$
+</pre>
+
+							<!--p>You should recognise the username as your own login name. The <span class="highlight-3">~ (tilde)</span> indicates that you are in your home directory and <span class="highlight-3">$</span> indicates that you are logged in with user privilege. At the end you will have your cursor. This is your command line where you will enter the commands you want to execute.</p-->
+
+							<p>Το όνομα χρήστη θα πρέπει να είναι το ίδιο με το όνομα που χρησιμοποιείτε όταν κάνετε login. Το <span class="highlight-3">~ </span> (tilde) δείχνει ότι είστε μέσα στον home φάκελο σας και το <span class="highlight-3">$</span> δείχνει ότι είσαστε συνδεδεμένος σαν απλός χρήστης. Στο τέλος θα έχετε τον κέρσορα σας. Αυτή είναι η γραμμή εντολών σας όπου θα δώσετε τις εντολές που θέλετε να εκτελέσετε.</p>
+
+							<!--p>A lot of commands need to be run with root privileges. To achieve this you type:<span class="highlight-3">sux</span> at the prompt and press enter. You will then be asked for your root password. Type your password and hit enter again (note that when you type your password, nothing will show on the screen).</p-->
+
+							<p>Πολλές εντολές πρέπει να εκτελεστούν με δικαιώματα διαχειριστή (root). Για να το επιτύχετε αυτό, γράφετε στο prompt:<span class="highlight-3">sux</span> και πατάτε enter. Έδω θα σας ζητηθεί το password διαχειριστή. Πληκτρολογείστε το password και πατήστε enter (Σημειώστε ότι όταν γράφετε το password δεν θα φαίνεται τίποτα στην οθόνη).</p>
+
+
+							<!--p>If your password is correct the prompt will change to:</p-->
+
+							<p>Αν το password είναι σωστό το prompt θα αλλάξει σε:</p>
+
+<!--pre>
+root@hostname:/home/username#
+</pre-->
+
+<pre>
+διαχειριστής@όνομαοικοδεσπότη:/home/όνομαχρήστη#
+</pre>
+
+							<!--p class="highlight-2">WARNING: While you are logged in as root, the system will not stop you from doing potentially dangerous things like deleting important files etc., you have to be absolutely sure about what you are doing, because it's fully possible to seriously harm your system.</p-->
+
+							<p class="highlight-2">ΠΡΟΣΟΧΗ: Όσο είστε συνδεδεμένος σαν διαχειριστής, το σύστημα δεν θα σας αποτρέψει από το να κάνετε πράγματα που μπορεί να προκαλέσουν ζημία όπως να σβήσετε σημαντικά αρχεία κτλ., πρέπει να είστε απόλυτα σίγουρος για το τί κάνετε γιατί είναι πολύ πιθανών να προκαλέσετε σοβαρή ζημία στο σύστημα σας.</p>
+
+							<!--p>Note that the <span class="highlight-3">$</span> sign has changed into a <span class="highlight-3">#</span> (hash). In a terminal/konsole the <span class="highlight-3">#</span> always indicates that you are logged in with root privileges. <span class="highlight-3">Throughout this manual we will omit everything in front of the $ or the #. So a command like:</span></p-->
+
+							<p>Σημειώστε ότι το <span class="highlight-3">$</span> έγινε <span class="highlight-3">#</span> (hash). Σε ένα τερματικό/κονσόλα το <span class="highlight-3">#</span> δείχνει πάντα ότι είστε συνδεδεμένος με δικαιώματα διαχειριστή. <span class="highlight-3">Σε όλο το εγχειρίδιο θα παραλείψουμε τα πάντα μπροστά από το $ ή το #. Οπότε μια εντολή όπως την παρακάτω:</span></p>
+
+<pre>
+# apt-get install something
+</pre>
+
+							<!--p>Means: open a terminal, become root (sux) and enter the command at the # prompt.  <span class="highlight-4">(Don't type the #)</span></p-->
+
+							<p>Σημαίνει: ανοίξτε το τερματικό, γίνετε διαχειριστής (sux) και δώστε την εντολή στο # prompt. <span class="highlight-4">(Μην γράψετε το #)</span></p>
+
+							<!--p>Sometimes a konsole and/or terminal may become corrupted, type:</p-->
+
+							<p>Κάποτε μια κονσόλα ή/και ένα τερματικό μπορεί να καταστραφούν, γράψετε:</p>
+<pre>
+reset
+</pre>
+							<!--p>and hit enter key.</p-->
+
+							<p>και πατήστε το enter.</p>
+
+							<!--p>If a konsole and/or terminal's output  appears distorted. You can often cure this problem by pressing <span class="highlight-3">ctrl+l,</span> which redraws the terminal window.  This distortion happens mostly when working with programs that use the ncurses interface, such as irssi</p-->
+
+							<p>Αν η έξοδος (output) μιας κονσόλας ή ενός τερματικού φαίνεται διαστρεβλωμένη (distorted), μπορείτε (συνήθως) να το φτιάξετε το πρόβλημα πατώντας <span class="highlight-3">ctrl+l,</span> το οποίο αποκαθιστά το παράθυρο του τερματικού. Αυτή η διαστρέβλωση συμβαίνει κυρίως όταν δουλεύετε με προγράμματα που χρησιμοποιούν το ncurses interface, όπως το irssi</p>
+
+							<!--p>A konsole and/or terminal  on occasion may appear to be frozen, however, it is not, and anything you type will still be processed. This can be caused by pressing <span class="highlight-3">ctrl+s</span> accidentally. In this case, try <span class="highlight-3">ctrl+q</span> to unlock the terminal.</p-->
+
+							<p>Κάποτε μια κονσόλα ή/και ένα τερματικό μπορεί να φαίνονται παγωμένα, δεν είναι όμως και οτιδήποτε γράψετε θα εκτελεστεί. Αυτό μπορεί να συμβεί αν πατήσετε κατά λάθος <span class="highlight-3">ctrl+s</span> . Σε αυτή την περίπτωση δοκιμάστε να πατήσετε <span class="highlight-3">ctrl+q</span> για να ξεκλειδώσετε το τερματικό.</p>
+
+	</div>
+	<div class="divider" id="colours">
+				    <h3><span class="highlight-4">Χρωματιστό τερματικό για </span> <span class="highlight-5">user:~</span><span class="highlight-1">$ </span> και <span class="highlight-2">root:</span><span class="highlight-1"># </span> <span class="highlight-3"> :</span></h3>
+
+							<!--p>Coloured terminal prompts could save you from making an embarrassing and a possibly catastrophic mistake while as <span class="highlight-2">root # </span> when you really wanted to be as <span class="highlight-5">user~$</span>, or to use prompt colours as a marker to commands you executed a few 100 lines ago.</p-->
+							<p>Ένα χρωματιστό τερματικό μπορεί να σας σώσει από καταστροφικά λάθη όταν σαν <span class="highlight-2">root # </span> εκτελέσετε μια εντολή ενώ θέλατε να είστε <span class="highlight-5">user~$</span> ή μπορείτε να χρησιμοποιήσετε τα χρώματα για να βρείτε πιο εύκολα μια εντολή την οποία εκτελέσατε 100 γραμμές πιο πάνω.</p>
+
+							<!--p>By default, both user~$ and root# prompts are the same colour and it is really easy to change the colours for both accounts.</p-->
+							<p>Εκ προεπιλογής τα τερματικά για τον user~$ και root# έχουν το ίδιο χρώμα και είναι πολύ απλό να αλλάξετε το χρώμα των δυο.</p>
+
+							<!--p>The basic colours are:</p-->
+							<p>Τα βασικά χρώματα είναι:</p>
+<pre>
+(the syntax is 00;XX)
+[00;30] Black
+[00;31] Red
+[00;32] Green
+[00;33] Yellow
+[00;34] Blue
+[00;35] Magenta
+[00;36] Cyan
+[00;37] White
+[Replace [00;XX] with [01;XX] to get a colour variation].
+</pre>
+				<!--h6>To change your username ~$ prompt colour:</h6-->
+				<h6>Για να αλλάξετε το χρώμα του τερματικού του χρήστη:</h6>
+
+							<!--p>As $ user, with your favourite text editor:</p-->
+							<p>Σαν χρήστης $, με τον αγαπημένο σας επεξεργαστή κειμένου:</p>
+<pre>
+$ &lt;editor&gt; ~/.bashrc
+</pre>
+							<!--p>Go to line 39 and uncomment it, thus:</p-->
+							<p>Πηγαίνετε στην γραμμή 39 και αφαιρέστε το # :</p>
+<pre>
+force_color_prompt=yes
+</pre>
+							<!--p>Go to line 53 and where it has 01;32m, (for example), change it to a colour that suits you.</p-->
+							<p>Πηγαίνετε στην γραμμή 53 και όπου έχει (για παράδειγμα) 01;32m, αλλάξτε το στο χρώμα που σας βολεύει.</p>
+
+							<!--p>As an example, for a <span class="highlight-5"> cyan </span> coloured user~:$ prompt, [01;36m\], you will need to change the code [01;XXm\] in 3 places within the syntax:</p-->
+							<p>Σαν παράδειγμα, για <span class="highlight-5"> cyan </span> χρωματισμένο χρήστη, [01;36m\], θα πρέπει να αλλάξετε τον κωδικό [01;XXm\] σε 3 σημεία.</p>
+<pre>
+PS1='${debian_chroot:+($debian_chroot)}\[\033[01;36m\]\u@\h\[\033[01;36m\]:\[\033[01;36m\]\w\[\033[00m\]\$ '
+</pre>
+							<!--p>The new look will only appear in new terminal sessions.</p-->
+							<p>Οι αλλαγές θα φανούν μόνο όταν ανοίξετε ένα νέο τερματικό.</p>
+
+				<!--h6>To change your root# prompt colour:</h6-->
+				<h6>Για να αλλάξετε το χρώμα του τερματικού του root:</h6>
+<pre>
+sux
+&lt;editor&gt; /root/.bashrc
+</pre>
+							<!--p>Go to line 39 and uncomment it, thus:</p-->
+							<p>Πηγαίνετε στην γραμμή 39 και αφαιρέστε το # :</p>
+
+<pre>
+force_color_prompt=yes
+</pre>
+
+							<!--p>Go to line 53 and where it has 01;32m, (for example), change it to a colour that suits you.</p-->
+							<p>Πηγαίνετε στην γραμμή 53 και όπου έχει (για παράδειγμα) 01;32m, αλλάξτε το στο χρώμα που σας βολεύει.</p>
+
+							<!--p>As an example, for a <span class="highlight-5"> red </span> coloured root:$ prompt, [01;31m\], you will need to change the code [01;XXm\] in 3 places wi    thin the syntax:</p-->
+							<p>Σαν παράδειγμα, για <span class="highlight-5"> red </span> χρωματισμένο χρήστη, [01;31m\], θα πρέπει να αλλάξετε τον κωδικό [01;XXm\] σε 3 σημεία.</p>
+
+<pre>
+PS1='${debian_chroot:+($debian_chroot)}\[\033[01;31m\]\u@\h\[\033[01;31m\]:\[\033[01;31m\]\w\[\033[00m\]\$ '
+</pre>
+							<!--p>The new look will only appear in new terminal sessions.</p-->
+							<p>Οι αλλαγές θα φανούν μόνο όταν ανοίξετε ένα νέο τερματικό.</p>
+
+					    <!--h6>Terminal background colours</h6-->
+						<h6>Χρώμα φόντου του τερματικού</h6>
+
+							<!--p>To change the background colour and font options of the terminal, look at the menu options of the terminal. </p-->
+							<p>Για να αλλάξετε το χρώμα του φόντου και τις γραμματοσειρές του τερματικού, κοιτάξτε τις επιλογές στο μενού του τερματικού.</p>
+
+
+		<div class="screenshot"><img src="../lib/images-common/images-terminal/terminal-colour-0.1.png" title="Terminal colours" alt="Terminal colours" /></div>
+
+							<!--p>There are a plethora of options available for changing colours, however the recommendation is to keep it simple.</p-->
+							<p>Υπάρχουν πάρα πολλές επιλογές για αλλαγή χρώματος, σαν συνηστούμε όμως να κρατήσετε το τερματικό απλό.</p>
+	</div>
+	<div class="divider" id="sux">
+	<!--h2>About sux</h2-->
+
+	<h2>Σχετικά με το sux</h2>
+							<!--p>Numerous commands need to be run with root privileges. To achieve this you type:</p-->
+
+							<p>Πολλές εντολές πρέπει να εκτελεστούν με δικαιώματα διαχειριστή (root). Για να το επιτύχετε αυτό γράφετε:</p>
+<pre>
+sux
+</pre>
+
+							<!--p>While the common command for becoming root is 'su'  using <span class="highlight-3">sux</span> instead will allow you run GUI / X11 applications from the command line and allow root to start graphical applications, as <span class="highlight-3">sux</span> is a wrapper around the standard su command which will transfer  your X credentials to the target user.  (See also <a href="#sudo"> sudo</a>).</p-->
+
+							<p>Ενώ η κοινή εντολή για να γίνετε διαχειριστής είναι η 'su' , η χρήση της <span class="highlight-3">sux</span> θα σας επιτρέψει να τρέξετε και GUI / X11 εφαρμογές από την γραμμή εντολών και επιτρέπει στον διαχειριστή να τρέξει γραφικές εφαρμογές, μιας και η <span class="highlight-3">sux</span> είναι τυλιγμένη (wrapped) γύρω από την κοινή εντολή su η οποία θα μεταφέρει τις X πιστοποιήσεις σας στον  χρήστη.  (Δείτε επίσης <a href="#sudo"> sudo</a>).</p>
+
+
+							<!--p>An example of running an X11 app via sux is to use a text editor to edit a root file like kwrite or kate, to do partitioning with gparted or an Xapp file manager like dolphin or thunar. You can also alter root files by right clicking the file and choosing 'edit-as-root', and entering your root password, this will call kdesu in the background.</p-->
+
+							<p>Παραδείγματα εκτέλεσης μιας X11 εφαρμογής μέσω της sux είναι η χρήση ενός επεξεργαστή κειμένου όπως το kwrite ή το kate για την επεξεργασία ενός αρχείου διαχειριστή, να κάνετε κατατμήσεις με το gparted ή η εκτέλεση ενός Xapp διαχειριστή αρχείων όπως το dolphin or thunar. <!--Μπορείτε επίσης να τροποποιήσετε αρχεία διαχειριστή με το να κάνετε δεξί κλικ πάνω τους και  να επιλέξετε 'edit-as-root' με το να δώσετε το password διαχειριστή, θα καλέσετε το kdesu στο φόντο.--></p>
+
+							<!--p>Some KDE applications require <span class="highlight-3">dbus-launch</span> in front of the application:</p-->
+							<p>Ορισμένες KDE εφαρμογές χρειάζονται την λέξη <span class="highlight-3">dbus-launch</span> μπροστά από το όνομα της εφαρμογής:</p>
+<pre>
+dbus-launch &lt;Εφαρμογή&gt;
+</pre>
+
+				<h6>KDE επιλογές πληκτρολογίου</h6>
+							<p>Για να τρέξετε το krunner στο KDE:</p>
+<pre>
+Alt+F2
+</pre>
+							<p>ή δεξί κλικ στην επιφάνεια εργασίας και επιλογή του:</p>
+<pre>
+Run Command
+</pre>
+							 <p>μετά:</p>
+
+<pre>
+kdesu &lt;Εφαρμογή&gt;
+</pre>
+
+				<h6>Xfce επιλογές πληκτρολογίου</h6>
+							<p>Για να τρέξετε το Run Command στο Xfce:</p>
+<pre>
+Alt+F2
+</pre>
+							<p>ή δεξί κλικ στην επιφάνεια εργασίας και επιλογή του:</p>
+<pre>
+Run Command
+</pre>
+							 <p>μετά:</p>
+
+<pre>
+gksu &lt;Εφαρμογή&gt;
+</pre>
+					  <h6>Επιλογές για άλλους διαχειριστές επιφάνειας εργασίας</h6>
+							<!--p>Another  keyboard option also generic to all major Desktop Managers is:</p-->
+							<p>Μια keyboard άλλη επιλογή η οποία δουλεύει και σε άλλους διαχειριστές επιφάνειας εργασίας είναι:</p>
+<pre>
+Alt+F2
+</pre>
+							<p>μετά:</p>
+<pre>
+su-to-root -X -c &lt;Εφαρμογή&gt;
+</pre>
+							<!--p><span class="highlight-3">All of the above keyboard options can be run in a terminal.</span></p-->
+							<p><span class="highlight-3">Τις πιο πάνω επιλογές μπορείτε να τις τρέξετε μέσα σε ένα τερματικό.</span></p>
+	</div>
+	<div class="divider" id="sudo">
+					<h2>Το sudo δεν υποστηρίζεται</h2>
+							<!--p>sudo is not enabled by default on installation to hard disk. It is available for use on a live-ISO since no root password is set. The reasoning behind this is so that if an attacker gets hold of the users password, they do not immediately get full super-user priviledges and make potentially damaging changes to your system.</p-->
+							<p>Το sudo δεν είναι ενεργοποιημένο εκ προεπιλογής σε μια εγκατάσταση στον σκληρό δίσκο. Μπορείτε να το χρησιμοποιήσετε όσο είστε μέσα σε live περιβάλλον (Live-ISO) γιατί εκεί δεν έχει οριστεί κάποιο root password. Ο λόγος γιαυτό είναι ο εξής: αν κάποιος αποκτήσει το password του χρήστη, δεν θα έχει αμέσως πρόσβαση με δικαιώματα υπέρ-χρήστη και δεν θα μπορέσει έτσι να κάνει ζημιές στο σύστημα σας.</p>
+
+							<!--p>Another issue with sudo is that it leads to running a root application with a users configuration, which may override or change permissions. In some cases, this can subsequently make an application unusable for the user. Use <span class="highlight-3">sux, kdesu, gksu or su-to-root -X -c</span> as recommended!</p-->
+							<p>Ένα άλλο πρόβλημα με το sudo είναι ότι τρέχει μια root εφαρμογή με τις ρυθμίσεις του χρήστη πράγμα που μπορεί να αλλάξει είναι να παρακάμψει κάποια δικαιώματα. Σε μερικές περιπτώσεις αυτό μπορεί να έχει σαν αποτέλεσμα την αδυναμία εκτέλεσης της εφαρμογής από τον απλό χρήστη. Συστήνουμε την χρήση του<span class="highlight-3"><a href="#sux">sux</a>, kdesu, gksu ή su-to-root -X -c</span> !</p>
+
+					  <h2>Μέσα σαν root</h2>
+
+							<!--p class="highlight-2">WARNING: While you are logged in as root, the system will not stop you from doing potentially dangerous things like deleting important files etc., you have to be absolutely sure about what you are doing, because it's very possible to seriously harm your system. </p-->
+
+							<p class="highlight-2">ΠΡΟΣΟΧΗ: Όσο είστε συνδεδεμένος σαν διαχειριστής, το σύστημα δεν θα σας αποτρέψει από το να κάνετε πράγματα που μπορεί να προκαλέσουν ζημία όπως να σβήσετε σημαντικά αρχεία κτλ., πρέπει να είστε απόλυτα σίγουρος για το τί κάνετε γιατί είναι πολύ πιθανών να προκαλέσετε σοβαρή ζημία στο σύστημα σας. </p>
+
+							<!--p class="highlight-2">Under no circumstances should you be as root in the console/terminal to run applications that a standard user uses to go about being productive on a day to day basis, like sending emails, creating spreadsheets or surfing the internet and so forth. </p-->
+
+							<p class="highlight-2">Σε καμία περίπτωση δεν πρέπει να είστε συνδεδεμένος σαν διαχειριστής μέσα στο τερμάτικο/κονσόλα και να τρέχετε εφαρμογές που χρησιμοποιεί ένας απλός χρήστης για να κάνει τις καθημερινές του εργασίες όπως το να στέλνει email, να δημιουργεί λογιστικά φύλλα, να σερφάρει στο διαδίκτυο και ου το καθ' εξής. </p>
+
+	</div>
+	<div class="divider" id="cli-help">
+		<!--h2>Command Line Help</h2-->
+		<h2>Βοήθεια στην γραμμή εντολών</h2>
+							<!--p>Yes there is. Most Linux commands/programs comes with its own manual called a "man page" or "manual page" accessible from the command line. The syntax is:</p-->
+
+							<p>Ναι υπάρχει. Οι περισσότερες εντολές/προγράμματα Linux έρχονται με το δικό τους εγχειρίδιο που ονομάζεται "man page" ή "manual page", προσβάσιμο από την γραμμή εντολών. Η σύνταξη είνα:</p>
+
+<pre>
+$ man "έντολη"
+</pre>
+							<p>ή</p>
+<pre>
+$ man -k &lt;λέξη_κλειδί&gt;
+</pre>
+
+							<!--p>This will bring up the manual page for that command. Navigate up and down with the cursor keys. As an example try:</p-->
+
+							<p>Αυτό θα ανοίξει την σελίδα του εγχειριδίου για την συγκεκριμένη εντολή. Περιηγηθείτε πάνω και κάτω με τα βελάκια του πληκτρολογίου. Σαν παράδειγμα δοκιμάστε:</p>
+
+<pre>
+$ man apt-get
+</pre>
+							<!--p>To escape from the man pages type  <span class="highlight-3">q</span></p-->
+
+							<p>Για να βγείτε από το εγχειρίδιο πατήστε το <span class="highlight-3">q</span></p>
+
+							<!--p>Another useful utility is the "apropos" command. Apropos basically enables you to search the man pages for a command if you e.g. don't remember the complete syntax. As an example you can try:</p-->
+
+							<p>Μια άλλη χρήσιμη εντολή είναι η "apropos". Η Apropos βασικά σας επιτρέπει να αναζητήσετε μέσα στο εγχειρίδιο για μια εντολή αν π.χ. δεν θυμάστε ακριβώς πώς γράφετε. Για παράδειγμα μπορείτε να δοκιμάσετε:</p>
+
+<pre>
+$ apropos apt-
+</pre>
+
+							<!--p>This will list all commands for the package manager 'apt'. The 'apropos' utility is a quite powerful tool, but describing it in detail is way beyond the scope of this manual. For details of its use, see it's man page.</p-->
+
+							<p>Αυτό θα σας δώσει μια λίστα με όλες τις εντολές για τον διαχειριστή πακέτων 'apt'. Η εντολή 'apropos' είναι ένα αρκετά ισχυρό εργαλείο, άλλα η λεπτομερής περιγραφή του είναι εκτός των σκοπών αυτού του εγχειριδίου. Για λεπτομέρειες για το πως μπορείτε να την χρησιμοποιήσετε, κοιτάξτε το man page της.</p>
+
+
+
+	</div>
+	<div class="divider" id="term-cmds">
+		<!--h2>Linux Terminal Commands List (excerpt)</h2-->
+
+		<h2>Λίστα Εντολών Τερματικού Linux (απόσπασμα)</h2>
+
+							<!--p>This is an excellent primer on using BASH <a href="http://linuxcommand.org/"> from linuxcommand.org</a></p-->
+
+							<p>Αυτή είναι μια πολύ καλή εισαγωγή στη χρήση του BASH <a href="http://linuxcommand.org/"> από το linuxcommand.org</a></p>
+
+							<!--p class="highlight-3">A very comprehensive list of 687 commands in alphabetical order from <a href="http://www.linuxdevcenter.com/linux/cmd/#a">Linux in a Nutshell, 5th Edition: O'Reilly Publications</a> can be found here and is a 'must bookmark'</p-->
+
+							<p class="highlight-3">Μια πολύ σφαιρική λίστα με 687 εντολές σε αλφαβητική σειρά από το <a href="http://www.linuxdevcenter.com/linux/cmd/#a">Linux in a Nutshell, 5th Edition: O'Reilly Publications</a> μπορεί να βρεθεί εδώ, είναι μια σελίδα που πρέπει να αποθηκεύσετε</p>
+
+							<!--p>There are numerous tutorials on the Internet. A very good one aimed at the beginner is: <a href="http://linux.org.mt/article/terminal">A Beginner's Bash</a></p-->
+
+							<p>Υπάρχουν πολλοί οδηγοί στο διαδύκτιο. Ένας πολύ καλός με στόχο τους αρχάριους είναι ο: <a href="http://linux.org.mt/article/terminal">A Beginner's Bash</a></p>
+
+							<p>Ή μπορείτε να χρησιμοποιήσετε την αγαπημένη σας μηχανή αναζήτησης για να βρείτε περισσότερους.</p>
+
+	</div>
+	<div class="divider" id="shell-scripts">
+		<!--h2>A script and how to use them</h2-->
+
+		<h2>Scripts και πώς να τα χρησιμοποιήσετε</h2>
+
+							<!--p>A shell script is a convenient way to group multiple commands together in a file, By entering the filename of the script every command will be executed in turn. aptosid comes with several useful scripts in order to make life easier for the users. </p-->
+
+							<p>Ένα shell script είναι ένας βολικός τρόπος για να ομαδοποίηση  πολλών εντολών μέσα σε ένα αρχείο. Πληκτρολογώντας το όνομα του script και πατώντας enter, εκτελούνται μια μια η εντολές με την σειρά. Το aptosid έρχεται με πολλά χρήσιμα scripts για να κάνει την ζωή του χρήστη ευκολότερη. </p>
+
+							<!--p>If the shell-script is in your *current working* directory</p-->
+
+							<p>Εάν το shell-script βρίσκεται στον φάκελο στον οποίο δουλεύετε τώρα (current working directory):</p>
+<!--pre>
+./name_of_shell-script
+</pre-->
+
+<pre>
+./όναμα_του_shell_script
+</pre>
+
+							<!--p class="highlight-3">Some scripts require root access (sux) in a terminal and others do not, it depends entirely on the purpose of the script.</p-->
+
+							<p class="highlight-3">Κάποια scripts χρειάζονται δικαιώματα διαχειριστή (sux) μέσα σε ένα τερματικό για να τρέξουν και άλλα δεν χρειάζονται. Εξαρτάται εντελώς από τον σκοπό του script.</p>
+
+			<!--h5>Script Installation and execution procedure</h5-->
+
+			<h5>Εγκατάσταση ενός script και διαδικασία εκτέλεσης</h5>
+   							<!--p>Use wget to download the script file, placing it wherever it has been recommended to place it <span class="highlight-3">(for example it may ask you to place it in /usr/local/bin) </span>, you can use your mouse copy and paste file name directly into your konsole window, after logging in as <span class="highlight-3">sux</span></p-->
+
+							<p>Χρησιμοποιείστε το wget για να κατεβάσετε το αρχείο script, βάλτε το οπουδήποτε σας συνέστησαν να το βάλετε <span class="highlight-3">(για παράδειγμα μπορεί να σας ζητήσει να το βάλετε στο /usr/local/bin) </span>. Μπορείτε να χρησιμοποιήσετε το ποντίκι σας για να κάνετε αντιγραφή (copy) και επικόλληση (paste) το όνομα του αρχείου μέσα στην κονσόλα σας αφού προηγουμένως έχετε συνδεθεί σαν <span class="highlight-3">sux</span></p>
+
+					<!--h6>Example of using wget that requires <span class="highlight-3">root access (sux) </span></h6-->
+
+					<h6>Παράδειγμα χρήσης του wget που χρειάζεται <span class="highlight-3">δικαιώματα διαχειριστή (sux) </span></h6>
+<!--pre>
+sux
+cd /usr/local/bin
+wget script-name
+</pre-->
+
+<pre>
+sux
+cd /usr/local/bin
+wget όνομα_script
+</pre>
+							<!--p>You then need to make the file executable</p-->
+
+							<p>Έπειτα θα πρέπει να κάνετε το αρχείο εκτελέσιμο (executable)</p>
+<!--pre>
+chmod +x  script-name
+</pre-->
+
+<pre>
+chmod +x  όνομα-script
+</pre>
+							<!--p>You can also use a browser to download a script file then place it where it has been recommended to place it, however you will still need to make it executable.</p-->
+
+							<p>Μπορείτε επίσης να χρησιμοποιήσετε έναν browser για να κατεβάσετε ένα αρχείο script και μετά να το τοποθετήσετε εκεί που σας συνέστησαν. Ωστόσο θα πρέπει και πάλι να το κάνετε εκτελέσιμο όπως πιο πάνω.</p>
+
+					<!--h6>Example of using wget as a user</h6-->
+
+					<h6>Παράδειγμα χρήσης του wget σαν απλός χρήστης</h6>
+							<!--p>To place a file in your <span class="highlight-3">$HOME as a user '$'</span>:</p-->
+
+							<p>Για να τοποθετήσετε ένα αρχείο στον <span class="highlight-3">$HOME φάκελο σας σαν χρήστης '$'</span>:</p>
+<pre>
+$wget http://bluewater.aptosid.com/shell-script-test/test-script.sh
+</pre>
+
+<pre>
+$chmod +x test-script.sh
+</pre>
+							<!--p>To run a script, open a terminal/konsole, and run the script name:</p-->
+
+							<p>Για να τρέξετε ένα script, ανοίξτε ένα τερματικό/κονσόλα και τρέξτε το όνομα του script:</p>
+
+<pre>
+$./test-script.sh
+</pre>
+							<!--p>You should then see this:</p-->
+
+							<p>Θα πρέπει μετά να δείτε αυτό:</p>
+<pre>
+Congratulations user
+You successfully downloaded and executed a bash script!
+Welcome to aptosid-manuals http://manual.aptosid.com
+</pre>
+
+	</div>
+
+	<div id="rev">Τελευταία αναθεώρηση περιεχομένου 14/08/2010 0100 UTC</div>
+
+</div>
+</body>
+</html>

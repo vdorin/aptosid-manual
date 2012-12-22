@@ -1,0 +1,650 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>aptosid Manuals - Rolling Notes</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision by edhunter 15/07/2009 1400 UTC -->
+<div id="menu"> <!-- menu starts here el lang maintained by  -->
+<!--aptosid Operating System Manual menu-version-02.13.2011.09.09 -->
+<!-- menu last updated by bluewater 2011.09.09 0935 hrs UTC -->
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="To aptosid.com forums and wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-el.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" />Αναζήτηση Online - Offline </a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Eπιλέξτε άλλη γλώσσα - Choose another language" alt="lang-switch" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-el.htm">Εγχειρίδιο ΛΣ aptosid</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-el.htm#welcome-gen">Εγχειρίδιο ΛΣ aptosid &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-el.htm#cred-team">Συντελεστές</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-el.htm#how-to">Πως να χρησιμοποιήσετε αυτό το εγχειρίδιο &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-el.htm#how-to">Πως να χρησιμοποιήσετε αυτό το εγχειρίδιο</a></li>
+					  <li><a href="welcome-el.htm#table-contents">Πίνακας περιεχομένων</a></li>
+					</ul>
+					</li>
+		<li><a href="help-el.htm#help-gen">Βοήθεια &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-el.htm#help-gen">Που να βρείτε βοήθεια</a></li>
+					  <li><a href="help-el.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-el.htm#welcome-quick">aptosid Οδηγός Γρήγορης Αναφοράς (Quick Start Guide)</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-el.htm">Περιεχόμενα ISO, Εκδόσεις, Κατέβασμα και Εγγραφή</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-el.htm#cd-content">Περιεχόμενα ISO και απαιτήσεις συστήματος &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-el.htm#rolling">Σημειώσεις Έκδοσης</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-el.htm#download-aptosid">aptosid Mirrors, Κατέβασμα και Εγγραφή &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-el.htm#md5">md5 Checksum</a></li>
+					  <li><a href="cd-dl-burning-el.htm#burn-nero">Γράφοντας το ISO στα Windows</a></li>
+					  <li><a href="cd-dl-burning-el.htm#burn-linux">Γράφοντας το ISO στο Linux</a></li>
+					  <li><a href="cd-no-gui-burn-el.htm#burning-no-gui">burniso script</a></li>
+					  <li><a href="cd-no-gui-burn-el.htm#burn-no-gui-gen">Εγγραφή χωρίς γραφικό περιβάλλον</a></li>
+					  <li><a href="cd-dl-burning-el.htm#download-aptosid">aptosid Mirrors Κατεβάσματος</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-el.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-el.htm#rootpw">Κωδικός υπερχρήστη (root) στο aptosid-Live ISO</a></li>
+				<li><a href="live-mode-el.htm#live-cd-installsoft">Εγκατάσταση προγραμμάτων σε περιβάλλον Live-ISO</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-el.htm">Το Τερματικό / Κονσόλα</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-el.htm#term-kon">Τερματικό / Κονσόλα &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-el.htm#term-kon">Τερματικό / Κονσόλα</a></li>
+					  <li><a href="term-konsole-el.htm#colours"> Coloured terminal prompts</a></li>
+					  <li><a href="term-konsole-el.htm#cli-help">Βοήθεια από την γραμμή εντολών</a></li>
+					  <li><a href="help-el.htm#init3-tools">Εργαλεία να ξέρετε για text mode (tty) - init 3</a></li>
+					  <li><a href="term-konsole-el.htm#term-cmds">Λίστα εντολών του Linux</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-el.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-el.htm">CheatCodes</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-el.htm#cheatcodes">Cheatcodes αποκλειστικά για το aptosid Live-ISO</a></li>
+				<li><a href="cheatcodes-el.htm#cheatcodes-linux">Cheatcodes γενικά για το Linux</a></li>
+				<li><a href="cheatcodes-vga-el.htm#vga">Κωδικοί VGA</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-el.htm">Partitioning the Hard Drive - Traditional, GPT and LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-el.htm#hd-ntfs3g">Γράφοντας σε NTFS κατάτμηση με το ntfs-3g</a></li>
+			<li><a href="part-lvm-el.htm#part-lvm">Partitioning to use LVM - Logical Volume Manager</a></li>
+			<li><a href="part-gparted-el.htm#partition">Δημιουργία κατατμήσεων με χρήση γραφικών (GUI) εργαλείων &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-el.htm#partition">Δημιουργία κατατμήσεων στον δίσκο χρησιμοποιώντας το  GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-el.htm#ntfs">Αλλαγή μεγέθους σε NTFS κατάτμηση χρησιμοποιώντας το GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-el.htm#partition">Δημιουργία κατατμήσεων με χρήση εργαλείων κονσόλας (CLI) &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-el.htm#partition">Δημιουργία κατατμήσεων στον σκληρό δίσκο χρησιμοποιώντας το cfdisk</a></li>
+					    <li><a href="part-cfdisk-el.htm#formating">Διαμόρφωση (format) μετά την δημιουργία κατάτμησης, με το cfdisk</a></li>
+					    <li><a href="part-gdisk-el.htm#gdisk-6">Formatting after partitioning with gdisk</a></li>
+					    <li><a href="part-gdisk-el.htm#gdisk-1">GPT Partitioning with gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-el.htm#part-example">Γενικά για κατατμήσεις &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-el.htm#part-example">Παραδείγματα για το μέγεθος των κατατμήσεων</a></li>
+					  <li><a href="part-uuid-el.htm#uuid">UUID, Rebuilding fstab and creating new mount points</a></li>
+					  <li><a href="part-cfdisk-el.htm#disknames">Ονομασία δίσκων εν συντομία</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-el.htm">Επιλογές εγκατάστασης - HD, USB, VM and Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-el.htm#Inst-prep">Προετοιμασία Εγκατάστασης &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-el.htm#Inst-prep">Προετοιμασία Εγκατάστασης</a></li>
+					  <li><a href="hd-install-el.htm#Installation">Εγκατάσταση στον σκληρό δίσκο</a></li>
+					  <li><a href="hd-install-el.htm#first-hd-boot">Πρώτη εκκίνηση</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-el.htm#fromiso">Εκκίνηση fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-el.htm#fromiso">Εκκίνηση fromiso - Γενικά</a></li>
+					  <li><a href="hd-install-opts-el.htm#grub2-fromiso">Εκκίνηση 'fromiso' με Grub 2</a></li>
+					  <li><a href="hd-install-opts-el.htm#fromiso-persist">fromiso και persist</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-el.htm#usb-hd">Εγκατάσταση σε USB δίσκους &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-el.htm#usb-hd">Eγκατάσταση σε USB σκληρό δίσκο - aptosid συγκεκριμένα - aptosid-σε-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-el.htm#raw-usb">Εγραφή του aptosid σε USB/SSD stick με Linux, MS Windows ή Mac OS X σύστημα</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-el.htm#install-crypt">Installing to encryted partitions - cryptroot</a></li>
+		  <li><a href="nbdboot-el.htm#nbd1">Εκκίνηση του aptosid μέσω δικτύου</a></li>
+		  <li><a href="hd-install-vmopts-el.htm#vm">Επιλογές εγκατάστασεις σε Εικονική Μηχανή (Virtual Machine)</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-el.htm">Κάρτες γραφικών, Οθόνες, Xorg &amp; Διάφοροι Οδηγοί</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-el.htm#mon-res">Ανάλυση Οθόνης (screen) και Οθόνες (monitor)  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-el.htm#mon-res">Ανάλυση Οθόνης (screen) και Οθόνες (monitor)</a></li>
+					  <li><a href="hw-dev-mon-el.htm#xrandr">Δύο Οθόνες (Dual Monitors) και xrandr</a></li>
+					  <li><a href="hw-dev-mon-el.htm#mon-binary">Δύο Οθόνες (με χρήση binaries)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-el.htm#foss-xorg">GPU drivers &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-el.htm#ati-3d">AMD/ATI 3D drivers</a></li>
+					  <li><a href="gpu-el.htm#intel">Intel 2D and 3D drivers</a></li>
+					  <li><a href="gpu-el.htm#nvidia">Nvidia 3D drivers</a></li>
+					  <li><a href="gpu-el.htm#foss-xorg">Open Source Xorg drivers</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-el.htm#fw-detect">Firmware detection - non-free </a></li>
+			  <li><a href="nf-firm-el.htm#non-free-firmware">Adding non-free to Sources List</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-el.htm">Διαχείριστες Παραθύρων</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-el.htm">KDE and XFCE Διαχείριστες Παραθύρων &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-el.htm#xfce-notes">Χρήσιμα extras για Xfce</a></li>
+					    <li><a href="wm-dm-el.htm#install-add">Χρήσιμα extras για KDE</a></li>
+					    <li><a href="wm-dm-el.htm#desk-freeze">Κόλλημα επιφάνειας εργασίας</a></li>
+					    <li><a href="wm-dm-el.htm#kde-login">Δεν μπορώ να εισέλθω στο KDE</a></li>
+					    <li><a href="wm-dm-el.htm#ch-th">Aλλάζοντας Θέματα (Themes)</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-el.htm#dm">Installing additional Display Managers</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-el.htm">Σύνδεση στο διαδίκτυο, WiFi, LAN και Δίκτυα</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-el.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-el.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-el.htm#serv-ftp">FTP Πελάτες</a></li>
+					    <li><a href="lamp-apache-el.htm#serv-sec">Πρωτόκολλα ασφαλείας</a></li>
+					    <li><a href="lamp-apache-el.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-el.htm#serv-mysql">MySQL Ρύθμιση</a></li>
+					    <li><a href="lamp-ppp-el.htm#serv-php">PHP με Apache</a></li>
+					    <li><a href="ntp-server-el.htm#ntp-server">Timeserver Ρύθμιση</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-el.htm#tor">Firewalls και Privacy &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-el.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-el.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-el.htm#firewalls">Firewalls</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-el.htm#ssh-x">SSH και Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-el.htm#setup">Samba-Server Ρύθμιση</a></li>
+						  <li><a href="samba-el.htm#configure">Ρύθμιση SAMBA (Windows)</a></li>
+						  <li><a href="ssh-el.htm#ssh-fs">SSH Απομακρυσμένη Προσάρτυση</a></li>
+						  <li><a href="ssh-el.htm#ssh-x">Παραθυρικές Eφαρμογές μέσω SSH</a></li>
+						  <li><a href="ssh-el.htm#ssh-f">GUI SSH με Konqueror</a></li>
+						  <li><a href="ssh-el.htm#ssh-w">SSH X-Forwarding από ένα Windows-PC</a></li>
+						  <li><a href="ssh-el.htm#ssh">SSH και Ασφάλεια</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-el.htm#netcardconfig">WIFI Συνδέσεις &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-el.htm#netcardconfig">Mπαίνοντας στο Δίκτυο - Ceni</a></li>
+						    <li><a href="inet-wpagui-el.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-el.htm#net-set1">WiFi - Ρύθμιση του WiFi Roaming</a></li>
+						    <li><a href="inet-wpa-el.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-el.htm#hotswitch">Εναλλαγή δικτύου μεταξύ WiFi και σύρματος</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-el.htm#netcardconfig">Wired (σύρμα) Συνδέσεις &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-el.htm#dial-mod">56k Modems</a></li>
+						    <li><a href="inet-ceni-el.htm#netcardconfig">Mπαίνοντας στο Δίκτυο - Ceni</a></li>
+					</ul>
+					</li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-el.htm">Διαχείριση Πακέτων και dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-el.htm#apt-cook">APT Cookbook and Sources list &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-el.htm#apt-cook">APT-Οδηγός και Λίστες Πηγών (Sources list)</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-install">Εγκαθιστώντας ένα νέο πακέτο</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-delete">Διαγράφοντας ένα πακέτο</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-downgrade">Υποβαθμίζοντας / Κρατώντας (Hold) ένα πακέτο</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-cache">Αναζήτηση πακέτων με apt-cache</a></li>
+					    <li><a href="sys-admin-apt-el.htm#gui-pacsea">GUI Package searching</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-el.htm#kern-upgrade">Αναβαθμίζοντας τον πυρήνα &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-el.htm#kern-remove">Διαγραφή ενός πυρήνα</a></li>
+					    <li><a href="sys-admin-kern-upg-el.htm#kern-upgrade">Αναβαθμίζοντας τον πυρήνα</a></li>
+					    <li><a href="sys-admin-kern-upg-el.htm#dmakms">Εγκατάσταση kernel modules δυναμικά με dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-el.htm#apt-upgrade">Aναβάθμιση σε ένα Εγκατεστημένο Σύστημα - dist-upgrade - Γενικά &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-el.htm#live-cd-upgrade">Αναβαθμίζοντας χρησιμοποιώντας το Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-el.htm#approx">dist-upgrade πολλαπλών PC σε ένα LAN</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-upgrade">Aναβάθμιση σε ένα Εγκατεστημένο Σύστημα - dist-upgrade - Γενικά</a></li>
+					    <li><a href="sys-admin-apt-el.htm#du-st">Aναβάθμιση σε ένα Εγκατεστημένο Σύστημα - dist-upgrade - Τα Βήματα</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-el.htm">Διαχείριση Συστήματος</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-el.htm#bois-prep">Αναβάθμιση του BIOS με το FreeDOS</a></li>
+		<li><a href="vir-rkits-el.htm#virus-rkits">Ανιχνευτές Iών και Rootkits</a></li>
+		<li><a href="hd-install-el.htm#adduser">Προσθήκη χρηστών και Passwords &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-el.htm#adduser">Προσθήκη ενός νέου χρήστη</a></li>
+					    <li><a href="sys-admin-gen-el.htm#pw-lost">Χαμένο password root, νέα passwords</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-el.htm#start-services">Υπηρεσίες και init runlevels &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-el.htm#start-services">Ενεργοποίηση / Απενεργοποίηση Υπηρεσιών (Services)</a></li>
+					    <li><a href="sys-admin-gen-el.htm#pkill">Killing a service or process</a></li>
+					    <li><a href="sys-admin-gen-el.htm#init">aptosid Επίπεδα εκτέλεσης (runlevels) - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-el.htm#rsync">Backup του συστήματος &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-el.htm#rdiff">Back-Up με rdiff</a></li>
+					    <li><a href="sys-admin-rsync-el.htm#rsync">Back-Up με rsync</a></li>
+					    <li><a href="home-el.htm#home-bu">Μεταφορά του /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-el.htm#fonts">CUPS, Γραμματοσειρές και Ήχος &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-el.htm#fonts">Γραμματοσειρές</a></li>
+					     <li><a href="sys-admin-gen-el.htm#cups">CUPS - Σύστημα Εκτύπωσης</a></li>
+					     <li><a href="sys-admin-gen-el.htm#sound">Mixers Ήχου</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-el.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-el.htm#chroot">Grub2 - Recovering Grub with chroot</a></li>
+					    <li><a href="sys-admin-grub2-el.htm#mbr-over-grub2">Grub2 - MBR Overwritten</a></li>
+					    <li><a href="sys-admin-grub2-el.htm#multi-os">Grub2 - Dual και Multibooting</a></li>
+					    <li><a href="sys-admin-grub2-el.htm#grub1-grub2">Grub2 -Αναβάθμιση α</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Sponsored by webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="../lib/sponsor-logo/webtropia-logo.png" title="aptosid is proudly hosted by webtropia.com" alt="aptosid is proudly hosted by webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div>
+<div id="main-page">
+	<div class="divider" id="rolling">
+		<h2 id="top-header">Ρέουσες (rolling) Σημειώσεις</h2>
+							<p><span class="highlight-3">Η σελίδα αυτή είναι μια περίληψη των Σημειώσεων Έκδοσης και θα ανανεώνεται μόνο μετά από κάθε έκδοση. Διαβάστε τις Σημειώσεις Έκδοσης στο <a href="http://aptosid.com">aptosid.com</a> ή στο Live ISO</span> ή εγκ</p>
+
+		<h2>Release notes for aptosid 2011-02 Ἡμέρα - Imera</h2>
+				<p>
+					New features in aptosid 2011-02 &quot;Ἡμέρα&quot; are in particular kernel 2.6.39 and numerous integration and stabilisation fixes.
+					Kernel 2.6.39 doesn't only improve and stabilise hardware support for newer devices, it also improves latency and general system performance.
+					A major improvement for low latency uses is the completed Big Kernel Lock (BKL) removal in combination with cgroup based process auto-grouping by the scheduler and the implementation of forced threaded interrupt handlers.
+					Better locking granularity for userspace applications through RCU-based name lookups has also led to improved VFS performance and latencies.
+				</p>
+
+				<p>
+					In the graphics arena AMD Fusion&ndash; and Radeon HD62xx/ HD63xx/ HD67xx graphics are now supported and an accelerated KMS based framebuffer driver has become available for KVM-cirrus emulated graphics.
+					Driver support has also been improved for Intel Sandy Bridge graphics and enhanced powersaving is now possible through dynamic render P-state support.
+					Starting with this release, nouveau provides a KMS based driver for nVidia graphics cards with basic acceleration features up to the NVC0 chipset generation.
+				</p>
+
+				<p>
+					Wlan support has been consolidated by the introduction of rtl8192ce and rtl8192cu drivers for RealTek 802.11n chipsets RTL8188CE/ RTL8192CE (PCIe) and RTL8188CU/ RTL8192CU (USB) wlan cards.
+					Likewise rt2800pci and rt2800usb now support the newer RaLink rt33xx, rt35xx and rt53xx chipset generations, with Intel supporting the 2xxx series and the 6000G2A/ 6000G2B Series of wlan cards in iwlagn.
+					Experimental support has become available for SSB based Broadcom 802.11n chipsets (BCM4321, BCM4322), these require new firmware images not provided by b43-fwcutter, yet.
+				</p>
+
+				<p>
+					Starting with KDE 4.6 and XFCE 4.8, HAL has now become obsolete and got replaced by event driven udev based alternatice (udisks, upower and advances in udev itself), which allows to run common desktop setups without the HAL d&aelig;mon.
+					Another major improvement in Ἡμέρα is the implementation of initial support for GPT and UEFI booting, which allows to access harddisks exceeding 2 TiB or to use them for booting on news systems using UEFI instead of the traditional PC-BIOS.
+				</p>
+
+				<p>
+					As usual, a large number of individual functionality enhancements and bugfixes have been applied to the full package line up and aptosid's own packages, in order to improve the general distribution infrastructure.
+					The past months have allowed to take special care of the small aspects in many packages, to improve general policy compliance and functionality.
+				</p>
+
+				<p>
+					We'd like to thank our new sponsor <a href="http://www.webtropia.com/?o_ref=aptosid">Webtropia</a> (part of myLoc managed IT AG), who provides 3 dedicated servers for our development&ndash; and hosting infrastructure and are looking forward to a lasting and successful co-operation with this fine hosting business.
+					With the new servers from <a href="http://www.myloc.de/">myLoc managed IT AG</a> we are finally able to have proper technical solutions for our needs, e.g. fully separated hardware for fast kernel- and ISO-building, and an extra server for running all our other sites in virtual machines (lab.aptosid.com, manual.aptosid.com, etc.).
+					All our servers are running our own server version of aptosid.
+				</p>
+
+				<p>
+					Our special thanks go to the aptosid art- and manual teams and especially <a href="http://www.webtropia.com/?o_ref=aptosid">webtropia.com</a> and all <a href="mirrors-en.html">mirror</a> hosters for their efforts regarding aptosid.
+				</p>
+			</div>
+	   <div class="divider" id="whats-new">
+		<h2>Now to the interesting topics, like what's on the menu for now:</h2>
+				<ul>
+					<li>Debian sid, as of 2011-07-13.</li>
+					<li>kernel 2.6.39.3 (smp, hard preemption).</li>
+					<li>xserver-xorg-core 1.10.2.902.</li>
+					<li>enable KMS support for ATi, Intel and nVidia based graphics chipsets.</li>
+					<li>DRI (3d) support for ATi Radeon chipsets up to r7xx (refer to <a href="firmware-en.html">non-free sources and Drivers</a>).</li>
+					<li>KDE 4.6.4 (en + de).</li>
+					<li>Iceweasel 5.0</li>
+					<li>new, SVG based, art theme created by the aptosid art team.</li>
+
+					<li><a href="file:///usr/share/aptosid-manual/index.html">offline manual</a> for <a href="file:///usr/share/aptosid-manual/en/welcome-en.htm">en</a> + <a href="file:///usr/share/aptosid-manual/de/welcome-de.htm">de</a> directly on the disc, online manuals for more languages online at <a href="http://manual.aptosid.com/">http://manual.aptosid.com/</a> and available via apt; a big thank you goes to the documentation and translation teams!<br />Please note that the offline manual is only available on the running live CD or the installed system.</li>
+
+					<li>many changes for the manual.</li>
+					<li>ath5k support for 54/ "108" MBit/s Atheros wlan cards (AR2425, AR5210, AR5211, AR5212, AR5213 and AR5414).</li>
+					<li>ath9k support for 802.11n Atheros wlan cards (AR5418+AR5133, AR5416+AR5133, AR5416+AR2133, AR9160, AR9280, AR9281 and AR9285).</li>
+					<li>ath9k_htc support for 802.11n Atheros USB wlan cards (AR7010/ AR9271).</li>
+					<li>carl9170 support for 802.11n Atheros USB wlan cards (AR9170 &quot;otus&quot;), now supporting HT/ aggregation and AP mode.</li>
+					<li>
+
+						b43/ b43legacy support for Broadcom wlan cards.<br />
+						<a href="http://www.ing.unibs.it/openfwwf/">OpenFWWF 5.2</a> opensource firmware for the following Broadcom AirForce 802.11b/g wireless cards:
+						<ul>
+							<li>BCM4306</li>
+							<li>BCM4311 revision 1</li>
+							<li>BCM4318</li>
+
+							<li>BCM4320</li>
+						</ul>
+						experimental support for LP-PHY, non-free firmware images (firmware-b43-lpphy-installer) required.
+					</li>
+
+					<li>iwl3945 support (Intel Pro Wireless 3945 chipsets).</li>
+					<li>iwlagn support for IPW 4965 and the IEEE 802.11 a/b/g/n part of the Intel Wireless WiFi Link 1000/ 5xxxAGN/ 6000/ 6050 family.</li>
+					<li>iwmc3200wifi support for Intel Wireless Multicomm 802.11.</li>
+
+					<li>rt2x00 support for RaLink rt2400, rt2500, rt2570, rt61 and rt73 802.11b/g cards.</li>
+					<li>support for RaLink rt2770, rt2870 and rt3070 802.11b/g/n USB cards through rt2x00.</li>
+					<li>support for RealTek RTL8180L and RTL8185 PCI/ cardbus wlan cards.</li>
+					<li>support for RealTek RTL8187 and RTL8187B USB wlan cards.</li>
+
+					<li>memtest86+.</li>
+					<li>OpenJDK 6 as part of the kde-full variant.</li>
+					<li>employ &quot;insserv&quot; to reorder the bootsequence based on LSB headers.</li>
+					<li>support kvm (Kernel-based Virtual Machine) for kde-full; kvm depends on hardware virtualisation support (AMD pacifica virtualisation extensions &quot;svm&quot; or Intel IVT (vanderpool) virtualisation extensions &quot;vmx&quot;)</li>
+
+					<li>access point support for many mac80211 based wlan cards through nl80211 and hostapd (optional).</li>
+					<li>client support for network booting over PXE/ NBD.</li>
+					<li>add Danish to supported languages and liveapt.</li>
+					<li>GPT partitioning schemes are now supported.</li>
+					<li>support for UEFI booting.</li>
+					<li>HAL removal.</li>
+					<li>/run/ transition, replacing /var/run/ and /var/lock/</li>
+					<li>/tmp/ is now mounted as tmpfs using up to 20% of the physical RAM size in Debian, this can be changed through RAMTMP in /etc/default/rcS.</li>
+				</ul>
+			</div>
+			<div class="divider" id="faq">
+				<h2>Frequently asked questions</h2>
+
+				<h3>Installation</h3>
+				<p>
+
+					It is recommended to set keymaps, locales and timezone before booting the live system to be installed, by selecting them from the boot menu [F2], [F3].
+					This way, locale settings propagate to all required places for the installed system and don't require cumbersome changes at several places.
+				</p>
+
+				<h3>Kernel based Mode Setting (KMS) and intel/ radeon graphics</h3>
+				<p>
+					KMS support is required by xserver-xorg-video-intel, which means kernel parameters like &quot;i915.modeset=0&quot; or &quot;vga=791&quot; are no longer valid and actively break starting X on intel graphics cards.
+					Given that i915/ xserver-xorg-video-intel doesn't require any kind of firmware, there should no longer be KMS related bugs in relation to intel graphics.
+				</p>
+
+				<p>
+					For KMS to function in combination with ATi/ AMD radeon graphics, firmware images (firmware-linux-nonfree, see <a href="gpu-en.htm#ati-3d">AMD/ATI 3D drivers</a>) are required, which can't be shipped on aptosid live media, while X.org should transparently fall back to vesa on problematic cards, special attention might be needed in rare cases.
+					If X doesn't manage to start on ATi/ AMD radeon graphics cards, it might help to supply &quot;radeon.modeset=0&quot; as boot option for the live CD and to install the required firmware package &quot;<a href="gpu-en.htm#ati-3d">AMD/ATI 3D drivers</a>&quot; on the live system, before installing to the harddisk.
+					Once firmware-linux-nonfree is installed, kernel parameters like &quot;radeon.modeset=0&quot; or &quot;vga=791&quot; should not be used anymore, as they might interfere with KMS operations, which are needed for radeon to work properly.
+				</p>
+
+				<p>
+					Nouveau doesn't require any kind of firmware and supports KMS natively, framebuffer kernel parameters like &quot;vga=791&quot; are no longer valid and break starting X on nVidia graphics cards.
+				</p>
+
+				<h3>grub2</h3>
+				<p>
+					While grub2 offers increased flexibility for installations, like supporting new filesystems (ext4) or advanced installation options like LVM2 and improved detection capabilities for other distributions and operating systems, right now it is limited to a textmode menu.<br />
+					A new theming effort is currently under development and will be available in the future.
+					Even though support for plain wallpapers would be already supported by grub2, it is still fragile and prolongs the system boot.<br />
+					Internally the configuration system for grub2 uses scripts snippets under /etc/grub.d/ to create its configuration file &quot;grub.cfg&quot; in a way that allows many self updating features, such as automating fromiso support with the help of &quot;grub2-fll-fromiso&quot; (optional).
+				</p>
+
+		<h3>isohybrid</h3>
+				<p>
+					With isolinux supporting gfxboot, it is possible to use isohybrid, which allows writing an ISO directly to USB storage or sd/ sdhc/ mmc memory sticks to make these bootable.<br />
+					isohybrid adds an MBR to the ISO and sets up a partition table with one active entry, the partition containing the ISO.<br />
+					This allows writing aptosid ISOs directly to USB storage devices of sdhc memory cards in addition to the well known possibility of using &quot;install-aptosid-to-usb&quot; (install-usb-gui).<br />
+					This option is particularly useful if there is no existing aptosid installation available and if an installation medium needs to be created from another distribution or operating system.<br />
+					It is important to note that this method overwrites the whole USB medium and restricts the available storage to the size of the aptosid ISO; install-usb-gui is not subject to these limitations and therefore the recommended option in case an existing aptosid system is available.<br />
+					Further partitions can be added to allow access to the unused part of the storage device.
+				</p>
+<pre>
+$cat /path/to/aptosid-*.iso &gt; /dev/USB_raw_device_node
+</pre>
+
+				<p>
+					Further information about the aptosid install is available from the <a href="http://manual.aptosid.com/">aptosid manual</a> at <a href="http://manual.aptosid.com/en/hd-install-en.htm">Installation options</a>.
+				</p>
+
+		<h3>Wireless regulatory domain settings</h3>
+				<p>
+
+					The regulatory domain framework for cfg80211 based wlan cards requires crda to allow access to wireless channels above ch11 (2.4 GHz or their 5 GHz equivalents), without crda only the "world domain" (channel 1-11) is available.
+				</p>
+<pre>
+ apt-get update apt-get install crda
+</pre>
+		<h3>Network booting aptosid</h3>
+				<p>
+					Network booting aptosid over PXE (Preboot Execution Environment) and NBD (Network Block Device) is supported, the required settings can be configured from within the boot menu [F4].
+					Instructions about how to set up an example PXE+NBD boot server can be obtained at <a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=9">aptosid netboot introduction</a> and in the manual; <a href="nbdboot-en.htm#nbd1">Booting aptosid over a network</a>.
+				</p>
+
+				<h3>UEFI booting</h3>
+				<p>
+					Preliminary support for booting with UEFI has been added to the amd64 editions for aptosid 2011-02 &quot;Ἡμέρα&quot;.
+					While the installer GUI has not been finalised yet, the bootloader will be an EFI program installed to /efi/aptosid within your &quot;EFI system partition&quot; and mounted below /boot/efi/ on your installed system, provided the following conditions are met:
+				</p>
+
+				<ul>
+					<li>x86-64/ EM64T system (amd64).</li>
+					<li>booted using UEFI, this is apparent from the plain white/blue grub2 menu, instead of the usual graphical boot menu provided by isolinux for BIOS booting, on the live medium.</li>
+					<li>a vfat formatted EFI system partition on a GPT disk (type EF00) exists on the target system.</li>
+					<li>the install target is not a USB disk.</li>
+				</ul>
+
+				<p>
+					At the moment aptosid only offers UEFI booting for its 64 bit edition (amd64), 32 bit UEFI (such as older Apple systems) is currently not supported.
+					Multiboot with other 64 bit operating systems should be possible, but could not be tested yet.
+				</p>
+
+				<h3>UEFI bootable removable devices</h3>
+				<p>
+					In order to create a UEFI bootable device, such as a USB stick, the contents of the aptosid ISO can be extracted to a vfat formatted partition and the partition marked as bootable.
+					Optionally this removable medium can also be made compatible with PC-BIOS booting by installing a traditional bootsector in addition to the EFI bootloader (assuming /dev/sdz1 to be the target partition on the USB stick).
+				</p>
+
+				<pre>syslinux -i -d /boot/isolinux /dev/sdz1
+install-mbr /dev/sdz</pre>
+
+				<h3>Localisation</h3>
+				<p>
+					A special feature of kde-full releases is the ability to select other languages than German or US English from the grub menu (F4), which automatically installs localisations for the desktop and many applications while booting.
+					This ensures they are also present after installing aptosid, while only installing the required languages for the given system.
+					The amount of memory required for this feature depends on the language and aptosid may refuse to install the given language packs automatically with insufficient RAM and the boot sequence  will be continued in english language but with the desired locales-settings (currency, date/ time format, keyboard charsets).
+					1 GB memory or more is supposed to be safe for all supported languages, which are:
+				</p>
+
+				<ul>
+					<li>Czech</li>
+					<li>Danish</li>
+					<li>Dutch</li>
+					<li>English (GB, AU)</li>
+					<li>Greek</li>
+					<li>French</li>
+					<li>Italian</li>
+					<li>Japanese</li>
+					<li>Polish</li>
+					<li>Portuguese (BR, PT)</li>
+					<li>Romanian</li>
+					<li>Russian</li>
+					<li>Spanish</li>
+				</ul>
+
+				<p>
+
+					The language selection depends on the availability of aptosid-manual translations, get involved to add your language.
+					Levels of up-to-date translation completeness of the following languages has dropped below the quorum for inclusion at this moment:
+				</p>
+
+				<ul>
+					<li>Bulgarian</li>
+					<li>Croatian</li>
+					<li>Danish</li>
+					<li>Hungarian</li>
+				</ul>
+
+				<p>
+					Additional help is urgently needed for these languages to bring the translations up to date for the language concerned.
+				</p>
+
+
+	</div>
+	<div class="divider" id="upgrade">
+			<h2>Hints for Upgraders:</h2>
+				<p>
+					aptosid tries hard to provide seamless upgrade path for debian and aptosid' own packages, nevertheless a few things remain that could be improved with manual interaction.
+				</p>
+
+			<h3>nouveau</h3>
+
+				<h3>nouveau</h3>
+				<p>
+					xserver-xorg-video-nv has been removed from Debian, which means xserver-xorg-video-nouveau now takes its place.
+					Therefore we recommend users of nvidia graphics cards to purge xserver-xorg-video-nv, and install xserver-xorg-video-nouveau; configuration changes should not be required.
+					On selected chipset generations, basic video and 3d acceleration is available through xserver-xorg-video-nouveau and libgl1-mesa-dri-experimental.
+				</p>
+<pre>
+apt-get install xserver-xorg-video-nouveau libgl1-mesa-dri-experimental
+</pre>
+
+				<h3>KDE 4.6 and XFCE 4.8</h3>
+				<p>
+					Upgrading to KDE 4.6 or XFCE 4.8 might not pull all required packages in certain corner cases, please make sure to install them manually.
+					Without these packages, powermanagement, mounting of removable media and applying system wide configuration changes in systemsettings only work partially.
+				</p>
+<pre>
+apt-get install polkit-kde-1 udisks upower
+</pre>
+
+				<h3>hal</h3>
+				<p>
+					HAL is no longer required by KDE 4.6.x or XFCE 4.8 and can get removed safely.
+					Take care that purging the packages below doesn't remove any packages you want to keep.
+				</p>
+<pre>
+apt-get purge hal hal-info libhal-storage1
+</pre>
+
+			<h3>Obsolete packages</h3>
+				<p>
+					As part of the continuing development of aptosid, a number of packages have been replaced by better alternatives or become redundant.
+				</p>
+
+				<ul>
+					<li>
+						kaboom<br />
+						Transitional helper for KDE3 &rarr; KDE4 migrations of user configuration, which can be removed after the successful migration.
+					</li>
+
+					<li>
+						modconf<br />
+						This package has been removed from Debian after &quot;squeeze&quot; and doesn't serve any real purpose these days.
+					</li>
+				</ul>
+
+				<p>
+					Transitional packages and obsolete libraries can often be identified by &quot;deborphan&quot;.
+					While this tool is very convenient for ongoing system cleanup, its results should always be checked before using it as input for removals.
+				</p>
+
+<pre>
+$ deborphan
+</pre>
+
+							<p>The following command is able to find packages not available from any active apt repository and may hint at obsolete packages, be careful about manually installed packages though. apt-show-versions is a separate package and isn't necessarily preinstalled. </p>
+
+<pre>
+$ apt-show-versions | awk '/No available version in archive/{print $1}'
+</pre>
+			</div>
+			<div class="divider" id="howto-involve">
+				<h2>How to get involved</h2>
+				<p>
+					Getting involved in aptosid is easy, just join us at our <a href="http://aptosid.com/index.php?name=PNphpBB2">Forum</a> or even better on IRC (irc.oftc.net, port 6667, channel <a href="irc://irc.oftc.net:6667/#aptosid">#aptosid</a>) and discuss your patches/ proposals or additions.
+				</p>
+
+				<p>
+					We will gladly discuss any dfsg-free patches and contributions, especially regarding alternative window managers (GNOME, LXDE), general cleanup tasks or translations/ localisations.
+				</p>
+			</div>
+	
+			<div id="rev">Τελευταία αναθεώρηση περιεχομένου 14/07/2011 0840 UTC </div>
+
+</div>
+</body>
+</html>

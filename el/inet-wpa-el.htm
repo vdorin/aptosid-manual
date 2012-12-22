@@ -1,0 +1,1013 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>aptosid Manuals - Internet/Network WIFI- WPA-Supplicant</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+ <!-- Last translation revision edhunter 18/09/2010 1245 UTC-->
+<div id="menu"> <!-- menu starts here el lang maintained by  -->
+<!--aptosid Operating System Manual menu-version-02.13.2011.09.09 -->
+<!-- menu last updated by bluewater 2011.09.09 0935 hrs UTC -->
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="To aptosid.com forums and wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-el.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" />Αναζήτηση Online - Offline </a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Eπιλέξτε άλλη γλώσσα - Choose another language" alt="lang-switch" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-el.htm">Εγχειρίδιο ΛΣ aptosid</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-el.htm#welcome-gen">Εγχειρίδιο ΛΣ aptosid &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-el.htm#cred-team">Συντελεστές</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-el.htm#how-to">Πως να χρησιμοποιήσετε αυτό το εγχειρίδιο &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-el.htm#how-to">Πως να χρησιμοποιήσετε αυτό το εγχειρίδιο</a></li>
+					  <li><a href="welcome-el.htm#table-contents">Πίνακας περιεχομένων</a></li>
+					</ul>
+					</li>
+		<li><a href="help-el.htm#help-gen">Βοήθεια &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-el.htm#help-gen">Που να βρείτε βοήθεια</a></li>
+					  <li><a href="help-el.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-el.htm#welcome-quick">aptosid Οδηγός Γρήγορης Αναφοράς (Quick Start Guide)</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-el.htm">Περιεχόμενα ISO, Εκδόσεις, Κατέβασμα και Εγγραφή</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-el.htm#cd-content">Περιεχόμενα ISO και απαιτήσεις συστήματος &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-el.htm#rolling">Σημειώσεις Έκδοσης</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-el.htm#download-aptosid">aptosid Mirrors, Κατέβασμα και Εγγραφή &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-el.htm#md5">md5 Checksum</a></li>
+					  <li><a href="cd-dl-burning-el.htm#burn-nero">Γράφοντας το ISO στα Windows</a></li>
+					  <li><a href="cd-dl-burning-el.htm#burn-linux">Γράφοντας το ISO στο Linux</a></li>
+					  <li><a href="cd-no-gui-burn-el.htm#burning-no-gui">burniso script</a></li>
+					  <li><a href="cd-no-gui-burn-el.htm#burn-no-gui-gen">Εγγραφή χωρίς γραφικό περιβάλλον</a></li>
+					  <li><a href="cd-dl-burning-el.htm#download-aptosid">aptosid Mirrors Κατεβάσματος</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-el.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-el.htm#rootpw">Κωδικός υπερχρήστη (root) στο aptosid-Live ISO</a></li>
+				<li><a href="live-mode-el.htm#live-cd-installsoft">Εγκατάσταση προγραμμάτων σε περιβάλλον Live-ISO</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-el.htm">Το Τερματικό / Κονσόλα</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-el.htm#term-kon">Τερματικό / Κονσόλα &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-el.htm#term-kon">Τερματικό / Κονσόλα</a></li>
+					  <li><a href="term-konsole-el.htm#colours"> Coloured terminal prompts</a></li>
+					  <li><a href="term-konsole-el.htm#cli-help">Βοήθεια από την γραμμή εντολών</a></li>
+					  <li><a href="help-el.htm#init3-tools">Εργαλεία να ξέρετε για text mode (tty) - init 3</a></li>
+					  <li><a href="term-konsole-el.htm#term-cmds">Λίστα εντολών του Linux</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-el.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-el.htm">CheatCodes</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-el.htm#cheatcodes">Cheatcodes αποκλειστικά για το aptosid Live-ISO</a></li>
+				<li><a href="cheatcodes-el.htm#cheatcodes-linux">Cheatcodes γενικά για το Linux</a></li>
+				<li><a href="cheatcodes-vga-el.htm#vga">Κωδικοί VGA</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-el.htm">Partitioning the Hard Drive - Traditional, GPT and LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-el.htm#hd-ntfs3g">Γράφοντας σε NTFS κατάτμηση με το ntfs-3g</a></li>
+			<li><a href="part-lvm-el.htm#part-lvm">Partitioning to use LVM - Logical Volume Manager</a></li>
+			<li><a href="part-gparted-el.htm#partition">Δημιουργία κατατμήσεων με χρήση γραφικών (GUI) εργαλείων &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-el.htm#partition">Δημιουργία κατατμήσεων στον δίσκο χρησιμοποιώντας το  GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-el.htm#ntfs">Αλλαγή μεγέθους σε NTFS κατάτμηση χρησιμοποιώντας το GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-el.htm#partition">Δημιουργία κατατμήσεων με χρήση εργαλείων κονσόλας (CLI) &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-el.htm#partition">Δημιουργία κατατμήσεων στον σκληρό δίσκο χρησιμοποιώντας το cfdisk</a></li>
+					    <li><a href="part-cfdisk-el.htm#formating">Διαμόρφωση (format) μετά την δημιουργία κατάτμησης, με το cfdisk</a></li>
+					    <li><a href="part-gdisk-el.htm#gdisk-6">Formatting after partitioning with gdisk</a></li>
+					    <li><a href="part-gdisk-el.htm#gdisk-1">GPT Partitioning with gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-el.htm#part-example">Γενικά για κατατμήσεις &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-el.htm#part-example">Παραδείγματα για το μέγεθος των κατατμήσεων</a></li>
+					  <li><a href="part-uuid-el.htm#uuid">UUID, Rebuilding fstab and creating new mount points</a></li>
+					  <li><a href="part-cfdisk-el.htm#disknames">Ονομασία δίσκων εν συντομία</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-el.htm">Επιλογές εγκατάστασης - HD, USB, VM and Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-el.htm#Inst-prep">Προετοιμασία Εγκατάστασης &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-el.htm#Inst-prep">Προετοιμασία Εγκατάστασης</a></li>
+					  <li><a href="hd-install-el.htm#Installation">Εγκατάσταση στον σκληρό δίσκο</a></li>
+					  <li><a href="hd-install-el.htm#first-hd-boot">Πρώτη εκκίνηση</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-el.htm#fromiso">Εκκίνηση fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-el.htm#fromiso">Εκκίνηση fromiso - Γενικά</a></li>
+					  <li><a href="hd-install-opts-el.htm#grub2-fromiso">Εκκίνηση 'fromiso' με Grub 2</a></li>
+					  <li><a href="hd-install-opts-el.htm#fromiso-persist">fromiso και persist</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-el.htm#usb-hd">Εγκατάσταση σε USB δίσκους &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-el.htm#usb-hd">Eγκατάσταση σε USB σκληρό δίσκο - aptosid συγκεκριμένα - aptosid-σε-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-el.htm#raw-usb">Εγραφή του aptosid σε USB/SSD stick με Linux, MS Windows ή Mac OS X σύστημα</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-el.htm#install-crypt">Installing to encryted partitions - cryptroot</a></li>
+		  <li><a href="nbdboot-el.htm#nbd1">Εκκίνηση του aptosid μέσω δικτύου</a></li>
+		  <li><a href="hd-install-vmopts-el.htm#vm">Επιλογές εγκατάστασεις σε Εικονική Μηχανή (Virtual Machine)</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-el.htm">Κάρτες γραφικών, Οθόνες, Xorg &amp; Διάφοροι Οδηγοί</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-el.htm#mon-res">Ανάλυση Οθόνης (screen) και Οθόνες (monitor)  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-el.htm#mon-res">Ανάλυση Οθόνης (screen) και Οθόνες (monitor)</a></li>
+					  <li><a href="hw-dev-mon-el.htm#xrandr">Δύο Οθόνες (Dual Monitors) και xrandr</a></li>
+					  <li><a href="hw-dev-mon-el.htm#mon-binary">Δύο Οθόνες (με χρήση binaries)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-el.htm#foss-xorg">GPU drivers &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-el.htm#ati-3d">AMD/ATI 3D drivers</a></li>
+					  <li><a href="gpu-el.htm#intel">Intel 2D and 3D drivers</a></li>
+					  <li><a href="gpu-el.htm#nvidia">Nvidia 3D drivers</a></li>
+					  <li><a href="gpu-el.htm#foss-xorg">Open Source Xorg drivers</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-el.htm#fw-detect">Firmware detection - non-free </a></li>
+			  <li><a href="nf-firm-el.htm#non-free-firmware">Adding non-free to Sources List</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-el.htm">Διαχείριστες Παραθύρων</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-el.htm">KDE and XFCE Διαχείριστες Παραθύρων &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-el.htm#xfce-notes">Χρήσιμα extras για Xfce</a></li>
+					    <li><a href="wm-dm-el.htm#install-add">Χρήσιμα extras για KDE</a></li>
+					    <li><a href="wm-dm-el.htm#desk-freeze">Κόλλημα επιφάνειας εργασίας</a></li>
+					    <li><a href="wm-dm-el.htm#kde-login">Δεν μπορώ να εισέλθω στο KDE</a></li>
+					    <li><a href="wm-dm-el.htm#ch-th">Aλλάζοντας Θέματα (Themes)</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-el.htm#dm">Installing additional Display Managers</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-el.htm">Σύνδεση στο διαδίκτυο, WiFi, LAN και Δίκτυα</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-el.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-el.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-el.htm#serv-ftp">FTP Πελάτες</a></li>
+					    <li><a href="lamp-apache-el.htm#serv-sec">Πρωτόκολλα ασφαλείας</a></li>
+					    <li><a href="lamp-apache-el.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-el.htm#serv-mysql">MySQL Ρύθμιση</a></li>
+					    <li><a href="lamp-ppp-el.htm#serv-php">PHP με Apache</a></li>
+					    <li><a href="ntp-server-el.htm#ntp-server">Timeserver Ρύθμιση</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-el.htm#tor">Firewalls και Privacy &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-el.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-el.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-el.htm#firewalls">Firewalls</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-el.htm#ssh-x">SSH και Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-el.htm#setup">Samba-Server Ρύθμιση</a></li>
+						  <li><a href="samba-el.htm#configure">Ρύθμιση SAMBA (Windows)</a></li>
+						  <li><a href="ssh-el.htm#ssh-fs">SSH Απομακρυσμένη Προσάρτυση</a></li>
+						  <li><a href="ssh-el.htm#ssh-x">Παραθυρικές Eφαρμογές μέσω SSH</a></li>
+						  <li><a href="ssh-el.htm#ssh-f">GUI SSH με Konqueror</a></li>
+						  <li><a href="ssh-el.htm#ssh-w">SSH X-Forwarding από ένα Windows-PC</a></li>
+						  <li><a href="ssh-el.htm#ssh">SSH και Ασφάλεια</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-el.htm#netcardconfig">WIFI Συνδέσεις &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-el.htm#netcardconfig">Mπαίνοντας στο Δίκτυο - Ceni</a></li>
+						    <li><a href="inet-wpagui-el.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-el.htm#net-set1">WiFi - Ρύθμιση του WiFi Roaming</a></li>
+						    <li><a href="inet-wpa-el.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-el.htm#hotswitch">Εναλλαγή δικτύου μεταξύ WiFi και σύρματος</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-el.htm#netcardconfig">Wired (σύρμα) Συνδέσεις &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-el.htm#dial-mod">56k Modems</a></li>
+						    <li><a href="inet-ceni-el.htm#netcardconfig">Mπαίνοντας στο Δίκτυο - Ceni</a></li>
+					</ul>
+					</li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-el.htm">Διαχείριση Πακέτων και dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-el.htm#apt-cook">APT Cookbook and Sources list &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-el.htm#apt-cook">APT-Οδηγός και Λίστες Πηγών (Sources list)</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-install">Εγκαθιστώντας ένα νέο πακέτο</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-delete">Διαγράφοντας ένα πακέτο</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-downgrade">Υποβαθμίζοντας / Κρατώντας (Hold) ένα πακέτο</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-cache">Αναζήτηση πακέτων με apt-cache</a></li>
+					    <li><a href="sys-admin-apt-el.htm#gui-pacsea">GUI Package searching</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-el.htm#kern-upgrade">Αναβαθμίζοντας τον πυρήνα &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-el.htm#kern-remove">Διαγραφή ενός πυρήνα</a></li>
+					    <li><a href="sys-admin-kern-upg-el.htm#kern-upgrade">Αναβαθμίζοντας τον πυρήνα</a></li>
+					    <li><a href="sys-admin-kern-upg-el.htm#dmakms">Εγκατάσταση kernel modules δυναμικά με dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-el.htm#apt-upgrade">Aναβάθμιση σε ένα Εγκατεστημένο Σύστημα - dist-upgrade - Γενικά &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-el.htm#live-cd-upgrade">Αναβαθμίζοντας χρησιμοποιώντας το Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-el.htm#approx">dist-upgrade πολλαπλών PC σε ένα LAN</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-upgrade">Aναβάθμιση σε ένα Εγκατεστημένο Σύστημα - dist-upgrade - Γενικά</a></li>
+					    <li><a href="sys-admin-apt-el.htm#du-st">Aναβάθμιση σε ένα Εγκατεστημένο Σύστημα - dist-upgrade - Τα Βήματα</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-el.htm">Διαχείριση Συστήματος</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-el.htm#bois-prep">Αναβάθμιση του BIOS με το FreeDOS</a></li>
+		<li><a href="vir-rkits-el.htm#virus-rkits">Ανιχνευτές Iών και Rootkits</a></li>
+		<li><a href="hd-install-el.htm#adduser">Προσθήκη χρηστών και Passwords &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-el.htm#adduser">Προσθήκη ενός νέου χρήστη</a></li>
+					    <li><a href="sys-admin-gen-el.htm#pw-lost">Χαμένο password root, νέα passwords</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-el.htm#start-services">Υπηρεσίες και init runlevels &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-el.htm#start-services">Ενεργοποίηση / Απενεργοποίηση Υπηρεσιών (Services)</a></li>
+					    <li><a href="sys-admin-gen-el.htm#pkill">Killing a service or process</a></li>
+					    <li><a href="sys-admin-gen-el.htm#init">aptosid Επίπεδα εκτέλεσης (runlevels) - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-el.htm#rsync">Backup του συστήματος &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-el.htm#rdiff">Back-Up με rdiff</a></li>
+					    <li><a href="sys-admin-rsync-el.htm#rsync">Back-Up με rsync</a></li>
+					    <li><a href="home-el.htm#home-bu">Μεταφορά του /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-el.htm#fonts">CUPS, Γραμματοσειρές και Ήχος &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-el.htm#fonts">Γραμματοσειρές</a></li>
+					     <li><a href="sys-admin-gen-el.htm#cups">CUPS - Σύστημα Εκτύπωσης</a></li>
+					     <li><a href="sys-admin-gen-el.htm#sound">Mixers Ήχου</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-el.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-el.htm#chroot">Grub2 - Recovering Grub with chroot</a></li>
+					    <li><a href="sys-admin-grub2-el.htm#mbr-over-grub2">Grub2 - MBR Overwritten</a></li>
+					    <li><a href="sys-admin-grub2-el.htm#multi-os">Grub2 - Dual και Multibooting</a></li>
+					    <li><a href="sys-admin-grub2-el.htm#grub1-grub2">Grub2 -Αναβάθμιση α</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Sponsored by webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="../lib/sponsor-logo/webtropia-logo.png" title="aptosid is proudly hosted by webtropia.com" alt="aptosid is proudly hosted by webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div>
+<div id="main-page">
+	<div class="divider" id="wpa-basic">
+		<!--h2 id="top-header" >Basic Guide To Get Wireless Working - WiFi</h2-->
+		<h2 id="top-header" >Βασικός Οδηγός για το πως να Κάνετε το Ασύρματο (Wireless - WiFi) σας να δουλέψει</h2>
+
+							<!--p class="highlight-3">Due to the complexity of law, aptosid will only provide dfsg-free software, <a href="nf-firm-el.htm#non-free-firmware">please check this link for additional information on non-free sources for firmware</a></p-->
+							<p class="highlight-3">Λόγω της περιπλοκότητας του νόμου, το aptosid θα παρέχει μόνο dfsg-ελεύθερο λογισμικό, <a href="nf-firm-el.htm#non-free-firmware">παρακαλώ κοιτάξτε αυτή τη διεύθυνση για επιπλέον πληροφορίες για πηγές μη ελεύθερου firmware</a></p>
+
+							<!--p>To get wlan WiFi working, you need a wired connection for just a few minutes to download the appropriate firmware.</p-->
+							<p>Για να κάνετε το wlan WiFi (ασύρματο) να δουλέψει, χρειάζεστε μια ενσύρματη σύνδεση για μερικά λεπτά για να κατεβάσετε το κατάλληλο firmware.</p>
+
+							<!--p>If a wired connection is not possible you will have to put the firmware on a removable device (pendrive e.g.) and install it as root from there using:</p-->
+							<p>Εάν είναι αδύνατον να έχετε μια ενσύρματη σύνδεση, θα πρέπει να βάλετε το firmware πάνω  σε μια  αφαιρούμενη συσκευή (φλασακί π.χ.) και να το εγκαταστήσετε σαν υπέρ-χρήστης (root) από εκεί χρησιμοποιώντας:</p>
+<pre>
+#dpkg -i &lt;firmware.deb&gt;
+</pre>
+
+							<!--p>To find the appropriate firmware without knowing the make of your wireless chip, you can use the command:</p-->
+							<p>Για να βρείτε το κατάλληλο firmware χωρίς να ξέρετε την μάρκα της ασύρματης κάρτας σας, μπορείτε να χρησιμοποιήσετε την εντολή:</p>
+<pre>
+#fw-detect
+</pre>
+							<!--p>This will give you the following information:</p-->
+							<p>Αυτό θα σας δώσει τις ακόλουθες πληροφορίες:</p>
+<pre>
+#apt-get update
+#apt-get install &lt;όνομα του firmware&gt;
+#modprobe -r &lt;όνομα του module&gt;
+#modprobe &lt;όνομα του module&gt;
+</pre>
+							<!--p>Use the apt-get install line that fw-detect command gave you. After that is done, you need to issue some commands in konsole before configuring the device.</p-->
+							<p>Χρησιμοποιήστε την apt-get install γραμμή που σας έδωσε η εντολή fw-detect . Όταν τελειώσει αυτό, θα πρέπει να δώσετε μερικές εντολές στην κονσόλα πριν ρυθμίσετε την συσκευή.</p>
+
+							<!--p>You have to load the module now in order to be able to configure your device.</p-->
+							<p>Τώρα θα πρέπει να φορτώσετε την ενότητα (module) για να μπορέσετε να ρυθμίσετε την συσκευή σας.</p>
+
+							<!--p>As root in konsole do:</p-->
+							<p>Σαν υπέρ-χρήστης μέσα στην κονσόλα γράψτε:</p>
+<pre>
+modprobe -r &lt;όνομα module&gt;
+
+modprobe &lt;όνομα module&gt;
+</pre>
+							<!--p>As &lt;modulename&gt; uses the info that fw-detect gave you before. A helpful function of Konsole can be used here: bash completion: <br />
+							If you just write the first few letters of &lt;modulename&gt; and then hit the TAB key, it completes the module name (e.g. modprobe ipw TAB key) That also prevents misspelling.</p-->
+							<p>Επειδή το &lt;όνομα του module&gt; χρησιμοποιεί τις πληροφορίες που το fw-detect σας έδωσε πριν, μια χρήσιμη λειτουργία της κονσόλας μπορεί να χρησιμοποιηθεί εδώ: bash completion (συμπλήρωση): <br />
+							Αν απλά γράψετε τα πρώτα γράμματα του &lt;ονόματος του module&gt; και πατήσετε το TAB, συμπληρώνετε το όνομα του module (π.χ. modprobe ipw TAB ). Αυτό εμποδίζει επίσης την λάθος γραφή μιας λέξης.</p>
+
+							<!--p>Both modprobe commands dont give any output if successful, so if the normal prompt returns, the module got loaded fine.</p-->
+							<p>Και οι δυο modprobe εντολές δεν έχουν κάποια έξοδο (output) αν είναι επιτυχής γιαυτό αν σας επιστραφεί η συνηθισμένη οθόνη, το module έχει φορτωθεί σωστά.</p>
+
+							<!--p>You can check this with:</p-->
+							<p>Μπορείτε να το ελέγξετε με:</p>
+<pre>
+#lsmod | grep &lt;module&gt;
+</pre>
+
+
+							<!--p>Now start Ceni from K-Menu - Internet or run it from konsole as root with <a href="inet-ceni-en.htm#netcardconfig">Getting Online - Ceni</a>. Your wireless WiFi device should be shown now and is ready to be configured.</p-->
+							<p>Τώρα ξεκινήστε το Ceni από το K-Menu - Internet ή τρέξτε το από την κονσόλα σαν υπέρ-χρήστης με <a href="inet-ceni-el.htm#netcardconfig">Mπαίνοντας στο Δίκτυο - Ceni</a>. Η ασύρματη WiFi σας συσκευή θα πρέπει να φαίνεται και είναι τώρα έτοιμη να ρυθμιστεί.</p>
+
+							<!--p>To set up a Wlan GUI see <a href="inet-wpagui-el.htm">WiFi - roaming WPA-GUI</a></p-->
+							<p>Για να ρυθμίσετε ένα Wlan GUI δείτε <a href="inet-wpagui-el.htm">WiFi - roaming WPA-GUI</a></p>
+	</div>
+	<div class="divider" id="wpa">
+		<!--h2 id="top-header">Modes of Operation in wpasupplicant for Debian</h2-->
+		<h2>Τρόποι λειτουργίας του wpasupplicant για το Debian</h2>
+
+							<!--p class="highlight-3">Due to the complexity of law, aptosid will only provide dfsg-free software, <a href="nf-firm-el.htm#non-free-firmware">please check this link for additional information on non-free sources for firmware</a></p-->
+							<p class="highlight-3">Λόγω της περιπλοκότητας του νόμου, το aptosid θα παρέχει μόνο dfsg-ελεύθερο λογισμικό, <a href="nf-firm-el.htm#non-free-firmware">παρακαλώ κοιτάξτε αυτή τη διεύθυνση για επιπλέον πληροφορίες για πηγές μη ελεύθερου firmware</a></p>
+
+							<!--p>The Debian wpasupplicant package provides two (2) convenient modes of operation that are closely integrated to the core networking infrastructure; ifupdown.</p-->
+							<p>Το Debian wpasupplicant πακέτο παρέχει δυο (2) βολικούς τρόπους λειτουργίας οι οποίοι είναι στενά συνδεδεμένοι με τη βάση της δικτυακής υποδομής (ifupdown).</p>
+
+			<!--h4>Whats Covered</h4-->
+			<h4>Τι καλύπτεται</h4>
+
+					<h6>1. Διευκρινίζοντας το wpa_supplicant driver backend</h6>
+          						<!--p>* Table of supported drivers<br />
+         						* Common Driver Recommendations </p-->
+							<p>* Πίνακας υποστηριζόμενων οδηγών<br />
+         						* Συστάσεις Οδηγών </p>
+
+					<h6>2. Mode #1: Managed Mode</h6>
+          						<!--p>* Examples<br />
+          						* Table of Common Options<br />
+          						* Important Notes About Managed Mode<br />
+          						* How It Works </p-->
+							<p>* Παραδείγματα<br />
+          						* Πίνακας Συνηθισμένων Επιλογών<br />
+          						* Σημαντικές Σημειώσεις για το Managed Mode<br />
+          						* Πως λειτουργεί </p>
+
+					<h6>3. Mode #2: Roaming (περιαγωγή) Mode</h6>
+          						<!--p>* wpa_supplicant.conf<br />
+          						* /etc/network/interfaces<br />
+          						* Controlling the Roaming Daemon with wpa_action<br />
+          						* Fine Tuning the Roaming Setup<br />
+          						* The Logfile<br />
+          						* Using External Mapping Scripts (e.g. guessnet)<br />
+          						* /etc/network/interfaces with external mapping</p-->
+							<p>* wpa_supplicant.conf<br />
+          						* /etc/network/interfaces<br />
+          						* Έλεγχος του Roaming Daemon με wpa_action<br />
+          						* Ρύθμιση λεπτομερειών του Roaming Setup<br />
+          						* Το αρχείο ημερολόγιου (Logfile)<br />
+          						* Χρήση εξωτερικών script χαρτογράφησης (External Mapping Scripts) (π.χ. guessnet)<br />
+          						* /etc/network/interfaces με εξωτερική χαρτογράφηση</p>
+
+					<h6>4. Καταπολέμιση προβλημάτων (troubleshooting)</h6>
+          						<p>* Κρυμμένα ssids</p>
+
+					<!--h6>5. Security Considerations</h6>
+          						<p>* Configuration File Permissions</p-->
+					<h6>5. Ασφάλεια</h6>
+          						<p>* Ρύθμιση Δικαιωμάτων Αρχείου</p>
+
+			<h2>1. Διευκρινίζοντας το wpa_supplicant driver backend</h2>
+
+							<!--p>The wext driver backend will be used for all interfaces that do not explicitly set 'wpa-driver' to the driver type required for that device. Users of linux  2.4 kernels, or 2.6 kernels less than 2.6.14 will be required to specify a wpa-driver type.</p-->
+							<p>Εάν καμία από τις συσκευές δεν επιλέγει συγκεκριμένο οδηγό στο 'wpa-driver' τότε χρησιμοποιείται ο οδηγός 'wext'. Χρήστες πυρήνων linux τις σειράς 2.4 ή τις σειράς 2.6 (παλαιότερους του 2.6.14) θα χρειαστεί να επιλέξουν ένα τύπο wpa-driver.</p>
+
+	</div>
+				<!--h3>Supported drivers</h3-->
+				<h3>Υποστηριζόμενοι Οδηγοί</h3>
+	<div>
+		<table>
+			<tbody>
+				<!--tr>
+					<th>Driver</th>
+					<th>Description</th>
+				</tr>
+				<tr>
+					<td>wext</td>
+					<td>Linux wireless extensions (generic)</td>
+				</tr-->
+				<tr>
+					<th>Οδηγός</th>
+					<th>Περιγραφή</th>
+				</tr>
+				<tr>
+					<td>wext</td>
+					<td>Linux ασύρματη επέκταση (wireless extensions) (γενικό)</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="spacer05"></div>
+		<!--h3>Common Driver Recommendations</h3-->
+		<h3>Συστάσεις Οδηγών</h3>
+
+							<!--p>The Intel Pro Wireless adapters (ipw2100, ipw2200 and ipw3945) all use the 'wext' backend, unless your kernel is older than 2.6.14</p-->
+							<p>Οι Intel Pro Wireless κάρτες (ipw2100, ipw2200 και ipw3945) χρησιμοποιούν το 'wext' backend, εκτός και αν ο πυρήνας σας είναι παλαιότερος από τον 2.6.14</p>
+
+							<!--p>Madwifi supports both the 'wext' and 'madwifi' driver backends. 'wext' is preferred, however 'madwifi' may work better in some circumstances.</p-->
+							<p>Το Madwifi υποστηρίζει και το 'wext' και το 'madwifi' driver (οδηγός) backends. Το 'wext' προτιμάται, αλλά το 'madwifi' μπορεί να δουλέψει καλύτερα σε ορισμένες περιπτώσεις.</p>
+
+							<!--p>Ndiswrapper NO LONGER SUPPORTS the 'ndiswrapper' driver backend as of version 1.16. Therefore, 'wext' must be used unless you use an antiquated ndiswrapper release.</p-->
+							<p>Το Ndiswrapper ΔΕΝ ΥΠΟΣΤΗΡΙΖΕΙ ΠΛΕΟΝ (έκδοση 1.16 και νεότερες) το 'ndiswrapper' driver backend. Γιαυτό πρέπει να χρησιμοποιήσετε το 'wext' εκτός και αν χρησιμοποιείτε μια απαρχαιωμένη έκδοση του ndiswrapper.</p>
+
+							<!--p>Set the driver type in the interfaces(5) stanza for your device with the 'wpa-driver' option. For example:</p-->
+							<p>Ρυθμίστε τον τύπο του οδηγού, μέσα στην interfaces(5) παράγραφο, για την συσκευή σας με την 'wpa-driver' επιλογή. Για παράδειγμα:</p>
+
+<pre>
+iface eth0 inet dhcp
+	wpa-driver wext
+	. . . . . άλλες επιλογές
+</pre>
+
+			<h2>2. Mode #1: Managed Mode</h2>
+
+							<!--p>This mode provides the ability to establish a connection via wpa_supplicant to one known network. It is similar to how the wireless-tools package works. Each element required to establish the connection via wpa_supplicant is prefixed with 'wpa-' and followed by the value that will be used for that element.</p-->
+							<p>Αυτός ο τρόπος λειτουργίας δίνει την δυνατότητα δημιουργίας μιας σύνδεσης μέσω του wpa_supplicant με ένα γνωστό δίκτυο. Λειτουργεί με τρόπο παρόμοιο της λειτουργίας του wireless-tools (ασύρματα εργαλεία) πακέτου. Το κάθε στοιχείο που χρειάζεται για να δημιουργηθεί η σύνδεση μέσω wpa_supplicant έχει σαν πρόθεμα 'wpa-' και ακολουθείται από την τιμή που θα χρησιμοποιηθεί γιαυτό το στοιχείο.</p>
+
+		<!--h6>Examples of a Mode #1 wpa.conf file - Example 1.</h6-->
+		<h6>Παραδείγματα ενός wpa.conf αρχείου του πρώτου τρόπου λειτουργίας (Mode #1) - Παράδειγμα 1.</h6>
+
+<pre>
+Example of a Mode #1 wpa.conf file - Example 1.
+NOTE: the 'wpa-psk' value is only valid if:
+
+   1. It is a plaintext (ascii) string between 8 and 63 characters in length
+   2. It is a hexadecimal string of 64 characters
+
+# Connect to access point of ssid 'NETBEER' with an encryption type of
+# WPA-PSK/WPA2-PSK. It assumes the driver will use the 'wext' driver backend
+# of wpa_supplicant because no wpa-driver option has been specified.
+# The passphrase is given as a ASCII (plaintext) string. DHCP is used to
+# obtain a network address.
+#
+iface wlan0 inet dhcp
+
+        wpa-ssid NETBEER
+        # plaintext passphrase
+        wpa-psk PlainTextSecret
+
+# Connect to access point of ssid 'homezone' with an encryption type of
+# WPA-PSK/WPA2-PSK, using the 'wext' driver backend of wpa_supplicant.
+# The psk is given as an encoded hexadecimal string. DHCP is used to obtain
+# a network address.
+#
+iface wlan0 inet dhcp
+wpa-driver wext
+wpa-ssid homezone
+# hexadecimal psk is encoded from a plaintext passphrase
+wpa-psk 000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f
+
+# Connect to access point of ssid 'HotSpot1' and bssid of '00:1a:2b:3c:4d:5e'
+# with an encryption type of WPA-PSK/WPA2-PSK, using the the 'madwifi' driver
+# backend of wpa_supplicant. The passphrase is given as a plaintext string.
+# A static network address assignment is used.
+#
+iface ath0 inet static
+
+        wpa-driver madwifi
+        wpa-ssid HotSpot1
+        wpa-bssid 00:1a:2b:3c:4d:5e
+        # plaintext passphrase
+        wpa-psk madhotspot
+        wpa-key-mgmt WPA-PSK
+        wpa-pairwise TKIP CCMP
+        wpa-group TKIP CCMP
+        wpa-proto WPA RSN
+        # static ip settings
+        address 192.168.0.100
+        netmask 255.255.255.0
+        network 192.168.0.0
+        broadcast 192.168.0.255
+        gateway 192.168.0.1
+
+# User supplied wpa_supplicant.conf is used for eth1. All network information
+# is contained within the user supplied wpa_supplicant.conf. No wpa-driver type
+# is specified, so wext is used. DHCP is used to obtain a network address.
+#
+iface eth1 inet dhcp
+
+wpa-conf /path/to/wpa_supplicant.conf
+</pre>
+
+	<div class="divider" id="wpa1">
+		<!--h2>Table of Common Options</h2-->
+		<h2>Πίνακας Συνηθισμένων Επιλογών</h2>
+
+							<!--p>A brief summary of common 'wpa-' options that may be used in the /etc/network/interfaces stanza for a wireless device. See the 'Important Notes About Managed Mode' section for information about valid and invalid 'wpa-' values.</p-->
+							<p>Μια σύντομη περιγραφή των συνηθισμένων 'wpa-' επιλογών που μπορούν να χρησιμοποιηθούν στο /etc/network/interfaces για μια ασύρματη συσκευή. Δέστε το 'Σημαντικές Σημειώσεις για το Managed Mode' κομμάτι για πληροφορίες για επιτρεπόμενες και μη 'wpa-' τιμές.</p>
+
+							<!--p class="highlight-2">NOTE: ALL values are CASE SeNsItVe</p-->
+							<p class="highlight-2">ΣΗΜΕΙΩΣΗ: Όλες οι τιμές είναι CASE SeNsItVe (υπάρχει διαφορά ανάμεσα σε κεφαλαία γράμματα και μικρά)</p>
+
+<!--pre>
+Element		Example Value		Description
+=======         =============           ===========
+wpa-ssid        plaintextstring         sets the ssid of your network
+wpa-bssid       00:1a:2b:3c:4d:5e       the bssid of your AP
+wpa-psk         0123456789......        your preshared wpa key. Use
+                                        wpa_passphrase(8) to generate your psk
+                                        from a passphrase and ssid pair
+wpa-key-mgmt    NONE, WPA-PSK, WPA-EAP, list of accepted authenticated key
+                IEEE8021X               management protocols
+wpa-group       CCMP, TKIP, WEP104,     list of accepted group ciphers for WPA
+                WEP40
+wpa-pairwise    CCMP, TKIP, NONE        list of accepted pairwise ciphers for
+                                        WPA
+wpa-auth-alg    OPEN, SHARED, LEAP      list of allowed IEEE 802.11
+                                        authentication algorithms
+wpa-proto       WPA, RSN                list of accepted protocols
+wpa-identity    myplaintextname         administrator provided username
+                                        (EAP authentication)
+wpa-password    myplaintextpassword     your password (EAP authentication)
+wpa-scan-ssid   0 or 1                  toggles scanning of ssid with specific
+                                        Probe Request frames
+wpa-ap-scan     0 or 1 or 2             adjusts the scanning logic of
+                                        wpa_supplicant
+
+</pre-->
+<pre>
+Στοιχείο	Παράδειγμα Τιμής	Περιγραφή
+========        ================        =========
+wpa-ssid        plaintextstring         ρυθμίζει το ssid του δικτύου σας
+wpa-bssid       00:1a:2b:3c:4d:5e       το bssid του AP
+wpa-psk         0123456789......        το preshared wpa κλειδί σας. Χρησιμοποιήστε
+                                        το wpa_passphrase(8) για να δημιουργήσετε το psk
+                                        από ένα passphrase και ένα ssid
+wpa-key-mgmt    NONE, WPA-PSK, WPA-EAP, λίστα αποδεχόμενων επικυρωμένων κλειδιών
+                IEEE8021X               πρωτοκόλλων διαχείρισης
+wpa-group       CCMP, TKIP, WEP104,     λίστα αποδεχόμενων αλγορίθμων κρυπτογράφησης (group ciphers)
+                WEP40			για WPA
+wpa-pairwise    CCMP, TKIP, NONE        λίστα αποδεχόμενων αλγορίθμων κρυπτογράφησης (pairwise ciphers)
+                                        για WPA
+wpa-auth-alg    OPEN, SHARED, LEAP      λίστα επιτρεπόμενων IEEE 802.11
+                                        αλγορίθμων επικύρωσης
+wpa-proto       WPA, RSN                λίστα αποδεχόμενων πρωτοκόλλων
+wpa-identity    myplaintextname         όνομα χρήστη που δόθηκε από τον διαχειριστή
+                                        (EAP authentication)
+wpa-password    myplaintextpassword     το password σας (EAP authentication)
+wpa-scan-ssid   0 ή 1                  	αλλάζει την ssid σάρωση με συγκεκριμένα
+                                        Probe Request frames
+wpa-ap-scan     0 ή 1 ή 2             	ρυθμίζει την λογική σάρωσης του
+                                        wpa_supplicant
+
+</pre>
+							<!--p>The complete functionality of wpa_cli(8) should be implemented. Anything missing is considered a bug and should be reported as such. Patches are always welcome.</p-->
+							<p>Η πλήρης λειτουργικότητα του wpa_cli (8) θα πρέπει να εφαρμοστεί (implemented). Οτιδήποτε λείπει θεωρείται λάθος (bug) και θα πρέπει να αναφέρεται ως τέτοιο. Patches είναι πάντα ευπρόσδεκτα.</p>
+
+
+			<!--h2>Important Notes About Managed Mode</h2-->
+			<h2>Σημαντικές Σημειώσεις για το Managed Mode</h2>
+
+							<!--p>Almost all 'wpa-' options require there is at least a ssid specified. Only a handful of options have a global effect. These are: 'wpa-ap-scan' and 'wpa-preauthenticate'.</p-->
+							<p>Σχεδόν όλες οι 'wpa-' επιλογές απαιτούν να έχετε τουλάχιστον δώσει ένα ssid . Μόνο πολύ λίγες επιλογές έχουν καθολική επίδραση (global effect). Αυτές είναι: 'wpa-ap-scan' και 'wpa-preauthenticate'.</p>
+
+							<!--p>Any 'wpa-' option given for a device in the interfaces(5) file is sufficient to trigger the wpa_supplicant daemon into action.</p-->
+							<p>Οποιαδήποτε 'wpa-' επιλογή δοσμένη για μια συσκευή μέσα στο interfaces(5) αρχείο είναι αρκετή να θέσει σε λειτουργία το wpa_supplicant daemon.</p>
+
+							<!--p>The wpasupplicant ifupdown script makes assumptions about the 'type' of input that is valid for each option. For example, it assumes that some input is plaintext and wraps quotation marks around the input before passing it on to wpa_cli, which then adds the input to the network block being formed via the wpa_supplicant ctrl_interface socket.</p-->
+							<p>Το wpasupplicant ifupdown script κάνει υποθέσεις για τον 'τύπο' εισροών (input) που είναι έγκυρες για κάθε επιλογή. Για παράδειγμα υποθέτει ότι μια εισροή είναι απλό κείμενο (plaintext) και την βάζει σε εισαγωγικά πριν την διαβιβάσει στο wpa_cli, το οποίο προσθέτει την εισροή στο δικτυακό μπλοκ που δημιουργείται μέσω του wpa_supplicant ctrl_interface socket.</p>
+
+							<!--p>Running ifup manually with the  '-verbose' option will reveal all of the commands used to form the network block via wpa_cli. If the value you used for any wpa-* option in /etc/network/interfaces is surrounded by double quotes, than it has been assumed to be of "plaintext" or "ascii" type input.</p-->
+							<p>Το τρέξιμο του ifup χειροκίνητα με την '--verbose' επιλογή θα αποκαλύψει όλες τις εντολές που χρησιμοποιούνται για να δημιουργηθεί το δικτυακό μπλοκ μέσω του wpa_cli. Εάν μια τιμή που χρησιμοποιήσατε για οποιαδήποτε wpa-* επιλογή μέσα στο /etc/network/interfaces είναι μέσα σε διπλά εισαγωγικά, τότε έχει γίνει η υπόθεση είναι τύπος εισροής "plaintext" ή "ascii".</p>
+
+							<!--p>Some input is assumed to be a hexadecimal string (eg. wpa-wep-key*). The value 'type' of the wpa-psk option however, is determined via a simple check for more than one non hexadecimal character.</p-->
+							<p>Για ορισμένες εισροές γίνεται η υπόθεση ότι είναι hexadecimal (δεκαεξαδικός) string (πχ. wpa-wep-key*). Ο 'τύπος' της τιμής της wpa-psk επιλογής όμως, προσδιορίζεται μέσω ενός απλού ελέγχου για περισσότερους από ένα μη δεκαεξαδικούς χαρακτήρες.</p>
+
+			<!--h2>How It Works</h2-->
+			<h2>Πως λειτουργεί</h2>
+
+
+							<!--p>As mentioned earlier, each wpa_supplicant specific element is prefixed with 'wpa-'. Each element correlates to a property of wpa_supplicant described in the wpa_supplicant.conf(5), wpa_supplicant(8) and wpa_cli(8) manpages.</p-->
+							<p>Όπως αναφέρθηκε νωρίτερα, κάθε wpa_supplicant συγκεριμένο αντικείμενο έχει το πρόθεμα 'wpa-'. Κάθε στοιχείο σχετίζεται με μια ιδιότητα του wpa_supplicant που περιγράφεται στις wpa_supplicant.conf(5), wpa_supplicant(8) και wpa_cli(8) manpages (σελίδες εγχειριδίου).</p>
+
+							<!--p>The supplicant is launched without any pre-configuration whatsoever, and wpa_cli forms a network configuration from the input provided by the 'wpa-*' lines. Initially, wpa_supplicant/wpa_cli does not directly set the properties of the device (like setting an essid with iwconfig, for example), rather it informs the device of what access point is suitable to associate with. Once the device has scanned the area, and found that the suitable access point is available for use, these properties are set.</p-->
+							<p>Το supplicant τρέχει χωρίς να είναι καθόλου προ-ρυθμισμένο και το wpa_cli δημιουργεί μια ρύθμιση δικτύου από τις εισροές (input) που παρέχονται από τις 'wpa-*' γραμμές. Αρχικά το wpa_supplicant/wpa_cli δεν ορίζει απευθείας τις ιδιότητες της συσκευής (όπως όταν ορίζουμε ένα essid με το iwconfig, για παράδειγμα), αλλά ενημερώνει την συσκευή για το πιο access point (σημείο πρόσβασης) είναι κατάλληλο για να συνεργαστεί μαζί του. Όταν η συσκευή σαρώσει την περιοχή και βρει ότι το κατάλληλο access point είναι διαθέσιμο για χρήση, ορίζονται οι ιδιότητες.</p>
+
+							<!--p>The script that does all the work is located at:</p-->
+							<p>Το script που κάνει όλη την δουλειά βρίσκεται εδώ:</p>
+
+<pre>
+/etc/wpa_supplicant/ifupdown.sh
+/etc/wpa_supplicant/functions.sh
+</pre>
+
+							<p>Το ifupdown.sh εκτελείται από το run-parts, το οποίο με την σειρά του καλείται από το ifupdown κατά την διάρκεια των 'pre-up', 'pre-down' και 'post-down' φάσεων.</p>
+
+
+							<!--p>In the 'pre-up' phase, a wpa_supplicant daemon is launched followed by a series of wpa_cli commands that set up a network configuration according to what 'wpa-' options were used in /etc/network/interfaces for the physical device.</p-->
+							<p>Στην 'pre-up' φάση, ένα wpa_supplicant daemon εκτελείτε, ακολουθούμενο από μια σειρά από wpa_cli εντολές που ρυθμίζουν το δίκτυο αναλόγως του ποιες 'wpa-' επιλογές χρησιμοποιήθηκαν στο /etc/network/interfaces για την συσκευή.</p>
+
+							<!--p>If wpa-roam is used, a wpa_cli daemon is lauched in the 'post-up' phase.</p-->
+							<p>Εάν χρησιμοποιείται το wpa-roam , ένας wpa_cli daemon εκτελείται στην 'post-up' φάση.</p>
+
+							<!--p>In the 'pre-down' phase, the wpa_cli daemon is killed if it exists.</p-->
+							<p>Στην 'pre-down' φάση, ο wpa_cli daemon τερματίζεται (kill) εάν υπάρχει.</p>
+
+							<!--p>In the 'post-down' phase, the wpa_supplicant daemon is killed.</p-->
+							<p>Στην 'post-down' φάση, ο wpa_supplicant daemon τερματίζεται (kill).</p>
+
+			<h2>3. Mode #2: Roaming Mode</h2>
+
+							<!--p>A self contained, simplistic roaming mechanism is provided by this package. It is in the form of a wpa_cli action script, /sbin/wpa_action, and it assumes control of ifupdown once activated. The wpa_action(8) manpage describes its technical details in great depth.</p-->
+							<p>Ένας αυτόνομος, απλοϊκός μηχανισμός περιαγωγής (roaming) παρέχεται από αυτό το πακέτο. Είναι στην μορφή ενός wpa_cli action script, /sbin/wpa_action, και αναλαμβάνει τον έλεγχο του ifupdown μόλις ενεργοποιηθεί. Η wpa_action(8) manpage (σελίδα εγχειριδίου) περιγράφει τις τεχνικές του λεπτομέρειες σε μεγάλο βάθος.</p>
+
+							<!--p>To activate a roaming interface, adapt the following example interfaces(5) stanza:</p-->
+							<p>Για να ενεργοποιήσετε μια διεπαφή περιαγωγής (roaming interface), αλλάξτε την παράγραφο του παραδείγματος στο interfaces(5):</p>
+
+<pre>
+iface eth1 inet manual
+	wpa-driver wext
+        wpa-roam /path/to/wpa_supplicant.conf
+</pre>
+
+							<!--p>Two daemons are spawned from the above example; wpa_supplicant and wpa_cli. It is required to provide a wpa_supplicant.conf. A good starting point is provided by an example configuration file:</p-->
+							<p>Δύο daemons αναπαράγονται (spawned) από το πιο πάνω παράδειγμα, ο wpa_supplicant και ο wpa_cli. Απαιτείται να παρέχεται ένα wpa_supplicant.conf (αρχείο ρυθμίσεων). Ένα καλό σημείο εκκίνησης παρέχεται από ένα παράδειγμα αρχείου ρυθμίσεων:</p>
+
+<pre>
+ # copy the template to /etc/wpa_supplicant/
+        cp /usr/share/doc/wpasupplicant/examples/wpa-roam.conf \
+                /etc/wpa_supplicant/wpa_supplicant.conf
+        # allow only root to read and write to file
+        chmod 0600 /etc/wpa_supplicant/wpa_supplicant.conf
+
+NOTE: it is critical that the used wpa_supplicant.conf defines the location of
+      the 'ctrl_interface' so that a communication socket is created for the
+      wpa_cli (wpa-roam daemon) to attach. The mentioned example configuration,
+      /usr/share/doc/wpasupplicant/examples/wpa-roam.conf, has been set to a
+      sane default.
+
+</pre>
+
+
+							<!--p>It is required to edit this configuration file, and add the network blocks for all known networks. If you do not understand what this means, start reading the wpa_supplicant.conf(5) manpage now.</p-->
+							<p>Απαιτείται να επεξεργαστείτε το αρχείο ρυθμίσεων και να προσθέσετε δικτυακά μπλοκ για όλα τα γνωστά δίκτυα. Εάν δεν καταλαβαίνετε τι σημαίνει αυτό, αρχίστε να διαβάζετε την wpa_supplicant.conf(5) manpage τώρα.</p>
+
+							<!--p>For each network, you may specify a special option 'id_str'. It should be set to a simple text string. This text string forms the basis for network profiling; it correlates to a logical interface defined in the interfaces(5) file. When no 'id_str' is given for a network, wpa_action assumes it will use the 'default' logical interface as fallback. The fallback interface can be chosen via the 'wpa-default-iface' option.</p-->
+							<p>Για κάθε δίκτυο μπορείτε να καθορίσετε μια ειδική επιλογή 'id_str'. Το 'id_str' θα πρέπει να είναι ένα απλό text string. Αυτό το string αποτελεί τη βάση για δικτυακά προφίλ. Συσχετίζεται με μια λογική διεπαφή (logical interface) καθορισμένη μέσα στο interfaces(5) αρχείο. Εάν δεν είναι δοσμένο ένα 'id_str' για κάποιο δίκτυο, το wpa_action υποθέτει ότι θα χρησιμοποιήσει την λογική διεπαφή προεπιλογής ('default' logical interface) σαν εφεδρική διεπαφή. Η εφεδρική διεπαφή μπορεί να επιλεχτεί μέσω της 'wpa-default-iface' επιλογής.</p>
+
+							<!--p>So what does all this mean? Lets illustrate it with a small example taken from the wpa_action(8) manpage.</p-->
+							<p>Τί σημαίνουν όμως όλα αυτά; Ας δούμε ένα μικρό παράδειγμα παρμένο από τη wpa_action(8) manpage.</p>
+
+		<h6>wpa_supplicant.conf παράδειγμα</h6>
+<pre>
+wpa_supplicant.conf example:
+network={
+        ssid="foo"
+        key_mgmt=NONE
+        # this id_str will notify /sbin/wpa_action to 'ifup uni'
+        id_str="uni"
+}
+
+network={
+        ssid="bar"
+        psk=123456789...
+        # this id_str will notify /sbin/wpa_action to 'ifup home_static'
+        id_str="home_static"
+}
+
+network={
+        ssid=""
+        key_mgmt=NONE
+        # no 'id_str' parameter is given, /sbin/wpa_action will 'ifup default'
+}
+</pre>
+
+	</div>
+	<div class="divider" id="wpa2">
+		<h6>/etc/network/interfaces παράδειγμα</h6>
+<pre>
+/etc/network/interfaces example:
+# the roaming interface MUST use the manual inet method
+# 'allow-hotplug' or 'auto' ensures the daemon starts automatically
+allow-hotplug eth1
+iface eth1 inet manual
+
+        wpa-driver wext
+        wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf
+
+
+# no id_str, 'default' is used as the fallback mapping target
+iface default inet dhcp
+
+
+# id_str="uni"
+iface uni inet dhcp
+
+# id_str="home_static"
+iface home_static inet static
+
+        address 192.168.0.20
+        netmask 255.255.255.0
+        network 192.168.0.0
+
+        broadcast 192.168.0.255
+        gateway 192.168.0.1
+</pre>
+
+							<!--p>A logical interface is brought up via ifup, and taken down via ifdown, as wpa_supplicant associates and de-associates with the network associated to it by the 'id_str' option used in the wpa_supplicant.conf configuration file.</p-->
+							<p>Μια λογική διεπαφή 'ξεκινάει' μέσω του ifup και τερματίζεται μέσω του ifdown καθώς το wpa_supplicant συνεργάζεται και σταματάει την συνεργασία του με το δίκτυο που του ανατέθηκε από την 'id_str' επιλογή που χρησιμοποιήθηκε μέσα στο the wpa_supplicant.conf αρχείο ρυθμίσεων.</p>
+
+							<p>Ένα αρχείο ημερολογίου (log) των πράξεων του /sbin/wpa_action δημιουργείται στο /var/log/wpa_action.log , παρακαλώ επισυνάπτετε και το log όταν αναφέρεται προβλήματα.</p>
+
+			<h2>Αλληλεπίδραση με το wpa_supplicant μέσω του wpa_cli και του wpa_gui</h2>
+
+							<!--p>The wpa_supplicant process can be interacted with by members of the "netdev" group if the example roaming configuration was used as is (or by whatever group or gid specified by the GROUP= crtl_interface parameter).</p-->
+							<p>Μέλη της ομάδας "netdev" μπορούν να αλληλεπιδράσουν με την wpa_supplicant διεργασία εάν η ρυθμίσεις περιαγωγής του παραδείγματος έχουν χρησιμοποιηθεί χωρίς να αλλαχτούν (ή από οποιαδήποτε ομάδα ή gid (ταυτότητα ομάδας) καθορισμένο από την GROUP= crtl_interface παράμετρο).</p>
+<pre>
+# the default ctrl_interface option used in the example file
+	# /usr/share/doc/wpasupplicant/examples/wpa-roam.conf
+        ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+
+To interact with the supplicant, the wpa_cli (command line) and wpa_gui (QT)
+have been provided. With these you may connect, disconnect, add/delete new
+network blocks, provide required interactive security information and so on.
+</pre>
+
+
+
+
+<!--h2>Controlling the Roaming Daemon with wpa_action</h2-->
+<h2>Έλεγχος του Roaming Daemon μέσω του wpa_action</h2>
+
+							<!--p>Once the roaming daemon is started, it assumes control of ifupdown. That is; wpa_cli calls ifup when wpa_supplicant has successfully associated with an access point, and calls ifdown when the connection is lost or terminated. While the roaming daemon is active, ifupdown should not be controlled directly by manually issued commands, rather /sbin/wpa_action is supplied to stop and reload the roaming daemon. For example, to stop the romaing daemon on the device 'eth1':</p-->
+							<p>Μόλις ξεκινήσει το roaming daemon, αναλαμβάνει τον έλεγχο του ifupdown. Το wpa_cli καλεί το ifup όταν το wpa_supplicant έχει συνεργαστεί επιτυχώς με ένα access point, και καλεί το ifdown όταν η σύνδεση χαθεί ή τερματιστεί. Όσο ο roaming daemon είναι ενεργός, το ifupdown δεν θα πρέπει να ελέγχεται απευθείας με εντολές που δίνονται χειροκίνητα, αλλά δίνετε το /sbin/wpa_action που είναι υπεύθυνο να σταματά και να φορτώνει (reload) τον roaming daemon. Για παράδειγμα, για να σταματήσετε τον romaing daemon στην συσκευή 'eth1':</p>
+
+<pre>
+wpa_action eth1 stop
+</pre>
+
+
+							<!--p>When it is required to update the roaming daemon with  a new networks details, it can be done without stopping it. Edit the wpa_supplicant.conf file that is being used by the daemon with the new networks details, add optional network settings to /etc/network/interfaces that are specific to the new network (linked by the 'id_str') and then 'reload' the daemon like so:</p-->
+							<p>Όταν απαιτείται να ενημερώσετε τον roaming daemon με λεπτομέρειες για ένα νέο δίκτυο, μπορεί να γίνει χωρίς να τον σταματήσετε. Επεξεργαστείτε το wpa_supplicant.conf αρχείο που χρησιμοποιείται από τον daemon και προσθέστε τις λεπτομέρειες του νέου δικτύου, προσθέστε προαιρετικές ρυθμίσεις δικτύου στο /etc/network/interfaces οι οποίες θα απευθύνονται στο νέο δίκτυο (συνδεδεμένο (linked) μέσω του 'id_str') και μετά κάντε 'reload' (ξανά φορτώστε) τον daemon:</p>
+
+<pre>
+wpa_action eth1 reload
+</pre>
+
+							<!--p>For the complete technical details of what wpa_action can do, read the wpa_action(8) manpage.</p-->
+							<p>Για τις πλήρεις τεχνικές λεπτομέρειες του τι μπορεί να κάνει το wpa_action ,διαβάστε την wpa_action(8) manpage .</p>
+
+	</div>
+	<div class="divider" id="wpa3">
+		<!--h2>Fine Tuning the Roaming Setup</h2-->
+		<h2>Ρύθμιση λεπτομερειών του Roaming Setup</h2>
+
+							<p>Μπορεί να έρθετε αντιμέτωποι με καταστάσεις όπου πολλά γνωστά access points (σημεία πρόσβασης) βρίσκονται κοντά. Μπορείτε να επιλέξετε πιο θα προτιμηθεί χειροκίνητα, με το wpa_cli, το wpa_gui ή μπορείτε να δώσετε σε κάθε δίκτυο την δική του προτεραιότητα. Αυτό παρέχεται από την επιλογή 'priority' (προτεραιότητα) του wpa_supplicant.conf .</p>
+
+	</div>
+	<div class="divider" id="wpa4">
+		<!--h2>The Logfile</h2-->
+		<h2>Το αρχείο ημερολογίου (Logfile)</h2>
+
+							<!--p>All activity of the roaming dameon is logged to /var/log/wpa_action.log. The following information is logged:</p-->
+							<p>Όλες οι δραστηριότητες του roaming dameon καταγράφονται στο /var/log/wpa_action.log. Οι παρακάτω πληροφορίες καταγράφονται:</p>
+
+							<!--p>*time and date<br />
+							*interface name and action event<br />
+							*values of enviromental variables (WPA_ID, WPA_ID_STR, WPA_CTRL_DIR)<br />
+							*ifupdown command executed<br />
+							*wpa_cli status (based on WPA-PSK, network may display different info)<br />
+							*bssid<br />
+							*ssid<br />
+							*id<br />
+							*id_str<br />
+							*pairwise_cipher<br />
+							*group_cipher<br />
+							*key_mgmt<br />
+							*wpa_state<br />
+							*ip_address</p-->
+							<p>*ώρα και ημερομηνία<br />
+							*interface name and action event<br />
+							*values of enviromental variables (μεταβλητές περιβάλλοντος) (WPA_ID, WPA_ID_STR, WPA_CTRL_DIR)<br />
+							*ifupdown command executed (εκτέλεση εντολής)<br />
+							*wpa_cli status (βασισμένο στο WPA-PSK, το δίκτυο μπορεί να δίνει διαφορετικές πληροφορίες)<br />
+							*bssid<br />
+							*ssid<br />
+							*id<br />
+							*id_str<br />
+							*pairwise_cipher<br />
+							*group_cipher<br />
+							*key_mgmt<br />
+							*wpa_state<br />
+							*ip_address</p>
+
+
+	</div>
+	<div class="divider" id="wpa5">
+		<!--h2>Using External Mapping Scripts (e.g. guessnet)</h2-->
+		<h2>Χρήση εξωτερικών script χαρτογράφησης (External Mapping Scripts) (π.χ. guessnet)</h2>
+
+							<!--p>In addition to the internal mapping of logical interfaces via 'id_str', wpa_action can call external mapping scripts. A mapping script should return the name of the logical interface which should be brought up. Any mapping script that works from ifupdowns mapping mechanism (see man interfaces) should also work when called from wpa_action.</p-->
+							<p>Εκτός από την εσωτερική χαρτογράφηση των λογικών διεπαφών (internal mapping of logical interfaces) μέσω του 'id_str', το wpa_action μπορεί να καλέσει εξωτερικά scripts χαρτογράφησης. Ένα script χαρτογράφησης θα πρέπει να επιστρέφει το όνομα της λογικής διεπαφής που πρέπει να καλεστεί. Οποιοδήποτε script χαρτογράφησης που δουλεύει με τον μηχανισμό χαρτογράφησης του ifupdown (δείτε man interfaces) θα πρέπει να δουλέψει και όταν καλείται από το wpa_action.</p>
+
+							<!--p>To call a mapping script add a line 'wpa-mapping-script name-of-the-script' to  the interfaces stanza of the physical roaming device. (You may have to specify the absolute path to the mapping script.)</p-->
+							<p>Για να καλέσετε ένα script χαρτογράφησης, προσθέστε αυτή την γραμμή 'wpa-mapping-script όνομα-του-script' στην interfaces παράγραφο (stanza) της φυσικής συσκευής περιαγωγής (physical roaming device). (Μπορεί να χρειαστεί να δώσετε το απόλυτο μονοπάτι (absolute path) για το script χαρτογράφησης)</p>
+
+
+							<!--p>The contents of lines starting with wpa-map are passed to stdin of the mapping  script. Since ifupdown allows only one wpa-map line you can append any number to wpa-map for additional lines. For example:</p-->
+							<p>Τα περιεχόμενα των γραμμών που ξεκινούν με wpa-map δίνονται στο stdin (συνήθης εισροή) του script χαρτογράφησης. Επειδή το ifupdown επιτρέπει μόνο μια wpa-map γραμμή, μπορείτε να να προσθέσετε οποιοδήποτε αριθμό στο wpa-map για να έχετε επιπλέον γραμμές. Για παράδειγμα:</p>
+
+<pre>
+iface wlan0 inet manual
+        wpa-driver wext
+        wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf
+        wpa-mapping-script guessnet-ifupdown
+        wpa-map0 home
+        wpa-map1 work
+        wpa-map2 school
+        # ... additional wpa-mapX lines as required
+</pre>
+							<!--p>By default the mapping script will only be used when no 'id_str' is available for the current network. If you want to completely disable 'id_str' matching and use only an external mapping script, use the 'wpa-mapping-script-priority 1' option to override default behaviour.</p-->
+							<p>Εκ προεπιλογής το script χαρτογράφησης θα χρησιμοποιηθεί μόνο όταν δεν υπάρχει 'id_str' για το τρέχων δίκτυο. Εάν θέλετε να απενεργοποιήσετε πλήρως την 'id_str' αντιστοίχηση και να χρησιμοποιείτε μόνο ένα εξωτερικό script χαρτογράφησης, χρησιμοποιήστε την επιλογή 'wpa-mapping-script-priority 1' για να αντικαταστήσετε (override) την συμπεριφορά προεπιλογής.</p>
+
+							<!--p>If the mapping script returns an empty string wpa_action will fallback to using the 'default' interface, unless an alternative is defined by the 'wpa-roam-default-iface' option.</p-->
+							<p>Εάν το script χαρτογράφησης επιστρέψει ένα άδειο (empty) string, το wpa_action θα χρησιμοποιήσει την διεπαφή προεπιλογής ('default' interface), εκτός και αν μια εναλλακτική είναι καθορισμένη από την 'wpa-roam-default-iface' επιλογή.</p>
+
+							<!--p>Below is an advanced example, using guessnet-ifupdown as the external mapping script.</p-->
+							<p>Από κάτω είναι ένα προχωρημένο παράδειγμα που χρησιμοποιεί το guessnet-ifupdown σαν εξωτερικό script χαρτογράφησης.</p>
+
+					<!--h6>/etc/network/interfaces with external mapping example</h6-->
+					<h6>Παράδειγμα /etc/network/interfaces με εξωτερική χαρτογράφηση</h6>
+<pre>
+/etc/network/interfaces with external mapping example:
+allow-hotplug wlan0
+iface wlan0 inet manual
+
+        wpa-driver wext
+        wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf
+        wpa-roam-default-iface default-wparoam
+        wpa-mapping-script guessnet-ifupdown
+        wpa-map default: default-guessnet
+        wpa-map0 home_static
+        wpa-map1 work_static
+
+
+# school can only be chosen via 'id_str' matching
+iface school inet dhcp
+
+        # resolvconf
+        dns-nameservers 11.22.33.44 55.66.77.88
+
+iface home_static inet static
+
+        address 192.168.0.20
+        netmask 255.255.255.0
+
+        network 192.168.0.0
+        broadcast 192.168.0.255
+        gateway 192.168.0.1
+        test peer address 192.168.0.1 mac 00:01:02:03:04:05
+
+
+iface work_static inet static
+
+        address 192.168.3.200
+        netmask 255.255.255.0
+        network 192.168.3.0
+        broadcast 192.168.3.255
+
+        gateway 192.168.3.1
+        test peer address 192.168.3.1 mac 00:01:02:03:04:05
+
+iface default-guessnet inet dhcp
+
+iface default-wparoam inet dhcp
+</pre>
+
+							<!--p>In this example wpa_action will use guessnet for the selection of a suitable logical interface only when no 'id_str' option has been provided for the current network in the provided wpa_supplicant.conf.</p-->
+							<p>Σε αυτό το παράδειγμα το wpa_action θα χρησιμοποιήσει το guessnet για την επιλογή μιας κατάλληλης λογικής διεπαφής μόνο όταν η 'id_str' επιλογή δεν δόθηκε μέσα στο wpa_supplicant.conf για το τρέχων δίκτυο.</p>
+
+							<!--p>The 'wpa-map' lines provide guessnet with the logical interfaces that are to be tested as well as the default interface to be used when all tests fail. The 'test' lines of each logical interface are used by guessnet to determine if we are actually connected to that network. For instance, guessnet will choose the logical interface 'home_static' if there's a device with an IP address of 192.168.0.1 and MAC of 00:01:02:03:04:05 on the current network. If all tests fail, the 'default-guessnet' interface will be configured.</p-->
+							<p>Η 'wpa-map' γραμμές παρέχουν στο guessnet τις λογικές διεπαφές που πρέπει να ελεγχθούν καθώς και την διεπαφή προεπιλογής η οποία θα χρησιμοποιηθεί εάν αποτύχουν όλοι οι έλεγχοι. Οι 'test' γραμμές της κάθε λογικής διεπαφής θα χρησιμοποιηθούν από το guessnet για να διευκρινιστεί το αν είμαστε συνδεδεμένοι σε εκείνο το δίκτυο. Για παράδειγμα, το guessnet θα επιλέξει την λογική διεπαφή 'home_static' εάν υπάρχει μια συσκευή με διεύθυνση IP 192.168.0.1 και MAC 00:01:02:03:04:05 στο τρέχων δίκτυο. Εάν αποτύχουν όλοι οι έλεγχοι, η 'default-guessnet' διεπαφή θα ρυθμιστεί (configured).</p>
+
+
+							<!--p>Please, read the guessnet(8) manpage for more information.</p-->
+							<p>Παρακαλώ διαβάστε την guessnet(8) σελίδα εγχειριδίου (manpage) για περισσότερες πληροφορίες.</p>
+
+			<!--h2>4. Troubleshooting</h2-->
+			<h2>4. Καταπολέμιση προβλημάτων (troubleshooting)</h2>
+
+							<!--p>In order to debug connection, association and authentication problems, we suggest starting `wpa_cli -i &lt;interface&gt;` in a different shell, before starting the interface. Use the command 'level 0' first, to get all debug messages. Then use `ifup verbose &lt;interface&gt;` to get verbose debug messages from the script starting wpasupplicant.</p-->
+							<p>Για να βρείτε "λάθη" στην σύνδεση ή στην αναγνώριση (authentication), σας συνιστούμε να τρέξετε το `wpa_cli -i &lt;interface&gt;` μέσα σε ένα διαφορετικό κέλυφος (shell) πριν τρέξετε την διεπαφή. Μετά χρησιμοποιήστε την εντολή 'level 0' , για να δείτε όλα τα μηνύματα λαθών (debug messages). Έπειτα χρησιμοποιήστε την `ifup --verbose &lt;interface&gt;` για να δείτε τα μηνύματα λαθών (verbose debug messages) από το script που ξεκινάει το wpasupplicant.</p>
+	</div>
+	<div class="divider" id="wpa6">
+		<!--h2>Hidden ssids</h2-->
+		<h2>Κρυμμένα ssids</h2>
+
+							<!--p>For reference, see #358137. In order to be able to associate to hidden ssids, please try to set the option 'ap_scan=1' in the global section, and  'scan_ssid=1' in your network block section of your wpa_supplicant.conf file. If you are using the managed mode, you can do so by these stanzas:</p-->
+							<p>Για πληροφορίες δείτε #358137. Για να μπορέσετε να συνεργαστείτε με κρυμμένα ssids, παρακαλώ δοκιμάστε να βάλετε την επιλογή 'ap_scan=1' στην καθολική ενότητα (global section) και 'scan_ssid=1' στην ενότητα του δικτυακού μπλοκ του wpa_supplicant.conf αρχείου σας. Εάν χρησιμοποιείτε το managed mode, μπορείτε να το κάνετε αυτό με τις πιο κάτω γραμμές:</p>
+
+<pre>
+iface eth1 inet dhcp
+wpa-conf managed
+wpa-ap-scan 1
+wpa-scan-ssid 1
+# additional options for your setup
+</pre>
+
+							<!--p>According to #368770, association can take a very long time to associate to WEP  secured networks. In some cases, setting the parameter 'ap_scan=2' in the config file, (or using a 'wpa-ap-scan 2' stanza, which is equivalent) can greatly help to speed up association.</p-->
+							<p>Σύμφωνα με το #368770, η σύνδεση σε δίκτυα με WEP ασφάλεια μπορεί να χρειαστεί πολλή ώρα. Σε ορισμένες περιπτώσεις, ρυθμίζοντας την παράμετρο 'ap_scan=2' στο αρχείο ρυθμίσεων, (ή χρησιμοποιώντας μια 'wpa-ap-scan 2' παράγραφο, το οποίο είναι ισοδύναμο) μπορεί να βοηθήσει πολύ στην ταχύτητα σύνδεση.</p>
+
+ 							<!--p>Please note that setting ap_scan to the value of 2 also requires that all networks have a precisely defined security policy for for key_mgmt, pairwise, group and proto network policy variables.</p-->
+							<p>Παρακαλώ σημειώστε ότι ρυθμίζοντας το ap_scan στην τιμή 2 απαιτείται από όλα τα δίκτυα να έχουν ακριβώς καθορισμένη πολιτική ασφαλείας (security policy) για τις key_mgmt, pairwise, group και proto μεταβλητές πολιτικής δικτύου (network policy variables).</p>
+
+	</div>
+	<div class="divider" id="wpa7">
+		<!--h2>5. Security Considerations</h2-->
+		<h2>5. Ασφάλεια</h2>
+				<!--h5>Configuration of File Permissions</h5-->
+				<h5>Ρύθμιση των Δικαιωμάτων Αρχείου</h5>
+							<!--p>It is important to keep PSK's and other sensitive information concerning your network settings private, therefore ensure that important configuration files containing such data are only readable by their owner. For example:</p-->
+							<p>Είναι σημαντικό να παραμένουν τα PSK's και άλλες ευαίσθητες πληροφορίες που αφορούν τις δικτυακές σας ρυθμίσεις ιδιωτικές, γιαυτό σιγουρευτείτε ότι τα σημαντικά αρχεία ρυθμίσεων που περιέχουν τέτοιες λεπτομέρειες μπορούν να διαβαστούν μόνο από τον ιδιοκτήτη τους. Για παράδειγμα:</p>
+
+<pre>
+chmod 0600 /etc/network/interfaces
+# substitute the path of your wpa_supplicant.conf file
+chmod 0600 /etc/wpa_supplicant/wpa_supplicant.conf
+</pre>
+							<!--p>By default, /etc/network/interfaces is world readable, and thus unsuitable for containing secret keys and passwords.</p-->
+							<p>Εκ προεπιλογής το /etc/network/interfaces μπορεί να διαβαστεί από όλους και γιαυτό είναι ακατάλληλο για να περιέχει μυστικά κλειδιά και passwords.</p>
+
+	</div>
+			<div id="rev">Τελευταία αναθεώρηση περιεχομένου 14/08/2010 0100 UTC</div>
+
+</div>
+</body>
+</html>

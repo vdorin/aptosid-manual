@@ -1,0 +1,608 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>aptosid Manuals - Screen Resolutions and Dualhead </title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision by edhunter 10/02/2010 2330 UTC -->
+<div id="menu"> <!-- menu starts here el lang maintained by  -->
+<!--aptosid Operating System Manual menu-version-02.13.2011.09.09 -->
+<!-- menu last updated by bluewater 2011.09.09 0935 hrs UTC -->
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="To aptosid.com forums and wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-el.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" />Αναζήτηση Online - Offline </a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Eπιλέξτε άλλη γλώσσα - Choose another language" alt="lang-switch" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-el.htm">Εγχειρίδιο ΛΣ aptosid</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-el.htm#welcome-gen">Εγχειρίδιο ΛΣ aptosid &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-el.htm#cred-team">Συντελεστές</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-el.htm#how-to">Πως να χρησιμοποιήσετε αυτό το εγχειρίδιο &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-el.htm#how-to">Πως να χρησιμοποιήσετε αυτό το εγχειρίδιο</a></li>
+					  <li><a href="welcome-el.htm#table-contents">Πίνακας περιεχομένων</a></li>
+					</ul>
+					</li>
+		<li><a href="help-el.htm#help-gen">Βοήθεια &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-el.htm#help-gen">Που να βρείτε βοήθεια</a></li>
+					  <li><a href="help-el.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-el.htm#welcome-quick">aptosid Οδηγός Γρήγορης Αναφοράς (Quick Start Guide)</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-el.htm">Περιεχόμενα ISO, Εκδόσεις, Κατέβασμα και Εγγραφή</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-el.htm#cd-content">Περιεχόμενα ISO και απαιτήσεις συστήματος &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-el.htm#rolling">Σημειώσεις Έκδοσης</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-el.htm#download-aptosid">aptosid Mirrors, Κατέβασμα και Εγγραφή &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-el.htm#md5">md5 Checksum</a></li>
+					  <li><a href="cd-dl-burning-el.htm#burn-nero">Γράφοντας το ISO στα Windows</a></li>
+					  <li><a href="cd-dl-burning-el.htm#burn-linux">Γράφοντας το ISO στο Linux</a></li>
+					  <li><a href="cd-no-gui-burn-el.htm#burning-no-gui">burniso script</a></li>
+					  <li><a href="cd-no-gui-burn-el.htm#burn-no-gui-gen">Εγγραφή χωρίς γραφικό περιβάλλον</a></li>
+					  <li><a href="cd-dl-burning-el.htm#download-aptosid">aptosid Mirrors Κατεβάσματος</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-el.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-el.htm#rootpw">Κωδικός υπερχρήστη (root) στο aptosid-Live ISO</a></li>
+				<li><a href="live-mode-el.htm#live-cd-installsoft">Εγκατάσταση προγραμμάτων σε περιβάλλον Live-ISO</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-el.htm">Το Τερματικό / Κονσόλα</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-el.htm#term-kon">Τερματικό / Κονσόλα &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-el.htm#term-kon">Τερματικό / Κονσόλα</a></li>
+					  <li><a href="term-konsole-el.htm#colours"> Coloured terminal prompts</a></li>
+					  <li><a href="term-konsole-el.htm#cli-help">Βοήθεια από την γραμμή εντολών</a></li>
+					  <li><a href="help-el.htm#init3-tools">Εργαλεία να ξέρετε για text mode (tty) - init 3</a></li>
+					  <li><a href="term-konsole-el.htm#term-cmds">Λίστα εντολών του Linux</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-el.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-el.htm">CheatCodes</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-el.htm#cheatcodes">Cheatcodes αποκλειστικά για το aptosid Live-ISO</a></li>
+				<li><a href="cheatcodes-el.htm#cheatcodes-linux">Cheatcodes γενικά για το Linux</a></li>
+				<li><a href="cheatcodes-vga-el.htm#vga">Κωδικοί VGA</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-el.htm">Partitioning the Hard Drive - Traditional, GPT and LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-el.htm#hd-ntfs3g">Γράφοντας σε NTFS κατάτμηση με το ntfs-3g</a></li>
+			<li><a href="part-lvm-el.htm#part-lvm">Partitioning to use LVM - Logical Volume Manager</a></li>
+			<li><a href="part-gparted-el.htm#partition">Δημιουργία κατατμήσεων με χρήση γραφικών (GUI) εργαλείων &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-el.htm#partition">Δημιουργία κατατμήσεων στον δίσκο χρησιμοποιώντας το  GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-el.htm#ntfs">Αλλαγή μεγέθους σε NTFS κατάτμηση χρησιμοποιώντας το GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-el.htm#partition">Δημιουργία κατατμήσεων με χρήση εργαλείων κονσόλας (CLI) &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-el.htm#partition">Δημιουργία κατατμήσεων στον σκληρό δίσκο χρησιμοποιώντας το cfdisk</a></li>
+					    <li><a href="part-cfdisk-el.htm#formating">Διαμόρφωση (format) μετά την δημιουργία κατάτμησης, με το cfdisk</a></li>
+					    <li><a href="part-gdisk-el.htm#gdisk-6">Formatting after partitioning with gdisk</a></li>
+					    <li><a href="part-gdisk-el.htm#gdisk-1">GPT Partitioning with gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-el.htm#part-example">Γενικά για κατατμήσεις &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-el.htm#part-example">Παραδείγματα για το μέγεθος των κατατμήσεων</a></li>
+					  <li><a href="part-uuid-el.htm#uuid">UUID, Rebuilding fstab and creating new mount points</a></li>
+					  <li><a href="part-cfdisk-el.htm#disknames">Ονομασία δίσκων εν συντομία</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-el.htm">Επιλογές εγκατάστασης - HD, USB, VM and Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-el.htm#Inst-prep">Προετοιμασία Εγκατάστασης &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-el.htm#Inst-prep">Προετοιμασία Εγκατάστασης</a></li>
+					  <li><a href="hd-install-el.htm#Installation">Εγκατάσταση στον σκληρό δίσκο</a></li>
+					  <li><a href="hd-install-el.htm#first-hd-boot">Πρώτη εκκίνηση</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-el.htm#fromiso">Εκκίνηση fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-el.htm#fromiso">Εκκίνηση fromiso - Γενικά</a></li>
+					  <li><a href="hd-install-opts-el.htm#grub2-fromiso">Εκκίνηση 'fromiso' με Grub 2</a></li>
+					  <li><a href="hd-install-opts-el.htm#fromiso-persist">fromiso και persist</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-el.htm#usb-hd">Εγκατάσταση σε USB δίσκους &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-el.htm#usb-hd">Eγκατάσταση σε USB σκληρό δίσκο - aptosid συγκεκριμένα - aptosid-σε-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-el.htm#raw-usb">Εγραφή του aptosid σε USB/SSD stick με Linux, MS Windows ή Mac OS X σύστημα</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-el.htm#install-crypt">Installing to encryted partitions - cryptroot</a></li>
+		  <li><a href="nbdboot-el.htm#nbd1">Εκκίνηση του aptosid μέσω δικτύου</a></li>
+		  <li><a href="hd-install-vmopts-el.htm#vm">Επιλογές εγκατάστασεις σε Εικονική Μηχανή (Virtual Machine)</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-el.htm">Κάρτες γραφικών, Οθόνες, Xorg &amp; Διάφοροι Οδηγοί</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-el.htm#mon-res">Ανάλυση Οθόνης (screen) και Οθόνες (monitor)  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-el.htm#mon-res">Ανάλυση Οθόνης (screen) και Οθόνες (monitor)</a></li>
+					  <li><a href="hw-dev-mon-el.htm#xrandr">Δύο Οθόνες (Dual Monitors) και xrandr</a></li>
+					  <li><a href="hw-dev-mon-el.htm#mon-binary">Δύο Οθόνες (με χρήση binaries)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-el.htm#foss-xorg">GPU drivers &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-el.htm#ati-3d">AMD/ATI 3D drivers</a></li>
+					  <li><a href="gpu-el.htm#intel">Intel 2D and 3D drivers</a></li>
+					  <li><a href="gpu-el.htm#nvidia">Nvidia 3D drivers</a></li>
+					  <li><a href="gpu-el.htm#foss-xorg">Open Source Xorg drivers</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-el.htm#fw-detect">Firmware detection - non-free </a></li>
+			  <li><a href="nf-firm-el.htm#non-free-firmware">Adding non-free to Sources List</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-el.htm">Διαχείριστες Παραθύρων</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-el.htm">KDE and XFCE Διαχείριστες Παραθύρων &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-el.htm#xfce-notes">Χρήσιμα extras για Xfce</a></li>
+					    <li><a href="wm-dm-el.htm#install-add">Χρήσιμα extras για KDE</a></li>
+					    <li><a href="wm-dm-el.htm#desk-freeze">Κόλλημα επιφάνειας εργασίας</a></li>
+					    <li><a href="wm-dm-el.htm#kde-login">Δεν μπορώ να εισέλθω στο KDE</a></li>
+					    <li><a href="wm-dm-el.htm#ch-th">Aλλάζοντας Θέματα (Themes)</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-el.htm#dm">Installing additional Display Managers</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-el.htm">Σύνδεση στο διαδίκτυο, WiFi, LAN και Δίκτυα</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-el.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-el.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-el.htm#serv-ftp">FTP Πελάτες</a></li>
+					    <li><a href="lamp-apache-el.htm#serv-sec">Πρωτόκολλα ασφαλείας</a></li>
+					    <li><a href="lamp-apache-el.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-el.htm#serv-mysql">MySQL Ρύθμιση</a></li>
+					    <li><a href="lamp-ppp-el.htm#serv-php">PHP με Apache</a></li>
+					    <li><a href="ntp-server-el.htm#ntp-server">Timeserver Ρύθμιση</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-el.htm#tor">Firewalls και Privacy &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-el.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-el.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-el.htm#firewalls">Firewalls</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-el.htm#ssh-x">SSH και Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-el.htm#setup">Samba-Server Ρύθμιση</a></li>
+						  <li><a href="samba-el.htm#configure">Ρύθμιση SAMBA (Windows)</a></li>
+						  <li><a href="ssh-el.htm#ssh-fs">SSH Απομακρυσμένη Προσάρτυση</a></li>
+						  <li><a href="ssh-el.htm#ssh-x">Παραθυρικές Eφαρμογές μέσω SSH</a></li>
+						  <li><a href="ssh-el.htm#ssh-f">GUI SSH με Konqueror</a></li>
+						  <li><a href="ssh-el.htm#ssh-w">SSH X-Forwarding από ένα Windows-PC</a></li>
+						  <li><a href="ssh-el.htm#ssh">SSH και Ασφάλεια</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-el.htm#netcardconfig">WIFI Συνδέσεις &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-el.htm#netcardconfig">Mπαίνοντας στο Δίκτυο - Ceni</a></li>
+						    <li><a href="inet-wpagui-el.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-el.htm#net-set1">WiFi - Ρύθμιση του WiFi Roaming</a></li>
+						    <li><a href="inet-wpa-el.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-el.htm#hotswitch">Εναλλαγή δικτύου μεταξύ WiFi και σύρματος</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-el.htm#netcardconfig">Wired (σύρμα) Συνδέσεις &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-el.htm#dial-mod">56k Modems</a></li>
+						    <li><a href="inet-ceni-el.htm#netcardconfig">Mπαίνοντας στο Δίκτυο - Ceni</a></li>
+					</ul>
+					</li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-el.htm">Διαχείριση Πακέτων και dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-el.htm#apt-cook">APT Cookbook and Sources list &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-el.htm#apt-cook">APT-Οδηγός και Λίστες Πηγών (Sources list)</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-install">Εγκαθιστώντας ένα νέο πακέτο</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-delete">Διαγράφοντας ένα πακέτο</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-downgrade">Υποβαθμίζοντας / Κρατώντας (Hold) ένα πακέτο</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-cache">Αναζήτηση πακέτων με apt-cache</a></li>
+					    <li><a href="sys-admin-apt-el.htm#gui-pacsea">GUI Package searching</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-el.htm#kern-upgrade">Αναβαθμίζοντας τον πυρήνα &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-el.htm#kern-remove">Διαγραφή ενός πυρήνα</a></li>
+					    <li><a href="sys-admin-kern-upg-el.htm#kern-upgrade">Αναβαθμίζοντας τον πυρήνα</a></li>
+					    <li><a href="sys-admin-kern-upg-el.htm#dmakms">Εγκατάσταση kernel modules δυναμικά με dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-el.htm#apt-upgrade">Aναβάθμιση σε ένα Εγκατεστημένο Σύστημα - dist-upgrade - Γενικά &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-el.htm#live-cd-upgrade">Αναβαθμίζοντας χρησιμοποιώντας το Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-el.htm#approx">dist-upgrade πολλαπλών PC σε ένα LAN</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-upgrade">Aναβάθμιση σε ένα Εγκατεστημένο Σύστημα - dist-upgrade - Γενικά</a></li>
+					    <li><a href="sys-admin-apt-el.htm#du-st">Aναβάθμιση σε ένα Εγκατεστημένο Σύστημα - dist-upgrade - Τα Βήματα</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-el.htm">Διαχείριση Συστήματος</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-el.htm#bois-prep">Αναβάθμιση του BIOS με το FreeDOS</a></li>
+		<li><a href="vir-rkits-el.htm#virus-rkits">Ανιχνευτές Iών και Rootkits</a></li>
+		<li><a href="hd-install-el.htm#adduser">Προσθήκη χρηστών και Passwords &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-el.htm#adduser">Προσθήκη ενός νέου χρήστη</a></li>
+					    <li><a href="sys-admin-gen-el.htm#pw-lost">Χαμένο password root, νέα passwords</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-el.htm#start-services">Υπηρεσίες και init runlevels &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-el.htm#start-services">Ενεργοποίηση / Απενεργοποίηση Υπηρεσιών (Services)</a></li>
+					    <li><a href="sys-admin-gen-el.htm#pkill">Killing a service or process</a></li>
+					    <li><a href="sys-admin-gen-el.htm#init">aptosid Επίπεδα εκτέλεσης (runlevels) - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-el.htm#rsync">Backup του συστήματος &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-el.htm#rdiff">Back-Up με rdiff</a></li>
+					    <li><a href="sys-admin-rsync-el.htm#rsync">Back-Up με rsync</a></li>
+					    <li><a href="home-el.htm#home-bu">Μεταφορά του /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-el.htm#fonts">CUPS, Γραμματοσειρές και Ήχος &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-el.htm#fonts">Γραμματοσειρές</a></li>
+					     <li><a href="sys-admin-gen-el.htm#cups">CUPS - Σύστημα Εκτύπωσης</a></li>
+					     <li><a href="sys-admin-gen-el.htm#sound">Mixers Ήχου</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-el.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-el.htm#chroot">Grub2 - Recovering Grub with chroot</a></li>
+					    <li><a href="sys-admin-grub2-el.htm#mbr-over-grub2">Grub2 - MBR Overwritten</a></li>
+					    <li><a href="sys-admin-grub2-el.htm#multi-os">Grub2 - Dual και Multibooting</a></li>
+					    <li><a href="sys-admin-grub2-el.htm#grub1-grub2">Grub2 -Αναβάθμιση α</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Sponsored by webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="../lib/sponsor-logo/webtropia-logo.png" title="aptosid is proudly hosted by webtropia.com" alt="aptosid is proudly hosted by webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div>
+<div id="main-page">
+	<div class="divider" id="mon-res">
+		<!--h2 id="top-header">Changing the Screen Resolutions</h2>-->
+		<h2 id="top-header">Αλλάζοντας την ανάλυση της οθόνης</h2>
+
+			<h4>xrandr</h4>
+				<!--h5>Supported Card Drivers</h5>-->
+				<h5>Υποστηριζόμενοι οδηγοί καρτών</h5>
+						<ul>
+							<li> xserver-xorg-video-intel (από 2.0)</li>
+							<li>xserver-xorg-video-nouveau (<a href="http://nouveau.freedesktop.org/wiki/FeatureMatrix"> Refer to the nouveau Feature Matrix</a>)</li>
+							<!--li>xserver-xorg-video-ati (since 6.7.192)</li>-->
+							<li>xserver-xorg-video-ati (από 6.7.192)</li>
+						</ul>
+
+						<!--p>First step is just to type xrandr to see if it is supported, if xrandr is not supported check the xorg version and driver used..</p>-->
+						<p>Το πρώτο βήμα είναι να γράψετε απλά xrandr για να δείτε εάν υποστηρίζεται. Αν το xrandr δεν υποστηρίζεται ελέγξετε την έκδοση του xorg και τον οδηγό (driver) που χρησιμοποιείται.</p>
+
+						<p>Για να αλλάξετε την ανάλυση της κύριας (primary) οθόνης σας (υποθέτουμε ότι η κάρτα σας το υποστηρίζει):</p>
+<pre>
+xrandr --output VGA --mode 1440x900
+</pre>
+
+		</div>
+		<div class="divider" id="xrandr">
+					<!--h2>Dual Monitors and xrandr</h2-->
+					<h2>Δυο οθόνες και xrandr</h2>
+
+							<p> <span class="highlight-2">xorg.conf is deprecated, if you use free drivers.</span> If you have an xorg.conf stanza under <span class= "highlight-3">/etc/X11/xorg.conf.d</span>, because you use proprietary drivers for your graphics card, you should save it now before proceeding.</p>
+
+							<p>xorg.conf, if present at all, is now modular, for example, each module contains everything referring a "device"  for instance, the display or a mouse.</p>
+
+							<!--p>With xrandr you can configure your primary and secondary screen without restarting X, (hotplug). xrandr replaces xinerama and mergedFB. With xrandr 1.2 enabled, the "old way configuration" in xorg.conf ( xinerama and mergedFB) may not work anymore.</p-->
+							<!-- mergedFB doesn't work anymore in a dist-upgraded aptosid install -->
+							<p>With xrandr you can configure your primary and secondary screen without restarting X, (hotplug). Το xrandr αντικαθιστά το xinerama και το mergedFB. Με το xrandr 1.2 ενεργοποιημένο, ο "παλιός τρόπος ρύθμισης" μέσα στο xorg.conf (xinerama και mergedFB) μπορεί να μην δουλεύει πλέον.</p>
+
+				<!--h5>Supported Card Drivers</h5-->
+				<h5>Υποστηριζόμενοι Οδηγοί Καρτών</h5>
+						<ul>
+							<li> xserver-xorg-video-intel (από 2.0)</li>
+							<li>xserver-xorg-video-nouveau (<a href="http://nouveau.freedesktop.org/wiki/FeatureMatrix"> Refer to the nouveau Feature Matrix</a>)</li>
+							<li>xserver-xorg-video-ati (από 6.7.192)</li>
+						</ul>
+
+			<!--h3>Preparation for xrandr configurations of a PC with Dualhead</h3-->
+			<h3>Προετοιμασία για xrandr ρυθμίσεις ενός υπολογιστή με δυο οθόνες (Dualhead)</h3>
+							<!--p><span class="highlight-2">Note:</span> Ideally, if you are running 2 monitors from a PC all the time, your <span class="highlight-3"> xorg.conf</span> should be altered to be permanently to reflect that mode.</p-->
+							<p><span class="highlight-2">Σημείωση:</span> Εάν τρέχετε πάντα 2 οθόνες από ένα υπολογιστή, θα ήταν καλύτερο να αλλάζατε μόνιμα το <span class="highlight-3"> xorg.conf</span> σας για να το αντικατοπτρίζει αυτό.</p>
+
+							<!--p>A laptop/notebook needs to be dynamically configured (as opposed to a PC with 2 monitors) and when you reboot you will need to start over, unless you set up the dual-head with whatever parameters you use in xrandr, then you copy/paste that in a script to<span class="highlight-3"> ~/.kde/Autostart/</span>.</p-->
+							<p>Ένα laptop/notebook χρειάζεται να ρυθμιστεί δυναμικά (σε αντίθεση με ένα υπολογιστή με 2 οθόνες) και όταν επανεκκινήσει θα πρέπει να ξεκινάτε από την αρχή εκτός και αν ρυθμίσετε το dual-head με οποιεσδήποτε παραμέτρους χρησιμοποιείτε στο xrandr, και μετά τις κάνετε copy/paste (αντιγραφή/επικόλληση) σε ένα script μέσα στο<span class="highlight-3"> ~/.kde/Autostart/</span>.</p>
+
+					<!--h4>Getting familiar with xrandr</h4-->
+					<h4>Εξοικείωση με το xrandr</h4>
+							<!--p>First step is just to type xrandr in a shell as user to get familiar with the output:</p-->
+							<p>Το πρώτο βήμα είναι απλά να γράψετε xrandr μέσα σε ένα κέλυφος (shell) σαν χρήστης για να εξοικειωθείτε με την έξοδο (output):</p>
+<pre>
+xrandr
+Screen 0: minimum 320 x 200, current 2048 x 768, maximum 2048 x 768
+VGA-0 connected 1024x768+0+0 (normal left inverted right x axis y axis) 304mm x 228mm
+   1024x768       60.0*+   75.1     70.1     60.0*    59.9
+   832x624        74.6
+   800x600        72.2     75.0     60.3     56.2
+   640x480        75.0     72.8     66.7     60.0
+   720x400        70.1
+</pre>
+
+							<!--p>Here you see that only vga, for the PC  (see Appendix A for output name explanation). You see the resolutions that are supported by that screen and (which is important for dual head) the maximum screen size (here 1024x768).</p-->
+							<p>Εδώ βλέπετε μόνο vga για τον υπολογιστή (βλέπετε <a href="hw-dev-mon-el.htm#aa">Προσάρτημα A</a> για επεξήγηση του ονόματος της εξόδου). Βλέπετε τις αναλύσεις που υποστηρίζονται από την οθόνη (πράγμα σημαντικό για το dual-head) και το μέγιστο μέγεθος οθόνης (εδώ 2048x768).</p>
+
+							<!--p>Now connect your other external screen and run xrandr again:</p-->
+							<p>Τώρα συνδέστε την άλλη εξωτερική οθόνη σας και τρέξετε το xrandr ξανά:</p>
+<pre>
+$ xrandr
+Screen 0: minimum 320 x 200, current 2048 x 768, maximum 2048 x 768
+VGA-0 connected 1024x768+0+0 (normal left inverted right x axis y axis) 304mm x 228mm
+   1024x768       60.0*+   75.1     70.1     60.0*    59.9
+   832x624        74.6
+   800x600        72.2     75.0     60.3     56.2
+   640x480        75.0     72.8     66.7     60.0
+   720x400        70.1
+DVI-0 connected 1024x768+1024+0 (normal left inverted right x axis y axis) 310mm x 230mm
+   1024x768_85.00   85.0*+
+   1024x768       85.0 +   84.9     74.9     75.1     70.1     60.0     43.5
+   832x624        74.6
+   800x600        84.9     72.2     75.0     60.3     56.2
+   640x480        84.6     75.0     72.8     66.7     60.0
+   720x400        87.8     70.1
+S-video disconnected (normal left inverted right x axis y axis)
+</pre>
+							<!--p>Here you see that a DVI screen is connected as well, and it supports resolutions from 720x400 to 1024x768 at given refresh rates.</p-->
+							<p>Εδώ βλέπετε ότι είναι συνδεδεμένη και μια οθόνη DVI και υποστηρίζει αναλύσεις από 720x400 μέχρι και 1024x768 στον δοσμένο ρυθμό ανανέωσης (refresh rates).</p>
+
+				<!--h6>Configuration scenarios</h6-->
+				<h6>Σενάρια Ρυθμίσεων</h6>
+
+							<!--p>Basic syntax</p-->
+							<p>Βασική σύνταξη</p>
+<pre>
+xrandr --output &lt;output&gt; --rate &lt;rate&gt; --mode &lt;mode&gt; --left-of|--right-of|--above|--below|--same-as &lt;output&gt;
+</pre>
+
+							<p>Όπου:</p>
+					<!--ul>
+    							<li>&lt;output&gt; is output name (see Appendix A)</li>
+   							<li>&lt;rate&gt; is refresh rate given by xrandr output (optional)</li>
+    							<li>&lt;mode&gt; is resolution given by xrandr output (optional)</li>
+					</ul-->
+					<ul>
+    							<li>&lt;output&gt; είναι το όνομα της εξόδου (βλέπε <a href="hw-dev-mon-el.htm#aa">Προσάρτημα A</a>)</li>
+   							<li>&lt;rate&gt; είναι ο ρυθμός ανανέωσης (refresh rate) δοσμένος από την xrandr έξοδο (προαιρετικό)</li>
+    							<li>&lt;mode&gt; είναι η ανάλυση που δίνεται από την xrandr έξοδο (προαιρετικό)</li>
+					</ul>
+
+
+
+						<!--h5>Change resolution of primary screen</h5-->
+						<h5>Αλλαγή της ανάλυσης της πρωτεύων οθόνης</h5>
+<pre>
+xrandr --output VGA --mode 1024x768
+</pre>
+
+
+						<h6>Κλώνος (clone)</h6>
+								<!--p>As many external screens / video projectors do not run on 1280x800 but on e.g. 1024x768,  choose this as an example:</p-->
+								<p>Επειδή πολλές εξωτερικές οθόνες / video projectors δεν τρέχουν σε 1280x800 αλλά σε πχ 1024x768 , χρησιμοποιείστε αυτή την εντολή:</p>
+<pre>
+xrandr --output VGA --mode 1024x768 --output LVDS --mode 1024x768
+</pre>
+
+								<!--p>To turn off secondary screen and get back normal resolution on primary screen just do a:</p-->
+								<p>Για να σβήσετε την εξωτερική οθόνη και να επιστρέψετε πίσω στην συνηθισμένη ανάλυση στην πρωτεύων οθόνη,  απλά γράψτε:</p>
+<pre>
+xrandr --output VGA --off --output LVDS --mode 1280x800
+</pre>
+
+						<!--h5>Multiple display desktop</h5-->
+						<h5>Επιφάνεια εργασίας με περισσότερες οθόνες (Multiple display desktop)</h5>
+							<!--p>As intel GMA &lt;=945GM/GMS looses 3d support with a virtual screen &gt;2048x2048, you cannot put both screens next to each other in high resolution, both at 1024x768 work well:</p-->
+							<p>Επειδή η intel GMA &lt;=945GM/GMS χάνει την 3d υποστήριξη με εικονική οθόνη &gt;2048x2048, δεν μπορούν να μπουν συγχρόνως δυο οθόνες υψηλής ανάλυσης παράλληλα (η μια δίπλα από την άλλη), και οι δυο στα 1024x768 δουλεύει μια χαρά:</p>
+<pre>
+xrandr --output LVDS --mode 1024x768 --output VGA --mode 1024x768 --left-of LVDS
+</pre>
+
+							<!--p>To disable multi screen just disable secondary screen and change resolution of primary screen back (if needed):</p-->
+							<p>Για να απενεργοποιήσετε το multi screen (πολλαπλές οθόνες), απλά απενεργοποιήστε την δευτερεύων οθόνη και αλλάξτε την ανάλυση της πρωτεύων οθόνης (αν χρειάζεται):</p>
+<pre>
+xrandr --output VGA --off (--output LVDS --mode 1280x800)
+</pre>
+
+							<!--p>Another option is to put the secondary screen above/below the primary:</p-->
+							<p>Μια άλλη επιλογή είναι να βάλετε την δευτερεύουσα οθόνη από πάνω/κάτω από την πρωτεύουσα οθόνη:</p>
+<pre>
+xrandr --output LVDS --mode 1280x800 --output VGA --mode 1280x1024 --above LVDS
+</pre>
+
+							<!--p>The result is a virtual screen resolution of 1280x1824 which is below 2048x2048 Another solution could be to rotate the screen:</p-->
+							<p>Το αποτέλεσμα είναι μια εικονική οθόνη με ανάλυση 1280x1824 η οποία είναι μικρότερη της 2048x2048 . Μια ακόμη λύση είναι να γυρίσετε (rotate) την εικονική οθόνη:</p>
+<pre>
+xrandr --verbose --output LVDS --mode 1280x800 --output VGA  --mode 1024x768 --rotate left --left-of LVDS
+</pre>
+
+							<p>Σημείωση: Αυτό δουλεύει μόνο αν μπορείτε να γυρίσετε και την πραγματική σας οθόνη</p>
+
+				<h6>Example of a permanently configured PC with dual monitors with xrandr with code snippet in <span class="highlight-3"> /etc/X11/xorg.conf.d/30-screen.conf</span>:</h6>
+
+<pre>
+#30-screen.conf
+Section "Monitor"
+	Identifier      "DVI-0"
+	Option          "Primary"       "true"
+EndSection
+
+Section "Monitor"
+	Identifier      "DVI-1"
+	Option          "RightOf"       "DVI-0"
+EndSection
+
+Section "Device"
+	  Identifier     "ATI Radeon HD 2600"
+	  Option         "Monitor-DVI-0" "DVI-0"
+	  Option         "Monitor-DVI-1" "DVI-1"
+EndSection
+</pre>
+
+
+							<p>Σημείωση</p>
+						<ul>
+    							<!--li>Virtual screen is limited to 2048x2048 for intel, Though it's possible to set a higher virtual resolution you will loose DRI support. There does not seem to be limits for nvidia/ati. </li-->
+							<li>Η εικονική οθόνη έχει όριο τα 2048x2048 για την intel. Είναι δυνατόν να βάλετε ψηλότερη εικονική ανάλυση αλλά θα χάσετε την υποστήριξη DRI. Δεν φαίνεται να υπάρχει όριο για τις nvidia/ati. </li>
+
+    							<!--li>TV Out does not work with ATI</li-->
+							<li>Το TV Out (έξοδος τηλεόρασης) δεν δουλεύει με ATI</li>
+
+   							<!--li> if DDC probing does no work correctly with ATI (Xorg.0.log: (WW) RADEON(0): DDC2/I2C is not properly initialised), you might not be able to overide the values with modelines</li-->
+							<li> Εάν το DDC probing δεν δουλεύει σωστά με την ATI (Xorg.0.log: (WW) RADEON(0): DDC2/I2C δεν είναι εκκινημένο σωστά), μπορεί να μην μπορέσετε να αντικαταστήσετε τις τιμές με modelines</li>
+
+							<!--li>When trying to setup a  big desktop (dual-head) and xrandr says the resolution you're requesting is bigger than the one xrandr can support, You should use "Virtual"  and the wanted resolution. (Look for the Screen Section in Apendix A)</li-->
+							<li>Όταν προσπαθείτε να ρυθμίσετε μια μεγάλη επιφάνεια εργασίας (dual-head) και το xrandr λέει ότι η ανάλυση που ζητάτε είναι μεγαλύτερη από αυτήν που υποστηρίζει το xrandr , θα πρέπει να χρησιμοποιήσετε "Virtual" (εικονικό) και την ανάλυση που θέλετε. (Ψάξτε για το κομμάτι με τις οθόνες (Screen Section) στο Προσάρτημα A)</li>
+
+							<!--li>For any video card, but intel, the virtual resolution should be big enough for both monitor's resolution. example: monitor1= 1024x768 and monitor2=1280x1024, then the virtual screen should be (1024+1280)x(1024>768) -> 2304x1024</li-->
+							<li>Για οποιαδήποτε κάρτα γραφικών εκτός της intel, η εικονική ανάλυση θα πρέπει να είναι αρκετά μεγάλη για τις αναλύσεις και των δυο οθονών. Παράδειγμα: οθόνη1= 1024x768 και οθόνη2=1280x1024, τότε η εικονική οθόνη θα πρέπει να είναι (1024+1280)x(1024&gt;768) -&gt; 2304x1024</li>
+
+						</ul>
+<div class="divider" id="aa">
+					<h6>Προσάρτημα A</h6>
+
+						<h6>Intel</h6>
+<!--pre>
+Output names:
+* LVDS: internal laptop panel
+* TMDS-1: external DVI port
+* VGA: external VGA port
+* TV: external TV output
+</pre-->
+<pre>
+Ονόματα εξόδων:
+* LVDS: εσωτερική οθόνη laptop
+* TMDS-1: εξωτερική DVI πόρτα
+* VGA: εξωτερική VGA πόρτα
+* TV: εξωτερική έξοδος τηλεόρασης
+</pre>
+						<h6>ATI</h6>
+<pre>
+Ονόματα εξόδων:
+* LVDS: εσωτερική οθόνη laptop
+* DVI-0: πρώτη εξωτερική DVI πόρτα
+* DVI-1: δεύτερη εξωτερική DVI πόρτα (αν υπάρχει)
+* VGA-0: πρώτη εξωτερική VGA πόρτα
+* VGA-1: δεύτερη εξωτερική VGA πόρτα (αν υπάρχει)
+* S-video
+</pre>
+						<h6>Nvidia</h6>
+<!--pre>
+nv driver supports RandR1.2 on G80 boards
+Output names:
+* LVDS: internal laptop panel
+* DVI0: first external DVI port
+* DVI1: second external DVI port (if present)
+</pre-->
+<pre>
+ο nv οδηγός υποστηρίζει RandR1.2 πάνω σε G80 κάρτες
+Ονόματα εξόδων:
+* LVDS: εσωτερική οθόνη laptop
+* DVI0: πρώτη εξωτερική DVI πόρτα
+* DVI1: δεύτερη εξωτερική DVI πόρτα (αν υπάρχει)
+</pre>
+				    </div>
+						<h6>Σύνδεσμοι</h6>
+							<p><a href="http://wiki.debian.org/XStrikeForce/HowToRandR12"> http://wiki.debian.org/XStrikeForce/HowToRandR12</a></p>
+							<p><a href="http://bgoglin.livejournal.com/9846.html">http://bgoglin.livejournal.com/9846.html</a></p>
+							<p><a href="http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=420419">http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=420419</a></p>
+							<p><a href="http://www.thinkwiki.org/wiki/Xorg_RandR_1.2">http://www.thinkwiki.org/wiki/Xorg_RandR_1.2</a></p>
+
+
+	</div>
+	<div class="divider" id="mon-binary">
+				<!--h2>Dual Monitors (using binaries)</h2-->
+				<h2>Δυο Οθόνες (με τη χρήση binaries)</h2>
+							<!--p> <span class="highlight-3">For proprietary drivers read the documentation from your graphic card manufacturer.</span></p-->
+							<p> <span class="highlight-3">Για κλειστού κώδικα οδηγούς, διαβάστε το εγχειρίδιο χρήσης του κατασκευαστή της κάρτας γραφικών σας.</span></p>
+
+			<h3>nvidia</h3>
+							<!--p>Use the nvidia xorg configurator <a href="http://www.sorgonet.com/linux/nv-online/"> http://www.sorgonet.com/linux/nv-online/</a> and alter your xorg files accordingly.</p-->
+							<p>Use the nvidia xorg configurator <a href="http://www.sorgonet.com/linux/nv-online/"> http://www.sorgonet.com/linux/nv-online/</a> και αλλάξτε τα xorg αρχεία σας ανάλογα.</p>
+
+			<h3>Native ATI - radeon</h3>
+
+							<!--p><a href="http://aptosid.com/index.php?name=PNphpBB2&amp;file=viewtopic&amp;p=19794#19794"> http://aptosid.com/index.php?name=PNphpBB2&amp;file=viewtopic&amp;p=19794#19794</a> has some working xorg.confs with the free radeon driver.</p-->
+							<!--<p><a href="http://aptosid.com/index.php?name=PNphpBB2&amp;file=viewtopic&amp;p=19794#19794"> http://aptosid.com/index.php?name=PNphpBB2&amp;file=viewtopic&amp;p=19794#19794</a> έχει μερικά xorg.confs που δουλεύουν με τον ελεύθερο radeon οδηγό.</p>-->
+
+							<!--p>NOTE: You will need to get the configuration information of the second monitor. To do this, you need to unplug one monitor and boot the liveCD to generate xorg.conf, copy it, then do the same with the other one.</p-->
+							<p>ΣΗΜΕΙΩΣΗ: Θα πρέπει να βρείτε τις πληροφορίες ρυθμίσεων της δεύτερης οθόνης. Για να το κάνετε αυτό θα πρέπει να αποσυνδέσετε την μια οθόνη και να εκκινήσετε από το liveCD για να δημιουργήσετε ένα xorg.conf, αντιγράψτε το και μετά κάντε το ίδιο με την άλλη οθόνη.</p>
+
+		</div>
+	<div id="rev">Τελευταία αναθεώρηση περιεχομένου 06/03/2011 2305 UTC</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,625 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>aptosid Manuals - Generic-Server-Apache</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+ <!-- Last translation revision edhunter 18/09/2010 1245 UTC-->
+<div id="menu"> <!-- menu starts here el lang maintained by  -->
+<!--aptosid Operating System Manual menu-version-02.13.2011.09.09 -->
+<!-- menu last updated by bluewater 2011.09.09 0935 hrs UTC -->
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="To aptosid.com forums and wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-el.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" />Αναζήτηση Online - Offline </a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Eπιλέξτε άλλη γλώσσα - Choose another language" alt="lang-switch" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-el.htm">Εγχειρίδιο ΛΣ aptosid</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-el.htm#welcome-gen">Εγχειρίδιο ΛΣ aptosid &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-el.htm#cred-team">Συντελεστές</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-el.htm#how-to">Πως να χρησιμοποιήσετε αυτό το εγχειρίδιο &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-el.htm#how-to">Πως να χρησιμοποιήσετε αυτό το εγχειρίδιο</a></li>
+					  <li><a href="welcome-el.htm#table-contents">Πίνακας περιεχομένων</a></li>
+					</ul>
+					</li>
+		<li><a href="help-el.htm#help-gen">Βοήθεια &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-el.htm#help-gen">Που να βρείτε βοήθεια</a></li>
+					  <li><a href="help-el.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-el.htm#welcome-quick">aptosid Οδηγός Γρήγορης Αναφοράς (Quick Start Guide)</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-el.htm">Περιεχόμενα ISO, Εκδόσεις, Κατέβασμα και Εγγραφή</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-el.htm#cd-content">Περιεχόμενα ISO και απαιτήσεις συστήματος &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-el.htm#rolling">Σημειώσεις Έκδοσης</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-el.htm#download-aptosid">aptosid Mirrors, Κατέβασμα και Εγγραφή &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-el.htm#md5">md5 Checksum</a></li>
+					  <li><a href="cd-dl-burning-el.htm#burn-nero">Γράφοντας το ISO στα Windows</a></li>
+					  <li><a href="cd-dl-burning-el.htm#burn-linux">Γράφοντας το ISO στο Linux</a></li>
+					  <li><a href="cd-no-gui-burn-el.htm#burning-no-gui">burniso script</a></li>
+					  <li><a href="cd-no-gui-burn-el.htm#burn-no-gui-gen">Εγγραφή χωρίς γραφικό περιβάλλον</a></li>
+					  <li><a href="cd-dl-burning-el.htm#download-aptosid">aptosid Mirrors Κατεβάσματος</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-el.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-el.htm#rootpw">Κωδικός υπερχρήστη (root) στο aptosid-Live ISO</a></li>
+				<li><a href="live-mode-el.htm#live-cd-installsoft">Εγκατάσταση προγραμμάτων σε περιβάλλον Live-ISO</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-el.htm">Το Τερματικό / Κονσόλα</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-el.htm#term-kon">Τερματικό / Κονσόλα &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-el.htm#term-kon">Τερματικό / Κονσόλα</a></li>
+					  <li><a href="term-konsole-el.htm#colours"> Coloured terminal prompts</a></li>
+					  <li><a href="term-konsole-el.htm#cli-help">Βοήθεια από την γραμμή εντολών</a></li>
+					  <li><a href="help-el.htm#init3-tools">Εργαλεία να ξέρετε για text mode (tty) - init 3</a></li>
+					  <li><a href="term-konsole-el.htm#term-cmds">Λίστα εντολών του Linux</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-el.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-el.htm">CheatCodes</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-el.htm#cheatcodes">Cheatcodes αποκλειστικά για το aptosid Live-ISO</a></li>
+				<li><a href="cheatcodes-el.htm#cheatcodes-linux">Cheatcodes γενικά για το Linux</a></li>
+				<li><a href="cheatcodes-vga-el.htm#vga">Κωδικοί VGA</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-el.htm">Partitioning the Hard Drive - Traditional, GPT and LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-el.htm#hd-ntfs3g">Γράφοντας σε NTFS κατάτμηση με το ntfs-3g</a></li>
+			<li><a href="part-lvm-el.htm#part-lvm">Partitioning to use LVM - Logical Volume Manager</a></li>
+			<li><a href="part-gparted-el.htm#partition">Δημιουργία κατατμήσεων με χρήση γραφικών (GUI) εργαλείων &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-el.htm#partition">Δημιουργία κατατμήσεων στον δίσκο χρησιμοποιώντας το  GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-el.htm#ntfs">Αλλαγή μεγέθους σε NTFS κατάτμηση χρησιμοποιώντας το GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-el.htm#partition">Δημιουργία κατατμήσεων με χρήση εργαλείων κονσόλας (CLI) &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-el.htm#partition">Δημιουργία κατατμήσεων στον σκληρό δίσκο χρησιμοποιώντας το cfdisk</a></li>
+					    <li><a href="part-cfdisk-el.htm#formating">Διαμόρφωση (format) μετά την δημιουργία κατάτμησης, με το cfdisk</a></li>
+					    <li><a href="part-gdisk-el.htm#gdisk-6">Formatting after partitioning with gdisk</a></li>
+					    <li><a href="part-gdisk-el.htm#gdisk-1">GPT Partitioning with gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-el.htm#part-example">Γενικά για κατατμήσεις &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-el.htm#part-example">Παραδείγματα για το μέγεθος των κατατμήσεων</a></li>
+					  <li><a href="part-uuid-el.htm#uuid">UUID, Rebuilding fstab and creating new mount points</a></li>
+					  <li><a href="part-cfdisk-el.htm#disknames">Ονομασία δίσκων εν συντομία</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-el.htm">Επιλογές εγκατάστασης - HD, USB, VM and Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-el.htm#Inst-prep">Προετοιμασία Εγκατάστασης &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-el.htm#Inst-prep">Προετοιμασία Εγκατάστασης</a></li>
+					  <li><a href="hd-install-el.htm#Installation">Εγκατάσταση στον σκληρό δίσκο</a></li>
+					  <li><a href="hd-install-el.htm#first-hd-boot">Πρώτη εκκίνηση</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-el.htm#fromiso">Εκκίνηση fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-el.htm#fromiso">Εκκίνηση fromiso - Γενικά</a></li>
+					  <li><a href="hd-install-opts-el.htm#grub2-fromiso">Εκκίνηση 'fromiso' με Grub 2</a></li>
+					  <li><a href="hd-install-opts-el.htm#fromiso-persist">fromiso και persist</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-el.htm#usb-hd">Εγκατάσταση σε USB δίσκους &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-el.htm#usb-hd">Eγκατάσταση σε USB σκληρό δίσκο - aptosid συγκεκριμένα - aptosid-σε-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-el.htm#raw-usb">Εγραφή του aptosid σε USB/SSD stick με Linux, MS Windows ή Mac OS X σύστημα</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-el.htm#install-crypt">Installing to encryted partitions - cryptroot</a></li>
+		  <li><a href="nbdboot-el.htm#nbd1">Εκκίνηση του aptosid μέσω δικτύου</a></li>
+		  <li><a href="hd-install-vmopts-el.htm#vm">Επιλογές εγκατάστασεις σε Εικονική Μηχανή (Virtual Machine)</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-el.htm">Κάρτες γραφικών, Οθόνες, Xorg &amp; Διάφοροι Οδηγοί</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-el.htm#mon-res">Ανάλυση Οθόνης (screen) και Οθόνες (monitor)  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-el.htm#mon-res">Ανάλυση Οθόνης (screen) και Οθόνες (monitor)</a></li>
+					  <li><a href="hw-dev-mon-el.htm#xrandr">Δύο Οθόνες (Dual Monitors) και xrandr</a></li>
+					  <li><a href="hw-dev-mon-el.htm#mon-binary">Δύο Οθόνες (με χρήση binaries)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-el.htm#foss-xorg">GPU drivers &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-el.htm#ati-3d">AMD/ATI 3D drivers</a></li>
+					  <li><a href="gpu-el.htm#intel">Intel 2D and 3D drivers</a></li>
+					  <li><a href="gpu-el.htm#nvidia">Nvidia 3D drivers</a></li>
+					  <li><a href="gpu-el.htm#foss-xorg">Open Source Xorg drivers</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-el.htm#fw-detect">Firmware detection - non-free </a></li>
+			  <li><a href="nf-firm-el.htm#non-free-firmware">Adding non-free to Sources List</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-el.htm">Διαχείριστες Παραθύρων</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-el.htm">KDE and XFCE Διαχείριστες Παραθύρων &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-el.htm#xfce-notes">Χρήσιμα extras για Xfce</a></li>
+					    <li><a href="wm-dm-el.htm#install-add">Χρήσιμα extras για KDE</a></li>
+					    <li><a href="wm-dm-el.htm#desk-freeze">Κόλλημα επιφάνειας εργασίας</a></li>
+					    <li><a href="wm-dm-el.htm#kde-login">Δεν μπορώ να εισέλθω στο KDE</a></li>
+					    <li><a href="wm-dm-el.htm#ch-th">Aλλάζοντας Θέματα (Themes)</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-el.htm#dm">Installing additional Display Managers</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-el.htm">Σύνδεση στο διαδίκτυο, WiFi, LAN και Δίκτυα</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-el.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-el.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-el.htm#serv-ftp">FTP Πελάτες</a></li>
+					    <li><a href="lamp-apache-el.htm#serv-sec">Πρωτόκολλα ασφαλείας</a></li>
+					    <li><a href="lamp-apache-el.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-el.htm#serv-mysql">MySQL Ρύθμιση</a></li>
+					    <li><a href="lamp-ppp-el.htm#serv-php">PHP με Apache</a></li>
+					    <li><a href="ntp-server-el.htm#ntp-server">Timeserver Ρύθμιση</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-el.htm#tor">Firewalls και Privacy &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-el.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-el.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-el.htm#firewalls">Firewalls</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-el.htm#ssh-x">SSH και Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-el.htm#setup">Samba-Server Ρύθμιση</a></li>
+						  <li><a href="samba-el.htm#configure">Ρύθμιση SAMBA (Windows)</a></li>
+						  <li><a href="ssh-el.htm#ssh-fs">SSH Απομακρυσμένη Προσάρτυση</a></li>
+						  <li><a href="ssh-el.htm#ssh-x">Παραθυρικές Eφαρμογές μέσω SSH</a></li>
+						  <li><a href="ssh-el.htm#ssh-f">GUI SSH με Konqueror</a></li>
+						  <li><a href="ssh-el.htm#ssh-w">SSH X-Forwarding από ένα Windows-PC</a></li>
+						  <li><a href="ssh-el.htm#ssh">SSH και Ασφάλεια</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-el.htm#netcardconfig">WIFI Συνδέσεις &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-el.htm#netcardconfig">Mπαίνοντας στο Δίκτυο - Ceni</a></li>
+						    <li><a href="inet-wpagui-el.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-el.htm#net-set1">WiFi - Ρύθμιση του WiFi Roaming</a></li>
+						    <li><a href="inet-wpa-el.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-el.htm#hotswitch">Εναλλαγή δικτύου μεταξύ WiFi και σύρματος</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-el.htm#netcardconfig">Wired (σύρμα) Συνδέσεις &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-el.htm#dial-mod">56k Modems</a></li>
+						    <li><a href="inet-ceni-el.htm#netcardconfig">Mπαίνοντας στο Δίκτυο - Ceni</a></li>
+					</ul>
+					</li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-el.htm">Διαχείριση Πακέτων και dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-el.htm#apt-cook">APT Cookbook and Sources list &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-el.htm#apt-cook">APT-Οδηγός και Λίστες Πηγών (Sources list)</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-install">Εγκαθιστώντας ένα νέο πακέτο</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-delete">Διαγράφοντας ένα πακέτο</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-downgrade">Υποβαθμίζοντας / Κρατώντας (Hold) ένα πακέτο</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-cache">Αναζήτηση πακέτων με apt-cache</a></li>
+					    <li><a href="sys-admin-apt-el.htm#gui-pacsea">GUI Package searching</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-el.htm#kern-upgrade">Αναβαθμίζοντας τον πυρήνα &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-el.htm#kern-remove">Διαγραφή ενός πυρήνα</a></li>
+					    <li><a href="sys-admin-kern-upg-el.htm#kern-upgrade">Αναβαθμίζοντας τον πυρήνα</a></li>
+					    <li><a href="sys-admin-kern-upg-el.htm#dmakms">Εγκατάσταση kernel modules δυναμικά με dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-el.htm#apt-upgrade">Aναβάθμιση σε ένα Εγκατεστημένο Σύστημα - dist-upgrade - Γενικά &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-el.htm#live-cd-upgrade">Αναβαθμίζοντας χρησιμοποιώντας το Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-el.htm#approx">dist-upgrade πολλαπλών PC σε ένα LAN</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-upgrade">Aναβάθμιση σε ένα Εγκατεστημένο Σύστημα - dist-upgrade - Γενικά</a></li>
+					    <li><a href="sys-admin-apt-el.htm#du-st">Aναβάθμιση σε ένα Εγκατεστημένο Σύστημα - dist-upgrade - Τα Βήματα</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-el.htm">Διαχείριση Συστήματος</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-el.htm#bois-prep">Αναβάθμιση του BIOS με το FreeDOS</a></li>
+		<li><a href="vir-rkits-el.htm#virus-rkits">Ανιχνευτές Iών και Rootkits</a></li>
+		<li><a href="hd-install-el.htm#adduser">Προσθήκη χρηστών και Passwords &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-el.htm#adduser">Προσθήκη ενός νέου χρήστη</a></li>
+					    <li><a href="sys-admin-gen-el.htm#pw-lost">Χαμένο password root, νέα passwords</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-el.htm#start-services">Υπηρεσίες και init runlevels &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-el.htm#start-services">Ενεργοποίηση / Απενεργοποίηση Υπηρεσιών (Services)</a></li>
+					    <li><a href="sys-admin-gen-el.htm#pkill">Killing a service or process</a></li>
+					    <li><a href="sys-admin-gen-el.htm#init">aptosid Επίπεδα εκτέλεσης (runlevels) - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-el.htm#rsync">Backup του συστήματος &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-el.htm#rdiff">Back-Up με rdiff</a></li>
+					    <li><a href="sys-admin-rsync-el.htm#rsync">Back-Up με rsync</a></li>
+					    <li><a href="home-el.htm#home-bu">Μεταφορά του /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-el.htm#fonts">CUPS, Γραμματοσειρές και Ήχος &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-el.htm#fonts">Γραμματοσειρές</a></li>
+					     <li><a href="sys-admin-gen-el.htm#cups">CUPS - Σύστημα Εκτύπωσης</a></li>
+					     <li><a href="sys-admin-gen-el.htm#sound">Mixers Ήχου</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-el.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-el.htm#chroot">Grub2 - Recovering Grub with chroot</a></li>
+					    <li><a href="sys-admin-grub2-el.htm#mbr-over-grub2">Grub2 - MBR Overwritten</a></li>
+					    <li><a href="sys-admin-grub2-el.htm#multi-os">Grub2 - Dual και Multibooting</a></li>
+					    <li><a href="sys-admin-grub2-el.htm#grub1-grub2">Grub2 -Αναβάθμιση α</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Sponsored by webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="../lib/sponsor-logo/webtropia-logo.png" title="aptosid is proudly hosted by webtropia.com" alt="aptosid is proudly hosted by webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div>
+<div id="main-page">
+<div class="divider" id="serv-apache">
+			<h2 id="top-header">aptosid LAMP Stack</h2>
+
+				<!--p>The acronym LAMP refers to a set of free software programs commonly used together to run dynamic Web sites or servers<br />
+				Linux, the operating system<br />
+				Apache, the Web server<br />
+				MySQL, the database management system (or database server)<br />
+				Perl, PHP, and/or Python, scripting languages</p-->
+				<p>Το ακρώνυμο LAMP αναφέρεται σε ένα σετ από ελεύθερου λογισμικού εφαρμογές που χρησιμοποιούνται συνήθως σε συνεργασία για το τρέξιμο δυναμικών ιστοσελίδων ή διακομιστών (servers)<br />
+				Linux, το λειτουργικό σύστημα<br />
+				Apache, ο διακομιστής ιστοσελίδων (web server)<br />
+				MySQL, το σύστημα διαχείρισης βάσεων δεδομένων (ή ο διακομιστής βάσεων δεδομένων (database server))<br />
+				Perl, PHP, ή/και Python, γλώσσες για scripting</p>
+
+				<!--h5 class="highlight-2">WARNING: Never use your day-to-day PC to act as an internet web  server! Use a dedicated PC to be an internet web server and let it do nothing else!</h5-->
+				<h5 class="highlight-2">ΠΡΟΕΙΔΟΠΟΙΗΣΗ: Ποτέ μην χρησιμοποιείτε τον ηλεκτρονικό σας υπολογιστή που έχετε για τις καθημερινές δουλειές σας να παίζει τον ρόλο διαδικτυακού διακομιστή ιστοσελίδων! Χρησιμοποιήστε ένα ειδικό υπολογιστή για διαδικτυακό διακομιστή ιστοσελίδων και μην τον αφήσετε να κάνει τίποτε άλλο!</h5>
+
+				<!--p>Server uses:<br />
+				a) <span class="highlight-3">a local test server for web designers without internet connectivity which is the scope of this topic;</span><br />
+				b) a private "closet" server connected to the net;<br />
+				c) a private web server fully propagated to the internet<br />
+				d) a commercial web server which is beyond the scope of this manual</p-->
+				<p>Χρήσεις διακομιστή:<br />
+				a) <span class="highlight-3">σαν τοπικός διακομιστής για τεστ (local test server) για σχεδιαστές ιστοσελίδων χωρίς σύνδεση στο διαδίκτυο, που είναι και ο σκοπός αυτού του θέματος,</span><br />
+				b) σαν ιδιωτικός διακομιστής "ντουλάπας" ("closet" server) με σύνδεση στο δίκτυο,<br />
+				c) σαν ιδιωτικός διακομιστής ιστοσελίδων με πλήρη διάδοση στο διαδίκτυο<br />
+				d) σαν εμπορικός διακομιστής ιστοσελίδων, που είναι πέραν του σκοπού αυτού του εγχειριδίου</p>
+
+
+			<!--h5>Minimum Requirements</h5-->
+			<h5>Ελάχιστες Απαιτήσεις</h5>
+				<!--p>At least 256MB of RAM available. Anything less than this minimum ram will cause lot of problems since running a server with mysql  requires lot of RAM to run properly. Mysql will error of "cannot connect to mysql.sock" if you dont have enough memory in your server.</p-->
+				<p>Πρέπει να έχετε ελεύθερα τουλάχιστον 256MB RAM. Οτιδήποτε λιγότερο από αυτό το ελάχιστο θα δημιουργήσει πολλά προβλήματα γιατί το τρέξιμο ενός διακομιστή με mysql χρειάζεται πολλή RAM για να τρέξει σωστά. Η Mysql θα βγάλει σαν μήνυμα λάθους "cannot connect to mysql.sock" εάν δεν έχει αρκετή μνήμη ο διακομιστής σας.</p>
+
+			<!--h4>The aptosid Generic_Server Package</h4-->
+			<!--<h4>Το πακέτο γενικού_διακομιστή του aptosid (Generic_Server Package)</h4>-->
+
+				<!--p>The aptosid Generic_server consists of a prepackaged installation via the meta-package installer The apps that will be installed are:</p-->
+				<!--<p>Το πακέτο γενικού_διακομιστή του aptosid αποτελείτε από μια προ συσκευασμένη εγκατάσταση μέσω του meta-package εγκαταστάτη. Οι εφαρμογές που θα εγκατασταθούν είναι:</p>-->
+
+							<!--p>The packages you will need to install are:</p-->
+							<p>Τα πακέτα που θα πρέπει να εγκαταστήσετε είναι:</p>
+<pre>
+apache2
+apache2-utils
+apache2-mpm-prefork
+php5 php5-common
+mysql-server
+mysql-common
+libapache2-mod-php5
+php5-mysql
+phpmyadmin
+</pre>
+				<!--p class="highlight-2">WARNING </p-->
+				<p class="highlight-2">ΠΡΟΕΙΔΟΠΟΙΗΣΗ </p>
+<pre>
+apt-get remove --purge splashy
+</pre>
+				<!--p class="highlight-2">As splashy always breaks mysql</p-->
+				<p class="highlight-2">Γιατί το splashy πάντα "σπάζει" την mysql</p>
+
+					<!--p>The Apache configuration file is located at:<span class="highlight-3">/etc/apache2/apache2.conf</span>  and your web folder is <span class="highlight-3">/var/www</span> </p-->
+					<p>Το αρχείο ρύθμισης του Apache βρίσκεται στο: <span class="highlight-3">/etc/apache2/apache2.conf</span>  και ο φάκελος ιστοσελίδας σας είναι <span class="highlight-3">/var/www</span> </p>
+
+					<!--p>To check whether php is installed and running properly, just create a test.php in your /var/www folder with phpinfo() function exactly as shown below.</p-->
+					<p>Για να ελέγξετε αν η php είναι εγκατεστημένη και δουλεύει σωστά, απλά δημιουργήστε ένα test.php αρχείο μέσα στο /var/www φάκελο σας με phpinfo() εντολή ακριβώς όπως σας δείχνετε από κάτω.</p>
+<pre>
+mcedit /var/www/test.php
+
+# test.php
+&lt;?  phpinfo(); ?&gt;
+</pre>
+					<!--p>Point your browser to:</p-->
+					<p>Γράψτε στον περιηγητή (browser) δικτύου σας:</p>
+<pre>
+http://localhost/test.php
+ή
+http://η_ip_σας:80/test.php
+</pre>
+					<!--p>This should show all your php configuration and default settings.</p-->
+					<p>Αυτό θα πρέπει να δείξει όλες τις php ρυθμίσεις (configuration) και προεπιλεγμένες ρυθμίσεις (default settings).</p>
+
+					<!--p>You can edit necessary values or setup virtual domains using apache configuration file.</p-->
+					<p>Μπορείτε να επεξεργαστείτε απαραίτητες τιμές ή να ορίσετε εικονικά domains χρησιμοποιώντας το αρχείο ρυθμίσεων του apache.</p>
+
+
+					<!--p>If you want to test your installation go to your browser and type the following</p-->
+					<p>Αν θέλετε να δοκιμάσετε την εγκατάσταση σας πηγαίνετε στον περιηγητή δικτύου σας και γράψτε τα ακόλουθα</p>
+<pre>
+http://η_ip_διεύθυνση_σας/apache2-default/
+</pre>
+					<!--p>This should display welcome message then your installation is correct.</p-->
+					<p>Αν η εγκατάσταση έγινε με επιτυχία και σωστά, θα δείτε ένα μήνυμα καλώς ορίσματος.</p>
+
+					<!--p>Default document root directory for apache2 is <span class="highlight-3">/var/www</span> Change this to: </p-->
+					<p>Ο προ επιλεγμένος root κατάλογος (directory) για τον apache2 είναι ο <span class="highlight-3">/var/www</span> Αλλάξτε το αυτό σε : </p>
+<pre>
+mkdir /home/ο_εαυτός_μου/www
+ln -s /home/ο_εαυτός_μου/www /var/www
+</pre>
+					<!--p>By doing the above commands you can now edit your web site inside your home as normal user.</p-->
+					<p>Εκτελώντας τις παραπάνω εντολές, μπορείτε να επεξεργαστείτε την ιστοσελίδα σας μέσα στο home σαν απλός χρήστης.</p>
+
+	</div>
+<div class="divider" id="serv-ftp">
+			<h2>FTP Πελάτες (Clients)</h2>
+				<!--p>Use SSH and read carefully the <a href="ssh-el.htm">SSH topic</a> , also aptosid has another built in FTP client in the form of Konqueror to enable you to upload your files.</p-->
+				<p>Χρησιμοποιήστε SSH και διαβάστε προσεκτικά το <a href="ssh-el.htm">SSH θέμα</a> , επιπλέον το aptosid παρέχει μαζί με τον Konqueror έναν FTP πελάτη ο οποίος σας δίνει την δυνατότητα να ανεβάσετε τα αρχεία σας.</p>
+
+	</div>
+<div class="divider" id="serv-sec">
+			<!--h2>Enabling good security protocols for Web Servers</h2-->
+			<h2>Ενεργοποιώντας καλά πρωτόκολλα ασφαλείας για Διακομιστές Διαδικτύου (Web Servers)</h2>
+
+				<h3>Firewalls</h3>
+				<!--p><span class="highlight-2">Without a firewall there is absolutely no  security for your server. Remember block EVERYTHING until you need it, then reblock it!</span>.</p-->
+				<p><span class="highlight-2">Χωρίς ένα firewall δεν υπάρχει καμία απολύτως ασφάλεια για τον διακομιστή σας. Θυμηθείτε, εμποδίστε (block) ΤΑ ΠΑΝΤΑ έως ότου τα χρειαστείτε και μετά ξανά εμποδίστε τα!</span>.</p>
+<pre>
+21 (ftp)
+22 (SSH)
+25 110 (email)
+443 (SSL http ή https)
+993 (imap ssl)
+995 (pop3 ssl)
+80 (http)
+και οποιοδήποτε άλλο χρησιμοποιούμενο port!
+</pre>
+
+				<!--h3>Protect Server Files by Default</h3-->
+				<h3>Βασική Προστασία των Αρχείων του Διακομιστή</h3>
+
+					<!--p>One aspect of Apache which is occasionally misunderstood is the feature of default access. That is, unless you take steps to change it, if the server can find its way to a file through normal URL mapping rules, therefore it can serve it to clients.</p-->
+					<p>Μια πτυχή του Apache η οποία παρερμηνεύεται περιστασιακά είναι το χαρακτηριστικό (feature) της βασικής πρόσβασης (default access). Αυτό σημαίνει, αν δεν ληφθούν μέτρα για να αλλαχθεί αυτό, ότι αν ο διακομιστής μπορεί να βρει το μονοπάτι ενός αρχείου μέσω συνηθισμένων κανόνων χαρτογράφησης (mapping rules) URL, τότε μπορεί να το δώσει (serve) στους πελάτες (clients).</p>
+
+					<!--p>For instance, consider the following example:</p-->
+					<p>Για παράδειγμα δείτε την παρακάτω περίπτωση:</p>
+<pre>
+ 1. # cd /; ln -s / public_html
+ 2. Accessing http://localhost/~root/
+</pre>
+					<!--p class="highlight-2">This would allow clients to walk through the entire filesystem! To work around this, add the following block to your server's configuration:</p-->
+					<p class="highlight-2">Αυτό θα επέτρεπε στους πελάτες να δουν όλο το σύστημα αρχείων σας! Για να το αποφύγετε αυτό, προσθέστε τα παρακάτω στις ρυθμίσεις του διακομιστή σας:</p>
+<pre>
+&lt;Directory /&gt;
+   Order Deny,Allow
+   Deny from all
+&lt;/Directory&gt;
+</pre>
+				<!--p>This will forbid default access to filesystem locations. Add appropriate &lt;Directory&gt; blocks to allow access only in those areas you wish. For example,</p-->
+				<p>Αυτό θα απαγορέψει την βασική πρόσβαση σε σημεία του συστήματος αρχείων. Προσθέστε τις κατάλληλες &lt;Directory&gt; γραμμές για να επιτρέψετε την πρόσβαση μόνο στους χώρους που θέλετε. Για παράδειγμα ,</p>
+<pre>
+&lt;Directory /usr/users/*/public_html&gt;
+    Order Deny,Allow
+    Allow from all
+&lt;/Directory&gt;
+&lt;Directory /usr/local/httpd&gt;
+    Order Deny,Allow
+    Allow from all
+ &lt;/Directory&gt;
+</pre>
+				<!--p>Pay particular attention to the interactions of &lt;Location&gt; and &lt;Directory&gt; directives; for instance, even if &lt;Directory /&gt; denies access, a &lt;Location /&gt; directive might overturn it.</p-->
+				<p>Δώστε ιδιαίτερη προσοχή στις αλληλεπιδράσεις (interactions) των &lt;Location&gt; και των &lt;Directory&gt; οδηγιών; Για παράδειγμα αν το &lt;Directory /&gt; δεν επιτρέπει την πρόσβαση, μια &lt;Location /&gt; οδηγία μπορεί να το ανατρέψει.</p>
+
+				<!--p>Also be wary of playing games with the UserDir directive; setting it to something like "./" would have the same effect, for root, as the first example above. If you are using Apache 1.3 or above, we strongly recommend that you include the following line in your server configuration files:</p-->
+				<p>Επίσης να είστε επιφυλακτική με την UserDir οδηγία. Ρυθμίζοντας το σε κάτι όπως "./" θα έχει το ίδιο αποτέλεσμα, για τον root, όπως το πρώτο παράδειγμα πιο πάνω. Εάν χρησιμοποιείτε Apache 1.3 ή νεότερο, σας συνιστούμε να συμπεριλάβετε την πιο κάτω γραμμή στα αρχεία ρύθμισης του διακομιστή σας:</p>
+
+<pre>
+UserDir disabled root
+</pre>
+
+	</div>
+<div class="divider" id="serv-ssl">
+			<h2>SSL</h2>
+
+ 				<!--p>Run the script “apache2-ssl-certificate”</p-->
+				<p>Τρέξτε το script “apache2-ssl-certificate”</p>
+<pre>
+# apache2-ssl-certificate
+</pre>
+				<!--p>The following  screen will appear or you to  enter all the required information.</p-->
+				<p>Η παρακάτω οθόνη θα εμφανιστεί για να δώσετε όλες τις απαιτούμενες πληροφορίες.</p>
+<pre>
+Creating self-signed certificate
+replace it with one signed by a certification authority (CA) enter your ServerName at the Common Name prompt. If you want your certificate to expire after x days call this programm
+with -days x
+-----
+Generating a 1024 bit RSA private key
+--------
+writing new private key to '/etc/apache2/ssl/apache.pem'
+--------
+You are about to be asked to enter information that will be incorporated into your certificate request.
+-----------
+What you are about to enter is what is called a Distinguished Name or a DN. There are quite a few fields but you can leave some blank. For some fields there will be a default value,
+----------
+If you enter '.', the field will be left blank.
+</pre>
+<pre>
+Country Name (2 letter code) [GB]:
+
+State or Province Name (full name) [Some-State]:
+
+Locality Name (eg, city) []:
+
+Organization Name (eg, company; recommended) []:
+
+Organizational Unit Name (eg, section) []:
+
+server name (eg. ssl.domain.tld; required!!!) []:
+
+Email Address []:
+</pre>
+
+					<!--p>Run the script “a2enmod ssl”  i.e</p-->
+					<p>Τρέξτε το script “a2enmod ssl”  πχ</p>
+<pre>
+ # a2enmod ssl
+</pre>
+ 					<!--p>This  will automatically generate a symbolic link between mods- available and mods – enabled </p-->
+					<p>Αυτό θα δημιουργήσει αυτόματα ένα συμβολικό σύνδεσμο μεταξύ mods- available και mods – enabled </p>
+
+					<!--p>Make a copy of '/etc/apache2/sites-available/default' file in the /etc/apache2/sites-available/ - call it 'ssl'</p-->
+					<p>Δημιουργήστε ένα αντίγραφο του αρχείου '/etc/apache2/sites-available/default' μέσα στον φάκελο /etc/apache2/sites-available/ - ονομάστε το 'ssl'</p>
+<pre>
+# cp /etc/apache2/sites-available/default /etc/apache2/sites-available/ssl
+</pre>
+					<!--p>Make a sym-link to this new site configuration for this use</p-->
+					<p>Δημιουργήστε ένα συμβολικό σύνδεσμο για το νέο αρχείο ρύθμισης για να το χρησιμοποιήσετε</p>
+<pre>
+#  ln -s /etc/apache2/sites-available/ssl /etc/apache2/sites-enabled/
+(ή)
+#a2ensite ssl
+</pre>
+ 					<!--p>If you want to change the any basic configuration settings change in /etc/apache2/apache2.conf and if you want to change the default document root change in /etc/apache2/sites-available/default file and restart the apache server.</p-->
+					<p>Εάν θέλετε να αλλάξετε βασικές ρυθμίσεις κάντε το μέσα στο /etc/apache2/apache2.conf και αν θέλετε να κάνετε αλλαγές στο βασικό document root κάντε τις μέσα στο αρχείο /etc/apache2/sites-available/default και επανεκκινήστε τον διακομιστή apache.</p>
+
+ 					<!--p>To Restart Apache server use the following command</p-->
+					<p>Για να επανεκκινήσετε τον διακομιστή Apache, χρησιμοποιείστε την πιο κάτω εντολή</p>
+<pre>
+#/etc/init.d/apache2 restart
+</pre>
+ 					<!--p>Now we need to change the port address in /etc/apache2/ports.conf by default it will listen port 80 and now we are installing with SSL we need to change port 443 to listen</p-->
+					<p>Τώρα πρέπει να αλλάξουμε το port μέσα στο /etc/apache2/ports.conf . Εκ προεπιλογής θα "ακούει" το port 80 και επειδή τώρα κάνουμε εγκατάσταση με SSL, πρέπει να το αλλάξουμε για να "ακούει" το port 443</p>
+<pre>
+ Listen 443
+</pre>
+					<!--p>Edit /etc/apache2/sites-available/ssl (or whatever you called your new ssl site's config) and change port 80 in the name of the site to 443.</p-->
+					<p>Επεξεργαστείτε το /etc/apache2/sites-available/ssl (ή οποιοδήποτε όνομα δώσατε στο αρχείο ρύθμισης του ssl σας) και αλλάξτε το port 80 σε port 443.</p>
+
+					<!--p>Add below two lines some where in /etc/apache2/apache2.conf file</p-->
+					<p>Προσθέστε τις πιο κάτω γραμμές στο αρχείο /etc/apache2/apache2.conf</p>
+<pre>
+  SSLEngine On
+
+  SSLCertificateFile /etc/apache2/ssl/apache.pem
+</pre>
+					<!--p>Edit SSLCertificateFile /etc/apache2/ssl/apache.pem and enter the locations of certificate file and certificate key file .Below one is the example</p-->
+					<p>Επεξεργαστείτε το SSLCertificateFile /etc/apache2/ssl/apache.pem και καταχωρίστε τις τοποθεσίες του πιστοποιητικού αρχείου (certificate file) και του πιστοποιητικού κλειδιού αρχείου (certificate key file). Από κάτω είναι ένα παράδειγμα</p>
+<pre>
+SSLCertificateFile /etc/apache2/ssl/online.test.net.crt
+SSLCertificateKeyFile /etc/apache2/ssl/online.test.net.key
+</pre>
+					<!--p>Set ServerSignature off, follow these steps edit the /etc/apache2/apache2.conf  file and add these two lines</p-->
+					<p>Για να θέσετε το ServerSignature στο off (κλειστό), επεξεργαστείτε το αρχείο /etc/apache2/apache2.conf  και προσθέστε αυτές τις δύο γραμμές</p>
+<pre>
+ ServerSignature Off
+ ServerTokens ProductOnly
+</pre>
+
+ 					<!--p>If you want to allow the different index files types check for the following line in /etc/apache2/apache2.conf file</p-->
+					<p>Αν θέλετε να επιτρέπετε διαφόρων τύπων αρχεία index, κοιτάξτε για την πιο κάτω γραμμή μέσα στο /etc/apache2/apache2.conf αρχείο</p>
+<pre>
+ DirectoryIndex index.html index.cgi index.pl index.php index.xhtml index.shtml
+</pre>
+ 					<!--p>Restart the apache server</p-->
+					<p>Επανεκκινήστε τον διακομιστή apache</p>
+<pre>
+ /etc/init.d/apache2 restart
+</pre>
+
+					<!--p>You should now have a test server sandbox, should you want to connect to the interent, with it, <span class="highlight-2">DONT!... Use another PC purely dedicated to being an internet  web server!</span></p-->
+					<p>Τώρα θα πρέπει να έχετε ένα διακομιστή για δοκιμές. Θέλετε να ενωθείτε στο διαδίκτυο με αυτόν, <span class="highlight-2">ΜΗΝ ΤΟ ΚΑΝΕΤΕ! ... Χρησιμοποιείστε ένα άλλο υπολογιστή που είναι αφιερωμένος στο να είναι διακομιστής διαδικτύου</span></p>
+
+	</div>
+					<!--p>Sources:</p-->
+					<p>Πηγές:</p>
+
+					<p><a href="http://www.mysql-apache-php.com/"> http://www.mysql-apache-php.com</a></p>
+					<p><a href="http://httpd.apache.org/docs/1.3/misc/security_tips.html"> http://httpd.apache.org/docs/1.3/misc/security_tips.html</a></p>
+					<p><a href="http://www.debianhelp.co.uk/webserver.htm"> http://www.debianhelp.co.uk/webserver.htm</a></p>
+
+			<div id="rev">Τελευταία αναθεώρηση περιεχομένου 14/08/2010 0100 UTC</div>
+
+</div>
+</body>
+</html>

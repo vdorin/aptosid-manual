@@ -1,0 +1,641 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>aptosid Manuals - VM Installation Options</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision by edhunter 19/09/2010 1900 hrs UTC -->
+<div id="menu"> <!-- menu starts here el lang maintained by  -->
+<!--aptosid Operating System Manual menu-version-02.13.2011.09.09 -->
+<!-- menu last updated by bluewater 2011.09.09 0935 hrs UTC -->
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="To aptosid.com forums and wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-el.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" />Αναζήτηση Online - Offline </a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Eπιλέξτε άλλη γλώσσα - Choose another language" alt="lang-switch" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-el.htm">Εγχειρίδιο ΛΣ aptosid</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-el.htm#welcome-gen">Εγχειρίδιο ΛΣ aptosid &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-el.htm#cred-team">Συντελεστές</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-el.htm#how-to">Πως να χρησιμοποιήσετε αυτό το εγχειρίδιο &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-el.htm#how-to">Πως να χρησιμοποιήσετε αυτό το εγχειρίδιο</a></li>
+					  <li><a href="welcome-el.htm#table-contents">Πίνακας περιεχομένων</a></li>
+					</ul>
+					</li>
+		<li><a href="help-el.htm#help-gen">Βοήθεια &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-el.htm#help-gen">Που να βρείτε βοήθεια</a></li>
+					  <li><a href="help-el.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-el.htm#welcome-quick">aptosid Οδηγός Γρήγορης Αναφοράς (Quick Start Guide)</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-el.htm">Περιεχόμενα ISO, Εκδόσεις, Κατέβασμα και Εγγραφή</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-el.htm#cd-content">Περιεχόμενα ISO και απαιτήσεις συστήματος &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-el.htm#rolling">Σημειώσεις Έκδοσης</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-el.htm#download-aptosid">aptosid Mirrors, Κατέβασμα και Εγγραφή &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-el.htm#md5">md5 Checksum</a></li>
+					  <li><a href="cd-dl-burning-el.htm#burn-nero">Γράφοντας το ISO στα Windows</a></li>
+					  <li><a href="cd-dl-burning-el.htm#burn-linux">Γράφοντας το ISO στο Linux</a></li>
+					  <li><a href="cd-no-gui-burn-el.htm#burning-no-gui">burniso script</a></li>
+					  <li><a href="cd-no-gui-burn-el.htm#burn-no-gui-gen">Εγγραφή χωρίς γραφικό περιβάλλον</a></li>
+					  <li><a href="cd-dl-burning-el.htm#download-aptosid">aptosid Mirrors Κατεβάσματος</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-el.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-el.htm#rootpw">Κωδικός υπερχρήστη (root) στο aptosid-Live ISO</a></li>
+				<li><a href="live-mode-el.htm#live-cd-installsoft">Εγκατάσταση προγραμμάτων σε περιβάλλον Live-ISO</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-el.htm">Το Τερματικό / Κονσόλα</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-el.htm#term-kon">Τερματικό / Κονσόλα &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-el.htm#term-kon">Τερματικό / Κονσόλα</a></li>
+					  <li><a href="term-konsole-el.htm#colours"> Coloured terminal prompts</a></li>
+					  <li><a href="term-konsole-el.htm#cli-help">Βοήθεια από την γραμμή εντολών</a></li>
+					  <li><a href="help-el.htm#init3-tools">Εργαλεία να ξέρετε για text mode (tty) - init 3</a></li>
+					  <li><a href="term-konsole-el.htm#term-cmds">Λίστα εντολών του Linux</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-el.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-el.htm">CheatCodes</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-el.htm#cheatcodes">Cheatcodes αποκλειστικά για το aptosid Live-ISO</a></li>
+				<li><a href="cheatcodes-el.htm#cheatcodes-linux">Cheatcodes γενικά για το Linux</a></li>
+				<li><a href="cheatcodes-vga-el.htm#vga">Κωδικοί VGA</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-el.htm">Partitioning the Hard Drive - Traditional, GPT and LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-el.htm#hd-ntfs3g">Γράφοντας σε NTFS κατάτμηση με το ntfs-3g</a></li>
+			<li><a href="part-lvm-el.htm#part-lvm">Partitioning to use LVM - Logical Volume Manager</a></li>
+			<li><a href="part-gparted-el.htm#partition">Δημιουργία κατατμήσεων με χρήση γραφικών (GUI) εργαλείων &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-el.htm#partition">Δημιουργία κατατμήσεων στον δίσκο χρησιμοποιώντας το  GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-el.htm#ntfs">Αλλαγή μεγέθους σε NTFS κατάτμηση χρησιμοποιώντας το GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-el.htm#partition">Δημιουργία κατατμήσεων με χρήση εργαλείων κονσόλας (CLI) &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-el.htm#partition">Δημιουργία κατατμήσεων στον σκληρό δίσκο χρησιμοποιώντας το cfdisk</a></li>
+					    <li><a href="part-cfdisk-el.htm#formating">Διαμόρφωση (format) μετά την δημιουργία κατάτμησης, με το cfdisk</a></li>
+					    <li><a href="part-gdisk-el.htm#gdisk-6">Formatting after partitioning with gdisk</a></li>
+					    <li><a href="part-gdisk-el.htm#gdisk-1">GPT Partitioning with gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-el.htm#part-example">Γενικά για κατατμήσεις &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-el.htm#part-example">Παραδείγματα για το μέγεθος των κατατμήσεων</a></li>
+					  <li><a href="part-uuid-el.htm#uuid">UUID, Rebuilding fstab and creating new mount points</a></li>
+					  <li><a href="part-cfdisk-el.htm#disknames">Ονομασία δίσκων εν συντομία</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-el.htm">Επιλογές εγκατάστασης - HD, USB, VM and Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-el.htm#Inst-prep">Προετοιμασία Εγκατάστασης &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-el.htm#Inst-prep">Προετοιμασία Εγκατάστασης</a></li>
+					  <li><a href="hd-install-el.htm#Installation">Εγκατάσταση στον σκληρό δίσκο</a></li>
+					  <li><a href="hd-install-el.htm#first-hd-boot">Πρώτη εκκίνηση</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-el.htm#fromiso">Εκκίνηση fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-el.htm#fromiso">Εκκίνηση fromiso - Γενικά</a></li>
+					  <li><a href="hd-install-opts-el.htm#grub2-fromiso">Εκκίνηση 'fromiso' με Grub 2</a></li>
+					  <li><a href="hd-install-opts-el.htm#fromiso-persist">fromiso και persist</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-el.htm#usb-hd">Εγκατάσταση σε USB δίσκους &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-el.htm#usb-hd">Eγκατάσταση σε USB σκληρό δίσκο - aptosid συγκεκριμένα - aptosid-σε-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-el.htm#raw-usb">Εγραφή του aptosid σε USB/SSD stick με Linux, MS Windows ή Mac OS X σύστημα</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-el.htm#install-crypt">Installing to encryted partitions - cryptroot</a></li>
+		  <li><a href="nbdboot-el.htm#nbd1">Εκκίνηση του aptosid μέσω δικτύου</a></li>
+		  <li><a href="hd-install-vmopts-el.htm#vm">Επιλογές εγκατάστασεις σε Εικονική Μηχανή (Virtual Machine)</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-el.htm">Κάρτες γραφικών, Οθόνες, Xorg &amp; Διάφοροι Οδηγοί</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-el.htm#mon-res">Ανάλυση Οθόνης (screen) και Οθόνες (monitor)  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-el.htm#mon-res">Ανάλυση Οθόνης (screen) και Οθόνες (monitor)</a></li>
+					  <li><a href="hw-dev-mon-el.htm#xrandr">Δύο Οθόνες (Dual Monitors) και xrandr</a></li>
+					  <li><a href="hw-dev-mon-el.htm#mon-binary">Δύο Οθόνες (με χρήση binaries)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-el.htm#foss-xorg">GPU drivers &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-el.htm#ati-3d">AMD/ATI 3D drivers</a></li>
+					  <li><a href="gpu-el.htm#intel">Intel 2D and 3D drivers</a></li>
+					  <li><a href="gpu-el.htm#nvidia">Nvidia 3D drivers</a></li>
+					  <li><a href="gpu-el.htm#foss-xorg">Open Source Xorg drivers</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-el.htm#fw-detect">Firmware detection - non-free </a></li>
+			  <li><a href="nf-firm-el.htm#non-free-firmware">Adding non-free to Sources List</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-el.htm">Διαχείριστες Παραθύρων</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-el.htm">KDE and XFCE Διαχείριστες Παραθύρων &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-el.htm#xfce-notes">Χρήσιμα extras για Xfce</a></li>
+					    <li><a href="wm-dm-el.htm#install-add">Χρήσιμα extras για KDE</a></li>
+					    <li><a href="wm-dm-el.htm#desk-freeze">Κόλλημα επιφάνειας εργασίας</a></li>
+					    <li><a href="wm-dm-el.htm#kde-login">Δεν μπορώ να εισέλθω στο KDE</a></li>
+					    <li><a href="wm-dm-el.htm#ch-th">Aλλάζοντας Θέματα (Themes)</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-el.htm#dm">Installing additional Display Managers</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-el.htm">Σύνδεση στο διαδίκτυο, WiFi, LAN και Δίκτυα</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-el.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-el.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-el.htm#serv-ftp">FTP Πελάτες</a></li>
+					    <li><a href="lamp-apache-el.htm#serv-sec">Πρωτόκολλα ασφαλείας</a></li>
+					    <li><a href="lamp-apache-el.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-el.htm#serv-mysql">MySQL Ρύθμιση</a></li>
+					    <li><a href="lamp-ppp-el.htm#serv-php">PHP με Apache</a></li>
+					    <li><a href="ntp-server-el.htm#ntp-server">Timeserver Ρύθμιση</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-el.htm#tor">Firewalls και Privacy &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-el.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-el.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-el.htm#firewalls">Firewalls</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-el.htm#ssh-x">SSH και Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-el.htm#setup">Samba-Server Ρύθμιση</a></li>
+						  <li><a href="samba-el.htm#configure">Ρύθμιση SAMBA (Windows)</a></li>
+						  <li><a href="ssh-el.htm#ssh-fs">SSH Απομακρυσμένη Προσάρτυση</a></li>
+						  <li><a href="ssh-el.htm#ssh-x">Παραθυρικές Eφαρμογές μέσω SSH</a></li>
+						  <li><a href="ssh-el.htm#ssh-f">GUI SSH με Konqueror</a></li>
+						  <li><a href="ssh-el.htm#ssh-w">SSH X-Forwarding από ένα Windows-PC</a></li>
+						  <li><a href="ssh-el.htm#ssh">SSH και Ασφάλεια</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-el.htm#netcardconfig">WIFI Συνδέσεις &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-el.htm#netcardconfig">Mπαίνοντας στο Δίκτυο - Ceni</a></li>
+						    <li><a href="inet-wpagui-el.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-el.htm#net-set1">WiFi - Ρύθμιση του WiFi Roaming</a></li>
+						    <li><a href="inet-wpa-el.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-el.htm#hotswitch">Εναλλαγή δικτύου μεταξύ WiFi και σύρματος</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-el.htm#netcardconfig">Wired (σύρμα) Συνδέσεις &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-el.htm#dial-mod">56k Modems</a></li>
+						    <li><a href="inet-ceni-el.htm#netcardconfig">Mπαίνοντας στο Δίκτυο - Ceni</a></li>
+					</ul>
+					</li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-el.htm">Διαχείριση Πακέτων και dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-el.htm#apt-cook">APT Cookbook and Sources list &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-el.htm#apt-cook">APT-Οδηγός και Λίστες Πηγών (Sources list)</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-install">Εγκαθιστώντας ένα νέο πακέτο</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-delete">Διαγράφοντας ένα πακέτο</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-downgrade">Υποβαθμίζοντας / Κρατώντας (Hold) ένα πακέτο</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-cache">Αναζήτηση πακέτων με apt-cache</a></li>
+					    <li><a href="sys-admin-apt-el.htm#gui-pacsea">GUI Package searching</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-el.htm#kern-upgrade">Αναβαθμίζοντας τον πυρήνα &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-el.htm#kern-remove">Διαγραφή ενός πυρήνα</a></li>
+					    <li><a href="sys-admin-kern-upg-el.htm#kern-upgrade">Αναβαθμίζοντας τον πυρήνα</a></li>
+					    <li><a href="sys-admin-kern-upg-el.htm#dmakms">Εγκατάσταση kernel modules δυναμικά με dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-el.htm#apt-upgrade">Aναβάθμιση σε ένα Εγκατεστημένο Σύστημα - dist-upgrade - Γενικά &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-el.htm#live-cd-upgrade">Αναβαθμίζοντας χρησιμοποιώντας το Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-el.htm#approx">dist-upgrade πολλαπλών PC σε ένα LAN</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-upgrade">Aναβάθμιση σε ένα Εγκατεστημένο Σύστημα - dist-upgrade - Γενικά</a></li>
+					    <li><a href="sys-admin-apt-el.htm#du-st">Aναβάθμιση σε ένα Εγκατεστημένο Σύστημα - dist-upgrade - Τα Βήματα</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-el.htm">Διαχείριση Συστήματος</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-el.htm#bois-prep">Αναβάθμιση του BIOS με το FreeDOS</a></li>
+		<li><a href="vir-rkits-el.htm#virus-rkits">Ανιχνευτές Iών και Rootkits</a></li>
+		<li><a href="hd-install-el.htm#adduser">Προσθήκη χρηστών και Passwords &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-el.htm#adduser">Προσθήκη ενός νέου χρήστη</a></li>
+					    <li><a href="sys-admin-gen-el.htm#pw-lost">Χαμένο password root, νέα passwords</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-el.htm#start-services">Υπηρεσίες και init runlevels &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-el.htm#start-services">Ενεργοποίηση / Απενεργοποίηση Υπηρεσιών (Services)</a></li>
+					    <li><a href="sys-admin-gen-el.htm#pkill">Killing a service or process</a></li>
+					    <li><a href="sys-admin-gen-el.htm#init">aptosid Επίπεδα εκτέλεσης (runlevels) - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-el.htm#rsync">Backup του συστήματος &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-el.htm#rdiff">Back-Up με rdiff</a></li>
+					    <li><a href="sys-admin-rsync-el.htm#rsync">Back-Up με rsync</a></li>
+					    <li><a href="home-el.htm#home-bu">Μεταφορά του /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-el.htm#fonts">CUPS, Γραμματοσειρές και Ήχος &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-el.htm#fonts">Γραμματοσειρές</a></li>
+					     <li><a href="sys-admin-gen-el.htm#cups">CUPS - Σύστημα Εκτύπωσης</a></li>
+					     <li><a href="sys-admin-gen-el.htm#sound">Mixers Ήχου</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-el.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-el.htm#chroot">Grub2 - Recovering Grub with chroot</a></li>
+					    <li><a href="sys-admin-grub2-el.htm#mbr-over-grub2">Grub2 - MBR Overwritten</a></li>
+					    <li><a href="sys-admin-grub2-el.htm#multi-os">Grub2 - Dual και Multibooting</a></li>
+					    <li><a href="sys-admin-grub2-el.htm#grub1-grub2">Grub2 -Αναβάθμιση α</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Sponsored by webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="../lib/sponsor-logo/webtropia-logo.png" title="aptosid is proudly hosted by webtropia.com" alt="aptosid is proudly hosted by webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div>
+<div id="main-page">
+		<div class="divider" id="vmopts">
+				<h2 id="top-header">Εικονικές μηχανές</h2>
+
+						<ul>
+							<li><a href="hd-install-vmopts-el.htm#kvm">KVM για Intel VT ή AMD-V</a></li>
+							<li><a href="hd-install-vmopts-el.htm#vbox">Virtualbox</a></li>
+							<li><a href="hd-install-vmopts-el.htm#qemu">QEMU</a></li>
+							<li><a href="hd-install-vmopts-el.htm#oos">Installing other distributions to an image</a></li>
+						</ul>
+
+							<p><span class="highlight-3">The following examples use aptosid, simply substitute aptosid with the distribution of your choice.</span></p>
+	</div>
+	<div class="divider" id="oos">
+			    <h2>Installing other distributions to a VM image</h2>
+							<p>Note: If and when you wish to install to a virtual machine image, most Linux distributions will probably only need an allocation of 12G. However if you have a requirement to have MS Windows in a virtual machine, you will need to allocate about a 30G, or more, to the image. All image allocation sizes ultimately depend on your requirements. </p>
+
+							<p>Generally, an image allocation size, will not take up additional hard drive space until data is installed. Even then, it will only take space dynamically on a hard drive, contingent to the actual amount of data that expands on the image. This is due to the compression ratios of qcow2.</p>
+
+		      </div>
+		      <div class="divider" id="kvm">
+				<h2>Enabling a KVM Virtual Machine</h2>
+							<!-- <p>KVM is a full virtualisation solution for Linux on x86 hardware containing virtualisation extensions (Intel VT or AMD-V).</p> -->
+							<p>KVM is a full virtualisation solution for Linux running on x86 CPU with virtualisation extensions (Intel VT or AMD-V).</p>
+
+				      <h3>Prerequisites</h3>
+
+							<p>To ascertain whether your hardware supports KVM, ensure that KVM is enabled in the BIOS, (in some cases on an Intel VT or AMD-V system it may not evident as to where the switch is, therefore assume that it is in a KVM state). The way to check is in a console run:</p>
+<pre>
+cat /proc/cpuinfo | egrep --color=always 'vmx|svm'
+</pre>
+							<p>If you see <span class="highlight-3">svm</span> or <span class="highlight-3">vmx</span> in the cpu flags field, your system supports KVM. (Otherwise go back to the BIOS if you believe it is supported and check again, else search the internet as to where in the BIOS menus KVM 'enable' could be hiding).</p>
+
+							<p>Should your BIOS not support KVM refer to <a href="hd-install-vmopts-en.htm#vbox">Virtualbox</a>
+							 or <a href="hd-install-vmopts-en.htm#qemu">QEMU</a></p>
+
+							<p>To install and run KVM, firstly ensure that Virtualbox modules are not loaded, (--purge them is the best option), then depending on your chipset:</p>
+
+							<p>For <span class="highlight-3">vmx</span>:</p>
+<pre>
+apt-get install qemu-kvm qemu-utils
+modprobe kvm-intel
+</pre>
+							<p>For <span class="highlight-3">svm</span>:</p>
+<pre>
+apt-get install qemu-kvm qemu-utils
+modprobe kvm-amd
+</pre>
+							 <p>When you start your system the qemu-kvm initscripts will take care of loading the modules.</p>
+
+					  <h4>Using KVM to boot an aptosid-*.iso</h4> 
+					  <!--<h4>Using KVM to boot an aptosid iso</h4>-->
+
+							<p><span class="highlight-2">As user:</span></p>
+<pre>
+$ kvm -net nic,model=virtio -net user -soundhw ac97 -m 512 -monitor stdio -cdrom &lt;aptosid.iso&gt;
+</pre>
+
+				<h5>Installing  aptosid to a KVM image</h5>
+							<p>First create a hard disk image, (this image will be minimal and only grow as required due to qcow2 compression ratios):</p>
+<pre>
+<!-- $ qemu-img create -f qcow2 aptosid-VM.img 12G -->
+$ qemu-img create -f qcow2 aptosid-VM.img 12G
+</pre>
+
+							<p>Boot the aptosid-*.iso with the following parameters to enable KVM to recognise that there is an QEMU hard disk image available:</p>
+
+<pre>
+$ kvm -net nic,model=virtio -net user -soundhw ac97 -m 512 -monitor stdio -cdrom &lt;/path/to/aptosid-*.iso&gt; -boot d &lt;/path/to/aptosid-VM.img&gt;
+</pre>
+
+							<p>Once the cdrom has booted up click on the aptosid installer icon to activate the installer, (or use the menu), click on the Partitioning tab and launch the partition application you prefer. For the partitioning you can follow the instructions from <a href="part-gparted-en.htm">Partitioning the Hard Drive - Traditional, GPT and LVM</a>  (do not forget to add a swap partition If you are short of memory). Please be aware that formatting will take time so be patient.</p>
+
+<div class="screenshot"><img src="../lib/images-common/images-vm/kvm-gparted02.png" title="gparted kvm hard disk naming" alt="gparted kvm hard disk naming" /></div>
+	<div class="spacer02"></div>
+							<p>You now have a VM ready for use:</p>
+
+<pre>
+$ kvm -net nic,model=virtio -net user -soundhw ac97 -m 512 -monitor stdio -drive if=virtio,boot=on,file=&lt;path/to/aptosid-VM.img&gt;
+</pre>
+							<p>Some guests do not support virtio, therefore you need to use other options when launching KVM, for example:</p>
+<pre>
+$ kvm -net nic, -net user -soundhw ac97 -m 512 -monitor stdio -hda &lt;/path/to/your_guest.img&gt; -cdrom your_other.iso -boot d
+</pre>
+
+							 <p>or</p>
+<pre>
+$ kvm -net nic, -net user -soundhw ac97 -m 512 -monitor stdio -hda &lt;/path/to/your_guest.img&gt;
+</pre>
+							<p>See also: <a href="http://www.linux-kvm.org/page/Main_Page"> KVM documentation</a>.</p>
+
+				<h5>Managing your KVM virtual machine installations</h5>
+<pre>
+apt-get install aqemu
+</pre>
+							<p>When using AQEMU ensure that you choose the KVM mode from the drop down box for 'Emulator Type' in the 'General' tab. (Documentation for AQEMU is basically non existent, therefore a few 'trials by error' will be required to figure out the easy to use GUI, however a good start is to use first use the 'VM' menu followed by the 'General' tab).</p>
+
+	</div>
+	<div class="divider" id="vbox">
+		<h2>ΕBooting and installing to a VirtualBox Virtual Machine</h2>
+							<!--p>The Steps:</p>-->
+							<p>Τα βήματα:</p>
+						<ul>
+ 							<!--li>1. create a harddiskimage for VirtualBox</li>-->
+							<li>1. δημιουργήστε ένα εικονικό αρχείο σκληρού δίσκου (hard disk image) για το VirtualBox</li>
+ 							<!--li>2. boot the iso with VirtualBox</li>-->
+							<li>2. εκκίνηστε από το ISO με VirtualBox</li>
+ 							<!--li>3. install on the image</li>-->
+							<li>3. εγκαταστήστε στον εικονικό σκληρό δίσκο</li>
+						</ul>
+
+				<!--h4>Requirements</h4>-->
+				<h4>Απαιτήσεις</h4>
+							<!--p><span class="highlight-3">Recommended ram: 1 gig </span>: Ideally 512 MB for the guest and 512 MB for the host. (it can be run on less, but do not expect to have good performance).</p>-->
+							<p><span class="highlight-3">Συνιστώμενη ram: 1 giga</span>: Ιδανική μνήμη  512 ΜΒ  για τον επισκέπτη (guest) και 512 ΜΒ για τον κυρίως χρήστη (host). (μπορεί να τρέξει και με λιγότερη ram, αλλά μην αναμένετε να έχει καλή απόδωση).</p>
+							<!--p><span class="highlight-3">Hard disk space:</span> While VirtualBox itself is very lean (a typical installation will only need about 30 MB of hard disk space), the virtual machines will require fairly huge files on disk to represent their own hard disk storage. So, to install MS Windows XP (TM), for example, you will need a file that will easily grow to several GB in size. To have aptosid in VirtualBox you need to allocate a 5 gig image plus a swap allocation.</p>-->
+							<p><span class="highlight-3">Χωρητικότητα σκληρού δίσκου:</span>Ενώ το VirtualBox από μόνο του έχει πολύ ελαφριά αποθήκευση (μια τυπική εγκατάσταση θα χρειαστεί περί τα 30 ΜΒ του σκληρού δίσκου ), οι εικονικές μηχανές θα απαιτήσουν αρκετά μεγαλύτερα αρχεία σε δίσκο για την αποθήκευση τους, στους σκληρούς δίσκους τους. Έτσι, για να εγκαταστήσετε το MS Windows XP (TM), παραδείγματος χάριν, θα χρειαστείτε ένα αρχείο που θα αυξηθεί εύκολα σε αρκετά GB. Για να έχετε aptosid σε VirtualBox πρέπει να διαθέσετε μια 5 giga εικονική κατάτμηση συν μια κατάτμηση swap.</p>
+
+				<h3>Εγκατάσταση:</h3>
+
+<pre>
+apt-get update
+apt-get install virtualbox-ose-qt virtualbox-source dmakms module-assistant
+</pre>
+							<p>Προετοιμασία του module:</p>
+<pre>
+m-a prepare
+m-a a-i virtualbox-source
+</pre>
+							<!--p>Then activate Dynamic Module-Assistant Kernel Module Support for virtualbox, so that the next time the Linux kernel is updated a virtualbox module is prepared for it too, without manual intervention. To do that, add <span class="highlight-3">virtualbox-source</span> to the <span class="highlight-3">/etc/default/dmakms </span>configuration file. </p-->
+							<p>Μετά ενεργοποιήστε το Dynamic Module-Assistant Kernel Module Support για το virtualbox, έτσι ώστε την επόμενη φορά που θα αναβαθμιστεί ο πυρήνας Linux θα ετοιμαστεί ένα virtualbox module για αυτόν χωρίς να χρειαστεί να κάνετε κάτι εσείς. Για να το κάνετε αυτό, προσθέστε <span class="highlight-3">virtualbox-source</span> στο <span class="highlight-3">/etc/default/dmakms </span>αρχείο ρυθμίσεων. </p>
+<pre>
+mcedit /etc/default/dmakms
+virtualbox-source
+</pre>
+
+							<!--p>Then reboot the computer.</p-->
+							<p>Μετά επανεκκινήστε τον υπολογιστή.</p>
+
+							<p><a href="sys-admin-kern-upg-el.htm#dmakms">Αυτές είναι απαραίτητες πληροφορίες για το dmakms</a></p>
+
+					<!--h3>Installing aptosid to the virtual machine</h3>-->
+					<h3>Εγκατάσταση aptosid στην εικονική μηχανή</h3>
+							<!--p>Use virtualbox's wizard to create a new virtual machine for aptosid. then follow the instructions for a regular aptosid-installation.</p>-->
+							<p>Χρησιμοποιείστε τον διάλογο  χρήσης του virtualbox για να δημιουργηθεί μια νέα εικονική μηχανή για το aptosid. Ακολουθεί έπειτα τις οδηγίες για μια κανονική aptosid-εγκατάσταση.</p>
+
+							<!--p><a href="http://www.virtualbox.org/">VirtualBox has a comprehesive PDF Help, that you can download</a> </p-->
+
+							<p><a href="http://www.virtualbox.org/"> το VirtualBox έχει ένα πλήρες PDF αρχείο βοηθείας το οποίο μπορείτε να κατεβάσετε</a> </p>
+
+	</div>
+	<div class="divider" id="qemu">
+		<!--h2>>Booting and installing a QEMU Virtual Machine</h2>-->
+		<h2>>Booting and installing a QEMU Virtual Machine</h2>
+
+		<ul>
+ 			<!--li>1. create a harddiskimage for QEMU</li>-->
+			<li>δημιουργήστε μια εικόνα σκληρού δίσκου για το QEMU</li>
+ 			<!--li>2. boot the iso with QEMU</_li>-->
+			<li>εκκινήστε από το iso με QEMU</li>
+ 			<!--li>3. install on the image</li>-->
+			<li>εγκαταστήστε στον εικονικό σκληρό δίσκο</li>
+
+		</ul>
+
+							<!--p>A QT GUI tool is available to help you configure QEMU:</p-->
+							<p>Ένα Qt GUI εργαλείο είναι διαθέσιμο για να σας βοηθήσει με την ρύθμιση του QEMU:</p>
+<pre>
+apt-get install qtemu
+</pre>
+
+ 				<!--h4>Creating the hard disk image</h4>-->
+				<h4>Δημιουργία της εικόνας σκληρού δίσκου</h4>
+
+				<!--p>To run qemu you will probably need a hard disk image. This is a file which stores the contents of the emulated hard disk.</p>-->
+				<p>Για να τρέξετε το qemu θα χρειαστείτε πιθανώς μια εικόνα σκληρού δίσκου. Αυτό είναι ένα αρχείο που αποθηκεύει το περιεχόμενο του μιμούμενου (emulated) σκληρού δίσκου.</p>
+
+				<!--p>Use the command:</p>-->
+				<p>Χρησιμοποιείστε τις εντολές:</p>
+<pre>
+qemu-img create -f qcow aptosid.qcow 3G
+</pre>
+				<!--p>To create the image file named "aptosid.qcow". The "3G" parameter specifies the size of the disk - in this case 3 GB. You can use suffix M for megabytes (for example "256M"). You shouldn't worry too much about the size of the disk - the qcow format compresses the image so that the empty space doesn't add up to the size of the file.</p>-->
+				<p>Για να δημιουργήσει την εικόνα με όνομα αρχείου " aptosid.qcow. Η "3G" παράμετρος διευκρινίζει το μέγεθος του δίσκου - σε αυτήν την περίπτωση 3 GB. Μπορείτε να χρησιμοποιήσετε το επίθεμα Μ για τα μεγαμπάιτ (παραδείγματος χάριν "256M"). Δεν χρειάζεται να ανησυχείτε πάρα πολύ για το μέγεθος του δίσκου - το πρόγραμμα qcow συμπιέζει την εικόνα έτσι ώστε ο κενός χώρος δεν προστίθεται επάνω στο μέγεθος του αρχείου.</p>
+
+
+			<!--h4>Installing the operating system</h4>-->
+			<h4>Εγκατάσταση του λειτουργικού συστήματος</h4>
+
+				<!--p>This is the first time you will need to start the emulator. <span class="highlight-3">One thing to keep in mind: when you click inside qemu window, the mouse pointer is grabbed. To release it press :</span></p>-->
+				<p>Αυτό είναι την πρώτη φορά που θα πρέπει να ξεκινήσετε τον εξομοιωτή (emulator). Ένα πράγμα που πρέπει να λάβετε υπόψη: όταν κάνετε κλικ μέσα στο παράθυρο qemu, ο δείκτης του ποντικιού δεσμεύεται (grab). Για να τον απελευθερώσετε πατήστε:</p>
+<pre>
+Ctrl+Alt
+</pre>
+
+				<!--p>If you need to use a bootable floppy, run Qemu with:</p>-->
+				<p>Εάν πρέπει να χρησιμοποιήσετε μια εκκινήσιμη (bootable) δισκέτα, τρέξτε το Qemu με</p>
+<pre>
+qemu -floppy aptosid.iso -net nic -net user -m 512 -boot d aptosid.qcow
+</pre>
+				<!--p>If your CD-ROM is bootable, run Qemu with:</p>-->
+				<p>Εάν το CD-ROM σας είναι εκκινήσιμο, τρέξτε το Qemu με:</p>
+<pre>
+qemu -cdrom aptosid.iso -net nic -net user -m 512 -boot d aptosid.qcow
+</pre>
+				<!--p>Now install aptosid as if you were going to install it on a real HD</p>-->
+				<p>Τώρα εγκαταστήστε το aptosid σαν να επρόκειτο να το εγκαταστήσετε σε ένα πραγματικό σκληρό δίσκο</p>
+
+
+			<!--h4>Running the system</h4>-->
+			<h4>Τρέξιμο του συστήματος</h4>
+
+				<!--p>To run the system simply type:</p>-->
+				<p>Για να τρέξετε το σύστημά απλά γράψτε:</p>
+<pre>
+qemu [είκονα_σκληρού_δίσκου]
+</pre>
+				<!--p>A good idea is to use overlay images. This way you can create hard disk image once and tell Qemu to store changes in external file. You get rid of all the instability, because it is so easy to revert to previous system state.</p>-->
+				<p>Μια καλή ιδέα είναι να χρησιμοποιηθούν επικαλυπτόμενες εικόνες. Με αυτόν τον τρόπο μπορείτε να δημιουργήσετε την εικόνα σκληρού δίσκου μια φορά και να πείτε του Qemu να αποθηκεύει τις αλλαγές σε ένα εξωτερικό αρχείο. Ξεφορτώνεστε όλη την αστάθεια, επειδή είναι τόσο εύκολο να επανέλθει στην προηγούμενη κατάσταση συστήματος (system state).</p>
+
+				<!--p>To create an overlay image, type:</p>-->
+				<p>Για να δημιουργήσετε μια καλυπτόμενη εικόνα, γράψτε:</p>
+<pre>
+qemu-img create -b [[base''image]] -f qcow [[overlay''image]]
+</pre>
+				<!--p>Substitute the hard disk image for base_image (in our case aptosid.qcow). After that you can run qemu with:</p>-->
+				<p>Αντικαταστήστε την εικόνα του σκληρού δίσκου με την βασική (base_image) εικόνα (στην περίπτωσή μας είναι το aptosid.qcow). Μετά από αυτό μπορείτε να ξεκινήσετε την εφαρμογή Qemu με
+:</p>
+<pre>
+qemu [επικαλυπτόμενη_εικόνα]
+</pre>
+				<!--p>The original image will be left untouched. One hitch, the base image cannot be renamed or moved, the overlay remembers the base's full path.</p>-->
+				<p>Η αρχική εικόνα θα αφεθεί άθικτη. Ένα εμπόδιο, η βασική εικόνα δεν μπορεί να μετονομαστεί ή να μετακινηθεί, η διαδικασία της επικάλυψης θυμάται το μονοπάτι της βασικής εικόνας στον δίσκο.</p>
+
+
+			<!--h4>Using any real partition as the single primary partition of a hard disk image</h4>-->
+			<h4>Χρησιμοποιώντας οποιαδήποτε πραγματική κατάτμηση ως ενιαία αρχική κατάτμηση μιας εικόνας σκληρού δίσκου</h4>
+
+				<!--p>Sometimes, you may wish to use one of your system partition from within qemu (for instance, if you wish booting both your real machine or qemu using a given partition as root). You can do this using software RAID in linear mode (you need the linear.ko kernel driver) and a loopback device: the trick is to dynamically prepend a master boot record (MBR) to the real partition you wish to embed in a qemu raw disk image.</p>-->
+				<p>Μερικές φορές, μπορεί να επιθυμήτε να χρησιμοποιήσετε μια από της κατατμήσεις του συστήματος σας μέσα από το qemu (για παράδειγμα, εάν επιθυμείτε την έναρξη της πραγματικής σας μηχανής ή του qemu χρησιμοποιώντας μια δεδομένη κατάτμηση σαν διαχειριστής-root). Μπορείτε να το κάνετε αυτό χρησιμοποιώντας το λογισμικό Raid στο γραμμικό τρόπο (χρειάζεστε τον οδηγό πυρήνα linear.ko) και μια συσκευή loopback: το τέχνασμα είναι να κάνετε δυναμικά prepend ένα master boot record (MBR) στην πραγματική κατάτμηση που επιθυμείτε να ενσωματώσετε μέσα σε μια είκονα σκληρού δίσκου qemu.</p>
+
+				<!--p>Suppose you have a plain, unmounted /dev/sdaN partition with some filesystem on it you wish to make part of a qemu disk image. First, you create some small file to hold the MBR:</p>-->
+				<p>Υποθέστε ότι έχετε μια απλή, unmounted κατάτμηση /dev/sdaN με κάποιο σύστημα αρχείων (filesystem) και εσείς επιθυμείτε να την κάνετε μέρος μιας εικόνας δίσκου qemu. Κατ' αρχάς, δημιουργείστε κάποιο μικρό αρχείο για να κρατήσει το MBR:</p>
+<pre>
+dd if=/dev/zero of=/path/to/mbr count=32
+</pre>
+				<!--p>Here, a 16 KB (32 * 512 bytes) file is created. It is important not to make it too small (even if the MBR only needs a single 512 bytes block), since the smaller it will be, the smaller the chunk size of the software RAID device will have to be, which could have an impact on performance. Then, you setup a loopback device to the MBR file:</p>-->
+				<p>Εδώ, ένα αρχείο 16 KB (32 * 512 bytes) δημιουργείται. Είναι σημαντικό να μην είναι πάρα πολύ μικρό (ακόμα κι αν το MBR χρειάζεται μόνο ένα κομμάτι των 512 bytes), δεδομένου ότι όσο μικρότερο είναι, τόσο μικρότερο θα πρέπει να είναι το μέγεθος του λογισμικού της Raid συσκευής πράγμα που μπορεί να έχει αρνητική επίδραση στην απόδοση. Κατόπιν, ρυθμίζετε μια συσκευή loopback στο MBR:</p>
+<pre>
+losetup -f /path/to/mbr
+</pre>
+				<!--p>Let's assume the resulting device is /dev/loop0, because we wouldn't already have been using other loopbacks. Next step is to create the "merged" MBR + /dev/sdaN disk image using software RAID:</p>-->
+				<p>Ας υποθέσουμε ότι η συσκευή είναι το /dev/loop0, γιατί εμείς δεν έχουμε χρησιμοποιήσει άλλα loopbacks. Το επόμενο βήμα είναι να δημιουργηθεί το "merged" MBR + /dev/sdaN εικονικό αρχείο χρησιμοποιώντας το Raid λογισμικό:</p>
+<pre>
+ modprobe linear
+ mdadm --build --verbose /dev/md0 --chunk=16 --level=linear --raid-devices=2 /dev/loop0 /dev/sdaN
+</pre>
+				<!--p>The resulting /dev/md0 is what you will use as a qemu raw disk image (don't forget to set the permissions so that the emulator can access it). The last (and somewhat tricky) step is to set the disk configuration (disk geometry and partitions table) so that the primary partition start point in the MBR matches the one of /dev/sdaN inside /dev/md0 (an offset of exactly 16 * 512 = 16384 bytes in this example). Do this using fdisk on the host machine, not in the emulator: the default raw disc detection routine from qemu often results in non kilobyte-roundable offsets (such as 31.5 KB, as in the previous section) that cannot be managed by the software RAID code. Hence, from the the host:</p>-->
+				<p>Η κατάληξη /dev/md0 είναι το τί θα χρησιμοποιήσετε ως μια qemu ακατέργαστη εικόνα δίσκου (μην ξεχνάτε να θέσετε τα δικαιώματα έτσι ώστε ο εξομοιωτής να μπορεί να έχει πρόσβαση σ'αυτό). Το τελευταίο (και κάπως δυσνόητο) βήμα είναι να τεθεί η διαμόρφωση δίσκων (γεωμετρία δίσκων και πίνακας κατατμήσεων) έτσι ώστε το αρχικό σημείο έναρξης χωρισμάτων στο MBR να ταιριάζει με ένα από το /dev/sdaN μέσα στο /dev/md0 (ένα offset ακριβώς 16 * 512 = 16384 bytes σε αυτό το παράδειγμα). Κάνετε αυτό χρησιμοποιώντας το fdisk στη μηχανή οικοδεσπότη όχι στον εξομοιωτή: η προεπιλεγμένη ρουτίνα ανίχνευσης δίσκων από το qemu οδηγεί συχνά σε μη roundable (δεν στρογγυλοποιούνται) kilobyte offsets (όπως 31.5 KB, όπως στο προηγούμενο τμήμα) που δεν μπορούν να ρυθμιστούν από τον κώδικα του Raid λογισμικού. Ως εκ τούτου, από τον οικοδεσπότη:</p>
+<pre>
+ fdisk /dev/md0
+</pre>
+				<!--p>There, create a single primary partition corresponding to /dev/sdaN, and play with the 's'ector command from the 'x'pert menu until the first cylinder (where the first partition starts), matches to the size of the MBR. Finally, 'w'rite the result to the file: you are done. You now have a partition you can mount directly from your host, as well as part of a qemu disk image:</p>-->
+				<p>Δημιουργεί μία εννιαία αρχική κατάτμησή που αντιστοιχεί στο /dev/sdaN, και παίζει με το 's'ector από τις 'x'pert επιλογές μέχρι τον πρώτο κύλινδρο (όπου οι πρώτες ενάρξεις κατατμήσεων), αντιστοιχίες στο μέγεθος του MBR. Τέλος, ' w'rite το αποτέλεσμα στο αρχείο που κάνατε. Τώρα έχετε μία κατάτμηση που μπορείτε να τοποθετήσετε (mount) άμεσα από τον host σας, καθώς επίσης και μέρος μιας εικόνας δίσκου qemu:</p>
+<pre>
+ qemu -hdc /dev/md0 [...]
+</pre>
+				<!--p>You can of course safely set any bootloader on this disk image using qemu, provided the original /boot/sdaN partition contains the necessary tools.</p>-->
+				<p>Μπορείτε φυσικά ακίνδυνα να θέσετε οποιοδήποτε bootloader σε αυτήν την εικόνα δίσκου χρησιμοποιώντας το qemu, υπό τον όρο ότι το αρχικό χώρισμα του /boot/sdaN περιέχει τα απαραίτητα εργαλεία.</p>
+
+
+
+			<!--h4>Using the QEMU Accelerator Module</h4>-->
+			<!--<h4>Χρησιμοποίηση της ενότητας(module) επιταχυντών QEMU</h4>-->
+
+				<!--p>The developers of qemu have created an optional kernel module to accelerate qemu to sometimes near native levels. This should be loaded with the option</p>-->
+				<!--<p>Οι υπεύθυνοι για την ανάπτυξη του qemu έχουν δημιουργήσει μια προαιρετική ενότητα πυρήνα για να επιταχύνουν το qemu μερικές φορές κοντά στα εγγενή επίπεδα. Αυτό πρέπει να φορτωθεί με την επιλογή</p>
+<pre>
+major=0
+</pre>-->
+				<!--p>to automate the creation of the required /dev/kqemu device. The following command</p>-->
+				<!--<p>για να αυτοματοποιήσει τη δημιουργία της απαραίτητης συσκευής του /dev/kqemu. Η ακόλουθη εντολή</p>
+<pre>
+echo "options kqemu major=0" &gt;&gt; /etc/modprobe.conf
+</pre>-->
+				<!--p>This will amend modprobe.conf to ensure that the module option is added every time the module is loaded.</p>-->
+				<!--<p>Αυτό θα τροποποιήσει το modprobe.conf για να εξασφαλίσει ότι η επιλογή ενότητας προστίθεται κάθε φορά που φορτώνεται η ενότητα.</p>
+
+<pre>
+qemu [...] -kernel-kqemu
+</pre>-->
+				<!--p>This enables full virtualization and thus improves speed considerably.</p>-->
+				<!--<p>Αυτό επιτρέπει πλήρες εικονικοποίηση και βελτιώνει έτσι την ταχύτητα αρκετά.</p>-->
+
+			<!--h4>To activate qemu:</h4>-->
+			<!--<h4>Για να ενεργοποιηθεί το qemu:</h4>
+<pre>
+qemu -cdrom /tmp/pkg/aptosid-debug.iso -net nic -net user -m 512
+</pre>-->
+		<!--p><a href="http://fabrice.bellard.free.fr/qemu/qemu-doc.html">The official documentation of the QEMU Project </a> </p>-->
+		<p><a href="http://www.nongnu.org/qemu/user-doc.html">Η επίσημη τεκμηρίωση του προγράμματος QEMU</a></p>
+		<!--p><a href="http://wiki2.archlinux.org/index.php/Qemu">Some content for QEMU for the aptosid-manual was accessed off this site under GNU Free Documentation License 1.2 and modified for the aptosid-manual</a> </p>-->
+		<p><a href="http://wiki.archlinux.org/index.php/Qemu">Κάποιο περιεχόμενο για QEMU για το aptosid-εγχειρίδιο πάρθηκε από αυτή την σελίδα η οποία βρίσκεται ύπο την GNU Free Documentation License 1.2 και τροποποιήθηκε για το aptosid-εγχειρίδιο</a></p>
+
+
+
+	</div>
+	<div id="rev">Τελευταία αναθεώρηση περιεχομένου 18/09/2011 1010 UTC</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,551 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>aptosid Manuals - UUID</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision by edhunter  03/08/2008 2320 UTC -->
+<div id="menu"> <!-- menu starts here el lang maintained by  -->
+<!--aptosid Operating System Manual menu-version-02.13.2011.09.09 -->
+<!-- menu last updated by bluewater 2011.09.09 0935 hrs UTC -->
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="To aptosid.com forums and wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-el.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" />Αναζήτηση Online - Offline </a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Eπιλέξτε άλλη γλώσσα - Choose another language" alt="lang-switch" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-el.htm">Εγχειρίδιο ΛΣ aptosid</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-el.htm#welcome-gen">Εγχειρίδιο ΛΣ aptosid &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-el.htm#cred-team">Συντελεστές</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-el.htm#how-to">Πως να χρησιμοποιήσετε αυτό το εγχειρίδιο &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-el.htm#how-to">Πως να χρησιμοποιήσετε αυτό το εγχειρίδιο</a></li>
+					  <li><a href="welcome-el.htm#table-contents">Πίνακας περιεχομένων</a></li>
+					</ul>
+					</li>
+		<li><a href="help-el.htm#help-gen">Βοήθεια &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-el.htm#help-gen">Που να βρείτε βοήθεια</a></li>
+					  <li><a href="help-el.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-el.htm#welcome-quick">aptosid Οδηγός Γρήγορης Αναφοράς (Quick Start Guide)</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-el.htm">Περιεχόμενα ISO, Εκδόσεις, Κατέβασμα και Εγγραφή</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-el.htm#cd-content">Περιεχόμενα ISO και απαιτήσεις συστήματος &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-el.htm#rolling">Σημειώσεις Έκδοσης</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-el.htm#download-aptosid">aptosid Mirrors, Κατέβασμα και Εγγραφή &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-el.htm#md5">md5 Checksum</a></li>
+					  <li><a href="cd-dl-burning-el.htm#burn-nero">Γράφοντας το ISO στα Windows</a></li>
+					  <li><a href="cd-dl-burning-el.htm#burn-linux">Γράφοντας το ISO στο Linux</a></li>
+					  <li><a href="cd-no-gui-burn-el.htm#burning-no-gui">burniso script</a></li>
+					  <li><a href="cd-no-gui-burn-el.htm#burn-no-gui-gen">Εγγραφή χωρίς γραφικό περιβάλλον</a></li>
+					  <li><a href="cd-dl-burning-el.htm#download-aptosid">aptosid Mirrors Κατεβάσματος</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-el.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-el.htm#rootpw">Κωδικός υπερχρήστη (root) στο aptosid-Live ISO</a></li>
+				<li><a href="live-mode-el.htm#live-cd-installsoft">Εγκατάσταση προγραμμάτων σε περιβάλλον Live-ISO</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-el.htm">Το Τερματικό / Κονσόλα</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-el.htm#term-kon">Τερματικό / Κονσόλα &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-el.htm#term-kon">Τερματικό / Κονσόλα</a></li>
+					  <li><a href="term-konsole-el.htm#colours"> Coloured terminal prompts</a></li>
+					  <li><a href="term-konsole-el.htm#cli-help">Βοήθεια από την γραμμή εντολών</a></li>
+					  <li><a href="help-el.htm#init3-tools">Εργαλεία να ξέρετε για text mode (tty) - init 3</a></li>
+					  <li><a href="term-konsole-el.htm#term-cmds">Λίστα εντολών του Linux</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-el.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-el.htm">CheatCodes</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-el.htm#cheatcodes">Cheatcodes αποκλειστικά για το aptosid Live-ISO</a></li>
+				<li><a href="cheatcodes-el.htm#cheatcodes-linux">Cheatcodes γενικά για το Linux</a></li>
+				<li><a href="cheatcodes-vga-el.htm#vga">Κωδικοί VGA</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-el.htm">Partitioning the Hard Drive - Traditional, GPT and LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-el.htm#hd-ntfs3g">Γράφοντας σε NTFS κατάτμηση με το ntfs-3g</a></li>
+			<li><a href="part-lvm-el.htm#part-lvm">Partitioning to use LVM - Logical Volume Manager</a></li>
+			<li><a href="part-gparted-el.htm#partition">Δημιουργία κατατμήσεων με χρήση γραφικών (GUI) εργαλείων &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-el.htm#partition">Δημιουργία κατατμήσεων στον δίσκο χρησιμοποιώντας το  GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-el.htm#ntfs">Αλλαγή μεγέθους σε NTFS κατάτμηση χρησιμοποιώντας το GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-el.htm#partition">Δημιουργία κατατμήσεων με χρήση εργαλείων κονσόλας (CLI) &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-el.htm#partition">Δημιουργία κατατμήσεων στον σκληρό δίσκο χρησιμοποιώντας το cfdisk</a></li>
+					    <li><a href="part-cfdisk-el.htm#formating">Διαμόρφωση (format) μετά την δημιουργία κατάτμησης, με το cfdisk</a></li>
+					    <li><a href="part-gdisk-el.htm#gdisk-6">Formatting after partitioning with gdisk</a></li>
+					    <li><a href="part-gdisk-el.htm#gdisk-1">GPT Partitioning with gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-el.htm#part-example">Γενικά για κατατμήσεις &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-el.htm#part-example">Παραδείγματα για το μέγεθος των κατατμήσεων</a></li>
+					  <li><a href="part-uuid-el.htm#uuid">UUID, Rebuilding fstab and creating new mount points</a></li>
+					  <li><a href="part-cfdisk-el.htm#disknames">Ονομασία δίσκων εν συντομία</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-el.htm">Επιλογές εγκατάστασης - HD, USB, VM and Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-el.htm#Inst-prep">Προετοιμασία Εγκατάστασης &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-el.htm#Inst-prep">Προετοιμασία Εγκατάστασης</a></li>
+					  <li><a href="hd-install-el.htm#Installation">Εγκατάσταση στον σκληρό δίσκο</a></li>
+					  <li><a href="hd-install-el.htm#first-hd-boot">Πρώτη εκκίνηση</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-el.htm#fromiso">Εκκίνηση fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-el.htm#fromiso">Εκκίνηση fromiso - Γενικά</a></li>
+					  <li><a href="hd-install-opts-el.htm#grub2-fromiso">Εκκίνηση 'fromiso' με Grub 2</a></li>
+					  <li><a href="hd-install-opts-el.htm#fromiso-persist">fromiso και persist</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-el.htm#usb-hd">Εγκατάσταση σε USB δίσκους &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-el.htm#usb-hd">Eγκατάσταση σε USB σκληρό δίσκο - aptosid συγκεκριμένα - aptosid-σε-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-el.htm#raw-usb">Εγραφή του aptosid σε USB/SSD stick με Linux, MS Windows ή Mac OS X σύστημα</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-el.htm#install-crypt">Installing to encryted partitions - cryptroot</a></li>
+		  <li><a href="nbdboot-el.htm#nbd1">Εκκίνηση του aptosid μέσω δικτύου</a></li>
+		  <li><a href="hd-install-vmopts-el.htm#vm">Επιλογές εγκατάστασεις σε Εικονική Μηχανή (Virtual Machine)</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-el.htm">Κάρτες γραφικών, Οθόνες, Xorg &amp; Διάφοροι Οδηγοί</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-el.htm#mon-res">Ανάλυση Οθόνης (screen) και Οθόνες (monitor)  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-el.htm#mon-res">Ανάλυση Οθόνης (screen) και Οθόνες (monitor)</a></li>
+					  <li><a href="hw-dev-mon-el.htm#xrandr">Δύο Οθόνες (Dual Monitors) και xrandr</a></li>
+					  <li><a href="hw-dev-mon-el.htm#mon-binary">Δύο Οθόνες (με χρήση binaries)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-el.htm#foss-xorg">GPU drivers &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-el.htm#ati-3d">AMD/ATI 3D drivers</a></li>
+					  <li><a href="gpu-el.htm#intel">Intel 2D and 3D drivers</a></li>
+					  <li><a href="gpu-el.htm#nvidia">Nvidia 3D drivers</a></li>
+					  <li><a href="gpu-el.htm#foss-xorg">Open Source Xorg drivers</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-el.htm#fw-detect">Firmware detection - non-free </a></li>
+			  <li><a href="nf-firm-el.htm#non-free-firmware">Adding non-free to Sources List</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-el.htm">Διαχείριστες Παραθύρων</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-el.htm">KDE and XFCE Διαχείριστες Παραθύρων &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-el.htm#xfce-notes">Χρήσιμα extras για Xfce</a></li>
+					    <li><a href="wm-dm-el.htm#install-add">Χρήσιμα extras για KDE</a></li>
+					    <li><a href="wm-dm-el.htm#desk-freeze">Κόλλημα επιφάνειας εργασίας</a></li>
+					    <li><a href="wm-dm-el.htm#kde-login">Δεν μπορώ να εισέλθω στο KDE</a></li>
+					    <li><a href="wm-dm-el.htm#ch-th">Aλλάζοντας Θέματα (Themes)</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-el.htm#dm">Installing additional Display Managers</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-el.htm">Σύνδεση στο διαδίκτυο, WiFi, LAN και Δίκτυα</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-el.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-el.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-el.htm#serv-ftp">FTP Πελάτες</a></li>
+					    <li><a href="lamp-apache-el.htm#serv-sec">Πρωτόκολλα ασφαλείας</a></li>
+					    <li><a href="lamp-apache-el.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-el.htm#serv-mysql">MySQL Ρύθμιση</a></li>
+					    <li><a href="lamp-ppp-el.htm#serv-php">PHP με Apache</a></li>
+					    <li><a href="ntp-server-el.htm#ntp-server">Timeserver Ρύθμιση</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-el.htm#tor">Firewalls και Privacy &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-el.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-el.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-el.htm#firewalls">Firewalls</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-el.htm#ssh-x">SSH και Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-el.htm#setup">Samba-Server Ρύθμιση</a></li>
+						  <li><a href="samba-el.htm#configure">Ρύθμιση SAMBA (Windows)</a></li>
+						  <li><a href="ssh-el.htm#ssh-fs">SSH Απομακρυσμένη Προσάρτυση</a></li>
+						  <li><a href="ssh-el.htm#ssh-x">Παραθυρικές Eφαρμογές μέσω SSH</a></li>
+						  <li><a href="ssh-el.htm#ssh-f">GUI SSH με Konqueror</a></li>
+						  <li><a href="ssh-el.htm#ssh-w">SSH X-Forwarding από ένα Windows-PC</a></li>
+						  <li><a href="ssh-el.htm#ssh">SSH και Ασφάλεια</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-el.htm#netcardconfig">WIFI Συνδέσεις &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-el.htm#netcardconfig">Mπαίνοντας στο Δίκτυο - Ceni</a></li>
+						    <li><a href="inet-wpagui-el.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-el.htm#net-set1">WiFi - Ρύθμιση του WiFi Roaming</a></li>
+						    <li><a href="inet-wpa-el.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-el.htm#hotswitch">Εναλλαγή δικτύου μεταξύ WiFi και σύρματος</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-el.htm#netcardconfig">Wired (σύρμα) Συνδέσεις &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-el.htm#dial-mod">56k Modems</a></li>
+						    <li><a href="inet-ceni-el.htm#netcardconfig">Mπαίνοντας στο Δίκτυο - Ceni</a></li>
+					</ul>
+					</li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-el.htm">Διαχείριση Πακέτων και dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-el.htm#apt-cook">APT Cookbook and Sources list &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-el.htm#apt-cook">APT-Οδηγός και Λίστες Πηγών (Sources list)</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-install">Εγκαθιστώντας ένα νέο πακέτο</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-delete">Διαγράφοντας ένα πακέτο</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-downgrade">Υποβαθμίζοντας / Κρατώντας (Hold) ένα πακέτο</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-cache">Αναζήτηση πακέτων με apt-cache</a></li>
+					    <li><a href="sys-admin-apt-el.htm#gui-pacsea">GUI Package searching</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-el.htm#kern-upgrade">Αναβαθμίζοντας τον πυρήνα &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-el.htm#kern-remove">Διαγραφή ενός πυρήνα</a></li>
+					    <li><a href="sys-admin-kern-upg-el.htm#kern-upgrade">Αναβαθμίζοντας τον πυρήνα</a></li>
+					    <li><a href="sys-admin-kern-upg-el.htm#dmakms">Εγκατάσταση kernel modules δυναμικά με dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-el.htm#apt-upgrade">Aναβάθμιση σε ένα Εγκατεστημένο Σύστημα - dist-upgrade - Γενικά &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-el.htm#live-cd-upgrade">Αναβαθμίζοντας χρησιμοποιώντας το Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-el.htm#approx">dist-upgrade πολλαπλών PC σε ένα LAN</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-upgrade">Aναβάθμιση σε ένα Εγκατεστημένο Σύστημα - dist-upgrade - Γενικά</a></li>
+					    <li><a href="sys-admin-apt-el.htm#du-st">Aναβάθμιση σε ένα Εγκατεστημένο Σύστημα - dist-upgrade - Τα Βήματα</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-el.htm">Διαχείριση Συστήματος</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-el.htm#bois-prep">Αναβάθμιση του BIOS με το FreeDOS</a></li>
+		<li><a href="vir-rkits-el.htm#virus-rkits">Ανιχνευτές Iών και Rootkits</a></li>
+		<li><a href="hd-install-el.htm#adduser">Προσθήκη χρηστών και Passwords &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-el.htm#adduser">Προσθήκη ενός νέου χρήστη</a></li>
+					    <li><a href="sys-admin-gen-el.htm#pw-lost">Χαμένο password root, νέα passwords</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-el.htm#start-services">Υπηρεσίες και init runlevels &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-el.htm#start-services">Ενεργοποίηση / Απενεργοποίηση Υπηρεσιών (Services)</a></li>
+					    <li><a href="sys-admin-gen-el.htm#pkill">Killing a service or process</a></li>
+					    <li><a href="sys-admin-gen-el.htm#init">aptosid Επίπεδα εκτέλεσης (runlevels) - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-el.htm#rsync">Backup του συστήματος &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-el.htm#rdiff">Back-Up με rdiff</a></li>
+					    <li><a href="sys-admin-rsync-el.htm#rsync">Back-Up με rsync</a></li>
+					    <li><a href="home-el.htm#home-bu">Μεταφορά του /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-el.htm#fonts">CUPS, Γραμματοσειρές και Ήχος &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-el.htm#fonts">Γραμματοσειρές</a></li>
+					     <li><a href="sys-admin-gen-el.htm#cups">CUPS - Σύστημα Εκτύπωσης</a></li>
+					     <li><a href="sys-admin-gen-el.htm#sound">Mixers Ήχου</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-el.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-el.htm#chroot">Grub2 - Recovering Grub with chroot</a></li>
+					    <li><a href="sys-admin-grub2-el.htm#mbr-over-grub2">Grub2 - MBR Overwritten</a></li>
+					    <li><a href="sys-admin-grub2-el.htm#multi-os">Grub2 - Dual και Multibooting</a></li>
+					    <li><a href="sys-admin-grub2-el.htm#grub1-grub2">Grub2 -Αναβάθμιση α</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Sponsored by webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="../lib/sponsor-logo/webtropia-logo.png" title="aptosid is proudly hosted by webtropia.com" alt="aptosid is proudly hosted by webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div>
+<div id="main-page">
+	<div class="divider" id="uuid">
+			<h2 id="top-header">Rebuilding fstab and creating mount points</h2>
+							<p class="highlight-3">By default aptosid uses uuid in your fstab when you install.</p>
+
+							<p>Για να εμφανίσετε μια καινούργια κατάτμηση (partition) (π.χ. sda6 ή sdb7), που δεν εμφανίζεται στο fstab ή δεν γίνεται mount, σε ένα τερματικό σαν απλός χρήστης ($), πληκτρολογήστε την ακόλουθη εντολή:</p>
+
+<pre>
+ ls -l /dev/disk/by-uuid
+</pre>
+
+							<p>Θα δείξει τα εξής (τα έντονα γράμματα είναι μόνο για τους σκοπούς του παραδείγματος):</p>
+
+<pre>
+lrwxrwxrwx 1 root root 10 2007-05-27 23:42 348ea9e6-7879-4332-8d7a-915507574a80 -&gt; ../../sda4
+lrwxrwxrwx 1 root root 10 2007-05-27 23:42 610aaaeb-a65e-4269-9714-b26a1388a106 -&gt; ../../sda2
+lrwxrwxrwx 1 root root 10 2007-05-27 23:42 857c5e63-c9be-4080-b4c2-72d606435051 -&gt; ../../sda5
+lrwxrwxrwx 1 root root 10 2007-05-27 23:42 a83b8ede-a9df-4df6-bfc7-02b8b7a5f1f2 -&gt; ../../sda1
+lrwxrwxrwx 1 root root 10 2007-05-27 23:42 <b>ad662d33-6934-459c-a128-bdf0393e0f44</b> -&gt; ../../sda6
+</pre>
+
+							<p>Σε αυτό το παράδειγμα, το  <b>ad662d33-6934-459c-a128-bdf0393e0f44</b> είναι η χαμένη καταχώρηση. Το επόμενο βήμα είναι να βάλουμε το UUID τμήμα (partition) στο etc/fstab. Για να το προθέσετε στο αρχείο fstab χρησιμοποιήστε έναν κειμενογράφο (όπως το kate ή το kwrite) με δικαιώματα υπερχρήστη (root privileges):</p>
+<pre>
+# &lt;device file system&gt; &lt;mount point&gt;   &lt;type&gt;  &lt;options&gt;       &lt;dump&gt; &lt;pass&gt;
+<b>UUID=ad662d33-6934-459c-a128-bdf0393e0f44</b> /media/disk1part6 ext4	auto,users,exec	0 2
+</pre>
+							<p>Ένα ακόμη παράδειγμα:</p>
+
+<pre>
+lrwxrwxrwx 1 root root 10 2007-05-28 13:18 30ebb8eb-8f22-460c-b8dd-59140274829d -&gt; ../../sdb8
+lrwxrwxrwx 1 root root 10 2007-05-28 13:18 387d6d4b-4508-4b8e-8ed2-76998f41dae4 -&gt; ../../sdb1
+rwxrwxrwx 1 root root 10 2007-05-28 13:18 7014f66f-6cdf-4fe1-83da-9cab7b6fab1a -&gt; ../../sdb5
+lrwxrwxrwx 1 root root 10 2007-05-28 13:18 8f042ead-259f-4df0-98ec-3343080396c5 -&gt; ../../sdb6
+lrwxrwxrwx 1 root root 10 2007-05-28 13:18 94B0AE63B0AE4B94 -&gt; ../../sda2
+lrwxrwxrwx 1 root root 10 2007-05-28 13:18 A61820AA18207B85 -&gt; ../../sda1
+lrwxrwxrwx 1 root root 10 2007-05-28 13:18 f28725d6-b7b5-4207-8476-36efe1a903ce -&gt; ../../sdb9
+lrwxrwxrwx 1 root root 10 2007-05-28 13:18 f855c263-2521-48d3-8ec9-d2d2b69b6635 -&gt; ../../sda3
+rwxrwxrwx 1 root root 10 2007-05-28 13:18 <b>f9aa4027-ecdd-4a86-84e2-df2ef73fe14e</b> -&gt; ../../sdb7
+</pre>
+
+
+
+							<p>Σε αυτή την περίπτωση το <b>f9aa4027-ecdd-4a86-84e2-df2ef73fe14e</b> είναι η χαμένη καταχώρηση και την προσθέτουμε στο /etc/fstab ως εξής:</p>
+<pre>
+# &lt;device file system&gt; &lt;mount point&gt;   &lt;type&gt;  &lt;options&gt;       &lt;dump&gt; &lt;pass&gt;
+<b>UUID=f9aa4027-ecdd-4a86-84e2-df2ef73fe14e</b> /media/disk2part7 ext4	auto,users,exec	0 2
+</pre>
+
+			<h3>Creating new mount points</h3>
+							<p> <span class="highlight-3">Note:</span> A mount point name, as noted in fstab, needs to have an existing directory. aptosid creates these directories during the installation process under <span class="highlight-3">/media</span> and they are named <span class="highlight-3">diskXpartX</span>.</p>
+
+							<p>If you have manipulated the partition table after the initial installation and assuming you have already altered fstab, (for example, 2 new partitions have been created), the directory for each mount point will not exist and it needs to be manually created.</p>
+
+					  <h5>Example:</h5>
+
+							<p>First, as root, confirm the existing mount points:</p>
+
+<pre>
+cd /media
+ls
+</pre>
+							<p>It should return the existing mount points, for example:</p>
+<pre>
+disk1part1 disk1part3 disk2part1
+</pre>
+							<p>Staying in /media, create the mount points of the new partitions:</p>
+<pre>
+mkdir disk1part6
+mkdir disk2part7
+</pre>
+
+							<p>To test or use partitions immediately:</p>
+<pre>
+mount /dev/sda6 /media/disk1part6
+mount /dev/sda6 /media/disk2part7
+</pre>
+							<p>Upon a reboot of the computer the filesystems will be mounted automatically. Read:</p>
+<pre>
+man mount
+</pre>
+
+	</div>
+	<div class="divider" id="uuid-fstab">
+			<!--h2>Overview: UUID, Partition Labelling and fstab</h2-->
+			<h2>Επισκόπηση: UUID, Ετικέτες (Labels) Κατατμήσεων και fstab</h2>
+							<!--p>Persistent block device naming has been made possible by the introduction of udev and has some advantages over bus-based naming.</p-->
+							<p>Η επίμονη ονομασία (persistent naming) block συσκευών κατέστη δυνατή με την εισαγωγή του udev και έχει μερικά πλεονεκτήματα σε σχέση με την ονομασία βάση του bus (bus-based naming).</p>
+
+							<!--p>While Linux distributions and udev are evolving and hardware detection is becoming more reliable, there are also a number of new problems and changes:<br />
+				    			<b>1)</b> If you have more than one sata/scsi or ide disk controller, the order in which they are added is random. This may result in device names like hdX and hdY switching around randomly on each boot. The same goes for sdX and sdY. Persistent naming allows you not to worry about this at all.<br />
+				    			<b>2)</b> With the introduction of the new libata pata support, all your ide hdX devices will become sdX devices at some point in the future. Again, with persistent naming, you won't even notice.<br />
+				    			<b>3)</b> Machines with both sata and ide controllers are quite common these days. With the libata changes mentioned above, the first problem will become even more common, as sata and ide hard drives will both have sdX names.</p-->
+
+							<p>Ενώ οι διανομές Linux και το udev εξελίσσονται και η αναγνώριση υλικού (hardware detection) γίνεται πιο αξιόπιστη, υπάρχουν επίσης πολλά νέα προβλήματα και αλλαγές:<br />
+				    			<b>1)</b> Εάν έχετε περισσότερο από ένα ελεγκτή (controller) για σκληρούς δίσκους sata/scsi ή ide , η σειρά με την οποία προστίθενται είναι τυχαία. Αυτό μπορεί να έχει σαν αποτέλεσμα ονόματα συσκευών όπως hdX και hdY να ανταλλάσσονται τυχαία μεταξύ τους σε κάθε εκκίνηση. Το ίδιο ισχυεί για sdX και sdY. Η επίμονη ονομασία (persistent naming) σας επιτρέπει να μην ανησυχείτε γιαυτό.<br />
+				    			<b>2)</b> Με την εισαγωγή της νέας libata pata υποστήριξης, όλες οι ide hdX συσκευές θα γίνουν sdX συσκευές, σε κάποια στιγμή στο μέλλον. Και πάλι λόγω της επίμονης ονομασίας, ούτε που θα το προσέξετε.<br />
+				    			<b>3)</b> Υπολογιστές με sata και ide ελεγκτές είναι κοινή την σήμερον ημέρα. Με τις libata αλλαγές που αναφέρθηκαν πιο πάνω, το πρώτο πρόβλημα θα γίνει ακόμη πιο συχνό γιατί και οι sata και οι ide σκληροί δίσκοι θα έχουν τα ίδια sdX ονόματα.</p>
+
+							<!--p class="highlight-3">By default aptosid will use uuid in your fstab when you install</p-->
+							<p class="highlight-3">Εκ προεπιλογής το aptosid θα χρησιμοποιήσει uuid μέσα στο fstab όταν κάνετε εγκατάσταση</p>
+
+							<!--p>There are more reasons, but these are the most critical ones now and in the near future. That's why aptosid encourages you to change your setup to persistent naming schemes.</1p-->
+							<p>Υπάρχουν και άλλοι λόγοι αλλά αυτοί είναι οι κυριότεροι τώρα και στο εγγύς μέλλον. Γιαυτό το aptosid σας ενθαρρύνει να αλλάξετε τις ρυθμίσεις σας και να χρησιμοποιείτε επίμονα ονόματα (persistent naming schemes).</p>
+
+			<!--h2>The four different schemes for persistent naming:</h2-->
+			<h2>Τα τέσσερα διαφορετικά καθεστώτα (schemes) για επίμονη ονομασία (persistent naming):</h2>
+
+					<!--h4>1. Persistent Naming by UUID</h4-->
+					<h4>1. Επίμονη ονομασία με βάση το UUID</h4>
+
+							<!--p>UUID stands for Universally Unique Identifier and is a mechanism to give each filesystem a unique identifier. It is designed so that collisions are unlikely. All Linux filesystems (including swap) support UUID. FAT and NTFS filesystems don't support UUID, but are still listed in by-uuid with a unique identifier:</p-->
+							<p>UUID σημαίνει Universally Unique Identifier (Καθολικά Μοναδικό Αναγνωριστικό) και είναι ένας μηχανισμός που δίνει σε κάθε σύστημα αρχείων ένα μοναδικό αναγνωριστικό. Είναι σχεδιασμένο έτσι ώστε συγκρούσεις (collisions) να είναι απίθανες. Όλα τα συστήματα αρχείων Linux (και το swap) υποστηρίζουν UUID. FAT και NTFS συστήματα αρχείων δεν υποστηρίζουν UUID, αλλά εξακολουθεί να τους δίνετε ένα μοναδικό αναγνωριστικό με βάση το uuid:</p>
+<pre>
+$ /bin/ls -lF /dev/disk/by-uuid/
+total 0
+lrwxrwxrwx 1 root root 10 Oct 16 10:27 2d781b26-0285-421a-b9d0-d4a0d3b55680 -&gt; ../../sda1
+lrwxrwxrwx 1 root root 10 Oct 16 10:27 31f8eb0d-612b-4805-835e-0e6d8b8c5591 -&gt; ../../sda7
+lrwxrwxrwx 1 root root 10 Oct 16 10:27 3FC2-3DDB -&gt; ../../sda6
+lrwxrwxrwx 1 root root 10 Oct 16 10:27 5090093f-e023-4a93-b2b6-8a9568dd23dc -&gt; ../../sda2
+lrwxrwxrwx 1 root root 10 Oct 16 10:27 912c7844-5430-4eea-b55c-e23f8959a8ee -&gt; ../../sda5
+lrwxrwxrwx 1 root root 10 Oct 16 10:27 B0DC1977DC193954 -&gt; ../../sdb1
+lrwxrwxrwx 1 root root 10 Oct 16 10:27 bae98338-ec29-4beb-aacf-107e44599b2e -&gt; ../../sdb2
+</pre>
+							<!--p>As you can see, the fat and ntfs partitions have shorter names (sda6 and sdb1), but are still listed by uuid.</p-->
+							<p>Όπως βλέπετε οι fat και ntfs κατατμήσεις έχουν μικρότερα ονόματα (sda6 και sdb1), αλλά εξακολουθούν να έχουν uuid.</p>
+
+					<!--h4>2. Persistent Naming by LABEL</h4-->
+					<h4>2. Επίμονη ονομασία με βάση την ΕΤΙΚΕΤΑ (label)</h4>
+
+							<!--p>Almost every filesystem type can have a label. All your partitions that have one are listed in the /dev/disk/by-label directory:</p-->
+							<p>Σχεδόν κάθε σύστημα αρχείων μπορεί να έχει ετικέτα. Όλες οι κατατμήσεις σας που έχουν μια ετικέτα είναι καταχωρημένες στον /dev/disk/by-label φάκελο:</p>
+<pre>
+$ ls -lF /dev/disk/by-label
+total 0
+lrwxrwxrwx 1 root root 10 Oct 16 10:27 data -&gt; ../../sdb2
+lrwxrwxrwx 1 root root 10 Oct 16 10:27 data2 -&gt; ../../sda2
+lrwxrwxrwx 1 root root 10 Oct 16 10:27 fat -&gt; ../../sda6
+lrwxrwxrwx 1 root root 10 Oct 16 10:27 home -&gt; ../../sda7
+lrwxrwxrwx 1 root root 10 Oct 16 10:27 root -&gt; ../../sda1
+lrwxrwxrwx 1 root root 10 Oct 16 10:27 swap -&gt; ../../sda5
+lrwxrwxrwx 1 root root 10 Oct 16 10:27 windows -&gt; ../../sdb1
+</pre>
+							<!--p>While labels may have recognisable names, you need to exercise extreme caution to negate name collisions.</p-->
+							<p>Αν και είναι ευκολότερο να αναγνωρίσετε τις ετικέτες, θα πρέπει να προσέχετε ιδιαίτερα να μην υπάρχουν δυο ετικέτες με το ίδιο όνομα.</p>
+
+							<!--p>You can change the labels of your filesystems using these commands:</p-->
+							<p>Μπορείτε να αλλάξετε τις ετικέτες των συστημάτων αρχείων σας με τις παρακάτω εντολές:</p>
+<!--pre>
+* swap: Create a new swapspace like this: mkswap -L &lt;label&gt; /dev/XXX
+* ext2/ext3: e2label /dev/XXX &lt;label&gt;
+* reiserfs: reiserfstune -l &lt;label&gt; /dev/XXX
+* jfs: jfs_tune -L &lt;label&gt; /dev/XXX
+* xfs: xfs_admin -L &lt;label&gt; /dev/XXX
+* fat/vfat: There is no tool to change the label using Linux,
+but when you create the filesystem, use mkdosfs -n &lt;label&gt; &lt;other options&gt;.
+You may also change the label of an existing filesystem using Windows.
+* ntfs: ntfslabel /dev/XXX &lt;label&gt; or change it using Windows.
+</pre-->
+
+<pre>
+* swap: Δημιουργείστε ένα νέο swapspace έτσι: mkswap -L &lt;ετικέτα&gt; /dev/XXX
+* ext2/ext3/ext4: e2label /dev/XXX &lt;ετικέτα&gt;
+* jfs: jfs_tune -L &lt;ετικέτα&gt; /dev/XXX
+* xfs: xfs_admin -L &lt;ετικέτα&gt; /dev/XXX
+* fat/vfat: Δεν υπάρχει εργαλείο για να αλλάξετε την ετικέτα χρησιμοποιώντας Linux,
+αλλά όταν δημιουργείτε το σύστημα αρχείων, χρησιμοποιήστε mkdosfs -n &lt;ετικέτα&gt; &lt;άλλες επιλογές&gt;.
+Μπορείτε επίσης να αλλάξετε την ετικέτα ενός υπάρχοντος συστήματος αρχείων με την χρήση.
+* ntfs: ntfslabel /dev/XXX &lt;ετικέτα&gt; ή αλλάξτε το χρησιμοποιώντας Windows.
+</pre>
+							<!--p class="highlight-3">Be careful: The labels have to be unique to make this work", it applies equally to USB/firewire sticks and to harddisks. The LABEL=/ UUID= syntax is preferred over /dev/disk/by-*/ for UN*X partitions</p-->
+							<p class="highlight-3">Προσέξτε: Οι ετικέτες πρέπει να είναι μοναδικές για να πετύχει αυτό, ισχύει εξίσου για USB/firewire sticks και σκληρούς δίσκους. Η LABEL=/ UUID= σύνταξη προτιμάται σε σχέση της /dev/disk/by-*/ για UN*X κατατμήσεις</p>
+
+
+
+					<!--h4>3. Persistent Naming by id </h4-->
+					<h4>3. Επίμονη ονομασία με βάση το id </h4>
+
+							<!--p>by-id creates a unique name depending on the hardware serial number.</p-->
+							<p>by-id δημιουργεί ένα μοναδικό όνομα, εξαρτώμενο από τον σειριακό αριθμό του υλικού.</p>
+
+					<!--h4>4. Persistent Naming by path</h4-->
+					<h4>4. Επίμονη ονομασία με βάση το μονοπάτι (path)</h4>
+							<p>by-path δημιουργεί ένα μοναδικό όνομα εξαρτώμενο από το συντομότερο φυσικό μονοπάτι (σύμφωνα με το sysfs). Οι 2 τελευταίες μέθοδοι που αναφέρθηκαν περιέχουν strings για να υποδείξουν σε πιο υποσύστημα ανήκουν και γιαυτό δεν είναι κατάλληλες για την επίλυση των προβλημάτων που αναφέρθηκαν στην αρχή του άρθρου αυτού. Δεν θα συζητηθούν περαιτέρω εδώ.</p>
+
+
+					<!--h4>Enabling persistent naming</h4-->
+					<h4>Ενεργοποιώντας επίμονη ονομασία</h4>
+
+							<!--p>Having chosen which naming method you'd like to use, let's now enable persistent naming for your system:</p-->
+							<p>Έχοντας επιλέξει την μέθοδο ονομασίας που θέλετε να χρησιμοποιήσετε, ας ενεργοποιήσουμε τώρα την επίμονη ονομασία για το σύστημα σας:</p>
+
+					<!--h4>In fstab</h4-->
+					<h4>Μέσα στο fstab</h4>
+
+							<!--p>Enabling persistent naming in /etc/fstab is easy;  just replace the device name in the first column by the new persistent name. In my example I would replace /dev/sda7 by one of the following:</p-->
+							<p>Η ενεργοποίηση επίμονης ονομασίας στο /etc/fstab είναι εύκολη. Απλά αντικαταστήστε το όνομα της συσκευής στην πρώτη στήλη με το νέο μόνιμο όνομα. Στο παράδειγμα θα αντικαταστήσω το /dev/sda7 με ένα από τα ακόλουθα:</p>
+<pre>
+/dev/disk/by-label/home ή
+/dev/disk/by-uuid/31f8eb0d-612b-4805-835e-0e6d8b8c5591
+</pre>
+							<!--p>Do so for all the partitions in your fstab file.</p-->
+							<p>Κάντε το αυτό για όλες τις κατατμήσεις μέσα στο fstab αρχείο σας.</p>
+
+							<!--p>Instead of giving the device explicitly, one may indicate the filesystem that is to be mounted by its UUID or volume label, writing LABEL=&lt;label&gt; or UUID=&lt;uuid&gt;, for example:</p-->
+							<p>Αντί να δώσετε την συσκευή ρητά, θα μπορούσατε να δηλώσετε το σύστημα αρχείων το οποίο θα προσαρτηθεί (mount) με το UUID του ή την ετικέτα του, γράφοντας LABEL=&lt;ετικέτα&gt; ή UUID=&lt;uuid&gt;, για παράδειγμα:</p>
+<pre>
+LABEL=Boot
+</pre>
+							<p>ή</p>
+<pre>
+UUID=3e6be9de-8139-11d1-9106-a43f08d823a6
+</pre>
+							<!--p>Source: <a href="http://wiki.archlinux.org/index.php/Persistent_block_device_naming">wiki.archlinux.org</a>  who used <a href=" http://marc.theaimsgroup.com/?l=linux-hotplug-devel&amp;m=114795097514527&amp;w=2">marc.theaimsgroup.com</a> Content from wiki.archlinux.org available under GNU Free Documentation License 1.2 and has been re-edited for aptosid-manuals</p-->
+							<p>Πηγή: <a href="http://wiki.archlinux.org/index.php/Persistent_block_device_naming">wiki.archlinux.org</a>  που χρησιμοποίησε <a href=" http://marc.theaimsgroup.com/?l=linux-hotplug-devel&amp;m=114795097514527&amp;w=2">marc.theaimsgroup.com</a> Περιεχόμενο από wiki.archlinux.org διαθέσιμο υπό την GNU Free Documentation License 1.2 και επεξεργασμένο για τα aptosid-εγχειρίδια</p>
+
+							<!--p><a href="http://www.lissot.net/partition/ext2fs/labels.html">There is more on labeling here at lissot.net</a> </p-->
+							<p><a href="http://www.lissot.net/partition/ext2fs/labels.html">Περισσότερα για τις ετικέτες στο lissot.net</a> </p>
+	</div>
+			<div id="rev">Τελευταία αναθεώρηση περιεχομένου 26/04/2011 1355 UTC</div>
+</div>
+</body>
+</html>

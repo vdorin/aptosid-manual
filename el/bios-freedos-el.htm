@@ -1,0 +1,591 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>aptosid Manuals - Upgrade BIOS FreeDOS </title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- last translation by bluewater 02/11/2008 1525 UTC -->
+<div id="menu"> <!-- menu starts here el lang maintained by  -->
+<!--aptosid Operating System Manual menu-version-02.13.2011.09.09 -->
+<!-- menu last updated by bluewater 2011.09.09 0935 hrs UTC -->
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="To aptosid.com forums and wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-el.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" />Αναζήτηση Online - Offline </a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Eπιλέξτε άλλη γλώσσα - Choose another language" alt="lang-switch" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-el.htm">Εγχειρίδιο ΛΣ aptosid</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-el.htm#welcome-gen">Εγχειρίδιο ΛΣ aptosid &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-el.htm#cred-team">Συντελεστές</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-el.htm#how-to">Πως να χρησιμοποιήσετε αυτό το εγχειρίδιο &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-el.htm#how-to">Πως να χρησιμοποιήσετε αυτό το εγχειρίδιο</a></li>
+					  <li><a href="welcome-el.htm#table-contents">Πίνακας περιεχομένων</a></li>
+					</ul>
+					</li>
+		<li><a href="help-el.htm#help-gen">Βοήθεια &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-el.htm#help-gen">Που να βρείτε βοήθεια</a></li>
+					  <li><a href="help-el.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-el.htm#welcome-quick">aptosid Οδηγός Γρήγορης Αναφοράς (Quick Start Guide)</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-el.htm">Περιεχόμενα ISO, Εκδόσεις, Κατέβασμα και Εγγραφή</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-el.htm#cd-content">Περιεχόμενα ISO και απαιτήσεις συστήματος &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-el.htm#rolling">Σημειώσεις Έκδοσης</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-el.htm#download-aptosid">aptosid Mirrors, Κατέβασμα και Εγγραφή &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-el.htm#md5">md5 Checksum</a></li>
+					  <li><a href="cd-dl-burning-el.htm#burn-nero">Γράφοντας το ISO στα Windows</a></li>
+					  <li><a href="cd-dl-burning-el.htm#burn-linux">Γράφοντας το ISO στο Linux</a></li>
+					  <li><a href="cd-no-gui-burn-el.htm#burning-no-gui">burniso script</a></li>
+					  <li><a href="cd-no-gui-burn-el.htm#burn-no-gui-gen">Εγγραφή χωρίς γραφικό περιβάλλον</a></li>
+					  <li><a href="cd-dl-burning-el.htm#download-aptosid">aptosid Mirrors Κατεβάσματος</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-el.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-el.htm#rootpw">Κωδικός υπερχρήστη (root) στο aptosid-Live ISO</a></li>
+				<li><a href="live-mode-el.htm#live-cd-installsoft">Εγκατάσταση προγραμμάτων σε περιβάλλον Live-ISO</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-el.htm">Το Τερματικό / Κονσόλα</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-el.htm#term-kon">Τερματικό / Κονσόλα &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-el.htm#term-kon">Τερματικό / Κονσόλα</a></li>
+					  <li><a href="term-konsole-el.htm#colours"> Coloured terminal prompts</a></li>
+					  <li><a href="term-konsole-el.htm#cli-help">Βοήθεια από την γραμμή εντολών</a></li>
+					  <li><a href="help-el.htm#init3-tools">Εργαλεία να ξέρετε για text mode (tty) - init 3</a></li>
+					  <li><a href="term-konsole-el.htm#term-cmds">Λίστα εντολών του Linux</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-el.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-el.htm">CheatCodes</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-el.htm#cheatcodes">Cheatcodes αποκλειστικά για το aptosid Live-ISO</a></li>
+				<li><a href="cheatcodes-el.htm#cheatcodes-linux">Cheatcodes γενικά για το Linux</a></li>
+				<li><a href="cheatcodes-vga-el.htm#vga">Κωδικοί VGA</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-el.htm">Partitioning the Hard Drive - Traditional, GPT and LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-el.htm#hd-ntfs3g">Γράφοντας σε NTFS κατάτμηση με το ntfs-3g</a></li>
+			<li><a href="part-lvm-el.htm#part-lvm">Partitioning to use LVM - Logical Volume Manager</a></li>
+			<li><a href="part-gparted-el.htm#partition">Δημιουργία κατατμήσεων με χρήση γραφικών (GUI) εργαλείων &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-el.htm#partition">Δημιουργία κατατμήσεων στον δίσκο χρησιμοποιώντας το  GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-el.htm#ntfs">Αλλαγή μεγέθους σε NTFS κατάτμηση χρησιμοποιώντας το GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-el.htm#partition">Δημιουργία κατατμήσεων με χρήση εργαλείων κονσόλας (CLI) &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-el.htm#partition">Δημιουργία κατατμήσεων στον σκληρό δίσκο χρησιμοποιώντας το cfdisk</a></li>
+					    <li><a href="part-cfdisk-el.htm#formating">Διαμόρφωση (format) μετά την δημιουργία κατάτμησης, με το cfdisk</a></li>
+					    <li><a href="part-gdisk-el.htm#gdisk-6">Formatting after partitioning with gdisk</a></li>
+					    <li><a href="part-gdisk-el.htm#gdisk-1">GPT Partitioning with gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-el.htm#part-example">Γενικά για κατατμήσεις &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-el.htm#part-example">Παραδείγματα για το μέγεθος των κατατμήσεων</a></li>
+					  <li><a href="part-uuid-el.htm#uuid">UUID, Rebuilding fstab and creating new mount points</a></li>
+					  <li><a href="part-cfdisk-el.htm#disknames">Ονομασία δίσκων εν συντομία</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-el.htm">Επιλογές εγκατάστασης - HD, USB, VM and Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-el.htm#Inst-prep">Προετοιμασία Εγκατάστασης &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-el.htm#Inst-prep">Προετοιμασία Εγκατάστασης</a></li>
+					  <li><a href="hd-install-el.htm#Installation">Εγκατάσταση στον σκληρό δίσκο</a></li>
+					  <li><a href="hd-install-el.htm#first-hd-boot">Πρώτη εκκίνηση</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-el.htm#fromiso">Εκκίνηση fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-el.htm#fromiso">Εκκίνηση fromiso - Γενικά</a></li>
+					  <li><a href="hd-install-opts-el.htm#grub2-fromiso">Εκκίνηση 'fromiso' με Grub 2</a></li>
+					  <li><a href="hd-install-opts-el.htm#fromiso-persist">fromiso και persist</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-el.htm#usb-hd">Εγκατάσταση σε USB δίσκους &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-el.htm#usb-hd">Eγκατάσταση σε USB σκληρό δίσκο - aptosid συγκεκριμένα - aptosid-σε-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-el.htm#raw-usb">Εγραφή του aptosid σε USB/SSD stick με Linux, MS Windows ή Mac OS X σύστημα</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-el.htm#install-crypt">Installing to encryted partitions - cryptroot</a></li>
+		  <li><a href="nbdboot-el.htm#nbd1">Εκκίνηση του aptosid μέσω δικτύου</a></li>
+		  <li><a href="hd-install-vmopts-el.htm#vm">Επιλογές εγκατάστασεις σε Εικονική Μηχανή (Virtual Machine)</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-el.htm">Κάρτες γραφικών, Οθόνες, Xorg &amp; Διάφοροι Οδηγοί</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-el.htm#mon-res">Ανάλυση Οθόνης (screen) και Οθόνες (monitor)  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-el.htm#mon-res">Ανάλυση Οθόνης (screen) και Οθόνες (monitor)</a></li>
+					  <li><a href="hw-dev-mon-el.htm#xrandr">Δύο Οθόνες (Dual Monitors) και xrandr</a></li>
+					  <li><a href="hw-dev-mon-el.htm#mon-binary">Δύο Οθόνες (με χρήση binaries)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-el.htm#foss-xorg">GPU drivers &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-el.htm#ati-3d">AMD/ATI 3D drivers</a></li>
+					  <li><a href="gpu-el.htm#intel">Intel 2D and 3D drivers</a></li>
+					  <li><a href="gpu-el.htm#nvidia">Nvidia 3D drivers</a></li>
+					  <li><a href="gpu-el.htm#foss-xorg">Open Source Xorg drivers</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-el.htm#fw-detect">Firmware detection - non-free </a></li>
+			  <li><a href="nf-firm-el.htm#non-free-firmware">Adding non-free to Sources List</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-el.htm">Διαχείριστες Παραθύρων</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-el.htm">KDE and XFCE Διαχείριστες Παραθύρων &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-el.htm#xfce-notes">Χρήσιμα extras για Xfce</a></li>
+					    <li><a href="wm-dm-el.htm#install-add">Χρήσιμα extras για KDE</a></li>
+					    <li><a href="wm-dm-el.htm#desk-freeze">Κόλλημα επιφάνειας εργασίας</a></li>
+					    <li><a href="wm-dm-el.htm#kde-login">Δεν μπορώ να εισέλθω στο KDE</a></li>
+					    <li><a href="wm-dm-el.htm#ch-th">Aλλάζοντας Θέματα (Themes)</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-el.htm#dm">Installing additional Display Managers</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-el.htm">Σύνδεση στο διαδίκτυο, WiFi, LAN και Δίκτυα</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-el.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-el.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-el.htm#serv-ftp">FTP Πελάτες</a></li>
+					    <li><a href="lamp-apache-el.htm#serv-sec">Πρωτόκολλα ασφαλείας</a></li>
+					    <li><a href="lamp-apache-el.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-el.htm#serv-mysql">MySQL Ρύθμιση</a></li>
+					    <li><a href="lamp-ppp-el.htm#serv-php">PHP με Apache</a></li>
+					    <li><a href="ntp-server-el.htm#ntp-server">Timeserver Ρύθμιση</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-el.htm#tor">Firewalls και Privacy &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-el.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-el.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-el.htm#firewalls">Firewalls</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-el.htm#ssh-x">SSH και Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-el.htm#setup">Samba-Server Ρύθμιση</a></li>
+						  <li><a href="samba-el.htm#configure">Ρύθμιση SAMBA (Windows)</a></li>
+						  <li><a href="ssh-el.htm#ssh-fs">SSH Απομακρυσμένη Προσάρτυση</a></li>
+						  <li><a href="ssh-el.htm#ssh-x">Παραθυρικές Eφαρμογές μέσω SSH</a></li>
+						  <li><a href="ssh-el.htm#ssh-f">GUI SSH με Konqueror</a></li>
+						  <li><a href="ssh-el.htm#ssh-w">SSH X-Forwarding από ένα Windows-PC</a></li>
+						  <li><a href="ssh-el.htm#ssh">SSH και Ασφάλεια</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-el.htm#netcardconfig">WIFI Συνδέσεις &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-el.htm#netcardconfig">Mπαίνοντας στο Δίκτυο - Ceni</a></li>
+						    <li><a href="inet-wpagui-el.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-el.htm#net-set1">WiFi - Ρύθμιση του WiFi Roaming</a></li>
+						    <li><a href="inet-wpa-el.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-el.htm#hotswitch">Εναλλαγή δικτύου μεταξύ WiFi και σύρματος</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-el.htm#netcardconfig">Wired (σύρμα) Συνδέσεις &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-el.htm#dial-mod">56k Modems</a></li>
+						    <li><a href="inet-ceni-el.htm#netcardconfig">Mπαίνοντας στο Δίκτυο - Ceni</a></li>
+					</ul>
+					</li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-el.htm">Διαχείριση Πακέτων και dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-el.htm#apt-cook">APT Cookbook and Sources list &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-el.htm#apt-cook">APT-Οδηγός και Λίστες Πηγών (Sources list)</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-install">Εγκαθιστώντας ένα νέο πακέτο</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-delete">Διαγράφοντας ένα πακέτο</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-downgrade">Υποβαθμίζοντας / Κρατώντας (Hold) ένα πακέτο</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-cache">Αναζήτηση πακέτων με apt-cache</a></li>
+					    <li><a href="sys-admin-apt-el.htm#gui-pacsea">GUI Package searching</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-el.htm#kern-upgrade">Αναβαθμίζοντας τον πυρήνα &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-el.htm#kern-remove">Διαγραφή ενός πυρήνα</a></li>
+					    <li><a href="sys-admin-kern-upg-el.htm#kern-upgrade">Αναβαθμίζοντας τον πυρήνα</a></li>
+					    <li><a href="sys-admin-kern-upg-el.htm#dmakms">Εγκατάσταση kernel modules δυναμικά με dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-el.htm#apt-upgrade">Aναβάθμιση σε ένα Εγκατεστημένο Σύστημα - dist-upgrade - Γενικά &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-el.htm#live-cd-upgrade">Αναβαθμίζοντας χρησιμοποιώντας το Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-el.htm#approx">dist-upgrade πολλαπλών PC σε ένα LAN</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-upgrade">Aναβάθμιση σε ένα Εγκατεστημένο Σύστημα - dist-upgrade - Γενικά</a></li>
+					    <li><a href="sys-admin-apt-el.htm#du-st">Aναβάθμιση σε ένα Εγκατεστημένο Σύστημα - dist-upgrade - Τα Βήματα</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-el.htm">Διαχείριση Συστήματος</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-el.htm#bois-prep">Αναβάθμιση του BIOS με το FreeDOS</a></li>
+		<li><a href="vir-rkits-el.htm#virus-rkits">Ανιχνευτές Iών και Rootkits</a></li>
+		<li><a href="hd-install-el.htm#adduser">Προσθήκη χρηστών και Passwords &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-el.htm#adduser">Προσθήκη ενός νέου χρήστη</a></li>
+					    <li><a href="sys-admin-gen-el.htm#pw-lost">Χαμένο password root, νέα passwords</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-el.htm#start-services">Υπηρεσίες και init runlevels &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-el.htm#start-services">Ενεργοποίηση / Απενεργοποίηση Υπηρεσιών (Services)</a></li>
+					    <li><a href="sys-admin-gen-el.htm#pkill">Killing a service or process</a></li>
+					    <li><a href="sys-admin-gen-el.htm#init">aptosid Επίπεδα εκτέλεσης (runlevels) - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-el.htm#rsync">Backup του συστήματος &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-el.htm#rdiff">Back-Up με rdiff</a></li>
+					    <li><a href="sys-admin-rsync-el.htm#rsync">Back-Up με rsync</a></li>
+					    <li><a href="home-el.htm#home-bu">Μεταφορά του /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-el.htm#fonts">CUPS, Γραμματοσειρές και Ήχος &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-el.htm#fonts">Γραμματοσειρές</a></li>
+					     <li><a href="sys-admin-gen-el.htm#cups">CUPS - Σύστημα Εκτύπωσης</a></li>
+					     <li><a href="sys-admin-gen-el.htm#sound">Mixers Ήχου</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-el.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-el.htm#chroot">Grub2 - Recovering Grub with chroot</a></li>
+					    <li><a href="sys-admin-grub2-el.htm#mbr-over-grub2">Grub2 - MBR Overwritten</a></li>
+					    <li><a href="sys-admin-grub2-el.htm#multi-os">Grub2 - Dual και Multibooting</a></li>
+					    <li><a href="sys-admin-grub2-el.htm#grub1-grub2">Grub2 -Αναβάθμιση α</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Sponsored by webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="../lib/sponsor-logo/webtropia-logo.png" title="aptosid is proudly hosted by webtropia.com" alt="aptosid is proudly hosted by webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div>
+<div id="main-page">
+	<div class="divider" id="bois-prep">
+
+		<h2 id="top-header">Αναβάθμιση του BIOS με το FreeDOS</h2>
+
+							<!--p>You may want, or have a need, to update the BIOS of your PC, when the manufacturer of the motherboard announces some improvement of BIOS software. The installer program usually offered is an application to run MS-DOS.</p-->
+							<p>Μπορεί να θέλετε ή να χρειάζεται να αναβαθμίσετε το BIOS του PC σας, όταν ο κατασκευαστής της μητρικής ανακοινώσει κάποιες βελτιώσεις σε μια νεότερη έκδοση του BIOS. Συνήθως το λογισμικό που προσφέρεται για την εγκατάσταση είναι μια εφαρμογή που τρέχει στο MS-DOS.</p>
+
+							<!--p>This is a way to update BIOS from a USB in linux. This will work with USB keys, USB sticks and with micro/mini/SD cards (with a suitable adapter).</p-->
+							<p>Αυτός είναι ένας τρόπος για να αναβαθμίσετε το BIOS από ένα USB μέσα από το linux. Ο τρόπος αυτός θα δουλέψει με USB keys, USB sticks και με micro/mini/SD κάρτες (με την χρήση της κατάλληλης συσκευής για ανάγνωση της κάρτας).</p>
+
+							<!--p>Firstly, your BIOS needs to allow booting from USB - and be compatible with USB harddisks. Some BIOSes accept USB Floppies, CD-ROMs or ZIP drives, although these might be usable, it may be more difficult to implement the upgrade, however you may have no other choice, (netbooks in particular).</p-->
+							<p>Καταρχήν το BIOS σας πρέπει να επιτρέπει εκκίνηση (boot) από το USB - και να είναι συμβατό με USB σκληρούς δίσκους. Ορισμένα BIOS δέχονται μόνο USB Floppies, CD-ROMs ή οδηγούς ZIP. Αν και μπορείτε να τα χρησιμοποιήσετε και αυτά, μπορεί να είναι πιο δύσκολο να κάνετε την αναβάθμιση αλλά μπορεί να μην έχετε άλλη επιλογή (ειδικά για netbooks).</p>
+
+
+				<h3>Χρειάζεστε τρία πράγματα:</h3>
+						<!--ol>
+							<li>A USB stick, preferably &lt;2 GB (FAT16 doesn't allow more than 2 GB), and the base FreeDOS (fdbasecd.iso) install only uses 5.8 MB. <span class="highlight-3">FAT16 is the recommended format as FAT32 is not detected as bootable by every BIOS</span>.</li>
+
+							<li>a FreeDOS install medium <a href="http://www.freedos.org/freedos/files/"> fdbasecd.iso (8MB)</a> .</li>
+
+							<li>qemu (apt-get install qemu), qemu is needed for the installer, basically the emulated qemu BIOS makes your USB stick appear to FreeDOS as an ordinary harddisk, so you can install as usual (and avoids burning the FreeDOS CD).</li>
+						</ol-->
+						<ol>
+							<li>ένα USB stick, κατά προτίμηση &lt;2 GB (το FAT16 δεν επιτρέπει περισσότερα από 2 GB) και μια βασική εγκατάσταση του FreeDOS χρειάζεται μόνο 5.8 MB. <span class="highlight-3">συνιστάται το FAT16 γιατί το FAT32 δεν ανιχνεύεται σαν εκκινήσιμο από όλα τα BIOS</span>.</li>
+							<!--<p>For flashing,you only need the base install set (more than enough, actually very comfortable - will take ~5.4 MB on your USB stick)</p> -->
+
+							<li>μια μέση FreeDOS εγκατάσταση <a href="http://www.freedos.org/freedos/files/"> fdbasecd.iso (8MB)</a> .</li>
+
+							<li>qemu (apt-get install qemu), το qemu χρειάζεται για τον εγκαταστάτη, βασικά το emulated qemu BIOS κάνει το USB stick σας να μοιάζει στο FreeDOS σαν ένας συνηθισμένος σκληρός δίσκος, για να μπορείτε έτσι να το εγκαταστήσετε όπως το κάνετε συνήθως (και αποφεύγετε το γράψιμο του FreeDOS σε CD).</li>
+						</ol>
+
+				<!--h6><span class="highlight-2">This is absolutly critical: at no stage is the USB stick to be mounted. Be very careful to select the correct device node, otherwise all data on the wrong disk will be erased without any redress, i.e. your main hard drive.</span></h6-->
+
+				<h5><span class="highlight-2">Αυτό είναι ζωτικής σημασίας: σε κανένα στάδιο της διαδικασίας δεν πρέπει να προσαρτήσετε (mount) το USB stick. Προσοχή στην επιλογή της σωστής συσκευής γιατί όλα τα δεδομένα που βρίσκονται στον δίσκο που επιλέξατε θα σβηστούν, χωρίς να μπορείτε να τα αποκαταστήσετε, πχ τα δεδομένα του κυρίως δίσκου σας.</span></h5>
+
+							<!--p>Plug in your USB stick, <span class="highlight-2">remember, don't mount it</span>. Check dmesg (the last messages,if you just plugged it in), which device node got assigned to your USB stick lets assumes <span class="highlight-3">/dev/sdb</span>  .</p-->
+							<p>Συνδέστε το USB stick σας, <span class="highlight-2">προσοχή, μην το προσαρτήσετε</span>. Κοιτάξτε το dmesg (το τελευταίο μήνυμα, αν το έχετε μόλις τώρα συνδέσει) για να δείτε πιο όνομα συσκευής ανατέθηκε USB stick σας, ας υποθέσουμε ότι είναι το <span class="highlight-3">/dev/sdb</span> .</p>
+
+							<!--p>Clear your USB stick (<span class="highlight-3">all data will be lost</span>), you could also clear all of it, instead of just the first 16 MB. </p-->
+							<p>Καθαρίστε το USB stick σας, μπορείτε να το καθαρίσετε και ολόκληρο (<span class="highlight-3">όλα τα δεδομένα θα χαθούν</span>) και όχι μόνο τα πρώτα 16 MB. </p>
+
+
+<pre>
+$ sux
+Password:
+dd if=/dev/zero of=/dev/sdb bs=1M count=16
+16+0 records in
+16+0 records out
+16777216 bytes (17 MB) copied, 2.35751 s, 7.1 MB/s
+</pre>
+					<h3>Δημιουργώντας κατατμήσεις (partitions) στο USB stick</h3>
+							<!--p>Partitioning and formatting your USB stick correctly is probably the hardest part.</p>
+
+							<p>Set the partition label to FAT16, on &lt;2 GB sticks (it offers better compatibility overall).</p>
+
+							<p>Next fdisk to partition:</p-->
+							<p>Η σωστή κατάτμηση και καθάρισμα (formatting) του USB stick σας είναι μάλλον το πιο δύσκολο κομμάτι.</p>
+
+							<p>Θέστε την ετικέτα της κατάτμησης σε FAT16, σε sticks &lt;2 GB  (προσφέρει στο σύνολο μεγαλύτερη συμβατότητα).</p>
+
+							<p>Μετά κάντε fdisk στην κατάτμηση:</p>
+
+<pre>
+# fdisk /dev/sdb
+fdisk /dev/sdb
+Device contains neither a valid DOS partition table, nor Sun, SGI or OSF disklabel
+Building a new DOS disklabel with disk identifier 0xa8993739.
+Changes will remain in memory only, until you decide to write them.
+After that, of course, the previous content won't be recoverable.
+
+Warning: invalid flag 0x0000 of partition table 4 will be corrected by w(rite)
+</pre>
+							<p>Τώρα δημιουργήστε την κατάτμηση:</p>
+<pre>
+Command (m for help): <span class="highlight-3"><b>n</b></span>
+Command action
+   e   extended
+   p   primary partition (1-4)
+<span class="highlight-3"><b>p</b></span>
+Partition number (1-4): <span class="highlight-3"><b>1</b></span>
+First cylinder (1-1018, default 1):
+Using default value 1
+Last cylinder or +size or +sizeM or +sizeK (1-1018, default 1018):
+Using default value 1018
+</pre>
+							<p>Επιβεβαιώστε την δημιουργία της κατάτμησης με το να εκτυπώσετε τον πίνακα κατατμήσεων (partition table):</p>
+<pre>
+Command (m for help): <span class="highlight-3"><b>p</b></span>
+
+Disk /dev/sdb: 2003 MB, 2003828736 bytes
+62 heads, 62 sectors/track, 1018 cylinders
+Units = cylinders of 3844 * 512 = 1968128 bytes
+Disk identifier: 0xa8993739
+
+   Device Boot      Start         End      Blocks   Id  System
+/dev/sdb1               1        1018     1956595+  83  Linux
+</pre>
+							<p>Θέστε την σωστή ετικέτα κατάτμησης, '6' για FAT16:</p>
+<pre>
+Command (m for help): <span class="highlight-3"><b>t</b></span>
+Selected partition 1
+Hex code (type L to list codes): <span class="highlight-3"><b>l</b></span>
+
+ 0  Empty           1e  Hidden W95 FAT1 80  Old Minix       be  Solaris boot
+ 1  FAT12           24  NEC DOS         81  Minix / old Lin bf  Solaris
+ 2  XENIX root      39  Plan 9          82  Linux swap / So c1  DRDOS/sec (FAT-
+ 3  XENIX usr       3c  PartitionMagic  83  Linux           c4  DRDOS/sec (FAT-
+ 4  FAT16 &lt;32M      40  Venix 80286     84  OS/2 hidden C:  c6  DRDOS/sec (FAT-
+ 5  Extended        41  PPC PReP Boot   85  Linux extended  c7  Syrinx
+ 6  FAT16           42  SFS             86  NTFS volume set da  Non-FS data
+ 7  HPFS/NTFS       4d  QNX4.x          87  NTFS volume set db  CP/M / CTOS / .
+ 8  AIX             4e  QNX4.x 2nd part 88  Linux plaintext de  Dell Utility
+ 9  AIX bootable    4f  QNX4.x 3rd part 8e  Linux LVM       df  BootIt
+ a  OS/2 Boot Manag 50  OnTrack DM      93  Amoeba          e1  DOS access
+ b  W95 FAT32       51  OnTrack DM6 Aux 94  Amoeba BBT      e3  DOS R/O
+ c  W95 FAT32 (LBA) 52  CP/M            9f  BSD/OS          e4  SpeedStor
+ e  W95 FAT16 (LBA) 53  OnTrack DM6 Aux a0  IBM Thinkpad hi eb  BeOS fs
+ f  W95 Ext'd (LBA) 54  OnTrackDM6      a5  FreeBSD         ee  EFI GPT
+10  OPUS            55  EZ-Drive        a6  OpenBSD         ef  EFI (FAT-12/16/
+11  Hidden FAT12    56  Golden Bow      a7  NeXTSTEP        f0  Linux/PA-RISC b
+12  Compaq diagnost 5c  Priam Edisk     a8  Darwin UFS      f1  SpeedStor
+14  Hidden FAT16 &lt;3 61  SpeedStor       a9  NetBSD          f4  SpeedStor
+16  Hidden FAT16    63  GNU HURD or Sys ab  Darwin boot     f2  DOS secondary
+17  Hidden HPFS/NTF 64  Novell Netware  b7  BSDI fs         fd  Linux raid auto
+18  AST SmartSleep  65  Novell Netware  b8  BSDI swap       fe  LANstep
+1b  Hidden W95 FAT3 70  DiskSecure Mult bb  Boot Wizard hid ff  BBT
+1c  Hidden W95 FAT3 75  PC/IX
+
+Hex code (type L to list codes): <span class="highlight-3"><b>6</b></span>
+
+Changed system type of partition 1 to 6 (FAT16)
+</pre>
+							<p>Ενεργοποιήστε την καινούργια και μοναδική κατάτμηση:</p>
+<pre>
+Command (m for help): <span class="highlight-3"><b>a</b></span>
+Partition number (1-4): <span class="highlight-3"><b>1</b></span>
+</pre>
+							<p>Εκτυπώστε ξανά τον πίνακα κατατμήσεων, σιγουρευτείτε ότι η κατάτμηση έχει ενεργοποιηθεί:</p>
+<pre>
+Command (m for help): <span class="highlight-3"><b>p</b></span>
+
+Disk /dev/sdb: 2003 MB, 2003828736 bytes
+62 heads, 62 sectors/track, 1018 cylinders
+Units = cylinders of 3844 * 512 = 1968128 bytes
+Disk identifier: 0xa8993739
+
+   Device Boot      Start         End      Blocks   Id  System
+/dev/sdb1   *           1        1018     1956595+   6  FAT16
+</pre>
+							<p>Γράψτε τον νέο πίνακα κατατμήσεων στο USB stick σας και βγείτε από το fdisk:</p>
+<pre>
+Command (m for help): <span class="highlight-3"><b>w</b></span>
+The partition table has been altered!
+
+Calling ioctl() to re-read partition table.
+
+WARNING: If you have created or modified any DOS 6.x
+partitions, please see the fdisk manual page for additional
+information.
+Syncing disks.
+# exit
+</pre>
+							<p>Κάντε format το USB stick που μόλις δημιουργήσατε:</p>
+<pre>
+mkfs -t vfat -n FreeDOS /dev/sdb1
+exit
+</pre>
+							<!--p>The preparatory phase is now complete.You have now have partitioned and formatted the USB stick, there's nothing else left to do and you can directly go to the install process.</p-->
+							<p>Η φάση προετοιμασίας έχει ολοκληρωθεί. Τώρα έχετε δημιουργήσει μια κατάτμηση και έχετε κάνει format το USB stick, δεν μένει τίποτε άλλο να κάνετε και μπορείτε να περάσετε στην διαδικασία εγκατάστασης.</p>
+
+					<h3>Εκκινώντας το FreeDOS με το qemu</h3>
+
+							<!--p>As DOS has no idea of USB stick, you need to find a way to coax the FreeDOS installer into recognizing the USB as ordinary "harddisk", on live boot, the system's BIOS does that for us - but here the need to get inventive with qemu:</p-->
+							<p>Μιας και το DOS δεν ξέρει τι είναι ένα USB stick, θα πρέπει να βρείτε ένα τρόπο να ξεγελάσετε τον εγκαταστάτη (installer) του FreeDOS για να αναγνωρίσει το USB σαν κανονικό σκληρό δίσκο. Σε μια ζωντανή εκκίνηση (live boot), το BIOS του συστήματος το κάνει αυτό για μας - αλλά εδώ θα πρέπει να γίνετε εφευρετική με το qemu:</p>
+<pre>
+σαν χρήστης$:
+qemu -hda /dev/sdb -cdrom /μονοπάτι/προς/το/fdbasecd.iso -boot d
+</pre>
+							<!--p><span class="highlight-1">ctrl-alt</span> will toggle mouse and keyboard grab and allow you to switch desktops to reread any instructions at each step.</p-->
+							<p><span class="highlight-1">ctrl-alt</span> αλλάζει το "πιάσιμο" (grab) του ποντικιού και του πληκτρολογίου και σας επιτρέπει να αλλάξετε επιφάνεια εργασίας για να ξαναδιαβάσετε οποιεσδήποτε οδηγίες σε κάθε βήμα.</p>
+
+		<div class="screenshot"><img src="../lib/images-common/images-qemu-freedos/qemu-boot01.jpg" title="QEMU FreeDOS" alt="QEMU FreeDOS" /></div>
+							<!--p>This boots the FreeDOS CD and maps the USB stick raw device as primary master HD (here qemu's BIOS emulation abililty makes the USB stick appear to DOS as an ordinary harddisk).  Select the installer from the start menu of the virtualised FreeDOS boot:</p-->
+							<p>Αυτό εκκινεί το FreeDOS CD και αναγνωρίζει το USB stick σαν πρωτεύων master σκληρό δίσκο (εδώ το BIOS emulation του qemu κάνει το USB stick να φαίνεται σαν κανονικός δίσκος στο DOS). Επιλέξτε τον εγκαταστάτη από το μενού εκκίνησης της εικονικής εκκίνησης (boot) του FreeDOS:</p>
+<pre>
+1) Continue to boot FreeDOS from CD-ROM
+<span class="highlight-3"><b>1</b></span>
+enter
+</pre>
+	<div class="spacer02"></div>
+							<p>Συνεχίστε να επιλέγετε το προ επιλεγόμενο <span class="highlight-3">1</span> ή/και επιλέξτε <span class="highlight-3">Yes</span> αν ερωτηθείτε.</p>
+
+	<div class="spacer02"></div>
+		<div class="screenshot"><img src="../lib/images-common/images-qemu-freedos/qemu-boot02.jpg" title="Freedos Installation - 1" alt="freedos-inst1" /></div>
+
+		<div class="spacer02"></div>
+	<div class="screenshot"><img src="../lib/images-common/images-qemu-freedos/qemu-boot04.jpg" title="Freedos Installation - 2"  alt="freedos-inst2" /></div>
+
+	<div class="spacer02"></div>
+
+	<div class="spacer02"></div>
+		<div class="screenshot"><img src="../lib/images-common/images-qemu-freedos/qemu-boot09.jpg" title="Freedos Installation - 3" alt="freedos-inst3" /></div>
+
+
+	<div class="spacer02"></div>
+
+							<!--p>The install asks you to reboot - <span class="highlight-3">don't do that yet, as there is a need to fix up two errors in the FreeDOS installer for the mbr and bootmenu</span>. Type the letter <span class="highlight-3"><b>n</b></span>.</p-->
+							<p>Η εγκατάσταση σας ζητάει να επανεκκινήσετε - <span class="highlight-3">μην το κάνετε αυτό ακόμη γιατί πρέπει να διορθωθούν δυο λάθη στον εγκαταστάτη του FreeDOS για το mbr και το bootmenu (μενού εκκίνησης)</span>. Πληκτρολογείστε το γράμμα <span class="highlight-3"><b>n</b></span>.</p>
+	<div class="spacer02"></div>
+		<div class="screenshot"><img src="../lib/images-common/images-qemu-freedos/qemu-boot18.jpg" title="Freedos Installation - do not reboot type n" alt="freedos-do not reboot type n" /></div>
+
+	<div class="spacer02"></div>
+				<h3>Γράφοντας ένα bootsector στο USB stick σας</h3>
+							<p>Το πρώτο λάθος που πρέπει να φτιαχτεί είναι το mbr με:</p>
+
+<pre>
+fdisk /mbr 1
+</pre>
+							<p>Το δεύτερο λάθος που πρέπει να φτιαχτεί είναι το bootmenu μέσα στο καινούργιο fdconfig.sys σας, τρέξτε:</p>
+<pre>
+cd \
+edit fdconfig.sys
+</pre>
+							<p>και αλλάξτε την γραμμή που περιέχει την λέξη command.com σε:</p>
+<pre>
+1234?SHELLHIGH=C:\FDOS\command.com C:\FDOS /D /P=C:\fdauto.bat /K set
+(μην αλλάξετε την εντολή, απλά προσθέστε "1234?" στην αρχή της γραμμής (πριν από το SHELLHIGH==C:\FDOS\command.com .....
+ΣΗΜΕΙΩΣΗ πρέπει να γράφει: <span class="highlight-3">1234?</span>
+</pre>
+		<div class="screenshot"><img src="../lib/images-common/images-qemu-freedos/qemu-boot23.jpg" title="Edit fdconfig.sys " alt="fdconfig.sys" /></div>
+	<div class="spacer02"></div>
+							<p><span class="highlight-2">Μην αλλάξετε οτιδήποτε άλλο μιας και η γραμμή αυτή εξαρτάται από τις ρυθμίσεις της εγκατάστασης σας.</span></p>
+
+							<p>Φυλάξτε το και βγείτε από το "edit":</p>
+<pre>
+[alt]+[f]
+</pre>
+							<p>Τώρα που είστε πίσω στο command prompt (γραμμή εντολών), μπορείτε να φύγετε από το qemu.</p>
+
+ 							<p>Δοκιμάστε να δείτε αν το qemu θα εκκινήσει το USB stick.</p>
+<pre>
+qemu -hda /dev/sdb -boot c
+</pre>
+ 							<!--p>Your USB stick is now bootable and contains a full FreeDOS install of 5.4 MB, for flashing. You really should boot without any drivers <span class="highlight-3">(menu option 4), loading the  himem.sys and emm386 files may otherwise interfere with your flashing programs!</span>:</p-->
+							<p>Το USB stick σας είναι τώρα εκκινήσιμο και περιέχει μια πλήρη εγκατάσταση του FreeDOS των 5.4 MB, για το flashing. Είναι καλύτερα να εκκινήσετε χωρίς καθόλου οδηγούς <span class="highlight-3">(επιλογή 4 στο μενού), η φόρτωση των himem.sys και emm386 αρχείων μπορεί να δημιουργήσει προβλήματα στα προγράμματα flashing που θα χρησιμοποιήσετε!</span>:</p>
+
+				<h3>Αναβάθμιση του BIOS</h3>
+							<!--p>Assuming your PC is up and running, plug in the FreeDOS USB stick, mount it and download the BIOS files needed, as recommended by the manufacturer of your motherboard/BIOS, to the FreeDOS USB stick, then umount the stick.</p-->
+							<p>Με δεδομένο ότι ο υπολογιστής σας είναι αναμμένος και μέσα στο λειτουργικό, συνδέστε το FreeDOS USB stick, προσαρτήστε το και κατεβάστε τα BIOS αρχεία που χρειάζονται, όπως συνιστάται από τον κατασκευαστή της μητρικής/BIOS σας, βάλτε τα στο FreeDOS USB stick και μετά αποπροσαρτήσετε το stick.</p>
+
+							<!--p> Power off your PC, plug in the FreeDOS USB stick, power up, so that you boot to the FreeDOS USB stick and follow the procedures of the manufacturer of your motherboard/BIOS.</p-->
+							<p>Σβήστε τον υπολογιστή σας, συνδέστε το FreeDOS USB stick, ανάψτε τον υπολογιστή για να μπορέσετε να εκκινήσετε το FreeDOS USB stick και ακολουθείστε την διαδικασία του κατασκευαστή της μητρική/BIOS σας.</p>
+
+
+
+	</div>
+
+			<div id="rev">Τελευταία αναθεώρηση περιεχομένου 14/08/2010 0100 UTC</div>
+</div>
+</body>
+</html>

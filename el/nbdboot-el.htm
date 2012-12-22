@@ -1,0 +1,473 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>aptosid Manual - Network booting (nbd).</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+	<style type="text/css" media="all">@import url("../lib/css-js/version-date.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<!-- Last translation revision edhunter 18/09/2010 1245 UTC-->
+<body>
+<div id="menu"> <!-- menu starts here el lang maintained by  -->
+<!--aptosid Operating System Manual menu-version-02.13.2011.09.09 -->
+<!-- menu last updated by bluewater 2011.09.09 0935 hrs UTC -->
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="To aptosid.com forums and wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-el.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" />Αναζήτηση Online - Offline </a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Eπιλέξτε άλλη γλώσσα - Choose another language" alt="lang-switch" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-el.htm">Εγχειρίδιο ΛΣ aptosid</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-el.htm#welcome-gen">Εγχειρίδιο ΛΣ aptosid &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-el.htm#cred-team">Συντελεστές</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-el.htm#how-to">Πως να χρησιμοποιήσετε αυτό το εγχειρίδιο &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-el.htm#how-to">Πως να χρησιμοποιήσετε αυτό το εγχειρίδιο</a></li>
+					  <li><a href="welcome-el.htm#table-contents">Πίνακας περιεχομένων</a></li>
+					</ul>
+					</li>
+		<li><a href="help-el.htm#help-gen">Βοήθεια &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-el.htm#help-gen">Που να βρείτε βοήθεια</a></li>
+					  <li><a href="help-el.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-el.htm#welcome-quick">aptosid Οδηγός Γρήγορης Αναφοράς (Quick Start Guide)</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-el.htm">Περιεχόμενα ISO, Εκδόσεις, Κατέβασμα και Εγγραφή</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-el.htm#cd-content">Περιεχόμενα ISO και απαιτήσεις συστήματος &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-el.htm#rolling">Σημειώσεις Έκδοσης</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-el.htm#download-aptosid">aptosid Mirrors, Κατέβασμα και Εγγραφή &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-el.htm#md5">md5 Checksum</a></li>
+					  <li><a href="cd-dl-burning-el.htm#burn-nero">Γράφοντας το ISO στα Windows</a></li>
+					  <li><a href="cd-dl-burning-el.htm#burn-linux">Γράφοντας το ISO στο Linux</a></li>
+					  <li><a href="cd-no-gui-burn-el.htm#burning-no-gui">burniso script</a></li>
+					  <li><a href="cd-no-gui-burn-el.htm#burn-no-gui-gen">Εγγραφή χωρίς γραφικό περιβάλλον</a></li>
+					  <li><a href="cd-dl-burning-el.htm#download-aptosid">aptosid Mirrors Κατεβάσματος</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-el.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-el.htm#rootpw">Κωδικός υπερχρήστη (root) στο aptosid-Live ISO</a></li>
+				<li><a href="live-mode-el.htm#live-cd-installsoft">Εγκατάσταση προγραμμάτων σε περιβάλλον Live-ISO</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-el.htm">Το Τερματικό / Κονσόλα</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-el.htm#term-kon">Τερματικό / Κονσόλα &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-el.htm#term-kon">Τερματικό / Κονσόλα</a></li>
+					  <li><a href="term-konsole-el.htm#colours"> Coloured terminal prompts</a></li>
+					  <li><a href="term-konsole-el.htm#cli-help">Βοήθεια από την γραμμή εντολών</a></li>
+					  <li><a href="help-el.htm#init3-tools">Εργαλεία να ξέρετε για text mode (tty) - init 3</a></li>
+					  <li><a href="term-konsole-el.htm#term-cmds">Λίστα εντολών του Linux</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-el.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-el.htm">CheatCodes</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-el.htm#cheatcodes">Cheatcodes αποκλειστικά για το aptosid Live-ISO</a></li>
+				<li><a href="cheatcodes-el.htm#cheatcodes-linux">Cheatcodes γενικά για το Linux</a></li>
+				<li><a href="cheatcodes-vga-el.htm#vga">Κωδικοί VGA</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-el.htm">Partitioning the Hard Drive - Traditional, GPT and LVM</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-el.htm#hd-ntfs3g">Γράφοντας σε NTFS κατάτμηση με το ntfs-3g</a></li>
+			<li><a href="part-lvm-el.htm#part-lvm">Partitioning to use LVM - Logical Volume Manager</a></li>
+			<li><a href="part-gparted-el.htm#partition">Δημιουργία κατατμήσεων με χρήση γραφικών (GUI) εργαλείων &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-el.htm#partition">Δημιουργία κατατμήσεων στον δίσκο χρησιμοποιώντας το  GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-el.htm#ntfs">Αλλαγή μεγέθους σε NTFS κατάτμηση χρησιμοποιώντας το GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-el.htm#partition">Δημιουργία κατατμήσεων με χρήση εργαλείων κονσόλας (CLI) &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-el.htm#partition">Δημιουργία κατατμήσεων στον σκληρό δίσκο χρησιμοποιώντας το cfdisk</a></li>
+					    <li><a href="part-cfdisk-el.htm#formating">Διαμόρφωση (format) μετά την δημιουργία κατάτμησης, με το cfdisk</a></li>
+					    <li><a href="part-gdisk-el.htm#gdisk-6">Formatting after partitioning with gdisk</a></li>
+					    <li><a href="part-gdisk-el.htm#gdisk-1">GPT Partitioning with gdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-el.htm#part-example">Γενικά για κατατμήσεις &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-el.htm#part-example">Παραδείγματα για το μέγεθος των κατατμήσεων</a></li>
+					  <li><a href="part-uuid-el.htm#uuid">UUID, Rebuilding fstab and creating new mount points</a></li>
+					  <li><a href="part-cfdisk-el.htm#disknames">Ονομασία δίσκων εν συντομία</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-el.htm">Επιλογές εγκατάστασης - HD, USB, VM and Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-el.htm#Inst-prep">Προετοιμασία Εγκατάστασης &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-el.htm#Inst-prep">Προετοιμασία Εγκατάστασης</a></li>
+					  <li><a href="hd-install-el.htm#Installation">Εγκατάσταση στον σκληρό δίσκο</a></li>
+					  <li><a href="hd-install-el.htm#first-hd-boot">Πρώτη εκκίνηση</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-el.htm#fromiso">Εκκίνηση fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-el.htm#fromiso">Εκκίνηση fromiso - Γενικά</a></li>
+					  <li><a href="hd-install-opts-el.htm#grub2-fromiso">Εκκίνηση 'fromiso' με Grub 2</a></li>
+					  <li><a href="hd-install-opts-el.htm#fromiso-persist">fromiso και persist</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-el.htm#usb-hd">Εγκατάσταση σε USB δίσκους &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-el.htm#usb-hd">Eγκατάσταση σε USB σκληρό δίσκο - aptosid συγκεκριμένα - aptosid-σε-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-el.htm#raw-usb">Εγραφή του aptosid σε USB/SSD stick με Linux, MS Windows ή Mac OS X σύστημα</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-el.htm#install-crypt">Installing to encryted partitions - cryptroot</a></li>
+		  <li><a href="nbdboot-el.htm#nbd1">Εκκίνηση του aptosid μέσω δικτύου</a></li>
+		  <li><a href="hd-install-vmopts-el.htm#vm">Επιλογές εγκατάστασεις σε Εικονική Μηχανή (Virtual Machine)</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-el.htm">Κάρτες γραφικών, Οθόνες, Xorg &amp; Διάφοροι Οδηγοί</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-el.htm#mon-res">Ανάλυση Οθόνης (screen) και Οθόνες (monitor)  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-el.htm#mon-res">Ανάλυση Οθόνης (screen) και Οθόνες (monitor)</a></li>
+					  <li><a href="hw-dev-mon-el.htm#xrandr">Δύο Οθόνες (Dual Monitors) και xrandr</a></li>
+					  <li><a href="hw-dev-mon-el.htm#mon-binary">Δύο Οθόνες (με χρήση binaries)</a></li>
+					</ul>
+					</li>
+		<li><a href="gpu-el.htm#foss-xorg">GPU drivers &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="gpu-el.htm#ati-3d">AMD/ATI 3D drivers</a></li>
+					  <li><a href="gpu-el.htm#intel">Intel 2D and 3D drivers</a></li>
+					  <li><a href="gpu-el.htm#nvidia">Nvidia 3D drivers</a></li>
+					  <li><a href="gpu-el.htm#foss-xorg">Open Source Xorg drivers</a></li>
+					</ul>
+					</li>
+			  <li><a href="nf-firm-el.htm#fw-detect">Firmware detection - non-free </a></li>
+			  <li><a href="nf-firm-el.htm#non-free-firmware">Adding non-free to Sources List</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-el.htm">Διαχείριστες Παραθύρων</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-el.htm">KDE and XFCE Διαχείριστες Παραθύρων &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-dm-el.htm#xfce-notes">Χρήσιμα extras για Xfce</a></li>
+					    <li><a href="wm-dm-el.htm#install-add">Χρήσιμα extras για KDE</a></li>
+					    <li><a href="wm-dm-el.htm#desk-freeze">Κόλλημα επιφάνειας εργασίας</a></li>
+					    <li><a href="wm-dm-el.htm#kde-login">Δεν μπορώ να εισέλθω στο KDE</a></li>
+					    <li><a href="wm-dm-el.htm#ch-th">Aλλάζοντας Θέματα (Themes)</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-dm-el.htm#dm">Installing additional Display Managers</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-el.htm">Σύνδεση στο διαδίκτυο, WiFi, LAN και Δίκτυα</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-el.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-el.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-el.htm#serv-ftp">FTP Πελάτες</a></li>
+					    <li><a href="lamp-apache-el.htm#serv-sec">Πρωτόκολλα ασφαλείας</a></li>
+					    <li><a href="lamp-apache-el.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-el.htm#serv-mysql">MySQL Ρύθμιση</a></li>
+					    <li><a href="lamp-ppp-el.htm#serv-php">PHP με Apache</a></li>
+					    <li><a href="ntp-server-el.htm#ntp-server">Timeserver Ρύθμιση</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-el.htm#tor">Firewalls και Privacy &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-el.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-el.htm#privoxy">Privoxy</a></li>
+					    <li><a href="inet-ceni-el.htm#firewalls">Firewalls</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-el.htm#ssh-x">SSH και Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-el.htm#setup">Samba-Server Ρύθμιση</a></li>
+						  <li><a href="samba-el.htm#configure">Ρύθμιση SAMBA (Windows)</a></li>
+						  <li><a href="ssh-el.htm#ssh-fs">SSH Απομακρυσμένη Προσάρτυση</a></li>
+						  <li><a href="ssh-el.htm#ssh-x">Παραθυρικές Eφαρμογές μέσω SSH</a></li>
+						  <li><a href="ssh-el.htm#ssh-f">GUI SSH με Konqueror</a></li>
+						  <li><a href="ssh-el.htm#ssh-w">SSH X-Forwarding από ένα Windows-PC</a></li>
+						  <li><a href="ssh-el.htm#ssh">SSH και Ασφάλεια</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-el.htm#netcardconfig">WIFI Συνδέσεις &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="inet-ceni-el.htm#netcardconfig">Mπαίνοντας στο Δίκτυο - Ceni</a></li>
+						    <li><a href="inet-wpagui-el.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-el.htm#net-set1">WiFi - Ρύθμιση του WiFi Roaming</a></li>
+						    <li><a href="inet-wpa-el.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-el.htm#hotswitch">Εναλλαγή δικτύου μεταξύ WiFi και σύρματος</a></li>
+					</ul>
+					</li>
+		<li><a href="inet-ceni-el.htm#netcardconfig">Wired (σύρμα) Συνδέσεις &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="inet-ceni-el.htm#dial-mod">56k Modems</a></li>
+						    <li><a href="inet-ceni-el.htm#netcardconfig">Mπαίνοντας στο Δίκτυο - Ceni</a></li>
+					</ul>
+					</li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-el.htm">Διαχείριση Πακέτων και dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-el.htm#apt-cook">APT Cookbook and Sources list &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-el.htm#apt-cook">APT-Οδηγός και Λίστες Πηγών (Sources list)</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-install">Εγκαθιστώντας ένα νέο πακέτο</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-delete">Διαγράφοντας ένα πακέτο</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-downgrade">Υποβαθμίζοντας / Κρατώντας (Hold) ένα πακέτο</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-cache">Αναζήτηση πακέτων με apt-cache</a></li>
+					    <li><a href="sys-admin-apt-el.htm#gui-pacsea">GUI Package searching</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-el.htm#kern-upgrade">Αναβαθμίζοντας τον πυρήνα &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-el.htm#kern-remove">Διαγραφή ενός πυρήνα</a></li>
+					    <li><a href="sys-admin-kern-upg-el.htm#kern-upgrade">Αναβαθμίζοντας τον πυρήνα</a></li>
+					    <li><a href="sys-admin-kern-upg-el.htm#dmakms">Εγκατάσταση kernel modules δυναμικά με dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-el.htm#apt-upgrade">Aναβάθμιση σε ένα Εγκατεστημένο Σύστημα - dist-upgrade - Γενικά &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-el.htm#live-cd-upgrade">Αναβαθμίζοντας χρησιμοποιώντας το Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-el.htm#approx">dist-upgrade πολλαπλών PC σε ένα LAN</a></li>
+					    <li><a href="sys-admin-apt-el.htm#apt-upgrade">Aναβάθμιση σε ένα Εγκατεστημένο Σύστημα - dist-upgrade - Γενικά</a></li>
+					    <li><a href="sys-admin-apt-el.htm#du-st">Aναβάθμιση σε ένα Εγκατεστημένο Σύστημα - dist-upgrade - Τα Βήματα</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-el.htm">Διαχείριση Συστήματος</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-el.htm#bois-prep">Αναβάθμιση του BIOS με το FreeDOS</a></li>
+		<li><a href="vir-rkits-el.htm#virus-rkits">Ανιχνευτές Iών και Rootkits</a></li>
+		<li><a href="hd-install-el.htm#adduser">Προσθήκη χρηστών και Passwords &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-el.htm#adduser">Προσθήκη ενός νέου χρήστη</a></li>
+					    <li><a href="sys-admin-gen-el.htm#pw-lost">Χαμένο password root, νέα passwords</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-el.htm#start-services">Υπηρεσίες και init runlevels &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-el.htm#start-services">Ενεργοποίηση / Απενεργοποίηση Υπηρεσιών (Services)</a></li>
+					    <li><a href="sys-admin-gen-el.htm#pkill">Killing a service or process</a></li>
+					    <li><a href="sys-admin-gen-el.htm#init">aptosid Επίπεδα εκτέλεσης (runlevels) - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-el.htm#rsync">Backup του συστήματος &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-el.htm#rdiff">Back-Up με rdiff</a></li>
+					    <li><a href="sys-admin-rsync-el.htm#rsync">Back-Up με rsync</a></li>
+					    <li><a href="home-el.htm#home-bu">Μεταφορά του /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-el.htm#fonts">CUPS, Γραμματοσειρές και Ήχος &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-el.htm#fonts">Γραμματοσειρές</a></li>
+					     <li><a href="sys-admin-gen-el.htm#cups">CUPS - Σύστημα Εκτύπωσης</a></li>
+					     <li><a href="sys-admin-gen-el.htm#sound">Mixers Ήχου</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-el.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-el.htm#chroot">Grub2 - Recovering Grub with chroot</a></li>
+					    <li><a href="sys-admin-grub2-el.htm#mbr-over-grub2">Grub2 - MBR Overwritten</a></li>
+					    <li><a href="sys-admin-grub2-el.htm#multi-os">Grub2 - Dual και Multibooting</a></li>
+					    <li><a href="sys-admin-grub2-el.htm#grub1-grub2">Grub2 -Αναβάθμιση α</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]">Sponsored by webtropia.com</a>
+		</li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://adfarm1.adition.com/click?sid=399467&amp;ts=[timestamp]"><img src="../lib/sponsor-logo/webtropia-logo.png" title="aptosid is proudly hosted by webtropia.com" alt="aptosid is proudly hosted by webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-en ends here --> </div>
+<div id="main-page">
+	<div class="divider" id="nbd1">
+			<!--h2 id="top-header">Booting aptosid over a network (network block device - nbd)</h2-->
+			<h2 id="top-header">Εκκίνηση του aptosid μέσω δικτύου (network block device - nbd)</h2>
+
+
+							<!--p><span class="highlight-2">Warning: dnsmasq includes a dhcp server which can conflict with an existing dhcp server on your network (your router may provide one). </span>   <span class="highlight-3">The safest option is to only use one dhcp server on any network. This means you should disable any other dhcp servers on the same network. The dnsmasq proxy options outlined below should be able to co-exist with another dhcp server on the same network, however please do not try this unless you administer the network and are ready to deal with any unforeseen consequences which might crop up.</span></p-->
+							<p><span class="highlight-2">Προειδοποίηση: το dnsmasq περιλαμβάνει ένα dhcp διακομιστή ο οποίος μπορεί να "συγκρουστή" με έναν ήδη υπαρκτό dhcp διακομιστή στο δίκτυο σας (ο δρομολογιτής σας μπορεί να περιλαμβάνει έναν). </span> <span class="highlight-3">Η ασφαλέστερη επιλογή είναι η χρήση μόνο ενός dhcp διακομιστή σε ένα δίκτυο. Αυτό σημαίνει ότι θα πρέπει να απενεργοποιήσετε οποιοδήποτε άλλο dhcp διακομιστή που βρίσκεται στο ίδιο δίκτυο. Η dnsmasq proxy επιλογές που περιγράφονται πιο κάτω θα πρέπει να είναι σε θέση να συνυπάρξουν με άλλο dhcp διακομιστή στο ίδιο δίκτυο, όμως μην το δοκιμάσετε αυτό εκτός και αν είστε ο διαχειριστής του δικτύου και είστε έτοιμος να αντιμετωπίσετε τυχών προβλήματα που μπορεί να προκύψουν.</span></p>
+
+			      <h4>Τα βασικά</h4>
+							<!--p>Network booting first requires that you have a machine capable of network booting, which can be connected via a network you run to a machine which you can setup to offer the network booting services. </p-->
+							<p>Για την εκκίνηση μέσω δικτύου χρειάζεστε ένα υπολογιστή ο οποίος υποστηρίζει εκκίνηση μέσω δικτύου, ο οποίος μπορεί να συνδεθεί με το δίκτυο και τον οποίο μπορείτε να ρυθμίσετε να παρέχει υπηρεσίες εκκίνησης μέσω δικτύου.</p>
+
+							<!--p>You do not want to do this on your workplace network, or any other network you do not control, unless you run that network or get permission and guidance from those who do. If you are co-operating in a larger network you can investigate all the options to dnsmasq, such as limiting the interfaces it listens on or the clients it will respond to, to restrict the impact of your setup on the network.</p-->
+							<p>Δεν θέλετε να το κάνετε αυτό στην δουλειά ή σε κάποιο άλλο δίκτυο το οποίο δεν ελέγχετε εκτός και αν εσείς διαχειρίζεστε το δίκτυο ή έχετε πάρει την άδεια και οδηγίες από τον διαχειριστή. Εάν βρίσκεστε σε ένα μεγαλύτερο δίκτυο, τότε μπορείτε να ερευνήσετε όλες τις επιλογές του dnsmasq, όπως τον περιορισμό των διεπαφών στις οποίες "ακούει" ή τους πελάτες στους οποίους θα απαντήσει για να μειώσετε έτσι τον φόρτο του δικτύου.</p>
+
+			      <h4>Οι προαπαιτήσεις</h4>
+							<!--p>A 2009-04 (or newer) aptosid iso booted up to use as the network boot server. The instructions should be basically the same with any up to date aptosid or debian sid machine and should provide all the clues you need to use on other systems. Linux is required to serve nbd devices.</p-->
+							<p>Ένα 2009-04 (ή νεότερο) aptosid iso εκκινημένο για να χρησιμοποιηθεί σαν network boot server. Οι οδηγίες θα πρέπει να είναι οι ίδιες σε ένα οποιοδήποτε ενημερωμένο aptosid ή debian sid σύστημα και θα πρέπει να παρέχει όλα τα στοιχεία που χρειάζονται για να το χρησιμοποιήσετε και σε άλλα συστήματα. Το Linux είναι υποχρεομένο να παρέχει nbd συσκευές.</p>
+
+							<!--p>dnsmasq will be used to provide everything for the initial booting phases, again it shouldn't be hard to translate the required knowledge to other software.</p-->
+							<p>Το dnsmasq θα χρησιμοποιηθεί για να παρέχει τα πάντα για την αρχική φάση της εκκίνησης. Και πάλι δεν είναι πολύ δύσκολη η μεταφορά των οδηγιών και σε άλλες εφαρμογές.</p>
+
+				<h6>Εγκατάσταση</h6>
+<pre>
+apt-get install nbd-server dnsmasq
+</pre>
+
+				<h3>Ρύθμιση του nbd-server</h3>
+
+							<!--p> Presuming the iso can be found at <span class="highlight-3">/dev/scd0</span>,  (which it probably can be if you booted from cd, otherwise substitute in any suitable file or device), then you can setup a nbd-server conf file called <span class="highlight-3">nbd-aptosid.conf</span> with a section called aptosid-iso to export the cd on port 9040 by running the following:</p-->
+							<p>Αν υποθέσουμε ότι το ISO μπορεί να βρεθεί στο <span class="highlight-3">/dev/scd0</span>, (που μάλλον θα μπορεί αν εκκινήσατε από cd, σε διαφορετική περίπτωση χρησιμοποιείστε οποιοδήποτε άλλο κατάλληλο αρχείο ή συσκευή), τότε μπορείτε να ρυθμίσετε ένα nbd-server αρχείο ρυθμίσεων με όνομα <span class="highlight-3">nbd-aptosid.conf</span> με ένα κομμάτι με όνομα aptosid-iso για να διαμοιραστείτε το cd στο port 9040 με το να τρέξετε την παρακάτω εντολή:</p>
+
+<pre>
+echo '[generic]' &gt; nbd-aptosid.conf
+nbd-server 0.0.0.0:10809 /dev/scd0 -o aptosid-iso &gt;&gt; nbd-aptosid.conf
+</pre>
+							<!--p>The generic header is always required.   If you want to setup the nbd-server to work automatically on a real system you will probably want to setup /etc/nbd-server.conf instead. There are a lot more options to nbd-server than shown here, see <span class="highlight-3">man nbd-server.</span></p-->
+							<p>Η κεφαλίδα 'generic' χρειάζεται πάντα. Αν θέλετε να ρυθμίσετε τον nbd-server να δουλεύει αυτόματα πάνω σε ένα πραγματικό σύστημα, θα θέλετε μάλλον να ρυθμίσετε το /etc/nbd-server.conf . Ο nbd-server έχει πολλές περισσότερες ρυθμίσεις απ' ότι περιγράφουμε εδώ, δείτε <span class="highlight-3">man nbd-server.</span></p>
+
+							<!--p>To actually start the server now, as a normal user and without bothering setting up or copying the file to <span class="highlight-3">/etc/nbd-server.conf</span>, you can just run:</p-->
+							<p>Για να ξεκινήσετε τον διακομιστή, σαν απλός χρήστης χωρίς να χρειάζετε να ρυθμίσετε ή να αντιγράψετε το αρχείο στο <span class="highlight-3">/etc/nbd-server.conf</span> , μπορείτε απλά να τρέξετε:</p>
+<pre>
+nbd-server -C nbd-aptosid.conf
+</pre>
+							<!--p>The target of the nbd-server does not have to be an iso or a cd/dvd/usb stick, it just has to contain a suitable filesystem image.</p-->
+							<p>Ο στόχος (target) του nbd-server δεν χρειάζετε να είναι κάποιο ISO ή ένα cd/dvd/usb stick, απλά πρέπει να περιέχει ένα κατάλληλο σύστημα αρχείων.</p>
+
+				  <h4>dnsmasq</h4>
+
+							<!--p>The following example assumes you are running on a simple network where your machine has one ethernet connection which is setup by dhcp from another machine and which the network boot clients can use to setup their interfaces by dhcp.</p-->
+							<p>Στο παράδειγμα που ακολουθεί, υποθέτουμε ότι έχετε ένα απλό δίκτυο στο οποίο το μηχάνημα σας έχει μια σύνδεση ethernet, η οποία ρυθμίζεται μέσω dhcp από ένα άλλο μηχάνημα και το οποίο οι πελάτες δικτυακής εκκίνησης μπορούν να χρησιμοποιήσουν για να ρυθμίσουν τις διεπαφές τους μέσω dhcp.</p>
+
+							<!--p>The main relevant options for dnsmasq to network boot aptosid are to setup a path for the tftp server files and a file for it to boot from there. </p-->
+							<p>Οι επιλογές του dnsmasq που μας ενδιαφέρει να ρυθμίσουμε για να μπορέσουμε να εκκινήσουμε το aptosid μέσω δικτύου, είναι το μονοπάτι για τα αρχεία του tftp διακομιστή και ένα αρχείο για να μπορέσει να εκκινήση από αυτό.</p>
+
+							<!--p>Create a <span class="highlight-3">tftp</span> directory for booting in <span class="highlight-3">/home</span> (you can create it where you want if you prefer another place). Thus the path becomes <span class="highlight-3">/home/tftp</span>.</p-->
+							<p>Δημιουργήστε ένα κατάλαγο <span class="highlight-3">tftp</span> για την εκκίνηση μέσα στο <span class="highlight-3">/home</span> (μπορείτε να τον δημιουργίσετε και αλλού αν προτιμάτε). Το μονοπάτι θα είναι <span class="highlight-3">/home/tftp</span>.</p>
+
+							<!--p>Next create a file called <span class="highlight-3">pxe-aptosid.conf</span> and paste in the following:</p-->
+							<p>Μετά δημιουργήστε ένα αρχείο με όνομα <span class="highlight-3">pxe-aptosid.conf</span> και βάλτε μέσα τα ακόλουθα:</p>
+<pre>
+dhcp-range=0.0.0.0,proxy
+pxe-service=x86PC, &quot;boot linux&quot;, pxelinux
+enable-tftp
+tftp-root=/home/tftp
+tftp-secure
+</pre>
+							<!--p>When using the dhcp proxy you need to provide a pxe menu with pxelinux as the only entry which will therefore  start it automatically.  This is what the lone pxe-service item is above.</p-->
+							<p>Όταν χρησιμοποιείτε τον dhcp proxy, πρέπει να παρέχετε ένα pxe μενού με το pxelinux σαν μόνη επιλογή το οποίο και θα ξεκινάει αυτόματα. Αυτό είναι το μοναδικό pxe-service που αναφέρεται πιο πάνω.</p>
+
+ 							<!--p>As root, move the newly created <span class="highlight-3">pxe-aptosid.conf</span> file to <span class="highlight-3">/etc/dnsmasq.d/</span>:</p-->
+							<p>Σαν root, μεταφέρετε το αρχείο <span class="highlight-3">pxe-aptosid.conf</span> στο <span class="highlight-3">/etc/dnsmasq.d/</span>:</p>
+<pre>
+sux
+mv pxe-aptosid.conf /etc/dnsmasq.d/
+</pre>
+
+							<!--p>Note: For a network (e.g. 192.168.0.*) with no other dhcp server you could swap the first two lines for:</p-->
+							<p>Σημείωση: Για ένα δίκτυο (π.χ. 192.168.0.*) χωρίς άλλο διακομιστή dhcp, μπορείτε να γράψετε τα παρακάτω στην θέση των δυο πρώτων γραμμών:</p>
+<pre>
+dhcp-range=192.168.0.100,192.168.0.199,1h
+dhcp-boot=pxelinux.0
+</pre>
+
+							<!--p>To give out ip addresses starting with 192.168.0.100 and ending with 192.168.0.199 with a lease time of an hour, and to provide the filename to just run pxelinux.0 as part of the dhcp request (when using the proxy you instead provide a pxe menu with only pxelinux as an entry which will therefore automatically start it). This probably won’t setup your network as you wish though unless your dnsmasq server should also be your dns server and gateway for the boot clients.</p-->
+							<p>Για να παρέχετε ip διευθύνσεις ξεκινώντας με 192.168.0.100 και τελειώνοντας με 192.168.0.199 και χρόνο ενικοίασης μια ώρα και για να παρέχετε το όνομα αρχείου για να τρέξει μόνο το pxelinux.0 σαν μέρος του dhcp request (όταν χρησιμοποιήτε το proxy, παρέχετε ένα pxe μενού με μόνη επιλογή το pxelinux το οποίο θα ξεκινάει αυτόματα). Αυτό μάλλον δεν θα ρυθμίσει το δίκτυο σας όπωςε επιθυμείτε εκτός και αν ο dnsmasq διακομιστής θα πρέπει να είναι και ο διακομιστής dns σας και gateway για τους πελάτες.</p>
+
+							<!--p>To enable the new file you will need to uncomment the <span class="highlight-3">conf-dir=/etc/dnsmasq.d</span> setting at the bottom of <span class="highlight-3">/etc/dnsmasq.conf</span> and then restart dnsmasq.</p-->
+							<p>Για να ενεργοποιήσετε το νέο αρχείο, θα πρέπει να φύγετε το # μπροστά από την γραμμή <span class="highlight-3">conf-dir=/etc/dnsmasq.d</span> η οποία βρίσκεται στο τέλος του αρχείου <span class="highlight-3">/etc/dnsmasq.conf</span> και να επανεκκινήσετε το dnsmasq.</p>
+
+							<!--p>dnsmasq has a lot of options and can act as a dns server as well as a dhcp, pxe and tftp server. The above is simply a minimal outline of the pieces needed to use pxelinux.</p-->
+							<p>Το dnsmasq έχει πολλές επιλογές και μπορεί να χρησιμοποιηθεί σαν διακομιστής dns, dhcp, pxe και tftp. Τα πιο πάνω είναι τα βασικά κομμάτια που χρειάζονται για το pxelinux.</p>
+
+				  <h4>tftp</h4>
+
+							<!--p>tftp is the network equivalent of the boot directory. Using the continuing example of  the <span class="highlight-3">/home/tftp </span> directory you need to populate it. If the cdrom is mounted on <span class="highlight-3">/fll/scd0</span>:</p-->
+							<p>Το tftp είναι το αντίστοιχο του καταλόγου boot για το δίκτυο. Συνεχίζοντας το πιο πάνω παράδειγμα με το <span class="highlight-3">/home/tftp</span>, θα πρέπει τώρα να βάλετε κάποια αρχεία στον κατάλογο. Αν το cdrom είναι προσαρτισμένο στο <span class="highlight-3">/fll/scd0</span>:</p>
+
+<pre>
+cp /fll/scd0/boot/isolinux/* /home/tftp
+mkdir /home/tftp/pxelinux.cfg
+mv /home/tftp/isolinux.cfg /home/tftp/pxelinux.cfg/default
+mkdir /home/tftp/boot
+cp /fll/scd0/boot/vmlin* /fll/scd0/boot/initr* /fll/scd0/boot/memtest* /home/tftp/boot/
+cp /usr/lib/syslinux/pxelinux.0 /home/tftp/
+# required for the tftp-secure option to dnsmasq
+chown -R dnsmasq.dnsmasq /home/tftp/*
+</pre>
+
+							<p>Now you can edit boot options to your satisfaction in <span class="highlight-3">/home/tftp</span> on both the <span class="highlight-3">pxelinux.cfg/default</span> and the <span class="highlight-3">gfxboot.cfg</span> file. </p>
+
+							<p>In particular it is suggested that under the <span class="highlight-3">[install]</span> section you set the <span class="highlight-3">install= </span>to <span class="highlight-3">install=nbd</span>, <span class="highlight-3">install.nbd.server</span> to the server's IP on the network and <span class="highlight-3">install.nbd.port</span> to the name of the nbd export section, for example. aptosid-iso (as nbd exports are named now rather then simply using port numbers).</p>
+
+							<!--p>Alternatively you could disable the F3 menu completely and edit the kernel command lines to use something like:</p-->
+							<p>Αντί αυτού θα μπορούσατε να απανεργοποιήσετε το F3 μενού εντελός και να αλλάξετε την γραμμή του πυρήνα να μοιάζει κάπως έτσι:</p>
+<pre>
+fromhd=/dev/nbd0 root=/dev/nbd0 nbdroot=192.168.1.23,aptosid-iso nonetwork
+</pre>
+
+
+					<h6>toram κωδικός εκκίνησης</h6>
+							<!--p>If you add toram to the boot options, machines with enough ram will release the server as soon as they copy the file and machines without sufficient ram will carry on and boot normally. At least 1 gig of ram, (ideally 2 gig or more), is required for toram.</p-->
+							<p>Εάν προσθέσετε το toram στις επιλογές εκκίνησεις, υπολογιστές με αρκετή ram θα αποσυνδεθούν από τον διακομιστή μόλις αντιγράψουν τα απαραίτητα αρχεία και υπολογιστές με ανεπαρκή ram θα συνεχίσουν κανονικά την εκκίνηση. Χρειάζεται τουλάχιστον 1 gig ram για το toram (2 gig ή περισσότερα είναι το ιδανικό).</p>
+
+				    <h4>Εκκίνηση μέσω δικτύου</h4>
+
+							<!--p>Ensure that the client PC's BIOS is set to use <span class="highlight-3">Boot from Network</span>. </p-->
+							<p>Σιγουρευτείτε ότι το BIOS του υπολογιστή-πελάτη είναι ρυθμισμένο για <span class="highlight-3">Boot from Network</span>.</p>
+
+							<!--p>As long as your bios supports booting from the network, the machine is connected to a network with your server and the aptosid kernel and initrd.img support your network card, you should be able to boot aptosid from the network. </p-->
+							<p>Εάν το BIOS του υπολογιστή υποστηρίζει εκκίνηση μέσω δικτύου, ο υπολογιστής είναι συνδεδεμένος με τον διακομιστή και ο πυρίνας και το initrd.img του aptosid υποστηρίζουν την κάρτα δικτύου σας, θα πρέπει να μπορείτε να εκκινήσετε το aptosid μέσω του δικτύου.</p>
+
+							<!--p>Some network cards may require non-free firmware which will require rebuilding the initrd image to include the firmware.</p-->
+							<p>Μερικές κάρτες δικτύου μπορεί να χρειάζονται μη-ελεύθερο firmware πράγμα που σημαίνει ότι θα πρέπει να το προσθέσετε στο initrd.img .</p>
+
+
+	</div>
+	<div id="rev">Τελευταία αναθεώρηση περιεχομένου 11/06/2011 1305 UTC </div>
+
+</div>
+</body>
+</html>
