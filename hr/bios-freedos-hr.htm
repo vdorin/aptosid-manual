@@ -1,0 +1,539 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>aptosid Priručnik - Obnoviti Bios FreeDOS </title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- last translation by cobra 13/05/2010 1815 UTC -->
+<div id="menu"> <!-- menu starts here hr lang maintainer cobra -->
+<!--aptosid Operating System Manual menu-version-00.01.2010.09.17 -->
+<!-- menu last updated by bluewater 2010.09.17 0730 hrs UTC -->
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="aptosid.com, forum and wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-hr.htm#search-on"><img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" /> Traži Online Offline</a> </li>
+		<!--<li><a href="http://manual.aptosid.com/meta-manual">Izbor softvera zajednice</a></li>-->
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Izaberite drugi jezik - Choose another language" alt="lang-switch" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-hr.htm">aptosid OS priručnik</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-hr.htm#welcome-gen">aptosid OS priručnik &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-hr.htm#cred-team">Zahvale</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-hr.htm#how-to">Kako koristiti ovaj priručnik &#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-hr.htm#how-to">Kako koristiti ovaj priručnik</a></li>
+					  <li><a href="welcome-hr.htm#table-contents">Indeks</a></li>
+					</ul>
+					</li>
+		<li><a href="help-hr.htm#help-gen">Pomoč &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-hr.htm#help-gen">Gdje možete dobiti pomoć</a></li>
+					  <li><a href="help-hr.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-hr.htm#welcome-quick">aptosid Quick Start</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-hr.htm">ISO Sadržaj, Izdanje, Download Mirrors i prženje</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-hr.htm#cd-content">ISO sadržaj i sistemski zahtjevi &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-hr.htm#rolling">Release Notes</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-hr.htm#download-aptosid">aptosid Mirrors, ISO download i prženje &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-hr.htm#md5">md5 zbroj za provjeru</a></li>
+					  <li><a href="cd-dl-burning-hr.htm#burn-nero">Prženje s Windows</a></li>
+					  <li><a href="cd-dl-burning-hr.htm#burn-linux">Prženje s Linux</a></li>
+					  <li><a href="cd-no-gui-burn-hr.htm#burning-no-gui">burniso script</a></li>
+					  <li><a href="cd-no-gui-burn-hr.htm#burn-no-gui-gen">Prženje bez GUI-a</a></li>
+					  <li><a href="cd-dl-burning-hr.htm#download-aptosid">aptosid Download Mirrors</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-hr.htm">Live Modus</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-hr.htm#rootpw">Root-lozinka na aptosid-Live-ISO</a></li>
+				<li><a href="live-mode-hr.htm#live-cd-installsoft">Instalirati softver kada ste na Live-ISO</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-hr.htm">Terminal / Konzola</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-hr.htm#term-kon"> Terminal / Konzola &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-hr.htm#term-kon"> Terminal / Konzola</a></li>
+					  <li><a href="term-konsole-hr.htm#cli-help">Pomoć za naredbenu crtu</a></li>
+					  <li><a href="help-hr.htm#init3-tools">Poznati alate u tekstualnom modusu (tty) - init 3</a></li>
+					  <li><a href="term-konsole-hr.htm#term-cmds">Lista naredbi za Linux Terminal</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-hr.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-hr.htm">CheatCodes</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-hr.htm#cheatcodes">aptosid specifični Live-ISO Cheatcodes</a></li>
+				<li><a href="cheatcodes-hr.htm#cheatcodes-linux">Linux općeniti Cheatcodes</a></li>
+				<li><a href="cheatcodes-vga-hr.htm#vga">VGA Codes</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-hr.htm">Particijonirati vaš Hard-Disk</a>
+		<ul class="sub-menu" id="sm6">
+			<li><a href="part-gparted-hr.htm#hd-ntfs3g">Pisanje na NTFS particiju sa NTFS-3g</a></li>
+			<li><a href="part-gparted-hr.htm#partition">Particijonirati sa GUI &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-hr.htm#partition">Particijonirati vaš HD koristeći GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-hr.htm#ntfs">Mijenjanje veličine NTFS particija koristeći GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-hr.htm#partition">Particijonirati sa naredbenom crtom &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-hr.htm#partition">Particijonirati vaš HD koristeći cfdisk</a></li>
+					    <li><a href="part-cfdisk-hr.htm#formating">Formatiranje particija poslije particijoniranjem sa cfdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-hr.htm#part-example">Osnove particioniranja &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-hr.htm#part-example">Primjeri veliparticije </a></li>
+					  <li><a href="part-uuid-hr.htm#uuid">UUID, označivanje particija i fstab</a></li>
+					  <li><a href="part-cfdisk-hr.htm#disknames">Namjestiti HD ime ukratko</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-hr.htm">Installation options - HD, USB, VM</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-hr.htm#Inst-prep">Instalacijske opcije &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-hr.htm#Inst-prep">Priprema za instalaciju</a></li>
+					  <li><a href="hd-install-hr.htm#Installation">Instaliranje na vaš HD</a></li>
+					  <li><a href="hd-install-hr.htm#first-hd-boot">Prvi Boot-Up</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-hr.htm#fromiso">Boot sa fromiso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-hr.htm#fromiso">Boot sa fromiso - Pregled</a></li>
+					  <li><a href="hd-install-opts-hr.htm#fromiso-grub-leg">Boot sa fromiso sa grub-legacy</a></li>
+					  <li><a href="hd-install-opts-hr.htm#grub2-fromiso">Boot sa fromiso sa Grub 2</a></li>
+					  <li><a href="hd-install-opts-hr.htm#fromiso-persist">fromiso i persist</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-hr.htm#usb-hd">Instaliranje na USB uređaje &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-hr.htm#usb-hd">Instaliranje na USB-HD - aptosid specifično - aptosid-on-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-hr.htm#raw-usb">Pisanje aptosid na USB / SSD stick sa svim Linux, MS Windows ili Mac OS X sustavima</a></li>
+					</ul>
+					</li>
+		  <li><a href="nbdboot-hr.htm#nbd1">Dizanje aptosid preko mreže</a></li>
+		  <li><a href="hd-install-vmopts-hr.htm#vmopts">Opcije instalacije na virtualni stroj</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="hw-dev-hw-dri-hr.htm">Grafičke kartice, hardver, Xorg, sredstvo i pogonitelji</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-hr.htm#mon-res">Rezolucije Monitora  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-hr.htm#mon-res">Rezolucije Monitora i Monitori</a></li>
+					  <li><a href="hw-dev-mon-hr.htm#xrandr">Dual Monitori i xrandr</a></li>
+					  <li><a href="hw-dev-mon-hr.htm#mon-binary">Dual Monitori (koristeči binarne pogonitelje)</a></li>
+					</ul>
+					</li>
+		<li><a href="hw-dev-hw-dri-hr.htm#non-free-3d">Grafičke kartice sa vlasničkim pogoniteljima &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="hw-dev-hw-dri-hr.htm#non-free-3d">Binarni, non-free pogonitelji za: Nvidia &amp; xorg.conf</a></li>
+					  <li><a href="hw-dev-hw-dri-hr.htm#non-free-3d-2">non-free pogonitelji za ATI, Radeon i druge</a></li>
+					</ul>
+					</li>
+			  <li><a href="hw-dev-hw-dri-hr.htm#non-free-firmware">Hardver kojoj trebaju non-free firmware pogonitelji</a></li>
+			  <li><a href="hw-dev-hw-dri-hr.htm#non-free">Dodati non-free u Sources List</a></li>
+			  <li><a href="hw-dev-hw-dri-hr.htm#native-nv-ati">FOSS xorg pogonitelji za nVidia, ATI, Radeon, Intel &amp; xorg.conf</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-kde-hr.htm">Window-Menadžer</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-kde-hr.htm">Window-Menadžeri &#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-xfce-hr.htm#xfce-notes">Korisni Xfce ekstra</a></li>
+					    <li><a href="wm-kde-hr.htm#install-add">Korisne ekstra KDE aplikacije</a></li>
+					    <li><a href="wm-kde-hr.htm#desk-freeze">Desktop je smrznut</a></li>
+					    <li><a href="wm-kde-hr.htm#kde-login">Ne mogu se prijaviti u KDE</a></li>
+					    <li><a href="wm-kde-hr.htm#ch-th">Promjeni temu</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-kde-hr.htm#dm">Menadžeri za Prikaz - dm</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="internet-connecting-hr.htm">Internet, WiFi, LAN i umrežavanje</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-hr.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-hr.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-hr.htm#serv-ftp">FTP klijenti</a></li>
+					    <li><a href="lamp-apache-hr.htm#serv-sec">Sigurnosne protokole</a></li>
+					    <li><a href="lamp-apache-hr.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-hr.htm#serv-mysql">MySQL Postavke</a></li>
+					    <li><a href="lamp-ppp-hr.htm#serv-php">PHP u Apache</a></li>
+					    <li><a href="ntp-server-hr.htm#ntp-server">Postavke poslužitelja za vrijeme</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-hr.htm#tor">Firewall i privatnost &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-hr.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-hr.htm#privoxy">Privoxy</a></li>
+					    <li><a href="internet-connecting-hr.htm#firewalls">Firewall</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-hr.htm#ssh-x">SSH i Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-hr.htm#setup">Postavke Samba-poslužitelja</a></li>
+						  <li><a href="samba-hr.htm#configure">Konfiguriranje SAMBA (Windows)</a></li>
+						  <li><a href="ssh-hr.htm#ssh-fs">SSH Priključivanje udaljenih računala</a></li>
+						  <li><a href="ssh-hr.htm#ssh-x">X-Window aplikacije via SSH</a></li>
+						  <li><a href="ssh-hr.htm#ssh-f">GUI SSH sa Konqueror</a></li>
+						  <li><a href="ssh-hr.htm#ssh-w">SSH X-Forwarding sa Windows-PC</a></li>
+						  <li><a href="ssh-hr.htm#ssh">SSH i sigurnost</a></li>
+					</ul>
+					</li>
+		<li><a href="internet-connecting-hr.htm#netcardconfig">WIFI &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="internet-connecting-hr.htm#netcardconfig">Ulaz u Internet - Ceni</a></li>
+						    <li><a href="inet-wpagui-hr.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-hr.htm#net-set1">WiFi - postaviti za WiFi Roaming</a></li>
+						    <li><a href="internet-connecting-wpa-hr.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-hr.htm#hotswitch">Prebacivanje između WiFi i kabela</a></li>
+					</ul>
+					</li>
+		<li><a href="internet-connecting-hr.htm#netcardconfig">Ožičene veze &#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="internet-connecting-hr.htm#dial-mod">56k Modemi</a></li>
+						    <li><a href="internet-connecting-hr.htm#netcardconfig">Ulaz u internet - Ceni</a></li>
+					</ul>
+					</li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-hr.htm">Paket menadžment i dist-upgrade</a>
+	<ul class="sub-menu" id="sm12">
+		<li><a href="sys-admin-apt-hr.htm#apt-cook">APT-Vodič i sources.list &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-hr.htm#apt-cook">APT-Vodič i sources.list</a></li>
+					    <li><a href="sys-admin-apt-hr.htm#apt-install">Instaliranje novih paketa</a></li>
+					    <li><a href="sys-admin-apt-hr.htm#apt-delete">Brisanje paketa</a></li>
+					    <li><a href="sys-admin-apt-hr.htm#apt-downgrade">Downgrading  / Hold jednog paketa</a></li>
+					    <li><a href="sys-admin-apt-hr.htm#apt-cache">Tražiti Paket sa apt-cache</a></li>
+					    <li><a href="sys-admin-apt-hr.htm#gui-pacsea">Tražiti Paket sa Grafičkim korisničkim sučelju</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-hr.htm#kern-upgrade">Obnoviti kernel &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-hr.htm#kern-remove">Uklanjanje kernela</a></li>
+					    <li><a href="sys-admin-kern-upg-hr.htm#kern-upgrade">Obnoviti kernel</a></li>
+					    <li><a href="sys-admin-kern-upg-hr.htm#dmakms">Instalirati kernel modula dinamički sa dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-hr.htm#apt-upgrade">Obnoviti instaliran sistem -  dist-upgrade - Pregled &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-hr.htm#live-cd-upgrade">Obnoviti sa Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-hr.htm#approx">dist-upgrade od više računala na LAN</a></li>
+					    <li><a href="sys-admin-apt-hr.htm#apt-upgrade">Obnoviti instaliran sistem -  dist-upgrade - Pregled</a></li>
+					    <li><a href="sys-admin-apt-hr.htm#du-st">Obnoviti instaliran sistem -  dist-upgrade - Koraci</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-hr.htm">Sistem Administracija</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-hr.htm#bios-prep">Obnoviti BIOS sa FreeDOS</a></li>
+		<li><a href="vir-rkits-hr.htm#virus-rkits">Virus i Rootkit skeneri</a></li>
+		<li><a href="hd-install-hr.htm#adduser">Dodati nove korisnike &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-hr.htm#adduser">Dodati nove korisnike</a></li>
+					    <li><a href="sys-admin-gen-hr.htm#pw-lost">Izgubljena root lozinka, nova lozinka</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-hr.htm#start-services">Services and init runlevels &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-hr.htm#start-services">Servise aktivirati/deaktivirati</a></li>
+					    <li><a href="sys-admin-gen-hr.htm#init">aptosid runlevels - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-hr.htm#rsync">Sigurnosne kopije sistema &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-hr.htm#rdiff">Sigurnosne kopije sa rdiff</a></li>
+					    <li><a href="sys-admin-rsync-hr.htm#rsync">Sigurnosne kopije sa rsync</a></li>
+					    <li><a href="home-hr.htm#home-bu">Premještanje /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-hr.htm#fonts">CUPS, pisma i zvuk &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-hr.htm#fonts">Pisma</a></li>
+					     <li><a href="sys-admin-gen-hr.htm#cups">CUPS - Sistem za tiskanj</a></li>
+					     <li><a href="sys-admin-gen-hr.htm#sound">Sound Mikseri</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-hr.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-hr.htm#mbr-over-grub2">Grub2 - MBR Overwritten</a></li>
+					    <li><a href="sys-admin-grub2-hr.htm#multi-os">Grub2 - Dual i Multibooting</a></li>
+					    <li><a href="sys-admin-grub2-hr.htm#grub1-grub2">Grub2 - Obnoviti iz Grub1</a></li>
+					    <li><a href="sys-admin-grub2-hr.htm#grub2">Grub2 - Pregled</a></li>
+					</ul>
+					</li>
+			</ul>
+		</li>
+	</ul>
+<!-- menu ends here --> </div>
+<div id="main-page">
+	<div class="divider" id="bios-prep">
+
+		<h2 id="top-header">Obnoviti BIOS sa FreeDOS</h2>
+
+							<p>Možda hoćete, ili imate potrebu, da obnovite BIOS vašeg računala, ako vam proizvođač matične ploče oglasi neke poboljšanje BIOS softver-a. Program za instalaciju obično je po-nuđen kao MS-DOS program.</p>
+
+							<p>Ovo vam pokazuje put da nadogradite BIOS sa USB pod linux. To će raditi sa USB ključevima, USB sticks i sa micro/mini/SD karticama (sa potrebnim adapterom).</p>
+
+							<p>Kao prvo, vaš BIOS treba da dopusti boot s USB - i mora biti kompatibilan sa USB harddisks. Neki BIOS-i prihvate USB Floppy, CD-ROMs ili ZIP uređaje, i ako oni su možda korisni, može da bude teže provesti nadogradnju, kako god, nemate drugog izbora, (netbooks posebno).</p>
+
+
+				<h3>Potrebne su vam tri stvari:</h3>
+						<ol>
+							<li>USB stick, po mogučnosti &lt;2 GB (FAT16 ne dopušta više nego 2 GB), i osnovna FreeDOS (fdbasecd.iso) instalacija samo koristi 5.8 MB. <span class="highlight-3">FAT16 je preporučeni format, zato što FAT32 nije otkriven kao bootable bod svakog BIOS-a</span>.</li>
+
+							<li>FreeDOS medij za instalaciju <a href="http://www.freedos.org/freedos/files/"> fdbasecd.iso (8MB)</a>.</li>
+
+							<li>qemu (apt-get install qemu), qemu je potrebno za instaler, osnovno imitiran qemu BIOS čini da se vaš USB stick pojavi FreeDOS-u kao obični hard disk, tako da možete instalirati kao i obično (i izbjegava se prženje FreeDOS CD-a).</li>
+						</ol>
+
+				<h5><span class="highlight-2">Ovo je apsolutno kritično: pod nikakvim uvjetima USB ne smije biti mountan. Budite jako oprezni da odaberete ispravan uređaj, inače svi podaci na pogrešnom disku će biti izbrisane bez ikakve odštete, to može da bude vaš glavni hard disk.</span></h5>
+
+	<div class="spacer02"></div>
+							<p>Ubacite vaš USB stick, <span class="highlight-2">Zapamti, ne mountajte ga.</span>. Provjerite dmesg (zadnje poruke, ako ste ga baš ubacili), koji uređaj je dodjelen vašem stick-u, pretpostavljamo <span class="highlight-3">/dev/sdb</span>  .</p>
+
+							<p>Izbrišite vaš USB stick,<span class="highlight-3">svi podaci će biti izgubljeni </span>, isto možete obaviti duboko brisanje, umjesto samo prvih 16 MB. </p>
+
+
+<pre>
+$ sux
+Password:
+dd if=/dev/zero of=/dev/sdb bs=1M count=16
+16+0 records in
+16+0 records out
+16777216 bytes (17 MB) copied, 2.35751 s, 7.1 MB/s
+</pre>
+					<h3>Partitijoniranje USB stick-a</h3>
+							<p>Particioniranje i formatiranje svog USB stick-a ispravno je vjerojatno najteži dio.</p>
+
+							<p>Postavite FAT 16 partiticiju, na &lt;2 GB sticks (nudi ukupno bolju kompatibilnost).</p>
+
+							<p>Onda koristite fdisk za particijoniranje:</p>
+<pre>
+# fdisk /dev/sdb
+fdisk /dev/sdb
+Device contains neither a valid DOS partition table, nor Sun, SGI or OSF disklabel
+Building a new DOS disklabel with disk identifier 0xa8993739.
+Changes will remain in memory only, until you decide to write them.
+After that, of course, the previous content won't be recoverable.
+
+Warning: invalid flag 0x0000 of partition table 4 will be corrected by w(rite)
+</pre>
+							<p>Sada stvorite particiju:</p>
+<pre>
+Command (m for help): <span class="highlight-3"><b>n</b></span>
+Command action
+   e   extended
+   p   primary partition (1-4)
+<span class="highlight-3"><b>p</b></span>
+Partition number (1-4): <span class="highlight-3"><b>1</b></span>
+First cylinder (1-1018, default 1):
+Using default value 1
+Last cylinder or +size or +sizeM or +sizeK (1-1018, default 1018):
+Using default value 1018
+</pre>
+							<p>Potvrdi stvaranje particije tiskanjem particijske tablice: </p>
+<pre>
+Command (m for help): <span class="highlight-3"><b>p</b></span>
+
+Disk /dev/sdb: 2003 MB, 2003828736 bytes
+62 heads, 62 sectors/track, 1018 cylinders
+Units = cylinders of 3844 * 512 = 1968128 bytes
+Disk identifier: 0xa8993739
+
+   Device Boot      Start         End      Blocks   Id  System
+/dev/sdb1               1        1018     1956595+  83  Linux
+</pre>
+							<p>Postavite odgovarajuću vrstu particije, '6 'za FAT16: </p>
+<pre>
+Command (m for help): <span class="highlight-3"><b>t</b></span>
+Selected partition 1
+Hex code (type L to list codes): <span class="highlight-3"><b>l</b></span>
+
+ 0  Empty           1e  Hidden W95 FAT1 80  Old Minix       be  Solaris boot
+ 1  FAT12           24  NEC DOS         81  Minix / old Lin bf  Solaris
+ 2  XENIX root      39  Plan 9          82  Linux swap / So c1  DRDOS/sec (FAT-
+ 3  XENIX usr       3c  PartitionMagic  83  Linux           c4  DRDOS/sec (FAT-
+ 4  FAT16 &lt;32M      40  Venix 80286     84  OS/2 hidden C:  c6  DRDOS/sec (FAT-
+ 5  Extended        41  PPC PReP Boot   85  Linux extended  c7  Syrinx
+ 6  FAT16           42  SFS             86  NTFS volume set da  Non-FS data
+ 7  HPFS/NTFS       4d  QNX4.x          87  NTFS volume set db  CP/M / CTOS / .
+ 8  AIX             4e  QNX4.x 2nd part 88  Linux plaintext de  Dell Utility
+ 9  AIX bootable    4f  QNX4.x 3rd part 8e  Linux LVM       df  BootIt
+ a  OS/2 Boot Manag 50  OnTrack DM      93  Amoeba          e1  DOS access
+ b  W95 FAT32       51  OnTrack DM6 Aux 94  Amoeba BBT      e3  DOS R/O
+ c  W95 FAT32 (LBA) 52  CP/M            9f  BSD/OS          e4  SpeedStor
+ e  W95 FAT16 (LBA) 53  OnTrack DM6 Aux a0  IBM Thinkpad hi eb  BeOS fs
+ f  W95 Ext'd (LBA) 54  OnTrackDM6      a5  FreeBSD         ee  EFI GPT
+10  OPUS            55  EZ-Drive        a6  OpenBSD         ef  EFI (FAT-12/16/
+11  Hidden FAT12    56  Golden Bow      a7  NeXTSTEP        f0  Linux/PA-RISC b
+12  Compaq diagnost 5c  Priam Edisk     a8  Darwin UFS      f1  SpeedStor
+14  Hidden FAT16 &lt;3 61  SpeedStor       a9  NetBSD          f4  SpeedStor
+16  Hidden FAT16    63  GNU HURD or Sys ab  Darwin boot     f2  DOS secondary
+17  Hidden HPFS/NTF 64  Novell Netware  b7  BSDI fs         fd  Linux raid auto
+18  AST SmartSleep  65  Novell Netware  b8  BSDI swap       fe  LANstep
+1b  Hidden W95 FAT3 70  DiskSecure Mult bb  Boot Wizard hid ff  BBT
+1c  Hidden W95 FAT3 75  PC/IX
+
+Hex code (type L to list codes): <span class="highlight-3"><b>6</b></span>
+
+Changed system type of partition 1 to 6 (FAT16)
+</pre>
+							<p>Aktivirajte novu i jedinu particiju:</p>
+<pre>
+Command (m for help): <span class="highlight-3"><b>a</b></span>
+Partition number (1-4): <span class="highlight-3"><b>1</b></span>
+</pre>
+							<p>Ispišite ponovo novu particijsku tablicu, potvrdite da je zaista aktivirana particija: </p>
+<pre>
+Command (m for help): <span class="highlight-3"><b>p</b></span>
+
+Disk /dev/sdb: 2003 MB, 2003828736 bytes
+62 heads, 62 sectors/track, 1018 cylinders
+Units = cylinders of 3844 * 512 = 1968128 bytes
+Disk identifier: 0xa8993739
+
+   Device Boot      Start         End      Blocks   Id  System
+/dev/sdb1   *           1        1018     1956595+   6  FAT16
+</pre>
+							<p>Napiši novu particijsku tablicu na svoj USB stick i ugasite fdisk: </p>
+<pre>
+Command (m for help): <span class="highlight-3"><b>w</b></span>
+The partition table has been altered!
+
+Calling ioctl() to re-read partition table.
+
+WARNING: If you have created or modified any DOS 6.x
+partitions, please see the fdisk manual page for additional
+information.
+Syncing disks.
+# exit
+</pre>
+							<p>Formatirajte vaš novo kreiran USB stick:</p>
+<pre>
+mkfs -t vfat -n FreeDOS /dev/sdb1
+exit
+</pre>
+							<p>Pripremna faza je sada kompletirana.Sad imate particijoniran i formatiran USB stick, nema ništa više za raditi. Sad možete izravno otići do procesa instalacije.</p>
+
+					<h3>Dizanje FreeDOS-a sa qemu</h3>
+
+							<p>Kao što DOS nema pojma o USB stick-u, morate pronaći način da nagovorite FreeDOS instaler u prepoznavanju USB-stick-a kao obični 'hard disk', na live boot, BIOS sistema čini to za nas - ali ovdje je potrebno da malo upoznate qemu:</p>
+<pre>
+kao korisnik$:
+qemu -hda /dev/sdb -cdrom /path/to/fdbasecd.iso -boot d
+</pre>
+							<p><span class="highlight-1">Sa ctrl-alt</span> možete uključiti grabljenje miša i tipkovnice i dopušta vam odabir između desktop računala da ponovo možete pročitati sve upute na svakom koraku. </p>
+
+		<div class="screenshot"><img src="../lib/images-common/images-qemu-freedos/qemu-boot01.jpg" title="QEMU FreeDOS" alt="QEMU FreeDOS" /></div>
+							<p>To diže FreeDOS CD i postavi USB stick kao prvi master hard-disk (ovdje qemu's BIOS emulacija postavi USB stick da izgleda prema  DOS kao običan harddisk). Odaberite installer iz početnog meni-a u virtualiziranom FreeDOS dizanju:</p>
+<pre>
+1) Continue to boot FreeDOS from CD-ROM
+<span class="highlight-3"><b>1</b></span>
+enter
+</pre>
+	<div class="spacer02"></div>
+							<p>Nastavite sa standardom <span class="highlight-3">1</span> i/ili izaberite <span class="highlight-3">Yes</span> kad ste pitani.</p>
+
+	<div class="spacer02"></div>
+		<div class="screenshot"><img src="../lib/images-common/images-qemu-freedos/qemu-boot02.jpg" title="Freedos Installation - 1" alt="freedos-inst1" /></div>
+
+		<div class="spacer02"></div>
+	<div class="screenshot"><img src="../lib/images-common/images-qemu-freedos/qemu-boot04.jpg" title="Freedos Installation - 2"  alt="freedos-inst2" /></div>
+
+	<div class="spacer02"></div>
+
+	<div class="spacer02"></div>
+		<div class="screenshot"><img src="../lib/images-common/images-qemu-freedos/qemu-boot09.jpg" title="Freedos Installation - 3" alt="freedos-inst3" /></div>
+
+
+	<div class="spacer02"></div>
+
+							<p>Instalacija pita vas za reboot - <span class="highlight-3">ali to nemojte još obaviti, zato što je još potrebno da sredite još dvije greške FreeDOS instaler-a za mbr i bootmeni</span>. Upišite slovo <span class="highlight-3"><b>n</b></span>.</p>
+	<div class="spacer02"></div>
+		<div class="screenshot"><img src="../lib/images-common/images-qemu-freedos/qemu-boot18.jpg" title="Freedos Installation - do not reboot type n" alt="freedos-do not reboot type n" /></div>
+
+	<div class="spacer02"></div>
+				<h3>Pisanje bootsektor-a na vaš USB stick</h3>
+							<p>Prva greška koja treba malo ljubavi je popraviti mbr:</p>
+
+<pre>
+fdisk /mbr 1
+</pre>
+							<p>Druga greška koja treba pričvršćivanje je BootMeni nove fdconfig.sys, pokrenite:</p>
+<pre>
+cd \
+edit fdconfig.sys
+</pre>
+							<p>i promjenite crtu koja startuje sa command.com u:</p>
+<pre>
+1234?SHELLHIGH=C:\FDOS\command.com C:\FDOS /D /P=C:\fdauto.bat /K set
+(ne promjente ovu naredbu, samo dodajte "1234?" na početak crte (prije SHELLHIGH==C:\FDOS\command.com .....
+Bilješka: Ovako mora izgledati: <span class="highlight-3">1234?</span>
+</pre>
+		<div class="screenshot"><img src="../lib/images-common/images-qemu-freedos/qemu-boot23.jpg" title="Edit fdconfig.sys " alt="fdconfig.sys" /></div>
+	<div class="spacer02"></div>
+							<p><span class="highlight-2">Ne promjenite ništa drugo, zato što crta ovisi o vašoj instalaciji.</span></p>
+
+							<p>Spremite i završite "edit" sa:</p>
+<pre>
+[alt]+[f]
+</pre>
+							<p>Kad se vratite na naredbenu crtu, možete napustiti qemu.</p>
+
+ 							<p>Test za provjeru hoče li qemu dizati USB stick.</p>
+<pre>
+qemu -hda /dev/sdb -boot c
+</pre>
+ 							<p>S vašim USB stick sad možete dizati računalo i sadrži cijelu FreeDOS instalaciju od 5.4 MB, za obnavljane. Trebali bi da startate bez ikakvih pogonitelja <span class="highlight-3">(menu opcijas 4), himem.sys i emm386 datoteke na neki način mogu ometati vašim programima! </span>:</p>
+
+				<h3>Obnoviti BIOS</h3>
+							<p>Pretpostavljamo da vaš PC radi, ubacite FreeDOS USB stick, mountajte ga i povucite potrebne BIOS datoteke, prema preporuci proizvođača matične ploče / BIOS, na FreeDOS USB-stick, onda izbacite stick.</p>
+
+							<p>Ugasite vaš PC, ubacite FreeDOS USB stick, upalite PC, i startujte sa FreeDOS USB stick-a i slijedite postupke proizvođača matična ploče / BIOS-a.</p>
+
+
+
+	</div>
+
+			<div id="rev">Content last revised 14/08/2010 0100 UTC</div>
+</div>
+</body>
+</html>
