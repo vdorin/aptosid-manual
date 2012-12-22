@@ -1,0 +1,604 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="sv">
+<head>
+	<title>aptosid Manuals - CD Downloading and Burning</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision sde 19/09/2008 2330 UTC-->
+<div id="menu"> <!-- menu starts here en lang maintained by bluewater-->
+<!--aptosid Operating System Manual menu-version-02.09.2010.11.03 -->
+<!-- menu last updated by bluewater 2010.11.03 1130 hrs UTC -->
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="To aptosid.com forums and wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="manual-search-sv.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" />Search online - offline</a> </li>
+	</ul>
+	<div id="flags-2">
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Choose another language DE, EN" alt="lang-switch" /></a>
+	</div>
+	<ul>
+<li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-sv.htm">aptosid OS Manual</a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="welcome-sv.htm#welcome-gen">aptosid OS Manual &#8658;</a>
+					<ul class="sub2-menu" id="sm1a">
+					  <li><a href="credits-sv.htm#cred-team">Credits</a></li>
+					</ul>
+					</li>
+		<li><a href="welcome-sv.htm#how-to">Hur du använder manualen&#8658;</a>
+					<ul class="sub2-menu" id="sm1b">
+					  <li><a href="welcome-sv.htm#how-to">Hur du använder manualen</a></li>
+					  <li><a href="welcome-sv.htm#table-contents">Innehållsförteckning</a></li>
+					</ul>
+					</li>
+		<li><a href="help-sv.htm#help-gen">Få hjälp &#8658;</a>
+					<ul class="sub2-menu" id="sm1c">
+					  <li><a href="help-sv.htm#help-gen">Var och hur du kan få hjälp</a></li>
+					  <li><a href="help-sv.htm#paste">IRC !paste</a></li>
+					</ul>
+					</li>
+		<li><a href="wel-quickstart-sv.htm#welcome-quick">aptosid Quick Start Guide</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="cd-dl-burning-sv.htm">ISO innehåll, Releases, Nedladdningsspeglar och Bränning</a>
+			   <ul class="sub-menu" id="sm2">
+				<li><a href="cd-content-sv.htm#cd-content">ISO innehåll och systemkrav &#8658;</a>
+					<ul class="sub2-menu" id="sm2a">
+					  <li><a href="sys-admin-release-sv.htm#rolling">Release Notes</a></li>
+					</ul>
+					</li>
+		    <li><a href="cd-dl-burning-sv.htm#download-aptosid">aptosid Speglar, Nedladdning och Bränning &#8658;</a>
+				<ul class="sub2-menu" id="sm2b">
+					  <li><a href="cd-dl-burning-sv.htm#md5">md5 Checksum</a></li>
+					  <li><a href="cd-dl-burning-sv.htm#burn-nero">Bränna i Windows</a></li>
+					  <li><a href="cd-dl-burning-sv.htm#burn-linux">Bränna i Linux</a></li>
+					  <li><a href="cd-no-gui-burn-sv.htm#burning-no-gui">burniso skript</a></li>
+					  <li><a href="cd-no-gui-burn-sv.htm#burn-no-gui-gen">Bränna utan ett GUI</a></li>
+					  <li><a href="cd-dl-burning-sv.htm#download-aptosid">aptosid Nedladdningsspeglar</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="live-mode-sv.htm">Live Mode</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="live-mode-sv.htm#rootpw">Root-lösen på aptosid-Live ISO</a></li>
+				<li><a href="live-mode-sv.htm#live-cd-installsoft">Installera program från en Live-ISO</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="term-konsole-sv.htm">Terminalen / Konsollen</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="term-konsole-sv.htm#term-kon"> Terminalen / Konsollen &#8658;</a>
+					<ul class="sub2-menu" id="sm4a">
+					  <li><a href="term-konsole-sv.htm#term-kon"> Terminalen / Konsollen</a></li>
+					  <li><a href="term-konsole-sv.htm#cli-help">Kommando Hjälp</a></li>
+					  <li><a href="help-sv.htm#init3-tools">Verktyg att använda i textläge (tty) - init 3</a></li>
+					  <li><a href="term-konsole-sv.htm#term-cmds">Linux Terminal kommando Lista</a></li>
+					</ul>
+					</li>
+			  <li><a href="term-konsole-sv.htm#sux"> sux / sudo</a></li>
+		    </ul>
+		</li>
+<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="cheatcodes-sv.htm">CheatCodes</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="cheatcodes-sv.htm#cheatcodes">aptosid specifika Live-ISO Cheatcodes</a></li>
+				<li><a href="cheatcodes-sv.htm#cheatcodes-linux">Linux generic Cheatcodes</a></li>
+				<li><a href="cheatcodes-vga-sv.htm#vga">VGA Codes</a></li>
+			</ul>
+		</li>
+<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-sv.htm">Partitionera hårddisken - Traditionell och LVM</a>
+		    <ul class="sub-menu" id="sm6">
+			  <li><a href="part-gparted-sv.htm#ntfs-3g">Skriva på NTFS-partitioner med NTFS-3g</a></li>
+			  <li><a href="part-lvm-sv.htm#part-lvm">Partitionering för att använda LVM - Logical Volume Manager</a></li>
+			  <li><a href="part-gparted-sv.htm#partition">Partitionering med ett GUI &#8658;</a>
+					<ul class="sub2-menu" id="sm6a">
+					  <li><a href="part-gparted-sv.htm#partition">Partitionera din HD med hjälp av GParted / KDE Partition Manager</a></li>
+					  <li><a href="part-gparted-sv.htm#ntfs">NTFS partitionsstorleksändring med hjälp av GParted / KDE Partition Manager</a></li>
+					</ul>
+					</li>
+		<li><a href="part-cfdisk-sv.htm#partition">Partitionering med CLI &#8658;</a>
+					 <ul class="sub2-menu" id="sm6b">
+					    <li><a href="part-cfdisk-sv.htm#partition">Partitionera din HD med cfdisk</a></li>
+					    <li><a href="part-cfdisk-sv.htm#formating">Formattering efter partitionering med cfdisk</a></li>
+					</ul>
+					</li>
+		<li><a href="part-size-examp-sv.htm#part-example">Partitionering Grundläggande &#8658;</a>
+					<ul class="sub2-menu" id="sm6c">
+					  <li><a href="part-size-examp-sv.htm#part-example">Partitionsstorleks Exempel</a></li>
+					  <li><a href="part-uuid-sv.htm#uuid">UUID, Partitionsmärkning och fstab</a></li>
+					  <li><a href="part-cfdisk-sv.htm#disknames">Disk Namngivning i korthet</a></li>
+					</ul>
+					</li>
+		      </ul>
+		</li>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-sv.htm">Installations val - HD, USB, VM och Cryptroot</a>
+		<ul class="sub-menu" id="sm7">
+		  <li><a href="hd-install-sv.htm#Inst-prep">Installationsförberedelser &#8658;</a>
+					<ul class="sub2-menu" id="sm7a">
+					  <li><a href="hd-install-sv.htm#Inst-prep">Installationsförberedelser </a></li>
+					  <li><a href="hd-install-sv.htm#Installation">Installera till din HD</a></li>
+					  <li><a href="hd-install-sv.htm#first-hd-boot">Första uppstarten</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-sv.htm#fromiso">Uppstart från iso &#8658;</a>
+					<ul class="sub2-menu" id="sm7b">
+					  <li><a href="hd-install-opts-sv.htm#fromiso">Uppstart från iso - Översikt</a></li>
+					  <li><a href="hd-install-opts-sv.htm#fromiso-grub-leg">Uppstart 'fråniso' med grub-legacy</a></li>
+					  <li><a href="hd-install-opts-sv.htm#grub2-fromiso">Uppstart 'fråniso' med Grub 2</a></li>
+					  <li><a href="hd-install-opts-sv.htm#fromiso-persist">fråniso och persist</a></li>
+					</ul>
+					</li>
+		<li><a href="hd-install-opts-sv.htm#usb-hd">Installera på USB-enheter &#8658;</a>
+					<ul class="sub2-menu" id="sm7c">
+					  <li><a href="hd-install-opts-sv.htm#usb-hd">Installera på en USB-HD - aptosid specifik - aptosid-on-stick</a></li>
+					  <li><a href="hd-ins-opts-oos-sv.htm#raw-usb">Skriva aptosid till en USB/SSD stick med Linux, MS Windows eller Mac OS X system</a></li>
+					</ul>
+					</li>
+		  <li><a href="hd-install-crypt-sv.htm#install-crypt">Installera till krypterade partitioner - cryptroot</a></li>
+		  <li><a href="nbdboot-sv.htm#nbd1">Starta aptosid över ett nätverk</a></li>
+		  <li><a href="hd-install-vmopts-sv.htm#vmopts">Virtual Machine installations val</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="hw-dev-hw-dri-sv.htm">Grafikkort, Skärmar, Xorg &amp; Blandade drivrutiner</a>
+	<ul class="sub-menu" id="sm8">
+		<li><a href="hw-dev-mon-sv.htm#mon-res">Skärmupplösning och Skärmar  &#8658;</a>
+					<ul class="sub2-menu" id="sm8a">
+					  <li><a href="hw-dev-mon-sv.htm#mon-res">Skärmupplösning och Skärmar</a></li>
+					  <li><a href="hw-dev-mon-sv.htm#xrandr">Dubbla Skärmar och xrandr</a></li>
+					  <li><a href="hw-dev-mon-sv.htm#mon-binary">Dubbla Skärmar (med hjälp av binärer)</a></li>
+					</ul>
+					</li>
+		<li><a href="hw-dev-hw-dri-sv.htm#non-free-3d">Grafikkort proprietära drivrutiner &#8658;</a>
+					<ul class="sub2-menu" id="sm8b">
+					  <li><a href="hw-dev-hw-dri-sv.htm#non-free-3d">Binära, ofria drivrutiner för Nvidia &amp; xorg.conf</a></li>
+					  <li><a href="hw-dev-hw-dri-sv.htm#non-free-3d-2">ofria drivrutiner för ATI, Radeon och andra</a></li>
+					</ul>
+					</li>
+			  <li><a href="hw-dev-hw-dri-sv.htm#non-free-firmware">Hårdvara som behöver icke-fria firmware drivrutiner</a></li>
+			  <li><a href="hw-dev-hw-dri-sv.htm#non-free">Lägga till ofria till Sources List</a></li>
+			  <li><a href="hw-dev-hw-dri-sv.htm#native-nv-ati">FOSS xorg drivrutiner för nVidia, ATI, Radeon, Intel &amp; xorg.conf</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-kde-sv.htm#install-add">Fönsterhanterare</a>
+		    <ul class="sub-menu" id="sm9">
+			  <li><a href="wm-kde-sv.htm">Fönsterhanterare&#8658;</a>
+					  <ul class="sub2-menu" id="sm9a">
+					    <li><a href="wm-xfce-sv.htm#xfce-notes">Användbara Xfce extras</a></li>
+					    <li><a href="wm-kde-sv.htm#install-add">Användbara extra KDE Apps</a></li>
+					    <li><a href="wm-kde-sv.htm#desk-freeze">Skrivbordet Fryser</a></li>
+					    <li><a href="wm-kde-sv.htm#kde-login">Kan inte logga in i KDE</a></li>
+					    <li><a href="wm-kde-sv.htm#ch-th">Ändra Teman</a></li>
+					</ul>
+					</li>
+		      <li><a href="wm-kde-sv.htm#dm">Display Managers - dm</a></li>
+		</ul>
+		</li>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="internet-connecting-sv.htm">Internet anslutning, WiFi, LAN och nätverk</a>
+		    <ul class="sub-menu" id="sm11">
+			<li><a href="lamp-apache-sv.htm">aptosid LAMP Stack &#8658;</a>
+					<ul class="sub2-menu" id="sm11a">
+					    <li><a href="lamp-apache-sv.htm#serv-apache">aptosid LAMP Stack</a></li>
+					    <li><a href="lamp-apache-sv.htm#serv-ftp">FTP Klienter</a></li>
+					    <li><a href="lamp-apache-sv.htm#serv-sec">Säkerhetsprotokoll</a></li>
+					    <li><a href="lamp-apache-sv.htm#serv-ssl">SSL</a></li>
+					    <li><a href="lamp-sql-sv.htm#serv-mysql">MySQL Setup</a></li>
+					    <li><a href="lamp-ppp-sv.htm#serv-php">PHP i Apache</a></li>
+					    <li><a href="ntp-server-sv.htm#ntp-server">Timeserver Installation</a></li>
+					</ul>
+					</li>
+		<li><a href="tor-privoxy-sv.htm#privoxy">Brandväggar och Anonymitet &#8658;</a>
+					<ul class="sub2-menu" id="sm11b">
+					    <li><a href="tor-privoxy-sv.htm#tor">Tor</a></li>
+					    <li><a href="tor-privoxy-sv.htm#privoxy">Privoxy</a></li>
+					    <li><a href="internet-connecting-sv.htm#firewalls">Brandväggar</a></li>
+					</ul>
+					</li>
+		<li><a href="ssh-sv.htm#ssh-x">SSH och Samba &#8658;</a>
+					<ul class="sub2-menu" id="sm11c">
+						  <li><a href="samba-sv.htm#setup">Samba-Server Installation</a></li>
+						  <li><a href="samba-sv.htm#configure">Konfigurera SAMBA (Windows)</a></li>
+						  <li><a href="ssh-sv.htm#ssh-fs">SSH Remote Mounting</a></li>
+						  <li><a href="ssh-sv.htm#ssh-x">X Window Apps via SSH</a></li>
+						  <li><a href="ssh-sv.htm#ssh-f">GUI SSH med Konqueror</a></li>
+						  <li><a href="ssh-sv.htm#ssh-w">SSH X-Forwarding från en Windows-PC</a></li>
+						  <li><a href="ssh-sv.htm#ssh">SSH och Säkerhet</a></li>
+					</ul>
+					</li>
+		<li><a href="internet-connecting-sv.htm#netcardconfig">WIFI anslutningar &#8658;</a>
+						<ul class="sub2-menu" id="sm11d">
+						    <li><a href="internet-connecting-sv.htm#netcardconfig">Komma Online - Ceni</a></li>
+						    <li><a href="inet-wpagui-sv.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
+						    <li><a href="inet-setup-sv.htm#net-set1">WiFi - Inställning för WiFi roaming</a></li>
+						    <li><a href="internet-connecting-wpa-sv.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ifplug-sv.htm#hotswitch">Nätverks växling mellan WiFi och kabel</a></li>
+					</ul>
+					</li>
+		<li><a href="internet-connecting-sv.htm#netcardconfig">Kabelanslutningar&#8658;</a>
+						<ul class="sub2-menu" id="sm11e">
+						    <li><a href="internet-connecting-sv.htm#dial-mod">56k Modem</a></li>
+						    <li><a href="internet-connecting-sv.htm#netcardconfig">Komma Online - Ceni</a></li>
+					</ul>
+					</li>
+				</ul>
+			    </li>
+<li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-sv.htm">Pakethantering och dist-upgrade</a>
+	    <ul class="sub-menu" id="sm12">
+		  <li><a href="sys-admin-apt-sv.htm#apt-cook">APT Cookbook och Sources list &#8658;</a>
+					<ul class="sub2-menu" id="sm12a">
+					    <li><a href="sys-admin-apt-sv.htm#apt-cook">APT-Guide Cookbook och Sources list</a></li>
+					    <li><a href="sys-admin-apt-sv.htm#apt-install">Installera ett nytt paket</a></li>
+					    <li><a href="sys-admin-apt-sv.htm#apt-delete">Ta bort ett paket</a></li>
+					    <li><a href="sys-admin-apt-sv.htm#apt-downgrade">Behålla paket och nedgradering</a></li>
+					    <li><a href="sys-admin-apt-sv.htm#apt-cache">Paketsökning med apt-cache</a></li>
+					    <li><a href="sys-admin-apt-sv.htm#gui-pacsea">GUI Paketsökning</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-kern-upg-sv.htm#kern-upgrade">Uppgradera Kärnan &#8658;</a>
+					<ul class="sub2-menu" id="sm12b">
+					    <li><a href="sys-admin-kern-upg-sv.htm#kern-remove">Ta bort Kärnor</a></li>
+					    <li><a href="sys-admin-kern-upg-sv.htm#kern-upgrade">Uppgradera Kärnan</a></li>
+					    <li><a href="sys-admin-kern-upg-sv.htm#dmakms">Installera kärnmoduler dynamiskt med dmakms</a></li>
+					</ul>
+				</li>
+		<li><a href="sys-admin-apt-sv.htm#apt-upgrade">Uppgradera ett installerat system - dist-upgrade - Översikt &#8658;</a>
+					<ul class="sub2-menu" id="sm12c">
+					    <li><a href="sys-admin-upgrade-sv.htm#live-cd-upgrade">Uppgradera via Live-ISO</a></li>
+					    <li><a href="sys-admin-apt-locarmirr-sv.htm#approx">dist-upgrade av flera PCs i ett LAN</a></li>
+					    <li><a href="sys-admin-apt-sv.htm#apt-upgrade">Uppgradera ett installerat system - dist-upgrade - Översikt</a></li>
+					    <li><a href="sys-admin-apt-sv.htm#du-st">Uppgradera ett installerat system - dist-upgrade - Stegen</a></li>
+					</ul>
+				  </li>
+			    </ul>
+		</li>
+<li  onmouseover="showHide( 13 );" onmouseout="startTime();" ><a href="sys-admin-gen-sv.htm">System Administration</a>
+	<ul class="sub-menu" id="sm13">
+		<li><a href="bios-freedos-sv.htm#bois-prep">Uppgradera BIOS med FreeDOS</a></li>
+		<li><a href="vir-rkits-sv.htm#virus-rkits">Virus och Rootkit Scanners</a></li>
+		<li><a href="hd-install-sv.htm#adduser">Lägga till Användare och Lösenord &#8658;</a>
+					<ul class="sub2-menu" id="sm13a">
+					    <li><a href="hd-install-sv.htm#adduser">Lägga till en ny Användare</a></li>
+					    <li><a href="sys-admin-gen-sv.htm#pw-lost">Borttappat root lösenord, nya lösenord</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-sv.htm#start-services">Tjänster och init runlevels &#8658;</a>
+					<ul class="sub2-menu" id="sm13b">
+					    <li><a href="sys-admin-gen-sv.htm#start-services">Tjänster aktivera / avaktivera</a></li>
+					    <li><a href="sys-admin-gen-sv.htm#init">aptosid runlevels - init</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-rsync-sv.htm#rsync">Säkerhetskopiera systemet &#8658;</a>
+					  <ul class="sub2-menu" id="sm13c">
+					    <li><a href="sys-admin-rdiff-sv.htm#rdiff">Säkerhetskopiera med rdiff</a></li>
+					    <li><a href="sys-admin-rsync-sv.htm#rsync">Säkerhetskopiera med rsync</a></li>
+					    <li><a href="home-sv.htm#home-bu">Flytta /home</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-gen-sv.htm#fonts">CUPS, Fonter och Ljud &#8658;</a>
+					  <ul class="sub2-menu" id="sm13d">
+					     <li><a href="sys-admin-gen-sv.htm#fonts">Fonts</a></li>
+					     <li><a href="sys-admin-gen-sv.htm#cups">CUPS - Utskriftssystem</a></li>
+					     <li><a href="sys-admin-gen-sv.htm#sound">Ljudmixer</a></li>
+					</ul>
+					</li>
+		<li><a href="sys-admin-grub2-sv.htm#grub2">Grub2 &#8658;</a>
+					  <ul class="sub2-menu" id="sm13f">
+					    <li><a href="sys-admin-grub2-sv.htm#chroot">Grub2 - Återställa Grub med chroot</a></li>
+					    <li><a href="sys-admin-grub2-sv.htm#mbr-over-grub2">Grub2 - MBR Överskriven</a></li>
+					    <li><a href="sys-admin-grub2-sv.htm#multi-os">Grub2 - Dubbel och Flervalsstart</a></li>
+					    <li><a href="sys-admin-grub2-sv.htm#grub1-grub2">Grub2 -Uppgradera från Grub1</a></li>
+					    <li><a href="sys-admin-grub2-sv.htm#grub2">Grub2 - Översikt</a></li>
+					</ul>
+					</li>
+			</ul>
+		</li>
+	</ul>
+<!-- menu ends here --> </div>
+<div id="main-page">
+	<div class="divider" id="download-aptosid">
+		<h2 id="top-header">Nedladdning av aptosid-CD:n</h2>
+				<h6><span class="highlight-2">DETTA ÄR VÄLDIGT VIKTIGT:</span><span class="highlight-3"> aptosid, som en Linux LIVE-CD, är baserad på en högkompressionsteknologi, och på grund av det, krävs följande då du ska bränna ISO-avbilden: Använd endast skivor av hög kvalitet och bränn i <span class="highlight-2">DAO-läge (disk-at-once)</span> och inte snabbare än x8.</span></h6>
+	<div class="spacer02"></div>
+
+			<h3>Nedladdningsspeglar</h3>
+					<h6 class="highlight-3">Vänligen använd den närmaste spegeln. Speglar med codeboxes under dem uppdateras så snart ändringar laddas upp
+ (refer to  /etc/apt/sources.list.d/aptosid.list).</h6>
+
+				<h4>Europa</h4>
+				<ul>
+					<li>
+						<b>Technical University Carolo-Wilhelmina at Brunswick</b>, Tyskland<br />
+						<a href="http://debian.tu-bs.de/project/aptosid/">http://debian.tu-bs.de/project/aptosid/</a><br />
+						<a href="ftp://debian.tu-bs.de/project/aptosid/">ftp://debian.tu-bs.de/project/aptosid/</a>
+<pre>
+deb http://debian.tu-bs.de/project/aptosid/debian/ sid main fix.main
+# deb-src http://debian.tu-bs.de/project/aptosid/debian/ sid main fix.main
+</pre>
+					</li>
+					<li>
+						<b>Free University Berlin/ spline (Student Project LInux NEtwork)</b>, Tyskland<br />
+						<a href="ftp://ftp.spline.de/mirrors/aptosid/">ftp://ftp.spline.de/mirrors/aptosid/</a><br />
+						<a href="rsync://ftp.spline.de/Sidux/">rsync://ftp.spline.de/Sidux/</a>
+<pre>
+deb ftp://ftp.spline.de/pub/aptosid/debian/ sid main fix.main
+# deb-src ftp://ftp.spline.de/pub/aptosid/debian/ sid main fix.main
+</pre>
+					</li>
+					<li>
+						<b> OfficeVienna</b>, Austria<br />
+						<a href="http://aptosid.office-vienna.at/aptosid/">http://aptosid.office-vienna.at/aptosid/</a><br />
+						<a href="ftp://aptosid.office-vienna.at/aptosid/">ftp://aptosid.office-vienna.at/aptosid/</a><br />
+<pre>
+deb http://aptosid.office-vienna.at/aptosid/debian/ sid main fix.main
+# deb-src http://aptosid.office-vienna.at/aptosid/debian/ sid main fix.main
+</pre>
+					</li>
+					<li>
+						<b>webtropia.com, Düsseldorf,</b>, Tyskland<br />
+						<em>(endast f&ouml;rr&aring;d och k&auml;rnor)</em><br />
+						<a href="http://aptosid.com/files/">http://aptosid.com/files/</a><br />
+<pre>
+deb http://aptosid.com/debian/ sid main fix.main
+# deb-src http://aptosid.com/debian/ sid main fix.main
+</pre>
+						<b>w3you.com</b>, Germany<br />
+						<em>(endast f&ouml;rr&aring;d och k&auml;rnor)</em><br />
+						<a href="http://aptosid.net/files/">http://aptosid.net/files/</a><br />
+<pre>
+deb http://aptosid.net/debian/ sid main fix.main
+# deb-src http://aptosid.net/debian/ sid main fix.main
+</pre>
+					</li>
+				  </ul>
+	</div>
+	<div class="divider" id="aptosid-repo">
+				  <ul>
+					<li>
+						<b>Cybermirror,</b> Germany<br />
+						<a href="http://aptosid.cybermirror.org/">http://aptosid.cybermirror.org/</a>
+					</li>
+					<li>
+						<b>University of Leipzig,</b> Germany<br />
+						<a href="ftp://6bone.informatik.uni-leipzig.de/pub/aptosid.de/aptosid/">ftp://6bone.informatik.uni-leipzig.de/pub/aptosid.de/aptosid/</a><br />
+						<a href="http://6bone.informatik.uni-leipzig.de/pub/aptosid.de/aptosid">http://6bone.informatik.uni-leipzig.de/pub/aptosid.de/aptosid</a><br />
+						<a href="https://6bone.informatik.uni-leipzig.de/pub/aptosid.de/aptosid">https://6bone.informatik.uni-leipzig.de/pub/aptosid.de/aptosid</a><br />
+						<a href="rsync://6bone.informatik.uni-leipzig.de/aptosid">rsync://6bone.informatik.uni-leipzig.de/aptosid</a>
+					</li>
+					<li>
+						<b>University of Kent/ Computer Science Department</b>, England <br />
+						<a href="ftp://ftp.mirrorservice.org/sites/aptosid.com/aptosid/">ftp://ftp.mirrorservice.org/sites/aptosid.com/aptosid/</a><br />
+						<a href="http://www.mirrorservice.org/sites/aptosid.com/aptosid/">http://www.mirrorservice.org/sites/aptosid.com/aptosid/</a><br />
+						<a href="rsync://rsync.mirrorservice.org/aptosid.com/aptosid/">rsync://rsync.mirrorservice.org/aptosid.com/aptosid/</a>
+					</li>
+					<li>
+						<b>Ireland's National Education and Research Network/ HEAnet</b>, Dublin, Irland<br />
+						<a href="http://ftp.heanet.ie/pub/aptosid/">http://ftp.heanet.ie/pub/aptosid/</a><br />
+						<a href="ftp://ftp.heanet.ie/pub/aptosid/">ftp://ftp.heanet.ie/pub/aptosid/</a><br />
+						<a href="rsync://ftp.heanet.ie/pub/aptosid/">rsync://ftp.heanet.ie/pub/aptosid/</a>
+					</li>
+					<li>
+						<b>Università degli Studi di Pavia</b>, Italy<br />
+						<a href="http://aptosid.unipv.it">http://aptosid.unipv.it</a>
+					</li>
+				</ul>
+				<h4>Nordamerika</h4>
+				<ul>
+					<li>
+						<b>University of Tennessee/ SunSITE</b>, TN, USA<br />
+						<a href="http://mira.sunsite.utk.edu/aptosid/">http://mira.sunsite.utk.edu/aptosid/</a><br />
+						<a href="rsync://mira.sunsite.utk.edu/aptosid">rsync://mira.sunsite.utk.edu/aptosid</a>
+					</li>
+					<li>
+						<b>Internap Network Services</b>, Atlanta, GA. USA <br />
+						<a href="ftp://ftp-mirror.internap.com/pub/aptosid/"> ftp://ftp-mirror.internap.com/pub/aptosid/</a><br />
+						<a href="http://ftp-mirror.internap.com/pub/aptosid/"> http://ftp-mirror.internap.com/pub/aptosid/</a><br />
+						<a href="rsync://ftp-mirror.internap.com/aptosid/"> rsync://ftp-mirror.internap.com/aptosid/</a>
+					</li>
+				</ul>
+				<h4>South America</h4>
+				<ul>
+					<li>
+						<b>Universidade Federal do Paraná/ Center for Scientific Computing and Free Software</b>, Brazil<br />
+						<a href="http://aptosid.c3sl.ufpr.br">http://aptosid.c3sl.ufpr.br</a><br />
+                                            	<a href="ftp://aptosid.c3sl.ufpr.br/aptosid">ftp://aptosid.c3sl.ufpr.br/aptosid</a><br />
+                                            	<a href="rsync://aptosid.c3sl.ufpr.br/aptosid">rsync://aptosid.c3sl.ufpr.br/aptosid</a>
+					</li>
+				</ul>
+				<h4>Asien</h4>
+				<ul>
+					<li>
+						<b>National Taiwan University/ Computer and Information Networking Center, </b>Taipei City, R.O.C.<br />
+ 						<a href="http://ftp.tw.debian.org/pub/Sidux/">http://ftp.tw.debian.org/pub/Sidux/</a><br />
+ 						<a href="ftp://ftp.tw.debian.org/pub/Sidux/">ftp://ftp.tw.debian.org/pub/Sidux/</a>
+					</li>
+				</ul>
+				<h4>Afrika</h4>
+				<ul>
+					<li>
+						<b>University of Cape Town/ Linux Enthusiasts Group</b>, Sydafrika<br />
+						<a href="http://ftp.leg.uct.ac.za/pub/linux/aptosid/">http://ftp.leg.uct.ac.za/pub/linux/aptosid/</a>
+					</li>
+				</ul>
+
+				<h4>Australien</h4>
+				<ul>
+					<li>
+						<b>mirror.AARNet.edu.au, Brisbane,</b> Australien<br />
+						<a href="http://mirror.aarnet.edu.au/pub/aptosid/ ">http://mirror.aarnet.edu.au/pub/aptosid/  </a><br />
+						<a href="ftp://mirror.aarnet.edu.au/pub/aptosid/">ftp://mirror.aarnet.edu.au/pub/aptosid/</a>
+					</li>
+				</ul>
+	</div>
+	<div class="divider" id="aptosid-def">
+				<h4>Definitioner av filer på varje spegel
+</h4>
+
+							<p>Varje aptosid spegel har följande filer:</p>
+
+<pre>
+MD5SUM
+MD5SUM.gpg
+SHA256SUM
+SHA256SUM.gpg
+SOURCES
+aptosid-20xx-xx-release-name-window-manager-arch-datetimestamp.arch.manifest
+aptosid-20xx-xx-release-name-window-manager-arch-datetimestamp.iso
+</pre>
+
+							<p>The <span class="highlight-3">.manifest</span> filen listar alla paket som ingår i den specifika iso filen.
+  </p>
+
+							<p>The <span class="highlight-3">.iso</span> är avbilden man ska ladda ner.  </p>
+
+							<p>The <span class="highlight-3">.md5 och .sha256</span> filerna är till för att kolla integriteten på iso filen.</p>
+
+							<p>The <span class="highlight-3">.gpg</span> filerna är signatur filer, så du kan verifiera att checksum (.md5 .sha256) inte har blivit ändrade och att dom kan användas för att kontrollera integriteten på iso filen.</p>
+
+							<p>sources tar är bara för de som kräver en statisk kopia av källkoden för vidaredistributions syften .Läs i SOURCES filen för mer information.</p>
+
+			<h5 class="highlight-3">Thank you to <a href="http://www.webtropia.com/?o_ref=aptosid"> webtropia.com</a> who sponsor aptosid and to all other mirror hosters for their efforts regarding aptosid.</h5>
+
+							<p>Om någon har en snabb FTP-server med tillräckliga trafikresurser, vänligen kontakta <a href="http://aptosid.com/">aptosid Forums</a>.  Alternativt kan du gå till <a href="http://aptosid.com/">aptosid forum</a> eller <a href="irc://irc.oftc.net:6667#aptosid">IRC-kanalen på oftc.net</a></p>
+
+							<p>Nedladdningslänkar och speglar återfinns även på <a href="http://aptosid.com"> aptosid.com</a></p>
+
+	</div>
+	<div class="divider" id="md5">
+		<h2>md5sum och validering</h2>
+
+				<h6><span class="highlight-2">DETTA ÄR VÄLDIGT VIKTIGT:</span><span class="highlight-3"> aptosid, som en Linux LIVE-CD, är baserad på en högkompressionsteknologi, och på grund av det, krävs följande då du ska bränna ISO-avbilden: Använd endast skivor av hög kvalitet och bränn i <span class="highlight-2">DAO-läge (disk-at-once)</span> och inte snabbare än x8.</span></h6>
+	<div class="spacer02"></div>
+
+							<p>Detta är en kontrollsumma som används för att kontrollera integriteten hos en fil. Den nuvarande md5summan kontrolleras mot en känd kontrollsumma. På detta sätt kan du validera filen och se om filen blivit skadad eller förändrad. Detta är ett rekommenderat förfarande för filer som laddats ned från internet.</p>
+
+							<p>Om md5summan överensstämmer med den i filen kan du vara säker på att filen laddats ned korrekt. I Linux kontrollerar du summan med: (det tar en liten stund att beräkna denna)</p>
+
+<pre>
+$ md5sum fil_att_kontrollera
+</pre>
+
+							<p>Summan skrivs ut till konsollen.<br />
+							Med md5sum (486 kb) kan md5sum även bli validerad i Windows.</p>
+
+							<p>Till aptosid ISO-avbilder finns alltid en md5sum-fil och denna skall alltid kontrolleras innan du bränner ut avbilden. Detta garanterar att om fel uppstår, så återfinns de inte i den nedladdade filen, och detta gör att forumen hålls fria från problem som inte kan härledas eftersom filen var felaktig från början. Du bör göra detta i en konsoll. Gå till katalogen med ISO-filen och md5sum-filen och kör kommandot för att kontrollera att summan stämmer. T.ex:</p>
+
+							<p>Ladda ner följande filer från en nedladdningsspegel:</p>
+<pre>
+MD5SUM
+MD5SUM.gpg
+SHA256SUM
+SHA256SUM.gpg
+</pre>
+							 <p>I Terminalen:</p>
+<pre>
+$ md5sum aptosid.iso
+</pre>
+
+							<p>Skulle de inte stämma får du ett felmeddelande:</p>
+
+<pre>
+"aptosid.iso: Error
+md5sum: Warning: calculated checksum does not match!"
+</pre>
+
+							<p>Om filen är OK avslutas programmet utan att ge något meddelande.</p>
+
+							<h5>Om du skulle vilja kontrollera äktheten på <span class="highlight-3">.gpg</span> gör som följer <span class="highlight-3">som $USER</span>:</h5>
+
+							 <h6>Exempel fil:</h6>
+<pre>
+aptosid-2011-02-imera-kde-lite-i386-201107131633.iso 
+</pre>
+							<p>1) Import "Stefan Lippers-Hollmann's" (slh's) public key från en key-server. (An alternate keyserver is <span class="highlight-3"> subkeys.pgp.net </span>):</p>
+
+<pre>
+$ gpg --keyserver wwwkeys.pgp.net --recv-keys E3BD538B
+gpg --edit-key E3BD538B
+Command> trust
+Command> (gör ditt val eller quit)
+Command> quit
+</pre>
+
+							<p>2) Nu kan du verifiera integriteten på checksum med:</p>
+
+<pre>
+$ gpg --verify SHA256SUM.gpg SHA256SUM
+</pre>
+							<p>Om du har klassificerats nyckeln som pålitlig med hjälp av nödvändig gpg kommandon, så är detta det du ska få med "5 trusted ultimately":</p>
+
+<pre>
+$gpg: Signature made Wed 15 Jul 2009 08:20:59 EST using DSA key ID E3BD538B
+$ gpg: Good signature from "Stefan Lippers-Hollmann (aptosid.com) &lt;s.l-h@gmx.de&gt;"
+</pre>
+
+							<p>Du kommer få 'Good signature' med en WARNING om du valde att inte klassificera nyckeln:</p>
+
+<pre>
+gpg: Signature made Wed 15 Jul 2009 08:20:59 EST using DSA key ID E3BD538B
+gpg: checking the trustdb
+gpg: 3 marginal(s) needed, 1 complete(s) needed, PGP trust model
+gpg: depth: 0  valid:   2  signed:   0  trust: 0-, 0q, 0n, 0m, 0f, 2u
+gpg: Good signature from "Stefan Lippers-Hollmann (aptosid.com) &lt;s.l-h@gmx.de&gt;"
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: 64C3 6120 DA8D 91E7 378B  E79F 3916 C431 F809 94F6
+</pre>
+
+	</div>
+	<div class="divider" id="burn-nero">
+		<h2>Hur bränner jag i Windows?</h2>
+
+				<h6><span class="highlight-2">DETTA ÄR VÄLDIGT VIKTIGT:</span><span class="highlight-3"> aptosid, som en Linux LIVE-CD, är baserad på en högkompressionsteknologi, och på grund av det, krävs följande då du ska bränna ISO-avbilden: Använd endast skivor av hög kvalitet och bränn i <span class="highlight-2">DAO-läge (disk-at-once)</span> och inte snabbare än x8.</span></h6>
+	<div class="spacer02"></div>
+
+							<p>Självklart kan du även bränna ut avbilden i Windows. Den nedladdade filen måste brännas som en ISO-fil. Om Winrar (eller något annat arkiveringsverktyg) är inställt för att hantera ISO-filer kan filen misstas för att vara ett arkiv. Du måste bränna ut ISO-filen som en avbild. </p>
+
+							<p>Det finns flera bra val för att bränna i Windows.</p>
+
+			<h5>Open Source brännarprogram för Windows</h5>
+							<p><a href="http://cdrtfe.sourceforge.net/">cdrtfe</a>: Kompatibel med Windows 9x/ME/2000/XP (testad med Win95, Win98SE, Win2000, and WinXP) För Win9x/ME krävs ASPI Layer (ex. Adaptec ASPI 4.60)</p>
+
+							<p><a href="http://www.linuxliveusb.com">LinuxLive USB Creator</a>, ett open source projekt, som erbjuder ett GUI för MS Windows&#8482;, som gör det möjligt att installera aptosid-i386.iso (32 bit) till ett USB minne. <span class="highlight-3"> Du behöver använda <span class="highlight-2">fromhd</span> bootline/cheatcode vid kommandoprompten</span>.</p>
+
+			<h6>Closed Source och proprietära brännarprogram för Windows</h6>
+						<ul>
+							<li> Nero (inte nero express!)</li>
+
+							<li>Ett annat bra freeware-verktyg är <a href="http://www.cdburnerxp.se/">CD/DVD Burner XP pro</a></li>
+
+							<li>BurnCDCC från  <a href="http://www.terabyteunlimited.com/utilities.html"> terabyteunlimited  kan endast bränna ISO-filer.</a></li>
+				</ul>
+	</div>
+
+	<div class="divider" id="burn-linux">
+		<h2>Hur bränner jag i Linux?</h2>
+
+				<h6><span class="highlight-2">DETTA ÄR VÄLDIGT VIKTIGT:</span><span class="highlight-3"> aptosid, som en Linux LIVE-CD, är baserad på en högkompressionsteknologi, och på grund av det, krävs följande då du ska bränna ISO-avbilden: Använd endast skivor av hög kvalitet och bränn i <span class="highlight-2">DAO-läge (disk-at-once)</span> och inte snabbare än x8.</span></h6>
+	<div class="spacer02"></div>
+
+							<p>Om du redan har Linux installerat på din dator kan du bränna en skiva från terminalen eller med hjälp av annat installerat brännarprogram.</p>
+
+							<p>Med aptosid och andra Linux-distributioner kommer K3b förinstallerat. öppna det, välj "Tools" -> "Bränn CD-avbild..." och välj sedan ISO-filen du vill bränna ut. (t.ex aptosid.iso)</p>
+
+							<p>K3B kontrollerar md5summan hos ISO-filen (detta tar en stund). När kontrollsumman stämmer överens med den i md5sum-filen var nedladdningen av filen lyckad och du kan bränna ut filen genom att klicka på "Start".</p>
+
+							<p><span class="highlight-3">Problem med bränning uppstår oftast när man använder ett GUI. Du kan bränna direkt från kommandoprompten med <a href="cd-no-gui-burn-sv.htm"> burniso</a>.</span></p>
+
+	</div>
+					  <h6>Se också <a href="hd-ins-opts-oos-sv.htm#raw-usb">Bränna aptosid till ett USB/SSD minne med Linux, MS Windows eller Mac OS X system (32 och 64 bit)</a>.</h6>
+
+			<div id="rev">Content last revised 26/08/2012 1235 UTC</div>
+</div>
+</body>
+</html>
