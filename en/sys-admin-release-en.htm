@@ -340,36 +340,36 @@
 
 							<p><span class="highlight-3">This page is a summary of the Release Notes and will only be updated after each release. Read the full Release Notes on <a href="http://aptosid.com">aptosid.com</a></span>, the <span class="highlight-3">Live ISO</span> or <span class="highlight-3">apt-get install aptosid-releasenotes</span>.</p>
 
-		<h2>Release notes for aptosid 2012-01 &quot;Θάνατος&quot; - Thanatos</h2>
+		<h2>Release notes for aptosid 2012-01 Θάνατος - Thanatos</h2>
 
 				<p>
-					New features in aptosid 2012-01 &quot;Θάνατος&quot; - Thanatos, are in particular kernel 3.6 and numerous integration and stabilisation fixes.
+					New features in aptosid 2012-01 Θάνατος - Thanatos, are in particular kernel 3.6 and numerous integration and stabilisation fixes.
 					Special focus has been cast upon improving system compatibility with new hardware platforms like AMD Bulldozer or Intel Ivy-Bridge and reworking the live system environment.
 					Kernel 3.6 doesn't only improve and stabilise hardware support for newer devices, it also adapts ASPM heuristics for better power-saving and improved battery runtimes.
 					Another topic has been the kernel's entropy gathering framework, both improving its performance and quality for systems providing little entropy by themselves.
 				</p>
 
 				<p>
-					The ext4 file system has gained &quot;Big Allocation Blocks&quot;, reducing the overhead for saving large files by collating many smaller 4K blocks in up to 1 MB large clusters.
+					The ext4 file system has gained 'Big Allocation Blocks', reducing the overhead for saving large files by collating many smaller 4K blocks in up to 1 MB large clusters.
 					Further improvements have been focussed on speeding up online resizing and assuring data integrity through CRC32 validation for ext4's meta data.
 					CIFS profits from several optimisations improving its throughput.
 				</p>
 
 				<p>
 					Intel Ivy-Bridge graphics profit from advanced power-saving features (RC6) and (limited) triple head support.
-					Very initial support could be added for Intel's GMA500, GMA600 and GMA3600 &quot;Poulsbo&quot; graphics.
+					Very initial support could be added for Intel's GMA500, GMA600 and GMA3600 'Poulsbo' graphics.
 					Nouveau has gained support for the new nVidia chipsets of the NVC1, NVC8, NVCF, NVD9 and NVE4 families.
-					While radeon now supports the &quot;Evergreen&quot;, &quot;Southern Islands&quot; and &quot;Trinity/ Aruba&quot; generations (Radeon HD5xxx, HD6xxx, HD7xxx) and enables hardware acceleration up to the r900 family.
-					Furthermore support for USB DisplayLink cards has been implemented using the new &quot;udl&quot; driver.
+					While radeon now supports the 'Evergreen', 'Southern Islands' and 'Trinity/ Aruba' generations (Radeon HD5xxx, HD6xxx, HD7xxx) and enables hardware acceleration up to the r900 family.
+					Furthermore support for USB DisplayLink cards has been implemented using the new 'udl' driver.
 				</p>
 
 				<p>
-					Improved byte queue handling, &quot;TCP buffer size controlling&quot; and &quot;CoDel&quot; now reduce latencies and improve throughput for network transmissions, thereby reducing &quot;buffer bloat&quot;.
+					Improved byte queue handling, 'TCP buffer size controlling' and 'CoDel' now reduce latencies and improve throughput for network transmissions, thereby reducing 'buffer bloat'.
 					Open vSwitch offers a kernel assisted virtual multi-layer network switching framework to be used in combination with kvm and other virtual machines.
 				</p>
 
 				<p>
-					Atheros has added support for its AR6003 based USB and SDIO wlan cards through ath6kl and the new ar5523 driver takes care of older 54/ &quot;108&quot; MBit/s USB wlan cards using the previously unsupported AR5523 chipset.
+					Atheros has added support for its AR6003 based USB and SDIO wlan cards through ath6kl and the new ar5523 driver takes care of older 54/ '108' MBit/s USB wlan cards using the previously unsupported AR5523 chipset.
 					The new brcmsmac (BCM4313, BCM43224, BCM43225) and brcmfmac (BCM43235, BCM43236, BCM43238) drivers provide hardware support for newer Broadcom 802.11n wlan cards.
 					Additional hardware support for RaLink RT536x,  RF537x and RT539x could be added to the rt2x00 driver family.
 				</p>
@@ -419,12 +419,12 @@
 					<li>new, SVG based, art theme created by the aptosid art team.</li>
 					<li><a href="file:///usr/share/aptosid-manual/index.html">offline manual</a> for <a href="file:///usr/share/aptosid-manual/en/welcome-en.htm">en</a> + <a href="file:///usr/share/aptosid-manual/de/welcome-de.htm">de</a> directly on the disc, online manuals for more languages online at <a href="http://aptosid.com/manual/">http://aptosid.com/manual/</a> and available via apt; a big thank you goes to the documentation and translation teams!<br />Please note that the offline manual is only available on the running live CD or the installed system.</li>
 					<li>many changes for the manual.</li>
-					<li>ar5523 support for 54/ &quot;108&quot; MBit/s Atheros USB wlan cards (AR5523).</li>
-					<li>ath5k support for 54/ &quot;108&quot; MBit/s Atheros wlan cards (AR2425, AR5210, AR5211, AR5212, AR5213 and AR5414).</li>
+					<li>ar5523 support for 54/ '108'MBit/s Atheros USB wlan cards (AR5523).</li>
+					<li>ath5k support for 54/ '108' MBit/s Atheros wlan cards (AR2425, AR5210, AR5211, AR5212, AR5213 and AR5414).</li>
 					<li>ath6kl support for Atheros AR6003 based USB and SDIO wlan cards.</li>
 					<li>ath9k support for 802.11n Atheros wlan cards (AR5418+AR5133, AR5416+AR5133, AR5416+AR2133, AR9160, AR9280, AR9281 and AR9285).</li>
 					<li>ath9k_htc support for 802.11n Atheros USB wlan cards (AR7010/ AR9271).</li>
-					<li>carl9170 support for 802.11n Atheros USB wlan cards (AR9170 &quot;otus&quot;), now supporting HT/ aggregation and AP mode.</li>
+					<li>carl9170 support for 802.11n Atheros USB wlan cards (AR9170 'otus'), now supporting HT/ aggregation and AP mode.</li>
 					<li>
 						b43/ b43legacy support for older Broadcom wlan cards.<br />
 						<a href="http://www.ing.unibs.it/openfwwf/">OpenFWWF 5.2</a> opensource firmware for the following Broadcom AirForce 802.11b/g wireless cards:
@@ -445,7 +445,7 @@
 					<li>support for RealTek RTL8188CE/ RTL8192CE, RTL8188CU/ RTL8192CU, RTL8188DE/ RTL8192DE, RTL8188SE/ RTL8192SE (PCIe) and RTL8188CU/ RTL8192CU (USB) 802.11n wlan cards.</li>
 					<li>memtest86+.</li>
 					<li>OpenJDK 7 and IcedTea as part of the kde-full variant.</li>
-					<li>kvm (Kernel-based Virtual Machine) for kde-full; kvm depends on hardware virtualisation support (AMD pacifica virtualisation extensions &quot;svm&quot; or Intel IVT (vanderpool) virtualisation extensions &quot;vmx&quot;)</li>
+					<li>kvm (Kernel-based Virtual Machine) for kde-full; kvm depends on hardware virtualisation support (AMD pacifica virtualisation extensions 'svm' or Intel IVT (vanderpool) virtualisation extensions 'vmx')</li>
 					<li>access point support for many mac80211 based wlan cards through nl80211 and hostapd (optional).</li>
 					<li>client support for network booting over PXE/ NBD.</li>
 					<li>ASPM refinements to improve system stability and battery runtime for mobile devices.</li>
@@ -453,7 +453,7 @@
 					<li>switch from module-init-tools to kmod.</li>
 					<li>support for ACPI 5.0.</li>
 					<li>Open vSwitch support for virtual network switching.</li>
-					<li>&quot;buffer bloat&quot; improvements.</li>
+					<li>'buffer bloat' improvements.</li>
 					<li>BCM57766 support for tg3.</li>
 					<li>basic FireWire target disk mode support has been ported to linux' sbp-2.</li>
 				</ul>
@@ -469,23 +469,23 @@
 				</p>
 
 				<p>
-					The 64 bit &quot;amd64&quot; editions should be preferred on modern hardware supporting it.
+					The 64 bit 'amd64' editions should be preferred on modern hardware supporting it.
 				</p>
 
 			<h3>Kernel based Mode Setting (KMS) and cirrus-drm/ intel/ matrox/ nvidia/ radeon graphics</h3>
 				<p>
-					KMS support is required by xserver-xorg-video-intel, which means kernel parameters like &quot;i915.modeset=0&quot; or &quot;vga=791&quot; are no longer valid and actively break starting X on intel graphics cards.
+					KMS support is required by xserver-xorg-video-intel, which means kernel parameters like 'i915.modeset=0' or 'vga=791' are no longer valid and actively break starting X on intel graphics cards.
 					Given that i915/ xserver-xorg-video-intel doesn't require any kind of firmware, there should no longer be KMS related bugs in relation to intel graphics.
 				</p>
 
 				<p>
 					For KMS to function in combination with ATi/ AMD radeon graphics, firmware images (firmware-linux-nonfree, see <a href="gpu-en.htm#ati-3d">AMD/ATI 3D drivers</a>) are required, which can't be shipped on aptosid live media, while X.org should transparently fall back to vesa on problematic cards, special attention might be needed in rare cases.
-					If X doesn't manage to start on ATi/ AMD radeon graphics cards, it might help to supply &quot;radeon.modeset=0&quot; as boot option for the live CD and to install the required firmware package &quot;<a href="gpu-en.htm#ati-3d">AMD/ATI 3D drivers</a>&quot; on the live system, before installing to the harddisk.
-					Once firmware-linux-nonfree is installed, kernel parameters like &quot;radeon.modeset=0&quot; or &quot;vga=791&quot; should not be used anymore, as they might interfere with KMS operations, which are needed for radeon to work properly.
+					If X doesn't manage to start on ATi/ AMD radeon graphics cards, it might help to supply 'radeon.modeset=0' as boot option for the live CD and to install the required firmware package '<a href="gpu-en.htm#ati-3d">AMD/ATI 3D drivers</a>' on the live system, before installing to the harddisk.
+					Once firmware-linux-nonfree is installed, kernel parameters like 'radeon.modeset=0' or 'vga=791' should not be used anymore, as they might interfere with KMS operations, which are needed for radeon to work properly.
 				</p>
 
 				<p>
-					Nouveau doesn't require any kind of firmware and supports KMS natively, framebuffer kernel parameters like &quot;vga=791&quot; are no longer valid and break starting X on nVidia graphics cards.
+					Nouveau doesn't require any kind of firmware and supports KMS natively, framebuffer kernel parameters like 'vga=791' are no longer valid and break starting X on nVidia graphics cards.
 				</p>
 
 				<h3>grub2</h3>
@@ -495,14 +495,14 @@
 					
 					Even though support for plain wallpapers would be already supported by grub2, it is still fragile and prolongs the system boot.<br />
 
-					Internally the configuration system for grub2 uses scripts snippets under /etc/grub.d/ to create its configuration file &quot;grub.cfg&quot; in a way that allows many self updating features, such as automating fromiso support with the help of &quot;grub2-fll-fromiso&quot; (optional).
+					Internally the configuration system for grub2 uses scripts snippets under /etc/grub.d/ to create its configuration file 'grub.cfg' in a way that allows many self updating features, such as automating fromiso support with the help of 'grub2-fll-fromiso' (optional).
 				</p>
 
 		<h3>isohybrid</h3>
 				<p>
 					With isolinux supporting gfxboot, it is possible to use isohybrid, which allows writing an ISO directly to USB storage or sd/ sdhc/ mmc memory sticks to make these bootable.<br />
 					isohybrid adds an MBR to the ISO and sets up a partition table with one active entry, the partition containing the ISO.<br />
-					This allows writing aptosid ISOs directly to USB storage devices of sdhc memory cards in addition to the well known possibility of using &quot;install-aptosid-to-usb&quot; (install-usb-gui).<br />
+					This allows writing aptosid ISOs directly to USB storage devices of sdhc memory cards in addition to the well known possibility of using 'install-aptosid-to-usb' (install-usb-gui).<br />
 					This option is particularly useful if there is no existing aptosid installation available and if an installation medium needs to be created from another distribution or operating system.<br />
 					It is important to note that this method overwrites the whole USB medium and restricts the available storage to the size of the aptosid ISO; install-usb-gui is not subject to these limitations and therefore the recommended option in case an existing aptosid system is available.<br />
 					Further partitions can be added to allow access to the unused part of the storage device.
@@ -533,7 +533,7 @@ apt-get install crda
 				<h3>UEFI booting</h3>
 				<p>
 					Preliminary support for booting with UEFI has been added to the amd64 editions.
-					While the installer GUI has not been finalised yet, the bootloader will be an EFI program installed to /efi/aptosid within your &quot;EFI system partition&quot; and mounted below /boot/efi/ on your installed system, provided the following conditions are met:
+					While the installer GUI has not been finalised yet, the bootloader will be an EFI program installed to /efi/aptosid within your 'EFI system partition' and mounted below /boot/efi/ on your installed system, provided the following conditions are met:
 				</p>
 
 				<ul>
