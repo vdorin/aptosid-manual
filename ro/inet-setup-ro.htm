@@ -565,15 +565,15 @@ network={
 <pre>
 tar -cf- /etc/network/interfaces /etc/wpa_supplicant/wpa-roam.conf  |  gpg -c > backup_name.tar.gpg
 </pre>
-							<p>A file has now been created in $ HOME:<br />
+							<p>Acum este creat un fișier în directorul $ HOME:<br />
 							backup_name.tar.gpg</p>
 
-							<p>To list the contents of the backup_name.tar.gpg file:</p>
+							<p>Pentru a lista conținutul fișierului backup_name.tar.gpg:</p>
 
 <pre>
 gpg -d -o - backup_name.tar.gpg  | tar vtf -
 </pre>
-							<p>To extract and decrypt the contents of the archive backup_name.tar.gpg file:</p>
+							<p>Pentru a extrage și decripta conținutul arhivei backup_name.tar.gpg:</p>
 
 <pre>
 gpg -d -o - backup_name.tar.gpg  | tar vxf -
