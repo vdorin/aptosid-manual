@@ -340,82 +340,125 @@
 
 						<p><span class="highlight-3">Эта страница предлагает резюме замечаний релизу и обновляется после каждой публикации. Прочитайте полное замечание релиза на <a href="http://aptosid.com">aptosid.com</a> или ISO-образе</span> или установите пакет aptosid-releasenotes.</p>
 
-		<h2>Замечания к выпуску aptosid 2011-03 Πόνος - Ponos</h2>
+		<h2>Замечания к выпуску aptosid 2012-01 Θάνατος - Thanatos</h2>
 
-						<p>Новые возможности в aptosid 2011-03 "Πόνος" являются, в частности ядра 3.1 и многочисленных интеграций и стабилизации исправлений. Особое внимание было обращено на совершенствование системы и ее совместимость с новыми аппаратными платформами и различные случаи. Ядро 3.1 не только улучшает, и стабилизирует аппаратную поддержку для новых устройств, но и улучшает задержки и общую производительность системы, в частности, значительно улучшен ввод /вывод расписания для lvm2/ mdadm на SSD.</p>
+				<p>
+					New features in aptosid 2012-01 Θάνατος - Thanatos, are in particular kernel 3.6 and numerous integration and stabilisation fixes.
+					Special focus has been cast upon improving system compatibility with new hardware platforms like AMD Bulldozer or Intel Ivy-Bridge and reworking the live system environment.
+					Kernel 3.6 doesn't only improve and stabilise hardware support for newer devices, it also adapts ASPM heuristics for better power-saving and improved battery runtimes.
+					Another topic has been the kernel's entropy gathering framework, both improving its performance and quality for systems providing little entropy by themselves.
+				</p>
 
-						<p>Среди новых возможностей есть, например XEN dom0 и PCI для сквозной поддержки, а также вложенные виртуализации KVM от Intel и AMD. Новые драйверы обеспечивают улучшенную поддержку для Intel Sandy Bridge графического чипа (HD2000 / HD3000) и для AMD Llano. Улучшена также базовая поддержка графических карт GeForce 4xx / 5xx серии и возможности 3D в избранных чипсетах. Подсистема поддержки DVB-T2 устройства и первых устройств, теперь доступна.</p>
+				<p>
+					The ext4 file system has gained 'Big Allocation Blocks', reducing the overhead for saving large files by collating many smaller 4K blocks in up to 1 MB large clusters.
+					Further improvements have been focussed on speeding up online resizing and assuring data integrity through CRC32 validation for ext4's meta data.
+					CIFS profits from several optimisations improving its throughput.
+				</p>
 
-						<p>Сетевая подсистема в настоящее время предлагает активировать поддержку WLAN (WoWLAN) и поддержку различных новых устройств от RealTek и Broadcom.</p>
+				<p>
+					Intel Ivy-Bridge graphics profit from advanced power-saving features (RC6) and (limited) triple head support.
+					Very initial support could be added for Intel's GMA500, GMA600 and GMA3600 'Poulsbo' graphics.
+					Nouveau has gained support for the new nVidia chipsets of the NVC1, NVC8, NVCF, NVD9 and NVE4 families.
+					While radeon now supports the 'Evergreen', 'Southern Islands' and 'Trinity/ Aruba' generations (Radeon HD5xxx, HD6xxx, HD7xxx) and enables hardware acceleration up to the r900 family.
+					Furthermore support for USB DisplayLink cards has been implemented using the new 'udl' driver.
+				</p>
 
-						<p>Возможности GPT и UEFI  были улучшены, что позволяет иметь жесткие диски размером более чем 2 ТВ и их использование для загрузки в новых системах с использованием UEFI вместо традиционного PC-BIOS.</p>
+				<p>
+					Improved byte queue handling, 'TCP buffer size controlling' and 'CoDel' now reduce latencies and improve throughput for network transmissions, thereby reducing 'buffer bloat'.
+					Open vSwitch offers a kernel assisted virtual multi-layer network switching framework to be used in combination with kvm and other virtual machines.
+				</p>
 
-						<p>Как обычно, большое количество отдельных улучшений функциональности и исправления были применены к полной линейке пакета и aptosid собственные пакеты для того, чтобы улучшить общую инфраструктуру распределения. Последние месяцы работы позволили нам обратить особое внимание на небольшие аспекты во многих пакетах, а это так важно для улучшения общего соблюдения всех принципах и функциональность.</p>
+				<p>
+					Atheros has added support for its AR6003 based USB and SDIO wlan cards through ath6kl and the new ar5523 driver takes care of older 54/ '108' MBit/s USB wlan cards using the previously unsupported AR5523 chipset.
+					The new brcmsmac (BCM4313, BCM43224, BCM43225) and brcmfmac (BCM43235, BCM43236, BCM43238) drivers provide hardware support for newer Broadcom 802.11n wlan cards.
+					Additional hardware support for RaLink RT536x,  RF537x and RT539x could be added to the rt2x00 driver family.
+				</p>
 
-						<p>Мы хотели бы поблагодарить наших спонсоров <a href="http://www.webtropia.com/?o_ref=aptosid">Webtropia</a> (Часть myLoc управляемой IT AG), который предоставляет 3 выделенных сервера для нашего развития и размещения инфраструктуры, и мы надеемся на длительное и успешное сотрудничество с этим прекрасным хостингом. С новыми серверами <a href="http://www.myloc.de/">myLoc управляемой IT AG</a> мы, наконец, в состоянии иметь надлежащее техническое решение для наших потребностей, например, полностью отделены аппаратные средства для быстрого ядра и ISO потенциала, а также дополнительный сервер для работы всех других наших сайтах в виртуальные машины (lab.aptosid.com, manual.aptosid.com и т.д.). Все наши серверы работают на нашей собственной версии aptosid.</p>
 
-						<p>Огромную благодарность - командам aptosid-art и aptosid-manual. Особенно благодарим нашеего провайдера <a href="http://www.webtropia.com/?o_ref=aptosid">webtropia.com</a> и всех <a href="cd-dl-burning-ru.htm#download-aptosid">хостеров зеркал</a> за их усилия по содержанию aptosid.</p>
+				<p>
+					Many new drivers have appeared for previously unsupported webcams and DVB TV cards.
+				</p>
+
+				<ul>
+					<li>Topro webcams, using the tp6800 bridge and soi763a sensors.</li>
+					<li>IT913X based devices, like the Kworld UB499-2T DVB-T card.</li>
+					<li>KWorld PC150-U and AzureWave 6007 ATSC support.</li>
+					<li>TM5600, TM6000 and TM6010 USB DVB chipsets.</li>
+					<li>DVB-T cards using the MaxLinear MxL111SF demod.</li>
+					<li>support for Realtek RTL2831U and RTL2832 based DVB-T USB cards.</li>
+					<li>DVB-S/ DVB-S2 cards using the NXP TDA10071 demod and Conexant CX24118A, just like the Conexant CX25821, tuners.</li>
+				</ul>
+
+				 <p>
+					GPT and UEFI reliability have been improved, which allows harddisks exceeding 2 TiB and their use for booting on new systems using UEFI instead of the traditional PC-BIOS.
+				</p>
+
+				<p>
+					As usual, a large number of individual functionality enhancements and bugfixes have been applied to the full package line up and aptosid's own packages, in order to improve the general distribution infrastructure.
+				</p>
+
+				<p>
+					We'd like to thank our sponsor <a href="http://www.webtropia.com/?o_ref=aptosid">Webtropia</a> (part of myLoc managed IT AG), who provides hosting for our development&ndash; and web infrastructure.
+					The servers from <a href="http://www.myloc.de/">myLoc managed IT AG</a> provide a proper technical solution for our needs, running our own server variant of aptosid.
+				</p>
+
+				<p>
+					Our special thanks go to the aptosid art- and manual teams and especially <a href="http://www.webtropia.com/?o_ref=aptosid">webtropia.com</a> and all <a href="cd-dl-burning-en.htm#download-aptosid">mirror</a> hosters for their efforts regarding aptosid.
+				</p>
 			</div>
-	   <div class="divider" id="whats-new">
+	    <div class="divider" id="whats-new">
 		<h2>Интересные факты, касаемые нового релиза aptosid 2011-03 Πόνος (Ponos):</h2>
 				<ul>
-					<li>Debian sid с последними обновлениями 2011-12-31.</li>
-					<li>Кernel 3.1.6 (smp, жесткое вытеснение).</li>
-					<li>Новая версия xserver-xorg-core 1.11.2.902.</li>
-					<li>Поддержка KMS для ATi, Intel и  на nVidia, базирующих чип-сеты.</li>
-					<li>Поддержка для DRI (3D) ATi Radeon чипсетах от и до r7xx (обратитесь к странице <a href="nf-firm-ru.htm">Определение несвободного микропрограммного обеспечения - non-free</a>).</li>
-					<li>KDE 4.6.5 (en + de).</li>
-					<li>Новый браузер Iceweasel 9.0.1</li>
-					<li>Новая, базирующуюся на SVG,тема аptosid-art, созданная командой art.</li>
+					<li>Debian sid, as of 2012-12-01.</li>
+					<li>kernel 3.6.9-rc1 (smp, hard preemption).</li>
+					<li>xserver-xorg-core 1.12.4.</li>
+					<li>enable KMS support for ATi, Intel, drm-cirrus, Matrox and nVidia based graphics chipsets.</li>
+					<li>DRI (3d) support for ATi Radeon chipsets (refer to <a href="firmware-en.html">non-free sources and Drivers</a>).</li>
+					<li>KDE 4.8.4 (en + de).</li>
+					<li>Iceweasel 10.0.11ESR</li>
 
+					<li>Новая, базирующуюся на SVG,тема аptosid-art, созданная командой art.</li>
 					<li>Смотрите <a href="file:///usr/share/aptosid-manual/index.html">Руководство офлайн</a> на <a href="file:///usr/share/aptosid-manual/en/welcome-en.htm">аглийском языке</a> + и на <a href="file:///usr/share/aptosid-manual/de/welcome-de.htm">немецком язьке</a> прямо на CD или DVD. Интерактивные руководства для других языков находятся на <a href="http://manual.aptosid.com/">http://manual.aptosid.com/</a> и готовы для скачивания с помощью команды apt; большое спасибо командам документации и команде переводчиков!<br />Обратите внимание, что руководства доступны только на компакт-диске или на установленной системе.</li>
 
 					<li>Есть множество изменений в руководстве.</li>
-					<li>ath5k поддержка для 54/ "108" MBit/s Atheros WLAN-карт (AR2425, AR5210, AR5211, AR5212, AR5213 и AR5414).</li>
-					<li>ath9k поддержка для 802.11n Atheros WLAN-карт(AR5418+AR5133, AR5416+AR5133, AR5416+AR2133, AR9160, AR9280, AR9281 и AR9285).</li>
-					<li>ath9k_htc поддержка для 802.11n Atheros USB WLAN-карт (AR7010/ AR9271).</li>
-					<li>carl9170 поддержка для 802.11n Atheros USB WLAN-карт (AR9170 &quot;otus&quot;), теперь поддерживают HT/ агрегации и AP модус.</li>
-					<li>
 
-						b43/ b43legacy поддержка для Broadcom WLAN-карт.<br />
-						<a href="http://www.ing.unibs.it/openfwwf/">OpenFWWF 5.2</a> Прошивка с отркрытым исходным кодом для следущих Broadcom AirForce 802.11b/g WLAN-карт:
+					<li>ar5523 support for 54/ '108'MBit/s Atheros USB wlan cards (AR5523).</li>
+					<li>ath5k support for 54/ '108' MBit/s Atheros wlan cards (AR2425, AR5210, AR5211, AR5212, AR5213 and AR5414).</li>
+					<li>ath6kl support for Atheros AR6003 based USB and SDIO wlan cards.</li>
+					<li>ath9k support for 802.11n Atheros wlan cards (AR5418+AR5133, AR5416+AR5133, AR5416+AR2133, AR9160, AR9280, AR9281 and AR9285).</li>
+					<li>ath9k_htc support for 802.11n Atheros USB wlan cards (AR7010/ AR9271).</li>
+					<li>carl9170 support for 802.11n Atheros USB wlan cards (AR9170 'otus'), now supporting HT/ aggregation and AP mode.</li>
+					<li>
+						b43/ b43legacy support for older Broadcom wlan cards.<br />
+						<a href="http://www.ing.unibs.it/openfwwf/">OpenFWWF 5.2</a> opensource firmware for the following Broadcom AirForce 802.11b/g wireless cards:
 						<ul>
 							<li>BCM4306</li>
-							<li>BCM4311 пересмотр 1</li>
+							<li>BCM4311 revision 1</li>
 							<li>BCM4318</li>
-
 							<li>BCM4320</li>
 						</ul>
-						экспериментальная поддержка для LP-PHY (BCM4312) и SSB базирующиься на  802.11n (BCM4321, BCM4322) устройств, включая несвободную прошивку.
+						support for LP-PHY (BCM4312) and SSB based 802.11n (BCM4321, BCM4322) devices, non-free firmware images required.
 					</li>
-
-					<li>iwlagn поддержка для IPW 3945/ 4965 и IEEE 802.11 a/b/g/n часть от  Intel Wireless WiFi Link 1000/ 2000/ 5xxxAGN/ 6000/ 6050 семьи.</li>
-					<li>iwmc3200wifi поддержка  Intel Wireless Multicomm 802.11.</li>
-					<li>rt2x00 поддержка для RaLink rt2400, rt2500, rt2570, rt61 and rt73 802.11b/g карт.</li>
-					<li>Поддержка для RaLink rt27x0, rt28x0, rt30x0, rt33xx, rt35xx, rt53xx 802.11b/g/n PCI/ USB карт через rt2x00.</li>
-					<li>Поддержка для RealTek RTL8180L/ RTL8185 PCI/ cardbus и RTL8187/ RTL8187B USB WLAN карт.</li>
-					<li>Поддержка для RealTek RTL8188CE/ RTL8192CE, RTL8188DE/ RTL8192DE, RTL8188SE/ RTL8192SE (PCIe) и RTL8188CU/ RTL8192CU (USB) 802.11n WLAN карт.</li>
+					<li>brcmsmac for modern Broadcom 802.11n PCIe/ AXI wlan cards (BCM4313, BCM43224, BCM43225).</li>
+					<li>brcmfmac for modern Broadcom 802.11n USB wlan cards (BCM43235, BCM43236, BCM43238).</li>
+					<li>iwlagn support for IPW 3945/ 4965 and the IEEE 802.11 a/b/g/n part of the Intel Wireless WiFi Link 1000/ 2000/ 5xxxAGN/ 6000/ 6050 family.</li>
+					<li>rt2x00 support for RaLink rt2400, rt2500, rt2570, rt61 and rt73 802.11b/g cards.</li>
+					<li>support for RaLink rt27x0, rt28x0, rt30x0, rt33xx, rt35xx, rt53xx 802.11b/g/n PCI/ USB cards through rt2x00.</li>
+					<li>support for RealTek RTL8180L/ RTL8185 PCI/ cardbus and RTL8187/ RTL8187B USB wlan cards.</li>
+					<li>support for RealTek RTL8188CE/ RTL8192CE, RTL8188CU/ RTL8192CU, RTL8188DE/ RTL8192DE, RTL8188SE/ RTL8192SE (PCIe) and RTL8188CU/ RTL8192CU (USB) 802.11n wlan cards.</li>
 					<li>memtest86+.</li>
-					<li>OpenJDK 6 как часть варианта КDE-full.</li>
-					<li>Поддержка kvm (Kernel-based Virtual Machine) для KDE-full; kvm зависит от аппаратной поддержки виртуализации (AMD pacifica virtualisation extensions &quot;svm&quot; или Intel IVT (vanderpool) virtualisation extensions &quot;vmx&quot;)</li>
-					<li>access point поддержка для many mac80211 based WLAN карт через nl80211 и hostapd (опционально).</li>
-					<li>Поддержка клиента  для загрузки через сеть с PXE/ NBD.</li>
-					<li>re-add usbutils.</li>
-					<li>Есть увереность, что polkit-kde-1 находится на KDE builds.</li>
-					<li>Поддержка для multi-tuner DVB карт.</li>
-					<li>Исправленная gpm (мышечная поддержка tty) для ядра 3.x.</li>
-					<li>Переход от /var/run/ до  и от /run/, /var/lock/ к /run/lock/ и /lib/init/rw/ к /run/.</li>
-					<li>Замена отдельной обработки mtab с помощью /proc/mounts напрямую.</li>
-					<li>Улучшена стабильность и совместимость улучшений для USB и установки системы.</li>
-					<li>Исправления для ext4 настойчивости.</li>
-					<li>Изпользование &quot;темы Air&quot;.</li>
-					<li>Обеспечение легкого обнаружения UEFI.</li>
-					<li>Установка iw для конфигурации mac80211/ cfg80211 базируемых WLAN карт по умолчанию.</li>
-					<li>Упрошенный и исправленный чит-код md5sum на LIVE-CD/DVD .</li>
-					<li>Cделать dmakms обработки более надежной.</li>
-					<li>Исправленная ошибка в конфигурации DHCP, которая стремилась перезаписывать настройку имени хоста.</li>
-					<li>Адаптированный nbd для базируемой загрузки/ параметры установки для изменений, сделанных разработчиком.</li>
-					<li>Добро пожаловать украинский язык в список поддерживаемых языков.</li>
+					<li>OpenJDK 7 and IcedTea as part of the kde-full variant.</li>
+					<li>kvm (Kernel-based Virtual Machine) for kde-full; kvm depends on hardware virtualisation support (AMD pacifica virtualisation extensions 'svm' or Intel IVT (vanderpool) virtualisation extensions 'vmx')</li>
+					<li>access point support for many mac80211 based wlan cards through nl80211 and hostapd (optional).</li>
+					<li>client support for network booting over PXE/ NBD.</li>
+					<li>ASPM refinements to improve system stability and battery runtime for mobile devices.</li>
+					<li>support for the 3rd generation Bamboo Pen and Touch tablets.</li>
+					<li>switch from module-init-tools to kmod.</li>
+					<li>support for ACPI 5.0.</li>
+					<li>Open vSwitch support for virtual network switching.</li>
+					<li>'buffer bloat' improvements.</li>
+					<li>BCM57766 support for tg3.</li>
+					<li>basic FireWire target disk mode support has been ported to linux' sbp-2.</li>
 				</ul>
 			</div>
 			<div class="divider" id="faq">
@@ -508,35 +551,8 @@ install-mbr /dev/sdz
 			<h2>Советы для системного обновления (dist-upgrade):</h2>
 						<p>aptosid старается обеспечить плавныe обновления для Debian и собственных пакетов, тем не менее, некоторые пакеты остаются, что может быть улучшено с простым ручным взаимодействием.</p>
 
-			<h3>nouveau</h3>
-						<p>xserver-xorg-video-nv был удален с Debian, то есть xserver-xorg-video-nouveau является его заменой. Мы рекомендуем пользователям картами Nvidia удалить полностью xserver-xorg-video-nv, и установить xserver-xorg-video-nouveau; измены конфигураций не должно быть. На некоторый поколений чипсетов возможно основное видео и 3D ускорение через X-сервер Xorg-и видео-модерн и libgl1-Меса-Dri-experimental.</p>
-<pre>
-apt-get install xserver-xorg-video-nouveau libgl1-mesa-dri-experimental
-</pre>
-
-				<h3>KDE 4.6 and XFCE 4.8</h3>
-						<p>Обновление до KDE, XFCE 4.6 или 4.8 не может тянуть все необходимые пакеты в определенных случаях, пожалуйста установите их вручную.  Без этих пакетов, powermanagement и установка съемных носителей и применения общесистемного изменения конфигурации для установок системы работают только частично.</p>
-						<p>для KDE:</p>
-<pre>
-apt-get install polkit-kde-1 udisks upower
-</pre>
-						<p>для XFCE:</p>
-<pre>
-apt-get install policykit-1 policykit-1-gnome udisks upower
-</pre>
-
 			<h3>Устаревшие пакеты</h3>
 						<p>В рамках дальнейшего развития aptosid, число пакетов были заменены на более эффективные альтернативы или становятся излишними.</p>
-
-				<ul>
-					<li>kaboom<br />
-						Переходный помощник для KDE3 &rarr; или KDE4 миграции пользовательской конфигурации,которые могут быть удалены после успешной миграции.
-					</li>
-
-					<li>modconf<br />
-						Этот пакет был удален из Debian после выхода &quot;Squeeze&quot; и не служит никакой реальной цели в эти дни.
-					</li>
-				</ul>
 
 						<p>Переходный пакет и устаревшие библиотеки часто может быть идентифицирован c помощью &quot;deborphan&quot;.Хотя этот инструмент очень удобен для текущей системной очистки, его результаты всегда должны быть проверены, прежде чем использовать его в качестве входных данных для удаления.</p>
 
@@ -562,9 +578,6 @@ $ apt-show-versions | awk '/No available version in archive/{print $1}'
 						<p>Пожалуйста поймите что следующий план релиза является приблизительным оценкам в отношении нашего выпуска и зависит от состояния Debian Sid, основных компонентах системы, как например X.org, KDE, ядрах Linux и нашых собственных разработок которые подлежат изменениям.</p>
 	
 				<ul>
-					<li>
-						Θάνατος - Thánatos
-					</li>
 
 					<li>
 						Ἑσπερίδες - Hesperides
@@ -579,7 +592,7 @@ $ apt-show-versions | awk '/No available version in archive/{print $1}'
 					</li>
 				</ul>
 			</div>	
-			<div id="rev">Содержание, последний раз пересмотрено 01/01/2012 1230 UTC</div>
+			<div id="rev">Содержание, последний раз пересмотрено 29/12/2012 0730 UTC</div>
 
 </div>
 </body>
