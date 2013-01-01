@@ -1,0 +1,544 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>aptosid Manuals - Title Goes here</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation date by bluewater 13/09/2009 1645 UTC -->
+<div id="menu"> <!-- menu starts here en lang maintainer bluewater-->
+<!--Welcome to the  aptosid-manual Editors Guide  -->
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="To aptosid.com forums and wiki" alt="aptosid.com logo" /></a>
+	</div>
+	<ul id="top-list">
+		<li><a href="editor-guide-en.htm">Editors Guide </a></li>
+	</ul>
+	<div id="flags-2">
+			<img src="../lib/logos/aptosid-lang-100x64.png" title="Choose another language" alt="lang-switch" />
+	</div>
+	<ul>
+		<li  onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="editor-guide-en.htm">Editors Guide </a>
+			<ul class="sub-menu" id="sm1">
+				<li><a href="editor-guide-en.htm#menu-limit">Do Not Stuff Around With The Menu</a></li>
+				<li><a href="editor-guide-en.htm#this-is-the-link-that-the-menu-uses-for-subheadings1">Top header designations Please right click in this page</a></li>
+
+			</ul>
+		</li>
+		<li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="editor-guide-en.htm">Approved Editors</a>
+			<ul class="sub-menu" id="sm6">
+				<li><a href="editor-guide-en.htm#approv-ed">Approved Editors</a></li>
+			</ul>
+		</li>
+		<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="aptosid-lang-standards-de.htm">aptosid-Language Standards</a>
+			<ul class="sub-menu" id="sm8">
+				<li><a href="aptosid-lang-standards-de.htm#lang-standards">aptosid-sprachstanards -DE</a></li>
+			</ul>
+		</li>
+		<li  onmouseover="showHide( 2 );" onmouseout="startTime();" ><a href="editor-guide-en.htm">Naming Conventions</a>
+			<ul class="sub-menu" id="sm2">
+				<li><a href="editor-guide-en.htm#name-con">Naming Conventions</a></li>
+
+			</ul>
+		</li>
+		<li  onmouseover="showHide( 3 );" onmouseout="startTime();" ><a href="editor-guide-en.htm">Table  Examples</a>
+			<ul class="sub-menu" id="sm3">
+				<li><a href="editor-guide-en.htm#table-examp1">Table  Examples</a></li>
+			</ul>
+		</li>
+		<li  onmouseover="showHide( 4 );" onmouseout="startTime();" ><a href="editor-guide-en.htm">Validation</a>
+			<ul class="sub-menu" id="sm4">
+				<li><a href="editor-guide-en.htm#validation">Validation</a></li>
+			</ul>
+		</li>
+		<li  onmouseover="showHide( 5 );" onmouseout="startTime();" ><a href="editor-guide-en.htm">SVN</a>
+			<ul class="sub-menu" id="sm5">
+				<li><a href="editor-guide-en.htm#svn"> SVN</a></li>
+				<li><a href="editor-guide-en.htm#svn-kdesvn"> Kdesvn</a></li>
+				<li><a href="editor-guide-en.htm#svn-rapidsvn"> Rapidsvn</a></li>
+				<li><a href="editor-guide-en.htm#svn-cli"> SVN and CLI/Konsole/Terminal</a></li>
+			</ul>
+		</li>
+		<!--<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="editor-guide-en.htm">Meta Manual special coding</a>
+			<ul class="sub-menu" id="sm7">
+				<li><a href="editor-guide-en.htm#meta-man">Meta Manual special coding</a></li>
+			</ul>
+		</li>-->
+	</ul>
+<!-- menu ends here --> </div>
+<div id="main-page">
+		<div class="divider" id="this-is-the-link-that-the-menu-uses-for-subheadings1">
+				<h2 id="top-header">aptosid is always to be in 'lowercase'.</h2>
+
+					<h2>This is major heading, Please take note of the following:</h2>
+
+						<h4>The aptosid manual is living document and it moves exactly the same way as debian sid moves and when using svn you need to constantly: <span class="highlight-3"> 'Check if current working copy has items with newer version in the repo'</span>  and <span class="highlight-3">update to head.</span></h4>
+
+					<h5 class="highlight-3">Right click this page in your browser and read the sourcecode, its what you will be working with!!!</h5>
+		</div>
+		<div class="divider" id="menu-limit">
+							<h4 class="highlight-3">DO NOT stuff around with lines 1 down to   !-- menu ends here -- , approximately line 308, give or take a line or two, (for the meta-manual its approximately line 106).</h4>
+		</div>
+		<div class="divider" id="approv-ed">
+					<h4>Approved Editing Applications</h4>
+							<p><span class="highlight-2">NVU as an editor is banned::</span> You can use kate, kwrite or any other text editor and use a browser to check the output.<!-- Quanta+ is an excellent choice as it shows the coding, then with F6, you can see what it looks like, then F6 to get back to the coding.-->.</p>
+
+					<h3>utf-8 and dejavu</h3>
+
+							<p>You must set all your editor defaults to <span class="highlight-3">utf-8</span> and the font to <span class="highlight-3"> dejavu</span>. This will enable most latin type languages to make use of all the special accents.</p>
+
+							<p>Hard coding is not permitted (OK some may slip through, and will be corrected..) This Manual is css and js driven in all facets, which means , that one change to the css or js = a global change.</p>
+
+							<p class="highlight-3">The 'p' coding is to start in this column (col 57)</p>
+<pre>
+this is a code box
+all code boxes are to be to the left, col 1
+</pre>
+
+							<p>This is a paragraph <span class="highlight-1">to highlight something important or a good suggestion,</span> for example <span class="highlight-3"> turn on your line numbers it will help you keep track of where you are.</span> The highlights are as follows:</p>
+
+						<ol>
+							<li><span class="highlight-1">highlight-1 tealish</span></li>
+							<li><span class="highlight-2">highlight-2 red</span></li>
+							<li><span class="highlight-3">highlight-3 violetish</span></li>
+							<li><span class="highlight-4">highlight-4 orangish</span></li>
+						</ol>
+
+	</div>
+	<div class="divider" id="name-con">
+				<h2>Naming Conventions</h2>
+							<p>The <span class="highlight-3">xxx-xx-xx.htm  is common to all languages </span> <span class="highlight-2"> and never to be altered, except to reflect which language it is. Therefore wm-kde-de or wm-kde-en or wm-kde-fr.</span> You may find links in the content that points to an -en.htm, please change it when you are doing translating to reflect your language tag.</p>
+
+							<p>The <span class="highlight-2">div class="divider" id="xxxxx> is used to create the submenus and is common to all languages,, and never be altered </span></p>
+
+	</div>
+	<div class="divider" id="table-examp1">
+				 <h2>This is how to do a table</h2>
+
+					<h5>No Shortcuts:</h5>
+
+			<table>
+  				<tbody>
+    					<tr>
+						<th>colours</th>
+      						<th>640x480</th>
+      						<th>800x600</th>
+      						<th>1024x768</th>
+      						<th>1280x1024</th>
+    					</tr>
+    					<tr>
+      						<td><b>256</b></td>
+      						<td>0x101</td>
+      						<td>0x103</td>
+      						<td>0x105</td>
+      						<td>0x107</td>
+    					</tr>
+    					<tr>
+      						<td><b>32k</b></td>
+      						<td>0x110</td>
+      						<td>0x113</td>
+      						<td>0x116</td>
+      						<td>0x119</td>
+    					</tr>
+    					<tr>
+      						<td><b>64k</b></td>
+      						<td>0x111</td>
+      						<td>0x114</td>
+      						<td>0x117</td>
+      						<td>0x11A</td>
+    					</tr>
+    					<tr>
+      						<td><b>16M</b></td>
+      						<td>0x112</td>
+      						<td>0x115</td>
+      						<td>0x118</td>
+    					</tr>
+  				</tbody>
+			</table>
+	</div>
+	<div class="spacer02"></div>
+								<p>Note the spacer here, it is needed for tables that have text under them, it maybe also needed under some pics.</p>
+<!--
+	<div class="divider" id="meta-man">
+					<h2>Special coding for meta-manual</h2>
+							<p>Another class of coding has  been created for the meta-manual which uses screenies:</p>
+
+						<h3>stacked-1</h3>
+ 							<dl class="stacked-1">
+								<dt>
+									<img src="../lib/flags/de-flag.png" title="DE" alt="DE" />
+									<img src="../lib/flags/de-flag.png" title="DE" alt="DE" />
+								</dt>
+							</dl>
+<br class="clear-both" />
+	</div>
+
+						<h3>stacked-2</h3>
+ 							<dl class="stacked-2">
+								<dt>
+										<img src="../lib/flags/en-flag.png" title="EN" alt="EN" />
+								</dt>
+								<dt>
+										<img src="../lib/flags/en-flag.png" title="EN" alt="EN" />
+								</dt>
+							</dl>
+
+<br class="clear-both" />
+
+						<h3>stacked-6</h3>
+	<div class="divider" id="mp-g-racing">
+				<h2>Racing Games</h2>
+					<dl class="stacked-6">
+
+						<dt><a href="mp-g-xmoto-en.htm"><img src="../lib/images-games/xmoto/xmoto2th.jpg" alt="Xmoto" /></a></dt>
+							<dd><a href="mp-g-xmoto-en.htm">Xmoto</a></dd>
+
+					</dl>
+					<dl class="stacked-6">
+						<dt><a href="mp-g-trigger-en.htm"><img src="../lib/images-games/trigger/trigger2th.jpg" title="trigger" alt="tr" /></a></dt>
+							<dd><a href="mp-g-trigger-en.htm">Trigger</a></dd>
+
+						<dt><a href="mp-g-torcs-en.htm"><img src="../lib/images-games/torcs/torcs2th.jpg" title="torcs" alt="to" /></a></dt>
+							<dd><a href="mp-g-torcs-en.htm">TORCS</a></dd>
+					</dl>
+					<dl class="stacked-6">
+						<dt><a href="mp-g-slune-en.htm"><img src="../lib/images-games/slune/slune2th.jpg" title="slune" alt="sl" /></a></dt>
+							<dd><a href="mp-g-slune-en.htm">Slune</a></dd>
+
+						<dt><a href="mp-g-stormbaan-en.htm"><img src="../lib/images-games/stormbaan/stormbaan2th.jpg" title="stormbaancoureur" alt="sc" /></a></dt>
+							<dd><a href="mp-g-stormbaan-en.htm">Stormbaancoureur</a></dd>
+					</dl>
+					<dl class="stacked-6">
+						<dt><a href="mp-g-supertuxkart-en.htm"><img src="../lib/images-games/supertuxkart/supertuxkart2th.jpg" title="supertuxkart" alt="sk" /></a></dt>
+							<dd><a href="mp-g-supertuxkart-en.htm">SuperTuxKart</a></dd>
+					</dl>
+
+<br class="clear-both" />
+
+	</div>
+-->
+	<div class="divider" id="validation">
+					<h2>Validation</h2>
+
+							<p>All files should should pass the W3C.org validation test.</p>
+							<p>W3.org colour codings are as follows:<br />
+							<span class='highlight-1'>Green: Magic</span>,<br />
+							<span class='highlight-3'>Warning: it passes</span>, however let me know about it,<br />
+							<span class='highlight-2'>Red: Errors NEED to be fixed</span>.</p>
+							<p><a href="http://validator.w3.org/">This is site to check for Validation</a>.</p>
+
+	</div>
+							<p>Please remember to fill in <span class="highlight-3">the hidden text Line 20 for last translation date e.g. 29/04/2009 1200 UTC</span></p>
+
+							<p>Do not alter the line that reads <span class="highlight-3"> Content last updated 29/04/2009 1200 UTC</span>, which is the last line of text on any given file. The words 'Content last updated' can be be translated, but the time stamp cannot be altered.</p>
+
+
+	<div class="divider" id="svn">
+					<h2>SVN for manual-devs</h2>
+
+				<h3>RSS for aptosid-manuals</h3>
+
+							<p><a href="http://svn.berlios.de/wsvn/fullstory-doc/?op=rss&isdir=1&">berlios fullstory-docs</a> svn at a glance via a web browser</p>
+
+							<!--<p>Click on <span class="highlight-3">Browse Source</span> and <span class="highlight-3"> Timeline</span> to see what changes have happened.</p>-->
+
+	</div>
+	<div class="divider" id="svn-kdesvn">
+
+							<p>You have choices as to what to use for a svn client and just 3 of them are mentioned here, kdesvn, rapidsvn and of course cli</p>
+
+				<h2>Kdesvn</h2>
+
+<pre>
+apt-get install kdesvn
+apt-get install kdesvn-kio-plugins
+</pre>
+
+						<h6 class="highlight-2">ADVANCE WARNING: You do not need to 'checkout' the repo again once you have it locally.: </h6>
+							<p>All you need to do once you have opened kdesvn is click on <span class="highlight-3">File>Open</span> and go to your local repo, click on Trunk/manual and it will automatically start to update any changed files (it will ask you for your username/password). Then click on <span class="highlight-3">Updates , Check if current working copy has items with newer version in the repo. </span>The default colour for a file that was changed in svn compared with your local file will turn green. You then click update to head</p>
+
+							<p>The only time you will need to do another checkout is if you have corrupted your current local repo, and in that case go back and redo the 'Steps to set up your local repo'.</p>
+
+							<p class="highlight-3">The aptosid manual is living document and it moves exactly the same way as debian sid moves and when using svn you need to constantly <span class="highlight-3"> Check if current working copy has items with newer version in the repo.  and update to head.</span></p>
+
+				<h4>Steps to the manuals svn repo</h4>
+
+						<ol>
+							<li>Make an <span class="highlight-3">svn folder on your own PC</span> and inside that folder make another folder called <span class="highlight-3">aptosid-manual-berlios-repo</span> or <span class="highlight-3">or aptosid-man-trans, </span>(as examples)</li>
+
+							<li>Open kdesvn</li>
+
+							<li>In the menu: <span class="highlight-3">Subversion> General>Checkout a repo</span></li>
+
+							<li>In the dialog box that pops up, ENTER URL put in this link to get the WHOLE repo (which is about 200 MB)
+
+<pre>
+svn+ssh://developername@svn.berlios.de/svnroot/repos/fullstory-doc/trunk
+</pre>
+						</li>
+							<li>In the SELECT TARGET DIRECTORY click the folder icon and browse to your chosen folder that will have the repo locally (eg sid-man-trac-repo or whatever you have named it) </li>
+
+							<li>Radio button HEAD</li>
+
+							<li>Check (X) the lines: Append source URL name, Recursive, Open after job</li>
+
+							<li>Click OK , enter your username and password, the svn repo is now incoming!</li>
+						</ol>
+
+							<p>When you see a dialog box asking you to accept/fingerprint a certificate, use your mouse to stretch out the dialog box so that you see an 'Accept' button, and accept the self issued certificate.</p>
+
+
+
+					<!--<h5 class="highlight-3">While 'Trunk' is the main repo that you need, branches will give you the editors guide, (and as for tags atm, dont fret about them).</h5>-->
+
+				<h3 class="highlight-2">Updating the svn repo to your local copy</h3>
+						<h6 class="highlight-2">WARNING: You do not need to 'checkout' the repo again once you have it locally.: </h6>
+
+							<p>All you need to do once you have opened kdesvn is click on <span class="highlight-3">File>Open</span> and go to your local repo, click on Trunk/manual and it will automatically start to update any changed files (it will ask you for your username/password). Then click on <span class="highlight-3">Updates , Check if current working copy has items with newer version in the repo. </span>The default colour for a file that was changed in svn compared with your local file will turn green. You then click update to head</p>
+
+							<p>The only time you will need to do another checkout is if you have corrupted your current local repo, and in that case go back and redo the 'Steps to set up your local repo'.</p>
+
+			<h3><span class="highlight-2">Do not delete from an SVN folder or via kdesvn/rapidsvn/clisvn any files that are excess to your lang and commit, as you will wipe out svn globally.</span></h3>
+
+				<h5>Making changes to files</h5>
+
+						<ol>
+							<li>Open up /kwrite/kate, browse to where you have the repo locally (eg sid-man-trac-repo) go into 'trunk' ( all the langs will come up) and go to your lang open up the file you wish to edit, edit it, save it.</li>
+
+							<li>Open kdesvn  click on <span class="highlight-3"> File>Open and go to your local repo>'trunk".</span> it will now have a coloured line (default is red), thus showing you that a file changed, Note if have have kdesvn open will working in a text editor , click 'reload' in kdesvn</li>
+
+							<li>Right Click on the file showing up that it has changed and a popup menu will have options, click <span class="highlight-3">commit # and fill in the comments section as to what changed!</span> , (it will/may ask your username and password if you are not already logged in ) </li>
+						</ol>
+
+
+				<h4 class="highlight-3">The Blame file</h4>
+
+							<p> To see what actually changed kdesvn has a blame file. Highlight the file you wish to see that was changed and click on the icon that says <span class="highlight-3">BLAME Output revision in line</span> OR,
+							 highlighting the file and then go to the <span class="highlight-3">Subversion > General >Blame </span></p>
+
+							<p> <span class="highlight-3">NOTE:</span> The Blame file only shows the line numbers and who changed them. To get the full explaination of the change, highlight the file and click the<span class="highlight-3">LOG </span> icon, and then click on the <span class="highlight-3">Diff Previous </span>button bottom left.</p>
+
+				<h4 class="highlight-3">Getting a 'lock out" or 'locked' message</h4>
+							<p>right click with the mouse on 'manual' and/or 'trunk' and select 'clean-up"</p>
+
+							<p>kdesvn has a good Help manual, just click Help.</p>
+
+
+
+				<!--<h2>Working with kdesvn and kdiff3</h2>
+
+							<p>kdiff3 is a very helpful application for translators. It's very easy to use it in combination with kdesvn. So let's start.</p>
+
+							<p>First open kdesvn then choose open from the menu, type in <span class="highlight-3">http://lab.aptosid.com/svn/manual/trunk/yourlangcode </span>
+							Then open Settings->Configure kdesvn and apply the following settings like you see here:</p>
+
+<div class="screenshot"><img src="../lib/images-edg/settingsPIC.png" alt="settingsPIC" /></div>
+
+							<p>Select the file that changed and choose from the menu Subversion->Working copy->Merge two revisions.</p>
+
+							<p>Another window appears.</p>
+<div class="screenshot"><img src="../lib/images-edg/merge.png" alt="merge-pic" /></div>
+
+							<p>In this window you can select the following settings: In the upper part you can select the source revision, by rev number, by date or HEAD</p>
+							<p>In the lower part you can select the changed file that has to be compared to the source. Press OK and kdiff3 appears.</p>
+
+							<p>Kdiff3 will show you graphically what changed, and you have the possibility to diff or merge with kdiff3 or to change the files manually inside the lower window of kdiff3.</p>
+
+							<p>kdiff3 creates 1 file in /tmp that represent your initial file and 1 file that represents the changes to be made.  The third displayed file is your target file with the new changes inside the working copy.</p>
+
+							<p>kdiff3 shows you now 3 windows: source file, changed file and the target file that represents your file inside the working copy.</p>
+
+							<p>Press F7 to enter the merge mode, make your corrections changes, whatever. For the translation it's necessary to compare the english manual AND your language manual too, to view all the changes made.</p>
+
+							<p>With kdiff3 you can Alt-Tab between the two paths and see what changed, and you have the possibility to view all changes directly. When you finished with correcting the shown conflicts, the Save symbol appears, press it and you're done.</p>
+
+							<p>Then look at kdesvn, the file appears now as locally changed, press commit and the file is online at the aptosid-manual-svn-repository.</p> -->
+
+	</div>
+	<div class="divider" id="svn-rapidsvn">
+				<h2>Rapidsvn</h2>
+
+<p><a href="http://rapidsvn.tigris.org/">http://rapidsvn.tigris.org</a></p>
+
+<pre>
+apt-get install rapidsvn
+</pre>
+
+							<h6 class="highlight-2">ADVANCE WARNING: You do not need to 'checkout' the repo again once you have it locally.: </h6>
+							<p>All you need to do once you have opened rapidsvn is to rightclick on to your local repo and select <span class="highlight-3">Update</span> it will automatically start to update any changed or new files (it will ask you for your username/password when not entered before).</p>
+
+							<p>The only time you will need to do another checkout is if you have corrupted your current local repo, and in that case go back and redo the 'Steps to set up your local repo'.</p>
+
+							<p>When you see a dialog box asking you to accept/fingerprint a certificate, use your mouse to strech out the dialog box so that you see an 'Accept' button, and accept the self issued certificate.</p>
+
+
+				<h4>Steps to the manuals svn repo (rapidsvn)</h4>
+
+						<ol>
+							<li>Make an <span class="highlight-3">svn folder on your own PC</span> and inside that folder make another folder called <span class="highlight-3">aptosid-manual-repo-trac</span> or <span class="highlight-3">or aptosid-man-trans,  blah blah </span>(as examples)</li>
+
+							<li>Open rapidsvn</li>
+
+							<li>In the menu: <span class="highlight-3">Repository>Checkout</span>
+
+							In the dialog box that pops up ENTER URL put in this link to get the WHOLE repo (which is about 200 MB)
+
+
+<pre>
+svn+ssh://developername@svn.berlios.de/svnroot/repos/fullstory-doc/trunk
+</pre>
+						</li>
+
+							<li>In the DESTINATION DIRECTORY click the .. icon and browse to your chosen folder that will have the repo locally (eg sid-man-trac-repo or whatever you have named it) </li>
+							<li>Check if the lines: Revision - Use latest, Peg Revision - not specified, Add to bookmark  and Recursive are checked!</li>
+
+							<li>Click OK , enter your username and password, the svn repo is now incoming!</li>
+
+						</ol>
+
+
+	</div>
+	<div class="divider" id="svn-cli">
+				<h2>svn with cli/terminal/konsole</h2>
+
+							<p>Make a <span class="highlight-3">svn</span> folder and inside that folder make another folder called <span class="highlight-3">sid-man-trac-repo </span>(as an example)</p>
+
+<pre>
+apt-get install subversion
+</pre>
+
+							<p>Then:</p>
+
+<pre>
+svn checkout \
+svn+ssh://developername@svn.berlios.de/svnroot/repos/fullstory/trunk 
+</pre>
+						<h6>Basic commands:</h6>
+
+
+								<p>Update your working copy:</p>
+<pre>
+cd /folder/to/your/working/copy
+svn update
+</pre>
+
+							<!--<p>Add a folder/file to the repository: Create the folder/file in your working copy and then just do a: </p>
+<pre>
+svn add &lt;folder&gt;
+or:
+svn add &lt;file&gt;
+</pre>
+							<p>For a folder you can although use:</p>
+<pre>
+svn mkdir &lt;folder&gt;
+Note: svn mkdir is the same as mkdir &lt;folder&gt; &amp;&amp; svn add &lt;folder&gt;
+</pre>
+
+							<p>Delete a file from the repository:</p>
+<pre>
+svn delete &lt;/path/to/file&gt;
+Note: That file will be immediately deleted from your working copy!
+</pre>
+
+							<p>Delete a folder from subversion:</p>
+<pre>
+svn delete &lt;/path/to/folder&gt;
+Note: This folder will not be deleted immediately, but scheduled for deletion, if you commit your changes that folder will be entirely removed from your working copy and the repository.
+</pre>
+
+							<p>Copy a file/folder:</p>
+<pre>
+svn copy &lt;path/to/file/or/folder&gt;
+</pre>
+
+							<p>Move a file/folder:</p>
+<pre>
+svn move &lt;path/to/file/or/folder&gt;
+Note: This is the same as svn copy &lt;file/folder&gt; &amp;&amp; svn delete &lt;file/folder&gt;
+</pre>-->
+
+							<p>To change content of a file: just edit the file with your preferred editor then commit.</p>
+
+
+							<p>Check your changes:</p>
+<pre>
+svn status
+Note: This will only show you the changes you made in your working directory
+</pre>
+
+<pre>
+svn status --show-updates
+Note: this will contact the repository and determine changes that were made since your last svn update eg:
+svn status -u
+A               0   foo/blah.txt
+A               0   foo/blah2.txt
+A               0   foo
+M             128   xx/cd-content-xx.htm
+Status against revision:    128
+</pre>
+
+<pre>
+Note: The letters in the first column have the following meaning:
+A - item is scheduled for addition
+C - there is an conflict with the item
+D - item is scheduled for deletion
+M - item was modified
+</pre>
+
+							<p>To check what content you changed use:</p>
+<pre>
+svn diff
+Note: You'll get the changes in the unified diff format.
+</pre>
+
+							<p>Undo working changes:</p>
+<pre>
+svn revert &lt;path/to/file&gt;
+Note: Revert can undo any kind of scheduled operations, you'll get the version from your last svn update without the need to connect to the repository, so revert is a offline operation!
+</pre>
+
+							<p>Commit your changes:</p>
+<pre>
+svn commit
+Note: A log message must be provided, either by --file or --message, if both flags are not set a editor (vi) will be started. The log message can be empty.
+</pre>
+
+							<h6>How to handle conflicts: </h6>
+
+								<p>This topic can be very complex, The official documentation: <a href="http://svnbook.red-bean.com/en/1.4/svn-book.html#svn.tour.cycle.resolve">http://svnbook.red-bean.com/en/1.4/svn-book.html#svn.tour.cycle.resolve</a></p>
+
+
+							<p>Check logfiles:</p>
+<pre>
+svn log
+Note: If you do a svn log (other commands act similar) in the root directory of your local working copy you get the log messages of that folder and all subfolders, if you are in a subfolder and run svn log you just get the logs of that folder and its subfolders.
+</pre>
+							<p>Scenario for a working cycle:</p>
+<pre>
+svn update
+svn mkdir foo
+vi foo/bar.txt
+add foo/bar.txt
+svn diff
+svn status --show-updates
+(just continue if there are no conflicts (C)
+svn commit --message "Just added foo/bar.txt"
+</pre>
+
+	</div>
+			<div id="rev">Content last updated 01/01/2013 0750 UTC </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>aptosid - ISO QA checklist</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body><div id="menu"> <!-- menu starts here en lang maintained by bluewater-->
+<!--aptosid Operating System Manual menu-version-02.09.2010.11.03 -->
+<!-- menu last updated by bluewater 2010.11.03 1130 hrs UTC -->
+	<div id="menu-header">
+	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="To aptosid.com forums and wiki" alt="aptosid.com logo" /></a>
+	</div>
+</div>
+	<div id="main-page">
+	<div class="divider" id="iso-test-checklist">
+				<h2 id="top-header">aptosid ISO Quality Assurance checklist</h2>
+
+							<p><span class="highlight-3">This is core QA checklist for  things that we may tend to forget to check and should check, it is not meant be a definitive guide to check for corner cases.</span>
+
+			     <h3>Preset options:</h3>
+				     <ul>
+					<li>md5sum</li>
+					<li>Boot line options (for example: F4 language F3 Timezone F5 Kernel default)</li>
+					<li>All desktop icons work as expected</li>
+					<li>Terminal tests (init 3 back to init 5 blah blah)</li>
+					<li>Installer reads the partitions properly</li>
+					<li>Partitioner works as expected</li>
+					<li>liveapt</li>
+					<li>memtest</li>
+				    </ul>
+
+			    <h3>Install tests:</h3>
+				     <ul>
+					<li>Install to an image</li>
+					    <li>Install to a stick with raw and install-usb-gui</li>
+					    <li>Install to a HD using plain</li>
+					    <li>Install to a HD using lvm</li>
+					    <li>Install to a HD using crypt</li>
+				    </ul>
+
+			    <h3>Complex behaviours:</h3>
+				    <ul>
+					<li>fromiso with persist with ext2 ext3 ext4 and fat</li>
+					<li>NTFS read/write</li>
+				    </ul>
+
+			    <h3>Other QA metrics:</h3>
+				    <ul>
+					<li>wlan: especially if no firmware is needed</li>
+					<li>Samba</li>
+					<li>Printers</li>
+					<li>Enable system sounds [requires logout /login]</li>
+					<li>Play a media file ( audio/video) </li>
+					<li>bluetooth: at least device pairing</li>
+				    </ul>
+
+			    <h4>Art QA:</h4>
+				    <ul>
+					<li>verify gfxboot-theme, kdm-theme, ksplash-theme, wallpaper, gdm-theme, &amp; xfce-splash-theme</li>
+				    </ul>
+
+	</div>
+
+			<div id="rev">Page last revised 10/01/2011 1225 UTC</div>
+
+</div>
+</body>
+</html>
