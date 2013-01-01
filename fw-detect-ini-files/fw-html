@@ -1,0 +1,378 @@
+#!/usr/bin/perl
+#
+# Copyright 2009 Niall Walsh <niallwalsh@users.berlios.de>
+# License: GPLv2
+#
+# Script to convert fw-data.ini file to html
+#
+# Takes filename of ini file as input or defaults to fw-data.ini
+# Writes (bare) html to stdout
+#
+
+use strict;
+
+# TODO add some options properly
+# -t|--template
+#	insert generated content into given file
+#	default value stdin
+# -p|--pattern
+#	use given value as string to replace with content in template
+#	implies -t
+#	disables -w
+#	default off value <!-- fw-data -->
+# -w|--wrap
+#	use given value as root path to header/footer
+#	disables -t/-p
+#	default on value fw-html.
+# -i|--indent
+#	indent all content by this string
+#	automatically taken from template's pattern indent if -t
+#	default value ""
+# -s|--space
+#	use this string to add a level of indenting
+#	default value "\t"
+# -l|--lang
+#	only output the given language
+#	default on value en
+# -m|--multi
+#	output all languages
+#	can be inline or block
+#		block repeats the entire structure for each lang
+#		inline makes each translated element a set of siblings
+#	default value ? inline ?
+#	default off
+# -o|--order
+#	list of fields to output in order
+#	default value drivers url fw ok note
+# -h|--header
+#	what tag to use for the links wrapper elements in the index/toc
+#	possible values none li dd div span
+#	default value li
+# -c|--class
+#	what tag to use to wrap the classes
+#	possible values are none li dt div span
+#	default value dt
+# -d|--device
+#	what tag to use to wrap the classes
+#	possible values are none li dt div span
+#	default value dt
+# -b|--blacklist
+#	list of classes to exclude from output
+
+# You might want to set these!
+my $indent="\t\t\t\t";
+my $level="\t";
+my $pattern='\<\!--\s+fw-data\s+\-\-\>';
+my $langpatt='\<\!--\s+fw-lang\s+\-\-\>';
+my @blacklist=('usb');
+my $liwrap='h2';
+my $dtwrap='strong';
+
+# For now you can give the language as only current argument
+my $lang="en";
+
+if (($ARGV[0]=~/^[a-z]{2}$/i)||($ARGV[0]=~/^[a-z]{2}\_[a-z]{2}$/i))
+{
+	$lang="$ARGV[0]";
+	shift(@ARGV);
+	print STDERR "NOTE: $lang selected as language\n";
+}
+
+my %trans;
+if (-e $lang.'.i18n')
+{
+    open(LANG,$lang.'.i18n')||die "failed to open $lang.i18n for reading : $!\n";
+    my $tstring;
+    while($tstring=<LANG>)
+    {
+        chomp($tstring);
+        my($tname)=$tstring;
+        my($tval)=$tstring;
+        $tname=~s/\=.*$//;
+        $tval=~s/$tname\=//;
+        $trans{$tname}=$tval;
+    }
+    close(LANG);
+}
+
+my $file=$ARGV[0];
+if (length($file)==0)
+{
+	$file='fw-data.ini';
+}
+unless (-f $file)
+{
+	die "you must supply a valid filename to load from if fw-data.ini is not in the working directory";
+}
+
+# Using Config::Any instead would allow to switch to anything it supports
+#use Config::Any;
+#my $cfg = Config::Any->load_files({files => [ $file ] });
+#my $cards = $$cfg[0]{$file};
+use Config::Tiny;
+my $cards = Config::Tiny->read($file);
+
+# name and num are used to loop over the cards and build up:
+#   @names is the list of sorted ini section names
+#   %names is a hash of the ini section names to their sorted number
+#   %class holds an array of sections in a class by number
+my $name;
+my $num=0;
+my (@names, %names, %class);
+
+# these are the fields we loop over in this order for content of output
+my (@fieldnames)=(
+	'drivers',
+	'url',
+	'fw',
+	'ok',
+	'note'
+);
+
+# go through the ini sections and build up [@%]names and $class
+foreach $name (sort(keys(%$cards)))
+{
+	my $field;
+	foreach $field (@fieldnames,'class','title')
+	{
+		$$cards{$name}{$field}=~s/^\s*\"\s*(.*?)\s*\"\s*$/$1/;
+	}
+	push(@names,$name);
+	$names{$name}=$num;
+	$$cards{$name}{'class'}='other' unless (length($$cards{$name}{'class'}));
+	my @class = split(/\s+/,$$cards{$name}{'class'});
+	my $class;
+	my $classCSS;
+	foreach $class (@class)
+	{
+		$classCSS=$class;
+		$classCSS=~s/\./\_/g;
+		push(@{$$cards{$name}{'_class'}},$classCSS);
+		if (!(defined($class{$class})))
+		{
+			$class{$class}=[$num];
+		}
+		else
+		{
+			push(@{$class{$class}},$num);
+		}
+		
+	}
+	$num++;
+}
+
+sub closetags () {
+	my $count=shift();
+	unless ($count)
+	{
+		unshift(@{$_[0]},$count);
+		$count=@{$_[0]};
+	}
+	$count = @{$_[0]} - $count;
+	while (@{$_[0]} > $count)
+	{
+		print $indent;
+		my $loop;
+		for ($loop=1;$loop<@{$_[0]};$loop++) {
+			print $level;
+		}
+		print pop(@{$_[0]})."\n";
+	}
+}
+
+sub writefile () {
+	my $file=shift();
+	if ( -r $file )
+	{
+		open(IN,$file)||die "failed to open $file : $!";
+		my $line;
+		while ($line=<IN>)
+		{
+			print "$line";
+		}
+		close(IN);
+	}
+}
+
+&writefile('fw-html.header');
+my $buffer='';
+while ($buffer=<STDIN>)
+{
+	$indent='';
+	$buffer=~s/$langpatt/$lang/;
+	if ($buffer=~/$pattern/)
+	{
+		$indent=$buffer;
+		$indent=~s/$pattern.*$//;
+		chomp($indent);
+		$buffer=~s/$indent$pattern//;
+		last;
+	}
+	else
+	{
+		print $indent.$buffer;
+	}
+}
+
+# go through the classes to put them in their own section
+my $class;
+my $classCSS;
+# print $indent . '<ul id="fwul">'."\n";
+# my $liin='';
+# my $liout='';
+# if (length($liwrap))
+# {
+# 	$liin='<' . $liwrap . '>';
+# 	$liout='</' . $liwrap . '>';
+# }
+# CLASSLI: foreach $class (sort(keys(%class)))
+# {
+# 	my $test;
+# 	foreach $test (@blacklist)
+# 	{
+# 		next CLASSLI if ($class=~/^$test$/i);
+# 	}
+# 	$classCSS=$class;
+# 	$classCSS=~s/\./\_/g;
+# 	print $indent . $level . '<li class="fwindex">' . $liin . '<a href="#' . $classCSS . '">' . $class . '</a>' . $liout . '</li>' . "\n";
+# }
+# print $indent . '</ul>' . "\n";
+
+my @close;
+print $indent . '<dl class="firmware">' . "\n";
+push(@close,'</dl>');
+my $dtin='';
+my $dtout='';
+if (length($dtwrap))
+{
+	$dtin='<' . $dtwrap . '>';
+	$dtout='</' . $dtwrap . '>';
+}
+
+CLASSDD: foreach $class (sort(keys(%class)))
+{
+	my $test;
+	foreach $test (@blacklist)
+	{
+		next CLASSDD if ($class=~/^$test$/i);
+	}
+	$classCSS=$class;
+	$classCSS=~s/\./\_/g;
+	print $indent . $level . '<dt class="' . $classCSS . '">' . $dtin . '<a name="' . $class . '">' . $class . '</a>' . $dtout . '</dt>' . "\n" .
+		$indent . $level . '<dd class="devices">' . "\n" .
+		$indent . $level . $level . '<dl class="class">' . "\n";
+	# does layer them out on close, and could elsewhere if required
+	push(@close,'</dd>','</dl>');
+	my $prefix=$level.$level.$level;
+
+	# will have the name and number of the ini section
+	my $dname;
+	my $dnum;
+	# the ini sections in the class
+	foreach $dnum (@{$class{$class}})
+	{
+		my $dname = $names[$dnum];
+		my $classes=$$cards{$dname}{'class'};
+		$classes=~s/\./\_/;
+		my $title=$$cards{$dname}{'title'};
+		if ((length($lang))&&(defined($$cards{$dname}{join('_','title',$lang)})))
+		{
+			$title=$$cards{$dname}{join('_','title',$lang)};
+		}
+                $title.=' '.$trans{'class'};
+                if ($classes=~/\s*usb\s*/)
+                {
+                    $title.=' '.$trans{'class_usb'};
+                }
+		print $indent . $prefix . '<dt class="device ' . $classes . '" id="' . $dname .'">' . $title . '</dt>' . "\n" . $indent . $prefix . '<dd>' . "\n$indent" . $prefix . $level . '<dl class="dvals">' . "\n";
+		push(@close,'</dd>','</dl>');
+		my $field;
+		# the main fields in the ini section
+		foreach $field (@fieldnames)
+		{
+			if (defined($$cards{$dname}{$field})) {
+				my @content=();
+                                my @terms=();
+				my $content=$$cards{$dname}{$field};
+				if ((length($lang))&&($field=~/^note$/))
+				{
+					if (defined($$cards{$dname}{join('_',$field,$lang)}))
+					{
+						$content=$$cards{$dname}{join('_',$field,$lang)};
+						$content=~s/^\s*\"\s*(.+?)\s*\"\s*$/$1/;
+					}
+				}
+				foreach $content (split(/\s+/,$content))
+				{
+					if (($content=~/\ /)||($content!~/^[fh]t+ps?\:\/\//))
+					{
+						push(@content,$content) if (length($content));
+					}
+					else
+					{
+						push(@content,'<a href="' . $content . '">' . $content . '</a>');
+					}
+				}
+				if ($field=~/^fw$/)
+				{
+					if ((@content==2)&&($content[0]=~/^\<a\ href\=\"/)&&($content[1]!~/^\<a\ href\=\"/))
+					{
+						$content[1]=$trans{'fw_link_target_pre'} . ' <span class="target">' . $content[1] . '</span> ' . $trans{'fw_link_target_post'};
+						$content[0]=$trans{'fw_link'}.' <span class="link">' . $content[0] .'<br />'. $content[1] . '</span>';
+						$content[1]='';
+					}
+					elsif ($content[0]=~/^\<a\ href\=\"/)
+					{
+						$content[0]=$trans{'fw_link'}.' <span class="link">' .  $content[0] . '</span>';
+					}
+                                        unshift(@terms,$trans{'fw'});
+				}
+				elsif (($field=~/^ok$/)&&(@content))
+				{
+					my $cc;
+					my (@newc)=();
+					my $fwdir='/lib/firmware';
+					if ($content[0]=~/^\//)
+					{
+						$fwdir=shift(@content);
+					}
+					for ($cc=0; $cc<@content; $cc++)		
+					{
+						push(@newc,'<li>' . $fwdir . '/' . $content[$cc] . '</li> ');
+					}
+					if (@newc)
+					{
+						$newc[0]='<ul>'.$newc[0];
+						$newc[@newc-1].='</ul>';
+					}
+					@content=(@newc);
+                                        unshift(@terms,$trans{'ok'});
+				}
+                                elsif ($field=~/^drivers$/)
+                                {
+                                    unshift(@terms,$trans{'drivers'});
+                                }
+                                elsif ($field=~/^url$/)
+                                {
+                                    unshift(@terms,$trans{'url'});
+                                }
+                                elsif ($field=~/^note$/)
+                                {
+                                    unshift(@terms,$trans{'note'});
+                                }
+				print $indent . $prefix . $level . $level  . '<dt class="' . $field . '">'. join(' ',@terms) .'</dt>' . "\n" .
+					$indent . $prefix . $level . $level . '<dd>' . join(' ',@content) . '</dd>' . "\n" if (@content);
+			}
+		}
+		&closetags(2, \@close);
+	}
+	&closetags((@close-1), \@close);
+}
+&closetags((@close*1),\@close);
+
+&writefile('fw-html.footer');
+print $buffer;
+while ($buffer=<STDIN>)
+{
+	print $buffer;
+}
