@@ -17,7 +17,7 @@
         <![endif]-->
 </head>
 <body>
-<!-- Last translation revision polix 29/12/2012 0100 UTC -->
+<!-- Last translation revision polix 02/01/2012 0100 UTC -->
 <!--htdig_noindex--><div id="menu"> <!-- menu starts here - ua language maintained by polix -->
 <!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
 <!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
@@ -350,43 +350,43 @@
 				</p>
 
 				<p>
-					The ext4 file system has gained 'Big Allocation Blocks', reducing the overhead for saving large files by collating many smaller 4K blocks in up to 1 MB large clusters.
-					Further improvements have been focussed on speeding up online resizing and assuring data integrity through CRC32 validation for ext4's meta data.
-					CIFS profits from several optimisations improving its throughput.
+					Файлова система ext4 отримала 'Big Allocation Blocks', яке дала зниження накладних витрат для збереження великих файлів шляхом узагальнення багатьох невеликих блоків 4K в до 1 Мб великих кластерів.
+					Подальші удосконалення були зосереджені на прискоренні онлайн зміна розміру і забезпечення цілісності даних через CRC32 перевірку даних ext4 мета.
+					До CIFS було добавлено від декількох оптимізацій підвищення її пропускної здатності.
 				</p>
 
 				<p>
-					Intel Ivy-Bridge graphics profit from advanced power-saving features (RC6) and (limited) triple head support.
-					Very initial support could be added for Intel's GMA500, GMA600 and GMA3600 'Poulsbo' graphics.
-					Nouveau has gained підтримка для the new nVidia chipsets of the NVC1, NVC8, NVCF, NVD9 and NVE4 families.
-					While radeon now supports the 'Evergreen', 'Southern Islands' and 'Trinity/ Aruba' generations (Radeon HD5xxx, HD6xxx, HD7xxx) and enables hardware acceleration up to the r900 family.
-					Furthermore підтримка для USB DisplayLink cards has been implemented using the new 'udl' driver.
+					До Intel Ivy-Bridge графіки було добавлено кілька передових енергозберігаючих функцій (RC6) і (обмежено) підтримка triple head.
+					Дуже початкова підтримка може бути додана для Intel's GMA500, GMA600 and GMA3600 'Poulsbo' графіки.
+					Nouveau отримав підтримку для нових nVidia чипсетів NVC1, NVC8, NVCF, NVD9 and NVE4 сімей.
+					У той час як Radeon тепер підтримує 'Evergreen', 'Southern Islands' та 'Trinity/ Aruba' покоління (Radeon HD5xxx, HD6xxx, HD7xxx) і забезпечує апаратне прискорення до r900 сім'ї.
+					Крім того була додана підтримка для USB DisplayLink карт яка була реалізована за допомогою нових драйверів 'udl' .
 				</p>
 
 				<p>
-					Improved byte queue handling, 'TCP buffer size controlling' and 'CoDel' now reduce latencies and improve throughput for network transmissions, thereby reducing 'buffer bloat'.
-					Open vSwitch offers a kernel assisted virtual multi-layer network switching framework to be used in combination with kvm and other virtual machines.
+					Покращена обробка черги байт,'TCP buffer size controlling' яка зараз знизує затримки і підвищує пропускну спроможність для мережевих передач, знижуючи тим самим «buffer bloat».
+					Відкритий VSwitch пропонує допомогу віртуальним ядрам багатошарової мережі та перемикання бази, яка використовується в поєднанні з KVM та інших віртуальних машин.
 				</p>
 
 				<p>
-					Atheros has added підтримка для its AR6003 based USB and SDIO wlan cards through ath6kl and the new ar5523 driver takes care of older 54/ '108' MBit/s USB wlan cards using the previously unsupported AR5523 chipset.
-					The new brcmsmac (BCM4313, BCM43224, BCM43225) and brcmfmac (BCM43235, BCM43236, BCM43238) drivers provide hardware підтримка для newer Broadcom 802.11n wlan cards.
-					Additional hardware підтримка для RaLink RT536x,  RF537x and RT539x could be added to the rt2x00 driver family.
+					Atheros oтримав підтримку для  AR6003 базуючих USB та SDIO WLAN-карт через ath6kl та новий ar5523 драйвер піклується про старших 54/ '108' MBit/s USB WLAN-карт з використанням раніше непідтримуваного AR5523 чипсету.
+					Нові brcmsmac (BCM4313, BCM43224, BCM43225) та brcmfmac (BCM43235, BCM43236, BCM43238) драйвери забезпечують апаратну підтримку для більш нових Broadcom 802.11n WLAN-карт.
+					Було додана підтримка для RaLink RT536x,  RF537x and RT539x карт які можуть додані до rt2x00 driver сім'ї.
 				</p>
 
 
 				<p>
-					Many new drivers have appeared for previously unsupported webcams and DVB TV cards.
+					Багато нові драйверів з'явилися для раніше непідтримуваних веб-камерах і DVB TV карт.
 				</p>
 
 				<ul>
-					<li>Topro webcams, using the tp6800 bridge and soi763a sensors.</li>
-					<li>IT913X based devices, like the Kworld UB499-2T DVB-T card.</li>
-					<li>KWorld PC150-U and AzureWave 6007 ATSC support.</li>
-					<li>TM5600, TM6000 and TM6010 USB DVB chipsets.</li>
-					<li>DVB-T cards using the MaxLinear MxL111SF demod.</li>
-					<li>підтримка для Realtek RTL2831U and RTL2832 based DVB-T USB cards.</li>
-					<li>DVB-S/ DVB-S2 cards using the NXP TDA10071 demod and Conexant CX24118A, just like the Conexant CX25821, tuners.</li>
+					<li>Підтримка для Topro webcams, які використовують tp6800 bridge та soi763a датчики.</li>
+					<li>Підтримка для пристроїв IT913X, як наприклад Kworld UB499-2T DVB-T карти.</li>
+					<li>Підтримка для KWorld PC150-U та AzureWave 6007 ATSC.</li>
+					<li>Підтримка для TM5600, TM6000 та TM6010 USB DVB карт.</li>
+					<li>Підтримка для DVB-T карт які використовують MaxLinear MxL111SF демодулятора.</li>
+					<li>Підтримка для Realtek RTL2831U та на RTL2832 заснованих DVB-T USB-карт.</li>
+					<li>Підтримка для DVB-S/ DVB-S2 карт які використовують NXP TDA10071 датчики та Conexant CX24118A, наприклад Conexant CX25821 тюнери.</li>
 				</ul>
 
 				 <p>
@@ -561,11 +561,11 @@ install-mbr /dev/sdz
 
 				<h3>UEFI Secure Boot</h3>
 				<p>
-					There are currently no plans to support UEFI Secure Boot.
-					In order to allow dual-booting with other operating systems, this option needs to be disabled in the system firmware.
+					В даний час немає ніяких планів для підтримки UEFI Secure Boot.
+					Для того щоб забезпечити подвійне завантаження з іншими операційними системами, опція UEFI Secure Boot повинна бути відключена в системі прошивки.
 				</p>
 
-				<h3>Localisation</h3>
+				<h3>Локалізація</h3>
 				<p>
 					A special feature of kde-full releases is the ability to select other languages than German or US English from the grub menu (F4), which automatically installs localisations for the desktop and many applications while booting.
 					This ensures they are also present after installing aptosid, while only installing the required languages for the given system.
