@@ -110,7 +110,7 @@
 					</li>
 		      </ul>
 		</li>
-<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-en.htm">Installation options - HD, USB, VM and Cryptroot</a>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-en.htm">Installation options - HD, USB, UEFI, VM and Cryptroot</a>
 		<ul class="sub-menu" id="sm7">
 		  <li><a href="hd-install-en.htm#Inst-prep">Install Preparation &#8658;</a>
 					<ul class="sub2-menu" id="sm7a">
@@ -132,6 +132,7 @@
 					  <li><a href="hd-ins-opts-oos-en.htm#raw-usb">Writing aptosid to a USB/SSD stick with any Linux, MS Windows or Mac OS X system</a></li>
 					</ul>
 					</li>
+		  <li><a href="hd-install-en.htm#efi">UEFI Booting</a></li>
 		  <li><a href="hd-install-crypt-en.htm#install-crypt">Installing to encrypted partitions - cryptroot</a></li>
 		  <li><a href="nbdboot-en.htm#nbd1">Booting aptosid over a network</a></li>
 		  <li><a href="hd-install-vmopts-en.htm#vmopts">Virtual Machine installation options</a></li>
