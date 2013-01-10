@@ -371,6 +371,46 @@ dpkg -l|awk '/^ii/{ print $2 }'|grep -v -e ^lib -e -dev -e $(uname -r) >/home/us
 
 							<p>În cele mai multe cazuri <i>aptosid</i> trebuie să pornească. În caz contrar puteţi folosi opțiunile de boot, (numite cheatcodes sau parametri de boot) care pot fi scrise direct în linia de comandă a managerului de boot. Folosirea parametrilor de boot (ex. pentru rezoluţia ecranului sau limba selectată) poate salva un timp prețios în faza de configurare de după instalare.<br /> A se vedea <a href="cheatcodes-ro.htm"> Cheatcodes</a> sau <a href="cheatcodes-vga-ro.htm">Rezoluții VGA</a><span class="highlight-3"> (Un exemplu util este folosirea tastei F4, la pornirea de pe Live CD, pentru a alege limba viitorului sistem).</span></p>
 
+	</div>
+	<div class="divider" id="efi">
+				<h2>(U)EFI booting</h2>
+							<p>The bootloader will be an EFI program installed to <span class="highlight-3">/boot/efi/EFI/aptosid/grubx64.efi </span> within your <span class="highlight-3"> EFI system partition </span> and mounted below <span class="highlight-3">/boot/efi/</span> on your installed system, provided the following conditions are met:</p>
+
+						<ul>
+ 							<li>The motherboard needs to have EFI firmware with EFI booting enabled.</li>
+							<li>A current aptosid-amd64.iso</li>
+							<li>Booted using UEFI and this is apparent from the plain white/blue grub2 menu, instead of the usual graphical boot menu provided by isolinux for BIOS booting, on the live medium.</li>
+							<li>You have a GPT disk with an EFI System Partition (type EF00).  This must be <span class="highlight-3">vfat or FAT </span>formatted.</li>
+							<li>The install target is not a USB disk. If you need to boot a USB stick see <a href="hd-install-ro.htm#efi-usb">UEFI bootable removable devices</a>.</li>
+						</ul>
+		  </div>
+		   <div class="divider" id="efi-usb">
+				<h3>UEFI bootable removable devices</h3>
+
+							<p>In order to create a UEFI bootable device, such as a USB stick, the contents of the aptosid ISO can be extracted to a vfat formatted partition and the partition marked as bootable.</p>
+
+							<p>Optionally this removable medium can also be made compatible with PC-BIOS booting by installing a traditional boot sector in addition to the EFI boot loader (assuming <span class="highlight-3">/dev/sdz1</span> to be the target partition on the USB stick).</p>
+<pre>
+syslinux -i -d /boot/isolinux /dev/sdz1
+install-mbr /dev/sdz
+</pre>
+		  </div>
+		   <div class="divider" id="efi-secboot">
+				<h3>UEFI Secure Boot</h3>
+
+							<p>aptosid does not currently support UEFI Secure Boot.   The current intention is to wait to see how Debian will handle UEFI Secure Boot before deciding the best course of action for aptosid. </p>
+
+							<p>In order to allow dual/triple/quadruple booting of aptosid with other operating systems, UEFI Secure Boot needs to be disabled in the system firmware. The board firmware should offer a boot menu, although on some boards this may mean you need to boot into the MS OS Win 8 and cycle through various menus to turn off UEFI Secure Boot and then reboot.</p>
+
+							<p><span class="highlight-3">Note:</span> When you disable EFI Secure Boot and want to have MS Win8 as one of your Operating System choices you will need to reinstall MS Win8. </p> 
+
+							<p><span class="highlight-1">Rod Smith of rodsbooks.com provides a good insight on the subject of Secure Boot:</span> <a href="http://www.rodsbooks.com/efi-bootloaders/secureboot.html">Managing EFI Boot Loaders for Linux: Dealing with Secure Boot</a>.</p>
+
+				  <h3><span class="highlight-3">Partitioning GPT and UEFI disks</span></h3>
+							<p>For partitioning GPT and UEFI disks consult: <a href="part-gdisk-ro.htm#gdisk-1">Partitioning with gdisk for GPT disks.</a></p>
+
+	</div>
+	<div class="divider" id="lang">
 			<h2>Alegerea limbii în care veți folosi instalarea</h2>
 				<h6><span class="highlight-3">Instalarea limbii cu KDE-full </span></h6>
 
@@ -549,7 +589,7 @@ dbus-launch &lt;nume_aplicatie&gt;
 
 	</div>
 
-	<div id="rev"> Content  last revised 24/07/2012 1300 UTC</div>
+	<div id="rev"> Content  last revised 10/01/2013 0835 UTC</div>
 
 </div>
 </body>
