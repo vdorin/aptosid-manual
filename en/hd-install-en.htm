@@ -17,7 +17,7 @@
         <![endif]-->
 </head>
 <body>
-<!-- Last translation revision bluewater 09/01/2013 1500 UTC -->
+<!-- Last translation revision bluewater 10/01/2013 0835 UTC -->
 <!--htdig_noindex--> <div id="menu"> <!-- menu starts here en lang maintained by bluewater-->
 <!--aptosid Operating System Manual menu-version-02.14.2012.01.30 -->
 <!-- menu last updated by bluewater 2012.01.30 1245 hrs UTC -->
@@ -130,7 +130,7 @@
 					</li>
 		      </ul>
 		</li>
-<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-en.htm">Installation options - HD, USB, VM and Cryptroot</a>
+<li  onmouseover="showHide( 7 );" onmouseout="startTime();" ><a href="hd-install-en.htm">Installation options - HD, USB, UEFI, VM and Cryptroot</a>
 		<ul class="sub-menu" id="sm7">
 		  <li><a href="hd-install-en.htm#Inst-prep">Install Preparation &#8658;</a>
 					<ul class="sub2-menu" id="sm7a">
@@ -152,6 +152,7 @@
 					  <li><a href="hd-ins-opts-oos-en.htm#raw-usb">Writing aptosid to a USB/SSD stick with any Linux, MS Windows or Mac OS X system</a></li>
 					</ul>
 					</li>
+		  <li><a href="hd-install-en.htm#efi">UEFI Booting</a></li>
 		  <li><a href="hd-install-crypt-en.htm#install-crypt">Installing to encrypted partitions - cryptroot</a></li>
 		  <li><a href="nbdboot-en.htm#nbd1">Booting aptosid over a network</a></li>
 		  <li><a href="hd-install-vmopts-en.htm#vmopts">Virtual Machine installation options</a></li>
@@ -326,7 +327,7 @@
 </ul>
 
 <div id="menu-header-4">
-<a href="http://webtropia.com"><img src="../lib/logos/webtropia-logo.png" title="aptosid is proudly hosted by webtropia.com" alt="aptosid is proudly hosted by webtropia.com" /></a>
+<a href="http://webtropia.com"><img src="http://manual.aptosid.com/lib/logos/webtropia-logo.png" title="aptosid is proudly hosted by webtropia.com" alt="aptosid is proudly hosted by webtropia.com" /></a>
 </div>
 
 <ul>
@@ -396,9 +397,9 @@ install-mbr /dev/sdz
 
 							<p>aptosid does not currently support UEFI Secure Boot.   The current intention is to wait to see how Debian will handle UEFI Secure Boot before deciding the best course of action for aptosid. </p>
 
-							<p>In order to allow dual/triple/quadruple booting of aptosid with other operating systems, UEFI Secure Boot needs to be disabled in the system firmware. The board firmware should offer a boot menu, although on some boards this may mean you need to boot into the MS OS Win 8 and cycle through various menus to turn off UEFI Secure boot then reboot.</p>
+							<p>In order to allow dual/triple/quadruple booting of aptosid with other operating systems, UEFI Secure Boot needs to be disabled in the system firmware. The board firmware should offer a boot menu, although on some boards this may mean you need to boot into the MS OS Win 8 and cycle through various menus to turn off UEFI Secure Boot and then reboot.</p>
 
-							<p><span class="highlight-3">Note:</span> When you disable EFI Secure Boot and want to have MS Win8 as one of your choices you will need to reinstall MS Win8. </p> 
+							<p><span class="highlight-3">Note:</span> When you disable EFI Secure Boot and want to have MS Win8 as one of your Operating System choices you will need to reinstall MS Win8. </p> 
 
 							<!--<p>There are options to dual/multiple boot Operating Systems with aptosid should UEFI Secure Boot be encountered, (and due to the plethora and complexities of manufactures and vendors, aptosid can only provide a general guideline). </p>
 			
@@ -414,8 +415,8 @@ install-mbr /dev/sdz
 
 							<!--<p>If you cannot install aptosid on new machines because the firmware will not let you choose a boot device, it is becuase is part of Windows 8's fast boot support. Should you have a Windows 8 fast boot machine - the keyboard may not be initialised until after the MS OS has started. To deal with this, insert the install media and reboot your computer. Wait for Windows 8 to start. While holding down shift, click on the power icon and click on restart. When the menu appears, click "Use a device" and then click your install media. If it's listed more than once, choose the one that says "UEFI" in front of it. Your system will now restart and boot off the install media. (refer to <a href="http://mjg59.dreamwidth.org/20916.html">Booting Linux on Win 8</a>).</p>-->
 
-				  <h3><span class="highlight-3">Partitioning GPT (and UEFI) disks</span></h3>
-							<p>For partitioning GPT (and UEFI) disks consult: <a href="part-gdisk-en.htm#gdisk-1">Partitioning with gdisk for GPT disks.</a></p>
+				  <h3><span class="highlight-3">Partitioning GPT and UEFI disks</span></h3>
+							<p>For partitioning GPT and UEFI disks consult: <a href="part-gdisk-en.htm#gdisk-1">Partitioning with gdisk for GPT disks.</a></p>
 
 	</div>
 	<div class="divider" id="lang">
@@ -599,7 +600,7 @@ dbus-launch &lt;Application&gt;
 
 							<p class="highlight-2">Under no circumstances should you be as root in the console/terminal to run applications that a standard user uses to go about being productive on a day to day basis, like sending emails, creating spreadsheets or surfing the internet and so forth. </p>
 	</div>
-	<div id="rev">Content last revised 09/01/2013 1500 UTC</div>
+	<div id="rev">Content last revised 10/01/2013 0835 UTC</div>
 
 </div>
 </body>
