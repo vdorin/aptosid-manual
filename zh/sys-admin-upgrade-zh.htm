@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>sidux Manuals - Upgrading sidux</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<div id="menu"> <!-- menu starts here zh lang maintainer plmday-->
+<!--sidux-manual Operating System Manual menu-version-01.96.2009.11.22 -->
+<!-- menu last updated by bluewater 2009.11.22 0500 hrs UTC -->
+	<div id="menu-header">
+	      <a href="http://sidux.com/"><img src="../lib/logos/manual-sidux-logo.png" title="去sidux.com论坛及维基" alt="sidux.com logo" /></a>
+	</div>
+  	<ul id="top-list">
+    		<li><a href="manual-search-zh.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="搜索该指南" alt="Search" />在线－离线搜索</a> </li>
+    		<li><a href="http://manual.sidux.com/meta-manual">Community Software Selections</a></li>
+  	</ul>
+  	<div id="flags-2">
+      			<a href="../flag-index.html"><img src="../lib/logos/sidux-language-64.png" title="选择另一种语言" alt="lang-switch"/></a>
+  	</div>
+  	<ul>
+    		<li  onmouseover="showHide( 1 );" onmouseout="startTime();"><a href="welcome-zh.htm">sidux OS手册</a>
+      			<ul class="sub-menu" id="sm1">
+        			<li><a href="welcome-zh.htm#welcome-gen">sidux OS手册</a></li>
+        			<li><a href="welcome-zh.htm#how-to">如何使用该手册</a></li>
+        			<li><a href="welcome-zh.htm#table-contents">目录</a></li>
+        			<li><a href="help-zh.htm#help-gen">何处获取帮助</a></li>
+        			<li><a href="help-zh.htm#paste">IRC !paste</a></li>
+        			<li><a href="credits-zh.htm#cred-team">功绩簿</a></li>
+        			<li><a href="wel-quickstart-zh.htm#welcome-quick">sidux快速上手指南</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 2 );" onmouseout="startTime();"><a href="cd-dl-burning-zh.htm">ISO Content, Releases, Download Mirrors and Burning</a>
+      			<ul class="sub-menu" id="sm2">
+       			<li><a href="cd-content-zh.htm#cd-content">ISO Content and system requirements</a></li>
+        			<li><a href="sys-admin-release-zh.htm#rolling">滚动升级注意事项</a></li>
+        			<li><a href="cd-dl-burning-zh.htm#download-sidux">sidux镜像，下载及刻录</a></li>
+        			<li><a href="cd-dl-burning-zh.htm#md5">md5校验和</a></li>
+        			<li><a href="cd-dl-burning-zh.htm#burn-nero">Windows下刻录</a></li>
+        			<li><a href="cd-dl-burning-zh.htm#burn-linux">Linux下刻录</a></li>
+       			 	<li><a href="cd-no-gui-burn-zh.htm#burning-no-gui">无GUI刻录</a></li>
+				<li><a href="cd-no-gui-burn-zh.htm#burn-no-gui-gen">Burning without a GUI</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 3 );" onmouseout="startTime();"><a href="live-mode-zh.htm">Live模式</a>
+      			<ul class="sub-menu" id="sm3">
+        			<li><a href="live-mode-zh.htm#rootpw">sidux-Live ISO 上的root用户密码</a></li>
+        			<li><a href="live-mode-zh.htm#live-cd-installsoft">在Live- ISO 运行时安装软件</a></li>
+        			<li><a href="live-mode-zh.htm#ntfs-3g">通过ntfs-3g写NTFS分区</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 4 );" onmouseout="startTime();"><a href="term-konsole-zh.htm">终端／Konsole</a>
+      			<ul class="sub-menu" id="sm4">
+        			<li><a href="term-konsole-zh.htm#sux"> sux / sudo</a></li>
+        			<li><a href="term-konsole-zh.htm#term-kon">终端／Konsole</a></li>
+        			<li><a href="term-konsole-zh.htm#cli-help">命令行帮助</a></li>
+				<li><a href="help-zh.htm#init3-tools">Tools to know in text mode (tty) - init 3</a></li>
+        			<li><a href="term-konsole-zh.htm#term-cmds">Linux终端命令表</a></li>
+        			<li><a href="term-konsole-zh.htm#shell-scripts">安装.sh脚本</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 5 );" onmouseout="startTime();"><a href="cheatcodes-zh.htm">参数</a>
+      			<ul class="sub-menu" id="sm5">
+        			<li><a href="cheatcodes-zh.htm#cheatcodes">sidux特有的Live- ISO 参数</a></li>
+        			<li><a href="cheatcodes-zh.htm#cheatcodes-linux">Linux惯常参数</a></li>
+        			<li><a href="cheatcodes-vga-zh.htm#vga">VGA参数</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 6 );" onmouseout="startTime();"><a href="part-gparted-zh.htm">对你的硬驱进行分区</a>
+      			<ul class="sub-menu" id="sm6">
+        			<li><a href="part-gparted-zh.htm#partition">用GParted对你的HD进行分区</a></li>
+        			<li><a href="part-gparted-zh.htm#ntfs">用GParted调整NTFS分区的大小</a></li>
+        			<li><a href="part-uuid-zh.htm#uuid">UUID, 分区标记及fstab</a></li>
+        			<li><a href="part-cfdisk-zh.htm#disknames">磁盘命名简介</a></li>
+        			<li><a href="part-cfdisk-zh.htm#partition">用cfdisk对你的HD进行分区</a></li>
+        			<li><a href="part-cfdisk-zh.htm#formating">用cfdisk分区后进行格式化</a></li>
+        			<li><a href="part-size-examp-zh.htm#part-example">分区大小实例</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 7 );" onmouseout="startTime();"><a href="hd-install-zh.htm">安装选项</a>
+      			<ul class="sub-menu" id="sm7">
+        			<li><a href="hd-install-zh.htm#Inst-prep">安装准备</a></li>
+        			<li><a href="hd-install-zh.htm#Installation">安装到你的硬盘</a></li>
+        			<li><a href="hd-install-zh.htm#first-hd-boot">第一次启动</a></li>
+        			<li><a href="hd-install-opts-zh.htm#fromiso">利用‘fromiso’参数从ISO文件引导</a></li>
+        			<li><a href="hd-install-opts-zh.htm#fromiso-persist">fromiso与persist</a></li>
+        			<li><a href="hd-install-opts-zh.htm#usb-hd">在移动硬盘上安装</a></li>
+        			<li><a href="hd-install-opts-zh.htm#vtbox">通过VirtualBox安装sidux</a></li>
+        			<li><a href="hd-install-opts-zh.htm#qemu">通过QEMU安装sidux</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 8 );" onmouseout="startTime();"><a href="hw-dev-hw-dri-zh.htm">图形显卡，显示屏， &amp; 驱动器杂烩</a>
+      			<ul class="sub-menu" id="sm8">
+        			<li><a href="hw-dev-hw-dri-zh.htm#hd-ntfs3g">通过ntfs-3g在NTFS分区上执行写操作</a></li>
+        			<li><a href="hw-dev-mon-zh.htm#mon-res">屏幕像素与显示屏</a></li>
+        			<li><a href="hw-dev-mon-zh.htm#xrandr">双显示屏及xrandr</a></li>
+        			<li><a href="hw-dev-mon-zh.htm#mon-binary">双显示屏（用二进制格式的驱动器）</a></li>
+				<li><a href="hw-dev-hw-dri-zh.htm#non-free-3d">Binary, non-free drivers for Nvidia</a></li>
+				<li><a href="hw-dev-hw-dri-zh.htm#non-free-3d-2">non-free drivers for ATI, Radeon and others</a></li>
+				<li><a href="hw-dev-hw-dri-zh.htm#non-free-firmware">Hardware needing non-free firmware drivers</a></li>
+				<li><a href="hw-dev-hw-dri-zh.htm#non-free">Adding non-free to Sources List</a></li>
+				<li><a href="hw-dev-hw-dri-zh.htm#native-nv-ati">FOSS xorg drivers for nVidia, ATI, Radeon, Intel</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 9 );" onmouseout="startTime();"><a href="wm-kde-zh.htm">窗口管理器</a>
+     			 <ul class="sub-menu" id="sm9">
+				<li><a href="wm-xfce-zh.htm#xfce-notes">Useful Xfce extras</a></li>
+				<li><a href="wm-kde-zh.htm#install-add">Useful extra KDE Apps</a></li>
+        			<li><a href="wm-kde-zh.htm#desk-freeze">桌面冻结</a></li>
+        			<li><a href="wm-kde-zh.htm#kde-login">无法登入KDE</a></li>
+        			<li><a href="wm-kde-zh.htm#ch-th">更换主题</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 10 );" onmouseout="startTime();"><a href="lamp-apache-zh.htm">sidux LAMP栈</a>
+      			<ul class="sub-menu" id="sm10">
+        			<li><a href="lamp-apache-zh.htm#serv-apache">sidux LAMP栈</a></li>
+        			<li><a href="lamp-apache-zh.htm#serv-ftp">FTP客户端</a></li>
+        			<li><a href="lamp-apache-zh.htm#serv-sec">安全协议</a></li>
+        			<li><a href="lamp-apache-zh.htm#serv-ssl">SSL</a></li>
+        			<li><a href="lamp-sql-zh.htm#serv-mysql">MySQL配置</a></li>
+        			<li><a href="lamp-ppp-zh.htm#serv-php">Apache里用PHP</a></li>
+        			<li><a href="ntp-server-zh.htm#ntp-server">时钟服务器配置</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 11 );" onmouseout="startTime();"><a href="internet-connecting-zh.htm">因特网及连网</a>
+      			<ul class="sub-menu" id="sm11">
+        			<li><a href="tor-privoxy-zh.htm#tor">Tor</a></li>
+        			<li><a href="tor-privoxy-zh.htm#privoxy">Privoxy</a></li>
+        			<li><a href="internet-connecting-zh.htm#firewalls">防火墙</a></li>
+        			<li><a href="samba-zh.htm#configure">设置SAMBA（Windows）</a></li>
+        			<li><a href="samba-zh.htm#setup">Samba服务器配置</a></li>
+        			<li><a href="ssh-zh.htm#ssh-fs">SSH远程挂载</a></li>
+        			<li><a href="ssh-zh.htm#ssh-x">透过SSH运行X窗口应用程序</a></li>
+        			<li><a href="ssh-zh.htm#ssh-f">通过Konqueror用GUI化的SSH</a></li>
+        			<li><a href="ssh-zh.htm#ssh-w">从Windows-PC通过X转发用SSH</a></li>
+        			<li><a href="ssh-zh.htm#ssh">SSH与安全</a></li>
+        			<li><a href="internet-connecting-zh.htm#dial-mod">56k调制解调器</a></li>
+        			<li><a href="internet-connecting-wpagui-zh.htm#wpa-roaming-gui">WiFi－漫游的WPA-GUI</a></li>
+        			<li><a href="internet-connecting-wpa-zh.htm#wpa-basic">WiFi－基本配置指南</a></li>
+        			<li><a href="internet-connecting-wpa-zh.htm#wpa">WiFi－wpasupplicant</a></li>
+        			<li><a href="internet-connecting-zh.htm#netcardconfig">上线－Ceni</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 12 );" onmouseout="startTime();"><a href="sys-admin-apt-zh.htm">dist-upgrade and package management</a>
+      			<ul class="sub-menu" id="sm12">
+        			<li><a href="sys-admin-apt-zh.htm#apt-cook">APT指南秘笈与源表</a></li>
+        			<li><a href="sys-admin-apt-zh.htm#apt-install">安装一个新的软件包</a></li>
+        			<li><a href="sys-admin-apt-zh.htm#apt-delete">删除一个软件包</a></li>
+        			<li><a href="sys-admin-apt-zh.htm#apt-downgrade">软件包隔离与降级</a></li>
+        			<li><a href="sys-admin-apt-zh.htm#apt-cache">通过apt-cache搜索软件包</a></li>
+        			<li><a href="sys-admin-apt-zh.htm#gui-pacsea">GUI Package searching</a></li>
+        			<li><a href="siduxcc-zh.htm#hermes">sidux-hermes</a></li>
+        			<li><a href="sys-admin-upgrade-zh.htm#live-cd-upgrade">用Live- ISO 升级</a></li>
+				<li><a href="sys-admin-apt-locarmirr-zh.htm#approx">dist-upgrade of multiple PCs on a LAN</a></li>
+        			<li><a href="sys-admin-kern-upg-zh.htm#kern-upgrade">升级内核</a></li>
+        			<li><a href="sys-admin-apt-zh.htm#apt-upgrade">升级已安装的系统－dist-upgrade - Overview</a></li>
+				<li><a href="sys-admin-apt-zh.htm#du-st">升级已安装的系统－dist-upgrade - The Steps</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 13 );" onmouseout="startTime();"><a href="sys-admin-gen-zh.htm">系统管理</a>
+      			<ul class="sub-menu" id="sm13">
+				<li><a href="hd-install-ezh.htm#adduser">Adding a new user</a></li>
+        			<li><a href="home-zh.htm#home-bu">移动/home</a></li>
+        			<li><a href="siduxcc-zh.htm#siduxcc">sidux控制中心</a></li>
+        			<li><a href="sys-admin-rdiff-zh.htm#rdiff">用rdiff备份</a></li>
+        			<li><a href="sys-admin-rsync-zh.htm#rsync">用rsync备份</a></li>
+        			<li><a href="vir-rkits-zh.htm#virus-rkits">病毒和刨根工具扫描程序</a></li>
+        			<li><a href="sys-admin-gen-zh.htm#start-services">启用／停用服务</a></li>
+        			<li><a href="sys-admin-gen-zh.htm#pw-lost">遗失root用户密码</a></li>
+        			<li><a href="sys-admin-gen-zh.htm#fonts">字体</a></li>
+        			<li><a href="sys-admin-gen-zh.htm#cups">CUPS - Printing System</a></li>
+				<li><a href="sys-admin-gen-zh.htm#sound">Sound Mixers</a></li>
+        			<li><a href="sys-admin-gen-zh.htm#init">sidux运行段位－init</a></li>
+        			<li><a href="sys-admin-grub-bootman2-zh.htm#mbr-grub-boot">MBR覆写引导扇区</a></li>
+        			<li><a href="sys-admin-grub-bootman2-zh.htm#dual-boot">双启动或多启动</a></li>
+        			<li><a href="bios-freedos-zh.htm#bois-prep">通过FreeDOS升级BIOS</a></li>
+        			<li><a href="sys-admin-grub-bootman2-zh.htm#boot-grub-floppy">创建一张引导软盘</a></li>
+        			<li><a href="sys-admin-grub-bootman2-zh.htm#remove-grub">从MBR移除grub</a></li>
+        			<li><a href="sys-admin-grub-bootman2-zh.htm#what-is-grub">Grub引导管理器</a></li>
+      			</ul>
+    		</li>
+  	</ul>
+<!-- menu ends here --> </div>
+<div id="main-page">
+	<div class="divider" id="live-cd-upgrade">
+		<h2 id="top-header">Live-cd upgrade</h2>
+			<p>The facility to "live-cd' upgrade a sidux installation does not exist. Before proceeding with installing sidux <span class="highlight-2">BACK-UP YOUR DATA! including your bookmarks and emails.</span></p>
+
+			 <p class="highlight-3">It is highly recommended that you have a separate data partition. The benefits in terms of disaster recovery, stability of your data are unmeasurable.</p>
+
+			<p>Therefore your $HOME becomes a place where basic application configurations are kept. or to put it another way, a container for applications to store their settings.</p>
+
+			<p class="highlight-2">ALWAYS BACK-UP YOUR DATA including your bookmarks and emails!</p>
+			
+
+	</div>
+	<div class="divider" id="hd-upgrade">
+		<h2>Hard Disk Installed Dist-Upgrade</h2>
+
+						<p>The upgrade of an installed system  is achieved through "dist-upgrade",  to ensure that you have the latest versions of packages and security updates from here on in. It is extremely important to first check which packages will be upgraded:</p>
+
+						<p>With sidux its called 'dist-upgrade' and is done over the net</p>
+
+						<p class="highlight-3"><b>The only supported method to dist-upgrade is as follows:</b></p>
+
+<div class="box block">
+			<div class="highlight-2">NEVER EVER do a dist-upgrade nor upgrade whilst in X<div class="highlight-4"> Always check Current Warnings on the <a href="http://sidux.com">sidux</a> main web site. These warnings are there for a reason because of the nature of unstable and updated on a daily basis.</div>
+<pre>
+## Log out of KDE. 
+## Go to Textmode by doing Ctrl+Alt+F1 
+## logon as root, and then in type:
+init 3 
+apt-get update
+apt-get dist-upgrade
+apt-get clean
+init 5 &amp;&amp; exit 
+</pre>
+			<div class="highlight-2">NEVER DIST-UPGRADE [or UPGRADE] with adept, synaptic or aptitude. <a href="sys-admin-apt-en.htm#apt-upgrade"> Read 'Upgrade of an Installed System'</a></div>
+
+	</div>	
+	</div>
+<div class="spacer02"></div>
+				<h4 class="highlight-3">The Reasons  to use  apt-get for a dist-upgrade</h4>
+
+				<p>Package managers like adept, aptitude, synaptic and kpackage  are not always able to account for the huge amount of changes which happen in Sid (depedency changes, name changes, maintainer script changes, ...). That's not the fault of the developers of those tools though, they write a excellent tools and fabulous for the debian stable branch, they are simply just not suitable for the very special needs of Debian Sid.</p>
+
+				<p>Use whatever you like to search for packages, but stick with apt-get for actually installing/removing/dist-upgrading</p>
+
+				<p>Package managers like adept, aptitude, synaptic and kpackage are at the least, non-deterministic (for complex package selection),  mix that with a quickly moving target like sid and even worse an external  repository of questionable quality (we don't use or recommend those,  but they're a reality on your user systems) and you will be courting disaster. The other item to note is that all of these types of GUI  package managers need to run in init 5, and/or,  in X, and in doing a dist-upgrade in init 5 and/or X , (or even an 'upgrade' which is not recommended), you will end up damaging up your system beyond repair, maybe not today or tomorrow, in time you will.</p>
+
+				<p>apt-get on the other hand strictly does what it is asked to do,  if there is any breakage you can pinpoint and debug/ fix the cause,  if apt-get wants to remove half of the system (due to library transitions) it's the admin's call (that means you) to have at least a serious look.</p>
+
+				<p>This is the reason why debian builds use apt-get, not the other package manager tools.</p>
+
+
+				<div id="rev">Page last revised 27/01/2009 0530hrs UTC </div>
+</div>
+</div>
+</body>
+</html>

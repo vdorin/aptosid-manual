@@ -1,0 +1,322 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>sidux手册－Gparted/KDE Partition Manager</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body id="part">
+<!-- Last translation revision by plmday 12/01/2009 2146 hrs UTC -->
+<div id="menu"> <!-- menu starts here zh lang maintainer plmday-->
+<!--sidux-manual Operating System Manual menu-version-01.96.2009.11.22 -->
+<!-- menu last updated by bluewater 2009.11.22 0500 hrs UTC -->
+	<div id="menu-header">
+	      <a href="http://sidux.com/"><img src="../lib/logos/manual-sidux-logo.png" title="去sidux.com论坛及维基" alt="sidux.com logo" /></a>
+	</div>
+  	<ul id="top-list">
+    		<li><a href="manual-search-zh.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="搜索该指南" alt="Search" />在线－离线搜索</a> </li>
+    		<li><a href="http://manual.sidux.com/meta-manual">Community Software Selections</a></li>
+  	</ul>
+  	<div id="flags-2">
+      			<a href="../flag-index.html"><img src="../lib/logos/sidux-language-64.png" title="选择另一种语言" alt="lang-switch"/></a>
+  	</div>
+  	<ul>
+    		<li  onmouseover="showHide( 1 );" onmouseout="startTime();"><a href="welcome-zh.htm">sidux OS手册</a>
+      			<ul class="sub-menu" id="sm1">
+        			<li><a href="welcome-zh.htm#welcome-gen">sidux OS手册</a></li>
+        			<li><a href="welcome-zh.htm#how-to">如何使用该手册</a></li>
+        			<li><a href="welcome-zh.htm#table-contents">目录</a></li>
+        			<li><a href="help-zh.htm#help-gen">何处获取帮助</a></li>
+        			<li><a href="help-zh.htm#paste">IRC !paste</a></li>
+        			<li><a href="credits-zh.htm#cred-team">功绩簿</a></li>
+        			<li><a href="wel-quickstart-zh.htm#welcome-quick">sidux快速上手指南</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 2 );" onmouseout="startTime();"><a href="cd-dl-burning-zh.htm">ISO Content, Releases, Download Mirrors and Burning</a>
+      			<ul class="sub-menu" id="sm2">
+       			<li><a href="cd-content-zh.htm#cd-content">ISO Content and system requirements</a></li>
+        			<li><a href="sys-admin-release-zh.htm#rolling">滚动升级注意事项</a></li>
+        			<li><a href="cd-dl-burning-zh.htm#download-sidux">sidux镜像，下载及刻录</a></li>
+        			<li><a href="cd-dl-burning-zh.htm#md5">md5校验和</a></li>
+        			<li><a href="cd-dl-burning-zh.htm#burn-nero">Windows下刻录</a></li>
+        			<li><a href="cd-dl-burning-zh.htm#burn-linux">Linux下刻录</a></li>
+       			 	<li><a href="cd-no-gui-burn-zh.htm#burning-no-gui">无GUI刻录</a></li>
+				<li><a href="cd-no-gui-burn-zh.htm#burn-no-gui-gen">Burning without a GUI</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 3 );" onmouseout="startTime();"><a href="live-mode-zh.htm">Live模式</a>
+      			<ul class="sub-menu" id="sm3">
+        			<li><a href="live-mode-zh.htm#rootpw">sidux-Live ISO 上的root用户密码</a></li>
+        			<li><a href="live-mode-zh.htm#live-cd-installsoft">在Live- ISO 运行时安装软件</a></li>
+        			<li><a href="live-mode-zh.htm#ntfs-3g">通过ntfs-3g写NTFS分区</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 4 );" onmouseout="startTime();"><a href="term-konsole-zh.htm">终端／Konsole</a>
+      			<ul class="sub-menu" id="sm4">
+        			<li><a href="term-konsole-zh.htm#sux"> sux / sudo</a></li>
+        			<li><a href="term-konsole-zh.htm#term-kon">终端／Konsole</a></li>
+        			<li><a href="term-konsole-zh.htm#cli-help">命令行帮助</a></li>
+				<li><a href="help-zh.htm#init3-tools">Tools to know in text mode (tty) - init 3</a></li>
+        			<li><a href="term-konsole-zh.htm#term-cmds">Linux终端命令表</a></li>
+        			<li><a href="term-konsole-zh.htm#shell-scripts">安装.sh脚本</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 5 );" onmouseout="startTime();"><a href="cheatcodes-zh.htm">参数</a>
+      			<ul class="sub-menu" id="sm5">
+        			<li><a href="cheatcodes-zh.htm#cheatcodes">sidux特有的Live- ISO 参数</a></li>
+        			<li><a href="cheatcodes-zh.htm#cheatcodes-linux">Linux惯常参数</a></li>
+        			<li><a href="cheatcodes-vga-zh.htm#vga">VGA参数</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 6 );" onmouseout="startTime();"><a href="part-gparted-zh.htm">对你的硬驱进行分区</a>
+      			<ul class="sub-menu" id="sm6">
+        			<li><a href="part-gparted-zh.htm#partition">用GParted对你的HD进行分区</a></li>
+        			<li><a href="part-gparted-zh.htm#ntfs">用GParted调整NTFS分区的大小</a></li>
+        			<li><a href="part-uuid-zh.htm#uuid">UUID, 分区标记及fstab</a></li>
+        			<li><a href="part-cfdisk-zh.htm#disknames">磁盘命名简介</a></li>
+        			<li><a href="part-cfdisk-zh.htm#partition">用cfdisk对你的HD进行分区</a></li>
+        			<li><a href="part-cfdisk-zh.htm#formating">用cfdisk分区后进行格式化</a></li>
+        			<li><a href="part-size-examp-zh.htm#part-example">分区大小实例</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 7 );" onmouseout="startTime();"><a href="hd-install-zh.htm">安装选项</a>
+      			<ul class="sub-menu" id="sm7">
+        			<li><a href="hd-install-zh.htm#Inst-prep">安装准备</a></li>
+        			<li><a href="hd-install-zh.htm#Installation">安装到你的硬盘</a></li>
+        			<li><a href="hd-install-zh.htm#first-hd-boot">第一次启动</a></li>
+        			<li><a href="hd-install-opts-zh.htm#fromiso">利用‘fromiso’参数从ISO文件引导</a></li>
+        			<li><a href="hd-install-opts-zh.htm#fromiso-persist">fromiso与persist</a></li>
+        			<li><a href="hd-install-opts-zh.htm#usb-hd">在移动硬盘上安装</a></li>
+        			<li><a href="hd-install-opts-zh.htm#vtbox">通过VirtualBox安装sidux</a></li>
+        			<li><a href="hd-install-opts-zh.htm#qemu">通过QEMU安装sidux</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 8 );" onmouseout="startTime();"><a href="hw-dev-hw-dri-zh.htm">图形显卡，显示屏， &amp; 驱动器杂烩</a>
+      			<ul class="sub-menu" id="sm8">
+        			<li><a href="hw-dev-hw-dri-zh.htm#hd-ntfs3g">通过ntfs-3g在NTFS分区上执行写操作</a></li>
+        			<li><a href="hw-dev-mon-zh.htm#mon-res">屏幕像素与显示屏</a></li>
+        			<li><a href="hw-dev-mon-zh.htm#xrandr">双显示屏及xrandr</a></li>
+        			<li><a href="hw-dev-mon-zh.htm#mon-binary">双显示屏（用二进制格式的驱动器）</a></li>
+				<li><a href="hw-dev-hw-dri-zh.htm#non-free-3d">Binary, non-free drivers for Nvidia</a></li>
+				<li><a href="hw-dev-hw-dri-zh.htm#non-free-3d-2">non-free drivers for ATI, Radeon and others</a></li>
+				<li><a href="hw-dev-hw-dri-zh.htm#non-free-firmware">Hardware needing non-free firmware drivers</a></li>
+				<li><a href="hw-dev-hw-dri-zh.htm#non-free">Adding non-free to Sources List</a></li>
+				<li><a href="hw-dev-hw-dri-zh.htm#native-nv-ati">FOSS xorg drivers for nVidia, ATI, Radeon, Intel</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 9 );" onmouseout="startTime();"><a href="wm-kde-zh.htm">窗口管理器</a>
+     			 <ul class="sub-menu" id="sm9">
+				<li><a href="wm-xfce-zh.htm#xfce-notes">Useful Xfce extras</a></li>
+				<li><a href="wm-kde-zh.htm#install-add">Useful extra KDE Apps</a></li>
+        			<li><a href="wm-kde-zh.htm#desk-freeze">桌面冻结</a></li>
+        			<li><a href="wm-kde-zh.htm#kde-login">无法登入KDE</a></li>
+        			<li><a href="wm-kde-zh.htm#ch-th">更换主题</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 10 );" onmouseout="startTime();"><a href="lamp-apache-zh.htm">sidux LAMP栈</a>
+      			<ul class="sub-menu" id="sm10">
+        			<li><a href="lamp-apache-zh.htm#serv-apache">sidux LAMP栈</a></li>
+        			<li><a href="lamp-apache-zh.htm#serv-ftp">FTP客户端</a></li>
+        			<li><a href="lamp-apache-zh.htm#serv-sec">安全协议</a></li>
+        			<li><a href="lamp-apache-zh.htm#serv-ssl">SSL</a></li>
+        			<li><a href="lamp-sql-zh.htm#serv-mysql">MySQL配置</a></li>
+        			<li><a href="lamp-ppp-zh.htm#serv-php">Apache里用PHP</a></li>
+        			<li><a href="ntp-server-zh.htm#ntp-server">时钟服务器配置</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 11 );" onmouseout="startTime();"><a href="internet-connecting-zh.htm">因特网及连网</a>
+      			<ul class="sub-menu" id="sm11">
+        			<li><a href="tor-privoxy-zh.htm#tor">Tor</a></li>
+        			<li><a href="tor-privoxy-zh.htm#privoxy">Privoxy</a></li>
+        			<li><a href="internet-connecting-zh.htm#firewalls">防火墙</a></li>
+        			<li><a href="samba-zh.htm#configure">设置SAMBA（Windows）</a></li>
+        			<li><a href="samba-zh.htm#setup">Samba服务器配置</a></li>
+        			<li><a href="ssh-zh.htm#ssh-fs">SSH远程挂载</a></li>
+        			<li><a href="ssh-zh.htm#ssh-x">透过SSH运行X窗口应用程序</a></li>
+        			<li><a href="ssh-zh.htm#ssh-f">通过Konqueror用GUI化的SSH</a></li>
+        			<li><a href="ssh-zh.htm#ssh-w">从Windows-PC通过X转发用SSH</a></li>
+        			<li><a href="ssh-zh.htm#ssh">SSH与安全</a></li>
+        			<li><a href="internet-connecting-zh.htm#dial-mod">56k调制解调器</a></li>
+        			<li><a href="internet-connecting-wpagui-zh.htm#wpa-roaming-gui">WiFi－漫游的WPA-GUI</a></li>
+        			<li><a href="internet-connecting-wpa-zh.htm#wpa-basic">WiFi－基本配置指南</a></li>
+        			<li><a href="internet-connecting-wpa-zh.htm#wpa">WiFi－wpasupplicant</a></li>
+        			<li><a href="internet-connecting-zh.htm#netcardconfig">上线－Ceni</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 12 );" onmouseout="startTime();"><a href="sys-admin-apt-zh.htm">dist-upgrade and package management</a>
+      			<ul class="sub-menu" id="sm12">
+        			<li><a href="sys-admin-apt-zh.htm#apt-cook">APT指南秘笈与源表</a></li>
+        			<li><a href="sys-admin-apt-zh.htm#apt-install">安装一个新的软件包</a></li>
+        			<li><a href="sys-admin-apt-zh.htm#apt-delete">删除一个软件包</a></li>
+        			<li><a href="sys-admin-apt-zh.htm#apt-downgrade">软件包隔离与降级</a></li>
+        			<li><a href="sys-admin-apt-zh.htm#apt-cache">通过apt-cache搜索软件包</a></li>
+        			<li><a href="sys-admin-apt-zh.htm#gui-pacsea">GUI Package searching</a></li>
+        			<li><a href="siduxcc-zh.htm#hermes">sidux-hermes</a></li>
+        			<li><a href="sys-admin-upgrade-zh.htm#live-cd-upgrade">用Live- ISO 升级</a></li>
+				<li><a href="sys-admin-apt-locarmirr-zh.htm#approx">dist-upgrade of multiple PCs on a LAN</a></li>
+        			<li><a href="sys-admin-kern-upg-zh.htm#kern-upgrade">升级内核</a></li>
+        			<li><a href="sys-admin-apt-zh.htm#apt-upgrade">升级已安装的系统－dist-upgrade - Overview</a></li>
+				<li><a href="sys-admin-apt-zh.htm#du-st">升级已安装的系统－dist-upgrade - The Steps</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 13 );" onmouseout="startTime();"><a href="sys-admin-gen-zh.htm">系统管理</a>
+      			<ul class="sub-menu" id="sm13">
+				<li><a href="hd-install-ezh.htm#adduser">Adding a new user</a></li>
+        			<li><a href="home-zh.htm#home-bu">移动/home</a></li>
+        			<li><a href="siduxcc-zh.htm#siduxcc">sidux控制中心</a></li>
+        			<li><a href="sys-admin-rdiff-zh.htm#rdiff">用rdiff备份</a></li>
+        			<li><a href="sys-admin-rsync-zh.htm#rsync">用rsync备份</a></li>
+        			<li><a href="vir-rkits-zh.htm#virus-rkits">病毒和刨根工具扫描程序</a></li>
+        			<li><a href="sys-admin-gen-zh.htm#start-services">启用／停用服务</a></li>
+        			<li><a href="sys-admin-gen-zh.htm#pw-lost">遗失root用户密码</a></li>
+        			<li><a href="sys-admin-gen-zh.htm#fonts">字体</a></li>
+        			<li><a href="sys-admin-gen-zh.htm#cups">CUPS - Printing System</a></li>
+				<li><a href="sys-admin-gen-zh.htm#sound">Sound Mixers</a></li>
+        			<li><a href="sys-admin-gen-zh.htm#init">sidux运行段位－init</a></li>
+        			<li><a href="sys-admin-grub-bootman2-zh.htm#mbr-grub-boot">MBR覆写引导扇区</a></li>
+        			<li><a href="sys-admin-grub-bootman2-zh.htm#dual-boot">双启动或多启动</a></li>
+        			<li><a href="bios-freedos-zh.htm#bois-prep">通过FreeDOS升级BIOS</a></li>
+        			<li><a href="sys-admin-grub-bootman2-zh.htm#boot-grub-floppy">创建一张引导软盘</a></li>
+        			<li><a href="sys-admin-grub-bootman2-zh.htm#remove-grub">从MBR移除grub</a></li>
+        			<li><a href="sys-admin-grub-bootman2-zh.htm#what-is-grub">Grub引导管理器</a></li>
+      			</ul>
+    		</li>
+  	</ul>
+<!-- menu ends here --> </div>
+<div id="main-page">
+	<div class="divider" id="partition">
+		<h2 id="top-header">如何对你的HD进行分区（使用Gparted/KDE Partition Manager）</h2>
+			<h5><span class="highlight-2">警告：关于磁盘命名</span><a href="part-uuid-zh.htm">请参考UUID，分区标记及fstab，因为sidux现在默认采用的是UUID</a></h5>
+
+			<h5>Partitioning tools may request a root password, type <span class="highlight-3">sux</span> then your password. On a Live-ISO none is set <span class="highlight-3">sux</span> then press 'enter' . See: <a href="live-mode-zh.htm#rootpw" >Live Mode</a></h5>
+
+	<div class="spacer02"></div>
+							<p class="warning-box">放缩NTFS分区要求你重启系统！在重启之前不要对这个分区执行任何操作，否则你会得到错误。<a href="part-gparted-zh.htm#ntfs"> Please read this.</a></p>
+
+							<p class="highlight-2">务必备份你的数据！</p>
+		<h3>基础</h3>
+							<p>一个分区必须有一个文件系统。Linux知道使用不同的文件系统。有ReiserFS，Ext4，以及面向有经验的用户的XFS和JFS。Ext2作一存储格式很好，因为一个供数据交换的Windows驱动器是现成的。. <a href="http://www.fs-driver.org/">Ext2 Installable File System For MS Windows</a>.</p>
+
+		<h2>Using KDE Partition Manager &amp; Gparted</h2>
+							<p>Creating and managing partitions is not something that is typically done every day. Therefore, a good idea is to read this guide once, to get comfortable with the concepts and some of the panels that will appear.</p>
+
+						  <h3>KDE Partition Manager - run in a terminal:</h3>
+<pre>
+sux
+partitionmanager
+</pre>
+						  <h3>Gparted - run in a terminal:</h3>
+<pre>
+sux
+gparted
+</pre>
+
+
+		<ul>
+			<li>
+							<p>When GParted or KDE Partition Manager runs , a window is opened, and drives are scanned.</p>
+
+							<p>In KDE Partition Manager the drives are shown in a list on the left.</p>
+
+		<div class="screenshot"><img src="../lib/images-common/images-kpart/kpart-02.png"  title="KDE Partition Manager partition information" alt="KDE Partition Manager partition information" /></div>
+
+							<p>In Gparted, if you click the menu (at the top left), a pop down is presented. You can select to refresh the display of the drives on your system.</p>
+
+
+		<div class="screenshot"><img src="../lib/images-en/gparted-en/gparted-1-main-1a-en.png" alt="gparted" /></div>
+			</li>
+		  </ul>
+						<h6><span class="highlight-2">The following screenshots are of Gparted. KDE Partition Manager behaves in much the same manner.</span></h6>
+		  <ul>
+			<li>
+				<h3>编辑（Edit）</h3>
+							<p>它会打开一个新的窗口，在其上你可以看到支持的文件系统及一些分区编辑选项。??It opens a new window from which you can see the supported file systems and some partition editing options.??</p>
+
+							<p>位于菜单栏从左数的第二个位置上。它显示有两个泛灰的非常有用的功能：撤销，及应用，同时也让你可以访问／检视其他区域。??The menu is second from the left. It shows two greyed out functions which are quite useful: Undo, and Apply and also allows you to access/view other areas.??</p>
+			</li>
+			<li>
+				<h3>检视（View）</h3>
+				<ul>
+					<li>
+						<h4>设备信息</h4>
+							<p><b>硬盘信息</b>条显示有硬盘的细节，比如模型，大小等。这个条在一个多硬盘的系统上很有用，那上面的信息可用以确定考察的确实是想要考察的硬盘。</p>
+					</li>
+					<li>
+						<h4>待定操作</h4>
+							<p>下面的窗口是一个待定操作的列表。这一信息也有用因为它明确地列出了一系列待定操作。</p>
+						<div class="screenshot"><img src="../lib/images-en/gparted-en/gparted-1-main-3c-en.png" alt="operation view" /></div>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<h3>设备（Device）</h3>
+							<p>设备菜单让你可以设定一个磁盘标签。如果你觉得当前的磁盘标签不合适，你可以利用这一选项来作修改。</p>
+			</li>
+			<li>
+				<h3>分区菜单</h3>
+							<p>这个菜单相当重要。它让你可以执行很多操作，包括一些危险操作。</p>
+
+							<p>如果你想删除一个分区，选择<b>删除（Delete）</b>要执行删除操作，你必须先选定分区。</p>
+
+							<p><b>放缩／移动（Resize/Move）</b>是一个拥有的功能。</p>
+
+				<div class="screenshot"><img src="../lib/images-en/gparted-en/gparted-1-main-5a-en.png" alt="partition" /></div>
+			</li>
+			<li>
+				<h3>创建一个新的分区</h3>
+							<p>如果你已经选择了一块未分配的区域，工具栏上的<b>新建（New）</b>按钮让你可以创建一个新的分区。一个新的窗口会出现，让你选择你想要的大小，是否将其作为预选（Primary），拓展（Extended）或逻辑（Logical）分区，以及文件系统。</p>
+				<div class="screenshot"><img src="../lib/images-en/gparted-en/gparted-2-main-1d-en.png" alt="file system" /></div>
+			</li>
+			<li>
+				<h3>如果你失误了</h3>
+							<p>如果你失误了，你可以用那个删除（Delelte）按钮删除选定的分区，或者如果你还没有将你的决定付诸应用，你可以用那个撤消（Undo）按钮。</p>
+				<div class="screenshot"><img src="../lib/images-en/gparted-en/gparted-2-main-2b-en.png" alt="try to delete"/></div>
+			</li>
+			<li>
+				<h3>放缩／移动（Resizing/Move）</h3>
+							<p>如果你想放缩你选定的分区，点击<b>放缩／移动（Resize/Move）</b>按钮：一个新的窗口会弹出来。用鼠标缩减（或增长）分区，或者如果你喜欢，用箭头也行??use the arrows??。</p>
+				<div class="screenshot"><img src="../lib/images-en/gparted-en/gparted-2-main-3-en.png" alt="resize / move" /></div>
+							<p>在放缩命令下达之后，点击应用（Apply），因为在你未点击应用（Apply）之前，没有任何操作施于你的硬盘之上。</p>
+
+							<p>操作时间视乎分区新的的大小而定。</p>
+
+							<p><b>操作了分区表之后请登出sidux并重启你的系统进入sidux以重读新的分区表。</b></p>
+			</li>
+		</ul>
+
+	</div>
+	<div class="divider" id="ntfs">
+		<h2>NTFS分区放缩</h2>
+
+						      <p class="warning-box">放缩NTFS分区要求你重启系统！在重启之前不要对这个分区执行任何操作，否则你会得到错误。</p>
+
+		<ul>
+			<li>启动M$ Windows之后，系统会显示一特殊屏幕，然后一条消息会询问驱动连贯性：检测C：区的文件系统?? the system will show a special screen, and a message
+			asking about drive consistency : Checking file system on c :??</li>
+
+			<li>让自动检测运行：放缩操作之后NT需要检测它的文件系统。Let the AUTOCHK run: NT needs to check its file system
+			after the resize operation.</li>
+
+			<li>过程结束时，计算机会自动进行第二次重启。这是要确保一切运行正常。</li>
+
+			<li>重启之后，Windows XP就没事了，但你必须让系统完成引导并等待登入界面！</li>
+		</ul>
+
+							 <p><b>完整的GParted文档：</b>要阅读完整的文档，包括如何复制分区请往<a href="http://gparted.sourceforge.net">GParted</a></p>
+	</div>
+				<div id="rev">内容最后更改于04/05/2010 0945 UTC</div>
+
+</div>
+</body>
+</html>

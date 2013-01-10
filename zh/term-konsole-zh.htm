@@ -1,0 +1,473 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>sidux手册－终端或Konsole</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision plmday 12/01/2009 2105 hrs UTC -->
+<div id="menu"> <!-- menu starts here zh lang maintainer plmday-->
+<!--sidux-manual Operating System Manual menu-version-01.96.2009.11.22 -->
+<!-- menu last updated by bluewater 2009.11.22 0500 hrs UTC -->
+	<div id="menu-header">
+	      <a href="http://sidux.com/"><img src="../lib/logos/manual-sidux-logo.png" title="去sidux.com论坛及维基" alt="sidux.com logo" /></a>
+	</div>
+  	<ul id="top-list">
+    		<li><a href="manual-search-zh.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="搜索该指南" alt="Search" />在线－离线搜索</a> </li>
+    		<li><a href="http://manual.sidux.com/meta-manual">Community Software Selections</a></li>
+  	</ul>
+  	<div id="flags-2">
+      			<a href="../flag-index.html"><img src="../lib/logos/sidux-language-64.png" title="选择另一种语言" alt="lang-switch"/></a>
+  	</div>
+  	<ul>
+    		<li  onmouseover="showHide( 1 );" onmouseout="startTime();"><a href="welcome-zh.htm">sidux OS手册</a>
+      			<ul class="sub-menu" id="sm1">
+        			<li><a href="welcome-zh.htm#welcome-gen">sidux OS手册</a></li>
+        			<li><a href="welcome-zh.htm#how-to">如何使用该手册</a></li>
+        			<li><a href="welcome-zh.htm#table-contents">目录</a></li>
+        			<li><a href="help-zh.htm#help-gen">何处获取帮助</a></li>
+        			<li><a href="help-zh.htm#paste">IRC !paste</a></li>
+        			<li><a href="credits-zh.htm#cred-team">功绩簿</a></li>
+        			<li><a href="wel-quickstart-zh.htm#welcome-quick">sidux快速上手指南</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 2 );" onmouseout="startTime();"><a href="cd-dl-burning-zh.htm">ISO Content, Releases, Download Mirrors and Burning</a>
+      			<ul class="sub-menu" id="sm2">
+       			<li><a href="cd-content-zh.htm#cd-content">ISO Content and system requirements</a></li>
+        			<li><a href="sys-admin-release-zh.htm#rolling">滚动升级注意事项</a></li>
+        			<li><a href="cd-dl-burning-zh.htm#download-sidux">sidux镜像，下载及刻录</a></li>
+        			<li><a href="cd-dl-burning-zh.htm#md5">md5校验和</a></li>
+        			<li><a href="cd-dl-burning-zh.htm#burn-nero">Windows下刻录</a></li>
+        			<li><a href="cd-dl-burning-zh.htm#burn-linux">Linux下刻录</a></li>
+       			 	<li><a href="cd-no-gui-burn-zh.htm#burning-no-gui">无GUI刻录</a></li>
+				<li><a href="cd-no-gui-burn-zh.htm#burn-no-gui-gen">Burning without a GUI</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 3 );" onmouseout="startTime();"><a href="live-mode-zh.htm">Live模式</a>
+      			<ul class="sub-menu" id="sm3">
+        			<li><a href="live-mode-zh.htm#rootpw">sidux-Live ISO 上的root用户密码</a></li>
+        			<li><a href="live-mode-zh.htm#live-cd-installsoft">在Live- ISO 运行时安装软件</a></li>
+        			<li><a href="live-mode-zh.htm#ntfs-3g">通过ntfs-3g写NTFS分区</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 4 );" onmouseout="startTime();"><a href="term-konsole-zh.htm">终端／Konsole</a>
+      			<ul class="sub-menu" id="sm4">
+        			<li><a href="term-konsole-zh.htm#sux"> sux / sudo</a></li>
+        			<li><a href="term-konsole-zh.htm#term-kon">终端／Konsole</a></li>
+        			<li><a href="term-konsole-zh.htm#cli-help">命令行帮助</a></li>
+				<li><a href="help-zh.htm#init3-tools">Tools to know in text mode (tty) - init 3</a></li>
+        			<li><a href="term-konsole-zh.htm#term-cmds">Linux终端命令表</a></li>
+        			<li><a href="term-konsole-zh.htm#shell-scripts">安装.sh脚本</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 5 );" onmouseout="startTime();"><a href="cheatcodes-zh.htm">参数</a>
+      			<ul class="sub-menu" id="sm5">
+        			<li><a href="cheatcodes-zh.htm#cheatcodes">sidux特有的Live- ISO 参数</a></li>
+        			<li><a href="cheatcodes-zh.htm#cheatcodes-linux">Linux惯常参数</a></li>
+        			<li><a href="cheatcodes-vga-zh.htm#vga">VGA参数</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 6 );" onmouseout="startTime();"><a href="part-gparted-zh.htm">对你的硬驱进行分区</a>
+      			<ul class="sub-menu" id="sm6">
+        			<li><a href="part-gparted-zh.htm#partition">用GParted对你的HD进行分区</a></li>
+        			<li><a href="part-gparted-zh.htm#ntfs">用GParted调整NTFS分区的大小</a></li>
+        			<li><a href="part-uuid-zh.htm#uuid">UUID, 分区标记及fstab</a></li>
+        			<li><a href="part-cfdisk-zh.htm#disknames">磁盘命名简介</a></li>
+        			<li><a href="part-cfdisk-zh.htm#partition">用cfdisk对你的HD进行分区</a></li>
+        			<li><a href="part-cfdisk-zh.htm#formating">用cfdisk分区后进行格式化</a></li>
+        			<li><a href="part-size-examp-zh.htm#part-example">分区大小实例</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 7 );" onmouseout="startTime();"><a href="hd-install-zh.htm">安装选项</a>
+      			<ul class="sub-menu" id="sm7">
+        			<li><a href="hd-install-zh.htm#Inst-prep">安装准备</a></li>
+        			<li><a href="hd-install-zh.htm#Installation">安装到你的硬盘</a></li>
+        			<li><a href="hd-install-zh.htm#first-hd-boot">第一次启动</a></li>
+        			<li><a href="hd-install-opts-zh.htm#fromiso">利用‘fromiso’参数从ISO文件引导</a></li>
+        			<li><a href="hd-install-opts-zh.htm#fromiso-persist">fromiso与persist</a></li>
+        			<li><a href="hd-install-opts-zh.htm#usb-hd">在移动硬盘上安装</a></li>
+        			<li><a href="hd-install-opts-zh.htm#vtbox">通过VirtualBox安装sidux</a></li>
+        			<li><a href="hd-install-opts-zh.htm#qemu">通过QEMU安装sidux</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 8 );" onmouseout="startTime();"><a href="hw-dev-hw-dri-zh.htm">图形显卡，显示屏， &amp; 驱动器杂烩</a>
+      			<ul class="sub-menu" id="sm8">
+        			<li><a href="hw-dev-hw-dri-zh.htm#hd-ntfs3g">通过ntfs-3g在NTFS分区上执行写操作</a></li>
+        			<li><a href="hw-dev-mon-zh.htm#mon-res">屏幕像素与显示屏</a></li>
+        			<li><a href="hw-dev-mon-zh.htm#xrandr">双显示屏及xrandr</a></li>
+        			<li><a href="hw-dev-mon-zh.htm#mon-binary">双显示屏（用二进制格式的驱动器）</a></li>
+				<li><a href="hw-dev-hw-dri-zh.htm#non-free-3d">Binary, non-free drivers for Nvidia</a></li>
+				<li><a href="hw-dev-hw-dri-zh.htm#non-free-3d-2">non-free drivers for ATI, Radeon and others</a></li>
+				<li><a href="hw-dev-hw-dri-zh.htm#non-free-firmware">Hardware needing non-free firmware drivers</a></li>
+				<li><a href="hw-dev-hw-dri-zh.htm#non-free">Adding non-free to Sources List</a></li>
+				<li><a href="hw-dev-hw-dri-zh.htm#native-nv-ati">FOSS xorg drivers for nVidia, ATI, Radeon, Intel</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 9 );" onmouseout="startTime();"><a href="wm-kde-zh.htm">窗口管理器</a>
+     			 <ul class="sub-menu" id="sm9">
+				<li><a href="wm-xfce-zh.htm#xfce-notes">Useful Xfce extras</a></li>
+				<li><a href="wm-kde-zh.htm#install-add">Useful extra KDE Apps</a></li>
+        			<li><a href="wm-kde-zh.htm#desk-freeze">桌面冻结</a></li>
+        			<li><a href="wm-kde-zh.htm#kde-login">无法登入KDE</a></li>
+        			<li><a href="wm-kde-zh.htm#ch-th">更换主题</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 10 );" onmouseout="startTime();"><a href="lamp-apache-zh.htm">sidux LAMP栈</a>
+      			<ul class="sub-menu" id="sm10">
+        			<li><a href="lamp-apache-zh.htm#serv-apache">sidux LAMP栈</a></li>
+        			<li><a href="lamp-apache-zh.htm#serv-ftp">FTP客户端</a></li>
+        			<li><a href="lamp-apache-zh.htm#serv-sec">安全协议</a></li>
+        			<li><a href="lamp-apache-zh.htm#serv-ssl">SSL</a></li>
+        			<li><a href="lamp-sql-zh.htm#serv-mysql">MySQL配置</a></li>
+        			<li><a href="lamp-ppp-zh.htm#serv-php">Apache里用PHP</a></li>
+        			<li><a href="ntp-server-zh.htm#ntp-server">时钟服务器配置</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 11 );" onmouseout="startTime();"><a href="internet-connecting-zh.htm">因特网及连网</a>
+      			<ul class="sub-menu" id="sm11">
+        			<li><a href="tor-privoxy-zh.htm#tor">Tor</a></li>
+        			<li><a href="tor-privoxy-zh.htm#privoxy">Privoxy</a></li>
+        			<li><a href="internet-connecting-zh.htm#firewalls">防火墙</a></li>
+        			<li><a href="samba-zh.htm#configure">设置SAMBA（Windows）</a></li>
+        			<li><a href="samba-zh.htm#setup">Samba服务器配置</a></li>
+        			<li><a href="ssh-zh.htm#ssh-fs">SSH远程挂载</a></li>
+        			<li><a href="ssh-zh.htm#ssh-x">透过SSH运行X窗口应用程序</a></li>
+        			<li><a href="ssh-zh.htm#ssh-f">通过Konqueror用GUI化的SSH</a></li>
+        			<li><a href="ssh-zh.htm#ssh-w">从Windows-PC通过X转发用SSH</a></li>
+        			<li><a href="ssh-zh.htm#ssh">SSH与安全</a></li>
+        			<li><a href="internet-connecting-zh.htm#dial-mod">56k调制解调器</a></li>
+        			<li><a href="internet-connecting-wpagui-zh.htm#wpa-roaming-gui">WiFi－漫游的WPA-GUI</a></li>
+        			<li><a href="internet-connecting-wpa-zh.htm#wpa-basic">WiFi－基本配置指南</a></li>
+        			<li><a href="internet-connecting-wpa-zh.htm#wpa">WiFi－wpasupplicant</a></li>
+        			<li><a href="internet-connecting-zh.htm#netcardconfig">上线－Ceni</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 12 );" onmouseout="startTime();"><a href="sys-admin-apt-zh.htm">dist-upgrade and package management</a>
+      			<ul class="sub-menu" id="sm12">
+        			<li><a href="sys-admin-apt-zh.htm#apt-cook">APT指南秘笈与源表</a></li>
+        			<li><a href="sys-admin-apt-zh.htm#apt-install">安装一个新的软件包</a></li>
+        			<li><a href="sys-admin-apt-zh.htm#apt-delete">删除一个软件包</a></li>
+        			<li><a href="sys-admin-apt-zh.htm#apt-downgrade">软件包隔离与降级</a></li>
+        			<li><a href="sys-admin-apt-zh.htm#apt-cache">通过apt-cache搜索软件包</a></li>
+        			<li><a href="sys-admin-apt-zh.htm#gui-pacsea">GUI Package searching</a></li>
+        			<li><a href="siduxcc-zh.htm#hermes">sidux-hermes</a></li>
+        			<li><a href="sys-admin-upgrade-zh.htm#live-cd-upgrade">用Live- ISO 升级</a></li>
+				<li><a href="sys-admin-apt-locarmirr-zh.htm#approx">dist-upgrade of multiple PCs on a LAN</a></li>
+        			<li><a href="sys-admin-kern-upg-zh.htm#kern-upgrade">升级内核</a></li>
+        			<li><a href="sys-admin-apt-zh.htm#apt-upgrade">升级已安装的系统－dist-upgrade - Overview</a></li>
+				<li><a href="sys-admin-apt-zh.htm#du-st">升级已安装的系统－dist-upgrade - The Steps</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 13 );" onmouseout="startTime();"><a href="sys-admin-gen-zh.htm">系统管理</a>
+      			<ul class="sub-menu" id="sm13">
+				<li><a href="hd-install-ezh.htm#adduser">Adding a new user</a></li>
+        			<li><a href="home-zh.htm#home-bu">移动/home</a></li>
+        			<li><a href="siduxcc-zh.htm#siduxcc">sidux控制中心</a></li>
+        			<li><a href="sys-admin-rdiff-zh.htm#rdiff">用rdiff备份</a></li>
+        			<li><a href="sys-admin-rsync-zh.htm#rsync">用rsync备份</a></li>
+        			<li><a href="vir-rkits-zh.htm#virus-rkits">病毒和刨根工具扫描程序</a></li>
+        			<li><a href="sys-admin-gen-zh.htm#start-services">启用／停用服务</a></li>
+        			<li><a href="sys-admin-gen-zh.htm#pw-lost">遗失root用户密码</a></li>
+        			<li><a href="sys-admin-gen-zh.htm#fonts">字体</a></li>
+        			<li><a href="sys-admin-gen-zh.htm#cups">CUPS - Printing System</a></li>
+				<li><a href="sys-admin-gen-zh.htm#sound">Sound Mixers</a></li>
+        			<li><a href="sys-admin-gen-zh.htm#init">sidux运行段位－init</a></li>
+        			<li><a href="sys-admin-grub-bootman2-zh.htm#mbr-grub-boot">MBR覆写引导扇区</a></li>
+        			<li><a href="sys-admin-grub-bootman2-zh.htm#dual-boot">双启动或多启动</a></li>
+        			<li><a href="bios-freedos-zh.htm#bois-prep">通过FreeDOS升级BIOS</a></li>
+        			<li><a href="sys-admin-grub-bootman2-zh.htm#boot-grub-floppy">创建一张引导软盘</a></li>
+        			<li><a href="sys-admin-grub-bootman2-zh.htm#remove-grub">从MBR移除grub</a></li>
+        			<li><a href="sys-admin-grub-bootman2-zh.htm#what-is-grub">Grub引导管理器</a></li>
+      			</ul>
+    		</li>
+  	</ul>
+<!-- menu ends here --> </div>
+<div id="main-page">
+	<div class="divider" id="term-kon">
+		<h2 id="top-header">终端／konsole的定义</h2>
+
+							<p>终端，亦称控制台，KDE里面又叫konsole，是一个程序，它使用户得以通过发出各种随即便被执行的命令与Linux操作系统直接进行交互。也常称作<span class="highlight-3">‘shell’或‘命令行’</span>。终端是一个非常强大的工具，值得在其上花些功夫，以对其使用能有一些基本的理解。</p>
+
+							<p>在sidux里，你可以在靠近K菜单的地方找到终端／konsole，它以一个PC显示屏标志。有赖你的主题，它可能包含也可能不包含一个shell的图片。你也可以在K菜单里的“系统”下找到相同的图标。 </p>
+
+							<p>当你打开一个终端窗口，会有如下格式的终端提示出现：</p>
+
+<pre>
+用户名@主机名:~$
+</pre>
+
+							<p>你应该辨别得出用户名即为你的登入名。那个<span class="highlight-3">~ (波浪字符)</span>显示你在你的home目录下同时也<span class="highlight-3">$</span>显示你以普通用户特权登入。最后是光标。这就是你将要敲入你想要执行的命令的命令行。</p>
+
+							<p>很多命令需要root用户特权来运行。要办到的话你在提示下键入：<span class="highlight-3">sux</span>然后按回车。你将会被要求提供你的root用户密码。键入你的密码之后再敲击回车（注意当你键入你的密码的时候，屏幕上不会有任何东西显示）。</p>
+
+							<p>如果你的密码正确，提示会变为：</p>
+
+<pre>
+root@主机名:/home/用户名#
+</pre>
+
+							<p class="highlight-2">警告：当你以root用户身份等入后，系统完全不会阻止你做某些具有潜在危险性的事情，像删除一些重要文件等，你要绝对清楚你在做什么，因为它极有可能严重损害你的系统。</p>
+
+							<p>注意到<span class="highlight-3">$</span>符号已经变成了一个<span class="highlight-3">#</span>（井字符）。在终端／konsole，<span class="highlight-3">#</span>总是表示你以带root用户特权的身份登入。<span class="highlight-3">在本手册中，我们会省略掉$或#前面的所有东西。因此如下的命令：</span></p>
+
+<pre>
+# apt-get install something
+</pre>
+
+							<p>意为：打开一个终端，成为root用户（sux）然后在#提示下敲入命令。<span class="highlight-4">（别键入#）</span></p>
+
+							<p>有时konsole与／或终端可能出现花屏，这时键入：</p>
+<pre>
+reset
+</pre>
+							<p>然后敲击回车键。</p>
+
+							<p>如果konsole与／或终端的输出发生了变形，往往你可以按下<span class="highlight-3">ctrl+l</span>来解决这个问题，它会重显示终端窗口。这中变形多数情况下都发生在使用那类用到ncurses界面的程序时，比如irssi。</p>
+
+							<p>konsole与／或终端偶尔可能也会冻结，然而，它没有，任何你键入的东西依然会被处理。这可能因不小心按下了<span class="highlight-3">ctrl+s</span>而引起。在这种情况下，尝试<span class="highlight-3">ctrl+q</span>来为终端解锁。</p>
+
+	</div>
+	<div class="divider" id="colours">
+				    <h3><span class="highlight-4">Coloured terminal</span> <span class="highlight-5">user:~</span><span class="highlight-1">$ </span> and <span class="highlight-2">root:</span><span class="highlight-1"># </span> <span class="highlight-3"> prompts:</span></h3>
+
+							<p>Coloured terminal prompts could save you from making an embarrassing and a possibly catastrophic mistake while as <span class="highlight-2">root # </span> when you really wanted to be as <span class="highlight-5">user~$</span>, or to use prompt colours as a marker to commands you executed a few 100 lines ago.</p>
+
+							<p>By default, both user~$ and root# prompts are the same colour and it is really easy to change the colours for both accounts.</p>
+
+							<p>The basic colours are:</p>
+<pre>
+(the syntax is 00;XX)
+[00;30] Black
+[00;31] Red
+[00;32] Green
+[00;33] Yellow
+[00;34] Blue
+[00;35] Magenta
+[00;36] Cyan
+[00;37] White
+[Replace [00;XX] with [01;XX] to get a colour variation].
+</pre>
+				<h6>To change your username ~$ prompt colour:</h6>
+							<p>As $ user, with your favourite text editor:</p>
+<pre>
+$ &lt;editor&gt; ~/.bashrc
+</pre>
+							<p>Go to line 39 and uncomment it, thus:</p>
+<pre>
+force_color_prompt=yes
+</pre>
+							<p>Go to line 53 and where it has 01;32m, (for example), change it to a colour that suits you.</p>
+
+							<p>As an example, for a <span class="highlight-5"> cyan </span> coloured user~:$ prompt, [01;36m\], you will need to change the code [01;XXm\] in 3 places within the syntax:</p>
+<pre>
+PS1='${debian_chroot:+($debian_chroot)}\[\033[01;36m\]\u@\h\[\033[01;36m\]:\[\033[01;36m\]\w\[\033[00m\]\$ '
+</pre>
+							<p>The new look will only appear in new terminal sessions.</p>
+
+				<h6>To change your root# prompt colour:</h6>
+<pre>
+sux
+&lt;editor&gt; /root/.bashrc
+</pre>
+							<p>Go to line 39 and uncomment it, thus:</p>
+<pre>
+force_color_prompt=yes
+</pre>
+							<p>Go to line 53 and where it has 01;32m, (for example), change it to a colour that suits you.</p>
+
+							<p>As an example, for a <span class="highlight-2"> red </span> coloured root:# prompt, [01;31m\], you will need to change the code [01;XXm\] in 3 places within the syntax:</p>
+<pre>
+PS1='${debian_chroot:+($debian_chroot)}\[\033[01;31m\]\u@\h\[\033[01;31m\]:\[\033[01;31m\]\w\[\033[00m\]\$ '
+</pre>
+							<p>The new look will only appear in new terminal sessions.</p>
+
+					    <h6>Terminal background colours</h6>
+							<p>To change the background colour and font options of the terminal, look at the menu options of the terminal. </p>
+
+
+		<div class="screenshot"><img src="../lib/images-common/images-terminal/terminal-colour-0.1.png" title="Terminal colours" alt="Terminal colours" /></div>
+
+							<p>There are a plethora of options available for changing colours, however the recommendation is to keep it simple.</p>
+	</div>
+	<div class="divider" id="sux">
+	<h2>关于sux</h2>
+							<p>不少命令都需要root用户特权来运行。要办到的话你键入：</p>
+<pre>
+sux
+</pre>
+
+							<p>尽管变身root用户的一般命令是‘su’，代之用<span class="highlight-3">sux</span>让你可以从命令行运行GUI／X11应用，让root用户可以开启图形应用，因为<span class="highlight-3">sux</span>是标准su命令的一个包装，它将你的X身份证明转嫁到目标用户身上。 (See also <a href="#sudo"> sudo</a>).</p>
+
+							<p>一个通过sux运行X11应用的例子为用文本编辑器kwrite或kate编辑一个属于root用户的文件，或者用gparted分区，亦或用一个属于X应用的文件管理器，像dolphin or thunar。<!--你也可以这样来修改一个属于root用户的文件，用鼠标右键点击文件，选择‘以root用户身份编辑’，然后敲入你的root用户密码。这会在后台调用kdesu。--></p>
+
+							<p>Some KDE applications require <span class="highlight-3">dbus-launch</span> in front of the application:</p>
+<pre>
+dbus-launch &lt;Application&gt;
+</pre>
+
+				<h6>KDE keyboard options</h6>
+							<p>To start krunner in KDE:</p>
+<pre>
+Alt+F2
+</pre>
+							<p>or right-click on the desktop and choose:</p>
+<pre>
+Run Command
+</pre>
+							 <p>then:</p>
+
+<pre>
+kdesu &lt;Application&gt;
+</pre>
+
+				<h6>Xfce keyboard options</h6>
+							<p>To start Run Command in Xfce:</p>
+<pre>
+Alt+F2
+</pre>
+							<p>or right-click on the desktop and choose:</p>
+<pre>
+Run Command
+</pre>
+							 <p>then:</p>
+
+<pre>
+gksu &lt;Application&gt;
+</pre>
+
+					  <h6>Other Desktop WIndow Manager options</h6>
+							<p>Another keyboard option also generic to all major Desktop Managers is:</p>
+<pre>
+Alt+F2
+</pre>
+							<p>then:</p>
+<pre>
+su-to-root -X -c &lt;Application&gt;
+</pre>
+							<p><span class="highlight-3">All of the above keyboard options can be run in a terminal.</span></p>
+	</div>
+	<div class="divider" id="sudo">
+					<h2>sudo is not supported</h2>
+							<p>sudo is not enabled by default on installation to hard disk. It is available for use on a live-ISO since no root password is preset. The reasoning behind this is so that if an attacker gets hold of the users password, they do not immediately get full super-user priviledges and make potentially damaging changes to your system.</p>
+
+							<p>Another issue with sudo is that it leads to running a root application with a users configuration, which may override or change permissions. In some cases, this can subsequently make an application unusable for the user. Use <span class="highlight-3"><a href="#sux">sux</a>, kdesu, gksu or su-to-root -X -c</span> as recommended!</p>
+
+					  <h2>Being in root</h2>
+
+							<p class="highlight-2">警告：当你以root用户身份等入后，系统完全不会阻止你做某些具有潜在危险性的事情，像删除一些重要文件等，你要绝对清楚你在做什么，因为它极有可能严重损害你的系统。</p>
+
+							<p class="highlight-2">在任何情况下，你都不该在控制台／终端以root用户身份运行那类普通用户用以处理日常事务的应用，像发送电子邮件，创建报表或因特网冲浪等。</p>
+
+
+	</div>
+	<div class="divider" id="cli-help">
+		<h2>命令行帮助</h2>
+
+							<p>没错，确实有。大多数Linux命令／程序都自带了它自己的手册，叫做一个“man页（man page）”或“手册页（manual page）”，可以从命令行阅览。 语法是：</p>
+
+<pre>
+$ man 命令名
+</pre>
+							<p>or</p>
+<pre>
+$ man -k &lt;keyword&gt;
+</pre>
+
+							<p>这会调出那个命令的手册页。用光标键上下移动来浏览页面。试一个例子：</p>
+
+<pre>
+$ man apt-get
+</pre>
+							<p>要退出man页键入<span class="highlight-3">q</span>以放弃（quit）。</p>
+
+							<p>另一个有用的工具就是“apropos”命令。Apropos基本上就是让你能搜索一个命令的man页，如果你，比如不记得完整的语法了。作为一个例子，你可以试一下：</p>
+
+<pre>
+$ apropos apt-
+</pre>
+
+							<p>这会列出软件包管理器‘apt’的所有命令。‘apropos’是一个相当强大的工具，然而对它进行详细地阐述已经超出了本手册的范围。要了解它的用法的细节，参见它的man页。</p>
+
+
+
+	</div>
+	<div class="divider" id="term-cmds">
+		<h2>终端命令列表（摘录）</h2>
+
+							<p>这是<a href="http://linuxcommand.org/">来自linuxcommand.org</a>的一个极好的BASH使用入门。</p>
+
+							<p class="highlight-3">这里还有一份来自<a href="http://www.linuxdevcenter.com/linux/cmd/#a">Linux in a Nutshell，第5版：O'Reilly出版社</a>的罗列了687个命令的大全，它可是一‘必备的书签’。</p>
+
+							<p>因特网上也有不少指导。一个非常好的针对初学者的是：<a href="http://linux.org.mt/article/terminal">初学者的Bash</a></p>
+
+							<p>或者用你最喜欢的搜索引擎寻找更多。</p>
+
+	</div>
+	<div class="divider" id="shell-scripts">
+		<h2>脚本及如何使用</h2>
+
+							<p>一个shell脚本是将多条命集成在一个文件中的一种便捷方式。只要敲入脚本的文件名，每一条命令就会依次执行。sidux自带了一些有用的脚本，以便让用户的省事省心。</p>
+
+							<p>如果shell脚本在你当前工作的目录下</p>
+<pre>
+./shell脚本名
+</pre>
+
+							<p class="highlight-3">在终端，某些脚本需要root用户访问权（sux），其他则不需要，这完全依脚本的目的而定。</p>
+
+			<h5>脚本安装及执行过程</h5>
+   							<p>用wget下载脚本文件，把它置于推荐置放的地方<span class="highlight-3">（比如可能要求你把它放到/usr/local/bin下）</span>，在用<span class="highlight-3">sux</span>登入后，你可以用你的鼠标直接复制文件名粘贴至你的konsole窗口。</p>
+
+					<h6>使用wget需要<span class="highlight-3">root用户访问权（sux）</span>的例子</h6>
+<pre>
+sux
+cd /usr/local/bin
+wget 脚本名
+</pre>
+							<p>然后你需要让文件可执行</p>
+<pre>
+chmod +x 脚本名
+</pre>
+							<p>你也可以用浏览器下载脚本文件，然后把它置于推荐置放的地方，不过你仍然需要让它可执行。</p>
+
+					<h6>以普通用户身份使用wget的例子</h6>
+							<p>要放一个文件在你<span class="highlight-3">作为一个普通用户‘$’的$HOME</span>：</p>
+<pre>
+$ wget http://bluewater.sidux.com/shell-script-test/test-script.sh
+</pre>
+
+<pre>
+$ chmod +x test-script.sh
+</pre>
+							<p>要运行一个脚本，打开终端／konsole，运行脚本名：</p>
+
+<pre>
+$ ./test-script.sh
+</pre>
+							<p>然后你应该会看到这些：</p>
+<pre>
+Congratulations user
+You successfully downloaded and executed a bash script!
+Welcome to sidux-manuals http://manual.sidux.com
+</pre>
+［译注：返回信息的大意是“祝贺你用户 你已经成功下载并执行了一个bash脚本！欢迎来到sidux手册 http://manual.sidux.com”]
+
+	</div>
+
+	<div id="rev">页面最后更改于15/02/2010 0150 UTC</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>sidux手册－UUID</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision by plmday 12/01/2009 2150 hrs UTC -->
+<div id="menu"> <!-- menu starts here zh lang maintainer plmday-->
+<!--sidux-manual Operating System Manual menu-version-01.96.2009.11.22 -->
+<!-- menu last updated by bluewater 2009.11.22 0500 hrs UTC -->
+	<div id="menu-header">
+	      <a href="http://sidux.com/"><img src="../lib/logos/manual-sidux-logo.png" title="去sidux.com论坛及维基" alt="sidux.com logo" /></a>
+	</div>
+  	<ul id="top-list">
+    		<li><a href="manual-search-zh.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="搜索该指南" alt="Search" />在线－离线搜索</a> </li>
+    		<li><a href="http://manual.sidux.com/meta-manual">Community Software Selections</a></li>
+  	</ul>
+  	<div id="flags-2">
+      			<a href="../flag-index.html"><img src="../lib/logos/sidux-language-64.png" title="选择另一种语言" alt="lang-switch"/></a>
+  	</div>
+  	<ul>
+    		<li  onmouseover="showHide( 1 );" onmouseout="startTime();"><a href="welcome-zh.htm">sidux OS手册</a>
+      			<ul class="sub-menu" id="sm1">
+        			<li><a href="welcome-zh.htm#welcome-gen">sidux OS手册</a></li>
+        			<li><a href="welcome-zh.htm#how-to">如何使用该手册</a></li>
+        			<li><a href="welcome-zh.htm#table-contents">目录</a></li>
+        			<li><a href="help-zh.htm#help-gen">何处获取帮助</a></li>
+        			<li><a href="help-zh.htm#paste">IRC !paste</a></li>
+        			<li><a href="credits-zh.htm#cred-team">功绩簿</a></li>
+        			<li><a href="wel-quickstart-zh.htm#welcome-quick">sidux快速上手指南</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 2 );" onmouseout="startTime();"><a href="cd-dl-burning-zh.htm">ISO Content, Releases, Download Mirrors and Burning</a>
+      			<ul class="sub-menu" id="sm2">
+       			<li><a href="cd-content-zh.htm#cd-content">ISO Content and system requirements</a></li>
+        			<li><a href="sys-admin-release-zh.htm#rolling">滚动升级注意事项</a></li>
+        			<li><a href="cd-dl-burning-zh.htm#download-sidux">sidux镜像，下载及刻录</a></li>
+        			<li><a href="cd-dl-burning-zh.htm#md5">md5校验和</a></li>
+        			<li><a href="cd-dl-burning-zh.htm#burn-nero">Windows下刻录</a></li>
+        			<li><a href="cd-dl-burning-zh.htm#burn-linux">Linux下刻录</a></li>
+       			 	<li><a href="cd-no-gui-burn-zh.htm#burning-no-gui">无GUI刻录</a></li>
+				<li><a href="cd-no-gui-burn-zh.htm#burn-no-gui-gen">Burning without a GUI</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 3 );" onmouseout="startTime();"><a href="live-mode-zh.htm">Live模式</a>
+      			<ul class="sub-menu" id="sm3">
+        			<li><a href="live-mode-zh.htm#rootpw">sidux-Live ISO 上的root用户密码</a></li>
+        			<li><a href="live-mode-zh.htm#live-cd-installsoft">在Live- ISO 运行时安装软件</a></li>
+        			<li><a href="live-mode-zh.htm#ntfs-3g">通过ntfs-3g写NTFS分区</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 4 );" onmouseout="startTime();"><a href="term-konsole-zh.htm">终端／Konsole</a>
+      			<ul class="sub-menu" id="sm4">
+        			<li><a href="term-konsole-zh.htm#sux"> sux / sudo</a></li>
+        			<li><a href="term-konsole-zh.htm#term-kon">终端／Konsole</a></li>
+        			<li><a href="term-konsole-zh.htm#cli-help">命令行帮助</a></li>
+				<li><a href="help-zh.htm#init3-tools">Tools to know in text mode (tty) - init 3</a></li>
+        			<li><a href="term-konsole-zh.htm#term-cmds">Linux终端命令表</a></li>
+        			<li><a href="term-konsole-zh.htm#shell-scripts">安装.sh脚本</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 5 );" onmouseout="startTime();"><a href="cheatcodes-zh.htm">参数</a>
+      			<ul class="sub-menu" id="sm5">
+        			<li><a href="cheatcodes-zh.htm#cheatcodes">sidux特有的Live- ISO 参数</a></li>
+        			<li><a href="cheatcodes-zh.htm#cheatcodes-linux">Linux惯常参数</a></li>
+        			<li><a href="cheatcodes-vga-zh.htm#vga">VGA参数</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 6 );" onmouseout="startTime();"><a href="part-gparted-zh.htm">对你的硬驱进行分区</a>
+      			<ul class="sub-menu" id="sm6">
+        			<li><a href="part-gparted-zh.htm#partition">用GParted对你的HD进行分区</a></li>
+        			<li><a href="part-gparted-zh.htm#ntfs">用GParted调整NTFS分区的大小</a></li>
+        			<li><a href="part-uuid-zh.htm#uuid">UUID, 分区标记及fstab</a></li>
+        			<li><a href="part-cfdisk-zh.htm#disknames">磁盘命名简介</a></li>
+        			<li><a href="part-cfdisk-zh.htm#partition">用cfdisk对你的HD进行分区</a></li>
+        			<li><a href="part-cfdisk-zh.htm#formating">用cfdisk分区后进行格式化</a></li>
+        			<li><a href="part-size-examp-zh.htm#part-example">分区大小实例</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 7 );" onmouseout="startTime();"><a href="hd-install-zh.htm">安装选项</a>
+      			<ul class="sub-menu" id="sm7">
+        			<li><a href="hd-install-zh.htm#Inst-prep">安装准备</a></li>
+        			<li><a href="hd-install-zh.htm#Installation">安装到你的硬盘</a></li>
+        			<li><a href="hd-install-zh.htm#first-hd-boot">第一次启动</a></li>
+        			<li><a href="hd-install-opts-zh.htm#fromiso">利用‘fromiso’参数从ISO文件引导</a></li>
+        			<li><a href="hd-install-opts-zh.htm#fromiso-persist">fromiso与persist</a></li>
+        			<li><a href="hd-install-opts-zh.htm#usb-hd">在移动硬盘上安装</a></li>
+        			<li><a href="hd-install-opts-zh.htm#vtbox">通过VirtualBox安装sidux</a></li>
+        			<li><a href="hd-install-opts-zh.htm#qemu">通过QEMU安装sidux</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 8 );" onmouseout="startTime();"><a href="hw-dev-hw-dri-zh.htm">图形显卡，显示屏， &amp; 驱动器杂烩</a>
+      			<ul class="sub-menu" id="sm8">
+        			<li><a href="hw-dev-hw-dri-zh.htm#hd-ntfs3g">通过ntfs-3g在NTFS分区上执行写操作</a></li>
+        			<li><a href="hw-dev-mon-zh.htm#mon-res">屏幕像素与显示屏</a></li>
+        			<li><a href="hw-dev-mon-zh.htm#xrandr">双显示屏及xrandr</a></li>
+        			<li><a href="hw-dev-mon-zh.htm#mon-binary">双显示屏（用二进制格式的驱动器）</a></li>
+				<li><a href="hw-dev-hw-dri-zh.htm#non-free-3d">Binary, non-free drivers for Nvidia</a></li>
+				<li><a href="hw-dev-hw-dri-zh.htm#non-free-3d-2">non-free drivers for ATI, Radeon and others</a></li>
+				<li><a href="hw-dev-hw-dri-zh.htm#non-free-firmware">Hardware needing non-free firmware drivers</a></li>
+				<li><a href="hw-dev-hw-dri-zh.htm#non-free">Adding non-free to Sources List</a></li>
+				<li><a href="hw-dev-hw-dri-zh.htm#native-nv-ati">FOSS xorg drivers for nVidia, ATI, Radeon, Intel</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 9 );" onmouseout="startTime();"><a href="wm-kde-zh.htm">窗口管理器</a>
+     			 <ul class="sub-menu" id="sm9">
+				<li><a href="wm-xfce-zh.htm#xfce-notes">Useful Xfce extras</a></li>
+				<li><a href="wm-kde-zh.htm#install-add">Useful extra KDE Apps</a></li>
+        			<li><a href="wm-kde-zh.htm#desk-freeze">桌面冻结</a></li>
+        			<li><a href="wm-kde-zh.htm#kde-login">无法登入KDE</a></li>
+        			<li><a href="wm-kde-zh.htm#ch-th">更换主题</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 10 );" onmouseout="startTime();"><a href="lamp-apache-zh.htm">sidux LAMP栈</a>
+      			<ul class="sub-menu" id="sm10">
+        			<li><a href="lamp-apache-zh.htm#serv-apache">sidux LAMP栈</a></li>
+        			<li><a href="lamp-apache-zh.htm#serv-ftp">FTP客户端</a></li>
+        			<li><a href="lamp-apache-zh.htm#serv-sec">安全协议</a></li>
+        			<li><a href="lamp-apache-zh.htm#serv-ssl">SSL</a></li>
+        			<li><a href="lamp-sql-zh.htm#serv-mysql">MySQL配置</a></li>
+        			<li><a href="lamp-ppp-zh.htm#serv-php">Apache里用PHP</a></li>
+        			<li><a href="ntp-server-zh.htm#ntp-server">时钟服务器配置</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 11 );" onmouseout="startTime();"><a href="internet-connecting-zh.htm">因特网及连网</a>
+      			<ul class="sub-menu" id="sm11">
+        			<li><a href="tor-privoxy-zh.htm#tor">Tor</a></li>
+        			<li><a href="tor-privoxy-zh.htm#privoxy">Privoxy</a></li>
+        			<li><a href="internet-connecting-zh.htm#firewalls">防火墙</a></li>
+        			<li><a href="samba-zh.htm#configure">设置SAMBA（Windows）</a></li>
+        			<li><a href="samba-zh.htm#setup">Samba服务器配置</a></li>
+        			<li><a href="ssh-zh.htm#ssh-fs">SSH远程挂载</a></li>
+        			<li><a href="ssh-zh.htm#ssh-x">透过SSH运行X窗口应用程序</a></li>
+        			<li><a href="ssh-zh.htm#ssh-f">通过Konqueror用GUI化的SSH</a></li>
+        			<li><a href="ssh-zh.htm#ssh-w">从Windows-PC通过X转发用SSH</a></li>
+        			<li><a href="ssh-zh.htm#ssh">SSH与安全</a></li>
+        			<li><a href="internet-connecting-zh.htm#dial-mod">56k调制解调器</a></li>
+        			<li><a href="internet-connecting-wpagui-zh.htm#wpa-roaming-gui">WiFi－漫游的WPA-GUI</a></li>
+        			<li><a href="internet-connecting-wpa-zh.htm#wpa-basic">WiFi－基本配置指南</a></li>
+        			<li><a href="internet-connecting-wpa-zh.htm#wpa">WiFi－wpasupplicant</a></li>
+        			<li><a href="internet-connecting-zh.htm#netcardconfig">上线－Ceni</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 12 );" onmouseout="startTime();"><a href="sys-admin-apt-zh.htm">dist-upgrade and package management</a>
+      			<ul class="sub-menu" id="sm12">
+        			<li><a href="sys-admin-apt-zh.htm#apt-cook">APT指南秘笈与源表</a></li>
+        			<li><a href="sys-admin-apt-zh.htm#apt-install">安装一个新的软件包</a></li>
+        			<li><a href="sys-admin-apt-zh.htm#apt-delete">删除一个软件包</a></li>
+        			<li><a href="sys-admin-apt-zh.htm#apt-downgrade">软件包隔离与降级</a></li>
+        			<li><a href="sys-admin-apt-zh.htm#apt-cache">通过apt-cache搜索软件包</a></li>
+        			<li><a href="sys-admin-apt-zh.htm#gui-pacsea">GUI Package searching</a></li>
+        			<li><a href="siduxcc-zh.htm#hermes">sidux-hermes</a></li>
+        			<li><a href="sys-admin-upgrade-zh.htm#live-cd-upgrade">用Live- ISO 升级</a></li>
+				<li><a href="sys-admin-apt-locarmirr-zh.htm#approx">dist-upgrade of multiple PCs on a LAN</a></li>
+        			<li><a href="sys-admin-kern-upg-zh.htm#kern-upgrade">升级内核</a></li>
+        			<li><a href="sys-admin-apt-zh.htm#apt-upgrade">升级已安装的系统－dist-upgrade - Overview</a></li>
+				<li><a href="sys-admin-apt-zh.htm#du-st">升级已安装的系统－dist-upgrade - The Steps</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 13 );" onmouseout="startTime();"><a href="sys-admin-gen-zh.htm">系统管理</a>
+      			<ul class="sub-menu" id="sm13">
+				<li><a href="hd-install-ezh.htm#adduser">Adding a new user</a></li>
+        			<li><a href="home-zh.htm#home-bu">移动/home</a></li>
+        			<li><a href="siduxcc-zh.htm#siduxcc">sidux控制中心</a></li>
+        			<li><a href="sys-admin-rdiff-zh.htm#rdiff">用rdiff备份</a></li>
+        			<li><a href="sys-admin-rsync-zh.htm#rsync">用rsync备份</a></li>
+        			<li><a href="vir-rkits-zh.htm#virus-rkits">病毒和刨根工具扫描程序</a></li>
+        			<li><a href="sys-admin-gen-zh.htm#start-services">启用／停用服务</a></li>
+        			<li><a href="sys-admin-gen-zh.htm#pw-lost">遗失root用户密码</a></li>
+        			<li><a href="sys-admin-gen-zh.htm#fonts">字体</a></li>
+        			<li><a href="sys-admin-gen-zh.htm#cups">CUPS - Printing System</a></li>
+				<li><a href="sys-admin-gen-zh.htm#sound">Sound Mixers</a></li>
+        			<li><a href="sys-admin-gen-zh.htm#init">sidux运行段位－init</a></li>
+        			<li><a href="sys-admin-grub-bootman2-zh.htm#mbr-grub-boot">MBR覆写引导扇区</a></li>
+        			<li><a href="sys-admin-grub-bootman2-zh.htm#dual-boot">双启动或多启动</a></li>
+        			<li><a href="bios-freedos-zh.htm#bois-prep">通过FreeDOS升级BIOS</a></li>
+        			<li><a href="sys-admin-grub-bootman2-zh.htm#boot-grub-floppy">创建一张引导软盘</a></li>
+        			<li><a href="sys-admin-grub-bootman2-zh.htm#remove-grub">从MBR移除grub</a></li>
+        			<li><a href="sys-admin-grub-bootman2-zh.htm#what-is-grub">Grub引导管理器</a></li>
+      			</ul>
+    		</li>
+  	</ul>
+<!-- menu ends here --> </div>
+<div id="main-page">
+	<div class="divider" id="uuid">
+			<h2 id="top-header">Rebuilding fstab and creating mount points</h2>
+							<p class="highlight-3">By default aptosid uses uuid in your fstab when you install.</p>
+
+							<p>要显示还未出现在fstab里或还未挂载的新建分区（如hda6或sdb7），在konsole里以普通用户身份（$），键入如下的命令：</p>
+
+<pre>
+ ls -l /dev/disk/by-uuid
+</pre>
+
+							<p>它会给出这样的输出（黑体标注的仅作示例）：</p>
+
+<pre>
+lrwxrwxrwx 1 root root 10 2007-05-27 23:42 348ea9e6-7879-4332-8d7a-915507574a80 -> ../../hda4
+lrwxrwxrwx 1 root root 10 2007-05-27 23:42 610aaaeb-a65e-4269-9714-b26a1388a106 -> ../../hda2
+lrwxrwxrwx 1 root root 10 2007-05-27 23:42 857c5e63-c9be-4080-b4c2-72d606435051 -> ../../hda5
+lrwxrwxrwx 1 root root 10 2007-05-27 23:42 a83b8ede-a9df-4df6-bfc7-02b8b7a5f1f2 -> ../../hda1
+lrwxrwxrwx 1 root root 10 2007-05-27 23:42 <b>ad662d33-6934-459c-a128-bdf0393e0f44</b> -> ../../hda6
+</pre>
+
+							<p>在本例里，<b>ad662d33-6934-459c-a128-bdf0393e0f44</b>是缺失的项。下一步就是把该UUID表示的分区加入你的/etc/fstab。要把它加入你的fstab文件，用一个带root用户特权的文本编辑器（像kate或kwrite）：</p>
+<pre>
+# &lt;device file system&gt; &lt;mount point&gt;   &lt;type&gt;  &lt;options&gt;       &lt;dump&gt; &lt;pass&gt;
+<b>UUID=ad662d33-6934-459c-a128-bdf0393e0f44</b> /media/disk1part6 ext4	auto,users,exec	0 2
+</pre>
+							<p>另一个例子：</p>
+
+<pre>
+lrwxrwxrwx 1 root root 10 2007-05-28 13:18 30ebb8eb-8f22-460c-b8dd-59140274829d -> ../../sdb8
+lrwxrwxrwx 1 root root 10 2007-05-28 13:18 387d6d4b-4508-4b8e-8ed2-76998f41dae4 -> ../../sdb1
+rwxrwxrwx 1 root root 10 2007-05-28 13:18 7014f66f-6cdf-4fe1-83da-9cab7b6fab1a -> ../../sdb5
+lrwxrwxrwx 1 root root 10 2007-05-28 13:18 8f042ead-259f-4df0-98ec-3343080396c5 -> ../../sdb6
+lrwxrwxrwx 1 root root 10 2007-05-28 13:18 94B0AE63B0AE4B94 -> ../../sda2
+lrwxrwxrwx 1 root root 10 2007-05-28 13:18 A61820AA18207B85 -> ../../sda1
+lrwxrwxrwx 1 root root 10 2007-05-28 13:18 f28725d6-b7b5-4207-8476-36efe1a903ce -> ../../sdb9
+lrwxrwxrwx 1 root root 10 2007-05-28 13:18 f855c263-2521-48d3-8ec9-d2d2b69b6635 -> ../../sda3
+rwxrwxrwx 1 root root 10 2007-05-28 13:18 <b>f9aa4027-ecdd-4a86-84e2-df2ef73fe14e</b> -> ../../sdb7
+</pre>
+
+
+
+							<p>在本例里<b>f9aa4027-ecdd-4a86-84e2-df2ef73fe14e</b>是缺失的项，加入/etc/fstab：</p>
+<pre>
+# &lt;device file system&gt; &lt;mount point&gt;   &lt;type&gt;  &lt;options&gt;       &lt;dump&gt; &lt;pass&gt;
+<b>UUID=f9aa4027-ecdd-4a86-84e2-df2ef73fe14e</b> /media/disk2part7 ext4	auto,users,exec	0 2
+</pre>
+
+			<h3>Creating new mount points</h3>
+							<p> <span class="highlight-3">Note:</span> A mount point name, as noted in fstab, needs to have an existing directory. aptosid creates these directories during the installation process under <span class="highlight-3">/media</span> and they are named <span class="highlight-3">diskXpartX</span>.</p>
+
+							<p>If you have manipulated the partition table after the initial installation and assuming you have already altered fstab, (for example, 2 new partitions have been created), the directory for each mount point will not exist and it needs to be manually created.</p>
+
+					  <h5>Example:</h5>
+
+							<p>First, as root, confirm the existing mount points:</p>
+
+<pre>
+cd /media
+ls
+</pre>
+							<p>It should return the existing mount points, for example:</p>
+<pre>
+disk1part1 disk1part3 disk2part1
+</pre>
+							<p>Staying in /media, create the mount points of the new partitions:</p>
+<pre>
+mkdir disk1part6
+mkdir disk2part7
+</pre>
+
+							<p>To test or use partitions immediately:</p>
+<pre>
+mount /dev/sda6 /media/disk1part6
+mount /dev/sda6 /media/disk2part7
+</pre>
+							<p>Upon a reboot of the computer the filesystems will be mounted automatically. Read:</p>
+<pre>
+man mount
+</pre>
+
+	</div>
+	<div class="divider" id="uuid-fstab">
+			<h2>概览：UUID，分区标记及fstab</h2>
+							<p>固定的的块设备命名在引进udev之后才成为可能。与基于总线的命名相比，它有它的一些优点。</p>
+
+							<p>在Linux发行版和udev不断往前发展，硬件识别变得越来越可靠的同时，很多新的问题和变化也随之出现：<br/>
+				    			<b>1）</b>如果你有不止一个sata／scsi或ide磁盘控制器，并且他们添加的次序是随机的，那可能导致设备名如hdX和hdY在每次引导时都发生互换。固定命名让你可以完全不用为此担心。<br/>
+				    			<b>2）</b>随着新的libata pata支持的引入，你所有的ide hdX设备有一天终将变为sdX。用固定命名，这种变化你甚至都不会察觉。<br/>
+				    			<b>3）</b>现如今同时带有sata和ide控制器的机器已经非常普遍。随着上面提到的libata的变更，第一个问题甚至将变得更加普遍，因为sata和ide硬驱都将用sdX命名。</p>
+
+							<p class="highlight-3">当你安装时，在你的fstab里，sidux将默认使用uuid</p>
+
+							<p>还有更多原因，但这些是时下和不久的将来最迫切的。这就是为什么sidux鼓励你把你的设置改为固定命名方案的原因。</p>
+
+			<h2>固定命名的四种不同方案：</h2>
+
+				<h4>1. 以UUID进行固定命名</h4>
+
+							<p>UUID代表通用唯一标志码（Universally Unique Identifier），是一种赋予每个文件系统一个唯一标志码的机制。它的设计不可能会有冲突出现。所有的Linux文件系统（包括swap）都支持UUID。FAT和NTFS文件系统不支持UUID，但在by-uuid里依然以一个唯一的标志码列出：</p>
+<pre>
+$ /bin/ls -lF /dev/disk/by-uuid/
+total 0
+lrwxrwxrwx 1 root root 10 Oct 16 10:27 2d781b26-0285-421a-b9d0-d4a0d3b55680 -> ../../sda1
+lrwxrwxrwx 1 root root 10 Oct 16 10:27 31f8eb0d-612b-4805-835e-0e6d8b8c5591 -> ../../sda7
+lrwxrwxrwx 1 root root 10 Oct 16 10:27 3FC2-3DDB -> ../../sda6
+lrwxrwxrwx 1 root root 10 Oct 16 10:27 5090093f-e023-4a93-b2b6-8a9568dd23dc -> ../../sda2
+lrwxrwxrwx 1 root root 10 Oct 16 10:27 912c7844-5430-4eea-b55c-e23f8959a8ee -> ../../sda5
+lrwxrwxrwx 1 root root 10 Oct 16 10:27 B0DC1977DC193954 -> ../../sdb1
+lrwxrwxrwx 1 root root 10 Oct 16 10:27 bae98338-ec29-4beb-aacf-107e44599b2e -> ../../sdb2
+</pre>
+							<p>如你所见，fat和ntfs分区（见下面的fat和windows标签）的名字要短一些，但仍然有列出。用uuid这种方法与用标签相比，好处是不大可能出现命名冲突；不好的地方就是它们更难记些。(sda6 and sdb1)</p>
+
+				<h4>2. 以标签进行固定命名</h4>
+
+							<p>几乎每一种文件系统类型都可以有一个标签。你所有带标签的分区都列在/dev/disk/by-label目录里：</p>
+<pre>
+$ ls -lF /dev/disk/by-label
+total 0
+lrwxrwxrwx 1 root root 10 Oct 16 10:27 data -> ../../sdb2
+lrwxrwxrwx 1 root root 10 Oct 16 10:27 data2 -> ../../sda2
+lrwxrwxrwx 1 root root 10 Oct 16 10:27 fat -> ../../sda6
+lrwxrwxrwx 1 root root 10 Oct 16 10:27 home -> ../../sda7
+lrwxrwxrwx 1 root root 10 Oct 16 10:27 root -> ../../sda1
+lrwxrwxrwx 1 root root 10 Oct 16 10:27 swap -> ../../sda5
+lrwxrwxrwx 1 root root 10 Oct 16 10:27 windows -> ../../sdb1
+</pre>
+							<p>While labels may have recognisable names, you need to exercise extreme caution to negate name collisions.</p>
+
+							<p>你可以用这些命令来修改你的文件系统的标签：</p>
+<pre>
+* swap：这样创建一新的交换空间：mkswap -L &lt;标签&gt; /dev/XXX
+* ext2／ext3/ext4：e2label /dev/XXX &lt;标签&gt;
+* jfs：jfs_tune -L &lt;标签&gt; /dev/XXX
+* xfs：xfs_admin -L &lt;标签&gt; /dev/XXX
+* fat/vfat：Linux下没有工具可以修改其标签，
+但当你创建这类文件系统时，用mkdosfs -n &lt;标签&gt; &lt;其他选项&gt;。
+你也可以用Windows修改一个已经存在的文件系统的标签。
+* ntfs：ntfslabel /dev/XXX &lt;标签&gt;或者用Windows来修改。
+</pre>
+							<p class="highlight-3">当心：要使这一切工作正常，标签必须唯一。这同样适用于USB／优盘和硬盘。对UN*X分区，LABEL=／UUID=语法要优于/dev/disk/by-*/</p>
+
+
+
+				<h4>3. 以id进行固定命名</h4>
+
+							<p>by-id依硬件的序列号创建一个唯一的名字。</p>
+				<h4>4. 以路径进行固定命名</h4>
+							<p>by-path依最短的物理路径（根据sysfs）创建一个唯一的名字。这两种方案都包含了标志它们所属子系统的字符串，因此并不适于解决本文开始提到的那些问题。这里就不对它们作进一步讨论了。</p>
+
+				<h4>启用固定命名</h4>
+
+							<p>已经选好了你要用的命名方法了，那我们现在就为你的系统启用固定命名吧：</p>
+
+				<h4>在fstab里</h4>
+
+							<p>在/etc/fstab里启用固定命名简单；只需用新的固定的名字替换第一栏内的设备名就可以了。在我这个例子里，我将用下面的其中一个替换/dev/sda7：</p>
+<pre>
+/dev/disk/by-label/home or
+/dev/disk/by-uuid/31f8eb0d-612b-4805-835e-0e6d8b8c5591
+</pre>
+							<p>对你fstab文件里的所有分区都这么做。</p>
+
+							<p>为免显式地给出设备，也可以其UUID或卷标来表示该文件系统，写作LABEL=&lt;标签&gt;或UUID=&lt;uuid&gt;，例如：</p>
+<pre>
+LABEL=Boot
+</pre>
+							<p>或</p>
+<pre>
+UUID=3e6be9de-8139-11d1-9106-a43f08d823a6
+</pre>
+							<p>来源：<a href="http://wiki.archlinux.org/index.php/Persistent_block_device_naming">wiki.archlinux.org</a>用的是<a href=" http://marc.theaimsgroup.com/?l=linux-hotplug-devel&amp;m=114795097514527&amp;w=2">marc.theaimsgroup.com</a> 来自wiki.archlinux.org的内容在GNU自由文档许可协议1.2版下可用，并为sidux手册进行了重新编辑</p>
+				
+							<p><a href="http://www.lissot.net/partition/ext2fs/labels.html">lissot.net这里还有更多关于标记的信息</a> </p>
+
+	</div>
+			<div id="rev">内容最后更改于UTC 26/04/2011 1355 UTC</div>
+</div>
+</body>
+</html>

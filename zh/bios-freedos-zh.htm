@@ -1,0 +1,430 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>sidux Manuals - Upgrade BIOS FreeDOS </title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- last translation by bluewater 02/11/2008 1525 UTC -->
+<div id="menu"> <!-- menu starts here zh lang maintainer plmday-->
+<!--sidux-manual Operating System Manual menu-version-01.96.2009.11.22 -->
+<!-- menu last updated by bluewater 2009.11.22 0500 hrs UTC -->
+	<div id="menu-header">
+	      <a href="http://sidux.com/"><img src="../lib/logos/manual-sidux-logo.png" title="去sidux.com论坛及维基" alt="sidux.com logo" /></a>
+	</div>
+  	<ul id="top-list">
+    		<li><a href="manual-search-zh.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="搜索该指南" alt="Search" />在线－离线搜索</a> </li>
+    		<li><a href="http://manual.sidux.com/meta-manual">Community Software Selections</a></li>
+  	</ul>
+  	<div id="flags-2">
+      			<a href="../flag-index.html"><img src="../lib/logos/sidux-language-64.png" title="选择另一种语言" alt="lang-switch"/></a>
+  	</div>
+  	<ul>
+    		<li  onmouseover="showHide( 1 );" onmouseout="startTime();"><a href="welcome-zh.htm">sidux OS手册</a>
+      			<ul class="sub-menu" id="sm1">
+        			<li><a href="welcome-zh.htm#welcome-gen">sidux OS手册</a></li>
+        			<li><a href="welcome-zh.htm#how-to">如何使用该手册</a></li>
+        			<li><a href="welcome-zh.htm#table-contents">目录</a></li>
+        			<li><a href="help-zh.htm#help-gen">何处获取帮助</a></li>
+        			<li><a href="help-zh.htm#paste">IRC !paste</a></li>
+        			<li><a href="credits-zh.htm#cred-team">功绩簿</a></li>
+        			<li><a href="wel-quickstart-zh.htm#welcome-quick">sidux快速上手指南</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 2 );" onmouseout="startTime();"><a href="cd-dl-burning-zh.htm">ISO Content, Releases, Download Mirrors and Burning</a>
+      			<ul class="sub-menu" id="sm2">
+       			<li><a href="cd-content-zh.htm#cd-content">ISO Content and system requirements</a></li>
+        			<li><a href="sys-admin-release-zh.htm#rolling">滚动升级注意事项</a></li>
+        			<li><a href="cd-dl-burning-zh.htm#download-sidux">sidux镜像，下载及刻录</a></li>
+        			<li><a href="cd-dl-burning-zh.htm#md5">md5校验和</a></li>
+        			<li><a href="cd-dl-burning-zh.htm#burn-nero">Windows下刻录</a></li>
+        			<li><a href="cd-dl-burning-zh.htm#burn-linux">Linux下刻录</a></li>
+       			 	<li><a href="cd-no-gui-burn-zh.htm#burning-no-gui">无GUI刻录</a></li>
+				<li><a href="cd-no-gui-burn-zh.htm#burn-no-gui-gen">Burning without a GUI</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 3 );" onmouseout="startTime();"><a href="live-mode-zh.htm">Live模式</a>
+      			<ul class="sub-menu" id="sm3">
+        			<li><a href="live-mode-zh.htm#rootpw">sidux-Live ISO 上的root用户密码</a></li>
+        			<li><a href="live-mode-zh.htm#live-cd-installsoft">在Live- ISO 运行时安装软件</a></li>
+        			<li><a href="live-mode-zh.htm#ntfs-3g">通过ntfs-3g写NTFS分区</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 4 );" onmouseout="startTime();"><a href="term-konsole-zh.htm">终端／Konsole</a>
+      			<ul class="sub-menu" id="sm4">
+        			<li><a href="term-konsole-zh.htm#sux"> sux / sudo</a></li>
+        			<li><a href="term-konsole-zh.htm#term-kon">终端／Konsole</a></li>
+        			<li><a href="term-konsole-zh.htm#cli-help">命令行帮助</a></li>
+				<li><a href="help-zh.htm#init3-tools">Tools to know in text mode (tty) - init 3</a></li>
+        			<li><a href="term-konsole-zh.htm#term-cmds">Linux终端命令表</a></li>
+        			<li><a href="term-konsole-zh.htm#shell-scripts">安装.sh脚本</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 5 );" onmouseout="startTime();"><a href="cheatcodes-zh.htm">参数</a>
+      			<ul class="sub-menu" id="sm5">
+        			<li><a href="cheatcodes-zh.htm#cheatcodes">sidux特有的Live- ISO 参数</a></li>
+        			<li><a href="cheatcodes-zh.htm#cheatcodes-linux">Linux惯常参数</a></li>
+        			<li><a href="cheatcodes-vga-zh.htm#vga">VGA参数</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 6 );" onmouseout="startTime();"><a href="part-gparted-zh.htm">对你的硬驱进行分区</a>
+      			<ul class="sub-menu" id="sm6">
+        			<li><a href="part-gparted-zh.htm#partition">用GParted对你的HD进行分区</a></li>
+        			<li><a href="part-gparted-zh.htm#ntfs">用GParted调整NTFS分区的大小</a></li>
+        			<li><a href="part-uuid-zh.htm#uuid">UUID, 分区标记及fstab</a></li>
+        			<li><a href="part-cfdisk-zh.htm#disknames">磁盘命名简介</a></li>
+        			<li><a href="part-cfdisk-zh.htm#partition">用cfdisk对你的HD进行分区</a></li>
+        			<li><a href="part-cfdisk-zh.htm#formating">用cfdisk分区后进行格式化</a></li>
+        			<li><a href="part-size-examp-zh.htm#part-example">分区大小实例</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 7 );" onmouseout="startTime();"><a href="hd-install-zh.htm">安装选项</a>
+      			<ul class="sub-menu" id="sm7">
+        			<li><a href="hd-install-zh.htm#Inst-prep">安装准备</a></li>
+        			<li><a href="hd-install-zh.htm#Installation">安装到你的硬盘</a></li>
+        			<li><a href="hd-install-zh.htm#first-hd-boot">第一次启动</a></li>
+        			<li><a href="hd-install-opts-zh.htm#fromiso">利用‘fromiso’参数从ISO文件引导</a></li>
+        			<li><a href="hd-install-opts-zh.htm#fromiso-persist">fromiso与persist</a></li>
+        			<li><a href="hd-install-opts-zh.htm#usb-hd">在移动硬盘上安装</a></li>
+        			<li><a href="hd-install-opts-zh.htm#vtbox">通过VirtualBox安装sidux</a></li>
+        			<li><a href="hd-install-opts-zh.htm#qemu">通过QEMU安装sidux</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 8 );" onmouseout="startTime();"><a href="hw-dev-hw-dri-zh.htm">图形显卡，显示屏， &amp; 驱动器杂烩</a>
+      			<ul class="sub-menu" id="sm8">
+        			<li><a href="hw-dev-hw-dri-zh.htm#hd-ntfs3g">通过ntfs-3g在NTFS分区上执行写操作</a></li>
+        			<li><a href="hw-dev-mon-zh.htm#mon-res">屏幕像素与显示屏</a></li>
+        			<li><a href="hw-dev-mon-zh.htm#xrandr">双显示屏及xrandr</a></li>
+        			<li><a href="hw-dev-mon-zh.htm#mon-binary">双显示屏（用二进制格式的驱动器）</a></li>
+				<li><a href="hw-dev-hw-dri-zh.htm#non-free-3d">Binary, non-free drivers for Nvidia</a></li>
+				<li><a href="hw-dev-hw-dri-zh.htm#non-free-3d-2">non-free drivers for ATI, Radeon and others</a></li>
+				<li><a href="hw-dev-hw-dri-zh.htm#non-free-firmware">Hardware needing non-free firmware drivers</a></li>
+				<li><a href="hw-dev-hw-dri-zh.htm#non-free">Adding non-free to Sources List</a></li>
+				<li><a href="hw-dev-hw-dri-zh.htm#native-nv-ati">FOSS xorg drivers for nVidia, ATI, Radeon, Intel</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 9 );" onmouseout="startTime();"><a href="wm-kde-zh.htm">窗口管理器</a>
+     			 <ul class="sub-menu" id="sm9">
+				<li><a href="wm-xfce-zh.htm#xfce-notes">Useful Xfce extras</a></li>
+				<li><a href="wm-kde-zh.htm#install-add">Useful extra KDE Apps</a></li>
+        			<li><a href="wm-kde-zh.htm#desk-freeze">桌面冻结</a></li>
+        			<li><a href="wm-kde-zh.htm#kde-login">无法登入KDE</a></li>
+        			<li><a href="wm-kde-zh.htm#ch-th">更换主题</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 10 );" onmouseout="startTime();"><a href="lamp-apache-zh.htm">sidux LAMP栈</a>
+      			<ul class="sub-menu" id="sm10">
+        			<li><a href="lamp-apache-zh.htm#serv-apache">sidux LAMP栈</a></li>
+        			<li><a href="lamp-apache-zh.htm#serv-ftp">FTP客户端</a></li>
+        			<li><a href="lamp-apache-zh.htm#serv-sec">安全协议</a></li>
+        			<li><a href="lamp-apache-zh.htm#serv-ssl">SSL</a></li>
+        			<li><a href="lamp-sql-zh.htm#serv-mysql">MySQL配置</a></li>
+        			<li><a href="lamp-ppp-zh.htm#serv-php">Apache里用PHP</a></li>
+        			<li><a href="ntp-server-zh.htm#ntp-server">时钟服务器配置</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 11 );" onmouseout="startTime();"><a href="internet-connecting-zh.htm">因特网及连网</a>
+      			<ul class="sub-menu" id="sm11">
+        			<li><a href="tor-privoxy-zh.htm#tor">Tor</a></li>
+        			<li><a href="tor-privoxy-zh.htm#privoxy">Privoxy</a></li>
+        			<li><a href="internet-connecting-zh.htm#firewalls">防火墙</a></li>
+        			<li><a href="samba-zh.htm#configure">设置SAMBA（Windows）</a></li>
+        			<li><a href="samba-zh.htm#setup">Samba服务器配置</a></li>
+        			<li><a href="ssh-zh.htm#ssh-fs">SSH远程挂载</a></li>
+        			<li><a href="ssh-zh.htm#ssh-x">透过SSH运行X窗口应用程序</a></li>
+        			<li><a href="ssh-zh.htm#ssh-f">通过Konqueror用GUI化的SSH</a></li>
+        			<li><a href="ssh-zh.htm#ssh-w">从Windows-PC通过X转发用SSH</a></li>
+        			<li><a href="ssh-zh.htm#ssh">SSH与安全</a></li>
+        			<li><a href="internet-connecting-zh.htm#dial-mod">56k调制解调器</a></li>
+        			<li><a href="internet-connecting-wpagui-zh.htm#wpa-roaming-gui">WiFi－漫游的WPA-GUI</a></li>
+        			<li><a href="internet-connecting-wpa-zh.htm#wpa-basic">WiFi－基本配置指南</a></li>
+        			<li><a href="internet-connecting-wpa-zh.htm#wpa">WiFi－wpasupplicant</a></li>
+        			<li><a href="internet-connecting-zh.htm#netcardconfig">上线－Ceni</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 12 );" onmouseout="startTime();"><a href="sys-admin-apt-zh.htm">dist-upgrade and package management</a>
+      			<ul class="sub-menu" id="sm12">
+        			<li><a href="sys-admin-apt-zh.htm#apt-cook">APT指南秘笈与源表</a></li>
+        			<li><a href="sys-admin-apt-zh.htm#apt-install">安装一个新的软件包</a></li>
+        			<li><a href="sys-admin-apt-zh.htm#apt-delete">删除一个软件包</a></li>
+        			<li><a href="sys-admin-apt-zh.htm#apt-downgrade">软件包隔离与降级</a></li>
+        			<li><a href="sys-admin-apt-zh.htm#apt-cache">通过apt-cache搜索软件包</a></li>
+        			<li><a href="sys-admin-apt-zh.htm#gui-pacsea">GUI Package searching</a></li>
+        			<li><a href="siduxcc-zh.htm#hermes">sidux-hermes</a></li>
+        			<li><a href="sys-admin-upgrade-zh.htm#live-cd-upgrade">用Live- ISO 升级</a></li>
+				<li><a href="sys-admin-apt-locarmirr-zh.htm#approx">dist-upgrade of multiple PCs on a LAN</a></li>
+        			<li><a href="sys-admin-kern-upg-zh.htm#kern-upgrade">升级内核</a></li>
+        			<li><a href="sys-admin-apt-zh.htm#apt-upgrade">升级已安装的系统－dist-upgrade - Overview</a></li>
+				<li><a href="sys-admin-apt-zh.htm#du-st">升级已安装的系统－dist-upgrade - The Steps</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 13 );" onmouseout="startTime();"><a href="sys-admin-gen-zh.htm">系统管理</a>
+      			<ul class="sub-menu" id="sm13">
+				<li><a href="hd-install-ezh.htm#adduser">Adding a new user</a></li>
+        			<li><a href="home-zh.htm#home-bu">移动/home</a></li>
+        			<li><a href="siduxcc-zh.htm#siduxcc">sidux控制中心</a></li>
+        			<li><a href="sys-admin-rdiff-zh.htm#rdiff">用rdiff备份</a></li>
+        			<li><a href="sys-admin-rsync-zh.htm#rsync">用rsync备份</a></li>
+        			<li><a href="vir-rkits-zh.htm#virus-rkits">病毒和刨根工具扫描程序</a></li>
+        			<li><a href="sys-admin-gen-zh.htm#start-services">启用／停用服务</a></li>
+        			<li><a href="sys-admin-gen-zh.htm#pw-lost">遗失root用户密码</a></li>
+        			<li><a href="sys-admin-gen-zh.htm#fonts">字体</a></li>
+        			<li><a href="sys-admin-gen-zh.htm#cups">CUPS - Printing System</a></li>
+				<li><a href="sys-admin-gen-zh.htm#sound">Sound Mixers</a></li>
+        			<li><a href="sys-admin-gen-zh.htm#init">sidux运行段位－init</a></li>
+        			<li><a href="sys-admin-grub-bootman2-zh.htm#mbr-grub-boot">MBR覆写引导扇区</a></li>
+        			<li><a href="sys-admin-grub-bootman2-zh.htm#dual-boot">双启动或多启动</a></li>
+        			<li><a href="bios-freedos-zh.htm#bois-prep">通过FreeDOS升级BIOS</a></li>
+        			<li><a href="sys-admin-grub-bootman2-zh.htm#boot-grub-floppy">创建一张引导软盘</a></li>
+        			<li><a href="sys-admin-grub-bootman2-zh.htm#remove-grub">从MBR移除grub</a></li>
+        			<li><a href="sys-admin-grub-bootman2-zh.htm#what-is-grub">Grub引导管理器</a></li>
+      			</ul>
+    		</li>
+  	</ul>
+<!-- menu ends here --> </div>
+<div id="main-page">
+	<div class="divider" id="bois-prep">
+
+		<h2 id="top-header">Upgrading the BIOS with FreeDOS</h2>
+
+							<p>You may want, or have a need, to update the BIOS of your PC, when the manufacturer of the motherboard announces some improvement of BIOS software. The installer program usually offered is an application to run MS-DOS.</p>
+
+							<p>This is a way to update BIOS from a USB in linux. This will work with USB keys, USB sticks and with micro/mini/SD cards (with a suitable adapter).</p>
+
+							<p>Firstly, your BIOS needs to allow booting from USB - and be compatible with USB harddisks. Some BIOSes accept USB Floppies, CD-ROMs or ZIP drives, although these might be usable, it may be more difficult to implement the upgrade, however you may have no other choice, (netbooks in particular).</p>
+
+
+				<h3>You need three things:</h3>
+						<ol>
+							<li>A USB stick, preferably &lt;2 GB (FAT16 doesn't allow more than 2 GB), and the base FreeDOS (fdbasecd.iso) install only uses 5.8 MB. <span class="highlight-3">FAT16 is the recommended format as FAT32 is not detected as bootable by every BIOS</span>.</li>
+
+							<li>A FreeDOS install medium <a href="http://www.freedos.org/freedos/files/"> fdbasecd.iso (8MB)</a>.</li>
+
+							<li>qemu (apt-get install qemu), qemu is needed for the installer, basically the emulated qemu BIOS makes your USB stick appear to FreeDOS as an ordinary harddisk, so you can install as usual (and avoids burning the FreeDOS CD).</li>
+						</ol>
+
+				<h5><span class="highlight-2">This is absolutly critical: at no stage is the USB stick to be mounted. Be very careful to select the correct device node, otherwise all data on the wrong disk will be erased without any redress, i.e. your main hard drive.</span></h5>
+
+	<div class="spacer02"></div>
+							<p>Plug in your USB stick, <span class="highlight-2">remember, don't mount it</span>. Check dmesg (the last messages,if you just plugged it in), which device node got assigned to your USB stick lets assumes <span class="highlight-3">/dev/sdb</span>  .</p>
+
+							<p>Clear your USB stick,<span class="highlight-3">all data will be lost</span>, you could also clear all of it, instead of just the first 16 MB. </p>
+
+
+<pre>
+$ sux
+Password:
+dd if=/dev/zero of=/dev/sdb bs=1M count=16
+16+0 records in
+16+0 records out
+16777216 bytes (17 MB) copied, 2.35751 s, 7.1 MB/s
+</pre> 
+					<h3>Partitioning the USB stick</h3>
+							<p>Partitioning and formatting your USB stick correctly is probably the hardest part.</p>
+
+							<p>Set the partition label to FAT16, on &lt;2 GB sticks (it offers better compatibility overall).</p>
+
+							<p>Next fdisk to partition:</p>
+<pre>
+# fdisk /dev/sdb
+fdisk /dev/sdb
+Device contains neither a valid DOS partition table, nor Sun, SGI or OSF disklabel
+Building a new DOS disklabel with disk identifier 0xa8993739.
+Changes will remain in memory only, until you decide to write them.
+After that, of course, the previous content won't be recoverable.
+
+Warning: invalid flag 0x0000 of partition table 4 will be corrected by w(rite)
+</pre>
+							<p>Now create a partition:</p>
+<pre>
+Command (m for help): <span class="highlight-3"><b>n</b></span>
+Command action
+   e   extended
+   p   primary partition (1-4)
+<span class="highlight-3"><b>p</b></span>
+Partition number (1-4): <span class="highlight-3"><b>1</b></span>
+First cylinder (1-1018, default 1):
+Using default value 1
+Last cylinder or +size or +sizeM or +sizeK (1-1018, default 1018):
+Using default value 1018
+</pre>
+							<p>Confirm the creation of the partition by printing the partition table:</p>
+<pre>
+Command (m for help): <span class="highlight-3"><b>p</b></span>
+
+Disk /dev/sdb: 2003 MB, 2003828736 bytes
+62 heads, 62 sectors/track, 1018 cylinders
+Units = cylinders of 3844 * 512 = 1968128 bytes
+Disk identifier: 0xa8993739
+
+   Device Boot      Start         End      Blocks   Id  System
+/dev/sdb1               1        1018     1956595+  83  Linux
+</pre>
+							<p>Set the correct partition label, '6' for FAT16:</p>
+<pre>
+Command (m for help): <span class="highlight-3"><b>t</b></span>
+Selected partition 1
+Hex code (type L to list codes): <span class="highlight-3"><b>l</b></span>
+
+ 0  Empty           1e  Hidden W95 FAT1 80  Old Minix       be  Solaris boot
+ 1  FAT12           24  NEC DOS         81  Minix / old Lin bf  Solaris
+ 2  XENIX root      39  Plan 9          82  Linux swap / So c1  DRDOS/sec (FAT-
+ 3  XENIX usr       3c  PartitionMagic  83  Linux           c4  DRDOS/sec (FAT-
+ 4  FAT16 &lt;32M      40  Venix 80286     84  OS/2 hidden C:  c6  DRDOS/sec (FAT-
+ 5  Extended        41  PPC PReP Boot   85  Linux extended  c7  Syrinx
+ 6  FAT16           42  SFS             86  NTFS volume set da  Non-FS data
+ 7  HPFS/NTFS       4d  QNX4.x          87  NTFS volume set db  CP/M / CTOS / .
+ 8  AIX             4e  QNX4.x 2nd part 88  Linux plaintext de  Dell Utility
+ 9  AIX bootable    4f  QNX4.x 3rd part 8e  Linux LVM       df  BootIt
+ a  OS/2 Boot Manag 50  OnTrack DM      93  Amoeba          e1  DOS access
+ b  W95 FAT32       51  OnTrack DM6 Aux 94  Amoeba BBT      e3  DOS R/O
+ c  W95 FAT32 (LBA) 52  CP/M            9f  BSD/OS          e4  SpeedStor
+ e  W95 FAT16 (LBA) 53  OnTrack DM6 Aux a0  IBM Thinkpad hi eb  BeOS fs
+ f  W95 Ext'd (LBA) 54  OnTrackDM6      a5  FreeBSD         ee  EFI GPT
+10  OPUS            55  EZ-Drive        a6  OpenBSD         ef  EFI (FAT-12/16/
+11  Hidden FAT12    56  Golden Bow      a7  NeXTSTEP        f0  Linux/PA-RISC b
+12  Compaq diagnost 5c  Priam Edisk     a8  Darwin UFS      f1  SpeedStor
+14  Hidden FAT16 &lt;3 61  SpeedStor       a9  NetBSD          f4  SpeedStor
+16  Hidden FAT16    63  GNU HURD or Sys ab  Darwin boot     f2  DOS secondary
+17  Hidden HPFS/NTF 64  Novell Netware  b7  BSDI fs         fd  Linux raid auto
+18  AST SmartSleep  65  Novell Netware  b8  BSDI swap       fe  LANstep
+1b  Hidden W95 FAT3 70  DiskSecure Mult bb  Boot Wizard hid ff  BBT
+1c  Hidden W95 FAT3 75  PC/IX
+
+Hex code (type L to list codes): <span class="highlight-3"><b>6</b></span>
+
+Changed system type of partition 1 to 6 (FAT16)
+</pre>
+							<p>Activate the new and only partition:</p>
+<pre>
+Command (m for help): <span class="highlight-3"><b>a</b></span>
+Partition number (1-4): <span class="highlight-3"><b>1</b></span>
+</pre>
+							<p>Print out the new partition table again, reconfirm that the partition indeed got activated:</p>
+<pre>
+Command (m for help): <span class="highlight-3"><b>p</b></span>
+
+Disk /dev/sdb: 2003 MB, 2003828736 bytes
+62 heads, 62 sectors/track, 1018 cylinders
+Units = cylinders of 3844 * 512 = 1968128 bytes
+Disk identifier: 0xa8993739
+
+   Device Boot      Start         End      Blocks   Id  System
+/dev/sdb1   *           1        1018     1956595+   6  FAT16
+</pre>
+							<p>Write the new partition table to your USB stick and exit fdisk:</p>
+<pre>
+Command (m for help): <span class="highlight-3"><b>w</b></span>
+The partition table has been altered!
+
+Calling ioctl() to re-read partition table.
+
+WARNING: If you have created or modified any DOS 6.x
+partitions, please see the fdisk manual page for additional
+information.
+Syncing disks.
+# exit
+</pre>
+							<p>Format your newly created USB stick:</p>
+<pre>
+mkfs -t vfat -n FreeDOS /dev/sdb1
+exit
+</pre>
+							<p>The preparatory phase is now complete.You have now partitioned and formatted the USB stick, there's nothing else left to do and you can directly go to the install process.</p>
+							
+					<h3>Booting up FreeDOS with qemu</h3>
+
+							<p>As DOS has no idea of USB stick, you need to find a way to coax the FreeDOS installer into recognizing the USB as ordinary "harddisk", on live boot, the system's BIOS does that for us - but here the need to get inventive with qemu:</p>
+<pre>
+as user$:
+qemu -hda /dev/sdb -cdrom /path/to/fdbasecd.iso -boot d
+</pre>
+							<p><span class="highlight-1">ctrl-alt</span> will toggle mouse and keyboard grab and allow you to switch desktops to reread any instructions at each step.</p>
+
+		<div class="screenshot"><img src="../lib/images-common/images-qemu-freedos/qemu-boot01.jpg" title="QEMU FreeDOS" alt="QEMU FreeDOS" /></div>
+							<p>This boots the FreeDOS CD and maps the USB stick raw device as primary master HD (here qemu's BIOS emulation abililty makes the USB stick appear to DOS as an ordinary harddisk).  Select the installer from the start menu of the virtualised FreeDOS boot:</p>
+<pre>
+1) Continue to boot FreeDOS from CD-ROM
+<span class="highlight-3"><b>1</b></span>
+enter
+</pre>
+	<div class="spacer02"></div>
+							<p>Keep choosing the default of <span class="highlight-3">1</span> and/or choosing <span class="highlight-3">Yes</span> when asked.</p>
+
+	<div class="spacer02"></div>
+		<div class="screenshot"><img src="../lib/images-common/images-qemu-freedos/qemu-boot02.jpg" title="Freedos Installation - 1" alt="freedos-inst1" /></div>
+
+		<div class="spacer02"></div>
+	<div class="screenshot"><img src="../lib/images-common/images-qemu-freedos/qemu-boot04.jpg" title="Freedos Installation - 2"  alt="freedos-inst2" /></div>
+
+	<div class="spacer02"></div>
+
+	<div class="spacer02"></div>
+		<div class="screenshot"><img src="../lib/images-common/images-qemu-freedos/qemu-boot09.jpg" title="Freedos Installation - 3" alt="freedos-inst3" /></div>
+
+
+	<div class="spacer02"></div>
+
+							<p>The install asks you to reboot - <span class="highlight-3">don't do that yet, as there is a need to fix up two errors in the FreeDOS installer for the mbr and bootmenu</span>. Type the letter <span class="highlight-3"><b>n</b></span>.</p>
+	<div class="spacer02"></div>
+		<div class="screenshot"><img src="../lib/images-common/images-qemu-freedos/qemu-boot18.jpg" title="Freedos Installation - do not reboot type n" alt="freedos-do not reboot type n" /></div>
+
+	<div class="spacer02"></div>
+				<h3>Writing a bootsector to your USB stick</h3> 
+							<p>The first error to fix is the mbr with:</p>
+
+<pre>
+fdisk /mbr 1
+</pre>
+							<p>The second error that needs fixing is the bootmenu in your new fdconfig.sys, run:</p>
+<pre>
+cd \
+edit fdconfig.sys 
+</pre>
+							<p>and change the line starting command.com to:</p>
+<pre>
+1234?SHELLHIGH=C:\FDOS\command.com C:\FDOS /D /P=C:\fdauto.bat /K set
+(don't actually change this command, just add "1234?" to the begin of the line (before SHELLHIGH==C:\FDOS\command.com .....
+NOTE it is to read : <span class="highlight-3">1234?</span>
+</pre>
+		<div class="screenshot"><img src="../lib/images-common/images-qemu-freedos/qemu-boot23.jpg" title="Edit fdconfig.sys " alt="fdconfig.sys" /></div>
+	<div class="spacer02"></div>
+							<p><span class="highlight-2">Do not change anything else, as the line depends on your install setup.</span></p>
+
+							<p>Save it and exit "edit":</p>
+<pre>
+[alt]+[f]
+</pre>
+							<p>Once you're back to the command prompt, you can leave qemu.</p>
+
+ 							<p>Test to check if qemu will boot the USB stick.</p>
+<pre>
+qemu -hda /dev/sdb -boot c
+</pre>
+ 							<p>Your USB stick is now bootable and contains a full FreeDOS install of 5.4 MB, for flashing. You really should boot without any drivers <span class="highlight-3">(menu option 4), loading the  himem.sys and emm386 files may otherwise interfere with your flashing programs!</span>:</p>
+
+				<h3>Updating the BIOS</h3>
+							<p>Assuming your PC is up and running, plug in the FreeDOS USB stick, mount it and download the BIOS files needed, as recommended by the manufacturer of your motherboard/BIOS, to the FreeDOS USB stick, then umount the stick.</p>
+
+							<p> Power off your PC, plug in the FreeDOS USB stick, power up, so that you boot to the FreeDOS USB stick and follow the procedures of the manufacturer of your motherboard/BIOS.</p>
+
+
+
+	</div>
+
+			<div id="rev">Content last revised 11/11/2008 0800 UTC</div>
+</div>
+</body>
+</html>

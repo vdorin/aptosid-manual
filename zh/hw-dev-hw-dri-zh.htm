@@ -1,0 +1,1222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>sidux Manuals - Hardware and Graphics Drivers</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+	<style type="text/css" media="all">@import url("../lib/css-js/fw-zh.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<!-- Last translation revision bluewater 23/12/2008 0940 UTC-->
+<div id="menu"> <!-- menu starts here zh lang maintainer plmday-->
+<!--sidux-manual Operating System Manual menu-version-01.96.2009.11.22 -->
+<!-- menu last updated by bluewater 2009.11.22 0500 hrs UTC -->
+	<div id="menu-header">
+	      <a href="http://sidux.com/"><img src="../lib/logos/manual-sidux-logo.png" title="去sidux.com论坛及维基" alt="sidux.com logo" /></a>
+	</div>
+  	<ul id="top-list">
+    		<li><a href="manual-search-zh.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="搜索该指南" alt="Search" />在线－离线搜索</a> </li>
+    		<li><a href="http://manual.sidux.com/meta-manual">Community Software Selections</a></li>
+  	</ul>
+  	<div id="flags-2">
+      			<a href="../flag-index.html"><img src="../lib/logos/sidux-language-64.png" title="选择另一种语言" alt="lang-switch"/></a>
+  	</div>
+  	<ul>
+    		<li  onmouseover="showHide( 1 );" onmouseout="startTime();"><a href="welcome-zh.htm">sidux OS手册</a>
+      			<ul class="sub-menu" id="sm1">
+        			<li><a href="welcome-zh.htm#welcome-gen">sidux OS手册</a></li>
+        			<li><a href="welcome-zh.htm#how-to">如何使用该手册</a></li>
+        			<li><a href="welcome-zh.htm#table-contents">目录</a></li>
+        			<li><a href="help-zh.htm#help-gen">何处获取帮助</a></li>
+        			<li><a href="help-zh.htm#paste">IRC !paste</a></li>
+        			<li><a href="credits-zh.htm#cred-team">功绩簿</a></li>
+        			<li><a href="wel-quickstart-zh.htm#welcome-quick">sidux快速上手指南</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 2 );" onmouseout="startTime();"><a href="cd-dl-burning-zh.htm">ISO Content, Releases, Download Mirrors and Burning</a>
+      			<ul class="sub-menu" id="sm2">
+       			<li><a href="cd-content-zh.htm#cd-content">ISO Content and system requirements</a></li>
+        			<li><a href="sys-admin-release-zh.htm#rolling">滚动升级注意事项</a></li>
+        			<li><a href="cd-dl-burning-zh.htm#download-sidux">sidux镜像，下载及刻录</a></li>
+        			<li><a href="cd-dl-burning-zh.htm#md5">md5校验和</a></li>
+        			<li><a href="cd-dl-burning-zh.htm#burn-nero">Windows下刻录</a></li>
+        			<li><a href="cd-dl-burning-zh.htm#burn-linux">Linux下刻录</a></li>
+       			 	<li><a href="cd-no-gui-burn-zh.htm#burning-no-gui">无GUI刻录</a></li>
+				<li><a href="cd-no-gui-burn-zh.htm#burn-no-gui-gen">Burning without a GUI</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 3 );" onmouseout="startTime();"><a href="live-mode-zh.htm">Live模式</a>
+      			<ul class="sub-menu" id="sm3">
+        			<li><a href="live-mode-zh.htm#rootpw">sidux-Live ISO 上的root用户密码</a></li>
+        			<li><a href="live-mode-zh.htm#live-cd-installsoft">在Live- ISO 运行时安装软件</a></li>
+        			<li><a href="live-mode-zh.htm#ntfs-3g">通过ntfs-3g写NTFS分区</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 4 );" onmouseout="startTime();"><a href="term-konsole-zh.htm">终端／Konsole</a>
+      			<ul class="sub-menu" id="sm4">
+        			<li><a href="term-konsole-zh.htm#sux"> sux / sudo</a></li>
+        			<li><a href="term-konsole-zh.htm#term-kon">终端／Konsole</a></li>
+        			<li><a href="term-konsole-zh.htm#cli-help">命令行帮助</a></li>
+				<li><a href="help-zh.htm#init3-tools">Tools to know in text mode (tty) - init 3</a></li>
+        			<li><a href="term-konsole-zh.htm#term-cmds">Linux终端命令表</a></li>
+        			<li><a href="term-konsole-zh.htm#shell-scripts">安装.sh脚本</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 5 );" onmouseout="startTime();"><a href="cheatcodes-zh.htm">参数</a>
+      			<ul class="sub-menu" id="sm5">
+        			<li><a href="cheatcodes-zh.htm#cheatcodes">sidux特有的Live- ISO 参数</a></li>
+        			<li><a href="cheatcodes-zh.htm#cheatcodes-linux">Linux惯常参数</a></li>
+        			<li><a href="cheatcodes-vga-zh.htm#vga">VGA参数</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 6 );" onmouseout="startTime();"><a href="part-gparted-zh.htm">对你的硬驱进行分区</a>
+      			<ul class="sub-menu" id="sm6">
+        			<li><a href="part-gparted-zh.htm#partition">用GParted对你的HD进行分区</a></li>
+        			<li><a href="part-gparted-zh.htm#ntfs">用GParted调整NTFS分区的大小</a></li>
+        			<li><a href="part-uuid-zh.htm#uuid">UUID, 分区标记及fstab</a></li>
+        			<li><a href="part-cfdisk-zh.htm#disknames">磁盘命名简介</a></li>
+        			<li><a href="part-cfdisk-zh.htm#partition">用cfdisk对你的HD进行分区</a></li>
+        			<li><a href="part-cfdisk-zh.htm#formating">用cfdisk分区后进行格式化</a></li>
+        			<li><a href="part-size-examp-zh.htm#part-example">分区大小实例</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 7 );" onmouseout="startTime();"><a href="hd-install-zh.htm">安装选项</a>
+      			<ul class="sub-menu" id="sm7">
+        			<li><a href="hd-install-zh.htm#Inst-prep">安装准备</a></li>
+        			<li><a href="hd-install-zh.htm#Installation">安装到你的硬盘</a></li>
+        			<li><a href="hd-install-zh.htm#first-hd-boot">第一次启动</a></li>
+        			<li><a href="hd-install-opts-zh.htm#fromiso">利用‘fromiso’参数从ISO文件引导</a></li>
+        			<li><a href="hd-install-opts-zh.htm#fromiso-persist">fromiso与persist</a></li>
+        			<li><a href="hd-install-opts-zh.htm#usb-hd">在移动硬盘上安装</a></li>
+        			<li><a href="hd-install-opts-zh.htm#vtbox">通过VirtualBox安装sidux</a></li>
+        			<li><a href="hd-install-opts-zh.htm#qemu">通过QEMU安装sidux</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 8 );" onmouseout="startTime();"><a href="hw-dev-hw-dri-zh.htm">图形显卡，显示屏， &amp; 驱动器杂烩</a>
+      			<ul class="sub-menu" id="sm8">
+        			<li><a href="hw-dev-hw-dri-zh.htm#hd-ntfs3g">通过ntfs-3g在NTFS分区上执行写操作</a></li>
+        			<li><a href="hw-dev-mon-zh.htm#mon-res">屏幕像素与显示屏</a></li>
+        			<li><a href="hw-dev-mon-zh.htm#xrandr">双显示屏及xrandr</a></li>
+        			<li><a href="hw-dev-mon-zh.htm#mon-binary">双显示屏（用二进制格式的驱动器）</a></li>
+				<li><a href="hw-dev-hw-dri-zh.htm#non-free-3d">Binary, non-free drivers for Nvidia</a></li>
+				<li><a href="hw-dev-hw-dri-zh.htm#non-free-3d-2">non-free drivers for ATI, Radeon and others</a></li>
+				<li><a href="hw-dev-hw-dri-zh.htm#non-free-firmware">Hardware needing non-free firmware drivers</a></li>
+				<li><a href="hw-dev-hw-dri-zh.htm#non-free">Adding non-free to Sources List</a></li>
+				<li><a href="hw-dev-hw-dri-zh.htm#native-nv-ati">FOSS xorg drivers for nVidia, ATI, Radeon, Intel</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 9 );" onmouseout="startTime();"><a href="wm-kde-zh.htm">窗口管理器</a>
+     			 <ul class="sub-menu" id="sm9">
+				<li><a href="wm-xfce-zh.htm#xfce-notes">Useful Xfce extras</a></li>
+				<li><a href="wm-kde-zh.htm#install-add">Useful extra KDE Apps</a></li>
+        			<li><a href="wm-kde-zh.htm#desk-freeze">桌面冻结</a></li>
+        			<li><a href="wm-kde-zh.htm#kde-login">无法登入KDE</a></li>
+        			<li><a href="wm-kde-zh.htm#ch-th">更换主题</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 10 );" onmouseout="startTime();"><a href="lamp-apache-zh.htm">sidux LAMP栈</a>
+      			<ul class="sub-menu" id="sm10">
+        			<li><a href="lamp-apache-zh.htm#serv-apache">sidux LAMP栈</a></li>
+        			<li><a href="lamp-apache-zh.htm#serv-ftp">FTP客户端</a></li>
+        			<li><a href="lamp-apache-zh.htm#serv-sec">安全协议</a></li>
+        			<li><a href="lamp-apache-zh.htm#serv-ssl">SSL</a></li>
+        			<li><a href="lamp-sql-zh.htm#serv-mysql">MySQL配置</a></li>
+        			<li><a href="lamp-ppp-zh.htm#serv-php">Apache里用PHP</a></li>
+        			<li><a href="ntp-server-zh.htm#ntp-server">时钟服务器配置</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 11 );" onmouseout="startTime();"><a href="internet-connecting-zh.htm">因特网及连网</a>
+      			<ul class="sub-menu" id="sm11">
+        			<li><a href="tor-privoxy-zh.htm#tor">Tor</a></li>
+        			<li><a href="tor-privoxy-zh.htm#privoxy">Privoxy</a></li>
+        			<li><a href="internet-connecting-zh.htm#firewalls">防火墙</a></li>
+        			<li><a href="samba-zh.htm#configure">设置SAMBA（Windows）</a></li>
+        			<li><a href="samba-zh.htm#setup">Samba服务器配置</a></li>
+        			<li><a href="ssh-zh.htm#ssh-fs">SSH远程挂载</a></li>
+        			<li><a href="ssh-zh.htm#ssh-x">透过SSH运行X窗口应用程序</a></li>
+        			<li><a href="ssh-zh.htm#ssh-f">通过Konqueror用GUI化的SSH</a></li>
+        			<li><a href="ssh-zh.htm#ssh-w">从Windows-PC通过X转发用SSH</a></li>
+        			<li><a href="ssh-zh.htm#ssh">SSH与安全</a></li>
+        			<li><a href="internet-connecting-zh.htm#dial-mod">56k调制解调器</a></li>
+        			<li><a href="internet-connecting-wpagui-zh.htm#wpa-roaming-gui">WiFi－漫游的WPA-GUI</a></li>
+        			<li><a href="internet-connecting-wpa-zh.htm#wpa-basic">WiFi－基本配置指南</a></li>
+        			<li><a href="internet-connecting-wpa-zh.htm#wpa">WiFi－wpasupplicant</a></li>
+        			<li><a href="internet-connecting-zh.htm#netcardconfig">上线－Ceni</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 12 );" onmouseout="startTime();"><a href="sys-admin-apt-zh.htm">dist-upgrade and package management</a>
+      			<ul class="sub-menu" id="sm12">
+        			<li><a href="sys-admin-apt-zh.htm#apt-cook">APT指南秘笈与源表</a></li>
+        			<li><a href="sys-admin-apt-zh.htm#apt-install">安装一个新的软件包</a></li>
+        			<li><a href="sys-admin-apt-zh.htm#apt-delete">删除一个软件包</a></li>
+        			<li><a href="sys-admin-apt-zh.htm#apt-downgrade">软件包隔离与降级</a></li>
+        			<li><a href="sys-admin-apt-zh.htm#apt-cache">通过apt-cache搜索软件包</a></li>
+        			<li><a href="sys-admin-apt-zh.htm#gui-pacsea">GUI Package searching</a></li>
+        			<li><a href="siduxcc-zh.htm#hermes">sidux-hermes</a></li>
+        			<li><a href="sys-admin-upgrade-zh.htm#live-cd-upgrade">用Live- ISO 升级</a></li>
+				<li><a href="sys-admin-apt-locarmirr-zh.htm#approx">dist-upgrade of multiple PCs on a LAN</a></li>
+        			<li><a href="sys-admin-kern-upg-zh.htm#kern-upgrade">升级内核</a></li>
+        			<li><a href="sys-admin-apt-zh.htm#apt-upgrade">升级已安装的系统－dist-upgrade - Overview</a></li>
+				<li><a href="sys-admin-apt-zh.htm#du-st">升级已安装的系统－dist-upgrade - The Steps</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 13 );" onmouseout="startTime();"><a href="sys-admin-gen-zh.htm">系统管理</a>
+      			<ul class="sub-menu" id="sm13">
+				<li><a href="hd-install-ezh.htm#adduser">Adding a new user</a></li>
+        			<li><a href="home-zh.htm#home-bu">移动/home</a></li>
+        			<li><a href="siduxcc-zh.htm#siduxcc">sidux控制中心</a></li>
+        			<li><a href="sys-admin-rdiff-zh.htm#rdiff">用rdiff备份</a></li>
+        			<li><a href="sys-admin-rsync-zh.htm#rsync">用rsync备份</a></li>
+        			<li><a href="vir-rkits-zh.htm#virus-rkits">病毒和刨根工具扫描程序</a></li>
+        			<li><a href="sys-admin-gen-zh.htm#start-services">启用／停用服务</a></li>
+        			<li><a href="sys-admin-gen-zh.htm#pw-lost">遗失root用户密码</a></li>
+        			<li><a href="sys-admin-gen-zh.htm#fonts">字体</a></li>
+        			<li><a href="sys-admin-gen-zh.htm#cups">CUPS - Printing System</a></li>
+				<li><a href="sys-admin-gen-zh.htm#sound">Sound Mixers</a></li>
+        			<li><a href="sys-admin-gen-zh.htm#init">sidux运行段位－init</a></li>
+        			<li><a href="sys-admin-grub-bootman2-zh.htm#mbr-grub-boot">MBR覆写引导扇区</a></li>
+        			<li><a href="sys-admin-grub-bootman2-zh.htm#dual-boot">双启动或多启动</a></li>
+        			<li><a href="bios-freedos-zh.htm#bois-prep">通过FreeDOS升级BIOS</a></li>
+        			<li><a href="sys-admin-grub-bootman2-zh.htm#boot-grub-floppy">创建一张引导软盘</a></li>
+        			<li><a href="sys-admin-grub-bootman2-zh.htm#remove-grub">从MBR移除grub</a></li>
+        			<li><a href="sys-admin-grub-bootman2-zh.htm#what-is-grub">Grub引导管理器</a></li>
+      			</ul>
+    		</li>
+  	</ul>
+<!-- menu ends here --> </div>
+<div id="main-page">
+		<div class="divider" id="native-nv-ati">
+			<h2>Hints for hardware with non-free requirements</h2>
+							<p class="highlight-3">A sidux live-ISO will only provide dfsg-free software.</p>
+			</div>
+			<div class="divider" id="non-free">
+					<h2>Sources List</h2>
+
+							<p>As the sidux iso contains only dfsg free software, you will probably want to add <span class="highlight-3">contrib non-free</span> to your <span class="highlight-3"> /etc/apt/sources.list.d/debian.list </span>and <span class="highlight-3"> /etc/apt/sources.list.d/sidux.list</span>. Your lines should now look something like this, depending on your choice of mirror:</p>
+<pre>
+# Debian
+deb http://ftp.de.debian.org/debian unstable main contrib non-free
+# deb-src http://ftp.de.debian.org/debian unstable main contrib non-free
+</pre>
+<pre>
+# sidux
+deb http://sidux.com/debian/ sid main fix.main
+#deb-src http://sidux.com/debian/ sid main fix.main
+</pre>
+
+							<p>After altering your sources you need to <span class="highlight-3"> apt-get update</span> before searching for or installing new packages, ( apt-get update is good practice before installing any package).</p>
+
+							<p><a href="http://www.debian.org/mirrors/">List of Debian Servers and mirrors current status</a>.</p>
+
+	</div>
+	<div class="divider" id="foss-xorg">
+			<h2 id="top-header">Open Source Xorg drivers for ATI/AMD, Intel &amp; nVidia</h2>
+
+							<p>Open Source Xorg drivers for nVidia (nouveau), ATI/AMD (Radeon), Intel and others are pre-installed with aptosid. </p>
+
+							<p><span class="highlight-3"> Note: An xorg.conf is not generally needed for open source drivers.</span></p>
+
+							<p>If you have been running proprietary drivers and wish to revert back to opensource drivers, edit <span class="highlight-3">/etc/X11/xorg.conf.d/xx-xxxx.conf</span> with an editor with root permissions. Find the section that reads SECTION DEVICE and change the display driver to read <span class="highlight-2">nouveau</span> OR <span class="highlight-2">radeon</span> OR <span class="highlight-2">intel</span> (to name but a few).</p>
+
+							<p class="highlight-2">Editing an xorg.conf file is entirely at your own risk.</p>
+
+							<p>More information about: <a href= "http://www.x.org/wiki/radeon"> ATI/AMD </a> &nbsp; <a href= "http://www.x.org/wiki/IntelGraphicsDriver"> Intel</a> &nbsp; <a href= "http://nouveau.freedesktop.org/wiki/FeatureMatrix"> nouveau</a> &nbsp; <a href= "http://xorg.freedesktop.org"> X.Org</a></p>
+	      </div>
+	<div class="divider" id="non-free-3d">
+		<h2>Binary, closed source drivers for: nVidia with dmakms &amp; xorg.conf.d</h2>
+
+							<p>For the most complete and accurate listing of supported nvidia GPUs please see the Supported Products List available from the <a href="http://www.nvidia.com/object/unix.html"> NVIDIA Linux Graphics Driver download page</a>.</p>
+
+							<p>You can also read <a href="http://www.nvnews.net/vbulletin/showthread.php?t=122606">nvnews</a> for other options.</p>
+
+							<p>New and old installs will need to ensure that the systemwide config <span class="highlight-3">/etc/X11/xorg.conf.d</span> exists and add a file to the directory called <span class="highlight-3">20-nvidia.conf</span> : </p>
+<pre>
+mkdir /etc/X11/xorg.conf.d
+touch /etc/X11/xorg.conf.d/20-nvidia.conf
+</pre>
+
+							<p>With your favourite text editor, (e.g. kwrite, kate, mousepad, mcedit, vi, vim) open the file:</p>
+
+<pre>
+&lt;editor&gt; /etc/X11/xorg.conf.d/20-nvidia.conf
+</pre>
+							<p>and add the following codebox in its entirety to 20-nvidia.conf:</p>
+<pre>
+#
+Section "Device"
+         Identifier      "Device 0"
+         Driver          "nvidia"
+EndSection
+# This is a trailing line, it is needed so that End Section is not the last line
+</pre>
+							<p>If you have more than one graphics card you will need ascertain the PCI and to include it in the 20-nvidia.conf:</p>
+<pre>
+lspci | grep -i vga
+</pre>
+							<p>This should return syntax similar to this:</p>
+<pre>
+01:00.0 VGA compatible controller:
+</pre>
+							<p>Add the 01:00.0 busid as an extra line under the 'Driver' line, however note that the syntax is <span class="highlight-3">PCI:x:y:z:</span> with zeros dropped and colons added,  therefore:</p>
+
+<pre>
+BusID		 "PCI:1:0:0"
+</pre>
+					<h4>Installing the nvidia drivers</h4>
+							<p><span class="highlight-3">NOTE: Use apt-cache search nvidia and apt-cache show &lt;package&gt; to ascertain the correct driver for you. There are basically 2 types of nvidia drivers, the current Debian Sid 3D drivers  and the legacy Debian Sid 3D drivers.</span></p>
+
+					<h5>For current 3d nvidia drivers  &ge; GeForce 6xxx :</h5>
+
+							<p>Prepare the module:</p>
+<pre>
+apt-get install nvidia-kernel-source nvidia-kernel-common dmakms
+</pre>
+							<p>Then activate Dynamic Module-Assistant Kernel Module Support (dmakms) for nvidia, so that the next time the Linux kernel is updated a nvidia module is prepared for it too, without manual intervention. To do that, add <span class="highlight-3">nvidia-kernel-source</span> to the <span class="highlight-3">/etc/default/dmakms </span>configuration file:</p>
+
+<pre>
+echo nvidia-kernel-source >> /etc/default/dmakms
+</pre>
+
+							<p>Then:</p>
+<pre>
+m-a a-i nvidia-kernel-source
+</pre>
+							<p>Followed by:</p>
+<pre>
+apt-get install nvidia-glx
+</pre>
+
+						      <p>Reboot PC for installation of the module to take effect.</p>
+
+						      <p>When xorg updates you only need to reinstall nvidia-glx:</p>
+<pre>
+apt-get install --reinstall nvidia-glx
+</pre>
+
+						      <p>When the nvidia-kernel-source is updated:</p>
+<pre>
+m-a a-i nvidia-kernel-source
+apt-get install --reinstall nvidia-glx
+</pre>
+						      <p>Reboot PC for installation of the module to take effect.</p>
+
+					      <h4>Naming scheme for legacy nvidia drivers in Debian</h4>
+						  <ul>
+						      <li>nvidia-kernel-legacy-71xx is for GeForce 2</li>
+						      <li>nvidia-kernel-legacy-96xx is for GeForce 4</li>
+						      <li>nvidia-kernel-legacy-173xx is for GeForce 5</li>
+						  </ul>
+
+					<h5>Example for legacy 3d nvidia drivers using &le; GeForce 5xxx :</h5>
+
+							<p>For other legacy drivers just replace 173xx number with your driver number.</p>
+
+<pre>
+m-a a-i nvidia-kernel-legacy-173xx-source &amp;&amp; apt-get install nvidia-glx-legacy-173xx dmakms
+</pre>
+
+							<p>Alter dmakms:</p>
+<pre>
+echo nvidia-kernel-legacy-173xx-source >> /etc/default/dmakms
+</pre>
+
+						      <p>When xorg updates you only need to reinstall nvidia-glx-legacy:</p>
+<pre>
+apt-get install --reinstall nvidia-glx-legacy-173xx
+</pre>
+					<h4>Module load failure</h4>
+
+							<p>Should nvidia fail to load, for whatever reason:</p>
+<pre>
+modprobe nvidia
+</pre>
+							<p>Then reboot the computer.</p>
+
+
+							<p>Should the module still fail to load:</p>
+ <pre>
+ m-a a-i -f nvidia-kernel-source
+</pre>
+							<p>or</p>
+ <pre>
+ m-a a-i -f nvidia-kernel-legacy-173xx-source
+</pre>
+							<p>This rebuilds the module <span class="highlight-3">then reboot.</span></p>
+
+						      <p>Read:</p>
+<pre>
+$ /usr/share/doc/dmakms
+</pre>
+
+		</div>
+	<div class="divider" id="non-free-3d-2">
+			<h2>ATI/AMD, Radeon and other video drivers</h2>
+
+						<h6>2D Drivers</h6>
+							<p>The drivers for the X.Org X server (see xserver-xorg for a further description) provides support in 2D for NVIDIA Riva, TNT, GeForce, and Quadro cards and the ATI Mach, Rage, Radeon, and FireGL cards along with atimisc, r128, r6xx/r7xx and radeon sub-drivers. Radeon and Intel both support 2d acceleration (textured xv) for video playback.</p>
+
+					  <h6>3D Drivers</h6>
+							<p>Some ATI/AMD cards also support 3D, (and KDE animations), with <span class="highlight-3">xserver-xorg-video-radeon</span>. So far chipsets up to r700 are supported.</p>
+
+							<p>To automatically inherit newly packaged non-free firmware when they get updated for 2D and 3D video cards:</p>
+
+<pre>
+apt-get install firmware-linux
+</pre>
+							<p>Then reboot the computer.</p>
+
+		</div>
+
+	<div class="divider" id="non-free-firmware">
+				<h2>Firmware drivers non-free</h2>
+							<p>The required firmware can be determined with the following device/ firmware enumeration or by using the newly developed fw-detect script (packaged in sidux-scripts).</p>
+<pre>
+$ fw-detect
+</pre>
+							<p>The output of fw-detect describes the commands needed to install and activate the firmware:</p>
+
+							<p>Example:</p>
+<pre>
+#Detected driver that requires firmware to operate
+#Follow these instructions to obtain the correct firmware
+# and activate the zd1211rw driver:
+apt-get update
+apt-get install zd1211-firmware
+modprobe -r zd1211rw
+modprobe zd1211rw
+</pre>
+							<p>To install firmware from git repos, you need to:</p>
+<pre>
+apt-get install git-core
+</pre>
+				    <h5>non-free firmware debs on a stick</h5>
+							<p><span class="highlight-3">Should you need to prefetch firmware .debs, to put on a usb-key to transfer the files to another computer, you can download them as either a zip or tar.gz file from <a href="http://cdimage.debian.org/cdimage/unofficial/non-free/firmware/sid/current/">http://cdimage.debian.org/cdimage/unofficial/non-free/firmware/sid/current/</a> and extract it to a folder called firmware, you should see a number of .deb files. Next download <a href="http://packages.debian.org/sid/firmware-linux-free"> firmware-linux-free*.deb </a> and add it to all the other debs in the folder you extracted the non-free firmware to. Then transfer them with the stick to the computer that needs the non-free firmware and:</span></p>
+
+<pre>
+dpkg -i firmware-linux-nonfree*.deb
+</pre>
+
+							<p>We try to provide packages for legally redistributable firmware from our non-free repositories, but not all vendors allow this.</p>
+	</div>
+	<div class="divider" id="fircat">
+				      <h3>Firmware Categories</h3>
+
+
+				<ul id="fwul">
+					<li class="fwindex"><h4>
+					    <a href="#802.11">WiFi 802.11</a></h4></li>
+					<li class="fwindex"><h4>
+					    <a href="#bluetooth">Bluetooth</a></h4></li>
+					<li class="fwindex"><h4>
+					    <a href="#eth">Ethernet</a></h4></li>
+					<li class="fwindex"><h4>
+					    <a href="#modem">Modem</a></h4></li>
+					<li class="fwindex"><h4>
+					    <a href="#serial">Serial/USB</a></h4></li>
+
+				</ul>
+				<ul id="fwul-1">
+
+					<li class="fwindex"><h4>
+					     <a href="#audio">Audio</a></h4></li>
+					<li class="fwindex"><h4>
+					     <a href="#radio">Radio</a></h4></li>
+					<li class="fwindex"><h4>
+					     <a href="#tv">TV</a></h4></li>
+					<li class="fwindex"><h4>
+					     <a href="#cpu">CPU</a></h4></li>
+					<li class="fwindex"><h4>
+					     <a href="#video">Video</a></h4></li>
+					<li class="fwindex"><h4>
+					     <a href="#vga">VGA</a></h4></li>
+
+
+				</ul>
+				<dl class="firmware">
+					<dt class="802_11"><strong><a name="802.11">802.11</a></strong></dt>
+					<dd class="devices">
+						<dl class="class">
+							<dt class="device 802_11" id="acx">Texas Instruments ACX100 (22 Mbit/s)/ ACX111 (54 MBit/s)</dt>
+							<dd>
+								<dl class="dvals">
+
+									<dt class="drivers"></dt>
+									<dd>acx*</dd>
+									<dt class="url"></dt>
+									<dd><a href="http://www.kazer.org/acx-firmware-20060207.tar.bz2">http://www.kazer.org/acx-firmware-20060207.tar.bz2</a></dd>
+									<dt class="fw"></dt>
+									<dd><span class="link"><a href="http://acx100.sourceforge.net/wiki/Firmware">http://acx100.sourceforge.net/wiki/Firmware</a></span></dd>
+									<dt class="ok"></dt>
+
+									<dd><ul><li>/lib/firmware/tiacx</li> </ul></dd>
+								</dl>
+							</dd>
+							<dt class="device 802_11 usb" id="atmel">Atmel AT76c50x 11 MBit/s</dt>
+							<dd>
+								<dl class="dvals">
+									<dt class="drivers"></dt>
+
+									<dd>atmel* at76_usb</dd>
+									<dt class="fw"></dt>
+									<dd>apt-get install atmel-firmware</dd>
+									<dt class="ok"></dt>
+									<dd><ul><li>/lib/firmware/atmel_at76c5</li> </ul></dd>
+								</dl>
+							</dd>
+
+							<dt class="device 802_11" id="b43">Broadcom, b43/ b43legacy</dt>
+							<dd>
+								<dl class="dvals">
+									<dt class="drivers"></dt>
+									<dd>b43 b43legacy</dd>
+									<dt class="fw"></dt>
+									<dd>apt-get install b43-fwcutter</dd>
+
+									<dt class="ok"></dt>
+									<dd><ul><li>/lib/firmware/b43/b0g0bsinitvals5.fw</li>  <li>/lib/firmware/b43/b0g0initvals5.fw</li>  <li>/lib/firmware/b43/ucode5.fw</li> </ul></dd>
+									<dt class="note"></dt>
+									<dd>While this shouldn't be required for most 802.11b/g wlan cards anymore, the proprietary firmware gets preferred by b43, in case it is installed.</dd>
+								</dl>
+
+							</dd>
+							<dt class="device 802_11" id="ipw2100">Intel ipw2100 (11 MBit/s) and Intel ipw2200 (54 MBit/s)</dt>
+							<dd>
+								<dl class="dvals">
+									<dt class="drivers"></dt>
+									<dd>ipw2100 ipw2200</dd>
+									<dt class="fw"></dt>
+									<dd>apt-get install firmware-ipw2x00</dd>
+
+									<dt class="ok"></dt>
+									<dd><ul><li>/lib/firmware/ipw2100</li> </ul></dd>
+								</dl>
+							</dd>
+							<dt class="device 802_11" id="iwl">Intel ipw3945/ iwlwifi, 54 Mbit/s and Intel ipw4965, iwl1000/ iwl5xxx, iwl6000, iwl6050/ iwlagn, draft-n</dt>
+							<dd>
+								<dl class="dvals">
+
+									<dt class="drivers"></dt>
+									<dd>iwl4965 iwl3945 iwlwifi-* iwlagn</dd>
+									<dt class="fw"></dt>
+									<dd>apt-get install firmware-iwlwifi</dd>
+									<dt class="ok"></dt>
+									<dd><ul><li>/lib/firmware/iwlwifi-3945-1.ucode</li>  <li>/lib/firmware/iwlwifi-3945-2.ucode</li>  <li>/lib/firmware/iwlwifi-4965-1.ucode</li>  <li>/lib/firmware/iwlwifi-4965-2.ucode</li>  <li>/lib/firmware/iwlwifi-5000-1.ucode</li>  <li>/lib/firmware/iwlwifi-5000-2.ucode</li>  <li>/lib/firmware/iwlwifi-5150-2.ucode</li> </ul></dd>
+
+								</dl>
+							</dd>
+							<dt class="device 802_11 usb" id="p54pci">Intersil prism54 (p54pci/ p54usb), 54 MBit/s</dt>
+							<dd>
+								<dl class="dvals">
+									<dt class="drivers"></dt>
+									<dd>p54pci p54usb prism54</dd>
+									<dt class="fw"></dt>
+
+									<dd><span class="link"><a href="http://jbnote.free.fr/prism54usb/">http://jbnote.free.fr/prism54usb/</a></span></dd>
+								</dl>
+							</dd>
+							<dt class="device 802_11" id="ralink">RaLink rt61, rt73, rt2860 and rt2870 54 MBit/s</dt>
+							<dd>
+								<dl class="dvals">
+									<dt class="drivers"></dt>
+									<dd>rt73* rt61* rt28*</dd>
+
+									<dt class="fw"></dt>
+									<dd>apt-get install firmware-ralink</dd>
+									<dt class="ok"></dt>
+									<dd><ul><li>/lib/firmware/rt73</li> </ul></dd>
+									<dt class="note"></dt>
+									<dd>rt2860 and rt2870 from staging</dd>
+								</dl>
+
+							</dd>
+							<dt class="device 802_11" id="zd1201">ZyDAS zd1201 11 MBit/s</dt>
+							<dd>
+								<dl class="dvals">
+									<dt class="drivers"></dt>
+									<dd>zd1201</dd>
+									<dt class="fw"></dt>
+									<dd><span class="link"><a href="http://surfnet.dl.sourceforge.net/sourceforge/linux-lc100020/zd1201-0.14-fw.tar.gz">http://surfnet.dl.sourceforge.net/sourceforge/linux-lc100020/zd1201-0.14-fw.tar.gz</a></span></dd>
+
+									<dt class="ok"></dt>
+									<dd><ul><li>/lib/firmware/zd1201</li> </ul></dd>
+								</dl>
+							</dd>
+							<dt class="device 802_11" id="zd1211">ZyDAS zd1211 54 MBit/s</dt>
+							<dd>
+								<dl class="dvals">
+
+									<dt class="drivers"></dt>
+									<dd>zd1211*</dd>
+									<dt class="fw"></dt>
+									<dd>apt-get install zd1211-firmware</dd>
+									<dt class="ok"></dt>
+									<dd><ul><li>/lib/firmware/zd1211/zd1211</li> </ul></dd>
+								</dl>
+
+							</dd>
+						</dl>
+					</dd>
+
+							<dd><a href="hw-dev-hw-dri-en.htm#fircat">Back to Firmware Categories</a></dd>
+
+					<dt class="audio"><strong><a name="audio">Audio</a></strong></dt>
+					<dd class="devices">
+						<dl class="class">
+							<dt class="device audio" id="cs42xx">Cirrus Logic (Sound Fusion) CS4280/CS461x/CS462x/CS463x</dt>
+							<dd>
+
+								<dl class="dvals">
+									<dt class="drivers"></dt>
+									<dd>snd-cs46xx</dd>
+									<dt class="fw"></dt>
+									<dd><span class="link"><a href="http://bugs.debian.org/464197">http://bugs.debian.org/464197</a></span></dd>
+									<dt class="ok"></dt>
+									<dd><ul><li>/lib/firmware/cs46xx/cs46xx-old.fw</li> </ul></dd>
+
+									<dt class="note"></dt>
+									<dd>follow the howto described in the bugreport carefully, MD5: 6510e1759d85b0627d36367febbb3a6a</dd>
+								</dl>
+							</dd>
+							<dt class="device audio usb" id="emi26">EMI 2|6</dt>
+							<dd>
+								<dl class="dvals">
+									<dt class="drivers"></dt>
+
+									<dd>emi26</dd>
+									<dt class="fw"></dt>
+									<dd><span class="link"><a href="http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware-from-kernel.git;a=tree;f=emi26;hb=HEAD">http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware-from-kernel.git;a=tree;f=emi26;hb=HEAD</a><span class="target">/lib/firmware/emi26/</span></span> </dd>
+									<dt class="ok"></dt>
+									<dd><ul><li>/lib/firmware/emi26/bitstream.bin</li>  <li>/lib/firmware/emi26/firmware.fw</li>  <li>/lib/firmware/emi26/loader.fw</li> </ul></dd>
+
+								</dl>
+							</dd>
+							<dt class="device audio usb" id="emi62">EMI 6|2m</dt>
+							<dd>
+								<dl class="dvals">
+									<dt class="drivers"></dt>
+									<dd>emi62</dd>
+									<dt class="fw"></dt>
+
+									<dd><span class="link"><a href="http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware-from-kernel.git;a=tree;f=emi62;hb=HEAD">http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware-from-kernel.git;a=tree;f=emi62;hb=HEAD</a><span class="target">/lib/firmware/emi62</span></span> </dd>
+									<dt class="ok"></dt>
+									<dd><ul><li>/lib/firmware/emi62/bitstream.bin</li>  <li>/lib/firmware/emi62/loader.fw</li>  <li>/lib/firmware/emi62/midi.fw</li>  <li>/lib/firmware/emi62/spdif.fw</li> </ul></dd>
+
+								</dl>
+							</dd>
+							<dt class="device audio" id="sb16">Sound Blaster 16/AWE CSP</dt>
+							<dd>
+								<dl class="dvals">
+									<dt class="drivers"></dt>
+									<dd>sb16</dd>
+									<dt class="fw"></dt>
+
+									<dd><span class="link"><a href="http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware-from-kernel.git;a=tree;f=sb16;hb=HEAD">http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware-from-kernel.git;a=tree;f=sb16;hb=HEAD</a><span class="target">/lib/firmware/sb16</span></span> </dd>
+								</dl>
+							</dd>
+							<dt class="device audio" id="snd-korg1212">Korg 1212 IO</dt>
+							<dd>
+								<dl class="dvals">
+									<dt class="drivers"></dt>
+
+									<dd>snd-korg1212</dd>
+									<dt class="fw"></dt>
+									<dd><span class="link"><a href="http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware-from-kernel.git;a=tree;f=korg;hb=HEAD">http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware-from-kernel.git;a=tree;f=korg;hb=HEAD</a><span class="target">/lib/firmware/korg</span></span> </dd>
+									<dt class="ok"></dt>
+									<dd><ul><li>/lib/firmware/smctr/k1212.dsp</li> </ul></dd>
+								</dl>
+
+							</dd>
+							<dt class="device audio" id="snd-maestro3">ESS Allegro Maestro3</dt>
+							<dd>
+								<dl class="dvals">
+									<dt class="drivers"></dt>
+									<dd>snd-maestro3</dd>
+									<dt class="fw"></dt>
+									<dd><span class="link"><a href="http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware-from-kernel.git;a=tree;f=HEAD">http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware-from-kernel.git;a=tree;f=HEAD</a><span class="target">/lib/firmware/ess</span></span> </dd>
+
+									<dt class="ok"></dt>
+									<dd><ul><li>/lib/firmware/ess/maestro3_assp_kernel.fw</li>  <li>/lib/firmware/ess/maestro3_assp_minisrc.fw</li> </ul></dd>
+								</dl>
+							</dd>
+							<dt class="device audio" id="snd-ymfpci">Yamaha YMF724/740/744/754</dt>
+							<dd>
+
+								<dl class="dvals">
+									<dt class="drivers"></dt>
+									<dd>snd-ymfpci</dd>
+									<dt class="fw"></dt>
+									<dd><span class="link"><a href="http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware-from-kernel.git;a=tree;f=yamaha;hb=HEAD">http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware-from-kernel.git;a=tree;f=yamaha;hb=HEAD</a><span class="target">/lib/firmware/yamaha</span></span> </dd>
+									<dt class="ok"></dt>
+									<dd><ul><li>/lib/firmware/yamaha/ds1_ctrl.fw</li>  <li>/lib/firmware/yamaha/ds1_dsp.fw</li>  <li>/lib/firmware/yamaha/ds1e_ctrl.fw</li> </ul></dd>
+
+								</dl>
+							</dd>
+						</dl>
+					</dd>
+
+							<dd><a href="hw-dev-hw-dri-en.htm#fircat">Back to Firmware Categories</a></dd>
+
+					<dt class="bluetooth"><strong><a name="bluetooth">Bluetooth</a></strong></dt>
+					<dd class="devices">
+						<dl class="class">
+							<dt class="device bluetooth" id="bcm2033">Broadcom Blutonium Bluetooth chipset (BCM2033)</dt>
+
+							<dd>
+								<dl class="dvals">
+									<dt class="drivers"></dt>
+									<dd>bcm2033</dd>
+									<dt class="fw"></dt>
+									<dd>apt-get install bcm2033</dd>
+								</dl>
+							</dd>
+
+						</dl>
+					</dd>
+
+							<dd><a href="hw-dev-hw-dri-en.htm#fircat">Back to Firmware Categories</a></dd>
+
+					<dt class="cpu"><strong><a name="cpu">CPU</a></strong></dt>
+					<dd class="devices">
+						<dl class="class">
+							<dt class="device cpu" id="intel">Intel</dt>
+							<dd>
+								<dl class="dvals">
+
+									<dt class="fw"></dt>
+									<dd>apt-get install intel-microcode</dd>
+								</dl>
+							</dd>
+						</dl>
+					</dd>
+
+							<dd><a href="hw-dev-hw-dri-en.htm#fircat">Back to Firmware Categories</a></dd>
+
+					<dt class="eth"><strong><a name="eth">Ethernet</a></strong></dt>
+					<dd class="devices">
+
+						<dl class="class">
+							<dt class="device eth" id="bnx2">Broadcom NetXtremeII (BCM5706/5708/5709/5716, bnx)</dt>
+							<dd>
+								<dl class="dvals">
+									<dt class="drivers"></dt>
+									<dd>bnx2</dd>
+									<dt class="fw"></dt>
+									<dd>apt-get install firmware-bnx2</dd>
+
+								</dl>
+							</dd>
+							<dt class="device eth" id="bnx2x">Broadcom NetXtremeII 10Gb (BCM57710/57711/57711E, bnx2x)</dt>
+							<dd>
+								<dl class="dvals">
+									<dt class="drivers"></dt>
+									<dd>bnx2x</dd>
+									<dt class="fw"></dt>
+
+									<dd>apt-get install firmware-bnx2x</dd>
+								</dl>
+							</dd>
+							<dt class="device eth" id="cxgb3">Chelsio Communications T3 10Gb Ethernet</dt>
+							<dd>
+								<dl class="dvals">
+									<dt class="drivers"></dt>
+									<dd>cxgb3</dd>
+
+									<dt class="fw"></dt>
+									<dd><span class="link"><a href="http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware.git;a=tree;f=cxgb3">http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware.git;a=tree;f=cxgb3</a><span class="target">/lib/firmware/cxgb3/</span></span> </dd>
+									<dt class="ok"></dt>
+									<dd><ul><li>/lib/firmware/cxgb3/*.bin</li> </ul></dd>
+								</dl>
+							</dd>
+
+							<dt class="device eth" id="e100">Intel e100 (82559 D101M/ D101M, 82551-F, 82551-10), 100 MBit/s</dt>
+							<dd>
+								<dl class="dvals">
+									<dt class="drivers"></dt>
+									<dd>e100</dd>
+									<dt class="fw"></dt>
+									<dd>apt-get install firmware-linux</dd>
+
+								</dl>
+							</dd>
+							<dt class="device eth usb" id="klsi">KLSI KL5USB101-based</dt>
+							<dd>
+								<dl class="dvals">
+									<dt class="drivers"></dt>
+									<dd>klsi</dd>
+									<dt class="fw"></dt>
+
+									<dd>apt-get install firmware-linux</dd>
+								</dl>
+							</dd>
+							<dt class="device eth" id="smctr">SMC ISA/MCA Token Ring</dt>
+							<dd>
+								<dl class="dvals">
+									<dt class="drivers"></dt>
+									<dd>smctr</dd>
+
+									<dt class="fw"></dt>
+									<dd><span class="link"><a href="http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware-from-kernel.git;a=blob;f=tr_smctr.bin;hb=HEAD">http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware-from-kernel.git;a=blob;f=tr_smctr.bin;hb=HEAD</a></span></dd>
+									<dt class="ok"></dt>
+									<dd><ul><li>/lib/firmware/smctr/tr_smctr.bin</li> </ul></dd>
+								</dl>
+							</dd>
+							<dt class="device eth" id="sun">SUN Cassini GBit/s</dt>
+
+							<dd>
+								<dl class="dvals">
+									<dt class="drivers"></dt>
+									<dd>sun</dd>
+									<dt class="fw"></dt>
+									<dd><span class="link"><a href="http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware-from-kernel.git;a=tree;f=sun;hb=HEAD">http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware-from-kernel.git;a=tree;f=sun;hb=HEAD</a><span class="target">/lib/firmware/sun</span></span> </dd>
+								</dl>
+
+							</dd>
+							<dt class="device eth" id="tg3">Broadcom Tigon3 (tg3)</dt>
+							<dd>
+								<dl class="dvals">
+									<dt class="drivers"></dt>
+									<dd>tg3</dd>
+									<dt class="fw"></dt>
+									<dd>apt-get install firmware-linux</dd>
+
+									<dt class="ok"></dt>
+									<dd><ul><li>/lib/firmware/tigon/tg3.bin</li>  <li>/lib/firmware/tigon/tg3_tso5.bin</li>  <li>/lib/firmware/tigon/tg3_tso.bin</li> </ul></dd>
+								</dl>
+							</dd>
+						</dl>
+					</dd>
+
+							<dd><a href="hw-dev-hw-dri-en.htm#fircat">Back to Firmware Categories</a></dd>
+
+					<dt class="modem"><strong><a name="modem">Modem</a></strong></dt>
+					<dd class="devices">
+						<dl class="class">
+							<dt class="device modem" id="dsp56k">Atari DSP56k</dt>
+							<dd>
+								<dl class="dvals">
+									<dt class="drivers"></dt>
+									<dd>dsp56k</dd>
+
+									<dt class="fw"></dt>
+									<dd><span class="link"><a href="http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware-from-kernel.git;a=tree;f=dsp56k;hb=HEAD">http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware-from-kernel.git;a=tree;f=dsp56k;hb=HEAD</a><span class="target">/lib/firmware/dsp56k</span></span> </dd>
+								</dl>
+							</dd>
+							<dt class="device modem usb" id="eagle">Eagle ADSL</dt>
+							<dd>
+								<dl class="dvals">
+
+									<dt class="drivers"></dt>
+									<dd>eagle</dd>
+									<dt class="fw"></dt>
+									<dd><span class="link"><a href="http://eagle-usb.org/ueagle-atm/non-free/">http://eagle-usb.org/ueagle-atm/non-free/</a></span></dd>
+								</dl>
+							</dd>
+						</dl>
+					</dd>
+
+							<dd><a href="hw-dev-hw-dri-en.htm#fircat">Back to Firmware Categories</a></dd>
+
+					<dt class="radio"><strong><a name="radio">Radio</a></strong></dt>
+					<dd class="devices">
+						<dl class="class">
+							<dt class="device radio usb" id="dabusb">Digital Audio Broadcasting (DAB) Receiver</dt>
+							<dd>
+								<dl class="dvals">
+									<dt class="drivers"></dt>
+									<dd>dabusb</dd>
+
+									<dt class="fw"></dt>
+									<dd>apt-get install firmware-linux</dd>
+									<dt class="ok"></dt>
+									<dd><ul><li>/lib/firmware/dabusb/bitstream.bin</li>  <li>/lib/firmware/dabusb/firmware.fw</li> </ul></dd>
+								</dl>
+							</dd>
+
+						</dl>
+					</dd>
+
+							<dd><a href="hw-dev-hw-dri-en.htm#fircat">Back to Firmware Categories</a></dd>
+
+					<dt class="serial"><strong><a name="serial">Serial</a></strong></dt>
+					<dd class="devices">
+						<dl class="class">
+							<dt class="device serial" id="computone">Computone IntelliPort Plus</dt>
+							<dd>
+								<dl class="dvals">
+
+									<dt class="drivers"></dt>
+									<dd>computone</dd>
+									<dt class="fw"></dt>
+									<dd><span class="link"><a href="http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware-from-kernel.git;a=blob;f=intelliport2.bin;hb=HEAD">http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware-from-kernel.git;a=blob;f=intelliport2.bin;hb=HEAD</a></span></dd>
+								</dl>
+							</dd>
+							<dt class="device serial usb" id="edgeport">Inside Out Edgeport</dt>
+
+							<dd>
+								<dl class="dvals">
+									<dt class="drivers"></dt>
+									<dd>edgeport</dd>
+									<dt class="fw"></dt>
+									<dd><span class="link"><a href="http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware-from-kernel.git;a=tree;f=edgeport;hb=HEAD">http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware-from-kernel.git;a=tree;f=edgeport;hb=HEAD</a><span class="target">/lib/firmware/edgeport/</span></span> </dd>
+								</dl>
+
+							</dd>
+							<dt class="device serial usb" id="keyspan">Keyspan USA-xxx</dt>
+							<dd>
+								<dl class="dvals">
+									<dt class="drivers"></dt>
+									<dd>keyspan</dd>
+									<dt class="fw"></dt>
+									<dd><span class="link"><a href="http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware-from-kernel.git;a=tree;f=keyspan;hb=HEAD">http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware-from-kernel.git;a=tree;f=keyspan;hb=HEAD</a><span class="target">/lib/firmware/keyspan</span></span> </dd>
+
+									<dt class="ok"></dt>
+									<dd><ul><li>/lib/firmware/keyspan/mpr.fw</li>  <li>/lib/firmware/keyspan/usa18x.fw</li>  <li>/lib/firmware/keyspan/usa19.fw</li>  <li>/lib/firmware/keyspan/usq19qi.fw</li>  <li>/lib/firmware/keyspan/usa19qw.fw</li>  <li>/lib/firmware/keyspan/usa19w.fw</li>  <li>/lib/firmware/keyspan/usa28.fw</li>  <li>/lib/firmware/keyspan/usa28x.fw</li>  <li>/lib/firmware/keyspan/usa28xa.fw</li>  <li>/lib/firmware/keyspan/usa28xb.fw</li>  <li>/lib/firmware/keyspan/usa49w.fw</li>  <li>/lib/firmware/keyspan/usa19qw.fw</li>  <li>/lib/firmware/keyspan/usa49wlc.fw</li> </ul></dd>
+
+								</dl>
+							</dd>
+							<dt class="device serial usb" id="keyspanpda">Keyspan PDA single-port</dt>
+							<dd>
+								<dl class="dvals">
+									<dt class="drivers"></dt>
+									<dd>keyspanda</dd>
+									<dt class="fw"></dt>
+
+									<dd><span class="link"><a href="http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware-from-kernel.git;a=tree;f=keyspan_pda;hb=HEAD">http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware-from-kernel.git;a=tree;f=keyspan_pda;hb=HEAD</a><span class="target">/lib/firmware/keyspan_pda</span></span> </dd>
+								</dl>
+							</dd>
+							<dt class="device serial usb" id="ti_usb">TI 3410/5052</dt>
+							<dd>
+								<dl class="dvals">
+									<dt class="drivers"></dt>
+
+									<dd>ti_usb_3410_5052</dd>
+									<dt class="fw"></dt>
+									<dd><span class="link"><a href="http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware-from-kernel.git;a=blob;f=ti_3410.fw;hb=HEAD">http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware-from-kernel.git;a=blob;f=ti_3410.fw;hb=HEAD</a></span> <a href="http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware-from-kernel.git;a=blob;f=ti_5052.fw;hb=HEAD">http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware-from-kernel.git;a=blob;f=ti_5052.fw;hb=HEAD</a></dd>
+									<dt class="ok"></dt>
+									<dd><ul><li>/lib/firmware/ti_usb_3410_5052/ti_3410.fw</li>  <li>/lib/firmware/ti_usb_3410_5052/ti_5052.fw</li> </ul></dd>
+
+								</dl>
+							</dd>
+							<dt class="device serial usb" id="whiteheat">ConnectTech WhiteHEAT</dt>
+							<dd>
+								<dl class="dvals">
+									<dt class="drivers"></dt>
+									<dd>whiteheat</dd>
+									<dt class="fw"></dt>
+
+									<dd><span class="link"><a href="http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware-from-kernel.git;a=blob;f=whiteheat.fw;hb=HEAD">http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware-from-kernel.git;a=blob;f=whiteheat.fw;hb=HEAD</a></span> <a href="http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware-from-kernel.git;a=blob;f=whiteheat_loader.fw;hb=HEAD">http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware-from-kernel.git;a=blob;f=whiteheat_loader.fw;hb=HEAD</a></dd>
+									<dt class="ok"></dt>
+									<dd><ul><li>/lib/firmware/whiteheat/whiteheat.fw</li>  <li>/lib/firmware/whiteheat/whiteheat_loader.fw</li> </ul></dd>
+								</dl>
+							</dd>
+
+						</dl>
+					</dd>
+
+							<dd><a href="hw-dev-hw-dri-en.htm#fircat">Back to Firmware Categories</a></dd>
+
+					<dt class="tv"><strong><a name="tv">TV</a></strong></dt>
+					<dd class="devices">
+						<dl class="class">
+							<dt class="device tv usb" id="af9005">Afatech AF9005 DVB-T USB1.1</dt>
+							<dd>
+								<dl class="dvals">
+
+									<dt class="drivers"></dt>
+									<dd>dvb-usb-af9005</dd>
+									<dt class="ok"></dt>
+									<dd><ul><li>/lib/firmware/AF05BDA.sys</li> </ul></dd>
+								</dl>
+							</dd>
+							<dt class="device tv" id="av7110">av7110 dvb</dt>
+
+							<dd>
+								<dl class="dvals">
+									<dt class="drivers"></dt>
+									<dd>av7110</dd>
+									<dt class="fw"></dt>
+									<dd>get_dvb_firmware av7110</dd>
+									<dt class="ok"></dt>
+									<dd><ul><li>/lib/firmware/dvb-ttpci-01.fw</li> </ul></dd>
+
+								</dl>
+							</dd>
+							<dt class="device tv usb" id="bluebird">bluebird dvb</dt>
+							<dd>
+								<dl class="dvals">
+									<dt class="drivers"></dt>
+									<dd>bluebird</dd>
+									<dt class="fw"></dt>
+
+									<dd>get_dvb_firmware bluebird</dd>
+									<dt class="ok"></dt>
+									<dd><ul><li>/lib/firmware/dvb-usb-bluebird-01.fw</li> </ul></dd>
+								</dl>
+							</dd>
+							<dt class="device tv usb" id="dec2000t">dec2000t dvb</dt>
+							<dd>
+
+								<dl class="dvals">
+									<dt class="drivers"></dt>
+									<dd>dec2000t</dd>
+									<dt class="fw"></dt>
+									<dd>get_dvb_firmware dec2000t</dd>
+									<dt class="ok"></dt>
+									<dd><ul><li>/lib/firmware/dvb-ttusb-dec-dec2000t.fw</li> </ul></dd>
+
+								</dl>
+							</dd>
+							<dt class="device tv usb" id="dec2500t">dec2500t dvb</dt>
+							<dd>
+								<dl class="dvals">
+									<dt class="drivers"></dt>
+									<dd>dec2500t</dd>
+									<dt class="fw"></dt>
+
+									<dd>get_dvb_firmware dec2500t</dd>
+									<dt class="ok"></dt>
+									<dd><ul><li>/lib/firmware/dvb-ttusb-dec-dec20500t.fw</li> </ul></dd>
+								</dl>
+							</dd>
+							<dt class="device tv usb" id="dec3000t">dec3000t dvb</dt>
+							<dd>
+
+								<dl class="dvals">
+									<dt class="drivers"></dt>
+									<dd>dec3000t</dd>
+									<dt class="fw"></dt>
+									<dd>get_dvb_firmware dec3000t</dd>
+									<dt class="ok"></dt>
+									<dd><ul><li>/lib/firmware/dvb-ttusb-dec-dec3000t.fw</li> </ul></dd>
+
+								</dl>
+							</dd>
+							<dt class="device tv usb" id="diusb">diusb dvb</dt>
+							<dd>
+								<dl class="dvals">
+									<dt class="drivers"></dt>
+									<dd>diusb</dd>
+									<dt class="fw"></dt>
+
+									<dd>get_dvb_firmware diusb</dd>
+									<dt class="ok"></dt>
+									<dd><ul><li>/lib/firmware/dvb-diusb-5.0.0.11.fw</li> </ul></dd>
+								</dl>
+							</dd>
+							<dt class="device tv" id="dvb">various full featured DVB</dt>
+							<dd>
+
+								<dl class="dvals">
+									<dt class="drivers"></dt>
+									<dd>dvb</dd>
+									<dt class="fw"></dt>
+									<dd><span class="link"><a href="http://www.linuxtv.org/downloads/firmware/">http://www.linuxtv.org/downloads/firmware/</a></span></dd>
+									<dt class="note"></dt>
+									<dd>most budget cards won't need this</dd>
+
+								</dl>
+							</dd>
+							<dt class="device tv" id="ivtv">IVTV</dt>
+							<dd>
+								<dl class="dvals">
+									<dt class="fw"></dt>
+									<dd><span class="link"><a href="http://dl.ivtvdriver.org/ivtv/firmware/">http://dl.ivtvdriver.org/ivtv/firmware/</a></span></dd>
+								</dl>
+
+							</dd>
+							<dt class="device tv usb" id="nova">Technotrend/Hauppauge Nova</dt>
+							<dd>
+								<dl class="dvals">
+									<dt class="drivers"></dt>
+									<dd>nova</dd>
+									<dt class="fw"></dt>
+									<dd><span class="link"><a href="http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware-from-kernel.git;a=tree;f=ttusb-budget;hb=HEAD">http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware-from-kernel.git;a=tree;f=ttusb-budget;hb=HEAD</a><span class="target">/lib/firmware/ttusb-budget/</span></span> </dd>
+
+								</dl>
+							</dd>
+							<dt class="device tv usb" id="or51132_qam">or51132_qam</dt>
+							<dd>
+								<dl class="dvals">
+									<dt class="drivers"></dt>
+									<dd>or51132_qam</dd>
+									<dt class="fw"></dt>
+
+									<dd>get_dvb_firmware or51132_qam</dd>
+									<dt class="ok"></dt>
+									<dd><ul><li>/lib/firmware/dvb-fe-or51132_qam.fw</li> </ul></dd>
+								</dl>
+							</dd>
+							<dt class="device tv" id="or51132_vsb">or51132_vsb dvb</dt>
+							<dd>
+
+								<dl class="dvals">
+									<dt class="drivers"></dt>
+									<dd>or51132_vsb</dd>
+									<dt class="fw"></dt>
+									<dd>get_dvb_firmware or51132_vsb</dd>
+									<dt class="ok"></dt>
+									<dd><ul><li>/lib/firmware/dvb-fe-or51132_vsb.fw</li> </ul></dd>
+
+								</dl>
+							</dd>
+							<dt class="device tv" id="or51211">or51211 dvb</dt>
+							<dd>
+								<dl class="dvals">
+									<dt class="drivers"></dt>
+									<dd>or51211</dd>
+									<dt class="fw"></dt>
+
+									<dd>get_dvb_firmware or51211</dd>
+									<dt class="ok"></dt>
+									<dd><ul><li>/lib/firmware/dvb-fe-or51211.fw</li> </ul></dd>
+								</dl>
+							</dd>
+							<dt class="device tv" id="sp8870">sp8870 dvb</dt>
+							<dd>
+
+								<dl class="dvals">
+									<dt class="drivers"></dt>
+									<dd>sp8870</dd>
+									<dt class="fw"></dt>
+									<dd>get_dvb_firmware sp8870</dd>
+									<dt class="ok"></dt>
+									<dd><ul><li>/lib/firmware/dvb-fe-sp8870</li> </ul></dd>
+
+								</dl>
+							</dd>
+							<dt class="device tv" id="sp887x">sp887x dvb</dt>
+							<dd>
+								<dl class="dvals">
+									<dt class="drivers"></dt>
+									<dd>sp887x</dd>
+									<dt class="fw"></dt>
+
+									<dd>get_dvb_firmware sp887x</dd>
+									<dt class="ok"></dt>
+									<dd><ul><li>/lib/firmware/dvb-fe-sp887x</li> </ul></dd>
+								</dl>
+							</dd>
+							<dt class="device tv" id="tda1004x">tda1004x dvb</dt>
+							<dd>
+
+								<dl class="dvals">
+									<dt class="drivers"></dt>
+									<dd>tda1004x</dd>
+									<dt class="fw"></dt>
+									<dd>get_dvb_firmware tda10046</dd>
+									<dt class="ok"></dt>
+									<dd><ul><li>/lib/firmware/dvb-fe-tda10046.fw</li> </ul></dd>
+
+								</dl>
+							</dd>
+						</dl>
+					</dd>
+
+							<dd><a href="hw-dev-hw-dri-en.htm#fircat">Back to Firmware Categories</a></dd>
+
+					<dt class="vga"><strong><a name="vga">VGA</a></strong></dt>
+					<dd class="devices">
+						<dl class="class">
+							<dt class="device vga" id="ati">ATi r128 and Radeon r100-r780</dt>
+
+							<dd>
+								<dl class="dvals">
+									<dt class="drivers"></dt>
+									<dd>radeon</dd>
+									<dt class="fw"></dt>
+									<dd>apt-get install firmware-linux</dd>
+								</dl>
+							</dd>
+
+							<dt class="device vga" id="matrox">Matrox MGA 100-450</dt>
+							<dd>
+								<dl class="dvals">
+									<dt class="drivers"></dt>
+									<dd>matrox</dd>
+									<dt class="fw"></dt>
+									<dd>apt-get install firmware-linux</dd>
+
+								</dl>
+							</dd>
+							<dt class="device vga" id="nvidia">nVidia</dt>
+							<dd>
+								<dl class="dvals">
+									<dt class="drivers"></dt>
+									<dd>nv</dd>
+									<dt class="note"></dt>
+
+									<dd>3d acceleration isn't possible with free drivers yet</dd>
+								</dl>
+							</dd>
+						</dl>
+					</dd>
+
+							<dd><a href="hw-dev-hw-dri-en.htm#fircat">Back to Firmware Categories</a></dd>
+
+					<dt class="video"><strong><a name="video">Video</a></strong></dt>
+					<dd class="devices">
+						<dl class="class">
+
+							<dt class="device video" id="cpia2">cameras based on Vision's CPiA2</dt>
+							<dd>
+								<dl class="dvals">
+									<dt class="drivers"></dt>
+									<dd>cpia2</dd>
+									<dt class="fw"></dt>
+									<dd><span class="link"><a href="http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware-from-kernel.git;a=tree;f=cpia2;hb=HEAD">http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware-from-kernel.git;a=tree;f=cpia2;hb=HEAD</a><span class="target">/lib/firmware/cpia2/</span></span> </dd>
+
+									<dt class="ok"></dt>
+									<dd><ul><li>/lib/firmware/cpia2/stv0672_vp4.bin</li> </ul></dd>
+								</dl>
+							</dd>
+							<dt class="device video usb" id="vicam">3com HomeConnect (aka vicam)</dt>
+							<dd>
+								<dl class="dvals">
+
+									<dt class="drivers"></dt>
+									<dd>vicam</dd>
+									<dt class="fw"></dt>
+									<dd><span class="link"><a href="http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware-from-kernel.git;a=tree;f=vicam;hb=HEAD">http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware-from-kernel.git;a=tree;f=vicam;hb=HEAD</a><span class="target">/lib/firmware/vicam/</span></span> </dd>
+									<dt class="ok"></dt>
+									<dd><ul><li>/lib/firmware/vicam/firmware.fw</li> </ul></dd>
+
+								</dl>
+							</dd>
+						</dl>
+					</dd>
+						<dd><a href="hw-dev-hw-dri-en.htm#fircat">Back to Firmware Categories</a></dd>
+				</dl>
+
+		</div>
+		<div class="divider" id="hd-ntfs3g">
+			<h2>Writing to NTFS-partitions with ntfs-3g</h2>
+
+							<p class="highlight-2"><b>Be warned</b>: Whilst the ntfs-3g is stated to be 'stable', never use it without external backup, and of course not on production systems! If you do, it's your fault if your data gets lost, so use at your own risk!</p>
+
+							<p>Open a shell and enter the following commands:See <a href="part-cfdisk-en.htm#disknames" >Partitioning your HD - Disk Naming</a></p>
+<pre >sux
+apt-get update &amp;&amp; apt-get install ntfs-3g
+umount /media/xdxx
+mount -t ntfs-3g /dev/disk/by-uuid/xxyyzz[etc] /media/xdxx
+To get out of the konsole type: exit
+</pre>
+
+							<p>Now your NTFS-Volume should be mounted <b>rw</b> and you should be able to store data on it. But again, be warned! <span class="highlight-3">Use it in emergency situations, it is not recommended  for use on a daily basis.</span></p>
+
+</div>
+	<div id="rev">Page last revised 11/02/2011 1115 UTC </div>
+
+</div>
+</body>
+</html>

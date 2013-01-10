@@ -1,0 +1,402 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>sidux Manuals - rdiff</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css" media="all">@import url("../lib/css-js/content.css");</style>
+        <style type="text/css" media="all">@import url("../lib/css-js/menu.css");</style>
+        <style type="text/css" media="print">@import url("../lib/css-js/print.css");</style>
+        <link rel ="shortcut icon" href="../lib/favicon/manual.ico" />
+        <script type="text/javascript" src="../lib/css-js/menu2.js"></script>
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-7_override.css">
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
+        <![endif]-->
+</head>
+<body>
+<div id="menu"> <!-- menu starts here zh lang maintainer plmday-->
+<!--sidux-manual Operating System Manual menu-version-01.96.2009.11.22 -->
+<!-- menu last updated by bluewater 2009.11.22 0500 hrs UTC -->
+	<div id="menu-header">
+	      <a href="http://sidux.com/"><img src="../lib/logos/manual-sidux-logo.png" title="去sidux.com论坛及维基" alt="sidux.com logo" /></a>
+	</div>
+  	<ul id="top-list">
+    		<li><a href="manual-search-zh.htm#search-on"> <img src="../lib/logos/manual-search-22x22.png" title="搜索该指南" alt="Search" />在线－离线搜索</a> </li>
+    		<li><a href="http://manual.sidux.com/meta-manual">Community Software Selections</a></li>
+  	</ul>
+  	<div id="flags-2">
+      			<a href="../flag-index.html"><img src="../lib/logos/sidux-language-64.png" title="选择另一种语言" alt="lang-switch"/></a>
+  	</div>
+  	<ul>
+    		<li  onmouseover="showHide( 1 );" onmouseout="startTime();"><a href="welcome-zh.htm">sidux OS手册</a>
+      			<ul class="sub-menu" id="sm1">
+        			<li><a href="welcome-zh.htm#welcome-gen">sidux OS手册</a></li>
+        			<li><a href="welcome-zh.htm#how-to">如何使用该手册</a></li>
+        			<li><a href="welcome-zh.htm#table-contents">目录</a></li>
+        			<li><a href="help-zh.htm#help-gen">何处获取帮助</a></li>
+        			<li><a href="help-zh.htm#paste">IRC !paste</a></li>
+        			<li><a href="credits-zh.htm#cred-team">功绩簿</a></li>
+        			<li><a href="wel-quickstart-zh.htm#welcome-quick">sidux快速上手指南</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 2 );" onmouseout="startTime();"><a href="cd-dl-burning-zh.htm">ISO Content, Releases, Download Mirrors and Burning</a>
+      			<ul class="sub-menu" id="sm2">
+       			<li><a href="cd-content-zh.htm#cd-content">ISO Content and system requirements</a></li>
+        			<li><a href="sys-admin-release-zh.htm#rolling">滚动升级注意事项</a></li>
+        			<li><a href="cd-dl-burning-zh.htm#download-sidux">sidux镜像，下载及刻录</a></li>
+        			<li><a href="cd-dl-burning-zh.htm#md5">md5校验和</a></li>
+        			<li><a href="cd-dl-burning-zh.htm#burn-nero">Windows下刻录</a></li>
+        			<li><a href="cd-dl-burning-zh.htm#burn-linux">Linux下刻录</a></li>
+       			 	<li><a href="cd-no-gui-burn-zh.htm#burning-no-gui">无GUI刻录</a></li>
+				<li><a href="cd-no-gui-burn-zh.htm#burn-no-gui-gen">Burning without a GUI</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 3 );" onmouseout="startTime();"><a href="live-mode-zh.htm">Live模式</a>
+      			<ul class="sub-menu" id="sm3">
+        			<li><a href="live-mode-zh.htm#rootpw">sidux-Live ISO 上的root用户密码</a></li>
+        			<li><a href="live-mode-zh.htm#live-cd-installsoft">在Live- ISO 运行时安装软件</a></li>
+        			<li><a href="live-mode-zh.htm#ntfs-3g">通过ntfs-3g写NTFS分区</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 4 );" onmouseout="startTime();"><a href="term-konsole-zh.htm">终端／Konsole</a>
+      			<ul class="sub-menu" id="sm4">
+        			<li><a href="term-konsole-zh.htm#sux"> sux / sudo</a></li>
+        			<li><a href="term-konsole-zh.htm#term-kon">终端／Konsole</a></li>
+        			<li><a href="term-konsole-zh.htm#cli-help">命令行帮助</a></li>
+				<li><a href="help-zh.htm#init3-tools">Tools to know in text mode (tty) - init 3</a></li>
+        			<li><a href="term-konsole-zh.htm#term-cmds">Linux终端命令表</a></li>
+        			<li><a href="term-konsole-zh.htm#shell-scripts">安装.sh脚本</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 5 );" onmouseout="startTime();"><a href="cheatcodes-zh.htm">参数</a>
+      			<ul class="sub-menu" id="sm5">
+        			<li><a href="cheatcodes-zh.htm#cheatcodes">sidux特有的Live- ISO 参数</a></li>
+        			<li><a href="cheatcodes-zh.htm#cheatcodes-linux">Linux惯常参数</a></li>
+        			<li><a href="cheatcodes-vga-zh.htm#vga">VGA参数</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 6 );" onmouseout="startTime();"><a href="part-gparted-zh.htm">对你的硬驱进行分区</a>
+      			<ul class="sub-menu" id="sm6">
+        			<li><a href="part-gparted-zh.htm#partition">用GParted对你的HD进行分区</a></li>
+        			<li><a href="part-gparted-zh.htm#ntfs">用GParted调整NTFS分区的大小</a></li>
+        			<li><a href="part-uuid-zh.htm#uuid">UUID, 分区标记及fstab</a></li>
+        			<li><a href="part-cfdisk-zh.htm#disknames">磁盘命名简介</a></li>
+        			<li><a href="part-cfdisk-zh.htm#partition">用cfdisk对你的HD进行分区</a></li>
+        			<li><a href="part-cfdisk-zh.htm#formating">用cfdisk分区后进行格式化</a></li>
+        			<li><a href="part-size-examp-zh.htm#part-example">分区大小实例</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 7 );" onmouseout="startTime();"><a href="hd-install-zh.htm">安装选项</a>
+      			<ul class="sub-menu" id="sm7">
+        			<li><a href="hd-install-zh.htm#Inst-prep">安装准备</a></li>
+        			<li><a href="hd-install-zh.htm#Installation">安装到你的硬盘</a></li>
+        			<li><a href="hd-install-zh.htm#first-hd-boot">第一次启动</a></li>
+        			<li><a href="hd-install-opts-zh.htm#fromiso">利用‘fromiso’参数从ISO文件引导</a></li>
+        			<li><a href="hd-install-opts-zh.htm#fromiso-persist">fromiso与persist</a></li>
+        			<li><a href="hd-install-opts-zh.htm#usb-hd">在移动硬盘上安装</a></li>
+        			<li><a href="hd-install-opts-zh.htm#vtbox">通过VirtualBox安装sidux</a></li>
+        			<li><a href="hd-install-opts-zh.htm#qemu">通过QEMU安装sidux</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 8 );" onmouseout="startTime();"><a href="hw-dev-hw-dri-zh.htm">图形显卡，显示屏， &amp; 驱动器杂烩</a>
+      			<ul class="sub-menu" id="sm8">
+        			<li><a href="hw-dev-hw-dri-zh.htm#hd-ntfs3g">通过ntfs-3g在NTFS分区上执行写操作</a></li>
+        			<li><a href="hw-dev-mon-zh.htm#mon-res">屏幕像素与显示屏</a></li>
+        			<li><a href="hw-dev-mon-zh.htm#xrandr">双显示屏及xrandr</a></li>
+        			<li><a href="hw-dev-mon-zh.htm#mon-binary">双显示屏（用二进制格式的驱动器）</a></li>
+				<li><a href="hw-dev-hw-dri-zh.htm#non-free-3d">Binary, non-free drivers for Nvidia</a></li>
+				<li><a href="hw-dev-hw-dri-zh.htm#non-free-3d-2">non-free drivers for ATI, Radeon and others</a></li>
+				<li><a href="hw-dev-hw-dri-zh.htm#non-free-firmware">Hardware needing non-free firmware drivers</a></li>
+				<li><a href="hw-dev-hw-dri-zh.htm#non-free">Adding non-free to Sources List</a></li>
+				<li><a href="hw-dev-hw-dri-zh.htm#native-nv-ati">FOSS xorg drivers for nVidia, ATI, Radeon, Intel</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 9 );" onmouseout="startTime();"><a href="wm-kde-zh.htm">窗口管理器</a>
+     			 <ul class="sub-menu" id="sm9">
+				<li><a href="wm-xfce-zh.htm#xfce-notes">Useful Xfce extras</a></li>
+				<li><a href="wm-kde-zh.htm#install-add">Useful extra KDE Apps</a></li>
+        			<li><a href="wm-kde-zh.htm#desk-freeze">桌面冻结</a></li>
+        			<li><a href="wm-kde-zh.htm#kde-login">无法登入KDE</a></li>
+        			<li><a href="wm-kde-zh.htm#ch-th">更换主题</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 10 );" onmouseout="startTime();"><a href="lamp-apache-zh.htm">sidux LAMP栈</a>
+      			<ul class="sub-menu" id="sm10">
+        			<li><a href="lamp-apache-zh.htm#serv-apache">sidux LAMP栈</a></li>
+        			<li><a href="lamp-apache-zh.htm#serv-ftp">FTP客户端</a></li>
+        			<li><a href="lamp-apache-zh.htm#serv-sec">安全协议</a></li>
+        			<li><a href="lamp-apache-zh.htm#serv-ssl">SSL</a></li>
+        			<li><a href="lamp-sql-zh.htm#serv-mysql">MySQL配置</a></li>
+        			<li><a href="lamp-ppp-zh.htm#serv-php">Apache里用PHP</a></li>
+        			<li><a href="ntp-server-zh.htm#ntp-server">时钟服务器配置</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 11 );" onmouseout="startTime();"><a href="internet-connecting-zh.htm">因特网及连网</a>
+      			<ul class="sub-menu" id="sm11">
+        			<li><a href="tor-privoxy-zh.htm#tor">Tor</a></li>
+        			<li><a href="tor-privoxy-zh.htm#privoxy">Privoxy</a></li>
+        			<li><a href="internet-connecting-zh.htm#firewalls">防火墙</a></li>
+        			<li><a href="samba-zh.htm#configure">设置SAMBA（Windows）</a></li>
+        			<li><a href="samba-zh.htm#setup">Samba服务器配置</a></li>
+        			<li><a href="ssh-zh.htm#ssh-fs">SSH远程挂载</a></li>
+        			<li><a href="ssh-zh.htm#ssh-x">透过SSH运行X窗口应用程序</a></li>
+        			<li><a href="ssh-zh.htm#ssh-f">通过Konqueror用GUI化的SSH</a></li>
+        			<li><a href="ssh-zh.htm#ssh-w">从Windows-PC通过X转发用SSH</a></li>
+        			<li><a href="ssh-zh.htm#ssh">SSH与安全</a></li>
+        			<li><a href="internet-connecting-zh.htm#dial-mod">56k调制解调器</a></li>
+        			<li><a href="internet-connecting-wpagui-zh.htm#wpa-roaming-gui">WiFi－漫游的WPA-GUI</a></li>
+        			<li><a href="internet-connecting-wpa-zh.htm#wpa-basic">WiFi－基本配置指南</a></li>
+        			<li><a href="internet-connecting-wpa-zh.htm#wpa">WiFi－wpasupplicant</a></li>
+        			<li><a href="internet-connecting-zh.htm#netcardconfig">上线－Ceni</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 12 );" onmouseout="startTime();"><a href="sys-admin-apt-zh.htm">dist-upgrade and package management</a>
+      			<ul class="sub-menu" id="sm12">
+        			<li><a href="sys-admin-apt-zh.htm#apt-cook">APT指南秘笈与源表</a></li>
+        			<li><a href="sys-admin-apt-zh.htm#apt-install">安装一个新的软件包</a></li>
+        			<li><a href="sys-admin-apt-zh.htm#apt-delete">删除一个软件包</a></li>
+        			<li><a href="sys-admin-apt-zh.htm#apt-downgrade">软件包隔离与降级</a></li>
+        			<li><a href="sys-admin-apt-zh.htm#apt-cache">通过apt-cache搜索软件包</a></li>
+        			<li><a href="sys-admin-apt-zh.htm#gui-pacsea">GUI Package searching</a></li>
+        			<li><a href="siduxcc-zh.htm#hermes">sidux-hermes</a></li>
+        			<li><a href="sys-admin-upgrade-zh.htm#live-cd-upgrade">用Live- ISO 升级</a></li>
+				<li><a href="sys-admin-apt-locarmirr-zh.htm#approx">dist-upgrade of multiple PCs on a LAN</a></li>
+        			<li><a href="sys-admin-kern-upg-zh.htm#kern-upgrade">升级内核</a></li>
+        			<li><a href="sys-admin-apt-zh.htm#apt-upgrade">升级已安装的系统－dist-upgrade - Overview</a></li>
+				<li><a href="sys-admin-apt-zh.htm#du-st">升级已安装的系统－dist-upgrade - The Steps</a></li>
+      			</ul>
+    		</li>
+    		<li  onmouseover="showHide( 13 );" onmouseout="startTime();"><a href="sys-admin-gen-zh.htm">系统管理</a>
+      			<ul class="sub-menu" id="sm13">
+				<li><a href="hd-install-ezh.htm#adduser">Adding a new user</a></li>
+        			<li><a href="home-zh.htm#home-bu">移动/home</a></li>
+        			<li><a href="siduxcc-zh.htm#siduxcc">sidux控制中心</a></li>
+        			<li><a href="sys-admin-rdiff-zh.htm#rdiff">用rdiff备份</a></li>
+        			<li><a href="sys-admin-rsync-zh.htm#rsync">用rsync备份</a></li>
+        			<li><a href="vir-rkits-zh.htm#virus-rkits">病毒和刨根工具扫描程序</a></li>
+        			<li><a href="sys-admin-gen-zh.htm#start-services">启用／停用服务</a></li>
+        			<li><a href="sys-admin-gen-zh.htm#pw-lost">遗失root用户密码</a></li>
+        			<li><a href="sys-admin-gen-zh.htm#fonts">字体</a></li>
+        			<li><a href="sys-admin-gen-zh.htm#cups">CUPS - Printing System</a></li>
+				<li><a href="sys-admin-gen-zh.htm#sound">Sound Mixers</a></li>
+        			<li><a href="sys-admin-gen-zh.htm#init">sidux运行段位－init</a></li>
+        			<li><a href="sys-admin-grub-bootman2-zh.htm#mbr-grub-boot">MBR覆写引导扇区</a></li>
+        			<li><a href="sys-admin-grub-bootman2-zh.htm#dual-boot">双启动或多启动</a></li>
+        			<li><a href="bios-freedos-zh.htm#bois-prep">通过FreeDOS升级BIOS</a></li>
+        			<li><a href="sys-admin-grub-bootman2-zh.htm#boot-grub-floppy">创建一张引导软盘</a></li>
+        			<li><a href="sys-admin-grub-bootman2-zh.htm#remove-grub">从MBR移除grub</a></li>
+        			<li><a href="sys-admin-grub-bootman2-zh.htm#what-is-grub">Grub引导管理器</a></li>
+      			</ul>
+    		</li>
+  	</ul>
+<!-- menu ends here --> </div>
+<div id="main-page">
+	<div class="divider" id="rdiff">
+			<h2 id="top-header">Backing-Up the System with rdiff-backup</h2>
+				<p>rdiff-backup is a tool used to backup your files. (It can be run on a variety of *nix ports).</p>
+
+				<p class="highlight-2">Run the commands in  as root in konsole, unless told otherwise</p>
+
+				<p>*great for recovering messed up dist-upgrades, kernel upgrades etc (and also just for restoring individual files).<br />
+				*only backs up what's changed like rsync does (so each backup doesn't take long).<br />
+				*keeps a history of changes (which means that you can restore a file you deleted three weeks ago!)<br />
+				*does secure backups over a network (using ssh).<br />
+				*backups up partitions while they are mounted (so it's easy to automate a daily backup ... no unmounting necessary).<br />
+				*can restore everything if your hard drive goes belly-up and you have to buy a new one.<br />
+				*scales to backup large networks (linux is fine, windows is more difficult) and is used by businesses.<br />
+				*is a command-line-driven app, so it's great for those who like to do things like automate backups in a powerful way (ie a bash script which is called by cron).<br />
+				*remembers and deals with file ownerships and permissions, and also deals with symbolic links (and all that sort of stuff) so when you restore, you get things exactly as they were.</p>
+
+			<h6>What you'll need</h6>
+				<p>rdiff-backup keeps an entire (uncompressed) copy of the files you are backing up, and it also keeps a history (incremental backups), so this means that your backup space needs to be larger than what you're backing up. If you are backing up 100 gigs of space, you may need 120 gigs of space (on a separate hard drive preferably!).</p>
+
+			<h6>How to set it up</h6>
+				<p>Let's say that your pc has the following:<br />
+				* a 100 gig hard drive (hda) which is in use, with mounts hda1 used for the root partition, and hda5 used for storing music and other files, and hda6 for swap.<br />
+				* a spare 200 gig hard drive (hdb) which is not in use, with one mount hdb1 ... we'll use this one for our backups.<br />
+				* IP address 192.168.0.1</p>
+
+				<p>The first thing to do is to install rdiff-backup:</p>
+<pre>
+# apt-get install rdiff-backup
+</pre>
+				<p>Now although you can backup any directory, this assumption is to back up entire partitions ... we want to back up hda1 and hda5 (we don't want to backup hda6), and so we make some directories to store the data:</p>
+<pre>
+# mkdir -p /media/hdb1/rdiff-backups/192.168.0.1/root
+# mkdir -p /media/hdb1/rdiff-backups/192.168.0.1/hda5
+</pre>
+				<p>You need the IP address distinguished because if you wish to use this computer to also backup another one (covered later on).</p>
+
+			<h6>Backing up</h6>
+
+				<p>rdiff-backup uses the syntax <span class="highlight-3">rdiff-backup source-dir dest-dir</span>. Note: always specify directory names, not file names.</p>
+
+				<p>To back up hda5, run:</p>
+<pre>
+# rdiff-backup /media/hda5 /media/hdb1/rdiff-backups/192.168.0.1/hda5
+</pre>
+				<p>And to back up the root partition, run:</p>
+<pre>
+# rdiff-backup --exclude '/tmp/*' --exclude '/proc/*' --exclude '/sys/*' --exclude '/media/*/*' / /media/hdb1/rdiff-backups/192.168.0.1/root
+</pre>
+				<p>Any "AF_UNIX path too long" errors can be ignored. This may take a while as it's the first time the partition has been backed up, so rdiff-backup will have to back up the entire partition (not just the differences). Notice that we don't want to back up /tmp as this always changes, nor /proc or /sys as these don't contain real files, and also we don't want to back up mounts. If you did back up mounts, then you would be backing up hdb1, and could get into an infinite loop! One way around this is to backup the mounts separately.</p>
+
+				<p>Now the reason you put '/proc/*' instead of just '/proc' is that this will cunningly still backup the directory name /proc, but will ignore everything inside. The same is true to /tmp, /sys, and even more cunningly all the mount point names.</p>
+
+				 <p>This way, if you destroy your root partition and do a full restore, /tmp, /proc, /sys and the mount points names will be created (just as they should). If /tmp doesn't exist when X starts up, it may complain. (See the man page for more on --exclude and --include).</p>
+
+			<h6>Restoring directories from backups</h6>
+
+				<p>rdiff-backup uses the syntax:</p>
+<pre>
+rdiff-backup -r &lt;from-when&gt; &lt;source-dir&gt; &lt;dest-dir&gt;
+</pre>
+				<p>Now if you were to accidentally delete the directory /media/hda7/photos, you can restore it by doing:</p>
+<pre>
+# rdiff-backup -r now /media/hdb1/rdiff-backups/192.168.0.1/hda5/photos /media/hda5/photos
+</pre>
+				<p>The "-r now" option means restore from the latest backup. If you have been backing everything up periodically (via crontab, say), and didn't realise that the photos directory were missing until a few days later, you would need to restore from a backup from a few days ago (and not "now", as the latest backup says that the photos directory doesn't exist). Or perhaps you just want to get back to a previous version of something.</p>
+
+				<p>If you want to restore from three days ago, then use the "-r 3D" ... but, as the man page says, note:</p>
+
+				<p class="highlight-1">"3D" refers to the instant 72 hours before the present, and if there was no backup made at that time, rdiff-backup restores the state recorded for the previous backup. For instance, in the above case, if "3D" is used, and there are only backups from 2 days and 4 days ago, the directory would be restored as it was 4 days ago (so you have to think about it before you restore).</p>
+
+				<p>Using the following will list the date and times of when the backups were made for hda5:</p>
+<pre>
+# rdiff-backup -l /media/hdb1/rdiff-backups/192.168.0.1/hda5
+</pre>
+			<h5>Restoring partitions</h5>
+
+				<p>You can also restore whole partitions (mounts), after all, a mount point is really just a directory.</p>
+
+				<p class="highlight-2">WARNING: Don't restore the root partition while you are booted up into it! With one command you will lose all the files on all your partitions, including all the backups on a separate hard drive!! rdiff-backup does exactly what it was instructed to do ... if the the backup for the root partition has empty mount points, thus in order to restore to how the backup is, it deletes everything in the mounts to make everything like the backup.</p>
+
+				<p>To restore hda5 from the latest backup, we simply do:</p>
+<pre>
+# rdiff-backup -r now /media/hdb1/rdiff-backups/192.168.0.1/hda5 /media/hda5
+</pre>
+			<h5>Restoring the root partition</h5>
+
+				<p>But to restore the root partition, it's not so simple. Don't restore the root partition while it's mounted (see the above warning). It's really useful to be able to restore the root partition, as then if you mess up things when installing/upgrading, or mess up installing a new kernel (etc), you have piece of mind that you can roll things back to how you had them, and it'll only take 20 minutes.</p>
+
+				<p>One way to restore the root partition is to boot into a spare linux partition if you have one on your hard disk. Then since you will be able to restore the partition you want, as it won't be mounted as root. After you restore the partition, boot up into it and it will be exactly has it was when it was backed up ... exactly! This is by far the easiest method.</p>
+
+				<p>Another way to restore the root partition is to boot up the sidux-live cd and do the restore from there. rdiff-backup is included in sidux.  In case the sidux live-cd version you have does not include rdiff, you can type in the grub (Bootoptions, (Cheatcodes)) the cheatcode "unionfs" and that will mean you can install applications on the live cd. Just boot up and do the following commands:</p>
+<pre>
+$ sudo su
+# wget -O /etc/apt/sources.list http://sidux.com/files/misc/sources.list
+# apt-get update
+# apt-get install rdiff-backup
+</pre>
+				<h6>Now let's do the restore:</h6>
+<pre>
+# mount /dev/hda1 /media/hda1
+# mount /dev/hdb1 /media/hdb1
+# rdiff-backup -r now /media/hdb1/rdiff-backups/192.168.0.1/root /media/hda1
+</pre>
+
+				<p>Note: If you don't have a sidux CD and your Live-CD is supported by klik you can install rdiff-backup using the Klik and calling:</p>
+<pre>
+$ sudo ~/.zAppRun ~/Desktop/rdiff-backup_0.13.4-5.cmg rdiff-backup -r now /media/hdb1/rdiff-backups/192.168.0.1/root /media/hda1
+</pre>
+
+				<p>It is recommended that anyone backing up their root partition (with the intention of restoring from it if they have to) should test the restoring process. Nothing worse than thinking everything will be fine, and then coming across something unexpected during an emergency.</p>
+
+							<p>If the hard drive has been changed or reformatted, recheck the UUIDs, (or Labels), in <span class="highlight-3">/boot/grub/menu.lst (grub-legacy) or files in /etc/grub.d (grub2)</span> and <span class="highlight-3">/etc/fstab</span>, and alter accordingly. An easy way to get the information to alter the menu.lst and fstab files, if required, is as root:</p>
+
+<pre>
+blkid
+</pre>
+
+			<h5>Backing up other pc's</h5>
+
+				<p>You can back up other pc's onto the local pc, as long as our local pc can ssh to the other pc's (and as long as you have room on your hard drive). The ssh server (sshd) needs to be running on remote pc. The other pc's don't have to be in your local lan, they could be anywhere in the world.</p>
+
+				<p>Let's assume that your remote pc has the following:<br />
+				1) a 100 gig hard drive (hda) which is in use, with only mounts,<br />
+				2) hda1 used for the root partition,<br />
+				3) hda5 that we are storing some temporary files that we don't want backed up,<br />
+				4) and hda6 for swap <br />
+				5) IP address 192.168.0.2</p>
+
+				<p>Note: both 100 gig drives cannot usually be backed up on the 200 gig drive using rdiff-backup (since there would be no room for incremental files), but since you aren't backing up hda5 on the remote pc (and since hard drives aren't usually 100% full anyway, although don't rely on this) then you may calculate that you have enough room. Every time rdiff-backup performs another backup, more incremental files are created, and this takes up more and more room.</p>
+
+				<p>You can tell rdiff-backup only to keep a max of 1 months backups (this command is shown later on), and this would take up less room than telling rdiff-backup to keep a years worth of data. And of course if you want a years worth of data backed up, then you have to have the hard drive space to store a years worth of incremental files.</p>
+
+				<p>The first thing you have to do is to install rdiff-backup on the remote pc as well (every computer that you want to backup including the backup server must have rdiff-backup installed).</p>
+
+				<p>To back the remote pc up onto the local pc, run on the local pc (ie 192.168.0.1): <span class="highlight-4">Note the use of the double colons :: </span></p>
+<pre>
+# mkdir /media/hdb1/rdiff-backups/192.168.0.2/root
+# rdiff-backup --exclude '/tmp/*' --exclude '/proc/*' --exclude '/sys/*' --exclude '/media/*/*' 192.168.0.2::/ /media/hdb1/rdiff-backups/192.168.0.2/root
+</pre>
+				<p>Now if you want to restore a directory on the remote pc, initiate the restore on either the local pc, or the remote pc.</p>
+
+				<p>This is how you would restore the directory /usr/local/games on the remote pc, by initiating it from the remote pc:</p>
+<pre>
+# rdiff-backup -r now 192.168.0.1::/media/hdb1/rdiff-backups/192.168.0.1/root/usr/local/games /usr/local/games
+</pre>
+				<p>This is how you would restore the directory /usr/local/games on the remote pc, by initiating it from the local pc:</p>
+<pre>
+# rdiff-backup -r now /media/hdb1/rdiff-backups/192.168.0.1/root/usr/local/games 192.168.0.2::/usr/local/games
+</pre>
+				<p>Use the same sort of syntax when restoring your root partition from a live cd (where the remote pc has been booted up via live cd ... see above).</p>
+
+			<h5>Automating backups:</h5>
+
+				<p>If you are backing up other pc's onto your local pc first thing to do is enable password-less ssh logins using ssh keys. <span class="highlight-2">Note that this is talking about password-less ssh logins as root. This can be tied down so that only rdiff-backup commands are performed, but this is outside the scope of this topic Please refer to <a href="ssh-en.htm#ssh-s">SSH Configuration</a> </span>  We are going to assume complete trust, and we are going to set up the simplest way of achieving password-less logins.</p>
+
+				<p>From the local pc, do the following:</p>
+<pre>
+# [ -f /root/.ssh/id_rsa ] || ssh-keygen -t rsa -f /root/.ssh/id_rsa
+</pre>
+				<p>And press enter twice for blank passwords. Then do:</p>
+<pre>
+# cat /root/.ssh/id_rsa.pub | ssh 192.168.0.2 'mkdir -p /root/.ssh;\<!--dunno if this is wrong-->
+> cat - >>/root/.ssh/authorized_keys2'
+</pre>
+				<p>You will be prompted for your root password.</p>
+
+				<p>Now you can ssh to the remote pc as root without having to type a password, and rdiff-backup can be automated.</p>
+
+				<p>Next, create a bash script that contains all the rdiff-backup commands. Our bash script may look something like this:</p>
+
+
+<pre>
+#!/bin/bash
+RDIFF=/usr/bin/rdiff-backup
+echo
+echo "=======Backing up 192.168.0.1 root======="
+${RDIFF} --ssh-no-compression --exclude '/tmp/*' --exclude '/proc/*' --exclude '/sys/*' --exclude '/media/*/*' / /media/hdb1/rdiff-backups/192.168.0.1/root
+echo "(and purge increments older than 1 month)"
+${RDIFF} --remove-older-than 1M --force /media/hdb1/rdiff-backups/192.168.0.1/root
+echo
+echo "=======Backing up 192.168.0.1 mount hda5======="
+${RDIFF} --ssh-no-compression --exclude /media/hda5/myjunk /media/hda5 /media/hdb1/rdiff-backups/192.168.0.1/hda5
+echo "(and purge increments older than 1 months)"
+${RDIFF} --remove-older-than 1M --force /media/hdb1/rdiff-backups/192.168.0.1/hda5
+echo
+echo "=======Backing up 192.168.0.2 root======="
+${RDIFF} --ssh-no-compression --exclude '/tmp/*' --exclude '/proc/*' --exclude '/sys/*' --exclude '/media/*/*' --exclude '/mnt/*/*' 192.168.0.2::/media/hdb1/rdiff-backups/192.168.0.2/root
+echo "(and purge increments older than 1 months)"
+${RDIFF} --remove-older-than 1M --force /media/hdb1/rdiff-backups/192.168.0.2/root
+</pre>
+
+
+				<p>Now you can name this bash script "myrdiff-backups.bash" and put it in /usr/local/bin on our local (backup server) machine, and change it to an executable. Run the bash script and make sure it works.</p>
+
+				<p>And lastly you can get cron to call it every night at 8pm. The following line in root's crontab will do the trick, call</p>
+<pre>
+# crontab -e
+and insert the following line
+0 20 * * * /usr/local/bin/myrdiff-backups.bash
+</pre>
+
+			<div id="rev">Content last revised 01/06/2010 0800 UTC</div>
+</div>
+</div>
+</body>
+</html>
