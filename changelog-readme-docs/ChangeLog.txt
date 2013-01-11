@@ -1,4 +1,15 @@
-CHANGELOG FOR aptosid-OS-MANUAL-2012
+CHANGELOG FOR aptosid-OS-MANUAL-2013
+
+___________________________________________
+
+*VERSION:::aptosid-manual-02.15.2013.01.11
+Fri Jan 11, 2013 1000 UTC
+*menu-xx  		updated to include UEFI menu entry and http link to webpropia ( deleted the webtropia adfarm link as it was borked)
+*/lib/version		updated of time stamp
+*hd-install-xx		updated to include uefi
+*files-xx		all lang files updated to menu-xx
+
+-- Trevor Walkley <trevor_walkley@aptenodytes.org> Wed Jan 11, 2013 1350 UTC
 
 ___________________________________________
 
@@ -10,6 +21,7 @@ Wed Jan 02, 2013 1300 UTC
 
 -- Trevor Walkley <trevor_walkley@aptenodytes.org> Wed Jan 02, 2013 1300 UTC UTC
 ___________________________________________
+CHANGELOG FOR aptosid-OS-MANUAL-2012
 
 *VERSION:::aptosid-manual-02.14.2012.10.20
 Sat Oct 20, 2012 1100 UTC
