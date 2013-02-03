@@ -17,7 +17,7 @@
         <![endif]-->
 </head>
 <body>
-<!-- Last translation revision hubi Sun, 17 Jul 2011 16:48:57 +0000 -->
+<!-- Last translation revision hubi Sun, 03 Feb 2013 14:02:46 +0000 -->
 <!--htdig_noindex--><div id="menu"> <!-- menu starts here de lang maintained by hubi -->
 <!--aptosid Operating System Manual menu-version-02.15.2013.01.10 -->
 <!-- menu last updated by bluewater 2013.01.10 0910 hrs UTC -->
@@ -371,19 +371,19 @@ dpkg -l|awk '/^ii/{ print $2 }'|grep -v -e ^lib -e -dev -e $(uname -r) >/home/us
 
 	</div>
 	<div class="divider" id="efi">
-				<h2>(U)EFI booting</h2>
-							<p>The bootloader will be an EFI program installed to <span class="highlight-3">/boot/efi/EFI/aptosid/grubx64.efi </span> within your <span class="highlight-3"> EFI system partition </span> and mounted below <span class="highlight-3">/boot/efi/</span> on your installed system, provided the following conditions are met:</p>
+				<h2>Systemstart mit (U)EFI</h2>
+							<p>Der Bootloader ist ein EFI-Programm, das nach <span class="highlight-3">/boot/efi/EFI/aptosid/grubx64.efi </span> innerhalb der <span class="highlight-3"> EFI-System-Partition </span> installiert und auf der Systeminstallation unterhalb von <span class="highlight-3">/boot/efi/</span> eingebunden wird. Folgende Bedingungen sind Voraussetzung:</p>
 
 						<ul>
- 							<li>The motherboard needs to have EFI firmware with EFI booting enabled.</li>
-							<li>A current aptosid-amd64.iso</li>
-							<li>Booted using UEFI and this is apparent from the plain white/blue grub2 menu, instead of the usual graphical boot menu provided by isolinux for BIOS booting, on the live medium.</li>
-							<li>You have a GPT disk with an EFI System Partition (type EF00).  This must be <span class="highlight-3">vfat or FAT </span>formatted.</li>
-							<li>The install target is not a USB disk. If you need to boot a USB stick see <a href="hd-install-en.htm#efi-usb">UEFI bootable removable devices</a>.</li>
+ 							<li>Die Hauptplatine (das Motherboard) muss EFI-Firmware haben und Booten mit EFI muss aktiviert sein.</li>
+							<li>Eine aktuelle aptosid-amd64.iso</li>
+							<li>Systemstart mit UEFI (erkennbar am einfachen weiß-blauen Grub2-Menü anstelle des üblichen grafischen Boot-Menüs von isolinux für BIOS-Systemstart) mit dem Live-Medium.</li>
+							<li>Eine GPT-Festplatte mit einer EFI-Systempartition (Typ EF00).  Diese muss mit <span class="highlight-3">vfat oder FAT </span>formatiert sein.</li>
+							<li>Das Installationsmedium ist kein USB-Gerät. Für USB-Geräte siehe <a href="hd-install-de.htm#efi-usb">Mobile Geräte mit UEFI-Systemstart</a>.</li>
 						</ul>
 		  </div>
 		   <div class="divider" id="efi-usb">
-				<h3>UEFI bootable removable devices</h3>
+				<h3>Mobile Geräte mit UEFI-Systemstart</h3>
 
 							<p>In order to create a UEFI bootable device, such as a USB stick, the contents of the aptosid ISO can be extracted to a vfat formatted partition and the partition marked as bootable.</p>
 
