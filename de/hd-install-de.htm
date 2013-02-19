@@ -17,7 +17,7 @@
         <![endif]-->
 </head>
 <body>
-<!-- Last translation revision hubi Sun, 03 Feb 2013 14:02:46 +0000 -->
+<!-- Last translation revision hubi Tue, 19 Feb 2013 08:57:59 +0000 -->
 <!--htdig_noindex--><div id="menu"> <!-- menu starts here de lang maintained by hubi -->
 <!--aptosid Operating System Manual menu-version-02.15.2013.01.10 -->
 <!-- menu last updated by bluewater 2013.01.10 0910 hrs UTC -->
@@ -385,9 +385,9 @@ dpkg -l|awk '/^ii/{ print $2 }'|grep -v -e ^lib -e -dev -e $(uname -r) >/home/us
 		   <div class="divider" id="efi-usb">
 				<h3>Mobile Geräte mit UEFI-Systemstart</h3>
 
-							<p>In order to create a UEFI bootable device, such as a USB stick, the contents of the aptosid ISO can be extracted to a vfat formatted partition and the partition marked as bootable.</p>
+							<p>Um ein bootfähiges UEFI-Gerät - zum Beispiel einen USB-Stick - anzulegen, kann der Inhalt der aptosid-ISO auf eine mit vfat formatierte und als bootfähig markierte Partition kopiert werden.</p>
 
-							<p>Optionally this removable medium can also be made compatible with PC-BIOS booting by installing a traditional boot sector in addition to the EFI boot loader (assuming <span class="highlight-3">/dev/sdz1</span> to be the target partition on the USB stick).</p>
+							<p>Zusätzlich kann dieses Gerät auch so gestaltet werden, dass mit einem traditionellen PC-BIOS zusätzlich zum EFI-Bootloader das System gestartet wird. (Im Beispiel ist <span class="highlight-3">/dev/sdz1</span> die Zielpartition des USB-Sticks.)</p>
 <pre>
 syslinux -i -d /boot/isolinux /dev/sdz1
 install-mbr /dev/sdz
@@ -396,17 +396,17 @@ install-mbr /dev/sdz
 		   <div class="divider" id="efi-secboot">
 				<h3>UEFI Secure Boot</h3>
 
-							<p>aptosid does not currently support UEFI Secure Boot.   The current intention is to wait to see how Debian will handle UEFI Secure Boot before deciding the best course of action for aptosid. </p>
+							<p>aptosid unterstützt im Augenblick nicht UEFI Secure Boot, da abgewartet werden muss, wie Debian mit UEFI Secure Boot umgehen wird, um eine Entscheidung für aptosid treffen zu können.</p>
 
-							<p>In order to allow dual/triple/quadruple booting of aptosid with other operating systems, UEFI Secure Boot needs to be disabled in the system firmware. The board firmware should offer a boot menu, although on some boards this may mean you need to boot into the MS OS Win 8 and cycle through various menus to turn off UEFI Secure Boot and then reboot.</p>
+							<p>Um das multiple Booten im Zusammenspiel mit weiteren Betriebssystemen zu gewährleisten, muss UEFI Secure Boot in der System-Firmware deaktiviert werden. In der Regel findet sich diese Option im Boot-Menü der Hauptplatine, bei manchen Herstellern kann es sein, dass MS Windows 8 gebootet werden muss, um UEFI Secure Boot deaktivieren zu können.</p>
 
-							<p><span class="highlight-3">Note:</span> When you disable EFI Secure Boot and want to have MS Win8 as one of your Operating System choices you will need to reinstall MS Win8. </p> 
+							<p><span class="highlight-3">Anmerkung:</span> Wenn UEFI Secure Boot deaktiviert wird und MS Windows 8 weiterhin als Betriebssystem zur Verfügung stehen soll, muss MS Windows 8 neu installiert werden.</p> 
 
-							<p><span class="highlight-1">Rod Smith of rodsbooks.com provides a good insight on the subject of Secure Boot:</span> <a href="http://www.rodsbooks.com/efi-bootloaders/secureboot.html">Managing EFI Boot Loaders for Linux: Dealing with Secure Boot</a>.</p>
+							<p><span class="highlight-1">Rod Smith von rodsbooks.com bietet einen sehr interessanten englischsprachigen Beitrag zum Thema Secure Boot:</span> <a href="http://www.rodsbooks.com/efi-bootloaders/secureboot.html">Managing EFI Boot Loaders for Linux: Dealing with Secure Boot</a>.</p>
 
 
-				  <h3><span class="highlight-3">Partitioning GPT and UEFI disks</span></h3>
-							<p>For partitioning GPT and UEFI disks consult: <a href="part-gdisk-en.htm#gdisk-1">Partitioning with gdisk for GPT disks.</a></p>
+				  <h3><span class="highlight-3">Partitionieren GPT- und UEFI-Geräten</span></h3>
+							<p>Zum Partitonieren von GPT- and UEFI-Geräten siehe: <a href="part-gdisk-de.htm#gdisk-1">Partitionierung mit gdisk für GPT-Geräte</a>.</p>
 
 	</div>
 	<div class="divider" id="lang">
