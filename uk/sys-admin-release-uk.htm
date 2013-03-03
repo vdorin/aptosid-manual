@@ -17,7 +17,7 @@
         <![endif]-->
 </head>
 <body>
-<!-- Last translation revision polix 05/01/2012 0100 UTC -->
+<!-- Last translation revision polix 03/03/2012 0100 UTC -->
 <!--htdig_noindex--><div id="menu"> <!-- menu starts here - ua language maintained by polix -->
 <!--aptosid Operating System Manual menu-version-02.15.2013.01.10 -->
 <!-- menu last updated by bluewater 2013.01.10 0910 hrs UTC -->
@@ -473,20 +473,20 @@
 					Слід віддати перевагу на 'amd64' та його сучасного обладнанні підтримки.
 				</p>
 
-			<h3>Kernel based Mode Setting (KMS) and cirrus-drm/ intel/ matrox/ nvidia/ radeon graphics</h3>
+			<h3>Kernel based Mode Setting (KMS) та cirrus-drm/ intel/ matrox/ nvidia/ radeon графічні-карти</h3>
 				<p>
-					KMS support is required by xserver-xorg-video-intel, which means kernel parameters like 'i915.modeset=0' or 'vga=791' are no longer valid and actively break starting X on intel graphics карт.
-					Given that i915/ xserver-xorg-video-intel doesn't require any kind of firmware, there should no longer be KMS related bugs in relation to intel graphics.
+					Для KMS потрібнi xserver-xorg-video-intel, ядрові параметри як наприклад 'i915.modeset=0' або 'vga=791'не дійсні і активно заважають завантаженні  завантаженні X-серверу на графічних картах Іntel .
+					Враховуючи, що i915 / X-сервер Xorg-, відео-Intel не вимагають будь яких прошивок, там більше не повинно бути помилок, пов'язаних з KMS по відношенню до графічних карт Intel.
 				</p>
 
 				<p>
-					For KMS to function in combination with ATi/ AMD radeon graphics, firmware images (firmware-linux-nonfree, see <a href="gpu-en.htm#ati-3d">AMD/ATI 3D drivers</a>) are required, which can't be shipped on aptosid live media, while X.org should transparently fall back to vesa on problematic карт, special attention might be needed in rare cases.
-					If X doesn't manage to start on ATi/ AMD radeon graphics карт, it might help to supply 'radeon.modeset=0' as boot option for the live CD and to install the required firmware package '<a href="gpu-en.htm#ati-3d">AMD/ATI 3D drivers</a>' on the live system, before installing to the harddisk.
-					Once firmware-linux-nonfree is installed, kernel parameters like 'radeon.modeset=0' or 'vga=791' should not be used anymore, as they might interfere with KMS operations, which are needed for radeon to work properly.
+					Для функціональності KMS в поєднанні з ATi / AMD Radeon графічних карт, Вам необхідна пасуюча прошивка ( для невільної прошивки дивіться <a href="gpu-en.htm#ati-3d">AMD/ATI 3D drivers</a>) якої нема на aptosid-live-cd, в той час як X.org повинний повернутися до модуса vesa на карт зі проблемами, Особливa увагa може знадобитися в рідкісних випадках.
+					Якщо X-сервер не керується на ATi/ AMD radeon графічних карт, то треба запутити модус 'radeon.modeset=0' як варіант завантаження на live-CD та встановити залежну від вашої карти прошивку '<a href="gpu-en.htm#ati-3d">AMD/ATI 3D drivers</a>' на aptosid-live, перед встановленням на жорсткий диск.
+					Після встановлення прошивок не треба вже більше запустати параметри завантаження як наприклад 'radeon.modeset=0' або 'vga=791' тому що вони можуть перешкодити операціям KMS, які необхідні для Radeon щоб працювати належним чином.
 				</p>
 
 				<p>
-					Nouveau doesn't require any kind of firmware and supports KMS natively, framebuffer kernel parameters like 'vga=791' are no longer valid and break starting X on nVidia graphics карт.
+					Драйверу Nouveau не потрібно прошивок та підтримка KMS працює тількі по базовому режимі, параметри завантаження для монітора як наприклад 'vga=791' не дійсне і активно заважає завантаженні X-серверу на графічних картах nVidia.
 				</p>
 
 				<h3>grub2</h3>
