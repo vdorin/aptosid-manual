@@ -16,8 +16,8 @@
         <link rel="stylesheet" type="text/css" href="../lib/css-js/ie_5-6_override.css">
         <![endif]-->
 </head>
-<body id="part">
-<!-- Last translation revision bluewater 14/08/2010 0100 UTC -->
+<body>
+<!-- Last translation revision bluewater 05/03/2013 1140 UTC -->
 <!--htdig_noindex--> <div id="menu"> <!-- menu starts here en lang maintained by bluewater-->
 <!--aptosid Operating System Manual menu-version-02.15.2013.01.10 -->
 <!-- menu last updated by bluewater 2013.01.10 0910 hrs UTC -->
@@ -480,7 +480,15 @@ To get out of the konsole type: exit
 							<p>Now your NTFS Volume should be mounted <b>rw</b> and you should be able to store data on it. But again, be warned! <span class="highlight-3">Use it in emergency situations, it is not recommended  for use on a daily basis.</span></p>
 
 		</div>
-		<div id="rev">Content last revised 14/08/2010 0100 UTC</div>
+		<div class="divider" id="exfat">
+			    <h2>exfat</h2>
+							 <p>exfat is a proprietary file format covered by patents held by Microsoft &#8482; and commonly found on SDXC cards. To mount/read/write to the file system, simply install the exfat-fuse package:</p>
+<pre>
+apt-get update &amp;&amp; apt-get install exfat-fuse
+</pre>
+
+		</div>
+		<div id="rev">Content last revised 05/03/2013 1140 UTC</div>
 
 </div>
 </body>
