@@ -415,7 +415,7 @@ force_color_prompt=yes
 <pre>
 PS1='${debian_chroot:+($debian_chroot)}\[\033[01;36m\]\u@\h\[\033[01;36m\]:\[\033[01;36m\]\w\[\033[00m\]\$ '
 </pre>
-							<p>De nieuw kleuren zullen enkel in een nieuwe terminal sessie verschijnen.</p>
+							<p>De nieuwe kleuren zullen enkel in een nieuwe terminal sessie verschijnen.</p>
 
 				<h6>Hoe verander je de kleur van jouw root# prompt :</h6>
 <pre>
@@ -443,84 +443,84 @@ PS1='${debian_chroot:+($debian_chroot)}\[\033[01;31m\]\u@\h\[\033[01;31m\]:\[\03
 							<p>Er is een veelvuldigheid van opties beschikbaar, we raden echter aan om het eenvoudig te houden.</p>
 	</div>
 	<div class="divider" id="sux">
-		      <h2>About Xapps whilst in X as root and sux2 as an alias</h2>
-							<p>While the common command for becoming root is <span class="highlight-3">&lt;su&gt;</span>, using <span class="highlight-3">kdesu &lt;Application&gt;</span> or <span class="highlight-3">gksu &lt;Application&gt;</span> will allow you run GUI / X11 applications from the desktop and allow root to start graphical applications.</p>
+		      <h2>Over Xapps als je in X bent als root en sux2 als een alias</h2>
+							<p>Terwijl het normale commando om root te worden <span class="highlight-3">&lt;su&gt;</span> is, zal <span class="highlight-3">kdesu &lt;Application&gt;</span> or <span class="highlight-3">gksu &lt;Application&gt;</span> je toelaten dat je GUI / X11 applicaties start van het bureaublad en zal root toelaten om grafische toepassingen te starten.</p>
 
-							<p><span class="highlight-2">For those used to using <span class="highlight-3"> sux </span>, (sux has been broken by a 'login' security update for a long time), will find that <a href="#alias">sux2, as an alias, is a good option in the meantime</a> otherwise use, as $user:</p> </span>
+							<p><span class="highlight-2">Voor zij die gewoon waren <span class="highlight-3"> sux </span> te gebruiken, (sux is voor lange tijd defect door een 'login' security update), zal <a href="#alias">sux2, als een alias, momenteel een goede optie zijn</a>. Anders gebruik als $user:</p> </span>
 <pre>
 $ suxterm
 </pre>
-							<p>In most cases, using an Xapp while in root is to take advantage of a GUI editor like kate, kwrite, mousepad or leafpad to name just a few. X while in root is also required for the GUI partitioning application gparted. (Also see <a href="#sudo"> sudo</a>).</p>
+							<p>In de meeste gevallen is het gebruik van een Xapp als root nodig om gebruik te kunnen maken van een GUI editor zoals kate, kwrite, mousepad of leafpad, om er maar enkele to noemen. X onder root is ook vereist voor de GUI partitioning applicatie gparted. (Zie ook <a href="#sudo"> sudo</a>).</p>
 
-							<p>Non-gui applications like mcedit, vim, vi, or emacs are highly recommended as editors, with mcedit being one of the intuitive editors of the non-gui applications for use by first time users of a text editor while in root with X. mcedit, vim, vi or emacs are possibly your only choices of an editor while not in X. (<span class="highlight-3">mc</span> is an ideal file browser while not in X).</p>
+							<p>Non-GUI applicaties zoals mcedit, vim, vi, or emacs worden ten sterkste aanbevolen als editors, met mcedit als een van de meest intuitieve editors voor beginners. mcedit, vim, vi of emacs zijn mogelijks je enige keuze wanneer je niet in X bent. (<span class="highlight-3">mc</span> is een ideale bestansbeheerder wanneer je niet in X bent).</p>
 
 
-				<h4>KDE options</h4>
+				<h4>KDE opties</h4>
 
-							<p>To start kdesu in KDE:</p>
+							<p>Om kdesu te starten in KDE:</p>
 <pre>
 Alt+F2
 </pre>
-							<p>or right-click on the desktop and choose:</p>
+							<p>of rechts-click op het bureaublad en kies:</p>
 <pre>
 Run Command
 </pre>
-							 <p>then:</p>
+							 <p>dan:</p>
 
 <pre>
 kdesu &lt;Application&gt;
 </pre>
 
-							<p>Some KDE applications require <span class="highlight-3">dbus-launch</span> in front of the application:</p>
+							<p>Sommige KDE applicaties vereisen <span class="highlight-3">dbus-launch</span> voor de applicatie:</p>
 <pre>
 dbus-launch &lt;Application&gt;
 </pre>
 
-				<h4>Xfce options</h4>
-							<p>To start Run Command in Xfce:</p>
+				<h4>Xfce opties</h4>
+							<p>Om het Run Command te starten in Xfce:</p>
 <pre>
 Alt+F2
 </pre>
-							<p>or right-click on the desktop and choose:</p>
+							<p>of rechts-click op het bureaublad en kies:</p>
 <pre>
 Run Command
 </pre>
-							 <p>then:</p>
+							 <p>dan:</p>
 
 <pre>
 gksu &lt;Application&gt;
 </pre>
 
-					  <h4>Other Desktop Window Manager options</h4>
-							<p>Another keyboard option also generic to all major Desktop Managers is:</p>
+					  <h4>Andere Desktop Window Manager opties</h4>
+							<p>Een veelvoorkomende keyboard optie voor alle grote Desktop Managers is:</p>
 <pre>
 Alt+F2
 </pre>
-							<p>then:</p>
+							<p>dan:</p>
 <pre>
 su-to-root -X -c &lt;Application&gt;
 </pre>
-					  <h3>Terminal/konsole options</h3>
-							<p>To run kdesu in a terminal:</p>
+					  <h3>Terminal/konsole opties</h3>
+							<p>Om kdesu in een terminal te gebruiken:</p>
 <pre>
 /usr/lib/kde4/libexec/kdesu
 </pre>
-							<p>To run gksu in a terminal:</p>
+							<p>Om gksu in een terminal te gebruiken:</p>
 <pre>
 /usr/bin/gksu
 </pre>
 
-							<p>Another option is <span class="highlight-3">ssh -X root@localhost</span> otherwise use <span class="highlight-3">su-to-root -X -c </span>:</p>
+							<p>Een andere optie is <span class="highlight-3">ssh -X root@localhost</span> ofwel <span class="highlight-3">su-to-root -X -c </span>:</p>
 
 							
 <pre>
 ssh -X root@localhost
 </pre>
-							<p>Whilst ssh is installed by defualt it may not be enabled. To enable ssh, as root:
+							<p>Alhoewel ssh per default geinstalleerd is, kan het niet geactiveerd zijn. Om ssh te activeren, als root:
 <pre>
 /etc/init.d/ssh start
 </pre>
-							<p>else:</p>
+							<p>anders:</p>
 <pre>
 su-to-root -X -c &lt;application&gt;
 </pre>
@@ -528,45 +528,45 @@ su-to-root -X -c &lt;application&gt;
 
 	</div>
 	<div class="divider" id="alias">
-				    <h2>Setting up an alias in a the terminal for kdesu, gksu, su-to-root -X -c or ssh -X root@localhost called <span class="highlight-3">sux2</span></h2>
+				    <h2>In een terminal een alias creëren voor kdesu, gksu, su-to-root -X -c or ssh -X root@localhost genaamd <span class="highlight-3">sux2</span></h2>
 
-							<p>Typing a long command line in the terminal all the time is not an ideal, so the solution is to set up an terminal/konsole alias called <span class="highlight-3">sux2</span>.</p>
+							<p>Het typen van een lang commando in een terminal is niet altijd ideaal. De oplossing is een terminal/konsole alias te creëren genaamd <span class="highlight-3">sux2</span>.</p>
 
-							<p><span class="highlight-2">Note: In each of the following examples the command to activate the alias in a terminal will be:</span></p>
+							<p><span class="highlight-2">Nota: In elk van de volgende voorbeelden is het commando om de alias te activeren in de terminal:</span></p>
 
 <pre>
 <span class="highlight-2">sux2 &lt;application&gt;</span>
 </pre>
-					  <h5><span class="highlight-3">Setting an alias</span></h5> 
-							<p>The use of mcedit as <span class="highlight-3">$user </span>in the following examples is deliberate. Feel free to use any editor you wish to use:</p>
+					  <h5><span class="highlight-3">Het creëren van een alias</span></h5> 
+							<p>Het gebruik van mcedit als <span class="highlight-3">$user </span>in de volgende voorbeelden is gewild. Je kan een andere editor gebruiken als je wenst:</p>
 <pre>
 $ mcedit ~/.bashrc
 </pre>
-							<p><span class="highlight-2">Note:To enable any changes you have made you need to close the terminal/konsole and restart it.</span></p>
+							<p><span class="highlight-2">Nota: Om de veranderingen, die je gemaakt hebt, te activeren moet je de terminal/konsole sluiten en herstarten.</span></p>
 
-					<h3><span class="highlight-3">Add the following code to the file ~/.bashrc by appending the code to the end of the  file:</span></h3>
+					<h3><span class="highlight-3">Voeg de volgende code toe aan het einde van het bestand ~/.bashrc :</span></h3>
 
-					  <h4>Setting kdesu an alias</h4>
+					  <h4>Zet kdesu als een alias</h4>
 <pre>
 alias sux2='/usr/lib/kde4/libexec/kdesu' 
 </pre>				  
 
-					   <h4>Setting gksu an alias</h4> 
+					   <h4>Zet gksu als een alias</h4> 
 <pre>
 alias sux2='/usr/bin/gksu'
 </pre>
 
-					    <h4>Setting su-to-root -X -c as an alias</h4>
+					    <h4>Zet su-to-root -X -c als een alias</h4>
 <pre>
 alias sux2='su-to-root -X -c'
 </pre>
 
-					    <h4>Setting ssh -X root@localhost as an alias</h4>
+					    <h4>Zet ssh -X root@localhost als een alias</h4>
 <pre>
 alias sux2='ssh -X root@localhost'
 </pre>
 
-							<p>You may want to implement a ~/.bash_alias file to contain all the aliases that you find useful. Therefore make a file called ~/.bash_alias.  Read the ~/.bashrc file and /usr/share/doc/bash-doc/examples:</p>
+							<p>Je kan ook een ~/.bash_alias bestand maken dat alle aliases bevat die je nuttig vindt. Lees het ~/.bashrc bestand en de /usr/share/doc/bash-doc/examples:</p>
 <pre>
 apt-get install bash-doc
 </pre>
@@ -579,7 +579,7 @@ apt-get install bash-doc
 
 							<p>Eeen ander probleem met sudo is dat het daartoe kan leiden dat root een applicatie uitvoert met de user configuratie en hierbij de instellingen overschrijft of rechten veranderd. Dat kan soms daartoe leiden dat een user de applicatie niet meer kan gebruiken. Het gebruik <span class="highlight-3"><a href="#sux">sux2</a>, kdesu, gksu or su-to-root -X -c</span> wordt geadvisserd!</p>
 
-					  <h2>Being in root</h2>
+					  <h2>Werken in root</h2>
 							<p class="highlight-2">WAARSCHUWING: Terwijl je aangelogd bent als root gebruiker, weerhoudt het systeem je er niet van om eventuele gevaarlijke dingen uit te voeren, zoals het verwijderen van belangrijke bestanden enzo., je moet je 100% zeker van zijn dat je de actie die je wilt uitvoeren de gewenste resultaten zal behalen, omdat het kan inhouden dat je systeem niet meer werkt zoals het zou moeten. </p>
 
 							<p class="highlight-2">Je moet om geen enkel omstandigheden root worden in een console/terminal om applicaties te starten waar een standaard gebruiker zijn dagelijkse productie werkzaamheden aan verricht!! </p>
@@ -617,11 +617,11 @@ $ apropos apt-
 
 	</div>
 	<div class="divider" id="term-cmds">
-		<h2>Linux Terminal Commands Lijst (excerpt)</h2>
+		<h2>Linux Terminal Commands Lijst (uittreksel)</h2>
 
 							<p>Dit is een uitstekende inleiding over het gebruik van BASH <a href="http://linuxcommand.org/"> van linuxcommand.org</a></p>
 
-							<p class="highlight-3">A very comprehensive list of  commands in alphabetical order from <a href="http://ss64.com/bash/"></a> An A-Z Index of the Bash command line for Linux and is a 'must bookmark'</p>
+							<p class="highlight-3">Een vrij volledige lijst van commando's in alfabetische orde vindt je op : <a href="http://ss64.com/bash/"> Een A-Z Index van de Bash command line voor Linux</a>, een 'must bookmark'</p>
 
 							<p>Er zijn talrijke handleidingen op het Internet. Een erg goede site voor beginners is: <a 	href="http://linux.org.mt/article/terminal">A Beginner's Bash</a> in het Engels.</p>
 
