@@ -351,7 +351,7 @@ nome_do_usuário@nome_do_computador:~$
 
 							<p>Você pode ver que o 'nome_do_usuário' é seu próprio nome de login. O <span class="highlight-3">~ (til)</span> mostra que você está em seu diretório /home e o <span class="highlight-3">$</span> indica que você está logado com privilégios de usuário. No final, fica o cursor. Esta é sua linha de comando, onde você digita os comandos que deseja executar.</p>
 
-							<p>Muitos comandos só rodam com privilégios de 'root' ou 'superusuário'. Para se tornar root, basta digitar <span class="highlight-3">sux</span> no prompt e pressionar [ENTER]. O sistema pedirá sua senha de root. Digite-a e aperte [ENTER] de novo (note que quando você digita a senha não aparece nada na tela).</p>
+							<p>Muitos comandos só rodam com privilégios de 'root' ou 'superusuário'. Para se tornar root, basta digitar <span class="highlight-3">su</span> no prompt e pressionar [ENTER]. O sistema pedirá sua senha de root. Digite-a e aperte [ENTER] de novo (note que quando você digita a senha não aparece nada na tela).</p>
 
 							<p>Se a senha estiver correta, o prompt vai mudar para:</p>
 
@@ -422,8 +422,8 @@ PS1='${debian_chroot:+($debian_chroot)}\[\033[01;36m\]\u@\h\[\033[01;36m\]:\[\03
 
 				<h6>Como mudar a cor do prompt do root #:</h6>
 <pre>
-sux
-&lt;editor&gt; /root/.bashrc
+su
+&lt;mcedit&gt; /root/.bashrc
 </pre>
 							<p>Vá até a linha 39 e descomente-a. Ela deverá ficar assim:</p>
 <pre>
@@ -441,71 +441,146 @@ PS1='${debian_chroot:+($debian_chroot)}\[\033[01;31m\]\u@\h\[\033[01;31m\]:\[\03
 							<p>Para mudar a cor de fundo e as fontes do terminal, veja as opções no Menu do Terminal. </p>
 
 
-		<div class="screenshot"><img src="../lib/images-common/images-terminal/terminal-colour-0.1.png" title="Terminal colours" alt="Terminal colours" /></div>
+		<div class="screenshot"><img src="../lib/images-common/images-terminal/terminal-colour-0.2.png" title="Terminal colours" alt="Terminal colours" /></div>
 
 							<p>Há um grande arco de opções disponíveis; entretanto, recomendamos atentar sempre para a simplicidade.</p>
 	</div>
 	<div class="divider" id="sux">
-	<h2>Sobre o sux</h2>
-							<p>Muitos comandos só rodam com privilégios de root. Para isso, digite:</p>
+		      <h2>About Xapps whilst in X as root and sux2 as an alias</h2>
+							<p>While the common command for becoming root is <span class="highlight-3">&lt;su&gt;</span>, using <span class="highlight-3">kdesu &lt;Application&gt;</span> or <span class="highlight-3">gksu &lt;Application&gt;</span> will allow you run GUI / X11 applications from the desktop and allow root to start graphical applications.</p>
+
+							<p><span class="highlight-2">For those used to using <span class="highlight-3"> sux </span>, (sux has been broken by a 'login' security update for a long time), will find that <a href="#alias">sux2, as an alias, is a good option in the meantime</a> otherwise use, as $user:</p> </span>
 <pre>
-sux
+$ suxterm
 </pre>
+							<p>In most cases, using an Xapp while in root is to take advantage of a GUI editor like kate, kwrite, mousepad or leafpad to name just a few. X while in root is also required for the GUI partitioning application gparted. (Also see <a href="#sudo"> sudo</a>).</p>
 
-							<p>O comando mais comum para se tornar root é o "su", porém ao usar <span class="highlight-3">sux</span> você poderá rodar aplicações GUI / X11 pela linha de comando e executar aplicações gráficas. Isto porque o <span class="highlight-3">sux</span> envolve o 'su', que transfere suas credenciais X para o usuário alvo. (Veja também <a href="#sudo"> sudo</a>).</p>
+							<p>Non-gui applications like mcedit, vim, vi, or emacs are highly recommended as editors, with mcedit being one of the intuitive editors of the non-gui applications for use by first time users of a text editor while in root with X. mcedit, vim, vi or emacs are possibly your only choices of an editor while not in X. (<span class="highlight-3">mc</span> is an ideal file browser while not in X).</p>
 
-							<p>Um exemplo disso é rodar um editor de texto, como o KWrite ou KEdit, para alterar arquivos root, usar o GParted para particionar um HD, ou rodar o gerenciador de arquivos Dolphin ou Thunar. <!--Você também pode fazer alterações em arquivos que exijam privilégios de root clicando no arquivo com o botão direito do mouse e escolhendo 'Editar como root'. Em seguida entre com a senha e comece a edição.--></p>
 
-							<p>Algumas aplicações do KDE exigem que o <span class="highlight-3">dbus-launch</span> seja rodado à sua frente:</p>
-<pre>
-dbus-launch &lt;Aplicação&gt;
-</pre>
+				<h4>KDE options</h4>
 
-				<h6>Opções do KDE pelo teclado:</h6>
-							<p>Para iniciar o krunner no KDE:</p>
+							<p>To start kdesu in KDE:</p>
 <pre>
 Alt+F2
 </pre>
-							<p>...ou clique com o botão direito na área de trabalho e escolha:</p>
+							<p>or right-click on the desktop and choose:</p>
 <pre>
-Executar Comando
+Run Command
 </pre>
-							 <p>então:</p>
+							 <p>then:</p>
 
 <pre>
-kdesu &lt;aplicação&gt;
+kdesu &lt;Application&gt;
 </pre>
 
-				<h6>Opções do XFCE pelo teclado:</h6>
-							<p>Para iniciar o 'Executar Comando' no XFCE:</p>
+							<p>Some KDE applications require <span class="highlight-3">dbus-launch</span> in front of the application:</p>
+<pre>
+dbus-launch &lt;Application&gt;
+</pre>
+
+				<h4>Xfce options</h4>
+							<p>To start Run Command in Xfce:</p>
 <pre>
 Alt+F2
 </pre>
-							<p>...ou clique com o botão direito na área de trabalho e escolha:</p>
+							<p>or right-click on the desktop and choose:</p>
 <pre>
-Executar Programa
+Run Command
 </pre>
-							 <p>daí:</p>
+							 <p>then:</p>
 
 <pre>
-gksu &lt;aplicação&gt;
+gksu &lt;Application&gt;
 </pre>
-					  <h6>Opções para outros Gerenciadores de Janelas</h6>
-							<p>Outra opção genérica, usando o teclado, para a maioria dos principais Gerenciadores de Janelas é:</p>
+
+					  <h4>Other Desktop Window Manager options</h4>
+							<p>Another keyboard option also generic to all major Desktop Managers is:</p>
 <pre>
 Alt+F2
 </pre>
-							<p>então:</p>
+							<p>then:</p>
 <pre>
-su-to-root -X -c &lt;aplicação&gt;
+su-to-root -X -c &lt;Application&gt;
 </pre>
-							<p><span class="highlight-3">Todas as opções de teclado acima podem ser rodadas pelo terminal.</span></p>
+					  <h3>Terminal/konsole options</h3>
+							<p>To run kdesu in a terminal:</p>
+<pre>
+/usr/lib/kde4/libexec/kdesu
+</pre>
+							<p>To run gksu in a terminal:</p>
+<pre>
+/usr/bin/gksu
+</pre>
+
+							<p>Another option is <span class="highlight-3">ssh -X root@localhost</span> otherwise use <span class="highlight-3">su-to-root -X -c </span>:</p>
+
+							
+<pre>
+ssh -X root@localhost
+</pre>
+							<p>Whilst ssh is installed by defualt it may not be enabled. To enable ssh, as root:
+<pre>
+/etc/init.d/ssh start
+</pre>
+							<p>else:</p>
+<pre>
+su-to-root -X -c &lt;application&gt;
+</pre>
+
+
+	</div>
+	<div class="divider" id="alias">
+				    <h2>Setting up an alias in a the terminal for kdesu, gksu, su-to-root -X -c or ssh -X root@localhost called <span class="highlight-3">sux2</span></h2>
+
+							<p>Typing a long command line in the terminal all the time is not an ideal, so the solution is to set up an terminal/konsole alias called <span class="highlight-3">sux2</span>.</p>
+
+							<p><span class="highlight-2">Note: In each of the following examples the command to activate the alias in a terminal will be:</span></p>
+
+<pre>
+<span class="highlight-2">sux2 &lt;application&gt;</span>
+</pre>
+					  <h5><span class="highlight-3">Setting an alias</span></h5> 
+							<p>The use of mcedit as <span class="highlight-3">$user </span>in the following examples is deliberate. Feel free to use any editor you wish to use:</p>
+<pre>
+$ mcedit ~/.bashrc
+</pre>
+							<p><span class="highlight-2">Note:To enable any changes you have made you need to close the terminal/konsole and restart it.</span></p>
+
+					<h3><span class="highlight-3">Add the following code to the file ~/.bashrc by appending the code to the end of the  file:</span></h3>
+
+					  <h4>Setting kdesu an alias</h4>
+<pre>
+alias sux2='/usr/lib/kde4/libexec/kdesu' 
+</pre>				  
+
+					   <h4>Setting gksu an alias</h4> 
+<pre>
+alias sux2='/usr/bin/gksu'
+</pre>
+
+					    <h4>Setting su-to-root -X -c as an alias</h4>
+<pre>
+alias sux2='su-to-root -X -c'
+</pre>
+
+					    <h4>Setting ssh -X root@localhost as an alias</h4>
+<pre>
+alias sux2='ssh -X root@localhost'
+</pre>
+
+							<p>You may want to implement a ~/.bash_alias file to contain all the aliases that you find useful. Therefore make a file called ~/.bash_alias.  Read the ~/.bashrc file and /usr/share/doc/bash-doc/examples:</p>
+<pre>
+apt-get install bash-doc
+</pre>
+
+							
 	</div>
 	<div class="divider" id="sudo">
 					<h2>Não há suporte para o sudo</h2>
 							<p>O sudo não é habilitado automaticamente quando o aptosid é instalado no HD. Ele está disponível para uso quando se dá o boot pelo LiveCD, já que nenhuma senha de root é cadastrada. A motivação por trás disso é que, se alguém atacar a máquina e se apoderar da senha dos usuários, esse alguém não terá controle de imediato dos privilégios do superusuário. Isso impede que ele cause potenciais danos ao sistema.</p>
 
-							<p>Outro problema com o sudo é que ele permite que uma aplicação típica do root seja rodada com uma configuração de usuário, o que pode substituir ou alterar permissões. Em certos casos, isto pode subsequentemente fazer com que uma aplicação se torne inútil para o usuário. Use <span class="highlight-3"><a href="#sux">sux</a>, kdesu, gksu ou su-to-root -X -c</span> conforme recomendado!</p>
+							<p>Outro problema com o sudo é que ele permite que uma aplicação típica do root seja rodada com uma configuração de usuário, o que pode substituir ou alterar permissões. Em certos casos, isto pode subsequentemente fazer com que uma aplicação se torne inútil para o usuário. Use <span class="highlight-3"><a href="#sux">sux2</a>, kdesu, gksu ou su-to-root -X -c</span> conforme recomendado!</p>
 
 					  <h2>Enquanto root</h2>
 							<p class="highlight-2">ATENÇÃO: enquanto estiver numa sessão como root, o sistema não irá impedi-lo de fazer coisas perigosas, como apagar arquivos importantes etc. Portanto, é necessário que você esteja absolutamente seguro do que está fazendo, porque há uma grande possibilidade de você danificar seu sistema.</p>
@@ -548,14 +623,14 @@ $ apropos apt-
 
 							<p>Aprenda mais sobre o uso do Shell no <a href="http://linuxcommand.org/"> linuxcommand.org</a></p>
 
-							<p class="highlight-3">Uma lista com 687 comandos em ordem alfabética do <a href="http://www.linuxdevcenter.com/linux/cmd/#a">Linux in a Nutshell, 5th Edition: O'Reilly Publications</a> estão disponíveis nessa página; o endereço merece entrar para seus Favoritos.</p>
+							<p class="highlight-3">A very comprehensive list of  commands in alphabetical order from <a href="http://ss64.com/bash/"></a> An A-Z Index of the Bash command line for Linux and is a 'must bookmark'</p>
 
 							<p>Há numerosos tutoriais na Internet, inclusive um que é ótimo para iniciantes: <a href="http://linux.org.mt/article/terminal">A Beginner's Bash</a></p>
 
 							<p>Todos os exemplos fornecidos acima estão em Inglês; em Português há o excelente <a href="http://focalinux.cipsga.org.br/"> Guia/FOCA GNU/Linux </a>. Você pode também usar sua ferramenta de busca preferida para encontrar mais sobre o assunto.</p>
 
 	</div>
-	<div class="divider" id="shell-scripts">
+<!--	<div class="divider" id="shell-scripts">
 		<h2>Scripts - um exemplo e como usá-los</h2>
 
 							<p> Um 'shell script' (ou simplesmente 'script') é uma maneira conveniente de agrupar diversos comandos em um arquivo. Ao digitar o nome do script, cada comando será executado. O aptosid vem com vários scripts úteis, para tornar mais fácil a vida do usuário.</p>
@@ -603,9 +678,9 @@ You successfully downloaded and executed a bash script!   [Você baixou e execut
 Welcome to aptosid-manuals http://manual.aptosid.com   [Bem-vindo ao manual do aptosid em http://manual.aptosid.com]
 </pre>
 
-	</div>
+	</div> -->
 
-	<div id="rev">Page last revised 14/08/2010 0100 UTC</div>
+	<div id="rev">Page last revised 05/03/2013 1325 UTC</div>
 
 </div>
 </body>

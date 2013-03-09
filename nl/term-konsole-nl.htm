@@ -351,7 +351,7 @@ username@hostname:~$
 
 							<p>Je zou de username moeten herkennen als je eigen login naam. De <span class="highlight-3">~ (tilde)</span> geeft aan dat je in je home directory bent en de <span class="highlight-3">$</span> geeft aan dat je ingelogd bent met goede gebruikersrechten. Aan het einde vind je je cursor. Dit is je commando regel waar je je commando's invoert die je wilt laten uitvoeren door het Linux besturingssysteem.</p>
 
-							<p>Veel commando's moeten uitgevoerd worden met root rechten. Om dit te bereiken tik je het volgend achter de prompt in <span class="highlight-3">sux</span> en druk je op de enter-toets. Je wordt nu gevraagd om het root wachtwoord op te geven. Tik je wachtwoord in en druk weer op enter (notitie: wanneer je je wachtwoord intikt zie je deze niet op het beeldscherm!).</p>
+							<p>Veel commando's moeten uitgevoerd worden met root rechten. Om dit te bereiken tik je het volgend achter de prompt in <span class="highlight-3">su</span> en druk je op de enter-toets. Je wordt nu gevraagd om het root wachtwoord op te geven. Tik je wachtwoord in en druk weer op enter (notitie: wanneer je je wachtwoord intikt zie je deze niet op het beeldscherm!).</p>
 
 							<p>Indien je wachtwoord goed is zal de prompt veranderen in:</p>
 
@@ -419,8 +419,8 @@ PS1='${debian_chroot:+($debian_chroot)}\[\033[01;36m\]\u@\h\[\033[01;36m\]:\[\03
 
 				<h6>Hoe verander je de kleur van jouw root# prompt :</h6>
 <pre>
-sux
-&lt;editor&gt; /root/.bashrc
+su
+&lt;mcedit&gt; /root/.bashrc
 </pre>
 							<p>Ga naar lijn 39 en uncomment deze, zoals :</p>
 <pre>
@@ -438,69 +438,146 @@ PS1='${debian_chroot:+($debian_chroot)}\[\033[01;31m\]\u@\h\[\033[01;31m\]:\[\03
 							<p>Kijk naar de menu opties van de terminal voor het wijzigen van de achtergrond kleur en de font opties. </p>
 
 
-		<div class="screenshot"><img src="../lib/images-common/images-terminal/terminal-colour-0.1.png" title="Terminal colours" alt="Terminal colours" /></div>
+		<div class="screenshot"><img src="../lib/images-common/images-terminal/terminal-colour-0.2.png" title="Terminal colours" alt="Terminal colours" /></div>
 
 							<p>Er is een veelvuldigheid van opties beschikbaar, we raden echter aan om het eenvoudig te houden.</p>
 	</div>
 	<div class="divider" id="sux">
-	<h2>Over sux</h2>
-							<p>Talrijke commando's moeten uitgevoerd worden met root rechten. Om dit te bereiken type je:</p>
-<pre>
-sux
-</pre>
-							<p>Terwijl het algemene commando om root te worden 'su' is gebruiken we <span class="highlight-3">sux</span> om GUI / X11 applicatie's als root via de command lijn op te starten (in hun grafische mode), <span class="highlight-3">sux</span> zorgt ervoor dat het commando met de X credentials van de doelgebruikt wordt opgestart. (See also <a href="#sudo"> sudo</a>).</p>
+		      <h2>About Xapps whilst in X as root and sux2 as an alias</h2>
+							<p>While the common command for becoming root is <span class="highlight-3">&lt;su&gt;</span>, using <span class="highlight-3">kdesu &lt;Application&gt;</span> or <span class="highlight-3">gksu &lt;Application&gt;</span> will allow you run GUI / X11 applications from the desktop and allow root to start graphical applications.</p>
 
-							<p>Een voorbeeld van het draaien van een X11 app via sux is het gebruiken van een tekst editor om een root bestand te wijzigen via kwrite of kate, of om te partitioneren mbv gparted of om een Xapp file manager zoals dolphin or thunar op te starten. <!--Je kunt ook root bestanden wijzigigen door er met de rechtermuisknop op te klikken en dan te kiezen voor 'edit-as-root', er wordt je dan om het root wachtwoord gevraagd dit je moet invoeren, dit roept dan het programma kdesu in de achtergrond op.--></p>
-
-							<p>Voor sommige KDE applicaties moet <span class="highlight-3">dbus-launch</span> voor de naam van het programma geplaatst worden:</p>
+							<p><span class="highlight-2">For those used to using <span class="highlight-3"> sux </span>, (sux has been broken by a 'login' security update for a long time), will find that <a href="#alias">sux2, as an alias, is a good option in the meantime</a> otherwise use, as $user:</p> </span>
 <pre>
-dbus-launch &lt;Application&gt;
+$ suxterm
 </pre>
-				<h6>KDE keyboard opties</h6>
-							<p>krunner starten in KDE:</p>
+							<p>In most cases, using an Xapp while in root is to take advantage of a GUI editor like kate, kwrite, mousepad or leafpad to name just a few. X while in root is also required for the GUI partitioning application gparted. (Also see <a href="#sudo"> sudo</a>).</p>
+
+							<p>Non-gui applications like mcedit, vim, vi, or emacs are highly recommended as editors, with mcedit being one of the intuitive editors of the non-gui applications for use by first time users of a text editor while in root with X. mcedit, vim, vi or emacs are possibly your only choices of an editor while not in X. (<span class="highlight-3">mc</span> is an ideal file browser while not in X).</p>
+
+
+				<h4>KDE options</h4>
+
+							<p>To start kdesu in KDE:</p>
 <pre>
 Alt+F2
 </pre>
-							<p>of met de rechter muisknop klikken op de desktop en kies dan:</p>
+							<p>or right-click on the desktop and choose:</p>
 <pre>
 Run Command
 </pre>
-							 <p>hierna:</p>
+							 <p>then:</p>
 
 <pre>
 kdesu &lt;Application&gt;
 </pre>
 
-				<h6>Xfce keyboard opties</h6>
-							<p>Om Run Command in Xfce te starten:</p>
+							<p>Some KDE applications require <span class="highlight-3">dbus-launch</span> in front of the application:</p>
+<pre>
+dbus-launch &lt;Application&gt;
+</pre>
+
+				<h4>Xfce options</h4>
+							<p>To start Run Command in Xfce:</p>
 <pre>
 Alt+F2
 </pre>
-							<p>of met de rechter muisknop klikken op de desktop en kies dan:</p>
+							<p>or right-click on the desktop and choose:</p>
 <pre>
 Run Command
 </pre>
-							 <p>hierna:</p>
+							 <p>then:</p>
 
 <pre>
 gksu &lt;Application&gt;
 </pre>
-					  <h6>Andere Desktop WIndow Manager opties</h6>
-							<p>Een andere  keyboard optie voor verschillende Desktop Managers is:</p>
+
+					  <h4>Other Desktop Window Manager options</h4>
+							<p>Another keyboard option also generic to all major Desktop Managers is:</p>
 <pre>
 Alt+F2
 </pre>
-							<p>hierna:</p>
+							<p>then:</p>
 <pre>
 su-to-root -X -c &lt;Application&gt;
 </pre>
-							<p><span class="highlight-3">Alle genoemde keyboard opties kunnen ook in een terminal/konsole gebruikt worden.</span></p>
+					  <h3>Terminal/konsole options</h3>
+							<p>To run kdesu in a terminal:</p>
+<pre>
+/usr/lib/kde4/libexec/kdesu
+</pre>
+							<p>To run gksu in a terminal:</p>
+<pre>
+/usr/bin/gksu
+</pre>
+
+							<p>Another option is <span class="highlight-3">ssh -X root@localhost</span> otherwise use <span class="highlight-3">su-to-root -X -c </span>:</p>
+
+							
+<pre>
+ssh -X root@localhost
+</pre>
+							<p>Whilst ssh is installed by defualt it may not be enabled. To enable ssh, as root:
+<pre>
+/etc/init.d/ssh start
+</pre>
+							<p>else:</p>
+<pre>
+su-to-root -X -c &lt;application&gt;
+</pre>
+
+
+	</div>
+	<div class="divider" id="alias">
+				    <h2>Setting up an alias in a the terminal for kdesu, gksu, su-to-root -X -c or ssh -X root@localhost called <span class="highlight-3">sux2</span></h2>
+
+							<p>Typing a long command line in the terminal all the time is not an ideal, so the solution is to set up an terminal/konsole alias called <span class="highlight-3">sux2</span>.</p>
+
+							<p><span class="highlight-2">Note: In each of the following examples the command to activate the alias in a terminal will be:</span></p>
+
+<pre>
+<span class="highlight-2">sux2 &lt;application&gt;</span>
+</pre>
+					  <h5><span class="highlight-3">Setting an alias</span></h5> 
+							<p>The use of mcedit as <span class="highlight-3">$user </span>in the following examples is deliberate. Feel free to use any editor you wish to use:</p>
+<pre>
+$ mcedit ~/.bashrc
+</pre>
+							<p><span class="highlight-2">Note:To enable any changes you have made you need to close the terminal/konsole and restart it.</span></p>
+
+					<h3><span class="highlight-3">Add the following code to the file ~/.bashrc by appending the code to the end of the  file:</span></h3>
+
+					  <h4>Setting kdesu an alias</h4>
+<pre>
+alias sux2='/usr/lib/kde4/libexec/kdesu' 
+</pre>				  
+
+					   <h4>Setting gksu an alias</h4> 
+<pre>
+alias sux2='/usr/bin/gksu'
+</pre>
+
+					    <h4>Setting su-to-root -X -c as an alias</h4>
+<pre>
+alias sux2='su-to-root -X -c'
+</pre>
+
+					    <h4>Setting ssh -X root@localhost as an alias</h4>
+<pre>
+alias sux2='ssh -X root@localhost'
+</pre>
+
+							<p>You may want to implement a ~/.bash_alias file to contain all the aliases that you find useful. Therefore make a file called ~/.bash_alias.  Read the ~/.bashrc file and /usr/share/doc/bash-doc/examples:</p>
+<pre>
+apt-get install bash-doc
+</pre>
+
+							
 	</div>
 	<div class="divider" id="sudo">
 					<h2>sudo wordt niet ondersteund</h2>
 							<p>sudo is standaard niet geactiveerd voor installaties op de hard disk. Het is alleen beschikbaar in de live-CD omdat daar geen root-password vastgelegd is. De reden hierachter is dat een hacker met een gedetecteerd user password (bijv. keylogger), nooit in staat zal zijn om een systeem te beschadigen. Men heeft immers het root-password niet.</p>
 
-							<p>Eeen ander probleem met sudo is dat het daartoe kan leiden dat root een applicatie uitvoert met de user configuratie en hierbij de instellingen overschrijft of rechten veranderd. Dat kan soms daartoe leiden dat een user de applicatie niet meer kan gebruiken. Het gebruik <span class="highlight-3"><a href="#sux">sux</a>, kdesu, gksu or su-to-root -X -c</span> wordt geadvisserd!</p>
+							<p>Eeen ander probleem met sudo is dat het daartoe kan leiden dat root een applicatie uitvoert met de user configuratie en hierbij de instellingen overschrijft of rechten veranderd. Dat kan soms daartoe leiden dat een user de applicatie niet meer kan gebruiken. Het gebruik <span class="highlight-3"><a href="#sux">sux2</a>, kdesu, gksu or su-to-root -X -c</span> wordt geadvisserd!</p>
 
 					  <h2>Being in root</h2>
 							<p class="highlight-2">WAARSCHUWING: Terwijl je aangelogd bent als root gebruiker, weerhoudt het systeem je er niet van om eventuele gevaarlijke dingen uit te voeren, zoals het verwijderen van belangrijke bestanden enzo., je moet je 100% zeker van zijn dat je de actie die je wilt uitvoeren de gewenste resultaten zal behalen, omdat het kan inhouden dat je systeem niet meer werkt zoals het zou moeten. </p>
@@ -544,14 +621,14 @@ $ apropos apt-
 
 							<p>Dit is een uitstekende inleiding over het gebruik van BASH <a href="http://linuxcommand.org/"> van linuxcommand.org</a></p>
 
-							<p class="highlight-3">Een uitgebreide lijst van 687 commando's in alfabetische volgorde staat hier <a href="http://www.linuxdevcenter.com/linux/cmd/#a">Linux in a Nutshell, 5th Edition : O'Reilly Publications</a> en is een zeer zinvolle favoriet/bladwijzer/bookmark.</p>
+							<p class="highlight-3">A very comprehensive list of  commands in alphabetical order from <a href="http://ss64.com/bash/"></a> An A-Z Index of the Bash command line for Linux and is a 'must bookmark'</p>
 
 							<p>Er zijn talrijke handleidingen op het Internet. Een erg goede site voor beginners is: <a 	href="http://linux.org.mt/article/terminal">A Beginner's Bash</a> in het Engels.</p>
 
 							<p>Of gebruik je favoriete zoekmachine om meer te vinden.</p>
 
 	</div>
-	<div class="divider" id="shell-scripts">
+<!--	<div class="divider" id="shell-scripts">
 		<h2>Een script en hoe je deze moet gebruiken</h2>
 
 							<p>Een shell script is de aangewezen manier om meerdere opdrachten samen in een bestand te groeperen, door het invoeren van de bestandsnaam van het script zal elke opdracht in volgorde uitgevoerd worden. aptosid beschikt over verschillende bruikbare scripts teneinde het de gebruikers makkelijker te maken. </p>
@@ -600,9 +677,9 @@ Welcome to aptosid-manuals http://manual.aptosid.com
 </pre>
 
 
-	</div>
+	</div> -->
 
-		<div id="rev">Inhoud het laatst gewijzigd op 14/08/2010 0100 UTC</div>
+		<div id="rev">Inhoud het laatst gewijzigd op 05/03/2013 1325 UTC</div>
 </div>
 </body>
 </html>

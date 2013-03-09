@@ -351,7 +351,7 @@ nomdutilisateur@nomdemachine:~$
 
 							<p>Vous devriez reconnaître le nom d'utilisateur grâce auquel vous êtes logué sous linux. Le <span class="highlight-3">~ (tilde)</span> indique que vous vous trouvez dans votre répertoire 'home' et le signe <span class="highlight-3">$</span> indique que vous êtes logué dans la console avec des privilèges d'utilisateur. Le curseur clignote à la suite de cette invite. C'est à cet endroit que vous entrerez vos commandes.</p>
 
-							<p>Beaucoup de commandes nécessitent d'être activées avec des privilèges d'administrateur (root). Pour ce faire, entrez :<span class="highlight-3">sux</span> à la suite de l'invite et appuyez sur la touche "Entrée" (enter). Vous vous trouvez alors invité à entrer votre mot-de-passe d'administrateur. Tapez-le puis appuyez sur "Entrée" (notez que pendant la frappe du mot-de-passe rien n'apparaît à l'écran).</p>
+							<p>Beaucoup de commandes nécessitent d'être activées avec des privilèges d'administrateur (root). Pour ce faire, entrez :<span class="highlight-3">su</span> à la suite de l'invite et appuyez sur la touche "Entrée" (enter). Vous vous trouvez alors invité à entrer votre mot-de-passe d'administrateur. Tapez-le puis appuyez sur "Entrée" (notez que pendant la frappe du mot-de-passe rien n'apparaît à l'écran).</p>
 
 							<p>Si le mot-de-passe est le bon, l'invite de commande change et devient alors:</p>
 
@@ -473,8 +473,8 @@ PS1='${debian_chroot:+($debian_chroot)}\[\033[01;36m\]\u@\h\[\033[01;36m\]:\[\03
 
 				<h6>Pour changer la couleur du prompt administrateur (root)# :</h6>
 <pre>
-sux
-&lt;editor&gt; /root/.bashrc
+su
+&lt;mcedit&gt; /root/.bashrc
 </pre>
 							<p>Aller à la ligne 39 et décommentez ainsi:</p>
 <pre>
@@ -492,40 +492,26 @@ PS1='${debian_chroot:+($debian_chroot)}\[\033[01;31m\]\u@\h\[\033[01;31m\]:\[\03
 							<p>Pour changer la couleur de fond et les options de font du terminal, aller dans les options du menu du terminal. </p>
 
 
-		<div class="screenshot"><img src="../lib/images-common/images-terminal/terminal-colour-0.1.png" title="Terminal colours" alt="Terminal colours" /></div>
+		<div class="screenshot"><img src="../lib/images-common/images-terminal/terminal-colour-0.2.png" title="Terminal colours" alt="Terminal colours" /></div>
 
 							<p>Il existe une plethore d'options de couleurs disponibles, cependant il est recommandé de faire simple.</p>
 	</div>
 	<div class="divider" id="sux">
-	<!--- ####
-	<h2>About sux</h2>
-	#### -->
-	<h2>sux</h2>
-							<!--- ####
-							<p>Numerous commands need to be run with root privileges. To achieve this you type:</p>
-							#### -->
-							<p>Plusieurs commandes ont besoin d'être lancés avec les privilèges d'administrateur. Pour sortir entrez dans le terminal:</p>
+		      <h2>About Xapps whilst in X as root and sux2 as an alias</h2>
+							<p>While the common command for becoming root is <span class="highlight-3">&lt;su&gt;</span>, using <span class="highlight-3">kdesu &lt;Application&gt;</span> or <span class="highlight-3">gksu &lt;Application&gt;</span> will allow you run GUI / X11 applications from the desktop and allow root to start graphical applications.</p>
+
+							<p><span class="highlight-2">For those used to using <span class="highlight-3"> sux </span>, (sux has been broken by a 'login' security update for a long time), will find that <a href="#alias">sux2, as an alias, is a good option in the meantime</a> otherwise use, as $user:</p> </span>
 <pre>
-sux
+$ suxterm
 </pre>
+							<p>In most cases, using an Xapp while in root is to take advantage of a GUI editor like kate, kwrite, mousepad or leafpad to name just a few. X while in root is also required for the GUI partitioning application gparted. (Also see <a href="#sudo"> sudo</a>).</p>
 
-							<!--- ####
-							<p>While the common command for becoming root is 'su'  using <span class="highlight-3">sux</span> instead will allow you run GUI / X11 applications from the command line and allow root to start graphical applications, as <span class="highlight-3">sux</span> is a wrapper around the standard su command which will transfer  your X credentials to the target user. (See also <a href="#sudo"> sudo</a>).</p>
-							#### -->
-							<p>Alors que la commande usuelle pour devenir administrateur est 'su', l'utilisation de <span class="highlight-3">sux</span> vous permet également de lancer les applications graphiques sur X11 en ligne de commande avec les privilèges d'administrateur, car la commande <span class="highlight-3">sux</span> enveloppe le standard 'su', qui transfère votre crédentiel de X à l'utilisateur choisi. (Voir aussi <a href="#sudo"> sudo</a>).</p>
+							<p>Non-gui applications like mcedit, vim, vi, or emacs are highly recommended as editors, with mcedit being one of the intuitive editors of the non-gui applications for use by first time users of a text editor while in root with X. mcedit, vim, vi or emacs are possibly your only choices of an editor while not in X. (<span class="highlight-3">mc</span> is an ideal file browser while not in X).</p>
 
-							<!--- ####
-							<p>An example of running an X11 app via sux is to use a text editor to edit a root file with kwrite or kate, or to do partitioning with gparted or use an Xapp file manager like dolphin or thunar. You can also alter root files by right clicking the file and choosing 'edit-as-root', and entering your root password, this will call kdesu in the background.</p> -->
 
-							<p>Un exemple de lancement d'une application X11 via sux est d'utiliser un editeur de texte, comme kwrite ou kate, pour modifier un fichier avec les privilèges d'administrateur, ou partitionner avec gparted, ou gérer des fichier sur X11 avec dolphin or thunar. <!--Vous pouvez aussi modifier les fichiers d'administrateur en cliquant sur le bouton droit et choisir 'editer comme administrateur' ensuite entrer votre mot de passe administrateur. Cela lancera kdesu en arrière plan.--></p>
+				<h4>KDE options</h4>
 
-							<p>Certaines applications KDE requièrent <span class="highlight-3">dbus-launch</span> avant le nom de l'application:</p>
-<pre>
-dbus-launch &lt;Application&gt;
-</pre>
-<!--- ###
-				<h6>KDE keyboard options</h6>
-							<p>To start krunner in KDE:</p>
+							<p>To start kdesu in KDE:</p>
 <pre>
 Alt+F2
 </pre>
@@ -539,7 +525,12 @@ Run Command
 kdesu &lt;Application&gt;
 </pre>
 
-				<h6>Xfce keyboard options</h6>
+							<p>Some KDE applications require <span class="highlight-3">dbus-launch</span> in front of the application:</p>
+<pre>
+dbus-launch &lt;Application&gt;
+</pre>
+
+				<h4>Xfce options</h4>
 							<p>To start Run Command in Xfce:</p>
 <pre>
 Alt+F2
@@ -553,71 +544,94 @@ Run Command
 <pre>
 gksu &lt;Application&gt;
 </pre>
-					  <h6>Other Desktop WIndow Manager options</h6>
-							<p>Une autre keyboard option générique à la plupart des environnements fenêtrés est:</p>
+
+					  <h4>Other Desktop Window Manager options</h4>
+							<p>Another keyboard option also generic to all major Desktop Managers is:</p>
 <pre>
 Alt+F2
 </pre>
 							<p>then:</p>
 <pre>
- su-to-root -X -c &lt;Application&gt;
+su-to-root -X -c &lt;Application&gt;
 </pre>
-							<p><span class="highlight-3">All of the above keyboard options can be run in a terminal.</span></p>
+					  <h3>Terminal/konsole options</h3>
+							<p>To run kdesu in a terminal:</p>
+<pre>
+/usr/lib/kde4/libexec/kdesu
+</pre>
+							<p>To run gksu in a terminal:</p>
+<pre>
+/usr/bin/gksu
+</pre>
+
+							<p>Another option is <span class="highlight-3">ssh -X root@localhost</span> otherwise use <span class="highlight-3">su-to-root -X -c </span>:</p>
+
+							
+<pre>
+ssh -X root@localhost
+</pre>
+							<p>Whilst ssh is installed by defualt it may not be enabled. To enable ssh, as root:
+<pre>
+/etc/init.d/ssh start
+</pre>
+							<p>else:</p>
+<pre>
+su-to-root -X -c &lt;application&gt;
+</pre>
+
+
 	</div>
-	<div class="divider" id="sudo">
-					<h2>sudo is not supported</h2>
-							<p>sudo is not enabled by default on installation to hard disk. It is available for use on a live-ISO since no root password is preset. The reasoning behind this is so that if an attacker gets hold of the users password, they do not immediately get full super-user priviledges and make potentially damaging changes to your system.</p>
+	<div class="divider" id="alias">
+				    <h2>Setting up an alias in a the terminal for kdesu, gksu, su-to-root -X -c or ssh -X root@localhost called <span class="highlight-3">sux2</span></h2>
 
-							<p>Another issue with sudo is that it leads to running a root application with a users configuration, which may override or change permissions. In some cases, this can subsequently make an application unusable for the user. Use <span class="highlight-3"><a href="#sux">sux</a>, kdesu, gksu or su-to-root -X -c</span> as recommended!</p>
+							<p>Typing a long command line in the terminal all the time is not an ideal, so the solution is to set up an terminal/konsole alias called <span class="highlight-3">sux2</span>.</p>
 
-					  <h2>Being in root</h2>
-
-### --->
-				<h6>Options du Clavier sous KDE</h6>
-							<p>pour lancer krunner sous KDE:</p>
-<pre>
-Alt+F2
-</pre>
-							<p>ou clique droit sur le bureau et choisir:</p>
-<pre>
-Run Command
-</pre>
-							 <p>ensuite:</p>
+							<p><span class="highlight-2">Note: In each of the following examples the command to activate the alias in a terminal will be:</span></p>
 
 <pre>
-kdesu &lt;Application&gt;
+<span class="highlight-2">sux2 &lt;application&gt;</span>
+</pre>
+					  <h5><span class="highlight-3">Setting an alias</span></h5> 
+							<p>The use of mcedit as <span class="highlight-3">$user </span>in the following examples is deliberate. Feel free to use any editor you wish to use:</p>
+<pre>
+$ mcedit ~/.bashrc
+</pre>
+							<p><span class="highlight-2">Note:To enable any changes you have made you need to close the terminal/konsole and restart it.</span></p>
+
+					<h3><span class="highlight-3">Add the following code to the file ~/.bashrc by appending the code to the end of the  file:</span></h3>
+
+					  <h4>Setting kdesu an alias</h4>
+<pre>
+alias sux2='/usr/lib/kde4/libexec/kdesu' 
+</pre>				  
+
+					   <h4>Setting gksu an alias</h4> 
+<pre>
+alias sux2='/usr/bin/gksu'
 </pre>
 
-				<h6>Options de clavier sous Xfce</h6>
-							<p>Pour lancer une application en commande sous Xfce:</p>
+					    <h4>Setting su-to-root -X -c as an alias</h4>
 <pre>
-Alt+F2
+alias sux2='su-to-root -X -c'
 </pre>
-							<p>ou clique droit sur le bureau et choisir:</p>
-<pre>
-Run Command
-</pre>
-							 <p>ensuite:</p>
 
+					    <h4>Setting ssh -X root@localhost as an alias</h4>
 <pre>
-gksu &lt;Application&gt;
+alias sux2='ssh -X root@localhost'
 </pre>
-					  <h6>Options pour les autres environnements fenêtrés</h6>
-							<p>Une autre keyboard option générique à la plupart des environnements fenêtrés est:</p>
+
+							<p>You may want to implement a ~/.bash_alias file to contain all the aliases that you find useful. Therefore make a file called ~/.bash_alias.  Read the ~/.bashrc file and /usr/share/doc/bash-doc/examples:</p>
 <pre>
-Alt+F2
+apt-get install bash-doc
 </pre>
-							<p>ensuite:</p>
-<pre>
- su-to-root -X -c &lt;Application&gt;
-</pre>
-							<p><span class="highlight-3">Toutes les options sus énumérée peuvent être exécutées dans un terminal.</span></p>
-	</div>
+
+							
+	 </div>
 	<div class="divider" id="sudo">
 					<h2>sudo n'est pas supporté</h2>
 							<p>sudo n'est pas disponible par défaut lors de l'installation en dur. Il n'est disponible que pour une utilisation livecd où aucun mot de passe root n'est requis. La raison, c'est qu'en cas d'attaque et que les mots de passe utilisateurs sont découverts, il n'y aura aucun accès direct aux privilèges de super-utilisateurs qui pourraient permettre d'endommager votre système.</p>
 
-							<p>Sudo permet aussi de lancer en tant qu'utilisateur des applications d'administrateur (root), ce qui outrepasse et change les autorisations. Dans certains cas, cela peut irremédiablement rendre une application inutilisable pour l'utilisateur. Utiliser <span class="highlight-3"><a href="#sux">sux</a>, kdesu, gksu ou su-to-root -X -c</span> comme recommandé!</p>
+							<p>Sudo permet aussi de lancer en tant qu'utilisateur des applications d'administrateur (root), ce qui outrepasse et change les autorisations. Dans certains cas, cela peut irremédiablement rendre une application inutilisable pour l'utilisateur. Utiliser <span class="highlight-3"><a href="#sux">sux2</a>, kdesu, gksu ou su-to-root -X -c</span> comme recommandé!</p>
 
 					  <h2>En tant que root</h2>
 
@@ -668,14 +682,14 @@ $ apropos apt-
 
 							<p>Un excellent point de départ pour utiliser le terminal BASH se trouve sur <a href="http://linuxcommand.org/"> linuxcommand.org</a></p>
 
-							<p class="highlight-3">Une liste de 687 commandes, classées par ordre alphabétique et détaillée de manière très compréhensible peut se trouver dans <a href="http://www.linuxdevcenter.com/linux/cmd/#a">Linux in a Nutshell, 5ème Edition: O'Reilly Publications</a>. C'est une ressource à mettre dans vos signets Internet !</p>
+							<p class="highlight-3">A very comprehensive list of  commands in alphabetical order from <a href="http://ss64.com/bash/"></a> An A-Z Index of the Bash command line for Linux and is a 'must bookmark'</p>
 
 							<p>Internet regorge de tutoriaux sur le sujet. Un d'entre eux est l'excellent : <a href="http://linux.org.mt/article/terminal">A Beginner's Bash</a></p>
 
 							<p>Utilisez sans modération votre moteur de recherche préféré pour en découvrir plus sur le sujet.</p>
 
 	</div>
-	<div class="divider" id="shell-scripts">
+<!--	<div class="divider" id="shell-scripts">
 		<h2>Les scripts et comment les utiliser</h2>
 
 							<!--- ####
@@ -763,9 +777,9 @@ You successfully downloaded and executed a bash script!
 Welcome to aptosid-manuals http://manual.aptosid.com
 </pre>
 
-	</div>
+	</div> -->
 
-	<div id="rev">Dernière Révision le 14/08/2010 0100 UTC</div>
+	<div id="rev">Dernière Révision le 05/03/2013 1325 UTC</div>
 
 </div>
 </body>

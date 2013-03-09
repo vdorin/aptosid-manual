@@ -367,9 +367,9 @@ username@hostname:~$
 							<p>usernameのところにあなたのログインネームが表示されているはずです。 <span class="highlight-3">~</span> は今あなたのホーム・ディレクトリにいること、<span class="highlight-3">$</span>はユーザーの権利でログインしていることを示しています。 最後にカーソルが表示されています。 これが実行したいコマンドを入力するためのコマンドラインです。</p>
 
 							<!--- ####
-							<p>A lot of commands need to be run with root privileges. To achieve this you type:<span class="highlight-3">sux</span> at the prompt and press enter. You will then be asked for your root password. Type your password and hit enter again (note that when you type your password, nothing will show on the screen).</p>
+							<p>A lot of commands need to be run with root privileges. To achieve this you type:<span class="highlight-3">su</span> at the prompt and press enter. You will then be asked for your root password. Type your password and hit enter again (note that when you type your password, nothing will show on the screen).</p>
 							#### -->
-							<p> 実行にあたってrootの権利を必要とするコマンドがたくさんあります。 そのためにはコマンドラインに<span class="highlight-3">sux</span> とタイプしてEnterを押してください。 rootパスワードを聞かれますのでタイプしてEnterを押してください。 (パスワードの入力中はタイプした文字は表示されません)</p>
+							<p> 実行にあたってrootの権利を必要とするコマンドがたくさんあります。 そのためにはコマンドラインに<span class="highlight-3">su</span> とタイプしてEnterを押してください。 rootパスワードを聞かれますのでタイプしてEnterを押してください。 (パスワードの入力中はタイプした文字は表示されません)</p>
 
 							<!--- ####
 							<p>If your password is correct the prompt will change to:</p>
@@ -491,8 +491,8 @@ PS1='${debian_chroot:+($debian_chroot)}\[\033[01;36m\]\u@\h\[\033[01;36m\]:\[\03
 				#### -->
 				<h6>root としての # プロンプトの色を変えるには:</h6>
 <pre>
-sux
-&lt;editor&gt; /root/.bashrc
+su
+&lt;mcedit&gt; /root/.bashrc
 </pre>
 							<!--- ####
 							<p>Go to line 39 and uncomment it, thus:</p>
@@ -528,7 +528,7 @@ PS1='${debian_chroot:+($debian_chroot)}\[\033[01;31m\]\u@\h\[\033[01;31m\]:\[\03
 							<p>コンソールターミナルの背景色やフォントを変えるにはターミナルプログラムのメニューのオプションから探してください。</p>
 
 
-		<div class="screenshot"><img src="../lib/images-common/images-terminal/terminal-colour-0.1.png" title="Terminal colours" alt="Terminal colours" /></div>
+		<div class="screenshot"><img src="../lib/images-common/images-terminal/terminal-colour-0.2.png" title="Terminal colours" alt="Terminal colours" /></div>
 
 							<!--- ####
 							<p>There are a plethora of options available for changing colours, however the recommendation is to keep it simple.</p>
@@ -536,91 +536,56 @@ PS1='${debian_chroot:+($debian_chroot)}\[\033[01;31m\]\u@\h\[\033[01;31m\]:\[\03
 							<p>色設定に凝りはじめると限りなく様々な設定ができますが、あまり凝らずになるべくシンプルな設定にしておくようにおすすめします。</p>
 	</div>
 	<div class="divider" id="sux">
-	<h2>About sux</h2>
-							<!--- ####
-							<p>Numerous commands need to be run with root privileges. To achieve this you type:</p>
-							#### -->
-							<p>rootの特権を持って実行する必要があるコマンドがたくさんあります。 そのためには:</p>
+		      <h2>About Xapps whilst in X as root and sux2 as an alias</h2>
+							<p>While the common command for becoming root is <span class="highlight-3">&lt;su&gt;</span>, using <span class="highlight-3">kdesu &lt;Application&gt;</span> or <span class="highlight-3">gksu &lt;Application&gt;</span> will allow you run GUI / X11 applications from the desktop and allow root to start graphical applications.</p>
+
+							<p><span class="highlight-2">For those used to using <span class="highlight-3"> sux </span>, (sux has been broken by a 'login' security update for a long time), will find that <a href="#alias">sux2, as an alias, is a good option in the meantime</a> otherwise use, as $user:</p> </span>
 <pre>
-sux
+$ suxterm
 </pre>
-							<p>とタイプします。</p>
+							<p>In most cases, using an Xapp while in root is to take advantage of a GUI editor like kate, kwrite, mousepad or leafpad to name just a few. X while in root is also required for the GUI partitioning application gparted. (Also see <a href="#sudo"> sudo</a>).</p>
 
-							<!--- ####
-							<p>While the common command for becoming root is 'su'  using <span class="highlight-3">sux</span> instead will allow you run GUI / X11 applications from the command line and allow root to start graphical applications, as <span class="highlight-3">sux</span> is a wrapper around the standard su command which will transfer  your X credentials to the target user. (See also <a href="#sudo"> sudo</a>).</p>
-							#### -->
-							<p>rootになるためのコマン ドとして普通は'su'を使いますが、代わりに<span class="highlight-3">sux</span>を使う ことでX11のアプリケーションもコマンドラインから実行することができます。 <span class="highlight-3">sux</span>はwrapperとして標準のsuを呼ぶ前にユーザーのXクレデンシャル(資格証明)やディスプレイの情報などををサーバに送ります。 (<a href="#sudo"> sudo</a>の欄参照).</p>
+							<p>Non-gui applications like mcedit, vim, vi, or emacs are highly recommended as editors, with mcedit being one of the intuitive editors of the non-gui applications for use by first time users of a text editor while in root with X. mcedit, vim, vi or emacs are possibly your only choices of an editor while not in X. (<span class="highlight-3">mc</span> is an ideal file browser while not in X).</p>
 
-							<!--- ####
-							<p>An example of running an X11 app via sux is to use a text editor to edit a root file like kwrite or kate, to do partitioning with gparted or an Xapp file manager like dolphin or thunar. You can also alter root files by right clicking the file and choosing 'edit-as-root', and entering your root password, this will call kdesu in the background.</p>
-							#### -->
-							<p>suxを使ってX11のアプリケーションを実行する例としてkwriteやkateといったテキストエディタでrootのファイルを編集したり、dolphin や thunar といったファイルマネージャーでシステム管理したり、gpartedでパーティションを作ることなどがあげられます。  <!--でファイルを閲覧するとき右クリックで'rootとして編集’を選んでファイルを変更することもできます。 kdesuが実行されてrootのパスワードを聞いてきます。--></p>
 
-<!--- ####
-							<p>Some KDE applications require <span class="highlight-3">dbus-launch</span> in front of the application:</p>
-#### -->
-							<p>KDEのアプリケーションにはプログラム名の前に<span class="highlight-3">dbus-launch</span> をつける必要のあるものもあります:</p>
-<pre>
-dbus-launch &lt;Application&gt;
-</pre>
-<!--- ####
-				<h6>KDE keyboard options</h6>
-#### -->
-				<h6>KDE のキーボードオプション</h6>
-				<!--- ####
-							<p>To start krunner in KDE:</p>
-#### -->
-							<p>KDE の krunner をスタートするには:</p>
+				<h4>KDE options</h4>
+
+							<p>To start kdesu in KDE:</p>
 <pre>
 Alt+F2
 </pre>
-<!--- ####
 							<p>or right-click on the desktop and choose:</p>
-#### -->
-							<p>またはデスクトップを右クリックしてから次のメニューを選びます:</p>
 <pre>
 Run Command
 </pre>
-<!--- ####
 							 <p>then:</p>
-#### -->
-							 <p>そして:</p>
 
 <pre>
 kdesu &lt;Application&gt;
 </pre>
 
-<!--- ####
-				<h6>Xfce keyboard options</h6>
-#### -->
-				<h6>XFCE のキーボードオプション</h6>
-				<!--- ####
+							<p>Some KDE applications require <span class="highlight-3">dbus-launch</span> in front of the application:</p>
+<pre>
+dbus-launch &lt;Application&gt;
+</pre>
+
+				<h4>Xfce options</h4>
 							<p>To start Run Command in Xfce:</p>
-#### -->
-							<p>XFCE の Run Command  をスタートするには:</p>
 <pre>
 Alt+F2
 </pre>
-<!--- ####
 							<p>or right-click on the desktop and choose:</p>
-#### -->
-							<p>またはデスクトップを右クリックしてから次のメニューを選びます:</p>
 <pre>
 Run Command
 </pre>
-<!--- ####
 							 <p>then:</p>
-#### -->
-							 <p>そして:</p>
 
 <pre>
 gksu &lt;Application&gt;
 </pre>
-					  <h6>Other Desktop WIndow Manager options</h6>
-<!--- ####
-							<p>Another  keyboard option also generic to all major Desktop Managers is:</p>
-#### -->
-							<p>もう一つ、たいていのデスクトップマネージャーでも使えるオプションとして:</p>
+
+					  <h4>Other Desktop Window Manager options</h4>
+							<p>Another keyboard option also generic to all major Desktop Managers is:</p>
 <pre>
 Alt+F2
 </pre>
@@ -628,10 +593,78 @@ Alt+F2
 <pre>
 su-to-root -X -c &lt;Application&gt;
 </pre>
-<!--- ####
-							<p><span class="highlight-3">All of the above keyboard options can be run in a terminal.</span></p>
-#### -->
-							<p><span class="highlight-3">上記のコマンドはターミナルにタイプして実行します。</span></p>
+					  <h3>Terminal/konsole options</h3>
+							<p>To run kdesu in a terminal:</p>
+<pre>
+/usr/lib/kde4/libexec/kdesu
+</pre>
+							<p>To run gksu in a terminal:</p>
+<pre>
+/usr/bin/gksu
+</pre>
+
+							<p>Another option is <span class="highlight-3">ssh -X root@localhost</span> otherwise use <span class="highlight-3">su-to-root -X -c </span>:</p>
+
+							
+<pre>
+ssh -X root@localhost
+</pre>
+							<p>Whilst ssh is installed by defualt it may not be enabled. To enable ssh, as root:
+<pre>
+/etc/init.d/ssh start
+</pre>
+							<p>else:</p>
+<pre>
+su-to-root -X -c &lt;application&gt;
+</pre>
+
+
+	</div>
+	<div class="divider" id="alias">
+				    <h2>Setting up an alias in a the terminal for kdesu, gksu, su-to-root -X -c or ssh -X root@localhost called <span class="highlight-3">sux2</span></h2>
+
+							<p>Typing a long command line in the terminal all the time is not an ideal, so the solution is to set up an terminal/konsole alias called <span class="highlight-3">sux2</span>.</p>
+
+							<p><span class="highlight-2">Note: In each of the following examples the command to activate the alias in a terminal will be:</span></p>
+
+<pre>
+<span class="highlight-2">sux2 &lt;application&gt;</span>
+</pre>
+					  <h5><span class="highlight-3">Setting an alias</span></h5> 
+							<p>The use of mcedit as <span class="highlight-3">$user </span>in the following examples is deliberate. Feel free to use any editor you wish to use:</p>
+<pre>
+$ mcedit ~/.bashrc
+</pre>
+							<p><span class="highlight-2">Note:To enable any changes you have made you need to close the terminal/konsole and restart it.</span></p>
+
+					<h3><span class="highlight-3">Add the following code to the file ~/.bashrc by appending the code to the end of the  file:</span></h3>
+
+					  <h4>Setting kdesu an alias</h4>
+<pre>
+alias sux2='/usr/lib/kde4/libexec/kdesu' 
+</pre>				  
+
+					   <h4>Setting gksu an alias</h4> 
+<pre>
+alias sux2='/usr/bin/gksu'
+</pre>
+
+					    <h4>Setting su-to-root -X -c as an alias</h4>
+<pre>
+alias sux2='su-to-root -X -c'
+</pre>
+
+					    <h4>Setting ssh -X root@localhost as an alias</h4>
+<pre>
+alias sux2='ssh -X root@localhost'
+</pre>
+
+							<p>You may want to implement a ~/.bash_alias file to contain all the aliases that you find useful. Therefore make a file called ~/.bash_alias.  Read the ~/.bashrc file and /usr/share/doc/bash-doc/examples:</p>
+<pre>
+apt-get install bash-doc
+</pre>
+
+							
 	</div>
 	<div class="divider" id="sudo">
 					<!--- ####
@@ -646,7 +679,7 @@ su-to-root -X -c &lt;Application&gt;
 							<!--- ####
 							<p>Another issue with sudo is that it leads to running a root application with a users configuration, which may override or change permissions. In some cases, this can subsequently make an application unusable for the user. Use <span class="highlight-3">sux, kdesu, gksu or su-to-root -X -c</span> as recommended!</p>
 #### -->
-							<p>sudo のもう一つの問題点として、ユーザーの設定でスーパーユーザー用のコマンドを実行しているうちに、ファイルの権利設定を知らない間に変更してしまうことがあることです。このためにその後コマンドをユーザーとして実行できなくなってしまうような例もあります。sudo の代わりに<span class="highlight-3"><a href="#sux">sux</a>, kdesu, gksu または su-to-root -X -c</span> などを使いましょう!</p>
+							<p>sudo のもう一つの問題点として、ユーザーの設定でスーパーユーザー用のコマンドを実行しているうちに、ファイルの権利設定を知らない間に変更してしまうことがあることです。このためにその後コマンドをユーザーとして実行できなくなってしまうような例もあります。sudo の代わりに<span class="highlight-3"><a href="#sux">sux2</a>, kdesu, gksu または su-to-root -X -c</span> などを使いましょう!</p>
 
 							<!--- ####
 					  <h2>Being in root</h2>
@@ -720,10 +753,8 @@ $ apropos apt-
 							<p>This is an excellent primer on using BASH <a href="http://linuxcommand.org/"> from linuxcommand.org</a></p>
 							#### -->
 							<p> BASHの使い方を学ぶのにとても優れたサイトとして<a href="http://linuxcommand.org/"> linuxcommand.org</a>があります.</p>
-							<!--- ####
-							<p class="highlight-3">A very comprehensive list of 687 commands in alphabetical order from <a href="http://www.linuxdevcenter.com/linux/cmd/#a">Linux in a Nutshell, 5th Edition: O'Reilly Publications</a> can be found here and is a 'must bookmark'</p>
-							#### -->
-							<p class="highlight-3">アルファベット順に687のコマンドを網羅した必携の本として<a href="http://www.linuxdevcenter.com/linux/cmd/#a">Linux in a Nutshell, 5th Edition: O'Reilly Publications</a>をこのリンクからオーダーできます。</p>
+
+							<p class="highlight-3">A very comprehensive list of  commands in alphabetical order from <a href="http://ss64.com/bash/"></a> An A-Z Index of the Bash command line for Linux and is a 'must bookmark'</p>
 
 							<!--- ####
 							<p>There are numerous tutorials on the Internet. A very good one aimed at the beginner is: <a href="http://linux.org.mt/article/terminal">A Beginner's Bash</a></p>
@@ -736,7 +767,7 @@ $ apropos apt-
 							<p>お気に入りのサーチエンジンで他にも自分で探してください。</p>
 
 	</div>
-	<div class="divider" id="shell-scripts">
+<!--	<div class="divider" id="shell-scripts">
 		<!--- ####
 		<h2>A script and how to use them</h2>
 		#### -->
@@ -826,9 +857,9 @@ Welcome to aptosid-manuals http://manual.aptosid.com
 おめでとう<br />
 あなたはbashスクリプトをダウンロードして実行するのに成功しました!<br />
 aptosidマニュアルにようこそ http://manual.aptosid.com)<br />
-	</div>
+	</div> -->
 
-	<div id="rev">Page last revised 14/08/2010 0100 UTC</div>
+	<div id="rev">Page last revised 05/03/2013 1325 UTC</div>
 
 </div>
 </body>

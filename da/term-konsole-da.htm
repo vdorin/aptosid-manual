@@ -351,7 +351,7 @@ brugernavn@værtsnavn:~$
 
 							<p>Forhåbentlig kan du genkende brugernavnet som dit log ind navn. Værtsnavnet er navnet på din maskine. <span class="highlight-3">~ (tilde)</span> indikerer at du er i din hjemmemappe (/home) og <span class="highlight-3">$</span> indikerer at du er logget ind på terminalen med bruger-rettigheder. Ved liniens slutning finder du din markør. Det er kommandolinien, og det er her du skriver de kommandoer du vil have maskinen til at udføre.</p>
 
-							<p>En hel del kommandoer kræver root-rettigheder (administrator-rettigheder) for at kunne udføres. For at opnå root-rettigheder kan du skrive <span class="highlight-3">sux</span> på kommandolinien og trykke retur. Du bliver så spurgt om dit root password. Mens du taster dit root password ind, bemærk da at du ikke kan se hvad du taster på skærmen. Afslut med retur.</p>
+							<p>En hel del kommandoer kræver root-rettigheder (administrator-rettigheder) for at kunne udføres. For at opnå root-rettigheder kan du skrive <span class="highlight-3">su</span> på kommandolinien og trykke retur. Du bliver så spurgt om dit root password. Mens du taster dit root password ind, bemærk da at du ikke kan se hvad du taster på skærmen. Afslut med retur.</p>
 
 							<p>Hvis det var det korrekte password så vil prompten nu ændres til:</p>
 
@@ -419,8 +419,8 @@ PS1='${debian_chroot:+($debian_chroot)}\[\033[01;36m\]\u@\h\[\033[01;36m\]:\[\03
 
 				<h6>For at ændre farven i din root# prompt:</h6>
 <pre>
-sux
-&lt;editor&gt; /root/.bashrc
+su
+&lt;mcedit&gt; /root/.bashrc
 </pre>
 							<p>Gå til linie 39 og afkommenter den (fjern #), altså:</p>
 <pre>
@@ -438,71 +438,146 @@ PS1='${debian_chroot:+($debian_chroot)}\[\033[01;31m\]\u@\h\[\033[01;31m\]:\[\03
 							<p>For at ændre farven i baggrunden samt fonten der anvendes i terminalen kan du se under menu mulighederne i terminalen. </p>
 
 
-		<div class="screenshot"><img src="../lib/images-common/images-terminal/terminal-colour-0.1.png" title="Terminal farver" alt="Terminal farver" /></div>
+		<div class="screenshot"><img src="../lib/images-common/images-terminal/terminal-colour-0.2.png" title="Terminal farver" alt="Terminal farver" /></div>
 
 							<p>Der er et hav af muligheder for at ændre farve her, det vigtigste er dog at forsøge at holde det simpelt og overskueligt.</p>
 	</div>
 	<div class="divider" id="sux">
-	<h2>Om sux</h2>
-							<p>Mange kommandoer skal afvikles med root privilegier. For at opnå root privilegier taster du:</p>
+		      <h2>About Xapps whilst in X as root and sux2 as an alias</h2>
+							<p>While the common command for becoming root is <span class="highlight-3">&lt;su&gt;</span>, using <span class="highlight-3">kdesu &lt;Application&gt;</span> or <span class="highlight-3">gksu &lt;Application&gt;</span> will allow you run GUI / X11 applications from the desktop and allow root to start graphical applications.</p>
+
+							<p><span class="highlight-2">For those used to using <span class="highlight-3"> sux </span>, (sux has been broken by a 'login' security update for a long time), will find that <a href="#alias">sux2, as an alias, is a good option in the meantime</a> otherwise use, as $user:</p> </span>
 <pre>
-sux
+$ suxterm
 </pre>
+							<p>In most cases, using an Xapp while in root is to take advantage of a GUI editor like kate, kwrite, mousepad or leafpad to name just a few. X while in root is also required for the GUI partitioning application gparted. (Also see <a href="#sudo"> sudo</a>).</p>
 
-							<p>Den almindelige kommando til at opnå root rettigheder er 'su', men hvis du istedet bruger <span class="highlight-3">sux</span> tillader det dig at afvikle GUI / X11 applikationer fra kommandolinien og gør root i stand til at starte grafiske programmer. <span class="highlight-3">sux</span> er en wrapper omkring standard kommandoen 'su', som overfører dine X rettigheder til målbrugeren.  (See also <a href="#sudo"> sudo</a>).</p>
+							<p>Non-gui applications like mcedit, vim, vi, or emacs are highly recommended as editors, with mcedit being one of the intuitive editors of the non-gui applications for use by first time users of a text editor while in root with X. mcedit, vim, vi or emacs are possibly your only choices of an editor while not in X. (<span class="highlight-3">mc</span> is an ideal file browser while not in X).</p>
 
-							<p>Eksempler på afvikling af en X11 applikation via sux: Anvendelse af en teksteditor som kate eller kwrite til at redigere en fil der ejes af root; partitionering med gparted; eller en Xapp fil manager som dolphin or thunar. <!--Du kan også ændre filer ejet af root ved at højre-klikke på dem og vælge Handlinger>Edit as root og så indtaste dit root password. Denne kommando virker ved at kalde kdesu i baggrunden.--></p>
 
-							<p>Nogle KDE programmer kræver <span class="highlight-3">dbus-launch</span> foran programnavnet:</p>
-<pre>
-dbus-launch &lt;Application&gt;
-</pre>
-				<h6>KDE tastatur muligheder</h6>
-							<p>For at starte krunner i KDE:</p>
+				<h4>KDE options</h4>
+
+							<p>To start kdesu in KDE:</p>
 <pre>
 Alt+F2
 </pre>
-							<p>eller højreklik på skrivebordet og vælg:</p>
+							<p>or right-click on the desktop and choose:</p>
 <pre>
-Kør kommando
+Run Command
 </pre>
-							 <p>skriv:</p>
+							 <p>then:</p>
 
 <pre>
 kdesu &lt;Application&gt;
 </pre>
 
-				<h6>Xfce tastatur muligheder</h6>
-							<p>For at starte Kør kommandoen i Xfce:</p>
+							<p>Some KDE applications require <span class="highlight-3">dbus-launch</span> in front of the application:</p>
+<pre>
+dbus-launch &lt;Application&gt;
+</pre>
+
+				<h4>Xfce options</h4>
+							<p>To start Run Command in Xfce:</p>
 <pre>
 Alt+F2
 </pre>
-							<p>eller højreklik på skrivebordet og vælg:</p>
+							<p>or right-click on the desktop and choose:</p>
 <pre>
-Kør kommando
+Run Command
 </pre>
-							 <p>skriv:</p>
+							 <p>then:</p>
 
 <pre>
 gksu &lt;Application&gt;
 </pre>
 
-					  <h6>Muligheder i andet skrivebordsmiljø (Window Manager)</h6>
-							<p>En anden tastatur mulighed der er gennemgående i alle større skrivebordsmiljøer er:</p>
+					  <h4>Other Desktop Window Manager options</h4>
+							<p>Another keyboard option also generic to all major Desktop Managers is:</p>
 <pre>
 Alt+F2
 </pre>
-							<p>skriv så:</p>
+							<p>then:</p>
 <pre>
 su-to-root -X -c &lt;Application&gt;
 </pre>
-							<p><span class="highlight-3">Alle de ovenstående muligheder kan også skrives i en terminal.</span></p>
+					  <h3>Terminal/konsole options</h3>
+							<p>To run kdesu in a terminal:</p>
+<pre>
+/usr/lib/kde4/libexec/kdesu
+</pre>
+							<p>To run gksu in a terminal:</p>
+<pre>
+/usr/bin/gksu
+</pre>
+
+							<p>Another option is <span class="highlight-3">ssh -X root@localhost</span> otherwise use <span class="highlight-3">su-to-root -X -c </span>:</p>
+
+							
+<pre>
+ssh -X root@localhost
+</pre>
+							<p>Whilst ssh is installed by defualt it may not be enabled. To enable ssh, as root:
+<pre>
+/etc/init.d/ssh start
+</pre>
+							<p>else:</p>
+<pre>
+su-to-root -X -c &lt;application&gt;
+</pre>
+
+
+	</div>
+	<div class="divider" id="alias">
+				    <h2>Setting up an alias in a the terminal for kdesu, gksu, su-to-root -X -c or ssh -X root@localhost called <span class="highlight-3">sux2</span></h2>
+
+							<p>Typing a long command line in the terminal all the time is not an ideal, so the solution is to set up an terminal/konsole alias called <span class="highlight-3">sux2</span>.</p>
+
+							<p><span class="highlight-2">Note: In each of the following examples the command to activate the alias in a terminal will be:</span></p>
+
+<pre>
+<span class="highlight-2">sux2 &lt;application&gt;</span>
+</pre>
+					  <h5><span class="highlight-3">Setting an alias</span></h5> 
+							<p>The use of mcedit as <span class="highlight-3">$user </span>in the following examples is deliberate. Feel free to use any editor you wish to use:</p>
+<pre>
+$ mcedit ~/.bashrc
+</pre>
+							<p><span class="highlight-2">Note:To enable any changes you have made you need to close the terminal/konsole and restart it.</span></p>
+
+					<h3><span class="highlight-3">Add the following code to the file ~/.bashrc by appending the code to the end of the  file:</span></h3>
+
+					  <h4>Setting kdesu an alias</h4>
+<pre>
+alias sux2='/usr/lib/kde4/libexec/kdesu' 
+</pre>				  
+
+					   <h4>Setting gksu an alias</h4> 
+<pre>
+alias sux2='/usr/bin/gksu'
+</pre>
+
+					    <h4>Setting su-to-root -X -c as an alias</h4>
+<pre>
+alias sux2='su-to-root -X -c'
+</pre>
+
+					    <h4>Setting ssh -X root@localhost as an alias</h4>
+<pre>
+alias sux2='ssh -X root@localhost'
+</pre>
+
+							<p>You may want to implement a ~/.bash_alias file to contain all the aliases that you find useful. Therefore make a file called ~/.bash_alias.  Read the ~/.bashrc file and /usr/share/doc/bash-doc/examples:</p>
+<pre>
+apt-get install bash-doc
+</pre>
+
+							
 	</div>
 	<div class="divider" id="sudo">
 					<h2>sudo er ikke understøttet</h2>
 							<p>sudo er ikke aktiveret som standard på en harddisk instalation. sudo er tilgængeligt på live-ISO, eftersom der ikke er et root kodeord. Årsagen hertil er, at hvis nu en ondsindet hacker får fat i brugerens kodeord, så opnår de ikke også øjeblikkeligt fuld super-bruger privilegier og bliver i stand til at lave potentielt skadelige ændringer i dit system.</p>
 
-							<p>Et andet problem med sudo er at det fører til at et root program bliver kørt med en bruger konfiguration, hvilket kan ændre eller tilsidesætte tilladelser. I nogle tilfælde kan dette efterfølgende gøre programmer ubrugelige for brugeren. Brug <span class="highlight-3"><a href="#sux">sux</a>, kdesu, gksu eller su-to-root -X -c</span> som anbefalet!</p>
+							<p>Et andet problem med sudo er at det fører til at et root program bliver kørt med en bruger konfiguration, hvilket kan ændre eller tilsidesætte tilladelser. I nogle tilfælde kan dette efterfølgende gøre programmer ubrugelige for brugeren. Brug <span class="highlight-3"><a href="#sux">sux2</a>, kdesu, gksu eller su-to-root -X -c</span> som anbefalet!</p>
 
 					  <h2>Being in root</h2>
 							<p class="highlight-2">ADVARSEL: Når du er logget ind som root er der ikke noget der stopper dig i at udføre potentielt skadelige ændringer, som at slette essentielle system-filer. Su skal derfor være helt sikker på at du ved hvad det er du gør, for det er fuldt muligt at rette ubodelig skade på systemet når du er root.</p>
@@ -546,13 +621,13 @@ $ apropos apt-
 
 							<p>Dette er en udemærket begyndelse til BASH fra <a href="http://linuxcommand.org/">linuxcommand.org</a></p>
 
-							<p class="highlight-3">En meget omfattende liste over 687 kommandoer i alfabetisk orden fra <a href="http://www.linuxdevcenter.com/linux/cmd/#a">Linux in a Nutshell, 5th Edition : O'Reilly Publications</a> kan findes her og er et 'must bookmark'</p>
+							<p class="highlight-3">A very comprehensive list of  commands in alphabetical order from <a href="http://ss64.com/bash/"></a> An A-Z Index of the Bash command line for Linux and is a 'must bookmark'</p>
 
 							<p>Der er adskillige tutorials på internettet. Denne her er god for begyndere: <a href="http://linux.org.mt/article/terminal">A Beginner's Bash</a></p>
 
 							<p>Eller brug din favorit søgemaskine til at finde andre.</p>
 	</div>
-	<div class="divider" id="shell-scripts">
+<!--	<div class="divider" id="shell-scripts">
 		<h2>Et script og hvordan de anvendes</h2>
 							<p>Et skal script er en nyttig måde at gruppere flere kommandoer i en enkelt fil. Ved at skrive filnavnet på scriptet eksekveres hver kommando i rækkefølge. aptosid kommer med flere meget nyttige scripts, beregnet til at gøre livet lidt lettere for brugerne.</p>
 
@@ -600,8 +675,8 @@ Welcome to aptosid-manuals http://manual.aptosid.com
 </pre>
 
 
-	</div>
-			<div id="rev">Content last updated 21/01/2011 2229 UTC</div>
+	</div> -->
+			<div id="rev">Content last updated 05/03/2013 1325 UTC</div>
 
 </div>
 </body>

@@ -351,7 +351,7 @@ username@hostname:~$
 
 							<p>Ви повинні визнати,що ім'я користувача є тим самим через якого Ви заходете в систему.<span class="highlight-3">~ (тильда)</span> означає, що Ви перебуваєте у своєму домашньому розділі <span class="highlight-3">$</span>означає, що Ви увійшли в систему з правами користувача. Наприкінці у Вас буде свій курсор. Це ваша командний рядок, де Ви ввійдете команди, які Ви хочете виконати.</p>
 
-							<p>Багато команд повинні бути запущені з привілеями суперкористувача. Для цього Ви вводите:<span class="highlight-3">sux</span> в командному рядку та натисніть клавішу введення. Потім Вам буде запропоновано ввести пароль адміністратора. Введіть пароль і натиснути кнопку введення знову (зауважимо, що, коли Ви вводите пароль, нічого не буде відображатися на екрані).</p>
+							<p>Багато команд повинні бути запущені з привілеями суперкористувача. Для цього Ви вводите:<span class="highlight-3">su</span> в командному рядку та натисніть клавішу введення. Потім Вам буде запропоновано ввести пароль адміністратора. Введіть пароль і натиснути кнопку введення знову (зауважимо, що, коли Ви вводите пароль, нічого не буде відображатися на екрані).</p>
 
 							<p>Якщо пароль правильний,рядок зміниться на:</p>
 
@@ -420,8 +420,8 @@ PS1='${debian_chroot:+($debian_chroot)}\[\033[01;36m\]\u@\h\[\033[01;36m\]:\[\03
 
 				<h6>Як змінити рядковий колір root# :</h6>
 <pre>
-sux
-&lt;editor&gt; /root/.bashrc
+su
+&lt;mcedit&gt; /root/.bashrc
 </pre>
 							<p>Перейдіть до рядка 39 і розкоментуйте його таким чином::</p>
 <pre>
@@ -439,74 +439,146 @@ PS1='${debian_chroot:+($debian_chroot)}\[\033[01;31m\]\u@\h\[\033[01;31m\]:\[\03
 							<p>Щоб змінити колір фону та шрифту термінала, подивіться на меню терміналу. </p>
 
 
-		<div class="screenshot"><img src="../lib/images-common/images-terminal/terminal-colour-0.1.png" title="Terminal colours" alt="Terminal colours" /></div>
+		<div class="screenshot"><img src="../lib/images-common/images-terminal/terminal-colour-0.2.png" title="Terminal colours" alt="Terminal colours" /></div>
 
 							<p>Є безліч варіантів  доступних для зміни кольору, однак ми рекомендуємо для простоти.</p>
 	</div>
 	<div class="divider" id="sux">
-	<h2>Про sux</h2>
-							<p>Численні команди повинні бути запущені з привілеями суперкористувача. Для досягнення цієї мети введіть в терміналі:</p>
+		      <h2>About Xapps whilst in X as root and sux2 as an alias</h2>
+							<p>While the common command for becoming root is <span class="highlight-3">&lt;su&gt;</span>, using <span class="highlight-3">kdesu &lt;Application&gt;</span> or <span class="highlight-3">gksu &lt;Application&gt;</span> will allow you run GUI / X11 applications from the desktop and allow root to start graphical applications.</p>
+
+							<p><span class="highlight-2">For those used to using <span class="highlight-3"> sux </span>, (sux has been broken by a 'login' security update for a long time), will find that <a href="#alias">sux2, as an alias, is a good option in the meantime</a> otherwise use, as $user:</p> </span>
 <pre>
-sux
+$ suxterm
 </pre>
+							<p>In most cases, using an Xapp while in root is to take advantage of a GUI editor like kate, kwrite, mousepad or leafpad to name just a few. X while in root is also required for the GUI partitioning application gparted. (Also see <a href="#sudo"> sudo</a>).</p>
 
-							<p>У той час як загальна команда для становлення root стане 'su',  використовування <span class="highlight-3">sux</span> замість того дозволить вам запустити GUI / X11 програми з командного рядка і дозволяють root стартувати графічні програми, як наприклад <span class="highlight-3">sux</span> є обгорткою стандартної команди su який буде передавати облікові дані в X цільового користувача. (Див. також <a href="#sudo"> sudo</a>).</p>
+							<p>Non-gui applications like mcedit, vim, vi, or emacs are highly recommended as editors, with mcedit being one of the intuitive editors of the non-gui applications for use by first time users of a text editor while in root with X. mcedit, vim, vi or emacs are possibly your only choices of an editor while not in X. (<span class="highlight-3">mc</span> is an ideal file browser while not in X).</p>
 
-							<p>Приклад виконання X11 програми через sux полягає у використанні текстового редактора для редагування root-файлa з KWrite або Kate, або робити перегородки з GParted або використовувати менеджер файлів як Dolphin або Thunar. </p>
 
-							<p>Деякі KDE програми вимагають <span class="highlight-3">dbus-launch</span> перед застосуванням:</p>
-<pre>
-dbus-launch &lt;Application&gt;
-</pre>
+				<h4>KDE options</h4>
 
-				<h6>Варіанти клавіатури в KDE </h6>
-							<p>Щоб запустити krunner в KDE:</p>
+							<p>To start kdesu in KDE:</p>
 <pre>
 Alt+F2
 </pre>
-							<p>або нажміть правою кнопкою миші на робочому столі і виберіть:</p>
+							<p>or right-click on the desktop and choose:</p>
 <pre>
 Run Command
 </pre>
-							 <p>потім:</p>
+							 <p>then:</p>
 
 <pre>
 kdesu &lt;Application&gt;
 </pre>
 
-				<h6> Варіанти клавіатури в Xfce</h6>
-							<p>Щоб запустити Run Command в Xfce:</p>
+							<p>Some KDE applications require <span class="highlight-3">dbus-launch</span> in front of the application:</p>
+<pre>
+dbus-launch &lt;Application&gt;
+</pre>
+
+				<h4>Xfce options</h4>
+							<p>To start Run Command in Xfce:</p>
 <pre>
 Alt+F2
 </pre>
-							<p>або нажміть правою кнопкою миші на робочому столі і виберіть:</p>
+							<p>or right-click on the desktop and choose:</p>
 <pre>
 Run Command
 </pre>
-							 <p>потім:</p>
+							 <p>then:</p>
 
 <pre>
 gksu &lt;Application&gt;
 </pre>
 
-					  <h6>Інші функції Window Desktop Manager</h6>
-							<p>Інший варіант клавіатури також загальний для всіх основних Desktop Managers:</p>
+					  <h4>Other Desktop Window Manager options</h4>
+							<p>Another keyboard option also generic to all major Desktop Managers is:</p>
 <pre>
 Alt+F2
 </pre>
-							<p>потім:</p>
+							<p>then:</p>
 <pre>
 su-to-root -X -c &lt;Application&gt;
 </pre>
-							<p><span class="highlight-3">Всі перераховані вище варіанти клавіатури можна запустити в терміналі.</span></p>
+					  <h3>Terminal/konsole options</h3>
+							<p>To run kdesu in a terminal:</p>
+<pre>
+/usr/lib/kde4/libexec/kdesu
+</pre>
+							<p>To run gksu in a terminal:</p>
+<pre>
+/usr/bin/gksu
+</pre>
+
+							<p>Another option is <span class="highlight-3">ssh -X root@localhost</span> otherwise use <span class="highlight-3">su-to-root -X -c </span>:</p>
+
+							
+<pre>
+ssh -X root@localhost
+</pre>
+							<p>Whilst ssh is installed by defualt it may not be enabled. To enable ssh, as root:
+<pre>
+/etc/init.d/ssh start
+</pre>
+							<p>else:</p>
+<pre>
+su-to-root -X -c &lt;application&gt;
+</pre>
 
 
+	</div>
+	<div class="divider" id="alias">
+				    <h2>Setting up an alias in a the terminal for kdesu, gksu, su-to-root -X -c or ssh -X root@localhost called <span class="highlight-3">sux2</span></h2>
+
+							<p>Typing a long command line in the terminal all the time is not an ideal, so the solution is to set up an terminal/konsole alias called <span class="highlight-3">sux2</span>.</p>
+
+							<p><span class="highlight-2">Note: In each of the following examples the command to activate the alias in a terminal will be:</span></p>
+
+<pre>
+<span class="highlight-2">sux2 &lt;application&gt;</span>
+</pre>
+					  <h5><span class="highlight-3">Setting an alias</span></h5> 
+							<p>The use of mcedit as <span class="highlight-3">$user </span>in the following examples is deliberate. Feel free to use any editor you wish to use:</p>
+<pre>
+$ mcedit ~/.bashrc
+</pre>
+							<p><span class="highlight-2">Note:To enable any changes you have made you need to close the terminal/konsole and restart it.</span></p>
+
+					<h3><span class="highlight-3">Add the following code to the file ~/.bashrc by appending the code to the end of the  file:</span></h3>
+
+					  <h4>Setting kdesu an alias</h4>
+<pre>
+alias sux2='/usr/lib/kde4/libexec/kdesu' 
+</pre>				  
+
+					   <h4>Setting gksu an alias</h4> 
+<pre>
+alias sux2='/usr/bin/gksu'
+</pre>
+
+					    <h4>Setting su-to-root -X -c as an alias</h4>
+<pre>
+alias sux2='su-to-root -X -c'
+</pre>
+
+					    <h4>Setting ssh -X root@localhost as an alias</h4>
+<pre>
+alias sux2='ssh -X root@localhost'
+</pre>
+
+							<p>You may want to implement a ~/.bash_alias file to contain all the aliases that you find useful. Therefore make a file called ~/.bash_alias.  Read the ~/.bashrc file and /usr/share/doc/bash-doc/examples:</p>
+<pre>
+apt-get install bash-doc
+</pre>
+
+							
 	</div>
 	<div class="divider" id="sudo">
 					<h2>sudo не підтримується</h2>
 							<p>Sudo за замовчуванням не включений при установці на жорсткий диск. Він доступний для використання на Live-ISO оскільки немає root пароля . Причина в тому що якщо зловмисники заволодіють паролем користувачів, вони не відразу отримають повну власніть над системою і не  зроблять потенційні небезпечні зміни у вашій системі.</p>
 
-							<p>Ще однa перевагa sudoє в тому  що він веде до управління програм з користувачами конфігурації, які можуть скасувати або змінити дозволи. У деяких випадках це може згодом зробити непридатним для користувача. Використовуйте <span class="highlight-3"><a href="#sux">sux</a>, kdesu, gksu або su-to-root -X -c</span> відповідно до рекомендації</p>
+							<p>Ще однa перевагa sudoє в тому  що він веде до управління програм з користувачами конфігурації, які можуть скасувати або змінити дозволи. У деяких випадках це може згодом зробити непридатним для користувача. Використовуйте <span class="highlight-3"><a href="#sux">sux2</a>, kdesu, gksu або su-to-root -X -c</span> відповідно до рекомендації</p>
 
 					  <h2>Перебуваючи як root</h2>
 							<p class="highlight-2">УВАГА: У той час ви увійшли в систему з правами адміністратора, система не буде заважати Вам робити потенційно небезпечні речі як наприклад видалення важливих файлів і т.д., ви повинні бути абсолютно впевнені, що ви робите, тому що це може дуже серйозно нашкодити вашій системі. </p>
@@ -551,14 +623,14 @@ $ apropos apt-
 
 							<p>Це прекрасне введення у використання Баш, взяте з сайту <a href="http://linuxcommand.org/">linuxcommand.org</a></p>
 
-							<p class="highlight-3">Дуже повний список з 687 команд в алфавітному порядку від <a href="http://www.linuxdevcenter.com/linux/cmd/#a">Linux in a Nutshell, 5th Edition: O'Reilly Publications</a> (Рекомендуємо помістити в закладки!)</p>
+							<p class="highlight-3">A very comprehensive list of  commands in alphabetical order from <a href="http://ss64.com/bash/"></a> An A-Z Index of the Bash command line for Linux and is a 'must bookmark'</p>
 
 							<p>Є незліченні хороші керівництва в інтернеті. Хороша англійська посилання: <a href="http://linux.org.mt/article/terminal">A Beginner's Bash</a></p>
 
 							<p>Звичайно, Ви можете використовувати також будь-який пошуковий движок, щоб знайти більше інформації.</p>
 
 	</div>
-	<div class="divider" id="shell-scripts">
+<!--	<div class="divider" id="shell-scripts">
 		<h2>Скрипти і як їх використовувати</h2>
 
 							<p>Скрипти shell (оболонки) - зручний спосіб зібрати до групи безліч команд і зберегти у файлі. Введіть ім'я скрипта і всі команди виконаються по черзі. aptosid надає дуже корисні скрипти, які допоможуть Вам в адмініструванні системи.. </p>
@@ -606,9 +678,9 @@ You successfully downloaded and executed a bash script!
 Welcome to aptosid-manuals http://manual.aptosid.com
 </pre>
 
-	</div>
+	</div> -->
 
-	<div id="rev">Сторінка останний раз переглянута 14/08/2010 0100 UTC</div>
+	<div id="rev">Сторінка останний раз переглянута 05/03/2013 1325 UTC</div>
 
 </div>
 </body>
