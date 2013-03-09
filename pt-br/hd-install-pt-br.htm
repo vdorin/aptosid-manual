@@ -371,23 +371,22 @@ dpkg -l|awk '/^ii/{ print $2 }'|grep -v -e ^lib -e -dev -e $(uname -r) >/home/us
 
 	</div>
 	<div class="divider" id="efi">
-				<h2>(U)EFI booting</h2>
-							<p>The bootloader will be an EFI program installed to <span class="highlight-3">/boot/efi/EFI/aptosid/grubx64.efi </span> within your <span class="highlight-3"> EFI system partition </span> and mounted below <span class="highlight-3">/boot/efi/</span> on your installed system, provided the following conditions are met:</p>
-
+				<h2>Arranque (U)EFI</h2>
+							<p>O bootloader é um programa EFI que será instalado em  <span class="highlight-3">/boot/efi/EFI/aptosid/grubx64.efi </span> na <span class="highlight-3"> partição EFI do sistema </span> que é montada sobre <span class="highlight-3">/boot/efi/</span> no sistema instalado, desde que as condições seguintes sejam verificadas:</p>
 						<ul>
- 							<li>The motherboard needs to have EFI firmware with EFI booting enabled.</li>
-							<li>A current aptosid-amd64.iso</li>
-							<li>Booted using UEFI and this is apparent from the plain white/blue grub2 menu, instead of the usual graphical boot menu provided by isolinux for BIOS booting, on the live medium.</li>
-							<li>You have a GPT disk with an EFI System Partition (type EF00).  This must be <span class="highlight-3">vfat or FAT </span>formatted.</li>
-							<li>The install target is not a USB disk. If you need to boot a USB stick see <a href="hd-install-pt-br.htm#efi-usb">UEFI bootable removable devices</a>.</li>
+ 							<li>A placa-mãe possui firmware EFI e o arranque EFI está ativado.</li>
+							<li>Uma imagem iso actual de aptosid-amd64</li>
+							<li>O arranque do sistema foi efetuado usando UEFI (isto é visível no menu simples branco/azul do grub2 em contraste com o menu gráfico habitual que é apresentado por isolinux num arranque de BIOS do imagem de aptosid.</li>
+							<li>O disco duro do tipo GPT com uma Partição sistema EFI (tipo EF00). Esta particão deve ser formatada com o sistema <span class="highlight-3">vfat ou FAT</span>.</li>
+							<li>O disco aonde a instalção vai ser efetuada não está ligado ao sistema por USB. Se pretende utilzar ums drive USB stick ver <a href="hd-install-pt-br.htm#efi-usb">Dispositivo de arranque UEFI removível</a>.</li>
 						</ul>
 		  </div>
 		   <div class="divider" id="efi-usb">
-				<h3>UEFI bootable removable devices</h3>
+				<h3>Dispositivo de arranque UEFI removível</h3>
 
-							<p>In order to create a UEFI bootable device, such as a USB stick, the contents of the aptosid ISO can be extracted to a vfat formatted partition and the partition marked as bootable.</p>
+							<p>Para criar um dispositivo de arranque UEFI, por exemplo uma pendrive USB, deve extrair o conteúdo do ISO do aptosid para uma vfat partição e marcá-la para arranque do sistema.</p>
 
-							<p>Optionally this removable medium can also be made compatible with PC-BIOS booting by installing a traditional boot sector in addition to the EFI boot loader (assuming <span class="highlight-3">/dev/sdz1</span> to be the target partition on the USB stick).</p>
+							<p>Este dispositivo removível poder ser modificado de modo a torná-lo compatível com o arranque po PC-BIOS instalando adicionalmente um sector de arranque tradicional (usando no exemplo a seguir <span class="highlight-3">/dev/sdz1</span> como a partição na pendrive).</p>
 <pre>
 syslinux -i -d /boot/isolinux /dev/sdz1
 install-mbr /dev/sdz
@@ -396,17 +395,17 @@ install-mbr /dev/sdz
 		   <div class="divider" id="efi-secboot">
 				<h3>UEFI Secure Boot</h3>
 
-							<p>aptosid does not currently support UEFI Secure Boot.   The current intention is to wait to see how Debian will handle UEFI Secure Boot before deciding the best course of action for aptosid. </p>
+							<p>Actualmente aptosid não suporta o arranque seguro UEFI (Secure Boot).   A intenção atual é de esperar para ver como o Debian vai lidar com UEFI Secure Boot antes de decidir o melhor curso de ação para aptosid.</p>
 
-							<p>In order to allow dual/triple/quadruple booting of aptosid with other operating systems, UEFI Secure Boot needs to be disabled in the system firmware. The board firmware should offer a boot menu, although on some boards this may mean you need to boot into the MS OS Win 8 and cycle through various menus to turn off UEFI Secure Boot and then reboot.</p>
+							<p>A fim de permitir duplo / triplo / quádruplo inicialização do aptosid com outros sistemas operacionais, UEFI Secure Boot precisa ser desativado no firmware do sistema. O firmware da placa deve oferecer um menu de boot, embora em algumas placas isso pode significar que você precisa para inicializar o Windows 8 e percorrer vários menus para desligar UEFI Secure Boot e depois reiniciar.</p>
 
-							<p><span class="highlight-3">Note:</span> When you disable EFI Secure Boot and want to have MS Win8 as one of your Operating System choices you will need to reinstall MS Win8. </p> 
+							<p><span class="highlight-3">Note:</span> O MS Win8 terá que ser novamente instalado caso o EFI Secure Boot seja desactivato . </p> 
 
-							<p><span class="highlight-1">Rod Smith of rodsbooks.com provides a good insight on the subject of Secure Boot:</span> <a href="http://www.rodsbooks.com/efi-bootloaders/secureboot.html">Managing EFI Boot Loaders for Linux: Dealing with Secure Boot</a>.</p>
+							<p><span class="highlight-1">Rod Smith of rodsbooks.com fornece uma boa visão sobre os problemas relacionados com o Secure Boot:</span> <a href="http://www.rodsbooks.com/efi-bootloaders/secureboot.html">Managing EFI Boot Loaders for Linux: Dealing with Secure Boot</a>.</p>
 
 
-				  <h3><span class="highlight-3">Partitioning GPT and UEFI disks</span></h3>
-							<p>For partitioning GPT and UEFI disks consult: <a href="part-gdisk-pt-br.htm#gdisk-1">Partitioning with gdisk for GPT disks.</a></p>
+				  <h3><span class="highlight-3">Particionar GPT e discos UEFI</span></h3>
+							<p>Consulte: <a href="part-gdisk-pt-br.htm#gdisk-1">Particionamento GPT do HD com o gdisk.</a></p>
 
 	</div>
 	<div class="divider" id="lang">
