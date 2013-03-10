@@ -502,7 +502,15 @@ mount -t ntfs-3g /dev/disk/by-uuid/xxyyzz[etc] /media/xdxx
 							<p>Τώρα η NTFS-κατάτμηση θα πρέπει να είναι προσαρτημένη (mounted) <b>rw</b> και θα πρέπει να μπορείτε να αποθηκεύσετε τα δεδομένα σας σε αυτή. Αλλά ξανά προ ειδοποιήστε  <span class="highlight-3">Χρησιμοποιήστε το σε επείγουσες καταστάσεις, δεν συνιστάται για χρήση επί καθημερινής βάσεως.</span></p>
 
 		</div>
-			<div id="rev">Τελευταία αναθεώρηση περιεχομένου 14/08/2010 0100 UTC</div>
+		<div class="divider" id="exfat">
+			    <h2>exfat</h2>
+							 <p>exfat is a proprietary file format covered by patents held by Microsoft &#8482; and commonly found on SDXC cards. To mount/read/write to the file system, simply install the exfat-fuse package:</p>
+<pre>
+apt-get update &amp;&amp; apt-get install exfat-fuse
+</pre>
+
+		</div>
+		<div id="rev">Content last revised 10/03/2013 1215 UTC</div>
 
 </div>
 </body>

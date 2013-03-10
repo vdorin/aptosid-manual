@@ -637,10 +637,18 @@ mount -t ntfs-3g /dev/disk/by-uuid/xxyyzz[etc] /media/xdxx
 			<!--- ####
 			<p>Now your NTFS-Volume should be mounted <b>rw</b> and you should be able to store data on it. But again, be warned! <span class="highlight-3">Use it in emergency situations, it is not recommended  for use on a daily basis.</span></p>
 			#### -->
-		<p>これであなたのNTFSパーティションは<b>rw</b>(読み書きモード)でマウントされていて、データの書き込みができるるはずです。 警告を繰り返しますが <span class="highlight-3">これは緊急の場合に使うもので、日々の仕事につかうのにはお勧めできません！</span></p>
+		<p>これであなたのNTFSパーティションは<b>rw</b>(読み書きモード)でマウントされていて、データの書き込みができ
 
 		</div>
-				<div id="rev">Content last revised 14/08/2010 0100 UTC</div>
+		<div class="divider" id="exfat">
+			    <h2>exfat</h2>
+							 <p>exfat is a proprietary file format covered by patents held by Microsoft &#8482; and commonly found on SDXC cards. To mount/read/write to the file system, simply install the exfat-fuse package:</p>
+<pre>
+apt-get update &amp;&amp; apt-get install exfat-fuse
+</pre>
+
+		</div>
+		<div id="rev">Content last revised 10/03/2013 1215 UTC</div>
 
 </div>
 </body>
