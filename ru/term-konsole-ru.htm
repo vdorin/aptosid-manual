@@ -17,7 +17,7 @@
         <![endif]-->
 </head>
 <body>
-<!-- Last translation revision RoEn 28/12/2011 1200 UTC -->
+<!-- Last translation revision RoEn 10/03/2013 1200 UTC -->
 <!--htdig_noindex--><div id="menu"> <!-- menu starts here - ru language maintained by RoEn -->
 <!--aptosid Operating System Manual menu-version-02.15.2013.01.10 -->
 <!-- menu last updated by bluewater 2013.01.10 0910 hrs UTC -->
@@ -441,7 +441,7 @@ PS1='${debian_chroot:+($debian_chroot)}\[\033[01;31m\]\u@\h\[\033[01;31m\]:\[\03
 							<p>Есть множество настроек для цвета фона. Мы предлагаем довольно простые настройки.</p>
 	</div>
 	<div class="divider" id="sux">
-		      <h2>About Xapps whilst in X as root and sux2 as an alias</h2>
+		      <h2>О X-утилитах  Xapps whilst in X as root and sux2 as an alias</h2>
 							<p>While the common command for becoming root is <span class="highlight-3">&lt;su&gt;</span>, using <span class="highlight-3">kdesu &lt;Application&gt;</span> or <span class="highlight-3">gksu &lt;Application&gt;</span> will allow you run GUI / X11 applications from the desktop and allow root to start graphical applications.</p>
 
 							<p><span class="highlight-2">For those used to using <span class="highlight-3"> sux </span>, (sux has been broken by a 'login' security update for a long time), will find that <a href="#alias">sux2, as an alias, is a good option in the meantime</a> otherwise use, as $user:</p> </span>
@@ -453,57 +453,57 @@ $ suxterm
 							<p>Non-gui applications like mcedit, vim, vi, or emacs are highly recommended as editors, with mcedit being one of the intuitive editors of the non-gui applications for use by first time users of a text editor while in root with X. mcedit, vim, vi or emacs are possibly your only choices of an editor while not in X. (<span class="highlight-3">mc</span> is an ideal file browser while not in X).</p>
 
 
-				<h4>KDE options</h4>
+				<h4>Возможности в KDE</h4>
 
-							<p>To start kdesu in KDE:</p>
+							<p>В KDE можно запустить kdesu:</p>
 <pre>
 Alt+F2
 </pre>
-							<p>or right-click on the desktop and choose:</p>
+							<p>или правой кнопкой мышки на рабочем столе и:</p>
 <pre>
 Run Command
 </pre>
-							 <p>then:</p>
+							 <p>А тогда запустить программу с правами root:</p>
 
 <pre>
-kdesu &lt;Application&gt;
+kdesu &lt;приложение&gt;
 </pre>
 
-							<p>Some KDE applications require <span class="highlight-3">dbus-launch</span> in front of the application:</p>
+							<p>Некоторые приложения KDE потребуется <span class="highlight-3">dbus-launch</span>, сначала запустите его:</p>
 <pre>
-dbus-launch &lt;Application&gt;
+dbus-launch &lt;приложение&gt;
 </pre>
 
-				<h4>Xfce options</h4>
-							<p>To start Run Command in Xfce:</p>
+				<h4>Возможности в Xfce</h4>
+							<p>Чтобы запустить команду с правами root в Xfce:</p>
 <pre>
 Alt+F2
 </pre>
-							<p>or right-click on the desktop and choose:</p>
+							<p>или правой кнопкой мышки на рабочем столе и:</p>
 <pre>
 Run Command
 </pre>
-							 <p>then:</p>
+							 <p>А тогда запустить программу с правами root:</p>
 
 <pre>
-gksu &lt;Application&gt;
+gksu &lt;приложение&gt;
 </pre>
 
-					  <h4>Other Desktop Window Manager options</h4>
-							<p>Another keyboard option also generic to all major Desktop Managers is:</p>
+					  <h4>Возможности в других оконных менеджерах</h4>
+							<p>Этот вариант должен работать во всех менеджерах:</p>
 <pre>
 Alt+F2
 </pre>
-							<p>then:</p>
+							<p>А тогда запустить программу с правами root:</p>
 <pre>
-su-to-root -X -c &lt;Application&gt;
+su-to-root -X -c &lt;приложение&gt;
 </pre>
-					  <h3>Terminal/konsole options</h3>
-							<p>To run kdesu in a terminal:</p>
+					  <h3>Возможности в командной строке</h3>
+							<p>Чтобы запустить kdesu в командной строке:</p>
 <pre>
 /usr/lib/kde4/libexec/kdesu
 </pre>
-							<p>To run gksu in a terminal:</p>
+							<p>Чтобы запустить gksu в командной строке:</p>
 <pre>
 /usr/bin/gksu
 </pre>
@@ -518,9 +518,9 @@ ssh -X root@localhost
 <pre>
 /etc/init.d/ssh start
 </pre>
-							<p>else:</p>
+							<p>А тогда запустить программу с правами root:</p>
 <pre>
-su-to-root -X -c &lt;application&gt;
+su-to-root -X -c &lt;приложение&gt;
 </pre>
 
 
@@ -530,10 +530,10 @@ su-to-root -X -c &lt;application&gt;
 
 							<p>Typing a long command line in the terminal all the time is not an ideal, so the solution is to set up an terminal/konsole alias called <span class="highlight-3">sux2</span>.</p>
 
-							<p><span class="highlight-2">Note: In each of the following examples the command to activate the alias in a terminal will be:</span></p>
+							<p><span class="highlight-2">Note: In each of the following examples the command to activate the alias iв командной строке will be:</span></p>
 
 <pre>
-<span class="highlight-2">sux2 &lt;application&gt;</span>
+<span class="highlight-2">sux2 &lt;приложение&gt;</span>
 </pre>
 					  <h5><span class="highlight-3">Setting an alias</span></h5> 
 							<p>The use of mcedit as <span class="highlight-3">$user </span>in the following examples is deliberate. Feel free to use any editor you wish to use:</p>
