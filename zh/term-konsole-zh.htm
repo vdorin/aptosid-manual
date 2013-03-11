@@ -210,7 +210,7 @@
 
 							<p>你应该辨别得出用户名即为你的登入名。那个<span class="highlight-3">~ (波浪字符)</span>显示你在你的home目录下同时也<span class="highlight-3">$</span>显示你以普通用户特权登入。最后是光标。这就是你将要敲入你想要执行的命令的命令行。</p>
 
-							<p>很多命令需要root用户特权来运行。要办到的话你在提示下键入：<span class="highlight-3">sux</span>然后按回车。你将会被要求提供你的root用户密码。键入你的密码之后再敲击回车（注意当你键入你的密码的时候，屏幕上不会有任何东西显示）。</p>
+							<p>很多命令需要root用户特权来运行。要办到的话你在提示下键入：<span class="highlight-3">su</span>然后按回车。你将会被要求提供你的root用户密码。键入你的密码之后再敲击回车（注意当你键入你的密码的时候，屏幕上不会有任何东西显示）。</p>
 
 							<p>如果你的密码正确，提示会变为：</p>
 
@@ -278,8 +278,8 @@ PS1='${debian_chroot:+($debian_chroot)}\[\033[01;36m\]\u@\h\[\033[01;36m\]:\[\03
 
 				<h6>To change your root# prompt colour:</h6>
 <pre>
-sux
-&lt;editor&gt; /root/.bashrc
+su
+&lt;mcedit&gt; /root/.bashrc
 </pre>
 							<p>Go to line 39 and uncomment it, thus:</p>
 <pre>
@@ -297,28 +297,26 @@ PS1='${debian_chroot:+($debian_chroot)}\[\033[01;31m\]\u@\h\[\033[01;31m\]:\[\03
 							<p>To change the background colour and font options of the terminal, look at the menu options of the terminal. </p>
 
 
-		<div class="screenshot"><img src="../lib/images-common/images-terminal/terminal-colour-0.1.png" title="Terminal colours" alt="Terminal colours" /></div>
+		<div class="screenshot"><img src="../lib/images-common/images-terminal/terminal-colour-0.2.png" title="Terminal colours" alt="Terminal colours" /></div>
 
 							<p>There are a plethora of options available for changing colours, however the recommendation is to keep it simple.</p>
 	</div>
 	<div class="divider" id="sux">
-	<h2>关于sux</h2>
-							<p>不少命令都需要root用户特权来运行。要办到的话你键入：</p>
+		      <h2>About Xapps whilst in X as root and sux2 as an alias</h2>
+							<p>While the common command for becoming root is <span class="highlight-3">&lt;su&gt;</span>, using <span class="highlight-3">kdesu &lt;Application&gt;</span> or <span class="highlight-3">gksu &lt;Application&gt;</span> will allow you run GUI / X11 applications from the desktop and allow root to start graphical applications.</p>
+
+							<p><span class="highlight-2">For those used to using <span class="highlight-3"> sux </span>, (sux has been broken by a 'login' security update for a long time), will find that <a href="#alias">sux2, as an alias, is a good option in the meantime</a> otherwise use, as $user:</p> </span>
 <pre>
-sux
+$ suxterm
 </pre>
+							<p>In most cases, using an Xapp while in root is to take advantage of a GUI editor like kate, kwrite, mousepad or leafpad to name just a few. X while in root is also required for the GUI partitioning application gparted. (Also see <a href="#sudo"> sudo</a>).</p>
 
-							<p>尽管变身root用户的一般命令是‘su’，代之用<span class="highlight-3">sux</span>让你可以从命令行运行GUI／X11应用，让root用户可以开启图形应用，因为<span class="highlight-3">sux</span>是标准su命令的一个包装，它将你的X身份证明转嫁到目标用户身上。 (See also <a href="#sudo"> sudo</a>).</p>
+							<p>Non-gui applications like mcedit, vim, vi, or emacs are highly recommended as editors, with mcedit being one of the intuitive editors of the non-gui applications for use by first time users of a text editor while in root with X. mcedit, vim, vi or emacs are possibly your only choices of an editor while not in X. (<span class="highlight-3">mc</span> is an ideal file browser while not in X).</p>
 
-							<p>一个通过sux运行X11应用的例子为用文本编辑器kwrite或kate编辑一个属于root用户的文件，或者用gparted分区，亦或用一个属于X应用的文件管理器，像dolphin or thunar。<!--你也可以这样来修改一个属于root用户的文件，用鼠标右键点击文件，选择‘以root用户身份编辑’，然后敲入你的root用户密码。这会在后台调用kdesu。--></p>
 
-							<p>Some KDE applications require <span class="highlight-3">dbus-launch</span> in front of the application:</p>
-<pre>
-dbus-launch &lt;Application&gt;
-</pre>
+				<h4>KDE options</h4>
 
-				<h6>KDE keyboard options</h6>
-							<p>To start krunner in KDE:</p>
+							<p>To start kdesu in KDE:</p>
 <pre>
 Alt+F2
 </pre>
@@ -332,7 +330,12 @@ Run Command
 kdesu &lt;Application&gt;
 </pre>
 
-				<h6>Xfce keyboard options</h6>
+							<p>Some KDE applications require <span class="highlight-3">dbus-launch</span> in front of the application:</p>
+<pre>
+dbus-launch &lt;Application&gt;
+</pre>
+
+				<h4>Xfce options</h4>
 							<p>To start Run Command in Xfce:</p>
 <pre>
 Alt+F2
@@ -347,7 +350,7 @@ Run Command
 gksu &lt;Application&gt;
 </pre>
 
-					  <h6>Other Desktop WIndow Manager options</h6>
+					  <h4>Other Desktop Window Manager options</h4>
 							<p>Another keyboard option also generic to all major Desktop Managers is:</p>
 <pre>
 Alt+F2
@@ -356,13 +359,84 @@ Alt+F2
 <pre>
 su-to-root -X -c &lt;Application&gt;
 </pre>
-							<p><span class="highlight-3">All of the above keyboard options can be run in a terminal.</span></p>
+					  <h3>Terminal/konsole options</h3>
+							<p>To run kdesu in a terminal:</p>
+<pre>
+/usr/lib/kde4/libexec/kdesu
+</pre>
+							<p>To run gksu in a terminal:</p>
+<pre>
+/usr/bin/gksu
+</pre>
+
+							<p>Another option is <span class="highlight-3">ssh -X root@localhost</span> otherwise use <span class="highlight-3">su-to-root -X -c </span>:</p>
+
+							
+<pre>
+ssh -X root@localhost
+</pre>
+							<p>Whilst ssh is installed by defualt it may not be enabled. To enable ssh, as root:
+<pre>
+/etc/init.d/ssh start
+</pre>
+							<p>else:</p>
+<pre>
+su-to-root -X -c &lt;application&gt;
+</pre>
+
+
 	</div>
+	<div class="divider" id="alias">
+				    <h2>Setting up an alias in a the terminal for kdesu, gksu, su-to-root -X -c or ssh -X root@localhost called <span class="highlight-3">sux2</span></h2>
+
+							<p>Typing a long command line in the terminal all the time is not an ideal, so the solution is to set up an terminal/konsole alias called <span class="highlight-3">sux2</span>.</p>
+
+							<p><span class="highlight-2">Note: In each of the following examples the command to activate the alias in a terminal will be:</span></p>
+
+<pre>
+<span class="highlight-2">sux2 &lt;application&gt;</span>
+</pre>
+					  <h5><span class="highlight-3">Setting an alias</span></h5> 
+							<p>The use of mcedit as <span class="highlight-3">$user </span>in the following examples is deliberate. Feel free to use any editor you wish to use:</p>
+<pre>
+$ mcedit ~/.bashrc
+</pre>
+							<p><span class="highlight-2">Note:To enable any changes you have made you need to close the terminal/konsole and restart it.</span></p>
+
+					<h3><span class="highlight-3">Add the following code to the file ~/.bashrc by appending the code to the end of the  file:</span></h3>
+
+					  <h4>Setting kdesu an alias</h4>
+<pre>
+alias sux2='/usr/lib/kde4/libexec/kdesu' 
+</pre>				  
+
+					   <h4>Setting gksu an alias</h4> 
+<pre>
+alias sux2='/usr/bin/gksu'
+</pre>
+
+					    <h4>Setting su-to-root -X -c as an alias</h4>
+<pre>
+alias sux2='su-to-root -X -c'
+</pre>
+
+					    <h4>Setting ssh -X root@localhost as an alias</h4>
+<pre>
+alias sux2='ssh -X root@localhost'
+</pre>
+
+							<p>You may want to implement a ~/.bash_alias file to contain all the aliases that you find useful. Therefore make a file called ~/.bash_alias.  Read the ~/.bashrc file and /usr/share/doc/bash-doc/examples:</p>
+<pre>
+apt-get install bash-doc
+</pre>
+
+							
+	 </div>
 	<div class="divider" id="sudo">
 					<h2>sudo is not supported</h2>
 							<p>sudo is not enabled by default on installation to hard disk. It is available for use on a live-ISO since no root password is preset. The reasoning behind this is so that if an attacker gets hold of the users password, they do not immediately get full super-user priviledges and make potentially damaging changes to your system.</p>
 
-							<p>Another issue with sudo is that it leads to running a root application with a users configuration, which may override or change permissions. In some cases, this can subsequently make an application unusable for the user. Use <span class="highlight-3"><a href="#sux">sux</a>, kdesu, gksu or su-to-root -X -c</span> as recommended!</p>
+							<p>Another issue with sudo is that it leads to running a root application with a users configuration, which may override or change permissions. In some cases, this can subsequently make an application unusable for the user. Use <span class="highlight-3"><a href="#sux">sux2</a>, kdesu &lt;application&gt;, gksu &lt;application&gt; su-to-root -X -c &lt;application&gt; or ssh -X root@localhost</span> as recommended.</p>
 
 					  <h2>Being in root</h2>
 
@@ -408,14 +482,14 @@ $ apropos apt-
 
 							<p>这是<a href="http://linuxcommand.org/">来自linuxcommand.org</a>的一个极好的BASH使用入门。</p>
 
-							<p class="highlight-3">这里还有一份来自<a href="http://www.linuxdevcenter.com/linux/cmd/#a">Linux in a Nutshell，第5版：O'Reilly出版社</a>的罗列了687个命令的大全，它可是一‘必备的书签’。</p>
+							<p class="highlight-3">A very comprehensive list of  commands in alphabetical order from <a href="http://ss64.com/bash/"></a> An A-Z Index of the Bash command line for Linux and is a 'must bookmark'</p>
 
 							<p>因特网上也有不少指导。一个非常好的针对初学者的是：<a href="http://linux.org.mt/article/terminal">初学者的Bash</a></p>
 
 							<p>或者用你最喜欢的搜索引擎寻找更多。</p>
 
 	</div>
-	<div class="divider" id="shell-scripts">
+<!--	<div class="divider" id="shell-scripts">
 		<h2>脚本及如何使用</h2>
 
 							<p>一个shell脚本是将多条命集成在一个文件中的一种便捷方式。只要敲入脚本的文件名，每一条命令就会依次执行。sidux自带了一些有用的脚本，以便让用户的省事省心。</p>
@@ -464,9 +538,9 @@ Welcome to sidux-manuals http://manual.sidux.com
 </pre>
 ［译注：返回信息的大意是“祝贺你用户 你已经成功下载并执行了一个bash脚本！欢迎来到sidux手册 http://manual.sidux.com”]
 
-	</div>
+	</div> -->
 
-	<div id="rev">页面最后更改于15/02/2010 0150 UTC</div>
+	<div id="rev">页面最后更改于 05/03/2013 1326 UTC</div>
 
 </div>
 </body>

@@ -349,9 +349,9 @@ username@hostname:~$
 
 							<p>Το όνομα χρήστη θα πρέπει να είναι το ίδιο με το όνομα που χρησιμοποιείτε όταν κάνετε login. Το <span class="highlight-3">~ </span> (tilde) δείχνει ότι είστε μέσα στον home φάκελο σας και το <span class="highlight-3">$</span> δείχνει ότι είσαστε συνδεδεμένος σαν απλός χρήστης. Στο τέλος θα έχετε τον κέρσορα σας. Αυτή είναι η γραμμή εντολών σας όπου θα δώσετε τις εντολές που θέλετε να εκτελέσετε.</p>
 
-							<!--p>A lot of commands need to be run with root privileges. To achieve this you type:<span class="highlight-3">sux</span> at the prompt and press enter. You will then be asked for your root password. Type your password and hit enter again (note that when you type your password, nothing will show on the screen).</p-->
+							<!--p>A lot of commands need to be run with root privileges. To achieve this you type:<span class="highlight-3">su</span> at the prompt and press enter. You will then be asked for your root password. Type your password and hit enter again (note that when you type your password, nothing will show on the screen).</p-->
 
-							<p>Πολλές εντολές πρέπει να εκτελεστούν με δικαιώματα διαχειριστή (root). Για να το επιτύχετε αυτό, γράφετε στο prompt:<span class="highlight-3">sux</span> και πατάτε enter. Έδω θα σας ζητηθεί το password διαχειριστή. Πληκτρολογείστε το password και πατήστε enter (Σημειώστε ότι όταν γράφετε το password δεν θα φαίνεται τίποτα στην οθόνη).</p>
+							<p>Πολλές εντολές πρέπει να εκτελεστούν με δικαιώματα διαχειριστή (root). Για να το επιτύχετε αυτό, γράφετε στο prompt:<span class="highlight-3">su</span> και πατάτε enter. Έδω θα σας ζητηθεί το password διαχειριστή. Πληκτρολογείστε το password και πατήστε enter (Σημειώστε ότι όταν γράφετε το password δεν θα φαίνεται τίποτα στην οθόνη).</p>
 
 
 							<!--p>If your password is correct the prompt will change to:</p-->
@@ -451,8 +451,8 @@ PS1='${debian_chroot:+($debian_chroot)}\[\033[01;36m\]\u@\h\[\033[01;36m\]:\[\03
 				<!--h6>To change your root# prompt colour:</h6-->
 				<h6>Για να αλλάξετε το χρώμα του τερματικού του root:</h6>
 <pre>
-sux
-&lt;editor&gt; /root/.bashrc
+su
+&lt;mcedit&gt; /root/.bashrc
 </pre>
 							<!--p>Go to line 39 and uncomment it, thus:</p-->
 							<p>Πηγαίνετε στην γραμμή 39 και αφαιρέστε το # :</p>
@@ -480,86 +480,149 @@ PS1='${debian_chroot:+($debian_chroot)}\[\033[01;31m\]\u@\h\[\033[01;31m\]:\[\03
 							<p>Για να αλλάξετε το χρώμα του φόντου και τις γραμματοσειρές του τερματικού, κοιτάξτε τις επιλογές στο μενού του τερματικού.</p>
 
 
-		<div class="screenshot"><img src="../lib/images-common/images-terminal/terminal-colour-0.1.png" title="Terminal colours" alt="Terminal colours" /></div>
+		<div class="screenshot"><img src="../lib/images-common/images-terminal/terminal-colour-0.2.png" title="Terminal colours" alt="Terminal colours" /></div>
 
 							<!--p>There are a plethora of options available for changing colours, however the recommendation is to keep it simple.</p-->
 							<p>Υπάρχουν πάρα πολλές επιλογές για αλλαγή χρώματος, σαν συνηστούμε όμως να κρατήσετε το τερματικό απλό.</p>
 	</div>
 	<div class="divider" id="sux">
-	<!--h2>About sux</h2-->
+		      <h2>About Xapps whilst in X as root and sux2 as an alias</h2>
+							<p>While the common command for becoming root is <span class="highlight-3">&lt;su&gt;</span>, using <span class="highlight-3">kdesu &lt;Application&gt;</span> or <span class="highlight-3">gksu &lt;Application&gt;</span> will allow you run GUI / X11 applications from the desktop and allow root to start graphical applications.</p>
 
-	<h2>Σχετικά με το sux</h2>
-							<!--p>Numerous commands need to be run with root privileges. To achieve this you type:</p-->
-
-							<p>Πολλές εντολές πρέπει να εκτελεστούν με δικαιώματα διαχειριστή (root). Για να το επιτύχετε αυτό γράφετε:</p>
+							<p><span class="highlight-2">For those used to using <span class="highlight-3"> sux </span>, (sux has been broken by a 'login' security update for a long time), will find that <a href="#alias">sux2, as an alias, is a good option in the meantime</a> otherwise use, as $user:</p> </span>
 <pre>
-sux
+$ suxterm
 </pre>
+							<p>In most cases, using an Xapp while in root is to take advantage of a GUI editor like kate, kwrite, mousepad or leafpad to name just a few. X while in root is also required for the GUI partitioning application gparted. (Also see <a href="#sudo"> sudo</a>).</p>
 
-							<!--p>While the common command for becoming root is 'su'  using <span class="highlight-3">sux</span> instead will allow you run GUI / X11 applications from the command line and allow root to start graphical applications, as <span class="highlight-3">sux</span> is a wrapper around the standard su command which will transfer  your X credentials to the target user.  (See also <a href="#sudo"> sudo</a>).</p-->
-
-							<p>Ενώ η κοινή εντολή για να γίνετε διαχειριστής είναι η 'su' , η χρήση της <span class="highlight-3">sux</span> θα σας επιτρέψει να τρέξετε και GUI / X11 εφαρμογές από την γραμμή εντολών και επιτρέπει στον διαχειριστή να τρέξει γραφικές εφαρμογές, μιας και η <span class="highlight-3">sux</span> είναι τυλιγμένη (wrapped) γύρω από την κοινή εντολή su η οποία θα μεταφέρει τις X πιστοποιήσεις σας στον  χρήστη.  (Δείτε επίσης <a href="#sudo"> sudo</a>).</p>
+							<p>Non-gui applications like mcedit, vim, vi, or emacs are highly recommended as editors, with mcedit being one of the intuitive editors of the non-gui applications for use by first time users of a text editor while in root with X. mcedit, vim, vi or emacs are possibly your only choices of an editor while not in X. (<span class="highlight-3">mc</span> is an ideal file browser while not in X).</p>
 
 
-							<!--p>An example of running an X11 app via sux is to use a text editor to edit a root file like kwrite or kate, to do partitioning with gparted or an Xapp file manager like dolphin or thunar. You can also alter root files by right clicking the file and choosing 'edit-as-root', and entering your root password, this will call kdesu in the background.</p-->
+				<h4>KDE options</h4>
 
-							<p>Παραδείγματα εκτέλεσης μιας X11 εφαρμογής μέσω της sux είναι η χρήση ενός επεξεργαστή κειμένου όπως το kwrite ή το kate για την επεξεργασία ενός αρχείου διαχειριστή, να κάνετε κατατμήσεις με το gparted ή η εκτέλεση ενός Xapp διαχειριστή αρχείων όπως το dolphin or thunar. <!--Μπορείτε επίσης να τροποποιήσετε αρχεία διαχειριστή με το να κάνετε δεξί κλικ πάνω τους και  να επιλέξετε 'edit-as-root' με το να δώσετε το password διαχειριστή, θα καλέσετε το kdesu στο φόντο.--></p>
-
-							<!--p>Some KDE applications require <span class="highlight-3">dbus-launch</span> in front of the application:</p-->
-							<p>Ορισμένες KDE εφαρμογές χρειάζονται την λέξη <span class="highlight-3">dbus-launch</span> μπροστά από το όνομα της εφαρμογής:</p>
-<pre>
-dbus-launch &lt;Εφαρμογή&gt;
-</pre>
-
-				<h6>KDE επιλογές πληκτρολογίου</h6>
-							<p>Για να τρέξετε το krunner στο KDE:</p>
+							<p>To start kdesu in KDE:</p>
 <pre>
 Alt+F2
 </pre>
-							<p>ή δεξί κλικ στην επιφάνεια εργασίας και επιλογή του:</p>
+							<p>or right-click on the desktop and choose:</p>
 <pre>
 Run Command
 </pre>
-							 <p>μετά:</p>
+							 <p>then:</p>
 
 <pre>
-kdesu &lt;Εφαρμογή&gt;
+kdesu &lt;Application&gt;
 </pre>
 
-				<h6>Xfce επιλογές πληκτρολογίου</h6>
-							<p>Για να τρέξετε το Run Command στο Xfce:</p>
+							<p>Some KDE applications require <span class="highlight-3">dbus-launch</span> in front of the application:</p>
+<pre>
+dbus-launch &lt;Application&gt;
+</pre>
+
+				<h4>Xfce options</h4>
+							<p>To start Run Command in Xfce:</p>
 <pre>
 Alt+F2
 </pre>
-							<p>ή δεξί κλικ στην επιφάνεια εργασίας και επιλογή του:</p>
+							<p>or right-click on the desktop and choose:</p>
 <pre>
 Run Command
 </pre>
-							 <p>μετά:</p>
+							 <p>then:</p>
 
 <pre>
-gksu &lt;Εφαρμογή&gt;
+gksu &lt;Application&gt;
 </pre>
-					  <h6>Επιλογές για άλλους διαχειριστές επιφάνειας εργασίας</h6>
-							<!--p>Another  keyboard option also generic to all major Desktop Managers is:</p-->
-							<p>Μια keyboard άλλη επιλογή η οποία δουλεύει και σε άλλους διαχειριστές επιφάνειας εργασίας είναι:</p>
+
+					  <h4>Other Desktop Window Manager options</h4>
+							<p>Another keyboard option also generic to all major Desktop Managers is:</p>
 <pre>
 Alt+F2
 </pre>
-							<p>μετά:</p>
+							<p>then:</p>
 <pre>
-su-to-root -X -c &lt;Εφαρμογή&gt;
+su-to-root -X -c &lt;Application&gt;
 </pre>
-							<!--p><span class="highlight-3">All of the above keyboard options can be run in a terminal.</span></p-->
-							<p><span class="highlight-3">Τις πιο πάνω επιλογές μπορείτε να τις τρέξετε μέσα σε ένα τερματικό.</span></p>
+					  <h3>Terminal/konsole options</h3>
+							<p>To run kdesu in a terminal:</p>
+<pre>
+/usr/lib/kde4/libexec/kdesu
+</pre>
+							<p>To run gksu in a terminal:</p>
+<pre>
+/usr/bin/gksu
+</pre>
+
+							<p>Another option is <span class="highlight-3">ssh -X root@localhost</span> otherwise use <span class="highlight-3">su-to-root -X -c </span>:</p>
+
+							
+<pre>
+ssh -X root@localhost
+</pre>
+							<p>Whilst ssh is installed by defualt it may not be enabled. To enable ssh, as root:
+<pre>
+/etc/init.d/ssh start
+</pre>
+							<p>else:</p>
+<pre>
+su-to-root -X -c &lt;application&gt;
+</pre>
+
+
 	</div>
+	<div class="divider" id="alias">
+				    <h2>Setting up an alias in a the terminal for kdesu, gksu, su-to-root -X -c or ssh -X root@localhost called <span class="highlight-3">sux2</span></h2>
+
+							<p>Typing a long command line in the terminal all the time is not an ideal, so the solution is to set up an terminal/konsole alias called <span class="highlight-3">sux2</span>.</p>
+
+							<p><span class="highlight-2">Note: In each of the following examples the command to activate the alias in a terminal will be:</span></p>
+
+<pre>
+<span class="highlight-2">sux2 &lt;application&gt;</span>
+</pre>
+					  <h5><span class="highlight-3">Setting an alias</span></h5> 
+							<p>The use of mcedit as <span class="highlight-3">$user </span>in the following examples is deliberate. Feel free to use any editor you wish to use:</p>
+<pre>
+$ mcedit ~/.bashrc
+</pre>
+							<p><span class="highlight-2">Note:To enable any changes you have made you need to close the terminal/konsole and restart it.</span></p>
+
+					<h3><span class="highlight-3">Add the following code to the file ~/.bashrc by appending the code to the end of the  file:</span></h3>
+
+					  <h4>Setting kdesu an alias</h4>
+<pre>
+alias sux2='/usr/lib/kde4/libexec/kdesu' 
+</pre>				  
+
+					   <h4>Setting gksu an alias</h4> 
+<pre>
+alias sux2='/usr/bin/gksu'
+</pre>
+
+					    <h4>Setting su-to-root -X -c as an alias</h4>
+<pre>
+alias sux2='su-to-root -X -c'
+</pre>
+
+					    <h4>Setting ssh -X root@localhost as an alias</h4>
+<pre>
+alias sux2='ssh -X root@localhost'
+</pre>
+
+							<p>You may want to implement a ~/.bash_alias file to contain all the aliases that you find useful. Therefore make a file called ~/.bash_alias.  Read the ~/.bashrc file and /usr/share/doc/bash-doc/examples:</p>
+<pre>
+apt-get install bash-doc
+</pre>
+
+							
+	 </div>
 	<div class="divider" id="sudo">
 					<h2>Το sudo δεν υποστηρίζεται</h2>
 							<!--p>sudo is not enabled by default on installation to hard disk. It is available for use on a live-ISO since no root password is set. The reasoning behind this is so that if an attacker gets hold of the users password, they do not immediately get full super-user priviledges and make potentially damaging changes to your system.</p-->
 							<p>Το sudo δεν είναι ενεργοποιημένο εκ προεπιλογής σε μια εγκατάσταση στον σκληρό δίσκο. Μπορείτε να το χρησιμοποιήσετε όσο είστε μέσα σε live περιβάλλον (Live-ISO) γιατί εκεί δεν έχει οριστεί κάποιο root password. Ο λόγος γιαυτό είναι ο εξής: αν κάποιος αποκτήσει το password του χρήστη, δεν θα έχει αμέσως πρόσβαση με δικαιώματα υπέρ-χρήστη και δεν θα μπορέσει έτσι να κάνει ζημιές στο σύστημα σας.</p>
 
-							<!--p>Another issue with sudo is that it leads to running a root application with a users configuration, which may override or change permissions. In some cases, this can subsequently make an application unusable for the user. Use <span class="highlight-3">sux, kdesu, gksu or su-to-root -X -c</span> as recommended!</p-->
-							<p>Ένα άλλο πρόβλημα με το sudo είναι ότι τρέχει μια root εφαρμογή με τις ρυθμίσεις του χρήστη πράγμα που μπορεί να αλλάξει είναι να παρακάμψει κάποια δικαιώματα. Σε μερικές περιπτώσεις αυτό μπορεί να έχει σαν αποτέλεσμα την αδυναμία εκτέλεσης της εφαρμογής από τον απλό χρήστη. Συστήνουμε την χρήση του<span class="highlight-3"><a href="#sux">sux</a>, kdesu, gksu ή su-to-root -X -c</span> !</p>
+							<!--p>Another issue with sudo is that it leads to running a root application with a users configuration, which may override or change permissions. In some cases, this can subsequently make an application unusable for the user. Use <span class="highlight-3"><a href="#sux">sux2</a>, kdesu &lt;application&gt;, gksu &lt;application&gt; su-to-root -X -c &lt;application&gt; or ssh -X root@localhost</span> as recommended.</p-->
+							<p>Ένα άλλο πρόβλημα με το sudo είναι ότι τρέχει μια root εφαρμογή με τις ρυθμίσεις του χρήστη πράγμα που μπορεί να αλλάξει είναι να παρακάμψει κάποια δικαιώματα. Σε μερικές περιπτώσεις αυτό μπορεί να έχει σαν αποτέλεσμα την αδυναμία εκτέλεσης της εφαρμογής από τον απλό χρήστη. Use <span class="highlight-3"><a href="#sux">sux2</a>, kdesu &lt;application&gt;, gksu &lt;application&gt; su-to-root -X -c &lt;application&gt; or ssh -X root@localhost</span> as recommended.</p>
 
 					  <h2>Μέσα σαν root</h2>
 
@@ -622,9 +685,7 @@ $ apropos apt-
 
 							<p>Αυτή είναι μια πολύ καλή εισαγωγή στη χρήση του BASH <a href="http://linuxcommand.org/"> από το linuxcommand.org</a></p>
 
-							<!--p class="highlight-3">A very comprehensive list of 687 commands in alphabetical order from <a href="http://www.linuxdevcenter.com/linux/cmd/#a">Linux in a Nutshell, 5th Edition: O'Reilly Publications</a> can be found here and is a 'must bookmark'</p-->
-
-							<p class="highlight-3">Μια πολύ σφαιρική λίστα με 687 εντολές σε αλφαβητική σειρά από το <a href="http://www.linuxdevcenter.com/linux/cmd/#a">Linux in a Nutshell, 5th Edition: O'Reilly Publications</a> μπορεί να βρεθεί εδώ, είναι μια σελίδα που πρέπει να αποθηκεύσετε</p>
+							<p class="highlight-3">A very comprehensive list of  commands in alphabetical order from <a href="http://ss64.com/bash/"></a> An A-Z Index of the Bash command line for Linux and is a 'must bookmark'</p>
 
 							<!--p>There are numerous tutorials on the Internet. A very good one aimed at the beginner is: <a href="http://linux.org.mt/article/terminal">A Beginner's Bash</a></p-->
 
@@ -633,7 +694,7 @@ $ apropos apt-
 							<p>Ή μπορείτε να χρησιμοποιήσετε την αγαπημένη σας μηχανή αναζήτησης για να βρείτε περισσότερους.</p>
 
 	</div>
-	<div class="divider" id="shell-scripts">
+<!--	<div class="divider" id="shell-scripts">
 		<!--h2>A script and how to use them</h2-->
 
 		<h2>Scripts και πώς να τα χρησιμοποιήσετε</h2>
@@ -721,9 +782,9 @@ You successfully downloaded and executed a bash script!
 Welcome to aptosid-manuals http://manual.aptosid.com
 </pre>
 
-	</div>
+	</div>-->
 
-	<div id="rev">Τελευταία αναθεώρηση περιεχομένου 14/08/2010 0100 UTC</div>
+	<div id="rev">Τελευταία αναθεώρηση περιεχομένου 105/03/2013 1326 UTC</div>
 
 </div>
 </body>
