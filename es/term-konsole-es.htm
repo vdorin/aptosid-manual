@@ -577,7 +577,7 @@ apt-get install bash-doc
 					<h2>sudo no está soportado</h2>
 							<p>sudo no está configurado por defecto en la instalación en el disco duro. Se puede usar si hemos arrancado con el CD en vivo ya que no hay, en vivo, ningún pasword de root. La razón para ello es que si un atacante consiguiera los paswords del usuario, no podría inmediatamente adquirir privilegios de super-usuario y hacer cambios potencialmente dañinos en su sistema.</p>
 
-							<p>Otro problema con sudo es que permite correr aplicaciones de root con una configuración de usuario, lo que puede saltarse o cambiar los permisos. En algunos casos esto podría hacer que una aplicación fuera inutilizable para el usuario. Use <span class="highlight-3"> <a href="#sux">sux2</a>, kdesu, gksu o bien su-to-root -X -c como recomendamos!</span></p>
+							<p>Otro problema con sudo es que permite correr aplicaciones de root con una configuración de usuario, lo que puede saltarse o cambiar los permisos. En algunos casos esto podría hacer que una aplicación fuera inutilizable para el usuario. Use <span class="highlight-3"> <a href="#sux">sux2</a>, kdesu, gksu o bien su-to-root -X -c or ssh -X root@localhost or ssh -X root@localhost</span> como recomendamos.</p>
 
 					  <h2>Trabajando como root</h2>
 							<p class="highlight-2">AVISO: Mientras esté trabajando como super-usuario (o root, o raíz), el sistema no hará nada para inhibir el hacer cosas peligrosas como borrar archivos importantes, etc. Tiene que estar seguro de lo que va a hacer, ya que es posible dañar seriamente el sistema.</p>

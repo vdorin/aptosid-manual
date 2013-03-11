@@ -577,7 +577,7 @@ apt-get install bash-doc
 					<h2>sudo er ikke understøttet</h2>
 							<p>sudo er ikke aktiveret som standard på en harddisk instalation. sudo er tilgængeligt på live-ISO, eftersom der ikke er et root kodeord. Årsagen hertil er, at hvis nu en ondsindet hacker får fat i brugerens kodeord, så opnår de ikke også øjeblikkeligt fuld super-bruger privilegier og bliver i stand til at lave potentielt skadelige ændringer i dit system.</p>
 
-							<p>Et andet problem med sudo er at det fører til at et root program bliver kørt med en bruger konfiguration, hvilket kan ændre eller tilsidesætte tilladelser. I nogle tilfælde kan dette efterfølgende gøre programmer ubrugelige for brugeren. Brug <span class="highlight-3"><a href="#sux">sux2</a>, kdesu, gksu eller su-to-root -X -c</span> som anbefalet!</p>
+							<p>Et andet problem med sudo er at det fører til at et root program bliver kørt med en bruger konfiguration, hvilket kan ændre eller tilsidesætte tilladelser. I nogle tilfælde kan dette efterfølgende gøre programmer ubrugelige for brugeren. Brug <span class="highlight-3"><a href="#sux">sux2</a>, kdesu, gksu eller su-to-root -X -c or ssh -X root@localhost som anbefalet.</p>
 
 					  <h2>Being in root</h2>
 							<p class="highlight-2">ADVARSEL: Når du er logget ind som root er der ikke noget der stopper dig i at udføre potentielt skadelige ændringer, som at slette essentielle system-filer. Su skal derfor være helt sikker på at du ved hvad det er du gør, for det er fuldt muligt at rette ubodelig skade på systemet når du er root.</p>

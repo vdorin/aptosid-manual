@@ -577,7 +577,7 @@ apt-get install bash-doc
 					<h2>sudo wordt niet ondersteund</h2>
 							<p>sudo is standaard niet geactiveerd voor installaties op de hard disk. Het is alleen beschikbaar in de live-CD omdat daar geen root-password vastgelegd is. De reden hierachter is dat een hacker met een gedetecteerd user password (bijv. keylogger), nooit in staat zal zijn om een systeem te beschadigen. Men heeft immers het root-password niet.</p>
 
-							<p>Eeen ander probleem met sudo is dat het daartoe kan leiden dat root een applicatie uitvoert met de user configuratie en hierbij de instellingen overschrijft of rechten veranderd. Dat kan soms daartoe leiden dat een user de applicatie niet meer kan gebruiken. Het gebruik <span class="highlight-3"><a href="#sux">sux2</a>, kdesu, gksu or su-to-root -X -c</span> wordt geadvisserd!</p>
+							<p>Eeen ander probleem met sudo is dat het daartoe kan leiden dat root een applicatie uitvoert met de user configuratie en hierbij de instellingen overschrijft of rechten veranderd. Dat kan soms daartoe leiden dat een user de applicatie niet meer kan gebruiken. Het gebruik <span class="highlight-3"><a href="#sux">sux2</a>, kdesu, gksu or su-to-root -X -c or ssh -X root@localhost</span> wordt geadvisserd</p>
 
 					  <h2>Werken in root</h2>
 							<p class="highlight-2">WAARSCHUWING: Terwijl je aangelogd bent als root gebruiker, weerhoudt het systeem je er niet van om eventuele gevaarlijke dingen uit te voeren, zoals het verwijderen van belangrijke bestanden enzo., je moet je 100% zeker van zijn dat je de actie die je wilt uitvoeren de gewenste resultaten zal behalen, omdat het kan inhouden dat je systeem niet meer werkt zoals het zou moeten. </p>

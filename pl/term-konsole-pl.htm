@@ -577,7 +577,7 @@ apt-get install bash-doc
 					<h2>sudo nie jest wspierane</h2>
 							<p>sudo nie jest włączony domyślnie w instalacji na dysku twardym. Jest możliwe użycie go na live-ISO ponieważ nie jest ustawione hasło roota. Należy rozumieć to w ten sposób, że jeśli atakujący przejmie hasło użytkownika, nie dostanie natychmiast pełnych uprawnień superużytkownika i nie zdoła wprowadzić potencjalnie niszczycielskich zmian do twojego systemu.</p>
 
-							<p>Innym zagadnieniem dotyczączym sudo jest to, że sudo prowadzi do uruchomienia aplikacji roota z konfiguracją użytkownika, co może nadpisać lub zmienić uprawnienia. W paru przypadkach, to może spowodować, że aplikacja stanie się bezużyteczna dla uzytkownika. Używaj <span class="highlight-3"><a href="#sux">sux2</a>, kdesu, gksu lub su-to-root -X -c</span> jako zalecanych!</p>
+							<p>Innym zagadnieniem dotyczączym sudo jest to, że sudo prowadzi do uruchomienia aplikacji roota z konfiguracją użytkownika, co może nadpisać lub zmienić uprawnienia. W paru przypadkach, to może spowodować, że aplikacja stanie się bezużyteczna dla uzytkownika. Używaj <span class="highlight-3"><a href="#sux">sux2</a>, kdesu, gksu lub su-to-root -X -c or ssh -X root@localhost</span> jako zalecanych.</p>
 
 					  <h2>Działanie w powłoce roota</h2>
 							<p class="highlight-2">UWAGA: Kiedy jesteś zalogowany jako root, system nie powstrzyma cię do zrobienia potencjalnie niebezpiecznych rzeczy takich jak usuwanie ważnych plików itp., musisz absolutnie pewnym, co robisz, ponieważ jest bardzo prawdopodobne, że możesz poważnie uszkodzić swój system. </p>

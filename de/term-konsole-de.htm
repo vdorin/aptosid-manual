@@ -573,7 +573,7 @@ apt-get install bash-doc
 					<h2>sudo ist nicht unterstützt</h2>
 							<p>sudo ist nicht aktiviert nach einer Installation, sondern steht nur im Live-Modus zur Verfügung, da kein Root-Passwort gesetzt ist. Der Grund ist: falls ein Angreifer das Nutzer-Passwort abgreift, hat er nicht Super-User-Rechte und kann keine schädlichen Veränderungen am System durchführen.</p>
 
-							<p>Ein anderes Problem mit sudo ist, dass  eine Root-Anwendung, die mit der Nutzerkonfiguration läuft, Berechtigungen ändern und somit für den Nutzer unbrauchbar machen kann. Die Verwendung von <span class="highlight-3"><a href="#sux">sux2</a>, kdesu, gksu oder su-to-root -X -c</span> ist empfohlen!</p>
+							<p>Ein anderes Problem mit sudo ist, dass  eine Root-Anwendung, die mit der Nutzerkonfiguration läuft, Berechtigungen ändern und somit für den Nutzer unbrauchbar machen kann. Die Verwendung von <span class="highlight-3"><a href="#sux">sux2</a>, kdesu, gksu oder su-to-root -X -c or ssh -X root@localhost</span> ist empfohlen.</p>
 
 					  <h2>Arbeit als root</h2>
 							<p class="highlight-2">Achtung: Während man mit Root-Rechten eingeloggt ist, darf man alles, z. B. Dateien löschen, ohne die das Betriebssystem nicht mehr funktioniert, uvm. Wenn man mit Root-Rechten arbeitet, muss man sich darüber im Klaren sein, <b>was</b> man gerade macht, denn es ist leicht möglich, dem Betriebssystem irreparable Schäden zuzufügen.</p>

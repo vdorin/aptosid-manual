@@ -580,7 +580,7 @@ apt-get install bash-doc
 					<h2>Não há suporte para o sudo</h2>
 							<p>O sudo não é habilitado automaticamente quando o aptosid é instalado no HD. Ele está disponível para uso quando se dá o boot pelo LiveCD, já que nenhuma senha de root é cadastrada. A motivação por trás disso é que, se alguém atacar a máquina e se apoderar da senha dos usuários, esse alguém não terá controle de imediato dos privilégios do superusuário. Isso impede que ele cause potenciais danos ao sistema.</p>
 
-							<p>Outro problema com o sudo é que ele permite que uma aplicação típica do root seja rodada com uma configuração de usuário, o que pode substituir ou alterar permissões. Em certos casos, isto pode subsequentemente fazer com que uma aplicação se torne inútil para o usuário. Use <span class="highlight-3"><a href="#sux">sux2</a>, kdesu, gksu ou su-to-root -X -c</span> conforme recomendado!</p>
+							<p>Outro problema com o sudo é que ele permite que uma aplicação típica do root seja rodada com uma configuração de usuário, o que pode substituir ou alterar permissões. Em certos casos, isto pode subsequentemente fazer com que uma aplicação se torne inútil para o usuário. Use <span class="highlight-3"><a href="#sux">sux2</a>, kdesu, gksu ou su-to-root -X -c or ssh -X root@localhost</span> conforme recomendado.</p>
 
 					  <h2>Enquanto root</h2>
 							<p class="highlight-2">ATENÇÃO: enquanto estiver numa sessão como root, o sistema não irá impedi-lo de fazer coisas perigosas, como apagar arquivos importantes etc. Portanto, é necessário que você esteja absolutamente seguro do que está fazendo, porque há uma grande possibilidade de você danificar seu sistema.</p>

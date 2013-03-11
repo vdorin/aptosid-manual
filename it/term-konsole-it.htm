@@ -577,7 +577,7 @@ apt-get install bash-doc
 					<h2>sudo non è supportato</h2>
 							<p>sudo non è abilitato per default nella installazione su hard disk. È disponibile per l'uso mentre si è avviato da livecd dal momento che non è definita nessuna password di root. La ragione di questa scelta è che se qualcuno ottiene le password degli utenti, non ottiene immediatamente privilegi da super utente e fa cambiamenti potenzialmente dannosi al sistema.</p>
 
-							<p>Un altro problema di sudo è che induce l'utente ad avviare una applicazione di root con la configurazione da utente che può causare cambiamenti o sovrascrittura di permessi e questo potrebbe rendere un'applicazione inutilizzabile dall'utente stesso. Utilizzare <span class="highlight-3"><a href="#sux">sux2</a>, kdesu, gksu oppure su-to-root -X -c</span> come raccomandato!</p>
+							<p>Un altro problema di sudo è che induce l'utente ad avviare una applicazione di root con la configurazione da utente che può causare cambiamenti o sovrascrittura di permessi e questo potrebbe rendere un'applicazione inutilizzabile dall'utente stesso. Utilizzare <span class="highlight-3"><a href="#sux">sux2</a>, kdesu, gksu oppure su-to-root -X -c or ssh -X root@localhost</span> come raccomandato.</p>
 
 					  <h2>Essere root</h2>
 							<p class="highlight-2">ATTENZIONE: Mentre si è nel sistema come root, esso non si opporrà nel fare cose potenzialmente pericolose come cancellare file importanti, ecc. . Si deve essere assolutamente sicuri riguardo alle cose che si stanno facendo perché è davvero possibile danneggiare seriamente il sistema.</p>
