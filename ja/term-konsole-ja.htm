@@ -754,7 +754,7 @@ $ apropos apt-
 							#### -->
 							<p> BASHの使い方を学ぶのにとても優れたサイトとして<a href="http://linuxcommand.org/"> linuxcommand.org</a>があります.</p>
 
-							<p class="highlight-3">A very comprehensive list of  commands in alphabetical order from <a href="http://ss64.com/bash/"></a> An A-Z Index of the Bash command line for Linux and is a 'must bookmark'</p>
+							<p class="highlight-3">A very comprehensive list of  commands in alphabetical order from <a href="http://ss64.com/bash/"> An A-Z Index of the Bash command line for Linux </a> and is a 'must bookmark'</p>
 
 							<!--- ####
 							<p>There are numerous tutorials on the Internet. A very good one aimed at the beginner is: <a href="http://linux.org.mt/article/terminal">A Beginner's Bash</a></p>
@@ -771,51 +771,51 @@ $ apropos apt-
 		<!--- ####
 		<h2>A script and how to use them</h2>
 		#### -->
-		<h2>スクリプトとその使い方</h2>
+<!--		<h2>スクリプトとその使い方</h2>-->
 
 							<!--- ####
 							<p>A shell script is a convenient way to group multiple commands together in a file, By entering the filename of the script every command will be executed in turn. aptosid comes with several useful scripts in order to make life easier for the users. </p>
 							#### -->
-							<p>シェル・スクリプトとはいくつかのコマンドを一つのファイルの中にまとめる便利なものです。 ファイル名をタイプすることでコマンドが順番に実行されます。 aptosidには便利なスクリプトがいくつかついてきます。 </p>
+<!--							<p>シェル・スクリプトとはいくつかのコマンドを一つのファイルの中にまとめる便利なものです。 ファイル名をタイプすることでコマンドが順番に実行されます。 aptosidには便利なスクリプトがいくつかついてきます。 </p>-->
 
 							<!--- ####
 							<p>If the shell-script is in your *current working* directory</p>
 							#### -->
-							<p>シェルスクリプトがカレント・ディレクトリにあるときは次のように実行します</p>
+<!--							<p>シェルスクリプトがカレント・ディレクトリにあるときは次のように実行します</p>
 <pre>
 ./スクリプトの名前
 </pre>
-
+-->
 							<!--- ####
 							<p class="highlight-3">Some scripts require root access (sux) in a terminal and others do not, it depends entirely on the purpose of the script.</p>
 							#### -->
-							<p class="highlight-3">スクリプトの書かれた目的に応じてrootのアクセス権(sux)が必要なものと特に必要としないものがあります。</p>
+							<p class="highlight-3">スクリプトの書かれた目的に応じてrootのアクセス権(sux)が必要なものと特に必要としないものがあります。</p>-->
 
 			<!--- ####
 			<h5>Script Installation and execution procedure</h5>
 			#### -->
-			<h5>スクリプトのインストールと実行の手順</h5>
+<!--			<h5>スクリプトのインストールと実行の手順</h5>-->
 										<!--- ####
    							<p>Use wget to download the script file, placing it wherever it has been recommended to place it <span class="highlight-3">(for example it may ask you to place it in /usr/local/bin) </span>, you can use your mouse copy and paste file name directly into your konsole window, after logging in as <span class="highlight-3">sux</span></p>
 										#### -->
-   							<p>wgetを使ってスクリプト・ファイルをダウンロードします。 指示にしたがってファイルをどこに保存するか決めてください。 <span class="highlight-3">(たとえば /usr/local/binのディレクトリに保存するように、など)</span>, <span class="highlight-3">sux</span>でrootとしてログインした上でマウスを使ってファイル名をコピーしコンソール・ウィンドウにペースとすることもできます。</p>
+<!--   							<p>wgetを使ってスクリプト・ファイルをダウンロードします。 指示にしたがってファイルをどこに保存するか決めてください。 <span class="highlight-3">(たとえば /usr/local/binのディレクトリに保存するように、など)</span>, <span class="highlight-3">sux</span>でrootとしてログインした上でマウスを使ってファイル名をコピーしコンソール・ウィンドウにペースとすることもできます。</p>-->
 
 					<!--- ####
 					<h6>Example of using wget that requires <span class="highlight-3">root access (sux) </span></h6>
 					#### -->
-					<h6>wgetを使って<span class="highlight-3">rootアクセス(sux)</span>を必要とするダウンロードをする手順の一例 </span></h6>
+<!--					<h6>wgetを使って<span class="highlight-3">rootアクセス(sux)</span>を必要とするダウンロードをする手順の一例 </span></h6>
 <pre>
 sux
 cd /usr/local/bin
 wget script-name
-</pre>
+</pre>-->
 							<!--- ####
 							<p>You then need to make the file executable</p>
 							#### -->
-							<p>このファイルを実行可能モードのにする必要があります</p>
+<!--							<p>このファイルを実行可能モードのにする必要があります</p>
 <pre>
 chmod +x  script-name
-</pre>
+</pre>-->
 							<!--- ####
 							<p>You can also use a browser to download a script file then place it where it has been recommended to place it, however you will still need to make it executable.</p>
 							#### -->
@@ -824,30 +824,30 @@ chmod +x  script-name
 					<!--- ####
 					<h6>Example of using wget as a user</h6>
 					#### -->
-					<h6>ユーザーとしてwgetを使う一例r</h6>
+<!--					<h6>ユーザーとしてwgetを使う一例r</h6>-->
 							<!--- ####
 							<p>To place a file in your <span class="highlight-3">$HOME as a user '$'</span>:</p>
 							#### -->
-							<p>ファイルを<span class="highlight-3">ユーザー($)として$HOMEディレクトリ</span>に保存するには:</p>
+<!--							<p>ファイルを<span class="highlight-3">ユーザー($)として$HOMEディレクトリ</span>に保存するには:</p>
 <pre>
 $wget http://bluewater.aptosid.com/shell-script-test/test-script.sh
 </pre>
 
 <pre>
 $chmod +x test-script.sh
-</pre>
+</pre>-->
 							<!--- ####
 							<p>To run a script, open a terminal/konsole, and run the script name:</p>
 							#### -->
-							<p>スクリプトを実行するにはターミナル/コンソールを開き、スクリプトの名を次のように入力します:</p>
+<!--							<p>スクリプトを実行するにはターミナル/コンソールを開き、スクリプトの名を次のように入力します:</p>
 
 <pre>
 $./test-script.sh
-</pre>
+</pre>-->
 							<!--- ####
 							<p>You should then see this:</p>
 							#### -->
-							<p>次のように表示されるはずです:</p>
+<!--							<p>次のように表示されるはずです:</p>
 <pre>
 Congratulations user
 You successfully downloaded and executed a bash script!
