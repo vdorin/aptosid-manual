@@ -339,7 +339,7 @@
 		<h2 id="top-header">Partitioning your HD using Gparted/KDE Partition Manager</h2>
 			<h5><span class="highlight-2">WARNING: for disk naming</span><a href="part-uuid-en.htm#uuid"> Please refer to UUID, Partition Labelling and fstab, as by default aptosid uses UUID</a></h5>
 
-			<h5>Partitioning tools may request a root password, type <span class="highlight-3">sux</span> then your password. On a Live-ISO none is set <span class="highlight-3">sux</span> then press 'enter' . See: <a href="live-mode-en.htm#rootpw" >Live Mode</a></h5>
+			<h5>On a Live-ISO a password is not set. Therefore use <span class="highlight-3">sudo</span> then press 'enter'. See: <a href="live-mode-en.htm#rootpw" >Live Mode</a></h5>
 	<div class="spacer02"></div>
 							<p class="warning-box">Resizing the NTFS partition requires you to reboot the system immediately! DON'T DO any other operations on this partition before the reboot, otherwise you will get errors.<a href="part-gparted-en.htm#ntfs"> Please read this.</a></p>
 
@@ -351,19 +351,20 @@
 							<p  class="highlight-2">For normal use we recommend the ext4 file system, it is the default file system for aptosid .</p>
 
 		<h2>Using KDE Partition Manager &amp; Gparted</h2>
-							<p>Creating and managing partitions is not something that is typically done every day. Therefore, a good idea is to read this guide once, to get comfortable with the concepts and some of the panels that will appear.</p>
+							<p>Creating and managing partitions is not something that is typically done every day. Therefore, a good idea is to read this guide once, to get comfortable with the concepts and some of the panels that will appear. <span class="highlight-3"> The following assumes that you are using a live-iso . Should you be hard disk installed &lt;sudo&gt; will not work, refer to <a href="term-konsole-en.htm#sux"> About Xapps whilst in X as root</a> </span>.</p>
 
-						  <h3>KDE Partition Manager - run in a terminal:</h3>
+						  <h3>KDE Partition Manager, if installed on the live-iso - run in a terminal:</h3>
 <pre>
-sux
-partitionmanager
-</pre>
-						  <h3>Gparted - run in a terminal:</h3>
-<pre>
-sux
-gparted
+sudo partitionmanager
 </pre>
 
+						  <h3>Gparted, if installed on the live-so - run in a terminal:</h3>
+<pre>
+sudo gparted
+</pre>
+							<p  class="highlight-3">Whilst somewhat obscured within the menu choices, gparted will let you see GPT disks.</p>
+
+							<p>If you need to partition a USB drive whilst a hard disk install you will need to adjust your commands to include root using Xapps. See <a href="term-konsole-en.htm#sux"> Refer to sux2</a>.</p>
 
 		<ul>
 			<li>
@@ -488,7 +489,7 @@ apt-get update &amp;&amp; apt-get install exfat-fuse
 </pre>
 
 		</div>
-		<div id="rev">Content last revised 10/03/2013 1215 UTC</div>
+		<div id="rev">Content last revised 13/03/2013 1300 UTC</div>
 
 </div>
 </body>
