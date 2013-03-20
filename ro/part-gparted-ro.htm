@@ -352,20 +352,20 @@
 							<p  class="highlight-2">Pentru utilizare uzuală recomandăm tipul ext4. Este sistemul de fişiere implicit pentru aptosid şi este foarte bine întreţinut.</p>
 
 		<h2>Utilizarea <i>KDE Partition Manager</i> &amp; <i>Gparted</i></h2>
-							<p>Crearea și administrarea partițiilor nu sunt activități pe care să le executați zilnic. În consecință, ar fi bine să citiți acest ghid o dată și să vă familiarizați cu noțiunile și unele ferestre care vor apare.<span class="highlight-3"> The following assumes that you are using a live-iso . Should you be hard disk installed &lt;sudo&gt; will not work, refer to <a href="term-konsole-ro.htm#sux"> About Xapps whilst in X as root</a> </span>.</p>
+							<p>Crearea și administrarea partițiilor nu sunt activități pe care să le executați zilnic. În consecință, ar fi bine să citiți acest ghid o dată și să vă familiarizați cu noțiunile și unele ferestre care vor apare.<span class="highlight-3"> Următoarele instrucțiuni presupun că folosiți un mediu live-iso. Dacă folosiți un sistem instalat pe hard disk, comanda &lt;sudo&gt; nu va funcționa, citiți secțiunea <a href="term-konsole-ro.htm#sux"> Aplicații cu interfață grafică (Xapps) utilizate ca <i>root</i></a></span>.</p>
 
-						  <h3>KDE Partition Manager, if installed on the live-iso - run in a terminal:</h3>
+						  <h3>KDE Partition Manager, dacă este instalat pe mediul live-iso - rulați într-un terminal:</h3>
 <pre>
 sudo partitionmanager
 </pre>
 
-						  <h3>Gparted, if installed on the live-so - run in a terminal:</h3>
+						  <h3>Gparted, dacă este instalat pe mediul live-iso - rulați într-un terminal:</h3>
 <pre>
 sudo gparted
 </pre>
-							<h5  class="highlight-3">Whilst somewhat obscured within the menu choices, gparted will let you see GPT disks.</h5>
+							<h5  class="highlight-3">Dacă totul decurge normal, <i>gparted</i> vă va arăta în meniul de alegere toate disk-urile fizice cu partițiile lor.</h5>
 
-							<h4  class="highlight-2">If you need to partition a USB drive, (or SD and SDXC cards), whilst hard disk installed you will need to adjust your commands to include root using Xapps. Refer to <a href="term-konsole-ro.htm#sux"> About Xapps whilst in X as root </a> else use the commandline tools <a href=" part-cfdisk-ro.htm"> cfdisk</a> or <a href=" part-gdisk-ro.htm"> gdisk</a>.</h4>
+							<h4  class="highlight-2">Dacă aveți nevoie să partiționați un dispozitiv USB, (sau card-uri SD și SDXC), fiind pe un sistem instalat veți avea nevoie să ajustați comenzile astfel încât să puteți utiliza aplicații cu interfață grafică ca <i>root</i>. Citiți la <a href="term-konsole-ro.htm#sux"> Aplicații cu interfață grafică (Xapps) utilizate ca <i>root</i></a> altfel folosiți uneltele din linia de comandă <a href=" part-cfdisk-ro.htm"> cfdisk</a> sau <a href=" part-gdisk-ro.htm"> gdisk</a>.</h4>
 
 							&nbsp;
 		<ul>
@@ -460,7 +460,7 @@ sudo gparted
 							<li>După restart, Windows XP va fi în regulă, dar trebuie să lăsaţi sistemul să termine procesul de pornire şi să asteptaţi ecranul de login!</li>
 						</ul>
 
-							<p><b>Documentaţie Completă GParted </b>:Pentru a citi documentaţia completă, inclusiv Cum Să copiaţi partiţiile, mergeţi la <a href="http://gparted.sourceforge.net">GParted</a></p>
+							<p><b>Documentaţie Completă GParted </b>:Pentru a citi documentaţia completă, inclusiv cum să copiaţi partiţiile, mergeţi la <a href="http://gparted.sourceforge.net">GParted</a></p>
 	</div>
 		<div class="divider" id="hd-ntfs3g">
 			<h2>Scrierea pe partiții NTFS cu ntfs-3g</h2>
@@ -482,7 +482,7 @@ exit
 		</div>
 		<div class="divider" id="exfat">
 			    <h2>exfat</h2>
-							 <p>exfat is a proprietary file format covered by patents held by Microsoft &#8482; and commonly found on SDXC cards. To mount/read/write to the file system, simply install the exfat-fuse package:</p>
+							 <p><i>exfat</i> este un sistem de fișiere proprietar patentat de Microsoft &#8482; și găsit de regulă pe cardurile SDXC. Pentru a putea lucra cu acest sistem de fișiere (mount/read/write), trebuie doar să instalați pachetul <i>exfat-fuse</i> astfel:</p>
 <pre>
 apt-get update &amp;&amp; apt-get install exfat-fuse
 </pre>
