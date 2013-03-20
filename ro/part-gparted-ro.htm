@@ -352,20 +352,22 @@
 							<p  class="highlight-2">Pentru utilizare uzuală recomandăm tipul ext4. Este sistemul de fişiere implicit pentru aptosid şi este foarte bine întreţinut.</p>
 
 		<h2>Utilizarea <i>KDE Partition Manager</i> &amp; <i>Gparted</i></h2>
-							<p>Crearea și administrarea partițiilor nu sunt activități pe care să le executați zilnic. În consecință, ar fi bine să citiți acest ghid o dată și să vă familiarizați cu noțiunile și unele ferestre care vor apare.</p>
+							<p>Crearea și administrarea partițiilor nu sunt activități pe care să le executați zilnic. În consecință, ar fi bine să citiți acest ghid o dată și să vă familiarizați cu noțiunile și unele ferestre care vor apare.<span class="highlight-3"> The following assumes that you are using a live-iso . Should you be hard disk installed &lt;sudo&gt; will not work, refer to <a href="term-konsole-ro.htm#sux"> About Xapps whilst in X as root</a> </span>.</p>
 
-						  <h3>KDE Partition Manager - rulați într-un terminal:</h3>
+						  <h3>KDE Partition Manager, if installed on the live-iso - run in a terminal:</h3>
 <pre>
-sux
-partitionmanager
-</pre>
-						  <h3>Gparted - rulați într-un terminal:</h3>
-<pre>
-sux
-gparted
+sudo partitionmanager
 </pre>
 
+						  <h3>Gparted, if installed on the live-so - run in a terminal:</h3>
+<pre>
+sudo gparted
+</pre>
+							<h5  class="highlight-3">Whilst somewhat obscured within the menu choices, gparted will let you see GPT disks.</h5>
 
+							<h4  class="highlight-2">If you need to partition a USB drive, (or SD and SDXC cards), whilst hard disk installed you will need to adjust your commands to include root using Xapps. Refer to <a href="term-konsole-ro.htm#sux"> About Xapps whilst in X as root </a> else use the commandline tools <a href=" part-cfdisk-ro.htm"> cfdisk</a> or <a href=" part-gdisk-ro.htm"> gdisk</a>.</h4>
+
+							&nbsp;
 		<ul>
 			<li>
 							<p>Când GParted sau KDE Partition Manager rulează, o fereastră se deschide și discurile sunt scanate.</p>
@@ -486,7 +488,7 @@ apt-get update &amp;&amp; apt-get install exfat-fuse
 </pre>
 
 		</div>
-		<div id="rev">Content last revised 10/03/2013 1215 UTC</div>
+		<div id="rev">Content last revised 20/03/2013 0600 UTC</div>
 
 </div>
 </body>

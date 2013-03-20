@@ -353,20 +353,22 @@
 							<p class="highlight-2">Per un uso normale consigliamo il filesystem ext4, è quello predefinito di aptosid.</p>
 
 		<h2>Utilizzare KDE Partition Manager &amp; Gparted</h2>
-							<p>Creare e gestire partizioni non è qualcosa che si fa ogni giorno. Perciò è una buona idea leggere questa guida una volta per familiarizzare con i concetti e con alcune delle schermate che si vedranno.</p>
+							<p>Creare e gestire partizioni non è qualcosa che si fa ogni giorno. Perciò è una buona idea leggere questa guida una volta per familiarizzare con i concetti e con alcune delle schermate che si vedranno.<span class="highlight-3"> The following assumes that you are using a live-iso . Should you be hard disk installed &lt;sudo&gt; will not work, refer to <a href="term-konsole-it.htm#sux"> About Xapps whilst in X as root</a> </span>.</p>
 
-						  <h3>KDE Partition Manager - avvio in un terminale:</h3>
+						  <h3>KDE Partition Manager, if installed on the live-iso - run in a terminal:</h3>
 <pre>
-sux
-partitionmanager
-</pre>
-						  <h3>Gparted - avvio in un terminale:</h3>
-<pre>
-sux
-gparted
+sudo partitionmanager
 </pre>
 
+						  <h3>Gparted, if installed on the live-so - run in a terminal:</h3>
+<pre>
+sudo gparted
+</pre>
+							<h5  class="highlight-3">Whilst somewhat obscured within the menu choices, gparted will let you see GPT disks.</h5>
 
+							<h4  class="highlight-2">If you need to partition a USB drive, (or SD and SDXC cards), whilst hard disk installed you will need to adjust your commands to include root using Xapps. Refer to <a href="term-konsole-it.htm#sux"> About Xapps whilst in X as root </a> else use the commandline tools <a href=" part-cfdisk-it.htm"> cfdisk</a> or <a href=" part-gdisk-it.htm"> gdisk</a>.</h4>
+
+							&nbsp;
 		<ul>
 			<li>
 							<p>Quando vengono avviati GParted oppure KDE Partition Manager, si apre una finestra, i dischi vengono controllati.</p>
@@ -492,7 +494,7 @@ apt-get update &amp;&amp; apt-get install exfat-fuse
 </pre>
 
 		</div>
-		<div id="rev">Content last revised 10/03/2013 1215 UTC</div>
+		<div id="rev">Content last revised 20/03/2013 0600 UTC</div>
 
 </div>
 </body>

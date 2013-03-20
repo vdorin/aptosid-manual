@@ -352,20 +352,22 @@
 							<p class="highlight-2"> Для нормального використання ми рекомендуємо файлову систему ext4. Ext4 є стандартною файловою системою для aptosid і при цьому добре підтримується (maintained). </p>
 		
 					<h2> Використання KDE менеджер розділів і GParted </h2>
-					<p> Створення та керування розділами є неповседневнимі завданнями. Рекомендується прочитати наступні інструкції, щоб ознайомитися з концепцією менеджера розділів. </p>
+							<p> Створення та керування розділами є неповседневнимі завданнями. Рекомендується прочитати наступні інструкції, щоб ознайомитися з концепцією менеджера розділів. <span class="highlight-3"> The following assumes that you are using a live-iso . Should you be hard disk installed &lt;sudo&gt; will not work, refer to <a href="term-konsole-uk.htm#sux"> About Xapps whilst in X as root</a> </span>.</p>
 
-					  <h3> Запустіть KDE Partition Manager в терміналі: </h3>
+						  <h3>KDE Partition Manager, if installed on the live-iso - run in a terminal:</h3>
 <pre>
-sux
-partitionmanager
-</pre>
-						  <h3>Запустіть GParted в терміналі:</h3>
-<pre>
-sux
-gparted
+sudo partitionmanager
 </pre>
 
+						  <h3>Gparted, if installed on the live-so - run in a terminal:</h3>
+<pre>
+sudo gparted
+</pre>
+							<h5  class="highlight-3">Whilst somewhat obscured within the menu choices, gparted will let you see GPT disks.</h5>
 
+							<h4  class="highlight-2">If you need to partition a USB drive, (or SD and SDXC cards), whilst hard disk installed you will need to adjust your commands to include root using Xapps. Refer to <a href="term-konsole-uk.htm#sux"> About Xapps whilst in X as root </a> else use the commandline tools <a href=" part-cfdisk-uk.htm"> cfdisk</a> or <a href=" part-gdisk-uk.htm"> gdisk</a>.</h4>
+
+							&nbsp;
 		<ul>
 			<li>
 							<p>Коли запрацює GParted або KDE Partition Manager, відкриється вікно і жорсткі диски будуть відскановані.</p>
@@ -480,7 +482,7 @@ apt-get update &amp;&amp; apt-get install exfat-fuse
 </pre>
 
 		</div>
-		<div id="rev">Content last revised 10/03/2013 1215 UTC</div>
+		<div id="rev">Content last revised 20/03/2013 0600 UTC</div>
 
 </div>
 </body>

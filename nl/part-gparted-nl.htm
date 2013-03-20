@@ -353,20 +353,22 @@
 							<p class="highlight-2">In de standaard situatie wordt Ext4 geadviseerd. Ext4 is het normale bestandssysteem van aptosid en wordt goed onderhouden (maintained).</p>
 
 		<h2>Using KDE Partition Manager &amp; Gparted</h2>
-							<p>Creating and managing partitions is not something that is typically done every day. Therefore, a good idea is to read this guide once, to get comfortable with the concepts and some of the panels that will appear.</p>
+							<p>Creating and managing partitions is not something that is typically done every day. Therefore, a good idea is to read this guide once, to get comfortable with the concepts and some of the panels that will appear.<span class="highlight-3"> The following assumes that you are using a live-iso . Should you be hard disk installed &lt;sudo&gt; will not work, refer to <a href="term-konsole-nl.htm#sux"> About Xapps whilst in X as root</a> </span>.</p>
 
-						  <h3>KDE Partition Manager - run in a terminal:</h3>
+						  <h3>KDE Partition Manager, if installed on the live-iso - run in a terminal:</h3>
 <pre>
-sux
-partitionmanager
-</pre>
-						  <h3>Gparted - run in a terminal:</h3>
-<pre>
-sux
-gparted
+sudo partitionmanager
 </pre>
 
+						  <h3>Gparted, if installed on the live-so - run in a terminal:</h3>
+<pre>
+sudo gparted
+</pre>
+							<h5  class="highlight-3">Whilst somewhat obscured within the menu choices, gparted will let you see GPT disks.</h5>
 
+							<h4  class="highlight-2">If you need to partition a USB drive, (or SD and SDXC cards), whilst hard disk installed you will need to adjust your commands to include root using Xapps. Refer to <a href="term-konsole-nl.htm#sux"> About Xapps whilst in X as root </a> else use the commandline tools <a href=" part-cfdisk-nl.htm"> cfdisk</a> or <a href=" part-gdisk-nl.htm"> gdisk</a>.</h4>
+
+							&nbsp;
 		<ul>
 			<li>
 							<p>When GParted or KDE Partition Manager runs , a window is opened, and drives are scanned.</p>
@@ -479,7 +481,7 @@ apt-get update &amp;&amp; apt-get install exfat-fuse
 </pre>
 
 		</div>
-		<div id="rev">Content last revised 10/03/2013 1215 UTC</div>
+		<div id="rev">Content last revised 20/03/2013 0600 UTC</div>
 
 </div>
 </body>

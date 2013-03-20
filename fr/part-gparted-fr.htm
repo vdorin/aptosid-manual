@@ -354,20 +354,22 @@
 							<p  class="highlight-2">Pour une utilisation ordinaire, nous recommanderons le système de fichiers ext4, utilisé par défaut par aptosid.</p>
 
 		<h2>Utiliser Le gestionnaire de partitions KDE &amp; Gparted</h2>
-							<p>Créer et configurer des partitions n'est pas une tâche commune qu'on effectue tous les jours. Il est ce fait recommandé de lire au moins une fois ce guide, afin de se familiariser aux concepts et aux outils que vous allez rencontrer.</p>
+							<p>Créer et configurer des partitions n'est pas une tâche commune qu'on effectue tous les jours. Il est ce fait recommandé de lire au moins une fois ce guide, afin de se familiariser aux concepts et aux outils que vous allez rencontrer.<span class="highlight-3"> The following assumes that you are using a live-iso . Should you be hard disk installed &lt;sudo&gt; will not work, refer to <a href="term-konsole-fr.htm#sux"> About Xapps whilst in X as root</a> </span>.</p>
 
-						  <h3>Gestionnaire de partitions KDE - lancez depuis un terminal:</h3>
+						  <h3>KDE Partition Manager, if installed on the live-iso - run in a terminal:</h3>
 <pre>
-sux
-partitionmanager
-</pre>
-						  <h3>Gparted - lancez depuis un terminal:</h3>
-<pre>
-sux
-gparted
+sudo partitionmanager
 </pre>
 
+						  <h3>Gparted, if installed on the live-so - run in a terminal:</h3>
+<pre>
+sudo gparted
+</pre>
+							<h5  class="highlight-3">Whilst somewhat obscured within the menu choices, gparted will let you see GPT disks.</h5>
 
+							<h4  class="highlight-2">If you need to partition a USB drive, (or SD and SDXC cards), whilst hard disk installed you will need to adjust your commands to include root using Xapps. Refer to <a href="term-konsole-fr.htm#sux"> About Xapps whilst in X as root </a> else use the commandline tools <a href=" part-cfdisk-fr.htm"> cfdisk</a> or <a href=" part-gdisk-fr.htm"> gdisk</a>.</h4>
+
+							&nbsp;
 		<ul>
 			<li>
 							<p>Quand Gparted ou le Gestionnaire de Partitions KDE se lancent, une fenêtre s'ouvre et les disques et partitions sont analysées.</p>
@@ -510,7 +512,7 @@ apt-get update &amp;&amp; apt-get install exfat-fuse
 </pre>
 
 		</div>
-		<div id="rev">Content last revised 10/03/2013 1215 UTC</div>
+		<div id="rev">Content last revised 20/03/2013 0600 UTC</div>
 
 </div>
 </body>

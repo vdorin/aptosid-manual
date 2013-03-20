@@ -353,20 +353,22 @@
 							<p  class="highlight-2">Para uso normal, recomendamos el sistema de archivos ext4, que es el sistema de archivos pre-seleccionado por aptosid y es bien mantenido.</p>
 
 		<h2>Uso de KDE Partition Manager &amp; Gparted</h2>
-							<p>El crear y manipular particiones no es algo que se haga normalmente cada día. Por ello es buena idea leer esta guía al menos una vez para conocer los conceptos y algunos de los paneles  que aparecerán.</p>
+							<p>El crear y manipular particiones no es algo que se haga normalmente cada día. Por ello es buena idea leer esta guía al menos una vez para conocer los conceptos y algunos de los paneles  que aparecerán.<span class="highlight-3"> The following assumes that you are using a live-iso . Should you be hard disk installed &lt;sudo&gt; will not work, refer to <a href="term-konsole-es.htm#sux"> About Xapps whilst in X as root</a> </span>.</p>
 
-						  <h3>KDE Partition Manager - en una terminal:</h3>
+						  <h3>KDE Partition Manager, if installed on the live-iso - run in a terminal:</h3>
 <pre>
-sux
-partitionmanager
-</pre>
-						  <h3>Gparted - en una terminal:</h3>
-<pre>
-sux
-gparted
+sudo partitionmanager
 </pre>
 
+						  <h3>Gparted, if installed on the live-so - run in a terminal:</h3>
+<pre>
+sudo gparted
+</pre>
+							<h5  class="highlight-3">Whilst somewhat obscured within the menu choices, gparted will let you see GPT disks.</h5>
 
+							<h4  class="highlight-2">If you need to partition a USB drive, (or SD and SDXC cards), whilst hard disk installed you will need to adjust your commands to include root using Xapps. Refer to <a href="term-konsole-es.htm#sux"> About Xapps whilst in X as root </a> else use the commandline tools <a href=" part-cfdisk-es.htm"> cfdisk</a> or <a href=" part-gdisk-es.htm"> gdisk</a>.</h4>
+
+							&nbsp;
 		<ul>
 			<li>
 							<p>Cuando GParted o KDE Partition Manager arranca, aparece una ventana y los discos son analizados.</p>
@@ -512,7 +514,7 @@ apt-get update &amp;&amp; apt-get install exfat-fuse
 </pre>
 
 		</div>
-		<div id="rev">Content last revised 10/03/2013 1215 UTC</div>
+		<div id="rev">Content last revised 20/03/2013 0600 UTC</div>
 
 </div>
 </body>
