@@ -343,7 +343,7 @@
 			<h5>Partitie tools worden als root uitgevoerd en er wordt een wachtwoord gevraagd, type <span class="highlight-3">sux</span> en hierna je wachtwoord. Op een Live-CD is er geen rootwachtwoord, gebruik <span class="highlight-3">sux</span> en hierna 'enter'. Zie: <a href="live-mode-nl.htm" >Live Mode</a></h5>
 
 	<div class="spacer02"></div>
-							<p class="warning-box">Veranderingen in de grootte van een NTFS-Partitie vereisen nadien een <b>directe</b> reboot, er mogen <b>verder geen veranderingen</b> aan de partities worden toegepast!<a href="part-gparted-nl.htm#ntfs"> Please read this.</a></p>
+							<p class="warning-box">Veranderingen in de grootte van een NTFS-Partitie vereisen nadien een <b>directe</b> reboot, er mogen <b>verder geen veranderingen</b> aan de partities worden toegepast!<a href="part-gparted-nl.htm#ntfs"> Gelieve het volgende te lezen.</a></p>
 
 							<p class="highlight-2">Maak altijd een back-up van je data!</p>
 
@@ -352,38 +352,38 @@
 
 							<p class="highlight-2">In de standaard situatie wordt Ext4 geadviseerd. Ext4 is het normale bestandssysteem van aptosid en wordt goed onderhouden (maintained).</p>
 
-		<h2>Using KDE Partition Manager &amp; Gparted</h2>
-							<p>Creating and managing partitions is not something that is typically done every day. Therefore, a good idea is to read this guide once, to get comfortable with the concepts and some of the panels that will appear.<span class="highlight-3"> The following assumes that you are using a live-iso . Should you be hard disk installed &lt;sudo&gt; will not work, refer to <a href="term-konsole-nl.htm#sux"> About Xapps whilst in X as root</a> </span>.</p>
+		<h2>Het gebruik van de KDE Partition Manager &amp; Gparted</h2>
+							<p>Het creëren en beheren van partities is niet iets wat je elke dag zal doen. Daarom is het een goed idee om deze gids eenmaal te lezen om vertrouwd te worden met de concepten en sommige van de vensters die zullen verschijnen.<span class="highlight-3"> Wat volgt veronderstelt dat je een live-iso gebruikt. Als je vanuit een harde schijf installatie werkt, dan zal &lt;sudo&gt; niet werken, kijk dan naar <a href="term-konsole-nl.htm#sux">Over Xapps als je in X bent als root en sux2 als een alias</a> </span>.</p>
 
-						  <h3>KDE Partition Manager, if installed on the live-iso - run in a terminal:</h3>
+						  <h3>KDE Partition Manager, indien geïnstalleerd op de live-iso - start in een terminal:</h3>
 <pre>
 sudo partitionmanager
 </pre>
 
-						  <h3>Gparted, if installed on the live-so - run in a terminal:</h3>
+						  <h3>Gparted, indien geïnstalleerd op de live-iso - start in een terminal:</h3>
 <pre>
 sudo gparted
 </pre>
-							<h5  class="highlight-3">Whilst somewhat obscured within the menu choices, gparted will let you see GPT disks.</h5>
+							<h5  class="highlight-3">gparted laat je ook GPT schijven zien, hoewel het wat verborgen zit in de menu's.</h5>
 
-							<h4  class="highlight-2">If you need to partition a USB drive, (or SD and SDXC cards), whilst hard disk installed you will need to adjust your commands to include root using Xapps. Refer to <a href="term-konsole-nl.htm#sux"> About Xapps whilst in X as root </a> else use the commandline tools <a href=" part-cfdisk-nl.htm"> cfdisk</a> or <a href=" part-gdisk-nl.htm"> gdisk</a>.</h4>
+							<h4  class="highlight-2">Als je een USB drive (of SD en SDXC cards) moet partitioneren terwijl je op harde schijf bent geïnstalleerd, zal je de commando's moeten aanpassen om Xapps als je in X bent als root te gebruiken. Zie <a href="term-konsole-nl.htm#sux"> Over Xapps als je in X bent als root en sux2 als een alias</a>, of gebruik de commandline tools <a href=" part-cfdisk-nl.htm"> cfdisk</a> of <a href=" part-gdisk-nl.htm"> gdisk</a>.</h4>
 
 							&nbsp;
 		<ul>
 			<li>
-							<p>When GParted or KDE Partition Manager runs , a window is opened, and drives are scanned.</p>
+							<p>Wanneer GParted of KDE Partition Manager draaien,  wordt er een venster geopend en de schijven worden gescand.</p>
 
-							<p>In KDE Partition Manager the drives are shown in a list on the left.</p>
+							<p>In KDE Partition Manager worden de schijven getoond in een lijst aan de linkerkant.</p>
 
 		<div class="screenshot"><img src="../lib/images-common/images-kpart/kpart-02.png"  title="KDE Partition Manager partition information" alt="KDE Partition Manager partition information" /></div>
 
-							<p>In Gparted, if you click the menu (at the top left), a pop down is presented. You can select to refresh the display of the drives on your system.</p>
+							<p>In Gparted, als je op het menu klikt (boven links) wordt er een pop down venster getoond. Je kan een refresh van het display van de schijven op je systeem kiezen.</p>
 
 
 		<div class="screenshot"><img src="../lib/images-common/images-gparted/gparted02-en.png"  title="Gparted Devices View" alt="gparted" /></div>
 			</li>
 		  </ul>
-						<h6><span class="highlight-2">The following screenshots are of Gparted. KDE Partition Manager behaves in much the same manner.</span></h6>
+						<h6><span class="highlight-2">De volgende screenshots zijn voor Gparted. KDE Partition Manager gedraagt zich op een gelijkaardige manier.</span></h6>
 		  <ul>
 			<li>
 				<h3>Bewerken</h3>
@@ -420,7 +420,7 @@ sudo gparted
 			</li>
 			<li>
 					<h4>Een nieuwe partitie aanmaken</h4>
-							<p>In de toolbar is een buttom <b>nieuw</b> voor het aanmaken van nieuwe partities. In een nieuw venster kunnen opties worden toegepast voor primaire, uitgebreide of logische partities en de aanduiding van het bestandssysteem.</p>
+							<p>In de toolbar is een button <b>nieuw</b> voor het aanmaken van nieuwe partities. In een nieuw venster kunnen opties worden toegepast voor primaire, uitgebreide of logische partities en de aanduiding van het bestandssysteem.</p>
 		<div class="screenshot"><img src="../lib/images-common/images-gparted/gparted07-en.png"  title="Gparted New Partition" alt="file system" /></div>
 			</li>
 			<li>
@@ -475,13 +475,13 @@ exit
 		</div>
 		<div class="divider" id="exfat">
 			    <h2>exfat</h2>
-							 <p>exfat is a proprietary file format covered by patents held by Microsoft &#8482; and commonly found on SDXC cards. To mount/read/write to the file system, simply install the exfat-fuse package:</p>
+							 <p>exfat is een gesloten bestandssysteem beschermd door octrooien van Microsoft &#8482; en wordt algemeen gevonden op SDXC kaarten. Om het bestandssysteem te lezen, schrijven of mounten, installeer je simpelweg het exfat-fuse pakket:</p>
 <pre>
 apt-get update &amp;&amp; apt-get install exfat-fuse
 </pre>
 
 		</div>
-		<div id="rev">Content last revised 20/03/2013 0600 UTC</div>
+		<div id="rev">Inhoud laatst herzien 20/03/2013 0600 UTC</div>
 
 </div>
 </body>
