@@ -19,17 +19,20 @@
 <body>
 <!-- Last translation revision by cobra 04/07/2008 1054 UTC-->
 <div id="menu"> <!-- menu starts here hr lang maintainer cobra -->
-<!--aptosid Operating System Manual menu-version-00.01.2010.09.17 -->
-<!-- menu last updated by bluewater 2010.09.17 0730 hrs UTC -->
+<!--aptosid Operating System Manual menu-version-02.15.2013.01.10 -->
+<!-- menu last updated by bluewater 2013.01.10 0910 hrs UTC -->
+<ul>
+<li></li>
+<li><a></a></li>
+</ul>
 	<div id="menu-header">
 	      <a href="http://aptosid.com/"><img src="../lib/logos/manual-aptosid-logo.png" title="aptosid.com, forum and wiki" alt="aptosid.com logo" /></a>
 	</div>
 	<ul id="top-list">
 		<li><a href="manual-search-hr.htm#search-on"><img src="../lib/logos/manual-search-22x22.png" title="Search Manual" alt="Search" /> Traži Online Offline</a> </li>
-		<!--<li><a href="http://manual.aptosid.com/meta-manual">Izbor softvera zajednice</a></li>-->
 	</ul>
 	<div id="flags-2">
-			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Izaberite drugi jezik - Choose another language" alt="lang-switch" /></a>
+			<a href="../flag-index.html"><img src="../lib/logos/aptosid-lang-100x64.png" title="Izaberite drugi jezik - Choose another language CS, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" alt="lang-switchv CS, DA, DE, EN, ES, FR, IT, JA, NL, PL, PT, RO, RU, UK" /></a>
 	</div>
 	<ul>
 <li onmouseover="showHide( 1 );" onmouseout="startTime();" ><a href="welcome-hr.htm">aptosid OS priručnik</a>
@@ -84,6 +87,7 @@
 				<li><a href="term-konsole-hr.htm#term-kon"> Terminal / Konzola &#8658;</a>
 					<ul class="sub2-menu" id="sm4a">
 					  <li><a href="term-konsole-hr.htm#term-kon"> Terminal / Konzola</a></li>
+					  <li><a href="term-konsole-hr.htm#colours"> Coloured terminal prompts</a></li>
 					  <li><a href="term-konsole-hr.htm#cli-help">Pomoć za naredbenu crtu</a></li>
 					  <li><a href="help-hr.htm#init3-tools">Poznati alate u tekstualnom modusu (tty) - init 3</a></li>
 					  <li><a href="term-konsole-hr.htm#term-cmds">Lista naredbi za Linux Terminal</a></li>
@@ -102,7 +106,8 @@
 <li  onmouseover="showHide( 6 );" onmouseout="startTime();" ><a href="part-gparted-hr.htm">Particijonirati vaš Hard-Disk</a>
 		<ul class="sub-menu" id="sm6">
 			<li><a href="part-gparted-hr.htm#hd-ntfs3g">Pisanje na NTFS particiju sa NTFS-3g</a></li>
-			<li><a href="part-gparted-hr.htm#partition">Particijonirati sa GUI &#8658;</a>
+			
+			  <li><a href="part-lvm-hr.htm#part-lvm">Partitioning to use LVM - Logical Volume Manager</a></li>		  
 					<ul class="sub2-menu" id="sm6a">
 					  <li><a href="part-gparted-hr.htm#partition">Particijonirati vaš HD koristeći GParted / KDE Partition Manager</a></li>
 					  <li><a href="part-gparted-hr.htm#ntfs">Mijenjanje veličine NTFS particija koristeći GParted / KDE Partition Manager</a></li>
@@ -112,6 +117,8 @@
 					 <ul class="sub2-menu" id="sm6b">
 					    <li><a href="part-cfdisk-hr.htm#partition">Particijonirati vaš HD koristeći cfdisk</a></li>
 					    <li><a href="part-cfdisk-hr.htm#formating">Formatiranje particija poslije particijoniranjem sa cfdisk</a></li>
+					    <li><a href="part-gdisk-hr.htm#gdisk-6">Formatting after partitioning with gdisk</a></li>
+					    <li><a href="part-gdisk-hr.htm#gdisk-1">GPT Partitioning with gdisk</a></li>
 					</ul>
 					</li>
 		<li><a href="part-size-examp-hr.htm#part-example">Osnove particioniranja &#8658;</a>
@@ -136,7 +143,6 @@
 					<ul class="sub2-menu" id="sm7b">
 					  <li><a href="hd-install-opts-hr.htm#fromiso">Boot sa fromiso - Pregled</a></li>
 					  <li><a href="hd-install-opts-hr.htm#fromiso-grub-leg">Boot sa fromiso sa grub-legacy</a></li>
-					  <li><a href="hd-install-opts-hr.htm#grub2-fromiso">Boot sa fromiso sa Grub 2</a></li>
 					  <li><a href="hd-install-opts-hr.htm#fromiso-persist">fromiso i persist</a></li>
 					</ul>
 					</li>
@@ -146,28 +152,31 @@
 					  <li><a href="hd-ins-opts-oos-hr.htm#raw-usb">Pisanje aptosid na USB / SSD stick sa svim Linux, MS Windows ili Mac OS X sustavima</a></li>
 					</ul>
 					</li>
+		  <li><a href="hd-install-hr.htm#efi">UEFI Booting</a></li>
+		  <li><a href="hd-install-crypt-hr.htm#install-crypt">Installing to encrypted partitions - cryptroot</a></li>
 		  <li><a href="nbdboot-hr.htm#nbd1">Dizanje aptosid preko mreže</a></li>
 		  <li><a href="hd-install-vmopts-hr.htm#vmopts">Opcije instalacije na virtualni stroj</a></li>
 		</ul>
 		</li>
-<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="hw-dev-hw-dri-hr.htm">Grafičke kartice, hardver, Xorg, sredstvo i pogonitelji</a>
+<li  onmouseover="showHide( 8 );" onmouseout="startTime();" ><a href="gpu-hr.htm">Grafičke kartice, hardver, Xorg, sredstvo i pogonitelji</a>
 	<ul class="sub-menu" id="sm8">
-		<li><a href="hw-dev-mon-hr.htm#mon-res">Rezolucije Monitora  &#8658;</a>
+		<li><a href="hw-dev-mon-hr.htm#mon-res">Screen Resolution and Monitors  &#8658;</a>
 					<ul class="sub2-menu" id="sm8a">
-					  <li><a href="hw-dev-mon-hr.htm#mon-res">Rezolucije Monitora i Monitori</a></li>
-					  <li><a href="hw-dev-mon-hr.htm#xrandr">Dual Monitori i xrandr</a></li>
-					  <li><a href="hw-dev-mon-hr.htm#mon-binary">Dual Monitori (koristeči binarne pogonitelje)</a></li>
+					  <li><a href="hw-dev-mon-hr.htm#mon-res">Screen Resolution and Monitors</a></li>
+					  <li><a href="hw-dev-mon-hr.htm#xrandr">Dual Monitors and xrandr</a></li>
+					  <li><a href="hw-dev-mon-hr.htm#mon-binary">Dual Monitors (using binaries)</a></li>
 					</ul>
 					</li>
-		<li><a href="hw-dev-hw-dri-hr.htm#non-free-3d">Grafičke kartice sa vlasničkim pogoniteljima &#8658;</a>
+		<li><a href="gpu-hr.htm#foss-xorg">GPU drivers &#8658;</a>
 					<ul class="sub2-menu" id="sm8b">
-					  <li><a href="hw-dev-hw-dri-hr.htm#non-free-3d">Binarni, non-free pogonitelji za: Nvidia &amp; xorg.conf</a></li>
-					  <li><a href="hw-dev-hw-dri-hr.htm#non-free-3d-2">non-free pogonitelji za ATI, Radeon i druge</a></li>
+					  <li><a href="gpu-hr.htm#ati-3d">AMD/ATI 3D drivers</a></li>
+					  <li><a href="gpu-hr.htm#intel">Intel 2D and 3D drivers</a></li>
+					  <li><a href="gpu-hr.htm#nvidia">Nvidia 3D drivers</a></li>
+					  <li><a href="gpu-hr.htm#foss-xorg">Open Source Xorg drivers</a></li>
 					</ul>
 					</li>
-			  <li><a href="hw-dev-hw-dri-hr.htm#non-free-firmware">Hardver kojoj trebaju non-free firmware pogonitelji</a></li>
-			  <li><a href="hw-dev-hw-dri-hr.htm#non-free">Dodati non-free u Sources List</a></li>
-			  <li><a href="hw-dev-hw-dri-hr.htm#native-nv-ati">FOSS xorg pogonitelji za nVidia, ATI, Radeon, Intel &amp; xorg.conf</a></li>
+			  <li><a href="nf-firm-hr.htm#fw-detect">Firmware detection - non-free </a></li>
+			  <li><a href="nf-firm-hr.htm#non-free-firmware">Adding non-free to sources</a></li>
 		</ul>
 		</li>
 <li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-kde-hr.htm">Window-Menadžer</a>
@@ -184,7 +193,7 @@
 		      <li><a href="wm-kde-hr.htm#dm">Menadžeri za Prikaz - dm</a></li>
 		</ul>
 		</li>
-<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="internet-connecting-hr.htm">Internet, WiFi, LAN i umrežavanje</a>
+<li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-hr.htm">Internet, WiFi, LAN i umrežavanje</a>
 		    <ul class="sub-menu" id="sm11">
 			<li><a href="lamp-apache-hr.htm">aptosid LAMP Stack &#8658;</a>
 					<ul class="sub2-menu" id="sm11a">
@@ -201,7 +210,7 @@
 					<ul class="sub2-menu" id="sm11b">
 					    <li><a href="tor-privoxy-hr.htm#tor">Tor</a></li>
 					    <li><a href="tor-privoxy-hr.htm#privoxy">Privoxy</a></li>
-					    <li><a href="internet-connecting-hr.htm#firewalls">Firewall</a></li>
+					    <li><a href="inet-ceni-hr.htm#firewalls">Firewall</a></li>
 					</ul>
 					</li>
 		<li><a href="ssh-hr.htm#ssh-x">SSH i Samba &#8658;</a>
@@ -215,21 +224,23 @@
 						  <li><a href="ssh-hr.htm#ssh">SSH i sigurnost</a></li>
 					</ul>
 					</li>
-		<li><a href="internet-connecting-hr.htm#netcardconfig">WIFI &#8658;</a>
+		<li><a href="inet-ceni-hr.htm#netcardconfig">WIFI &#8658;</a>
 						<ul class="sub2-menu" id="sm11d">
-						    <li><a href="internet-connecting-hr.htm#netcardconfig">Ulaz u Internet - Ceni</a></li>
+						    <li><a href="inet-ceni-hr.htm#netcardconfig">Ulaz u Internet - Ceni</a></li>
 						    <li><a href="inet-wpagui-hr.htm#wpa-roaming-gui">WiFi - WPA_GUI</a></li>
 						    <li><a href="inet-setup-hr.htm#net-set1">WiFi - postaviti za WiFi Roaming</a></li>
-						    <li><a href="internet-connecting-wpa-hr.htm#wpa">WiFi - wpasupplicant</a></li>
+						    <li><a href="inet-ceni-wpa-hr.htm#wpa">WiFi - wpasupplicant</a></li>
 						    <li><a href="inet-ifplug-hr.htm#hotswitch">Prebacivanje između WiFi i kabela</a></li>
 					</ul>
 					</li>
-		<li><a href="internet-connecting-hr.htm#netcardconfig">Ožičene veze &#8658;</a>
+		<li><a href="inet-ceni-hr.htm#netcardconfig">Ožičene veze &#8658;</a>
 						<ul class="sub2-menu" id="sm11e">
-						    <li><a href="internet-connecting-hr.htm#dial-mod">56k Modemi</a></li>
-						    <li><a href="internet-connecting-hr.htm#netcardconfig">Ulaz u internet - Ceni</a></li>
+						    <li><a href="inet-ceni-hr.htm#dial-mod">56k Modemi</a></li>
+						    <li><a href="inet-ceni-hr.htm#netcardconfig">Ulaz u internet - Ceni</a></li>
 					</ul>
 					</li>
+		<li><a href="nf-firm-hr.htm#fw-detect">Firmware detection - non-free </a></li>
+		<li><a href="nf-firm-hr.htm#non-free-firmware">Adding non-free to sources</a></li>
 				</ul>
 			    </li>
 <li  onmouseover="showHide( 12 );" onmouseout="startTime();" ><a href="sys-admin-apt-hr.htm">Paket menadžment i dist-upgrade</a>
@@ -274,6 +285,7 @@
 		<li><a href="sys-admin-gen-hr.htm#start-services">Services and init runlevels &#8658;</a>
 					<ul class="sub2-menu" id="sm13b">
 					    <li><a href="sys-admin-gen-hr.htm#start-services">Servise aktivirati/deaktivirati</a></li>
+					    <li><a href="sys-admin-gen-hr.htm#pkill">Killing a service or process</a></li>
 					    <li><a href="sys-admin-gen-hr.htm#init">aptosid runlevels - init</a></li>
 					</ul>
 					</li>
@@ -293,21 +305,40 @@
 					</li>
 		<li><a href="sys-admin-grub2-hr.htm#grub2">Grub2 &#8658;</a>
 					  <ul class="sub2-menu" id="sm13f">
-					    <li><a href="sys-admin-grub2-hr.htm#mbr-over-grub2">Grub2 - MBR Overwritten</a></li>
+					    <li><a href="sys-admin-grub2-hr.htm#chroot">Grub2 - Recovering Grub with chroot</a></li>
+					   <li><a href="sys-admin-grub2-hr.htm#mbr-over-grub2">Grub2 - MBR Overwritten</a></li>
 					    <li><a href="sys-admin-grub2-hr.htm#multi-os">Grub2 - Dual i Multibooting</a></li>
 					    <li><a href="sys-admin-grub2-hr.htm#grub1-grub2">Grub2 - Obnoviti iz Grub1</a></li>
 					    <li><a href="sys-admin-grub2-hr.htm#grub2">Grub2 - Pregled</a></li>
 					</ul>
-					</li>
-			</ul>
+				  </li>
+			    </ul>
 		</li>
-	</ul>
-<!-- menu ends here --> </div>
+<li><a></a></li>
+</ul>
+
+<div id="menu-header-5">
+<a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=8"><img src="../lib/logos/aptosid_donate_75.png" title="Donate" alt="Donate" /></a>
+</div>
+
+<ul>
+	<li  onmouseover="showHide( 15 );" onmouseout="startTime();" ><a href="http://webtropia.com">Sponsored by webtropia.com</a></li>
+</ul>
+
+<div id="menu-header-4">
+<a href="http://webtropia.com"><img src="http://manual.aptosid.com/lib/logos/webtropia-logo.png" title="aptosid is proudly hosted by webtropia.com" alt="aptosid is proudly hosted by webtropia.com" /></a>
+</div>
+
+<ul>
+<li><a></a></li>
+</ul>
+
+<!-- menu-hr ends here --> </div><!--/htdig_noindex-->
 <div id="main-page">
 	<div class="divider" id="wpa-basic">
 		<h2 id="top-header" >Basic Guide To Get Wireless Working - WiFi</h2>
 
-							<p class="highlight-3">Due to the complexity of law, aptosid will only provide dfsg-free software, <a href="hw-dev-hw-dri-hr.htm#non-free">please check this link for additional information on non-free sources for firmware</a></p>
+							<p class="highlight-3">Due to the complexity of law, aptosid will only provide dfsg-free software, <a href="nf-firm-hr.htm#non-free-firmware">please check this link for additional information on non-free sources for firmware</a></p>
 
 							<p>To get wlan WiFi working, you need a wired connection for just a few minutes to download the appropriate firmware.</p>
 
@@ -348,224 +379,225 @@ modprobe &lt;modulename&gt;
 </pre>
 
 
-							<p>Now start Ceni from K-Menu - Internet or run it from konsole as root with <a href="internet-connecting-hr.htm#netcardconfig">Getting Online - Ceni</a>. Your wireless WiFi device should be shown now and is ready to be configured.</p>
+							<p>Now start Ceni from K-Menu - Internet or run it from konsole as root with <a href="inet-ceni-hr.htm#netcardconfig">Getting Online - Ceni</a>. Your wireless WiFi device should be shown now and is ready to be configured.</p>
 
 							<p>To set up a Wlan WiFi GUI see <a href="inet-wpagui-hr.htm">WiFi - roaming WPA-GUI</a></p>
 	</div>
 	<div class="divider" id="wpa">
-		<h2>Moduse izvršavanja u wpa_supplicant za Debian</h2>
-							<p class="highlight-3">Zbog kompleksnosti zakona, aptosid samo nudi dfsg-free softver, <a href="hw-dev-hw-dri-hr.htm#non-free">molimo vas pogledajte ovdje za dodatne informacije o non-free sources za firmware</a></p>
+		<h2>Modes of Operation in wpasupplicant for Debian</h2>
 
-							<p>Debian wpa_supplicant paket nudi dva prikladna modusa izvršavanja koje su blizu integrirane na temeljnu infrastrukturu umrežavanja: ifupdown.</p>
+							<p class="highlight-3">Due to the complexity of law, aptosid will only provide dfsg-free software, <a href="nf-firm-hr.htm#non-free-firmware">please check this link for additional information on non-free sources for firmware</a></p>
 
-					<h4>Što je obuhvaćeno</h4>
+							<p>The Debian wpasupplicant package provides two (2) convenient modes of operation that are closely integrated to the core networking infrastructure; ifupdown.</p>
 
-						<h6>1.  Specificirati wpa_supplicant pogonitelj backend</h6>
-          						<p>* Tabla podržavanih pogonitelja<br />
-         						* Najčešće potrebe pogonitelja</p>
+			<h4>Whats Covered</h4>
 
-						<h6>2. Modus #1: Managed Modus</h6>
-          						<p>* Primjeri<br />
-          						* Tabla najčešćih opcija<br />
-          						* Važne bilješke o "Managed Modusu"<br />
-          						* Kako radi </p>
+					<!--<h6>1.  Specifying the wpa_supplicant driver backend</h6>
+          						<p>* Table of supported drivers<br />
+         						* Common Driver Recommendations </p>-->
 
-						<h6>3. Modus #2: Roaming Modus</h6>
+					<h6>2. Mode #1: Managed Mode</h6>
+          						<p>* Examples<br />
+          						* Table of Common Options<br />
+          						* Important Notes About Managed Mode<br />
+          						* How It Works </p>
+
+					<h6>3. Mode #2: Roaming Mode</h6>
           						<p>* wpa_supplicant.conf<br />
           						* /etc/network/interfaces<br />
-          						* Kontrolirati Roaming Demon s wpa_action<br />
-          						* Fine Tuning Roaming postavki<br />
-          						* Log-datoteka<br />
-          						* Koristiti vanjske "Mapping Scripts" (kao guessnet)<br />
-          						* /etc/network/interfaces s vanjskim mapping</p>
+          						* Controlling the Roaming Daemon with wpa_action<br />
+          						* Fine Tuning the Roaming Setup<br />
+          						* The Logfile<br />
+          						* Using External Mapping Scripts (e.g. guessnet)<br />
+          						* /etc/network/interfaces with external mapping</p>
 
-						<h6>4. Otkrivanje smetnji</h6>
-          						<p>* Sakriveni ssids</p>
+					<h6>4. Troubleshooting</h6>
+          						<p>* Hidden ssids</p>
 
-						<h6>5. Sagledavanje osiguranja</h6>
-          						<p>* Prava za config-datoteke</p>
+					<h6>5. Security Considerations</h6>
+          						<p>* Configuration File Permissions</p>
 
-		<h2>1. Specificirati wpa_supplicant pogonitelj backend</h2>
+			<!--<h2>1. Specifying the wpa_supplicant driver backend</h2>
 
-							<p>Wext pogonitelj backend biti će korišten za sve sučelje koje ne eksplicitno postave 'wpa-driver' na tip pogonitelja koji je potreban za taj uređaj. Korisnici linux  2.4 kernela, ili 2.6 kernela manjega nego 2.6.14 moraju specificirati tip wpa-pogonitelja.</p>
+							<p>The wext driver backend will be used for all interfaces that do not explicitly set 'wpa-driver' to the driver type required for that device. Users of linux  2.4 kernels, or 2.6 kernels less than 2.6.14 will be required to specify a wpa-driver type.</p>
 
 	</div>
-						<h3>Podržavani pogonitelji</h3>
+				<h3>Supported drivers</h3>
 	<div>
 		<table>
 			<tbody>
 				<tr>
-					<th>Pogonitelj</th>
-					<th>Opis</th>
+					<th>Driver</th>
+					<th>Description</th>
 				</tr>
 				<tr>
 					<td>wext</td>
-					<td>Linux wireless extensions (generički)</td>
+					<td>Linux wireless extensions (generic)</td>
 				</tr>
-
 			</tbody>
 		</table>
 	</div>
-
 	<div class="spacer05"></div>
-				<h3>Najčešće potrebe pogonitelja</h3>
+		<h3>Common Driver Recommendations</h3>
 
-							<p>Intel Pro Wireless adapteri (ipw2100, ipw2200 i ipw3945) svi koriste 'wext' backend, ako je vaš kernel stariji nego 2.6.14</p>
+							<p>The Intel Pro Wireless adapters (ipw2100, ipw2200 and ipw3945) all use the 'wext' backend, unless your kernel is older than 2.6.14</p>
 
-							<p>Madwifi podržava oboje 'wext' i 'madwifi' pogonitelj backend-ove. 'wext' je preporučen, kako god 'madwifi' možda, u nekim prilikama, bolje radi.</p>
+							<p>Madwifi supports both the 'wext' and 'madwifi' driver backends. 'wext' is preferred, however 'madwifi' may work better in some circumstances.</p>
 
-							<p>Ndiswrapper NE PODRŽAVA VIŠE 'ndiswrapper' pogonitelj backend od verzije 1.16. Zato morate koristiti 'wext' čim ne koristite antikno Ndiswrapper izdanje.</p>
+							<p>Ndiswrapper NO LONGER SUPPORTS the 'ndiswrapper' driver backend as of version 1.16. Therefore, 'wext' must be used unless you use an antiquated ndiswrapper release.</p>
 
-							<p>Postavite tip pogonitelja u "interfaces"(5) za vaš uređaj s 'wpa-driver' opcijom. Na primjer:</p>
+							<p>Set the driver type in the interfaces(5) stanza for your device with the 'wpa-driver' option. For example:</p>
 
 <pre>
 iface eth0 inet dhcp
 	wpa-driver wext
-	. . . . . više opcija
-</pre>
+	. . . . . more options
+</pre>-->
 
-			<h2>2. Modus #1: Managed Modus</h2>
+			<h2>2. Mode #1: Managed Mode</h2>
 
-							<p>Ovaj Modus nudi vam mogućnost da izvršite spoj via wpa_supplicant s poznatom mrežom. Slično radi kao wireless-tools paket. Svaki element koji je potreban da izvršite spoj via wpa_supplicant je dodan s 'wpa-' i sleđenom vrijednošću koja se koristi za taj element.</p>
+							<p>This mode provides the ability to establish a connection via wpa_supplicant to one known network. It is similar to how the wireless-tools package works. Each element required to establish the connection via wpa_supplicant is prefixed with 'wpa-' and followed by the value that will be used for that element.</p>
 
-						<h6>Primjeri za Modus #1 wpa.conf datoteku - Primjer 1.</h6>
+		<h6>Examples of a Mode #1 wpa.conf file - Example 1.</h6>
 <pre>
-Primjer za Modus #1 wpa.conf datoteku - Primjer 1.
-Zapamtite:'wpa-psk' vrijednost važi samo ako:
+Example of a Mode #1 wpa.conf file - Example 1.
+NOTE: the 'wpa-psk' value is only valid if:
 
-   1. To je niz s čistim tekstom (ascii) između 8 i 63 slova dugačak.
-   2. To je heksadecimalni niz s 64 slovima
+   1. It is a plaintext (ascii) string between 8 and 63 characters in length
+   2. It is a hexadecimal string of 64 characters
 
-# Spojite se s access pointom s ssid 'NETBEER' s tipom enkripcije
-# WPA-PSK/WPA2-PSK. On smatra da će pogonitelj
-# koristiti 'wext' pogonitelj backend wpa_supplicanta zato što wpa-driver nije specificiran.
-# Šifra je poslana kao ASCII niz (čisti tekst). DHCP je korišten da se dobije adresa za mrežu.
+# Connect to access point of ssid 'NETBEER' with an encryption type of
+# WPA-PSK/WPA2-PSK. It assumes the driver will use the 'wext' driver backend
+# of wpa_supplicant because no wpa-driver option has been specified.
+# The passphrase is given as a ASCII (plaintext) string. DHCP is used to
+# obtain a network address.
 #
 iface wlan0 inet dhcp
 
         wpa-ssid NETBEER
-        # Šifra s čistim tekstom
+        # plaintext passphrase
         wpa-psk PlainTextSecret
 
-# Spojite se s access pointom s ssid 'home-zone' s tipom enkripcije
-# WPA-PSK/WPA2-PSK, koristeći 'wext' pogonitelj backend wpa_supplicant.
-# Psk je poslan kao kodiran heksadecimalni niz. DHCP je korišten da se dobije adresa za Mrežu.
+# Connect to access point of ssid 'homezone' with an encryption type of
+# WPA-PSK/WPA2-PSK, using the 'wext' driver backend of wpa_supplicant.
+# The psk is given as an encoded hexadecimal string. DHCP is used to obtain
+# a network address.
 #
 iface wlan0 inet dhcp
+wpa-driver wext
+wpa-ssid homezone
+# hexadecimal psk is encoded from a plaintext passphrase
+wpa-psk 000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f
 
-        wpa-driver wext
-        wpa-ssid home-zone
-        # heksadecimalni psk je kodiran iz šifre s čistim tekstom
-        wpa-psk 000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1fNikakav
-
-# Spojite se s access pointom s ssid 'HotSpot1' i bssid '00:1a:2b:3c:4d:5e'
-# s tipom enkripcije WPA-PSK/WPA2-PSK, koristeći 'madwifi' pogonitelj
-# backend wpa_supplicanta. Šifra je poslana kao čisti tekst
-# Korištena je statična oznaka adresa za Mrežu.
+# Connect to access point of ssid 'HotSpot1' and bssid of '00:1a:2b:3c:4d:5e'
+# with an encryption type of WPA-PSK/WPA2-PSK, using the the 'madwifi' driver
+# backend of wpa_supplicant. The passphrase is given as a plaintext string.
+# A static network address assignment is used.
 #
 iface ath0 inet static
 
         wpa-driver madwifi
         wpa-ssid HotSpot1
         wpa-bssid 00:1a:2b:3c:4d:5e
-        # Šifra s čistim tekstom
+        # plaintext passphrase
         wpa-psk madhotspot
         wpa-key-mgmt WPA-PSK
         wpa-pairwise TKIP CCMP
         wpa-group TKIP CCMP
         wpa-proto WPA RSN
-        # statične ip postavke
+        # static ip settings
         address 192.168.0.100
         netmask 255.255.255.0
         network 192.168.0.0
         broadcast 192.168.0.255
         gateway 192.168.0.1
 
-# Od korisnika isporučena wpa_supplicant.conf , korištena je za eth1. Sve informacije o mreži
-# su sadržane u, od korisnika isporučenoj wpa_supplicant.conf. Nikakva vrsta wpa-pogonitelja
-# nije specificirana, tako da će se koristiti wext. DHCP je korišten da se dobije adresa za mrežu.
+# User supplied wpa_supplicant.conf is used for eth1. All network information
+# is contained within the user supplied wpa_supplicant.conf. No wpa-driver type
+# is specified, so wext is used. DHCP is used to obtain a network address.
 #
 iface eth1 inet dhcp
 
-wpa-conf /ath/to/wpa_supplicant.conf
+wpa-conf /path/to/wpa_supplicant.conf
 </pre>
-
 
 	<div class="divider" id="wpa1">
-		<h2>Tabla najčešćih opcija</h2>
+		<h2>Table of Common Options</h2>
 
-							<p>Kratak sadržaj o najčešćim 'wpa-' opcijama koje moraju biti korištene za wireless uređaj u /etc/network/interfaces. Pogledajte u sekciju 'Važne informacije o "Managed Modusu"' za Informacije o važećim i nevažećim 'wpa-' vrijednostima.</p>
+							<p>A brief summary of common 'wpa-' options that may be used in the /etc/network/interfaces stanza for a wireless device. See the 'Important Notes About Managed Mode' section for information about valid and invalid 'wpa-' values.</p>
 
-							<p class="highlight-2">Koristiti vanjske "Mapping Scripts" (kao guessnet) Bilješka: Kod SVIH vrijednosti morate paziti kako pišete: mALo ili vElIko</p>
+							<p class="highlight-2">NOTE: ALL values are CASE SeNsItVe</p>
 
 <pre>
-Element		Primjer Vrijednosti	Opis
+Element		Example Value		Description
 =======         =============           ===========
-wpa-ssid        niz s čistim tekstom    postavi ssid vaše mreže
-wpa-bssid       00:1a:2b:3c:4d:5e       bssid vašeg AP
-wpa-psk         0123456789......        vaš preshared wpa ključ. Koristite
-                                        wpa_passphrase(8) da generirate vaš psk
-                                        od šifre i ssid par
-wpa-key-mgmt    NONE, WPA-PSK, WPA-EAP, lista prihvaćenih provjerenih ključeva
-                IEEE8021X               menadžment protokoli
-wpa-group       CCMP, TKIP, WEP104,     lista prihvaćenih "group ciphers" za WPA
+wpa-ssid        plaintextstring         sets the ssid of your network
+wpa-bssid       00:1a:2b:3c:4d:5e       the bssid of your AP
+wpa-psk         0123456789......        your preshared wpa key. Use
+                                        wpa_passphrase(8) to generate your psk
+                                        from a passphrase and ssid pair
+wpa-key-mgmt    NONE, WPA-PSK, WPA-EAP, list of accepted authenticated key
+                IEEE8021X               management protocols
+wpa-group       CCMP, TKIP, WEP104,     list of accepted group ciphers for WPA
                 WEP40
-wpa-pairwise    CCMP, TKIP, NONE        lista prihvaćenih "pairwise ciphers" za
+wpa-pairwise    CCMP, TKIP, NONE        list of accepted pairwise ciphers for
                                         WPA
-wpa-auth-alg    OPEN, SHARED, LEAP      lista dopuštenih IEEE 802.11
-                                        provjernih algoritama
-wpa-proto       WPA, RSN                lista prihvaćenih protokola
-wpa-identity    myplaintextname         Korisničko ime pripremljeno od administratora
-                                        (EAP provjera)
-wpa-password    myplaintextpassword     vaša lozinka (EAP provjera)
-wpa-scan-ssid   0 ili 1                 prekidač za skeniranje ssids s specifičnim
-                                        "Probe Request frames"
-wpa-ap-scan     0 ili 1 ili 2           namjesti logiku za skeniranje
-                                        wpa_supplicanta
+wpa-auth-alg    OPEN, SHARED, LEAP      list of allowed IEEE 802.11
+                                        authentication algorithms
+wpa-proto       WPA, RSN                list of accepted protocols
+wpa-identity    myplaintextname         administrator provided username
+                                        (EAP authentication)
+wpa-password    myplaintextpassword     your password (EAP authentication)
+wpa-scan-ssid   0 or 1                  toggles scanning of ssid with specific
+                                        Probe Request frames
+wpa-ap-scan     0 or 1 or 2             adjusts the scanning logic of
+                                        wpa_supplicant
 
 </pre>
-							<p>Kompletna funkcionalnost wpa_cli(8) bi trebala biti implementirana. Sve što nemate, možete smatrati kao grešku i trebali bi da ga javite. Patches su uvijek dobrodošli.</p>
+							<p>The complete functionality of wpa_cli(8) should be implemented. Anything missing is considered a bug and should be reported as such. Patches are always welcome.</p>
 
-			<h2>Važne Informacije o Managed Modusu</h2>
 
-							<p>Skoro sve 'wpa-' opcije pretpostavljaju da je barem jedan ssid specificiran. Samo mali broj opcija ima globalni efekt. To su: 'wpa-ap-scan' i 'wpa-preauthenticate'.</p>
+			<h2>Important Notes About Managed Mode</h2>
 
-							<p>Svaka 'wpa-' opcija koja je upisana za Uređaj u interfaces(5) datoteku je dovoljna da upalite wpa_supplicant daemon.</p>
+							<p>Almost all 'wpa-' options require there is at least a ssid specified. Only a handful of options have a global effect. These are: 'wpa-ap-scan' and 'wpa-preauthenticate'.</p>
 
-							<p>Wpasupplicant ifupdown skript napravi pretpostavke o vrsti inputa koji je opravdan za svaku opciju. Na primjer, pretpostavlja da je neki input čisti tekst i obavi navodnice okolo inputa prije nego što ih pošalje dalje u wpa_cli, koji onda doda input u mrežni blok koji je formiran via wpa_supplicant ctrl_interface socket.</p>
+							<p>Any 'wpa-' option given for a device in the interfaces(5) file is sufficient to trigger the wpa_supplicant daemon into action.</p>
 
-							<p>Izvoditi ifup manualno(ručno) s '--verbose' opcijom će pokazati, sve naredbe koje su korištene da formirate Mrežni blok via wpa_cli. Ako je vrijednost koja je korištena za bilo koju wpa-* opciju u /etc/network/interfaces obuhvaćena s navodnicima, onda je pretpostavljena kao da je "čisti tekst" ili "ascii".</p>
+							<p>The wpasupplicant ifupdown script makes assumptions about the 'type' of input that is valid for each option. For example, it assumes that some input is plaintext and wraps quotation marks around the input before passing it on to wpa_cli, which then adds the input to the network block being formed via the wpa_supplicant ctrl_interface socket.</p>
 
-							<p>Poneki input je pretpostavljen da bude heksadecimalan niz (kao "wpa-wep-ključ*). Vrsta vrijednosti wpa-psk opcije, je potvrđena s jednostavnom kontrolom za više nego jedno heksadecimalno slovo.</p>
+							<p>Running ifup manually with the  '--verbose' option will reveal all of the commands used to form the network block via wpa_cli. If the value you used for any wpa-* option in /etc/network/interfaces is surrounded by double quotes, then it has been assumed to be of "plaintext" or "ascii" type input.</p>
 
-			<h2>Kako radi</h2>
+							<p>Some input is assumed to be a hexadecimal string (eg. wpa-wep-key*). The value 'type' of the wpa-psk option however, is determined via a simple check for more than one non hexadecimal character.</p>
 
-							<p>Kao što smo naveli prije, svaki specifični wpa_supplicant element je  s 'wpa-'. Svaki element korelira s jednim vlasništvom wpa_supplicanta koje je opisano u wpa_supplicant.conf(5), wpa_supplicant(8) i wpa_cli(8) manpages.</p>
+			<h2>How It Works</h2>
 
-							<p>Supplicant je startan, i bez ikakve pre-konfiguracije, i wpa_cli formira mrežnu konfiguraciju od inputa kojega dobije od 'wpa-*' niza. Početno, wpa_supplicant/wpa_cli ne postavi direktno svojstva uređaja (na primjer, kao postaviti essid s iwconfig), nego informira uređaj koji access point paše, da se može spojiti. Kad je uređaj jedan put skenirao okolinu, i našao access point koji je dostupan za korist, ta svojstva su postavljena.</p>
+							<p>As mentioned earlier, each wpa_supplicant specific element is prefixed with 'wpa-'. Each element correlates to a property of wpa_supplicant described in the wpa_supplicant.conf(5), wpa_supplicant(8) and wpa_cli(8) manpages.</p>
 
-							<p>Skript koji obavi cijeli posao će te naći pod:</p>
+							<p>The supplicant is launched without any pre-configuration whatsoever, and wpa_cli forms a network configuration from the input provided by the 'wpa-*' lines. Initially, wpa_supplicant/wpa_cli does not directly set the properties of the device (like setting an essid with iwconfig, for example), rather it informs the device of what access point is suitable to associate with. Once the device has scanned the area, and found that the suitable access point is available for use, these properties are set.</p>
+
+							<p>The script that does all the work is located at:</p>
 
 <pre>
 /etc/wpa_supplicant/ifupdown.sh
 /etc/wpa_supplicant/functions.sh
 </pre>
 
-							<p>ifupdown.sh: Izvedeno je od run-parts, koje su ubačene od ifupdown tijekom 'pre-up', 'pre-down' i 'post-down' faze.</p>
+							<p>ifupdown.sh is executed by run-parts, which in turn is invoked by ifupdown during the 'pre-up', 'pre-down' and 'post-down' phases.</p>
 
-							<p>U 'pre-up' fazi, wpa_supplicant daemon je ispaljen, slijeđen od serije wpa_cli naredbi koje postave Mrežnu konfiguraciju ovisno o 'wpa-' opcijama koje su korištene u /etc/network/interfaces za fizički Uređaj.</p>
 
-							<p>Ako je wpa-roam korišten, wpa_cli daemon je ispaljen u 'post-up' fazi.</p>
+							<p>In the 'pre-up' phase, a wpa_supplicant daemon is launched followed by a series of wpa_cli commands that set up a network configuration according to what 'wpa-' options were used in /etc/network/interfaces for the physical device.</p>
 
-							<p>U 'pre-down' fazi, wpa_cli daemon je ugašen, ako egzistira.</p>
+							<p>If wpa-roam is used, a wpa_cli daemon is lauched in the 'post-up' phase.</p>
 
-							<p>U 'post-down' fazi, wpa_supplicant daemon je ugašen.</p>
+							<p>In the 'pre-down' phase, the wpa_cli daemon is killed if it exists.</p>
 
-			<h2>3. Modus #2: Roaming Modus</h2>
+							<p>In the 'post-down' phase, the wpa_supplicant daemon is killed.</p>
 
-							<p>Jedan samostalan, jednostavan roaming mehanizam je ponuđen od tog paketa. U formi je kao wpa_cli action skript, /sbin/wpa_action, i pretpostavlja, ako je aktiviran, kontrolu za ifupdown. wpa_action(8) manpage opisuje dobro tehničke detalje.</p>
+			<h2>3. Mode #2: Roaming Mode</h2>
 
-							<p>Da aktivirate roaming interfaces, adaptirate sljedeće interfaces(5) postavke:</p>
+							<p>A self contained, simplistic roaming mechanism is provided by this package. It is in the form of a wpa_cli action script, /sbin/wpa_action, and it assumes control of ifupdown once activated. The wpa_action(8) manpage describes its technical details in great depth.</p>
+
+							<p>To activate a roaming interface, adapt the following example interfaces(5) stanza:</p>
 
 <pre>
 iface eth1 inet manual
@@ -573,32 +605,33 @@ iface eth1 inet manual
         wpa-roam /path/to/wpa_supplicant.conf
 </pre>
 
-							<p>Dva daemona su uvezana od tog primjera; wpa_supplicant i wpa_cli. Potrebno je da imate barem jednu wpa_supplicant.conf datoteku. Dobra točka za start je primjerska datoteka:</p>
-
+							<p>Two daemons are spawned from the above example; wpa_supplicant and wpa_cli. It is required to provide a wpa_supplicant.conf. A good starting point is provided by an example configuration file:</p>
 
 <pre>
- # kopirajte primjer u /etc/wpa_supplicant/
+ # copy the template to /etc/wpa_supplicant/
         cp /usr/share/doc/wpasupplicant/examples/wpa-roam.conf \
                 /etc/wpa_supplicant/wpa_supplicant.conf
-        # dopustite samo root korisniku da čita i piše u tu datoteku
+        # allow only root to read and write to file
         chmod 0600 /etc/wpa_supplicant/wpa_supplicant.conf
 
-BILJEŠKA: kritično ja, da korištena wpa_supplicant.conf definira lokaciju 'ctrl_interface' tako da je 'communication socket' kreiran za spoj za
-      wpa_cli (wpa-roam daemon). Namjenena primjerska konfiguracija,
-      /usr/share/doc/wpasupplicant/examples/wpa-roam.conf, ja postavljena na dobar standard.
+NOTE: it is critical that the used wpa_supplicant.conf defines the location of
+      the 'ctrl_interface' so that a communication socket is created for the
+      wpa_cli (wpa-roam daemon) to attach. The mentioned example configuration,
+      /usr/share/doc/wpasupplicant/examples/wpa-roam.conf, has been set to a
+      sane default.
 
 </pre>
 
 
-							<p>Potrebno je da tu datoteku za konfiguraciju editirate, i dodate Mrežne blokove za sve poznate Mreže. Ako ne znate što to znaci, početak je da pročitate wpa_supplicant.conf(5) manpage.</p>
+							<p>It is required to edit this configuration file, and add the network blocks for all known networks. If you do not understand what this means, start reading the wpa_supplicant.conf(5) manpage now.</p>
 
-							<p>Za svaku mrežu, možete specificirati specijalnu opciju 'id_str'. Trebala bi da se postavi na jednostavan niz teksta. Taj niz teksta  sastavi bazu za mrežni profil; korelira s logičnim interfaceima koje su definirane u interfaces(5) datoteci. Ako nemate 'id_str' za Mrežu , wpa_action pretpostavlja da treba koristiti 'default' logični interface kao fallback. Fallback interface možete izabrati s 'wpa-default-iface' opcijom.</p>
+							<p>For each network, you may specify a special option 'id_str'. It should be set to a simple text string. This text string forms the basis for network profiling; it correlates to a logical interface defined in the interfaces(5) file. When no 'id_str' is given for a network, wpa_action assumes it will use the 'default' logical interface as fallback. The fallback interface can be chosen via the 'wpa-default-iface' option.</p>
 
-							<p>Što to sad sve znači? Da vam ilustriramo sa malim primjerom sa wpa_action(8) manpage.</p>
+							<p>So what does all this mean? Lets illustrate it with a small example taken from the wpa_action(8) manpage.</p>
 
-						<h6>wpa_supplicant.conf primjer</h6>
+		<h6>wpa_supplicant.conf example</h6>
 <pre>
-wpa_supplicant.conf primjer:
+wpa_supplicant.conf example:
 network={
         ssid="foo"
         key_mgmt=NONE
@@ -622,11 +655,11 @@ network={
 
 	</div>
 	<div class="divider" id="wpa2">
-						<h6>/etc/network/interfaces primjer</h6>
+		<h6>/etc/network/interfaces example</h6>
 <pre>
-/etc/network/interfaces primjer:
-# roaming interface MORA koristiti manualnu inet metodu
-# 'allow-hotplug' ili 'auto' osigura da daemon može biti startovan automatski
+/etc/network/interfaces example:
+# the roaming interface MUST use the manual inet method
+# 'allow-hotplug' or 'auto' ensures the daemon starts automatically
 allow-hotplug eth1
 iface eth1 inet manual
 
@@ -634,7 +667,7 @@ iface eth1 inet manual
         wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf
 
 
-# nikakav id_str, 'default' je korišten kao "fallback mapping target"
+# no id_str, 'default' is used as the fallback mapping target
 iface default inet dhcp
 
 
@@ -652,55 +685,57 @@ iface home_static inet static
         gateway 192.168.0.1
 </pre>
 
-							<p>Logični interface je startovan via ifup, i ugašen via ifdown, kad se wpa_supplicant spoji ili prekine vezu s Mrežom sa kojom je povezan od 'id_str' opcije koja se koristi u wpa_supplicant.conf konfiguracijskoj datoteci.</p>
+							<p>A logical interface is brought up via ifup, and taken down via ifdown, as wpa_supplicant associates and de-associates with the network associated to it by the 'id_str' option used in the wpa_supplicant.conf configuration file.</p>
 
-							<p>Log od /sbin/wpa_action's aktivnostima je kreiran u /var/log/wpa_action.log, uvijek je prikačite kad imate problema.</p>
+							<p>A log of /sbin/wpa_action's actions is created at /var/log/wpa_action.log, please attach the log when reporting problems.</p>
 
-			<h2>Interagiranje wpa_supplicant sa wpa_cli i wpa_gui</h2>
+			<h2>Interacting with wpa_supplicant with wpa_cli and wpa_gui</h2>
 
-							<p>wpa_supplicant proces može da interagira s članovima "netdev" grupe ako koristite primjer sa roaming konfiguraciju kako je (ili od bilo koje grupe ili gid specificirano od GROUP= crtl_interface parametra).</p>
+							<p>The wpa_supplicant process can be interacted with by members of the "netdev" group if the example roaming configuration was used as is (or by whatever group or gid specified by the GROUP= crtl_interface parameter).</p>
 <pre>
-# standardna ctrl_interface opcija korištena u primjerskoj datoteci
+# the default ctrl_interface option used in the example file
 	# /usr/share/doc/wpasupplicant/examples/wpa-roam.conf
         ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 
-Ponuđeno vam je, da interagirate s supplicant, wpa_cli (naredbena crta) i wpa_gui (QT).
-S time možete se spojiti, odspojiti, dodati/izbrisati nove mrežne blokove, ponuditi potrebne interaktivne sigurnosne informacije i tako dalje.
+To interact with the supplicant, the wpa_cli (command line) and wpa_gui (QT)
+have been provided. With these you may connect, disconnect, add/delete new
+network blocks, provide required interactive security information and so on.
 </pre>
 
-		<h2>Kontrolirati Roaming Daemon s wpa_action</h2>
+			<h2>Controlling the Roaming Daemon with wpa_action</h2>
 
-							<p>Kad je roaming daemon izvođen, pretpostavlja kontrolu ifupdown. To znači; wpa_cli zove ifup kad se wpa_supplicant spoji s access pointom, i zove ifdown kad je veza prekinuta. Dok je roaming daemon aktivan, ne bi trebali kontrolirati ifupdown s manualnim naredbama, /sbin/wpa_action je isporučitelj koji zaustavi i ponovo startuje roaming daemon. Na primjer, da zaustavite roaming daemon na uređaju  'eth1':</p>
+							<p>Once the roaming daemon is started, it assumes control of ifupdown. That is; wpa_cli calls ifup when wpa_supplicant has successfully associated with an access point, and calls ifdown when the connection is lost or terminated. While the roaming daemon is active, ifupdown should not be controlled directly by manually issued commands, rather /sbin/wpa_action is supplied to stop and reload the roaming daemon. For example, to stop the romaing daemon on the device 'eth1':</p>
 
 <pre>
 wpa_action eth1 stop
 </pre>
 
-							<p>Ako je potrebno da aktualizirate roaming daemon s novim detaljima o Mreži, to možete obaviti bez zaustavljanja. Editirajte wpa_supplicant.conf datoteku koja je korištena od daemona s novim detaljima o Mreži, i dodate opcionalne postavke za mrežu u /etc/network/interfaces koje su specifične za novu mrežu (uvezana od 'id_str') i onda ponovo izvodite daemona:</p>
+
+							<p>When it is required to update the roaming daemon with  a new networks details, it can be done without stopping it. Edit the wpa_supplicant.conf file that is being used by the daemon with the new networks details, add optional network settings to /etc/network/interfaces that are specific to the new network (linked by the 'id_str') and then 'reload' the daemon like so:</p>
 
 <pre>
 wpa_action eth1 reload
 </pre>
 
-							<p>Za sve tehničke detalje, što se sve može obaviti s wpa_action, pročitajte wpa_action(8) manpage.</p>
+							<p>For the complete technical details of what wpa_action can do, read the wpa_action(8) manpage.</p>
 
-</div>
+	</div>
 	<div class="divider" id="wpa3">
-		<h2>Fine Tuning za Roaming Setup</h2>
+		<h2>Fine Tuning the Roaming Setup</h2>
 
-							<p>Ponekad imate situacije gdje su više access pointa blizu jedan do drugoga. Možete izabrati manualno koji vam je potreban, s wpa_cli ili wpa_gui, ili možete postaviti prioritet(Važnost) za svaku mrežu. To možete obaviti 'priority' opcijom u wpa_supplicant.conf.</p>
+							<p>You may face situations where multiple known access points are in close proximity. You can choose which one is preferred manually, with wpa_cli or wpa_gui, or you can give each network its own priority. This is provided by the 'priority' option of wpa_supplicant.conf.</p>
 
-</div>
+	</div>
 	<div class="divider" id="wpa4">
-		<h2>Log-datoteka</h2>
+		<h2>The Logfile</h2>
 
-							<p>Sve aktivitete roaming daemona su logirane u /var/log/wpa_action.log. Sljedeće informacije su logirane:</p>
+							<p>All activity of the roaming dameon is logged to /var/log/wpa_action.log. The following information is logged:</p>
 
-							<p>*vrijeme i datum<br />
-							*ime interfacea i vrsta akcije<br />
-							*vrijednosti okolnih varijabla (WPA_ID, WPA_ID_STR, WPA_CTRL_DIR)<br />
-							*ifupdown naredba izvođena<br />
-							*wpa_cli status (baziran na WPA-PSK, mreža možda pokazuje neke druge informacije)<br />
+							<p>*time and date<br />
+							*interface name and action event<br />
+							*values of enviromental variables (WPA_ID, WPA_ID_STR, WPA_CTRL_DIR)<br />
+							*ifupdown command executed<br />
+							*wpa_cli status (based on WPA-PSK, network may display different info)<br />
 							*bssid<br />
 							*ssid<br />
 							*id<br />
@@ -709,19 +744,19 @@ wpa_action eth1 reload
 							*group_cipher<br />
 							*key_mgmt<br />
 							*wpa_state<br />
-							*ip_addresa</p>
+							*ip_address</p>
 
 
 	</div>
 	<div class="divider" id="wpa5">
-		<h2>Koristiti vanjske "Mapping Skripts" (kao guessnet)</h2>
+		<h2>Using External Mapping Scripts (e.g. guessnet)</h2>
 
-							<p> Uz unutrašnji mapping logičnih interfacea via 'id_str', wpa_action može isto da izvodi vanjske mapping skripts. Mapping skript treba da vrati ime logičkog interfacea, koji treba da bude aktiviran.Svaki mapping skript koji radi s ifupdown mapping mehanizmom (pogledajte man interfaces) trebao bi isto da radi ako je pozvan od wpa_action.</p>
+							<p>In addition to the internal mapping of logical interfaces via 'id_str', wpa_action can call external mapping scripts. A mapping script should return the name of the logical interface which should be brought up. Any mapping script that works from ifupdowns mapping mechanism (see man interfaces) should also work when called from wpa_action.</p>
 
-							<p>Da pozovete mapping skript dodate liniju 'wpa-mapping-script ime-skripta' u interfaces strofu fizičkog roaming Uređaja. (Možda morate još specificirati apsolutni put do mapping skripta.)</p>
+							<p>To call a mapping script add a line 'wpa-mapping-script name-of-the-script' to  the interfaces stanza of the physical roaming device. (You may have to specify the absolute path to the mapping script.)</p>
 
 
-							<p>Sadržaje linije koje startaju s wpa-map su odmah poslane dalje na stdin mapping skripta. Iako ifupdown dopuštava samo jednu wpa-map liniju, možete ipak upisati dodatne linije s brojevima u wpa-map. Na primjer:</p>
+							<p>The contents of lines starting with wpa-map are passed to stdin of the mapping  script. Since ifupdown allows only one wpa-map line you can append any number to wpa-map for additional lines. For example:</p>
 
 <pre>
 iface wlan0 inet manual
@@ -731,17 +766,17 @@ iface wlan0 inet manual
         wpa-map0 home
         wpa-map1 work
         wpa-map2 school
-        # ... ekstra wpa-mapX linije su potrebne
+        # ... additional wpa-mapX lines as required
 </pre>
-							<p>Standardni mapping skript će samo biti korišten ako nemate aktiviran 'id_str' za važeću mrežu. Ako hoćete da kompletno deaktivirate 'id_str' matching i koristite samo vanjski mapping skript, koristite 'wpa-mapping-script-priority 1' opciju da blokirate standardno reagiranje.</p>
+							<p>By default the mapping script will only be used when no 'id_str' is available for the current network. If you want to completely disable 'id_str' matching and use only an external mapping script, use the 'wpa-mapping-script-priority 1' option to override default behaviour.</p>
 
-							<p>Ako mapping skript vrati prazan niz, wpa_action će se vratiti natrag i koristiti 'default' interface, dok god nema alternative koja je definirana s 'wpa-roam-default-iface' opcijom.</p>
+							<p>If the mapping script returns an empty string wpa_action will fallback to using the 'default' interface, unless an alternative is defined by the 'wpa-roam-default-iface' option.</p>
 
-							<p>Dolje vidite unaprijeđeni primjer, koristeći guessnet-ifupdown kao vanjski mapping skript.</p>
+							<p>Below is an advanced example, using guessnet-ifupdown as the external mapping script.</p>
 
-					<h6>Primjer za /etc/network/interfaces s vanjskim mapping</h6>
+					<h6>/etc/network/interfaces with external mapping example</h6>
 <pre>
-Primjer za /etc/network/interfaces s vanjskim mapping:
+/etc/network/interfaces with external mapping example:
 allow-hotplug wlan0
 iface wlan0 inet manual
 
@@ -754,7 +789,7 @@ iface wlan0 inet manual
         wpa-map1 work_static
 
 
-# school može samo biti izabrana via 'id_str' matching
+# school can only be chosen via 'id_str' matching
 iface school inet dhcp
 
         # resolvconf
@@ -786,50 +821,49 @@ iface default-guessnet inet dhcp
 iface default-wparoam inet dhcp
 </pre>
 
-							<p>U tom primjeru wpa_action koristi guessnet za selekciju pogodnog logičkog interfacea samo ako nije 'id_str' opcija opskrbljena za važeću mrežu u pripremljenoj wpa_supplicant.conf.</p>
+							<p>In this example wpa_action will use guessnet for the selection of a suitable logical interface only when no 'id_str' option has been provided for the current network in the provided wpa_supplicant.conf.</p>
 
-							<p>'Wpa-map' linije omogućavaju guessnet s logičnim interfaceima, koji je testiran isto kao i standardan interface koji treba da bude korišten iako svi testovi neuspjevaju. 'test' linije za svaki logički interface su korištene od guessneta da utvrdi, da li smo doista spojeni s tom mrežom. Na primjer, guessnet će izabrati logički interface 'home_static' ako postoji jedan uređaj s IP adresom 192.168.0.1 i MAC 00:01:02:03:04:05 na sadašnjom Mrežom. Ako svi testovi ne uspijevaju, 'default-guessnet' interface će biti konfiguriran.</p>
+							<p>The 'wpa-map' lines provide guessnet with the logical interfaces that are to be tested as well as the default interface to be used when all tests fail. The 'test' lines of each logical interface are used by guessnet to determine if we are actually connected to that network. For instance, guessnet will choose the logical interface 'home_static' if there's a device with an IP address of 192.168.0.1 and MAC of 00:01:02:03:04:05 on the current network. If all tests fail, the 'default-guessnet' interface will be configured.</p>
 
-							<p>Molimo vas, pročitajte guessnet(8) manpage da dobijete više Informacija.</p>
 
-			<h2>4. Otkrivanje smetnji</h2>
+							<p>Please, read the guessnet(8) manpage for more information.</p>
 
-							<p>Da debugirate spoj, udruživanje i problemi s provjerom autentičnosti, preporučujemo da startujete`wpa_cli -i &lt;interface&gt;` u drugoj konzoli, prije nego što startujete interface. Koristite kao prvu naredbu 'level 0' , da dobijete sve debug poruke. Onda koristite `ifup --verbose &lt;interface&gt;` da dobijete detaljirane poruke od skripta koji startuje wpasupplicant.</p>
+			<h2>4. Troubleshooting</h2>
 
+							<p>In order to debug connection, association and authentication problems, we suggest starting `wpa_cli -i &lt;interface&gt;` in a different shell, before starting the interface. Use the command 'level 0' first, to get all debug messages. Then use `ifup --verbose &lt;interface&gt;` to get verbose debug messages from the script starting wpasupplicant.</p>
+	</div>
 	<div class="divider" id="wpa6">
-		<h2>Sakriveni ssids</h2>
+		<h2>Hidden ssids</h2>
 
-							<p>Za odnos, pogledajte #358137. Da biste mogli udruživali s sakrivenim ssids, molimo vas pokušajte postaviti opciju 'ap_scan=1' u globalnoj sekciji, i 'scan_ssid=1' u vašu mrežni blok sekciju vaše wpa_supplicant.conf datoteke. Ako koristite managed modus, možete to obaviti s ovim strofama:</p>
+							<p>For reference, see #358137. In order to be able to associate to hidden ssids, please try to set the option 'ap_scan=1' in the global section, and  'scan_ssid=1' in your network block section of your wpa_supplicant.conf file. If you are using the managed mode, you can do so by these stanzas:</p>
 
 <pre>
 iface eth1 inet dhcp
 wpa-conf managed
 wpa-ap-scan 1
 wpa-scan-ssid 1
-# ... više opcija za vaše postavke
+# additional options for your setup
 </pre>
 
-							<p>Odnosna na #368770, udruživanje s WEP osiguranim Mrežama može da traje dugo vremena. U nekim slučajevima, kad postavite parametar 'ap_scan=2' u config-datoteci, (ili koristite 'wpa-ap-scan 2' strofu, što je isto) može vam stvarno pomoći da ubrzate udruživanje.</p>
+							<p>According to #368770, association can take a very long time to associate to WEP  secured networks. In some cases, setting the parameter 'ap_scan=2' in the config file, (or using a 'wpa-ap-scan 2' stanza, which is equivalent) can greatly help to speed up association.</p>
 
- 							<p>Zapamtite da ap_scan na vrijednost od 2 isto zahtijeva da sve mreže imaju točno definiranu policu osiguranja za key_mgmt, pairwise, group and proto mrežne police varijable.</p>
+ 							<p>Please note that setting ap_scan to the value of 2 also requires that all networks have a precisely defined security policy for for key_mgmt, pairwise, group and proto network policy variables.</p>
 
+	</div>
 	<div class="divider" id="wpa7">
-			<h2>5. Sagledavanje osiguranja</h2>
-					<h5>Prava za config-datoteke</h5>
-						<p>Važno da držite PSK's i druge važne informacije u odnosu na vaše Mrežne postavke privatno, da osigurate da važne config-datoteke koje sadržavaju takve informacije, da samo vlasnik može da pročita. Na primjer:</p>
+		<h2>5. Security Considerations</h2>
+				<h5>Configuration of File Permissions</h5>
+							<p>It is important to keep PSK's and other sensitive information concerning your network settings private, therefore ensure that important configuration files containing such data are only readable by their owner. For example:</p>
 
 <pre>
 chmod 0600 /etc/network/interfaces
-# promijenite put do vaše wpa_supplicant.conf datoteke
+# substitute the path of your wpa_supplicant.conf file
 chmod 0600 /etc/wpa_supplicant/wpa_supplicant.conf
 </pre>
-						<p>Standardno, svako može da pročita /etc/network/interfaces, i zato nije preporučeno da je koristite za memoriranje tajnih ključeva i lozinki.</p>
-
+							<p>By default, /etc/network/interfaces is world readable, and thus unsuitable for containing secret keys and passwords.</p>
 
 	</div>
-
-			<div id="rev"> Content last revised 14/08/2010 0100 UTC</div>
-</div>
+		<div id="rev">Page last revised last revised 14/08/2010 0100 UTC</div>
 </div>
 </div>
 </body>
