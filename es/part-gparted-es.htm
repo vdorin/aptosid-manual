@@ -350,23 +350,23 @@
 				<h3>Prólogo</h3>
 							<p>Una partición tiene que tener un sistema de archivos. Linux sabe cómo usar varios sistemas de archivos. Ext4 es el formato recomendado por aptosid. Ext2 es útil como un formato de almacenamiento puesto que hay un intérprete (driver) disponible para MS Windows&#8482; para intercambiar datos. [Linux puede leer y escribir en sistemas FAT.] <a href="http://www.fs-driver.org/">Sistema de ficheros instalable Ext2 para MS Windows</a>.</p>
 
-							<p  class="highlight-2">Para uso normal, recomendamos el sistema de archivos ext4, que es el sistema de archivos pre-seleccionado por aptosid y es bien mantenido.</p>
+							<p  class="highlight-2">Para uso normal, recomendamos el sistema de archivos ext4, que es el sistema de archivos pre-seleccionado por aptosid y está bien mantenido.</p>
 
 		<h2>Uso de KDE Partition Manager &amp; Gparted</h2>
-							<p>El crear y manipular particiones no es algo que se haga normalmente cada día. Por ello es buena idea leer esta guía al menos una vez para conocer los conceptos y algunos de los paneles  que aparecerán.<span class="highlight-3"> The following assumes that you are using a live-iso . Should you be hard disk installed &lt;sudo&gt; will not work, refer to <a href="term-konsole-es.htm#sux"> About Xapps whilst in X as root</a> </span>.</p>
+							<p>El crear y manipular particiones no es algo que se haga normalmente cada día. Por ello es buena idea leer esta guía al menos una vez para conocer los conceptos y algunos de los paneles  que aparecerán.<span class="highlight-3"> Lo que sigue da por supuesto que se está usando un live-iso. Si el sistema está instalado en el disco duro &lt;sudo&gt; no funcionará, vea <a href="term-konsole-es.htm#sux"> sobre Xapps mientras esté en X como superusuario</a> </span>.</p>
 
-						  <h3>KDE Partition Manager, if installed on the live-iso - run in a terminal:</h3>
+						  <h3>KDE Partition Manager, si está instalado en el live-iso - en una terminal:</h3>
 <pre>
 sudo partitionmanager
 </pre>
 
-						  <h3>Gparted, if installed on the live-so - run in a terminal:</h3>
+						  <h3>Gparted, si está instalado en el live-iso - en una terminal:</h3>
 <pre>
 sudo gparted
 </pre>
-							<h5  class="highlight-3">Whilst somewhat obscured within the menu choices, gparted will let you see GPT disks.</h5>
+							<h5  class="highlight-3">Si bien no está muy claro en las opciones de menú, gparted le permitirá ver los discos GPT.</h5>
 
-							<h4  class="highlight-2">If you need to partition a USB drive, (or SD and SDXC cards), whilst hard disk installed you will need to adjust your commands to include root using Xapps. Refer to <a href="term-konsole-es.htm#sux"> About Xapps whilst in X as root </a> else use the commandline tools <a href=" part-cfdisk-es.htm"> cfdisk</a> or <a href=" part-gdisk-es.htm"> gdisk</a>.</h4>
+							<h4  class="highlight-2">Si necesita hacer una partición en un disco USB, (o tarjetas SD y SDXC), mientras que el sistema esté instalado en el disco duro, necesitará ajustar sus órdenes para incluir Xapps como root. Vea <a href="term-konsole-es.htm#sux"> sobre Xapps mientras esté en X como superusuario </a> o bien use las herramientas de línea de órdenes <a href=" part-cfdisk-es.htm"> cfdisk</a> o <a href=" part-gdisk-es.htm"> gdisk</a>.</h4>
 
 							&nbsp;
 		<ul>
