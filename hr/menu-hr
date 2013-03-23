@@ -1,6 +1,6 @@
-<div id="menu"> <!-- menu starts here hr lang maintainer cobra -->
+<!--htdig_noindex--> <div id="menu"> <!-- menu starts here hr lang maintained by vibora-->
 <!--aptosid Operating System Manual menu-version-02.15.2013.01.10 -->
-<!-- menu last translated by vibora 2013.03.23 1145 hrs UTC -->
+<!-- menu last updated by bluewater 2013.01.10 0910 hrs UTC,  translated by vibora 2013.03.23 1145 hrs UTC-->
 <ul>
 <li></li>
 <li><a></a></li>
@@ -159,17 +159,17 @@
 			  <li><a href="nf-firm-hr.htm#non-free-firmware">Dodati  non-free u sources</a></li>
 		</ul>
 		</li>
-<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-kde-hr.htm">Window-Menadžer</a><ul class="sub-menu" id="sm9">
-			  <li><a href="wm-kde-hr.htm">KDE i XFCE Window-Menadžeri &#8658;</a>
+<li  onmouseover="showHide( 9 );" onmouseout="startTime();" ><a href="wm-dm-hr.htm">Window-Menadžer</a><ul class="sub-menu" id="sm9">
+			  <li><a href="wm-dm-hr.htm">KDE i XFCE Window-Menadžeri &#8658;</a>
 					  <ul class="sub2-menu" id="sm9a">
-					    <li><a href="wm-xfce-hr.htm#xfce-notes">Korisni Xfce ekstra</a></li>
-					    <li><a href="wm-kde-hr.htm#install-add">Korisne ekstra KDE aplikacije</a></li>
-					    <li><a href="wm-kde-hr.htm#kde-login">Ne mogu se prijaviti u KDE</a></li>
-					    <li><a href="wm-kde-hr.htm#ch-th">Promjeni temu</a></li>
-					    <li><a href="wm-kde-hr.htm#desk-freeze">Desktop je smrznut</a></li>
+					    <li><a href="wm-dm-hr.htm#xfce-notes">Korisni Xfce ekstra</a></li>
+					    <li><a href="wm-dm-hr.htm#install-add">Korisne ekstra KDE aplikacije</a></li>
+					    <li><a href="wm-dm-hr.htm#kde-login">Ne mogu se prijaviti u KDE</a></li>
+					    <li><a href="wm-dm-hr.htm#ch-th">Promjeni temu</a></li>
+					    <li><a href="wm-dm-hr.htm#desk-freeze">Desktop je smrznut</a></li>
 					</ul>
 					</li>
-		      <li><a href="wm-kde-hr.htm#dm">Kako instalirati dodatne Display Menadžere - dm</a></li>
+		      <li><a href="wm-dm-hr.htm#dm">Kako instalirati dodatne Display Menadžere - dm</a></li>
 		</ul>
 		</li>
 <li  onmouseover="showHide( 11 );" onmouseout="startTime();" ><a href="inet-ceni-hr.htm">Internet, WiFi, LAN i umrežavanje</a>
