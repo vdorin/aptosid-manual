@@ -17,7 +17,7 @@
         <![endif]-->
 </head>
 <body>
-<!-- Last translation revision polix 03/03/2012 0100 UTC -->
+<!-- Last translation revision polix 23/03/2012 0100 UTC -->
 <!--htdig_noindex--><div id="menu"> <!-- menu starts here - ua language maintained by polix -->
 <!--aptosid Operating System Manual menu-version-02.15.2013.01.10 -->
 <!-- menu last updated by bluewater 2013.01.10 0910 hrs UTC -->
@@ -449,12 +449,12 @@
 					<li>kvm (Kernel-based Virtual Machine) KDE-full варіанту; kvm залежить від апаратною підтримкою віртуалізації (AMD розширень віртуалізації pacifica 'svm' або Intel IVT (vanderpool) розширень віртуалізації 'vmx')</li>
 					<li>access point підтримка для багатьох на mac80211 базуючих WLAN-карт через nl80211 та hostapd (як опція).</li>
 					<li>client підтримка для загрузкі через сіть за допомогою PXE/ NBD.</li>
-					<li>ASPM refinements to improve system stability and battery runtime for mobile devices.</li>
-					<li>Підтримка для the 3rd generation Bamboo Pen and Touch tablets.</li>
+					<li>ASPM уточнення для підвищення стабільності системи і батарей для мобільних пристроїв.</li>
+					<li>Підтримка для трете покоління Bamboo Pen та тач-теблетів.</li>
 					<li>Переключення від module-init-tools до kmod.</li>
 					<li>Підтримка для ACPI 5.0.</li>
 					<li>Open vSwitch підтримка для віртуальні мережі з комутацією.</li>
-					<li>пПоліпшення'buffer bloat'.</li>
+					<li>Поліпшення'buffer bloat'.</li>
 					<li>BCM57766 підтримка для tg3.</li>
 					<li>Основна FireWire Target Disk Mode підтримка була портована на Linux' sbp-2.</li>
 				</ul>
@@ -462,15 +462,15 @@
 		<div class="divider" id="faq">
 			<h2>Часті питання</h2>
 
-				<h3>Iнсталляцiя</h3>
+				<h3>Установка</h3>
 				<p>
 
-					<b>Рекомендується встановити клавіатурні розкладки, мову і часовий пояс перед завантаженням live-системи,вибираючи їх з меню завантаження [F2], [F3].</b>
+					<b>Рекомендується встановити клавіатурні розкладки, мову і часовий пояс перед завантаженням aptosid-live-CD aбо DVD,вибираючи їх з меню завантаження [F2], [F3].</b>
 					Таким чином, регіональні налаштування поширюються на всі необхідні місця у встановленій системі і не вимагають громіздких змін у декількох місцях.
 				</p>
 
 				<p>
-					Слід віддати перевагу на 'amd64' та його сучасного обладнанні підтримки.
+					Слід віддати перевагу на 'amd64'-реліз та його сучасні обладнанні підтримки.
 				</p>
 
 			<h3>Kernel based Mode Setting (KMS) та cirrus-drm/ intel/ matrox/ nvidia/ radeon графічні-карти</h3>
@@ -491,68 +491,68 @@
 
 				<h3>grub2</h3>
 				<p>
-					While grub2 offers increased flexibility for installations, like UEFI support (optional), new filesystems (ext4) or advanced installation options like software RAID (mdadm), LVM2 and improved detection capabilities for other distributions and operating systems, it is limited to a textmode menu.
-					A new theming effort is currently under development and may become available in the future.<br />
+					У той час як grub2 забезпечує підвищену гнучкість для установки, як наприклад UEFI підтримку (опція), нові файлові системи (ext4) або додаткові опції установки як програмне забезпечення до RAID (MDADM),LVM2 і поліпшені можливості виявлення для інших дистрибутивів і операційних систем, вона обмежена в меню в текстовому режимі.
+					Тематизації нових зусиль в даний час у стадії розробки і можуть стати доступними в майбутньому.<br />
 					
-					Even though підтримка для plain wallpapers would be already supported by grub2, it is still fragile and prolongs the system boot.<br />
+					Навіть якщо існує на даний момент проста шпалери яка уже підтримується grub2, це все ще крихке і подовжує завантаження системи.<br />
 
-					Internally the configuration system for grub2 uses scripts snippets under /etc/grub.d/ to create its configuration file 'grub.cfg' in a way that allows many self updating features, such as automating fromiso support with the help of 'grub2-fll-fromiso' (optional).
+					Внутрішня конфігурація системи для grub2 використовує скрипти і помістивши його /etc/grub.d/ створує "grub.cfg" та його конфігураційний файл таким чином, що дозволяє собі багато поновлення функцій, таких як автоматизація fromiso підтримки за допомогою 'grub2-fll-fromiso (опціонально).
 				</p>
 
 		<h3>isohybrid</h3>
 				<p>
-					With isolinux supporting gfxboot, it is possible to use isohybrid, which allows writing an ISO directly to USB storage or sd/ sdhc/ mmc memory sticks to make these bootable.<br />
-					isohybrid adds an MBR to the ISO and sets up a partition table with one active entry, the partition containing the ISO.<br />
-					This allows writing aptosid ISOs directly to USB storage devices of sdhc memory карт in addition to the well known possibility of using 'install-aptosid-to-usb' (install-usb-gui).<br />
-					This option is particularly useful if there is no existing aptosid installation available and if an installation medium needs to be created from another distribution or operating system.<br />
-					It is important to note that this method overwrites the whole USB medium and restricts the available storage to the size of the aptosid ISO; install-usb-gui is not subject to these limitations and therefore the recommended option in case an existing aptosid system is available.<br />
-					Further partitions can be added to allow access to the unused part of the storage device.
+					З isolinux-підтримкoю gfxboot, можна використовувати isohybrid, яка дозволяє записувати ISO-образи безпосередньо до USB-флешкi або SD / SDHC / MMC карт пам'яті, щоб зробити їх завантажувальними.<br />
+					isohybrid додає MBR в ISO і встановлює таблицю розділів на один активний елемент розділу що містить ISO.<br />
+					Це дозволяє записувати aptosid ISO-образи безпосередньо на USB-флешкi разом з даними з пам'яті SDHC карт на додаток до відомої можливості використання функції 'install-aptosid-to-usb' (install-usb-gui).<br />
+					Ця опція особливо корисна, якщо немає існуючої для aptosid установки, і якщо установка середовища повиннна бути створена з іншого дистрибутива або операційної системи.<br />
+					Важливо відзначити, що цей метод замінює цілу пам'ять USB-флешкi і обмежує наявні сховища в розмірі aptosid ISO; установка на USB-інтерфейс не підпадає під дію цих обмежень, і є тому самий рекомендований варіант у випадку, якщо існуюча aptosid система доступна.<br />
+					Подальші розділи можуть бути додані для забезпечення доступу до невикористанних частин пристроїв зберігання даних.
 				</p>
 <pre>
 $cat /path/to/aptosid-*.iso &gt; /dev/USB_raw_device_node
 </pre>
 
 				<p>
-					Further information about the aptosid install is available from the <a href="http://manual.aptosid.com/">aptosid manual</a> at <a href="http://manual.aptosid.com/en/hd-install-en.htm">Installation options</a>.
+					Більш докладну інформацію про aptosid установки можна отримати в <a href="http://manual.aptosid.com/">керівництві aptosid </a> на сторінці <a href="http://manual.aptosid.com/en/hd-install-en.htm">Варіанти установки</a>.
 				</p>
 
-		<h3>Wireless regulatory domain settings</h3>
+		<h3>Бездротові налаштування нормативного домену</h3>
 				<p>
 
-					The regulatory domain framework for cfg80211 based WLAN-карт requires crda to allow access to wireless channels above ch11 (2.4 GHz or their 5 GHz equivalents), without crda only the "world domain" (channel 1-11) is available.
+					Нормативний налаштувач домену для cfg80211 based WLAN-карт вимагає crda для забезпечення доступу до бездротових каналах вище ch11 (2.4 GHz або 5 GHz еквівалентів), без crda доступний тільки "world domain" (channel 1-11).
 				</p>
 <pre>
 apt-get update 
 apt-get install crda
 </pre>
-		<h3>Network booting aptosid</h3>
+		<h3>Завантаження aptosid по мережі </h3>
 				<p>
-					Network booting aptosid over PXE (Preboot Execution Environment) and NBD (Network Block Device) is supported, the required settings can be configured from within the boot menu [F4].
-					Instructions about how to set up an example PXE+NBD boot server can be obtained at <a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=9">aptosid netboot introduction</a> and in the manual; <a href="nbdboot-en.htm#nbd1">Booting aptosid over a network</a>.
+					Мережеве завантаження aptosid через PXE (Preboot Execution Environment) та NBD (Network Block Device) підтримується, необхідні параметри можна налаштувати зсередини меню завантаження [F4].
+					Інструкції про те, як встановити приклад до PXE+NBD серверу завантаження можна отримати на <a href="http://aptosid.com/index.php?module=Content&amp;func=view&amp;pid=9">aptosid netboot introduction</a> та на сторінці керівництва; <a href="nbdboot-en.htm#nbd1">Завантаження aptosid по мережі</a>.
 				</p>
 
-				<h3>UEFI booting</h3>
+				<h3>Завантаження через UEFI</h3>
 				<p>
-					Preliminary підтримка для booting with UEFI has been added to the amd64 editions.
-					While the installer GUI has not been finalised yet, the bootloader will be an EFI program installed to /efi/aptosid within your 'EFI system partition' and mounted below /boot/efi/ on your installed system, provided the following conditions are met:
+					Попередна підтримка для завантаження з UEFI була додана в amd64 видань.
+					У той час як розроблення програми для установки (aptosid-installer GUI) до кінця не дороблено, завантажувачом буде EFI-програма, яка встановлена ​​на /efi/aptosid у вашому EFI-розділу системи і встановлена нижче /boot/efi/ на Вашій встановлений системі при дотриманні наступних умов:
 				</p>
 
 				<ul>
-					<li>x86-64/ EM64T system (amd64).</li>
-					<li>booted using UEFI, this is apparent from the plain white/blue grub2 menu, instead of the usual graphical boot menu provided by isolinux for BIOS booting, on the live medium.</li>
-					<li>a vfat formatted EFI system partition on a GPT disk (type EF00) exists on the target system.</li>
-					<li>the install target is not a USB disk.</li>
+					<li>Система x86-64/ EM64T (amd64).</li>
+					<li>Система завантажена з UEFI, це очевидно з простого білого/блакитного меню grub2, замість звичайного графічного меню завантаження надаються для BIOS завантаження через aptosid-live-CD aбо DVD.</li>
+					<li>Відформатована система з системою vfat та EFI-системний розділ на диску GPT (type EF00) існує на цільовій системі.</li>
+					<li>Мета установки не є USB-флешка</li>
 				</ul>
 
 				<p>
-					At the moment aptosid only offers UEFI booting for its 64 bit edition (amd64), 32 bit UEFI (such as older Apple systems) is currently not supported.
-					Multiboot with other 64 bit operating systems should be possible, but could not be tested yet.
+					На даний момент aptosid тільки пропонує завантаження через UEFI для 64-бітної системи (amd64), 32-бітна версія UEFI (як наприклад застаріли системи Apple) в даний час не підтримується.
+					Мультизавантаження з іншими 64-бітними операційними системами  має бути можливою, але не була ще провірена.
 				</p>
 
-				<h3>UEFI bootable removable devices</h3>
+				<h3>UEFI завантажувальни знімні пристрої</h3>
 				<p>
-					In order to create a UEFI bootable device, such as a USB stick, the contents of the aptosid ISO can be extracted to a vfat formatted partition and the partition marked as bootable.
-					Optionally this removable medium can also be made compatible with PC-BIOS booting by installing a traditional bootsector in addition to the EFI bootloader (assuming /dev/sdz1 to be the target partition on the USB stick).
+					Для того щоб створити UEFI завантажувальний пристрій, такі як наприклад USB-модем, зміст aptosid ISO можуть бути вилучений в відформатований розділ зі системою vfat і розділ позначений як завантажувальний.
+					При необхідності цей знімний носій може також бути сумісним з BIOS-завантаження за допомогою установки традиційного завантажувального сектора на додаток до EFI завантажувача (За умовою що / dev/sdz1 буде цільовим розділом на USB-флешці).
 				</p>
 
 <pre>
@@ -568,10 +568,10 @@ install-mbr /dev/sdz
 
 				<h3>Локалізація</h3>
 				<p>
-					A special feature of kde-full releases is the ability to select other languages than German or US English from the grub menu (F4), which automatically installs localisations for the desktop and many applications while booting.
-					This ensures they are also present after installing aptosid, while only installing the required languages for the given system.
-					The amount of memory required for this feature depends on the language and aptosid may refuse to install the given language packs automatically with insufficient RAM and the boot sequence  will be continued in english language but with the desired locales-settings (currency, date/ time format, keyboard charsets).
-					1 GB memory or more is supposed to be safe for all supported languages, which are:
+					Особливістю KDE-релізу повному є можливість вибрати інші мови, ніж німецьку чи (американську) англійську через меню GRUB (F2), яка автоматично встановлює локалізацій для робочого столу і багато додатків при завантаженні.
+					Це гарантує, що вони присутні також після установки aptosid для даної системи.
+					Обсяг пам'яті, необхідний для цієї функції залежить від мови та aptosid може автоматично відмовитися від установки даної мови з недостатньою оперативної пам'яті і послідовністі завантаження буде продовжена на англійській мові. але потрібнi налаштування як наприклад зона часу або розлад клавіатури будуть налаштувані.
+					Ми рекомендуємо 1 ГБ робочої пам'яті щоби мати гарантію на завантаження тих мов:
 				</p>
 
 				<ul>
@@ -593,8 +593,8 @@ install-mbr /dev/sdz
 
 				<p>
 
-					The language selection depends on the availability of aptosid-manual translations, get involved to add your language.
-					Levels of up-to-date translation completeness of the following languages has dropped below the quorum for inclusion at this moment:
+					Вибір мови залежить від наявності перекладу на цю мову нашого керівництва, будь ласка доможіть нам, щоби додати Вашу рідну мову до нашого керівництва.
+					На даний момент деякі мови недостатно перекладані іі вони не будуть опубліковані на www.aptosid.com/manual поки вони не переведені до кінця:
 				</p>
 
 				<ul>
@@ -605,52 +605,53 @@ install-mbr /dev/sdz
 				</ul>
 
 				<p>
-					Additional help is urgently needed for these languages to bring the translations up to date for the language concerned.
+					Додаткова допомога необхідна для цих мов щоби довести до перекладу на сьогоднішній день щоб ці мови були додані до меню F2 та до www.aptosid.com/manual.
+					
 				</p>
 
 
 	</div>
 	<div class="divider" id="upgrade">
-			<h2>Hints for Upgraders:</h2>
+			<h2>Поради для збагачення:</h2>
 				<p>
-					aptosid tries hard to provide seamless upgrade path for debian and aptosid' own packages, nevertheless a few things remain that could be improved with manual interaction.
+					aptosid намагається забезпечити плавні поновлення для Debian і aptosid власних пакетів, тим не менш деякі речі залишаються, що можуть бути покращені з керівництвом aptosid.
 				</p>
 
-		      <h3>Obsolete packages</h3>
+		      <h3>Застарілі пакети</h3>
 				<p>
-					As part of the continuing development of aptosid, a number of packages have been replaced by better alternatives or become redundant.
+					У рамках подальшого розвитку aptosid, число пакетів були замінені на більш ефективні альтернативи або стають зайвими.
 				</p>
 
 				<p>
-					Transitional packages and obsolete libraries can often be identified by &quot;deborphan&quot;.
-					While this tool is very convenient for ongoing system cleanup, its results should always be checked before using it as input for removals.
+					Перехідні пакети і застарілі бібліотеки часто можуть бути визначені за допомогою &quot;deborphan&quot;.
+					Хоча цей інструмент дуже зручний для поточної очистки системи, її результати завжди повинні бути перевірені перед використанням його в якості вхідних даних для видалення.
 				</p>
 
 <pre>
 $ deborphan
 </pre>
 
-							<p>The following command is able to find packages not available from any active apt repository and may hint at obsolete packages, be careful about manually installed packages though. apt-show-versions is a separate package and isn't necessarily preinstalled. </p>
+							<p>Наступна команда може знайти не доступні пакети з будь-якого активного apt-сховища і може натякати на застарілі пакети, будьте обережні при вручну встановлених пакетах, хоча команда "apt-cache show version" є окремим пакетом і не є обов'язково передвстановленим.</p>
 
 <pre>
 $ apt-show-versions | awk '/No available version in archive/{print $1}'
 </pre>
 			</div>
 			<div class="divider" id="howto-involve">
-				<h2>How to get involved</h2>
+				<h2>Як взяти участь у нашіх команді aptosid</h2>
 				<p>
-					Getting involved in aptosid is easy, just join us at our <a href="http://aptosid.com/index.php?name=PNphpBB2">Forum</a> or even better on IRC (irc.oftc.net, port 6667, channel <a href="irc://irc.oftc.net:6667/#aptosid">#aptosid</a>) and discuss your patches/ proposals or additions.
+					Щоби приєднатися до одної із наших команд, зайдіть буд ласка в наш <a href="http://aptosid.com/index.php?name=PNphpBB2">форум</a> або краще на IRC-канал (irc.oftc.net, port 6667, channel <a href="irc://irc.oftc.net:6667/#aptosid">#aptosid</a>) і обговоріть Ваші патчі / пропозиції або доповнення.
 				</p>
 
 				<p>
-					We will gladly discuss any dfsg-free patches and contributions, especially regarding alternative window managers (GNOME, LXDE), general cleanup tasks or translations/ localisations.
+					Ми будемо раді обговорити будь які DFSG програми без патчів і внесків, особливо щодо альтернативних віконних менеджерів (GNOME, LXDE),або загальні завдання очищення або перекладу / локалізації системи.
 				</p>
 			</div>
 	
 			<div class="divider" id="roadmap">
-				<h2>Roadmap:</h2>
+				<h2>Дорожня карта aptosid:</h2>
 				<p>
-					Please understand that the following roadmap is a rough estimate regarding our release schedule and is affected by the status of upstream Debian sid, major system components like X.org, KDE, the linux kernel and our own developments and is subject to changes.
+					Будь ласка зрозумійте що наступний план релізу являє собою приблизну оцінку щодо нашої графіки випуску і залежить від стану Debian sid, основних компонентах системи, як наприклад X.org, KDE, Linux Kernel і наші власні розробки і можливі зміни.Слідучі релізи будуть мати наступні назви:
 				</p>
 	
 				<ul>
@@ -668,7 +669,7 @@ $ apt-show-versions | awk '/No available version in archive/{print $1}'
 					</li>
 				</ul>
 			</div>	
-			<div id="rev">Content last revised 29/12/2012 0730 UTC </div>
+			<div id="rev">Сторінка останній раз переглянута 29/12/2012 0730 UTC </div>
 
 </div>
 </body>
