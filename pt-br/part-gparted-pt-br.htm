@@ -467,7 +467,8 @@ sudo gparted
 							<p class="highlight-2"><b>ATENÇÃO:</b>: Ainda que o ntfs-3g seja considerado 'estável', jamais use-o sem antes fazer cópias de seus arquivos importantes; não o use, também, em sistemas de produção! Se o fizer e perder dados, lembre-se de que foi avisado. Portanto, o risco é todo seu!</p>
 
 							<p>Abra um terminal e digite os comandos abaixo. Veja <a href="part-cfdisk-pt-br.htm#disknames" >Particionando seu HD - Nomes dos Discos</a></p>
-<pre >sux
+<pre >
+su
 apt-get update &amp;&amp; apt-get install ntfs-3g
 umount /media/xdxx
 mount -t ntfs-3g /dev/disk/by-uuid/xxyyzz[etc] /media/xdxx

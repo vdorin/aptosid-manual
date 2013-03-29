@@ -467,7 +467,8 @@ sudo gparted
 							<p class="highlight-2"><b>Ostrzeżenie</b>: Mimo, że ntfs-3g osiągnął status 'stabilny', nie używaj go nigdy bez zewnętrznej kopii bezpieczeństwa i oczywiście nie na systemach produkcyjnych! Używasz go na własne ryzyko!</p>
 
 							<p>Otwórz konsolę i wpisz następujące polecenia: Patrz <a href="part-cfdisk-pl.htm" >Partycjonowanie twardego dysku - nazewnictwo</a></p>
-<pre >sux
+<pre >
+su
 apt-get update &amp;&amp; apt-get install ntfs-3g
 umount /media/xdxx
 mount -t ntfs-3g /dev/disk/by-uuid/xxyyzz[etc] /media/xdxx

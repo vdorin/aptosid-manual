@@ -303,19 +303,16 @@ sudo gparted
 
 						      <p class="warning-box">放缩NTFS分区要求你重启系统！在重启之前不要对这个分区执行任何操作，否则你会得到错误。</p>
 
-		<ul>
-			<li>启动M$ Windows之后，系统会显示一特殊屏幕，然后一条消息会询问驱动连贯性：检测C：区的文件系统?? the system will show a special screen, and a message
-			asking about drive consistency : Checking file system on c :??</li>
+							<p>Open a shell and enter the following commands:See <a href="part-cfdisk-zh.htm#disknames" >Partitioning your HD - Disk Naming</a></p>
+<pre >
+su
+apt-get update &amp;&amp; apt-get install ntfs-3g
+umount /media/xdxx
+mount -t ntfs-3g /dev/disk/by-uuid/xxyyzz[etc] /media/xdxx
+To get out of the konsole type: exit
+</pre>
 
-			<li>让自动检测运行：放缩操作之后NT需要检测它的文件系统。Let the AUTOCHK run: NT needs to check its file system
-			after the resize operation.</li>
-
-			<li>过程结束时，计算机会自动进行第二次重启。这是要确保一切运行正常。</li>
-
-			<li>重启之后，Windows XP就没事了，但你必须让系统完成引导并等待登入界面！</li>
-		</ul>
-
-							 <p><b>完整的GParted文档：</b>要阅读完整的文档，包括如何复制分区请往<a href="http://gparted.sourceforge.net">GParted</a></p>
+							<p>Now your NTFS Volume should be mounted <b>rw</b> and you should be able to store data on it. But again, be warned! <span class="highlight-3">Use it in emergency situations, it is not recommended  for use on a daily basis.</span></p>
 
 		</div>
 		<div class="divider" id="exfat">

@@ -496,7 +496,8 @@ sudo gparted
 							<p class="highlight-2"><b>Precaución</b>: Aunque el controlador ntfs-3g ha sido declarado como estable, nunca lo utilice sin realizar previamente una copia de seguridad externa, y por supuesto no en sistemas de producción o de trabajo! Si lo hace, la pérdida de datos será culpa suya; úselo a su propio riesgo!</p>
 
 							<p>Abra una consola y entre los siguientes comandos:  (ver <a href="part-cfdisk-es.htm" >Particionando el DD - Nombramiento del Disco)</a></p>
-<pre>sux
+<pre>
+su
 apt-get update &amp;&amp; apt-get install ntfs-3g
 umount /media/xdxx
 mount -t ntfs-3g /dev/disk/by-uuid/xxyyzz[etc] /media/xdxx

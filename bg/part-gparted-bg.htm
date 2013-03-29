@@ -434,17 +434,16 @@ sudo gparted
 
 							<p class="warning-box">Промяната на размера на NTFS раздел изисква незабавно след прилагането му да рестартирате системата! НЕ ИЗВЪРШВАЙТЕ никакви действия повече върху този раздел преди да сте рестартирали - ако го направите, ще получите грешки.</p>
 
-						<ul>
-							<li>След рестарта в MS Windows&#8482; системата в началото ще покаже специално съобщение на chkdsk за проверка на диска  (Checking file system on c:) - не го прекъсвайте а оставете Windows да извърши проверката до края</li>
+							<p>Open a shell and enter the following commands:See <a href="part-cfdisk-bg.htm#disknames" >Partitioning your HD - Disk Naming</a></p>
+<pre >
+su
+apt-get update &amp;&amp; apt-get install ntfs-3g
+umount /media/xdxx
+mount -t ntfs-3g /dev/disk/by-uuid/xxyyzz[etc] /media/xdxx
+To get out of the konsole type: exit
+</pre>
 
-							<li>Оставете AUTOCHK да завърши: Windows NT трябва да провери своята файлова система след операцията по промяна на размера.</li>
-
-							<li>На края на този процес, компютърът ще рестартира автоматично за втори път.</li>
-
-							<li>След рестарта, Windows ще бъде наред, но трябва да го изчакате да се зареди напълно!</li>
-						</ul>
-
-							<p><b>Пълната документация за GParted: </b>За запознаване с пълната документация (на английски), включително "копиране на раздели", отидете на <a href="http://gparted.sourceforge.net">GParted</a></p>
+							<p>Now your NTFS Volume should be mounted <b>rw</b> and you should be able to store data on it. But again, be warned! <span class="highlight-3">Use it in emergency situations, it is not recommended  for use on a daily basis.</span></p>
 
 		</div>
 		<div class="divider" id="exfat">

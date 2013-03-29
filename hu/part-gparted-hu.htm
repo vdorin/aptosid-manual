@@ -440,7 +440,8 @@ sudo gparted
 							<p class="highlight-2"><b>Figyelem</b>: Bár az ntfs-3g kernel modul stabilnak minősített, sose használd külső biztonsági mentés nélkül és természetesen ne éles rendszeren! Ha megteszed, a te hibád ha adatvesztés következik be, tehát csak saját felelősségedre használhatod!</p>
 
 							<p>Nyiss egy parancssort és add ki a következő parancsokat (Lásd <a href="part-cfdisk-hu.htm" >A merevlemez partícionálása - A lemezek elnevezése</a> fejezetet):</p>
-<pre >sux
+<pre >
+su
 apt-get update &amp;&amp; apt-get install ntfs-3g
 umount /media/xdxx
 mount -t ntfs-3g /dev/disk/by-uuid/xxyyzz[etc] /media/xdxx

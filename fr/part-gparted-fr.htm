@@ -494,7 +494,8 @@ sudo gparted
 							<p class="highlight-2"><b>Soyez-en avertis !</b>: Si le pilote ntfs-3g est désormais réputé 'stable', n'en usez jamais sans disposer d'une sauvegarde externe de vos données, et quoiqu'il arrive, jamais sur un système de production ! Si vous le faites quand-même, et vous perdez des données, ce sera votre faute ; vous l'utilisez à vos risques et périls !</p>
 
 							<p>Ouvrez une console/terminal et entrez-y la commande suivante: (reportez-vous à <a href="part-cfdisk-fr.htm" >Partitionnement des DDurs - Identification des disques</a></p>
-<pre >su
+<pre >
+su
 apt-get update &amp;&amp; apt-get install ntfs-3g
 umount /media/xdxx
 mount -t ntfs-3g /dev/disk/by-uuid/xxyyzz[etc] /media/xdxx

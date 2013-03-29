@@ -477,7 +477,8 @@ sudo gparted
 							<p class="highlight-2"><b>Achtung</b>: Obwohl der Treiber ntfs-3g nun für stabil erklärt ist, empfehlen wir keine Benutzung ohne vorher die Daten zu sichern, vor allem nicht auf Arbeitsplattformen! Die Benutzung erfolgt auf eigene Gefahr, da ein Datenverlust nicht gänzlich ausgeschlossen werden kann!</p>
 
 							<p>In eine Konsole Folgendes eingegeben (<i>siehe das Kapitel <a href="part-cfdisk-de.htm#disknames" >Partitionieren der Festplatte</a>, wie die UUIDs der verschiedenen Partitionen ermittelt werden!)</i>:</p>
-<pre >sux
+<pre >
+su
 apt-get update &amp;&amp; apt-get install ntfs-3g
 umount /media/xdxx
 mount -t ntfs-3g /dev/disk/by-uuid/xxyyzz[etc] /media/xdxx

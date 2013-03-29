@@ -471,13 +471,17 @@ sudo gparted
 							<p class="highlight-2"><b>Budite upozoreni</b>: ntfs-3g je mlad beta pogonitelj, zato ga nikada nemojte koristiti bez sigurnosne kopije, i naravno  ne na produktivnim sistemima! Ako to uradite, vaša je pogreška, ako izgubite podatke, koristite ga na svoj rizik!</p>
 
 							<p>Otvorite konzolu i upišite sljedeće naredbe: Pogledajte na <a href="part-cfdisk-hr.htm" >Partitioning your HD - Disk Naming</a></p>
-<pre>
-umount /dev/XdXX
-mount -o silent,umask=0,no_def_opts,allow_other -t ntfs-3g /dev/XdXX /media/XdXX
-exit
-exit
+
+<pre >
+su
+apt-get update &amp;&amp; apt-get install ntfs-3g
+umount /media/xdxx
+mount -t ntfs-3g /dev/disk/by-uuid/xxyyzz[etc] /media/xdxx
+To get out of the konsole type: exit
 </pre>
-							<p>Sad možete mountati vaš NTFS Volume <b>rw</b> i možete spremiti podatke na njemu. Ali opet, POZOR! <span class="highlight-2">EKSPERIMENTALAN JE!</span></p>
+
+							
+							<p>Now your NTFS Volume should be mounted <b>rw</b> and you should be able to store data on it. But again, be warned! <span class="highlight-3">Use it in emergency situations, it is not recommended  for use on a daily basis.</span></p>
 
 		</div>
 		<div class="divider" id="exfat">

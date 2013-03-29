@@ -472,7 +472,8 @@ sudo gparted
 							<p class="highlight-2"><b>Be warned</b>: Whilst the ntfs-3g is stated to be 'stable', never use it without external backup, and of course not on production systems! If you do, it's your fault if your data gets lost, so use at your own risk!</p>
 
 							<p>Open a shell and enter the following commands:See <a href="part-cfdisk-en.htm#disknames" >Partitioning your HD - Disk Naming</a></p>
-<pre >sux
+<pre >
+su
 apt-get update &amp;&amp; apt-get install ntfs-3g
 umount /media/xdxx
 mount -t ntfs-3g /dev/disk/by-uuid/xxyyzz[etc] /media/xdxx

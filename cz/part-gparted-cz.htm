@@ -496,7 +496,8 @@ sudo gparted
 							<p class="highlight-2"><b>Varování</b>: Ačkoliv je ntfs-3g označen jako 'stabilní', nikdy jej nepoužívejte bez zálohování a samozřejmě vůbec na produkčních systémech! Pokud tak uděláte, je to vaše vina, pokud se data ztratí, takže jej používejte na vlastní riziko!</p>
 <!--							<p>Open a shell and enter the following commands: See <a href="part-cfdisk-cz.htm#disknames" >Partitioning your HD - Disk Naming</a></p>-->
 							<p>Otevřete příkazovou řádky a zadejte následující příkazy: Podívejte se do <a href="part-cfdisk-cz.htm#disknames" >Pojmenovávání diskových oddílů a ostatní</a></p>
-<pre >sux
+<pre >
+su
 apt-get update &amp;&amp; apt-get install ntfs-3g
 umount /media/xdxx
 mount -t ntfs-3g /dev/disk/by-uuid/xxyyzz[etc] /media/xdxx
