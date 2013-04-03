@@ -465,7 +465,7 @@ install-mbr /dev/sdz
 
 							<p><b>1.</b> The Installer is started from the <span class="highlight-3"> Desktop icon, the KMenu> System>aptosid-installer</span>, or via the konsole using:</p>
 <pre>
-sux
+su
 install-gui.bash
 </pre>
 		<div class="screenshot"><img src="../lib/images-en/installer-en/installer1-en.png" title="Welcome tab - aptosid Installer" alt="aptosid-Installer1" /></div>
@@ -487,8 +487,7 @@ install-gui.bash
 
 							<p>You may also start them from the konsole/terminal</p>
 <pre>
-sux
-gparted
+su-to-root -X -c gparted
 </pre>
 		<p>or</p>
 <pre>
@@ -579,19 +578,21 @@ man deluser
 
 	</div>
 	<div class="divider" id="sux">
-	<h2>About sux</h2>
+	<h2>About su-to-root -X -c &lt;application&gt;</h2>
 							<p>Numerous commands need to be run with root privileges. To achieve this you type:</p>
 <pre>
-sux
+su
 </pre>
 
-							<p>While the common command for becoming root is 'su'  using <span class="highlight-3">sux</span> instead will allow you run GUI / X11 applications from the command line and allow root to start graphical applications, as <span class="highlight-3">sux</span> is a wrapper around the standard su command which will transfer  your X credentials to the target user.</p>
+							<p>While the common command for becoming root is 'su'  using <span class="highlight-3">su-to-root -X -c &lt;application&gt;</span> instead will allow you run GUI / X11 applications from the command line and allow root to start graphical applications. <!--, as <span class="highlight-3">sux</span> is a wrapper around the standard su command which will transfer  your X credentials to the target user.--></p>
+
+							<p>Refer to <a href="term-konsole-en.htm#sux"> About Xapps whilst in X as root</a> </span></p>
 
 							<p>Some KDE applications require <span class="highlight-3">dbus-launch</span> in front of the application:</p>
 <pre>
 dbus-launch &lt;Application&gt;
 </pre>
-							<p>An example of running an X11 app via sux is to use a text editor to edit a root file like kwrite or kate, to do partitioning with gparted or an Xapp file manager like konqueror. You can also alter root files by right clicking the file and choosing 'edit-as-root', and entering your root password, this will call kdesu in the background.</p>
+							<p>An example of running an X11 app via <span class="highlight-3">su-to-root -X -c</span> is to use a text editor to edit a root file like kwrite or kate, to do partitioning with gparted or an Xapp file manager like konqueror. You can also alter root files by right clicking the file and choosing 'edit-as-root', and entering your root password, this will call kdesu in the background.</p>
 
 							<p>Unlike 'sudo', it  means that someone can't just come along and type 'sudo' and make potentially damaging changes to your system.</p>
 
@@ -599,7 +600,7 @@ dbus-launch &lt;Application&gt;
 
 							<p class="highlight-2">Under no circumstances should you be as root in the console/terminal to run applications that a standard user uses to go about being productive on a day to day basis, like sending emails, creating spreadsheets or surfing the internet and so forth. </p>
 	</div>
-	<div id="rev">Content last revised 10/01/2013 0835 UTC</div>
+	<div id="rev">Content last revised 03/04/2013 0100 UTC</div>
 
 </div>
 </body>

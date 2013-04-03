@@ -346,7 +346,7 @@
 
 							<p>Simple method, just type:</p>
 <pre>
-sux
+su
 </pre>
 
 				<h6>To set a (temporary) root-password</h6>
@@ -365,12 +365,11 @@ aptosid@0[aptosid]$
 
 				<h6>Running a program from a root-shell</h6>
 
-							<p>Typing  <span class="highlight-3">sux</span> in a terminal will take you to root with Xapp privileges.</p>
+							<p>Typing  <span class="highlight-3">su-to-root -X -c &lt;application&gt;</span> in a terminal will take you to root with Xapp privileges.</p>
 
 							<p>Open a console/ shell:</p>
 <pre >
-aptosid@0[aptosid]$ sux
-root@0[aptosid]# gparted <i>(or whatever you want...)</i>
+aptosid@0[aptosid]$ su-to-root -X -c gparted <i>(or whatever you want...)</i>
 </pre>
 
 							<p>Some KDE applications require <span class="highlight-3">dbus-launch</span> in front of the application:</p>
@@ -414,7 +413,7 @@ apt-get install your-preferred-package
 
 
 	</div>
-	<div id="rev">Content last revised 14/08/2010 0100 UTC</div>
+	<div id="rev">Content last revised 03/04/2013 0100 UTC</div>
 </div>
 </body>
 </html>
