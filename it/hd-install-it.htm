@@ -457,7 +457,7 @@ install-mbr /dev/sdz
 
 							<p><b>1.</b> Si può avviare il programma di installazione <span class="highlight-3"> con l'icona sul desktop, da KMenu > Sistema > aptosid-installer</span>, o via console scrivendo:</p>
 <pre>
-sux
+su
 install-gui.bash
 </pre>
 		<div class="screenshot"><img src="../lib/images-it/installer-it/installer1-it.png" title="Welcome tab - aptosid Installer" alt="aptosid-Installer1" /></div>
@@ -478,8 +478,7 @@ install-gui.bash
 
 							<p>I programmi di partizionamento si possono anche avviare da una console/terminale:</p>
 <pre>
-sux
-gparted
+su-to-root -X -c gparted
 </pre>
 		<p>oppure</p>
 <pre>
@@ -570,20 +569,22 @@ man deluser
 
 	</div>
 	<div class="divider" id="sux">
-	<h2>Riguardo al comando sux</h2>
+	<h2>Riguardo al comando su-to-root -X -c &lt;application&gt;</h2>
 							<p>Numerosi comandi devono essere avviati con i privilegi di root. Per ottenerli digitare:</p>
 <pre>
-sux
+su
 </pre>
 
-							<p>Mentre il comando normale per diventare root è "su" usando <span class="highlight-3">sux</span> invece si possono avviare delle applicazioni ad interfaccia grafica (GUI / X11) dalla console/terminale, in quanto <span class="highlight-3">sux</span> è un involucro attorno al comando standard "su" che trasferisce le credenziali X all'utente destinatario (root).</p>
+							<p>Mentre il comando normale per diventare root è "su" usando <span class="highlight-3">su-to-root -X -c &lt;application&gt;</span> invece si possono avviare delle applicazioni ad interfaccia grafica (GUI / X11) dalla console/terminale. <!-- in quanto <span class="highlight-3">sux</span> è un involucro attorno al comando standard "su" che trasferisce le credenziali X all'utente destinatario (root).--></p>
+
+							<p>Refer to <a href="term-konsole-it.htm#sux"> About Xapps whilst in X as root</a> </span></p>
 
 							<p>Alcune applicazioni KDE richiedono <span class="highlight-3">dbus-launch</span> prima del nome dell'applicazione:</p>
 <pre>
 dbus-launch &lt;applicazione&gt;
 </pre>
 
-							<p>Esempi dell'avvio di applicazioni X11 via "sux" possono essere: usare un elaboratore di testo come kate o kwrite per modificare un file con permessi di root, partizionare con GParted, o avviare come root un file manager come Konqueror. Si possono anche modificare file appartenenti a root cliccando sul file col tasto destro e scegliendo "edit-as-root", cioè "modifica come root" e immettendo la relativa parola chiave; questo infatti richiamerà kdesu.</p>
+							<p>Esempi dell'avvio di applicazioni X11 via <span class="highlight-3">su-to-root -X -c</span> possono essere: usare un elaboratore di testo come kate o kwrite per modificare un file con permessi di root, partizionare con GParted, o avviare come root un file manager come Konqueror. Si possono anche modificare file appartenenti a root cliccando sul file col tasto destro e scegliendo "edit-as-root", cioè "modifica come root" e immettendo la relativa parola chiave; questo infatti richiamerà kdesu.</p>
 
 							<p>Diversamente da "sudo", con "sux" non succede che chiuque digiti "sudo" è in grado fare cambiamenti potenzialmente dannosi al sistema.</p>
 
@@ -591,7 +592,7 @@ dbus-launch &lt;applicazione&gt;
 
 							<p class="highlight-2">In nessuna circostanza ci si deve trovare come root in una console/terminale per avviare applicazioni di produttività giornaliera, come quelle per gestione posta, creazione di fogli elettronici o per navigare in internet e così via.</p>
 	</div>
-	<div id="rev">Page  last revised 10/01/2013 0835 UTC</div>
+	<div id="rev">Page  last revised 03/04/2013 0100 UTC</div>
 
 </div>
 </body>

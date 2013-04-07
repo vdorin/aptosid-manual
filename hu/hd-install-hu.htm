@@ -424,7 +424,7 @@ install-mbr /dev/sdz
 
 							<p><b>1.</b> A telepítő elindítható a munkaasztalon található ikonnal, a <span class="highlight-3"> K Menü > System > aptosid-installer</span> menüponttal, vagy a következő parancssori utasítás kiadásával:</p>
 <pre>
-sux
+su
 install-gui.bash
 </pre>
 		<div class="screenshot"><img src="../lib/images-hu/installer-hu/installer1-hu.png" title="Welcome tab - aptosid Installer" alt="aptosid-Installer1" /></div>
@@ -445,8 +445,7 @@ install-gui.bash
 
 							<p>A partícionáló programok konsole/parancssor alól is indíthatók:</p>
 <pre>
-sux
-gparted
+su-to-root -X -c gparted
 </pre>
 		<p>vagy</p>
 <pre>su
@@ -535,13 +534,15 @@ man deluser
 
 	</div>
 	<div class="divider" id="sux">
-	<h2>A sux parancs</h2>
+	<h2>A su-to-root -X -c &lt;application&gt; parancs</h2>
 							<p>Számos parancs, vagy alkalmazás igényli a rendszergazdai jogokkal való futást. Ennek eléréséhez gépeld be:</p>
 <pre>
-sux
+su
 </pre>
 
-							<p>Míg az általános rendszergazdai jogot adó parancs a 'su', a <span class="highlight-3">sux</span> egyszerűen lehetővé teszi grafikus (GUI/X11) alkalmazások futtatását is a parancssorból a root felhasználó számára. A <span class="highlight-3">sux</span> egy kiegészítő, előtét a szabványos su parancshoz, amely az X alatt is meg tudja emelni a jogosultsági szintedet.</p>
+							<p>Míg az általános rendszergazdai jogot adó parancs a 'su', a <span class="highlight-3">su-to-root -X -c &lt;application&gt;</span> egyszerűen lehetővé teszi grafikus (GUI/X11) alkalmazások futtatását is a parancssorból a root felhasználó számára. <!--A <span class="highlight-3">sux</span> egy kiegészítő, előtét a szabványos su parancshoz, amely az X alatt is meg tudja emelni a jogosultsági szintedet.--></p>
+
+							<p>Refer to <a href="term-konsole-hu.htm#sux"> About Xapps whilst in X as root</a> </span></p>
 
 							<p>Néhány KDE alkalmazásnak szüksége van a <span class="highlight-3">dbus-launch</span> futtatására a program elindulása előtt:</p>
 <pre>
@@ -556,7 +557,7 @@ dbus-launch &lt;Alkalmazás&gt;
 
 							<p class="highlight-2">Semmilyen körülmények között ne futtass root-ként olyan programokat, amelyeket egyszerű felhasználóként a napi munkához használsz, mint pl. a levelezés, táblázatkezelés, böngészés, és így tovább. </p>
 	</div>
-	<div id="rev">Az oldal utoljára frissítve 10/01/2013 0835 UTC</div>
+	<div id="rev">Az oldal utoljára frissítve 03/04/2013 0100 UTC</div>
 
 </div>
 </body>

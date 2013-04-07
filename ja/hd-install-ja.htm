@@ -552,7 +552,7 @@ install-mbr /dev/sdz
 							#### -->
 							<p><b>1.</b> インストーラは <span class="highlight-3">デスクトップのアイコンまたはKMenu > System > aptosid-installer</span>,、またはコンソールから:</p>
 <pre>
-sux
+su
 install-gui.bash
 </pre>
 		<p>のコマンドでスタートします</p>
@@ -595,8 +595,7 @@ install-gui.bash
 							#### -->
 							<p>コンソールからスタートすることもできます</p>
 <pre>
-sux
-gparted
+su-to-root -X -c gparted
 </pre>
 		<p>または</p>
 <pre>su
@@ -762,23 +761,25 @@ man deluser
 	<div class="divider" id="sux">
 	<h2>sux</h2>
 	<!--- ####
-	<h2>About sux</h2>
+	<h2>About su-to-root -X -c &lt;application&gt;</h2>
 	#### -->
-	<h2>suxについて</h2>
+	<h2>su-to-root -X -c &lt;application&gt;について</h2>
 							<!--- ####
 							<p>Numerous commands need to be run with root privileges. To achieve this you type:</p>
 							#### -->
 							<p>rootの特権を持って実行する必要があるコマンドがたくさんあります。 そのためには:</p>
 <pre>
-sux
+su
 </pre>
 
 							<!--- ####
-							<p>While the common command for becoming root is 'su'  using <span class="highlight-3">sux</span> instead will allow you run GUI / X11 applications from the command line and allow root to start graphical applications, as <span class="highlight-3">sux</span> is a wrapper around the standard su command which will transfer  your X credentials to the target user.</p>
+							<p>While the common command for becoming root is 'su'  using <span class="highlight-3">su-to-root -X -c &lt;application&gt;</span> instead will allow you run GUI / X11 applications from the command line and allow root to start graphical applications, as <span class="highlight-3">sux</span> is a wrapper around the standard su command which will transfer  your X credentials to the target user.</p>
 							#### -->
-							<p>rootになるためのコマン ドとして普通は'su'を使いますが、代わりに<span class="highlight-3">sux</span>を使う ことでX11のアプリケーションもコマンドラインから実行することができます。 <span class="highlight-3">sux</span>はwrapperとして標準のsuを呼ぶ前にユーザーのXクレデンシャル(資格証明)やディスプレイの情報などををサーバに送ります。</p>
+							<p>rootになるためのコマン ドとして普通は'su'を使いますが、代わりに<span class="highlight-3">su-to-root -X -c &lt;application&gt;</span>を使う ことでX11のアプリケーションもコマンドラインから実行することができます。 <!--<span class="highlight-3">sux</span>はwrapperとして標準のsuを呼ぶ前にユーザーのXクレデンシャル(資格証明)やディスプレイの情報などををサーバに送ります。--></p>
 
-<!--- ####
+							<p>Refer to <a href="term-konsole-ja.htm#sux"> About Xapps whilst in X as root</a> </span></p>
+
+							<!--- ####
 							<p>Some KDE applications require <span class="highlight-3">dbus-launch</span> in front of the application:</p>
 #### -->
 							<p>KDE のアプリケーションの中には<span class="highlight-3">dbus-launch</span> を使って実行する必要のあるものがあります:</p>
@@ -787,9 +788,9 @@ dbus-launch &lt;Application&gt;
 </pre>
 
 							<!--- ####
-							<p>An example of running an X11 app via sux is to use a text editor to edit a root file like kwrite or kate, to do partitioning with gparted or an Xapp file manager like konqueror. You can also alter root files by right clicking the file and choosing 'edit-as-root', and entering your root password, this will call kdesu in the background.</p>
+							<p>An example of running an X11 app via <span class="highlight-3">su-to-root -X -c</span> is to use a text editor to edit a root file like kwrite or kate, to do partitioning with gparted or an Xapp file manager like konqueror. You can also alter root files by right clicking the file and choosing 'edit-as-root', and entering your root password, this will call kdesu in the background.</p>
 							#### -->
-							<p>suxを使ってX11のアプリケーションを実行する例としてkwriteやkateといったテキストエディタでrootのファイルを編集したり、gpartedでパーティションを作ることなどがあげられます。 konquerorでファイルを閲覧するとき右クリックで'rootとして編集’を選んでファイルを変更することもできます。 kdesuが実行されてrootのパスワードを聞いてきます。</p>
+							<p><span class="highlight-3">su-to-root -X -c</span>を使ってX11のアプリケーションを実行する例としてkwriteやkateといったテキストエディタでrootのファイルを編集したり、gpartedでパーティションを作ることなどがあげられます。 konquerorでファイルを閲覧するとき右クリックで'rootとして編集’を選んでファイルを変更することもできます。 kdesuが実行されてrootのパスワードを聞いてきます。</p>
 
 							<!--- ####
 							<p>Unlike 'sudo', it  means that someone can't just come along and type 'sudo' and make potentially damaging changes to your system.</p>
@@ -806,7 +807,7 @@ dbus-launch &lt;Application&gt;
 							#### -->
 							<p class="highlight-2">E-mailを送ったり計算表を作ったり,ネットのサーフィングなど普通のユーザーの権利で日々使っているプログラムをrootとしてターミナル/コンソールから実行することはどんな場合であれ絶対に避けるべきです。</p>
 	</div>
-	<div id="rev">Page  last revised 10/01/2013 0835 UTC</div>
+	<div id="rev">Page  last revised 03/04/2013 0100 UTC</div>
 
 </div>
 </body>

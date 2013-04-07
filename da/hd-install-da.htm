@@ -457,6 +457,7 @@ install-mbr /dev/sdz
 
 							<p><b>1.</b> Installationsprogrammet startes fra <span class="highlight-3"> Skrivebordsikon, KMenuen> System>aptosid-installer</span>, eller via konsollen med følgende kommando:</p>
 <pre>
+su
 install-gui.bash
 </pre>
 		<div class="screenshot"><img src="../lib/images-da/installer-da/installer1-da.png" title="Welcome tab - aptosid Installer" alt="aptosid-Installer1" /></div>
@@ -475,8 +476,7 @@ install-gui.bash
 
 							<p>Hvis du ikke har partitioneret din harddisk endnu, skal du klikke <span class="highlight-3">start-part-manager</span> knappen, eller læse her <a href="part-cfdisk-da.htm">Partitionering af harddiske</a> og <a href="part-gparted-da.htm">Partitionering af harddiske med Gparted</a> Du kan også starte programmerne fra et terminalvindue/ konsollen</p>
 <pre>
-sux
-gparted
+su-to-root -X -c gparted
 </pre>
 		<p>eller</p>
 <pre>
@@ -565,20 +565,22 @@ man deluser
 
 	</div>
 	<div class="divider" id="sux">
-	<h2>Om sux</h2>
+	<h2>Om su-to-root -X -c &lt;application&gt;</h2>
 						<p>Mange kommandoer skal afvikles med root privilegier. For at opnå root privilegier taster du:</p>
 <pre>
-sux
+sx
 </pre>
 
-							<p>Den almindelige kommando til at opnå root rettigheder er 'su', men hvis du istedet bruger <span class="highlight-3">sux</span> tillader det dig at afvikle GUI / X11 applikationer fra kommandolinien og gør root i stand til at starte grafiske programmer. <span class="highlight-3">sux</span> er en wrapper omkring standard kommandoen 'su', som overfører dine X rettigheder til målbrugeren.</p>
+							<p>Den almindelige kommando til at opnå root rettigheder er 'su', men hvis du istedet bruger <span class="highlight-3">su-to-root -X -c &lt;application&gt;</span> tillader det dig at afvikle GUI / X11 applikationer fra kommandolinien og gør root i stand til at starte grafiske programmer. <!--<span class="highlight-3">sux</span> er en wrapper omkring standard kommandoen 'su', som overfører dine X rettigheder til målbrugeren.--></p>
+
+							<p>Refer to <a href="term-konsole-da.htm#sux"> About Xapps whilst in X as root</a> </span></p>
 
 							<p>Some KDE applications require <span class="highlight-3">dbus-launch</span> in front of the application:</p>
 <pre>
 dbus-launch &lt;Application&gt;
 </pre>
 
-							<p>Eksempler på afvikling af en X11 applikation via sux: Anvendelse af en teksteditor som kate eller kwrite til at redigere en fil der ejes af root; partitionering med gparted; eller en Xapp fil manager som konqueror. Du kan også ændre filer ejet af root ved at højre-klikke på dem og vælge Handlinger>Edit as root og så indtaste dit root password. Denne kommando virker ved at kalde kdesu i baggrunden.</p>
+							<p>Eksempler på afvikling af en X11 applikation via <span class="highlight-3">su-to-root -X -c</span>: Anvendelse af en teksteditor som kate eller kwrite til at redigere en fil der ejes af root; partitionering med gparted; eller en Xapp fil manager som konqueror. Du kan også ændre filer ejet af root ved at højre-klikke på dem og vælge Handlinger>Edit as root og så indtaste dit root password. Denne kommando virker ved at kalde kdesu i baggrunden.</p>
 
 							<p>Ulig 'sudo', betyder dette at ingen kan komme forbi din maskine, taste 'sudo' og udføre potentielt skadigelige ændringer på dit system.</p>
 
@@ -586,7 +588,7 @@ dbus-launch &lt;Application&gt;
 
 							<p class="highlight-2">Du bør under ingen omstændigheder starte applikationer som root for at udføre trivielle ting som at sende mails, surfe på nettet, eller skrive dokumenter!</p>
 	</div>
-	<div id="rev">Page  last revised 10/01/2013 0835 UTC</div>
+	<div id="rev">Page  last revised 03/04/2013 0100 UTC</div>
 
 </div>
 </body>

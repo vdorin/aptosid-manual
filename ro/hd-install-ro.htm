@@ -459,7 +459,7 @@ install-mbr /dev/sdz
 
 							<p><b>1.</b> Programul de instalare este pornit din <span class="highlight-3"> icon-ul Desktop,  KMenu> System>aptosid-installer</span> sau de la consolă folosind:</p>
 <pre>
-sux
+su
 install-gui.bash
 </pre>
 		<div class="screenshot"><img src="../lib/images-ro/installer-ro/installer1-ro.png" title="Welcome tab - aptosid Installer" alt="aptosid-Installer1" /></div>
@@ -480,8 +480,7 @@ install-gui.bash
 
 							<p>Puteți de asemeni să începeți de la konsole/terminal</p>
 <pre>
-sux
-gparted
+su-to-root -X -c gparted
 </pre>
 							<p>sau</p>
 <pre>
@@ -567,19 +566,21 @@ man deluser
 
 	</div>
 	<div class="divider" id="sux">
-	<h2>Despre <i>sux</i></h2>
+	<h2>Despre su-to-root -X -c &lt;application&gt;</h2>
 							<p> Multe comenzi trebuie executate ca administrator adică <i>'root'</i>. Comanda  care face această trecere este: </p>
 <pre>
-sux
+su
 </pre>
-							<p> Cu toate că <i>'su'</i> este comanda obișnuită pentru a deveni administrator, folosirea comenzi <span class="highlight-3">sux</span> vă va permite să rulați aplicații de tip GUI/X11 din linia de comadă și  permite administratorului să pornească aplicații grafice în numele utilizatorului care o lansează, întru-cât <span class="highlight-3">sux</span> este un <i>wrapper</i> al comenzii standard <i>su</i>, care permite transferul credențialelor X către utilizatorul care o lansează.</p>
+							<p> Cu toate că <i>'su'</i> este comanda obișnuită pentru a deveni administrator, folosirea comenzi <span class="highlight-3">su-to-root -X -c &lt;application&gt;</span> vă va permite să rulați aplicații de tip GUI/X11 din linia de comadă și  permite administratorului să pornească aplicații grafice în numele utilizatorului care o lansează, întru-cât . <!--<span class="highlight-3">sux</span> este un <i>wrapper</i> al comenzii standard <i>su</i>, care permite transferul credențialelor X către utilizatorul care o lansează.--></p>
+
+							<p>Refer to <a href="term-konsole-ro.htm#sux"> About Xapps whilst in X as root</a> </span></p>
 
 							<p>Unele aplicații KDE necesită <span class="highlight-3">dbus-launch</span> înaintea numelui aplicației:</p>
 <pre>
 dbus-launch &lt;nume_aplicatie&gt;
 </pre>
 
-							<p> Exemple de utilizare de aplicații X11, prin <i>'sux'</i>, sunt lansarea de editoare precum <i>kwrite</i> sau <i>kate</i>, partiționarea cu <i>gparted</i> sau utilizarea unui manager de fișiere ca <i>konqueror</i>. Se poate deasemenea folosi pentru modificarea de fișiere, cu un clik-dreapta, alegerea  'edit-as-root' cu promt de parolă de root care, în background, apelează transparent la comanda <i>'kdesu'</i>.</p>
+							<p> Exemple de utilizare de aplicații X11, prin <span class="highlight-3">su-to-root -X -c</span>, sunt lansarea de editoare precum <i>kwrite</i> sau <i>kate</i>, partiționarea cu <i>gparted</i> sau utilizarea unui manager de fișiere ca <i>konqueror</i>. Se poate deasemenea folosi pentru modificarea de fișiere, cu un clik-dreapta, alegerea  'edit-as-root' cu promt de parolă de root care, în background, apelează transparent la comanda <i>'kdesu'</i>.</p>
 
 							<p> Toate acestea spre deosebire de <i>'sudo'</i>, care permite oricui are acces la tastatură să scrie <i>'sudo'</i> și să facă schimbări în sistem foarte probabil nedorite sau nefaste.</p>
 
@@ -590,7 +591,7 @@ dbus-launch &lt;nume_aplicatie&gt;
 
 	</div>
 
-	<div id="rev"> Content  last revised 10/01/2013 0835 UTC</div>
+	<div id="rev"> Content  last revised 03/04/2013 0100 UTC</div>
 
 </div>
 </body>

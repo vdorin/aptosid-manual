@@ -469,7 +469,7 @@ install-mbr /dev/sdz
 <!--							<p><b>1.</b> The Installer is started from the <span class="highlight-3"> Desktop icon, the KMenu> System>aptosid-installer</span>, or via the konsole using:</p>-->
 							<p><b>1.</b> Instalátor je spouštěn pomocí <span class="highlight-3"> ikony na ploše, Kmenu> System>aptosid-installer</span>, nebo v konsoli pomocí:</p>
 <pre>
-sux
+su
 install-gui.bash
 </pre>
 		<div class="screenshot"><img src="../lib/images-cz/installer-cz/installer1-cz.png" title="Welcome tab - aptosid Installer" alt="aptosid-Installer1" /></div>
@@ -495,8 +495,7 @@ install-gui.bash
 <!--							<p>You may also start them from the konsole/terminal</p>-->
 							<p>Také je možné je spusti z konsole/terminálu</p>
 <pre>
-sux
-gparted
+su-to-root -X -c gparted
 </pre>
 		<p>nebo</p>
 <pre>
@@ -595,23 +594,25 @@ man deluser
 							<p><span class="highlight-3">kuser</span> také umí vytvořit uživatele, ale nicméně budete muset manuálně přidat skupinová práva.</p>
 	</div>
 	<div class="divider" id="sux">
-	<h2>O sux</h2>
+	<h2>O su-to-root -X -c &lt;application&gt;</h2>
 <!-- 							<p>Numerous commands need to be run with root privileges. To achieve this you type:</p> -->
 							<p>Spousta příkazů je potřeba spoustit s právy roota. Abyste toho docílili, zadejte:</p>
 <pre>
-sux
+su
 </pre>
 
-<!--							<p>While the common command for becoming root is 'su'  using <span class="highlight-3">sux</span> instead will allow you run GUI / X11 applications from the command line and allow root to start graphical applications, as <span class="highlight-3">sux</span> is a wrapper around the standard su command which will transfer  your X credentials to the target user.</p>-->
-							<p>I když běžným příkazem pro učinění se rootem je 'su', <span class="highlight-3">sux</span> vám umožní spouštět GUI (grafické uživatelské rozhraní) / X11 aplikace z příkazové řádky a umožní rootu spouštět grafické aplikace, jelikož <span class="highlight-3">sux</span> je nadstavba okolo standardního příkazu su, která předá vaše X nastavení určenému uživateli.</p>
+<!--							<p>While the common command for becoming root is 'su'  using <span class="highlight-3">sux</span> instead will allow you run GUI / X11 applications from the command line and allow root to start graphical applications. as <span class="highlight-3">sux</span> is a wrapper around the standard su command which will transfer  your X credentials to the target user.</p>-->
+							<p>I když běžným příkazem pro učinění se rootem je 'su', <span class="highlight-3">su-to-root -X -c &lt;application&gt;</span> vám umožní spouštět GUI (grafické uživatelské rozhraní) / X11 aplikace z příkazové řádky a umožní rootu spouštět grafické aplikace. <!--jelikož <span class="highlight-3">sux</span> je nadstavba okolo standardního příkazu su, která předá vaše X nastavení určenému uživateli.--></p>
 
-<!--							<p>Some KDE applications require <span class="highlight-3">dbus-launch</span> in front of the application:</p>-->
+							<p>Refer to <a href="term-konsole-da.htm#sux"> About Xapps whilst in X as root</a> </span></p>
+
+							<!--							<p>Some KDE applications require <span class="highlight-3">dbus-launch</span> in front of the application:</p>-->
 							<p>Některé KDE aplikace vyžadují, aby bylo před nimi napsáno<span class="highlight-3">dbus-launch</span>:</p>
 <pre>
 dbus-launch &lt;aplikace&gt;
 </pre>
-<!-- 							<p>An example of running an X11 app via sux is to use a text editor to edit a root file like kwrite or kate, to do partitioning with gparted or an Xapp file manager like konqueror. You can also alter root files by right clicking the file and choosing 'edit-as-root', and entering your root password, this will call kdesu in the background.</p> -->
-							<p>Příkladem pro použití sux ke spuštění aplikace X11 budiž použití textového editoru k úpravě souboru roota, třeba kate nebo kwrite, vytváření diskových oddílů pomocí gparted nebo spuštění správce souborů jako je konqueror. Upravovat soubory roota můžete také pravým kliknutím na souboru zvolením 'upravit jako root' a zadáním hesla roota. To spustí na pozadí kdesu.</p>
+<!-- 							<p>An example of running an X11 app via <span class="highlight-3">su-to-root -X -c</span> is to use a text editor to edit a root file like kwrite or kate, to do partitioning with gparted or an Xapp file manager like konqueror. You can also alter root files by right clicking the file and choosing 'edit-as-root', and entering your root password, this will call kdesu in the background.</p> -->
+							<p>Příkladem pro použití <span class="highlight-3">su-to-root -X -c</span> ke spuštění aplikace X11 budiž použití textového editoru k úpravě souboru roota, třeba kate nebo kwrite, vytváření diskových oddílů pomocí gparted nebo spuštění správce souborů jako je konqueror. Upravovat soubory roota můžete také pravým kliknutím na souboru zvolením 'upravit jako root' a zadáním hesla roota. To spustí na pozadí kdesu.</p>
 <!-- 							<p>Unlike 'sudo', it  means that someone can't just come along and type 'sudo' and make potentially damaging changes to your system.</p> -->
 							<p>Narozdíl od 'sudo' nemůže kdokoliv přijít k počítači, zadat 'sudo' a provést potenciálně škodlivé změny ve vašem systému.</p>
 <!--							<p class="highlight-2">WARNING: While you are logged in as root, the system will not stop you from doing potentially dangerous things like deleting important files etc., you have to be absolutely sure about what you are doing, because it's very possible to seriously harm your system. </p>-->
@@ -620,7 +621,7 @@ dbus-launch &lt;aplikace&gt;
 <!--							<p class="highlight-2">Under no circumstances should you be as root in the console/terminal to run applications that a standard user uses to go about being productive on a day to day basis, like sending emails, creating spreadsheets or surfing the internet and so forth. </p>-->
 							<p class="highlight-2">V žádném případě byste neměli jako root spouště z konsole/terminálu aplikace, které běžní uživatele použivají pro každodenní produktivní práci, jako posílání emailů,  vytváření tabulek nebo snad brouzdání po internetu a podobně.</p>
 	</div>
-	<div id="rev">Obsah naposledy revidován 10/01/2013 0835 UTC</div>
+	<div id="rev">Obsah naposledy revidován 03/04/2013 0100 UTC</div>
 
 </div>
 </body>

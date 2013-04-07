@@ -435,7 +435,7 @@ install-mbr /dev/sdz
 
 							<p><b>1.</b>Инсталаторът се стартира от <span class="highlight-3">иконата на десктопа, KMenu> System>aptosid-installer</span>, или от конзолата чрез:</p>
 <pre>
-sux
+su
 install-gui.bash
 </pre>
 		<div class="screenshot"><img src="../lib/images-en/installer-en/installer1-en.png" title="Welcome tab - aptosid Installer" alt="aptosid-Installer1" /></div>
@@ -456,8 +456,7 @@ install-gui.bash
 
 							<p>Също можете да стартирате GParted или cfdisk от конзолата/терминала</p>
 <pre>
-sux
-gparted
+su-to-root -X -c gparted
 </pre>
 		<p>или</p>
 <pre>su
@@ -546,20 +545,22 @@ man deluser
 
 	</div>
 	<div class="divider" id="sux">
-	<h2>Относно sux</h2>
+	<h2>Относно su-to-root -X -c &lt;application&gt;</h2>
 							<p>Много команди трябва да бъдат стартирани с правата на root. За тази цел напишете:</p>
 <pre>
-sux
+su
 </pre>
 
-							<p>Макар че общоприетата команда за логване като root е 'su',  използвайки вместо нея <span class="highlight-3">sux</span> ще ви даде възможността да стартирате GUI / X11 (графични) приложения от командния ред с правата на root - понеже командата <span class="highlight-3">sux</span> е специална обвивка около стандартната команда su проектирана така, че също да прехвърля към новия потребител и настройките на X обкръжението.</p>
+							<p>Макар че общоприетата команда за логване като root е 'su',  използвайки вместо нея <span class="highlight-3">su</span> ще ви даде възможността да стартирате GUI / X11 (графични) приложения от командния ред с правата на root - понеже командата <span class="highlight-3">su-to-root -X -c &lt;application&gt;.<!--</span> е специална обвивка около стандартната команда su проектирана така, че също да прехвърля към новия потребител и настройките на X обкръжението.--></p>
+
+							<p>Refer to <a href="term-konsole-bg.htm#sux"> About Xapps whilst in X as root</a> </span></p>
 
 							<p>Some KDE applications require <span class="highlight-3">dbus-launch</span> in front of the application:</p>
 <pre>
 dbus-launch &lt;Application&gt;
 </pre>
 
-							<p>Примери за стартиране на X11 приложение чрез sux, са:  използването на текстов редактор като write или kate за промяна на файл който изисква root права, разделяне на диск с gparted, или използване на файл-мениджър като konqueror. Също така може да редактирате файлове които изискват root права цъквайки на тях с десния бутон на мишката, избирайки 'edit-as-root' и въвеждайки root паролата ('edit-as-root' стартира kdesu).</p>
+							<p>Примери за стартиране на X11 приложение чрез <span class="highlight-3">su-to-root -X -c</span>, са:  използването на текстов редактор като write или kate за промяна на файл който изисква root права, разделяне на диск с gparted, или използване на файл-мениджър като konqueror. Също така може да редактирате файлове които изискват root права цъквайки на тях с десния бутон на мишката, избирайки 'edit-as-root' и въвеждайки root паролата ('edit-as-root' стартира kdesu).</p>
 
 							<p>За разлика от 'sudo', тук не може външен човек просто да мине покрай компютъра ви и да използва 'sudo' за изпълнение на команди с root права - с евентуално разрушителни за системата последствия.</p>
 
@@ -567,7 +568,7 @@ dbus-launch &lt;Application&gt;
 
 							<p class="highlight-2">В никакъв случай не бива да сте логнати като root в конзолата/терминала и да стартирате приложения, които се използват регулярно, на ежедневна основа от обикновените  потребители - като изпращане на електронна поща, създаване на електронни таблици и други.</p>
 	</div>
-	<div id="rev">Content last revised 10/01/2013 0835 UTC</div>
+	<div id="rev">Content last revised 03/04/2013 0100 UTC</div>
 
 </div>
 </body>

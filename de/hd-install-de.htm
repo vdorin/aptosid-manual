@@ -456,7 +456,7 @@ install-mbr /dev/sdz
 
 							<p><b>1.</b> Das Installationsprogramm startet man bequem über: <span class="highlight-3"> das Icon am Desktop, über KMenu > System > aptosid-installer</span> oder in einer Konsole mit</p>
 <pre>
-sux
+su
 install-gui.bash
 </pre>
 		<div class="screenshot"><img src="../lib/images-de/installer-de/installer1-de.png" title="Begrüßung - aptosid-Installer" alt="aptosid-Installer1" /></div>
@@ -475,8 +475,7 @@ install-gui.bash
 							<p>Wenn die Festplatte noch nicht partitioniert ist, kann man dies im Bereich <span class="highlight-3">Start Part.-Manager</span> durchführen, oder man liest im Handbuch die Kapitel <a href="part-cfdisk-de.htm#disknames">Partitionieren der Festplatte mit cfdisk</a> bzw. <a href="part-gparted-de.htm#partition">Partitionieren mit Gparted</a>.</p>
 							<p> Die Partitionierungsprogramme können auch von der Konsole gestartet werden:</p>
  <pre>
-sux
-gparted
+su-to-root -X -c gparted
 </pre>
 							<p>oder</p>
 <pre>
@@ -561,18 +560,21 @@ man deluser
 
 	</div>
 <div class="divider" id="sux">
-	<h2>Über sux</h2>
+	<h2>Über su-to-root -X -c &lt;application&gt;</h2>
 							<p>Eine Anzahl von Befehlen muss mit Root-Rechten gestartet werden. Diese erhält man durch Eingabe von:</p>
 <pre>
-sux
+su
 </pre>
 
-							<p>Im Gegensatz zum allgemeinen Befehl 'su', erlaubt  <span class="highlight-3">sux</span> das Ausführen von Programmen mit graphischer Oberfläche mit Root-Rechten. <span class="highlight-3">sux</span> transferiert unter Benutzung von 'su' die X-Eigenschaften an den Zielnutzer.</p>
+							<p>Im Gegensatz zum allgemeinen Befehl 'su', erlaubt  <span class="highlight-3">su-to-root -X -c &lt;application&gt;</span> das Ausführen von Programmen mit graphischer Oberfläche mit Root-Rechten. <!--<span class="highlight-3">sux</span> transferiert unter Benutzung von 'su' die X-Eigenschaften an den Zielnutzer.--></p>
+
+							<p>Refer to <a href="term-konsole-de.htm#sux"> About Xapps whilst in X as root</a> </span></p>
 
 							<p>Einige KDE-Anwendungen benötigen <span class="highlight-3">dbus-launch</span> vor dem Anwendungsbefehl:</p>
 <pre>
 dbus-launch &lt;Anwendung&gt;
 </pre>
+							<p>An example of running an X11 app via <span class="highlight-3">su-to-root -X -c</span> is to use a text editor to edit a root file like kwrite or kate, to do partitioning with gparted or an Xapp file manager like konqueror. You can also alter root files by right clicking the file and choosing 'edit-as-root', and entering your root password, this will call kdesu in the background.</p>
 
 							<p>Anders als 'sudo', wie es an manchen Linux-Systemen Standard ist, bedeutet dies, dass ein Nutzer ohne Rootrechte keine - potentiell gefährlichen - Änderungen am System vornehmen kann.</p>
 
@@ -581,7 +583,7 @@ dbus-launch &lt;Anwendung&gt;
 							<p class="highlight-2">Unter keinen Umständen sollten Produktivprogramme, die normalerweise mit Benutzerrechten gestartet werden, mit dieser Option als root hochgefahren werden: Internet-Browser, E-Mail-Programme, Büroprogramme u.v.m.</p>
 
 	</div>
-		<div id="rev">Page last revised 10/01/2013 0835 UTC</div>
+		<div id="rev">Page last revised 03/04/2013 0100 UTC</div>
 
 </div>
 </body>

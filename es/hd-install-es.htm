@@ -461,6 +461,7 @@ install-mbr /dev/sdz
 							<p><b>1.</b> El instalador se puede ejecutar desde el <span class="highlight-3"> Desktop icon, el KMenu>System>aptosid-installer</span>, o a través de la consola, usando:</p>
 
 <pre>
+su
 install-gui.bash
 </pre>
 
@@ -483,8 +484,7 @@ install-gui.bash
 							<p>También puede iniciarlo desde una consola/terminal:</p>
 
 <pre>
-sux
-gparted
+su-to-root -X -c gparted
 </pre>
 
 <p>ó</p>
@@ -575,28 +575,30 @@ man deluser
 
 	</div>
 	<div class="divider" id="sux">
-	<h2>Acerca de 'sux'</h2>
+	<h2>Acerca de su-to-root -X -c &lt;application&gt;</h2>
 							<p>Muchos comandos tiene que ser ejecutado con privilegios de raiz. Para lograr eso, escriba:</p>
 <pre>
-sux
+su
 </pre>
 
-							<p>El comando común para hacerse "root" es "su", utilizando <span class="highlight-3">sux</span> en lugar de su podrá ejectuar aplicaciones GUI/X11 desde la línea de comandos y permitará que root inicie aplicaciones gráficas, porque <span class="highlight-3">sux</span> es un envoltorio para el comando estándar que tranfiere su credenciales X al usuario destinatario.</p>
+							<p>El comando común para hacerse "root" es "su", utilizando <span class="highlight-3">sux</span> en lugar de su podrá ejectuar aplicaciones GUI/X11 desde la línea de comandos y permitará que root inicie aplicaciones gráficas, porque <span class="highlight-3">su-to-root -X -c &lt;application&gt;.<!-- </span> es un envoltorio para el comando estándar que tranfiere su credenciales X al usuario destinatario.--></p>
+
+							<p>Refer to <a href="term-konsole-en.htm#sux"> About Xapps whilst in X as root</a> </span></p>
 
 							<p>Algunas aplicaciones KDE requiren <span class="highlight-3">dbus-launch</span> antes del nombre de la aplicación:</p>
 <pre>
 dbus-launch &lt;NombreAplicación&gt;
 </pre>
 
-							<p>Un ejemplo de ejecutar un app de X11 via sux es el uso de un editor de texto, como kwrite o kate, para editar un archivo de root, para particionar con gparted o usar un gestor de archivos como konqueror o krusader. También puede alterar archivos root con un clic derecho, y escoger "editar como raíz", entre su clave de root y esto llamará a "kdesu" para validar la clave.</p>
+							<p>Un ejemplo de ejecutar un app de X11 via <span class="highlight-3">su-to-root -X -c</span> es el uso de un editor de texto, como kwrite o kate, para editar un archivo de root, para particionar con gparted o usar un gestor de archivos como konqueror o krusader. También puede alterar archivos root con un clic derecho, y escoger "editar como raíz", entre su clave de root y esto llamará a "kdesu" para validar la clave.</p>
 
-							<p>A diferencia de 'sudo', 'sux' impide que nadie venga, tipee 'sudo' y haga cambios potencialmente dañinos al sistema.</p>
+							<p>A diferencia de 'sudo', impide que nadie venga, tipee 'sudo' y haga cambios potencialmente dañinos al sistema.</p>
 
 							<p class="highlight-2">AVISO: Mientras esté trabajando como root (raíz), el sistema no hará nada para evitar hacer cosas peligrosas como borrar archivos importantes, etc. Tiene que estar seguro de lo que va a hacer, porque es posible dañar seriamente el sistema.</p>
 
 							<p class="highlight-2">Bajo ninguna circunstancia debe estar trabajando como root en una consola/terminal para ejecutar las aplicaciones diarias de un usuario normal, por ejemplo enviar y recibir correo electrónico, trabajo con aplicaciones ofimáticas, navegar por internet, etcétera.</p>
 	</div>
-	<div id="rev">Page  last revised 10/01/2013 0835 UTC</div>
+	<div id="rev">Page  last revised 03/04/2013 0100 UTC</div>
 
 </div>
 </body>

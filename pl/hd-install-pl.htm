@@ -459,7 +459,7 @@ install-mbr /dev/sdz
 
 							<p><b>1.</b> Instalator można uruchomić z <span class="highlight-3"> Desktop icon, the KMenu> System>aptosid-installer</span>, lub via konsole: </p>
 <pre>
-sux
+su
 install-gui.bash
 </pre>
 		<div class="screenshot"><img src="../lib/images-pl/installer-pl/installer1-pl.png" title="Welcome tab - aptosid Installer" alt="aptosid-Installer1" /></div>
@@ -477,8 +477,7 @@ install-gui.bash
 
 							<p>Jeśli jeszcze nie partycjonowałeś swojego twardego dysku, kliknij na przycisk <span class="highlight-3">start-part-manager</span>, lub przejrzyj rozdział <a href="part-cfdisk-pl.htm">Partycjonowanie twardego dysku</a> i <a href="part-gparted-pl.htm">Partycjonowanie twardego dysku przy pomocy Gparted</a> Możesz również uruchomić też konsoli/terminala</p>
 <pre>
-sux
-gparted
+su-to-root -X -c gparted
 </pre>
 							<p>lub</p>
 <pre>
@@ -563,20 +562,22 @@ man deluser
 
 	</div>
 	<div class="divider" id="sux">
-	<h2>O sux</h2>
+	<h2>O su-to-root -X -c &lt;application&gt;</h2>
 							<p>Wiele poleceń wymaga uruchomienia z prawami roota. Aby to osiągnąć, wpisz:</p>
 <pre>
-sux
+su
 </pre>
 
-							<p>Popularnym poleceniem, aby stać się rootem jest 'su'  ale użycie <span class="highlight-3">sux</span> pozwala dodatkowo uruchamiać aplikacje GUI / X11 z linii poleceń, ponieważ współpracuje ze standardowym poleceniem su, jednak dodatkowo transferuje uprawnienia do serwera X dla docelowego użytkownika.</p>
+							<p>Popularnym poleceniem, aby stać się rootem jest 'su'  ale użycie <span class="highlight-3">su-to-root -X -c &lt;application&gt;</span> pozwala dodatkowo uruchamiać aplikacje GUI / X11 z linii poleceń. <!--ponieważ współpracuje ze standardowym poleceniem su, jednak dodatkowo transferuje uprawnienia do serwera X dla docelowego użytkownika.--></p>
+
+							<p>Refer to <a href="term-konsole-pl.htm#sux"> About Xapps whilst in X as root</a> </span></p>
 
 							<p>Some KDE applications require <span class="highlight-3">dbus-launch</span> in front of the application:</p>
 <pre>
 dbus-launch &lt;Application&gt;
 </pre>
 
-							<p>Przykładem uruchomienia aplikacji X11 przez sux jest użycie edytora tekstu jak kwrite lub kate, aby zmienić plik należący do roota, partycjonowanie przy pomocy  gparted lub praca z menadżerem plików takiem jak konqueror. Możesz także zmieniać pliki należące do roota poprzez kliknięcie na nie prawym klawiszem myszy i wybranie  'edit-as-root', a następnie wpisanie hasła roota, co wywoła w tle kdesu.</p>
+							<p>Przykładem uruchomienia aplikacji X11 przez <span class="highlight-3">su-to-root -X -c</span> jest użycie edytora tekstu jak kwrite lub kate, aby zmienić plik należący do roota, partycjonowanie przy pomocy  gparted lub praca z menadżerem plików takiem jak konqueror. Możesz także zmieniać pliki należące do roota poprzez kliknięcie na nie prawym klawiszem myszy i wybranie  'edit-as-root', a następnie wpisanie hasła roota, co wywoła w tle kdesu.</p>
 
 							<p>W przeciwieństwie do 'sudo', oznacza to, że ktoś korzystając z hasła użytkownika, po wpisaniu 'sudo', nie może dokonać potencjalnie niebezpiecznych zmian w twoim systemie.</p>
 
@@ -584,7 +585,7 @@ dbus-launch &lt;Application&gt;
 
 							<p class="highlight-2">W żadnym wypadku nie powinieneś uruchamiać jako root aplikacji, które zwykły użytkownik wykorzystuje na codzień, takich jak klient poczty, arkusz kalkulacyjny, czy przeglądarka internetowa. </p>
 	</div>
-	<div id="rev">Strona ostatnio modyfikowana 10/01/2013 0835 UTC</div>
+	<div id="rev">Strona ostatnio modyfikowana 03/04/2013 0100 UTC</div>
 </div>
 </div>
 </body>

@@ -452,7 +452,7 @@ install-mbr /dev/sdz
 
 							<p><b>1.</b> De installer kan op 3 manieren worden gestart: <span class="highlight-3"> met het Desktop icon, via het KMenu> System>aptosid-installer (to hd)</span> of via de konsole met:</p>
 <pre>
-sux
+su
 install-gui.bash
 </pre>
 		<div class="screenshot"><img src="../lib/images-nl/installer-nl/installer1-nl.png" title="Welcome tab - aptosid Installer" alt="aptosid-Installer1" /></div>
@@ -473,8 +473,7 @@ install-gui.bash
 
 							<p>Beiden kunnen ook met de konsole/terminal gestart worden:</p>
 <pre>
-sux
-gparted
+su-to-root -X -c gparted
 </pre>
 							<p>of</p>
 <pre>su
@@ -556,20 +555,22 @@ man deluser
 
 	</div>
 	<div class="divider" id="sux">
-	<h2>Over sux</h2>
+	<h2>Over su-to-root -X -c &lt;application&gt;</h2>
 							<p>Talrijke commando's moeten uitgevoerd worden met root rechten. Om dit te bereiken type je:</p>
 <pre>
-sux
+su
 </pre>
 
-							<p>Terwijl het algemene commando om root te worden 'su' is, gebruiken we <span class="highlight-3">sux</span> om GUI / X11 applicatie's als root via de command lijn op te starten (in hun grafische mode), <span class="highlight-3">sux</span> zorgt ervoor dat het commando met de X credentials van het doel wordt opgestart.</p>
+							<p>Terwijl het algemene commando om root te worden 'su' is, gebruiken we <span class="highlight-3">su-to-root -X -c &lt;application&gt;</span> om GUI / X11 applicatie's als root via de command lijn op te starten (in hun grafische mode),. <!--<span class="highlight-3">sux</span> zorgt ervoor dat het commando met de X credentials van het doel wordt opgestart.--></p>
+
+							<p>Refer to <a href="term-konsole-nl.htm#sux"> About Xapps whilst in X as root</a> </span></p>
 
 							<p>Sommige KDE applicaties hebben <span class="highlight-3">dbus-launch</span> nodig en kunnen op deze manier gestart worden:</p>
 <pre>
 dbus-launch &lt;Application&gt;
 </pre>
 
-							<p>Een voorbeeld van het draaien van een X11 app via sux is het gebruiken van een tekst editor om een root bestand te wijzigen via kwrite of kate, of om te partitioneren m.b.v. gparted of om een Xapp file manager zoals konqueror op te starten. Je kunt ook root bestanden wijzigigen door er met de rechtermuisknop op te klikken en dan te kiezen voor 'edit-as-root'. Er wordt dan om het root wachtwoord gevraagd. Dit je moet dan invoeren en het roept dan het programma kdesu in de achtergrond op.</p>
+							<p>Een voorbeeld van het draaien van een X11 app via <span class="highlight-3">su-to-root -X -c</span> is het gebruiken van een tekst editor om een root bestand te wijzigen via kwrite of kate, of om te partitioneren m.b.v. gparted of om een Xapp file manager zoals konqueror op te starten. Je kunt ook root bestanden wijzigigen door er met de rechtermuisknop op te klikken en dan te kiezen voor 'edit-as-root'. Er wordt dan om het root wachtwoord gevraagd. Dit je moet dan invoeren en het roept dan het programma kdesu in de achtergrond op.</p>
 
 							<p>Anders als 'sudo' voor alle users op sommige andere Linux-systemen, betekent dit dat een user niet zomaar sudo kan intypen om programma's met root-rechten uit te voeren. Hierdoor kunnen namelijk risico's onstaan die je systeem kunnen beschadigen.</p>
 
@@ -578,7 +579,7 @@ dbus-launch &lt;Application&gt;
 							<p class="highlight-2">Je moet om geen root worden in een konsole/terminal om te werken met een Internetbrowser, een mailprogramma of Office-applicaties! Deze programma's gebruik je als user en niet als root.</p>
 	</div>
 
-		<div id="rev">Inhoud het laatst gewijzigd op 10/01/2013 0835 UTC</div>
+		<div id="rev">Inhoud het laatst gewijzigd op 03/04/2013 0100 UTC</div>
 </div>
 </body>
 </html>

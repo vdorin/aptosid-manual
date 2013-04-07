@@ -456,7 +456,7 @@ install-mbr /dev/sdz
 
 							<p><b>1.</b> O Instalador pode ser executado a partir do <span class="highlight-3"> ícone no Desktop (Área de Trabalho), clicando em KMenu > System (Sistema) > aptosid-installer</span>, ou via terminal usando:</p>
 <pre>
-sux
+su
 install-gui.bash
 </pre>
 		<div class="screenshot"><img src="../lib/images-pt-br/installer-pt-br/installer1-pt-br.png" title="Welcome tab - aptosid Installer" alt="aptosid-Installer1" /></div>
@@ -477,8 +477,7 @@ install-gui.bash
 
 							<p>Você pode iniciá-los pelo terminal, também:</p>
 <pre>
-sux
-gparted
+su-to-root -X -c gparted
 </pre>
 		<p>ou</p>
 <pre>su
@@ -567,10 +566,12 @@ man deluser
 	<h2>Sobre o sux</h2>
 							<p>Muitos comandos só rodam com privilégios de root. Para isso, digite:</p>
 <pre>
-sux
+su
 </pre>
 
-							<p>O comando mais comum para se tornar root é o 'su", porém ao usar <span class="highlight-3">sux</span> você poderá rodar aplicações GUI / X11 pela linha de comando e executar aplicações gráficas. Isto porque o <span class="highlight-3">sux</span> envolve o 'su', que transfere suas credenciais X para o usuário alvo.</p>
+							<p>O comando mais comum para se tornar root é o 'su", porém ao usar <span class="highlight-3">su-to-root -X -c &lt;application&gt;</span> você poderá rodar aplicações GUI / X11 pela linha de comando e executar aplicações gráficas. <!--Isto porque o <span class="highlight-3">sux</span> envolve o 'su', que transfere suas credenciais X para o usuário alvo.--></p>
+
+							<p>Refer to <a href="term-konsole-pt-br.htm#sux"> About Xapps whilst in X as root</a> </span></p>
 
 							<p>Algumas aplicações do KDE exigem que o <span class="highlight-3">dbus-launch</span> seja rodado à frente delas:</p>
 <pre>
@@ -585,7 +586,7 @@ dbus-launch &lt;aplicação&gt;
 
 							<p class="highlight-2">Em nenhuma circunstância torne-se root para rodar aplicações que um usuário comum executa no seu dia a dia, como enviar emails, montar planilhas, navegar na Internet etc.</p>
 	</div>
-	<div id="rev">Page  last revised 10/01/2013 0835 UTC</div>
+	<div id="rev">Page  last revised 03/04/2013 0100 UTC</div>
 
 </div>
 </body>

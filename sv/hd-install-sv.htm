@@ -425,7 +425,7 @@ install-mbr /dev/sdz
 
 							<p><b>1.</b> Installationsprogrammet startas fr&aring;n<span class="highlight-3"> skrivbordsikonen, K-Meny> System>aptosid-installer</span>, eller via konsollen med:</p>
 <pre>
-sux
+su
 install-gui.bash
 </pre>
 		<div class="screenshot"><img src="../lib/images-en/installer-en/installer1-en.png" title="Welcome tab - aptosid Installer" alt="aptosid-Installer1" /></div>
@@ -446,8 +446,7 @@ install-gui.bash
 
 							<p>Du kan &auml;ven starta dem fr&aring;n konsole/terminalen</p>
 <pre>
-sux
-gparted
+su-to-root -X -c gparted
 </pre>
 		<p>or</p>
 <pre>su
@@ -536,20 +535,22 @@ man deluser
 
 	</div>
 	<div class="divider" id="sux">
-	<h2>About sux</h2>
+	<h2>About su-to-root -X -c &lt;application&gt;</h2>
 							<p>Flertalet kommandon kr&auml;ver att du k&ouml;r dem som root. F&ouml;r att m&ouml;jligg&ouml;ra detta skriver du:</p>
 <pre>
-sux
+su
 </pre>
 
-							<p>Det vanliga kommandot f&ouml;r att bli root &auml;r 'su' men genom att anv&auml;nda <span class="highlight-3">sux</span> kan du &auml;ven som root k&ouml;ra GUI/X11-applikationer fr&aring;n terminalen. </p>
+							<p>Det vanliga kommandot f&ouml;r att bli root &auml;r 'su' men genom att anv&auml;nda <span class="highlight-3">su-to-root -X -c &lt;application&gt;. <!--</span> kan du &auml;ven som root k&ouml;ra GUI/X11-applikationer fr&aring;n terminalen. --></p>
+
+							<p>Refer to <a href="term-konsole-sv.htm#sux"> About Xapps whilst in X as root</a> </span></p>
 
 							<p>Some KDE applications require <span class="highlight-3">dbus-launch</span> in front of the application:</p>
 <pre>
 dbus-launch &lt;Application&gt;
 </pre>
 
-							<p>Ett exempel d&auml;r man k&ouml;r ett X11-program via sux &auml;r n&auml;r du beh&ouml;ver justera en konfigurationsfil som kr&auml;ver root-r&auml;ttigheter med hj&auml;lp av t.ex kate eller n&auml;r du vill genomf&ouml;ra en partitionering med gparted. Du kan ocks&aring; editera root-filer genom att h&ouml;gerklicka p&aring; dem och v&auml;lja  'edit-as-root', skriva in ditt root-l&ouml;senord, och kdesu kontaktas i bakgrunden.</p>
+							<p>Ett exempel d&auml;r man k&ouml;r ett X11-program via <span class="highlight-3">su-to-root -X -c </span> &auml;r n&auml;r du beh&ouml;ver justera en konfigurationsfil som kr&auml;ver root-r&auml;ttigheter med hj&auml;lp av t.ex kate eller n&auml;r du vill genomf&ouml;ra en partitionering med gparted. Du kan ocks&aring; editera root-filer genom att h&ouml;gerklicka p&aring; dem och v&auml;lja  'edit-as-root', skriva in ditt root-l&ouml;senord, och kdesu kontaktas i bakgrunden.</p>
 
 							<p>Till skillnad fr&aring;n 'sudo' kan inte n&aring;gon bara skriva sudo och skada ditt system.</p>
 
@@ -557,7 +558,7 @@ dbus-launch &lt;Application&gt;
 
 							<p class="highlight-2">Du b&ouml;r aldrig vara root i konsollen/terminalen f&ouml;r att k&ouml;ra standardprogram som du vanligtvis k&ouml;r som vanlig anv&auml;ndare. T.ex e-postprogram, office, webbl&auml;sare osv.</p>
 	</div>
-	<div id="rev">Content last revised 10/01/2013 0835 UTC</div>
+	<div id="rev">Content last revised 103/04/2013 0100 UTC</div>
 
 </div>
 </body>

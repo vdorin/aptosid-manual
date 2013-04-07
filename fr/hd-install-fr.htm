@@ -476,6 +476,7 @@ install-mbr /dev/sdz
 							#### -->
 							<p><b>1.</b> L'installateur se démarre depuis l'<span class="highlight-3">icone sur le bureau, ou par KMenu &gt; Système &gt; aptosid-installer</span>, ou la console en y entrant :</p>
 <pre>
+su
 install-gui.bash
 </pre>
 		<div class="screenshot"><img src="../lib/images-fr/installer-fr/installer1-fr.png" title="Welcome tab - aptosid Installer" alt="l'installeur de aptosid - 1" /></div>
@@ -496,8 +497,7 @@ install-gui.bash
 
 							<p>Les utilitaires de partitionnement peuvent être lancés depuis une console/terminal :</p>
 <pre>
-sux
-gparted
+su-to-root -X -c gparted
 </pre>
 		<p>ou</p>
 <pre>su
@@ -588,20 +588,22 @@ man deluser
 							<p><span class="highlight-3">Kuser</span> peut également créer un nouvel utilisateur, cependant vous aurez besoin d'ajuster manuellement les autorisations du nouvel utilisateur.</p>
 	</div>
 	<div class="divider" id="sux">
-	<h2>À propos de sux</h2>
+	<h2>À propos de su-to-root -X -c &lt;application&gt;</h2>
 							<p>De nombreuses commandes requièrent d'être effectuées avec des privilèges d'administrateur (root). Pour ce faire entrez :</p>
 <pre>
-sux
+su
 </pre>
 
-							<p>Alors que la commande ordinaire pour devenir root est 'su', utiliser <span class="highlight-3">sux</span> à la place vous permettra de pouvoir lancer des applications avec interfaces graphiques X/X11 depuis la console et permettre ainsi à root (l'administrateur) d'utiliser celles-ci. Car <span class="highlight-3">sux</span> est une encapsulation de la commande 'su' standard qui transfère les permissions sur X de l'utilisateur à l'administrateur.</p>
+							<p>Alors que la commande ordinaire pour devenir root est 'su', utiliser <span class="highlight-3">su-to-root -X -c &lt;application&gt;</span> à la place vous permettra de pouvoir lancer des applications avec interfaces graphiques X/X11 depuis la console et permettre ainsi à root (l'administrateur) d'utiliser celles-ci. <!-- Car <span class="highlight-3">sux</span> est une encapsulation de la commande 'su' standard qui transfère les permissions sur X de l'utilisateur à l'administrateur.--></p>
+
+							<p>Refer to <a href="term-konsole-fr.htm#sux"> About Xapps whilst in X as root</a> </span></p>
 
 							<p>Certains applications KDE requièrent que <span class="highlight-3">dbus-launch</span> soient indiqués devant le nom de l'application :</p>
 <pre>
 dbus-launch &lt;Application&gt;
 </pre>
 
-							<p>Pour des exemples d'utilisation d'applications X11 via sux, on pourra citer l'emploi d'éditeurs comme Kate ou Kwrite, de gestionnaires de partitions comme GParted ou de gestionnaires de fichiers comme Konqueror. Vous pouvez d'autre part modifier les fichiers de root en cliquant sur ceux-ci en choisissant 'éditer en tant que root', puis entrant votre mot de passe d'administrateur, ce qui appelle kdesu en tâche de fond.</p>
+							<p>Pour des exemples d'utilisation d'applications X11 via <span class="highlight-3">su-to-root -X -c</span>, on pourra citer l'emploi d'éditeurs comme Kate ou Kwrite, de gestionnaires de partitions comme GParted ou de gestionnaires de fichiers comme Konqueror. Vous pouvez d'autre part modifier les fichiers de root en cliquant sur ceux-ci en choisissant 'éditer en tant que root', puis entrant votre mot de passe d'administrateur, ce qui appelle kdesu en tâche de fond.</p>
 
 							<p>Cette approche est très différente de 'sudo' qui suppose que quiconque qui passe simplement par là puisse taper 'sudo' et disposer alors de moyens potentiels d'endommager sévèrement votre système.</p>
 
@@ -609,7 +611,7 @@ dbus-launch &lt;Application&gt;
 
 							<p class="highlight-2">Sous aucun prétexte, vous ne devez vous trouver être root dans une console/terminal pour utiliser des applications de production ou de communication ordinairement employées par un simple utilisateur, comme pour rédiger/envoyer des courriels, créer des tableaux, surfer, etc.</p>
 	</div>
-	<div id="rev">Page  last revised 10/01/2013 0835 UTC</div>
+	<div id="rev">Page  last revised 03/04/2013 0100 UTC</div>
 
 </div>
 </body>

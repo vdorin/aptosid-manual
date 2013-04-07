@@ -457,7 +457,7 @@ install-mbr /dev/sdz
 
 							<p><b>1. </b>Инсталляционнoе приложение удобно запускается с рабочего стола, или из <span class="highlight-3">Kmenu -> System -> aptosid-installer</span>, или в консоли командой:</p>
 <pre>
-sux
+su
 install-gui.bash
 </pre>
 		<div class="screenshot"><img src="../lib/images-ru/installer-ru/installer1-ru.png" title="Welcome tab - aptosid Installer" alt="aptosid-Installer1" /></div>
@@ -477,9 +477,8 @@ install-gui.bash
 							<p>Если необходимо заново создать разделы, то кнопкой <span class="highlight-3">запускается графический менеджер разбиения дисков</span>; подробно описаный в главах руководства <a href="part-cfdisk-ru.htm">Разбиение на разделы с помощью cfdisk</a> и соответственно <a href="part-gparted-ru.htm">Разбивка жесткого диска с Gparted/KDE Partition Manager</a></p>
 
 							<p>Из консоли запуск осуществляется следующими командами:</p>
- <pre>
-sux
-gparted
+<pre>
+su-to-root -X -c gparted
 </pre>
 							<p>или</p>
 <pre>
@@ -563,20 +562,22 @@ man deluser
 
 	</div>
 	<div class="divider" id="sux">
-	<h2>О команде sux</h2>
+	<h2>О команде su-to-root -X -c &lt;application&gt;</h2>
 							<p>Многие системные команды должны запускаться с привилегиями root. Это делается путем ввода:</p>
 <pre>
-sux
+su
 </pre>
 
-							<p>С помощью команды 'su' Вы сможете запускать только консольные приложения с привилегиями администратора, в то время как команда <span class="highlight-3">sux</span> даёт возможность запускать приложения с графической оболочкой (GUI / X11). <span class="highlight-3">sux</span> передает X-свойства для конечного пользователя.</p>
+							<p>С помощью команды 'su' Вы сможете запускать только консольные приложения с привилегиями администратора, в то время как команда <span class="highlight-3">su-to-root -X -c &lt;application&gt;</span> даёт возможность запускать приложения с графической оболочкой (GUI / X11). <!--<span class="highlight-3">sux</span> передает X-свойства для конечного пользователя.--></p>
+
+							<p>Refer to <a href="term-konsole-ru.htm#sux"> About Xapps whilst in X as root</a> </span></p>
 
 							<p>Некоторые приложения KDE требуют предварительного запуска <span class="highlight-3">dbus-launch</span>:</p>
 <pre>
 dbus-launch &lt;Application&gt;
 </pre>
 
-							<p>Как пример, Вы можете запускать с помощью sux текстовые редакторы вроде kwrite или kate, для редактирования системных файлов, или gparted, для редактирования разделов, а также файловые менеджеры, например, konqueror. Вы также можете изменять системные файлы, нажав правой кнопкой на файле и выбрав в контекстном меню 'edit-as-root', потом введите пароль root, это вызовет kdesu.</p>
+							<p>Как пример, Вы можете запускать с помощью <span class="highlight-3">su-to-root -X -c</span> текстовые редакторы вроде kwrite или kate, для редактирования системных файлов, или gparted, для редактирования разделов, а также файловые менеджеры, например, konqueror. Вы также можете изменять системные файлы, нажав правой кнопкой на файле и выбрав в контекстном меню 'edit-as-root', потом введите пароль root, это вызовет kdesu.</p>
 
 							<p>В отличие от 'sudo', сложнее навредить системе просто набрав 'sudo'.</p>
 
@@ -584,7 +585,7 @@ dbus-launch &lt;Application&gt;
 
 							<p class="highlight-2">Ни при каких обстоятельствах Вы не должны запускать интернет-браузеров, программ электронной почты, офисных программ во время работы в консоли/терминале с привелегиями root.</p>
 	</div>
-	<div id="rev">Содержание, последний раз пересмотрено 10/01/2013 0835 UTC</div>
+	<div id="rev">Содержание, последний раз пересмотрено 03/04/2013 0100 UTC</div>
 
 </div>
 </body>
