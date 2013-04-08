@@ -510,7 +510,7 @@ update-grub
 						<ol>
 							<li>Para identificar e confirmar suas partições (p. ex. [h,s]d[a..]X), todas as ações a seguir precisam de privilégios de administrador, portanto torne-se root (#):
 <pre>
-$ sux
+$ su
 </pre>
 							</li>
 							<li>Daí digite:
@@ -543,7 +543,7 @@ mount /dev/xdxx /media/xdxx
 
 							<p>Para recuperar o Grub 2, se ele tiver sido corrompido ou sobrescrito na MBR, crie um ambiente <span class="highlight-3">chroot</span>. <span class="highlight-3">Qualquer live.iso é suficiente pois o chroot vai utilizar o sistema instalado no seu disco, de modo que você vai poder restaurar a versão apropriada do grub seja ela grub1 (legacy) ou grub2.</span></p>
 
-							<p>Inicie sua máquina com uma live.iso do aptosid que seja apropriada para seu sistema (CD, DVD, pendrive ou cartão SSD de 32 ou 64 bit) e abra o terminal. Digite <span class="highlight-3">sux</span> e pressione [ENTER] para passar a ter permissões de root.</p>
+							<p>Inicie sua máquina com uma live.iso do aptosid que seja apropriada para seu sistema (CD, DVD, pendrive ou cartão SSD de 32 ou 64 bit) e abra o terminal. Digite <span class="highlight-3">su</span> e pressione [ENTER] para passar a ter permissões de root.</p>
 
 							<p>Use <span class="highlight-3">fdisk -l ou blkid</span> para assegurar-se de qual é a partição que dá o boot e pegue o nome correto. Se preferir o ambiente gráfico, use o <span class="highlight-3">Gparted</span>:</p>
 <pre>
@@ -608,7 +608,7 @@ Ctrl+d
 
 
 	</div>
-	<div id="rev">Page last revised 21/10/2011 0330 UTC</div>
+	<div id="rev">Page last revised 03/04/2013 0100 UTC</div>
 
 </div>
 </body>

@@ -511,7 +511,7 @@ update-grub
 						<ol>
 							<li>Per identificare e confermare le partizioni (ad es. [h,s]d[a..]X) tutte le azioni seguenti richiedono privilegi di root, quindi diventare root (#):
 <pre>
-$ sux
+$ su
 </pre>
 							</li>
 							<li>Una volta che si è root scrivere:
@@ -544,7 +544,7 @@ mount /dev/xdxx /media/xdxx
 
 							<p>Per ripristinare Grub 2, se è stato sovrascritto o se si è corrotto nell'MBR, configurare un ambiente <span class="highlight-3">chroot</span>. <span class="highlight-3">Qualsiasi iso live sarà sufficiente dal momento che attraverso chroot si riesce ad arrivare al sistema installato nell'hard disk e si può quindi ripristinare la versione di grub appropriata, grub1 (grub-legacy) oppure grub2.</span></p>
 
-							<p>Avviare una live aptosid.iso appropriata per il sistema (32 o 64 bit CD, DVD, chiavetta USB oppure una scheda SSD) ed aprire la console. Scrivere <span class="highlight-3">sux</span> e premere Invio per ottenere i permessi di root.</p>
+							<p>Avviare una live aptosid.iso appropriata per il sistema (32 o 64 bit CD, DVD, chiavetta USB oppure una scheda SSD) ed aprire la console. Scrivere <span class="highlight-3">su</span> e premere Invio per ottenere i permessi di root.</p>
 
 							<p>Utilizzando <span class="highlight-3">fdisk -l o blkid</span>, verificare quale partizione è quella di avvio e prendere il nome corretto. Se si preferisce una interfaccia grafica utilizzare <span class="highlight-3">Gparted</span>:</p>
 <pre>
@@ -609,7 +609,7 @@ Ctrl+d
 
 
 	</div>
-	<div id="rev">Page last revised 21/10/2011 0330 UTC</div>
+	<div id="rev">Page last revised 03/04/2013 0100 UTC</div>
 
 </div>
 </body>

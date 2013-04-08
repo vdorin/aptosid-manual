@@ -510,7 +510,7 @@ update-grub
 						<ol>
 							<li>For at identificere og bekræfte dine partitioner (e.g. [h,s]d[a..]X) skal du have root rettigheder, få dem med:
 <pre>
-$ sux
+$ su
 </pre>
 							</li>
 							<li>Når du er root, skriv da:
@@ -543,7 +543,7 @@ mount /dev/xdxx /media/xdxx
 
 							<p>For at genoprette Grub hvis den er blevet overskrevet eller korrumperet i MBR, skal du opsætte et <span class="highlight-3">chroot</span> miljø. <span class="highlight-3">Enhver live.iso er tilstrækkelig til dette formål, eftersom chroot vil give dig adgang til din harddisk installation så du kan genoprette den nødvendige grub version, hvad enten det er grub1 (grub-legacy) eller grub2.</span></p>
 
-							<p>Boot maskinen med live aptosid.iso, vælg den rette til dit system (32 eller 64 bit CD, DVD, USB-nøgle eller SSD-kort) og åben en terminal/ konsol. Skriv <span class="highlight-3">sux</span> og tast retur for at få root rettigheder.</p>
+							<p>Boot maskinen med live aptosid.iso, vælg den rette til dit system (32 eller 64 bit CD, DVD, USB-nøgle eller SSD-kort) og åben en terminal/ konsol. Skriv <span class="highlight-3">su</span> og tast retur for at få root rettigheder.</p>
 
 							<p>Anvendelse af <span class="highlight-3">fdisk -l eller blkid</span>, sikrer dig at du ved hvilken partition der er boot partitionen, og giver dig de korrekte navne. Hvis du foretrækker en grafisk brugerflade kan du anvende <span class="highlight-3">Gparted</span>:</p>
 <pre>
@@ -608,7 +608,7 @@ Ctrl+d
 
 
 	</div>
-	<div id="rev">Page last revised 21/10/2011 0330 UTC</div>
+	<div id="rev">Page last revised 03/04/2013 0100 UTC</div>
 
 </div>
 </body>

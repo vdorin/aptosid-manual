@@ -636,7 +636,7 @@ update-grub
 							#### -->
 							<li>パーティションの名前([h,s]d[a..]X,sda1など)を特定し、確認するのには root になる必要があります:
 <pre>
-$ sux
+$ su
 </pre>
 							</li>
 							<!--- ####
@@ -692,9 +692,9 @@ mount /dev/xdxx /media/xdxx
 							<p>MBR に上書きされてしまったり破壊されてしまった GRUB を回復するため <span class="highlight-3">chroot</span> の環境を作ります。<span class="highlight-3"> 旧式の GRUB でも新しい GRUB2 でも、ハードディスクにインストールされている GRUB をこの方法で回復するには、どの live.iso を使っても構いません。</span></p>
 
 							<!--- ####
-							<p>Boot up a live aptosid.iso that is appropriate for your system (32 or 64 bit CD, DVD, USB stick or an SSD card) and open the konsole. Type in <span class="highlight-3">sux</span> and press enter to give you root permissions.</p>
+							<p>Boot up a live aptosid.iso that is appropriate for your system (32 or 64 bit CD, DVD, USB stick or an SSD card) and open the konsole. Type in <span class="highlight-3">su</span> and press enter to give you root permissions.</p>
 							#### -->
-					<p>ハードウェアに合った aptosid.iso (32ビットまたは 64ビット、CD、DVD、USBスティックまたはSSDカードなど) をライブで起動し、コンソールを開きます。<span class="highlight-3">sux</span> とタイプし Enter キーを押し、root になります。</p>
+					<p>ハードウェアに合った aptosid.iso (32ビットまたは 64ビット、CD、DVD、USBスティックまたはSSDカードなど) をライブで起動し、コンソールを開きます。<span class="highlight-3">su</span> とタイプし Enter キーを押し、root になります。</p>
 
 							<!--- ####
 							<p>Using <span class="highlight-3">fdisk -l or blkid</span>, ascertain which partition is the boot partition and get the correct names. If you prefer a GUI use <span class="highlight-3">Gparted</span>:</p>
@@ -785,7 +785,7 @@ Ctrl+d
 							<p>PC を再起動します。</p>
 
 	</div>
-	<div id="rev">Page last revised 21/10/2011 0330 UTC</div>
+	<div id="rev">Page last revised 03/04/2013 0100 UTC</div>
 
 </div>
 </body>

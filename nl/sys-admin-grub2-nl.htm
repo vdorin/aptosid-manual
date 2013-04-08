@@ -506,7 +506,7 @@ update-grub
 						<ol>
 							<li>Om je partities te indentifieren en te bevestigen (bv. [h,s]d[a..]X) moten volgende acties met root rechten uitgevoerd worden, dus wordt root (#):
 <pre>
-$ sux
+$ su
 </pre>
 							</li>
 							<li>Wanneer je root bent type dan in:
@@ -539,7 +539,7 @@ mount /dev/xdxx /media/xdxx
 
 							<p>Om Grub te herstellen indien deze overschreven of corrupt is in de MBR, maak dan een <span class="highlight-3">chroot</span> omgeving aan. <span class="highlight-3">Met elke live.iso kan worden volstaan ​​en de chroot brengt u naar uw hardeschijf geïnstalleerde systeem, zodat u de juiste grub versie, grub1 (grub-legacy) of grub2 kunt herstellen.</span></p>
 
-							<p>Start op met een live aptosid.iso welke werkt voor uw systeem (32 of 64 bit CD, DVD, USB stick of een SD kaart) en open het konsole. Type in <span class="highlight-3">sux</span> en druk op enter om root toegang te krijgen.</p>
+							<p>Start op met een live aptosid.iso welke werkt voor uw systeem (32 of 64 bit CD, DVD, USB stick of een SD kaart) en open het konsole. Type in <span class="highlight-3">su</span> en druk op enter om root toegang te krijgen.</p>
 
 							<p>Gebruik <span class="highlight-3">fdisk -l or blkid</span>, gewis u ervan wlke partitie de boot partitie is en verkrijg de juiste namen. Indien je een GUI wilt gebruiken, gebruik dan <span class="highlight-3">Gparted</span>:</p>
 <pre>
@@ -605,7 +605,7 @@ Ctrl+d
 
 	</div>
 
-		<div id="rev">Inhoud het laatst gewijzigd op 21/10/2011 0330 UTC</div>
+		<div id="rev">Inhoud het laatst gewijzigd op 03/04/2013 0100 UTC</div>
 </div>
 </body>
 </html>

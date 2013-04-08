@@ -512,7 +512,7 @@ update-grub
 						<ol>
 							<li>Pour identifier et confirmer l'écriture sur les bonnes partitions (ex; [h,s]d[a..]X) toutes les commandes qui suivent doivent s'exécuter avec des privilèges root, donc devenez root (#):
 <pre>
-$ sux
+$ su
 </pre>
 							</li>
 							<li>Quand vous êtes root, entrez:
@@ -545,7 +545,7 @@ mount /dev/xdxx /media/xdxx
 
 							<p>Pour restaurer Grub, s'il a été recouvert ou corrompu sur le MBR, configurer un environnement <span class="highlight-3">chroot</span>. <span class="highlight-3">Toute live.iso suffira étant donné que le chroot exploitera le système d'exploitation installé sur le disque dur, afin de vous permettre de restaurer la version de grub appropriée, qu'il s'agissse de grub1 (grub-legacy) ou de grub2.</span></p>
 
-							<p>Démarrez sur un support live aptosid.iso approprié à votre machine (CD, DVD, clé USB ou carte SSD 32 ou 64 bit) puis ouvrez une  konsole. Entrez-y <span class="highlight-3">sux</span> puis appuyez sur "Entrée" pour disposer de droits d'adminstrateur.</p>
+							<p>Démarrez sur un support live aptosid.iso approprié à votre machine (CD, DVD, clé USB ou carte SSD 32 ou 64 bit) puis ouvrez une  konsole. Entrez-y <span class="highlight-3">su</span> puis appuyez sur "Entrée" pour disposer de droits d'adminstrateur.</p>
 
 							<p>Utiliser <span class="highlight-3">fdisk -l ou blkid</span>, vous permet de vous assurer de l'adresse de la partition où se trouve le boot. Si vous préférez vérifier en mode graphique utilisez <span class="highlight-3">Gparted</span>:</p>
 <pre>
@@ -610,7 +610,7 @@ Ctrl+d
 
 
 	</div>
-	<div id="rev">Dernière révision le 21/10/2011 0330 UTC</div>
+	<div id="rev">Dernière révision le 03/04/2013 0100 UTC</div>
 
 </div>
 </body>

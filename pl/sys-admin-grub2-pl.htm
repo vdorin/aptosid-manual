@@ -510,7 +510,7 @@ update-grub
 						<ol>
 							<li>Aby zidentyfikować i potwierdzić partycję ([h,s]d[a..]X) wszytkie następujące akcje muszą być przeprowadzone z uprawnioniami roota, tak więc wykonaj (#):
 <pre>
-$ sux
+$ su
 </pre>
 							</li>
 							<li>Jako root wpisz:
@@ -543,7 +543,7 @@ mount /dev/xdxx /media/xdxx
 
 							<p>Aby przywrócić Gruba (jeżeli został nadpisany lub uszkodzony w MBR) trzeba ustawić środowisko <span class="highlight-3">chroot</span>. <span class="highlight-3"> Można użyć każdej dowolnej live.iso, ponieważ chroot przenosi Cię na system zainstalowany na dysku twardym, umożliwia to przywrócenie Grub1 (grub-legacy) lub Grub 2. </span></p>
 
-							<p>Wystartuj live aptosid.iso odpowiedni do twojego systemu (32 lub 64 bit CD, DVD, USB flash lub karta SSD) i otwórz terminal. Wpisz <span class="highlight-3">sux</span> i naciśnij enter w celu uzyskania uprawnień roota. </p>
+							<p>Wystartuj live aptosid.iso odpowiedni do twojego systemu (32 lub 64 bit CD, DVD, USB flash lub karta SSD) i otwórz terminal. Wpisz <span class="highlight-3">su</span> i naciśnij enter w celu uzyskania uprawnień roota. </p>
 
 							<p>Z użyciem <span class="highlight-3">fdisk -l </span> lub <span class="highlight-3">blkid</span> można się upewnić, która partycja jest partycją bootowalną, i otrzymać poprawną nazwę (jeśli interfejs graficzny jest wymagany, użyj <span class="highlight-3">Gparted)</span>:</p>
 <pre>
@@ -608,7 +608,7 @@ Ctrl+d
 
 
 	</div>
-	<div id="rev">Page last revised 21/10/2011 0330 UTC</div>
+	<div id="rev">Page last revised 03/04/2013 0100 UTC</div>
 
 </div>
 </body>

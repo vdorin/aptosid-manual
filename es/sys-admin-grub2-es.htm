@@ -511,7 +511,7 @@ update-grub
 						<ol>
 							<li>Para identificar y confirmar sus particiones (p. ej. [h,s]d[a..]X) todas las acciones que siguen necesitan privilegios de super-usuario, así que conviértase en root (#):
 <pre>
-$ sux
+$ su
 </pre>
 							</li>
 							<li>Cuando ya sea root, escriba:
@@ -544,7 +544,7 @@ mount /dev/xdxx /media/xdxx
 
 							<p>Para recuperar Grub si ha sido sobreescrito o ha quedado corrupto en el MBR, establezca un entorno <span class="highlight-3">chroot</span>. <span class="highlight-3">Cualquier disco live.iso será suficiente, ya que chroot le lleva al sistema instalado en su disco duro por lo que puede recuperar la versión de grub apropiada, ya sea grub1 (grub-legacy) o grub2.</span></p>
 
-							<p>Arranque un aptosid.iso CD-live que sea apropiado para su sistema (32 o 64 bits CD, DVD, lápiz USB o tarjeta SSD) y abra la consola. Escriba <span class="highlight-3">sux</span> y presione Intro para tener permisos de root.</p>
+							<p>Arranque un aptosid.iso CD-live que sea apropiado para su sistema (32 o 64 bits CD, DVD, lápiz USB o tarjeta SSD) y abra la consola. Escriba <span class="highlight-3">su</span> y presione Intro para tener permisos de root.</p>
 
 							<p>Usando <span class="highlight-3">fdisk -l</span> o <span class="highlight-3">blkid</span>, determine qué partición es la de arranque y tome nota de los nombres correctos. Si prefiere un GUI use <span class="highlight-3">Gparted</span>.</p>
 <pre>
@@ -609,7 +609,7 @@ Ctrl+d
 
 
 	</div>
-	<div id="rev">Page last revised 21/10/2011 0330 UTC</div>
+	<div id="rev">Page last revised 03/04/2013 0100 UTC</div>
 
 </div>
 </body>

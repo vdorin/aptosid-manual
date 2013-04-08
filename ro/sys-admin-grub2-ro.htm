@@ -510,7 +510,7 @@ update-grub
 						<ol>
 							<li>Pentru a indentifica și confirma partițiile voastre (e.g. [h,s]d[a..]X) toate acțiunile următoare cer drepturi de administrator <i>(root)</i>, deci să devenim <i>root</i> (#):
 <pre>
-$ sux
+$ su
 </pre>
 							</li>
 							<li>Fiind <i>root</i> tipăriți:
@@ -543,7 +543,7 @@ mount /dev/xdxx /media/xdxx
 
 							<p>Recuperarea lui Grub 2, dacă a fost suprascris sau stricat în MBR, folosiți următoarea metodă.<br />  <span class="highlight-3">Oricare live.iso  va fi suficient pentru a folosi <i>chroot</i> și a accesa sistemul instalat pe hard disk putând restaura versiunea grub corespunzătoare, grub1 (grub-legacy) sau grub2.</span></p>
 
-							<p>Boot-ați de pe un live aptosid.iso care este cât mai apropiată de sistemul vostru (32 sau 64 bit CD, DVD, USB stick sau un SSD card) și deschideți o konsole. Tipăriți  <span class="highlight-3">sux</span> și apăsați enter pentru a da parola și a primi permisiuni de administrator <i>(root)</i>.</p>
+							<p>Boot-ați de pe un live aptosid.iso care este cât mai apropiată de sistemul vostru (32 sau 64 bit CD, DVD, USB stick sau un SSD card) și deschideți o konsole. Tipăriți  <span class="highlight-3">su</span> și apăsați enter pentru a da parola și a primi permisiuni de administrator <i>(root)</i>.</p>
 
 							<p>Folosind <span class="highlight-3">fdisk -l</span> sau <span class="highlight-3">blkid</span>, aflați care este numele corect al partiției de boot. Dacă preferați GUI folosiți <span class="highlight-3">Gparted</span>:</p>
 <pre>
@@ -608,7 +608,7 @@ Ctrl+d
 
 
 	</div>
-	<div id="rev">Page last revised 21/10/2011 0330 UTC</div>
+	<div id="rev">Page last revised 03/04/2013 0100 UTC</div>
 
 </div>
 </body>
