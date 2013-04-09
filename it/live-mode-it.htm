@@ -347,7 +347,7 @@
 
 							<p>Metodo semplice, scrivere solo:</p>
 <pre>
-sux
+su
 </pre>
 
 				<h6>Impostare una password di root (temporanea)</h6>
@@ -362,16 +362,15 @@ aptosid@0[aptosid]$
 </pre>
 							<p>Ora si può usare questa password per il resto della sessione live di aptosid.</p>
 
-							<p><span class="highlight-3">sudo non è supportato nelle installazoni su hard disk, vedere </span><a href="term-konsole-it.htm#sudo">sudo</a> e <a href="term-konsole-it.htm#sux">sux</a>.</p>
+							<p><span class="highlight-3">sudo non è supportato nelle installazoni su hard disk, vedere </span><a href="term-konsole-it.htm#sudo">sudo</a> e <a href="term-konsole-it.htm#sux">sux</a> on how to set an alias.</p>
 
 				<h6>Avviare un programma da una console di root</h6>
 
-							<p>Utilizzando <span class="highlight-3">sux</span> si farà diventare root l'utente con i privilegi Xapp.</p>
+							<p>Utilizzando <span class="highlight-3">su-to-root -X -c &lt;application&gt;</span> si farà diventare root l'utente con i privilegi Xapp.</p>
 
 							<p>Aprire una console/shell:</p>
 <pre >
-aptosid@0[aptosid]$ sux
-root@0[aptosid]# gparted <i>(o quello che si vuole...)</i>
+aptosid@0[aptosid]$ su-to-root -X -c gparted  <i>(o quello che si vuole...)</i>
 </pre>
 
 							<p>Alcune applicazioni KDE richiedono <span class="highlight-3">dbus-launch</span> prima del nome dell'applicazione:</p>
@@ -414,8 +413,7 @@ apt-get install nome-del-pacchetto-che-serve
 
 
 	</div>
-
-	<div id="rev">Content last revised 14/08/2010 0100 UTC</div>
+09/04/2013 0100 UTC</div>
 </div>
 </body>
 </html>

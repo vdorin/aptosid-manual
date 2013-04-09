@@ -347,7 +347,7 @@
 
 							<p>Самий простий спосiб:</p>
 <pre>
-sux
+su
 </pre>
 
 				<h6>Для установки (тимчасового) пароля суперкористувача</h6>
@@ -362,16 +362,15 @@ aptosid@0[aptosid]$
 </pre>
 							<p>Тепер ви можете використовувати цей пароль для іншої частини вашої aptosid-Live-загрузки.</p>
 
-							<p><span class="highlight-3"> sudo не підтримується на установці на жорсткому диску, дивіться. </span><a href="term-konsole-uk.htm#sudo">sudo</a> and <a href="term-konsole-uk.htm#sux">sux</a>.</p>
+							<p><span class="highlight-3"> sudo не підтримується на установці на жорсткому диску, дивіться. </span><a href="term-konsole-uk.htm#sudo">sudo</a> and <a href="term-konsole-uk.htm#sux">sux</a> on how to set an alias.</p>
 
 				<h6>Запуск програми в терміналі</h6>
 
-							<p>Якщо Ви наберете <span class="highlight-3">sux</span> в терміналі, Ви отримаєте всі права суперкористувача</p>
+							<p>Якщо Ви наберете <span class="highlight-3">su-to-root -X -c &lt;application&gt;</span> в терміналі, Ви отримаєте всі права суперкористувача</p>
 
 							<p>Відкрийте термінал:</p>
 <pre >
-aptosid@0[aptosid]$ sux
-root@0[aptosid]# gparted <i>(or whatever you want...)</i>
+aptosid@0[aptosid]$ su-to-root -X -c gparted  <i>(or whatever you want...)</i>
 </pre>
 
 							<p>Деякі KDE програми вимагають <span class="highlight-3">dbus-launch</span> перед застосуванням:</p>
@@ -415,7 +414,7 @@ apt-get install your-preferred-package
 
 
 	</div>
-	<div id="rev">Сторінка останний раз переглянута 14/08/2010 0100 UTC</div>
+	<div id="rev">Сторінка останний раз переглянута 09/04/2013 0100 UTC</div>
 </div>
 </body>
 </html>

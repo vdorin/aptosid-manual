@@ -347,7 +347,7 @@
 
 							<p>Najprościej, wpisz w konsoli:</p>
 <pre>
-sux
+su
 </pre>
 
 				<h6>Ustawienie (tymczasowego) hasła administratora</h6>
@@ -359,16 +359,15 @@ passwd: password updated successfully
 aptosid@0[aptosid]$</pre>
 		<p>teraz możesz używać tego hasła na resztę sesji w trybie Live.</p>
 
-							<p><span class="highlight-3">sudo nie jest wspierane w instalacjach na dysku, patrz </span><a href="term-konsole-pl.htm#sudo">sudo</a> oraz <a href="term-konsole-pl.htm#sux">sux</a>.</p>
+							<p><span class="highlight-3">sudo nie jest wspierane w instalacjach na dysku, patrz </span><a href="term-konsole-pl.htm#sudo">sudo</a> oraz <a href="term-konsole-pl.htm#sux">sux</a> on how to set an alias.</p>
 
 				<h6>Wykonywanie programów w powłoce roota</h6>
 
-							<p>Wpisanie <span class="highlight-3">sux</span> nada Ci uprawnienia Xapp.</p>
+							<p>Wpisanie <span class="highlight-3">su-to-root -X -c &lt;application&gt;</span> nada Ci uprawnienia Xapp.</p>
 
 							<p>Otwórz konsolę:</p>
 <pre >
-aptosid@0[aptosid]$ sux
-root@0[aptosid]# gparted <i>(lub inny program...)</i>
+aptosid@0[aptosid]$ su-to-root -X -c gparted  <i>(lub inny program...)</i>
 </pre>
 							<p>Niektóre aplikacje KDE wymagają wywołania <span class="highlight-3">dbus-launch</span> przed aplikacją:</p>
 <pre>
@@ -409,7 +408,7 @@ apt-get install wybrany-pakiet
 					<p>Uwaga: kiedy wyłączysz komputer, zmiany nie zostaną zachowane, chyba, że włączysz <a href="hd-install-opts-pl.htm#fromiso-persist">fromiso i persist</a>.</p>
 	</div>
 
-			<div id="rev">Content last revised 14/08/2010 0100 UTC</div>
+			<div id="rev">Content last revised 09/04/2013 0100 UTC</div>
 
 
 </div>

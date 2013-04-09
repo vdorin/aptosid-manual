@@ -316,7 +316,7 @@
 
 							<p>Simple method, just type:</p>
 <pre>
-sux
+su
 </pre>
 
 				<h6>Egy (időszakos) root jelszó beállítása</h6>
@@ -331,16 +331,15 @@ aptosid@0[aptosid]$
 </pre>
 							<p>A beállított jelszót a gép újraindításáig lehet használni.</p>
 
-							<p><span class="highlight-3">sudo is not supported on hard disk installations, see </span><a href="term-konsole-hu.htm#sudo">sudo</a> and <a href="term-konsole-hu.htm#sux">sux</a>.</p>
+							<p><span class="highlight-3">sudo is not supported on hard disk installations, see </span><a href="term-konsole-hu.htm#sudo">sudo</a> and <a href="term-konsole-hu.htm#sux">sux</a> on how to set an alias.</p>
 
 				<h6>Program futtatása root shell-ből</h6>
 
-							<p>Gépeld a <span class="highlight-3">sux</span> parancsot a terminálba, hogy root jogosultságot szerezz.</p>
+							<p>Gépeld a <span class="highlight-3">su-to-root -X -c &lt;application&gt;</span> parancsot a terminálba, hogy root jogosultságot szerezz.</p>
 
 							<p>Parancssorban:</p>
 <pre >
-aptosid@0[aptosid]$ sux
-root@0[aptosid]# gparted <i>(vagy bármilyen egyéb parancs...)</i>
+aptosid@0[aptosid]$ su-to-root -X -c gparted  <i>(vagy bármilyen egyéb parancs...)</i>
 </pre>
 
 							<p>Néhány KDE alkalmazást a <span class="highlight-3">dbus-launch</span> alkalmazással együtt kell elindítani:</p>
@@ -383,7 +382,7 @@ apt-get install a-telepítendő-alkalmazás
 
 	</div>
 
-	<div id="rev">Content last revised 14/08/2010 0100 UTC</div>
+	<div id="rev">Content last revised 09/04/2013 0100 UTC</div>
 </div>
 </body>
 </html>

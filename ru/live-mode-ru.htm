@@ -347,7 +347,7 @@
 
 							<p>Эта команда является самым простым способом:</p>
 <pre>
-sux
+su
 </pre>
 
 				<h6>Установить временный пароль root</h6>
@@ -362,17 +362,16 @@ aptosid@0[aptosid]$
 
 							 <p>Этот пароль сохраняется и может быть использован до конца Live сеанса.</p>
 
-							<p><span class="highlight-3">Команда sudo не поддерживается при установке на жестком диске. Прочитайте также раздели руководства </span><a href="term-konsole-ru.htm#sudo">'команды sudo'</a> и <a href="term-konsole-ru.htm#sux">'sux'</a></p>
+							<p><span class="highlight-3">Команда sudo не поддерживается при установке на жестком диске. Прочитайте также раздели руководства </span><a href="term-konsole-ru.htm#sudo">'команды sudo'</a> и <a href="term-konsole-ru.htm#sux">'sux'</a> on how to set an alias.</p>
 
 				<h6>Запуска программ в root-терминале</h6>
 
-							<p>Команда <span class="highlight-3">sux</span> позволит приложениям с графической оболочкой работать с правами root.</p>
+							<p>Команда <span class="highlight-3">su-to-root -X -c &lt;application&gt;</span> позволит приложениям с графической оболочкой работать с правами root.</p>
 
 							<p>Откройте консолю/терминал:</p>
 
 <pre>
-aptosid@0[aptosid]$ sux
-root@0[aptosid]# gparted <em>(или желаемую программу)</em>
+aptosid@0[aptosid]$ su-to-root -X -c gparted  <em>(или желаемую программу)</em>
 </pre>
 							<p>Некоторым приложениям KDE для работы требуется <span class="highlight-3">dbus-launch</span>:</p>
 <pre>
@@ -413,7 +412,7 @@ apt-get install 'ваш предпочитаемый пакет'
 					<p>Примечание: Когда Вы выключите компьютер (в режиме ISO-образ), никакие осуществленные изменения не будут сохранены, если Вы не включите <a href="hd-install-opts-ru.htm#fromiso-persist">'fromiso и persist'</a>.</p>
 	</div>
 
-	<div id="rev">Содержание, последний раз пересмотрено 14/08/2010 0100 UTC </div>
+	<div id="rev">Содержание, последний раз пересмотрено 09/04/2013 0100 UTC</div>
 
 </div>
 </body>

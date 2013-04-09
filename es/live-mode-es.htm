@@ -347,7 +347,7 @@
 
 							<p>Un método simple, solo escriba:</p>
 <pre>
-sux
+su
 </pre>
 
 				<h6>Fijar una clave root (temporal)</h6>
@@ -361,17 +361,16 @@ aptosid@0[aptosid]$
 </pre>
 							<p>ahora puede usar esta clave durante el resto de la sesión con el LiveCD de aptosid.</p>
 
-							<p><span class="highlight-3">sudo no está soportado en las instalaciones en el disco duro; vea </span><a href="term-konsole-es.htm#sudo">sudo</a> y <a href="term-konsole-es.htm#sux">sux</a>.</p>
+							<p><span class="highlight-3">sudo no está soportado en las instalaciones en el disco duro; vea </span><a href="term-konsole-es.htm#sudo">sudo</a> y <a href="term-konsole-es.htm#sux">sux</a> on how to set an alias.</p>
 
 				<h6>Ejecutando un programa desde un terminal de root</h6>
 
-							<p>Escribiendo <span class="highlight-3">sux</span> en una consola, conseguirá privilegios de root con la posibilidad de ejecutar aplicaciones en  el entorno gráfiico X.</p>
+							<p>Escribiendo <span class="highlight-3">su-to-root -X -c &lt;application&gt;</span> en una consola, conseguirá privilegios de root con la posibilidad de ejecutar aplicaciones en  el entorno gráfiico X.</p>
 
 							<p>Abra una consola/terminal (también llamada "shell"):</p>
 
 <pre >
-aptosid@0[aptosid]$ sux
-root@0[aptosid]# gparted <i>(o lo que desee...)</i>
+aptosid@0[aptosid]$ su-to-root -X -c gparted  <i>(o lo que desee...)</i>
 </pre>
 
 							<p>Algunas aplicaciones de KDE requiren <span class="highlight-3">dbus-launch</span> antes de escribir el nombre de la aplicación:</p>
@@ -415,7 +414,7 @@ apt-get install su-paquete-preferido
 					<p>Nota: Cuando salga del Live-CD, <b>ningún</b> cambio será guardado, salvo que usted haya activado <a href="hd-install-opts-es.htm#fromiso-persist">fromiso and persist</a>.</p>
 	</div>
 
-	<div id="rev">Content last revised 14/08/2010 0100 UTC</div>
+	<div id="rev">Content last revised 09/04/2013 0100 UTC</div>
 
 
 </div>

@@ -347,7 +347,7 @@
 
 							<p>A maneira mais simples é digitar:</p>
 <pre>
-sux
+su
 </pre>
 
 				<h6>Criar uma senha temporária</h6>
@@ -359,16 +359,15 @@ passwd: password updated successfully   [passwd: senha atualizada com sucesso]
 aptosid@0[aptosid]$</pre>
 		<p>Agora você pode usar essa senha para o resto da sessão.</p>
 
-							<p><span class="highlight-3">Instalações em HDs não dão suporte ao sudo. Veja </span><a href="term-konsole-pt-br.htm#sudo">sudo</a> e <a href="term-konsole-pt-br.htm#sux">sux</a>.</p>
+							<p><span class="highlight-3">Instalações em HDs não dão suporte ao sudo. Veja </span><a href="term-konsole-pt-br.htm#sudo">sudo</a> e <a href="term-konsole-pt-br.htm#sux">sux</a> on how to set an alias.</p>
 
 				<h6>Como rodar um programa a partir do terminal, como root</h6>
 
-							<p>Se digitar  <span class="highlight-3">sux</span> você se torna root com privilégios Xapp.</p>
+							<p>Se digitar  <span class="highlight-3">su-to-root -X -c &lt;application&gt;</span> você se torna root com privilégios Xapp.</p>
 
 		<p>Abra o terminal e digite:</p>
 <pre >
-aptosid@0[aptosid]$ sux
-root@0[aptosid]# gparted <i>(ou o que você quiser...)</i>
+aptosid@0[aptosid]$ su-to-root -X -c gparted  <i>(ou o que você quiser...)</i>
 </pre>
 							<p>Algumas aplicações KDE exigem que o <span class="highlight-3">dbus-launch</span> seja rodado à frente da aplicação:</p>
 <pre>
@@ -410,7 +409,7 @@ apt-get install nome_do_pacote_desejado
 
 	</div>
 
-	<div id="rev">Content last revised 14/08/2010 0100 UTC</div>
+	<div id="rev">Content last revised 09/04/2013 0100 UTC</div>
 </div>
 </body>
 </html>

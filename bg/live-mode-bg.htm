@@ -326,7 +326,7 @@
 
 							<p>Simple method, just type:</p>
 <pre>
-sux
+su
 </pre>
 
 				<h6>За да създадете временна root-парола</h6>
@@ -341,16 +341,15 @@ sidux@0[sidux]$
 </pre>
 							<p>по-нататък можете да използвате така създадената временна парола за root, валидна до края на вашата сесия (стартирана от LiveCD-то).</p>
 
-							<p><span class="highlight-3">sudo is not supported on hard disk installations, see </span><a href="term-konsole-bg.htm#sudo">sudo</a> and <a href="term-konsole-bg.htm#sux">sux</a>.</p>
+							<p><span class="highlight-3">sudo is not supported on hard disk installations, see </span><a href="term-konsole-bg.htm#sudo">sudo</a> and <a href="term-konsole-bg.htm#sux">sux</a> on how to set an alias.</p>
 
 				<h6>Running a program from a root-shelll</h6>
 
-							<p>Командата  <span class="highlight-3">sux</span> в терминала ще ви логне като root, с права за стартиране на графични приложения в обкръжението.</p>
+							<p>Командата  <span class="highlight-3">su-to-root -X -c &lt;application&gt;</span> в терминала ще ви логне като root, с права за стартиране на графични приложения в обкръжението.</p>
 
 							<p>Отворете конзолата/терминала:</p>
 <pre >
-sidux@0[sidux]$ sux
-root@0[sidux]# gparted <i>(или програмата която искате...)</i>
+aptosid@0[aptosid]$ su-to-root -X -c gparted  <i>(или програмата която искате...)</i>
 </pre>
 							<p>Some KDE applications require <span class="highlight-3">dbus-launch</span> in front of the application:</p>
 <pre>
@@ -406,7 +405,7 @@ mount -t ntfs-3g /dev/disk/by-uuid/xxyyzz[и т.н.] /media/xdxx
 
 		<p>Сега вашия NTFS-раздел (sda1, sda2, ... sdb1, sdb2,... обозначен като xdxx по-горе) би трябвало да е монтиран <b>с права на запис (rw)</b> съответно в директорията /media/xdxx, и би трябвало да можете също и да записвате върху него. Но отново, внимавайте! <span class="highlight-3">Използвайте само в изключителни ситуации, не се препоръчва за ежедневна употреба.</span></p>
 	</div>
-	<div id="rev">Content last revised 14/03/2010 1205 UTC</div>
+	<div id="rev">Content last revised 09/04/2013 0100 UTC</div>
 </div>
 </body>
 </html>

@@ -345,7 +345,7 @@
 
 							<p>Simple method, just type:</p>
 <pre>
-sux
+su
 </pre>
 
 				<h6>Postavite povremenu root-lozinku</h6>
@@ -358,17 +358,16 @@ aptosid@0[aptosid]$
 </pre>
 							<p>sad možete koristiti lozinku za ostatak vaše aptosid-Live-sesije.</p>
 
-							<p><span class="highlight-3">sudo is not supported on hard disk installations, see </span><a href="term-konsole-hr.htm#sudo">sudo</a> and <a href="term-konsole-hr.htm#sux">sux</a>.</p>
+							<p><span class="highlight-3">sudo is not supported on hard disk installations, see </span><a href="term-konsole-hr.htm#sudo">sudo</a> and <a href="term-konsole-hr.htm#sux">sux</a> on how to set an alias.</p>
 
 				<h6>Running a program from a root-shell</h6>
 
-							<p>Upisanje <span class="highlight-3">sux</span> če vam dati root sa Xapp privilegijama.</p>
+							<p>Upisanje <span class="highlight-3">su-to-root -X -c &lt;application&gt;</span> če vam dati root sa Xapp privilegijama.</p>
 
 
 							<p>Otvorite terminal/konzolu:</p>
 <pre >
-aptosid@0[aptosid]$ sux
-root@0[aptosid]# gparted <i>(ili što god hoćete...)</i>
+aptosid@0[aptosid]$ su-to-root -X -c gparted  <i>(ili što god hoćete...)</i>
 </pre>
 							<p>Some KDE applications require <span class="highlight-3">dbus-launch</span> in front of the application:</p>
 <pre>
@@ -408,7 +407,7 @@ apt-get install vaš-paket
 					<p>Bilješka: kad ugasite Live-CD, promjene neće biti spremljene, except if you enable <a href="hd-install-opts-hr.htm#fromiso-persist">fromiso and persist</a>.</p>
 	</div>
 
-		<div id="rev">Content last revised 14/08/2010 0100 UTC</div>
+		<div id="rev">Content last revised 09/04/2013 0100 UTC</div>
 
 </div>
 </div>

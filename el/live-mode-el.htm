@@ -343,7 +343,7 @@
 
 							<p>Η απλή μέθοδος, απλά γράψτε:</p>
 <pre>
-sux
+su
 </pre>
 
 				<!--h6>Set a (temporary) root-password</h6>-->
@@ -370,24 +370,22 @@ aptosid@0[aptosid]$
 							<p>τώρα μπορείτε να χρησιμοποιήσετε αυτόν τον κωδικό πρόσβασης για το υπόλοιπο του aptosid-live-session.</p>
 
 							<!--p><span class="highlight-3">sudo is not supported on hard disk installations, see </span><a href="term-konsole-el.htm#sudo">sudo</a> and <a href="term-konsole-el.htm#sux">sux</a>.</p-->
-							<p><span class="highlight-3">Το sudo δεν υποστηρίζεται σε εγκαταστάσεις στον σκληρό δίσκο, δείτε </span><a href="term-konsole-el.htm#sudo">sudo</a> και <a href="term-konsole-el.htm#sux">sux</a>.</p>
+							<p><span class="highlight-3">Το sudo δεν υποστηρίζεται σε εγκαταστάσεις στον σκληρό δίσκο, δείτε </span><a href="term-konsole-el.htm#sudo">sudo</a> και <a href="term-konsole-el.htm#sux">sux</a> on how to set an alias.</p>
 
 				<!--h6>Running a program from a root-shell</h6-->
 				<h6>Τρέχοντας ένα πρόγραμμα από ένα root-shell</h6>
 
 							<!--p>Typing  <span class="highlight-3">sux</span> will take you to root with Xapp privileges.</p>-->
-							<p>Πληκτρολογώντας <span class="highlight-3">sux</span> θα γίνετε υπέρ-χρήστη (root) με προνόμια Xapp (θα μπορείτε να τρέξετε γραφικές εφαρμογές σαν root).</p>
+							<p>Πληκτρολογώντας <span class="highlight-3">su-to-root -X -c &lt;application&gt;</span> θα γίνετε υπέρ-χρήστη (root) με προνόμια Xapp (θα μπορείτε να τρέξετε γραφικές εφαρμογές σαν root).</p>
 
 							<!--p>Open a console/ shell:</p>-->
 							<p>ανοίξετε μια κονσόλα / κέλυφος (shell)</p>
 
 <!--pre >
-aptosid@0[aptosid]$ sux
-root@0[aptosid]# gparted <i>(or whatever you want...)</i>
+aptosid@0[aptosid]$ su-to-root -X -c gparted  <i>(or whatever you want...)</i>
 </pre>-->
 <pre >
-aptosid@0[aptosid]$ sux
-root@0[aptosid]# gparted <i>(ή ότι άλλο επιθυμείτε ...)</i>
+aptosid@0[aptosid]$ su-to-root -X -c gparted  <i>(ή ότι άλλο επιθυμείτε ...)</i>
 </pre>
 							<p>Ορισμένες KDE εφαρμογές χρειάζονται την λέξη <span class="highlight-3">dbus-launch</span> μπροστά από το όνομα της εφαρμογής:</p>
 <pre>
@@ -440,7 +438,7 @@ apt-get install το-πακέτο-που-θέλετε
 
 	</div>
 
-	<div id="rev">Τελευταία αναθεώρηση περιεχομένου 14/08/2010 0100 UTC</div>
+	<div id="rev">Τελευταία αναθεώρηση περιεχομένου 09/04/2013 0100 UTC</div>
 </div>
 </body>
 </html>

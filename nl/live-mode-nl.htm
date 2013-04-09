@@ -347,7 +347,7 @@
 
 							<p>Eenvoudige methode, gebruik :</p>
 <pre>
-sux
+su
 </pre>
 
 				<h6>Stel een (tijdelijke) root-wachtwoord in</h6>
@@ -362,16 +362,15 @@ aptosid@0[aptosid]$
 </pre>
 		<p>nu kun je dit wachtwoord gebruiken tijdens deze aptosid-Live-sessie, bij herstart (v/d livecd) moet je hem opnieuw instellen.</p>
 
-							<p><span class="highlight-3">sudo wordt niet ondersteund bij installaties op een harde schijf, zie </span><a href="term-konsole-nl.htm#sudo">sudo</a> en <a href="term-konsole-nl.htm#sux">sux</a>.</p>
+							<p><span class="highlight-3">sudo wordt niet ondersteund bij installaties op een harde schijf, zie </span><a href="term-konsole-nl.htm#sudo">sudo</a> en <a href="term-konsole-nl.htm#sux">sux</a> on how to set an alias.</p>
 
 				<h6>Een programma vanuit een root-shell laten draaien</h6>
 
-							<p>Met <span class="highlight-3">sux</span> kan je als root grafische programma's starten (Xapp privileges).</p>
+							<p>Met <span class="highlight-3">su-to-root -X -c &lt;application&gt;</span> kan je als root grafische programma's starten (Xapp privileges).</p>
 
 							<p>Open een konsole/terminal:</p>
 <pre >
-aptosid@0[aptosid]$ sux
-root@0[aptosid]# gparted <i>(of wat je ook wilt opstarten...)</i>
+aptosid@0[aptosid]$ su-to-root -X -c gparted  <i>(of wat je ook wilt opstarten...)</i>
 </pre>
 							<p>Sommige KDE applicatie benodigen <span class="highlight-3">dbus-launch</span> voor de applicatie-start:</p>
 <pre>
@@ -412,7 +411,7 @@ apt-get install your-preferred-package
 	</div>
 
 
-		<div id="rev">Inhoud het laatst gewijzigd op 14/08/2010 0100 UTC</div>
+		<div id="rev">Inhoud het laatst gewijzigd op 09/04/2013 0100 UTC</div>
 </div>
 </div>
 </body>

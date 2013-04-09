@@ -347,7 +347,7 @@
 							<p>Na aptosid-*.iso není nastaveno žádné root helso. Pokud chcete spustit program, který vyžaduje root práva, máte několit možností:</p>
 							<p>Jednoduchý způsob, pouze zadejte:</p>
 <pre>
-sux
+su
 </pre>
 
 				<h6>Nastavení (dočasného) root hesla</h6>
@@ -362,17 +362,16 @@ aptosid@0[aptosid]$
 </pre>
 <!--							<p>Now you can use this password for the rest of your aptosid-Live-session.</p>-->
 							<p>Nyní můžete použít toto heslo po zbytek vaší seance v aptosid-Live.</p>
-<!--							<p><span class="highlight-3">sudo is not supported on hard disk installations, see </span><a href="term-konsole-cz.htm#sudo">sudo</a> and <a href="term-konsole-cz.htm#sux">sux</a>.</p>-->
-							<p><span class="highlight-3">sudo není podporávano v instalaci na pevný disk. Podívejte se do <a href="term-konsole-cz.htm#sudo">sudo</a> a <a href="term-konsole-cz.htm#sux">sux</a> </span>.</p>
+<!--							<p><span class="highlight-3">sudo is not supported on hard disk installations, see </span><a href="term-konsole-cz.htm#sudo">sudo</a> and <a href="term-konsole-cz.htm#sux">sux</a>on how to set an alias.</p>-->
+							<p><span class="highlight-3">sudo není podporávano v instalaci na pevný disk. Podívejte se do <a href="term-konsole-cz.htm#sudo">sudo</a> a <a href="term-konsole-cz.htm#sux">sux</a> </span> on how to set an alias.</p>
 				<h6>Spouštění programu z příkazové řádky root:</h6>
 
-<!--							<p>Typing  <span class="highlight-3">sux</span> in a terminal will take you to root with Xapp privileges.</p>-->
-							<p>Zadáním <span class="highlight-3">sux</span> do terminálu budete zavedeni to příkazové řádky root s právy Xapp.</p>
+<!--							<p>Typing  <span class="highlight-3">su-to-root -X -c &lt;application&gt;</span> in a terminal will take you to root with Xapp privileges.</p>-->
+							<p>Zadáním <span class="highlight-3">su-to-root -X -c &lt;application&gt;</span> do terminálu budete zavedeni to příkazové řádky root s právy Xapp.</p>
 <!--							<p>Open a console/ shell:</p>-->
 							<p>Otevřete konsoli / příkazovou řádku:</p>
 <pre >
-aptosid@0[aptosid]$ sux
-root@0[aptosid]# gparted <i>(nebo cokoliv jiného...)</i>
+aptosid@0[aptosid]$ su-to-root -X -c gparted  <i>(nebo cokoliv jiného...)</i>
 </pre>
 
 <!--							<p>Some KDE applications require <span class="highlight-3">dbus-launch</span> in front of the application:</p>-->
@@ -438,7 +437,7 @@ Pro vystoupení z konzole zadejte: exit
 <!--							<p>Now your NTFS-Volume should be mounted <b>rw</b> and you should be able to store data on it. But again, be warned! <span class="highlight-3">Use it in emergency situations, it is not recommended  for use on a daily basis.</span></p>-->
 							<p>Nyní by měl být váš NTFS svazek připojen <b>rw</b> a mělo by vám být umožněno na něj zapisovat data. Opět ale, buďtě varováni! <span class="highlight-3">Používejte jej jen v naléhavých případech. Není doporučeno jej používat každodenně..</span></p>
 	</div>
-	<div id="rev">Obsah naposledy revidován 14/08/2010 0100 UTC</div>
+	<div id="rev">Obsah naposledy revidován 09/04/2013 0100 UTC</div>
 </div>
 </body>
 </html>

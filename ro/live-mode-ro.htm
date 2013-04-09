@@ -347,7 +347,7 @@
 
 							<p>Metoda cea mai simplă= tipăriți în terminal:</p>
 <pre>
-sux
+su
 </pre>
 
 				<h6>Setarea ( temporară ) a unei parole de <i>root</i> </h6>
@@ -362,16 +362,15 @@ aptosid@0[aptosid]$
 </pre>
 							<p>acum puteţi folosi această parolă pentru restul sesiunii live.</p>
 
-							<p><span class="highlight-3">'sudo' nu funcționează imlicit într-o instalare pe hard disk; vedeți </span><a href="term-konsole-ro.htm#sudo">sudo</a> and <a href="term-konsole-ro.htm#sux">sux</a>.</p>
+							<p><span class="highlight-3">'sudo' nu funcționează imlicit într-o instalare pe hard disk; vedeți </span><a href="term-konsole-ro.htm#sudo">sudo</a> and <a href="term-konsole-ro.htm#sux">sux</a> on how to set an alias.</p>
 
 				<h6>Rularea unui program ca <i>root</i> dintr-o consolă</h6>
 
-							<p>Tastarea comenzii  <span class="highlight-3">sux</span> vă va da  privilegii de <i>root</i> pentru aplicații  X.</p>
+							<p>Tastarea comenzii  <span class="highlight-3">su-to-root -X -c &lt;application&gt;</span> vă va da  privilegii de <i>root</i> pentru aplicații  X.</p>
 
 							<p>Deschideţi o consolă / shell:</p>
 <pre>
-aptosid@0[aptosid]$ sux
-root@0[aptosid]# gparted <i>( sau orice altceva doriţi...)</i>
+aptosid@0[aptosid]$ su-to-root -X -c gparted  <i>( sau orice altceva doriţi...)</i>
 </pre>
 							<p>Unele aplicații KDE au nevoie de <span class="highlight-3"><i>dbus-launch</i></span> înaintea numelui aplicației:</p>
 <pre>
@@ -412,7 +411,7 @@ apt-get install <i>&lt;nume_program&gt;</i>
 							<p><b>Reţineţi:</b> când veţi opri lucrul de pe Live-CD toate schimbările se vor pierde. Folosiți un email ca să vă salvați lucrările, cu excepția cazului în care ați pornit cu opțiunile <a href="hd-install-opts-ro.htm#fromiso-persist"><i>fromiso</i> și <i>persist</i></a>.</p>
 	</div>
 
-			<div id="rev"> Content last revised 14/08/2010 0100 UTC</div>
+			<div id="rev"> Content last revised 09/04/2013 0100 UTC</div>
 
 </div>
 </div>

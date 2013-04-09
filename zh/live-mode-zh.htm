@@ -206,7 +206,7 @@
 
 							<p>Simple method, just type:</p>
 <pre>
-sux
+su
 </pre>
 
 				<h6>要设置一个（暂时的）root用户密码</h6>
@@ -221,16 +221,15 @@ sidux@0[sidux]$
 </pre>
 							<p>现在你可以在后续的sidux Live对话中使用这个密码了。</p>
 
-							<p><span class="highlight-3">sudo is not supported on hard disk installations, see </span><a href="term-konsole-zh.htm#sudo">sudo</a> and <a href="term-konsole-zh.htm#sux">sux</a>.</p>
+							<p><span class="highlight-3">sudo is not supported on hard disk installations, see </span><a href="term-konsole-zh.htm#sudo">sudo</a> and <a href="term-konsole-zh.htm#sux">sux</a> on how to set an alias.</p>
 
 				<h6>Running a program from a root-shell</h6>
 
-							<p>键入<span class="highlight-3">sux</span>将变你为带Xapp特权的root用户。</p>
+							<p>键入<span class="highlight-3">su-to-root -X -c &lt;application&gt;</span>将变你为带Xapp特权的root用户。</p>
 
 							<p>打开一个konsole／shell：</p>
 <pre >
-sidux@0[sidux]$ sux
-root@0[sidux]# gparted <i>（或任意你所想 ...）</i>
+aptosid@0[aptosid]$ su-to-root -X -c gparted  <i>（或任意你所想 ...）</i>
 </pre>
 							<p>Some KDE applications require <span class="highlight-3">dbus-launch</span> in front of the application:</p>
 <pre>
@@ -286,7 +285,7 @@ mount -t ntfs-3g /dev/disk/by-uuid/xxyyzz[etc] /media/xdxx
 
 		<p>现在你的NTFS卷应该已挂载<b>rw</b>，你应该能在它上面存数据了。然而再次警告！<span class="highlight-3">紧急情况下才使用它，不推荐日常使用。</span></p>
 	</div>
-	<div id="rev">内容最后更改于14/03/2010 1205 UTC</div>
+	<div id="rev">内容最后更改于09/04/2013 0100 UTC</div>
 </div>
 </body>
 </html>

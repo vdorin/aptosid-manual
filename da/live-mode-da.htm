@@ -347,7 +347,7 @@
 
 							<p>Simpelt, bare skriv:</p>
 <pre>
-sux
+su
 </pre>
 
 				<h6>Opret (temporært) root-password</h6>
@@ -359,17 +359,16 @@ passwd: password updated successfully
 aptosid@0[aptosid]$</pre>
 							<p>du kan nu bruge dette password i resten af din aptosid-Live-session.</p>
 
-							<p><span class="highlight-3">sudo understøttes ikke på harddisk installationer, se </span><a href="term-konsole-da.htm#sudo">sudo</a> and <a href="term-konsole-da.htm#sux">sux</a>.</p>
+							<p><span class="highlight-3">sudo understøttes ikke på harddisk installationer, se </span><a href="term-konsole-da.htm#sudo">sudo</a> and <a href="term-konsole-da.htm#sux">sux</a> on how to set an alias.</p>
 
 				<h6>Kør et program fra en root-skal</h6>
 
-							<p>Skriver du <span class="highlight-3">sux</span> i en terminal bliver du root med Xapp privilegier.</p>
+							<p>Skriver du <span class="highlight-3">su-to-root -X -c &lt;application&gt;</span> i en terminal bliver du root med Xapp privilegier.</p>
 
 							<p>Åben en konsol/ skal:</p>
 
 <pre >
-aptosid@0[aptosid]$ sux
-root@0[aptosid]# gparted <i>(eller hvadend du vil starte...)</i>
+aptosid@0[aptosid]$ su-to-root -X -c gparted  <i>(eller hvadend du vil starte...)</i>
 </pre>
 							<p>Nogle KDE programmer kræver <span class="highlight-3">dbus-launch</span> foran programnavnet for at køre:</p>
 <pre>
@@ -410,7 +409,7 @@ apt-get install din-foretrukne-pakke
 							<p>Bemærk: Når du slukker for Live-cd'en vil ingen ændringer blive gemt, pånær hvis du aktiverer <a href="hd-install-opts-da.htm#fromiso-persist">fromiso og persist</a>.</p>
 	</div>
 
-	<div id="rev">Content last revised 14/08/2010 0100 UTC</div>
+	<div id="rev">Content last revised 09/04/2013 0100 UTC</div>
 </div>
 </body>
 </html>

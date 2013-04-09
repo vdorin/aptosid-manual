@@ -359,7 +359,7 @@
 #### -->
 							<p>単に次のようにタイプするだけ:</p>
 <pre>
-sux
+su
 </pre>
 
 		<!--- ####
@@ -377,7 +377,7 @@ aptosid@0[aptosid]$</pre>
 		<!--- ####
 							<p><span class="highlight-3">sudo is not supported on hard disk installations, see </span><a href="term-konsole-ja.htm#sudo">sudo</a> and <a href="term-konsole-ja.htm#sux">sux</a>.</p>
 #### -->
-							<p><span class="highlight-3">aptosid のハードディスクにインストールされた aptosid では sudo はサポートされていません。</span><a href="term-konsole-ja.htm#sudo">sudo</a> と <a href="term-konsole-ja.htm#sux">sux</a>を参照。</p>
+							<p><span class="highlight-3">aptosid のハードディスクにインストールされた aptosid では sudo はサポートされていません。</span><a href="term-konsole-ja.htm#sudo">sudo</a> と <a href="term-konsole-ja.htm#sux">sux</a>を参照。on how to set an alias.</p>
 
 				<!--- ####
 				<h6>Running a program from a root-shell</h6>
@@ -385,20 +385,19 @@ aptosid@0[aptosid]$</pre>
 				<h6>コンソールからルートとしてプログラムを実行する</h6>
 
 							<!--- ####
-							<p>Typing  <span class="highlight-3">sux</span> will take you to root with Xapp privileges.</p>
+							<p>Typing  <span class="highlight-3">su-to-root -X -c &lt;application&gt;</span> will take you to root with Xapp privileges.</p>
 							#### -->
-							<p>コンソールに <span class="highlight-3">sux</span> とタイプすればrootとしてXのアプリケーションを実行できます。</p>
+							<p>コンソールに <span class="highlight-3">su-to-root -X -c &lt;application&gt;</span> とタイプすればrootとしてXのアプリケーションを実行できます。</p>
 
 		<!--- ####
 		<p>Open a console/ shell:</p>
 		#### -->
 		<p>コンソール/シェルを開き:</p>
 <pre >
-aptosid@0[aptosid]$ sux
 <!--- ####
-root@0[aptosid]# gparted <i>(or whatever you want...)</i></pre>
+aptosid@0[aptosid]$ su-to-root -X -c gparted  <i>(or whatever you want...)</i></pre>
 #### -->
-root@0[aptosid]# gparted <i>(または他のコマンドを)</i>
+aptosid@0[aptosid]$ su-to-root -X -c gparted  <i>(または他のコマンドを)</i>
 </pre>
 <!--- ####
 							<p>Some KDE applications require <span class="highlight-3">dbus-launch</span> in front of the application:</p>
@@ -466,7 +465,7 @@ apt-get install your-preferred-package
 
 	</div>
 
-	<div id="rev">Content last revised 14/08/2010 0100 UTC</div>
+	<div id="rev">Content last revised 09/04/2013 0100 UTC</div>
 </div>
 </body>
 </html>

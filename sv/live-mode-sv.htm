@@ -316,7 +316,7 @@
 
 							<p>Enkla metoden, skriv bara:</p>
 <pre>
-sux
+su
 </pre>
 
 				<h6>För att ställa in ett (temporärt) root-lösenord:</h6>
@@ -331,16 +331,15 @@ aptosid@0[aptosid]$
 </pre>
 							<p>Nu kan du använda det här lösenordet resten av tiden du använder aptosid-Live-session.</p>
 
-							<p><span class="highlight-3">sudo är inte supportat vid hårddisk installationer, se </span><a href="term-konsole-sv.htm#sudo">sudo</a> och <a href="term-konsole-sv.htm#sux">sux</a>.</p>
+							<p><span class="highlight-3">sudo är inte supportat vid hårddisk installationer, se </span><a href="term-konsole-sv.htm#sudo">sudo</a> och <a href="term-konsole-sv.htm#sux">sux</a> on how to set an alias.</p>
 
 				<h6>Köra ett program som root från terminal</h6>
 
-							<p>Skriver du  <span class="highlight-3">sux</span> i terminalen så blir du root med Xapp rättigheter.</p>
+							<p>Skriver du  <span class="highlight-3">su-to-root -X -c &lt;application&gt;</span> i terminalen så blir du root med Xapp rättigheter.</p>
 
 							<p>Öppna terminalen:</p>
 <pre >
-aptosid@0[aptosid]$ sux
-root@0[aptosid]# gparted <i>(eller vad du vill köra...)</i>
+aptosid@0[aptosid]$ su-to-root -X -c gparted  <i>(eller vad du vill köra...)</i>
 </pre>
 
 							<p>En del KDE applikationer kräver <span class="highlight-3">dbus-launch</span> kommandot framför applikationsnamnet:</p>
@@ -384,7 +383,7 @@ apt-get install ditt-önskade-paket
 
 	</div>
 
-	<div id="rev">Content last revised 14/03/2010 1205 UTC</div>
+	<div id="rev">Content last revised 09/04/2013 0100 UTC</div>
 </div>
 </body>
 </html>

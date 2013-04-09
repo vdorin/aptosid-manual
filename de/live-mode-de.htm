@@ -349,7 +349,7 @@
 
 							<p>Am einfachsten ist diese Eingabe:</p>
 <pre>
-sux
+su
 </pre>
 
 				<h6>Ein (temporäres) root-Passwort setzen</h6>
@@ -364,16 +364,15 @@ aptosid@0[aptosid]$
 
 							<p>Dieses Passwort kann den Rest der Live-Sitzung verwendet werden.</p>
 
-							<p><span class="highlight-3">sudo wird auf Festplatteninstallationen nicht unterstützt. Siehe </span><a href="term-konsole-de.htm#sudo">sudo</a> und <a href="term-konsole-de.htm#sux">sux</a>.</p>
+							<p><span class="highlight-3">sudo wird auf Festplatteninstallationen nicht unterstützt. Siehe </span><a href="term-konsole-de.htm#sudo">sudo</a> und <a href="term-konsole-de.htm#sux">sux</a> on how to set an alias.</p>
 
 				<h6>Starten eines Programms aus einer Root-Konsole</h6>
 
-							<p>Die Eingabe von  <span class="highlight-3">sux</span> ermöglicht root mit Xapp-Privilegien (Start von Programmen mit graphischer Oberfläche).</p>
+							<p>Die Eingabe von  <span class="highlight-3">su-to-root -X -c &lt;application&gt;</span> ermöglicht root mit Xapp-Privilegien (Start von Programmen mit graphischer Oberfläche).</p>
 
 							<p>Man öffnet ein Terminal/eine Konsole:</p>
 <pre>
-aptosid@0[aptosid]$ sux
-root@0[aptosid]# gparted <em>(oder das gewünschte Programm)</em>
+aptosid@0[aptosid]$ su-to-root -X -c gparted  <em>(oder das gewünschte Programm)</em>
 </pre>
 							<p>Einige KDE-Anwendungen benötigen <span class="highlight-3">dbus-launch</span> vor dem Startbefehl der Anwendung:</p>
 <pre>
@@ -413,7 +412,7 @@ apt-get install ihr-gewünschtes-paket
 							<p>Achtung: Wenn Sie die Live-CD herunterfahren, werden keine Änderungen behalten, außer wenn <a href="hd-install-opts-de.htm#fromiso-persist">fromiso und persist</a> aktiviert wird.</p>
 	</div>
 
-	<div id="rev">Content last revised 14/08/2010 0100 UTC</div>
+	<div id="rev">Content last revised 09/04/2013 0100 UTC</div>
 
 </div>
 </body>

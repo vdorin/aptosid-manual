@@ -348,7 +348,7 @@
 
 							<p>Méthode ordinaire, entrz jusye:</p>
 <pre>
-sux
+su
 </pre>
 
 				<h6>Assigner un mot-de-passe (provisoire) à root</h6>
@@ -364,19 +364,18 @@ aptosid@0[aptosid]$
 </pre>
 							<p>vous pouvez alors utiliser ce mot de passe durant le reste de votre session avec le Live-CD aptosid.</p>
 
-							<p><span class="highlight-3">sudo n'est pas utilisable avec les installations sur disque dur. Reportez-vous à </span><a href="term-konsole-fr.htm#sudo">sudo</a> et <a href="term-konsole-fr.htm#sux">sux</a>.</p>
+							<p><span class="highlight-3">sudo n'est pas utilisable avec les installations sur disque dur. Reportez-vous à </span><a href="term-konsole-fr.htm#sudo">sudo</a> et <a href="term-konsole-fr.htm#sux">sux</a> on how to set an alias.</p>
 
 				<h6>Démarrer un programme depuis un terminal administrateur</h6>
 
 							<!--- ####
-							<p>Typing  <span class="highlight-3">sux</span> will take you to root with Xapp privileges.</p>
+							<p>Typing  <span class="highlight-3">su-to-root -X -c &lt;application&gt;</span> will take you to root with Xapp privileges.</p>
 							#### -->
-							<p>Avec la commande <span class="highlight-3">sux</span>, vous pouvez lancer des applications X avec des privilèges d'administrateur.</p>
+							<p>Avec la commande <span class="highlight-3">su-to-root -X -c &lt;application&gt;</span>, vous pouvez lancer des applications X avec des privilèges d'administrateur.</p>
 
 							<p>Ouvrez un terminal/console:</p>
 <pre >
-aptosid@0[aptosid]$ sux
-root@0[aptosid]# gparted <i>(ou ce qui vous chante...)</i>
+aptosid@0[aptosid]$ su-to-root -X -c gparted  <i>(ou ce qui vous chante...)</i>
 </pre>
 							<p>Certaines applications KDE requièrent <span class="highlight-3">dbus-launch</span> devant le nom de l'application :</p>
 <pre>
@@ -424,7 +423,7 @@ apt-get install le_paquet_désiré
 
 	</div>
 
-	<div id="rev">Dernière révision du contenu le 14/08/2010 0100 UTC</div>
+	<div id="rev">Dernière révision du contenu le 09/04/2013 0100 UTC</div>
 </div>
 </body>
 </html>
