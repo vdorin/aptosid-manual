@@ -337,22 +337,22 @@
 <!-- menu-en ends here --> </div><!--/htdig_noindex-->
 <div id="main-page">
 	<div class="divider" id="rootpw">
-		<h2 id="top-header">aptosid-*.iso - Parola de <i>root</i> în Live Mode </h2>
+		<h2 id="top-header">aptosid-*.iso - Parola de <i>root</i> în Live Mode</h2>
 
 							<p class='highlight-2'>Atenţie : Întotdeauna când executaţi ceva cu permisiuni de <i>root</i> trebuie să știţi foarte bine ce faceţi! Doar pentru navigare pe internet sau în reţeaua locală nu este nevoie de permisiune <i>root</i>.</p>
 
 				<h3>aptosid-*.iso parola implicită (default)</h3>
 
-							<p>Pe aptosid LiveCD implicit nu este setată nici o parolă de <i>root</i>. Ca să rulaţi un program care cere privilegii de <i>root</i> aveţi câteva posibilităţi :</p>
+							<p>Pe aptosid LiveCD implicit nu este setată nici o parolă de <i>root</i>. Ca să rulaţi un program care cere privilegii de <i>root</i> aveţi câteva posibilităţi:</p>
 
 							<p>Metoda cea mai simplă= tipăriți în terminal:</p>
 <pre>
 su
 </pre>
 
-				<h6>Setarea ( temporară ) a unei parole de <i>root</i> </h6>
+				<h6>Setarea (temporară) a unei parole de <i>root</i></h6>
 
-							<p>Deschideţi o consolă / terminal :</p>
+							<p>Deschideţi o consolă / terminal:</p>
 <pre>
 aptosid@0[aptosid]$ sudo passwd
 Enter new UNIX password:
@@ -362,30 +362,30 @@ aptosid@0[aptosid]$
 </pre>
 							<p>acum puteţi folosi această parolă pentru restul sesiunii live.</p>
 
-							<p><span class="highlight-3">'sudo' nu funcționează imlicit într-o instalare pe hard disk; vedeți </span><a href="term-konsole-ro.htm#sudo">sudo</a> and <a href="term-konsole-ro.htm#sux">sux</a> on how to set an alias.</p>
+							<p><span class="highlight-3">'sudo' nu funcționează imlicit într-o instalare pe hard disk; vedeți </span><a href="term-konsole-ro.htm#sudo">sudo</a> și <a href="term-konsole-ro.htm#sux">sux</a> pentru a stabili un alias.</p>
 
 				<h6>Rularea unui program ca <i>root</i> dintr-o consolă</h6>
 
-							<p>Tastarea comenzii  <span class="highlight-3">su-to-root -X -c &lt;application&gt;</span> vă va da  privilegii de <i>root</i> pentru aplicații  X.</p>
+							<p>Tastarea comenzii  <span class="highlight-3">su-to-root -X -c &lt;nume_program&gt;</span> vă va da  privilegii de <i>root</i> pentru aplicații X.</p>
 
 							<p>Deschideţi o consolă / shell:</p>
 <pre>
-aptosid@0[aptosid]$ su-to-root -X -c gparted  <i>( sau orice altceva doriţi...)</i>
+aptosid@0[aptosid]$ su-to-root -X -c gparted  <i>(sau orice altceva doriţi...)</i>
 </pre>
 							<p>Unele aplicații KDE au nevoie de <span class="highlight-3"><i>dbus-launch</i></span> înaintea numelui aplicației:</p>
 <pre>
-dbus-launch <i>&lt;Application&gt;</i>
+dbus-launch <i>&lt;nume_program&gt;</i>
 </pre>
 							<p>O altă opțiune generică pentru toate Desktop Manager-ele mai cunoscute este:</p>
 <pre>
-Alt+F2 su-to-root -X -c <i>&lt;Application&gt;</i>
+Alt+F2 su-to-root -X -c <i>&lt;nume_program&gt;</i>
 </pre>
 							<p>De examplu:</p>
 <pre>
 Alt+F2 su-to-root -X -c gparted
 </pre>
 
-							<p class="highlight-1">Pentru a termina sesiunea de <i>root</i> în konsolă tastaţi :</p>
+							<p class="highlight-1">Pentru a termina sesiunea de <i>root</i> în konsolă tastaţi:</p>
 <pre>
 exit
 </pre>
