@@ -17,7 +17,7 @@
         <![endif]-->
 </head>
 <body>
-<!-- Last translation revision hubi Tue, 19 Feb 2013 08:57:59 +0000 -->
+<!-- Last translation revision hubi Fri, 12 Apr 2013 11:12:13 +0000 -->
 <!--htdig_noindex--><div id="menu"> <!-- menu starts here de lang maintained by hubi -->
 <!--aptosid Operating System Manual menu-version-02.15.2013.01.10 -->
 <!-- menu last updated by bluewater 2013.01.10 0910 hrs UTC -->
@@ -568,13 +568,13 @@ su
 
 							<p>Im Gegensatz zum allgemeinen Befehl 'su', erlaubt  <span class="highlight-3">su-to-root -X -c &lt;application&gt;</span> das Ausführen von Programmen mit graphischer Oberfläche mit Root-Rechten. <!--<span class="highlight-3">sux</span> transferiert unter Benutzung von 'su' die X-Eigenschaften an den Zielnutzer.--></p>
 
-							<p>Refer to <a href="term-konsole-de.htm#sux"> About Xapps whilst in X as root</a> </span></p>
+							<p>Siehe auch <a href="term-konsole-de.htm#sux"> GUI-Programme als Root</a> </span></p>
 
 							<p>Einige KDE-Anwendungen benötigen <span class="highlight-3">dbus-launch</span> vor dem Anwendungsbefehl:</p>
 <pre>
 dbus-launch &lt;Anwendung&gt;
 </pre>
-							<p>An example of running an X11 app via <span class="highlight-3">su-to-root -X -c</span> is to use a text editor to edit a root file like kwrite or kate, to do partitioning with gparted or an Xapp file manager like konqueror. You can also alter root files by right clicking the file and choosing 'edit-as-root', and entering your root password, this will call kdesu in the background.</p>
+							<p>Das Beispiele einer X11-Applikation als Root via <span class="highlight-3">su-to-root -X -c</span> sind die Verwendung eines Texteditors wie kwrite oder kate, um eine Root-Datei zu bearbeiten, die Verwendung eines Partitionierungs-Tools wie gparted oder ein Xapp-Dateimanager wie Konqueror oder Dolphin. Root-Dateien können als Root auch via Kontextmenü der rechten Maustaste und "edit-as-root" ausgewählt werden. Hierbei wird kdesu nach Eingabe des Root-Passworts im Hintergrund aufgerufen.</p>
 
 							<p>Anders als 'sudo', wie es an manchen Linux-Systemen Standard ist, bedeutet dies, dass ein Nutzer ohne Rootrechte keine - potentiell gefährlichen - Änderungen am System vornehmen kann.</p>
 
