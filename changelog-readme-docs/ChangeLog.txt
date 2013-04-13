@@ -1,4 +1,23 @@
 CHANGELOG FOR aptosid-OS-MANUAL-2013
+__________________________________________
+
+*VERSION:::aptosid-manual-02.15.2013.04.13
+Thurs Mar 21, 2013 1230 UTC
+*/lib/version		updated of time stamp
+*bios-freedos-xx 	codebox changes replacing sux with su
+*cd-dl-burning-xx	codebox changes replacing sux with su
+*hd-install-xx		codebox changes replacing sux with su
+*hd-install-opts -xx	codebox changes replacing sux with su
+*live-mode-xx		codebox changes replacing sux with su, text additions, alterations
+*nbdboot-xx		codebox changes replacing sux with su
+*samba-xx		codebox changes replacing sux with su
+*sys-admin-gen-xx	codebox changes replacing sux with su
+*sys-admin-grub2-xx	codebox changes replacing sux with su
+*wel-quickstart-xx	codebox changes replacing sux with su
+*translation updates and validation fixes for /files
+
+-- Trevor Walkley <trevor_walkley@aptenodytes.org> Sat Apr 13, 2013 1230 UTC
+
 ___________________________________________
 
 *VERSION:::aptosid-manual-02.15.2013.03.21
