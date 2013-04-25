@@ -420,11 +420,12 @@ update-grub
 <pre>
 persist
 </pre>
-							<p>Если 'fromiso' используется на файловой системе vfat, тогда надо указать файл, который используется как файловая система Линукса. Ключ должен выглядеть примерно так:</p>
-<pre>
-persist=/aptosid/aptosid-rw
-</pre>
+							<p>To use persist with a vfat file system, then you must use a file that contains a linux file system.</p>
 
+							<p>If you want to put the persist file or directory somewhere else other than <span class="highlight-3">/aptosid-rw </span> then you need to specify where it is with the bootcode, for example <span class="highlight-3"> persist=/janes/files </span>:</p>
+<pre>
+persist=/user-name/files
+</pre>
 							<p>aptosid использует 'AUFS' для реализации возможности "copy on write" для перезаписи содержимого ISO, добавления пакетов, обновления системы и прочего. Ключ <span class="highlight-3">persist</span>, позволит сохранить Ваши новые файлы на том же диске, где хранится образ ISO.</p>
 
 							<p><span class="highlight-3">fromiso</span> даёт Вам Live-систему, которая загружается с ISO образа, находящегося на носителе и выполняет все автоматические функции, что и aptosid live ISO. Выгода от этого в том, что, например, при запуске будет проходить настройка оборудования, однако это означает, что все настроечные файлы будут пересоздаваться заново, если вы не воспользуетесь дополнительными ключами.</p>
@@ -448,18 +449,15 @@ persist=/aptosid/aptosid-rw
 							<p>Если Вы используете vfat для persist, оно ограничивается размером не более 2GB и не менее 100MB (так как меньший объём лишён всякого смысла). Этот файл должен называться <span class="highlight-3">aptosid-rw</span>.</p>
 
 					 <h4>Пример создания persist после начальной установки</h4>
-							<p>Если Вы не уверены в точке монтирования, смонтируйте карту и запустите <span class="highlight-3">ls -lh /media</span> для определения списках всех своих точках монтирования. Ищите что-то вроде бы <span class="highlight-3">drwxr-xr-x 6 username root 4.0K Jan 1 1970 disk</span>. Если Ваш состояние вывода иначе, тогда надо заменить  <span class="highlight-3">"/media/disk"</span> в соответствии с Вашим требованием (например, "/media/disk-1").</p>
-<!--<pre>
-disk="/media/disk"
-</pre>-->
-							<p>Продолжая пример, команда <span class="highlight-3">df -h</span> разъяснит информацию:</p>
+							<p>If you are not sure of the mount point, mount the stick and run <span class="highlight-3"> df -h </span> which will provide a list of all your system mount points. Look for something like <span class="highlight-3">/dev/sdb</span> or <span class="highlight-3">/dev/sdc</span>. If your output states differently then replace <span class="highlight-3">"/media/disk"</span> in line with your requirement, (for example "/media/disk-1").</p>
+
+							<p>Continuing the example, the command <span class="highlight-3"> df -h </span> will clarify the information, and assumes just one partition on the USB stick:</p>
 <pre>
-/dev/sdc2             3.4G  4.0K  3.4G   1% /media/disk
-/dev/sdc1             4.1G  1.1G  2.8G  28% /media/disk-1
+/dev/sdc1             4.1G  1.1G  2.8G  28% /media/disk
 </pre>
 							 <p>Поэтому:</p>
 <pre>
-disk="/media/disk-1"
+disk="/media/disk"
 </pre>
 
 							<p>Установите размер persist раздела:</p>
@@ -474,7 +472,7 @@ mkdir $disk-1/aptosid
 							<p>Выполните команду, чтобы создать раздел persist::</p>
 
 <pre>
-dd if=/dev/zero of=$disk-1/aptosid/aptosid-rw bs=1M count=$size &amp;&amp;  echo 'y' | LANG=C /sbin/mkfs.ext2 $disk-1/aptosid/aptosid-rw &amp;&amp;  tune2fs -c 0 "$disk-1/aptosid/aptosid-rw"
+dd if=/dev/zero of=$disk/aptosid-rw bs=1M count=$size &amp;&amp;  echo 'y' | LANG=C /sbin/mkfs.ext2 $disk/aptosid-rw &amp;&amp;  tune2fs -c 0 "$disk/aptosid-rw"
 </pre>
 
 							<p class="highlight-2">Разделы NTFS, используемые часто в Windows NT/2000/XP (TM) нельзя использовать для сохранённой системы (persistence).</p>
@@ -606,7 +604,7 @@ install-mbr /dev/sdX
 
 							<p>Прочитайте в главе всю информацию про <a href="hd-install-opts-ru.htm#fromiso-persist">persist</a></p>
 </div>
-	<div id="rev">Содержание, последний раз пересмотрено 16/10/2012 1052 UTC</div>
+	<div id="rev">Содержание, последний раз пересмотрено 25/04/2013 1345 UTC</div>
 </div>
 </body>
 </html>

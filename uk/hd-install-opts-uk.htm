@@ -421,9 +421,11 @@ update-grub
 <pre>
 persist
 </pre>
-							<p>Коли fromiso використовує файлову систему VFAT, то ви повинні використовувати файл, який містить файлову систему Linux і читкод має бути виглядати наступним чином:</p>
+							<p>To use persist with a vfat file system, then you must use a file that contains a linux file system.</p>
+
+							<p>If you want to put the persist file or directory somewhere else other than <span class="highlight-3">/aptosid-rw </span> then you need to specify where it is with the bootcode, for example <span class="highlight-3"> persist=/janes/files </span>:</p>
 <pre>
-persist=/aptosid/aptosid-rw
+persist=/user-name/files
 </pre>
 							<p>aptosid використовує AUFS включити так званий "копіювання при записі" над вашим ISO, щоб дозволити вам писати нові файли і папки та оновлення існуючих, зберігаючи нові файли в пам'яті. The <span class="highlight-3">persist</span> читкод, буде зберігати ваші нові файли на той же розділ жорсткого диска, як Ви використовуєте для зберігання fromiso ISO образу.</p>
 
@@ -448,18 +450,15 @@ persist=/aptosid/aptosid-rw
 							<p>Коли vfat використовується, наполегливість проводиться через файл, який може бути максимум 2GB, але не менше 100 МБ (як це було б ніякої користі). Цей файл повинен бути названий <span class="highlight-3">aptosid-rw</span>.</p>
 
 					 <h4>Приклад створення persist після початкової установки</h4>
-							<p>Якщо Ви не впевнені в справі монтування, змонтуйте карту і запустіть <span class="highlight-3">ls -lh /media</span> надати список всіх своїх точках монтування системи кріплення. Шукайте щось на зразок <span class="highlight-3">drwxr-xr-x  6 username root 4.0K Jan  1  1970 disk</span>. Якщо це виглядає інакше,тоді замінитіть <span class="highlight-3">"/media/disk"</span> відповідно до Вашого вимоги. (Hаприклад: "/media/disk-1").</p>
-<!--<pre>
-disk="/media/disk"
-</pre>-->
-							<p>Продовжуючи приклад, команда <span class="highlight-3"> df -h </span> буде уточнивати інформацію, :</p>
+							<p>If you are not sure of the mount point, mount the stick and run <span class="highlight-3"> df -h </span> which will provide a list of all your system mount points. Look for something like <span class="highlight-3">/dev/sdb</span> or <span class="highlight-3">/dev/sdc</span>. If your output states differently then replace <span class="highlight-3">"/media/disk"</span> in line with your requirement, (for example "/media/disk-1").</p>
+
+							<p>Continuing the example, the command <span class="highlight-3"> df -h </span> will clarify the information, and assumes just one partition on the USB stick:</p>
 <pre>
-/dev/sdc2             3.4G  4.0K  3.4G   1% /media/disk
-/dev/sdc1             4.1G  1.1G  2.8G  28% /media/disk-1
+/dev/sdc1             4.1G  1.1G  2.8G  28% /media/disk
 </pre>
 							 <p>Тому:</p>
 <pre>
-disk="/media/disk-1"
+disk="/media/disk"
 </pre>
 
 							<p>Установіть розмір persist розділу</p>
@@ -473,7 +472,7 @@ mkdir $disk-1/aptosid
 							<p>Виконати код, щоб зробити розділ persist:</p>
 
 <pre>
-dd if=/dev/zero of=$disk-1/aptosid/aptosid-rw bs=1M count=$size &amp;&amp;  echo 'y' | LANG=C /sbin/mkfs.ext2 $disk-1/aptosid/aptosid-rw &amp;&amp;  tune2fs -c 0 "$disk-1/aptosid/aptosid-rw"
+dd if=/dev/zero of=$disk/aptosid-rw bs=1M count=$size &amp;&amp;  echo 'y' | LANG=C /sbin/mkfs.ext2 $disk/aptosid-rw &amp;&amp;  tune2fs -c 0 "$disk/aptosid-rw"
 </pre>
 
 							<p class="highlight-2">NTFS розділи, які зазвичай використовуються для Windows NT/2000/XP (TM) установки, не може бути використовани на всіх для persist-розділів.</p>
@@ -602,7 +601,7 @@ install-mbr /dev/sdX
 
 							
 	</div>
-	<div id="rev">Сторінка останний раз переглянута 16/10/2012 1052 UTC</div>
+	<div id="rev">Сторінка останний раз переглянута 25/04/2013 1345 UTC</div>
 
 </div>
 </body>

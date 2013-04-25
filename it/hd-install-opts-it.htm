@@ -431,9 +431,11 @@ update-grub
 <pre>
 persist
 </pre>
-							<p>Per utilizzare persist quando il filesystem è un vfat, si deve usare un file che contiene un filesystem linux e l'opzione d'avvio sarà:</p>
+							<p>To use persist with a vfat file system, then you must use a file that contains a linux file system.</p>
+
+							<p>If you want to put the persist file or directory somewhere else other than <span class="highlight-3">/aptosid-rw </span> then you need to specify where it is with the bootcode, for example <span class="highlight-3"> persist=/janes/files </span>:</p>
 <pre>
-persist=/aptosid/aptosid-rw
+persist=/user-name/files
 </pre>
 							<p>aptosid utilizza aufs per abilitare quello che è conosciuto come "copy on write" sulla ISO per permettere di scrivere nuovi file e directory ed aggiornare quelli esistenti mantenendo i nuovi file in memoria. Con l'opzione <span class="highlight-3">persist</span>, i nuovi file verranno salvati nella stessa partizione che viene utilizzata per l'immagine ISO.</p>
 
@@ -458,16 +460,15 @@ persist=/aptosid/aptosid-rw
 							<p>Quando viene utilizzato vfat, la persistenza viene fatta attraverso un file di dimensioni comprese fra 100MB e 2GB (di meno non avrebbe senso). Questo file si dovrebbe chiamare <span class="highlight-3">aptosid-rw</span>.</p>
 
 					 <h3>Esempio della creazione di persist dopo l'installazione iniziale</h3>
-							<p>Se non si è sicuri del punto di mount, montare la chiavetta ed avviare <span class="highlight-3">ls -lh /media</span> per ottenere una lista di tutti i punti di mount del sistema. Cercare qualcosa come <span class="highlight-3">drwxr-xr-x  6 username root 4.0K Jan  1  1970 disk</span>. Se l'output è differente allora sostituire <span class="highlight-3">"/media/disk"</span> con quello richiesto, (per esempio "/media/disk-1").</p>
+							<p>If you are not sure of the mount point, mount the stick and run <span class="highlight-3"> df -h </span> which will provide a list of all your system mount points. Look for something like <span class="highlight-3">/dev/sdb</span> or <span class="highlight-3">/dev/sdc</span>. If your output states differently then replace <span class="highlight-3">"/media/disk"</span> in line with your requirement, (for example "/media/disk-1").</p>
 
-							<p>Continuando l'esempio, il comando <span class="highlight-3"> df -h </span> chiarirà le informazioni:</p>
+							<p>Continuing the example, the command <span class="highlight-3"> df -h </span> will clarify the information, and assumes just one partition on the USB stick:</p>
 <pre>
-/dev/sdc2             3.4G  4.0K  3.4G   1% /media/disk
-/dev/sdc1             4.1G  1.1G  2.8G  28% /media/disk-1
+/dev/sdc1             4.1G  1.1G  2.8G  28% /media/disk
 </pre>
-							 <p>Pertanto:</p>
+							  <p>Pertanto:</p>
 <pre>
-disk="/media/disk-1"
+disk="/media/disk"
 </pre>
 
 							<p>Imposta la dimensione della partizione persist:</p>
@@ -481,7 +482,7 @@ mkdir $disk/aptosid
 							<p>Avvia il codice per creare una partizione persist:</p>
 
 <pre>
-dd if=/dev/zero of=$disk-1/aptosid/aptosid-rw bs=1M count=$size &amp;&amp;  echo 'y' | LANG=C /sbin/mkfs.ext2 $disk-1/aptosid/aptosid-rw &amp;&amp;  tune2fs -c 0 "$disk-1/aptosid/aptosid-rw"
+dd if=/dev/zero of=$disk/aptosid-rw bs=1M count=$size &amp;&amp;  echo 'y' | LANG=C /sbin/mkfs.ext2 $disk/aptosid-rw &amp;&amp;  tune2fs -c 0 "$disk/aptosid-rw"
 </pre>
 
 							<p class="highlight-2">Le partizioni NTFS, utilizzate di solito da installazioni Windows(TM), NON POSSONO essere utilizzate per la persistenza.</p>
@@ -609,7 +610,7 @@ install-mbr /dev/sdX
 
 							
 	</div>
-	<div id="rev">Page last revised 16/10/2012 1052 UTC</div>
+	<div id="rev">Page last revised 25/04/2013 1345 UTC</div>
 
 </div>
 </body>

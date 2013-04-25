@@ -421,11 +421,12 @@ update-grub
 <pre>
 persist
 </pre>
-							<p>Wanneer de fromiso gebruik maakt van een vfat filesysteem, dan moet je gebruik maken van een bestand welke een linux filesysteem is en de cheatcode zal er zo uit zien:</p>
-<pre>
-persist=/aptosid/aptosid-rw
-</pre>
+							<p>To use persist with a vfat file system, then you must use a file that contains a linux file system.</p>
 
+							<p>If you want to put the persist file or directory somewhere else other than <span class="highlight-3">/aptosid-rw </span> then you need to specify where it is with the bootcode, for example <span class="highlight-3"> persist=/janes/files </span>:</p>
+<pre>
+persist=/user-name/files
+</pre>
 							<p>aptosid gebruikt aufs om de modus "copy on write" in te schakelen voor je ISO. Hierdoor kunnen nieuwe bestanden en mappen aangemaakt worden en bestaande bestanden/mappen bewerkt worden omdat die in het geheugen worden bewaard. De <span class="highlight-3">persist</span> cheatcode bewaard de nieuwe/gewijzigde bestanden in dezelfde partitie waar ook je fromiso ISO image staat.</p>
 
 							<p><span class="highlight-3">fromiso</span> biedt je een  live systeem dat alle automatische mogelijkheden heeft net als de aptosid live-CD. Hierdoor wordt de hardware automatisch geconfigureerd maar het betekent ook dat telkens dezelfde ongewijzigde bestanden bij elke boot worden getoond - tenzij je gebruikt een aanvullend boot-commando.</p>
@@ -449,18 +450,15 @@ persist=/aptosid/aptosid-rw
 							<p>Als vfat wordt gebruikt, wordt een bestand voor persistance aangemaakt dat maximaal 2GB groot mag zijn maar niet kleiner dan 100MB (anders heeft het geen zin). Dat bestand wordt <span class="highlight-3">aptosid-rw</span> genoemd.</p>
 
 					 <h4>Voorbeeld voor het creeeren van een persist na de intiele installatie</h4>
-							<p>Ben je niet zeker van het koppelpunt (mountpoint), koppel dan de stick en voer <span class="highlight-3">ls -lh /media</span> uit om een lijst van al je systeem mountpoints te verkrijgen. Zoek dan naar <span class="highlight-3">drwxr-xr-x  6 username root 4.0K Jan  1  1970 disk</span> of iets in die geest. Als je weergave anders is, vervang dan <span class="highlight-3">"/media/disk"</span> in de regel met je vereiste waarde, (bijvoorbeeld "/media/disk-1").</p>
-<!--<pre>
-disk="/media/disk"
-</pre>-->
-							<p>Continuing the example, the command <span class="highlight-3"> df -h </span> will clarify the information, :</p>
+							<p>If you are not sure of the mount point, mount the stick and run <span class="highlight-3"> df -h </span> which will provide a list of all your system mount points. Look for something like <span class="highlight-3">/dev/sdb</span> or <span class="highlight-3">/dev/sdc</span>. If your output states differently then replace <span class="highlight-3">"/media/disk"</span> in line with your requirement, (for example "/media/disk-1").</p>
+
+							<p>Continuing the example, the command <span class="highlight-3"> df -h </span> will clarify the information, and assumes just one partition on the USB stick:</p>
 <pre>
-/dev/sdc2             3.4G  4.0K  3.4G   1% /media/disk
-/dev/sdc1             4.1G  1.1G  2.8G  28% /media/disk-1
+/dev/sdc1             4.1G  1.1G  2.8G  28% /media/disk
 </pre>
 							 <p>Therefore:</p>
 <pre>
-disk="/media/disk-1"
+disk="/media/disk"
 </pre>
 
 							<p>Stel de grote van de persist partitie in:</p>
@@ -474,7 +472,7 @@ mkdir $disk/aptosid
 							<p>Run de code om de persist partitiee te maken:</p>
 
 <pre>
-dd if=/dev/zero of=$disk-1/aptosid/aptosid-rw bs=1M count=$size &amp;&amp;  echo 'y' | LANG=C /sbin/mkfs.ext2 $disk-1/aptosid/aptosid-rw &amp;&amp;  tune2fs -c 0 "$disk-1/aptosid/aptosid-rw"
+dd if=/dev/zero of=$disk/aptosid-rw bs=1M count=$size &amp;&amp;  echo 'y' | LANG=C /sbin/mkfs.ext2 $disk/aptosid-rw &amp;&amp;  tune2fs -c 0 "$disk/aptosid-rw"
 </pre>
 
 							<p class="highlight-2">NTFS partities, die in Windows NT/2000/XP (TM) installaties voorkomen, kunnen NIET gebruikt worden voor persistence.</p>
@@ -602,7 +600,7 @@ install-mbr /dev/sdX
 
 							
 	</div>
-	<div id="rev">Page last revised 16/10/2012 1052 UTC</div>
+	<div id="rev">Page last revised 25/04/2013 1345 UTC</div>
 
 </div>
 </body>

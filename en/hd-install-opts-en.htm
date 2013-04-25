@@ -17,7 +17,7 @@
         <![endif]-->
 </head>
 <body>
-<!-- Last translation revision bluewater03/09/2011 1240 UTC -->
+<!-- Last translation revision bluewater 24/04/2013 1235 UTC -->
 <!--htdig_noindex--> <div id="menu"> <!-- menu starts here en lang maintained by bluewater-->
 <!--aptosid Operating System Manual menu-version-02.15.2013.01.10 -->
 <!-- menu last updated by bluewater 2013.01.10 0910 hrs UTC -->
@@ -430,9 +430,11 @@ update-grub
 <pre>
 persist
 </pre>
-							<p>To use persist when the file system a vfat file system, then you must use a file that contains a linux file system and the boot code will look like:</p>
+							<p>To use persist with a vfat file system, then you must use a file that contains a linux file system.</p>
+
+							<p>If you want to put the persist file or directory somewhere else other than <span class="highlight-3">/aptosid-rw </span> then you need to specify where it is with the bootcode, for example <span class="highlight-3"> persist=/janes/files </span>:</p>
 <pre>
-persist=/aptosid/aptosid-rw
+persist=/user-name/files
 </pre>
 							<p>aptosid uses aufs to enable what is known as "copy on write" over your ISO to allow you to write new files and folders and update existing ones by keeping the new files in memory. The <span class="highlight-3">persist</span> boot code, will store your new files on the same hard drive partition as you use to store your ISO image.</p>
 
@@ -457,30 +459,25 @@ persist=/aptosid/aptosid-rw
 							<p>When vfat is used, persistence is made through a file that can be maximum 2GB  but not less than 100MB (as it would be of no use). This file should be named <span class="highlight-3">aptosid-rw</span>.</p>
 
 					 <h3>Example of adding persist after initial installation</h3>
-							<p>If you are not sure of the mount point, mount the stick and run <span class="highlight-3">ls -lh /media</span> to provide a list of all your system mount points. Look for something like <span class="highlight-3">drwxr-xr-x  6 username root 4.0K Jan  1  1970 disk</span>. If your output states differently then replace <span class="highlight-3">"/media/disk"</span> in line with your requirement, (for example "/media/disk-1").</p>
+							<p>If you are not sure of the mount point, mount the stick and run <span class="highlight-3"> df -h </span> which will provide a list of all your system mount points. Look for something like <span class="highlight-3">/dev/sdb</span> or <span class="highlight-3">/dev/sdc</span>. If your output states differently then replace <span class="highlight-3">"/media/disk"</span> in line with your requirement, (for example "/media/disk-1").</p>
 
-							<p>Continuing the example, the command <span class="highlight-3"> df -h </span> will clarify the information, :</p>
+							<p>Continuing the example, the command <span class="highlight-3"> df -h </span> will clarify the information, and assumes just one partition on the USB stick:</p>
 <pre>
-/dev/sdc2             3.4G  4.0K  3.4G   1% /media/disk
-/dev/sdc1             4.1G  1.1G  2.8G  28% /media/disk-1
+/dev/sdc1             4.1G  1.1G  2.8G  28% /media/disk
 </pre>
 							 <p>Therefore:</p>
 <pre>
-disk="/media/disk-1"
+disk="/media/disk"
 </pre>
 
 							<p>Set the size of the persist partition:</p>
 <pre>
 size=1024
 </pre>
-							<p>Make a directory on the stick:</p>
-<pre>
-mkdir $disk-1/aptosid
-</pre>
 							<p>Run the code to make the persist file:</p>
 
 <pre>
-dd if=/dev/zero of=$disk-1/aptosid/aptosid-rw bs=1M count=$size &amp;&amp;  echo 'y' | LANG=C /sbin/mkfs.ext2 $disk-1/aptosid/aptosid-rw &amp;&amp;  tune2fs -c 0 "$disk-1/aptosid/aptosid-rw"
+dd if=/dev/zero of=$disk/aptosid-rw bs=1M count=$size &amp;&amp;  echo 'y' | LANG=C /sbin/mkfs.ext2 $disk/aptosid-rw &amp;&amp;  tune2fs -c 0 "$disk/aptosid-rw"
 </pre>
 
 							<p class="highlight-2">NTFS partitions, commonly used for MS Windows(TM) operating systems, CANNOT be used at all for persistence.</p>
@@ -609,7 +606,7 @@ install-mbr /dev/sdX
 
 							
 	</div>
-	<div id="rev">Page last revised 03/04/2013 0100 UTC</div>
+	<div id="rev">Page last revised 25/04/2013 1345 UTC</div>
 
 </div>
 </body>

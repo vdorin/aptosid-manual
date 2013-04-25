@@ -420,11 +420,12 @@ update-grub
 <pre>
 persist
 </pre>
-							<p>Cuando fromiso usa un sistema de ficheros vfat, usted debe usar un fichero que tenga un sistema de ficheros linux y la chuleta será algo así:</p>
-<pre>
-persist=/aptosid/aptosid-rw
-</pre>
+							<p>To use persist with a vfat file system, then you must use a file that contains a linux file system.</p>
 
+							<p>If you want to put the persist file or directory somewhere else other than <span class="highlight-3">/aptosid-rw </span> then you need to specify where it is with the bootcode, for example <span class="highlight-3"> persist=/janes/files </span>:</p>
+<pre>
+persist=/user-name/files
+</pre>
 							<p>aptosid utiliza aufs para activar lo que se llama COW (copiar al escribir) sobre el ISO para permitir escribir nuevos archivos y carpetas y actualizar los existentes para mantener los nuevos archivos en memoria. Con el cheatcode <span class="highlight-3">persist</span> el sistema almacena los nuevos archivos en la misma partición del disco duro donde está almacenda la imagen ISO para el 'fromiso'.</p>
 
 							<p><span class="highlight-3">fromiso</span> le da un sistema vivo que realiza todos las carácteristicas del aptosid Live ISO. Esto tiene el beneficio de hacer cosas tales como configurar automáticamente el hardware, pero también implica que se recrearán los mismos archivos cada vez que inicie el ordenador con él, a menos que añada códigos chuletas (cheatcodes) adicionales.</p>
@@ -447,19 +448,15 @@ persist=/aptosid/aptosid-rw
 					<h6>Sistemas de Archivos vfat</h6>
 							<p>Cuando se usa vfat, la persistencia se logra a través de un archivo que puede tener un máximo de 2GB pero no menos de 100MB (porque no podría usarse). Este archivo debe ser llamado <span class="highlight-3">aptosid-rw</span>.</p>
 
-					 <h4>Ejemplo de la creación de persist después de una instalación inicial</h4>
-							<p>Si no está seguro del punto de montaje, conecte el pendrive y dé la orden <span class="highlight-3">ls -lh /media</span> que le dará una lista de todos los puntos de montaje de su sistema. Busque algo así como <span class="highlight-3">drwxr-xr-x  6 username root 4.0K Jan  1  1970 disk</span>. Si la salida de la orden da otras particiones, reemplace <span class="highlight-3">"/media/disk"</span> por la de su máquina, (por ejemplo "/media/disk-1").</p>
-<!--<pre>
-disk="/media/disk"
-</pre>-->
-							<p>Siguiendo con el ejemplo, la orden <span class="highlight-3"> df -h </span> aclarará la información:</p>
+							<p>If you are not sure of the mount point, mount the stick and run <span class="highlight-3"> df -h </span> which will provide a list of all your system mount points. Look for something like <span class="highlight-3">/dev/sdb</span> or <span class="highlight-3">/dev/sdc</span>. If your output states differently then replace <span class="highlight-3">"/media/disk"</span> in line with your requirement, (for example "/media/disk-1").</p>
+
+							<p>Continuing the example, the command <span class="highlight-3"> df -h </span> will clarify the information, and assumes just one partition on the USB stick:</p>
 <pre>
-/dev/sdc2             3.4G  4.0K  3.4G   1% /media/disk
-/dev/sdc1             4.1G  1.1G  2.8G  28% /media/disk-1
+/dev/sdc1             4.1G  1.1G  2.8G  28% /media/disk
 </pre>
 							 <p>Por lo tanto:</p>
 <pre>
-disk="/media/disk-1"
+disk="/media/disk"
 </pre>
 
 							<p>Establezca el tamaño de la partición persist:</p>
@@ -473,7 +470,7 @@ mkdir $disk/aptosid
 							<p>Dé esta orden para construir la partición persist:</p>
 
 <pre>
-dd if=/dev/zero of=$disk-1/aptosid/aptosid-rw bs=1M count=$size &amp;&amp;  echo 'y' | LANG=C /sbin/mkfs.ext2 $disk-1/aptosid/aptosid-rw &amp;&amp;  tune2fs -c 0 "$disk-1/aptosid/aptosid-rw"
+dd if=/dev/zero of=$disk/aptosid-rw bs=1M count=$size &amp;&amp;  echo 'y' | LANG=C /sbin/mkfs.ext2 $disk/aptosid-rw &amp;&amp;  tune2fs -c 0 "$disk/aptosid-rw"
 </pre>
 
 							<p class="highlight-2">Las particiones NTFS, comunmente utilizadas para instalaciones de Windows NT/2000/XP (TM), NO PUEDEN SER usadas para la persistencia.</p>
@@ -601,7 +598,7 @@ install-mbr /dev/sdX
 
 							
 	</div>
-	<div id="rev">Page last revised 16/10/2012 1052 UTC</div>
+	<div id="rev">Page last revised 25/04/2013 1345 UTC</div>
 
 </div>
 </body>

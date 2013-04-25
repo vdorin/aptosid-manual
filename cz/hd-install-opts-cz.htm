@@ -426,12 +426,13 @@ update-grub
 <pre>
 persist
 </pre>
-<!-- 							<p>When the fromiso uses a vfat filesystem, then you must use a file that contains a linux filesystem and the cheatcode will look like:</p> -->
-							<p>Pokud fromiso obsahuje souborový systém vfat, tak musíte použít soubor, který obsahuje linuxový souborový systém a spouštěcí kód budete vypadat takto:</p>
+							<p>To use persist with a vfat file system, then you must use a file that contains a linux file system.</p>
+
+							<p>If you want to put the persist file or directory somewhere else other than <span class="highlight-3">/aptosid-rw </span> then you need to specify where it is with the bootcode, for example <span class="highlight-3"> persist=/janes/files </span>:</p>
 <pre>
-persist=/aptosid/aptosid-rw
+persist=/user-name/files
 </pre>
-<!-- 							<p>aptosid uses aufs to enable what is known as "copy on write" over your ISO to allow you to write new files and folders and update existing ones by keeping the new files in memory. The <span class="highlight-3">persist</span> cheatcode, will store your new files on the same hard drive partition as you use to store your fromiso ISO image.</p> -->
+							<p>aptosid uses aufs to enable what is known as "copy on write" over your ISO to allow you to write new files and folders and update existing ones by keeping the new files in memory. The <span class="highlight-3">persist</span> cheatcode, will store your new files on the same hard drive partition as you use to store your fromiso ISO image.</p> -->
 							<p>aptosid používá aufs, aby aktivoval, co je známo jako "copy on write", na vašem ISO pro možnost zapisovat nové soubory a adresáře a aktualizovat již přítomné, kdy nové soubory uchovává v paměti. Spouštěcí kód <span class="highlight-3">persist</span> uchová vaše nové soubory na tom stejném diskovém oddílu, který používáte pro uchování ISO obrazu. </p>
 <!-- 							<p><span class="highlight-3">fromiso</span> gives you a live system which performs all the automatic features of the aptosid live ISO. This has the benefit of doing things like automatically configuring the hardware but it also means  that it will recreate the same files each time you boot up unless you use additional codes.</p> -->
 							<p><span class="highlight-3">fromiso</span> vám zprostředkovává live systém, který funguje se všemi automatickými možnostmi live ISO aptosidu. To má výhodu v provádění operací jako je automatická konfigurace vašeho hardwaru, ale také to znamená, že ty samé soubory znovuvytvoří při každém bootování, pokud ovšem nepoužijete další kódy.</p>
@@ -455,20 +456,16 @@ persist=/aptosid/aptosid-rw
 <!-- 							<p>When vfat is used, persistance is made through a file that can be maximum 2GB  but not less than 100MB (as it would be of no use). This file should be named <span class="highlight-3">aptosid-rw</span>.</p> -->
 							<p>Když je použit vfat, tak je perzistence učiněna skrz soubor, který může mít maximálně 2 GB, ale ne méně než 100 MB (jelikož by nebyl k použití). Tento soubor by se měl jmenovat <span class="highlight-3">aptosid-rw</span></p>
 					 <h4>Přiklad vytvoření persist po úvodní instalaci</h4>
-<!-- 							<p>If you are not sure of the mount point, mount the stick and run <span class="highlight-3">ls -lh /media</span> to provide a list of all your system mount points. Look for something like <span class="highlight-3">drwxr-xr-x  6 username root 4.0K Jan  1  1970 disk</span>. If your output states differently then replace <span class="highlight-3">"/media/disk"</span> in line with your requirement, (for example "/media/sdc1"):</p> -->
-							<p>Jestli si nejste jisti přípojným bodem, tak vsuňte usb disk a spusťte <span class="highlight-3">ls -lh /media</span>, což vám vypíše list všech přípojných bodu sytému. Hledejte něco jako <span class="highlight-3">drwxr-xr-x  6 username root 4.0K Jan  1  1970 disk</span>. Jestli váš výstup tvrdí něco jiného, tak nahraďte <span class="highlight-3">"/media/disk"</span>, aby korespondoval s vaším požadavkem (například "/media/disk-1").</p>
-<!--<pre>
-disk="/media/disk"
-</pre>-->
-<!--							<p>Continuing the example, the command <span class="highlight-3"> df -h </span> will clarify the information, :</p>-->
-							<p>Příkaz <span class="highlight-3"> df -h </span> informace z příkladu objasní, :</p>
+							
+							<p>If you are not sure of the mount point, mount the stick and run <span class="highlight-3"> df -h </span> which will provide a list of all your system mount points. Look for something like <span class="highlight-3">/dev/sdb</span> or <span class="highlight-3">/dev/sdc</span>. If your output states differently then replace <span class="highlight-3">"/media/disk"</span> in line with your requirement, (for example "/media/disk-1").</p>
+
+							<p>Continuing the example, the command <span class="highlight-3"> df -h </span> will clarify the information, and assumes just one partition on the USB stick:</p>
 <pre>
-/dev/sdc2             3.4G  4.0K  3.4G   1% /media/disk
-/dev/sdc1             4.1G  1.1G  2.8G  28% /media/disk-1
+/dev/sdc1             4.1G  1.1G  2.8G  28% /media/disk
 </pre>
 							 <p>Therefore:</p>
 <pre>
-disk="/media/disk-1"
+disk="/media/disk"
 </pre>
 
 							<p>Nastavte velikost diskového oddílu persist:</p>
@@ -482,7 +479,7 @@ mkdir $disk/aptosid
 							<p>Spusťte kód pro vytvoření diskového oddílu persist:</p>
 
 <pre>
-dd if=/dev/zero of=$disk-1/aptosid/aptosid-rw bs=1M count=$size &amp;&amp;  echo 'y' | LANG=C /sbin/mkfs.ext2 $disk-1/aptosid/aptosid-rw &amp;&amp;  tune2fs -c 0 "$disk-1/aptosid/aptosid-rw"
+dd if=/dev/zero of=$disk/aptosid-rw bs=1M count=$size &amp;&amp;  echo 'y' | LANG=C /sbin/mkfs.ext2 $disk/aptosid-rw &amp;&amp;  tune2fs -c 0 "$disk/aptosid-rw"
 </pre>
 
 							<p class="highlight-2">Diskové oddíly NTFS, obvykle používány pro isntalace Windows NT/2000/XP (TM), NEMOHOU být použity za účelem vytvoření perzistentního systému.</p>
@@ -614,7 +611,7 @@ install-mbr /dev/sdX
 
 							
 	</div>
-	<div id="rev">Page last revised 16/10/2012 1052 UTC</div>
+	<div id="rev">Page last revised 25/04/2013 1345 UTC</div>
 
 </div>
 </body>

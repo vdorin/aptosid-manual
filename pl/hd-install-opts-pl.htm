@@ -422,11 +422,12 @@ update-grub
 <pre>
 persist
 </pre>
-							<p>Kiedy fromiso używa systemu plików vfat, musisz uzyć pliku zawierającego system plików linuksa a kod będzie wygladał tak:</p>
-<pre>
-persist=/aptosid/aptosid-rw
-</pre>
+							<p>To use persist with a vfat file system, then you must use a file that contains a linux file system.</p>
 
+							<p>If you want to put the persist file or directory somewhere else other than <span class="highlight-3">/aptosid-rw </span> then you need to specify where it is with the bootcode, for example <span class="highlight-3"> persist=/janes/files </span>:</p>
+<pre>
+persist=/user-name/files
+</pre>
 							<p>aptosid używa aufs, aby umożliwić "copy on write" ponad twoim ISO w celu umożliwienia zapisu nowych plików, kartotek i uaktualnianie istniejących przez zachowanie zmian w pamięci. Użycie kodu <span class="highlight-3">persist</span>, umożliwi zapisywanie twoich nowych plików na tej samej partycji dysku twardego, którego użyłeś do przechowania za pomocą opcji fromiso obrazu ISO.</p>
 
 							<p><span class="highlight-3">fromiso</span> daje ci system typu "live" wykazujący wszystkie automatyczne cechy aptosida uruchamianego z płytki "live". To daje korzyści takie jak wykonywanie automatycznej konfiguracji sprzętu jak również oznacza, że zostają ponowne utworzone te same pliki za każdym razem kiedy startujesz system, póki nie zastosujesz dodatkowych kodów.</p>
@@ -450,18 +451,15 @@ persist=/aptosid/aptosid-rw
 							<p>Kiedy uzyjemy systemu plików vfat, persistance jest tworzony poprzez plik, który może mieć maksymalną wielkość 2GB lecz nie mniej niż 100MB (jeśli ma zachować użyteczność). Ten zbiór powinien zostać nazwany <span class="highlight-3">aptosid-rw</span>.</p>
 
 					 <h4>Przykład tworzenia systemu typu persist po wstępnej instalacji</h4>
-							<p>Jeśli nie jesteś pewien punktu mocowania, zamontuj nośnik i uruchom <span class="highlight-3">ls -lh /media</span> by uzyskać listę punktów mocowania całego systemu. Szukaj czegoś na podobieństwo <span class="highlight-3">drwxr-xr-x  6 username root 4.0K Jan  1  1970 disk</span>. Jeśli rezultat określa inaczej, zamień <span class="highlight-3">"/media/disk"</span> w linii zgodnie z potrzebą, (dla przykładu "/media/disk-1").</p>
-<!--<pre>
-disk="/media/disk"
-</pre>-->
-							<p>Kontynuując przykład, komenda <span class="highlight-3"> df -h </span> rozjaśni informację, :</p>
+							<p>If you are not sure of the mount point, mount the stick and run <span class="highlight-3"> df -h </span> which will provide a list of all your system mount points. Look for something like <span class="highlight-3">/dev/sdb</span> or <span class="highlight-3">/dev/sdc</span>. If your output states differently then replace <span class="highlight-3">"/media/disk"</span> in line with your requirement, (for example "/media/disk-1").</p>
+
+							<p>Continuing the example, the command <span class="highlight-3"> df -h </span> will clarify the information, and assumes just one partition on the USB stick:</p>
 <pre>
-/dev/sdc2             3.4G  4.0K  3.4G   1% /media/disk
-/dev/sdc1             4.1G  1.1G  2.8G  28% /media/disk-1
+/dev/sdc1             4.1G  1.1G  2.8G  28% /media/disk
 </pre>
 							 <p>Zatem:</p>
 <pre>
-disk="/media/disk-1"
+disk="/media/disk"
 </pre>
 
 							<p>Ustal rozmiar partycji typu persist:</p>
@@ -475,7 +473,7 @@ mkdir $disk/aptosid
 							<p>Wykonaj kod by utworzyć partycję persist:</p>
 
 <pre>
-dd if=/dev/zero of=$disk-1/aptosid/aptosid-rw bs=1M count=$size &amp;&amp;  echo 'y' | LANG=C /sbin/mkfs.ext2 $disk-1/aptosid/aptosid-rw &amp;&amp;  tune2fs -c 0 "$disk-1/aptosid/aptosid-rw"
+dd if=/dev/zero of=$disk/aptosid-rw bs=1M count=$size &amp;&amp;  echo 'y' | LANG=C /sbin/mkfs.ext2 $disk/aptosid-rw &amp;&amp;  tune2fs -c 0 "$disk/aptosid-rw"
 </pre>
 
 							<p class="highlight-2">Partycje NTFS, powszechnie używane w instalacjach NT/2000/XP (TM), NIE MOGĄ być w ogóle użyte dla systemu typu persist.</p>
@@ -602,7 +600,7 @@ install-mbr /dev/sdX
 
 							
 	</div>
-	<div id="rev">Page last revised 16/10/2012 1052 UTC</div>
+	<div id="rev">Page last revised 25/04/2013 1345 UTC</div>
 
 </div>
 </body>

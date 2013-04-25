@@ -412,6 +412,40 @@ update-grub
 </pre>
 						      <p>Fișierul <i>grub.cfg</i> al lui grub2 va fi actualizat cu intrări pentru  diferitele imagini ISO ce le aveți stocate în directorul specificat și vor fi disponibile la următoarea pornire a PC-ului.</p>
 	    </div>
+	<div class="divider" id="fromiso-persist">
+		<h2>General information on persist</h2>
+	
+	<!--</div>
+	<div class="divider" id="persist-firm-1">-->
+				    <h3>Firmware</h3>
+							<p><span class="highlight-3">This applies to all persist requirements, except from RAW device installations.</span> For RAW devices see <a href="hd-ins-opts-oos-en.htm#raw-usb">Writing aptosid to a USB/SSD stick with any Linux, MS Windows or Mac OS X system</a></p>
+
+							<p>For firmware, you simply place the data you want to add to the live systems <span class="highlight-3">/lib/firmware</span> in a directory called <span class="highlight-3">/aptosid/firmware</span> on your stick. You can enable this at boot time by selecting <span class="highlight-3">Yes</span> from the graphical <span class="highlight-3">Driver menu</span> or manually by adding <span class="highlight-3">firmware</span> to the kernel command line. <span class="highlight-3">firmware=/lib/firmware</span> would load the firmware from the first install it finds on a machine. If you want to enable it by default you can edit your boot configuration files, for example the <span class="highlight-3">/boot/isolinux/syslinux.cfg</span> file.</p>
+
+							<p>Both persist and firmware can use files placed in different locations on the disk, for example if the file for persistence is in the root of the stick and called <span class="highlight-3">persist.img</span> you can simply use <span class="highlight-3">persist=/persist.img</span> and likewise for firmware in a directory named fw you could use <span class="highlight-3">firmware=/fw</span>.</p>
+	
+
+				<h3>fromiso and persist on a HD</h3>
+
+							<p>You can have a persistent live system on a writeable disk by combining a fromiso set-up with the persist boot code. To use persist when the file system is ext2/ext3/ext4 the default is simply:</p>
+
+<pre>
+persist
+</pre>
+							<p>To use persist with a vfat file system, then you must use a file that contains a linux file system.</p>
+
+							<p>If you want to put the persist file or directory somewhere else other than <span class="highlight-3">/aptosid-rw </span> then you need to specify where it is with the bootcode, for example <span class="highlight-3"> persist=/janes/files </span>:</p>
+<pre>
+persist=/user-name/files
+</pre>
+							<p>aptosid uses aufs to enable what is known as "copy on write" over your ISO to allow you to write new files and folders and update existing ones by keeping the new files in memory. The <span class="highlight-3">persist</span> boot code, will store your new files on the same hard drive partition as you use to store your ISO image.</p>
+
+							<p><span class="highlight-3">fromiso</span> will give you a live system which performs all the automatic features of the aptosid live ISO. This has the benefit of doing things like automatically configuring the hardware but it also means that it will recreate the same files each time you boot up unless you use additional codes.</p>
+
+							<p>Using <span class="highlight-3">persist</span> along with other aptosid specific boot codes such as noxorgconf, nonetwork, means that it will not recreate the same files each time you boot up. Refer to <a href='http://manual.aptosid.com/en/cheatcodes-en.htm#cheatcodes'>Boot codes</a></p>
+
+							<p>Except for updating the kernel within the fromiso framework, using persist also means that you can install packages from apt and have the application and any data you have saved available for you to access at next boot up. Some packages require your sources.list to include contrib and non-free, see <a href="nf-firm-en.htm#non-free-firmware">Adding non-free to Sources List</a> </p>
+	</div>
 	<div class="divider" id="persist-post">
 				<h2>fromiso și persist pe un mediu boot-abil - USB-sticks/SD/flash-cards</h2>
 							<p>Probabil utilizarea ideală a modului persistent este în combinație cu instrumentul 'install-usb-gui' pentru crearea propriul mediu boot-abil cu fișierele și programele necesare. Fișierele voastre vor fi stocate într-un subfolder pe disc.</p>
@@ -426,18 +460,16 @@ update-grub
 							<p>Când este utilizat 'vfat', persistența este realizată într-un fișier care poate fi de maxim 2GB dar nu mai mic de 100MB (altfe nu poate fi folosit). Fisierul trebuie să se numească <span class="highlight-3">aptosid-rw</span>.</p>
 
 					 <h4>Examplu de creare 'persist' după o instalare initială</h4>
-							<p>Dacă nu sunteți siguri care este punctul de mount-are, cuplați stick-ul și rulați  <span class="highlight-3">ls -lh /media</span> pentru a obține o listă a tuturor punctelor de mount-are din sistem. Ar trebui să arate cam așa <span class="highlight-3">drwxr-xr-x  6 username root 4.0K Jan  1  1970 disk</span>. Dacă rezultatul vostru diferă atunci înlocuiți <span class="highlight-3">"/media/disk"</span> conform cu nevoile voastre, (de examplu "/media/disk-1").</p>
-<!--<pre>
-disk="/media/disk"
-</pre>-->
-							<p>Continuând examplul, comanda <span class="highlight-3"> df -h </span> va clarifica  informația,:</p>
+							<p>Dacă nu sunteți siguri care este punctul de m
+							<p>If you are not sure of the mount point, mount the stick and run <span class="highlight-3"> df -h </span> which will provide a list of all your system mount points. Look for something like <span class="highlight-3">/dev/sdb</span> or <span class="highlight-3">/dev/sdc</span>. If your output states differently then replace <span class="highlight-3">"/media/disk"</span> in line with your requirement, (for example "/media/disk-1").</p>
+
+							<p>Continuing the example, the command <span class="highlight-3"> df -h </span> will clarify the information, and assumes just one partition on the USB stick:</p>
 <pre>
-/dev/sdc2             3.4G  4.0K  3.4G   1% /media/disk
-/dev/sdc1             4.1G  1.1G  2.8G  28% /media/disk-1
+/dev/sdc1             4.1G  1.1G  2.8G  28% /media/disk
 </pre>
-							 <p>Deci:</p>
+							  <p>Deci:</p>
 <pre>
-disk="/media/disk-1"
+disk="/media/disk"
 </pre>
 
 							<p>Stabiliți mărimea partiției 'persist':</p>
@@ -451,7 +483,7 @@ mkdir $disk/aptosid
 							<p>Rulați programul de creare a partiției 'persist':</p>
 
 <pre>
-dd if=/dev/zero of=$disk-1/aptosid/aptosid-rw bs=1M count=$size &amp;&amp;  echo 'y' | LANG=C /sbin/mkfs.ext2 $disk-1/aptosid/aptosid-rw &amp;&amp;  tune2fs -c 0 "$disk-1/aptosid/aptosid-rw"
+dd if=/dev/zero of=$disk/aptosid-rw bs=1M count=$size &amp;&amp;  echo 'y' | LANG=C /sbin/mkfs.ext2 $disk/aptosid-rw &amp;&amp;  tune2fs -c 0 "$disk/aptosid-rw"
 </pre>
 
 							<p class="highlight-2">partițiile NTFS, utilizate de regulă pentru Windows NT/2000/XP (TM), NU POT fi utilizate pentru persistență.</p>
@@ -578,7 +610,7 @@ install-mbr /dev/sdX
 
 							
 	</div>
-	<div id="rev">Page last revised 16/10/2012 1052 UTC </div>
+	<div id="rev">Page last revised 25/04/2013 1345 UTC </div>
 
 </div>
 </body>

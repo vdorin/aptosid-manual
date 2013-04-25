@@ -477,16 +477,12 @@ update-grub
 <pre>
 persist
 </pre>
+							<p>To use persist with a vfat file system, then you must use a file that contains a linux file system.</p>
 
-							<!--- ####
-							<p>When the fromiso uses a vfat filesystem, then you must use a file that contains a linux filesystem and the cheatcode will look like:</p>
-#### -->
-							<p>fromiso が VFATのファイルシステムを使う場合は Linux のファイルシステムを内容としてふくむファイルを使う必要があります。起動オプションは次のようになります:</p>
+							<p>If you want to put the persist file or directory somewhere else other than <span class="highlight-3">/aptosid-rw </span> then you need to specify where it is with the bootcode, for example <span class="highlight-3"> persist=/janes/files </span>:</p>
 <pre>
-persist=/aptosid/aptosid-rw
+persist=/user-name/files
 </pre>
-
-<!--- ####
 							<p>aptosid uses aufs to enable what is known as "copy on write" over your ISO to allow you to write new files and folders and update existing ones by keeping the new files in memory. The <span class="highlight-3">persist</span> cheatcode, will store your new files on the same hard drive partition as you use to store your fromiso ISO image.</p>
 #### -->
 							<p>aptosid は aufs を使って、いわゆる "copy on write" (書き込み時コピー)という方法で新しいファイルをメモリーに保存することで、 ISOイメージ上のファイルシステムに新しいファイルやフォルダーを作成したり、もとからあるファイルに変更を加えたりできるようにしています。起動オプションに <span class="highlight-3">persist</span> を使うと、新しいファイルをハードディスクの fromiso のISOイメージのあるのと同じパーティションに保存します。</p>
@@ -553,27 +549,18 @@ persist=/aptosid/aptosid-rw
 					 <h4>Example of creating persist after initial installation</h4>
 						#### -->
 					 <h4>最初のインストールが終わってから持続モードに設定する例</h4>
-							<!--- ####
-							<p>If you are not sure of the mount point, mount the stick and run <span class="highlight-3">ls -lh /media</span> to provide a list of all your system mount points. Look for something like <span class="highlight-3">drwxr-xr-x  6 username root 4.0K Jan  1  1970 disk</span>. If your output states differently then replace <span class="highlight-3">"/media/disk"</span> in line with your requirement, (for example "/media/sdc1"):</p>
-							#### -->
-							<p>マウントポイント名について曖昧に感じるときは、まずフラッシュメモリをマウントして <span class="highlight-3">ls -lh /media</span> のコマンドを実行します。出力の中から <span class="highlight-3">drwxr-xr-x  6 username root 4.0K Jan  1  1970 disk</span> のような行を探します。もし disk ではなく他の名前でマウントされている場合は <span class="highlight-3">"/media/disk"</span> をその名に合わせて変更してください。(例 "/media/disk-1").</p>
-<!--<pre>
-disk="/media/disk"
-</pre>-->
-							<!--- ####
-							<p>Continuing the example, the command <span class="highlight-3"> df -h </span> will clarify the information, :</p>
-							#### -->
-							<p>この例で続けると、<span class="highlight-3"> df -h </span> のコマンドで確かめることができます:</p>
+							<p>If you are not sure of the mount point, mount the stick and run <span class="highlight-3"> df -h </span> which will provide a list of all your system mount points. Look for something like <span class="highlight-3">/dev/sdb</span> or <span class="highlight-3">/dev/sdc</span>. If your output states differently then replace <span class="highlight-3">"/media/disk"</span> in line with your requirement, (for example "/media/disk-1").</p>
+
+							<p>Continuing the example, the command <span class="highlight-3"> df -h </span> will clarify the information, and assumes just one partition on the USB stick:</p>
 <pre>
-/dev/sdc2             3.4G  4.0K  3.4G   1% /media/disk
-/dev/sdc1             4.1G  1.1G  2.8G  28% /media/disk-1
+/dev/sdc1             4.1G  1.1G  2.8G  28% /media/disk
 </pre>
-								<!--- ####
+							 <!--- ####
 							 <p>Therefore:</p>
 								#### -->
 							 <p>つまり:</p>
 <pre>
-disk="/media/disk-1"
+disk="/media/disk"
 </pre>
 
 							<!--- ####
@@ -590,7 +577,7 @@ mkdir $disk/aptosid
 							<p>次の持続モードパーティション作成のコマンドを実行する:</p>
 
 <pre>
-dd if=/dev/zero of=$disk-1/aptosid/aptosid-rw bs=1M count=$size &amp;&amp;  echo 'y' | LANG=C /sbin/mkfs.ext2 $disk-1/aptosid/aptosid-rw &amp;&amp;  tune2fs -c 0 "$disk-1/aptosid/aptosid-rw"
+dd if=/dev/zero of=$disk/aptosid-rw bs=1M count=$size &amp;&amp;  echo 'y' | LANG=C /sbin/mkfs.ext2 $disk/aptosid-rw &amp;&amp;  tune2fs -c 0 "$disk/aptosid-rw"
 </pre>
 
 							<p class="highlight-2">Windows NT/2000/XP(TM)のインストールに使われている NTFS システムでは持続モードはできません。</p>
@@ -826,7 +813,7 @@ install-mbr /dev/sdX
 
 							
 	</div>
-	<div id="rev">Page last revised 16/10/2012 1052 UTC</div>
+	<div id="rev">Page last revised 25/04/2013 1345 UTC</div>
 
 </div>
 </body>
