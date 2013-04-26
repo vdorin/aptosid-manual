@@ -17,7 +17,7 @@
         <![endif]-->
 </head>
 <body>
-<!-- Last translation revision hubi Wed, 17 Oct 2012 14:03:16 +0000 -->
+<!-- Last translation revision hubi Fri, 26 Apr 2013 20:38:03 +0000 -->
 <!--htdig_noindex--><div id="menu"> <!-- menu starts here de lang maintained by hubi -->
 <!--aptosid Operating System Manual menu-version-02.15.2013.01.10 -->
 <!-- menu last updated by bluewater 2013.01.10 0910 hrs UTC -->
@@ -431,9 +431,9 @@ update-grub
 <pre>
 persist
 </pre>
-							<p>To use persist with a vfat file system, then you must use a file that contains a linux file system.</p>
+							<p>Um persist mit einem VFat-Dateisystem zu benutzen, muss eine Datei verwendet werden, die ein Linux-Dateisystem beinhaltet.</p>
 
-							<p>If you want to put the persist file or directory somewhere else other than <span class="highlight-3">/aptosid-rw </span> then you need to specify where it is with the bootcode, for example <span class="highlight-3"> persist=/janes/files </span>:</p>
+							<p>Falls das persistente Verzeichnis oder die persistente Datei an einem anderen Ort als <span class="highlight-3">/aptosid-rw</span> verwendet werden soll, muss dieser Ort als Boot-Parameter angegeben werden, zum Beispiel <span class="highlight-3"> persist=/janes/files </span>:</p>
 <pre>
 persist=/user-name/files
 </pre>
@@ -460,9 +460,9 @@ persist=/user-name/files
 							<p>Wenn vfat verwendet wird, wird der persist-Modus mittels einer Datei ermöglicht, die maximal 2GB groß sein kann, aber mindestens 100MB groß sein soll (weniger macht keinen Sinn). Diese Datei sollte  <span class="highlight-3">aptosid-rw</span> benannt werden. </p>
 
 					 <h4>Beispiel, wie man persist nach erfolgter Installation setzt</h4>
-							<p>If you are not sure of the mount point, mount the stick and run <span class="highlight-3"> df -h </span> which will provide a list of all your system mount points. Look for something like <span class="highlight-3">/dev/sdb</span> or <span class="highlight-3">/dev/sdc</span>. If your output states differently then replace <span class="highlight-3">"/media/disk"</span> in line with your requirement, (for example "/media/disk-1").</p>
+							<p>Wenn man nicht sicher ist, wie der Mount-Punkt heißt, wird der USB-Stick eingebunden und der Befehl <span class="highlight-3"> df -h </span> ausgeführt, um eine Liste mit allen Mount-Punkten des Systems zu erhalten. Man schaut nach einem Eintrag wie <span class="highlight-3">/dev/sdb</span> oder <span class="highlight-3">/dev/sdc</span>. Falls die Ausgabe anders lautet als <span class="highlight-3">"/media/disk"</span> in unserem Beispiel, muss die Zeile unseres Beispiels durch den wirklichen Mount-Punkt ersetzt werden (z.B. "/media/disk-1").</p>
 
-							<p>Continuing the example, the command <span class="highlight-3"> df -h </span> will clarify the information, and assumes just one partition on the USB stick:</p>
+							<p>Um das Beispiel fortzusetzen: der Befehl <span class="highlight-3"> df -h </span> schafft Klarheit, und in unserem Beispiel zeigt er eine Partition auf dem USB-Stick:</p>
 <pre>
 /dev/sdc1             4.1G  1.1G  2.8G  28% /media/disk
 </pre>
