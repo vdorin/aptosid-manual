@@ -420,9 +420,9 @@ update-grub
 <pre>
 persist
 </pre>
-							<p>To use persist with a vfat file system, then you must use a file that contains a linux file system.</p>
+							<p>Para usar persist con un sistema de ficheros vfat debe usar un fichero que contenga un sistema de ficheros linux.</p>
 
-							<p>If you want to put the persist file or directory somewhere else other than <span class="highlight-3">/aptosid-rw </span> then you need to specify where it is with the bootcode, for example <span class="highlight-3"> persist=/janes/files </span>:</p>
+							<p>Si quiere poner el fichero o el directorio persist en algún otro lugar que no sea <span class="highlight-3">/aptosid-rw </span> necesitará especificar dónde con el código de arranque, por ejemplo <span class="highlight-3"> persist=/janes/files </span>:</p>
 <pre>
 persist=/user-name/files
 </pre>
@@ -448,9 +448,9 @@ persist=/user-name/files
 					<h6>Sistemas de Archivos vfat</h6>
 							<p>Cuando se usa vfat, la persistencia se logra a través de un archivo que puede tener un máximo de 2GB pero no menos de 100MB (porque no podría usarse). Este archivo debe ser llamado <span class="highlight-3">aptosid-rw</span>.</p>
 
-							<p>If you are not sure of the mount point, mount the stick and run <span class="highlight-3"> df -h </span> which will provide a list of all your system mount points. Look for something like <span class="highlight-3">/dev/sdb</span> or <span class="highlight-3">/dev/sdc</span>. If your output states differently then replace <span class="highlight-3">"/media/disk"</span> in line with your requirement, (for example "/media/disk-1").</p>
+							<p>Si no está seguro del punto de montaje, monte el lápiz y dé la orden <span class="highlight-3"> df -h </span> que le dará una lista de todos los puntos de montaje de su sistema. Busque algo así como <span class="highlight-3">/dev/sdb</span> o <span class="highlight-3">/dev/sdc</span>. Si la información que aparece es distinta, reemplace <span class="highlight-3">"/media/disk"</span> en línea con lo que necesite (por ejemplo "/media/disk-1").</p>
 
-							<p>Continuing the example, the command <span class="highlight-3"> df -h </span> will clarify the information, and assumes just one partition on the USB stick:</p>
+							<p>Siguiendo con el ejemplo, la orden <span class="highlight-3"> df -h </span> clarificará la información, y supone una sola partición en la memoria USB:</p>
 <pre>
 /dev/sdc1             4.1G  1.1G  2.8G  28% /media/disk
 </pre>
