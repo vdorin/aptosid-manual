@@ -413,42 +413,42 @@ update-grub
 						      <p>Fișierul <i>grub.cfg</i> al lui grub2 va fi actualizat cu intrări pentru  diferitele imagini ISO ce le aveți stocate în directorul specificat și vor fi disponibile la următoarea pornire a PC-ului.</p>
 	    </div>
 	<div class="divider" id="fromiso-persist">
-		<h2>General information on persist</h2>
+		<h2>Informații generale despre <i>persist</i></h2>
 	
 	<!--</div>
 	<div class="divider" id="persist-firm-1">-->
 				    <h3>Firmware</h3>
-							<p><span class="highlight-3">This applies to all persist requirements, except from RAW device installations.</span> For RAW devices see <a href="hd-ins-opts-oos-en.htm#raw-usb">Writing aptosid to a USB/SSD stick with any Linux, MS Windows or Mac OS X system</a></p>
+							<p><span class="highlight-3">Următoarele instrucțiuni sunt aplicabile la toate cerințele utilizării <i>persist</i>, cu excepția instalărilor de pe dispozitive <i>RAW</i>.</span> Pentru dispozitive <i>RAW</i> vedeți <a href="hd-ins-opts-oos-en.htm#raw-usb">Scrierea aptosid pe un stick USB/SSD cu oricare sistem Linux, MS Windows sau Mac OS X </a></p>
 
-							<p>For firmware, you simply place the data you want to add to the live systems <span class="highlight-3">/lib/firmware</span> in a directory called <span class="highlight-3">/aptosid/firmware</span> on your stick. You can enable this at boot time by selecting <span class="highlight-3">Yes</span> from the graphical <span class="highlight-3">Driver menu</span> or manually by adding <span class="highlight-3">firmware</span> to the kernel command line. <span class="highlight-3">firmware=/lib/firmware</span> would load the firmware from the first install it finds on a machine. If you want to enable it by default you can edit your boot configuration files, for example the <span class="highlight-3">/boot/isolinux/syslinux.cfg</span> file.</p>
+							<p>Pentru firmware, trebuie doar să plasați datele pe care doriți să le adaugați sistemelor live <span class="highlight-3">/lib/firmware</span> într-un director numit <span class="highlight-3">/aptosid/firmware</span> pe stick-ul vostru. Puteți autoriza accesul acestora la momentul boot-ării  selectând <span class="highlight-3">Yes</span> din meniul grafic <span class="highlight-3">Driver menu</span> sau manual prin adăugarea manuală a cuvântului <span class="highlight-3">firmware</span> la linia de comandă a kernel-ului. Cu expresia <span class="highlight-3">firmware=/lib/firmware</span> se va încărca firmware-ul de pe prima instalare găsită pe computer. Dacă doriți să devină o oțiune permanentă puteți edita fișierul de configurare a boot-ării, de exemplu fișierul <span class="highlight-3">/boot/isolinux/syslinux.cfg</span>.</p>
 
-							<p>Both persist and firmware can use files placed in different locations on the disk, for example if the file for persistence is in the root of the stick and called <span class="highlight-3">persist.img</span> you can simply use <span class="highlight-3">persist=/persist.img</span> and likewise for firmware in a directory named fw you could use <span class="highlight-3">firmware=/fw</span>.</p>
+							<p>Ambele programe <i>persist</i> și <i>firmware</i> pot utiliza fișiere plasate în diferite locuri pe disk, de exemplu dacă fișierul pentru persistență este în rădăcina stick-ului și se numește <span class="highlight-3">persist.img</span> puteți folosi <span class="highlight-3">persist=/persist.img</span> iar cele pentru firmware sunt într-un director numit fw puteți folosi <span class="highlight-3">firmware=/fw</span>.</p>
 	
 
-				<h3>fromiso and persist on a HD</h3>
+				<h3><i>fromiso</i> și <i>persist</i> pe un HD</h3>
 
-							<p>You can have a persistent live system on a writeable disk by combining a fromiso set-up with the persist boot code. To use persist when the file system is ext2/ext3/ext4 the default is simply:</p>
+							<p>Puteți avea sistem live pe un Hard-Disk combinând set-area <i>fromiso</i> cu codul de boot al <i>persist</i>. Utilizarea <i>persist</i> când sistemul de fișiere este ext2/ext3/ext4 e simplă:</p>
 
 <pre>
 persist
 </pre>
-							<p>To use persist with a vfat file system, then you must use a file that contains a linux file system.</p>
+							<p>Utilizarea <i>persist</i> cu un sistem <i>vfat</i>, se face obligatoriu cu un fișier ce conține un sistem de fișiere linux.</p>
 
-							<p>If you want to put the persist file or directory somewhere else other than <span class="highlight-3">/aptosid-rw </span> then you need to specify where it is with the bootcode, for example <span class="highlight-3"> persist=/janes/files </span>:</p>
+							<p>Dacă vreți să puneți fișierul sau directorul <i>persist</i> în altă parte decât <span class="highlight-3">/aptosid-rw </span> atunci trebuie să specificați unde este prin codul de boot-are, de exemplu <span class="highlight-3"> persist=/janes/files </span>:</p>
 <pre>
 persist=/user-name/files
 </pre>
-							<p>aptosid uses aufs to enable what is known as "copy on write" over your ISO to allow you to write new files and folders and update existing ones by keeping the new files in memory. The <span class="highlight-3">persist</span> boot code, will store your new files on the same hard drive partition as you use to store your ISO image.</p>
+							<p>aptosid folosește <i>aufs</i> pentru activarea a ceea ce se numeste <i>"copy on write"</i> peste ISO-ul vostru permițându-vă să scrieți noi fișiere și dosare, să actualizați unele existente ținând în memorie pe cele mai noi. Codul de boot-are <span class="highlight-3">persist</span>, va stoca noile fișiere pe aceeași partiție unde țineți și imaginea ISO.</p>
 
-							<p><span class="highlight-3">fromiso</span> will give you a live system which performs all the automatic features of the aptosid live ISO. This has the benefit of doing things like automatically configuring the hardware but it also means that it will recreate the same files each time you boot up unless you use additional codes.</p>
+							<p><span class="highlight-3">fromiso</span> vă oferă un sistem live care execută toate operațiunile automate ale unui aptosid live ISO. Aceasta are beneficiul unor configurări automate a hardware-ului dar mai înseamnă și că va recrea aceleași fișiere la fiecare nouă boot-are dacă nu specificați altfel în coduri adiționale.</p>
 
-							<p>Using <span class="highlight-3">persist</span> along with other aptosid specific boot codes such as noxorgconf, nonetwork, means that it will not recreate the same files each time you boot up. Refer to <a href='http://manual.aptosid.com/en/cheatcodes-en.htm#cheatcodes'>Boot codes</a></p>
+							<p>Utilizând <span class="highlight-3">persist</span> împreună cu alte coduri de boot specifice aptosid ca <i>noxorgconf</i>, <i>nonetwork</i>, înseamnă că nu vor fi recreate aceleași fișiere de fiecare dată când boot-ați. Vedeți și <a href='http://manual.aptosid.com/en/cheatcodes-en.htm#cheatcodes'>Coduri de Boot</a></p>
 
-							<p>Except for updating the kernel within the fromiso framework, using persist also means that you can install packages from apt and have the application and any data you have saved available for you to access at next boot up. Some packages require your sources.list to include contrib and non-free, see <a href="nf-firm-en.htm#non-free-firmware">Adding non-free to Sources List</a> </p>
+							<p>Cu excepția actualizării kernel-ului, utilizând <i>fromiso</i> în combinație cu <i>persist</i> înseamnă că puteți instala pachete cu <i>apt</i> și să aveți aplicațiile împreună cu toate datele salvate disponibile și accesibile la urmatoarea boot-are. Unele pachete cer ca fișierul vostru <i>sources.list</i> să includă secțiunile <i>contrib</i> și <i>non-free</i>, vedeți <a href="nf-firm-en.htm#non-free-firmware">Adăugarea non-free la Sources List</a> </p>
 	</div>
 	<div class="divider" id="persist-post">
-				<h2>fromiso și persist pe un mediu boot-abil - USB-sticks/SD/flash-cards</h2>
-							<p>Probabil utilizarea ideală a modului persistent este în combinație cu instrumentul 'install-usb-gui' pentru crearea propriul mediu boot-abil cu fișierele și programele necesare. Fișierele voastre vor fi stocate într-un subfolder pe disc.</p>
+				<h2><i>fromiso</i> și <i>persist</i> pe un mediu boot-abil - USB-sticks/SD/flash-cards</h2>
+							<p>Probabil utilizarea ideală a modului persistent este în combinație cu instrumentul 'install-usb-gui' pentru crearea propriul mediu boot-abil cu fișierele și programele necesare. Fișierele voastre vor fi stocate într-un subfolder pe disk.</p>
 
 							<p><span class="highlight-3">persist</span> pe un sistem de fișiere FAT, utilizat de regulă de dos/Windows 9x și găsit de obicei pe dispozitivele flash, cere crearea unui singur fișier mare pentru a fi folosit și care trebuie formatat.</p>
 
@@ -459,11 +459,10 @@ persist=/user-name/files
 			<h6>Sistemul de fișiere vfat</h6>
 							<p>Când este utilizat 'vfat', persistența este realizată într-un fișier care poate fi de maxim 2GB dar nu mai mic de 100MB (altfe nu poate fi folosit). Fisierul trebuie să se numească <span class="highlight-3">aptosid-rw</span>.</p>
 
-					 <h4>Examplu de creare 'persist' după o instalare initială</h4>
-							<p>Dacă nu sunteți siguri care este punctul de m
-							<p>If you are not sure of the mount point, mount the stick and run <span class="highlight-3"> df -h </span> which will provide a list of all your system mount points. Look for something like <span class="highlight-3">/dev/sdb</span> or <span class="highlight-3">/dev/sdc</span>. If your output states differently then replace <span class="highlight-3">"/media/disk"</span> in line with your requirement, (for example "/media/disk-1").</p>
+					 <h4>Examplu de creare 'persist' după o instalare initială</h4>					
+							<p>Dacă nu sunteți siguri care este punctul de mount-are, mount-ați stick-ul și rulați comanda <span class="highlight-3"> df -h </span> care produce o listă cu toate punctele de mount-are din sistem. Căutați ceva de genul <span class="highlight-3">/dev/sdb</span> sau <span class="highlight-3">/dev/sdc</span>. Dacă rezultatul vostru diferă atunci înlocuiți <span class="highlight-3">"/media/disk"</span> cu cerințele voastre, (de exemplu "/media/disk-1").</p>
 
-							<p>Continuing the example, the command <span class="highlight-3"> df -h </span> will clarify the information, and assumes just one partition on the USB stick:</p>
+							<p>Continuând exemplul, comanda <span class="highlight-3"> df -h </span> va clarifica informația, considerând că stick-ul USB are o singură partiție:</p>
 <pre>
 /dev/sdc1             4.1G  1.1G  2.8G  28% /media/disk
 </pre>
@@ -503,7 +502,7 @@ dd if=/dev/zero of=$disk/aptosid-rw bs=1M count=$size &amp;&amp;  echo 'y' | LAN
 					  <ul>
 							<li>1) <a href="hd-install-opts-ro.htm#usb-from1">fromiso </a>; specifică lui aptosid: aptosid-on-a-stick</li>
 							<li>2) <a href="hd-install-opts-ro.htm#usb-hdd"> full </a> (instalarea completă pe un USB/SD/flash se realizează ca o instalare normală pe HD folosind programul de instalare normal).</li>
-							<li>3) <a href="hd-ins-opts-oos-ro.htm#raw-usb"> RAW device </a> write. Acesta este ideal de folosit cu orice sistem de operare Linux, MS Windows sau Mac OS X și doriți să realizați o instalare 'aptosid-on-a-stick', (cu 'caveats').</li>
+							<li>3) <a href="hd-ins-opts-oos-ro.htm#raw-usb"> Dispozitive RAW </a> scriere. Acesta este ideal de folosit cu orice sistem de operare Linux, MS Windows sau Mac OS X și doriți să realizați o instalare 'aptosid-on-a-stick', (cu 'caveats').</li>
 					  </ul>
 
 	    </div>
@@ -527,7 +526,7 @@ dd if=/dev/zero of=$disk/aptosid-rw bs=1M count=$size &amp;&amp;  echo 'y' | LAN
 							<p>Aveți acum un USB/SD/flash bootabil. Dacă nu ați activat 'persist' îl puteți activa adăugând <span class="highlight-3">persist</span> în linia de boot-are a lui grub din ecranul grub. (Dacă este 'vfat', este probabil cel mai bine s-o luați de la început).</p>
 
 
-						<h6>Exemplu  de comandă în terminal:</h6>
+						<h6>Exemplu de comandă în terminal:</h6>
 <pre>
  fll-iso2usb -D /dev/sdX --iso /home/aptosid/aptosid.iso -p -- lang=ro tz=Europe/Bucharest
 </pre>
@@ -554,7 +553,7 @@ $ man fll-iso2usb
 
 				<p><span class="highlight-3">Alte sfaturi importante sunt: </span></p>
 						<ul>
-							<li>O instalare pe USB-stick/SD/flash-card, va fi de regulă limitată la configurația PC-ului cu care s-a făcut instalarea originală. Daca aveti intentia de a utiliza stick-ul USB/SD/flash pe alte PC-uri, ar trebui să nu aveți pre-configurate drivere grafice non-free și cheatcode-uri, cu exceptia cănd aveți probabil cheatcode-uri  'vesa' în fișierul grub.cfg, (tot ce trebuie avut grijă după o instalare corectă).</li>
+							<li>O instalare pe USB-stick/SD/flash-card, va fi de regulă limitată la configurația PC-ului cu care s-a făcut instalarea originală. Daca aveti intentia de a utiliza stick-ul USB/SD/flash pe alte PC-uri, ar trebui să nu aveți pre-configurate drivere grafice non-free și cheatcode-uri, cu exceptia cănd aveți probabil cheatcode-uri 'vesa' în fișierul grub.cfg, (tot ce trebuie avut grijă după o instalare corectă).</li>
 
 							<li>După boot-area de pe USB-stick/SD/flash-card a unui alt PC, va trebui să modificați fișierul 'fstab' pentru a avea acces la HD-urile PC-ului.</li>
 
