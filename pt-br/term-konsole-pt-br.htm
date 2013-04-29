@@ -446,130 +446,124 @@ PS1='${debian_chroot:+($debian_chroot)}\[\033[01;31m\]\u@\h\[\033[01;31m\]:\[\03
 							<p>Há um grande arco de opções disponíveis; entretanto, recomendamos atentar sempre para a simplicidade.</p>
 	</div>
 	<div class="divider" id="sux">
-		      <h2>About Xapps whilst in X as root and sux2 as an alias</h2>
-							<p>While the common command for becoming root is <span class="highlight-3">&lt;su&gt;</span>, using <span class="highlight-3">kdesu &lt;Application&gt;</span> or <span class="highlight-3">gksu &lt;Application&gt;</span> will allow you run GUI / X11 applications from the desktop and allow root to start graphical applications.</p>
+		      <h2>Como utilizar X-aplicações como root e un novo alias sux2</h2>
+							<p>O commando usual para obter os direitos de root é <span class="highlight-3">&lt;su&gt;</span>, utilizando <span class="highlight-3">kdesu &lt;aplicação&gt;</span> ou <span class="highlight-3">gksu &lt;aplicação&gt;</span> permite o lançamento de applicações gráficas como sendo o utilizador root.</p>
 
-							<p><span class="highlight-2">For those used to using <span class="highlight-3"> sux </span>, (sux has been broken by a 'login' security update for a long time), will find that <a href="#alias">sux2, as an alias, is a good option in the meantime</a> otherwise use, as $user:</p> </span>
+							<p><span class="highlight-2">Para aqueles habituados a usar <span class="highlight-3"> sux </span>, (sux tem alguns bugs devido a problemas de segurança), <a href="#alias">sux2, definido como um alias na Shell</a>, é uma opção a ter em conta ou então como $user:</p> </span>
 <pre>
 $ suxterm
 </pre>
-							<p>In most cases, using an Xapp while in root is to take advantage of a GUI editor like kate, kwrite, mousepad or leafpad to name just a few. X while in root is also required for the GUI partitioning application gparted. (Also see <a href="#sudo"> sudo</a>).</p>
+							<p>Na maior parte dos casos utilizar uma X-aplicação como root is é para tirar vantagem de um editor gráfico mas é também o caso quando se pretende utilizar a aplicação gráfica de particionamento gparted. (Veja também <a href="#sudo"> sudo</a>).</p>
 
-							<p>Non-gui applications like mcedit, vim, vi, or emacs are highly recommended as editors, with mcedit being one of the intuitive editors of the non-gui applications for use by first time users of a text editor while in root with X. mcedit, vim, vi or emacs are possibly your only choices of an editor while not in X. (<span class="highlight-3">mc</span> is an ideal file browser while not in X).</p>
+							<p>Aplicações não gráficas como  mcedit, vim, vi, or emacs são altamente recomendáveis com editores, tudo dependendo do gosto pessoal.</p>
 
+				<h4>KDE </h4>
 
-				<h4>KDE options</h4>
-
-							<p>To start kdesu in KDE:</p>
+							<p>Para lançar o kdesu na KDE:</p>
 <pre>
 Alt+F2
 </pre>
-							<p>or right-click on the desktop and choose:</p>
+							<p>ou escolha lançar commando no menu do rato:</p>
 <pre>
 Run Command
 </pre>
-							 <p>then:</p>
+							 <p>e entre:</p>
 
 <pre>
 kdesu &lt;Application&gt;
 </pre>
 
-							<p>Some KDE applications require <span class="highlight-3">dbus-launch</span> in front of the application:</p>
+							<p>Algumas KDE-aplicações necessitam do comando <span class="highlight-3">dbus-launch</span> antes da aplicação:</p>
 <pre>
-dbus-launch &lt;Application&gt;
+dbus-launch &lt;aplicação&gt;
 </pre>
 
-				<h4>Xfce options</h4>
-							<p>To start Run Command in Xfce:</p>
+				<h4>Xfce </h4>
+							<p>Para lançar um commando utilize a combinação:</p>
 <pre>
 Alt+F2
 </pre>
-							<p>or right-click on the desktop and choose:</p>
+							<p>ou utilize o menu do rato e escolha:</p>
 <pre>
 Run Command
 </pre>
-							 <p>then:</p>
+							 <p>depois entre:</p>
 
 <pre>
-gksu &lt;Application&gt;
+gksu &lt;aplicação&gt;
 </pre>
 
-					  <h4>Other Desktop Window Manager options</h4>
-							<p>Another keyboard option also generic to all major Desktop Managers is:</p>
+					  <h4>Se utiliza outros programas de desktop</h4>
+							<p>a combinação do teclado é em geral aplicável a todos eles::</p>
 <pre>
 Alt+F2
 </pre>
-							<p>then:</p>
+							<p>depois entre:</p>
 <pre>
-su-to-root -X -c &lt;Application&gt;
+su-to-root -X -c &lt;aplicação&gt;
 </pre>
-					  <h3>Terminal/konsole options</h3>
-							<p>To run kdesu in a terminal:</p>
+					  <h3>Terminal/konsola</h3>
+							<p>para lançar o kdesu num terminal:</p>
 <pre>
 /usr/lib/kde4/libexec/kdesu
 </pre>
-							<p>To run gksu in a terminal:</p>
+							<p>Para lançaar o gksu utilize:</p>
 <pre>
 /usr/bin/gksu
 </pre>
 
-							<p>Another option is <span class="highlight-3">ssh -X root@localhost</span> otherwise use <span class="highlight-3">su-to-root -X -c </span>:</p>
+							<p>Um outra opção que pode ser utilizada é <span class="highlight-3">ssh -X root@localhost</span> ou  <span class="highlight-3">su-to-root -X -c </span>:</p>
 
 							
 <pre>
 ssh -X root@localhost
 </pre>
-							<p>Whilst ssh is installed by defualt it may not be enabled. To enable ssh, as root:
+							<p>Apesar de em geral estar instalado SSH pode não estar ativado. Para o ativar use:
 <pre>
 /etc/init.d/ssh start
 </pre>
-							<p>else:</p>
-<pre>
-su-to-root -X -c &lt;application&gt;
-</pre>
-
 
 	</div>
 	<div class="divider" id="alias">
-				    <h2>Setting up an alias in a the terminal for kdesu, gksu, su-to-root -X -c or ssh -X root@localhost called <span class="highlight-3">sux2</span></h2>
+				    <h2>Como definir um alias no terminal para kdesu, gksu, su-to-root -X -c ou ssh -X root@localhost chamado <span class="highlight-3">sux2</span></h2>
 
-							<p>Typing a long command line in the terminal all the time is not an ideal, so the solution is to set up an terminal/konsole alias called <span class="highlight-3">sux2</span>.</p>
+							<p>A utilização repetida dos mesmos comandos num terminal pode ser facilitada utilizando um Shell alias chamado <span class="highlight-3">sux2</span>.</p>
 
-							<p><span class="highlight-2">Note: In each of the following examples the command to activate the alias in a terminal will be:</span></p>
+							<p><span class="highlight-2">Note bem: Em qualqur dos casos seguintes o comando a utilizar no terminal vai ser sempre:</span></p>
 
 <pre>
-<span class="highlight-2">sux2 &lt;application&gt;</span>
+<span class="highlight-2">sux2 &lt;aplicação&gt;</span>
 </pre>
-					  <h5><span class="highlight-3">Setting an alias</span></h5> 
-							<p>The use of mcedit as <span class="highlight-3">$user </span>in the following examples is deliberate. Feel free to use any editor you wish to use:</p>
+					  <h5><span class="highlight-3">Definir a alias</span></h5> 
+							<p>No exemplo a seguir utilize o editor que mais lhe agradar. como <span class="highlight-3">$user </span> lance o seu editor preferido o nosso exemplo utiliza o mcedit:</p>
 <pre>
 $ mcedit ~/.bashrc
 </pre>
 							<p><span class="highlight-2">Note:To enable any changes you have made you need to close the terminal/konsole and restart it.</span></p>
 
-					<h3><span class="highlight-3">Add the following code to the file ~/.bashrc by appending the code to the end of the  file:</span></h3>
+					<h3><span class="highlight-3">Adicione o seguinte consoante o seu caso ao ficheiro  ~/.bashrc :</span></h3>
 
-					  <h4>Setting kdesu an alias</h4>
+					  <h4>kdesu como alias</h4>
 <pre>
 alias sux2='/usr/lib/kde4/libexec/kdesu' 
 </pre>				  
 
-					   <h4>Setting gksu an alias</h4> 
+					   <h4>gksu como alias</h4> 
 <pre>
 alias sux2='/usr/bin/gksu'
 </pre>
 
-					    <h4>Setting su-to-root -X -c as an alias</h4>
+					    <h4>su-to-root -X -c  como alias</h4>
 <pre>
 alias sux2='su-to-root -X -c'
 </pre>
 
-					    <h4>Setting ssh -X root@localhost as an alias</h4>
+					    <h4>ssh -X root@localhost como alias</h4>
 <pre>
 alias sux2='ssh -X root@localhost'
 </pre>
 
-							<p>You may want to implement a ~/.bash_alias file to contain all the aliases that you find useful. Therefore make a file called ~/.bash_alias.  Read the ~/.bashrc file and /usr/share/doc/bash-doc/examples:</p>
+							<p>Se preferir adicione os seu aliases ao ficheiro  ~/.bash_alias . Para mais informações leia o conteúdo do ficheiro ~/.bashrc file e consulte /usr/share/doc/bash-doc/examples:</p>
 <pre>
 apt-get install bash-doc
 </pre>
@@ -623,7 +617,7 @@ $ apropos apt-
 
 							<p>Aprenda mais sobre o uso do Shell no <a href="http://linuxcommand.org/"> linuxcommand.org</a></p>
 
-							<p class="highlight-3">A very comprehensive list of  commands in alphabetical order from <a href="http://ss64.com/bash/"> An A-Z Index of the Bash command line for Linux </a> and is a 'must bookmark'</p>
+							<p class="highlight-3">Uma lista alfabética dos commandos pode ser encontada aqui <a href="http://ss64.com/bash/"> An A-Z Index of the Bash command line for Linux </a> e deve pertences às 'URL favoritas'</p>
 
 							<p>Há numerosos tutoriais na Internet, inclusive um que é ótimo para iniciantes: <a href="http://linux.org.mt/article/terminal">A Beginner's Bash</a></p>
 
