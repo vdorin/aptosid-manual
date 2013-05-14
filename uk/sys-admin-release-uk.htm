@@ -341,61 +341,50 @@
 
 							<p><span class="highlight-3">This page is a summary of the Release Notes and will only be updated after each release. Read the full Release Notes on <a href="http://aptosid.com">aptosid.com</a></span>, the <span class="highlight-3">Live ISO</span> or <span class="highlight-3">apt-get install aptosid-releasenotes</span>.</p>
 
-		<h2>Зауваження до випуску aptosid 2012-01 Θάνατος - Thanatos</h2>
+		<h2>Зауваження до випуску aptosid 2013-01 Ἑσπερίδες - Hesperides</h2>
 
 				<p>
-					Нові можливості в aptosid 2012-01 Θάνατος -Thanatos зокрема, є ядро 3.6 і численни інтеграції і стабілізації виправленн.
-					Особливу увагу було кинуто на поліпшення системиї,її сумісність з новими апаратними платформами, як наприклад AMD Bulldozer або Intel Ivy Bridge та переробки в Live-Modus.
-					Kernel 3,6 не тільки поліпшує і стабілізує апаратну підтримку нових пристроїв, але і адаптує ASPM евристики для кращого енергозбереження та покращення автономної роботи аккумулятора.
-					Інша тема була ентропії в рамках збору ядра, як підвищення його продуктивності і якості для систем, що забезпечують трохи ентропії самі по собі.
+					New features in aptosid 2013-01 Ἑσπερίδες - Hesperides, are in particular kernel 3.9 and numerous integration and stabilisation fixes.
+					Special focus has been cast upon improving system compatibility with various UEFI systems and the Ivy-Bridge architecture; basic Haswell support should now be complete.
+					Kernel 3.9 doesn't only improve and stabilise hardware support for newer devices, it also improves powersaving approaches for libata targets, modern sound drivers and multi-head environments with AMD/ ATi radeon graphics cards
 				</p>
 
 				<p>
-					Файлова система ext4 отримала 'Big Allocation Blocks', яке дала зниження накладних витрат для збереження великих файлів шляхом узагальнення багатьох невеликих блоків 4K в до 1 Мб великих кластерів.
-					Подальші удосконалення були зосереджені на прискоренні онлайн зміна розміру і забезпечення цілісності даних через CRC32 перевірку даних ext4 мета.
-					До CIFS було добавлено від декількох оптимізацій підвищення її пропускної здатності.
+					Intel Ivy-Bridge graphics profits from improved DisplayPort support, while nouveau has gained initial fan-control for NV40 and NV50 chipsets (GeForce 6xxx/ 7xxx/ 8xxx/ 9xxx/ 1xx/ 2xx/ 3xx).
+					The radeon driver for AMD/ ATi graphics cards has gained support for the Oland (Radeon 8500/ 8600 series) chipset generation and Richland APUs.
 				</p>
 
 				<p>
-					До Intel Ivy-Bridge графіки було добавлено кілька передових енергозберігаючих функцій (RC6) і (обмежено) підтримка triple head.
-					Дуже початкова підтримка була додана для Intel's GMA500, GMA600 and GMA3600 'Poulsbo' графіки.
-					Драйвер Nouveau отримав підтримку для нових nVidia чіпсетів NVC1, NVC8, NVCF, NVD9 and NVE4 сімей.
-					ATI-Radeon-драйвер тепер підтримує 'Evergreen', 'Southern Islands' та 'Trinity/ Aruba' покоління (Radeon HD5xxx, HD6xxx, HD7xxx) і забезпечує апаратне прискорення до r900 сім'ї.
-					Крім того була додана підтримка для USB DisplayLink карт яка була реалізована за допомогою нових драйверів 'udl' .
+					On the file system side CIFS now support the SMB 2.0 and SMB 2.1 protocol, while the mdadm layer can now pass through TRIM support.
+					A new development is the dm-cache target, which allows using SSD storage to speed up hard disk access.
 				</p>
 
 				<p>
-					Покращена обробка черги байт,'TCP buffer size controlling' яка зараз знизує затримки і підвищує пропускну спроможність для мережевих передач, знижуючи тим самим «buffer bloat».
-					Відкритий VSwitch пропонує допомогу віртуальним ядрам багатошарової мережі та перемикання бази, яка використовується в поєднанні з KVM та інших віртуальних машин.
+					Atheros AR5523 support has now been merged officially, while Broadcom has added initial support for BCM43224 to brcmsmac.
+					A new driver has become available for the Realtek RTL8723AE wlan chipset and r92su replaces the staging rtl8712u driver for the Realtek RTL8188SU/ RTL8192SU chipsets.
+					With iwlmvm, Intel provides the first IEEE 802.11ac driver for their IWL7xxx wlan chipsets, as Atheros and Wilocity contribute a 60 GHz (WiGig WBE) drivers for the QCA WIL6210 generation.
 				</p>
 
 				<p>
-					Atheros oтримав підтримку для  AR6003 базуючих USB та SDIO WLAN-карт через ath6kl та новий ar5523 драйвер піклується про старших 54/ '108' MBit/s USB WLAN-карт з використанням раніше непідтримуваного AR5523 чіпсету.
-					Нові brcmsmac (BCM4313, BCM43224, BCM43225) та brcmfmac (BCM43235, BCM43236, BCM43238) драйвери забезпечують апаратну підтримку для більш нових Broadcom 802.11n WLAN-карт.
-					Було додана підтримка для RaLink RT536x,  RF537x and RT539x карт які можуть додані до rt2x00 driver сім'ї.
-				</p>
-
-
-				<p>
-					Багато нові драйверів з'явилися для раніше непідтримуваних веб-камерах і DVB TV карт.
-				</p>
-
-				<ul>
-					<li>Підтримка для Topro веб-камер, які використовують tp6800 bridge та soi763a датчики.</li>
-					<li>Підтримка для пристроїв IT913X, як наприклад Kworld UB499-2T DVB-T карти.</li>
-					<li>Підтримка для KWorld PC150-U та AzureWave 6007 ATSC.</li>
-					<li>Підтримка для TM5600, TM6000 та TM6010 USB DVB карт.</li>
-					<li>Підтримка для DVB-T карт які використовують MaxLinear MxL111SF демодулятора.</li>
-					<li>Підтримка для Realtek RTL2831U та на RTL2832 заснованих DVB-T USB-карт.</li>
-					<li>Підтримка для DVB-S/ DVB-S2 карт які використовують NXP TDA10071 датчики та Conexant CX24118A, наприклад Conexant CX25821 тюнери.</li>
-				</ul>
-
-				 <p>
-					GPT і UEFI надійності були покращені, що дозволяє використовувати жорсткі диски більше ніж 2 терабайт та завантаження на новій системі з використанням UEFI замість традиційного PC-BIOS.
+					GPT and UEFI reliability have been improved, which allows hard disks exceeding 2 TiB and their use for booting on new systems using UEFI instead of the traditional PC-BIOS.
+					Particular emphasis has been cast upon improving UEFI support on various hardware platforms and to avoid bugs in the varying firmware implementations, both upstream and in aptosid.
 				</p>
 
 				<p>
-					Як звичайно, велика кількість окремих функціональних удосконалень і виправлень були застосовані до повної лінійки пакетів і aptosid власних пакетів для того, щоб поліпшити загальну інфраструктуру розподілу.
+					As usual, a large number of individual functionality enhancements and bug fixes have been applied to the full package line up and aptosid's own packages, in order to improve the general distribution infrastructure.
+				</p>
+
+				<p>
+					Although this release happens in close temporal proximity to the Debian 7.0 "wheezy" release, it is still based on Debian sid as of this day and is not meant or suited as an alternative way to install "wheezy".
+					Many security sensitive packages in aptosid (Debian sid) already sport a higher version number than their corresponding version in "wheezy" or are even uninstallable in a &quot;wheezy&quot; context.
+				</p>
+
+				
+		<h5>aptosid after the 'freeze'</h5 >
+					<p>Now that Debian 7 Wheezy has been released, the version freeze that reached up to sid will be lifted again within the next few days.
+					Given that there are a number of high impact changes (KDE 4.10.2/ kdepim2, xserver-xorg-core 1.14.0, udisks2, grub2 2.00, etc.) staging in experimental and are just waiting for the freeze to be lifted, the following 2-3 weeks might be slightly more vibrant and potentially less coordinated than usual in regards to package updates from Debian, therefore we recommend a little caution during dist-upgrades.
+					This might involve checking for eventual upgrade warnings on aptosid.com or to wait a few hours if KDE 4.10 or X.org are among the upgrading packages for experiences from advanced users.
+					Please be aware that it might not always be possible to react in time, now that Debian employs four mirror pushes a day.
 				</p>
 
 				<p>
@@ -410,53 +399,49 @@
 	   <div class="divider" id="whats-new">
 		<h2>Цікаві теми на даний момент:</h2>
 				<ul>
-					<li>Debian sid, від 2012-12-01.</li>
-					<li>Ядро3.6.9-rc1 (smp, жорстко переважений).</li>
+					<li>Debian sid, as of 2013-05-05.</li>
+					<li>kernel 3.9 (smp, hard preemption).</li>
 					<li>xserver-xorg-core 1.12.4.</li>
-					<li>Включена KMS підтримка для ATi, Intel, drm-cirrus, Matrox та на nVidia базуючих графічних чіпсетів.</li>
-					<li>DRI (3D) підтримка для ATІ Radeon (перегляньте сторінку<a href="firmware-en.html">Невільні джерела і драйвери</a>).</li>
+					<li>enable KMS support for ATi, Intel, drm-cirrus, Matrox and nVidia based graphics chipsets.</li>
+					<li>DRI (3d) support for ATi Radeon chipsets (refer to <a href="firmware-en.html">non-free sources and Drivers</a>).</li>
 					<li>KDE 4.8.4 (en + de).</li>
-					<li>Браузер Iceweasel 10.0.11ESR</li>
+					<li>Iceweasel 10.0.12ESR</li>
+
 					<li>Новий на SVG базуючий, art-theme зроблених командою aptosid-art.</li>
 					<li><a href="file:///usr/share/aptosid-manual/index.html">offline manual</a> для <a href="file:///usr/share/aptosid-manual/en/welcome-en.htm">англійского керівництва</a> + <a href="file:///usr/share/aptosid-manual/de/welcome-de.htm">та німецкого</a> на live-CD, інтерактивні керівництва для більш мов в знаходяться в Інтернеті за адресою <a href="http://aptosid.com/manual/">http://aptosid.com/manual/</a> а також за допомогою apt; велике спасибі до перекладчів цієї документації команді aptosid-manaul!<br />Буд ласка зверніть увагу, що offline-manual є тільки доступною на live-CD або на становленій системі.</li>
 					<li>Багато змін на нашому керівництві.</li>
-					<li>ar5523 підтримка для 54/ '108'MBit/s Atheros USB WLAN-карт (AR5523).</li>
-					<li>ath5k підтримка для 54/ '108' MBit/s Atheros WLAN-карт (AR2425, AR5210, AR5211, AR5212, AR5213 and AR5414).</li>
-					<li>ath6kl підтримка для Atheros AR6003 базуючих на  USB і на  SDIO WLAN-карт.</li>
-					<li>ath9k підтримка для 802.11n Atheros WLAN-карт (AR5418+AR5133, AR5416+AR5133, AR5416+AR2133, AR9160, AR9280, AR9281 та AR9285).</li>
-					<li>ath9k_htc підтримка для 802.11n Atheros USB WLAN-карт (AR7010/ AR9271).</li>
-					<li>carl9170 підтримка для 802.11n Atheros USB WLAN-карт (AR9170 'otus'), тепер підтримує HT/ aggregation та AP модус режим.</li>
+
+					<li>ar5523 support for 54/ '108'MBit/s Atheros USB wlan cards (AR5523).</li>
+					<li>ath5k support for 54/ '108' MBit/s Atheros wlan cards (AR2425, AR5210, AR5211, AR5212, AR5213 and AR5414).</li>
+					<li>ath6kl support for Atheros AR6003 based USB and SDIO wlan cards.</li>
+					<li>ath9k support for 802.11n Atheros wlan cards (AR5418+AR5133, AR5416+AR5133, AR5416+AR2133, AR9160, AR9280, AR9281 and AR9285).</li>
+					<li>ath9k_htc support for 802.11n Atheros USB wlan cards (AR7010/ AR9271).</li>
+					<li>carl9170 support for 802.11n Atheros USB wlan cards (AR9170 'otus'), now supporting HT/ aggregation and AP mode.</li>
 					<li>
-						b43/ b43legacy підтримка для старших Broadcom WLAN-карт.<br />
-						<a href="http://www.ing.unibs.it/openfwwf/">OpenFWWF 5.2</a> прошивка с відритим джерелом для наступних Broadcom AirForce 802.11b/g WLAN-карт:
+						b43/ b43legacy support for older Broadcom wlan cards.<br />
+						<a href="http://www.ing.unibs.it/openfwwf/">OpenFWWF 5.2</a> opensource firmware for the following Broadcom AirForce 802.11b/g wireless cards:
 						<ul>
 							<li>BCM4306</li>
 							<li>BCM4311 revision 1</li>
 							<li>BCM4318</li>
 							<li>BCM4320</li>
 						</ul>
-						підтримка для LP-PHY (BCM4312) та на SSB базуючих 802.11n (BCM4321, BCM4322) пристроїв, невільна прошивка обов'язково потрібна.
+						support for LP-PHY (BCM4312) and SSB based 802.11n (BCM4321, BCM4322) devices, non-free firmware images required.
 					</li>
-					<li>brcmsmac підтримка для сучасних Broadcom 802.11n PCIe/ AXI WLAN-карт (BCM4313, BCM43224, BCM43225).</li>
-					<li>brcmfmac підтримка для сучасних Broadcom 802.11n USB WLAN-карт (BCM43235, BCM43236, BCM43238).</li>
-					<li>iwlagn підтримка для IPW 3945/ 4965 і IEEE 802.11 a/b/g/n частина Intel Wireless WiFi Link 1000/ 2000/ 5xxxAGN/ 6000/ 6050 сімей.</li>
-					<li>rt2x00 підтримка для RaLink rt2400, rt2500, rt2570, rt61 and rt73 802.11b/g карт.</li>
-					<li>Підтримка для RaLink rt27x0, rt28x0, rt30x0, rt33xx, rt35xx, rt53xx 802.11b/g/n PCI/ USB карт через rt2x00.</li>
-					<li>Підтримка для RealTek RTL8180L/ RTL8185 PCI/ cardbus and RTL8187/ RTL8187B USB WLAN-карт.</li>
-					<li>Підтримка для RealTek RTL8188CE/ RTL8192CE, RTL8188CU/ RTL8192CU, RTL8188DE/ RTL8192DE, RTL8188SE/ RTL8192SE (PCIe) and RTL8188CU/ RTL8192CU (USB) 802.11n WLAN-карт.</li>
+					<li>brcmsmac for modern Broadcom 802.11n PCIe/ AXI wlan cards (BCM4313, BCM43224, BCM43225).</li>
+					<li>brcmfmac for modern Broadcom 802.11n USB wlan cards (BCM43235, BCM43236, BCM43238).</li>
+					<li>iwlagn support for IPW 3945/ 4965 and the IEEE 802.11 a/b/g/n part of the Intel Wireless WiFi Link 1000/ 2000/ 5xxxAGN/ 6000/ 6050/ 7xxx family.</li>
+					<li>rt2x00 support for RaLink rt2400, rt2500, rt2570, rt61 and rt73 802.11b/g cards.</li>
+					<li>support for RaLink rt27x0, rt28x0, rt30x0, rt33xx, rt35xx, rt53xx 802.11b/g/n PCI/ USB cards through rt2x00.</li>
+					<li>support for RealTek RTL8180L/ RTL8185 PCI/ cardbus and RTL8187/ RTL8187B USB wlan cards.</li>
+					<li>support for RealTek RTL8188CE/ RTL8192CE, RTL8188CU/ RTL8192CU, RTL8188DE/ RTL8192DE, RTL8188SE/ RTL8192SE (PCIe) and RTL8188CU/ RTL8192CU (USB)  RTL8723AE (PCI) 802.11n wlan cards.</li>
 					<li>memtest86+.</li>
-					<li>OpenJDK 7 та IcedTea як частина KDE-full варіанту.</li>
-					<li>kvm (Kernel-based Virtual Machine) KDE-full варіанту; kvm залежить від апаратною підтримкою віртуалізації (AMD розширень віртуалізації pacifica 'svm' або Intel IVT (vanderpool) розширень віртуалізації 'vmx')</li>
-					<li>access point підтримка для багатьох на mac80211 базуючих WLAN-карт через nl80211 та hostapd (як опція).</li>
-					<li>client підтримка для загрузкі через сіть за допомогою PXE/ NBD.</li>
-					<li>ASPM уточнення для підвищення стабільності системи і батарей для мобільних пристроїв.</li>
-					<li>Підтримка для трете покоління Bamboo Pen та тач-теблетів.</li>
-					<li>Переключення від module-init-tools до kmod.</li>
-					<li>Підтримка для ACPI 5.0.</li>
-					<li>Open vSwitch підтримка для віртуальні мережі з комутацією.</li>
-					<li>Поліпшення'buffer bloat'.</li>
-					<li>BCM57766 підтримка для tg3.</li>
-					<li>Основна FireWire Target Disk Mode підтримка була портована на Linux' sbp-2.</li>
+					<li>kvm (Kernel-based Virtual Machine) for kde-full; kvm depends on hardware virtualization support (AMD pacifica virtualization extensions 'svm' or Intel IVT (vanderpool) virtualization extensions 'vmx')</li>
+					<li>access point support for many mac80211 based wlan cards through nl80211 and hostapd (optional).</li>
+					<li>client support for network booting over PXE/ NBD.</li>
+					<li>support QXL graphics emulation (SPICE).</li>
+					<li>add loopback.cfg generation, to provide generic live media support for grub2.</li>
+					<li>provide a safety fallback for generic efi binary and bootloader detection to the live media.</li>
 				</ul>
 			</div>
 		<div class="divider" id="faq">
@@ -470,36 +455,36 @@
 				</p>
 
 				<p>
-					Слід віддати перевагу на 'amd64'-реліз та його сучасні обладнанні підтримки.
+					The 64 bit 'amd64' editions should be preferred on modern hardware supporting it.
 				</p>
-
-			<h3>Kernel based Mode Setting (KMS) та cirrus-drm/ intel/ matrox/ nvidia/ radeon графічні-карти</h3>
+		      <h3>device mapper/ LVM2/ mdadm/ cryptsetup</h3>
 				<p>
-					Для KMS потрібнi xserver-xorg-video-intel, ядрові параметри як наприклад 'i915.modeset=0' або 'vga=791'не дійсні і активно заважають завантаженні  завантаженні X-серверу на графічних картах Іntel .
-					Враховуючи, що i915 / X-сервер Xorg-, відео-Intel не вимагають ніяких прошивок, там більше не повинно бути помилок, пов'язаних з KMS по відношенню до графічних карт Intel.
+					A long-standing issue with Debian's initramfs integration for various device mapper based targets, like lvm2, mdadm or cryptsetup, might be triggered more likely due to minor timing changes in recent kernels.
+					&quot;rootdelay=1&quot; as kernel parameter can be used as a temporary workaround for affected systems not finding the rootfs on top of a device mapper backed block device; in rare cases it might be needed to increase the rootdelay further.
+					This setting can be added on the fly from the grub2 boot menu or be made permanent by adding it GRUB_CMDLINE_LINUX in /etc/default/grub and running update-grub afterwards.
+				</p>
+
+		      <h3>efi_no_storage_paranoia</h3>
+				<p>
+					Starting with kernel 3.8.5, the kernel refuses to write efivars if their free space drops below 50% in order to avoid damage to broken Samsung systems.
+					As this also affects updating existing efivars (like grub-efi boot entries, BootOrder or BootCurrent/ BootNext) on existing systems, it is suggested to remove bogus data (older kernels dumped kernel logs in pstore needlessly) from pstore.
+				</p>
+
+<pre>
+mount -t pstore -o kmsg_bytes=8000 pstore /sys/fs/pstore/
+# rm /sys/fs/pstore/*
+</pre>
+
+				<p>
+					Due to the nature of various UEFI garbage collector implementations on existing hardware, it might be required to go through a full (non-kexec) reboot, before pstore contents become visible &mdash; and another full reboot before the garbage collector actually frees up the space for efivars.
+					Starting with aptosid 2013-01 &quot;Ἑσπερίδες - Hesperides &quot;, pstore is cleared unconditionally during each boot of the live media!
 				</p>
 
 				<p>
-					Для функціональності KMS в поєднанні з ATi / AMD Radeon графічних карт, Вам необхідна пасуюча прошивка ( для невільної прошивки дивіться <a href="gpu-en.htm#ati-3d">AMD/ATI 3D drivers</a>) якої нема на aptosid-live-cd, в той час як X.org повинний повернутися до модуса vesa на карт зі проблемами, Особливa увагa може знадобитися в рідкісних випадках.
-					Якщо X-сервер не керується на ATi/ AMD radeon графічних карт, то треба запутити модус 'radeon.modeset=0' як варіант завантаження на live-CD та встановити залежну від вашої карти прошивку '<a href="gpu-en.htm#ati-3d">AMD/ATI 3D drivers</a>' на aptosid-live, перед встановленням на жорсткий диск.
-					Після встановлення прошивок не треба вже більше запустати параметри завантаження як наприклад 'radeon.modeset=0' або 'vga=791' тому що вони можуть перешкодити операціям KMS, які необхідні для Radeon щоб працювати належним чином.
+					On some hardware, efivars is always more than 50% full starting from the factory settings, for these cases it might be required to supply &quot;efi_no_storage_paranoia&quot; as kernel parameter to live- and installed (GRUB_CMDLINE_LINUX in /etc/default/grub) system; using this kernel parameter might be dangerous on broken UEFI implementations, please use with care.
 				</p>
 
-				<p>
-					Драйверу Nouveau не потрібно прошивок та підтримка KMS працює тількі по базовому режимі, параметри завантаження для монітора як наприклад 'vga=791' не дійсне і активно заважає завантаженні X-серверу на графічних картах nVidia.
-				</p>
-
-				<h3>grub2</h3>
-				<p>
-					У той час як grub2 забезпечує підвищену гнучкість для установки, як наприклад UEFI підтримку (опція), нові файлові системи (ext4) або додаткові опції установки як програмне забезпечення до RAID (MDADM),LVM2 і поліпшені можливості виявлення для інших дистрибутивів і операційних систем, вона обмежена в меню в текстовому режимі.
-					Тематизації нових зусиль в даний час у стадії розробки і можуть стати доступними в майбутньому.<br />
-					
-					Навіть якщо існує на даний момент проста шпалери яка уже підтримується grub2, це все ще крихке і подовжує завантаження системи.<br />
-
-					Внутрішня конфігурація системи для grub2 використовує скрипти і помістивши його /etc/grub.d/ створує "grub.cfg" та його конфігураційний файл таким чином, що дозволяє собі багато поновлення функцій, таких як автоматизація fromiso підтримки за допомогою 'grub2-fll-fromiso (опціонально).
-				</p>
-
-		<h3>isohybrid</h3>
+		     <h3>isohybrid</h3>
 				<p>
 					З isolinux-підтримкoю gfxboot, можна використовувати isohybrid, яка дозволяє записувати ISO-образи безпосередньо до USB-флешкi або SD / SDHC / MMC карт пам'яті, щоб зробити їх завантажувальними.<br />
 					isohybrid додає MBR в ISO і встановлює таблицю розділів на один активний елемент розділу що містить ISO.<br />
@@ -546,7 +531,10 @@ apt-get install crda
 
 				<p>
 					На даний момент aptosid тільки пропонує завантаження через UEFI для 64-бітної системи (amd64), 32-бітна версія UEFI (як наприклад застаріли системи Apple) в даний час не підтримується.
-					Мультизавантаження з іншими 64-бітними операційними системами  має бути можливою, але не була ще провірена.
+				</p>
+
+				<p>
+					Please also refer to &quot;efi_no_storage_paranoia&quot; above.
 				</p>
 
 				<h3>UEFI завантажувальни знімні пристрої</h3>
@@ -657,10 +645,6 @@ $ apt-show-versions | awk '/No available version in archive/{print $1}'
 				<ul>
 
 					<li>
-						Ἑσπερίδες - Hesperides
-					</li>
-
-					<li>
 						Νέμεσις - Nemesis
 					</li>
 
@@ -669,7 +653,7 @@ $ apt-show-versions | awk '/No available version in archive/{print $1}'
 					</li>
 				</ul>
 			</div>	
-			<div id="rev">Сторінка останній раз переглянута 29/12/2012 0730 UTC </div>
+			<div id="rev">Сторінка останній раз переглянута 13/05/2013 1520 UTC  </div>
 
 </div>
 </body>
