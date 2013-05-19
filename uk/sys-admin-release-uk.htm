@@ -17,7 +17,7 @@
         <![endif]-->
 </head>
 <body>
-<!-- Last translation revision polix 27/03/2012 0100 UTC -->
+<!-- Last translation revision polix 19/05/2013 0100 UTC -->
 <!--htdig_noindex--><div id="menu"> <!-- menu starts here - ua language maintained by polix -->
 <!--aptosid Operating System Manual menu-version-02.15.2013.01.10 -->
 <!-- menu last updated by bluewater 2013.01.10 0910 hrs UTC -->
@@ -163,7 +163,7 @@
 		<li><a href="hw-dev-mon-uk.htm#mon-res">Дозвіл екрану та монітори  &#8658;</a>
 					<ul class="sub2-menu" id="sm8a">
 					  <li><a href="hw-dev-mon-uk.htm#mon-res">Дозвіл екрану та монітори</a></li>
-					  <li><a href="hw-dev-mon-uk.htm#xrandr">Подвійні екрани і xrandr</a></li>
+					  <li><a href="hw-dev-mon-uk.htm#xrтаr">Подвійні екрани і xrтаr</a></li>
 					  <li><a href="hw-dev-mon-uk.htm#mon-binary">Подвійні екрани (використовуючи виконавчі файли)</a></li>
 					</ul>
 					</li>
@@ -339,52 +339,52 @@
 	<div class="divider" id="rolling">
 		<h2 id="top-header">Rolling Notes</h2>
 
-							<p><span class="highlight-3">This page is a summary of the Release Notes and will only be updated after each release. Read the full Release Notes on <a href="http://aptosid.com">aptosid.com</a></span>, the <span class="highlight-3">Live ISO</span> or <span class="highlight-3">apt-get install aptosid-releasenotes</span>.</p>
+							<p><span class="highlight-3">This page is a summary of the Release Notes та will only be updated after each release. Read the full Release Notes on <a href="http://aptosid.com">aptosid.com</a></span>, the <span class="highlight-3">Live ISO</span> or <span class="highlight-3">apt-get install aptosid-releasenotes</span>.</p>
 
 		<h2>Зауваження до випуску aptosid 2013-01 Ἑσπερίδες - Hesperides</h2>
 
 				<p>
-					New features in aptosid 2013-01 Ἑσπερίδες - Hesperides, are in particular kernel 3.9 and numerous integration and stabilisation fixes.
-					Special focus has been cast upon improving system compatibility with various UEFI systems and the Ivy-Bridge architecture; basic Haswell support should now be complete.
-					Kernel 3.9 doesn't only improve and stabilise hardware support for newer devices, it also improves powersaving approaches for libata targets, modern sound drivers and multi-head environments with AMD/ ATi radeon graphics cards
+					Нові можливості в aptosid 2013-01 Ἑσπερίδες - Hesperides, є, зокрема ядра 3.9 числені інтеграції та стабілізації виправлень.
+					Особливу увагу було кинуто на поліпшення сумісності системи  з різними системами UEFI і Ivy Bridge-архітектури; базова підтримка Haswell повинна тепер бути повним.
+					Kernel 3.9 не тільки поліпшує і стабілізує апаратну підтримку нових пристроїв, але і покращує енергозбереження підходу до цілей libata, підтримує сучасні драйвери звуку і кілька голівки середовищах з AMD / ATI Radeon відеокарт
 				</p>
 
 				<p>
-					Intel Ivy-Bridge graphics profits from improved DisplayPort support, while nouveau has gained initial fan-control for NV40 and NV50 chipsets (GeForce 6xxx/ 7xxx/ 8xxx/ 9xxx/ 1xx/ 2xx/ 3xx).
-					The radeon driver for AMD/ ATi graphics cards has gained support for the Oland (Radeon 8500/ 8600 series) chipset generation and Richland APUs.
+					Графічні чіпи Intel Ivy Bridge- придбали поліпшену підтримку DisplayPort, а вільний Nvidia-драйвер nouveau придбав початковe управління вентилятором для NV40 і NV50 чіпсетів (GeForce 6xxx / 7xxx / 8xxx / 9xxx / 1xx / 2xx / 3xx).
+					Драйвера для Radeon AMD / ATI відеокарт отримала підтримку Еланд (Radeon 8500/8600 серії) покоління чіпсетів i Richlта APUs.
 				</p>
 
 				<p>
-					On the file system side CIFS now support the SMB 2.0 and SMB 2.1 protocol, while the mdadm layer can now pass through TRIM support.
-					A new development is the dm-cache target, which allows using SSD storage to speed up hard disk access.
+					Файловa системa CIFS тепер підтримує SMB 2.0 та 2.1 протоколи SMB, а шар MDADM тепер може проходити через підтримку TRIM .
+					Нова розробка являє собою  dm-cache, що дозволяє використовувати SSD-cache для прискорення доступу до жорсткого диску.
 				</p>
 
 				<p>
-					Atheros AR5523 support has now been merged officially, while Broadcom has added initial support for BCM43224 to brcmsmac.
-					A new driver has become available for the Realtek RTL8723AE wlan chipset and r92su replaces the staging rtl8712u driver for the Realtek RTL8188SU/ RTL8192SU chipsets.
-					With iwlmvm, Intel provides the first IEEE 802.11ac driver for their IWL7xxx wlan chipsets, as Atheros and Wilocity contribute a 60 GHz (WiGig WBE) drivers for the QCA WIL6210 generation.
+					Підтримка Atheros AR5523  в даний час офіційно об'єдналася, а Broadcom додав початкову підтримку BCM43224 до brcmsmac-карт.
+					Новий драйвер став доступним для Realtek WLAN RTL8723AE і r92su чіпсетів,який замінює драйвера для постановки rtl8712u Realtek RTL8188SU / RTL8192SU чіпсетів.
+					З iwlmvm, Intel забезпечує перші драйверів IEEE 802.11ac для своїх чіпсетів WLAN IWL7xxx, як наприклад Atheros і сприяє до драйверів Wilocity 60 ГГц (WiGig WBE) для QCA WIL6210 покоління.
 				</p>
 
 				<p>
-					GPT and UEFI reliability have been improved, which allows hard disks exceeding 2 TiB and their use for booting on new systems using UEFI instead of the traditional PC-BIOS.
-					Particular emphasis has been cast upon improving UEFI support on various hardware platforms and to avoid bugs in the varying firmware implementations, both upstream and in aptosid.
+					Надійність GPT і UEFI  була покращена, що дозволяє більшій розмір ніж 2 терабайт жорстких дисків та їх використання для завантаження на нових систем з використанням UEFI замість традиційного PC-BIOS.
+					Особливу увагу було кинуто на поліпшення підтримки UEFI на різних апаратних платформах і щоб уникнути помилок в різних реалізаціях прошивки, як вгору, так і в aptosid.
 				</p>
 
 				<p>
-					As usual, a large number of individual functionality enhancements and bug fixes have been applied to the full package line up and aptosid's own packages, in order to improve the general distribution infrastructure.
+					Як звичайно,було додано велика кількість окремих функціональних удосконалень і виправлень помилок які були застосовані до повної лінії пакетів Debian і aptosid власних пакетів, для того, щоб поліпшити загальну інфраструктуру розподілу.
 				</p>
 
 				<p>
-					Although this release happens in close temporal proximity to the Debian 7.0 "wheezy" release, it is still based on Debian sid as of this day and is not meant or suited as an alternative way to install "wheezy".
-					Many security sensitive packages in aptosid (Debian sid) already sport a higher version number than their corresponding version in "wheezy" or are even uninstallable in a &quot;wheezy&quot; context.
+					Хоча цей випуск відбувається в безпосередній тимчасововій близькості до Debian 7.0 "wheezy" випуску, дистрибутив aptosid як і раніше заснований на Debian SID станом на цей день і не призначений або підходить в якості альтернативного способу установки "wheezy".
+					Багато версій пакетів зі підвищеними вимогами до безпеки aptosid (Debian sid) вже отримали обновлення ніж "wheezy" або іх неможливо встановити на a &quot;wheezy&quot;.
 				</p>
 
 				
-		<h5>aptosid after the 'freeze'</h5 >
-					<p>Now that Debian 7 Wheezy has been released, the version freeze that reached up to sid will be lifted again within the next few days.
-					Given that there are a number of high impact changes (KDE 4.10.2/ kdepim2, xserver-xorg-core 1.14.0, udisks2, grub2 2.00, etc.) staging in experimental and are just waiting for the freeze to be lifted, the following 2-3 weeks might be slightly more vibrant and potentially less coordinated than usual in regards to package updates from Debian, therefore we recommend a little caution during dist-upgrades.
-					This might involve checking for eventual upgrade warnings on aptosid.com or to wait a few hours if KDE 4.10 or X.org are among the upgrading packages for experiences from advanced users.
-					Please be aware that it might not always be possible to react in time, now that Debian employs four mirror pushes a day.
+		<h5>aptosid після 'freeze'</h5 >
+					<p>Зараз Debian "wheezy" був випущений,заморожування версій пакетів (freeze) закінчилося та розділ sid буде повностю відкритим напротягом кілька днів.
+					Враховуючи, що існують цілий ряд високих змінь які впливають до (KDE 4.10.2/ kdepim2, xserver-xorg-core 1.14.0, udisks2, grub2 2.00, etc.) да їхні постановки в експериментальній розділ Debian,будьте обережні на протягом наступних 2-3 тижнів під час обновлення системи з командою dist-upgrade.
+					Для беспечного обновлення системи ми рекомендуємо відвідувати наш головний форум, особливо сектор "Upgrade Warnings" на сторінці aptosid.com або почекати кілка годин якщо KDE 4.10 або X.org є посеред пакетів для досвіду просунутих користувачів.
+					на даний момент проект Debian штовхає сервери кожен день по чотири раз. Будь ласка пам'ятайте що при такому напливу нових пакетів неможливо зреагувати на помилки.
 				</p>
 
 				<p>
@@ -399,75 +399,73 @@
 	   <div class="divider" id="whats-new">
 		<h2>Цікаві теми на даний момент:</h2>
 				<ul>
-					<li>Debian sid, as of 2013-05-05.</li>
-					<li>kernel 3.9 (smp, hard preemption).</li>
-					<li>xserver-xorg-core 1.12.4.</li>
-					<li>enable KMS support for ATi, Intel, drm-cirrus, Matrox and nVidia based graphics chipsets.</li>
-					<li>DRI (3d) support for ATi Radeon chipsets (refer to <a href="firmware-en.html">non-free sources and Drivers</a>).</li>
+					<li>Debian sid, від стану від 05.05.2013</li>
+					<li>Ядро 3.9 (smp, hard preemption).</li>
+					<li>Xserver-xorg-core 1.12.4.</li>
+					<li>Підтримка для включення KMS, ATi, Intel, drm-cirrus, Matrox та на nVidia основі графічних чіпсетів.</li>
+					<li>Підтримка для DRI (3D)ATi Radeon чіпсетів (дивіться на сторінці <a href="firmware-en.html">Невільні джерела і драйвера</a>).</li>
 					<li>KDE 4.8.4 (en + de).</li>
 					<li>Iceweasel 10.0.12ESR</li>
 
 					<li>Новий на SVG базуючий, art-theme зроблених командою aptosid-art.</li>
-					<li><a href="file:///usr/share/aptosid-manual/index.html">offline manual</a> для <a href="file:///usr/share/aptosid-manual/en/welcome-en.htm">англійского керівництва</a> + <a href="file:///usr/share/aptosid-manual/de/welcome-de.htm">та німецкого</a> на live-CD, інтерактивні керівництва для більш мов в знаходяться в Інтернеті за адресою <a href="http://aptosid.com/manual/">http://aptosid.com/manual/</a> а також за допомогою apt; велике спасибі до перекладчів цієї документації команді aptosid-manaul!<br />Буд ласка зверніть увагу, що offline-manual є тільки доступною на live-CD або на становленій системі.</li>
+					<li><a href="file:///usr/share/aptosid-manual/index.html">offline manual</a> для <a href="file:///usr/share/aptosid-manual/en/welcome-en.htm">англійского керівництва</a> + <a href="file:///usr/share/aptosid-manual/de/welcome-de.htm">та німецкого</a> на live-CD, інтерактивні керівництва для більш мов в знаходяться в Інтернеті за адресою <a href="http://aptosid.com/manual/">http://aptosid.com/manual/</a> а також за допомогою apt; велике спасибі до перекладчів цієї документації команді aptosid-manual!<br />Будь ласка зверніть увагу, що offline-manual є тільки доступною на live-CD або на становленій системі.</li>
 					<li>Багато змін на нашому керівництві.</li>
 
-					<li>ar5523 support for 54/ '108'MBit/s Atheros USB wlan cards (AR5523).</li>
-					<li>ath5k support for 54/ '108' MBit/s Atheros wlan cards (AR2425, AR5210, AR5211, AR5212, AR5213 and AR5414).</li>
-					<li>ath6kl support for Atheros AR6003 based USB and SDIO wlan cards.</li>
-					<li>ath9k support for 802.11n Atheros wlan cards (AR5418+AR5133, AR5416+AR5133, AR5416+AR2133, AR9160, AR9280, AR9281 and AR9285).</li>
-					<li>ath9k_htc support for 802.11n Atheros USB wlan cards (AR7010/ AR9271).</li>
-					<li>carl9170 support for 802.11n Atheros USB wlan cards (AR9170 'otus'), now supporting HT/ aggregation and AP mode.</li>
+					<li>Підтримка для ar5523 54/ '108'MBit/s Atheros USB WLAN-карт (AR5523).</li>
+					<li>Підтримка для ath5k 54/ '108' MBit/s Atheros WLAN-карт (AR2425, AR5210, AR5211, AR5212, AR5213 та AR5414).</li>
+					<li>Підтримка для ath6kl Atheros AR6003 based USB та SDIO WLAN-карт.</li>
+					<li>Підтримка для ath9k 802.11n Atheros WLAN-карт (AR5418+AR5133, AR5416+AR5133, AR5416+AR2133, AR9160, AR9280, AR9281 та AR9285).</li>
+					<li>Підтримка для ath9k_htc 802.11n Atheros USB WLAN-карт (AR7010/ AR9271).</li>
+					<li>Підтримка для carl9170 802.11n Atheros USB WLAN-карт (AR9170 'otus'), тепер підтримує HT/ агрегацію і режим точки доступу.</li>
 					<li>
-						b43/ b43legacy support for older Broadcom wlan cards.<br />
-						<a href="http://www.ing.unibs.it/openfwwf/">OpenFWWF 5.2</a> opensource firmware for the following Broadcom AirForce 802.11b/g wireless cards:
+						Підтримка для b43/ b43legacy старших Broadcom WLAN-карт.<br />
+						<a href="http://www.ing.unibs.it/openfwwf/">OpenFWWF 5.2</a> прошивка з відкритим вихідним кодом  для наступних Broadcom AirForce 802.11b/g WLAN-карт:
 						<ul>
 							<li>BCM4306</li>
 							<li>BCM4311 revision 1</li>
 							<li>BCM4318</li>
 							<li>BCM4320</li>
 						</ul>
-						support for LP-PHY (BCM4312) and SSB based 802.11n (BCM4321, BCM4322) devices, non-free firmware images required.
+						під для  LP-PHY (BCM4312) та SSB на основі 802.11n (BCM4321, BCM4322) пристроїв, Вам потрібна невільна прошивка.
 					</li>
-					<li>brcmsmac for modern Broadcom 802.11n PCIe/ AXI wlan cards (BCM4313, BCM43224, BCM43225).</li>
-					<li>brcmfmac for modern Broadcom 802.11n USB wlan cards (BCM43235, BCM43236, BCM43238).</li>
-					<li>iwlagn support for IPW 3945/ 4965 and the IEEE 802.11 a/b/g/n part of the Intel Wireless WiFi Link 1000/ 2000/ 5xxxAGN/ 6000/ 6050/ 7xxx family.</li>
-					<li>rt2x00 support for RaLink rt2400, rt2500, rt2570, rt61 and rt73 802.11b/g cards.</li>
-					<li>support for RaLink rt27x0, rt28x0, rt30x0, rt33xx, rt35xx, rt53xx 802.11b/g/n PCI/ USB cards through rt2x00.</li>
-					<li>support for RealTek RTL8180L/ RTL8185 PCI/ cardbus and RTL8187/ RTL8187B USB wlan cards.</li>
-					<li>support for RealTek RTL8188CE/ RTL8192CE, RTL8188CU/ RTL8192CU, RTL8188DE/ RTL8192DE, RTL8188SE/ RTL8192SE (PCIe) and RTL8188CU/ RTL8192CU (USB)  RTL8723AE (PCI) 802.11n wlan cards.</li>
+					<li>Підтримка для brcmsmac для сучасних Broadcom 802.11n PCIe/ AXI WLAN-карт (BCM4313, BCM43224, BCM43225).</li>
+					<li>Підтримка для brcmfmac для сучасних Broadcom 802.11n USB WLAN-карт (BCM43235, BCM43236, BCM43238).</li>
+					<li>Підтримка для iwlagn IPW 3945/ 4965 та IEEE 802.11 a/b/g/n як частина Intel Wireless WiFi Link 1000/ 2000/ 5xxxAGN/ 6000/ 6050/ 7xxx сімей.</li>
+					<li>Підтримка для rt2x00 RaLink rt2400, rt2500, rt2570, rt61 та rt73 802.11b/g карт.</li>
+					<li>Підтримка для RaLink rt27x0, rt28x0, rt30x0, rt33xx, rt35xx, rt53xx 802.11b/g/n PCI/ USB карт через rt2x00.</li>
+					<li>Підтримка для RealTek RTL8180L/ RTL8185 PCI/ карт та RTL8187/ RTL8187B USB WLAN-карт.</li>
+					<li>Підтримка для RealTek RTL8188CE/ RTL8192CE, RTL8188CU/ RTL8192CU, RTL8188DE/ RTL8192DE, RTL8188SE/ RTL8192SE (PCIe) та RTL8188CU/ RTL8192CU (USB)  RTL8723AE (PCI) 802.11n WLAN-карт.</li>
 					<li>memtest86+.</li>
-					<li>kvm (Kernel-based Virtual Machine) for kde-full; kvm depends on hardware virtualization support (AMD pacifica virtualization extensions 'svm' or Intel IVT (vanderpool) virtualization extensions 'vmx')</li>
-					<li>access point support for many mac80211 based wlan cards through nl80211 and hostapd (optional).</li>
-					<li>client support for network booting over PXE/ NBD.</li>
-					<li>support QXL graphics emulation (SPICE).</li>
-					<li>add loopback.cfg generation, to provide generic live media support for grub2.</li>
-					<li>provide a safety fallback for generic efi binary and bootloader detection to the live media.</li>
+					<li>Підтримка для kvm (Kernel-based Virtual Machine) для kde-full; kvm залежить від апаратної підтримки віртуалізації (AMD pacifica virtualization extensions 'svm' або Intel IVT (vтаerpool) virtualization extensions 'vmx')</li>
+					<li>Підтримка для точку доступу на основі багатьох mac80211 WLAN-карт через nl80211 та hostapd (як опція).</li>
+					<li>Підтримка для завантаження кліента через мережу PXE/ NBD.</li>
+					<li>Підтримка QXL емуляції графіки (SPICE).</li>
+					<li>Додано нова версія loopback.cfg, для загальної підтримки live-CD. Підтримка для grub2.</li>
+					<li>Забезпечeні резервні сили для загального двійкового виявлення завантажувача EFI та live-CD.</li>
 				</ul>
 			</div>
 		<div class="divider" id="faq">
 			<h2>Часті питання</h2>
 
 				<h3>Установка</h3>
-				<p>
-
-					<b>Рекомендується встановити клавіатурні розкладки, мову і часовий пояс перед завантаженням aptosid-live-CD aбо DVD,вибираючи їх з меню завантаження [F2], [F3].</b>
+				<p><b>  Рекомендується встановити клавіатурні розкладки, мову і часовий пояс перед завантаженням aptosid-live-CD aбо DVD,вибираючи їх з меню завантаження [F2], [F3].</b>
 					Таким чином, регіональні налаштування поширюються на всі необхідні місця у встановленій системі і не вимагають громіздких змін у декількох місцях.
 				</p>
 
 				<p>
-					The 64 bit 'amd64' editions should be preferred on modern hardware supporting it.
+					Сучасні апаратні засоби повинні підтримувати 64-bit програми (amd64).
 				</p>
 		      <h3>device mapper/ LVM2/ mdadm/ cryptsetup</h3>
 				<p>
-					A long-standing issue with Debian's initramfs integration for various device mapper based targets, like lvm2, mdadm or cryptsetup, might be triggered more likely due to minor timing changes in recent kernels.
-					&quot;rootdelay=1&quot; as kernel parameter can be used as a temporary workaround for affected systems not finding the rootfs on top of a device mapper backed block device; in rare cases it might be needed to increase the rootdelay further.
-					This setting can be added on the fly from the grub2 boot menu or be made permanent by adding it GRUB_CMDLINE_LINUX in /etc/default/grub and running update-grub afterwards.
+					Довгострокова проблема з initramfs до Debian інтерграції для на такій  основі, як наприклад lvm2, mdadm або cryptsetup, може бути викликана більш імовірно через незначені зміні в останніх версіях ядра.
+					&quot;rootdelay=1&quot; як параметер ядра може бути застосованим як тимчасове вирішення проблем  для уразливих систем не знаходячи кореневої файлової системи на вершині Device Mapper а в рідкісних випадках це може бути необхідно для збільшення rootdelay.
+					Ця установка може бути додана до менеджера GRUB шляхом додання цього параметра GRUB_CMDLINE_LINUX в розділі /etc/default/grub та актулізації  GRUВ за домогою команди update-grub в консолі зі правами адміністратора.
 				</p>
 
 		      <h3>efi_no_storage_paranoia</h3>
 				<p>
-					Starting with kernel 3.8.5, the kernel refuses to write efivars if their free space drops below 50% in order to avoid damage to broken Samsung systems.
-					As this also affects updating existing efivars (like grub-efi boot entries, BootOrder or BootCurrent/ BootNext) on existing systems, it is suggested to remove bogus data (older kernels dumped kernel logs in pstore needlessly) from pstore.
+					Починаючи з ядра 3.8.5, ядро відмовляється писати efivars якщо їх вільний простір падає нижче ніж на  50%, щоб уникнути пошкодження непрацюючої системи Samsung.
+					Оскільки це також впливає на оновлення існуючих efivars (наприклад grub-efi boot entries, BootOrder або BootCurrent/ BootNext) на існуючих системах, пропонуєтьс  видалити файли bogus (повідомлення старих заливок ядрів) з pstore.
 				</p>
 
 <pre>
@@ -476,12 +474,12 @@ mount -t pstore -o kmsg_bytes=8000 pstore /sys/fs/pstore/
 </pre>
 
 				<p>
-					Due to the nature of various UEFI garbage collector implementations on existing hardware, it might be required to go through a full (non-kexec) reboot, before pstore contents become visible &mdash; and another full reboot before the garbage collector actually frees up the space for efivars.
-					Starting with aptosid 2013-01 &quot;Ἑσπερίδες - Hesperides &quot;, pstore is cleared unconditionally during each boot of the live media!
+					У зв'язку з особливостями різних реалізацій UEFI збирача сміття на існуючому обладнанні, можливо, буде потрібно зробити повне перезавантаження (non-kexec), перед тим як PStore вміст будуть видний - та інша повне перезавантаження повністю звільняє простір для efivars.
+					Починаючи з  aptosid 2013-01 &quot;Ἑσπερίδες - Hesperides &quot;, pstore очищається беззастережно під час двійних загрузок live-CD!
 				</p>
 
 				<p>
-					On some hardware, efivars is always more than 50% full starting from the factory settings, for these cases it might be required to supply &quot;efi_no_storage_paranoia&quot; as kernel parameter to live- and installed (GRUB_CMDLINE_LINUX in /etc/default/grub) system; using this kernel parameter might be dangerous on broken UEFI implementations, please use with care.
+					На деяких машинах, efivars завжди має більш ніж на 50%, починаючи з заводськими налаштуваннями, для цих випадків він може зажадати надання &quot;efi_no_storage_paranoia&quot; як параметер ядра до live-CD та установки параметру завантаження (GRUB_CMDLINE_LINUX в розділі /etc/default/grub) будьте уважні на зламаних реалізацій UEFI.
 				</p>
 
 		     <h3>isohybrid</h3>
@@ -534,7 +532,7 @@ apt-get install crda
 				</p>
 
 				<p>
-					Please also refer to &quot;efi_no_storage_paranoia&quot; above.
+					Дивіться також розділ &quot;efi_no_storage_paranoia&quot;вище.
 				</p>
 
 				<h3>UEFI завантажувальни знімні пристрої</h3>
@@ -563,20 +561,20 @@ install-mbr /dev/sdz
 				</p>
 
 				<ul>
-					<li>Czech(Чеська мова) </li>
-					<li>Danish(Данська мова)</li>
-					<li>Dutch(Голландська мова)</li>
-					<li>English(Англійська мова) (AU, GB, US)</li>
-					<li>French(Французька мова)</li>
-					<li>German(Німецька мова)</li>
-					<li>Italian(Італійська мова)</li>
-					<li>Japanese(Японська мова)</li>
-					<li>Polish(Полська мова)</li>
-					<li>Portuguese(Португалська мова) (BR, PT)</li>
-					<li>Romanian(Румунська мова)</li>
-					<li>Russian(Російська мова)</li>
-					<li>Spanish(Іспанська мова)</li>
-					<li>Ukrainian(Українська мова)</li>
+					<li>Чеська</li>
+					<li>Данська</li>
+					<li>Голландська</li>
+					<li>Англійська(AU, GB, US)</li>
+					<li>Французька</li>
+					<li>Німецька</li>
+					<li>Італійська</li>
+					<li>Японська</li>
+					<li>Полська</li>
+					<li>Португалська(BR, PT)</li>
+					<li>Румунська</li>
+					<li>Російська</li>
+					<li>Іспанська</li>
+					<li>Українська</li>
 				</ul>
 
 				<p>
@@ -586,10 +584,10 @@ install-mbr /dev/sdz
 				</p>
 
 				<ul>
-					<li>Bulgarian(Болгарська мова)</li>
-					<li>Croatian(Кроатська мова)</li>
-					<li>Greek(Грецька мова)</li>
-					<li>Hungarian(Угорська мова)</li>
+					<li>Болгарська</li>
+					<li>Кроатська мова</li>
+					<li>Грецька мова</li>
+					<li>Угорська мова</li>
 				</ul>
 
 				<p>
