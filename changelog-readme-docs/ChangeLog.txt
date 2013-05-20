@@ -1,6 +1,17 @@
 CHANGELOG FOR aptosid-OS-MANUAL-2013
 __________________________________________
 
+*VERSION:::aptosid-manual-02.15.2013.05.20
+Mon May 20, 2013 1215 UTC
+*/lib/version			timestamp change
+*credits-xx			small updated
+*sys-admin-releasenotes-xx	updated to Thanatos 2013-01
+*pt-br files 			menu-pt-br translation update applied to files
+*translation updates and validation fixes for /files
+
+-- Trevor Walkley <trevor_walkley@aptenodytes.org> Mon May 20, 2013 1215 UTC
+__________________________________________
+
 *VERSION:::aptosid-manual-02.15.2013.05.03
 Fri May 03, 2013 0850 UTC
 */lib/version		timestamp change
