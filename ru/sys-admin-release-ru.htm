@@ -17,7 +17,7 @@
         <![endif]-->
 </head>
 <body>
-<!-- Last translation revision by polix 27/03/2013 0745 UTC -->
+<!-- Last translation revision by polix 28/07/2013 0745 UTC -->
 <!--htdig_noindex--><div id="menu"> <!-- menu starts here - ru language maintained by RoEn -->
 <!--aptosid Operating System Manual menu-version-02.15.2013.01.10 -->
 <!-- menu last updated by bluewater 2013.01.10 0910 hrs UTC -->
@@ -344,47 +344,47 @@
 		<h2>Замечания к выпуску aptosid 2013-01 Ἑσπερίδες - Hesperides</h2>
 
 				<p>
-					New features in aptosid 2013-01 Ἑσπερίδες - Hesperides, are in particular kernel 3.9 and numerous integration and stabilisation fixes.
-					Special focus has been cast upon improving system compatibility with various UEFI systems and the Ivy-Bridge architecture; basic Haswell support should now be complete.
-					Kernel 3.9 doesn't only improve and stabilise hardware support for newer devices, it also improves powersaving approaches for libata targets, modern sound drivers and multi-head environments with AMD/ ATi radeon graphics cards
+					Новые возможности в aptosid 2013-01 Ἑσπερίδες - Hesperides, являются, в частности ядра 3.9 многочисленные интеграции и стабилизации исправлений.
+					Особое внимание было брошено на улучшение совместимости системы с различными системами UEFI и Ivy Bridge-архитектуры; базовая поддержка Haswell должна теперь быть полным.
+					 Kernel 3.9 не только улучшает и стабилизирует аппаратную поддержку новых устройств, но и улучшает энергосбережения подхода к целям libata, поддерживает современные драйверы звука и несколько головки средах с AMD / ATI Radeon видеокарт
 				</p>
 
 				<p>
-					Intel Ivy-Bridge graphics profits from improved DisplayPort support, while nouveau has gained initial fan-control for NV40 and NV50 chipsets (GeForce 6xxx/ 7xxx/ 8xxx/ 9xxx/ 1xx/ 2xx/ 3xx).
-					The radeon driver for AMD/ ATi graphics cards has gained support for the Oland (Radeon 8500/ 8600 series) chipset generation and Richland APUs.
+					Графические чипы Intel Ivy Bridge-приобрели улучшенную поддержку DisplayPort, а свободное Nvidia-драйвер nouveau приобрел початковe управления вентилятором для NV40 и NV50 чипсетов (GeForce 6xxx / 7xxx / 8xxx / 9xxx / 1xx / 2xx / 3xx).
+					Драйвер Radeon AMD / ATI видеокарт получил поддержку Эланд (Radeon 8500/8600 серии) поколения чипсетов i Richlта APUs.
 				</p>
 
 				<p>
-					On the file system side CIFS now support the SMB 2.0 and SMB 2.1 protocol, while the mdadm layer can now pass through TRIM support.
-					A new development is the dm-cache target, which allows using SSD storage to speed up hard disk access.
+					Файловая системa CIFS теперь поддерживает SMB 2.0 и 2.1 протокола SMB, а слой MDADM теперь может проходить через поддержку TRIM.
+					Новая разработка представляет собой dm-cache, что позволяет использовать SSD-cache для ускорения доступа к жесткому диску.
 				</p>
 
 				<p>
-					Atheros AR5523 support has now been merged officially, while Broadcom has added initial support for BCM43224 to brcmsmac.
-					A new driver has become available for the Realtek RTL8723AE wlan chipset and r92su replaces the staging rtl8712u driver for the Realtek RTL8188SU/ RTL8192SU chipsets.
-					With iwlmvm, Intel provides the first IEEE 802.11ac driver for their IWL7xxx wlan chipsets, as Atheros and Wilocity contribute a 60 GHz (WiGig WBE) drivers for the QCA WIL6210 generation.
+					Поддержка Atheros AR5523 в настоящее время официально объединилась, а Broadcom добавил начальную поддержку BCM43224 к brcmsmac-карт.
+					Новый драйвер стал доступным для Realtek WLAN RTL8723AE и r92su чипсетов, заменяющий драйвера для постановки rtl8712u Realtek RTL8188SU / RTL8192SU чипсетов.
+					С iwlmvm, Intel обеспечивает первые драйверы IEEE 802.11ac для своих чипсетов WLAN IWL7xxx, например Atheros  способствует к драйверам Wilocity 60 ГГц (WiGig WBE) для QCA WIL6210 поколения.
 				</p>
 
 				<p>
-					GPT and UEFI reliability have been improved, which allows hard disks exceeding 2 TiB and their use for booting on new systems using UEFI instead of the traditional PC-BIOS.
-					Particular emphasis has been cast upon improving UEFI support on various hardware platforms and to avoid bugs in the varying firmware implementations, both upstream and in aptosid.
+					Надежность GPT и UEFI была улучшена, что позволяет большему размер чем 2 терабайт жестких дисков и их использование для загрузки на новых систем с использованием UEFI вместо традиционного PC-BIOS.
+					Особое внимание было брошено на улучшение поддержки UEFI на разных аппаратных платформах и во избежание ошибок в различных реализациях прошивки, как вверх, так и в aptosid.
 				</p>
 
 				<p>
-					As usual, a large number of individual functionality enhancements and bug fixes have been applied to the full package line up and aptosid's own packages, in order to improve the general distribution infrastructure.
+					Как обычно, было добавлено большое количество отдельных функциональных усовершенствований и исправлений ошибок, которые были применены к полной линии пакетов Debian и aptosid собственных пакетов, для того, чтобы улучшить общую инфраструктуру распределения.
 				</p>
 
 				<p>
-					Although this release happens in close temporal proximity to the Debian 7.0 "wheezy" release, it is still based on Debian sid as of this day and is not meant or suited as an alternative way to install "wheezy".
-					Many security sensitive packages in aptosid (Debian sid) already sport a higher version number than their corresponding version in "wheezy" or are even uninstallable in a &quot;wheezy&quot; context.
+					Хотя этот выпуск происходит в непосредственной тимчасововий близости к Debian 7.0 "wheezy" выпуска, дистрибутив aptosid прежнему основан на Debian SID состоянию на этот день и не предназначен или подходит в качестве альтернативного способа установки "wheezy".
+					Много версий пакетов с повышенными требованиями к безопасности aptosid (Debian sid) уже получили обновления чем "wheezy" или их невозможно установить на a "wheezy".
 				</p>
 
 				
-		<h5>aptosid after the 'freeze'</h5 >
-					<p>Now that Debian 7 Wheezy has been released, the version freeze that reached up to sid will be lifted again within the next few days.
-					Given that there are a number of high impact changes (KDE 4.10.2/ kdepim2, xserver-xorg-core 1.14.0, udisks2, grub2 2.00, etc.) staging in experimental and are just waiting for the freeze to be lifted, the following 2-3 weeks might be slightly more vibrant and potentially less coordinated than usual in regards to package updates from Debian, therefore we recommend a little caution during dist-upgrades.
-					This might involve checking for eventual upgrade warnings on aptosid.com or to wait a few hours if KDE 4.10 or X.org are among the upgrading packages for experiences from advanced users.
-					Please be aware that it might not always be possible to react in time, now that Debian employs four mirror pushes a day.
+		<h5>aptosid после 'freeze'</h5 >
+					<p>Сейчас Debian "wheezy" был выпущен, замораживания версий пакетов (freeze) закончилось и раздел sid будет повностю открытым протяжении несколько дней.
+					   Учитывая, что существуют ряд высоких изменениями которые влияют на (KDE 4.10.2 / kdepim2, xserver-xorg-core 1.14.0, udisks2, grub2 2.00, etc.) Да их постановки в экспериментальной раздел Debian, будьте осторожны в течение следующих 2 -3 недель при обновление системы с командой dist-upgrade.
+					   Для безопасного обновления системы мы рекомендуем посещать наш главный форум, особенно сектор "Upgrade Warnings" на странице aptosid.com или подождать кол часов если KDE 4.10 или X.org есть среди пакетов для опыта продвинутых пользователей.
+					   На данный момент проект Debian толкает серверы каждый день по четыре раз. Пожалуйста помните что при таком наплыва новых пакетов невозможно среагировать на ошибки.
 				</p>
 
 				<p>
