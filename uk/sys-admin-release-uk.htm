@@ -17,7 +17,7 @@
         <![endif]-->
 </head>
 <body>
-<!-- Last translation revision polix 19/05/2013 0100 UTC -->
+<!-- Last translation revision polix 11/08/2013 0100 UTC -->
 <!--htdig_noindex--><div id="menu"> <!-- menu starts here - ua language maintained by polix -->
 <!--aptosid Operating System Manual menu-version-02.15.2013.01.10 -->
 <!-- menu last updated by bluewater 2013.01.10 0910 hrs UTC -->
@@ -413,7 +413,7 @@
 
 					<li>Підтримка для ar5523 54/ '108'MBit/s Atheros USB WLAN-карт (AR5523).</li>
 					<li>Підтримка для ath5k 54/ '108' MBit/s Atheros WLAN-карт (AR2425, AR5210, AR5211, AR5212, AR5213 та AR5414).</li>
-					<li>Підтримка для ath6kl Atheros AR6003 based USB та SDIO WLAN-карт.</li>
+					<li>Підтримка для ath6kl Atheros AR6003 на основі USB та SDIO WLAN-карт.</li>
 					<li>Підтримка для ath9k 802.11n Atheros WLAN-карт (AR5418+AR5133, AR5416+AR5133, AR5416+AR2133, AR9160, AR9280, AR9281 та AR9285).</li>
 					<li>Підтримка для ath9k_htc 802.11n Atheros USB WLAN-карт (AR7010/ AR9271).</li>
 					<li>Підтримка для carl9170 802.11n Atheros USB WLAN-карт (AR9170 'otus'), тепер підтримує HT/ агрегацію і режим точки доступу.</li>
@@ -436,12 +436,12 @@
 					<li>Підтримка для RealTek RTL8180L/ RTL8185 PCI/ карт та RTL8187/ RTL8187B USB WLAN-карт.</li>
 					<li>Підтримка для RealTek RTL8188CE/ RTL8192CE, RTL8188CU/ RTL8192CU, RTL8188DE/ RTL8192DE, RTL8188SE/ RTL8192SE (PCIe) та RTL8188CU/ RTL8192CU (USB)  RTL8723AE (PCI) 802.11n WLAN-карт.</li>
 					<li>memtest86+.</li>
-					<li>Підтримка для kvm (Kernel-based Virtual Machine) для kde-full; kvm залежить від апаратної підтримки віртуалізації (AMD pacifica virtualization extensions 'svm' або Intel IVT (vтаerpool) virtualization extensions 'vmx')</li>
-					<li>Підтримка для точку доступу на основі багатьох mac80211 WLAN-карт через nl80211 та hostapd (як опція).</li>
+					<li>Підтримка для kvm (Kernel-на основі Virtual Machine) для kde-full; kvm залежить від апаратної підтримки віртуалізації (AMD pacifica virtualization extensions 'svm' або Intel IVT (vтаerpool) virtualization extensions 'vmx')</li>
+					<li>Підтримка точки доступу на основі багатьох mac80211 WLAN-карт через nl80211 та hostapd (як опція).</li>
 					<li>Підтримка для завантаження кліента через мережу PXE/ NBD.</li>
 					<li>Підтримка QXL емуляції графіки (SPICE).</li>
-					<li>Додано нова версія loopback.cfg, для загальної підтримки live-CD. Підтримка для grub2.</li>
-					<li>Забезпечeні резервні сили для загального двійкового виявлення завантажувача EFI та live-CD.</li>
+					<li>Додано нова версія loopback.cfg, для загальної підтримки live-CD.Підтримка для grub2.</li>
+					<li>Забезпечені резервні сили для загального двійкового виявлення завантажувача EFI та live-CD.</li>
 				</ul>
 			</div>
 		<div class="divider" id="faq">
@@ -459,7 +459,7 @@
 				<p>
 					Довгострокова проблема з initramfs до Debian інтерграції для на такій  основі, як наприклад lvm2, mdadm або cryptsetup, може бути викликана більш імовірно через незначені зміні в останніх версіях ядра.
 					&quot;rootdelay=1&quot; як параметер ядра може бути застосованим як тимчасове вирішення проблем  для уразливих систем не знаходячи кореневої файлової системи на вершині Device Mapper а в рідкісних випадках це може бути необхідно для збільшення rootdelay.
-					Ця установка може бути додана до менеджера GRUB шляхом додання цього параметра GRUB_CMDLINE_LINUX в розділі /etc/default/grub та актулізації  GRUВ за домогою команди update-grub в консолі зі правами адміністратора.
+					Ця установка може бути додана до менеджера GRUB шляхом додання цього параметра GRUB_CMDLINE_LINUX в розділі /etc/default/grub та актулізації  GRUВ зі допомогою  команди update-grub в консолі зі правами адміністратора.
 				</p>
 
 		      <h3>efi_no_storage_paranoia</h3>
@@ -502,7 +502,7 @@ $cat /path/to/aptosid-*.iso &gt; /dev/USB_raw_device_node
 		<h3>Бездротові налаштування нормативного домену</h3>
 				<p>
 
-					Нормативний налаштувач домену для cfg80211 based WLAN-карт вимагає crda для забезпечення доступу до бездротових каналах вище ch11 (2.4 GHz або 5 GHz еквівалентів), без crda доступний тільки "world domain" (channel 1-11).
+					Нормативний налаштувач домену для cfg80211 на основі WLAN-карт вимагає crda для забезпечення доступу до бездротових каналах вище ch11 (2.4 GHz або 5 GHz еквівалентів), без crda доступний тільки "world domain" (channel 1-11).
 				</p>
 <pre>
 apt-get update 
