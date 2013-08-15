@@ -1,4 +1,19 @@
 CHANGELOG FOR aptosid-OS-MANUAL-2013
+
+__________________________________________
+
+*VERSION:::aptosid-manual-02.16.2013.08.13
+Tues Aug 13, 2013 1120 UTC
+*/lib/version			timestamp change
+*menu-xx			deleted refernce to grub1
+*welcome-xx			deleted reference to grub1 in TOC
+*credits-xx			small update
+*sys-admin-grub2-xx 		small additionand deleted deprecated text and pics
+*flag-index.html			minor update
+*index.html				minor update
+*translation updates and validation fixes for /files
+
+-- Trevor Walkley <trevor_walkley@aptenodytes.org> Tues Aug 13, 2013 1120 UTC
 __________________________________________
 
 *VERSION:::aptosid-manual-02.15.2013.05.20
