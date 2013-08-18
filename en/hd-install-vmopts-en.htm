@@ -386,7 +386,7 @@ modprobe kvm-amd
 
 							<p><span class="highlight-2">As user:</span></p>
 <pre>
-$ kvm -net nic,model=virtio -net user -soundhw ac97 -m 512 -monitor stdio -cdrom &lt;aptosid.iso&gt;
+$ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic,model=virtio -net user -soundhw all -m 1024 -monitor stdio -cdrom &lt;aptosid.iso&gt;
 </pre>
 
 				<h5>Installing  aptosid to a KVM image</h5>
@@ -398,7 +398,7 @@ $ qemu-img create -f qcow2 aptosid-VM.img 12G
 							<p>Boot the aptosid-*.iso with the following parameters to enable KVM to recognise that there is an QEMU hard disk image available:</p>
 
 <pre>
-$ kvm -net nic,model=virtio -net user -soundhw ac97 -m 512 -monitor stdio -cdrom &lt;/path/to/aptosid-*.iso&gt; -boot d &lt;/path/to/aptosid-VM.img&gt;
+$ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic,model=virtio -net user -soundhw all -m 1024 -monitor stdio -cdrom &lt;/path/to/aptosid-*.iso&gt; -boot d &lt;/path/to/aptosid-VM.img&gt;
 </pre>
 
 							<p>Once the cdrom has booted up click on the aptosid installer icon to activate the installer, (or use the menu), click on the Partitioning tab and launch the partition application you prefer. For the partitioning you can follow the instructions from <a href="part-gparted-en.htm">Partitioning the Hard Drive - Traditional, GPT and LVM</a>  (do not forget to add a swap partition If you are short of memory). Please be aware that formatting will take time so be patient.</p>
@@ -409,17 +409,17 @@ $ kvm -net nic,model=virtio -net user -soundhw ac97 -m 512 -monitor stdio -cdrom
 							<p>You now have a VM ready for use:</p>
 
 <pre>
-$ kvm -net nic,model=virtio -net user -soundhw ac97 -m 512 -monitor stdio -drive if=virtio,boot=on,file=&lt;path/to/aptosid-VM.img&gt;
+$ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic,model=virtio -net user -soundhw all -m 1024 -monitor stdio -drive if=virtio,boot=on,file=&lt;path/to/aptosid-VM.img&gt;
 </pre>
 
 							<p>Some guests do not support virtio, therefore you need to use other options when launching KVM, for example:</p>
 <pre>
-$ kvm -net nic, -net user -soundhw ac97 -m 512 -monitor stdio -hda &lt;/path/to/your_guest.img&gt; -cdrom your_other.iso -boot d
+$ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic, -net user -soundhw all -m 1024 -monitor stdio -hda &lt;/path/to/your_guest.img&gt; -cdrom your_other.iso -boot d
 </pre>
 
 							  <p>or</p>
 <pre>
-$ kvm -net nic, -net user -soundhw ac97 -m 512 -monitor stdio -hda &lt;/path/to/your_guest.img&gt;
+$ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic, -net user -soundhw all -m 1024 -monitor stdio -hda &lt;/path/to/your_guest.img&gt;
 </pre>
 							<p>See also: <a href="http://www.linux-kvm.org/page/Main_Page"> KVM documentation</a>.</p>
 
@@ -440,7 +440,7 @@ apt-get install aqemu
 						</ul>
 
 				<h4>Requirements</h4>
-							<p><span class="highlight-3">Recommended ram: 1 gig </span>: Ideally 512 MB for the guest and 512 MB for the host. (it can be run on less, but do not expect to have good performance).</p>
+							<p><span class="highlight-3">Recommended ram: 2 gig </span>: Ideally 1024 MB for the guest and 1024 MB for the host. (it can be run on less, but do not expect to have good performance).</p>
 
 							<p><span class="highlight-3">Hard disk space:</span> While VirtualBox itself is very lean (a typical installation will only need about 30 MB of hard disk space), the virtual machines will require fairly huge files on disk to represent their own hard disk storage. So, to install MS Windows XP (TM), for example, you will need a file that will easily grow to several GB in size. To have aptosid in VirtualBox you need to allocate a 5 gig image plus a swap allocation.</p>
 
@@ -506,11 +506,11 @@ Ctrl+Alt
 
 							<p>If you want to use a bootable floppy, run Qemu with:</p>
 <pre>
-qemu -floppy aptosid.iso -net nic -net user -m 512 -boot d aptosid-VM.img
+qemu -floppy aptosid.iso -net nic -net user -m 1024 -boot d aptosid-VM.img
 </pre>
 							<p>If your CD-ROM is bootable, run Qemu with:</p>
 <pre>
-qemu -cdrom aptosid.iso -net nic -net user -m 512 -boot d aptosid-VM.img
+qemu -cdrom aptosid.iso -net nic -net user -m 1024 -boot d aptosid-VM.img
 </pre>
 							<p>Now install aptosid as if you were going to install it on a real HD</p>
 
@@ -590,7 +590,7 @@ losetup -f /path/to/mbr
 
 
 	</div>
-	<div id="rev">Page last revised 18/09/2011 1010 UTC</div>
+	<div id="rev">Page last revised 18/08/2013 1235 UTC</div>
 
 </div>
 </body>
