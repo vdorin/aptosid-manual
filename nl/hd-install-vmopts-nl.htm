@@ -385,12 +385,12 @@ modprobe kvm-amd
 
 					  <h4>Gebruik KVM om op te starten van een aptosid-*.iso</h4> 
 
-							<p><span class="highlight-2">For 64 bit as user:</span></p>
+							<p><span class="highlight-2">Voor 64-bit als user:</span></p>
 <pre>
 $ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic,model=virtio -net user -soundhw all -m 1024 -monitor stdio -cdrom &lt;aptosid.iso&gt;
 </pre>
 
-							<p><span class="highlight-2">For 32 bit replace </span> qemu-system-x86_64 <span class="highlight-2">with</span> qemu-system-i386.</p>
+							<p><span class="highlight-2">Voor 32-bit vervang </span> qemu-system-x86_64 <span class="highlight-2">met</span> qemu-system-i386.</p>
 
 
 				<h5>Installeer een aptosid-*.iso naar een KVM image</h5>
@@ -405,7 +405,7 @@ $ qemu-img create -f qcow2 aptosid-2010-*-.img 12G
 $ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic,model=virtio -net user -soundhw all -m 1024 -monitor stdio -cdrom &lt;/path/to/aptosid-*.iso&gt; -boot d &lt;/path/to/aptosid-VM.img&gt;
 </pre>
 
-							<p><span class="highlight-2">For 32 bit replace </span> qemu-system-x86_64 <span class="highlight-2">with</span> qemu-system-i386.</p>
+							<p><span class="highlight-2">Voor 32-bit vervang </span> qemu-system-x86_64 <span class="highlight-2">met</span> qemu-system-i386.</p>
 
 							<p>Zodra de cdrom is opgestart klik op de aptosid installer icoon om de installer te activeren, (of gebruik het menu). Klik op de tab voor het partitioneren en start jouw voorkeur. Voor het partitioneren kan je de instructies volgen van <a href="part-gparted-nl.htm">Partitioneren van de harde schijf - Traditioneel, GPT en LVM</a>  (Vergeet geen swap partitie toe te voegen als je maar een beperkt geheugen hebt). Het formatteren zal een tijdje in beslag nemen, wees dus geduldig.</p>
 
