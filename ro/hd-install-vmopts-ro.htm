@@ -384,12 +384,15 @@ modprobe kvm-amd
 </pre>
 							 <p>Când veți porni sistemul, script-urile qemu-kvm vor avea grijă să încarce modulele.</p>
 
-					  <h4>Utilizare KVM pentru a boot-a un aptosid-*.iso</h4>
+					  <h4>Utilizare KVM pentru a boot-a un aptosid-*.iso</h4> 
 
-							<p><span class="highlight-2">Ca utilizator:</span></p>
+							<p><span class="highlight-2">For 64 bit as user:</span></p>
 <pre>
-$ kvm -net nic,model=virtio -net user -soundhw ac97 -m 512 -monitor stdio -cdrom &lt;aptosid.iso&gt;
+$ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic,model=virtio -net user -soundhw all -m 1024 -monitor stdio -cdrom &lt;aptosid.iso&gt;
 </pre>
+
+							<p><span class="highlight-2">For 32 bit replace </span> qemu-system-x86_64 <span class="highlight-2">with</span> qemu-system-i386.</p>
+
 
 				<h5>Instalarea unui aptosid-*.iso într-o imagine KVM</h5>
 							<p>Mai întâi creați o imagine de hard disk, (aceasta va avea o dimensiune minimală și va creste doar funcție de cerințe, datorită ratelor de compresie a lui <i>qcow2</i>):</p>
@@ -398,9 +401,12 @@ $ qemu-img create -f qcow2 aptosid-2010-*-.img 12G
 </pre>
 
 							<p>Boot-ați imaginea aptosid-*.iso cu următorii parametrii pentru a permite lui KVM să recunoască că aceasta este o imagine QEMU de hard disk disponibilă:</p>
+
 <pre>
-$ kvm -net nic,model=virtio -net user -soundhw ac97 -m 512 -monitor stdio -cdrom &lt;/path/to/aptosid-*.iso&gt; -boot d &lt;/path/to/aptosid-VM.img&gt;
+$ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic,model=virtio -net user -soundhw all -m 1024 -monitor stdio -cdrom &lt;/path/to/aptosid-*.iso&gt; -boot d &lt;/path/to/aptosid-VM.img&gt;
 </pre>
+
+							<p><span class="highlight-2">For 32 bit replace </span> qemu-system-x86_64 <span class="highlight-2">with</span> qemu-system-i386.</p>
 
 							<p>După ce ați boot-at de pe CD/DVD dați click pe icon-ul aptosid installer pentru a porni installer-ul, (sau folosiți menniul), apoi click pe tab-ul Partitioning și lansați aplicația de partiționare preferată. Pentru partționare puteți urma instrucțiunile de la <a href="part-gparted-ro.htm">Partiționarea Hard Disk-ului - Tradițional, GPT și LVM</a> (nu uitați să adăugați o partiție swap dacă dispuneți de memorie mică). Țineți cont că procesul durează deci aveți răbdare.</p>
 
@@ -410,17 +416,17 @@ $ kvm -net nic,model=virtio -net user -soundhw ac97 -m 512 -monitor stdio -cdrom
 							<p>Aveți acum o VM gata de utilizare:</p>
 
 <pre>
-$ kvm -net nic,model=virtio -net user -soundhw ac97 -m 512 -monitor stdio -drive if=virtio,boot=on,file=&lt;path/to/aptosid-VM.img&gt;
+$ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic,model=virtio -net user -soundhw all -m 1024 -monitor stdio -drive if=virtio,boot=on,file=&lt;path/to/aptosid-VM.img&gt; 
 </pre>
 
 							<p>Unele sisteme nu suportă virtio, trebuinb deci să folosiți alte opțiuni la lansarea KVM, de exemplu:</p>
 <pre>
-$ kvm -net nic, -net user -soundhw ac97 -m 512 -monitor stdio -hda &lt;/path/to/your_guest.img&gt; -cdrom your_other.iso -boot d
+$ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic, -net user -soundhw all -m 1024 -monitor stdio -hda &lt;/path/to/your_guest.img &gt; -cdrom your_other.iso -boot d 
 </pre>
 
 							 <p>sau</p>
 <pre>
-$ kvm -net nic, -net user -soundhw ac97 -m 512 -monitor stdio -hda &lt;/path/to/your_guest.img&gt;
+$ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic, -net user -soundhw all -m 1024 -monitor stdio -hda &lt;/path/to/your_guest.img&gt; 
 </pre>
 							<p>Vedeți de asemenea și <a href="http://www.linux-kvm.org/page/Main_Page"> documentația KVM </a>.</p>
 
@@ -595,7 +601,7 @@ apt-get install qtemu
 
 
 	</div>
-	<div id="rev">Page last revised 18/09/2011 1010 UTC</div>
+	<div id="rev">Page last revised 26/08/2013 0850 UTC</div>
 
 </div>
 </body>

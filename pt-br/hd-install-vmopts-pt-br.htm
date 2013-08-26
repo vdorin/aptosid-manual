@@ -382,12 +382,15 @@ modprobe kvm-amd
 </pre>
 							 <p>Quando reiniciar o sistema os scripts de inicialização do qemu-kvm tomarão conta de carregar os módulos necessários.</p>
 
-					  <h4>Utilizar KVM para lançar um iso do aptosid</h4>
+					  <h4>Utilizar KVM para lançar um iso do aptosid</h4> 
 
-							<p><span class="highlight-2">Como utilizador normal:</span></p>
+							<p><span class="highlight-2">For 64 bit as user:</span></p>
 <pre>
-$ kvm -net nic,model=virtio -net user -soundhw ac97 -m 512 -monitor stdio -cdrom &lt;aptosid.iso&gt;
+$ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic,model=virtio -net user -soundhw all -m 1024 -monitor stdio -cdrom &lt;aptosid.iso&gt;
 </pre>
+
+							<p><span class="highlight-2">For 32 bit replace </span> qemu-system-x86_64 <span class="highlight-2">with</span> qemu-system-i386.</p>
+
 
 				<h5>Como instalar o aptosid numa imagem de KVM</h5>
 							<p>Primeiro é necessário criar uma imagem de disco, (o espaço ocupado por esta imagem é inicialmente minimo e aumentará únicamente quando necessário):</p>
@@ -396,9 +399,13 @@ $ qemu-img create -f qcow2 aptosid-VM.img 12G
 </pre>
 
 							<p>Utilize os parâmetros seguintes para lançar o iso e para tornar o disco acessível à VM.:</p>
+
 <pre>
-$ kvm -net nic,model=virtio -net user -soundhw ac97 -m 512 -monitor stdio -cdrom &lt;/path/to/aptosid.iso&gt; -boot d &lt;/path/to/aptosid-VM.img&gt;
+$ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic,model=virtio -net user -soundhw all -m 1024 -monitor stdio -cdrom &lt;/path/to/aptosid-*.iso&gt; -boot d &lt;/path/to/aptosid-VM.img&gt;
 </pre>
+
+							<p><span class="highlight-2">For 32 bit replace </span> qemu-system-x86_64 <span class="highlight-2">with</span> qemu-system-i386.</p>
+
 							<p>Depois da inicialização do sistema estar completada clique no icon do programa de instalação do aptosid para o lançar ( ou utilize o menu), vá ao Particionamento e á sua esquerda terá uma caixa que deve ter um disco pronto para o particionamento e formatar, muito provávelmente <span class="highlight-3"> /dev/sda</span>. Escolha gparted ou partitionmanager. Tome atenção que o partionmanager tem um layout um pouco diferente do gparted, que vamos utilzar neste exemplo.</p>
 
 	<div class="screenshot"><img src="../lib/images-common/images-vm/kvm-gparted02.png" title="gparted kvm particionando o disco" alt="gparted kvm particionando o disco" /></div>
@@ -407,16 +414,16 @@ $ kvm -net nic,model=virtio -net user -soundhw ac97 -m 512 -monitor stdio -cdrom
 							<p>A sua VM está pronta a ser utilizada:</p>
 
 <pre>
-$ kvm -net nic,model=virtio -net user -soundhw ac97 -m 512 -monitor stdio -drive if=virtio,boot=on,file=&lt;path/to/aptosid-VM.img&gt;
+$ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic,model=virtio -net user -soundhw all -m 1024 -monitor stdio -drive if=virtio,boot=on,file=&lt;path/to/aptosid-VM.img&gt; 
 </pre>
 
 							<p>Nota: alguns guest sistemas não têm suporte de virtio (não é o caso do aptosid) então o comando do kvm vai necessitar de outros parâmetros:</p>
 <pre>
-$ kvm -net nic, -net user -soundhw ac97 -m 512 -monitor stdio -hda &lt;your_guest.img&gt; -cdrom your_other.iso -boot d
+$ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic, -net user -soundhw all -m 1024 -monitor stdio -hda &lt;/path/to/your_guest.img &gt; -cdrom your_other.iso -boot d 
 </pre>
 							<p>ou</p>
 <pre>
-$ kvm -net nic, -net user -soundhw ac97 -m 512 -monitor stdio -hda &lt;/path/to/your_guest.img&gt;
+$ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic, -net user -soundhw all -m 1024 -monitor stdio -hda &lt;/path/to/your_guest.img&gt; 
 </pre>
 							<p>Leitura altamente recomendada: <a href="http://www.linux-kvm.org/page/Main_Page"> Documentação do KVM</a>.</p>
 
@@ -588,7 +595,7 @@ qemu -cdrom /tmp/pkg/aptosid-debug.iso -net nic -net user -m 512
 
 
 	</div>
-	<div id="rev">Page last revised 18/09/2011 1010 UTC</div>
+	<div id="rev">Page last revised 26/08/2013 0850 UTC</div>
 
 </div>
 </body>

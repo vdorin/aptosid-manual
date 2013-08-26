@@ -385,10 +385,13 @@ modprobe kvm-amd
 
 					  <h4>Использование KVM для загрузки aptosid-ISO-образа</h4> 
 
-							<p><span class="highlight-2">Как пользователь:</span></p>
+							<p><span class="highlight-2">For 64 bit as user:</span></p>
 <pre>
-$ kvm -net nic,model=virtio -net user -soundhw ac97 -m 512 -monitor stdio -cdrom &lt;aptosid.iso&gt;
+$ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic,model=virtio -net user -soundhw all -m 1024 -monitor stdio -cdrom &lt;aptosid.iso&gt;
 </pre>
+
+							<p><span class="highlight-2">For 32 bit replace </span> qemu-system-x86_64 <span class="highlight-2">with</span> qemu-system-i386.</p>
+
 
 				<h5>Установка aptosid в KVM</h5>
 							<p>Сначала создайте образ жесткого диска (при этом изображение будет минимальным и только возрастать по мере необходимости в связи с qcow2 степени сжатия):</p>
@@ -400,8 +403,10 @@ $ qemu-img create -f qcow2 aptosid-VM.img 12G
 							Загрузите aptosid-образ со следующими параметрами, чтобы KVM дать возможность регистрации изображений QEMU KVM-диск:</p>
 
 <pre>
-$ kvm -net nic,model=virtio -net user -soundhw ac97 -m 512 -monitor stdio -cdrom &lt;/path/to/aptosid-*.iso&gt; -boot d &lt;/path/to/aptosid-VM.img&gt;
+$ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic,model=virtio -net user -soundhw all -m 1024 -monitor stdio -cdrom &lt;/path/to/aptosid-*.iso&gt; -boot d &lt;/path/to/aptosid-VM.img&gt;
 </pre>
+
+							<p><span class="highlight-2">For 32 bit replace </span> qemu-system-x86_64 <span class="highlight-2">with</span> qemu-system-i386.</p>
 
 							<p>После того, так ISO-образ загрузился, нажмите aptosid-ярлык установку на рабочем столе, чтобы запустить программу установки (или Вы можете использовать меню). Там нажмите на вкладку "разбивка" и приложения разбивки открывается.  Инструкцию можно найти в главе <a href="part-gparted-en.htm">Разбивка жесткого диска - по-старому, GPT или LVM</a>.  (Не забудьте добавить swap-раздел, если Вам не хватает память. форматирование займет некоторое время).</p>
 
@@ -411,17 +416,17 @@ $ kvm -net nic,model=virtio -net user -soundhw ac97 -m 512 -monitor stdio -cdrom
 							<p>Теперь у Вас есть VM, готова к работе:</p>
 
 <pre>
-$ kvm -net nic,model=virtio -net user -soundhw ac97 -m 512 -monitor stdio -drive if=virtio,boot=on,file=&lt;path/to/aptosid-VM.img&gt;
+$ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic,model=virtio -net user -soundhw all -m 1024 -monitor stdio -drive if=virtio,boot=on,file=&lt;path/to/aptosid-VM.img&gt; 
 </pre>
 
 							<p>Некоторые гостевые ОС не поддерживают Virtio, поэтому необходимо использовать другие опции при запуске KVM, например:</p>
 <pre>
-$ kvm -net nic, -net user -soundhw ac97 -m 512 -monitor stdio -hda &lt;/path/to/your_guest.img&gt; -cdrom your_other.iso -boot d
+$ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic, -net user -soundhw all -m 1024 -monitor stdio -hda &lt;/path/to/your_guest.img &gt; -cdrom your_other.iso -boot d 
 </pre>
 
 							 <p>или</p>
 <pre>
-$ kvm -net nic, -net user -soundhw ac97 -m 512 -monitor stdio -hda &lt;/path/to/your_guest.img&gt;
+$ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic, -net user -soundhw all -m 1024 -monitor stdio -hda &lt;/path/to/your_guest.img&gt; 
 </pre>
 							<p>Прочитайте также: <a href="http://www.linux-kvm.org/page/Main_Page">Документация про KVM</a>.</p>
 
@@ -588,7 +593,7 @@ qemu -cdrom /tmp/pkg/aptosid-debug.iso -net nic -net user -m 512
 
 
 </div>
-<div id="rev">Содержание, последний раз пересмотрено 18/09/2011 1010 UTC</div>
+<div id="rev">Содержание, последний раз пересмотрено 26/08/2013 0850 UTC</div>
 
 </div>
 </body>

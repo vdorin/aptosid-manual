@@ -384,12 +384,15 @@ modprobe kvm-amd
 </pre>
 							 <p>Po uruchomieniu systemu skrypty startowe qemu-kvm zajmą się ładowaniem modułów.</p>
 
-					  <h4>Użycie KVM do uruchomienia aptosid-*.iso</h4> 
+					  <h4>Użycie KVM do uruchomienia aptosid-*.iso</h4>  
 
-							<p><span class="highlight-2">Jako user (użytkownik):</span></p>
+							<p><span class="highlight-2">For 64 bit as user:</span></p>
 <pre>
-$ kvm -net nic,model=virtio -net user -soundhw ac97 -m 512 -monitor stdio -cdrom &lt;aptosid.iso&gt;
+$ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic,model=virtio -net user -soundhw all -m 1024 -monitor stdio -cdrom &lt;aptosid.iso&gt;
 </pre>
+
+							<p><span class="highlight-2">For 32 bit replace </span> qemu-system-x86_64 <span class="highlight-2">with</span> qemu-system-i386.</p>
+
 
 				<h5>Instalacja  aptosida jako obrazu KVM</h5>
 							<p>Najpierw trzeba stworzyć obraz dysku, (ten obraz będzie bardzo mały i będzie rósł tylko w miarę potrzeb według stopnia kompresji qcow2):</p>
@@ -401,9 +404,10 @@ $ qemu-img create -f qcow2 aptosid-VM.img 12G
 							<p>Uruchom aptosid-*.iso z następującymi parametrami, aby umożliwić KVM rozpoznanie, że jest dostępny obraz dysku twardego QEMU:</p>
 
 <pre>
-
-$ kvm -net nic,model=virtio -net user -soundhw ac97 -m 512 -monitor stdio -cdrom &lt;/path/to/aptosid-*.iso&gt; -boot d &lt;/path/to/aptosid-VM.img&gt;
+$ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic,model=virtio -net user -soundhw all -m 1024 -monitor stdio -cdrom &lt;/path/to/aptosid-*.iso&gt; -boot d &lt;/path/to/aptosid-VM.img&gt;
 </pre>
+
+							<p><span class="highlight-2">For 32 bit replace </span> qemu-system-x86_64 <span class="highlight-2">with</span> qemu-system-i386.</p>
 
 							<p>Po starcie systemu z cdroma kliknij na ikonę instalatora aptosida aby aktywować skrypt instalacyjny, (lub użyj menu), kliknij na zakładkę Partycjonowanie, i uruchom preferowany menadżer partycjonowania. Możesz przy tym posłużyć się instrukcjami zawartymi w <a href="part-gparted-pl.htm">Partycjonowanie dysku twardego - Tradycyjne, GPT i LVM</a>  (nie zapomnij dodać partycji wymiany /swap partition/ jeśli masz mało pamięci). Należy pamiętać, że formatowanie zajmie trochę czasu i uzbroić się w cierpliwość.</p>
 
@@ -413,17 +417,17 @@ $ kvm -net nic,model=virtio -net user -soundhw ac97 -m 512 -monitor stdio -cdrom
 							<p>Masz teraz Maszynę Wirtualną (VM) gotową do użycia:</p>
 
 <pre>
-$ kvm -net nic,model=virtio -net user -soundhw ac97 -m 512 -monitor stdio -drive if=virtio,boot=on,file=&lt;path/to/aptosid-VM.img&gt;
+$ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic,model=virtio -net user -soundhw all -m 1024 -monitor stdio -drive if=virtio,boot=on,file=&lt;path/to/aptosid-VM.img&gt; 
 </pre>
 
 							<p>Niektóre systemy goszczące nie obsługują wirtualizacji, trzeba więc skorzystać z innych opcji podczas uruchamiania KVM, na przykład:</p>
 <pre>
-$ kvm -net nic, -net user -soundhw ac97 -m 512 -monitor stdio -hda &lt;/path/to/your_guest.img&gt; -cdrom your_other.iso -boot d
+$ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic, -net user -soundhw all -m 1024 -monitor stdio -hda &lt;/path/to/your_guest.img &gt; -cdrom your_other.iso -boot d 
 </pre>
 
 							 <p>lub</p>
 <pre>
-$ kvm -net nic, -net user -soundhw ac97 -m 512 -monitor stdio -hda &lt;/path/to/your_guest.img&gt;
+$ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic, -net user -soundhw all -m 1024 -monitor stdio -hda &lt;/path/to/your_guest.img&gt; 
 </pre>
 							<p>Zobacz także: <a href="http://www.linux-kvm.org/page/Main_Page"> KVM documentation</a>.</p>
 
@@ -595,7 +599,7 @@ qemu -cdrom /tmp/pkg/aptosid-debug.iso -net nic -net user -m 512
 
 
 	</div>
-	<div id="rev">Page last revised 18/09/2011 1010 UTC</div>
+	<div id="rev">Page last revised 26/08/2013 0850 UTC</div>
 
 </div>
 </body>
