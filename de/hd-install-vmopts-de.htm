@@ -17,7 +17,7 @@
         <![endif]-->
 </head>
 <body>
-<!-- Last translation revision by hubi Sun, 19 Feb 2012 11:52:20 +0000 -->
+<!-- Last translation revision by hubi Tue, 27 Aug 2013 21:45:34 +0000 -->
 <!--htdig_noindex--><div id="menu"> <!-- menu starts here de lang maintained by hubi -->
 <!--aptosid Operating System Manual menu-version-02.16.2013.08.13 -->
 <!-- menu last updated by bluewater 2013.08.13 1150 hrs UTC -->
@@ -391,7 +391,7 @@ modprobe kvm-amd
 $ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic,model=virtio -net user -soundhw all -m 1024 -monitor stdio -cdrom &lt;aptosid.iso&gt;
 </pre>
 
-							<p><span class="highlight-2">For 32 bit replace </span> qemu-system-x86_64 <span class="highlight-2">with</span> qemu-system-i386.</p>
+							<p><span class="highlight-2">Für 32 bit ersetze </span> qemu-system-x86_64 <span class="highlight-2">mit</span> qemu-system-i386.</p>
 
 
 				<h5>Installieren einer aptosid-*.iso auf ein KVM-Image</h5>
@@ -406,7 +406,7 @@ $ qemu-img create -f qcow2 aptosid-2010-*-.img 12G
 $ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic,model=virtio -net user -soundhw all -m 1024 -monitor stdio -cdrom &lt;/path/to/aptosid-*.iso&gt; -boot d &lt;/path/to/aptosid-VM.img&gt;
 </pre>
 
-							<p><span class="highlight-2">For 32 bit replace </span> qemu-system-x86_64 <span class="highlight-2">with</span> qemu-system-i386.</p>
+							<p><span class="highlight-2">Für 32 bit ersetze </span> qemu-system-x86_64 <span class="highlight-2">mit</span> qemu-system-i386.</p>
 
 							<p>Wenn die CR-ROM hochgefahren ist, klickt man auf den aptosid-Installer, um das Installationsprogramm zu aktivieren (oder man verwendet das Menü), klickt auf den Reiter "Partitioning" und startet die bevorzugte Partitionierungsanwendung. Anleitungen finden sich im Kapitel <a href="part-gparted-de.htm">Partitionierung der Festplatte - traditionell, GPT und LVM</a>. Eine Swap-Partition wird benötigt, wenn nicht genug RAM zur Verfügung steht. Die Formatierung benötigt einige Zeit.</p>
 
