@@ -17,7 +17,7 @@
         <![endif]-->
 </head>
 <body>
-<!--Last translation revision by RoEn 07/05/2012 1350hrs UTC -->
+<!--Last translation revision by RoEn 09/01/2013 1350hrs UTC -->
 <!--htdig_noindex--><div id="menu"> <!-- menu starts here - ru language maintained by RoEn -->
 <!--aptosid Operating System Manual menu-version-02.16.2013.08.13 -->
 <!-- menu last updated by bluewater 2013.08.13 1150 hrs UTC -->
@@ -385,12 +385,12 @@ modprobe kvm-amd
 
 					  <h4>Использование KVM для загрузки aptosid-ISO-образа</h4> 
 
-							<p><span class="highlight-2">For 64 bit as user:</span></p>
+							<p><span class="highlight-2">Как пользователь 64битовой системы:</span></p>
 <pre>
 $ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic,model=virtio -net user -soundhw all -m 1024 -monitor stdio -cdrom &lt;aptosid.iso&gt;
 </pre>
 
-							<p><span class="highlight-2">For 32 bit replace </span> qemu-system-x86_64 <span class="highlight-2">with</span> qemu-system-i386.</p>
+							<p><span class="highlight-2">Как пользователь 32битовой системы заменя́ют </span> qemu-system-x86_64 <span class="highlight-2">на</span> qemu-system-i386.</p>
 
 
 				<h5>Установка aptosid в KVM</h5>
