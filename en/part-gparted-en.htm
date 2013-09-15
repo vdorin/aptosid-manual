@@ -478,7 +478,11 @@ umount /media/xdxx
 mount -t ntfs-3g /dev/disk/by-uuid/xxyyzz[etc] /media/xdxx
 To get out of the konsole type: exit
 </pre>
-
+							
+							<p>An example for /etc/fstab:</p>
+<pre>
+ UUID=486E97C46E97A8E8                         /media/disk3part1    ntfs         defaults  0    0
+</pre>
 							<p>Now your NTFS Volume should be mounted <b>rw</b> and you should be able to store data on it. But again, be warned! <span class="highlight-3">Use it in emergency situations, it is not recommended  for use on a daily basis.</span></p>
 
 		</div>
@@ -490,7 +494,7 @@ apt-get update &amp;&amp; apt-get install exfat-fuse
 </pre>
 
 		</div>
-		<div id="rev">Content last revised 22/04/2013 0900 UTC</div>
+		<div id="rev">Content last revised 15/09/2013 1645 UTC</div>
 
 </div>
 </body>
