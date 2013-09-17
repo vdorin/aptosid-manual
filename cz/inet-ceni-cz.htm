@@ -395,22 +395,32 @@ ceni
 	</div>
 	<div class="divider" id="firewalls">
 <!--			<h2>Firewalls</h2>
-							<p>Firewalls are usually not needed if behind a properly configured router, however they play a very important security role if you need to connect to the internet with a adsl usb modem or via dial-up modem:</p>-->
+							<p>Firewalls are usually not needed if behind a properly configured router, however they play a very important security role if you need to connect to the internet with a adsl usb modem or via dial-up modem.</p>-->
 			<h2>Firewally</h2>
-							<p>Firewally obvykle nejsou potřeba, jestli se nacházite za dobře nastaveným routereme, ale nepochybně hrají velmi důležitou bezpečnostní roli, pokud se potřebujete připojit na internet s pomocí adsl usb modemu nebo vytáčeného modemu:</p>
+							<p>Firewally obvykle nejsou potřeba, jestli se nacházite za dobře nastaveným routereme, ale nepochybně hrají velmi důležitou bezpečnostní roli, pokud se potřebujete připojit na internet s pomocí adsl usb modemu nebo vytáčeného modemu.</p>
+
+					<h4>ferm</h4>
+
+							<p>ferm is a terminal tool to maintain complex firewalls, without having the trouble to rewrite the complex rules over and over again. ferm allows the entire firewall rule set to be stored in a separate file, and to be loaded with one command. The firewall configuration resembles structured programming-like language, which can contain levels and lists.</p>
+
 <pre>
-apt-get install guarddog
-NEBO
-apt-get install firestarter
+apt-get install ferm
 </pre>
-<!--							<p> <a href="http://www.simonzone.com/software/guarddog/manual2/">Guarddog is user friendly firewall utility for KDE running on Linux. The best way to get started is to read the short tutorials starting with the first one</a></p>-->
-							<p> <a href="http://www.simonzone.com/software/guarddog/manual2/">Guarddog je uživatelsky přívětivý nástroj firewallu pro KDE běžícím pod Linuxem. Nejlepším způsobem, jak začít, je přečíst si krátké tutorialy počínaje prvním.</a></p>
-<!--							<p><a href="http://www.fs-security.com/">Firestarter - A graphical interfaced Open Source firewall for Linux.</a> [When you exit the graphical interface, the firewall  remains active in the background.]</p>-->
-							<p><a href="http://www.fs-security.com/">Firestarter - Svobodný firewall pro linux s grafickým prostředím.</a> [Když vystoupíte z grafického prostředí, tak bude firewall stále aktivní na pozadí.]</p>
+							<p> <a href="http://ferm.foo-projects.org/download/2.2/ferm.html#name/">ferm manual</a> :: Please note that ferm will not teach you how a firewall works nor how to write good rules.</p>
+
+					<h4>gufw</h4>
+							<p>There is a GUI solution in the form of gufw which based on the backend application of ufw.</p>
+<pre>
+apt-get install gufw
+</pre>
+							
+
+							<p><a href="http://packages.debian.org/sid/gufw/">The Debian description is :: gufw is an easy and intuitive way to manage your Linux firewall. </a> It supports common tasks such as allowing or blocking pre-configured ports, common p2p or individual ports. It also supports IPv6 and many other options.</p>
+
 
 
 	</div>
-			<div id="rev">Obsah naposledy revidován 02/11/2012 1055 UTC</div>
+			<div id="rev">Obsah naposledy revidován 14/09/2013 1630 UTC</div>
 </div>
 </body>
 </html>

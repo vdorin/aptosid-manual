@@ -391,19 +391,30 @@ ceni
 	</div>
 		<div class="divider" id="firewalls">
 			<h2>Firewalls</h2>
-							<p>Firewalls nisu potrebne ako ste iza routera koji je dobro konfiguriran, kakogod igraju vrlo važnu sigurnosnu ulogu ako se morate spajati s internetom sa adsl usb modem ili via dial-up modemom:</p>
+							<p>Firewalls nisu potrebne ako ste iza routera koji je dobro konfiguriran, kakogod igraju vrlo važnu sigurnosnu ulogu ako se morate spajati s internetom sa adsl usb modem ili via dial-up modemom.</p>
+
+					<h4>ferm</h4>
+
+							<p>ferm is a terminal tool to maintain complex firewalls, without having the trouble to rewrite the complex rules over and over again. ferm allows the entire firewall rule set to be stored in a separate file, and to be loaded with one command. The firewall configuration resembles structured programming-like language, which can contain levels and lists.</p>
 
 <pre>
-apt-get install guarddog
-ILI
-apt-get install firestarter
+apt-get install ferm
 </pre>
-						<p> <a href="http://www.simonzone.com/software/guarddog/manual2/">Guarddog je vrlo udobna firewall aplikacija za KDE pod Linux. Naj bolji put, da je upoznate je, da pročitate kratke uvodekoje pri startu</a></p>
+							<p> <a href="http://ferm.foo-projects.org/download/2.2/ferm.html#name/">ferm manual</a> :: Please note that ferm will not teach you how a firewall works nor how to write good rules.</p>
 
-						<p><a href="http://www.fs-security.com/">Firestarter - Grafička Open Source firewall za Linux.</a> [Kad ugasite grafički interface, firewall ostane aktivna.]</p>
+					<h4>gufw</h4>
+							<p>There is a GUI solution in the form of gufw which based on the backend application of ufw.</p>
+<pre>
+apt-get install gufw
+</pre>
+							
+
+							<p><a href="http://packages.debian.org/sid/gufw/">The Debian description is :: gufw is an easy and intuitive way to manage your Linux firewall. </a> It supports common tasks such as allowing or blocking pre-configured ports, common p2p or individual ports. It also supports IPv6 and many other options.</p>
+
+
 
 	</div>
-			<div id="rev"> Content last revised 02/11/2012 1055 UTC</div>
+			<div id="rev"> Content last revised 14/09/2013 1630 UTC</div>
 
 </div>
 </body>

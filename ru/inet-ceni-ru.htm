@@ -393,18 +393,27 @@ ceni
 	<div class="divider" id="firewalls">
 			<h2>Брандмауэры</h2>
 
-							<p>Брандмауэр обычно не требуется , если подключение происходит через правильно настроенный роутер, однако он играет очень важную роль в безопасности, если подключение к интернет будет осуществляться через adsl-модем или dial-up:</p>
+							<p>Брандмауэр обычно не требуется , если подключение происходит через правильно настроенный роутер, однако он играет очень важную роль в безопасности, если подключение к интернет будет осуществляться через adsl-модем или dial-up.</p>
 
-<pre>apt-get install guarddog
-или
-apt-get install firestarter
+					<h4>ferm</h4>
+
+							<p>ferm is a terminal tool to maintain complex firewalls, without having the trouble to rewrite the complex rules over and over again. ferm allows the entire firewall rule set to be stored in a separate file, and to be loaded with one command. The firewall configuration resembles structured programming-like language, which can contain levels and lists.</p>
+
+<pre>
+apt-get install ferm
 </pre>
-							<p> <a href="http://www.simonzone.com/software/guarddog/manual2/">Guarddog</a> - это дружественная пользователю утилита настройки брандмауэра для KDE. Лучшим способом ознакомиться станет прочтение короткого встроенного руководства.</p>
+							<p> <a href="http://ferm.foo-projects.org/download/2.2/ferm.html#name/">ferm manual</a> :: Please note that ferm will not teach you how a firewall works nor how to write good rules.</p>
 
-							<p><a href="http://www.fs-security.com/">Firestarter</a> - это графический интерфейс брандмауэра для Linux. После того, как Вы выйдите из программы, настроенный брандмауэр будет продолжать работать в фоне.</p>
+					<h4>gufw</h4>
+							<p>There is a GUI solution in the form of gufw which based on the backend application of ufw.</p>
+<pre>
+apt-get install gufw
+</pre>
+							
+							<p><a href="http://packages.debian.org/sid/gufw/">The Debian description is :: gufw is an easy and intuitive way to manage your Linux firewall. </a> It supports common tasks such as allowing or blocking pre-configured ports, common p2p or individual ports. It also supports IPv6 and many other options.</p>
 
 	</div>
-	<div id="rev">Содержание, последний раз пересмотрено пересмотрено 02/11/2012 1055 UTCC</div>
+	<div id="rev">Содержание, последний раз пересмотрено пересмотрено 14/09/2013 1630 UTC</div>
 </div>
 </body>
 </html>

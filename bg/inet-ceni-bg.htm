@@ -371,20 +371,30 @@ ceni
 	</div>
 	<div class="divider" id="firewalls">
 			<h2>Защитна стена (Firewall)</h2>
-							<p>Ако сте включени към интернет чрез правилно настроен рутер, защитната стена обикновено не е нужна. Но ако се включвате непосредствено през кабелен, ADSL, или dial-up модем  - защитната стена е съществена за безопасността - инсталирайте я чрез:</p>
-<pre>
-apt-get install guarddog
-ИЛИ
-apt-get install firestarter
-</pre>
-							<p> <a href="http://www.simonzone.com/software/guarddog/manual2/">Guarddog е KDE-базирано приложение за настройка на защитна стена (firewall) под Linux. Най-лесния начин за първоначална настройка, е да прочетете включените в него кратки примери</a></p>
+							<p>Ако сте включени към интернет чрез правилно настроен рутер, защитната стена обикновено не е нужна. Но ако се включвате непосредствено през кабелен, ADSL, или dial-up модем  - защитната стена е съществена за безопасността - инсталирайте я чрез.</p>
 
-							<p><a href="http://www.fs-security.com/">Firestarter е приложение с графичен интерфейс за настройка на защитна стена под Linux.</a> [Когато излезете от графичния интерфейс, защитната стена ще остане да работи във фонов режим.]</p>
+					<h4>ferm</h4>
+
+							<p>ferm is a terminal tool to maintain complex firewalls, without having the trouble to rewrite the complex rules over and over again. ferm allows the entire firewall rule set to be stored in a separate file, and to be loaded with one command. The firewall configuration resembles structured programming-like language, which can contain levels and lists.</p>
+
+<pre>
+apt-get install ferm
+</pre>
+							<p> <a href="http://ferm.foo-projects.org/download/2.2/ferm.html#name/">ferm manual</a> :: Please note that ferm will not teach you how a firewall works nor how to write good rules.</p>
+
+					<h4>gufw</h4>
+							<p>There is a GUI solution in the form of gufw which based on the backend application of ufw.</p>
+<pre>
+apt-get install gufw
+</pre>
+							
+
+							<p><a href="http://packages.debian.org/sid/gufw/">The Debian description is :: gufw is an easy and intuitive way to manage your Linux firewall. </a> It supports common tasks such as allowing or blocking pre-configured ports, common p2p or individual ports. It also supports IPv6 and many other options.</p>
 
 
 
 	</div>
-			<div id="rev">Content last revised 02/11/2012 1055 UTC</div>
+			<div id="rev">Content last revised 14/09/2013 1630 UTC</div>
 </div>
 </body>
 </html>
