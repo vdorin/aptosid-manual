@@ -475,7 +475,11 @@ umount /media/xdxx
 mount -t ntfs-3g /dev/disk/by-uuid/xxyyzz[etc] /media/xdxx
 Para sair do terminal, digite: exit
 </pre>
-
+							
+							<p>An example to add ntfs to <span class="highlight-3"> /etc/fstab</span> after installing <span class="highlight-3">ntfg-3g</span> for a permanent mount point is :</p>
+<pre>
+ UUID=486E97C46E97A8E8                         /media/disk3part1    ntfs         defaults  0    0
+</pre>
 							<p>Agora seu volume NTFS deve estar montado <b>rw</b> e você será capaz de armazenar dados nele. Repetimos, porém: <span class="highlight-3">use apenas em situações emergenciais, NUNCA no dia-a-dia!!!</span></p>
 
 		</div>
@@ -487,7 +491,7 @@ apt-get update &amp;&amp; apt-get install exfat-fuse
 </pre>
 
 		</div>
-		<div id="rev">Content last revised 22/04/2013 0900 UTC</div>
+		<div id="rev">Content last revised 17/09/2013 1110 UTC</div>
 
 </div>
 </body>

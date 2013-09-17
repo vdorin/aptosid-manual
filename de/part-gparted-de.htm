@@ -484,7 +484,11 @@ umount /media/xdxx
 mount -t ntfs-3g /dev/disk/by-uuid/xxyyzz[etc] /media/xdxx
 exit  ## mit diesem Befehl wird die Konsole verlassen
 </pre>
-
+							
+							<p>An example to add ntfs to <span class="highlight-3"> /etc/fstab</span> after installing <span class="highlight-3">ntfg-3g</span> for a permanent mount point is :</p>
+<pre>
+ UUID=486E97C46E97A8E8                         /media/disk3part1    ntfs         defaults  0    0
+</pre>
 							<p>Die NTFS Partition sollte jetzt <b>mit Schreibzugriff</b> eingehängt sein und man sollte Daten darauf speichern können.<br /><br />
 							Aber noch einmal unsere Warnung: <i>Dieses Vorgehen ist für Situationen gedacht, für die es keine anderen Lösungsmöglichkeiten gibt. Für die tägliche Routinenutzung es nicht empfohlen!</i></p>
 
@@ -497,7 +501,7 @@ apt-get update &amp;&amp; apt-get install exfat-fuse
 </pre>
 
 		</div>
-		<div id="rev">Content last revised 22/04/2013 0900 UTC</div>
+		<div id="rev">Content last revised 17/09/2013 1110 UTC</div>
 
 </div>
 </body>

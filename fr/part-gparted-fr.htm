@@ -501,7 +501,11 @@ umount /media/xdxx
 mount -t ntfs-3g /dev/disk/by-uuid/xxyyzz[etc] /media/xdxx
 Pour sortir de la console entrez : exit
 </pre>
-
+							
+							<p>An example to add ntfs to <span class="highlight-3"> /etc/fstab</span> after installing <span class="highlight-3">ntfg-3g</span> for a permanent mount point is :</p>
+<pre>
+ UUID=486E97C46E97A8E8                         /media/disk3part1    ntfs         defaults  0    0
+</pre>
 							<p>Dès lors votre volume NTFS peut être monté <b>rw</b> en lecture et écriture (read and write) et vous devriez être en mesure d'y écrire des données. Mais encore une fois, soyez prudent ! <span class="highlight-3">Usez-en dans les situations d'exception ; cette méthode n'est pas recommandée pour un usage permanent quotidien. Pour échanger au quotidien préférez la fat32.</span></p>
 
 		</div>
@@ -513,7 +517,7 @@ apt-get update &amp;&amp; apt-get install exfat-fuse
 </pre>
 
 		</div>
-		<div id="rev">Content last revised 22/04/2013 0900 UTC</div>
+		<div id="rev">Content last revised 17/09/2013 1110 UTC</div>
 
 </div>
 </body>

@@ -476,8 +476,12 @@ mount -t ntfs-3g /dev/disk/by-uuid/xxyyzz[etc] /media/xdxx
 Pentru a ieși din poziția de <i>root</i> tastați:
 exit
 </pre>
-
-						<p>Acum partiţia NTFS ar trebui să fie mount-ată <b>rw</b> şi să puteţi scrie date pe ea. Dar, încă o dată, aveţi grijă!<br /> <span class="highlight-3">Utilizaţi doar în situaţii de urgentă, nu este recomandat pentru utilizarea zilnică.</span></p>
+							
+							<p>An example to add ntfs to <span class="highlight-3"> /etc/fstab</span> after installing <span class="highlight-3">ntfg-3g</span> for a permanent mount point is :</p>
+<pre>
+ UUID=486E97C46E97A8E8                         /media/disk3part1    ntfs         defaults  0    0
+</pre>
+							<p>Acum partiţia NTFS ar trebui să fie mount-ată <b>rw</b> şi să puteţi scrie date pe ea. Dar, încă o dată, aveţi grijă!<br /> <span class="highlight-3">Utilizaţi doar în situaţii de urgentă, nu este recomandat pentru utilizarea zilnică.</span></p>
 
 		</div>
 		<div class="divider" id="exfat">
@@ -488,7 +492,7 @@ apt-get update &amp;&amp; apt-get install exfat-fuse
 </pre>
 
 		</div>
-		<div id="rev">Content last revised 22/04/2013 0900 UTC</div>
+		<div id="rev">Content last revised 17/09/2013 1110 UTC</div>
 
 </div>
 </body>
