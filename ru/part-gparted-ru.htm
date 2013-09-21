@@ -338,12 +338,12 @@
 <div id="main-page">
 	<div class="divider" id="partition">
 		<h2 id="top-header">Разбивка жесткого диска с Gparted/KDE Partition Manager</h2>
-			<h5><span class="highlight-2">Обратите внимание: О наименовании накопителей информации (жёстких дисков, флэш карт и пр.), </span><a href="part-uuid-ru.htm">Прочитайте главу о UUID, обозначение разделов и fstab, так как aptosid при в своих установках по умолчанию использует наименование по UUID.</a></h5>
+			<h5><span class="highlight-2">Обратите внимание: О наименовании накопителей информации (жёстких дисков, флэш карт и пр.)</span><a href="part-uuid-ru.htm"> прочитайте главу о UUID, обозначении разделов и fstab, так как aptosid при в своих установках по умолчанию использует наименование по UUID.</a></h5>
 
 			<h5>Приложение разбивки может требовать пароль администратора (root), введите команду <span class="highlight-3">sux</span> затем пароль. На ISO-образе пароль не установлен. После введения команды <span class="highlight-3">sux</span> нажмите на "Еnter". Смотрите <a href="live-mode-ru.htm" >режим ISO-образа</a>.</h5>
 
 	<div class="spacer02"></div>
-							<p class="warning-box">Изменения размера разделов NTFS требують  <b>немедленной</b> перезагрузки после исполнения. При этом <b>никакие дальнейшие изменения</b> в разделах не могут проводиться до осуществления перезагрузки!  Прочитайте также <a href="part-gparted-ru.htm#ntfs">Изменение величины разделов NTFS с gparted</a></p>
+							<p class="warning-box">Изменения размера разделов NTFS требують <b>немедленной</b> перезагрузки после исполнения. При этом <b>никакие дальнейшие изменения</b> в разделах не могут проводиться до осуществления перезагрузки!  Прочитайте также <a href="part-gparted-ru.htm#ntfs">Изменение величины разделов NTFS с gparted</a></p>
 
 							<p class="highlight-2">Заранее создайте резервную копию Ваших данных!</p>
 
@@ -364,9 +364,9 @@ sudo partitionmanager
 <pre>
 sudo gparted
 </pre>
-							<h5  class="highlight-3">Gparted will you let create and see GPT disks..</h5>
+							<h5  class="highlight-3">С Gparted можете создавать и применять GPT диски.</h5>
 
-							<h4  class="highlight-3">If you need to partition a USB drive, (or SD and SDXC cards), whilst hard disk installed you will need to be root. Смотрите также <a href="term-konsole-ru.htm#sux"> sux/sux2</a>. В противном случае можно использовать программы командной строки <a href=" part-cfdisk-ru.htm"> cfdisk</a> или <a href=" part-gdisk-ru.htm"> gdisk</a>.</h4>
+							<h4  class="highlight-3">Если Вам нужно разбить диск USB, (или SD и SDXC карт), в то время как жесткий диск установлен, Вы должны быть администратором. Смотрите также <a href="term-konsole-ru.htm#sux"> sux/sux2</a>. В противном случае можно использовать программы командной строки <a href=" part-cfdisk-ru.htm"> cfdisk</a> или <a href=" part-gdisk-ru.htm"> gdisk</a>.</h4>
 
 							&nbsp;
 		<ul>
@@ -481,18 +481,17 @@ umount /media/xdxx
 mount -t ntfs-3g /dev/disk/by-uuid/xxyyzz[etc] /media/xdxx
 exit #команда для выхода из консоли
 </pre>
-							
-							<p>An example to add ntfs to <span class="highlight-3"> /etc/fstab</span> after installing <span class="highlight-3">ntfg-3g</span> for a permanent mount point is :</p>
+						<p>Пример, чтобы добавить ntfs в <span class="highlight-3"> /etc/fstab</span> после установки <span class="highlight-3">ntfg-3g</span> для постоянной точки монтирования:</p>
 <pre>
- UUID=486E97C46E97A8E8                         /media/disk3part1    ntfs         defaults  0    0
+ UUID=486E97C46E97A8E8                 /media/disk3part1    ntfs         defaults  0    0
 </pre>
-							<p>Теперь присоединяем NTFS раздел<b> с правом на запись</b>. Сейчас раздел NTFS доступен для сохранения данных.</p>
-							<p>И еще раз наше предупреждение: <i>Этот метод действия упомянут исключительно для ситуаций, в которых нет никаких других альтернативных решений. Для ежедневного использования этот метод действий не рекомендуется!</i></p>
+						<p>Теперь присоединяем NTFS раздел<b> с правом на запись</b>. Сейчас раздел NTFS доступен для сохранения данных.</p>
+						<p>И еще раз наше предупреждение: <i>Этот метод действия упомянут исключительно для ситуаций, в которых нет никаких других альтернативных решений. Для ежедневного использования этот метод действий не рекомендуется!</i></p>
 
 		</div>
 		<div class="divider" id="exfat">
 			    <h2>exfat</h2>
-							 <p>exfat является собственный формат файлов, защищенный патентами Microsoft &#8482; и встречается на картах типа SDXC. Для монтироустановки, чтения и записи в файловую систему, просто установите пакет exfat-fuse:</p>
+						 <p>exfat является собственный формат файлов, защищенный патентами Microsoft &#8482; и встречается на картах типа SDXC. Для монтироустановки, чтения и записи в файловую систему, просто установите пакет exfat-fuse:</p>
 <pre>
 apt-get update &amp;&amp; apt-get install exfat-fuse
 </pre>
