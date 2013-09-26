@@ -1,4 +1,15 @@
 CHANGELOG FOR aptosid-OS-MANUAL-2013
+__________________________________________
+
+*VERSION:::aptosid-manual-02.16.2013.09.24
+Tues Aug 13, 2013 1120 UTC
+*/lib/version			timestamp change
+*inet-ceni-xx			deleted ref to guarddog and firestarter, replaced with ferm and gufw
+*part-gparted-xx		added example for ntfs-3g for fstab
+*hd-install-opts-xx		updating kvm codeboxes and small text alts
+*translation updates and validation fixes for /files
+
+-- Trevor Walkley <trevor_walkley@aptenodytes.org> Tues Sept 24, 2013 1300 UTC
 
 __________________________________________
 
