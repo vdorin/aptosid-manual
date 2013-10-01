@@ -386,12 +386,12 @@ modprobe kvm-amd
 
 					  <h4>Utilizare KVM pentru a boot-a un aptosid-*.iso</h4> 
 
-							<p><span class="highlight-2">For 64 bit as user:</span></p>
+							<p><span class="highlight-2">Pentru 64 bit ca utilizator:</span></p>
 <pre>
 $ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic,model=virtio -net user -soundhw all -m 1024 -monitor stdio -cdrom &lt;aptosid.iso&gt;
 </pre>
 
-							<p><span class="highlight-2">For 32 bit replace </span> qemu-system-x86_64 <span class="highlight-2">with</span> qemu-system-i386.</p>
+							<p><span class="highlight-2">Pentru 32 bit înlocuiți </span> qemu-system-x86_64 <span class="highlight-2">cu</span> qemu-system-i386.</p>
 
 
 				<h5>Instalarea unui aptosid-*.iso într-o imagine KVM</h5>
@@ -406,7 +406,7 @@ $ qemu-img create -f qcow2 aptosid-2010-*-.img 12G
 $ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic,model=virtio -net user -soundhw all -m 1024 -monitor stdio -cdrom &lt;/path/to/aptosid-*.iso&gt; -boot d &lt;/path/to/aptosid-VM.img&gt;
 </pre>
 
-							<p><span class="highlight-2">For 32 bit replace </span> qemu-system-x86_64 <span class="highlight-2">with</span> qemu-system-i386.</p>
+							<p><span class="highlight-2">Pentru 32 bit înlocuiți </span> qemu-system-x86_64 <span class="highlight-2">cu</span> qemu-system-i386.</p>
 
 							<p>După ce ați boot-at de pe CD/DVD dați click pe icon-ul aptosid installer pentru a porni installer-ul, (sau folosiți menniul), apoi click pe tab-ul Partitioning și lansați aplicația de partiționare preferată. Pentru partționare puteți urma instrucțiunile de la <a href="part-gparted-ro.htm">Partiționarea Hard Disk-ului - Tradițional, GPT și LVM</a> (nu uitați să adăugați o partiție swap dacă dispuneți de memorie mică). Țineți cont că procesul durează deci aveți răbdare.</p>
 
