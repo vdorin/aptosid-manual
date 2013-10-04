@@ -388,7 +388,7 @@ modprobe kvm-amd
 
 							<p><span class="highlight-2">Pentru 64 bit ca utilizator:</span></p>
 <pre>
-$ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic,model=virtio -net user -soundhw all -m 1024 -monitor stdio -cdrom &lt;aptosid.iso&gt;
+$ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic,model=virtio -net user -soundhw hda -m 1024 -monitor stdio -cdrom &lt;aptosid.iso&gt;
 </pre>
 
 							<p><span class="highlight-2">Pentru 32 bit înlocuiți </span> qemu-system-x86_64 <span class="highlight-2">cu</span> qemu-system-i386.</p>
@@ -403,7 +403,7 @@ $ qemu-img create -f qcow2 aptosid-2010-*-.img 12G
 							<p>Boot-ați imaginea aptosid-*.iso cu următorii parametrii pentru a permite lui KVM să recunoască că aceasta este o imagine QEMU de hard disk disponibilă:</p>
 
 <pre>
-$ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic,model=virtio -net user -soundhw all -m 1024 -monitor stdio -cdrom &lt;/path/to/aptosid-*.iso&gt; -boot d &lt;/path/to/aptosid-VM.img&gt;
+$ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic,model=virtio -net user -soundhw hda -m 1024 -monitor stdio -cdrom &lt;/path/to/aptosid-*.iso&gt; -boot d &lt;/path/to/aptosid-VM.img&gt;
 </pre>
 
 							<p><span class="highlight-2">Pentru 32 bit înlocuiți </span> qemu-system-x86_64 <span class="highlight-2">cu</span> qemu-system-i386.</p>
@@ -416,17 +416,17 @@ $ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic,model=v
 							<p>Aveți acum o VM gata de utilizare:</p>
 
 <pre>
-$ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic,model=virtio -net user -soundhw all -m 1024 -monitor stdio -drive if=virtio,boot=on,file=&lt;path/to/aptosid-VM.img&gt; 
+$ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic,model=virtio -net user -soundhw hda -m 1024 -monitor stdio -drive if=virtio,boot=on,file=&lt;path/to/aptosid-VM.img&gt; 
 </pre>
 
 							<p>Unele sisteme nu suportă virtio, trebuinb deci să folosiți alte opțiuni la lansarea KVM, de exemplu:</p>
 <pre>
-$ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic, -net user -soundhw all -m 1024 -monitor stdio -hda &lt;/path/to/your_guest.img &gt; -cdrom your_other.iso -boot d 
+$ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic, -net user -soundhw hda -m 1024 -monitor stdio -hda &lt;/path/to/your_guest.img &gt; -cdrom your_other.iso -boot d 
 </pre>
 
 							 <p>sau</p>
 <pre>
-$ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic, -net user -soundhw all -m 1024 -monitor stdio -hda &lt;/path/to/your_guest.img&gt; 
+$ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic, -net user -soundhw hda -m 1024 -monitor stdio -hda &lt;/path/to/your_guest.img&gt; 
 </pre>
 							<p>Vedeți de asemenea și <a href="http://www.linux-kvm.org/page/Main_Page"> documentația KVM </a>.</p>
 
@@ -601,7 +601,7 @@ apt-get install qtemu
 
 
 	</div>
-	<div id="rev">Page last revised 26/08/2013 0850 UTC</div>
+	<div id="rev">Page last revised 04/10/2013 1320 UTC</div>
 
 </div>
 </body>

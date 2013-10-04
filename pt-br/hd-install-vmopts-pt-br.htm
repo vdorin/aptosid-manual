@@ -386,7 +386,7 @@ modprobe kvm-amd
 
 							<p><span class="highlight-2">For 64 bit as user:</span></p>
 <pre>
-$ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic,model=virtio -net user -soundhw all -m 1024 -monitor stdio -cdrom &lt;aptosid.iso&gt;
+$ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic,model=virtio -net user -soundhw hda -m 1024 -monitor stdio -cdrom &lt;aptosid.iso&gt;
 </pre>
 
 							<p><span class="highlight-2">For 32 bit replace </span> qemu-system-x86_64 <span class="highlight-2">with</span> qemu-system-i386.</p>
@@ -401,7 +401,7 @@ $ qemu-img create -f qcow2 aptosid-VM.img 12G
 							<p>Utilize os parâmetros seguintes para lançar o iso e para tornar o disco acessível à VM.:</p>
 
 <pre>
-$ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic,model=virtio -net user -soundhw all -m 1024 -monitor stdio -cdrom &lt;/path/to/aptosid-*.iso&gt; -boot d &lt;/path/to/aptosid-VM.img&gt;
+$ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic,model=virtio -net user -soundhw hda -m 1024 -monitor stdio -cdrom &lt;/path/to/aptosid-*.iso&gt; -boot d &lt;/path/to/aptosid-VM.img&gt;
 </pre>
 
 							<p><span class="highlight-2">For 32 bit replace </span> qemu-system-x86_64 <span class="highlight-2">with</span> qemu-system-i386.</p>
@@ -414,16 +414,16 @@ $ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic,model=v
 							<p>A sua VM está pronta a ser utilizada:</p>
 
 <pre>
-$ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic,model=virtio -net user -soundhw all -m 1024 -monitor stdio -drive if=virtio,boot=on,file=&lt;path/to/aptosid-VM.img&gt; 
+$ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic,model=virtio -net user -soundhw hda -m 1024 -monitor stdio -drive if=virtio,boot=on,file=&lt;path/to/aptosid-VM.img&gt; 
 </pre>
 
 							<p>Nota: alguns guest sistemas não têm suporte de virtio (não é o caso do aptosid) então o comando do kvm vai necessitar de outros parâmetros:</p>
 <pre>
-$ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic, -net user -soundhw all -m 1024 -monitor stdio -hda &lt;/path/to/your_guest.img &gt; -cdrom your_other.iso -boot d 
+$ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic, -net user -soundhw hda -m 1024 -monitor stdio -hda &lt;/path/to/your_guest.img &gt; -cdrom your_other.iso -boot d 
 </pre>
 							<p>ou</p>
 <pre>
-$ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic, -net user -soundhw all -m 1024 -monitor stdio -hda &lt;/path/to/your_guest.img&gt; 
+$ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic, -net user -soundhw hda -m 1024 -monitor stdio -hda &lt;/path/to/your_guest.img&gt; 
 </pre>
 							<p>Leitura altamente recomendada: <a href="http://www.linux-kvm.org/page/Main_Page"> Documentação do KVM</a>.</p>
 
@@ -595,7 +595,7 @@ qemu -cdrom /tmp/pkg/aptosid-debug.iso -net nic -net user -m 512
 
 
 	</div>
-	<div id="rev">Page last revised 26/08/2013 0850 UTC</div>
+	<div id="rev">Page last revised 04/10/2013 1320 UTC</div>
 
 </div>
 </body>

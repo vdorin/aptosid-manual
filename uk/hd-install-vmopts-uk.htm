@@ -389,7 +389,7 @@ modprobe kvm-amd
 
 							<p><span class="highlight-2">For 64 bit as user:</span></p>
 <pre>
-$ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic,model=virtio -net user -soundhw all -m 1024 -monitor stdio -cdrom &lt;aptosid.iso&gt;
+$ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic,model=virtio -net user -soundhw hda -m 1024 -monitor stdio -cdrom &lt;aptosid.iso&gt;
 </pre>
 
 							<p><span class="highlight-2">For 32 bit replace </span> qemu-system-x86_64 <span class="highlight-2">with</span> qemu-system-i386.</p>
@@ -404,7 +404,7 @@ $ qemu-img create -f qcow2 aptosid-VM.img 12G
 							<p>Завантажте aptosid-*. ISO з наступними параметрами щоб ​​KVM визнав що QEMU образ жорсткого диска доступний:</p>
 
 <pre>
-$ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic,model=virtio -net user -soundhw all -m 1024 -monitor stdio -cdrom &lt;/path/to/aptosid-*.iso&gt; -boot d &lt;/path/to/aptosid-VM.img&gt;
+$ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic,model=virtio -net user -soundhw hda -m 1024 -monitor stdio -cdrom &lt;/path/to/aptosid-*.iso&gt; -boot d &lt;/path/to/aptosid-VM.img&gt;
 </pre>
 
 							<p><span class="highlight-2">For 32 bit replace </span> qemu-system-x86_64 <span class="highlight-2">with</span> qemu-system-i386.</p>
@@ -417,17 +417,17 @@ $ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic,model=v
 							<p>Тепер у вас є VM готовий до використання:</p>
 
 <pre>
-$ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic,model=virtio -net user -soundhw all -m 1024 -monitor stdio -drive if=virtio,boot=on,file=&lt;path/to/aptosid-VM.img&gt; 
+$ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic,model=virtio -net user -soundhw hda -m 1024 -monitor stdio -drive if=virtio,boot=on,file=&lt;path/to/aptosid-VM.img&gt; 
 </pre>
 
 							<p>Деякі гості не підтримують Virtio, тому необхідно використовувати інші опції при запуску KVM, наприклад,:</p>
 <pre>
-$ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic, -net user -soundhw all -m 1024 -monitor stdio -hda &lt;/path/to/your_guest.img &gt; -cdrom your_other.iso -boot d 
+$ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic, -net user -soundhw hda -m 1024 -monitor stdio -hda &lt;/path/to/your_guest.img &gt; -cdrom your_other.iso -boot d 
 </pre>
 
 							 <p>або</p>
 <pre>
-$ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic, -net user -soundhw all -m 1024 -monitor stdio -hda &lt;/path/to/your_guest.img&gt; 
+$ QEMU_AUDIO_DRV=alsa qemu-system-x86_64 -machine accel=kvm:tcg -net nic, -net user -soundhw hda -m 1024 -monitor stdio -hda &lt;/path/to/your_guest.img&gt; 
 </pre>
 							<p>Дивіться: <a href="http://www.linux-kvm.org/page/Main_Page"> KVM документація</a>.</p>
 
@@ -599,7 +599,7 @@ losetup -f /path/to/mbr
 
 
 	</div>
-	<div id="rev">Сторінка останий раз переглянута 26/08/2013 0850 UTC</div>
+	<div id="rev">Сторінка останий раз переглянута 04/10/2013 1320 UTC</div>
 
 </div>
 </body>
