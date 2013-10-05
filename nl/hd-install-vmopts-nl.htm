@@ -369,19 +369,11 @@ cat /proc/cpuinfo | egrep --color=always 'vmx|svm'
 							<p>Indien je BIOS geen KVM ondersteunt kijk dan naar <a href="hd-install-vmopts-nl.htm#vbox">Virtualbox</a>
 							 of <a href="hd-install-vmopts-nl.htm#qemu">QEMU</a></p>
 
-							<p>Om KVM te installeren en starten, moet je eerst zeker weten dat er geen Virtualbox modules geladen zijn, (--purge ze is de beste optie), en dan afhankelijk van je chipset voer je het volgende uit:</p>
-
-							<p>Voor <span class="highlight-3">vmx</span>:</p>
+							<p>Om KVM te installeren en starten, moet je eerst zeker weten dat er geen Virtualbox modules geladen zijn, (--purge ze is de beste optie), en dan voer je het volgende uit:</p>
 <pre>
-apt-get install qemu-kvm qemu-utils
-modprobe kvm-intel
+apt-get install qemu-system-x86 qemu-utils
 </pre>
-							<p>Voor <span class="highlight-3">svm</span>:</p>
-<pre>
-apt-get install qemu-kvm qemu-utils
-modprobe kvm-amd
-</pre>
-							 <p>Wanneer je jouw systeem start zullen de qemu-kvm initscripts zorgen voor het laden van de modules.</p>
+							 <p>Wanneer je jouw systeem start zullen de qemu-system-x86 initscripts zorgen voor het laden van de modules.</p>
 
 					  <h4>Gebruik KVM om op te starten van een aptosid-*.iso</h4> 
 

@@ -368,19 +368,11 @@ cat /proc/cpuinfo | egrep --color=always 'vmx|svm'
 							<p>Se o seu sistema não suporta a virtualização KVM o melhor será utilizar <a href="hd-install-vmopts-pt-br.htm#vbox">Virtualbox</a>
 							 ou <a href="hd-install-vmopts-pt-br.htm#qemu">QEMU</a></p>
 
-							<p>Para utilizar KVM, assegure-se que os módulos da "Virtualbox" não estão carregados, (o melhor é desinstalá-los com a opção "--purge" ). Depois instale o respetivo pacote tudo dependendo do chip que possui:</p>
-
-							<p>Para (Intel) <span class="highlight-3">vmx</span>:</p>
+							<p>Para utilizar KVM, assegure-se que os módulos da "Virtualbox" não estão carregados, (o melhor é desinstalá-los com a opção "--purge" ):</p>
 <pre>
-apt-get install qemu-kvm qemu-utils
-modprobe kvm-intel
+apt-get install qemu-system-x86 qemu-utils
 </pre>
-							<p>Para (AMD) <span class="highlight-3">svm</span>:</p>
-<pre>
-apt-get install qemu-kvm qemu-utils
-modprobe kvm-amd
-</pre>
-							 <p>Quando reiniciar o sistema os scripts de inicialização do qemu-kvm tomarão conta de carregar os módulos necessários.</p>
+							 <p>Quando reiniciar o sistema os scripts de inicialização do qemu-system-x86 tomarão conta de carregar os módulos necessários.</p>
 
 					  <h4>Utilizar KVM para lançar um iso do aptosid</h4> 
 

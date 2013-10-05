@@ -370,19 +370,11 @@ cat /proc/cpuinfo | egrep --color=always 'vmx|svm'
 							<p>Dacă BIOS-ul vostru nu suportă KVM atunci apelați la <a href="hd-install-vmopts-ro.htm#vbox">Virtualbox</a>
 							 sau <a href="hd-install-vmopts-ro.htm#qemu">QEMU</a></p>
 
-							<p>Pentru a instala și rula KVM, asigurați-vă mai întâi că modulele Virtualbox nu sunt încărcate, (opțiunea <i>--purge</i> ar fi cea mai bună pentru dezintalarea lor), apoi, funcție de chipset-ul vostru:</p>
-
-							<p>Pentru <span class="highlight-3">vmx</span>:</p>
+							<p>Pentru a instala și rula KVM, asigurați-vă mai întâi că modulele Virtualbox nu sunt încărcate, (opțiunea <i>--purge</i> ar fi cea mai bună pentru dezintalarea lor):</p>
 <pre>
-apt-get install qemu-kvm qemu-utils
-modprobe kvm-intel
+apt-get install qemu-system-x86 qemu-utils
 </pre>
-							<p>Pentru <span class="highlight-3">svm</span>:</p>
-<pre>
-apt-get install qemu-kvm qemu-utils
-modprobe kvm-amd
-</pre>
-							 <p>Când veți porni sistemul, script-urile qemu-kvm vor avea grijă să încarce modulele.</p>
+							 <p>Când veți porni sistemul, script-urile qemu-system-x86 vor avea grijă să încarce modulele.</p>
 
 					  <h4>Utilizare KVM pentru a boot-a un aptosid-*.iso</h4> 
 

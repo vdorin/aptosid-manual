@@ -369,17 +369,9 @@ cat /proc/cpuinfo | egrep --color=always 'vmx|svm'
 
 							<p>Если ваш BIOS не поддерживает KVM, прочитайте в разделах о <a href="hd-install-vmopts-ru.htm#vbox">Virtualbox</a> или <a href="hd-install-vmopts-ru.htm#qemu">QEMU</a>.</p>
 
-							<p>Для установки и запуска KVM необходимо обеспечить, что Virtualbox-модули не загружаются. Их полностью деинсталлировать (--purge) это лучший вариант. В  зависимости от вашего чип-сета введите:</p>
-
-							<p>Для <span class="highlight-3">vmx</span>:</p>
+							<p>Для установки и запуска KVM необходимо обеспечить, что Virtualbox-модули не загружаются. Их полностью деинсталлировать (--purge) это лучший вариант:</p>
 <pre>
-apt-get install qemu-kvm qemu-utils
-modprobe kvm-intel
-</pre>
-							<p>Для <span class="highlight-3">svm</span>:</p>
-<pre>
-apt-get install qemu-kvm qemu-utils
-modprobe kvm-amd
+apt-get install qemu-system-x86 qemu-utils
 </pre>
 							 <p>При запуске системы QEMU-KVM будет заботиться о загрузке модулей.</p>
 

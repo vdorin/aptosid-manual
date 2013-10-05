@@ -371,19 +371,12 @@ cat /proc/cpuinfo | egrep --color=always 'vmx|svm'
 							<p>Si après vérification il s'avère que votre BIOS ne supporte pas KVM, optez alors pour <a href="hd-install-vmopts-fr.htm#vbox">Virtualbox</a>
 							 ou <a href="hd-install-vmopts-fr.htm#qemu">QEMU</a></p>
 
-							<p>Pour installer et exploiter KVM, assurez-vous en tout premier lieu que des modules Virtualbox ne soient pas chargés (s'ils l'étaient l'option --purge à leur égard serait la mieux appropriée). Puis, en fonction de votre chipset, vous ferez:</p>
+							<p>Pour installer et exploiter KVM, assurez-vous en tout premier lieu que des modules Virtualbox ne soient pas chargés (s'ils l'étaient l'option --purge à leur égard serait la mieux appropriée):</p>
 
-							<p>Pour <span class="highlight-3">vmx</span>:</p>
 <pre>
-apt-get install qemu-kvm qemu-utils
-modprobe kvm-intel
+apt-get install qemu-system-x86 qemu-utils
 </pre>
-							<p>Pour <span class="highlight-3">svm</span>:</p>
-<pre>
-apt-get install qemu-kvm qemu-utils
-modprobe kvm-amd
-</pre>
-							 <p>On peut aussi redémarrer afin que les scripts d'initialisation de qemu-kvm procèdent au chargement des modules.</p>
+							 <p>On peut aussi redémarrer afin que les scripts d'initialisation de qemu-system-x86 procèdent au chargement des modules.</p>
 
 					  <h4>Utilisation de KVM au démarrage d'une .iso d'aptosid</h4> 
 

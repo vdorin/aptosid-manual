@@ -378,22 +378,13 @@ cat /proc/cpuinfo | egrep --color=always 'vmx|svm'
 							<p>Jeslti váš BIOS nepodporuje KVM, tak se odkažte na <a href="hd-install-vmopts-cz.htm#vbox">Virtualbox</a>
 							 nebo <a href="hd-install-vmopts-cz.htm#qemu">QEMU</a></p>
 
-<!--							<p>To install and run KVM, firstly ensure that Virtualbox modules are not loaded, (--purge them is the best option), then depending on your chipset:</p>-->
-							<p>Pro instalaci a spuštění KVM je napřed potřeba zkontrolovat, že nejsou načteny moduly pro Virtualbox (použít --purge je nejlepší nápad), pak v závislosti na vašem čipsetu:</p>
-
-<!--							<p>For <span class="highlight-3">vmx</span>:</p>-->
-							<p>Pro <span class="highlight-3">vmx</span>:</p>
+<!--							<p>To install and run KVM, firstly ensure that Virtualbox modules are not loaded, (--purge them is the best option):</p>-->
+							<p>Pro instalaci a spuštění KVM je napřed potřeba zkontrolovat, že nejsou načteny moduly pro Virtualbox (použít --purge je nejlepší nápad):</p>
 <pre>
-apt-get install qemu-kvm qemu-utils
-modprobe kvm-intel
+apt-get install qemu-system-x86 qemu-utils
 </pre>
-							<p>Pro <span class="highlight-3">svm</span>:</p>
-<pre>
-apt-get install qemu-kvm qemu-utils
-modprobe kvm-amd
-</pre>
-							<!--<p>AWhen you start your system the qemu-kvm initscripts will take care of loading the modules.</p> -->
-							<p>When you start your system the qemu-kvm initscripts will take care of loading the modules.</p>
+							<!--<p>When you start your system the qemu-system-x86 initscripts will take care of loading the modules.</p> -->
+							<p>When you start your system the qemu-system-x86 initscripts will take care of loading the modules.</p>
 
 					  <h4>Použití KVM pro spuštění aptosid-*.iso</h4> 
 
