@@ -1,9 +1,28 @@
 CHANGELOG FOR aptosid-OS-MANUAL-2013
+__________________________________________
+
+*VERSION:::aptosid-manual-02.16.2013.10.06
+Sun Oct 13, 2013 1045 UTC
+/menu				re-generate icon set from source
+*/lib/version			timestamp change
+*hd-install-vmopts-xx		simplify qemu-system-x86 installation, drop obsolete meta-package and make instructions generic for amd64 and i386
+*translation updates and validation fixes for /files
+
+-- Trevor Walkley <trevor_walkley@aptenodytes.org> Sun Oct 06, 2013 1045 UTC
+__________________________________________
+
+*VERSION:::aptosid-manual-02.16.2013.10.05
+Sat Oct 05, 2013 1245 UTC
+*/lib/version			timestamp change
+*hd-install-vmopts-xx		updated codeboxed
+*translation updates and validation fixes for /files
+
+-- Trevor Walkley <trevor_walkley@aptenodytes.org> Sat Oct 05, 2013 1245 UTC
 
 __________________________________________
 
 *VERSION:::aptosid-manual-02.16.2013.10.01
-Tues Aug 13, 2013 1120 UTC
+Tuues Oct 01, 2013 0800 UTC
 */lib/version			timestamp change
 *deleted the PITA .direcory files
 *translation updates and validation fixes for /files
@@ -12,7 +31,7 @@ Tues Aug 13, 2013 1120 UTC
 __________________________________________
 
 *VERSION:::aptosid-manual-02.16.2013.09.24
-Tues Aug 13, 2013 1120 UTC
+TTes Sept 24, 2013 1300 UTC
 */lib/version			timestamp change
 *inet-ceni-xx			deleted ref to guarddog and firestarter, replaced with ferm and gufw
 *part-gparted-xx		added example for ntfs-3g for fstab
