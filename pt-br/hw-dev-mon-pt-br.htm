@@ -358,12 +358,11 @@ xrandr --output VGA --mode 1440x900
 		<div class="divider" id="xrandr">
 					<h2>Dois monitores (Dual Monitors) e xrandr</h2>
 
-							<p> <span class="highlight-2">xorg.conf is deprecated, if you use free drivers.</span> If you have an xorg.conf stanza under <span class= "highlight-3">/etc/X11/xorg.conf.d</span>, because you use proprietary drivers for your graphics card, you should save it now before proceeding.</p>
+							<p> <span class="highlight-2">xorg.conf é oboleta, no caso de você usar drivers livres.</span> Se você tem um parágrafo da xorg.conf em <span class= "highlight-3">/etc/X11/xorg.conf.d</span>, porque você usa drivers proprietários para a sua placa gráfica, você deve fayer um backup do ficheiro agora, antes de prosseguir.</p>
 
-							<p>xorg.conf, if present at all, is now modular, for example, each module contains everything referring a "device"  for instance, the display or a mouse.</p>
+							<p>xorg.conf, é agora modular, cada módulo contém tudo o que se refere a um "dispositivo", por exemplo, o monitor ou um rato.</p>
 
-							<p>With xrandr you can configure your primary and secondary screen without restarting X, (hotplug).  O xrandr substitui tanto o xinerama quanto o mergedFB. Com o xrandr 1.2 habilitado, configurar o xorg.conf à maneira antiga (xinerama e mergedFB) pode não funcionar mais.</p>
-
+							<p> Com xrandr você pode configurar o monitor primário e secundário sem reiniciar o X, (hotplug). O xrandr substitui tanto o xinerama como o mergedFB. Com o xrandr 1.2 habilitado, configurar o xorg.conf à maneira antiga (xinerama e mergedFB) pode não funcionar. </p>
 				<h5>Placas suportadas</h5>
 						<ul>
 							<li> xserver-xorg-video-intel (desde 2.0)</li>

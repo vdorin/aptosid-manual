@@ -339,9 +339,10 @@
 	<div class="divider" id="netcardconfig">
 		<h2 id="top-header">Como Configurar a Rede - Conexão com a Internet - Ceni</h2>
 
-							<p>Ceni is not a service. It is a configuration application that exists when configured, therefore does not use system resources as such.</p>
+							<p>Ceni não é um serviço mas sim uma aplicação para configurar a rede. Como tal não desperdiça quaisquer recursos do seu sistema ( memória ou temp de processor).</p>
 
 							<p><span class="highlight-3">Many wifi cards are deemed as non-free in Debian and cannot be shipped on an aptosid-iso*. Provavelmente, você vai precisar de firmware não livre disponível em uma pendrive ou outro dispositivo USB para instalar no sistema operacional. Favor consultar <a href="nf-firm-pt-br.htm#non-free-firmware"> pacotes .deb de firmware não livre em uma pendrive</a>.</span></p>
+							<p><span class="highlight-3">Muitas placs Wi-Fi são considerados como não-livre no Debian, como tal o respetivo firmware não podem ser incluidas nas imagens do aptosid. Provavelmente, você vai precisar de firmware não livre disponível em uma pendrive ou outro dispositivo USB para instalar no sistema operacional. Favor consultar <a href="nf-firm-pt-br.htm#non-free-firmware"> pacotes .deb de firmware não livre em uma pendrive</a>.</span></p>
 
 							<p>Se você tiver um servidor DHCP ligado a seu computador, a configuração de sua rede deverá ser feita automaticamente. Se não for este o caso, você precisa rodar o programa <span class="highlight-3">Ceni</span>. Clique <span class="highlight-3">Kmenu>Internet>Ceni</span>. Com isso, será aberto um terminal. Digite sua senha root (se estiver usando o LiveCD, não há nenhuma):</p>
 
@@ -397,20 +398,22 @@ ceni
 					<h4>ferm</h4>
 
 							<p>ferm is a terminal tool to maintain complex firewalls, without having the trouble to rewrite the complex rules over and over again. ferm allows the entire firewall rule set to be stored in a separate file, and to be loaded with one command. The firewall configuration resembles structured programming-like language, which can contain levels and lists.</p>
+							<p>ferm é uma ferramenta ( a usar num terminal) para manter firewalls complexos. ferm permite que as regra do firewall sejam armayenadas num arquivo separado podendo ser ativadas com um só commando. A estrutura de um arquivo de firewall (configuração) é semelhante a um programa em C simplificado, podendo conter vários níveis e listas.
+</p>
 
 <pre>
 apt-get install ferm
 </pre>
-							<p> <a href="http://ferm.foo-projects.org/download/2.2/ferm.html#name/">ferm manual</a> :: Please note that ferm will not teach you how a firewall works nor how to write good rules.</p>
+							<p> <a href="http://ferm.foo-projects.org/download/2.2/ferm.html#name/">ferm manual</a> :: Por favor tenha em atenção que ferm não o vai ensinar a configurar um firewall nem faz uma avaliação das regras ativadas.</p>
 
 					<h4>gufw</h4>
-							<p>There is a GUI solution in the form of gufw which based on the backend application of ufw.</p>
+							<p>A GUI-aplicação gufw é baseada no "backend" ufw.</p>
 <pre>
 apt-get install gufw
 </pre>
 							
 
-							<p><a href="http://packages.debian.org/sid/gufw/">The Debian description is :: gufw is an easy and intuitive way to manage your Linux firewall. </a> It supports common tasks such as allowing or blocking pre-configured ports, common p2p or individual ports. It also supports IPv6 and many other options.</p>
+							<p><a href="http://packages.debian.org/sid/gufw/">Descrição no Debian :: gufw é uma maneira fácil e intuitiva de administrar um firewall. </a>  Ele suporta tarefas comuns, como bloquear ou desbloquear portas. Suporta IPv6 e tem muitas outras opções.</p>
 
 
 

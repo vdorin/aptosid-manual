@@ -354,18 +354,19 @@ apt-get install konq-plugins
 
 				<h6>KDE Deskop Search - (Nepomuk and Strigi) </h6>
 							<p>KDE's Nepomuk semantic desktop search is not enabled on an aptosid-kde.iso. To enable it, do the following:</p>
+							<p>A busca semântica Nepomuk na desktop KDE não está ativado no aptosid-kde.iso. Se pretende ativá-la, siga as seguintes instruções:</p>
 
-							<p>Install the virtuoso-minimal and strigi-client packages:</p>
+							<p>Instale os pacotes:  virtuoso-minimal e strigi-client:</p>
 
 <pre>
 apt-get install virtuoso-minimal strigi-client
 </pre>
 
-							<p>Navigate to System Settings &gt; System Administration &gt; Startup and Shutdown &gt;Service Manager, put a check mark in the box for <span class="highlight-3">Nepomuk Search Module</span>, and then click on <span class="highlight-3">Apply</span>.</p>
+							<p>Em System Settings &gt; System Administration &gt; Startup and Shutdown &gt;Service Manager, ative <span class="highlight-3">Nepomuk Search Module</span> depois clique em <span class="highlight-3">Apply</span>.</p>
 
-							<p>Navigate to System Settings > Workspace Appearance and Behavior &gt; Desktop Search &gt; Basic Settings, and put check marks in the boxes for <span class="highlight-3">Enable Nepomuk Semantic Desktop</span> and <span class="highlight-3">Enable Strigi Desktop File Indexer</span>, and then click the <span class="highlight-3">Apply</span>. Note that the amount of memory allocated to the Nepomuk database can be adjusted in the <span class="highlight-3">Advanced Settings</span> tab.</p>
+							<p>Em System Settings > Workspace Appearance and Behavior &gt; Desktop Search &gt; Basic Settings, ative <span class="highlight-3">Enable Nepomuk Semantic Desktop</span> and <span class="highlight-3">Enable Strigi Desktop File Indexer</span> marcando as respetivas "checkboxes", e clicando depois em <span class="highlight-3">Apply</span>. tenha em conta que pode ajustar a memória que vai ser reservada para o sistema de busca em <span class="highlight-3">Advanced Settings</span> tab.</p>
 
-							<p>The KDE session must be restarted for the indexing service to become effective.  Expect the first iteration of indexing to take a long time.  <a href="http://nepomuk.kde.org/"> More information about Nepomuk </a>. </p>
+							<p>Tem que reiniciar a sessão do KDE para que o serviço de indexação se torne efetivo. Dependendo do onúmero de ficheiros é de esperar que a indexação inicial demore sempre algum tempo.  <a href="http://nepomuk.kde.org/"> More information about Nepomuk </a>. </p>
 
 	</div>
 	<div class="divider" id="kde-login">
