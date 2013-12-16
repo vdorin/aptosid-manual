@@ -450,7 +450,7 @@ apt-get install --reinstall distro-defaults
 update-rc.d &lt;dm&gt; remove
 update-rc.d &lt;dm&gt; defaults
 </pre>
-							<p>Beispiele für <span class="highlight-3">update-rc.d &lt;dm&gt; defaults</span> (man beachte den Punkt <span class="highlight-2">.</span> am Ende einer start/stop-Sequenz):</p>
+							<p>Examples for <span class="highlight-3">update-rc.d &lt;dm&gt; defaults</span>:</p>
 
 <pre>
 update-rc.d kdm defaults
@@ -464,6 +464,10 @@ update-rc.d gdm defaults
 update-rc.d slim defaults
 </pre>
 
+							<p>Example to manually update a &lt;dm&gt; of your choice is: (Note the dot <span class="highlight-2"> .</span> ) :</p>
+<pre>
+update-rc.d &lt;dm&gt; start 01 5 . stop 01 0 1 2 3 4 6 .
+</pre>
 	</div>
 	<div class="divider" id="desk-freeze">
 		<h2>Desktop friert ein</h2>
@@ -490,7 +494,7 @@ update-rc.d slim defaults
 
 	</div>
 
-			<div id="rev">Page last revised 01/05/2011 1215 UTC </div>
+			<div id="rev">Page last revised 16/12/2013 1200 UTC  </div>
 
 </div>
 </body>

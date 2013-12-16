@@ -481,8 +481,7 @@ apt-get install --reinstall distro-defaults
 update-rc.d &lt;dm&gt; remove
 update-rc.d &lt;dm&gt; defaults
 </pre>
-							<!--p>Examples for <span class="highlight-3">update-rc.d &lt;dm&gt; defaults</span> and note the dot <span class="highlight-2">.</span> :</p-->
-							<p>Παραδείγματα για <span class="highlight-3">update-rc.d &lt;dm&gt; defaults</span> και προσέξτε την τελεία <span class="highlight-2">.</span> :</p>
+							<p>Examples for <span class="highlight-3">update-rc.d &lt;dm&gt; defaults</span>:</p>
 
 <pre>
 update-rc.d kdm defaults
@@ -494,6 +493,11 @@ update-rc.d gdm defaults
 
 <pre>
 update-rc.d slim defaults
+</pre>
+
+							<p>Example to manually update a &lt;dm&gt; of your choice is: (Note the dot <span class="highlight-2"> .</span> ) :</p>
+<pre>
+update-rc.d &lt;dm&gt; start 01 5 . stop 01 0 1 2 3 4 6 .
 </pre>
 	</div>
 	<div class="divider" id="desk-freeze">
@@ -519,7 +523,7 @@ update-rc.d slim defaults
 							<p>Another way to remember it is:<br />
 							<b> "<span class="highlight-2">R</span>aising <span class="highlight-2">S</span>kinny <span class="highlight-2">E</span>lephants <span class="highlight-2">I</span>s <span class="highlight-2">U</span>tterly <span class="highlight-2">B</span>oring" </b></p>
 </div>
-			<div id="rev">Τελευταία αναθεώρηση περιεχομένου 01/05/2011 1215 UTC </div>
+			<div id="rev">Τελευταία αναθεώρηση περιεχομένου 16/12/2013 1200 UTC  </div>
 
 </div>
 </body>
