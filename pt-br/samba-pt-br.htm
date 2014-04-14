@@ -423,7 +423,7 @@ public = yes
 </pre>
 							<p>Restart the samba server</p>
 <pre>
-/etc/init.d/samba restart
+service samba restart
 </pre>
 				<h4> Example 2:</h4>
 <pre>
@@ -465,7 +465,7 @@ smbpasswd -e &lt;the-user-you-want&gt;
 </pre>
 							<p>Restart the samba server</p>
 <pre>
-/etc/init.d/samba restart
+service samba restart
 </pre>
 				<h2>Confirmando o que está sendo compartilhado</h2>
 							<p>Para configurar os compartilhamentos sem atentar muito com segurança, digite os seguintes comandos (isto é, configuração LAN):</p>
@@ -515,9 +515,9 @@ Domain=[MSHOME] OS=[Unix] Server=[Samba 3.0.26a]
 							<p>Se você não colocou senha, basta pressionar ENTER.</p>
 
 							<p>Não se esqueça de salvar. Agora você pode iniciar/fechar o Samba com:</p>
-<pre>/etc/init.d/samba start</pre>
+<pre>service samba start</pre>
 							<p>e</p>
-<pre>/etc/init.d/samba stop</pre>
+<pre>service samba stop</pre>
 
 							<p>Você pode também iniciar/fechar o Samba automaticamente ao inicializar o aptosid. Basta executar:</p>
 

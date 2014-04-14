@@ -349,15 +349,15 @@
 
 							<p>For 'start':</p>
 <pre>
-/etc/init.d/&lt;tjeneste&gt; start
+service &lt;tjeneste&gt; start
 </pre>
 							<p>For 'stop':</p>
 <pre>
-/etc/init.d/&lt;tjeneste&gt; stop
+service &lt;tjeneste&gt; stop
 </pre>
 							<p>For 'genstart':</p>
 <pre>
-/etc/init.d/&lt;tjeneste&gt; restart
+service &lt;tjeneste&gt; restart
 </pre>
 							<p>For at forhindre en tjeneste i at blive startet</p>
 <pre>
@@ -572,7 +572,7 @@ apt-get install cups cups-driver-gutenprint hplip
 </pre>
 							<p>For at være sikker på at CUPS kører, genstart den med følgende kommando:</p>
 <pre>
-/etc/init.d/cups restart
+service cups restart
 </pre>
 							<p>Og så går du til følgende adresse i en web browser:</p>
 <pre>

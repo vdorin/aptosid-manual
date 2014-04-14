@@ -423,7 +423,7 @@ public = si
 </pre>
 							<p>Vuelva a arrancar el servidor samba</p>
 <pre>
-/etc/init.d/samba restart
+service samba restart
 </pre>
 				<h4> Ejemplo 2:</h4>
 <pre>
@@ -465,7 +465,7 @@ smbpasswd -e &lt;the-user-you-want&gt;
 </pre>
 							<p>Vuelva a arrancar el servidor samba</p>
 <pre>
-/etc/init.d/samba restart
+service samba restart
 </pre>
 				<h2>Revisando las comparticiones de Samba</h2>
 						<p>Para fijar las comparticiones sin tomar en cuenta la seguridad en Samba, haga los siguientes comandos (por ejemplo para una configuración en LAN):</p>
@@ -517,11 +517,11 @@ Domain=[MSHOME] OS=[Unix] Server=[Samba 3.0.26a]
 							<p>No se olvide de guardarlo. Puede iniciar/detener Samba con:</p>
 
 <pre>
-/etc/init.d/samba start
+service samba start
 </pre>
 							<p>y:</p>
 <pre>
-/etc/init.d/samba stop
+service samba stop
 </pre>
 
 							<p>Además, puede iniciar/detener Samba al arrancar. Ejecute estos comandos:</p>

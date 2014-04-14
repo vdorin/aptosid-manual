@@ -525,7 +525,7 @@ oppure
 
  					<p>Per riavviare il server Apache usare il seguente comando:</p>
 <pre>
-#/etc/init.d/apache2 restart
+#service apache2 restart
 </pre>
  					<p>Ora bisogna cambiare l'indirizzo della porta in /etc/apache2/ports.conf che in via predefinita starà in ascolto sulla porta 80 mentre ora con SSL occorre impostare l'ascolto sulla porta 443:</p>
 <pre>
@@ -556,7 +556,7 @@ ServerTokens ProductOnly
 </pre>
  					<p>Riavviare il server apache:</p>
 <pre>
- /etc/init.d/apache2 restart
+ service apache2 restart
 </pre>
 
 					<p>Ora si dovrebbe avere un server di prova, nel caso lo si voglia connettere ad internet, <span class="highlight-2">NON FARLO! Usare un altro PC puramente dedicato ad essere un server web per internet!</span></p>

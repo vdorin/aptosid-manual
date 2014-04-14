@@ -497,7 +497,7 @@ Email Address []:
 
  					<p>Az Apache szerver újraindításához az alábbi parancs használható:</p>
 <pre>
-#/etc/init.d/apache2 restart
+#service apache2 restart
 </pre>
  					<p>Ezek után szükségünk van az alapértelmezett port megváltoztatására a /etc/apache2/ports.conf-ban, mivel az Apache alapértelmezésben a 80-as porton figyel; mivel mi az SSL-t állítjuk be, át kell ezt állítanunk a 443-as portra.</p>
 <pre>
@@ -527,7 +527,7 @@ SSLCertificateKeyFile /etc/apache2/ssl/online.test.net.key
 </pre>
  					<p>Indítsd újra az Apache szervert</p>
 <pre>
- /etc/init.d/apache2 restart
+ service apache2 restart
 </pre>
 
 					<p>A "homokozó" teszt szerver elkészült, ha szeretnéd az internetre csatlakoztatni, <span class="highlight-2">NE TEDD...! Használj másik PC-t, amely pusztán arra a feladatra van dedikálva, hogy internet web szerver legyen!</span></p>

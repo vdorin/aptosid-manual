@@ -441,11 +441,11 @@ smbpasswd -e &lt;the-user-you-want&gt;
 </pre>
 							<p>Restart the samba server</p>
 <pre>
-/etc/init.d/samba restart
+service samba restart
 </pre>
 							<p>Restart the samba server</p>
 <pre>
-/etc/init.d/samba restart
+service samba restart
 </pre>
 
 
@@ -498,11 +498,11 @@ Domain=[MSHOME] OS=[Unix] Server=[Samba 3.0.26a]
 
 							<p>Do not forget to save. You can now start/stop samba with:</p>
 <pre>
-/etc/init.d/samba start
+service samba start
 </pre>
 							<p>and:</p>
 <pre>
-/etc/init.d/samba stop
+service samba stop
 </pre>
 
 							<p>You can also start/stop samba automaticaly at boot-time. Issue this call:</p>

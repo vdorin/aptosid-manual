@@ -523,7 +523,7 @@ Email Address []:
 
  					<p>To Restart Apache server use the following command</p>
 <pre>
-#/etc/init.d/apache2 restart
+#service apache2 restart
 </pre>
  					<p>Now we need to change the port address in /etc/apache2/ports.conf by default it will listen port 80 and now we are installing with SSL we need to change port 443 to listen</p>
 <pre>
@@ -554,7 +554,7 @@ SSLCertificateKeyFile /etc/apache2/ssl/online.test.net.key
 </pre>
  					<p>Restart the apache server</p>
 <pre>
- /etc/init.d/apache2 restart
+ service apache2 restart
 </pre>
 
 					<p>You should now have a test server sandbox, should you want to connect to the interent, with it, <span class="highlight-2">DONT!... Use another PC purely dedicated to being an internet  web server!</span></p>

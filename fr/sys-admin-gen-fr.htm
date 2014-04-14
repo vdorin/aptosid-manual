@@ -389,15 +389,15 @@ update-rc.d &lt;service&gt; defaults
 
 							<p>Pour 'démarrer':</p>
 <pre>
-/etc/init.d/&lt;service&gt; start
+service &lt;service&gt; start
 </pre>
 							<p>Pour 'arrêter':</p>
 <pre>
-/etc/init.d/&lt;service&gt; stop
+service &lt;service&gt; stop
 </pre>
 							<p>Pour 'redémarrer':</p>
 <pre>
-/etc/init.d/&lt;service&gt; restart
+service &lt;service&gt; restart
 </pre>
 							<p>Pour éviter que les services démarrent automatiquement au démarrage</p>
 <pre>
@@ -648,7 +648,7 @@ apt-get install cups cups-driver-gutenprint hplip
 
 							<p>Assurez-vous depuis une console root que le démon CUPS soit actif:</p>
 <pre>
-/etc/init.d/cups restart
+service cups restart
 </pre>
 							<p>Puis dans la barre d'adresse d'un navigateur Internet (konqueror ou iceweasel), entrez: </p>
 

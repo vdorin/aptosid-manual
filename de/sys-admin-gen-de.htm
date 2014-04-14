@@ -350,15 +350,15 @@
 
 							<p>Zum Starten:</p>
 <pre>
-/etc/init.d/&lt;service&gt; start
+service &lt;service&gt; start
 </pre>
 							<p>Zum Stoppen:</p>
 <pre>
-/etc/init.d/&lt;service&gt; stop
+service &lt;service&gt; stop
 </pre>
 							<p>Zum Neustarten:</p>
 <pre>
-/etc/init.d/&lt;service&gt; restart
+service &lt;service&gt; restart
 </pre>
 							<p>Damit ein Dienst beim Hochfahren des Rechners nicht startet:</p>
 <pre>
@@ -578,7 +578,7 @@ apt-get install cups cups-driver-gutenprint hplip
 							<p>CUPS wird nun neu gestartet:</p>
 
 <pre>
-/etc/init.d/cups restart
+service cups restart
 </pre>
 							<p>Im Anschluss daran wird ein Web-Browser geöffnet und in die Adresszeile eingegeben: </p>
 <pre>

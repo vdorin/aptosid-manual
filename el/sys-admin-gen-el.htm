@@ -341,15 +341,15 @@
 
 							<p>Για 'ξεκίνημα' (start):</p>
 <pre>
-/etc/init.d/&lt;υπηρεσία&gt; start
+service &lt;υπηρεσία&gt; start
 </pre>
 							<p>Για 'σταμάτημα' (stop):</p>
 <pre>
-/etc/init.d/&lt;υπηρεσία&gt; stop
+service &lt;υπηρεσία&gt; stop
 </pre>
 							<p>Για 'επανεκκίνηση' (restart):</p>
 <pre>
-/etc/init.d/&lt;υπηρεσία&gt; restart
+service &lt;υπηρεσία&gt; restart
 </pre>
 							<p>Για να μην τρέχει μια υπηρεσία κατά την εκκίνηση (startup)</p>
 <pre>
@@ -611,7 +611,7 @@ apt-get install cups cups-driver-gutenprint hplip
 							<!--p>Make sure CUPS is running:</p-->
 							<p>Σιγουρευτείτε ότι το CUPS τρέχει:</p>
 <pre>
-/etc/init.d/cups restart
+service cups restart
 </pre>
 							<!--p> Then in a web browser: </p-->
 							<p> Μετά μέσα σε ένα web browser: </p>

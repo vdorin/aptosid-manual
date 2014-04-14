@@ -667,7 +667,7 @@ Email Address []:                                    (Eメールアドレス)
 						#### -->
  					<p>Apacheサーバーを再スタートするコマンドは</p>
 <pre>
-#/etc/init.d/apache2 restart
+#service apache2 restart
 </pre>
 						<!--- ####
  					<p>Now we need to change the port address in /etc/apache2/ports.conf by default it will listen port 80 and now we are installing with SSL we need to change port 443 to listen</p>
@@ -719,7 +719,7 @@ SSLCertificateKeyFile /etc/apache2/ssl/online.test.net.key
 						#### -->
  					<p>Apacheサーバーの再スタート</p>
 <pre>
- /etc/init.d/apache2 restart
+ service apache2 restart
 </pre>
 
 					<!--- ####

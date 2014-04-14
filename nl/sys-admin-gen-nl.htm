@@ -348,15 +348,15 @@
 
 							<p>Voor de 'start' van diensten:</p>
 <pre>
-/etc/init.d/&lt;service&gt; start
+service &lt;service&gt; start
 </pre>
 							<p>Voor de 'stop' van diensten:</p>
 <pre>
-/etc/init.d/&lt;service&gt; stop
+service &lt;service&gt; stop
 </pre>
 							<p>Voor een herstart:</p>
 <pre>
-/etc/init.d/&lt;service&gt; restart
+service &lt;service&gt; restart
 </pre>
 							<p>Om diensten niet tijdens het opstarten van het systeem uit te voeren</p>
 <pre>
@@ -566,7 +566,7 @@ apt-get install cups cups-driver-gutenprint hplip
 
 							<p>Nu CUPS herstarten om er zeker van te zijn dat het actief is:</p>
 <pre>
-/etc/init.d/cups restart
+service cups restart
 </pre>
 							<p> Daarna in een browser (Konqueror,Iceweasel) in de adresbalk: </p>
 <pre>

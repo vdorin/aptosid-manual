@@ -529,7 +529,7 @@ Email Address []:
 
  					<p>For at genstarte Apache server'en bruger du følgende kommando</p>
 <pre>
-#/etc/init.d/apache2 restart
+#service apache2 restart
 </pre>
  					<p>Nu skal vi ændre port adressen i /etc/apache2/ports.conf Som standard vil den lytte til port 80 og nu hvor vi installerer SSL skal vi ændre dette til port 443</p>
 <pre>
@@ -559,7 +559,7 @@ Email Address []:
 </pre>
  					<p>Genstart apache server</p>
 <pre>
- /etc/init.d/apache2 restart
+ service apache2 restart
 </pre>
 
 					<p>Du har nu en test server sandbox, skulle du ønske at forbinde til internettet med den, <span class="highlight-2">LAD VÆRE!... Brug en anden PC udelukkende dedikeret til at virke som en internet web server!</span></p>

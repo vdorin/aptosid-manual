@@ -527,7 +527,7 @@ Email Address []:
 
  					<p>Om de Apache server nieuw te starten:</p>
 <pre>
-#/etc/init.d/apache2 restart
+#service apache2 restart
 </pre>
  					<p>Nu wordt het port address in /etc/apache2/ports.conf aangepast. In principe stond daar port 80 en nu moet vanwege de installatie van SSL dat veranderd worden in port 443.</p>
 <pre>
@@ -558,7 +558,7 @@ ServerTokens ProductOnly
 </pre>
  					<p>Herstart de apache server</p>
 <pre>
- /etc/init.d/apache2 restart
+ service apache2 restart
 </pre>
 
 					<p>Nu kan een test van de server sandbox uitgevoerd worden. Als je denkt dat deze testserver een internetverbinding zou moeten hebben, <span class="highlight-2">NIET DUS ... Gebruik een aparte pc die alleen als an internet  web server wordt gebruikt!</span></p>

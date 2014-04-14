@@ -529,7 +529,7 @@ OU
 
  					<p>Para reiniciar o servidor Apache, digite o comando:</p>
 <pre>
-#/etc/init.d/apache2 restart
+#service apache2 restart
 </pre>
  					<p>Agora precisamos alterar o endereço da porta no arquivo /etc/apache2/ports.conf. O padrão é escutar na porta 80, mas como estamos instalando o SSL, teremos de mudar para a porta 443:</p>
 <pre>
@@ -560,7 +560,7 @@ SSLCertificateKeyFile /etc/apache2/ssl/online.test.net.key
 </pre>
  					<p>Reinicie o Apache:</p>
 <pre>
- /etc/init.d/apache2 restart
+ service apache2 restart
 </pre>
 
 					<p>Agora você já deve ter um servidor para testes. Se desejar conectá-lo com a Internet, <span class="highlight-2">NÃO O FAÇA!... use outro PC, dedicado a ser apenas e tão somente seu servidor Web!</span></p>

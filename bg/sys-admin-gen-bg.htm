@@ -329,15 +329,15 @@
 
 							<p>За стартиране, 'start':</p>
 <pre>
-/etc/init.d/&lt;service&gt; start
+service &lt;service&gt; start
 </pre>
 							<p>За спиране, 'stop':</p>
 <pre>
-/etc/init.d/&lt;service&gt; stop
+service &lt;service&gt; stop
 </pre>
 							<p>За рестартиране, 'restart:</p>
 <pre>
-/etc/init.d/&lt;service&gt; restart
+service &lt;service&gt; restart
 </pre>
 							<p>За да изключите услуга за постоянно, т.е. да не се включва при зареждането на системата</p>
 <pre>
@@ -560,7 +560,7 @@ apt-get install cups cups-driver-gutenprint hplip
 </pre>
 							<p>Уверете се че CUPS услугата е включена:</p>
 <pre>
-/etc/init.d/cups restart
+service cups restart
 </pre>
 							<p> После в браузера: </p>
 <pre>

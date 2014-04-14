@@ -350,15 +350,15 @@
 
 							<p>Para 'iniciar':</p>
 <pre>
-/etc/init.d/&lt;serviço&gt; start
+service &lt;serviço&gt; start
 </pre>
 							<p>Para 'parar':</p>
 <pre>
-/etc/init.d/&lt;serviço&gt; stop
+service &lt;serviço&gt; stop
 </pre>
 							<p>Para 'reiniciar':</p>
 <pre>
-/etc/init.d/&lt;serviço&gt; restart
+service &lt;serviço&gt; restart
 </pre>
 							<p>Para impedir que serviços rodem na inicialização:</p>
 <pre>
@@ -598,7 +598,7 @@ apt-get install cups cups-driver-gutenprint hplip
 
 							<p>Assegure-se de que o CUPS está rodando:</p>
 <pre>
-/etc/init.d/cups restart
+service cups restart
 </pre>
 							<p> Então, abra o navegador Web e digite na barra de endereços: </p>
 <pre>

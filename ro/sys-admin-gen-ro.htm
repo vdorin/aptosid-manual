@@ -349,15 +349,15 @@
 
 							<p>Pentru 'start':</p>
 <pre>
-/etc/init.d/&lt;nume_serviciu&gt; start
+service &lt;nume_serviciu&gt; start
 </pre>
 							<p>Pentru 'stop':</p>
 <pre>
-/etc/init.d/&lt;nume_serviciu&gt; stop
+service &lt;nume_serviciu&gt; stop
 </pre>
 							<p>Pentru 'restart:</p>
 <pre>
-/etc/init.d/&lt;nume_serviciu&gt; restart
+service &lt;nume_serviciu&gt; restart
 </pre>
 							<p>Pentru prevenirea rulării serviciilor la pornire:</p>
 <pre>
@@ -590,7 +590,7 @@ apt-get install cups cups-driver-gutenprint hplip
 </pre>
 							<p>Asiguraţi-vă că rulează CUPS:</p>
 <pre>
-/etc/init.d/cups restart
+service cups restart
 </pre>
 							<p> Apoi într-un web browser: </p>
 <pre>

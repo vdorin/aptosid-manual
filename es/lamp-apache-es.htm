@@ -541,7 +541,7 @@ Dirección de correo electrónico []:
 
  					<p>Para rearrancar el servidor Apache, use la siguiente orden</p>
 <pre>
-# /etc/init.d/apache2 restart
+# service apache2 restart
 </pre>
 
  					<p>Ahora necesita cambiar la dirección del puerto usado en /etc/apache2/ports.conf que fue preseleccionado a escuchar a través del puerto 80, y ahora estamos instalando SSL, el cual necesita cambiar al puerto 443 para escuchar.</p>
@@ -573,7 +573,7 @@ SSLCertificateKeyFile /etc/apache2/ssl/online.test.net.key
 </pre>
  					<p>Vuelva a arrancar el servidor apache:</p>
 <pre>
- /etc/init.d/apache2 restart
+ service apache2 restart
 </pre>
 
 					<p>Debe tener un servidor "sandbox" para pruebas, en caso de que desee conectar a internet con él,  <span class="highlight-2">NO LO HAGA, use otro que esté dedicado completamente a ser un servidor de páginas web!</span></p>

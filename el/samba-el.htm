@@ -437,7 +437,7 @@ public = yes
 </pre>
 							<p>Restart the samba server</p>
 <pre>
-/etc/init.d/samba restart
+service samba restart
 </pre>
 				<h4> Example 2:</h4>
 <pre>
@@ -479,7 +479,7 @@ smbpasswd -e &lt;the-user-you-want&gt;
 </pre>
 							<p>Restart the samba server</p>
 <pre>
-/etc/init.d/samba restart
+service samba restart
 </pre>
 				<!--h2>Checking the shares in samba</h2>-->
 				<h2>Έλεγχος των συμμετοχών (shares) στο samba</h2>
@@ -539,12 +539,12 @@ Domain=[MSHOME] OS=[Unix] Server=[Samba 3.0.26a]
 							<!--p>Do not forget to save. You can now start/stop samba with:</p>-->
 							<p>Μη ξεχάσετε να κάνετε save. Τώρα μπορείτε να εκκινήσετε ή να σταματήσετε τον samba με:</p>
 <pre>
-/etc/init.d/samba start
+service samba start
 </pre>
 							<!--p>and:</p>-->
 							<p>και</p>
 <pre>
-/etc/init.d/samba stop
+service samba stop
 </pre>
 
 							<!--p>You can also start/stop samba automaticaly at boot-time. Issue this call:</p>-->

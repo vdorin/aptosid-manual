@@ -527,7 +527,7 @@ Email Address []:
 
  					<p>Da restarujete Apache poslužitelja koristite sljedeću naredbu</p>
 <pre>
-#/etc/init.d/apache2 restart
+#service apache2 restart
 </pre>
  					<p>Sad moramo promijeniti port adresu u /etc/apache2/ports.conf, standardno će slušati na portu 80 i sad instaliramo sa SSL moramo još promijeniti port 443 da sluša</p>
 <pre>
@@ -558,7 +558,7 @@ SSLCertificateFile /etc/apache2/ssl/online.test.net.crt
 </pre>
  					<p>Restartujte apache poslužitelja</p>
 <pre>
- /etc/init.d/apache2 restart
+ service apache2 restart
 </pre>
 
 					<p>Sad bi trebali da imate test poslužitelj sandbox, ako hoćete da se spojite s internetom, <span class="highlight-2">NEMOJTE NIKADA, koristiti drugo računalo koje nije samo namijenjeno da bude internet web poslužitelj!</span></p>

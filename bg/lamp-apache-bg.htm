@@ -509,7 +509,7 @@ Email Address []:
 
  					<p>За рестартиране на уебсървъра Apache, използвайте командата</p>
 <pre>
-#/etc/init.d/apache2 restart
+#service apache2 restart
 </pre>
  					<p>Сега трябва да смените адреса на порта в /etc/apache2/ports.conf; по подразбиране сървъра ще чака заявки на http порт 80, но сега инсталирате SSL и затова сменете на https 443</p>
 <pre>
@@ -540,7 +540,7 @@ SSLCertificateKeyFile /etc/apache2/ssl/online.test.net.key
 </pre>
  					<p>Рестартирайте уебсървъра Apache</p>
 <pre>
- /etc/init.d/apache2 restart
+ service apache2 restart
 </pre>
 
 					<p>Би трябвало да имате работещ тестов уебсървър, ако искате да браузвате интернет от него....<span class="highlight-2">НЕДЕЙТЕ!... Използвайте като сървър само компютър, който не изпълнява никакви други задачи!</span></p>

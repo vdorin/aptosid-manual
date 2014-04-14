@@ -566,7 +566,7 @@ Email Address []:
  					<!--p>To Restart Apache server use the following command</p-->
 					<p>Για να επανεκκινήσετε τον διακομιστή Apache, χρησιμοποιείστε την πιο κάτω εντολή</p>
 <pre>
-#/etc/init.d/apache2 restart
+#service apache2 restart
 </pre>
  					<!--p>Now we need to change the port address in /etc/apache2/ports.conf by default it will listen port 80 and now we are installing with SSL we need to change port 443 to listen</p-->
 					<p>Τώρα πρέπει να αλλάξουμε το port μέσα στο /etc/apache2/ports.conf . Εκ προεπιλογής θα "ακούει" το port 80 και επειδή τώρα κάνουμε εγκατάσταση με SSL, πρέπει να το αλλάξουμε για να "ακούει" το port 443</p>
@@ -604,7 +604,7 @@ SSLCertificateKeyFile /etc/apache2/ssl/online.test.net.key
  					<!--p>Restart the apache server</p-->
 					<p>Επανεκκινήστε τον διακομιστή apache</p>
 <pre>
- /etc/init.d/apache2 restart
+ service apache2 restart
 </pre>
 
 					<!--p>You should now have a test server sandbox, should you want to connect to the interent, with it, <span class="highlight-2">DONT!... Use another PC purely dedicated to being an internet  web server!</span></p-->

@@ -429,7 +429,7 @@ public = yes
 </pre>
 							<p>Riavviare il server samba</p>
 <pre>
-/etc/init.d/samba restart
+service samba restart
 </pre>
 				<h4>Esempio 2:</h4>
 <pre>
@@ -471,7 +471,7 @@ smbpasswd -e &lt;utente-volutot&gt;
 </pre>
 							<p>Riavviare il server samba</p>
 <pre>
-/etc/init.d/samba restart
+service samba restart
 </pre>
 				<h2>Controllare le condivisioni in samba</h2>
 							<p>Per impostare le condivisioni in samba lasciando perdere le questioni sulla sicurezza eseguire i seguenti comandi (esempio per una impostazione di rete LAN):</p>
@@ -522,11 +522,11 @@ Domain=[MSHOME] OS=[Unix] Server=[Samba 3.0.26a]
 
 							<p>Non dimenticare di salvare. Si può avviare/fermare samba con:</p>
 <pre>
-/etc/init.d/samba start
+service samba start
 </pre>
 							<p>e:</p>
 <pre>
-/etc/init.d/samba stop
+service samba stop
 </pre>
 
 							<p>si può anche avviare/fermare samba automaticamente all'avvio. Eseguire questa chiamata:</p>

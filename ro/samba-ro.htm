@@ -421,7 +421,7 @@ public = yes
 </pre>
 							<p>Restart-ați serverul samba</p>
 <pre>
-/etc/init.d/samba restart
+service samba restart
 </pre>
 				<h4> Exemplul 2:</h4>
 <pre>
@@ -463,7 +463,7 @@ smbpasswd -e &lt;the-user-you-want&gt;
 </pre>
 							<p>Restart-ați serverul samba</p>
 <pre>
-/etc/init.d/samba restart
+service samba restart
 </pre>
 				<h2>Verificarea share-urilor în samba</h2>
 							<p>Pentru a face share cu samba fără a uita de securitate executați următoarele comenzi (i.e. pentru o setare LAN):</p>
@@ -514,11 +514,11 @@ Domain=[MSHOME] OS=[Unix] Server=[Samba 3.0.26a]
 
 							<p>Nu uitaţi să salvaţi. Acum puteţi porni / opri Samba cu:</p>
 <pre>
-/etc/init.d/samba start
+service samba start
 </pre>
 							<p>şi opri cu:</p>
 <pre>
-/etc/init.d/samba stop
+service samba stop
 </pre>
 
 							<p>Puteţi deasemeni porni / opri Samba automat odată cu calculatorul. Rulaţi următoarele:</p>

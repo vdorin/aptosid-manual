@@ -408,7 +408,7 @@ public = yes
 </pre>
 							<p>Restart the samba server</p>
 <pre>
-/etc/init.d/samba restart
+service samba restart
 </pre>
 
 
@@ -452,7 +452,7 @@ smbpasswd -e &lt;the-user-you-want&gt;
 </pre>
 							<p>Restart the samba server</p>
 <pre>
-/etc/init.d/samba restart
+service samba restart
 </pre>
 
 
@@ -506,11 +506,11 @@ Domain=[MSHOME] OS=[Unix] Server=[Samba 3.0.26a]
 
 							<p>След промените във файла с настройките на samba, запишете ги на диска. Стартирането (или спирането) на samba, става съответно чрез командите:</p>
 <pre>
-/etc/init.d/samba start
+service samba start
 </pre>
 							<p>и</p>
 <pre>
-/etc/init.d/samba stop
+service samba stop
 </pre>
 
 							<p>Ако искате да включите демона на samba, да се стартира автоматично при рестартиране на компютъра:</p>

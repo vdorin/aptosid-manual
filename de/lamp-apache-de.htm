@@ -525,7 +525,7 @@ Email Address []:
 
  					<p>Der Apache-Server wird mit folgendem Befehl neu gestartet:</p>
 <pre>
-#/etc/init.d/apache2 restart
+#service apache2 restart
 </pre>
  					<p>Nun wird die Port-Adresse /etc/apache2/ports.conf angepasst. In der Grundeinstellung wird auf Port 80 gelauscht, und da mit SSL installiert wird, muss dies auf Port 443 geändert werden.</p>
 <pre>
@@ -555,7 +555,7 @@ ServerTokens ProductOnly
 </pre>
  					<p>Neustart des Apache-Servers</p>
 <pre>
- /etc/init.d/apache2 restart
+ service apache2 restart
 </pre>
 
 					<p>Nun soll die Sandbox eines Testservers eingerichtet sein. Dieser Testserver soll <span class="highlight-2">NICHT mit dem Internet verbunden werden. Zu diesem Zweck soll ausschließlich ein PC verwendet werden, der als Server dienen soll!</span></p>

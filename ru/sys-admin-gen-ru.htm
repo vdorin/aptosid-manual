@@ -349,15 +349,15 @@
 
 							<p>Для запуска:</p>
 <pre>
-/etc/init.d/&lt;service&gt; start
+service &lt;service&gt; start
 </pre>
 							<p>Для остановки:</p>
 <pre>
-/etc/init.d/&lt;service&gt; stop
+service &lt;service&gt; stop
 </pre>
 							<p>Для перезапуска:</p>
 <pre>
-/etc/init.d/&lt;service&gt; restart
+service &lt;service&gt; restart
 </pre>
 							<p>Чтобы при загрузке компьютера служба не запускалась:</p>
 <pre>
@@ -581,7 +581,7 @@ apt-get install cups cups-driver-gutenprint hplip
 </pre>
 							<p>Убедитесь, что сервер CUPS запущен:</p>
 <pre>
-/etc/init.d/cups restart
+service cups restart
 </pre>
 							<p>Теперь введите в строке браузерa: </p>
 <pre>

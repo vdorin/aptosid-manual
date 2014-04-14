@@ -524,7 +524,7 @@ Email Address []:
 
  					<p>Aby uruchomić ponownie serwer Apache, użyj następującego polecenia</p>
 <pre>
-#/etc/init.d/apache2 restart
+#service apache2 restart
 </pre>
  					<p>Teraz musimy zmienić port w /etc/apache2/ports.conf, domyślnie używany jest port 80, a my musimy zmienić go na 443</p>
 <pre>
@@ -554,7 +554,7 @@ SSLCertificateKeyFile /etc/apache2/ssl/online.test.net.key
 </pre>
  					<p>Uruchom ponownie serwer apache</p>
 <pre>
- /etc/init.d/apache2 restart
+ service apache2 restart
 </pre>
 
 					<p>Powinieneś teraz mieć sandbox serwera testowego. Ten testowy serwer <span class="highlight-2">nie powinien być podłączony do internetu. Używaj do tego komputera przeznaczonego, aby pełnić rolę an internet  web serwera!</span></p>

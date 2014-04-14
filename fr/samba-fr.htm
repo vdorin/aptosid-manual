@@ -446,7 +446,7 @@ public = yes
 </pre>
 							<p>Restart the samba server</p>
 <pre>
-/etc/init.d/samba restart
+service samba restart
 </pre>
 				<h4> Example 2:</h4>
 <pre>
@@ -488,7 +488,7 @@ smbpasswd -e &lt;the-user-you-want&gt;
 </pre>
 							<p>Restart the samba server</p>
 <pre>
-/etc/init.d/samba restart
+service samba restart
 </pre>
 				<!--- ####
 				<h2>Checking the shares in samba</h2>
@@ -562,13 +562,13 @@ Domain=[MSHOME] OS=[Unix] Server=[Samba 3.0.26a]
 							<p>Sauvez votre fichier.. Vous pouvez désormais démarrer/arrêter Samba avec :</p>
 
 <pre>
-/etc/init.d/samba start
+service samba start
 </pre>
 
 <p>et</p>
 
 <pre>
-/etc/init.d/samba stop
+service samba stop
 </pre>
 
 							<p>Vous pouvez également commander de démarrer/arrêter Samba automatiquement au démarrage et à l'arrêt de l'ordinateur, en suivant les précautions évoquées en haut de cette page, au moyen de cette série de commandes :</p>

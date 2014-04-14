@@ -419,7 +419,7 @@ public = yes
 </pre>
 							<p>Restart the samba server</p>
 <pre>
-/etc/init.d/samba restart
+service samba restart
 </pre>
 				<h4> Example 2:</h4>
 <pre>
@@ -461,7 +461,7 @@ smbpasswd -e &lt;the-user-you-want&gt;
 </pre>
 							<p>Restart the samba server</p>
 <pre>
-/etc/init.d/samba restart
+service samba restart
 </pre>
 				<h2>Checking the shares in samba</h2>
 							<p>To set the shares without regard to security in samba do the folowing commands (i.e.  for a LAN setup):</p>
@@ -512,11 +512,11 @@ Domain=[MSHOME] OS=[Unix] Server=[Samba 3.0.26a]
 
 							<p>Ne zaboravite memorirati. Sad možete startovati/stopirati sambu sa</p>
 <pre>
-/etc/init.d/samba start
+service samba start
 </pre>
 							<p>i</p>
 <pre>
-/etc/init.d/samba stop
+service samba stop
 </pre>
 
 							<p>Isto možete startovati/stopirati sambu Automatski na startu. Izvodite sljedeće:</p>

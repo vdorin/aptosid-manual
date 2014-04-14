@@ -353,17 +353,17 @@
 <!--							<p>For 'start':</p>-->
 							<p>Pro 'spuštění':</p>
 <pre>
-/etc/init.d/&lt;sluzba&gt; start
+service &lt;sluzba&gt; start
 </pre>
 <!--							<p>For 'stop':</p>-->
 							<p>Pro 'zastavení':</p>
 <pre>
-/etc/init.d/&lt;sluzba&gt; stop
+service &lt;sluzba&gt; stop
 </pre>
 <!--							<p>For 'restart:</p>-->
 							<p>Pro 'restartování:</p>
 <pre>
-/etc/init.d/&lt;sluzba&gt; restart
+service &lt;sluzba&gt; restart
 </pre>
 <!--							<p>To prevent services running at-startup</p>-->
 							<p>Zamezení spuštění služby při spuštění systému:</p>
@@ -633,7 +633,7 @@ apt-get install cups cups-driver-gutenprint hplip
 <!--							<p>Make sure CUPS is running:</p>-->
 							<p>Ujistěte se, že CUPS běží:</p>
 <pre>
-/etc/init.d/cups restart
+service cups restart
 </pre>
 
 <!--							<p> Then in a web browser: </p>-->

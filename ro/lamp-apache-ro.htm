@@ -529,7 +529,7 @@ Email Address []:
 
  							<p>Pentru a Restarta serverul Apache folosiţi următoarea comandă :</p>
 <pre>
-#/etc/init.d/apache2 restart
+#service apache2 restart
 </pre>
  							<p>Acum trebuie să schimbăm adresa portului în  /etc/apache2/ports.conf ; implicit va asculta pe portul 80 iar acum instalăm cu SSL va trebui să schimbăm portul de ascultare pe portul 443 </p>
 <pre>
@@ -560,7 +560,7 @@ SSLCertificateKeyFile /etc/apache2/ssl/online.test.net.key
 </pre>
  							<p>Restartaţi serverul apache</p>
 <pre>
- /etc/init.d/apache2 restart
+ service apache2 restart
 </pre>
 
 							<p>Veţi avea de acum un server de test , dacă doriţi să vă conectaţi la internet cu el ..., <span class="highlight-2">NU O FACEŢI , folosiţi un alt PC pentru a fi un  server web dedicat internet !</span></p>

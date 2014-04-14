@@ -581,7 +581,7 @@ Email Address []:
 							<p>Pour redémarrer le serveur web Apache utilisez cette commande :</p>
 
 <pre>
-#/etc/init.d/apache2 restart
+#service apache2 restart
 </pre>
 
 							<p>À présent nous devons modifier l'adresse de port utilisée dans /etc/apache2/ports.conf qui par défaut écoute sur le port 80, et qu'installant SSL il faut utiliser le port 443 pour écouter.</p>
@@ -624,7 +624,7 @@ SSLCertificateKeyFile /etc/apache2/ssl/online.test.net.key
 							<p>Redémarrez le serveur apache :</p>
 
 <pre>
- /etc/init.d/apache2 restart
+ service apache2 restart
 </pre>
 
 <p>Vous devriez à présent disposer d'un serveur bac-à-sable, que vous vous pourriez vouloir connecter à Internet, ...<span class="highlight-2"> BAH NON !...Utilisez un PC exclusivement dédié à l'usage de serveur web!</span></p>

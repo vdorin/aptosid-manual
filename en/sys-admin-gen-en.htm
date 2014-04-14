@@ -349,15 +349,15 @@
 							<p>For 'start':</p>
 
 <pre>
-/etc/init.d/&lt;service&gt; start
+service &lt;service&gt; start
 </pre>
 							<p>For 'stop':</p>
 <pre>
-/etc/init.d/&lt;service&gt; stop
+service &lt;service&gt; stop
 </pre>
 							<p>For 'restart:</p>
 <pre>
-/etc/init.d/&lt;service&gt; restart
+service &lt;service&gt; restart
 </pre>
 							<p>To prevent services running at-startup</p>
 <pre>
@@ -579,7 +579,7 @@ apt-get install cups cups-driver-gutenprint hplip
 </pre>
 							<p>Make sure CUPS is running:</p>
 <pre>
-/etc/init.d/cups restart
+service cups restart
 </pre>
 
 							<p> Then in a web browser: </p>

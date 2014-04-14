@@ -349,15 +349,15 @@
 
 							<p>Para 'iniciar (start)':</p>
 <pre>
-/etc/init.d/&lt;service&gt; start
+service &lt;service&gt; start
 </pre>
 							<p>Para 'parar (stop)':</p>
 <pre>
-/etc/init.d/&lt;service&gt; stop
+service &lt;service&gt; stop
 </pre>
 							<p>Para 'reiniciar (restart)':</p>
 <pre>
-/etc/init.d/&lt;service&gt; restart
+service &lt;service&gt; restart
 </pre>
 							<p>Para evitar que un servicio arranque al inicio</p>
 <pre>
@@ -573,7 +573,7 @@ apt-get install cups cups-driver-gutenprint hplip
 </pre>
 							<p>Asegúrese de que CUPS se esta ejecutando:</p>
 <pre>
-/etc/init.d/cups restart
+service cups restart
 </pre>
 							<p>A continuación en el navegador (browser) de internet:</p>
 <pre>

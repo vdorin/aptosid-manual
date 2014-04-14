@@ -442,7 +442,7 @@ public = yes
 <!--							<p>Restart the samba server</p>-->
 							<p>Restartuje samba server</p>
 <pre>
-/etc/init.d/samba restart
+service samba restart
 </pre>
 
 
@@ -490,7 +490,7 @@ smbpasswd -e &lt;the-user-you-want&gt;
 <!--							<p>Restart the samba server</p>-->
 							<p>Restartuje server samba</p>
 <pre>
-/etc/init.d/samba restart
+service samba restart
 </pre>
 
 
@@ -547,12 +547,12 @@ Domain=[MSHOME] OS=[Unix] Server=[Samba 3.0.26a]
 <!--							<p>Do not forget to save. You can now start/stop samba with:</p>-->
 							<p>Nezapomeňte nastavení uložit. Nyní můžete spustit/zastavit sambu pomocí:</p>
 <pre>
-/etc/init.d/samba start
+service samba start
 </pre>
 <!--							<p>and:</p>-->
 							<p>a:</p>
 <pre>
-/etc/init.d/samba stop
+service samba stop
 </pre>
 
 <!--							<p>You can also start/stop samba automaticaly at boot-time. Issue this call:</p>-->

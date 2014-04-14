@@ -423,7 +423,7 @@ public = yes
 </pre>
 							<p>Herstart de samba server</p>
 <pre>
-/etc/init.d/samba restart
+service samba restart
 </pre>
 				<h4> Voorbeeld 2:</h4>
 <pre>
@@ -465,7 +465,7 @@ smbpasswd -e &lt;the-user-you-want&gt;
 </pre>
 							<p>Herstart de samba server</p>
 <pre>
-/etc/init.d/samba restart
+service samba restart
 </pre>
 				<h2>Controle van de samba shares</h2>
 							<p>Om de samba-shares zo in te stellen zonder acht te nemen op de beveiliging, voer je het volgend uit (dit geld voor een LAN setup):</p>
@@ -515,11 +515,11 @@ Domain=[MSHOME] OS=[Unix] Server=[Samba 3.0.26a]
 							<p>Als je geen wachtwoord ingesteld hebt, kun je gewoon op ENTER drukken.</p>
 							<p>Vergeet niet het bestand op te slaan. Je kunt nu de samba service starten/stoppen mbv:</p>
 <pre>
-/etc/init.d/samba start
+service samba start
 </pre>
 							<p>en</p>
 <pre>
-/etc/init.d/samba stop
+service samba stop
 </pre>
 
 							<p>Je kunt ook een start/stop van samba automatisch tijdens het opstarten laten uitvoeren, dit doe je als volgt:</p>

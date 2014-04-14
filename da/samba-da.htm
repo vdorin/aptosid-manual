@@ -426,7 +426,7 @@ public = yes
 </pre>
 							<p>Genstart samba serveren</p>
 <pre>
-/etc/init.d/samba restart
+service samba restart
 </pre>
 
 
@@ -470,7 +470,7 @@ smbpasswd -e &lt;the-user-you-want&gt;
 </pre>
 							<p>Genstart samba serveren</p>
 <pre>
-/etc/init.d/samba restart
+service samba restart
 </pre>
 
 
@@ -523,11 +523,11 @@ Domain=[MSHOME] OS=[Unix] Server=[Samba 3.0.26a]
 
 							<p>Husk at gemme dine ændringer. Nu kan du starte/ stoppe Samba med</p>
 <pre>
-/etc/init.d/samba start
+service samba start
 </pre>
 							<p>og</p>
 <pre>
-/etc/init.d/samba stop
+service samba stop
 </pre>
 
 							<p>Du kan også få Samba til at starte automatisk ved hver opstart af systemet, skriv da følgende kommando:</p>

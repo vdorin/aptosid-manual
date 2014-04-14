@@ -423,7 +423,7 @@ public = yes
 </pre>
 							<p>Restart the samba server</p>
 <pre>
-/etc/init.d/samba restart
+service samba restart
 </pre>
 				<h4> Example 2:</h4>
 <pre>
@@ -465,7 +465,7 @@ smbpasswd -e &lt;the-user-you-want&gt;
 </pre>
 							<p>Restart the samba server</p>
 <pre>
-/etc/init.d/samba restart
+service samba restart
 </pre>
 				<h2>Sprawdzanie udziałów w sambie</h2>
 							<p>Aby ustawić udziały w sambie bez względu na bezpieczeństwo, wykonaj następujące polecenia (np. dla konfiguracji LAN):</p>
@@ -514,9 +514,9 @@ Domain=[MSHOME] OS=[Unix] Server=[Samba 3.0.26a]
 
 							<p>Jeśli nie ustawiłeś hasła, po prostu wciśnij ENTER</p>
 							<p>Nie zapomnij zapisać zmiany. Teraz możesz uruchomić/zatrzymać sambę:</p>
-<pre>/etc/init.d/samba start</pre>
+<pre>service samba start</pre>
 							<p>i</p>
-<pre>/etc/init.d/samba stop</pre>
+<pre>service samba stop</pre>
 
 							<p>Możesz również uruchomić/zatrzymać sambę automatycznie w czasie startu systemu:</p>
 

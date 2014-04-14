@@ -424,7 +424,7 @@ public = yes
 </pre>
 							<p>Перезагрузите сервер Samba:</p>
 <pre>
-/etc/init.d/samba restart
+service samba restart
 </pre>
 				<h4>Пример 2:</h4>
 <pre>
@@ -467,7 +467,7 @@ smbpasswd -e &lt;the-user-you-want&gt;
 </pre>
 							<p>Перезагрузите сервер Samba.</p>
 <pre>
-/etc/init.d/samba restart
+service samba restart
 </pre>
 				<h2>Проверка ресурсов samba</h2>
 							<p>Чтобы настроить общие ресурсы, не заостряя внимания на безопасности (если Вы подключены по локальной сети), сделайте следующее:</p>
@@ -518,11 +518,11 @@ Domain=[MSHOME] OS=[Unix] Server=[Samba 3.0.26a]
 
 							<p>Не забывайте сохранить изменения. (Samba должна быть запущена и остановлена):</p>
 <pre>
-/etc/init.d/samba start
+service samba start
 </pre>
 							<p>или</p>
 <pre>
-/etc/init.d/samba stop
+service samba stop
 </pre>
 
 							<p>Samba может запускаться автоматически при загрузке:</p>

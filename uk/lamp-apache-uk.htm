@@ -524,7 +524,7 @@ Email Address []:
 
  					<p>Сервер Apache перезапускається наступною командою:</p>
 <pre>
-#/etc/init.d/apache2 restart
+#service apache2 restart
 </pre>
  					<p>Тепер відредагуйте адреси портів в / etc/apache2/ports.conf. За замовчуванням прослуховується порт 80, але так як ми встановлюємо SSL, треба змінити на порт 443.</p>
 <pre>
@@ -555,7 +555,7 @@ SSLCertificateKeyFile /etc/apache2/ssl/online.test.net.key
 </pre>
  					<p>Перезапустіть сервер Apache</p>
 <pre>
- /etc/init.d/apache2 restart
+ service apache2 restart
 </pre>
 
 					<p>Тепер у Вас є "Пісочниця" - тестовий сервер. Цей тестовий сервер <span class="highlight-2">НЕ ДОЛЖЕН БЫТЬ СВЯЗАН С ИНТЕРНЕТОМ. Делайте это только на компьютере, предназначенном для веб-сервера!</span></p>
