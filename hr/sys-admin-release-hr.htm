@@ -536,7 +536,7 @@ cat /path/to/aptosid-*.iso &gt; /dev/USB_raw_device_node
 
 					<li>
 						Transitional or obsolete packages when upgrading from sidux<br />
-						The preferred way to identify obsolete packages left over from crossgrading to aptosid, is by making use of deborphan and apt-show-versions as described below.
+						The preferred way to identify obsolete packages left over from crossgrading to aptosid, is by making use of deborphan and apt list as described below.
 						However at least these packages can be removed <em>after</em> dist-upgrading to aptosid:
 						<ul>
 
@@ -648,10 +648,10 @@ cat /path/to/aptosid-*.iso &gt; /dev/USB_raw_device_node
 <pre>
 $ deborphan
 </pre>
-							<p>The following command is able to find packages not available from any active apt repository and may hint at obsolete packages, be careful about manually installed packages though. apt-show-versions is a separate package and isn't necessarily preinstalled. </p>
+							<p>The following command is able to find packages not available from any active apt repository and may hint at obsolete packages, be careful about manually installed packages though.</p>
 
 <pre>
-$ apt-show-versions | awk '/No available version in archive/{print $1}'
+$ apt list 2&gt;/dev/null | awk -F '/' '/installed,local/{print $1}'
 </pre>
 
 

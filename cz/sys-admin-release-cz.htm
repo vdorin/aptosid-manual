@@ -658,11 +658,11 @@ install-mbr /dev/sdz
 $ deborphan
 </pre>
 
-							<!--<p>The following command is able to find packages not available from any active apt repository and may hint at obsolete packages, be careful about manually installed packages though. apt-show-versions is a separate package and isn't necessarily preinstalled. </p>-->
-							<p>Následující příkaz je schopen najít balíčky, které nejsou k dispozici v žádném aktivním repozitářní a mohou tedy poukazovat na prošlé balíčky. Buďte ale obezřetní s ručně instalovanými balíčky. apt-show-versions je separátní balíček a nemusí být nutně předinstalován. </p>
+							<!--<p>The following command is able to find packages not available from any active apt repository and may hint at obsolete packages, be careful about manually installed packages though.</p>-->
+							<p>Následující příkaz je schopen najít balíčky, které nejsou k dispozici v žádném aktivním repozitářní a mohou tedy poukazovat na prošlé balíčky. Buďte ale obezřetní s ručně instalovanými balíčky.</p>
 
 <pre>
-$ apt-show-versions | awk '/No available version in archive/{print $1}'
+$ apt list 2&gt;/dev/null | awk -F '/' '/installed,local/{print $1}'
 </pre>
 			</div>
 			<div class="divider" id="howto-involve">

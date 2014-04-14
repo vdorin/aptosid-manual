@@ -614,10 +614,10 @@ install-mbr /dev/sdz
 <pre>
 $ deborphan
 </pre>
-							<p> El siguiente comando es capaz de encontrar paquetes no disponibles desde cualquier repositorio de apt activo y puede dar información sobre paquetes obsoletos, pero tenga cuidado con paquetes instalados manualmente. apt-show-versions es un paquete separado y no necesariamente está preinstalado. </p>
+							<p> El siguiente comando es capaz de encontrar paquetes no disponibles desde cualquier repositorio de apt activo y puede dar información sobre paquetes obsoletos, pero tenga cuidado con paquetes instalados manualmente.</p>
 
 <pre>
-$ apt-show-versions | awk '/Ninguna versión disponible en el archivo/{print $1}'
+$ apt list 2&gt;/dev/null | awk -F '/' '/installed,local/{print $1}'
 </pre>
 			</div>
 			<div class="divider" id="howto-involve">

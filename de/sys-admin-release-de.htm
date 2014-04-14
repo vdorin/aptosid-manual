@@ -618,9 +618,9 @@ install-mbr /dev/sdz
 <pre>
 $ deborphan
 </pre>
-							<p> Der folgende Befehl ist in der Lage Pakete zu finden, die nicht länger in einem aktiven apt-Repository verfügbar sind. In Bezug auf manuell installierte Pakete ist jedoch Vorsicht geboten. apt-show-versions ist ein eigenständiges Paket und ist nicht unbedingt vorinstalliert. </p>
+							<p> Der folgende Befehl ist in der Lage Pakete zu finden, die nicht länger in einem aktiven apt-Repository verfügbar sind. In Bezug auf manuell installierte Pakete ist jedoch Vorsicht geboten.</p>
 <pre>
-$ apt-show-versions | awk '/No available version in archive/{print $1}'
+$ apt list 2&gt;/dev/null | awk -F '/' '/installed,local/{print $1}'
 </pre>
 			</div>
 			<div class="divider" id="howto-involve">

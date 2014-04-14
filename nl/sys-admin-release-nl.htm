@@ -618,10 +618,10 @@ install-mbr /dev/sdz
 <pre>
 $ deborphan
 </pre>
-							<p> Het volgende commando zoekt naar pakketten die niet meer beschikbaar zijn in een actief apt repository en kan overbodige pakketten tonen. Hierbij kunnen ook handmatig geïnstalleerde pakketten getoond worden (apt-show-versions is een pakket dat niet standaard op alle systemen geïnstalleerd is). </p>
+							<p> Het volgende commando zoekt naar pakketten die niet meer beschikbaar zijn in een actief apt repository en kan overbodige pakketten tonen. Hierbij kunnen ook handmatig geïnstalleerde pakketten getoond worden. </p>
 
 <pre>
-$ apt-show-versions | awk '/No available version in archive/{print $1}'
+$ apt list 2&gt;/dev/null | awk -F '/' '/installed,local/{print $1}'
 </pre>
 			</div>
 			<div class="divider" id="howto-involve">
