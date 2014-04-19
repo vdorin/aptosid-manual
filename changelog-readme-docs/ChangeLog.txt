@@ -1,6 +1,20 @@
 CHANGELOG FOR aptosid-OS-MANUAL-2014
+__________________________________________
 
-test
+*VERSION:::aptosid-manual-02.16.2014.04.19
+Thurs Jan 23, 2014 1200 UTC
+*/lib/version			timestamp change
+*help-xx.htm 			switch from direct /etc/init.d/service invocations to service(8)
+*lamp-apache-xx.htm 		switch from direct /etc/init.d/service invocations to service(8)
+*lamp-ppp-xx.htm 		switch from direct /etc/init.d/service invocations to service(8)
+*samba-xx.htm 	switch from direct /etc/init.d/service invocations to service(8)
+*ssh-xx.htm 	switch from direct /etc/init.d/service invocations to service(8)
+*sys-admin-gen-xx.htm 	switch from direct /etc/init.d/service invocations to service(8)
+*sys-admin-release-xx.htm 	replace apt-show-versions with the corresponding "apt list" (apt >=1.…
+*term-konsole-xx.htm 	switch from direct /etc/init.d/service invocations to service(8)
+*translation updates and validation fixes for /files
+
+-- Trevor Walkley <trevor_walkley@aptenodytes.org> Thurs April 19, 2014 1130 UTC
 __________________________________________
 
 *VERSION:::aptosid-manual-02.16.2014.01.23
