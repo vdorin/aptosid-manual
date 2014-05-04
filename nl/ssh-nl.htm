@@ -338,7 +338,7 @@
 <div class="divider" id="ssh">
 			<h2 id="top-header">SSH</h2>
 
-				<p>Secure Shell of SSH is een set van standaards en een hieraan verbonden netwerk protocol waarmee een veilige verbinding tussen de eigen pc een een andere (remote) computer op afstand. Hierbij wordt de zogenaamde public-key cryptography gebruikt om de remote computer te identificeren en om (optie) de remote computer toe te staan de gebruiker te identificeren. SSH garandeert de vertrouwelijke en correcte data-overdracht tussen de twee computers via encryptie en message authentication codes (MACs). Een bekende toepassing van SSH is een login op een remote machine en vervolgens opdrachten uit te voeren, maar er worden ook tunneling, doorgeven van TCP poorts en X11 verbindingen ondersteund. Verder kunnen bestanden uitgewisseld worden via SFTP of SCP protocollen. Standaard gaat het dataverkeer van een servervia de TCP poort 22. </p><p><a href="http://en.wikipedia.org/wiki/Secure_Shell">Bovenstaande tekst is een samenvatting/vertaling van basisinformatie uit wikipedia over SSH (Engels).</a></p>
+				<p>Secure Shell of SSH is een set van standaards en een hieraan verbonden netwerk protocol waarmee een veilige verbinding tussen de eigen pc een een andere (remote) computer op afstand. Hierbij wordt de zogenaamde public-key cryptografie gebruikt om de remote computer te identificeren en om (optie) de remote computer toe te staan de gebruiker te identificeren. SSH garandeert de vertrouwelijke en correcte data-overdracht tussen de twee computers via encryptie en message authentication codes (MACs). Een bekende toepassing van SSH is een login op een remote machine en vervolgens opdrachten uit te voeren, maar er worden ook tunneling, doorgeven van TCP poorts en X11 verbindingen ondersteund. Verder kunnen bestanden uitgewisseld worden via SFTP of SCP protocollen. Standaard gaat het dataverkeer van een server via de TCP poort 22. </p><p><a href="http://en.wikipedia.org/wiki/Secure_Shell">Bovenstaande tekst is een samenvatting/vertaling van basisinformatie uit wikipedia over SSH (Engels).</a></p>
 
 
 <div class="divider" id="ssh-s">
@@ -359,13 +359,13 @@
 <pre>
 Port 5874
 </pre>
- 				<p><span class="highlight-3">ListenAddress &lt;ip van de pc of van het network interface&gt;:</span> Omdat hier sprake is van forwarding van een poort van je router, moet de pc een vast (static) ip adres in het netwerk hebben. Als je een locale dns server gebruikt en je hebt deze uitleg hiervoor nodig, dan maak je waarschijnlijk een grote fout. Wij gaan dus verder met de uitleg gebaseerd op een vast ip adres: </p>
+ 				<p><span class="highlight-3">ListenAddress &lt;ip van de pc of van het netwerk interface&gt;:</span> Omdat hier sprake is van forwarding van een poort van je router, moet de pc een vast (static) ip adres in het netwerk hebben. Als je een lokale dns server gebruikt en je hebt deze uitleg hiervoor nodig, dan maak je waarschijnlijk een grote fout. Wij gaan dus verder met de uitleg gebaseerd op een vast ip adres: </p>
 <pre>
 ListenAddress 192.168.2.134
 </pre>
-				<p>Hierna - protocol 2 is standaard debian default, maar voor de zekerheid gaan wij even kijken wat daar staat:</p>
+				<p>Hierna - protocol 2 is standaard in debian, maar voor de zekerheid gaan wij even kijken wat daar staat:</p>
 
- 				<p><span class="highlight-3">LoginGraceTime &lt;toegestane tijd om aan te loggen in seconden&gt;:</span> Hier staat een vreemde default-waarde van 600 seconden. Ook als je slechts met twee vingers kan typen, heb je nooit 10 minuten nodig om je user name en password op te geven, dus maken wij hiervan:</p>
+ 				<p><span class="highlight-3">LoginGraceTime &lt;toegestane tijd om aan te loggen in seconden&gt;:</span> Hier staat een vreemde standaard-waarde van 600 seconden. Ook als je slechts met twee vingers kan typen, heb je nooit 10 minuten nodig om je user name en password op te geven, dus maken wij hiervan:</p>
 <pre>
 LoginGraceTime 45
 </pre>
@@ -471,14 +471,14 @@ scp -r &lt;user&gt;@xxx.xxx.x.xxx:/media/disk1part6/filename.txt<span class="hig
 scp /media/disk1part6/filename.txt &lt;user&gt;@xxx.xxx.x.xxx:/media/diskXpartX/xx
 </pre>
 
-							<p>Lees ook de manual pagina:</p>
+							<p>Lees ook de help pagina via:</p>
 <pre>
 man scp
 </pre>
 
 	</div>
 		<div class="divider" id="ssh-w">
-			<h2>Remote access ssh met X-Forwarding van een Windows-PC:</h2>
+			<h2>Remote toegang via ssh met X-Forwarding van een Windows-PC:</h2>
 
 							<p>* Download en brand de <a href="http://xlivecd.indiana.edu/">Cygwin XLiveCD</a><br />
 							* Leg de CD in CD-ROM-speler van de Windows-PC en wacht op de autorun (de CD wordt geopend).<br />
