@@ -434,9 +434,9 @@ xrandr --output &lt;output&gt; --rate &lt;rate&gt; --mode &lt;mode&gt; --left-of
 
 							<p>Waar:</p>
 					<ul>
-    							<li>&lt;output&gt; is uitvoernaam (see <a href="hw-dev-mon-nl.htm#aa">Appendix A</a>)</li>
-   							<li>&lt;rate&gt; is verversingswaarde gegeven door xrandr output (optioneel)</li>
-    							<li>&lt;mode&gt; is resolutie gegeven door xrandr output (optioneel)</li>
+    							<li>&lt;output&gt; is uitvoernaam (zie <a href="hw-dev-mon-nl.htm#aa">Appendix A</a>)</li>
+   							<li>&lt;rate&gt; is verversingswaarde gegeven door xrandr uitvoer (optioneel)</li>
+    							<li>&lt;mode&gt; is resolutie gegeven door xrandr uitvoer (optioneel)</li>
 					</ul>
 
 
@@ -449,7 +449,7 @@ xrandr --output VGA --mode 1024x768
 <!--
 <<<<<<< .mine
 						<h6>Clone</h6>
-								<p>Veel external screens / video projectors werken niet met 1280x800 maar bijv. met 1024x768,  dat kan vastleggen door:</p>
+								<p>Veel externe beeldschermen / video projectors werken niet met 1280x800 maar bijv. met 1024x768,  dat kan vastleggen door:</p>
 =======
 -->
 						<h6>Kloon</h6>
@@ -460,7 +460,7 @@ xrandr --output VGA --mode 1024x768 --output LVDS --mode 1024x768
 </pre>
 
 <!--
-								<p>Om het tweede scherm uit te schakelen en om de normale resolutie van het primaire scherm te herstellen:</p>
+								<p>Om het tweede beeldscherm uit te schakelen en om de normale resolutie van het primaire scherm te herstellen:</p>
 -->
 								<p>Om het tweede beeldscherm af te sluiten en terug te gaan naar de normale resolutie op je hoofdscherm  voer je het volgende uit:</p>
 
@@ -482,7 +482,7 @@ xrandr --output LVDS --mode 1024x768 --output VGA --mode 1024x768 --left-of LVDS
 <!--
 							<p>Om multi screen uit te schakelen, kan het tweede scherm uitgeschakeld worden. Hierna kan de resolutie van het primaire scherm weer verhoogd worden (indien nodig):</p>
 -->
-							<p>Om de meerdere desktop scherm uit te zetten, hoef je alleen je tweede scherm uit te schakelen en de resolutie van het eerste scherm (indien nodig) te wijzigen:</p>
+							<p>Om de meerdere desktop schermen uit te zetten, hoef je alleen je tweede scherm uit te schakelen en de resolutie van het eerste scherm (indien nodig) te wijzigen:</p>
 
 <pre>
 xrandr --output VGA --off (--output LVDS --mode 1280x800)
