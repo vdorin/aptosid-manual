@@ -350,7 +350,7 @@ dpkg -l|awk '/^ii/{ print $2 }'|grep -v -e ^lib -e -dev -e $(uname -r) >/home/us
 	</div>
 	<div class="divider" id="efi">
 				<h2>(U)EFI booting</h2>
-							<p>The bootloader will be an EFI program installed to <span class="highlight-3">/boot/efi/EFI/aptosid/grubx64.efi </span> within your <span class="highlight-3"> EFI system partition </span> and mounted below <span class="highlight-3">/boot/efi/</span> on your installed system, provided the following conditions are met:</p>
+							<p>The bootloader will be an EFI program installed to <span class="highlight-3">/boot/efi/EFI/debian/grubx64.efi </span> within your <span class="highlight-3"> EFI system partition </span> and mounted below <span class="highlight-3">/boot/efi/</span> on your installed system, provided the following conditions are met:</p>
 
 						<ul>
  							<li>The motherboard needs to have EFI firmware with EFI booting enabled.</li>

@@ -374,7 +374,7 @@ dpkg -l|awk '/^ii/{ print $2 }'|grep -v -e ^lib -e -dev -e $(uname -r) >/home/us
 	</div>
 	<div class="divider" id="efi">
 				<h2>Arranque (U)EFI</h2>
-							<p>El cargador de arranque será un programa EFI instalado en <span class="highlight-3">/boot/efi/EFI/aptosid/grubx64.efi </span> en su <span class="highlight-3"> sistema de particiones EFI </span> y montado en <span class="highlight-3">/boot/efi/</span> en su sistema instalado, a condición de que se cumplan los siguientes requisitos:</p>
+							<p>El cargador de arranque será un programa EFI instalado en <span class="highlight-3">/boot/efi/EFI/debian/grubx64.efi </span> en su <span class="highlight-3"> sistema de particiones EFI </span> y montado en <span class="highlight-3">/boot/efi/</span> en su sistema instalado, a condición de que se cumplan los siguientes requisitos:</p>
 
 						<ul>
  							<li>La placa base tiene que tener firmware EFI con arranque EFI habilitado.</li>

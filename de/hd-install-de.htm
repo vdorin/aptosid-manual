@@ -372,7 +372,7 @@ dpkg -l|awk '/^ii/{ print $2 }'|grep -v -e ^lib -e -dev -e $(uname -r) >/home/us
 	</div>
 	<div class="divider" id="efi">
 				<h2>Systemstart mit (U)EFI</h2>
-							<p>Der Bootloader ist ein EFI-Programm, das nach <span class="highlight-3">/boot/efi/EFI/aptosid/grubx64.efi </span> innerhalb der <span class="highlight-3"> EFI-System-Partition </span> installiert und auf der Systeminstallation unterhalb von <span class="highlight-3">/boot/efi/</span> eingebunden wird. Folgende Bedingungen sind Voraussetzung:</p>
+							<p>Der Bootloader ist ein EFI-Programm, das nach <span class="highlight-3">/boot/efi/EFI/debian/grubx64.efi </span> innerhalb der <span class="highlight-3"> EFI-System-Partition </span> installiert und auf der Systeminstallation unterhalb von <span class="highlight-3">/boot/efi/</span> eingebunden wird. Folgende Bedingungen sind Voraussetzung:</p>
 
 						<ul>
  							<li>Die Hauptplatine (das Motherboard) muss EFI-Firmware haben und Booten mit EFI muss aktiviert sein.</li>

@@ -375,7 +375,7 @@ dpkg -l|awk '/^ii/{ print $2 }'|grep -v -e ^lib -e -dev -e $(uname -r) >/home/us
 	</div>
 	<div class="divider" id="efi">
 				<h2>Boot-are (U)EFI</h2>
-							<p>Bootloader-ul va fi un program EFI instalat în <span class="highlight-3">/boot/efi/EFI/aptosid/grubx64.efi </span> fiind parte a <span class="highlight-3"> sistemului de partiționate EFI </span> și mount-at sub <span class="highlight-3">/boot/efi/</span> în sistemul instalat, care trebuie să îndeplinească următoarele condiții:</p>
+							<p>Bootloader-ul va fi un program EFI instalat în <span class="highlight-3">/boot/efi/EFI/debian/grubx64.efi </span> fiind parte a <span class="highlight-3"> sistemului de partiționate EFI </span> și mount-at sub <span class="highlight-3">/boot/efi/</span> în sistemul instalat, care trebuie să îndeplinească următoarele condiții:</p>
 
 						<ul>
  							<li>Placa de bază trebuie să aibă activată opțiunea EFI firmware cu EFI booting.</li>

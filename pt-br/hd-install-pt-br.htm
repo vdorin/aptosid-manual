@@ -372,7 +372,7 @@ dpkg -l|awk '/^ii/{ print $2 }'|grep -v -e ^lib -e -dev -e $(uname -r) >/home/us
 	</div>
 	<div class="divider" id="efi">
 				<h2>Arranque (U)EFI</h2>
-							<p>O bootloader é um programa EFI que será instalado em  <span class="highlight-3">/boot/efi/EFI/aptosid/grubx64.efi </span> na <span class="highlight-3"> partição EFI do sistema </span> que é montada sobre <span class="highlight-3">/boot/efi/</span> no sistema instalado, desde que as condições seguintes sejam verificadas:</p>
+							<p>O bootloader é um programa EFI que será instalado em  <span class="highlight-3">/boot/efi/EFI/debian/grubx64.efi </span> na <span class="highlight-3"> partição EFI do sistema </span> que é montada sobre <span class="highlight-3">/boot/efi/</span> no sistema instalado, desde que as condições seguintes sejam verificadas:</p>
 						<ul>
  							<li>A placa-mãe possui firmware EFI e o arranque EFI está ativado.</li>
 							<li>Uma imagem iso actual de aptosid-amd64</li>
