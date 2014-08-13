@@ -389,60 +389,6 @@ update-grub
 </pre>
 
 							<p><span class="highlight-3">Pakiet Grub2 w Debianie jest zaprojektowany tak, że zmiana ręczna rzadko jest konieczna. </span></p>
-		<!--</div>
-		<div class="divider" id="grub1-grub2">
-				<h2>Aktualizacja Grub Legacy na Grub 2</h2>
-							<p><span class="highlight-2">Zalecamy czystą aktualizację na Grub 2 i całkowite usunięcie Grub 1.</span> Trzeba mieć świadomość, że można wszystko zepsuć należy więc zachować dużą ostrożność. </p>
-
-						<h6>Krok 1: </h6>
-							<p>Upewnij się, że system jest w pełni zaktualizowany <span class="highlight-3">(dist-upgrade w init 3)</span>.</p>
-<pre>
-apt-get update
-Ctrl+alt+F1
-init 3
-apt-get dist-upgrade
-init 5 &amp;&amp; exit
-</pre>
-						<h6>Krok 2:</h6>
-							<p>Usuń Grub 1, całkowicie: </p>
-<pre>
-rm -rf /boot/grub
-apt-get purge grub-gfxboot
-</pre>
-							<p>Efektem będzie to, że: <span class="highlight-3">fll-iso2usb* grub-gfxboot* install-usb-gui* </span> będą usuwane. Kliknij <span class="highlight-3">Y</span> aby potwierdzić.</p>
-
-						<h6>Krok 3:</h6>
-
-<pre>
-apt-get install grub2 os-prober
-</pre>
-
-<div class="screenshot"><img src="../lib/images-common/images-grub2/grub2-2.png" title="Grub2" alt="Grub2" /></div>
-							<p>Użyj klawisza TAB, aby wybrać OK. </p>
-
-<div class="screenshot"><img src="../lib/images-common/images-grub2/grub2-3.png" title="Grub2" alt="Grub2" /></div>
-							<p>Użyj klawisza TAB, aby wybrać OK. </p>
-
-<div class="screenshot"><img src="../lib/images-common/images-grub2/grub2-convert-1.png" title="Grub2-conversion 1" alt="Grub2-conversion 1" /></div>
-
-							<p>Użyj strzałek i spacji na klawiaturze, aby umieścić <span class="highlight-3">* (gwiazdkę) </span> i wybrać dysk na którym w MBR grub2 będzie zapisany.  <i>(Ten przykład to instalacja na dysku USB)</i>.</p>
-
-						<h6>Krok 4:</h6>
-<pre>
-update-grub
-</pre>
-
-
-						<h6>Krok 5:</h6>
-<pre>
-apt-get install install-usb-gui fll-iso2usb
-</pre>
-
-						<h6>Krok 6:</h6>
-							<p> Uruchom ponownie komputer i menu.cfg wyświetli listę systemów operacyjnych z jądrami podobną do tej:</p>
-<div class="screenshot"><img src="../lib/images-common/images-grub2/grub2-os-list.jpg" title="Grub2-OS list" alt="Grub2-OS list" /></div>
-
-							<p>Jeśli coś poszło nie tak i grub2 jest uszkodzony, przeczytaj <a href="sys-admin-grub2-pl.htm#chroot">Nadpisany lub uszkodzony Grub w MBR</a> </p>-->
 
 				  <h3>Edycja opcji startowych w grub2 poprzez ekran edycji </h3>
 <div class="screenshot"><img src="../lib/images-common/images-grub2/grub2-e-1.JPG" title="Grub2-Edit" alt="Grub2-Edit" /></div>

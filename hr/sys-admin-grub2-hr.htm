@@ -387,60 +387,6 @@ update-grub
 </pre>
 
 							<p><span class="highlight-3">The Debian Grub2 deb package is designed so that a manual alteration by you would be rarely needed.</span></p>
-		<!--</div>
-		<div class="divider" id="grub1-grub2">
-				<h2>Upgrading from Grub Legacy to Grub 2</h2>
-							<p><span class="highlight-2">We recommend to upgrade to Grub 2 cleanly and remove Grub 1 totally</span>. You should be aware that you can mess everything up so be very careful.</p>
-
-						<h6>Step 1: </h6>
-							<p>Ensure that your system is fully <span class="highlight-3">dist-upgraded in init 3. </span></p>
-<pre>
-apt-get update
-Ctrl+alt+F1
-init 3
-apt-get dist-upgrade
-init 5 &amp;&amp; exit
-</pre>
-						<h6>Step 2:</h6>
-							<p>Remove Grub 1 totally:</p>
-<pre>
-rm -rf /boot/grub
-apt-get purge grub-gfxboot
-</pre>
-							<p>The result will be that <span class="highlight-3">fll-iso2usb* grub-gfxboot* install-usb-gui* </span> will be removed.  Type <span class="highlight-3">Y</span> to confirm.</p>
-
-						<h6>Step 3:</h6>
-
-<pre>
-apt-get install grub2 os-prober
-</pre>
-
-<div class="screenshot"><img src="../lib/images-common/images-grub2/grub2-2.png" title="Grub2" alt="Grub2" /></div>
-							<p>Use the tab key to select OK</p>
-
-<div class="screenshot"><img src="../lib/images-common/images-grub2/grub2-3.png" title="Grub2" alt="Grub2" /></div>
-							<p>Use the tab key to select OK</p>
-
-<div class="screenshot"><img src="../lib/images-common/images-grub2/grub2-convert-1.png" title="Grub2-conversion 1" alt="Grub2-conversion 1" /></div>
-
-							<p>Use the keyboard arrow and space bar to place an <span class="highlight-3">* (asterisk) </span> to select what hard drive MBR Grub2 is going to write to. <i>(This example to installing to a USB drive)</i>.</p>
-
-						<h6>Step 4:</h6>
-<pre>
-update-grub
-</pre>
-
-
-						<h6>Step 5:</h6>
-<pre>
-apt-get install install-usb-gui fll-iso2usb
-</pre>
-
-						<h6>Step 6:</h6>
-							<p> Reboot your PC and the menu.cfg will display the kernel and Operating System list like this:</p>
-<div class="screenshot"><img src="../lib/images-common/images-grub2/grub2-os-list.jpg" title="Grub2-OS list" alt="Grub2-OS list" /></div>
-
-							<p>Should there be a corruption or something go wrong refer to <a href="sys-admin-grub2-en.htm#chroot">Overwritten or corrupted Grub2 in the MBR</a> </p>-->
 
 				  <h3>Editing Grub2 boot options via the edit screen</h3>
 <div class="screenshot"><img src="../lib/images-common/images-grub2/grub2-e-1.JPG" title="Grub2-Edit" alt="Grub2-Edit" /></div>

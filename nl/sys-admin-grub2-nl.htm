@@ -388,57 +388,6 @@ update-grub
 </pre>
 
 							<p><span class="highlight-3">Het Debian Grub2 deb pakket is zo ontworpen dat een handmatige wijziging zelden voorkomt.</span></p>
-		<!--</div>
-		<div class="divider" id="grub1-grub2">
-					      <h6>Stap 1: </h6>
-							<p>Gewis je ervan dat je systeem volledig update via <span class="highlight-3">dist-upgrade in init 3. </span></p>
-<pre>
-apt-get update
-Ctrl+alt+F1
-init 3
-apt-get dist-upgrade
-init 5 &amp;&amp; exit
-</pre>
-						<h6>Stap 2:</h6>
-							<p>Verwijder Grub 1 volledig:</p>
-<pre>
-rm -rf /boot/grub
-apt-get purge grub-gfxboot
-</pre>
-							<p>Het resultaat zal zijn dat <span class="highlight-3">fll-iso2usb* grub-gfxboot* install-usb-gui* </span> verwijderd worden.  Type <span class="highlight-3">Y</span> ter bevestiging.</p>
-
-						<h6>Stap 3:</h6>
-
-<pre>
-apt-get install grub2 os-prober
-</pre>
-
-<div class="screenshot"><img src="../lib/images-common/images-grub2/grub2-2.png" title="Grub2" alt="Grub2" /></div>
-							<p>Gebruik de TAB toest om OK te selecteren</p>
-
-<div class="screenshot"><img src="../lib/images-common/images-grub2/grub2-3.png" title="Grub2" alt="Grub2" /></div>
-							<p>Gebruik de TAB toest om OK te selecteren</p>
-
-<div class="screenshot"><img src="../lib/images-common/images-grub2/grub2-convert-1.png" title="Grub2-conversion 1" alt="Grub2-conversion 1" /></div>
-
-							<p>Gebruik de toetsenbord pijl en spatie toets om een <span class="highlight-3">* (asterisk) </span> te plaatsen om de harddisk te selecteren waar de MBR van Grub2 op geschrecen moet worden. <i>(Dit voorbeeld installeert het op een USB drive)</i>.</p>
-
-						<h6>Stap 4:</h6>
-<pre>
-update-grub
-</pre>
-
-
-						<h6>Stap 5:</h6>
-<pre>
-apt-get install install-usb-gui fll-iso2usb
-</pre>
-
-						<h6>Stap 6:</h6>
-							<p> Herstart je PC en het menu.cfg zal de kernel en Operating Systeem lijst weergeven zoals dit:</p>
-<div class="screenshot"><img src="../lib/images-common/images-grub2/grub2-os-list.jpg" title="Grub2-OS list" alt="Grub2-OS list" /></div>
-
-							<p>Indien er een corruptie is of er gaat iets mis, lees dan dit <a href="sys-admin-grub2-nl.htm#chroot">Overschreven of foutieve Grub2 in de MBR</a> </p>-->
 
 				  <h3>Wijzigen van de Grub2 boot opties via het edit scherm</h3>
 <div class="screenshot"><img src="../lib/images-common/images-grub2/grub2-e-1.JPG" title="Grub2-Edit" alt="Grub2-Edit" /></div>

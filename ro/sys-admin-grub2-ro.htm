@@ -389,60 +389,6 @@ update-grub
 </pre>
 
 							<p><span class="highlight-3">Pachetul Debian Grub2 este astfel proiectat încât o modificare manuală de către voi să fie necesară foarte rar.</span></p>
-		<!--</div>
-		<div class="divider" id="grub1-grub2">
-				<h2>Trecerea de la Grub Legacy la Grub2</h2>
-							<p><span class="highlight-2">Vă recomandăm să faceți o trecere curată la Grub2 și să îndepărtați total Grub1. </span> Trebuie să vă avertizăm că puteți da totul peste cap deci fiți foarte atenți !.</p>
-
-						<h6>Pasul 1: </h6>
-							<p>Asigurați-vă că sistemul vostru aste complet adus la zi prin <span class="highlight-3"><i>dist-upgrade</i> în <i>init 3</i>. </span></p>
-<pre>
-apt-get update
-Ctrl+alt+F1
-init 3
-apt-get dist-upgrade
-init 5 &amp;&amp; exit
-</pre>
-						<h6>Pasul 2:</h6>
-							<p>Îndepărtați Grub1 total:</p>
-<pre>
-rm -rf /boot/grub
-apt-get purge grub-gfxboot
-</pre>
-							<p>Rezultatul va fi:  <span class="highlight-3">fll-iso2usb* grub-gfxboot* install-usb-gui* will be removed</span><br />  Tipăriți <span class="highlight-3">Y</span> pentru confirmare.</p>
-
-						<h6>Pasul 3:</h6>
-
-<pre>
-apt-get install grub2 os-prober
-</pre>
-
-<div class="screenshot"><img src="../lib/images-common/images-grub2/grub2-2.png" title="Grub2" alt="Grub2" /></div>
-							<p>Folosiți tasta 'Tab' pentru a selecta  'OK'</p>
-
-<div class="screenshot"><img src="../lib/images-common/images-grub2/grub2-3.png" title="Grub2" alt="Grub2" /></div>
-							<p>Folosiți tasta 'Tab' pentru a selecta  'OK'</p>
-
-<div class="screenshot"><img src="../lib/images-common/images-grub2/grub2-convert-1.png" title="Grub2-conversion 1" alt="Grub2-conversion 1" /></div>
-
-							<p>Folosiți săgețile de la tastatură și tasta de spațiu pentru a plasa un <span class="highlight-3">* (asterisc) </span> ca să selectați pe a cărui MBR de hard drive urmează să scrie Grub2. <i>(Acest exemplu arată instalarea pe un USB drive)</i>.</p>
-
-						<h6>Pasul 4:</h6>
-<pre>
-update-grub
-</pre>
-
-
-						<h6>Pasul 5:</h6>
-<pre>
-apt-get install install-usb-gui
-</pre>
-
-						<h6>Pasul 6:</h6>
-							<p> Reboot-ați PC-ul și <i>menu.cfg</i> va afișa lista cu kernel-urile și sistemele de operare așa:</p>
-<div class="screenshot"><img src="../lib/images-common/images-grub2/grub2-os-list.jpg" title="Grub2-OS list" alt="Grub2-OS list" /></div>
-
-							<p>Dacă ceva e în neregulă sau merge prost uitați-vă la <a href="sys-admin-grub2-ro.htm#chroot">Suprascrierea sau stricarea lui Grub2 în MBR</a> </p>-->
 
 				  <h3>Modificarea opțiunilor de boot în Grub2 folosind ecranul de editare</h3>
 <div class="screenshot"><img src="../lib/images-common/images-grub2/grub2-e-1.JPG" title="Grub2-Edit" alt="Grub2-Edit" /></div>

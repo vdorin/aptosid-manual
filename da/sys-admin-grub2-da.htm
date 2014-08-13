@@ -389,60 +389,6 @@ update-grub
 </pre>
 
 							<p><span class="highlight-3">Debian Grub2 deb pakken er designet således at manuelle ændringer foretaget af dig sjældent er nødvendige.</span></p>
-		<!--</div>
-		<div class="divider" id="grub1-grub2">
-				<h2>opgradering fra Grub Legacy til Grub 2</h2>
-							<p><span class="highlight-2">Vi anbefaler at opgradere til Grub 2 rent, og fjerne Grub 1 helt</span>. Du skal være opmærksom på at du kan lave seriøst ged i den her, så vær forsigtig.</p>
-
-						<h6>1: </h6>
-							<p>Forsikre dig at dit systemer fuldt <span class="highlight-3">dist-upgraded i init 3. </span></p>
-<pre>
-apt-get update
-Ctrl+alt+F1
-init 3
-apt-get dist-upgrade
-init 5 &amp;&amp; exit
-</pre>
-						<h6>2:</h6>
-							<p>Fjern Grub 1 helt fra systemet:</p>
-<pre>
-rm -rf /boot/grub
-apt-get purge grub-gfxboot
-</pre>
-							<p>Resultatet er at <span class="highlight-3">fll-iso2usb* grub-gfxboot* install-usb-gui* </span> vil blive fjernet. Tast <span class="highlight-3">Y</span> for at bekræfte dette (eller J hvis dit system er dansk).</p>
-
-						<h6>3:</h6>
-
-<pre>
-apt-get install grub2 os-prober
-</pre>
-
-<div class="screenshot"><img src="../lib/images-common/images-grub2/grub2-2.png" title="Grub2" alt="Grub2" /></div>
-							<p>Brug tabulator tasten til at vælge OK</p>
-
-<div class="screenshot"><img src="../lib/images-common/images-grub2/grub2-3.png" title="Grub2" alt="Grub2" /></div>
-							<p>Brug tabulator tasten til at vælge OK</p>
-
-<div class="screenshot"><img src="../lib/images-common/images-grub2/grub2-convert-1.png" title="Grub2-conversion 1" alt="Grub2-conversion 1" /></div>
-
-							<p>Brug tastaturets piletaster og mellemrumstasten til at placere et <span class="highlight-3">* (stjerne) </span> for at vælge hvilken harddisk MBR som Grub2 skal skrives til. <i>(I dette eksempel installeres til en USB-nøgle)</i>.</p>
-
-						<h6>4:</h6>
-<pre>
-update-grub
-</pre>
-
-
-						<h6>5:</h6>
-<pre>
-apt-get install install-usb-gui fll-iso2usb
-</pre>
-
-						<h6>Step 6:</h6>
-							<p>Genstart din PC og menu.cfg viser nu din kernel og Operativ system liset som det følgende:</p>
-<div class="screenshot"><img src="../lib/images-common/images-grub2/grub2-os-list.jpg" title="Grub2-OS list" alt="Grub2-OS list" /></div>
-
-							<p>Hvis der opstaår korrupte filer eller noget andet går galt, læs da venligst <a href="sys-admin-grub2-da.htm#chroot">Overskrevet eller korrumperet Grub2 i MBR</a> </p>-->
 
 				  <h3>Redigering af Grub2 boot muligheder via redigerings skærmen</h3>
 <div class="screenshot"><img src="../lib/images-common/images-grub2/grub2-e-1.JPG" title="Grub2-Edit" alt="Grub2-Edit" /></div>

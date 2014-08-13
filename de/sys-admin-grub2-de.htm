@@ -389,60 +389,6 @@ update-grub
 </pre>
 
 							<p><span class="highlight-3">Das Debianpaket von Grub2 ist so gestaltet, dass eine manuelle Änderung selten erforderlich ist.</span></p>
-		<!--</div>
-		<div class="divider" id="grub1-grub2">
-				<h2>Aktualisierung von Grub Legacy auf Grub2</h2>
-							<p><span class="highlight-2">Wir empfehlen eine saubere Aktualisierung auf Grub2 und die gänzliche Entfernung von Grub 1</span>. Man sollte sich dessen bewusst sein, dass man bei fehlerhaftem Vorgehen das Bootsystem zerstören kann und daher sehr umsichtig vorgehen soll.</p>
-
-						<h6>Schritt 1: </h6>
-							<p>Stellen Sie sicher, dass Ihr ganzes System aktualisiert ist: <span class="highlight-3">dist-upgrade in Runlevel 3 (init 3)</span>.</p>
-<pre>
-apt-get update
-Ctrl+alt+F1
-init 3
-apt-get dist-upgrade
-init 5 &amp;&amp; exit
-</pre>
-						<h6>Schritt 2:</h6>
-							<p>Vollständige Entfernung von Grub 1:</p>
-<pre>
-rm -rf /boot/grub
-apt-get purge grub-gfxboot
-</pre>
-							<p>Als Folge werden <span class="highlight-3">fll-iso2usb* grub-gfxboot* install-usb-gui* </span> entfernt.  Geben Sie <span class="highlight-3">Y</span> zur Bestätigung ein.</p>
-
-						<h6>Schritt 3:</h6>
-
-<pre>
-apt-get install grub2 os-prober
-</pre>
-
-<div class="screenshot"><img src="../lib/images-common/images-grub2/grub2-2.png" title="Grub2" alt="Grub2" /></div>
-							<p>Verwenden Sie die TAB-Taste, um OK zu wählen</p>
-
-<div class="screenshot"><img src="../lib/images-common/images-grub2/grub2-3.png" title="Grub2" alt="Grub2" /></div>
-							<p>Verwenden Sie die TAB-Taste, um OK zu wählen</p>
-
-<div class="screenshot"><img src="../lib/images-common/images-grub2/grub2-convert-1.png" title="Grub2-conversion 1" alt="Grub2-conversion 1" /></div>
-
-							<p>Verwenden Sie die Tastaturpfeile und die Leertaste, um einen <span class="highlight-3">* (Stern) </span> zu setzen, auf welcher Festplatte Grub2 in den MBR geschrieben werden soll. <i>(Das folgende Beispiel zeigt eine Installation auf ein USB-Laufwerk)</i>.</p>
-
-						<h6>Schritt 4:</h6>
-<pre>
-update-grub
-</pre>
-
-
-						<h6>Schritt 5:</h6>
-<pre>
-apt-get install install-usb-gui fll-iso2usb
-</pre>
-
-						<h6>Schritt 6:</h6>
-							<p> Starten Sie Ihren PC neu und menu.cfg zeigt Kernel und Betriebssystem wie in diesem Beispiel an:</p>
-<div class="screenshot"><img src="../lib/images-common/images-grub2/grub2-os-list.jpg" title="Grub2-OS list" alt="Grub2-OS list" /></div>
-
-							<p>Sollte etwas falsch gelaufen und Grub2 korrumpiert sein, lesen Sie <a href="sys-admin-grub2-de.htm#chroot">Überschriebener oder korrumpierter Grub2 im MBR</a> </p>-->
 
 				  <h3>Eingabe von Grub2-Bootoptionen mit Hilfe des Bearbeitungsmodus</h3>
 <div class="screenshot"><img src="../lib/images-common/images-grub2/grub2-e-1.JPG" title="Grub2-Edit" alt="Grub2-Edit" /></div>

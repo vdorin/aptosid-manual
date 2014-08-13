@@ -389,60 +389,6 @@ update-grub
 </pre>
 
 							<p><span class="highlight-3">Debian-пакет grub2 настолько хорошо устроен, что производимые вручную изменения редко требуються.</span></p>
-		<!--</div>
-		<div class="divider" id="grub1-grub2">
-				<h2>Обновление с grub1 на grub2</h2>
-							<p><span class="highlight-2">Мы рекомендуем перейти на grub2 и полностью удалить grub1</span>. Вы должны знать, что Bы можете все испортить, так что будьте очень осторожны.</p>
-
-						<h6>Шаг 1: </h6>
-							<p>Убедитесь в том, что Ваша система обновлена​​ <span class="highlight-3">dist-upgrade на уровне загрузки init3. </span></p>
-<pre>
-apt-get update
-Ctrl+alt+F1
-init 3
-apt-get dist-upgrade
-init 5 &amp;&amp; exit
-</pre>
-						<h6>Шаг 2:</h6>
-							<p>Удалите полностью grub1:</p>
-<pre>
-rm -rf /boot/grub
-apt-get purge grub-gfxboot
-</pre>
-							<p>В результате чего, программы <span class="highlight-3">fll-iso2usb*, grub-gfxboot* и install-usb-gui* </span> будут тоже удалены. Введите <span class="highlight-3">Y</span> для подтверждения.</p>
-
-						<h6>Шаг 3:</h6>
-
-<pre>
-apt-get install grub2 os-prober
-</pre>
-
-<div class="screenshot"><img src="../lib/images-common/images-grub2/grub2-2.png" title="grub2" alt="grub2" /></div>
-							<p>Нажмите кнопкy TAB на вашей клавиатуре для перехода на OK</p>
-
-<div class="screenshot"><img src="../lib/images-common/images-grub2/grub2-3.png" title="grub2" alt="grub2" /></div>
-							<p>Нажмите кнопкy TAB на вашей клавиатуре для перехода на OK</p>
-
-<div class="screenshot"><img src="../lib/images-common/images-grub2/grub2-convert-1.png" title="grub2-conversion 1" alt="grub2-conversion 1" /></div>
-
-							<p>Используйте стрелки клавиатуры и пробел, чтобы поставить <span class="highlight-3">* (asterisk) </span> чтобы выбрать то, чтобы grub2 начал записывать MBR на жестком диске. <i>(В данном примере для установки на диск, USB)</i>.</p>
-
-						<h6>Шаг 4:</h6>
-<pre>
-update-grub
-</pre>
-
-
-						<h6>Шаг 5:</h6>
-<pre>
-apt-get install install-usb-gui fll-iso2usb
-</pre>
-
-						<h6>Шаг 6:</h6>
-							<p>Перезагрузите компьютер. После этого, grub-меню (menu.cfg) показывает ядра и список операционных систем, например это:</p>
-<div class="screenshot"><img src="../lib/images-common/images-grub2/grub2-os-list.jpg" title="grub2-OS list" alt="grub2-OS list" /></div>
-
-							<p>Если возникли проблемы, прочитайте внимательно эту главу <a href="sys-admin-grub2-ru.htm#chroot">Восстановление grub с помощью chroot</a>.</p>-->
 
 				  <h3>Редактирование Grub2-параметpов загрузки через на экран</h3>
 <div class="screenshot"><img src="../lib/images-common/images-grub2/grub2-e-1.JPG" title="grub2-Edit" alt="grub2-Edit" /></div>

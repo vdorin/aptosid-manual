@@ -389,60 +389,6 @@ update-grub
 </pre>
 
 							<p><span class="highlight-3">Debian-пакет grub2 настільки добре влаштований, що вироблене вручну зміна рідко потрібнa.</span></p>
-		<!--</div>
-		<div class="divider" id="grub1-grub2">
-				<h2>Оновлення з grub1 на grub2</h2>
-							<p><span class="highlight-2">Ми рекомендуємо чисто перейти на grub2 і повністю видалити grub1</span>. Ви повинні знати що Ви можете все зіпсувати, так що будьте дуже обережні.</p>
-
-						<h6>Першим кроком Ви робите:</h6>
-							<p>Переконайтеся в тому, що Ваша система оновлена через <span class="highlight-3"> dist-upgrade на рівні завантаження init3 </span></p>
-<pre>
-apt-get update
-Ctrl+alt+F1
-init 3
-apt-get dist-upgrade
-init 5 &amp;&amp; exit
-</pre>
-						<h6>Другим кроком Ви робите:</h6>
-							<p>Видаліть повністю  Grub 1:</p>
-<pre>
-rm -rf /boot/grub
-apt-get purge grub-gfxboot
-</pre>
-							<p>В результаті чого, програми <span class="highlight-3">fll-iso2usb* grub-gfxboot* install-usb-gui* </span> будуть видалені. Нажміть букву <span class="highlight-3">Y</span> на Вашій клавіатурі для підтвердження.</p>
-
-						<h6>Третім кроком Ви робите:</h6>
-
-<pre>
-apt-get install grub2 os-prober
-</pre>
-
-<div class="screenshot"><img src="../lib/images-common/images-grub2/grub2-2.png" title="Grub2" alt="Grub2" /></div>
-							<p>Нажміть кнопкy TAB на Вашій клавіатурі щоб перейти на OK</p>
-
-<div class="screenshot"><img src="../lib/images-common/images-grub2/grub2-3.png" title="Grub2" alt="Grub2" /></div>
-							<p>Нажміть кнопкy TAB на Вашій клавіатурі щоб перейти на OK</p>
-
-<div class="screenshot"><img src="../lib/images-common/images-grub2/grub2-convert-1.png" title="Grub2-conversion 1" alt="Grub2-conversion 1" /></div>
-
-							<p>Використовуйте стрілки клавіатури і пробіл, щоб поставити <span class="highlight-3">* (asterisk) </span> щоб вибрати те, щоб grub2 почав запісівать MBR на свій диск. <i>(У даному прикладі для установки на диск, USB) </i>.</p>
-
-						<h6>Четвертим кроком Ви робите:</h6>
-<pre>
-update-grub
-</pre>
-
-
-						<h6> П'ятим кроком Ви робите:</h6>
-<pre>
-apt-get install install-usb-gui fll-iso2usb
-</pre>
-
-						<h6>Шостим кроком Ви робите:</h6>
-							<p> Перезавантажте комп'ютер і menu.cfg покаже ядра і список операційних систем, наприклад це:</p>
-<div class="screenshot"><img src="../lib/images-common/images-grub2/grub2-os-list.jpg" title="Grub2-OS list" alt="Grub2-OS list" /></div>
-
-							<p>Якщо будуть проблеми, і Ви нічого не побачете, не турбуйтесь а прочитайте уважно цю сторінку нашого керівництва <a href="sys-admin-grub2-uk.htm#chroot">Використання chroot для лікування пошкодженого або перезаписаного MBR на Grub </a> </p>-->
 
 				  <h3>Редагування Grub2-параметpiв завантаження через екран</h3>
 <div class="screenshot"><img src="../lib/images-common/images-grub2/grub2-e-1.JPG" title="Grub2-Edit" alt="Grub2-Edit" /></div>
