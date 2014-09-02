@@ -360,14 +360,14 @@
 <div class="box block">
 			<div class="highlight-2">НІКОЛИ не робіть оновлення системи в активний X-оболонці!<div class="highlight-4"> Завжди перевіряйте поточні попередження на сторінці <a href="http://aptosid.com">aptosid</a>. Ці попередження існують не просто так, а просто через характер нестійкої гілки Debian unstable, i попередження оновлюються щоденно.</div>
 <pre>
-## Log out of KDE.
+## Log out of KDE.  
 ## Go to Textmode by doing Ctrl+Alt+F1
 ## logon as root, and then type:
-init 3
+service kdm stop  ##If using another window manager replace kdm, for example with gdm
 apt-get update
 apt-get dist-upgrade
 apt-get clean
-init 5 &amp;&amp; exit
+service kdm start ##If using another window manager replace kdm, for example with gdm
 </pre>
 			<div class="highlight-2">НІКОЛИ НЕ РОБІТЬ СИСТЕМНЕ ОНОВЛЕННЯ (dist-upgrade) / [оновлення] зі adept, synaptic або aptitude. <a href="sys-admin-apt-uk.htm#apt-upgrade"> Читайте розділ цього керівництва 'Оновлення встановленої системи'</a></div>
 
@@ -386,7 +386,7 @@ init 5 &amp;&amp; exit
 
 				
 
-		<div id="rev">Сторінка останний раз переглянута 14/08/2010 0100 UTC</div>
+		<div id="rev">Сторінка останний раз переглянута 03/09/2014 0630 UTC</div>
 </div>
 </div>
 </body>

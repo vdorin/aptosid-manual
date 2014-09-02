@@ -358,15 +358,14 @@
 <div class="box block">
 			<div class="highlight-2">JAMAIS faça um dist-upgrade (atualização do sistema) nem upgrade (atualização de aplicações) dentro do ambiente X.<div class="highlight-4"> Sempre dê uma olhada na seção "Current Warnings" (Avisos Atuais) na página do <a href="http://aptosid.com">aptosid</a>. Toda vez que a atualização de um pacote trouxer problemas para o sistema como um todo, haverá um aviso solicitando que não se façam atualizações até que a solução seja encontrada, o que normalmente acontece no mesmo dia. Isso se deve à natureza instável do SID, no qual o aptosid se baseia.</div>
 <pre>
-## Saia do KDE deste modo:
-## 1 - Pressione Ctrl+Alt+F1 para ir para o modo Texto
-## 2 - Logue-se como root e digite:
-init 3 [ENTER]
-Depois digite sucessivamente:
-1 - apt-get update
-2 - apt-get dist-upgrade
-3 - apt-get clean
-init 5 &amp;&amp; exit
+## Log out of KDE.  
+## Go to Textmode by doing Ctrl+Alt+F1
+## logon as root, and then type:
+service kdm stop  ##If using another window manager replace kdm, for example with gdm
+apt-get update
+apt-get dist-upgrade
+apt-get clean
+service kdm start ##If using another window manager replace kdm, for example with gdm
 </pre>
 			<div class="highlight-2">NUNCA DIST-UPGRADE [ou UPGRADE] com adept, synaptic ou aptitude <a href="sys-admin-apt-pt-br.htm#apt-upgrade"> VEJA: Atualizando todo o sistema</a>.</div>
 
@@ -387,7 +386,7 @@ init 5 &amp;&amp; exit
 							<p>É por isso que o Debian usa exclusivamente o apt-get, não uma das outras ferramentas de gerenciamento de pacotes.</p>
 
 
-	<div id="rev">Page last revised  14/08/2010 0100 UTC </div>
+	<div id="rev">Page last revised  03/09/2014 0630 UTC </div>
 </div>
 </div>
 </body>

@@ -388,26 +388,15 @@
 			#### -->
 			<div class="highlight-2">決して決して、絶対にdist-upgradeやupgradeをXの上から行わないこと。<div class="highlight-4"> まず<a href="http://aptosid.com">aptosid</a> のメイン・サイトで最新の警告を読みます。 unstableのレポジトリーの性質上、日々新しいパッケージがアップデートされるため、dist-updateに付きそう危険をあらかじめ知らせるための警告です。</div>
 
-
-<!--- ####
 <pre>
-Log out of KDE.
-Go to Textmode by doing Ctrl+Alt+F1
-logon as root, and then in type init 3
-apt-get update
-apt-get dist-upgrade
-init 5 &amp;&amp; exit
-</pre>
-#### -->
-<pre>
-## Log out of KDE.
+## Log out of KDE.  
 ## Go to Textmode by doing Ctrl+Alt+F1
-## logon as root, and then in type:
-init 3
+## logon as root, and then type:
+service kdm stop  ##If using another window manager replace kdm, for example with gdm
 apt-get update
 apt-get dist-upgrade
 apt-get clean
-init 5 &amp;&amp; exit
+service kdm start ##If using another window manager replace kdm, for example with gdm
 </pre>
 			<!--- ####
 			<div class="highlight-2">NEVER DIST-UPGRADE [or UPGRADE] with adept, synaptic or aptitude <a href="sys-admin-apt-en.htm#apt-upgrade"> Read  Upgrade of an Installed System</a> ] </div>
@@ -447,7 +436,7 @@ init 5 &amp;&amp; exit
 				#### -->
 				<p>そのためDebian自体の配布でも他のパッケージマネージャではなく、apt-getが使われているわけです。</p>
 
-				<div id="rev">Page last revised 14/08/2010 0100 UTC </div>
+				<div id="rev">Page last revised 03/09/2014 0630 UTC </div>
 
 </div>
 </div>

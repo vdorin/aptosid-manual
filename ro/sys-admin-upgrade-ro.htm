@@ -360,15 +360,14 @@
 <div class="box block">
 			<div class="highlight-2">ABSOLUT NICIODATĂ să nu faceţi <i>'dist-upgrade'</i> şi nici măcar <i>'upgrade'</i> în timp ce lucraţi în X<div class="highlight-4"> Întotdeauna verificaţi <i>Current Warnings</i> de pe pagina principală <a href="http://aptosid.com">aptosid</a>. Aceste avertismente există acolo cu un motiv bine întemeiat şi din cauza naturii <i>unstable</i> şi a update-ului zilnic.</div>
 <pre>
-## Log out din KDE.
-## Intrați în Textmode folosind combinația Ctrl+Alt+F1
-## logați-vă ca <i>root</i>, apoi tipăriți:
-init 3
+## Log out of KDE.  
+## Go to Textmode by doing Ctrl+Alt+F1
+## logon as root, and then type:
+service kdm stop  ##If using another window manager replace kdm, for example with gdm
 apt-get update
 apt-get dist-upgrade
 apt-get clean
-init 5 &amp;&amp; exit
-
+service kdm start ##If using another window manager replace kdm, for example with gdm
 </pre>
 			<div class="highlight-2">NICIODATĂ NU FACEŢI DIST-UPGRADE [sau UPGRADE] cu <i>adept</i>, <i>synaptic</i> sau <i>aptitude</i> <a href="sys-admin-apt-ro.htm#apt-upgrade"> VEDEŢI Upgrade-ul unui Sistem Instalat</a></div>
 
@@ -388,7 +387,7 @@ init 5 &amp;&amp; exit
 							<p>Acesta este motivul pentru care debian foloseşte <i>apt-get</i> şi nu alte managere de pachete.</p>
 
 
-	<div id="rev">Content last revised 14/08/2010 0100 UTC</div>
+	<div id="rev">Content last revised 03/09/2014 0630 UTC</div>
 </div>
 </div>
 </body>

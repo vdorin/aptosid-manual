@@ -360,14 +360,14 @@
 <div class="box block">
 			<div class="highlight-2">MAI, MAI fare un dist-upgrade e nemmeno un upgrade mentre si è nell'interfaccia grafica X<div class="highlight-4"> Fare sempre un controllo ai Current Warnings 'avvisi di attenzione sul sito principale di <a href="http://aptosid.com">aptosid</a>. Questi avvisi sono lì per una qualche ragione, a caus della natura instabile e degli aggiornamenti su base giornaliera.</div>
 <pre>
-## chiudere la sessione KDE.
-## andare in motalità testo con Ctrl+Alt+F1
-## autenticarsi come root, poi:
-init 3
+## Log out of KDE.  
+## Go to Textmode by doing Ctrl+Alt+F1
+## logon as root, and then type:
+service kdm stop  ##If using another window manager replace kdm, for example with gdm
 apt-get update
 apt-get dist-upgrade
 apt-get clean
-init 5 &amp;&amp; exit
+service kdm start ##If using another window manager replace kdm, for example with gdm
 </pre>
 			<div class="highlight-2">MAI, MAI FARE DIST-UPGRADE [o UPGRADE] con adept, synaptic o aptitude. <a href="sys-admin-apt-it.htm#apt-upgrade"> Leggere "Aggiornamento di un sistema installato".</a></div>
 	</div>
@@ -385,7 +385,7 @@ init 5 &amp;&amp; exit
 
 							<p>Questa è la ragione per cui le Debian usano apt-get, e non altri strumenti di gestione dei pacchetti.</p>
 
-		<div id="rev">Page last revised 14/08/2010 0100 UTC</div>
+		<div id="rev">Page last revised 03/09/2014 0630 UTC</div>
 </div>
 </div>
 </body>

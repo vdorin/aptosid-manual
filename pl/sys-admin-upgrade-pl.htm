@@ -357,15 +357,16 @@
 
 <div class="box block">
 			<div class="highlight-2">NIGDY nie wykonuj dist-upgrade podczas sesji X<div class="highlight-4"> Zawsze sprawdzaj bieżące ostrzeżenia na głównej stronie <a href="http://aptosid.com">aptosid.com</a>. Ostrzeżenie te wynikają z natury niestabilnej gałęzi dystrybucji i są aktualizowane codziennie.</div>
+
 <pre>
-## Wyloguj się z KDE.
-## Przejdź do trybu tekstowego poprzez kombinację klawiszy Ctrl+Alt+F1
-## Zaloguj się jako root i wpis:
-z init 3
+## Log out of KDE.  
+## Go to Textmode by doing Ctrl+Alt+F1
+## logon as root, and then type:
+service kdm stop  ##If using another window manager replace kdm, for example with gdm
 apt-get update
 apt-get dist-upgrade
 apt-get clean
-init 5 &amp;&amp; exit
+service kdm start ##If using another window manager replace kdm, for example with gdm
 </pre>
 			<div class="highlight-2">NIGDY NIE DOKONUJ DIST-UPGRADE [lub UPGRADE] przy pomocy adept, synaptic lub aptitude <a href="sys-admin-apt-pl.htm#apt-upgrade"> PATRZ: Aktualizacja zainstalowanego systemu</a>:</div>
 
@@ -386,7 +387,7 @@ init 5 &amp;&amp; exit
 				<p>To jest powód, dla którego deweloperzy debiana używają apt-get, a nie inne menadżery pakietów.</p>
 
 
-	<div id="rev">Strona ostatnio modyfikowana 14/08/2010 0100 UTC</div>
+	<div id="rev">Strona ostatnio modyfikowana 03/09/2014 0630 UTC</div>
 </div>
 </div>
 </body>

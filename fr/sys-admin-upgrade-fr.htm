@@ -363,14 +363,14 @@
 <div class="highlight-2">NE TENTEZ JAMAIS, ET EN AUCUN CAS, un dist-upgrade ou un upgrade avec le serveur graphique X activé !<div class="highlight-4"> ET TOUJOURS, prenez connaissance des derniers avertissements susceptibles d'être publiés sur site Internet d'<a href="http://aptosid.com/">aptosid</a>. Celà s'impose du fait de l'actualisation quotidienne de Debian Sid, qui peut dans certain cas rendre l'opération périlleuse, en particulier si vous êtes débutants.</div>
 
 <pre>
-## Sortez de KDE. (déconnexion / Terminer la session)
-## Passez en mode console en appuyant sur Ctrl+Alt+F1
-## loguez-vous en tant que root, puis entrez:
-init 3
+## Log out of KDE.  
+## Go to Textmode by doing Ctrl+Alt+F1
+## logon as root, and then type:
+service kdm stop  ##If using another window manager replace kdm, for example with gdm
 apt-get update
 apt-get dist-upgrade
 apt-get clean
-init 5 &amp;&amp; exit
+service kdm start ##If using another window manager replace kdm, for example with gdm
 </pre>
 
 
@@ -393,7 +393,7 @@ init 5 &amp;&amp; exit
 
 							<p>C'est pourquoi les habitués de Debian utilisent apt-get et non d'autres outils de gestion des paquetages.</p>
 
-	<div id="rev">Dernière Révision le 14/08/2010 0100 UTC</div>
+	<div id="rev">Dernière Révision le 03/09/2014 0630 UTC</div>
 </div>
 </div>
 </body>

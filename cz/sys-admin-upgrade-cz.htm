@@ -362,17 +362,14 @@
 <!--			<div class="highlight-2">NEVER EVER do a dist-upgrade nor upgrade whilst in X<div class="highlight-4"> Always check Current Warnings on the <a href="http://aptosid.com">aptosid</a> main web site. These warnings are there for a reason because of the nature of unstable and updated on a daily basis.</div>-->
 			<div class="highlight-2">VŮBEC NIKDY neprovádějte dist-upgrade, ani upgrade, pokud se nacházíte v X.<div class="highlight-4"> Vždy si prověřte aktuální varování na stránkaách <a href="http://aptosid.com">aptosidu</a>. Tyto varování jsou zde z jistého důvodu, daného vlastním charakterem 'unstable' repozitáře, a jsou každodenně aktualizovány.</div>
 <pre>
-<!--## Log out of KDE.
+## Log out of KDE.  
 ## Go to Textmode by doing Ctrl+Alt+F1
-## logon as root, and then type:-->
-## Odhlašte se z KDE.
-## Přepněte se do textového modu klávesovou kombinací Ctrl+Alt+F1
-## přihlašte se jako root a zadejte:
-init 3
+## logon as root, and then type:
+service kdm stop  ##If using another window manager replace kdm, for example with gdm
 apt-get update
 apt-get dist-upgrade
 apt-get clean
-init 5 &amp;&amp; exit
+service kdm start ##If using another window manager replace kdm, for example with gdm
 </pre>
 <!--			<div class="highlight-2">NEVER DIST-UPGRADE [or UPGRADE] with adept, synaptic or aptitude. <a href="sys-admin-apt-cz.htm#apt-upgrade"> Read 'Upgrade of an Installed System'</a></div>-->
 			<div class="highlight-2">NIKDY NEPROVÁDĚJTE DIST-UPGRADE [ani UPGRADE] s aplikacemi adept, synaptic, ani aptitude. <a href="sys-admin-apt-cz.htm#apt-upgrade">Přečtěte si 'Aktualizace nainstalovaného systému''</a></div>
@@ -392,8 +389,8 @@ init 5 &amp;&amp; exit
 <!--				<p>This is the reason why debian builds use apt-get, not the other package manager tools.</p>-->
 				<p>To jsou důvody, proč debian používá apt-get a ne jiné nástroje pro správu balíčků-</p>
 
-<!--				<div id="rev">Page last revised 14/08/2010 0100 UTC </div>-->
-				<div id="rev">Obsah naposledy revidován 14/08/2010 0100 UTC </div>
+
+				<div id="rev">Obsah naposledy revidován 03/09/2014 0630 UTC </div>
 </div>
 </div>
 </body>

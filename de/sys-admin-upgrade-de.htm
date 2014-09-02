@@ -360,14 +360,14 @@
 <div class="box block">
 			<div class="highlight-2">Bitte NIEMALS "apt-get dist-upgrade" oder "apt-get upgrade" in der graphischen Umgebung X durchführen.<div class="highlight-4">  Besuchen Sie vor einer Aktualisierung die <a href="http://aptosid.com">aptosid-Homepage</a>, um eventuelle Upgradewarnungen in Erfahrung zu bringen. Diese Warnungen sind wegen der Struktur von Debian sid/unstable notwendig, welches täglich neue Programmpakete in seine Repositorien aufnimmt.</div>
 <pre>
-## Aus der KDE-Desktopumgebung abmelden
-## In den Textmodus gehen mit Ctrl+Alt+F1
-## Einloggen als root:
-init 3
+## Log out of KDE.  
+## Go to Textmode by doing Ctrl+Alt+F1
+## logon as root, and then type:
+service kdm stop  ##If using another window manager replace kdm, for example with gdm
 apt-get update
 apt-get dist-upgrade
 apt-get clean
-init 5 &amp;&amp; exit
+service kdm start ##If using another window manager replace kdm, for example with gdm
 </pre>
 
 		<div class="highlight-2">Und nochmal unsere Warnung: Bitte NIEMALS eine Systemaktualisierung mit einem graphischen Programm wie synaptic, adept oder kpackage bzw. dem Programm aptitude durchführen!</div> <a href="sys-admin-apt-de.htm#apt-upgrade"> Mehr im Kapitel "Aktualisierung eines installierten Systems - dist-upgrade</a></div>
@@ -388,7 +388,7 @@ init 5 &amp;&amp; exit
 							<p>Dies ist der Grund, warum Debian-Builds apt-get nutzen und nicht andere Paketmanager.</p>
 
 
-	<div id="rev">Page last revised 14/08/2010 0100 UTC </div>
+	<div id="rev">Page last revised 03/09/2014 0630 UTC </div>
 
 </div>
 </body>

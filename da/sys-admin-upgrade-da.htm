@@ -360,14 +360,14 @@
 <div class="box block">
 			<div class="highlight-2">DU MÅ ALDRIG NOGENSINDE OVERHOVEDET udføre 'dist-upgrade' eller 'upgrade' mens du er i X (den grafiske brugerflade).<div  class="highlight-4">  Du skal altid undersøge om der skulle være eventuelle advarsler på <a href="http://aptosid.com">aptosid</a> hjemmesiden. Advarslerne er der af gode grunde, og er nødvendige fordi Debian sid/unstable bliver opdateret på en daglig basis.</div>
 <pre>
-## Log ud KDE.
-## Gå til tekst-mode ved at taste Ctrl+Alt+F1
-## log på som root, og skriv så:
-init 3
+## Log out of KDE.  
+## Go to Textmode by doing Ctrl+Alt+F1
+## logon as root, and then type:
+service kdm stop  ##If using another window manager replace kdm, for example with gdm
 apt-get update
 apt-get dist-upgrade
 apt-get clean
-init 5 &amp;&amp; exit
+service kdm start ##If using another window manager replace kdm, for example with gdm
 </pre>
 			<div class="highlight-2">UDFØR ALDRIG DIST-UPGRADE [eller UPGRADE] med adept, aptitude eller synaptic <a href="sys-admin-apt-da.htm#apt-upgrade"> Læs 'Opdatering af et instaleret system' </a> </div>
 	</div>
@@ -385,7 +385,7 @@ init 5 &amp;&amp; exit
 							<p>Det er af disse grunde at debian builds anvender apt-get, ikke de ander pakke managers.</p>
 
 
-	<div id="rev">Content last revised 14/08/2010 0100 UTC </div>
+	<div id="rev">Content last revised 03/09/2014 0630 UTC </div>
 </div>
 </div>
 </body>

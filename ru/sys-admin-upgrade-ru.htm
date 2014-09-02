@@ -360,13 +360,14 @@
 		<div class="box block">
 			<div class="highlight-2">Пожалуйста, НИКОГДА не выполняйте команды "apt-get dist-upgrade" или "apt-get upgrade" в графической среде X.<div class="highlight-4">Перед тем как делать upgrade, посетите <a href="http://aptosid.com">веб-страницу aptosid </a>, чтобы узнать возможные предупреждения об обновлениях. Эти предупреждения необходимы из-за структуры Debian sid/unstable, ежедневно принимающего новые пакеты программ в свои репозитории.</div>
 <pre>
-## Затем выйдите в текстовый режим по Ctrl+Alt+F1
-## зарегистрируйтесь как root:
-init 3
+## Log out of KDE.  
+## Go to Textmode by doing Ctrl+Alt+F1
+## logon as root, and then type:
+service kdm stop  ##If using another window manager replace kdm, for example with gdm
 apt-get update
 apt-get dist-upgrade
 apt-get clean
-init 5 &amp;&amp; exit
+service kdm start ##If using another window manager replace kdm, for example with gdm
 </pre>
 
 		<div class="highlight-2">И еще раз предупреждаем: Пожалуйста, НИКОГДА не проводите обновление системы в графических программах типа synaptic, adept, aptitude или kpackage!<a href="sys-admin-apt-ru.htm#apt-upgrade"> прочтите 'Upgrade of an Installed System'</a></div></div>
@@ -387,7 +388,7 @@ init 5 &amp;&amp; exit
 							<p>Это вполне достаточный перечень причин для использования 'apt-get"  вместо чего-либо иного (и не слишком большая жертва - отказ от графических пакет-менеджеров, для того, кто хочет пользоваться новым, а значит не очень стабильным, но содержащим все новейшие возможности, софтом. - прим. переводчика)</p>
 
 
-	<div id="rev">Содержание, последний раз пересмотрено 14/08/2010 0100 UTC </div>
+	<div id="rev">Содержание, последний раз пересмотрено 03/09/2014 0630 UTC </div>
 </div>
 </body>
 </html>
