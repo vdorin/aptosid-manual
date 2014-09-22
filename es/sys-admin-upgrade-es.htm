@@ -360,14 +360,14 @@
 <div class="box block">
 			<div class="highlight-2"><b>NUNCA</b> realice un "upgrade" ni "dist-upgrade" mientras esté en el ambiente gráfico X</div><div class="highlight-4"> Antes, siempre, revise la sección "Current Warnings" en la página web principal de <a href="http://aptosid.com">aptosid</a>. Estos avisos están allí por razón de la naturaleza de "Debian Sid/Unstable" y son actualizados diariamente.
 <pre>
-## Log out of KDE.  
-## Go to Textmode by doing Ctrl+Alt+F1
-## logon as root, and then type:
-service kdm stop  ##If using another window manager replace kdm, for example with gdm
+## Salga de KDE.  
+## Entre al modo texto presionando Ctrl+Alt+F1
+## entonces haga login como "root" y después teclee:
+service kdm stop  ##Si usa otro gestor de ventanas reemplace kdm, por ejemplo con gdm
 apt-get update
 apt-get dist-upgrade
 apt-get clean
-service kdm start ##If using another window manager replace kdm, for example with gdm
+service kdm start ##Si usa otro gestor de ventanas reemplace kdm, por ejemplo con gdm
 </pre>
 			<div class="highlight-2"><b>NUNCA</b> HAGA EL DIST-UPGRADE [ni UPGRADE] con adept, aptitude o synaptic. <a href="sys-admin-apt-es.htm#apt-upgrade"> VER: Actualización de un Sistema Instalado</a></div>
 
