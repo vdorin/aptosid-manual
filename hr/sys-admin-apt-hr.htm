@@ -619,11 +619,14 @@ Do you want to continue [Y/n]?<span class="highlight-3">Y </span>
 			<p><span class="highlight-2">NIKADA nemojte obaviti dist-upgrade niti upgrade dok ste u X.</span><span  class="highlight-4">  Uvijek provjerite aktualna upozorenja na <a href="http://aptosid.com">aptosid</a> glavnoj web site. Ta upozorenja su tu, zato što je Debian sid/unstable i ponovljeni je svaki dan.</span> </p>
 
 <pre>Odjavite se od KDE.
-Uđite u textmodus s Ctrl+Alt+F1 ;
-prijavite se kao root, i onda upišite init 3 ;
-apt-get update ; apt-get dist-upgrade ;
+## Log out of KDE.  
+## Go to Textmode by doing Ctrl+Alt+F1
+## logon as root, and then type:
+service kdm stop  ##If using another window manager replace kdm, for example with gdm
+apt-get update
+apt-get dist-upgrade
 apt-get clean
-init 5 &amp;&amp; exit
+service kdm start ##If using another window manager replace kdm, for example with gdm
 </pre>
 		<span class="highlight-2">[NIKADA DIST-UPGRADE [ili UPGRADE] s adept ili synaptic <a href="sys-admin-apt-hr.htm#apt-upgrade"> Pogledajte na "Upgrade instaliranog sistema" </a>]:</span>
 
@@ -731,7 +734,7 @@ apt-get install packagesearch
 	</div>-->
 			<p><a href="http://www.debian.org/doc/manuals/apt-howto/">A complete description of the APT-System can be found at APT-HOWTO</a> </p>
 
-			<div id="rev">Page last revised 10/05/2012 1330 UTC </div>
+			<div id="rev">Page last revised 26/10/2014 1305 UTC </div>
 
 </div>
 </div>

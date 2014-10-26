@@ -621,13 +621,15 @@ Do you want to continue [Y/n]?<span class="highlight-3">Y </span>
             <div class="box block">
             			<div class="highlight-2">Pleeg a.u.b. NOOIT een dist-upgrade of upgrade in in de grafische X omgeving.<div class="highlight-4"> Controleer altijd voorafgaand de actuele waarschuwingen en adviezen op de <a href="http://aptosid.com">aptosid website</a>. Deze waarschuwingen staan daar omdat zij nodig zijn voor een Debian sid/unstable-systeem waarin dagelijks verschillende pakketten geactualiseerd of nieuwe pakketten toegevoegd worden.</div>
 
-<pre># Verlaat de grafische omgeving KDE via Ctrl+Alt+F1
-# meld je aan als root, type
-init 3
+<pre>
+## Log out of KDE.  
+## Go to Textmode by doing Ctrl+Alt+F1
+## logon as root, and then type:
+service kdm stop  ##If using another window manager replace kdm, for example with gdm
 apt-get update
 apt-get dist-upgrade
 apt-get clean
-init 5 &amp;&amp; exit
+service kdm start ##If using another window manager replace kdm, for example with gdm
 </pre>
 			<div>[Probeer nooit een DIST-UPGRADE [of UPGRADE] met adept, synaptic of aptitude uit te voeren. <a href="sys-admin-apt-nl.htm#apt-upgrade">Kijk hier voor meer infomatie.</a>:</div>
 
@@ -738,7 +740,7 @@ apt-get install packagesearch
 	</div>-->
 			<p><a href="http://www.debian.org/doc/manuals/apt-howto/">Een uitgebreide beschrijving van het APT-System is te zien in de APT-HOWTO</a> </p>
 
-		<div id="rev">Inhoud het laatst gewijzigd op 10/05/2012 1330 UTC</div>
+		<div id="rev">Inhoud het laatst gewijzigd op 26/10/2014 1305 UTC</div>
 </div>
 </body>
 </html>

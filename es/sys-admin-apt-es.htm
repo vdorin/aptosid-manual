@@ -619,12 +619,14 @@ Do you want to continue [Y/n]?<span class="highlight-3">Y </span>
 							<p class="highlight-2"><b>ABSOLUTAMENTE NUNCA</b> debe realizar un "upgrade" ni un "dist-upgrade" mientras esté en el ambiente gráfico X. Siempre revise la sección "Current Warnings" en la página web principal de <a href="http://aptosid.com">aptosid</a>. Estos avisos están allí por razón de la naturaleza de "Debian sid/unstable" y porque se actualiza diariamente.</p>
 
 <pre>
-Salir de KDE.
-Entre el modo texto con Ctrl+Alt+F1;
-entonces haga login como "root" y después teclee "init 3";
-apt-get update &amp;&amp; apt-get dist-upgrade;
+## Salga de KDE.  
+## Entre al modo texto presionando Ctrl+Alt+F1
+## entonces haga login como "root" y después teclee:
+service kdm stop  ##Si usa otro gestor de ventanas reemplace kdm, por ejemplo con gdm
+apt-get update
+apt-get dist-upgrade
 apt-get clean
-init 5 &amp;&amp; exit
+service kdm start ##Si usa otro gestor de ventanas reemplace kdm, por ejemplo con gdm
 </pre>
 
 							<p class="highlight-2"><b>NUNCA HAGA el DIST-UPGRADE (ni UPGRADE) con ADEPT o SYNAPTIC</b></p>
@@ -740,10 +742,10 @@ apt-get install packagesearch
  							<p>Adicionalmente se muestra mucha información acerca de los paquetes, incluyendo los archivos a que pertenece. Por favor, lea Ayuda> Contenido para una explicación completa de cómo usar el GUI de la aplicación 'packagesearch' de Debian. De momento el GUI está solamente en Inglés.</p>
 
 
-	</div>--.
+	</div>-->
 			<p><a href="http://www.debian.org/doc/manuals/apt-howto/">Una descripción completa del APT-System puede encontrarse en el APT-HOWTO</a> </p>
 
-			<div id="rev">Última modificación 10/05/2012 1330 UTC</div>
+			<div id="rev">Última modificación 26/10/2014 1305 UTC</div>
 
 </div>
 </div>

@@ -649,24 +649,25 @@ Do you want to continue [Y/n]?<span class="highlight-3">Y </span>
 
 			<div class="highlight-2">ΠΟΤΕ ΜΑ ΠΟΤΕ μην κάνετε ένα dist-upgrade ή μια αναβάθμιση συστήματος όταν είστε μέσα στον X (Γραφικό Περιβάλλον).<div class="highlight-4"> Ελέγχετε πάντα τις Τρέχουσες Προειδοποιήσεις στην κύρια σελίδα του <a href="http://aptosid.com">aptosid</a> . Οι προειδοποιήσεις αυτές υπάρχουν εκεί για τον λόγο ότι το Debian sid είναι ασταθές και αναβαθμίζεται επί καθημερινής βάσεως.</div>
 <!--pre>
-Log out of KDE.
-Go to Textmode by doing Ctrl+Alt+F1
-logon as root, and then in type init 3
-apt-get update
-apt-get dist-upgrade
-run get-aptosid-binary-gfx to reinstall grahpics drivers if xorg updated and you have such a graphics adapter
-otherwise do
-init 5 &amp;&amp; exit
-</pre-->
-
-<pre>
-Αποσυνδεθείτε από το KDE.
-Πηγαίνετε σε Textmode με το να πατήσετε τα πλήκτρα Ctrl+Alt+F1
-συνδεθείτε σαν root και γράψτε init 3
+## Log out of KDE.  
+## Go to Textmode by doing Ctrl+Alt+F1
+## logon as root, and then type:
+service kdm stop  ##If using another window manager replace kdm, for example with gdm
 apt-get update
 apt-get dist-upgrade
 apt-get clean
-init 5 &amp;&amp; exit
+service kdm start ##If using another window manager replace kdm, for example with gdm
+</pre-->
+
+<pre>
+## Log out of KDE.  
+## Go to Textmode by doing Ctrl+Alt+F1
+## logon as root, and then type:
+service kdm stop  ##If using another window manager replace kdm, for example with gdm
+apt-get update
+apt-get dist-upgrade
+apt-get clean
+service kdm start ##If using another window manager replace kdm, for example with gdm
 </pre>
 			<!--div class="highlight-2">NEVER DIST-UPGRADE [or UPGRADE] with adept, synaptic or aptitude:</div-->
 
@@ -796,7 +797,7 @@ apt-get install packagesearch
 	</div>-->
 							<p><a href="http://www.debian.org/doc/manuals/apt-howto/">Μια πλήρης περιγραφή του συστήματος APT μπορεί να βρεθεί στο APT-HOWTO</a> </p>
 
-	<div id="rev">Τελευταία αναθεώρηση περιεχομένου 10/05/2012 1330 UTC</div>
+	<div id="rev">Τελευταία αναθεώρηση περιεχομένου 26/10/2014 1305 UTC</div>
 
 </div>
 </div>

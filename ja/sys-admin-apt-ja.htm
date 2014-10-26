@@ -752,13 +752,14 @@ init 5 &amp;&amp; exit
 </pre>
 #### -->
 <pre>
-KDEをログアウト。
-Ctrl+Alt+F1を押してテキストモードに
-rootとしてログイン, init 3とタイプ
+## Log out of KDE.  
+## Go to Textmode by doing Ctrl+Alt+F1
+## logon as root, and then type:
+service kdm stop  ##If using another window manager replace kdm, for example with gdm
 apt-get update
 apt-get dist-upgrade
 apt-get clean
-init 5 &amp;&amp; exit
+service kdm start ##If using another window manager replace kdm, for example with gdm
 </pre>
 			<!--- ####
 			<div class="highlight-2">NEVER DIST-UPGRADE [or UPGRADE] with adept, synaptic or aptitude </div>
@@ -932,7 +933,7 @@ apt-get install packagesearch
 
 			<p><a href="http://www.debian.org/doc/manuals/apt-howto/">(英語版はこちらへ)</a> </p>
 
-			<div id="rev">Page last revised 10/05/2012 1330 UTC/div>
+			<div id="rev">Page last revised 26/10/2014 1305 UTC </div>
 
 </div>
 </div>

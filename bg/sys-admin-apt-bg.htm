@@ -599,14 +599,14 @@ Do you want to continue [Y/n]?<span class="highlight-3">Y </span>
 <div class="box block">
 			<div class="highlight-2">НИКОГА не извършвайте dist-upgrade обновяване докато сте в графичния интерфейс на X<div class="highlight-4"> Винаги проверявайте текущите предупреждения на основния уебсайт на <a href="http://sidux.com">sidux</a>. Целта им е да ви предпазят от възможни проблеми, и те се обновяват ежедневно.</div>
 <pre>
-Излезте от KDE.
-Отидете в текстова конзола с комбинацията Ctrl+Alt+F1
-Логнете се като root, и въведете командите
-init 3
+## Log out of KDE.  
+## Go to Textmode by doing Ctrl+Alt+F1
+## logon as root, and then type:
+service kdm stop  ##If using another window manager replace kdm, for example with gdm
 apt-get update
 apt-get dist-upgrade
 apt-get clean
-init 5 &amp;&amp; exit
+service kdm start ##If using another window manager replace kdm, for example with gdm
 </pre>
 			<div class="highlight-2">НИКОГА НЕ ИЗВЪРШВАЙТЕ DIST-UPGRADE [или UPGRADE] с adept, synaptic или aptitude:</div>
 	</div>
@@ -716,7 +716,7 @@ apt-get install packagesearch
 	</div>-->
 			<p><a href="http://www.debian.org/doc/manuals/apt-howto/">Пълно описание на APT-системата може да намерите в APT-HOWTO</a> </p>
 
-			<div id="rev">Page last revised 10/05/2012 1330 UTC </div>
+			<div id="rev">Page last revised 26/10/2014 1305 UTC </div>
 
 </div>
 </div>

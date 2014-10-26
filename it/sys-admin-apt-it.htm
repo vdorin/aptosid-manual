@@ -617,15 +617,14 @@ Do you want to continue [Y/n]?<span class="highlight-3">Y </span>
 <div class="box block">
 			<div class="highlight-2">MAI, MAI fare un dist-upgrade e nemmeno un upgrade mentre si è in X <div class="highlight-4">Controllare sempre in "Current Warnings" sul sito principale di <a href="http://aptosid.com">aptosid</a>. Questi "segnali di pericolo" esistono a causa della natura instabile (Debian sid) e sono aggiornati giornalmente.</div>
 <pre>
-chiudere la sessione di KDE.
-andare in modalità testo con Ctrl+Alt+F1
-autenticarsi come root poi:
-
-init 3
+## Log out of KDE.  
+## Go to Textmode by doing Ctrl+Alt+F1
+## logon as root, and then type:
+service kdm stop  ##If using another window manager replace kdm, for example with gdm
 apt-get update
 apt-get dist-upgrade
 apt-get clean
-init 5 &amp;&amp; exit
+service kdm start ##If using another window manager replace kdm, for example with gdm
 </pre>
 			<div class="highlight-2">MAI, MAI fare DIST-UPGRADE [o UPGRADE] con adept, synaptic o aptitude.</div>
 
@@ -736,7 +735,7 @@ apt-get install packagesearch
 	</div>-->
 			<p><a href="http://www.debian.org/doc/manuals/apt-howto/">Una descrizione completa del sistema APT può essere trovato in APT-HOWTO</a> </p>
 
-			<div id="rev">Page last revised 10/05/2012 1330 UTC</div>
+			<div id="rev">Page last revised 26/10/2014 1305 UTC</div>
 
 </div>
 </div>

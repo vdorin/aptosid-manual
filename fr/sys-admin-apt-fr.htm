@@ -628,13 +628,14 @@ Do you want to continue [Y/n]?<span class="highlight-3">Y </span>
 <div class="box block">
 		<div class="highlight-2">ENCORE UNE FOIS ! JAMAIS ET EN AUCUN CAS, IL NE FAUT PROCÉDER À UN UPGRADE OU DIST-UPGRADE EN ÉTANT CONNECTÉ DANS L'ENVIRONNEMENT GRAPHIQUE X !<div class="highlight-4"> ET D'AUTRE PART CONSULTEZ TOUJOURS LES AVERTISSEMENTS POUVANT ÊTRE PUBLIÉS SUR LE SITE DE <a href="http://aptosid.com">aptosid</a>. Ces avertissements sont fréquents, destinés à prévenir de mises-à-jours à des périodes où les miroirs seraient incomplets, ou quand des évolutions drastiques empêchent pour quelques jours, des blocs entiers de logiciels d'être opérationnels après leur mise-à-niveau. Ceci est lié à la vocation de Debian SID (Still In Development), aussi appelée Debian Unstable, dont les paquets évoluent sur une base quotidenne.</div>
 <pre>
-Sortez de KDE (Menu K > Déconnexion > Terminer la session)
-Passez en mode console en entrant au clavier Ctrl+Alt+F1
-Loguez-vous en tant que root, puis entrez init 3
+## Log out of KDE.  
+## Go to Textmode by doing Ctrl+Alt+F1
+## logon as root, and then type:
+service kdm stop  ##If using another window manager replace kdm, for example with gdm
 apt-get update
 apt-get dist-upgrade
 apt-get clean
-init 5 &amp;&amp; exit
+service kdm start ##If using another window manager replace kdm, for example with gdm
 </pre>
 		<div class="highlight-2">JAMAIS ET EN AUCUN CAS, IL NE FAUT PROCÉDER À UN UPGRADE OU DIST-UPGRADE avec adept, synaptic ou aptitude.</div>
 
@@ -751,7 +752,7 @@ apt-get install packagesearch
 	</div>-->
 							<p>Rappel : vous trouverez l'intégralité de l'information sur le système APT à la page <a href="http://www.debian.org/doc/manuals/apt-howto/">APT-HOWTO</a> ou en installant le paquet apt-howto-fr, disponible en version texte ou html.</p>
 
-			<div id="rev">Dernière actualisation le 10/05/2012 1330 UTC</div>
+			<div id="rev">Dernière actualisation le 26/10/2014 1305 UTC</div>
 
 </div>
 </div>

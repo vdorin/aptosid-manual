@@ -588,13 +588,14 @@ Do you want to continue [Y/n]?<span class="highlight-3">Y </span>
 <div class="box block">
 			<div class="highlight-2">SOHA NE végezz dist-upgrade, vagy upgrade műveleteket amíg fut a grafikus felület.<div class="highlight-4"> Mindig olvasd el az Aktuális Figyelmezetéseket (Current Warnings) a  <a href="http://aptosid.com">aptosid</a> fő honlapján. E figyelmeztetések azért vannak, mert a rendszer a Debian fejlesztői ágra (sid) épül, ami naponta változik.</div>
 <pre>
-Jelentkez ki a KDE-ből.
-Lépj át szöveges módba a Ctrl+Alt+F1 megnyomásával.
-Jelentkezz be root-ként, majd add ki az "init 3" parancsot.
+## Log out of KDE.  
+## Go to Textmode by doing Ctrl+Alt+F1
+## logon as root, and then type:
+service kdm stop  ##If using another window manager replace kdm, for example with gdm
 apt-get update
 apt-get dist-upgrade
 apt-get clean
-init 5 &amp;&amp; exit
+service kdm start ##If using another window manager replace kdm, for example with gdm
 </pre>
 			<div class="highlight-2">SOHA NE FUTTASS DIST-UPGRADE [vagy UPGRADE] műveletet adept, synaptic vagy aptitude használatával. </div>
 
@@ -706,7 +707,7 @@ apt-get install packagesearch
 	</div>-->
 			<p><a href="http://www.debian.org/doc/manuals/apt-howto/">Az APT-rendszer teljes leírása megtalálható az APT-HOWTO lapjain.</a> </p>
 
-			<div id="rev">Az oldal utoljára frissítve 10/05/2012 1330 UTC</div>
+			<div id="rev">Az oldal utoljára frissítve 26/10/2014 1305 UTC</div>
 
 </div>
 </div>

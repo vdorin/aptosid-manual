@@ -649,14 +649,14 @@ Möchten Sie fortfahren [J/n]?<span class="highlight-3">J </span>
 <div class="box block">
 			<div class="highlight-2">Bitte NIEMALS eine Systemaktualisierung in der graphischen Umgebung X durchführen.<div class="highlight-4">  Besuchen Sie vor einer Systemaktualisierung die <a href="http://aptosid.com">aptosid-Homepage</a>, um eventuelle Upgradewarnungen in Erfahrung zu bringen. Diese Warnungen sind wegen der Struktur von Debian sid/unstable notwendig, welches täglich neue Programmpakete in seine Repositorien aufnimmt.</div>
 <pre>
-# Aus der KDE-Desktopumgebung abmelden
-# In den Textmodus gehen mit Ctrl+Alt+F1
-# Einloggen als root
-init 3
+## Log out of KDE.  
+## Go to Textmode by doing Ctrl+Alt+F1
+## logon as root, and then type:
+service kdm stop  ##If using another window manager replace kdm, for example with gdm
 apt-get update
 apt-get dist-upgrade
 apt-get clean
-init 5 &amp;&amp; exit
+service kdm start ##If using another window manager replace kdm, for example with gdm
 </pre>
 
 		<div class="highlight-2">Bitte NIEMALS eine Systemaktualisierung mit einem Programm wie synaptic, adept, aptitude oder kpackage durchführen!</div>
@@ -763,7 +763,7 @@ apt-get install packagesearch
 							<p><a href= "http://www.debian.org/doc/manuals/apt-howto/index.de.html">Eine vollständige Beschreibung des APT-Systems findet man in Debians APT-HOWTO</a> </p>
 
 	</div>-->
-	<div id="rev">Content last revised 10/05/2012 1330 UTC</div>
+	<div id="rev">Content last revised 26/10/2014 1305 UTC</div>
 
 </div>
 </body>

@@ -617,15 +617,14 @@ Do you want to continue [Y/n]?<span class="highlight-3">Y </span>
 <div class="box block">
 			<div class="highlight-2">НІКОЛИ не виконуйте ніякий dist-upgrade або upgrade, не зупинивши сервер Х<div class="highlight-4"> Завжди попередньо ознайомтеся з попередженнями по оновлень на головному сайті <a href="http://aptosid.com">aptosid</a>. Ці попередження розміщуються через нестабільність і щоденних оновлень!.</div>
 <pre>
-Log out of KDE.
-Go to Textmode by doing Ctrl+Alt+F1
-logon as root,
-and then type:
-init 3
+## Log out of KDE.  
+## Go to Textmode by doing Ctrl+Alt+F1
+## logon as root, and then type:
+service kdm stop  ##If using another window manager replace kdm, for example with gdm
 apt-get update
 apt-get dist-upgrade
 apt-get clean
-init 5 &amp;&amp; exit
+service kdm start ##If using another window manager replace kdm, for example with gdm
 </pre>
 			<div class="highlight-2">НІКОЛИ не виконуйте команди "dist-upgrade" або "upgrade" в графічному інтерфейсі X, а також за допомогою програм adept, synaptic або aptitude:</div>
 	</div>
@@ -733,7 +732,7 @@ apt-get install packagesearch
 
 			<p><a href="http://www.debian.org/doc/manuals/apt-howto/"> Повний опис системи APT можна знайти в APT-HOWTO Debian</a></p>
 
-			<div id="rev">Сторінка останний раз переглянута 10/05/2012 1330 UTC </div>
+			<div id="rev">Сторінка останний раз переглянута 26/10/2014 1305 UTC </div>
 
 </div>
 </div>

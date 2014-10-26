@@ -635,13 +635,14 @@ The following packages have been kept back:
 <div class="box block">
 			<div class="highlight-2">НИКОГДА не выполняйте никакой dist-upgrade, ни upgrade, не остановив сервер Х.<div class="highlight-4"> Всегда предварительно знакомьтесь с предупреждениями по обновлениям на главном сайте <a href="http://aptosid.com">aptosid</a>. Эти предупреждения размещаются по причине нестабильности и ежедневных обновлений!</div>
 <pre>
-Log out of KDE.
-Go to Textmode by doing Ctrl+Alt+F1
-logon as root, and then in type init 3
+## Log out of KDE.  
+## Go to Textmode by doing Ctrl+Alt+F1
+## logon as root, and then type:
+service kdm stop  ##If using another window manager replace kdm, for example with gdm
 apt-get update
 apt-get dist-upgrade
 apt-get clean
-init 5 &amp;&amp; exit
+service kdm start ##If using another window manager replace kdm, for example with gdm
 </pre>
 			<div class="highlight-2">НИКОГДА не выполняйте команды "DIST-UPGRADE" или "UPGRADE" в графическом интерфейсе X, а также с помощью программ adept, synaptic или aptitude.</div>
 
@@ -755,7 +756,7 @@ apt-get install packagesearch
 	</div>-->
 							  <p><a href="http://www.debian.org/doc/manuals/apt-howto/">Полное описание системы APT можно найти в APT-HOWTO Debian.</a>. </p>
 
-		<div id="rev">Содержание, последний раз пересмотрено 10/05/2012 1330 UTC</div>
+		<div id="rev">Содержание, последний раз пересмотрено 26/10/2014 1305 UTC</div>
 </div>
 </div>
 </body>

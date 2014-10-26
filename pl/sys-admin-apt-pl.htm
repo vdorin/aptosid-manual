@@ -620,13 +620,14 @@ Do you want to continue [Y/n]?<span class="highlight-3">Y </span>
 <div class="box block">
 			<div class="highlight-2">NIGDY nie wykonuj dist-upgrade lub upgrade podczas sesji X<div class="highlight-4"> Zawsze sprawdzaj bieżące ostrzeżenia na głównej stronie <a href="http://aptosid.com">aptosid.com</a>. Ostrzeżenia te są ze względu na niestabilną naturę dystrybucji i są aktualizowane codziennie.</div>
 <pre>
-Wyloguj się z KDE.
-Przejdź do trybu tekstowego poprzez Ctrl+Alt+F1
-zaloguj się jako root, a następnie wpisz init 3
+## Log out of KDE.  
+## Go to Textmode by doing Ctrl+Alt+F1
+## logon as root, and then type:
+service kdm stop  ##If using another window manager replace kdm, for example with gdm
 apt-get update
 apt-get dist-upgrade
 apt-get clean
-init 5 &amp;&amp; exit
+service kdm start ##If using another window manager replace kdm, for example with gdm
 </pre>
 			<div class="highlight-2">NIGDY nie wykonuj DIST-UPGRADE [lub UPGRADE] przy pomocy adept, synaptic lub aptitude <a href="sys-admin-apt-pl.htm#apt-upgrade"> PATRZ Aktualizacja zainstalowanego systemu</a>:</div>
 
@@ -736,7 +737,7 @@ apt-get install packagesearch
 	</div>-->
 			<p><a href="http://www.debian.org/doc/manuals/apt-howto/">Kompletny opis systemu APT można znaleźć w APT-HOWTO</a> </p>
 
-			<div id="rev">Strona ostatnio modyfikowana 10/05/2012 1330 UTC</div>
+			<div id="rev">Strona ostatnio modyfikowana 26/10/2014 1305 UTC</div>
 
 </div>
 </div>

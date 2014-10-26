@@ -630,15 +630,14 @@ Do you want to continue [Y/n]?<span class="highlight-3">Y </span>
 <!--			<div class="highlight-2">NEVER EVER do a dist-upgrade nor upgrade whilst in X<div class="highlight-4"> Always check Current Warnings on the <a href="http://aptosid.com">aptosid</a> main web site. The warnings are there for a reason due to the very nature of unstable (Debian sid), which also updates 4 times per day.</div>-->
 			<div class="highlight-2">VŮBEC NIKDY neprovádějte dist-upgrade, ani upgrade, když jste v X.<div class="highlight-4"> Vždy zkontrolujte varování na hlavní stránkce<a href="http://aptosid.com">aptosid</a>. Varování jsou zde kvůli samotné podstatě nestabilního repozitáře (Debian sid), který sám je aktualizován čtyřikrát denně.</div>
 <pre>
-Odhlašte se z KDE.
-Vstupte do textového módu pomocí Ctrl+Alt+F1
-přihlašte se jako root,
-a pak zadejte:
-init 3
+## Log out of KDE.  
+## Go to Textmode by doing Ctrl+Alt+F1
+## logon as root, and then type:
+service kdm stop  ##If using another window manager replace kdm, for example with gdm
 apt-get update
 apt-get dist-upgrade
 apt-get clean
-init 5 &amp;&amp; exit
+service kdm start ##If using another window manager replace kdm, for example with gdm
 </pre>
 <!--			<div class="highlight-2">NEVER DIST-UPGRADE [or UPGRADE] with adept, synaptic or aptitude:</div>-->
 			<div class="highlight-2">NIKDY NEPROVÁDĚJTE DIST-UPGRADE [nebo UPGRADE] pomocí adept, synaptic nebo aptitude.</div>
@@ -760,7 +759,7 @@ apt-get install packagesearch
 
 			<p><a href="http://www.debian.org/doc/manuals/apt-howto/">Kompletní popis systému APT může být nalezen v APT-HOWTO</a></p>
 
-			<div id="rev">Obsah naposledy revidován 10/05/2012 1330 UTC </div>
+			<div id="rev">Obsah naposledy revidován 26/10/2014 1305 UTC </div>
 
 </div>
 </div>
